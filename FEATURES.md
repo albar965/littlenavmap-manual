@@ -1,5 +1,3 @@
-# Little Navmap Features {#little-navmap-features}
-
 # Little Navmap Features and Limitations {#little-navmap-features-and-limitations}
 
 ![Little Navmap](images/littlenavmap.svg "Little Navmap")
