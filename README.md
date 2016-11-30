@@ -6,9 +6,9 @@ Version 1.1.0.devel
 
 ## Table of Contents {#table-of-contents}
 
-Features and Limitations
+[Features and Limitations](FEATURES.md)
 
-Map Legend
+[Map Legend](LEGEND.md)
 
 1.  [Installation](#installation)
 2.  [Quick Overview](#quick-overview)
