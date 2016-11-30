@@ -1,7 +1,5 @@
 # Little Navmap Legend {#little-navmap-legend}
 
-# Little Navmap Legend {#little-navmap-legend-0}
-
 ![Little Navmap](images/littlenavmap.svg "Little Navmap")
 
 All speeds are in knots, distances in nautical miles, altitude in feet. Heading and course are suffixed with °T for true course or °M for magnetic course.
