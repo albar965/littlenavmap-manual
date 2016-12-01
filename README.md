@@ -1395,6 +1395,8 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see &lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)&gt;.
 
-![GPL V3](images/gpl-v3-logo.svg "GPL V3")
+<p>
+<img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="images/gpl-v3-logo.svg" />
+</p>
 
 Last update 2016-10-18
