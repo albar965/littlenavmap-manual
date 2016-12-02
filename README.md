@@ -343,21 +343,21 @@ _OpenStreetMap_ data is not loaded directly from the OSM servers but from the [M
 
 ![OpenStreetMap and Hill shading](images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
-Picture above: View at a Italian airport using _OpenStreetMap_ theme and hill shading.
+Picture above: View at an Italian airport using _OpenStreetMap_ theme and hill shading.
 
 ##### OpenMapSurfer {#openmapsurfer}
 
 The [OSM Roads](http://korona.geog.uni-heidelberg.de) layer provided by [Heidelberg University](http://giscience.uni-hd.de). This theme includes optional hill shading which is available worldwide.
 
-Note that hill shading option of this map is marked experimental.
+Note that the hill shading option of this map is marked experimental.
 
-Map data of this map is © [OpenStreetMap](http://osm.org) contributors, rendering [GIScience Research Group @ Heidelberg University](http://giscience.uni-hd.de), map styling Maxim Rylov.
+Map data for this map is provided by © [OpenStreetMap](http://osm.org) contributors, rendering by [GIScience Research Group @ Heidelberg University](http://giscience.uni-hd.de) and map styling by Maxim Rylov.
 
 [SRTM](http://srtm.csi.cgiar.org); ASTER GDEM is a product of [METI](http://www.meti.go.jp/english/index.html) and [NASA](https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
 
 ![OSM Roads and Hill shading](images/osmroad.jpg "OSM Roads and Hill shading")
 
-Picture above: View at a Italian airport using the _OpenMapSurfer_ theme and hill shading.
+Picture above: View at an Italian airport using the _OpenMapSurfer_ theme and hill shading.
 
 ##### OpenTopoMap {#opentopomap}
 
