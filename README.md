@@ -709,7 +709,7 @@ This menu item is active if you right click at the end of a distance measurement
 
 ![Show Range Rings](images/icons/rangerings.png "Show Range Rings")
 
-Shows multiple red range rings around the clicked position. Number and distance of the range rings can be changed in the `Options` dialog on the `Map Display` tab. A label indicates the radius of each ring in nautical miles.
+Shows multiple red range rings around the clicked position. The number and distance of the range rings can be changed in the `Options` dialog on the `Map Display` tab. A label indicates the radius of each ring in nautical miles.
 
 #### Show Navaid range {#show-navaid-range}
 
@@ -721,7 +721,7 @@ Shows a ring around the clicked radio navaid (VOR or NDB) indicating the navaid&
 
 ![Remove Range Ring](images/icons/rangeringoff.png "Remove Range Ring")
 
-Menu item is active if you right click is at the center point of a range ring (small circle). Removes the rings from the map.
+Menu item is active if you right click at the center point of a range ring (small circle). Removes the rings from the map.
 
 #### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
 
@@ -747,7 +747,7 @@ This is active if the click is at an airport. It will either replace the flight 
 
 ![Add Position to Flight Plan](images/icons/routeadd.png "Add Position to Flight Plan")
 
-Inserts the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is nearby the flight plan ends.
+Inserts the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is near the flight plan end points.
 
 The name of the navaid or airport is shown in the menu item.
 
