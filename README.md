@@ -44,17 +44,17 @@ Do not use this program for real world navigation.
 
 The installation of _Little Navmap_ does not change any registry entries (in Windows) and involves a simple copy of files therefore an installer or setup program is not required.
 
-Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since you will need administrative privileges for some Windows versions. Since Windows keeps control on these folders other problems might occur like replaced or deleted files.
+Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges for some Windows versions. Since Windows keeps control of these folders other problems might occur like replaced or deleted files.
 
-Extract the Zip archive into a folder like `c:\Own Programs\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](#first-start) for more information on the first start after installation.
+Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](#first-start) for more information on the first start after installation.
 
-_Little Navmap_ is a 32-bit application and was tested with Windows XP, Windows 7, Windows 8 and Windows 10.
+_Little Navmap_ is a 32-bit application and was tested with Windows XP, Windows 7, Windows 8 and Windows 10 (32-bit & 64-bit).
 
 ## Quick Overview {#quick-overview}
 
 ![Little Navmap Overview](images/overview.jpg "Little Navmap Overview")
 
-Picture above (Click to see large version): _Little Navmap_ quick overview showing most important functions.
+Refer to the picture above (Click to see large version) _Little Navmap_ for a quick overview showing the most important functions.
 
 ## General Remarks {#general-remarks}
 
