@@ -54,7 +54,7 @@ _Little Navmap_ is a 32-bit application and was tested with Windows XP, Windows 
 
 ![Little Navmap Overview](images/overview.jpg "Little Navmap Overview")
 
-Refer to the picture above (Click to see large version): _Little Navmap_ for a quick overview showing the most important functions.
+Picture above (Click to see large version): _Little Navmap_ for a quick overview showing the most important functions.
 
 ## General Remarks {#general-remarks}
 
@@ -80,7 +80,7 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 ![Little Navmap](images/all.jpg "Little Navmap")
 
-Refer to the picture above (Click to see large version): _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
+Picture above (Click to see large version): _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
 
 ### Translation and Locale {#translation-and-locale}
 
@@ -117,7 +117,7 @@ The [Scenery Library Dialog](#load-scenery-library-dialog) dialog will be shown 
 
 A warning dialog will be shown when starting _Little Navmap_ the first time on a system without any flight simulator installations. See chapter [Running without Flight Simulator Installation](#running-without-flight-simulator-installation) for more information on this.
 
-The scenery library database may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the incompatible database. You can reload the scenery in the [Scenery Library Dialog](#load-scenery-library-dialog) after erasing the database.
+The scenery library database may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](#load-scenery-library-dialog) after erasing the database.
 
 ## Menus and Toolbars {#menus-and-toolbars}
 
@@ -149,7 +149,7 @@ An opened flight plan file will be reloaded on start up (reload and centering ca
 
 Adds departure, destination and all waypoints to the current flight plan.
 
-Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as you like. See [Flight Plan Table View Context Menu](#flight-plan-table-view-context-menu).
+Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as required. See [Flight Plan Table View Context Menu](#flight-plan-table-view-context-menu).
 
 #### Save Flight Plan {#save-flight-plan}
 
@@ -161,9 +161,9 @@ Using `Append Flight Plan` allows to load or merge complete flight plans or flig
 
 Saves the flight plan to a FSX PLN file (XML format).
 
-_Little Navmap_ allows to create flight plans that unusable by the flight simulator. This is the case if a flight plan does not have an airport as departure or destination. A warning dialog will be shown when saving if this is the case.
+_Little Navmap_ will allow flight plans to be created that while useful as a flight plan snippet they are unusable by the flight simulator. This occurs if a flight plan does not have a departure or destination airport and a warning dialog will be shown when saving the flight plan.
 
-A warning dialog will also show up if the departure airport has parking positions but no one is assigned to the flight plan.
+A warning dialog will also be shown if the departure airport has parking positions but none is assigned in the flight plan.
 
 #### Add Google Earth KML {#add-google-earth-kml}
 
