@@ -42,7 +42,7 @@ Do not use this program for real world navigation.
 
 `Highlighted text` is used to denote window, menu, button, file or directory names.
 
-An installer or setup program is not available.
+The installation of _Little Navmap_ does not change any registry entries (in Windows) and involves a simple copy of files therefore an installer or setup program is not required.
 
 Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since you will need administrative privileges for some Windows versions. Since Windows keeps control on these folders other problems might occur like replaced or deleted files.
 
