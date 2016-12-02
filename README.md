@@ -395,7 +395,7 @@ A very simple map including coarse hill shading and land colors. The map include
 
 ![Force Show Addon Airports](images/icons/airportaddon.png "Force Show Addon Airports")
 
-Add-on airports are always shown independent of the other airport map settings if this option is selected. This allows to view only add-on airports by checking this option and disabling display of hard, soft and empty airports.
+Add-on airports are always shown independent of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
 
 #### Show Airports with hard Runways {#show-airports-with-hard-runways}
 
