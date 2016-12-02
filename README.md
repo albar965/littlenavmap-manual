@@ -381,15 +381,15 @@ Picture above: View showing _Stamen Terrain_ theme.
 
 ##### Simple (Offline) {#simple-offline}
 
-This is an political map using colored country polygons. Boundaries and water bodies are depicted coarse. The map is included in _Little Navmap_. Has an option to display city and country names.
+This is an political map using colored country polygons. Boundaries and water bodies are depicted coarse. The map included in _Little Navmap_ has an option to display city and country names.
 
 ##### Plain (Offline) {#plain-offline}
 
-A very simple map. The map is and included in _Little Navmap_. Has an option to display city and country names. Boundaries and water bodies are depicted coarse.
+A very simple map. The map included in _Little Navmap_ has an option to display city and country names. Boundaries and water bodies are depicted coarse.
 
 ##### Atlas (Offline) {#atlas-offline}
 
-A very simple map including coarse hill shading and land colors. The map is and included in _Little Navmap_. Has an option to display city and country names. Boundaries and water bodies are depicted coarse.
+A very simple map including coarse hill shading and land colors. The map included in _Little Navmap_ has an option to display city and country names. Boundaries and water bodies are depicted coarse.
 
 #### Force Show Addon Airports {#force-show-addon-airports}
 
