@@ -415,7 +415,7 @@ Show airports that have only soft surfaced runways or only water runways. This t
 
 Shows empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
 
-An empty airport is defined as one which has neither parking nor taxiways nor aprons and is no add-on. These airports are treated differently in _Little Navmap_ since they are the most boring of all default airports. Empty airports are drawn gray and behind all other airports on the map.
+An empty airport is defined as one which has neither parking nor taxiways nor aprons and is not an add-on. These airports are treated differently in _Little Navmap_ since they are the most boring of all default airports. Empty airports are drawn gray and behind all other airports on the map.
 
 Airports having only water runways are excluded from this definition to avoid unintentional hiding.
 
@@ -466,7 +466,7 @@ The aircraft centering will be switched off when using one of the following func
 *   `Show Flight Plan`. Either manually in a menu item or after loading.
 *   Centering a Google Earth KML/KMZ file after loading
 
-This allows to have a quick look at an airport or navaid during flight. To get back to the aircraft use `Map Position Back` and enable `Show Aircraft` again.
+This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` and enable `Show Aircraft`.
 
 #### Show Aircraft Trail {#show-aircraft-trail}
 
