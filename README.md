@@ -227,9 +227,9 @@ You can calculate a flight plan between any kind of waypoints, even user defined
 
 ![Calculate Radionav](images/icons/routeradio.png "Calculate Radionav")
 
-Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Buid the flight plan manually if this is the case.
+Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME only stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Buid the flight plan manually if this is the case.
 
-This calculation can also be used to create a flight plan snipped between any kind of waypoint.
+This calculation can also be used to create a flight plan snippet between any kind of waypoint.
 
 #### Calculate high Altitude {#calculate-high-altitude}
 
@@ -243,7 +243,9 @@ A simplified east/west rule is used to adjust the cruise altitude to odd/even va
 
 The default behavior is to jump from the departure airport to the next waypoint of a suitable airway and vice versa for the destination. This can be changed in `Options` dialog on the `Flight Plan` tab if VOR or NDB stations are preferred as transition points to airways.
 
-The airway network of Flight Simulator is not complete (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas will fail. Create the airway manually as a workaround.
+The airway network of Flight Simulator is not complete (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas will fail. 
+
+Create the airway manually as a workaround or use an online planning tool to obtain a "route string" and use the `New Flight Plan from String` option to create the flight plan.
 
 This calculation can also be used to create a flight plan snipped between any kind of waypoint.
 
