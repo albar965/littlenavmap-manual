@@ -86,9 +86,9 @@ Refer to the picture above (Click to see large version): _Little Navmap_ with ma
 
 _Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface into any other language. Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
 
-To avoid confusion: The screenshots in this manual were taken using German locale. This means that comma is used as a decimal separator and dot as a thousands separator.
+Please note that the screenshots in this manual were taken using German locale, therefore a comma is used as a decimal separator and a dot as a thousands separator.
 
-Units cannot be changed currently and are adapted to aviation needs. So feet, nautical miles and knots are used.
+Since Units are specifically for aviation use they cannot be changed currently and feet, nautical miles and knots are used.
 
 ### Map Legend {#map-legend}
 
