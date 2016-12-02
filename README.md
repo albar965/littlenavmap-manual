@@ -221,7 +221,7 @@ Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Edi
 
 Deletes all intermediate waypoints and connects departure and destination using a great circle line.
 
-You can calculate a flight plan between any kind of waypoints, even user defined waypoints (right click on the map and select `Add Position to Flight plan` to create one). This allows to create snippets that can be merged into flight plans. You can use this if you want to cross the North Atlantic with varying destinations on both sides, for example. This applies to all flight plan calculation modes.
+You can calculate a flight plan between any kind of waypoints, even user defined waypoints (right click on the map and select `Add Position to Flight plan` to create one). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
 
 #### Calculate Radionav {#calculate-radionav}
 
