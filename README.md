@@ -677,13 +677,13 @@ See the [Information Dock Window](#information-dock-window) for details.
 
 ![Measure GC Distance from here](images/icons/distancemeasure.png "Measure GC Distance from here")
 
-Starts a measurment line on the first click. Second click ends measuring and keeps the line. All measurement lines are saved and will be restored on next start up.
+Starts a measurement line on the first click. Second click ends measuring and keeps the line. All measurement lines are saved and will be restored on next start up.
 
 You can use the keyboard, mouse wheel or the map overlays to scroll and zoom while dragging a line.
 
 Right click, pressing the escape key or any click outside of the map window cancels the measurment line editing.
 
-Measurement lines use nautical miles as unit. Feet will be added as unit if they are short enough so one can measure e.g. takeoff distance for crossing takeoffs and more around an airport.
+Measurement lines use nautical miles as unit. Feet will be added as unit if the lines are short enough e.g. takeoff distance for crossing takeoffs and moving around an airport.
 
 A great circle gives the shortest distance from point to point on earth but does not use a constant course. For that reason the measurement line will show two course values. One for the start and one for the end position.
 
@@ -695,9 +695,9 @@ See the Nav Map Legend for details on measurement lines.
 
 ![Measure Rhumb Distance from here](images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here")
 
-A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is longer that the great circle route.
+A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is longer than the great circle route.
 
-The course for a rhumb line is normally indicated in degrees true. Course will be indicated in degrees magnetic if the measurement starts at a navaid or an airport that have magnetic variation. Additional information like ident and frequency will be added to the line in this case.
+The course for a rhumb line is normally indicated in degrees true. Course will be indicated in degrees magnetic if the measurement starts at a navaid or at an airport that has a magnetic variation. Additional information like ident and frequency will be added to the line in this case.
 
 #### Remove Distance measurement {#remove-distance-measurement}
 
