@@ -649,7 +649,7 @@ These highlight rings provide all functionality of visible map objects, even if 
 
 The display will change from a single icon to an airport diagram if you zoom in deep enough to an airport. The diagram shows all taxiways, parking positions, gates, runways and much more.
 
-The airport diagram provides more information through tooltips for parking and tower positions. A right click on a parking position allows to set this as a start position for a flight plan.
+The airport diagram provides more information through tooltips for parking and tower positions. A right click on a parking position sets this as the start position for a flight plan.
 
 See the Nav Map Legend for details about the airport diagram.
 
