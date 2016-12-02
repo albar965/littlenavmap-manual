@@ -273,7 +273,7 @@ Swaps departure and destination and reverses order of all intermediate waypoints
 
 ![Goto Home](images/icons/home.png "Goto Home")
 
-Goes to home area that was set using [Set Home](#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](images/icons/homesymbol.png "Home Symbol") symbol.
+Goes to the home area that was set using [Set Home](#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](images/icons/homesymbol.png "Home Symbol") symbol.
 
 #### Go to Center for Distance Search {#go-to-center-for-distance-search}
 
@@ -285,13 +285,13 @@ Go to the center point used for distance searches. See [Set Center for Distance 
 
 ![Center Flight Plan](images/icons/centerroute.png "Center Flight Plan")
 
-Shows the whole flight plan on the map.
+Zooms out the map (if required) to display the whole flight plan on the map.
 
 #### Center Aircraft {#center-aircraft}
 
 ![Center Aircraft](images/icons/centeraircraft.png "Center Aircraft")
 
-Zooms to the user aircraft if connected to a flight simulator using [Little Navconnect](https://albar965.github.io/littlenavconnect.html) and keeps the aircraft centered.
+Zooms to the user aircraft if directly connected to a flight simulator or remotely connected using [Little Navconnect](https://albar965.github.io/littlenavconnect.html) and keeps the aircraft centered on the map.
 
 The centering of the aircraft can be changed in the `Options` dialog on the `Simulator Aircraft` tab.
 
