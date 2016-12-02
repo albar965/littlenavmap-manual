@@ -113,11 +113,11 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 
 ## First Start {#first-start}
 
-The [Scenery Library Dialog](#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_&#039;s internal database. One database is kept for each simulator and can be changed on the fly in the [Scenery Library](#scenery-library-menu) menu.
+The [Scenery Library Dialog](#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ for the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_&#039;s internal database. One database is kept for each simulator and can be changed on the fly in the [Scenery Library](#scenery-library-menu) menu.
 
 A warning dialog will be shown when starting _Little Navmap_ the first time on a system without any flight simulator installations. See chapter [Running without Flight Simulator Installation](#running-without-flight-simulator-installation) for more information on this.
 
-It can happen that the scenery library database has to be updated when you install a new version of _Little Navmap_. A question dialog will pop up and ask if the incompatible database can be erased. You can reload the scenery in the [Scenery Library Dialog](#load-scenery-library-dialog) after erasing the database.
+The scenery library database may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the incompatible database. You can reload the scenery in the [Scenery Library Dialog](#load-scenery-library-dialog) after erasing the database.
 
 ## Menus and Toolbars {#menus-and-toolbars}
 
