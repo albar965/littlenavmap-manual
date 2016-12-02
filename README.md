@@ -506,7 +506,7 @@ This menu is synchronized with simulator selection in the [Load Scenery Library 
 
 #### Show Database Files {#show-database-files}
 
-This opens _Little Navmap_&#039;s database directory in a file manager. See [Running without Flight Simulator Installation](#running-without-flight-simulator-installation) for more information on copying database files between different computers.
+This opens _Little Navmap_&#039;s database directory in a file manager. See [Running without Flight Simulator Installation](#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer (e.g. Windows, Mac or Linux) using the same database that was created on the computer running the flight simulator.
 
 #### Load Scenery Library {#load-scenery-library}
 
