@@ -609,15 +609,15 @@ The statusbar shows various indications (from left to right):
 
 ![Statusbar](images/statusbar.jpg "Statusbar")
 
-Picture above: Status bar with message about the last action on the left side and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level was increased once and the map coordinates are not shown since cursor is not inside the map window. The online map download progress indicator is empty.
+Picture above: Status bar with message about the last action on the left side and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level was increased once and the map coordinates are not shown since the cursor is not inside the map window. The online map download progress indicator is empty.
 
 ## Map Display {#map-display}
 
 ### Moving {#moving}
 
-Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map.
+Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map (overlay buttons not avaialble for MacOS).
 
-Alternatively use the cursor keys to scroll the map and `+` and `-` to zoom in and out. `Alt+Left` and `Alt+Right` goes forward or backward in the map position history. Do not forget to activate the map window by clicking into it before using any keys for movements.
+Alternatively use the cursor keys to scroll the map and `+` and `-` to zoom in and out. `Alt+Left` and `Alt+Right` goes forward or backward in the map position history. Do not forget to activate the map window by clicking into it before using any keys for movement.
 
 ### Mouse Clicks {#mouse-clicks}
 
@@ -631,9 +631,9 @@ The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map 
 
 ### Tooltips {#tooltips}
 
-Hovering the mouse over the map will show tooltips for all map objects like airports, VOR, NDB, airways, parking, fuel box and towers. The tooltip is truncated and shows a message `More...` if it gets too long. In that case reduce details or zoom in.
+Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways, parking, fuel box and towers. The tooltip is truncated and shows a message `More...` if it gets too long. In that case reduce details or zoom in.
 
-The sensitivity for tooltip display can be adjusted in the `Options` dialog on the `Map Display` tab.
+The sensitivity for the tooltip display can be adjusted in the `Options` dialog on the `Map Display` tab.
 
 ![Tooltip](images/tooltip.jpg "Tooltip")
 
@@ -643,7 +643,7 @@ Picture above: Tooltip with information for a French airport.
 
 Airports or navaids that are selected in the flight plan table or in the search result table are highlighted on the map with a green/black or a yellow/black ring respectively.
 
-These highlight rings provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance (ring is empty). That covers double click for zoom in, single click for information dock window and all context menu entries.
+These highlight rings provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance (ring is empty). This allows double click for zoom in, single click for information dock window and all context menu entries.
 
 ### Airport Diagram {#airport-diagram}
 
