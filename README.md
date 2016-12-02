@@ -54,37 +54,37 @@ _Little Navmap_ is a 32-bit application and was tested with Windows XP, Windows 
 
 ![Little Navmap Overview](images/overview.jpg "Little Navmap Overview")
 
-Refer to the picture above (Click to see large version) _Little Navmap_ for a quick overview showing the most important functions.
+Refer to the picture above (Click to see large version): _Little Navmap_ for a quick overview showing the most important functions.
 
 ## General Remarks {#general-remarks}
 
 ### User Interface {#user-interface}
 
-The user interface of _Little Navmap_ consists of several dock windows that are arranged around the main window which contains the map view.
+The user interface of _Little Navmap_ consists of a main window containing the map view and several windows which can be undocked from the main window or docked and arranged in any order around the main window.
 
-The dock windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double clicking their title bar or clicking on the window symbol on the top left.
+The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double clicking their title bar or by clicking on the window symbol on the top left.
 
-Double click onto the dock window&#039;s title bar or click on the window symbol again to move the windows back into their docked position.
+Double click on the docked window&#039;s title bar or click on the window symbol again to move the windows back into their docked position.
 
-All docks can be closed if they are not needed. You can even drop docks on each other to create a tabbed view (tabs will appear at the bottom of the dock stack in this case).
+All docked windows can be closed if they are no longer needed. You can even drop docked windows on each other to create a tabbed view (tabs will appear at the bottom of the dock stack in this case).
 
-Toolbars are also movable if you click on the left handle and can be closed or undocked from the main window too.
+Toolbars are also movable by clicking on the left handle and can also be closed or undocked from the main window.
 
-Use the `Main Menu` -&gt; `Window` menu to bring dock windows or toolbars back.
+Use the `Main Menu` -&gt; `Window` menu to bring docked windows or toolbars back.
 
 The main window title indicates the currently selected flight simulator database (`FSX`, `FSXSE`, `P3DV2` or `P3DV3`), the flight plan file name and a trailing `*` if the flight plan was changed.
 
 Almost all dialogs, text labels and all information windows in _Little Navmap_ support copy and paste. You can select the text using the mouse and then either use `Ctrl-C` or the context menu to copy it into the clipboard. The information windows even support copying of formatted text.
 
-The table views for the flight plan or airport/navaid search results allow to copy the results in CSV format into the clipboard.
+The table views for the flight plan or airport/navaid search results allows copying of the results in CSV format into the clipboard.
 
 ![Little Navmap](images/all.jpg "Little Navmap")
 
-Picture above (Click to see large version): _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
+Refer to the picture above (Click to see large version): _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
 
 ### Translation and Locale {#translation-and-locale}
 
-_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface into any other language. Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German Windows you will see comma as a decimal separator instead of the English dot.
+_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface into any other language. Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
 
 To avoid confusion: The screenshots in this manual were taken using German locale. This means that comma is used as a decimal separator and dot as a thousands separator.
 
