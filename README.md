@@ -520,7 +520,7 @@ Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](#load
 
 ![Flight Simulator Connection](images/icons/network.png "Flight Simulator Connection")
 
-Opens the `Connect` dialog that allows to connect to a Flight Simulator using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator) for more information.
+Opens the `Connect` dialog allowing _Little Navmap_ to be connected directly to a Flight Simulator or remotely connected using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator) for more information.
 
 #### Reset all Messages {#reset-all-messages}
 
