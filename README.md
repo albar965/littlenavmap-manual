@@ -311,9 +311,9 @@ Jumps forward or backward in the map position history. The complete history is s
 
 ![More Details](images/icons/detailmore.png "More Details")![Default Details](images/icons/detaildefault.png "Default Details")![Less Details](images/icons/detailless.png "Less Details")
 
-Increases or decreases details on the map. More details mean more airports, more navaids, more text information and bigger icons.
+Increases or decreases details on the map. More details means more airports, more navaids, more text information and bigger icons.
 
-Note that map information will be truncated to 3000 objects if too much detail is requested.
+Note that map information will be truncated to 3000 objects if too much detail is chosen.
 
 #### Projection {#projection}
 
@@ -333,7 +333,7 @@ Picture above: Spherical map projection with `Simple` offline map theme selected
 
 #### Theme {#theme}
 
-Be aware that all the online maps here are delivered from free services which cannot guarantee any download speed or availability. In any case it is easy to deliver and install a new online map description without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](#creating-or-adding-map-themes) for more information on this.
+Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](#creating-or-adding-map-themes) for more information.
 
 ##### OpenStreetMap {#openstreetmap}
 
