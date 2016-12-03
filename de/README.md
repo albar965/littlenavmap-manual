@@ -1400,7 +1400,7 @@ Dieses Programm wird in der Hoffnung, dass es nützlich sein wird, aber OHNE JED
 Sie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben. Wenn nicht, siehe &lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)&gt;.
 
 <p>
-<img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="images/gpl-v3-logo.svg" />
+<img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="../images/gpl-v3-logo.svg" />
 </p>
 
 Letzte Aktualisierung 08.11.2016
