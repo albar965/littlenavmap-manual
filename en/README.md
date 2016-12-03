@@ -1,6 +1,6 @@
 # Little Navmap User Manual {#little-navmap-user-manual}
 
-![Little Navmap](images/littlenavmap.svg "Little Navmap")
+![Little Navmap](../images/littlenavmap.svg "Little Navmap")
 
 Version 1.1.0.devel
 
@@ -52,7 +52,7 @@ _Little Navmap_ is a 32-bit application and was tested with Windows XP, Windows 
 
 ## Quick Overview {#quick-overview}
 
-![Little Navmap Overview](images/overview.jpg "Little Navmap Overview")
+![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
 Picture above (Click to see large version): _Little Navmap_ for a quick overview showing the most important functions.
 
@@ -78,7 +78,7 @@ Almost all dialogs, text labels and all information windows in _Little Navmap_ s
 
 The table views for the flight plan or airport/navaid search results allows copying of the results in CSV format into the clipboard.
 
-![Little Navmap](images/all.jpg "Little Navmap")
+![Little Navmap](../images/all.jpg "Little Navmap")
 
 Picture above (Click to see large version): _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
 
@@ -123,7 +123,7 @@ The scenery library database may need to be updated when you install a new versi
 
 This chapter describes all the menu items of _Little Navmap_. You will find most of this functionality on the toolbars as well which are not be described separately. Key combinations can be seen on the menu items and are not listed in this manual.
 
-![Little Navmap Menu and Toolbars](images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
+![Little Navmap Menu and Toolbars](../images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
 
 Picture above: Menu and toolbars docked in default positions.
 
@@ -131,13 +131,13 @@ Picture above: Menu and toolbars docked in default positions.
 
 #### New Flight Plan {#new-flight-plan}
 
-![New Flight Plan](images/icons/filenew.png "New Flight Plan")
+![New Flight Plan](../images/icons/filenew.png "New Flight Plan")
 
 Erases current plan and creates a new one.
 
 #### Open Flight Plan {#open-flight-plan}
 
-![Open Flight Plan](images/icons/fileopen.png "Open Flight Plan")
+![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan")
 
 Opens a Flight Simulator PLN file. FS9 flight plan files are not supported.
 
@@ -145,7 +145,7 @@ An opened flight plan file will be reloaded on start up (reload and centering ca
 
 #### Append Flight Plan {#append-flight-plan}
 
-![Append flight plan](images/icons/fileappend.png "Append flight plan")
+![Append flight plan](../images/icons/fileappend.png "Append flight plan")
 
 Adds departure, destination and all waypoints to the current flight plan.
 
@@ -153,11 +153,11 @@ Using `Append Flight Plan` allows to load or merge complete flight plans or flig
 
 #### Save Flight Plan {#save-flight-plan}
 
-![Save Flight Plan](images/icons/filesave.png "Save Flight Plan")
+![Save Flight Plan](../images/icons/filesave.png "Save Flight Plan")
 
 #### Save Flight Plan as {#save-flight-plan-as}
 
-![Save Flight Plan as](images/icons/filesaveas.png "Save Flight Plan as")
+![Save Flight Plan as](../images/icons/filesaveas.png "Save Flight Plan as")
 
 Saves the flight plan to a FSX PLN file (XML format).
 
@@ -167,19 +167,19 @@ A warning dialog will also be shown if the departure airport has parking positio
 
 #### Add Google Earth KML {#add-google-earth-kml}
 
-![Add Google Earth KML](images/icons/kmlfileopen.png "Add Google Earth KML")
+![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML")
 
 Allows to add one or more Google Earth KML or KMZ file to the map display. All added KML or KMZ files will be reloaded on start up. Reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab.
 
 #### Clear Google Earth KML from Map {#clear-google-earth-kml-from-map}
 
-![Clear Google Earth KML from Map](images/icons/cancel.png "Clear Google Earth KML from Map")
+![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map")
 
 Removes all loaded KML files from the map.
 
 #### Work Offline {#work-offline}
 
-![Offline](images/icons/offline.png "Offline")
+![Offline](../images/icons/offline.png "Offline")
 
 Stops loading of map data from the internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
 
@@ -187,7 +187,7 @@ You should restart the application after going online again.
 
 ### File -&gt; Quit {#file-quit}
 
-![Quit](images/icons/application-exit.png "Quit")
+![Quit](../images/icons/application-exit.png "Quit")
 
 Exits the application. Will ask for confirmation if there is a changed flight plan.
 
@@ -195,29 +195,29 @@ Exits the application. Will ask for confirmation if there is a changed flight pl
 
 #### Undo/Redo {#undo-redo}
 
-![Undo](images/icons/undo.png "Undo")![Redo](images/icons/redo.png "Redo")
+![Undo](../images/icons/undo.png "Undo")![Redo](../images/icons/redo.png "Redo")
 
 Allows to undo and redo all flight plan changes.
 
 #### Select a Start Position for Departure {#select-a-start-position-for-departure}
 
-![Select a Start Position for Departure](images/icons/parkingstartset.png "Select a Start Position for Departure")
+![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure")
 
 A parking spot (gate, ramp or fuel box), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](#set-as-flight-plan-departure) when right clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
 
-![Select Start Position Dialog](images/selectstartposition.jpg "Select Start Position Dialog")
+![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
 Picture above: The start position selection dialog for EDDN.
 
 #### Edit Flight Plan on Map {#edit-flight-plan-on-map}
 
-![Edit Flight Plan on Map](images/icons/routeedit.png "Edit Flight Plan on Map")
+![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map")
 
 Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Editing](#map-flight-plan-editing).
 
 #### Calculate Direct {#calculate-direct}
 
-![Calculate Direct](images/icons/routedirect.png "Calculate Direct")
+![Calculate Direct](../images/icons/routedirect.png "Calculate Direct")
 
 Deletes all intermediate waypoints and connects departure and destination using a great circle line.
 
@@ -225,7 +225,7 @@ You can calculate a flight plan between any kind of waypoints, even user defined
 
 #### Calculate Radionav {#calculate-radionav}
 
-![Calculate Radionav](images/icons/routeradio.png "Calculate Radionav")
+![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")
 
 Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME only stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Buid the flight plan manually if this is the case.
 
@@ -233,7 +233,7 @@ This calculation can also be used to create a flight plan snippet between any ki
 
 #### Calculate high Altitude {#calculate-high-altitude}
 
-![Calculate high Altitude](images/icons/routehigh.png "Calculate high Altitude")
+![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")
 
 Uses Jet airways to create a flight plan.
 
@@ -243,7 +243,7 @@ A simplified east/west rule is used to adjust the cruise altitude to odd/even va
 
 The default behavior is to jump from the departure airport to the next waypoint of a suitable airway and vice versa for the destination. This can be changed in `Options` dialog on the `Flight Plan` tab if VOR or NDB stations are preferred as transition points to airways.
 
-The airway network of Flight Simulator is not complete (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas will fail. 
+The airway network of Flight Simulator is not complete (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas will fail.
 
 Create the airway manually as a workaround or use an online planning tool to obtain a "route string" and use the `New Flight Plan from String` option to create the flight plan.
 
@@ -251,19 +251,19 @@ This calculation can also be used to create a flight plan snipped between any ki
 
 #### Calculate low Altitude {#calculate-low-altitude}
 
-![Calculate low Altitude](images/icons/routelow.png "Calculate low Altitude")
+![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")
 
 Uses Victor airways to create a flight plan. Everything else is the same as in `Calculate high Altitude`.
 
 #### Calculate based on given Altitude {#calculate-based-on-given-altitude}
 
-![Calculate based on given Altitude](images/icons/routealt.png "Calculate based on given Altitude")
+![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")
 
 Use the value in the altitude field of the flight plan to find a flight plan along Victor and/or Jet airways. Calculation will fail if the altitude value is too low. Everything else is the same as in `Calculate high Altitude`.
 
 #### Reverse Flight Plan {#reverse-flight-plan}
 
-![Reverse Flight Plan](images/icons/routereverse.png "Reverse Flight Plan")
+![Reverse Flight Plan](../images/icons/routereverse.png "Reverse Flight Plan")
 
 Swaps departure and destination and reverses order of all intermediate waypoints. A default runway is assigned for the new departure start position.
 
@@ -271,25 +271,25 @@ Swaps departure and destination and reverses order of all intermediate waypoints
 
 #### Goto Home {#goto-home}
 
-![Goto Home](images/icons/home.png "Goto Home")
+![Goto Home](../images/icons/home.png "Goto Home")
 
-Goes to the home area that was set using [Set Home](#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](images/icons/homesymbol.png "Home Symbol") symbol.
+Goes to the home area that was set using [Set Home](#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
 
 #### Go to Center for Distance Search {#go-to-center-for-distance-search}
 
-![Go to Center for Distance Search](images/icons/centermark.png "Go to Center for Distance Search")
+![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search")
 
-Go to the center point used for distance searches. See [Set Center for Distance Search](#set-center-for-distance-search).The center for the distance search is highlighted by a ![Distance Search Symbol](images/icons/distancemark.png "Distance Search Symbol") symbol.
+Go to the center point used for distance searches. See [Set Center for Distance Search](#set-center-for-distance-search).The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
 #### Center Flight Plan {#center-flight-plan}
 
-![Center Flight Plan](images/icons/centerroute.png "Center Flight Plan")
+![Center Flight Plan](../images/icons/centerroute.png "Center Flight Plan")
 
 Zooms out the map (if required) to display the whole flight plan on the map.
 
 #### Center Aircraft {#center-aircraft}
 
-![Center Aircraft](images/icons/centeraircraft.png "Center Aircraft")
+![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft")
 
 Zooms to the user aircraft if directly connected to a flight simulator or remotely connected using [Little Navconnect](https://albar965.github.io/littlenavconnect.html) and keeps the aircraft centered on the map.
 
@@ -297,19 +297,19 @@ The centering of the aircraft can be changed in the `Options` dialog on the `Sim
 
 #### Delete Aircraft Trail {#delete-aircraft-trail}
 
-![Delete Aircraft Trail](images/icons/aircrafttraildelete.png "Delete Aircraft Trail")
+![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail")
 
 Removes the user aircraft trail. It is also deleted when connecting to a flight simulator. The trail is saved and will be reloaded on program startup.
 
 #### Map Position Back/Forward {#map-position-back-forward}
 
-![Map Position Back](images/icons/back.png "Map Position Back")![Map Position Forward](images/icons/next.png "Map Position Forward")
+![Map Position Back](../images/icons/back.png "Map Position Back")![Map Position Forward](../images/icons/next.png "Map Position Forward")
 
 Jumps forward or backward in the map position history. The complete history is saved and restored when starting _Little Navmap_.
 
 #### More/Default/Less Details {#more-default-less-details}
 
-![More Details](images/icons/detailmore.png "More Details")![Default Details](images/icons/detaildefault.png "Default Details")![Less Details](images/icons/detailless.png "Less Details")
+![More Details](../images/icons/detailmore.png "More Details")![Default Details](../images/icons/detaildefault.png "Default Details")![Less Details](../images/icons/detailless.png "Less Details")
 
 Increases or decreases details on the map. More details means more airports, more navaids, more text information and bigger icons.
 
@@ -327,7 +327,7 @@ Shows earth as a globe which is the most natural projection. Movement can stutte
 
 Online maps can appear slightly blurred when using this projection. This is a result from converting the image tiles to the spherical display.
 
-![Little Navmap Spherical projection and Simple Map Theme](images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
+![Little Navmap Spherical projection and Simple Map Theme](../images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
 
 Picture above: Spherical map projection with `Simple` offline map theme selected.
 
@@ -341,7 +341,7 @@ This is an online raster (i.e. based on images) map that includes a hill shading
 
 _OpenStreetMap_ data is not loaded directly from the OSM servers but from the [MapTiles proxy service](https://maptiles.xyz).
 
-![OpenStreetMap and Hill shading](images/osmhillshading.jpg "OpenStreetMap and Hill shading")
+![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
 Picture above: View at an Italian airport using _OpenStreetMap_ theme and hill shading.
 
@@ -355,7 +355,7 @@ Map data for this map is provided by © [OpenStreetMap](http://osm.org) contribu
 
 [SRTM](http://srtm.csi.cgiar.org); ASTER GDEM is a product of [METI](http://www.meti.go.jp/english/index.html) and [NASA](https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
 
-![OSM Roads and Hill shading](images/osmroad.jpg "OSM Roads and Hill shading")
+![OSM Roads and Hill shading](../images/osmroad.jpg "OSM Roads and Hill shading")
 
 Picture above: View at an Italian airport using the _OpenMapSurfer_ theme and hill shading.
 
@@ -365,7 +365,7 @@ An online raster map that mimics a topographic map. Includes hill shading and el
 
 The tiles for this map are provided by [OpenTopoMap](http://www.opentopomap.org).
 
-![OpenTopoMap](images/otm.jpg "OpenTopoMap")
+![OpenTopoMap](../images/otm.jpg "OpenTopoMap")
 
 Picture above: View at the eastern Alps using _OpenTopoMap_ theme. A flight plan is shown north of the Alps.
 
@@ -375,7 +375,7 @@ A terrain map featuring hill shading and natural vegetation colors. The hill sha
 
 Map tiles by [Stamen Design](http://stamen.com), under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
 
-![Stamen Terrain](images/stamenterrain.jpg "Stamen Terrain")
+![Stamen Terrain](../images/stamenterrain.jpg "Stamen Terrain")
 
 Picture above: View showing _Stamen Terrain_ theme.
 
@@ -393,25 +393,25 @@ A very simple map including coarse hill shading and land colors. The map include
 
 #### Force Show Addon Airports {#force-show-addon-airports}
 
-![Force Show Addon Airports](images/icons/airportaddon.png "Force Show Addon Airports")
+![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports")
 
 Add-on airports are always shown independent of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
 
 #### Show Airports with hard Runways {#show-airports-with-hard-runways}
 
-![Show Airports with hard Runways](images/icons/airport.png "Show Airports with hard Runways")
+![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways")
 
 Show airports that have at least one runway with a hard surface.
 
 #### Show Airports with soft Runways {#show-airports-with-soft-runways}
 
-![Show Airports with soft Runways](images/icons/airportsoft.png "Show Airports with soft Runways")
+![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways")
 
 Show airports that have only soft surfaced runways or only water runways. This type of airport might be hidden on the map depending on zoom distance.
 
 #### Show empty Airports {#show-empty-airports}
 
-![Show empty Airports](images/icons/airportempty.png "Show empty Airports")
+![Show empty Airports](../images/icons/airportempty.png "Show empty Airports")
 
 Shows empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
 
@@ -421,39 +421,39 @@ Airports having only water runways are excluded from this definition to avoid un
 
 #### Show VOR Stations {#show-vor-stations}
 
-![Show VOR Stations](images/icons/vor.png "Show VOR Stations")
+![Show VOR Stations](../images/icons/vor.png "Show VOR Stations")
 
 #### Show NDB Stations {#show-ndb-stations}
 
-![Show NDB Stations](images/icons/ndb.png "Show NDB Stations")
+![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations")
 
 #### Show Waypoints {#show-waypoints}
 
-![Show Waypoints](images/icons/waypoint.png "Show Waypoints")
+![Show Waypoints](../images/icons/waypoint.png "Show Waypoints")
 
 #### Show ILS Feathers {#show-ils-feathers}
 
-![Show ILS Feathers](images/icons/ils.png "Show ILS Feathers")
+![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers")
 
 #### Show Jet Airways {#show-jet-airways}
 
-![Show Jet Airways](images/icons/airwayjet.png "Show Jet Airways")
+![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways")
 
 #### Show Victor Airways {#show-victor-airways}
 
-![Show Victor Airways](images/icons/airwayvictor.png "Show Victor Airways")
+![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways")
 
 Shows or hides these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
 
 #### Show Flight Plan {#show-flight-plan}
 
-![Show Flight Plan](images/icons/route.png "Show Flight Plan")
+![Show Flight Plan](../images/icons/route.png "Show Flight Plan")
 
 Shows or hides the flight plan. The flight plan is shown independent of the zoom distance.
 
 #### Show Aircraft {#show-aircraft}
 
-![Show Aircraft](images/icons/aircraft.png "Show Aircraft")
+![Show Aircraft](../images/icons/aircraft.png "Show Aircraft")
 
 Shows the user aircraft if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
 
@@ -470,7 +470,7 @@ This allows a quick inspection of an airport or navaid during flight. To display
 
 #### Show Aircraft Trail {#show-aircraft-trail}
 
-![Show Aircraft Trail](images/icons/aircrafttrail.png "Show Aircraft Trail")
+![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail")
 
 Shows the user aircraft trail. The trail is always shown independent of the zoom distance. It is saved and will be reloaded on program startup.
 
@@ -480,19 +480,19 @@ The size of the trail is limited for performance reasons. Points will be removed
 
 #### Show Map Grid {#show-map-grid}
 
-![Show Map Grid](images/icons/mapgrid.png "Show Map Grid")
+![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid")
 
 Shows a latitude/longitude grid as well as the [meridian](http://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) (near the date line) on the map.
 
 #### Show Country and City Names {#show-country-and-city-names}
 
-![Show Country and City Names](images/icons/cities.png "Show Country and City Names")
+![Show Country and City Names](../images/icons/cities.png "Show Country and City Names")
 
 Show county, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](#theme).
 
 #### Show Hillshading {#show-hillshading}
 
-![Show Hillshading](images/icons/hillshading.png "Show Hillshading")
+![Show Hillshading](../images/icons/hillshading.png "Show Hillshading")
 
 Shows hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](#theme).
 
@@ -510,7 +510,7 @@ This opens _Little Navmap_&#039;s database directory in a file manager. See [Run
 
 #### Load Scenery Library {#load-scenery-library}
 
-![Load Scenery Library](images/icons/database.png "Load Scenery Library")
+![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
 
 Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
 
@@ -518,7 +518,7 @@ Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](#load
 
 #### Flight Simulator Connection {#flight-simulator-connection}
 
-![Flight Simulator Connection](images/icons/network.png "Flight Simulator Connection")
+![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection")
 
 Opens the `Connect` dialog allowing _Little Navmap_ to be connected directly to a Flight Simulator or remotely connected using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator) for more information.
 
@@ -528,7 +528,7 @@ This will re-enable all dialogs that were disabled by selecting `Do not show thi
 
 #### Options {#options}
 
-![Options](images/icons/settings.png "Options")
+![Options](../images/icons/settings.png "Options")
 
 Opens the [Options dialog](#options-dialog).
 
@@ -536,23 +536,23 @@ Opens the [Options dialog](#options-dialog).
 
 #### Search {#search}
 
-![Search](images/icons/searchdock.png "Search")
+![Search](../images/icons/searchdock.png "Search")
 
 #### Flight Plan {#flight-plan}
 
-![Flight Plan](images/icons/routedock.png "Flight Plan")
+![Flight Plan](../images/icons/routedock.png "Flight Plan")
 
 #### Information {#information}
 
-![Information](images/icons/infodock.png "Information")
+![Information](../images/icons/infodock.png "Information")
 
 #### Flight Plan Elevation Profile {#flight-plan-elevation-profile}
 
-![Flight Plan Elevation Profile](images/icons/profiledock.png "Flight Plan Elevation Profile")
+![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile")
 
 #### Simulator Aircraft {#simulator-aircraft}
 
-![Simulator Aircraft](images/icons/aircraftdock.png "Simulator Aircraft")
+![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft")
 
 Opens or closes these dock windows.
 
@@ -564,31 +564,31 @@ Shows or hides these toolbars and the statusbar.
 
 #### Contents {#contents}
 
-![Contents](images/icons/help.png "Contents")
+![Contents](../images/icons/help.png "Contents")
 
 Shows this help in the default web browser.
 
 #### NavMap Legend, Map Legend {#navmap-legend-map-legend}
 
-![NavMap Legend, Map Legend](images/icons/help.png "NavMap Legend, Map Legend")
+![NavMap Legend, Map Legend](../images/icons/help.png "NavMap Legend, Map Legend")
 
 Shows the map legend in the `Information` dock window. You can also access the navmap legend here: Little Navmap Legend
 
 #### About Little Navmap {#about-little-navmap}
 
-![About Little Navmap](images/icons/littlenavmap.png "About Little Navmap")
+![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap")
 
 Shows version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author&#039;s e-mail address.
 
 #### About Marble {#about-marble}
 
-![About Marble](images/icons/marble.png "About Marble")
+![About Marble](../images/icons/marble.png "About Marble")
 
 Information about the [Marble widget](https://marble.kde.org) that is used to download and show the maps.
 
 #### About Qt {#about-qt}
 
-![About Marble](images/icons/about.png "About Marble")
+![About Marble](../images/icons/about.png "About Marble")
 
 Information about the [Qt application framework](https://www.qt.io) that is used by _Little Navmap_.
 
@@ -607,7 +607,7 @@ The statusbar shows various indications (from left to right):
 *   Zoom distance (viewpoint to earth surface) in nautical miles.
 *   Cursor position on map in degrees/minutes/seconds latitude and longitude.
 
-![Statusbar](images/statusbar.jpg "Statusbar")
+![Statusbar](../images/statusbar.jpg "Statusbar")
 
 Picture above: Status bar with message about the last action on the left side and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level was increased once and the map coordinates are not shown since the cursor is not inside the map window. The online map download progress indicator is empty.
 
@@ -635,7 +635,7 @@ Hovering the mouse over the map will show tooltips for all map objects including
 
 The sensitivity for the tooltip display can be adjusted in the `Options` dialog on the `Map Display` tab.
 
-![Tooltip](images/tooltip.jpg "Tooltip")
+![Tooltip](../images/tooltip.jpg "Tooltip")
 
 Picture above: Tooltip with information for a French airport.
 
@@ -653,11 +653,11 @@ The airport diagram provides more information through tooltips for parking and t
 
 See the Nav Map Legend for details about the airport diagram.
 
-![Airport Diagram](images/airportdiagram1.jpg "Airport Diagram")
+![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")
 
 Picture above: High level view of the airport diagram of EDDH.
 
-![Airport Diagram](images/airportdiagram2.jpg "Airport Diagram")
+![Airport Diagram](../images/airportdiagram2.jpg "Airport Diagram")
 
 Picture above: Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible.
 
@@ -667,7 +667,7 @@ The map context menu can be activated using right click or the menu key.
 
 #### Show Information {#show-information}
 
-![Show Information](images/icons/globals.png "Show Information")
+![Show Information](../images/icons/globals.png "Show Information")
 
 Shows detailed information in the `Information` dock window for the nearest airport, airways or all navaids near the cursor.
 
@@ -675,7 +675,7 @@ See the [Information Dock Window](#information-dock-window) for details.
 
 #### Measure GC Distance from here {#measure-gc-distance-from-here}
 
-![Measure GC Distance from here](images/icons/distancemeasure.png "Measure GC Distance from here")
+![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here")
 
 Starts a measurement line on the first click. Second click ends measuring and keeps the line. All measurement lines are saved and will be restored on next start up.
 
@@ -693,7 +693,7 @@ See the Nav Map Legend for details on measurement lines.
 
 #### Measure Rhumb Distance from here {#measure-rhumb-distance-from-here}
 
-![Measure Rhumb Distance from here](images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here")
+![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here")
 
 A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is longer than the great circle route.
 
@@ -701,37 +701,37 @@ The course for a rhumb line is normally indicated in degrees true. Course will b
 
 #### Remove Distance measurement {#remove-distance-measurement}
 
-![Remove Distance measurement](images/icons/distancemeasureoff.png "Remove Distance measurement")
+![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement")
 
 This menu item is active if you right click at the end of a distance measurement line (small cross). Removes only the selected line.
 
 #### Show Range Rings {#show-range-rings}
 
-![Show Range Rings](images/icons/rangerings.png "Show Range Rings")
+![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
 
 Shows multiple red range rings around the clicked position. The number and distance of the range rings can be changed in the `Options` dialog on the `Map Display` tab. A label indicates the radius of each ring in nautical miles.
 
 #### Show Navaid range {#show-navaid-range}
 
-![Show Navaid range](images/icons/navrange.png "Show Navaid range")
+![Show Navaid range](../images/icons/navrange.png "Show Navaid range")
 
 Shows a ring around the clicked radio navaid (VOR or NDB) indicating the navaid&#039;s range. A label shows ident and frequency and the ring color indicates the navaid type.
 
 #### Remove Range Ring {#remove-range-ring}
 
-![Remove Range Ring](images/icons/rangeringoff.png "Remove Range Ring")
+![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring")
 
 Menu item is active if you right click at the center point of a range ring (small circle). Removes the rings from the map.
 
 #### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
 
-![Remove all Range Rings and Distance measurements](images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
+![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
 
 Removes all rings and distance measurement lines from the map.
 
 #### Set as Flight Plan Departure {#set-as-flight-plan-departure}
 
-![Set as Flight Plan Departure](images/icons/airportroutedest.png "Set as Flight Plan Departure")
+![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure")
 
 This is active if the click is at an airport, an airport parking position or a fuel box. It will either replace the current flight plan departure or add a new departure if the flight plan is empty.
 
@@ -739,13 +739,13 @@ The default runway will be used as starting position if the clicked object is an
 
 #### Set as Flight Plan Destination {#set-as-flight-plan-destination}
 
-![Set as Flight Plan Destination](images/icons/airportroutestart.png "Set as Flight Plan Destination")
+![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination")
 
 This is active if the click is at an airport. It will either replace the flight plan destination or add the airport if the flight plan is empty.
 
 #### Add Position to Flight Plan {#add-position-to-flight-plan}
 
-![Add Position to Flight Plan](images/icons/routeadd.png "Add Position to Flight Plan")
+![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan")
 
 Inserts the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is near the flight plan end points.
 
@@ -755,27 +755,27 @@ A user defined position is added to the flight plan if no airport or navaid is n
 
 #### Delete from Flight Plan {#delete-from-flight-plan}
 
-![Delete from Flight Plan](images/icons/routedeleteleg.png "Delete from Flight Plan")
+![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan")
 
 Deletes the clicked airport, navaid or user position from the flight plan.
 
 #### Show in Search {#show-in-search}
 
-![Show in Search](images/icons/search.png "Show in Search")
+![Show in Search](../images/icons/search.png "Show in Search")
 
 Shows the nearest airport or navaid in the search dialog. The current search parameters are reset.
 
 #### Set Center for Distance Search {#set-center-for-distance-search}
 
-![Set Center for Distance Search](images/icons/mark.png "Set Center for Distance Search")
+![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
 
-Sets the center point for the distance search function. See [Distance search](#distance-search). The center for the distance search is highlighted by a ![Distance Search Symbol](images/icons/distancemark.png "Distance Search Symbol") symbol.
+Sets the center point for the distance search function. See [Distance search](#distance-search). The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
 #### Set Home {#set-home}
 
-![Set Home](images/icons/home.png "Set Home")
+![Set Home](../images/icons/home.png "Set Home")
 
-Sets the home position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](images/icons/homesymbol.png "Home Symbol") symbol.
+Sets the home position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
 
 ## Map Flight Plan Editing {#map-flight-plan-editing}
 
@@ -804,23 +804,23 @@ The following functionality is available:
     *   No airport and no navaid: A user defined position replaces the waypoint resulting in an invalid flight plan.
 *   Right click, pressing the escape key or any click outside of the map window: Cancel current operation.
 
-![Flight Plan Edit](images/fpedit.jpg "Flight Plan Edit")
+![Flight Plan Edit](../images/fpedit.jpg "Flight Plan Edit")
 
 Picture above: Inserting a navaid into a flight plan leg by clicking and moving the leg line. A tool tip for the navaid is shown.
 
-![Flight Plan Edit](images/fpedit2.jpg "Flight Plan Edit")
+![Flight Plan Edit](../images/fpedit2.jpg "Flight Plan Edit")
 
 Picture above: Replacing VOR TRA in the flight plan with another one by simply clicking and moving the waypoint TRA onto KLO. A selection menu pops up for disambiguation.
 
 ## Search Dock Window {#search-dock-window}
 
-![Search](images/icons/searchdock.png "Search")
+![Search](../images/icons/searchdock.png "Search")
 
 ### General {#general}
 
 Two search tabs are available for airport and navaid (VOR, NDB and waypoints) search.
 
-These tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the hamburger button ![Hamburger Button](images/icons/menubutton.png "Hamburger Button") on the top right.
+These tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the hamburger button ![Hamburger Button](../images/icons/menubutton.png "Hamburger Button") on the top right.
 
 The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
 
@@ -856,13 +856,13 @@ This function allows you to combine all other search options with simple spatial
 
 The checkbox `Distance` has to be selected to enable this search. The result will include only airports or navaids that are within the given minimum and maximum range of nautical miles from the search center. This allows you to quickly search for a destination that is within the range of your aircraft and fulfills other criteria like having lighted runways and fuel.
 
-The center for the distance search is highlighted by a ![Distance Search Symbol](images/icons/distancemark.png "Distance Search Symbol") symbol.
+The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
 To restrict the search further you can select a direction (North, East, South and West).
 
 Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results.
 
-![Complex Distance Search](images/complexsearch.jpg "Complex Distance Search")
+![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
 Picture above (Click to see large version): A complex search: Find all airports within a distance between 200 and 400 nautical miles from Frankfurt (EDDF). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table.
 
@@ -882,11 +882,11 @@ The above applies to all table views in the program.
 
 The program saves the sort order, column widths and positions until `Reset View` is selected in the context menu.
 
-![Airport Search Result Table](images/airportsearchtable.jpg "Airport Search Result Table")
+![Airport Search Result Table](../images/airportsearchtable.jpg "Airport Search Result Table")
 
 Picture above: Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right.
 
-![Navaid Search Result Table](images/navaidsearchtable.jpg "Navaid Search Result Table")
+![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
 Picture above: Navaid search. All search options are visible. Search is limited to ICAO region `LI` (Italy) and VOR and NDB stations.
 
@@ -898,31 +898,31 @@ A double click on an entry in the table view shows either an airport diagram or 
 
 #### Show Information {#show-information-0}
 
-![Show Information](images/icons/globals.png "Show Information")
+![Show Information](../images/icons/globals.png "Show Information")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 #### Show on Map {#show-on-map}
 
-![Show on Map](images/icons/showonmap.png "Show on Map")
+![Show on Map](../images/icons/showonmap.png "Show on Map")
 
 Shows either the airport diagram or zooms to the navaid on the map.
 
 #### Filter by Entries including/excluding {#filter-by-entries-including-excluding}
 
-![Filter by Entries including](images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](images/icons/filter-remove.png "Filter by Entries excluding")
+![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding")
 
 Takes the text of the field under the cursor and sets the search filter for an including or an excluding search. This only enabled for text columns.
 
 #### Reset Search {#reset-search}
 
-![Reset Search](images/icons/clear.png "Reset Search")
+![Reset Search](../images/icons/clear.png "Reset Search")
 
 Clears search filters and shows all entries again in the search result table view.
 
 #### Show All {#show-all}
 
-![Reset Search](images/icons/load-all.png "Show All")
+![Reset Search](../images/icons/load-all.png "Show All")
 
 The table view does not show all entries initially for performance reasons. This menu item allows to load and show the whole search result. The view switches back to the limited number of entries after a search filter is modified or the sort order is changed. The number of all, visible and selected entries is shown at the bottom of the tab.
 
@@ -930,33 +930,33 @@ Be aware that showing all navaids and airports can take some time especially if 
 
 #### Show Range Rings {#show-range-rings-0}
 
-![Show Range Rings](images/icons/rangerings.png "Show Range Rings")
+![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
 
 #### Show Navaid range {#show-navaid-range-0}
 
-![Show Navaid range](images/icons/navrange.png "Show Navaid range")
+![Show Navaid range](../images/icons/navrange.png "Show Navaid range")
 
 #### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-0}
 
-![Remove all Range Rings and Distance measurements](images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
+![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
 
 #### Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
 
-![Set as Flight Plan Departure](images/icons/airportroutedest.png "Set as Flight Plan Departure")
+![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure")
 
 #### Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
 
-![Set as Flight Plan Destination](images/icons/airportroutestart.png "Set as Flight Plan Destination")
+![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination")
 
 #### Add Position to Flight Plan {#add-position-to-flight-plan-0}
 
-![Add Position to Flight Plan](images/icons/routeadd.png "Add Position to Flight Plan")
+![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 #### Copy {#copy}
 
-![Copy](images/icons/copy.png "Copy")
+![Copy](../images/icons/copy.png "Copy")
 
 Copies the selected entries in CSV format into the clipboard. This will consider changes to the table view like column order and sort order. The CSV will include a header line.
 
@@ -966,19 +966,19 @@ Selects all visible entries. To select all available entries the function `Show 
 
 #### Reset View {#reset-view}
 
-![Reset View](images/icons/cleartable.png "Reset View")
+![Reset View](../images/icons/cleartable.png "Reset View")
 
 Resets the sort order, the column order and column widths back to default.
 
 #### Set Center for Distance Search {#set-center-for-distance-search-0}
 
-![Set Center for Distance Search](images/icons/mark.png "Set Center for Distance Search")
+![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 ## Flight Plan Dock Window {#flight-plan-dock-window}
 
-![Flight Plan](images/icons/routedock.png "Flight Plan")
+![Flight Plan](../images/icons/routedock.png "Flight Plan")
 
 ### Upper Part {#upper-part}
 
@@ -1001,7 +1001,7 @@ Note on the table columns `Course °M` and `Direct °M`:
 *   `Direct °M:` This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
 *   `Course °M:` This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when travelling along a great circle line.
 
-![Flight Plan](images/flightplan.jpg "Flight Plan")
+![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
 Picture above: The `Flight Plan` dock window.
 
@@ -1013,7 +1013,7 @@ A double click on an entry in the table view shows either an airport diagram or 
 
 #### Move Selected Legs up/down {#move-selected-legs-up-down}
 
-![Move Selected Legs up](images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](images/icons/routelegdown.png "Move Selected Legs down")
+![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down")
 
 Moves all selected flight plan legs up or down in the list. This works also if multiple legs are selected.
 
@@ -1021,31 +1021,31 @@ Airway names will be removed when waypoints in the flight plan are moved or dele
 
 #### Delete Selected Legs {#delete-selected-legs}
 
-![Delete Selected Legs](images/icons/routedeleteleg.png "Delete Selected Legs")
+![Delete Selected Legs](../images/icons/routedeleteleg.png "Delete Selected Legs")
 
 Deletes all selected flight plan legs. Use `Undo` if you deleted legs accidentally.
 
 #### Show Information {#show-information-1}
 
-![Show Information](images/icons/globals.png "Show Information")
+![Show Information](../images/icons/globals.png "Show Information")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 #### Show on Map {#show-on-map-0}
 
-![Show on Map](images/icons/showonmap.png "Show on Map")
+![Show on Map](../images/icons/showonmap.png "Show on Map")
 
 Shows either the airport diagram or zooms to the navaid on the map.
 
 #### Show Range Rings {#show-range-rings-1}
 
-![Show Range Rings](images/icons/rangerings.png "Show Range Rings")
+![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 #### Show Navaid range {#show-navaid-range-1}
 
-![Show Navaid range](images/icons/navrange.png "Show Navaid range")
+![Show Navaid range](../images/icons/navrange.png "Show Navaid range")
 
 Will show the range rings for all selected radio navaids in the flight plan. You will get a range circle for each radio navaid on the flight plan if you simply select all legs of the flight plan and use this function.
 
@@ -1053,13 +1053,13 @@ Otherwise, the same as the [Map Context Menu](#map-context-menu).
 
 #### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-1}
 
-![Remove all Range Rings and Distance measurements](images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
+![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 #### Copy {#copy-0}
 
-![Copy](images/icons/copy.png "Copy")
+![Copy](../images/icons/copy.png "Copy")
 
 Copies the selected entries in CSV format into the clipboard. The CSV will include a header. This will consider changes to the table view like column order.
 
@@ -1069,19 +1069,19 @@ Selects all flight plan legs.
 
 #### Reset View {#reset-view-0}
 
-![Reset View](images/icons/cleartable.png "Reset View")
+![Reset View](../images/icons/cleartable.png "Reset View")
 
 Resets the column order and column widths back to the default view.
 
 #### Set Center for Distance Search {#set-center-for-distance-search-1}
 
-![Set Center for Distance Search](images/icons/mark.png "Set Center for Distance Search")
+![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
 
 Same as the [Map Context Menu](#map-context-menu).
 
 ## Information Dock Window {#information-dock-window}
 
-![Information](images/icons/infodock.png "Information")
+![Information](../images/icons/infodock.png "Information")
 
 This dock window contains text information about airports in several tabs as well as information for one or more navaids or airways in another tab. Also, included are the legend for the navigation symbols and the general map legend which depends on the selected map theme.
 
@@ -1091,33 +1091,33 @@ Note that the airport and airport related tabs are preferred. So, when you click
 
 A link `Map` allows jumping to the shown airport or navaid on the map.
 
-![Airport Information](images/infoairport.jpg "Airport Information")
+![Airport Information](../images/infoairport.jpg "Airport Information")
 
 Picture above: Airport information overview. Additional tabs show information for runways, COM frequencies and approaches.
 
-![Navaid Information](images/infonavaid.jpg "Navaid Information")
+![Navaid Information](../images/infonavaid.jpg "Navaid Information")
 
 Picture above: Navaid information. Two navaids were close to the cursor when clicked.
 
 ## Simulator Aircraft Dock Window {#simulator-aircraft-dock-window}
 
-![Simulator Aircraft](images/icons/aircraftdock.png "Simulator Aircraft")
+![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft")
 
 This dock window shows information similar to a flight management computer about the user aircraft. _Little Navmap_ has to be connected to the simulator to enable this functionality. The dock window contains one tab that shows general aircraft data like gross weight and another tab that displays flight data, flight plan progress, weather and ambient parameters.
 
 See [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator) for more information on this topic.
 
-![Aircraft Information](images/infoac.jpg "Aircraft Information")
+![Aircraft Information](../images/infoac.jpg "Aircraft Information")
 
 Picture above: Aircraft information when connected to a Flight Simulator.
 
-![Aircraft Progresss Information](images/infoacprogress.jpg "Aircraft Progresss Information")
+![Aircraft Progresss Information](../images/infoacprogress.jpg "Aircraft Progresss Information")
 
 Picture above: Progress and ambient information of the current flight situation. Some fields or tables like `Next Waypoint` are only available when a flight plan is loaded.
 
 ## Flight Plan Elevation Profile Dock Window {#flight-plan-elevation-profile-dock-window}
 
-![Flight Plan Elevation Profile](images/icons/profiledock.png "Flight Plan Elevation Profile")
+![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile")
 
 This dock window shows the ground elevation and flight plan cruise altitude together will all flight plan waypoints. It is only available when a flight plan is loaded. The user aircraft will be shown too if _Little Navmap_ is connected to the simulator.
 
@@ -1141,7 +1141,7 @@ Following information is shown in the top label when hovering the mouse over the
 
 For more information see the `Navmap Legend` tab in the `Information` dock window or the Little Navmap Legend.
 
-![Flight Plan Elevation Profile](images/profile.jpg "Flight Plan Elevation Profile")
+![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
 Picture above: Flight plan elevation profile with line indicating the mouse hovering position.
 
@@ -1162,19 +1162,19 @@ You can also select the `current_wx_snapshot.txt` file manually. In that case th
 
 ## Options Dialog {#options-dialog}
 
-![Options](images/icons/settings.png "Options")
+![Options](../images/icons/settings.png "Options")
 
 Most options are self explaining and tooltips contain more detailed explanations if applicable. Therefore, a more detailed description is not needed here.
 
 The button `Restore Defaults` only restores the options of this dialog back to default. Other settings like map display, table views or dock window positions are not affected. To reset all saved settings completely see [Troubleshoot](#troubleshoot).
 
-![Options](images/options.jpg "Options")
+![Options](../images/options.jpg "Options")
 
 Picture above: `Startup` tab of the options dialog.
 
 ## Load Scenery Library Dialog {#load-scenery-library-dialog}
 
-![Load Scenery Library](images/icons/database.png "Load Scenery Library")
+![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
 
 This dialog allows to load the scenery library data from all four supported flight simulators into the _Little Navmap_ internal database. The scenery library to load can be selected in the `Simulator:` drop down box.
 
@@ -1199,11 +1199,11 @@ The program tries to find the base paths and `Scenery.cfg` files automatically. 
 
 An error dialog is shown after loading if any BGL files could not be read. In this case you should check if the airports of the affected sceneries display correctly and show the correct information.
 
-![Load Scenery Dialog](images/loadscenery.jpg "Load Scenery Dialog")
+![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
 
 Picture above: Load Scenery Dialog. Nothing is loaded yet for FSX.
 
-![Load Scenery Progress Dialog](images/loadsceneryprogress.jpg "Load Scenery Progress Dialog")
+![Load Scenery Progress Dialog](../images/loadsceneryprogress.jpg "Load Scenery Progress Dialog")
 
 Picture above: Progress dialog shown while loading the scenery library into _Little Navmap_&#039;s internal database.
 
@@ -1230,7 +1230,7 @@ See next chapter about connecting to the flight simulator.
 
 ## Connecting to a Flight Simulator {#connecting-to-a-flight-simulator}
 
-![Flight Simulator Connection](images/icons/network.png "Flight Simulator Connection")
+![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection")
 
 User aircraft information is transfered to _Little Navmap_ by using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent on the flying computer which saves the error prone setup of a remote SimConnect connection.
 
@@ -1240,7 +1240,7 @@ _Little Navmap_ cannot connect to the flight simulator directly. The _Little Nav
 
 1.  Install [Little Navconnect](https://albar965.github.io/littlenavconnect.html) on the computer that is running the flight simulator. Start it and take note of the message that is printed on the logging window. You only need the colored values. You can use the IP address or the hostname. _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. `localhost` and `127.0.0.1` will be used if you are not connected to a network.
 
-    ![Little Navconnect](images/littlenavconnect.jpg "Little Navconnect")
+    ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
     Picture above: [Little Navconnect](https://albar965.github.io/littlenavconnect.html) is running and waiting for a Flight Simulator.
 
@@ -1252,7 +1252,7 @@ _Little Navmap_ cannot connect to the flight simulator directly. The _Little Nav
 2.  Start _Little Navmap_ on the client computer.
 3.  Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
 
-    ![Little Navmap Connect Dialog](images/connect.jpg "Little Navmap Connect Dialog")
+    ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
     Picture above: Connect dialog with correct values to access the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) shown above.
 
@@ -1398,7 +1398,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see &lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)&gt;.
 
 <p>
-<img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="images/gpl-v3-logo.svg" />
+<img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="../images/gpl-v3-logo.svg" />
 </p>
 
 Last update 2016-10-18

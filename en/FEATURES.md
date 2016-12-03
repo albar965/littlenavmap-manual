@@ -1,6 +1,6 @@
 # Little Navmap Features and Limitations {#little-navmap-features-and-limitations}
 
-![Little Navmap](images/littlenavmap.svg "Little Navmap")
+![Little Navmap](../images/littlenavmap.svg "Little Navmap")
 
 Version 1.1.0.devel
 
