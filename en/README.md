@@ -785,13 +785,13 @@ You can use the keyboard, the mouse wheel or the map overlays to scroll and zoom
 
 Note that the flight plan drag and drop editing is based on the assumption that a direct connection between departure and destination already exists.
 
-Always select departure and destination first if you like to build you flight plan manually. This will connect both with a great circle line. Based on this line you can start to add navaids to your flight plan.
+Always select departure and destination first if you would like to build you flight plan manually. This will connect both with a great circle line. Based on this line you can start to add navaids to your flight plan.
 
 The following functionality is available:
 
 *   Click on a flight plan leg: Starts editing and adds a new waypoint depending on where the next click is done:
 *   *   On a single airport and navaid: Object is inserted into the flight plan segment.
-    *   On multiple airports or navaids: A menu pops up that allows to select the object to be inserted.
+    *   On multiple airports or navaids: A menu pops up that allows you to select the object to be inserted.
     *   No airport and no navaid: A user defined position is inserted to the flight plan.
 *   Click on waypoint: Starts editing and replaces the clicked waypoint with an object depending on where the next click is done:
 *   *   On a single airport and navaid: Object replaces the clicked waypoint.
@@ -852,7 +852,7 @@ Colors and look of these checkboxes vary with theme and operation system. So ins
 
 #### Distance search {#distance-search}
 
-This function allows you to combine all other search options with simple spatial search.
+This function allows you to combine all other search options with a simple spatial search.
 
 The checkbox `Distance` has to be selected to enable this search. The result will include only airports or navaids that are within the given minimum and maximum range of nautical miles from the search center. This allows you to quickly search for a destination that is within the range of your aircraft and fulfills other criteria like having lighted runways and fuel.
 
@@ -892,7 +892,7 @@ Picture above: Navaid search. All search options are visible. Search is limited 
 
 ### Mouse Clicks {#mouse-clicks-0}
 
-A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects and object and highlights it on the map using a black/yellow circle.
+A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/yellow circle.
 
 ### Search Result Table View Context Menu {#search-result-table-view-context-menu}
 
@@ -912,7 +912,7 @@ Shows either the airport diagram or zooms to the navaid on the map.
 
 ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding")
 
-Takes the text of the field under the cursor and sets the search filter for an including or an excluding search. This only enabled for text columns.
+Takes the text of the field under the cursor and sets the search filter for an including or an excluding search. This is only enabled for text columns.
 
 #### Reset Search {#reset-search}
 
@@ -994,7 +994,7 @@ Besides the label there are three input fields on top of this dock window:
 
 The table view allows the same operations as the search table view except sorting. See [here](#tableviewops).
 
-All selected elements in the flight plan table view will be highlighted on the map using a black/gree circle. See [Highlights](#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
+All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
 
 Note on the table columns `Course °M` and `Direct °M`:
 
@@ -1007,7 +1007,7 @@ Picture above: The `Flight Plan` dock window.
 
 ### Mouse Clicks {#mouse-clicks-1}
 
-A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects and object and highlights it on the map using a black/green circle.
+A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/green circle.
 
 ### Flight Plan Table View Context Menu {#flight-plan-table-view-context-menu}
 
@@ -1017,7 +1017,7 @@ A double click on an entry in the table view shows either an airport diagram or 
 
 Moves all selected flight plan legs up or down in the list. This works also if multiple legs are selected.
 
-Airway names will be removed when waypoints in the flight plan are moved or deleted. That is because the new flight plan legs will not follow any airway but rather use direct connections.
+Airway names will be removed when waypoints in the flight plan are moved or deleted because the new flight plan legs will not follow any airway but rather use direct connections.
 
 #### Delete Selected Legs {#delete-selected-legs}
 
