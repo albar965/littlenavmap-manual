@@ -1176,9 +1176,9 @@ Picture above: `Startup` tab of the options dialog.
 
 ![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
 
-This dialog allows to load the scenery library data from all four supported flight simulators into the _Little Navmap_ internal database. The scenery library to load can be selected in the `Simulator:` drop down box.
+This dialog allows loading of the scenery library data from all four supported flight simulators into the _Little Navmap_ internal database. The scenery library to load can be selected in the `Simulator:` drop down box.
 
-The dialog shows information about the currently selected database like number of loaded airports, database version and more.
+The dialog shows information about the currently selected database including the number of loaded airports, database version and more.
 
 The base path and the `scenery.cfg` path will be shown in two text edit fields for the currently selected simulator. These fields are populated automatically, but can be changed to any other valid location. All values are saved for each flight simulator type.
 
@@ -1236,7 +1236,7 @@ User aircraft information is transfered to _Little Navmap_ by using the [Little 
 
 The setup procedure is the same for both remote connections and local connections. In the latter case all programs run on the same computer which is both flying and client computer.
 
-_Little Navmap_ cannot connect to the flight simulator directly. The _Little Navconnect_ agent is always needed, even if all programs run on the same computer.
+_Little Navmap_ can connect to the flight simulator directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
 
 1.  Install [Little Navconnect](https://albar965.github.io/littlenavconnect.html) on the computer that is running the flight simulator. Start it and take note of the message that is printed on the logging window. You only need the colored values. You can use the IP address or the hostname. _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. `localhost` and `127.0.0.1` will be used if you are not connected to a network.
 
@@ -1262,9 +1262,9 @@ _Little Navmap_ cannot connect to the flight simulator directly. The _Little Nav
 
 ## Creating or adding Map Themes {#creating-or-adding-map-themes}
 
-To add an arbitrary online of offline map to _Little Navmap_ simply add the map directory from a downloaded or self created map theme to the `data\maps\earth` directory.
+To add an arbitrary online of an offline map to _Little Navmap_ simply add the map directory from a downloaded or self created map theme to the `data\maps\earth` directory.
 
-The full path to the DGML file (see links below for more details about DGML) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or to included offline map data. Usually a map theme contains many more files than only the DGML.
+The full path to the DGML file (see links below for more details about DGML) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
 
 The menu `Main Menu` -&gt; `Map` -&gt; `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
 
@@ -1294,7 +1294,7 @@ More maps and information about map configuration and DGML files can be found he
 ## Known Problems {#known-problems}
 
 *   Some airport add-ons do not modify the stock airports but only add new scenery and buildings. These add-ons will not be recognized as such and are therefore not highlighted on the map (italic and underlined text).
-*   Add-on developers have to use all kind of workarounds to avoid FSX&#039; limitations. So the display and information given for add-on airports is not always correct. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports and more.
+*   Add-on developers have to use all kind of workarounds to avoid FSX limitations which means the display and information given for add-on airports is not always correct. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports and more.
 *   Some KML/KMZ files do not show up on the map. Adding a centerpoint pushpin to the KML/KMZ file can fix this.
 *   World coverage for elevation and _OpenStreetMap_ hill shading data is limited and currently ends at 60 degree north. Use the _OpenTopoMap_, _OpenMapSurfer_ or _Stamen Terrain_ map themes which have world wide coverage for hill shading.
 *   There are errors in the elevation source data (like in northern Italy, Po Valley) which will show up in the flight plan elevation profile.
@@ -1319,11 +1319,11 @@ When an error occurs during loading of the scenery library send me the offending
 
 If you&#039;re concerned about privacy when sending log files: The log files will contain all system paths (like your `Documents` directory) which will also include your username as a part of the path. They might also contain your computer&#039;s name IP address in your network.
 
-In no case file names from anything else than flight simulator paths/files or configuration files are included. No names or content of personal files is included in the log files.
+In no case are file names from anything else than flight simulator paths/files or configuration files are included. No names or content of personal files is included in the log files.
 
 I&#039;d suggest to remove this information if you&#039;re concerned about it.
 
-I strongly recommend to send the log files by PM or by email and not attach them to forum posts where they are publicly visible.
+I strongly recommend sending the log files by PM or by email and not attach them to forum posts where they are publicly visible.
 
 ## Files {#files}
 
@@ -1331,11 +1331,11 @@ Log files of _Little Navmap_ for Windows 7/8/10 are typically stored in the dire
 
 `C:\Users\YOURUSERNAME\AppData\Local\Temp`
 
-The program keeps three log files and rotates these on each startup. So you can find up to three logs:
+The program keeps three log files and rotates these on each startup. So you may find up to three logs:
 
 `abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
 
-All configuration files of my programs for Windows 7/8/10 are typically stored in the directory:
+All configuration files for my programs for Windows 7/8/10 are typically stored in the directory:
 
 `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
 
@@ -1387,7 +1387,7 @@ Let&#039;s not forget about all the services that provide us all the online maps
 
 A thank-you to the [GIScience / Geoinformatics Research Group](http://www.geog.uni-heidelberg.de/gis/index_en.html) of Heidelberg University for kindly giving me permission to use their map [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
 
-And last but not least: If there were no [OpenStreetMap](http://www.openstreetmap.org) and its thousands of contributors nobody of us would have any map at all.
+And last but not least: If there were no [OpenStreetMap](http://www.openstreetmap.org) and its thousands of contributors none of us would have any maps at all.
 
 ## License {#license}
 
