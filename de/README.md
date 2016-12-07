@@ -11,30 +11,32 @@ Eigenschaften und Einschränkungen
 Kartenlegende
 
 1.  [Installation](#installation)
-2.  [Schnellübersicht](#schnell-bersicht)
-3.  [Allgemeine Anmerkungen](#allgemeine-anmerkungen)
-4.  [Erster Start](#erster-start)
-5.  [Menüs und Werkzeugleisten](#men-s-und-werkzeugleisten)
-6.  [Statusleiste](#statusleiste)
-7.  [Kartenanzeige](#kartenanzeige)
-8.  [Flugplanbearbeitung auf der Karte](#flugplanbearbeitung-auf-der-karte)
-9.  [Suchfenster](#suchfenster)
-10.  [Flugplanfenster](#flugplanfenster)
-11.  [Informationsfenster](#informationsfenster)
-12.  [Simulatorflugzeug](#simulatorflugzeug)
-13.  [Höhenprofil](#h-henprofil)
-14.  [Wetter](#wetter)
-15.  [Einstellungsdialog](#einstellungsdialog)
-16.  [Szeneriedialog](#szeneriedialog)
-17.  [Ohne Flugsimulatorinstallation laufen lassen](#ohne-flugsimulatorinstallation-laufen-lassen)
-18.  [Mit dem Flugsimulator verbinden](#mit-dem-flugsimulator-verbinden)
-19.  [Kartenthemen hinzufügen](#kartenthemen-hinzuf-gen)
-20.  [Problemlösung](#probleml-sung)
-21.  [Bekannte Probleme](#bekannte-probleme)
-22.  [Fehler berichten](#fehler-berichten)
-23.  [Dateien](#dateien)
-24.  [Danksagungen](#danksagungen)
-25.  [Lizenz](#lizenz)
+2.  [Schnellübersicht](#quick-overview)
+3.  [Allgemeine Anmerkungen](#general-remarks)
+4.  [Erster Start](#first-start)
+5.  [Menüs und Werkzeugleisten](#menus-and-toolbars)
+6.  [Statusleiste](#statusbar)
+7.  [Kartenanzeige](#map-display)
+8.  [Flugplanbearbeitung auf der Karte](#map-flight-plan-editing)
+9.  [Suchfenster](#search-dock-window)
+10.  [Flugplanfenster](#flight-plan-dock-window)
+11.  [Informationsfenster](#information-dock-window)
+12.  [Simulatorflugzeug](#simulator-aircraft-dock-window)
+13.  [Höhenprofil](#flight-plan-elevation-profile-dock-window)
+14.  [Wetter](#weather)
+1. [Drucken](#printing)
+1. [Flugplan Routenbeschreibung](#flight-plan-from-route-description)
+15.  [Einstellungsdialog](#options-dialog)
+16.  [Szeneriedialog](#load-scenery-library-dialog)
+17.  [Ohne Flugsimulatorinstallation laufen lassen](#running-without-flight-simulator-installation)
+18.  [Mit dem Flugsimulator verbinden](#connecting-to-a-flight-simulator)
+19.  [Kartenthemen hinzufügen](#creating-or-adding-map-themes)
+20.  [Problemlösung](#troubleshoot)
+21.  [Bekannte Probleme](#known-problems)
+22.  [Fehler berichten](#how-to-report-a-bug)
+23.  [Dateien](#files)
+24.  [Danksagungen](#acknowlegments)
+25.  [Lizenz](#license)
 
 Dieses Programm darf nicht für die Navigation in der realen Luftfahrt verwendet werden.
 
@@ -46,17 +48,17 @@ Ein Installations- oder Setupprogramm steht nicht zur Verfügung.
 
 Das Archiv sollte nicht in `c:\Program Files\` oder `c:\Program Files (x86)\` installiert werden, da dazu unter manchen Windows Versionen Administratorrechte nötig sind. Da Windows Kontrolle über diese Ordner behält, können weitere Probleme auftreten, wie durch das System gelöschte oder ersetzte Dateien.
 
-Das Zip-Archiv in einen beliebigen Ordner, wie z.B. `c:\Meine Programme\Little Navmap` extrahieren. Das Programm anschließend durch Doppelklick auf die `littlenavmap.exe` starten. Siehe auch [Erster Start](#erster-start) für mehr Informationen.
+Das Zip-Archiv in einen beliebigen Ordner, wie z.B. `c:\Meine Programme\Little Navmap` extrahieren. Das Programm anschließend durch Doppelklick auf die `littlenavmap.exe` starten. Siehe auch [Erster Start](#first-start) für mehr Informationen.
 
 _Little Navmap_ ist ein 32-bit Programm und wurde mit Windows XP, Windows 7, Windows 8 und Windows 10 getestet.
 
-## Schnellübersicht {#schnell-bersicht}
+## Schnellübersicht {#quick-overview}
 
 ![Little Navmap Übersicht](../images/overview.jpg "Little Navmap Übersicht")
 
 Bild oben (anklicken für große Ansicht): _Little Navmap_ Übersicht der wichtigsten Funktionen.
 
-## Allgemeine Anmerkungen {#allgemeine-anmerkungen}
+## Allgemeine Anmerkungen {#general-remarks}
 
 ### Benutzerschnittstelle {#benutzerschnittstelle}
 
@@ -111,15 +113,15 @@ Die Legende erklärt alle Kartensymbole und die Symbole des `Flight Plan Elevati
     4.  Vorfelder
     5.  Tower-Gebäude (nur wenn mindestens eine der oben genannten Bedingungen erfüllt ist).
 
-## Erster Start {#erster-start}
+## Erster Start {#first-start}
 
-Beim erstmaligen Starten von _Little Navmap_ wird der [Szeneriedialog](#szeneriedialog) angezeigt. Dort können alle erkannten Flugsimulatorinstallationen ausgewählt und ihre Szeneriebibliotheken in die interne Datenbank geladen werden. Für jeden Simulator wird eine Datenbank erstellt, die ohne Neustart des Programmes im Menü [Scenery Library](#men-scenery-library) gewechselt werden kann.
+Beim erstmaligen Starten von _Little Navmap_ wird der [Szeneriedialog](#load-scenery-library-dialog) angezeigt. Dort können alle erkannten Flugsimulatorinstallationen ausgewählt und ihre Szeneriebibliotheken in die interne Datenbank geladen werden. Für jeden Simulator wird eine Datenbank erstellt, die ohne Neustart des Programmes im Menü [Scenery Library](#men-scenery-library) gewechselt werden kann.
 
-Wenn beim ersten Start keine Flugsimulatorinstallation gefunden wurde, wird ein Warndialog angezeigt. Siehe [Ohne Flugsimulatorinstallation laufen lassen](#ohne-flugsimulatorinstallation-laufen-lassen) für mehr Informationen.
+Wenn beim ersten Start keine Flugsimulatorinstallation gefunden wurde, wird ein Warndialog angezeigt. Siehe [Ohne Flugsimulatorinstallation laufen lassen](#running-without-flight-simulator-installation) für mehr Informationen.
 
-Falls eine neue Version von _Little Navmap_ installiert wurde, kann es sein, dass die Szeneriedatenbank aktualisiert werden muss. In diesem Fall wird ein Abfragedialog angezeigt, in dem das Löschen der inkompatiblen Datenbank oder Datenbanken bestätigt werden muss. Nach dem Löschen kann die interne Szeneriedatenbank im [Szeneriedialog](#szeneriedialog) wieder neu gefüllt werden.
+Falls eine neue Version von _Little Navmap_ installiert wurde, kann es sein, dass die Szeneriedatenbank aktualisiert werden muss. In diesem Fall wird ein Abfragedialog angezeigt, in dem das Löschen der inkompatiblen Datenbank oder Datenbanken bestätigt werden muss. Nach dem Löschen kann die interne Szeneriedatenbank im [Szeneriedialog](#load-scenery-library-dialog) wieder neu gefüllt werden.
 
-## Menüs und Werkzeugleisten {#men-s-und-werkzeugleisten}
+## Menüs und Werkzeugleisten {#menus-and-toolbars}
 
 Dieses Kapitel beschreibt alle Menüpunkte von _Little Navmap_. Viele Funktionen sind auch auf den Werkzeugleisten aufzufinden, weswegen diese nicht gesondert beschrieben werden. Tastenkombinationen können in den Menüpunkten eingesehen werden und werden nicht separat aufgeführt.
 
@@ -213,7 +215,7 @@ Bild oben: Der Auswahldialog für Startpositionen für Nürnberg (EDDN).
 
 ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map")
 
-Schaltet den Drag-und-Drop Bearbeitungsmodus für den Flugplan in der Karte an oder aus. Siehe auch [Flugplanbearbeitung auf der Karte](#flugplanbearbeitung-auf-der-karte).
+Schaltet den Drag-und-Drop Bearbeitungsmodus für den Flugplan in der Karte an oder aus. Siehe auch [Flugplanbearbeitung auf der Karte](#map-flight-plan-editing).
 
 #### Calculate Direct {#calculate-direct}
 
@@ -331,7 +333,7 @@ Bild oben: Sphärische Kartenprojektion mit dem `Simple` Offline Kartenthema.
 
 #### Theme {#theme}
 
-Die Kartenthemen von _Little Navmap_ werden von freien Kartendiensten ausgeliefert, die keine Verfügbarkeit oder Ladegeschwindigkeit garantieren können. Auf jedem Fall können eigene Konfigurationen für neue Kartenthemen erstellt werden, ohne eine neue Version von _Little Navmap_ erstellen zu müssen. Siehe [Kartenthemen hinzufügen](#kartenthemen-hinzuf-gen) für mehr Informationen zu diesem Thema.
+Die Kartenthemen von _Little Navmap_ werden von freien Kartendiensten ausgeliefert, die keine Verfügbarkeit oder Ladegeschwindigkeit garantieren können. Auf jedem Fall können eigene Konfigurationen für neue Kartenthemen erstellt werden, ohne eine neue Version von _Little Navmap_ erstellen zu müssen. Siehe [Kartenthemen hinzufügen](#creating-or-adding-map-themes) für mehr Informationen zu diesem Thema.
 
 ##### OpenStreetMap {#openstreetmap}
 
@@ -500,17 +502,17 @@ Zeigt Bergschattierung auf der Karte. Die Verfügbarkeit dieser Option hängt vo
 
 Für jeden gefunden Flugsimulator oder jede gefundene Simulatordatenbank wird hier ein Menüeintrag erzeugt. Diese Menüpunkte erlauben ein Umschalten zwischen den Simulatordatenbanken im laufenden Betrieb. Falls nur ein Flugsimulator gefunden wurde, werden keine Menüpunkte angezeigt.
 
-Das Menü ist mit der Auswahl im [Load Scenery Library Dialog](#szeneriedialog) synchronisiert. Wenn eine Szeneriebibliothek erfolgreich geladen wurde, werden die Karte, Suche und alle anderen Funktionen auf die neue Datenbank umgestellt.
+Das Menü ist mit der Auswahl im [Load Scenery Library Dialog](#load-scenery-library-dialog) synchronisiert. Wenn eine Szeneriebibliothek erfolgreich geladen wurde, werden die Karte, Suche und alle anderen Funktionen auf die neue Datenbank umgestellt.
 
 #### Show Database Files {#show-database-files}
 
-Dies öffnet das Verzeichnis mit den Datenbankdateien von _Little Navmap_ in einem Dateimanager (Windows Explorer, Apple Finder, etc.). Siehe [Ohne Flugsimulatorinstallation laufen lassen](#ohne-flugsimulatorinstallation-laufen-lassen) für eine Anleitung, wie die Flugsimulatordatenbanken zwischen verschieden Rechnern kopiert werden können.
+Dies öffnet das Verzeichnis mit den Datenbankdateien von _Little Navmap_ in einem Dateimanager (Windows Explorer, Apple Finder, etc.). Siehe [Ohne Flugsimulatorinstallation laufen lassen](#running-without-flight-simulator-installation) für eine Anleitung, wie die Flugsimulatordatenbanken zwischen verschieden Rechnern kopiert werden können.
 
 #### Load Scenery Library {#load-scenery-library}
 
 ![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
 
-Öffnet den `Load Scenery Library` Dialog. Siehe [Szeneriedialog](#szeneriedialog) für mehr Informationen. Dieser Menüpunkt ist deaktiviert, wenn keine Flugsimulatorinstallationen gefunden wurden.
+Öffnet den `Load Scenery Library` Dialog. Siehe [Szeneriedialog](#load-scenery-library-dialog) für mehr Informationen. Dieser Menüpunkt ist deaktiviert, wenn keine Flugsimulatorinstallationen gefunden wurden.
 
 ### Menü Tools {#men-tools}
 
@@ -518,7 +520,7 @@ Dies öffnet das Verzeichnis mit den Datenbankdateien von _Little Navmap_ in ein
 
 ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection")
 
-Öffnet den `Connect` Dialog, der es erlaubt, sich mittels [Little Navconnect](https://albar965.github.io/littlenavconnect.html) mit einem Flugsimulator zu verbinden. Siehe auch [Mit dem Flugsimulator verbinden](#mit-dem-flugsimulator-verbinden) für mehr Information.
+Öffnet den `Connect` Dialog, der es erlaubt, sich mittels [Little Navconnect](https://albar965.github.io/littlenavconnect.html) mit einem Flugsimulator zu verbinden. Siehe auch [Mit dem Flugsimulator verbinden](#connecting-to-a-flight-simulator) für mehr Information.
 
 #### Reset all Messages {#reset-all-messages}
 
@@ -528,7 +530,7 @@ Dies erlaubt wieder alle Dialoge, die mittels `Do not show this dialog again` au
 
 ![Options](../images/icons/settings.png "Options")
 
-Öffnet den [Einstellungsdialog](#einstellungsdialog).
+Öffnet den [Einstellungsdialog](#options-dialog).
 
 ### Menü Window {#men-window}
 
@@ -590,7 +592,7 @@ Informationen über das [Marble widget](https://marble.kde.org), das zum Herunte
 
 Information über den [Qt application framework](https://www.qt.io), der von _Little Navmap_ benutzt wird.
 
-## Statusleiste {#statusleiste}
+## Statusleiste {#statusbar}
 
 Die Statusleiste zeigt folgendes an (von links nach rechts):
 
@@ -609,7 +611,7 @@ Die Statusleiste zeigt folgendes an (von links nach rechts):
 
 Bild oben: Statusleiste mit einer Nachricht über die letzte Aktion `Flight plan opened.` auf der linken Seite und einer Kurzhilfe, die anzeigt, was momentan auf der Karte dargestellt wird. Die Karte zeigt nur Flugplätze, die eine Landebahn von mindestens 4000 Fuß Länge haben. Navigationspunkte werden nicht angezeigt. Die Detailstufe der Karte wurde um eins erhöht und die Koordinaten an der Mauszeigerposition werden nicht angezeigt, da sich der Zeiger nicht über der Karte befindet (`not available`). Der Fortschrittsindikator für das Herunterladen von Karten ist leer.
 
-## Kartenanzeige {#kartenanzeige}
+## Kartenanzeige {#map-display}
 
 ### Karte Verschieben {#karte-verschieben}
 
@@ -669,7 +671,7 @@ Das Kontextmenü der Karte kann mittels Rechtsklick oder der Menütaste aufgeruf
 
 Zeigt detaillierte Information im `Information` Dock-Fenster für den Flugplatz, die Navigationspunkte oder Luftstraßen, die den Mauszeiger am nächsten sind.
 
-Siehe auch [Informationsfenster](#informationsfenster).
+Siehe auch [Informationsfenster](#information-dock-window).
 
 #### Measure GC Distance from here {#measure-gc-distance-from-here}
 
@@ -775,7 +777,7 @@ Setzt das Zentrum für die Distanzsuche. Siehe [Distanzsuche](#distanzsuche). Da
 
 Legt den Home-Bereich fest. Das Zentrum des Home-Bereiches wird mit einem ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") Symbol angezeigt.
 
-## Flugplanbearbeitung auf der Karte {#flugplanbearbeitung-auf-der-karte}
+## Flugplanbearbeitung auf der Karte {#map-flight-plan-editing}
 
 Der Flugplanbearbeitungsmodus ist standardmäßig aktiviert und kann auf der Werkzeugleiste oder in `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map` ausgeschaltet werden.
 
@@ -810,7 +812,7 @@ Bild oben: Einfügen des VOR EUR in das angeklickte Flugplansegment. Eine Kurzhi
 
 Bild oben: Das VOR TRA im Flugplan wird durch ein anderes ersetzt, indem der Wegpunkt TRA auf KLO gezogen wird. Ein Menü erscheint, um das gewünschte Objekt auszuwählen.
 
-## Suchfenster {#suchfenster}
+## Suchfenster {#search-dock-window}
 
 ![Search](../images/icons/searchdock.png "Search")
 
@@ -974,7 +976,7 @@ Setzt die Sortierreihenfolge, die Spaltenreihenfolge und die Spaltenbreiten zur�
 
 Gleiche Funktion wie im [Kontextmenü der Karte](#kontextmen-der-karte).
 
-## Flugplanfenster {#flugplanfenster}
+## Flugplanfenster {#flight-plan-dock-window}
 
 ![Flight Plan](../images/icons/routedock.png "Flight Plan")
 
@@ -1077,7 +1079,7 @@ Setzt die Spaltenreihenfolge und die Spaltenbreiten zurück auf den Standardwert
 
 Same as the [Map Context Menu](#kontextmen-der-karte).
 
-## Informationsfenster {#informationsfenster}
+## Informationsfenster {#information-dock-window}
 
 ![Information](../images/icons/infodock.png "Information")
 
@@ -1097,13 +1099,13 @@ Bild oben: Flugplatzinformationen. Zusätzliche Tabs zeigen Informationen zu Lan
 
 Bild oben: Information zu Navigationspunkten. Zwei Funkfeuer waren nahe der Klickposition.
 
-## Simulatorflugzeug {#simulatorflugzeug}
+## Simulatorflugzeug {#simulator-aircraft-dock-window}
 
 ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft")
 
 Dieses Dock-Fenster zeigt Informationen über das Simulatorflugzeug ähnlich eines Flight Management Systems an. _Little Navmap_ muss mit dem Flugsimulator verbunden sein, um diese Funktionalität zu ermöglichen. Ein Tab des Fensters zeigt allgemeine Flugzeugdaten, wie Gesamtgewicht, und ein weiterer Tab zeigt Flugdaten, Fortschritt im Flugplan, Wetter und Umgebungsparameter.
 
-Siehe auch [Mit dem Flugsimulator verbinden](#mit-dem-flugsimulator-verbinden).
+Siehe auch [Mit dem Flugsimulator verbinden](#connecting-to-a-flight-simulator).
 
 ![Aircraft Information](../images/infoac.jpg "Aircraft Information")
 
@@ -1113,7 +1115,7 @@ Bild oben: Fenster Simulatorflugzeug mit Verbindung zum Flugsimulator.
 
 Bild oben: Fortschritts- und Umgebungsinformationen der aktuellen Flugsituation. Einige Felder, wie `Next Waypoint`, sind nur verfügbar, wenn ein Flugplan geladen wurde.
 
-## Höhenprofil {#h-henprofil}
+## Höhenprofil {#flight-plan-elevation-profile-dock-window}
 
 ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile")
 
@@ -1143,10 +1145,11 @@ Für mehr Informationen siehe auch im `Navmap Legend` Tab im `Information` Dock-
 
 Bild oben: Höhenprofile des FLugplanes mit einer vertikalen Linie, die die Mausposition anzeigt.
 
-## Wetter {#wetter}
+## Wetter {#weather}
 
 _Little Navmap_ kann [METAR](https://de.wikipedia.org/wiki/METAR)s aus vier verschiedenen Quellen anzeigen:
 
+* TODO FS Wetter
 *   [NOAA](http://www.weather.gov) Online Wetterdienst
 *   [VATSIM](http://www.vatsim.net) Netzwerk Online Wetterdienst
 *   [HiFi Simulation Technologies](http://www.hifisimtech.com) _Active Sky Next_
@@ -1158,19 +1161,33 @@ Beide Active Sky Programme werden automatisch für jeden Simulator erkannt. Die 
 
 Die Datei `current_wx_snapshot.txt` kann auch manuell ausgewählt werden. In dem Fall werden die METARs aus der Datei für alle installierten Simulatoren angezeigt.
 
-## Einstellungsdialog {#einstellungsdialog}
+## Drucken {#printing}
+
+### Karte Drucken, Karte Speichern
+
+TODO
+
+### Flugplan Drucken {#printing-the-flight-plan}
+
+TODO
+
+## Flugplan Routenbeschreibung {#flight-plan-from-route-description}
+
+TODO
+
+## Einstellungsdialog {#options-dialog}
 
 ![Options](../images/icons/settings.png "Options")
 
 Die meisten Einstellungen im Dialog `Options` sind selbst erklärend und durch Kurzhilfen (Tooltips) ergänzt. Auf eine detaillierte Beschreibung wird daher hier verzichtet.
 
-Die Schaltfläche `Restore Defaults` setzt nur die Einstellungen des Dialoges zurück. Andere, wie z.B. die Einstellungen zur Kartenanzeige, sind davon nicht betroffen. Siehe unter [Problemlösung](#probleml-sung), wie alle Einstellungen im Falle von Fehlern komplett zurückgesetzt werden können.
+Die Schaltfläche `Restore Defaults` setzt nur die Einstellungen des Dialoges zurück. Andere, wie z.B. die Einstellungen zur Kartenanzeige, sind davon nicht betroffen. Siehe unter [Problemlösung](#troubleshoot), wie alle Einstellungen im Falle von Fehlern komplett zurückgesetzt werden können.
 
 ![Options](../images/options.jpg "Options")
 
 Bild oben: Der `Startup` Tab des Dialog `Options`.
 
-## Szeneriedialog {#szeneriedialog}
+## Szeneriedialog {#load-scenery-library-dialog}
 
 ![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
 
@@ -1207,7 +1224,7 @@ Bild oben: Ladefortschritt während des Lesens der Szeneriebibliothek aus dem Si
 
 Die Anzahl der Flugplätze, Navigationspunkte und anderer Objekte, die im `Load Scenery Library` Dialog angezeigt werden, kann sich von der Anzahl Objekte im Fortschrittsdialog unterscheiden. Das rührt daher, dass Add-On Flugplätze die Originalflugplätze ersetzen und sie im Fortschrittsdialog als gelesenen Flugplätze aufgelistet werden, während im `Load Scenery Library` Dialog nur das Endergebnis angezeigt wird. Ebenso werden nach dem Laden Duplikate von Navigationspunkten gelöscht.
 
-## Ohne Flugsimulatorinstallation laufen lassen {#ohne-flugsimulatorinstallation-laufen-lassen}
+## Ohne Flugsimulatorinstallation laufen lassen {#running-without-flight-simulator-installation}
 
 Diese Schritte beschreiben die Vorgehensweise, mit der man _Little Navmap_ auf einem Rechner ohne Flugsimulatorinstallation laufen lassen kann. Abgesehen vom Laden der Szeneriebibliothek steht sämtliche Funktionalität in dieser Konfiguration zur Verfügung.
 
@@ -1218,7 +1235,7 @@ Typischerweise wird dieser Szenario benutzt, um sich über ein Netzwerk mit dem 
 Zwei Rechner werden in dem Szenario benutzt: Der Flugrechner, auf dem der Simulator installiert ist, und der entfernte Netzwerkrechner, auf dem lediglich _Little Navmap_ läuft.
 
 1.  Zuerst muss _Little Navmap_ für die Vorbereitung des Netzwerkbetriebes auf beiden Rechnern, nämlich dem Flugrechner und dem Netzwerkrechner, installiert werden.
-2.  Dann muss das Programm auf dem Flugrechner gestartet und die Szeneriedatenbbank erstellt werden. Siehe [Szeneriedialog](#szeneriedialog) für mehr Informationen.
+2.  Dann muss das Programm auf dem Flugrechner gestartet und die Szeneriedatenbbank erstellt werden. Siehe [Szeneriedialog](#load-scenery-library-dialog) für mehr Informationen.
 3.  Nachdem die Datenbank generiert wurde, `Main Menu` -&gt; `Scenery Library` -&gt; `Show Database Files` auf dem Flugrechner anklicken. Dies öffnet das Verzeichnis mit den Szeneriedatenbanken in einem Dateimanager (z.B. Windows Explorer oder Apple Finder). Dort können eine oder mehrere Datenbanken, wie `little_navmap_fsx.sqlite` oder `little_navmap_p3dv3.sqlite`, gespeichert sein.
 4.  Nun _Little Navmap_ auf dem Flugrechner beenden.
 5.  Anschließend in _Little Navmap_ auf dem Netzwerkrechner `Scenery Library` -&gt; `Show Database Files` auswählen.
@@ -1228,7 +1245,7 @@ Zwei Rechner werden in dem Szenario benutzt: Der Flugrechner, auf dem der Simula
 
 Siehe nächstes Kapitel für Informationen zum Verbindungsaufbau zum Flugsimulator.
 
-## Mit dem Flugsimulator verbinden {#mit-dem-flugsimulator-verbinden}
+## Mit dem Flugsimulator verbinden {#connecting-to-a-flight-simulator}
 
 ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection")
 
@@ -1260,7 +1277,7 @@ _Little Navmap_ kann sich nicht direkt mit dem Flugsimulator verbinden. _Little 
 5.  Den Wert für Port überprüfen. `51968` ist der Standardwert und muss üblicherweise nicht geändert werden.
 6.  Jetzt `Connect` auswählen, um Verbindung aufzunehmen. Der Dialog wird nun geschlossen und _Little Navmap_ versucht im Hintergrund eine Verbindung aufzunehmen. Dies kann, abhängig von der Netzwerkkonfiguration, eine Weile dauern. Das Simulatorflugzeug wird auf der Karte und im `Simulator Aircraft` Dock-Fenster angezeigt, sobald ein Flug eingerichtet und geladen wurde. Falls noch kein Flug geladen ist, wird eine Nachricht `Connected. Waiting for update.` im `Simulator Aircraft` Dock-Fenster angezeigt. Dies kann z.B. der Fall sein, wenn der Simulator sich noch im Eröffnungsbildschirm befindet. Es kann einige Zeit dauern, bis eine Fehlermeldung angezeigt wird, wenn fehlerhafte Werte eingegeben wurden.
 
-## Kartenthemen hinzufügen {#kartenthemen-hinzuf-gen}
+## Kartenthemen hinzufügen {#creating-or-adding-map-themes}
 
 _Little Navmap_ erlaubt das Hinzufügen von beliebigen Offline- und Online-Karten. Zu dem Zweck muss die heruntergeladene oder selbst erstelle Karte in das Verzeichnis `data\maps\earth` kopiert werden.
 
@@ -1277,7 +1294,7 @@ Mehr Karten, Kartenkonfigurationen und DGML-Dateien können auf den Marble/KDE-S
 *   Eine Einführung, die zeigt, wie man Kartenthemen erstellt, die auf [OSM Slippy Maps (Englisch)](http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames) basieren: [How to create map themes based on OSM slippy maps (Englisch)](https://techbase.kde.org/Marble/OSMSlippyMaps)
 *   Wie man eine historische Karte für Marble erstellt: [Historical Maps for Marble (Englisch)](https://techbase.kde.org/Marble/HistoricalMaps)
 
-## Problemlösung {#probleml-sung}
+## Problemlösung {#troubleshoot}
 
 *   Falls das Programm beim Starten abstürzt, sollten sämtliche Konfigurationsdateien und Datenbanken gelöscht bzw. verschoben werden. In Windows 7, 8 oder 10 können diese im Verzeichnis `c:\Users\BENUTZERNAME\Appdata\Roaming\ABarthel` gefunden werden. In diesem Verzeichnis sollten die Dateien `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` und das Unterverzeichnis `little_navmap_db` gelöscht werden.
 *   Das Verstecken (Hide) von Overlay-Schaltfächen in der Karte kann nicht rückgängig gemacht werden. Um die Overlay-Schaltfächen wieder zu erhalten, muss _Little Navmap_ neu gestartet werden.
@@ -1291,7 +1308,7 @@ Mehr Karten, Kartenkonfigurationen und DGML-Dateien können auf den Marble/KDE-S
 
     Nun die Datei `APX41080.bgl` suchen und ihr Verzeichnis `Options` Dialog vom Laden ausschließen.
 
-## Bekannte Probleme {#bekannte-probleme}
+## Bekannte Probleme {#known-problems}
 
 *   Manche Flugplatz-Add-On Szenerien ändern nicht die Standardflugplätze, sondern fügen nur neue Szenerie und Gebäude hinzu. Diese Flugplätze können von _Little Navmap_ nicht als Add-On erkannt werden und werden daher in der Karte auch nicht mit kursivem und unterstrichenem Text hervorgehoben.
 *   Add-On Entwickler müssen alle möglichen Methoden anwenden, um Fehler und Limitierungen im Flugsimulator zu umgehen. Daher sind Darstellung und Informationen von Add-On-Flugplätzen nicht immer korrekt. Typische Beispiele sind: Flugplätze ohne Landebahnen, Landebahndimensionen von null mal null Fuß, Landebahnbreite von null Fuß, Rollbahnen ohne Breite, scheinbar geschlossene Rollbahnen, Flugplatzduplikate und mehr.
@@ -1309,7 +1326,7 @@ Mehr Karten, Kartenkonfigurationen und DGML-Dateien können auf den Marble/KDE-S
 *   macOS: Die Startposition auf der Karte wird beim Neustart nicht wiederhergestellt. Stattdessen sollte die Home-Position festgelegt werden.
 *   macOS: Google Earth KML- bzw. KMZ-Dateien werden beim Laden nicht auf der Karte zentriert.
 
-## Fehler berichten {#fehler-berichten}
+## Fehler berichten {#how-to-report-a-bug}
 
 Im Falle eines Fehlers sollten mir sämtliche involvierten Dateien, wie KML, PLN oder BGL (falls es das Copyright erlaubt), _Little Navmap_s Logdatei und Konfigurationsdatei geschickt werden. Der About-Dialog enthält Verweise auf die Log- und Konfigurationsdateien. Mein E-mail Adresse wird ebenfalls im About-Dialog von _Little Navmap_ angezeigt.
 
@@ -1325,7 +1342,7 @@ Die Informationen können auch aus der Logdatei entfernt werden, falls sie ein P
 
 Auf keinen Fall sollten die Logdateien in öffentlich einsehbaren Foren eingestellt werden, sondern per E-Mail oder privater Forennachricht zugesendet werden.
 
-## Dateien {#dateien}
+## Dateien {#files}
 
 Logdateien von _Little Navmap_ werden unter Windows 7/8/10 typischerweise im folgenden Verzeichnis gespeichert:
 
@@ -1365,7 +1382,7 @@ Die Datenbankdateien sind:
 *   `little_navmap_p3dv2.sqlite`:Prepar3D v2
 *   `little_navmap_p3dv3.sqlite`:Prepar3D v3
 
-## Danksagungen {#danksagungen}
+## Danksagungen {#acknowlegments}
 
 Vielen Dank an meine geduldige und liebe [Ehefrau und Schriftstellerin Anja](http://www.anja-fahrner.de), für die Korrektur der deutschen Anleitung.
 
@@ -1391,7 +1408,7 @@ Ein Dankeschön an die [GIScience / Geoinformatics Research Group](http://www.ge
 
 Und zu guter Letzt: Wenn es keine [OpenStreetMap](http://www.openstreetmap.org) und ihre vielzähligen Beiträger gäbe, hätten wir alle keine Karte.
 
-## Lizenz {#lizenz}
+## Lizenz {#license}
 
 Dieses Programm ist freie Software: Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) jeder neueren veröffentlichten Version, weiterverbreiten und/oder modifizieren.
 
