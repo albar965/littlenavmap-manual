@@ -10,31 +10,33 @@ Version 1.1.0.devel
 
 [Map Legend](LEGEND.md)
 
-1.  [Installation](#installation)
-2.  [Quick Overview](#quick-overview)
-3.  [General Remarks](#general-remarks)
-4.  [First Start](#first-start)
-5.  [Menus and Toolbars](#menus-and-toolbars)
-6.  [Statusbar](#statusbar)
-7.  [Map Display](#map-display)
-8.  [Map Flight Plan Editing](#map-flight-plan-editing)
-9.  [Search Dock Window](#search-dock-window)
-10.  [Flight Plan Dock Window](#flight-plan-dock-window)
-11.  [Information Dock Window](#information-dock-window)
-12.  [Simulator Aircraft Dock Window](#simulator-aircraft-dock-window)
-13.  [Flight Plan Elevation Profile Dock Window](#flight-plan-elevation-profile-dock-window)
-14.  [Weather](#weather)
-15.  [Options Dialog](#options-dialog)
-16.  [Load Scenery Library Dialog](#load-scenery-library-dialog)
-17.  [Running without Flight Simulator Installation](#running-without-flight-simulator-installation)
-18.  [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator)
-19.  [Creating or adding Map Themes](#creating-or-adding-map-themes)
-20.  [Troubleshoot](#troubleshoot)
-21.  [Known Problems](#known-problems)
-22.  [How to report a Bug](#how-to-report-a-bug)
-23.  [Files](#files)
-24.  [Acknowlegments](#acknowlegments)
-25.  [License](#license)
+1. [Installation](#installation)
+1. [Quick Overview](#quick-overview)
+1. [General Remarks](#general-remarks)
+1. [First Start](#first-start)
+1. [Menus and Toolbars](#menus-and-toolbars)
+1. [Statusbar](#statusbar)
+1. [Map Display](#map-display)
+1. [Map Flight Plan Editing](#map-flight-plan-editing)
+1. [Search Dock Window](#search-dock-window)
+1. [Flight Plan Dock Window](#flight-plan-dock-window)
+1. [Information Dock Window](#information-dock-window)
+1. [Simulator Aircraft Dock Window](#simulator-aircraft-dock-window)
+1. [Flight Plan Elevation Profile Dock Window](#flight-plan-elevation-profile-dock-window)
+1. [Weather](#weather)
+1. [Printing](#printing)
+1. [Flight Plan Description](#flight-plan-from-route-description)
+1. [Options Dialog](#options-dialog)
+1. [Load Scenery Library Dialog](#load-scenery-library-dialog)
+1. [Running without Flight Simulator Installation](#running-without-flight-simulator-installation)
+1. [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator)
+1. [Creating or adding Map Themes](#creating-or-adding-map-themes)
+1. [Troubleshoot](#troubleshoot)
+1. [Known Problems](#known-problems)
+1. [How to report a Bug](#how-to-report-a-bug)
+1. [Files](#files)
+1. [Acknowlegments](#acknowlegments)
+1. [License](#license)
 
 Do not use this program for real world navigation.
 
@@ -1149,6 +1151,7 @@ Picture above: Flight plan elevation profile with line indicating the mouse hove
 
 _Little Navmap_ can display METARs from four sources:
 
+TODO FS Weather
 *   [NOAA](http://www.weather.gov) online weather service
 *   [VATSIM](http://www.vatsim.net) network online weather service
 *   [HiFi Simulation Technologies](http://www.hifisimtech.com) _Active Sky Next_
@@ -1159,6 +1162,20 @@ You can define in the `Options` dialog on the `Weather` tab which sources are us
 Both Active Sky programs are recognized automatically on startup for each simulator. The `current_wx_snapshot.txt` file is loaded and monitored for changes.
 
 You can also select the `current_wx_snapshot.txt` file manually. In that case the METARs from this file are displayed for all installed flight simulators.
+
+## Printing {#printing}
+
+### Print Map / Save Map
+
+TODO
+
+### Print Flight Plan {#printing-the-flight-plan}
+
+TODO
+
+## Flight Plan Description {#flight-plan-from-route-description}
+
+TODO
 
 ## Options Dialog {#options-dialog}
 
