@@ -7,8 +7,8 @@ Version 1.1.0.devel
 ## Table of Contents {#table-of-contents}
 
 [Features and Limitations](FEATURES.md)
-
 [Map Legend](LEGEND.md)
+[Changelog](CHANGELOG.md)
 
 1. [Installation](#installation)
 1. [Quick Overview](#quick-overview)
