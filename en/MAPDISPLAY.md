@@ -58,7 +58,7 @@ The map context menu can be activated using right click or the menu key.
 
 Shows detailed information in the `Information` dock window for the nearest airport, airways or all navaids near the cursor.
 
-See the [Information Dock Window](#information-dock-window) for details.
+See the [Information Dock Window](INFO.md#information-dock-window) for details.
 
 #### Measure GC Distance from here {#measure-gc-distance-from-here}
 
@@ -156,7 +156,7 @@ Shows the nearest airport or navaid in the search dialog. The current search par
 
 ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
 
-Sets the center point for the distance search function. See [Distance search](#distance-search). The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
+Sets the center point for the distance search function. See [Distance search](SEARCH.md#distance-search). The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
 #### Set Home {#set-home}
 

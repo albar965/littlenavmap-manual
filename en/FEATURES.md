@@ -10,7 +10,7 @@ Little Navmap Manual
 
 ### General {#general}
 
-* Supported platforms: Windows XP, 7, 8, 10, Linux, macOS.
+* Supported platforms: Windows 7, 8, 10, Linux and macOS.
 * Modern and easy to use interface: Using a main menu, context menus, toolbars, dock windows, undo, recent file lists and more.
 * Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 and Prepar3D v3.
 * Data is collected from flight simulator stock and add-on files. No need to buy or download external data like AIRAC cycles.

@@ -1,8 +1,6 @@
 # Summary
 
-* [Little Navmap Legend](LEGEND.md)
 * [Little Navmap Features](FEATURES.md)
-
 * [Introduction](INTRO.md)
 * [Menus, Toolbars and Statusbar](MENUS.md)
 * [Map Display](MAPDISPLAY.md)
@@ -18,6 +16,7 @@
 * [Load Scenery Library Dialog](SCENERY.md)
 * [Running without Flight Simulator Installation](RUNNOSIM.md)
 * [Connecting to a Flight Simulator](CONNECT.md)
+* [Little Navmap Legend](LEGEND.md)
 * [Appendix](APPENDIX.md)
 
 

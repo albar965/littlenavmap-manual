@@ -9,14 +9,14 @@ The top shows a label that contains departure, departure position (parking, runw
 Besides the label there are three input fields on top of this dock window:
 
 *   Speed (kts): The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` (estimated time of arrival at a waypoint given 0:00 as start time). It is not saved with the flight plan and not used for simulator user aircraft calculations.
-*   Cruise altitude (ft): This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field receives the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](#calculate-based-on-given-altitude).
+*   Cruise altitude (ft): This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field receives the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 *   Flight Plan Type (IFR or VFR): This is saved with the flight plan.
 
 ### Flight Plan Table {#flight-plan-table}
 
 The table view allows the same operations as the search table view except sorting. See [here](#tableviewops).
 
-All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
+All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
 
 Note on the table columns `Course °M` and `Direct °M`:
 
@@ -51,7 +51,7 @@ Deletes all selected flight plan legs. Use `Undo` if you deleted legs accidental
 
 ![Show Information](../images/icons/globals.png "Show Information")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### Show on Map {#show-on-map-0}
 
@@ -63,7 +63,7 @@ Shows either the airport diagram or zooms to the navaid on the map.
 
 ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### Show Navaid range {#show-navaid-range-1}
 
@@ -71,13 +71,13 @@ Same as the [Map Context Menu](#map-context-menu).
 
 Will show the range rings for all selected radio navaids in the flight plan. You will get a range circle for each radio navaid on the flight plan if you simply select all legs of the flight plan and use this function.
 
-Otherwise, the same as the [Map Context Menu](#map-context-menu).
+Otherwise, the same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-1}
 
 ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### Copy {#copy-0}
 
@@ -99,5 +99,5 @@ Resets the column order and column widths back to the default view.
 
 ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
