@@ -24,7 +24,7 @@ Picture above: Navaid information. Two navaids were close to the cursor when cli
 
 This dock window shows information similar to a flight management computer about the user aircraft. _Little Navmap_ has to be connected to the simulator to enable this functionality. The dock window contains one tab that shows general aircraft data like gross weight and another tab that displays flight data, flight plan progress, weather and ambient parameters.
 
-See [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator) for more information on this topic.
+See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information on this topic.
 
 ![Aircraft Information](../images/infoac.jpg "Aircraft Information")
 

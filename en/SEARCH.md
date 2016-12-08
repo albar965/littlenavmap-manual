@@ -54,8 +54,9 @@ Picture above (Click to see large version): A complex search: Find all airports 
 
 ### Search Result Table View {#search-result-table-view}
 
-All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
+All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
 
+### Table View {#table-view}
 The header of all table views allows the following manipulation:
 
 *   Click on the top left corner of the column header:Select all result rows.
@@ -86,7 +87,7 @@ A double click on an entry in the table view shows either an airport diagram or 
 
 ![Show Information](../images/icons/globals.png "Show Information")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### Show on Map {#show-on-map}
 
@@ -138,7 +139,7 @@ Be aware that showing all navaids and airports can take some time especially if 
 
 ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### Copy {#copy}
 
@@ -160,4 +161,4 @@ Resets the sort order, the column order and column widths back to default.
 
 ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
 
-Same as the [Map Context Menu](#map-context-menu).
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).

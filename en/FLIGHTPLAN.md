@@ -14,7 +14,7 @@ Besides the label there are three input fields on top of this dock window:
 
 ### Flight Plan Table {#flight-plan-table}
 
-The table view allows the same operations as the search table view except sorting. See [here](#tableviewops).
+The table view allows the same operations as the search table view except sorting. See [here](SEARCH.md#table-view) for more information.
 
 All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
 

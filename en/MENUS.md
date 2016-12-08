@@ -28,7 +28,7 @@ An opened flight plan file will be reloaded on start up (reload and centering ca
 
 Adds departure, destination and all waypoints to the current flight plan.
 
-Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as required. See [Flight Plan Table View Context Menu](#flight-plan-table-view-context-menu).
+Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as required. See [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
 
 #### Save Flight Plan {#save-flight-plan}
 
@@ -82,7 +82,7 @@ Allows to undo and redo all flight plan changes.
 
 ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure")
 
-A parking spot (gate, ramp or fuel box), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](#set-as-flight-plan-departure) when right clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
+A parking spot (gate, ramp or fuel box), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
 
 ![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
@@ -92,7 +92,7 @@ Picture above: The start position selection dialog for EDDN.
 
 ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map")
 
-Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Editing](#map-flight-plan-editing).
+Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing).
 
 #### Calculate Direct {#calculate-direct}
 
@@ -152,13 +152,13 @@ Swaps departure and destination and reverses order of all intermediate waypoints
 
 ![Goto Home](../images/icons/home.png "Goto Home")
 
-Goes to the home area that was set using [Set Home](#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
+Goes to the home area that was set using [Set Home](MAPDISPLAY.md#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
 
 #### Go to Center for Distance Search {#go-to-center-for-distance-search}
 
 ![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search")
 
-Go to the center point used for distance searches. See [Set Center for Distance Search](#set-center-for-distance-search).The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
+Go to the center point used for distance searches. See [Set Center for Distance Search](MAPDISPLAY.md#set-center-for-distance-search).The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
 #### Center Flight Plan {#center-flight-plan}
 
@@ -212,7 +212,7 @@ Picture above: Spherical map projection with `Simple` offline map theme selected
 
 #### Theme {#theme}
 
-Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](#creating-or-adding-map-themes) for more information.
+Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes) for more information.
 
 ##### OpenStreetMap {#openstreetmap}
 
@@ -367,13 +367,13 @@ Shows a latitude/longitude grid as well as the [meridian](http://en.wikipedia.or
 
 ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names")
 
-Show county, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](#theme).
+Show county, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
 
 #### Show Hillshading {#show-hillshading}
 
 ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading")
 
-Shows hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](#theme).
+Shows hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
 
 ### Scenery Library Menu {#scenery-library-menu}
 
@@ -381,17 +381,17 @@ Shows hill shading on the map. Availability of these options depends on the sele
 
 One menu item is created for each Flight Simulator installation or database found. These menu items allow switching of databases on the fly. The menu item is hidden if only one Flight Simulator was found.
 
-This menu is synchronized with simulator selection in the [Load Scenery Library Dialog](#load-scenery-library-dialog). Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
+This menu is synchronized with simulator selection in the [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog). Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
 
 #### Show Database Files {#show-database-files}
 
-This opens _Little Navmap_&#039;s database directory in a file manager. See [Running without Flight Simulator Installation](#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer (e.g. Windows, Mac or Linux) using the same database that was created on the computer running the flight simulator.
+This opens _Little Navmap_&#039;s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer (e.g. Windows, Mac or Linux) using the same database that was created on the computer running the flight simulator.
 
 #### Load Scenery Library {#load-scenery-library}
 
 ![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
 
-Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
+Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
 
 ### Tools Menu {#tools-menu}
 
@@ -399,7 +399,7 @@ Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](#load
 
 ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection")
 
-Opens the `Connect` dialog allowing _Little Navmap_ to be connected directly to a Flight Simulator or remotely connected using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](#connecting-to-a-flight-simulator) for more information.
+Opens the `Connect` dialog allowing _Little Navmap_ to be connected directly to a Flight Simulator or remotely connected using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information.
 
 #### Reset all Messages {#reset-all-messages}
 
@@ -409,7 +409,7 @@ This will re-enable all dialogs that were disabled by selecting `Do not show thi
 
 ![Options](../images/icons/settings.png "Options")
 
-Opens the [Options dialog](#options-dialog).
+Opens the [Options dialog](OPTIONS.md#options-dialog).
 
 ### Window Menu {#window-menu}
 

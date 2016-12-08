@@ -1,7 +1,9 @@
 # Changelog
 
 ## Changes from Release 1.0.5 to 1.2
+
 **The program is not compatible with Windows XP now.**
+
 * Printing
 * AI/Multiplayer Display
 * Save flight plan as GFP file for GNS/GTS 650/whatever TODO

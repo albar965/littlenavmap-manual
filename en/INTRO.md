@@ -6,9 +6,11 @@ The installation of _Little Navmap_ does not change any registry entries (in Win
 
 Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges for some Windows versions. Since Windows keeps control of these folders other problems might occur like replaced or deleted files.
 
-Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](#first-start) for more information on the first start after installation.
+Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](INTRO.md#first-start) for more information on the first start after installation.
 
-_Little Navmap_ is a 32-bit application and was tested with Windows XP, Windows 7, Windows 8 and Windows 10 (32-bit & 64-bit).
+I recommend to delete all files of `Little Navmap` before installing a new version. All these files can be deleted since all settings are stored in separate directories. See [Files](APPENDIX.md#files) for more information.
+
+_Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 (32-bit & 64-bit).
 
 ### Quick Overview {#quick-overview}
 
@@ -73,10 +75,10 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 
 ## First Start {#first-start}
 
-The [Scenery Library Dialog](#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ for the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_&#039;s internal database. One database is kept for each simulator and can be changed on the fly in the [Scenery Library](#scenery-library-menu) menu.
+The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ for the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_&#039;s internal database. One database is kept for each simulator and can be changed on the fly in the [Scenery Library](SCENERY.md#scenery-library-menu) menu.
 
-A warning dialog will be shown when starting _Little Navmap_ the first time on a system without any flight simulator installations. See chapter [Running without Flight Simulator Installation](#running-without-flight-simulator-installation) for more information on this.
+A warning dialog will be shown when starting _Little Navmap_ the first time on a system without any flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
 
-The scenery library database may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](#load-scenery-library-dialog) after erasing the database.
+The scenery library database may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the database.
 
 
