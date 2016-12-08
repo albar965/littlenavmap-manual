@@ -2,7 +2,7 @@
 
 * [Little Navmap Legend](LEGEND.md)
 * [Little Navmap Features](FEATURES.md)
-* 
+
 * [Introduction](INTRO.md)
 * [Menus, Toolbars and Statusbar](MENUS.md)
 * [Map Display](MAPDISPLAY.md)
