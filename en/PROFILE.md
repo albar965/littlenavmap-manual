@@ -1,7 +1,4 @@
-
-## Flight Plan Elevation Profile Dock Window {#flight-plan-elevation-profile-dock-window}
-
-![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile")
+## ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Flight Plan Elevation Profile Dock Window {#flight-plan-elevation-profile-dock-window}
 
 This dock window shows the ground elevation and flight plan cruise altitude together will all flight plan waypoints. It is only available when a flight plan is loaded. The user aircraft will be shown too if _Little Navmap_ is connected to the simulator.
 
@@ -27,5 +24,5 @@ For more information see the `Navmap Legend` tab in the `Information` dock windo
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
-Picture above: Flight plan elevation profile with line indicating the mouse hovering position.
+**Picture above:** _Flight plan elevation profile with line indicating the mouse hovering position._
 

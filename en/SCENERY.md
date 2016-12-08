@@ -1,7 +1,5 @@
 
-## Load Scenery Library Dialog {#load-scenery-library-dialog}
-
-![Load Scenery Library](../images/icons/database.png "Load Scenery Library")
+## ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library Dialog {#load-scenery-library-dialog}
 
 This dialog allows loading of the scenery library data from all four supported flight simulators into the _Little Navmap_ internal database. The scenery library to load can be selected in the `Simulator:` drop down box.
 
@@ -28,11 +26,11 @@ An error dialog is shown after loading if any BGL files could not be read. In th
 
 ![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
 
-Picture above: Load Scenery Dialog. Nothing is loaded yet for FSX.
+**Picture above:** _Load Scenery Dialog. Nothing is loaded yet for FSX._
 
 ![Load Scenery Progress Dialog](../images/loadsceneryprogress.jpg "Load Scenery Progress Dialog")
 
-Picture above: Progress dialog shown while loading the scenery library into _Little Navmap_&#039;s internal database.
+**Picture above:** _Progress dialog shown while loading the scenery library into _Little Navmap_&#039;s internal database._
 
 Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` might differ to the numbers shown in the progress dialog. This is the case since all stock and add-on airports are counted in the progress dialog. Add-on airports usually replace stock airports which results in a different number in the `Load Scenery Library` dialog. Also duplicate navaids are removed after loading.
 

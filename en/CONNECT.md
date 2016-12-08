@@ -1,7 +1,5 @@
 
-## Connecting to a Flight Simulator {#connecting-to-a-flight-simulator}
-
-![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection")
+## ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Connecting to a Flight Simulator {#connecting-to-a-flight-simulator}
 
 User aircraft information is transfered to _Little Navmap_ by using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent on the flying computer which saves the error prone setup of a remote SimConnect connection.
 
@@ -13,7 +11,7 @@ _Little Navmap_ can connect to the flight simulator directly if all programs are
 
     ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
-    Picture above: [Little Navconnect](https://albar965.github.io/littlenavconnect.html) is running and waiting for a Flight Simulator.
+    **Picture above:** _[Little Navconnect](https://albar965.github.io/littlenavconnect.html) is running and waiting for a Flight Simulator._
 
     Change the port in _Little Navconnect_ &#039;s `Options` dialog if you see an error message like shown below:
 
@@ -25,7 +23,7 @@ _Little Navmap_ can connect to the flight simulator directly if all programs are
 
     ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
-    Picture above: Connect dialog with correct values to access the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) shown above.
+    **Picture above:** _Connect dialog with correct values to access the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) shown above._
 
 4.  Add the value for hostname. This can be either the hostname or the IP address printed by _Little Navconnect_. You can use `localhost` if all programs are running on the same computer.
 5.  Check the value for the port. `51968` is the default value and does not need to be changed usually.

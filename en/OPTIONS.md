@@ -1,6 +1,4 @@
-## Options Dialog {#options-dialog}
-
-![Options](../images/icons/settings.png "Options")
+## ![Options](../images/icons/settings.png "Options") Options Dialog {#options-dialog}
 
 Most options are self explaining and tooltips contain more detailed explanations if applicable. Therefore, a more detailed description is not needed here.
 
@@ -8,5 +6,5 @@ The button `Restore Defaults` only restores the options of this dialog back to d
 
 ![Options](../images/options.jpg "Options")
 
-Picture above: `Startup` tab of the options dialog.
+**Picture above:** _`Startup` tab of the options dialog._
 

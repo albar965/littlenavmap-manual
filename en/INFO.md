@@ -1,6 +1,4 @@
-## Information Dock Window {#information-dock-window}
-
-![Information](../images/icons/infodock.png "Information")
+## ![Information](../images/icons/infodock.png "Information") Information Dock Window {#information-dock-window}
 
 This dock window contains text information about airports in several tabs as well as information for one or more navaids or airways in another tab. Also, included are the legend for the navigation symbols and the general map legend which depends on the selected map theme.
 
@@ -12,15 +10,13 @@ A link `Map` allows jumping to the shown airport or navaid on the map.
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 
-Picture above: Airport information overview. Additional tabs show information for runways, COM frequencies and approaches.
+**Picture above:** _Airport information overview. Additional tabs show information for runways, COM frequencies and approaches._
 
 ![Navaid Information](../images/infonavaid.jpg "Navaid Information")
 
-Picture above: Navaid information. Two navaids were close to the cursor when clicked.
+**Picture above:** _Navaid information. Two navaids were close to the cursor when clicked._
 
-## Simulator Aircraft Dock Window {#simulator-aircraft-dock-window}
-
-![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft")
+## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulator Aircraft Dock Window {#simulator-aircraft-dock-window}
 
 This dock window shows information similar to a flight management computer about the user aircraft. _Little Navmap_ has to be connected to the simulator to enable this functionality. The dock window contains one tab that shows general aircraft data like gross weight and another tab that displays flight data, flight plan progress, weather and ambient parameters.
 
@@ -28,8 +24,8 @@ See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulat
 
 ![Aircraft Information](../images/infoac.jpg "Aircraft Information")
 
-Picture above: Aircraft information when connected to a Flight Simulator.
+**Picture above:** _Aircraft information when connected to a Flight Simulator._
 
 ![Aircraft Progresss Information](../images/infoacprogress.jpg "Aircraft Progresss Information")
 
-Picture above: Progress and ambient information of the current flight situation. Some fields or tables like `Next Waypoint` are only available when a flight plan is loaded.
+**Picture above:** _Progress and ambient information of the current flight situation. Some fields or tables like `Next Waypoint` are only available when a flight plan is loaded._

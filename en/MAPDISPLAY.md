@@ -24,7 +24,7 @@ The sensitivity for the tooltip display can be adjusted in the `Options` dialog 
 
 ![Tooltip](../images/tooltip.jpg "Tooltip")
 
-Picture above: Tooltip with information for a French airport.
+**Picture above:** _Tooltip with information for a French airport._
 
 ### Highlights {#highlights}
 
@@ -42,27 +42,23 @@ See the Nav Map Legend for details about the airport diagram.
 
 ![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")
 
-Picture above: High level view of the airport diagram of EDDH.
+**Picture above:** _High level view of the airport diagram of EDDH._
 
 ![Airport Diagram](../images/airportdiagram2.jpg "Airport Diagram")
 
-Picture above: Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible.
+**Picture above:** _Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible._
 
 ### Map Context Menu {#map-context-menu}
 
 The map context menu can be activated using right click or the menu key.
 
-#### Show Information {#show-information}
-
-![Show Information](../images/icons/globals.png "Show Information")
+#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information}
 
 Shows detailed information in the `Information` dock window for the nearest airport, airways or all navaids near the cursor.
 
 See the [Information Dock Window](INFO.md#information-dock-window) for details.
 
-#### Measure GC Distance from here {#measure-gc-distance-from-here}
-
-![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here")
+#### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Measure GC Distance from here {#measure-gc-distance-from-here}
 
 Starts a measurement line on the first click. Second click ends measuring and keeps the line. All measurement lines are saved and will be restored on next start up.
 
@@ -78,61 +74,43 @@ Course is indicated in degrees true. Additional information like ident or freque
 
 See the Nav Map Legend for details on measurement lines.
 
-#### Measure Rhumb Distance from here {#measure-rhumb-distance-from-here}
-
-![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here")
+#### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Measure Rhumb Distance from here {#measure-rhumb-distance-from-here}
 
 A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is longer than the great circle route.
 
 The course for a rhumb line is normally indicated in degrees true. Course will be indicated in degrees magnetic if the measurement starts at a navaid or at an airport that has a magnetic variation. Additional information like ident and frequency will be added to the line in this case.
 
-#### Remove Distance measurement {#remove-distance-measurement}
-
-![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement")
+#### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
 
 This menu item is active if you right click at the end of a distance measurement line (small cross). Removes only the selected line.
 
-#### Show Range Rings {#show-range-rings}
-
-![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings}
 
 Shows multiple red range rings around the clicked position. The number and distance of the range rings can be changed in the `Options` dialog on the `Map Display` tab. A label indicates the radius of each ring in nautical miles.
 
-#### Show Navaid range {#show-navaid-range}
-
-![Show Navaid range](../images/icons/navrange.png "Show Navaid range")
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
 
 Shows a ring around the clicked radio navaid (VOR or NDB) indicating the navaid&#039;s range. A label shows ident and frequency and the ring color indicates the navaid type.
 
-#### Remove Range Ring {#remove-range-ring}
-
-![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring")
+#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Remove Range Ring {#remove-range-ring}
 
 Menu item is active if you right click at the center point of a range ring (small circle). Removes the rings from the map.
 
-#### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
-
-![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
+#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
 
 Removes all rings and distance measurement lines from the map.
 
-#### Set as Flight Plan Departure {#set-as-flight-plan-departure}
-
-![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure")
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure}
 
 This is active if the click is at an airport, an airport parking position or a fuel box. It will either replace the current flight plan departure or add a new departure if the flight plan is empty.
 
 The default runway will be used as starting position if the clicked object is an airport. The airport and parking position will replace both the current departure and start position if a parking position is clicked within an airport diagram.
 
-#### Set as Flight Plan Destination {#set-as-flight-plan-destination}
-
-![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination")
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination}
 
 This is active if the click is at an airport. It will either replace the flight plan destination or add the airport if the flight plan is empty.
 
-#### Add Position to Flight Plan {#add-position-to-flight-plan}
-
-![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan")
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan}
 
 Inserts the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is near the flight plan end points.
 
@@ -140,27 +118,19 @@ The name of the navaid or airport is shown in the menu item.
 
 A user defined position is added to the flight plan if no airport or navaid is near the clicked position.
 
-#### Delete from Flight Plan {#delete-from-flight-plan}
-
-![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan")
+#### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Delete from Flight Plan {#delete-from-flight-plan}
 
 Deletes the clicked airport, navaid or user position from the flight plan.
 
-#### Show in Search {#show-in-search}
-
-![Show in Search](../images/icons/search.png "Show in Search")
+#### ![Show in Search](../images/icons/search.png "Show in Search") Show in Search {#show-in-search}
 
 Shows the nearest airport or navaid in the search dialog. The current search parameters are reset.
 
-#### Set Center for Distance Search {#set-center-for-distance-search}
-
-![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search}
 
 Sets the center point for the distance search function. See [Distance search](SEARCH.md#distance-search). The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
-#### Set Home {#set-home}
-
-![Set Home](../images/icons/home.png "Set Home")
+#### ![Set Home](../images/icons/home.png "Set Home") Set Home {#set-home}
 
 Sets the home position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
 

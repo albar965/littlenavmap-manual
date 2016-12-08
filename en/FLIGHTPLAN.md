@@ -1,6 +1,4 @@
-## Flight Plan Dock Window {#flight-plan-dock-window}
-
-![Flight Plan](../images/icons/routedock.png "Flight Plan")
+## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flight Plan Dock Window {#flight-plan-dock-window}
 
 ### Upper Part {#upper-part}
 
@@ -25,7 +23,7 @@ Note on the table columns `Course °M` and `Direct °M`:
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-Picture above: The `Flight Plan` dock window.
+**Picture above:** _The `Flight Plan` dock window._
 
 ### Mouse Clicks {#mouse-clicks-1}
 
@@ -33,55 +31,39 @@ A double click on an entry in the table view shows either an airport diagram or 
 
 ### Flight Plan Table View Context Menu {#flight-plan-table-view-context-menu}
 
-#### Move Selected Legs up/down {#move-selected-legs-up-down}
-
-![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down")
+#### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Move Selected Legs up/down {#move-selected-legs-up-down}
 
 Moves all selected flight plan legs up or down in the list. This works also if multiple legs are selected.
 
 Airway names will be removed when waypoints in the flight plan are moved or deleted because the new flight plan legs will not follow any airway but rather use direct connections.
 
-#### Delete Selected Legs {#delete-selected-legs}
-
-![Delete Selected Legs](../images/icons/routedeleteleg.png "Delete Selected Legs")
+#### ![Delete Selected Legs](../images/icons/routedeleteleg.png "Delete Selected Legs") Delete Selected Legs {#delete-selected-legs}
 
 Deletes all selected flight plan legs. Use `Undo` if you deleted legs accidentally.
 
-#### Show Information {#show-information-1}
-
-![Show Information](../images/icons/globals.png "Show Information")
+#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-1}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### Show on Map {#show-on-map-0}
-
-![Show on Map](../images/icons/showonmap.png "Show on Map")
+#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map-0}
 
 Shows either the airport diagram or zooms to the navaid on the map.
 
-#### Show Range Rings {#show-range-rings-1}
-
-![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-1}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### Show Navaid range {#show-navaid-range-1}
-
-![Show Navaid range](../images/icons/navrange.png "Show Navaid range")
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-1}
 
 Will show the range rings for all selected radio navaids in the flight plan. You will get a range circle for each radio navaid on the flight plan if you simply select all legs of the flight plan and use this function.
 
 Otherwise, the same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-1}
-
-![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
+#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-1}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### Copy {#copy-0}
-
-![Copy](../images/icons/copy.png "Copy")
+#### ![Copy](../images/icons/copy.png "Copy") Copy {#copy-0}
 
 Copies the selected entries in CSV format into the clipboard. The CSV will include a header. This will consider changes to the table view like column order.
 
@@ -89,15 +71,11 @@ Copies the selected entries in CSV format into the clipboard. The CSV will inclu
 
 Selects all flight plan legs.
 
-#### Reset View {#reset-view-0}
-
-![Reset View](../images/icons/cleartable.png "Reset View")
+#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view-0}
 
 Resets the column order and column widths back to the default view.
 
-#### Set Center for Distance Search {#set-center-for-distance-search-1}
-
-![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-1}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 

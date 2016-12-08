@@ -16,7 +16,7 @@ _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
-Picture above (Click to see large version): _Little Navmap_ for a quick overview showing the most important functions.
+**Picture above: (Click to see large version):** _Little Navmap_ for a quick overview showing the most important functions._
 
 ## General Remarks {#general-remarks}
 
@@ -42,7 +42,7 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 ![Little Navmap](../images/all.jpg "Little Navmap")
 
-Picture above (Click to see large version): _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
+**Picture above: (Click to see large version):** _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
 
 ### Translation and Locale {#translation-and-locale}
 

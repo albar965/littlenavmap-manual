@@ -1,6 +1,4 @@
-## Search Dock Window {#search-dock-window}
-
-![Search](../images/icons/searchdock.png "Search")
+## ![Search](../images/icons/searchdock.png "Search") Search Dock Window {#search-dock-window}
 
 ### General {#general}
 
@@ -71,11 +69,11 @@ The program saves the sort order, column widths and positions until `Reset View`
 
 ![Airport Search Result Table](../images/airportsearchtable.jpg "Airport Search Result Table")
 
-Picture above: Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right.
+ **Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right.
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-Picture above: Navaid search. All search options are visible. Search is limited to ICAO region `LI` (Italy) and VOR and NDB stations.
+**Picture above:** _Navaid search. All search options are visible. Search is limited to ICAO region `LI` (Italy) and VOR and NDB stations._
 
 ### Mouse Clicks {#mouse-clicks-0}
 
@@ -83,67 +81,43 @@ A double click on an entry in the table view shows either an airport diagram or 
 
 ### Search Result Table View Context Menu {#search-result-table-view-context-menu}
 
-#### Show Information {#show-information-0}
-
-![Show Information](../images/icons/globals.png "Show Information")
+#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### Show on Map {#show-on-map}
-
-![Show on Map](../images/icons/showonmap.png "Show on Map")
+#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
 Shows either the airport diagram or zooms to the navaid on the map.
 
-#### Filter by Entries including/excluding {#filter-by-entries-including-excluding}
-
-![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding")
+#### ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding") Filter by Entries including/excluding {#filter-by-entries-including-excluding}
 
 Takes the text of the field under the cursor and sets the search filter for an including or an excluding search. This is only enabled for text columns.
 
-#### Reset Search {#reset-search}
-
-![Reset Search](../images/icons/clear.png "Reset Search")
+#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
 
 Clears search filters and shows all entries again in the search result table view.
 
-#### Show All {#show-all}
-
-![Reset Search](../images/icons/load-all.png "Show All")
+#### ![Reset Search](../images/icons/load-all.png "Show All") Show All {#show-all}
 
 The table view does not show all entries initially for performance reasons. This menu item allows to load and show the whole search result. The view switches back to the limited number of entries after a search filter is modified or the sort order is changed. The number of all, visible and selected entries is shown at the bottom of the tab.
 
 Be aware that showing all navaids and airports can take some time especially if they are highlighted on the map when selecting all in the search result. The program does not crash but needs a few seconds to highlight all on the map.
 
-#### Show Range Rings {#show-range-rings-0}
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-0}
 
-![Show Range Rings](../images/icons/rangerings.png "Show Range Rings")
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-0}
 
-#### Show Navaid range {#show-navaid-range-0}
+#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-0}
 
-![Show Navaid range](../images/icons/navrange.png "Show Navaid range")
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
 
-#### Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-0}
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
 
-![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements")
-
-#### Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
-
-![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure")
-
-#### Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
-
-![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination")
-
-#### Add Position to Flight Plan {#add-position-to-flight-plan-0}
-
-![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan")
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### Copy {#copy}
-
-![Copy](../images/icons/copy.png "Copy")
+#### ![Copy](../images/icons/copy.png "Copy") Copy {#copy}
 
 Copies the selected entries in CSV format into the clipboard. This will consider changes to the table view like column order and sort order. The CSV will include a header line.
 
@@ -151,14 +125,10 @@ Copies the selected entries in CSV format into the clipboard. This will consider
 
 Selects all visible entries. To select all available entries the function `Show All` has to be used first.
 
-#### Reset View {#reset-view}
-
-![Reset View](../images/icons/cleartable.png "Reset View")
+#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
 
 Resets the sort order, the column order and column widths back to default.
 
-#### Set Center for Distance Search {#set-center-for-distance-search-0}
-
-![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search")
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
