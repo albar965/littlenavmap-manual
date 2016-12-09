@@ -11,6 +11,7 @@
 * Autoconnect
 * Weather data can now be directly fetched from the simulator
 * METARs are shown in decoded format in the informtation window
+* The Active Sky flight plan weather file is now used to show METARs or decoded weather for destination and departure. This gives a precies weather indication for ASN or AS16 users.
 * User defined waypoint names can now be changed
 
 
@@ -33,6 +34,15 @@
 * Coordinate format can now be changed from degree/minutes/seconds to decimal degree format.
 * Pointer for wind around aircraft added.
 * User aircraft icon can now show an optional track line.
+* User aircraft icon now shows aircraft type (jet, piston/turboprop, helicopter)
+* Added map display customization options for symbol sizes
+* Added option to center map around last flight plan on startup.
+* When changing departure, destination or flight plan type the save function will optionally show the save as dialog to avoid overwriting flight plans with the wrong content.
+* Zoom distance for double click and other functions can now be changed separately.
+* Symbol and text sizes for airports, navaids, user and AI/multiplayer aircraft can be changed.
+* Flight plan and user aircraft trail line width and color can be changed.
+* Range ring and distance measurement line withd can be changed.
+
 
 Fixes
 * Workaround that omits long invalid airway segments now while loading the scenery database
