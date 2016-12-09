@@ -107,7 +107,11 @@ The files are:
 
 A big thank-you for all people supporting me throughout the beta phase, sending me their log files, screen shots, ideas for improvements, friendly messages and more.
 
+A huge Thank you! to Paul Watts for his support, for testing, tips and links to incredible tools and for all his work on the manual.
+
 A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
+
+Another big Danke! to Marc from Germany for all his ideas and endless bug reports.
 
 Thanks to all in the forums who patiently supported me and gave invaluable feedback during the public beta:
 
@@ -133,8 +137,6 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. If not, see &lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)&gt;.
+You should have received a copy of the GNU General Public License along with this program. If not, see [http://www.gnu.org/licenses](http://www.gnu.org/licenses/).
 
-<p>
-<img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="../images/gpl-v3-logo.svg" />
-</p>
+![GPL V3](../images/gpl-v3-logo.jpg)
