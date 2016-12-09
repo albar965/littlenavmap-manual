@@ -2,7 +2,8 @@
 
 ## Changes from Release 1.0.5 to 1.2
 
-**The program is not compatible with Windows XP now.**
+**The program is not compatible with Windows XP anymore.**
+
 **_Little Navconnect_ is only needed for remote connections now.**
 
 ### Enhancements
@@ -11,7 +12,7 @@
 * **Printing for map, flight plan, airport and weather information added.**
 * **Added night user interface style and others including a dimmable map for night display.**
 * **Units can now be changed to metric, imperial and nautical separately for distance, altitude, speed, weight and volume.**
-* **Database updates by fsAerodata (https://www.fsaerodata.com) are supported.**
+* **Database updates by [fsAerodata](https://www.fsaerodata.com) are supported.**
 * Coordinate format can now be changed from degree/minutes/seconds to decimal degree format.
 * Freqencies for VOR, NDB and ILS added to approach information tab.
 * Added display of helipad details to information window.
@@ -35,11 +36,11 @@
 
 #### Map Display
 * **AI and multiplayer aircraft are now shown on the map. Information about these is avaiable in the aircraft progress window and tooltips.**
-* **Added configurable top of descent display on map and elevation profile display based on simple N nautical miles per 1000 ft rule.**
-* The floating map overlays can now be disabled or enabled.
+* **Added configurable top of descent display on map and elevation profile display based on simple number of nautical miles per 1000 ft rule.**
+* The floating map overlays can now be hidden.
 * Added a mode that scrolls the map continously while displaying and following the user aircraft.
 * Movement and updates of the user aircraft are now more fluid.
-* User aircraft icon can now show an optional track line.
+* User aircraft icon can now show an optional line indicating .
 * Aircraft types (jet, piston/turboprop, helicopter) are now indicated by the user and AI/multiplayer aircraft icons.
 * Added drawing of minimum safe altitude for each flight plan segment in profile window. 
 * Runway length is now shown in precise units using meter or feet depending on settings.
@@ -52,20 +53,22 @@
 
 #### Flight Simulator Connection
 * **_Little Navmap_ can now connect to a flight simulator directly. _Little Navconnect_ is now only needed for remote connections.**
-* _Little Navmap_ can now optionally reconnect to a local flight simulator or a remote _Little Navconnect_ instance. Start order of programs does not matter now.
+* **_Little Navmap_ can now optionally reconnect to a local flight simulator or a remote _Little Navconnect_ instance. Start order of programs does not matter now.**
 * Hostnames can now be deleted in the connect dialog list.
 
-### Fixed bugs
-
-* **Fixed crashes when using navdata updates from http://www.aero.sors.fr/navaids.html.**
-* Added workaround that omits invalid airway segments longer than 1000 nm while loading the scenery database.
+### Problems Solved
+#### General
+* **The OpenTopoMap is back in all its glory. In general all online maps using HTTPS connections should work properly now.**
 * **Course to or from user defined waypoints was wrong in some cases due to missing magnetic variance.**
-* **OpenTopoMap is back. In general all online maps using HTTPS connections will now work properly.**
+* **Fixed crashes in flight plan calculation when using the [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html).**
 * Solved small problem where flight plan calculation jumped often between equal overlaying airways.
-* Line endings for saved PLN files are now Windows style which allows to load the flight plan into PF3 ATC.
-* Fixed problem with too small BGL files.
-* Solved old problem with tooltips reappearing randomly.
-* Fixed map zoom problem with some add-on airports that contain a far away dummy runway. Runways that are more away than 50 kms from the airport center are now omitted.
-* Fixed problem that recognized too many add-on runway surfaces as `invalid`.
+* Line endings for saved PLN files are now always Windows style which allows to load the flight plan into PF3 ATC.
+* Route type was empty when saving a flight plan in some cases. Flight simulator could not load these.
 * Magnetic variation was wrong in some cases in information window and tooltips.
-* Route type could be empty when saving a flight plan in some cases. Flight simulator could not load these.
+* Solved old problem with tooltips reappearing randomly.
+
+#### Scenery Library Loader
+* Added workaround that omits long invalid airway segments while loading the scenery database.
+* Fixed problem when reading too small BGL files into the scenery database.
+* Fixed map zoom problem with some add-on airports that contain a far away dummy runway. Runways that are more than 50 kilometers away from the airport center are now omitted.
+* Fixed problem that recognized too many add-on runway surfaces as `invalid`.
