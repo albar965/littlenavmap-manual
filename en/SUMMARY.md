@@ -1,7 +1,8 @@
 # Summary
 
 * [Little Navmap Features](FEATURES.md)
-* [Changelog](/CHANGELOG.md)
+* [Changelog](CHANGELOG.md)
+
 * [Introduction](INTRO.md)
 * [Menus, Toolbars and Statusbar](MENUS.md)
 * [Map Display](MAPDISPLAY.md)
@@ -19,6 +20,7 @@
 * [Connecting to a Flight Simulator](CONNECT.md)
 * [Little Navmap Legend](LEGEND.md)
 * [Appendix](APPENDIX.md)
+
 
 
 
