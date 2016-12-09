@@ -14,6 +14,7 @@
 * Coordinate format can now be changed from degree/minutes/seconds to decimal degree format.
 * Freqencies for VOR, NDB and ILS added to approach information.
 * Added display of helipads to information window.
+* Added option to center map around last flight plan on startup.
 
 #### Weather
 * Weather data can now be directly fetched from the simulator and is updated constantly.
@@ -30,6 +31,11 @@
 * User aircraft icon can now show an optional track line.
 * Aircraft type (jet, piston/turboprop, helicopter) is now indicated by the user and AI/multiplayer aircraft icons.
 * Added drawing of minimum safe altitude for each flight plan segment in profile window. 
+* Runway length now shown in precise unit using meter or feet depending on unit settings.
+* Text labels on map can now be customized for airport, user and AI/multiplayer aicraft.
+* Symbol and text sizes for airports, navaids, user and AI/multiplayer aircraft can be changed.
+* Flight plan and user aircraft trail line width and color can be changed.
+* Range ring and distance measurement line withd can be changed.
 
 #### Flight Plan
 * Flight plans can now be exported to the GFP format used by the Flight1 GTN 650/750.
@@ -44,14 +50,8 @@
 * Hostnames can now be deleted in the connect dialog list.
 
 #### Options
-* Added option to center map around last flight plan on startup.
 * When changing departure, destination or flight plan type the save function will optionally show the save as dialog to avoid overwriting flight plans with the wrong content.
 * Zoom distance for double click and other functions can now be changed separately.
-* Symbol and text sizes for airports, navaids, user and AI/multiplayer aircraft can be changed.
-* Flight plan and user aircraft trail line width and color can be changed.
-* Range ring and distance measurement line withd can be changed.
-* Text labels on map can now be customized for airport, user and AI/multiplayer aicraft.
-* Runway length now shown in precise unit meter or feet depending on unit settings.
 
 * All help is now available either offline as an included PDF or online from Gitbook
 * Navaid range column in flight plan table.
