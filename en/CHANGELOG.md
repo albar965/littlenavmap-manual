@@ -42,6 +42,7 @@
 * Symbol and text sizes for airports, navaids, user and AI/multiplayer aircraft can be changed.
 * Flight plan and user aircraft trail line width and color can be changed.
 * Range ring and distance measurement line withd can be changed.
+* Added display of helipads to information window
 
 
 Fixes
@@ -52,6 +53,7 @@ Fixes
 * Flight plan calculation jumped between euqual airways.
 * Line endings for PLN files are now Windows style which allows to load the flight plan into PF3 ATC.
 
-* Many other small fixes, too many to enumerate
-
+* Fixed crash on small BGL files
+* Solved long standing problem with tooltips reappearing randomly
+* Fixed map zoom problem with some add-on airports that contain a far off dummy runway. Runway more far away than 50 kms are now omitted.
 
