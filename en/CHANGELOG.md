@@ -79,6 +79,7 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 * Added workaround that omits long invalid airway segments while loading the scenery database.
 * Fixed problem when reading too small BGL files into the scenery database.
 * Fixed map zoom problem with some add-on airports that contain a far away dummy runway. Runways that are more than 50 kilometers away from the airport center are now omitted.
+* Solved old problem that caused airways split into fragments during loading.
 * Fixed problem that recognized too many add-on runway surfaces as `invalid.`
 
 
