@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Changes from Release 1.0.5 to 1.2](CHANGELOG.md)
 * [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator)
 * [Features](FEATURES.md#features)
@@ -23,6 +24,7 @@
 * [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog)
 * [Search Dock Window](SEARCH.md#search-dock-window)
 * [Weather](WEATHER.md#weather)
+* [Tutorials](tutorials.md)
 * [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes)
 * [Troubleshoot](APPENDIX.md#troubleshoot)
 * [Known Problems](APPENDIX.md#known-problems)
@@ -30,3 +32,4 @@
 * [Files](APPENDIX.md#files)
 * [Acknowlegments](APPENDIX.md#acknowlegments)
 * [License](APPENDIX.md#license)
+
