@@ -311,12 +311,16 @@ The trail is deleted when connecting to a flight simulator or it can be deleted 
 
 The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
 
-#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Show Aircraft Trail {#show-aircraft-trail}
+
+
+
+
 
 #### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") Show AI and Multiplayer Aircraft {#show-map-ai-aircraft}
 
 
-#### ![Show AI and Multiplayer Aircraft](../images/icons/mapgrid.png "Show AI and Multiplayer Aircraft") Show AI and Multiplayer Aircraft {#show-map-a}
+
+#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
 
 Shows a latitude/longitude grid as well as the [meridian](http://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) (near the date line) on the map.
 
