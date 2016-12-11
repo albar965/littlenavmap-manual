@@ -34,6 +34,11 @@ _Little Navmap_ will allow flight plans to be created that while useful as a fli
 
 A warning dialog will also be shown if the departure airport has parking positions but none is assigned in the flight plan.
 
+#### ![Save Flight Plan as GFP](../images/icons/saveasgfp.png "Save Flight Plan as GFP") Save Flight Plan as GFP{#save-flight-plan-as-gfp}
+Exports the flight plan in GFP format used by the Flight1 GTN 650/750.
+
+The default directory to save the flight plans for GTN units is `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL`. Note that you might need to change the user priviledges on this directory. Give yourself full control on this directory, otherwise the flight plans might not show up in the GTN.
+
 #### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
 
 Allows to add one or more Google Earth KML or KMZ file to the map display. All added KML or KMZ files will be reloaded on start up. Reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab.
@@ -47,6 +52,15 @@ Removes all loaded KML files from the map.
 Stops loading of map data from the internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
 
 You should restart the application after going online again.
+
+### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Save Map as Image{#save-map-as-image}
+Saves the current map view as an image file. JPG, PNG and BMP are allowed formats.
+
+### ![Print Map](../images/icons/printmap.png "Print Map") Print Map{#print-map}
+Allows to print the current map view. See [Printing the Map](/PRINT.md#printing-the-map) for more information.
+
+### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan{#print-flight-plan}
+Opens a print dialog that allows you to select flight plan related information to be printed. See [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan) for more information.
 
 ### ![Quit](../images/icons/application-exit.png "Quit") File -&gt; Quit {#file-quit}
 
@@ -69,6 +83,17 @@ A parking spot (gate, ramp or fuel box), runway or helipad can be selected as a 
 #### ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map") Edit Flight Plan on Map {#edit-flight-plan-on-map}
 
 Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing).
+
+
+#### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") New Flight Plan from Route Description {#new-flight-plan-from-description}
+
+Opens a dialog with the route description of the current flight plan that also allows to modify the current flight plan or enter a new one.
+[Flight Plan from Route Descpription](ROUTEDESCR.md#flight-plan-from-route-description) give more information about this topic.
+
+#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copy Flight Plan Route to Clipboard {#flight-plan-route-clipboard}
+
+Copies the route description of the current flight plan to the clipboard.
+See [here](/ROUTEDESCR.md#flight-plan-from-route-description) for more information.
 
 #### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Calculate Direct {#calculate-direct}
 
@@ -109,6 +134,10 @@ Use the value in the altitude field of the flight plan to find a flight plan alo
 #### ![Reverse Flight Plan](../images/icons/routereverse.png "Reverse Flight Plan") Reverse Flight Plan {#reverse-flight-plan}
 
 Swaps departure and destination and reverses order of all intermediate waypoints. A default runway is assigned for the new departure start position.
+
+#### ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png "Adjust Flight Plan Altitude") Adjust Flight Plan Altitude {#adjust-flight-plan-alt}
+
+Changes the flight plan altitude according to a simplified East/West rule and the current route type (IFR or VFR).
 
 ### Map Menu {#map-menu}
 
@@ -282,7 +311,12 @@ The trail is deleted when connecting to a flight simulator or it can be deleted 
 
 The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
 
-#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
+#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Show Aircraft Trail {#show-aircraft-trail}
+
+#### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") Show AI and Multiplayer Aircraft {#show-map-ai-aircraft}
+
+
+#### ![Show AI and Multiplayer Aircraft](../images/icons/mapgrid.png "Show AI and Multiplayer Aircraft") Show AI and Multiplayer Aircraft {#show-map-a}
 
 Shows a latitude/longitude grid as well as the [meridian](http://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) (near the date line) on the map.
 

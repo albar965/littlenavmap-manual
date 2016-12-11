@@ -1,6 +1,6 @@
 ## Printing {#printing}
 
-### Print Map / Save Map
+### Print Map {#printing-the-map}
 
 TODO
 
