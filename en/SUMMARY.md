@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Changes from Release 1.0.5 to 1.2](CHANGELOG.md)
+* [Changelog](CHANGELOG.md)
 * [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator)
 * [Features](FEATURES.md#features)
 * [Planned Functionality](FEATURES.md#planned-functionality)

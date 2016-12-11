@@ -44,7 +44,7 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 * The floating map overlays can now be hidden.
 * Added a mode that scrolls the map continously while displaying and following the user aircraft.
 * Movement and updates of the user aircraft are now more fluid.
-* User aircraft icon can now show an optional line indicating .
+* User aircraft icon can now show an optional line indicating the track.
 * Aircraft types \(jet, piston/turboprop, helicopter\) are now indicated by the user and AI/multiplayer aircraft icons.
 * Added drawing of minimum safe altitude for each flight plan segment in profile window. 
 * Runway length is now shown in precise units using meter or feet depending on settings.
