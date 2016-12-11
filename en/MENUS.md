@@ -292,6 +292,8 @@ Shows or hides the flight plan. The flight plan is shown independent of the zoom
 
 Shows the user aircraft if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
 
+A click on the user aircraft shows more information in the `Simualator Aircraft` dock window.
+
 The aircraft centering will be switched off when using one of the following functions:
 
 *   Double click into a table view or map display to zoom to an airport or a navaid.
@@ -312,13 +314,13 @@ The trail is deleted when connecting to a flight simulator or it can be deleted 
 The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
 
 
-
-
-
-
 #### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") Show AI and Multiplayer Aircraft {#show-map-ai-aircraft}
 
+Shows all AI and multiplayer aircraft on the map. Multiplayer aircraft can be displayed from e.g. FSCloud, Vatsim or Steam sessions.
 
+A click on the AI aircraft shows more information in the `Simualator Aircraft` dock window.
+
+Note that the displayed aircraft are limited by the multiplayer system used. Multiplayer aircraft will disappear depending on distance to user aircraft. For flight simulator AI this is currently about 100 nautical miles or around 200 kilometers.
 
 #### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
 
@@ -364,6 +366,9 @@ Opens the [Options dialog](OPTIONS.md#options-dialog).
 
 ### Window Menu {#window-menu}
 
+#### Map Overlays {#map-overlays}
+Allows to hide the floating map overlays, like the overview on the top left or the compass on the top right corner of the map window.
+
 #### ![Search](../images/icons/searchdock.png "Search") Search {#search}
 
 #### ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flight Plan {#flight-plan}
@@ -382,9 +387,13 @@ Shows or hides these toolbars and the statusbar.
 
 ### Help Menu {#help-menu}
 
-#### ![Contents](../images/icons/help.png "Contents") Contents {#contents}
+#### ![Contents (Online)](../images/icons/help.png "Contents (Online)") Contents (Online) {#help-contents}
 
-Shows this help in the default web browser.
+Shows this online help in the default web browser.
+
+#### ![Contents (Offline, PDF)](../images/icons/help.png "Contents (Offline, PDF)") Contents (Offline, PDF) {#help-contents-offline}
+
+Shows the included PDF help document in the default PDF viewer.
 
 #### ![NavMap Legend, Map Legend](../images/icons/help.png "NavMap Legend, Map Legend") NavMap Legend, Map Legend {#navmap-legend-map-legend}
 
