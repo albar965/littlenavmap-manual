@@ -1,4 +1,4 @@
-# Summary
+# Übersicht
 
 * [Änderungsprotokoll](CHANGELOG.md) \(Version 1.0.5 zu Version 1.2\)
 
