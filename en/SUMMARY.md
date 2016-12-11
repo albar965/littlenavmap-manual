@@ -25,7 +25,7 @@
 * [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog)
 * [Search Dock Window](SEARCH.md#search-dock-window)
 * [Weather](WEATHER.md#weather)
-* [Tutorials](tutorials.md)
+* [Tutorials](TUTORIALS.md)
 * [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes)
 * [Troubleshoot](APPENDIX.md#troubleshoot)
 * [Known Problems](APPENDIX.md#known-problems)
