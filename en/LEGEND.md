@@ -16,11 +16,6 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Active Segment](../images/legend/activesegment.png) | Active flight plan segment |
 | ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
 | ![Top of Descent](../images/legend/routetod.png) | Top of descent point with distance to destination. |
-| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the aircraft nose can show the current aircraft track. |
-| ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
-| ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
-| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The shape varies depends on aircraft type \(jet, piston/turboprop or helicopter\). |
-| ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Range](../images/legend/range_rings.png) | Range rings labeled with distance. |
 | ![Range VOR](../images/legend/range_vor.png) ![Range NDB](../images/legend/range_ndb.png) | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
 | ![Distance GC](../images/legend/distance_gc.png) | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance) distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
@@ -28,6 +23,16 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
 | ![Search Hightlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
 | ![Flight Plan Hightlight](../images/legend/highlight_route.png) | A highlighted airport or navaid selected in the flight plan table. |
+
+### Aircraft {#aircraft}
+
+| Symbol | Description |
+| --- | --- |
+| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the aircraft nose can show the current aircraft track. |
+| ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
+| ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
+| ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
+| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop or helicopter\). |
 
 ### Airports {#airports}
 
@@ -59,7 +64,7 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![DME](../images/legend/dme.png) | DME including ident, type and frequency. |
 | ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
-| ![](/images/legend/userwaypoint.png) | User defined waypoint with name. |
+| ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
 | ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\) and minimum altitude. Text depends on zoom distance. |
@@ -73,7 +78,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 
 | Symbol | Description |
 | --- | --- |
-| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator \(L\) and surface type. |
+| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator \(`L`\) and surface type. |
 | ![Runway End](../images/legend/runway_end.png) | Runway end with ident and magnetic heading. |
 | ![Runway Threshold](../images/legend/runway_threshold.png) | Displaced threshold. Do not use for landing. |
 | ![Runway Overrun](../images/legend/runway_overrun.png) | Overrun area. Do not use for taxi, takeoff or landing. |
@@ -87,16 +92,18 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_gate_no_jetway.png) ![Parking](../images/legend/parking_gate.png) | Gate with number and heading tick mark. Second ring indicates availability of jetway. |
 | ![Parking](../images/legend/parking_ramp_cargo.png) | Cargo ramp |
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
-| ![Helipad](../images/legend/helipad.png) | Helipad |
+| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad.  |
 
 ### Elevation Profile Legend {#elevation-profile-legend}
 
 | Symbol | Description |
 | --- | --- |
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with start and destination airport elevation. |
-| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
-| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels are: Altitude, climb/sink arrow, distance flown and distance to destination. |
+| ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
+| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is altitude plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
+| ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
+| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
 
 
