@@ -87,7 +87,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_gate_no_jetway.png) ![Parking](../images/legend/parking_gate.png) | Gate with number and heading tick mark. Second ring indicates availability of jetway. |
 | ![Parking](../images/legend/parking_ramp_cargo.png) | Cargo ramp |
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
-| ![Helipad](../images/legend/helipad.png) | Helipad |
+| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipad. Red text indicates medical helipad.  |
 
 ### Elevation Profile Legend {#elevation-profile-legend}
 
