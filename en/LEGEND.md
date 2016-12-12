@@ -1,4 +1,4 @@
-# ![Little Navmap](..../images/littlenavmap.svg "Little Navmap") Little Navmap Legend {#little-navmap-legend}
+# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Little Navmap Legend {#little-navmap-legend}
 
 All speeds are per default in knots, distances in nautical miles, altitude in feet. The units can be changed to imperial or metric in the dialog `Options` on the tab `Units`.
 
@@ -10,16 +10,16 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 
 | Symbol | Description |
 | --- | --- |
-| ![Home](../images/legend/home.png) | Center of the home position. |
-| ![Mark](../images/legend/mark.png) | Center point that will be used for distance searches. |
-| ![Flight Plan](../images/legend/route_leg.png) | Flight plan with distance, direction and magnetic course at each leg. |
-| ![Active Segment](../images/legend/activesegment.png) | Active flight plan segment |
-| ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
-| ![Top of Descent](../images/legend/routetod.png) | Top of descent point with distance to destination. |
-| ![Range](../images/legend/range_rings.png) | Range rings labeled with distance. |
-| ![Range VOR](../images/legend/range_vor.png) ![Range NDB](../images/legend/range_ndb.png) | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
-| ![Distance GC](../images/legend/distance_gc.png) | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance) distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
-| ![Distance Rhumb](../images/legend/distance_rhumb.png) | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
+| ![Home](../images/legend/home.png "Home") | Center of the home position. |
+| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches. |
+| ![Flight Plan](../images/legend/route_leg.png "Flight Plan") | Flight plan with distance, direction and magnetic course at each leg. |
+| ![Active Segment](../images/legend/activesegment.png "Active Segment") | Active flight plan segment |
+| ![Flight Plan Departure Position](../images/legend/route_start.png "Flight Plan Departure Position") | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
+| ![Top of Descent](../images/legend/routetod.png "Top of Descent") | Top of descent point with distance to destination. |
+| ![Range](../images/legend/range_rings.png "Range") | Range rings labeled with distance. |
+| ![Range VOR](../images/legend/range_vor.png "Range VOR") ![Range NDB](../images/legend/range_ndb.png "Range NDB") | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
+| ![Distance GC](../images/legend/distance_gc.png "Distance GC") | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance "Great circle") distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
+| ![Distance Rhumb](../images/legend/distance_rhumb.png "Distance Rhumb") | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
 | ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
 | ![Search Hightlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
 | ![Flight Plan Hightlight](../images/legend/highlight_route.png) | A highlighted airport or navaid selected in the flight plan table. |
