@@ -73,7 +73,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 
 | Symbol | Description |
 | --- | --- |
-| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator \(L\) and surface type. |
+| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator \(`L`\) and surface type. |
 | ![Runway End](../images/legend/runway_end.png) | Runway end with ident and magnetic heading. |
 | ![Runway Threshold](../images/legend/runway_threshold.png) | Displaced threshold. Do not use for landing. |
 | ![Runway Overrun](../images/legend/runway_overrun.png) | Overrun area. Do not use for taxi, takeoff or landing. |
@@ -87,7 +87,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_gate_no_jetway.png) ![Parking](../images/legend/parking_gate.png) | Gate with number and heading tick mark. Second ring indicates availability of jetway. |
 | ![Parking](../images/legend/parking_ramp_cargo.png) | Cargo ramp |
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
-| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipad. Red text indicates medical helipad.  |
+| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad.  |
 
 ### Elevation Profile Legend {#elevation-profile-legend}
 
@@ -96,8 +96,8 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with start and destination airport elevation. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
 | ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. |
-| ![Profile Segment Safe Alt](../images/legend/profilesegmin.png) | Minimum safe altitude for a flight plan segment. |
-| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels are: Altitude, climb/sink arrow, distance flown and distance to destination. |
+| ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. |
+| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
 
 
