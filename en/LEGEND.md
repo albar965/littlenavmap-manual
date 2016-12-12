@@ -13,11 +13,11 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Home](../images/legend/home.png) | Center of the home position. |
 | ![Mark](../images/legend/mark.png) | Center point that will be used for distance searches. |
 | ![Flight Plan](../images/legend/route_leg.png) | Flight plan with distance, direction and magnetic course at each leg. |
-| ![](../images/legend/activesegment.png) | Active flight plan segment |
+| ![](//images/legend/activesegment.png) | Active flight plan segment |
 | ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
-| ![](/assets/routetod.png) | Top of descent point with distance to destination. |
+| ![](/images/legend/routetod.png) | Top of descent point with distance to destination. |
 | ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). |
-| ![Small GA](../images/icons/aircraft_small_user_ground.png) ![Jet](../images/icons/aircraft_jet_user_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_user_ground.png) | User aircraft on ground |
+| ![](/images/icons/aircraft_small_ground_user.png) ![](/images/icons/aircraft_jet_ground_user.png) ![](/images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
 | TODO | Wind around the user aircraft. |
 | TODO | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The shape varies depends on aircraft type \(jet, piston/turboprop or helicopter\). |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
@@ -101,5 +101,6 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels are: Altitude, climb/sink arrow, distance flown and distance to destination. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
+
 
 
