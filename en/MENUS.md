@@ -379,6 +379,8 @@ Allows to hide the floating map overlays, like the overview on the top left or t
 
 #### ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulator Aircraft {#simulator-aircraft}
 
+#### ![Legend](../images/icons/legenddock.png "Legend") Legend {#legend}
+
 Opens or closes these dock windows.
 
 #### Main Toolbar, Map Toolbar, Map Options Toolbar, Flight Plan Toolbar, Dock Window Toolbar, Statusbar {#main-toolbar-map-toolbar-map-options-toolbar-flight-plan-toolbar-dock-window-toolbar-statusbar}
@@ -395,9 +397,13 @@ Shows this online help in the default web browser.
 
 Shows the included PDF help document in the default PDF viewer.
 
-#### ![NavMap Legend, Map Legend](../images/icons/help.png "NavMap Legend, Map Legend") NavMap Legend, Map Legend {#navmap-legend-map-legend}
+#### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legend {#navmap-legend-map-legend}
 
-Shows the map legend in the `Information` dock window. You can also access the navmap legend here: Little Navmap Legend
+Shows the navigation related map legend in the `Legend` dock window. You can also access it here: [Little Navmap Legend](LEGEND.md).
+
+#### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Map Legend for current Map Theme {#navmap-legend-map-legend}
+
+Shows the map theme dependent base legend in the `Legend` dock window. Note that the legend is not available for all map themes.
 
 #### ![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap") About Little Navmap {#about-little-navmap}
 
