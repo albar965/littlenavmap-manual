@@ -1,7 +1,8 @@
 # Summary
 
-* [Introduction](README.md)
 * [Changelog](CHANGELOG.md)
+* [Introduction](README.md)
+* [Map Legend](LEGEND.md)
 * [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator)
 * [Features](FEATURES.md#features)
 * [Planned Functionality](FEATURES.md#planned-functionality)
