@@ -13,13 +13,13 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Home](../images/legend/home.png) | Center of the home position. |
 | ![Mark](../images/legend/mark.png) | Center point that will be used for distance searches. |
 | ![Flight Plan](../images/legend/route_leg.png) | Flight plan with distance, direction and magnetic course at each leg. |
-| ![](//images/legend/activesegment.png) | Active flight plan segment |
+| ![Active Segment](../images/legend/activesegment.png) | Active flight plan segment |
 | ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
-| ![](/images/legend/routetod.png) | Top of descent point with distance to destination. |
+| ![Top of Descent](../images/legend/routetod.png) | Top of descent point with distance to destination. |
 | ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). |
-| ![](/images/icons/aircraft_small_ground_user.png) ![](/images/icons/aircraft_jet_ground_user.png) ![](/images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
-| TODO | Wind around the user aircraft. |
-| TODO | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The shape varies depends on aircraft type \(jet, piston/turboprop or helicopter\). |
+| ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
+| ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
+| ![Small GA](/images/icons/aircraft_small.png) ![Jet](/images/icons/aircraft_jet.png) ![Helicopter](/images/icons/aircraft_helicopter.png) ![Small GA](/images/icons/aircraft_small_ground.png) ![Jet](/images/icons/aircraft_jet_ground.png) ![Helicopter](/images/icons/aircraft_helicopter_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The shape varies depends on aircraft type \(jet, piston/turboprop or helicopter\). |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Range](../images/legend/range_rings.png) | Range rings labeled with distance. |
 | ![Range VOR](../images/legend/range_vor.png) ![Range NDB](../images/legend/range_ndb.png) | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
