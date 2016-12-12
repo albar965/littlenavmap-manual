@@ -101,8 +101,8 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with start and destination airport elevation. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
 | ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
-| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. |
-| ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. |
+| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is altitude plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
+| ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
 
