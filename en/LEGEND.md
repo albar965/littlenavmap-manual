@@ -16,14 +16,14 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Active Segment](../images/legend/activesegment.png) | Active flight plan segment |
 | ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
 | ![Top of Descent](../images/legend/routetod.png) | Top of descent point with distance to destination. |
-| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). |
+| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the aircraft nose can show the current aircraft track. |
 | ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
-| ![Small GA](/images/icons/aircraft_small.png) ![Jet](/images/icons/aircraft_jet.png) ![Helicopter](/images/icons/aircraft_helicopter.png) ![Small GA](/images/icons/aircraft_small_ground.png) ![Jet](/images/icons/aircraft_jet_ground.png) ![Helicopter](/images/icons/aircraft_helicopter_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The shape varies depends on aircraft type \(jet, piston/turboprop or helicopter\). |
+| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The shape varies depends on aircraft type \(jet, piston/turboprop or helicopter\). |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Range](../images/legend/range_rings.png) | Range rings labeled with distance. |
 | ![Range VOR](../images/legend/range_vor.png) ![Range NDB](../images/legend/range_ndb.png) | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
-| ![Distance GC](../images/legend/distance_gc.png) | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance) distance and course measurement line indicating length and true heading at start and destination \(usually equal for small distances\). For shorter distances length is also shown in feet. |
+| ![Distance GC](../images/legend/distance_gc.png) | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance) distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
 | ![Distance Rhumb](../images/legend/distance_rhumb.png) | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
 | ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
 | ![Search Hightlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
@@ -46,7 +46,7 @@ The symbol is shown smaller if an airport has no runways. This is the case for s
 | ![Heliport](../images/legend/heliport.png) | Heliport having only helipads and no runways. |
 | ![Closed Airport with Tower](../images/legend/airport_tower_closed.png) ![Closed Airport](../images/legend/airport_closed.png) | Abandoned airport. All runways are closed. |
 | ![Airport with Fuel](../images/legend/airport_tower_fuel.png) ![Airport with soft Runways and Fuel](../images/legend/airport_soft_fuel.png) | Airports that have fuel available. |
-| ![Airport Text](../images/legend/airport_text.png) TODO | The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
+| ![Airport Text](../images/legend/airportlabel.png)  | Airport label showing name, ident, ATIS frequency, elevation, lighted runways \(`L`\) and length of longest runway. The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
 
 ### Navaids {#navaids}
 
@@ -59,16 +59,13 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![DME](../images/legend/dme.png) | DME including ident, type and frequency. |
 | ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
-| TODO | User defined waypoint with name. |
+| ![](/images/legend/userwaypoint.png) | User defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
 | ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\) and minimum altitude. Text depends on zoom distance. |
 | ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\) and minimum altitude. Text depends on zoom distance. |
-
-| Symbol | Description |
-| --- | --- |
 | ![ILS](../images/legend/ils_gs_small.png) ![ILS](../images/legend/ils_gs.png) | ILS with glideslope. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
-| ![ILS](../images/legend/ils_small.png) ![ILS](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
+| ![Localizer](../images/legend/ils_small.png) ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
 
 ### Airport Diagram {#airport-diagram}
 
