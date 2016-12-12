@@ -94,8 +94,9 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | Symbol | Description |
 | --- | --- |
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with start and destination airport elevation. |
-| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
+| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. |
+| ![Profile Segment Safe Alt](../images/legend/profilesegmin.png) | Minimum safe altitude for a flight plan segment. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels are: Altitude, climb/sink arrow, distance flown and distance to destination. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
 
