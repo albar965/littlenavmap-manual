@@ -59,7 +59,7 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![DME](../images/legend/dme.png) | DME including ident, type and frequency. |
 | ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
-| ![](/images/legend/userwaypoint.png) | User defined waypoint with name. |
+| ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
 | ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\) and minimum altitude. Text depends on zoom distance. |
