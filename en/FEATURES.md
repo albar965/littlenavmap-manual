@@ -7,7 +7,7 @@
 * Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 and Prepar3D v3.
 * Data is collected from flight simulator stock and add-on files. No need to buy or download external data like AIRAC cycles.
 * Scenery library databases for flight simulators are stored separately and can be changed on the fly.
-* Weather/METAR display from Active Sky Next, AS16, NOAA or VATSIM in tooltips and information windows.
+* Weather/METAR display from Flight Simulator, Active Sky Next, AS16, NOAA or VATSIM in tooltips and information windows.
 * The program saves almost all settings including the flight plan, windows positions, searches and more and restores everything on start up.
 * Most question or information dialogs can be disabled.
 * _Little Navmap_ can be run on computers that do not contain any simulator installations at all. Simply copy the scenery library database from your flight simulator computer.
@@ -19,12 +19,12 @@
 ### Flight Plan and Routing {#flight-plan-and-routing}
 
 * Can read and write FSX PLN format \(XML\).
-* Can export flight plans in .gfp format for importing into the Flight1 GTN 750/650
-* Flight plans can be created from a route description copied from another flight planner
-* Flight plans can be printed with options to include or exclude extensive detailed information
+* Can export flight plans in .gfp format for importing into the Flight1 GTN 750/650.
+* Flight plans can be created from a route description copied from another flight planner.
+* Flight plans can be printed with options to include or exclude extensive detailed information.
 * Flight plans can be created or edited using drag and drop on the map display.
 * Easy flight plan editing in the table view including moving and deleting waypoints or whole flight plan fragments.
-* Can merge flight plans or flight plan snippets.
+* Can save, load and merge flight plans or flight plan snippets.
 * Automatic fast flight plan calculation for high/low altitude airways, VOR/NDB and preset cruise altitude. Flight plan snippets can be calculated between any kind of departure and destination point.
 * The automatic flight plan calculation is based entirely on flight simulator data. No third party data needed and no online services used.
 * Elevation profile display for flight plan using online data. Shows minimum altitude for flight plan with a configurable altitude buffer.
@@ -52,10 +52,8 @@
 
 * Shows simulator user aircraft on the map including flight plan progress, ambient parameters like wind, temperature, pressure and more \(similar to a flight management computer\). Requires [Little Navconnect](https://albar965.github.io/littlenavconnect.html) for remote computers which is also free.
 * Shows track of simulator user aircraft.
-* Shows AI and multi-player aircraft
+* Shows AI and multi-player aircraft.
 * Using _Little Navconnect_ as an agent between the simulator and _Little Navmap_ running on a remote computer saves the pain of remote SimConnect setup.
 
-## Limitations {#limitations}
 
-* _Little Navmap_ does not run on flight simulator screen in full screen mode.
 

@@ -27,7 +27,6 @@
 * [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation)
 * [Tutorials](TUTORIALS.md)
 * [Changelog](CHANGELOG.md)
-* [Limitations](FEATURES.md#limitations)
 * [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes)
 * [Troubleshoot](APPENDIX.md#troubleshoot)
 * [Known Problems](APPENDIX.md#known-problems)
@@ -35,4 +34,6 @@
 * [Files](APPENDIX.md#files)
 * [Acknowlegments](APPENDIX.md#acknowlegments)
 * [License](APPENDIX.md#license)
+
+
 
