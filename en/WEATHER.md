@@ -3,7 +3,7 @@
 
 _Little Navmap_ can display METARs from four sources:
 
-TODO FS Weather
+*   TODO FS Weather
 *   [NOAA](http://www.weather.gov) online weather service
 *   [VATSIM](http://www.vatsim.net) network online weather service
 *   [HiFi Simulation Technologies](http://www.hifisimtech.com) _Active Sky Next_

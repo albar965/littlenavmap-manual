@@ -14,6 +14,8 @@ Additional information is shown in a label on top of the window if the mouse is 
 
 Following information is shown in the top label when hovering the mouse over the diagram:
 
+TODO
+
 *   From and to waypoint
 *   Distance from departure and to destination
 *   Ground elevation

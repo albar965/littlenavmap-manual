@@ -1,5 +1,3 @@
-# Changelog
-
 ## Changes from Release 1.0.5 to 1.2
 
 **The program is not compatible with Windows XP anymore.**
@@ -46,7 +44,7 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 * Movement and updates of the user aircraft are now more fluid.
 * User aircraft icon can now show an optional line indicating the track.
 * Aircraft types \(jet, piston/turboprop, helicopter\) are now indicated by the user and AI/multiplayer aircraft icons.
-* Added drawing of minimum safe altitude for each flight plan segment in profile window. 
+* Added drawing of minimum safe altitude for each flight plan segment in profile window.
 * Runway length is now shown in precise units using meter or feet depending on settings.
 * **Text labels on map can now be customized for airport, user and AI/multiplayer aicraft.**
 * **Symbol and text sizes for airports, navaids, user and AI/multiplayer aircraft can be changed separately.**

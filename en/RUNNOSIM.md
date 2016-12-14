@@ -1,6 +1,8 @@
 
 ## Running without Flight Simulator Installation {#running-without-flight-simulator-installation}
 
+TODO
+
 You can follow these steps if you want to install _Little Navmap_ on a computer not containing any flight simulator installation. No functionality is affected except scenery database loading which is not needed in this case.
 
 The same procedure applies if you want to install _Little Navmap_ on a Linux or macOS system.

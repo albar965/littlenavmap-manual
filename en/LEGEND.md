@@ -1,4 +1,4 @@
-# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Little Navmap Legend {#little-navmap-legend}
+## Legend {#little-navmap-legend}
 
 All speeds are per default in knots, distances in nautical miles, altitude in feet. The units can be changed to imperial or metric in the dialog `Options` on the tab `Units`.
 

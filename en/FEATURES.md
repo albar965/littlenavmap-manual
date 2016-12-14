@@ -1,11 +1,3 @@
-# Little Navmap Features and Limitations {#little-navmap-features-and-limitations}
-
-![Little Navmap](../images/littlenavmap.svg "Little Navmap")
-
-Version 1.1.0.devel
-
-Little Navmap Manual
-
 ## Features {#features}
 
 ### General {#general}
@@ -60,28 +52,10 @@ Little Navmap Manual
 
 * Shows simulator user aircraft on the map including flight plan progress, ambient parameters like wind, temperature, pressure and more \(similar to a flight management computer\). Requires [Little Navconnect](https://albar965.github.io/littlenavconnect.html) for remote computers which is also free.
 * Shows track of simulator user aircraft.
-* Shows AI and multi-player aircraft 
+* Shows AI and multi-player aircraft
 * Using _Little Navconnect_ as an agent between the simulator and _Little Navmap_ running on a remote computer saves the pain of remote SimConnect setup.
-
-## Planned Functionality {#planned-functionality}
-
-* Display and flight plan integration for approach procedures and transitions.
-* Display of airspace boundaries.
-* Export of flight plan, search results and map to HTML document
-* Support for AIRAC map data.
-* Zooming and scrolling in flight plan elevation profile view.
-
-* Aircraft performance profiles \(climb speed, cruise speed, fuel flow, etc.\).
-* Support for other weather programs than Active Sky Next.
-
-
-* Display weather stations on the map.
-* Allow downloading and using North Atlantic and Pacific tracks for flight plan calculation.
-* Allow changing of units to meter, kilometer and kilogram.
 
 ## Limitations {#limitations}
 
 * _Little Navmap_ does not run on flight simulator screen in full screen mode.
-
-Last update 2016-10-14
 
