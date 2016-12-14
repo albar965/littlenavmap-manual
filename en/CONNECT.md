@@ -8,7 +8,9 @@ _Little Navmap_ can connect to the flight simulator directly if all programs are
 ### Local Connection
 
 3.  Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -> `Tools` -> `Flight Simulator Connection`.
-    ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
+
+ ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
+
 3. Select `Connect directly to local Flight Simulator`.
 6.  Click connect. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
 
