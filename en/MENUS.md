@@ -316,7 +316,7 @@ The size of the trail is limited for performance reasons. Points will be removed
 
 #### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") Show AI and Multiplayer Aircraft {#show-map-ai-aircraft}
 
-Shows all AI and multiplayer aircraft on the map. Multiplayer aircraft can be displayed from e.g. FSCloud, Vatsim or Steam sessions.
+Shows all AI and multiplayer aircraft on the map. Multiplayer aircraft can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
 
 A click on the AI aircraft shows more information in the `Simualator Aircraft` dock window.
 
@@ -399,7 +399,7 @@ Shows the included PDF help document in the default PDF viewer.
 
 #### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legend {#navmap-legend-map-legend}
 
-Shows the navigation related map legend in the `Legend` dock window. You can also access it here: [Little Navmap Legend](LEGEND.md).
+Shows the navigation related map legend in the `Legend` dock window. You can also access it here: [Navmap Legend](LEGEND.md).
 
 #### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Map Legend for current Map Theme {#navmap-legend-map-legend}
 
@@ -425,10 +425,10 @@ The statusbar shows various indications (from left to right):
 *   Indicator that shows airport types and navaids currently visible on the map. The tooltip gives more details.
 *   Map detail level.
 *   Online map download progress indicator. This shows the state of the current map download:
-    *   `Done.`:All map data loaded successfully.
-    *   `Waiting for Data ...`:Map data is missing in the cache and was requested. Now waiting for reply.
-    *   `Waiting for Update ...`:Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
-    *   `Incomplete.`:Download failed.Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region.
+    *   `Done.`: All map data loaded successfully.
+    *   `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
+    *   `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
+    *   `Incomplete.`: Download failed.Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region.
 *   Zoom distance (viewpoint to earth surface) in nautical miles.
 *   Cursor position on map in degrees/minutes/seconds latitude and longitude.
 

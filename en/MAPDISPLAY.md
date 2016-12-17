@@ -1,5 +1,7 @@
 ## Map Display {#map-display}
 
+See the ![Nav Map Legend](LEGEND.md) for details about the various symbols shown by the map.
+
 ### Moving {#moving}
 
 Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map (overlay buttons not avaialble for MacOS).
@@ -8,17 +10,39 @@ Alternatively use the cursor keys to scroll the map and `+` and `-` to zoom in a
 
 ### Mouse Clicks {#mouse-clicks}
 
-A single click on an airport, navaid or an airway line shows details in the `Information` dock window.
+A single click on an airport, navaid, airway line shows details in the `Information` dock window.
 
-A double click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window.
+A single click on an user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
+
+A double click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window. The same applies for all aircraft.
 
 The double and single click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map`.
 
 The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map Display` tab.
 
+### Aircraft {#aircraft}
+
+The user aircraft and AI or multiplayer aircraft will be shown on the map if the program is connected
+to a flight simulator. Aircraft color indicates user or AI/multiplayer aircraft and the symbol shape indicates if the
+aircraft is an piston/turboprop, jet or helicopter. The symbol outline changes to grey if an aircraft is on ground.
+
+AI and multiplayer aircraft on ground are shown only on small zoom distances to avoid cluttered airports. This means that
+an AI aircraft can dissapear from the map when landing on an airport.
+
+On the lowest zoom distance all aircraft are drawn to scale as are the parking spots. That means you can easily
+check if your aircraft fits on an apron, parking spot or taxiway.
+
+A yellow wind arrow and labels for the situation around the user aircraft can be displayed can be displayed optionally on the
+top center of the map.
+
+See the ![Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
+
+
 ### Tooltips {#tooltips}
 
-Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways, parking, fuel box and towers. The tooltip is truncated and shows a message `More...` if it gets too long. In that case reduce details or zoom in.
+Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways,
+parking, fuel box, towers and all aircraft. The tooltip is truncated and shows a message `More...` if
+it gets too long. In that case reduce details or zoom in.
 
 The sensitivity for the tooltip display can be adjusted in the `Options` dialog on the `Map Display` tab.
 
@@ -36,9 +60,9 @@ These highlight rings provide all functionality of visible map objects, even if 
 
 The display will change from a single icon to an airport diagram if you zoom in deep enough to an airport. The diagram shows all taxiways, parking positions, gates, runways and much more.
 
-The airport diagram provides more information through tooltips for parking and tower positions. A right click on a parking position sets this as the start position for a flight plan.
+The airport diagram provides more information through tooltips for parking and tower positions. A right click on a parking position opens the context menu and allows to select the start position for flight plan departure.
 
-See the Nav Map Legend for details about the airport diagram.
+See the ![Nav Map Legend](LEGEND.md#airport-diagram) for details about the airport diagram.
 
 ![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")
 

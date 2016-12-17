@@ -1,7 +1,6 @@
 # Summary
 
 * [Features](FEATURES.md#features)
-* [Limitations](FEATURES.md#limitations)
 * [Introduction](README.md)
 * [Installation](INTRO.md#installation)
 * [Quick Overview](INTRO.md#quick-overview)

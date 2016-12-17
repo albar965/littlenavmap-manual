@@ -15,6 +15,12 @@ All airports that are not located in the default `Scenery` directory are conside
 
 The menu `Scenery Library` -> `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
 
+Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` will differ to the numbers
+shown in the progress dialog.
+
+The progress dialog shows all objects that were found during loading. The the dialog `Load Scenery Library`
+shows the number of objects in the database after deduplication and deleting stock airports that were replaced by add-ons.
+
 The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
 
 *   Flight Simulator X: `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
@@ -32,5 +38,5 @@ _**Picture above:** Load Scenery Dialog. Nothing is loaded yet for FSX._
 
 _**Picture above:** Progress dialog shown while loading the scenery library into Little Navmap's internal database._
 
-Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` might differ to the numbers shown in the progress dialog. This is the case since all stock and add-on airports are counted in the progress dialog. Add-on airports usually replace stock airports which results in a different number in the `Load Scenery Library` dialog. Also duplicate navaids are removed after loading.
+
 

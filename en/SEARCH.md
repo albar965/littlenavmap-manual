@@ -12,7 +12,7 @@ Filters are defined by various controls which are mostly self explaining. Only t
 
 All filters can be used together where all conditions have to be met (`and` operator). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
 
-A tooltip on the blue button on the top right shows a quick help about searching.
+A tooltip on the blue help button on the top right shows information about searching.
 
 #### Text filters {#text-filters}
 
@@ -57,11 +57,11 @@ All selected elements in the table view will be highlighted on the map using a b
 ### Table View {#table-view}
 The header of all table views allows the following manipulation:
 
-*   Click on the top left corner of the column header:Select all result rows.
-*   Click on a column header:Sort ascending or descending (only for search result tables - not for flight plan table).
-*   Click and drag on the column header:Change column order.
-*   Double click on column border:Automatically fit column size to content.
-*   Click and drag on column border:Change column width.
+*   Click on the top left corner of the column header: Select all result rows.
+*   Click on a column header: Sort ascending or descending (only for search result tables - not for flight plan table).
+*   Click and drag on the column header: Change column order.
+*   Double click on column border: Automatically fit column size to content.
+*   Click and drag on column border: Change column width.
 
 The above applies to all table views in the program.
 

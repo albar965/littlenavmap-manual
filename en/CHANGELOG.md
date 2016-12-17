@@ -31,8 +31,8 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 #### Weather
 
 * **Weather data can now be directly fetched from the simulator and is updated every 15 seconds. This also applies to remote connections.**
-* **Weather is now shown in decoded format in the information window for all weather sources like simulator, ASN, AS16, NOAA and Vatsim.**
-* The Active Sky flight plan weather file is now used to show METARs and decoded weather for destination and departure. This gives a precise weather indication for ASN or AS16 users.
+* **Weather is now shown in decoded format in the information window for all weather sources like simulator, _ASN_, _AS16_, NOAA and VATSIM.**
+* The _Active Sky_ flight plan weather file is now used to show METARs and decoded weather for destination and departure. This gives a precise weather indication for _ASN_ or _AS16_ users.
 * Wind pointer on top center of the map for wind around user aircraft added.
 
 #### Map Display

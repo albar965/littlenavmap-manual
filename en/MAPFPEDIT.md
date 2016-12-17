@@ -6,7 +6,7 @@ You can use the keyboard, the mouse wheel or the map overlays to scroll and zoom
 
 Note that the flight plan drag and drop editing is based on the assumption that a direct connection between departure and destination already exists.
 
-Always select departure and destination first if you would like to build you flight plan manually. This will connect both with a great circle line. Based on this line you can start to add navaids to your flight plan.
+Always select departure and destination first if you would like to build you flight plan manually. This will connect both points with a great circle line. Based on this line you can start to add navaids to your flight plan.
 
 The following functionality is available:
 

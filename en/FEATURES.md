@@ -7,7 +7,7 @@
 * Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 and Prepar3D v3.
 * Data is collected from flight simulator stock and add-on files. No need to buy or download external data like AIRAC cycles.
 * Scenery library databases for flight simulators are stored separately and can be changed on the fly.
-* Display of METARs or decoded weather data from Flight Simulator, Active Sky Next, AS16, NOAA or VATSIM in tooltips and information windows.
+* Display of METARs or decoded weather data from Flight Simulator, _Active Sky Next_, _AS16_, NOAA or VATSIM in tooltips and information windows.
 * The program saves almost all settings including the flight plan, windows positions, searches and more and restores everything on start up.
 * Most question or information dialogs can be disabled.
 * _Little Navmap_ can be run on computers that do not contain any simulator installations at all. Simply copy the scenery library database from your flight simulator computer.
