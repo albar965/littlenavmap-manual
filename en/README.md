@@ -6,3 +6,8 @@ and Prepar3D. The main focus is general aviation IFR and VFR planning.
 
 **Do not use this program for real world navigation.**
 
+----
+
+More about my projects at **[GitHub](https://albar965.github.io)**.
+
+Copyright 2015-2016 Alexander Barthel
