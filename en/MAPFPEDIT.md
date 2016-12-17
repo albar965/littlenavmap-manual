@@ -1,6 +1,6 @@
 ## Map Flight Plan Editing {#map-flight-plan-editing}
 
-The flight plan drag and drop editing mode is switched on per default but can be disabled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
+The flight plan drag and drop editing mode is switched on per default but can be disabled using the toolbar or `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map`.
 
 You can use the keyboard, the mouse wheel or the map overlays to scroll and zoom while editing the route.
 
@@ -27,9 +27,9 @@ The following functionality is available:
 
 ![Flight Plan Edit](../images/fpedit.jpg "Flight Plan Edit")
 
-**Picture above:** _Inserting a navaid into a flight plan leg by clicking and moving the leg line. A tool tip for the navaid is shown._
+_**Picture above:** Inserting a navaid into a flight plan leg by clicking and moving the leg line. A tool tip for the navaid is shown._
 
 ![Flight Plan Edit](../images/fpedit2.jpg "Flight Plan Edit")
 
-**Picture above:** _Replacing VOR TRA in the flight plan with another one by simply clicking and moving the waypoint TRA onto KLO. A selection menu pops up for disambiguation._
+_**Picture above:** Replacing VOR TRA in the flight plan with another one by simply clicking and moving the waypoint TRA onto KLO. A selection menu pops up for disambiguation._
 

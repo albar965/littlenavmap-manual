@@ -26,5 +26,5 @@ For more information see the `Navmap Legend` tab in the `Information` dock windo
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
-**Picture above:** _Flight plan elevation profile with line indicating the mouse hovering position._
+_**Picture above:** Flight plan elevation profile with line indicating the mouse hovering position._
 

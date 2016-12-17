@@ -30,7 +30,7 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 
 #### Weather
 
-* **Weather data can now be directly fetched from the simulator and is updated every 15 seconds. This also applies to remove connections.**
+* **Weather data can now be directly fetched from the simulator and is updated every 15 seconds. This also applies to remote connections.**
 * **Weather is now shown in decoded format in the information window for all weather sources like simulator, ASN, AS16, NOAA and Vatsim.**
 * The Active Sky flight plan weather file is now used to show METARs and decoded weather for destination and departure. This gives a precise weather indication for ASN or AS16 users.
 * Wind pointer on top center of the map for wind around user aircraft added.
@@ -74,9 +74,10 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 
 #### Scenery Library Loader
 
+* Duplicate navaids and airways are now removed.
 * Added workaround that omits long invalid airway segments while loading the scenery database.
 * Fixed problem when reading too small BGL files into the scenery database.
-* Fixed map zoom problem with some add-on airports that contain a far away dummy runway. Runways that are more than 50 kilometers away from the airport center are now omitted.
+* Fixed map zoom problem with some add-on airports that contain a far away dummy runway.
 * Solved old problem that caused airways split into fragments during loading.
 * Fixed problem that recognized too many add-on runway surfaces as `invalid.`
 

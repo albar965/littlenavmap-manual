@@ -48,7 +48,7 @@ Check the drop down menu for the change indicator `*` and the search fields for 
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-Picture above (Click to see large version): A complex search: Find all airports within a distance between 200 and 400 nautical miles from Frankfurt (EDDF). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table.
+Picture above A complex search: Find all airports within a distance between 200 and 400 nautical miles from Frankfurt (EDDF). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table.
 
 ### Search Result Table View {#search-result-table-view}
 
@@ -69,11 +69,11 @@ The program saves the sort order, column widths and positions until `Reset View`
 
 ![Airport Search Result Table](../images/airportsearchtable.jpg "Airport Search Result Table")
 
- **Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right.
+ _**Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right._
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-**Picture above:** _Navaid search. All search options are visible. Search is limited to ICAO region `LI` (Italy) and VOR and NDB stations._
+_**Picture above:** Navaid search. All search options are visible. Search is limited to ICAO region `LI` (Italy) and VOR and NDB stations._
 
 ### Mouse Clicks {#mouse-clicks-0}
 

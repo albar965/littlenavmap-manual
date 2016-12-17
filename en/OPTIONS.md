@@ -8,5 +8,5 @@ The button `Restore Defaults` only restores the options of this dialog back to d
 
 ![Options](../images/options.jpg "Options")
 
-**Picture above:** _`Startup` tab of the options dialog._
+_**Picture above:** `Startup` tab of the options dialog._
 

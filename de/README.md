@@ -72,7 +72,7 @@ Alle Dock-Fenster kann man schließen, wenn sie nicht gebraucht werden. Man kann
 
 Werkzeugleisten können auch verschoben oder vom Hauptfenster abgelöst werden, wenn man auf das Symbol links auf der Leiste klickt.
 
-Über das Menü `Main Menu` -&gt; `Window` können Fenster oder Werkzeugleisten wieder hervorgeholt werden.
+Über das Menü `Main Menu` -> `Window` können Fenster oder Werkzeugleisten wieder hervorgeholt werden.
 
 Der Titel des Hauptfensters zeigt die aktuell gewählte Simulator-Datenbank (`FSX`, `FSXSE`, `P3DV2` oder `P3DV3`), den Dateinamen des Flugplanes und ein angehängtes `*`, falls der Flugplan geändert wurde.
 
@@ -187,7 +187,7 @@ Stoppt das Laden von Kartendaten aus dem Internet. Dies betrifft alle Onlinekart
 
 Nachdem die Anwendung wieder auf Online Betrieb umgeschaltet wurde, sollte ein Neustart durchführt werden.
 
-### File -&gt; Quit {#file-quit}
+### File -> Quit {#file-quit}
 
 ![Quit](../images/icons/application-exit.png "Quit")
 
@@ -474,7 +474,7 @@ Dies erlaubt es, einen schnellen Blick auf einen Flugplatz oder Navigationspunkt
 
 Zeigt die Spur des Simulatorflugzeuges. Die Spur wird unabhängig von der Zoomstufe immer angezeigt und beim Neustart des Programmes wieder geladen.
 
-Die Spur wird beim Verbindungsaufbau zu einem Flugsimulator gelöscht. Manuelles Löschen ist möglich, indem `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail` ausgewählt wird.
+Die Spur wird beim Verbindungsaufbau zu einem Flugsimulator gelöscht. Manuelles Löschen ist möglich, indem `Main Menu` -> `Map` -> `Delete Aircraft Trail` ausgewählt wird.
 
 Die Größe der Spur ist aus Performancegründen limitiert. Punkte werden vom Start der Spur entfernt, wenn sie zu lang wird.
 
@@ -625,7 +625,7 @@ Ein einfacher Klick auf einen Flugplatz, Navigationspunkt oder eine Luftstraße 
 
 Ein Doppelklick zoomt zu dem angeklickten Objekt hinein und zeigt gleichzeitig Details im `Information` Dock-Fenster.
 
-Die Klick Funktionalität funktioniert nicht für Wegpunkte oder Flugplätze, die Bestandteil von Flugplänen sind, wenn der Modus Flugplanbearbeitung auf der Karte aktiviert ist. Der Bearbeitungsmodus kann über die Werkzeugleiste oder in `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map` abgestellt werden.
+Die Klick Funktionalität funktioniert nicht für Wegpunkte oder Flugplätze, die Bestandteil von Flugplänen sind, wenn der Modus Flugplanbearbeitung auf der Karte aktiviert ist. Der Bearbeitungsmodus kann über die Werkzeugleiste oder in `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map` abgestellt werden.
 
 Die Empfindlichkeit für Mausklicks kann im `Options` Dialog auf dem `Map Display` Tab eingestellt werden.
 
@@ -779,7 +779,7 @@ Legt den Home-Bereich fest. Das Zentrum des Home-Bereiches wird mit einem ![Home
 
 ## Flugplanbearbeitung auf der Karte {#map-flight-plan-editing}
 
-Der Flugplanbearbeitungsmodus ist standardmäßig aktiviert und kann auf der Werkzeugleiste oder in `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map` ausgeschaltet werden.
+Der Flugplanbearbeitungsmodus ist standardmäßig aktiviert und kann auf der Werkzeugleiste oder in `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map` ausgeschaltet werden.
 
 Während des Bearbeitens kann die Tastatur, das Mausrad oder die Karten-Overlay-Schaltfächen benutzt werden, um die Karte zu bewegen.
 
@@ -1203,7 +1203,7 @@ Das Programm stellt die vorherige Szeneriedatenbank wieder her, falls der Ladepr
 
 Alle Flugplätze, die nicht im Verzeichnis `Scenery` im Basisverzeichnis gefunden wurden, werden als Add-On markiert und auf der Karte entsprechend hervorgehoben. Verzeichnisse können von diesem Verhalten ausgeschlossen werden, indem man sie im `Options` Dialog auf dem `Scenery Library Database` Tab in der unteren Liste einträgt. Das kann hilfreich sein, wenn Add-Ons z.B. lediglich die Flugplatzhöhe korrigieren und die entsprechenden Plätze nicht auf der Karte in kursiv und unterstrichen hervorgehoben werden sollen.
 
-Das Menü `Scenery Library` -&gt; `Flight Simulators` wird mit dem ausgewählten Simulator im Dialog synchronisiert. Wenn eine Szeneriebibliothek erfolgreich geladen wurde, werden die Karte, Suche und alle anderen Funktionen auf die neue Datenbank umgestellt.
+Das Menü `Scenery Library` -> `Flight Simulators` wird mit dem ausgewählten Simulator im Dialog synchronisiert. Wenn eine Szeneriebibliothek erfolgreich geladen wurde, werden die Karte, Suche und alle anderen Funktionen auf die neue Datenbank umgestellt.
 
 Das Programm versucht, die Flugsimulator Basispfade und die Pfade zu den jeweiligen `Scenery.cfg`-Dateien automatisch zu ermitteln. Die typischen Pfade für die jeweiligen Simulatoren zur `Scenery.cfg`-Datei unter Windows 7/8/10 sind:
 
@@ -1236,9 +1236,9 @@ Zwei Rechner werden in dem Szenario benutzt: Der Flugrechner, auf dem der Simula
 
 1.  Zuerst muss _Little Navmap_ für die Vorbereitung des Netzwerkbetriebes auf beiden Rechnern, nämlich dem Flugrechner und dem Netzwerkrechner, installiert werden.
 2.  Dann muss das Programm auf dem Flugrechner gestartet und die Szeneriedatenbbank erstellt werden. Siehe [Szeneriedialog](#load-scenery-library-dialog) für mehr Informationen.
-3.  Nachdem die Datenbank generiert wurde, `Main Menu` -&gt; `Scenery Library` -&gt; `Show Database Files` auf dem Flugrechner anklicken. Dies öffnet das Verzeichnis mit den Szeneriedatenbanken in einem Dateimanager (z.B. Windows Explorer oder Apple Finder). Dort können eine oder mehrere Datenbanken, wie `little_navmap_fsx.sqlite` oder `little_navmap_p3dv3.sqlite`, gespeichert sein.
+3.  Nachdem die Datenbank generiert wurde, `Main Menu` -> `Scenery Library` -> `Show Database Files` auf dem Flugrechner anklicken. Dies öffnet das Verzeichnis mit den Szeneriedatenbanken in einem Dateimanager (z.B. Windows Explorer oder Apple Finder). Dort können eine oder mehrere Datenbanken, wie `little_navmap_fsx.sqlite` oder `little_navmap_p3dv3.sqlite`, gespeichert sein.
 4.  Nun _Little Navmap_ auf dem Flugrechner beenden.
-5.  Anschließend in _Little Navmap_ auf dem Netzwerkrechner `Scenery Library` -&gt; `Show Database Files` auswählen.
+5.  Anschließend in _Little Navmap_ auf dem Netzwerkrechner `Scenery Library` -> `Show Database Files` auswählen.
 6.  _Little Navmap_ auf dem Netzwerkrechner beenden.
 7.  Die Datenbankdateien nun über Windows Shares oder USB Sticks zum Netzwerkrechner kopieren. Dazu können die Fenster der Dateimanager benutzt werden, die zuvor geöffnet wurden.
 8.  Wenn jetzt _Little Navmap_ auf dem Netzwerkrechner gestartet wird, sollta das Menü `Scenery Library` einen Eintrag für jede kopierte Datenbank enthalten oder keinen Eintrag, wenn nur eine Datenbank kopiert wurde. Auf jeden Fall sollten Flugplatzsymbole auf der Karte sichtbar sein.
@@ -1267,7 +1267,7 @@ _Little Navmap_ kann sich nicht direkt mit dem Flugsimulator verbinden. _Little 
     </pre>
 
 2.  _Little Navmap_ auf dem Netzwerkrechner starten.
-3.  Den Verbindungsdialog in _Little Navmap_ im `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection` öffnen.
+3.  Den Verbindungsdialog in _Little Navmap_ im `Main Menu` -> `Tools` -> `Flight Simulator Connection` öffnen.
 
     ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
@@ -1283,7 +1283,7 @@ _Little Navmap_ erlaubt das Hinzufügen von beliebigen Offline- und Online-Karte
 
 Der komplette Pfad zur DGML-Datei (siehe weiter unten für Verweise zu DGML), welche die Karte beschreibt, muss z.B. `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` sein, falls die [OpenCycleMap](http://www.opencyclemap.org) hinzugefügt werden soll. Die DGML-Daten können entweder zu einem Online-Kartendienst oder eigenen Kartendaten verweisen. Ein Kartenthema enthält üblicherweise mehr Dateien als nur die DGML-Datei.
 
-Das Menü `Main Menu` -&gt; `Map` -&gt; `Theme` und die Eingabeliste in der Werkzeugleiste erhalten einen neuen Eintrag für jedes neue Kartenthema.
+Das Menü `Main Menu` -> `Map` -> `Theme` und die Eingabeliste in der Werkzeugleiste erhalten einen neuen Eintrag für jedes neue Kartenthema.
 
 Die Optionen `Show Country and City Names` und `Show Hillshading` sind für alle neuen Kartenthemen eingeschaltet, könnten jedoch abhängig von den Eigenschaften des Kartenthemas nicht funktionieren.
 
@@ -1414,7 +1414,7 @@ Dieses Programm ist freie Software: Sie können es unter den Bedingungen der GNU
 
 Dieses Programm wird in der Hoffnung, dass es nützlich sein wird, aber OHNE JEDE GEWÄHRLEISTUNG, bereitgestellt; sogar ohne die implizite Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK. Siehe die GNU General Public License für weitere Details.
 
-Sie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben. Wenn nicht, siehe &lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)&gt;.
+Sie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben. Wenn nicht, siehe &lt;[http://www.gnu.org/licenses/](http://www.gnu.org/licenses/)>.
 
 <p>
 <img alt="GPL V3" title="GPL V3" style="width: 166px; height: 82px;" src="../images/gpl-v3-logo.svg" />

@@ -12,7 +12,7 @@ A single click on an airport, navaid or an airway line shows details in the `Inf
 
 A double click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window.
 
-The double and single click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
+The double and single click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map`.
 
 The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map Display` tab.
 
@@ -24,7 +24,7 @@ The sensitivity for the tooltip display can be adjusted in the `Options` dialog 
 
 ![Tooltip](../images/tooltip.jpg "Tooltip")
 
-**Picture above:** _Tooltip with information for a French airport._
+_**Picture above:** Tooltip with information for a French airport._
 
 ### Highlights {#highlights}
 
@@ -42,11 +42,11 @@ See the Nav Map Legend for details about the airport diagram.
 
 ![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")
 
-**Picture above:** _High level view of the airport diagram of EDDH._
+_**Picture above:** High level view of the airport diagram of EDDH._
 
 ![Airport Diagram](../images/airportdiagram2.jpg "Airport Diagram")
 
-**Picture above:** _Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible._
+_**Picture above:** Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible._
 
 ### Map Context Menu {#map-context-menu}
 
@@ -90,7 +90,7 @@ Shows multiple red range rings around the clicked position. The number and dista
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
 
-Shows a ring around the clicked radio navaid (VOR or NDB) indicating the navaid&#039;s range. A label shows ident and frequency and the ring color indicates the navaid type.
+Shows a ring around the clicked radio navaid (VOR or NDB) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
 
 #### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Remove Range Ring {#remove-range-ring}
 
@@ -121,6 +121,10 @@ A user defined position is added to the flight plan if no airport or navaid is n
 #### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Delete from Flight Plan {#delete-from-flight-plan}
 
 Deletes the clicked airport, navaid or user position from the flight plan.
+
+#### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Edit Name of User Waypoint {#edit-name-of-user-waypoint}
+
+Allows to change the name of a user defined waypoint. The length of the name is limited to 10 characters.
 
 #### ![Show in Search](../images/icons/search.png "Show in Search") Show in Search {#show-in-search}
 

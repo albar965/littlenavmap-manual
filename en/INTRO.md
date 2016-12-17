@@ -16,7 +16,7 @@ _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
-**Picture above: (Click to see large version):** _Little Navmap_ for a quick overview showing the most important functions._
+_**Picture above:** Little Navmap_ for a quick overview showing the most important functions._
 
 ## General Remarks {#general-remarks}
 
@@ -26,13 +26,13 @@ The user interface of _Little Navmap_ consists of a main window containing the m
 
 The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double clicking their title bar or by clicking on the window symbol on the top left.
 
-Double click on the docked window&#039;s title bar or click on the window symbol again to move the windows back into their docked position.
+Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
 
 All docked windows can be closed if they are no longer needed. You can even drop docked windows on each other to create a tabbed view (tabs will appear at the bottom of the dock stack in this case).
 
 Toolbars are also movable by clicking on the left handle and can also be closed or undocked from the main window.
 
-Use the `Main Menu` -&gt; `Window` menu to bring docked windows or toolbars back.
+Use the `Main Menu` -> `Window` menu to bring docked windows or toolbars back.
 
 The main window title indicates the currently selected flight simulator database (`FSX`, `FSXSE`, `P3DV2` or `P3DV3`), the flight plan file name and a trailing `*` if the flight plan was changed.
 
@@ -42,7 +42,7 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 ![Little Navmap](../images/all.jpg "Little Navmap")
 
-**Picture above: (Click to see large version):** _Little Navmap_ with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`.
+_**Picture above:** Little Navmap with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is `IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`._
 
 ### Translation and Locale {#translation-and-locale}
 
@@ -75,7 +75,7 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 
 ## First Start {#first-start}
 
-The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ for the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_&#039;s internal database. One database is kept for each simulator and can be changed on the fly in the [Scenery Library](SCENERY.md#scenery-library-menu) menu.
+The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ for the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database. One database is kept for each simulator and can be changed on the fly in the [Scenery Library](SCENERY.md#scenery-library-menu) menu.
 
 A warning dialog will be shown when starting _Little Navmap_ the first time on a system without any flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
 

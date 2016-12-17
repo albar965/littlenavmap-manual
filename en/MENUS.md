@@ -4,7 +4,7 @@ This chapter describes all the menu items of _Little Navmap_. You will find most
 
 ![Little Navmap Menu and Toolbars](../images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
 
-**Picture above:** _Menu and toolbars docked in default positions._
+_**Picture above:** Menu and toolbars docked in default positions._
 
 ### File Menu {#file-menu}
 
@@ -62,7 +62,7 @@ Allows to print the current map view. See [Printing the Map](/PRINT.md#printing-
 ### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan{#print-flight-plan}
 Opens a print dialog that allows you to select flight plan related information to be printed. See [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan) for more information.
 
-### ![Quit](../images/icons/application-exit.png "Quit") File -&gt; Quit {#file-quit}
+### ![Quit](../images/icons/application-exit.png "Quit") File -> Quit {#file-quit}
 
 Exits the application. Will ask for confirmation if there is a changed flight plan.
 
@@ -78,7 +78,7 @@ A parking spot (gate, ramp or fuel box), runway or helipad can be selected as a 
 
 ![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
-**Picture above:** _The start position selection dialog for EDDN._
+_**Picture above:** The start position selection dialog for EDDN._
 
 #### ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map") Edit Flight Plan on Map {#edit-flight-plan-on-map}
 
@@ -188,7 +188,7 @@ Online maps can appear slightly blurred when using this projection. This is a re
 
 ![Little Navmap Spherical projection and Simple Map Theme](../images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
 
-**Picture above:** _Spherical map projection with `Simple` offline map theme selected._
+_**Picture above:** Spherical map projection with `Simple` offline map theme selected._
 
 #### Theme {#theme}
 
@@ -202,7 +202,7 @@ _OpenStreetMap_ data is not loaded directly from the OSM servers but from the [M
 
 ![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
-**Picture above:** _View at an Italian airport using _OpenStreetMap_ theme and hill shading._
+_**Picture above:** View at an Italian airport using _OpenStreetMap_ theme and hill shading._
 
 ##### OpenMapSurfer {#openmapsurfer}
 
@@ -216,7 +216,7 @@ Map data for this map is provided by © [OpenStreetMap](http://osm.org) contribu
 
 ![OSM Roads and Hill shading](../images/osmroad.jpg "OSM Roads and Hill shading")
 
-**Picture above:** _View at an Italian airport using the _OpenMapSurfer_ theme and hill shading._
+_**Picture above:** View at an Italian airport using the OpenMapSurfer theme and hill shading._
 
 ##### OpenTopoMap {#opentopomap}
 
@@ -226,7 +226,7 @@ The tiles for this map are provided by [OpenTopoMap](http://www.opentopomap.org)
 
 ![OpenTopoMap](../images/otm.jpg "OpenTopoMap")
 
-**Picture above:** _View at the eastern Alps using _OpenTopoMap_ theme. A flight plan is shown north of the Alps._
+_**Picture above:** View at the eastern Alps using OpenTopoMap theme. A flight plan is shown north of the Alps._
 
 ##### Stamen Terrain {#stamen-terrain}
 
@@ -236,7 +236,7 @@ Map tiles by [Stamen Design](http://stamen.com), under [CC BY 3.0](http://creati
 
 ![Stamen Terrain](../images/stamenterrain.jpg "Stamen Terrain")
 
-**Picture above:** _View showing _Stamen Terrain_ theme._
+_**Picture above:** View showing Stamen Terrain theme._
 
 ##### Simple (Offline) {#simple-offline}
 
@@ -309,7 +309,7 @@ This allows a quick inspection of an airport or navaid during flight. To display
 
 Shows the user aircraft trail. The trail is always shown independent of the zoom distance. It is saved and will be reloaded on program startup.
 
-The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail`.
+The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -> `Map` -> `Delete Aircraft Trail`.
 
 The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
 
@@ -344,7 +344,7 @@ This menu is synchronized with simulator selection in the [Load Scenery Library 
 
 #### Show Database Files {#show-database-files}
 
-This opens _Little Navmap_&#039;s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer (e.g. Windows, Mac or Linux) using the same database that was created on the computer running the flight simulator.
+This opens _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer (e.g. Windows, Mac or Linux) using the same database that was created on the computer running the flight simulator.
 
 #### ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library {#load-scenery-library}
 
@@ -407,7 +407,7 @@ Shows the map theme dependent base legend in the `Legend` dock window. Note that
 
 #### ![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap") About Little Navmap {#about-little-navmap}
 
-Shows version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author&#039;s e-mail address.
+Shows version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author's e-mail address.
 
 #### ![About Marble](../images/icons/marble.png "About Marble") About Marble {#about-marble}
 
@@ -434,5 +434,5 @@ The statusbar shows various indications (from left to right):
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 
-**Picture above:** _Status bar with message about the last action on the left side and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level was increased once and the map coordinates are not shown since the cursor is not inside the map window. The online map download progress indicator is empty._
+_**Picture above:** Status bar with message about the last action on the left side and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level was increased once and the map coordinates are not shown since the cursor is not inside the map window. The online map download progress indicator is empty._
 
