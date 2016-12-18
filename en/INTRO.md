@@ -12,6 +12,12 @@ I recommend to delete all files of `Little Navmap` before installing a new versi
 
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 (32-bit & 64-bit).
 
+### Installing over a previous Release
+
+It is recommended to delete the old installation directory of _Little Navmap_. You can also install a newer version into a new directory but do not merge the installation directories.
+
+Anyway, no settings (except custom maps) are a stored in the installation directory. Therefore it is safe to remove it.
+
 ### Other Simulators than FSX SP2 {#other-simulators-than-fsx-sp2}
 
 This program was compiled using plain FSX SP2 (no Acceleration) SimConnect version 10.0.61259.0.
