@@ -2,15 +2,17 @@
 
 ### General {#general}
 
-Two search tabs are available for airport and navaid (VOR, NDB and waypoints) search.
+Two search tabs are available for airport and navaid \(VOR, NDB and waypoints\) search.
 
 These tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the hamburger button ![Hamburger Button](../images/icons/menubutton.png "Hamburger Button") on the top right.
 
-The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
+The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results. 
+
+If you do not get the expected results or no results at all use the `Reset Search`menu item or press Ctrl-R to clear all search criteria.
 
 Filters are defined by various controls which are mostly self explaining. Only text filters and the tri state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
 
-All filters can be used together where all conditions have to be met (`and` operator). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
+All filters can be used together where all conditions have to be met \(`and` operator\). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
 
 A tooltip on the blue help button on the top right shows information about searching.
 
@@ -18,9 +20,9 @@ A tooltip on the blue help button on the top right shows information about searc
 
 The standard is to search for entries that start with the entered text.
 
-The placeholder `*` stands for any text. Once a `*` is included in the term, the standard search (match start of text) is no longer used. In that case you might have to add a `*` at the end of the search term as well to get the expected result.
+The placeholder `*` stands for any text. Once a `*` is included in the term, the standard search \(match start of text\) is no longer used. In that case you might have to add a `*` at the end of the search term as well to get the expected result.
 
-The search is negated (find all entries that do not match) if the first character in a search box is a `-`.
+The search is negated \(find all entries that do not match\) if the first character in a search box is a `-`.
 
 Note that all of the above does not apply to numeric fields like `Runways: Min` or `Altitude: Max`.
 
@@ -28,11 +30,11 @@ Note that all of the above does not apply to numeric fields like `Runways: Min` 
 
 These are used to filter airports by presence of certain facilities or properties.
 
-*   Gray: Condition is ignored.
-*   Checked: Condition must match.
-*   Unchecked: Condition must not match.
+* Gray: Condition is ignored.
+* Checked: Condition must match.
+* Unchecked: Condition must not match.
 
-Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used (red fill on Linux or a `-` for macOS).
+Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used \(red fill on Linux or a `-` for macOS\).
 
 #### Distance search {#distance-search}
 
@@ -42,26 +44,27 @@ The checkbox `Distance` has to be selected to enable this search. The result wil
 
 The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
-To restrict the search further you can select a direction (North, East, South and West).
+To restrict the search further you can select a direction \(North, East, South and West\).
 
 Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results.
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-Picture above A complex search: Find all airports within a distance between 200 and 400 nautical miles from Frankfurt (EDDF). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table.
+Picture above A complex search: Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table.
 
 ### Search Result Table View {#search-result-table-view}
 
 All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
 
 ### Table View {#table-view}
+
 The header of all table views allows the following manipulation:
 
-*   Click on the top left corner of the column header: Select all result rows.
-*   Click on a column header: Sort ascending or descending (only for search result tables - not for flight plan table).
-*   Click and drag on the column header: Change column order.
-*   Double click on column border: Automatically fit column size to content.
-*   Click and drag on column border: Change column width.
+* Click on the top left corner of the column header: Select all result rows.
+* Click on a column header: Sort ascending or descending \(only for search result tables - not for flight plan table\).
+* Click and drag on the column header: Change column order.
+* Double click on column border: Automatically fit column size to content.
+* Click and drag on column border: Change column width.
 
 The above applies to all table views in the program.
 
@@ -69,11 +72,11 @@ The program saves the sort order, column widths and positions until `Reset View`
 
 ![Airport Search Result Table](../images/airportsearchtable.jpg "Airport Search Result Table")
 
- _**Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right._
+_**Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right._
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-_**Picture above:** Navaid search. All search options are visible. Search is limited to ICAO region `LI` (Italy) and VOR and NDB stations._
+_**Picture above:** Navaid search. All search options are visible. Search is limited to ICAO region _`LI`_ \(Italy\) and VOR and NDB stations._
 
 ### Mouse Clicks {#mouse-clicks-0}
 
@@ -132,3 +135,4 @@ Resets the sort order, the column order and column widths back to default.
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+

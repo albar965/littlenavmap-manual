@@ -24,5 +24,5 @@ these are transfered to the flight simulator computer using Windows shares or by
 7.  Copy the database files to your client computer using network shares, USB sticks or whatever you like. Use the file manager windows opened by the procedures above.
 8.  Start _Little Navmap_ on the client computer. The menu `Scenery Library` should contain an entry for each copied database file or no entry at all if only one file was copied. Airport icons should be visible on the map in either case.
 
-See the ![Connecting to a Flight Simulator](CONNECT.md) for information about networked setups.
+See the [Connecting to a Flight Simulator](CONNECT.md) for information about networked setups.
 
