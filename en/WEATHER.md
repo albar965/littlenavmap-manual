@@ -14,6 +14,10 @@ information in tooltips or the tab `Weather` in `Information` dock window.
 METARs are shown in the airport tooltips and on the `Airport` overview tab. Decoded weather information
 for all sources is available in the tab `Weather`.
 
+![Weather tab](../images/weather.jpg "Weather tab")
+
+_**Picture above:** Decoded weather information from tow online sources. Flight simulator is not connected._
+
 ### Flight Simulator
 
 Weather information from a flight simulator can be displayed in three flavours in METARs and decoded weather which depend on

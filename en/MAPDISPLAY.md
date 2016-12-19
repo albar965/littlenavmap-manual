@@ -35,7 +35,7 @@ check if your aircraft fits on an apron, parking spot or taxiway.
 A yellow wind arrow and labels for the situation around the user aircraft can be displayed can be displayed optionally on the
 top center of the map.
 
-See the ![Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
+See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
 
 
 ### Tooltips {#tooltips}

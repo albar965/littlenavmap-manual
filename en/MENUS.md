@@ -423,6 +423,10 @@ The statusbar shows various indications (from left to right):
 
 *   Last action or short help to explain a menu item or toolbar button.
 *   Indicator that shows airport types and navaids currently visible on the map. The tooltip gives more details.
+*   Connection status for a local or remote connection. The tooltip gives more details about the status like the hostname for remote connections.
+ * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
+ * `Connected`: A connection was established. 
+ * `Disconnected`: The simulator or _Little Navconnect_ exited.
 *   Map detail level.
 *   Online map download progress indicator. This shows the state of the current map download:
     *   `Done.`: All map data loaded successfully.
