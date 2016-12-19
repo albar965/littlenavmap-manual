@@ -15,7 +15,7 @@ An airway is always displayed with all its waypoints that are also linked to the
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 
-_**Picture above:** Airport information overview. Additional tabs show information for runways, COM frequencies and approaches._
+_**Picture above:** Airport information overview. Additional tabs show information for runways, COM frequencies, approaches and weather._
 
 ![Navaid Information](../images/infonavaid.jpg "Navaid Information")
 
@@ -49,7 +49,10 @@ _**Picture above:** Progress and ambient information of the current flight situa
 Information about a AI or multiplayer aircraft is shown here if an aircraft is clicked on the map.
 This also includes departure and destination airports that can be shown on the map by clicking on the blue links.
 
-TODO PICTURE
+![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
+
+_**Picture above:** Information about an AI aircraft._
+
 
 ## ![Legend](../images/icons/legenddock.png "Legend") Legend Dock Window {#legend-dock-window}
 

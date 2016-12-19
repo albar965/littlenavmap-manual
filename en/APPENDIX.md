@@ -4,7 +4,7 @@ To add an arbitrary online of an offline map to _Little Navmap_ simply add the m
 
 The full path to the DGML file \(see links below for more details about DGML\) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
 
-The menu `Main Menu` -> `Map` -> `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
+The menu `Main Menu` -&gt; `Map` -&gt; `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
 
 The options `Show Country and City Names` and `Show Hillshading` are enabled for all additional map themes but might not work depending on properties defined in the map's DGML file.
 
@@ -26,7 +26,6 @@ More maps and information about map configuration and DGML files can be found he
 
   `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
 
-
     Search for `APX41080.bgl` and exclude its directory from loading in the `Options` dialog.
 
 ## Known Problems {#known-problems}
@@ -34,7 +33,7 @@ More maps and information about map configuration and DGML files can be found he
 * Some airport add-ons do not modify the stock airports but only add new scenery and buildings. These add-ons will not be recognized as such and are therefore not highlighted on the map \(italic and underlined text\).
 * Add-on developers have to use all kind of workarounds to avoid FSX limitations which means the display and information given for add-on airports is not always correct. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports and more.
 * Navdata updates like [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html) or [fsAerodata ](https://www.fsaerodata.com/) can cause problems like duplicate waypoints or duplicate airways in the tooltips or information windows.
-* Route description parsing can skip waypoints even for previously calculated flight plans. This problem appears more often when using navdata updates.
+* Route description parsing can skip waypoints even for previously calculated flight plans. 
 * Some KML/KMZ files do not show up on the map. Adding a centerpoint pushpin to the KML/KMZ file can fix this.
 * World coverage for elevation and _OpenStreetMap_ hill shading data is limited and currently ends at 60 degree north. Use the _OpenTopoMap_, _OpenMapSurfer_ or _Stamen Terrain_ map themes which have world wide coverage for hill shading.
 * There are errors in the elevation source data \(like in northern Italy, Po Valley\) which will show up in the flight plan elevation profile.
@@ -45,8 +44,8 @@ More maps and information about map configuration and DGML files can be found he
 * Airports are misplaced compared to the background maps. This is an error in the source data and cannot be fixed.
 * Map printouts can be fuzzy since they depend on screen resolution. As a workaround increase the size of the visible map window.
 * macOS: Start position on the map is not restored properly. Use home as start position instead.
-* macOS: Loading of KML files does no work.
-* macOS: The map floating overlays do not work.
+* macOS: Loading of KML files does no work. The menu items are disabled.
+* macOS: The map floating overlays do not work.The menu items are disabled.
 
 ## How to report a Bug {#how-to-report-a-bug}
 
@@ -119,6 +118,8 @@ Thanks to all in the forums who patiently supported me and gave invaluable feedb
 [AVSIM](http://www.avsim.com), [SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](http://flightx.net) and [FSDeveloper.com](http://www.fsdeveloper.com).
 
 This project and my library [atools](https://github.com/albar965/atools) would not exist without the fabulous documentation of the BGL files in the [FSDeveloper Wiki](http://www.fsdeveloper.com/wiki). So, here a huge thank-you to all the contributors.
+
+Also a thank you to Ed Williams for his [Aviation Formulary](http://williams.best.vwh.net/avform.htm).
 
 Without the open source [Marble](https://marble.kde.org) widget that allows me to access and display all the maps I would still be busy doing that myself for years.
 

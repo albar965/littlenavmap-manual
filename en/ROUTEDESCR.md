@@ -24,6 +24,10 @@ or errors in the source data.
 
 The cruise speed and altitude are used to create the flight plan if given.
 
+![Route Description Dialog](../images/routedescr.jpg "Route Description Dialog")
+
+_**Picture above:** Route description and that was read successfully with a few warnings about ignored elements._
+
 ### Buttons {#buttons}
 
 * **`To Clipboard`:** Copies the current description as plain text to the clipboard.
@@ -135,4 +139,8 @@ Frankfurt Main (EDDF) to Fiumicino (LIRF):
 `EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF`
 * User defined waypoints with degree/minute notation and an alternate `LIRE`:
 `EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE`
+
+
+
+
 

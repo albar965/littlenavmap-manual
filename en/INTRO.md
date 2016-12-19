@@ -8,7 +8,8 @@ Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Fi
 
 Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](INTRO.md#first-start) for more information on the first start after installation.
 
-In some cases you have to  install the [MS Visual C++ 2013 Redistributable package](https://www.microsoft.com/en-US/download/details.aspx?id=40784). Usually this is already installed since many other programs require it.
+In some cases you have to install the [MS Visual C++ 2013 Redistributable package](https://www.microsoft.com/en-US/download/details.aspx?id=40784). Install both 32 and 64 bit versions.
+Usually this is already installed since many other programs require it.
 
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\).
 
@@ -32,7 +33,7 @@ _FSX Steam Edition_: The installation adds the folder `C:\Program Files (x86)\St
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
-_**Picture above:** Little Navmap_ for a quick overview showing the most important functions.\_
+_**Picture above:** Little Navmap 1.0.5 for a quick overview showing the most important functions._
 
 ## General Remarks {#general-remarks}
 
@@ -58,7 +59,7 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 ![Little Navmap](../images/all.jpg "Little Navmap")
 
-_**Picture above:** Little Navmap with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is _`IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`_._
+_**Picture above:** Little Navmap 1.0.5 with map and sourrounding docked windows. Currently selected simulator database is FSX, current changed flight plan is _`IFR Les Eplatures (LSGC) to Dagali (ENDI).pln`_._
 
 ### Translation and Locale {#translation-and-locale}
 
@@ -70,7 +71,7 @@ Since Units are specifically for aviation use they cannot be changed currently a
 
 ### Map Legend {#map-legend}
 
-The legend explains all the map icons and the `Flight Plan Elevation Profile` icons. It is available in the `Information` dock window or as a web browser document: Little Navmap Legend.
+The legend explains all the map icons and the `Flight Plan Elevation Profile` icons. It is available in the `Legend` dock window or in this manual: [Legend](LEGEND.md)
 
 ### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
 

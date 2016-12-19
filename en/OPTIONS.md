@@ -15,7 +15,7 @@ Allows to customize what should be loaded and shown on starup of _Little Navmap_
 
 ### User Interface {#user-interface}
 
-Has options vor text sizes in information windows and flight plan as well as the search result table.
+Has options for text sizes in information windows and flight plan as well as the search result table.
 
 You can also change the overall style for the graphical user interface. The user interface styles
 contain a `Night` mode that can be used for night flights in dark rooms. You can also dim the map and
