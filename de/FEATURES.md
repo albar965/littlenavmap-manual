@@ -1,8 +1,3 @@
-
-
-
-
-
 # Little Navmap Übersicht {#little-navmap-bersicht}
 
 ![Little Navmap](../images/littlenavmap.svg "Little Navmap")
