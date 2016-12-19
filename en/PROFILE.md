@@ -31,7 +31,7 @@ In addition, the information below is shown in the top label when hovering the m
 * Safe altitude for the current flight plan leg at the hovering position
 
 For more information see the `Navmap` tab in the `Legend` dock window or the
-![Nav Map Legend](LEGEND.md#elevation-profile-legend) for details.
+[Nav Map Legend](LEGEND.md#elevation-profile-legend) for details.
 
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
