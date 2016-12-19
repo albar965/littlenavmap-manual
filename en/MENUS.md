@@ -88,7 +88,7 @@ Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Edi
 #### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") New Flight Plan from Route Description {#new-flight-plan-from-description}
 
 Opens a dialog with the route description of the current flight plan that also allows to modify the current flight plan or enter a new one.
-[Flight Plan from Route Descpription](ROUTEDESCR.md#flight-plan-from-route-description) give more information about this topic.
+[Flight Plan from Route Descpription](ROUTEDESCR.md) gives more information about this topic.
 
 #### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copy Flight Plan Route to Clipboard {#flight-plan-route-clipboard}
 

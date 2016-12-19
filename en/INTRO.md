@@ -15,7 +15,7 @@ _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8
 
 ### Installing over a previous Release
 
-I recommend to delete all installed files of a previous _Little Navmap _ version before installing a new version. All files from the previous ZIP can be deleted since settings are stored in separate directories. Do not merge the installation directories.
+I recommend to delete all installed files of a previous _Little Navmap _ version before installing a new version. All files from the previous ZIP can be deleted since settings are stored in separate directories \(except [custom map themes](APPENDIX.md#creating-or-adding-map-themes)\). In any case do not merge the installation directories.
 
 See [Files](APPENDIX.md#files) for more information about configuration and database files. Do not delete these.
 
@@ -33,7 +33,7 @@ _FSX Steam Edition_: The installation adds the folder `C:\Program Files (x86)\St
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
-_**Picture above:** Little Navmap 1.0.5 for a quick overview showing the most important functions._
+_**Picture above:** A quick overview of Little Navmap 1.0.5 showing the most important functions._
 
 ## General Remarks {#general-remarks}
 

@@ -46,7 +46,7 @@ _**Picture above:** Progress and ambient information of the current flight situa
 
 ### Tab AI / Multiplayer
 
-Information about a AI or multiplayer aircraft is shown here if an aircraft is clicked on the map.
+Information about a AI or multiplayer aircraft is displayed in this tab if an aircraft is clicked on the map.
 This also includes departure and destination airports that can be shown on the map by clicking on the blue links.
 
 ![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
