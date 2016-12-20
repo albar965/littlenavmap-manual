@@ -25,9 +25,9 @@ This program was compiled using plain FSX SP2 \(no Acceleration\) SimConnect ver
 
 You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navconnect_ out. If it fails with an error message follow the instructions below:
 
-_Prepar3D_: In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navconnect_.
+**_Prepar3D_:** In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navconnect_.
 
-_FSX Steam Edition_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
+**_FSX Steam Edition_:** The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
 ### Quick Overview {#quick-overview}
 
@@ -76,14 +76,14 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 ### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
 
 * `Highlighted text` is used to denote window, menu, button, file or directory names.
-* Empty airport: An airport that has no taxiways, no parking positions or gates, no aprons and is not an add-on airport and is not a water airport.
-* Add-on airport: This is an airport that was found outside the Flight Simulator default scenery folder when loading the database.
-* Scenery Library Database: This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ by reading all the flight simulator BGL files. It allows indexing, fast searching and map display.
-* Navaid: VOR, NDB or waypoint
-* Radio navaid: VOR or NDB
-* Parking: GA ramp, cargo ramp, fuel box or gate.
-* Start position: Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.
-* Rating: Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:
+* **Empty airport:** An airport that has no taxiways, no parking positions or gates, no aprons and is not an add-on airport and is not a water airport.
+* **Add-on airport:** This is an airport that was found outside the Flight Simulator default scenery folder when loading the database.
+* **Scenery Library Database:** This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ by reading all the flight simulator BGL files. It allows indexing, fast searching and map display.
+* **Navaid:** VOR, NDB or waypoint
+* **Radio navaid:** VOR or NDB
+* **Parking:** GA ramp, cargo ramp, fuel box or gate.
+* **Start position:** Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.
+* **Rating:** Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:
   1. Add-on
   2. Parking positions \(ramp or gate\)
   3. Taxiways

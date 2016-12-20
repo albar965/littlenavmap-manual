@@ -14,10 +14,24 @@ _**Picture above:** Print preview dialog for the current map._
 
 ### ![Print Flight Pan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan{#printing-the-flight-plan}
 
-Allows the current flight plan to be printed.
+Allows to print the current flight plan together with departure and destination airport information.
+The layout of the printed tables is currently limited. This will be fixed in future updates of _Little Navmap_.
 
-TODO
+The options below are available for departure and destination:
 
+* **`Overview`:** Prints the airport overview as show in the `Information` dock window on tab `Airport`.
+* **`Runways / Helipads`:** Prints runway and helipad information.
+* **`Include runways with soft surface`:** Includes also runways with soft surfaces like grass,
+gravel and others.
+* **`Detailed runway information`:** Include detailed information for the runway ends like approach
+lighting, VASI types, ILS information and more.
+* **`COM frequencies`:** Include communication frequencies like tower, ATIS, unicom and others.
+* **`Weather`:** Print the decoded weather for all enabled sources as shown on the tab `Weather` in the `Information` dock window.
+
+General options:
+
+* **`Print flight plan table`:** Print the flight plan as seen in the flight plan table.
+* **`Text size`:** Make the text size smaller to avoid unneccesary line breaks or increase it for better reading.
 
 ![Print Flight Plan Dialog](../images/printfp.jpg "Print Flight Plan Dialog")
 

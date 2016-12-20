@@ -6,7 +6,7 @@ Two search tabs are available for airport and navaid \(VOR, NDB and waypoints\) 
 
 These tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the hamburger button ![Hamburger Button](../images/icons/menubutton.png "Hamburger Button") on the top right.
 
-The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results. 
+The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
 
 If you do not get the expected results or no results at all use the `Reset Search`menu item or press Ctrl-R to clear all search criteria.
 
@@ -30,9 +30,9 @@ Note that all of the above does not apply to numeric fields like `Runways: Min` 
 
 These are used to filter airports by presence of certain facilities or properties.
 
-* Gray: Condition is ignored.
-* Checked: Condition must match.
-* Unchecked: Condition must not match.
+* **Gray:** Condition is ignored.
+* **Checked:** Condition must match.
+* **Unchecked:** Condition must not match.
 
 Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used \(red fill on Linux or a `-` for macOS\).
 
@@ -60,11 +60,11 @@ All selected elements in the table view will be highlighted on the map using a b
 
 The header of all table views allows the following manipulation:
 
-* Click on the top left corner of the column header: Select all result rows.
-* Click on a column header: Sort ascending or descending \(only for search result tables - not for flight plan table\).
-* Click and drag on the column header: Change column order.
-* Double click on column border: Automatically fit column size to content.
-* Click and drag on column border: Change column width.
+* **Click on the top left corner of the column header:** Select all result rows.
+* **Click on a column header:** Sort ascending or descending \(only for search result tables - not for flight plan table\).
+* **Click and drag on the column header:** Change column order.
+* **Double click on column border:** Automatically fit column size to content.
+* **Click and drag on column border:** Change column width.
 
 The above applies to all table views in the program.
 

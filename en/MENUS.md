@@ -35,13 +35,21 @@ _Little Navmap_ will allow flight plans to be created that while useful as a fli
 A warning dialog will also be shown if the departure airport has parking positions but none is assigned in the flight plan.
 
 #### ![Save Flight Plan as GFP](../images/icons/saveasgfp.png "Save Flight Plan as GFP") Save Flight Plan as GFP{#save-flight-plan-as-gfp}
-Exports the flight plan in GFP format used by the Flight1 GTN 650/750.
+Exports the flight plan in GFP format used by the _Flight1 GTN 650/750_.
 
-The default directory to save the flight plans for GTN units is `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL`. Note that you might need to change the user priviledges on this directory. Give yourself full control on this directory, otherwise the flight plans might not show up in the GTN.
+Note that any missing waypoints will be displayed as locked in the unit which will happen
+more often if the AIRAC cycles do not match between _Little Navmap_ and the GTN.
+
+The default directory to save the flight plans for the GTN units is
+`C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL`. You might need to change the user
+priviledges on this directory if your saved flight plans do not show up in the GTN. Give yourself full control
+on this directory to avoid this.
 
 #### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
 
 Allows to add one or more Google Earth KML or KMZ file to the map display. All added KML or KMZ files will be reloaded on start up. Reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab.
+
+Due to the variety of KML files it is not guaranteed that all files will show up properly on the map.
 
 #### ![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map") Clear Google Earth KML from Map {#clear-google-earth-kml-from-map}
 
@@ -50,6 +58,7 @@ Removes all loaded KML files from the map.
 #### ![Offline](../images/icons/offline.png "Offline") Work Offline {#work-offline}
 
 Stops loading of map data from the internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
+A red **`Offline.`** indication is shown in the status bar if the offline mode is enabled.
 
 You should restart the application after going online again.
 
@@ -425,10 +434,11 @@ The statusbar shows various indications (from left to right):
 *   Indicator that shows airport types and navaids currently visible on the map. The tooltip gives more details.
 *   Connection status for a local or remote connection. The tooltip gives more details about the status like the hostname for remote connections.
  * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
- * `Connected`: A connection was established. 
+ * `Connected`: A connection was established.
  * `Disconnected`: The simulator or _Little Navconnect_ exited.
 *   Map detail level.
-*   Online map download progress indicator. This shows the state of the current map download:
+*   Online map download progress indicator. This shows the state of the current map download. The text is prefixed with a red **`Offline.`** indication
+if offline mode is enabled.
     *   `Done.`: All map data loaded successfully.
     *   `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
     *   `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.

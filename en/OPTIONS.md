@@ -34,6 +34,10 @@ This tab contains options for symbol and text sizes, flight plan and aircraft tr
 The right side of the tab contains a tree that allows to select the text labels that should be shown at
 airports, user aircraft and AI/multiplayer aircraft.
 
+![Map Display](../images/optionmapdisplay.jpg "Map Display")
+
+_**Picture above:** Tab `Map Display`._
+
 ### Units {#units}
 
 You can change all units that are used by _Little Navmap_ on this tab between nautical, imperial and metric.
@@ -72,25 +76,38 @@ _Active Sky_ can only be selected if _Active Sky Next_ or _AS16_ is installed.
 The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services
 change the URLs.
 
+The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect
+to internet. Adapt you firewall settings if these fail.
+
 ### Scenery Library Database {#scenery-library-database}
 
 Allows to configure the loading of the scenery library database.
 
+Note that these paths apply to all Flight Simulators.
+
 You have to reload the scenery database in order for the changes to
 take effect.
 
-#### `Select Paths to exclude from loading`
+#### `Select Paths to exclude from loading` {#scenery-library-database_exclude}
 
-All directories that are added to this list are excluded from loading. You can use this to speed up the loading
-process by adding directories that contain only elevation data for example.
+All directories including sub-directories in this list will be omitted when loading the scenery
+library into the _Little Navmap_ database. You can also use this list to speed up database loading
+if you exclude directories that do not contain airports or navaids (landclass, elevation data and others).
 
-#### `Select Paths to exclude add-on recognition`
+#### `Select Paths to exclude add-on recognition`  {#scenery-library-database_exclude-add-on}
 
 All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be
-highlighted on the map and considered during search for add-on.
+highlighted on the map and also considered during search for add-ons.
 
-Some add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct certain aspects
+You can use this list to modify this behavior.
+
+Add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct certain aspects
 of airports like elevation, magnetic variance or others. All these airports will be recognized as add-on airports
 since all their files are not stored in the base flight simulator `Scenery` directory.
 
-To avoid unwanted highlighting of these airports as add-ons on the map add the corrponding directory to this list.
+To avoid unwanted highlighting of these airports as add-ons add the corresponding directory to this list.
+
+![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
+
+_**Picture above:** Tab `Scenery Library Database` with three directores excluded from loading and two directories
+excluded from add-on recogntion._

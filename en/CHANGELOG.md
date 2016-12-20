@@ -21,7 +21,7 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 
 #### Flight Plan
 
-* **Flight plans can now be exported to the GFP format used by the Flight1 GTN 650/750.**
+* **Flight plans can now be exported to the GFP format used by the _Flight1 GTN 650/750_.**
 * The names of user defined waypoints can now be changed.
 * **Flight plan route description parsing added which allows to convert flight plans from and to ATS route descriptions. This even uses speed and cruise altitude data given in the route description.**
 * The active flight plan leg is now hightlighted on the map and in the flight plan table.

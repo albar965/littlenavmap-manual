@@ -23,10 +23,10 @@ shows the number of objects in the database after deduplication and deleting sto
 
 The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
 
-*   Flight Simulator X: `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
-*   Flight Simulator - Steam Edition: `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
-*   Prepar3D v2: `C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg`
-*   Prepar3D v3: `C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg`
+*   **Flight Simulator X:** `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
+*   **Flight Simulator - Steam Edition:** `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
+*   **Prepar3D v2:** `C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg`
+*   **Prepar3D v3:** `C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg`
 
 An error dialog is shown after loading if any BGL files could not be read. In this case you should check if the airports of the affected sceneries display correctly and show the correct information.
 

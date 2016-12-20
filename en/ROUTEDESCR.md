@@ -1,27 +1,27 @@
 ## Flight Plan Route Description {#flight-plan-from-route-description}
 
-This dialog allows you to create a flight plan from a route description as they are generated or provided  
+This dialog allows you to create a flight plan from a route description as they are generated or provided
 by various online services.
 
-When opened it will show the route description for the current flight plan which also contains information  
+When opened it will show the route description for the current flight plan which also contains information
 about speed and cruise altitude.
 
-The upper part of the dialog shows the route description input field and the lower part shows any messages,  
+The upper part of the dialog shows the route description input field and the lower part shows any messages,
 warnings or errors that occur during reading.
 
-The description parser will try to use as much of the route as possible even if parts of the flight plan  
+The description parser will try to use as much of the route as possible even if parts of the flight plan
 like waypoints or airways cannot be found. You will see warnings in the lower output field if that is the case.
 
 For long flight plans it can happen that far aways waypoints are added if names are not unique. Remove these manually if needed.
 
-Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are  
-used together with flght simulator stock data from 2005. It is recommended to use a navigation data update for the  
-stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/) or [SimBrief](https://www.simbrief.com). 
+Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are
+used together with flght simulator stock data from 2005. It is recommended to use a navigation data update for the
+stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/) or [SimBrief](https://www.simbrief.com).
 
 I recommend to use an AIRAC cycle that is closest to the flight simulator navigation age \(end of 2005\) if a navigation data update is not an option .
 
-Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases.  
-This happens due to ambiguitues in the route network like NDB and VOR stations having the same names  
+Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases.
+This happens due to ambiguitues in the route network like NDB and VOR stations having the same names
 or errors in the source data.
 
 The cruise speed and altitude are used to create the flight plan if given.
@@ -32,13 +32,13 @@ _**Picture above:** A route description that was read successfully with a few wa
 
 ### Buttons {#buttons}
 
-* `To Clipboard`**:** Copies the current description as plain text to the clipboard.
-* `From Clipboard`**:** Inserts text from clipboard to the input field. The inserted text is converted to
+* **`To Clipboard`:** Copies the current description as plain text to the clipboard.
+* **`From Clipboard`:** Inserts text from clipboard to the input field. The inserted text is converted to
   upper case and all invalid characters are removed from the text.
-* `Read Route Description`**:** Reads the route description and prints any messages, warnings and errors in the  
+* **`Read Route Description`:** Reads the route description and prints any messages, warnings and errors in the
   lower output field. The current flight plan is not affected by this action.
 
-* `Create Flight Plan`**:** Creates a new flight plan for the parsed route decription.  
+* **`Create Flight Plan`:** Creates a new flight plan for the parsed route decription.
   You have to click `Read Route Description` before.
 
 ### Format {#format}
@@ -57,10 +57,10 @@ Examples: `KEAT`, `CYPU`, `S16`.
 
 `SPEEDALT`: Contains the cruise speed and altitude. See below for a details.
 
-`ENROUTE`: This is a list of either `WAYPOINT` or a `AIRWAYWAYPOINT` forming the actual flight plan. The first enty  
+`ENROUTE`: This is a list of either `WAYPOINT` or a `AIRWAYWAYPOINT` forming the actual flight plan. The first enty
 has to be an airport, waypoint, VOR or NDB.
 
-`WAYPOINT`: A waypoint, VOR, NDB, airport or user defined coordinates. See below for a details about coordinates. A waypoint  
+`WAYPOINT`: A waypoint, VOR, NDB, airport or user defined coordinates. See below for a details about coordinates. A waypoint
 can be prefixed with `DCT` to indicate a direct connection not using an airway.
 
 Examples: `TAU`, `BOMBI`, `AST`, `CL`, `EDDF`.
@@ -107,8 +107,8 @@ Examples:
 
 #### Coordinates {#coordinates}
 
-Coordinates can be supplied in different formats:  
-Degrees only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.  
+Coordinates can be supplied in different formats:
+Degrees only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.
 Example: `51N010E`.
 
 * Degrees and minutes \(11 characters\) Two digits degrees, two digits for minutes, north/south indicator.

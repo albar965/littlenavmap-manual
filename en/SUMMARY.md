@@ -24,7 +24,6 @@
 * [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator)
 * [Options Dialog](OPTIONS.md#options-dialog)
 * [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation)
-* [Tutorials](TUTORIALS.md)
 * [Changelog](CHANGELOG.md)
 * [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes)
 * [Troubleshoot](APPENDIX.md#troubleshoot)

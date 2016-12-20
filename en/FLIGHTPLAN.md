@@ -6,9 +6,9 @@ The top shows a label that contains departure, departure position (parking, runw
 
 Besides the label there are three input fields on top of this dock window:
 
-*   Speed (kts): Ground speed. The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` (estimated time of arrival at a waypoint given 0:00 as start time). It is not saved with the flight plan and not used for simulator user aircraft calculations.
-*   Cruise altitude (ft): This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field receives the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
-*   Flight Plan Type (IFR or VFR): This is saved with the flight plan.
+*   **Speed (kts):** Ground speed. The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` (estimated time of arrival at a waypoint given 0:00 as start time). It is not saved with the flight plan and not used for simulator user aircraft calculations.
+*   **Cruise altitude (ft):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field receives the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
+*   **Flight Plan Type (IFR or VFR):** This is saved with the flight plan.
 
 ### Flight Plan Table {#flight-plan-table}
 
@@ -20,8 +20,8 @@ The active flight plan leg is highligthed in magenta when _Little Navmap_ is con
 
 Note on the table columns `Course °M` and `Direct °M`:
 
-*   `Direct °M:` This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
-*   `Course °M:` This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when travelling along a great circle line.
+*   **`Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
+*   **`Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when travelling along a great circle line.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 

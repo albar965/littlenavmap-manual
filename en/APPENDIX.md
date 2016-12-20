@@ -17,11 +17,14 @@ More maps and information about map configuration and DGML files can be found he
 
 ## Troubleshoot {#troubleshoot}
 
-* Delete the settings and the database files if the program crashes during start up. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`.
-* Hiding the map screen overlays cannot be undone in the GUI. Restart _Little Navmap_ to get the overlays back.
+* **Program crashes on start up:** Delete the settings and the database files. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete \(or better: rename or move\) the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`.
+* **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for
+NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
 * Zoom can be too fast when using a touchpad with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
 * Online maps like _OpenStreetMap_ or _OpenTopoMap_ maps can end up blurred when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
 * _OpenStreetMap_ shows a dark gray background on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
+* **Loading of the scenery database takes too long:** Exclude scenery directories containing only landclass, elevation data or other for _Little Navmap_
+irrelevant data. You can do that in the `Options` dialog on the `Scenery Library Database` tab. See [Options](OPTIONS.md#scenery-library-database_exclude).
 * You can exclude scenery directories in the `Options` dialog on the `Scenery Library Database` tab if loading of an add-on BGL causes the program to crash. Do not restart the program after the crash and instead load the log file `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`. The path may vary depending on your Windows installation. Search for the last line in the log-file that looks like:
 
   `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
@@ -31,9 +34,8 @@ More maps and information about map configuration and DGML files can be found he
 ## Known Problems {#known-problems}
 
 * Some airport add-ons do not modify the stock airports but only add new scenery and buildings. These add-ons will not be recognized as such and are therefore not highlighted on the map \(italic and underlined text\).
-* Add-on developers have to use all kind of workarounds to avoid FSX limitations which means the display and information given for add-on airports is not always correct. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports and more.
-* Navdata updates like [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html) or [fsAerodata ](https://www.fsaerodata.com/) can cause problems like duplicate waypoints or duplicate airways in the tooltips or information windows.
-* Route description parsing can skip waypoints even for previously calculated flight plans. 
+* Add-on developers have to use all kind of workarounds to avoid FSX limitations which means the display and information given for add-on airports is not always correct. A lot of these changes are also done to make AI behave properly. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports, duplicate runways in water, taxiways in water, all military gates at civilian airports and more.
+* Route description parsing can skip waypoints in rare cases even for previously calculated flight plans.
 * Some KML/KMZ files do not show up on the map. Adding a centerpoint pushpin to the KML/KMZ file can fix this.
 * World coverage for elevation and _OpenStreetMap_ hill shading data is limited and currently ends at 60 degree north. Use the _OpenTopoMap_, _OpenMapSurfer_ or _Stamen Terrain_ map themes which have world wide coverage for hill shading.
 * There are errors in the elevation source data \(like in northern Italy, Po Valley\) which will show up in the flight plan elevation profile.
@@ -79,9 +81,9 @@ All configuration files for my programs for Windows 7/8/10 are typically stored 
 
 There are three configuration files for this program:
 
-* `little_navmap.ini`: INI style configuration file. Text file.
-* `little_navmap.history`: The map position history. Binary file.
-* `little_navmap.track`: The user aircraft track. Binary file.
+* **`little_navmap.ini`:** INI style configuration file. Text file.
+* **`little_navmap.history`:** The map position history. Binary file.
+* **`little_navmap.track`:** The user aircraft track. Binary file.
 
 The disk cache that is used to store all the downloaded online map tile images can be found here:
 
@@ -97,11 +99,11 @@ All these databases are [SQLite](http://sqlite.org) files than can be viewed wit
 
 The files are:
 
-* `little_navmap_.sqlite`:An empty dummy database.
-* `little_navmap_fsx.sqlite`:Flight Simulator X
-* `little_navmap_fsxse.sqlite`:Flight Simulator - Steam Edition
-* `little_navmap_p3dv2.sqlite`:Prepar3D v2
-* `little_navmap_p3dv3.sqlite`:Prepar3D v3
+* **`little_navmap_.sqlite`:** An empty dummy database.
+* **`little_navmap_fsx.sqlite`:** Flight Simulator X
+* **`little_navmap_fsxse.sqlite`:** Flight Simulator - Steam Edition
+* **`little_navmap_p3dv2.sqlite`:** Prepar3D v2
+* **`little_navmap_p3dv3.sqlite`:** Prepar3D v3
 
 ## Acknowlegments {#acknowlegments}
 
