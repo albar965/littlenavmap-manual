@@ -51,3 +51,6 @@ Departure and destination weather will be displayed if a flight plan is loaded i
 _Active Sky_ programs. A suffix `Destination` or `Departure` will indicate the usage of Active Sky flight plan weather
 on the tab `Weather`. This gives _Active Sky_ users the most precise weather indication for departure and destination.
 
+Note that the indication of `Departure` or `Destination` depends entirely on the flight plan loaded into _Active Sky_ and not your
+flight plan in _Little Navmap_.
+
