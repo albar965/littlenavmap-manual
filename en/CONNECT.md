@@ -1,7 +1,7 @@
 
 ## ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Connecting to a Flight Simulator {#connecting-to-a-flight-simulator}
 
-The setup procedure is different remote connections and local connections.
+The setup procedure is different for remote connections and local connections.
 
 _Little Navmap_ can connect to the flight simulator directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
 

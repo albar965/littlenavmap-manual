@@ -1,6 +1,6 @@
 ## Map Display {#map-display}
 
-See the ![Nav Map Legend](LEGEND.md) for details about the various symbols shown by the map.
+See the [Nav Map Legend](LEGEND.md) for details about the various symbols shown by the map.
 
 ### Moving {#moving}
 
