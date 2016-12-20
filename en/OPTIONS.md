@@ -44,7 +44,7 @@ You can change all units that are used by _Little Navmap_ on this tab between na
 Mixed settings like meter for altitude and nautical miles for distance are possible.
 
 Note that any numbers used in the program are not converted when changing units. That means that you will
-have a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation' from feet to meter.
+have a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation` from feet to meter.
 This also applies to flight plan altitude. Therefore, do not forget to adapt these numbers after changing units.
 
 ### Simulator Aircraft {#simulator-aircraft}
@@ -88,13 +88,13 @@ Note that these paths apply to all Flight Simulators.
 You have to reload the scenery database in order for the changes to
 take effect.
 
-#### `Select Paths to exclude from loading` {#scenery-library-database_exclude}
+#### Select Paths to exclude from loading {#scenery-library-database_exclude}
 
 All directories including sub-directories in this list will be omitted when loading the scenery
 library into the _Little Navmap_ database. You can also use this list to speed up database loading
 if you exclude directories that do not contain airports or navaids (landclass, elevation data and others).
 
-#### `Select Paths to exclude add-on recognition`  {#scenery-library-database_exclude-add-on}
+#### Select Paths to exclude add-on recognition {#scenery-library-database_exclude-add-on}
 
 All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be
 highlighted on the map and also considered during search for add-ons.

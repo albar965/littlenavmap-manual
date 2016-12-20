@@ -111,14 +111,14 @@ Coordinates can be supplied in different formats:
 Degrees only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.
 Example: `51N010E`.
 
-* Degrees and minutes \(11 characters\) Two digits degrees, two digits for minutes, north/south indicator.
+* **Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes, north/south indicator.
   Then three digits for degrees, two digits for minutes and east/west indicator.
   Example: `4010N03822W`.
-* North atlantic track points \(NAT\),
+* **North atlantic track points** \(NAT\).
   Example: `5010N`.
-* Coordinate waypoint pairs with degrees and minutes prefixed with north/south and east/west indicator.
+* **Coordinate waypoint pairs** with degrees and minutes prefixed with north/south and east/west indicator.
   Examples: `N4200 W02000` or `N4200/W02000`.
-* Garmin GFP format \(13 characters\) north/south indicator, two digits degrees, thee digits for minutes.
+* **Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, thee digits for minutes.
   Then east/west indicator, three digits degrees, three digits minutes.
   Example: `N48194W123096`
 

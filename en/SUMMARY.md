@@ -15,6 +15,7 @@
 * [Flight Plan Dock Window](FLIGHTPLAN.md#flight-plan-dock-window)
 * [Flight Plan Elevation Profile Dock Window](PROFILE.md#flight-plan-elevation-profile-dock-window)
 * [Information Dock Window](INFO.md#information-dock-window)
+* [Legend Dock Window](INFO.md#legend-dock-window)
 * [Simulator Aircraft Dock Window](INFO.md#simulator-aircraft-dock-window)
 * [Weather](WEATHER.md#weather)
 * [Printing the Map](PRINT.md#printing-the-map)

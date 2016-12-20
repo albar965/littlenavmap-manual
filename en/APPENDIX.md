@@ -19,7 +19,7 @@ More maps and information about map configuration and DGML files can be found he
 
 * **Program crashes on start up:** Delete the settings and the database files. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete \(or better: rename or move\) the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`.
 * **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for
-NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
+NOAA or VATSIM weather. If _Little Navmap_ cannot reach the internet if these fail.
 * Zoom can be too fast when using a touchpad with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
 * Online maps like _OpenStreetMap_ or _OpenTopoMap_ maps can end up blurred when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
 * _OpenStreetMap_ shows a dark gray background on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
