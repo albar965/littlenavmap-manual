@@ -181,7 +181,7 @@ Jumps forward or backward in the map position history. The complete history is s
 
 Increases or decreases details on the map. More details means more airports, more navaids, more text information and bigger icons.
 
-Note that map information will be truncated to 3000 objects if too much detail is chosen.
+Note that map information will be truncated if too much detail is chosen. A red warning message will be shown in the statusbar if this is the case.
 
 #### Projection {#projection}
 
@@ -431,7 +431,7 @@ Information about the [Qt application framework](https://www.qt.io) that is used
 The statusbar shows various indications (from left to right):
 
 *   Last action or short help to explain a menu item or toolbar button.
-*   Indicator that shows airport types and navaids currently visible on the map. The tooltip gives more details.
+*   Indicator that shows airport types and navaids currently visible on the map. The tooltip gives more details. A red warning message will be shown here if too many objects are displayed on the map due to a too high detail level.
 *   Connection status for a local or remote connection. The tooltip gives more details about the status like the hostname for remote connections.
  * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
  * `Connected`: A connection was established.

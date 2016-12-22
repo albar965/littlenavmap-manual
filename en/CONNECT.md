@@ -20,6 +20,9 @@ _Little Navmap_ can connect to the flight simulator directly if all programs are
 
 User aircraft information is transfered to _Little Navmap_ by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
 
+Make sure that the major versions of _Little Navmap_ and _Little Navconnect_ match, otherwise you will get an error message. 
+_Little Navmap_ 1.0.5 is compatible with _Little Navconnect_ 1.0.2 but not with 1.2 for example.
+
 1.  Download and install _[Little Navconnect](https://albar965.github.io/littlenavconnect.html)_ on the computer that is running the flight simulator. Start it and take note of the message that is printed on the logging window. You only need the colored values. You can use the IP address or the hostname. _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use.
 
     ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
