@@ -11,7 +11,7 @@ One airport and all navaids are loaded into the information display if multiple 
 A blue link `Map` allows jumping to the shown airport or navaid on the map.
 Additional links for helipads are available in the tab `Runways/Helipads`.
 
-An airway is always displayed with all its waypoints that are also linked to their respective map postitions.
+An airway is always displayed with all its waypoints that are also linked to their respective map positions.
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 

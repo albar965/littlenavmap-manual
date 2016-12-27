@@ -15,13 +15,13 @@ like waypoints or airways cannot be found. You will see warnings in the lower ou
 For long flight plans it can happen that far aways waypoints are added if names are not unique. Remove these manually if needed.
 
 Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are
-used together with flght simulator stock data from 2005. It is recommended to use a navigation data update for the
+used together with flight simulator stock data from 2005. It is recommended to use a navigation data update for the
 stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/) or [SimBrief](https://www.simbrief.com).
 
 I recommend to use an AIRAC cycle that is closest to the flight simulator navigation age \(end of 2005\) if a navigation data update is not an option .
 
 Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases.
-This happens due to ambiguitues in the route network like NDB and VOR stations having the same names
+This happens due to ambiguities in the route network like NDB and VOR stations having the same names
 or errors in the source data.
 
 The cruise speed and altitude are used to create the flight plan if given.
@@ -38,7 +38,7 @@ _**Picture above:** A route description that was read successfully with a few wa
 * **`Read Route Description`:** Reads the route description and prints any messages, warnings and errors in the
   lower output field. The current flight plan is not affected by this action.
 
-* **`Create Flight Plan`:** Creates a new flight plan for the parsed route decription.
+* **`Create Flight Plan`:** Creates a new flight plan for the parsed route description.
   You have to click `Read Route Description` before.
 
 ### Format {#format}
@@ -57,7 +57,7 @@ Examples: `KEAT`, `CYPU`, `S16`.
 
 `SPEEDALT`: Contains the cruise speed and altitude. See below for a details.
 
-`ENROUTE`: This is a list of either `WAYPOINT` or a `AIRWAYWAYPOINT` forming the actual flight plan. The first enty
+`ENROUTE`: This is a list of either `WAYPOINT` or a `AIRWAYWAYPOINT` forming the actual flight plan. The first entry
 has to be an airport, waypoint, VOR or NDB.
 
 `WAYPOINT`: A waypoint, VOR, NDB, airport or user defined coordinates. See below for a details about coordinates. A waypoint
@@ -77,7 +77,7 @@ Examples: `V495 CONDI`, `V338 YVR`, `V330 TRENA`.
 
 #### Speed and Altitude {#speed-and-altitude}
 
-Crusing speed and cruising level not separated by a space.
+Cruising speed and cruising level not separated by a space.
 
 Speed is prefixed with:
 
@@ -93,7 +93,7 @@ Altitude is prefixed with:
 
 `S`: Metric flight level in three digits of tens of meters.
 
-`A`: Altitude in hundrets of feet in three digits.
+`A`: Altitude in hundreds of feet in three digits.
 
 `M`: Altitude in tens of meter in four digits.
 
@@ -103,7 +103,7 @@ Examples:
 
 `M071F320` Mach 0.71 at flight level 320.
 
-`K0790M0710` 790 kilomters per hour at 7100 meters.
+`K0790M0710` 790 kilometers per hour at 7100 meters.
 
 #### Coordinates {#coordinates}
 

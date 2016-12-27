@@ -53,7 +53,7 @@ irrelevant data. You can do that in the `Options` dialog on the `Scenery Library
 
 If something goes wrong send me any involved files like KML, PLN or BGL \(if copyright permits\), _Little Navmap_'s log file and configuration file which both can be located in the about dialog. My e-mail address is shown in the about dialog of _Little Navmap_ as well.
 
-Please add all steps that are neccessary to reproduce the error.
+Please add all steps that are necessary to reproduce the error.
 
 When an error occurs during loading of the scenery library send me the offending BGL file if possible. The full name and path of the file is shown on top of the error dialog if a specific BGL is the cause.
 
@@ -105,7 +105,7 @@ The files are:
 * **`little_navmap_p3dv2.sqlite`:** Prepar3D v2
 * **`little_navmap_p3dv3.sqlite`:** Prepar3D v3
 
-## Acknowlegments {#acknowlegments}
+## Acknowledgments {#acknowledgments}
 
 A big thank-you for all people supporting me throughout the beta phase, sending me their log files, screen shots, ideas for improvements, friendly messages and more.
 

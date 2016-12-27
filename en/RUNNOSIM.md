@@ -2,7 +2,7 @@
 ## Running without Flight Simulator Installation {#running-without-flight-simulator-installation}
 
 The `littlenavmap.exe` requires an installation of SimConnect. Therefore an additional executable
-`littlenavmap-nosimconnect.exe` not reqiring SimConnect or a flight simulator installation
+`littlenavmap-nosimconnect.exe` not requiring SimConnect or a flight simulator installation
 was added to the archive that can be used for networked setups.
 
 You can follow these steps if you want to install _Little Navmap_ on a computer not containing any

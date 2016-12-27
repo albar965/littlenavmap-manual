@@ -10,7 +10,7 @@ The drop down menu prefixes menu items with a change indicator `*` to show that 
 
 If you do not get the expected results or no results at all use the `Reset Search`menu item or press Ctrl-R to clear all search criteria.
 
-Filters are defined by various controls which are mostly self explaining. Only text filters and the tri state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
+Filters are defined by various controls which are mostly self explaining. Only text filters and the tri-state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
 
 All filters can be used together where all conditions have to be met \(`and` operator\). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
 
@@ -50,7 +50,7 @@ Check the drop down menu for the change indicator `*` and the search fields for 
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-Picture above A complex search: Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table.
+_**Picture above A complex search:** Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table._
 
 ### Search Result Table View {#search-result-table-view}
 

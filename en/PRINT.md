@@ -31,7 +31,7 @@ lighting, VASI types, ILS information and more.
 General options:
 
 * **`Print flight plan table`:** Print the flight plan as seen in the flight plan table.
-* **`Text size`:** Make the text size smaller to avoid unneccesary line breaks or increase it for better reading.
+* **`Text size`:** Make the text size smaller to avoid unnecessary line breaks or increase it for better reading.
 
 ![Print Flight Plan Dialog](../images/printfp.jpg "Print Flight Plan Dialog")
 

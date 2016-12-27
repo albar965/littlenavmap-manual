@@ -11,7 +11,7 @@ Loading a scenery library can take three to six minutes depending on your setup 
 
 The previous scenery library database will be restored if you cancel the loading process or if the loading process fails.
 
-All airports that are not located in the default `Scenery` directory are considered add-on airports and will be highlighted appropriately. Directories can be excluded from this behavior in the `Options` dialog on the `Scenery Library Database` tab. This can be useful if add-ons only correct airport elevation and these airports should not be hightlighted on the map using underline and italic text.
+All airports that are not located in the default `Scenery` directory are considered add-on airports and will be highlighted appropriately. Directories can be excluded from this behavior in the `Options` dialog on the `Scenery Library Database` tab. This can be useful if add-ons only correct airport elevation and these airports should not be highlighted on the map using underline and italic text.
 
 The menu `Scenery Library` -> `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
 
@@ -19,7 +19,7 @@ Note that the number of airports, navaids and other objects shown in the `Load S
 shown in the progress dialog.
 
 The progress dialog shows all objects that were found during loading. The the dialog `Load Scenery Library`
-shows the number of objects in the database after deduplication and deleting stock airports that were replaced by add-ons.
+shows the number of objects in the database after removing duplicates and deleting stock airports that were replaced by add-ons.
 
 The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
 

@@ -11,7 +11,7 @@ saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
 
 ### Startup {#starup}
 
-Allows to customize what should be loaded and shown on starup of _Little Navmap_.
+Allows to customize what should be loaded and shown on startup of _Little Navmap_.
 
 ### User Interface {#user-interface}
 
@@ -25,7 +25,7 @@ Note that a restart is not needed but recommended after changing a style.
 
 ### Map {#map}
 
-Has map related customization options. Allows to set the click sensitvity, zoom distances and more.
+Has map related customization options. Allows to set the click sensitivity, zoom distances and more.
 
 ### Map Display {#map-display}
 
@@ -77,7 +77,7 @@ The URLs of the NOAA and VATSIM weather can be modified if you like to use anoth
 change the URLs.
 
 The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect
-to internet. Adapt you firewall settings if these fail.
+to Internet. Adapt you firewall settings if these fail.
 
 ### Scenery Library Database {#scenery-library-database}
 
@@ -109,5 +109,5 @@ To avoid unwanted highlighting of these airports as add-ons add the correspondin
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Picture above:** Tab `Scenery Library Database` with three directores excluded from loading and two directories
-excluded from add-on recogntion._
+_**Picture above:** Tab `Scenery Library Database` with three directories excluded from loading and two directories
+excluded from add-on recognition._

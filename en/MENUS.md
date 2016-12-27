@@ -42,7 +42,7 @@ more often if the AIRAC cycles do not match between _Little Navmap_ and the GTN.
 
 The default directory to save the flight plans for the GTN units is
 `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL`. You might need to change the user
-priviledges on this directory if your saved flight plans do not show up in the GTN. Give yourself full control
+privileges on this directory if your saved flight plans do not show up in the GTN. Give yourself full control
 on this directory to avoid this.
 
 #### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
@@ -57,7 +57,7 @@ Removes all loaded KML files from the map.
 
 #### ![Offline](../images/icons/offline.png "Offline") Work Offline {#work-offline}
 
-Stops loading of map data from the internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
+Stops loading of map data from the Internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
 A red **`Offline.`** indication is shown in the status bar if the offline mode is enabled.
 
 You should restart the application after going online again.
@@ -112,7 +112,7 @@ You can calculate a flight plan between any kind of waypoints, even user defined
 
 #### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Calculate Radionav {#calculate-radionav}
 
-Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME only stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Buid the flight plan manually if this is the case.
+Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME only stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Build the flight plan manually if this is the case.
 
 This calculation can also be used to create a flight plan snippet between any kind of waypoint.
 
@@ -301,7 +301,7 @@ Shows or hides the flight plan. The flight plan is shown independent of the zoom
 
 Shows the user aircraft if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
 
-A click on the user aircraft shows more information in the `Simualator Aircraft` dock window.
+A click on the user aircraft shows more information in the `Simulator Aircraft` dock window.
 
 The aircraft centering will be switched off when using one of the following functions:
 
@@ -327,7 +327,7 @@ The size of the trail is limited for performance reasons. Points will be removed
 
 Shows all AI and multiplayer aircraft on the map. Multiplayer aircraft can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
 
-A click on the AI aircraft shows more information in the `Simualator Aircraft` dock window.
+A click on the AI aircraft shows more information in the `Simulator Aircraft` dock window.
 
 Note that the displayed aircraft are limited by the multiplayer system used. Multiplayer aircraft will disappear depending on distance to user aircraft. For flight simulator AI this is currently about 100 nautical miles or around 200 kilometers.
 

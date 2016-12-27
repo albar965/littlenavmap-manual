@@ -24,10 +24,10 @@ The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map 
 
 The user aircraft and AI or multiplayer aircraft will be shown on the map if the program is connected
 to a flight simulator. Aircraft color indicates user or AI/multiplayer aircraft and the symbol shape indicates if the
-aircraft is an piston/turboprop, jet or helicopter. The symbol outline changes to grey if an aircraft is on ground.
+aircraft is an piston/turboprop, jet or helicopter. The symbol outline changes to gray if an aircraft is on ground.
 
 AI and multiplayer aircraft on ground are shown only on small zoom distances to avoid cluttered airports. This means that
-an AI aircraft can dissapear from the map when landing on an airport.
+an AI aircraft can disappear from the map when landing on an airport.
 
 On the lowest zoom distance all aircraft are drawn to scale as are the parking spots. That means you can easily
 check if your aircraft fits on an apron, parking spot or taxiway.
@@ -88,7 +88,7 @@ Starts a measurement line on the first click. Second click ends measuring and ke
 
 You can use the keyboard, mouse wheel or the map overlays to scroll and zoom while dragging a line.
 
-Right click, pressing the escape key or any click outside of the map window cancels the measurment line editing.
+Right click, pressing the escape key or any click outside of the map window cancels the measurement line editing.
 
 Measurement lines use nautical miles as unit. Feet will be added as unit if the lines are short enough e.g. takeoff distance for crossing takeoffs and moving around an airport.
 

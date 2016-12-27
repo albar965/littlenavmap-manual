@@ -16,12 +16,12 @@ The table view allows the same operations as the search table view except sortin
 
 All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
 
-The active flight plan leg is highligthed in magenta when _Little Navmap_ is connected to a simulator.
+The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator.
 
 Note on the table columns `Course °M` and `Direct °M`:
 
 *   **`Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
-*   **`Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when travelling along a great circle line.
+*   **`Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 

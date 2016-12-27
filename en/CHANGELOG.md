@@ -9,23 +9,24 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 #### General
 
 * **Printing for map, flight plan, airport and weather information added.**
-* **Added night user interface style and others including a dimmable map for night display.**
+* **Added night user interface style and others including option to dim the map for night display.**
 * **Units can now be changed to metric, imperial and nautical separately for distance, altitude, speed, weight and volume.**
 * **Database updates by **[**fsAerodata**](https://www.fsaerodata.com)** are supported.**
 * Coordinate format can now be changed from degree/minutes/seconds to decimal degree format.
-* Freqencies for VOR, NDB and ILS added to approach information tab.
+* Frequencies for VOR, NDB and ILS added to approach information tab.
 * Added display of helipad details to information window.
 * When changing departure, destination or flight plan type, the save function will optionally show the "save as" dialog. This helps to avoid overwriting flight plans with the wrong content.
 * `Save Map as image function added.`
 * All help is now available either offline as an included PDF or online from Gitbook.
+* Now displays all BGL files that were used to build an airport also including a link that shows them in Windows Explorer.
 
 #### Flight Plan
 
 * **Flight plans can now be exported to the GFP format used by the _Flight1 GTN 650/750_.**
 * The names of user defined waypoints can now be changed.
 * **Flight plan route description parsing added which allows to convert flight plans from and to ATS route descriptions. This even uses speed and cruise altitude data given in the route description.**
-* The active flight plan leg is now hightlighted on the map and in the flight plan table.
-* Added toolbar button to adjust flight plan altitude according to simpified hemispherical and IFR/VFR rules.
+* The active flight plan leg is now highlighted on the map and in the flight plan table.
+* Added toolbar button to adjust flight plan altitude according to simplified hemispherical and IFR/VFR rules.
 * Added navaid range column in flight plan table.
 
 #### Weather
@@ -40,7 +41,7 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 * **AI and multiplayer aircraft are now shown on the map. Information about these is available in the aircraft progress window and tooltips.**
 * **Added configurable top of descent display on map and elevation profile display based on simple number of nautical miles per 1000 ft rule.**
 * The floating map overlays can now be hidden.
-* Added a mode that scrolls the map continously while displaying and following the user aircraft.
+* Added a mode that scrolls the map continuously while displaying and following the user aircraft.
 * Movement and updates of the user aircraft are now more fluid.
 * User aircraft icon can now show an optional line indicating the track.
 * Aircraft types \(jet, piston/turboprop, helicopter\) are now indicated by the user and AI/multiplayer aircraft icons.
