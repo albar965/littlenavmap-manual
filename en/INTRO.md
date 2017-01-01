@@ -29,7 +29,7 @@ You might have to install an older version of SimConnect if you use _Prepar3D_ o
 
 **_FSX Steam Edition_:** The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
-### Quick Overview {#quick-overview}
+## Quick Overview {#quick-overview}
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
