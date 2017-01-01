@@ -2,7 +2,7 @@
 
 Most options are self explaining and tooltips contain more detailed explanations if applicable.
 
-Tip: You can immediately check the effect of your changes on the map display by moving the dialog
+You can immediately check the effect of your changes on the map display by moving the dialog
 `Options` to the side and pressing `Apply`.
 
 The button `Restore Defaults` only restores the options of this dialog back to default. Other
@@ -21,7 +21,11 @@ You can also change the overall style for the graphical user interface. The user
 contain a `Night` mode that can be used for night flights in dark rooms. You can also dim the map and
 elevation profile display.
 
-Note that a restart is not needed but recommended after changing a style.
+A restart is not needed but recommended after changing a style.
+
+![User Interface](../images/optionsui.jpg "User Interface")
+
+_**Picture above:** Tab `User Interface` using the style `Night`._
 
 ### Map {#map}
 
@@ -58,9 +62,13 @@ in the simulator.
 Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles
 from the online maps like the _OpenStreetMap_, _OpenMapSurfer_  or _OpenTopoMap_.
 
-All image tiles expire after two weeks.
+All image tiles expire after two weeks and will be reloaded from the online services.
 
 Note that a reduction of size or erasing the disk cache is done in background and can take a while.
+
+The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
+
+The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 
 ### Flight Plan {#flight-plan}
 
@@ -71,13 +79,17 @@ Here you can set preferences for flight plan calculation or adjust the rule of t
 You can select the various weather sources that should be shown in the `Information` dock window or in the map
 tooltips.
 
-_Active Sky_ can only be selected if _Active Sky Next_ or _AS16_ is installed.
+_Active Sky_ can only be selected if _Active Sky Next_ or _AS16_ is installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
 
 The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services
 change the URLs.
 
 The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect
-to Internet. Adapt you firewall settings if these fail.
+to Internet. Check your firewall settings if these fail.
+
+![Weather Options](../images/optionsweather.jpg "Weather Options")
+
+_**Picture above:** Tab `Weather` with manually selected Active Sky weather file on a network share._
 
 ### Scenery Library Database {#scenery-library-database}
 
@@ -105,7 +117,7 @@ Add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct c
 of airports like elevation, magnetic variance or others. All these airports will be recognized as add-on airports
 since all their files are not stored in the base flight simulator `Scenery` directory.
 
-To avoid unwanted highlighting of these airports as add-ons add the corresponding directory to this list.
+Insert the corresponding directory into this list to avoid unwanted highlighting of these airports as add-ons.
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 

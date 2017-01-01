@@ -8,6 +8,8 @@ Note that the flight plan drag and drop editing is based on the assumption that 
 
 Always select departure and destination first if you would like to build you flight plan manually. This will connect both points with a great circle line. Based on this line you can start to add navaids to your flight plan.
 
+Note that selecting airways is not possible yet.
+
 The following functionality is available:
 
 *   **Click on a flight plan leg:** Starts editing and adds a new waypoint depending on where the next click is done:

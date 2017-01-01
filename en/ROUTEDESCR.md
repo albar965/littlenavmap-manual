@@ -10,15 +10,15 @@ The upper part of the dialog shows the route description input field and the low
 warnings or errors that occur during reading.
 
 The description parser will try to use as much of the route as possible even if parts of the flight plan
-like waypoints or airways cannot be found. You will see warnings in the lower output field if that is the case.
+like waypoints or airways cannot be found or names are ambiguous. You will see warnings in the lower output field if that is the case.
 
-For long flight plans it can happen that far aways waypoints are added if names are not unique. Remove these manually if needed.
+For long flight plans it can happen that far away waypoints are added if names are not unique. Remove these manually if needed.
 
 Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are
 used together with flight simulator stock data from 2005. It is recommended to use a navigation data update for the
 stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/) or [SimBrief](https://www.simbrief.com).
 
-I recommend to use an AIRAC cycle that is closest to the flight simulator navigation age \(end of 2005\) if a navigation data update is not an option .
+Otherwise, use an AIRAC cycle from the online services that is closest to the flight simulator navigation data age at the end of 2005 if a navigation data update is not an option .
 
 Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases.
 This happens due to ambiguities in the route network like NDB and VOR stations having the same names
@@ -38,7 +38,7 @@ _**Picture above:** A route description that was read successfully with a few wa
 * **`Read Route Description`:** Reads the route description and prints any messages, warnings and errors in the
   lower output field. The current flight plan is not affected by this action.
 
-* **`Create Flight Plan`:** Creates a new flight plan for the parsed route description.
+* **`Create Flight Plan`:** Creates a new flight plan for the parsed route description and replaces the current plan.
   You have to click `Read Route Description` before.
 
 ### Format {#format}
@@ -55,7 +55,7 @@ Examples: `KEAT`, `CYPU`, `S16`.
 
 `ALTERNATES`: Alternate airports are optional and are simply appended to the flight plan.
 
-`SPEEDALT`: Contains the cruise speed and altitude. See below for a details.
+`SPEEDALT`: An optional entry that contains the cruise speed and altitude. See below for a details.
 
 `ENROUTE`: This is a list of either `WAYPOINT` or a `AIRWAYWAYPOINT` forming the actual flight plan. The first entry
 has to be an airport, waypoint, VOR or NDB.
@@ -77,7 +77,7 @@ Examples: `V495 CONDI`, `V338 YVR`, `V330 TRENA`.
 
 #### Speed and Altitude {#speed-and-altitude}
 
-Cruising speed and cruising level not separated by a space.
+Cruising ground speed and cruising level not separated by a space.
 
 Speed is prefixed with:
 
@@ -85,7 +85,7 @@ Speed is prefixed with:
 
 `N`: Knots followed by a four digit value.
 
-`M`: Mach followed by a three digit value.
+`M`: Mach followed by a three digit value. The mach value is converted to knots ground speed assuming standard atmosphere conditions at the give flight altitude.
 
 Altitude is prefixed with:
 
@@ -114,13 +114,12 @@ Example: `51N010E`.
 * **Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes, north/south indicator.
   Then three digits for degrees, two digits for minutes and east/west indicator.
   Example: `4010N03822W`.
-* **North atlantic track points** \(NAT\).
+* **North atlantic track points** \(NAT\). Two digits degrees north and two digits degrees west followed by character `N`.
   Example: `5010N`.
-* **Coordinate waypoint pairs** with degrees and minutes prefixed with north/south and east/west indicator.
+* **Coordinate waypoint pairs** with degrees and minutes as above and prefixed with north/south and east/west indicator.
   Examples: `N4200 W02000` or `N4200/W02000`.
 * **Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, thee digits for minutes.
-  Then east/west indicator, three digits degrees, three digits minutes.
-  Example: `N48194W123096`
+  Then east/west indicator, three digits degrees, three digits minutes. Example: `N48194W123096`
 
 ### Flight Plan Description Examples {#examples}
 

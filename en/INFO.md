@@ -3,15 +3,20 @@
 This dock window contains text information about airports in several tabs as well as information for one or more navaids or airways in another tab.
 A tab `Weather` also includes decoded weather information for the selected airport.
 
-All information can be copied into the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl-A` to select all and `Ctrl-C` to copy the content to the clipboard.
+All information can be copied into the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl+A` to select all and `Ctrl+C` to copy the content to the clipboard.
 
-Information is shown when selecting one of the `Show Information for ...` context menu items in the map, flight plan dock window or the seach result table.
+Information is shown when selecting one of the `Show Information for ...` context menu items in the map, flight plan dock window or the search result table.
 One airport and all navaids are loaded into the information display if multiple objects are nearby a mouse click
 
 A blue link `Map` allows jumping to the shown airport or navaid on the map.
 Additional links for helipads are available in the tab `Runways/Helipads`.
 
 An airway is always displayed with all its waypoints that are also linked to their respective map positions.
+
+The display for all airports and navaids contains one or more links besides the title of the flight simulator scenery entry at the bottom of the list in section `Scenery`. 
+These links point to the respective BGL files. A click will open Windows Explorer with the corresponding file selected.
+
+Multiple links can appear for airports since these can be modified by multiple BGL files from different sceneries.
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 

@@ -4,7 +4,7 @@ To add an arbitrary online of an offline map to _Little Navmap_ simply add the m
 
 The full path to the DGML file \(see links below for more details about DGML\) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
 
-The menu `Main Menu` -&gt; `Map` -&gt; `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
+The menu `Main Menu` -> `Map` -> `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
 
 The options `Show Country and City Names` and `Show Hillshading` are enabled for all additional map themes but might not work depending on properties defined in the map's DGML file.
 
@@ -19,35 +19,34 @@ More maps and information about map configuration and DGML files can be found he
 
 * **Program crashes on start up:** Delete the settings and the database files. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete \(or better: rename or move\) the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`.
 * **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for
-NOAA or VATSIM weather. If _Little Navmap_ cannot reach the internet if these fail.
-* Zoom can be too fast when using a touchpad with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
-* Online maps like _OpenStreetMap_ or _OpenTopoMap_ maps can end up blurred when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
-* _OpenStreetMap_ shows a dark gray background on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
+NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
+* **Zoom can be too fast when using a touchpad** with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
+* **Search shows no result or unexpected results:** Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
+* **Search shows strange column names like `airport_id` or others:** Use `Reset View` in the context menu   of the result table.
+* **Online maps like _OpenStreetMap_ or _OpenTopoMap_ maps can end up blurred** when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
+* **_OpenStreetMap_ shows a dark gray background** on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
 * **Loading of the scenery database takes too long:** Exclude scenery directories containing only landclass, elevation data or other for _Little Navmap_
 irrelevant data. You can do that in the `Options` dialog on the `Scenery Library Database` tab. See [Options](OPTIONS.md#scenery-library-database_exclude).
-* You can exclude scenery directories in the `Options` dialog on the `Scenery Library Database` tab if loading of an add-on BGL causes the program to crash. Do not restart the program after the crash and instead load the log file `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`. The path may vary depending on your Windows installation. Search for the last line in the log-file that looks like:
+* You can exclude scenery directories in the `Options` dialog on the `Scenery Library Database` tab if loading of an add-on BGL causes the program to crash. Do not restart the program after it shows the crash dialog and instead load the log file which is typically `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`. The path may vary depending on your Windows installation. Search for the last line in the log-file that looks like:
 
-  `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
+     `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
 
-    Search for `APX41080.bgl` and exclude its directory from loading in the `Options` dialog.
+     Now search for `APX41080.bgl` and exclude its directory from loading in the `Options` dialog.
 
 ## Known Problems {#known-problems}
 
 * Some airport add-ons do not modify the stock airports but only add new scenery and buildings. These add-ons will not be recognized as such and are therefore not highlighted on the map \(italic and underlined text\).
-* Add-on developers have to use all kind of workarounds to avoid FSX limitations which means the display and information given for add-on airports is not always correct. A lot of these changes are also done to make AI behave properly. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports, duplicate runways in water, taxiways in water, all military gates at civilian airports and more.
-* Route description parsing can skip waypoints in rare cases even for previously calculated flight plans.
+* Add-on developers have to use all kind of workarounds to avoid FSX limitations which means the display and information given for add-on airports is not always correct. A lot of these changes are also done to make AI behave properly. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports, duplicate runways in water, taxiways in water, military gates at civilian airports and more.
+* Route description parsing can skip waypoints in rare cases even for previously calculated flight plans. This can happen due to fragmented airways, errors in the source data or ambiguities between navaids.
 * Some KML/KMZ files do not show up on the map. Adding a centerpoint pushpin to the KML/KMZ file can fix this.
 * World coverage for elevation and _OpenStreetMap_ hill shading data is limited and currently ends at 60 degree north. Use the _OpenTopoMap_, _OpenMapSurfer_ or _Stamen Terrain_ map themes which have world wide coverage for hill shading.
-* There are errors in the elevation source data \(like in northern Italy, Po Valley\) which will show up in the flight plan elevation profile.
+* There are errors in the elevation source data \(like in northern Italy, Po Valley or Lake Titicaca in Peru and Bolivia\) which will show up in the flight plan elevation profile.
 * The Mercator projection shows occasional display problems depending on zoom distance like horizontal lines near the anti meridian or missing flight plan segments.
 * The Marble floating map overlays on the map can be configured but do not save all settings except their visibility.
 * Flight plan and airways are drawn using great circle lines instead of rhumb lines. Distance and course are not affected by this.
 * Magnetic variance is partially not set \(for example VORDME Cambridge Bay YCB\). This is an error in the source data and can be fixed with a workaround in the future.
-* Airports are misplaced compared to the background maps. This is an error in the source data and cannot be fixed.
+* Airports are misplaced \(for example Cabo San Lucas, MM15 in Mexico\) compared to the background maps. This is an error in the source data and cannot be fixed.
 * Map printouts can be fuzzy since they depend on screen resolution. As a workaround increase the size of the visible map window.
-* macOS: Start position on the map is not restored properly. Use home as start position instead.
-* macOS: Loading of KML files does no work. The menu items are disabled.
-* macOS: The map floating overlays do not work.The menu items are disabled.
 
 ## How to report a Bug {#how-to-report-a-bug}
 
@@ -113,7 +112,7 @@ A huge Thank you! to Paul Watts for his support, for testing, tips and links to 
 
 A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
 
-Another big Danke! to Marc from Germany for all his ideas and endless bug reports.
+Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
 
 Thanks to all in the forums who patiently supported me and gave invaluable feedback during the public beta:
 

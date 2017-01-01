@@ -4,7 +4,7 @@ See the [Nav Map Legend](LEGEND.md) for details about the various symbols shown 
 
 ### Moving {#moving}
 
-Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map (overlay buttons not avaialble for MacOS).
+Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map.
 
 Alternatively use the cursor keys to scroll the map and `+` and `-` to zoom in and out. `Alt+Left` and `Alt+Right` goes forward or backward in the map position history. Do not forget to activate the map window by clicking into it before using any keys for movement.
 
@@ -32,7 +32,7 @@ an AI aircraft can disappear from the map when landing on an airport.
 On the lowest zoom distance all aircraft are drawn to scale as are the parking spots. That means you can easily
 check if your aircraft fits on an apron, parking spot or taxiway.
 
-A yellow wind arrow and labels for the situation around the user aircraft can be displayed can be displayed optionally on the
+A yellow wind arrow and labels for the situation around the user aircraft can be displayed on the
 top center of the map.
 
 See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
@@ -42,7 +42,7 @@ See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type
 
 Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways,
 parking, fuel box, towers and all aircraft. The tooltip is truncated and shows a message `More...` if
-it gets too long. In that case reduce details or zoom in.
+it gets too long. In that case reduce details or zoom in closer.
 
 The sensitivity for the tooltip display can be adjusted in the `Options` dialog on the `Map Display` tab.
 
@@ -90,17 +90,17 @@ You can use the keyboard, mouse wheel or the map overlays to scroll and zoom whi
 
 Right click, pressing the escape key or any click outside of the map window cancels the measurement line editing.
 
-Measurement lines use nautical miles as unit. Feet will be added as unit if the lines are short enough e.g. takeoff distance for crossing takeoffs and moving around an airport.
+Measurement lines use nautical miles, kilometers or statue miles as unit. Feet or meter will be added as unit if the lines are short enough. This allows to measure e.g. takeoff distance for crossing takeoffs.
 
 A great circle gives the shortest distance from point to point on earth but does not use a constant course. For that reason the measurement line will show two course values. One for the start and one for the end position.
 
 Course is indicated in degrees true. Additional information like ident or frequency will be added to the line if the measurement starts at a navaid or an airport.
 
-See the Nav Map Legend for details on measurement lines.
+See the [Nav Map Legend](LEGEND.md#map-marks) for details on measurement lines.
 
 #### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Measure Rhumb Distance from here {#measure-rhumb-distance-from-here}
 
-A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is longer than the great circle route.
+A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is slightly longer than the great circle route.
 
 The course for a rhumb line is normally indicated in degrees true. Course will be indicated in degrees magnetic if the measurement starts at a navaid or at an airport that has a magnetic variation. Additional information like ident and frequency will be added to the line in this case.
 
@@ -132,7 +132,7 @@ The default runway will be used as starting position if the clicked object is an
 
 #### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination}
 
-This is active if the click is at an airport. It will either replace the flight plan destination or add the airport if the flight plan is empty.
+This menu item is active if the click is at an airport. It will either replace the flight plan destination or add the airport if the flight plan is empty.
 
 #### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan}
 

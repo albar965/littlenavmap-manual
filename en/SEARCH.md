@@ -8,7 +8,7 @@ These tabs contain multiple rows of search filters that can be switched on and o
 
 The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
 
-If you do not get the expected results or no results at all use the `Reset Search`menu item or press Ctrl-R to clear all search criteria.
+If you do not get the expected results or no results at all use the `Reset Search`menu item or press `Ctrl+R` to clear all search criteria.
 
 Filters are defined by various controls which are mostly self explaining. Only text filters and the tri-state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
 
@@ -46,7 +46,7 @@ The center for the distance search is highlighted by a ![Distance Search Symbol]
 
 To restrict the search further you can select a direction \(North, East, South and West\).
 
-Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results.
+Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria. 
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
@@ -54,7 +54,7 @@ _**Picture above A complex search:** Find all airports within a distance between
 
 ### Search Result Table View {#search-result-table-view}
 
-All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl-Click` is possible.
+All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift+Click` or `Ctrl+Click` is possible.
 
 ### Table View {#table-view}
 
@@ -104,7 +104,7 @@ Clears search filters and shows all entries again in the search result table vie
 
 The table view does not show all entries initially for performance reasons. This menu item allows to load and show the whole search result. The view switches back to the limited number of entries after a search filter is modified or the sort order is changed. The number of all, visible and selected entries is shown at the bottom of the tab.
 
-Be aware that showing all navaids and airports can take some time especially if they are highlighted on the map when selecting all in the search result. The program does not crash but needs a few seconds to highlight all on the map.
+Be aware that showing all navaids and airports can take some time especially if they are highlighted on the map when selecting all in the search result. The program does not crash but needs a few seconds to highlight everything on the map.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-0}
 
@@ -122,7 +122,7 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Copy](../images/icons/copy.png "Copy") Copy {#copy}
 
-Copies the selected entries in CSV format into the clipboard. This will consider changes to the table view like column order and sort order. The CSV will include a header line.
+Copies the selected entries in CSV format into the clipboard. This will consider changes to the table view like column order and sort order. The CSV includes a header line.
 
 #### Select All {#select-all}
 

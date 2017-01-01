@@ -58,15 +58,15 @@ Removes all loaded KML files from the map.
 #### ![Offline](../images/icons/offline.png "Offline") Work Offline {#work-offline}
 
 Stops loading of map data from the Internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
-A red **`Offline.`** indication is shown in the status bar if the offline mode is enabled.
+A red **`Offline.`** indication is shown in the status bar if this mode is enabled.
 
 You should restart the application after going online again.
 
 ### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Save Map as Image{#save-map-as-image}
-Saves the current map view as an image file. JPG, PNG and BMP are allowed formats.
+Saves the current map view as an image file. Allowed formats are JPG, PNG and BMP.
 
 ### ![Print Map](../images/icons/printmap.png "Print Map") Print Map{#print-map}
-Allows to print the current map view. See [Printing the Map](/PRINT.md#printing-the-map) for more information.
+Allows to print the current map view. See [Printing the Map](PRINT.md#printing-the-map) for more information.
 
 ### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan{#print-flight-plan}
 Opens a print dialog that allows you to select flight plan related information to be printed. See [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan) for more information.
@@ -102,7 +102,7 @@ Opens a dialog with the route description of the current flight plan that also a
 #### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copy Flight Plan Route to Clipboard {#flight-plan-route-clipboard}
 
 Copies the route description of the current flight plan to the clipboard.
-See [here](/ROUTEDESCR.md#flight-plan-from-route-description) for more information.
+See [here](ROUTEDESCR.md#flight-plan-from-route-description) for more information.
 
 #### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Calculate Direct {#calculate-direct}
 
@@ -126,7 +126,7 @@ A simplified east/west rule is used to adjust the cruise altitude to odd/even va
 
 The default behavior is to jump from the departure airport to the next waypoint of a suitable airway and vice versa for the destination. This can be changed in `Options` dialog on the `Flight Plan` tab if VOR or NDB stations are preferred as transition points to airways.
 
-The airway network of Flight Simulator is not complete (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas will fail.
+The airway network of Flight Simulator is not complete (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas can fail.
 
 Create the airway manually as a workaround or use an online planning tool to obtain a "route string" and use the `New Flight Plan from String` option to create the flight plan.
 
@@ -146,7 +146,7 @@ Swaps departure and destination and reverses order of all intermediate waypoints
 
 #### ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png "Adjust Flight Plan Altitude") Adjust Flight Plan Altitude {#adjust-flight-plan-alt}
 
-Changes the flight plan altitude according to a simplified East/West rule and the current route type (IFR or VFR).
+Changes the flight plan altitude according to a simplified East/West rule and the current route type (IFR or VFR). Rounds the altitude up to the nearest even 1000 feet (or meter) for westerly flight plans or odd 1000 feet (or meter) for easterly flight plans. Adds 500 feet for VFR flight plans.
 
 ### Map Menu {#map-menu}
 
@@ -193,7 +193,7 @@ A flat projection that gives the most fluid movement and the sharpest map when u
 
 Shows earth as a globe which is the most natural projection. Movement can stutter slightly when using the picture tile based online maps themes like _OpenStreetMap_ or _OpenTopoMap_. Use the `Simple`, `Plain` or `Atlas` map themes to prevent this.
 
-Online maps can appear slightly blurred when using this projection. This is a result from converting the image tiles to the spherical display.
+Online maps can appear slightly blurred when using this projection. This is a result from converting the flat image tiles to the spherical display.
 
 ![Little Navmap Spherical projection and Simple Map Theme](../images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
 
@@ -211,7 +211,7 @@ _OpenStreetMap_ data is not loaded directly from the OSM servers but from the [M
 
 ![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
-_**Picture above:** View at an Italian airport using _OpenStreetMap_ theme and hill shading._
+_**Picture above:** View at an Italian airport using OpenStreetMap theme and hill shading._
 
 ##### OpenMapSurfer {#openmapsurfer}
 
@@ -299,7 +299,7 @@ Shows or hides the flight plan. The flight plan is shown independent of the zoom
 
 #### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Show Aircraft {#show-aircraft}
 
-Shows the user aircraft if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
+Shows the user aircraft and keeps it centered on them map if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
 
 A click on the user aircraft shows more information in the `Simulator Aircraft` dock window.
 
@@ -312,13 +312,13 @@ The aircraft centering will be switched off when using one of the following func
 *   `Show Flight Plan`. Either manually in a menu item or after loading.
 *   Centering a Google Earth KML/KMZ file after loading
 
-This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` and enable `Show Aircraft`.
+This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` and enable `Show Aircraft` again.
 
 #### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Show Aircraft Trail {#show-aircraft-trail}
 
 Shows the user aircraft trail. The trail is always shown independent of the zoom distance. It is saved and will be reloaded on program startup.
 
-The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -> `Map` -> `Delete Aircraft Trail`.
+The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -> `Map` -> `Delete Aircraft Trail`. The trail is also deleted when the user aircraft jumps over large distance when assigning a new airport, for example.
 
 The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
 
@@ -390,7 +390,7 @@ Allows to hide the floating map overlays, like the overview on the top left or t
 
 #### ![Legend](../images/icons/legenddock.png "Legend") Legend {#legend}
 
-Opens or closes these dock windows.
+Opens or closes these dock windows. The map dock window cannot be closed.
 
 #### Main Toolbar, Map Toolbar, Map Options Toolbar, Flight Plan Toolbar, Dock Window Toolbar, Statusbar {#main-toolbar-map-toolbar-map-options-toolbar-flight-plan-toolbar-dock-window-toolbar-statusbar}
 
@@ -400,15 +400,15 @@ Shows or hides these toolbars and the statusbar.
 
 #### ![Contents (Online)](../images/icons/help.png "Contents (Online)") Contents (Online) {#help-contents}
 
-Shows this online help in the default web browser.
+Shows the online user manual in the default web browser.
 
 #### ![Contents (Offline, PDF)](../images/icons/help.png "Contents (Offline, PDF)") Contents (Offline, PDF) {#help-contents-offline}
 
-Shows the included PDF help document in the default PDF viewer.
+Shows the included PDF user manual in the default PDF viewer.
 
 #### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legend {#navmap-legend-map-legend}
 
-Shows the navigation related map legend in the `Legend` dock window. You can also access it here: [Navmap Legend](LEGEND.md).
+Shows the navigation related map legend in the `Legend` dock window. You can also access the legend here: [Navmap Legend](LEGEND.md).
 
 #### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Map Legend for current Map Theme {#navmap-legend-map-legend}
 
@@ -443,10 +443,10 @@ if offline mode is enabled.
     *   `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
     *   `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
     *   `Incomplete.`: Download failed.Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region.
-*   Zoom distance (viewpoint to earth surface) in nautical miles.
-*   Cursor position on map in degrees/minutes/seconds latitude and longitude.
+*   Zoom distance (viewpoint to earth surface) in nautical miles or kilometers.
+*   Cursor position on map in degrees/minutes/seconds or decimal degrees latitude and longitude.
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 
-_**Picture above:** Status bar with message about the last action on the left side and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level was increased once and the map coordinates are not shown since the cursor is not inside the map window. The online map download progress indicator is empty._
+_**Picture above:** Status bar with message about the last action on the left side (`Options changed.`), the connection status and a tooltip that indicates what is currently shown on the map. The map shows only airports with runways longer than 4000 feet. No navaids are shown. The map detail level is unchanged and the map coordinates are not shown since the cursor is not inside the map window. The online map download progress indicator shows `Done.` indicating all map tiles were downloaded. Zoom distance is 118 nautical miles._
 

@@ -11,7 +11,9 @@ _**Little Navconnect**_** is only needed for remote connections now.**
 * **Printing for map, flight plan, airport and weather information added.**
 * **Added night user interface style and others including option to dim the map for night display.**
 * **Units can now be changed to metric, imperial and nautical separately for distance, altitude, speed, weight and volume.**
-* **Database updates by **[**fsAerodata**](https://www.fsaerodata.com)** are supported.**
+* **Database updates by [fsAerodata](https://www.fsaerodata.com) and [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html) are supported.**
+* **Dock windows are more flexible and the map window can be undocked too now.**
+* **Loading time for the scenery library has been significantly reduced.**
 * Coordinate format can now be changed from degree/minutes/seconds to decimal degree format.
 * Frequencies for VOR, NDB and ILS added to approach information tab.
 * Added display of helipad details to information window.

@@ -1,9 +1,9 @@
 
 ## ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Connecting to a Flight Simulator {#connecting-to-a-flight-simulator}
 
-The setup procedure is different for remote connections and local connections.
+The setup procedure is different for remote connections and local connections to a flight simulator.
 
-_Little Navmap_ can connect to the flight simulator directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
+_Little Navmap_ can connect directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
 
 ### Local Connection
 
@@ -18,9 +18,9 @@ _Little Navmap_ can connect to the flight simulator directly if all programs are
 
 ### Remote Connection
 
-User aircraft information is transfered to _Little Navmap_ by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
+User aircraft and weather information is transfered to _Little Navmap_ by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
 
-Make sure that the major versions of _Little Navmap_ and _Little Navconnect_ match, otherwise you will get an error message. 
+Make sure that the major versions of _Little Navmap_ and _Little Navconnect_ match, otherwise you might get an error message. 
 _Little Navmap_ 1.0.5 is compatible with _Little Navconnect_ 1.0.2 but not with 1.2 for example.
 
 1.  Download and install _[Little Navconnect](https://albar965.github.io/littlenavconnect.html)_ on the computer that is running the flight simulator. Start it and take note of the message that is printed on the logging window. You only need the colored values. You can use the IP address or the hostname. _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use.

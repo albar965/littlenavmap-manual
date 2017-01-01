@@ -6,7 +6,7 @@ Opens the print preview dialog that allows the current map view to be printed.
 
 Printing is currently limited to the screen resolution
 of the current map view. To get a less blurry printout enlarge the map window as much as possible. You
-can close all dock windows to achieve this.
+can undock the map window to achieve this.
 
 ![Print Map Preview Dialog](../images/printmap.jpg "Print Map Preview Dialog")
 
