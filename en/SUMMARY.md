@@ -22,7 +22,7 @@
 * [Printing the Flight Plan](PRINT.md#printing-the-flight-plan)
 * [Flight Plan Route Description](ROUTEDESCR.md#flight-plan-from-route-description)
 * [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog)
-* [Connecting to a Flight Simulator](/CONNECT.md)
+* [Connecting to a Flight Simulator](CONNECT.md)
 * [Options Dialog](OPTIONS.md#options-dialog)
 * [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation)
 * [Changelog](CHANGELOG.md)

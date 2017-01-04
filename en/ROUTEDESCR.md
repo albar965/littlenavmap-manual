@@ -16,19 +16,20 @@ For long flight plans it can happen that far away waypoints are added if names a
 
 Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are
 used together with flight simulator stock data from 2005. It is recommended to use a navigation data update for the
-stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/) or [SimBrief](https://www.simbrief.com).
+stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/),
+[Online Flight Planner](http://onlineflightplanner.org/), [SimBrief](https://www.simbrief.com) or [SkyVector](https://skyvector.com).
 
-Otherwise, use an AIRAC cycle from the online services that is closest to the flight simulator navigation data age at the end of 2005 if a navigation data update is not an option .
+Otherwise, use an AIRAC cycle from the online services that is closest to the flight simulator navigation data age at the end of 2005 if a navigation data update is not an option.
 
 Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases.
-This happens due to ambiguities in the route network like NDB and VOR stations having the same names
+This happens due to navaid ambiguities like NDB and VOR stations having the same names
 or errors in the source data.
 
 The cruise speed and altitude are used to create the flight plan if given.
 
 ![Route Description Dialog](../images/routedescr.jpg "Route Description Dialog")
 
-_**Picture above:** A route description that was read successfully with a few warnings about ignored elements.Speed and altitude were recognized._
+_**Picture above:** A route description that was read successfully with a few warnings about ignored elements. Speed and altitude were recognized._
 
 ### Buttons {#buttons}
 
@@ -108,37 +109,67 @@ Examples:
 #### Coordinates {#coordinates}
 
 Coordinates can be supplied in different formats:
-Degrees only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.
-Example: `51N010E`.
 
-* **Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes, north/south indicator.
-  Then three digits for degrees, two digits for minutes and east/west indicator.
-  Example: `4010N03822W`.
-* **North atlantic track points** \(NAT\). Two digits degrees north and two digits degrees west followed by character `N`.
-  Example: `5010N`.
-* **Coordinate waypoint pairs** with degrees and minutes as above and prefixed with north/south and east/west indicator.
-  Examples: `N4200 W02000` or `N4200/W02000`.
-* **Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, thee digits for minutes.
-  Then east/west indicator, three digits degrees, three digits minutes. Example: `N48194W123096`
+**Degrees** only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.
+
+Example: `51N010E`
+
+**Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes and north/south indicator.
+Then three digits for degrees, two digits for minutes and east/west indicator.
+
+Example: `4010N03822W`.
+
+**Degrees, minutes and seconds** \(15 characters\): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator.
+Then three digits for degrees, two digits for minutes, two digits for seconds and east/west indicator. This format is used by
+[SkyVector](https://skyvector.com) for example.
+
+Example: `481200N0112842E`.
+
+**North atlantic track points** \(NAT\). Two digits degrees north and two digits degrees west followed by character `N`.
+
+Example: `5010N`.
+
+**Coordinate waypoint pairs** with degrees and minutes as above and prefixed with north/south and east/west indicator.
+
+Examples: `N4200 W02000` or `N4200/W02000`.
+
+**Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, thee digits for minutes.
+
+Then east/west indicator, three digits degrees, three digits minutes. This format is used by the _Flight1 GTN 650/750_.
+
+Example: `N48194W123096`
 
 ### Flight Plan Description Examples {#examples}
 
 Frankfurt Main \(EDDF\) to Fiumicino \(LIRF\):
 
-* Direct connection:
-  `EDDF LIRF` or `EDDF DCT LIRF`.
-* VOR to VOR:
-  `EDDF FRD KPT BOA CMP LIRF`.
-* Same as above with departure time \(`ETD`\) and arrival time \(`ETA`\) which both will be ignored:
-  `EDDF1200 FRD KPT BOA CMP LIRF1300`.
-* Same as above on flight level 310 at 410 knots:
-  `EDDF N0410F310 DCT FRD DCT KPT DCT BOA DCT CMP DCT LIRF`
-* Using Jet airways:
-  `EDDF ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG Y740 LORLO M738 AMTEL M727 TAQ LIRF`
-* Same as above on flight level 310 at mach 0.71 with an additional speed and altitude at `NATAG` which will be ignored:
-  `EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF`
-* User defined waypoints with degree/minute notation and an alternate `LIRE`:
-  `EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE`
+**Direct connection:**
+
+`EDDF LIRF` or `EDDF DCT LIRF`.
+
+**VOR to VOR:**
+
+`EDDF FRD KPT BOA CMP LIRF`.
+
+**Same as above with departure time \(`ETD`\) and arrival time \(`ETA`\) which both will be ignored:**
+
+`EDDF1200 FRD KPT BOA CMP LIRF1300`.
+
+**Same as above on flight level 310 at 410 knots:**
+
+`EDDF N0410F310 DCT FRD DCT KPT DCT BOA DCT CMP DCT LIRF`
+
+**Using Jet airways:**
+
+`EDDF ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG Y740 LORLO M738 AMTEL M727 TAQ LIRF`
+
+**Same as above on flight level 310 at mach 0.71 with an additional speed and altitude at `NATAG` which will be ignored:**
+
+`EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF`
+
+**User defined waypoints with degree/minute notation and an alternate airport `LIRE`:**
+
+`EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE`
 
 
 
