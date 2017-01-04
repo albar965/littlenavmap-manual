@@ -133,9 +133,7 @@ Example: `5010N`.
 
 Examples: `N4200 W02000` or `N4200/W02000`.
 
-**Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, thee digits for minutes.
-
-Then east/west indicator, three digits degrees, three digits minutes. This format is used by the _Flight1 GTN 650/750_.
+**Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, three digits for minutes by 10. Then east/west indicator, three digits degrees, three digits minutes by 10. This format is used by the _Flight1 GTN 650/750_.
 
 Example: `N48194W123096`
 
