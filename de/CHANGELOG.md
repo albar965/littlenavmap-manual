@@ -13,31 +13,30 @@ _**Little Navconnect**_** wird nur noch für Netzwerkverbindungen gebraucht.**
 * **Die Karte, der Flugplan, sowie Wetter- und Flugplatzinformationen können nun ausgedruckt werden.**
 * **Nachtmodus und weitere Stile für die graphische Benutzeroberfläche hinzugefügt. Die Karte kann im Nachtmodus stufenweise abgedunkelt werden.**
 * **Maßeinheiten können nun zwischen metrisch, imperial and nautisch separat für Distanz, Höhe, Geschwindigkeit, Gewicht und Volument eingestellt werden.**
-* **Database updates by [fsAerodata](https://www.fsaerodata.com) and [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html) are supported.**
-* **Dock windows are more flexible and the map window can be undocked too now.**
-* **Loading time for the scenery library has been significantly reduced.**
-
+* **Navigationsdatenbankaktualisierungen von [fsAerodata](https://www.fsaerodata.com) und [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html) werden unterstützt.**
+* **Das Kartenfenster kann jetzt vom Hauptfenster abgelöst werden und die Dockfenster können vielfältiger angeordnet werden.**
+* **Die Ladezeit der Szeneriedatenbank wurde drastisch reduziert. Übliche Ladezeiten sind nun zwei bis drei Minuten.**
 * Das Koordinatenformat kann nun zwischen Grad/Minuten/Sekunden und Dezimalformat umgeschaltet werden.
 * Funkfrequenzen für VOR, NDB und ILS werden nun im Informationsfenster im Tab `Approaches` \(Anflugprozeduren\) angezeigt.
 * Helikopterlandeplätze werden im Informationsfenster angezeigt.
 * Das Programm zeigt nun optional den `Save as` \(Speichern als\) Dialog an, wenn Start-, Zielflugplatz oder der Flugplantyp geändert wurden. Dies vermeidet das Überschreiben von Flugplänen mit falschem Inhalt.
 * Die aktuelle Kartenansicht kann als Bild abgespeichert werden.
-* Hilfe ist nun entwerder offline als PDF-Datei oder online über Gitbook verfügbar.
+* Hilfe ist nun entweder offline als PDF-Datei oder online über Gitbook verfügbar.
 
 #### Flugplan
 
 * **Flugpläne können nun im GFP-Format exportiert werden, das von den _Flight1 GTN 650/750_ GPS-Systemen benutzt wird.**
 * Benutzerdefinierte Wegpunkte können nun umbenannt werden.
-* **ATS Routenbeschreibungen für Flugpläne können nun eingelesen und ausgegeben werden. Dabeit werden sogar Geschwindigkeit und Reisfughöhe erkannt.**
+* **ATS Routenbeschreibungen für Flugpläne können nun eingelesen und ausgegeben werden. Dabei werden sogar Geschwindigkeit und Reiseflughöhe erkannt.**
 * Der aktive Flugplanabschnitt wird in der Flugplantabelle und auf der Karte hervorgehoben.
-* Die Reiseflughöhe kann nun automatisch nach einer vereinfachten Ost/West Regel und den Flugplantype \(IFR oder VFR\) eingestellt werden.
+* Die Reiseflughöhe kann nun automatisch nach einer vereinfachten Ost/West Regel und den Flugplantyp \(IFR oder VFR\) eingestellt werden.
 * Reichweitenspalte für Funkfeuer in der Flugplantabelle hinzugefügt.
 
 #### Wetter
 
 * **Wetterdaten können nun direkt vom Simulator geholt werden und werden alle 15 Sekunden angezeigt. Diese Funktion steht auch für Netzwerkverbindungen zur Verfügung.**
 * **Wetterdaten können nun im dekodierten Format für alle Quellen, wie Simulator, ASN, AS16, NOAA und Vatsim angezeigt werden.**
-* Aus _Active Sky_ kann nun das Flugplanwetter für Start- und Zielflugplatz auch in dekodiertem Format angezeigt werden. Dies ergibt präzise Wetterinformationenfür ASN oder AS16 Benutzer.
+* Aus _Active Sky_ kann nun das Flugplanwetter für Start- und Zielflugplatz auch in dekodiertem Format angezeigt werden. Dies ergibt präzise Wetterinformationen für ASN oder AS16 Benutzer.
 * Zeiger am oberen Rand der Karte für den Wind um das Nutzerflugzeug hinzugefügt.
 
 #### Kartendarstellung
@@ -51,11 +50,10 @@ _**Little Navconnect**_** wird nur noch für Netzwerkverbindungen gebraucht.**
 * Flugzeugtypen, wie Jet, Kolbenmotor bzw. Turboprop und Helikopter werden über das Flugzeugsymbol angezeigt.
 * Die minimale sicher Flughöhe wird jetzt für alle Flugplansegmente im Höhenprofil angezeigt.
 * Die Landebahnlänge wird nun in genauen Einheiten, wie Meter oder Fuß abhängig von den eingestellten Maßeinheiten angezeigt.
-TODO
 * **Die Texte für Flugplätze, Benutzer- und AI- bzw. Multiplayer-Flugzeuge können separat geändert werden.**
 * **Symbol- und Textgrößen für Flugplätze, Navigationspunke, Benutzer- und AI- bzw. Multiplayer-Flugzeuge können einzeln geändert werden.**
-* Die Line der Benutzerflugzeugspur kann nun in Breite, Farbe und Typ geändert werden.
-* Die Linienbreite von Enternungsringen und Distanzmesslinien kann geändert werden.
+* Die Linie der Benutzerflugzeugspur kann nun in Breite, Farbe und Typ geändert werden.
+* Die Linienbreite von Entfernungsringen und Distanzmesslinien kann geändert werden.
 * Die Zoomentfernung für Doppelklick und `Show on map` Menüpunkte kann einzeln eingestellt werden.
 * Beim Programmstart kann nun optional die letzte Route auf der Karte zentriert werden.
 
@@ -83,8 +81,8 @@ TODO
 * Doppelte Luftstraßen und Navigationspunkte werden nun unterbunden.
 * Problemumgehung für zu lange Luftstraßensegmente hinzugefügt. Diese werden nun beim Laden ausgelassen.
 * Absturz bei zu kleinen BGL-Dateien wurde beseitigt.
-* Zoomproblem mit bestimmten Add-on Flugplätzen beseitigt, die eine weit entfernte Landebahnatrappe enthalten. Alle Landebahnen, die mehr als 50 Kilometer vom Flugplatz entfernt sind werden nun ausgelassen.
-* Luftraßen werden nun nicht mehr in unnötig viele Fragmente aufgespalten.
-* Ein Problem wurde beseitigt, das zu viele Landebahnoberfläschen als ungültig \(`invalid.`\) markier hatte.
+* Zoomproblem mit bestimmten Add-on Flugplätzen beseitigt, die eine weit entfernte Landebahnattrappe enthalten. Alle Landebahnen, die mehr als 50 Kilometer vom Flugplatz entfernt sind werden nun ausgelassen.
+* Luftrassen werden nun nicht mehr in unnötig viele Fragmente aufgespalten.
+* Ein Problem wurde beseitigt, das zu viele Landebahnoberflächen als ungültig \(`invalid.`\) markiert hatte.
 
 
