@@ -1,3 +1,7 @@
+## Changes from Release 1.2
+
+This is a development version. Refer to the file `CHANGELOG.txt` for more information.
+
 ## Changes from Release 1.0.5 to 1.2
 
 **The program is not compatible with Windows XP anymore.**

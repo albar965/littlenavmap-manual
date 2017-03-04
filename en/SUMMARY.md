@@ -12,6 +12,7 @@
 * [Map Display Legend](LEGEND.md)
 * [Map Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)
 * [Search Dock Window](SEARCH.md#search-dock-window)
+* [Flight Approaches](APPROACHES.md)
 * [Flight Plan Dock Window](FLIGHTPLAN.md#flight-plan-dock-window)
 * [Flight Plan Elevation Profile Dock Window](PROFILE.md#flight-plan-elevation-profile-dock-window)
 * [Information Dock Window](INFO.md#information-dock-window)
