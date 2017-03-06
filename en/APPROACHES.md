@@ -34,7 +34,19 @@ The following will happen if a procedure is attached to a flight plan:
 4. The active leg will follow the procedure after the initial fix instead of the flight plan.
 5. The procedure tree turns into a table showing all procedure legs. Legs are highlighted only in this view when flying a procedure.
 
+The currently selected approach and transition is shown in the flight plan label on top of the flight plan dock window:
+
+`Thisted (EKTS) Parking 4, Ramp GA Medium to Enontekio (EFET)`
+
+**`ILS FI21 Runway 21 via ENO (not connected)`**
+
+`856 nm, 4 h 55 m, High Altitude`
+
+A `(not connected)`indication is shown if the procedure is not attached to the flight plan \(i.e. the flight plan does not contain the initial fix of the procedure\). No active leg sequencing is done in this case.
+
 Attaching can be undone by deleting the initial fix from the flight plan.
+
+Note that you can also attach approaches that do not belong to your destination airport. This can be used to for example to descent through a ceiling to e.g. Terrace \(CYXT\) using an ILS approach and then continue visually to Kitimat \(CBW2\).
 
 ### Fix Types in a Procedure
 
@@ -65,18 +77,23 @@ Missed approach legs are activated once the simulator aircraft passes the last p
 
 _Little Navmap_ will detect when a hold is exited and advance the active leg to the next one if one of the two conditions is met:
 
-1. **If the next leg continues after the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile. 
+1. **If the next leg continues after the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile.
 
-1. **If the next leg starts before the hold fix:** Exit the hold right at its fix. Exit right turn holds to the left and vice versa. Proceed to the fix of the next leg which will be activated.
+2. **If the next leg starts before the hold fix:** Exit the hold right at its fix. Exit right turn holds to the left and vice versa. Proceed to the fix of the next leg which will be activated.
 
 ### Leg Highlights on the Map
 
 Up to three points will be highlighted when clicking on a procedure leg:
+
 * A small blue circle shows the beginning of the leg.
 * The beginning of the leg is shown by a large blue circle.
 * A thin circle shows the location of the recommended or related fix if available.
 
-### Context menu
+### Invalid Source Data
+
+A leg entry will drawn red if a navaid was not resolved during the scenery database loading process. This happens only when the source data is not valid or incomplete. The resulting procedure is not usable in this case.
+
+### Context Menu
 
 #### `Expand All`
 
@@ -94,6 +111,10 @@ Clears all selected procedures. This will hide the procedures on the map and wil
 
 Switches from the tree view to a table view showing all legs of the selected procedure. This view allows highlighting of the currently flown procedure leg.
 
+#### `Return to Procedure Overview`
+
+Goes back from the leg view table to the tree view showing all procedures of an airport.
+
 #### `Attach Initial Fix to Flight Plan`
 
 Adds the initial fix of the currently selected procedure to the flight plan. This will hide all flight plan legs after the initial fix and will also allow to follow and activate all procedure legs. Remove this change with `Flight Plan Undo`
@@ -108,5 +129,5 @@ Show or hide procedures on the map. The flight plan is not affected by this.
 
 #### `Show Missed Approaches`
 
-Show or hide missed approaches on the map. Missed approach legs will only be activated (magenta line) if they are shown.
+Show or hide missed approaches on the map. Missed approach legs will only be activated \(magenta line\) if they are shown.
 
