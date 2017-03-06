@@ -14,11 +14,11 @@ Transitions make only sense together with an approach which will guide you to th
 
 Saving of approaches with a flight plan is not implemented since it does not make sense. The PLN format does not support all the different leg types and the flight simulator would show only a bunch of weird lines. Select the approach in your GPS or FMC if you need it there. The same applies for the PMDG RTE format where PMDG decided to ignore saved procedures completely for other reasons.
 
-Legs are pre-calculated except holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg (e.g. if too many lines overlap) look at the procedure table in the flight plan window.
+Legs are pre-calculated except holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg \(e.g. if too many lines overlap\) look at the procedure table in the flight plan window.
 
- * **Holds:** No entry or exit is shown. You have to find a proper entry procedure yourself. Holds have a flying time in minutes or a distance. If time is given you fly the hold as usual. Enter at the fix, standard turn, straight leg for the given time (often one minute), standard turn and so on. Do not follow the lines slavish. 
- * **Procedure turns:** The flight simulator data moves the turn point of a procedure turn 10 nautical miles out from the fix which is usually too far away. Fly the turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next leg after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
- * **Distances**: Holds and procedure turns do not count in flying distance while all others legs do. This means the total flight plan distance as well as the top of descent point will change when selecting an approach or a transition. Altitude restrictions are not yet considered when calculating the top of descent.
+* **Holds:** No entry or exit is shown. You have to find a proper entry procedure yourself. Holds have a flying time in minutes or a distance. If time is given you fly the hold as usual. Enter at the fix, standard turn, straight leg for the given time \(often one minute\), standard turn and so on. Do not follow the lines slavish. 
+* **Procedure turns:** The flight simulator data moves the turn point of a procedure turn 10 nautical miles out from the fix which is usually too far away. Fly the turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next leg after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
+* **Distances**: Holds and procedure turns do not count in flying distance while all others legs do. This means the total flight plan distance as well as the top of descent point will change when selecting an approach or a transition. Altitude restrictions are not yet considered when calculating the top of descent.
 
 ### Attaching an Procedure to a Flight Plan
 
@@ -49,8 +49,8 @@ Attaching can be undone by deleting the initial fix from the flight plan.
 ### Altitude Restrictions
 
 * **Number only:** Fly at altitude. Example: `5400ft`.
-* **Prefix `A`:** Fly at or above altitude. Example: `A1800ft`.
-* **Prefix `B`:** Fly at or below altitude. Example: `B10000ft`.
+* **Prefix **`A`**:** Fly at or above altitude. Example: `A1800ft`.
+* **Prefix **`B`**:** Fly at or below altitude. Example: `B10000ft`.
 * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A8000B10000ft`.
 
 ### Related Navaids
@@ -109,6 +109,4 @@ Show or hide procedures on the map. The flight plan is not affected by this.
 #### `Show Missed Approaches`
 
 Show or hide missed approaches on the map. Missed approach legs will only be activated (magenta line) if they are shown.
-
-
 
