@@ -56,3 +56,59 @@ Attaching can be undone by deleting the initial fix from the flight plan.
 ### Related Navaids
 
 Most fixes have a related or recommended navaid. This can be a VOR, NDB, ILS or a waypoint. The related navaid comes with radial and distance values that can be used to locate waypoints when flying without GPS.
+
+### Missed Approaches
+
+Missed approach legs are activated once the simulator aircraft passes the last point of an approach. The display of remaining flight plan distance will switch to display of remaining distance to last missed approach leg. No legs are activated if missed approaches are not shown.
+
+### Exiting a Hold
+
+_Little Navmap_ will detect when a hold is exited and advance the active leg to the next one if one of the two conditions is met:
+
+1. **If the next leg continues after the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile. 
+
+1. **If the next leg starts before the hold fix:** Exit the hold right at its fix. Exit right turn holds to the left and vice versa. Proceed to the fix of the next leg which will be activated.
+
+### Leg Highlights on the Map
+
+Up to three points will be highlighted when clicking on a procedure leg:
+* A small blue circle shows the beginning of the leg.
+* The beginning of the leg is shown by a large blue circle.
+* A thin circle shows the location of the recommended or related fix if available.
+
+### Context menu
+
+#### `Expand All`
+
+Expands the tree to show all transitions and approach legs.
+
+#### `Collapse All`
+
+Collapses the tree to show only approaches.
+
+#### `Clear Selection`
+
+Clears all selected procedures. This will hide the procedures on the map and will also disconnect the flight plan from the initial fix if it was connected. The previously hidden flight plan legs will be shown again.
+
+#### `Show and Activate Legs`
+
+Switches from the tree view to a table view showing all legs of the selected procedure. This view allows highlighting of the currently flown procedure leg.
+
+#### `Attach Initial Fix to Flight Plan`
+
+Adds the initial fix of the currently selected procedure to the flight plan. This will hide all flight plan legs after the initial fix and will also allow to follow and activate all procedure legs. Remove this change with `Flight Plan Undo`
+
+#### `Show on Map`
+
+Shows the selected procedure on the map.
+
+#### `Show Procedures`
+
+Show or hide procedures on the map. The flight plan is not affected by this.
+
+#### `Show Missed Approaches`
+
+Show or hide missed approaches on the map. Missed approach legs will only be activated (magenta line) if they are shown.
+
+
+
