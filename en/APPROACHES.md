@@ -3,50 +3,68 @@
 ### Glossary
 
 * **Procedures:** in the following used for approaches, transitions, SIDs and STARs.
+* **SID:** Standard instrument departure.
+* **STAR:** Standard terminal arrival.
 * **Fix:** This term refers to a waypoint, radio navaid or an calculated point on a procedure.
 * **Initial Fix:** This is the first fix of a procedure.
 
 ### General
 
-SIDs and STARs are not fully supported yet. You can look at them but you have to add them manually to the flight plan, waypoint by waypoint.
+Departure and arrival procedures will be used when flying an airliner but also smaller aircraft have to use at least approach procedures at their destination when flying IFR.
+Flight simulator stock data provides only approaches and transitions. SIDs and STARs are not available. These can be added by using the fsAerodata navadata update or Navigraph cycles.
 
-Transitions make only sense together with an approach which will guide you to the runway. You can select a transition only together with an approach.
+An airline flight containing all variations can use the following procedures or segments:
 
-Saving of approaches with a flight plan is not implemented since it does not make sense. The PLN format does not support all the different leg types and the flight simulator would show only a bunch of weird lines. Select the approach in your GPS or FMC if you need it there. The same applies for the PMDG RTE format where PMDG decided to ignore saved procedures completely for other reasons.
+1. Departure airport
+2. SID
+3. SID Transition
+4. En route airway system
+5. STAR transition
+6. STAR
+7. Transition to approach
+8. Approach
+9. Destination
 
-Legs are pre-calculated except holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg \(e.g. if too many lines overlap\) look at the procedure table in the flight plan window.
+A small aircraft IFR flight can use the following procedures or segments:
+
+1. Departure airport
+4. En route airway system
+7. Transition to approach
+8. Approach
+9. Destination
+
+Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure. If you delete a procedure from the flight plan its transition will be deleted too.
+
+Procedure information is saved together with a flight plan and will be restored by _Little Navmap_ when loading the flight plan.
+Procedure waypoints are not saved in the flight plan since the PLN format does not support all the different leg types and the flight simulator would not be able to display it correctly. Select the approach in your GPS or FMC if you need it there. The same applies for the PMDG RTE format where PMDG decided to ignore saved procedures completely for other reasons.
+
+Procedure legs are pre-calculated except holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg \(e.g. if too many lines overlap\) look at the procedure table in the flight plan window.
 
 * **Holds:** No entry or exit is shown. You have to find a proper entry procedure yourself. Holds have a flying time in minutes or a distance. If time is given you fly the hold as usual. Enter at the fix, standard turn, straight leg for the given time \(often one minute\), standard turn and so on. Do not follow the lines slavish. 
-* **Procedure turns:** The flight simulator data moves the turn point of a procedure turn 10 nautical miles out from the fix which is usually too far away. Fly the turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next leg after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
+* **Procedure turns:** The flight simulator data moves the turn point of a procedure turn 10 nautical miles out from the fix which is usually too far away. Fly the turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next fix after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
 * **Distances**: Holds and procedure turns do not count in flying distance while all others legs do. This means the total flight plan distance as well as the top of descent point will change when selecting an approach or a transition. Altitude restrictions are not yet considered when calculating the top of descent.
 
-### Attaching an Procedure to a Flight Plan
+### Inserting an Procedure to a Flight Plan
 
-There is no concept of adding all fixes of a procedure to a flight plan in _Little Navmap_. The original flight plan will not be changed with the exception of adding the initial fix of a procedure to the nearest flight plan leg.
+The original flight plan will not be changed when adding a procedure to it. The procedure information is saved inside the flight plan file but not the waypoints. 
 
-Attaching a procedure to a flight plan can be done by simply using the menu item `Attach Initial Fix to Flight Plan`. It does not matter how this is done. You could also use the context menu on the map or the drag and drop editing to add the initial fix manually.
+Select `Show Procedures` when you right click on an airport in the map, the airport search table or the flight plan table. This will raise the tab `Procedures` in the dock window `Search`.
 
-The following will happen if a procedure is attached to a flight plan:
+Inserting a procedure into a flight plan can be done by simply using the menu item `Insert into Flight Plan` in the procedure tree view. 
 
-1. All flight plan waypoints after the initial fix will be shown gray in the flight plan window. The grayed out waypoints can be still edited, though.
-2. Flight plan legs after the initial fix are hidden on the map.
-3. All distances including the top of descent point are recalculated considering the approach.
-4. The active leg will follow the procedure after the initial fix instead of the flight plan.
-5. The procedure tree turns into a table showing all procedure legs. Legs are highlighted only in this view when flying a procedure.
+This will add or replace any procedure of the same type in the flight plan. If the procedure airport differs from departure or destination these will be replaced too. If the flight plan is empty the departure or destination airport are added to the flight plan as well.
 
-The currently selected approach and transition is shown in the flight plan label on top of the flight plan dock window:
+All procedure legs are shown in the flight plan table using a dark blue text color and dark red for the missed approach.
 
-`Thisted (EKTS) Parking 4, Ramp GA Medium to Enontekio (EFET)`
+#### Limitations when editing a flight plan with procedures:
 
-**`ILS FI21 Runway 21 via ENO (not connected)`**
-
-`856 nm, 4 h 55 m, High Altitude`
-
-A `(not connected)`indication is shown if the procedure is not attached to the flight plan \(i.e. the flight plan does not contain the initial fix of the procedure\). No active leg sequencing is done in this case.
-
-Attaching can be undone by deleting the initial fix from the flight plan.
-
-Note that you can also attach approaches that do not belong to your destination airport. This can be used to for example to descent through a ceiling to e.g. Terrace \(CYXT\) using an ILS approach and then continue visually to Kitimat \(CBW2\).
+* Deleting a leg of a procedure will remove the whole procedure from the flight plan.
+* You cannot move a procedure leg up or down neither can you move or add a flight plan leg into a procedure.
+* You cannot add waypoints in between procedures (e.g. a STAR and an approach). Waypoints can only be added to the route between departure and arrival procedures.
+* You cannot add waypoints between arrival procedure and destination airport.
+* You cannot add waypoints between departure airport and a SID procedure.
+* If you delete or replace the destination airport all approach and arrival procedures are removed too.
+* If you delete or replace the departure airport all SID procedures are removed too.
 
 ### Fix Types in a Procedure
 
@@ -60,6 +78,8 @@ Note that you can also attach approaches that do not belong to your destination 
 
 ### Altitude Restrictions
 
+Restrictions are shown on the map and in the flight plan table.
+
 * **Number only:** Fly at altitude. Example: `5400ft`.
 * **Prefix **`A`**:** Fly at or above altitude. Example: `A1800ft`.
 * **Prefix **`B`**:** Fly at or below altitude. Example: `B10000ft`.
@@ -67,23 +87,25 @@ Note that you can also attach approaches that do not belong to your destination 
 
 ### Related Navaids
 
-Most fixes have a related or recommended navaid. This can be a VOR, NDB, ILS or a waypoint. The related navaid comes with radial and distance values that can be used to locate waypoints when flying without GPS.
+Many fixes have a related or recommended navaid. This can be a VOR, NDB, ILS or a waypoint. The related navaid comes with radial and distance values that can be used to locate waypoints when flying without GPS or simply for cross checking the position.
 
 ### Missed Approaches
 
-Missed approach legs are activated once the simulator aircraft passes the last point of an approach. The display of remaining flight plan distance will switch to display of remaining distance to last missed approach leg. No legs are activated if missed approaches are not shown.
+Missed approach legs are activated once the simulator aircraft passes the last point of an approach. The display of remaining flight plan distance will switch to display of remaining distance to last missed approach leg. 
+
+**No missed approach legs are activated if missed approaches are not shown.**
 
 ### Exiting a Hold
 
 _Little Navmap_ will detect when a hold is exited and advance the active leg to the next one if one of the two conditions is met:
 
-1. **If the next leg continues after the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile.
+1. **If the next leg continues after or at the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile.
 
-2. **If the next leg starts before the hold fix:** Exit the hold right at its fix. Exit right turn holds to the left and vice versa. Proceed to the fix of the next leg which will be activated.
+2. **If the next leg starts before the hold fix:** Exit the hold at its fix. Exit right turn holds to the left and vice versa. Proceed to the fix of the next leg which will be activated.
 
 ### Leg Highlights on the Map
 
-Up to three points will be highlighted when clicking on a procedure leg:
+Up to three points will be highlighted when clicking on a procedure leg in the tree in the search window:
 
 * A small blue circle shows the beginning of the leg.
 * The beginning of the leg is shown by a large blue circle.
@@ -91,7 +113,7 @@ Up to three points will be highlighted when clicking on a procedure leg:
 
 ### Invalid Source Data
 
-A leg entry will drawn red if a navaid was not resolved during the scenery database loading process. This happens only when the source data is not valid or incomplete. The resulting procedure is not usable in this case.
+A leg entry will drawn red if a navaid was not resolved during the scenery database loading process. This happens only when the source data is not valid or incomplete. The resulting procedure is not usable in this case and a warning dialog will be shown if essential navaids are missing.
 
 ### Context Menu
 
@@ -105,29 +127,13 @@ Collapses the tree to show only approaches.
 
 #### `Clear Selection`
 
-Clears all selected procedures. This will hide the procedures on the map and will also disconnect the flight plan from the initial fix if it was connected. The previously hidden flight plan legs will be shown again.
+Clears all selected procedures. This will hide the procedures on the map.
 
-#### `Show and Activate Legs`
+#### `Insert into Flight Plan`
 
-Switches from the tree view to a table view showing all legs of the selected procedure. This view allows highlighting of the currently flown procedure leg.
-
-#### `Return to Procedure Overview`
-
-Goes back from the leg view table to the tree view showing all procedures of an airport.
-
-#### `Attach Initial Fix to Flight Plan`
-
-Adds the initial fix of the currently selected procedure to the flight plan. This will hide all flight plan legs after the initial fix and will also allow to follow and activate all procedure legs. Remove this change with `Flight Plan Undo`
+Adds or replaces a procedure of the same type in the flight plan. If the procedure airport differs from departure or destination these will be replaced too. If the flight plan is empty the departure or destination airport are added to the flight plan as well.
 
 #### `Show on Map`
 
 Shows the selected procedure on the map.
-
-#### `Show Procedures`
-
-Show or hide procedures on the map. The flight plan is not affected by this.
-
-#### `Show Missed Approaches`
-
-Show or hide missed approaches on the map. Missed approach legs will only be activated \(magenta line\) if they are shown.
 
