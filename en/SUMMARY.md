@@ -32,6 +32,7 @@
 * [Known Problems](APPENDIX.md#known-problems)
 * [How to report a Bug](APPENDIX.md#how-to-report-a-bug)
 * [Files](APPENDIX.md#files)
+* [Customize](CUSTOMIZE.md)
 * [Acknowledgments](APPENDIX.md#acknowledgments)
 * [License](APPENDIX.md#license)
 
