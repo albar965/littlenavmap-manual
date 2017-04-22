@@ -15,6 +15,56 @@ More maps and information about map configuration and DGML files can be found he
 * A tutorial showing how to create a map theme based on [OSM Slippy Maps](http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [How to create map themes based on OSM slippy maps](https://techbase.kde.org/Marble/OSMSlippyMaps)
 * How to create a historical map for Marble: [Historical Maps for Marble](https://techbase.kde.org/Marble/HistoricalMaps)
 
+## External Scenery Database {#external-scenery-databases}
+
+The program allows to add two so-called external scenery library databases. These can be used for future extensions (AIRAC cycle data) or experiments.
+
+Store any additional and valid scenery library database in the directory:
+
+`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+
+Up to two database with the names `little_navmap_external.sqlite` and  `little_navmap_external2.sqlite` are supported and will show as `External` and `External 2` in the menu `Scenery Library`. These can be used as any other from a simulator generated scenery library database with the exception that they are excluded from loading.
+
+## Files {#files}
+
+Log files of _Little Navmap_ for Windows 7/8/10 are typically stored in the directory:
+
+`C:\Users\YOURUSERNAME\AppData\Local\Temp`
+
+The program keeps three log files and rotates these on each startup. So you may find up to three logs:
+
+`abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
+
+All configuration files for my programs for Windows 7/8/10 are typically stored in the directory:
+
+`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
+
+There are three configuration files for this program:
+
+* **`little_navmap.ini`:** INI style configuration file. Text file.
+* **`little_navmap.history`:** The map position history. Binary file.
+* **`little_navmap.track`:** The user aircraft track. Binary file.
+
+The disk cache that is used to store all the downloaded online map tile images can be found here:
+
+`C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+
+The scenery library databases are stored in the directory:
+
+`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+
+There can be up to five files depending which simulators you have installed and which scenery libraries you've loaded.
+
+All these databases are [SQLite](http://sqlite.org) files than can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
+
+The files are:
+
+* **`little_navmap_.sqlite`:** An empty dummy database.
+* **`little_navmap_fsx.sqlite`:** Flight Simulator X
+* **`little_navmap_fsxse.sqlite`:** Flight Simulator - Steam Edition
+* **`little_navmap_p3dv2.sqlite`:** Prepar3D v2
+* **`little_navmap_p3dv3.sqlite`:** Prepar3D v3
+
 ## Troubleshoot {#troubleshoot}
 
 * **Program crashes on start up:** Delete the settings and the database files. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete \(or better: rename or move\) the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`.
@@ -63,46 +113,6 @@ In no case are file names from anything else than flight simulator paths/files o
 I would suggest to remove this information if you're concerned about it.
 
 I strongly recommend sending the log files by PM or by email and not attach them to forum posts where they are publicly visible.
-
-## Files {#files}
-
-Log files of _Little Navmap_ for Windows 7/8/10 are typically stored in the directory:
-
-`C:\Users\YOURUSERNAME\AppData\Local\Temp`
-
-The program keeps three log files and rotates these on each startup. So you may find up to three logs:
-
-`abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
-
-All configuration files for my programs for Windows 7/8/10 are typically stored in the directory:
-
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
-
-There are three configuration files for this program:
-
-* **`little_navmap.ini`:** INI style configuration file. Text file.
-* **`little_navmap.history`:** The map position history. Binary file.
-* **`little_navmap.track`:** The user aircraft track. Binary file.
-
-The disk cache that is used to store all the downloaded online map tile images can be found here:
-
-`C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
-
-The scenery library databases are stored in the directory:
-
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
-
-There can be up to five files depending which simulators you have installed and which scenery libraries you've loaded.
-
-All these databases are [SQLite](http://sqlite.org) files than can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
-
-The files are:
-
-* **`little_navmap_.sqlite`:** An empty dummy database.
-* **`little_navmap_fsx.sqlite`:** Flight Simulator X
-* **`little_navmap_fsxse.sqlite`:** Flight Simulator - Steam Edition
-* **`little_navmap_p3dv2.sqlite`:** Prepar3D v2
-* **`little_navmap_p3dv3.sqlite`:** Prepar3D v3
 
 ## Acknowledgments {#acknowledgments}
 

@@ -10,6 +10,9 @@ To undo all changes simply delete a file. It will be created again containing th
 
 Single lines can also be deleted and will be restored with the default value when *Little Navmap* is started.
 
+Keys and values are case sensitive. Order in the files is not important if the keys remain in their respective sections.
+The program might reorder the keys when saving or updating the files.
+
 ## Customizing the GUI
 
 Only two user interface styles can be customized. These are `Fusion` and `Night` and can be found in the dialog `Options` on tab `User Interface`. These styles are available on all operating systems.
@@ -48,20 +51,26 @@ SVG color name is one from the list of colors defined in the list of [SVG color 
 You can use the [w3schools color picker](https://www.w3schools.com/colors/colors_picker.asp) to get the hex values for a color.
 
 #### Examples
+
 `Active_Highlight=#308cc6`
 
 `AlertFillColor=darkred`
 
 `ApproachFillColor=#3060808a`
 
-
 ### Pen
 
-A pen contains a comma separated line width added to the color value. The line width is a floating point value and measured in pixels.
+A pen contains the following values in a comma separated list:
+
+* Color as described above
+* Pen width as a floating point value measured in pixels.
+* Pen style. One of the following values: `Solid`, `Dash`, `Dot`, `DashDot` and `DashDotDot`.
 
 #### Examples
 
-`ModecPen=#509090, 2`
+`RestrictedPen=#fd8c00, 2, DashDotDot`
 
-`NationalParkPen=#509090, 2.1`
+`ModecPen=#509090, 2, Solid`
+
+`NationalParkPen=#509090, 2.1, Solid`
 
