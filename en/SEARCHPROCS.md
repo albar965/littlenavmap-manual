@@ -1,4 +1,4 @@
-## ![Search](../images/icons/searchdock.png "Search") Search Dock Window {#search-dock-window}
+## ![Search](../images/icons/searchdock.png "Search") Search Dock Window - Procedures {#search-dock-window}
 
 ### General {#general}
 

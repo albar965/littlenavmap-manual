@@ -7,14 +7,14 @@ This is an airport that was found outside the Flight Simulator default scenery f
 ## Scenery Library Database
 This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ when reading all the flight simulator BGL files. It allows fast complex searches and map display.
 
-## BGL File
+## BGL
 A binary file with the extension `BGL` which is part of a flight simulator scenery containing airport, navaid or airway information. These files can also contain traffic, landclass, elevation or other information which is not relevant for _Little Navmap_.
 
 ## Navaid
-VOR, VORTAC, TACAN, NDB or waypoint/intersection
+VOR, VORTAC, TACAN, NDB or waypoint/intersection.
 
-##Radio navaid
-VOR, VORTAC, TACAN or NDB
+## Radio navaid
+VOR, VORTAC, TACAN or NDB.
 
 ## Parking
 GA ramp, cargo ramp, fuel box or gate.
@@ -23,15 +23,28 @@ GA ramp, cargo ramp, fuel box or gate.
 Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.
 
 ## Rating
-Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:
-  1. Add-on
-  2. Parking positions \(ramp or gate\)
-  3. Taxiways
-  4. Aprons
-  5. Tower building \(only if at least one of the other conditions is met\).
+Airport zero to five star rating depending on facilities.
 
 ## SimConnect
 A programming interface that allows applications to read and write flight simulator parameters.
+
+## VOR
+VHF Omni Directional Radio Range - radio navaid.
+
+## VORDME
+VHF Omni Directional Radio Range with distance measuring equipment- radio navaid.
+
+## DME
+Distance measuring equipment- radio navaid.
+
+## VORTAC
+Co-located VHF omnidirectional range (VOR) beacon and tactical air navigation system (TACAN) beacon.
+
+## TACAN
+Tactical air navigation system - radio navaid used by military aircraft.
+
+## NDB
+Non directional beacon - radio navaid.
 
 ## Procedure
 Approach, transition, SID or STAR.
@@ -40,10 +53,10 @@ Approach, transition, SID or STAR.
 A geographical information system like Google Earth for example.
 
 ## Arrival Procedure
-Approach, transition or STAR.
+Approach, transition or STAR procedure.
 
 ## Departure Procedure
-SID
+SID procedure.
 
 ## SID
 Standard instrument departure.
