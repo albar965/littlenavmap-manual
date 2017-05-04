@@ -61,6 +61,7 @@ _**Picture above:** About to remove the transition `MUN` of the approach `RNAV B
 Procedure legs are pre-calculated except holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg \(e.g. if too many lines overlap\) look at the procedure table in the flight plan window.
 
 #### Holds {#procedures-holds}
+
 No entry or exit procedure is shown. You have to find a proper entry procedure yourself. Holds have a straight leg flying time in minutes or a distance.
 
 If time is given you fly the hold as usual:
@@ -86,6 +87,7 @@ _Little Navmap_ will detect when a hold is exited and advance the active leg to 
 2. **If the next leg starts before the hold fix:** Exit the hold at its fix. Exit right turn holds to the left and vice versa \(i.e. turn outside the hold\). Proceed to the fix of the next leg which will be activated.
 
 #### Procedure turns {#procedures-turns}
+
 The flight simulator data moves the turn point of a procedure turn 10 nautical miles out from the fix which is usually too far away.
 
 Fly the procedure turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next fix after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
@@ -94,6 +96,7 @@ Fly the procedure turn as usual: Minimum one minute from the fix. Use more if yo
 _**Picture above:** A procedure turn. Fly at least one minute outbound 61° from `ABERN`, turn left to 16°, fly one minute, turn 180° and fly to `LAMMB`, then 242° to `ABERN`._
 
 #### Distances {#procedures-distances}
+
 Holds and procedure turns do not count in flying distance while all others legs do. This means the total flight plan distance as well as the top of descent point will change when selecting an approach or a transition.
 
 **The top of descent point calculation does not consider altitude restrictions in procedures.**
@@ -118,9 +121,11 @@ Restrictions are shown on the map and in the flight plan table.
 * **Range:** Fly at or above altitude one and at or below altitude two. Map example: `A8000B10000ft`.
 
 ### Related Navaids {#procedures-related}
+
 Many fixes have a related or recommended navaid. This can be a VOR, NDB, ILS or a waypoint. The related navaid comes with radial and distance values that can be used to locate waypoints when flying without GPS or simply for cross checking the position.
 
 ### Missed Approaches {#procedures-missed}
+
 Missed approach legs are activated once the simulator aircraft passes the last point of an approach. The display of remaining flight plan distance will switch to display of remaining distance to last missed approach leg.
 
 **No missed approach legs are activated if missed approaches are not shown.**

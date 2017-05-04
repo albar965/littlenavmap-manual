@@ -11,6 +11,7 @@ Be aware that the elevation display covers only the flight plan and will not cha
 The flight plan is only shown at cruise level and the descent segment. Although, you will see your user aircraft and trail climbing and descending.
 
 ### Online Elevation Data {#flight-plan-elevation-profile-online}
+
 Note that the online elevation data does not cover all countries and currently ends at 60 degrees north. The data contains multiple known errors.
 
 The calculation of online elevation points is limited to flight plan segments not longer than 2000 nautical miles to avoid overloading.

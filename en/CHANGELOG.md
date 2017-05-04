@@ -7,7 +7,9 @@
 **Aircraft tracks are ignored and not loaded because the format has changed.**
 
 ### Enhancements
+
 #### Procedures, Approaches, Transitions, SID and STAR
+
 * Added full support for approaches, SID, STAR and transitions. Can be shown on map display and added to the flight plan. Shows much more information than the FSX/P3D GPS like above/below altitude constraints, recommended navaids and more.
 * Procedure search tab with filters and preview on map added.
 * Flight plan table shows full information for procedure legs.
@@ -16,15 +18,18 @@
 * Added support for output and parsing of SID and STAR names in route string dialog.
 
 #### Elevation
+
 * Added support for GLOBE offline elevation data as second source which is much faster, more reliable and has world wide coverage compared to the old (yet still supported) online data. See dialog `Options` on tab `Cache and Files`. All is explained in the dialog.
 * Elevation under cursor is now shown after a short delay on the bottom right in the status bar if the GLOBE offline data is used.
 
 #### AI Traffic
+
 * Added AI ship traffic to map display, tooltips and dock window `Simulator Aircraft` on tab `AI / Multiplayer`.
 * Added options in dialog `Connect` and _Little Navconnect_ to disable SimConnect transfer of AI vehicles if needed for performance reasons.
 * Improved display of AI vehicles by dividing them into large and small types.
 
 #### Flight Plan
+
 * Added more flight plan export options:
  * GPX (GPS Exchange Format) which can be read by Google Earth and many other GIS tools. Includes flown track including altitude and time.
  * PMDG RTE
@@ -40,16 +45,19 @@
 * Adjusted flight plan calculation to better avoid large unrealistic airway segments.
 
 #### Route String Dialog
+
 * Added options to customize route string. Allows to switch off `DCT`, `SID` / `STAR`, speed/altitude and other generated fields.
 * Added IFR/VFR selector to route string dialog.
 * Improved cruise altitude and speed assignment to flight plan when reading route string. Values are either taken from string or automatically determined by IFR/VFR selector and used airways.
 
 #### Simulator Aircraft and Progress
+
 * Completely changed active segment logic for flight plan. Previous route legs are now excluded from selection which gives reliable active leg selection even for crossing and overlapping flight plan segments.
 * Active leg sequencing is now only done for airborne aircraft. No magenta line while you are on ground.
 * Added vertical path deviation in simulator aircraft progress after passing top of descent.
 
 #### Map Display
+
 * Added TACAN and VORTAC stations to display, search and all other VOR related functions. Only with fsAerodata or other navdata updates.
 * Added menu item `Reset Display Settings` in menu `Map` to reset map settings back to default.
 * Airspaces and airways are now always loaded lazily when scrolling or zooming for better performance. Both are updated when the mouse button is released after scrolling.
@@ -61,22 +69,27 @@
 * Moved airway display one layer up for map display. Now shown on higher zoom levels.
 
 #### Airspaces
+
 * Added display of airspaces to map, information window and tooltips.
 * Added separate airspace toolbar with drop down menus to limit display by type, altitude or flight plan cruise level.
 
 #### Scenery Database Loader
+
 * Added option to read also inactive scenery entries. Useful if sceneries are disabled or enabled by tools for each flight.
 * Added better and more detailed error report for scenery database loading. Report now contains missing scenery directories since the simulator complains about these too. Report can now be directly copied and pasted as formatted text.
 * Added option for two external databases besides simulators. This can be used for future AIRAC database updates.
 
 #### General
+
 * The ZIP archives of _Little Navmap_ and _Little Navconnect_ are merged now. You can find both programs on the top level directory in the archive.
 
 #### Customization
+
 * Added configuration files for color customization for map, airspaces, elevation profile, fusion and night styles.
 * Added cache tuning parameters to section `[settings]` in  `little_navmap.ini` file.
 
 ### Problems and Improvements
+
 * Fix for too many reconnects flooding log on simulator crash.
 * METAR parser errors with `NOSIG` token for weather or sky condition fixed.
 * Aircraft progress was not cleared and not updated after database switch and other window update problems.

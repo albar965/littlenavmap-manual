@@ -21,6 +21,7 @@ The active flight plan leg is highlighted in magenta when _Little Navmap_ is con
 Procedure legs have dark blue color and legs of a missed approach have a dark red color.
 
 #### Table Columns {#flight-plan-table-columns}
+
 * **`Ident`:** ICAO ident of the navaid or airport.
 * **`Region`:** Two letter region code of a navaid.
 * **`Name`:** Name of airport or radio navaid.

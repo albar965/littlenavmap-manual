@@ -1,6 +1,7 @@
 ## Features {#features}
 
 ### General {#general}
+
 * Supported platforms: Windows 7, 8, 10, Linux and macOS.
 * Modern and easy to use interface: Using a main menu, context menus, toolbars, dock windows, undo, recent file lists and more.
 * Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 and Prepar3D v3.
@@ -21,6 +22,7 @@
 * Multiple GUI styles including a night mode. Two styles can be customized in configuration files.
 
 ### Flight Plan and Routing {#flight-plan-and-routing}
+
 * Can read and write FSX PLN format \(XML\).
 * Can export flight plans in GFP format used by the Flight1 GTN 750/650.
 * Other export formats are PMDG RTE, Aerosoft Airbus FLP, X-Plane FMS and GPX. GPX files include the flown track.
@@ -40,6 +42,7 @@
 * Top of descent point is calculated using a configurable rule of thumb and displayed on the map.
 
 ### Procedures - Approaches, Transitions, SID and STAR {#procedures}
+
 * Uses approaches and transition from FSX or P3D stock data. Additionally supports SID and STAR from _fsAerodata_ navdata updates or future AIRAC updates.
 * Displays much more information for procedures than the flight simulator GPS.
 * Procedure search dialog with type and runway filters that allows easy selection and preview of procedures.
@@ -47,6 +50,7 @@
 * Information for selected procedures is stored as an annotation in the default simulator PLN-files and reloaded when the file is opened by _Little Navmap_. No need to deal with an extra file format only used by _Little Navmap_.
 
 ### Map {#map}
+
 * Uses several free online maps \([OpenStreetMap Mapnik](http://www.openstreetmap.org), [OpenTopoMap](http://www.opentopomap.org), [Stamen Terrain](http://maps.stamen.com) and the [OSM Roads](http://korona.geog.uni-heidelberg.de) layer provided by [Heidelberg University](http://giscience.uni-hd.de/)\) as well as three simple offline maps. The offline maps are included in the _Little Navmap_ download.
 * Hill shading option for all _OpenStreetMap_ variants. Two map themes feature worldwide hill shading.
 * Option for adding additional user defined map themes.
@@ -66,6 +70,7 @@
 * Map can be printed or saved as image.
 
 ### Simulator aircraft {#simulator-aircraft}
+
 * Can connect directly to simulator.
 * Autoconnect mode for remote or local connections. Order of program startup is not relevant.
 * Shows simulator user aircraft on the map including flight plan progress, ambient parameters like wind, temperature, pressure and more \(similar to a flight management computer\). Requires [Little Navconnect](https://albar965.github.io/littlenavconnect.html) for remote computers which is included in the download.
