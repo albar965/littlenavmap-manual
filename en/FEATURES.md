@@ -26,7 +26,7 @@
 * Can read and write FSX PLN format \(XML\).
 * Can export flight plans in GFP format used by the Flight1 GTN 750/650.
 * Other export formats are PMDG RTE, Aerosoft Airbus FLP, X-Plane FMS and GPX. GPX files include the flown track.
-* Flight plans can be created from a route description copied from an online flight planner or other sources. This includes speed and altitude elements as well as SID and STAR.
+* Flight plans can be created from a route description copied from an online flight planner or other sources. This includes speed and altitude elements as well as SIDs and STARs.
 * Route descriptions can be generated from a flight plan. The included information can be configured.
 * Flight plans can be printed with options to include or exclude extensive detailed information.
 * Flight plans can be created or edited using drag and drop on the map display.
@@ -41,9 +41,9 @@
 * Active flight plan leg is highlighted on flight plan table and on the map.
 * Top of descent point is calculated using a configurable rule of thumb and displayed on the map.
 
-### Procedures - Approaches, Transitions, SID and STAR {#procedures}
+### Procedures - Approaches, Transitions, SIDs and STARs {#procedures}
 
-* Uses approaches and transition from FSX or P3D stock data. Additionally supports SID and STAR from _fsAerodata_ navdata updates or future AIRAC updates.
+* Uses approaches and transition from FSX or P3D stock data. Additionally supports SIDs and STARs from _fsAerodata_ navdata updates or future AIRAC updates.
 * Displays much more information for procedures than the flight simulator GPS.
 * Procedure search dialog with type and runway filters that allows easy selection and preview of procedures.
 * Procedures can be easily added and removed from flight plan.

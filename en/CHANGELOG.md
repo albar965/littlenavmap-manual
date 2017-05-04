@@ -10,12 +10,12 @@ When starting version 1.4 the first time after using version 1.2:
 
 ### Enhancements
 
-#### Procedures, Approaches, Transitions, SID and STAR
+#### Procedures, Approaches, Transitions, SIDs and STARs
 
-* Added full support for approaches, SID, STAR and transitions. Can be shown on map display and added to the flight plan. Shows much more information than the FSX/P3D GPS like above/below altitude constraints, recommended navaids and more.
+* Added full support for approaches, SIDs, STARs and transitions. Can be shown on map display and added to the flight plan. Shows much more information than the FSX/P3D GPS like above/below altitude constraints, recommended navaids and more.
 * Procedure search tab with filters and preview on map added.
 * Flight plan table shows full information for procedure legs.
-* Flight plan calculation considers SID, STAR and approaches and calculates flight plan from end of SID to beginning of STAR or approach.
+* Flight plan calculation considers SIDs, STARs and approaches and calculates flight plan from end of SID to beginning of STAR or approach.
 * Selected procedures (not the waypoints) are saved as an embedded annotation in the flight plan (PLN-File). This is allowed by the used XML format and supported by FSX/P3D as well as most other tools.
 * Added support for output and parsing of SID and STAR names in route string dialog.
 
