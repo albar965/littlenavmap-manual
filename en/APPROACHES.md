@@ -107,7 +107,7 @@ Holds and procedure turns do not count in flying distance while all others legs 
 ### Fix Types in a Procedure {#procedures-fix-types}
 
 * **Waypoints:** Terminal waypoints or radio navaids. Some are marked as `flyover` in the approach table.
-* **Radial and distance:** Example: `WIK/7nm/291°M`. A fix defined by a radial and distance to a navaid.
+* **Radial and distance:** Example: `WIK/7nm/291°M`. A fix defined by a course or heading and distance to a navaid.
 * **Distance to DME:** Example: `WIK/9nm`. This fix is defined by a heading or track which is terminated by reaching a DME distance.
 * **`Intercept Course to Fix`:** Intercept a course to the next fix at an angle of about 45 degrees.
 * **`Intercept Leg`:** Intercept the next approach leg at a course of about 45 degrees.

@@ -33,7 +33,7 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | --- | --- |
 | ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the nose can show the current track. |
 | ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) ![Ship on Ground](../images/icons/aircraft_boat_ground_user.png)| User aircraft or ship on ground |
-| ![Aircraft Track](../images/legend/aircraft_trackneedle.jpg) | Needle showing the current track of the aircraft. Aircraft nose shows heading. |
+| ![Aircraft Track](../images/legend/aircraft_trackneedle.png) | Needle showing the current track of the aircraft. Aircraft nose shows heading. |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
 | ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
@@ -80,7 +80,7 @@ Navaids that are part of the flight plan have a light yellow text background.
 
 ### Procedures {#procedures}
 
-Not all possible cases for procedures can be depicted here. See chapter [Procedures](APPROACHES.md) for more detailed information on all the legs.
+See chapter [Procedures](APPROACHES.md) for more detailed information on all the legs.
 
 | Symbol | Description |
 | --- | --- |
@@ -90,6 +90,13 @@ Not all possible cases for procedures can be depicted here. See chapter [Procedu
 |  ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
 | ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
+| ![Procedure Manual](../images/legend/proclegmanual.png) | Fly a heading, track or a hold until manually terminated by ATC. |
+| ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Intercept the next approach leg at a course of about 45 degrees. |
+| ![Procedure Altitude](../images/legend/procinterceptalt.png) | Procedure leg that is terminated when reaching the given altitude. |
+| ![Procedure Intercept Distance](../images/legend/procinterceptcd.png) | A fix defined by a course or heading and distance to a navaid.|
+| ![Procedure Intercept Course Distance](../images/legend/procinterceptd.png) |  This fix is defined by a heading or track which is terminated by reaching a DME distance. |
+| ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Intercept a course to the next fix at an angle of about 45 degrees. |
+
 
 ### Airport Diagram {#airport-diagram}
 
