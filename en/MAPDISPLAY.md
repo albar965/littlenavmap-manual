@@ -85,7 +85,7 @@ See the [Information Dock Window](INFO.md#information-dock-window) for details.
 
 Opens the procedure search tab of the search dock window and display all procedures for the airport.
 
-See [Procedure Search](SEARCH.md#procedure-search) for more information.
+See [Procedure Search](SEARCHPROCS.md) for more information.
 
 #### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Measure GC Distance from here {#measure-gc-distance-from-here}
 

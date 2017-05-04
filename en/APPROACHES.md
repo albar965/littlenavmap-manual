@@ -36,13 +36,14 @@ Select `Show Procedures` when you right click on an airport in the map, the airp
 
 Inserting a procedure into a flight plan can be done by simply using the context menu in the procedure tree view.
 
-See [Procedure Search](SEARCH.md#procedure-search) for more information.
+See [Procedure Search](SEARCHPROCS.md) for more information.
 
 ### Deleting a Procedure from a Flight Plan {#procedures-delete}
 
 Deleting a single leg that is part of a procedure will remove the whole procedure and its transition. Deleting a leg that is part of a transition will remove only the transition.
 
 ![Delete Procedure](../images/deleteprocedure.jpg "Delete Procedure")
+
 _**Picture above:** About to remove the transition `MUN` of the approach `RNAV BEGEN` from the flight plan._
 
 
@@ -76,6 +77,7 @@ If time is given you fly the hold as usual:
 Do not follow the lines slavish, they are just an indicator for what to fly. An exception are holds where a distance is given for the straight leg. The hold size will match the distance in this case. 
 
 ![Hold](../images/hold.jpg "Hold")
+
 _**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at `ZUNAD` and fly at or above 2600 feet. Course is 61° magnetic degrees._
 
 #### Exiting a Hold {#procedures-flying-exit-holds}
@@ -93,6 +95,7 @@ The flight simulator data moves the turn point of a procedure turn 10 nautical m
 Fly the procedure turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next fix after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
 
 ![Procedure Turn](../images/procedureturn.jpg "Procedure Turn")
+
 _**Picture above:** A procedure turn. Fly at least one minute outbound 61° from `ABERN`, turn left to 16°, fly one minute, turn 180° and fly to `LAMMB`, then 242° to `ABERN`._
 
 #### Distances {#procedures-distances}

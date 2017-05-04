@@ -2,9 +2,11 @@
 
 **_Little Navconnect_ is now bundled together with the _Little Navmap_ download.**
 
-** Scenery database has to be reloaded due to a schema change.**
+When starting version 1.4 the first time after using version 1.2:
 
-**Aircraft tracks are ignored and not loaded because the format has changed.**
+* **The scenery database has to be reloaded due to a schema change.**
+* **Aircraft tracks are ignored and not loaded because the format has changed.**
+* **The program will start with a default window layout due to changes in the configuration.**
 
 ### Enhancements
 
