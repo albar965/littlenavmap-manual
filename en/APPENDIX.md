@@ -73,6 +73,47 @@ The files are:
 * **`little_navmap_p3dv2.sqlite`:** Prepar3D v2
 * **`little_navmap_p3dv3.sqlite`:** Prepar3D v3
 
+## Tips for old and slow Computers {#tips-for-old-and-slow}
+
+### Save CPU Cycles {#save-cycles}
+
+* Dialog `Options` -> `Map` -> `Details while scrolling ... `: Use `Normal ...`
+* Dialog `Options` -> `Simulator Aircraft` -> `Simulator Aircraft scroll box size ...`: Use a higher value to reduce map updates.
+* Close the window `Flight Plan Elevation Profile`. It will stop all background processing when closed.
+* Avoid airspaces. Switch them off using the ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") button on the airspaces toolbar.
+* Switch off all AI traffic in the dialog `Connect`. See [here](CONNECT.md#options).
+
+### Reduce Memory Consumption {#save-memory}
+
+Replace the complete section `[Settings]` in the `little_navmap.ini` with the section below to reduce cache sizes.
+
+``` ini
+[Settings]
+DatabaseCacheKb=5000
+InfoQueryAirportCache=100
+InfoQueryAirportSceneryCache=100
+InfoQueryAirwayCache=100
+InfoQueryApproachCache=100
+InfoQueryComCache=100
+InfoQueryHelipadCache=100
+InfoQueryIlsCache=100
+InfoQueryNdbCache=100
+InfoQueryRunwayCache=100
+InfoQueryRunwayEndCache=100
+InfoQueryStartCache=100
+InfoQueryTransitionCache=100
+InfoQueryVorCache=100
+InfoQueryWaypointCache=100
+MapQueryAirspaceLineCache=100
+MapQueryApronCache=100
+MapQueryHelipadCache=100
+MapQueryParkingCache=100
+MapQueryRunwayCache=100
+MapQueryRunwayOverwiewCache=100
+MapQueryStartCache=100
+MapQueryTaxipathCache=100
+```
+
 ## Troubleshoot {#troubleshoot}
 
 * **Program crashes on start up:** Delete the settings and the database files. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete \(or better: rename or move\) the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`. Try to delete the database first if these cause the problem. Then try to delete the settings files if removing databases did not help.

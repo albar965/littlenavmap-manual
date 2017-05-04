@@ -31,6 +31,7 @@
 * [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes)
 * [External Scenery Database](APPENDIX.md#external-scenery-databases)
 * [Files](APPENDIX.md#files)
+* [Tips for old and slow Computers](APPENDIX.md#tips-for-old-and-slow)
 * [Glossary](GLOSSARY.md)
 * [Change log](CHANGELOG.md)
 * [Troubleshoot](APPENDIX.md#troubleshoot)

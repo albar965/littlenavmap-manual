@@ -5,7 +5,7 @@ The setup procedure is different for remote connections and local connections to
 
 _Little Navmap_ can connect directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
 
-### Local Connection
+### Local Connection {#local-connection}
 
 3.  Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -> `Tools` -> `Flight Simulator Connection`.
 
@@ -22,7 +22,7 @@ Select `Connect automatically` if you do not want to connect manually. The start
 
 Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` to disable the transfer of this information to the program. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
 
-### Remote Connection
+### Remote Connection {#remote-connection}
 
 User aircraft and weather information is transferred to _Little Navmap_ by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
 
@@ -53,7 +53,7 @@ Select `Connect automatically` if you do not want to connect manually. The start
 
 Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` in `Tools` -> `Options` of _Little Navconnect_ to disable the transfer of this information across the network. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
 
-### Connect Dialog Options
+### Connect Dialog Options {#options}
 
 * **`Disconnect`:** Disconnects the current session and stops automatic reconnect.
 * **`Connect`:** Tries to connect. An error dialog will be shown if no connection can be established. _Little Navmap_ will constantly try again if `Connect automatically` is enabled.
