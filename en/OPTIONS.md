@@ -9,7 +9,7 @@ The button `Restore Defaults` only restores the options of this dialog back to d
 settings like map display, table views or dock window positions are not affected. To reset all
 saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
 
-### Startup {#starup}
+### Startup {#startup}
 
 Allows to customize what should be loaded and shown on startup of _Little Navmap_.
 
@@ -22,6 +22,8 @@ contain a `Night` mode that can be used for night flights in dark rooms. You can
 elevation profile display.
 
 A restart is not needed but recommended after changing a style.
+
+The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
 
 ![User Interface](../images/optionsui.jpg "User Interface")
 
@@ -53,22 +55,31 @@ This also applies to flight plan altitude. Therefore, do not forget to adapt the
 
 ### Simulator Aircraft {#simulator-aircraft}
 
-Allows to change various aspects around the display of the user aircraft.
-All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters
-in the simulator.
+Allows to change various aspects around the display of the user aircraft. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
 
-### Cache {#cache}
+### Cache and Files {#cache}
 
-Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles
-from the online maps like the _OpenStreetMap_, _OpenMapSurfer_  or _OpenTopoMap_.
+#### Map Display {#cache-map-display}
 
-All image tiles expire after two weeks and will be reloaded from the online services.
+Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles from the online maps like the _OpenStreetMap_, _OpenMapSurfer_  or _OpenTopoMap_.
+
+All image tiles expire after two weeks and will be reloaded from the online services then.
 
 Note that a reduction of size or erasing the disk cache is done in background and can take a while.
 
 The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
 
 The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
+
+#### Flight Plan Elevation Profile {#cache-elevation}
+
+The lower part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
+
+Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
+
+![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")
+
+_**Picture above:** Tab `Cache and Files` with properly selected GLOBE elevation data._
 
 ### Flight Plan {#flight-plan}
 

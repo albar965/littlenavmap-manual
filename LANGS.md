@@ -1,2 +1,2 @@
 * [English](en)
-* [Deutsch](de)
+* [Deutsch](de) \(Outdated - need volunteers for translation into other languages\)

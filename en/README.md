@@ -4,7 +4,7 @@
 
 _Little Navmap_ is a free open source flight planner, navigation tool, moving map,
 airport search and airport information system for Flight Simulator X
-and Prepar3D. The main focus is general aviation IFR and VFR planning.
+and Prepar3D.
 
 **Do not use this program for real world navigation.**
 

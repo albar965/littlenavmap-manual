@@ -11,9 +11,10 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | Symbol | Description |
 | --- | --- |
 | ![Home](../images/legend/home.png "Home") | Center of the home position. |
-| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches. |
+| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches. 
 | ![Flight Plan](../images/legend/route_leg.png "Flight Plan") | Flight plan with distance, direction and magnetic course at each leg. |
-| ![Active Segment](../images/legend/activesegment.png "Active Segment") | Active flight plan segment |
+| ![Flight Plan Procedure](../images/legend/route_procedure_leg.png "Flight Plan Procedure") | Flight plan procedure leg with the same information as above.
+| ![Active Leg](../images/legend/activesegment.png "Active Leg") | Active flight plan leg |
 | ![Flight Plan Departure Position](../images/legend/route_start.png "Flight Plan Departure Position") | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
 | ![Top of Descent](../images/legend/routetod.png "Top of Descent") | Top of descent point with distance to destination. |
 | ![Range](../images/legend/range_rings.png "Range") | Range rings labeled with distance. |
@@ -23,23 +24,25 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
 | ![Search Hightlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
 | ![Flight Plan Hightlight](../images/legend/highlight_route.png) | A highlighted airport or navaid selected in the flight plan table. |
+| ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
+| ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
 
-### Aircraft {#aircraft}
+### Aircraft and Ships {#vehicles}
 
 | Symbol | Description |
 | --- | --- |
-| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user aircraft if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the aircraft nose can show the current aircraft track. |
-| ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) | User aircraft on ground |
+| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the nose can show the current track. |
+| ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) ![Ship on Ground](../images/icons/aircraft_boat_ground_user.png)| User aircraft or ship on ground |
 | ![Aircraft Track](../images/legend/aircraft_trackneedle.jpg) | Needle showing the current track of the aircraft. Aircraft nose shows heading. |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
-| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop or helicopter\). |
+| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
 
 ### Airports {#airports}
 
 Airports having control towers are shown in dark blue others in magenta. Add-on airport names and idents are shown italic and underlined. Airports that are part of the flight plan have a light yellow text background.
 
-The symbol is shown smaller if an airport has no runways. This is the case for some add-on airports that use another technique like photoscenery to display runways.
+The symbol is shown smaller if an airport has no runways. This is the case for some add-on airports that use another technique like photo scenery to display runways.
 
 | Symbol | Description |
 | --- | --- |
@@ -63,6 +66,8 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![VORDME](../images/legend/vordme_small.png) ![VORDME](../images/legend/vordme_large.png) | VOR DME including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
 | ![VOR](../images/legend/vor_small.png) ![VOR](../images/legend/vor_large.png) | VOR including ident, type and frequency. |
 | ![DME](../images/legend/dme.png) | DME including ident, type and frequency. |
+| ![TACAN](../images/legend/tacan_small.png) ![TACAN](../images/legend/tacan_large.png) | TACAN  including ident, type \(High, Low or Terminal\) and channel. Compass rose shows magnetic variation on lower zoom distances. |
+| ![VORTAC](../images/legend/vortac_small.png) ![VORTAC](../images/legend/vortac_large.png) | VORTAC  including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
 | ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
 | ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
@@ -72,6 +77,19 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\) and minimum altitude. Text depends on zoom distance. |
 | ![ILS](../images/legend/ils_gs_small.png) ![ILS](../images/legend/ils_gs.png) | ILS with glideslope. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
 | ![Localizer](../images/legend/ils_small.png) ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
+
+### Procedures {#procedures}
+
+Not all possible cases for procedures can be depicted here. See chapter [Procedures](APPROACHES.md) for more detailed information on all the legs.
+
+| Symbol | Description |
+| --- | --- |
+| ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, approach or transition leg in preview with distance, direction and magnetic course at each leg. |
+| ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) | SID, STAR, approach or transition leg which is part of the flight plan. |
+| ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Missed approach leg in preview. |
+|  ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
+| ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
+| ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
 
 ### Airport Diagram {#airport-diagram}
 
@@ -93,18 +111,18 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_gate_no_jetway.png) ![Parking](../images/legend/parking_gate.png) | Gate with number and heading tick mark. Second ring indicates availability of jetway. |
 | ![Parking](../images/legend/parking_ramp_cargo.png) | Cargo ramp |
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
-| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad.  |
+| ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad. Color indicates surface.  |
 
 ### Elevation Profile Legend {#elevation-profile-legend}
 
 | Symbol | Description |
 | --- | --- |
-| ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with start and destination airport elevation. |
+| ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with departure elevation on the left and destination airport elevation on the right. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
 | ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
 | ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is altitude plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
 | ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
-| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show altitude and climb/sink rate. |
+| ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show actual altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
 
 

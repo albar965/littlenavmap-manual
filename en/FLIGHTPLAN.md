@@ -2,11 +2,11 @@
 
 ### Upper Part {#upper-part}
 
-The top shows a label that contains departure, departure position (parking, runway or helipad), destination, flight plan distance, traveling time and flight plan type.
+The top shows a label that contains departure, departure position (parking, runway or helipad), destination, flight plan distance, traveling time, used procedures and flight plan type.
 
 Besides the label there are three input fields on top of this dock window:
 
-*   **Speed (kts):** Ground speed. The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` (estimated time of arrival at a waypoint given 0:00 as start time). It is not saved with the flight plan and not used for simulator user aircraft calculations.
+*   **Speed (kts):** Ground speed. The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` (estimated time of arrival at a waypoint given 0:00 as start time). It is saved as an annotation with the flight plan and not used for simulator user aircraft calculations.
 *   **Cruise altitude (ft):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field receives the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 *   **Flight Plan Type (IFR or VFR):** This is saved with the flight plan.
 
@@ -18,14 +18,33 @@ All selected elements in the flight plan table view will be highlighted on the m
 
 The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator.
 
-Note on the table columns `Course °M` and `Direct °M`:
+Procedure legs have dark blue color and legs of a missed approach have a dark red color.
 
-*   **`Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
-*   **`Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
+#### Table Columns {#flight-plan-table-columns}
+* **`Ident`:** ICAO ident of the navaid or airport.
+* **`Region`:** Two letter region code of a navaid.
+* **`Name`:** Name of airport or radio navaid.
+* **`Procedure Type`:** The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
+* **`Airway or Procedure`:** Contains the airway name for en route legs or procedure instruction.
+* **`Restriction`:** Either minimum altitude for en route airway segment or procedure altitude restriction. The following altitude restrictions exist for procedures:
+ * **Number only:** Fly at altitude. Example: `5.400`.
+ * **Prefix **`A`**:** Fly at or above altitude. Example: `A 1.800`.
+ * **Prefix **`B`**:** Fly at or below altitude. Example: `B 10.000`.
+ * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
+* **`Type`:** Type of a radio navaid.
+* **`Freq.`:** Frequency or channel of a radio navaid.
+* **`Range`:** Range of a radio navaid.
+* **`Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
+* **`Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
+* **`Distance`:** Distance of the flight plan leg.
+* **`Remaining`:** Remaining distance to destination airport or procedure end point \(usually the runway\).
+* **`Leg Time`:** Flying time for this leg. Calculated based on the given ground speed.
+* **`ETA`:** Estimated time of arrival. This is a static value and not updated while flying.
+* **`Remarks`:** Turn instructions, flyover or related navaid for procedure legs.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-_**Picture above:** The `Flight Plan` dock window._
+_**Picture above:** The `Flight Plan` dock window. The flight plan uses a SID for departure and a STAR, transition and an approach for arrival._
 
 ### Mouse Clicks {#mouse-clicks}
 
@@ -48,9 +67,13 @@ Moves all selected flight plan legs up or down in the list. This works also if m
 
 Airway names will be removed when waypoints in the flight plan are moved or deleted because the new flight plan legs will not follow any airway but rather use direct connections.
 
-#### ![Delete Selected Legs](../images/icons/routedeleteleg.png "Delete Selected Legs") Delete Selected Legs {#delete-selected-legs}
+Procedures or procedure legs cannot be moved and waypoints cannot be moved into or across procedures.
+
+#### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Delete Selected Legs or Procedure {#delete-selected-legs}
 
 Deletes all selected flight plan legs. Use `Undo` if you deleted legs accidentally.
+
+The whole procedure is deleted if the selected flight plan leg is a part of a procedure. Deleting a procedure deletes its transition too.
 
 #### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Edit Name of User Waypoint {#edit-name-of-user-waypoint}
 
@@ -77,6 +100,10 @@ Copies the selected entries in CSV format into the clipboard. The CSV will inclu
 #### Select All {#select-all-0}
 
 Selects all flight plan legs.
+
+##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+
+Deselects the currently selected flight plan leg and removes the highlight circles from the map.
 
 #### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view-0}
 

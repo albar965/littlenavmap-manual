@@ -1,92 +1,92 @@
-## Changes from Release 1.2
+## Changes from Release 1.2 to 1.4
 
-This is a development version. Refer to the file `CHANGELOG.txt` for more information.
+**_Little Navconnect_ is now bundled together with the _Little Navmap_ download.**
 
-## Changes from Release 1.0.5 to 1.2
+** Scenery database has to be reloaded due to a schema change.**
 
-**The program is not compatible with Windows XP anymore.**
-
-_**Little Navconnect**_** is only needed for remote connections now.**
+**Aircraft tracks are ignored and not loaded because the format has changed.**
 
 ### Enhancements
+#### Procedures, Approaches, Transitions, SID and STAR
+* Added full support for approaches, SID, STAR and transitions. Can be shown on map display and added to the flight plan. Shows much more information than the FSX/P3D GPS like above/below altitude constraints, recommended navaids and more.
+* Procedure search tab with filters and preview on map added.
+* Flight plan table shows full information for procedure legs.
+* Flight plan calculation considers SID, STAR and approaches and calculates flight plan from end of SID to beginning of STAR or approach.
+* Selected procedures (not the waypoints) are saved as an embedded annotation in the flight plan (PLN-File). This is allowed by the used XML format and supported by FSX/P3D as well as most other tools.
+* Added support for output and parsing of SID and STAR names in route string dialog.
 
-#### General
+#### Elevation
+* Added support for GLOBE offline elevation data as second source which is much faster, more reliable and has world wide coverage compared to the old (yet still supported) online data. See dialog `Options` on tab `Cache and Files`. All is explained in the dialog.
+* Elevation under cursor is now shown after a short delay on the bottom right in the status bar if the GLOBE offline data is used.
 
-* **Printing for map, flight plan, airport and weather information added.**
-* **Added night user interface style and others including option to dim the map for night display.**
-* **Units can now be changed to metric, imperial and nautical separately for distance, altitude, speed, weight and volume.**
-* **Database updates by [fsAerodata](https://www.fsaerodata.com) and [FSX/P3D Navaids update](http://www.aero.sors.fr/navaids3.html) are supported.**
-* **Dock windows are more flexible and the map window can be undocked too now.**
-* **Loading time for the scenery library has been significantly reduced.**
-* Coordinate format can now be changed from degree/minutes/seconds to decimal degree format.
-* Frequencies for VOR, NDB and ILS added to approach information tab.
-* Added display of helipad details to information window.
-* When changing departure, destination or flight plan type, the save function will optionally show the "save as" dialog. This helps to avoid overwriting flight plans with the wrong content.
-* `Save Map as image function added.`
-* All help is now available either offline as an included PDF or online from Gitbook.
-* Now displays all BGL files that were used to build an airport also including a link that shows them in Windows Explorer.
+#### AI Traffic
+* Added AI ship traffic to map display, tooltips and dock window `Simulator Aircraft` on tab `AI / Multiplayer`.
+* Added options in dialog `Connect` and _Little Navconnect_ to disable SimConnect transfer of AI vehicles if needed for performance reasons.
+* Improved display of AI vehicles by dividing them into large and small types.
 
 #### Flight Plan
+* Added more flight plan export options:
+ * GPX (GPS Exchange Format) which can be read by Google Earth and many other GIS tools. Includes flown track including altitude and time.
+ * PMDG RTE
+ * Aerosoft Airbus FLP
+ * X-Plane FMS
+* Each export option remembers the last selected directory separately.
+* Flight plan file paths are now remembered for each simulator separately.
+* Added saving and loading of selected speed in PLN file. Speed change modifies route now.
+* Added option for clean flight plan (PLN) export since some add-ons are not capable to read the embedded annotations in the PLN-files (although this is allowed by the XML standard).
+* Added airway segment minimum altitude to flight plan table.
+* Added delayed update to elevation profile window for altitude changes in flight plan to overcome laggy speed spin box.
+* Added menu item `Activate Flight Plan Leg` to manually select the active leg.
+* Adjusted flight plan calculation to better avoid large unrealistic airway segments.
 
-* **Flight plans can now be exported to the GFP format used by the _Flight1 GTN 650/750_.**
-* The names of user defined waypoints can now be changed.
-* **Flight plan route description parsing added which allows to convert flight plans from and to ATS route descriptions. This even uses speed and cruise altitude data given in the route description.**
-* The active flight plan leg is now highlighted on the map and in the flight plan table.
-* Added toolbar button to adjust flight plan altitude according to simplified hemispherical and IFR/VFR rules.
-* Added navaid range column in flight plan table.
+#### Route String Dialog
+* Added options to customize route string. Allows to switch off `DCT`, `SID` / `STAR`, speed/altitude and other generated fields.
+* Added IFR/VFR selector to route string dialog.
+* Improved cruise altitude and speed assignment to flight plan when reading route string. Values are either taken from string or automatically determined by IFR/VFR selector and used airways.
 
-#### Weather
-
-* **Weather data can now be directly fetched from the simulator and is updated every 15 seconds. This also applies to remote connections.**
-* **Weather is now shown in decoded format in the information window for all weather sources like simulator, _ASN_, _AS16_, NOAA and VATSIM.**
-* The _Active Sky_ flight plan weather file is now used to show METARs and decoded weather for destination and departure. This gives a precise weather indication for _ASN_ or _AS16_ users.
-* Wind pointer on top center of the map for wind around user aircraft added.
+#### Simulator Aircraft and Progress
+* Completely changed active segment logic for flight plan. Previous route legs are now excluded from selection which gives reliable active leg selection even for crossing and overlapping flight plan segments.
+* Active leg sequencing is now only done for airborne aircraft. No magenta line while you are on ground.
+* Added vertical path deviation in simulator aircraft progress after passing top of descent.
 
 #### Map Display
+* Added TACAN and VORTAC stations to display, search and all other VOR related functions. Only with fsAerodata or other navdata updates.
+* Added menu item `Reset Display Settings` in menu `Map` to reset map settings back to default.
+* Airspaces and airways are now always loaded lazily when scrolling or zooming for better performance. Both are updated when the mouse button is released after scrolling.
+* Added new map update mode in dialog `Options` on tab `Map` that combines full details and lazy load when scrolling and zooming.
+* Added small airport symbol in runway schema display to indicate click spot for airport.
+* Improved statusbar display for shown map features. Added empty airports, airspaces and AI vehicles.
+* Increased cache size for airway geometry and other features for better performance.
+* Added option to disable display of the top of descent points and values.
+* Moved airway display one layer up for map display. Now shown on higher zoom levels.
 
-* **AI and multiplayer aircraft are now shown on the map. Information about these is available in the aircraft progress window and tooltips.**
-* **Added configurable top of descent display on map and elevation profile display based on simple number of nautical miles per 1000 ft rule.**
-* The floating map overlays can now be hidden.
-* Added a mode that scrolls the map continuously while displaying and following the user aircraft.
-* Movement and updates of the user aircraft are now more fluid.
-* User aircraft icon can now show an optional line indicating the track.
-* Aircraft types \(jet, piston/turboprop, helicopter\) are now indicated by the user and AI/multiplayer aircraft icons.
-* Added drawing of minimum safe altitude for each flight plan segment in profile window.
-* Runway length is now shown in precise units using meter or feet depending on settings.
-* **Text labels on map can now be customized for airport, user and AI/multiplayer aicraft.**
-* **Symbol and text sizes for airports, navaids, user and AI/multiplayer aircraft can be changed separately.**
-* Flight plan and user aircraft trail line width and color can be changed.
-* Range ring and distance measurement line width can be changed.
-* Zoom distance for double click and `Show on map menu items can now be changed separately.`
-* Added option to center map on last flight plan on startup.
+#### Airspaces
+* Added display of airspaces to map, information window and tooltips.
+* Added separate airspace toolbar with drop down menus to limit display by type, altitude or flight plan cruise level.
 
-#### Flight Simulator Connection
-
-* _**Little Navmap**_** can now connect to a flight simulator directly. **_**Little Navconnect**_** is now only needed for remote connections.**
-* _**Little Navmap**_** can now optionally reconnect to a local flight simulator or a remote **_**Little Navconnect**_** instance. Start order of programs does not matter now.**
-* Hostnames can now be deleted in the connect dialog list.
-
-### Problems Solved
+#### Scenery Database Loader
+* Added option to read also inactive scenery entries. Useful if sceneries are disabled or enabled by tools for each flight.
+* Added better and more detailed error report for scenery database loading. Report now contains missing scenery directories since the simulator complains about these too. Report can now be directly copied and pasted as formatted text.
+* Added option for two external databases besides simulators. This can be used for future AIRAC database updates.
 
 #### General
+* The ZIP archives of _Little Navmap_ and _Little Navconnect_ are merged now. You can find both programs on the top level directory in the archive.
 
-* **The OpenTopoMap is back in all its glory. In general all online maps using HTTPS connections should work properly now.**
-* **Course to or from user defined waypoints was wrong in some cases due to missing magnetic variance.**
-* **Fixed crashes in flight plan calculation when using the **[**FSX/P3D Navaids update**](http://www.aero.sors.fr/navaids3.html)**.**
-* Solved small problem where flight plan calculation jumped often between equal overlaying airways.
-* Line endings for saved PLN files are now always Windows style which allows to load the flight plan into PF3 ATC.
-* Route type was empty when saving a flight plan in some cases. Flight simulator could not load these.
-* Magnetic variation was wrong in some cases in information window and tooltips.
-* Solved old problem with tooltips reappearing randomly.
+#### Customization
+* Added configuration files for color customization for map, airspaces, elevation profile, fusion and night styles.
+* Added cache tuning parameters to section `[settings]` in  `little_navmap.ini` file.
 
-#### Scenery Library Loader
+### Problems and Improvements
+* Fix for too many reconnects flooding log on simulator crash.
+* METAR parser errors with `NOSIG` token for weather or sky condition fixed.
+* Aircraft progress was not cleared and not updated after database switch and other window update problems.
+* Aircraft progress is now immediately updated when activating tab to avoid false readings.
+* Fixed old problem with empty registry entries when trying to detect simulator.
+* Fixed potential crashes and small memory leaks.
+* Fixed display issues with elevation profile and aircraft track where an invisible left over track could alter the elevation scale.
+* Solved problem where airports without delete record lost approaches when reading scenery.
+* Fix for multiple navaids with the same name and same region in the database.
+* Optimizations for a more compact format. Database size almost remains the same despite containing more content.
 
-* Duplicate navaids and airways are now removed.
-* Added workaround that omits long invalid airway segments while loading the scenery database.
-* Fixed problem when reading too small BGL files into the scenery database.
-* Fixed map zoom problem with some add-on airports that contain a far away dummy runway.
-* Solved old problem that caused airways split into fragments during loading.
-* Fixed problem that recognized too many add-on runway surfaces as `invalid.`
-
-
+**See the include file `CHANGELOG.txt` for a detailed list of all changes across all versions.**
 

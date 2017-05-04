@@ -1,6 +1,7 @@
 ## ![Information](../images/icons/infodock.png "Information") Information Dock Window {#information-dock-window}
 
-This dock window contains text information about airports in several tabs as well as information for one or more navaids or airways in another tab.
+This dock window contains text information about airports in several tabs as well as information for one or more navaids, airways in another tab plus and additional tab showing airspace information.
+
 A tab `Weather` also includes decoded weather information for the selected airport.
 
 All information can be copied into the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl+A` to select all and `Ctrl+C` to copy the content to the clipboard.
@@ -13,10 +14,10 @@ Additional links for helipads are available in the tab `Runways/Helipads`.
 
 An airway is always displayed with all its waypoints that are also linked to their respective map positions.
 
-The display for all airports and navaids contains one or more links besides the title of the flight simulator scenery entry at the bottom of the list in section `Scenery`. 
+The display for all airports and navaids contains one or more links besides the title of the flight simulator scenery entry at the bottom of the list in section `Scenery`.
 These links point to the respective BGL files. A click will open Windows Explorer with the corresponding file selected.
 
-Multiple links can appear for airports since these can be modified by multiple BGL files from different sceneries.
+Multiple links can appear for airports since these can be modified by multiple BGL files from different add-on sceneries or navdata updates.
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 
@@ -45,14 +46,14 @@ _**Picture above:** Aircraft information when connected to a Flight Simulator._
 Shows information similar to a flight management computer about the user aircraft. This covers flight plan progress,
 altitude, speed, ambient and environment parameters.
 
-![Aircraft Progresss Information](../images/infoacprogress.jpg "Aircraft Progresss Information")
+![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information")
 
 _**Picture above:** Progress and ambient information of the current flight situation. Some fields or tables like `Next Waypoint` are only available when a flight plan is loaded._
 
 ### Tab AI / Multiplayer
 
-Information about a AI or multiplayer aircraft is displayed in this tab if an aircraft is clicked on the map.
-This also includes departure and destination airports that can be shown on the map by clicking on the blue links.
+Information about a AI or multiplayer aircraft or ships is displayed in this tab if a vehicle is clicked on the map.
+This also includes departure and destination airports for aircraft that can be shown on the map by clicking on the blue links \(only if a flight plan is filed\).
 
 ![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
 
@@ -64,4 +65,4 @@ _**Picture above:** Information about an AI aircraft._
 Contains two tabs: One tab  `Navmap` explaining the various airport and navaid symbols and a tab `Map` which shows the
 general legend for the base map like the _OpenStreetMap_ for example.
 
-Note that the general map legend is not available to all map themes.
+Note that the general map legend is not available for all map themes.

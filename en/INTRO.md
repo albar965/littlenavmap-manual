@@ -11,11 +11,11 @@ Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the pr
 In some cases you have to install the [MS Visual C++ 2013 Redistributable package](https://www.microsoft.com/en-US/download/details.aspx?id=40784). Install both 32 and 64 bit versions.
 Usually this is already installed since many other programs require it.
 
-_Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\).
+_Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\). Windows XP is not supported.
 
 ### Installing over a previous Release
 
-I recommend to delete all installed files of a previous _Little Navmap _ version before installing a new version. All files from the previous ZIP can be deleted since settings are stored in separate directories \(except [custom map themes](APPENDIX.md#creating-or-adding-map-themes)\). In any case do not merge the installation directories.
+I recommend to delete all installed files of a previous _Little Navmap_ version before installing a new version. All files from the previous ZIP can be deleted since settings are stored in separate directories \(except [custom map themes](APPENDIX.md#creating-or-adding-map-themes)\). In any case do not merge the installation directories.
 
 See [Files](APPENDIX.md#files) for more information about configuration and database files. Do not delete these.
 
@@ -23,9 +23,9 @@ See [Files](APPENDIX.md#files) for more information about configuration and data
 
 This program was compiled using plain FSX SP2 \(no Acceleration\) SimConnect version 10.0.61259.0.
 
-You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navconnect_ out. If it fails with an error message follow the instructions below:
+You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navmap_ out. If it fails with an error message follow the instructions below:
 
-**_Prepar3D_:** In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navconnect_.
+**_Prepar3D_:** In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
 
 **_FSX Steam Edition_:** The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
@@ -51,15 +51,19 @@ Toolbars are also movable by clicking on the left handle and can also be closed 
 
 Use the `Main Menu` -> `Window` menu to bring docked windows or toolbars back.
 
+The program uses tooltips to display more information on buttons and other controls. 
+
+A more detailed descrition is shown on the left side of the statusbar if you hover the mouse over a menu item.
+
 The main window title indicates the currently selected flight simulator database \(`FSX`, `FSXSE`, `P3DV2` or `P3DV3`\), the flight plan file name and a trailing `*` if the flight plan has changes.
 
-Almost all dialogs, text labels and all information windows in _Little Navmap_ support copy and paste. You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it into the clipboard. The information windows even support copying of formatted text including the icons.
+Almost all dialogs, text labels and all information windows in _Little Navmap_ support copy and paste. You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it into the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons.
 
-The table views for the flight plan or airport/navaid search results allows copying of the results in CSV format into the clipboard.
+The table views for the flight plan or airport/navaid search results allows copying of the results in CSV format into the clipboard which can be imported into a spreadsheet program like LibreOffice Calc or Microsoft Excel.
 
 ### Translation and Locale {#translation-and-locale}
 
-_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface into any other language. Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
+_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface or manual into another language. Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
 
 Please note that some screenshots in this manual were taken using German locale, therefore a comma is used as a decimal separator and a dot as a thousands separator.
 
@@ -69,21 +73,8 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 
 ### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
 
-* `Highlighted text` is used to denote window, menu, button, file or directory names.
-* **Empty airport:** An airport that has no taxiways, no parking positions or gates, no aprons and is not an add-on airport and is not a water airport.
-* **Add-on airport:** This is an airport that was found outside the Flight Simulator default scenery folder when loading the database.
-* **Scenery Library Database:** This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ when reading all the flight simulator BGL files. It allows fast complex searches and map display.
-* **BGL File:** A binary file with the extension `BGL` which is part of a flight simulator scenery containing airport, navaid or airway information. These files can also contain traffic, landclass, elevation or other information which is not relevant for _Little Navmap_.
-* **Navaid:** VOR, NDB or waypoint
-* **Radio navaid:** VOR or NDB
-* **Parking:** GA ramp, cargo ramp, fuel box or gate.
-* **Start position:** Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.
-* **Rating:** Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:
-  1. Add-on
-  2. Parking positions \(ramp or gate\)
-  3. Taxiways
-  4. Aprons
-  5. Tower building \(only if at least one of the other conditions is met\).
+`Highlighted text` is used to denote window, menu, button, file or directory names.
+See the [glossary](GLOSSARY.md) for explanations of common terms in this manual.
 
 ## First Start {#first-start}
 
@@ -91,5 +82,5 @@ The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will
 
 A warning dialog will be shown when starting _Little Navmap_ the first time on a system without any flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
 
-One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the database.
+One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
 

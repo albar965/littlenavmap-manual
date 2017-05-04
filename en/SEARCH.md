@@ -2,13 +2,14 @@
 
 ### General {#general}
 
-Two search tabs are available for airport and navaid \(VOR, NDB and waypoints\) search.
+Three search tabs are available for airport, navaid \(VOR, NDB and waypoints\) and procedure search.
 
-These tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the hamburger button ![Hamburger Button](../images/icons/menubutton.png "Hamburger Button") on the top right.
+#### Airport and Navaid Search {#airport-navaid-search}
+The airport and navaid search tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the menu button ![Menu Button](../images/icons/menubutton.png "Menu Button") on the top right.
 
 The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
 
-If you do not get the expected results or no results at all use the `Reset Search`menu item or press `Ctrl+R` to clear all search criteria.
+**If you do not get the expected results or no results at all use the `Reset Search` menu item or press `Ctrl+R` to clear all search criteria.**
 
 Filters are defined by various controls which are mostly self explaining. Only text filters and the tri-state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
 
@@ -16,7 +17,7 @@ All filters can be used together where all conditions have to be met \(`and` ope
 
 A tooltip on the blue help button on the top right shows information about searching.
 
-#### Text filters {#text-filters}
+##### Text filters {#text-filters}
 
 The standard is to search for entries that start with the entered text.
 
@@ -26,7 +27,7 @@ The search is negated \(find all entries that do not match\) if the first charac
 
 Note that all of the above does not apply to numeric fields like `Runways: Min` or `Altitude: Max`.
 
-#### Tri state checkboxes {#tri-state-checkboxes}
+##### Tri state checkboxes {#tri-state-checkboxes}
 
 These are used to filter airports by presence of certain facilities or properties.
 
@@ -36,7 +37,7 @@ These are used to filter airports by presence of certain facilities or propertie
 
 Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used \(red fill on Linux or a `-` for macOS\).
 
-#### Distance search {#distance-search}
+##### Distance search {#distance-search}
 
 This function allows you to combine all other search options with a simple spatial search.
 
@@ -50,13 +51,17 @@ Check the drop down menu for the change indicator `*` and the search fields for 
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-_**Picture above A complex search:** Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table._
+_**Picture above A complex distance search:** Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table._
 
-### Search Result Table View {#search-result-table-view}
+![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
+
+_**Picture above A complex search for scenery:** This example shows how to find specific add-on scenery by using the `Scenery Path` search field. This shows all airports of the Orbx New Zealand South Island add-on scenery._
+
+#### Search Result Table View {#search-result-table-view}
 
 All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift+Click` or `Ctrl+Click` is possible.
 
-### Table View {#table-view}
+#### Table View {#table-view}
 
 The header of all table views allows the following manipulation:
 
@@ -72,67 +77,168 @@ The program saves the sort order, column widths and positions until `Reset View`
 
 ![Airport Search Result Table](../images/airportsearchtable.jpg "Airport Search Result Table")
 
-_**Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the hamburger button on the top right._
+_**Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the menu button on the top right._
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-_**Picture above:** Navaid search. All search options are visible. Search is limited to ICAO region _`LI`_ \(Italy\) and VOR and NDB stations._
+_**Picture above:** Navaid search limited to ICAO region *`LI`* \(Italy\) and VOR, VORTAC and TACAN stations that have a range of more than 100 nautical miles._
 
-### Mouse Clicks {#mouse-clicks-0}
+#### Mouse Clicks {#mouse-clicks-0}
 
 A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/yellow circle.
 
-### Search Result Table View Context Menu {#search-result-table-view-context-menu}
+#### Search Result Table View Context Menu {#search-result-table-view-context-menu}
 
-#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-0}
+##### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
+#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Show Procedures {#show-procedures}
+
+Opens the procedure search tab of the search dock window and display all procedures for the airport.
+
+See [Procedure Search](SEARCH.md#procedure-search) for more information.
+
+##### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
 Shows either the airport diagram or zooms to the navaid on the map.
 
-#### ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding") Filter by Entries including/excluding {#filter-by-entries-including-excluding}
+##### ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding") Filter by Entries including/excluding {#filter-by-entries-including-excluding}
 
 Takes the text of the field under the cursor and sets the search filter for an including or an excluding search. This is only enabled for text columns.
 
-#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
+##### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
 
 Clears search filters and shows all entries again in the search result table view.
 
-#### ![Reset Search](../images/icons/load-all.png "Show All") Show All {#show-all}
+##### ![Show All](../images/icons/load-all.png "Show All") Show All {#show-all}
 
 The table view does not show all entries initially for performance reasons. This menu item allows to load and show the whole search result. The view switches back to the limited number of entries after a search filter is modified or the sort order is changed. The number of all, visible and selected entries is shown at the bottom of the tab.
 
 Be aware that showing all navaids and airports can take some time especially if they are highlighted on the map when selecting all in the search result. The program does not crash but needs a few seconds to highlight everything on the map.
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-0}
+##### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-0}
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-0}
+##### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-0}
 
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-0}
+##### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-0}
 
-#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
+##### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
 
-#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
+##### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
 
-#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan-0}
+##### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan-0}
+##### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Append Position to Flight Plan {#append-position-to-flight-plan-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### ![Copy](../images/icons/copy.png "Copy") Copy {#copy}
+##### ![Copy](../images/icons/copy.png "Copy") Copy {#copy}
 
 Copies the selected entries in CSV format into the clipboard. This will consider changes to the table view like column order and sort order. The CSV includes a header line.
 
-#### Select All {#select-all}
+##### Select All {#select-all}
 
 Selects all visible entries. To select all available entries the function `Show All` has to be used first.
 
-#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
+##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+
+Deselects all entries in the table and also removes the highlight rings from the map.
+
+##### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
 
 Resets the sort order, the column order and column widths back to default.
 
-#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-0}
+##### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
+#### Procedure Search {#procedure-search}
+
+The tab `Procedures` allows to preview and add approach and departure procedures to the flight plan. Procedures of a selected airport are arranged in a tree which indicates the dependencies between approaches and transitions.
+
+See the [Procedures](APPROACHES.md#delete-selected-legs) chapter of this manual for more details.
+
+Procedure legs are shown when a procedure node is expanded in the tree. Procedures can be filtered by runway and type.
+
+Right click on a procedure to get more options in the context menu. This allows to center the map or add the procedure to you flight plan.
+
+Use the context menu of the flight plan table to remove procedures like any other waypoint. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
+
+Procedure legs are highlighted in red if the one or more navaids could not be resolved. A warning dialog will show up if you try to add this procedure to a flight plan.
+
+![Navaid Search Result Table](../images/proceduresearch.jpg "Navaid Search Result Table")
+
+_**Picture above:** Showing a transition and a RNAV approach. Start and endpoint of a transition leg are highlighted on the map._
+
+##### Filter {#procedure-filter}
+
+The **runway filter** is always available and helps to find procedures for a certain departure or arrival runway.
+
+The **type filter** is not available for a default database. A navdata update is needed to get SID and STAR procedures. 
+
+The type filter allows the selections below:
+
+* **`All Procedures`:** SID, STAR and approaches
+* **`Departure Procedures`:** Only SID
+* **`Arrival Procedures`:** STAR and approaches
+* **`Only Approaches and Transitions`:** No SID and no STAR
+
+The respective transitions are always shown.
+
+##### Procedure Tree {#procedure-tree}
+
+Legs are shown in dark blue while missed approach legs are shown in dark red color.
+
+Bold red text indicates an error in the leg. The procedure is incomplete and should not be used in a flight plan.
+
+* **`Description`:** Either description of the procedure or flight instruction for procedure legs.
+* **`Course °M`:** Magnetic course for a leg.
+* **`Dist./Time`:** Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in nautical miles.
+* **`Ident`:** Ident of the initial fix or name of the procedure. Fix name for legs.
+* **`Restriction`:** For procedures first altitude restriction or altitude restriction of a leg. The following altitude restrictions exist:
+ * **Number only:** Fly at altitude. Example: `5.400`.
+ * **Prefix **`A`**:** Fly at or above altitude. Example: `A 1.800`.
+ * **Prefix **`B`**:** Fly at or below altitude. Example: `B 10.000`.
+ * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
+* **`Remarks`:** Shows fly-over, turn direction or related navaid for a procedure leg.
+
+##### Procedure Tree Context Menu {#procedure-context-menu}
+
+##### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#procedure-show-on-map}
+
+Centers the map on the selected procedure.
+
+##### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
+
+Text and functionality of this menu item depends on the selected procedure type and if the procedure's airport is already the departure or destination airport of the current flight plan.
+
+Use the context menu of the flight plan table to remove procedures. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
+
+The corresponding procedure \(approach, SID and STAR\) is added or replaced too if a transition is selected.
+
+`Insert ... into Flight Plan`:
+
+This menu item will add the selected procedure to the current flight plan. A procedure of the same type \(SID, STAR or approach with or without transition\) will be replaced if already present in the flight plan.
+
+`Use ... as Destination` or `Use ... as Departure`:
+
+This will add or replace the destination or departure airport and add the selected procedure.
+
+The departure or destination airport are added to the flight plan too if the flight plan is empty.
+
+
+##### Expand All / Collapse All
+
+Expands all procedures so that their legs and transitions are shown or collapses the tree.
+
+##### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
+
+Clears search filters and shows all procedures again in the tree.
+
+##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+
+Deselects the currently selected procedure and also removes the preview from the map.
+
+##### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
+
+Resets the the column order and column widths back to default.

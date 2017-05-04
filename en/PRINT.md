@@ -25,7 +25,7 @@ The options below are available for departure and destination:
 gravel and others.
 * **`Detailed runway information`:** Include detailed information for the runway ends like approach
 lighting, VASI types, ILS information and more.
-* **`COM frequencies`:** Include communication frequencies like tower, ATIS, unicom and others.
+* **`COM frequencies`:** Include communication frequencies like tower, ATIS, UNICOM and others.
 * **`Weather`:** Print the decoded weather for all enabled sources as shown on the tab `Weather` in the `Information` dock window.
 
 General options:
