@@ -2,7 +2,7 @@
 
 ### General {#procedures-general}
 
-Departure and arrival procedures will be used when flying an airliner but also smaller aircraft have to use at least approach procedures at their destination when flying IFR.
+Departure and arrival procedures will be used when flying an airliner but also smaller aircraft have to use at least an approach procedure at their destination when flying IFR.  
 Flight simulator stock data provides only approaches and transitions. SIDs and STARs are not available. These can be added by navdata updates.
 
 An airline flight containing all variations can use the following procedures or segments:
@@ -20,14 +20,14 @@ An airline flight containing all variations can use the following procedures or 
 A small aircraft IFR flight can use the following procedures or segments:
 
 1. Departure airport
-4. En route airway system
-7. Transition to approach
-8. Approach
-9. Destination
+2. En route airway system
+3. Transition to approach
+4. Approach
+5. Destination
 
-Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure (although the SID may be empty and consist only of a transition). If you delete a procedure from the flight plan its transition will be deleted too.
+Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure \(although the SID may be empty and consist only of a transition\). If you delete a procedure from the flight plan its transition will be deleted too.
 
-Procedure information is saved together with a flight plan as an annotation in the PLN file and will be restored by _Little Navmap_ when loading the flight plan.
+Procedure information is saved together with a flight plan as an annotation in the PLN file and will be restored by _Little Navmap_ when loading the flight plan.  
 Procedure waypoints are not saved in the flight plan since the PLN format does not support all the different leg types and the flight simulator would not be able to display it correctly. Select the approach in your GPS or FMC if you need it there.
 
 ### Inserting a Procedure into a Flight Plan {#procedures-insert}
@@ -44,14 +44,13 @@ Deleting a single leg that is part of a procedure will remove the whole procedur
 
 ![Delete Procedure](../images/deleteprocedure.jpg "Delete Procedure")
 
-_**Picture above:** About to remove the transition `MUN` of the approach `RNAV BEGEN` from the flight plan._
-
+_**Picture above:** About to remove the transition _`MUN`_ of the approach _`RNAV BEGEN`_ from the flight plan._
 
 ### Limitations when editing a flight plan with procedures {#procedures-limitations}
 
 * Deleting a leg of a procedure will remove the whole procedure from the flight plan.
 * You cannot move a procedure leg up or down neither can you move or add a flight plan leg into a procedure.
-* You cannot add waypoints in between procedures (e.g. a STAR and an approach). Waypoints can only be added to the route between departure and arrival procedures.
+* You cannot add waypoints in between procedures \(e.g. a STAR and an approach\). Waypoints can only be added to the route between departure and arrival procedures.
 * You cannot add waypoints between arrival procedure and destination airport.
 * You cannot add waypoints between departure airport and a SID procedure.
 * If you delete or replace the destination airport all approach and arrival procedures are removed too.
@@ -68,17 +67,17 @@ No entry or exit procedure is shown. You have to find a proper entry procedure y
 If time is given you fly the hold as usual:
 
 1. Enter at the fix using a proper entry procedure
-1. Do a standard turn
-1. Fly the straight leg for the given time \(often one minute\)
-1. Do standard turn
-2. Fly to fix
-3. Exit hold at fix if done
+2. Do a standard turn
+3. Fly the straight leg for the given time \(often one minute\)
+4. Do standard turn
+5. Fly to fix
+6. Exit hold at fix if done
 
-Do not follow the lines slavish, they are just an indicator for what to fly. An exception are holds where a distance is given for the straight leg. The hold size will match the distance in this case.
+Do not follow the lines exactly, they are just an indicator for what to fly. An exception are holds where a distance is given for the straight leg. The hold size will match the distance in this case.
 
 ![Hold](../images/hold.jpg "Hold")
 
-_**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at `ZUNAD` and fly at or above 2600 feet. Course is 61° magnetic degrees._
+_**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at _`ZUNAD`_ and fly at or above 2600 feet. Course is 61° magnetic degrees._
 
 #### Exiting a Hold {#procedures-flying-exit-holds}
 
@@ -96,7 +95,7 @@ Fly the procedure turn as usual: Minimum one minute from the fix. Use more if yo
 
 ![Procedure Turn](../images/procedureturn.jpg "Procedure Turn")
 
-_**Picture above:** A procedure turn. Fly at least one minute outbound 61° from `ABERN`, turn left to 16°, fly one minute, turn 180° and fly to `LAMMB`, then 242° to `ABERN`._
+_**Picture above:** A procedure turn. Fly at least one minute outbound 61° from _`ABERN`_, turn left to 16°, fly one minute, turn 180° and fly to _`LAMMB`_, then 242° to _`ABERN`_._
 
 #### Distances {#procedures-distances}
 
@@ -109,10 +108,10 @@ Holds and procedure turns do not count in flying distance while all others legs 
 * **Waypoints:** Terminal waypoints or radio navaids. Some are marked as `flyover` in the approach table.
 * **Radial and distance:** Example: `WIK/7nm/291°M`. A fix defined by a course or heading and distance to a navaid.
 * **Distance to DME:** Example: `WIK/9nm`. This fix is defined by a heading or track which is terminated by reaching a DME distance.
-* **`Intercept Course to Fix`:** Intercept a course to the next fix at an angle of about 45 degrees.
-* **`Intercept Leg`:** Intercept the next approach leg at a course of about 45 degrees.
-* **`Altitude`:** A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
-* **`Manual`:** Fly a heading, track or a hold until manually terminated by ATC.
+* `Intercept Course to Fix`**:** Intercept a course to the next fix at an angle of about 45 degrees.
+* `Intercept Leg`**:** Intercept the next approach leg at a course of about 45 degrees.
+* `Altitude`**:** A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
+* `Manual`**:** Fly a heading, track or a hold until manually terminated by ATC.
 
 ### Altitude Restrictions {#procedures-restrictions}
 
@@ -144,3 +143,4 @@ Up to three points will be highlighted when clicking on a procedure leg in the t
 ### Invalid Data
 
 A leg entry will drawn red if a navaid was not resolved during the scenery database loading process. This happens only when the source data is not valid or incomplete. The resulting procedure is not usable in this case and a warning dialog will be shown if essential navaids are missing.
+
