@@ -4,7 +4,7 @@ To add an arbitrary online of an offline map to _Little Navmap_ simply add the m
 
 The full path to the DGML file \(see links below for more details about DGML\) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
 
-The menu `Main Menu` -> `Map` -> `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
+The menu `Main Menu` -&gt; `Map` -&gt; `Theme` and the toolbar drop down box will receive an entry for each additional map theme.
 
 The options `Show Country and City Names` and `Show Hillshading` are enabled for all additional map themes but might not work depending on properties defined in the map's DGML file.
 
@@ -17,7 +17,7 @@ More maps and information about map configuration and DGML files can be found he
 
 ## External Scenery Database {#external-scenery-databases}
 
-The program allows to add two so-called external scenery library databases. These can be used for future extensions (AIRAC cycle data) or experiments.
+The program allows the addition of two so-called external scenery library databases. These can be used for future extensions \(AIRAC cycle data\) or experiments.
 
 Store any additional and valid scenery library database in the directory:
 
@@ -41,15 +41,15 @@ All configuration files for my programs for Windows 7/8/10 are typically stored 
 
 There are three configuration files for this program:
 
-* **`little_navmap.ini`:** INI style configuration file. Text file.
-* **`little_navmap.history`:** The map position history. Binary file.
-* **`little_navmap.track`:** The user aircraft track. Binary file.
+* `little_navmap.ini`**:** INI style configuration file. Text file.
+* `little_navmap.history`**:** The map position history. Binary file.
+* `little_navmap.track`**:** The user aircraft track. Binary file.
 
 Three more configuration files are created for customization of colors and styles:
 
-* **`little_navmap_fusionstyle.ini`:** INI style configuration file for customizing the GUI colors of the style `Fusion`.
-* **`little_navmap_nightstyle.ini`:** INI style configuration file for customizing the GUI colors of the style `Night`.
-* **`little_navmap_mapstyle.ini`:** INI style configuration file. Text file. Used for customization of the map display.
+* `little_navmap_fusionstyle.ini`**:** INI style configuration file for customizing the GUI colors of the style `Fusion`.
+* `little_navmap_nightstyle.ini`**:** INI style configuration file for customizing the GUI colors of the style `Night`.
+* `little_navmap_mapstyle.ini`**:** INI style configuration file. Text file. Used for customization of the map display.
 
 See [Customization](CUSTOMIZE.md) for more information.
 
@@ -63,22 +63,22 @@ The scenery library databases are stored in the directory:
 
 There can be up to five files depending which simulators you have installed and which scenery libraries you've loaded.
 
-All these databases are [SQLite](http://sqlite.org) files than can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
+All these databases are [SQLite](http://sqlite.org) files which can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
 
 The files are:
 
-* **`little_navmap_.sqlite`:** An empty dummy database.
-* **`little_navmap_fsx.sqlite`:** Flight Simulator X
-* **`little_navmap_fsxse.sqlite`:** Flight Simulator - Steam Edition
-* **`little_navmap_p3dv2.sqlite`:** Prepar3D v2
-* **`little_navmap_p3dv3.sqlite`:** Prepar3D v3
+* `little_navmap_.sqlite`**:** An empty dummy database.
+* `little_navmap_fsx.sqlite`**:** Flight Simulator X
+* `little_navmap_fsxse.sqlite`**:** Flight Simulator - Steam Edition
+* `little_navmap_p3dv2.sqlite`**:** Prepar3D v2
+* `little_navmap_p3dv3.sqlite`**:** Prepar3D v3
 
 ## Tips for old and slow Computers {#tips-for-old-and-slow}
 
 ### Save CPU Cycles {#save-cycles}
 
-* Dialog `Options` -> `Map` -> `Details while scrolling ... `: Use `Normal ...`
-* Dialog `Options` -> `Simulator Aircraft` -> `Simulator Aircraft scroll box size ...`: Use a higher value to reduce map updates.
+* Dialog `Options` -&gt; `Map` -&gt; `Details while scrolling ...`: Use `Normal ...`
+* Dialog `Options` -&gt; `Simulator Aircraft` -&gt; `Simulator Aircraft scroll box size ...`: Use a higher value to reduce map updates.
 * Close the window `Flight Plan Elevation Profile`. It will stop all background processing when closed.
 * Avoid airspaces. Switch them off using the ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") button on the airspaces toolbar.
 * Switch off all AI traffic in the dialog `Connect`. See [here](CONNECT.md#options).
@@ -87,7 +87,7 @@ The files are:
 
 Replace the complete section `[Settings]` in the `little_navmap.ini` with the section below to reduce cache sizes.
 
-``` ini
+```ini
 [Settings]
 DatabaseCacheKb=5000
 InfoQueryAirportCache=100
@@ -121,16 +121,16 @@ MapQueryTaxipathCache=100
 * **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
 * **Zoom can be too fast when using a touchpad** with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
 * **Search shows no result or unexpected results:** Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
-* **Search or flight plan tables shows strange column names like `airport_id` or others:** This can happen if the program is updated. Use `Reset View` in the context menu of the result table.
-* **Online maps like _OpenStreetMap_ or _OpenTopoMap_ maps can end up blurred** when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
+* **Search or flight plan tables shows strange column names like **`airport_id`** or others:** This can happen if the program is updated. Use `Reset View` in the context menu of the result table.
+* **Online maps like **_**OpenStreetMap**_** or **_**OpenTopoMap**_** maps can end up blurred** when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
 * **The flight plan elevation profile has errors or invalid elevation data:** The online elevation data contains several known errors. Use the recommended GLOBE offline elevation data. See [here](OPTIONS.md#cache-elevation) for information how to install the offline data.
-* **_OpenStreetMap_ shows a dark gray background** on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
+* _**OpenStreetMap**_** shows a dark gray background** on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
 * **Loading of the scenery database takes too long:** Exclude scenery directories containing only landclass, elevation data or other for _Little Navmap_ irrelevant data. You can do that in the `Options` dialog on the `Scenery Library Database` tab. See [Options](OPTIONS.md#scenery-library-database_exclude).
 * **Crash while loading the scenery library database:** You can exclude scenery directories in the `Options` dialog on the `Scenery Library Database` tab if loading of an add-on BGL causes the program to crash. Do not restart the program after it shows the crash dialog and instead load the log file which is typically `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`. The path may vary depending on your Windows installation. Search for the last line in the log-file that looks like:
 
-     `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
+  `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
 
-     Now search for `APX41080.bgl` and exclude its directory from loading in the `Options` dialog.
+  Now search for `APX41080.bgl` and exclude its directory from loading in the `Options` dialog.
 
 ## Known Problems {#known-problems}
 
@@ -157,7 +157,7 @@ When an error occurs during loading of the scenery library send me the offending
 
 If you're concerned about privacy when sending log files: The log files will contain all system paths \(like your `Documents` directory\) which will also include your username as a part of the path. They might also contain your computer's name and IP address in your network.
 
-In no case are file names from anything else than flight simulator paths/files or configuration files are included. No names or content of personal files is included in the log files.
+In no case are file names from anything other than flight simulator paths/files or configuration files are included. No names or content of personal files is included in the log files.
 
 I would suggest to remove this information if you're concerned about it.
 
