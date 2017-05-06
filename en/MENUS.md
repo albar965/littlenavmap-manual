@@ -491,6 +491,10 @@ Opens or closes these dock windows. The map dock window cannot be closed.
 
 Shows or hides these toolbars and the statusbar.
 
+#### Reset Window Layout {#reset-layout}
+
+Resets the main window layout back to default. This involves visibility, position and state of all dock windows. This function can be helpful if a dock window gets lost on multi monitor setups.
+
 ### Help Menu {#help-menu}
 
 #### ![Contents (Online)](../images/icons/help.png "Contents (Online)") Contents (Online) {#help-contents}
