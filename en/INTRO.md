@@ -8,7 +8,7 @@ Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Fi
 
 Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](INTRO.md#first-start) for more information on the first start after installation.
 
-In some cases you have to install the [MS Visual C++ 2013 Redistributable package](https://www.microsoft.com/en-US/download/details.aspx?id=40784). Install both 32 and 64 bit versions.
+In some cases you have to install the [MS Visual C++ 2013 Redistributable package](https://www.microsoft.com/en-US/download/details.aspx?id=40784). Install both 32 and 64 bit versions.  
 Usually this is already installed since many other programs require it.
 
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\). Windows XP is not supported.
@@ -25,9 +25,9 @@ This program was compiled using plain FSX SP2 \(no Acceleration\) SimConnect ver
 
 You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navmap_ out. If it fails with an error message follow the instructions below:
 
-**_Prepar3D_:** In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
+_**Prepar3D**_**:** In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
 
-**_FSX Steam Edition_:** The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
+_**FSX Steam Edition**_**:** The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
 ## Quick Overview {#quick-overview}
 
@@ -49,11 +49,11 @@ All docked windows except the map window can be closed if they are not needed. Y
 
 Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
 
-Use the `Main Menu` -> `Window` menu to bring docked windows or toolbars back.
+Use the `Main Menu` -&gt; `Window` menu to bring docked windows or toolbars back.
 
-The program uses tooltips to display more information on buttons and other controls. 
+The program uses tooltips to display more information on buttons and other controls.
 
-A more detailed descrition is shown on the left side of the statusbar if you hover the mouse over a menu item.
+A more detailed description is shown on the left side of the statusbar if you hover the mouse over a menu item.
 
 The main window title indicates the currently selected flight simulator database \(`FSX`, `FSXSE`, `P3DV2` or `P3DV3`\), the flight plan file name and a trailing `*` if the flight plan has changes.
 
@@ -73,16 +73,16 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 
 ### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
 
-`Highlighted text` is used to denote window, menu, button, file or directory names.
+`Highlighted text` is used to denote window, menu, button, file or directory names.  
 See the [glossary](GLOSSARY.md) for explanations of common terms in this manual.
 
 ### Rating {#rating}
 
-Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:
-  1. Add-on
-  2. Parking positions \(ramp or gate\)
-  3. Taxiways
-  4. Aprons
+Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:  
+  1. Add-on  
+  2. Parking positions \(ramp or gate\)  
+  3. Taxiways  
+  4. Aprons  
   5. Tower building \(only if at least one of the other conditions is met\).
 
 ## First Start {#first-start}
