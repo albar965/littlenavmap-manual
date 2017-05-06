@@ -46,7 +46,7 @@ _**Picture above:** Aircraft information when connected to a Flight Simulator._
 Shows information similar to a flight management computer about the user aircraft. This covers flight plan progress,  
 altitude, speed, ambient and environment parameters.
 
-!\[Aircraft Progress Information\]\(../images/infoacprogress.jpg "Aircraft Progress's Information"\)
+![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information")
 
 _**Picture above:** Progress and ambient information of the current flight situation. Some fields or tables like _`Next Waypoint`_ are only available when a flight plan is loaded._
 

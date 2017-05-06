@@ -437,7 +437,7 @@ _Little Navmap_ limits the display of AI vehicles depending on size. Zoom close 
 
 #### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
 
-Shows a latitude/longitude grid as well as the \[meridian\]\([http://en.wikipedia.org/wiki/Prime\_meridian\_\(Greenwich](http://en.wikipedia.org/wiki/Prime_meridian_%28Greenwich)\)\) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
+Shows a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
 
 #### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Show Country and City Names {#show-country-and-city-names}
 
@@ -507,11 +507,11 @@ Resets the main window layout back to default. This involves visibility, positio
 
 ### Help Menu {#help-menu}
 
-#### !\[Contents \(Online\)\]\(../images/icons/help.png "Contents \(Online\)"\) Contents \(Online\) {#help-contents}
+#### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contents \(Online\) {#help-contents}
 
 Shows the online user manual in the default web browser.
 
-#### !\[Contents \(Offline, PDF\)\]\(../images/icons/help.png "Contents \(Offline, PDF\)"\) Contents \(Offline, PDF\) {#help-contents-offline}
+#### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contents \(Offline, PDF\) {#help-contents-offline}
 
 Shows the included PDF user manual in the default PDF viewer.
 
