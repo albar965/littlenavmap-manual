@@ -9,11 +9,11 @@
 * Scenery library databases for flight simulators are stored separately and can be changed on the fly.
 * Display of METARs or decoded weather data from Flight Simulator, _Active Sky Next_, _AS16_, NOAA or VATSIM in tooltips and information windows.
 * The program saves almost all settings including the flight plan, window positions, searches and more and restores everything on start up.
-* Most question or information dialogues can be disabled.
+* Most questions or information dialogues can be disabled.
 * _Little Navmap_ can be run on computers that do not contain any simulator installations at all. Simply copy the scenery library database from your flight simulator computer.
-* Program consumes only low resources and can be run on old computers.
+* Program consumes low resources and can be run on older computers.
 * Information windows and tabs show detailed information about airports, navaids, airways, airspaces, weather, AI aircraft, multiplayer aircraft and more.
-* Exhaustive search function for airports and navaids that allows filtering by an extensive range of criteria.
+* Exhaustive search function for airports and navaids allows filtering by an extensive range of criteria.
 * Distance and direction based spatial search for airports or navaids around a center point. Can be combined with all other search options.
 * Search for airports or navaids by BGL file name or path to find your preferred add-on airports.
 * Support for navdata updates from [_fsAerodata_](https://www.fsaerodata.com) and [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
