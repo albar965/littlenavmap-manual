@@ -43,16 +43,16 @@ Legs are shown in dark blue while missed approach legs are shown in dark red col
 
 Bold red text indicates an error in the leg. The procedure is incomplete and should not be used in a flight plan.
 
-* `Description`**:** Either description of the procedure or flight instruction for procedure legs.
-* `Course °M`**:** Magnetic course for a leg.
-* `Dist./Time`**:** Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in nautical miles.
-* `Ident`**:** Ident of the initial fix or name of the procedure. Fix name for legs.
-* `Restriction`**:** For procedures first altitude restriction or altitude restriction of a leg. The following altitude restrictions exist:
+* **`Description`:** Either description of the procedure or flight instruction for procedure legs.
+* **`Course °M`:** Magnetic course for a leg.
+* **`Dist./Time`:** Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in nautical miles.
+* **`Ident`:** Ident of the initial fix or name of the procedure. Fix name for legs.
+* **`Restriction`:** For procedures first altitude restriction or altitude restriction of a leg. The following altitude restrictions exist:
   * **Number only:** Fly at altitude. Example: `5.400`.
   * **Prefix **`A`**:** Fly at or above altitude. Example: `A 1.800`.
   * **Prefix **`B`**:** Fly at or below altitude. Example: `B 10.000`.
   * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
-* `Remarks`**:** Shows fly-over, turn direction or related navaid for a procedure leg.
+* **`Remarks`:** Shows fly-over, turn direction or related navaid for a procedure leg.
 
 ##### Procedure Tree Context Menu {#procedure-context-menu}
 

@@ -1,4 +1,3 @@
-
 ## ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library Dialog {#load-scenery-library-dialog}
 
 This dialog allows loading of the scenery library data from all four supported flight simulators into the _Little Navmap_ internal database. The scenery library to load can be selected in the `Simulator:` drop down box.
@@ -15,7 +14,7 @@ See [Options](OPTIONS.md#scenery-library-database) for more information about ex
 
 The previous scenery library database will be restored if you cancel the loading process or if the loading process fails.
 
-The menu `Scenery Library` -> `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
+The menu `Scenery Library` -&gt; `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
 
 Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` will differ to the numbers shown in the progress dialog.
 
@@ -23,10 +22,10 @@ The progress dialog shows all objects that were found during loading. The the di
 
 The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
 
-*   **Flight Simulator X:** `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
-*   **Flight Simulator - Steam Edition:** `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
-*   **Prepar3D v2:** `C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg`
-*   **Prepar3D v3:** `C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg`
+* **Flight Simulator X:** `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
+* **Flight Simulator - Steam Edition:** `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
+* **Prepar3D v2:** `C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg`
+* **Prepar3D v3:** `C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg`
 
 An error dialog is shown after loading if any files could not be read or directories were not found. In this case you should check if the airports of the affected sceneries display correctly and show the correct information. The error dialog allows copy and paste of formatted text which is useful for error reporting.
 
@@ -49,6 +48,4 @@ _**Picture above:** Load Scenery Dialog. Scenery data is already loaded for FSX.
 ![Load Scenery Progress Dialog](../images/loadsceneryprogress.jpg "Load Scenery Progress Dialog")
 
 _**Picture above:** Progress dialog shown while loading the scenery library into Little Navmap's internal database._
-
-
 

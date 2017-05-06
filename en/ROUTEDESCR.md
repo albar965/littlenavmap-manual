@@ -31,18 +31,18 @@ _**Picture above:** A route description that was read successfully with a few wa
 
 ### Buttons {#buttons}
 
-* `To Clipboard`**:** Copies the current description as plain text to the clipboard.
-* `From Clipboard`**:** Inserts text from clipboard to the input field. The inserted text is converted to  upper case and all invalid characters are removed from the text.
-* `Update from Flight Plan`**:** Creates the route string from the current flight plan again. Use this after changing settings with drop down menu button.
-* `Read Route Description`**:** Reads the route description and prints any messages, warnings and errors in the lower output field. The current flight plan is not affected by this action.
-* `IFR`** / **`VFR`**:** Defines the type of the generated flight plan and the automatically determined cruise altitude.
+* **`To Clipboard`:** Copies the current description as plain text to the clipboard.
+* **`From Clipboard`:** Inserts text from clipboard to the input field. The inserted text is converted to  upper case and all invalid characters are removed from the text.
+* **`Update from Flight Plan`:** Creates the route string from the current flight plan again. Use this after changing settings with drop down menu button.
+* **`Read Route Description`:** Reads the route description and prints any messages, warnings and errors in the lower output field. The current flight plan is not affected by this action.
+* **`IFR` / `VFR`:** Defines the type of the generated flight plan and the automatically determined cruise altitude.
 * **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button")**:**
-  * `Add departure and destination airport`**:** Note that disabling this options will result in an invalid route string which cannot be read back into a flight plan.
-  * `Add DCT (direct) instructions`**:** Add `DCT` for any direct waypoint connections in the flight plan.
-  * `Add cruise speed and altitude instruction`**:** Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
-  * `Add SID and STAR`**:** Add SID and STAR names if any are used for departure or arrival.
-  * `Add generic SID and STAR`**:** Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
-* `Create Flight Plan`**:** Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before creating a flight plan.
+  * **`Add departure and destination airport`:** Note that disabling this options will result in an invalid route string which cannot be read back into a flight plan.
+  * **`Add DCT (direct) instructions`:** Add `DCT` for any direct waypoint connections in the flight plan.
+  * **`Add cruise speed and altitude instruction`:** Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
+  * **`Add SID and STAR`:** Add SID and STAR names if any are used for departure or arrival.
+  * **`Add generic SID and STAR`:** Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
+* **`Create Flight Plan`:** Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before creating a flight plan.
 
 ### Format {#format}
 

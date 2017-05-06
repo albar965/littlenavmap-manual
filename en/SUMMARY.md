@@ -15,6 +15,7 @@
 * [Search Dock Window - Procedures](SEARCHPROCS.md)
 * [Flight Plan Dock Window](FLIGHTPLAN.md)
 * [Flight Plan Procedures](APPROACHES.md)
+* [Flight Plan Route Description](ROUTEDESCR.md#flight-plan-from-route-description)
 * [Flight Plan Elevation Profile Dock Window](PROFILE.md)
 * [Information Dock Window](INFO.md#information-dock-window)
 * [Legend Dock Window](INFO.md#legend-dock-window)
@@ -22,7 +23,6 @@
 * [Weather](WEATHER.md)
 * [Printing the Map](PRINT.md#printing-the-map)
 * [Printing the Flight Plan](PRINT.md#printing-the-flight-plan)
-* [Flight Plan Route Description](ROUTEDESCR.md#flight-plan-from-route-description)
 * [Load Scenery Library Dialog](SCENERY.md)
 * [Connecting to a Flight Simulator](CONNECT.md)
 * [Options Dialog](OPTIONS.md)
@@ -39,6 +39,4 @@
 * [How to report a Bug](APPENDIX.md#how-to-report-a-bug)
 * [Acknowledgments](APPENDIX.md#acknowledgments)
 * [License](APPENDIX.md#license)
-
-
 
