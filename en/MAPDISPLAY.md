@@ -12,11 +12,11 @@ Alternatively use the cursor keys to scroll the map and `+` and `-` to zoom in a
 
 A single click on an airport, navaid, airway line or airspace shows details in the `Information` dock window.
 
-A single click on an user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
+A single click on a user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
 
 A double click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window. The same applies for all AI or multiplayer aircraft or ships.
 
-The double and single click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map`.
+The double and single click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
 
 The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map Display` tab.
 
@@ -24,13 +24,13 @@ The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map 
 
 The user aircraft and AI or multiplayer aircraft or ships will be shown on the map if the program is connected to a flight simulator. Color indicates user or AI or multiplayer vehicle and the symbol shape indicates if the aircraft is an piston/turboprop, jet, helicopter or a ship. The symbol outline changes to gray if an aircraft is on ground.
 
-Little Navmap_ limits the display of AI vehicles depending on size. Zoom close to see small aircraft or boats
+Little Navmap  limits the display of AI vehicles depending on size. Zoom close to see small aircraft or boats
 
 AI and multiplayer aircraft on ground are shown only on small zoom distances to avoid cluttered airports. This means that an AI aircraft can disappear from the map when landing on an airport.
 
 On the lowest zoom distance all aircraft are drawn to scale as are the parking spots which means you can easily check if your aircraft fits on an apron, parking spot or taxiway.
 
-A yellow wind arrow and labels for the situation around the user aircraft can be displayed on the
+A yellow wind arrow and labels for the situation around the user aircraft can be displayed on the  
 top center of the map. The displayed labels for aircraft can be configured in the dialog `Options` on tab `Map Display`. No labels are shown for ship traffic.
 
 See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
@@ -51,7 +51,7 @@ Airports or navaids that are selected in the flight plan table or in the search 
 
 Waypoints that are selected in the procedure preview are highlighted with a blue/black ring.
 
-These highlight rings provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance (ring is empty). This allows double click for zoom in, single click for information dock window and all context menu entries.
+These highlight rings provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance \(ring is empty\). This allows double click for zoom in, single click for information dock window and all context menu entries.
 
 ### Airport Diagram {#airport-diagram}
 
@@ -111,7 +111,7 @@ The course for a rhumb line is normally indicated in degrees true. Course will b
 
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
 
-This menu item is active if you right click at the end of a distance measurement line (small cross). Removes only the selected line.
+This menu item is active if you right click at the end of a distance measurement line \(small cross\). Removes only the selected line.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings}
 
@@ -119,11 +119,11 @@ Shows multiple red range rings around the clicked position. The number and dista
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
 
-Shows a ring around the clicked radio navaid (VOR or NDB) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
+Shows a ring around the clicked radio navaid \(VOR or NDB\) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
 
 #### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Remove Range Ring {#remove-range-ring}
 
-Menu item is active if you right click at the center point of a range ring (small circle). Removes the rings from the map.
+Menu item is active if you right click at the center point of a range ring \(small circle\). Removes the rings from the map.
 
 #### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
 
