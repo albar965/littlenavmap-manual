@@ -71,7 +71,7 @@ If time is given you fly the hold as usual:
 3. Fly the straight leg for the given time \(often one minute\)
 4. Do standard turn
 5. Fly to fix
-6. Exit hold at fix if done
+6. Exit hold when done or instructed by ATC
 
 Do not follow the lines exactly, they are just an indicator for what to fly. An exception are holds where a distance is given for the straight leg. The hold size will match the distance in this case.
 
@@ -86,6 +86,8 @@ _Little Navmap_ will detect when a hold is exited and advance the active leg to 
 1. **If the next leg continues after or at the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile.
 
 2. **If the next leg starts before the hold fix:** Exit the hold at its fix. Exit right turn holds to the left and vice versa \(i.e. turn outside the hold\). Proceed to the fix of the next leg which will be activated.
+
+You can activate the next leg manually if you do not exit the hold at its fix. Right click in the flight plan table on the next leg and select `Activate Flight Plan Leg`.
 
 #### Procedure turns {#procedures-turns}
 
