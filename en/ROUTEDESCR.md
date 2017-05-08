@@ -36,7 +36,7 @@ _**Picture above:** A route description that was read successfully with a few wa
 * **`Update from Flight Plan`:** Creates the route string from the current flight plan again. Use this after changing settings with drop down menu button.
 * **`Read Route Description`:** Reads the route description and prints any messages, warnings and errors in the lower output field. The current flight plan is not affected by this action.
 * **`IFR` / `VFR`:** Defines the type of the generated flight plan and the automatically determined cruise altitude.
-* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button")**:**
+* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"):
   * **`Add departure and destination airport`:** Note that disabling this options will result in an invalid route string which cannot be read back into a flight plan.
   * **`Add DCT (direct) instructions`:** Add `DCT` for any direct waypoint connections in the flight plan.
   * **`Add cruise speed and altitude instruction`:** Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
@@ -167,7 +167,7 @@ Frankfurt Main \(EDDF\) to Fiumicino \(LIRF\):
 
 `EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF`
 
-**User defined waypoints with degree/minute notation and an alternate airport **`LIRE`**:**
+**User defined waypoints with degree/minute notation and an alternate airport **`LIRE`:
 
 `EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE`
 

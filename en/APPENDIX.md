@@ -41,15 +41,15 @@ All configuration files for my programs for Windows 7/8/10 are typically stored 
 
 There are three configuration files for this program:
 
-* `little_navmap.ini`**:** INI style configuration file. Text file.
-* `little_navmap.history`**:** The map position history. Binary file.
-* `little_navmap.track`**:** The user aircraft track. Binary file.
+* `little_navmap.ini`: INI style configuration file. Text file.
+* `little_navmap.history`: The map position history. Binary file.
+* `little_navmap.track`: The user aircraft track. Binary file.
 
 Three more configuration files are created for customization of colors and styles:
 
-* `little_navmap_fusionstyle.ini`**:** INI style configuration file for customizing the GUI colors of the style `Fusion`.
-* `little_navmap_nightstyle.ini`**:** INI style configuration file for customizing the GUI colors of the style `Night`.
-* `little_navmap_mapstyle.ini`**:** INI style configuration file. Text file. Used for customization of the map display.
+* `little_navmap_fusionstyle.ini`: INI style configuration file for customizing the GUI colors of the style `Fusion`.
+* `little_navmap_nightstyle.ini`: INI style configuration file for customizing the GUI colors of the style `Night`.
+* `little_navmap_mapstyle.ini`: INI style configuration file. Text file. Used for customization of the map display.
 
 See [Customization](CUSTOMIZE.md) for more information.
 
@@ -67,11 +67,11 @@ All these databases are [SQLite](http://sqlite.org) files which can be viewed wi
 
 The files are:
 
-* `little_navmap_.sqlite`**:** An empty dummy database.
-* `little_navmap_fsx.sqlite`**:** Flight Simulator X
-* `little_navmap_fsxse.sqlite`**:** Flight Simulator - Steam Edition
-* `little_navmap_p3dv2.sqlite`**:** Prepar3D v2
-* `little_navmap_p3dv3.sqlite`**:** Prepar3D v3
+* `little_navmap_.sqlite`: An empty dummy database.
+* `little_navmap_fsx.sqlite`: Flight Simulator X
+* `little_navmap_fsxse.sqlite`: Flight Simulator - Steam Edition
+* `little_navmap_p3dv2.sqlite`: Prepar3D v2
+* `little_navmap_p3dv3.sqlite`: Prepar3D v3
 
 ## Tips for old and slow Computers {#tips-for-old-and-slow}
 

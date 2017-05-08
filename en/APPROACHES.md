@@ -110,18 +110,18 @@ Holds and procedure turns do not count in flying distance while all others legs 
 * **Waypoints:** Terminal waypoints or radio navaids. Some are marked as `flyover` in the approach table.
 * **Radial and distance:** Example: `WIK/7nm/291°M`. A fix defined by a course or heading and distance to a navaid.
 * **Distance to DME:** Example: `WIK/9nm`. This fix is defined by a heading or track which is terminated by reaching a DME distance.
-* `Intercept Course to Fix`**:** Intercept a course to the next fix at an angle of about 45 degrees.
-* `Intercept Leg`**:** Intercept the next approach leg at a course of about 45 degrees.
-* `Altitude`**:** A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
-* `Manual`**:** Fly a heading, track or a hold until manually terminated by ATC.
+* `Intercept Course to Fix`: Intercept a course to the next fix at an angle of about 45 degrees.
+* `Intercept Leg`: Intercept the next approach leg at a course of about 45 degrees.
+* `Altitude`: A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
+* `Manual`: Fly a heading, track or a hold until manually terminated by ATC.
 
 ### Altitude Restrictions {#procedures-restrictions}
 
 Restrictions are shown on the map and in the flight plan table.
 
 * **Number only:** Fly at altitude. Map example: `5400ft`.
-* **Prefix **`A`**:** Fly at or above altitude. Map example: `A1800ft`.
-* **Prefix **`B`**:** Fly at or below altitude. Map example: `B10000ft`.
+* **Prefix **`A`: Fly at or above altitude. Map example: `A1800ft`.
+* **Prefix **`B`: Fly at or below altitude. Map example: `B10000ft`.
 * **Range:** Fly at or above altitude one and at or below altitude two. Map example: `A8000B10000ft`.
 
 ### Related Navaids {#procedures-related}

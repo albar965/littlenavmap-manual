@@ -30,10 +30,10 @@ The **type filter** is not available for a default database. A navdata update is
 
 The type filter allows the selections below:
 
-* `All Procedures`**:** SID, STAR and approaches
-* `Departure Procedures`**:** Only SID
-* `Arrival Procedures`**:** STAR and approaches
-* `Only Approaches and Transitions`**:** No SID and no STAR
+* `All Procedures`: SID, STAR and approaches
+* `Departure Procedures`: Only SID
+* `Arrival Procedures`: STAR and approaches
+* `Only Approaches and Transitions`: No SID and no STAR
 
 The respective transitions are always shown.
 
@@ -49,8 +49,8 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
 * **`Ident`:** Ident of the initial fix or name of the procedure. Fix name for legs.
 * **`Restriction`:** For procedures first altitude restriction or altitude restriction of a leg. The following altitude restrictions exist:
   * **Number only:** Fly at altitude. Example: `5.400`.
-  * **Prefix **`A`**:** Fly at or above altitude. Example: `A 1.800`.
-  * **Prefix **`B`**:** Fly at or below altitude. Example: `B 10.000`.
+  * **Prefix **`A`: Fly at or above altitude. Example: `A 1.800`.
+  * **Prefix **`B`: Fly at or below altitude. Example: `B 10.000`.
   * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
 * **`Remarks`:** Shows fly-over, turn direction or related navaid for a procedure leg.
 
