@@ -28,10 +28,10 @@ Procedure legs have dark blue color and legs of a missed approach have a dark re
 * `Procedure Type`: The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
 * `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
 * `Restriction`: Either minimum altitude for en route airway segment or procedure altitude restriction. The following altitude restrictions exist for procedures:
-  * **Number only: Fly at altitude. Example: `5.400`.
+  * **Number only:** Fly at altitude. Example: `5.400`.
   * **Prefix** `A`: Fly at or above altitude. Example: `A 1.800`.
   * **Prefix** `B`: Fly at or below altitude. Example: `B 10.000`.
-  * **Range: Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
+  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
 * `Type`: Type of a radio navaid.
 * `Freq.`: Frequency or channel of a radio navaid.
 * `Range`: Range of a radio navaid.
