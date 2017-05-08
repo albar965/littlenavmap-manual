@@ -1,6 +1,6 @@
 ## Flight Plan Route Description {#flight-plan-from-route-description}
 
-This dialog allows you to create a flight plan from a route description as they are generated or provided  
+This dialog allows you to create a flight plan from a route description as they are generated or provided
 by various online services.
 
 When opened it will show the route description for the current flight plan which also contains information about speed and cruise altitude if enabled.
@@ -9,12 +9,12 @@ The upper part of the dialog shows the route description input field and the low
 
 The menu button ![Menu Button](../images/icons/menubutton.png "Menu Button") provides a dropdown menu than can be used to customize the generated route string.
 
-The description parser will try to use as much of the route as possible even if parts of the flight plan  
+The description parser will try to use as much of the route as possible even if parts of the flight plan
 like waypoints or airways cannot be found or names are ambiguous. You will see warnings in the lower output field if that is the case.
 
 For long flight plans it can happen that far away waypoints are added if names are not unique. Remove these manually if needed.
 
-Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are  
+Many waypoints and airways will not be found if route descriptions from the latest AIRAC sources are
 used together with flight simulator stock data from 2005. It is recommended to use a navigation data update for the stock scenery when reading route descriptions from online sources like [RouteFinder](http://rfinder.asalink.net/), [Online Flight Planner](http://onlineflightplanner.org/), [SimBrief](https://www.simbrief.com) or [SkyVector](https://skyvector.com).
 
 Otherwise, use an AIRAC cycle from the online services that is closest to the flight simulator navigation data age at the end of 2005 if a navigation data update is not an option.
@@ -31,18 +31,18 @@ _**Picture above:** A route description that was read successfully with a few wa
 
 ### Buttons {#buttons}
 
-* **`To Clipboard`:** Copies the current description as plain text to the clipboard.
-* **`From Clipboard`:** Inserts text from clipboard to the input field. The inserted text is converted to  upper case and all invalid characters are removed from the text.
-* **`Update from Flight Plan`:** Creates the route string from the current flight plan again. Use this after changing settings with drop down menu button.
-* **`Read Route Description`:** Reads the route description and prints any messages, warnings and errors in the lower output field. The current flight plan is not affected by this action.
-* **`IFR` / `VFR`:** Defines the type of the generated flight plan and the automatically determined cruise altitude.
+* `To Clipboard`: Copies the current description as plain text to the clipboard.
+* `From Clipboard`: Inserts text from clipboard to the input field. The inserted text is converted to  upper case and all invalid characters are removed from the text.
+* `Update from Flight Plan`: Creates the route string from the current flight plan again. Use this after changing settings with drop down menu button.
+* `Read Route Description`: Reads the route description and prints any messages, warnings and errors in the lower output field. The current flight plan is not affected by this action.
+* `IFR` / `VFR`: Defines the type of the generated flight plan and the automatically determined cruise altitude.
 * **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"):
-  * **`Add departure and destination airport`:** Note that disabling this options will result in an invalid route string which cannot be read back into a flight plan.
-  * **`Add DCT (direct) instructions`:** Add `DCT` for any direct waypoint connections in the flight plan.
-  * **`Add cruise speed and altitude instruction`:** Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
-  * **`Add SID and STAR`:** Add SID and STAR names if any are used for departure or arrival.
-  * **`Add generic SID and STAR`:** Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
-* **`Create Flight Plan`:** Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before creating a flight plan.
+  * `Add departure and destination airport`: Note that disabling this options will result in an invalid route string which cannot be read back into a flight plan.
+  * `Add DCT (direct) instructions`: Add `DCT` for any direct waypoint connections in the flight plan.
+  * `Add cruise speed and altitude instruction`: Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
+  * `Add SID and STAR`: Add SID and STAR names if any are used for departure or arrival.
+  * `Add generic SID and STAR`: Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
+* `Create Flight Plan`: Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before creating a flight plan.
 
 ### Format {#format}
 
@@ -116,13 +116,13 @@ Coordinates can be supplied in different formats:
 
 Example: `51N010E`
 
-**Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes and north/south indicator.  
+**Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes and north/south indicator.
 Then three digits for degrees, two digits for minutes and east/west indicator.
 
 Example: `4010N03822W`.
 
-**Degrees, minutes and seconds** \(15 characters\): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator.  
-Then three digits for degrees, two digits for minutes, two digits for seconds and east/west indicator. This format is used by  
+**Degrees, minutes and seconds** \(15 characters\): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator.
+Then three digits for degrees, two digits for minutes, two digits for seconds and east/west indicator. This format is used by
 [SkyVector](https://skyvector.com) for example.
 
 Example: `481200N0112842E`.

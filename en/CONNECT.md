@@ -57,14 +57,14 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` i
 
 ### Connect Dialog Options {#options}
 
-* **`Disconnect`:** Disconnects the current session and stops automatic reconnect.
-* **`Connect`:** Tries to connect. An error dialog will be shown if no connection can be established. _Little Navmap_ will constantly try again if `Connect automatically` is enabled.
-* **`Close`:** Closes the dialog without any changes to the current connection status.
-* **`Connect automatically`:** _Little Navmap_ will try to connect constantly if this is enabled.
+* `Disconnect`: Disconnects the current session and stops automatic reconnect.
+* `Connect`: Tries to connect. An error dialog will be shown if no connection can be established. _Little Navmap_ will constantly try again if `Connect automatically` is enabled.
+* `Close`: Closes the dialog without any changes to the current connection status.
+* `Connect automatically`: _Little Navmap_ will try to connect constantly if this is enabled.
   * All connection attempts will stop immediately if you deselect this button.
   * You have to click `Connect` to start the automatic connection attempts after checking this button.
-* **`Update Time Interval`:** Allowed range is 50 milliseconds up to 1 second. _Little Navmap_ fetches data from Flight Simulator using this time interval. Increase this value if you experience stutters or lag in the simulator. A lower value will result in more fluid map updates in _Little Navmap_.
-* **`Fetch AI or multiplayer aircraft` and `Fetch AI or multiplayer ships`:** Disables fetching of AI vehicles. These settings are applied immediately.
+* `Update Time Interval`: Allowed range is 50 milliseconds up to 1 second. _Little Navmap_ fetches data from Flight Simulator using this time interval. Increase this value if you experience stutters or lag in the simulator. A lower value will result in more fluid map updates in _Little Navmap_.
+* `Fetch AI or multiplayer aircraft` and `Fetch AI or multiplayer ships`: Disables fetching of AI vehicles. These settings are applied immediately.
 
 
 

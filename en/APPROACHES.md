@@ -120,8 +120,8 @@ Holds and procedure turns do not count in flying distance while all others legs 
 Restrictions are shown on the map and in the flight plan table.
 
 * **Number only:** Fly at altitude. Map example: `5400ft`.
-* **Prefix **`A`: Fly at or above altitude. Map example: `A1800ft`.
-* **Prefix **`B`: Fly at or below altitude. Map example: `B10000ft`.
+* **Prefix** `A`: Fly at or above altitude. Map example: `A1800ft`.
+* **Prefix** `B`: Fly at or below altitude. Map example: `B10000ft`.
 * **Range:** Fly at or above altitude one and at or below altitude two. Map example: `A8000B10000ft`.
 
 ### Related Navaids {#procedures-related}

@@ -33,13 +33,13 @@ The `Load Scenery Library` dialog shows the last time of loading \(`Last Update:
 
 ### Load Scenery Library Dialog Options
 
-* **`Simulator`:** Selects the simulator to load and show database statistics in the label above.
-* **`Reset Paths`:** Reset all paths back to default values.
-* **`Flight Simulator Base Path` and `Select ...`:** The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
-* **`Scenery Configuration File` and `Select ...`:** The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
-* **`Read inactive Scenery Entries`:** This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
-* **`Load`:** Starts the database loading process. You can stop the loading process at any time and the previous database will be restored. The dialog will be closed and the program will switch to show the loaded database once it is successfully loaded.
-* **`Close`:** Saves all settings and changes in the dialog and close it without loading anything.
+* `Simulator`: Selects the simulator to load and show database statistics in the label above.
+* `Reset Paths`: Reset all paths back to default values.
+* `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
+* `Scenery Configuration File` and `Select ...`: The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
+* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
+* `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database will be restored. The dialog will be closed and the program will switch to show the loaded database once it is successfully loaded.
+* `Close`: Saves all settings and changes in the dialog and close it without loading anything.
 
 ![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
 

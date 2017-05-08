@@ -22,26 +22,26 @@ Procedure legs have dark blue color and legs of a missed approach have a dark re
 
 #### Table Columns {#flight-plan-table-columns}
 
-* **`Ident`:** ICAO ident of the navaid or airport.
-* **`Region`:** Two letter region code of a navaid.
-* **`Name`:** Name of airport or radio navaid.
-* **`Procedure Type`:** The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
-* **`Airway or Procedure`:** Contains the airway name for en route legs or procedure instruction.
-* **`Restriction`:** Either minimum altitude for en route airway segment or procedure altitude restriction. The following altitude restrictions exist for procedures:
-  * **Number only:** Fly at altitude. Example: `5.400`.
-  * **Prefix **`A`: Fly at or above altitude. Example: `A 1.800`.
-  * **Prefix **`B`: Fly at or below altitude. Example: `B 10.000`.
-  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
-* **`Type`:** Type of a radio navaid.
-* **`Freq.`:** Frequency or channel of a radio navaid.
-* **`Range`:** Range of a radio navaid.
-* **`Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
-* **`Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
-* **`Distance`:** Distance of the flight plan leg.
-* **`Remaining`:** Remaining distance to destination airport or procedure end point \(usually the runway\).
-* **`Leg Time`:** Flying time for this leg. Calculated based on the given ground speed.
-* **`ETA`:** Estimated time of arrival. This is a static value and not updated while flying.
-* **`Remarks`:** Turn instructions, flyover or related navaid for procedure legs.
+* `Ident`: ICAO ident of the navaid or airport.
+* `Region`: Two letter region code of a navaid.
+* `Name`: Name of airport or radio navaid.
+* `Procedure Type`: The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
+* `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
+* `Restriction`: Either minimum altitude for en route airway segment or procedure altitude restriction. The following altitude restrictions exist for procedures:
+  * **Number only: Fly at altitude. Example: `5.400`.
+  * **Prefix** `A`: Fly at or above altitude. Example: `A 1.800`.
+  * **Prefix** `B`: Fly at or below altitude. Example: `B 10.000`.
+  * **Range: Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
+* `Type`: Type of a radio navaid.
+* `Freq.`: Frequency or channel of a radio navaid.
+* `Range`: Range of a radio navaid.
+* `Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
+* `Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
+* `Distance`: Distance of the flight plan leg.
+* `Remaining`: Remaining distance to destination airport or procedure end point \(usually the runway\).
+* `Leg Time`: Flying time for this leg. Calculated based on the given ground speed.
+* `ETA`: Estimated time of arrival. This is a static value and not updated while flying.
+* `Remarks`: Turn instructions, flyover or related navaid for procedure legs.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
@@ -59,7 +59,7 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
-Shows either the airport diagram or zooms to the navaid on the map. The zoom distance can be changed in the  
+Shows either the airport diagram or zooms to the navaid on the map. The zoom distance can be changed in the
 dialog `Options` on the tab `Map`.
 
 #### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Move Selected Legs up/down {#move-selected-legs-up-down}
