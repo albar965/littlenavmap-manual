@@ -12,7 +12,7 @@ Single lines can also be deleted and will be restored with the default value whe
 
 Keys and values are case sensitive. Order in the files is not important if the keys remain in their respective sections. The program might reorder the keys when saving or updating the files.
 
-## Customizing the GUI {#customize-gui}
+## GUI {#customize-gui}
 
 Only two user interface styles can be customized. These are `Fusion` and `Night` and can be found in the dialog [User Interface](OPTIONS.md#user-interface) tab of the options dialog. These two styles are available on all operating systems.
 
@@ -27,7 +27,7 @@ The key names in these files are derived from the _Qt_ palette options. Each key
 See here for more information about [groups](http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) and [roles](http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum).
 
 
-## Customizing the Map Display {#customize-map-display}
+## Map Display {#customize-map-display}
 
 The file
 `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` allows to customize various aspects of the map display and is currently limited to colors and pens. Most key names are self explaining. See below for more information about color values.
@@ -52,7 +52,7 @@ You can use the [w3schools color picker](https://www.w3schools.com/colors/colors
 
 `ApproachFillColor=#3060808a`
 
-## Pen Format {#customize-formats-pen}
+### Pen Format {#customize-formats-pen}
 
 A pen contains the following values in a comma separated list:
 
@@ -68,3 +68,36 @@ A pen contains the following values in a comma separated list:
 
 `NationalParkPen=#509090, 2.1, Solid`
 
+## User, AI and Multiplayer Aircraft Icons {#customize-aircraft-icons}
+
+All icons for user, AI/multiplayer aircraft, helicopters and ships are stored in the program but can be overloaded by the user.
+
+The format is limited to SVG \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\) where advanced graphics effects like textures will not work.
+
+Note that the icons will only be used on the map and not in the information windows.
+
+The icons are:
+
+`aircraft_boat_ground_user.svg`
+`aircraft_boat_ground.svg`
+`aircraft_boat_user.svg`
+`aircraft_boat.svg`
+`aircraft_helicopter_ground_user.svg`
+`aircraft_helicopter_ground.svg`
+`aircraft_helicopter_user.svg`
+`aircraft_helicopter.svg`
+`aircraft_jet_ground_user.svg`
+`aircraft_jet_ground.svg`
+`aircraft_jet_user.svg`
+`aircraft_jet.svg`
+`aircraft_small_ground_user.svg`
+`aircraft_small_ground.svg`
+`aircraft_small_user.svg`
+`aircraft_small.svg`
+
+The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
+
+To change an icon download it from the Github source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/1.4/resources/icons) and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`.
+
+You can use the free vector drawing program [Inkscape](https://inkscape.org) to edit the icons.
+Restart *Little Navmap* to see the changes.
