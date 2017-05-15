@@ -79,20 +79,35 @@ Note that the icons will only be used on the map and not in the information wind
 The icons are:
 
 `aircraft_boat_ground_user.svg`
+
 `aircraft_boat_ground.svg`
+
 `aircraft_boat_user.svg`
+
 `aircraft_boat.svg`
+
 `aircraft_helicopter_ground_user.svg`
+
 `aircraft_helicopter_ground.svg`
+
 `aircraft_helicopter_user.svg`
+
 `aircraft_helicopter.svg`
+
 `aircraft_jet_ground_user.svg`
+
 `aircraft_jet_ground.svg`
+
 `aircraft_jet_user.svg`
+
 `aircraft_jet.svg`
+
 `aircraft_small_ground_user.svg`
+
 `aircraft_small_ground.svg`
+
 `aircraft_small_user.svg`
+
 `aircraft_small.svg`
 
 The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
