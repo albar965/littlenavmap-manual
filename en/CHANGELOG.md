@@ -90,6 +90,7 @@ When starting version 1.4 the first time after using version 1.2:
 
 * Added configuration files for color customization for map, airspaces, elevation profile, fusion and night styles.
 * Added cache tuning parameters to section `[settings]` in  `little_navmap.ini` file.
+* Added option to overload vehicle icons.
 
 ### Problems and Improvements
 
