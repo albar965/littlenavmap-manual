@@ -1,4 +1,4 @@
-## Changes from Release 1.2 to 1.4
+## Changes from Release 1.2.4 to 1.4.1.beta
 
 **_Little Navconnect_ is now bundled together with the _Little Navmap_ download.**
 
@@ -45,6 +45,7 @@ When starting version 1.4 the first time after using version 1.2:
 * Added delayed update to elevation profile window for altitude changes in flight plan to overcome laggy speed spin box.
 * Added menu item `Activate Flight Plan Leg` to manually select the active leg.
 * Adjusted flight plan calculation to better avoid large unrealistic airway segments.
+* Option to calculate flight plan fragments between any two waypoints of a present flight plan.
 
 #### Route String Dialog
 
@@ -102,6 +103,7 @@ When starting version 1.4 the first time after using version 1.2:
 * Solved problem where airports without delete record lost approaches when reading scenery.
 * Fix for multiple navaids with the same name and same region in the database.
 * Optimizations for a more compact format. Database size almost remains the same despite containing more content.
+* Optmized radionavaid flight plan calculation. Removed DME and TACAN from the database for calculation.
 
 **See the include file `CHANGELOG.txt` for a detailed list of all changes across all versions.**
 

@@ -34,6 +34,7 @@
 * Names of user defined waypoints can be changed.
 * Can save, load and merge flight plans or flight plan snippets.
 * Automatic fast flight plan calculation for high/low altitude airways, VOR/NDB and preset cruise altitude. Flight plan snippets can be calculated between any kind of departure and destination point.
+* Can calculate flight plan fragments between any two waypoints of a present flight plan.
 * The automatic flight plan calculation is based entirely on flight simulator data. No third party data needed and no online services used.
 * Elevation profile display for flight plan using GLOBE offline or online data. Shows minimum altitude for flight plan with a configurable altitude buffer.
 * Undo/redo for all flight plan changes.

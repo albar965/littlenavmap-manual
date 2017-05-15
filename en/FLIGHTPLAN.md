@@ -80,6 +80,28 @@ The whole procedure is deleted if the selected flight plan leg is a part of a pr
 
 Allows to change the name of a user defined waypoint. The length of the name is limited to 10 characters.
 
+#### Calculate for selected Legs {#calculate-for-selected-legs}
+
+This is a submenu containing entries for flight plan calculation methods as described here:
+
+![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calculate Radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calculate high Altitude](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculate low Altitude](MENUS.md#calculate-low-altitude) and ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
+
+This menu is only active when more than one flight plan leg is selected and neither the first nor the last selected row is a procedure.
+
+It will calculate a flight plan fragment between the first and last waypoint in the selected flight plan legs. All legs between the first and last selected one will be deleted and replaced with the calculated flight plan fragment.
+
+You can either select the first and the last leg \(`Ctrl+Click`\) and start the calculation or you can select a whole range of legs \(`Shift+Click` and drag\) before calculation.
+
+This function can be useful if you have to cross oceanic legs that are void of airways:
+
+1. Set departure and destination.
+2. Find the last waypoint on an airway before entering the ocean. Choose the closest to the flight plan line. Add the waypoint to the flight plan.
+4. Select departure and this waypoint and calculate the flight plan fragment.
+3. Same as above the the first waypoint on an airway before or when entering the landmass again.
+5. Select this waypoint and the destination and calculate the flight plan fragment.
+
+While not entirely realistic, this is a sufficient solution until NAT or PACOT tracks are available.
+
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-1}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
