@@ -105,6 +105,14 @@ Holds and procedure turns do not count in flying distance while all others legs 
 
 **The top of descent point calculation does not consider altitude restrictions in procedures.**
 
+### Special Leg Types {#procedures-leg-types}
+
+All procedure leg types \(`Track to Fix`, `Initial Fix` and more\) that are shown in *Little Navmap* are based on the ARINC 424 path terminator concept. A deeper knowledge of these leg types is not important for the simulator pilot with the exception of two types that are added by *Little Navmap*.
+
+* `Start of Procedure`: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track to a fix. It indicates the first position of the procedure and is not related to a fix.
+* `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway could not be found. The altitude restriction indicates the elevation of the runway.
+* `Proceed to Runway` in an approach: This leg is added to an approach procedure to show the course line from a missed approach point \(MAP\) to the runway end. It is added if an approach does not end with a runway fix and has an altitude restriction 50 feet above the threshold.
+
 ### Fix Types in a Procedure {#procedures-fix-types}
 
 * **Waypoints:** Terminal waypoints or radio navaids. Some are marked as `flyover` in the approach table.
@@ -114,6 +122,8 @@ Holds and procedure turns do not count in flying distance while all others legs 
 * `Intercept Leg`: Intercept the next approach leg at a course of about 45 degrees.
 * `Altitude`: A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
 * `Manual`: Fly a heading, track or a hold until manually terminated by ATC.
+
+Runway fixes are prefixed with `RW`. They usually have an altitude restriction a few feet above the runway. Higher altitude restrictions \(i.e. > 500 ft\) indicate a circling approach.
 
 ### Altitude Restrictions {#procedures-restrictions}
 

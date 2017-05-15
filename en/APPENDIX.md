@@ -82,6 +82,7 @@ The files are:
 * Close the window `Flight Plan Elevation Profile`. It will stop all background processing when closed.
 * Avoid airspaces. Switch them off using the ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") button on the airspaces toolbar.
 * Switch off all AI traffic in the dialog `Connect`. See [here](CONNECT.md#options).
+* Use the map projection `Mercator`. It consumes less resources since it can use the downloaded image tiles as is and does not transform them to the spherical format.
 
 ### Reduce Memory Consumption {#save-memory}
 
@@ -146,6 +147,7 @@ MapQueryTaxipathCache=100
 * Magnetic variance is partially not set \(for example VORDME Cambridge Bay YCB\) or inconsistent between airports an adjacent navaids. This is an error in the source.
 * Airports are misplaced \(for example Cabo San Lucas, MM15 in Mexico\) compared to the background maps. This is an error in the source data and cannot be fixed.
 * Map printouts can be fuzzy since they depend on screen resolution. As a workaround increase the size of the visible map window.
+* Very long route legs can dissappear from the map when zooming in. The label is still visible though.
 
 ## How to report a Bug {#how-to-report-a-bug}
 

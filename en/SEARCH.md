@@ -70,8 +70,9 @@ The header of all table views allows the following manipulation:
 * **Click and drag on the column header:** Change column order.
 * **Double click on column border:** Automatically fit column size to content.
 * **Click and drag on column border:** Change column width.
+* **Click into the empty space below all rows:** Deselect all entries and remove highlights on the map.
 
-The above applies to all table views in the program.
+The above applies to all table views in the program and paritally also to the tree view of the procedure search.
 
 The program saves the sort order, column widths and positions until `Reset View` is selected in the context menu.
 
