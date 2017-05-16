@@ -105,6 +105,7 @@ When starting version 1.4 the first time after using version 1.2:
 * Fix for multiple navaids with the same name and same region in the database.
 * Optimizations for a more compact format. Database size almost remains the same despite containing more content.
 * Optmized radionavaid flight plan calculation. Removed DME and TACAN from the database for calculation.
+* Aircraft track is now kept when connecting to simulator. Track is only deleted when aircraft position jumps too far.
 
 **See the include file `CHANGELOG.txt` for a detailed list of all changes across all versions.**
 
