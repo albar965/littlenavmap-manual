@@ -31,9 +31,11 @@ Note that all of the above does not apply to numeric fields like `Runways: Min` 
 
 These are used to filter airports by presence of certain facilities or properties.
 
-* **Gray:** Condition is ignored.
+Below are the states as they are shown in Windows 10:
+
+* **Black Box:** Condition is ignored.
 * **Checked:** Condition must match.
-* **Unchecked:** Condition must not match.
+* **Empty Box:** Condition must not match.
 
 Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used \(red fill on Linux or a `-` for macOS\).
 
