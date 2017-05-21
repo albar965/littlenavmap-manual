@@ -12,6 +12,6 @@ Select `File` -&gt; `New Flight Plan` ![New Flight Plan](../images/icons/filenew
 
 ### Tutorials {#tutorials-summary}
 
-[Building a VFR Flight Plan](TUTROIALVFR.md)
+[Building a VFR Flight Plan](TUTORIALVFR.md)
 
-[Building an IFR Flight Plan with Approach Procedures](TUTROIALIFR.md)
+[Building an IFR Flight Plan with Approach Procedures](TUTORIALIFR.md)
