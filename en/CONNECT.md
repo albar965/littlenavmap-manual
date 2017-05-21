@@ -18,13 +18,15 @@ _Little Navmap_ can connect directly if all programs are run on the same compute
 
 Click `Close` to save all changes and close the dialog without establishing a connection.
 
-Select `Connect automatically` if you do not want to connect manually. The start order of programs does not matter if this is checked and _Little Navmap_ will find the simulator once it is started or when it is already running.
+Enable `Connect automatically` if you do not want to connect manually. The start order of programs does not matter if this is checked and _Little Navmap_ will find the simulator once it is started or when it is already running. This is a recommended setting.
 
 Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` to disable the transfer of this information to the program. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
 
 ### Remote Connection {#remote-connection}
 
 User aircraft and weather information is transferred to _Little Navmap_ by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
+
+You have to extract the ZIP archive that contains `littlenavmap.exe` and `littlenavconnect.exe` on both computers. Then load the scenery database on the flying computer and copy the database over to the remote computer. See [Running without Flight Simulator Installation](RUNNOSIM.md) for details.
 
 Make sure that the major versions of _Little Navmap_ and _Little Navconnect_ match, otherwise you might get an error message. _Little Navmap_ 1.0.5 is compatible with _Little Navconnect_ 1.0.2 but not with 1.2 for example.
 
@@ -60,7 +62,7 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` i
 * `Disconnect`: Disconnects the current session and stops automatic reconnect.
 * `Connect`: Tries to connect. An error dialog will be shown if no connection can be established. _Little Navmap_ will constantly try again if `Connect automatically` is enabled.
 * `Close`: Closes the dialog without any changes to the current connection status.
-* `Connect automatically`: _Little Navmap_ will try to connect constantly if this is enabled.
+* `Connect automatically`: _Little Navmap_ will try to connect constantly if this is enabled. This is the recommended setting.
   * All connection attempts will stop immediately if you deselect this button.
   * You have to click `Connect` to start the automatic connection attempts after checking this button.
 * `Update Time Interval`: Allowed range is 50 milliseconds up to 1 second. _Little Navmap_ fetches data from Flight Simulator using this time interval. Increase this value if you experience stutters or lag in the simulator. A lower value will result in more fluid map updates in _Little Navmap_.
