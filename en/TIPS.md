@@ -4,7 +4,7 @@
 
 Select all legs in the flight plan table, then right click on any leg and select `Show Navaid Range` ![Show Navaid Range](../images/icons/navrange.png). This will place a range ring around every radio navaid in the flight plan.
 
-See also [Show Navaid range](MAPDISPLAY#show-navaid-range).
+See also [Show Navaid range](MAPDISPLAY.md#show-navaid-range).
 
 Remove the range rings by selecting `Remove all Range Rings and Distance Measurements` ![Remove all Range Rings and Distance Measurements](../images/icons/rangeringsoff.png).
 
@@ -16,7 +16,7 @@ Measurment lines can start at airports or navaids where they use the magnetic va
 
 Below is an example that gets radial and distance from two VORs for `ETUO`. Measurement lines can also start at NDBs or waypoints. Note the suffix `M` which indicates magnetic course.
 
-See also [Measure GC Distance from here](MAPDISPLAY#measure-gc-distance-from-here) and [Measure Rhumb Distance from here](MAPDISPLAY#measure-rhumb-distance-from-here).
+See also [Measure GC Distance from here](MAPDISPLAY.md#measure-gc-distance-from-here) and [Measure Rhumb Distance from here](MAPDISPLAY.md#measure-rhumb-distance-from-here).
 
 ![VOR Radials](../images/tutorial/tipvor.jpg)
 
@@ -32,7 +32,7 @@ Right click on the airport and choose `Measure Rhumb Distance from here` ![Measu
 
 ### Search for Add-On Airports {#tips-and-tricks-addon-airports}
 
-You can use the scenery path to look for add-on airports of a certain developer. Click on one of the add-on airports and copy the relevant part of the path from the information window. Insert this path fragment into the `Scenery Path` input field in the airports tab of the search dock window. Add `*` at the beginning and at the end since it only a part of the path.
+You can use the scenery path to look for add-on airports of a certain developer. Click on one of the add-on airports and copy the relevant part of the path from the information window. Insert this path fragment into the `Scenery Path` input field in the airports tab of the search dock window. Add `*` at the beginning and at the end since it only a path fragment.
 
 See also [Text Filters](SEARCH.md#text-filters).
 
@@ -40,7 +40,7 @@ Select all in the result table to get all airports highlighted on the map.
 
 ![Search Add-On](../images/tutorial/tipscenery.jpg)
 
-### Use the Search Function to plan an Around the World Trip {#tips-and-tricks-rtw}
+### Use the Search Function to plan a Round the World Trip {#tips-and-tricks-rtw}
 
 The spatial search function is useful to plan a round the world tour.
 Assume you'd like to go east:
@@ -57,7 +57,7 @@ Assume you'd like to go east:
 8. Fly.
 9. Back to 2. until you are done around the world.
 
-Picture below shows a query result for airports in the east. Note that the black/yellow highlight circles have tooltips too, no matter if the airport is visible or not.
+Picture below shows a query result for airports in the east. Note that the black/yellow highlight circles have tooltips too no matter if the airport is visible or not.
 
 ![Approach Guidance](../images/tutorial/tiprtw.jpg)
 
