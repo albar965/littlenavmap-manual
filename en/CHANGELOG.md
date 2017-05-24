@@ -7,6 +7,7 @@ When starting version 1.4 the first time after using version 1.2:
 * **The scenery database has to be reloaded due to a schema change.**
 * **Aircraft tracks are ignored and not loaded because the format has changed.**
 * **The program will start with a default window layout due to changes in the configuration.**
+* **Note that VORTAC, TACAN, SID and STAR need the navdata update by [_fsAerodata_](https://www.fsaerodata.com).**
 
 ### Enhancements
 

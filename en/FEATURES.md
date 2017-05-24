@@ -80,5 +80,4 @@
 * Using _Little Navconnect_ as an agent between the simulator and _Little Navmap_ running on a remote computer saves the pain of remote SimConnect setup.
 
 **Note that VORTAC, TACAN, SID and STAR need a navdata update by [_fsAerodata_](https://www.fsaerodata.com).**
-**Navigraph FMS Data or Aerosoft NavDataPro are not yet available for _Little Navmap_.**
 
