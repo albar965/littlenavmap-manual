@@ -17,7 +17,7 @@ Click into the map and zoom to the French Alps. You can use the following functi
 
 * The map overlay on the left.
 * The mouse \(click and drag\) to move and the mousewheel to zoom.
-* The cursor keys to move and the keys `+` and `-` for zooming in and out \(click into the map window to activate it before using the  keys\). 
+* The cursor keys to move and the keys `+` and `-` for zooming in and out \(click into the map window to activate it before using the  keys\).
 
 Use the back ![Back](../images/icons/back.png) and forward ![Forward](../images/icons/next.png) buttons to jump in the position history like a web browser.
 
@@ -101,11 +101,11 @@ You probably noticed that you will get close to ground near the destination. Be 
 
 ### Airspaces
 
-Now look if your flight plan touches any airspaces. 
+Now look if your flight plan touches any airspaces.
 
 Click into one of the airspaces nearby start and destination and have a look at the information dock window. There are several airspaces:
 
-* `Geneva TMA Sector 8` which starts at 9,500 feet above mean sea level \(MSL\). This is higher than our cruise altitude and won't affect us. 
+* `Geneva TMA Sector 8` which starts at 9,500 feet above mean sea level \(MSL\). This is higher than our cruise altitude and won't affect us.
 * Two Class E airspaces. The information window notes for these: `Controlled, IFR and VFR, ATC clearance required for IFR only`. No problem because we will fly using VFR.
 
 The situation is similar at the destination.
