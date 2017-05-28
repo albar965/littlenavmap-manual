@@ -72,6 +72,7 @@ The files are:
 * `little_navmap_fsxse.sqlite`: Flight Simulator - Steam Edition
 * `little_navmap_p3dv2.sqlite`: Prepar3D v2
 * `little_navmap_p3dv3.sqlite`: Prepar3D v3
+* `little_navmap_p3dv4.sqlite`: Prepar3D v4
 
 ## Tips for old and slow Computers {#tips-for-old-and-slow}
 
@@ -121,6 +122,7 @@ MapQueryTaxipathCache=100
 * ** Program starts slowly:** This can happen if a distance search is enabled in one of the search tabs. The search is executed at each start. Simply disable the distance search or reset the search options to avoid the slow startup.
 * **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
 * **Zoom can be too fast when using a touchpad** with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
+* **side-by-side configuration error**: You are running _Little Navmap_ on a computer without simulator \(i.e. no SimConnect\) installation if you get this error. Use `littlenavmap-nosimconnect.exe` instead which provides all functionality except direct connection and scenery database loading.
 * **Search shows no result or unexpected results:** Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
 * **Search or flight plan tables shows strange column names like **`airport_id`** or others:** This can happen if the program is updated. Use `Reset View` in the context menu of the result table.
 * **Online maps like **_**OpenStreetMap**_** or **_**OpenTopoMap**_** maps can end up blurred** when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.

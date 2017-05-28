@@ -14,7 +14,7 @@ Usually this is already installed since many other programs require it.
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\). Windows XP is not supported.
 
 ### Installing over a previous Release
-
+rvwu ov
 I recommend to delete all installed files of a previous _Little Navmap_ version before installing a new version. All files from the previous ZIP can be deleted since settings are stored in separate directories \(except [custom map themes](APPENDIX.md#creating-or-adding-map-themes)\). In any case do not merge the installation directories.
 
 See [Files](APPENDIX.md#files) for more information about configuration and database files. Do not delete these.
@@ -33,7 +33,7 @@ _**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
-_**Picture above:** A quick overview of Little Navmap showing the most important functions._
+_**Picture above:** A quick overview of Little Navmap showing the most important functions \(version 1.2.4\)._
 
 ## General Remarks {#general-remarks}
 
@@ -51,11 +51,13 @@ Toolbars are also movable by clicking on the left handle and can also be closed 
 
 Use the `Main Menu` -&gt; `Window` menu to bring docked windows or toolbars back.
 
+The `Main Menu` -&gt; `Reset Window Layout` menu item can be used to reset the state and positions of all dock windows back to their default.
+
 The program uses tooltips to display more information on buttons and other controls.
 
 A more detailed description is shown on the left side of the statusbar if you hover the mouse over a menu item.
 
-The main window title indicates the currently selected flight simulator database \(`FSX`, `FSXSE`, `P3DV2` or `P3DV3`\), the flight plan file name and a trailing `*` if the flight plan has changes.
+The main window title indicates the currently selected flight simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3` or `P3DV4`\), the flight plan file name and a trailing `*` if the flight plan has changes.
 
 Almost all dialogs, text labels and all information windows in _Little Navmap_ support copy and paste. You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it into the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons.
 
@@ -63,7 +65,9 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 ### Translation and Locale {#translation-and-locale}
 
-_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface or manual into another language. Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
+_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface or manual into another language. 
+
+Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
 
 Please note that some screenshots in this manual were taken using German locale, therefore a comma is used as a decimal separator and a dot as a thousands separator.
 
@@ -79,11 +83,19 @@ See the [glossary](GLOSSARY.md) for explanations of common terms in this manual.
 ### Rating {#rating}
 
 Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(_Empty Airport_\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. The criteria below are used to calculate the rating. Each item gives one star:  
-  1. Add-on  
-  2. Parking positions \(ramp or gate\)  
-  3. Taxiways  
-  4. Aprons  
+  1. Add-on
+  2. Parking positions \(ramp or gate\)
+  3. Taxiways
+  4. Aprons
   5. Tower building \(only if at least one of the other conditions is met\).
+
+### Navdata Updates {#navdata-updates}
+
+The latest navigation data can be installed from [_fsAerodata_](https://www.fsaerodata.com) or [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html). This will update the flight simulator stock data and airports which are read into _Little Navmap_'s scenery database.
+
+Certain navaid and procedure types are only available through [_fsAerodata_](https://www.fsaerodata.com). These are VORTAC and TACAN navaids as well as SID and STAR procedures.
+
+Navdata updates are optional.
 
 ## First Start {#first-start}
 
@@ -93,3 +105,4 @@ A warning dialog will be shown when starting _Little Navmap_ the first time on a
 
 One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
 
+**I recommend to have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.**

@@ -26,6 +26,7 @@ The program tries to find the base paths and `Scenery.cfg` files automatically. 
 * **Flight Simulator - Steam Edition:** `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
 * **Prepar3D v2:** `C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg`
 * **Prepar3D v3:** `C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg`
+* **Prepar3D v4:** `C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg`
 
 An error dialog is shown after loading if any files could not be read or directories were not found. In this case you should check if the airports of the affected sceneries display correctly and show the correct information. The error dialog allows copy and paste of formatted text which is useful for error reporting.
 

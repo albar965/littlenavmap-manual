@@ -4,7 +4,7 @@
 
 * Supported platforms: Windows 7, 8, 10, Linux and macOS.
 * Modern and easy to use interface: Using a main menu, context menus, toolbars, dock windows, undo, recent file lists and more.
-* Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 and Prepar3D v3.
+* Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2, v3 and v4.
 * Data is collected from flight simulator stock and add-on files. No need to buy or download external data like AIRAC cycles.
 * Scenery library databases for flight simulators are stored separately and can be changed on the fly.
 * Display of METARs or decoded weather data from Flight Simulator, _Active Sky Next_, _AS16_, NOAA or VATSIM in tooltips and information windows.

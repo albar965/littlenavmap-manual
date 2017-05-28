@@ -24,36 +24,44 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` t
 
 ### Remote Connection {#remote-connection}
 
-User aircraft and weather information is transferred to _Little Navmap_ by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
+User aircraft and weather information is transferred to _Little Navmap_ on a remote computer by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
 
 You have to extract the ZIP archive that contains `littlenavmap.exe` and `littlenavconnect.exe` on both computers. Then load the scenery database on the flying computer and copy the database over to the remote computer. See [Running without Flight Simulator Installation](RUNNOSIM.md) for details.
 
 Make sure that the major versions of _Little Navmap_ and _Little Navconnect_ match, otherwise you might get an error message. _Little Navmap_ 1.0.5 is compatible with _Little Navconnect_ 1.0.2 but not with 1.2 for example.
 
-1. _Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ \(`littlenavconnect.exe`\) on the flying computer and take note of the message that is printed in the logging window. You only need the colored values. You can use the IP address or the hostname. _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have Ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. Also make sure to set up the Windows firewall properly to allow communication between `littlenavmap.exe` and `littlenavconnect.exe` on both computers.
+#### Start _Little Navconnect_ on the Flying Computer {#connect-start-navconnect}
 
-   ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
+_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ \(`littlenavconnect.exe`\) on the flying computer and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the flying  computer. You can use the IP address or the hostname. 
 
-   _**Picture above:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ is running and waiting for a Flight Simulator._
+_Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have Ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. Also make sure to set up the Windows firewall properly to allow communication between `littlenavmap.exe` and `littlenavconnect.exe` on both computers.
 
-   Change the port in _Little Navconnect_'s `Options` dialog if you see an error message like shown below:
+![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
-   `[2016-07-27 16:45:35] Unable to start the server: The bound address is already in use.`
+_**Picture above:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ is running and waiting for a Flight Simulator. It is running on the computer _`flyingcomputer`_ with the IP address _`192.168.2.13`_._
 
-2. Start _Little Navmap_ on the client computer.
+Change the port in _Little Navconnect_'s `Options` dialog if you see an error message like shown below:
 
-3. Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
+`[2016-07-27 16:45:35] Unable to start the server: The bound address is already in use.`
 
-   ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
+#### Start _Little Navmap_ on the Client / Remote Computer {#connect-start-navmap}
 
-   _**Picture above:** Connect dialog with correct values to access the _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ shown above._
+Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
+![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
+  _**Picture above:** Connect dialog with correct values to access the _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ shown above._
+
+Now do the following after opening the dialog:
 
 4. Select `Connect to a remote Flight Simulator`.
 5. Add the value for hostname. This can be either the hostname or the IP address printed by _Little Navconnect_.
 6. Check the value for the port. `51968` is the default value and does not need to be changed usually.
-7. Click connect. The dialog will close and _Little Navmap_ will try to establish a connection in the background which can take some time, depending on your network. Your aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. You will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window if no flight is loaded yet \(i.e. the simulator still shows the opening screen\). Note that it sometimes can take a while until an error is shown if you used the wrong values for hostname or port.
+7. Click connect. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
 
-Select `Connect automatically` if you do not want to connect manually. The start order of all three programs \(simulator, _Little Navconnect_ and _Little Navmap_\) does not matter if this is checked and the programs will find each other.
+Establishing a connection can take some time, depending on your network. The aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. You will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window if no flight is loaded yet \(i.e. the simulator still shows the opening screen\). 
+
+Note that it sometimes can take a while until an error is shown if you used the wrong values for hostname or port.
+
+Selecting `Connect automatically` is recommended. The start order of all three programs \(simulator, _Little Navconnect_ and _Little Navmap_\) does not matter if this is checked and the programs will find each other.
 
 Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` in `Tools` -&gt; `Options` of _Little Navconnect_ to disable the transfer of this information across the network. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
 

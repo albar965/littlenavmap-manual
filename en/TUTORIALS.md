@@ -20,4 +20,7 @@ To have a clean common base I recommend the following:
 ### Tutorials {#tutorials-summary}
 
 1. [Building a VFR Flight Plan](TUTORIALVFR.md)
+This tutorial will show how to create a simple flight plan based on the map and its context menus.
 2. [Building an IFR Flight Plan with Approach Procedures](TUTORIALIFR.md)
+This long tutorial will show you how to create a more complex IFR flight plan including approach procedures. It introduces the advanced airport search functionality, the spatial search and the automatic flight plan calculation.
+
