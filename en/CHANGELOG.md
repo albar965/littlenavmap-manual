@@ -1,4 +1,4 @@
-## Changes from Release 1.2.4 to 1.4.1.beta
+## Changes from Release 1.2.4 to 1.4.3
 
 **_Little Navconnect_ is now bundled together with the _Little Navmap_ download.**
 
@@ -82,6 +82,7 @@ When starting version 1.4 the first time after using version 1.2:
 * Added option to read also inactive scenery entries. Useful if sceneries are disabled or enabled by tools for each flight.
 * Added better and more detailed error report for scenery database loading. Report now contains missing scenery directories since the simulator complains about these too. Report can now be directly copied and pasted as formatted text.
 * Added option for two external databases besides simulators. This can be used for future AIRAC database updates.
+* Added new simulator Prepar3D v4 and support for new file encoding.
 
 #### General
 
@@ -92,6 +93,10 @@ When starting version 1.4 the first time after using version 1.2:
 * Added configuration files for color customization for map, airspaces, elevation profile, fusion and night styles.
 * Added cache tuning parameters to section `[settings]` in  `little_navmap.ini` file.
 * Added option to overload vehicle icons.
+
+#### Documentation
+
+* Added VFR and IFR tutorials with link in help menu.
 
 ### Problems and Improvements
 
@@ -107,6 +112,10 @@ When starting version 1.4 the first time after using version 1.2:
 * Optimizations for a more compact format. Database size almost remains the same despite containing more content.
 * Optmized radionavaid flight plan calculation. Removed DME and TACAN from the database for calculation.
 * Aircraft track is now kept when connecting to simulator. Track is only deleted when aircraft position jumps too far.
+* Several fixes in METAR parser.
+* `Restore Defaults` is not working properly in dialog `Options`.
+* Variable wind is now displayed in decoded weather if no direction is given.
+* Several fixes for shortcut keys.
 
 **See the include file `CHANGELOG.txt` for a detailed list of all changes across all versions.**
 

@@ -4,6 +4,8 @@
 
 Version 1.0.5
 
+**Veraltet. Freiwillige zur Übersetzung gesucht.**
+
 ## Inhalt {#inhalt}
 
 Eigenschaften und Einschränkungen
