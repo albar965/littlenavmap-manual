@@ -98,7 +98,7 @@ When starting version 1.4 the first time after using version 1.2:
 
 * Added VFR and IFR tutorials with link in help menu.
 
-### Problems and Improvements
+### Bug Fixes and Improvements
 
 * Fix for too many reconnects flooding log on simulator crash.
 * METAR parser errors with `NOSIG` token for weather or sky condition fixed.
