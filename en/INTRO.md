@@ -8,7 +8,7 @@ Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Fi
 
 Extract the Zip archive into a folder like `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. See [First Start](INTRO.md#first-start) for more information on the first start after installation.
 
-In some cases you have to install the [MS Visual C++ 2013 Redistributable package](https://www.microsoft.com/en-US/download/details.aspx?id=40784). Install both 32 and 64 bit versions.  
+In some cases you have to install the [Update for Visual C\+\+ 2013 and Visual C\+\+ Redistributable Package](https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Install both 32 and 64 bit versions.
 Usually this is already installed since many other programs require it.
 
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit & 64-bit\). Windows XP is not supported.
