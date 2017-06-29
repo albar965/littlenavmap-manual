@@ -270,8 +270,6 @@ Please note that all the online maps are delivered from free services therefore 
 
 This is an online raster \(i.e. based on images\) map that includes a hill shading option. Note that the _OpenStreetMap_ hill shading does not cover the whole globe.
 
-_OpenStreetMap_ data is not loaded directly from the OSM servers but from the [MapTiles proxy service](https://maptiles.xyz).
-
 ![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
 _**Picture above:** View at an Italian airport using OpenStreetMap theme and hill shading._
@@ -309,6 +307,18 @@ Map tiles by [Stamen Design](http://stamen.com), under [CC BY 3.0](http://creati
 ![Stamen Terrain](../images/stamenterrain.jpg "Stamen Terrain")
 
 _**Picture above:** View showing Stamen Terrain theme._
+
+##### CARTO Light {#carto-light}
+
+A very bright map called *Positron* which allows to concentrate on the aviation features on the map display. The map includes the same hill shading option as the _OpenStreetMap_.
+
+Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+
+##### CARTO Dark {#carto-light}
+
+A dark map called *Dark Matter*. The map includes the same hill shading option as the _OpenStreetMap_.
+
+Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
 
 ##### Simple \(Offline\) {#simple-offline}
 

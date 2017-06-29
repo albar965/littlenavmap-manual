@@ -3,8 +3,9 @@
 
 You can follow these steps if you want to install _Little Navmap_ on a computer not containing any flight simulator installation for a networked setup, for example. No functionality is affected except scenery database loading and direct connect capability which are not needed in this case.
 
-The `littlenavmap.exe` needs an installation of SimConnect. Therefore an additional executable
-`littlenavmap-nosimconnect.exe` not requiring SimConnect or a flight simulator installation is included in the downloaded ZIP archive. Use `littlenavmap-nosimconnect.exe` to run _Little Navmap_ on bare computers.
+**Little Navmap Version 1.4.3:** The `littlenavmap.exe` needs an installation of SimConnect. Therefore an additional executable `littlenavmap-nosimconnect.exe` not requiring SimConnect or a flight simulator installation is included in the downloaded ZIP archive. Use `littlenavmap-nosimconnect.exe` to run _Little Navmap_ on bare computers.
+
+**Little Navmap Version 1.4.4 and later:** `littlenavmap-nosimconnect.exe` is not used anymore as of *Little Navmap* version 1.4.4. You can use `littlenavmap.exe` on all computers no matter if SimConnect or a flight simulator are installed or not.
 
 The same procedure applies if you want to install _Little Navmap_ on a Linux or macOS system.
 
@@ -19,7 +20,7 @@ Flight plans can be created, loaded and saved on the client computer. You only h
 5.  Start _Little Navmap_ on the client computer and select `Scenery Library` -> `Show Database Files`.
 6.  Exit _Little Navmap_ on the client computer.
 7.  Copy the database files to your client computer using network shares, USB sticks or whatever you like. Use the file manager windows opened by the procedures above.
-8.  Start _Little Navmap_ on the client computer. The menu `Scenery Library` should contain an entry for each copied database file or no entry at all if only one file was copied. Airport icons should be visible on the map in either case.
+8.  Start _Little Navmap_ on the client computer. The menu `Scenery Library` should contain an entry for each copied database file or no entry at all if only one file was copied. Airport icons should be visible on the map in either case. **There is no need to reload the scenery library database since you just copied a fully populated database file.**
 
 See the [Connecting to a Flight Simulator](CONNECT.md#remote-connection) for information about networked setups.
 
