@@ -308,13 +308,13 @@ Map tiles by [Stamen Design](http://stamen.com), under [CC BY 3.0](http://creati
 
 _**Picture above:** View showing Stamen Terrain theme._
 
-##### CARTO Light {#carto-light}
+##### CARTO Light {#carto-light} \(New in version 1.4.4\)
 
 A very bright map called *Positron* which allows to concentrate on the aviation features on the map display. The map includes the same hill shading option as the _OpenStreetMap_.
 
 Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
 
-##### CARTO Dark {#carto-light}
+##### CARTO Dark {#carto-light} \(New in version 1.4.4\)
 
 A dark map called *Dark Matter*. The map includes the same hill shading option as the _OpenStreetMap_.
 
