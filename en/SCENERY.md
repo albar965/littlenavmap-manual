@@ -39,6 +39,7 @@ The `Load Scenery Library` dialog shows the last time of loading \(`Last Update:
 * `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
 * `Scenery Configuration File` and `Select ...`: The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
 * `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
+* `Read Prepar3D add-on.xml packages` \(New in version 1.4.4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
 * `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database will be restored. The dialog will be closed and the program will switch to show the loaded database once it is successfully loaded.
 * `Close`: Saves all settings and changes in the dialog and close it without loading anything.
 
