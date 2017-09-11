@@ -180,8 +180,6 @@ A very special thank-you to Roberto S. from Switzerland for his valuable input a
 
 Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind support.
 
-TODO
-
 Thanks to all beta testers for their effort and patience: Barry, Brian, Gérard, John, Remi and Sam.
 
 Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
