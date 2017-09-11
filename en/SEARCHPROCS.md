@@ -1,12 +1,8 @@
 ## ![Search](../images/icons/searchdock.png "Search") Search Dock Window - Procedures {#search-dock-window}
 
-### General {#general}
-
-Three search tabs are available for airport, navaid and procedure search.
-
-#### Procedure Search {#procedure-search}
-
 The tab `Procedures` allows previewing and adding approach and departure procedures to the flight plan. Procedures of a selected airport are arranged in a tree which indicates the dependencies between approaches and transitions.
+
+Note that the SID and STAR names are limited to 5 characters in FSX and P3D due to a limitation in the BGL file format. Names are slightly modified therefore.
 
 **See the **[**Procedures**](APPROACHES.md#delete-selected-legs)** chapter of this manual for more details.**
 
@@ -22,22 +18,7 @@ Procedure legs are highlighted in red if one or more navaids could not be resolv
 
 _**Picture above:** Showing a transition and a RNAV approach. Start and endpoint of a transition leg are highlighted on the map._
 
-##### Filter {#procedure-filter}
-
-The **runway filter** is always available and helps to find procedures for a certain departure or arrival runway.
-
-The **type filter** is not available for a default database. A navdata update is needed to get SID and STAR procedures.
-
-The type filter allows the selections below:
-
-* `All Procedures`: SID, STAR and approaches
-* `Departure Procedures`: Only SID
-* `Arrival Procedures`: STAR and approaches
-* `Only Approaches and Transitions`: No SID and no STAR
-
-The respective transitions are always shown.
-
-##### Procedure Tree {#procedure-tree}
+### Procedure Tree {#procedure-tree}
 
 Legs are shown in dark blue while missed approach legs are shown in dark red color.
 
@@ -54,13 +35,42 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
   * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
 * `Remarks`: Shows fly-over, turn direction or related navaid for a procedure leg.
 
-##### Procedure Tree Context Menu {#procedure-context-menu}
+### Top Buttons {#top-buttons}
 
-##### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#procedure-show-on-map}
+#### Type Filter \(All Procedures\) {#procedure-filter-type}
+
+The type filter is not available for a FSX or P3D stock database. A navdata update is needed to get SID and STAR procedures.
+
+This filter is always available for a X-Plane database which contains SIDs and STARs already in the stock data.
+
+The type filter allows the selections below:
+
+* `All Procedures`: SID, STAR and approaches
+* `Departure Procedures`: Only SID
+* `Arrival Procedures`: STAR and approaches
+* `Only Approaches and Transitions`: No SID and no STAR
+
+The respective transitions are always shown.
+
+#### Runway Filter \(All Runways\) {#procedure-filter-runway}
+
+This filter is always available and helps to find procedures for a certain departure or arrival runway.
+
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+
+Deselects all entries in the table and also removes any highlights from the map.
+
+#### ![Help](../images/icons/help.png "Help") Help {#help}
+
+Opens this help chapter in the default browser.
+
+### Procedure Tree Context Menu {#procedure-context-menu}
+
+#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#procedure-show-on-map}
 
 Centers the map on the selected procedure.
 
-##### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
+#### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
 
 Text and functionality of this menu item depends on the selected procedure type and if the procedure's airport is already the departure or destination airport of the current flight plan.
 
@@ -78,19 +88,19 @@ This will add or replace the destination or departure airport and add the select
 
 The departure or destination airport are added to the flight plan too if the flight plan is empty.
 
-##### Expand All / Collapse All
+#### Expand All / Collapse All
 
 Expands all procedures so that their legs and transitions are shown or collapses the tree.
 
-##### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
+#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
 
 Clears search filters and shows all procedures again in the tree.
 
-##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
 
 Deselects the currently selected procedure and also removes the preview from the map.
 
-##### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
+#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
 
 Resets the the column order and column widths back to default.
 

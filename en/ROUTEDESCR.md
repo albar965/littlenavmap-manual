@@ -23,7 +23,7 @@ Note that even flight plans calculated in _Little Navmap_ cannot be converted ba
 
 The cruise speed and altitude are used to create the flight plan if given. Otherwise the cruise altitude is automatically determined by the flight plan type \(IFR or VFR\) and the minimum altitude of the used airway segments.
 
-SID and STAR procedures require a navdata update.
+SID and STAR procedures require a navdata update except for X-Plane which already comes with a complete navigation database.
 
 ![Route Description Dialog](../images/routedescr.jpg "Route Description Dialog")
 
@@ -42,6 +42,7 @@ _**Picture above:** A route description that was read successfully with a few wa
   * `Add cruise speed and altitude instruction`: Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
   * `Add SID and STAR`: Add SID and STAR names if any are used for departure or arrival.
   * `Add generic SID and STAR`: Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
+  * `Add Waypoints instead of Airways`: Does not insert any airway names but uses waypoints only.
 * `Create Flight Plan`: Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before creating a flight plan.
 
 ### Format {#format}

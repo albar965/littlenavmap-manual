@@ -4,23 +4,26 @@ This dialog allows loading of the scenery library data from all four supported f
 
 The dialog shows information about the currently selected database including the number of loaded airports, database version and more.
 
-The base path and the `scenery.cfg` path will be shown in two text edit fields for the currently selected simulator. These fields are populated automatically, but can be changed to any other valid location. All values are saved for each flight simulator type.
+**FSX and P3D only:** The base path and the `scenery.cfg` path will be shown in two text edit fields for the currently selected simulator. These fields are populated automatically, but can be changed to any other valid location. All values are saved for each flight simulator type.
+
+**X-Plane only:** X-Plane cannot be recognized automatically. You have to select the base path manually.
+On Windows that can be a path like `C:\Simulators\X-Plane 11` where the executable is `C:\Simulators\X-Plane 11\X-Plane.exe`.
 
 Loading a scenery library can take from 2 to 15 minutes depending on your setup and amount of scenery add-ons. You can speed this up by excluding directories containing neither airport nor navigation data in the `Options` dialog on the `Scenery Library Database` tab.
 
-All airports that are not located in the default `Scenery` directory are considered add-on airports and will be highlighted appropriately. Directories can be excluded from this behavior in the `Options` dialog on the `Scenery Library Database` tab. This can be useful if add-ons only correct airport elevation and these airports should not be highlighted on the map using underline and italic text.
+All airports that are not located in the default `Scenery` directory for FSX/P3D or `Custom Scenery` for X-Plane are considered add-on airports and will be highlighted appropriately. Directories can be excluded from this behavior in the `Options` dialog on the `Scenery Library Database` tab. This can be useful if add-ons only correct airport elevation and these airports should not be highlighted on the map using underline and italic text.
 
 See [Options](OPTIONS.md#scenery-library-database) for more information about excluding scenery.
 
-The previous scenery library database will be restored if you cancel the loading process or if the loading process fails.
+The previous scenery library database will be restored immediately if you cancel the loading process or if the loading process fails.
 
 The menu `Scenery Library` -&gt; `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
 
-Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` will differ to the numbers shown in the progress dialog.
+Note that the number of airports, navaids and other objects shown in the `Load Scenery Library` will differ to the numbers shown in the progress dialog since a separate process removes duplicates after loading.
 
 The progress dialog shows all objects that were found during loading. The the dialog `Load Scenery Library` shows the number of objects in the database after removing duplicates and deleting stock airports that were replaced by add-ons.
 
-The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
+**FSX or P3D only:** The program tries to find the base paths and `Scenery.cfg` files automatically. The typical locations of the `Scenery.cfg` for Windows 7/8/10 are:
 
 * **Flight Simulator X:** `C:\ProgramData\Microsoft\FSX\Scenery.cfg`
 * **Flight Simulator - Steam Edition:** `C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg`
@@ -37,11 +40,11 @@ The `Load Scenery Library` dialog shows the last time of loading \(`Last Update:
 * `Simulator`: Selects the simulator to load and show database statistics in the label above.
 * `Reset Paths`: Reset all paths back to default values.
 * `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
-* `Scenery Configuration File` and `Select ...`: The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
-* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
-* `Read Prepar3D add-on.xml packages` \(New in version 1.4.4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
+* `Scenery Configuration File` and `Select ...` \(only FSX and P3D\): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
+* `Read inactive Scenery Entries` \(only FSX and P3D\): This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
+* `Read Prepar3D add-on.xml packages` \(only P3D v3 and v4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
 * `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database will be restored. The dialog will be closed and the program will switch to show the loaded database once it is successfully loaded.
-* `Close`: Saves all settings and changes in the dialog and close it without loading anything.
+* `Close`: Keeps all settings and changes in the dialog and close it without loading anything.
 
 ![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
 

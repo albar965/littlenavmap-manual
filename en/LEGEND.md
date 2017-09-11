@@ -22,7 +22,7 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Distance GC](../images/legend/distance_gc.png "Distance GC") | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance "Great circle") distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
 | ![Distance Rhumb](../images/legend/distance_rhumb.png "Distance Rhumb") | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
 | ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
-| ![Search Hightlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
+| ![Search Highlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
 | ![Flight Plan Hightlight](../images/legend/highlight_route.png) | A highlighted airport or navaid selected in the flight plan table. |
 | ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
@@ -73,8 +73,8 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
-| ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\) and minimum altitude. Text depends on zoom distance. |
-| ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\) and minimum altitude. Text depends on zoom distance. |
+| ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
+| ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
 | ![ILS](../images/legend/ils_gs_small.png) ![ILS](../images/legend/ils_gs.png) | ILS with glideslope. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
 | ![Localizer](../images/legend/ils_small.png) ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
 
@@ -109,7 +109,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Runway Threshold](../images/legend/runway_threshold.png) | Displaced threshold. Do not use for landing. |
 | ![Runway Overrun](../images/legend/runway_overrun.png) | Overrun area. Do not use for taxi, takeoff or landing. |
 | ![Runway Blastpad](../images/legend/runway_blastpad.png) | Blast pad. Do not use for taxi, takeoff or landing. |
-| ![Taxiway](../images/legend/taxiway.png) | Taxiway with name. |
+| ![Taxiway](../images/legend/taxiway.png) | Taxiway with name and center line. |
 | ![Closed Taxiway](../images/legend/closedtaxi.png) | Closed taxiway. |
 | ![Taxiway](../images/legend/apron_transparent.png) | Semi transparent dotted aprons and taxiways indicate that no surface is drawn. It might use a photo texture or simply the default background. |
 | ![Tower](../images/legend/tower_active.png) ![Tower](../images/legend/tower_inactive.png) | Tower. Red if a tower frequency is available. Otherwise just view position. |

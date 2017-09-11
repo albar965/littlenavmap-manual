@@ -125,14 +125,14 @@ All procedure leg types \(`Track to Fix`, `Initial Fix` and more\) that are show
 
 Runway fixes are prefixed with `RW`. They usually have an altitude restriction a few feet above the runway. Higher altitude restrictions \(i.e. > 500 ft\) indicate a circling approach.
 
-### Altitude Restrictions {#procedures-restrictions}
+### Altitude and Speed Restrictions {#procedures-restrictions}
 
 Restrictions are shown on the map and in the flight plan table.
 
-* **Number only:** Fly at altitude. Map example: `5400ft`.
-* **Prefix** `A`: Fly at or above altitude. Map example: `A1800ft`.
-* **Prefix** `B`: Fly at or below altitude. Map example: `B10000ft`.
-* **Range:** Fly at or above altitude one and at or below altitude two. Map example: `A8000B10000ft`.
+* **Number only:** Fly at altitude or speed. Map examples: `5400ft` or `210kts`.
+* **Prefix** `A`: Fly at or above altitude or speed. Map example: `A1800ft`  or `A200kts`.
+* **Prefix** `B`: Fly at or below altitude or speed. Map example: `B10000ft`  or `B240kts`.
+* **Range:** Fly at or above altitude one and at or below altitude two. Map example: `A8000B10000ft`. Same for speed.
 
 ### Related Navaids {#procedures-related}
 

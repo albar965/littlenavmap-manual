@@ -4,21 +4,23 @@ The setup procedure is different for remote connections and local connections to
 
 _Little Navmap_ can connect directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
 
+The X-Plane plugin is needed in any case.
+
 ### Local Connection {#local-connection}
 
-1. Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
+Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection` and choose the simulator to which the connection should be established.
 
-   ![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
+![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
 
-   _**Picture above:** _[_Little Navmap_](https://albar965.github.io/littlenavconnect.html)_ connect dialog set up for a local connection that is manually established._
+_**Picture above:** Little Navmap connect dialog set up for a local connection to FSX or P3D. The connection will be established manually._
 
-2. Select `Connect directly to local Flight Simulator`.
+Select `Connect directly to local Flight Simulator`.
 
-3. Click `Connect`. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
+Now click `Connect`. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
 
-Click `Close` to save all changes and close the dialog without establishing a connection.
+Clicking `Close` keeps all changes and closes the dialog without establishing a connection.
 
-Enable `Connect automatically` if you do not want to connect manually. The start order of programs does not matter if this is checked and _Little Navmap_ will find the simulator once it is started or when it is already running. This is a recommended setting.
+Enable `Connect automatically` if you do not want to connect manually. The start order of programs does not matter if this is checked and _Little Navmap_ will find the simulator once it is started or when it is already running. This is the recommended setting.
 
 Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` to disable the transfer of this information to the program. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
 
@@ -26,9 +28,13 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` t
 
 User aircraft and weather information is transferred to _Little Navmap_ on a remote computer by using the _Little Navconnect_ agent on the flying computer which saves the error prone and tedious setup of a remote SimConnect connection.
 
+Note that weather information cannot be transferred  across a remote connection from X-Plane.
+
 You have to extract the ZIP archive that contains `littlenavmap.exe` and `littlenavconnect.exe` on both computers. Then load the scenery database on the flying computer and copy the database over to the remote computer. See [Running without Flight Simulator Installation](RUNNOSIM.md) for details.
 
 Make sure that the major versions of _Little Navmap_ and _Little Navconnect_ match, otherwise you might get an error message. _Little Navmap_ 1.0.5 is compatible with _Little Navconnect_ 1.0.2 but not with 1.2 for example.
+
+For X-Plane you also have to install the *Little Xpconnect* plugin. See the file `README.txt` in directory `Little Xpconnect` for installation instructions.
 
 #### Start _Little Navconnect_ on the Flying Computer {#connect-start-navconnect}
 
@@ -38,7 +44,7 @@ _Little Navconnect_ can print multiple IP addresses or hostnames depending on yo
 
 ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
-_**Picture above:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ is running and waiting for a Flight Simulator. It is running on the computer _`flyingcomputer`_ with the IP address _`192.168.2.13`_._
+_**Picture above:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ is running and waiting for a Flight Simulator. It is running on the computer _`win10.fritz.box`_ with the IP address _`192.168.2.13`_._
 
 Change the port in _Little Navconnect_'s `Options` dialog if you see an error message like shown below:
 
@@ -48,7 +54,8 @@ Change the port in _Little Navconnect_'s `Options` dialog if you see an error me
 
 Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
 ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
-  _**Picture above:** Connect dialog with correct values to access the _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ shown above._
+
+_**Picture above:** Connect dialog with correct values to access the flying computer running Little Navconnect as shown above._
 
 Now do the following after opening the dialog:
 
@@ -73,8 +80,8 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` i
 * `Connect automatically`: _Little Navmap_ will try to connect constantly if this is enabled. This is the recommended setting.
   * All connection attempts will stop immediately if you deselect this button.
   * You have to click `Connect` to start the automatic connection attempts after checking this button.
-* `Update Time Interval`: Allowed range is 50 milliseconds up to 1 second. _Little Navmap_ fetches data from Flight Simulator using this time interval. Increase this value if you experience stutters or lag in the simulator. A lower value will result in more fluid map updates in _Little Navmap_.
-* `Fetch AI or multiplayer aircraft` and `Fetch AI or multiplayer ships`: Disables fetching of AI vehicles. These settings are applied immediately.
+* `Update Time Interval`: Allowed range is 50 milliseconds up to 1 second. _Little Navmap_ fetches data from a simulator using this time interval. Increase this value if you experience stutters or lag in the simulator. A lower value will result in more fluid map updates in _Little Navmap_.
+* `Fetch AI or multiplayer aircraft` and `Fetch AI or multiplayer ships`: Disables fetching of AI vehicles. These settings are applied immediately. Note that ship traffic is not available for X-Plane.
 
 
 

@@ -20,6 +20,12 @@ The active flight plan leg is highlighted in magenta when _Little Navmap_ is con
 
 Procedure legs have dark blue color and legs of a missed approach have a dark red color.
 
+If a waypoint of a flight plan cannot be found in the database it will be displayed in red. This can happen if the used AIRAC cycles do no match. The same applies to airways. The position on the map is still correct.
+
+![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
+
+_**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could not be found in the database._
+
 #### Table Columns {#flight-plan-table-columns}
 
 * `Ident`: ICAO ident of the navaid or airport.
@@ -27,10 +33,10 @@ Procedure legs have dark blue color and legs of a missed approach have a dark re
 * `Name`: Name of airport or radio navaid.
 * `Procedure Type`: The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
 * `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
-* `Restriction`: Either minimum altitude for en route airway segment or procedure altitude restriction. The following altitude restrictions exist for procedures:
-  * **Number only:** Fly at altitude. Example: `5.400`.
+* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. The following altitude restrictions exist for procedures:
+  * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
   * **Prefix** `A`: Fly at or above altitude. Example: `A 1.800`.
-  * **Prefix** `B`: Fly at or below altitude. Example: `B 10.000`.
+  * **Prefix** `B`: Fly at or below altitude. Example: `B 10.000` or `B 220`.
   * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
 * `Type`: Type of a radio navaid.
 * `Freq.`: Frequency or channel of a radio navaid.
@@ -50,6 +56,12 @@ _**Picture above:** The _`Flight Plan`_ dock window. The flight plan uses a SID 
 ### Mouse Clicks {#mouse-clicks}
 
 A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/green circle.
+
+### Top Button {#top-button}
+
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+
+Deselects all entries in the table and also removes any highlight rings from the map.
 
 ### Flight Plan Table View Context Menu {#flight-plan-table-view-context-menu}
 

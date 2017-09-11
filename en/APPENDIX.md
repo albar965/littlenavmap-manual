@@ -15,16 +15,6 @@ More maps and information about map configuration and DGML files can be found he
 * A tutorial showing how to create a map theme based on [OSM Slippy Maps](http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [How to create map themes based on OSM slippy maps](https://techbase.kde.org/Marble/OSMSlippyMaps)
 * How to create a historical map for Marble: [Historical Maps for Marble](https://techbase.kde.org/Marble/HistoricalMaps)
 
-## External Scenery Database {#external-scenery-databases}
-
-The program allows the addition of two so-called external scenery library databases. These can be used for future extensions \(AIRAC cycle data\) or experiments.
-
-Store any additional and valid scenery library database in the directory:
-
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
-
-Up to two database with the names `little_navmap_external.sqlite` and  `little_navmap_external2.sqlite` are supported and will show as `External` and `External 2` in the menu `Scenery Library`. These can be used as any other from a simulator generated scenery library database with the exception that they are excluded from loading.
-
 ## Files {#files}
 
 Log files of _Little Navmap_ for Windows 7/8/10 are typically stored in the directory:
@@ -73,6 +63,16 @@ The files are:
 * `little_navmap_p3dv2.sqlite`: Prepar3D v2
 * `little_navmap_p3dv3.sqlite`: Prepar3D v3
 * `little_navmap_p3dv4.sqlite`: Prepar3D v4
+* `little_navmap_xp11.sqlite`: X-Plane 11
+
+Additional files like
+
+* `little_navmap_compiling.sqlite`, 
+* `little_navmap_compiling.sqlite-journal`,
+* `little_navmap_temp.sqlite` and 
+* `little_navmap_temp.sqlite-journal` 
+
+are remains of temporary processes like the database compilation and can be ignored.
 
 ## Tips for old and slow Computers {#tips-for-old-and-slow}
 
@@ -174,7 +174,15 @@ A big thank-you for all people supporting me throughout the beta phase, sending 
 
 A huge Thank you! to Paul Watts for his support, for testing, tips, links to incredible tools and for all his work on the manual.
 
+Plenty of thanks to [Hervé Sors](http://www.aero.sors.fr) for allowing me to include his updated `magdecl.bgl` file with _Little Navmap_.
+
 A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
+
+Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind support.
+
+TODO
+
+Thanks to all beta testers for their effort and patience: Barry, Brian, Gérard, John, Remi and Sam.
 
 Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
 

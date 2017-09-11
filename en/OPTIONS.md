@@ -13,6 +13,8 @@ saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
 
 Allows to customize what should be loaded and shown on startup of _Little Navmap_.
 
+You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information.
+
 ### User Interface {#user-interface}
 
 Has options for text sizes in information windows and flight plan as well as the search result table.
@@ -90,13 +92,13 @@ Here you can set preferences for flight plan calculation or adjust the rule of t
 You can select the various weather sources that should be shown in the `Information` dock window or in the map
 tooltips.
 
-_Active Sky_ can only be selected if _Active Sky Next_ or _AS16_ is installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
+The weather type `Flight Simulator` will either display weather from the FSX or P3D connection or from X-Planes `METAR.rwx` weather file.
 
-The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services
-change the URLs.
+_Active Sky_ can only be selected if either _Active Sky Next_, _AS16_ or _Active Sky for Prepar3D v4_ are installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
 
-The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect
-to Internet. Check your firewall settings if these fail.
+The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services change the URLs.
+
+The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect to Internet. Check your firewall settings if these fail.
 
 ![Weather Options](../images/optionsweather.jpg "Weather Options")
 
@@ -106,7 +108,7 @@ _**Picture above:** Tab `Weather` with manually selected Active Sky weather file
 
 Allows to configure the loading of the scenery library database.
 
-Note that these paths apply to all Flight Simulators.
+Note that these paths apply to all Flight Simulators, FSX, P3D and X-Plane.
 
 You have to reload the scenery database in order for the changes to
 take effect.
@@ -134,3 +136,36 @@ Insert the corresponding directory into this list to avoid unwanted highlighting
 
 _**Picture above:** Tab `Scenery Library Database` with three directories excluded from loading and two directories
 excluded from add-on recognition._
+
+#### Examples
+
+Provided your simulator is installed in `C:\Games\FSX`.
+
+##### ORBX Vector
+
+Exclude the directories below from add-on recognition. Do not exclude them from loading since you will see wrong airport altitudes.
+
+* `C:\Games\FSX\ORBX\FTX_VECTOR\FTX_VECTOR_AEC`
+* `C:\Games\FSX\ORBX\FTX_VECTOR\FTX_VECTOR_APT`
+
+
+##### Flight1 Ultimate Terrain Europe
+
+Exclude these directories from loading to speed up the process:
+
+* `C:\Games\FSX\Scenery\UtEurAirports`
+* `C:\Games\FSX\Scenery\UtEurGP`
+* `C:\Games\FSX\Scenery\UtEurLights`
+* `C:\Games\FSX\Scenery\UtEurRail`
+* `C:\Games\FSX\Scenery\UtEurStream`
+* `C:\Games\FSX\Scenery\UtEurWater`
+
+##### ORBX Regions
+
+Exclude these directories from loading:
+
+* `C:\Games\FSX\ORBX\FTX_NZ\FTX_NZSI_07_MESH`
+* `C:\Games\FSX\ORBX\FTX_NA\FTX_NA_CRM07_MESH`
+* `C:\Games\FSX\ORBX\FTX_NA\FTX_NA_NRM07_MESH`
+* `C:\Games\FSX\ORBX\FTX_NA\FTX_NA_PNW07_MESH`
+* `C:\Games\FSX\ORBX\FTX_NA\FTX_NA_PFJ07_MESH`

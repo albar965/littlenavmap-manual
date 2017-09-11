@@ -1,18 +1,21 @@
 ## Weather {#weather}
 
-_Little Navmap_ can display METARs from five sources:
+_Little Navmap_ can display METARs from several sources:
 
-* Flight simulator if connected. This also applies to network setups.
+* FSX or P3D if connected. This also applies to network setups.
+* X-Plane real time weather from the `METAR.rwx` file. Not when using network setups.
 * [NOAA](http://www.weather.gov) online weather service
 * [VATSIM](http://www.vatsim.net) network online weather service
-* [HiFi Simulation Technologies](http://www.hifisimtech.com) _Active Sky Next_
-* [HiFi Simulation Technologies](http://www.hifisimtech.com) _AS16_
+* [HiFi Simulation Technologies](http://www.hifisimtech.com):
+  * _Active Sky Next_
+  * _AS16_
+  * _Active Sky for Prepar3D v4_ \(ASP4\)
 
-You can define in the `Options` dialog on the `Weather` tab which sources are used to display the METAR
-information in tooltips or the tab `Weather` in the `Information` dock window.
+You can define in the `Options` dialog on the `Weather` tab which sources are used to display the METAR information in tooltips or the tab `Weather` in the `Information` dock window.
 
-METARs are shown in the airport tooltips and on the `Airport` overview tab. Decoded weather information
-for all sources is available in the tab `Weather`.
+You have to set the base path for X-Plane in the `Load Scenery Library` dialog to enable reading of the weather file. Certain features like regions of manually created weather files are not supported.
+
+METARs are shown in the airport tooltips and on the `Airport` overview tab. Decoded weather information for all sources is available in the tab `Weather`.
 
 ![Weather tab](../images/weather.jpg "Weather tab")
 
@@ -20,16 +23,18 @@ _**Picture above:** Decoded weather information from two online sources. Flight 
 
 ### Flight Simulator
 
-Weather information from a flight simulator can be displayed in three kinds for METARs and decoded weather which depends on
+Weather information from a flight simulator or the X-Plane `METAR.rwx` file can be displayed in three kinds for METARs and decoded weather which depends on
 the selected airport:
 
 * `Station`: The airport has a weather station. This is the most precise weather indication.
 * `Nearest`: The clicked airport has no weather station and the nearest weather was fetched. The ident of the nearest station is shown in the METAR and on the decoded weather tab. Note that the nearest weather station is not necessarily an airport.
-* `Interpolated`: The weather is interpolated by the flight simulator using the three nearest stations. This is usually the only option available on airports that are far away from the user aircraft. The ident of the clicked airport is used in the METAR report for this kind of weather report.
+* `Interpolated`: The weather is interpolated by the flight simulator using the three nearest stations. This is usually the only option available on airports that are far away from the user aircraft. The ident of the clicked airport is used in the METAR report for this kind of weather report. Not for X-Plane.
 
 `Nearest` and `Interpolated` are always shown together if `Station` is not available.
 
 The flight simulator weather is updated every 15 seconds to catch changes in the weather theme.
+
+*Little Navmap* watches the X-Plane `METAR.rwx` file for changes and will apply updates immediately.
 
 ### Online - NOAA and VATSIM
 

@@ -6,7 +6,16 @@ See the [Nav Map Legend](LEGEND.md) for details about the various symbols shown 
 
 Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map.
 
-Alternatively use the cursor keys to scroll the map and `+` and `-` to zoom in and out. `Alt+Left` and `Alt+Right` goes forward or backward in the map position history. Do not forget to activate the map window by clicking into it before using any keys for movement.
+Alternatively use the keyboard to move around the map:
+
+* Cursor keys: Scroll the map
+* `+` and `-`: Zoom in and out
+* `Alt+Left` and `Alt+Right`: Go forward or backward in the map position history
+* `Ctrl++` and `Ctrl+-`: Increase or decrease details
+* `Ctrl+Home`: Go to home postion
+* `Ctrl+End`: Go to center for distance search
+
+Do not forget to activate the map window by clicking into it before using any keys for movement.
 
 ### Mouse Clicks {#mouse-clicks}
 
@@ -37,7 +46,7 @@ See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type
 
 ### Tooltips {#tooltips}
 
-Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways, parking, fuel box, towers and all aircraft. The tooltip is truncated and shows a message `More...` if it gets too long. In that case reduce details or zoom in closer.
+Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways, parking, fuel box, towers, aircraft and ships. The tooltip is truncated and shows a message `More...` if it gets too long. In that case reduce details or zoom in closer.
 
 The sensitivity for the tooltip display can be adjusted in the `Options` dialog on the `Map Display` tab.
 
@@ -53,6 +62,8 @@ Waypoints that are selected in the procedure preview are highlighted with a blue
 
 These highlight rings provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance \(ring is empty\). This allows double click for zoom in, single click for information dock window and all context menu entries.
 
+You can use the button `Clear Selection` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") on top of the flight plan and search windows to remove any map highlights.
+
 ### Airport Diagram {#airport-diagram}
 
 The display will change from a single icon to an airport diagram if you zoom in deep enough to an airport. The diagram shows all taxiways, parking positions, gates, runways and more.
@@ -67,7 +78,7 @@ _**Picture above:** High level view of the airport diagram of EDDH._
 
 ![Airport Diagram](../images/airportdiagram2.jpg "Airport Diagram")
 
-_**Picture above:** Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible._
+_**Picture above:** Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking on the left. Long displaced threshold of runway 33 is visible. Dashed yellow lines indicate taxi paths._
 
 ### Map Context Menu {#map-context-menu}
 
@@ -99,7 +110,9 @@ Measurement lines use nautical miles, kilometers or statue miles as unit. Feet o
 
 A great circle gives the shortest distance from point to point on earth but does not use a constant course. For that reason the measurement line will show two course values. One for the start and one for the end position.
 
-Course is indicated in degrees true. Additional information like ident or frequency will be added to the line if the measurement starts at a navaid or an airport.
+Course is always indicated in degrees true which is indicated by the suffix `°T`. Additional information like ident or frequency will be added to the line if the measurement starts at a navaid or an airport.
+
+The width of distance measurement lines can be changed in the dialog `Options` on the tab `Map Display`.
 
 See the [Nav Map Legend](LEGEND.md#map-marks) for details on measurement lines.
 
@@ -107,7 +120,13 @@ See the [Nav Map Legend](LEGEND.md#map-marks) for details on measurement lines.
 
 A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is slightly longer than the great circle route.
 
-The course for a rhumb line is normally indicated in degrees true. Course will be indicated in degrees magnetic if the measurement starts at a navaid or at an airport that has a magnetic variation. Additional information like ident and frequency will be added to the line in this case.
+The course for a rhumb line is indicated in degrees magnetic and true \(`°M`, `°T` or `°M/T` if bot h values are equal\). 
+
+The magnetic declination to calculate the magnetic course will be taken from the global `magdec.bgl` file at the origin of the measurement.
+
+The magnetic declination of an airport or navaid will be used if the measurement starts at a such a point. Additional information like ident and frequency will be added to the line in this case as well.
+
+See [Magnetic Declination](INTRO.md#magnetic-declination) for remarks on that topic.
 
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
 
@@ -116,6 +135,8 @@ This menu item is active if you right click at the end of a distance measurement
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings}
 
 Shows multiple red range rings around the clicked position. The number and distance of the range rings can be changed in the `Options` dialog on the `Map Display` tab. A label indicates the radius of each ring in nautical miles.
+
+The width of all range rings can be changed in the dialog `Options` on the tab `Map Display`.
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
 

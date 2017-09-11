@@ -3,6 +3,7 @@
 ### General {#tutorials-general}
 
 The tutorials are based on:
+* FSX or P3D scenery but can be easily adapted to X-Plane.
 * An already loaded scenery database which normally happens right after the first startup.
 * The stock navigation data of FSX or P3D. Differences might appear if you use navdata updates or airport scenery add-ons.
 
