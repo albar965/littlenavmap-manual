@@ -2,19 +2,25 @@
 
 *Little Navmap* supports several flight plan formats which have all different limitations. Only some of these formats can be loaded and saved.
 
-### Feature Table
-The table below shows the capabilities of the supported flight plan formats \(X = supported, 0 = not supported\):
+Using different "Save as" file dialogs instead of just one allows to remember the directory for each file format separately.
+So the is no need to jump between the FSX or P3D flight plan directory and the X-Plane FMS output directory.
 
-| Format                | Read | Write | Airways | Type \(VFR/IFR\) | User Waypoint Names | Cruise Altitude | Ground speed | Procedures |
-| ---                   | ---  | ---   | ---     | ---              | ---                 | ---             | ---          | ---        |
-| FSX PLN annotated     | X    | X     | X       | X                | X                   | X               | X            | X          |
-| FS9 PLN               | X    | 0     | X       | X                | X                   | X               | X            | X          |
-| FSX PLN not annotated | X    | X     | X       | X                | X                   | X               | 0            | 0          |
-| X-Plane FMS           | X    | X     | 0       | 0                | 0                   | X               | 0            | 0          |
-| FLP                   | X    | X     | X       | 0                | 0                   | 0               | 0            | X          |
-| GFP Export            | 0    | X     | X       | 0                | 0                   | 0               | 0            | 0          |
-| RTE Export            | 0    | X     | X       | 0                | 0                   | 0               | 0            | 0          |
-| GPX Export            | 0    | X     | 0       | 0                | 0                   | 0               | 0            | 0          |
+Note the difference between "Save Flight Plan as" and "Export Flight Plan as". Export does not change the current
+file name while "Save as" does.
+
+### Feature Table
+The table below shows the capabilities of *Little Navmap* and the supported flight plan formats \(X = supported, 0 = not supported\):
+
+| Format         | Read | Write | Airways | VFR/IFR | User Wpt. Names | Departure Parking | Cruise Alt. | Ground speed | Procedures |
+| -------------- | ---- | ----- | ------- | ------- | --------------- | ----------------- | ----------- | ------------ | ---------- |
+| FSX PLN annot. | X    | X     | X       | X       | X               | X                 | X           | X            | X          |
+| FSX PLN        | X    | X     | X       | X       | X               | X                 | X           | 0            | 0          |
+| FS9 PLN        | X    | 0     | X       | X       | X               | X                 | X           | X            | X          |
+| X-Plane FMS    | X    | X     | 0       | 0       | 0               | 0                 | X           | 0            | 0          |
+| FLP            | X    | X     | X       | 0       | 0               | 0                 | 0           | 0            | X          |
+| GFP            | 0    | X     | X       | 0       | 0               | 0                 | 0           | 0            | 0          |
+| RTE            | 0    | X     | X       | 0       | 0               | 0                 | 0           | 0            | 0          |
+| GPX            | 0    | X     | 0       | 0       | 0               | 0                 | 0           | 0            | 0          |
 
 Procedure waypoints are not included in any file. You have to use the GPS or FMS in the simulator to select procedures.
 
