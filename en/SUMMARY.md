@@ -1,6 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
+* [Acknowledgments](ACKNOWLEDGMENTS.md)
+* [Donations](DONATIONS.md)
 * [Features](FEATURES.md)
 * [Installation](INTRO.md#installation)
 * [Quick Overview](INTRO.md#quick-overview)
@@ -42,6 +44,5 @@
 * [Troubleshoot](APPENDIX.md#troubleshoot)
 * [Known Problems](APPENDIX.md#known-problems)
 * [How to report a Bug](APPENDIX.md#how-to-report-a-bug)
-* [Acknowledgments](APPENDIX.md#acknowledgments)
 * [License](APPENDIX.md#license)
 

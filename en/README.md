@@ -13,14 +13,6 @@ More about my projects at [**GitHub**](https://albar965.github.io).
 
 ---
 
-**Donate to show your appreciation if you like my programs.**
-
-**Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen meine Programme gefallen.**
-
-[![Donate](../images/donate.jpg)](https://albar965.github.io/donate.html)
-
----
-
 Copyright 2015-2017 Alexander Barthel
 
 ---
