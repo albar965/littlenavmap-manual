@@ -18,7 +18,7 @@ You have to set the base path for X-Plane in the `Load Scenery Library` dialog t
 METARs are shown in the airport tooltips and on the `Airport` overview tab. Decoded weather information for all sources is available in the tab `Weather`.
 
 **Notes about X-Plane weather:**
-*Little Navmap* can only read the X-Plane `METAR.rwx` file which contains downloaded online weather. The program cannot read custom weather situations from X-Plane. *Little Navmap* has only access to the local weather around the aircraft if you use a custom weather situation.
+*Little Navmap* can only read the X-Plane `METAR.rwx` file which contains downloaded online weather. The program cannot read custom weather situations from X-Plane. *Little Navmap* has only access to the local weather around the aircraft if you use a custom weather situation. This can result in the situation that you use custom weather and *Little Navmap* still displays information from an old downloaded weather file.
 
 ![Weather tab](../images/weather.jpg "Weather tab")
 
