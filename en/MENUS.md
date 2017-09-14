@@ -485,6 +485,8 @@ One menu item is created for each Flight Simulator installation or database foun
 
 This menu is synchronized with simulator selection in the [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog). Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
 
+**Note that the program does not keep you from using a X-Plane scenery database while being connected to FSX/Prepar3D or vice versa. You will get unwanted effects like wrong weather information if using such a setup.**
+
 #### Show Database Files {#show-database-files}
 
 This opens _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer \(e.g. Windows, Mac or Linux\) using the same database that was created on the computer running the flight simulator.
