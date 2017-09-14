@@ -278,7 +278,7 @@ _**Picture above:** Spherical map projection with _`Simple`_ offline map theme s
 
 #### Theme {#theme}
 
-Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](APPENDIX.md#creating-or-adding-map-themes) for more information.
+Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](MAPTHEMES.md) for more information.
 
 ##### OpenStreetMap {#openstreetmap}
 
