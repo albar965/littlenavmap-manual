@@ -2,7 +2,7 @@
 
 ### General {#general}
 
-* Supported platforms: Windows 7, 8, 10, Linux and macOS.
+* Platforms: Windows 7, 8, 10, Linux and macOS.
 * Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2, v3, v4 and X-Plane 11.
 * Modern and easy to use interface: Using a main menu, context menus, toolbars, dock windows, undo, recent file lists and more.
 * Data is collected from flight simulator stock and add-on files. No need to buy or download external data like AIRAC cycles.

@@ -1,4 +1,4 @@
-## Changes from Release 1.4.4 to 1.6.2
+## Changes from Release 1.4.4 to 1.6.3
 
 **The scenery database format has changed and the program will ask to erase its own databases if started.**
 
