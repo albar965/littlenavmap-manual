@@ -32,7 +32,8 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
   * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
   * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
   * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
-  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
+  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
+  * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
   * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
 * `Remarks`: Shows fly-over, turn direction or related navaid for a procedure leg.
 
