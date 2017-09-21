@@ -52,10 +52,11 @@ _**Picture above:** Progress and ambient information of the current flight situa
 
 ### Tab AI / Multiplayer
 
-Information about an AI or multiplayer aircraft or ship is displayed in this tab if a vehicle is clicked on the map.  
-This also includes departure and destination airports for aircraft that can be shown on the map by clicking on the blue links \(only if a flight plan is filed\).
+Information about an AI or multiplayer aircraft or ship is displayed in this tab if a vehicle is clicked on the map.
 
-Note that information on AI aircraft is limited on X-Plane.
+This also includes departure and destination airports for aircraft that can be shown on the map by clicking on the blue links \(only for FSX or P3D and if a flight plan is filed\).
+
+Note that information on AI aircraft is limited on X-Plane where only position, altitude and heading can be displayed.
 
 ![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
 

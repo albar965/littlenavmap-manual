@@ -33,11 +33,12 @@ _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could
 * `Name`: Name of airport or radio navaid.
 * `Procedure Type`: The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
 * `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
-* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. The following altitude restrictions exist for procedures:
+* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
   * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
-  * **Prefix** `A`: Fly at or above altitude. Example: `A 1.800`.
-  * **Prefix** `B`: Fly at or below altitude. Example: `B 10.000` or `B 220`.
+  * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
+  * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
   * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000 B 10.000`.
+  * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
 * `Type`: Type of a radio navaid.
 * `Freq.`: Frequency or channel of a radio navaid.
 * `Range`: Range of a radio navaid.

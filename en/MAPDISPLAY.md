@@ -190,5 +190,5 @@ Sets the center point for the distance search function. See [Distance search](SE
 
 #### ![Set Home](../images/icons/home.png "Set Home") Set Home {#set-home}
 
-Sets the home position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
+Sets currently visible map view as home view. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
 

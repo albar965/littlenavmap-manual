@@ -37,6 +37,8 @@ The flight simulator weather is updated every 15 seconds to catch changes in the
 
 *Little Navmap* watches the X-Plane `METAR.rwx` file for changes and will apply updates immediately.
 
+Note that the nearest weather will not necessarily depict the weather at the clicked station due to the interpolation between multiple stations which is done by the simulator.
+
 ### Online - NOAA and VATSIM
 
 Online weather from both sources is updated every 10 minutes.

@@ -75,9 +75,11 @@ Examples: `V495 CONDI`, `V338 YVR`, `V330 TRENA`.
 
 Examples: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
 
-#### Ignored Entries:
+#### Features not supported
 
-`ETD` and `ETA`: Four digit departure and arrival time attached to the airport ident.
+`ETD` and `ETA`: Four digit departure and arrival time attached to the airport ident are ignored.
+
+`WAYPOINT.SPEEDALT`: For example `BOMBI/N0090A060`. Altitude changes at waypoints are not supported and ignored when reading.
 
 #### Speed and Altitude {#speed-and-altitude}
 
