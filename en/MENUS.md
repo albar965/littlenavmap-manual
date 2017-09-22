@@ -62,11 +62,13 @@ Store FMS files into the `Output/FMS plans` directory inside the X-Plane directo
 
 #### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
 
-Exports the current flight plan as a FLP file usable by the Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan. 
+Exports the current flight plan as a FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan. 
 
 See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 
 This function changes the current file type and name which means that all further saves will go into the new FLP file and the file will be reloaded on next start.
+
+Store FLP files into the `Output/FMS plans` directory inside the X-Plane directory if you want to load it into the FMS.
 
 #### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Export as Clean PLN {#export-clean-flight-plan}
 

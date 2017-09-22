@@ -23,7 +23,7 @@ An airport that has no taxiways, no parking positions or gates, no aprons and is
 This term refers to a waypoint, radio navaid or an calculated point on a procedure.
 
 ## FLP
-Flight plan format used by the Aerosoft Airbus and other add-on aircraft.
+Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft.
 
 ## FMS
 X-Plane flight plan format.
