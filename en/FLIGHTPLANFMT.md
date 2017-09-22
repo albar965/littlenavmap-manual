@@ -51,9 +51,9 @@ X-Plane FMS format which can be loaded into the stock GPS and FMS of X-Plane. Th
 Store these files into the `Output/FMS plans` directory inside the X-Plane directory.
 
 ### ![FLP](../images/icons/saveasflp.png "FLP") FLP
-A format that can be read by the X-Plane FMS \(not the X-Plane GPS\), Aerosoft Airbus and other add-on aircraft for X-Plane. Supports airways and procedures.
+A format that can be read by the X-Plane FMS \(not the X-Plane GPS\), Aerosoft Airbus and other add-on aircraft. Supports airways and procedures.
 
-You can load these files into the X-Plane FMS including airway information. Procedures are saved in the FLP but cannot loaded yet by the X-Plane FMS. You have to select these manually after loading the flight plan.
+You can load these files into the X-Plane FMS including airway information. Procedures are saved in the FLP but cannot loaded yet by the FMS. You have to select these manually after loading the flight plan.
 
 Store these files into the `Output/FMS plans` directory inside the X-Plane directory if you want to use them in X-Plane.
 
