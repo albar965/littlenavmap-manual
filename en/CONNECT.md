@@ -4,9 +4,9 @@ The setup procedure is different for remote connections and local connections to
 
 _Little Navmap_ can connect directly if all programs are run on the same computer. The _Little Navconnect_ agent is needed if _Little Navmap_ is run on a remote computer.
 
-The X-Plane plugin is needed in any case.
-
 ### Local Connection {#local-connection}
+
+#### All Simulators
 
 Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection` and choose the simulator to which the connection should be established.
 
@@ -23,6 +23,21 @@ Clicking `Close` keeps all changes and closes the dialog without establishing a 
 Enable `Connect automatically` if you do not want to connect manually. The start order of programs does not matter if this is checked and _Little Navmap_ will find the simulator once it is started or when it is already running. This is the recommended setting.
 
 Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` to disable the transfer of this information to the program. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
+
+#### X-Plane
+
+You have to intall the included *Little Xpconnect* plugin to use *Little Navmap* as a moving map with X-Plane.
+
+The plugin is bundled with Little Navmap and can be downloaded separately too.
+
+Copy the whole plugin directory `Little Xpconnect` into the directory `plugins`
+in the directory `Resources` in the X-Plane installation. The complete path
+should look like `.../X-Plane 11/Resources/plugins/Little Xpconnect`
+
+You can check the X-Plane plugin manager to see if it is loaded  correctly.
+
+When connecting with Little Navmap choose the `Connect directly to a local
+X-Plane simulator` option.
 
 ### Remote Connection {#remote-connection}
 

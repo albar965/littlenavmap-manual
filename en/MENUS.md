@@ -501,7 +501,9 @@ Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENE
 
 #### ![Copy Airspaces to X-Plane Database](../images/icons/airspace.png "Copy Airspaces to X-Plane Database") Copy Airspaces to X-Plane Database {#copy-airspaces-to-xplane}
 
-This allows to copy airspace information from a FSX or P3D database to a X-Plane database. This is needed since X-Plane comes with very limited airspace information.
+This allows to copy airspace information from a FSX or P3D database to a X-Plane database. This is needed since X-Plane comes with limited airspace information.
+
+All airspaces already loaded from X-Plane are deleted before copying. See [X-Plane Airspaces](SCENERY.md#load-scenery-library-dialog-xp-airspaces) for more information.
 
 You have to switch to a FSX or P3D simulator database first to enable this menu item.
 
