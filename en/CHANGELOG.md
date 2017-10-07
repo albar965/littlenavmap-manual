@@ -1,3 +1,44 @@
+## Changes from Release 1.6.4 to 1.6.6
+
+Version 1.6.5 was an internal beta release.
+
+### Improvements
+
+* Added OpenAir airspace format compilation for X-PLane. Also reading airspace files from
+  from `YOUR_DOCUMENTS_DIR/Little Navmap/X-Plane Airspaces`. You have to create the `Little Navmap/X-Plane Airspaces` directory manually.
+* Added new airspace types `Wave Window` and `Glider Prohibited`.
+* Removed restrictions on user defined waypoint names. Names are now adjusted according to flight plan format when saving.
+* Enabled user defined waypoint names for X-Plane FMS format.
+* Changed rating checkbox to drop down list in airport search.
+* X-Plane 3D airport state is now considered when calculating rating.
+* Added display of simulator type to connection status in statusbar.
+* Airspace buttons are now disabled if no airspaces are loaded.
+* Now clipping long airport and user waypoint names on map.
+* Removed `no SimConnect` header label in connect dialog.
+* Added display of AIRAC cycle to database dialog \(X-Plane only\).
+* Added scenery file display for airspaces in information window.
+* Added download button to update notification dialog.
+* Better error handling and reporting of too old files with version < 850 when loading X-Plane scenery. Now checking X-Plane CIFP filenames before loading.
+* Now showing dialog on certain crash types to avoid silent crash to desktop.
+* Made loading of `add-on.xml` more robust for files with wrong encoding.
+* Added coordinates to CSV export to clipboard from flight plan and search result tables.
+
+### Bug Fixes
+
+* Offline map themes `Atlas` and `Simple`: Fixed missing lakes in map.
+* Fixed problem loading FS9 flight plans.
+* Attempt to fix zoom distance creep while using moving map.
+* Fixed error in airspace copy process from older database schemes where bounding rectangle was messed up. This resulted in an `Too many objects` message in the statusbar.
+* Solved problem with gaps between SIDs, STARs and the respective transitions resulting in wrong
+  display and distance calculation.
+* Fixed problem where STAR was not reloaded after database switch.
+* Fixed issue where airspace display was not updated when changing cruise altitude with empty flight plan.
+* Fixed user waypoint format for FLP so that it can be reloaded.
+* Fixed confusing `0 errors` dialog appearing after loading X-Plane database successfully.
+* Fixed `Connect on startup` checkbox state not saved in some cases.
+* Fixed status bar connection indication remaining in disconnected state sometimes.
+* Fixed potential crash on failing network connection.
+
 ## Changes from Release 1.6.3 to 1.6.4
 
 * Fixed crashes when reading X-Plane CIFP files with unknown approach type.
@@ -14,11 +55,10 @@
 
 ## Changes from Release 1.4.4 to 1.6.3
 
-**The scenery database format has changed and the program will ask to erase its own databases if started.**
-
 ### Enhancements
 
 #### X-Plane 11
+
 * Can read full X-Plane scenery database: Airports, aprons, taxiways, navaids, airways, procedures \(including speed limits\). Also add-on overrides and path exclusions in the options dialog.
 * Supports navdata updates.
 * Display of AI aircraft on map and in information window.
@@ -30,6 +70,7 @@
 * Supported platforms are Windows, macOS and Linux for all programs.
 
 #### General
+
 * Automatic update check on startup \(daily, weekly or manual\) with settings in options dialog on tab `Startup`.
 * Added push buttons in flight plan and procedure search top area to remove selection and map highlights.
 * Rhumb line measurement now shows both magnetic and true course where declination is based on origin.
