@@ -499,7 +499,7 @@ This opens _Little Navmap_'s database directory in a file manager. See [Running 
 
 Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
 
-#### ![Copy Airspaces to X-Plane Database](../images/icons/airspace.png "Copy Airspaces to X-Plane Database") Copy Airspaces to X-Plane Database {#copy-airspaces-to-xplane}
+#### ![Copy Airspaces to X-Plane Database](../images/icons/airspacecopy.png "Copy Airspaces to X-Plane Database") Copy Airspaces to X-Plane Database {#copy-airspaces-to-xplane}
 
 This allows to copy airspace information from a FSX or P3D database to a X-Plane database. This is needed since X-Plane comes with limited airspace information.
 
