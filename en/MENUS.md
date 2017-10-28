@@ -94,15 +94,23 @@ Exports the current flight plan as a PMDG RTE file.
 
 Procedures or their respective waypoints are not included in the exported file.
 
+#### ![Export Flight Plan as TXT](../images/icons/saveastxt.png "Export Flight Plan as TXT") Export Flight Plan as TXT {#export-flight-plan-as-txt}
+
+Exports the current flight plan as a TXT file usable by JARDesign or Rotate Simulations aircraft
+
+Neither procedures nor their respective waypoints are included in the exported file.
+
 #### ![Export Flight Plan as GPX](../images/icons/saveasgpx.png "Export Flight Plan as GPX") Export Flight Plan as GPX {#export-flight-plan-as-gpx}
 
 Exports the current flight plan into a GPS Exchange Format file which can be read by Google Earth and most other GIS applications.
 
-The flight plan is exported as a route and the flown aircraft trail as a track including simulator time and altitude.
+The flight plan is exported as a route and the flown aircraft trail as a track including simulator time and altitude. 
 
-Procedures or their respective waypoints are not included in the exported route.
+The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
 
 This function does not change the current file name and type.
+
+**Do not forget to clear your aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before flight to avoid old trail segments in the exported GPX file.**
 
 #### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
 

@@ -21,6 +21,7 @@ The table below shows the capabilities of *Little Navmap* and the supported flig
 | FLP                 | X    | X     | X       | 0        | 0               | 0            | 0           | 0            | X          |
 | GFP                 | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0          |
 | RTE                 | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0          |
+| TXT                 | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0          |
 | GPX                 | 0    | X     | 0       | 0        | 0               | 0            | 0           | 0            | 0          |
 
 Procedure waypoints are excluded from all file formats. You have to use the GPS or FMS in the simulator to select procedures.
@@ -86,15 +87,27 @@ You might need to change the user privileges on this directory if your saved fli
 
 A typical symptom is that you can save the flight plan in *Little Navmap* and you can also see the saved plan in *Little Navmap*'s open dialogs but it does not show up in the GTN unit. Change the privileges of the export directory as mentioned above if that is the case.
 
+The file is a simple text format containing only one line of text. Example for the content of a flight plan file named `KEAT-CYPU.gfp`:
+
+`FPN/RI:F:KEAT:F:EAT.V120.SEA.V495.CONDI.V338.YVR.V330.TRENA:F:N50805W124202:F:N51085W124178:F:CAG3:F:N51846W124150:F:CYPU`
+
 ### ![RTE](../images/icons/saveasrte.png "RTE") RTE {#flight-plan-formats-rte}
-Exports the current flight plan as a PMDG RTE file. Location depends on the used aircraft but is usually `PMDG\FLIGHTPLANS` in the simulator base directory.
+A PMDG RTE file. File location depends on the used aircraft but is usually `PMDG\FLIGHTPLANS` in the simulator base directory.
+
+### ![TXT](../images/icons/saveastxt.png "TXT") TXT {#flight-plan-formats-txt}
+
+A simple file format usable by JARDesign or Rotate Simulations aircraft. Location depends on the used aircraft which is usually in the X-Plane directory `aircraft`.
+
+The file is a simple text format containing only one line of text. Example for the content of a `TXT` file named `CBZ9CYDC.txt`:
+
+`CBZ9 SID AIRIE V324 YKA B8 DURAK STAR CYDC`
 
 ### ![GPX](../images/icons/saveasgpx.png "GPX") GPX {#flight-plan-formats-gpx}
+
 GPX not a flight plan format.
 
 The GPS Exchange Format can be read by Google Earth and most other GIS applications.
 
 The flight plan is embedded as a route and the flown aircraft trail as a track including simulator time and altitude.
 
-Procedures or their respective waypoints are not included in the exported file.
-
+The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.

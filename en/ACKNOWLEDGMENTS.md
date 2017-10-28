@@ -1,6 +1,6 @@
 ## Acknowledgments {#acknowledgments}
 
-A big thank-you for all people supporting me throughout the beta phase, sending me their log files, screen shots, ideas for improvements, friendly messages and more.
+A big thank-you for all people supporting me, sending me their log files, screen shots, ideas for improvements, friendly messages, donations and more.
 
 A huge Thank you! to Paul Watts for his support, for testing, tips, links to incredible tools and for all his work on the manual.
 
@@ -9,6 +9,8 @@ Plenty of thanks to [Hervé Sors](http://www.aero.sors.fr) for allowing me to in
 A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
 
 Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind support.
+
+The French translation of the program was done by Patrick JUNG alias Patbest. Thank you!
 
 Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo and Sam.
 
