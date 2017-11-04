@@ -55,6 +55,8 @@ The first number in the second line is the file version. Here it is `1100`.
 * **Procedures \(**`ICAO.dat`** in the **`CIFP`**directory\):** All procedures from X-Plane 11.
 * **Airspaces \(**`*.txt`**\):** The included `usa.txt` and all files in OpenAir format. See next chapter for more information.
 
+Additionally the files `user_fix.dat` and `user_nav.dat` in the X-Plane directory `Custom Data` are read.
+
 ### X-Plane Airspaces {#load-scenery-library-dialog-xp-airspaces}
 
 All files in [OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp) will be loaded when reading the X-Plane scenery library. 
@@ -64,9 +66,9 @@ You can also copy airspaces from a present FSX or Prepar3D database if you own t
 Note that airspace files can have errors which may prevent the loading of an airspace file. These hard errors are reported after loading the scenery library. Other errors only affecting single airspaces or the geometry are reported in the log file only.
 
 X-Plane 11 comes with a single airspace file that can be found in `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces/usa.txt`.
-Additional airspace files can be downloaded from the [OpenAirspace Directory](http://www.winpilot.com/openair/index.asp), [Soaring Services](http://soaringweb.org/), or [openAIP](https://www.openaip.net/) for example.
+Additional airspace files can be downloaded from the [OpenAirspace Directory](http://www.winpilot.com/openair/index.asp), [Soaring Services](http://soaringweb.org/), [openAIP](https://www.openaip.net/) or [Luftraumdaten Deutschland](https://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten) for example.
 
-Airspace files must have a `.txt` extension and are loaded from the following directories my *Little Navmap*:
+Airspace files must have a `.txt` extension and are loaded from the following directories by *Little Navmap*:
 
 * `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces`
 * `YOUR_XPLANE_DIRECTORY/Custom Data/Airspaces`
