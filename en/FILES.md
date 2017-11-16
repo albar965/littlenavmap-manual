@@ -1,18 +1,25 @@
 ## Files {#files}
 
-Log files of _Little Navmap_ for Windows 7/8/10 are typically stored in the directory:
+### Logs
 
-`C:\Users\YOURUSERNAME\AppData\Local\Temp`
+Log files of _Little Navmap_ for are stored in the directories:
+
+* Windows: `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`
+* Linux: `/tmp/abarthel-little_navmap.log`
+* macOS: `/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log`
 
 The program keeps three log files and rotates these on each startup. So you may find up to three logs:
 
 `abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
 
-All configuration files for my programs for Windows 7/8/10 are typically stored in the directory:
+Make sure to send the correct log file after a crash. Do not restart the program if you like to report and since it will rotate the log files. If unsure send all copies in a Zip-file.
 
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
+### Configuration
 
-There are three configuration files for this program:
+All configuration files for my programs are stored in the directories:
+
+* Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
+* Linux and macOS: `$HOME/.config/ABarthel`
 
 * `little_navmap.ini`: INI style configuration file. Text file.
 * `little_navmap.history`: The map position history. Binary file.
@@ -28,13 +35,14 @@ See [Customization](CUSTOMIZE.md) for more information.
 
 The disk cache that is used to store all the downloaded online map tile images can be found here:
 
-`C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Windows `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Linux and macOS: `$HOME/.local/share/marble`
 
 The scenery library databases are stored in the directory:
 
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+`...\ABarthel\little_navmap_db`
 
-There can be up to five files depending which simulators you have installed and which scenery libraries you've loaded.
+There can be up to six files depending which simulators you have installed and which scenery libraries you've loaded.
 
 All these databases are [SQLite](http://sqlite.org) files which can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
 
@@ -47,12 +55,13 @@ The files are:
 * `little_navmap_p3dv3.sqlite`: Prepar3D v3
 * `little_navmap_p3dv4.sqlite`: Prepar3D v4
 * `little_navmap_xp11.sqlite`: X-Plane 11
+* `little_navmap_navigraph.sqlite`: Navigraph navdatabase. Can be either the included database or an update installed by the Navigraph _FMS DATA MANAGER_.
 
 Additional files like
 
-* `little_navmap_compiling.sqlite`, 
+* `little_navmap_compiling.sqlite`,
 * `little_navmap_compiling.sqlite-journal`,
-* `little_navmap_temp.sqlite` and 
-* `little_navmap_temp.sqlite-journal` 
+* `little_navmap_temp.sqlite` and
+* `little_navmap_temp.sqlite-journal`
 
 are remains of temporary processes like the database compilation and can be ignored.

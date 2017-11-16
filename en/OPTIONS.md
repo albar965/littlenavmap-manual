@@ -27,6 +27,8 @@ A restart is not needed but recommended after changing a style.
 
 The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
 
+This tab also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
+
 ![User Interface](../images/optionsui.jpg "User Interface")
 
 _**Picture above:** Tab `User Interface` using the style `Night`._

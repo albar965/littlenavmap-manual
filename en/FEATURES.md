@@ -5,7 +5,8 @@
 * Platforms: Windows 7, 8, 10, Linux and macOS.
 * Support for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2, v3, v4 and X-Plane 11.
 * Modern and easy to use interface: Using a main menu, context menus, toolbars, dock windows, undo, recent file lists and more.
-* Data is collected from flight simulator stock and add-on files. No need to buy or download external data like AIRAC cycles.
+* Data is collected from flight simulator stock and add-on files. Navdata updates are optional.
+* Navigation data can be updated from Navigraph. A cycle 1707 database is included in the download and includes navaids, airways, airspaces and procedures.
 * Scenery library databases for flight simulators are stored separately and can be changed on the fly.
 * Display of METARs or decoded weather data from Flight Simulator, _Active Sky Next_, _AS16_, _Active Sky for P3Dv4_, X-Plane downloaded weather, NOAA and VATSIM in tooltips and information windows.
 * The program saves almost all settings including the flight plan, window positions, searches and more and restores everything on start up.
@@ -16,18 +17,17 @@
 * Exhaustive search function for airports and navaids allows filtering by an extensive range of criteria.
 * Distance and direction based spatial search for airports or navaids around a center point. Can be combined with all other search options.
 * Search for airports or navaids by BGL \(FSX, P3D\) or DAT \(X-Plane\) file name or path to find your preferred add-on airports or debug scenery problems.
-* FSX/P3D: Support for navdata updates from [_fsAerodata_](https://www.fsaerodata.com) and [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
+* FSX/P3D: Support for navdata updates from [_Navigraph_](http://www.navigraph.com), [_fsAerodata_](https://www.fsaerodata.com) and [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
 * Third party X-Plane navdata updates supported.
-* FSX/P3D only: Recognizes VORTAC and TACAN radio stations from _fsAerodata_ navaid update.
 * Units can be changed between nautical, imperial and metric.
 * Multiple GUI styles including a night mode. Two styles can be customized in configuration files.
 * The program can now check for updates on three different channels \(stable, beta and develop\) and will show a notification if a new version is available. Configurable in options dialog.
 
 ### Flight Plan and Routing {#flight-plan-and-routing}
 
-* Can read and write FSX PLN format, X-Plane FMS and FLP format \(Aerosoft Airbus and others\).
+* Can read and write FSX PLN format, X-Plane FMS \(old limited version 3 and new version 11 usable by X-Plane 11.10\) and FLP format \(Aerosoft Airbus, X-Plane and others\).
 * Can export flight plans in GFP format used by the Flight1 GTN 750/650.
-* Other export formats are PMDG RTE and GPX. GPX files include the flown track.
+* Other export formats are PMDG RTE, IEXG 737, Majestic Dash, Flight Factor Airbus, JARDesign Aircraft, Rotate Simulations and GPX. GPX files include the flown track.
 * Import of FS9 flight plans.
 * Flight plans can be created from a route description copied from an online flight planner or other sources. This includes speed and altitude elements as well as SIDs and STARs.
 * Route descriptions can be generated from a flight plan. The included information can be configured.
@@ -39,7 +39,7 @@
 * Automatic fast flight plan calculation for high/low altitude airways, VOR/NDB and preset cruise altitude. Flight plan snippets can be calculated between any kind of departure and destination point.
 * Can calculate flight plan fragments between any two waypoints of a present flight plan.
 * The automatic flight plan calculation is based entirely on flight simulator data. No third party data needed and no slow and unreliable online services used.
-* X-Plane: Considers altitude and one-way restrictions when calculating flight plan.
+* X-Plane and Navigraph: Considers altitude and one-way restrictions when calculating flight plan.
 * X-Plane: Airspaces can be copied from a FSX or P3D database.
 * Elevation profile display for flight plan using GLOBE offline or online data. Shows minimum altitude for flight plan with a configurable altitude buffer.
 * Undo/redo for all flight plan changes.
@@ -49,9 +49,9 @@
 
 ### Procedures - Approaches, Transitions, SIDs and STARs {#procedures}
 
-* Uses approaches and transition from FSX or P3D stock data. Additionally supports SIDs and STARs from _fsAerodata_ navdata updates or future AIRAC updates.
+* Uses procedures from FSX/P3D stock data or Navigraph.
 * Uses X-Plane stock and updated nav data for approach, SID and STAR procedures including transitions.
-* Displays much more information for procedures than the flight simulator GPS.
+* Displays much more information for procedures than the flight simulator GPS units.
 * Procedure search dialog with type and runway filters that allows easy selection and preview of procedures.
 * Procedures can be easily added and removed from flight plan.
 * Information for selected procedures is stored as an annotation in the default simulator PLN-files and reloaded when the file is opened by _Little Navmap_. No need to deal with an extra file format only used by _Little Navmap_.

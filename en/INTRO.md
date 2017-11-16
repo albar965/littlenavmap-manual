@@ -1,12 +1,14 @@
 ## First Start {#first-start}
 
-The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown when starting _Little Navmap_ for the first time. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database. 
+_Little Navmap_ will copy and prepare the included Navigraph database on first startup. See [Navigraph](MENUS.md/#navigraph) for more information about the integration.
+
+The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown once the preparation is finished. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database.
 
 **Note that X-Plane cannot be recognized automatically. You have to set the path in the `Scenery Library Dialog` before you can load the database or selecting it in the menu.**
 
 One database is kept for each simulator and can be changed on the fly in the [Scenery Library Menu](MENUS.md#scenery-library-menu).
 
-A warning dialog will be shown on Windows when starting _Little Navmap_ the first time on a system without FSX or P3D flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this. 
+A warning dialog will be shown on Windows when starting _Little Navmap_ the first time on a system without FSX or P3D flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
 
 You can also go directly to the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) from there if you have X-Plane installed.
 
@@ -61,7 +63,13 @@ Most dialogs and some dock windows show help buttons ![Help](../images/icons/hel
 
 #### Window Title
 
-The main window title indicates the currently selected flight simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name and a trailing `*` if the flight plan has been changed.
+The main window title indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name and a trailing `*` if the flight plan has been changed. 
+
+A `N` will be appended if the Navigraph database is used:
+
+* `P3DV4`: All feartures on the map and all information in dialogs and windows comes from the flight simulator database.
+* `P3DV4 / N`: Airports and ILS are shown and used from the flight simulator database. Navaids, airspace, airways and procedures are used from the Navigraph database.
+* `(P3DV4) / N`: All data is used from the Navigraph database. No aprons, no taxiways and no parking positions are available for airports.
 
 #### Copy and Paste
 
@@ -73,9 +81,11 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 ### Translation and Locale {#translation-and-locale}
 
-_Little Navmap_ is currently only available in English. I will happily support anybody who would like to translate the user interface or manual into another language. 
+_Little Navmap_ is currently available in English and French. I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available.
 
 Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
+
+The language and locale settings can be forced to English in the dialog `Options` on the tab `User Interface` if a translated user interface is not desired.
 
 Please note that some screenshots in this manual were taken using German locale, therefore a comma is used as a decimal separator and a dot as a thousands separator.
 
@@ -106,12 +116,11 @@ Airports in the `Custom Scenery/Global Airports/Earth nav data/apt.dat` file of 
 
 ### Navdata Updates {#navdata-updates}
 
+_Little Navmap_ comes with a ready to use database from Navigraph including airspaces, SIDs, STARs and more. The database can be updated by using Navigraph's _FMS DATA MANAGER_.
+
 #### FSX and Prepar3D
+
 *Little Navmap* is compatible with navdata updates from [_fsAerodata_](https://www.fsaerodata.com) or [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
-
-Note that the SID and STAR names are limited to 5 characters in FSX and P3D due to a limitation in the BGL file format. Names are slightly modified therefore and cannot be exchanged with X-Plane procedures.
-
-Navdata updates are optional.
 
 #### X-Plane
 
@@ -126,10 +135,12 @@ Note that neither ARINC nor the FAACIFP files are supported.
 The calibrated magnetic declination of a VOR may differ from the actual declination in a region as it does in reality. Therefore, magnetic course values might differ in some cases.
 
 #### FSX and Prepar3D
+
 The declination used to calculate the magnetic course is taken from the `magdec.bgl` file in the scenery database. 
 
 Updates for this file are available here: [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
 
 #### X-Plane
+
 The declination values for X-Plane \(airports and all navaids except VORs\) is calculated based on the included `magdec.bgl` file which is based on the values for the beginning of 2017.
 

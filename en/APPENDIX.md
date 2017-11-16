@@ -75,6 +75,11 @@ MapQueryTaxipathCache=100
 * Airports are misplaced \(for example Cabo San Lucas, MM15 in Mexico\) compared to the background maps. This is an error in the source data and cannot be fixed.
 * Map printouts can be fuzzy since they depend on screen resolution. As a workaround increase the size of the visible map window.
 * Very long route legs can disappear from the map when zooming in. The label is still visible though.
+* Tooltips of large airspaces can appear at wrong places.
+* Scrolling the map can be very slow for some complex X-Plane airports.
+* The wrong procedures are restored sometimes if the flight plan is reloaded when an airport has more than one procedure with the same name.
+* Procedures are drawn incorrectly in some cases.
+* The airport search attribute `Procedures` does not work correctly in the mixed database. It will show only simulator airports having procedures instead of using the Navigraph airport status.
 
 ## How to report a Bug {#how-to-report-a-bug}
 

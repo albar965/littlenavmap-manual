@@ -34,7 +34,7 @@ All arrival procedures will be removed when appending a flight plan.
 
 #### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Save Flight Plan as PLN {#save-flight-plan-as}
 
-Saves the flight plan to a FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*. 
+Saves the flight plan to a FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*.
 
 `Save Flight Plan as PLN` changes the current file type and name in *Little Navmap* which means that all further saves will go into the new PLN file.
 
@@ -50,15 +50,17 @@ Note that the waypoints of a procedure are not saved with the flight plan. This 
 
 The set ground speed is also saved with the flight plan.
 
-#### ![Save Flight Plan as X-Plane FMS](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS") Save Flight Plan as X-Plane FMS {#save-flight-plan-as-fms}
+#### ![Save Flight Plan as X-Plane FMS 11](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS 11") Save Flight Plan as X-Plane FMS 11 {#save-flight-plan-as-fms11}
 
-Saves the flight plan as a X-Plane FMS file. This format is limited so a warning dialog is shown if any unsupported features are detected in the current flight plan. 
+Saves the flight plan using the new X-Plane FMS 11 format. **This format can only be used in X-Plane 11.10 and above. Do not try to load it into the FMS or GPS of X-Plane 11.05. It might crash the simulator.**
+
+A warning dialog will be shown with the warning above when saving.
 
 See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 
 This function changes the current file type and name which means that all further saves will go into the new FMS file and the file will be reloaded on next start.
 
-Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS or FMS.
+Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS, the G1000 or the FMS.
 
 #### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
 
@@ -78,29 +80,65 @@ Like any other export function this does not change the current file name and ty
 
 See also [Flight Plan Formats](FLIGHTPLANFMT.md).
 
-#### ![Save Flight Plan as GFP](../images/icons/saveasgfp.png "Save Flight Plan as GFP") Save Flight Plan as GFP {#save-flight-plan-as-gfp}
+#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Export Flight Plan as X-Plane FMS 3 {#export-flight-plan-as-fms3}
+
+Saves the flight plan using the older X-Plane FMS 3 format which is limited but can be loaded by X-Plane 10 and X-Plane 11.05. A warning dialog is shown if any unsupported features are detected in the current flight plan. 
+
+See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+
+This export function this does not change the current file name and type. Further saves will still use the same file name and format as before.
+
+Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS or FMS.
+
+#### Export Sub-Menu
+
+See [Flight Plan Formats](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
+
+Export functions do not change the current file name and type. Further saves will still use the same file name and format as before.
+
+##### Export Flight Plan as Garmin GTN GFP {#save-flight-plan-as-gfp}
 
 Exports the flight plan in GFP format used by the _Flight1 GTN 650/750_.
 
 Procedures or their respective waypoints are not included in the exported file.
 
-This function does not change the current file name and type. Further saves will still use the same file name and format as before.
+See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information about this export format and how to work around locked waypoints.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information about this export format.
-
-#### ![Export Flight Plan as RTE](../images/icons/saveasrte.png "Export Flight Plan as RTE") Export Flight Plan as RTE {#export-flight-plan-as-rte}
+##### Export Flight Plan as PMDG RTE {#export-flight-plan-as-rte}
 
 Exports the current flight plan as a PMDG RTE file.
 
 Procedures or their respective waypoints are not included in the exported file.
 
-#### ![Export Flight Plan as TXT](../images/icons/saveastxt.png "Export Flight Plan as TXT") Export Flight Plan as TXT {#export-flight-plan-as-txt}
+##### Export Flight Plan as TXT {#export-flight-plan-as-txt}
 
 Exports the current flight plan as a TXT file usable by JARDesign or Rotate Simulations aircraft
 
 Neither procedures nor their respective waypoints are included in the exported file.
 
-#### ![Export Flight Plan as GPX](../images/icons/saveasgpx.png "Export Flight Plan as GPX") Export Flight Plan as GPX {#export-flight-plan-as-gpx}
+##### Export Flight Plan as Majestic Dash FPR {#export-flight-plan-as-fpr}
+
+Exports the current flight plan for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints. 
+
+The flight plan has to be saved to `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\nav\routes`.
+
+##### Export Flight Plan as IXEG FPL {#export-flight-plan-as-fpl}
+
+Exports the current flight plan as a FPL file usable by the IXEG Boeing 737 classic.
+
+SIDs, STARs or approach procedures are not exported.
+
+The file should be saved to `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroutes`. You might have to create the directory manually if it does not exist.
+
+##### Export Flight Plan to corte.in for Flight Factor Airbus {#export-flight-plan-as-fpl}
+
+Appends the the flight plan to a new or already present `corte.in` company routes file for the Flight Factor Airbus aircraft.
+
+The file will be automatically created if it does not exist. Otherwise the flight plan will be appended to the file. You have to remove the flight plan manually from the `corte.in` file with a simple text editor if you wish to get rid of it.
+
+Location of the file depends on aircraft type.
+
+##### Export Flight Plan as GPX {#export-flight-plan-as-gpx}
 
 Exports the current flight plan into a GPS Exchange Format file which can be read by Google Earth and most other GIS applications.
 
@@ -108,9 +146,7 @@ The flight plan is exported as a route and the flown aircraft trail as a track i
 
 The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
 
-This function does not change the current file name and type.
-
-**Do not forget to clear your aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before flight to avoid old trail segments in the exported GPX file.**
+**Do not forget to clear the aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
 
 #### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
 
@@ -489,7 +525,9 @@ Shows hill shading on the map. Availability of these options depends on the sele
 
 #### Flight Simulators {#flight-simulators}
 
-One menu item is created for each Flight Simulator installation or database found. These menu items allow switching of databases on the fly. The menu item is hidden if only one Flight Simulator was found.
+One menu item is created for each Flight Simulator installation or database found. These menu items allow switching of databases on the fly. The menu item is disabled if only one Flight Simulator was found.
+
+The loaded AIRAC cycle is displayed only for X-Plane since the information is not available for FSX or P3D simulators.
 
 **You have to set the base path to the X-Plane directory in the **`Load Scenery Library Dialog`** first to enable the X-Plane menu item.**
 
@@ -498,6 +536,58 @@ This menu is synchronized with simulator selection in the [Load Scenery Library 
 **Note that the program does not keep you from using a X-Plane scenery database while being connected to FSX/Prepar3D or vice versa. You will get unwanted effects like wrong weather information if using such a setup.**
 
 The program might change a loaded flight plan if you switch between different databases. This can happen if a departure position is set in the plan which does not exist in the other database. Click `New Flight Plan` before switching to avoid this.
+
+#### Navigraph {#navigraph}
+
+This sub menu also indicating the AIRAC cycle is added if a Navigraph database is found in the database directory.
+
+_Little Navmap_ can use up to two databases in parallel: One created by reading the simulator scenery and one as delivered by Navigraph.
+
+You can choose between three display modes as shown below.
+
+##### Use Navigraph for all Features {#navigraph-all}
+
+Completely ignores the simulator database and takes all information from the Navigraph database.
+
+Note that airport information is limited in this mode. This means that aprons, taxiways, parking positions and runway surface information is not available. Additionally, smaller airports might be missing.
+
+An advantage of this mode is that approach procedures always match the airport runway layout.
+
+##### Use Navigraph for Navaids and Procedures {#navigraph-navaid-proc}
+
+This mode blends navaids and more from the Navigraph database with the simulator database. This affects the map display, all information and and all search windows.
+
+The following features are taken from the simulator database:
+
+* Airports \(also `Search` dock window, tab `Airport`\)
+* Aprons
+* Taxiways
+* Parking positions
+* COM frequencies
+* ILS
+
+The following features are taken from the Navigraph database:
+
+* Navaids \(waypoints/intersections, VOR, NDB, marker\). This affects:
+ * `Search` dock window, tab `Navaid`
+ * Flight plan calculation
+ * Route Description
+* Procedures \(approaches, SIDs and STARs. This affects:
+ * `Search` dock window, tab `Procedures`
+ * Loading and display of procedures from flight plans.
+* Airways
+* Airspaces
+
+**_Little Navmap_ ignores any mismatches between procedures and runways due to airport updates and will not display a warning.
+Update an airport using payware or freeware scenery if you find that an approach or departure procedure does not start at a runway end of an airport.**
+
+![Approach Procedure Mismatch](../images/procedure_mismatch.jpg "Approach Procedure Mismatch")
+
+_**Picture above:** An extreme example for runway/procedure mismatch. The approach from the Navigraph database cycle 1707 ends at the not visible runway 09 while the outdated scenery from FSX shows the airport at the wrong position. EDVK was rebuild north of Calden in 2013. The OpenStreetMap backgound shows the new airport._
+
+##### Do not use Navigraph Database {#navigraph-none}
+
+Completely ignores the Navigraph database and shows only information read from the simulator scenery.
 
 #### Show Database Files {#show-database-files}
 
