@@ -85,9 +85,24 @@ MapQueryTaxipathCache=100
 
 If something goes wrong send me any involved files like KML, PLN or BGL \(if copyright permits\), _Little Navmap_'s log file and configuration file which both can be located in the about dialog. My e-mail addresses are shown in the about dialog of _Little Navmap_ as well.
 
-Please add all steps that are necessary to reproduce the error.
+**Add all necessary information:**
 
-When an error occurs during loading of the scenery library send me the offending BGL file if possible. The full name and path of the file is shown on top of the error dialog if a specific BGL is the cause.
+* Operating system: 
+  * Windows: 7, 8 or 10
+  * macOS: El Capitan, Sierra or High Sierra
+  * Linux: which distribution and version
+* Simulator:
+  * X-Plane: 10, 11.05 or 11.10 beta version
+  * FSX, FSX SE, P3D V4 or V4.1
+* Add any flight plans or other files if involved in the error
+
+**Please add all steps that are necessary to reproduce the error.**
+
+**If possible send me the log file.**
+
+**Please compress log files using zip to avoid stuffing my mailbox.**
+
+When an error occurs during loading of the scenery library send me the offending file if size permits. The full name and path of the file is shown on top of the error dialog if a specific is the cause.
 
 If you're concerned about privacy when sending log files: The log files will contain all system paths \(like your `Documents` directory\) which will also include your username as a part of the path. They might also contain your computer's name and IP address in your network.
 

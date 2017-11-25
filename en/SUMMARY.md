@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Acknowledgments](ACKNOWLEDGMENTS.md)
 * [Donations](DONATIONS.md)
-* [Features](FEATURES.md)
 * [Installation](INSTALLATION.md)
 * [Quick Overview](QUICKOVERVIEW.md)
 * [First Start](INTRO.md#first-start)
@@ -15,6 +14,7 @@
 * [Map Flight Plan Editing](MAPFPEDIT.md)
 * [Search Dock Window - Airports and Navaids](SEARCH.md)
 * [Search Dock Window - Procedures](SEARCHPROCS.md)
+* [Navigation Databases](NAVDATA.md)
 * [Flight Plan Formats](FLIGHTPLANFMT.md)
 * [Flight Plan Dock Window](FLIGHTPLAN.md)
 * [Flight Plan Procedures](APPROACHES.md)
@@ -43,6 +43,5 @@
 * [Known Problems](APPENDIX.md#known-problems)
 * [How to report a Bug](APPENDIX.md#how-to-report-a-bug)
 * [Glossary](GLOSSARY.md)
-* [Change log](CHANGELOG.md)
 * [License](LICENSE.md)
 

@@ -83,6 +83,8 @@ The table views for the flight plan or airport/navaid search results allows copy
 
 _Little Navmap_ is currently available in English and French. I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available.
 
+You can override the user interface language in the dialog `Options` the the tab `User Interface`.
+
 Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
 
 The language and locale settings can be forced to English in the dialog `Options` on the tab `User Interface` if a translated user interface is not desired.
@@ -117,6 +119,8 @@ Airports in the `Custom Scenery/Global Airports/Earth nav data/apt.dat` file of 
 ### Navdata Updates {#navdata-updates}
 
 _Little Navmap_ comes with a ready to use database from Navigraph including airspaces, SIDs, STARs and more. The database can be updated by using Navigraph's _FMS DATA MANAGER_.
+
+See the chapter [Navigation Databases](NAVDATA.md) for more information.
 
 #### FSX and Prepar3D
 

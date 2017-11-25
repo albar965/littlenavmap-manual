@@ -541,53 +541,19 @@ The program might change a loaded flight plan if you switch between different da
 
 This sub menu also indicating the AIRAC cycle is added if a Navigraph database is found in the database directory.
 
-_Little Navmap_ can use up to two databases in parallel: One created by reading the simulator scenery and one as delivered by Navigraph.
-
-You can choose between three display modes as shown below.
+See the chapter [Navigation Databases](NAVDATA.md) for more information about these databases and the three different display modes shown below.
 
 ##### Use Navigraph for all Features {#navigraph-all}
 
 Completely ignores the simulator database and takes all information from the Navigraph database.
 
-Note that airport information is limited in this mode. This means that aprons, taxiways, parking positions and runway surface information is not available. Additionally, smaller airports might be missing.
-
-An advantage of this mode is that approach procedures always match the airport runway layout.
-
 ##### Use Navigraph for Navaids and Procedures {#navigraph-navaid-proc}
 
 This mode blends navaids and more from the Navigraph database with the simulator database. This affects the map display, all information and and all search windows.
 
-The following features are taken from the simulator database:
-
-* Airports \(also `Search` dock window, tab `Airport`\)
-* Aprons
-* Taxiways
-* Parking positions
-* COM frequencies
-* ILS
-
-The following features are taken from the Navigraph database:
-
-* Navaids \(waypoints/intersections, VOR, NDB, marker\). This affects:
- * `Search` dock window, tab `Navaid`
- * Flight plan calculation
- * Route Description
-* Procedures \(approaches, SIDs and STARs. This affects:
- * `Search` dock window, tab `Procedures`
- * Loading and display of procedures from flight plans.
-* Airways
-* Airspaces
-
-**_Little Navmap_ ignores any mismatches between procedures and runways due to airport updates and will not display a warning.
-Update an airport using payware or freeware scenery if you find that an approach or departure procedure does not start at a runway end of an airport.**
-
-![Approach Procedure Mismatch](../images/procedure_mismatch.jpg "Approach Procedure Mismatch")
-
-_**Picture above:** An extreme example for runway/procedure mismatch. The approach from the Navigraph database cycle 1707 ends at the not visible runway 09 while the outdated scenery from FSX shows the airport at the wrong position. EDVK was rebuild north of Calden in 2013. The OpenStreetMap backgound shows the new airport._
-
 ##### Do not use Navigraph Database {#navigraph-none}
 
-Completely ignores the Navigraph database and shows only information read from the simulator scenery.
+Ignores the Navigraph database and shows only information read from the simulator scenery.
 
 #### Show Database Files {#show-database-files}
 
