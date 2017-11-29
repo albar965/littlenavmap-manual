@@ -2,7 +2,7 @@
 
 ### General {#procedures-general}
 
-Departure and arrival procedures will be used when flying an airliner but also smaller aircraft have to use at least an approach procedure at their destination when flying IFR.  
+Departure and arrival procedures will be used when flying an airliner but also smaller aircraft have to use at least an approach procedure at their destination when flying IFR.
 Flight simulator stock data provides only approaches and transitions. SIDs and STARs are not available. These can be added by navdata updates.
 
 An airline flight containing all variations can use the following procedures or segments:
@@ -27,7 +27,7 @@ A small aircraft IFR flight can use the following procedures or segments:
 
 Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure \(although the SID may be empty and consist only of a transition\). If you delete a procedure from the flight plan its transition will be deleted too.
 
-Procedure information is saved together with a flight plan as an annotation in the PLN file and will be restored by _Little Navmap_ when loading the flight plan.  
+Procedure information is saved together with a flight plan as an annotation in the PLN file and will be restored by _Little Navmap_ when loading the flight plan.
 Procedure waypoints are not saved in the flight plan since the PLN format does not support all the different leg types and the flight simulator would not be able to display it correctly. Select the approach in your GPS or FMC if you need it there.
 
 ### Inserting a Procedure into a Flight Plan {#procedures-insert}

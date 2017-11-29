@@ -64,7 +64,7 @@ Store FMS files into the `Output/FMS plans` directory inside the X-Plane directo
 
 #### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
 
-Exports the current flight plan as a FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan. 
+Exports the current flight plan as a FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan.
 
 See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 
@@ -82,7 +82,7 @@ See also [Flight Plan Formats](FLIGHTPLANFMT.md).
 
 #### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Export Flight Plan as X-Plane FMS 3 {#export-flight-plan-as-fms3}
 
-Saves the flight plan using the older X-Plane FMS 3 format which is limited but can be loaded by X-Plane 10 and X-Plane 11.05. A warning dialog is shown if any unsupported features are detected in the current flight plan. 
+Saves the flight plan using the older X-Plane FMS 3 format which is limited but can be loaded by X-Plane 10 and X-Plane 11.05. A warning dialog is shown if any unsupported features are detected in the current flight plan.
 
 See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 
@@ -118,7 +118,7 @@ Neither procedures nor their respective waypoints are included in the exported f
 
 ##### Export Flight Plan as Majestic Dash FPR {#export-flight-plan-as-fpr}
 
-Exports the current flight plan for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints. 
+Exports the current flight plan for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints.
 
 The flight plan has to be saved to `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\nav\routes`.
 
@@ -142,7 +142,7 @@ Location of the file depends on aircraft type.
 
 Exports the current flight plan into a GPS Exchange Format file which can be read by Google Earth and most other GIS applications.
 
-The flight plan is exported as a route and the flown aircraft trail as a track including simulator time and altitude. 
+The flight plan is exported as a route and the flown aircraft trail as a track including simulator time and altitude.
 
 The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
 
@@ -160,7 +160,7 @@ Removes all loaded KML files from the map.
 
 #### ![Offline](../images/icons/offline.png "Offline") Work Offline {#work-offline}
 
-Stops loading of map data from the Internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.  
+Stops loading of map data from the Internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
 A red `Offline.` indication is shown in the status bar if this mode is enabled.
 
 You should restart the application after going online again.
@@ -201,7 +201,7 @@ Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Edi
 
 #### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") New Flight Plan from Route Description {#new-flight-plan-from-description}
 
-Opens a dialog with the route description of the current flight plan that also allows to modify the current flight plan or enter a new one.  
+Opens a dialog with the route description of the current flight plan that also allows to modify the current flight plan or enter a new one.
 [Flight Plan from Route Description](ROUTEDESCR.md) gives more information about this topic.
 
 #### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copy Flight Plan Route to Clipboard {#flight-plan-route-clipboard}
@@ -497,7 +497,7 @@ The size of the trail is limited for performance reasons. Points will be removed
 
 Shows AI and multiplayer aircraft or ships on the map. Multiplayer vehicles can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
 
-Note that ship traffic is not available and AI aircraft information is limited in X-Plane. 
+Note that ship traffic is not available and AI aircraft information is limited in X-Plane.
 
 A click on the AI aircraft or ship shows more information in the `Simulator Aircraft` dock window in the tab `AI / Multiplayer`.
 
@@ -664,7 +664,7 @@ See [Checking for Updates](UPDATE.md) for more information.
 The statusbar shows various indications \(from left to right\):
 
 * Last action or short help to explain a menu item or toolbar button.
-* Indicator that shows airport types, airspaces, navaids or AI vehicles currently visible on the map. The tooltip gives more details. 
+* Indicator that shows airport types, airspaces, navaids or AI vehicles currently visible on the map. The tooltip gives more details.
   * A red warning message `Too many objects` will be shown if too many objects are displayed on the map due to too high a detail level. The map display will be incomplete if this happens.
   * A red `Database empty` message will be shown if the currently selected database has no content and needs to be loaded.
 * Connection status for a local or remote connection. The tooltip gives more details about the status like the hostname for remote connections.
@@ -677,7 +677,7 @@ The statusbar shows various indications \(from left to right\):
   * `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
   * `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
   * `Incomplete.`: Download failed. Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region or if you zoom in too close when using certain online maps.
-* Zoom distance \(viewpoint to earth surface\) in nautical miles or kilometers. 
+* Zoom distance \(viewpoint to earth surface\) in nautical miles or kilometers.
 * Cursor position on map in degrees/minutes/seconds or decimal degrees latitude and longitude depending on selected unit in the dialog `Options`. Also shows the ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")

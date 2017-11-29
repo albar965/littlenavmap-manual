@@ -39,7 +39,7 @@ AI and multiplayer aircraft on ground are shown only on small zoom distances to 
 
 On the lowest zoom distance all aircraft are drawn to scale as are the parking spots which means you can easily check if your aircraft fits on an apron, parking spot or taxiway.
 
-A yellow wind arrow and labels for the situation around the user aircraft can be displayed on the  
+A yellow wind arrow and labels for the situation around the user aircraft can be displayed on the
 top center of the map. The displayed labels for aircraft can be configured in the dialog `Options` on tab `Map Display`. No labels are shown for ship traffic.
 
 See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
@@ -120,7 +120,7 @@ See the [Nav Map Legend](LEGEND.md#map-marks) for details on measurement lines.
 
 A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is slightly longer than the great circle route.
 
-The course for a rhumb line is indicated in degrees magnetic and true \(`°M`, `°T` or `°M/T` if bot h values are equal\). 
+The course for a rhumb line is indicated in degrees magnetic and true \(`°M`, `°T` or `°M/T` if bot h values are equal\).
 
 The magnetic declination to calculate the magnetic course will be taken from the global `magdec.bgl` file at the origin of the measurement.
 

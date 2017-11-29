@@ -51,7 +51,7 @@ The first number in the second line is the file version. Here it is `1100`.
 *Little Navmap* can read the following X-Plane scenery files:
 
 * **Airports \(**`apt.dat`**\):** Version 850 up to 1100. This covers X-Plane 10 airports and older add-on scenery. Newer files than 1100 might work but are not tested.
-* **Navdata \(**`earth_awy.dat`**, **`earth_fix.dat`** and **`earth_nav.dat`**\):** Version 850 up to 1100. This excludes X-Plane 10 navdata files. Newer files than 1100 might work but are not tested. 
+* **Navdata \(**`earth_awy.dat`**, **`earth_fix.dat`** and **`earth_nav.dat`**\):** Version 850 up to 1100. This excludes X-Plane 10 navdata files. Newer files than 1100 might work but are not tested.
 * **Procedures \(**`ICAO.dat`** in the **`CIFP`**directory\):** All procedures from X-Plane 11.
 * **Airspaces \(**`*.txt`**\):** The included `usa.txt` and all files in OpenAir format. See next chapter for more information.
 
@@ -59,7 +59,7 @@ Additionally the files `user_fix.dat` and `user_nav.dat` in the X-Plane director
 
 ### X-Plane Airspaces {#load-scenery-library-dialog-xp-airspaces}
 
-All files in [OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp) will be loaded when reading the X-Plane scenery library. 
+All files in [OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp) will be loaded when reading the X-Plane scenery library.
 
 You can also copy airspaces from a present FSX or Prepar3D database if you own these simulators. See [Copy Airspaces to X-Plane Database](MENUS.md#copy-airspaces-to-xplane).
 

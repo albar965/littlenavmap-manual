@@ -44,7 +44,7 @@ The center for the distance search is highlighted by a ![Distance Search Symbol]
 
 To restrict the search further you can select a direction \(North, East, South and West\).
 
-Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria. 
+Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 

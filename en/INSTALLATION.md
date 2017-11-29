@@ -35,21 +35,21 @@ _**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86
 
 ### macOS
 
-Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder. 
+Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
 
 ### Linux
 
-Extract the tar archive to any place and use the `littlenavmap.sh` shell script to start the program from a terminal: 
+Extract the tar archive to any place and use the `littlenavmap.sh` shell script to start the program from a terminal:
 
 `bash ./littlenavmap.sh`
 
 ### X-Plane
 
-*Little Navmap* can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well. 
+*Little Navmap* can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well.
 
 The *Little Xpconnect* plugin is included in the *Little Navmap* archive but can also be downloaded separately. See the included `README.txt` in the `Little Xpconnect` directory for installation instructions.
 
-The plugin 64-bit only and is available for Windows, macOS and Linux. 
+The plugin 64-bit only and is available for Windows, macOS and Linux.
 
 ### Additional Programs
 

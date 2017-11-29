@@ -31,7 +31,7 @@ the selected airport:
 
 * `Station`: The airport has a weather station. This is the most precise weather indication.
 * `Nearest`: The clicked airport has no weather station and the nearest weather was fetched. The ident of the nearest station is shown in the METAR and on the decoded weather tab. Note that the nearest weather station is not necessarily an airport.
-* `Interpolated` \(Not for X-Plane\): The weather is interpolated by the flight simulator using the three nearest stations. This is usually the only option available on airports that are far away from the user aircraft. The ident of the clicked airport is used in the METAR report for this kind of weather report. 
+* `Interpolated` \(Not for X-Plane\): The weather is interpolated by the flight simulator using the three nearest stations. This is usually the only option available on airports that are far away from the user aircraft. The ident of the clicked airport is used in the METAR report for this kind of weather report.
 
 The flight simulator weather is updated every 15 seconds to catch changes in the weather theme.
 
@@ -50,9 +50,9 @@ The `current_wx_snapshot.txt` and `activeflightplanwx.txt` files are loaded and 
 information display if necessary.
 
 You can also select the `current_wx_snapshot.txt` file manually. In that case the
-METARs from this file are displayed for all installed flight simulators. The `activeflightplanwx.txt` will be loaded from the same directory. 
+METARs from this file are displayed for all installed flight simulators. The `activeflightplanwx.txt` will be loaded from the same directory.
 
-Manual file selection can also be useful if a new _Active Sky_ version is not supported by _Little Navmap_ yet. 
+Manual file selection can also be useful if a new _Active Sky_ version is not supported by _Little Navmap_ yet.
 
 Departure and destination weather will be displayed if a flight plan is loaded into one of the
 _Active Sky_ programs. A suffix `Destination` or `Departure` will indicate the usage of Active Sky flight plan weather

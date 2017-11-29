@@ -1,6 +1,6 @@
 ## First Start {#first-start}
 
-_Little Navmap_ will copy and prepare the included Navigraph database on first startup. See [Navigraph](MENUS.md/#navigraph) for more information about the integration.
+_Little Navmap_ will copy and prepare the included Navigraph database on the first startup. See [Navigraph](MENUS.md/#navigraph) for more information about the integration.
 
 The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown once the preparation is finished. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database.
 
@@ -14,9 +14,9 @@ You can also go directly to the [Scenery Library Dialog](SCENERY.md#load-scenery
 
 One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
 
-**It is recommended to have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.**
+**I recommended to have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.**
 
-**See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navma* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.**
+**See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navmap* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.**
 
 ## General {#general-remarks}
 
@@ -63,7 +63,7 @@ Most dialogs and some dock windows show help buttons ![Help](../images/icons/hel
 
 #### Window Title
 
-The main window title indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name and a trailing `*` if the flight plan has been changed. 
+The main window title indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name and a trailing `*` if the flight plan has been changed.
 
 A `N` will be appended if the Navigraph database is used:
 
@@ -73,7 +73,7 @@ A `N` will be appended if the Navigraph database is used:
 
 #### Copy and Paste
 
-Almost all dialogs, text labels and all information windows in _Little Navmap_ allow copy and paste. 
+Almost all dialogs, text labels and all information windows in _Little Navmap_ allow copy and paste.
 
 You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it into the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons. This can be helpful to report errors.
 
@@ -97,14 +97,14 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 
 ### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
 
-`Highlighted text` is used to denote window, menu, button, file or directory names.  
+`Highlighted text` is used to denote window, menu, button, file or directory names.
 See the [Glossary](GLOSSARY.md) for explanations of common terms in this manual.
 
 ### Rating {#rating}
 
-Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(`Empty Airport`\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab. 
+Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(`Empty Airport`\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab.
 
-The criteria below are used to calculate the rating. Each item gives one star:  
+The criteria below are used to calculate the rating. Each item gives one star:
 
   1. Add-on \(or 3D for X-Plane\)
   2. Parking positions \(ramp or gate\)
@@ -128,7 +128,7 @@ See the chapter [Navigation Databases](NAVDATA.md) for more information.
 
 #### X-Plane
 
-*Little Navmap* will use any navdata updates that are installed in the directory `Custom Data`. Any older updates installed in the GPS directories are not used. 
+*Little Navmap* will use any navdata updates that are installed in the directory `Custom Data`. Any older updates installed in the GPS directories are not used.
 
 User defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
 
@@ -140,7 +140,7 @@ The calibrated magnetic declination of a VOR may differ from the actual declinat
 
 #### FSX and Prepar3D
 
-The declination used to calculate the magnetic course is taken from the `magdec.bgl` file in the scenery database. 
+The declination used to calculate the magnetic course is taken from the `magdec.bgl` file in the scenery database.
 
 Updates for this file are available here: [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
 

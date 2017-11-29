@@ -11,7 +11,7 @@ Note that the installation still has to be done manually.
 The dialog showing available updates contains a change log, various other messages and one or more download links.
 
 #### Ignore this Update
-Pressing this button will put the shown version on a black list. You will not see any reminders for this version again but for newer versions. 
+Pressing this button will put the shown version on a black list. You will not see any reminders for this version again but for newer versions.
 
 This button is not visible when checking manually.
 
@@ -19,7 +19,7 @@ Note that manually checking for updates ignore the black listed updates.
 
 #### Remind me Later
 
-Dismisses the dialog. You will be notified again on next startup depending on selected frequency. You can also press `Esc` to trigger this action. 
+Dismisses the dialog. You will be notified again on next startup depending on selected frequency. You can also press `Esc` to trigger this action.
 
 This button is not visible when checking manually.
 
@@ -30,9 +30,9 @@ _**Picture above:** Update notification dialog showing an available beta version
 ### Options
 
 #### Check for Updates:
-`Daily`, `Weekly` or `Manual`. 
+`Daily`, `Weekly` or `Manual`.
 
-Select `Main Menu` -&gt; `Help` -&gt; `Check for Updates` to search manually for new versions. 
+Select `Main Menu` -&gt; `Help` -&gt; `Check for Updates` to search manually for new versions.
 
 Note that the daily or weekly check is only done when starting the program.
 

@@ -1,6 +1,6 @@
 # Navigation Databases
 
-_Little Navmap_ can use up to two databases in parallel: 
+_Little Navmap_ can use up to two databases in parallel:
 
 1. **Simulator database:** Created by reading the scenery library of FSX, P3D or X-Plane.
 2. **Navigation database:** Provided by Navigraph. Does not have to be compiled and can be updated by the Navigraph _FMS Data Manager_.

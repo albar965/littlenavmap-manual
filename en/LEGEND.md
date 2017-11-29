@@ -11,7 +11,7 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | Symbol | Description |
 | --- | --- |
 | ![Home](../images/legend/home.png "Home") | Center of the home position. |
-| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches. 
+| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches.
 | ![Flight Plan](../images/legend/route_leg.png "Flight Plan") | Flight plan with distance, direction and magnetic course at each leg. |
 | ![Flight Plan Procedure](../images/legend/route_procedure_leg.png "Flight Plan Procedure") | Flight plan procedure leg with the same information as above.
 | ![Active Leg](../images/legend/activesegment.png "Active Leg") | Active flight plan leg |

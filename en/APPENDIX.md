@@ -46,7 +46,7 @@ MapQueryTaxipathCache=100
 * ** Program starts slowly:** This can happen if a distance search is enabled in one of the search tabs. The search is executed at each start. Simply disable the distance search or reset the search options to avoid the slow startup.
 * **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
 * **Zoom can be too fast when using a touchpad** with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
-* **side-by-side configuration error**: You are running _Little Navmap_ on a computer without simulator \(i.e. no SimConnect\) installation if you get this error. Use `littlenavmap-nosimconnect.exe` instead which provides all functionality except direct connection and scenery database loading. 
+* **side-by-side configuration error**: You are running _Little Navmap_ on a computer without simulator \(i.e. no SimConnect\) installation if you get this error. Use `littlenavmap-nosimconnect.exe` instead which provides all functionality except direct connection and scenery database loading.
  **Note: **`littlenavmap-nosimconnect.exe`** is not used anymore as of *Little Navmap* version 1.4.4. You can use **`littlenavmap.exe`** on all computers no matter if SimConnect is installed or not.**
 * **Search shows no result or unexpected results:** Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
 * **Search or flight plan tables shows strange column names like **`airport_id`** or others:** This can happen if the program is updated. Use `Reset View` in the context menu of the result table.
@@ -87,7 +87,7 @@ If something goes wrong send me any involved files like KML, PLN or BGL \(if cop
 
 **Add all necessary information:**
 
-* Operating system: 
+* Operating system:
   * Windows: 7, 8 or 10
   * macOS: El Capitan, Sierra or High Sierra
   * Linux: which distribution and version

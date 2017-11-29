@@ -53,7 +53,7 @@ For X-Plane you also have to install the *Little Xpconnect* plugin. See the file
 
 #### Start _Little Navconnect_ on the Flying Computer {#connect-start-navconnect}
 
-_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ \(`littlenavconnect.exe`\) on the flying computer and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the flying  computer. You can use the IP address or the hostname. 
+_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ \(`littlenavconnect.exe`\) on the flying computer and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the flying  computer. You can use the IP address or the hostname.
 
 _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have Ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. Also make sure to set up the Windows firewall properly to allow communication between `littlenavmap.exe` and `littlenavconnect.exe` on both computers.
 
@@ -79,7 +79,7 @@ Now do the following after opening the dialog:
 6. Check the value for the port. `51968` is the default value and does not need to be changed usually.
 7. Click connect. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
 
-Establishing a connection can take some time, depending on your network. The aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. You will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window if no flight is loaded yet \(i.e. the simulator still shows the opening screen\). 
+Establishing a connection can take some time, depending on your network. The aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. You will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window if no flight is loaded yet \(i.e. the simulator still shows the opening screen\).
 
 Note that it sometimes can take a while until an error is shown if you used the wrong values for hostname or port.
 
