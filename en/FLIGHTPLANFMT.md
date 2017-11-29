@@ -15,18 +15,18 @@ The table below shows the capabilities of _Little Navmap_ and the supported flig
 
 | Format | Read | Write | Airways | VFR/ IFR | User Wpt. Names | Dep. Parking | Cruise Alt. | Ground speed | Proc. |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| FSX PLN annot. | X | X | X | X | X | X | X | X | X |
-| FSX PLN | X | X | X | X | X | X | X | 0 | 0 |
-| FS9 PLN clean | X | 0 | X | X | X | X | X | 0 | 0 |
-| X-Plane FMS 11 | X | X | X | 0 | X | 0 | X | 0 | X |
-| X-Plane FMS 3 | X | X | 0 | 0 | X | 0 | X | 0 | 0 |
+| FSX PLN annot. | X | X | X | X | X | X | X | X | X |
+| FSX PLN | X | X | X | X | X | X | X | 0 | 0 |
+| FS9 PLN clean | X | 0 | X | X | X | X | X | 0 | 0 |
+| X-Plane FMS 11 | X | X | X | 0 | X | 0 | X | 0 | X |
+| X-Plane FMS 3 | X | X | 0 | 0 | X | 0 | X | 0 | 0 |
 | FLP | X | X | X | 0 | 0 | 0 | 0 | 0 | X |
 | Garmin GTN GFP | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
 | PMDG RTE | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
 | TXT | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
-| Majestic Dash FPR [^1] | 0 | X | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| IXEG 737 FPL | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
-| Flight Factor corte.in | 0 | X | X | 0 | 0 | 0 | X | 0 | X |
+| Majestic Dash FPR [^1] | 0 | X | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| IXEG 737 FPL | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
+| Flight Factor corte.in | 0 | X | X | 0 | 0 | 0 | X | 0 | X |
 | GPX | 0 | X | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 Procedure waypoints are excluded from all file formats except GPX. You have to use the GPS or FMS in the simulator to select procedures.
@@ -134,7 +134,7 @@ The flight plan has to be saved to `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\
 
 Note that the FMC in the Dash will show invalid coordinates when you press `INFO` on a waypoint or airport. The flight plan, navigation and autopilot are not affected otherwise.
 
-### FPL \(\IXEG Boeing\) {#flight-plan-formats-fpl}
+### FPL \(IXEG Boeing\) {#flight-plan-formats-fpl}
 
 Exports the current flight plan as a FPL file usable by the IXEG Boeing 737. The format is the same as TXT but with a different file extension.
 
