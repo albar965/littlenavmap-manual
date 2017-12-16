@@ -6,28 +6,30 @@ The program uses different `Save as ...` file dialogs instead of just one. This 
 
 So, there is no need to jump between the FSX flight plan directory, the P3D flight plan directory and the X-Plane FMS output directory.
 
-Note the difference between `Save Flight Plan as ...` and `Export Flight Plan as ...`: Export does not change the current  
+Note the difference between `Save Flight Plan as ...` and `Export Flight Plan as ...`: Export does not change the current
 file name while `Save as ...` does.
 
 ### Feature Table {#flight-plan-formats-feature}
 
 The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(X = supported, 0 = not supported\):
 
-| Format | Read | Write | Airways | VFR/ IFR | User Wpt. Names | Dep. Parking | Cruise Alt. | Ground speed | Proc. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| FSX PLN annot. | X | X | X | X | X | X | X | X | X |
-| FSX PLN | X | X | X | X | X | X | X | 0 | 0 |
-| FS9 PLN clean | X | 0 | X | X | X | X | X | 0 | 0 |
-| X-Plane FMS 11 | X | X | X | 0 | X | 0 | X | 0 | X |
-| X-Plane FMS 3 | X | X | 0 | 0 | X | 0 | X | 0 | 0 |
-| FLP | X | X | X | 0 | 0 | 0 | 0 | 0 | X |
-| Garmin GTN GFP | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
-| PMDG RTE | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
-| TXT | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
-| Majestic Dash FPR [^1] | 0 | X | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| IXEG 737 FPL | 0 | X | X | 0 | 0 | 0 | 0 | 0 | 0 |
-| Flight Factor corte.in | 0 | X | X | 0 | 0 | 0 | X | 0 | X |
-| GPX | 0 | X | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Format                 | Read | Write | Airways | VFR/ IFR | User Wpt. Names | Dep. Parking | Cruise Alt. | Ground speed | Proc. |
+| ---                    | ---  | ---   | ---     | ---      | ---             | ---          | ---         | ---          | ---   |
+| FSX PLN annot.         | X    | X     | X       | X        | X               | X            | X           | X            | X     |
+| FSX PLN                | X    | X     | X       | X        | X               | X            | X           | 0            | 0     |
+| FS9 PLN clean          | X    | 0     | X       | X        | X               | X            | X           | 0            | 0     |
+| X-Plane FMS 11         | X    | X     | X       | 0        | X               | 0            | X           | 0            | X     |
+| X-Plane FMS 3          | X    | X     | 0       | 0        | X               | 0            | X           | 0            | 0     |
+| FLP                    | X    | X     | X       | 0        | 0               | 0            | 0           | 0            | X     |
+| Reality XP GNS FPL     | 0    | X     | 0       | 0        | X               | 0            | 0           | 0            | 0     |
+| Reality XP GTN GFP     | 0    | X     | X       | 0        | X[^2]           | 0            | 0           | 0            | X     |
+| Flight1 GTN            | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
+| PMDG RTE               | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
+| TXT                    | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
+| Majestic Dash FPR [^1] | 0    | X     | 0       | 0        | 0               | 0            | 0           | 0            | 0     |
+| IXEG 737 FPL           | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
+| Flight Factor corte.in | 0    | X     | X       | 0        | 0               | 0            | X           | 0            | X     |
+| GPX                    | 0    | X     | 0       | 0        | 0               | 0            | 0           | 0            | 0     |
 
 Procedure waypoints are excluded from all file formats except GPX. You have to use the GPS or FMS in the simulator to select procedures.
 
@@ -89,16 +91,38 @@ You can load these files into the X-Plane FMS including airway information. Proc
 
 Store these files into the `Output/FMS plans` directory inside the X-Plane directory if you want to use them in X-Plane.
 
-### GFP \(Garmin\) {#flight-plan-formats-gfp}
+
+### FPL \(Reality XP Garmin GNS\) {#flight-plan-formats-rxpgns}
+
+Flight plan format as FPL file usable by the _Reality XP GNS 530W/430W V2_.
+
+This file format can only be exported. Reading is not supported.
+
+See [below](#garmin-notes) for information on problems when exporting flight plan data for the GNS.
+
+The default directory to save the flight plans for the GNS units is
+`C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
+for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+
+### GFP \(Reality XP Garmin GTN\) {#flight-plan-formats-rxpgtn}
+
+Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_.
+
+This file format can only be exported. Reading is not supported.
+
+See [below](#garmin-notes) for information on problems when exporting flight plan data for the GTN.
+
+The default directory to save the flight plans for the GNS units is
+`C:\ProgramData\Garmin\Trainers\GTN\FPLN`
+for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+
+### GFP \(Flight1 Garmin GTN\) {#flight-plan-formats-gfp}
 
 This is the flight plan format used by the _Flight1 GTN 650/750_.
 
 This file format can only be exported. Reading is not supported.
 
-Note that any missing waypoints will be displayed as locked in the unit which will happen  
-more often if the AIRAC cycles do not match between _Little Navmap_ and the GTN.
-
-It is easy to remove locked waypoints within the GTN to enable the flight plan to be activated. Refer to the documentation for the _Flight1 GTN 650/750_.
+See [below](#garmin-notes) for information on problems when exporting flight plan data for the GTN.
 
 The default directories to save the flight plans for the GTN units are:
 
@@ -163,5 +187,24 @@ The flight plan is embedded as a route and the flown aircraft trail as a track i
 
 The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
 
-[^1]: The FPR format does allow saving of airways and procedures but this will be implemented in a future release of _Little Navmap_.
+## Notes about the Garmin Formats GFP and FPL {#garmin-notes}
 
+Various problems can appear when reading exported flight plans into the Garmin units. 
+Most of these are a result of the Garmin navigation database which uses data of an older AIRAC cycle \(mostly 1611\).
+Updated simulator or add-on databases \(like the one in _Little Navmap_\) can use the latest navdata or an old one from FSX or P3D stock data. X-Plane 11.10 stock navdata is currently based on 1611.
+
+Any waypoints, airways or procedures that are removed, added or renamed over time can cause locked waypoints or other messages when reading a flight plan into the GNS or GTN.
+
+It is easy to remove locked waypoints within the GNS or GTN to enable the flight plan to be activated. Refer to the documentation of the Garmin unit.
+
+_Little Navmap_ allows to change the Garmin export to replace all waypoints with user defined waypoints to avoid locking. While this is a sufficient approach to avoid the locked waypoints it comes with a few limitations:
+
+* Departure and destination airport are not saved as user defined waypoints. These have to exist in the Garmin navigation database.
+* Navaid information like frequencies cannot be displayed since the waypoint cannot be related to the radio navaid.
+* Procedures like SID and STAR cannot be saved with the flight plan and have to be selected manually.
+* The GTN \(not the GNS\) changes all names to a generic `USERWPT...` scheme.
+
+The export of user defined waypoints can be enabled in the options dialog on tab `Flight Plan`.
+
+[^1]: The FPR format does allow saving of airways and procedures but this will be implemented in a future release of _Little Navmap_.
+[^2]: User defined waypoints will be renamed when loading into the GTN.
