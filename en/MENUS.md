@@ -90,13 +90,13 @@ This export function this does not change the current file name and type. Furthe
 
 Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS or FMS.
 
-#### Export Sub-Menu
+#### Export Sub-Menu {#export-submenu}
 
 See [Flight Plan Formats](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
 
 Export functions do not change the current file name and type. Further saves will still use the same file name and format as before.
 
-##### Export Flight Plan to &FPL for the Reality XP GNS {#save-flight-plan-as-rxpgns}
+##### Export Flight Plan to FPL for the Reality XP GNS {#save-flight-plan-as-rxpgns}
 
 Save flight plan as FPL file usable by the _Reality XP GNS 530W/430W V2_.
 
@@ -108,7 +108,7 @@ for all simulators. The directory will be created automatically by _Little Navma
 
 See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
 
-##### Export Flight Plan as &GFP for Reality XP GTN {#save-flight-plan-as-rxpgtn}
+##### Export Flight Plan as GFP for Reality XP GTN {#save-flight-plan-as-rxpgtn}
 
 Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_. This format allows to save procedures and airways.
 
