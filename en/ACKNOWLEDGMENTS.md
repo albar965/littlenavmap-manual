@@ -11,6 +11,8 @@ A very special thank-you to Roberto S. from Switzerland for his valuable input a
 Thanks to Navigraph for kindly allowing me to include a free AIRAC cycle in the download. Thanks for Richard Stefan for his great support.
 Current AIRAC cycles can be purchased from [Navigraph](http://www.navigraph.com).
 
+A big Thank you! to Jean Luc from [Reality XP](http://www.reality-xp.com) for his great support.
+
 Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind support.
 
 The French translation of the program was done by Patrick JUNG alias Patbest. Thank you!
