@@ -98,7 +98,9 @@ Flight plan format as FPL file usable by the _Reality XP GNS 530W/430W V2_.
 
 This file format can only be exported. Reading is not supported.
 
-See [below](#garmin-notes) for information on problems when exporting flight plan data for the GNS.
+See [below](#garmin-notes) for information on known problems when exporting flight plan data for the GNS.
+
+_Little Navmap_ considers the `GNSAPPDATA` environment variable if set. See the GNS manual for more information.
 
 The default directory to save the flight plans for the GNS units is
 `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
@@ -110,11 +112,19 @@ Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_.
 
 This file format can only be exported. Reading is not supported.
 
-See [below](#garmin-notes) for information on problems when exporting flight plan data for the GTN.
+See [below](#garmin-notes) for information on known problems when exporting flight plan data for the GTN.
 
-The default directory to save the flight plans for the GNS units is
+_Little Navmap_ considers the `GTNSIMDATA` environment variable if set. See the GTN manual for more information.
+
+#### Garmin GTN Trainer 6.41
+
+The default directory to save the flight plans for the GTN units is
 `C:\ProgramData\Garmin\Trainers\GTN\FPLN`
 for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+
+#### Garmin GTN Trainer 6.21
+
+If you're using the trainer version 6.21 then the default path is `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. You have to create this directory manually and then navigate to it in the file dialog when saving. _Little Navmap_ will remember the selected directory.
 
 ### GFP \(Flight1 Garmin GTN\) {#flight-plan-formats-gfp}
 
@@ -190,7 +200,7 @@ The route has departure and destination elevation and cruise altitude set for al
 ## Notes about the Garmin Formats GFP and FPL {#garmin-notes}
 
 Various problems can appear when reading exported flight plans into the Garmin units. 
-Most of these are a result of the Garmin navigation database which uses data of an older AIRAC cycle \(mostly 1611\).
+Most of these are a result of the Garmin navigation database which uses data of an older AIRAC cycle \(mostly 1611 at the time of writing\).
 Updated simulator or add-on databases \(like the one in _Little Navmap_\) can use the latest navdata or an old one from FSX or P3D stock data. X-Plane 11.10 stock navdata is currently based on 1611.
 
 Any waypoints, airways or procedures that are removed, added or renamed over time can cause locked waypoints or other messages when reading a flight plan into the GNS or GTN.

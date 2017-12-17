@@ -112,11 +112,7 @@ See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-no
 
 Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_. This format allows to save procedures and airways.
 
-The default directory to save the flight plans for the GNS units is
-`C:\ProgramData\Garmin\Trainers\GTN\FPLN`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
-
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
+See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes) for information about paths and other remarks.
 
 ##### Export Flight Plan as Garmin GTN GFP {#save-flight-plan-as-gfp}
 
