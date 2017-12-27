@@ -14,9 +14,13 @@ You can also go directly to the [Scenery Library Dialog](SCENERY.md#load-scenery
 
 One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
 
-**I recommended to have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.**
+## Recommended things to do after installing {#things-to-do-after-installing}
 
-**See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navmap* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.**
+* The elevation data which is used by default is limited and has a lot of problems. Therefore, I recommend to download and use the offline GLOBE elevation data. See [Options Dialog / Flight Plan Elevation Profile](OPTIONS.md#cache-elevation) for more information.
+* Have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.
+* See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update _Little Navmap_'s navigation data.
+* See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navmap* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.
+
 
 ## General {#general-remarks}
 
@@ -31,6 +35,8 @@ The docked windows can be moved around in their docked position and can be detac
 Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
 
 All docked windows except the map window can be closed if they are not needed. You can even drop docked windows on each other to create a tabbed view. The tabs will appear at the bottom of the dock stack in this case.
+
+Press `Ctrl` before clicking on the window titlebar to prevent a window from going into docked state and keep it floating.
 
 Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
 

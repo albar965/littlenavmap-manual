@@ -7,6 +7,8 @@ _Little Navmap_ can use up to two databases in parallel:
 
 _Little Navmap_ is bundled with a navigation database from a recent AIRAC cycle that is enabled per default.
 
+**See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update **_Little Navmap_**'s navigation data.**
+
 Three display modes can be selected from the menu `Scenery Library` as shown below.
 
 ## Use Navigraph for all Features {#navigraph-all}
