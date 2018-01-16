@@ -12,7 +12,7 @@ can undock the map window to achieve this.
 
 _**Picture above:** Print preview dialog for the current map._
 
-### ![Print Flight Pan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan {#printing-the-flight-plan}
+### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan {#printing-the-flight-plan}
 
 Allows printing of the current flight plan together with departure and destination airport information.
 
