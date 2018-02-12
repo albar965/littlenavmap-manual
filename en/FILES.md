@@ -2,7 +2,7 @@
 
 ### Logs
 
-Log files of _Little Navmap_ for are stored in the directories:
+Log files of _Little Navmap_ are stored in the directories:
 
 * Windows: `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`
 * Linux: `/tmp/abarthel-little_navmap.log`
@@ -35,7 +35,7 @@ See [Customization](CUSTOMIZE.md) for more information.
 
 The disk cache that is used to store all the downloaded online map tile images can be found here:
 
-* Windows `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Windows: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
 * Linux and macOS: `$HOME/.local/share/marble`
 
 The scenery library databases are stored in the directory:
