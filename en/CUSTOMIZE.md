@@ -112,7 +112,7 @@ The icons are:
 
 The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
 
-To change an icon download it from the Github source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/1.4/resources/icons) and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`.
+To change an icon download it from the Github source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/1.8/resources/icons) and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`.
 
 You can use the free vector drawing program [Inkscape](https://inkscape.org) to edit the icons.
 Restart *Little Navmap* to see the changes.
