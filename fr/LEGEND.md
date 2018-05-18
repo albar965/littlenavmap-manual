@@ -27,6 +27,19 @@ Le cap et la route sont suffixes avec `°T` pour le cap vrai ou `°M` pour le ca
 | ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Positions en surbrillance d'un segment de procédure dans l'aperçu. Représentation en petit cercle _depuis_et en grand cercle _jusqu'à_ la position.|
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Le cercle mince montre le navaid recommandé ou apparenté d'un segment d'intervention. Il peut s'agir d'un VORDME pour un segment d'approche en arc DME par exemple..|
 
+
+### Compas Rose des vents
+
+L'épaisseur des lignes peut être modifiée dans la boîte de dialogue `Options` sur l'onglet `Affichage de la Carte`.
+
+| Symbole | Description |
+| --- | --- |
+| ![True North](../images/legend/compass_rose_true_north.png "True North") | Nord réel. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Nord magnétique. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Cercles et marques de distance par rapport à l'aéronef utilisateur s'il est connecté. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | La ligne continue indique la trajectoire de l`aéronef en degrés magnétiques si connecté.. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | La ligne en pointillés indique le cap de l'aéronef s'il est connecté.. |
+
 ### Aéronefs et Navires {#vehicles}
 
 | Symbole| Description |
@@ -36,7 +49,8 @@ Le cap et la route sont suffixes avec `°T` pour le cap vrai ou `°M` pour le ca
 | ![Aircraft Track](../images/legend/aircraft_trackneedle.png) | Aiguille indiquant la trajectoire actuelle de l'aéronef. Le nez de l'aéronef montre le cap. |
 | ![Trail](../images/legend/aircraft_track.png) | Trajectoire de l'aéronef utilisateur s'il est connecté au simulateur de vol. |
 | ![Wind](../images/legend/windpointer.png) | Vent autour de l'aéronef utilisateur avec la direction en degrés magnétique et la vitesse.. |
-| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | Aéronefs AI ou multijoueurs. Les étiquettes varient et peuvent être personnalisées dans `Options` sur l'onglet `Affichage de la Carte`. Le symbole dépend du type d'aéronef \(jet, piston/turbopropulseur, hélicoptère ou navire\). |
+| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png)| Aéronefs AI ou multijoueurs. Les étiquettes varient et peuvent être personnalisées dans `Options` sur l'onglet `Affichage de la Carte`. Le symbole dépend du type d'aéronef \(jet, piston/turbopropulseur, hélicoptère ou navire\). |
+| ![Online on in Flight](../images/icons/aircraft_online.png) ![Online on Ground](../images/icons/aircraft_online_ground.png) | Réseau connecté aéronef/client. Les étiquettes varient et peuvent être personnalisées comme ci-dessus.. |
 
 ### Aérodromes {#airports}
 

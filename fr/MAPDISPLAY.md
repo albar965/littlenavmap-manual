@@ -51,7 +51,7 @@ La sensibilité de l'affichage de l'infobulle peut être ajustée dans la boîte
 
 ![Tooltip](../images/tooltip.jpg "Tooltip") ![Tooltip Airspace](../images/tooltipairspace.jpg "Tooltip Airspace")
 
-_**Images ci-dessus:** Infobulle avec des informations sur un aérodrome et un VOR et un Infobulle avec des informations sur les espaces aériens.._
+_**Image ci-dessus:** Infobulle avec des informations sur un aérodrome et un VOR et un Infobulle avec des informations sur les espaces aériens.._
 
 ### Points Forts {#highlights}
 
@@ -77,7 +77,7 @@ _**Image ci-dessus:** Vue de haut niveau du diagramme de l'aérodrome EDDH._
 
 ![Diagramme de l'Aérodrome](../images/airportdiagram2.jpg "Diagramme de l'Aérodrome")
 
-_**Photo ci-dessus:** Vue détaillée du diagramme de l'aérodrome. Affiche des portes bleues à droite et quelques rampes de stationnement vertes de l'aviation générale à gauche. Le long seuil déplacé de la piste 33 est visible. Les lignes en pointillés jaunes indiquent les trajets en taxi._
+_**Image ci-dessus:** Vue détaillée du diagramme de l'aérodrome. Affiche des portes bleues à droite et quelques rampes de stationnement vertes de l'aviation générale à gauche. Le long seuil déplacé de la piste 33 est visible. Les lignes en pointillés jaunes indiquent les trajets en taxi._
 
 ### Menu Contextuel de la Carte {#map-context-menu}
 
@@ -163,9 +163,11 @@ Cet élément de menu est actif si le clic est à un aérodrome. Il remplacera l
 
 Insère l'objet cliqué dans le segment de plan de vol le plus proche. L'objet sera ajouté avant le départ ou après la destination si la position cliquée est proche des points de fin de plan de vol.
 
-Le nom du navaid ou de l'aérodrome est affiché dans l'élément de menu.
+Le texte ` Position` est remplacé par un nom d'objet si un aérodrome, une navaid ou un point d'utilisateur se trouve à la position cliquée.
 
-Une position définie par l'utilisateur est ajoutée au plan de vol si aucun aérodrome ou navaid est à proximité de la position cliquée.
+Une position de plan de vol définie par l'utilisateur est ajoutée au plan si aucun aérodrome ou navaid n'est proche du point cliqué.
+
+Un point d'utilisateur est converti en une position de plan de vol définie par l'utilisateur s'il est ajouté au plan.
 
 #### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Joindre la position au Plan de Vol {#append-position-to-flight-plan}
 
@@ -175,13 +177,42 @@ Même chose que ` Ajouter une Position au Plan de Vol ` mais ajoutera toujours l
 
 Supprime du plan de vol la position cliquée de l'aérodrome, du navaid ou de l'utilisateur.
 
-#### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Modifier le Nom du Waypoint de l'Utilisateur {#edit-name-of-user-waypoint}
+#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Modifier la Position du Plan de Vol {#edit-name-of-user-waypoint}
 
-Permet de changer le nom d'un waypoint défini par l'utilisateur. La longueur du nom est limitée à 10 caractères.
+Permet de changer le nom ou la position d'un waypoint défini par l'utilisateur.
+
+La longueur du nom est limitée à 10 caractères lors de l'enregistrement dans un fichier PLN. D'autres formats de plan de vol ont des limitations plus fortes sur la longueur et les caractères autorisés.
+
+Vous pouvez également éditer les coordonnées directement au lieu de faire glisser la position du plan de vol \([Modification du Plan de Vol](MAPFPEDIT.md#map-flight-plan-plan-editing)\). 
+
+Voir [Formats des Coordonnées](COORDINATES.md) pour obtenir une liste des formats reconnus par la boîte de dialogue d'édition.
+
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Ajouter un Point Utilisateur {#add-userpoint}
+
+Ajoute un waypoint défini par l'utilisateur aux données utilisateur. Le nouveau point utilisateur est pré-rempli en fonction de l'objet de la carte cliqué. 
+
+Un clic sur un espace cartographique vide crée un point utilisateur de type " Signet " pré-rempli avec l'altitude à la position. Un clic sur un aérodrome ou navaid préfigure l'identifiant, la région, le nom, l'altitude et crée un point d'utilisateur de type `Aérodrome` ou `Waypoint`.
+
+Voir [Ajouter un Point Utilisateur](USERPOINT.md#userpoints-add) pour plus d'informations.
+
+#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Modifier le Point Utilisateur {#edit-userpoint}
+
+Activé uniquement s'il y a un point utilisateur à la position cliquée. Ouvre la boîte de dialogue d'édition.  Voir [Modifier les Points Utilisateur](USERPOINT.md#userpoints-edit).
+
+#### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Déplacer un Point Utilisateur {#move-userpoint}
+
+Activé uniquement s'il y a un point utilisateur à la position cliquée. Permet de déplacer le point utilisateur vers une nouvelle position sur la carte.
+
+Cliquez à gauche pour placer le point utilisateur à la nouvelle position. Cliquez sur le bouton droit de la souris ou appuyez sur la touche d'échappement pour annuler le mouvement et remettre le point d'utilisateur dans son ancienne position.
+
+
+#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Supprimer un Point Utilisateur {#delete-userpoint}
+
+Activé uniquement s'il y a un point utilisateur à la position cliquée. Supprime le waypoint défini par l'utilisateur des données utilisateur après confirmation.
 
 #### ![Show in Search](../images/icons/search.png "Show in Search") Afficher dans la Recherche {#show-in-search}
 
-Affiche l'aéroport ou le navaid le plus proche dans la boîte de dialogue de recherche. Les paramètres de recherche actuels sont réinitialisés.
+Affiche l'aérodrome ou le navaid le plus proche dans la boîte de dialogue de recherche. Les paramètres de recherche actuels sont réinitialisés.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Définir le Centre pour la Recherche à Distance {#set-center-for-distance-search}
 

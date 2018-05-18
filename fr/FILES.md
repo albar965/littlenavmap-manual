@@ -38,13 +38,21 @@ Le cache disque qui est utilisé pour stocker toutes les images téléchargées 
 * Windows `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
 * Linux et macOS: `$HOME/.local/share/marble`
 
-Les bases de données de la bibliothèque de scènes sont stockées dans le répertoire:
+You can delete the cache manually to save space if _Little Navmap_ is not running.
+
+### Databases {#databases}
+
+Plusieurs bases de données sont stockées dans le répertoire :
 
 `...\ABarthel\little_navmap_db`
 
-Il peut y avoir jusqu' à six fichiers en fonction des simulateurs que vous avez installés et des librairies de scènes que vous avez chargées.
-
 Toutes ces bases de données sont des fichiers [SQLite](http://sqlite.org) qui peuvent être visualisés avec par exemple [DB Browser pour SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) si vous êtes intéressé par les bases de données relationnelles.
+
+**Ne pas modifier, déplacer, renommer ou supprimer des bases de données pendant que **_Little Navmap_** est en cours d'exécution.**
+
+#### Scenery Library {#scenery-library}
+
+Le nombre de fichiers dépend des simulateurs que vous avez installés et des bibliothèques de scènes que vous avez chargées.
 
 Les fichiers sont:
 
@@ -57,11 +65,21 @@ Les fichiers sont:
 * `little_navmap_xp11.sqlite`: X-Plane 11
 * `little_navmap_navigraph.sqlite`: Navigraph navdatabase. Il peut s'agir de la base de données incluse ou d'une mise à jour installée par Navigraph _FMS DATA MANAGER_.
 
+#### Données Utilisateurs
+
+Le fichier `little_navmap_userdata.sqlite` contient les waypoints définis par l'utilisateur. 
+
+_Little Navmap_ crée une copie de sauvegarde au démarrage et conserve jusqu'à quatre fichiers de sauvegarde: `little_navmap_userdata_backup.sqlite` vers `little_navmap_userdata_backup.sqlite.3`. Vous pouvez copier ces fichiers dans la base de données originale `little_navmap_userdata.sqlite` si vous avez fait quelque chose de mal.
+
+#### Autres Fichiers de Base de Données
+
 Fichiers supplémentaires comme
 
 * `little_navmap_compiling.sqlite`,
 * `little_navmap_compiling.sqlite-journal`,
-* `little_navmap_temp.sqlite` et
-* `little_navmap_temp.sqlite-journal`
+* `little_navmap_temp.sqlite`,
+* `little_navmap_temp.sqlite-journal`,
+* `little_navmap_onlinedata.sqlite` ou
+* `little_navmap_onlinedata.sqlite-journal`
 
 sont des restes de processus temporaires comme la compilation de la base de données et peuvent être ignorés.

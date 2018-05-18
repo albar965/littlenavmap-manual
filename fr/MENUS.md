@@ -72,7 +72,7 @@ Cette fonction change le type et le nom du fichier actuel, ce qui signifie que t
 
 Stockez les fichiers FLP dans le répertoire `Output/FMS plans` à l'intérieur du répertoire X-Plane si vous voulez le charger dans le FMS.
 
-#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Exporter au format PLN sans attributs {#export-clean-flight-plan}
+#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Exporter au format PLN simple (sans attributs) {#export-clean-flight-plan}
 
 Sauvegarde un plan de vol sans procédure ni annotations de vitesse si les programmes ont des problèmes de lecture des fichiers PLN enregistrés par _Little Navmap_. Cela est rarement nécessaire.
 
@@ -90,7 +90,7 @@ Cette fonction d'exportation ne change pas le nom et le type de fichier actuel. 
 
 Stockez les fichiers FMS dans le répertoire `Output/FMS plans` à l'intérieur du répertoire source X-Plane si vous souhaitez utiliser le plan de vol dans le GPS X-Plane ou FMS.
 
-#### Sous-Menu Exportation {#export-submenu}
+#### Exporter le Plan de Vol vers d'autres Formats (Sous-Menu) {#export-submenu}
 
 Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) pour obtenir des informations plus détaillées sur les formats d'exportation disponibles.
 
@@ -155,6 +155,37 @@ Le fichier sera automatiquement créé sil nexiste pas. Sinon, le plan de vol se
 
 L'emplacement du fichier dépend du type d'aéronef.
 
+##### Exporter Plan de Vol au format FLTPLAN pour iFly {#export-flight-plan-as-ifly}
+
+Sauvegarder le plan de vol au format FLTPLAN pour l'iFly 737NG. Le format ne permet pas de sauvegarder les procédures.
+
+Sauvegarder le fichier dans `FSXP3D\iFly\737NG\navdata\FLTPLAN`.
+
+##### Exporter Plan de Vol pour ProSim {#export-flight-plan-as-prosim}
+
+Ajoute le plan de vol au fichier `companyroutes.xml` pour les simulateurs [ProSim](https://prosim-ar.com) . Le format ne permet pas de sauvegarder les procédures.
+
+Crée un fichier de sauvegarde nommé `companyroutes.xml_lnm_backup` avant de modifier le fichier.
+
+##### Exporter Plan de Vol au format PLN pour BBS Airbus {#export-flight-plan-as-bbs}
+
+Sauvegarder le plan de vol au format PLN pour le Blackbox Simulations Airbus. Le format ne permet pas de sauvegarder les procédures.
+
+Sauvegarder le fichier dans `FSXP3D\BlackBox Simulation\Airbus A330` or `FSXP3D\Blackbox Simulation\Company Routes` depending on aircraft.
+
+##### Exporter Plan de Vol au format UFMC {#export-flight-plan-as-ufmc}
+
+Sauvegarder le plan de vol au format [UFMC](http://ufmc.eadt.eu) . Le format ne permet pas de sauvegarder les procédures.
+
+Sauvegarder le plan de vol dans `XPLANE\Custom Data\UFMC\FlightPlans`.
+
+##### Exporter Plan de Vol au format X-FMC {#export-flight-plan-as-xfmc}
+
+Sauvegarder le plan de vol au format FPL utilisable par [X-FMC](https://www.x-fmc.com). The format does not allow saving of procedures.
+
+Le fichier doit être enregistré dans ce chemin d'accès `XPLANE\Resources\plugins\XFMC\FlightPlans`.
+
+
 ##### Exporter Plan de Vol au format GPX {#export-flight-plan-as-gpx}
 
 Exporte le plan de vol actuel dans un fichier d'échange GPS qui peut être lu par Google Earth et la plupart des autres applications GIS.
@@ -163,7 +194,29 @@ Le plan de vol est exporté sous forme de route et le parcours de l'aéronef est
 
 L'itinéraire a l'altitude de départ et de destination et l'altitude de croisière réglées pour tous les waypoints. Les waypoints de toutes les procédures sont inclus dans le fichier exporté. Notez que les repères de balisage ne permettent pas de reproduire toutes les parties d'une procédure comme les arrêts ou les tours de procédure.
 
-**N'oubliez pas d'effacer le tracé de l'aéronef \([Supprimer Tracé de l'Aéronef](MENUS.md#delete-aircraft-trail)\) avant le vol pour éviter les anciens segments de piste dans le fichier GPX exporté. Ou, désactivez le rechargement du tracé dans la boîte de dialogue d'options de la page **`Démarrer`.
+**N'oubliez pas d'effacer le tracé de l'aéronef \([Supprimer Tracé de l'Aéronef](MENUS.md#delete-aircraft-trail)\) avant le vol pour éviter les anciens segments de piste dans le fichier GPX exporté. Ou, désactivez le rechargement du tracé dans la boîte de dialogue d'options de la page **`Démarrer`**.
+
+##### Afficher le Plan de Vol dans SkyVector
+
+Ouvre le navigateur Web par défaut et affiche le plan de vol en cours dans la fenêtre [SkyVector](https://skyvector.com). Les procédures ne sont pas affichées.
+
+Exemple: [ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C ENBO](https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO). Notez qu'il manque SID et STAR dans SkyVector.
+
+##### Sauvegarder les Waypoints pour les approches et sauvegarder les Waypoints pour SID et STAR
+
+Sauvegarder les waypoints des procédures au lieu de l'information sur les procédures si coché. Cela affecte tous les formats d'exportation et de sauvegarde des plans de vol.
+
+Utilisez cette option si votre simulateur, GPS ou FMC ne prend pas en charge le chargement ou l'affichage des procédures d'approche, SID ou STAR.
+
+Les informations de procédure sont remplacées par des waypoints respectifs qui permettent d'afficher les procédures dans des unités GPS ou FMS limitées.
+
+Sauvegarder les plans de vol avec cette méthode a plusieurs limitations :
+
+* Plusieurs types de segments d'approche comme les prises, les virages et les virages de procédure ne peuvent pas être affichés correctement en utilisant uniquement des waypoints/coordonnées.
+* Les limitations de vitesse et d'altitude ne sont pas incluses dans les segments exportés.
+* Les informations de procédure sont supprimées du plan de vol sauvegardé et ne peuvent pas être rechargées correctement dans _Little Navmap_. Ainsi, vous verrez les waypoints d'un SID ou STAR mais pas les informations détaillées sur la procédure. Vous devez supprimer les waypoints ajoutés et re-sélectionner les procédures après le chargement.
+
+En raison de ces limitations, il est recommandé de sauvegarder une copie du plan de vol avec des informations complètes avant d'activer l'une de ces options.
 
 #### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Ajouter un lieu Google Earth KML {#add-google-earth-kml}
 
@@ -175,7 +228,7 @@ En raison de la variété des fichiers KML, il n'est pas garanti que tous les fi
 
 Supprime tous les fichiers KML chargés de la carte.
 
-#### ![Offline](../images/icons/offline.png "Offline") Travail Hors Connexion {#work-offline}
+#### ![Offline](../images/icons/offline.png "Offline") Travailler Hors Connexion {#work-offline}
 
 Arrête le chargement de données cartographiques à partir dInternet. Ceci affecte  _OpenStreetMap_, _OpenTopoMap_ et tous les autres thèmes de cartes en ligne ainsi que les données délévation.
 
@@ -183,15 +236,15 @@ Si `Hors connexion` un signal rouge est affiché dans la barre détat si ce mode
 
 Vous devez redémarrer l'application après avoir relancé la connexion.
 
-### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Sauver la Carte sous forme d'Image {#save-map-as-image}
+### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Capture d'Écran de la Carte {#save-map-as-image}
 
 Enregistre la vue de la carte actuelle en tant que fichier image. Les formats autorisés sont JPEG, PNG et BMP.
 
-### ![Print Map](../images/icons/printmap.png "Print Map")  Imprimer Carte {#print-map}
+### ![Print Map](../images/icons/printmap.png "Print Map")  Imprimer la Carte {#print-map}
 
 Permet d'imprimer la carte actuelle. Voir [Imprimer la Carte](PRINT.md#printing-the-map)  pour plus d'informations.
 
-### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Imprimer Plan de Vol {#print-flight-plan}
+### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Imprimer le Plan de Vol {#print-flight-plan}
 
 Ouvre une boîte de dialogue d'impression qui vous permet de sélectionner les informations relatives au plan de vol à imprimer. Voir [Imprimer le Plan de Vol de la Carte](PRINT.md#printing-the-flight-plan) pour plus d'informations.
 
@@ -277,7 +330,7 @@ Modifie l'altitude du plan de vol en fonction d'une règle Est/Ouest simplifiée
 
 ### Menu Carte {#map-menu}
 
-#### ![Goto Home](../images/icons/home.png "Goto Home") Retour Position d'Origine {#goto-home}
+#### ![Goto Home](../images/icons/home.png "Goto Home") Retour à la Position d'Origine {#goto-home}
 
 Permet d'accéder à la one de départ définie à l'aide de [Choisir Position d'Origine](MAPDISPLAY.md#set-home) en utilisant la position enregistrée et la distance de zoom Le centre du domicile est mise en évidence par le symbole  ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") .
 
@@ -289,20 +342,11 @@ Allez au point central utilisé pour les recherches de distance. Voir [Définir 
 
 Zoom arrière sur la carte \(si nécessaire\) pour afficher l'ensemble du plan de vol sur la carte.
 
-#### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Centrer Aéronef {#center-aircraft}
+#### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Centrer l'Aéronef {#center-aircraft}
 
 Zoom sur l'aéronef utilisateur s'il est directement connecté à un simulateur de vol ou connecté à distance à l'aide de [Little Navconnect](https://albar965.github.io/littlenavconnect.html) et garde l'aéronef centré sur la carte.
 
 Le centrage de l'avion peut être modifié dans la boîte de dialogue ` Options` de l'onglet `Aéronef Simulateur`.
-
-#### ![Reset Display Settings](../images/icons/centeraircraft.png "Reset Display Settings") Réinitialiser Paramètres d'Affichage {#reset-display-settings}
-
-Réinitialise tous les paramètres d'affichage de la carte par défaut.
-
-![By Reset Affected Settings](../images/resetdisplaysettings.jpg "By Reset Affected Settings")
-
-_**Image ci-dessus:** Tous les boutons des outils de réglage en surbrillance affectés par la `réinitialisation des paramètres 
-d'affichage`._
 
 #### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Supprimer le Tracé de l'Aéronef {#delete-aircraft-trail}
 
@@ -312,6 +356,17 @@ Supprime la trace de l'utilisateur. Il est également supprimé lors de la conne
 
 Saute en avant ou en arrière dans l'historique de la position de la carte. L'historique complet est sauvegardé et restauré au
 démarrage de _Little Navmap_.
+
+### Menu Affichage {#view-menu} 
+
+#### ![Reset Display Settings](../images/icons/centeraircraft.png "Reset Display Settings") Réinitialiser Paramètres d'Affichage {#reset-display-settings}
+
+Réinitialise tous les paramètres d'affichage de la carte par défaut.
+
+![By Reset Affected Settings](../images/resetdisplaysettings.jpg "By Reset Affected Settings")
+
+_**Image ci-dessus:** Tous les boutons des outils de réglage en surbrillance affectés par la `réinitialisation des paramètres 
+d'affichage`._
 
 #### Détails
 
@@ -326,6 +381,175 @@ Augmente ou diminue les détails sur la carte. Plus de détails signifie plus da
 Notez que l'information cartographique sera tronquée si vous choisissez trop de détails. Un message d'avertissement rouge apparaîtra dans la barre d'état si tel est le cas.
 
 Le niveau de détail est affiché dans la barre d'état. La portée est de -5 pour quelques détails à +5 pour la plupart des détails.
+
+#### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force l'Affichage des Aérodromes Supplémentaires {#force-show-addon-airports}
+
+Les aérodromes supplémentaires sont toujours affichés indépendamment des autres paramètres de la carte des aérodromes si cette option est sélectionnée. Ceci permet de ne visualiser que les aérodromes supplémentaires en cochant cette option et en désactivant l'affichage des aérodromes à piste à revêtement dur, souple ou vides.
+
+#### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Afficher les Aérodromes avec des Pistes à revêtement dur {#show-airports-with-hard-runways}
+
+Montrer les aérodromes qui ont au moins une piste avec une surface dure.
+
+#### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Afficher les Aérodromes avec des Pistes à revêtement souple ou en eau {#show-airports-with-soft-runways}
+
+Indiquer les aérodromes qui n'ont que des pistes à revêtement souple ou des pistes en eau. Ce type d'aérodrome peut être caché sur la carte en fonction de la distance de zoom.
+
+#### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Afficher les Aérodromes inoccupés {#show-empty-airports}
+
+Affiche les aérodromes inoccupés. Ce bouton ou élément de menu peut ne pas être visible en fonction des réglages dans la boîte de dialogue ` Options` de l'onglet ` Affichage de la Carte`. L'état de ce bouton est combiné avec les autres boutons de l'aérodrome. Cela signifie, par exemple : Vous devez activer l'affichage d'aérodrome à surface souple et les aérodromes inoccupés pour voir les aéroports inoccupés n'ayant que des pistes souples.
+
+Un aérodrome inoccupé est défini comme un aéroport qui n'a ni parking, ni voies de circulation, ni aires de trafic et qui n'est pas une extension. Ces aérodromes sont traités différemment dans _Little Navmap_ puisqu'ils sont les plus ennuyeux de tous les aérodromes par défaut. Les aérodromes inoccupés sont dessinés en gris et derrière tous les autres aérodromes sur la carte.
+
+Les aérodromes n'ayant que des pistes d'eau sont exclus de cette définition afin d'éviter les dissimulations involontaires.
+
+##### Aérodromes X-Plane et 3D
+
+La fonction peut être étendue aux aérodromes X-Plane qui ne sont pas marqués comme  `3D`. Ceci peut être fait en cochant `Considérer tous les aérodromes X-Plane qui ne sont pas inoccupés en 3D` dans la boîte de dialogue `Options` de l'onglet `Affichage de la Carte` . Tous les aérodromes qui ne sont pas marqués comme `3D` seront affichés en gris sur la carte et peuvent être cachés comme décrit ci-dessus s'ils sont activés.
+
+Un aérodrome est considéré comme étant en 3D s'il est stocké en  `XPLANE/Custom Scenery/Global Airport Scenery/Earth nav data/apt.dat`.
+
+La définition de `3D` arbitraire, cependant. Un aérodrome `3D` peut contenir un seul objet, tel qu'un poteau lumineux ou un cône de circulation, ou il peut s'agir d'un grand aérodrome entièrement construit.
+
+#### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Afficher les Stations VOR {#show-vor-stations}
+
+#### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Afficher les Stations NDB {#show-ndb-stations}
+
+#### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Afficher les Waypoints {#show-waypoints}
+
+#### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Afficher les ILS Feathers {#show-ils-feathers}
+
+#### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Afficher les Jet Airways {#show-jet-airways}
+
+#### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Afficher les Victor Airways {#show-victor-airways}
+
+Affiche ou cache ces installations ou navaids sur la carte. Les navaids peuvent être cachées sur la carte en fonction de la distance de zoom.
+
+#### Espaces Aériens (Airspaces)
+
+##### ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") Afficher les Espaces Aériens {#show-airspaces}
+
+Permet d'activer ou de désactiver l'affichage de tous les espaces aériens en un seul clic. Utilisez les éléments de menu sous celui-ci ou les boutons de la barre d'outils pour afficher ou masquer les différents types d'espace aérien.
+
+La barre d'outils des espaces aériens contient des boutons ayant chacun un menu déroulant qui permet de configurer l'affichage de l'espace aérien comme l'affichage ou le masquage de certains types d'espace aérien. Chaque menu déroulant comporte également une entrée ` Tout` et ` Aucun` pour cocher ou désélectionner tous les types dans le menu.
+
+##### ![ICAO Airspaces](../images/icons/airspaceicao.png "ICAO Airspaces") Espaces Aériens OACI {#icao-airspaces}
+
+Permet la sélection d'espaces aériens de classe A à classe E.
+
+##### ![FIR Airspaces](../images/icons/airspacefir.png "FIR Airspaces") Espaces Aériens FIR {#fir-airspaces}
+
+Permet de sélectionner les espaces aériens de classe F et de classe G ou les régions d'information de vol.
+
+##### ![Restricted Airspaces](../images/icons/airspacerestr.png "Restricted Airspaces") Espaces Aériens Restreints {#restricted-airspaces}
+
+Afficher ou cacher MOA \(zone d'opérations militaires\), espaces aériens restreints, interdits et dangereux.
+
+##### ![Special Airspaces](../images/icons/airspacespec.png "Special Airspaces") Espaces Aériens Spéciaux {#special-airspaces}
+
+Afficher ou masquer les espaces aériens d'alerte, d'alerte et d'entraînement.
+
+##### ![Other Airspaces](../images/icons/airspaceother.png "Other Airspaces") Autres Espaces Aériens {#other-airspaces}
+
+Afficher ou masquer le centre, la tour, le mode C et d'autres espaces aériens.
+
+##### ![Airspace Altitude Limitations](../images/icons/airspacealt.png "Airspace Altitude Limitations") Limitations de l'Altitude de l'Espace Aérien {#airspace-altitude-limitations}
+
+Permet de filtrer l'affichage de l'espace aérien par altitude. Soit au-dessous ou au-dessus de 10 000 pieds ou 18 000 pieds ou seulement les espaces aériens qui se croisent avec l'altitude du plan de vol.
+
+#### Userpoints
+
+Allows to selectively hide or show user defined waypoints by type.
+
+The menu item `Unknown Types` shows or hides all types which do not belong to a known category.
+
+The type `Unknown` ![Unknown](../images/icons/userpoint_Unknown.png "Airspace Altitude Limitations")
+ shows or hides all types which are exactly of category `Unknown`.
+
+See [User defined Waypoints](USERPOINT.md) and [Search Dock Window - Userpoints](USERPOINTSEARCH.md) for more information on user defined waypoints.
+
+#### ![Show Flight Plan](../images/icons/route.png "Show Flight Plan") Afficher Plan de Vol {#show-flight-plan}
+
+Affiche ou masque le plan de vol. Le plan de vol est affiché indépendamment de la distance de zoom.
+#### ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches") Afficher les Approches Manquées {#show-missed-approaches}
+
+Affiche les approches manquées du plan de vol en cours. Cela n'affecte pas l'aperçu dans l'onglet de recherche. `Procédures`.
+
+**Notez que cette fonction modifie l'enchaînement des segments du plan de vol actif:** L'enchaînement du segment actif s'arrêtera si la destination est atteinte et que les approches manquées ne sont pas affichées. Sinon, l'enchaînement se poursuivra avec l'approche manquée et la progression de l'aéronef simulateur montrera plutôt la distance restante jusqu'à la fin de l'approche manquée.
+
+#### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Afficher l'Aéronef {#show-aircraft}
+
+Affiche l'aéronef utilisateur et le garde centré sur la carte s'il est connecté au simulateur. L'aéronef utilisateur est toujours affiché indépendamment de la distance de zoom.
+
+Un clic sur l'aéronef utilisateur montre plus d'informations dans la fenêtre `Aéronef Simulateur`.
+
+Le centrage de l'aéronef est désactivé lorsque l'une des fonctions suivantes est utilisée :
+
+* Double-cliquez sur un tableau ou une carte pour zoomer sur un aérodrome ou un navaid.
+* Menu contextuel `Afficher sur la Carte`.
+* `Retour Position dOrigine` ou `Retour Centre de Recherche à Distance`.
+* Lien `Carte` dans la fenêtre `Informations`.
+* `Afficher Plan de Vol`. Soit manuellement dans un élément de menu, soit après le chargement. 
+* Centrage d'un fichier Google Earth KML/KMZ après le chargement.
+
+Cela permet une inspection rapide d'un aérodrome ou d'un navaid pendant le vol. Pour afficher à nouveau l'aéronef, utilisez `Position de la Carte` et activez à nouveau`Afficher Aéronef`.
+
+#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Afficher le Tracé de l'Aéronef {#show-aircraft-trail}
+
+Affiche le tracé de l`aéronef utilisateur. Le tracé est toujours affiché indépendamment de la distance de zoom. Il est sauvegardé et sera rechargé au démarrage du programme.
+
+La piste est supprimée lors de la connexion à un simulateur de vol ou peut être supprimée manuellement en sélectionnant `Menu Principal` -&gt; `Carte` -&gt; `Effacer le Tracé de l'Aéronef`. Le tracé est également supprimé lorsque l'aéronef utilisateur saute sur une grande distance lors de l'assignation d'un nouvel aérodrome, par exemple.
+
+La taille de la piste est limitée pour des raisons de performance. Les points seront supprimés dès le début si le temps est trop long.
+
+#### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Afficher le Compas  "Rose des Vents" {#show-compass-rose}
+
+Affiche la rose des vents sur la carte qui indique le nord vrai et le nord magnétique. Le cap de l'aéronef et la trajectoire de l'aéronef sont affichés s'ils sont connectés à un simulateur.
+
+La rose est centrée autour de l'aéronef de l'utilisateur si celui-ci est connecté. Sinon, il est centré sur la vue de la carte.
+
+Voir [Compas "Rose des Vents"](COMPASSROSE.md) pour les détails.
+
+#### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") ![Show AI and Multiplayer Ships](../images/icons/boatai.png "Show AI and Multiplayer Ships") Afficher AI et les Aéronefs ou Navires multijoueurs. {#show-map-ai-aircraft}
+
+Affiche AI et les aéronefs ou navires multijoueurs sur la carte. Les véhicules multijoueurs peuvent être affichés à partir de FSCloud, VATSIM ou Steam sessions.
+
+La couleur et la forme de l'icône indique le type d'aéronef et si l'aéronef est au sol \(bordure grise\).
+
+![User Aircraft](../images/icons/aircraft_small_user.png "User Aircraft") Aéronef utilisateur en vol.
+
+![AI or Multiplayer Aircraft](../images/icons/aircraft_small.png "AI or Multiplayer Aircraft") AI ou aéronef multijoueur à partir du simulateur. Cela inclut les aéronefs injectés par les différents clients du réseau en ligne. Un clic sur un aéronef ou un navire AI affiche plus d'informations dans la fenêtre ` Aéronef Simulateur` dans l'onglet ` AI / Multijoueur`.
+
+![Online Multiplayer Aircraft](../images/icons/aircraft_online.png "User Aircraft") Aéronef/client multijoueur à partir d'un réseau en ligne. Voir [Réseaux en Ligne](ONLINENETWORKS.md). Un clic sur l'aéronef en ligne affiche des informations dans la fenêtre `Informations` dans l'onglet `Clients Connectés`.
+
+Notez que le trafic maritime n'est pas disponible et que l'information sur les aéronefs AI est limitée dans X-Plane.
+
+Les véhicules affichés sont limités par le système multijoueur utilisé si _Little Navmap_ n'est pas connecté à un réseau en ligne comme VATSIM ou IVAO. Les aéronefs multijoueurs disparaîtront en fonction de la distance qui les sépare des aéronefs utilisateurs. Pour l'AI dans FSX ou P3D, cela représente actuellement environ 100 milles nautiques ou environ 200 kilomètres.
+
+Les petits navires ne sont générés par le simulateur que dans un petit rayon autour de l'aéronef utilisateur.
+
+_Little Navmap_ limite l'affichage des véhicules AI en fonction de leur taille. Faites un zoom avant pour voir les petits aéronefs ou les navires.
+
+Sur la distance de zoom la plus faible, tous les aéronefs et les navires sont dessinés à l'échelle sur la carte.
+
+Les étiquettes des aéronefs sont obligées d'indiquer, indépendamment du niveau de zoom, les cinq aéronefs AI/multijoueurs les plus proches de l'utilisateur qui se trouvent à une distance de 20 NM et à une altitude de 5000 pieds.
+
+Toutes les icônes d'aéronefs peuvent être personnalisées: [Icônes Utilisateur, AI et Aéronefs Multijoueurs](CUSTOMIZE.md#customize-aircraft-icons).
+
+Un clic sur l'aéronef ou le navire AI affiche plus d'informations dans la fenêtre `Aéronef Simulateur` dans l'onglet `AI / Multijoueur`.
+
+Les véhicules affichés sont limités par le système multijoueur utilisé. Les aéronefs multijoueurs disparaîtront en fonction de la distance qui les sépare des aéronefs utilisateurs. Pour l'AI dans FSX ou P3D, cela représente actuellement environ 100 milles nautiques ou environ 200 kilomètres.
+
+#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Afficher Grille de la Carte {#show-map-grid}
+
+Affiche une grille de latitude/longitude ainsi que la fonction [méridien](https://en.wikipedia.org/wiki/Prime_meridian) et [anti-méridien](http://en.wikipedia.org/wiki/180th_meridian) \(près de la ligne de date\) sur la carte.
+
+#### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Afficher Noms des Pays et Villes {#show-country-and-city-names}
+
+Afficher le pays ville et autres points d'intérêt La disponibilité de ces options dépend du thème de la carte sélectionné . Voir [Thème](MENUS.md#theme).
+
+#### ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading") Afficher Effet de Relief (Ombrage) {#show-hillshading}
+
+Affiche l'ombrage des collines sur la carte. La disponibilité de ces options dépend du thème de carte sélectionné.. Voir [Thème](MENUS.md#theme).
 
 #### Projection {#projection}
 
@@ -413,134 +637,6 @@ Une carte très simple. La carte est incluse dans _Little Navmap_ et a une optio
 
 Une carte très simple incluant l'ombrage grossier des collines et les couleurs du terrain. La carte est incluse dans _Little Navmap_ et a une option pour afficher les noms de villes et de pays. Les limites et les plans d'eau sont représentés grossièrement.
 
-#### Espaces Aériens (Airspaces)
-
-##### ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") Afficher les Espaces Aériens {#show-airspaces}
-
-Permet d'activer ou de désactiver l'affichage de tous les espaces aériens en un seul clic. Utilisez les éléments de menu sous celui-ci ou les boutons de la barre d'outils pour afficher ou masquer les différents types d'espace aérien.
-
-La barre d'outils des espaces aériens contient des boutons ayant chacun un menu déroulant qui permet de configurer l'affichage de l'espace aérien comme l'affichage ou le masquage de certains types d'espace aérien. Chaque menu déroulant comporte également une entrée ` Tout` et ` Aucun` pour cocher ou désélectionner tous les types dans le menu.
-
-##### ![ICAO Airspaces](../images/icons/airspaceicao.png "ICAO Airspaces") Espaces Aériens OACI {#icao-airspaces}
-
-Permet la sélection d'espaces aériens de classe A à classe E.
-
-##### ![FIR Airspaces](../images/icons/airspacefir.png "FIR Airspaces") Espaces Aériens FIR {#fir-airspaces}
-
-Permet de sélectionner les espaces aériens de classe F et de classe G ou les régions d'information de vol.
-
-##### ![Restricted Airspaces](../images/icons/airspacerestr.png "Restricted Airspaces") Espaces Aériens Restreints {#restricted-airspaces}
-
-Afficher ou cacher MOA \(zone d'opérations militaires\), espaces aériens restreints, interdits et dangereux.
-
-##### ![Special Airspaces](../images/icons/airspacespec.png "Special Airspaces") Espaces Aériens Spéciaux {#special-airspaces}
-
-Afficher ou masquer les espaces aériens d'alerte, d'alerte et d'entraînement.
-
-##### ![Other Airspaces](../images/icons/airspaceother.png "Other Airspaces") Autres Espaces Aériens {#other-airspaces}
-
-Afficher ou masquer le centre, la tour, le mode C et d'autres espaces aériens.
-
-##### ![Airspace Altitude Limitations](../images/icons/airspacealt.png "Airspace Altitude Limitations") Limitations de l'Altitude de l'Espace Aérien {#airspace-altitude-limitations}
-
-Permet de filtrer l'affichage de l'espace aérien par altitude. Soit au-dessous ou au-dessus de 10 000 pieds ou 18 000 pieds ou seulement les espaces aériens qui se croisent avec l'altitude du plan de vol.
-
-#### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force l'Affichage des Aérodromes Supplémentaires {#force-show-addon-airports}
-
-Les aérodromes supplémentaires sont toujours affichés indépendamment des autres paramètres de la carte des aérodromes si cette option est sélectionnée. Ceci permet de ne visualiser que les aérodromes supplémentaires en cochant cette option et en désactivant l'affichage des aérodromes à piste à revêtement dur, souple ou vides.
-
-#### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Afficher les Aérodromes avec des Pistes à revêtement dur {#show-airports-with-hard-runways}
-
-Montrer les aérodromes qui ont au moins une piste avec une surface dure.
-
-#### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Afficher les Aérodromes avec des Pistes à revêtement souple ou en eau {#show-airports-with-soft-runways}
-
-Indiquer les aérodromes qui n'ont que des pistes à revêtement souple ou des pistes en eau. Ce type d'aérodrome peut être caché sur la carte en fonction de la distance de zoom.
-
-#### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Afficher les Aérodromes Vides {#show-empty-airports}
-
-Affiche les aérodromes vides. Ce bouton ou élément de menu peut ne pas être visible en fonction des réglages dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`. L'état de ce bouton est combiné avec les autres boutons de l'aérodrome. Cela signifie, par exemple : Vous devez activer l'affichage d'aérodrome à surface souple et les aérodromes vides pour voir les aéroports vides n'ayant que des pistes souples.
-
-Un aérodrome vide est défini comme un aéroport qui n'a ni parking, ni voies de circulation, ni aires de trafic et qui n'est pas une extension. Ces aérodromes sont traités différemment dans _Little Navmap_ puisqu'ils sont les plus ennuyeux de tous les aérodromes par défaut. Les aérodromes vides sont dessinés en gris et derrière tous les autres aérodromes sur la carte.
-
-Les aérodromes n'ayant que des pistes d'eau sont exclus de cette définition afin d'éviter les dissimulations involontaires.
-
-#### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Afficher les Stations VOR {#show-vor-stations}
-
-#### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Afficher les Stations NDB {#show-ndb-stations}
-
-#### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Afficher les Waypoints {#show-waypoints}
-
-#### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Afficher les ILS Feathers {#show-ils-feathers}
-
-#### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Afficher les Jet Airways {#show-jet-airways}
-
-#### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Afficher les Victor Airways {#show-victor-airways}
-
-Affiche ou cache ces installations ou navaids sur la carte. Les navaids peuvent être cachées sur la carte en fonction de la distance de zoom.
-
-#### ![Show Flight Plan](../images/icons/route.png "Show Flight Plan") Afficher Plan de Vol {#show-flight-plan}
-
-Affiche ou masque le plan de vol. Le plan de vol est affiché indépendamment de la distance de zoom.
-#### ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches") Afficher les Approches Manquées {#show-missed-approaches}
-
-Affiche les approches manquées du plan de vol en cours. Cela n'affecte pas l'aperçu dans l'onglet de recherche. `Procédures`.
-
-**Notez que cette fonction modifie l'enchaînement des segments du plan de vol actif:** L'enchaînement du segment actif s'arrêtera si la destination est atteinte et que les approches manquées ne sont pas affichées. Sinon, l'enchaînement se poursuivra avec l'approche manquée et la progression de l'aéronef simulateur montrera plutôt la distance restante jusqu'à la fin de l'approche manquée.
-
-#### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Afficher Aéronef {#show-aircraft}
-
-Affiche l'aéronef utilisateur et le garde centré sur la carte s'il est connecté au simulateur. L'aéronef utilisateur est toujours affiché indépendamment de la distance de zoom.
-
-Un clic sur l'aéronef utilisateur montre plus d'informations dans la fenêtre `Aéronef Simulateur`.
-
-Le centrage de l'aéronef est désactivé lorsque l'une des fonctions suivantes est utilisée :
-
-* Double-cliquez sur un tableau ou une carte pour zoomer sur un aérodrome ou un navaid.
-* Menu contextuel `Afficher sur la Carte`.
-* `Retour Position dOrigine` ou `Retour Centre de Recherche à Distance`.
-* Lien `Carte` dans la fenêtre `Informations`.
-* `Afficher Plan de Vol`. Soit manuellement dans un élément de menu, soit après le chargement. 
-* Centrage d'un fichier Google Earth KML/KMZ après le chargement.
-
-Cela permet une inspection rapide d'un aérodrome ou d'un navaid pendant le vol. Pour afficher à nouveau l'aéronef, utilisez `Position de la Carte` et activez à nouveau`Afficher Aéronef`.
-
-#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Afficher le Tracé de l'Aéronef {#show-aircraft-trail}
-
-Affiche le tracé de l`aéronef utilisateur. Le tracé est toujours affiché indépendamment de la distance de zoom. Il est sauvegardé et sera rechargé au démarrage du programme.
-
-La piste est supprimée lors de la connexion à un simulateur de vol ou peut être supprimée manuellement en sélectionnant `Menu Principal` -&gt; `Carte` -&gt; `Effacer le Tracé de l'Aéronef`. Le tracé est également supprimé lorsque l'aéronef utilisateur saute sur une grande distance lors de l'assignation d'un nouvel aérodrome, par exemple.
-
-La taille de la piste est limitée pour des raisons de performance. Les points seront supprimés dès le début si le temps est trop long.
-
-#### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") ![Show AI and Multiplayer Ships](../images/icons/boatai.png "Show AI and Multiplayer Ships") Afficher AI et les Aéronefs ou Navires multijoueurs. {#show-map-ai-aircraft}
-
-Affiche AI et les aéronefs ou navires multijoueurs sur la carte. Les véhicules multijoueurs peuvent être affichés à partir de FSCloud, VATSIM ou Steam sessions.
-
-Notez que le trafic maritime n'est pas disponible et que l'information sur les aéronefs AI est limitée dans X-Plane..
-
-Un clic sur l'aéronef ou le navire AI affiche plus d'informations dans la fenêtre `Aéronef Simulateur` dans l'onglet `AI / Multijoueur`.
-
-Les véhicules affichés sont limités par le système multijoueur utilisé. Les aéronefs multijoueurs disparaîtront en fonction de la distance qui les sépare des aéronefs utilisateurs. Pour l'AI dans FSX ou P3D, cela représente actuellement environ 100 milles nautiques ou environ 200 kilomètres.
-
-Les petits navires ne sont générés par le simulateur que dans un petit rayon autour de l'aéronef utilisateur.
-
-_Little Navmap_ limite l'affichage des véhicules AI en fonction de leur taille. Faites un zoom avant pour voir les petits aéronefs ou les navires.
-
-Sur la distance de zoom la plus faible, tous les aéronefs et les navires sont dessinés à l'échelle sur la carte.
-
-#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Afficher Grille de la Carte {#show-map-grid}
-
-Affiche une grille de latitude/longitude ainsi que la fonction [méridien](https://en.wikipedia.org/wiki/Prime_meridian) et [anti-méridien](http://en.wikipedia.org/wiki/180th_meridian) \(près de la ligne de date\) sur la carte.
-
-#### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Afficher Noms des Pays et Villes {#show-country-and-city-names}
-
-Afficher le pays ville et autres points d'intérêt La disponibilité de ces options dépend du thème de la carte sélectionné . Voir [Thème](MENUS.md#theme).
-
-#### ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading") Afficher Effet de Relief (Ombrage) {#show-hillshading}
-
-Affiche l'ombrage des collines sur la carte. La disponibilité de ces options dépend du thème de carte sélectionné.. Voir [Thème](MENUS.md#theme).
-
 ### Menu Vue {#view-menu}
 
 ### Menu Bibliothèque de Scènes {#scenery-library-menu}
@@ -598,6 +694,87 @@ Vous devez d'abord passer à une base de données de simulateurs FSX ou P3D pour
 Les informations relatives à l'espace aérien sont effacées lors du rechargement de la base de données X-Plane. C'est pourquoi vous devez recopier les espaces aériens après le rechargement.
 
 ### Menu Données Utilisateur {#userdata-menu}
+
+Voir [Waypoints définis par l'Utilisateur](USERPOINT.md) et [Fenêtre de Recherche - Points d'Utilisateur](USERPOINTSEARCH.md) pour plus d'informations sur les waypoints définis par l'utilisateur.
+
+#### Afficher la Recherche
+
+Fenêtre `Recherche` et l'onglet `Points utilisateur` où vous pouvez éditer, ajouter, supprimer et rechercher des waypoints définis par l'utilisateur.
+
+#### Importer CSV
+
+Importez un fichier CSV compatible avec le format largement utilisé à partir de Plan-G et ajoute tout le contenu à la base de données.
+
+Notez que le format CSV est le seul format qui permet d'écrire et de lire tous les champs de données supportés.
+
+Voir [Format de Données CSV](USERPOINT.md#userpoints-csv) pour une description plus détaillée.
+
+#### Importer X-Plane user_fix.dat
+
+Importer des waypoints définis par l'utilisateur à partir du fichier `user_fix.dat`. Le fichier n'existe pas par défaut dans X-Plane et doit être créé manuellement ou en exportant depuis _Little Navmap_.
+
+L'emplacement par défaut est `XPLANE/Custom Data/user_fix.dat`.
+
+Les points utilisateurs importés sont de type `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") qui peut être modifié après l'importation à l'aide de la fonctionnalité d'édition en masse.
+
+Le format est décrit par Laminar Research ici: [XP-FIX1101-Spec.pdf](https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf).
+
+Voir [Format de Données "user_fix.dat" X-Plane](USERPOINT.md#userpoints-xplane) pour plus d'informations.
+
+#### Importer Garmin GTN
+
+Lit les waypoints définis par l'utilisateur dans le fichier Garmin `user.wpt`. Reportez-vous au manuel de l'unité Garmin que vous utilisez pour plus d'informations sur le format et l'emplacement du fichier.
+
+Les points utilisateurs importés sont de type `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") qui peut être modifié après l'importation à l'aide de la fonctionnalité d'édition en masse.
+
+Voir [Format de Données "user.wpt" Garmin](USERPOINT.md#userpoints-garmin) pour plus d'informations.
+
+#### Exporter CSV
+
+Créer ou ajouter des waypoints définis par l'utilisateur à un fichier CSV. Une boîte de dialogue demande si seuls les points utilisateur  sélectionnés doivent être exportés et si les points utilisateur doivent être ajoutés à un fichier déjà présent.
+
+Notez que le fichier exporté contient une colonne supplémentaire ` Région` par rapport au format Plan-G. La zone de description prend en charge plusieurs lignes de texte et caractères spéciaux. Par conséquent, il se peut que tous les programmes ne soient pas en mesure d'importer ce fichier. Si nécessaire, adaptez les waypoints définis par l'utilisateur.
+
+#### Exporter X-Plane user_fix.dat
+
+Seuls les points utilisateur sélectionnés ou tous les points utilisateur peuvent être exportés. Les données exportées peuvent être ajoutées à un fichier déjà existant.
+
+Tous les champs de données ne peuvent pas être exportés dans ce format. Le champ ident est obligatoire pour l'exportation.
+
+De plus, vous devez vous assurer que l'identifiant du repère de balisage utilisateur est unique au sein de l'application `user_fix.dat`.
+
+Voir [Format de Données "user_fix.dat" X-Plane](USERPOINT.md#userpoints-xplane) pour plus d'informations sur les limitations.
+
+#### Exporter Garmin GTN
+
+Seuls les points utilisateur sélectionnés ou tous les points utilisateur peuvent être exportés. Les données exportées peuvent être ajoutées à un fichier déjà existant.
+
+Tous les champs de données ne peuvent pas être exportés dans ce format. Le champ ident est obligatoire pour l'exportation.
+Certains champs comme le nom sont adaptés aux limitations.
+
+Voir [Format de Données "user_fix.dat" X-Plane](USERPOINT.md#userpoints-xplane) pour plus d'informations sur les limitations.
+
+#### Exporter XML pour FSX/P3D Compilateur BGL
+
+Cette option d'exportation crée un fichier XML qui peut être compilé dans un fichier BGL contenant les waypoints.
+
+Les champs région et identification sont requis pour cette option d'exportation.
+
+Voir [Le compilateur et les Formats de Fichiers](http://www.prepar3d.com/SDKv4/sdk/world/scenery/scenery_overview.html) pour savoir comment compiler le BGL et comment l'ajouter au simulateur.
+
+#### Créer des entrées dans le Journal de bord (Logbook)
+
+La vérification de cet élément de menu permet une simple fonctionnalité de journal de bord.
+
+_Little Navmap_ créera un point d'utilisateur de type `Journal de bord` ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") sur chaque décollage et atterrissage lorsqu'ils sont connectés à un simulateur.
+
+Ces deux entrées du carnet de vol contiennent toutes les informations disponibles, comme le plan de vol, le temps, le carburant consommé et bien d'autres choses encore.
+
+#### Effacer la base de données
+
+Supprime tous les waypoints définis par l'utilisateur de la base de données. 
+
+Un fichier de sauvegarde CSV nommé `little_navmap_userdata_backup.csv` est créé dans le répertoire de configuration `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` avant d'effacer tout.
 
 ### Menu Outils {#tools-menu}
 
@@ -707,6 +884,8 @@ actuellement visibles sur la carte. L'info-bulle donne plus de détails.
   * `Incomplet.`: Le téléchargement a échoué. Notez que l'indicateur de progression peut sembler coincé dans le message `Attente pour les Données ...` si aucune ombre de colline n'est disponible pour une région _OpenStreetMap_ ou si vous zoomez trop près lorsque vous utilisez certaines cartes en ligne.
 * Distance de zoom \(point d'observation à la surface terrestre\)  en milles nautiques ou en kilomètres.
 * Position du curseur sur la carte en degrés/minutes/secondes ou en degrés décimaux de latitude et longitude selon l'unité sélectionnée dans la boîte de dialogue `Options`. Affiche également l'élévation du sol sous le curseur après un court délai si les données d'élévation hors ligne [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) sont sélectionnées.
+  * Variance magnétique à la position du curseur en degrés ouest ou est.
+* Date actuelle du mois et heure zulu/UTC `heures:minutes:secondes`. Il s'agit du temps du monde réel et non du temps du simulateur. L'info-bulle donne plus d'informations sur la date et l'heure. 
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 

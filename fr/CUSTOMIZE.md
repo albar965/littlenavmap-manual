@@ -27,7 +27,7 @@ Les noms des clés dans ces fichiers sont dérivés des options de la palette Qt
 Voir ici pour plus d'informations sur les [groupes](http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) et [rôles](http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum).
 
 
-## Afficher Carte {#customize-map-display}
+## Afficher la Carte {#customize-map-display}
 
 Le fichier
 `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` permet de personnaliser les différents aspects de l'affichage des cartes et est actuellement limité aux couleurs et aux stylets. La plupart des noms clés sont explicites. Voir ci- dessous pour plus d'informations sur les valeurs de couleur.
@@ -109,6 +109,10 @@ Les icones sont :
 `aircraft_small_user.svg`
 
 `aircraft_small.svg`
+
+`aircraft_online.svg`
+
+`aircraft_online_ground.svg`
 
 Les suffixes sont choisis par type de véhicule statut \(sol ou aérien\)  et utilisateur ou AI/multijoueurs. L'icône est pour les véhicules aéroportés si le `sol` est manquant et pour les véhicules AI/multijoueurs   si l'`utilisateur` est manquant. Pour des raisons historiques toutes les icônes sont préfixées avec des `aéronefs`.
 

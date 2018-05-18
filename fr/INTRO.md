@@ -21,6 +21,12 @@ Une ou plusieurs bases de données de bibliothèques de scènes peuvent avoir be
 * Voir [Installer les Mises à Jour du Navigateur](https://albar965.github.io/littlenavmap_navigraph.html) sur ma page d'accueil pour savoir comment mettre à jour les données de navigation de _Little Navmap_.
 * Voir [Connexion à un Simulateur de Vol](CONNECT.md) pour le prochain  segment à utiliser *Little Navmap* comme carte en mouvement. Le plugin *Little Xpconnect* inclus doit être installé dans X-Plane.
 
+## Comment exécuter une configuration réseau {#network-setup}
+
+Voir les deux chapitres ci-dessous si vous souhaitez exécuter _Little Navmap_ dans une configuration en réseau en utilisant un ordinateur pour le simulateur de vol et un ordinateur pour l'exécution _Little Navmap_.
+
+* [Connexion à un Simulateur de Vol](CONNECT.md)
+* [Fonctionnement sans Installation du Simulateur de Vol](RUNNOSIM.md)
 
 ## Général {#general-remarks}
 
@@ -77,6 +83,14 @@ A `N` sera ajouté si la base de données Navigraph est utilisée :
 * `P3DV4 / N`: Les aérodromes et les ILS sont montrés et utilisés à partir de la base de données du simulateur de vol. Les navaids, l'espace aérien, les voies aériennes et les procédures sont utilisés à partir de la base de données Navigraph.
 * `(P3DV4) / N`: Toutes les données sont utilisées à partir de la base de données Navigraph. Il n'y a pas d'aprons, pas de taxiways et pas de places de parking pour les aérodromes.
 
+#### Onglets
+
+Les onglets qui apparaissent en haut d'une fenêtre sont fixes. Une infobulle donne plus d'informations sur la fonction d'un onglet.
+
+Les onglets au bas d'une fenêtre apparaissent lorsque vous déposez des fenêtres ancrées l'une sur l'autre. Saisissez une barre de titre de fenêtre pour déplacer une fenêtre hors de l'affichage empilé. Vous pouvez modifier l'ordre de ces onglets en les faisant glisser.
+
+La molette de la souris permet de passer d'un onglet à l'autre d'une manière plus pratique.
+
 #### Copier et Coller
 
 Presque tous les dialogues, les étiquettes de texte et toutes les fenêtres d'information dans _Little Navmap_ permettent de copier et coller.
@@ -103,12 +117,12 @@ La légende explique toutes les icônes de la carte et les icônes ` Profil d'El
 
 ### Conventions d'Appellation Utilisées dans ce Manuel {#naming-conventions-used-in-this-manual}
 
-`Le texte en surbrillance` est utilisé pour désigner les noms de fenêtres, de menus, de boutons, de fichiers ou de répertoires.
+`Le texte en surbrillance` est utilisé pour désigner les noms de fenêtres, des menus, des boutons, des fichiers ou des répertoires.
 Voir le [Glossaire](GLOSSARY.md) pour des explications sur les termes courants utilisés dans ce manuel.
 
-### Cote d'Appréciation {#rating}
+### Classement {#rating}
 
-Les aérodromes obtiennent une cote de zéro à cinq étoiles selon les installations. Les aérodromes qui n'ont pas de note sont considérés comme ennuyeux et seront affichés en utilisant un symbole gris sous tous les autres aérodromes sur la carte \(`Aérodromes Inoccupés`\). Ce comportement peut être désactivé dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`.
+Les aérodromes obtiennent un classement de zéro à cinq étoiles selon les installations. Les aérodromes qui n'ont pas de note sont considérés comme ennuyeux et seront affichés en utilisant un symbole gris sous tous les autres aérodromes sur la carte \(`Aérodromes Inoccupés`\). Ce comportement peut être désactivé dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`.
 
 Les critères ci-dessous sont utilisés pour calculer la cote. Chaque élément donne une étoile :
 

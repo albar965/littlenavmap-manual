@@ -1,4 +1,4 @@
-# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Manuel Utilisateur de Litlle Navmap {#little-navmap-user-manual}
+# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Manuel Utilisateur de Little Navmap {#little-navmap-user-manual}
 
 **Version 2.x**
 

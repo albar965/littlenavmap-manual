@@ -16,7 +16,7 @@ Vous pouvez également configurer la fréquence de la vérification automatique 
 
 Possède des options pour la taille des textes dans les fenêtres d'information et le plan de vol ainsi que le tableau des résultats de recherche.
 
-Vous pouvez également modifier le style général de l'interface utilisateur graphique. Les styles d'interface utilisateur contiennent un mode ` Nuit` qui peut être utilisé pour les vols de nuit dans les pièces sombres. Vous pouvez également varier l'intensité de la carte et l'affichage du profil d'élévation.
+Vous pouvez également modifier le style général de l'interface utilisateur graphique. Les styles d'interface utilisateur contiennent un mode ` Night` qui peut être utilisé pour les vols de nuit dans les pièces sombres. Vous pouvez également varier l'intensité de la carte et l'affichage du profil d'élévation.
 
 Un redémarrage n'est pas nécessaire mais recommandé après un changement de style.
 
@@ -96,6 +96,14 @@ Les boutons de test pour les services météorologiques en ligne peuvent égalem
 ![Weather Options](../images/optionsweather_fr.jpg "Weather Options")
 
 _**Image ci-dessus:** Onglet `Météo` avec le fichier météo Active Sky sélectionné manuellement sur un partage réseau._
+
+### Voler en Réseau {#online-flying}
+
+TODO
+
+![Online Network Options](../images/options_network_fr.jpg "Online Network Options")
+
+_**Image ci-dessus:** Onglet _`Voler en Réseau`_ avec le fichier météo Active Sky sélectionné manuellement sur un partage réseau.._
 
 ### Base de Données de la Bibliothèque de Scènes {#scenery-library-database}
 

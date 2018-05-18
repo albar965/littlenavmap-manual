@@ -14,12 +14,15 @@ Il n'est pas nécessaire de supprimer l'ancien répertoire de paramètrage. Le p
 ### Windows
 L'installation de _Little Navmap_ ne modifie pas les entrées du registre \(dans Windows\)  et implique une simple copie de fichiers, donc un programme d'installation n'est pas nécessaire.
 
-N'extrayez pas l'archive dans le dossier `c:\Program Files\` ou `c:\Program Files (x86)\`  puisque cela nécessite des privilèges d'administration pour certaines versions de Windows. Windows garde le contrôle de ces dossiers, 
-donc d'autres problèmes peuvent survenir comme les fichiers remplacés ou supprimés.
+N'extrayez pas l'archive dans le dossier `c:\Program Files\` ou `c:\Program Files (x86)\`  puisque cela nécessite des privilèges d'administration pour certaines versions de Windows. Windows garde le contrôle de ces dossiers, donc d'autres problèmes peuvent survenir comme les fichiers remplacés ou supprimés.
 
-Extraire l'archive Zip dans un dossier comme `c:\Little Navmap`.  Démarrez ensuite le programme en double-cliquant sur `littlenavmap.exe`. Voir [Premier Démarrage](INTRO.md#first-start) pour plus d'informations sur le premier démarrage après l'installation.
+Extraire l'archive Zip dans un dossier comme `c:\Users\YOURNAME\Documents` ou `c:\Little Navmap`.  Démarrez ensuite le programme en double-cliquant sur `littlenavmap.exe`. Voir [Premier Démarrage](INTRO.md#first-start) pour plus d'informations sur le premier démarrage après l'installation.
 
-Dans certains cas, vous devez installer la [Mise à jour pour Visual C\+\+ 2013 et Visual C\+\+ Redistributable Package](https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package).  Installez les versions 32 et 64 bits. Habituellement, cela est déjà installé puisque beaucoup d'autres programmes en ont besoin.
+Dans certains cas, vous devez installer la [Mise à jour pour Visual C\+\+ 2013 et Visual C\+\+ Redistributable Package](https://support.microsoft.com/en-us/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package).  Installez les versions 32 et 64 bits. 
+
+Habituellement, cela est déjà installé puisque beaucoup d'autres programmes en ont besoin.
+
+Vous devez également installer le redistributable si vous obtenez une erreur comme `Erreur lors de la vérification des mises à jour ... Erreur de création de contexte SSL`.
 
 _Little Navmap_  est une application 32 bits et a été testée avec Windows 7, Windows 8 et Windows 10 (32 bits et 64 bits). Windows XP n'est pas pris en charge.
 
@@ -39,9 +42,11 @@ Extraire le fichier ZIP et copier l'application `Little Navmap` dans le dossier`
 
 ### Linux
 
-Extraire l'archive tar à n'importe quel endroit et utiliser le script du shell `littlenavmap.sh`  pour démarrer le programme à partir d'un terminal: 
+Extraire l'archive tar à n'importe quel endroit et utiliser le script du shell `littlenavmap`  pour démarrer le programme à partir d'un terminal: 
 
-`bash ./littlenavmap.sh`
+`./littlenavmap`
+
+La plupart des gestionnaires de fichiers démarreront le programme si vous double-cliquez dessus.
 
 ### X-Plane
 

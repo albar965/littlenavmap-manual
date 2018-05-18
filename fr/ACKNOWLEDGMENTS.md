@@ -15,14 +15,17 @@ Un grand merci à Jean Luc pour [Reality XP](http://www.reality-xp.com) pour son
 
 Merci à Jose de [fsAerodata](https://www.fsaerodata.com/) pour son aimable soutien.
 
-Un grand merci à Patrick Jung alias Patbest pour la traduction française des fichiers "légende" Navconnect, LittleNavMap et du Manuel de l'Utilisateur. 
+Un grand merci à Patrick Jung alias Patbest pour la traduction française des fichiers "légende" Navconnect, LittleNavMap et du Manuel de l'Utilisateur.
+
+Merci beaucoup! pour la traduction allemande à merspieler et Stephan Leukert.
+
+Merci à Ricardo Vitor pour la traduction en portugais brésilien. 
 
 Merci à tous les bêta-testeurs pour leurs efforts, leur patience et leurs idées: Barry, Jean-Pierre, Brian, Gérard, John, Rémi et Sam.
 
 Un autre grand merci à Marc d'Allemagne pour toutes ses grandes idées et ses rapports de bugs sans fin.
 
-Merci à tous ceux qui mont patiemment soutenu dans les forums et qui mon donné un feedback inestimable lors de la bêta 
-publique:
+Merci à tous ceux qui mont patiemment soutenu dans les forums et qui mon donné un feedback inestimable lors de la bêta publique:
 
 [AVSIM](http://www.avsim.com), [SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](http://flightx.net) et [FSDeveloper.com](http://www.fsdeveloper.com).
 

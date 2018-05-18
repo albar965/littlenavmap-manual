@@ -2,7 +2,7 @@
 
 _Little Navmap_ peut utiliser jusqu'à deux bases de données en parallèle :
 
-1. **Base de données de simulation:** Créé en lisant la bibliothèque de scènes de FSX, P3D ou X-Plane.
+1. **Base de données du simulateur:** Créé en lisant la bibliothèque de scènes de FSX, P3D ou X-Plane.
 2. **Base de données de navigation:** Fourni par Navigraph. Ne doit pas être compilé et peut être mis à jour par le Navigraph _FMS Data Manager_.
 
 _Little Navmap_ est fourni avec une base de données de navigation d'un cycle AIRAC récent qui est activé par défaut.
@@ -20,6 +20,14 @@ Notez que l'information sur l'aérodrome est limitée dans ce mode. Cela signifi
 La disposition de la piste peut ne pas correspondre à la disposition de la piste dans le simulateur si vous utilisez des scènes d'aérodrome plus anciennes.
 
 L'un des avantages de ce mode est que les procédures d'approche correspondent toujours au tracé de la piste de l'aérodrome.
+
+![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")
+
+_**Photo ci-dessus:** Diagramme de l'aérodrome pour EDDN à partir de la scène du simulateur \(X-Plane\) comme indiqué dans les autres modes _`Ne pas utiliser la Base de Données de Navigraph`_ et _`Utiliser Navigraph pour les Navaids et les Procédures`_._
+
+![Airport from Navdatabase](../images/airport_navigraph_only.jpg "Airport from Navdatabase")
+
+_**Photo ci-dessus:** EDDN de l'aérodrome à partir de la base de données Navigraph alors que _`Utiliser Navigraph pour toutes les fonctionnalités`_ est activé. Notez les informations manquantes sur la surface de la piste et les aprons, taxiways et les parkings manquants._
 
 ## Ne pas utiliser la Base de Données Navigraph {#navigraph-none}
 
