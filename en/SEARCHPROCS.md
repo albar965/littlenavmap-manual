@@ -72,6 +72,10 @@ Opens this help chapter in the default browser.
 
 Centers the map on the selected procedure.
 
+#### Follow Selection {#follow-selection}
+
+The map view will be zoomed on the selected procedure when this function is enabled. 
+
 #### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
 
 Text and functionality of this menu item depends on the selected procedure type and if the procedure's airport is already the departure or destination airport of the current flight plan.

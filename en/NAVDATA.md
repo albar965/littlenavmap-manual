@@ -21,6 +21,14 @@ Runway layout might not match the runway layout in the simulator if you use stoc
 
 An advantage of this mode is that approach procedures always match the airport runway layout.
 
+![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")
+
+_**Picture above:** Airport diagram for EDDN from Simulator Scenery \(X-Plane\) as shown in the modes _`Do not use Navigraph Database`_ and _`Use Navigraph for Navaids and Procedures`_._
+
+![Airport from Navdatabase](../images/airport_navigraph_only.jpg "Airport from Navdatabase")
+
+_**Picture above:** Airport EDDN from the Navigraph database while _`Use Navigraph for all Features`_ is enabled. Note missing runway surface information and missing aprons, taxiways and parking positions._
+
 ## Do not use Navigraph Database {#navigraph-none}
 
 Completely ignores the Navigraph database and shows only information read from the simulator scenery.

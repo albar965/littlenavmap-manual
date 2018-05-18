@@ -27,6 +27,19 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
 
+
+### Compass Rose
+
+Line thickness can be changed in dialog `Options` on the tab `Map Display`.
+
+| Symbol | Description |
+| --- | --- |
+| ![True North](../images/legend/compass_rose_true_north.png "True North") | True north. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Magnetic north. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Distance circles and marks from user aircraft if connected. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Solid line shows aircraft track in degrees magnetic if connected. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Dashed line shows aircraft heading if connected. |
+
 ### Aircraft and Ships {#vehicles}
 
 | Symbol | Description |
@@ -37,6 +50,8 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
 | ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
+| ![Online on in Flight](../images/icons/aircraft_online.png) ![Online on Ground](../images/icons/aircraft_online_ground.png) | Online network aircraft/client. Labels vary and can be customized as above. |
+
 
 ### Airports {#airports}
 
@@ -119,6 +134,30 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_ramp_cargo.png) | Cargo ramp |
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
 | ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad. Color indicates surface.  |
+
+### Userpoints {#userpoints}
+
+| Symbol | Description |
+| --- | --- |
+| ![Airport](../images/icons/userpoint_Airport.png) | Airport |
+| ![Airstrip](../images/icons/userpoint_Airstrip.png) | Airstrip |
+| ![Bookmark](../images/icons/userpoint_Bookmark.png) | Bookmark |
+| ![Cabin](../images/icons/userpoint_Cabin.png) | Cabin |
+| ![Closed](../images/icons/userpoint_Closed.png) | Closed |
+| ![Error](../images/icons/userpoint_Error.png) | Error |
+| ![Flag](../images/icons/userpoint_Flag.png) | Flag |
+| ![Helipad](../images/icons/userpoint_Helipad.png) | Helipad |
+| ![Location](../images/icons/userpoint_Location.png) | Location |
+| ![Logbook](../images/icons/userpoint_Logbook.png) | Logbook |
+| ![Marker](../images/icons/userpoint_Marker.png) | Marker |
+| ![Mountain](../images/icons/userpoint_Mountain.png) | Mountain |
+| ![Obstacle](../images/icons/userpoint_Obstacle.png) | Obstacle |
+| ![Pin](../images/icons/userpoint_Pin.png) | Pin |
+| ![POI](../images/icons/userpoint_POI.png) | POI - point of interest |
+| ![Seaport](../images/icons/userpoint_Seaport.png) | Seaport |
+| ![Unknown](../images/icons/userpoint_Unknown.png) | Unknown |
+| ![VRP](../images/icons/userpoint_VRP.png) | VRP - visual reporting point |
+| ![Waypoint](../images/icons/userpoint_Waypoint.png) | Waypoint |
 
 ### Elevation Profile Legend {#elevation-profile-legend}
 

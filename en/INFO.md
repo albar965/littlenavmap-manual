@@ -52,7 +52,7 @@ _**Picture above:** Progress and ambient information of the current flight situa
 
 ### Tab AI / Multiplayer
 
-Information about an AI or multiplayer aircraft or ship is displayed in this tab if a vehicle is clicked on the map.
+Information about an AI or multiplayer aircraft from the simulator \(not online networks\) or ship is displayed in this tab if a vehicle is clicked on the map.
 
 This also includes departure and destination airports for aircraft that can be shown on the map by clicking on the blue links \(only for FSX or P3D and if a flight plan is filed\).
 
@@ -66,6 +66,8 @@ _**Picture above:** Information about an AI aircraft._
 
 Contains two tabs: One tab  `Navmap` explaining the various airport and navaid symbols and a tab `Map` which shows the
 general legend for the base map like the _OpenStreetMap_ for example.
+
+The contents of the `Navmap` legend are also available in the online manual: [Nav Map Legend](LEGEND.md).
 
 Note that the general map legend is not available for all map themes.
 

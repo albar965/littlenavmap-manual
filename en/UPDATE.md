@@ -19,7 +19,7 @@ Note that manually checking for updates ignore the black listed updates.
 
 #### Remind me Later
 
-Dismisses the dialog. You will be notified again on next startup depending on selected frequency. You can also press `Esc` to trigger this action.
+Dismisses the dialog. You will be notified again on next startup depending on selected frequency. You can also press escape key to trigger this action.
 
 This button is not visible when checking manually.
 

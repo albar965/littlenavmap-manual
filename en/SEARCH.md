@@ -1,10 +1,12 @@
-## ![Search](../images/icons/searchdock.png "Search") Search Dock Window - Airports and Navaids {#search-dock-window}
+## ![Search](../images/icons/searchdock.png "Search") Search Dock Window {#search-dock-window}
 
-The airport and navaid search tabs contain multiple rows of search filters that can be switched on and off with the drop down menu on the menu button ![Menu Button](../images/icons/menubutton.png "Menu Button") on the top right.
+The search dock window contains several tabs with similar functionality that allows to search for features by name, ident or other criteria.
+
+Airport, navaid, userpoint and online search tabs contain multiple rows of search filters. These rows can be switched on and off with the drop down menu on the menu button ![Menu Button](../images/icons/menubutton.png "Menu Button") on the top right in the airport, navaid and userpoint search tabs.
 
 The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
 
-**If you do not get the expected results or no results at all use the `Reset Search` menu item or press `Ctrl+R` to clear all search criteria.**
+**If you do not get the expected results or no results at all use the `Reset Search` menu item, button ![Reset Search](../images/icons/clear.png "Reset Search") or press `Ctrl+R` to clear all search criteria.**
 
 Filters are defined by various controls which are mostly self explaining. Only text filters and the tri-state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
 
@@ -36,6 +38,8 @@ Colors and look of these checkboxes vary with theme and operation system. So ins
 
 ### Distance search {#distance-search}
 
+This function is only available in the airport and navaid search.
+
 This function allows you to combine all other search options with a simple spatial search.
 
 The checkbox `Distance` has to be selected to enable this search. The result will include only airports or navaids that are within the given minimum and maximum range of nautical miles from the search center. This allows you to quickly search for a destination that is within the range of your aircraft and fulfills other criteria like having lighted runways and fuel.
@@ -52,11 +56,13 @@ _**Picture above A complex distance search:** Find all airports within a distanc
 
 ![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
 
-_**Picture above A complex search for scenery:** This example shows how to find specific add-on scenery by using the `Scenery Path` search field. This shows all airports of the Orbx New Zealand South Island add-on scenery that have lighted runways._
+_**Picture above A complex search for scenery:** This example shows how to find specific add-on scenery by using the _`Scenery Path`_ search field. This shows all airports of the Orbx New Zealand South Island add-on scenery that have lighted runways._
 
 ### Search Result Table View {#search-result-table-view}
 
-All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift+Click` or `Ctrl+Click` is possible.
+All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information.
+
+Multi selection using `Shift+Click` or `Ctrl+Click` is possible.
 
 #### Header {#table-view}
 
@@ -79,13 +85,15 @@ _**Picture above:** Airport search result table. All additional search options a
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-_**Picture above:** Navaid search limited to ICAO region *`LI`* \(Italy\) and VOR, VORTAC and TACAN stations that have a range of more than 100 nautical miles._
+_**Picture above:** Navaid search limited to ICAO region _`LI`_ \(Italy\) and VOR, VORTAC and TACAN stations that have a range of more than 100 nautical miles._
 
 #### Mouse Clicks {#mouse-clicks-0}
 
-A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/yellow circle.
+A double click on an entry in the table view shows either an airport diagram or zooms to the navaid or other feature. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/yellow circle.
 
 ### Top Buttons {#top-buttons}
+
+Available buttons and menu items depend on search tab.
 
 #### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
 
@@ -107,6 +115,8 @@ The drop down menu prefixes menu items with a change indicator `*` to show that 
 
 ### Search Result Table View Context Menu {#search-result-table-view-context-menu}
 
+Available menu items depend on search tab.
+
 #### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
@@ -119,7 +129,11 @@ See [Procedure Search](SEARCHPROCS.md) for more information.
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
-Shows either the airport diagram or zooms to the navaid on the map.
+Shows either the airport diagram or zooms to the navaid, userpoint or other features on the map.
+
+#### Follow Selection {#follow-selection}
+
+The map view will be centered - not zoomed in - on the selected feature when this function is enabled.
 
 #### ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding") Filter by Entries including/excluding {#filter-by-entries-including-excluding}
 

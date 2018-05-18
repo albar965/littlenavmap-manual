@@ -31,7 +31,7 @@ This tab also contains options to force the program language and locale settings
 
 ![User Interface](../images/optionsui.jpg "User Interface")
 
-_**Picture above:** Tab `User Interface` using the style `Night`._
+_**Picture above:** Tab _`User Interface`_ using the style _`Night`_._
 
 ### Map {#map}
 
@@ -46,20 +46,52 @@ airports, user aircraft and AI/multiplayer aircraft.
 
 ![Map Display](../images/optionmapdisplay.jpg "Map Display")
 
-_**Picture above:** Tab `Map Display`._
+_**Picture above:** Tab _`Map Display`_._
 
 ### Units {#units}
 
 You can change all units that are used by _Little Navmap_ on this tab between nautical, imperial and metric.
 Mixed settings like meter for altitude and nautical miles for distance are possible.
 
-Note that any numbers used in the program are not converted when changing units. That means that you will
+**Note that any numbers used in the program are not converted when changing units. That means that you will
 have a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation` from feet to meter.
-This also applies to flight plan altitude. Therefore, do not forget to adapt these numbers after changing units.
+This also applies to flight plan altitude. Therefore, do not forget to adapt these numbers after changing units.**
 
 ### Simulator Aircraft {#simulator-aircraft}
 
 Allows to change various aspects around the display of the user aircraft. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
+
+#### Center map on aircraft and next flight plan waypoint {#simulator-aircraft-center-wp}
+
+The map is zoomed to show both the aircraft and the next active waypoint on the flight plan if this is enabled.
+
+The default mode is to simply center the map on the aircraft. 
+
+The map will fall back to the default mode if no flight plan is loaded.
+
+#### Do not use box mode for following the aircraft. Move the map constantly.  {#simulator-aircraft-move-constantly}
+
+Map will follow the aircraft constantly when checked. This is also used for `Center map on aircraft and next flight plan waypoint`.
+
+This option will cause _Little Navmap_ to consume more CPU resources while flying.
+
+#### Simulator aircraft scroll box size (percent of map window size)  {#simulator-aircraft-scroll-box}
+
+Smaller values keep the aircraft centered and will move the map often. Large values will update the map only when aircraft reaches map boundary.
+
+This setting is ignored when `Center map on aircraft and next flight plan waypoint` is checked and a flight plan is set.
+
+#### Keep active leg on top of flight plan table {#simulator-aircraft-keep-active}
+
+The active \(magenta\) leg will be shown on top of the flight plan table when a new leg is activated.
+
+#### Allow scrolling and zooming in the map {#simulator-aircraft-allow-scroll-zoom}
+
+The map will stop following the aircraft for the given time if the user does any interaction with the map like scrolling or zooming. This allows to orientate around the destination or other places without getting back to the program when flying.
+
+#### Jump back to aircraft and resume aircraft following after this time {#simulator-aircraft-jump-timeout}
+
+Time until aircraft following is activated again after any map interaction like scrolling or zooming.
 
 ### Cache and Files {#cache}
 
@@ -83,7 +115,7 @@ Download the ZIP archive from the link in the dialog and extract it. Select the 
 
 ![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")
 
-_**Picture above:** Tab `Cache and Files` with properly selected GLOBE elevation data._
+_**Picture above:** Tab _`Cache and Files`_ with properly selected GLOBE elevation data._
 
 ### Flight Plan {#flight-plan}
 
@@ -104,7 +136,83 @@ The test buttons for the online weather services can also be used to find out if
 
 ![Weather Options](../images/optionsweather.jpg "Weather Options")
 
-_**Picture above:** Tab `Weather` with manually selected Active Sky weather file on a network share._
+_**Picture above:** Tab _`Weather`_ with manually selected Active Sky weather file on a network share._
+
+### Online Flying {#online-flying}
+
+This tab allows to change settings for online networks.
+
+Note that all related window tabs, menu items and toolbar buttons are hidden if this is set to `None`.
+
+See [Online Networks](ONLINENETWORKS.md) for an overview.
+
+**Not all networks might be enabled depending on release.**
+
+![Online Network Options](../images/options_network.jpg "Online Network Options")
+
+_**Picture above:** Tab _`Online Flying`_ with VATSIM network enabled._
+
+#### Online Service {#online-service}
+
+##### None {#online-service-none}
+
+Disables all online services and hides all related window tabs, menu items and toolbar buttons. No downloads will be done.
+
+##### VATSIM {#online-service-vatsim}
+
+Uses the predefined configuration for the [VATSIM](https://www.vatsim.net) network. No other settings are needed.
+
+The update rate depends on configuration and is typically three minutes.
+
+##### IVAO {#online-service-ivao}
+
+Uses the predefined configuration for the [IVAO](https://ivao.aero) network. No other settings are needed.
+
+The update rate depends on configuration and is typically three minutes.
+
+##### Custom with Status File {#online-service-custom-status}
+
+This option allows to connect to a private network and will download a `status.txt` file on statup which contains further links to e.g. the `whazzup.txt` file.
+
+##### Custom {#online-service-custom-whazzup}
+
+This option allows to connect to a private network and will periodically download a `whazzup.txt` file which contains information about online clients/aircraft and online centers/ATC.
+
+#### Settings {#online-service-settings}
+
+##### Status File URL {#online-service-settings-status-url}
+
+URL of the `status.txt` file. You can also use a local path like `C:\Users\YOURUSERNAME\Documents\status.txt`.
+
+This file is downloaded only on startup of the program.
+
+A push button `Test` allows to check if the URL is valid and shows the first few lines from the downloaded text file. This does not work with local paths.
+
+The status file format is explained in the IVAO documentation library: [Status File Format](https://doc.ivao.aero/apidocumentation:whazzup:statusfileformat).
+
+##### Whazzup File URL {#online-service-settings-whazzup-url}
+
+URL of the `whazzup.txt` file. You can also use a local path like `C:\Users\YOURUSERNAME\Documents\whazzup.txt`.
+
+This file is downloaded according to the set update rate.
+
+A push button `Test` allows to check if the URL is valid. The test does not work with local paths.
+
+The whazzup file format is explained in the IVAO documentation library: [Whazzup File Format](https://doc.ivao.aero/apidocumentation:whazzup:fileformat).
+
+##### Update Every {#online-service-settings-update}
+
+Sets the update rate that defines how often the `whazzup.txt` file is downloaded.
+
+Allowed values are 30 to 1800 seconds where 180 is the default.
+
+You can use smaller update rates for private online networks to improve map display updates.
+
+**Do not use update rates smaller than two minutes for official online networks. They might decide to block the application if downloads are excessive.**
+
+##### Format {#online-service-settings-format}
+
+`IVAO` or `VATSIM`. Depends on the format used by your private network. Try both options if unsure.
 
 ### Scenery Library Database {#scenery-library-database}
 
@@ -136,7 +244,7 @@ Insert the corresponding directory into this list to avoid unwanted highlighting
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Picture above:** Tab `Scenery Library Database` with three directories excluded from loading and two directories
+_**Picture above:** Tab _`Scenery Library Database`_ with three directories excluded from loading and two directories
 excluded from add-on recognition._
 
 #### Examples

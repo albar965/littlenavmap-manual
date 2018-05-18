@@ -15,7 +15,7 @@ Alternatively use the keyboard to move around the map:
 * `Ctrl+Home`: Go to home postion
 * `Ctrl+End`: Go to center for distance search
 
-Do not forget to activate the map window by clicking into it before using any keys for movement.
+Do not forget to activate the map window by clicking into it before using keys for movement.
 
 ### Mouse Clicks {#mouse-clicks}
 
@@ -56,7 +56,7 @@ _**Pictures above:** Tooltip with information for an airport and a VOR and a too
 
 ### Highlights {#highlights}
 
-Airports or navaids that are selected in the flight plan table or in the search result table are highlighted on the map with a green/black or a yellow/black ring respectively.
+Airports, navaids or other features that are selected in the flight plan table or in a search result table are highlighted on the map with a green/black or a yellow/black ring respectively.
 
 Waypoints that are selected in the procedure preview are highlighted with a blue/black ring.
 
@@ -83,8 +83,6 @@ _**Picture above:** Detailed view of the airport diagram. Shows blue gates on th
 ### Map Context Menu {#map-context-menu}
 
 The map context menu can be activated using right click or the menu key. Menu items are enabled or disabled depending on selected object and some menu items contain the name of the selected map object for clarification.
-
-The map context menu contains the following menu entries.
 
 #### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information}
 
@@ -164,9 +162,11 @@ This menu item is active if the click is at an airport. It will either replace t
 
 Inserts the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is near the flight plan end points.
 
-The name of the navaid or airport is shown in the menu item.
+The text `Position` is replaced with an object name if an airport, navaid or userpoint is at the clicked position.
 
-A user defined position is added to the flight plan if no airport or navaid is near the clicked position.
+A user defined flight plan position is added to the plan if no airport or navaid is near the clicked point.
+
+A userpoint is converted to a user defined flight plan position if added to the plan.
 
 #### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Append Position to Flight Plan {#append-position-to-flight-plan}
 
@@ -174,15 +174,43 @@ Same as `Add Position to Flight Plan` but will always append the selected object
 
 #### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Delete from Flight Plan {#delete-from-flight-plan}
 
-Deletes the clicked airport, navaid or user position from the flight plan.
+Deletes the clicked airport, navaid or user flight plan position from the plan.
 
-#### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Edit Name of User Waypoint {#edit-name-of-user-waypoint}
+#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Edit Flight Plan Position {#edit-name-of-user-waypoint}
 
-Allows to change the name of a user defined waypoint. The length of the name is limited to 10 characters.
+Allows to change the name or position of a user defined waypoint.
+
+The length of the name is limited to 10 characters when saving to a PLN file. Other flight plan formats have stronger limitations on length and allowed characters.
+
+You can also edit the coordinates directly instead of dragging the flight plan position \([Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)\). 
+
+See [Coordinate Formats](COORDINATES.md) for a list of formats that are recognized by the edit dialog.
+
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Add Userpoint {#add-userpoint}
+
+Adds a user defined waypoint to the userdata. The new userpoint is prefilled depending on the clicked map object. Coordinates are always prefilled and altitude is prefilled if GLOBE offline elevation data is installed. See [Flight Plan Elevation Profile](OPTIONS.md#cache-elevation).
+
+A click on empty map space creates a userpoint of type `Bookmark` prefilled with altitude at the position. A click on an airport or navaid prefills ident, region, name, altitude and creates a userpoint of type `Airport` or `Waypoint` respectively.
+
+See [Add Userpoints](USERPOINT.md#userpoints-dialog-add) for more information.
+
+#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Edit Userpoint {#edit-userpoint}
+
+Only enabled if there is an userpoint at the clicked position. Opens the edit dialog.  See [Edit Userpoints](USERPOINT.md#userpoints-dialog-edit).
+
+#### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Move Userpoint {#move-userpoint}
+
+Only enabled if there is an userpoint at the clicked position. Allows to move the userpoint to a new position on the map.
+
+Click left to place userpoint at the new position. Click the right mouse button or press the escape key to cancel movement and put the userpoint back to its old position.
+
+#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Delete Userpoint {#delete-userpoint}
+
+Only enabled if there is an userpoint at the clicked position. Removes the user defined waypoint from the userdata after confirmation.
 
 #### ![Show in Search](../images/icons/search.png "Show in Search") Show in Search {#show-in-search}
 
-Shows the nearest airport or navaid in the search dialog. The current search parameters are reset.
+Shows the nearest airport, navaid, userpoint, online client or online center in the search dialog. The current search parameters are reset.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search}
 

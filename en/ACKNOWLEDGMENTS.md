@@ -17,7 +17,15 @@ Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind suppo
 
 The French translation of the program was done by Patrick JUNG alias Patbest. Thank you!
 
-Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo and Sam.
+Dankeschön! for the German translation to merspieler and Stephan Leukert.
+
+Thanks to Ricardo Vitor for the translation to Brazilian Portuguese.
+
+Thanks to Daniel "Wolf" \([wolfinformatica.com](http://wolfinformatica.com)\) for the Spanish translation.
+
+Thank you! to Eddy Crequie for doing the Dutch translation.
+
+Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo, Sam and many others.
 
 Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
 
