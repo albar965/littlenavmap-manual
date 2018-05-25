@@ -32,7 +32,7 @@ Now:
 
 * Zoom in until you see the airport diagram showing taxiways, runway details, parking positions and more.
 * Zoom in further until you see the white parking numbers.
-* Right click on the center of one of the green ramp parking spots \(11 is used here\).
+* Right-click on the center of one of the green ramp parking spots \(11 is used here\).
 * Choose `Select Airport Meythet (LFLP) / Parking 11 as Flight Plan Departure` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png) in the context menu.
 
 ![Meythet (LFLP) Parking](../images/tutorial/vfrmapparking.jpg)
@@ -46,17 +46,17 @@ You can also click on the airport icon and select it for departure. A runway wil
 We add the waypoints now:
 
 * Scroll along the valley to the south east across the lake Lac d'Annecy.
-* Click `Append Position to Flight Plan` ![Append Position to Flight Plan](../images/icons/routeadd.png). The clicked position will be added as an user defined waypoint to the end of your plan.
+* Click `Append Position to Flight Plan` ![Append Position to Flight Plan](../images/icons/routeadd.png). The clicked position will be added as an user-defined waypoint to the end of your plan.
 
 Click undo ![Undo](../images/icons/undo.png) or redo ![Redo](../images/icons/redo.png) if you don't like what you just added.
 
 ![Append Waypoint](../images/tutorial/vfrappend.jpg)
 
-Another function is `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png) which will insert  the clicked position to the nearest flight plan leg. You can use this to add user defined positions, airports or navaids in the middle of a flight plan. The nearest leg will be chosen automatically by _Little Navmap_.
+Another function is `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png) which will insert  the clicked position to the nearest flight plan leg. You can use this to add user-defined positions, airports or navaids in the middle of a flight plan. The nearest leg will be chosen automatically by _Little Navmap_.
 
-_Little Navmap_ will automatically assign names to the user defined waypoints. You can leave these as they are or replace them with a more meaningful name.
+_Little Navmap_ will automatically assign names to the user-defined waypoints. You can leave these as they are or replace them with a more meaningful name.
 
-To change a waypoint name right click on the user waypoint and select `Edit Name of User Waypoint` ![Edit Name of User Waypoint](../images/icons/routestring.png). Use nearby villages, mountains, lakes or other points of interest.
+To change a waypoint name right-click on the user waypoint and select `Edit Name of User Waypoint` ![Edit Name of User Waypoint](../images/icons/routestring.png). Use nearby villages, mountains, lakes or other points of interest.
 
 The flight simulator limits the name to a certain length and to certain characters. Nothing will be added to the name if it is too long or if you type the wrong characters.
 
@@ -68,7 +68,7 @@ Keep adding points and stay away from the mountains until you're at `Challes-les
 
 To add the destination:
 
-* Right click on `Challes-les-Eaux (LFLE)`
+* Right-click on `Challes-les-Eaux (LFLE)`
 * Select `Set Airport as Flight Plan Destination` ![Set Airport as Flight Plan Destination](../images/icons/airportroutedest.png).
 
 ![Select Destination](../images/tutorial/vfrdest.jpg)
@@ -129,6 +129,7 @@ Save the plan using `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../image
 Follow the steps below to get a moving map and see your aircraft in _Little Navmap_:
 
 * Open the dialog `Connect` using `Tools` -&gt; `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable it if not. _Little Navmap_ will find the simulator no matter if it is already started or will be started later.
+
 ![Connect Dialog](../images/tutorial/vfrconnect.jpg)
 * Click `Connect` which will close the dialog.
 * Enable `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep it centered if an active flight is loaded, i.e. the simulator is not in the opening screen.
@@ -138,9 +139,9 @@ See also [Connecting to a Flight Simulator](CONNECT.md).
 
 ### Looking at Places while Flying
 
-The program will stop following your aircraft if you start any action that zooms in to an airport or navaid \(double click, toolbar button or link in the information window\):
+The program will stop following your aircraft if you start any action that zooms in to an airport or navaid \(double-click, toolbar button or link in the information window\):
 
-* Double click on the destination airport for example to zoom to the airport diagram.
+* Double-click on the destination airport for example to zoom to the airport diagram.
 * When done click the back button ![Back](../images/icons/back.png) until you are back at your aircraft.
 * Then enable `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png) again to keep the aircraft centered.
 

@@ -1,6 +1,6 @@
 ## Online Networks {#online-networks}
 
-The online network functionality allows to connect to [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero) or private online networks using `whazzup.txt` files. This covers display of information for centers, clients and servers on the map.
+The online network functionality allows to connect to [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero) or other online networks which publish `whazzup.txt` files. This covers display of information for centers, clients and servers on the map.
 
 Network specific information like user names, active centers/towers, frequencies, flight plans and much more are displayed world wide without limits like distance to the user aircraft.
 
@@ -32,7 +32,7 @@ The user aircraft is always displayed using the yellow ![Small GA](../images/ico
 
 Information for online aircraft is shown on the tab `Online Clients` in the [Information Dock Window](INFO.md).
 
-All other functionality like context menu, double click, tooltips, map highlights and other are the same as for the other aircraft.
+All other functionality like context menu, double-click, tooltips, map highlights and other are the same as for the other aircraft.
 
 See [Aircraft and Ships](LEGEND.md#vehicles) in the legend for all symbols.
 

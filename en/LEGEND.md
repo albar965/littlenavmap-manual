@@ -1,6 +1,6 @@
 ## Legend {#little-navmap-legend}
 
-All speeds are per default in knots, distances in nautical miles, altitude in feet. The units can be changed to imperial or metric in the dialog `Options` on the tab `Units`.
+By default, all speeds are given in knots, distances in nautical miles, altitudes and elevations in feet. The units can be set to imperial or metric in the dialog `Options` on the tab `Units`.
 
 Colors, size and text labels of some map elements can be changed in the dialog `Options` on the tab `Map Display`. This legend shows the default values.
 
@@ -85,7 +85,7 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![VORTAC](../images/legend/vortac_small.png) ![VORTAC](../images/legend/vortac_large.png) | VORTAC  including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
 | ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
-| ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
+| ![User-defined Waypoint](../images/legend/userwaypoint.png) | User-defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
 | ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
@@ -166,7 +166,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with departure elevation on the left and destination airport elevation on the right. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
 | ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
-| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is altitude plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
+| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is elevation plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
 | ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show actual altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |

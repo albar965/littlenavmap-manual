@@ -4,7 +4,7 @@ _Little Navmap_ creates multiple configuration files in the directory `C:\Users\
 
 The files use the Windows-`INI` style that has groups in square brackets and `key=value` lines. See [here](https://en.wikipedia.org/wiki/INI_file) for more information about this type of configuration files.
 
-Note that you have to restart _Little Navmap_ to see any changes. Also, do not edit the files while _Little Navmap_ is running since it might reset your changes.
+Note that you have to restart _Little Navmap_ to see any changes. Also, do not edit the files while _Little Navmap_ is running since it might overwrite your changes.
 
 To undo all changes simply delete a file. It will be created again containing the default values when _Little Navmap_ is started.
 
@@ -21,7 +21,7 @@ Version=2.0.1
 ```
 Do not delete this since _Little Navmap_ relies on this information when updating the file. It will reset the file occasionally whenever the default settings change. A backup will be created to save your user customizations. 
 
-Examples for a backup files: `little_navmap_mapstyle_backup_2.0.0.ini` or `little_navmap_mapstyle_backup.ini`.
+Examples for backup files: `little_navmap_mapstyle_backup_2.0.0.ini` or `little_navmap_mapstyle_backup.ini`.
 
 The file will be backed up and reset if you delete or change the version.
 

@@ -99,7 +99,7 @@ VHF Omni Directional Radio Range with distance measuring equipment- radio navaid
 Co-located VHF omnidirectional range (VOR) beacon and tactical air navigation system (TACAN) beacon.
 
 ## Userpoint
-A user defined waypoint like a bookmark, point of interest or visual reporting point \(VRP\).
+A user-defined waypoint like a bookmark, point of interest or visual reporting point \(VRP\).
 
 ## VRP
 Visual reporting point for VFR flights. A userpoint type.
@@ -108,4 +108,4 @@ Visual reporting point for VFR flights. A userpoint type.
 General point of interest. A userpoint type.
 
 ## Flight Plan Position
-A user defined waypoint which is part of the flight plan.
+A user-defined waypoint which is part of the flight plan.

@@ -1,6 +1,6 @@
 ## ![Options](../images/icons/settings.png "Options") Options Dialog {#options-dialog}
 
-Most options are self explaining and tooltips contain more detailed explanations if applicable.
+Most options are self-explaining and tooltips contain more detailed explanations if applicable.
 
 You can immediately check the effect of your changes on the map display by moving the dialog
 `Options` to the side and pressing `Apply`.
@@ -41,7 +41,7 @@ Has map related customization options. Allows to set the click sensitivity, zoom
 
 This tab contains options for symbol and text sizes, flight plan and aircraft trail colors and more.
 
-The right side of the tab contains a tree that allows to select the text labels that should be shown at
+The right side of the tab contains a tree view that allows to select the text labels that should be shown at
 airports, user aircraft and AI/multiplayer aircraft.
 
 ![Map Display](../images/optionmapdisplay.jpg "Map Display")
@@ -87,7 +87,7 @@ The active \(magenta\) leg will be shown on top of the flight plan table when a 
 
 #### Allow scrolling and zooming in the map {#simulator-aircraft-allow-scroll-zoom}
 
-The map will stop following the aircraft for the given time if the user does any interaction with the map like scrolling or zooming. This allows to orientate around the destination or other places without getting back to the program when flying.
+The map will stop following the aircraft for the given time if the user does any interaction with the map like scrolling or zooming. You can quickly check out the destination or your overall progress, and after you stop interacting with the map, _Little Navmap_ will return to following your aircraft.
 
 #### Jump back to aircraft and resume aircraft following after this time {#simulator-aircraft-jump-timeout}
 
@@ -109,7 +109,7 @@ The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 
 #### Flight Plan Elevation Profile {#cache-elevation}
 
-The lower part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
+The bottom part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
 
 Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
 
@@ -172,7 +172,7 @@ The update rate depends on configuration and is typically three minutes.
 
 ##### Custom with Status File {#online-service-custom-status}
 
-This option allows to connect to a private network and will download a `status.txt` file on statup which contains further links to e.g. the `whazzup.txt` file.
+This option allows to connect to a private network and will download a `status.txt` file on startup which contains further links to e.g. the `whazzup.txt` file.
 
 ##### Custom {#online-service-custom-whazzup}
 
@@ -204,7 +204,7 @@ The whazzup file format is explained in the IVAO documentation library: [Whazzup
 
 Sets the update rate that defines how often the `whazzup.txt` file is downloaded.
 
-Allowed values are 30 to 1800 seconds where 180 is the default.
+Allowed values are 30 to 1800 seconds, 180s being the default.
 
 You can use smaller update rates for private online networks to improve map display updates.
 

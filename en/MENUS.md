@@ -16,7 +16,7 @@ You have to use the [Search Result Table View Context Menu](SEARCH.md#search-res
 
 #### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Open Flight Plan {#open-flight-plan}
 
-Opens a FSX PLN, a FS9 PLN, a FSC PLN, a X-Plane FMS or a FLP flight plan file. The type of file is determined by content and not file extension. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
+Opens an FSX PLN, an FS9 PLN, an FSC PLN, an X-Plane FMS or an FLP flight plan file. The type of file is determined by content and not file extension. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
 
 An opened flight plan file will be reloaded on start up \(reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab\).
 
@@ -34,7 +34,7 @@ All arrival procedures will be removed when appending a flight plan.
 
 #### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Save Flight Plan as PLN {#save-flight-plan-as}
 
-Saves the flight plan to a FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*.
+Saves the flight plan to an FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*.
 
 `Save Flight Plan as PLN` changes the current file type and name in *Little Navmap* which means that all further saves will go into the new PLN file.
 
@@ -50,7 +50,7 @@ Note that the waypoints of a procedure are not saved with the flight plan. This 
 
 The set ground speed is also saved with the flight plan.
 
-**Note that the P3D v4 shows the bizarre behavior of overwriting the flight plan when loading which erases all annotations. Save the plan to another place if you like to keep all information about procedures or speed.**
+**Note that, starting with v4.2, P3D shows the bizarre behavior of overwriting the flight plan when loading which erases all annotations. Save a copy of the plan to different location if you like to keep all information about procedures or speed.**
 
 #### ![Save Flight Plan as X-Plane FMS 11](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS 11") Save Flight Plan as X-Plane FMS 11 {#save-flight-plan-as-fms11}
 
@@ -66,7 +66,7 @@ Store FMS files into the `Output/FMS plans` directory inside the X-Plane directo
 
 #### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
 
-Exports the current flight plan as a FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan.
+Exports the current flight plan as an FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan.
 
 See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 
@@ -144,7 +144,7 @@ The flight plan has to be saved to `FSXP3D\SimObjects\Airplanes\mjc8q400\nav\rou
 
 ##### Export Flight Plan as IXEG FPL {#export-flight-plan-as-fpl}
 
-Exports the current flight plan as a FPL file usable by the IXEG Boeing 737 classic.
+Exports the current flight plan as an FPL file usable by the IXEG Boeing 737 classic.
 
 SIDs, STARs or approach procedures are not exported.
 
@@ -263,7 +263,7 @@ Allows undo and redo of all flight plan changes.
 
 #### ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure") Select a Start Position for Departure {#select-a-start-position-for-departure}
 
-A parking spot \(gate, ramp or fuel box\), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
+A parking spot \(gate, ramp or fuel box\), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right-clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
 
 ![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
@@ -286,7 +286,7 @@ Copies the route description of the current flight plan to the clipboard using t
 
 Deletes all intermediate waypoints and connects departure and destination using a great circle line.
 
-You can calculate a flight plan between any kind of waypoints, even user defined waypoints \(right click on the map and select `Add Position to Flight plan` to create one\). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
+You can calculate a flight plan between any kind of waypoints, even user-defined waypoints \(right-click on the map and select `Add Position to Flight plan` to create one\). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
 
 #### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Calculate Radionav {#calculate-radionav}
 
@@ -300,7 +300,7 @@ Uses Jet airways to create a flight plan.
 
 Calculated flight plans along airways will obey all airway restrictions like minimum and altitude. The program will also adhere to one-way and maximum altitude restrictions for X-Plane based navdata.
 
-The resulting minimum altitude is set into the flight plan altitude field. The flight plan altitude field is not changed if no altitude restrictions were found along the flight plan.
+The resulting minimum altitude is set in the flight plan altitude field. The flight plan altitude field is not changed if no altitude restrictions were found along the flight plan.
 
 A simplified east/west rule is used to adjust the cruise altitude to odd/even values \(this can be switched off in the `Options` dialog on the `Flight Plan` tab\).
 
@@ -376,15 +376,15 @@ _**Picture above:** All setting tool buttons highlighted that are affected by _`
 
 ##### ![Less Details](../images/icons/detailless.png "Less Details") Less Details {#less-details}
 
-Increases or decreases details on the map. More details means more airports, more navaids, more text information and bigger icons.
+Increases or decreases the detail level for the map. More details means more airports, more navaids, more text information and bigger icons.
 
 Note that map information will be truncated if too much detail is chosen. A red warning message will be shown in the statusbar if this is the case.
 
-The detail level is shown in the statusbar. Range is -5 for few details to +5 for most details.
+The detail level is shown in the statusbar. Range is -5 for least detail to +5 for most detail.
 
 #### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force Show Addon Airports {#force-show-addon-airports}
 
-Add-on airports are always shown independent of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
+Add-on airports are always shown independently of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
 
 #### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Show Airports with hard Runways {#show-airports-with-hard-runways}
 
@@ -396,7 +396,7 @@ Show airports that have only soft surfaced runways or only water runways. This t
 
 #### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Show empty Airports {#show-empty-airports}
 
-Shows empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
+Show empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
 
 An empty airport is defined as one which has neither parking nor taxiways nor aprons and is not an add-on. These airports are treated differently in _Little Navmap_ since they are the most boring of all default airports. Empty airports are drawn gray and behind all other airports on the map.
 
@@ -423,7 +423,7 @@ The definition of `3D` is arbitrary, though. A `3D` airport may contain just a s
 
 #### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Show Jet Airways {#show-jet-airways}
 
-Shows or hides these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
+Show or hide these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
 
 #### Airspaces {#airspaces}
 
@@ -431,15 +431,15 @@ Shows or hides these facilities or navaids on the map. Navaids might be hidden o
 
 Allows to enable or disable the display of all airspaces with one click. Use the menu items below this one or the toolbar buttons to display or hide the various airspace types.
 
-The airspaces toolbar contains buttons each having a drop down menu that allows to configure the airspace display like showing or hiding certain airspace types. Each drop down menu also has a `All` and `None` entry to check or deselect all types in the menu.
+The airspaces toolbar contains buttons each having a drop down menu that allows to configure the airspace display like showing or hiding certain airspace types. Each drop down menu also has `All` and `None` entries to select or deselect all types in the menu.
 
 ##### ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") Show Online Network Airspaces {#show-online-airspaces}
 
 This button or menu item is only visible if an online network is enabled.
 
-It allows to hide or show center, tower, ground, approach and other airspaces from the currently selected online network independent of the simulator or Navigraph airspaces.
+It allows to hide or show center, tower, ground, approach and other airspaces from the currently selected online network independently of the simulator or Navigraph airspaces.
 
-Online airspaces can also selectively shown or hidden by type using the menu items below.
+Online airspaces can also be shown or hidden by type using the menu items below.
 
 Note that the displayed airspace circles do not depict the real airspace boundaries but are merely an indicator for the presence of an active center or tower.
 
@@ -471,30 +471,30 @@ Allows filtering of the airspace display by altitude. Either below or above 10,0
 
 #### Userpoints
 
-Allows to selectively hide or show user defined waypoints by type.
+Allows to hide or show user-defined waypoints by type.
 
 The menu item `Unknown Types` shows or hides all types which do not belong to a known type.
 
 The type `Unknown` ![Unknown](../images/icons/userpoint_Unknown.png "Airspace Altitude Limitations")
  shows or hides all userpoints which are exactly of type `Unknown`.
 
-See [User defined Waypoints](USERPOINT.md) for more information on user defined waypoints.
+See [User-defined Waypoints](USERPOINT.md) for more information on user-defined waypoints.
 
 #### ![Show Flight Plan](../images/icons/route.png "Show Flight Plan") Show Flight Plan {#show-flight-plan}
 
-Shows or hides the flight plan. The flight plan is shown independent of the zoom distance.
+Show or hide the flight plan. The flight plan is shown independently of the zoom distance.
 
 #### ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches") Show Missed Approaches {#show-missed-approaches}
 
-Shows of hides the missed approaches of the current flight plan. This does not affect the preview in the search tab `Procedures`.
+Show or hide the missed approaches of the current flight plan. This does not affect the preview in the search tab `Procedures`.
 
-**Note that this function changes the active flight plan leg sequencing:** Sequencing the active leg will stop if the destination is reached and missed approaches are not displayed. Otherwise sequencing will continue with the missed approach and the simulator aircraft progress will show the remaining distance to the end of the missed instead.
+**Note that this function changes the active flight plan leg sequencing:** Sequencing the active leg will stop if the destination is reached and missed approaches are not displayed. Otherwise sequencing will continue with the missed approach and the simulator aircraft progress will show the remaining distance to the end of the missed approach instead.
 
 #### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Show Aircraft {#show-aircraft}
 
-Shows the user aircraft and keeps it centered on the map if connected to the simulator. The user aircraft is always shown independent of the zoom distance.
+Shows the user aircraft and keeps it centered on the map if connected to the simulator. The user aircraft is always shown independently of the zoom distance.
 
-The icon color and shape indicates the aircraft type and if the aircraft is on ground \(gray border\).
+The icon color and shape indicates the aircraft type and whether the aircraft is on ground \(gray border\).
 
 ![User Aircraft](../images/icons/aircraft_small_user.png "User Aircraft") User aircraft in flight.
 
@@ -502,28 +502,28 @@ A click on the user aircraft shows more information in the `Simulator Aircraft` 
 
 More options to change the map behavior while flying can be found in the dialog `Options` on the tab [Simulator Aircraft](OPTIONS.md#simulator-aircraft).
 
-The aircraft centering will be switched off when using one of the following functions. Note that this is the default behavior which can be modified in the options dialog.
+The aircraft centering will be switched off when using one of the following functions. Note that this default behavior can be modified in the options dialog.
 
-* Double click into a table view or map display to zoom to an airport or a navaid.
+* Double-click into a table view or map display to zoom to an airport or a navaid.
 * Context menu item `Show on map`.
 * `Goto Home` or `Goto Center for Distance Search`.
 * `Map` link in `Information` dock window.
-* `Show Flight Plan`. Either manually in a menu item or after loading.
+* `Show Flight Plan`, when selected manually, or automatically after loading a flight plan.
 * Centering a Google Earth KML/KMZ file after loading
 
-This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` and enable `Show Aircraft` again.
+This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` or enable `Show Aircraft` again.
 
 #### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Show Aircraft Trail {#show-aircraft-trail}
 
-Shows the user aircraft trail. The trail is always shown independent of the zoom distance. It is saved and will be reloaded on program startup.
+Show the user aircraft trail. The trail is always shown independently of the zoom distance. It is saved and will be reloaded on program startup.
 
 The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail`. The trail is also deleted when the user aircraft jumps over large distance when assigning a new airport, for example.
 
-The size of the trail is limited for performance reasons. Points will be removed from the beginning when it gets too long.
+The length of the trail is limited for performance reasons. If it exceeds the maximum length, the trail is truncated and the oldest segments are lost.
 
 #### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Show Compass Rose {#show-compass-rose}
 
-Shows a compass rose on the map which indicates true north and magnetic north. Aircraft heading and aircraft track are shown if connected to a simulator.
+Show a compass rose on the map which indicates true north and magnetic north. Aircraft heading and aircraft track are shown if connected to a simulator.
 
 The rose is centered around the user aircraft if connected. Otherwise it is centered on the map view.
 
@@ -533,13 +533,13 @@ See [Compass Rose](COMPASSROSE.md) for details.
 
 Shows AI and multiplayer aircraft or ships on the map. Multiplayer vehicles can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
 
-The icon color and shape indicates the aircraft type and if the aircraft is on ground \(gray border\).
+The icon color and shape indicates the aircraft type and whether the aircraft is on ground \(gray border\).
 
 ![AI or Multiplayer Aircraft](../images/icons/aircraft_small.png "AI or Multiplayer Aircraft") AI or multiplayer aircraft from the simulator. This includes aircraft that are injected by the various online network clients. A click on the AI aircraft or ship shows more information in the `Simulator Aircraft` dock window in the tab `AI / Multiplayer`.
 
 ![Online Multiplayer Aircraft](../images/icons/aircraft_online.png "User Aircraft") Multiplayer aircraft/client from an online network. See [Online Networks](ONLINENETWORKS.md). A click on the online  aircraft shows information in the `Information` dock window in the separate tab `Online Clients`.
 
-Note that ship traffic is not available and AI aircraft information is limited in X-Plane.
+Note that, in X-Plane, ship traffic is not available and AI aircraft information is limited.
 
 The displayed vehicles are limited by the used multiplayer system if _Little Navmap_ is not connected to an online network like VATSIM or IVAO. Multiplayer aircraft will disappear depending on distance to user aircraft. For AI in FSX or P3D this is currently about 100 nautical miles or around 200 kilometers.
 
@@ -549,21 +549,21 @@ _Little Navmap_ limits the display of AI vehicles depending on size. Zoom close 
 
 On the lowest zoom distance all aircraft and ships are drawn to scale on the map.
 
-Aircraft labels are forced to show independent of zoom level for the next five AI/multiplayer aircraft closest to the user that are within 20 nm distance and 5000 ft elevation.
+Aircraft labels are forced to show independently of zoom level for the next five AI/multiplayer aircraft closest to the user that are within 20 nm distance and 5000 ft elevation.
 
 All aircraft icons can be customized: [User, AI and Multiplayer Aircraft Icons](CUSTOMIZE.md#customize-aircraft-icons).
 
 #### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
 
-Shows a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [anti meridian](http://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
+Show a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [antimeridian](http://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
 
 #### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Show Country and City Names {#show-country-and-city-names}
 
-Show county, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
+Show country, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
 
 #### ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading") Show Hillshading {#show-hillshading}
 
-Shows hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
+Show hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
 
 #### Projection {#projection}
 
@@ -687,29 +687,29 @@ Ignores the Navigraph database and shows only information read from the simulato
 
 #### Show Database Files {#show-database-files}
 
-This opens _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer \(e.g. Windows, Mac or Linux\) using the same database that was created on the computer running the flight simulator.
+Open _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer \(e.g. Windows, Mac or Linux\) using the same database that was created on the computer running the flight simulator.
 
 #### ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library {#load-scenery-library}
 
-Opens the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
+Open the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
 
 #### ![Copy Airspaces to X-Plane Database](../images/icons/airspacecopy.png "Copy Airspaces to X-Plane Database") Copy Airspaces to X-Plane Database {#copy-airspaces-to-xplane}
 
-This allows to copy airspace information from a FSX or P3D database to a X-Plane database. This is needed since X-Plane comes with limited airspace information.
+Copy airspace information from an FSX or P3D database to an X-Plane database. This is needed since X-Plane comes with limited airspace information.
 
 All airspaces already loaded from X-Plane are deleted before copying. See [X-Plane Airspaces](SCENERY.md#load-scenery-library-dialog-xp-airspaces) for more information.
 
-You have to switch to a FSX or P3D simulator database first to enable this menu item.
+You have to switch to an FSX or P3D simulator database first to enable this menu item.
 
 The airspace information is deleted when reloading the X-Plane database. Therefore you have to copy the airspaces again after reloading.
 
 ### Userdata Menu {#userdata-menu}
 
-See [User defined Waypoints](USERPOINT.md) for more information on user defined waypoints.
+See [User-defined Waypoints](USERPOINT.md) for more information on user-defined waypoints.
 
 #### Show Search {#userdata-menu-show-search}
 
-Raises the dock window `Search` and the tab `Userpoints` where you can edit, add delete and seach user defined waypoints.
+Raise the dock window `Search` and the tab `Userpoints` where you can edit, add delete and seach user-defined waypoints.
 
 #### Import CSV {#userdata-menu-import-csv}
 
@@ -721,7 +721,7 @@ See [CSV Data Format](USERPOINT.md#userpoints-csv) for a more detailed descripti
 
 #### Import X-Plane user_fix.dat {#userdata-menu-import-user-fix}
 
-Import user defined waypoints from the file `user_fix.dat`. The file does not exist per default in X-Plane and has to be created either manually or by exporting from _Little Navmap_.
+Import user-defined waypoints from the file `user_fix.dat`. The file does not exist by default in X-Plane and has to be created either manually or by exporting from _Little Navmap_.
 
 The default location is `XPLANE/Custom Data/user_fix.dat`.
 
@@ -733,7 +733,7 @@ See [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane) for more 
 
 #### Import Garmin GTN {#userdata-menu-import-garmin-gtn}
 
-Reads user defined waypoints from the Garmin `user.wpt` file. Refer to the manual of the Garmin unit you are using for more information about format and file location.
+Reads user-defined waypoints from the Garmin `user.wpt` file. Refer to the manual of the Garmin unit you are using for more information about format and file location.
 
 The imported userpoints are of type `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") which can be changed after import using the bulk edit functionality.
 
@@ -741,9 +741,9 @@ See [Garmin user.wpt Data Format](USERPOINT.md#userpoints-garmin) for more infor
 
 #### Export CSV {#userdata-menu-export-csv}
 
-Create or append user defined waypoints to a CSV file. A dialog asks if only selected userpoints should be exported and if the userpoints should be appended to an already present file.
+Create or append user-defined waypoints to a CSV file. A dialog asks if only selected userpoints should be exported and if the userpoints should be appended to an already present file.
 
-Note that the exported file contains an extra column `Region` compared to the Plan-G format. The description field supports more than one line of text and special characters. Therefore, not all programs might be able to import this file. If needed adapt the user defined waypoints.
+Note that the exported file contains an extra column `Region` compared to the Plan-G format. The description field supports more than one line of text and special characters. Therefore, not all programs might be able to import this file. If needed, adapt the user-defined waypoints.
 
 #### Export X-Plane user_fix.dat {#userdata-menu-export-user-fix}
 
@@ -774,7 +774,7 @@ See [The Compiler and File Formats](http://www.prepar3d.com/SDKv4/sdk/world/scen
 
 #### Create Logbook entries {#userdata-menu-create-logbook}
 
-Checking this menu item enables a simple logbook functionality.
+Checking this menu item enables a simple logbook feature.
 
 _Little Navmap_ will create a userpoint of type `Logbook` ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") on each takeoff and landing when connected to a simulator.
 
@@ -782,9 +782,9 @@ These two logbook entries contain all available information, like the flight pla
 
 #### Clear database {#userdata-menu-clear-database}
 
-Removes all user defined waypoints from the database. 
+Remove all user-defined waypoints from the database. 
 
-A CSV backup file named `little_navmap_userdata_backup.csv` is created in the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` before deleting all.
+A CSV backup file named `little_navmap_userdata_backup.csv` is created in the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` before deleting all user-defined waypoints.
 
 _Little Navmap_ also creates a full database backup on every start. See [Files](FILES.md#userdata).
 
@@ -792,21 +792,21 @@ _Little Navmap_ also creates a full database backup on every start. See [Files](
 
 #### ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Flight Simulator Connection {#flight-simulator-connection}
 
-Opens the `Connect` dialog allowing _Little Navmap_ to connect directly to a Flight Simulator, the *Little Xpconnect* X-Plane plugin, or remotely using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information.
+Open the `Connect` dialog allowing _Little Navmap_ to connect directly to a Flight Simulator, the *Little Xpconnect* X-Plane plugin, or remotely using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information.
 
 #### Reset all Messages {#reset-all-messages}
 
-This will re-enable all dialogs that were disabled by selecting `Do not show this dialog again` or similar messages.
+Re-enable all dialogs that were disabled by selecting `Do not show this dialog again` or similar messages.
 
 #### ![Options](../images/icons/settings.png "Options") Options {#options}
 
-Opens the [Options dialog](OPTIONS.md#options-dialog).
+Open the [Options dialog](OPTIONS.md#options-dialog).
 
 ### Window Menu {#window-menu}
 
 #### Map Overlays {#map-overlays}
 
-Allows hiding of the floating map overlays, like the overview on the top left or the compass on the top right corner of the map window.
+Show or hide floating map overlays, like the overview on the top left or the compass on the top right corner of the map window.
 
 #### ![Search](../images/icons/searchdock.png "Search") Search {#search}
 
@@ -820,51 +820,51 @@ Allows hiding of the floating map overlays, like the overview on the top left or
 
 #### ![Legend](../images/icons/legenddock.png "Legend") Legend {#legend}
 
-Opens or closes these dock windows. The map dock window cannot be closed.
+Open or close these dock windows. The map dock window cannot be closed.
 
 #### Main Toolbar, Map Toolbar, Map Airspaces Toolbar, Map Options Toolbar, Flight Plan Toolbar, Dock Window Toolbar, Statusbar {#main-toolbar-options}
 
-Shows or hides these toolbars and the statusbar.
+Show or hide these toolbars and the statusbar.
 
 #### Reset Window Layout {#reset-layout}
 
-Resets the main window layout back to default. This involves visibility, position and state of all dock windows as well as the toolbars. This function can be helpful if a dock window gets lost on multi monitor setups.
+Reset the main window layout back to default. This involves visibility, position and state of all dock windows as well as the toolbars. This function can be helpful if a dock window gets lost on multi monitor setups.
 
 ### Help Menu {#help-menu}
 
 #### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contents \(Online\) {#help-contents}
 
-Shows the online user manual in the default web browser.
+Show the online user manual in the default web browser.
 
 #### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contents \(Offline, PDF\) {#help-contents-offline}
 
-Shows the included PDF user manual in the default PDF viewer.
+Show the included PDF user manual in the default PDF viewer.
 
 #### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legend {#navmap-legend-map-legend}
 
-Shows the navigation related map legend in the `Legend` dock window. You can also access the legend here: [Navmap Legend](LEGEND.md).
+Show the navigation related map legend in the `Legend` dock window. You can also access the legend here: [Navmap Legend](LEGEND.md).
 
 #### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Map Legend for current Map Theme {#navmap-legend-map-legend}
 
-Shows the map theme dependent base legend in the `Legend` dock window. Note that the legend is not available for all map themes.
+Show the map theme dependent base legend in the `Legend` dock window. Note that the legend is not available for all map themes.
 
 #### ![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap") About Little Navmap {#about-little-navmap}
 
-Shows version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author's e-mail address.
+Show version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author's e-mail address.
 
 #### ![About Marble](../images/icons/marble.png "About Marble") About Marble {#about-marble}
 
-Information about the [Marble widget](https://marble.kde.org) that is used to download and show the maps.
+Display information about the [Marble widget](https://marble.kde.org) that is used to download and show the maps.
 
 #### ![About Qt](../images/icons/qticon.png "About Qt") About Qt {#about-qt}
 
-Information about the [Qt application framework](https://www.qt.io) that is used by _Little Navmap_.
+Display information about the [Qt application framework](https://www.qt.io) that is used by _Little Navmap_.
 
-#### ![Dontate for this Program](../images/icons/about.png "Dontate for this Program") Dontate for this Program {#donate}
+#### ![Donate for this Program](../images/icons/about.png "Dontate for this Program") Dontate for this Program {#donate}
 
 Opens the donation web page in your default browser.
 
-If you would like to show your appreciation you can donate there using PayPal.
+If you would like to show your appreciation you can donate using PayPal.
 
 Donations are purely optional but greatly appreciated.
 
@@ -876,17 +876,17 @@ See [Checking for Updates](UPDATE.md) for more information.
 
 ## Statusbar {#statusbar}
 
-The statusbar shows various indications \(from left to right\):
+The statusbar at the bottom of the main window shows various indications \(from left to right\):
 
-* Last action or short help to explain a menu item or toolbar button.
-* Indicator that shows airport types, airspaces, navaids or AI vehicles currently visible on the map. The tooltip gives more details.
-  * A red warning message `Too many objects` will be shown if too many objects are displayed on the map due to too high a detail level. The map display will be incomplete if this happens.
-  * A red `Database empty` message will be shown if the currently selected database has no content and needs to be loaded.
-* Connection status for a local or remote connection. The tooltip gives more details about the status like the hostname for remote connections.
+* Last action or quick help explaining a menu item or toolbar button.
+* Connection status for a local or remote connection. The tooltip provides more detail about the status, like the hostname for remote connections.
   * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
   * `Connected`: A connection was established.
   * `Disconnected`: The simulator or _Little Navconnect_ exited.
-* Map detail level. Range is -5 for few details to +5 for most details.
+* Indicator that shows airport types, airspaces, navaids or AI vehicles currently visible on the map. The tooltip gives more details.
+  * A red warning message `Too many objects` will be shown if too many objects are displayed on the map due to too high a detail level. The map display will be incomplete if this happens.
+  * A red `Database empty` message will be shown if the currently selected database has no content and needs to be loaded.
+* Map detail level. Range is -5 for least detail to +5 for most detail.
 * Online map download progress indicator. This shows the state of the current map download. The text is prefixed with a red `Offline.` indication if offline mode is enabled.
   * `Done.`: All map data loaded successfully.
   * `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.

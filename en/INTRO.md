@@ -36,19 +36,19 @@ See the two chapters below if you like to run _Little Navmap_ in a networked set
 
 The user interface of _Little Navmap_ consists of a main window and several dock windows which can be detached from the main window or arranged in any order within the main window.
 
-The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double clicking their title bar or by clicking on the window symbol on the top right.
+The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double-clicking their title bar or by clicking on the window symbol on the top right.
 
 Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
 
 All docked windows except the map window can be closed if they are not needed. You can even drop docked windows on each other to create a tabbed view. The tabs will appear at the bottom of the dock stack in this case.
 
-**Press **`Ctrl`** before clicking on the window titlebar to prevent a window from going into docked state and keep it floating.**
+**Hold **`Ctrl`** while clicking on the window titlebar to prevent a window from going into docked state and keep it floating.**
 
 Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
 
-**Use the **`Main Menu` -&gt; `Window` **menu to bring docked windows or toolbars back.**
+**Use the **`Main Menu` -&gt; `Window` **menu to restore closed windows or toolbars.**
 
-**The **`Main Menu` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
+**The **`Main Menu` -&gt; `Window` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
 
 #### Context Menus
 
@@ -101,9 +101,9 @@ The mousewheel allows to cycle between tabs in a more convenient way.
 
 Almost all dialogs, text labels and all information windows in _Little Navmap_ allow copy and paste.
 
-You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it into the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons. This can be helpful to report errors.
+You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it to the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons. This can be helpful to report errors.
 
-The table views for the flight plan or airport/navaid search results allow copying of the results in CSV format into the clipboard which can be imported into a spreadsheet program like [_LibreOffice Calc_](https://www.libreoffice.org) or _Microsoft Excel_.
+The table views for the flight plan or airport/navaid search results allow copying of the results in CSV format to the clipboard which can be pasted into a spreadsheet program like [_LibreOffice Calc_](https://www.libreoffice.org) or _Microsoft Excel_.
 
 ### Translation and Locale {#translation-and-locale}
 
@@ -158,7 +158,7 @@ See the chapter [Navigation Databases](NAVDATA.md) for more information.
 
 *Little Navmap* will use any navdata updates that are installed in the directory `Custom Data`. Any older updates installed in the GPS directories are not used.
 
-User defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
+User-defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
 
 Note that neither ARINC nor the FAACIFP files are supported.
 

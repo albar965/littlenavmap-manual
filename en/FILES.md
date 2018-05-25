@@ -2,7 +2,7 @@
 
 ### Logs {#logs}
 
-Log files of _Little Navmap_ for are stored in the directories:
+Log files of _Little Navmap_ are stored in these directories:
 
 * Windows: `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`
 * Linux: `/tmp/abarthel-little_navmap.log`
@@ -18,7 +18,7 @@ If you like to report an issue when loading the scenery database: Load the datab
 
 ### Configuration {#configuration}
 
-All configuration files for my programs are stored in the directories:
+All configuration files for my programs are stored in these directories:
 
 * Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
 * Linux and macOS: `$HOME/.config/ABarthel`
@@ -35,7 +35,7 @@ Three more configuration files are created for customization of colors and style
 
 See [Customization](CUSTOMIZE.md) for more information.
 
-_Little Navmap_ might reset these files when updated but will create a backup file before.
+_Little Navmap_ might reset these files when updated, but only after creating backup files.
 
 ### Disk Cache {#cache}
 
@@ -48,9 +48,10 @@ You can delete the cache manually to save space if _Little Navmap_ is not runnin
 
 ### Databases {#databases}
 
-Several databases are stored in the directory:
+Databases are stored in the directories:
 
-`...\ABarthel\little_navmap_db`
+* Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+* Linux and macOS: `$HOME/.config/ABarthel/little_navmap_db`
 
 All these databases are [SQLite](http://sqlite.org) files which can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
 
@@ -73,7 +74,7 @@ The files are:
 
 #### Userdata {#userdata}
 
-The file `little_navmap_userdata.sqlite` contains the user defined waypoints. 
+The file `little_navmap_userdata.sqlite` contains the user-defined waypoints. 
 
 _Little Navmap_ creates a backup copy on startup and keeps up to four backup files: `little_navmap_userdata_backup.sqlite` to `little_navmap_userdata_backup.sqlite.3`. You can copy these files back to the original database `little_navmap_userdata.sqlite` if you did something wrong.
 

@@ -4,11 +4,11 @@ This chapter briefly describes the recognized coordinate formats in flight plan 
 
 The input field shows a message below which indicates if the coordinates were recognized and shows the translated coordinates in the preset format as chosen in dialog `Options` on tab `Units`. A red message is shown in case of error.
 
-Check the displayed translated coordinate if you input was parsed correctly.
+Check the displayed translated coordinates to verify that your input was parsed correctly.
 
 ![Edit Flight Plan Position](../images/edit_flightplan_waypoint_tooltip.jpg "Edit Flight Plan Position")
 
-_**Picture above:** Editing a user defined flight plan position. Tooltip gives a quick help on coordinate formats._
+_**Picture above:** Editing a user-defined flight plan position. Tooltip gives a quick help on coordinate formats._
 
 ### General
 
@@ -18,7 +18,7 @@ N/S and E/W designators are required. Case does not matter.
 
 Degree, minute and second signs can be omitted if numbers are separated by spaces.
 
-A space is only required to separate latitude and longitude or degrees/minutes/seconds if no signs are used.
+A space is only required to separate latitude and longitude or degrees/minutes/seconds if no unit signs are used.
 
 Decimal separator can be period \(English\) or the locale dependent separator like e.g. comma \(German\).
 

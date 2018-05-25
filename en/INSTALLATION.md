@@ -42,6 +42,17 @@ _**Prepar3D**_: In the same directory as `Prepar3D.exe` is a `redist\Interface` 
 
 _**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
+#### Improve Start-up Time Improve Start-up Time {#improve-start-up-time}
+
+Anti-virus program can significantly slow down the startup and execution of the program in Windows.
+
+Therefore, it is recommended to exclude the following directories from scanning:
+
+* Disk cache for map tiles: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Scenery library and userdata databases`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+
+These directories to not contain executable files and are accessed frequently by _Little Navmap_.
+
 ### macOS
 
 Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
@@ -52,7 +63,7 @@ Extract the tar archive to any place and run the executable `littlenavmap` to st
 
 `./littlenavmap`
 
-Most file managers will start the program if double clicked.
+Most file managers will start the program if double-clicked.
 
 ### X-Plane
 

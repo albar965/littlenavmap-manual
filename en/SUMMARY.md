@@ -13,7 +13,7 @@
 * [Map Display Legend](LEGEND.md)
 * [Map Display Compass Rose](COMPASSROSE.md)
 * [Map Flight Plan Editing](MAPFPEDIT.md)
-* [User defined Waypoints](USERPOINT.md)
+* [User-defined Waypoints](USERPOINT.md)
 * [Online Networks](ONLINENETWORKS.md)
 * [Search Dock Window](SEARCH.md)
 * [Search Dock Window - Procedures](SEARCHPROCS.md)
