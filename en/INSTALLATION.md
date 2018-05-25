@@ -42,7 +42,7 @@ _**Prepar3D**_: In the same directory as `Prepar3D.exe` is a `redist\Interface` 
 
 _**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
-#### Improve Start-up Time Improve Start-up Time {#improve-start-up-time}
+#### Improve Start-up Time {#improve-start-up-time}
 
 Anti-virus program can significantly slow down the startup and execution of the program in Windows.
 
