@@ -19,7 +19,9 @@ Some of the INI files contain a section `[Options]` with a key `Version` as show
 [Options]
 Version=2.0.1
 ```
-Do not delete this since _Little Navmap_ relies on this information when updating the file. It will reset the file occasionally whenever the default settings change. A backup will be created to save your user customizations. 
+**Do not delete this since _Little Navmap_ relies on this information when updating the file. It will reset the file occasionally whenever the default settings change. A backup will be created to save your user customizations.**
+
+**Add this version section to all new files. Otherwise, **_Little Navmap_** might reset the content.**
 
 Examples for backup files: `little_navmap_mapstyle_backup_2.0.0.ini` or `little_navmap_mapstyle_backup.ini`.
 

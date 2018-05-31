@@ -178,7 +178,7 @@ Delete the selected airport, navaid or user flight plan position from the plan.
 
 #### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Edit Flight Plan Position {#edit-name-of-user-waypoint}
 
-Change the name or position of a user-defined waypoint.
+Change the name or position of a user-defined waypoint. See [Edit Flight Plan Position](EDITFPPOSITION.html).
 
 The length of the name is limited to 10 characters when saving to a PLN file. Other flight plan formats have stronger limitations on length and allowed characters.
 
