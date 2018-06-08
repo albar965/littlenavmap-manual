@@ -16,11 +16,15 @@ The installation of _Little Navmap_ does not change any registry entries \(in Wi
 
 Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
 
-Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. 
+Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`.
 
 **See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
 
-In some cases you have to install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784). 
+In some cases you have to install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784).
+
+**Install the Visual C++ Redistributable Package if you get a warning about the SSL subsystem not being initialized.
+The program will not be able to use encrypted network connections \(i.e. HTTPS\) that are needed to check for updates or
+to load online maps.**
 
 **Install both 32 and 64 bit versions.**
 
