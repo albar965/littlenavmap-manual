@@ -12,5 +12,5 @@ More maps and information about map configuration and DGML files can be found he
 
 * Download more maps for the Marble widget \(only Earth maps are supported in `Little Navmap`\): [Additional Maps](https://marble.kde.org/maps.php)
 * A tutorial that shows how to create a map theme based on tiled images: [Marble/CustomMaps](https://techbase.kde.org/Marble/CustomMaps)
-* A tutorial showing how to create a map theme based on [OSM Slippy Maps](http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [How to create map themes based on OSM slippy maps](https://techbase.kde.org/Marble/OSMSlippyMaps)
+* A tutorial showing how to create a map theme based on [OSM Slippy Maps](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [How to create map themes based on OSM slippy maps](https://techbase.kde.org/Marble/OSMSlippyMaps)
 * How to create a historical map for Marble: [Historical Maps for Marble](https://techbase.kde.org/Marble/HistoricalMaps)

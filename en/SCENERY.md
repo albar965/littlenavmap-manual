@@ -13,7 +13,7 @@ Loading a scenery library can take from 2 to 15 minutes depending on your setup 
 
 For FSX/P3D, all airports that are not located in the default `Scenery` directory of FSX/P3D are considered to be add-on airports. For X-Plane, all airports located in the `Custom Scenery` directory of X-Plane are considered to be add-on airports. Add-on airports are highlighted on the map using emphasized \(bold and italic\) text.
 
-If an add-on only corrects airport elevations or navigation data, it might be undesirable to display the updated airports as add-on airports on the map. You can exclude folders populated by this add-on from the add-on recognition in the `Options` dialog on the `Scenery Library Database` tab. 
+If an add-on only corrects airport elevations or navigation data, it might be undesirable to display the updated airports as add-on airports on the map. You can exclude folders populated by this add-on from the add-on recognition in the `Options` dialog on the `Scenery Library Database` tab.
 
 See [Options](OPTIONS.md#scenery-library-database) for more information about excluding scenery.
 

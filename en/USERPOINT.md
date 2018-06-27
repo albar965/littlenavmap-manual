@@ -28,7 +28,7 @@ See below for more information about the add dialog.
 
 #### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Edit Userpoint {#userpoints-edit}
 
-Open the edit dialog for one or more userpoints. 
+Open the edit dialog for one or more userpoints.
 
 The edit dialog shows a column of checkboxes on the right side if more than one userpoint is selected. These allow to choose the fields to edit.
 
@@ -70,7 +70,7 @@ The field `Visible from` allows to define visibility on the map depending on zoo
 
 Valid coordinates are required to confirm the dialog. See [Coordinate Formats](COORDINATES.md#coordinates-formats) for a detailed description of the recognized coordinate formats. A label below the coordinates displays the parsed coordinates or an error message in case the coordinates could not be parsed.
 
-All other text fields are optional and can be left blank. 
+All other text fields are optional and can be left blank.
 
 The userpoint is removed on next startup of _Little Navmap_ when `Temporary userpoint. Delete on next startup.` is checked.
 
@@ -308,7 +308,7 @@ This export option creates an XML file which can be compiled into an BGL file co
 
 The region and ident fields are required for this export option. If region is empty or otherwise invalid `ZZ` is used. All waypoints are of type `NAMED`.
 
-See [The Compiler and File Formats](http://www.prepar3d.com/SDKv4/sdk/world/scenery/scenery_overview.html) for information on how to compile and add the BGL to the simulator.
+See Prepar3D SDK documentation for information on how to compile and add the BGL to the simulator.
 
 **Example:**
 ``` xml

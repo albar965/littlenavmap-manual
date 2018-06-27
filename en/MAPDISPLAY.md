@@ -70,6 +70,8 @@ The display will change from a single icon to an airport diagram if you zoom in 
 
 The airport diagram provides more information through tooltips for parking and tower positions. A right-click on a parking position opens the context menu and allows to select the start position for flight plan departure.
 
+**Airspaces are hidden if the airport diagram is shown.**
+
 See the [Nav Map Legend](LEGEND.md#airport-diagram) for details about the airport diagram.
 
 ![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")

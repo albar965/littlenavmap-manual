@@ -4,8 +4,8 @@ _Little Navmap_ can display METARs from several sources:
 
 * FSX or P3D if connected. This also applies to network setups.
 * X-Plane real time weather from the `METAR.rwx` file. Not available when _Little Navmap_ runs on a different computer than your flight simulator.
-* [NOAA](http://www.weather.gov) online weather service
-* [VATSIM](http://www.vatsim.net) network online weather service
+* [NOAA](https://www.weather.gov) online weather service
+* [VATSIM](https://www.vatsim.net) network online weather service
 * [HiFi Simulation Technologies](http://www.hifisimtech.com):
   * _Active Sky Next_ \(ASN\)
   * _AS16_

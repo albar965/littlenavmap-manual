@@ -406,7 +406,7 @@ Airports having only water runways are excluded from this definition to avoid un
 
 The function can be extended to X-Plane airports which are not marked as `3D`. This can be done by checking `Consider all X-Plane airports not being 3D empty` in the `Options` dialog on the `Map Display` tab. All airports not being marked as `3D` will be shown in gray on the map and can be hidden like described above if enabled.
 
-An airport is considered 3D if it is stored in 
+An airport is considered 3D if it is stored in
 `XPLANE/Custom Scenery/Global Airport Scenery/Earth nav data/apt.dat`.
 
 The definition of `3D` is arbitrary, though. A `3D` airport may contain just a single object, such as a light pole or a traffic cone or it may be a fully constructed major airport.
@@ -426,6 +426,8 @@ The definition of `3D` is arbitrary, though. A `3D` airport may contain just a s
 Show or hide these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
 
 #### Airspaces {#airspaces}
+
+Note that airspaces are hidden if the airport diagram is shown.
 
 ##### ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") Show Airspaces {#show-airspaces}
 
@@ -555,7 +557,7 @@ All aircraft icons can be customized: [User, AI and Multiplayer Aircraft Icons](
 
 #### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
 
-Show a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [antimeridian](http://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
+Show a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [antimeridian](https://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
 
 #### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Show Country and City Names {#show-country-and-city-names}
 
@@ -595,11 +597,11 @@ _**Picture above:** View at an Italian airport using OpenStreetMap theme and hil
 
 ##### OpenMapSurfer {#openmapsurfer}
 
-The [OSM Roads](http://korona.geog.uni-heidelberg.de) layer provided by [Heidelberg University](http://giscience.uni-hd.de). This theme includes optional hill shading which is available worldwide.
+The [OSM Roads](http://korona.geog.uni-heidelberg.de) layer provided by [Heidelberg University](https://www.geog.uni-heidelberg.de/giscience.html). This theme includes optional hill shading which is available worldwide.
 
 Note that the hill shading option of this map is marked experimental.
 
-Map data for this map is provided by © [OpenStreetMap](http://osm.org) contributors, rendering by [GIScience Research Group @ Heidelberg University](http://giscience.uni-hd.de) and map styling by Maxim Rylov.
+Map data for this map is provided by © [OpenStreetMap](https://www.openstreetmap.org) contributors, rendering by [GIScience Research Group @ Heidelberg University](https://www.geog.uni-heidelberg.de/giscience.html) and map styling by Maxim Rylov.
 
 [SRTM](http://srtm.csi.cgiar.org); ASTER GDEM is a product of [METI](http://www.meti.go.jp/english/index.html) and [NASA](https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
 
@@ -611,7 +613,7 @@ _**Picture above:** View at an Italian airport using the OpenMapSurfer theme and
 
 An online raster map that mimics a topographic map. Includes hill shading and elevation contour lines at lower zoom distances.
 
-The tiles for this map are provided by [OpenTopoMap](http://www.opentopomap.org).
+The tiles for this map are provided by [OpenTopoMap](https://www.opentopomap.org).
 
 ![OpenTopoMap](../images/otm.jpg "OpenTopoMap")
 
@@ -621,7 +623,7 @@ _**Picture above:** View at the eastern Alps using OpenTopoMap theme. A flight p
 
 A terrain map featuring hill shading and natural vegetation colors. The hill shading is available worldwide.
 
-Map tiles by [Stamen Design](http://stamen.com), under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+Map tiles by [Stamen Design](https://stamen.com), under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
 
 ![Stamen Terrain](../images/stamenterrain.jpg "Stamen Terrain")
 
@@ -631,13 +633,13 @@ _**Picture above:** View showing Stamen Terrain theme._
 
 A very bright map called *Positron* which allows to concentrate on the aviation features on the map display. The map includes the same hill shading option as the _OpenStreetMap_.
 
-Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
 
 ##### CARTO Dark {#carto-light} \(New in version 1.4.4\)
 
 A dark map called *Dark Matter*. The map includes the same hill shading option as the _OpenStreetMap_.
 
-Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](http://openstreetmap.org), under [ODbL](http://www.openstreetmap.org/copyright).
+Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
 
 ##### Simple \(Offline\) {#simple-offline}
 
@@ -770,7 +772,7 @@ This export options creates an XML file which can be compiled into an BGL file c
 
 The region and ident fields are required for this export option.
 
-See [The Compiler and File Formats](http://www.prepar3d.com/SDKv4/sdk/world/scenery/scenery_overview.html) for information on how to compile the BGL and how to add this to the simulator.
+See the Prepar3D SDK documentation for information on how to compile the BGL and how to add this to the simulator.
 
 #### Create Logbook entries {#userdata-menu-create-logbook}
 
@@ -782,7 +784,7 @@ These two logbook entries contain all available information, like the flight pla
 
 #### Clear database {#userdata-menu-clear-database}
 
-Remove all user-defined waypoints from the database. 
+Remove all user-defined waypoints from the database.
 
 A CSV backup file named `little_navmap_userdata_backup.csv` is created in the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` before deleting all user-defined waypoints.
 
@@ -893,10 +895,10 @@ The statusbar at the bottom of the main window shows various indications \(from 
   * `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
   * `Incomplete.`: Download failed. Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region or if you zoom in too close when using certain online maps.
 * Zoom distance \(viewpoint distance to earth surface\) in nautical miles or kilometers.
-* Cursor position on map as latitude and longitude depending on selected unit in the dialog `Options`. 
+* Cursor position on map as latitude and longitude depending on selected unit in the dialog `Options`.
   * Ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
   * Magnetic variance at the cursor position in degrees West or East.
-* Current date of month and zulu/UTC time `hours:minutes:seconds`. This is the real world time and not the simulator time. The tooltip gives more date and time information. 
+* Current date of month and zulu/UTC time `hours:minutes:seconds`. This is the real world time and not the simulator time. The tooltip gives more date and time information.
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 
