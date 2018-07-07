@@ -10,7 +10,7 @@ Note the difference between `Save Flight Plan as ...` and `Export Flight Plan as
 
 The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(X = supported, 0 = not supported\):
 
-| Format                        | Read | Write | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Cruise<br/>Alt. | Ground<br/>speed  | Proc. |          
+| Format                        | Read | Write | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Cruise<br/>Alt. | Ground<br/>speed  | Proc. |
 | ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ----  |
 | FSX PLN<br/>annotated         | X    | X     | X     | X           | X                      | X               | X               | X                 | X     |
 | FSX PLN                       | X    | X     | X     | X           | X                      | X               | X               | 0                 | 0     |
@@ -62,7 +62,7 @@ User waypoint names will be adapted to format limitations when saving. That mean
 
 The format FSX PLN is used as a default format because it supports most features and allows to include additional information in form of annotations which will be ignored by flight simulators and most other tools.
 
-**Note that, starting with v4.2, P3D shows the bizarre behavior of overwriting the flight plan when loading which erases all annotations. Save a copy of the plan to another location if you like to keep all information about procedures or speed.**
+**Note that P3D v4.2 overwrites the flight plan when loading, which erases all annotations. Save a copy of the plan to another location if you like to keep all information about procedures or speed.**
 
 ### ![FS9 PLN](../images/icons/filesave.png "FS9 PLN") FS9 PLN {#flight-plan-formats-fs9-pln}
 

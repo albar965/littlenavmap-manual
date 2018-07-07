@@ -71,7 +71,7 @@ Most file managers will start the program if double-clicked.
 
 ### X-Plane
 
-*Little Navmap* can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well.
+*Little Navmap* **can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well.**
 
 The *Little Xpconnect* plugin is included in the *Little Navmap* archive but can also be downloaded separately. See the included `README.txt` in the `Little Xpconnect` directory for installation instructions.
 

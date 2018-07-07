@@ -35,7 +35,7 @@ Thanks to all in the forums who patiently supported me and gave invaluable feedb
 
 This project and my library [atools](https://github.com/albar965/atools) would not exist without the fabulous documentation of the BGL files in the [FSDeveloper Wiki](https://www.fsdeveloper.com/wiki). So, here a huge thank-you to all the contributors.
 
-Also a thank you to Ed Williams for his Aviation Formulary.
+Also a thank you to Ed Williams for his [Aviation Formulary](http://www.edwilliams.org/avform.htm).
 
 Without the open source [Marble](https://marble.kde.org) widget that allows me to access and display all the maps I would still be busy doing that myself for years.
 

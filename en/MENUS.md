@@ -50,7 +50,7 @@ Note that the waypoints of a procedure are not saved with the flight plan. This 
 
 The set ground speed is also saved with the flight plan.
 
-**Note that, starting with v4.2, P3D shows the bizarre behavior of overwriting the flight plan when loading which erases all annotations. Save a copy of the plan to different location if you like to keep all information about procedures or speed.**
+**Note that P3D v4.2 overwrites the flight plan when loading, which erases all annotations. Save a copy of the plan to another location if you like to keep all information about procedures or speed.**
 
 #### ![Save Flight Plan as X-Plane FMS 11](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS 11") Save Flight Plan as X-Plane FMS 11 {#save-flight-plan-as-fms11}
 
