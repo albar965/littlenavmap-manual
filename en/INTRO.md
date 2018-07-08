@@ -28,6 +28,22 @@ See the two chapters below if you like to run _Little Navmap_ in a networked set
 * [Connecting to a Flight Simulator](CONNECT.md)
 * [Running without Flight Simulator Installation](RUNNOSIM.md)
 
+**How to prepare a network setup:**
+
+1. Install/extract the whole *Little Navmap* archive on the flying **and** network computer.
+1. Copy *Little Xpconnect* to the X-Plane plugins folder if you use X-Plane.
+2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -&gt; `Scenery Library` -&gt; `Load Scenery Library ...`
+3. Copy the database files to the network computer. Quit *Little Navmap* before copying.
+
+**Flying in a network setup:**
+
+1. Start the simulator
+2. Start *Little Navconnect* on the flying computer.
+3. Run *Little Navmap* on the network computer.
+4. Connect *Little Navmap* on the network computer to *Little Navconnect* on the flying computer. Main menu -&gt; `Tools` -&gt; `Flight Simulator Connection ...`
+
+See links above for detailed instructions.
+
 ## General {#general-remarks}
 
 ### User Interface {#user-interface}
