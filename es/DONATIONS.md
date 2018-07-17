@@ -1,4 +1,4 @@
-## Dona
+## Donate
 
 **Donate to show your appreciation if you like my programs.**
 
