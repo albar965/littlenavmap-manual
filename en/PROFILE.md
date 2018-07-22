@@ -2,7 +2,7 @@
 
 This dock window shows the ground elevation and flight plan cruise altitude together will all flight plan waypoints. It is only available when a flight plan is loaded. The user aircraft will be shown too if _Little Navmap_ is connected to the simulator.
 
-Elevation processing is done in the background since data has to be downloaded and computation is CPU intense. Therefore, the update of the elevation display can take from a few seconds up to half a minute. This background update is started after creating or changing the flight plan or when new elevation data was downloaded. The display will be updated accordingly whenever new data is available.
+Elevation processing is done in the background since data has to be downloaded and computation is CPU intensive. Therefore, the update of the elevation display can take from a few seconds up to half a minute. This background update is started after creating or changing the flight plan or when new elevation data was downloaded. The display will be updated accordingly whenever new data is available.
 
 Close the `Flight Plan Elevation Profile` window if you think that it causes performance problems or stutters. All updates will stop once the window is closed.
 
@@ -32,7 +32,7 @@ See the dialog [Cache and Files](OPTIONS.md#cache-elevation) in the options dial
 Additional information is shown in a label on top of the window if the mouse is hovered over the diagram.
 The corresponding position within the flight plan is highlighted on the map too.
 
-Following information is shown in the top label if connected to flight simulator with an active session:
+Following information is shown in the top label if connected to a flight simulator with an active session:
 
 * Distance from user aircraft to flight plan destination
 * Distance to the top of descent
@@ -40,10 +40,10 @@ Following information is shown in the top label if connected to flight simulator
 In addition, the information below is shown in the top label when hovering the mouse over the diagram:
 
 * From and to waypoint
-* Distance from departure and to destination from the mouse cursor position.
+* Distance from departure and to destination from the position of the mouse cursor.
 * Ground elevation at cursor position.
 * Flight plan cruise altitude above ground.
-* Safe altitude for the current flight plan leg at the hovering position.
+* Safe altitude for the current flight plan leg at the position of the mouse cursor.
 
 For more information see the `Navmap` tab in the `Legend` dock window or the
 [Nav Map Legend](LEGEND.md#elevation-profile-legend) for details.

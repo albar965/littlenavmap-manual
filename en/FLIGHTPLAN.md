@@ -7,14 +7,14 @@ The top shows a label that contains departure, departure position \(parking, run
 Besides the label there are three input fields on top of this dock window:
 
 * **Speed \(kts\):** Ground speed. The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` \(estimated time of arrival at a waypoint given 0:00 as start time\). It is saved as an annotation with the flight plan and not used for simulator user aircraft calculations.
-* **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field receives the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
+* **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 * **Flight Plan Type \(IFR or VFR\):** This is saved with the flight plan.
 
 ### Flight Plan Table {#flight-plan-table}
 
 The table view allows the same operations as the search table view except sorting. See [here](SEARCH.md#table-view) for more information.
 
-All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Multi selection using `Shift-Click` or `Ctrl+Click` is possible.
+All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Use `Shift+Click` or `Ctrl+Click` to select two or more elements \(multi-selection\).
 
 The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator.
 
@@ -53,17 +53,17 @@ _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-_**Picture above:** The _`Flight Plan`_ dock window. The flight plan uses a SID for departure and a STAR, transition and an approach for arrival._
+_**Picture above:** The _`Flight Plan`_ dock window. The flight plan uses a SID for departure and a STAR, a transition and an approach for arrival._
 
 ### Mouse Clicks {#mouse-clicks}
 
-A double click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/green circle.
+A double-click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. A single click selects an object and highlights it on the map using a black/green circle.
 
 ### Top Button {#top-button}
 
 #### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
 
-Deselects all entries in the table and also removes any highlight rings from the map.
+Deselect all entries in the table and remove any highlight circles from the map.
 
 ### Flight Plan Table View Context Menu {#flight-plan-table-view-context-menu}
 
@@ -73,12 +73,12 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
-Shows either the airport diagram or zooms to the navaid on the map. The zoom distance can be changed in the
+Show either the airport diagram or zoom to the navaid on the map. The zoom distance can be changed in the
 dialog `Options` on the tab `Map`.
 
 #### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Move Selected Legs up/down {#move-selected-legs-up-down}
 
-Moves all selected flight plan legs up or down in the list. This works also if multiple legs are selected.
+Move all selected flight plan legs up or down in the list. This works also if multiple legs are selected.
 
 Airway names will be removed when waypoints in the flight plan are moved or deleted because the new flight plan legs will not follow any airway but rather use direct connections.
 
@@ -86,13 +86,13 @@ Procedures or procedure legs cannot be moved and waypoints cannot be moved into 
 
 #### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Delete Selected Legs or Procedure {#delete-selected-legs}
 
-Deletes all selected flight plan legs. Use `Undo` if you delete legs accidentally.
+Delete all selected flight plan legs. Use `Undo` if you delete legs accidentally.
 
 The whole procedure is deleted if the selected flight plan leg is a part of a procedure. Deleting a procedure deletes its transition too.
 
 #### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Edit Name of User Waypoint {#edit-name-of-user-waypoint}
 
-Allows to change the name of a user defined waypoint. The length of the name is limited to 10 characters.
+Allows to change the name of a user-defined waypoint. The length of the name is limited to 10 characters.
 
 #### Calculate for selected Legs {#calculate-for-selected-legs}
 
@@ -100,21 +100,19 @@ This is a submenu containing entries for flight plan calculation methods as desc
 
 ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calculate Radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calculate high Altitude](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculate low Altitude](MENUS.md#calculate-low-altitude) and ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 
-This menu is only active when more than one flight plan leg is selected and neither the first nor the last selected row is a procedure.
+Calculate a flight plan fragment between the first and last selected waypoint. All existing legs in between are deleted and replaced with the calculated flight plan fragment.
 
-It will calculate a flight plan fragment between the first and last waypoint in the selected flight plan legs. All legs between the first and last selected one will be deleted and replaced with the calculated flight plan fragment.
-
-You can either select the first and the last leg \(`Ctrl+Click`\) and start the calculation or you can select a whole range of legs \(`Shift+Click` and drag\) before calculation.
+This menu is only active when more than one flight plan leg is selected and neither the first nor the last selected row is a procedure. You can either select the first and the last leg \(`Ctrl+Click`\) and start the calculation or you can select a whole range of legs \(`Shift+Click` and drag\) before calculation.
 
 This function can be useful if you have to cross oceanic legs that are void of airways:
 
 1. Set departure and destination.
 2. Find the last waypoint on an airway before entering the ocean. Choose the closest to the flight plan line. Add the waypoint to the flight plan.
 4. Select departure and this waypoint and calculate the flight plan fragment.
-3. Same as above the the first waypoint on an airway before or when entering the landmass again.
+3. Repeat the process for the first waypoint on an airway close to the coast of your destination continent.
 5. Select this waypoint and the destination and calculate the flight plan fragment.
 
-While not entirely realistic, this is a sufficient solution until NAT or PACOT tracks are available.
+While not entirely realistic, this is a sensible workaround until _Little Navmap_ supports NAT or PACOT tracks.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-1}
 
@@ -122,7 +120,7 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-1}
 
-Will show the range rings for all selected radio navaids in the flight plan. You will get a range circle for each radio navaid on the flight plan if you simply select all legs of the flight plan and use this function.
+Show the range rings for all selected radio navaids in the flight plan. Simply select all legs of the flight plan and use this function to display a range circle for each radio navaid in the flight plan.
 
 Otherwise, the same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
@@ -132,19 +130,19 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Copy](../images/icons/copy.png "Copy") Copy {#copy-0}
 
-Copies the selected entries in CSV format into the clipboard. The CSV will include a header. This will consider changes to the table view like column order.
+Copy the selected entries in CSV format to the clipboard. The CSV will include a header. This will observe changes to the table view like column order.
 
 #### Select All {#select-all-0}
 
-Selects all flight plan legs.
+Select all flight plan legs.
 
 ##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
 
-Deselects the currently selected flight plan leg and removes the highlight circles from the map.
+Deselect all currently selected flight plan legs and remove any highlight circles from the map.
 
 #### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view-0}
 
-Resets the column order and column widths back to the default view.
+Reset the column order and column widths to default.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-1}
 

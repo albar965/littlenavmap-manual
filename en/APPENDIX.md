@@ -106,9 +106,9 @@ When an error occurs during loading of the scenery library send me the offending
 
 If you're concerned about privacy when sending log files: The log files will contain all system paths \(like your `Documents` directory\) which will also include your username as a part of the path. They might also contain your computer's name and IP address in your network.
 
-In no case are file names from anything other than flight simulator paths/files or configuration files are included. No names or content of personal files is included in the log files.
+I would suggest you remove this information if you're concerned about it.
 
-I would suggest to remove this information if you're concerned about it.
+In no case are file names of anything but the flight simulator or its configuration files included. No names or contents of personal files are included in the log files.
 
 I strongly recommend sending the log files by private forum message or by email and not attach them to forum posts where they are publicly visible.
 

@@ -25,7 +25,7 @@ The tutorial assumes the following preconditions:
 
 Go to the dock window `Search` and follow the steps below:
 
-* Right click into the result table and select `Reset Search` ![Reset Search](../images/icons/clear.png) to get rid of all search criteria that may affect the query.
+* Right-click into the result table and select `Reset Search` ![Reset Search](../images/icons/clear.png) to get rid of all search criteria that may affect the query.
 * Click the menu button  ![Menu Button](../images/icons/menubutton.png) and make sure that the search groups `Facilities`, `Runway`, `Parking` and `Distance from Mark` are checked. Deselect all others you don't need.
 
 ![Prepare Search](../images/tutorial/ifrsearchprep.jpg)
@@ -35,7 +35,7 @@ Go to the dock window `Search` and follow the steps below:
 Now look for the departure airport:
 
 * Enter `EGHJ` in the `ICAO Code` search field on the top left \(case does not matter\).
-* Right click on the airport in the result table.
+* Right-click on the airport in the result table.
 * Choose `Set as Flight Plan Departure` ![Set as Flight Plan Departure](../images/icons/airportroutestart.png). This will assign a default runway as a start position.
 
 ![Assign Departure](../images/tutorial/ifrseldeparture.jpg)
@@ -58,13 +58,13 @@ See also [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departu
 
 Now look for a suitable destination airport:
 
-* Right click on `EGHJ` in the search result again.
+* Right-click on `EGHJ` in the search result again.
 * Select `Set Center for Distance Search` ![Set Center for Distance Search](../images/icons/mark.png). You can also do this in the map. This is the center point for the spatial search.
 * Clear the `ICAO Code` search field now \(it is a common mistake to leave the text fields filled when doing distance searches which will give you an empty result table\).
 
 We will now look for airports that are in range of the aircraft but not too close. Also, certain criteria have to be fulfilled, like having parking spots that fit the aircraft and a runway which is long enough.
 
-You can also find airports in aircraft range by using the range rings where you can right click into the map on your departure airport and select `Show Range Rings` ![Show Range Rings](../images/icons/rangerings.png), although this function does not allow the detailed airport filters.
+You can also find airports in aircraft range by using the range rings where you can right-click into the map on your departure airport and select `Show Range Rings` ![Show Range Rings](../images/icons/rangerings.png), although this function does not allow the detailed airport filters.
 
 We will use the spatial search instead of range rings since we'd like to see only suitable airports for out aircraft.
 
@@ -89,7 +89,7 @@ The search result changes on the fly while doing all these adjustments, though w
 * To find only airports north of your position select `North` in the combo box `Any Direction`. Note that the search result is sorted by distance with the closest airport first.
 * Choose an airport for your trip. We use `Wick (EGPC)` for this tutorial.
 * ![Search for Destination](../images/tutorial/ifrsearchdest.jpg)
-* Right click on Wick in the result table.
+* Right-click on Wick in the result table.
 * Select `Show Information` ![Show Information](../images/icons/globals.png). This will fill the tabs in the dock window `Information`.
 * Select the tab `Weather` and look for the wind direction to get an idea of the expected landing runway. Start AS16 or Active Sky Next if you are using these.
 
@@ -102,7 +102,7 @@ See also [Weather](WEATHER.md).
 We'll select an approach procedure now:
 
 * Go back to the search result.
-* Right click on the airport Wick again. Select `Show Procedures` ![Show Procedures](../images/icons/approach.png). This will pop up the procedure search tab.
+* Right-click on the airport Wick again. Select `Show Procedures` ![Show Procedures](../images/icons/approach.png). This will pop up the procedure search tab.
 * Choose `Runway 13` in the `All Runways` combo box to see only approaches for 13.
 * Select `Expand All` in the context menu to see also the transitions for each approach.
 * Choose `Approach VORDME 13 FD13` using `Transition (Full) WIK10` since we expect to land on runway 13 and arrive from south.
@@ -111,7 +111,7 @@ The top label in the procedure search shows `Wick (EGPC) Approach VORDME 13 FD13
 
 ![Procedure Search Tree](../images/tutorial/ifrprocselect.jpg)
 
-Right click on the transition and select `Show Approach and Transition on Map` ![Show Approach and Transition on Map](../images/icons/showonmap.png). This will center the procedure on the map. You can hover the mouse over the waypoints of the approach to see more information in a tooltip. You can also click on the legs in the procedure tree to see the respective start and end points.
+Right-click on the transition and select `Show Approach and Transition on Map` ![Show Approach and Transition on Map](../images/icons/showonmap.png). This will center the procedure on the map. You can hover the mouse over the waypoints of the approach to see more information in a tooltip. You can also click on the legs in the procedure tree to see the respective start and end points.
 
 ![Procedure Preview](../images/tutorial/ifrprocpreview.jpg)
 
@@ -119,7 +119,7 @@ The procedure looks sufficiently complicated to make an interesting approach.
 
 More information on procedure search: [Search Dock Window - Procedures](SEARCHPROCS.md). Also see [Procedures](APPROACHES.md) for general information on procedures.
 
-If you like what you see right click again on the transition and select `Use EGPC and Approach and Transition as Destination` ![Use EGPC and Approach and Transition as Destination](../images/icons/routeadd.png).
+If you like what you see right-click again on the transition and select `Use EGPC and Approach and Transition as Destination` ![Use EGPC and Approach and Transition as Destination](../images/icons/routeadd.png).
 
 This will do two things:
 
@@ -228,7 +228,7 @@ The section `Altitude` will show the vertical path deviation after passing the t
 
 Now the weather has changed requiring an approach to runway 31:
 
-* Right click on the destination airport at the bottom of the flight plan table.
+* Right-click on the destination airport at the bottom of the flight plan table.
 * Choose `Show Procedures` ![Show Procedures](../images/icons/approach.png).
 * Then change the runway filter to `Runway 31`.
 * Expand the approach VORDME 31 to see the transition.
@@ -236,7 +236,7 @@ Now the weather has changed requiring an approach to runway 31:
 
 The label on top of the window shows now `Approach VORDME 31 FD31 Transition (Full) CHINN`.
 
-* Right click on the selected transition.
+* Right-click on the selected transition.
 * Choose `Use EGPC and Approach and Transition as Destination` ![Use EGPC and Approach and Transition as Destination](../images/icons/routeadd.png) from the context menu which will replace the current procedure in your flight plan with the new one.
 
 The top label in the flight plan dock window reads now:
@@ -250,16 +250,16 @@ Via CHINN and VORDME FD31 to runway 31
 To completely get rid of a procedure:
 
 * Select any leg of the procedure in the flight plan table.
-* Right click and choose `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) to remove the whole procedure. Alternatively press the `Del` key.
+* Right-click and choose `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) to remove the whole procedure. Alternatively press the `Del` key.
 
 If ATC clears you to the initial fix of the procedure:
 
-1. Delete any intermediate waypoints between your current aircraft position and the initial fix of the procedure: Right click in the flight plan table and select `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) for all waypoints between your current aircraft position and the initial fix or start of the procedure. Avoid deleting your approach \(you can also right click on a flight plan waypoint on the map and delete it from the context menu\).
-3. Then right click on your aircraft on the map and select `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png).
+1. Delete any intermediate waypoints between your current aircraft position and the initial fix of the procedure: Right-click in the flight plan table and select `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) for all waypoints between your current aircraft position and the initial fix or start of the procedure. Avoid deleting your approach \(you can also right-click on a flight plan waypoint on the map and delete it from the context menu\).
+3. Then right-click on your aircraft on the map and select `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png).
 
 This will give a direct connection from your current aircraft position to the start of the procedure which you can use to get course and distance to the intial fix.
 
-Below: After changing the approach procedure and adding a user defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition \(43 nm and 314 degrees magnetic course\).
+Below: After changing the approach procedure and adding a user-defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition \(43 nm and 314 degrees magnetic course\).
 
 ![Changed Approach](../images/tutorial/ifrapproach.jpg)
 

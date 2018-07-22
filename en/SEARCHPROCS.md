@@ -2,13 +2,13 @@
 
 The tab `Procedures` allows previewing and adding approach and departure procedures to the flight plan. Procedures of a selected airport are arranged in a tree which indicates the dependencies between approaches and transitions.
 
-Note that the SID and STAR names are limited to 5 characters in FSX and P3D due to a limitation in the BGL file format. Names are slightly modified therefore.
+Note that the SID and STAR names are limited to 5 characters in FSX and P3D due to a limitation in the BGL file format. Therefore procedure names are slightly modified. However, this does not apply to procedures from a Navigraph or X-Plane scenery database.
 
 **See the **[**Procedures**](APPROACHES.md#delete-selected-legs)** chapter of this manual for more details.**
 
 Procedure legs are shown when a procedure node is expanded in the tree. Procedures can be filtered by runway and type.
 
-Right click on a procedure to get more options in the context menu. This allows centering of the map or adding the procedure to your flight plan.
+Right-click on a procedure to get more options in the context menu, like centering the map on the procedure or adding it to your flight plan.
 
 Use the context menu of the flight plan table to remove procedures like any other waypoint. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
 
@@ -41,7 +41,7 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
 
 #### Type Filter \(All Procedures\) {#procedure-filter-type}
 
-The type filter is not available for a FSX or P3D stock database. A navdata update is needed to get SID and STAR procedures.
+The type filter is not available for an FSX or P3D stock database. A navdata update is needed to get SID and STAR procedures.
 
 This filter is always available for a X-Plane database which contains SIDs and STARs already in the stock data.
 
@@ -60,25 +60,29 @@ This filter is always available and helps to find procedures for a certain depar
 
 #### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
 
-Deselects all entries in the table and also removes any highlights from the map.
+Deselect all entries in the table and remove any highlight circles from the map.
 
 #### ![Help](../images/icons/help.png "Help") Help {#help}
 
-Opens this help chapter in the default browser.
+Open this chapter of the manual in the default browser.
 
 ### Procedure Tree Context Menu {#procedure-context-menu}
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#procedure-show-on-map}
 
-Centers the map on the selected procedure.
+Center the map on the selected procedure.
+
+#### Follow Selection {#follow-selection}
+
+The map view will be zoomed on the selected procedure when this function is enabled. 
 
 #### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
 
-Text and functionality of this menu item depends on the selected procedure type and if the procedure's airport is already the departure or destination airport of the current flight plan.
+Text and functionality of this menu item depends on the selected procedure type and whether the procedure's airport is already the departure or destination airport of the current flight plan.
 
 Use the context menu of the flight plan table to remove procedures. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
 
-The corresponding procedure \(approach, SID and STAR\) is added or replaced too if a transition is selected.
+If a transition is selected, the corresponding procedure \(approach, SID or STAR\) is added or replaced as well.
 
 `Insert ... into Flight Plan`:
 
@@ -88,21 +92,21 @@ This menu item will add the selected procedure to the current flight plan. A pro
 
 This will add or replace the destination or departure airport and add the selected procedure.
 
-The departure or destination airport are added to the flight plan too if the flight plan is empty.
+If the flight plan is empty, the departure or destination airport is added to the flight plan as well.
 
 #### Expand All / Collapse All
 
-Expands all procedures so that their legs and transitions are shown or collapses the tree.
+Expand all procedures so that their legs and transitions are shown or collapse the tree.
 
 #### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
 
-Clears search filters and shows all procedures again in the tree.
+Clear search filters and revert to showing all procedures in the tree.
 
 #### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
 
-Deselects the currently selected procedure and also removes the preview from the map.
+Deselect the currently selected procedure and remove the preview from the map.
 
 #### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
 
-Resets the the column order and column widths back to default.
+Reset column order and column widths to default.
 

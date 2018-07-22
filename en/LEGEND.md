@@ -1,6 +1,6 @@
 ## Legend {#little-navmap-legend}
 
-All speeds are per default in knots, distances in nautical miles, altitude in feet. The units can be changed to imperial or metric in the dialog `Options` on the tab `Units`.
+By default, all speeds are given in knots, distances in nautical miles, altitudes and elevations in feet. The units can be set to imperial or metric in the dialog `Options` on the tab `Units`.
 
 Colors, size and text labels of some map elements can be changed in the dialog `Options` on the tab `Map Display`. This legend shows the default values.
 
@@ -27,6 +27,19 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
 
+
+### Compass Rose
+
+Line thickness can be changed in dialog `Options` on the tab `Map Display`.
+
+| Symbol | Description |
+| --- | --- |
+| ![True North](../images/legend/compass_rose_true_north.png "True North") | True north. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Magnetic north. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Distance circles and marks from user aircraft if connected. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Solid line shows aircraft track in degrees magnetic if connected. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Dashed line shows aircraft heading if connected. |
+
 ### Aircraft and Ships {#vehicles}
 
 | Symbol | Description |
@@ -37,6 +50,8 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
 | ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
+| ![Online on in Flight](../images/icons/aircraft_online.png) ![Online on Ground](../images/icons/aircraft_online_ground.png) | Online network aircraft/client. Labels vary and can be customized as above. |
+
 
 ### Airports {#airports}
 
@@ -70,7 +85,7 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![VORTAC](../images/legend/vortac_small.png) ![VORTAC](../images/legend/vortac_large.png) | VORTAC  including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
 | ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
-| ![User defined Waypoint](../images/legend/userwaypoint.png) | User defined waypoint with name. |
+| ![User-defined Waypoint](../images/legend/userwaypoint.png) | User-defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
 | ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
@@ -120,6 +135,30 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
 | ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad. Color indicates surface.  |
 
+### Userpoints {#userpoints}
+
+| Symbol | Description |
+| --- | --- |
+| ![Airport](../images/icons/userpoint_Airport.png) | Airport |
+| ![Airstrip](../images/icons/userpoint_Airstrip.png) | Airstrip |
+| ![Bookmark](../images/icons/userpoint_Bookmark.png) | Bookmark |
+| ![Cabin](../images/icons/userpoint_Cabin.png) | Cabin |
+| ![Closed](../images/icons/userpoint_Closed.png) | Closed |
+| ![Error](../images/icons/userpoint_Error.png) | Error |
+| ![Flag](../images/icons/userpoint_Flag.png) | Flag |
+| ![Helipad](../images/icons/userpoint_Helipad.png) | Helipad |
+| ![Location](../images/icons/userpoint_Location.png) | Location |
+| ![Logbook](../images/icons/userpoint_Logbook.png) | Logbook |
+| ![Marker](../images/icons/userpoint_Marker.png) | Marker |
+| ![Mountain](../images/icons/userpoint_Mountain.png) | Mountain |
+| ![Obstacle](../images/icons/userpoint_Obstacle.png) | Obstacle |
+| ![Pin](../images/icons/userpoint_Pin.png) | Pin |
+| ![POI](../images/icons/userpoint_POI.png) | POI - point of interest |
+| ![Seaport](../images/icons/userpoint_Seaport.png) | Seaport |
+| ![Unknown](../images/icons/userpoint_Unknown.png) | Unknown |
+| ![VRP](../images/icons/userpoint_VRP.png) | VRP - visual reporting point |
+| ![Waypoint](../images/icons/userpoint_Waypoint.png) | Waypoint |
+
 ### Elevation Profile Legend {#elevation-profile-legend}
 
 | Symbol | Description |
@@ -127,7 +166,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with departure elevation on the left and destination airport elevation on the right. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
 | ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
-| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is altitude plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
+| ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is elevation plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
 | ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show actual altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |

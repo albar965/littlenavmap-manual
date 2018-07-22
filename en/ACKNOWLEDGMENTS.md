@@ -17,17 +17,25 @@ Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind suppo
 
 The French translation of the program was done by Patrick JUNG alias Patbest. Thank you!
 
-Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo and Sam.
+Dankeschön! for the German translation to merspieler and Stephan Leukert.
+
+Thanks to Ricardo Vitor for the translation to Brazilian Portuguese.
+
+Thanks to Daniel "Wolf" \([wolfinformatica.com](http://wolfinformatica.com)\) for the Spanish translation.
+
+Thank you! to Eddy Crequie for doing the Dutch translation.
+
+Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo, Sam and many others.
 
 Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
 
 Thanks to all in the forums who patiently supported me and gave invaluable feedback during the public beta:
 
-[AVSIM](http://www.avsim.com), [SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](http://flightx.net) and [FSDeveloper.com](http://www.fsdeveloper.com).
+[AVSIM](https://www.avsim.com), [SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](https://flightx.net) and [FSDeveloper.com](https://www.fsdeveloper.com).
 
-This project and my library [atools](https://github.com/albar965/atools) would not exist without the fabulous documentation of the BGL files in the [FSDeveloper Wiki](http://www.fsdeveloper.com/wiki). So, here a huge thank-you to all the contributors.
+This project and my library [atools](https://github.com/albar965/atools) would not exist without the fabulous documentation of the BGL files in the [FSDeveloper Wiki](https://www.fsdeveloper.com/wiki). So, here a huge thank-you to all the contributors.
 
-Also a thank you to Ed Williams for his [Aviation Formulary](http://williams.best.vwh.net/avform.htm).
+Also a thank you to Ed Williams for his [Aviation Formulary](http://www.edwilliams.org/avform.htm).
 
 Without the open source [Marble](https://marble.kde.org) widget that allows me to access and display all the maps I would still be busy doing that myself for years.
 
@@ -35,9 +43,9 @@ No [Qt application framework](https://www.qt.io) and I could not even draw a sim
 
 Let's not forget about all the services that provide us all the online maps for free:
 
-[Stamen Design](http://maps.stamen.com), [MapTiles](http://maptiles.xyz), [OpenTopoMap](http://www.opentopomap.org) and [CARTO](https://carto.com/).
+[Stamen Design](http://maps.stamen.com), [OpenTopoMap](https://www.opentopomap.org) and [CARTO](https://carto.com/).
 
-A thank-you to the [GIScience / Geoinformatics Research Group](http://www.geog.uni-heidelberg.de/gis/index_en.html) of Heidelberg University for kindly giving me permission to use their map [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
+A thank-you to the [GIScience / Geoinformatics Research Group](https://www.geog.uni-heidelberg.de/gis/index_en.html) of Heidelberg University for kindly giving me permission to use their map [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
 
-And last but not least: If there were no [OpenStreetMap](http://www.openstreetmap.org) and its thousands of contributors none of us would have any maps at all.
+And last but not least: If there were no [OpenStreetMap](https://www.openstreetmap.org) and its thousands of contributors none of us would have any maps at all.
 

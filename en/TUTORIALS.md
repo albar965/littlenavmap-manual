@@ -7,11 +7,11 @@ The tutorials are based on:
 * An already loaded scenery database which normally happens right after the first startup.
 * The stock navigation data of FSX or P3D. Differences might appear if you use navdata updates or airport scenery add-ons.
 
-All functions will be referred by the names in the main menu by using `Menu Name` -&gt; `Menu Item`. The icons are shown too so you can find the buttons on one of the toolbars. Screenshots will provide more help.
+All functions will be referred by the names in the main menu by using `Menu Name` -&gt; `Menu Item`. The icons are shown as well, so you can find the buttons on one of the toolbars. Screenshots will provide more help.
 
 ### Quick Start
 
-To have a clean common base I recommend the following:
+To have a clean common base, I recommend the following:
 
 * Select `Window` -&gt; `Reset Window Layout` to get all the dock windows back into their default place.
 * Use the map theme `OpenStreetMap` with hill shading ![Hill Shading](../images/icons/hillshading.png) enabled.

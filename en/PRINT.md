@@ -2,7 +2,7 @@
 
 ### ![Print Map](../images/icons/printmap.png "Print Map") Print Map {#printing-the-map}
 
-Opens the print preview dialog allowing the current map view to be printed.
+Open the print preview dialog allowing the current map view to be printed.
 
 Printing is currently limited to the screen resolution
 of the current map view. To get a less blurry printout enlarge the map window as much as possible. You
@@ -14,7 +14,7 @@ _**Picture above:** Print preview dialog for the current map._
 
 ### ![Print Flight Pan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan {#printing-the-flight-plan}
 
-Allows printing of the current flight plan together with departure and destination airport information.
+Print the current flight plan together with departure and destination airport information.
 
 #### Options for customizing the Flight Plan Table
 
@@ -26,9 +26,9 @@ _**Picture above:** The column _`Name`_ is collapsed and will not be added to th
 
 #### Options for Departure and Destination
 
-* `Overview`: Prints the airport overview as show in the `Information` dock window on tab `Airport`.
-* `Runways / Helipads`: Prints runway and helipad information.
-* `Include runways with soft surface`: Includes runways with soft surfaces like grass,
+* `Overview`: Print the airport overview as show in the `Information` dock window on tab `Airport`.
+* `Runways / Helipads`: Print runway and helipad information.
+* `Include runways with soft surface`: Include runways with soft surfaces like grass,
   gravel and others.
 * `Detailed runway information`: Include detailed information for the runway ends like approach
   lighting, VASI types, ILS information and more.
@@ -38,7 +38,7 @@ _**Picture above:** The column _`Name`_ is collapsed and will not be added to th
 #### General options
 
 * `Print flight plan table`: Print the flight plan as seen in the flight plan table.
-* `Text size`: Make the text size smaller to avoid unnecessary line breaks or increase it for better reading.
+* `Text size`: Reduce the text size to avoid unnecessary line breaks or increase it for better readability.
 
 ![Print Flight Plan Dialog](../images/printfp.jpg "Print Flight Plan Dialog")
 
