@@ -21,6 +21,14 @@ Runway layout might not match the runway layout in the simulator if you use stoc
 
 An advantage of this mode is that approach procedures always match the airport runway layout.
 
+![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")
+
+_**Picture above:** Airport diagram for EDDN from simulator scenery \(X-Plane\) as shown in the modes _`Do not use Navigraph Database`_ and _`Use Navigraph for Navaids and Procedures`_._
+
+![Airport from Navdatabase](../images/airport_navigraph_only.jpg "Airport from Navdatabase")
+
+_**Picture above:** Airport EDDN from the Navigraph database while _`Use Navigraph for all Features`_ is enabled. Note missing runway surface information and missing aprons, taxiways and parking positions._
+
 ## Do not use Navigraph Database {#navigraph-none}
 
 Completely ignores the Navigraph database and shows only information read from the simulator scenery.
@@ -57,9 +65,9 @@ The following features are taken from the Navigraph database:
 * _Little Navmap_ ignores any mismatches between procedures and runways due to airport updates and will not display a warning. Update an airport using payware or freeware scenery if you find that an approach or departure procedure does not start at a runway end of an airport.
 * Procedures cannot be recognized when selecting `Show Procedures` in the menu if an airport has changed its ICAO ident \(e.g. `Kulik Lake`: ident changed from `LKK` to `PAKL`\). If you suspect such a case use the mode `Use Navigraph for all Features` to get the procedures for the airport.
 * The airport search `Procedures` only considers procedures available in the simulator. Switch to `Use Navigraph for all Features` to look for airports that have procedures from the Navigraph database.
-* ILS placement or presence might not match approach procedures if an airport has a new ILS which is not present in stock scenery or an old scenery add-on. In this case can see an ILS approach without ILS station. Switch to `Use Navigraph for all Features` to overcome this limitation.
+* ILS placement or presence might not match approach procedures if an airport has a new ILS which is not present in stock scenery or an old scenery add-on. If you encounter an ILS approach without ILS station, switch to `Use Navigraph for all Features` to overcome this limitation.
 
-Using the _fsAerodata_ navdata update will mitigate or even remove all of the limitations above since it will bring the simulator scenery into the same state as the Navigraph database.
+Using the _fsAerodata_ navdata update will mitigate or even remove all of the limitations above since it will synchronize the simulator scenery with the Navigraph database.
 
 ![Approach Procedure Mismatch](../images/procedure_mismatch.jpg "Approach Procedure Mismatch")
 

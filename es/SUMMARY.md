@@ -44,4 +44,3 @@
 * [Como informar de un error](APPENDIX.md#how-to-report-a-bug)
 * [Glosario](GLOSSARY.md)
 * [Licencia](LICENSE.md)
-

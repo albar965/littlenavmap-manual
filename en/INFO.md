@@ -4,20 +4,19 @@ This dock window contains text information about airports in several tabs as wel
 
 A tab `Weather` also includes decoded weather information for the selected airport.
 
-All information can be copied into the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl+A` to select all and `Ctrl+C` to copy the content to the clipboard.
+All information can be copied to the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl+A` to select all and `Ctrl+C` to copy the content to the clipboard.
 
 Information is shown when selecting one of the `Show Information for ...` context menu items in the map, flight plan dock window or the search result table.
-One airport and all navaids are loaded into the information display if multiple objects are nearby a mouse click
+One airport and all navaids are loaded into the information display if multiple objects are close to where you right-clicked on the map.
 
 A blue link `Map` allows jumping to the shown airport or navaid on the map.
 Additional links for helipads are available in the tab `Runways/Helipads`.
 
-An airway is always displayed with all its waypoints that are also linked to their respective map positions.
+An airway is always displayed with all its waypoints. Click any blue waypoint link to center the map around the waypoint.
 
-The display for all airports and navaids contains one or more links besides the title of the flight simulator scenery entry at the bottom of the list in section `Scenery`.
-These links point to the respective BGL files. A click will open Windows Explorer with the corresponding file selected.
+The information about airports and navaids includes one or more links at the bottom of the object information in section `Scenery`. These links point to the matching BGL (FSX, P3D) or DAT (X-Plane) files that contain information about the airport or navaid. Click the links to open the containing folder in your file manager \(e.g. Windows Explorer\). If possible, the matching file will be selected automatically.
 
-Multiple links can appear for airports since these can be modified by multiple BGL files from different add-on sceneries or navdata updates.
+Multiple links can appear for airports since these can be modified by multiple BGL or DAT files from different add-on sceneries or navdata updates.
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 
@@ -30,7 +29,7 @@ _**Picture above:** Navaid information. Two navaids were close to the cursor whe
 ## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulator Aircraft Dock Window {#simulator-aircraft-dock-window}
 
 This dock window shows information about the user aircraft and about AI or multiplayer aircraft in several tabs.
-_Little Navmap_ has to be connected to the simulator to enable this functionality.
+_Little Navmap_ has to be connected to the simulator to enable this feature.
 See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information on this topic.
 
 ### Tab Aircraft
@@ -52,11 +51,11 @@ _**Picture above:** Progress and ambient information of the current flight situa
 
 ### Tab AI / Multiplayer
 
-Information about an AI or multiplayer aircraft or ship is displayed in this tab if a vehicle is clicked on the map.
+Information about an AI or multiplayer aircraft from the simulator \(not online networks\) or ship is displayed in this tab if a vehicle is clicked on the map.
 
-This also includes departure and destination airports for aircraft that can be shown on the map by clicking on the blue links \(only for FSX or P3D and if a flight plan is filed\).
+This also includes the aircraft's departure and destination airports that can be shown on the map by clicking on the blue links \(only for FSX or P3D and if a flight plan is filed\).
 
-Note that information on AI aircraft is limited on X-Plane where only position, altitude and heading can be displayed.
+Note that information on AI aircraft is limited on X-Plane. Only position, altitude and heading can be displayed.
 
 ![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
 
@@ -66,6 +65,8 @@ _**Picture above:** Information about an AI aircraft._
 
 Contains two tabs: One tab  `Navmap` explaining the various airport and navaid symbols and a tab `Map` which shows the
 general legend for the base map like the _OpenStreetMap_ for example.
+
+The contents of the `Navmap` legend are also available in the online manual: [Nav Map Legend](LEGEND.md).
 
 Note that the general map legend is not available for all map themes.
 

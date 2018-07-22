@@ -14,13 +14,35 @@ You can also go directly to the [Scenery Library Dialog](SCENERY.md#load-scenery
 
 One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
 
-## Recommended things to do after installing {#things-to-do-after-installing}
+## Recommended things to do after Installing {#things-to-do-after-installing}
 
 * The elevation data which is used by default is limited and has a lot of problems. Therefore, I recommend to download and use the offline GLOBE elevation data. See [Options Dialog / Flight Plan Elevation Profile](OPTIONS.md#cache-elevation) for more information.
 * Have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.
 * See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update _Little Navmap_'s navigation data.
 * See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navmap* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.
 
+## How to run a network Setup {#network-setup}
+
+See the two chapters below if you like to run _Little Navmap_ in a networked setup using one computer for the flight simulator and one computer to run _Little Navmap_.
+
+* [Connecting to a Flight Simulator](CONNECT.md)
+* [Running without Flight Simulator Installation](RUNNOSIM.md)
+
+**How to prepare a network setup:**
+
+1. Install/extract the whole *Little Navmap* archive on the flying **and** network computer.
+1. Copy *Little Xpconnect* to the X-Plane plugins folder if you use X-Plane.
+2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -&gt; `Scenery Library` -&gt; `Load Scenery Library ...`
+3. Copy the database files to the network computer. Quit *Little Navmap* before copying.
+
+**Flying in a network setup:**
+
+1. Start the simulator
+2. Start *Little Navconnect* on the flying computer.
+3. Run *Little Navmap* on the network computer.
+4. Connect *Little Navmap* on the network computer to *Little Navconnect* on the flying computer. Main menu -&gt; `Tools` -&gt; `Flight Simulator Connection ...`
+
+See links above for detailed instructions.
 
 ## General {#general-remarks}
 
@@ -30,23 +52,23 @@ One or more scenery library databases may need to be updated when you install a 
 
 The user interface of _Little Navmap_ consists of a main window and several dock windows which can be detached from the main window or arranged in any order within the main window.
 
-The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double clicking their title bar or by clicking on the window symbol on the top right.
+The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double-clicking their title bar or by clicking on the window symbol on the top right.
 
 Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
 
 All docked windows except the map window can be closed if they are not needed. You can even drop docked windows on each other to create a tabbed view. The tabs will appear at the bottom of the dock stack in this case.
 
-Press `Ctrl` before clicking on the window titlebar to prevent a window from going into docked state and keep it floating.
+**Hold **`Ctrl`** while clicking on the window titlebar to prevent a window from going into docked state and keep it floating.**
 
 Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
 
-**Use the **`Main Menu` -&gt; `Window` **menu to bring docked windows or toolbars back.**
+**Use the **`Main Menu` -&gt; `Window` **menu to restore closed windows or toolbars.**
 
-**The **`Main Menu` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
+**The **`Main Menu` -&gt; `Window` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
 
 #### Context Menus
 
-**The context menus are needed to build a flight plan.**
+**Use the context menus to build a flight plan.**
 
 Context menus can be found in the following places:
 
@@ -77,17 +99,33 @@ A `N` will be appended if the Navigraph database is used:
 * `P3DV4 / N`: Airports and ILS are shown and used from the flight simulator database. Navaids, airspace, airways and procedures are used from the Navigraph database.
 * `(P3DV4) / N`: All data is used from the Navigraph database. No aprons, no taxiways and no parking positions are available for airports.
 
+#### Information and Simulator Aircraft Text
+
+You can change the text size permanently in the options dialog for these windows.
+
+A quick way to change the text size is to use the mousewheel and `Ctrl` key. This setting won't be saved across sessions, though.
+
+#### Tabs
+
+Tabs that appear on top of a window are fixed. A tooltip gives more information about the function of a tab.
+
+Tabs at the bottom of a window appear when you drop dock windows on each other. Grab a window title bar to move a window out of the stacked display. You can change the order of these tabs by dragging them around.
+
+The mousewheel allows to cycle between tabs in a more convenient way.
+
 #### Copy and Paste
 
 Almost all dialogs, text labels and all information windows in _Little Navmap_ allow copy and paste.
 
-You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it into the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons. This can be helpful to report errors.
+You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it to the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons. This can be helpful to report errors.
 
-The table views for the flight plan or airport/navaid search results allows copying of the results in CSV format into the clipboard which can be imported into a spreadsheet program like *LibreOffice Calc* or *Microsoft Excel*.
+The table views for the flight plan or airport/navaid search results allow copying of the results in CSV format to the clipboard which can be pasted into a spreadsheet program like [_LibreOffice Calc_](https://www.libreoffice.org) or _Microsoft Excel_.
 
 ### Translation and Locale {#translation-and-locale}
 
-_Little Navmap_ is currently available in English and French. I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available.
+_Little Navmap_ is currently available in several languages. 
+
+I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available. See [Translating](https://github.com/albar965/littlenavmap/wiki/Translating) in the Github _Little Navmap_ wiki for more information.
 
 You can override the user interface language in the dialog `Options` the the tab `User Interface`.
 
@@ -124,7 +162,7 @@ Airports in the `Custom Scenery/Global Airports/Earth nav data/apt.dat` file of 
 
 ### Navdata Updates {#navdata-updates}
 
-_Little Navmap_ comes with a ready to use database from Navigraph including airspaces, SIDs, STARs and more. The database can be updated by using Navigraph's _FMS DATA MANAGER_.
+_Little Navmap_ comes with a ready to use database from Navigraph including airspaces, SIDs, STARs and more. The database can be updated by using Navigraph's _FMS Data Manager_.
 
 See the chapter [Navigation Databases](NAVDATA.md) for more information.
 
@@ -136,7 +174,7 @@ See the chapter [Navigation Databases](NAVDATA.md) for more information.
 
 *Little Navmap* will use any navdata updates that are installed in the directory `Custom Data`. Any older updates installed in the GPS directories are not used.
 
-User defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
+User-defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
 
 Note that neither ARINC nor the FAACIFP files are supported.
 

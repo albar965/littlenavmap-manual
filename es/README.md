@@ -18,5 +18,3 @@ Copyright 2015-2017 Alexander Barthel
 
 Última actualización {{ gitbook.time }}.
 
-
-
