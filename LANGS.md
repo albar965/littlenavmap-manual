@@ -1,5 +1,6 @@
 * [English](en)
-* [French](fr)
+* [French](fr) \(Work in progress\)
+* [Español](es) \(Work in progress\)
 
 <!--
 

@@ -6,6 +6,10 @@
 
 * [Little Navmap User Manual](fr/README.md)
 
+# Español
+
+* [Manual de Usuario](es/README.md)
+
 <!--
 
 # Italian
