@@ -18,6 +18,6 @@
 
 # Deutsch
 
-* [Little Navmap Benutzerhandbuch](de/README.md)   \(Outdated - need volunteers for translation into other languages\) - \(Veraltet. Freiwillige zur Übersetzung gesucht.\)
+* [Little Navmap Benutzerhandbuch](de/README.md) \(Work in progress\)
 
 -->
