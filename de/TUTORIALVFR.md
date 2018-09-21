@@ -1,4 +1,4 @@
-## Erstellen eines VFR-Flugplan
+## Erstellen eines VFR-Flugplans
 
 ### Allgemeines
 
@@ -23,18 +23,18 @@ Klicken Sie auf die Karte und zoomen Sie auf die französischen Alpen. Sie könn
 
 Verwenden Sie die Zurück-  ![Back](../images/icons/back.png) und Vortasten ![Forward](../images/icons/next.png), um in den Positionsverlauf wie in einem Webbrowser zu springen.
 
-Siehe auch [Map Display](MAPDISPLAY.md).
-Suche hier nach  dem Abflug Flughafen `Meythet (LFLP)`:
+Siehe auch [Kartenanzeige](MAPDISPLAY.md).
+Suche hier nach dem Abflug-Flughafen `Meythet (LFLP)`:
 ![Meythet (LFLP)](../images/tutorial/vfrmap.jpg)
 Gezoomt mit Hinweisen:
 ![Meythet (LFLP) Tooltip](../images/tutorial/vfrmapclose.jpg)
 
-Danach:
+Dann:
 
 * Vergrößern Sie das Flughafen-Diagramm, bis  Taxiways, Runwaydetails, Parkpositionen und vieles mehr angezeigt werden.
 * Zoomen Sie weiter, bis Sie die weißen Parknummern sehen.
 * Klicken Sie mit der rechten Maustaste auf die Mitte eines der grünen Parkplätze  \(in diesem Fall 11\).
-* Wählen Sie im Kontextmenue `Select Airport Meythet (LFLP) / Parking 11 as Flight Plan Departure` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png).
+* Wählen Sie im Kontextmenue `Flugplatz Meythet (LFLP) / Parking 11 als Startflugplatz setzen` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png).
 
 ![Meythet (LFLP) Parking](../images/tutorial/vfrmapparking.jpg)
 
@@ -49,17 +49,17 @@ Sie können auch auf das Flughafensymbol klicken und ihn als Abflughafen auswäh
 Wir fügen jetzt die Wegpunkte hinzu:
 
 * Scrollen Sie entlang des Tales im Südosten über den See Lac d'Annecy
-* Klicke auf   `Append Position to Flight Plan` ![Append Position to Flight Plan](../images/icons/routeadd.png). Die angeklickte Position wird am Ende Ihres Plans als benutzerdefinierter Wegpunkt hinzugefügt
+* Klicke auf   `Position an den Flugplan anhängen` ![Append Position to Flight Plan](../images/icons/routeadd.png). Die angeklickte Position wird am Ende Ihres Plans als benutzerdefinierter Wegpunkt hinzugefügt
 
 Klicke auf Rückgängig  ![Undo](../images/icons/undo.png) oder Widerholen ![Redo](../images/icons/redo.png) wenn Sie dem gerade Hinzugefügten nicht einverstanden sind.
 
 ![Append Waypoint](../images/tutorial/vfrappend.jpg)
 
-Eine weitere Funktion ist  `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png) welche die angeklickte Position in den nächsten Flugplanabschnitt einfügt. Damit kann man in der Mitte eines Flugplans benutzerdefinierte Positionen, Flughäfen oder Navigationshilfen hinzufügen. Das nächste Leg wird automatisch von  _Little Navmap_ ausgewählt.
+Eine weitere Funktion ist  `Position zum Flugplan hinzufügen` ![Add Position to Flight Plan](../images/icons/routeadd.png) welche die angeklickte Position in den nächsten Flugplanabschnitt einfügt. Damit kann man in der Mitte eines Flugplans benutzerdefinierte Positionen, Flughäfen oder Navigationshilfen hinzufügen. Das nächste Leg wird automatisch von  _Little Navmap_ ausgewählt.
 
 _Little Navmap_ weist den benutzerdefinierten Wegpunkten automatisch Namen zu. Sie können diese belassen oder mit einem aussagekräftigeren Namen ersetzen.
 
-Um einen Wegpunktnamen zu ändern, klicken sie mit der rechten Maustaste auf den Benutzerwegpunkt und wählen  `Edit Name of User Waypoint` ![Edit Name of User Waypoint](../images/icons/routestring.png). Verwenden siw nahe gelegene Dörfer, Berge, Seen oder andere interessante Punkte.
+Um einen Wegpunktnamen zu ändern, klicken sie mit der rechten Maustaste auf den Benutzerwegpunkt und wählen  `Flugplanposition bearbeiten` ![Edit Name of User Waypoint](../images/icons/routestring.png). Verwenden sie nahe gelegene Dörfer, Berge, Seen oder andere interessante Punkte.
 
 
 Der Flugsimulator begrenzt den Namen auf eine bestimmte Länge und auf bestimmte Zeichen. Dem Namen wird nichts hinzugefügt, wenn er zu lang ist oder wenn falsche Zeichen eingeben werden.
@@ -73,7 +73,7 @@ Fügen Sie weitere Punkte hinzu und halten Sie sich von den Bergen fern, bis Sie
 So fügt man einen Zielflughafen hinzu:
 
 * Mit der rechten Maustaste auf `Challes-les-Eaux (LFLE)` klicken.
-* Wähle `Set Airport as Flight Plan Destination` als Zielflughafen ![Set Airport as Flight Plan Destination](../images/icons/airportroutedest.png).
+* Wähle `als Zielflugplatz setzen` als Zielflughafen ![Set Airport as Flight Plan Destination](../images/icons/airportroutedest.png).
 
 ![Select Destination](../images/tutorial/vfrdest.jpg)
 
@@ -81,9 +81,9 @@ Jetzt haben wir einen Flugplan; ihrer könnte eventuell ein bisschen anders auss
 
 ![VFR Flight Plan](../images/tutorial/vfrflightplan.jpg)
 
-Sie können mit der Drag & Drop-Funktion auch Punkte verschieben oder neue hinzufügen. Aktivieren Sie es, indem Sie   `Flight Plan` -&gt; `Edit Flight Plan on Map` ![Edit Flight Plan on Map](../images/icons/routeedit.png) wählen und klicken Sie auf einen Flugplan-Wegpunkt, um ihn zu verschieben. Klicken Sie auf einen Flugplanabschnitt, um diesem Zweig einen neuen Wegpunkt hinzuzufügen
+Sie können mit der Drag & Drop-Funktion auch Punkte verschieben oder neue hinzufügen. Aktivieren Sie es, indem Sie   `Flugplan` -&gt; `Flugplan auf der Karte bearbeiten` ![Edit Flight Plan on Map](../images/icons/routeedit.png) wählen und klicken Sie auf einen Flugplan-Wegpunkt, um ihn zu verschieben. Klicken Sie auf einen Flugplanabschnitt, um diesem Zweig einen neuen Wegpunkt hinzuzufügen
 
-Siehe [Map Flight Plan Editing](MAPFPEDIT.md) für weitere Informationen.
+Siehe [Anzeige Flugplan bearbeiten](MAPFPEDIT.md) für weitere Informationen.
 
 ### Reiseflughöhe
 
@@ -95,7 +95,7 @@ Siehe [Map Flight Plan Editing](MAPFPEDIT.md) für weitere Informationen.
 
 * Sehen Sie sich das Höhenprofil des Flugplans an. Es gibt eine rote Linie, die die minimale sichere Höhe anzeigt.
 * Passen Sie die Flugreiseflughöhe an, bis Sie über der roten Linie sind.
-* Wählen sie `Flight Plan` -&gt; `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png) um die richtige Höhe nach der hemisphärischen Regel einzustellen.
+* Wählen sie `Flugplan` -&gt; `Reiseflughöhe anpassen` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png) um die richtige Höhe nach der hemisphärischen Regel einzustellen.
 
 Beachten Sie, dass die standardmäßige hemisphärische Regel für Frankreich nicht korrekt ist, ausser sie ändern sie im Optionsdialog;  aber ich werde dies aus Gründen der Einfachheit jetzt nicht machen.
 
@@ -110,15 +110,15 @@ Schauen Sie jetzt, ob Ihr Flugplan Lufträume tangiert.
 Klicken Sie in einen der Lufträume in der Nähe von Start und Ziel und sehen Sie sich das Informationsdockfenster an. Es gibt mehrere Lufträume:
 
 * `Geneva TMA Sector 8` der bei 9.500 Fuß über dem Meeresspiegel (MSL) beginnt. Dies ist höher als unsere Reiseflughöhe und wird uns nicht beeinflussen.
-* Zwei Lufträume der Klasse E. Das Informationsfenster enthält folgende Hinweise: `Controlled, IFR and VFR, ATC clearance required for IFR only`. Kein Problem, weil wir VFR fliegen werden.
+* Zwei Lufträume der Klasse E. Das Informationsfenster enthält folgende Hinweise: `Kontrolliert, IFR und VFR, ATC Freigabe nur für IFR benötigt`. Kein Problem, weil wir VFR fliegen werden.
 
 Am Ziel ist die Situation ähnlich.
 
 ![Airspaces](../images/tutorial/vfrairspace.jpg)
 
-### Groundspeed
+### Geschwindigkeit über Grund
 
-Passen Sie nun die Geschwindigkeit nun an Ihre voraussichtliche Geschwindigkeit über Grund an. Dies ermöglicht dem Programm, die Flugzeit für den gesamten Plan und für die Legs zu schätzen.
+Passen Sie nun die Geschwindigkeit nun an Ihre voraussichtliche Geschwindigkeit über Grund an. Dieses ermöglicht dem Programm, die Flugzeit für den gesamten Plan und für die Abschnitte zu schätzen.
 
 Die Geschwindigkeit wird als Annotation in der PLN-Datei gespeichert. Wenn Sie den Plan in _Little Navmap_ Navmap laden , wird die angegebene Geschwindigkeit wiederhergestellt. Der Geschwindigkeitswert hat im Simulator keine Auswirkung..
 
@@ -126,20 +126,20 @@ Beachten Sie, dass der Plan statisch ist und sich während des Fluges nicht änd
 
 ![Cruise Speed](../images/tutorial/vfrspeed.jpg)
 
-Speichern Sie den Plan mit  `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). . Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne und vergibt standardmäßig einen sinnvollen Namen..
+Speichern Sie den Plan mit  `Datei` -&gt; `Flugplan speichern` ![Save Flight Plan](../images/icons/filesave.png). . Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne und vergibt standardmäßig einen sinnvollen Namen..
 
 ### Fliegen
 
 Führen sie die folgenden Schritte durch, um eine Moving Map zu erhalten und um ihr Flugzeug in  _Little Navmap_ zu sehen:
 
-* Öffnen Sie den Dialog `Connect` mit `Tools` -&gt; `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) und prüfen sie, ob `Connect automatically` ausgewählt ist. Aktivieren Sie es, wenn nicht. _Little Navmap_ findet den Simulator, unabhängig davon, ob er bereits gestartet ist oder später gestartet wird.
+* Öffnen Sie den Dialog `Verbinden` über `Werkzeuge` -&gt; `Flugsimulatorverbindung` ![Flight Simulator Connection](../images/icons/network.png) und prüfen sie, ob `Automatisch verbinden` ausgewählt ist. Aktivieren Sie es, wenn nicht. _Little Navmap_ findet den Simulator, unabhängig davon, ob er bereits gestartet ist oder später gestartet wird.
 
 ![Connect Dialog](../images/tutorial/vfrconnect.jpg)
-* Klicken Sie auf `Connect`, um das Dialogfeld zu schließen.
-* Aktivieren Sie `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png). Das Simulatorflugzeug wird auf der Karte zentriert und es bleibt zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator befindet sich nicht im Eröffnungsbildschirm.
+* Klicken Sie auf `Verbinden`, um das Dialogfeld zu schließen.
+* Aktivieren Sie `Karte` -&gt; `Flugzeug zentrieren` ![Center Aircraft](../images/icons/centeraircraft.png). Das Simulatorflugzeug wird auf der Karte zentriert und es bleibt zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator befindet sich nicht im Eröffnungsbildschirm.
 * Starten Sie den Simulator falls noch nicht geschehen, laden Sie den Flugplan und fliegen sie.
 
-Siehe auch [Connecting to a Flight Simulator](CONNECT.md).
+Siehe auch [Verbinden mit dem Flugsimulator](CONNECT.md).
 
 ### Während des Fliegens Orte anschauen
 
@@ -147,4 +147,4 @@ Das Programm wird ihrem Flugzeug nicht mehr folgen, wenn Sie eine Aktion starten
 
 * Doppelt- Klicken Sie zum Beispiel auf den Zielflughafen, um auf das Flughafendiagramm zu zoomen.
 * Wenn Sie fertig sind, klicken Sie auf die Zurück-Schaltfläche ![Back](../images/icons/back.png), bis Sie wieder an Ihrem Flugzeug sind.
-* Aktivieren Sie dann `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png) wieder, um das Flugzeug zentriert zu halten.
+* Aktivieren Sie dann wieder auf `Karte` -&gt; `Flugzeug zentrieren` ![Center Aircraft](../images/icons/centeraircraft.png), um das Flugzeug zentriert zu halten.

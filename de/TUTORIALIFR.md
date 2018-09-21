@@ -2,15 +2,15 @@
 
 Dieses Tutorial zeigt Ihnen, wie ein komplexerer IFRFlugplan einschließlich Anflugverfahren zu erstellen ist. Es erklärt die erweiterte Flughafensuchfunktion und die automatische Flugplanberechnung.
 
-Während dieses Tutorial ziemlich lang aussieht, ist es normalerweise eine Frage von einer halben Minute, um einen Flugplan zu erstellen, wenn man weiß, wie man vorgehen muss. Der hier gezeigte Planungsaufwand ist größer, um einige der fortgeschritteneren Funktionen des Programms zu erklären
+Obwohl dieses Tutorial ziemlich lang aussieht, ist es normalerweise eine Frage von einer halben Minute, um einen Flugplan zu erstellen - wenn man weiß, wie man vorgehen muss. Der hier gezeigte Planungsaufwand ist größer, um einige der erweiterten Funktionen des Programms zu erklären
 
-sie sollten zumindest das VFR-Tutorial [Erstellen eine VFR-Flugplans] durchgelesen haben (TUTORIALVFR.md).
+Sie sollten zumindest das VFR-Tutorial [Erstellen eine VFR-Flugplans](TUTORIALVFR.md) durchgelesen haben.
 
-Der Flugplan wird über Großbritannien mit einem IFR-fähigen Flugzeug verlaufen. Die maximale Reichweite sollte mehr als 600 Seemeilen inklusive Reserven und einer Reiseflughöhe von 10.000 Fuß betragen.
+Der Flugplan mit einem IFR-fähigen Flugzeug wird über Großbritannien verlaufen. Die maximale Reichweite sollte mehr als 600 Seemeilen inklusive Reserven und einer Reiseflughöhe von 10.000 Fuß betragen.
 
 Ich werde in diesem Tutorial nicht auf detaillierte Brennstoffplanungsverfahren eingehen. Das ist eine andere Geschichte für später.
 
-Das Tutorial setzt folgendes voraus:
+Voraussetzungen für dieses Tutorial:
 
 * Ende des letzten Fluges haben sie ihr Flugzeug in `Bembridge (EGHJ)` verlassen oder sie behandeln EGHJ als Heimatbasis.
 * Sie wissen nicht, wohin sie heute fliegen wollen.
@@ -22,11 +22,11 @@ Das Tutorial setzt folgendes voraus:
  * Kraftstoff für den Rückweg
 
 
-### Cleanup Suche {#tutorial-ifr-cleanup}
+### Suche zurücksetzen {#tutorial-ifr-cleanup}
 
 Gehen sie zum Dock Fenster  `Suche` und machen sie die  folgenden Schritte:
 
-* Rechtsklick in die Ergebnistabelle und `Suche zurücksetzten` wählen ![Reset Search](../images/icons/clear.png) um alle Suchkriterien zu löschen, die die Abfrage beeinflussen können. 
+* Rechtsklick in die Ergebnistabelle und `Alle Filter zurücksetzten` wählen ![Reset Search](../images/icons/clear.png) um alle Suchkriterien zu löschen, die die Abfrage beeinflussen können. 
 * Auf den Menuebutton  ![Menu Button](../images/icons/menubutton.png) klicken und stellen sie sicher, dass die Suchgruppen  `Einrichtungen`, `Runway`, `Parkpositionen` and `Entfernung von Markierung` aktiviert sind. Deaktivieren sie alle anderen, die sie nicht benötigen.
 
 ![Prepare Search](../images/tutorial/ifrsearchprep.jpg)
@@ -37,7 +37,7 @@ Nun schauen wir uns den Abflughafen an:
 
 * Geben sie EGHJ  in das `ICAO Code` Suchfeld oben links ein \(egal, was passiert\).
 * Klicken sie in der Ergebnistabelle mit der rechten Maustaste auf den Flughafen.
-* •	Wählen  sie `Als Flugplanstart setzen` ![Set as Flight Plan Departure](../images/icons/airportroutestart.png). Damit wird eine Standard-Runway als Startposition zugewiesen.
+* Wählen sie mit der rechten Maustaste `Als Flugplanstart setzen` ![Set as Flight Plan Departure](../images/icons/airportroutestart.png). Damit wird eine Standard-Runway als Startposition zugewiesen.
 
 ![Assign Departure](../images/tutorial/ifrseldeparture.jpg)
 
@@ -45,25 +45,25 @@ Ihr Flugplan hat jetzt einen Eintrag. Dieses ist bereits ausreichend, wenn sie e
 
 Der Start von einer Startbahn ist nicht ganz realistisch. Wir suchen eine Parkingposition:
 
-* Gehen sie zu `Flugplan` -&gt; `Select a Start Position for Departure` ![Startposition für den Abflug auswählen](../images/icons/parkingstartset.png).
-* Choose one of the GA small ramp positions.
-* •	Klicken sie auf `Ok` und die Position wird auf der Karte hervorgehoben.
+* Gehen sie zu `Flugplan` -&gt; `Startposition für den Abflug auswählen` ![Startposition für den Abflug auswählen](../images/icons/parkingstartset.png).
+* Wählen sie eine der Parkpositionen GA klein.
+* Klicken sie auf `Ok` und die Position wird auf der Karte hervorgehoben.
 
 ![Assign Parking](../images/tutorial/ifrselparking.jpg)
 
-Alternativ dazu können sie die  Startposition auch direkt im Kontextmenü auswählen, wie in der Karte im VFR-Tutorial beschrieben. [VFR tutorial](TUTORIALVFR.md).
+Alternativ dazu können sie die Startposition auch direkt im Kontextmenü auswählen, wie in der Karte im VFR-Tutorial beschrieben. [VFR tutorial](TUTORIALVFR.md).
 
-Siehe auch [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure)
+Siehe auch [Als Abflugflughafen setzen](MAPDISPLAY.md#set-as-flight-plan-departure)
 
 ### Zielflughafen suchen {#tutorial-ifr-search-dest}
 
 Nun suchen wir nach einem geeigneten Zielflughafen:
 
 * Im Suchergebnis wieder Rechtsklick auf `EGHJ`.
-* Wählen sie `Zentrum für Distanzsuche setzen` ![Set Center for Distance Search](../images/icons/mark.png). Sie können dies auch in der Karte tun. Dies ist der Mittelpunkt für die räumliche Suche. 
+* Wählen sie `Zentrum für Distanzsuche setzen` ![Set Center for Distance Search](../images/icons/mark.png). Sie können dies auch in der Karte tun. Dies ist der Mittelpunkt für die räumliche Suche.
 * Löschen sie nun das Suchfeld `ICAO Code` \(es ist ein häufiger Fehler, die Textfelder bei der Entfernungssuche nicht zu leeren, was dann zu einer leeren Ergebnistabelle führt\).
 
-Wir werden nun nach Flughäfen suchen, die sich in Reichweite des Flugzeugs befinden, aber nicht zu nahe sind. Auch müssen bestimmte Kriterien erfüllt sein, wie zum Beispiel Parklpositionen, die zur Flugzeuggröße passen und eine ausreichend lange Piste haben.
+Wir werden nun nach Flughäfen suchen, die sich in Reichweite des Flugzeugs befinden, aber nicht zu nahe sind. Auch müssen bestimmte Kriterien des Platzes erfüllt sein, wie zum Beispiel Parkpositionen, die zur Flugzeuggröße passen und eine ausreichend lange Piste muss voranden sein.
 
 Sie können auch Flughäfen im Flugzeugbereich finden, indem sie mit der rechten Maustaste auf den Abflugflughafen klicken die Entfernungsringe `Zeige Entfernungsringe` ![Show Range Rings](../images/icons/rangerings.png), auf der Karte aktivieren, obwohl diese Funktion die detaillierten Flughafenfilter nicht zulässt.
 
@@ -88,7 +88,7 @@ Man kann auch die maximale Start- und Landebahnlänge begrenzen, wenn man eine k
 Das Suchergebnis ändert sich im laufenden Betrieb während all dieser Anpassungen, obwohl wir noch nicht da sind:
 
 * Prüfen sie `Distanz:` um die räumliche Suche zu aktivieren. 
-* Ändern sie die maximale Entfernung auf 600 und das Minimum auf 400 nautische Meilen \(to avoid short hops\). Die Ergebnistabelle wird nun mit einer kleinen Verzögerung aktualisiert, da die Abstandssuche komplexer ist.
+* Ändern sie die maximale Entfernung auf 600 und das Minimum auf 400 nautische Meilen \(um kurze Hüpfer zu vermeiden\). Die Ergebnistabelle wird nun mit einer kleinen Verzögerung aktualisiert, da die Abstandssuche komplexer ist.
 * Um nur Flughäfen nördlich von Ihrer Position zu finden, wählen sie `Norden` in der Auswahlliste `Beliebige Richtung`. Beachten sie, dass das Suchergebnis nach Entfernung zum nächstgelegenen Flughafen sortiert ist.
 * Wählen sie einen Flughafen für ihren Flug. Wir vewenden `Wick (EGPC)` für dieses Tutorial.
 * ![Search for Destination](../images/tutorial/ifrsearchdest.jpg)
@@ -102,7 +102,7 @@ Siehe auch [Wetter](WEATHER.md).
 
 ### Ein Anflugverfahren wählen {#tutorial-ifr-select-approach}
 
-Wir werden nun approach procedure wählen:
+Wir werden nun ein Anflugverfahren wählen:
 * Zurück zum Suchergebnis.
 * Klicken sie erneut mit der rechten Maustaste auf den Flughafen Wick. Wählen sie `Zeige alle Prozeduren` ![Show Procedures](../images/icons/approach.png). Dies öffnet die Registerkarte für Prozedursuche.
 * Wählen sie `Runway 13` in `Alle Prozeduren` um nur Anflugprozeduren für die Runway 13 zu erhalten.
@@ -127,13 +127,13 @@ Wenn Ihnen das gefällt, was sie sehen, klicken sie mit der rechten Maustaste er
 Dies wird zwei Dinge bewirken:
 
 1. Wick als Zielflughafen zum Flugplan hinzugefügt. Jedes vorherige Ziel im Flugplan wird ersetzt. 
-2. Fügen sie den Anflug und seine Transition zum Flugplan hinzu. Die Prozedurlegs verwenden eine dunkelblaue Farbe und die verfehlten Anfluglegs verwenden eine dunkelrote Farbe in der Flugplantabelle. Legs auf der Flugplanroute sind schwarz. Auch hier wird jede vorherige Prozedur durch diese neue ersetzt.
+2. Fügt den Anflug und seinen Übergang zum Flugplan hinzu. Die Prozedurwegpunkte verwenden eine dunkelblaue Farbe und die verfehlten Anflugwegpunkte verwenden eine dunkelrote Farbe in der Flugplantabelle. Wegpunkte auf der Flugplanroute sind schwarz. Auch hier wird jede vorherige Prozedur durch diese neue ersetzt.
 
 
 
-**Über Hinzufügen von Transitions und Anflüge:** Anflüge und Transitions sind eng verwandt, was bereits durch die Baumstruktur auf der Registerkarte für die Prozedursuche angedeutet ist. Sie können einen Anflug alleine hinzufügen, aber eine Transition gehört immer zu einem Anflug.
+**Über Hinzufügen von Übergängen und Anflüge:** Anflüge und Übergänge sind eng verwandt, was bereits durch die Baumstruktur auf der Registerkarte für die Prozedursuche angedeutet ist. Sie können einen Anflug alleine hinzufügen, aber ein Übergang gehört immer zu einem Anflug.
 
-Sie müssen die Transition auswählen, um sowohl Anflug als auch Transition hinzuzufügen oder anzuzeigen.
+Sie müssen den Übergang auswählen, um sowohl Anflug als auch Übergang hinzuzufügen oder anzuzeigen.
 
 ### Einen Flugplan berechnen {#tutorial-ifr-calculate-flight-plan}
 
@@ -151,7 +151,7 @@ Jetzt ist die Mindesthöhe von 16.000 Fuß aber ein bisschen zu hoch.
 Versuchen sie daher eine alternative Berechnungsmethode, die Ihre Reiseflughöhe begrenzt:
 
 * Geben sie 10.000 Fuss in das Feld `Flugplanhöhe` ein.
-* Klicken sie auf `Flugplan` -&gt; `Bechnen basierend auf der angegebenen Höhe` ![Calculate based on given Altitude](../images/icons/routealt.png). Dies führt zu einem Flugplan, der nur Luftwege verwendet, die eine Mindesthöhe von weniger als 10.000 Fuß haben. Beachten sie, dass sie abhängig von der verwendeten Höhe eine Mischung aus Victor und Jet Airways erhalten können. Die Berechnung kann auch fehlschlagen, wenn sie die Reiseflughöhe zu niedrig einstellen.
+* Klicken sie auf `Flugplan` -&gt; `Berechne für die gegebenen Höhe` ![Calculate based on given Altitude](../images/icons/routealt.png). Dies führt zu einem Flugplan, der nur Luftwege verwendet, die eine Mindesthöhe von weniger als 10.000 Fuß haben. Beachten sie, dass sie abhängig von der verwendeten Höhe eine Mischung aus Victor und Jet Airways erhalten können. Die Berechnung kann auch fehlschlagen, wenn sie die Reiseflughöhe zu niedrig einstellen.
 
 ![Calculate Flight Plan](../images/tutorial/ifrcalcalt.jpg)
 
@@ -161,14 +161,14 @@ Speichern sie diesen Flugplan nun `Datei` -&gt; `Flugplaan speichern` ![Save Fli
 
 Die Wegpunkte des Anflugverfahrens sind nicht im Flugplan gespeichert. Sie müssen den Approach in ihrem GPS oder FMC im Simulator auswählen oder mit Funknavaids und einer Stoppuhr fliegen.
 
-Was _Little Navmap_ in der PLN-Datei speichert sind die Prozedurnamen , mit denen das Programm den Approach beim Laden wiederherstellen kann.
+Was _Little Navmap_ in der PLN-Datei speichert sind die Prozedurnamen , mit denen das Programm den Anflug beim Laden wiederherstellen kann.
 
-Das oberste Label im Dock - Fenster des Flugplans lautet jetzt:
+Die oberste Anzeige im Dock - Fenster des Flugplans lautet jetzt:
 
 ```none
-Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
-über WIK10 und VORDME FD13 auf runway 13
-517 nm, 5 h 10 m, Low Altitude
+Bembridge (EGHJ) Parkposition 1, Parkplatz GA klein nach Wick (EGPC)
+über WIK10 und VORDME FD13 auf Runway 13
+517 nm, 5 h 10 m, Niedrige Höhe
 ```
 Stellen sie die Fahrgeschwindigkeit entsprechend dem benutzten Flugzeug im Flugplan-Dockfenster ein, um eine bessere Zeitschätzung zu erhalten.
 
@@ -190,7 +190,7 @@ Dies zeigt nur Lufträume auf der Karte an, die für Ihre Reiseflughöhe relevan
 
 ### Fliegen {#tutorial-ifr-flying}
 
-Öffnen sie den Dialog `Verbinden` unter `Werkzeuge` -&gt; `Flugsimulatorverbindung` ![Flight Simulator Connection](../images/icons/network.png) und prüfen sie, ob `Automatisch verbinden` gewählt ist. Aktivieren, wenn nicht.
+Öffnen sie den Dialog `Verbinden` unter `Werkzeuge` -&gt; `Flugsimulatorverbindung` ![Flight Simulator Connection](../images/icons/network.png) und prüfen sie, ob `Automatisch verbinden` gewählt ist. Wenn nicht, bitte aktivieren.
 
 _Litte Navmap_ findet den Simulator unabhängig davon, ob er bereits gestartet ist oder später gestartet wird. Klicken sie auf `Verbinden`.
 
@@ -232,7 +232,7 @@ Der Abschnitt `Höhe` zeigt den vertikalen Pfad nach dem Top of Descent:
 
 ### Prozeduren ändern {#tutorial-ifr-changing-procedures}
 
-Nun hat sich das Wetter geändert und es ist ein Approach zur Piste 31 erforderlich:
+Nun hat sich das Wetter geändert und es ist ein Anflug zur Piste 31 erforderlich:
 
 * Rechtsklick auf den Zielflughafen am Ende der Flugplantabelle.
 * Wählen sie `Zeige Ankunft Prozeduren` ![Show Procedures](../images/icons/approach.png).
@@ -248,9 +248,9 @@ Die Beschriftung oben im Fenster zeigt nun `Anflug VORDME 31 FD31 Übergang (Vol
 Die Anezige oben im Fenster zeigt nun:
 
 ```none
-Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
-Via CHINN and VORDME FD31 to runway 31
-526 nm, 5 h 15 m, Low Altitude
+Bembridge (EGHJ) Parkposition 1, Parkplatz GA klein nach Wick (EGPC)
+Via CHINN und VORDME FD31 zum Runway 31
+526 nm, 5 h 15 m, Niedrige Höhe
 ```
 
 Um die Prozedur zu vervollständigen machen sie folgendes:
@@ -260,7 +260,7 @@ Um die Prozedur zu vervollständigen machen sie folgendes:
 
 Wenn ATC ihnen die Freigabe zum initial Fix der Prozedur erteilt:
 
-1. Löschen sie sofort alle Zwischenwegpunkte zwischen Ihrer aktuellen Flugzeugposition und dem ursprünglichen Fix der Prozedur: Klicken sie mit rechten Maustaste in der Flugplantabelle und wählen sie `Ausgewählten Abschnitt oder Prozedur löschen` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png), für alle Waypoints zwischen der aktuellen Position des Flugzeuges und dem initial Fix bzw. Prozedurstart. Vermeiden sie, den Anflug zu löschenh \(sie können auch mit einem Rechtsklick auf einen Waypoint im Kartenfenster über das Kontextmenue löschen\).
+1. Löschen sie sofort alle Zwischenwegpunkte zwischen Ihrer aktuellen Flugzeugposition und dem ursprünglichen Fix der Prozedur: Klicken sie mit rechten Maustaste in der Flugplantabelle und wählen sie `Ausgewählten Abschnitt oder Prozedur löschen` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png), für alle Waypoints zwischen der aktuellen Position des Flugzeuges und dem initial Fix bzw. Prozedurstart. Vermeiden sie, ihren Anflug zu löschen \(sie können auch mit einem Rechtsklick auf einen Waypoint im Kartenfenster über das Kontextmenue löschen\).
 
 2. Klicken sie dann mit der rechten Maustaste im Kartenfenster auf Ihr Flugzeug und wählen sie  `Position zum Flugplan hinzufügen` ![Add Position to Flight Plan](../images/icons/routeadd.png).
 
@@ -270,9 +270,9 @@ Unten: Nach dem Ändern des Anflugverfahrens und Hinzufügen eines benutzerdefin
 
 ![Changed Approach](../images/tutorial/ifrapproach.jpg)
 
-### Going Missed {#tutorial-ifr-going-missed}
+### Fehlanflug {#tutorial-ifr-going-missed}
 
 Ich empfehle, die Fehlanflüge auf der Karte zu verbergen `Ansicht` -&gt; `Zeige Fehlanflüge` ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches"). Dieses hilft, die Kartenanzeige übersichtlicher zu gestalten.
 
-* **Wenn die Fehlanflüge nicht angezeigt werden:** Das Fortschrittsfenster zeigt die Distanz und Zeit zum Ziel. Aktivieren des nächsten Wegpunkt \(wird in Magenta angezeigt\) wird angehalten, wenn das Ziel \(z.B. die Runwayschwelle\) erreicht wird, oder die Runwayschwelle überschritten wird.
+* **Wenn die Fehlanflüge nicht angezeigt werden:** Das Fortschrittsfenster zeigt die Distanz und Zeit zum Ziel. Das Aktivieren des nächsten Wegpunkt \(wird in Magenta angezeigt\) wird angehalten, wenn das Ziel \(z.B. die Runwayschwelle\) erreicht wird, oder die Runwayschwelle überschritten wird.
 * **Wenn Fehlanflug angezeigt wird und das Flugzeug die Runwayschwelle passiert hat:**  Der erste Wegpunkt auf dem Fehlanflug ist aktiviert und das Simulatorflugzeug zeigt die verbleibende Entfernung bis zum Ende der Fehlanflugprozedur.
