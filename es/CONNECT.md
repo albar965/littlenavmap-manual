@@ -1,100 +1,98 @@
-## ![Conexión a un simulador de vuelo](../images/icons/network.png "Conexión a un simulador aéreo") Conexión a un simulador aéreo {#connecting-to-a-flight-simulator}
+## ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Conexión al simulador de vuelo {#connecting-to-a-flight-simulator}
 
-El procedimiento de configuración es diferente para conexiones locales y remotas a un simulador de vuelo.
+El proceso de configuración es diferente para la conexión local al simulador de vuelo y la remota (en red).
 
-_Little Navmap_ puede conectarse directamente si todos los programas están ejecutándose en el mismo ordenador. El servicio _Little Navconnect_ se necesita si _Little Navmap_ es usado en un ordenador remoto.
+_Little Navmap_ puede conectarse directamente si todos los programas se ejecutan en el mismo ordenador. El agente _Little Navconnect_ es necesario si _Little Navmap_ se ejecuta en un ordenador de forma remota.
 
-### Conexión Local {#local-connection}
+### Conexión local {#local-connection}
 
 #### Todos los simuladores
 
-Abrir la ventana de diálogo de conexión en _Little Navmap_ seleccionando `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection` y escogiendo el simulador que la conexión and choose the simulator to which the connection should be established.
+Abrir el cuadro de diálogo de conexión en _Little Navmap_ `Menú principal` -&gt; `Herramientas` -&gt; `Conexión con el simulador de vuelo` y elegir el simulador con el cual se quiere establecer la conexión.
 
-![Ventana de diálogo de conexión de Little Navmap](../images/connectlocal.jpg "Ventana de diálogo de conexión de Little Navmap")
+![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
 
-_**Picture above:** La configuración de la ventana de diálogo de conexión de Little Navmap para una conexión local con FSX o P3D. La conexión será establecida de manera manual._
+_**Imagen superior:** Dialogo de configuración de la conexión de Little Navmap a FSX o P3D. La conexión se establecerá manualmente._
 
-Selecciona `Connect directly to local Flight Simulator`.
+Seleccionar `Conectar directamente al simulador de vuelo local`.
 
-Ahora presiona `Connect`. La ventana de diálogo se cerrará y _Little Navmap_ intentará establecer una conexión en segundo plano.
+Ahora hacer click en `Conectar`. El cuadro de diálogo se cerrará y _Little Navmap_ intentará hacer la conexión en segundo plano.
 
-Presiona en `Close` guardando todos los cambios y cerrando la ventana de diálogo sin establecer una conexión.
+Hacer click en `Cerrar`, se mantienen todos los cambios y cierra el cuadro de diálogo sin establecer la conexión.
 
-Activa `Connect automatically` si tu no quieres conetarlo manualmente. La orden de comienzo de programas no importa si está chequeado y _Little Navmap_ encuentra el simulador una vez que ha empezado o cuando está ya anteriormente arrancado. Esta es la configuración recomendada.
+Activar `Conectar automáticamente` si no desea hacer la conexión manualmente. El orden de ejecución de los programas no importa si este está activado y _Little Navmap_ encontrará el simulador una vez esté se ejecute o cuando esté ya funcionando. Este es el ajuste recomendado.
 
-Desmarca `Fetch AI or multiplayer aircraft` o `Fetch AI or multiplayer ships` para desactivar la transferencia de información al programa. Esto puede ser útil por razones de rendimiento si tú usas mucha IAf pero no quieres verlo en _Little Navmap_.
+Deseleccionar `Recuperando aeronaves de IA o multijugador` para desactivar  la transferencia de esta información al programa. Esto puede ser útil por razones de rendimiento si utiliza muchas aeronaves IA pero no desea verlas en _Little Navmap_.
 
 #### X-Plane
 
-Tiene que instalar el plugin incluido *Little Xpconnect* para usar *Little Navmap* y ver el mapa de moviento con X-Plane.
+Tiene que instalar el plugin que se incluye *Little Xpconnect* para usar *Little Navmap* como mapa de movimiento con X-Plane.
 
-El plugin está adjunto a Little Navmap pero también puede ser descargado a parte.
+El plugin se incluye junto con Little Navmap y también puede ser descargado independientemente.
 
-Copiar el directorio de todo el plugin `Little Xpconnect` al directorio `plugins`
-y dentro de este `Resources` en la instalación de X-Plane. La ruta completa debería ser
-algo parecido a `.../X-Plane 11/Resources/plugins/Little Xpconnect`
+Copiar la carpeta entera `Little Xpconnect` dentro de la carpeta `plugins`
+en el directorio `Resources` de la instalación de X-Plane. La ruta completa debería parecerse a esta `.../X-Plane 11/Resources/plugins/Little Xpconnect`
 
-Puede chequear el gestor del plugin de X-Plane si está cargado correctamente.
+Puede comprobar con el administrador de plugins de X-Plane si se ha cargado correctamente.
 
-Cuando conecte con Little Navmap seleccione la opción `Connect directly to a local
-X-Plane simulator`.
+Cuando se conecte con Little Navmap seleccionar la opción `Conectar directamente al simulador X-Plane`.
 
-### Conexión Remota {#remote-connection}
+### Conexión remota {#remote-connection}
 
-El uso de un avión o la información meteorológica es transferida a _Little Navmap_ en un ordenador remoto usando el servicio _Little Navconnect_ en el ordenador donde se ejecuta el simulador aéreo.
+La información de la aeronave y meteorología del usuario se transfiere a  _Little Navmap_ en un ordenador remoto mediante el agente _Little Navconnect_ del ordenador de vuelo, el cual evita el error y la configuración tediosa de hacer una conexión remota con SimConnect.
 
-Note que la información meteorológica no puede ser transferida a través de una conexión remota de X-Plane.
+Observe que la información de la meteorología no puede transmitirse a través de una conexión remota desde X-Plane.
 
-Tiene que extraer el fichero ZIP que contiene `littlenavmap.exe` y `littlenavconnect.exe` en ambos ordenadores. Entonces carga la base de datos del escenario en el ordenador donde está corriendo el simulador y copia la base de datos en el ordenador remoto. Ver [Instalación sin el simulador  aéreo](RUNNOSIM.md) para más detaller.
+Tiene que descomprimir el archivo ZIP que contiene `littlenavmap.exe` y `littlenavconnect.exe` en ambos ordenadores. después cargar la base de datos en el ordenador donde se ejecuta el simulador y copiar la base de datos en el ordenador remoto. Ver [Ejecutar sin una instalación del simulador de vuelo](RUNNOSIM.md) para más detalles.
 
-Confirme que la versión de _Little Navmap_ y _Little Navconnect_ coinciden, en otro caso, debería obtener un mensaje de error. Use la versión de _Little Navconnect_ que está incluida en el archivo descargado en _Little Navmap_ download archive si no está seguro.
+Asegurarse que las versiones de _Little Navmap_ y _Little Navconnect_ coinciden, de lo contrario obtendrá un mensaje de error. Utilice la versión de _Little Navconnect_ que se incluye en _Little Navmap_, descargue el archivo si no está seguro.
 
-Para X-Plane puede tener que instalar el plugin *Little Xpconnect*. Vea el fichero `README.txt` en el directorio `Little Xpconnect` para las instrucciones de instalación.
+Para X-Plane tiene que instalar además el plugin *Little Xpconnect*. Ver el archivo `README.txt` del directorio `Little Xpconnect` para instrucciones sobre la instalación.
 
-#### Arrancar _Little Navconnect_ en el ordenador que se usa para volar{#connect-start-navconnect}
+#### Iniciar _Little Navconnect_ en el ordenador de vuelo {#connect-start-navconnect}
 
-_Little Navconnect_ se incluye junto con el archivo _Little Navmap_. Arranca _Little Navconnect_ \(`littlenavconnect.exe`\) en el ordenador que está usando el simulador y toma nota de los mensajes que son mostrados en la ventana de log. Solo necesita los valores coloreados que le dice el nombre y dirección de el ordenador en que se está ejecutando el simulador. Puede usar esa dirección IP o el hostname.
+_Little Navconnect_ está contenido junto con el fichero descargado de _Little Navmap_ . Ejecutar _Little Navconnect_ \(`littlenavconnect.exe`\) en el ordenador donde se arranca el simulador y observar el mensaje que se se muestra en la ventana de registro. Solo necesita los valores coloreados los cuales le indican el nombre y dirección del ordenador donde se ejecuta el simulador. Puede utilizar la dirección IP o el nombre del host.
 
-_Little Navconnect_ puede mostrar múltiples direcciones IP o hostnames dependiento de su configuración de red. Esto puede suceder, por ejemplo, si tiene una conexión Ethernet y también está conectado usando WIFI. Puede intentar usar las que le aparezcan si no está seguro de cuál usar. También debe estar seguro de configurar el cortafuegos correctamente para permitir la comunicación entre `littlenavmap.exe` y `littlenavconnect.exe` en ambos ordenadores.
+_Little Navconnect_ puede mostrar múltiples direcciones IP y nombres de host dependiendo se su configuración de red. Esto puede ocurrir si tiene Ethernet conectado y también se utiliza una red Wifi, por ejemplo. Tiene que probar si no está seguro cual usar. Asegurarse de configurar el cortafuegos de Windows correctamente en ambos ordenadores para permitir la comunicación entre `littlenavmap.exe` y `littlenavconnect.exe`.
 
 ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
-_**Picture above:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ está esperando por un simulador de vuelo. Esta ejecutándose en el ordenador _`win10.fritz.box`_ con la dirección IP _`192.168.2.13`_._
+_**Imagen superior:**_ [_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ está ejecutado y esperando al simulador de vuelo. Está corriendo en el ordenador_`win10.fritz.box`_ con la dirección IP _`192.168.2.13`_.
 
-Cambie el puerto en la ventana de diálogo de _Little Navconnect_'s `Options` si ve un mensaje de error como se muestra abajo:
+Cambiar de puerto en el diálogo de `opciones` de _Little Navconnect_ si ve un mensaje de error como el siguiente:
 
-`[2016-07-27 16:45:35] Unable to start the server: The bound address is already in use.`
+`[2016-07-27 16:45:35] No se puede iniciar el servidor: La dirección enlazada está ya en uso.`
 
-#### Arranca _Little Navmap_ en el Cliente / Ordenador Remoto {#connect-start-navmap}
+#### Iniciar  _Little Navmap_ como cliente / Ordenador remoto {#connect-start-navmap}
 
-Abra la ventana de diálogo de conexión en _Little Navmap_ seleccionando `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
+Abrir el cuadro de diálogo de conexión en _Little Navmap_ seleccionando `Menú principal` -&gt; `Herramientas` -&gt; `Conexión con el simulador de vuelo`.
 ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
-_**Imagen superior:** Ventana de diálogo de conexión con valores correctos para acceder al ordenador que está ejecutando el simulador y Little Navconnect como se muestra arriba._
+_**Imagen superior:** Cuadro de diálogo de conexión con los valores correctos de acceso al ordenador donde se ejecuta el simulador y Little Navconnect como se muestra arriba._
 
-Ahora hacer los sigiente después de abrir la ventana de diálogo:
+Ahora hacer lo siguiente después de abrir el cuadro de diálogo:
 
-4. Selecciona `Connect to a remote Flight Simulator`.
-5. Añade el valor del hostname. Esto puede ser el hostname o la dirección IP mostrada en _Little Navconnect_.
-6. Chequear el valor para el puerto. `51968` es el valor por defecto y usualmente no es necesario cambiarlo.
-7. Presiona la opción connect. La ventana  de diálogo se cerrará y _Little Navmap_ intentará establecer una conexión en segundo plano.
+4. Seleccionar `Conectar al simulador de vuelo remoto`.
+5. Añadir el nombre del host. Este puede ser el nombre del host o la IP del mismo que se muestra en _Little Navconnect_.
+6. Comprobar el valor del puerto. `51968` es el valor por defecto y normalmente no necesita cambiarse.
+7. Hacer Click en Conectar. El cuadro de diálogo se cerrará y _Little Navmap_ Intentará establecer la conexión en segundo plano.
 
-Establecer una conexión, dependiendo de la conexión, puede tardar un rato. El avión aparecerá en el mapa en la ventana `Simulator Aircraft` una vez que un vuelo este configurado y cargado en el simulador. Si no hay ningún vuelo cargado \(p.e. el simulador está todavía mostrando la ventana de inicio\), verá el mensaje `Connected. Waiting for update.` en la ventana `Simulator Aircraft`.
+Establecer la conexión puede tomar algún tiempo dependiendo de su red. La aeronave aparecerá en el mapa y en el panel `Aeronave del simulador` una vez se configure el vuelo y se cargue el simulador. Si no hay un vuelo cargado aún \(por ejemplo el simulador todavía muestra la ventana de arranque\), Verá el mensaje `Conectado. Esperando para actualizar.` en el panel ´Aeronave del simulador´.
 
-Nota que puede tardar un rato hasta que un error es mostrado si usa un valor equivado para el hostname o puerto.
+Tenga en cuenta que se puede demorar un tiempo hasta que aparezca un error si utilizó los valores incorrectos para el nombre de host o el puerto.
 
-Se recomienda seleccionar `Connect automatically`. La orden de comienzo de los tres programas \(simulador, _Little Navconnect_ y _Little Navmap_\) no importará si está marcada y el programa las encontrará.
+Es recomendable activar `Conectar automáticamente`. El orden de ejecución de los tres programas \(simulador, _Little Navconnect_ y _Little Navmap_\) no importa si esta opción está activa y se comunican entre ellos.
 
-Desmarcar `Fetch AI or multiplayer aircraft` o `Fetch AI or multiplayer ships` en `Tools` -&gt; `Options` de _Little Navconnect_ para deshabilitar la transferencia de información a través de la red. Esto puede ser útil por razones de rendimiento si usa gran cantidad de Inteligencia Artificial y no quiere verla en _Little Navmap_.
+Desactivar `Obtener AI o aeronaves multijugador` o `Búsqueda de naves AI o multijugador` en `Herramientas` -&gt; `Opciones` de _Little Navconnect_ para desactivar la transferencia de esta información a través de la red. Esto puede ser util por razones de rendimiento si utiliza una gran cantidad de AI pero no quiere verlos en _Little Navmap_.
 
-### Opciones en la ventana de conexión {#options}
+### Opciones del cuadro de diálogo Conexión {#options}
 
-* `Disconnect`: Desconecta la actual sesión y reconecta automáticamente.
-* `Connect`: Intenta conectar. Una ventana de error será mostrada si no se puede establecer una conexión. _Little Navmap_ lo intantará constantemente de nuevo si `Connect automatically` está activado.
-* `Close`: Cierra la ventana de diálogo sin cambiar el estado de la actual conexión.
-* `Connect automatically`: _Little Navmap_ intentará conectar constantemente si esta opción está marcada. Esta es la configuración recomendada.
-  * Todo intento de conexión parará inmediatamente si desmarca este botón.
-  * Tiene que presionar en  `Connect` una vez para comenzar la conexión automática después de marcar este botón.
-* `Update Time Interval`: Permite rango de 50 milisegundos hasta 1 segundo. _Little Navmap_ obtiene datos de un simulador usando este intervalo de tiempo. Incremente este valor si sufre lag o cortes en el simulador. Un valor menor dará como resultado actualizaciones de mapas más fluidas en _Little Navmap_.
-* `Fetch AI or multiplayer aircraft` y `Fetch AI or multiplayer ships`: Desactiva la búsqueda de vehículos controlados por la IA. Estas configuraciones se aplican inmediatamente. Nota que el tráfico marítimo no está disponible para X-Plane.
+* `Desconectar`: Desconecta la sesión actual y detiene la reconexión automática.
+* `Conectar`: Intenta conectar. Se muestra un cuadro de diálogo de error si no se puede establecer una conexión. _Little Navmap_ lo intentará constantemente si `Conectar automáticamente` está activado.
+* `Cerrar`: Cierra el cuadro de diálogo sin hacer ningún cambio en el estado de la conexión actual.
+* `Conexión automática`: _Little Navmap_ intentará conectar constantemente si está activa. Este es el ajuste recomendado.
+  * Todas las conexiones intentan detenerse inmediatamente si se desactiva esta opción.
+  * Tiene que hacer click en `Conectar` una vez para iniciar la conexión automática después de activar esta opción.
+* `Intervalo de actualización`: El rango permitido es desde 50 milisegundos hasta 1 segundo. _Little Navmap_ obtiene datos desde el simulador utilizando este intervalo de tiempo. Aumente este valor si experimenta parones o lag en el simulador. Un valor bajo permite un movimiento más fluido en el mapa de _Little Navmap_.
+* `Obtener AI o aeronaves multijugador` y `Búsqueda de naves AI o multijugador`: Desactiva la obtención de vehículos de AI. Estos ajustes se aplican inmediatamente. Tenga en cuenta que el tráfico de naves no está disponible en X-Plane.
 

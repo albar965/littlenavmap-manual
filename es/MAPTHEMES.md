@@ -1,17 +1,16 @@
-## Crear o agregar temas de mapa {#creating-or-adding-map-themes}
+## Crear o añadir Temas de Mapas {#creating-or-adding-map-themes}
 
-Para agregar un mapa arbitrario en línea o fuera de línea a _Little Navmap_ simplemente agregue el directorio del mapa desde un tema del mapa descargado o creado por usted mismo al directorio `data\maps\earth`.
+Para añadir un mapa en línea o sin conexión a _Little Navmap_ simplemente añada el directorio del tema descargado o creado al directorio `data\maps\earth`.
 
+La ruta completa al archivo DGML \(ver los enlaces de abajo sobre DGML\) la descripción del mapa debe ser `c:\sus Programas\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` si prefiere añadir por ejemplo [OpenCycleMap](http://www.opencyclemap.org). El archivo DGML puede referirse a un servicio de mapas en línea o incluir datos de mapas sin conexión. Normalmente un tema de mapa contiene varios archivos, n o solo el archivo DGML.
 
-La ruta completa al archivo DGML \(consulte los enlaces a continuación para obtener más detalles sobre DGML\) que describe el mapa debe ser `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` si lo desea, por ejemplo, agregue el [OpenCycleMap] (http://www.opencyclemap.org). El archivo DGML puede hacer referencia a un servicio de mapas en línea o incluir datos de mapas sin conexión. Por lo general, un tema de mapa contiene muchos más archivos que solo el DGML.
+El menú `Menú Principal` -&gt; `Mapa` -&gt; `Tema` y la ventana desplegable de la barra de herramientas mostrará una entrada por cada tema adicional.
 
-El menú `Main Menu` -&gt; `Map` -&gt; `Theme` y el cuadro desplegable de la barra de herramientas recibirán una entrada por cada tema de mapa adicional.
+Las opciones `Mostrar Nombre de Países y Ciudades` y `Mostrar sombreado` están activados en todos los temas de mapas adicionales pero podrían no funcionar dependiendo de las propiedades definidas en el archivo DGML.
 
-Las opciones `Show Country and City Names` y `Show Hillshading` están habilitadas para todos los temas de mapa adicionales, pero es posible que no funcionen según las propiedades definidas en el archivo DGML del mapa.
+Más mapas e información sobre la configuración de los archivos DGML pueden encontrarse 	aquí en las páginas de  Marble/KDE:
 
-Se pueden encontrar más mapas e información sobre la configuración del mapa y los archivos DGML en las siguientes páginas de Marble / KDE:
-
-* Descargar más mapas para el widget Marble \(solo mapas de tierra son compatibles con `Little Navmap`\): [Mapas adicionales](https://marble.kde.org/maps.php)
-* Un tutorial que muestra cómo crear un tema de mapa basado en imágenes en mosaico: [Marble/CustomMaps](https://techbase.kde.org/Marble/CustomMaps)
-* Un tutorial que muestra cómo crear un tema de mapa basado en [OSM Slippy Maps](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [Cómo crear temas de mapas basados ​​en mapas deslizantes de OSM](https://techbase.kde.org/Marble/OSMSlippyMaps)
-* Cómo crear un mapa histórico para Marble: [Mapas históricos para Marble] (https://techbase.kde.org/Marble/HistoricalMaps)
+* Descarga de más mapas para el widget Marble \(solo se soportan mapas terrestres en `Little Navmap`\): [Mapas Adicionales](https://marble.kde.org/maps.php)
+* Un tutorial sobre como crear un mapa basado en imágenes de celdas: [Marble/CustomMaps](https://techbase.kde.org/Marble/CustomMaps)
+* Un tutorial que muestra como crear un tema de mapa basado en [OSM Slippy Maps](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames): [How to create map themes based on OSM slippy maps](https://techbase.kde.org/Marble/OSMSlippyMaps)
+* Como crear un mapa histórico para Marble: [Historical Maps for Marble](https://techbase.kde.org/Marble/HistoricalMaps)

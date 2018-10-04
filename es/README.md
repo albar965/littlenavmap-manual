@@ -1,8 +1,8 @@
-# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Manual de usuario de Little Navmap {#little-navmap-user-manual}
+# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Little Navmap Manual de Usuario {#little-navmap-user-manual}
 
-**Versión 1.8**
+**Version 2.0**
 
-_Little Navmap_ es un planificador de vuelo, herramienta de navegación, mapa en tiempo real, búsqueda de aeropuerto con su información para Flight Simulator X, Flight Simulator - Steam Edition,  Prepar3D v2 a v4 y X-Plane 11 de código abierto.
+_Little Navmap_ es un planificador de vuelo gratuito de código abierto con herramientas de navegación, mapa móvil, búsqueda de aeropuertos e información de sistemas aeroportuarios para Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 a v4 y X-Plane 11.
 
 **No use este programa para navegación en el mundo real.**
 
@@ -12,9 +12,15 @@ Más acerca de mi proyecto en [**GitHub**](https://albar965.github.io).
 
 ---
 
-Copyright 2015-2017 Alexander Barthel
+Copyright 2015-2018 Alexander Barthel. 
+
+Traducción al español, Alfredo alias _fred_, Josemi alias _aquileo_, Emilio alias _zxplane_.
+
+[![X-PLANE.es](../images/Firma_x-plane_es.png)](http://www.x-plane.es/)
 
 ---
 
-Última actualización {{ gitbook.time }}.
+Ultima Actualización {{ gitbook.time }}.
+
+
 
