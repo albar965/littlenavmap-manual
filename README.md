@@ -2,18 +2,21 @@
 
 * [Little Navmap User Manual](en/README.md)
 
+# Español
+
+* [Manual de Usuario](es/README.md)
+
 # French
 
-* [Little Navmap User Manual](fr/README.md)
+* [Little Navmap User Manual](fr/README.md) \(Work in progress\)
 
 <!--
+# Deutsch
+
+* [Little Navmap Benutzerhandbuch](de/README.md) \(Work in progress\)
 
 # Italian
 
-* [Little Navmap User Manual](it/README.md)
-
-# Deutsch
-
-* [Little Navmap Benutzerhandbuch](de/README.md)   \(Outdated - need volunteers for translation into other languages\) - \(Veraltet. Freiwillige zur Übersetzung gesucht.\)
-
+* [Little Navmap User Manual](it/README.md) \(Work in progress\)
 -->
+
