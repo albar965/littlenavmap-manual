@@ -22,7 +22,7 @@
   * [Search Dock Window](SEARCH.md)
   * [Search Dock Window - Procedures](SEARCHPROCS.md)
 * [Navigation Databases](NAVDATA.md)
-* Flight Plan
+* [Flight Plan](flight-plan.md)
   * [Flight Plan Formats](FLIGHTPLANFMT.md)
   * [Flight Plan Dock Window](FLIGHTPLAN.md)
   * [Flight Plan Procedures](APPROACHES.md)
