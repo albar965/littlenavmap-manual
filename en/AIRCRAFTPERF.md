@@ -1,5 +1,4 @@
-## ![Aircraft Performance](../images/icons/aircraftperf.png "Aircraft Performance") Aircraft
-Performance {#aircraft-performance}
+## ![Aircraft Performance](../images/icons/aircraftperf.png "Aircraft Performance") Aircraft Performance {#aircraft-performance}
 
 _Little Navmap_ provides functionality for editing, creating and collecting aircraft performance
 profiles. This allows to determine needed fuel, flight time as well as climb and descent paths.
