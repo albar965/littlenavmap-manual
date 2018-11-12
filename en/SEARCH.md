@@ -155,7 +155,7 @@ Be aware that showing all navaids and airports can take some time especially if 
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-0}
 
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-0}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
 
 #### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
 

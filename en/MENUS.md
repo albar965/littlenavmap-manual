@@ -22,6 +22,9 @@ An opened flight plan file will be reloaded on start up \(reload and centering c
 
 Procedure information and ground speed will be added to the flight plan if a PLN file is saved by _Little Navmap_. The additional information will be ignored by FSX or P3D but allows to reload all information by _Little Navmap_.
 
+You can also **drag and drop files from a file manager** like Windows Explorer or macOS Finder into the _Little Navmap_ main window to load them.
+Single flight plans and all allowed formats for loading \(`FMS`, `FLP`, `PLN`\) as well as aircraft performance files \(`lnmperf`\) are accepted.
+
 #### ![Append flight plan](../images/icons/fileappend.png "Append flight plan") Append Flight Plan {#append-flight-plan}
 
 Adds departure, destination and all waypoints to the current flight plan.
@@ -29,6 +32,12 @@ Adds departure, destination and all waypoints to the current flight plan.
 Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as required. See [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
 
 All arrival procedures will be removed when appending a flight plan.
+
+The appended legs are selected after loading the flight plan.
+
+#### Recent Flight Plan {#recent-flight-plan}
+
+Shows all recently loaded flight plans for quick access. You can clear the list by selecting  `Clear Menu`.
 
 #### ![Save Flight Plan](../images/icons/filesave.png "Save Flight Plan") Save Flight Plan {#save-flight-plan}
 
@@ -334,7 +343,7 @@ Changes the flight plan altitude according to a simplified East/West rule and th
 
 #### ![Goto Home](../images/icons/home.png "Goto Home") Goto Home {#goto-home}
 
-Goes to the home area that was set using [Set Home](MAPDISPLAY.md#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
+Jumps to the home area that was set using [Set Home](MAPDISPLAY.md#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/home.png "Home Symbol") symbol.
 
 #### ![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search") Go to Center for Distance Search {#go-to-center-for-distance-search}
 
@@ -343,6 +352,14 @@ Go to the center point used for distance searches. See [Set Center for Distance 
 #### ![Center Flight Plan](../images/icons/centerroute.png "Center Flight Plan") Center Flight Plan {#center-flight-plan}
 
 Zooms out the map \(if required\) to display the whole flight plan on the map.
+
+#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Remove all Highlights and Selections {#remove-highlights}
+
+Deselect all entries in the flight plan table, all search result tables and remove all highlight marks from the map. Use this to get a clean view of the map while flying.
+
+#### ![Remove all Ranges, Measurements and Patterns](../images/icons/rangeringsoff.png "Remove all Ranges, Measurements and Patterns") Remove all Ranges, Measurements and Patterns {#remove-marks}
+
+Removes all range rings, navaid range rings, measurement lines and airport traffic patters from the map.
 
 #### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Center Aircraft {#center-aircraft}
 
@@ -382,19 +399,21 @@ Note that map information will be truncated if too much detail is chosen. A red 
 
 The detail level is shown in the statusbar. Range is -5 for least detail to +5 for most detail.
 
-#### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force Show Addon Airports {#force-show-addon-airports}
+#### Airports
+
+##### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force Show Addon Airports {#force-show-addon-airports}
 
 Add-on airports are always shown independently of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
 
-#### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Show Airports with hard Runways {#show-airports-with-hard-runways}
+##### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Show Airports with hard Runways {#show-airports-with-hard-runways}
 
 Show airports that have at least one runway with a hard surface.
 
-#### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Show Airports with soft Runways {#show-airports-with-soft-runways}
+##### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Show Airports with soft Runways {#show-airports-with-soft-runways}
 
 Show airports that have only soft surfaced runways or only water runways. This type of airport might be hidden on the map depending on zoom distance.
 
-#### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Show empty Airports {#show-empty-airports}
+##### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Show empty Airports {#show-empty-airports}
 
 Show empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
 
@@ -402,7 +421,7 @@ An empty airport is defined as one which has neither parking nor taxiways nor ap
 
 Airports having only water runways are excluded from this definition to avoid unintentional hiding.
 
-##### X-Plane and 3D airports
+###### X-Plane and 3D airports
 
 The function can be extended to X-Plane airports which are not marked as `3D`. This can be done by checking `Consider all X-Plane airports not being 3D empty` in the `Options` dialog on the `Map Display` tab. All airports not being marked as `3D` will be shown in gray on the map and can be hidden like described above if enabled.
 
@@ -411,17 +430,19 @@ An airport is considered 3D if it is stored in
 
 The definition of `3D` is arbitrary, though. A `3D` airport may contain just a single object, such as a light pole or a traffic cone or it may be a fully constructed major airport.
 
-#### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Show VOR Stations {#show-vor-stations}
+#### Navaids
 
-#### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Show NDB Stations {#show-ndb-stations}
+##### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Show VOR Stations {#show-vor-stations}
 
-#### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Show Waypoints {#show-waypoints}
+##### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Show NDB Stations {#show-ndb-stations}
 
-#### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Show ILS Feathers {#show-ils-feathers}
+##### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Show Waypoints {#show-waypoints}
 
-#### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Show Victor Airways {#show-victor-airways}
+##### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Show ILS Feathers {#show-ils-feathers}
 
-#### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Show Jet Airways {#show-jet-airways}
+##### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Show Victor Airways {#show-victor-airways}
+
+##### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Show Jet Airways {#show-jet-airways}
 
 Show or hide these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
 
@@ -567,6 +588,79 @@ Show country, city and other points of interest. Availability of these options d
 
 Show hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
 
+#### ![Show Minimum Altitude](../images/icons/minaltitude.png "Show Minimum Altitude") Show Minimum Altitude {#show-mora-grid}
+
+Toggles the display of minimum off-route altitude grid on the map. 
+
+The minimum off-route altitude grid grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL or higher terrain is cleared by 2000 feet.
+
+The large number is 1000 feet and small number 100 feet minimum altitude.
+
+![MORA Grid](../images/legend/map_mora.png)
+
+_**Picture above:** MORA grid: 3300, 4400, 6000, 9900 and 10500 feet._
+
+#### ![Show Airport Weather](../images/icons/weather.png "Show Airport Weather") Show Airport Weather {#show-airport-weather}
+
+Shows icons for airport weather where a weather station is available. Select source for display with `Airport Weather Source` below.
+
+See [Legend - Airport Weather](LEGEND.md#airport-weather) for an explanation of the symbols and
+[Airport Weather](WEATHER.md#airport-weather) for more information.
+
+#### Airport Weather Source {#airport-weather-source}
+
+Selects the source for airport weather display on the map. The following options are available:
+
+##### Flight Simulator
+
+FSX, Prepar3D or X-Plane. Display on remote connections is slower than for direct simulator connections.
+
+##### Active Sky
+
+Use Active Sky as source for weather display.
+
+##### NOAA
+
+This is slower than the other options since it needs to send a network request for each station.
+
+##### VATSIM
+
+Same as NOAA but weather information might be older than NOAA.
+
+##### IVAO
+
+Fastest option to display online weather but weather information might be older than NOAA.
+
+#### ![Show Sun Shading](../images/icons/mapshadow.png "Show Sun Shading") Show Sun Shading {#show-sun-shading}
+
+Enables the display of a sun shadow on the globe. This works in both projections `Mercator` and `Spherical`.
+
+You can change the time source with the `Sun Shading Time` menu below. The shadow darkness can be changed in the dialog `Options` on tab `Map Display`.
+
+See [Sun Shadow](SUNSHADOW.md) for more information.
+
+#### Sun Shading Time {#show-sun-shading-time}
+
+You can choose between three time sources for the sun shadow.
+
+##### Simulator
+
+Uses the time of the connected flight simulator and falls back to real time if not connected. Updates the shadow if the simulator time changes.
+
+##### Real UTC Time
+
+Use real time.
+
+##### User defined Time
+
+Allows to use the user defined time as set by using `Set User defined Time` below. 
+
+##### Set User defined Time
+
+Opens a dialog to set a user defined time in UTC as a source for the sun shadow.
+
+See [Sun Shadow - Set User defined Time](SUNSHADOW.md#sun-shadow-user-defined) for more information.
+
 #### Projection {#projection}
 
 ##### Mercator {#mercator}
@@ -659,7 +753,7 @@ A very simple map including coarse hill shading and land colors. The map is incl
 
 One menu item is created for each Flight Simulator installation or database found. These menu items allow switching of databases on the fly. The menu item is disabled if only one Flight Simulator was found.
 
-The loaded AIRAC cycle is displayed only for X-Plane since the information is not available for FSX or P3D simulators.
+The loaded AIRAC cycle is displayed only for X-Plane and Navigraph data since the information is not available for FSX or P3D simulators.
 
 **You have to set the base path to the X-Plane directory in the **`Load Scenery Library Dialog`** first to enable the X-Plane menu item.**
 
@@ -790,6 +884,44 @@ A CSV backup file named `little_navmap_userdata_backup.csv` is created in the se
 
 _Little Navmap_ also creates a full database backup on every start. See [Files](FILES.md#userdata).
 
+### Aircraft Menu {#aircraft-menu}
+
+This menu contains functionality for aircraft performance profiles which allow fuel planning and traveling time estimation.
+
+See [Aircraft Performance](AIRCRAFTPERF.md) and [Edit Aircraft Performance](AIRCRAFTPERFEDIT.md) for more information.
+
+#### ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") New Aircraft Performance {#aircraft-menu-new}
+
+Creates a new performance profile with default values. A profile with 3 nm per
+1000 ft for descent and climb rules and no fuel consumption
+is default. Red warning messages will be shown since the profile is not complete.
+
+#### ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance") Load Aircraft Performance {#aircraft-menu-load}
+
+Loads a `lnmperf` aircraft performance profile. You can also load a profile by dragging the file from a file manager like Windows Explorer into the main window of _Little Navmap_.
+
+#### ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance") Save Aircraft Performance {#aircraft-menu-save}
+
+Saves the current profile. Opens a file dialog if not saved before.
+
+#### ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Save Aircraft Performance as") Save Aircraft Performance as {#aircraft-menu-save-as}
+
+Allows to save the current profile using a new filename.
+
+#### ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") Edit Aircraft Performance {#aircraft-menu-edit}
+
+Opens the [Edit Aircraft Performance](AIRCRAFTPERFEDIT.md) dialog for the current performance profile.
+
+#### Recent Performance Files {#aircraft-menu-recent}
+
+Shows all recently loaded aircraft performance files for quick access. You can clear the list by selecting the sub-menu item `Clear Menu`.
+
+#### Collect Performance for Flight {#aircraft-menu-collect}
+
+Shows a confirmation dialog with a quick help and starts the automatic aircraft performance collection while flying.
+
+See [Collect Performance for Flight](AIRCRAFTPERF.md#aircraft-performance-collect).
+
 ### Tools Menu {#tools-menu}
 
 #### ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Flight Simulator Connection {#flight-simulator-connection}
@@ -809,6 +941,20 @@ Open the [Options dialog](OPTIONS.md#options-dialog).
 #### Map Overlays {#map-overlays}
 
 Show or hide floating map overlays, like the overview on the top left or the compass on the top right corner of the map window.
+
+#### Styles {#window-styles}
+
+Allows to switch the style of the graphical user interface on the fly. A restart is not needed.
+
+The user interface styles contain a `Night` mode that can be used for flights in a dark environment. You can also dim the map and elevation profile display for this style in the dialog `Options` on tab `Map Display` \(`Map Dimming in Night Style` at the bottom of the dialog\).
+
+The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
+
+The available styles depend on the operating system except for `Fusion` and `Night` which are always available.
+
+#### Show all floating Windows {#search}
+
+Raises all undocked \(i.e. floating\) windows before the main window. This can be helpful if a window got lost.
 
 #### ![Search](../images/icons/searchdock.png "Search") Search {#search}
 
@@ -837,6 +983,14 @@ Reset the main window layout back to default. This involves visibility, position
 #### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contents \(Online\) {#help-contents}
 
 Show the online user manual in the default web browser.
+
+#### ![Tutorials \(Online\)](../images/icons/help.png "Tutorials \(Online\)") Tutorials \(Online\) {#help-tutorials}
+
+Shows the online tutorials in the default web browser.
+
+#### ![Frequently asked Questions \(Online\)](../images/icons/help.png "Frequently asked Questions \(Online\)") Frequently asked Questions \(Online\) {#help-faq}
+
+Shows the frequently asked questions in the web browser.
 
 #### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contents \(Offline, PDF\) {#help-contents-offline}
 

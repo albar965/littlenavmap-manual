@@ -6,7 +6,7 @@ The dialog shows information about the currently selected database including the
 
 **FSX and P3D only:** The base path and the `scenery.cfg` path will be shown in two text edit fields for the currently selected simulator. These fields are populated automatically, but can be changed to any other valid location. All values are saved individually for each flight simulator type.
 
-**X-Plane only:** X-Plane cannot be recognized automatically. You have to select the base path manually.
+**X-Plane only:** The base path of the first X-Plane installation is added. Select the base path manually if you like to read the scenery library of another X-Plane installation.
 On Windows that can be a path like `C:\Simulators\X-Plane 11`, the executable being `C:\Simulators\X-Plane 11\X-Plane.exe`.
 
 Loading a scenery library can take from 2 to 15 minutes depending on your setup and amount of scenery add-ons. You can speed this up by excluding directories containing neither airport nor navigation data in the `Options` dialog on the `Scenery Library Database` tab.
@@ -88,7 +88,7 @@ Airspaces will appear as duplicates in the map if an airspace file is found in m
 * `Reset Paths`: Reset all paths back to default values.
 * `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
 * `Scenery Configuration File` and `Select ...` \(only FSX and P3D\): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
-* `Read inactive Scenery Entries` \(only FSX and P3D\): This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading.
+* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading. This applies to the FSX/P3D `scenery.cfg` as well as X-Plane's `scenery_packs.ini` which both allow to disable scenery entries.
 * `Read Prepar3D add-on.xml packages` \(only P3D v3 and v4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
 * `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database is restored. The dialog is closed and the program will switch to show the loaded database once it is successfully loaded.
 * `Close`: Keep all settings and changes in the dialog and close it without loading anything.

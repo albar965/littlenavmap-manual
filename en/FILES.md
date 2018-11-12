@@ -8,13 +8,13 @@ Log files of _Little Navmap_ are stored in the directories:
 * Linux: `/tmp/abarthel-little_navmap.log`
 * macOS: `/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log`
 
-The program keeps three log files and rotates these on each startup. So you may find up to three logs:
+The program keeps three log files and rotates these on each startup if the file size of 10 MB is exceeded. So you may find up to three logs:
 
 `abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
 
-Make sure to send the correct log file after a crash. The program will rotate the log files on restart. If unsure send all copies in a Zip-file.
+Send the log file `abarthel-little_navmap.log` if you like to report an error. 
 
-If you like to report an issue when loading the scenery database: Load the database and quit the program. Then copy the log file to another folder before restarting the _Little Navmap_.
+**Please compress the log file using ZIP when sending per email.**
 
 ### Configuration {#configuration}
 
@@ -56,6 +56,8 @@ Databases are stored in the directories:
 All these databases are [SQLite](http://sqlite.org) files which can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
 
 **Do not modify, move, rename or delete databases while **_Little Navmap_** is running.**
+
+**Do not let the Navigraph FMS Database Manager update databases while **_Little Navmap_** is running. **_Little Navmap_** might crash, the update might fail or remain incomplete.**
 
 #### Scenery Library {#scenery-library}
 

@@ -6,6 +6,21 @@ Colors, size and text labels of some map elements can be changed in the dialog `
 
 Heading and course are suffixed with `°T` for true course or `°M` for magnetic course.
 
+### Mouse Clicks {#mouse-clicks}
+
+A click in the map on the active spot of a feature like a range ring removes it. The cursor changes to a hand symbol to indicate an active spot which allows to remove a feature by click or remove/edit it in the context menu.
+
+| Click | Description |
+| --- | --- |
+| `Click` | Show information about all features around the cursor position. |
+| `Double Click` | Zooms to the clicked feature and shows information. |
+| `Shift+Click` | Add or remove range rings or navaid range rings. |
+| `Ctrl+Click` | Start rhumb-line measurement or delete a measurement line. |
+| `Alt+Click` | Start great circle line measurement or delete measurement line. |
+| `Ctrl+Shift+Click` | Add or edit an userpoint. |
+|`Ctrl+Alt+Click` | Insert airport, navaid, userpoint or position into the nearest flight plan leg. |
+| `Shift+Alt+Click` | Append airport, navaid, userpoint or position to flight plan. |
+
 ### Map Marks {#map-marks}
 
 | Symbol | Description |
@@ -28,9 +43,11 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
 
 
-### Compass Rose
+### Compass Rose {#compass-rose}
 
 Line thickness can be changed in dialog `Options` on the tab `Map Display`.
+
+The colors for flight plan leg course and crab angle indicator depend on settings for active flight plan leg which can be changed in the dialog `Options` on tab `Map`.
 
 | Symbol | Description |
 | --- | --- |
@@ -39,14 +56,16 @@ Line thickness can be changed in dialog `Options` on the tab `Map Display`.
 | ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Distance circles and marks from user aircraft if connected. |
 | ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Solid line shows aircraft track in degrees magnetic if connected. |
 | ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Dashed line shows aircraft heading if connected. |
+| ![Flight Plan Leg Course](../images/legend/compass_rose_leg.png "Flight Plan Leg Course") | Magenta line segment shows the course to next waypoint of the active flight plan leg. Hidden if no flight plan loaded. |
+| ![Crab Angle](../images/legend/compass_rose_crab.png "Crab Angle") | Crab angle indicator. Shows the heading that has to be flown towards the next waypoint of the active flight plan leg considering cross wind. Hidden if no flight plan loaded. |
 
 ### Aircraft and Ships {#vehicles}
 
 | Symbol | Description |
 | --- | --- |
-| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the nose can show the current track. |
+| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the nose can show the current ground track. |
 | ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) ![Ship on Ground](../images/icons/aircraft_boat_ground_user.png)| User aircraft or ship on ground |
-| ![Aircraft Track](../images/legend/aircraft_trackneedle.png) | Needle showing the current track of the aircraft. Aircraft nose shows heading. |
+| ![Aircraft Track](../images/legend/aircraft_trackneedle.png) | Needle showing the current ground track of the aircraft. Aircraft nose shows heading. |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
 | ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
@@ -71,6 +90,7 @@ The symbol is shown smaller if an airport has no runways. This is the case for s
 | ![Closed Airport with Tower](../images/legend/airport_tower_closed.png) ![Closed Airport](../images/legend/airport_closed.png) | Abandoned airport. All runways are closed. |
 | ![Airport with Fuel](../images/legend/airport_tower_fuel.png) ![Airport with soft Runways and Fuel](../images/legend/airport_soft_fuel.png) | Airports that have fuel available. |
 | ![Airport Text](../images/legend/airportlabel.png)  | Airport label showing name, ident, ATIS frequency, elevation, lighted runways \(`L`\) and length of longest runway. The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
+| ![Airport Overview](../images/legend/airport_overview.png) | Airport runway overview shown before the full airport diagram when zooming in. |
 
 ### Navaids {#navaids}
 
@@ -90,8 +110,8 @@ Navaids that are part of the flight plan have a light yellow text background.
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
 | ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
 | ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
-| ![ILS](../images/legend/ils_gs_small.png) ![ILS](../images/legend/ils_gs.png) | ILS with glideslope. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
-| ![Localizer](../images/legend/ils_small.png) ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
+| ![ILS](../images/legend/ils_gs.png) | ILS with glideslope and markers. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
+| ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
 
 ### Procedures {#procedures}
 
@@ -103,15 +123,16 @@ See chapter [Procedures](APPROACHES.md) for more detailed information on all the
 | ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) | SID, STAR, approach or transition leg which is part of the flight plan. |
 | ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Missed approach leg in preview. |
 |  ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
+|  ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Dotted line indicates circle-to-land or straight-in part of a procedure leading to a runway end. |
 | ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
+| ![Procedure FAF](../images/legend/proc_faf.png) | The Maltese cross highlights the final approach fix or the final approach course fix. |
 | ![Procedure Manual](../images/legend/proclegmanual.png) | Fly a heading, track or a hold until manually terminated by ATC. |
 | ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Intercept the next approach leg at a course of about 45 degrees. |
 | ![Procedure Altitude](../images/legend/procinterceptalt.png) | Procedure leg that is terminated when reaching the given altitude. |
 | ![Procedure Intercept Distance](../images/legend/procinterceptcd.png) | A fix defined by a course or heading and distance to a navaid.|
 | ![Procedure Intercept Course Distance](../images/legend/procinterceptd.png) |  This fix is defined by a heading or track which is terminated by reaching a DME distance. |
 | ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Intercept a course to the next fix at an angle of about 45 degrees. |
-
 
 ### Airport Diagram {#airport-diagram}
 
@@ -135,41 +156,73 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
 | ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad. Color indicates surface.  |
 
-### Userpoints {#userpoints}
-
-| Symbol | Description |
-| --- | --- |
-| ![Airport](../images/icons/userpoint_Airport.png) | Airport |
-| ![Airstrip](../images/icons/userpoint_Airstrip.png) | Airstrip |
-| ![Bookmark](../images/icons/userpoint_Bookmark.png) | Bookmark |
-| ![Cabin](../images/icons/userpoint_Cabin.png) | Cabin |
-| ![Closed](../images/icons/userpoint_Closed.png) | Closed |
-| ![Error](../images/icons/userpoint_Error.png) | Error |
-| ![Flag](../images/icons/userpoint_Flag.png) | Flag |
-| ![Helipad](../images/icons/userpoint_Helipad.png) | Helipad |
-| ![Location](../images/icons/userpoint_Location.png) | Location |
-| ![Logbook](../images/icons/userpoint_Logbook.png) | Logbook |
-| ![Marker](../images/icons/userpoint_Marker.png) | Marker |
-| ![Mountain](../images/icons/userpoint_Mountain.png) | Mountain |
-| ![Obstacle](../images/icons/userpoint_Obstacle.png) | Obstacle |
-| ![Pin](../images/icons/userpoint_Pin.png) | Pin |
-| ![POI](../images/icons/userpoint_POI.png) | POI - point of interest |
-| ![Seaport](../images/icons/userpoint_Seaport.png) | Seaport |
-| ![Unknown](../images/icons/userpoint_Unknown.png) | Unknown |
-| ![VRP](../images/icons/userpoint_VRP.png) | VRP - visual reporting point |
-| ![Waypoint](../images/icons/userpoint_Waypoint.png) | Waypoint |
-
 ### Elevation Profile Legend {#elevation-profile-legend}
+
+The colors and symbols of the elevation profile follow the style of the main map as set in the options dialog on tab `Map Display`. Colors, patterns and symbols for airports, navaids, procedures, active and passed flight plan legs are the same. The profile display also follows other map settings like visibility of flight plan line, aircraft and aircraft track.
 
 | Symbol | Description |
 | --- | --- |
 | ![Profile Start](../images/legend/profile_start.png) ![Profile End](../images/legend/profile_end.png) | Ground with departure elevation on the left and destination airport elevation on the right. |
 | ![Flight Plan Profile](../images/legend/profile_route.png) | Flight plan altitude. |
+| ![Top of Climb](../images/legend/profiletoc.png) | Top of climb with distance from departure. |
 | ![Top of Descent](../images/legend/profiletod.png) | Top of descent with distance to destination. |
+| ![At](../images/legend/proc_at.png) | At altitude restriction of a procedure with waypoint name. |
+| ![At or above](../images/legend/proc_atabove.png) | At or above altitude restriction of a procedure. |
+| ![At or below](../images/legend/proc_atbelow.png) | At or below altitude restriction of a procedure. |
+| ![Between](../images/legend/proc_between.png) | At or above and at or below \(between\) altitude restriction of a procedure. |
 | ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is elevation plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
 | ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show actual altitude and climb/sink rate. |
 | ![Trail](../images/legend/profile_track.png) | User aircraft trail if connected to the flight simulator. |
+| ![ILS](../images/legend/profile_ils.png) | ILS slope. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. Only shown if an approach is selected and runway end has an ILS. Opening angle has no relation to actual slope precision. |
+| ![VASI](../images/legend/profile_vasi.png) | Visual Approach Slope Indicator. Label shows slope pitch and VASI type. Only shown if an approach is selected and runway end has a VASI. Opening angle has no relation to actual slope precision. |
 
+### Airport Traffic  Pattern {#airport-traffic-pattern}
 
+Color and indicators depend on user choice in airport traffic pattern dialog.
+
+| Symbol | Description |
+| --- | --- |
+| ![Downwind](../images/legend/pattern_downwind.png) | Downwind leg of airport traffic pattern with altitude and magnetic course. |
+| ![Final](../images/legend/pattern_runway.png) | Final leg of airport traffic pattern with with runway and magnetic course. |
+| ![Entry Indicator](../images/legend/pattern_entry.png) | Arrow and dashed line shows path for pattern entry. |
+| ![Exit Indicator](../images/legend/pattern_exit.png) | Dashed line and arrows show path for pattern exit. |
+
+### MORA {#airport-mora}
+
+The minimum off-route altitude grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL terrain is cleared by 2000 feet.
+
+| Symbol | Description |
+| --- | --- |
+| ![MORA Grid](../images/legend/map_mora.png) | MORA grid. Large number is 1000 feet and small number 100 feet. Example here: 3300, 4400, 6000, 9900 and 10500 feet. |
+
+### Weather {#airport-weather}
+
+#### Flight Rules {#airport-weather-flightrules}
+| Symbol Color | Description |
+| --- | --- |
+| ![VFR](../images/legend/weather_vfr.png) | VFR. Visual flight rules. |
+| ![MVFR](../images/legend/weather_mvfr.png) | MVFR. Marginal VFR. Visibility equal or below 5 statue miles or lowest ceiling at or below 3000 ft. |
+| ![IFR](../images/legend/weather_ifr.png) | IFR. Instrument flight rules. Visibility below 3 statue miles or lowest ceiling below 1000 ft. |
+| ![LIFR](../images/legend/weather_lifr.png) | LIFR. Limited IFR. Visibility below 1 statue miles or lowest ceiling below 500 ft. |
+
+#### Cloud Cover {#airport-weather-cloud}
+| Symbol | Description |
+| --- | --- |
+| ![Clear](../images/legend/weather_vfr_clear.png) | No clouds. |
+| ![Few](../images/legend/weather_vfr_few.png) | Few |
+| ![Scattered](../images/legend/weather_vfr_sct.png) | Scattered |
+| ![Broken](../images/legend/weather_vfr_bkn.png) | Broken ceiling |
+| ![Overcast](../images/legend/weather_vfr_ovc.png) | Overcast |
+
+#### Wind {#airport-weather-wind}
+| Symbol | Description |
+| --- | --- |
+| ![No Wind](../images/legend/weather_vfr_clear.png) | No pointer indicates wind below 2 knots. |
+| ![4 Knots Wind](../images/legend/weather_wind4.png) | Pointer without wind barb shows wind below 5 knots. |
+| ![5 Knots Wind](../images/legend/weather_wind5.png) | Short barb is 5 knots wind. |
+| ![10 Knots Wind](../images/legend/weather_wind10.png) | Long barb is 10 knots wind. |
+| ![50 Knots Wind](../images/legend/weather_wind50.png) | 50 knots wind.|
+| ![25 Knots Wind](../images/legend/weather_wind25.png) | Example: 25 knots. |
+| ![65 Knots Wind](../images/legend/weather_wind65.png) | Example: 65 knots. |
 

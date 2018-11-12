@@ -2,11 +2,18 @@
 
 ### Upper Part {#upper-part}
 
-The top shows a label that contains departure, departure position \(parking, runway or helipad\), destination, flight plan distance, traveling time, used procedures and flight plan type.
+The top shows a label that contains departure, departure position \(parking, runway or helipad\), destination, flight plan distance, traveling time, used procedures \(SID, STAR, approach and transitions\) as well as flight plan type.
+
+Traveling time is only shown if a valid aircraft performance profile is loaded.
+
+The ARINC name of the approach procedure which is needed by some FMCs is shown in parentheses.
+
+![Flight Plan Header](../images/flightplanheader.jpg "Flight Plan Header")
+
+_**Picture above:** Header of a flight plan. _`VORDME LITSY`_ has _`D34`_ as ARINC name._
 
 Besides the label there are three input fields on top of this dock window:
 
-* **Speed \(kts\):** Ground speed. The value of this field is used only for calculating traveling times in the table view: `Leg Time` and `ETA` \(estimated time of arrival at a waypoint given 0:00 as start time\). It is saved as an annotation with the flight plan and not used for simulator user aircraft calculations.
 * **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 * **Flight Plan Type \(IFR or VFR\):** This is saved with the flight plan.
 
@@ -22,16 +29,23 @@ Procedure legs have dark blue color and legs of a missed approach have a dark re
 
 If a waypoint of a flight plan cannot be found in the database it will be displayed in red. This can happen if the used AIRAC cycles do no match. The same applies to airways. The position on the map is still correct.
 
+Airways are also displayed in red if the minimum or maximum airway altitude restrictions are violated by the selected cruise altitude.
+
 ![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
 
 _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could not be found in the database._
 
 #### Table Columns {#flight-plan-table-columns}
 
-* `Ident`: ICAO ident of the navaid or airport.
+* `Ident`: ICAO ident of the navaid or airport. The ident can be suffixed as shown below:
+  * `+` or `-` and a distance value: Shows waypoints in procedures that are relative to a fix.
+  * `(IAF)`: Initial fix of a procedure or transition.
+  * `(FAF)`: Final approach fix. Depending on procedure either the FAF or FACF are shown with a Maltese cross on the map and in the elevation profile.
+  * `(FACF)`: Final approach course fix. 
+  * `(MAP)`: Missed approach point.
 * `Region`: Two letter region code of a navaid.
 * `Name`: Name of airport or radio navaid.
-* `Procedure Type`: The type of this leg's procedure. `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed`.
+* `Procedure`: Either `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed` plus the name of the procedure.
 * `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
 * `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
   * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
@@ -42,13 +56,14 @@ _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could
   * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
 * `Type`: Type of a radio navaid.
 * `Freq.`: Frequency or channel of a radio navaid.
-* `Range`: Range of a radio navaid.
+* `Range`: Range of a radio navaid if available.
 * `Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
 * `Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
 * `Distance`: Distance of the flight plan leg.
 * `Remaining`: Remaining distance to destination airport or procedure end point \(usually the runway\).
-* `Leg Time`: Flying time for this leg. Calculated based on the given ground speed.
-* `ETA`: Estimated time of arrival. This is a static value and not updated while flying.
+* `Leg Time`: Flying time for this leg. Calculated based on the selected aircraft performance profile \(see [Aircraft Performance](AIRCRAFTPERF.md)\). This is a static value and not updated while flying. Empty if performance calculation failed.
+* `ETA`: Estimated time of arrival. This is a static value and not updated while flying. Calculated based on the selected aircraft performance profile. Empty if performance calculation failed.
+* `Fuel Rem.`: Fuel remaining at waypoint, once for volume and once for weight. This is a static value and not updated while flying. Calculated based on the selected aircraft performance profile. Empty if aircraft performance profile has no fuel consumption numbers set.
 * `Remarks`: Turn instructions, flyover or related navaid for procedure legs.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
@@ -73,8 +88,15 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
-Show either the airport diagram or zoom to the navaid on the map. The zoom distance can be changed in the
-dialog `Options` on the tab `Map`.
+Show either the airport diagram or zooms to the navaid on the map. The zoom distance can be changed in the dialog `Options` on the tab `Map`.
+
+#### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Activate Flight Plan Leg {#activate}
+
+Makes the selected leg the active \(magenta\) flight plan leg. The active leg might change if _Little Navmap_ is connected to the simulator and the user aircraft is moving.
+
+#### Follow Selection {#follow-selection}
+
+The map view will be centered - not zoomed in - on the selected airport or navaid when this function is enabled.
 
 #### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Move Selected Legs up/down {#move-selected-legs-up-down}
 
@@ -90,9 +112,31 @@ Delete all selected flight plan legs. Use `Undo` if you delete legs accidentally
 
 The whole procedure is deleted if the selected flight plan leg is a part of a procedure. Deleting a procedure deletes its transition too.
 
-#### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Edit Name of User Waypoint {#edit-name-of-user-waypoint}
+#### ![Edit Position](../images/icons/routestring.png "Edit Position") Edit Position {#edit-name-of-user-waypoint}
 
-Allows to change the name of a user-defined waypoint. The length of the name is limited to 10 characters.
+Allows to change the name or coordinates of a user-defined waypoint. The length of the name is limited to 10 characters when saving. See [Edit Flight Plan Position](EDITFPPOSITION.md).
+
+#### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insert Flight Plan before {#insert-flight-plan}
+
+Inserts a flight plan before the selected leg into the current plan.
+
+Using `Insert Flight Plan before` or `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. 
+
+Procedures are inserted from the loaded flight plan and dropped from the current one depending on insert position.
+
+If you insert a flight plan after departure all procedures from the loaded plan are ignored and current procedures are kept.
+
+Inserting before departure takes the departure procedures from the loaded flight plan and drops the current departure procedures.
+
+The inserted legs are selected after loading the flight plan.
+
+#### ![Append Flight Plan](../images/icons/fileappend.png "Append Flight Plan") Append Flight Plan {#append-flight-plan}
+
+Adds departure, destination and all waypoints of another flight plan to the end of the current plan.
+
+All currently selected arrival procedures will be removed when appending a flight plan. Arrival and approach procedures from the appended flight plan are added to the current one if any.
+
+The appended legs are selected after loading the flight plan.
 
 #### Calculate for selected Legs {#calculate-for-selected-legs}
 
@@ -124,9 +168,11 @@ Show the range rings for all selected radio navaids in the flight plan. Simply s
 
 Otherwise, the same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements-1}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+This menu item is enabled if clicked on an airport. Shows a dialog that allows to customize and display an airport traffic pattern on the map.
+
+See [Traffic Pattern](TRAFFICPATTERN.md).
 
 #### ![Copy](../images/icons/copy.png "Copy") Copy {#copy-0}
 

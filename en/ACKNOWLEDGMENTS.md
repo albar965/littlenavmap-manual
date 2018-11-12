@@ -8,6 +8,8 @@ Plenty of thanks to [Hervé Sors](http://www.aero.sors.fr) for allowing me to in
 
 A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
 
+TODO
+
 Thanks to Navigraph for kindly allowing me to include a free AIRAC cycle in the download. Thanks for Richard Stefan for his great support.
 Current AIRAC cycles can be purchased from [Navigraph](http://www.navigraph.com).
 
@@ -27,11 +29,21 @@ Thank you! to Eddy Crequie for doing the Dutch translation.
 
 Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo, Sam and many others.
 
+Thanks to Gradus Hageman for his testing efforts, his ideas and for generally pointing me into the right direction.
+
 Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
+
+Vielen Dank and die Herren vom [FSC.ev](http://fsc-ev.de/) für Fehlerberichte, Vorschläge und neue Ideen!
+
+Danke für Karl Wichelmann und Zoltan  für die Arbeit an der deutschen Übersetzung der Anleitung.
+
+Thank you, Björn for the idea with the automatic performance collection.
 
 Thanks to all in the forums who patiently supported me and gave invaluable feedback during the public beta:
 
-[AVSIM](https://www.avsim.com), [SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](https://flightx.net) and [FSDeveloper.com](https://www.fsdeveloper.com).
+[SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](https://flightx.net) and [FSDeveloper.com](https://www.fsdeveloper.com).
+
+Thanks to [AVSIM](https://www.avsim.com) for kindly hosting the support forum for _Little Navmap_.
 
 This project and my library [atools](https://github.com/albar965/atools) would not exist without the fabulous documentation of the BGL files in the [FSDeveloper Wiki](https://www.fsdeveloper.com/wiki). So, here a huge thank-you to all the contributors.
 

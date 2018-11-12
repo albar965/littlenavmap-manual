@@ -66,6 +66,8 @@ The dialog will be populated automatically depending on the selected map context
 
 The field `Description` allows multi line text and special characters. Formatting like italic or bold is not supported.
 
+Links are recognized in the field `Description` and can be opened in the dock window `Information` on tab `Navaids` which is shown after clicking on a userpoint or selecting `Show Information` in one of the context menus. Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like `file:///C:/Projekte/atools` on Windows or `file:///home/alex/Aircraft_Notes.txt` on macOS or Linux.
+
 The field `Visible from` allows to define visibility on the map depending on zoom distance. The zoom distance \(viewpoint distance to earth surface\) for the current map view is shown in the [Statusbar](MENUS.md#statusbar). The user point will be visible for all zoom distances smaller than the value in `Visible from`. Maximum value is 3000 nm and minimum value is 1 nm.
 
 Valid coordinates are required to confirm the dialog. See [Coordinate Formats](COORDINATES.md#coordinates-formats) for a detailed description of the recognized coordinate formats. A label below the coordinates displays the parsed coordinates or an error message in case the coordinates could not be parsed.

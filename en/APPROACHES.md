@@ -113,11 +113,19 @@ All procedure legs, with the exception of holds and procedure turns, are include
 
 ### Special Leg Types {#procedures-leg-types}
 
-All procedure leg types \(`Track to Fix`, `Initial Fix` and more\) that are shown in *Little Navmap* are based on the ARINC 424 path terminator concept. A deeper knowledge of these leg types is not important for the simulator pilot with the exception of two types that are added by *Little Navmap*.
+All procedure leg types \(`Track to Fix`, `Initial Fix` and more\) that are shown in *Little Navmap* are based on the ARINC 424 path terminator concept. A deeper knowledge of these leg types is not important for the simulator pilot.
 
-* `Start of Procedure`: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track to a fix. It indicates the first position of the procedure and is not related to a fix.
-* `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway could not be found. The altitude restriction indicates the elevation of the runway.
-* `Proceed to Runway` in an approach: This leg is added to an approach procedure to show the course line from a missed approach point \(MAP\) to the runway end. It is added if an approach does not end with a runway fix and has an altitude restriction 50 feet above the threshold.
+Four additional types are used by *Little Navmap*:
+
+* `Start of Procedure`: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track to a fix. It indicates the first position of the procedure.
+* `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway is not available. The altitude restriction indicates the elevation of the runway.
+* `Straight In`: Added to an approach procedure to show the course from the missed approach point \(MAP\) to the runway threshold. It is added when an approach ends with a runway fix. The leg has an altitude restriction 50 feet above the threshold.
+* `Circle to Land`: Added to an approach procedure to show the course from the missed approach point to the airport. It is added if an approach does not end with a runway fix.
+
+| | |
+| -- | -- |
+| ![Straight in Procedure](../images/proc_straightin.jpg "Straight in Procedure") | ![Circle to Land](../images/proc_ctl.jpg "Circle to Land") |
+| _**Picture above:** _`Straight In`_ example: _`ENSH`_ approach _`LOC FL01 (L01)`_ to runway 01. White/orange dotted line is the straight-in leg. _`ML01`_ is the MAP. If runway is not visible at _`ML01`_ turn left to missed._ | _**Picture above:** _`Circle to Land`_ in example: _`LSZC RNAV-A KUSIX (RNVA)`_. White/orange dotted line is the circle-to-land leg. _`ZC701`_ is the MAP. No guidance is given for this leg. You have to navigate around the mountain to get to runways 06 or 24._ |
 
 ### Fix Types in a Procedure {#procedures-fix-types}
 

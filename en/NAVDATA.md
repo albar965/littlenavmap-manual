@@ -9,6 +9,8 @@ _Little Navmap_ is bundled with a navigation database from a recent AIRAC cycle 
 
 **See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update **_Little Navmap_**'s navigation data.**
 
+**Do not let the Navigraph FMS Database Manager update databases while **_Little Navmap_** is running. **_Little Navmap_** might crash, the update might fail or remain incomplete.**
+
 Three display modes can be selected from the menu `Scenery Library` as shown below.
 
 ## Use Navigraph for all Features {#navigraph-all}
@@ -23,11 +25,11 @@ An advantage of this mode is that approach procedures always match the airport r
 
 ![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")
 
-_**Picture above:** Airport diagram for EDDN from simulator scenery \(X-Plane\) as shown in the modes _`Do not use Navigraph Database`_ and _`Use Navigraph for Navaids and Procedures`_._
+_**Picture above:** Airport diagram for _`EDDN`_ from simulator scenery \(X-Plane\) as shown in the modes _`Do not use Navigraph Database`_ or _`Use Navigraph for Navaids and Procedures`_._
 
 ![Airport from Navdatabase](../images/airport_navigraph_only.jpg "Airport from Navdatabase")
 
-_**Picture above:** Airport EDDN from the Navigraph database while _`Use Navigraph for all Features`_ is enabled. Note missing runway surface information and missing aprons, taxiways and parking positions._
+_**Picture above:** Airport _`EDDN`_ from the Navigraph database while _`Use Navigraph for all Features`_ is enabled. Note missing runway surface information, aprons, taxiways and parking positions._
 
 ## Do not use Navigraph Database {#navigraph-none}
 

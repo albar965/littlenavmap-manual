@@ -19,7 +19,7 @@ Do not forget to activate the map window by clicking into it before using keys f
 
 ### Mouse Clicks {#mouse-clicks}
 
-A single click on an airport, navaid, airway line or airspace shows details in the `Information` dock window.
+A single click shows details about all map objects nearby the clicked position in the `Information` dock window. Windows and tabs are raised depending on clicked objects.
 
 A single click on a user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
 
@@ -28,6 +28,30 @@ A double-click zooms in showing either the airport diagram or the navaid closely
 The double-click and single-click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
 
 The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map` tab.
+
+### Mouse Click Hotspots {#mouse-click-hotspots}
+
+Map marks like range rings or measurement lines have hotspots to indicate that a modifier-click can remove them or an action is available in the context menu. The same applies to the flight plan drag and drop editing mode.
+
+The mouse cursor changes into a hand ![Hand Cursor](../images/cursorhand.jpg) to indicate a click spot.
+
+Click spots are:
+* Center of range rings \(small circle\).
+* End of a measurement line \(cross\).
+* Runway threshold point \(small circle\) for airport traffic patterns.
+
+### Mouse Clicks and Modifiers {#mouse-clicks-modifiers}
+
+You can use the keyboard and mouse click to get quick access to the following functions:
+
+* `Shift+Click`: Add or remove range rings or navaid range rings.
+* `Ctrl+Click`: Start rhumb-line measurement or delete a measurement line.
+* `Alt+Click`: Start great circle line measurement or delete measurement line.
+* `Ctrl+Shift+Click`: Add or edit an userpoint.
+* `Ctrl+Alt+Click`: Insert airport, navaid, userpoint or position into the nearest flight plan leg.
+* `Shift+Alt+Click`: Append airport, navaid, userpoint or position to flight plan.
+
+Clicking again on the hotspot removes the marks, measurement lines or flight plan waypoints.
 
 ### Aircraft {#aircraft}
 
@@ -88,7 +112,9 @@ The map context menu can be activated using right-click or the menu key. Menu it
 
 #### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information}
 
-Show detailed information in the `Information` dock window for the nearest airport, one or more airways, one or more airspaces or all navaids near the cursor.
+Show detailed information in the `Information` dock window for the nearest airport, airway, airspace or navaid which name is shown in the menu item.
+
+If you like to see information on all objects nearby a click position do a single left click into the map.
 
 See the [Information Dock Window](INFO.md#information-dock-window) for details.
 
@@ -131,6 +157,18 @@ See [Magnetic Declination](INTRO.md#magnetic-declination) for remarks on that to
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
 
 Remove the selected line. This menu item is active if you right-click on the end point of a distance measurement line \(small cross\). 
+
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
+
+This menu item is enabled if clicked on an airport. Shows a dialog that allows to customize and display an airport traffic pattern on the map.
+
+See [Traffic Pattern](TRAFFICPATTERN.md).
+
+#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Remove Airport Traffic Pattern {#remove-traffic-pattern}
+
+Enabled if clicked on the airport traffic pattern hotspot \(circle at runway threshold\) which is indicated by a hand cursor.
+
+See [Traffic Pattern](TRAFFICPATTERN.md).
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings}
 

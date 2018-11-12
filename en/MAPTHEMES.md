@@ -1,4 +1,4 @@
-## Creating or adding Map Themes {#creating-or-adding-map-themes}
+## Creating Map Themes {#creating-or-adding-map-themes}
 
 To add an arbitrary online or offline map to _Little Navmap_ simply add the map directory from a downloaded or self created map theme to the `data\maps\earth` directory.
 

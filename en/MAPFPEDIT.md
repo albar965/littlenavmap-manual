@@ -1,6 +1,6 @@
 ## Map Flight Plan Editing {#map-flight-plan-editing}
 
-The flight plan drag and drop editing mode is enabled by default. It can be toggled using the toolbar or `Main Menu` -> `Flight Plan` -> `Edit Flight Plan on Map`.
+The flight plan drag and drop editing mode is enabled by default. It can be toggled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
 
 You can use the keyboard, the mouse wheel or the map overlays to scroll and zoom while editing the route.
 

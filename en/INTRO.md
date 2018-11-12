@@ -91,19 +91,31 @@ Most dialogs and some dock windows show help buttons ![Help](../images/icons/hel
 
 #### Window Title
 
-The main window title indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name and a trailing `*` if the flight plan has been changed.
+The main window title shows the application name and version.
 
-A `N` will be appended if the Navigraph database is used:
+Furthermore, it indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name, the aircraft performance file name with trailing `*` for both if either has changed.
 
-* `P3DV4`: All feartures on the map and all information in dialogs and windows comes from the flight simulator database.
+A `N` will be appended if the Navigraph database is used. Example below for Prepar3D:
+
+* `P3DV4`: All features on the map and all information in dialogs and windows comes from the flight simulator database.
 * `P3DV4 / N`: Airports and ILS are shown and used from the flight simulator database. Navaids, airspace, airways and procedures are used from the Navigraph database.
 * `(P3DV4) / N`: All data is used from the Navigraph database. No aprons, no taxiways and no parking positions are available for airports.
+
+**Example:** `Little Navmap 2.2.1 - XP11 / N LOAG_LOWW.fmc * - PA30 Twin Comanche.lnmperf`
+
+Version 2.2.1, X-Plane selected, Navigraph database in use, flight plan `LOAG_LOWW.fmc` changed and performance profile `PA30 Twin Comanche.lnmperf` unchanged.
 
 #### Information and Simulator Aircraft Text
 
 You can change the text size permanently in the options dialog for these windows.
 
 A quick way to change the text size is to use the mousewheel and `Ctrl` key. This setting won't be saved across sessions, though.
+
+#### Error Messages
+
+_Little Navmap_ shows error messages with white text on red background for problems with the aircraft performance, top of descent/climb calculation and other issues.
+
+Tooltips on these error messages give more help in some cases.
 
 #### Tabs
 

@@ -94,6 +94,20 @@ This will add or replace the destination or departure airport and add the select
 
 If the flight plan is empty, the departure or destination airport is added to the flight plan as well.
 
+#### ![Show Information for Airport](../images/icons/globals.png "Show Information for Airport") Show Information for Airport {#show-information}
+
+Show detailed information in the `Information` dock window for the airport.
+
+See the [Information Dock Window](INFO.md#information-dock-window) for details.
+
+#### ![Show Airport on Map](../images/icons/showonmap.png "Show Airport on Map") Show Airport on Map {#show-on-map}
+
+Show the airport on the map. The zoom distance can be changed in the dialog `Options` on the tab `Map`.
+
+#### ![Show Airport in Search](../images/icons/search.png "Show Airport in Search") Show Airport in Search {#show-in-search}
+
+Shows the airport in the search dialog.
+
 #### Expand All / Collapse All
 
 Expand all procedures so that their legs and transitions are shown or collapse the tree.

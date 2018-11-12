@@ -42,15 +42,15 @@ MapQueryTaxipathCache=100
 
 ## Troubleshoot {#troubleshoot}
 
+See also [Little Navmap - Frequently asked Questions](https://albar965.github.io/littlenavmap-faq.html).
+
 * **Program crashes on start up:** Delete the settings and the database files. In Windows 7, 8 or 10 these can be found in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`. Delete \(or better: rename or move\) the files `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` and the directory `little_navmap_db`. Try to delete the database first if these cause the problem. Then try to delete the settings files if removing databases did not help.
 * ** Program starts slowly:** This can happen if a distance search is enabled in one of the search tabs. The search is executed at each start. Simply disable the distance search or reset the search options to avoid the slow startup.
 * **Online maps do not load or update:** Check your firewall settings if Windows blocks any outgoing connections. Also check if the offline mode was not enabled accidentally in menu `File`. Check if _Little Navmap_ can connect to the internet by going to the options dialog on tab `Weather`. Use one of the buttons `Test` for NOAA or VATSIM weather. _Little Navmap_ cannot reach the internet if these fail.
 * **Zoom can be too fast when using a touchpad** with _OpenStreetMap_, _OpenTopoMap_ or one of the other online map themes. Use the `Plain`, `Simple` or `Atlas` map themes or use the overlay zoom buttons or the keyboard \(`+` and `-`\).
-* **side-by-side configuration error**: You are running _Little Navmap_ on a computer without simulator \(i.e. no SimConnect\) installation if you get this error. Use `littlenavmap-nosimconnect.exe` instead which provides all functionality except direct connection and scenery database loading.
- **Note: **`littlenavmap-nosimconnect.exe`** is not used anymore as of *Little Navmap* version 1.4.4. You can use **`littlenavmap.exe`** on all computers no matter if SimConnect is installed or not.**
 * **Search shows no result or unexpected results:** Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
 * **Search or flight plan tables shows strange column names like **`airport_id`** or others:** This can happen if the program is updated. Use `Reset View` in the context menu of the result table.
-* **Online maps like **_**OpenStreetMap**_** or **_**OpenTopoMap**_** maps can end up blurred** when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this.
+* **Online maps like **_**OpenStreetMap**_** or **_**OpenTopoMap**_** maps can end up blurred** when using functionality like `Center Flight Plan` or `Go to Home`. Zoom once in and out using the mouse wheel, overlay zoom buttons or keyboard to fix this. You can also enable [Avoid blurred map display by zooming out to next best step](OPTIONS.md#blurred-map)in the options dialog on tab `Map`.
 * **The flight plan elevation profile has errors or invalid elevation data:** The online elevation data contains several known errors. Use the recommended GLOBE offline elevation data. See [here](OPTIONS.md#cache-elevation) for information how to install the offline data.
 * _**OpenStreetMap**_** shows a dark gray background** on some places without hill shading coverage \(for example New Zealand\). Use another map theme or switch off hill shading for the _OpenStreetMap_.
 * **Loading of the scenery database takes too long:** Exclude scenery directories containing only landclass, elevation data or other for _Little Navmap_ irrelevant data. You can do that in the `Options` dialog on the `Scenery Library Database` tab. See [Options](OPTIONS.md#scenery-library-database_exclude).
@@ -58,9 +58,11 @@ MapQueryTaxipathCache=100
 
   `[2016-10-14 22:58:21.903 default INFO ]  unknown: ==== "404 of 521 (77 %)" "APX41080.bgl"`
 
-  Now search for `APX41080.bgl` and exclude its directory from loading in the `Options` dialog.
+  Now search for `APX41080.bgl` and exclude the file or its directory from loading in the `Options` dialog.
 
 ## Known Problems {#known-problems}
+
+See also [Little Navmap - Frequently asked Questions](https://albar965.github.io/littlenavmap-faq.html).
 
 * Some airport add-ons do not modify the stock airports but only add new scenery and buildings. These add-ons will not be recognized as such and are therefore not highlighted on the map \(italic and underlined text\).
 * Add-on developers have to use all kind of workarounds to avoid FSX or P3D limitations which means the display and information given for add-on airports is not always correct. A lot of these changes are also done to make AI behave properly. Typical examples are: Airports without runways, airports with runway dimensions 0 by 0 ft or 0 ft runway width, taxiways with 0 ft width, seemingly closed taxiways, duplicate airports, duplicate runways in water, taxiways in water, military gates at civilian airports and more.
@@ -71,12 +73,10 @@ MapQueryTaxipathCache=100
 * The Mercator projection shows occasional display problems depending on zoom distance like horizontal lines near the anti meridian or missing flight plan segments.
 * The Marble floating map overlays on the map can be configured but do not save all settings except their visibility.
 * Flight plan and airways are drawn using great circle lines instead of rhumb lines. Distance and course are not affected by this.
-* Magnetic variance is partially not set \(for example VORDME Cambridge Bay YCB\) or inconsistent between airports an adjacent navaids. This is an error in the source.
+* Magnetic variance is partially not set \(for example VORDME Cambridge Bay YCB\) or inconsistent between airports an adjacent navaids. This is an error in the source data.
 * Airports are misplaced \(for example Cabo San Lucas, MM15 in Mexico\) compared to the background maps. This is an error in the source data and cannot be fixed.
-* Map printouts can be fuzzy since they depend on screen resolution. As a workaround increase the size of the visible map window.
 * Very long route legs can disappear from the map when zooming in. The label is still visible though.
 * Tooltips of large airspaces can appear at wrong places.
-* Scrolling the map can be very slow for some complex X-Plane airports.
 * The wrong procedures are restored sometimes if the flight plan is reloaded when an airport has more than one procedure with the same name.
 * Procedures are drawn incorrectly in some cases.
 * The airport search attribute `Procedures` does not work correctly in the mixed database. It will show only simulator airports having procedures instead of using the Navigraph airport status.
@@ -100,7 +100,7 @@ If something goes wrong send me any involved files like KML, PLN or BGL \(if cop
 
 **If possible send me the log file.**
 
-**Please compress log files using zip to avoid stuffing my mailbox.**
+**Please compress log files using ZIP when sending by email.**
 
 When an error occurs during loading of the scenery library send me the offending file if size permits. The full name and path of the file is shown on top of the error dialog if a specific is the cause.
 

@@ -31,7 +31,7 @@ The table below shows the capabilities of _Little Navmap_ and the supported flig
 | PLN for<br/>BBS Airbus        | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | FPL for<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X     |
+| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^3] |
 | GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 
 Procedure waypoints are excluded from all file formats by default, except for GPX. You have to use the GPS or FMS in the simulator to select procedures.
@@ -187,6 +187,8 @@ A format for the Flight Factor Airbus. The file is not truncated and flight plan
 
 Flight plans are saved in a slightly extended ATS route notation which also allows to save the cruise altitude and approach procedures. Edit the file with a simple text editor if you want to remove flight plans.
 
+While this format allows saving of SID and STAR the option for approaches was removed since it is unreliable.
+
 **Example:**
 
 ```
@@ -267,3 +269,4 @@ The export of user-defined waypoints can be enabled in the options dialog on tab
 
 [^1]: The FPR format does allow saving of airways and procedures but this will be implemented in a future release of _Little Navmap_.
 [^2]: User-defined waypoints will be renamed when loading into the GTN.
+[^3]: Only SID and STAR. Saving or approaches is not supported.

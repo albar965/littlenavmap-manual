@@ -13,19 +13,12 @@ saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
 
 Allows to customize what should be loaded and shown on startup of _Little Navmap_.
 
-You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information.
+You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information. 
+Change the settings here if you wish to get notifications about beta releases.
 
 ### User Interface {#user-interface}
 
 Has options for text sizes in information windows and flight plan as well as the search result table.
-
-You can also change the overall style for the graphical user interface. The user interface styles
-contain a `Night` mode that can be used for night flights in dark rooms. You can also dim the map and
-elevation profile display.
-
-A restart is not needed but recommended after changing a style.
-
-The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
 
 This tab also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
 
@@ -36,6 +29,12 @@ _**Picture above:** Tab _`User Interface`_ using the style _`Night`_._
 ### Map {#map}
 
 Has map related customization options. Allows to set the click sensitivity, zoom distances and more.
+
+#### Avoid blurred map display by zooming out to next best step {#blurred-map}
+
+Checking this helps to get a sharp background image for online maps \(e.g. from OpenStreetMap\) when _Little Navmap_ zooms to or centers map features like airports, the active flight plan leg and others. This works best with the map projection `Mercator`.
+
+As a result the map might be zoomed out farther than expected in some cases.
 
 ### Map Display {#map-display}
 
@@ -59,15 +58,13 @@ This also applies to flight plan altitude. Therefore, do not forget to adapt the
 
 ### Simulator Aircraft {#simulator-aircraft}
 
-Allows to change various aspects around the display of the user aircraft. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
+Allows to change various aspects around the display of the user aircraft while flying. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
 
 #### Center map on aircraft and next flight plan waypoint {#simulator-aircraft-center-wp}
 
-The map is zoomed to show both the aircraft and the next active waypoint on the flight plan if this is enabled.
+The map is zoomed to show both the aircraft and the next active waypoint on the flight plan if this is enabled while flying. _Little Navmap_ uses several criteria to minimize map updates in this mode.
 
-The default mode is to simply center the map on the aircraft. 
-
-The map will fall back to the default mode if no flight plan is loaded.
+The map will fall back to the default mode of simply centering the aircraft if no flight plan is loaded, the aircraft is on ground or the flight plan is more than 50 nm away from the user aircraft.
 
 #### Do not use box mode for following the aircraft. Move the map constantly.  {#simulator-aircraft-move-constantly}
 
@@ -77,7 +74,7 @@ This option will cause _Little Navmap_ to consume more CPU resources while flyin
 
 #### Simulator aircraft scroll box size (percent of map window size)  {#simulator-aircraft-scroll-box}
 
-Smaller values keep the aircraft centered and will move the map often. Large values will update the map only when aircraft reaches map boundary.
+Smaller values keep the aircraft centered and will move the map more often. Larger values will update the map only when aircraft reaches map boundary.
 
 This setting is ignored when `Center map on aircraft and next flight plan waypoint` is checked and a flight plan is set.
 
@@ -87,11 +84,28 @@ The active \(magenta\) leg will be shown on top of the flight plan table when a 
 
 #### Allow scrolling and zooming in the map {#simulator-aircraft-allow-scroll-zoom}
 
-The map will stop following the aircraft for the given time if the user does any interaction with the map like scrolling or zooming. You can quickly check out the destination or your overall progress, and after you stop interacting with the map, _Little Navmap_ will return to following your aircraft.
+The map will stop following the aircraft for the given time if the user does any interaction with the map like scrolling or zooming. You can quickly check out the destination or your overall progress, and after you stop moving around, _Little Navmap_ will return to following your aircraft.
+
+This option is also used in the [Flight Plan Elevation Profile](PROFILE.md).
+
+**Note if you use the default aircraft centering mode or if _Little Navmap_ falls back to this mode \(see above\):**
+
+1. Using the mouse wheel or the `+` and `-` key to zoom will change and keep the zoom distance. The aircraft is still centered but the new zoom distance is used.
+1. Starting to look around by moving the map with mouse drag or cursor keys: This will remember the last position **and** the zoom distance. You can do any map movements and _Little Navmap_ will jump back to the last position and zoom distance where you started the movement when time is over.
+
+The same from point two applies if you jump to airports, navaids or other features by double click, context menu \(`Show on Map`\) or map link.
+
+Toggle ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") `Center Aircraft` on and off if you find that the map jumps back to the wrong position.
+
+This option is also used in the [Flight Plan Elevation Profile](PROFILE.md).
 
 #### Jump back to aircraft and resume aircraft following after this time {#simulator-aircraft-jump-timeout}
 
 Time until aircraft following is activated again after any map interaction like scrolling or zooming.
+
+![Simulator Aircraft](../images/options_simac.jpg "Simulator Aircraft")
+
+_**Picture above:** Tab _`Simulator Aircraft`_._
 
 ### Cache and Files {#cache}
 
@@ -227,12 +241,19 @@ take effect.
 
 All directories including sub-directories in this list will be omitted when loading the scenery
 library into the _Little Navmap_ database. You can also use this list to speed up database loading
-if you exclude directories that do not contain airports or navaids (landclass, elevation data and others).
+if you exclude directories that do not contain airports or navaids \(landclass, elevation data and others\).
+
+You can also exclude `BGL` or `DAT` files if needed.
+
+Note that you can select more than one entry in the file or directory dialogs.
+
+Select one or more entries in the list and click on `Remove` to delete then from the list.
 
 #### Select Paths to exclude add-on recognition {#scenery-library-database_exclude-add-on}
 
-All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be
-highlighted on the map and also considered during search for add-ons.
+**FSX/P3D:** All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be highlighted on the map as well as considered during search for add-ons.
+
+**X-Plane:** All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
 
 You can use this list to modify this behavior.
 
@@ -240,12 +261,11 @@ Add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct c
 of airports like elevation, magnetic variance or others. All these airports will be recognized as add-on airports
 since all their files are not stored in the base flight simulator `Scenery` directory.
 
-Insert the corresponding directory into this list to avoid unwanted highlighting of these airports as add-ons.
+Insert the corresponding directories or files into this list to avoid unwanted highlighting of these airports as add-ons.
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Picture above:** Tab _`Scenery Library Database`_ with three directories excluded from loading and two directories
-excluded from add-on recognition._
+_**Picture above:** Tab _`Scenery Library Database`_ with three directories and three files excluded from loading and two directories excluded from add-on recognition._
 
 #### Examples
 
