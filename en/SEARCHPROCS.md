@@ -2,6 +2,9 @@
 
 The tab `Procedures` allows previewing and adding approach and departure procedures to the flight plan. Procedures of a selected airport are arranged in a tree which indicates the dependencies between approaches and transitions.
 
+See [Procedures](APPROACHES.md) for general information about SID, STAR, approaches and transitions.
+
+
 Note that the SID and STAR names are limited to 5 characters in FSX and P3D due to a limitation in the BGL file format. Therefore procedure names are slightly modified. However, this does not apply to procedures from a Navigraph or X-Plane scenery database.
 
 **See the **[**Procedures**](APPROACHES.md#delete-selected-legs)** chapter of this manual for more details.**

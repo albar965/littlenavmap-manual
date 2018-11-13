@@ -6,56 +6,81 @@
 * [Installation](INSTALLATION.md)
 * [Quick Overview](QUICKOVERVIEW.md)
 * [First Start](INTRO.md#first-start)
-* [General Remarks](INTRO.md#general-remarks)
+* [General](INTRO.md#general-remarks)
+
+### User Interface
+
 * [Menus and Toolbars](MENUS.md)
 * [Statusbar](MENUS.md#statusbar)
 * [Coordinate Formats](COORDINATES.md)
-* [Map Display](MAPDISPLAY.md)
-  * [Map Display Legend](LEGEND.md)
-  * [Map Display Compass Rose](COMPASSROSE.md)
-  * [Map Display Sun Shadow](SUNSHADOW.md)
-  * [Map Display Traffic Pattern](TRAFFICPATTERN.md)
-  * [Map Flight Plan Editing](MAPFPEDIT.md)
+* [Navigation Databases](NAVDATA.md)
+
+### Map Display
+
+* [Overview](MAPDISPLAY.md)
+* [Compass Rose](COMPASSROSE.md)
+* [Sun Shadow](SUNSHADOW.md)
+* [Traffic Pattern](TRAFFICPATTERN.md)
+* [Legend](LEGEND.md)
+
+### Search
+
+* [Search Dock Window](SEARCH.md)
+* [Search Dock Window - Procedures](SEARCHPROCS.md)
 * [User-defined Waypoints](USERPOINT.md)
 * [Online Networks](ONLINENETWORKS.md)
-* Search
-  * [Search Dock Window](SEARCH.md)
-  * [Search Dock Window - Procedures](SEARCHPROCS.md)
-* [Navigation Databases](NAVDATA.md)
-* [Flight Plan](flight-plan.md)
-  * [Flight Plan Formats](FLIGHTPLANFMT.md)
-  * [Flight Plan Dock Window](FLIGHTPLAN.md)
-  * [Flight Plan Procedures](APPROACHES.md)
-  * [Flight Plan Edit Position](EDITFPPOSITION.md)
-  * [Flight Plan Route Description](ROUTEDESCR.md)
+
+### Flight Plan
+
+* [Dock Window](FLIGHTPLAN.md)
+* [Procedures](APPROACHES.md)
+* [Edit Position](EDITFPPOSITION.md)
+* [Route Description](ROUTEDESCR.md) 
+* [Editing on the Map](MAPFPEDIT.md)
+* [Formats](FLIGHTPLANFMT.md)
 * [Elevation Profile Dock Window](PROFILE.md)
-* Aircraft Performance
-  * [Aircraft Performance](AIRCRAFTPERF.md)
-  * [Aircraft Performance Editing](AIRCRAFTPERFEDIT.md)
+
+### Aircraft Performance
+
+* [Overview](AIRCRAFTPERF.md)
+* [Editing](AIRCRAFTPERFEDIT.md)
+
+### Information
+
 * [Information Dock Window](INFO.md)
-* [Legend Dock Window](INFO.md#legend-dock-window)
 * [Simulator Aircraft Dock Window](INFO.md#simulator-aircraft-dock-window)
+* [Legend Dock Window](INFO.md#legend-dock-window)
 * [Weather](WEATHER.md)
-* Printing
-  * [Printing the Map](PRINT.md#printing-the-map)
-  * [Printing the Flight Plan](PRINT.md#printing-the-flight-plan)
+
+### Printing
+
+* [Map](PRINT.md#printing-the-map)
+* [Flight Plan](PRINT.md#printing-the-flight-plan)
+
+### Tools
+
 * [Load Scenery Library Dialog](SCENERY.md)
 * [Connecting to a Flight Simulator](CONNECT.md)
 * [Checking for Updates](UPDATE.md)
 * [Options Dialog](OPTIONS.md)
 * [Running without Flight Simulator Installation](RUNNOSIM.md)
-* [Tutorials](TUTORIALS.md)
-  * [Tutorial - Building a VFR Flight Plan](TUTORIALVFR.md)
-  * [Tutorial - Building an IFR Flight Plan with Approach Procedures](TUTORIALIFR.md)
-* Appendix
-  * [Customize](CUSTOMIZE.md)
-  * [Creating Map Themes](MAPTHEMES.md)
-  * [Files](FILES.md)
-  * [Tips and Tricks](TIPS.md)
-  * [Tips for old and slow Computers](APPENDIX.md#tips-for-old-and-slow)
-  * [Troubleshoot](APPENDIX.md#troubleshoot)
-  * [Known Problems](APPENDIX.md#known-problems)
-  * [How to report a Bug](APPENDIX.md#how-to-report-a-bug)
-  * [Glossary](GLOSSARY.md)
-  * [License](LICENSE.md)
+
+### Tutorials
+
+* [Overview](TUTORIALS.md)
+* [Building a VFR Flight Plan](TUTORIALVFR.md)
+* [Building an IFR Flight Plan with Approach Procedures](TUTORIALIFR.md)
+
+### Appendix
+
+* [Customize](CUSTOMIZE.md)
+* [Creating Map Themes](MAPTHEMES.md)
+* [Files](FILES.md)
+* [Tips and Tricks](TIPS.md)
+* [Tips for old and slow Computers](APPENDIX.md#tips-for-old-and-slow)
+* [Troubleshoot](APPENDIX.md#troubleshoot)
+* [Known Problems](APPENDIX.md#known-problems)
+* [How to report a Bug](APPENDIX.md#how-to-report-a-bug)
+* [Glossary](GLOSSARY1.md)
+* [License](LICENSE.md)
 

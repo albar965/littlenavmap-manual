@@ -92,3 +92,94 @@ Additional files like
 * `little_navmap_onlinedata.sqlite-journal`
 
 are used by temporary processes like the database compilation or online network data. These can be ignored.
+
+### Annotated Flight Plan File Format {#annotated-pln}
+
+_Little Navmap_ uses the FSX/P3D [XML](https://en.wikipedia.org/wiki/XML) flight plan format. The XML standard allows to add comments in a file which are ignored by the simulators and by most add-on programs.
+
+The added comment is an XML comment starting with `<!-- LNMDATA` and ending with `-->`. Inside the comment is a simple key/value list separated by `|` symbols.
+
+_Little Navmap_ stores metadata like version and date in the file which helps when reporting errors or for future extensions.
+
+The most important data is procedure information which allows the program to restore SIDs, STARs, approaches and transitions in an error tolerant way when loading flight plans.
+
+Use [Export as Clean PLN](MENUS.md#export-clean-flight-plan) ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN")  if a program is not capable of reading the annotated files.
+
+``` XML
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+    <Descr>AceXML Document</Descr>
+    <!-- LNMDATA
+         _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
+         aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
+         aircraftperfname=Boeing 737-200|
+         aircraftperftype=B732|
+         approach=LITSI|
+         approacharinc=D34|
+         approachdistance=11.9|
+         approachrw=34|
+         approachsize=9|
+         approachsuffix=|
+         approachtype=VORDME|
+         cycle=1811|
+         navdata=NAVIGRAPH|
+         sidappr=MARE5W|
+         sidapprdistance=28.2|
+         sidapprrw=22|
+         sidapprsize=5|
+         simdata=XP11|
+         star=ASTU2D|
+         stardistance=128.4|
+         starrw=34|
+         starsize=5|
+         transition=ZAK|
+         transitiondistance=17.5|
+         transitionsize=3|
+         transitiontype=F
+-->
+    <FlightPlan.FlightPlan>
+
+...
+
+    </FlightPlan.FlightPlan>
+</SimBase.Document>
+```
+
+### Aircraft Performance File Format {#aircraft-performance-file}
+
+The `lnmperf` files are simple text files and use the Windows-`INI` style that has groups in square brackets and `key=value` lines. See [here](https://en.wikipedia.org/wiki/INI_file) for more information about this type of configuration files.
+
+Speed units are always knots and feet per minute. Fuel units are gallons or lbs depending on the value of `FuelAsVolume`. `ContingencyFuelPercent` is percent which will be added to trip fuel.
+
+`Description` has to be enclosed in double quotes. `\n` are interpreted as line feeds.
+
+Note that comments starting with `#` or `;` will be replaced when saving the file in _Little Navmap_. You can add a dummy key like `Comment1=my remarks` to circumvent this. Unknown keys are not replaced when saving.
+
+#### Example
+
+``` INI
+[Options]
+AircraftType=B732
+Description="Engine type JT8D-15A\n\nClimb: 92% N1, 280/0.7\nCruise: 0.74\nDescent:
+0.74,300\n\nhttps://example.com/dokuwiki/doku.php?id=boeing_737-200_reference"
+FormatVersion=1.0.0
+FuelAsVolume=false
+JetFuel=true
+Metadata=Created by Little Navmap Version 2.2.0.beta (revision 16944ce) on 2018 11 02T20:23:52
+Name=Boeing 737-200
+ProgramVersion=2.2.0.beta
+
+[Perf]
+ClimbFuelFlowLbsGalPerHour=10000
+ClimbSpeedKtsTAS=350
+ClimbVertSpeedFtPerMin=1500
+ContingencyFuelPercent=0
+CruiseFuelFlowLbsGalPerHour=4800
+CruiseSpeedKtsTAS=430
+DescentFuelFlowLbsGalPerHour=400
+DescentSpeedKtsTAS=420
+DescentVertSpeedFtPerMin=2500
+ExtraFuelLbsGal=0
+ReserveFuelLbsGal=6000
+TaxiFuelLbsGal=500
+```

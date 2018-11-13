@@ -120,7 +120,7 @@ For more information see the `Navmap` tab in the `Legend` dock window or the
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
-_**Picture above:** Flight plan elevation profile with line indicating the mouse hovering position. Orange lines show minimum safe altitude for flight plan segments. Red line shows overall minimum safe altitude. Top of climb and top of descent points shown including slope. Orange flight plan lines show procedure legs. Waypoint _`EV501`_ has an overfly condition and there are several altitude restriction shown for the approach procedure._
+_**Picture above:** Flight plan elevation profile with line indicating the mouse hovering position. Orange lines show minimum safe altitude for flight plan segments. Red line shows overall minimum safe altitude. Top of climb and top of descent points shown including slope. Orange flight plan lines show procedure legs. Waypoint _`EV501`_ has an overfly condition and there are several altitude restrictions shown for the approach procedure._
 
 ### Top of Climb and Top of Descent Paths {#toc-and-tod-paths}
 

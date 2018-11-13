@@ -8,8 +8,6 @@ Plenty of thanks to [Hervé Sors](http://www.aero.sors.fr) for allowing me to in
 
 A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
 
-TODO
-
 Thanks to Navigraph for kindly allowing me to include a free AIRAC cycle in the download. Thanks for Richard Stefan for his great support.
 Current AIRAC cycles can be purchased from [Navigraph](http://www.navigraph.com).
 
@@ -24,6 +22,8 @@ Dankeschön! for the German translation to merspieler and Stephan Leukert.
 Thanks to Ricardo Vitor for the translation to Brazilian Portuguese.
 
 Thanks to Daniel "Wolf" \([wolfinformatica.com](http://wolfinformatica.com)\) for the Spanish translation.
+
+Thanks to Alfredo alias _fred_, Josemi alias _aquileo_ and Emilio alias _zxplane_ from [X-PLANE.es](http://www.x-plane.es/) for the Spanish translation of the manual.
 
 Thank you! to Eddy Crequie for doing the Dutch translation.
 
