@@ -546,7 +546,7 @@ The length of the trail is limited for performance reasons. If it exceeds the ma
 
 #### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Show Compass Rose {#show-compass-rose}
 
-Show a compass rose on the map which indicates true north and magnetic north. Aircraft heading and aircraft track are shown if connected to a simulator.
+Show a compass rose on the map which indicates true north and magnetic north. Aircraft heading and aircraft trail are shown if connected to a simulator.
 
 The rose is centered around the user aircraft if connected. Otherwise it is centered on the map view.
 

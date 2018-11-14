@@ -158,7 +158,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 
 ### Elevation Profile Legend {#elevation-profile-legend}
 
-The colors and symbols of the elevation profile follow the style of the main map as set in the options dialog on tab `Map Display`. Colors, patterns and symbols for airports, navaids, procedures, active and passed flight plan legs are the same. The profile display also follows other map settings like visibility of flight plan line, aircraft and aircraft track.
+The colors and symbols of the elevation profile follow the style of the main map as set in the options dialog on tab `Map Display`. Colors, patterns and symbols for airports, navaids, procedures, active and passed flight plan legs are the same. The profile display also follows other map settings like visibility of flight plan line, aircraft and aircraft trail.
 
 | Symbol | Description |
 | --- | --- |
