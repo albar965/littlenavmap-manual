@@ -369,7 +369,9 @@ The centering of the aircraft can be changed in the `Options` dialog on the `Sim
 
 #### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Delete Aircraft Trail {#delete-aircraft-trail}
 
-Removes the user aircraft trail. It is also deleted when connecting to a flight simulator. The trail is saved and will be reloaded on program startup.
+The aircraft trail is saved and will be reloaded on program startup.
+
+This menu item removes the user aircraft trail from both the map and the elevation profile.
 
 #### ![Map Position Back](../images/icons/back.png "Map Position Back") ![Map Position Forward](../images/icons/next.png "Map Position Forward") Map Position Back/Forward {#map-position-back-forward}
 
@@ -590,7 +592,7 @@ Show hill shading on the map. Availability of these options depends on the selec
 
 #### ![Show Minimum Altitude](../images/icons/minaltitude.png "Show Minimum Altitude") Show Minimum Altitude {#show-mora-grid}
 
-Toggles the display of minimum off-route altitude grid on the map. 
+Toggles the display of minimum off-route altitude grid on the map.
 
 The minimum off-route altitude grid grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL or higher terrain is cleared by 2000 feet.
 
@@ -653,7 +655,7 @@ Use real time.
 
 ##### User defined Time
 
-Allows to use the user defined time as set by using `Set User defined Time` below. 
+Allows to use the user defined time as set by using `Set User defined Time` below.
 
 ##### Set User defined Time
 

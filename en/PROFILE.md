@@ -73,6 +73,12 @@ If this option is selected, the aircraft remains centered on the left half of th
 
 See also for more information on jump back in the options dialog on tab [Simulator Aircraft](OPTIONS.md#simulator-aircraft).
 
+#### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Delete Aircraft Trail {#delete-aircraft-trail}
+
+The aircraft trail is saved and will be reloaded on program startup.
+
+This menu item removes the user aircraft trail from the elevation profile. This does not remove the trail from the map. Use this if the trail appears in the wrong place or shape after creating of modifying a flight plan.
+
 #### ![Show VASI](../images/icons/approachguide.png "Show VASI") Show VASI {#show-vasi}
 
 Shows a VASI slope if an approach procedure with a runway \(not circle-to-land\) is selected in the flight plan and if the runway has a VASI.
@@ -118,9 +124,12 @@ The colors and symbols of the elevation profile follow the style of the main map
 For more information see the `Navmap` tab in the `Legend` dock window or the
 [Elevation Profile Legend](LEGEND.md#elevation-profile-legend) for details.
 
+The elevation profile uses actual altitude for display of restrictions, slope and cruise. You have to expect differences between actual and indicated altitude when flying above transition altitude using the standard altimeter setting of 29.92 inches.
+
 **Note that the profile display depends on the correct sequencing of the active flight plan leg \(magenta line\). The aircraft will be displayed in the wrong position and the aircraft trail will be erratic if the active leg is not correct or manually changed.**
 
 **The aircraft trail will be displayed incorrectly in the elevation profile if the flight plan is changed \(i.e. the flight plan length or geometry changes\).**
+You can delete the profile aircraft trail in context menu [Delete Aircraft Trail](PROFILE.md#delete-aircraft-trail) while keeping the trail on the map.
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
@@ -135,6 +144,10 @@ Note that the TOC and TOD calculation is influenced by altitude restrictions in 
 The path is also forced to the lowest allowed altitude at the final approach fix and the final approach course fix to avoid arriving above the ILS glide slope or too high at the destination runway.
 
 You can safely follow the descent path as shown by _Little Navmap_, provided you can manage your aircraft speed at the same time. For large aircraft you might want to descent around 10 nm earlier to reduce speed to 250 knots below 10,000 feet.
+
+The climb and descent paths do not consider wind settings. Expect differences when following the paths with a strong head or tail wind.
+
+You actual climb path will be steeper in the elevation profile if you climb in a strong head wind, for example.
 
 The plan will switch to a flat display showing only a flight plan line at cruise altitude if the TOC and/or TOD cannot be calculated or if the plan violates altitude restrictions. A red warning message is displayed if this is the case.
 
