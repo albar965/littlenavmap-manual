@@ -121,6 +121,8 @@ Show or hide the scroll bars at the bottom and the right side of the elevation p
 
 The colors and symbols of the elevation profile follow the style of the main map as set in the options dialog on tab `Map Display`. Colors, patterns and symbols for airports, navaids, procedures, active and passed flight plan legs are the same. The profile display also follows other map settings like visibility of flight plan line, aircraft and aircraft trail.
 
+Aircraft heading will turn if a backward movement relative to the active flight plan leg is detected.
+
 For more information see the `Navmap` tab in the `Legend` dock window or the
 [Elevation Profile Legend](LEGEND.md#elevation-profile-legend) for details.
 

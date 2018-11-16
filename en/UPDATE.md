@@ -10,8 +10,15 @@ Note that the installation still has to be done manually.
 
 The dialog showing available updates contains a change log, various other messages and one or more download links.
 
+#### Download in Web Browser
+
+Opens your default web browser and start the download or shows a download page. You might not necessarily see a web page if the download starts in the background.
+
+The update dialog stays to allow reading the release notes.
+
 #### Ignore this Update
-Pressing this button will put the shown version on a blacklist. You will not see any reminders for this version again but for newer versions.
+
+Pressing this button will close the dialog and put the shown version on a blacklist. You will not see any reminders for this version again but for newer versions.
 
 This button is not visible when checking manually.
 
@@ -27,16 +34,23 @@ This button is not visible when checking manually.
 
 _**Picture above:** Update notification dialog showing an available beta version including change log and download link._
 
+#### Copy to Clipboard
+
+Copy the contents of the window as formatted text into the clipboard for later reading. This allows to paste the release notes into LibreOffice Writer or MS Word.
+
 ### Options
 
-#### Check for Updates:
-`Daily`, `Weekly` or `Manual`.
+#### Check for Updates
+
+You can set the interval for update checks. Default is `Daily`.
+Choices `Daily`, `Weekly` or `Manual` where the latter one will never check automatically.
 
 Select `Main Menu` -&gt; `Help` -&gt; `Check for Updates` to search manually for new versions.
 
 Note that the daily or weekly check is only done when starting the program.
 
-#### Update Channels:
+#### Update Channels
+
 `Stable Versions only`: This will show only notifications for tested and stable versions with a complete manual.
 
 `Stable and Beta Versions`: Will additionally check for beta/test versions. Beta versions are program releases that already contain all planned features for a stable release but are still not tested carefully. The manual might be incomplete.
@@ -46,6 +60,7 @@ Note that the daily or weekly check is only done when starting the program.
 A backup of all settings is recommended before running a development version.
 
 #### Check for Updates now
+
 Checks for updates immediately. This will use the current settings as shown in the dialog. It will also show notifications for updates that were ignored by pressing the `Ignore this Update` on the notification dialog.
 
 ![Update Options](../images/updateoptions.jpg "Update Options")

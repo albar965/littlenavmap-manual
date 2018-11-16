@@ -154,7 +154,7 @@ The legend explains all the map icons and the `Flight Plan Elevation Profile` ic
 ### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
 
 `Highlighted text` is used to denote window, menu, button, file or directory names.
-See the [Glossary](GLOSSARY.md) for explanations of common terms in this manual.
+See the [Glossary](GLOSSARY1.md) for explanations of common terms in this manual.
 
 ### Rating {#rating}
 
