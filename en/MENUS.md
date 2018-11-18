@@ -635,11 +635,11 @@ Fastest option to display online weather but weather information might be older 
 
 #### ![Show Sun Shading](../images/icons/mapshadow.png "Show Sun Shading") Show Sun Shading {#show-sun-shading}
 
-Enables the display of a sun shadow on the globe. This works in both projections `Mercator` and `Spherical`.
+Enables the display of sun shading on the globe. This works in both projections `Mercator` and `Spherical`.
 
 You can change the time source with the `Sun Shading Time` menu below. The shadow darkness can be changed in the dialog `Options` on tab `Map Display`.
 
-See [Sun Shadow](SUNSHADOW.md) for more information.
+See [Sun Shading](SUNSHADOW.md) for more information.
 
 #### Sun Shading Time {#show-sun-shading-time}
 
@@ -659,9 +659,9 @@ Allows to use the user defined time as set by using `Set User defined Time` belo
 
 ##### Set User defined Time
 
-Opens a dialog to set a user defined time in UTC as a source for the sun shadow.
+Opens a dialog to set a user defined time in UTC as a source for the sun shading.
 
-See [Sun Shadow - Set User defined Time](SUNSHADOW.md#sun-shadow-user-defined) for more information.
+See [Sun Shading - Set User defined Time](SUNSHADOW.md#sun-shadow-user-defined) for more information.
 
 #### Projection {#projection}
 

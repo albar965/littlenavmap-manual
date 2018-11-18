@@ -19,7 +19,7 @@
 
 * [Overview](MAPDISPLAY.md)
 * [Compass Rose](COMPASSROSE.md)
-* [Sun Shadow](SUNSHADOW.md)
+* [Sun Shading](SUNSHADOW.md)
 * [Traffic Pattern](TRAFFICPATTERN.md)
 * [Legend](LEGEND.md)
 

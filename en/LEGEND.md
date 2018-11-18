@@ -188,7 +188,7 @@ Color and indicators depend on user choice in airport traffic pattern dialog.
 | ![Entry Indicator](../images/legend/pattern_entry.png) | Arrow and dashed line shows path for pattern entry. |
 | ![Exit Indicator](../images/legend/pattern_exit.png) | Dashed line and arrows show path for pattern exit. |
 
-### MORA {#airport-mora}
+### MORA Grid {#mora-grid}
 
 The minimum off-route altitude grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL terrain is cleared by 2000 feet.
 
