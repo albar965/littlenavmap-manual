@@ -25,7 +25,8 @@ All configuration files for my programs are stored in these directories:
 
 * `little_navmap.ini`: INI style configuration file. Text file.
 * `little_navmap.history`: The map position history. Binary file.
-* `little_navmap.track`: The user aircraft track. Binary file.
+* `little_navmap.track`: The user aircraft trail. Binary file.
+* `little_navmap_profile.track`: User aircraft trail for the elevation profile. Binary file.
 
 Three more configuration files are created for customization of colors and styles:
 
@@ -35,7 +36,7 @@ Three more configuration files are created for customization of colors and style
 
 See [Customization](CUSTOMIZE.md) for more information.
 
-_Little Navmap_ might reset these files when updated, but only after creating backup files.
+**Note that **_Little Navmap_** might reset these files when updated, but only after creating backup files. This is usually mentioned in the change log.**
 
 ### Disk Cache {#cache}
 

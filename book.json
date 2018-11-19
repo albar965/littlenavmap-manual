@@ -1,7 +1,8 @@
 {
-"pluginsConfig": {
+  "plugins": ["-sharing"],
+  "pluginsConfig": {
     "theme-default": {
         "showLevel": true
     }
-}
+  }
 }
