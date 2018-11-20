@@ -4,7 +4,7 @@ See the [Nav Map Legend](LEGEND.md) for details about the various symbols shown 
 
 ### Moving {#moving}
 
-Use click and drag to move the map and the mouse wheel to zoom in or out. You can also use the overlay buttons on the right side of the map.
+Use click and drag to move the map and the mouse wheel to zoom in or out. Use `Shift+Wheel` to zoom in small steps. You can also use the overlay buttons on the right side of the map.
 
 Alternatively use the keyboard to move around the map:
 

@@ -10,9 +10,9 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 
 A click in the map on the active spot of a feature like a range ring removes it. The cursor changes to a hand symbol to indicate an active spot which allows to remove a feature by click or remove/edit it in the context menu.
 
-| Click | Description |
+| Mouse | Description |
 | --- | --- |
-| `Click` | Show information about all features around the cursor position. |
+| `Single Click` | Show information about all features around the cursor position. |
 | `Double Click` | Zooms to the clicked feature and shows information. |
 | `Shift+Click` | Add or remove range rings or navaid range rings. |
 | `Ctrl+Click` | Start rhumb-line measurement or delete a measurement line. |
@@ -20,6 +20,8 @@ A click in the map on the active spot of a feature like a range ring removes it.
 | `Ctrl+Shift+Click` | Add or edit an userpoint. |
 |`Ctrl+Alt+Click` | Insert airport, navaid, userpoint or position into the nearest flight plan leg. |
 | `Shift+Alt+Click` | Append airport, navaid, userpoint or position to flight plan. |
+| `Wheel` | Zoom in or out. |
+| `Shift+Wheel` | Zoom in or out in small steps. |
 
 ### Map Marks {#map-marks}
 
