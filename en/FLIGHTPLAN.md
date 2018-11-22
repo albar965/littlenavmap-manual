@@ -54,8 +54,8 @@ _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could
   * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
   * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
   * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
-* `Type`: Type of a radio navaid.
-* `Freq.`: Frequency or channel of a radio navaid.
+* `Type`: Type of a radio navaid. Shows `ILS` or `LOC` for ILS or localizer approaches on the last runway leg.
+* `Freq.`: Frequency or channel of a radio navaid. Also shows ILS or localizer frequency for corresponding approaches on the last runway leg.
 * `Range`: Range of a radio navaid if available.
 * `Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
 * `Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
