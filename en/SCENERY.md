@@ -88,10 +88,12 @@ Airspaces will appear as duplicates in the map if an airspace file is found in m
 * `Reset Paths`: Reset all paths back to default values.
 * `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
 * `Scenery Configuration File` and `Select ...` \(only FSX and P3D\): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
-* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading. This applies to the FSX/P3D `scenery.cfg` as well as X-Plane's `scenery_packs.ini` which both allow to disable scenery entries.
+* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading. This applies to the FSX/P3D `scenery.cfg` as well as X-Plane's `scenery_packs.ini` which both allow to disable scenery entries. 
 * `Read Prepar3D add-on.xml packages` \(only P3D v3 and v4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
 * `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database is restored. The dialog is closed and the program will switch to show the loaded database once it is successfully loaded.
 * `Close`: Keep all settings and changes in the dialog and close it without loading anything.
+
+**Note regarding **`Read inactive Scenery Entries`** and X-Plane: You either have to enable this option or start X-Plane after adding an airport. X-Plane will update the **`scenery_packs.ini`** when starting. Otherwise your new scenery will not appear in **_Little Navmap_**.**
 
 ![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
 

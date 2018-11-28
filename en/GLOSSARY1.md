@@ -1,7 +1,6 @@
 ## Glossary
 
 ### 3D
-
 X-Plane airport which contains at least one 3D object. May be a fully constructed major airport.
 
 ### Add-on airport
@@ -9,11 +8,13 @@ FSX/P3D: All scenery data that is found outside of the base flight simulator `Sc
 
 X-Plane: All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
 
+### Approach Procedure
+An approach procedure is a series of maneuvers for the transfer of an aircraft in instrument flight conditions from the initial approach to a landing or to a point from which a landing may be made visually. If a flight plan includes a standard arrival procedure \(STAR\), an approach procedure will normally follow the STAR.
+
 ### Arrival Procedure
 Approach, transition or STAR procedure.
 
 ### BGL
-
 A binary file with the extension `BGL` which is part of a flight simulator scenery containing airport, navaid or airway information. These files can also contain traffic, landclass, elevation or other information which is not relevant for _Little Navmap_.
 
 ### CSV
@@ -92,19 +93,21 @@ A STAR, SID or approach and the respecitive transitions.
 VOR, VORTAC, TACAN or NDB.
 
 ### Rating
+
 Airport zero to five star rating depending on facilities.
 
 ### Scenery Library Database
+
 This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ when reading all the flight simulator BGL or DAT files. It allows fast complex searches and map display.
 
 ### SID
-Standard instrument departure.
+A standard instrument departure is an air traffic control departure procedure that helps to simplify clearance delivery procedures. A SID will keep aircraft away from terrain but it is optimized for air traffic control route of flight and does not necessarily provide the best climb gradient. It provides a balance between terrain and obstacle avoidance, noise abatement and airspace management.
 
 ### SimConnect
 A programming interface that allows applications to read and write flight simulator parameters.
 
 ### STAR
-Standard terminal arrival procedure. Usually followed by a transition and an approach.
+A standard terminal arrival is a flight route that usually covers the phase of a flight between the last point of the route filled in the flight plan and the first point of the approach to the airport, normally the initial approach fix \(IAF\). A STAR connects the en-route phase with the approach phase of the flight.
 
 ### Start position
 Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.

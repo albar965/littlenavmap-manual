@@ -214,6 +214,23 @@ A push button `Test` allows to check if the URL is valid. The test does not work
 
 The whazzup file format is explained in the IVAO documentation library: [Whazzup File Format](https://doc.ivao.aero/apidocumentation:whazzup:fileformat).
 
+**Example for a **`whazzup.txt` **file:**
+
+```
+!GENERAL
+VERSION = 1
+RELOAD = 1
+UPDATE = 20181126131051
+CONNECTED CLIENTS = 1
+CONNECTED SERVERS = 41
+
+!CLIENTS
+:N51968:N51968:PILOT::48.2324:-123.1231:119:0:Aircraft::::::::1200::::VFR:::::::::::::::JoinFS:::::::177:::
+
+!SERVERS
+...
+```
+
 ##### Update Every {#online-service-settings-update}
 
 Sets the update rate that defines how often the `whazzup.txt` file is downloaded.

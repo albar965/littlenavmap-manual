@@ -373,6 +373,8 @@ The aircraft trail is saved and will be reloaded on program startup.
 
 This menu item removes the user aircraft trail from both the map and the elevation profile.
 
+The trail can be exported together with the flight plan into a `GPX` file by using [Export Flight Plan as GPX](MENUS.md#export-flight-plan-as-gpx).
+
 #### ![Map Position Back](../images/icons/back.png "Map Position Back") ![Map Position Forward](../images/icons/next.png "Map Position Forward") Map Position Back/Forward {#map-position-back-forward}
 
 Jumps forward or backward in the map position history. The complete history is saved and restored when starting _Little Navmap_.
@@ -542,9 +544,11 @@ This allows a quick inspection of an airport or navaid during flight. To display
 
 Show the user aircraft trail. The trail is always shown independently of the zoom distance. It is saved and will be reloaded on program startup.
 
-The trail is deleted when connecting to a flight simulator or it can be deleted manually by selecting `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail`. The trail is also deleted when the user aircraft jumps over large distance when assigning a new airport, for example.
+The trail can be deleted manually by selecting `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail`.
 
 The length of the trail is limited for performance reasons. If it exceeds the maximum length, the trail is truncated and the oldest segments are lost.
+
+The trail can be exported together with the flight plan into a `GPX` file by using [Export Flight Plan as GPX](MENUS.md#export-flight-plan-as-gpx).
 
 #### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Show Compass Rose {#show-compass-rose}
 

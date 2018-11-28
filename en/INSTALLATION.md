@@ -26,7 +26,7 @@ In some cases you have to install the [Visual C++ Redistributable Packages for V
 The program will not be able to use encrypted network connections \(i.e. HTTPS\) that are needed to check for updates or
 to load online maps.**
 
-**Install both 32 and 64 bit versions.**
+**Install both 32 bit \(**`vcredist_x86.exe`**\) and 64 bit \(**`vcredist_x64.exe`**\) versions. **
 
 Usually this is already installed since many other programs require it.
 
@@ -60,6 +60,10 @@ These directories to not contain executable files and are accessed frequently by
 ### macOS
 
 Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
+
+**Note on first start on macOS:** When starting the application you will get a message `Little Navmap is from an unidentified developer. Are you sure you want to open it?` or similar.
+
+To bypass this right click or `Ctrl+Click` on the application and select open. You probably have to enter an administrator name and password once. The program can be started normally after this procedure.
 
 ### Linux
 

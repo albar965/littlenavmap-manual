@@ -77,7 +77,9 @@ See also for more information on jump back in the options dialog on tab [Simulat
 
 The aircraft trail is saved and will be reloaded on program startup.
 
-This menu item removes the user aircraft trail from the elevation profile. This does not remove the trail from the map. Use this if the trail appears in the wrong place or shape after creating of modifying a flight plan.
+This menu item removes the user aircraft trail from the elevation profile only. It does not remove the trail from the map. Use this if the trail appears in the wrong place or shape after creating of modifying a flight plan.
+
+The trail in the elevation profile is of no relevance for the `GPX` file export.
 
 #### ![Show VASI](../images/icons/approachguide.png "Show VASI") Show VASI {#show-vasi}
 
