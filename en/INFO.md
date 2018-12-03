@@ -14,7 +14,7 @@ _Little Navmap_ shows tabs based on priorities and selected objects and tries mi
 
 A blue link `Map` in the information allows jumping to and/or highlighting the shown object on the map. 
 
-Bearing and distance \(rhumb line\) to the user aircraft is shown for airports and navaids if connected to a simulator and distance is below 500 NM.
+Bearing and distance \(rhumb line constant course\) to the user aircraft is shown for airports and navaids if connected to a simulator and distance is below 500 NM.
 
 ### Scenery Information {#scenery}
 

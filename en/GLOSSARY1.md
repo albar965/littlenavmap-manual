@@ -93,8 +93,11 @@ A STAR, SID or approach and the respecitive transitions.
 VOR, VORTAC, TACAN or NDB.
 
 ### Rating
-
 Airport zero to five star rating depending on facilities.
+
+### Rhumb Line
+When using a magnetic compass or direction indicator it is more convenient to fly a constant track direction. This can be achieved by following a rhumb line track, rather than a great circle track. 
+Note that the rhumb line connecting two points on earth is longer than the great circle path. Also, near the poles and for longer distances the rhumb line is not usable.
 
 ### Scenery Library Database
 

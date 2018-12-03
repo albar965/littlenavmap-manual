@@ -365,7 +365,7 @@ Removes all range rings, navaid range rings, measurement lines and airport traff
 
 Zooms to the user aircraft if directly connected to a flight simulator or remotely connected using [Little Navconnect](https://albar965.github.io/littlenavconnect.html) and keeps the aircraft centered on the map.
 
-The centering of the aircraft can be changed in the `Options` dialog on the `Simulator Aircraft` tab.
+The centering of the aircraft can be changed in the [Simulator Aircraft](OPTIONS.md#simulator-aircraft) tab in dialog `Options`.
 
 #### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Delete Aircraft Trail {#delete-aircraft-trail}
 

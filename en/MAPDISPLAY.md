@@ -148,6 +148,8 @@ A rhumb line is a line of constant course and used between the waypoints of an a
 
 The course for a rhumb line is indicated in degrees magnetic and true \(`°M`, `°T` or `°M/T` if both values are equal\).
 
+Note that the rhumb line connecting two points on earth is longer than the great circle path. Also, near the poles and for longer distances the rhumb line is not usable.
+
 The magnetic declination to calculate the magnetic course will be taken from the global `magdec.bgl` file at the origin of the measurement.
 
 The magnetic declination of an airport or navaid will be used if the measurement starts at a such a point. Additional information like ident and frequency will be added to the line in this case as well.
