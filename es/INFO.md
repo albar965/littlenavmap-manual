@@ -1,38 +1,70 @@
 ## ![Information](../images/icons/infodock.png "Information") Panel de Información {#information-dock-window}
 
-Esta panel contiene información de texto sobre aeropuertos en varias pestañas, así como información para una o más ayudas a la navegación, vías aéreas en otra pestaña más una pestaña adicional que muestra la información del espacio aéreo.
+### General {#general}
 
-La pestaña `Meteorología` también incluye la información descodificada del aeropuerto seleccionado.
+Esta panel contiene información de texto sobre aeropuertos en varias pestañas, así como información para una o más ayudas a la navegación, vías aéreas en otra pestaña más una pestaña adicional que muestra la información del espacio aéreo.
 
 Toda la información se puede copiar en el portapapeles en formato texto. Utilizar el menú contextual de los campos de texto o utilizar `Ctrl+A` para seleccionarlo todo y `Ctrl+C` para copiar el contenido al portapapeles.
 
-La información se muestra cuando se selecciona uno de los items en el mapa  con la opción del menú contextual `Mostrar información para ...` , en el panel del plan de vuelo o en la tabla de resultados de la búsqueda.
-Un aeropuerto y todas las radioayudas se cargan en la pantalla de información si hay varios objetos cercanos en el lugar del mapa donde se ha hecho Click con el botón derecho.
+La información de un aeropuerto, radioayuda o punto de usuario se muestra cuando se selecciona uno de los items en el mapa  con la opción del menú contextual `Mostrar información para ...` , en el panel del plan de vuelo o en la tabla de resultados de la búsqueda.
 
-Un enlace azul `Mapa` permite saltar al aeropuerto o radioayuda en el mapa.
-Enlaces adicionales de helipuertos están disponibles en la pestaña `Pistas/Helipuertos`.
+Todas las pestañas se rellenan para un aeropuerto, todas las radioayudas, todos los puntos de usuario o todos los espacios aéreos que se encuentran cerca del cursor a hacer click con el botón izquierdo en el mapa.
 
-Una aerovía se muestra siempre con todos sus fijos. Hacer Click en cualquier enlace azul de un fijo para centrar el mapa alrededor de él.
+_Little Navmap_ muestra pestañas según las prioridades y objetos seleccionados e intenta minimizar los cambios de pestaña. 
+
+Un enlace azul `Mapa` en la información permite saltar y/o resaltar el objeto mostrado en el mapa.
+
+El rumbo y la distancia \(línea de rumbo \) al avión del usuario se muestran para aeropuertos y radioayudas si está conectado al simulador y la distancia es inferior a 500 NM.
+
+### Información de Escenario {#scenery}
 
 La información sobre aeropuertos y radioayudas incluye uno o más enlaces en la parte inferior del objeto en la sección `Escenario`. Estos puntos de enlaces coinciden con los archivos BGL (FSX, P3D) o DAT (X-Plane) que contienen información de radioayudas y aeropuertos. Hacer Click en los enlaces para abrir la carpeta en su explorador de archivos \(por ejemplo el Explorador de Windows\). Si es posible el archivo correspondiente se seleccionará automáticamente.
 
 Pueden aparecer Enlaces Múltiples de aeropuertos ya que estos pueden modificarse en múltiples archivos BGL o DAT desde diferentes actualizaciones de add-ons de escenarios o datos de navegación.
 
+### Pestaña Aeropuerto, Pistas, Comunicaciones, Procedimientos y meteorología {#airport}
+
+Estas cinco pestañas muestran información sobre un aeropuerto seleccionado.
+
+El amanecer y el atardecer se calculan en base a datos reales si no está el simulador conectado. Por el contrario se utilizarán los datos del simulador. Esto se indica mediante el texto `(crepúsculo , dato real)` o `(Crepúsculo, dato del simulador)`.
+
+La pestaña `Meteorología` también incluye información decodificada del aeropuerto seleccionado. El icono de las reglas de vuelo \([Leyenda - Meteorología del aeropuerto](LEGEND.md#airport-weather)\) tiene el sufijo ` - Mapa` si la fuente de meteorología mostrada es la fuente de los iconos de meteorología en el mapa.
+
+En la pestaña `Pistas` están disponibles los links para los helipuertos.
+
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 
-_**Imagen superior:** Vista de información del Aeropuerto. Las pestañas adicionales muestran información de aerovías, frecuencias COM, aproximaciones y meteorología._
+_**Imagen superior:** Vista de información del Aeropuerto. Las pestañas adicionales muestran información de pistas aerovías, frecuencias COM, aproximaciones y meteorología. Se usan los símbolos de la fuente de datos NOAA. El amanecer y atardecer se basa en los datos del simulador. El rumbo y distancia del avión del usuario se muestran arriba._
 
-![Navaid Information](../images/infonavaid.jpg "Navaid Information")
+### Pestaña Radioayudas {#navaids}
 
-_**Imagen superior:** Información de radioayudas. Dos radioayudas estaban cerca del cursor cuando se hizo Click._
+Se pueden cargar una o más ayudas a la navegación, puntos de usuario o vías aéreas en esta pestaña haciendo clic con el botón izquierdo.
+
+Una vía aérea siempre se muestra con todos sus puntos de referencia. Haga clic en cualquier enlace de punto de ruta azul para centrar el mapa alrededor del punto de ruta.
+
+| | |
+| -- | -- |
+| ![Navaid Information](../images/infonavaid.jpg "Navaid Information") | ![Airway Information](../images/infoairway.jpg "Airway Information") |
+
+_**Imagen superior:** Información de radioayudas. Dos radioayudas estaban cerca del cursor cuando se hizo Click. Visualización de varias vías aéreas con restricciones de altitud y lista de puntos de paso seleccionables._ |
+
+### Pestaña de Espacios Aéreos {#airspaces}
+
+Los espacios aéreos se resaltan en el mapa con su límite y una etiqueta de texto al hacer clic en el enlace `Mapa` en la ventana de información.
+
+Haga clic en el enlace "Eliminar elementos destacados del mapa" en la ventana de información para eliminar los aspectos destacados del mapa.
+
+![Airspace Information](../images/infoairspace.jpg "Airspace Information")
+
+_**Imagen superior:** Dos espacios aéreos que se muestran en la información después de hacer clic en el mapa. Dos espacios aéreos se resaltan en el mapa después de hacer clic en el enlace _`Mapa`_ en el texto de información._
 
 ## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Panel de Aeronave del simulador {#simulator-aircraft-dock-window}
 
-Este panel muestra información sobre el avión del usuario, de la AI o de los aviones de los jugadores en varias pestañas.
+Este panel muestra información en varias pestañas sobre el avión del usuario, de la AI o de los aviones de los jugadores.
 _Little Navmap_ tiene que estar conectado al simulador para activar esta característica.
 Ver [Conexión al Simulador de Vuelo](CONNECT.md#connecting-to-a-flight-simulator) para obtener más información sobre este asunto.
 
-### Pestaña Aeronave
+### Pestaña Aeronave {#aircraft}
 
 Ofrece una descripción general del avión del usuario y muestra información sobre el tipo, el peso y el combustible.
 
@@ -40,10 +72,19 @@ Ofrece una descripción general del avión del usuario y muestra información so
 
 _**Imagen superior:** Información de la aeronave cuando está conectado al simulador de vuelo._
 
-### Pestaña del progreso
+### Pestaña del progreso {#progress}
 
 Muestra información similar a una computadora de gestión del vuelo sobre el avión del usuario. Proporciona el progreso del plan de vuelo,
 parámetros de altitud, velocidad, meteo y parámetros del entorno.
+
+La información de texto en la pestaña tiene un enlace "Más menos" en la parte superior izquierda. Puede usar esto para alternar entre información más detallada y menos información.
+
+**Tenga en cuenta que las estimaciones de combustible y tiempo en esta pestaña se basan en el consumo real de combustible y la velocidad. Estos no se ven afectados por el perfil de performance de la aeronave \ (** [Performance del avión] (AIRCRAFTPERF.md)**\).**
+
+| | |
+| -- | -- |
+| ![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information") | ![Aircraft Progress Information Less](../images/infoacprogressless.jpg "Aircraft Progress's Information Less") |
+| _**Imagen superior:** Progreso e información de la meteo y situación del vuelo actual. Algunos campos o tablas como_`Próximo fijo`_ solo están disponibles cuando se ha cargado un plan de vuelo._ | _**Picture above:** Información del progreso plegado para mostrar los valores más importantes utilizandos_ ,mediante el link `Más menos`_ |
 
 ![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information")
 

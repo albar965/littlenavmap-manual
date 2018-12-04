@@ -25,21 +25,21 @@ En algún caso tendrá que instalar el [Visual C++ Redistributable Packages para
 
 **Instale el paquete Visual C++ Redistributable si aparece un aviso de que el subsistema SSL no se ha iniciado. El programa no podrá usar conexiones cifradas \(por ejemplo HTTPS\) , necesarias para actualizarse ó descargar mapas en linea.**
 
-**Instale ambas versiones de 32 y 64 bit.**
+**Instale ambas versiones de 32 bit \(**`vcredist_x86.exe`**\) y 64 bit \(**`vcredist_x64.exe`**\).**
 
-Generalemente estan instaladas si otros programas lo requieren.
+Generalmente están instaladas si otros programas lo requieren.
 
 También tendrá que instalar el Redistributable, si tiene un error como  `Error al buscar actualizaciones  ... Error al crear contexto SSL`.
 
 _Little Navmap_ es una aplicación de 32 bit  y ha sido probada con  Windows 7, Windows 8 y Windows 10 \(32-bit y 64-bit\). Windows XP  no es soportado.
 
-Puede encontrar los paquetes redistributable para todas las versiones aqui: [Descarga del último Visual C++ soportado](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
+Puede encontrar los paquetes redistributable para todas las versiones aquí: [Descarga del último Visual C++ soportado](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
 #### Otros simuladores ademas de FSX SP2 {#other-simulators-than-fsx-sp2}
 
 Este programa ha sido compilado usando FSX SP2 simple (sin Aceleración). SimConnect versión 10.0.61259.0.
 
-Puede ser necesario instalar una versión anterior de SimConnect si usa _Prepar3D_ ó _FSX Steam Edition_. Si no está seguro de ésto, simplemente intente salir de _Little Navconnect_.  Si falla y aparece un mensaje de error , siga las instrucciones de debajo:
+Puede ser necesario instalar una versión anterior de SimConnect si usa _Prepar3D_ ó _FSX Steam Edition_. Si no está seguro de esto, simplemente intente salir de _Little Navconnect_.  Si falla y aparece un mensaje de error , siga las instrucciones de debajo:
 
 **_Prepar3D_:** En el mismo directorio que `Prepar3D.exe` está el directorio  `redist\Interface` (normalmente `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`). Hay disponibles varias versiones heredadas de SimConnect. Tiene que instalar `FSX-SP2-XPACK.msi` para  _Little Navmap_.
 
@@ -48,8 +48,8 @@ Puede ser necesario instalar una versión anterior de SimConnect si usa _Prepar3
 
 #### Mejora del tiempo de arranque {#improve-start-up-time}
 
-Los programas antivirus pueden enlentecer significativamente el arranque y ejecución del programa en Windows.
-Por tanto se recomineda excluir del  escaneo  los siguientes directorios:
+Los programas antivirus pueden ralentizar significativamente el arranque y ejecución del programa en Windows.
+Por tanto se recomienda excluir del  escaneo  los siguientes directorios:
 
 * Caché del disco para imágenes del mapa: `C:\Users\NOMBREUSUARIO\AppData\Local\.marble\data`
 * Libreria de escenarios y base de datos del usuario: `C:\Users\NOMBREUSUARIO\AppData\Roaming\ABarthel\little_navmap_db`
@@ -60,13 +60,17 @@ Estos directorios no contienen archivos ejecutables y _Little Navmap_ accede a e
 
 Extraiga el archivo ZIP , y copie `Little Navmap` en la carpeta `Aplicaciones` ó en cualquier otra.
 
+**Tener en cuenta en el primer arranque en macOS:** Cuando arranque la aplicación se mostrará el siguiente mensaje `Little Navmap proviene de un desarrollador no identificado. ¿Está seguro que quiere abrirlo?` o similar.
+
+Para evitar esto hacer click con el botón derecho o `Ctrl+Click` sobre la aplicación y seleccionar Abrir. Probablemente tenga que acceder con el nombre de administrador y poner el password. Con este procedimiento, el programa puede iniciarse normalmente.
+
 ### Linux
 
 Extraiga el archivo tar en cualquier lugar , y lance el ejecutable `littlenavmap` desde el terminal para arrancar el programa:
 
 `./littlenavmap`
 
-La mayoria de administradores de archivos arrancaran el programa con un doble clic 
+La mayoría de administradores de archivos arrancaran el programa con un doble clic 
 
 ### X-Plane
 
@@ -74,7 +78,7 @@ La mayoria de administradores de archivos arrancaran el programa con un doble cl
 
 El plugin *Little Xpconnect* está incluido en *Little Navmap* , pero puede descargarse por separado. Vea el `Leame.txt` incluido en la carpeta `Little Xpconnect` para instrucciones de instalación.
 
-El plugin es unicamente de 64 bit, y está disponible para Windows, macOs y Linux.
+El plugin es únicamente de 64 bit, y está disponible para Windows, macOs y Linux.
 
 ### Programas Adicionales
 

@@ -4,7 +4,7 @@
 
 # Español
 
-* [Manual de Usuario](es/README.md)
+* [Manual de Usuario](es/README.md) \(Work in progress\)
 
 # French
 

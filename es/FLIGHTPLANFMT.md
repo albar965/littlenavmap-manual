@@ -30,7 +30,7 @@ La siguiente tabla muestra las posibilidades de _Little Navmap_ y los formatos d
 | PLN para<br/>BBS Airbus       | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | FPL for<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X     |
+| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^3]  |
 | GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 
 Los fijos de procedimientos están excluidos por defecto para todos los formatos de archivo, excepto para GPX. Tiene que utilizar el GPS o el FMS del simulador para seleccionar procedimientos.
@@ -185,6 +185,8 @@ Un formato para el Airbus de Flight Factor. El archivo no se divide y los planes
 
 Los planes de vuelo se guardan en una notación ligeramente ampliada de ruta ATS, la cual permite guardar la altitud de crucero y los procedimientos de aproximación.
 
+Si bien este formato permite guardar SID y STAR, la opción para las aproximacione se eliminó ya que no es confiable.
+
 **Ejemplo:**
 
 ```
@@ -264,3 +266,4 @@ La exportación de waypoints definidos por el usuario se puede habilitar en el c
 
 [^ 1]: el formato FPR permite el ahorro de vías aéreas y procedimientos, pero esto se implementará en una versión futura de _Little Navmap_.
 [^ 2]: los puntos de referencia definidos por el usuario se cambiarán de nombre al cargar en el GTN.
+[^3]: Solo SID y STAR. El guardado de aproximaciones no está soportado.

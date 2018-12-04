@@ -47,6 +47,6 @@
 * [Solución de Problemas](APPENDIX.md#troubleshoot)
 * [Problemas Conocidos](APPENDIX.md#known-problems)
 * [Cómo reportar un error](APPENDIX.md#how-to-report-a-bug)
-* [Glosario](GLOSSARY.md)
+* [Glosario](GLOSSARY1.md)
 * [Licencia](LICENSE.md)
 

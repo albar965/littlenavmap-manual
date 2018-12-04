@@ -79,13 +79,17 @@ La mayor parte de dialogos y algunas ventanas tienen botones de ayuda ![Help](..
 
 #### Título de la Ventana 
 
-El título de la ventana principal indica la base de datos del simulador seleccionado \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` ó `XP11`\), el nombre del archivo del plan de vuelo y un   `*` detrás,  si el plan de vuelo ha sido modificado.
+El título de la ventana principal muestra el nombre de la aplicación y la versión. Además, indica la base de datos del simulador actualmente seleccionada. \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` o `XP11`\), el nombre del fichero del plan de vuelo, el nombre del archivo de performance de la aeronave con un `*` final para ambos, si alguno de los dos ha cambiado.
 
 Se añadirá una `N` si se ha usado la base de datos de Navigraph :
 
 * `P3DV4`: Todas las prestaciones del mapa y la información de dialogos y ventanas proviene de la base de datos del simulador. 
 * `P3DV4 / N`: Los aeropuertos e ILS mostrados provienen de la base de datos del simulador. Las ayudas a la navegación , espacios aereos , aerovias y procedimientos provienen de la base de datos de Navigraph.
-* `(P3DV4) / N`: Todos los datos usados provienen de la base de datos de Navigraph. No habrá información disponible sobre áreas de tráfico, calles de rodaje y posiciones de estacionamiento del aeropuerto. 
+* `(P3DV4) / N`: Todos los datos usados provienen de la base de datos de Navigraph. No habrá información disponible sobre áreas de tráfico, calles de rodaje y posiciones de estacionamiento del aeropuerto.
+
+**Ejemplo:** `Little Navmap 2.2.1 - XP11 / N LOAG_LOWW.fmc * - PA30 Twin Comanche.lnmperf`
+
+Version 2.2.1, X-Plane seleccionado, uso de base de datos Navigraph, plan de vuelo `LOAG_LOWW.fmc` modificado y perfil de performance `PA30 Twin Comanche.lnmperf` no modificado.
 
 
 #### Información y Texto de la Aeronave del Simulador 
@@ -93,6 +97,12 @@ Se añadirá una `N` si se ha usado la base de datos de Navigraph :
 Puede cambiar el tamaño del texto de manera permanente en el dialogo de opciones de esta ventana.
 
 Una forma rápida de cambiar el tamaño del texto es usando la rueda del ratón  y la tecla `Ctrl` . Sin embargo este ajuste no se guardará para otra sesión.
+
+#### Mensajes de Error
+
+_Little Navmap_ muestra mensajes de error con texto blanco sobre fondo rojo para problemas con el rendimiento de la aeronave, el cálculo de la parte TOC/TOD y otros problemas.
+
+La información sobre herramientas en estos mensajes de error proporciona más ayuda en algunos casos.
  
 #### Pestañas
 
@@ -133,11 +143,11 @@ La leyenda explica todos los iconos del mapa y del `Perfil de Elevación del Pla
 ### Nomenclatura usada en este Manual {#naming-conventions-used-in-this-manual}
 
 `Texto Resaltado` se utiliza para denotar ventanas , menús , botones , archivos o nombres de directorios. 
-Vea el [Glosario](GLOSSARY.md) para explicación de los términos usados en este manual. 
+Vea el [Glosario](GLOSSARY1.md) para explicación de los términos usados en este manual. 
 
 ### Clasificación {#rating}
 
-Los aeropuertos están clasificados de cero a cinco estrellas en función de sus instalaciones. Los aeropuertos sin clasificar son considerados "aburridos", y se muestran con un símbolo gris al final de la lista \(`Aeropuertos Vacios`\) en el mapa. Este comportamiento puede desactivarse en el dialogo `Opciones` de la pestaña `Vista del Mapa`.
+Los aeropuertos están clasificados de cero a cinco estrellas en función de sus instalaciones. Los aeropuertos sin clasificar son considerados "aburridos", y se muestran con un símbolo gris al final de la lista \(`Aeropuertos Vacíos`\) en el mapa. Este comportamiento puede desactivarse en el dialogo `Opciones` de la pestaña `Vista del Mapa`.
 
 Los criterios que se enumeran debajo son los utilizados para la clasificación. Cada uno otorga una estrella: 
 
@@ -147,14 +157,14 @@ Los criterios que se enumeran debajo son los utilizados para la clasificación. 
   4. Areas de Tráfico 
   5. Torre de control \(sólo si se cumple al menos uno de los anteriores.\).
 
-Todos los aeropuertos que no se localicen en el directorio por defecto `Scenary` de FSX/P3D, o los que se encuentren en  `Custom Scenary` de X-Plane seran considerados   aeropueros añadidos , lo que aumentará su clasificación en una estrella.
+Todos los aeropuertos que no se localicen en el directorio por defecto `Scenary` de FSX/P3D, o los que se encuentren en  `Custom Scenary` de X-Plane serán considerados   aeropuertos añadidos , lo que aumentará su clasificación en una estrella.
 
 Los aeropuertos de `Custom Scenery/Global Airports/Earth nav data/apt.dat` en X-Plane son 3D , lo que aumenta su clasificación en una estrella.  
 
 
 ### Actualización de Datos de Navegación  {#navdata-updates}
 
-_Little Navmap_  viene con una base de datos de Navigraph , que incluye espacios aereos , SIDs , STARs y más, lista para su uso. La base de datos puede actualizarse usando el _FMS Data Manager_ de Navigraph.  
+_Little Navmap_  viene con una base de datos de Navigraph , que incluye espacios aéreos , SIDs , STARs y más, lista para su uso. La base de datos puede actualizarse usando el _FMS Data Manager_ de Navigraph.  
 
 Vea el capítulo [Bases de Datos de Navegación ](NAVDATA.md) para más información. 
 
@@ -164,7 +174,7 @@ Vea el capítulo [Bases de Datos de Navegación ](NAVDATA.md) para más informac
 
 #### X-Plane
 
-*Little Navmap* usará cualquier actualizacion de datos de navegación que esté en el directorio `Custom Data`. No se usará cualquier actualización antigua del directorio GPS.
+*Little Navmap* usará cualquier actualización de datos de navegación que esté en el directorio `Custom Data`. No se usará cualquier actualización antigua del directorio GPS.
 
 Si se encuentran datos definidos por el usuario en los archivos `user_fix.dat` y `user_nav.dat` , se leen e incorporan a la base de datos.   
 
@@ -182,4 +192,4 @@ Vea actualizaciones disponibles para este archivo en:  [_FSX/P3D Navaids update_
 
 #### X-Plane
 
-Los valores de declinacion de X-Plane \(aeropuertos y todas las radioayudas excepto VORs\) se calculan a partir del archivo `magdec.bgl` con valores de declinacion de comienzos de 2017. 
+Los valores de declinación de X-Plane \(aeropuertos y todas las radioayudas excepto VORs\) se calculan a partir del archivo `magdec.bgl` con valores de declinación de comienzos de 2017. 
