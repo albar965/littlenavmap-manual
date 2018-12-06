@@ -10,6 +10,7 @@ Alternatively use the keyboard to move around the map:
 
 * Cursor keys: Scroll the map
 * `+` and `-`: Zoom in and out
+* `*` and `/`: Zoom in and out in small steps
 * `Alt+Left` and `Alt+Right`: Go forward or backward in the map position history
 * `Ctrl++` and `Ctrl+-`: Increase or decrease details
 * `Ctrl+Home`: Go to home postion

@@ -123,15 +123,20 @@ See [below](#garmin-notes) for information on known problems when exporting flig
 
 _Little Navmap_ considers the `GTNSIMDATA` environment variable if set. See the GTN manual for more information.
 
+#### Garmin GTN Trainer later than 6.41
+
+The default directory to save the flight plans for the GTN units is
+`C:\ProgramData\Garmin\Trainers\Databases\FPLN`
+for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+
 #### Garmin GTN Trainer 6.41
 
 The default directory to save the flight plans for the GTN units is
-`C:\ProgramData\Garmin\Trainers\GTN\FPLN`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+`C:\ProgramData\Garmin\Trainers\GTN\FPLN` for all simulators. You have to create this directory manually and then navigate to it in the file dialog when saving. _Little Navmap_ will remember the selected directory.
 
 #### Garmin GTN Trainer 6.21
 
-If you're using the trainer version 6.21 then the default path is `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. You have to create this directory manually and then navigate to it in the file dialog when saving. _Little Navmap_ will remember the selected directory.
+If you're using the trainer version 6.21 then the default path is `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. You have to create this directory manually.
 
 ### GFP \(Flight1 Garmin GTN\) {#flight-plan-formats-gfp}
 

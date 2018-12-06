@@ -23,6 +23,21 @@ A click in the map on the active spot of a feature like a range ring removes it.
 | `Wheel` | Zoom in or out. |
 | `Shift+Wheel` | Zoom in or out in small steps. |
 
+### Key Commands {#key-commands}
+
+You have to activate the map window (i.e. click into it) before you can use the keyboard shortcuts.
+
+| Key| Description |
+| --- | --- |
+| Cursor keys | Scroll the map. |
+| `+` and `-` | Zoom in and out. |
+| `*` and `/` | Zoom in and out in small steps. |
+| `Alt+Left` and `Alt+Right` | Go forward or backward in the map position history. |
+| `Ctrl++` and `Ctrl+-` | Increase or decrease details. |
+| `Ctrl+Home` | Go to home postion. |
+| `Ctrl+End` | Go to center for distance search. |
+
+
 ### Map Marks {#map-marks}
 
 | Symbol | Description |
