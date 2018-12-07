@@ -139,8 +139,8 @@ See chapter [Procedures](APPROACHES.md) for more detailed information on all the
 | ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, approach or transition leg in preview with distance, direction and magnetic course at each leg. |
 | ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) | SID, STAR, approach or transition leg which is part of the flight plan. |
 | ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Missed approach leg in preview. |
-|  ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
-|  ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Dotted line indicates circle-to-land or straight-in part of a procedure leading to a runway end. |
+| ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
+| ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Dotted line indicates circle-to-land or straight-in part of a procedure leading to a runway end. |
 | ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
 | ![Procedure FAF](../images/legend/proc_faf.png) | The Maltese cross highlights the final approach fix or the final approach course fix. |
@@ -173,7 +173,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 | ![Parking](../images/legend/parking_mil.png) | Military combat parking or cargo ramp. |
 | ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipads. Red text indicates medical helipad. Color indicates surface.  |
 
-### Elevation Profile Legend {#elevation-profile-legend}
+### Elevation Profile {#elevation-profile-legend}
 
 The colors and symbols of the elevation profile follow the style of the main map as set in the options dialog on tab `Map Display`. Colors, patterns and symbols for airports, navaids, procedures, active and passed flight plan legs are the same. The profile display also follows other map settings like visibility of flight plan line, aircraft and aircraft trail.
 
