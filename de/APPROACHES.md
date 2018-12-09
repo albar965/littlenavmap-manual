@@ -1,4 +1,4 @@
-﻿## Prozeduren {#procedures}
+## Prozeduren {#procedures}
 
 
 ### Allgemeines {#procedures-general}
@@ -161,8 +161,9 @@ Einschränkungen werden auf der Karte und in der Flugplantabelle angezeigt.
 
 * **Nur Nummer:** Fliegen Sie in einer bestimmten Flughöhe oder Geschwindigkeit. Kartenbeispiele: `5400ft` oder `210kts`.
 * **Prefix** `A`: Fliegen Sie in einer Flughöhe oder mit einer Geschwindigkeit oder darüber. Kartenbeispiel: `A1800ft` oder `A200kts`.
-* **Prefix** `B`:Fliegen Sie in einer Flughöhe oder mit einer Geschwindigkeit oder darunter.Kartenbeispiel: `B10000ft` oder `B240kts`.
-* **Reichweite:** Fliegen Sie auf oder über der ersten Flughöhe und auf oder unter der zweiten Flughöhe. Kartenbeispiel: `A8000B10000ft`. Das Gleiche gilt für die Geschwindigkeit.
+* **Prefix** `B`: Fliegen Sie in einer Flughöhe oder mit einer Geschwindigkeit oder darunter.Kartenbeispiel: `B10000ft` oder `B240kts`.
+* **Bereich:** Fliegen Sie auf oder über der ersten Flughöhe und auf oder unter der zweiten Flughöhe. Kartenbeispiel: `A8000B10000ft`. Das Gleiche gilt für die Geschwindigkeit.
+* **Prefix** `GS`: Keine Höhenrestriktion an sondern ein Indikator für den ILS-Gleitpfad. Kann `auf` oder `auf oder höher` anzeigen.
 
 ### Verwandte Navaids {#procedures-related}
 

@@ -144,6 +144,7 @@ See chapter [Procedures](APPROACHES.md) for more detailed information on all the
 | ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
 | ![Procedure FAF](../images/legend/proc_faf.png) | The Maltese cross highlights the final approach fix or the final approach course fix. |
+| ![Procedure GS](../images/legend/proc_ils.png) | Prefix `GS` is not an altitude restriction but an indicator for the ILS glideslope altitude. Can mean `at` or `at or above`. |
 | ![Procedure Manual](../images/legend/proclegmanual.png) | Fly a heading, track or a hold until manually terminated by ATC. |
 | ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Intercept the next approach leg at a course of about 45 degrees. |
 | ![Procedure Altitude](../images/legend/procinterceptalt.png) | Procedure leg that is terminated when reaching the given altitude. |

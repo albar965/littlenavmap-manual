@@ -147,6 +147,7 @@ Restrictions are shown on the map and in the flight plan table.
 * **Prefix** `A`: Fly at or above altitude or speed. Map example: `A1800ft`  or `A200kts`.
 * **Prefix** `B`: Fly at or below altitude or speed. Map example: `B10000ft`  or `B240kts`.
 * **Range:** Fly at or above the first altitude and at or below the second altitude. Map example: `A8000B10000ft`. Same for speed.
+* **Prefix** `GS`: Not an altitude restriction but an indicator for the ILS glideslope altitude. Can mean `at` or `at or above`.
 
 ### Related Navaids {#procedures-related}
 

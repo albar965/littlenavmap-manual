@@ -137,6 +137,7 @@ Siehe Kapitel [Prozeduren](APPROACHES.md) für detailliertere Informationen übe
 | ![Procedure Point](../images/legend/proc_point.png) | Der grau-gelb gefüllte Kreis kennzeichnet einen Prozedurpunkt, der keine Navigationshilfe ist, sondern durch Kurs bzw. Entfernung von einer Navigationshilfe, einer Höhenbeschränkung oder einer manuellen Beendigung definiert ist. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | Ein schwarzer Kreis zeigt einen Wegpunkt an der zwangsweise überflogen werden muss. Dies kann ein Prozedurpunkt oder eine Navigationshilfe sein. |
 | ![Procedure FAF](../images/legend/proc_faf.png) | Das Malteserkreuz markiert den Endanflug oder den Punkt für den finalen Endanflugkurs. |
+| ![Procedure GS](../images/legend/proc_ils.png) | Das Prefix `GS` zeigt keine Höhenrestriktion an sondern ist ein Indikator für den ILS-Gleitpfad. Kann `auf` oder `auf oder höher` anzeigen. |
 | ![Procedure Manual](../images/legend/proclegmanual.png) | Fliegen Sie einen Kurs, eine Spur oder eine Warteschleife, bis er manuell von ATC beendet wird. |
 | ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Den nächsten Abschnitt bei einem Kurs von etwa 45 Grad abfangen. |
 | ![Procedure Altitude](../images/legend/procinterceptalt.png) | Prozedurabschnitt, der bei Erreichen der vorgegebenen Höhe beendet wird. |
