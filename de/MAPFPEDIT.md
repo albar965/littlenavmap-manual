@@ -1,4 +1,4 @@
-## Menue Flugplan bearbeiten {#map-flight-plan-editing}
+## Menü Flugplan bearbeiten {#map-flight-plan-editing}
 
 Diese Funktion ist durch Ziehen und Ablegen des Flugplans standardmäßig aktiviert. Sie kann über die Symbolleiste oder über das  `Hauptmenu` -> `Flugplan` -> `Flugplan auf der Karte Bearbeiten` geschaltet werden.
 
@@ -6,7 +6,7 @@ Sie können die Tastatur, das Mausrad oder die Karten-Overlays verwenden, um bei
 
 Beachten Sie, dass die Drag & Drop-Bearbeitung des Flugplans auf der Annahme basiert, dass bereits eine direkte Verbindung zwischen Abflug und Ziel besteht.
 
-Always select departure and destination first if you would like to build you flight plan manually. This will connect both points with a great circle line. Based on this line you can start to add navaids to your flight plan.
+Wählen Sie immer Abflug und Ziel, wenn Sie Ihren Flugplan manuell erstellen möchten. Dieses verbindet beide Punkte mit einer großen Kreislinie. Basierend auf dieser Linie können dann Ihrem Flugplan Navigationshilfen hinzuzufügen.
 
 Beachten Sie, dass die Auswahl von Airways nicht möglich ist.
 

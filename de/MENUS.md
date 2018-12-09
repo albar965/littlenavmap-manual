@@ -1,1066 +1,1067 @@
-## Menus and Toolbars {#menus-and-toolbars}
+## Menüs und Symbolleisten {#menus-and-toolbars}
 
-This chapter describes all the menu items of _Little Navmap_. You will find most of this functionality on the toolbars as well which are not be described separately. Key combinations can be seen on the menu items and are not listed in this manual.
+In diesem Kapitel werden alle Menüelemente von _Little Navmap_ beschrieben. Die meisten dieser Funktionen finden Sie auch in den Symbolleisten, die nicht separat beschrieben werden. Tastenkombinationen sind in den Menüpunkten zu sehen und nicht in diesem Handbuch aufgeführt.
 
 ![Little Navmap Menu and Toolbars](../images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
 
-_**Picture above:** Menu and toolbars docked in default positions._
+_**Bild oben:**  Menü und Symbolleisten in Standardpositionen angedockt._
 
-### File Menu {#file-menu}
+### Menü Datei {#file-menu}
 
-#### ![New Flight Plan](../images/icons/filenew.png "New Flight Plan") New Flight Plan {#new-flight-plan}
+#### ![New Flight Plan](../images/icons/filenew.png "New Flight Plan") Neuer Flugplan {#new-flight-plan}
 
-Erases the current flight plan.
+Löscht den aktuellen Flugplan.
 
-You have to use the [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu),  the [Map Context Menu](MAPDISPLAY.md#map-context-menu) or the [Flight Plan Route Description](ROUTEDESCR.md) dialog to create a flight plan.
+Sie müssen den Dialog [Suchergebnisabelle Sicht Kontextmenue](SEARCH.md#search-result-table-view-context-menu),  [Anzeige Kontext Menü](MAPDISPLAY.md#map-context-menu) oder [Flugplan Routenbeschreibung](ROUTEDESCR.md) verwenden, um einen Flugplan zu erstellen
 
-#### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Open Flight Plan {#open-flight-plan}
+#### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Flugplan öffnen {#open-flight-plan}
 
-Opens an FSX PLN, an FS9 PLN, an FSC PLN, an X-Plane FMS or an FLP flight plan file. The type of file is determined by content and not file extension. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
+Öffnet eine FSX PLN, eine FS9 PLN, eine FSC PLN, eine X-Plane FMS oder eine FLP Flugplandatei. Der Dateityp wird bestimmt durch den Inhalt, nicht durch die Erweiterung. Siehe für weitere Informationen [Flugplanformate](FLIGHTPLANFMT.md).
 
-An opened flight plan file will be reloaded on start up \(reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab\).
+Eine geöffnete Flugplandatei wird beim Start neu geladen  \(Nachladen und Zentrieren kann ausgeschaltet werden im `Einstellungen` Dialog auf der Registerkarte `Start` und `Nutzerschnittstelle`\).
 
-Procedure information and ground speed will be added to the flight plan if a PLN file is saved by _Little Navmap_. The additional information will be ignored by FSX or P3D but allows to reload all information by _Little Navmap_.
+Prozeduren Informationen und die Taxigeschwindigkeit werden dem Flugplan hinzugefügt, wenn die PLN-Datei file von _Little Navmap_ gespeichert wird. Die zusätzlichen Informationen werden von FSX oder P3D ignoriert, können aber von _Little Navmap_ neu geladen werden.
 
-You can also **drag and drop files from a file manager** like Windows Explorer or macOS Finder into the _Little Navmap_ main window to load them.
-Single flight plans and all allowed formats for loading \(`FMS`, `FLP`, `PLN`\) as well as aircraft performance files \(`lnmperf`\) are accepted.
+Man kann auch **per Drag & Drop Dateien aus einem Dateimanager heraus**, wie beim Windows Explorer oder macOS Finder, in das _Little Navmap_ Hauptfenster ziehen, um sie zu laden.
 
-#### ![Append flight plan](../images/icons/fileappend.png "Append flight plan") Append Flight Plan {#append-flight-plan}
+Es werden Einzelflugpläne und alle zulässigen Formate zum Laden von \(`FMS`, `FLP`, `PLN`\) sowie Flugzeugleistungsdateien \(`lnmperf`\) akzeptiert.
 
-Adds departure, destination and all waypoints to the current flight plan.
 
-Using `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. All waypoints are added at the end of the current flight plan. Then you can use the `Delete selected Legs` and `Move selected Legs up/down` context menu items to arrange the waypoints and airports as required. See [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
+#### ![Append flight plan](../images/icons/fileappend.png "Append flight plan") Flugplan anhängen {#append-flight-plan}
 
-All arrival procedures will be removed when appending a flight plan.
+Fügt Abflug, Ziel und alle Wegpunkte dem aktuellen Flugplan hinzu.
 
-The appended legs are selected after loading the flight plan.
+Mit `Flugplan anhängen` können Sie komplette Flugpläne oder Flugplan-Teile in einen neuen Plan laden oder zusammenführen. Alle Wegpunkte werden am Ende des aktuellen Flugplans hinzugefügt. Sie können danach mit den  Auswahlfeldern `Lösche ausgewählten Abschnitt` und `Ausgewählte Flugplanabschntte nach oben/unten verschieben` die Waypoints und Flugplätze wunschgemäß anordnen. Siehe auch [Kextmenue im Flugplanfenster](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
 
-#### Recent Flight Plan {#recent-flight-plan}
+Alle Ankunftsprozeduren werden entfernt, wenn eine Flugplans angehängt wird.
 
-Shows all recently loaded flight plans for quick access. You can clear the list by selecting  `Clear Menu`.
+Die angehängten Strecken werden nach dem Laden des Flugplans ausgewählt.
 
-#### ![Save Flight Plan](../images/icons/filesave.png "Save Flight Plan") Save Flight Plan {#save-flight-plan}
+#### Neuester Flugplan {#recent-flight-plan}
 
-#### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Save Flight Plan as PLN {#save-flight-plan-as}
+Zeigt alle zuletzt geladenen Flugpläne für den schnellen Zugriff an. Sie können die Liste löschen, indem Sie `Menü löschen` wählen.
 
-Saves the flight plan to an FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*.
 
-`Save Flight Plan as PLN` changes the current file type and name in *Little Navmap* which means that all further saves will go into the new PLN file.
+#### ![Save Flight Plan](../images/icons/filesave.png "Save Flight Plan") Flugplan speichern {#save-flight-plan}
 
-It is recommended to save all flight plans in this format to keep all information of a plan. Even when using the limited FMS format for X-Plane. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
+#### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Flugplan als PLN speichern {#save-flight-plan-as}
 
-_Little Navmap_ will allow flight plans to be created that may be useful as a flight plan snippet but are unusable by the flight simulator. This occurs if a flight plan does not have a departure or destination airport. A warning dialog will be shown when saving a incomplete flight plan.
+Speichert den Flugplan als FSX/P3D PLN- Datei \(XML Format\). Dieses mit Anmerkungen versehene Format ermöglicht das Speichern aller Flugplanattribute von  *Little Navmap*.
 
-A warning dialog will also be shown if the departure airport has parking positions but none is assigned in the flight plan.
+`Flugplan als PLN speichern` ändert den aktuellen Dateityp und speichert in  *Little Navmap*, was bedeutet, dass alle früheren Speicherungen in die neue PLN-Datei übernommen werden.
 
-Procedures will be saved as an annotation in the flight plan file if the flight plan contains any. This causes no problem for the simulators and most other programs. Use [Export clean Flight Plan](MENUS.md#export-clean-flight-plan) if a program has problems reading the PLN files saved by _Little Navmap_.
+Es wird empfohlen, alle Flugpläne in diesem Format zu speichern, um alle Informationen eines Plans zu behalten. Auch bei Verwendung des eingeschränkten FMS- Formats für X-Plane. Siehe auch [Flugplanformate](FLIGHTPLANFMT.md) für weitere Informationen.
 
-Note that the waypoints of a procedure are not saved with the flight plan. This is not supported by FSX or P3D. Use the GPS, FMC or other ways to select a procedure in your aircraft.
+_Little Navmap_ ermöglicht die Erstellung von Flugplänen, die als Flugplanausschnitt nützlich sein können, aber vom Flugsimulator nicht nutzbar sind. Dieses tritt auf, wenn ein Flugplan keinen Abflug- oder Zielflughafen hat. Beim Speichern eines unvollständigen Flugplans wird ein Warndialogfeld angezeigt.
 
-The set ground speed is also saved with the flight plan.
+Ein Warndialog wird auch angezeigt, wenn der Abflughafen über Parkpositionen verfügt, aber im Flugplan keine zugeordnet ist..
 
-**Note that P3D v4.2 overwrites the flight plan when loading, which erases all annotations. Save a copy of the plan to another location if you like to keep all information about procedures or speed.**
+Prozeduren werden als Anmerkung in der Flugplandatei gespeichert, wenn der Flugplan welche enthält. Dies stellt für die Simulatoren und die meisten anderen Programme kein Problem dar. Benutze [Export clean Flight Plan](MENUS.md#export-clean-flight-plan), wenn ein Programm Probleme beim Lesen der PLN-Dateien hat, die von _Little Navmap_ gespeichert wurden.
 
-#### ![Save Flight Plan as X-Plane FMS 11](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS 11") Save Flight Plan as X-Plane FMS 11 {#save-flight-plan-as-fms11}
+Beachten Sie, dass die Wegpunkte einer Prozedur nicht mit dem Flugplan gespeichert werden. Dies wird vom FSX oder P3D nicht unterstützt. Verwenden Sie das GPS, FMC oder andere Möglichkeiten, um ein Verfahren in Ihrem Flugzeug auszuwählen..
 
-Saves the flight plan using the new X-Plane FMS 11 format. **This format can only be used in X-Plane 11.10 and above. Do not try to load it into the FMS or GPS of X-Plane 11.05. It might crash the simulator.**
+Die eingestellte Bodengeschwindigkeit wird auch im Flugplan gespeichert.
 
-A warning dialog will be shown with the warning above when saving.
+**Beachten Sie, dass P3D v4.2 beim Laden den Flugplan überschreibt, wodurch alle Anmerkungen gelöscht werden. Speichern Sie eine Kopie des Plans an einem anderen Ort, wenn Sie alle Informationen über Abläufe oder Geschwindigkeit behalten möchten..**
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+#### ![Save Flight Plan as X-Plane FMS 11](../images/icons/saveasfms.png "Save Flight Plan as X-Plane FMS 11")  Flugplan speichern als X-Plane FMS 11 {#save-flight-plan-as-fms11}
 
-This function changes the current file type and name which means that all further saves will go into the new FMS file and the file will be reloaded on next start.
+Speichert den Flugplan im neuen X-Plane FMS 11 Format. **Dieses Format kann nur in X-Plane 11.10 und höher verwendet werden. Versuchen Sie nicht, es in das FMS oder GPS von X-Plane 11.05 zu laden. Es könnte den Simulator zum Absturz bringen.**
 
-Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS, the G1000 or the FMS.
+Beim Speichern wird ein Warndialog mit der obigen Warnung angezeigt.
 
-#### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
+Für weitere Informationen zu Einschränkungen siehe [Flight Plan Formats](FLIGHTPLANFMT.md).
 
-Exports the current flight plan as an FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan.
+Diese Funktion ändert den aktuellen Dateityp und den Namen. Dies bedeutet, dass alle weiteren Sicherungsvorgänge in der neuen FMS-Datei gespeichert werden und die Datei beim nächsten Start erneut geladen wird.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+Speichern Sie FMS-Dateien im `Output/FMS plans` Verzeichnis von X-Plane, wenn Sie den Flugplan im X-Plane-GPS, im G1000 oder im FMS verwenden möchten.
 
-This function changes the current file type and name which means that all further saves will go into the new FLP file and the file will be reloaded on next start.
+#### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Flugplan als FLP speichern {#save-flight-plan-as-flp}
 
-Store FLP files into the `Output/FMS plans` directory inside the X-Plane directory if you want to load it into the FMS.
+Exportiert den aktuellen Flugplan als FLP-Datei, die von X-Plane FMS, Aerosoft Airbus und anderen Zusatzflugzeugen verwendet werden kann. Dieses Format ist begrenzt, sodass ein Dialogfeld angezeigt wird, wenn im aktuellen Flugplan nicht unterstützte Funktionen erkannt werden.
 
-#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Export as Clean PLN {#export-clean-flight-plan}
+Für weitere Informationen zu Einschränkungen siehe [Formate Flugplan](FLIGHTPLANFMT.md).
 
-Saves a flight plan without any procedure or speed annotations if programs have problems reading the PLN files saved by _Little Navmap_. This is rarely needed.
+Diese Funktion ändert den aktuellen Dateityp und den Namen. Dies bedeutet, dass alle weiteren Sicherungsvorgänge in der neuen FLP-Datei gespeichert werden und die Datei beim nächsten Start erneut geladen wird.
 
-Like any other export function this does not change the current file name and type. Further saves will still use the same file name and format as before.
+Speichern Sie FLP-Dateien im `Output/FMS plans` Verzeichnis von X-Plane, wenn Sie es in das FMS laden möchten.
 
-See also [Flight Plan Formats](FLIGHTPLANFMT.md).
+#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Als reines PLN exportieren {#export-clean-flight-plan}
 
-#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Export Flight Plan as X-Plane FMS 3 {#export-flight-plan-as-fms3}
+Speichert einen Flugplan ohne Prozedur- oder Geschwindigkeitsangaben, wenn Programme Probleme beim Lesen der mit  _Little Navmap_ gespeicherten PLN-Dateien haben. Das ist selten nötig.
 
-Saves the flight plan using the older X-Plane FMS 3 format which is limited but can be loaded by X-Plane 10 and X-Plane 11.05. A warning dialog is shown if any unsupported features are detected in the current flight plan.
+Wie bei jeder anderen Exportfunktion ändert dies nicht den aktuellen Dateinamen und -typ. Weitere Sicherungen verwenden denselben Dateinamen und dasselbe Format wie zuvor.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+Siehe auch [Flight Plan Formats](FLIGHTPLANFMT.md).
 
-This export function this does not change the current file name and type. Further saves will still use the same file name and format as before.
+#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Flugplan als X-Plane FMS 3 exportieren {#export-flight-plan-as-fms3}
 
-Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS or FMS.
+Speichert den Flugplan im älteren X-Plane FMS 3-Format, das begrenzt ist, aber von X-Plane 10 und X-Plane 11.05 geladen werden kann. Ein Warndialogfeld wird angezeigt, wenn im aktuellen Flugplan nicht unterstützte Funktionen erkannt werden.
 
-#### Export Flight Plan to other Formats (Sub-Menu) {#export-submenu}
+Für weitere Informationen zu Einschränkungen siehe [Flight Plan Formats](FLIGHTPLANFMT.md) .
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
+Diese Exportfunktion ändert den aktuellen Dateinamen und -typ nicht. Weitere Sicherungen verwenden denselben Dateinamen und dasselbe Format wie zuvor.
 
-Export functions do not change the current file name and type. Further saves will still use the same file name and format as before.
+Speichern Sie FMS-Dateien im `Output/FMS plans` Verzeichnis von X-Plane, wenn Sie den Flugplan im X-Plane GPS oder FMS nutzen möchten
 
-##### Export Flight Plan as Garmin GTN GFP {#save-flight-plan-as-gfp}
+#### Flugplan in andere Formate exportieren (Sub-Menu) {#export-submenu}
 
-Exports the flight plan in GFP format used by the _Flight1 GTN 650/750_.
+Für detailliertere Informationen zu den verfügbaren Exportformaten siehe [Flight Plan Formats](FLIGHTPLANFMT.md).
 
-Procedures are not included in the exported file.
+Exportfunktionen ändern nicht den aktuellen Dateinamen und -typ. Weitere Sicherungen verwenden denselben Dateinamen und dasselbe Format wie zuvor.
 
-See [Flight Plan Formats](FLIGHTPLANFMT.md#flight-plan-formats-gfp) for more information about this export format and how to work around locked waypoints.
+##### Flugplan als Garmin GTN GFP exportieren {#save-flight-plan-as-gfp}
 
-##### Export Flight Plan as GFP for Reality XP GTN {#save-flight-plan-as-rxpgtn}
+Exportiert den Flugplan im GFP-Format, das von _Flight1 GTN 650/750_  verwendet wird.
 
-Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_. This format allows to save procedures and airways.
+Prozeduren sind nicht in der exportierten Datei enthalten.
 
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes) for information about paths and other remarks.
+Weitere Informationen zu diesem Exportformat und zum Umgang mit gesperrten Wegpunkten sieh [Flight Plan Formats](FLIGHTPLANFMT.md#flight-plan-formats-gfp).
 
-##### Export Flight Plan to FPL for the Reality XP GNS {#save-flight-plan-as-rxpgns}
+##### Flugplan als FPL für den Reality XP GTN speichern {#save-flight-plan-as-rxpgtn}
 
-Save flight plan as FPL file usable by the _Reality XP GNS 530W/430W V2_.
+Speichern Sie den Flugplan als GFP-Datei, die von  _Reality XP GTN 750/650 Touch_ verwendet werden kann. Dieses Format ermöglicht das Speichern von Prozeduren und Airways.
 
-Procedures or their respective waypoints are not included in the exported file.
+Informationen zu Pfaden und anderen Hinweisen siehe auch [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
 
-The default directory to save the flight plans for the GNS units is
+##### Flugplan als FLP für den Reality XP GNS speichern {#save-flight-plan-as-rxpgns}
+
+Speichert den Flugplan als FPL-Datei, die von _Reality XP GNS 530W/430W V2_ benutzt wird.
+
+Prozeduren oder ihre jeweiligen Wegpunkte sind nicht in der exportierten Datei enthalten.
+
+Das Standardverzeichnis zum Speichern der Flugpläne für die GNS-Einheiten lautet für alle Simulatoren
 `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+Das Verzeichnis wird automatisch von _Little Navmap_ beim ersten Export erstellt, wenn es noch nicht existiert.
 
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
+Siehe auch [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
 
-##### Export Flight Plan as PMDG RTE {#export-flight-plan-as-rte}
+##### Flugplan als  PMDG RTE exportieren {#export-flight-plan-as-rte}
 
-Exports the current flight plan as a PMDG RTE file.
+Exportiert den aktuellen Plan als PMDG RTE Datei.
 
-Procedures or their respective waypoints are not included in the exported file.
+Prozeduren oder ihre jeweiligen Wegpunkte sind nicht in der exportierten Datei enthalten.
 
-##### Export Flight Plan as TXT {#export-flight-plan-as-txt}
+##### Flugplan als TXT exportieren {#export-flight-plan-as-txt}
 
-Exports the current flight plan as a TXT file usable by JARDesign or Rotate Simulations aircraft
+Exportiert den aktuellen Flugplan als TXT-Datei, die von  JARDesign oder Rotate Simulations Flugzeugen verwendet werden kann.
 
-Neither procedures nor their respective waypoints are included in the exported file.
+Weder Prozeduren noch ihre jeweiligen Wegpunkte sind in der exportierten Datei enthalten.
 
-##### Export Flight Plan as Majestic Dash FPR {#export-flight-plan-as-fpr}
+##### Exportiere Flugplan als Majestic Dash FPR {#export-flight-plan-as-fpr}
 
-Exports the current flight plan for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints.
+Exportiert den aktuellen Flugplan für die Majestic Software MJC8 Q400. Beachten Sie, dass der Export derzeit auf eine Liste von Wegpunkten beschränkt ist.
 
-The flight plan has to be saved to `FSXP3D\SimObjects\Airplanes\mjc8q400\nav\routes`.
+Der Flugplan muss in `FSXP3D\SimObjects\Airplanes\mjc8q400\nav\routes` gespeichert werden.
 
-##### Export Flight Plan as IXEG FPL {#export-flight-plan-as-fpl}
+##### Exportiere Flugplan als IXEG FPL {#export-flight-plan-as-fpl}
 
-Exports the current flight plan as an FPL file usable by the IXEG Boeing 737 classic.
+Exportiert den aktuellen Flugplan als FPL-Datei, die von der IXEG Boeing 737 classic verwendet werden kann.
 
-SIDs, STARs or approach procedures are not exported.
+SIDs, STARs oder Anflugverfahren werden nicht exportiert.
 
-The file should be saved to `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroutes`. You might have to create the directory manually if it does not exist.
+Die Datei sollte in `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroutes` gespeichert werden. Möglicherweise müssen Sie das Verzeichnis manuell erstellen, wenn es nicht vorhanden ist.
 
-##### Export Flight Plan to corte.in for Flight Factor Airbus {#export-flight-plan-as-fpl}
+##### Exportiere Flugplan als corte.in für Flight Factor Airbus {#export-flight-plan-as-fpl}
 
-Appends the the flight plan to a new or already present `corte.in` company routes file for the Flight Factor Airbus aircraft.
+Hängt den Flugplan an eine neue oder bereits vorhandene `corte.in` company Routen Datei für das Flight Factor Airbus-Flugzeug.
 
-The file will be automatically created if it does not exist. Otherwise the flight plan will be appended to the file. You have to remove the flight plan manually from the `corte.in` file with a simple text editor if you wish to get rid of it.
+Die Datei wird automatisch erstellt, wenn sie nicht vorhanden ist. Andernfalls wird der Flugplan an die Datei angehängt. Wenn Sie ihn loswerden möchten müssen, Sie den Flugplan manuell mit einem einfachen Texteditor aus der `corte.in` Datei entfernen.
 
-Location of the file depends on aircraft type.
+Der Speicherort der Datei hängt vom Flugzeugtyp ab.
 
-##### Export Flight Plan as FLTPLAN for iFly {#export-flight-plan-as-ifly}
+##### Exportiere Flugplan als FLTPLAN für iFly {#export-flight-plan-as-ifly}
 
-Save flight plan as FLTPLAN file for the iFly 737NG. The format does not allow saving of procedures.
+Speichern Sie den Flugplan als FLTPLAN-Datei für den iFly 737NG. Das Format erlaubt keine Speicherung von Prozeduren.
 
-Save the file to `FSXP3D\iFly\737NG\navdata\FLTPLAN`.
+Speichern Sie die Datei in `FSXP3D\iFly\737NG\navdata\FLTPLAN`.
 
-##### Export Flight Plan for ProSim {#export-flight-plan-as-prosim}
+##### Exportiere Flugplan für ProSim {#export-flight-plan-as-prosim}
 
-Appends flight plan to the `companyroutes.xml` file for [ProSim](https://prosim-ar.com) simulators. The format does not allow saving of procedures.
+Hängt den Flugplan an die `companyroutes.xml` Datei für den [ProSim](https://prosim-ar.com) Simulator. Das Format erlaubt keine Speicherung von Prozeduren.
 
-Creates a backup file named `companyroutes.xml_lnm_backup` before modifying the file.
+Bevor die Datei geändert wird, wird eine Sicherungsdatei mit dem Namen `companyroutes.xml_lnm_backup` erstellt.
 
-##### Export Flight Plan as PLN for BBS Airbus {#export-flight-plan-as-bbs}
+##### Exportiere Flugplan als PLN für BBS Airbus {#export-flight-plan-as-bbs}
 
-Save flight plan as PLN file for the Blackbox Simulations Airbus. The format does not allow saving of procedures.
+Speichert den Flugplan als PLN-Datei für den Blackbox Simulator Airbus. Das Format erlaubt keine Speicherung von Prozeduren.
 
-Save the file to `FSXP3D\BlackBox Simulation\Airbus A330` or `FSXP3D\Blackbox Simulation\Company Routes` depending on aircraft.
+Speichert die Datei in Abhängigkeit vom Flugzeug in `FSXP3D\BlackBox Simulation\Airbus A330` oder `FSXP3D\Blackbox Simulation\Company Routes`.
 
-##### Export Flight Plan for UFMC {#export-flight-plan-as-ufmc}
+##### Exportiere Flugplan für UFMC {#export-flight-plan-as-ufmc}
 
-Save flight plan as [UFMC](http://ufmc.eadt.eu) file. The format does not allow saving of procedures.
+Exportiert den Flugplan als [UFMC](http://ufmc.eadt.eu) Datei. Das Format erlaubt keine Speicherung von Prozeduren.
 
-Save the flight plan to `XPLANE\Custom Data\UFMC\FlightPlans`.
+Speichern Sie den Flugplan in `XPLANE\Custom Data\UFMC\FlightPlans`.
 
-##### Export Flight Plan for X-FMC {#export-flight-plan-as-xfmc}
+##### Exportiere Flugplan für X-FMC {#export-flight-plan-as-xfmc}
 
-Save flight plan as FPL file usable by [X-FMC](https://www.x-fmc.com). The format does not allow saving of procedures.
+Exportiert den Flugplan als FPL Datei, die von [X-FMC](https://www.x-fmc.com) benutzt wird. Das Format erlaubt keine Speicherung von Prozeduren.
 
-The file should be saved to Path to `XPLANE\Resources\plugins\XFMC\FlightPlans`.
+Die Datei sollte unter Pfad  `XPLANE\Resources\plugins\XFMC\FlightPlans` gespeichert werden.
 
-##### Export Flight Plan as GPX {#export-flight-plan-as-gpx}
+##### Exportiere Flugplan als GPX {#export-flight-plan-as-gpx}
 
-Exports the current flight plan into a GPS Exchange Format file which can be read by Google Earth and most other GIS applications.
+Exportiert den aktuellen Flugplan in eine GPS-Exchange-Formatdatei, die von Google Earth und den meisten anderen GIS-Anwendungen gelesen werden kann.
 
-The flight plan is exported as a route and the flown aircraft trail as a track including simulator time and altitude.
+Der Flugplan wird als Route exportiert und der geflogene Flugzeugpfad wird als Track mit Simulatorzeit und -höhe dargestellt.
 
-The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
+Die Route hat für alle Wegpunkte eine Start- und Zielhöhe sowie eine Reiseflughöhe. Wegpunkte aller Verfahren sind in der exportierten Datei enthalten. Beachten Sie, dass die Wegpunkte nicht alle Teile einer Prozedur wie Holds oder Prozedurwechsel reproduzieren können.
 
-**Do not forget to clear the aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
+**Vergessen Sie nicht, vor dem Flug den Flugzeugpfad zu löschen \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\), um alte Spursegmente in der exportierten GPX-Datei zu vermeiden. Oder deaktivieren Sie das Neuladen des Pfads im Optionsdialog auf der Seite **`Startup`**.**
 
 
-##### Show Flight Plan in SkyVector {#export-flight-plan-as-skyvector}
+##### Flugplan in SkyVector {#export-flight-plan-as-skyvector} anzeigen
 
-Opens the default web browser and shows the current flight plan in [SkyVector](https://skyvector.com). Procedures are not shown.
+Öffnet den Standard-Webbrowser und zeigt den aktuellen Flugplan in [SkyVector](https://skyvector.com) an. Prozeduren werden nicht gezeigt.
 
-Example: [ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C ENBO](https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO). Note missing SID and STAR in SkyVector.
+Beispiel: [ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C ENBO](https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO). Beachten Sie fehlende SID und STAR in SkyVector.
 
-##### Save Waypoints for Approaches {#export-flight-plan-approach-waypoints}
-##### Save Waypoints for SID and STAR {#export-flight-plan-sid-star-waypoints}
+##### Speichere Anflug-Wegpunkte {#export-flight-plan-approach-waypoints}
+##### Speichere Wegpunkte für SID und STAR {#export-flight-plan-sid-star-waypoints}
 
-Save procedure waypoints instead of procedure information if checked. This affects all flight plan export and save formats.
+Speichern Sie Prozedurwegpunkte anstelle von Prozedurinformationen, wenn diese Option aktiviert ist. Dies betrifft alle Export- und Speicherformate von Flugplänen.
 
-Use this if your simulator, GPS or FMC does not support loading or display of approach procedures, SID or STAR.
+Verwenden Sie diese Option, wenn Ihr Simulator, GPS oder FMC das Laden oder Anzeigen von Anflugverfahren, SID oder STAR nicht unterstützt.
 
-Procedure information is replaced with respective waypoints that allow to display procedures in limited GPS or FMS units.
+Prozedurinformationen werden durch entsprechende Wegpunkte ersetzt, die die Anzeige von Prozeduren in begrenzten GPS- oder FMS-Einheiten ermöglichen.
 
-Saving flight plans with this method has several limitations:
+Das Speichern von Flugplänen mit dieser Methode hat mehrere Einschränkungen:
 
-* Several approach leg types like holds, turns and procedure turns cannot be displayed properly by using just waypoints/coordinates.
-* Speed and altitude limitations are not included in the exported legs.
-* The procedure information is dropped from the saved flight plan and cannot be reloaded properly in _Little Navmap_. Thus, you will see the waypoints of a SID or STAR but not the detailed procedure information. You have to delete the added waypoints and re-select the procedures after loading.
+* Mehrere Anfluglegs wie Holding, Turns und Prozedurturns können nicht korrekt angezeigt werden, wenn Sie nur Wegpunkte / Koordinaten verwenden.
+* Geschwindigkeits- und Höhenbeschränkungen sind in den exportierten Legs nicht enthalten.
+* Die Prozedurinformationen werden aus dem gespeicherten Flugplan gelöscht und können nicht ordnungsgemäß in _Little Navmap_ geladen werden. Sie sehen also die Wegpunkte einer SID oder einer STAR, nicht jedoch die detaillierten Verfahrensinformationen. Sie müssen die hinzugefügten Wegpunkte löschen und die Prozeduren nach dem Laden erneut auswählen.
 
-Due to these limitations it is recommended to save a copy of the flight plan with full information before enabling one of these options.
+Aufgrund dieser Einschränkungen wird empfohlen, eine Kopie des Flugplans mit vollständigen Informationen zu speichern, bevor Sie eine dieser Optionen aktivieren.
 
-#### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Add Google Earth KML {#add-google-earth-kml}
+#### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Google Earth KML hinzufügen {#add-google-earth-kml}
 
-Allows addition of one or more Google Earth KML or KMZ files to the map display. All added KML or KMZ files will be reloaded on start up. Reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab.
+Ermöglicht das Hinzufügen einer oder mehrerer Google Earth KML- oder KMZ-Dateien zur Kartendarstellung. Alle hinzugefügten KML- oder KMZ-Dateien werden beim Start neu geladen. Nachladen und Zentrieren kann im `Einstellungen` Menue via `Start` und `Nutzerschnittstelle`-TAB ausgeschaltet werden.
 
-Due to the variety of KML files it is not guaranteed that all files will show up properly on the map.
+Aufgrund der Vielzahl der KML-Dateien kann nicht garantiert werden, dass alle Dateien ordnungsgemäß auf der Karte angezeigt werden.
 
-#### ![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map") Clear Google Earth KML from Map {#clear-google-earth-kml-from-map}
+#### ![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map") Google Earth KML auf der Karte löschen {#clear-google-earth-kml-from-map}
 
-Removes all loaded KML files from the map.
+Löscht alle geladenen KML Dazeien von der Karte.
 
-#### ![Offline](../images/icons/offline.png "Offline") Work Offline {#work-offline}
+#### ![Offline](../images/icons/offline.png "Offline") Offline arbeiten {#work-offline}
 
-Stops loading of map data from the Internet. This affects the _OpenStreetMap_, _OpenTopoMap_ and all the other online map themes as well as the elevation data.
-A red `Offline.` indication is shown in the status bar if this mode is enabled.
+Beendet das Laden von Kartendaten aus dem Internet. Dies betrifft die _OpenStreetMap_, _OpenTopoMap_ und alle anderen Online-Map-Designs sowie die Höhendaten.
+Eine rote `Offline.` Anzeige wird angezeigt, wenn dieser Modus aktiviert ist.
 
-You should restart the application after going online again.
+Sie sollten die Anwendung neu starten, nachdem Sie wieder online gegangen sind.
 
-### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Save Map as Image {#save-map-as-image}
+### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Karte als Bild speichern {#save-map-as-image}
 
-Saves the current map view as an image file. Allowed formats are JPEG, PNG and BMP.
+Speichert die aktuelle Kartenansicht als Bilddatei. Zulässige Formate sind JPEG, PNG und BMP.
 
-### ![Print Map](../images/icons/printmap.png "Print Map") Print Map {#print-map}
+### ![Print Map](../images/icons/printmap.png "Print Map") Karte drucken {#print-map}
 
-Allows to print the current map view. See [Printing the Map](PRINT.md#printing-the-map) for more information.
+Ermöglicht das Drucken der aktuellen Kartenansicht. Für weitere Informationen siehe [Printing the Map](PRINT.md#printing-the-map).
 
-### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan {#print-flight-plan}
+### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Flugplan drucken {#print-flight-plan}
 
-Opens a print dialog that allows you to select flight plan related information to be printed. See [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan) for more information.
+Öffnet ein Druckdialogfeld, in dem Sie flugplanbezogene Informationen zum Drucken auswählen können. Für weitere Informationen siehe [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan).
 
-### ![Quit](../images/icons/application-exit.png "Quit") Quit {#file-quit}
+### ![Quit](../images/icons/application-exit.png "Quit") Beenden {#file-quit}
 
-Exits the application. Will ask for confirmation if there is a changed flight plan.
+Beendet die Anwendung. Wird bei einem geänderten Flugplan um Bestätigung gebeten.
 
-### Flight Plan Menu {#flight-plan-menu}
+### Menü Flugplan {#flight-plan-menu}
 
-#### ![Undo](../images/icons/undo.png "Undo")![Redo](../images/icons/redo.png "Redo") Undo/Redo {#undo-redo}
+#### ![Undo](../images/icons/undo.png "Undo")![Redo](../images/icons/redo.png "Redo") Rückgängig/Wiederholen {#undo-redo}
 
-Allows undo and redo of all flight plan changes.
+Ermöglicht das Rückgängigmachen und Wiederholen aller Flugplanänderungen.
 
-#### ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure") Select a Start Position for Departure {#select-a-start-position-for-departure}
+#### ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure") Startposition für den Abflug wählen {#select-a-start-position-for-departure}
 
-A parking spot \(gate, ramp or fuel box\), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right-clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
+Am Startflughafen kann als Startposition ein Parkplatz \(Gate, Rampe oder Tankplatz\), Landebahn oder Hubschrauberlandeplatz ausgewählt werden. Eine Parkposition kann auch im Kartenkontextmenüelement  [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) wenn Sie mit der rechten Maustaste auf eine Parkposition klicken, ausgewählt werden. Wenn keine Position ausgewählt ist, wird das längste primäre Start- und Landebahnende automatisch als Start ausgewählt.
 
 ![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
-_**Picture above:** The start position selection dialog for EDDN._
+_**Bild oben:** Auswahldialog für Startposition EDDN._
 
-#### ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map") Edit Flight Plan on Map {#edit-flight-plan-on-map}
+#### ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map") Flugplan auf der Karte bearbeiten {#edit-flight-plan-on-map}
 
-Toggles the flight plan drag and drop edit mode on the map. See [Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing).
+Schaltet den Flugplan-Drag-and-Drop-Bearbeitungsmodus auf der Karte um. Siehe auch [Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing).
 
-#### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") New Flight Plan from Route Description {#new-flight-plan-from-description}
+#### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") Neuer Flugplan aus der Routenbeschreibung {#new-flight-plan-from-description}
 
-Opens a dialog with the route description of the current flight plan that also allows to modify the current flight plan or enter a new one.
-[Flight Plan from Route Description](ROUTEDESCR.md) gives more information about this topic.
+Öffnet einen Dialog mit der Routenbeschreibung des aktuellen Flugplans, in dem auch der aktuelle Flugplan geändert oder ein neuer eingegeben werden kann.
+[Flight Plan from Route Description](ROUTEDESCR.md) gibt weitere Informationen zu diesem Thema.
 
-#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copy Flight Plan Route to Clipboard {#flight-plan-route-clipboard}
+#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Flugplan in die Zwischenablage kopieren {#flight-plan-route-clipboard}
 
-Copies the route description of the current flight plan to the clipboard using the settings from the [Flight Plan from Route Description](ROUTEDESCR.md#flight-plan-from-route-description) dialog.
+Kopiert die Routenbeschreibung des aktuellen Flugplans mit den Einstellungen von [Flight Plan from Route Description](ROUTEDESCR.md#flight-plan-from-route-description) in die Zwischenablage.
 
-#### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Calculate Direct {#calculate-direct}
+#### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Direkten Weg berechnen {#calculate-direct}
 
-Deletes all intermediate waypoints and connects departure and destination using a great circle line.
+Löscht alle Zwischenwegpunkte und verbindet Start und Ziel über eine große Kreislinie.
 
-You can calculate a flight plan between any kind of waypoints, even user-defined waypoints \(right-click on the map and select `Add Position to Flight plan` to create one\). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
+Sie können einen Flugplan zwischen beliebigen Wegpunkten, sogar benutzerdefinierten Wegpunkten, berechnen \(Rechtsklick auf der Karte und wählen `Position zum Flugplan hinzufügen`, um einen benutzerdefinierten zu erstellen\). Dies ermöglicht die Erstellung von Snippets, die in Flugpläne eingebunden werden können. Sie können diese Funktion beispielsweise verwenden, um den Nordatlantik mit unterschiedlichen Abfahrten und Zielen zu überqueren. Dies gilt für alle Flugplanberechnungsmodi.
 
-#### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Calculate Radionav {#calculate-radionav}
+#### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Funknavigation berechnen {#calculate-radionav}
 
-Creates a flight plan that uses only VOR and NDB stations as waypoints and tries to ensure reception of at least one station along the whole flight plan. Note that VOR stations are preferred before NDB and DME only stations are avoided if possible. Calculation will fail if not enough radio navaids can be found between departure and destination. Build the flight plan manually if this is the case.
+Erstellt einen Flugplan, der nur VOR- und NDB-Stationen als Wegpunkte verwendet und versucht, den Empfang von mindestens einer Station entlang des gesamten Flugplans sicherzustellen. Beachten Sie, dass VOR-Stationen bevorzugt werden. Reine NDB und DME Stationen werden nach Möglichkeit vermieden. Die Berechnung schlägt fehl, wenn zwischen Start- und Zielort nicht genügende Funknavaiden gefunden werden können. Bauen Sie in diesem Fall den Flugplan manuell auf.
 
-This calculation can also be used to create a flight plan snippet between any kind of waypoint.
+Diese Berechnung kann auch zum Erstellen eines Flugplanausschnitts zwischen beliebigen Wegpunkten verwendet werden.
 
-#### ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude") Calculate high Altitude {#calculate-high-altitude}
+#### ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude") Hohe Route berechnen {#calculate-high-altitude}
 
-Uses Jet airways to create a flight plan.
+Verwendet Jet Airways, um einen Flugplan zu erstellen.
 
-Calculated flight plans along airways will obey all airway restrictions like minimum and altitude. The program will also adhere to one-way and maximum altitude restrictions for X-Plane based navdata.
+Berechnete Flugpläne entlang der Luftstraßen werden allen Einschränkungen der Airways wie Mindest- und Höhenlage entsprechen. Das Programm hält auch Einbahn- und Maximalhöhenbeschränkungen für X-Plane-basierte Navdata ein.
 
-The resulting minimum altitude is set in the flight plan altitude field. The flight plan altitude field is not changed if no altitude restrictions were found along the flight plan.
+Die resultierende Mindesthöhe wird im Feld Flugplanhöhe eingestellt. Das Flugplan-Höhenfeld wird nicht geändert, wenn im Flugplan keine Höheneinschränkungen gefunden wurden.
 
-A simplified east/west rule is used to adjust the cruise altitude to odd/even values \(this can be switched off in the `Options` dialog on the `Flight Plan` tab\).
+Eine vereinfachte Ost- / Westregel wird verwendet, um die Reiseflughöhe auf ungerade / gerade Werte einzustellen \(dies kann im `Einstellung` Dialog im `Flugplan` Tab ausgeschaltet werden\).
 
-The default behavior is to jump from the departure airport to the next waypoint of a suitable airway and vice versa for the destination. This can be changed in `Options` dialog on the `Flight Plan` tab if VOR or NDB stations are preferred as transition points to airways.
+Das Standardverhalten besteht darin, vom Abflughafen zum nächsten Wegpunkt einer geeigneten Luftstraße und umgekehrt zum Ziel zu springen. Dieses kann im `Einstellung` Dialog im `Flugplan` Tab geändert werden, wenn VOR- oder NDB-Stationen als Übergangspunkte zu den Luftwegen bevorzugt werden.
 
-The airway network of Flight Simulator is not complete \(the north Atlantic tracks are missing for example - these change daily\), therefore calculation across large ocean areas can fail.
+Das Luftstraßennetz vom Flight Simulator ist nicht vollständig \(die nordatlantischen Tracks fehlen beispielsweise - sie ändern sich täglich\), daher kann die Berechnung über große Ozeane fehlschlagen.
 
-Create the airway manually as a workaround or use an online planning tool to obtain a route string and use the `New Flight Plan from String` option to create the flight plan.
+Erstellen Sie den Luftweg manuell als Workaround oder verwenden Sie ein Online-Planungstool, um einen Routenstring zu erhalten und verwenden Sie die `Neuer Flugplan von String` Option, um einen Flugplan zu erzeugen.
 
-This calculation can also be used to create a flight plan snippet between any kind of waypoint.
+Diese Berechnung kann auch zum Erstellen eines Flugplanausschnitts zwischen beliebigen Wegpunkten verwendet werden.
 
-#### ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude") Calculate low Altitude {#calculate-low-altitude}
+#### ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude") Niedrige Route berechnen {#calculate-low-altitude}
 
-Uses Victor airways to create a flight plan. Everything else is the same as in `Calculate high Altitude`.
+Verwendet Victor Airways, um einen Flugplan zu erstellen. Alles andere ist wie in `Hohe Route berechnen`.
 
-#### ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude") Calculate based on given Altitude {#calculate-based-on-given-altitude}
+#### ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude") Berechnen für gegebene Höhe {#calculate-based-on-given-altitude}
 
-Use the value in the altitude field of the flight plan to find a flight plan along Victor and/or Jet airways. Calculation will fail if the altitude value is too low. Everything else is the same as in `Calculate high Altitude`.
+Verwendet den Wert im Höhenfeld des Flugplans, um einen Flugplan bei Victor und / oder Jet Airways zu finden. Die Berechnung schlägt fehl, wenn der Höhenwert zu niedrig ist. Alles andere ist wie in `Hohe Route berechnen`.
 
-#### ![Reverse Flight Plan](../images/icons/routereverse.png "Reverse Flight Plan") Reverse Flight Plan {#reverse-flight-plan}
+#### ![Reverse Flight Plan](../images/icons/routereverse.png "Reverse Flight Plan") Flugplan umkehren {#reverse-flight-plan}
 
-Swaps departure and destination and reverses order of all intermediate waypoints. A default runway is assigned for the new departure start position.
+Tauscht Abflug und Ziel aus und kehrt die Reihenfolge aller Zwischenwegpunkte um. Für die neue Startposition wird eine Standard-Landebahn zugewiesen.
 
-Note that this function does not consider one-way airways in the X-Plane database and might result in an invalid flight plan.
+Beachten Sie, dass diese Funktion keine Einbahnstraßen in der X-Plane-Datenbank berücksichtigt und zu einem ungültigen Flugplan führen kann.
 
-#### ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png "Adjust Flight Plan Altitude") Adjust Flight Plan Altitude {#adjust-flight-plan-alt}
+#### ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png "Adjust Flight Plan Altitude") Reiseflughöhe anpassen {#adjust-flight-plan-alt}
 
-Changes the flight plan altitude according to a simplified East/West rule and the current route type \(IFR or VFR\). Rounds the altitude up to the nearest even 1000 feet \(or meter\) for westerly flight plans or odd 1000 feet \(or meter\) for easterly flight plans. Adds 500 feet for VFR flight plans.
+Ändert die Flugplanhöhe gemäß einer vereinfachten Ost / West-Regel und dem aktuellen Routentyp \(IFR oder VFR\). Rundet die Höhe auf die nächsten 1000 Fuß \(oder Meter\) für westliche Flugpläne ab oder ungerade 1000 Fuß \(oder Meter\) für östliche Flugpläne. Fügt 500 Fuß für VFR-Flugpläne hinzu.
 
-### Map Menu {#map-menu}
+### Menü Karte {#map-menu}
 
-#### ![Goto Home](../images/icons/home.png "Goto Home") Goto Home {#goto-home}
+#### ![Goto Home](../images/icons/home.png "Goto Home") Gehe zur Heimposition {#goto-home}
 
-Jumps to the home area that was set using [Set Home](MAPDISPLAY.md#set-home) using the saved position and zoom distance. The center of the home area is highlighted by a ![Home Symbol](../images/icons/home.png "Home Symbol") symbol.
 
-#### ![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search") Go to Center for Distance Search {#go-to-center-for-distance-search}
+Springt zur Heimposition, die mit [Heimansicht setzen](MAPDISPLAY.md#set-home)-Taste festgelegt wurde und verwendet die gespeicherte Position und den Zoomabstands. Die Mitte des Heimposition wird durch ein ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") Symbol hervorgehoben.
 
-Go to the center point used for distance searches. See [Set Center for Distance Search](MAPDISPLAY.md#set-center-for-distance-search).The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
+#### ![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search") Gehe zum Zentrum der Distanzsuche {#go-to-center-for-distance-search}
 
-#### ![Center Flight Plan](../images/icons/centerroute.png "Center Flight Plan") Center Flight Plan {#center-flight-plan}
+Geht zum Mittelpunkt, der für die Entfernungssuche verwendet wird. Siehe auch [Zentrum für Distanzsuche setzen](MAPDISPLAY.md#set-center-for-distance-search). Das Zentrum für Distanzsuche wird durch ein ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") Symbol hervorgehoben.
 
-Zooms out the map \(if required\) to display the whole flight plan on the map.
+#### ![Center Flight Plan](../images/icons/centerroute.png "Center Flight Plan") Flugplan zentrieren{#center-flight-plan}
 
-#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Remove all Highlights and Selections {#remove-highlights}
+Verkleinert die Karte \(falls erforderlich\), um den gesamten Flugplan auf der Karte anzuzeigen.
 
-Deselect all entries in the flight plan table, all search result tables and remove all highlight marks from the map. Use this to get a clean view of the map while flying.
+#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Alle Highlights und Auswahlkriterien entfernen {#remove-highlights}
 
-#### ![Remove all Ranges, Measurements and Patterns](../images/icons/rangeringsoff.png "Remove all Ranges, Measurements and Patterns") Remove all Ranges, Measurements and Patterns {#remove-marks}
+Entfernen Sie die Markierung aller Einträge in der Flugplattentabelle, aller Suchergebnistabellen und entfernen Sie alle Markierungen aus der Karte. Verwenden Sie dies, um während des Fluges eine saubere Ansicht der Karte zu erhalten.
 
-Removes all range rings, navaid range rings, measurement lines and airport traffic patters from the map.
 
-#### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Center Aircraft {#center-aircraft}
+#### ![Remove all Ranges, Measurements and Patterns](../images/icons/rangeringsoff.png "Remove all Ranges, Measurements and Patterns") Alle Bereiche, Messungen und Schablonen entfernen {#remove-marks}
 
-Zooms to the user aircraft if directly connected to a flight simulator or remotely connected using [Little Navconnect](https://albar965.github.io/littlenavconnect.html) and keeps the aircraft centered on the map.
+Entfernt alle Entfernungsringe, navaidischen Entfernungsringe, Messlinien und Verkehrsschablonen auf Flughäfen von der Karte.
 
-The centering of the aircraft can be changed in the [Simulator Aircraft](OPTIONS.md#simulator-aircraft) tab in dialog `Options`.
+#### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Flugzeug zentrieren {#center-aircraft}
 
-#### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Delete Aircraft Trail {#delete-aircraft-trail}
+Zoomt auf das Benutzerflugzeug, wenn es direkt mit einem Flugsimulator oder über eine Remote-Verbindung via [Little Navconnect](https://albar965.github.io/littlenavconnect.html)verbunden ist und hält das Flugzeug auf der Karte zentriert.
 
-The aircraft trail is saved and will be reloaded on program startup.
+Die Zentrierung des Flugzeugs kann im `Einstellung` Dialog im `Simulator Aircraft` Tab geändert werden.
 
-This menu item removes the user aircraft trail from both the map and the elevation profile.
+#### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Flugzeugpfad löschen {#delete-aircraft-trail}
 
-The trail can be exported together with the flight plan into a `GPX` file by using [Export Flight Plan as GPX](MENUS.md#export-flight-plan-as-gpx).
+Der Flugzeugpfad wird gespeichert und beim Programmstart neu geladen.
+Dieser Menüpunkt entfernt den Benutzerflugzeugpfad sowohl von der Karte als auch vom Höhenprofil.
+Der Trail kann zusammen mit dem Flugplan in eine GPX-Datei exportiert werden, indem man [Flugplan als GPX exportieren](MENUS.md#export-flight-plan-as-gpx) verwendet
 
-#### ![Map Position Back](../images/icons/back.png "Map Position Back") ![Map Position Forward](../images/icons/next.png "Map Position Forward") Map Position Back/Forward {#map-position-back-forward}
+#### ![Map Position Back](../images/icons/back.png "Map Position Back") ![Map Position Forward](../images/icons/next.png "Map Position Forward") Kartenposition vor/zurück {#map-position-back-forward}
 
-Jumps forward or backward in the map position history. The complete history is saved and restored when starting _Little Navmap_.
+Springt in der Kartenpositionshistorie vorwärts oder rückwärts. Der gesamte Verlauf wird gespeichert und beim Start von _Little Navmap_ wiederhergestellt.
 
-### View Menu {#view-menu}
+### Menü Ansicht {#view-menu}
 
-#### ![Reset Display Settings](../images/icons/centeraircraft.png "Reset Display Settings") Reset Display Settings {#reset-display-settings}
+#### ![Reset Display Settings](../images/icons/centeraircraft.png "Reset Display Settings") Anzeigeeinstellungen zurücksetzen {#reset-display-settings}
 
-Resets all map display settings back to default.
+Setzt alle Einstellungen der Kartendarstellung auf den Standard zurück.
 
 ![By Reset Affected Settings](../images/resetdisplaysettings.jpg "By Reset Affected Settings")
 
-_**Picture above:** All setting tool buttons highlighted that are affected by _`Reset Display Settings`_._
+_**Bild oben:** Alle markierten Einstellungs-Toolbuttons, die von folgenden Faktoren _`Anzeigeeinstellungen zurücksetzen`_  betroffen sind._
 
 #### Details
 
-##### ![More Details](../images/icons/detailmore.png "More Details") More Details {#more-details}
+##### ![More Details](../images/icons/detailmore.png "More Details") Mehr Details {#more-details}
 
-##### ![Default Details](../images/icons/detaildefault.png "More Details") Default Details {#default-details}
+##### ![Default Details](../images/icons/detaildefault.png "More Details") Standard Details {#default-details}
 
-##### ![Less Details](../images/icons/detailless.png "Less Details") Less Details {#less-details}
+##### ![Less Details](../images/icons/detailless.png "Less Details") Weniger Details {#less-details}
 
-Increases or decreases the detail level for the map. More details means more airports, more navaids, more text information and bigger icons.
+Erhöht oder verringert die Detailstufe für die Karte. Mehr Details bedeuten mehr Flughäfen, mehr Navids, mehr Textinformationen und größere Symbole.
 
-Note that map information will be truncated if too much detail is chosen. A red warning message will be shown in the statusbar if this is the case.
+Beachten Sie, dass Karteninformationen abgeschnitten werden, wenn zu viele Details ausgewählt werden. In diesem Fall wird in der Statusleiste eine rote Warnmeldung angezeigt.
 
-The detail level is shown in the statusbar. Range is -5 for least detail to +5 for most detail.
+Die Detaillierungsstufe wird in der Statusleiste angezeigt. Der Bereich ist -5 für kleinste Details bis +5 für größte Details.
 
-#### Airports
+#### Flugplätze
 
-##### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Force Show Addon Airports {#force-show-addon-airports}
+##### ![Force Show Addon Airports](../images/icons/airportaddon.png "Force Show Addon Airports") Anzeigen von Add-on Flugplätzen erzwingen {#force-show-addon-airports}
 
-Add-on airports are always shown independently of the other airport map settings if this option is selected. This allows viewing only add-on airports by checking this option and disabling the display of hard, soft and empty airports.
+Add-on Flughäfen werden immer unabhängig von den anderen Einstellungen der Flughafenkarte angezeigt, wenn diese Option aktiviert ist. Dies ermöglicht es, nur Add-on Flughäfen anzuzeigen, indem Sie diese Option aktivieren und die Anzeige von befestigten, unbefestigten und inaktiven Flughäfen deaktivieren.
 
-##### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Show Airports with hard Runways {#show-airports-with-hard-runways}
+##### ![Show Airports with hard Runways](../images/icons/airport.png "Show Airports with hard Runways") Zeige Flugplätze mit befestigten Runways {#show-airports-with-hard-runways}
 
-Show airports that have at least one runway with a hard surface.
+Zeigt Flughäfen, die mindestens eine Start- und Landebahn mit einer befestigten Oberfläche haben.
 
-##### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Show Airports with soft Runways {#show-airports-with-soft-runways}
+##### ![Show Airports with soft Runways](../images/icons/airportsoft.png "Show Airports with soft Runways") Zeige Flugplätze mit unbefestigten Runways{#show-airports-with-soft-runways}
 
-Show airports that have only soft surfaced runways or only water runways. This type of airport might be hidden on the map depending on zoom distance.
+Zeigen Sie Flughäfen, die nur unbefestigte Start- und Landebahnen oder nur Wasserbahnen haben. Diese Art von Flughafen kann je nach Zoom-Entfernung auf der Karte ausgeblendet sein.
 
-##### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Show empty Airports {#show-empty-airports}
+##### ![Show empty Airports](../images/icons/airportempty.png "Show empty Airports") Zeige leere Flugplätze {#show-empty-airports}
 
-Show empty airports. This button or menu item might not be visible depending on settings in the `Options` dialog on the `Map Display` tab. The status of this button is combined with the other airport buttons. This means, for example: You have to enable soft surfaced airport display and empty airports to see empty airports having only soft runways.
+Leere Flughäfen anzeigen. Diese Schaltfläche oder dieser Menüpunkt ist möglicherweise nicht sichtbar, je nach den Einstellungen im Dialogfeld `Einstellungen` auf der Registerkarte `Karte`. Der Status dieser Schaltfläche wird mit den anderen Flughafentasten kombiniert. Das bedeutet zum Beispiel: Sie müssen Beliebige Oberfläche, unbefestigt und Leere Flughäfen aktivieren, um leere Flughäfen mit nur unbefestigten Runways zu sehen.
 
-An empty airport is defined as one which has neither parking nor taxiways nor aprons and is not an add-on. These airports are treated differently in _Little Navmap_ since they are the most boring of all default airports. Empty airports are drawn gray and behind all other airports on the map.
+Ein leerer Flughafen ist definiert als ein Flughafen, der weder Parkplätze noch Rollwege noch Vorfelder hat und kein Add-on ist. Diese Flughäfen werden in _Little Navmap_ unterschiedlich behandelt, da sie die langweiligsten aller Standardflughäfen sind. Leere Flughäfen sind grau und hinter allen anderen Flughäfen auf der Karte dargestellt.
 
-Airports having only water runways are excluded from this definition to avoid unintentional hiding.
+Flughäfen, die nur über Wasserlaufbahnen verfügen, sind von dieser Definition ausgenommen, um unbeabsichtigtes nicht Anzeigen zu vermeiden.
 
-###### X-Plane and 3D airports
+###### X-Plane und 3D Flugpätze
 
-The function can be extended to X-Plane airports which are not marked as `3D`. This can be done by checking `Consider all X-Plane airports not being 3D empty` in the `Options` dialog on the `Map Display` tab. All airports not being marked as `3D` will be shown in gray on the map and can be hidden like described above if enabled.
+Die Funktion kann auf X-Plane-Flughäfen erweitert werden, die nicht als  `3D` gekennzeichnet sind. Dies kann geschehen, indem Sie im Dialogfeld `Èinstellungen` auf der Registerkarte `Karte` das Kontrollkästchen "Alle X-Plane-Flughäfen, die nicht 3D sind,als leere Flugpöätze behandeln" aktivieren. Alle Flughäfen, die nicht als `3D` markiert sind, werden auf der Karte grau dargestellt und können, falls aktiviert, wie oben beschrieben ausgeblendet werden.
 
-An airport is considered 3D if it is stored in
+Ein Flughafen gilt als 3D, wenn gespeichert ist in
 `XPLANE/Custom Scenery/Global Airport Scenery/Earth nav data/apt.dat`.
 
-The definition of `3D` is arbitrary, though. A `3D` airport may contain just a single object, such as a light pole or a traffic cone or it may be a fully constructed major airport.
+Die Definition von `3D` ist jedoch willkürlich. Ein `3D` Flughafen kann nur ein einziges Objekt enthalten, wie beispielsweise einen Lichtmast oder einen Verkehrskegel, oder er kann ein vollständig errichteter Großflughafen sein.
 
 #### Navaids
 
-##### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Show VOR Stations {#show-vor-stations}
+##### ![Show VOR Stations](../images/icons/vor.png "Show VOR Stations") Zeige VOR Stationen {#show-vor-stations}
 
-##### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Show NDB Stations {#show-ndb-stations}
+##### ![Show NDB Stations](../images/icons/ndb.png "Show NDB Stations") Zeige NDB Stationen {#show-ndb-stations}
 
-##### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Show Waypoints {#show-waypoints}
+##### ![Show Waypoints](../images/icons/waypoint.png "Show Waypoints") Zeige Wegpunkte {#show-waypoints}
 
-##### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Show ILS Feathers {#show-ils-feathers}
+##### ![Show ILS Feathers](../images/icons/ils.png "Show ILS Feathers") Zeige ILS {#show-ils-feathers}
 
-##### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Show Victor Airways {#show-victor-airways}
+##### ![Show Victor Airways](../images/icons/airwayvictor.png "Show Victor Airways") Zeige Victor Luftstraßen {#show-victor-airways}
 
-##### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Show Jet Airways {#show-jet-airways}
+##### ![Show Jet Airways](../images/icons/airwayjet.png "Show Jet Airways") Zeige Jet Luftstraßen {#show-jet-airways}
 
-Show or hide these facilities or navaids on the map. Navaids might be hidden on the map depending on zoom distance.
+Zeigen oder verbergen Sie diese Einrichtungen oder Navids auf der Karte. Je nach Zoom-Entfernung können Navaids auf der Karte ausgeblendet sein.
 
-#### Airspaces {#airspaces}
+#### Lufträume {#airspaces}
 
-Note that airspaces are hidden if the airport diagram is shown.
+Beachten Sie, dass Lufträume ausgeblendet sind, wenn das Flughafendiagramm angezeigt wird.
 
-##### ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") Show Airspaces {#show-airspaces}
+##### ![Show Airspaces](../images/icons/airspace.png "Show Airspaces") Lufträume anzeigen {#show-airspaces}
 
-Allows to enable or disable the display of all airspaces with one click. Use the menu items below this one or the toolbar buttons to display or hide the various airspace types.
+Ermöglicht das Aktivieren oder Deaktivieren der Anzeige aller Lufträume mit einem Klick. Verwenden Sie die Menüpunkte unter diesem oder den Schaltflächen in der Symbolleiste, um die verschiedenen Luftraumtypen ein- oder auszublenden.
 
-The airspaces toolbar contains buttons each having a drop down menu that allows to configure the airspace display like showing or hiding certain airspace types. Each drop down menu also has `All` and `None` entries to select or deselect all types in the menu.
+Die Symbolleiste der Lufträume enthält Schaltflächen mit jeweils einem Dropdown-Menü, mit dem Sie die Luftraumanzeige so konfigurieren können, dass bestimmte Luftraumtypen ein- oder ausgeblendet werden. Jedes Dropdown-Menü hat auch `Alle` und `Keine` Funktionen, um alle Typen im Menü auszuwählen oder abzuwählen..
 
-##### ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") Show Online Network Airspaces {#show-online-airspaces}
+##### ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") Zeige Onlinenetzwerk-Lufträume {#show-online-airspaces}
 
-This button or menu item is only visible if an online network is enabled.
+Diese Schaltfläche oder dieser Menüpunkt ist nur sichtbar, wenn ein Online-Netzwerk aktiviert ist.
 
-It allows to hide or show center, tower, ground, approach and other airspaces from the currently selected online network independently of the simulator or Navigraph airspaces.
+Es ermöglicht das Ausblenden oder Anzeigen von Center-, Tower-, Boden-, Anflug- und anderen Lufträumen von dem aktuell ausgewählten Online-Netzwerk, unabhängig von den Simulator- oder Navigraph-Lufträumen.
 
-Online airspaces can also be shown or hidden by type using the menu items below.
+Online-Lufträume können auch über die nachfolgenden Menüpunkte nach Typ ein- oder ausgeblendet werden.
 
-Note that the displayed airspace circles do not depict the real airspace boundaries but are merely an indicator for the presence of an active center or tower.
+Beachten Sie, dass die dargestellten Luftraumkreise nicht die realen Luftraumgrenzen darstellen, sondern lediglich ein Indikator für das Vorhandensein eines aktiven Zentrums oder Turms sind.
 
-See [Online Networks](ONLINENETWORKS.md) and [Online Flying](OPTIONS.md#online-flying).
+See [Online Netzwerke](ONLINENETWORKS.md) und [Online Fliegen](OPTIONS.md#online-flying).
 
-##### ![ICAO Airspaces](../images/icons/airspaceicao.png "ICAO Airspaces") ICAO Airspaces {#icao-airspaces}
+##### ![ICAO Airspaces](../images/icons/airspaceicao.png "ICAO Airspaces") ICAO Lufträume {#icao-airspaces}
 
-Allows selection of Class A to Class E airspaces.
+Ermöglicht die Auswahl von Lufträumen der Klasse A bis Klasse E.
 
-##### ![FIR Airspaces](../images/icons/airspacefir.png "FIR Airspaces") FIR Airspaces {#fir-airspaces}
+##### ![FIR Airspaces](../images/icons/airspacefir.png "FIR Airspaces") FIR Lufträume {#fir-airspaces}
 
-Allows selection of the Class F and Class G airspaces or flight information regions.
+Ermöglicht die Auswahl der Lufträume der Klassen F und G oder der Fluginformationsgebiete.
 
-##### ![Restricted Airspaces](../images/icons/airspacerestr.png "Restricted Airspaces") Restricted Airspaces {#restricted-airspaces}
+##### ![Restricted Airspaces](../images/icons/airspacerestr.png "Restricted Airspaces") Beschränkte Lufträume {#restricted-airspaces}
 
-Show or hide MOA \(military operations area\), restricted, prohibited and danger airspaces.
+Zeigt oder verbirgt MOA \(military operations area\), eingeschränkte, verbotene und gefährliche Lufträume.
 
-##### ![Special Airspaces](../images/icons/airspacespec.png "Special Airspaces") Special Airspaces {#special-airspaces}
+##### ![Special Airspaces](../images/icons/airspacespec.png "Special Airspaces") Spezielle Lufträume {#special-airspaces}
 
-Show or hide warning, alert and training airspaces.
+Ein- und Ausblenden von Warn-, Alarm- und Trainingslufträumen.
 
-##### ![Other Airspaces](../images/icons/airspaceother.png "Other Airspaces") Other Airspaces {#other-airspaces}
+##### ![Other Airspaces](../images/icons/airspaceother.png "Other Airspaces") Andere Lufträume {#other-airspaces}
 
-Show or hide center, tower, mode C and other airspaces.
+Ein- oder Ausblenden von Center, Tower, Modus C und anderen Lufträumen.
 
-##### ![Airspace Altitude Limitations](../images/icons/airspacealt.png "Airspace Altitude Limitations") Airspace Altitude Limitations {#airspace-altitude-limitations}
+##### ![Airspace Altitude Limitations](../images/icons/airspacealt.png "Airspace Altitude Limitations") Höhenbegrenzungen {#airspace-altitude-limitations}
 
-Allows filtering of the airspace display by altitude. Either below or above 10,000 ft or 18,000 ft or only airspaces intersecting with the flight plan altitude.
+Ermöglicht die Filterung der Luftraumanzeige nach Höhe. Entweder unter oder über 10.000 Fuß oder 18.000 Fuß oder nur Lufträume, die sich mit der Flugplanhöhe kreuzen.
 
 #### Userpoints
 
-Allows to hide or show user-defined waypoints by type.
+Ermöglicht das Ein- und Ausblenden nach Typ von benutzerdefinierten Wegpunkte.
 
-The menu item `Unknown Types` shows or hides all types which do not belong to a known type.
+Der Menüpunkt `Unbekannte Typen` blendet alle Typen ein oder aus, die nicht zu einem bekannten Typ gehören.
 
-The type `Unknown` ![Unknown](../images/icons/userpoint_Unknown.png "Airspace Altitude Limitations")
- shows or hides all userpoints which are exactly of type `Unknown`.
+Der Type `Unbekannt` ![Unknown](../images/icons/userpoint_Unknown.png "Airspace Altitude Limitations") blendet alle Userpoints ein oder aus, die genau vom Typ `Unbekannt` sind.
 
-See [User-defined Waypoints](USERPOINT.md) for more information on user-defined waypoints.
+Siehe [benutzerdefinierte Wegpunkte](USERPOINT.md) für weitere Informationen über benutzerdefinierte Wegpunkte.
 
-#### ![Show Flight Plan](../images/icons/route.png "Show Flight Plan") Show Flight Plan {#show-flight-plan}
+#### ![Show Flight Plan](../images/icons/route.png "Show Flight Plan") Zeige Flugplan {#show-flight-plan}
 
-Show or hide the flight plan. The flight plan is shown independently of the zoom distance.
+Ein- und Ausblenden des Flugplans. Der Flugplan wird unabhängig von der Zoom-Entfernung angezeigt.
 
-#### ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches") Show Missed Approaches {#show-missed-approaches}
+#### ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches") Zeige Fehlanflüge {#show-missed-approaches}
 
-Show or hide the missed approaches of the current flight plan. This does not affect the preview in the search tab `Procedures`.
+Ein- oder Ausblenden der Fehlanflüge des aktuellen Flugplans. Dies hat keinen Einfluss auf die Vorschau auf der Registerkarte `Prozeduren` im Suche-Fenster.
 
-**Note that this function changes the active flight plan leg sequencing:** Sequencing the active leg will stop if the destination is reached and missed approaches are not displayed. Otherwise sequencing will continue with the missed approach and the simulator aircraft progress will show the remaining distance to the end of the missed approach instead.
+**Beachten Sie, dass diese Funktion die Streckenfolge im aktiven Flugplan ändert:** Die Bildung der Reihenfolge des aktiven Teils wird gestoppt, wenn das Ziel erreicht ist und verpasste Anflüge nicht angezeigt werden. Andernfalls wird die Reihenfolgebildung mit dem verpassten Anflug fortgesetzt und der Fortschritt des Simulators zeigt stattdessen die verbleibende Entfernung bis zum Ende des verpassten Anfluges an.
 
-#### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Show Aircraft {#show-aircraft}
+#### ![Show Aircraft](../images/icons/aircraft.png "Show Aircraft") Zeige Flugzeug {#show-aircraft}
 
-Shows the user aircraft and keeps it centered on the map if connected to the simulator. The user aircraft is always shown independently of the zoom distance.
+Zeigt das Benutzerflugzeug an und zentriert es auf der Karte, wenn es mit dem Simulator verbunden ist. Das Benutzerflugzeug wird immer unabhängig vom Zoomabstand angezeigt.
 
-The icon color and shape indicates the aircraft type and whether the aircraft is on ground \(gray border\).
+Die Farbe und Form des Symbols zeigt den Flugzeugtyp und ob sich das Flugzeug am Boden befindet. \(gray border\).
 
-![User Aircraft](../images/icons/aircraft_small_user.png "User Aircraft") User aircraft in flight.
+![User Aircraft](../images/icons/aircraft_small_user.png "User Aircraft") Benutzerflugzeug im Flug.
 
-A click on the user aircraft shows more information in the `Simulator Aircraft` dock window.
+Ein Klick auf das Benutzerflugzeug zeigt weitere Informationen im `Benutzerflugzeug` Dockfenster.
 
-More options to change the map behavior while flying can be found in the dialog `Options` on the tab [Simulator Aircraft](OPTIONS.md#simulator-aircraft).
+Weitere Optionen, um das Kartenverhalten während des Fluges zu ändern, finden Sie im Dialogfenster `Einstellungen` auf der Registerkarte [Benutzerflugzeug](OPTIONS.md#simulator-aircraft).
 
-The aircraft centering will be switched off when using one of the following functions. Note that this default behavior can be modified in the options dialog.
+Die Flugzeugzentrierung wird bei Verwendung einer der nachfolgenden Funktionen abgeschaltet. Beachten Sie, dass dieses Standardverhalten im Optionsdialog geändert werden kann.
 
-* Double-click into a table view or map display to zoom to an airport or a navaid.
-* Context menu item `Show on map`.
-* `Goto Home` or `Goto Center for Distance Search`.
-* `Map` link in `Information` dock window.
-* `Show Flight Plan`, when selected manually, or automatically after loading a flight plan.
-* Centering a Google Earth KML/KMZ file after loading
+* Doppelklicken Sie in eine Tabellenansicht oder Kartendarstellung, um zu einem Flughafen oder einer Navigation zu gelangen.
+* Kontextmenüeintrag `Kartenanzeige`.
+* `Gehe zur Heimposition` oder `Gehe zum Zentrum der Distanzsuche`.
+* `Karte` Link im `Information` Dockfenster.
+* `Zeige Flugplan`, bei manueller Auswahl oder automatisch nach dem Laden eines Flugplans.
+* Zentrieren einer Google Earth KML/KMZ-Datei nach dem Laden
 
-This allows a quick inspection of an airport or navaid during flight. To display the aircraft again use `Map Position Back` or enable `Show Aircraft` again.
+Dies ermöglicht eine schnelle Prüfung eines Flughafens oder einer Navaid während des Fluges. Um das Flugzeug wieder anzuzeigen, verwenden Sie `Gehe zur letzten Kartenoption zurück` oder aktivieren Sie wieder `Zeige Flugzeug`.
 
-#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Show Aircraft Trail {#show-aircraft-trail}
+#### ![Show Aircraft Trail](../images/icons/aircrafttrail.png "Show Aircraft Trail") Zeige Flugpfad {#show-aircraft-trail}
 
-Show the user aircraft trail. The trail is always shown independently of the zoom distance. It is saved and will be reloaded on program startup.
+Zeigt den Trail des Benutzerflugzeugs an. Der Trail wird immer unabhängig von der Zoom-Distanz angezeigt. Er wird gespeichert und beim Programmstart neu geladen.
 
-The trail can be deleted manually by selecting `Main Menu` -&gt; `Map` -&gt; `Delete Aircraft Trail`.
+Der Trail kann manuell gelöscht werden, indem man `Hauptmenu` -&gt; `Karte` -&gt; `Flugzeugpfad löschen` wählt.
 
-The length of the trail is limited for performance reasons. If it exceeds the maximum length, the trail is truncated and the oldest segments are lost.
+Die Länge des Trails ist aus Performancegründen begrenzt. Überschreitet er die maximale Länge, wird der Weg abgeschnitten und die ältesten Segmente gehen verloren.
 
-The trail can be exported together with the flight plan into a `GPX` file by using [Export Flight Plan as GPX](MENUS.md#export-flight-plan-as-gpx).
+Der Trail kann zusammen mit dem Flugplan in eine `GPX` Datei mit Hilfe von [Flugplan als GPX exportieren](MENUS.md#export-flight-plan-as-gpx) exportiert werden.
 
-#### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Show Compass Rose {#show-compass-rose}
+#### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Zeige Kompassrose {#show-compass-rose}
 
-Show a compass rose on the map which indicates true north and magnetic north. Aircraft heading and aircraft trail are shown if connected to a simulator.
+Zeigt eine Kompassrose auf der Karte, die den wahren Norden und den magnetischen Norden anzeigt. Flugzeugkurs und Flugbahn werden angezeigt, wenn sie mit einem Simulator verbunden sind.
 
-The rose is centered around the user aircraft if connected. Otherwise it is centered on the map view.
+Die Rose ist um das Benutzerflugzeug herum zentriert, wenn sie verbunden sind. Andernfalls wird es in der Kartenansicht zentriert.
 
-See [Compass Rose](COMPASSROSE.md) for details.
+Für weitere Informationen siehe [Kompassrose](COMPASSROSE.md) for details.
 
-#### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") ![Show AI and Multiplayer Ships](../images/icons/boatai.png "Show AI and Multiplayer Ships") Show AI and Multiplayer Aircraft or Ships {#show-map-ai-aircraft}
+#### ![Show AI and Multiplayer Aircraft](../images/icons/aircraftai.png "Show AI and Multiplayer Aircraft") ![Show AI and Multiplayer Ships](../images/icons/boatai.png "Show AI and Multiplayer Ships") Zeige KI- und Mehrspielerflugzege {#show-map-ai-aircraft}
 
-Shows AI and multiplayer aircraft or ships on the map. Multiplayer vehicles can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
+Zeigt KI- und Mehrspielerflugzeuge oder Schiffe auf der Karte an. Mehrspieler-Fahrzeuge können z.B. aus FSCloud, VATSIM oder Steam-Sitzungen angezeigt werden.
 
-The icon color and shape indicates the aircraft type and whether the aircraft is on ground \(gray border\).
+Die Farbe und Form des Symbols zeigt den Flugzeugtyp und ob sich das Flugzeug am Boden befindet. \(gray border\).
 
-![AI or Multiplayer Aircraft](../images/icons/aircraft_small.png "AI or Multiplayer Aircraft") AI or multiplayer aircraft from the simulator. This includes aircraft that are injected by the various online network clients. A click on the AI aircraft or ship shows more information in the `Simulator Aircraft` dock window in the tab `AI / Multiplayer`.
+![AI or Multiplayer Aircraft](../images/icons/aircraft_small.png "AI or Multiplayer Aircraft") KI- oder Multiplayer-Flugzeug aus dem Simulator. Dazu gehören auch Flugzeuge, die von den verschiedenen Online-Netzwerk-Clients eingespeist werden. Ein Klick auf das KI-Flugzeug oder -Schiff zeigt weitere Informationen im `Simulatorflugzeug` Dockfenster in der Registerkarte `AI / Multiplayer`.
 
-![Online Multiplayer Aircraft](../images/icons/aircraft_online.png "User Aircraft") Multiplayer aircraft/client from an online network. See [Online Networks](ONLINENETWORKS.md). A click on the online  aircraft shows information in the `Information` dock window in the separate tab `Online Clients`.
+![Online Multiplayer Aircraft](../images/icons/aircraft_online.png "User Aircraft") Mehrspieler-Flugzeug/Client aus einem Online-Netzwerk. Siehe [Online Networks](ONLINENETWORKS.md). Ein Klick auf das Online-Flugzeug zeigt Informationen im `Information` Dockfenster in der separaten Registerkarte `Online Clients`.
 
-Note that, in X-Plane, ship traffic is not available and AI aircraft information is limited.
+Beachten Sie, dass in X-Plane der Schiffsverkehr nicht verfügbar ist und die Informationen über KI-Flugzeuge begrenzt sind.
 
-The displayed vehicles are limited by the used multiplayer system if _Little Navmap_ is not connected to an online network like VATSIM or IVAO. Multiplayer aircraft will disappear depending on distance to user aircraft. For AI in FSX or P3D this is currently about 100 nautical miles or around 200 kilometers.
+Die angezeigten Fahrzeuge sind durch das verwendete Multiplayer-System begrenzt, wenn _Little Navmap_ nicht mit einem Online-Netzwerk wie VATSIM oder IVAO verbunden ist. Multiplayer-Flugzeuge verschwinden je nach Entfernung zum Nutzerflugzeug. Für die KI im FSX oder P3D sind das derzeit etwa 100 Seemeilen oder rund 200 Kilometer.
 
-Smaller ships are only generated by the simulator within a small radius around the user aircraft.
+Kleinere Schiffe werden vom Simulator nur in einem kleinen Radius um das Nutzerflugzeug herum erzeugt.
 
-_Little Navmap_ limits the display of AI vehicles depending on size. Zoom close to see small aircraft or boats.
+_Little Navmap_ begrenzt die Anzeige von KI-Fahrzeugen je nach Größe. Zoomen Sie nah heran, um kleine Flugzeuge oder Boote zu sehen.
 
-On the lowest zoom distance all aircraft and ships are drawn to scale on the map.
+Auf der untersten Zoomdistanz werden alle Flugzeuge und Schiffe maßstabsgetreu auf der Karte dargestellt.
 
-Aircraft labels are forced to show independently of zoom level for the next five AI/multiplayer aircraft closest to the user that are within 20 nm distance and 5000 ft elevation.
+Flugzeugbeschriftungen werden unabhängig von der Zoomstufe für die nächsten fünf dem Benutzer am nächsten liegenden KI/Mehrspielerflugzeuge innerhalb von 20 nm Entfernung und 5000 ft Höhe angezeigt.
 
-All aircraft icons can be customized: [User, AI and Multiplayer Aircraft Icons](CUSTOMIZE.md#customize-aircraft-icons).
+Alle Flugzeug-Icons können in [User, AI und Multiplayer Aircraft Icons](CUSTOMIZE.md#customize-aircraft-icons) angepasst werden.
 
-#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
+#### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Kartengitter anzeigen {#show-map-grid}
 
-Show a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [antimeridian](https://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
+Zeigt ein Breiten- / Längenraster sowie das [Meridian](https://en.wikipedia.org/wiki/Prime_meridian) und [Antimeridian](https://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) auf der Karte.
 
-#### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Show Country and City Names {#show-country-and-city-names}
+#### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Zeige Länder- und Stadtnamen {#show-country-and-city-names}
 
-Show country, city and other points of interest. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
+Zeigt Land, Stadt und andere Sehenswürdigkeiten an. Die Verfügbarkeit dieser Optionen hängt vom gewählten Kartenmotiv ab. Siehe auch [Thema](MENUS.md#theme).
 
-#### ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading") Show Hillshading {#show-hillshading}
+#### ![Show Hillshading](../images/icons/hillshading.png "Show Hillshading") Bergschattierung anzeigen {#show-hillshading}
 
-Show hill shading on the map. Availability of these options depends on the selected map theme. See [Theme](MENUS.md#theme).
+Zeigt Bergschattierung auf der Karte. Die Verfügbarkeit dieser Optionen hängt vom gewählten Kartenmotiv ab. Siehe [Thema](MENUS.md#theme).
 
-#### ![Show Minimum Altitude](../images/icons/minaltitude.png "Show Minimum Altitude") Show Minimum Altitude {#show-mora-grid}
+#### ![Show Minimum Altitude](../images/icons/minaltitude.png "Show Minimum Altitude") Minimale Höhe anzeigen {#show-mora-grid}
 
-Toggles the display of minimum off-route altitude grid on the map.
+Schaltet die Anzeige des minimalen Off-Route-Höhenrasters auf der Karte um.
 
-The minimum off-route altitude grid grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL or higher terrain is cleared by 2000 feet.
+Das Mindesthöhenraster außerhalb der Route stellt eine Hindernisfreigabehöhe innerhalb eines Ein-Grad-Rasters zur Verfügung. Die Höhenlage räumt jegliches Gelände und Hindernisse um 1000 Fuß in Gebieten, in denen die höchsten Höhenlagen 5000 Fuß MSL oder niedriger sind. Wenn die höchsten Höhen über 5000 Fuß liegen, wird MSL oder höheres Gelände um 2000 Fuß geräumt.
 
-The large number is 1000 feet and small number 100 feet minimum altitude.
+Die große Zahl ist 1000 Fuß und die kleine Zahl 100 Fuß Mindesthöhe.
 
 ![MORA Grid](../images/legend/map_mora.png)
 
-_**Picture above:** MORA grid: 3300, 4400, 6000, 9900 and 10500 feet._
+_**Bild oben:** MORA Gitter: 3300, 4400, 6000, 9900 und 10500 feet._
 
-#### ![Show Airport Weather](../images/icons/weather.png "Show Airport Weather") Show Airport Weather {#show-airport-weather}
+#### ![Show Airport Weather](../images/icons/weather.png "Show Airport Weather") Flughafenwetter anzeigen {#show-airport-weather}
 
-Shows icons for airport weather where a weather station is available. Select source for display with `Airport Weather Source` below.
+Zeigt Symbole für das Flughafenwetter an, wenn eine Wetterstation verfügbar ist. Quelle für die Anzeige auswählen mit `Flughafenwetterquelle` unten.
 
-See [Legend - Airport Weather](LEGEND.md#airport-weather) for an explanation of the symbols and
-[Airport Weather](WEATHER.md#airport-weather) for more information.
+Siehe [Legende - Flughafenwetter](LEGEND.md#airport-weather) zur Erläuterung der Symbole und [Flughafenwetter](WEATHER.md#airport-weather) für weitere Infomationen.
 
-#### Airport Weather Source {#airport-weather-source}
+#### Flughafenwetterquelle {#airport-weather-source}
 
-Selects the source for airport weather display on the map. The following options are available:
+Wählt die Quelle für die Anzeige des Flughafenwetters auf der Karte aus. Die folgenden Optionen stehen zur Verfügung:
 
-##### Flight Simulator
+##### Flugsimulator
 
-FSX, Prepar3D or X-Plane. Display on remote connections is slower than for direct simulator connections.
+FSX, Prepar3D oder X-Plane. Die Anzeige auf Remote-Verbindungen ist langsamer als bei direkten Simulatorverbindungen.
 
 ##### Active Sky
 
-Use Active Sky as source for weather display.
+Verwendet Active Sky als Quelle für die Wetteranzeige.
 
 ##### NOAA
 
-This is slower than the other options since it needs to send a network request for each station.
+Dies ist langsamer als die anderen Optionen, da für jede Station eine Netzwerkanforderung gesenden werden muss.
 
 ##### VATSIM
 
-Same as NOAA but weather information might be older than NOAA.
+Wie NOAA, aber die Wetterinformationen können älter sein als bei NOAA.
 
 ##### IVAO
 
-Fastest option to display online weather but weather information might be older than NOAA.
+Schnellste Option zur Anzeige des Online-Wetters, aber die Wetterinformationen können älter als NOAA sein.
 
-#### ![Show Sun Shading](../images/icons/mapshadow.png "Show Sun Shading") Show Sun Shading {#show-sun-shading}
+#### ![Show Sun Shading](../images/icons/mapshadow.png "Show Sun Shading") Sonnenschattierung anzeigen {#show-sun-shading}
 
-Enables the display of sun shading on the globe. This works in both projections `Mercator` and `Spherical`.
+Ermöglicht die Anzeige der Sonnenschattierung auf dem Globus. Dies funktioniert sowohl in `Mercator` als auch `Sphärisch` Projektion.
 
-You can change the time source with the `Sun Shading Time` menu below. The shadow darkness can be changed in the dialog `Options` on tab `Map Display`.
+Die Zeitquelle kann mit der Taste `Beschattungszeit` im Menü unten geändert werden. Die Schattendunkelheit kann im Dialog  `Einstellungen` auf der Registerkarte `Kartenanzeige` geändert werden..
 
-See [Sun Shading](SUNSHADOW.md) for more information.
+Für weitere Informationen siehe auch [Sonnenschatten](SUNSHADOW.md).
 
-#### Sun Shading Time {#show-sun-shading-time}
+#### Zeit Sonnenschatten {#show-sun-shading-time}
 
-You can choose between three time sources for the sun shadow.
+Sie können zwischen drei Zeitquellen für den Sonnenschatten wählen.
 
 ##### Simulator
 
-Uses the time of the connected flight simulator and falls back to real time if not connected. Updates the shadow if the simulator time changes.
+Verwendet die Zeit des angeschlossenen Flugsimulators und fällt auf Echtzeit zurück, wenn er nicht verbunden ist. Aktualisiert den Schatten, wenn sich die Simulatorzeit ändert.
 
-##### Real UTC Time
+##### Reale UTC Zeit
 
-Use real time.
+Nutzt die reale Zeit.
 
-##### User defined Time
+##### Benutzerdefinierte Zeit
 
-Allows to use the user defined time as set by using `Set User defined Time` below.
+Ermöglicht die Verwendung der benutzerdefinierten Zeit, wie sie durch die Verwendung von `Benutzerdefinierte Zeit einstellen` nachfolgend eingestellt werden kann.
 
-##### Set User defined Time
+##### Benutzerdefinierte Zeit einstellen
 
-Opens a dialog to set a user defined time in UTC as a source for the sun shading.
+Öffnet einen Dialog, um eine benutzerdefinierte Zeit in UTC als Quelle für den Sonnenschatten zu nutzen
 
-See [Sun Shading - Set User defined Time](SUNSHADOW.md#sun-shadow-user-defined) for more information.
+Für weitere Informationen siehe [Sonnenschatten - Benutzerdefinierte Zeit einstellen](SUNSHADOW.md#sun-shadow-user-defined).
 
-#### Projection {#projection}
+#### ProjeKtion {#projection}
 
 ##### Mercator {#mercator}
 
-A flat projection that gives the most fluid movement and the sharpest map when using picture tile based online maps themes like _OpenStreetMap_ or _OpenTopoMap_.
+Eine flache Projektion, die die flüssigste Bewegung und die schärfste Karte liefert, wenn Sie Online-Kartenmotive wie _OpenStreetMap_ oder _OpenTopoMap_ verwenden.
 
-##### Spherical {#spherical}
+##### Kugelförmig {#spherical}
 
-Shows earth as a globe which is the most natural projection. Movement can stutter slightly when using the picture tile based online maps themes like _OpenStreetMap_ or _OpenTopoMap_. Use the `Simple`, `Plain` or `Atlas` map themes to prevent this.
+Zeigt die Erde als eine Kugel, die die natürlichste Projektion ist. Die Bewegung kann leicht stottern, wenn Sie die auf Bildkacheln basierenden Online-Kartenmotive wie _OpenStreetMap_ oder _OpenTopoMap_ verwenden. Nutze `Einfach`, `Flach` oder `Atlas` Kartenthemen, um dies zu verhindern.
 
-Online maps can appear slightly blurred when using this projection. This is a result from converting the flat image tiles to the spherical display.
+Online-Karten können bei Verwendung dieser Projektion leicht verschwommen erscheinen. Dies ist ein Ergebnis der Konvertierung der flachen Bildkacheln in den sphärischen Bildschirm.
 
 ![Little Navmap Spherical projection and Simple Map Theme](../images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
 
-_**Picture above:** Spherical map projection with _`Simple`_ offline map theme selected._
+_**Bild oben:** Sphärische Kartenprojektion mit _`Einfach`_ -offline-Kartenmotiv ausgewählt._
 
-#### Theme {#theme}
+#### Kartenothema {#theme}
 
-Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](MAPTHEMES.md) for more information.
+Bitte beachten Sie, dass alle Online-Karten von kostenlosen Diensten geliefert werden, daher können schnelle Download-Geschwindigkeiten und hohe Verfügbarkeit nicht garantiert werden. Auf jeden Fall ist es einfach, eine neue Online-Kartenquelle zu liefern und zu installieren, ohne eine neue _Little Navmap_-Version zu erstellen. Für weitere Informationen siehe [Kartenthemen erstellen oder hinzufügen](MAPTHEMES.md).
 
 ##### OpenStreetMap {#openstreetmap}
 
-This is an online raster \(i.e. based on images\) map that includes a hill shading option. Note that the _OpenStreetMap_ hill shading does not cover the whole globe.
+Dies ist eine Online-Rasterkarte \(d.h. basierend auf Bildern\), die eine Bergschattierungs-Option beinhaltet. Beachten Sie, dass die _OpenStreetMap_ Bergschattierungen nicht den gesamten Globus abdecken.
 
 ![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
-_**Picture above:** View at an Italian airport using OpenStreetMap theme and hill shading._
+_**Bild oben:** Blick auf einen italienischen Flughafen mit OpenStreetMap-Thema und Bergschattierungen._
 
 ##### OpenMapSurfer {#openmapsurfer}
 
-The [OSM Roads](http://korona.geog.uni-heidelberg.de) layer provided by [Heidelberg University](https://www.geog.uni-heidelberg.de/giscience.html). This theme includes optional hill shading which is available worldwide.
+Der [OSM Roads](http://korona.geog.uni-heidelberg.de) Layer von [Heidelberg University](https://www.geog.uni-heidelberg.de/giscience.html). Dieser Layer beinhaltet optionale Bergschattierungen, die weltweit verfügbar sind.
 
-Note that the hill shading option of this map is marked experimental.
+Beachten Sie, dass die Option Bergschattierung dieser Karte als experimentell markiert ist.
 
-Map data for this map is provided by © [OpenStreetMap](https://www.openstreetmap.org) contributors, rendering by [GIScience Research Group @ Heidelberg University](https://www.geog.uni-heidelberg.de/giscience.html) and map styling by Maxim Rylov.
+Die Kartendaten für diese Karte werden von © [OpenStreetMap](https://www.openstreetmap.org) zur Verfügung gestellt, gerendert von [GIScience Research Group @ Heidelberg University](https://www.geog.uni-heidelberg.de/giscience.html) und die Kartenstilisierung von Maxim Rylov.
 
-[SRTM](http://srtm.csi.cgiar.org); ASTER GDEM is a product of [METI](http://www.meti.go.jp/english/index.html) and [NASA](https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
+[SRTM](http://srtm.csi.cgiar.org); ASTER GDEM ist ein Produkt von [METI](http://www.meti.go.jp/english/index.html) und [NASA](https://lpdaac.usgs.gov/dataset_discovery/aster/aster_policies).
 
 ![OSM Roads and Hill shading](../images/osmroad.jpg "OSM Roads and Hill shading")
 
-_**Picture above:** View at an Italian airport using the OpenMapSurfer theme and hill shading._
+_**Bild oben:** Blick auf einen italienischen Flughafen mit dem OpenMapSurfer-Thema und Bergschattierung._
 
 ##### OpenTopoMap {#opentopomap}
 
-An online raster map that mimics a topographic map. Includes hill shading and elevation contour lines at lower zoom distances.
+Eine Online-Rasterkarte, die eine topografische Karte nachahmt. Beinhaltet Bergschattierung und Höhenlinien bei niedrigeren Zoomabständen.
 
-The tiles for this map are provided by [OpenTopoMap](https://www.opentopomap.org).
+Die Kacheln für diese Karte werden von [OpenTopoMap](https://www.opentopomap.org) zur Verfügung gestellt.
 
 ![OpenTopoMap](../images/otm.jpg "OpenTopoMap")
 
-_**Picture above:** View at the eastern Alps using OpenTopoMap theme. A flight plan is shown north of the Alps._
+_**Bild oben:** Blick auf die Ostalpen mit dem Thema OpenTopoMap. Ein Flugplan wird nördlich der Alpen angezeigt._
 
 ##### Stamen Terrain {#stamen-terrain}
 
-A terrain map featuring hill shading and natural vegetation colors. The hill shading is available worldwide.
+Eine Geländekarte mit Bergschattierungen und natürlichen Vegetationsfarben. Die Bergschattierung ist weltweit verfügbar.
 
-Map tiles by [Stamen Design](https://stamen.com), under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
+Kartenkacheln von [Stamen Design](https://stamen.com), mit [CC BY 3.0](https://creativecommons.org/licenses/by/3.0). Daten von [OpenStreetMap](https://www.openstreetmap.org), unter [ODbL](https://www.openstreetmap.org/copyright).
 
 ![Stamen Terrain](../images/stamenterrain.jpg "Stamen Terrain")
 
-_**Picture above:** View showing Stamen Terrain theme._
+_**Bild oben:** Ansicht mit dem Thema Stamen Terrain._
 
 ##### CARTO Light {#carto-light} \(New in version 1.4.4\)
 
-A very bright map called *Positron* which allows to concentrate on the aviation features on the map display. The map includes the same hill shading option as the _OpenStreetMap_.
+Eine sehr helle Karte namens *Positron*, die es ermöglicht, sich auf die Besonderheiten der Luftfahrt auf der Kartendarstellung zu konzentrieren. Die Karte enthält die gleiche Hügelschattierung wie die _OpenStreetMap_.
 
-Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
+Kartenkacheln und Stil von [CARTO](https://carto.com/). Daten von [OpenStreetMap](https://www.openstreetmap.org), unter [ODbL](https://www.openstreetmap.org/copyright).
 
 ##### CARTO Dark {#carto-light} \(New in version 1.4.4\)
 
-A dark map called *Dark Matter*. The map includes the same hill shading option as the _OpenStreetMap_.
+Eine dunkle Karte namens *Dark Matter*. Die Karte enthält die gleiche Hügelschattierung wie die _OpenStreetMap_.
 
-Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
+Kartenkacheln und Stil von [CARTO](https://carto.com/). Daten von [OpenStreetMap](https://www.openstreetmap.org), unter [ODbL](https://www.openstreetmap.org/copyright).
 
-##### Simple \(Offline\) {#simple-offline}
+##### Einfach \(Offline\) {#simple-offline}
 
-This is a political map using colored country polygons. Boundaries and water bodies are depicted coarse. The map included in _Little Navmap_ has an option to display city and country names.
+Dies ist eine politische Karte mit farbigen Länderpolygonen. Grenzen und Gewässer werden grob dargestellt. Die in _Little Navmap_ enthaltene Karte verfügt über eine Option zur Anzeige von Stadt- und Ländernamen.
 
-##### Plain \(Offline\) {#plain-offline}
+##### Flach \(Offline\) {#plain-offline}
 
-A very simple map. The map is included in _Little Navmap_ and has an option to display city and country names. Boundaries and water bodies are depicted coarse.
+Eine sehr einfache Karte. Die Karte ist in _Little Navmap_ enthalten und verfügt über eine Option zur Anzeige von Stadt- und Ländernamen. Grenzen und Gewässer werden grob dargestellt.
 
 ##### Atlas \(Offline\) {#atlas-offline}
 
-A very simple map including coarse hill shading and land colors. The map is included in _Little Navmap_ and has an option to display city and country names. Boundaries and water bodies are depicted coarse.
+Eine sehr einfache Karte mit groben Bergschattierungen und Landfarben. Die Karte ist in _Little Navmap_ enthalten und verfügt über eine Option zur Anzeige von Stadt- und Ländernamen. Grenzen und Gewässer werden grob dargestellt.
 
-### Scenery Library Menu {#scenery-library-menu}
+### Menü Szeneriebibliothek {#scenery-library-menu}
 
-#### Flight Simulators {#flight-simulators}
+#### Flugsimulatoren {#flight-simulators}
 
-One menu item is created for each Flight Simulator installation or database found. These menu items allow switching of databases on the fly. The menu item is disabled if only one Flight Simulator was found.
+Für jede gefundene Flight Simulator-Installation oder Datenbank wird ein Menüpunkt erstellt. Diese Menüpunkte ermöglichen den schnellen Wechsel von Datenbanken. Der Menüpunkt ist deaktiviert, wenn nur ein Flugsimulator gefunden wurde.
 
-The loaded AIRAC cycle is displayed only for X-Plane and Navigraph data since the information is not available for FSX or P3D simulators.
+Der geladene AIRAC-Zyklus wird nur für X-Plane- und Navigraph-Daten angezeigt, da die Informationen für FSX- oder P3D-Simulatoren nicht verfügbar sind.
 
-**You have to set the base path to the X-Plane directory in the **`Load Scenery Library Dialog`** first to enable the X-Plane menu item.**
+**Sie müssen im ersten Schritt den Basispfad auf das X-Plane-Verzeichnis im **`Szeneriebibliothek laden Dialog`** einstellen, um den Menüpunkt X-Plane zu aktivieren.**
 
-This menu is synchronized with simulator selection in the [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog). Once a database is successfully loaded, the display, flight plan and search will switch over to the newly loaded simulator data.
+Dieses Menü ist synchronisiert mit der Auswahl des Simulators im [Szeneriebibliothek laden Dialog](SCENERY.md#load-scenery-library-dialog). Nach erfolgreichem Laden einer Datenbank wechseln Anzeige, Flugplan und Suche zu den neu geladenen Simulatordaten.
 
-**Note that the program does not keep you from using a X-Plane scenery database while being connected to FSX/Prepar3D or vice versa. You will get unwanted effects like wrong weather information if using such a setup.**
+**Beachten Sie, dass das Programm Sie nicht davon abhält, eine X-Plane Szenerie-Datenbank zu verwenden, während Sie mit dem FSX/Prepar3D verbunden sind oder umgekehrt. Sie erhalten unerwünschte Effekte wie falsche Wetterinformationen, wenn Sie ein solches Setup verwenden.**
 
-The program might change a loaded flight plan if you switch between different databases. This can happen if a departure position is set in the plan which does not exist in the other database. Click `New Flight Plan` before switching to avoid this.
+Das Programm kann einen geladenen Flugplan ändern, wenn Sie zwischen verschiedenen Datenbanken wechseln. Dies kann passieren, wenn im Plan eine Abflugposition festgelegt ist, die in der anderen Datenbank nicht vorhanden ist. Klicken Sie `Neuer Flugplan` vor dem Wechsel, um dies zu vermeiden.
 
 #### Navigraph {#navigraph}
 
-This sub menu also indicating the AIRAC cycle is added if a Navigraph database is found in the database directory.
+Dieses Untermenü, das auch den AIRAC-Zyklus anzeigt, wird hinzugefügt, wenn sich eine Navigraph-Datenbank im Datenbankverzeichnis befindet.
 
-See the chapter [Navigation Databases](NAVDATA.md) for more information about these databases and the three different display modes shown below.
+Für weitere Informationen über diese Datenbanken und die drei verschiedenen Anzeigemodi, die unten gezeigt werden, siehe Kapitel [Navigationsdatenbanken](NAVDATA.md).
 
-##### Use Navigraph for all Features {#navigraph-all}
+##### Navigator für alle Funktionen verwenden {#navigraph-all}
 
-Completely ignores the simulator database and takes all information from the Navigraph database.
+Ignoriert die Simulator-Datenbank vollständig und übernimmt alle Informationen aus der Navigraph-Datenbank.
 
-##### Use Navigraph for Navaids and Procedures {#navigraph-navaid-proc}
+##### Nutze Navigraph für Navigationshilfen und Prozeduren {#navigraph-navaid-proc}
 
-This mode blends navaids and more from the Navigraph database with the simulator database. This affects the map display, all information and and all search windows.
+Dieser Modus mischt Navigationshilfen und mehr aus der Navigraph-Datenbank mit der Simulator-Datenbank. Dies betrifft die Kartendarstellung, alle Informationen und alle Suchfenster.
 
-##### Do not use Navigraph Database {#navigraph-none}
+##### Navigraph-Datenbank nicht benutzen {#navigraph-none}
 
-Ignores the Navigraph database and shows only information read from the simulator scenery.
+Ignoriert die Navigraph-Datenbank und zeigt nur Informationen an, die aus der Simulatorlszenerie gelesen wurden
 
-#### Show Database Files {#show-database-files}
+#### Zeige Datenbankdateien {#show-database-files}
 
-Open _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer \(e.g. Windows, Mac or Linux\) using the same database that was created on the computer running the flight simulator.
+Öffnen Sie das Datenbankverzeichnis von _Little Navmap_ in einem Dateimanager. Für weitere Informationen zum Kopieren von Datenbankdateien zwischen verschiedenen Computern siehe [Betrieb ohne Flugsimulator-Installation](RUNNOSIM.md#running-without-flight-simulator-installation). Dadurch kann _Little Navmap_ auf einem Remote-Computer  \(z.B. Windows, Mac oder Linux\) mit der gleichen Datenbank, die auf dem Computer erstellt wurde, auf dem der Flugsimulator läuft, ausgeführt werden.
 
-#### ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Load Scenery Library {#load-scenery-library}
+#### ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Szeneriebibliothek laden {#load-scenery-library}
 
-Open the `Load Scenery Library` dialog. See [Load Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) for more information. This menu item is disabled if no flight simulator installations are found.
+Öffnet den `Szeneriebibliothek laden` Dialog. Für weitere Informationen siehe [Szeneriebibliothek laden Dialog](SCENERY.md#load-scenery-library-dialog). Dieser Menüpunkt ist deaktiviert, wenn keine Flugsimulator-Installationen gefunden werden.
 
-#### ![Copy Airspaces to X-Plane Database](../images/icons/airspacecopy.png "Copy Airspaces to X-Plane Database") Copy Airspaces to X-Plane Database {#copy-airspaces-to-xplane}
+#### ![Copy Airspaces to X-Plane Database](../images/icons/airspacecopy.png "Copy Airspaces to X-Plane Database") Lufträume zur X-Plane Datenbank kopieren {#copy-airspaces-to-xplane}
 
-Copy airspace information from an FSX or P3D database to an X-Plane database. This is needed since X-Plane comes with limited airspace information.
+Kopiert Luftrauminformationen aus einer FSX- oder P3D-Datenbank in eine X-Plane-Datenbank. Dies ist notwendig, da X-Plane mit begrenzten Luftrauminformationen ausgestattet ist.
 
-All airspaces already loaded from X-Plane are deleted before copying. See [X-Plane Airspaces](SCENERY.md#load-scenery-library-dialog-xp-airspaces) for more information.
+Alle bereits aus X-Plane geladenen Lufträume werden vor dem Kopieren gelöscht. Für weitere Informationenn siehe [X-Plane Lufträume](SCENERY.md#load-scenery-library-dialog-xp-airspaces).
 
-You have to switch to an FSX or P3D simulator database first to enable this menu item.
+Sie müssen zuerst zu einer FSX- oder P3D-Simulator-Datenbank wechseln, um diesen Menüpunkt zu aktivieren.
 
-The airspace information is deleted when reloading the X-Plane database. Therefore you have to copy the airspaces again after reloading.
+Die Luftrauminformationen werden beim Neuladen der X-Plane Datenbank gelöscht. Daher müssen Sie die Lufträume nach dem Nachladen erneut kopieren.
 
-### Userdata Menu {#userdata-menu}
+### Menü Nutzerdaten {#userdata-menu}
 
-See [User-defined Waypoints](USERPOINT.md) for more information on user-defined waypoints.
+Für weitere Informationen zu benutzerdefinierten Wegpunkten siehe [Nutzerpunkte](USERPOINT.md).
 
-#### Show Search {#userdata-menu-show-search}
+#### Zeige Suche {#userdata-menu-show-search}
 
-Raise the dock window `Search` and the tab `Userpoints` where you can edit, add delete and seach user-defined waypoints.
+Öffnete das Fenster `Suche` und die Registerkarte `Nutzerpunkte` wo Sie benutzerdefinierte Wegpunkte bearbeiten, löschen und suchen können.
 
-#### Import CSV {#userdata-menu-import-csv}
+#### Importiere CSV {#userdata-menu-import-csv}
 
-Import a CSV file that is compatible with the widely used format from Plan-G and adds all the content to the database.
+Importiert eine CSV-Datei, die mit dem weit verbreiteten Format von Plan-G kompatibel ist und fügt den gesamten Inhalt der Datenbank hinzu.
 
-Note that the CSV format is the only format which allows to write and read all supported data fields.
+Beachten Sie, dass das CSV-Format das einzige Format ist, das das Schreiben und Lesen aller unterstützten Datenfelder ermöglicht.
 
-See [CSV Data Format](USERPOINT.md#userpoints-csv) for a more detailed description.
+Für weitere Informationen siehe [CSV Format](USERPOINT.md#userpoints-csv).
 
-#### Import X-Plane user_fix.dat {#userdata-menu-import-user-fix}
+#### Importiere X-Plane user_fix.dat {#userdata-menu-import-user-fix}
 
-Import user-defined waypoints from the file `user_fix.dat`. The file does not exist by default in X-Plane and has to be created either manually or by exporting from _Little Navmap_.
+Importiert benutzerdefinierte Wegpunkte aus der Datei `user_fix.dat`. Die Datei existiert standardmäßig nicht in X-Plane und muss entweder manuell oder durch den Export aus _Little Navmap_ erstellt werden.
 
-The default location is `XPLANE/Custom Data/user_fix.dat`.
+Der Standardspeicherort ist `XPLANE/Custom Data/user_fix.dat`.
 
-The imported userpoints are of type `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") which can be changed after import using the bulk edit functionality.
+Die importierten Benutzerpunkte sind vom Typ `Wegpunkt` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") die nach dem Import mit Hilfe der Massenbearbeitungsfunktionalität geändert werden kann.
 
-The format is described by Laminar Research here: [XP-FIX1101-Spec.pdf](https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf).
+Das Format wird von Laminar Research hier beschrieben.: [XP-FIX1101-Spec.pdf](https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf).
 
-See [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane) for more information.
+Für weitere Informationen siehe [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane).
 
-#### Import Garmin GTN {#userdata-menu-import-garmin-gtn}
+#### Importiere Garmin GTN {#userdata-menu-import-garmin-gtn}
 
-Reads user-defined waypoints from the Garmin `user.wpt` file. Refer to the manual of the Garmin unit you are using for more information about format and file location.
+Liest benutzerdefinierte Wegpunkte aus der Garmin. `user.wpt` Datei. Weitere Informationen zu Format und Speicherort finden Sie im Handbuch des von Ihnen verwendeten Garmin-Geräts.
 
-The imported userpoints are of type `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") which can be changed after import using the bulk edit functionality.
+Die importierten Benutzerpunkte sind vom Typ `Wegpunkte` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") die nach dem Import mit Hilfe der Massenbearbeitungsfunktionalität geändert werden können.
 
-See [Garmin user.wpt Data Format](USERPOINT.md#userpoints-garmin) for more information.
+Für weitere Informationen siehe [Garmin user.wpt Data Format](USERPOINT.md#userpoints-garmin).
 
-#### Export CSV {#userdata-menu-export-csv}
+#### Exportiere CSV {#userdata-menu-export-csv}
 
-Create or append user-defined waypoints to a CSV file. A dialog asks if only selected userpoints should be exported and if the userpoints should be appended to an already present file.
+Erstellen oder Anhängen von benutzerdefinierten Wegpunkten an eine CSV-Datei. Ein Dialog fragt, ob nur ausgewählte Benutzerpunkte exportiert werden sollen und ob die Benutzerpunkte an eine bereits vorhandene Datei angehängt werden sollen.
 
-Note that the exported file contains an extra column `Region` compared to the Plan-G format. The description field supports more than one line of text and special characters. Therefore, not all programs might be able to import this file. If needed, adapt the user-defined waypoints.
+Beachten Sie, dass die exportierte Datei eine zusätzliche Spalte `Region` im Vergleich zum Plan-G-Format enthält. Das Beschreibungsfeld unterstützt mehr als eine Zeile Text und Sonderzeichen. Daher können möglicherweise nicht alle Programme diese Datei importieren. Passen Sie bei Bedarf die benutzerdefinierten Wegpunkte an.
 
-#### Export X-Plane user_fix.dat {#userdata-menu-export-user-fix}
+#### Exportiere X-Plane user_fix.dat {#userdata-menu-export-user-fix}
 
-Only selected userpoints or all can be exported. The exported data can optionally be appended to an already present file.
+Es können nur ausgewählte Benutzerpunkte oder alle exportiert werden. Die exportierten Daten können optional an eine bereits vorhandene Datei angehängt werden.
 
-Not all data fields can be exported to this format. The ident field is required for export.
+Nicht alle Datenfelder können in dieses Format exportiert werden. Das Identfeld wird für den Export benötigt.
 
-Also, you have to make sure that the user waypoint ident is unique within the `user_fix.dat`.
+Außerdem müssen Sie sicherstellen, dass die Benutzer-Wegpunkt-ID eindeutig innerhalb der `user_fix.dat` ist.
 
-See [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane) for more information about limitations.
+Für weitere Informationen siehe [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane).
 
-#### Export Garmin GTN {#userdata-menu-export-garmin-gtn}
+#### Exportiere Garmin GTN {#userdata-menu-export-garmin-gtn}
 
-Only selected userpoints or all can be exported. The exported data can optionally be appended to an already present file.
+Es können nur ausgewählte Benutzerpunkte oder alle exportiert werden. Die exportierten Daten können optional an eine bereits vorhandene Datei angehängt werden.
 
-Not all data fields can be exported to this format. The ident field is required for export.
-Some fields like the name are adapted to limitations.
+Nicht alle Datenfelder können in dieses Format exportiert werden. Das Identfeld wird für den Export benötigt.
+Einige Felder wie der Name unterliegen Beschränkungen.
 
-See [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane) for more information about limitations.
+Für weitere Informationen siehe [X-Plane user_fix.dat Data Format](USERPOINT.md#userpoints-xplane).
 
-#### Export XML for FSX/P3D BGL Compiler {#userdata-menu-export-bgl}
+#### Exportiere XML für FSX/P3D BGL Compiler {#userdata-menu-export-bgl}
 
-This export options creates an XML file which can be compiled into an BGL file containing waypoints.
+Diese Exportoptionen erstellt eine XML-Datei, die in eine BGL-Datei mit Wegpunkten kompiliert werden kann.
 
-The region and ident fields are required for this export option.
+Die Felder Region und Identität sind für diese Exportmöglichkeit erforderlich.
 
-See the Prepar3D SDK documentation for information on how to compile the BGL and how to add this to the simulator.
+In der Dokumentation zum Prepar3D SDK finden Sie Informationen darüber, wie Sie das BGL kompilieren und wie Sie es dem Simulator hinzufügen können.
 
-#### Create Logbook entries {#userdata-menu-create-logbook}
+#### Erstelle Logbucheinträge {#userdata-menu-create-logbook}
 
-Checking this menu item enables a simple logbook feature.
+Wenn Sie diesen Menüpunkt markieren, wird eine einfache Logbuchfunktion aktiviert.
 
-_Little Navmap_ will create a userpoint of type `Logbook` ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") on each takeoff and landing when connected to a simulator.
+_Little Navmap_ erstellt bei jedem Start und jeder Landung, wenn sie mit einem Simulator verbunden sind, einen Benutzerpunkt vom Typ `Logbuch` ![Logbook](../images/icons/userpoint_Logbook.png "Logbook").
 
-These two logbook entries contain all available information, like the flight plan, time, fuel consumed and much more.
+Diese beiden Logbucheinträge enthalten alle verfügbaren Informationen, wie Flugplan, Zeit, Treibstoffverbrauch und vieles mehr.
 
-#### Clear database {#userdata-menu-clear-database}
+#### Datenbank löschen {#userdata-menu-clear-database}
 
-Remove all user-defined waypoints from the database.
+Entfernt alle benutzerdefinierten Wegpunkte aus der Datenbank.
 
-A CSV backup file named `little_navmap_userdata_backup.csv` is created in the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` before deleting all user-defined waypoints.
+Eine CSV-Backup-Datei namens `little_navmap_userdata_backup.csv` wird im Einstellungsverzeichnis `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`  angelegt, bevor alle benutzerdefinierten Wegpunkte gelöscht werden.
 
-_Little Navmap_ also creates a full database backup on every start. See [Files](FILES.md#userdata).
+_Little Navmap_ erstellt auch bei jedem Start eine vollständige Datenbanksicherung. Siehe [Dateien](FILES.md#userdata).
 
-### Aircraft Menu {#aircraft-menu}
+### Menü Aircraft {#aircraft-menu}
 
-This menu contains functionality for aircraft performance profiles which allow fuel planning and traveling time estimation.
+Dieses Menü enthält Funktionen für Flugzeugleistungsprofile, die eine Kraftstoffplanung und Reisezeitschätzung ermöglichen.
 
-See [Aircraft Performance](AIRCRAFTPERF.md) and [Edit Aircraft Performance](AIRCRAFTPERFEDIT.md) for more information.
+Für weitere Informationen siehe [Aircraft Performance](AIRCRAFTPERF.md) und [Aircraft Performance bearbeiten](AIRCRAFTPERFEDIT.md).
 
-#### ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") New Aircraft Performance {#aircraft-menu-new}
+#### ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") Neue Aircraft Perfomance {#aircraft-menu-new}
 
-Creates a new performance profile with default values. A profile with 3 nm per
-1000 ft for descent and climb rules and no fuel consumption
-is default. Red warning messages will be shown since the profile is not complete.
+Erstellt ein neues Leistungsprofil mit Standardwerten. Ein Profil mit 3 nm pro
+1000 ft für Abstiegs- und Aufstiegsregeln und kein Kraftstoffverbrauch
+ist die Voreinstellung. Solange das Profil nicht vollständig ist, werden rote Warnmeldungen angezeigt .
 
-#### ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance") Load Aircraft Performance {#aircraft-menu-load}
+#### ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance") Lade Aircraft Performance {#aircraft-menu-load}
 
-Loads a `lnmperf` aircraft performance profile. You can also load a profile by dragging the file from a file manager like Windows Explorer into the main window of _Little Navmap_.
+Läd ein `lnmperf` Aircraft Performance Profil. Sie können ein Profil auch laden, indem Sie die Datei aus einem Dateimanager wie dem Windows Explorer in das Hauptfenster von _Little Navmap_ ziehen.
 
-#### ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance") Save Aircraft Performance {#aircraft-menu-save}
+#### ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance") Speicher Aircraft Performance {#aircraft-menu-save}
 
-Saves the current profile. Opens a file dialog if not saved before.
+Speichert das aktuelle Profil. Öffnet einen Datei-Dialog, wenn es vorher noch nicht gespeichert wurde.
 
-#### ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Save Aircraft Performance as") Save Aircraft Performance as {#aircraft-menu-save-as}
+#### ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Save Aircraft Performance as") Speicher Aircraft Performance als {#aircraft-menu-save-as}
 
-Allows to save the current profile using a new filename.
+Ermöglicht das Speichern des aktuellen Profils unter einem neuen Dateinamen.
 
-#### ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") Edit Aircraft Performance {#aircraft-menu-edit}
+#### ![Bearbeite Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") Edit Aircraft Performance {#aircraft-menu-edit}
 
-Opens the [Edit Aircraft Performance](AIRCRAFTPERFEDIT.md) dialog for the current performance profile.
+Öffnet den [Bearbeite Aircraft Performance](AIRCRAFTPERFEDIT.md) Dialog für das aktuelle Leistungsprofil.
 
-#### Recent Performance Files {#aircraft-menu-recent}
+#### Vorhandene Performance Dateien {#aircraft-menu-recent}
 
-Shows all recently loaded aircraft performance files for quick access. You can clear the list by selecting the sub-menu item `Clear Menu`.
+Zeigt alle zuletzt geladenen Flugzeugleistungsdateien für den schnellen Zugriff an. Sie können die Liste löschen, indem Sie den Untermenüpunkt `Clear Menu` auswählen.
 
-#### Collect Performance for Flight {#aircraft-menu-collect}
+#### Sammelt Performance von dem Flug {#aircraft-menu-collect}
 
-Shows a confirmation dialog with a quick help and starts the automatic aircraft performance collection while flying.
+Zeigt einen Bestätigungsdialog mit einer Kurzhilfe an und startet die automatische Leistungserfassung während des Fluges.
 
-See [Collect Performance for Flight](AIRCRAFTPERF.md#aircraft-performance-collect).
+Siehe [Sammelt Performance von dem Flug](AIRCRAFTPERF.md#aircraft-performance-collect).
 
-### Tools Menu {#tools-menu}
+### Menü Werkzeuge {#tools-menu}
 
-#### ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Flight Simulator Connection {#flight-simulator-connection}
+#### ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Flugsimulatorverbindung {#flight-simulator-connection}
 
-Open the `Connect` dialog allowing _Little Navmap_ to connect directly to a Flight Simulator, the *Little Xpconnect* X-Plane plugin, or remotely using the [Little Navconnect](https://albar965.github.io/littlenavconnect.html) agent. See [Connecting to a Flight Simulator](CONNECT.md#connecting-to-a-flight-simulator) for more information.
+Öffnet den `Verbindung` Dialog, der es _Little Navmap_ ermöglicht, sich direkt mit einem Flugsimulator, mit *Little Xpconnect* X-Plane Plugin oder Remote mit Hilfe von [Little Navconnect](https://albar965.github.io/littlenavconnect.html) Agent zu verbinden. Für weitere Informationen siehe [Verbinden mit einem Flugsimulator](CONNECT.md#connecting-to-a-flight-simulator).
 
-#### Reset all Messages {#reset-all-messages}
+#### Alle Meldungen zurücksetzen {#reset-all-messages}
 
-Re-enable all dialogs that were disabled by selecting `Do not show this dialog again` or similar messages.
+Aktiviert alle Dialoge wieder, die durch die Auswahl von `Diesen Dialog nicht mehr anzeigen` oder ähnliche Meldungen aabgeschaltet wurden.
 
-#### ![Options](../images/icons/settings.png "Options") Options {#options}
+#### ![Options](../images/icons/settings.png "Options") Einstellungen {#options}
 
-Open the [Options dialog](OPTIONS.md#options-dialog).
+Öffnet den [Einstellungsdialog](OPTIONS.md#options-dialog).
 
-### Window Menu {#window-menu}
+### Menü Fenster {#window-menu}
 
-#### Map Overlays {#map-overlays}
+#### Karten-Overlays {#map-overlays}
 
-Show or hide floating map overlays, like the overview on the top left or the compass on the top right corner of the map window.
+Fließende Kartenüberlagerungen, wie die Übersicht oben links oder der Kompass oben rechts im Kartenfenster, ein- oder ausblenden.
 
-#### Styles {#window-styles}
+#### Stil {#window-styles}
 
-Allows to switch the style of the graphical user interface on the fly. A restart is not needed.
+Ermöglicht es, den Stil der grafischen Benutzeroberfläche während der Laufzeit zu ändern. Ein Neustart ist nicht erforderlich.
 
-The user interface styles contain a `Night` mode that can be used for flights in a dark environment. You can also dim the map and elevation profile display for this style in the dialog `Options` on tab `Map Display` \(`Map Dimming in Night Style` at the bottom of the dialog\).
+Die Styles der Benutzeroberfläche enthalten einen `Nacht` Modus, der für Flüge in einer dunklen Umgebung verwendet werden kann. Sie können die Karten- und Höhenprofilanzeige für diesen Stil auch im Dialog  `Einstellungen` auf der Registerkarte `Kartenanzeige` \(`Karte im Nachtstil verdunkeln` am unteren Rand des Dialogs\) dimmen.
 
 The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
 
-The available styles depend on the operating system except for `Fusion` and `Night` which are always available.
+Die verfügbaren Stile hängen mit Ausnahme von `Fusion` und `Night`, die immer verfügbar sind, vom Betriebssystem ab.
 
-#### Show all floating Windows {#search}
+#### Alle offenen Fenster anzeigen {#search}
 
-Raises all undocked \(i.e. floating\) windows before the main window. This can be helpful if a window got lost.
+Zieht alle abgekoppelten Fenster \(z.B. fließend) vor das Hauptfenster. Dies kann hilfreich sein, wenn ein Fenster verloren geht.
 
-#### ![Search](../images/icons/searchdock.png "Search") Search {#search}
+#### ![Search](../images/icons/searchdock.png "Search") Suche {#search}
 
-#### ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flight Plan {#flight-plan}
+#### ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flugplan {#flight-plan}
 
-#### ![Information](../images/icons/infodock.png "Information") Information {#information}
+#### ![Information](../images/icons/infodock.png "Information") Informationen {#information}
 
-#### ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Flight Plan Elevation Profile {#flight-plan-elevation-profile}
+#### ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Höhenprofil Flugplan {#flight-plan-elevation-profile}
 
-#### ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulator Aircraft {#simulator-aircraft}
+#### ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Simulatorflugzeug {#simulator-aircraft}
 
-#### ![Legend](../images/icons/legenddock.png "Legend") Legend {#legend}
+#### ![Legend](../images/icons/legenddock.png "Legend") Legende {#legend}
 
-Open or close these dock windows. The map dock window cannot be closed.
+Öffnen oder schließen Sie diese Dockfenster. Das Kartendockfenster kann nicht geschlossen werden.
 
-#### Main Toolbar, Map Toolbar, Map Airspaces Toolbar, Map Options Toolbar, Flight Plan Toolbar, Dock Window Toolbar, Statusbar {#main-toolbar-options}
+#### Haupt-Werkzeugleiste, Werkzeugleiste Karten, Werkzeugleiste Lufträume , Werkzeugleiste Kartenoptionen, Werkzeugleiste Flugplan, Werkzeugleiste Fenster anheften, Statusleiste {#main-toolbar-options}
 
-Show or hide these toolbars and the statusbar.
+Diese Symbolleisten und die Statusleiste ein- oder ausblenden.
 
-#### Reset Window Layout {#reset-layout}
+#### Fensteranordnung zurücksetzen {#reset-layout}
 
-Reset the main window layout back to default. This involves visibility, position and state of all dock windows as well as the toolbars. This function can be helpful if a dock window gets lost on multi monitor setups.
+Setzen Sie das Layout des Hauptfensters wieder auf den Standardwert zurück. Dazu gehören Sichtbarkeit, Position und Zustand aller Dockfenster sowie der Symbolleisten. Diese Funktion kann hilfreich sein, wenn ein Dockfenster bei Multi-Monitor-Setups verloren geht.
 
-### Help Menu {#help-menu}
+### Menü Hilfe {#help-menu}
 
-#### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contents \(Online\) {#help-contents}
+#### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Inhalte \(Online\) {#help-contents}
 
-Show the online user manual in the default web browser.
+Zeigen Sie das Online-Benutzerhandbuch im Standard-Webbrowser an.
 
 #### ![Tutorials \(Online\)](../images/icons/help.png "Tutorials \(Online\)") Tutorials \(Online\) {#help-tutorials}
 
-Shows the online tutorials in the default web browser.
+Zeigt die Online-Tutorials im Standard-Webbrowser an.
 
-#### ![Frequently asked Questions \(Online\)](../images/icons/help.png "Frequently asked Questions \(Online\)") Frequently asked Questions \(Online\) {#help-faq}
+#### ![Frequently asked Questions \(Online\)](../images/icons/help.png "Frequently asked Questions \(Online\)") Häufig gestellte Fragen \(Online\) {#help-faq}
 
-Shows the frequently asked questions in the web browser.
+Zeigt die häufig gestellten Fragen im Webbrowser an.
 
-#### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contents \(Offline, PDF\) {#help-contents-offline}
+#### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Inhalte \(Offline, PDF\) {#help-contents-offline}
 
-Show the included PDF user manual in the default PDF viewer.
+Zeigt das mitgelieferte PDF-Benutzerhandbuch im Standard-PDF-Viewer an.
 
-#### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legend {#navmap-legend-map-legend}
+#### ![NavMap Legend](../images/icons/help.png "NavMap Legend") NavMap Legende {#navmap-legend-map-legend}
 
-Show the navigation related map legend in the `Legend` dock window. You can also access the legend here: [Navmap Legend](LEGEND.md).
+Zeigt die Legende der navigationsbezogenen Karte im Dockfenster `Legende`. Sie können die Legende auch hier aufrufen: [Navmap Legende](LEGEND.md).
 
-#### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Map Legend for current Map Theme {#navmap-legend-map-legend}
+#### ![Map Legend for current Map Theme](../images/icons/help.png "Map Legend for current Map Theme") Kartenlegende für aktuelles Kartenthema {#navmap-legend-map-legend}
 
-Show the map theme dependent base legend in the `Legend` dock window. Note that the legend is not available for all map themes.
+Zeigen Sie die kartenmotivabhängige Basislegende im Dockfenster `Legend`. Beachten Sie, dass die Legende nicht für alle Kartenmotive verfügbar ist.
 
-#### ![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap") About Little Navmap {#about-little-navmap}
+#### ![About Little Navmap](../images/icons/littlenavmap.png "About Little Navmap") Über Little Navmap {#about-little-navmap}
 
-Show version and revision number for _Little Navmap_, also contains links to the database directory, configuration file, log file and the author's e-mail address.
+Zeigt Versions- und Revisionsnummer für _Little Navmap_ , enthält auch Links zum Datenbankverzeichnis, zur Konfigurationsdatei, zur Protokolldatei und zur E-Mail-Adresse des Autors.
 
-#### ![About Marble](../images/icons/marble.png "About Marble") About Marble {#about-marble}
+#### ![About Marble](../images/icons/marble.png "About Marble") Über Marble {#about-marble}
 
-Display information about the [Marble widget](https://marble.kde.org) that is used to download and show the maps.
+Zeigt Informationen über [Marble widget](https://marble.kde.org) an, das zum Herunterladen und Anzeigen der Karten verwendet wird.
 
-#### ![About Qt](../images/icons/qticon.png "About Qt") About Qt {#about-qt}
+#### ![About Qt](../images/icons/qticon.png "About Qt") Über Qt {#about-qt}
 
-Display information about the [Qt application framework](https://www.qt.io) that is used by _Little Navmap_.
+Zeigt Informationen über das [Qt application framework](https://www.qt.io), das von _Little Navmap_ verwendet wird, an.
 
-#### ![Donate for this Program](../images/icons/about.png "Dontate for this Program") Dontate for this Program {#donate}
+#### ![Donate for this Program](../images/icons/about.png "Dontate for this Program") Für dieses Programm spenden {#donate}
 
-Opens the donation web page in your default browser.
+Öffnet die Spenden-Webseite in Ihrem Standardbrowser.
 
-If you would like to show your appreciation you can donate using PayPal.
+Wenn Sie Ihre Wertschätzung zeigen möchten, können Sie mit Hilfe von PayPal spenden.
 
-Donations are purely optional but greatly appreciated.
+Spenden sind rein optional, aber sehr willkommen.
 
-#### ![Check for Updates](../images/icons/revert.png "Check for Updates") Check for Updates {#check-updates}
+#### ![Check for Updates](../images/icons/revert.png "Check for Updates") Auf Aktualisierungen prüfen {#check-updates}
 
-Allows to manually check for updates. This will also show updates that were recently ignored by pressing the `Ignore this Update` on the notification dialog.
+Ermöglicht die manuelle Suche nach Updates. Dies zeigt auch Updates an, die kürzlich durch Drücken der Taste `Dieses Update ignorieren` im Benachrichtigungsdialog ignoriert wurden.
 
-See [Checking for Updates](UPDATE.md) for more information.
+Für weitere Informationen siehe [Auf Updates prüfen](UPDATE.md).
 
-## Statusbar {#statusbar}
+## Statusanzeige {#statusbar}
 
-The statusbar at the bottom of the main window shows various indications \(from left to right\):
+Die Statusleiste am unteren Rand des Hauptfensters zeigt verschiedene Anzeigen \(von links nach rechts\) an:
 
-* Last action or quick help explaining a menu item or toolbar button.
-* Connection status for a local or remote connection. The tooltip provides more detail about the status, like the hostname for remote connections.
-  * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
-  * `Connected`: A connection was established.
-  * `Disconnected`: The simulator or _Little Navconnect_ exited.
-* Indicator that shows airport types, airspaces, navaids or AI vehicles currently visible on the map. The tooltip gives more details.
-  * A red warning message `Too many objects` will be shown if too many objects are displayed on the map due to too high a detail level. The map display will be incomplete if this happens.
-  * A red `Database empty` message will be shown if the currently selected database has no content and needs to be loaded.
-* Map detail level. Range is -5 for least detail to +5 for most detail.
-* Online map download progress indicator. This shows the state of the current map download. The text is prefixed with a red `Offline.` indication if offline mode is enabled.
-  * `Done.`: All map data loaded successfully.
-  * `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
-  * `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
-  * `Incomplete.`: Download failed. Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region or if you zoom in too close when using certain online maps.
-* Zoom distance \(viewpoint distance to earth surface\) in nautical miles or kilometers.
-* Cursor position on map as latitude and longitude depending on selected unit in the dialog `Options`.
-  * Ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
-  * Magnetic variance at the cursor position in degrees West or East.
-* Current date of month and zulu/UTC time `hours:minutes:seconds`. This is the real world time and not the simulator time. The tooltip gives more date and time information.
+* Letzte Aktion oder Kurzhilfe zur Erläuterung eines Menüpunktes oder einer Schaltfläche in der Symbolleiste.
+* Verbindungsstatus für eine lokale oder Remote-Verbindung. Der Tooltip enthält weitere Details über den Status, wie z.B. den Hostnamen für Remote-Verbindungen.
+  * `Connecting...`: Das Programm versucht, eine Verbindung herzustellen, die entweder manuell oder automatisch hergestellt wurde.
+  * `Connected`: Es wurde eine Verbindung hergestellt..
+  * `Disconnected`: Der Simulator oder _Little Navconnect_ wurde verlassen.
+* Indikator, der die derzeit auf der Karte sichtbaren Flughafentypen, Lufträume, Navigationssysteme oder KI-Fahrzeuge anzeigt. Der Tooltip enthält weitere Details.
+  * Eine rote Warnmeldung `Zu viele Objekte` wird angezeigt, wenn aufgrund eines zu hohen Detaillierungsgrades zu viele Objekte auf der Karte angezeigt werden. Die Kartendarstellung wird in diesem Fall unvollständig sein.
+  * Eine rote `Database empty` Meldung wird angezeigt, wenn die aktuell ausgewählte Datenbank keinen Inhalt hat und geladen werden muss.
+* Detaillierungsgrad der Karte. Der Bereich ist -5 für kleinste Details bis +5 für größte Details.
+* Online-Karten-Download-Fortschrittsanzeige. Hier wird der Status des aktuellen Kartendownloads angezeigt. Dem Text ist eine rote Markierung `Offline.` vorangestellt, wenn der Offline-Modus aktiviert ist.
+  * `Done.`: Alle Kartendaten wurden erfolgreich geladen.
+  * `Waiting for Data ...`: Kartendaten fehlen im Cache und wurden angefordert. Auf die Antwort wird gewartet.
+  * `Waiting for Update ...`: Die Kartendaten sind bereits geladen, aber nach zwei Wochen abgelaufen. Warten auf neue Daten nach Anforderung einer Aktualisierung.
+  * `Incomplete.`: Der Download ist fehlgeschlagen. Beachten Sie, dass die Fortschrittsanzeige so aussehen kann, als wäre sie in der Nachricht  `Waiting for Data ...` stecken geblieben,wenn für eine _OpenStreetMap_ Region keine Bergschattierung verfügbar ist oder wenn Sie bei Verwendung bestimmter Online-Karten zu nah heranzoomen.
+* Zoom-Distanz \(Blickwinkel-Distanz zur Erdoberfläche\) in Seemeilen oder Kilometern.
+* Cursorposition auf der Karte als Breiten- und Längengrad in Abhängigkeit von der gewählten Einheit im Dialog `Options`.
+  * Bodenerhebung unter dem Cursor nach einer kurzen Verzögerung, wenn die [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) Offline-Höhendaten werden ausgewählt wurden.
+  * Magnetische Varianz an der Cursorposition in Grad West oder Ost.
+* Aktuelles Datum des Monats und Zulu/UTC-Zeit `Stunden:Minuten:Sekunden`. Dies ist die reale Weltzeit und nicht die Simulatorzeit. Der Tooltip zeigt mehr Datums- und Zeitinformationen an.
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 
-_**Picture above:** Status bar of version 1.8.5 with message about the last action on the left side \(_`Options changed.`_\), the connection status and a tooltip that indicates what is currently shown on the map. All map features are shown. The map detail level is unchanged and the map coordinates are shown on the bottom right. Altitude at cursor is shown too since offline elevation data is installed. The online map download progress indicator shows _`Done.`_ indicating all map tiles were downloaded. Zoom distance is 7.8 nautical miles._
+_**Bild oben:** Statusleiste der Version 1.8.5 mit Meldung über die letzte Aktion auf der linken Seite \(_`Options changed.`_\), den Verbindungsstatus und einen Tooltip, der anzeigt, was gerade auf der Karte angezeigt wird. Alle Kartenfunktionen werden angezeigt. Die Kartendetailstufe bleibt unverändert und die Kartenkoordinaten werden unten rechts angezeigt. Die Höhe am Cursor wird ebenfalls angezeigt, da Offline-Höhendaten installiert sind. Die Fortschrittsanzeige für den Online-Kartendownload zeigt _`Done.`_ an, die anzeigt, dass alle Kartenkacheln heruntergeladen wurden. Die Zoom-Entfernung beträgt 7,8 Seemeilen._
 

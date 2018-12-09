@@ -142,7 +142,7 @@ tooltips.
 
 The weather type `Flight Simulator` will either display weather from the FSX or P3D connection or from X-Planes `METAR.rwx` weather file.
 
-_Active Sky_ can only be selected if either _Active Sky Next_, _AS16_ or _Active Sky for Prepar3D v4_ are installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
+_Active Sky_ can only be selected if either _Active Sky Next_, _AS16_, _Active Sky for Prepar3D v4_ or _Active Sky XP_ are installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
 
 The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services change the URLs.
 
