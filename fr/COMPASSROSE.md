@@ -1,4 +1,4 @@
-## Compas Rose des Vents {#compass-rose}
+## Compass Rose {#compass-rose}
 
 La rose des vents indique le nord vrai, le nord magnétique, le nord, le cap de l'aéronef et la trajectoire de l'aéronef.
 
@@ -18,7 +18,15 @@ L'épaisseur des lignes peut être modifiée dans la boîte de dialogue `Options
 
 ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") Cercles et marques de distance par rapport à l'aéronef utilisateur s'il est connecté.
 
-![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") La ligne pleine indique la trajectoire de l'aéronef en degrés magnétiques s'il est connecté.
+| | |
+| --- | --- |
+| ![True North](../images/legend/compass_rose_true_north.png "True North") | Nord vrai. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Nord magnétique. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Cercles et marques de distance par rapport à l'aéronef de l'utilisateur s'il est connecté. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | La ligne continue indique la trajectoire de l'aéronef en degrés magnétiques si l'aéronef est connecté. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | La ligne en pointillés indique le cap de l'aéronef s'il est connecté.. |
+| ![Flight Plan Leg Course](../images/legend/compass_rose_leg.png "Flight Plan Leg Course") | Le segment de ligne magenta indique la route jusqu'au prochain repère de balisage du segment actif du plan de vol. Caché si aucun plan de vol n'est chargé. |
+| ![Crab Angle](../images/legend/compass_rose_crab.png "Crab Angle") | Indicateur d'angle de crabe. Indique le cap qui doit être suivi vers le prochain waypoint du segment du plan de vol actif en tenant compte du vent de travers. Caché si aucun plan de vol n'est chargé. |
 
 ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") La ligne en pointillés indique le cap de l'aéronef s'il est connecté.
 

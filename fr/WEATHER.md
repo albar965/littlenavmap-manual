@@ -5,7 +5,7 @@ _Little Navmap_ peut afficher les METARs de plusieurs sources :
 * FSX ou P3D si connecté. Ceci s'applique également aux configurations réseau.
 * Météo X-Plane en temps réel à partir du fichier `METAR.rwx`. Pas lors de l'utilisation de la configuration réseau.
 * [NOAA](http://www.weather.gov) service météorologique en ligne
-* [VATSIM](http://www.vatsim.net) service météorologique en ligne du réseau
+* [VATSIM](http://www.vatsim.net) service météorologique connecté au réseau
 * [HiFi Simulation Technologies](http://www.hifisimtech.com):
   * _Active Sky Next_ \(ASN\)
   * _AS16_
@@ -22,9 +22,9 @@ Les METAR sont affichés dans les infobulles de l'aérodrome et dans l'onglet ` 
 
 ![Weather tab](../images/weather_fr.jpg "Weather tab")
 
-_**Photo ci-dessus:** Informations météorologiques décodées provenant de deux sources en ligne. Le simulateur de vol n'est pas connecté._
+_**Image ci-dessus:** Informations météorologiques décodées provenant de deux sources en ligne. Le simulateur de vol n'est pas connecté._
 
-### Flight Simulator
+### Simulateur de Vol
 
 Les informations météorologiques provenant d'un simulateur de vol ou du fichier X-Plane `METAR.rwx` peuvent être affichées en trois types pour les METAR et les conditions météorologiques décodées qui dépendent des éléments suivants l'aérodrome sélectionné :
 
@@ -51,7 +51,8 @@ Vous pouvez également sélectionner manuellement le fichier `current_wx_snapsho
 
 La sélection manuelle de fichiers peut également être utile si une nouvelle version de _Active Sky_ n'est pas encore prise en charge par _Little Navmap_.
 
-La météo de départ et de destination s'affichera si un plan de vol est chargé dans l'un des programmes _Active Sky_. Un suffixe `Destination` ou `Départ` indiquera l'utilisation de la météo du plan de vol Active Sky sur l'onglet `Météo`. Cela donne aux utilisateurs de _Active Sky_ l'indication météorologique la plus précise pour le départ et la destination.
+Tous les programmes _Active Sky_ sont reconnus automatiquement au démarrage de chaque simulateur
+Les fichiers `current_wx_snapshot.txt` et `activeflightplanwx.txt` sont chargés et surveillés pour les modifications. La météo sera rechargée et mise à jour sur l'écran d'information si nécessaire.
 
 Notez que l'indication de `Départ` ou `Destination` dépend entièrement du plan de vol chargé dans _Active Sky_ et non du plan de vol dans _Little Navmap_.
 

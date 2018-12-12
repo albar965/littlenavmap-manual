@@ -52,7 +52,7 @@ Cliquez sur Annuler ![Undo](../images/icons/undo.png) ou Refaire ![Redo](../imag
 
 ![Append Waypoint](../images/tutorial/vfrappend_fr.jpg)
 
-ne autre fonction est `Ajouter la position au Plan de Vol` ![Add Position to Flight Plan](../images/icons/routeadd.png) qui insérera la position cliquée au segment du plan de vol le plus proche. Vous pouvez l'utiliser pour ajouter des positions définies par l'utilisateur, des aérodromes ou des navaids au milieu d'un plan de vol. Le segment le plus proche sera choisi automatiquement par _Little Navmap_.
+Une autre fonction est `Ajouter la position au Plan de Vol` ![Add Position to Flight Plan](../images/icons/routeadd.png) qui insérera la position cliquée au segment du plan de vol le plus proche. Vous pouvez l'utiliser pour ajouter des positions définies par l'utilisateur, des aérodromes ou des navaids au milieu d'un plan de vol. Le segment le plus proche sera choisi automatiquement par _Little Navmap_.
 
 _Little Navmap_ attribue automatiquement des noms aux waypoints définis par l'utilisateur. Vous pouvez les laisser tels quels ou les remplacer par un nom plus significatif.
 
@@ -131,7 +131,7 @@ Suivez les segments ci-dessous pour obtenir une carte en mouvement et voir votre
 * Ouvrez la boîte de dialogue `Connexion` en utilisant `Outils` -&gt; `Connexion du Simulateur de Vol` ![Flight Simulator Connection](../images/icons/network.png) et vérifiez si `Connexion automatique` est sélectionné. Activez-la si ce n'est pas le cas.  _Little Navmap_ trouvera le simulateur, peu importe s'il est déjà démarré ou s'il sera démarré plus tard.
 ![Connect Dialog](../images/tutorial/vfrconnect_fr.jpg)
 * Cliquez sur `Connecter` qui fermera la boîte de dialogue.
-* Enable `Carte` -&gt; `Centrer l'Aéronef` ![Center Aircraft](../images/icons/centeraircraft.png). La carte sautera à l'aéronef simulateur et le gardera centré si un vol actif si chargé, c'est-à-dire que le simulateur n'est pas dans l'écran d'ouverture.
+* Activer la `Carte` -&gt; `Centrer l'Aéronef` ![Center Aircraft](../images/icons/centeraircraft.png). La carte sautera à l'aéronef simulateur et le gardera centré si un vol actif si chargé, c'est-à-dire que le simulateur n'est pas dans l'écran d'ouverture.
 * Démarrez le simulateur si ce n'est pas déjà fait, chargez le plan de vol et partez en vol.
 
 Voir aussi [Connexion à un Simulateur de Vol](CONNECT.md).

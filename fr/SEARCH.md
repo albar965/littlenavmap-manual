@@ -48,13 +48,13 @@ Vérifiez le menu déroulant pour l'indicateur de changement `*` et les champs d
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-_**Image ci-dessus:** Une recherche par distance complexe. Trouvez tous les aérodromes situés à une distance comprise entre 200 et 400 miles nautiques de Francfort \(EDDF\). Les aérodromes devraient avoir une cote supérieure à 0 et devraient avoir au moins une piste éclairée. Les aérodromes militaires et les aérodromes fermés sont exclus. Les aérodromes résultants sont mis en évidence sur la carte en les sélectionnant dans le tableau des résultats de recherche._
+_**Image ci-dessus:** Une recherche par distance complexe. Trouvez tous les aérodromes situés à une distance comprise entre 200 et 400 miles nautiques de Francfort \(EDDF\). Les aérodromes devraient avoir une cote supérieure à 0 et devraient avoir au moins une piste éclairée. Les aérodromes militaires et les aérodromes inoccupés sont exclus. Les aérodromes résultants sont mis en évidence sur la carte en les sélectionnant dans le tableau des résultats de recherche._
 
 ![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
 
 _**Image ci-dessus:** Une recherche complexe de scènes. Cet exemple montre comment trouver des scènes supplémentaires spécifiques en utilisant le champ de recherche `Emplacement de la scène`. Ceci montre tous les aérodromes de l'extension Orbx New Zealand South Island qui ont des pistes éclairées._
 
-### Vue Tableau des Résultats de la Recherche {#search-result-table-view}
+### Vue des Résultats de la Recherche dans le Tableau {#search-result-table-view}
 
 Tous les éléments sélectionnés dans la vue tableau seront mis en évidence sur la carte à l'aide d'un cercle noir/jaune. Voir [Faits marquants](MAPDISPLAY.md#highlights) pour plus d'informations. La sélection multiple à l'aide de `Shift+Click` ou `Ctrl+Click` est possible.
 

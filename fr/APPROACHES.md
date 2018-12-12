@@ -5,7 +5,7 @@
 Les procédures de départ et d'arrivée seront utilisées lors du vol d'un aéronef de ligne, mais les petits aéronefs devront également utiliser au moins une procédure d'approche à destination lors du vol IFR.
 Les données stockées dans les simulateurs de vol ne fournissent que des approches et des transitions. Les SID et les STAR ne sont pas disponibles sauf X-Plane Celles-ci peuvent être ajoutées par des mises à jour de navdata.
 
-Un vol d'une compagnie aérienne qui contient toutes les variations peut suivre les procédures ou les segments suivants:
+Un vol d'une compagnie aérienne contenant toutes les variantes peut utiliser les procédures ou segments suivants :
 
 1. Aérodrome de départ
 2. SID
@@ -112,6 +112,10 @@ Tous les types de segments de procédure \(`Route vers Fix`, `Approche Initiale`
 * `Se rendre à la piste` dans le SID:  Le premier segment d'un SID pour indiquer la position de départ sur la piste. Le programme pourrait retomber sur le centre de l'aérodrome si la piste ne pouvait pas être trouvée. La restriction d'altitude indique l'altitude de la piste. 
 * `Se rendre à la piste` en approche: Cette étape est ajoutée à une procédure d'approche pour montrer la ligne de parcours à partir d'un point d'approche interrompue \(CARTE\)  jusqu' à l'extrémité de la piste. Il est ajouté si une approche ne se termine pas par un repère de piste et que l'altitude est limitée à 50 pieds au-dessus du seuil.
 
+* `Start of Procedure`: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track to a fix. It indicates the first position of the procedure.
+* `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway is not available. The altitude restriction indicates the elevation of the runway.
+* `Straight In`: Added to an approach procedure to show the course from the missed approach point \(MAP\) to the runway threshold. It is added when an approach ends with a runway fix. The leg has an altitude restriction 50 feet above the threshold.
+* `Circle to Land`: Added to an approach procedure to show the course from the missed approach point to the airport. It is added if an approach does not end with a runway fix.
 
 ### Fixer les Types dans une Procédure {#procedures-fix-types}
 

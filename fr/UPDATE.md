@@ -25,7 +25,7 @@ Ce bouton n'est pas visible lors d'une vérification manuelle.
 
 ![Update Notification](../images/updatedialog.jpg "Update Notification")
 
-_**Picture above:** Update notification dialog showing an available beta version including change log and download link._
+_**Image ci-dessus:** Boîte de dialogue de notification de mise à jour montrant une version bêta disponible incluant le journal des modifications et le lien de téléchargement.._
 
 ### Options
 

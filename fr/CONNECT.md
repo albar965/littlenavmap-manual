@@ -1,4 +1,4 @@
-## ![](../images/icons/network.png "Flight Simulator Connection") Connexion à un Simulateur de Vol {#connecting-to-a-flight-simulator}
+## ![Flight Simulator Connection](../images/icons/network.png "Flight Simulator Connection") Connexion à un Simulateur de Vol {#connecting-to-a-flight-simulator}
 
 La procédure de configuration est différente pour les connexions distantes et les connexions locales à un simulateur de vol
 

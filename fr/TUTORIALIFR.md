@@ -70,15 +70,15 @@ Nous utiliserons la recherche spatiale au lieu des anneaux de portée car nous a
 
 Vérifiez ce qui suit dans l'onglet de recherche d'aérodrome :
 
-1. `Evaluation`: Nous aimerions avoir des aérodromes qui sont soit des ajouts ou qui ont des exigences de base en matière de paysage, comme des voies de circulation, des parkings et plus encore. Tout le reste est ennuyeux.
+1. `Classement`: Nous aimerions avoir des aérodromes qui sont soit des ajouts ou qui ont des exigences de base en matière de paysage, comme des voies de circulation, des parkings et plus encore. Tout le reste est ennuyeux.
 2. `Procédures`: Montrer seulement les aérodromes qui ont des procédures pour pimenter un peu l'approche.
-3. Désélectionner `Militaire` et `Fermé` \(cliquer deux fois sur les cases à cocher\): Ceci ne retournera que les aérodromes civils et évitera les aérodromes dont toutes les pistes sont fermées.
+3. Désélectionner `Militaire` et `Inoccupé` \(cliquer deux fois sur les cases à cocher\): Ceci ne retournera que les aérodromes civils et évitera les aérodromes dont toutes les pistes sont fermées.
 4. Cochez aussi `Avgas` pour que nous puissions faire le plein pour notre voyage de retour et que nous n'ayons pas à mendier pour du carburant sur une route avoisinante.
-5. Dans la liste déroulante `N'importe quelle Rampe ou pas de Rampe` sélectionnez `Au moins une petite Rampe GA`. Cela n'inclura que les aérodromes qui ont des parkings convenables.
+5. Dans la liste déroulante `N'importe quelle Rampe ou sans Rampe` sélectionnez `Au moins une petite Rampe GA`. Cela n'inclura que les aérodromes qui ont des parkings convenables.
 6. Dans la liste déroulante `N'importe quelle Surface` sélectionnez `N'importe quelle Pistes pour les Aéronefs lourds` pour éviter que les aérodromes n'aient que des pistes pour aéronefs légers.
 7. Sélectionnez une longueur minimale de piste de 2 500 pieds pour votre aéronef dans le champ `Longueur de Piste:` `Min:`.
 
-Voir aussi [Fenêtre de recherche - Aérodromes et Navaids](SEARCH.md).
+Voir aussi [Fenêtre de Recherche - Aérodrome et Navaids](SEARCH.md).
 
 Vous pouvez également limiter la longueur maximale de piste si vous recherchez un défi d'atterrissage court, mais pas maintenant.
 
@@ -224,7 +224,7 @@ La section `Altitude` montrera la déviation verticale de la trajectoire après 
 |Élévation du Sol: |0 ft|
 |**Dév. Voie Verticale:**|**-511 ft en dessous de ▲**|
 
-### Modification des Procédures {#tutorial-ifr-changing-procedures}
+### Changement de Procédures {#tutorial-ifr-changing-procedures}
 
 Maintenant, les conditions météorologiques ont changé, ce qui nécessite une approche sur la piste n°31 :
 

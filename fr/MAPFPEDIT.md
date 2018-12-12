@@ -30,12 +30,12 @@ La fonctionnalité suivante est disponible :
 *   **Cliquez avec le bouton droit de la souris, appuyez sur la touche d'échappement ou sur n'importe quel clic à l'extérieur de la fenêtre de carte:** Annulez l'opération en cours.
 
 **Limites si des procédures sont utilisées:** Vous ne pouvez pas ajouter des navaids dans ou entre les procédures et vous ne pouvez pas non plus supprimer les segments de procédure. Le curseur ne changera pas de forme lorsque vous passez au-dessus d'une procédure. Ce qui suit n'est pas autorisé :
-* Ajouter un point de cheminement entre l'aérodrome de départ et la SID.
-* Ajouter un point de cheminement entre STAR ou l'aérodrome d'approche et l'aérodrome de destination.
+* Ajouter un waypoint entre l'aérodrome de départ et la SID.
+* Ajouter waypoint entre STAR ou l'aérodrome d'approche et l'aérodrome de destination.
 * Ajouter un waypoint entre STAR et l'approche ou la transition.
 * Déplacer ou supprimer le premier ou le dernier repère de balisage d'une procédure.
 
-Toutes les procédures de départ ou de destination sont supprimées si l'aérodrome de départ ou de destination est déplacé ou remplacé. Il en va de même si les points de cheminement sont préfixés avant ou ajoutés après le départ ou la destination.
+Toutes les procédures de départ ou de destination sont supprimées si l'aérodrome de départ ou de destination est déplacé ou remplacé. Il en va de même si les waypoints sont préfixés avant ou ajoutés après le départ ou la destination.
 
 ![Flight Plan Edit](../images/fpedit.jpg "Flight Plan Edit")
 

@@ -2,13 +2,13 @@
 
 * [Little Navmap User Manual](en/README.md)
 
+# French
+
+* [Little Navmap User Manual](fr/README.md)
+
 # Español
 
 * [Manual de Usuario](es/README.md) \(Work in progress\)
-
-# French
-
-* [Little Navmap User Manual](fr/README.md) \(Work in progress\)
 
 # Deutsch
 

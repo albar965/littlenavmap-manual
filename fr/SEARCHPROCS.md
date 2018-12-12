@@ -10,7 +10,7 @@ Les segments de procédure sont affichés lorsqu'un nœud de procédure est dév
 
 Cliquez avec le bouton droit de la souris sur une procédure pour obtenir plus d'options dans le menu contextuel. Cela permet de centrer la carte ou d'ajouter la procédure à votre plan de vol.
 
-Utilisez le menu contextuel de la table de plan de vol pour supprimer les procédures comme tout autre waypoint. Voir [Supprimer les Segments sélectionnés ou Procédure](FLIGHTPLAN.md#delete-selected-legs).
+Utilisez le menu contextuel de la table de plan de vol pour supprimer les procédures comme tout autre waypoint. Voir [Supprimer les Segments ou Procédures Sélectionnés ](FLIGHTPLAN.md#delete-selected-legs).
 
 Les segments de l'intervention sont surlignés en rouge si une ou plusieurs navaids n'ont pu être résolus. Une boîte de dialogue d'avertissement s'affiche si vous essayez d'ajouter cette procédure à un plan de vol.
 
@@ -76,7 +76,7 @@ Centre la carte sur la procédure sélectionnée.
 
 Le texte et la fonctionnalité de cet élément de menu dépendent du type de procédure sélectionné et si l'aérodrome de la procédure est déjà l'aérodrome de départ ou de destination du plan de vol en cours.
 
-Utilisez le menu contextuel de la table de plan de vol pour supprimer les procédures. Voir [Supprimer les Segments sélectionnés ou Procédure](FLIGHTPLAN.md#delete-selected-legs).
+Utilisez le menu contextuel de la table de plan de vol pour supprimer les procédures. Voir [Supprimer les Segments ou Procédures Sélectionnés](FLIGHTPLAN.md#delete-selected-legs).
 
 La procédure correspondante \(approche, SID et STAR\) est ajoutée ou remplacée si une transition est sélectionnée.
 

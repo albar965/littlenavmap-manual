@@ -1,8 +1,8 @@
 ## Installation {#installation}
 
-`Le texte en surbrillance` est utilisé pour désigner les noms de fenêtres, de menus, de boutons, de fichiers ou de répertoires.
+`Le texte surligné` est utilisé pour indiquer les noms de fenêtre, de menu, de bouton, de fichier ou de répertoire.
 
-*Little Navmap* for Windows est une application 32 bits et a été testée avec Windows 7, Windows 8, Windows 10 \(32-bit et 64-bit\).
+*Little Navmap* pour Windows est une application 32 bits et a été testée avec Windows 7, Windows 8, Windows 10 \(32-bit et 64-bit\).
 
 Les versions MacOS et Linux sont toutes deux en 64 bits et ont été testées avec MacOS Sierra et Ubuntu Linux.
 
@@ -11,7 +11,7 @@ Supprimez tous les fichiers installés d'une version précédente de _Little Nav
 
 Il n'est pas nécessaire de supprimer l'ancien répertoire de paramètrage. Le programme est écrit de manière à pouvoir toujours fonctionner avec les anciens fichiers de paramétrage.
 
-### Windows
+### Fenêtres
 L'installation de _Little Navmap_ ne modifie pas les entrées du registre \(dans Windows\)  et implique une simple copie de fichiers, donc un programme d'installation n'est pas nécessaire.
 
 N'extrayez pas l'archive dans le dossier `c:\Program Files\` ou `c:\Program Files (x86)\`  puisque cela nécessite des privilèges d'administration pour certaines versions de Windows. Windows garde le contrôle de ces dossiers, donc d'autres problèmes peuvent survenir comme les fichiers remplacés ou supprimés.
@@ -22,19 +22,39 @@ Dans certains cas, vous devez installer la [Mise à jour pour Visual C\+\+ 2013 
 
 Habituellement, cela est déjà installé puisque beaucoup d'autres programmes en ont besoin.
 
-Vous devez également installer le redistributable si vous obtenez une erreur comme `Erreur lors de la vérification des mises à jour ... Erreur de création de contexte SSL`.
+**Installez le Package Redistribuable Visual C++ si vous recevez un avertissement si le sous-système SSL n'est pas initialisé.
+Le programme ne pourra pas utiliser les connexions réseau cryptées \(i.e. HTTPS\) qui sont nécessaires pour vérifier les mises à jour ou pour charger des cartes en ligne.**
 
-_Little Navmap_  est une application 32 bits et a été testée avec Windows 7, Windows 8 et Windows 10 (32 bits et 64 bits). Windows XP n'est pas pris en charge.
+**Installer les versions 32 et 64 bits.**
+
+Habituellement, c'est déjà installé puisque beaucoup d'autres programmes l'exigent.
+
+Vous devez également installer le redistributable si vous obtenez une erreur comme `Error while checking for updates ... Error creating SSL context`.
+
+_Little Navmap_ est une application 32 bits et a été testée sous Windows 7, Windows 8 et Windows 10 \(32-bit et 64-bit\). Windows XP n'est pas pris en charge.
+
+Vous pouvez trouver des paquets redistribuables pour toutes les versions ici: [Les derniers téléchargements Visual C+++ pris en charge](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
 #### Autres Simulateurs que FSX SP2 {#other-simulators-than-fsx-sp2}
 
-Ce programme FSX SP2 \(sans Accélération\)a été compilé à l'aide de la version 10.0.61259.0 de SimConnect.
+Ce programme a été compilé avec FSX SP2 \(sans d'accélération\) SimConnect version 10.0.61259.0.
 
-Il se peut que vous deviez installer une version plus ancienne de SimConnect si vous utilisez _Prepar3D_ ou _FSX Steam Edition_. Si vous n'êtes pas sûr de cela, essayez simplement _Little Navmap_. S'il échoue avec un message d'erreur, suivez les instructions ci-dessous:
+Vous devrez peut-être installer une version plus ancienne de SimConnect si vous utilisez _Prepar3D_ ou _FSX Steam Edition_. Si vous n'êtes pas sûr de cela, essayez simplement _Little Navmap_. S'il échoue avec un message d'erreur, suivez les instructions ci-dessous :
 
-_**Prepar3D**_:  Dans le même répertoire que `Prepar3D.exe` est un répertoire `redist\Interface` \(normalement `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\redist\Interface`\).  Il existe plusieurs versions de SimConnect. Vous devez installer `FSX-SP2-XPACK.msi` pour _Little Navmap_.
+_**Prepar3D**_: Dans le même répertoire que `Prepar3D.exe` est un répertoire `redist\Interface` \(normalement `C:\Program Files (x86)\Lockheed Martin\Prepar3D v4\redist\Interface`\). Il existe plusieurs versions de SimConnect. Vous devez installer `FSX-SP2-XPACK.msi` pour _Little Navmap_.
 
 _**FSX Steam Edition**_: L'installation ajoute le dossier `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` où vous pouvez trouver les anciennes interfaces SimConnect.
+
+#### Améliorer le Temps de Démarrage {#improve-start-up-time}
+
+Un programme antivirus peut ralentir considérablement le démarrage et l'exécution du programme sous Windows.
+
+Par conséquent, il est recommandé d'exclure les répertoires suivants de l'analyse:
+
+* Cache disque pour tuiles de carte: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Bibliothèque des scènes et bases de données utilisateurs`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+
+Ces répertoires ne contiennent pas de fichiers exécutables et sont fréquemment consultés par les personnes suivantes _Little Navmap_.
 
 ### macOS
 

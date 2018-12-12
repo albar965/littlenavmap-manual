@@ -1,4 +1,4 @@
-## Formats des Plans de Vol {#flight-plan-formats}
+## Formats de Plan de Vol {#flight-plan-formats}
 
 _Little Navmap_ supporte plusieurs formats de plans de vol qui ont tous des limitations différentes. Seuls certains de ces formats peuvent être chargés et sauvegardés.
 
@@ -10,33 +10,31 @@ Notez la différence entre `Sauver plan de vol au format ...`et `Exporter plan d
 
 ### Tableau des Caractéristiques {#flight-plan-formats-feature}
 
-Le tableau ci-dessous montre les capacités de _Little Navmap_ et les formats de plan de vol supportés \(X = supporté, 0 = non supporté\):
+| Format                        | Lecture | Ecriture | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Croisière<br/>Alt. | Vitesse<br/>Sol  | Proc. |
+| ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ----  |
+| FSX PLN<br/>annoté         | X    | X     | X     | X           | X                      | X               | X               | X                 | X     |
+| FSX PLN                       | X    | X     | X     | X           | X                      | X               | X               | 0                 | 0     |
+| FS9 PLN<br/>propre             | X    | 0     | X     | X           | X                      | X               | X               | 0                 | 0     |
+| FSC PLN                       | X    | 0     | X     | 0           | X                      | 0               | 0               | 0                 | 0     |
+| X-Plane<br/>FMS 11            | X    | X     | X     | 0           | X                      | 0               | X               | 0                 | X     |
+| X-Plane<br/>FMS 3             | X    | X     | 0     | 0           | X                      | 0               | X               | 0                 | 0     |
+| FLP                           | X    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | X     |
+| Reality XP<br/>GNS FPL        | 0    | X     | 0     | 0           | X                      | 0               | 0               | 0                 | 0     |
+| Reality XP<br/>GTN GFP        | 0    | X     | X     | 0           | X[^2]                  | 0               | 0               | 0                 | X     |
+| Flight1 GTN                   | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| PMDG RTE                      | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| TXT                           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| Majestic Dash<br/>FPR [^1]    | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| IXEG 737 FPL                  | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| FLTPLAN<br/>pour iFly          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| ProSim<br/>`companyroutes.xml`| 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| PLN pour<br/>BBS Airbus        | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| FPL pour<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^3] |
+| GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 
-| Format                 | Lecture | Écriture | Voies aériennes | VFR/ IFR | Nom Wpt. Utilisateur | Dép. Parking | Alt. de croisière | Vitesse au sol | Proc. |
-| ---                      | ---  | ---   | ---     | ---      | ---             | ---          | ---         | ---          | ---   |
-| FSX PLN annot.           | X    | X     | X       | X        | X               | X            | X           | X            | X     |
-| FSX PLN                  | X    | X     | X       | X        | X               | X            | X           | 0            | 0     |
-| FS9 PLN clean            | X    | 0     | X       | X        | X               | X            | X           | 0            | 0     |
-| FSC PLN                  | X    | 0     | X       | 0        | X               | 0            | 0           | 0            | 0     |
-| X-Plane FMS 11           | X    | X     | X       | 0        | X               | 0            | X           | 0            | X     |
-| X-Plane FMS 3            | X    | X     | 0       | 0        | X               | 0            | X           | 0            | 0     |
-| FLP                      | X    | X     | X       | 0        | 0               | 0            | 0           | 0            | X     |
-| Reality XP GNS FPL       | 0    | X     | 0       | 0        | X               | 0            | 0           | 0            | 0     |
-| Reality XP GTN GFP       | 0    | X     | X       | 0        | X[^2]           | 0            | 0           | 0            | X     |
-| Flight1 GTN              | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| PMDG RTE                 | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| TXT                      | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| Majestic Dash FPR [^1]   | 0    | X     | 0       | 0        | 0               | 0            | 0           | 0            | 0     |
-| IXEG 737 FPL             | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| FLTPLAN for iFly         | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| ProSim companyroutes.xml | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| PLN for BBS Airbus       | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| UFMC                     | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| FPL for XFMC             | 0    | X     | X       | 0        | 0               | 0            | 0           | 0            | 0     |
-| Flight Factor corte.in   | 0    | X     | X       | 0        | 0               | 0            | X           | 0            | X     |
-| GPX                      | 0    | X     | 0       | 0        | 0               | 0            | 0           | 0            | 0     |
-
-Les points de cheminement de procédure sont exclus de tous les formats de fichiers sauf GPX. Vous devez utiliser le GPS ou le FMS dans le simulateur pour sélectionner les procédures.
+Les waypoints de procédure sont exclus par défaut de tous les formats de fichiers, sauf GPX. Vous devez utiliser le GPS ou le FMS dans le simulateur pour sélectionner les procédures.
 
 Une boîte de dialogue s'affiche si des caractéristiques non prises en charge sont détectées dans le plan de vol en cours lors de l'enregistrement d'un plan de vol. Vous pouvez désactiver cette boîte de dialogue pour des sauvegardes futures si vous savez ce que vous faites.
 
@@ -60,15 +58,17 @@ Les noms des waypoints utilisateur seront adaptés aux limitations de format lor
 
 ### ![FSX PLN](../images/icons/filesave.png "FSX PLN") FSX PLN {#flight-plan-formats-fsx-pln}
 
-Le format FSX PLN est utilisé comme format par défaut parce qu'il supporte la plupart des fonctionnalités et permet d'inclure des informations supplémentaires sous forme d'annotations qui seront ignorées par les simulateurs de vol et la plupart des autres outils.
+Le format FSX PLN est utilisé comme format par défaut car il supporte la plupart des fonctionnalités et permet d'inclure des informations supplémentaires sous forme d'annotations qui seront ignorées par les simulateurs de vol et la plupart des autres outils.
+
+**Notez que P3D v4.2 écrase le plan de vol lors du chargement, ce qui efface toutes les annotations. Sauvegardez une copie du plan à un autre endroit si vous souhaitez conserver toutes les informations sur les procédures ou la vitesse..**
 
 ### ![FS9 PLN](../images/icons/filesave.png "FS9 PLN") FS9 PLN {#flight-plan-formats-fs9-pln}
 
-Format de fichier du Flight Simulator 2004. Utilise la même extension PLN que le format FSX PLN. Peu de _Little Navmap_ ne peut lire que ce format. Par conséquent, une boîte de dialogue d'avertissement s'affiche avant d'écraser un fichier avec le nouveau format FSX PLN.
+Format de fichier du Flight Simulator 2004. Utilise la même extension PLN que le format FSX PLN._Little Navmap_ ne peut lire que ce format. Par conséquent, une boîte de dialogue d'avertissement s'affiche avant l'écrasement d'un fichier au format FSX PLN le plus récent.
 
-### ![Clean PLN](../images/icons/filesaveclean.png "Clean PLN") PLN Simple {#flight-plan-formats-clean-pln}
+### ![Clean PLN](../images/icons/filesaveclean.png "Clean PLN") PLN sans annotations (clean) {#flight-plan-formats-clean-pln}
 
-C'est la même chose que le FSX PLN mais sans annotations supplémentaires qui contiennent des informations sur les procédures sélectionnées ou la vitesse au sol. Utilisez ce format si un outil ne peut pas traiter le format annoté.
+C'est la même chose que le FSX PLN mais sans annotations supplémentaires qui contiennent des informations sur les procédures sélectionnées ou la vitesse sol. Utilisez ce format si une demande ne peut pas traiter le format annoté.
 
 ### ![FMS 11](../images/icons/saveasfms.png "FMS 11") FMS 11 \(X-Plane\) {#flight-plan-formats-fms11}
 
@@ -107,45 +107,44 @@ Voir [ci-dessous](#garmin-notes) pour plus d'informations sur les problèmes con
 
 _Little Navmap_ considère la variable d'environnement `GNSAPPDATA` si elle est définie. Voir le manuel GNS pour plus d'informations.
 
-Le répertoire par défaut pour sauvegarder les plans de vol pour les unités GNS est le suivant `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
-pour tous les simulateurs. Le répertoire sera créé automatiquement par _Little Navmap_ lors de la première exportation s'il n'existe pas.
+Le répertoire par défaut pour sauvegarder les plans de vol des unités GNS est le suivant `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
+pour tous les simulateurs. Le répertoire sera créé automatiquement par _Little Navmap_ lors de la première exportation s'il n'existe pas
 
 ### GFP \(Reality XP Garmin GTN\) {#flight-plan-formats-rxpgtn}
 
-Sauver le plan de vol au format de fichier GFP utilisable par le _Reality XP GTN 750/650 Touch_.
+Sauvegarder le plan de vol comme fichier GFP utilisable par le _Reality XP GTN 750/650 Touch_.
 
-Ce format de fichier peut seulement être exporté. La lecture n'est pas prise en charge.
+Ce format de fichier peut uniquement être exporté. La lecture n'est pas prise en charge.
 
-Voir [ci-dessous](#garmin-notes) pour plus d'informations sur les problèmes connus lors de l'exportation des données de plan de vol pour le GTN.
+Voir [en dessous](#garmin-notes) pour obtenir des informations sur les problèmes connus lors de l'exportation des données de plan de vol pour le GTN.
 
-_Little Navmap_ prend en compte la variable d'environnement `GTNSIMDATA` si elle est définie. Voir le manuel GTN pour plus d'informations.
+_Little Navmap_ considère la variable d'environnement `GTNSIMDATA` si elle est définie. Pour plus d'informations, reportez-vous au manuel GTN.
 
 #### Garmin GTN Trainer 6.41
 
-Le répertoire par défaut pour sauvegarder les plans de vol pour les unités GTN est le suivant `C:\ProgramData\Garmin\Trainers\GTN\FPLN`
-pour tous les simulateurs. Le répertoire sera créé automatiquement par _Little Navmap_ lors de la première exportation s'il n'existe pas.
+Le répertoire par défaut pour sauvegarder les plans de vol des unités GTN est le suivant `C:\ProgramData\Garmin\Trainers\GTN\FPLN` pour tous les simulateurs. Le répertoire sera créé automatiquement par _Little Navmap_ lors de la première exportation s'il n'existe pas.
 
 #### Garmin GTN Trainer 6.21
 
-Si vous utilisez la version 6.21 du Trainer, le chemin d'accès par défaut est le suivant `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. Vous devez créer ce répertoire manuellement et y naviguer dans la boîte de dialogue de fichier lors de l'enregistrement. Peu de _Little Navmap_ se souviendra du répertoire sélectionné.
+Si vous utilisez la version 6.21 Trainer, le chemin par défaut est `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. Vous devez créer ce répertoire manuellement, puis y accéder dans la boîte de dialogue de fichier lors de l'enregistrement. _Little Navmap_ se souviendra du répertoire sélectionné.
 
 ### GFP \(Flight1 Garmin GTN\) {#flight-plan-formats-gfp}
 
 Il s'agit du format de plan de vol utilisé par le _Flight1 GTN 650/750_.
 
-Ce format de fichier peut seulement être exporté. La lecture n'est pas prise en charge.
+Ce format de fichier peut uniquement être exporté. La lecture n'est pas prise en charge.
 
-Voir [ci-dessous](#garmin-notes) pour obtenir des informations sur les problèmes rencontrés lors de l'exportation des données de plan de vol pour le GTN.
+Voir [en dessous](#garmin-notes) pour obtenir des informations sur les problèmes rencontrés lors de l'exportation des données de plan de vol pour le GTN.
 
-Les répertoires par défaut pour sauvegarder les plans de vol pour les unités GTN sont :
+Les répertoires par défaut pour sauvegarder les plans de vol des unités GTN sont :
 
 * **Prepar3D v3:** `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL`.
-* **Prepar3D v3:** `C:\Program Files\Lockheed Martin\Prepar3D v4\F1TGTN\FPL`.
+* **Prepar3D v4:** `C:\Program Files\Lockheed Martin\Prepar3D v4\F1TGTN\FPL`.
 * **Flight Simulator X:** `C:\ProgramFiles(x86)\Microsoft Games\Flight Simulator X\F1GTN\FPL`
 
-Vous devrez peut-être modifier les privilèges d'utilisateur de ce répertoire si vos plans de vol sauvegardés n'apparaissent pas dans le GTN. Donnez-vous le contrôle total et/ou la propriété de ce répertoire pour éviter cela.
+Vous devrez peut-être modifier les privilèges d'utilisateur de ce répertoire si vos plans de vol enregistrés n'apparaissent pas dans le GTN. Donnez-vous le plein contrôle et/ou la pleine propriété de ce répertoire pour éviter cela.
 
-Un symptôme typique est que vous pouvez enregistrer le plan de vol dans _Little Navmap_ et vous pouvez également voir le plan enregistré dans les dialogues ouverts de _Little Navmap_ mais il n'apparaît pas dans l'unité GTN. Changez les privilèges du répertoire d'exportation comme mentionné ci-dessus si c'est le cas
+Un symptôme typique est que vous pouvez enregistrer le plan de vol dans _Little Navmap_ et vous pouvez également voir le plan enregistré dans les boîtes de dialogue ouvertes de _Little Navmap_ mais il n'apparaît pas dans l'unité GTN. Modifiez les privilèges du répertoire d'exportation comme mentionné ci-dessus si c'est le cas.
 
 Le fichier est un format texte simple contenant une seule ligne de texte. Exemple pour le contenu d'un fichier de plan de vol nommé `KEAT-CYPU.gfp`:
 
@@ -183,7 +182,9 @@ Un format pour l'Airbus Flight Factor Airbus. Le fichier n'est pas tronqué et l
 
 Les plans de vol sont sauvegardés dans une notation de route ATS légèrement étendue, ce qui permet également de sauvegarder l'altitude de croisière et les procédures d'approche. Editez le fichier à l'aide d'un simple éditeur de texte si vous souhaitez supprimer des plans de vol.
 
-Exemple:
+Bien que ce format permette d'enregistrer les SID et les STAR, l'option pour les approches a été supprimée car elle n'est pas fiable.
+
+**Exemple:**
 
 ```
 RTE ETOPS002 EINN 06 UNBE2A UNBEG DCT 5420N DCT NICSO N236A ALLEX Q822 ENE DCT CORVT KJFK I22R JFKBOS01 CI30 FL360
@@ -204,7 +205,7 @@ _Little Navmap_ crée jusqu'à deux fichiers de sauvegarde lors de l'enregistrem
 
 Les procédures ne peuvent pas être sauvegardées.
 
-Exemple:
+**Exemple:**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -216,7 +217,7 @@ Exemple:
 
 ### PLN \(BBS Airbus\) {#flight-plan-formats-bbs}
 
-Ce format est pour les Blackbox Simulations Airbus pour FSX ou P3D. Sauvegardez ceci dans `YOURSIMULATOR/Blackbox Simulation/Company Routes` ou `YOURSIMULATOR/BlackBox Simulation/Airbus A330` selon le type d'aéronef.
+Ce format est pour les Blackbox Simulations Airbus pour FSX ou P3D. Sauvegarder ceci dans `YOURSIMULATOR/Blackbox Simulation/Company Routes` ou `YOURSIMULATOR/BlackBox Simulation/Airbus A330` selon le type d'aéronef.
 
 Ce format ne peut pas sauvegarder les procédures.
 
@@ -224,42 +225,43 @@ Ce format ne peut pas sauvegarder les procédures.
 
 Un format de plan de vol pour le [UFMC](http://ufmc.eadt.eu). Le format ne permet pas de sauvegarder les procédures.
 
-Sauvegardez le plan de vol dans `XPLANE\Custom Data\UFMC\FlightPlans`.
+Sauvegardez le plan de vol sous `XPLANE\Custom Data\UFMC\FlightPlans`.
 
 ### FPL pour X-FMC \(Universal FMC pour X-Plane\) {#flight-plan-formats-xfmc}
 
-Enregistrer le plan de vol au format FPL pour le [X-FMC](https://www.x-fmc.com). Le format ne permet pas de sauvegarder les procédures.
+Enregistrer le plan de vol sous forme de fichier FPL pour le [X-FMC](https://www.x-fmc.com). Le format ne permet pas de sauvegarder les procédures.
 
-Le fichier doit être enregistré dans le chemin d'accès de `XPLANE\Resources\plugins\XFMC\FlightPlans`.
+Le fichier doit être enregistré dans le chemin d'accès à `XPLANE\Resources\plugins\XFMC\FlightPlans`.
 
 ### GPX {#flight-plan-formats-gpx}
 
 GPX n'est pas un format de plan de vol.
 
-Le format d'échange GPS peut être lu par Google Earth et la plupart des autres applications SIG.
+Le format GPS Exchange peut être lu par Google Earth et la plupart des autres applications SIG.
 
-Le plan de vol est intégré en tant que route et la traînée de l'aéronef volé en tant que piste, y compris le temps et l'altitude du simulateur.
+Le plan de vol est intégré en tant que route et la traînée de l'aéronef volé en tant que trajectoire, y compris le temps et l'altitude du simulateur.
 
-L'altitude de départ et de destination et l'altitude de croisière sont réglées pour tous les points de cheminement. Les points de cheminement de toutes les procédures sont inclus dans le fichier exporté. Notez que les waypoints ne permettront pas de reproduire toutes les parties d'une procédure comme les mises en attente ou les virages.
+L'altitude de départ et de destination et l'altitude de croisière sont réglées pour tous les waypoints. Les waypoints de toutes les procédures sont inclus dans le fichier exporté. Notez que les waypoints ne permettront pas de reproduire toutes les parties d'une procédure comme les mises en attente ou les virages.
 
 ## Notes sur les formats Garmin GFP et FPL {#garmin-notes}
 
-Divers problèmes peuvent apparaître lors de la lecture des plans de vol exportés dans les unités Garmin. 
+Divers problèmes peuvent apparaître lors de la lecture des plans de vol exportés dans les unités Garmin.
 La plupart d'entre eux sont le résultat de la base de données de navigation Garmin qui utilise les données d'un cycle AIRAC plus ancien \(principalement 1611 au moment d'écrire\).
-Le simulateur mis à jour ou les bases de données complémentaires \(comme celui de _Little Navmap_\) peuvent utiliser les dernières données de navigation ou une ancienne base de données de FSX ou P3D. X-Plane 11.10 stock navdata est actuellement basé sur 1611.
+Un simulateur mis à jour ou des bases de données complémentaires \(comme celui de _Little Navmap_\) peuvent utiliser les dernières données de navigation ou les anciennes données de FSX ou de P3D. X-Plane 11.10 stock navdata est actuellement basé sur 1611.
 
-Tous les waypoints, voies aériennes ou procédures qui sont retirés, ajoutés ou renommés au fil du temps peuvent provoquer des points de cheminement verrouillés ou d'autres messages lors de la lecture d'un plan de vol dans le GNS ou le GTN.
+Tout waypoints, voie aérienne ou procédure qui est retiré, ajouté ou renommé au fil du temps peut entraîner le blocage de waypoints ou d'autres messages lors de la lecture d'un plan de vol dans le GNS ou le GTN.
 
-Il est facile d'enlever les points de cheminement verrouillés à l'intérieur du GNS ou du GTN pour permettre l'activation du plan de vol. Reportez-vous à la documentation de l'unité Garmin.
+Il est facile d'enlever les waypoints verrouillés dans le GNS ou le GTN pour permettre l'activation du plan de vol. Reportez-vous à la documentation de l'unité Garmin.
 
-_Little Navmap_ permet de modifier l'exportation Garmin pour remplacer tous les waypoints par des waypoints définis par l'utilisateur afin d'éviter le verrouillage. Bien qu'il s'agisse d'une approche suffisante pour éviter les points de cheminement verrouillés, elle comporte quelques limitations :
+_Little Navmap_ permet de modifier l'exportation Garmin pour remplacer tous les waypoints par des waypoints définis par l'utilisateur afin d'éviter le verrouillage. Bien qu'il s'agisse d'une approche suffisante pour éviter les waypoints verrouillés, elle comporte quelques limitations :
 
-* Les aérodromes de départ et de destination ne sont pas sauvegardés en tant que points de cheminement définis par l'utilisateur. Ceux-ci doivent exister dans la base de données de navigation Garmin.
-* Les informations de navaid comme les fréquences ne peuvent pas être affichées car le waypoint ne peut pas être lié à la radio navaid.
+* Les aérodromes de départ et de destination ne sont pas sauvegardés en tant que waypoints définis par l'utilisateur. Ceux-ci doivent exister dans la base de données de navigation Garmin.
+* Il n'est pas possible d'afficher des informations sur la navigation comme les fréquences, car le waypoint ne peut pas être relié à la navigation radio.
 * Les procédures telles que SID et STAR ne peuvent pas être sauvegardées avec le plan de vol et doivent être sélectionnées manuellement.
 * Le GTN \(pas le GNS\) change tous les noms en un schéma générique `USERWPT...`.
 
-L'exportation des waypoints définis par l'utilisateur peut être activée dans la boîte de dialogue d'options de l'onglet `Plan de Vol`.
+L'exportation des waypoints définis par l'utilisateur peut être activée dans la boîte de dialogue des options de l'onglet `Plan de Vol`.
 
-[^1]: Le format FPR permet d'enregistrer les voies aériennes et les procédures mais ceci sera implémenté dans une future version de_Little Navmap_.
+[^1]: Le format FPR permet d'économiser les voies aériennes et les procédures, mais cela sera mis en œuvre dans une version ultérieure de  _Little Navmap_.
 [^2]: Les waypoints définis par l'utilisateur seront renommés lors du chargement dans le GTN.
+[^3]: Seulement SID et STAR. La sauvegarde ou les approches ne sont pas prises en charge.

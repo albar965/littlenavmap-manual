@@ -1,4 +1,4 @@
-## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Fenêtre Plan de Vol {#flight-plan-dock-window}
+## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Fenêtre du Plan de Vol {#flight-plan-dock-window}
 
 ### Partie Supérieure {#upper-part}
 
@@ -6,54 +6,65 @@ Le haut de l'écran affiche une étiquette qui indique le départ la position de
 
 En plus de l'étiquette, il y a trois champs de saisie en haut de cette fenêtre:
 
-* **Vitesse \(kts\):**  Vitesse au sol. La valeur de cette zone n'est utilisée que pour le calcul des temps de déplacement dans la vue de table: `Durée du segment` et `ETA` \(heure estimée d'arrivée à un repère de balisage donnée 0:00 comme heure de
-début\). Il est sauvegardé sous forme d'annotation avec le plan de vol et n'est pas utilisé pour les calculs de l'aéronef de l'utilisateur du simulateur.
-* **Altitude de Croisière \(ft\):** Cette valeur est sauvegardée avec le plan de vol et est également utilisée pour calculer un
-plan de vol des voies aériennes basé sur une altitude donnée. Ce champ reçoit l'altitude minimale pour un plan de vol si un plan le long des voies aériennes Victor ou Jet est calculé et que des restrictions d'altitude ont été trouvées. Voir [Calculer en fonction de l'altitude donnée](MENUS.md#calculate-based-on-given-altitude).
-* **Type de Plan de Vol \(IFR ou VFR\):**  Il est sauvegardé avec le plan de vol.
+Le nom ARINC de la procédure d'approche nécessaire à certains FMCs est indiqué entre parenthèses.
 
-### Tableau des Plans de Vol {#flight-plan-table}
+![Flight Plan Header](../images/flightplanheader.jpg "Flight Plan Header")
 
-La vue tableau permet les mêmes opérations que la vue tableau de recherche sauf le tri. Voir [ici](SEARCH.md#table-view)  pour plus d'informations.
+_**Image ci-dessus:** En-tête d'un plan de vol. _`VORDME LITSY`_ a _`D34`_ comme nom ARINC._
 
-Tous les éléments sélectionnés dans le tableau des plans de vol seront mis en évidence sur la carte à l'aide d'un cercle noir/vert. Voir [Faits Marquants](MAPDISPLAY.md#highlights)  pour de plus amples renseignements. La sélection multiple à l'aide des touches`Shift-Click` ou `Ctrl+Click` est possible.
+En plus de l'étiquette, il y a trois champs de saisie au-dessus de cette fenêtre :
 
-Le segment actif du plan de vol est surligné en magenta lorsque _Little Navmap_ est connecté à un simulateur.
+* **Altitude de croisière \(ft\):** Cette valeur est sauvegardée avec le plan de vol et est également utilisée pour calculer un plan de vol des voies aériennes basé sur une altitude donnée. Ce champ est automatiquement réglé à l'altitude minimale d'un plan de vol si un plan le long des voies aériennes Victor ou Jet est calculé et que des restrictions d'altitude ont été trouvées. Voir [Calculer en fonction d'une altitude donnée](MENUS.md#calculate-based-on-given-altitude).
+* **Type de plan de vol \(IFR or VFR\):** Ceci est sauvegardé avec le plan de vol.
 
-Les segments de procédure ont une couleur bleu foncé et les étapes d'une approche manquée ont une couleur rouge foncé.
+### Tableau du Plan de Vol {#flight-plan-table}
 
-Si un repère de balisage d'un plan de vol ne peut pas être trouvé dans la base de données, il sera affiché en rouge. Ceci peut se produire si les cycles AIRAC utilisés ne correspondent pas. Il en va de même pour les voies aériennes. La position sur la carte est toujours correcte.
+La vue tableau permet les mêmes opérations que la vue tableau de recherche sauf le tri. Voir [ici](SEARCH.md#table-view) pour plus d'informations.
+
+Tous les éléments sélectionnés dans la vue du plan de vol seront surlignés sur la carte à l'aide d'un cercle noir/vert. Voir [Points mis en évidences](MAPDISPLAY.md#highlights) pour plus d'informations. Utilisez `Shift+Click` ou `Ctrl+Click` pour sélectionner deux éléments ou plus \(multi-selection\).
+
+Le segment du plan de vol actif est surligné en magenta lorsque _Little Navmap_ est connecté à un simulateur.
+
+Les segments de l'intervention ont une couleur bleu foncé et les segments d'une approche interrompue ont une couleur rouge foncé.
+
+Si un waypoint d'un plan de vol ne peut pas être trouvé dans la base de données, il sera affiché en rouge. Cela peut se produire si les cycles AIRAC utilisés ne correspondent pas. Il en va de même pour les voies aériennes. La position sur la carte est toujours correcte.
+
+Les voies aériennes sont également affichées en rouge si les restrictions d'altitude minimale ou maximale des voies aériennes sont violées par l'altitude de croisière sélectionnée.
 
 ![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
 
-_**Photo ci-dessus:** Le waypoint _`ALTAG`_ et certaines parties du _`V324`_de la voie aérienne n'ont pas pu être trouvés dans
-la base de données._
+_**Image ci-dessus:** Le waypoint _`ALTAG`_ et des parties des voies aériennes _`V324`_ne se trouvaient pas dans la base de données.._
 
 #### Colonnes du Tableau {#flight-plan-table-columns}
 
-* `Identifiant`:  ID OACI de l'aide à la navigation ou de l'aérodrome.
-* `Région`: Code régional à deux lettres d'une navaid.
-* `Nom`:  Nom de l'aérodrome ou d'une radio navaid.
-* `Type de Procédure`: Le type de procédure de ce segment. `SID`, `Transition SID`, `STAR`, `Transition STAR`, `Transition`, `Approche` ou `Manquée`.
-* `Voies aériennes ou Procédure`: Contient le nom des voies aériennes pour les segments en route ou l'instruction de procédure.
-* `Restriction`: Altitude minimale pour le segment de voie aérienne en route, la restriction d'altitude de procédure ou la limitation de vitesse de procédure. A `/` sépare l'altitude et la limitation de vitesse.  Les restrictions d'altitude suivantes s'appliquent aux procédures:
-  * **Nombre seulement:** Fly at altitude or speed. Example: `5.400` or `210`.
-  * **Préfixe** `A`: Voler à ou au-dessus de l'altitude ou de la vitesse. Exemple: `A 1.800`.
-  * **Préfixe** `B`: Voler à ou au-dessous de l'altitude ou de la vitesse: `B 10.000` ou `B 220`.
-  * **Intervalle:** Volez à une altitude supérieure ou égale à une altitude un et à une altitude inférieure ou égale à deux. Exemple: `A 8.000, B 10.000`.
-  * **Altitude et vitesse:** Valeurs séparées par `/`. Exemple: `A 8.000, B 10.000/B220`.
+* `Identifiant`: ID OACI de navaid ou d'aérodrome. L'identifiant peut être suffixé comme indiqué ci-dessous:
+  * `+` ou `-`  et une valeur de distance: Affiche waypoints dans les procédures qui sont relatifs à un repère.
+  * `(IAF)`: Correction initiale d'une procédure ou d'une transition.
+  * `(FAF)`: Repère d'approche finale. Selon la procédure, la FAF ou FACF sont représentées avec une croix de Malte sur la carte et dans le profil d'élévation.
+  * `(FACF)`: Repère de trajectoire d'approche finale. 
+  * `(MAP)`: Point d'approche manquée.
+* `Région`: Code de région à deux lettres d'un navaid.
+* `Nom`: Nom de l'aérodrome ou radio navaid.
+* `Procédure`: Soit `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approche` ou `Manquée` plus le nom de la procédure..
+* `Voie aérienne ou Procédure`: Contient le nom de la voie aérienne pour les segments en route ou l'instruction de procédure.
+* `Restriction`: Soit l'altitude minimale pour le segment de voie aérienne en route, la restriction d'altitude de procédure ou la limite de vitesse de procédure. Un `/` sépare la limitation d'altitude et la limitation de vitesse. Les restrictions d'altitude suivantes s'appliquent aux procédures:
+  * **Nombre seulement:** Voler en altitude ou en vitesse. Exemple: `5.400` ou `210`.
+  * **Préfixe** `A`: Volez à ou au-dessus de l'altitude ou de la vitesse. Exemple: `A 1.800`.
+  * **Préfixe** `B`: Volez à une altitude ou à une vitesse inférieure ou égale à l'altitude ou à la vitesse. Exemple: `B 10.000` ou `B 220`.
+  * **Portée:** Vol à ou au-dessus de l'altitude 1 et à ou au-dessous de l'altitude 2. Exemple: `A 8.000, B 10.000`.
+  * **Altitude et limite de vitesse:** Valeurs séparées par `/`. Exemple: `A 8.000, B 10.000/B220`.
   * **Limite de vitesse uniquement:** Un préfixe `/` indique qu'il n'y a pas d'altitude mais une limitation de vitesse. Exemple: `/B250`.
-* `Type`: Type de navaid par radio.
-* `Fréq.`: Fréquence ou canal navaid par radio.
-* `Portée`: Portée radio navaid.
-* `Route °M:`** Il s'agit du parcours de départ du grand cercle reliant les deux points de cheminement du segment. Utilisez ce cours au départ si vous voyagez sur de longues distances sans aides à la navigation. Sachez que vous devez constamment changer de cap lorsque vous voyagez le long d'un grand cercle.
-* `Direct °M:`** C'est le parcours constant de la ligne de rhumb reliant deux points de cheminement d'un segment. En fonction de l'itinéraire et de la distance, il peut différer du tracé de la grande ligne circulaire. Utilisez ce cours si vous voyagez le long des voies aériennes ou vers les stations VOR ou NDB. Contrairement à la trajectoire indiquée par l'unité GPS du simulateur de vol, cela vous donnera le radial précis lors de l'approche d'un VOR ou d'un NDB sur un plan de vol.
-
+* `Type`: Type de radio navaid.
+* `Fréq.`: Fréquence ou canal d'une radio navaid.
+* `Portée`: Portée d'une radio navaid si disponible.
+* `Course °M:`** C'est le parcours de départ du grand cercle reliant les deux waypoints du segment. Utilisez ce cours au départ si vous voyagez sur de longues distances sans navaids. Sachez que vous devez constamment changer de cap lorsque vous vous déplacez le long d'un grand cercle.
+* `Direct °M:`** C'est le tracé constant de la ligne de rhumb reliant deux waypoints d'un segment. Selon l'itinéraire et la distance, il peut différer du tracé de la grande ligne circulaire. Utilisez ce cours si vous voyagez le long des voies aériennes ou vers les stations VOR ou NDB. Contrairement à la trajectoire indiquée par l'unité GPS du simulateur de vol, cela vous donnera le radial précis lorsque vous approchez d'un VOR ou d'un NDB sur un plan de vol.
 * `Distance`: Distance du segment du plan de vol.
-* `Restant`: Distance restante jusqu'à l'aérodrome de destination ou au point d'arrivée de la procédure \(généralement la piste\).
-* `Durée du segment`: Temps de vol pour ce segment. Calculé sur la base de la vitesse sol donnée.
-* `ETA`: Heure d'arrivée prévue. Il s'agit d'une valeur statique et non mise à jour en vol.
-* `Remarques`: Instructions de retournement, survol ou aide à la navigation pour les segments d'intervention.
+* `Restant`: Distance restante jusqu'à l'aérodrome de destination ou au point final de la procédure \(généralement la piste d'atterrissage\).
+* `Durée du segment`: Temps de vol pour ce segment. Calculé en fonction du profil de performances de l'aéronef sélectionné \(voir [Performances aéronef](AIRCRAFTPERF.md)\). Il s'agit d'une valeur statique et non mise à jour en vol. Vide en cas d'échec du calcul des performances.
+* `ETA`: Heure d'arrivée prévue. Il s'agit d'une valeur statique et non mise à jour en vol. Calculé en fonction du profil de performance de l'aéronef sélectionné. Vide en cas d'échec du calcul des performances.
+* `Carburant Restant.`: Il reste du carburant au waypoint, une fois pour le volume et une fois pour le poids. Il s'agit d'une valeur statique et non mise à jour en vol. Calculé en fonction du profil de performance de l'aéronef sélectionné. Vide si le profil de performances de l'aéronef ne comporte aucun chiffre de consommation de carburant.
+* `Remarques`: Instructions de retournement, survol ou navaid connexe pour les segments d'intervention.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
@@ -111,13 +122,9 @@ Vous pouvez soit sélectionner la première et le dernier segment \(`Ctrl+Click`
 
 Cette fonction peut être utile si vous devez traverser des segments océaniques qui sont vides de voies aériennes :
 
-1. Définir le départ et la destination.
-2. Trouvez le dernier repère de balisage sur une voie aérienne avant d'entrer dans l'océan. Choisissez la ligne du plan de vol la plus proche de la ligne du plan de vol. Ajoutez le repère de balisage au plan de vol.
-4. Sélectionnez le point de départ et ce point de cheminement et calculez le fragment de plan de vol.
-3. Même chose qu'au-dessus du premier repère de balisage d'une voie aérienne avant ou lors d'une nouvelle entrée dans la masse continentale.
-5. Sélectionnez ce repère de balisage et la destination et calculez le fragment de plan de vol.
+Les procédures sont insérées du plan de vol chargé et supprimées du plan de vol actuel en fonction de la position de l'insert.
 
-Bien qu'elle ne soit pas entièrement réaliste, il s'agit d'une solution suffisante jusqu'à ce que les pistes NAT ou PACOT soient disponibles.
+Si vous insérez un plan de vol après le départ, toutes les procédures du plan chargé sont ignorées et les procédures actuelles sont conservées.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher les Anneaux de Portée {#show-range-rings-1}
 
@@ -143,13 +150,47 @@ Sélectionne tous les segments du plan de vol.
 
 #### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Effacer la Sélection {#clear-selection}
 
-Deselects the currently selected flight plan leg and removes the highlight circles from the map.
+1. Définir le départ et la destination.
+2. Trouvez le dernier waypoint sur une voie aérienne avant d'entrer dans l'océan. Choisissez la ligne la plus proche du plan de vol. Ajoutez le waypoint au plan de vol.
+3. Répétez le processus pour le premier repère de balisage sur une voie aérienne proche de la côte de votre continent de destination.
+4. Sélectionnez le point de départ et ce waypoint et calculez le fragment de plan de vol.
+5. Sélectionnez ce waypoint et la destination et calculez le fragment de plan de vol.
+
+Bien que ce ne soit pas entièrement réaliste, c'est une solution de contournement raisonnable jusqu'à ce que _Little Navmap_ supporte les pistes NAT ou PACOT.
+
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher les Anneaux de Portées {#show-range-rings-1}
+
+Identique au [Menu contextuel de la carte](MAPDISPLAY.md#map-context-menu).
+
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher la portée Navaid {#show-navaid-range-1}
+
+Afficher les anneaux de portée pour toutes les navaids radio sélectionnés dans le plan de vol. Sélectionnez simplement toutes les segments du plan de vol et utilisez cette fonction pour afficher un cercle de portée pour chaque radio navaid dans le plan de vol.
+
+Sinon, la même chose que l'option [Menu contextuel de la carte](MAPDISPLAY.md#map-context-menu).
+
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Afficher la Circulation du Trafic Aérien {#show-traffic-pattern}
+
+Cet élément de menu est activé si vous cliquez sur un aérodrome. Affiche une boîte de dialogue qui permet de personnaliser et d'afficher une circulation de trafic aérien sur la carte.
+
+Voir [Circulation du trafic](TRAFFICPATTERN.md).
+
+#### ![Copy](../images/icons/copy.png "Copy") Copier {#copy-0}
+
+Copiez les entrées sélectionnées au format CSV dans le presse-papiers. Le CSV inclura un en-tête. Ceci permettra d'observer les changements dans la vue tableau comme l'ordre des colonnes.
+
+#### Sélectionner Tout {#select-all-0}
+
+Sélectionnez toutes les segments du plan de vol.
+
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Effacer la Sélection {#clear-selection}
+
+Désélectionnez toutes les segments du plan de vol actuellement sélectionnés et supprimez tous les cercles de surbrillance de la carte.
 
 #### ![Reset View](../images/icons/cleartable.png "Reset View") Réinitialiser la Vue {#reset-view-0}
 
-Désélectionne le segment de plan de vol actuellement sélectionné et supprime les cercles de surbrillance de la carte.
+Réinitialiser l'ordre et la largeur des colonnes par défaut.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Définir le Centre pour la Recherche à Distance {#set-center-for-distance-search-1}
 
-Identique au [Menu Contextuel de la Carte](MAPDISPLAY.md#map-context-menu).
+Identique au [Menu contextuel de la carte](MAPDISPLAY.md#map-context-menu).
 

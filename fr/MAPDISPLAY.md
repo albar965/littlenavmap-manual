@@ -35,27 +35,52 @@ L'aéronef utilisateur et les aéronefs ou navires multijoueurs seront affichés
 
 Little Navmap limite l'affichage des véhicules AI en fonction de leur taille. Zoomez près pour voir les petits aéronefs ou les navires.
 
-L'AI et les aéronefs multijoueurs au sol ne sont montrés que sur de petites distances de zoom pour éviter les aérodromes encombrés. Cela signifie qu'un aéronef AI peut disparaître de la carte lors d'un atterrissage sur un aérodrome.
+Les points de clics le sont :
 
-Sur la plus petite distance de zoom, tous les aéronefs sont dessinés à l'échelle ainsi que les places de parking, ce qui signifie que vous pouvez facilement vérifier si votre aéronef s'adapte sur un tablier, une place de parking ou une voie de circulation.
+* Centre des anneaux de portée \(petit cercle\).
+* Fin d'une ligne de mesure \(croisement\).
+* Point de seuil de piste \(petit cercle\) pour les circulations de trafic aérien
 
-Une flèche pour le vent en jaune et des étiquettes pour la situation autour de l'aéronef utilisateur peuvent être affichées sur l'écran d'affichage en haut au centre de la carte. Les étiquettes affichées pour les aéronefs peuvent être configurées dans la boîte de dialogue `Options` de l'onglet `Afficher la Carte`. Aucune étiquette n'est indiquée pour le trafic maritime.
+### Clics de Souris et Modificateurs {#mouse-clicks-modifiers}
 
-Voir la [Légende de la Carte de Navigation](LEGEND.md#aircraft) pour plus de détails sur le type d'aéronef.
+Vous pouvez utiliser le clavier et le clic de souris pour accéder rapidement aux fonctions suivantes :
 
-### Infobulles {#tooltips}
+* `Shift+Click`: Ajoutez ou enlevez les anneaux de portée ou les anneaux de portée navaid.
+* `Ctrl+Click`: Lancer la mesure de la ligne de rhumb ou supprimer une ligne de mesure.
+* `Alt+Click`: Démarrer la mesure d'un grand cercle ou effacer une ligne de mesure.
+* `Ctrl+Shift+Click`: Ajouter ou modifier le point utilisateur
+* `Ctrl+Alt+Click`: Insérez l'aérodrome, le navaid, le point utilisateur ou la position dans le segment du plan de vol le plus proche.
+* `Shift+Alt+Click`: Joindre l'aérodrome, navaid, le point utilisateur ou la position au plan de vol.
 
-En passant la souris sur la carte, vous obtiendrez des infobulles pour tous les objets de la carte, y compris les aérodromes, VOR, NDB, les voies aériennes, le parking, le dépôt de carburant, les tours de contrôle, les aéronefs et les navires. L'infobulle est tronquée et affiche un message `Plus...`si elle devient trop longue. Dans ce cas, réduisez les détails ou zoomez plus près.
+Cliquer à nouveau sur le point actif supprime les marques, les lignes de mesure ou les waypoints du plan de vol.
 
-La sensibilité de l'affichage de l'infobulle peut être ajustée dans la boîte de dialogue `Options` sur l'écran d'affichage de l'infobulle `Afficher la Carte` .
+### Aéronef {#aircraft}
+
+Les aéronefs utilisateurs et les aéronefs AI ou multijoueurs ou navires seront affichés sur la carte si le programme est connecté à un simulateur de vol. La couleur indique l'utilisateur ou l'AI ou le véhicule multijoueur et la forme du symbole indique si l'aéronef est un piston/turbopropulseur, un jet, un hélicoptère ou un navire. Le contour du symbole devient gris si un aéronef est au sol.
+
+Little Navmap limite l'affichage des véhicules AI en fonction de leur taille. Zoom avant pour voir les petits aéronef ou les navires.
+
+L'AI et les aéronef multijoueurs au sol sont montrés uniquement sur de petites distances de zoom pour éviter les aérodromes encombrés. Cela signifie qu'un aéronef AI peut disparaître de la carte lors d'un atterrissage sur un aérodrome.
+
+Sur la distance de zoom la plus faible, tous les aéronefs sont dessinés à l'échelle ainsi que les places de parking, ce qui signifie que vous pouvez facilement vérifier si votre aéronef tient sur un tablier, une place de parking ou une voie de circulation.
+
+Une flèche de vent jaune et des étiquettes pour la situation autour de l'aéronef utilisateur peuvent être affichées en haut au centre de la carte. Les étiquettes affichées pour les aéronefs peuvent être configurées dans la boîte de dialogue `Options` de l'onglet `Afficher la Carte`. Aucune étiquette n'est affichée pour le trafic maritime.
+
+Voir la [Légende NavMap](LEGEND.md#aircraft) pour plus de détails sur le type d'aéronef..
+
+### Boite à Outils {#tooltips}
+
+En passant la souris sur la carte, vous obtiendrez des infobulles pour tous les objets de la carte, y compris les aérodromes, VOR, NDB, les voies aériennes, le parking, la réserve à carburant, les tours, les aéronefs et les navires. L'infobulle est tronquée et affiche un message `Plus...` si elle devient trop longue. Dans ce cas, réduisez les détails ou faites un zoom avant.
+
+La sensibilité de l'affichage de l'infobulle peut être réglée dans la boîte de dialogue `Options` de l'onglet `Carte`.
 
 ![Tooltip](../images/tooltip.jpg "Tooltip") ![Tooltip Airspace](../images/tooltipairspace.jpg "Tooltip Airspace")
 
 _**Image ci-dessus:** Infobulle avec des informations sur un aérodrome et un VOR et un Infobulle avec des informations sur les espaces aériens.._
 
-### Points Forts {#highlights}
+### Points en Évidences {#highlights}
 
-Les aérodromes ou navaids qui sont sélectionnés dans le tableau du plan de vol ou dans le tableau des résultats de recherche sont mis en évidence sur la carte avec un anneau vert/noir ou jaune/noir respectivement.
+Les aérodromes ou navaids qui sont sélectionnés dans le tableau du plan de vol ou dans le tableau des résultats de recherche sont mis en évidences sur la carte avec un anneau vert/noir ou jaune/noir respectivement.
 
 Les waypoints sélectionnés dans l'aperçu de la procédure sont mis en évidence par un anneau bleu/noir.
 
@@ -97,7 +122,7 @@ Ouvre l'onglet de recherche de procédure de la fenêtre ancrée de recherche et
 
 Voir [Recherche de Procédure](SEARCHPROCS.md) pour plus d'informations.
 
-#### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Mesurez la Distance GC à partir d'ici {#measure-gc-distance-from-here}
+#### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Mesurer la Distance GC à partir d'ici {#measure-gc-distance-from-here}
 
 Démarre une ligne de mesure au premier clic. Le deuxième clic termine la mesure et conserve la ligne. Toutes les lignes de mesure sont sauvegardées et seront restaurées au prochain démarrage.
 
@@ -137,7 +162,7 @@ Affiche plusieurs anneaux de portée rouge autour de la position cliquée. Le no
 
 La largeur de tous les anneaux de gamme peut être modifiée dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`.
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher la portée du Navaid {#show-navaid-range}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher la Portée du Navaid {#show-navaid-range}
 
 Affiche un anneau autour de l'aide radio navaid \(VOR ou NDB\) indiquant la portée du navaid. Une étiquette indique l'identité et la fréquence et la couleur de la bague indique le type de navaid.
 
@@ -149,7 +174,7 @@ L'élément de menu est actif si vous faites un clic droit au centre d'un anneau
 
 Supprime tous les anneaux et les lignes de mesure de distance de la carte.
 
-#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Définir comme Plan de VoL de Départ {#set-as-flight-plan-departure}
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Définir comme Départ Plan de Vol {#set-as-flight-plan-departure}
 
 Ceci est actif si le clic est à un aérodrome, une position de parking d'aérodrome ou un dépôt de carburant. Il remplacera le départ du plan de vol actuel ou ajoutera un nouveau départ si le plan de vol est vide.
 
@@ -159,7 +184,7 @@ La piste par défaut sera utilisée comme position de départ si l'objet cliqué
 
 Cet élément de menu est actif si le clic est à un aérodrome. Il remplacera la destination du plan de vol ou ajoutera l'aérodrome si le plan de vol est vide.
 
-#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Ajouter la position au Plan de Vol {#add-position-to-flight-plan}
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Ajouter Position au Plan de Vol {#add-position-to-flight-plan}
 
 Insère l'objet cliqué dans le segment de plan de vol le plus proche. L'objet sera ajouté avant le départ ou après la destination si la position cliquée est proche des points de fin de plan de vol.
 
@@ -169,56 +194,57 @@ Une position de plan de vol définie par l'utilisateur est ajoutée au plan si a
 
 Un point d'utilisateur est converti en une position de plan de vol définie par l'utilisateur s'il est ajouté au plan.
 
-#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Joindre la position au Plan de Vol {#append-position-to-flight-plan}
+#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Joindre Position au Plan de Vol {#append-position-to-flight-plan}
 
 Même chose que ` Ajouter une Position au Plan de Vol ` mais ajoutera toujours l'objet ou la position sélectionnée après la destination ou le dernier waypoint du plan de vol.
 
 #### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Supprimer du Plan de Vol {#delete-from-flight-plan}
 
-Supprime du plan de vol la position cliquée de l'aérodrome, du navaid ou de l'utilisateur.
+Supprimer du plan de vol de l'aérodrome, du navaid ou du plan de vol de l'utilisateur sélectionné.
 
-#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Modifier la Position du Plan de Vol {#edit-name-of-user-waypoint}
+#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Modifier Position du Plan de Vol {#edit-name-of-user-waypoint}
 
-Permet de changer le nom ou la position d'un waypoint défini par l'utilisateur.
+Modifier le nom ou la position d'un waypoint défini par l'utilisateur. Voir [Modifier la Position du Plan de Vol](EDITFPPOSITION.html).
 
-La longueur du nom est limitée à 10 caractères lors de l'enregistrement dans un fichier PLN. D'autres formats de plan de vol ont des limitations plus fortes sur la longueur et les caractères autorisés.
+La longueur du nom est limitée à 10 caractères lors de l'enregistrement dans un fichier PLN. D'autres formats de plan de vol ont des limites plus strictes sur la longueur et les caractères autorisés.
 
-Vous pouvez également éditer les coordonnées directement au lieu de faire glisser la position du plan de vol \([Modification du Plan de Vol](MAPFPEDIT.md#map-flight-plan-plan-editing)\). 
+Vous pouvez également éditer les coordonnées directement au lieu de faire glisser la position du plan de vol. \([Modifier Plan de Vol](MAPFPEDIT.md#map-flight-plan-editing)\). 
 
-Voir [Formats des Coordonnées](COORDINATES.md) pour obtenir une liste des formats reconnus par la boîte de dialogue d'édition.
+Voir [Formats des Coordonnées](COORDINATES.md) pour obtenir la liste des formats reconnus par la boîte de dialogue d'édition.
 
-#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Ajouter un Point Utilisateur {#add-userpoint}
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Ajouter Point Utilisateur {#add-userpoint}
 
-Ajoute un waypoint défini par l'utilisateur aux données utilisateur. Le nouveau point utilisateur est pré-rempli en fonction de l'objet de la carte cliqué. 
+Ajoutez un waypoint défini par l'utilisateur aux données utilisateur. Certains champs de la boîte de dialogue du point utilisateur sont remplis automatiquement en fonction de l'objet de la carte sélectionné.
 
-Un clic sur un espace cartographique vide crée un point utilisateur de type " Signet " pré-rempli avec l'altitude à la position. Un clic sur un aérodrome ou navaid préfigure l'identifiant, la région, le nom, l'altitude et crée un point d'utilisateur de type `Aérodrome` ou `Waypoint`.
+Les coordonnées sont toujours renseignées. Si l'objet sélectionné est un aéroport ou un navaid, un point utilisateur de type `Aérodrome` ou `Waypoint` est créé et les champs Identifiant, Région, Nom et Altitude sont remplis.
 
-Voir [Ajouter un Point Utilisateur](USERPOINT.md#userpoints-add) pour plus d'informations.
+Si la position sélectionnée est un espace cartographique vide, un point utilisateur de type `Bookmark` est créé à cette position. L'altitude est renseignée si des données altimétriques hors ligne GLOBE sont installées. Voir [Profil d'Élévation du Plan de Vol](OPTIONS.md#cache-elevation).
 
-#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Modifier le Point Utilisateur {#edit-userpoint}
+Voir [Ajouter Point Utilisateur](USERPOINT.md#userpoints-dialog-add) pour plus d'informations.
 
-Activé uniquement s'il y a un point utilisateur à la position cliquée. Ouvre la boîte de dialogue d'édition.  Voir [Modifier les Points Utilisateur](USERPOINT.md#userpoints-edit).
+#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Modifier Point Utilisateur {#edit-userpoint}
 
-#### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Déplacer un Point Utilisateur {#move-userpoint}
+Ouvrez la boîte de dialogue d'édition d'un point utilisateur. Activé uniquement si l'objet sélectionné est un point utilisateur.  Voir [Modifier Point Utilisateur](USERPOINT.md#userpoints-dialog-edit).
 
-Activé uniquement s'il y a un point utilisateur à la position cliquée. Permet de déplacer le point utilisateur vers une nouvelle position sur la carte.
+#### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Déplacer Point Utilisateur {#move-userpoint}
 
-Cliquez à gauche pour placer le point utilisateur à la nouvelle position. Cliquez sur le bouton droit de la souris ou appuyez sur la touche d'échappement pour annuler le mouvement et remettre le point d'utilisateur dans son ancienne position.
+Déplacez le point d'utilisateur vers une nouvelle position sur la carte. Activé uniquement si l'objet sélectionné est un point utilisateur.
 
+Cliquez avec le bouton gauche de la souris pour placer le point utilisateur à la nouvelle position. Cliquez avec le bouton droit de la souris ou appuyez sur la touche d'échappement pour annuler l'opération et ramener le point utilisateur à sa position initiale.
 
-#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Supprimer un Point Utilisateur {#delete-userpoint}
+#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Supprimer Point Utilisateur {#delete-userpoint}
 
-Activé uniquement s'il y a un point utilisateur à la position cliquée. Supprime le waypoint défini par l'utilisateur des données utilisateur après confirmation.
+Supprimez le repère de balisage défini par l'utilisateur des données utilisateur après confirmation. Activé uniquement si l'objet sélectionné est un point utilisateur.
 
 #### ![Show in Search](../images/icons/search.png "Show in Search") Afficher dans la Recherche {#show-in-search}
 
-Affiche l'aérodrome ou le navaid le plus proche dans la boîte de dialogue de recherche. Les paramètres de recherche actuels sont réinitialisés.
+Afficher l'aérodrome, navaid, le point utilisateur, le client connecté ou le centre connecté le plus proche dans la boîte de dialogue de recherche. Les paramètres de recherche actuels sont réinitialisés.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Définir le Centre pour la Recherche à Distance {#set-center-for-distance-search}
 
-Définit le point central de la fonction de recherche de distance. Voir [Recherche par Distance](SEARCH.md#distance-search). Le centre de la recherche de distance est mis en surbrillance par ce symbole ![Symbole de Recherche par Distance](../images/icons/distancemark.png "Symbole de Recherche par Distance") .
+Définisser le point central de la fonction de recherche de distance. Voir [Recherche de distance](SEARCH.md#distance-search). Le centre de la recherche de distance est mis en évidence par le symbole ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") .
 
-#### ![Set Home](../images/icons/home.png "Set Home") Retour à la Maison {#set-home}
+#### ![Set Home](../images/icons/home.png "Set Home") Définir Origine {#set-home}
 
-Définit la vue de la carte actuellement visible comme vue d'accueil. Le centre de la zone d'habitation est mis en évidence par ce symbole ![Symbole de la Maison](../images/icons/homesymbol.png "Symbole de la Maison") .
+Définissez la vue de carte actuellement visible comme votre vue d'origine. Le centre de la zone d'origine est mis en évidence par un symbole ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") .
 

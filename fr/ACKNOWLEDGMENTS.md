@@ -45,3 +45,21 @@ Un merci au [GIScience / Geoinformatics Research Group](http://www.geog.uni-heid
 
 Et enfin et surtout: S'il n' y avait pas d'[OpenStreetMap](http://www.openstreetmap.org) et ses milliers de contributeurs, aucun d'entre nous n'aurait de cartes.
 
+Un merci a [AVSIM](https://www.avsim.com) d'avoir bien voulu héberger le forum de support pour_Little Navmap_.
+
+Ce projet et ma librairie [atools](https://github.com/albar965/atools) n'existerait pas sans la fabuleuse documentation des fichiers BGL dans le répertoire [FSDeveloper Wiki](https://www.fsdeveloper.com/wiki). Alors, un grand merci à tous les contributeurs.
+
+Un grand merci aussi à Ed Williams pour son travail. [Aviation Formulary](http://www.edwilliams.org/avform.htm).
+
+Sans l'open source [Marble](https://marble.kde.org) qui me permet d'accéder et d'afficher toutes les cartes que je serais encore occupé à faire moi-même pendant des années.
+
+Pas de [Qt application framework](https://www.qt.io) et je ne pouvais même pas dessiner un simple bouton.
+
+N'oublions pas tous les services qui nous fournissent toutes les cartes en ligne gratuitement :
+
+[Stamen Design](http://maps.stamen.com), [OpenTopoMap](https://www.opentopomap.org) et [CARTO](https://carto.com/).
+
+Un grand merci à l'équipe de [GIScience / Geoinformatics Research Group](https://www.geog.uni-heidelberg.de/gis/index_en.html) de Heidelberg University de m'avoir gracieusement donné la permission d'utiliser leur carte [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
+
+Et enfin et surtout : S'il n'y avait pas d' [OpenStreetMap](https://www.openstreetmap.org) et ses milliers de contributeurs, aucun d'entre nous n'aurait de carte du tout.
+

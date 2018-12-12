@@ -14,16 +14,16 @@ Le programme conserve trois fichiers journaux et les fait pivoter à chaque dém
 
 Assurez-vous d'envoyer le bon fichier journal après un plantage. Ne redémarrez pas le programme si vous voulez rapporter puisqu'il fera effacer les fichiers journaux. En cas de doute, envoyer toutes les copies dans un fichier Zip.
 
-### Configuration
+### Configuration {#configuration}
 
-Tous les fichiers de configuration de mes programmes sont stockés dans les répertoires:
+Tous les fichiers de configuration de mes programmes sont stockés dans ces répertoires :
 
 * Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
 * Linux et macOS: `$HOME/.config/ABarthel`
 
-* `little_navmap.ini`: fichier de configuration du style INI Fichier texte
-* `little_navmap.history`:  L'historique des positions sur la carte. Fichier binaire.
-* `little_navmap.track`: La piste de l'aéronef de l'utilisateur. Fichier binaire.
+* `little_navmap.ini`: INI style configuration file. Text file.
+* `little_navmap.history`: The map position history. Binary file.
+* `little_navmap.track`: The user aircraft track. Binary file.
 
 Trois fichiers de configuration supplémentaires sont créés pour la personnalisation des couleurs et des styles:
 
@@ -35,22 +35,29 @@ Voir [Personnalisation](CUSTOMIZE.md) pour plus dinformations.
 
 Le cache disque qui est utilisé pour stocker toutes les images téléchargées de la carte en ligne est disponible ici:
 
-* Windows `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
-* Linux et macOS: `$HOME/.local/share/marble`
+### Cache Disque {#cache}
 
-You can delete the cache manually to save space if _Little Navmap_ is not running.
+Le cache disque qui est utilisé pour stocker toutes les images de cartes en ligne téléchargées peut être trouvé ici :
 
-### Databases {#databases}
+* Windows: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Linux and macOS: `$HOME/.local/share/marble`
+
+Vous pouvez supprimer le cache manuellement pour économiser de l'espace si _Little Navmap_ n'est pas exécuté.
+
+### Bases de Données {#databases}
 
 Plusieurs bases de données sont stockées dans le répertoire :
 
-`...\ABarthel\little_navmap_db`
+* Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+* Linux et macOS: `$HOME/.config/ABarthel/little_navmap_db`
 
-Toutes ces bases de données sont des fichiers [SQLite](http://sqlite.org) qui peuvent être visualisés avec par exemple [DB Browser pour SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) si vous êtes intéressé par les bases de données relationnelles.
+Toutes ces bases de données sont [SQLite](http://sqlite.org) qui peuvent être visualisés avec par exemple [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) 
 
-**Ne pas modifier, déplacer, renommer ou supprimer des bases de données pendant que **_Little Navmap_** est en cours d'exécution.**
+**Ne pas modifier, déplacer, renommer ou supprimer des bases de données pendant l'exécution de **_Little Navmap_** 
 
-#### Scenery Library {#scenery-library}
+**Ne laissez pas le gestionnaire de base de données Navigraph FMS mettre à jour les bases de données tant que **_Little Navmap_** est en cours d'exécution. **_Little Navmap_** peut planter, la mise à jour peut échouer ou rester incomplète.**
+
+#### Bibliothèque des Scènes {#scenery-library}
 
 Le nombre de fichiers dépend des simulateurs que vous avez installés et des bibliothèques de scènes que vous avez chargées.
 

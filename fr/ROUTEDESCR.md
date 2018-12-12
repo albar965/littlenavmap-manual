@@ -144,7 +144,7 @@ Frankfurt Main \(EDDF\) à Fiumicino \(LIRF\):
 
 **Connexion directe:**
 
-`EDDF LIRF` or `EDDF DCT LIRF`.
+`EDDF LIRF` ou `EDDF DCT LIRF`.
 
 **VOR à VOR:**
 

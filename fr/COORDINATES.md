@@ -1,4 +1,4 @@
-## Formats de Coordonnées {#coordinates-formats}
+## Formats des Coordonnées {#coordinates-formats}
 
 Ce chapitre décrit brièvement les formats de coordonnées reconnus dans les dialogues de position de plan de vol et les dialogues de points utilisateur. 
 
