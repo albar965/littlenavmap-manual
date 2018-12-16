@@ -41,14 +41,13 @@ Les noms des clés dans ces fichiers sont dérivés des options de la palette Qt
 
 Voir ici pour plus d'informations sur les [groupes](http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) et [rôles](http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum).
 
+## Centre de Réseau Connecté {#customize-online-center}
 
-## Afficher la Carte {#customize-map-display}
+Le fichier de configuration `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap.ini` permet de modifier la taille des cercles du centre de réseau en ligne.
 
-The configuration file `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap.ini` allows to change the size of the online network center circles.
+Le rayon est en milles nautiques. La portée visuelle est utilisée si le rayon est -1. Aucun cercle n'est dessiné si la valeur est 0.
 
-### Format Couleur  {#customize-formats-color}
-
-La couleur peut être dans l'un de ces formats qui sont couramment utilisés dans la conception Web:
+**Ne supprimez pas ce fichier car il contient tous les paramètres du programme, l'historique des cartes, les fichiers ouverts et plus encore. N'éditez que les touches indiquées ci-dessous.**
 
 ``` INI
 [Online]
@@ -62,22 +61,21 @@ CenterRadiusObserver=-1
 CenterRadiusTower=10
 ```
 
-Le nom de couleur SVG est l'une des couleurs définies dans la liste des [SVG color keyword names](https://www.w3.org/TR/SVG/types.html#ColorKeywords) fournis par le World Wide Web Consortium; par exemple, `steelblue` ou `gainsboro`. Notez que vous ne pouvez pas entrer de valeur de canal alpha si vous utilisez un nom de couleur.
+## Afficher la Carte {#customize-map-display}
 
-Le fichier `C:Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` permet de personnaliser divers aspects de l'affichage de la carte et est actuellement limité aux couleurs et aux stylos. La plupart des noms clés s'expliquent d'eux-mêmes. Voir ci-dessous pour plus d'informations sur les valeurs de couleur.
+Le fichier `C:Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` permet de personnaliser divers aspects de l'affichage de la carte et est actuellement limité aux couleurs et aux stylets. La plupart des noms clés s'expliquent d'eux-mêmes. Voir ci-dessous pour plus d'informations sur les valeurs de couleur.
 
-### Format de Couleur {#customize-formats-color}
+### Format Couleur  {#customize-formats-color}
 
-La couleur peut être dans l'un de ces formats qui sont couramment utilisés dans la conception web :
+La couleur peut être dans l'un de ces formats qui sont couramment utilisés dans la conception Web:
 
-* `#RRGGBB` R, V, B et A représentent chacun un seul chiffre hexadécimal. Chaque valeur de couleur varie de 00 - FF \(decimal 0-255\)
-* `#AARRGGBB` les deux premiers chiffres contiennent la valeur alpha/transparence. `00` est égal à totalement transparent et `FF` \(decimal 255\) à opaque.
+* `#RRGGBB` R, V, B et A représentent chacun un seul chiffre hexadécimal. Chaque valeur de couleur varie de 00 - FF \(décimale 0-255\)
+* `#AARRGGBB` les deux premiers chiffres contiennent la valeur alpha/transparence. `00` est égal à totalement transparent `FF` \(décimale 255\) à opaque.
 * Nom de la couleur SVG
 
-Le nom de couleur SVG est l'une des couleurs définies dans la liste des [noms de mots-clés couleur SVG](https://www.w3.org/TR/SVG/types.html#ColorKeywords) fournie par le World Wide Web Consortium ; par exemple, `steelblue` ou `gainsboro`. Notez que vous ne pouvez pas entrer une valeur de canal alpha si vous utilisez un nom de couleur.
+Le nom de couleur SVG est l'une des couleurs définies dans la liste des [Noms des mots-clés couleur SVG](https://www.w3.org/TR/SVG/types.html#ColorKeywords) fournis par le World Wide Web Consortium; par exemple, `steelblue` ou `gainsboro`. Notez que vous ne pouvez pas entrer de valeur de canal alpha si vous utilisez un nom de couleur.
 
 Vous pouvez utiliser le [w3schools color picker](https://www.w3schools.com/colors/colors_picker.asp) pour obtenir les valeurs hexadécimales d'une couleur.
-
 
 **Exemples:**
 
@@ -87,13 +85,13 @@ Vous pouvez utiliser le [w3schools color picker](https://www.w3schools.com/color
 
 `ApproachFillColor=#3060808a`
 
-### Taille du stylet {#customize-formats-pen}
+### Format Stylet {#customize-formats-pen}
 
 Un stylet contient les valeurs suivantes dans une liste séparée par des virgules:
 
 * Couleur comme décrit ci-dessus.
 * Largeur du stylet en tant que valeur en virgule flottante mesurée en pixels. Tu dois utiliser `.` comme séparateur décimal peu importe ce que votre locale définit.
-* Style stylet. L'une des valeurs suivantes:  `Solid`, `Dash`, `Dot`, `DashDot` et `DashDotDot`.
+* Style stylet. L'une des valeurs suivantes:  `Solide`, `Tiret`, `Point`, `Pointillés` et `Point Point`.
 
 **Exemples:**
 
@@ -103,9 +101,11 @@ Un stylet contient les valeurs suivantes dans une liste séparée par des virgul
 
 `NationalParkPen=#509090, 2.1, Solid`
 
-## Icônes Utilisateur, Aéronef AI et Multijoueur {#customize-aircraft-icons}
+## Icones  {#customize-icons}
 
-Toutes les icônes pour l'utilisateur, les Aéronefs AI/multijoueurs, les hélicoptères et les navires sont stockées dans le programme mais peuvent être surchargées par l'utilisateur.
+Pour changer une icône, téléchargez-la depuis le dépôt des sources de Github [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/2.0/resources/icons) ou extraire le fichier inclus `Little Navmap/customize/icons.zip`.
+
+Modifier l'icône et l'enregistrer dans le répertoire de configuration `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. _Little Navmap_ détectera et utilisera automatiquement l'icône au prochain démarrage.
 
 Le format est limité à SVG \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\) où les effets graphiques avancés comme les textures ne fonctionneront pas.
 
@@ -114,11 +114,11 @@ Notez que les icônes ne seront utilisées que sur la carte et non dans les fen�
 Vous pouvez utiliser le programme de dessin vectoriel gratuit [Inkscape](https://inkscape.org) pour éditer les icônes.
 Redémarrez *Little Navmap* pour voir les changements.
 
-`aircraft_boat_ground_user.svg`
+### Icônes Utilisateur, AI et Aéronef Multi-joueurs {#customize-aircraft-icons}
 
-`aircraft_boat_ground.svg`
+Toutes les icônes pour l'utilisateur, les Aéronefs AI/multijoueurs, les hélicoptères et les navires sont stockées dans le programme mais peuvent être surchargées par l'utilisateur.
 
-`aircraft_boat_user.svg`
+Les icônes le sont :
 
 * `aircraft_boat_ground_user.svg`
 * `aircraft_boat_ground.svg`
@@ -139,11 +139,11 @@ Redémarrez *Little Navmap* pour voir les changements.
 * `aircraft_online.svg`
 * `aircraft_online_ground.svg`
 
-`aircraft_helicopter_ground_user.svg`
+Les suffixes sont choisis par type de véhicule statut \(sol ou aérien\)  et utilisateur ou AI/multijoueurs. L'icône est pour les véhicules aéroportés si le `sol` est manquant et pour les véhicules AI/multijoueurs   si l'`utilisateur` est manquant. Pour des raisons historiques toutes les icônes sont préfixées avec des `aéronefs`.
 
-`aircraft_helicopter_ground.svg`
+### Icônes de Catégorie de Point Utilisateur {#customize-userpoint-icons}
 
-`aircraft_helicopter_user.svg`
+Les icônes des catégories de points utilisateur sont stockées dans le programme mais peuvent également être surchargées par l'utilisateur.
 
 Les icônes de catégorie par défaut peuvent être surchargées par une autre icône en plaçant un fichier avec l'un des noms de catégorie par défaut dans le répertoire de configuration.
 
@@ -174,21 +174,3 @@ Par exemple `userpoint_My Places.png` crée une nouvelle catégorie `My Places`.
 
 N'utilisez pas de caractères spéciaux comme `/` pour les catégories. Seuls les lettres, les chiffres, les espaces, les traits de soulignement et les tirets sont autorisés. Les creux et les caractères accentués ne posent aucun problème.
 
-`aircraft_small_ground_user.svg`
-
-`aircraft_small_ground.svg`
-
-`aircraft_small_user.svg`
-
-`aircraft_small.svg`
-
-`aircraft_online.svg`
-
-`aircraft_online_ground.svg`
-
-Les suffixes sont choisis par type de véhicule statut \(sol ou aérien\)  et utilisateur ou AI/multijoueurs. L'icône est pour les véhicules aéroportés si le `sol` est manquant et pour les véhicules AI/multijoueurs   si l'`utilisateur` est manquant. Pour des raisons historiques toutes les icônes sont préfixées avec des `aéronefs`.
-
-Pour changer une icône téléchargez-la depuis le référentiel source de Github [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/1.8/resources/icons) et l'enregistrer dans le répertoire de paramétrage `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`.
-
-Vous pouvez utiliser le logiciel de dessin vectoriel libre [Inkscape](https://inkscape.org) pour éditer les icônes.
-Redémarrez *Little Navmap* pour voir les changements.

@@ -28,12 +28,12 @@ Voir les deux chapitres ci-dessous si vous souhaitez exécuter _Little Navmap_ d
 * [Connexion à un Simulateur de Vol](CONNECT.md)
 * [Fonctionnement sans Installation du Simulateur de Vol](RUNNOSIM.md)
 
-## Général {#general-remarks}
+**Comment préparer une configuration réseau:**
 
 1. Installer/extraire toute l'archive *Little Navmap* sur l'ordinateur de vol **et** du réseau.
 1. Copier *Little Xpconnect* dans le dossier des plugins X-Plane si vous utilisez X-Plane.
 2. Utiliser *Little Navmap* pour générer la base de données des scènes sur l'ordinateur de vol. Menu principal -&gt; `Bibliothèque de Scènes` -&gt; `Charger la bibliothèque de scènes ...`
-3. Copiez les fichiers de la base de données sur l'ordinateur réseau. Quitter *Little Navmap* avant de copier.
+3. Copier les fichiers de la base de données sur l'ordinateur réseau. Quitter *Little Navmap* avant de copier.
 
 **Voler dans une configuration réseau:**
 
@@ -43,6 +43,7 @@ Voir les deux chapitres ci-dessous si vous souhaitez exécuter _Little Navmap_ d
 4. Connecter *Little Navmap* sur l'ordinateur réseau de *Little Navconnect* sur l'ordinateur de vol. Menu principal -&gt; `Outils` -&gt; `Connexion du simulateur de vol ...`
 
 Voir les liens ci-dessus pour des instructions détaillées.
+## Général {#general-remarks}
 
 ### Interface Utilisateur {#user-interface}
 
@@ -77,7 +78,7 @@ Les menus contextuels se trouvent aux endroits suivants :
 
 Les menus contextuels permettent d'obtenir plus d'informations sur un objet à la position cliquée ou de construire ou modifier un plan de vol.
 
-#### Infobulles, Boutons d'Aide et Menu Aide {#help}
+#### Infobulles, Boutons Aide et Menu Aide {#help}
 
 Le menu d'aide de *Little Navmap* contient des liens vers l'aide en ligne, un document PDF d'aide hors ligne inclus, des tutoriels en ligne et la légende de la carte.
 
@@ -109,7 +110,7 @@ Vous pouvez modifier la taille du texte de façon permanente dans la boîte de d
 
 Un moyen rapide de changer la taille du texte est d'utiliser la molette de la souris et la touche `Ctrl`. Ce paramètre ne sera pas sauvegardé d'une session à l'autre.
 
-#### Messages d'Erreurs
+#### Messages Erreurs
 
 _Little Navmap_ affiche des messages d'erreur avec du texte blanc sur fond rouge pour les problèmes liés aux performances de l'aéronef, aux calculs du début de la descente et de la montée et autres problèmes.
 
@@ -135,7 +136,17 @@ Tous les aérodromes qui ne sont pas situés dans le répertoire `Scenery` par d
 
 Les aérodromes dans le fichier `Custom Scenery/Global Airports/Earth nav data/apt.dat` de X-Plane sont des aérodromes 3D, ce qui augmente la note d'une étoile.
 
-#### FSX et Prepar3D
+### Traduction et Locale {#translation-and-locale}
+
+_Little Navmap_ est actuellement disponible en plusieurs langues. 
+
+Je suis prêt à aider toute personne qui souhaite traduire l'interface utilisateur ou le manuel dans une autre langue. Les packages de langue peuvent être ajoutés à une installation _Little Navmap_ ultérieurement dès qu'ils sont disponibles. Voir [Traduction](https://github.com/albar965/littlenavmap/wiki/Translating) dans le wiki Github _Little Navmap_ pour plus d'informations.
+
+Vous pouvez remplacer la langue de l'interface utilisateur dans la boîte de dialogue `Options` de l'onglet `Interface Utilisateur`.
+
+Malgré l'utilisation de la langue anglaise dans l'interface utilisateur, les paramètres locaux du système d'exploitation seront utilisés. Ainsi, par exemple, sur une version allemande de Windows, vous verrez la virgule comme séparateur décimal au lieu du point anglais.
+
+Les paramètres de langue et de locale peuvent être forcés à l'anglais dans la boîte de dialogue "Options" de l'onglet `Interface Utilisateur` si une interface utilisateur traduite n'est pas souhaitée.
 
 Veuillez noter que certaines captures d'écran de ce manuel ont été prises en utilisant des paramètres linguistiques allemands, c'est pourquoi une virgule est utilisée comme séparateur décimal et un point comme séparateur de milliers.
 
@@ -146,7 +157,7 @@ La légende explique toutes les icônes de la carte et les icônes `Profil d'él
 ### Conventions de Désignation Utilisées dans ce Manuel {#naming-conventions-used-in-this-manual}
 
 `Le texte surligné`est utilisé pour indiquer les noms de fenêtre, de menu, de bouton, de fichier ou de répertoire.
-Voir le [Glossaire](GLOSSARY.md) pour des explications sur les termes courants utilisés dans ce manuel.
+Voir le [Glossaire](GLOSSARY1.md) pour des explications sur les termes courants utilisés dans ce manuel.
 
 ### Classement {#rating}
 

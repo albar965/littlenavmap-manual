@@ -9,23 +9,27 @@ L'agent _Little Navconnect_ est nécessaire si _Little Navmap_ est exécuté sur
 
 #### Tous les Simulateurs
 
-Ouvrez la boîte de dialogue de connexion dans _Little Navmap_ en sélectionnant Menu principal  `Menu Principal` -&gt; `Outils` -&gt; `Connexion du Simulateur de Vol ` et choisissez le simulateur auquel la connexion doit être établie.
+Ouvrez la boîte de dialogue de connexion dans _Little Navmap_ en sélectionnant Menu principal  `Menu Principal` -&gt; `Outils` -&gt; `Connexion au Simulateur de Vol ` et choisissez le simulateur auquel la connexion doit être établie.
+
+![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
+
+_**Image ci-dessus:** Boîte de dialogue de connexion Little Navmap configurée pour une connexion locale à FSX ou P3D. La connexion sera établie manuellement.._
+
+Sélectionner ` Connexion directe à Flight Simulator local`.
+
+Cliquer ensuite sur `Connecter`. La boîte de dialogue se ferme et _Little Navmap_ essaie d'établir une connexion en arrière-plan.
+
+Cliquer sur `Fermer` pour conserver toutes les modifications et fermer le dialogue sans établir de connexion.
+
+Activer `Connexion automatique ` si vous ne souhaitez pas vous connecter manuellement. L'orde de démarrage des programmes n'a pas d'importance si cette case est cochée et _Little Navmap_ trouvera le simulateur une fois qu'il est démarré ou lorsqu'il est déjà en cours d'exécution. Cest le réglage recommandé.
+
+Désélectionner `Aéronef AI ou multiplayer` ou `Navire AI ou multiplayer` pour désactiver le transfert de ces informations vers l'interface. Ceci peut être utile pour des raisons de performance si vous utilisez de grandes quantités d'AI mais que vous ne voulez pas voir dans _Little Navmap_.
+
+#### X-Plane
 
 ![Little Navmap Connect Dialog](../images/connectlocal_fr.jpg "Little Navmap Connect Dialog")
 
-_**Photo ci-dessus:** Boîte de dialogue Little Navmap connexion configurée pour une connexion locale à X-Plane. La connexion sera établie manuellement._
-
-Sélectionnez ` Connecter directement au simulateur de vol local`.
-
-Cliquez ensuite sur `Connecter`. La boîte de dialogue se ferme et _Little Navmap_ essaie d'établir une connexion en arrière-plan.
-
-Cliquez sur `Fermer` pour conserver toutes les modifications et fermer le dialogue sans établir de connexion.
-
-Activez `Connexion automatique ` si vous ne souhaitez pas vous connecter manuellement. L'orde de démarrage des programmes n'a pas d'importance si cette case est cochée et _Little Navmap_ trouvera le simulateur une fois qu'il est démarré ou lorsqu'il est déjà en cours d'exécution. Cest le réglage recommandé.
-
-Désélectionnez `Aéronef AI ou multiplayer` ou `Navire AI ou multiplayer` pour désactiver le transfert de ces informations vers l'interface. Ceci peut être utile pour des raisons de performance si vous utilisez de grandes quantités d'AI mais que vous ne voulez pas voir dans _Little Navmap_.
-
-#### X-Plane
+_**Image ci-dessus:** Boîte de dialogue Little Navmap connexion configurée pour une connexion locale à X-Plane. La connexion sera établie manuellement._
 
 Vous devez installer le plugin *Little Xpconnect* inclus pour utiliser *Little Navmap* comme une carte mobile avec X-Plane.
 
@@ -48,7 +52,7 @@ Vous devez extraire l'archive ZIP qui contient les fichiers `littlenavmap.exe` e
 
 Assurez-vous que les versions majeures de _Little Navmap_ et _Little Navconnect_ correspondent sinon vous pourriez recevoir un message d'erreur. _Little Navmap_ 1.0.5 est compatible avec _Little Navconnect_ 1.0.2 mais pas avec  1.2 par exemple.
 
-Pour X-Plane, vous devez également installer le plugin *Little Xpconnect*. Voir le fichier `README.txt` dans le répertoire `Little Xpconnect` pour les instructions d'installation.
+Pour X-Plane, vous devez également installer le plugin *Little Xpconnect*. Voir le fichier `LISEZMOI.txt` dans le répertoire `Little Xpconnect` pour les instructions d'installation.
 
 #### Démarrer _Little Navconnect_ sur / Ordinateur Maître {#connect-start-navconnect}
 
@@ -58,7 +62,7 @@ _Little Navconnect_ peut imprimer plusieurs adresses IP ou noms d'hôtes selon l
 
 ![Little Navconnect](../images/littlenavconnect_fr.jpg "Little Navconnect")
 
-_**Photo ci-dessus:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ fonctionne et attend un simulateur de vol. Il tourne sur l'ordinateur_`win10.fritz.box`_ avec l'adresse IP _`192.168.2.13`_._
+_**Image ci-dessus:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ fonctionne et attend un simulateur de vol. Il tourne sur l'ordinateur_`win10.fritz.box`_ avec l'adresse IP _`192.168.2.13`_._
 
 Modifier le port dans_Little Navconnect_ `Options` si vous voyez un message d'erreur comme illustré ci-dessous:
 
@@ -67,9 +71,9 @@ Modifier le port dans_Little Navconnect_ `Options` si vous voyez un message d'er
 #### Démarrer Little Navmap sur le Client / Ordinateur Distant {#connect-start-navmap}
 
 Ouvrez la boîte de dialogue de connexion dans _Little Navmap_ en sélectionnant `Menu Principal` -&gt; `Outils` -&gt; `Connexion au Simulateur de Vol`.
-![Little Navmap Connect Dialog](../images/connect_fr.jpg "Little Navmap Connect Dialog")
+![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
-_**Photo ci-dessus:** Connecter le dialogue avec les valeurs correctes pour accéder à l'ordinateur distant utilisant Little Navconnect comme illustré ci-dessus._
+_**Image ci-dessus:** Connecter le dialogue avec les valeurs correctes pour accéder à l'ordinateur distant utilisant Little Navconnect comme illustré ci-dessus._
 
 Maintenant faites ce qui suit après avoir ouvert la boîte de dialogue:
 
@@ -86,7 +90,7 @@ Il est recommandé de sélectionner `Connexion automatiquement`. L'ordre de dém
 
 Désélectionnez `Aéronef AI ou multiplayer` ou `Navire AI ou multiplayer` dans `Outils` -&gt; `Options` de _Little Navconnect_ pour désactiver le transfert de ces informations à travers le réseau. Ceci peut être utile pour des raisons de performance si vous utilisez de grandes quantités d'AI mais que vous ne voulez pas le voir dans_Little Navmap_.
 
-### Options de la Boîte de Dialogue Connecter {#options}
+### Options du Dialogue de Connexion {#options}
 
 * `Déconnexion`:  Déconnecte la session en cours et arrête la reconnexion automatique.
 * `Connexion`: Essaie de se connecter. Une boîte de dialogue d'erreur s'affiche si aucune connexion ne peut être établie. _Little Navmap_ réessaiera constamment si `Connexion automatiquement` est activé.

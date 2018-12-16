@@ -1,6 +1,6 @@
 ## Afficher la Carte {#map-display}
 
-Voir la [Légende de la Carte de Navigation](LEGEND.md) pour plus de détails sur les différents symboles représentés par la carte.
+Voir la [Légende NavMap](LEGEND.md) pour plus de détails sur les différents symboles représentés par la carte.
 
 ### Déplacements {#moving}
 
@@ -29,17 +29,16 @@ La fonctionnalité du double clic et du simple clic ne fonctionne pas pour les w
 
 La sensibilité au clic de la souris peut être ajustée dans la boîte de dialogue `Options` de l'onglet `Afficher la Carte`.
 
-### Aéronef {#aircraft}
+### Mouse Click Hotspots {#mouse-click-hotspots}
 
-L'aéronef utilisateur et les aéronefs ou navires multijoueurs seront affichés sur la carte si le programme est connecté à un simulateur de vol. La couleur indique l'utilisateur ou l'Al ou le véhicule multijoueur et la forme du symbole indique si un aéronef est un piston/turbopropulseur, un jet, un hélicoptère ou un navire. Le contour du symbole devient gris si un aéronef se trouve au sol.
+Map marks like range rings or measurement lines have hotspots to indicate that a modifier-click can remove them or an action is available in the context menu. The same applies to the flight plan drag and drop editing mode.
 
-Little Navmap limite l'affichage des véhicules AI en fonction de leur taille. Zoomez près pour voir les petits aéronefs ou les navires.
+The mouse cursor changes into a hand ![Hand Cursor](../images/cursorhand.jpg) to indicate a click spot.
 
-Les points de clics le sont :
-
-* Centre des anneaux de portée \(petit cercle\).
-* Fin d'une ligne de mesure \(croisement\).
-* Point de seuil de piste \(petit cercle\) pour les circulations de trafic aérien
+Click spots are:
+* Center of range rings \(small circle\).
+* End of a measurement line \(cross\).
+* Runway threshold point \(small circle\) for airport traffic patterns.
 
 ### Clics de Souris et Modificateurs {#mouse-clicks-modifiers}
 
@@ -74,27 +73,27 @@ En passant la souris sur la carte, vous obtiendrez des infobulles pour tous les 
 
 La sensibilité de l'affichage de l'infobulle peut être réglée dans la boîte de dialogue `Options` de l'onglet `Carte`.
 
-![Tooltip](../images/tooltip.jpg "Tooltip") ![Tooltip Airspace](../images/tooltipairspace.jpg "Tooltip Airspace")
+![Tooltip](../images/tooltip_fr.jpg "Tooltip") ![Tooltip Airspace](../images/tooltipairspace_fr.jpg "Tooltip Airspace")
 
 _**Image ci-dessus:** Infobulle avec des informations sur un aérodrome et un VOR et un Infobulle avec des informations sur les espaces aériens.._
 
-### Points en Évidences {#highlights}
+### Points en Surbrillance {#highlights}
 
-Les aérodromes ou navaids qui sont sélectionnés dans le tableau du plan de vol ou dans le tableau des résultats de recherche sont mis en évidences sur la carte avec un anneau vert/noir ou jaune/noir respectivement.
+Les aérodromes ou navaids qui sont sélectionnés dans le tableau du plan de vol ou dans le tableau des résultats de recherche sont mis en surbrillance sur la carte avec un anneau vert/noir ou jaune/noir respectivement.
 
-Les waypoints sélectionnés dans l'aperçu de la procédure sont mis en évidence par un anneau bleu/noir.
+Les waypoints sélectionnés dans l'aperçu de la procédure sont mis en surbrillance par un anneau bleu/noir.
 
-Ces anneaux de surbrillance fournissent toutes les fonctionnalités des objets cartographiques visibles, même si les objets ne sont pas affichés à la distance de zoom actuelle \(l'anneau est vide\). Cela permet un double clic pour zoomer, un simple clic pour la fenêtre du dock d'information et toutes les entrées du menu contextuel.
+Ces anneaux en surbrillance fournissent toutes les fonctionnalités des objets cartographiques visibles, même si les objets ne sont pas affichés à la distance de zoom actuelle \(l'anneau est vide\). Cela permet un double clic pour zoomer, un simple clic pour la fenêtre d'informations et toutes les entrées du menu contextuel.
 
-Vous pouvez utiliser le bouton `Effacer la Sélection` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") en haut du plan de vol et des fenêtres de recherche pour supprimer les points forts de la carte.
+Vous pouvez utiliser le bouton `Effacer Sélection` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") en haut du plan de vol et des fenêtres de recherche pour supprimer les points en surbrillance de la carte.
 
-### Diagramme de l'Aérodrome {#airport-diagram}
+### Diagramme Aérodrome {#airport-diagram}
 
 L'affichage passera d'une simple icône à un diagramme d'aérodrome si vous effectuez un zoom suffisamment profond pour atteindre un aérodrome. Le diagramme montre toutes les voies de circulation, les positions de parking, les portes, les pistes et plus encore.
 
 Le diagramme de l'aérodrome fournit plus d'informations grâce à des infobulles pour les positions de parking et de tour de contrôle. Un clic droit sur une position de parking ouvre le menu contextuel et permet de sélectionner la position de départ du plan de vol.
 
-Voir la [Légende de la Carte de Navigation](LEGEND.md#airport-diagram) pour plus de détails sur le diagramme de l'aérodrome.
+Voir la [Légende NavMap](LEGEND.md#airport-diagram) pour plus de détails sur le diagramme de l'aérodrome.
 
 ![Diagramme de l'Aérodrome](../images/airportdiagram1.jpg "Diagramme de l'Aérodrome")
 
@@ -116,7 +115,7 @@ Affiche des informations détaillées dans la fenêtre ancrée " Information " p
 
 Voir la [Fenêtre Informations](INFO.md#information-dock-window) pour plus de détails.
 
-#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Afficher Procédure {#show-procedures}
+#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Afficher Procédures {#show-procedures}
 
 Ouvre l'onglet de recherche de procédure de la fenêtre ancrée de recherche et affiche toutes les procédures pour l'aérodrome.
 
@@ -138,7 +137,7 @@ Le cours est toujours indiqué en degrés vrais, ce qui est indiqué par le suff
 
 La largeur des lignes de mesure de distance peut être modifiée dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`.
 
-Voir la [Légende de la Carte de Navigation](LEGEND.md#map-marks) pour plus de détails sur les lignes de mesure.
+Voir la [Légende NavMap](LEGEND.md#map-marks) pour plus de détails sur les lignes de mesure.
 
 #### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Mesurer la Distance Rhumb à partir d'ici {#measure-rhumb-distance-from-here}
 
@@ -156,17 +155,29 @@ Voir [Déclination Magnétique](INTRO.md#magnetic-declination) pour des remarque
 
 Cet élément de menu est actif si vous faites un clic droit à la fin d'une ligne de mesure de distance \(petite croix\). Supprime uniquement la ligne sélectionnée.
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher les Anneaux de Portée {#show-range-rings}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Afficher la Circulation du Trafic Aérien {#show-traffic-pattern}
+
+Cet élément de menu est activé si vous cliquez sur un aérodrome. Affiche une boîte de dialogue qui permet de personnaliser et d'afficher une circulation de trafic aérien sur la carte.
+
+Voir [Circulation du trafic](TRAFFICPATTERN.md).
+
+#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Supprimer la Circulation du Trafic Aérien {#remove-traffic-pattern}
+
+Activé si vous cliquez sur le point en surbrillance de la circulation de trafic de l'aérodrome \(cercle au seuil de la piste\) qui est indiqué par un curseur à la main.
+
+Voir [Circulation du trafic](TRAFFICPATTERN.md).
+
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher Anneaux de Portée {#show-range-rings}
 
 Affiche plusieurs anneaux de portée rouge autour de la position cliquée. Le nombre et la distance des anneaux de plage peuvent être modifiés dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`. Une étiquette indique le rayon de chaque anneau en milles nautiques.
 
 La largeur de tous les anneaux de gamme peut être modifiée dans la boîte de dialogue ` Options` de l'onglet ` Affichage des Cartes`.
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher la Portée du Navaid {#show-navaid-range}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher Portée Navaid {#show-navaid-range}
 
 Affiche un anneau autour de l'aide radio navaid \(VOR ou NDB\) indiquant la portée du navaid. Une étiquette indique l'identité et la fréquence et la couleur de la bague indique le type de navaid.
 
-#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Supprimer l'Anneau de Portée {#remove-range-ring}
+#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Supprimer Anneau de Portée {#remove-range-ring}
 
 L'élément de menu est actif si vous faites un clic droit au centre d'un anneau de portée \(petit cercle\). Supprime les anneaux de la carte.
 
@@ -242,9 +253,9 @@ Afficher l'aérodrome, navaid, le point utilisateur, le client connecté ou le c
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Définir le Centre pour la Recherche à Distance {#set-center-for-distance-search}
 
-Définisser le point central de la fonction de recherche de distance. Voir [Recherche de distance](SEARCH.md#distance-search). Le centre de la recherche de distance est mis en évidence par le symbole ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") .
+Définisser le point central de la fonction de recherche de distance. Voir [Recherche de distance](SEARCH.md#distance-search). Le centre de la recherche de distance est mis en surbrillance par le symbole ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") .
 
 #### ![Set Home](../images/icons/home.png "Set Home") Définir Origine {#set-home}
 
-Définissez la vue de carte actuellement visible comme votre vue d'origine. Le centre de la zone d'origine est mis en évidence par un symbole ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") .
+Définissez la vue de carte actuellement visible comme votre vue d'origine. Le centre de la zone d'origine est mis en surbrillance par un symbole ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") .
 

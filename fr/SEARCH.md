@@ -1,4 +1,4 @@
-## ![Search](../images/icons/searchdock.png "Search") Fenêtre de Recherche - Aérodromes et Navaids {#search-dock-window}
+## ![Search](../images/icons/searchdock.png "Search") Fenêtre Recherche - Aérodromes et Navaids {#search-dock-window}
 
 Les onglets de recherche aérodrome et navaid contiennent plusieurs rangées de filtres de recherche qui peuvent être activés et désactivés à l'aide du menu déroulant  ![Menu Button](../images/icons/menubutton.png "Menu Button") en haut à droite.
 
@@ -48,15 +48,15 @@ Vérifiez le menu déroulant pour l'indicateur de changement `*` et les champs d
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-_**Image ci-dessus:** Une recherche par distance complexe. Trouvez tous les aérodromes situés à une distance comprise entre 200 et 400 miles nautiques de Francfort \(EDDF\). Les aérodromes devraient avoir une cote supérieure à 0 et devraient avoir au moins une piste éclairée. Les aérodromes militaires et les aérodromes inoccupés sont exclus. Les aérodromes résultants sont mis en évidence sur la carte en les sélectionnant dans le tableau des résultats de recherche._
+_**Image ci-dessus: Une recherche par distance complexe.** Trouvez tous les aérodromes situés à une distance comprise entre 200 et 400 miles nautiques de Francfort \(EDDF\). Les aérodromes devraient avoir une cote supérieure à 0 et devraient avoir au moins une piste éclairée. Les aérodromes militaires et les aérodromes inoccupés sont exclus. Les aérodromes résultants sont mis en évidence sur la carte en les sélectionnant dans le tableau des résultats de recherche._
 
 ![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
 
-_**Image ci-dessus:** Une recherche complexe de scènes. Cet exemple montre comment trouver des scènes supplémentaires spécifiques en utilisant le champ de recherche `Emplacement de la scène`. Ceci montre tous les aérodromes de l'extension Orbx New Zealand South Island qui ont des pistes éclairées._
+_**Image ci-dessus: Une recherche complexe de scènes.**  Cet exemple montre comment trouver des scènes supplémentaires spécifiques en utilisant le champ de recherche `Emplacement de la scène`. Ceci montre tous les aérodromes de l'extension Orbx New Zealand South Island qui ont des pistes éclairées._
 
 ### Vue des Résultats de la Recherche dans le Tableau {#search-result-table-view}
 
-Tous les éléments sélectionnés dans la vue tableau seront mis en évidence sur la carte à l'aide d'un cercle noir/jaune. Voir [Faits marquants](MAPDISPLAY.md#highlights) pour plus d'informations. La sélection multiple à l'aide de `Shift+Click` ou `Ctrl+Click` est possible.
+Tous les éléments sélectionnés dans la vue tableau seront mis en surbrillance sur la carte à l'aide d'un cercle noir/jaune. Voir [Point en Surbrillance](MAPDISPLAY.md#highlights) pour plus d'informations. La sélection multiple à l'aide de `Shift+Click` ou `Ctrl+Click` est possible.
 
 #### En-tête {#table-view}
 
@@ -133,21 +133,22 @@ Efface les filtres de recherche et affiche à nouveau toutes les entrées dans l
 
 La vue Tableau n'affiche pas toutes les entrées au départ pour des raisons de performance. Cet élément de menu permet de charger et d'afficher l'ensemble du résultat de la recherche. La vue revient au nombre limité d'entrées après la modification d'un filtre de recherche ou la modification de l'ordre de tri. Le numéro de toutes les entrées, visibles et sélectionnées est affiché en bas de l'onglet.
 
-Sachez que l'affichage de toutes les navaids et aérodromes peut prendre un certain temps, surtout si elles sont mises en évidence sur la carte lors de la sélection de toutes les navaids. Le programme ne plante pas,
-mais a besoin de quelques secondes pour mettre en surbrillance tout ce qui se trouve sur la carte.
+Sachez que l'affichage de toutes les navaids et aérodromes peut prendre un certain temps, surtout si elles sont mises en évidence sur la carte lors de la sélection de toutes les navaids. Le programme ne plante pas, mais a besoin de quelques secondes pour mettre en surbrillance tout ce qui se trouve sur la carte.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher les Anneaux de Portée {#show-range-rings-0}
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher les Anneaux de Navaid {#show-navaid-range-0}
 
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Afficher Circulation du Traffic Aérien {#show-traffic-pattern}
+
 #### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Supprimer tous les Anneaux de Portée et les mesures de Distance {#remove-all-range-rings-and-distance-measurements-0}
 
-#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Définir comme plan de vol de Départ {#set-as-flight-plan-departure-0}
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Définir comme Plan de Vol de Départ {#set-as-flight-plan-departure-0}
 
-#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Définir comme plan de vol de Destination {#set-as-flight-plan-destination-0}
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Définir comme Plan de Vol de Destination {#set-as-flight-plan-destination-0}
 
-#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Ajouter la Position au Plan de Vol {#add-position-to-flight-plan-0}
-#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Joindre la Position au Plan de Vol {#append-position-to-flight-plan-0}
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Ajouter Position au Plan de Vol {#add-position-to-flight-plan-0}
+#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Joindre Position au Plan de Vol {#append-position-to-flight-plan-0}
 
 Identique au [Menu contextuel de la Carte](MAPDISPLAY.md#map-context-menu).
 

@@ -16,7 +16,7 @@ Vous devez utiliser le menu contextuel [Tableau des résultats de recherche - Af
 
 #### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Ouvrir Plan de Vol {#open-flight-plan}
 
-Ouvre un FSX PLN, un FS9 PLN, un X-Plane FMS ou un fichier de plan de vol FLP. Le type de fichier est déterminé par le contenu et non par l'extension du fichier. Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations.
+Ouvre un FSX PLN, un FS9 PLN, un X-Plane FMS ou un fichier de plan de vol FLP. Le type de fichier est déterminé par le contenu et non par l'extension du fichier. Voir [Formats Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations.
 
 Un fichier de plan de vol ouvert sera rechargé au démarrage \(le rechargement et le centrage peuvent être désactivés dans la boîte de dialogue `Options` sur l'onglet `Démarrer` et `Interface Utilisateur`).
 
@@ -47,13 +47,13 @@ Sauvegarde le plan de vol dans un fichier FSX/P3D PLN \(format XML\). Ce format 
 
 `Sauver Plan de Vol au format PLN` change le type et le nom du fichier actuel dans *Little Navmap*, ce qui signifie que toutes les sauvegardes ultérieures iront dans le nouveau fichier PLN.
 
-Il est recommandé de sauvegarder tous les plans de vol dans ce format pour conserver toutes les informations d'un plan. Même en utilisant le format FMS limité pour X-Plane. Voir [Formats de Plan de Vol]](FLIGHTPLANFMT.md) pour plus d'informations.
+Il est recommandé de sauvegarder tous les plans de vol dans ce format pour conserver toutes les informations d'un plan. Même en utilisant le format FMS limité pour X-Plane. Voir [Formats Plan de Vol]](FLIGHTPLANFMT.md) pour plus d'informations.
 
 _Little Navmap_ permettra de créer des plans de vol qui peuvent être utiles comme extrait de plan de vol, mais qui sont inutilisables par le simulateur de vol. Cela se produit si un plan de vol n'a pas d'aérodrome de départ ou de destination. Une boîte de dialogue d'avertissement s'affiche lors de l'enregistrement d'un plan de vol incomplet.
 
 Une boîte de dialogue d'avertissement s'affiche également si l'aérodrome de départ a des parkings mais qu'aucun n'est assigné dans le plan de vol.
 
-Les procédures seront sauvegardées sous forme d'annotation dans le fichier du plan de vol si le plan de vol en contient. Cela ne pose aucun problème pour les simulateurs et la plupart des autres programmes. Utiliser [Exporter un Plan de Vol sans risque](MENUS.md#export-clean-flight-plan) si un programme a des problèmes de lecture des fichiers PLN enregistrés par _Little Navmap_.
+Les procédures seront sauvegardées sous forme d'annotation dans le fichier du plan de vol si le plan de vol en contient. Cela ne pose aucun problème pour les simulateurs et la plupart des autres programmes. Utiliser [Exporter Plan de Vol sans risque](MENUS.md#export-clean-flight-plan) si un programme a des problèmes de lecture des fichiers PLN enregistrés par _Little Navmap_.
 
 Notez que les waypoints d'une procédure ne sont pas sauvegardés avec le plan de vol. Utilisez le GPS, le FMC ou d'autres moyens pour sélectionner une procédure dans votre aéronef.
 
@@ -65,7 +65,7 @@ Sauvegarde le plan de vol à l'aide du nouveau format X-Plane FMS 11.. **Ce form
 
 Une boîte de dialogue d'avertissement s'affiche avec l'avertissement ci-dessus lors de l'enregistrement.
 
-Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations sur les limitations.
+Voir [Formats Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations sur les limitations.
 
 Cette fonction change le type et le nom du fichier actuel, ce qui signifie que toutes les sauvegardes ultérieures iront dans le nouveau fichier FMS et que le fichier sera rechargé au prochain démarrage.
 
@@ -75,51 +75,35 @@ Stockez les fichiers FMS dans le répertoire `Output/FMS plans` à l'intérieur 
 
 Exporte le plan de vol actuel sous la forme d'un fichier FLP utilisable par le FMS X-Plane, Aerosoft Airbus et d'autres aéronefs supplémentaires. Ce format est limité de sorte qu'une boîte de dialogue s'affiche si des caractéristiques non prises en charge sont détectées dans le plan de vol en cours.
 
-Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations sur les limitations.
+Voir [Formats Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations sur les limitations.
 
 Cette fonction change le type et le nom du fichier actuel, ce qui signifie que toutes les sauvegardes ultérieures iront dans le nouveau fichier FLP et que le fichier sera rechargé au prochain démarrage.
 
 Stockez les fichiers FLP dans le répertoire `Output/FMS plans` à l'intérieur du répertoire X-Plane si vous voulez le charger dans le FMS.
 
-#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Exporter au format PLN simple (sans attributs) {#export-clean-flight-plan}
+#### ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN") Exporter au format PLN (sans attributs) {#export-clean-flight-plan}
 
 Sauvegarde un plan de vol sans procédure ni annotations de vitesse si les programmes ont des problèmes de lecture des fichiers PLN enregistrés par _Little Navmap_. Cela est rarement nécessaire.
 
 Comme toute autre fonction d'exportation, cela ne change pas le nom et le type de fichier actuel. Les autres sauvegardes utiliseront toujours le même nom de fichier et le même format qu'auparavant.
 
-Voir aussi [Formats de Plan de Vol](FLIGHTPLANFMT.md).
+Voir aussi [Formats Plan de Vol](FLIGHTPLANFMT.md).
 
 #### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Exporter Plan de Vol au format X-Plane FMS 3 {#export-flight-plan-as-fms3}
 
 Sauvegarde le plan de vol en utilisant l'ancien format X-Plane FMS 3 qui est limité mais peut être chargé par X-Plane 10 et X-Plane 11.05. Une boîte de dialogue d'avertissement s'affiche si des caractéristiques non prises en charge sont détectées dans le plan de vol en cours.
 
-Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations sur les limitations.
+Voir [Formats Plan de Vol](FLIGHTPLANFMT.md) pour plus d'informations sur les limitations.
 
 Cette fonction d'exportation ne change pas le nom et le type de fichier actuel. Les autres sauvegardes utiliseront toujours le même nom de fichier et le même format qu'auparavant.
 
-Stockez les fichiers FMS dans le répertoire `Output/FMS plans` à l'intérieur du répertoire source X-Plane si vous souhaitez utiliser le plan de vol dans le GPS X-Plane ou FMS.
+Stockez les fichiers FMS dans le répertoire `Output/plans FMS` à l'intérieur du répertoire source X-Plane si vous souhaitez utiliser le plan de vol dans le GPS X-Plane ou FMS.
 
 #### Exporter le Plan de Vol vers d'autres Formats (Sous-Menu) {#export-submenu}
 
-Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) pour obtenir des informations plus détaillées sur les formats d'exportation disponibles.
+Voir [Formats Plan de Vol](FLIGHTPLANFMT.md) pour obtenir des informations plus détaillées sur les formats d'exportation disponibles.
 
 Les fonctions d'exportation ne modifient pas le nom et le type de fichier actuel. Les autres sauvegardes utiliseront toujours le même nom de fichier et le même format qu'auparavant.
-
-##### Exporter Plan de Vol vers FPL pour le GNS Reality XP GNS {#save-flight-plan-as-rxpgns}
-
-Sauvegarder le plan de vol sous forme de fichier FPL utilisable par l'utilisateur. _Reality XP GNS 530W/430W V2_.
-
-Les procédures ou leurs points de cheminement respectifs ne sont pas inclus dans le fichier exporté.
-
-Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
-
-Les fonctions d'exportation ne modifient pas le nom et le type de fichier actuels. Les autres sauvegardes utiliseront toujours le même nom de fichier et le même format qu'auparavant.
-
-##### Exporter Plan de Vol au format GFP pour Reality XP GTN {#save-flight-plan-as-rxpgtn}
-
-Sauvegarder le plan de vol sous forme de fichier GFP utilisable par le _Reality XP GTN 750/650 Touch_. Ce format permet de sauvegarder les procédures et les voies aériennes.
-
-Voir aussi [Notes sur les formats Garmin GFP et FPL](FLIGHTPLANFMT.md#garmin-notes) pour des informations sur les chemins et d'autres remarques.
 
 ##### Exporter Plan de Vol au format Garmin GTN GFP {#save-flight-plan-as-gfp}
 
@@ -127,7 +111,23 @@ Exporte le plan de vol au format GFP utilisé par le _Flight1 GTN 650/750_.
 
 Les procédures ou leurs waypoints respectifs ne sont pas inclus dans le fichier exporté.
 
-Voir [Formats de Plan de Vol](FLIGHTPLANFMT.md#flight-plan-formats-gfp) pour plus d'informations sur ce format d'exportation et sur la façon de contourner les waypoints verrouillés.
+Voir [Formats Plan de Vol](FLIGHTPLANFMT.md#flight-plan-formats-gfp) pour plus d'informations sur ce format d'exportation et sur la façon de contourner les waypoints verrouillés.
+
+##### Exporter Plan de Vol au format GFP pour Reality XP GTN {#save-flight-plan-as-rxpgtn}
+
+Sauvegarder le plan de vol sous forme de fichier GFP utilisable par le _Reality XP GTN 750/650 Touch_. Ce format permet de sauvegarder les procédures et les voies aériennes.
+
+Voir aussi [Notes sur les formats Garmin GFP et FPL](FLIGHTPLANFMT.md#garmin-notes) pour des informations sur les chemins et d'autres remarques.
+
+##### Exporter Plan de Vol vers FPL pour le GNS Reality XP GNS {#save-flight-plan-as-rxpgns}
+
+Sauvegarder le plan de vol sous forme de fichier FPL utilisable par l'utilisateur. _Reality XP GNS 530W/430W V2_.
+
+Les procédures ou leurs points de cheminement respectifs ne sont pas inclus dans le fichier exporté.
+
+Voir [Formats Plan de Vol](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
+
+Les fonctions d'exportation ne modifient pas le nom et le type de fichier actuels. Les autres sauvegardes utiliseront toujours le même nom de fichier et le même format qu'auparavant.
 
 ##### Exporter Plan de Vol au format PMDG RTE {#export-flight-plan-as-rte}
 
@@ -141,6 +141,12 @@ pour tous les simulateurs. Le répertoire sera créé automatiquement par _Littl
 Exporte le plan de vol actuel sous la forme dun fichier TXT utilisable par les aéronefs JARDesign ou Rotate Simulations.
 
 Ni les procédures ni leurs waypoints respectifs ne sont inclus dans le fichier exporté.
+
+##### Exporter le Plan de Vol au format TXT {#export-flight-plan-as-txt}
+
+Exporte le plan de vol actuel sous forme de fichier TXT utilisable par les aéronefs JARDesign ou Rotate Simulations.
+
+Ni les procédures ni leurs repères de balisage respectifs ne sont inclus dans le fichier exporté.
 
 ##### Exporter Plan de Vol au format Majestic Dash FPR {#export-flight-plan-as-fpr}
 
@@ -215,9 +221,9 @@ Exemple: [ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C ENBO](https:/
 ##### Sauvegarder les Waypoints pour les Approches {#export-flight-plan-approach-waypoints}
 ##### Sauver les Waypoints pour SID et STAR {#export-flight-plan-sid-star-waypoints}
 
-Sauvegarder les waypoints des procédures au lieu de l'information sur les procédures si coché. Ceci affecte tous les formats d'exportation et de sauvegarde des plans de vol.
+Sauver les waypoints des procédures au lieu de l'information sur les procédures si coché. Ceci affecte tous les formats d'exportation et de sauvegarde des plans de vol.
 
-Utilisez cette option si votre simulateur, GPS ou FMC ne prend pas en charge le chargement ou l'affichage des procédures d'approche, SID ou STAR.
+Utiliser cette option si votre simulateur, GPS ou FMC ne prend pas en charge le chargement ou l'affichage des procédures d'approche, SID ou STAR.
 
 Les informations de procédure sont remplacées par des waypoints respectifs qui permettent d'afficher les procédures dans des unités GPS ou FMS limitées.
 
@@ -252,13 +258,13 @@ Enregistre la vue de la carte actuelle en tant que fichier image. Les formats au
 Arrête le chargement des données cartographiques à partir d'Internet. Ceci affecte  _OpenStreetMap_,  _OpenTopoMap_ et tous les autres thèmes de cartes en ligne ainsi que les données d'altitude.
 Une indication rouge `Hors ligne.` est affichée dans la barre d'état si ce mode est activé.
 
-### ![Print Map](../images/icons/printmap.png "Print Map") Print Map {#print-map}
+### ![Print Map](../images/icons/printmap.png "Print Map") Imprimer Carte {#print-map}
 
-Permet d'imprimer la carte actuelle. Voir [Imprimer la Carte](PRINT.md#printing-the-map)  pour plus d'informations.
+Permet d'imprimer la carte actuelle. Voir [Imprimer Carte](PRINT.md#printing-the-map)  pour plus d'informations.
 
 ### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Imprimer Plan de Vol {#print-flight-plan}
 
-Ouvre une boîte de dialogue d'impression qui vous permet de sélectionner les informations relatives au plan de vol à imprimer. Voir [Imprimer le Plan de Vol de la Carte](PRINT.md#printing-the-flight-plan) pour plus d'informations.
+Ouvre une boîte de dialogue d'impression qui vous permet de sélectionner les informations relatives au plan de vol à imprimer. Voir [Imprimer Plan de Vol de la Carte](PRINT.md#printing-the-flight-plan) pour plus d'informations.
 
 ### ![Quit](../images/icons/application-exit.png "Quit") Quitter {#file-quit}
 
@@ -347,7 +353,7 @@ Modifie l'altitude du plan de vol en fonction d'une règle Est/Ouest simplifiée
 
 #### ![Goto Home](../images/icons/home.png "Goto Home") Retour à la Position d'Origine {#goto-home}
 
-Permet d'accéder à la one de départ définie à l'aide de [Choisir Position d'Origine](MAPDISPLAY.md#set-home) en utilisant la position enregistrée et la distance de zoom Le centre du domicile est mise en évidence par le symbole  ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") .
+Permet d'accéder à la one de départ définie à l'aide de [Choisir Position d'Origine](MAPDISPLAY.md#set-home) en utilisant la position enregistrée et la distance de zoom Le centre du point d'origine est mise en évidence par le symbole  ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") .
 
 #### ![Go to Center for Distance Search](../images/icons/centermark.png "Go to Center for Distance Search") Aller au Centre pour la Recherche de Distance {#go-to-center-for-distance-search}
 
@@ -357,7 +363,7 @@ Allez au point central utilisé pour les recherches de distance. Voir [Définir 
 
 Zoom arrière sur la carte \(si nécessaire\) pour afficher l'ensemble du plan de vol sur la carte.
 
-#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Supprimer tous les Surlignages et Sélections {#remove-highlights}
+#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Supprimer tous les Surbrillances et Sélections {#remove-highlights}
 
 Désélectionnez toutes les entrées du tableau du plan de vol, tous les tableaux des résultats de recherche et supprimez toutes les marques de surbrillance de la carte. Utilisez ceci pour obtenir une vue nette de la carte pendant le vol.
 
@@ -631,7 +637,7 @@ Identique à la NOAA mais les informations météorologiques peuvent être plus 
 
 L'option la plus rapide pour afficher la météo en ligne mais les informations météorologiques peuvent être plus anciennes que celles de la NOAA.
 
-#### ![Show Sun Shading](../images/icons/mapshadow.png "Show Sun Shading") Afficher l'Ombre Solaire {#show-sun-shading}
+#### ![Show Sun Shading](../images/icons/mapshadow.png "Show Sun Shading") Afficher Ombre Solaire {#show-sun-shading}
 
 Permet l'affichage d'une ombre solaire sur le globe. Cela fonctionne à la fois dans les projections `Mercator` et `Sphérique`.
 

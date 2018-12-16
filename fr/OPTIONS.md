@@ -98,7 +98,7 @@ Basculer ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft"
 
 Cette option est également utilisée dans l'option [Profil d'Élévation du Plan de Vol](PROFILE.md).
 
-#### Sauter de nouveau à l'avion et reprendre le suivi de l'aéronef après ce temps. {#simulator-aircraft-jump-timeout}
+#### Sauter de nouveau à l'aéronef et reprendre le suivi de l'aéronef après ce temps. {#simulator-aircraft-jump-timeout}
 
 Temps jusqu'à ce que le suivi de l'aéronef soit à nouveau activé après une interaction cartographique comme le défilement ou le zoom.
 

@@ -1,4 +1,4 @@
-## Créer ou Ajouter des Thèmes de Carte {#creating-or-adding-map-themes}
+## Création de Thèmes Cartographiques {#creating-or-adding-map-themes}
 
 Pour ajouter une carte arbitraire en ligne d'une carte hors ligne à _Little Navmap_, il suffit d'ajouter le répertoire de la carte à partir d'un thème de carte téléchargé ou créé par l'utilisateur dans le répertoire `data\maps\earth`.
 

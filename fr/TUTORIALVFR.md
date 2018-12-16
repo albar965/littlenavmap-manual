@@ -33,7 +33,7 @@ Maintenant :
 * Zoomez jusqu'à ce que vous voyez le diagramme de l'aérodrome montrant les voies de circulation (taxiways), les détails de la piste, les positions de parking et plus encore.
 * Zoomez plus loin jusqu'à ce que vous voyez les numéros de parking blancs.
 * Clic droit sur le centre de l'une des places de parking de la rampe verte \(11 est utilisé ici\).
-* Choisissez `Sélectionnez l'aérodrome Meythet (LFLP) / Parking 11 comme plan de vol Départ` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png) dans le menu contextuel.
+* Choisissez `Sélectionnez l'aérodrome Meythet (LFLP) / Parking 11 comme plan de vol de Départ` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png) dans le menu contextuel.
 
 ![Meythet (LFLP) Parking](../images/tutorial/vfrmapparking.jpg)
 
@@ -46,13 +46,13 @@ Vous pouvez également cliquer sur l'icône de l'aérodrome et le sélectionner 
 Nous ajoutons les waypoints maintenant :
 
 * Faites défiler le long de la vallée jusqu'au sud-est en passant par le lac d'Annecy.
-* Cliquez sur `Joindre la position au Plan de Vol` ![Append Position to Flight Plan](../images/icons/routeadd.png). La position cliquée sera ajoutée en tant que waypoint défini par l'utilisateur jusqu'à la fin de votre plan.
+* Cliquez sur `Joindre Position au Plan de Vol` ![Append Position to Flight Plan](../images/icons/routeadd.png). La position cliquée sera ajoutée en tant que waypoint défini par l'utilisateur jusqu'à la fin de votre plan.
 
-Cliquez sur Annuler ![Undo](../images/icons/undo.png) ou Refaire ![Redo](../images/icons/redo.png) si vous n'aimez pas ce que vous venez de joindre.
+Cliquez sur Défaire plan de vol ![Undo](../images/icons/undo.png) ou Refaire plan de vol ![Redo](../images/icons/redo.png) si vous n'aimez pas ce que vous venez de joindre.
 
 ![Append Waypoint](../images/tutorial/vfrappend_fr.jpg)
 
-Une autre fonction est `Ajouter la position au Plan de Vol` ![Add Position to Flight Plan](../images/icons/routeadd.png) qui insérera la position cliquée au segment du plan de vol le plus proche. Vous pouvez l'utiliser pour ajouter des positions définies par l'utilisateur, des aérodromes ou des navaids au milieu d'un plan de vol. Le segment le plus proche sera choisi automatiquement par _Little Navmap_.
+Une autre fonction est `Ajouter Position au Plan de Vol` ![Add Position to Flight Plan](../images/icons/routeadd.png) qui insérera la position cliquée au segment du plan de vol le plus proche. Vous pouvez l'utiliser pour ajouter des positions définies par l'utilisateur, des aérodromes ou des navaids au milieu d'un plan de vol. Le segment le plus proche sera choisi automatiquement par _Little Navmap_.
 
 _Little Navmap_ attribue automatiquement des noms aux waypoints définis par l'utilisateur. Vous pouvez les laisser tels quels ou les remplacer par un nom plus significatif.
 
@@ -77,9 +77,9 @@ Maintenant, il y a un plan de vol. Le tien a peut-être l'air un peu différent.
 
 ![VFR Flight Plan](../images/tutorial/vfrflightplan.jpg)
 
-Vous pouvez également utiliser la fonction glisser-déposer pour déplacer des points ou en ajouter de nouveaux. Activez-le en cochant la case " `Plan de Vol` -&gt; `Modifier le Plan de Vol sur la Carte` ![Edit Flight Plan on Map](../images/icons/routeedit.png) et cliquez sur un waypoint du plan de vol pour le déplacer. Cliquez sur un segment du plan de vol pour ajouter un nouveau repère de balisage dans ce segment.
+Vous pouvez également utiliser la fonction glisser-déposer pour déplacer des points ou en ajouter de nouveaux. Activez-le en cochant la case " `Plan de Vol` -&gt; `Modifier Plan de Vol sur la Carte` ![Edit Flight Plan on Map](../images/icons/routeedit.png) et cliquez sur un waypoint du plan de vol pour le déplacer. Cliquez sur un segment du plan de vol pour ajouter un nouveau repère de balisage dans ce segment.
 
-Voir [Modification du Plan de Vol de la Carte](MAPFPEDIT.md) pour plus d'informations.
+Voir [Modification Plan de Vol de la Carte](MAPFPEDIT.md) pour plus d'informations.
 
 ### Altitude de Croisière
 
@@ -131,16 +131,16 @@ Suivez les segments ci-dessous pour obtenir une carte en mouvement et voir votre
 * Ouvrez la boîte de dialogue `Connexion` en utilisant `Outils` -&gt; `Connexion du Simulateur de Vol` ![Flight Simulator Connection](../images/icons/network.png) et vérifiez si `Connexion automatique` est sélectionné. Activez-la si ce n'est pas le cas.  _Little Navmap_ trouvera le simulateur, peu importe s'il est déjà démarré ou s'il sera démarré plus tard.
 ![Connect Dialog](../images/tutorial/vfrconnect_fr.jpg)
 * Cliquez sur `Connecter` qui fermera la boîte de dialogue.
-* Activer la `Carte` -&gt; `Centrer l'Aéronef` ![Center Aircraft](../images/icons/centeraircraft.png). La carte sautera à l'aéronef simulateur et le gardera centré si un vol actif si chargé, c'est-à-dire que le simulateur n'est pas dans l'écran d'ouverture.
+* Activer la `Carte` -&gt; `Centrer Aéronef` ![Center Aircraft](../images/icons/centeraircraft.png). La carte sautera à l'aéronef simulateur et le gardera centré si un vol actif si chargé, c'est-à-dire que le simulateur n'est pas dans l'écran d'ouverture.
 * Démarrez le simulateur si ce n'est pas déjà fait, chargez le plan de vol et partez en vol.
 
 Voir aussi [Connexion à un Simulateur de Vol](CONNECT.md).
 
-### Regarder des Lieux tout en Volant
+### Regarder des lieux tout en Volant
 
 Le programme cessera de suivre votre aéronef si vous lancez une action de zoom sur un aérodrome ou un navaid \(double clic, bouton de la barre d'outils ou lien dans la fenêtre d'information\):
 
 * Double-cliquez sur l'aérodrome de destination par exemple pour zoomer sur le diagramme de l'aérodrome.
 * Quand c'est fait, cliquez sur le bouton Retour ![Back](../images/icons/back.png) jusqu'à ce que vous soyez de retour à votre aéronef.
-* Alors activez `Carte` -&gt; `Centrer l'Aéronef` ![Center Aircraft](../images/icons/centeraircraft.png) pour garder l'aéronef centré.
+* Alors activez `Carte` -&gt; `Centrer Aéronef` ![Center Aircraft](../images/icons/centeraircraft.png) pour garder l'aéronef centré.
 

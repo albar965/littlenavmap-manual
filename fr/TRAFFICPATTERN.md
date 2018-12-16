@@ -23,7 +23,7 @@ Voir [Légende - Trafic aérien](LEGEND.md#airport-traffic-pattern) pour plus de
 
 ![Traffic Pattern Dialog](../images/pattern_dialog_fr.jpg "Traffic Pattern Dialog")
 
-_**Image ci-dessus:** Dialogue de configuration du trafic pour la piste _`EDFE`_ 08 de 1000 ft pieds au-dessus de l'altitude de l'aérodrome._
+_**Image ci-dessus:** Boite de dialogue de configuration du trafic pour la piste _`EDFE`_ 08 de 1000 ft pieds au-dessus de l'altitude de l'aérodrome._
 
 ![Traffic Pattern](../images/pattern.jpg "Traffic Pattern")
 

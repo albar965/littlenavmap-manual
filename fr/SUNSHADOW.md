@@ -12,7 +12,7 @@ L'obscurité de l'ombre peut être modifiée dans la boîte de dialogue `Options
 
 _**Image ci-dessus:** Ombre du soleil sur l'hémisphère nord.._
 
-### Sources de l'Heure {#sun-shadow-time-sources}
+### Sources Horaire {#sun-shadow-time-sources}
 
 Vous pouvez choisir entre trois sources de temps pour l'ombre du soleil. L'heure n'est pas fixe et avancera pour toutes les sources ou sera mise à jour à partir de l'heure du simulateur.
 
@@ -20,7 +20,7 @@ Vous pouvez choisir entre trois sources de temps pour l'ombre du soleil. L'heure
 * `Heure UTC réelle`: Utilisez toujours en temps réel.
 * `Heure défini par l'utilisateur`: Permet d'utiliser le temps défini par l'utilisateur tel que modifié par `Définir l'heure définie par l'utilisateur` ci-dessous. 
 
-### Définir l'Heure définie par l'Utilisateur {#sun-shadow-user-defined}
+### Définir Heure définie par l'Utilisateur {#sun-shadow-user-defined}
 
 Le menu `Vue` -&gt; `Heure d'ombrage du soleil` -&gt; `Définir l'heure définie par l'utilisateur` ouvre une boîte de dialogue pour définir une heure définie par l'utilisateur en UTC comme source de l'ombre solaire.
 

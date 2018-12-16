@@ -18,15 +18,15 @@
 ### Affichage de la Carte
 
 * [Affichage Carte](MAPDISPLAY.md)
-* [Affichage du Compas Rose des Vents sur la Carte](COMPASSROSE.md)
+* [Affichage du Compas Rose sur la Carte](COMPASSROSE.md)
 * [Ombrage Solaire](SUNSHADOW.md)
-* [Circulation Trafic](TRAFFICPATTERN.md)
-* [Légende de la carte](LEGEND.md)
+* [Circulation Trafic Aérien](TRAFFICPATTERN.md)
+* [Légende de la Carte](LEGEND.md)
 
 ### Recherche
 
-* [Fenêtre de Recherche - Aérodromes et Navaids](SEARCH.md)
-* [Fenêtre de Recherche - Procédures](SEARCHPROCS.md)
+* [Fenêtre Recherche - Aérodromes et Navaids](SEARCH.md)
+* [Fenêtre Recherche - Procédures](SEARCHPROCS.md)
 * [Waypoints définis par l'Utilisateur](USERPOINT.md)
 * [Réseaux en Lignes](ONLINENETWORKS.md)
 
@@ -37,8 +37,8 @@
 * [Modification de la Position du Plan de Vol](EDITFPPOSITION.md)
 * [Description de l'itinéraire du Plan de Vol](ROUTEDESCR.md)
 * [Modifications du Plan de Vol sur la Carte](MAPFPEDIT.md)
-* [Formats des Plans de Vol](FLIGHTPLANFMT.md)
-* [Fenêtre du Profil d'Élévation du Plan de Vol](PROFILE.md)
+* [Formats Plans de Vol](FLIGHTPLANFMT.md)
+* [Fenêtre Profil d'Élévation du Plan de Vol](PROFILE.md)
 
 ### Performance Aéronef
 
@@ -54,8 +54,8 @@
 
 ### Impression
 
-* [Imprimer la Carte](PRINT.md#printing-the-map)
-* [Imprimer le Plan de Vol](PRINT.md#printing-the-flight-plan)
+* [Imprimer Carte](PRINT.md#printing-the-map)
+* [Imprimer Plan de Vol](PRINT.md#printing-the-flight-plan)
 
 ### Outils
 
@@ -76,7 +76,7 @@
 * [Personnalisation](CUSTOMIZE.md)
 * [Créer ou Ajouter des Thèmes de Carte](MAPTHEMES.md)
 * [Fichiers](FILES.md)
-* [Conseils et des Astuces](TIPS.md)
+* [Conseils et Astuces](TIPS.md)
 * [Conseils pour les Ordinateurs Anciens et lents Ordinateurs](APPENDIX.md#tips-for-old-and-slow)
 * [Résolution des Problèmes](APPENDIX.md#troubleshoot)
 * [Problèmes Connus](APPENDIX.md#known-problems)

@@ -1,6 +1,6 @@
 ## Fichiers {#files}
 
-### Logs (journaux de bord)
+### Journal de Bord (Log)
 
 Les fichiers journaux de _Little Navmap_ sont stockés dans les répertoires:
 
@@ -21,9 +21,9 @@ Tous les fichiers de configuration de mes programmes sont stockés dans ces rép
 * Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
 * Linux et macOS: `$HOME/.config/ABarthel`
 
-* `little_navmap.ini`: INI style configuration file. Text file.
-* `little_navmap.history`: The map position history. Binary file.
-* `little_navmap.track`: The user aircraft track. Binary file.
+* `little_navmap.ini`: Fichier de configuration de style INI. Fichier texte.
+* `little_navmap.history`: L'historique de la position de la carte. Fichier binaire.
+* `little_navmap.track`: La trajectoire de l'aéronef utilisateur. Fichier binaire.
 
 Trois fichiers de configuration supplémentaires sont créés pour la personnalisation des couleurs et des styles:
 
@@ -40,7 +40,7 @@ Le cache disque qui est utilisé pour stocker toutes les images téléchargées 
 Le cache disque qui est utilisé pour stocker toutes les images de cartes en ligne téléchargées peut être trouvé ici :
 
 * Windows: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
-* Linux and macOS: `$HOME/.local/share/marble`
+* Linux et macOS: `$HOME/.local/share/marble`
 
 Vous pouvez supprimer le cache manuellement pour économiser de l'espace si _Little Navmap_ n'est pas exécuté.
 
@@ -51,7 +51,7 @@ Plusieurs bases de données sont stockées dans le répertoire :
 * Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
 * Linux et macOS: `$HOME/.config/ABarthel/little_navmap_db`
 
-Toutes ces bases de données sont [SQLite](http://sqlite.org) qui peuvent être visualisés avec par exemple [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) 
+Toutes ces bases de données sont [SQLite](http://sqlite.org) qui peuvent être visualisés avec par exemple [Navigateur de bases de données pour SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) 
 
 **Ne pas modifier, déplacer, renommer ou supprimer des bases de données pendant l'exécution de **_Little Navmap_** 
 
@@ -90,3 +90,95 @@ Fichiers supplémentaires comme
 * `little_navmap_onlinedata.sqlite-journal`
 
 sont des restes de processus temporaires comme la compilation de la base de données et peuvent être ignorés.
+
+### Format de Fichier de Plan de Vol Annoté {#annotated-pln}
+
+_Little Navmap_ utilise le format de plan de vol FSX/P3D [XML](https://en.wikipedia.org/wiki/XML). Le standard XML permet d'ajouter des commentaires dans un fichier qui sont ignorés par les simulateurs et par la plupart des programmes complémentaires.
+
+Le commentaire ajouté est un commentaire XML commençant par `<!-- LNMDATA` et se terminant par  `-->`. A l'intérieur du commentaire se trouve une simple liste de clés/valeurs séparées par des symboles `|`.
+
+_Little Navmap_stocke peu de métadonnées comme la version et la date dans le fichier, ce qui aide à signaler les erreurs ou pour les extensions futures.
+
+Les données les plus importantes sont les informations de procédure qui permettent au programme de restaurer les SID, les STAR, les approches et les transitions d'une manière tolérante aux erreurs lors du chargement des plans de vol.
+
+Utiliser [Exporter en PLN sans annotation](MENUS.md#export-clean-flight-plan) ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN")  si un programme n'est pas capable de lire les fichiers annotés.
+
+``` XML
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+    <Descr>AceXML Document</Descr>
+    <!-- LNMDATA
+         _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
+         aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
+         aircraftperfname=Boeing 737-200|
+         aircraftperftype=B732|
+         approach=LITSI|
+         approacharinc=D34|
+         approachdistance=11.9|
+         approachrw=34|
+         approachsize=9|
+         approachsuffix=|
+         approachtype=VORDME|
+         cycle=1811|
+         navdata=NAVIGRAPH|
+         sidappr=MARE5W|
+         sidapprdistance=28.2|
+         sidapprrw=22|
+         sidapprsize=5|
+         simdata=XP11|
+         star=ASTU2D|
+         stardistance=128.4|
+         starrw=34|
+         starsize=5|
+         transition=ZAK|
+         transitiondistance=17.5|
+         transitionsize=3|
+         transitiontype=F
+-->
+    <FlightPlan.FlightPlan>
+
+...
+
+    </FlightPlan.FlightPlan>
+</SimBase.Document>
+```
+
+### Format de Fichier des Performances de l'Aéronef {#aircraft-performance-file}
+
+Les fichiers `lnmperf` sont de simples fichiers texte et utilisent le style Windows-`INI` qui a des groupes entre crochets et des lignes `key=value`. Voir [ici](https://en.wikipedia.org/wiki/INI_file) pour plus d'informations sur ce type de fichiers de configuration.
+
+Les unités de vitesse sont toujours des nœuds et des pieds par minute. Les unités de carburant sont des gallons ou des livres selon la valeur de `FuelAsVolume`. `ContingencyFuelPercent` est le pourcentage qui sera ajouté au carburant de trajet..
+
+`Description` doit être entre guillemets. `\n` sont interprétés comme des sauts de ligne..
+
+Notez que les commentaires commençant par `#` ou `;` seront remplacés lors de l'enregistrement du fichier dans _Little Navmap_. Vous pouvez ajouter une clé fictive comme `Comment1=my remarks` pour contourner ce problème. Les clés inconnues ne sont pas remplacées lors de l'enregistrement.
+
+#### Exemple
+
+``` INI
+[Options]
+AircraftType=B732
+Description="Engine type JT8D-15A\n\nClimb: 92% N1, 280/0.7\nCruise: 0.74\nDescent:
+0.74,300\n\nhttps://example.com/dokuwiki/doku.php?id=boeing_737-200_reference"
+FormatVersion=1.0.0
+FuelAsVolume=false
+JetFuel=true
+Metadata=Created by Little Navmap Version 2.2.0.beta (revision 16944ce) on 2018 11 02T20:23:52
+Name=Boeing 737-200
+ProgramVersion=2.2.0.beta
+
+[Perf]
+ClimbFuelFlowLbsGalPerHour=10000
+ClimbSpeedKtsTAS=350
+ClimbVertSpeedFtPerMin=1500
+ContingencyFuelPercent=0
+CruiseFuelFlowLbsGalPerHour=4800
+CruiseSpeedKtsTAS=430
+DescentFuelFlowLbsGalPerHour=400
+DescentSpeedKtsTAS=420
+DescentVertSpeedFtPerMin=2500
+ExtraFuelLbsGal=0
+ReserveFuelLbsGal=6000
+TaxiFuelLbsGal=500
+```
+

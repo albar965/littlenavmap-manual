@@ -1,4 +1,4 @@
-##  Edition du Plan de Vol de la Carte {#map-flight-plan-editing}
+##  Modifier Plan de Vol de la Carte {#map-flight-plan-editing}
 
 Le mode d'édition du plan de vol par glisser-déposer est activé par défaut mais peut être désactivé à l'aide de la barre d'outils ou du ` Menu Principal` -> ` Plan de vol` -> ` Modifier le plan de vol sur la carte`.
 
@@ -37,11 +37,11 @@ La fonctionnalité suivante est disponible :
 
 Toutes les procédures de départ ou de destination sont supprimées si l'aérodrome de départ ou de destination est déplacé ou remplacé. Il en va de même si les waypoints sont préfixés avant ou ajoutés après le départ ou la destination.
 
-![Flight Plan Edit](../images/fpedit.jpg "Flight Plan Edit")
+![Flight Plan Edit](../images/fpedit_fr.jpg "Flight Plan Edit")
 
 _**Image ci-dessus:** Insertion d'un navaid dans un segment du plan de vol en cliquant et en déplaçant la ligne du segment. Une pointe d'outil pour le navaid est montré._
 
-![Flight Plan Edit](../images/fpedit2.jpg "Flight Plan Edit")
+![Flight Plan Edit](../images/fpedit2_fr.jpg "Flight Plan Edit")
 
 _**Image ci-dessus:** Remplacer VOR TRA dans le plan de vol par un autre plan de vol en cliquant simplement et en déplaçant le point de cheminement TRA sur KLO. Un menu de sélection s'affiche pour la désambiguïsation._
 

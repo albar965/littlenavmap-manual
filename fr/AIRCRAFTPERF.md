@@ -1,4 +1,4 @@
-## ![Aircraft Performance](../images/icons/aircraftperf.png "Aircraft Performance") Performances de l'Aéronef {#aircraft-performance}
+## ![Aircraft Performance](../images/icons/aircraftperf.png "Aircraft Performance") Performances Aéronef {#aircraft-performance}
 
 _Little Navmap_ offre des fonctionnalités d'édition, de création et de collecte de profils de performance des aéronefs. Ceci permet de déterminer le carburant nécessaire, le temps de vol ainsi que les trajectoires de montée et de descente.
 
@@ -6,7 +6,7 @@ Les données de performances moyennes telles que la vitesse, la vitesse vertical
 
 Un simple réglage du vent à l'altitude de croisière peut être utilisé pour ajuster le plan en fonction de la météo.
 
-**Les performances de l'avion sont utilisées pour les fonctions suivantes:**
+**Les performances de l'aéronef sont utilisées pour les fonctions suivantes:**
 
 * Calcul du temps de vol indiqué dans l'en-tête du plan de vol.
 * Calcul du sommet de montée et du sommet de descente qui sont indiqués sur la carte et dans le profil d'élévation. Notez que les restrictions d'altitude dans les procédures peuvent affecter le sommet de la descente ou les distances de sommet ou de montée.
@@ -19,21 +19,21 @@ Voir [Au sommet de la montée et au sommet de la descente](PROFILE.md#toc-and-to
 
 Des messages d'avertissement en rouges s'affichent si les performances de l'aéronef contiennent des valeurs erronées qui empêchent _Little Navmap_ de calculer la consommation de carburant, la montée ou la descente.
 
-![Aircraft Performance Error](../images/perf_error.jpg "Aircraft Performance Error")
+![Aircraft Performance Error](../images/perf_error_fr.jpg "Aircraft Performance Error")
 
-_**Photo ci-dessus:** Onglet Performances de l'aéronef montrant une erreur_
+_**Image ci-dessus:** Onglet Performances de l'aéronef montrant une erreur_
 
 Un profil par défaut de 3 nm par 1000 pieds pour les règles de descente et de montée et aucune consommation de carburant n'est par défaut. Les messages d'avertissement rouges s'afficheront s'ils sont utilisés car le profil n'est pas complet.
 
 _Little Navmap_ permet de recueillir automatiquement les données de performance d'un aéronef au cours d'un vol typique.
 Ceci peut être utilisé pour obtenir un profil de performance de base qui peut être ajusté manuellement.
-Voir ci-dessous au chapitre [Collecter les performances pour le vol](#aircraft-performance-collect) pour plud d'informations.
+Voir ci-dessous au chapitre [Collecter les performances pour le vol](#aircraft-performance-collect) pour plus d'informations.
 
 **Notez que les estimations de carburant et de temps dans la fenêtre **`Aéronef Simulateur`** sur l'onglet **`Progression`** sont basés sur la consommation de carburant et la vitesse réelles et ne sont pas influencés par le profil de performance de l'aéronef.**
 
 ![Aircraft Performance Tab](../images/perf_report.jpg "Aircraft Performance Tab")
 
-_**Photo ci-dessus:** Onglet Performances de l'aéronef avec la planification du carburant et l'entrée du vent de croisière sur le dessus. Le _`*`_ dans l'étiquette de l'onglet affiche les modifications non sauvegardées et la description du fichier de performance contenant un lien web._
+_**Image ci-dessus:** Onglet Performances de l'aéronef avec la planification du carburant et l'entrée du vent de croisière sur le dessus. Le _`*`_ dans l'étiquette de l'onglet affiche les modifications non sauvegardées et la description du fichier de performance contenant un lien web._
 
 ### Fichiers {#aircraft-performance-files}
 
@@ -63,9 +63,9 @@ Les boutons en haut ont les mêmes fonctionnalités que les éléments du menu p
 * ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance")
 `Performances de l'aéronef chargé`: Charger un fichier `lnmperf` .
 * ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance")
-`Sauvegarder les performances de l'aéronef`: Sauvegarder le profil actuel dans un fichier `lnmperf`.
+`Sauver les performances de l'aéronef`: Sauver le profil actuel dans un fichier `lnmperf`.
 * ![Sauvegarder les performances de l'aéronef sous](../images/icons/aircraftperfsaveas.png "Save Aircraft Performance
-as") `Sauvegarder les performances de l'aéronef sous`: Sauvegarder le profil actuel dans un nouveau fichier `lnmperf`file.
+as") `Sauver les performances de l'aéronef comme`: Sauver le profil actuel dans un nouveau fichier `lnmperf`.
 
 ### Rapport sur les Performances {#aircraft-performance-report}
 
@@ -86,12 +86,12 @@ La taille du texte de l'état peut être modifiée dans la boîte de dialogue `O
 * `Distance et Durée`: Distance totale du plan de vol et durée de déplacement, y compris les procédures. Mêmes valeurs qu'en haut de l'onglet `Plan`.
 * `Vitesse moyenne au sol`: Vitesse au sol sur toutes les phases de vol: montée, croisière et descente. Calculée sur la base des vitesses données et du vent tel qu'indiqué en haut de l'onglet.
 * `Vitesse réelle de croisière`: Vitesse de croisière telle qu'indiquée dans la boîte de dialogue d'édition.
-* `Mach en croisière`: Nombre de Mach à l'altitude de croisière prévue au plan de vol, calculé en fonction de la vitesse réelle et des conditions atmosphériques normalisées de l'ISA.
+* `Vitesse Mach de croisière`: Nombre de Mach à l'altitude de croisière prévue au plan de vol, calculé en fonction de la vitesse réelle et des conditions atmosphériques normalisées de l'ISA.
 
 #### Plan de Carburant {#aircraft-performance-fuelplan}
 
 * `Type de carburant`: `Kérozène` ou `Avgas`. Permet de modifier les chiffres lors du passage du volume au mode comme unité de carburant et à convertir entre les unités dans le rapport.
-* `Carburant du voyage`: Le carburant qui est consommé pendant le vol et qui couvre toutes les phases du décollage au départ jusqu'au toucher des roues à destination. Ne comprend pas le carburant de secours ni aucun carburant supplémentaire ou de réserve.
+* `Carburant du trajet`: Le carburant qui est consommé pendant le vol et qui couvre toutes les phases du décollage au départ jusqu'au toucher des roues à destination. Ne comprend pas le carburant de secours ni aucun carburant supplémentaire ou de réserve.
 * `Carburant en bloc`: Le carburant en bloc est le carburant total requis pour le vol. Comprend le voyage, la réservation, les suppléments, le taxi et le carburant de secours.
 * `Carburant à destination`: Carburant prévu à destination sera égal à la réserve si la contingence et le carburant supplémentaire ne sont pas réglés.
 * `Réserve carburant`: Réserver du carburant comme défini dans la boîte de dialogue d'édition.
@@ -120,11 +120,9 @@ Contient un lien vers le fichier des performances de l'aéronef. Ouvre le fichie
 
 ### Modifier les Performances de l'Aéronef {#aircraft-performance-edit}
 
-You can use the edit button ![Modifier des performances de l'aéronef](../images/icons/aircraftperfedit.png "Edit
-Aircraft Performance as") on top of the tab or the menu item `Aircraft` -&gt; `Edit Aircraft
-Performance ...` to change the currently loaded performance data.
+Vous pouvez utiliser le bouton d'édition ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") en haut de l'onglet ou de l'élément de menu `Aéronef` -&gt; `Modifier Performances de l'Aéronef...` pour modifier les données de performance actuellement chargées.
 
-See [Modifier des performances de l'aéronef](AIRCRAFTPERFEDIT.md) for a description of the edit dialog.
+Voir [Modifier des performances de l'aéronef](AIRCRAFTPERFEDIT.md)  pour une description de la boîte de dialogue d'édition.
 
 ### Collecter les Performances pour le Vol {#aircraft-performance-collect}
 
@@ -149,9 +147,9 @@ Modifiez maintenant les données de performances de l'aéronef \([Modification d
 
 **N'oubliez pas d'ajouter au moins une réserve de carburant suffisante. Sinon, vous serez à court de carburant à destination si vous vous fiez à ce plan.**
 
-![Collecting Aircraft Performance](../images/perf_collect.jpg "Collecting Aircraft Performance")
+![Collecting Aircraft Performance](../images/perf_collect_fr.jpg "Collecting Aircraft Performance")
 
-_**Photo ci-dessus:** Rapport affiché lors de la collecte des performances de l'aéronef. Les phases `Taxi et
+_**Image ci-dessus:** Rapport affiché lors de la collecte des performances de l'aéronef. Les phases `Taxi et
 Décollage` et `Montée` sont déjà terminées. La phase actuelle est la  `Croisière`._
 
 Vous pouvez déplacer votre aéronef à l'altitude de croisière, utiliser des outils de déformation pour vous rapprocher rapidement du sommet de la descente ou ajuster manuellement le carburant et la durée. Cela n'affectera pas le calcul des performances puisque _Little Navmap_ lit le débit de carburant réel sur le simulateur au lieu d'utiliser le carburant et le temps consommés.

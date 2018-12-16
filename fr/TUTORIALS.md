@@ -1,4 +1,4 @@
-## Didacticiels {#tutorials}
+## Tutoriels {#tutorials}
 
 ### Général {#tutorials-general}
 
@@ -17,7 +17,7 @@ Pour avoir une base commune propre, je recommande ce qui suit :
 * Sélectionnez `Fenêtres` -&gt; `Réinitialiser la Disposition des Fenêtres` pour remettre toutes les fenêtres ancrées à leur place par défaut.
 * Utilisez le thème de la carte `OpenStreetMap` avec l'ombrage des collines ![Hill Shading](../images/icons/hillshading.png) activé.
 * Réinitialiser les paramètres d'affichage de la carte dans `Carte` -&gt; `Réinitialiser les Paramètres d'Affichage` pour s'assurer que toutes les caractéristiques nécessaires sont affichées sur la carte.
-* Sélectionnez `Fichier` -&gt; `Nouveau Plan de Vol` ![New Flight Plan](../images/icons/filenew.png) pour commencer avec un plan de vol propre.
+* Sélectionnez `Fichier` -&gt; `Nouveau Plan de Vol` ![New Flight Plan](../images/icons/filenew.png) pour commencer avec un plan de vol vierge.
 
 ### Tutoriels {#tutorials-summary}
 

@@ -1,4 +1,4 @@
-## ![Search](../images/icons/searchdock.png "Search") Fenêtre de Recherche - Procédures {#search-dock-window}
+## ![Search](../images/icons/searchdock.png "Search") Fenêtre Recherche - Procédures {#search-dock-window}
 
 L'onglet `Procédures` permet de prévisualiser et d'ajouter des procédures d'approche et de départ au plan de vol. Les procédures d'un aérodrome sélectionné sont organisées dans un arbre qui indique les dépendances entre les approches et les transitions.
 
@@ -58,7 +58,7 @@ Les transitions respectives sont toujours affichées.
 
 Ce filtre est toujours disponible et aide à trouver les procédures pour une certaine piste de départ ou d'arrivée.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Effacer la Sélection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Vider la Sélection {#clear-selection}
 
 Désélectionne toutes les entrées du tableau et supprime également toutes les surbrillance de la carte.
 
@@ -66,11 +66,15 @@ Désélectionne toutes les entrées du tableau et supprime également toutes les
 
 Ouvre ce chapitre d'aide dans le navigateur par défaut.
 
-### Arborescence des procédures du Menu contextuel {#procedure-context-menu}
+### Arborescence des Procédures du Menu Contextuel {#procedure-context-menu}
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Afficher sur la carte {#procedure-show-on-map}
 
 Centre la carte sur la procédure sélectionnée.
+
+#### Suivre Sélection {#follow-selection}
+
+La vue de la carte sera zoomée sur la procédure sélectionnée lorsque cette fonction est activée. 
 
 #### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insertion dans le Plan de Vol / Utilisation comme Destination / Utilisation comme Départ {#procedure-insert}
 
@@ -89,6 +93,16 @@ Cet élément de menu permet d'ajouter la procédure sélectionnée au plan de v
 Ceci ajoutera ou remplacera l'aérodrome de destination ou de départ et ajoutera la procédure sélectionnée.
 
 Les aérodromes de départ ou de destination sont également ajoutés au plan de vol si le plan de vol est vide.
+
+#### ![Show Information for Airport](../images/icons/globals.png "Show Information for Airport") Afficher Information pour l'Aérodrome {#show-information}
+
+Afficher les informations détaillées dans la fenêtre `Informations` de l'aérodrome.
+
+Voir la [Fenêtre Informations](INFO.md#information-dock-window) pour plus de détails.
+
+#### ![Show Airport on Map](../images/icons/showonmap.png "Show Airport on Map") Afficher Aérodrome sur la Carte {#show-on-map}
+
+Afficher l'aérodrome sur la carte. La distance de zoom peut être modifiée dans la boîte de dialogue `Options` de l'onglet `Carte`.
 
 #### Développer Tout / Réduire Tout
 

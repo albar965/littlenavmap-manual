@@ -44,18 +44,18 @@ Une voie aérienne est toujours affichée avec tous ses repères de balisage (wa
 
 | | |
 | -- | -- |
-| ![Navaid Information](../images/infonavaid.jpg "Navaid Information") | ![Airway Information](../images/infoairway.jpg "Airway Information") |
-| _**Image ci-dessus:** Des informations sur les navaids. Deux navaids se trouvaient près du curseur lorsqu'on a cliqué dessus._ | _**Image ci-dessus:** Des informations sur les navaids. Affichage de plusieurs voies aériennes avec restrictions d'altitude et liste des waypoints cliquables._ |
+| ![Navaid Information](../images/infonavaid_fr.jpg "Navaid Information") | ![Airway Information](../images/infoairway.jpg "Airway Information") |
+| _**Image ci-dessus:** Informations sur les navaids. Deux navaids se trouvaient près du curseur lorsqu'on a cliqué dessus._ | _**Image ci-dessus:** Informations sur les navaids. Affichage de plusieurs voies aériennes avec restrictions d'altitude et liste des waypoints cliquables._ |
 
 ### Onglet Espaces Aériens {#airspaces}
 
 Les espaces aériens sont mis en évidence sur la carte avec leur limite et une étiquette de texte en cliquant sur le lien `Carte` dans la fenêtre d'informations.
 
-Cliquez sur le lien `Supprimer les zones marquantes de la carte` dans la fenêtre d'information pour supprimer les zones claires de la carte.
+Cliquez sur le lien `Supprimer les points mis en évidences de la carte` dans la fenêtre d'information pour supprimer les zones claires de la carte.
 
-![Airspace Information](../images/infoairspace.jpg "Airspace Information")
+![Airspace Information](../images/infoairspace_fr.jpg "Airspace Information")
 
-_**Image ci-dessus:** Deux espaces aériens qui sont affichés dans les informations après avoir cliqué sur la carte. Deux espaces aériens sont mis en évidence sur la carte après avoir cliqué sur le lien _`Carte`_ dans le texte d'information._
+_**Image ci-dessus:** Deux espaces aériens qui sont affichés dans l'onglet informations après avoir cliqué sur la carte. Deux espaces aériens sont mis en évidence sur la carte après avoir cliqué sur le lien _`Carte`_ dans l'onglet informations._
 
 ## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Fenêtre Aéronef Simulateur {#simulator-aircraft-dock-window}
 
@@ -67,7 +67,7 @@ Voir [Connexion à un simulateur de vol](CONNECT.md#connecting-to-a-flight-simul
 
 Donne une vue d'ensemble de l'aéronef utilisateur et affiche des informations sur le type, la masse et le carburant.
 
-![Aircraft Information](../images/infoac.jpg "Aircraft Information")
+![Aircraft Information](../images/infoac_fr.jpg "Aircraft Information")
 
 _**Image ci-dessus:** Informations sur l'aéronef lorsqu'il est connecté à un simulateur de vol._
 
@@ -81,7 +81,7 @@ Les informations textuelles dans l'onglet ont un lien `Plus Moins` en haut à ga
 
 | | |
 | -- | -- |
-| ![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information") | ![Aircraft Progress Information Less](../images/infoacprogressless.jpg "Aircraft Progress's Information Less") |
+| ![Aircraft Progress Information](../images/infoacprogress_fr.jpg "Aircraft Progress's Information") | ![Aircraft Progress Information Less](../images/infoacprogressless_fr.jpg "Aircraft Progress's Information Less") |
 | _**Image ci-dessus:** Informations sur l'état d'avancement et l'environnement de la situation de vol actuelle. Certains champs ou tableaux comme _`Waypoint suivant`_ ne sont disponibles que lorsqu'un plan de vol est chargé._ | _**Image ci-dessus:** Informations de progression pliées aux valeurs les plus importantes en utilisant le lien _`Plus Moins`_._ |
 
 ### Onglet AI / Multijoueur

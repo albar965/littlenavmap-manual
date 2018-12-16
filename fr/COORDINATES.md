@@ -22,13 +22,7 @@ Un espace n'est nécessaire que pour séparer la latitude et la longitude ou les
 
 Le séparateur décimal peut être point \(anglais\) ou le séparateur dépendant de la locale comme par exemple virgule \(allemand\).).
 
-**Exemples:**
-
-* Degrés, minutes et secondes: `N49° 26' 41.57" E9° 12' 5.49"` or `49° 26' 41.57" N 9° 12' 5.49" E`
-* Degrés et minutes décimales: `N54* 16.82' W008* 35.95'`, `N 52 33.58 E 13 17.26` or `49° 26.69' N 9° 12.09' E`
-* Degrés décimaux seulement: `49.4449° N 9.2015° E` or `N 49.4449° E 9:2015°`
-
-**Autres formats:** 
+### Autres Formats
 
 Celles-ci doivent être données exactement comme indiqué dans les exemples.
 
@@ -39,3 +33,8 @@ Celles-ci doivent être données exactement comme indiqué dans les exemples.
 * Degrés et minutes en paire `N6500 W08000` or `N6500/W08000`
 * Type NAT `5020N`
 
+###  Exemples
+
+* Degrés, minutes et secondes: `N49° 26' 41.57" E9° 12' 5.49"` or `49° 26' 41.57" N 9° 12' 5.49" E`
+* Degrés et minutes décimales: `N54* 16.82' W008* 35.95'`, `N 52 33.58 E 13 17.26` or `49° 26.69' N 9° 12.09' E`
+* Degrés décimaux seulement: `49.4449° N 9.2015° E` or `N 49.4449° E 9:2015°`

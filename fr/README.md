@@ -1,6 +1,6 @@
 # ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Manuel Utilisateur de Little Navmap {#little-navmap-user-manual}
 
-**Version 2.x** - **Manuel v2.2.12.18**
+**Version 2.x**
 
 _Little Navmap_ est un planificateur de vol open source gratuit, un outil de navigation, une carte mobile, un système de recherche d'aérodrome et d'information d'aérodrome pour Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 à v4 et X-Plane 11
 

@@ -2,7 +2,7 @@
 
 Aérodrome X-Plane qui contient au moins un objet 3D. Il peut s'agir d'un grand aérodrome entièrement construit.
 
-## Aérodrome Complémentaire
+## Aérodrome Supplémentaire
 Il s'agit d'un aérodrome qui a été trouvé en dehors du dossier de scène par défaut de Flight Simulator lors du chargement de la base de données.
 
 ## Procédure d'Arrivée
@@ -35,7 +35,7 @@ Repère d'approche finale. Le point où le segment d'approche finale commence à
 ## Fix
 Ce terme désigne un waypoint, un navaid par radio ou un point calculé d'une procédure.
 
-## Position du Plan de Vol
+## Position Plan de Vol
 Waypoint défini par l'utilisateur qui fait partie du plan de vol.
 
 ## FLP
@@ -80,7 +80,7 @@ Format de plan de vol FSX et P3D . Possibilité de sauvegarder toutes les inform
 ## POI
 Point d'intérêt général. Un type de point utilisateur.
 
-## Radio navaid
+## Radio Navaid
 VOR, VORTAC, TACAN ou NDB.
 
 ## Classement

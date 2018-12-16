@@ -38,7 +38,7 @@ La météo du simulateur de vol est mise à jour toutes les 15 secondes pour ten
 
 Notez que la météo la plus proche ne représentera pas nécessairement la météo à la station cliquée en raison de l'interpolation entre plusieurs stations qui est effectuée par le simulateur.
 
-### En ligne - NOAA et VATSIM
+### NOAA, VATSIM et IVAO - Connecté
 
 La météo en ligne des deux sources est mise à jour toutes les 10 minutes.
 
@@ -56,3 +56,16 @@ Les fichiers `current_wx_snapshot.txt` et `activeflightplanwx.txt` sont chargés
 
 Notez que l'indication de `Départ` ou `Destination` dépend entièrement du plan de vol chargé dans _Active Sky_ et non du plan de vol dans _Little Navmap_.
 
+### Météo Aérodrome {#airport-weather}
+
+_Little Navmap_ peut afficher les symboles météorologiques des aérodromes ayant une station météorologique pour toutes les sources météorologiques disponibles. Sélectionnez les sources à afficher avec l'élément de menu[Source Météo Aérodrome](MENUS.md#airport-weather-source) .
+
+Notez que la météo de l'aérodrome n'est affichée que pour les stations et n'est pas interpolée. Les stations qui ne sont pas des aérodromes ne sont pas prises en charge.
+
+Un suffixe ` - Carte` est ajouté aux règles de vol dans le METAR et l'affichage météorologique décodé de la fenêtre d'information et des infobulles pour indiquer quelle source est affichée sur la carte.
+
+Voir [Légende - Météo Aérodrome](LEGEND.md#airport-weather) pour une explication des symboles.
+
+![Airport Weather](../images/weather_map.jpg "Weather tab")
+
+_**Image ci-dessus:** La situation météorologique autour de New York. Tous les aérodromes sont en VFR et les vents sont faibles.._

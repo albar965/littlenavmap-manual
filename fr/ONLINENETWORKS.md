@@ -38,7 +38,7 @@ Voir [Aéronefs et Navires](LEGEND.md#vehicles) dans la légende pour tous les s
 
 ![Online Network Aircraft](../images/online_aircraft.jpg "Online Network Aircraft")
 
-_**Image ci-dessus:** Clients/aéronefs du réseau connecté dans l'onglet de recherche, la carte, la bulle d'aide et la fenêtre d'information._
+_**Image ci-dessus:** Clients/aéronefs du réseau connecté dans l'onglet de recherche, la carte, la bulle d'aide et la fenêtre d'informations._
 
 #### Centres {#online-networks-centers}
 
@@ -66,8 +66,8 @@ La taille des formes des cercles peut être modifiée dans le fichier de configu
 _**Image ci-dessus:** Centre de réseau connecté/ATC dans l'onglet de recherche, la carte, la bulle d'aide et la fenêtre d'informations._
 
 
-### Recherche Client de Réseau Connecté {#search-client}
-### Recherche Centre de Réseau Connecté {#search-center}
+### Recherche Client Réseau Connecté {#search-client}
+### Recherche Centre Réseau Connecté {#search-center}
 
 La fonctionnalité des filtres de recherche de ces deux onglets et des tableaux de résultats est similaire à celle de la recherche aérodrome et navaid. Voir [Fenêtre de recherche](SEARCH.md) pour plus d'informations sur les filtres de recherche, les boutons et les éléments du menu contextuel.
 

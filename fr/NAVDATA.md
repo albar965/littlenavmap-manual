@@ -19,8 +19,6 @@ Notez que l'information sur l'aérodrome est limitée dans ce mode. Cela signifi
 
 La disposition de la piste peut ne pas correspondre à la disposition de la piste dans le simulateur si vous utilisez des scènes d'aérodrome plus anciennes.
 
-La disposition de la piste peut ne pas correspondre à la disposition de la piste dans le simulateur si vous utilisez des scènes d'aérodrome plus anciennes ou de stock.
-
 L'un des avantages de ce mode est que les procédures d'approche correspondent toujours au tracé de la piste de l'aérodrome.
 
 ![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")

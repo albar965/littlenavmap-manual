@@ -2,49 +2,51 @@
 
 Cette fenêtre montre l'altitude au sol et l'altitude de croisière du plan de vol, ainsi que tous les waypoints du plan de vol. Il n'est disponible que lorsqu'un plan de vol est chargé. L'aéronef utilisateur sera également affiché si _Little Navmap_ est connecté au simulateur.
 
-Le traitement de l'élévation se fait en arrière-plan car les données doivent être téléchargées et le calcul est intense pour le CPU. Par conséquent, la mise à jour de l'affichage de l'altitude peut prendre de quelques secondes à une demi-minute. Cette mise à jour en arrière-plan est lancée après la création ou la modification du plan de vol ou lorsque de nouvelles données altimétriques ont été téléchargées. L'affichage sera mis à jour en conséquence chaque fois que de nouvelles données sont disponibles.
+Sachez que l'affichage de l'élévation ne couvre que le plan de vol et ne changera pas la représentation si vous quittez le plan de vol avec votre aéronef simulateur.
 
-Fermez la fenêtre ` Profil d'élévation du plan de vol` si vous pensez que cela cause des problèmes de performance ou des ralentissements. Toutes les mises à jour s'arrêteront une fois la fenêtre fermée.
+Le mouvement de l'aéronef dans le profil d'élévation est lié au segment actif du plan de vol et ne sera pas correct s'il s'éloigne du segment actif.
 
-Sachez que l'affichage de l'altitude ne couvre que le plan de vol et ne changera pas la représentation si vous quittez le plan de vol avec votre simulateur d'aéronef.
+### Étiquette Supérieure {#top-label}
 
-Le plan de vol n'est affiché qu'au niveau de croisière et au segment de descente. Cependant, vous verrez votre aéronef utilisateur et votre itinéraire monter et descendre.
+Des informations supplémentaires sont affichées dans une étiquette en haut de la fenêtre si la souris est placée au-dessus du diagramme.
+La position correspondante est surlignée sur la carte avec un cercle noir/cyan.
 
-### Données d'Élévation en Ligne {#flight-plan-elevation-profile-online}
-
-Notez que les données d'élévation en ligne ne couvrent pas tous les pays et se termine actuellement à 60 degrés nord. Les données contiennent de multiples erreurs connues.
-
-Le calcul des points d'élévation en ligne est limité aux segments du plan de vol ne dépassant pas 2000 milles nautiques afin d'éviter la surcharge.
-Ajoutez d'autres points de cheminement ou calculez un plan de vol pour éviter cette limitation.
-
-### Données d'Élévation Hors Ligne {#flight-plan-elevation-profile-offline}
-
-En utilisant la version téléchargeable gratuitement [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) Les données altimétriques présentent plusieurs avantages :
-
-* Mises à jour plus rapides
-* Couverture mondiale
-* Aucune erreur connue
-* Affichage de l'altitude sous le curseur dans la barre d'état
-
-Voir la boîte de dialogue [Cache et Fichiers](OPTIONS.md#cache-elevation) dans la boîte de dialogue des options pour savoir comment télécharger et installer les données de GLOBE.
-
-## Fenêtre de Profil {#flight-plan-elevation-profile-window}
-
-Des informations supplémentaires sont affichées sur une étiquette en haut de la fenêtre si la souris est placée au-dessus du diagramme.
-La position correspondante dans le plan de vol est également mise en évidence sur la carte.
-
-Les informations suivantes sont affichées sur l'étiquette supérieure si le simulateur est connecté à un simulateur de vol avec une session active :
+Les informations suivantes sont indiquées sur l'étiquette supérieure si le simulateur est connecté à un simulateur de vol :
 
 * Distance entre l'aéronef utilisateur et la destination du plan de vol
-* Distance jusqu'au sommet de la descent
+* Distance jusqu'au sommet de la descente
 
-De plus, l'information ci-dessous est affichée sur l'étiquette supérieure lorsque vous passez la souris sur le diagramme :
+**Exemple:** `Vers la destination: 118 nm, jusqu'au sommet de la descente: 95 nm.`
 
-* De et jusqu'au waypoint
+De plus, les informations ci-dessous sont affichées sur l'étiquette supérieure lorsque vous passez la souris sur le diagramme :
+
+* De et vers le waypoint pour le segment de plan de vol à la position du curseur
 * Distance entre le départ et la destination à partir de la position du curseur de la souris.
 * Élévation du sol à la position du curseur.
-* Plan de vol altitude de croisière au-dessus du sol.
-* Altitude de sécurité pour le segment du plan de vol en cours à la position de vol stationnaire.
+* Altitude du plan de vol au-dessus du sol en tenant compte de l'altitude de croisière ainsi que des pentes de montée et de descente.
+* Altitude de sécurité pour le segment de plan de vol à la position du curseur correspondant à la ligne orange.
+
+**Exemple:** `ANDOR ► SJA, 38 nm ► 112 nm, Élévation au sol 984 ft, Altitude au-dessus du sol 8,016 ft, Altitude de sécurité des segments 3,000 ft`
+
+### Curseurs de Zoom {#zoom-sliders}
+
+Le côté droit du profil d'élévation contient les curseurs de zoom. Les commandes suivantes sont disponibles:
+
+* ![Splitter](../images/profile_splitter.jpg "Splitter") `Séparateur`: Vous pouvez redimensionner la partie droite de la fenêtre du profil d'élévation à l'aide de ce bouton de séparation. La partie contenant les curseurs sera réduite si vous la faites glisser vers l'extrême droite. Vous pouvez ouvrir à nouveau la partie repliée en faisant glisser le séparateur vers la gauche.
+* ![Expand to Window](../images/icons/viewreset.png "Expand to Window") `Développer en fenêtre`: Réinitialise la vue à 100 % montrant l'ensemble du plan de vol.
+* ![Zoom Vertically](../images/profile_zoomvert.jpg "Zoom Vertically") `Zoom Vertical`: Déplacez le curseur vers le haut pour effectuer un zoom avant vertical. Le zoom maximum donne une hauteur de 500 pieds pour l'ensemble de la fenêtre du profil.
+* ![Zoom Horizontally](../images/profile_zoomhoriz.jpg "Zoom Horizontally") `Zoom Horizontal`: Déplacez le curseur vers le haut pour effectuer un zoom avant horizontal. Le zoom maximum permet d'obtenir une distance d'environ 4 nm pour l'ensemble de la fenêtre du profil.
+
+### Déplacement de la Souris {#mouse}
+
+* `Survoler`: La position correspondante dans le plan de vol est en surbrillance sur la carte avec un cercle noir/cyan.
+* `Roue`: Zoom avant et arrière horizontal.
+* `Majuscule + Roue`: Zoom avant et arrière vertical.
+* `Cliquez avec le bouton gauche de la souris et faites-le glisser`: Déplacer la carte vers le haut, le bas, la gauche ou la droite.
+* `Double clic gauche`: Agrandir jusqu'à la position sur la carte.
+* `Clic droit`: Afficher le menu contextuel.
+
+### Déplacement au Clavier {#keyboard}
 
 Cliquez sur la fenêtre du profil d'élévation pour l'activer avant d'utiliser le clavier.
 
@@ -57,7 +59,7 @@ Cliquez sur la fenêtre du profil d'élévation pour l'activer avant d'utiliser 
 
 ### Menu Contextuel {#context-menu}
 
-#### ![Show Position on Map](../images/icons/showonmap.png "Show Position on Map") Afficher la Position sur la Carte  {#show-pos-on-map}
+#### ![Show Position on Map](../images/icons/showonmap.png "Show Position on Map") Afficher Position sur la Carte  {#show-pos-on-map}
 
 Zoome sur la position correspondante sur la carte. C'est la même chose que de double-cliquer dans le profil d'élévation.
 

@@ -1,4 +1,4 @@
-## ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Boîte de dialogue - Charger la Bibliothèque de Scènes {#load-scenery-library-dialog}
+## ![Load Scenery Library](../images/icons/database.png "Load Scenery Library") Boîte de Dialogue - Charger la Bibliothèque de Scènes {#load-scenery-library-dialog}
 
 Cette boîte de dialogue permet de charger les données de la bibliothèque de scènes des quatre simulateurs de vol pris en charge dans la base de données interne _Little Navmap_. La bibliothèque de scènes à charger peut être sélectionnée dans la liste déroulante `Simulateur:`.
 
@@ -93,9 +93,9 @@ Les espaces aériens apparaissent en double sur la carte si un fichier d'espace 
 * `Charger`: Démarre le processus de chargement de la base de données. Vous pouvez arrêter le processus de chargement à tout moment et la base de données précédente sera restaurée. La boîte de dialogue sera fermée et le programme passera à l'affichage de la base de données chargée une fois qu'elle a été chargée avec succès.
 * `Fermer` : Conserve tous les réglages et changements dans la boîte de dialogue et la ferme sans rien charger.
 
-![Load Scenery Dialog](../images/loadscenery.jpg "Load Scenery Dialog")
+![Load Scenery Dialog](../images/loadscenery_fr.jpg "Load Scenery Dialog")
 
-_**Image ci-dessus:** Charger le dialogue de chargement de la scène. Les données de scènes sont déjà chargées pour FSX._
+_**Image ci-dessus:** Boîte de dialogue de chargement de la scène. Les données de scènes sont déjà chargées pour FSX._
 
 ![Load Scenery Progress Dialog](../images/loadsceneryprogress_fr.jpg "Load Scenery Progress Dialog")
 

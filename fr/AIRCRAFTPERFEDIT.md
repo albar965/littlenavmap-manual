@@ -4,7 +4,7 @@ Toutes les vitesses sont entrées en vitesse réelle. Cela rend les valeurs ind�
 
 ### Boutons {#buttons}
 
-* `OK`: TPrend toutes les modifications apportées dans la boîte de dialogue mais n'enregistre pas le profil. Le rapport de carburant et le haut de la montée et le haut de la descente dans la [Fenêtre du profil d'élévation du plan de vol](PROFILE.md) sont immédiatement ajustés.
+* `OK`: Prend toutes les modifications apportées dans la boîte de dialogue mais n'enregistre pas le profil. Le rapport de carburant et le haut de la montée et le haut de la descente dans la [Fenêtre du profil d'élévation du plan de vol](PROFILE.md) sont immédiatement ajustés.
 * `Annuler`: Ne tient pas compte de toutes les modifications et ferme la boîte de dialogue.
 * `Réinitialiser`: Réinitialise tous les changements effectués depuis l'ouverture de la boîte de dialogue d'édition.
 * `Restaurer les valeurs par défaut`: Réinitialise le profil par défaut avec 3 nm par 1000 pieds pour les règles de descente et de montée et aucune consommation de carburant.
@@ -74,5 +74,5 @@ Liens web normaux comme `http://www.example.com` ou `https://www.example.com` so
 
 ![Aircraft Performance Edit](../images/perf_edit.jpg "Aircraft Performance Edit")
 
-_**Photo ci-dessus:** Boîte de dialogue d'édition des performances de l'aéronef._
+_**Image ci-dessus:** Boîte de dialogue d'édition des performances de l'aéronef._
 

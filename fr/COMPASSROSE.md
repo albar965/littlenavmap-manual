@@ -1,10 +1,10 @@
-## Compass Rose {#compass-rose}
+## Compas Rose {#compass-rose}
 
-La rose des vents indique le nord vrai, le nord magnétique, le nord, le cap de l'aéronef et la trajectoire de l'aéronef.
+Le compas rose indique le nord vrai, le nord magnétique, le nord, le cap de l'aéronef et la trajectoire de l'aéronef.
 
 Le cap de l'aéronef utilisateur, la trajectoire, les anneaux de distance et les marqueurs sont affichés si _Little Navmap_ est connecté à un simulateur. La rose est centrée autour de l'aéronef de l'utilisateur si celui-ci est connecté.
 
-La rose des vents est maintenue centrée dans la vue courante si elle n'est pas connectée à un simulateur. La déclinaison magnétique est basée sur la déclinaison au centre.
+Le compas rose est maintenu centré dans la vue courante si elle n'est pas connectée à un simulateur. La déclinaison magnétique est basée sur la déclinaison au centre.
 
 La taille est adaptée à la taille de la carte mais pas plus grande que 1000 NM et pas plus petite que 4 NM.
 
@@ -34,4 +34,4 @@ L'épaisseur des lignes peut être modifiée dans la boîte de dialogue `Options
 | | |
 | --- | --- |
 | ![Compass Rose](../images/compass_rose.jpg "Compass Rose") | ![Compass Rose Aircraft](../images/compass_rose_aircraft.jpg "Compass Rose with Aircraft") |
-| _**Photo ci-dessus:** Rose des vents sans connexion au simulateur._ | _**Photo ci-dessus:** Rose des vents centrée autour de l'aéronef utilisateur._ |
+| _**Image ci-dessus:** Compas rose sans connexion au simulateur._ | _**Image ci-dessus:** Compas rose centré autour de l'aéronef utilisateur._ |

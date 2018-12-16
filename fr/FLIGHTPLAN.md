@@ -80,7 +80,7 @@ Un double clic sur une entrée dans la vue tableau montre soit un diagramme de l
 
 Désélectionne toutes les entrées du tableau et supprime également les anneaux de surbrillance de la carte.
 
-### Menu Contextuel de la Vue Tableau des Plans de Vol {#flight-plan-table-view-context-menu}
+### Menu Contextuel de la vue Tableau des Plans de Vol {#flight-plan-table-view-context-menu}
 
 #### ![Show Information](../images/icons/globals.png "Show Information") Afficher Informations {#show-information-1}
 
@@ -90,6 +90,14 @@ Identique à la [Menu Contextuel de la Carte](MAPDISPLAY.md#map-context-menu).
 
 Affiche soit le diagramme de l'aérodrome, soit un zoom sur le navaid sur la carte. La distance de zoom peut être modifiée dans la boîte de dialogue " Options " de l'onglet " Carte ".
 
+#### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Activer le Segment du Plan de Vol {#activate}
+
+Fait de ce segment sélectionné le segment actif du plan de vol \(magenta\). Le segment actif peut changer si _Little Navmap_ est connecté au simulateur et que l'aéronef utilisateur se déplace.
+
+#### Suivre Sélection {#follow-selection}
+
+La vue de la carte sera centrée - et non zoomée - sur l'aérodrome ou navaid sélectionné lorsque cette fonction est activée.
+
 #### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Déplacer les Segments Sélectionnés vers le Haut/Bas {#move-selected-legs-up-down}
 
 Déplace toutes les segments du plan de vol sélectionnées vers le haut ou vers le bas dans la liste. Cela fonctionne également si plusieurs segments sont sélectionnés.
@@ -98,15 +106,37 @@ Les noms des voies aériennes seront supprimés lorsque les waypoints du plan de
 
 Les procédures ou les segments de procédure ne peuvent pas être déplacés et les points de cheminement ne peuvent pas être déplacés dans ou à travers les procédures.
 
-#### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Supprimer les Segments ou la Procédure Sélectionnés {#delete-selected-legs}
+#### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Supprimer  Segment ou Procédure Sélectionné {#delete-selected-legs}
 
 Supprime tous les segments de plan de vol sélectionnés. Utilisez `Annuler` si vous supprimez des segments accidentellement.
 
 Toute la procédure est supprimée si le segment de plan de vol sélectionné fait partie d'une procédure. La suppression d'une procédure supprime également sa transition.
 
-#### ![Edit Name of User Waypoint](../images/icons/routestring.png "Edit Name of User Waypoint") Modifier le nom du Waypoint de l'Utilisateur {#edit-name-of-user-waypoint}
+#### ![Edit Position](../images/icons/routestring.png "Edit Position") Modifier Position {#edit-name-of-user-waypoint}
 
-Permet de changer le nom d'un waypoint défini par l'utilisateur. La longueur du nom est limitée à 10 caractères.
+Permet de changer le nom ou les coordonnées d'un waypoint défini par l'utilisateur. La longueur du nom est limitée à 10 caractères lors de la sauvegarde. Voir [Modifier la position du plan de vol](EDITFPPOSITION.md).
+
+#### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insérer Plan de Vol avant {#insert-flight-plan}
+
+Insère un plan de vol avant le segment sélectionné dans le plan actuel.
+
+Utiliser `Insérer plan de vol avant` ou `Joindre plan de vol` permet de charger ou de fusionner des plans de vol complets ou des extraits de plans de vol dans un nouveau plan. 
+
+Les procédures sont insérées du plan de vol chargé et supprimées du plan de vol actuel en fonction de la position de l'insert.
+
+Si vous insérez un plan de vol après le départ, toutes les procédures du plan chargé sont ignorées et les procédures actuelles sont conservées.
+
+L'insertion avant le départ reprend les procédures de départ du plan de vol chargé et supprime les procédures de départ actuelles.
+
+Les trajectoires insérées sont sélectionnées après le chargement du plan de vol.
+
+#### ![Append Flight Plan](../images/icons/fileappend.png "Append Flight Plan") Joindre Plan de Vol {#append-flight-plan}
+
+Ajoute le départ, la destination et tous les waypoints d'un autre plan de vol à la fin du plan actuel.
+
+Toutes les procédures d'arrivée actuellement sélectionnées seront supprimées lors de l'ajout d'un plan de vol. Les procédures d'arrivée et d'approche du plan de vol joint en annexe sont ajoutées à la procédure en vigueur, le cas échéant.
+
+Les segments annexés sont sélectionnés après le chargement du plan de vol.
 
 #### Calculer pour les Segments Sélectionnés {#calculate-for-selected-legs}
 
@@ -114,59 +144,29 @@ Il s'agit d'un sous-menu contenant des entrées pour les méthodes de calcul des
 
 ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calculer radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calculer la haute altitude](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculer la basse altitude](MENUS.md#calculate-low-altitude) et ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calculer sur la base d'une altitude donnée](MENUS.md#calculate-based-on-given-altitude).
 
-Ce menu n'est actif que lorsque plus d'un segment de plan de vol est sélectionné et que ni la première ni la dernière ligne sélectionnée n'est une procédure.
-
 Il calculera un fragment de plan de vol entre le premier et le dernier point de cheminement dans les segments de plan de vol sélectionnés. Toutes les segments entre le premier et le dernier segment sélectionné seront supprimés et remplacés par le fragment de plan de vol calculé.
 
-Vous pouvez soit sélectionner la première et le dernier segment \(`Ctrl+Click`\) et commencer le calcul ou vous pouvez sélectionner toute une série de segments \(`Shift+Click` et glisser\) avant le calcul.
+Ce menu n'est actif que lorsque plus d'un segment de plan de vol est sélectionné et que ni la première ni la dernière ligne sélectionnée n'est une procédure. Vous pouvez soit sélectionner la première et le dernier segment \(`Ctrl+Click`\) et démarrer le calcul, soit sélectionner toute une série de segments \(`Maj+Click` et glisser\) avant le calcul.
 
 Cette fonction peut être utile si vous devez traverser des segments océaniques qui sont vides de voies aériennes :
 
-Les procédures sont insérées du plan de vol chargé et supprimées du plan de vol actuel en fonction de la position de l'insert.
-
-Si vous insérez un plan de vol après le départ, toutes les procédures du plan chargé sont ignorées et les procédures actuelles sont conservées.
-
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher les Anneaux de Portée {#show-range-rings-1}
-
-Identique au [Menu Contextuel de la Carte](MAPDISPLAY.md#map-context-menu).
-
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher la gamme Navaid {#show-navaid-range-1}
-
-Affiche les anneaux de portée pour toutes les navaids radio sélectionnées dans le plan de vol. Vous obtiendrez un cercle de portée pour chaque navaid radio sur le plan de vol si vous sélectionnez simplement tous les segments du plan de vol et utilisez cette fonction.
-
-Sinon, la même chose que le [Menu Contextuel de la Carte].](MAPDISPLAY.md#map-context-menu).
-
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Enlever tous les Anneaux de Portée et les mesures de Distance. {#remove-all-range-rings-and-distance-measurements-1}
-
-Identique au [Menu Contextuel de la Carte](MAPDISPLAY.md#map-context-menu).
-
-#### ![Copy](../images/icons/copy.png "Copy") Copier {#copy-0}
-
-Copie les entrées sélectionnées au format CSV dans le presse-papiers. Le CSV comprendra un en-tête. Ceci prendra en compte les changements apportés à la vue tableau comme l'ordre des colonnes.
-
-#### Sélectionner Tout {#select-all-0}
-
-Sélectionne tous les segments du plan de vol.
-
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Effacer la Sélection {#clear-selection}
-
 1. Définir le départ et la destination.
-2. Trouvez le dernier waypoint sur une voie aérienne avant d'entrer dans l'océan. Choisissez la ligne la plus proche du plan de vol. Ajoutez le waypoint au plan de vol.
-3. Répétez le processus pour le premier repère de balisage sur une voie aérienne proche de la côte de votre continent de destination.
+2. Trouvez le dernier waypoint sur une voie aérienne avant d'entrer sur l'océan. Choisissez la ligne la plus proche du plan de vol. Ajoutez un waypoint au plan de vol.
 4. Sélectionnez le point de départ et ce waypoint et calculez le fragment de plan de vol.
+3. Répétez le processus pour le premier waypoint sur une voie aérienne proche de la côte de votre continent de destination.
 5. Sélectionnez ce waypoint et la destination et calculez le fragment de plan de vol.
 
 Bien que ce ne soit pas entièrement réaliste, c'est une solution de contournement raisonnable jusqu'à ce que _Little Navmap_ supporte les pistes NAT ou PACOT.
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher les Anneaux de Portées {#show-range-rings-1}
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Afficher Anneaux de Portée {#show-range-rings-1}
 
-Identique au [Menu contextuel de la carte](MAPDISPLAY.md#map-context-menu).
+Identique au [Menu Contextuel de la Carte](MAPDISPLAY.md#map-context-menu).
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher la portée Navaid {#show-navaid-range-1}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Afficher Portée Navaid {#show-navaid-range-1}
 
-Afficher les anneaux de portée pour toutes les navaids radio sélectionnés dans le plan de vol. Sélectionnez simplement toutes les segments du plan de vol et utilisez cette fonction pour afficher un cercle de portée pour chaque radio navaid dans le plan de vol.
+Affiche les anneaux de portée pour toutes les navaids radio sélectionnées dans le plan de vol. Vous obtiendrez un cercle de portée pour chaque navaid radio sur le plan de vol si vous sélectionnez simplement tous les segments du plan de vol et utilisez cette fonction.
 
-Sinon, la même chose que l'option [Menu contextuel de la carte](MAPDISPLAY.md#map-context-menu).
+Sinon, la même chose que le [Menu Contextuel de la Carte].](MAPDISPLAY.md#map-context-menu).
 
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Afficher la Circulation du Trafic Aérien {#show-traffic-pattern}
 
@@ -182,7 +182,7 @@ Copiez les entrées sélectionnées au format CSV dans le presse-papiers. Le CSV
 
 Sélectionnez toutes les segments du plan de vol.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Effacer la Sélection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Effacer Sélection {#clear-selection}
 
 Désélectionnez toutes les segments du plan de vol actuellement sélectionnés et supprimez tous les cercles de surbrillance de la carte.
 
@@ -190,7 +190,7 @@ Désélectionnez toutes les segments du plan de vol actuellement sélectionnés 
 
 Réinitialiser l'ordre et la largeur des colonnes par défaut.
 
-#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Définir le Centre pour la Recherche à Distance {#set-center-for-distance-search-1}
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Définir Centre pour la Recherche à Distance {#set-center-for-distance-search-1}
 
 Identique au [Menu contextuel de la carte](MAPDISPLAY.md#map-context-menu).
 

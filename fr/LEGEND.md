@@ -130,7 +130,7 @@ Voir le chapitre [Procédures](APPROACHES.md) pour des informations plus détail
 | ![Procedure Altitude](../images/legend/procinterceptalt.png) | Segment de la procédure qui se termine lorsque l'altitude donnée est atteinte. |
 | ![Procedure Intercept Distance](../images/legend/procinterceptcd.png) | Un repère défini par un cap ou un cap et une distance par rapport à un navaid.|
 | ![Procedure Intercept Course Distance](../images/legend/procinterceptd.png) |  Ce repère est défini par un cap ou une route qui se termine en atteignant une distance DME. |
-| ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Intercepter un cap vers le prochain repère à un angle d'environ 45 degrés.. |
+| ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Intercepter un cap vers le prochain repère à un angle d'environ 45 degrés. |
 
 ### Diagramme de l'Aérodrome {#airport-diagram}
 
@@ -212,7 +212,7 @@ La grille d'altitude minimale hors route fournit une altitude de franchissement 
 | ![Clear](../images/legend/weather_vfr_clear.png) | Aucun nuages |
 | ![Few](../images/legend/weather_vfr_few.png) |  Peu nuageux |
 | ![Scattered](../images/legend/weather_vfr_sct.png) | Dispersés |
-| ![Broken](../images/legend/weather_vfr_bkn.png) | Plafond cassé |
+| ![Broken](../images/legend/weather_vfr_bkn.png) | Ciel fragmenté |
 | ![Overcast](../images/legend/weather_vfr_ovc.png) | Ciel couvert |
 
 #### Vent {#airport-weather-wind}
