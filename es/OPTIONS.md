@@ -1,39 +1,38 @@
-## ![Options](../images/icons/settings.png "Options") Dialogo de Opciones {#options-dialog}
+## ![Options](../images/icons/settings.png "Options") Diálogo de Opciones {#options-dialog}
 
-La mayoría de las opciones se definen por si solas y la información sobre las herramientas contiene explicaciones más detalladas, si corresponde.
+La mayoría de opciones se definen por sí solas, y la información sobre las herramientas contiene explicaciones más detalladas, si corresponde.
 
-Puede comprobar inmediatamente en el mapa los cambios que ha realizado moviendo el cuadro de diálogo `Opciones` a un lado y pulsando luego en  `Aplicar`.
+Puede comprobar inmediatamente en el mapa los cambios que ha realizado moviendo el cuadro de diálogo `Opciones` a un lado y pulsando después  `Aplicar`.
 
 El botón `Restaurar los valores predeterminados` solo restaura los valores por defecto de este diálogo. Otros ajustes como la pantalla de mapa, vista de tablas o el panel de posiciones no son afectados. Para resetear completamente todos los ajustes guardados consulte [Solución de problemas](APPENDIX.md#troubleshoot).
 
 ### Inicio {#startup}
 
-Permite personalizar que debe ser cargado y mostrado al iniciar
+Permite personalizar qué debe ser cargado y mostrado al iniciar
 _Little Navmap_.
 
 Puede también configurar la frecuencia de las actualizaciones automáticas y el tipo de canal de actualización. Consulte [Comprobar actualizaciones](UPDATE.md) para obtener más información.
+Change the settings here if you wish to get notifications about beta releases.
 
 ### Interfaz de usuario {#user-interface}
 
 Tiene opciones para tamaños de texto en ventanas de información y plan de vuelo, así como en la tabla de resultados de búsqueda.
 
-También puede cambiar el estilo general de la interfaz gráfica de usuario. Los estilos de interfaz de usuario
-contienen un modo `Noche 'que se puede usar para vuelos nocturnos en habitaciones oscuras. También puedes atenuar el mapa y
-visualización del perfil de elevación.
-
-No es necesario un reinicio pero es recomendable después de realizar un cambio de estilo.
-
-Los colores de los estilos `Fusion` y `Night` se pueden cambiar editando los archivos de configuración. Consultar [Personalizar](CUSTOMIZE.md) para obtener más información.
-
-Esta pestaña también contiene opciones para forzar el idioma del programa y la configuración regional \ (número, fecha y formato de hora \) a inglés si no desea utilizar una interfaz de usuario traducida.
+Esta pestaña también contiene opciones para forzar el idioma del programa y la configuración regional \ (número, fecha y formato de hora \) a inglés, si no desea utilizar una interfaz de usuario traducida.
 
 ![User Interface](../images/optionsui.jpg "User Interface")
 
-**Imagen superior:** Pestaña _`Interfaz de usuario`_ utilizando el estilo _`Night`_.
+**Imagen Superior:** Pestaña _`Interfaz de usuario`_ utilizando el estilo _`Night`_
 
 ### Mapa {#map}
 
 Contiene opciones de personalización relacionado con el mapa. Permite ajustar la sensibilidad del click, distancias de zoom y más.
+
+#### Evite el mapa borroso usando la mejor escala de zoom {#blurred-map}
+
+Verifique esta ayuda para tener imágenes de fondo definidas en los mapas online, \(por ejemplo, OpenStreetMap\) cuando  _Little Navmap_  se acerca, o centra el mapa, sobre aeropuertos, tramo activo del plan de vuelo, y otros. Esto funciona mejor con la proyección de `Mercator`en el mapa.  
+
+Como resultado, el mapa podría alejarse más de lo esperado en algunos casos. 
 
 ### Pantalla de Mapa {#map-display}
 
@@ -44,7 +43,7 @@ aeropuertos, aviones de usuario y AI / multijugador.
 
 ![Map Display](../images/optionmapdisplay.jpg "Map Display")
 
-**Imagen superior:** Pestaña _`Visualización del Mapa`_.
+**Imagen superior:** Pestaña _`Visualización del Mapa`_
 
 ### Unidades {#units}
 
@@ -56,27 +55,26 @@ Esto también se aplica para la altitud del plan de vuelo. Sin embargo np olvide
 
 ### Aeronave del Simulador {#simulator-aircraft}
 
-Permite cambiar diversos aspectos relacionados con la pantalla del avión del usuario. Todos los ajustes que resulten en una visualización de avión más fluida usarán más CPU y pueden inducir retrasos en el simulador.
+Permite cambiar diversos aspectos relacionados con la pantalla del avión del usuario mientras vuela. Todos los ajustes que resulten en una visualización de avión más fluida usarán más CPU y pueden inducir retrasos en el simulador.
 
-#### Centrar mapa en aeronave y próximo punto del plan de vuelo {#simulator-aircraft-center-wp}
+#### Centrar mapa en aeronave y siguiente punto del plan de vuelo {#simulator-aircraft-center-wp}
 
-El mapa se ajusta para mostrar ambos, la aeronave y el siguiente punto activo del plan de vuelo si se selecciona.
+El mapa se ajusta para mostrar ambos, la aeronave y el siguiente punto activo del plan de vuelo si se selecciona mientras vuela. Little Navmap_ utiliza varios criterios para minimizar las actualizaciones del mapa en este modo. 
 
-El modo por defecto es simplemente centrar el mapa en la aeronave. 
+El mapa volverá al modo predeterminado de centrar la aeronave, si no hay plan de vuelo cargado, la aeronave está en el suelo, o el plan de vuelo está alejado más de 50 mn de la aeronave del usuario. 
 
-El mapa volverá al modo por defecto si no se carga un plan de vuelo.
 
 #### No usar modo caja al seguir la aeronave. Desplazar el mapa constantemente.  {#simulator-aircraft-move-constantly}
 
-El mapa seguirá a la aeronave constantemente cuando se seleccione. Esto se utiliza además para `Centrar el mapa en la aeronave y próximo punto del plan de vuelo`.
+El mapa seguirá a la aeronave constantemente cuando se seleccione. Esto se utiliza además para `Centrar el mapa en la aeronave y siguiente punto del plan de vuelo`.
 
 Esta opción hará que _Little Navmap_ consuma más recursos de CPU durante el vuelo.
 
 #### Tamaño de la caja de desplazamiento del simulador de aeronave (porcentaje de tamaño de ventana de mapa)  {#simulator-aircraft-scroll-box}
 
-Los valores más pequeños mantienen el avión centrado y moverán el mapa con frecuencia. Los valores grandes actualizarán el mapa solo cuando la aeronave alcance el límite del mapa.
+Los valores más pequeños mantienen el avión centrado y moverán el mapa con más frecuencia. Los valores más altos actualizarán el mapa solo cuando la aeronave alcance el límite del mapa.
 
-Este ajuste se ignora cuando `Centrar mapa en aeronave y próximo punto del plan de vuelo` está activo y el plan de vuelo se ha configurado.
+Este ajuste se ignora cuando `Centrar mapa en aeronave y siguiente punto del plan de vuelo` está activo y el plan de vuelo se ha configurado.
 
 #### Mantener el tramo activo en la parte superior de la tabla del plan de vuelo {#simulator-aircraft-keep-active}
 
@@ -84,35 +82,52 @@ El tramo activo \(magenta\) se mostrará en la parte superior de la tabla del pl
 
 #### Permitir mover, ampliar y reducir en el mapa {#simulator-aircraft-allow-scroll-zoom}
 
-El mapa dejará de seguir al avión durante el tiempo dado si el usuario interactúa con el mapa, como desplazarse o acercarse. Puede consultar rápidamente el destino o su progreso general, y después de dejar de interactuar con el mapa, _Little Navmap_ volverá a seguir su aeronave.
+Esta opción es usada también en el [Perfil de Elevación del Plan de Vuelo](PROFILE.md).
 
-#### Regrese a la aeronave y reanude el seguimiento después de este tiempo {#simulator-aircraft-jump-timeout}
+**Recuerde: si usa el modo predeterminado de centrado de la aeronave, o si _Little Navmap_ vuelve a este modo \(vea arriba\):**
 
-Tiempo hasta que el seguimiento de la aeronave se activa de nuevo después de alguna interacción del mapa como un desplazamiento o un zoom.
+1. El uso de la rueda del ratón y las teclas `+ ` y `- ` cambiarán y mantendrán el zoom. La aeronave permanecerá centrada, pero se usará la nueva distancia de zoom.   
+2. Mire a su alrededor arrastrando el mapa con el ratón o con las teclas del cursor: la última posición **y** distancia de zoom serán recordadas. Puede hacer cualquier movimiento en el mapa, y _Little Navmap_ saltará a la última posición y distancia de zoom recordada cuando acabe.   
 
-### Cache y archivos {#cache}
+Esto mismo es válido, si salta a aeropuertos, radioayudas u otras prestaciones, haciendo doble clic en el menú de contexto \(`Mostrar en el Mapa`\) o en el vínculo del mapa.  
+
+Alterne ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") encender-apagar  `Centrar Aeronave` , si ve que el mapa salta atrás a la posición equivocada.
+
+Esta opción también se usa en el [Perfil de Elevación del Plan de Vuelo](PROFILE.md).
+
+
+#### Regresar a la aeronave y reanudar el seguimiento después de este tiempo {#simulator-aircraft-jump-timeout}
+
+Tiempo hasta que el seguimiento de la aeronave se active de nuevo después de alguna interacción con el mapa como un desplazamiento o un zoom.
+
+![Simulator Aircraft](../images/options_simac.jpg "Simulator Aircraft")
+
+**Imagen Superior:** Pestaña `Aeronave del Simulador`
+
+
+### Caché y archivos {#cache}
 
 #### Visualización del mapa {#cache-map-display}
 
-Aquí puede cambiar el tamaño de la memoria caché en la memoria RAM y en el disco. Estos caches se utilizan para almacenar los mosaicos de imágenes descargados de los mapas en línea como _OpenStreetMap_, _OpenMapSurfer_ o _OpenTopoMap_.
+Aquí puede cambiar el tamaño de la memoria caché en la memoria RAM y en el disco. Estas cachés se utilizan para almacenar los mosaicos de imágenes descargadas de los mapas en línea como _OpenStreetMap_, _OpenMapSurfer_ o _OpenTopoMap_.
 
 Todos los mosaicos de imagen caducan después de dos semanas y luego serán recargados de los servicios en línea.
 
 Tenga en cuenta que la reducción de tamaño o la eliminación de la memoria caché de disco se realiza en segundo plano y puede llevar un tiempo.
 
-La caché de RAM tiene un tamaño mínimo de 100 MB y un tamaño máximo de 2 GB.
+La caché de RAM tiene un tamaño mínimo de 100 MB y un máximo de 2 GB.
 
-La memoria caché de disco tiene un tamaño mínimo de 500 MB y un tamaño máximo de 8 GB.
+La memoria caché de disco tiene un tamaño mínimo de 500 MB y un máximo de 8 GB.
 
-#### Perfil de elevación del Plan de Vuelo {#cache-elevation}
+#### Perfil de Elevación del Plan de Vuelo {#cache-elevation}
 
 La parte inferior de esta pestaña permite instalar la descarga gratuita de datos de elevación [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html).
 
-Descargue el archivo ZIP del enlace en el cuadro de diálogo y extráigalo. Seleccione el directorio extraído usando `Seleccionar directorio GLOBAL ...` para que apunte a los archivos `a10g` a` p10g`. La etiqueta en el cuadro de diálogo mostrará un error si la ruta no es válida.
+Descargue el archivo ZIP del enlace en el cuadro de diálogo y extráigalo. Seleccione el directorio extraído usando `Seleccionar directorio GLOBAL ...` para que apunte a los archivos `a10g` a `p10g`. La etiqueta en el cuadro de diálogo mostrará un error si la ruta no es válida.
 
 ![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")
 
-_**Imagen superior:** Pestaña _`Cache y archivos`_ con datos de elevación GLOBE seleccionados correctamente.
+_**Imagen Superior:** Pestaña _`Caché y archivos`_ con datos de elevación GLOBE seleccionados correctamente.
 
 ### Plan de Vuelo {#flight-plan}
 
@@ -132,7 +147,7 @@ Los botones de prueba para los servicios meteorológicos en línea también se p
 
 ![Weather Options](../images/optionsweather.jpg "Weather Options")
 
-_**Imagen superior:** Pestaña _`Clima`_ con el archivo meteorológico Active Sky seleccionado manualmente en una red compartida._
+_**Imagen Superior:** Pestaña _`Clima`_ con el archivo meteorológico Active Sky seleccionado manualmente en una red compartida._
 
 ### Volando en linea {#online-flying}
 
@@ -146,7 +161,7 @@ Consulte [Redes Online](ONLINENETWORKS.md) para ver una descripción.
 
 ![Online Network Options](../images/options_network.jpg "Online Network Options")
 
-_**Imagen superior:** Pestaña _`Volando Online`_ con la red VATSIM activa._
+_**Imagen Superior:** Pestaña _`Volando Online`_ con la red VATSIM activa._
 
 #### Servicios en linea {#online-service}
 
@@ -168,7 +183,7 @@ La tasa de actualización depende de la configuración y suele ser de tres minut
 
 ##### Personalizada con Archivo Estado {#online-service-custom-status}
 
-Esta opción permite conectarse a una red privada y descargará un archivo `status.txt` en el inicio que contiene más enlaces por ejemplo el archivo `whazzup.txt`.
+Esta opción permite conectarse a una red privada y descargar un archivo `status.txt` en el inicio que contiene más enlaces por ejemplo el archivo `whazzup.txt`.
 
 ##### Personalizado {#online-service-custom-whazzup}
 
@@ -196,7 +211,29 @@ Este archivo se descarga de acuerdo a la frecuencia de actualización configurad
 
 El botón `Test` permite comprobar si la URL es válida. La comprobación no funciona con las rutas locales.
 
-El formato del archivo whazzup en la documentación de IVAO: [Formato del archivo Whazzup](https://doc.ivao.aero/apidocumentation:whazzup:fileformat).
+El formato del archivo whazzup está explicado en la documentación de IVAO: [Formato del archivo Whazzup](https://doc.ivao.aero/apidocumentation:whazzup:fileformat).
+
+
+
+**Ejemplo de archivo **`whazzup.txt`**:
+
+```
+!GENERAL
+VERSION = 1
+RELOAD = 1
+UPDATE = 20181126131051
+CONNECTED CLIENTS = 1
+CONNECTED SERVERS = 41
+
+!CLIENTS
+:N51968:N51968:PILOT::48.2324:-123.1231:119:0:Aircraft::::::::1200::::VFR:::::::::::::::JoinFS:::::::177:::
+
+!SERVERS
+...
+```
+
+
+
 
 ##### Actualizar cada {#online-service-settings-update}
 
@@ -210,7 +247,7 @@ Puede usar tasas de actualización más pequeñas para redes privadas en línea 
 
 ##### Formato {#online-service-settings-format}
 
-`IVAO` o `VATSIM`. Depende del formato utilizado por su red privada. Pruebe ambas opciones si no está seguro.
+`IVAO` ó `VATSIM`. Depende del formato utilizado por su red privada. Pruebe ambas opciones si no está seguro.
 
 ### Base de datos Librería de Escenarios {#scenery-library-database}
 
@@ -222,22 +259,29 @@ Tienes que volver a cargar la base de datos de escenarios para que los cambios t
 
 #### Seleccionar rutas a excluir durante la carga {#scenery-library-database_exclude}
 
-Todos los directorios incluidos los subdirectorios de esta lista se omitirán al cargar la base de datos de la biblioteca de escenarios en _Little Navmap_. También puede usar esta lista para acelerar la carga de la base de datos si excluye directorios que no contienen aeropuertos o ayudas a la navegación (landclass, datos de elevación y otros).
+Todos los directorios incluidos los subdirectorios de esta lista se omitirán al cargar la base de datos de la biblioteca de escenarios en _Little Navmap_. También puede usar esta lista para acelerar la carga de la base de datos si excluye directorios que no contienen aeropuertos o ayudas a la navegación \(landclass, datos de elevación y otros\).
+También puede excluir archivos `BGL` ó `DAT` si es necesario. 
+
+Recuerde que puede seleccionar más de una entrada en los diálogos de archivo o directorio. 
+
+Seleccione una o más entradas en la lista, y haga clic en `Eliminar` para borrarlas de la lista. 
 
 #### Seleccionar las rutas para excluir el reconocimiento de complementos {#scenery-library-database_exclude-add-on}
 
-Todos los datos de escenario que se encuentran fuera del directorio `Scenery` del simulador de vuelo base se consideran complementos y serán
-resaltado en el mapa y también considerado durante la búsqueda de complementos.
+**FSX/P3D:** Todos los datos de escenario que se encuentran fuera del directorio `Scenery` del simulador de vuelo base se consideran complementos y serán
+resaltado en el mapa, así como considerados durante la búsqueda de complementos.
+
+**X-Plane:** Todos los Aeropuertos de la carpeta `Custom Scenery` serán considerados aeropuertos añadidos y resaltados en consecuencia.
 
 Puede utilizar esta lista para modificar este comportamiento.
 
 Los complementos, como _Orbx FTX Vector_ o _fsAerodata_ agregan archivos de escenarios que corrigen ciertos aspectos de aeropuertos como elevación, variación magnética y otros. Todos estos aeropuertos serán reconocidos como aeropuertos adicionales ya que todos sus archivos no están almacenados en el directorio `Scenery` del simulador de vuelo base.
 
-Inserte el directorio correspondiente en esta lista para evitar el resaltado no deseado de estos aeropuertos como complementos.
+Inserte el directorio correspondiente, o los archivos, en esta lista para evitar el resaltado no deseado de estos aeropuertos como complementos.
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Imagen superior:** Pestaña _`Base de datos librería de Escenarios`_ con tres directorios excluidos en la carga y dos directorios excluidos para el reconocimiento de complementos._
+_**Imagen Superior:** Pestaña _`Base de datos librería de Escenarios`_ con tres directorios y tres archivos excluidos de la carga, y dos directorios excluidos del reconocimiento de complementos._
 
 #### Ejemplos
 

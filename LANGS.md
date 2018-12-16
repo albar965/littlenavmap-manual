@@ -1,6 +1,6 @@
 * [English](en)
 * [French](fr)
-* [Español](es) \(Work in progress\)
+* [Español](es)
 * [Deutsch](de) \(Work in progress\)
 * [Italian](it) \(Work in progress\)
 

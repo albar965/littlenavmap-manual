@@ -4,7 +4,7 @@ Consultar el [Leyenda del Mapa](LEGEND.md) para detalles sobre varios de los sí
 
 ### Movimientos {#moving}
 
-Hacer click y arrastrar para mover el mapa y la rueda del mouse para acercar o alejar. También puede usar los botones superpuestos en el lado derecho del mapa.
+Hacer click y arrastrar para mover el mapa y la rueda del mouse para acercar o alejar. Utilice `Shift+Rueda del ratón` para hacer zoom en pequeños pasos. También puede usar los botones superpuestos en el lado derecho del mapa.
 
 También puede usar el teclado para moverse por el mapa:
 
@@ -19,7 +19,7 @@ No olvide activar la ventana del mapa haciendo clic en ella antes de usar las te
 
 ### Clicks del ratón{#mouse-clicks}
 
-Un solo clic en un aeropuerto, una radioayuda, una aerovía o un espacio aéreo muestra detalles en la ventana del panel de `Información`.
+Un solo clic muestra los detalles de todos los objetos del mapa cercanos a la posición donde se hace click en el panel de `Información`. Las ventanas y pestañas se activarán dependiendo de los objetos pulsados.
 
 Un solo clic en un avión de usuario, un avión AI o un avión multijugador muestra detalles en la ventana del panel `Avión del Simulador`.
 
@@ -28,6 +28,30 @@ Un doble clic se acerca para mostrar de cerca el diagrama del aeropuerto o la ra
 La funcionalidad de doble clic y de un solo clic no funciona para los waypoints o aeropuertos si el modo de edición del plan de vuelo está habilitado. El modo de edición se puede desactivar utilizando la barra de herramientas o el `Menú principal` -&gt; `Plan de vuelo` -&gt; `Editar plan de vuelo en el mapa`.
 
 La sensibilidad del click de ratón puede ajustarse en en dialogo `Opciones`en la pestaña del `Mapa`.
+
+### Mouse Click Hotspots {#mouse-click-hotspots}
+
+Map marks like range rings or measurement lines have hotspots to indicate that a modifier-click can remove them or an action is available in the context menu. The same applies to the flight plan drag and drop editing mode.
+
+The mouse cursor changes into a hand ![Hand Cursor](../images/cursorhand.jpg) to indicate a click spot.
+
+Click spots are:
+* Center of range rings \(small circle\).
+* End of a measurement line \(cross\).
+* Runway threshold point \(small circle\) for airport traffic patterns.
+
+### Clicks del ratón y modificadores {#mouse-clicks-modifiers}
+
+Puede utilizar el teclado y el ratón para tener un acceso rápido a las siguientes funciones:
+
+* `Shift+Click`: Añade o elimina anillos de rango o anillos de rango de radioayudas.
+* `Ctrl+Click`: Empieza la medición de la línea de rumbo o la elimina.
+* `Alt+Click`: Empieza la medición de la línea ortodrómica o de círculo máximo o borra la línea.
+* `Ctrl+Shift+Click`: Añade o edita un punto de usuario.
+* `Ctrl+Alt+Click`: Inserta un aeropuerto, radioayuda, punto de usuario o posición dentro del tramo más próximo del plan de vuelo.
+* `Shift+Alt+Click`: Adjunta un aeropuerto, radioayuda, punto de usuario o posición al plan de vuelo.
+
+Al hacer click de nuevo sobre un item elimina las marcas, líneas de medición o waypoints del plan de vuelo.
 
 ### Aeronave {#aircraft}
 
@@ -88,7 +112,9 @@ El menú contextual del mapa se puede activar usando el botón derecho o la tecl
 
 #### ![Show Information](../images/icons/globals.png "Show Information") Mostrar Información {#show-information}
 
-Muestra información detallada en el panel `Información` de los aeropuertos cercanos, una o más aerovías, uno o más espacios aéreos o todas las radioayudas cerca del cursor.
+Muestra información detallada en el panel `Información` de los aeropuertos cercanos, aerovías, espacios aéreos cuyo nombre se muestra en el elemento del menú.
+
+Haga un click dentro del mapa con el botón izquierdo si desea ver la información de todos los objetos cercanos a la posición del ratón.
 
 Consulte [Panel de información](INFO.md#information-dock-window) para más detalles.
 
@@ -131,6 +157,18 @@ Consulte [Declinación Magnética](INTRO.md#magnetic-declination) para ver comen
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Eliminar la medición de distancia {#remove-distance-measurement}
 
 Elimina la línea seleccionada. Este elemento de menú está activo si hace clic derecho en el punto final de una línea de medición de distancia \ (cruz pequeña\).
+
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Mostrar Patrones de tráfico del Aeropuerto {#show-traffic-pattern}
+
+Este elemento del menú está habilitado si se hace clic en un aeropuerto. Muestra un cuadro de diálogo que permite personalizar y mostrar un patrón de tráfico del aeropuerto en el mapa.
+
+Consulte [Traffic Pattern](TRAFFICPATTERN.md).
+
+#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Eliminar Patrones de Tráfico del aeropuerto {#remove-traffic-pattern}
+
+Se activa si se hace clic en el punto de acceso del patrón de tráfico del aeropuerto \ (círculo en el umbral de la pista \) que se indica con un cursor de mano.
+
+Consulte [Traffic Pattern](TRAFFICPATTERN.md).
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Mostrar anillos de rango {#show-range-rings}
 
@@ -190,7 +228,7 @@ Consultar [Formato de Coordenadas](COORDINATES.md) para ver la lista de formatos
 
 #### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Agregar punto de usuario {#add-userpoint}
 
-Agrega un waypoint definido por el usuario a los datos del usuarion. Algunos campos del diálogo de puntos de usuario se rellenan automáticamente dependiendo del objeto seleccionado en el mapa.
+Agrega un waypoint definido por el usuario a los datos del usuario. Algunos campos del diálogo de puntos de usuario se rellenan automáticamente dependiendo del objeto seleccionado en el mapa.
 
 Las coordenadas se rellenan siempre. Si el objeto seleccionado es un aeropuerto o radioayuda, se crea un punto de usuario de tipo `Aeropuerto` o `Waypoint`respectivamente y se rellenan los campos Identificador, Region, Nombre y Elevación o altitud.
 
@@ -200,7 +238,7 @@ Consultar [Agregar puntos de usuario](USERPOINT.md#userpoints-dialog-add) para o
 
 #### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Editar Punto de Usuario {#edit-userpoint}
 
-Abre el cuadro de diálogo de punto de usuario. Solo disponible si el objeto seleccionado es un punto de usuario. Consultar [Editar Puntos de Usuaro](USERPOINT.md#userpoints-dialog-edit).
+Abre el cuadro de diálogo de punto de usuario. Solo disponible si el objeto seleccionado es un punto de usuario. Consultar [Editar Puntos de Usuario](USERPOINT.md#userpoints-dialog-edit).
 
 #### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Mover Punto de Usuario {#move-userpoint}
 

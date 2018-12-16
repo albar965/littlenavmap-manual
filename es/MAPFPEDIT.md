@@ -1,12 +1,12 @@
 ## Edición del Plan de Vuelo en el Mapa {#map-flight-plan-editing}
 
-El modo de edición de arrastrar y soltar en el mapa está activado por defecto. Puede cambiarse usando la barra de herramientas o `Menú principal` -> `Plan de Vuelo` -> `Editar el Plan de Vuelo en el Mapa`.
+El modo de edición de arrastrar y soltar en el mapa está activado por defecto. Puede cambiarse usando la barra de herramientas o `Menú principal` -&gt; `Plan de Vuelo` -&gt; `Editar el Plan de Vuelo en el Mapa`.
 
 Puede utilizar el teclado, la rueda del ratón o los botones sobreimpresos para desplazarse y hacer zoom mientras edita la ruta.
 
 Tenga en cuenta que la edición del plan de vuelo con arrastrar y soltar se basa en el supuesto de que exista ya una conexión directa entre la salida y la llegada.
 
-Seleccionar siempre primero la salida y la llegada si le gusta construir su plan de vuelo manualmente. Esto conectará ambos puntos con una gran línea circular. Basandose en esta línea, puede empezar a añadir radioayudas a su plan de vuelo.
+Seleccionar siempre primero la salida y la llegada si le gusta construir su plan de vuelo manualmente. Esto conectará ambos puntos con una gran línea circular. Basándose en esta línea, puede empezar a añadir radioayudas a su plan de vuelo.
 
 Tenga en cuenta que no es posible seleccionar aerovías.
 

@@ -1,6 +1,7 @@
 ## ![Search](../images/icons/searchdock.png "Search") Panel de Búsqueda - Procedimientos {#search-dock-window}
 
-La pestaña `Procedimientos` permite previsualizar y añadir procedimientos de aproximaciones y salidas al plan de vuelo. Los procedimientos del aeropuerto seleccionado se organizan en un árbol que indica las dependencias entre las aproximaciones y las transiciones.
+La pestaña `Procedimientos` permite previsualizar y añadir procedimientos de aproximación y salida al plan de vuelo. Los procedimientos del aeropuerto seleccionado se organizan en un árbol que indica las dependencias entre las aproximaciones y las transiciones.
+Vea [Procedimientos](APPROACHES.md) para información general acerca de las SID, STAR, aproximaciones y transiciones. 
 
 Tenga en cuenta que los nombres de SID y STAR están limitados a 5 caracteres en FSX y P3D debido a una limitación en el formato de archivo BGL. Por lo tanto, los nombres de los procedimientos se modifican ligeramente. Sin embargo, esto no se aplica a los procedimientos de la base de datos de Navigraph o X-Plane.
 
@@ -16,13 +17,13 @@ Los tramos del procedimiento se resaltan en rojo si una o más ayudas a la naveg
 
 ![Navaid Search Result Table](../images/proceduresearch.jpg "Navaid Search Result Table")
 
-_**Imagen superior:** Mostrando una transición y una aproximación RNAV. El inicio y el punto final de una etapa de transición se resaltan en el mapa._
+_**Imagen Superior:** Mostrando una transición y una aproximación RNAV. El inicio y el punto final de una etapa de transición se resaltan en el mapa._
 
 ### Arbol de Procedimiento {#procedure-tree}
 
-Los tramos se muestran en azul oscuro, mientras que los tramos de aproximación frustrada se muestran en color rojo oscuro.
+Los tramos se muestran en Azul oscuro, mientras los de aproximación frustrada aparecen en Rojo oscuro.
 
-El texto en rojo y negrita indica un error en el tramo. El procedimiento es incompleto y no debe usarse en un plan de vuelo.
+El texto en rojo y negrita indica un error en el tramo. El procedimiento está incompleto y no debe usarse en un plan de vuelo.
 
 * `Descripción`: O bien la descripción del procedimiento o la instrucción de vuelo para los tramos del procedimiento.
 * `Curso °M`: Curso magnético para el tramo.
@@ -34,22 +35,22 @@ El texto en rojo y negrita indica un error en el tramo. El procedimiento es inco
   * **Prefijo** `B`: Vuele a o por debajo de la altitud o velocidad. Ejemplo: `B 10.000` o `B 220`.
   * **Rango:** Vuele a o sobre la primera altitud y a o por debajo de la segunda altitud. Ejemplo: `A 8.000, B 10.000`.
   * **Límite de altitud y velocidad:** Los valores separados por `/`. Ejemplo: `A 8.000, B 10.000/B220`.
-  * **Solo límite de velocidad:** El prefijo `/` no indica una restricción de altitud pero si de velocidad. Example: `/B250`.
+  * **Solo límite de velocidad:** El prefijo `/` no indica una restricción de altitud pero sí de velocidad. Example: `/B250`.
 * `Observaciones`: Muestra el sobrevuelo, la dirección de viraje o la radioayuda relacionada con un tramo de procedimiento.
 
-### Botones superiores {#top-buttons}
+### Botones Superiores {#top-buttons}
 
-#### Filtro de tipo\(Todos los procedimientos\) {#procedure-filter-type}
+#### Filtro de Tipo\(Todos los procedimientos\) {#procedure-filter-type}
 
-El filtro de tipo no está disponible para la base de datos por defecto de FSX o P3D. Se necesita una actualización del navdata para obtener los procedimientos SID y STAR.
+El filtro de tipo no está disponible para la base de datos por defecto de FSX o P3D. Se necesita una actualización de la base de datos de navegación para obtener los procedimientos SID y STAR.
 
-Este filtro está siempre disponible para la base de datos de X-Plane que contiene SID y STAR ya en los datos por defecto.
+Este filtro está siempre disponible para la base de datos de X-Plane que contiene SID y STAR en los datos por defecto.
 
 El filtro de tipo las siguientes selecciones:
 
 * `Todos los procedimientos`: SID, STAR y aproximaciones
 * `Procedimientos de salida`: Solo SID
-* `Procedimientos de llagada`: STAR y aproximaciones
+* `Procedimientos de llegada`: STAR y aproximaciones
 * `Solo Aproximaciones y Transiciones`: Ningún SID y STAR
 
 Las respectivas transiciones siempre se visualizan.
@@ -58,13 +59,13 @@ Las respectivas transiciones siempre se visualizan.
 
 Este filtro está siempre disponible y ayuda a encontrar los procedimientos para una determinada pista de salida o llegada.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Limpiar selección {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Limpiar Selección {#clear-selection}
 
 Anula la selección de todas las entradas en la tabla y elimina cualquier círculo resaltado del mapa.
 
 #### ![Help](../images/icons/help.png "Help") Ayuda {#help}
 
-Abre este capitulo del manual en el navegador por defecto.
+Abre este capítulo del manual en el navegador por defecto.
 
 ### Menú contextual del árbol de Procedimiento {#procedure-context-menu}
 
@@ -94,9 +95,24 @@ Esto agregará o reemplazará el aeropuerto de destino o de salida y agregará e
 
 Si el plan de vuelo está vacío, el aeropuerto de salida o de destino también se agrega al plan de vuelo.
 
+
+#### ![Show Information for Airport](../images/icons/globals.png "Show Information for Airport") Mostrar Información de Aeropuerto {#show-information}
+
+Muestra información detallada del aeropuerto en la ventana `Información`. 
+
+Vea la [Ventana de Información](INFO.md#information-dock-window) para detalles. 
+
+#### ![Show Airport on Map](../images/icons/showonmap.png "Show Airport on Map") Mostrar Aeropuerto en el Mapa {#show-on-map}
+
+Muestra el aeropuerto en el mapa. La ampliación del zoom se puede cambiar en el diálogo `Opciones` de la pestaña `Mapa` 
+
+#### ![Show Airport in Search](../images/icons/search.png "Show Airport in Search") Mostrar Aeropuerto en Búsqueda  {#show-in-search}
+
+Muestra el aeropuerto en el diálogo de búsqueda. 
+
 #### Expandir Todo / Contraer Todo
 
-Expande todos los procedimientos para que se muestren sus tramos y transiciones o contrae el árbol.
+Expande todos los procedimientos para que se muestren sus tramos y transiciones, o contrae el árbol.
 
 #### ![Reset Search](../images/icons/clear.png "Reset Search") Restablecer Búsqueda {#reset-search}
 

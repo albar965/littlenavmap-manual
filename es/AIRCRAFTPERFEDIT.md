@@ -1,80 +1,81 @@
-## ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Aircraft Performance") Edit Aircraft Performance {#aircraft-performance}
+## ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Aircraft Performance") Editar la performance de la aeronave {#aircraft-performance}
 
-All speeds are entered in true airspeed. This makes the values independent of wind influence which would be the case of ground speed. It also makes the values independent of cruise altitude and deviation from ISA atmospheric conditions which would be the case when using the Mach number or indicated airspeed.
+Todas las velocidades se introducen en velocidad verdadera. Esto hace que los valores sean independientes de la influencia del viento, como sería el caso de la velocidad sobre el suelo. También hace que los valores sean independientes de la altitud de crucero y la desviación de las condiciones atmosféricas ISA, lo que sería el caso cuando se usa el número de Mach o la velocidad indicada.
 
-### Buttons {#buttons}
+### Botones {#buttons}
 
-* `OK`: Takes all changes made in the dialog but does not save the profile. The fuel report and top of climb and top of descent in the [Flight Plan Elevation Profile Dock Window](PROFILE.md) are adjusted immediately.
-* `Cancel`: Disregards all changes and closes the dialog.
-* `Reset`: Resets all changes made since opening the edit dialog.
-* `Restore Defaults`: Resets back to the default profile with 3 nm per 1000 ft for descent and climb rules and no fuel consumption.
-* `Help`: Opens the help in the default web browser.
+* `OK`: Toma todos los cambios realizados en el cuadro de diálogo pero no guarda el perfil. El informe de combustible, la cima de ascenso \(TOC\) y el inicio del descenso \(TOD\) [Ventana del perfil del plan de vuelo](PROFILE.md) se ajustarán inmediatamente.
+* `Cancelar`: Ignora todos los cambios y cierra el diálogo.
+* `Restablecer`: Restablece todos los cambios realizados desde la apertura del diálogo de edición.
+* `Restaurar valores por defecto`: Se restablece al perfil predeterminado con 3 nm por 1000 pies para las reglas de descenso y ascenso y sin consumo de combustible.
+* `Ayuda`: Abre la ayuda en el navegador web predeterminado.
 
-### Input Fields {#input-fields}
+### Campos de entrada {#input-fields}
 
-* `Name`: Can be used freely. Determined from aircraft name when collecting data for a performance profile.
-* `Aircraft Type`: Use this add the ICAO aircraft type designator. This can allow future versions or _Little Navmap_ to select the performance profile automatically. See [List of ICAO aircraft type designators](https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators) \(Wikipedia\).
+* `Nombre`: Puede ser utilizado libremente. Determinado a partir del nombre de la aeronave al recopilar datos para un perfil de performance.
+* `Tipo de aeronave`: Utilice este complemento del designador de tipo de aeronave de la OACI. Esto puede permitir futuras versiones o _Little Navmap_ para seleccionar el perfil de performance automáticamente. Consulte [Lista de designadores ICAO según tipo de aeronave](https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators) \(Wikipedia\).
 
-#### Fuel {#fuel}
+#### Combustible {#fuel}
 
-* `Fuel Units`: Either `Volume` \(gallons or liters\) or `Weight` \(lbs or kilograms\). The numbers in the dialog will be converted using the weight of the selected `Fuel Type` when changing the unit. Rounding errors might occur when switching forth and back.
-* `Fuel Type`: `Avgas` \(default\) or `Jetfuel`. Needed to convert fuel numbers between weight and volume. This is detected automatically when collecting aircraft performance.
+* `Unidades de Combustible`: Ya sea `Volumen` \(galones o litros\) o `Peso` \(libras o kilogramos\). Los números del dialogo se convertirán utilizando el peso del `Tipo de Combustible` seleccionado, cuando se cambie la unidad. Pueden ocurrir errores de redondeo cuando se seleccionan hacia adelante o hacia detrás.
+* `Tipo de Combustible`: `Avgas` \(por defecto\) o `Jetfuel`. Necesario para convertir valores de combustible entre peso y volumen. Esto se detecta automáticamente al recopilar la performance de la aeronave.
 
-See [Fuel - Flight Planning Definitions](https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions) \(SKYbrary\) for more information on the various fuel types.
+Consulte [Combustible - Definiciones del plan de vuelo](https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions) \(SKYbrary\) para más información sobre los tipos de combustible.
 
-#### Reserve Fuel {#reserve-fuel}
+#### Combustible de Reserva {#reserve-fuel}
 
-Final reserve fuel is the minimum fuel required to fly for 30 minutes at 1,500 feet above the alternate airport or at the destination airport at holding speed if an alternate is not required. Some authorities require sufficient fuel for 45 minutes holding time. 
+La reserva final de combustible es el combustible mínimo requerido para volar durante 30 minutos a 1500 pies sobre el aeropuerto alternativo o al aeropuerto de destino a velocidad de espera si no se requiere un aeropuerto alternativo. Algunas autoridades requieren suficiente combustible para 45 minutos de tiempo de espera. 
 
-Alternate fuel is the amount of fuel required to fly the missed approach at the destination airport and to the alternate airport.
+El combustible alternativo es la cantidad de combustible requerido para volar una frustrada en el aeropuerto de destino hacia el aeropuerto alternativo.
 
-`Reserve fuel` is the sum of alternate fuel and final reserve fuel. 
+`Combustible de Reserva` Es la suma del combustible alternativo y del combustible de reserva final. 
 
-You have to set this value to avoid running out of fuel at the destination when relying on this profile.
+Debe establecer este valor para evitar quedarse sin combustible en el destino cuando confíe en este perfil.
 
-#### Taxi Fuel {#taxi-fuel}
+#### Combustible para Taxi {#taxi-fuel}
 
-`Taxi fuel` is the fuel used prior to takeoff and includes APU consumption, engine start and taxi fuel.
+`Combustible para Taxi` es el combustible usado antes del despegue e incluye el consumo de APU, arranque del motor y combustible de taxi.
 
-#### Extra Fuel {#extra-fuel}
+#### Combustible Extra {#extra-fuel}
 
-Fuel that is added at the discretion of the captain or the dispatcher.
+Combustible que se agrega a juicio del comandante o el coordinador de vuelo.
 
-#### Contingency Fuel {#contingency-fuel}
+#### Combustible de Contingencia {#contingency-fuel}
 
-Contingency fuel is carried to account for additional enroute fuel consumption caused by wind, routing changes or traffic management restrictions.
+El combustible de contingencia se carga para tener en cuenta el consumo adicional de combustible en ruta causado por el viento, los cambios de ruta o las restricciones de gestión del tráfico.
 
-The value is given in percent of trip fuel.
+El valor se da en porcentaje de combustible de viaje.
 
-#### Climb {#climb}
+#### Ascenso {#climb}
 
-* `Average climb speed`: Average true airspeed from takeoff to cruise altitude.
-* `Average vertical climb speed`: Vertical speed in climb phase. Either feet per minute \(`fpm`\) or meter per second \(`m/s`\).
-* `Average fuel flow in climb`: Fuel flow in climb phase. Either `gal`, `lbs`, `l` or `kg`. 
+* `Velocidad media de ascenso`: Promedio de velocidad verdadera desde el despegue hasta la altitud de crucero.
+* `Velocidad media de ascenso vertical`: Velocidad vertical en fase de ascenso. Ya sea pies por minuto \(`fpm`\) o metros por segundo \(`m/s`\).
+* `Flujo medio de combustible en subida`: Flujo de combustible en fase de ascenso. Ya sea `galones`, `libras`, `litros` or `kg`. 
 
-#### Cruise {#cruise}
+#### Crucero {#cruise}
 
-* `Cruise speed at typical cruise altitude`: True airspeed at cruise.
-* `Fuel flow in cruise`: Fuel flow in cruise phase.
+* `Velocidad a la altitud típica de crucero`: Velocidad verdadera de crucero.
+* `Flujo de combustible en crucero`: Flujo de combustible en la fase de crucero.
 
-#### Descent {#descent}
+#### Descenso {#descent}
 
-* `Average descent speed`: True airspeed in descent phase.
-* `Average vertical descent speed`: Average vertical speed.
-* `Average fuel flow for descent`: Average fuel flow on descent.
+* `Velocidad promedio de descenso`: Velocidad verdadera en la fase de descenso.
+* `Velocidad vertical promedio de descenso`: Velocidad vertical promedio.
+* `Flujo de combustible promedio en el descenso`: Flujo medio de combustible en descenso.
 
-A label shows the calculated rule of thumb for descent. The default is 3 nm per 1000 ft. 
+Una etiqueta muestra la regla general calculada para el descenso. El valor predeterminado es 3 nm por 1000 pies. 
 
-#### Description or Comments {#description}
+#### Descripción o Comentarios {#description}
 
-This is a free plain text field for notes and links.
+Este es un campo de texto sin formato para notas y enlaces.
 
-Links added here are recognized and can be opened in the aircraft performance report.
-Normal web links like `http://www.example.com` or
-`https://www.example.com` are recognized besides directory or file links like
-`file:///C:/Projekte/atools` on Windows or `file:///home/alex/Aircraft_Notes.txt` on macOS or Linux.
+Los enlaces que se agregan aquí se reconocen y se pueden abrir en el informe de performance de la aeronave.
+
+Enlaces web habituales como `http://www.example.com` o
+`https://www.example.com` se reconocen además de enlaces de directorios o archivos como
+`file:///C:/Projekte/atools` en Windows o `file:///home/alex/Aircraft_Notes.txt` en macOS o Linux.
 
 ![Aircraft Performance Edit](../images/perf_edit.jpg "Aircraft Performance Edit")
 
-_**Picture above:** Aircraft Performance edit dialog._
+_**Imagen superior:** Cuadro de dialogo de edición de la performance de la aeronave._
 

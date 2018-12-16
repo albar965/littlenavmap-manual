@@ -8,7 +8,7 @@
 
 # Español
 
-* [Manual de Usuario](es/README.md) \(Work in progress\)
+* [Manual de Usuario](es/README.md)
 
 # Deutsch
 

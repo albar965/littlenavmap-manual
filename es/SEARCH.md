@@ -1,8 +1,8 @@
 ## ![Search](../images/icons/searchdock.png "Search") Panel de Búsquedas {#search-dock-window}
 
-El panel de búsqueda contiene varias pestañas con una funcionalidad similar que permite buscar objetos por nombre, ident u otros criterios.
+El panel de búsqueda contiene varias pestañas con una funcionalidad similar que permite buscar objetos por nombre, identificador u otros criterios.
 
-Las pestañas aeropuerto, Navaids, Puntos de usuario y búsqueda online contiene múltiples filas de filtros de búsqueda. Estas filas se pueden activar y desactivar con el menú desplegable en el botón de menú ![Menu Button](../images/icons/menubutton.png "Menu Button") en la esquina superior derecha de las pestañas de aeropuerto, navaid y Puntos de usuario.
+Las pestañas aeropuerto, radioayudas, puntos de usuario y búsqueda online contienen múltiples filas de filtros de búsqueda. Estas filas se pueden activar y desactivar con el menú desplegable en el botón de menú ![Menu Button](../images/icons/menubutton.png "Menu Button") en la esquina superior derecha de las pestañas de aeropuerto, navaid y puntos de usuario.
 
 El menú desplegable prefija elementos del menú con un indicador de cambio `*` para mostrar que la fila del filtro relacionado tiene modificaciones. Puede usar esto para descubrir por qué una búsqueda no da los resultados esperados.
 
@@ -10,7 +10,7 @@ El menú desplegable prefija elementos del menú con un indicador de cambio `*` 
 
 Los filtros están definidos por varios controles que son en su mayoría autoexplicativos. Solo los filtros de texto y las casillas de verificación de tres estados como `Iluminada`,` Aproximación` o `Cerrado` necesitan algunas observaciones adicionales a continuación.
 
-Todos los filtros se pueden usar juntos donde se deben cumplir todas las condiciones \ (operador `and` \). Todos los filtros, excepto el filtro de búsqueda de distancia, se aplican de inmediato. La búsqueda de distancia se aplica después de un breve retraso para cada cambio.
+Todos los filtros se pueden usar juntos donde se deban cumplir todas las condiciones \ (operador `y` \). Todos los filtros, excepto el filtro de búsqueda de distancia, se aplican de inmediato. La búsqueda de distancia se aplica después de un breve retraso para cada cambio.
 
 **Al introducir tres o cuatro caracteres en el campo 'Código ICAO' de la pestaña de búsqueda de aeropuerto, se activará una búsqueda rápida que ignorará todos los demás filtros y mostrará los aeropuertos que coincidan parcial o completamente con el código ICAO.**
 
@@ -40,7 +40,7 @@ Los colores y el aspecto de estas casillas de verificación varían según el te
 
 ### Distancia de búsqueda {#distance-search}
 
-Esta función solo está disponible en la búsqueda de aeropuerto y de radioayuda.
+Esta función solo está disponible en la búsqueda de aeropuerto y de radidoayuda.
 
 Esta función le permite combinar todas las demás opciones de búsqueda con una simple búsqueda dentro de un espacio.
 
@@ -91,7 +91,7 @@ _** Imagen superior: ** Búsqueda de ayudas limitadas a la región ICAO  `LI` \ 
 
 #### Clicks del ratón {#mouse-clicks-0}
 
-Un doble click en una entrada de la tabla muestra o bien un diagrama de  aeropuerto o amplia una radioyuda u otra característica. Adicionalmente se muestran detalles en el panel `Información` . Un solo click selecciona el objeto y la resalta en el mapa usando un círculo negro/amarillo.
+Un doble click en una entrada de la tabla muestra, o bien un diagrama de aeropuerto, o amplía una radioyuda u otra característica. Adicionalmente se muestran detalles en el panel `Información` . Un solo click selecciona el objeto y la resalta en el mapa usando un círculo negro/amarillo.
 
 ### Botones superiores {#top-buttons}
 
@@ -156,7 +156,7 @@ Tenga en cuenta que mostrar todas las radioayudas y aeropuertos puede llevar alg
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Mostrar rango de la radioyuda {#show-navaid-range-0}
 
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Quitar todos los anillos de rango y medidas de distancia {#remove-all-range-rings-and-distance-measurements-0}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Mostrar Patrones de Tráfico de Aeropuerto {#show-traffic-pattern}
 
 #### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Definir como Partida del plan de Vuelo {#set-as-flight-plan-departure-0}
 

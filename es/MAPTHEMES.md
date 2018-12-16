@@ -1,4 +1,4 @@
-## Crear o añadir Temas de Mapas {#creating-or-adding-map-themes}
+## Crear Temas de Mapas {#creating-or-adding-map-themes}
 
 Para añadir un mapa en línea o sin conexión a _Little Navmap_ simplemente añada el directorio del tema descargado o creado al directorio `data\maps\earth`.
 

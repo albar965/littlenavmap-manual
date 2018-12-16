@@ -6,47 +6,95 @@
 * [Instalación](INSTALLATION.md)
 * [Vista Rápida ](QUICKOVERVIEW.md)
 * [Primer Arranque](INTRO.md#first-start)
-* [Observaciones Generales](INTRO.md#general-remarks)
+* [Generalidades](INTRO.md#general-remarks)
+
+### Interfaz de Usuario 
+
 * [Menús y Barras de Herramientas](MENUS.md)
 * [Barra de Estado](MENUS.md#statusbar)
-* [Vista del Mapa](MAPDISPLAY.md)
-* [Leyenda de la Vista del Mapa](LEGEND.md)
-* [Rosa de los Vientos en la Vista del Mapa](COMPASSROSE.md)
-* [Edición del Mapa del Plan de Vuelo](MAPFPEDIT.md)
-* [Puntos Definidos por el Usuario](USERPOINT.md)
-* [Redes Online](ONLINENETWORKS.md)
+* [Formatos de Coordenadas](COORDINATES.md)
+* [Bases de Datos de Navegación](NAVDATA.md)
+
+### Representación del Mapa
+
+* [General](MAPDISPLAY.md)
+* [Rosa de los Vientos](COMPASSROSE.md)
+* [Sombra Solar](SUNSHADOW.md)
+* [Patrones de Tráfico](TRAFFICPATTERN.md)
+* [Leyenda](LEGEND.md)
+
+### Búsqueda
+
 * [Ventana de Búsqueda](SEARCH.md)
 * [Ventana de Búsqueda- Procedimientos](SEARCHPROCS.md)
-* [Bases de Datos de Navegación](NAVDATA.md)
-* [Formatos del Plan de Vuelo](FLIGHTPLANFMT.md)
-* [Ventana del Plan de Vuelo ](FLIGHTPLAN.md)
-* [Procedimientos del Plan de Vuelo](APPROACHES.md)
-* [Editar Posición del Plan de Vuelo](EDITFPPOSITION.md)
-* [Descripción de la Ruta del Plan de Vuelo](ROUTEDESCR.md)
-* [Ventana del Perfil de Elevación del Plan de Vuelo](PROFILE.md)
-* [Ventana de Información](INFO.md#information-dock-window)
-* [Leyenda de Ventana](INFO.md#legend-dock-window)
+* [Puntos Definidos por el Usuario](USERPOINT.md)
+* [Redes Online](ONLINENETWORKS.md)
+
+### Plan de Vuelo 
+
+* [Ventana](FLIGHTPLAN.md)
+* [Procedimientos](APPROACHES.md)
+* [Editar Posición](EDITFPPOSITION.md)
+* [Descripción de la Ruta](ROUTEDESCR.md)
+* [Edición del Mapa](MAPFPEDIT.md)
+* [Formatos](FLIGHTPLANFMT.md)
+* [Ventana del Perfil de Elevación](PROFILE.md)
+
+### Prestaciones de la Aeronave
+
+* [General](AIRCRAFTPERF.md)
+* [Edición](AIRCRAFTPERFEDIT.md)
+
+### Información
+
+* [Ventana de Información](INFO.md)
 * [Ventana de la Aeronave del Simulador](INFO.md#simulator-aircraft-dock-window)
+* [Leyenda de la Ventana](INFO.md#legend-dock-window)
 * [Meteorología](WEATHER.md)
-* [Imprimir el Mapa ](PRINT.md#printing-the-map)
-* [Imprimir el Plan de Vuelo](PRINT.md#printing-the-flight-plan)
-* [Cargar dialogo de Libreria de Escenario](SCENERY.md)
+
+### Impresión
+
+* [Mapa](PRINT.md#printing-the-map)
+* [Plan de Vuelo](PRINT.md#printing-the-flight-plan)
+
+### Herramientas
+
+* [Cargar Diálogo de Librería de Escenarios](SCENERY.md)
 * [Conexión a un Simulador de Vuelo](CONNECT.md)
 * [Búsqueda de Actualizaciones](UPDATE.md)
-* [Dialogo de Opciones](OPTIONS.md)
-* [Ejecución sin instalación de un Simulador de Vuelo](RUNNOSIM.md)
+* [Diálogo de Opciones](OPTIONS.md)
+* [Ejecución sin Instalación de un Simulador de Vuelo](RUNNOSIM.md)
+
+### Tutoriales
+
+* [General](TUTORIALS.md)
+* [Crear un Vuelo VFR](TUTORIALVFR.md)
+* [Crear un vuelo IFR con Procedimiento de Aproximación](TUTORIALIFR.md)
+
+### Apéndices
+
 * [Personalización](CUSTOMIZE.md)
-* [Creación o añadido de Temas de Mapas](MAPTHEMES.md)
-* [Formatos de Coordenadas](COORDINATES.md)
+* [Creación de Temas de Mapa](MAPTHEMES.md)
 * [Archivos](FILES.md)
-* [Tutoriales - General](TUTORIALS.md)
-* [Tutorial - Crear un Vuelo VFR](TUTORIALVFR.md)
-* [Tutorial - Crear un vuelo IFR con Procedimiento de Aproximación](TUTORIALIFR.md)
 * [Consejos y Trucos](TIPS.md)
-* [Consejos para computadoras antiguas y lentas](APPENDIX.md#tips-for-old-and-slow)
+* [Consejos para Computadoras Antiguas y Lentas](APPENDIX.md#tips-for-old-and-slow)
 * [Solución de Problemas](APPENDIX.md#troubleshoot)
 * [Problemas Conocidos](APPENDIX.md#known-problems)
-* [Cómo reportar un error](APPENDIX.md#how-to-report-a-bug)
-* [Glosario](GLOSSARY1.md)
+* [Cómo Reportar un Error](APPENDIX.md#how-to-report-a-bug)
+* [Glosario](GLOSSARY.md)
 * [Licencia](LICENSE.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
