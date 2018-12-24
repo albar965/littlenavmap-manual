@@ -36,12 +36,12 @@ El lado derecho del perfil de elevación contiene los controles deslizantes del 
 * ![Zoom Horizontally](../images/profile_zoomhoriz.jpg "Zoom Horizontally") `Zoom Horizontal`: Mueva el deslizante hacia arriba para aumentar el zoom horizontalmente. El zoom máximo resulta en una distancia de cerca de 4 nm  para toda la ventana del perfil. 
 
 
-### Movimiento del Ratón  {#mouse}
+### Movimiento con Ratón  {#mouse}
 
-* Deslizar: La correspondiente posición dentro del plan de vuelo será resaltada en el mapa con un circulo negro / cian. 
+* Deslizar: La correspondiente posición dentro del plan de vuelo será resaltada en el mapa con un círculo negro / cian. 
 * `Rueda`: Más o menos zoom horizontal.
 * `Shift+Rueda`: Más o menos zoom vertical.
-* `Clic Izquierdo` y arrastre: Mueve el mapa arriba, abajo, derecha e izquierda.  
+* `Clic Izquierdo y Arrastre`: Mueve el mapa arriba, abajo, derecha e izquierda.  
 * `Doble Clic Izquierdo`: Zoom a la posición en el mapa. 
 * `Clic Derecho`: Muestra menú de contexto.  
 
@@ -59,7 +59,7 @@ Haga clic en la ventana del perfil de elevación para activarlo antes de usar el
 
 ### Menú de Contexto {#context-menu}
 
-#### ![Show Position on Map](../images/icons/showonmap.png "Show Position on Map") Mostrar posición en el mapa {#show-pos-on-map}
+#### ![Show Position on Map](../images/icons/showonmap.png "Show Position on Map") Mostrar Posición en el Mapa {#show-pos-on-map}
 
 Acerca la correspondiente posición en el mapa. Es lo mismo que hacer doble clic en el perfil de elevación.  
 
@@ -113,29 +113,29 @@ Muestra o esconde los botones y controles deslizantes del zoom en el lado derech
 
 Muestra o esconde las etiquetas de altitud en el lado derecho del perfil de elevación. 
 
-#### Mostrar Barras de Desplazamiento   {#show-scrollbars}
+#### Mostrar Barras de Desplazamiento  {#show-scrollbars}
 
 Muestra o esconde las barras de desplazamiento en la parte inferior del lado derecho del perfil de elevación. Puede seguir usando ratón o teclado para navegar. 
 
-### Mostrar Perfil  {#display}
+### Mostrar Perfíl  {#display}
 
-Los colores y símbolos del perfil de elevación siguen el estilo del mapa principal, tal como se ajustó en el diálogo de opciones de la pestaña ` Mostrar Mapa`. Los colores modelos y símbolos para aeropuertos, radioayudas procedimientos y tramos del plan de vuelo activo y aprobado, son los mismos.  La muestra del perfil también mantiene otros ajustes del mapa como la visibilidad de la linea del plan de vuelo, la aeronave y la ruta de la aeronave. 
+Los colores y símbolos del perfíl de elevación siguen el estilo del mapa principal, tal como se ajustó en el diálogo de opciones de la pestaña ` Mostrar Mapa`. Los colores modelos y símbolos para aeropuertos, radioayudas procedimientos y tramos del plan de vuelo activo y aprobado, son los mismos.  La muestra del perfíl también mantiene otros ajustes del mapa como la visibilidad de la linea del plan de vuelo, la aeronave y la ruta de la aeronave. 
 
 El rumbo de la aeronave girará si se detecta un retroceso en relación al tramo activo del plan de vuelo. 
 
 Para más información vea la pestaña `Navmap` en la ventana `Leyenda`, ó  la [Leyenda del Perfil de Elevación](LEGEND.md#elevation-profile-legend) para más detalles. 
 
-El perfil de elevación usa la altitud real para mostrar restricciones , pendientes y crucero. Debe esperar diferencias entre la altitud real y la indicada, cuando vuele por debajo de la altitud de transición utilizando el ajuste de altímetro estándar de 29.92 pulgadas.
+El perfíl de elevación usa la altitud real para mostrar restricciones , pendientes y crucero. Debe esperar diferencias entre la altitud real y la indicada cuando vuele por debajo de la altitud de transición utilizando el ajuste de altímetro estándar de 29.92 pulgadas.
 
-**Tenga en cuenta que la visualización del perfil depende de la secuencia correcta del tramo del plan de vuelo activo \ (línea magenta \). La aeronave se mostrará en posición incorrecta y la ruta de la aeronave será errática si la etapa activa no es correcta o se cambia manualmente.**
+**Tenga en cuenta que la visualización del perfíl depende de la secuencia correcta del tramo del plan de vuelo activo \ (línea magenta \). La aeronave se mostrará en posición incorrecta y la ruta de la aeronave será errática si la etapa activa no es correcta o se cambia manualmente.**
 
-**La ruta de la aeronave se mostrará de forma incorrecta en el perfil de elevación si se cambia el plan de vuelo \( es decir, si se cambia la geometría o la extensión del plan del vuelo\).**
+**La ruta de la aeronave se mostrará de forma incorrecta en el perfíl de elevación si se cambia el plan de vuelo \( es decir, si se cambia la geometría o la extensión del plan del vuelo\).**
 
-Puede borrar el perfil de la ruta de la aeronave en el menú de contexto [ Borrar Ruta de la Aeronave](PROFILE.md#delete-aircraft-trail) mientras mantiene la ruta en el mapa. 
+Puede borrar el perfíl de la ruta de la aeronave en el menú de contexto [ Borrar Ruta de la Aeronave](PROFILE.md#delete-aircraft-trail) mientras mantiene la ruta en el mapa. 
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
-_**Imagen Superior:** Perfil de elevación del plan de vuelo con una línea que indica la posición de desplazamiento del ratón. Las líneas naranjas muestran la altitud mínima de seguridad para los segmentos del plan de vuelo. La línea roja muestra la altitud mínima segura general. Los puntos TOC y TOD se muestran incluyendo pendiente. Las líneas naranja del plan de vuelo muestran tramos de procedimiento. El waypoint _`EV501`_ tiene condición de sobrevuelo y se muestran varias restricciones de altitud para el procedimiento de aproximación._
+_**Imagen Superior:** Perfíl de elevación del plan de vuelo con una línea que indica la posición de desplazamiento del ratón. Las líneas naranjas muestran la altitud mínima de seguridad para los segmentos del plan de vuelo. La línea roja muestra la altitud mínima segura general. Los puntos TOC y TOD se muestran incluyendo pendiente. Las líneas naranja del plan de vuelo muestran tramos de procedimiento. El waypoint `EV501` tiene condición de sobrevuelo y se muestran varias restricciones de altitud para el procedimiento de aproximación._
 
 ### Sendas de Ascenso y Descenso {#toc-and-tod-paths}
 
@@ -147,7 +147,7 @@ Puede seguir con seguridad la senda de descenso como se muestra en  _Little Navm
 
 La sendas de ascenso y descenso no tienen en cuenta los ajustes de viento. Espere diferencias cuando afronte ascensos o descensos con vientos fuertes de cara o de cola.  
 
-Su senda real de ascenso puede ser más empinada que la que aparece en el perfil de elevación, si sube con fuerte viento de cara, por ejemplo.  
+Su senda real de ascenso puede ser más empinada que la que aparece en el perfíl de elevación, si sube con fuerte viento de cara, por ejemplo.  
 
 El plan cambiará a una representación plana que muestre únicamente una línea de plan de vuelo a la altitud de crucero, si no se puede calcular el TOC y / o el TOD, o si el plan viola las restricciones de altitud. Si este es el caso, se mostrará un mensaje de advertencia en rojo.
 
@@ -157,9 +157,9 @@ _**Imagen Superior:** Un procedimiento de aproximación que requiere que el avi�
 
 ### Datos de Elevación {#elevation-data}
 
-El procesado de la elevación se hace en segundo plano debido a que los datos han de ser descargados y el cálculo es intensivo para la CPU. Por tanto, la actualización del perfil puede tardar entre unos pocos segundos y medio minuto. Esta actualización en segundo plano se inicia tras crear o cambiar un plan de vuelo, o cuando se descargan nuevos datos de elevación. El perfil se actualizará , por tanto , cada vez que estén disponibles nuevos datos. 
+El procesado de la elevación se hace en segundo plano debido a que los datos han de ser descargados y el cálculo es intensivo para la CPU. Por tanto, la actualización del perfíl puede tardar entre unos pocos segundos y medio minuto. Esta actualización en segundo plano se inicia tras crear o cambiar un plan de vuelo, o cuando se descargan nuevos datos de elevación. El perfíl se actualizará , por tanto , cada vez que estén disponibles nuevos datos. 
 
-Cierre la ventana `Perfil de Elevación del Plan de Vuelo` si sospecha que es  causa de problemas de rendimiento en el ordenador. Todas las actualizaciones se detendrán al cerrar la ventana. 
+Cierre la ventana `Perfíl de Elevación del Plan de Vuelo` si sospecha que es  causa de problemas de rendimiento en el ordenador. Todas las actualizaciones se detendrán al cerrar la ventana. 
 
 
 #### Datos de Elevación Online {#flight-plan-elevation-profile-online}
@@ -179,6 +179,6 @@ Usar datos de elevación descargables gratuitamente desde [GLOBE - Global Land O
 * Sin errores conocidos 
 * Muestra de la altitud bajo el cursor en la barra de estado. 
 
-Vea el cuadro de dialogo [Caché y Archivos](OPTIONS.md#cache-elevation) en opciones , para instrucciones sobre cómo descargar e instalar los datos de GLOBE. 
+Vea el cuadro de diálogo [Caché y Archivos](OPTIONS.md#cache-elevation) en opciones , para instrucciones sobre cómo descargar e instalar los datos de GLOBE. 
 
 

@@ -6,17 +6,17 @@ Los puntos definidos por el usuario \(o puntos de usuario \) permiten añadir , 
 
 _**Imagen Superior:** Vista general de la función de puntos de usuario que muestra información en la parte izquierda de la ventana, puntos de usuario resaltados en el mapa, puntos de usuario seleccionados en la ventana de búsqueda de la derecha, y el menú desplegable abierto al hacer clic en el icono de puntos de usuario de la ventana principal._
 
-## Búsqueda de puntos definidos por el usuario {#userpoints-search}
+## Búsqueda de Puntos Definidos por el Usuario {#userpoints-search}
 
 La funcionalidad de los filtros de búsqueda y la tabla de resultados , es similar a la de búsqueda de aeropuertos y ayudas a la navegación. Vea [Ventana de Búsqueda](SEARCH.md) para información acerca de los filtros y los botones. 
 
 Los elementos del menú de contexto y los botones permiten añadir, editar y borrar los puntos de usuario.
 
-### Botones Superiores e Items del menú adicional  {#userpoints-top-buttons}
+### Botones Superiores y Elementos del Menú Adicional  {#userpoints-top-buttons}
 
 Vea [Menú contextual de la tabla de búsqueda de resultados](SEARCH.md#search-result-table-view-context-menu) para una descripción de los items habituales en los diálogos de búsqueda.
 
-#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Añadir puntos de usuario {#userpoints-add}
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Añadir Puntos de Usuario {#userpoints-add}
 
 Añade un punto definido por el usuario a los datos de usuario.
 
@@ -45,7 +45,7 @@ Limpia los filtros de búsqueda y vuelve a mostrar todos los resultados en la ta
 
 Deselecciona todas las entradas seleccionadas en la tabla y revierte cualquier círculo resaltado en el mapa.
 
-#### ![Help](../images/icons/help.png "Help") Ayuda{#userpoints-help}
+#### ![Help](../images/icons/help.png "Help") Ayuda  {#userpoints-help}
 
 Muestra una ayuda rápida en una burbuja informativa. Haga clic en abrir el capítulo del manual en su navegador.
 
@@ -73,18 +73,18 @@ Se requieren coordenadas válidas para confirmar el diálogo. Vea [Formatos de C
 
 Los demás campos de texto son opcionales y pueden dejarse en blanco. 
 
-El punto de usuario se borrará en el siguiente arranque si  _Little Navmap_ tiene seleccionado `Punto de usuario temporal. Borrar en siguiente arranque`. 
+El punto de usuario se borrará en el siguiente arranque si  _Little Navmap_ tiene seleccionado `Punto de Usuario Temporal. Borrar en siguiente arranque`. 
 
 El botón `Reiniciar` limpia todos los campos con excepción de las coordenadas y ajusta el tipo del punto de usuario a `Marcador`. 
 
 ![Add Dialog for User-defined Waypoint](../images/userpoint_add.jpg "Add Dialog for User-defined Waypoints")
 
-_**Imagen Superior:** Diálogo añadir rellenado automáticamente por contexto. El usuario ha hecho clic derecho en un aeropuerto y seleccionado _`Añadir Punto de Usuario Aeropuerto Frankfurt-Main(EDDF)`_._
+_**Imagen Superior:** Diálogo añadir, rellenado automáticamente por contexto. El usuario ha hecho clic derecho en un aeropuerto y seleccionado _`Añadir Punto de Usuario Aeropuerto Frankfurt-Main(EDDF)`_._
 
 
-#### Dialogo Editar Puntos de Usuario {#userpoints-dialog-edit}
+#### Diálogo Editar Puntos de Usuario {#userpoints-dialog-edit}
 
-##### Editar un único punto.
+##### Editar un Unico Punto.
 
 El diálogo de edición muestra los mismos campos que el usado para añadir puntos de usuario. 
 
@@ -92,7 +92,7 @@ En la parte de abajo hay metadatos adicionales.
 
 * **Ultimo cambio:**  Fecha y hora de la importación, creación o cambio.
 * **Importado del archivo:**  Archivo y ruta de la importación , CSV, Garmin o X-Plane. Puede filtrar la búsqueda de puntos de usuario por este nombre.
-* **Punto de Usuario Temporal- que será borrado en el siguiente arranque.** Indica que el punto de usuario es temporal.
+* **Punto de Usuario Temporal, que será borrado en el siguiente arranque**: Indica que el punto de usuario es temporal.
 
 El botón `Reiniciar` deshace los cambios manuales y revierte los campos a su estado original.  
 
@@ -143,9 +143,9 @@ Algunos Tipos se usan por defecto cuando se añaden nuevos puntos de usuario. Es
 * ![Mountain](../images/icons/userpoint_Mountain.png "Mountain") **Montaña**
 * ![Obstacle](../images/icons/userpoint_Obstacle.png "Obstacle") **Obstáculo**
 * ![Pin](../images/icons/userpoint_Pin.png "Pin") **Chincheta**
-* ![POI](../images/icons/userpoint_POI.png "POI") **POI- Punto de Interés**
+* ![POI](../images/icons/userpoint_POI.png "POI") **Punto de Interés**
 * ![Seaport](../images/icons/userpoint_Seaport.png "Seaport") **Puerto de Mar**
-* ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Desconocido**: Tipo  `Desconocido`  y todos los tipos que no coincidan con los predeterminados de esta lista.  
+* ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Desconocido**: Tipo  `Desconocido`,  y todos los tipos que no coincidan con los predeterminados de esta lista.  
 * ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Punto Visual de Reporte.
 * ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Fijo**: Usado por defecto cuando se crea un punto por encima de una ayuda a la navegación.
 
@@ -232,7 +232,7 @@ I
 99
 ```
 
-**Recuerde que aunque los puntos de usuario no se muestran en el mapa de X-Plane, pueden usarse y seleccionarse para generar planes de vuelo, junto con los almacenados en el GPS o FMS.**
+**Recuerde que aunque los puntos de usuario no se muestran en el mapa de X-Plane, pueden usarse y seleccionarse para generar planes de vuelo junto con los almacenados en el GPS o FMS.**
 
 #### Importación
 

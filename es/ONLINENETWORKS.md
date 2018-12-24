@@ -10,9 +10,9 @@ El acceso a las redes online pueden establecerse y configurarse en el cuadro de 
 
 ![Overview of Online Network Functions](../images/online_overview.jpg "Overview of Online Network Functions")
 
-_**Imagen superior:** Una descripción general de todas las ventanas, pestañas y botones relacionados con la red online._
+_**Imagen Superior:** Una descripción general de todas las ventanas, pestañas y botones relacionados con la red online._
 
-### Simulator and Online Aircraft Duplicates {#online-networks-duplicates}
+### Simulador y Duplicado de Aeronaves Online {#online-networks-duplicates}
 
 _Little Navmap_ obtiene datos de las redes online usando un intervalo de tres minutos, dependiendo de la configuración y la red.
 
@@ -20,7 +20,7 @@ El programa también obtiene la AI o los aviones multijugador del simulador que 
 
 Por lo tanto, el avión del usuario y otros aviones del cliente pueden aparecer duplicados en el mapa.
 
-_Little Navmap_ intenta eliminar estos duplicados haciendo coincidir el registro del avión \ (simulador \) y el indicativo del cliente \ (red online \). La aeronave puede aparecer duplicada si esta información no está disponible, que es el caso de X-Plane. Consulte la configuración de su herramienta de red online sobre cómo agregar esta información.
+_Little Navmap_ intenta eliminar estos duplicados haciendo coincidir el registro del avión (simulador) y el indicativo del cliente (red online). La aeronave puede aparecer duplicada si esta información no está disponible, que es el caso de X-Plane. Consulte la configuración de su herramienta de red online sobre cómo agregar esta información.
 
 ### Ventana del Mapa {#online-networks-mapdisplay}
 
@@ -40,7 +40,7 @@ Consulte [Aeronaves y Barcos](LEGEND.md#vehicles) en la leyenda para ver todos l
 
 _**Imagen superior:** Clientes / aviones de la red online en la pestaña de búsqueda, mapa, información sobre herramientas y ventana de información._
 
-#### Centros de control {#online-networks-centers}
+#### Centros de Control {#online-networks-centers}
 
 Los centros de control online se muestran como espacios aéreos circulares en _Little Navmap_ y proporcionan la misma funcionalidad que los otros espacios aéreos \ (información sobre herramientas, información y más \). Se pueden habilitar por separado de los otros espacios aéreos mediante el botón ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") o la opción de menú [Mostrar espacios aéreos online](MENUS.md#show-online-airspaces).
 
@@ -48,11 +48,11 @@ Los centros de control online se muestran como espacios aéreos circulares en _L
 
 La información detallada para los centros / espacios aéreos en línea se muestra en la pestaña `Centros Online` en [Panel de información](INFO.md).
 
-Los siguientes tipos están disponibles y pueden habilitarse en los menús desplegables en la barra de herramientas del espacio aéreo o submenú [Espacios aéreos](MENUS.md#airspaces):
+Los siguientes tipos están disponibles y pueden habilitarse en los menús desplegables en la barra de herramientas del espacio aéreo o submenú [Espacios Aéreos](MENUS.md#airspaces):
 
 * **Observador:** El tamaño del círculo se toma del valor `Rango visual` del centro.
 * **Información de vuelo \(Centro\):** Utiliza `Rango Visual`.
-* **Delivery \(Clearance\):** Utiliza `Rango visual`.
+* **Autorización\(Clearance\):** Utiliza `Rango visual`.
 * **Tierra:** Muestra un círculo de 10 nm. de diámetro.
 * **Torre:** Círculo de 20 nm.
 * **Aproximación:** Círculo de 40 nm.
@@ -63,7 +63,7 @@ El tamaño de los círculos puede cambiarse en el archivo de configuración. Con
 
 ![Customize Online Network Centers](../images/online_center.jpg "Online Network Center")
 
-_**Imagen superior:** Centro de red online / ATC en la pestaña de búsqueda, mapa, información sobre herramientas y ventana de información._
+_**Imagen Superior:** Centro de red online / ATC en la pestaña de búsqueda, mapa, información sobre herramientas y ventana de información._
 
 ### Búsqueda Online de cliente en red {#search-client}
 ### Búsqueda Online de Centro en red {#search-center}

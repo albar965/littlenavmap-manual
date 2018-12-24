@@ -4,7 +4,7 @@ Consultar el [Leyenda del Mapa](LEGEND.md) para detalles sobre varios de los sí
 
 ### Movimientos {#moving}
 
-Hacer click y arrastrar para mover el mapa y la rueda del mouse para acercar o alejar. Utilice `Shift+Rueda del ratón` para hacer zoom en pequeños pasos. También puede usar los botones superpuestos en el lado derecho del mapa.
+Hacer click y arrastrar para mover el mapa y la rueda del ratón para acercar o alejar. Utilice `Shift+Rueda del ratón` para hacer zoom en pequeños pasos. También puede usar los botones superpuestos en el lado derecho del mapa.
 
 También puede usar el teclado para moverse por el mapa:
 
@@ -17,7 +17,7 @@ También puede usar el teclado para moverse por el mapa:
 
 No olvide activar la ventana del mapa haciendo clic en ella antes de usar las teclas para el movimiento.
 
-### Clicks del ratón{#mouse-clicks}
+### Clics del ratón{#mouse-clicks}
 
 Un solo clic muestra los detalles de todos los objetos del mapa cercanos a la posición donde se hace click en el panel de `Información`. Las ventanas y pestañas se activarán dependiendo de los objetos pulsados.
 
@@ -27,20 +27,21 @@ Un doble clic se acerca para mostrar de cerca el diagrama del aeropuerto o la ra
 
 La funcionalidad de doble clic y de un solo clic no funciona para los waypoints o aeropuertos si el modo de edición del plan de vuelo está habilitado. El modo de edición se puede desactivar utilizando la barra de herramientas o el `Menú principal` -&gt; `Plan de vuelo` -&gt; `Editar plan de vuelo en el mapa`.
 
-La sensibilidad del click de ratón puede ajustarse en en dialogo `Opciones`en la pestaña del `Mapa`.
+La sensibilidad del click de ratón puede ajustarse en en diálogo `Opciones`en la pestaña del `Mapa`.
 
-### Mouse Click Hotspots {#mouse-click-hotspots}
+### Puntos de Acceso para Clics de Ratón {#mouse-click-hotspots}
 
-Map marks like range rings or measurement lines have hotspots to indicate that a modifier-click can remove them or an action is available in the context menu. The same applies to the flight plan drag and drop editing mode.
+Marcas del mapa, como anillos de distancia o lineas de medida, tienen puntos de acceso para indicar que un cilc y modificador pueden eliminarlas, o que hay una acción disponible en el menú de contexto. Lo mismo es válido para el modo de edición arrastrar y soltar del plan de vuelo.   
 
-The mouse cursor changes into a hand ![Hand Cursor](../images/cursorhand.jpg) to indicate a click spot.
+El cursor del ratón cambia a una mano ![Hand Cursor](../images/cursorhand.jpg) para indicar el punto de clic.
 
-Click spots are:
-* Center of range rings \(small circle\).
-* End of a measurement line \(cross\).
-* Runway threshold point \(small circle\) for airport traffic patterns.
+Los puntos de clic son: 
 
-### Clicks del ratón y modificadores {#mouse-clicks-modifiers}
+* El centro del anillo de distancias \(círculo pequeño \).
+* El final de una linea de medida  \(cruz\).
+* El umbral de una pista \(circulo pequeño\) en patrones de tráfico de aeropuerto. 
+
+### Clics de ratón y modificadores {#mouse-clicks-modifiers}
 
 Puede utilizar el teclado y el ratón para tener un acceso rápido a las siguientes funciones:
 
@@ -51,7 +52,7 @@ Puede utilizar el teclado y el ratón para tener un acceso rápido a las siguien
 * `Ctrl+Alt+Click`: Inserta un aeropuerto, radioayuda, punto de usuario o posición dentro del tramo más próximo del plan de vuelo.
 * `Shift+Alt+Click`: Adjunta un aeropuerto, radioayuda, punto de usuario o posición al plan de vuelo.
 
-Al hacer click de nuevo sobre un item elimina las marcas, líneas de medición o waypoints del plan de vuelo.
+Al hacer clic de nuevo sobre un elemento elimina las marcas, líneas de medición o waypoints del plan de vuelo.
 
 ### Aeronave {#aircraft}
 
@@ -76,15 +77,15 @@ La sensibilidad de la visualización de los menús emergentes puede ajustarse en
 
 ![Tooltip](../images/tooltip.jpg "Tooltip") ![Tooltip Airspace](../images/tooltipairspace.jpg "Tooltip Airspace")
 
-_**Imagen superior:** Menú emergente con información del aeropuerto y VOR y un menú emergente con información sobre espacios aéreos._
+_**Imagen Superior:** Menú emergente con información del aeropuerto y VOR y un menú emergente con información sobre espacios aéreos._
 
 ### Resaltar {#highlights}
 
-Los aeropuertos, radioayudas y otras características que se seleccionan en el plan de vuelo o en la tabla de resultados de la búsqueda son resaltados en el mapa con un anillo verde/negro o amarillo/negro respectivamente.
+Los aeropuertos, radioayudas y otras características que se seleccionan en el plan de vuelo o en la tabla de resultados de búsqueda son resaltados en el mapa con un anillo verde/negro o amarillo/negro respectivamente.
 
 Los waypoints que se seleccionan en la previsualización de procedimientos se resaltan con un anillo azul/negro.
 
-Estos anillos para resaltar proveen toda la funcionalidad de los objetos visibles en el mapa, incluso si los objetos no se muestran en la distancia actual de zoom \(anillo vacío\). Esto permite hacer doble click para acercar, un solo click para mostrar el panel de información y todas las entradas del menú contextual.
+Estos anillos resaltados proveen toda la funcionalidad de los objetos visibles en el mapa, incluso si los objetos no se muestran en la distancia actual de zoom \(anillo vacío\). Esto permite hacer doble clic para acercar, un solo clic para mostrar el panel de información y todas las entradas del menú contextual.
 
 Puede ver el botón `Borrar selección` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") arriba del plan de vuelo y la ventana de búsqueda para eliminar cualquier objeto resaltado en el mapa.
 
@@ -96,15 +97,15 @@ El diagrama del aeropuerto proporciona más información a través de menús eme
 
 **Los espacios aéreos se ocultan si se muestra el diagrama del aeropuerto.**
 
-Consulte [Leyenda del mapa de navegación](LEGEND.md#airport-diagram) para más detalles sobre el diagrama del aeropuerto.
+Consulte [Leyenda del Mapa de Navegación](LEGEND.md#airport-diagram) para más detalles sobre el diagrama del aeropuerto.
 
 ![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")
 
-_**Imagen superior:** Vista en altura del diagrama del aeropuerto EDDH._
+_**Imagen Superior:** Vista en altura del diagrama del aeropuerto EDDH._
 
 ![Airport Diagram](../images/airportdiagram2.jpg "Airport Diagram")
 
-_**Imagen superior:** Vista detallada del diagrama del aeropuerto. Muestra puertas de embarque en azul a la derecha y algunos estacionamientos para aviación general en verde a la izquierda. Se ve el largo umbral desplazado de la pista 33. Las líneas amarillas discontinuas indican trayectos de taxi._
+_**Imagen Superior:** Vista detallada del diagrama del aeropuerto. Muestra puertas de embarque en azul a la derecha y algunos estacionamientos para aviación general en verde a la izquierda. Se ve el largo umbral desplazado de la pista 33. Las líneas amarillas discontinuas indican trayectos de taxi._
 
 ### Menú Contextual del Mapa {#map-context-menu}
 
@@ -118,9 +119,9 @@ Haga un click dentro del mapa con el botón izquierdo si desea ver la informaci�
 
 Consulte [Panel de información](INFO.md#information-dock-window) para más detalles.
 
-#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Muestra Procedimientos {#show-procedures}
+#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Mostrar Procedimientos {#show-procedures}
 
-Abra la pestaña de búsqueda de procedimientos del panel de búsqueda y visualiza todos los procedimientos del aeropuerto.
+Abre la pestaña de búsqueda de procedimientos del panel de búsqueda y visualiza todos los procedimientos del aeropuerto.
 
 Consulte [Búsqueda de procedimiento](SEARCHPROCS.md) para obtener más información.
 
@@ -154,51 +155,51 @@ Se utilizará la declinación magnética de un aeropuerto o radioayuda si la med
 
 Consulte [Declinación Magnética](INTRO.md#magnetic-declination) para ver comentarios sobre este tema.
 
-#### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Eliminar la medición de distancia {#remove-distance-measurement}
+#### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Eliminar la Medición de Distancia {#remove-distance-measurement}
 
 Elimina la línea seleccionada. Este elemento de menú está activo si hace clic derecho en el punto final de una línea de medición de distancia \ (cruz pequeña\).
 
-#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Mostrar Patrones de tráfico del Aeropuerto {#show-traffic-pattern}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Mostrar Patrones de Tráfico del Aeropuerto {#show-traffic-pattern}
 
 Este elemento del menú está habilitado si se hace clic en un aeropuerto. Muestra un cuadro de diálogo que permite personalizar y mostrar un patrón de tráfico del aeropuerto en el mapa.
 
-Consulte [Traffic Pattern](TRAFFICPATTERN.md).
+Consulte [Patrones de Tráfico](TRAFFICPATTERN.md).
 
-#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Eliminar Patrones de Tráfico del aeropuerto {#remove-traffic-pattern}
+#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Eliminar Patrones de Tráfico del Aeropuerto {#remove-traffic-pattern}
 
 Se activa si se hace clic en el punto de acceso del patrón de tráfico del aeropuerto \ (círculo en el umbral de la pista \) que se indica con un cursor de mano.
 
-Consulte [Traffic Pattern](TRAFFICPATTERN.md).
+Consulte [Patrones de Tráfico](TRAFFICPATTERN.md).
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Mostrar anillos de rango {#show-range-rings}
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Mostrar Anillos de Rango {#show-range-rings}
 
-Muestra múltiples anillos rojos de rango alrededor de la posición donde se ha hecho click con el ratón. El número y la distancia de los anillos pueden modificarse en el dialogo `Opciones` dentro de la pestaña `Visualización del mapa`. Una etiqueta indica el radio de cada anillo en millas náuticas. 
+Muestra múltiples anillos rojos de rango alrededor de la posición donde se ha hecho clic con el ratón. El número y la distancia de los anillos pueden modificarse en el dialogo `Opciones` dentro de la pestaña `Visualización del mapa`. Una etiqueta indica el radio de cada anillo en millas náuticas. 
 
 El grosor de todos los anillos de rango se puede cambiar en el cuadro de diálogo `Opciones` en la pestaña `Visualización del mapa`.
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Mostrar rango de Radioayuda {#show-navaid-range}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Mostrar Rango de Radioayuda {#show-navaid-range}
 
 Muestra un anillo alrededor de la radioayuda seleccionada \(VOR o NDB\) indicando el rango de la radioayuda. Una etiqueta muestra el identificador y la frecuencia, el color del anillo indica el tipo.
 
-#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Quitar el anillo del rango {#remove-range-ring}
+#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Quitar Anillo de rango {#remove-range-ring}
 
-Elimina los anillos seleccionados e el mapa. Esta opción del menú está activa si se hace click con el botón derecho del ratón en el punto central del anillo de rango \(círculo pequeño\).
+Elimina los anillos seleccionados en el mapa. Esta opción del menú está activa si se hace clic con el botón derecho del ratón en el punto central del anillo de rango \(círculo pequeño\).
 
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Quitar todos los anillos de rango y medidas de distancia {#remove-all-range-rings-and-distance-measurements}
+#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Quitar todos los Anillos de Rango y Medidas de Distancia {#remove-all-range-rings-and-distance-measurements}
 
 Elimina del mapa todos los anillo de rango y las líneas de medidas de distancia.
 
-#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Establecer como salida del plan de vuelo {#set-as-flight-plan-departure}
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Establecer como Salida del Plan de Vuelo {#set-as-flight-plan-departure}
 
 Se activa si se hace click en un aeropuerto, en una posición de estacionamiento del o en una estación de combustible. Reemplazará o bien la salida actual del plan de vuelo o agregará una nueva salida si el plan de vuelo está vacío.
 
 Se utilizará la pista por defecto como posición de partida si el objeto seleccionado es un aeropuerto. El aeropuerto y la posición de estacionamiento reemplazarán tanto la posición actual de salida como la de inicio si se hace clic en una posición de estacionamiento dentro de un diagrama de aeropuerto.
  
-#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Establecer como destino del Plan de Vuelo {#set-as-flight-plan-destination}
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Establecer como Destino del Plan de Vuelo {#set-as-flight-plan-destination}
 
 Esta opción de menú está disponible si se selecciona un aeropuerto. Esto Reemplazará o bien el destino del plan de vuelo o añadirá el aeropuerto si el plan de vuelo está vacío.
 
-#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Agregar posición al Plan de Vuelo {#add-position-to-flight-plan}
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Añadir Posición al Plan de Vuelo {#add-position-to-flight-plan}
 
 Inserta el objeto seleccionado dentro del tramo más próximo al plan de vuelo. El objeto se agregará antes de la salida o después del destino si la posición seleccionada está cerca de los puntos finales del plan de vuelo.
 
@@ -208,15 +209,15 @@ Se agregará un punto de usuario al plan de vuelo si no hay cerca de la posició
 
 Un punto de usuario se convierte como una posición de plan de vuelo definido por el usuario si se agrega al plan.
 
-#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Anexar posición al Plan de Vuelo {#append-position-to-flight-plan}
+#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Agregar Posición al Plan de Vuelo {#append-position-to-flight-plan}
 
-Lo mismo que `Agregar Posición al Plan de Vuelo` pero se añadirá siempre el objeto seleccionado o posición después del destino o el último waypoint del plan de vuelo.
+Lo mismo que `Agregar Posición al Plan de Vuelo` pero se añadirá siempre el objeto seleccionado o posición, después del destino o el último waypoint del plan de vuelo.
 
-#### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Borrar del Plan de vuelo {#delete-from-flight-plan}
+#### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Borrar del Plan de Vuelo {#delete-from-flight-plan}
 
 Borra el aeropuerto seleccionado, radioayuda o posición de usuario del plan de vuelo.
 
-#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Editar Posición del Plan de vuelo {#edit-name-of-user-waypoint}
+#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Editar Posición del Plan de Vuelo {#edit-name-of-user-waypoint}
 
 Modifica el nombre o posición del waypoint definido por el usuario. Consultar [Editar Posición del Plan de Vuelo](EDITFPPOSITION.html).
 
@@ -226,15 +227,15 @@ Puede editar las coordenadas directamente en vez de arrastrar la posición del p
 
 Consultar [Formato de Coordenadas](COORDINATES.md) para ver la lista de formatos reconocidos en el diálogo de edición.
 
-#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Agregar punto de usuario {#add-userpoint}
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Agregar Punto de Usuario {#add-userpoint}
 
 Agrega un waypoint definido por el usuario a los datos del usuario. Algunos campos del diálogo de puntos de usuario se rellenan automáticamente dependiendo del objeto seleccionado en el mapa.
 
 Las coordenadas se rellenan siempre. Si el objeto seleccionado es un aeropuerto o radioayuda, se crea un punto de usuario de tipo `Aeropuerto` o `Waypoint`respectivamente y se rellenan los campos Identificador, Region, Nombre y Elevación o altitud.
 
-Si la posición seleccionada es un espacio vacío en el mapa, se creará un punto de usuario en esta posición del tipo `Bookmark`. Se rellenará la altitud si los datos de elevación GLOBE offline están instalados. Consultar [Perfil de elevación del plan de vuelo](OPTIONS.md#cache-elevation).
+Si la posición seleccionada es un espacio vacío en el mapa, se creará un punto de usuario en esta posición del tipo `Bookmark`. Se rellenará la altitud si los datos de elevación GLOBE offline están instalados. Consultar [Perfíl de Elevación del Plan de Vuelo](OPTIONS.md#cache-elevation).
 
-Consultar [Agregar puntos de usuario](USERPOINT.md#userpoints-dialog-add) para obtener más información.
+Consultar [Agregar Puntos de Usuario](USERPOINT.md#userpoints-dialog-add) para obtener más información.
 
 #### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Editar Punto de Usuario {#edit-userpoint}
 
@@ -246,7 +247,7 @@ Mueve el punto de usuario a una nueva posición del mapa. Solo está disponible 
 
 Haga click izquierdo para colocar el punto de usuario en una nueva posición. Haga click derecho o pulse la tecla escape para cancelar la operación y devolver el punto a su posición anterior.
 
-#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Borra Punto de Usuario {#delete-userpoint}
+#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Borrar Punto de Usuario {#delete-userpoint}
 
 Elimina el waypoint definido por el usuario de los datos de usuario después de la confirmación. Solo está disponible si el objeto seleccionado es un punto de usuario.
 

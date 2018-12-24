@@ -35,7 +35,7 @@ Los fijos de un procedimiento no se guardan en el plan de vuelo porque el format
 Puede habilitar guardar los fijos pulsando en los items del menú , [Guardar fijos de aproximación](MENUS.md#export-flight-plan-approach-waypoints) y/o [Guardar fijos de SID y STAR](MENUS.md#export-flight-plan-sid-star-waypoints).
 
 
-### Insertar un procedimiento en un plan de vuelo {#procedures-insert}
+### Insertar un Procedimiento en un Plan de Vuelo {#procedures-insert}
 
 Haga clic con el botón derecho del ratón sobre un aeropuerto en el mapa , la tabla de búsqueda de aeropuerto , o la tabla de plan de vuelo y seleccione `Mostrar procedimientos` (o `Mostrar procedimientos de salida` , `Mostrar procedimientos de llegada`) en el menú de contexto. Esto mostrará la pestaña `Procedimientos` en la ventana de `Búsqueda`.
 
@@ -43,7 +43,7 @@ Inserte un procedimiento en el plan de vuelo usando simplemente el menú de cont
 
 Vea [Búsqueda de procedimientos](SEARCHPROCS.md) para más información.
 
-### Borrar un procedimiento del plan de vuelo {#procedures-delete}
+### Borrar un Procedimiento del Plan de Vuelo {#procedures-delete}
 
 Borrando un tramo de un procedimiento borrará el procedimiento completo y su transición. Borrando un tramo de una transición , borrará unicamente esa transición.
 
@@ -51,7 +51,7 @@ Borrando un tramo de un procedimiento borrará el procedimiento completo y su tr
 
 _**Imagen Superior:**  Supresión de la transición _`MUN`_  en la aproximación  _`RNAV BEGEN`_  del plan de vuelo._
 
-### Limitaciones al editar un plan de vuelo con procedimientos {#procedures-limitations}
+### Limitaciones al Editar un Plan de Vuelo con Procedimientos {#procedures-limitations}
 
 * Suprimiendo un tramo de un procedimiento suprimirá el procedimiento completo del plan de vuelo.
 * No se puede mover un tramo del procedimiento arriba o abajo dentro del plan de vuelo, ni desplazarlo , ni añadir ningun tramo dentro del procedimiento.
@@ -61,7 +61,7 @@ _**Imagen Superior:**  Supresión de la transición _`MUN`_  en la aproximación
 * Si se borra o cambia el aeropuerto de salida , los procedimientos SID se borraran también.
 * Si se borra o cambia el aeropuerto de destino , las aproximaciones y procedimientos de llegada se borraran igualmente.
 
-### Procedimientos de vuelo {#procedures-flying}
+### Procedimientos de Vuelo {#procedures-flying}
 
 Los tramos de un procedimiento estan pre-calculados , con la excepción de las esperas y los giros. Esto significa que se pueden volar habitualmente como aparecen en los mapas. En caso de duda sobre cómo volar un tramo , \(por ejemplo , si hay muchas lineas superpuestas \) mire la tabla de procedimientos en la ventana del plan de vuelo.
 
@@ -102,7 +102,7 @@ Vuele los giros de procedimiento como es habitual: Mínimo un minuto desde el fi
 
 ![Procedure Turn](../images/procedureturn.jpg "Procedure Turn")
 
-_**Imagen superior:** Un giro de procedimiento. Vuele al menos un minuto a 061º desde _`ABERN`_ , gire a izquierda a 016º , vuele un minuto , gire 180º y vuele a  _`LAMMB`_ , entonces a 242º hacia  _`ABERN`
+_**Imagen Superior:** Un giro de procedimiento. Vuele al menos un minuto a 061º desde _`ABERN`_ , gire a izquierda a 016º , vuele un minuto , gire 180º y vuele a  _`LAMMB`_ , entonces a 242º hacia  _`ABERN`
 
 #### Distancias {#procedures-distances}
 
@@ -110,7 +110,7 @@ Todos los tramos de procedimiento , a excepción de las esperas y giros , estan 
 
 **El cálculo del TOD no tiene en cuenta las restricciones de altitud en los procedimientos.**
 
-### Tipos especiales de tramos {#procedures-leg-types}
+### Tipos Especiales de Tramos {#procedures-leg-types}
 
 Todos los tipos de tramos de procedimiento \(`Rumbo al Fijo`, `Fijo Inicial` y otros\) que se muestran en *Little Navmap* , estan basados en el concepto de senda final de ARINC 424. El conocimiento profundo de estos tipos de tramos no es importante para la simulación , a excepción de dos que se han añadido a *Little Navmap*.
 
@@ -119,7 +119,7 @@ Todos los tipos de tramos de procedimiento \(`Rumbo al Fijo`, `Fijo Inicial` y o
 * `Proceder a la pista` en una aproximación: Este tramo se añade a un procedimiento de aproximación para mostrar el curso desde el punto de aproximación perdida \(MAP\) hasta el final de la pista. Se añade, si una aproximación no termina con un fijo en la pista, y tiene una restricción de altitud de 50 pies sobre el umbral.
 
 
-### Tipos de fijos en un Procedimiento {#procedures-fix-types}
+### Tipos de Fijos en un Procedimiento {#procedures-fix-types}
 
 * **Waypoints:** Puntos terminales o radioayudas. Algunos están marcados como `flyover` en la tabla de la aproximción.
 * **Radiales y distancias:** Ejemplo: `WIK/7nm/291°M`. Fijo definido por un rumbo y una distancia a una radioayuda.

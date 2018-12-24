@@ -39,8 +39,8 @@ Todos los procedimientos de salida o llegada se eliminan si el aeropuerto de sal
 
 ![Flight Plan Edit](../images/fpedit.jpg "Flight Plan Edit")
 
-_**Imagen superior:** Insertar una radioayuda en un tramo del plan de vuelo haciendo click y moviendo la linea de u tramo. Se muestra una información sobre la herramienta sobre la ayuda a la navegación._
+_**Imagen Superior:** Insertar una radioayuda en un tramo del plan de vuelo haciendo click y moviendo la linea de u tramo. Se muestra una información sobre la herramienta sobre la ayuda a la navegación._
 
 ![Flight Plan Edit](../images/fpedit2.jpg "Flight Plan Edit")
 
-_**Imagen superior:** Reemplazando el VOR TRA en el plan de vuelo por otro simplemente haciendo click y moviendo el fijo TRA a KLO. Un menú de selección aparece para deshacer la ambigüedad._
+_**Imagen Superior:** Reemplazando el VOR TRA en el plan de vuelo por otro simplemente haciendo click y moviendo el fijo TRA a KLO. Un menú de selección aparece para deshacer la ambigüedad._

@@ -26,4 +26,4 @@ El espesor de las lineas puede cambiarse en el dialogo `Opciones`  de la pestañ
 | | |
 | --- | --- |
 | ![Compass Rose](../images/compass_rose.jpg "Compass Rose") | ![Compass Rose Aircraft](../images/compass_rose_aircraft.jpg "Compass Rose with Aircraft") |
-| _**Imagen superior:** Rosa de los vientos sin simulador conectado._ | _**Figura superior:** Rosa de los vientos centrada en la aeronave._ |
+| _**Imagen superior:** Rosa de los vientos sin simulador conectado._ | _**Imagen superior:** Rosa de los vientos centrada en la aeronave._ |

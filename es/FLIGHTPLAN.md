@@ -10,7 +10,7 @@ El nombre AIRINC del procedimiento de aproximación que es necesario en algunos 
 
 ![Flight Plan Header](../images/flightplanheader.jpg "Flight Plan Header")
 
-_**Imagen superior:** Encabezamiento del plan de vuelo. _`VORDME LITSY`_ tiene _`D34`_ como nombre ARINC._
+_**Imagen Superior:** Encabezamiento del plan de vuelo. _`VORDME LITSY`_ tiene _`D34`_ como nombre ARINC._
 
 Además , hay tres campos de entrada en la parte superior de esta ventana:
 
@@ -33,7 +33,7 @@ Las aerovías también se muestran en rojo si la altitud de crucero seleccionada
 
 ![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
 
-_**Imagen superior:** El fijo _`ALTAG`_  y partes de la aerovía _`V324`_ no se encuentran en la base de datos._
+_**Imagen Superior:** El fijo _`ALTAG`_  y partes de la aerovía _`V324`_ no se encuentran en la base de datos._
 
 #### Columnas de la Tabla {#flight-plan-table-columns}
 
@@ -64,14 +64,14 @@ El identificador puede tener un sufijo tal como se muestra a continuación.
 * `Directo °M:`** Recorrido constante de la linea de rumbo que conecta dos puntos del tramo. Dependiendo del trazado y la distancia puede diferir de la linea de gran círculo. Use este curso si viaja por aerovías , o hacia estaciones VOR o NDB. Opuesto al curso mostrado por la unidad GPS del simulador de vuelo, tendrá la radial precisa cuando se aproxime a un VOR o NDB del plan de vuelo.
 * `Distancia`: Distancia del tramo del plan de vuelo.
 * `Restante`: Distancia restante al aeropuerto de destino, o al punto final del procedimiento \(normalmente la pista\).
-* `Tiempo del tramo`: Tiempo de vuelo para este tramo. Cálculo basado en el perfil de performance del avión \(Ver [Performance del avión](AIRCRAFTPERF.md)\). Este es un valor fijo y no se actualiza durante el vuelo. No aparece si falló el cálculo de la performance.
+* `Tiempo del tramo`: Tiempo de vuelo para este tramo. Cálculo basado en el perfil de performance del avión \(Ver [Prestaciones del Avión](AIRCRAFTPERF.md)\). Este es un valor fijo y no se actualiza durante el vuelo. No aparece si falló el cálculo de la performance.
 * `ETA`: Tiempo estimado de llegada. Es un valor estático y no se actualiza durante el vuelo. Cálculo basado según el perfil de performance del avión. No aparece si falló el cálculo de la performance.
 * `Fuel Rem.`: Combustible restante en el waypoint, por volumen y por peso. Es un valor estático y no se actualiza durante el vuelo. Cálculo basado según el perfil de performance del avión. No aparece si en el perfil de performance del avión no se configuró el consumo de combustible.
 * `Observaciones`: Instrucciones de giro , sobrevuelos ó ayudas relacionadas para los tramos de procedimiento.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-_**Imagen superior:** Ventana del _`Plan de Vuelo`_. El plan de vuelo tiene una SID para la salida , y una STAR una transición y una aproximación para la llegada._
+_**Imagen Superior:** Ventana del _`Plan de Vuelo`_. El plan de vuelo tiene una SID para la salida , y una STAR una transición y una aproximación para la llegada._
 
 ### Clics del Ratón {#mouse-clicks}
 
@@ -91,15 +91,15 @@ Igual que el [Menu Contextual del Mapa](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Mostrar en el Mapa {#show-on-map}
 
-Muestra el diagrama del aeropuerto , o hace zoom sobre una ayuda en el mapa. La distancia del zoom puede cambiarse en el dialogo `Opciones` de la pestaña `Mapa`.
+Muestra el diagrama del aeropuerto , o hace zoom sobre una ayuda en el mapa. La distancia del zoom puede cambiarse en el diálogo `Opciones` de la pestaña `Mapa`.
 
-#### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Activar tramo del plan de vuelo {#activate}
+#### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Activar Tramo del Plan de Vuelo {#activate}
 
 Convierte el tramo seleccionado en el tramo del plan de vuelo activo \(magenta\). El tramo activo podría cambiar si _Little Navmap_ está conectado al simulador y el avión del usuario se está moviendo.
 
-#### Follow Selection {#follow-selection}
+#### Seguir Selección {#follow-selection}
 
-The map view will be centered - not zoomed in - on the selected airport or navaid when this function is enabled.
+La vista del mapa se centrará, sin ampliacion, en el aeropuerto o radioayuda seleccionada, cuando esta función esté activa. 
 
 #### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Mover Tramo Seleccionado Arriba / Abajo {#move-selected-legs-up-down}
 
@@ -107,7 +107,7 @@ Mueve el tramo seleccionado del plan de vuelo arriba o abajo en la lista. Tambi�
 
 Los nombres de aerovías se borran al mover o borrar fijos del plan de vuelo, si los nuevos tramos usan conexiones directas y no siguen ninguna aerovía.
 
-Los procedimientos o tramos de procedimiento no se pueden mover , y los fijos tampoco   se pueden mover dentro de un procedimiento.
+Los procedimientos o tramos de procedimiento no se pueden mover , y los fijos tampoco se pueden mover dentro de un procedimiento.
 
 #### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Borrar Tramos o Procedimientos Seleccionados {#delete-selected-legs}
 
@@ -115,15 +115,15 @@ Borra todos los tramos seleccionados del plan de vuelo. Use `Deshacer` si borra 
 
 Si el tramo seleccionado es parte de un procedimiento , se borrará el procedimiento completo. Borrar un procedimiento borra también su transición.
 
-#### ![Edit Position](../images/icons/routestring.png "Edit Position") Editar la Posición {#edit-name-of-user-waypoint}
+#### ![Edit Position](../images/icons/routestring.png "Edit Position") Editar Posición {#edit-name-of-user-waypoint}
 
 Permite cambiar el nombre o coordenadas de un punto definido por el usuario. La longitud del nombre está limitado a 10 caracteres cuando se guarda. Consultar [Editar Posición en el Plan de Vuelo](EDITFPPOSITION.md).
 
-#### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insertar plan de vuelo antes {#insert-flight-plan}
+#### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insertar Plan de Vuelo Antes {#insert-flight-plan}
 
 Inserta un plan de vuelo antes del tramo seleccionado en el plan de vuelo activo.
 
-Utilizar `Insertar Plan de Vuelo antes` o `Adjuntar Plan de Vuelo` permite cargar o combinar planes de vuelo completos o fragmentos de los mismos en un nuevo plan de vuelo. 
+Utilizar `Insertar Plan de Vuelo antes` o `Adjuntar Plan de Vuelo` , permite cargar o combinar planes de vuelo completos o fragmentos de los mismos en un nuevo plan de vuelo. 
 
 Los procedimientos se insertan desde el plan de vuelo cargado y se eliminan del actual dependiendo de la posición de inserción.
 
@@ -141,11 +141,11 @@ Todos los procedimientos de llegada seleccionados actualmente se eliminarán al 
 
 Los tramos adjuntas se seleccionan después de cargar el plan de vuelo.
 
-#### Calcular para el Tramo Seleccionado {#calculate-for-selected-legs}
+#### Calcular para Tramos Seleccionados {#calculate-for-selected-legs}
 
 Este es un submenú que tiene entradas para diversos métodos de cálculo:
 
-![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calcular Radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calcular Alta Altitud](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculate Baja Altitud](MENUS.md#calculate-low-altitude) y ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calcular basado en Altitud dada](MENUS.md#calculate-based-on-given-altitude).
+![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calcular Radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calcular Alta Altitud](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculate Baja Altitud](MENUS.md#calculate-low-altitude) y ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calcular Basado en Altitud dada](MENUS.md#calculate-based-on-given-altitude).
 
 
 Calcula un fragmento del plan de vuelo entre el primer y último fijo seleccionado. Los tramos intermedios se borran y remplazan por el fragmento calculado.
@@ -166,13 +166,13 @@ Aunque no es enteramente realista , es un método alternativo razonable hasta qu
 
 Lo mismo que en el [Menú Contextual del Mapa](MAPDISPLAY.md#map-context-menu).
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Mostrar Rango de la Ayuda {#show-navaid-range-1}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Mostrar Rango de Radioayuda {#show-navaid-range-1}
 
 Muestra los anillos de distancia para todas las radioayudas seleccionadas en el plan de vuelo. Simplemente seleccione todos los tramos del plan de vuelo, y use esta función para mostrar los círculos de rango de cada radioayuda del plan de vuelo.
 
 Por otra parte , igual que en el [Menu Contextual del Mapa](MAPDISPLAY.md#map-context-menu).
 
-#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Visualiza el patrón de Tráfico del aeropuerto{#show-traffic-pattern}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Visualizar Patrón de Tráfico del Aeropuerto{#show-traffic-pattern}
 
 Este menú se activa al hacer click en el aeropuerto. Muestra un diálogo que permite mostrar y configurar el patrón de tráfico del aeropuerto en el mapa.
 
@@ -182,7 +182,7 @@ Consultar [Patrón de Tráfico](TRAFFICPATTERN.md).
 
 Copia las entradas seleccionadas en formato CSV al portapapeles. El CSV incluirá un encabezamiento y tendrá en cuenta los cambios en la tabla , como el orden de las columnas.
 
-#### Seleccionar todo {#select-all-0}
+#### Seleccionar Todo {#select-all-0}
 
 Selecciona todos los tramos del plan de vuelo.
 

@@ -5,7 +5,7 @@ _Little Navmap_ soporta varios tipos de formatos de plan de vuelo, los cuales ti
 El programa utiliza diferentes cuadros de diálogo `Guardar como ...` en vez de uno solo. Esto significa que el directorio para cada formato de archivo se conserva por separado, This means the directory for each file format is retained separately, eliminando la necesidad de navegar hacia adelante y hacia atrás entre el directorio del plan de vuelo FSX, el directorio del plan de vuelo P3D y el directorio de salida X-Plane FMS.
 Observe la diferencia entre `Grabar Plan de Vuelo como ...` y `Exportar Plan de Vuelo como ...`: `Exportar` no modifica el nombre del archivo actual mientras que `Grabar como ...` si lo hace.
 
-### Tabla de características {#flight-plan-formats-feature}
+### Tabla de Características {#flight-plan-formats-feature}
 
 La siguiente tabla muestra las posibilidades de _Little Navmap_ y los formatos de Plan de Vuelo soportados \(X = soportado, 0 = no soportado\):
 
@@ -35,7 +35,7 @@ La siguiente tabla muestra las posibilidades de _Little Navmap_ y los formatos d
 
 Los fijos de procedimientos están excluidos por defecto para todos los formatos de archivo, excepto para GPX. Tiene que utilizar el GPS o el FMS del simulador para seleccionar procedimientos.
 
-Puede activar el guardado de los fijos seleccionando la opción de menú [Grabar waypoints para aproximaciones](MENUS.md#export-flight-plan-approach-waypoints) y/ó [Grabar Waypoints para SID y STAR](MENUS.md#export-flight-plan-sid-star-waypoints).
+Puede activar el guardado de los fijos seleccionando la opción de menú [Grabar Waypoints para Aproximaciones](MENUS.md#export-flight-plan-approach-waypoints) y/o [Grabar Waypoints para SID y STAR](MENUS.md#export-flight-plan-sid-star-waypoints).
 
 Se muestra un cuadro de diálogo si se detectan características no compatibles en el plan de vuelo actual al intentar guardar un plan. Puede deshabilitar este diálogo para futuras grabaciones si sabe lo que está haciendo.
 
@@ -49,7 +49,7 @@ Un ejemplo muestra cómo el programa trata los formatos limitados:
 4. Reiniciar programa - `NOMBRE.fms` se cargará de nuevo y se perderán los procedimientos.
 5. Ahora exportar como GFP - El nombre de fichero permanece como `NOMBRE.fms`.
 
-### Nombres de Waypoints de usuario {#flight-plan-formats-user-waypoints}
+### Nombres de Waypoints de Usuario {#flight-plan-formats-user-waypoints}
 
 Los nombres de waypoint de usuario se adaptarán con las limitaciones del formato cuando se graben. Esto significa que los nombres de waypoint pueden cambiar cuando se vuelva a cargar el plan de vuelo.
 
@@ -67,7 +67,7 @@ El formato FSX PLN se usa por defecto porque este permite más características 
 
 Formato de archivo de Flight Simulator 2004. Utiliza la misma extensión PLN que el formato FSX PLN. _Little Navmap_ solo puede leer este formato. Por lo tanto, se muestra un cuadro de diálogo de advertencia antes de sobrescribir un archivo con el formato FSX PLN más reciente.
 
-### ![Clean PLN](../images/icons/filesaveclean.png "Clean PLN") Clean PLN {#flight-plan-formats-clean-pln}
+### ![Clean PLN](../images/icons/filesaveclean.png "Clean PLN") PLN Limpio {#flight-plan-formats-clean-pln}
 
 Esto es lo mismo que FSX PLN, pero sin anotaciones adicionales que contienen información sobre los procedimientos seleccionados o la velocidad de desplazamiento. Use este formato si una aplicación no puede tratar el formato anotado.
 
@@ -103,7 +103,7 @@ Plan de vuelo como formato de archivo FPL utilizado por _Reality XP GNS 530W/430
 
 Este formato de archivo solo puede ser exportado. La lectura no está permitida.
 
-Ver [Aquí](#garmin-notes) para obtener información sobre problemas conocidos al exportar datos del plan de vuelo para GNS.
+Vea [Aquí](#garmin-notes) para obtener información sobre problemas conocidos al exportar datos del plan de vuelo para GNS.
 
 _Little Navmap_ considera la variable de entorno `GNSAPPDATA` si está configurada. Vea el manual de GNS para obtener más información.
 
@@ -157,9 +157,9 @@ El archivo es un formato de texto simple que contiene solo una línea de texto. 
 
 El archivo PMDG RTE. La ubicación del archivo depende del avión usado, pero generalmente `PMDG\FLIGHTPLANS` en el directorio base del simulador.
 
-### TXT \(JARDesign and Rotate Simulations\) {#flight-plan-formats-txt}
+### TXT \(JARDesign y Rotate Simulations\) {#flight-plan-formats-txt}
 
-Un formato de archivo simple utilizable por JARDesign o Rotate Simulations. La ubicación depende de la aeronave usada que generalmente está en el directorio `aircraft` de X-Plane.
+Un formato de archivo simple utilizable por JARDesign y Rotate Simulations. La ubicación depende de la aeronave usada que generalmente está en el directorio `aircraft` de X-Plane.
 
 El archivo es un formato de texto simple que contiene solo una línea de texto. Ejemplo para el contenido de un archivo `TXT` llamado` CBZ9CYDC.txt`:
 

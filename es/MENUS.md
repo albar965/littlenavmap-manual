@@ -1,11 +1,11 @@
-## Menús y barras de herramientas {#menus-and-toolbars}
+## Menús y Barras de Herramientas {#menus-and-toolbars}
 
 Este capítulo describe todas las opciones de menú de _Little Navmap_. 
 Encontrará la mayor parte de esta funcionalidad en las barras de herramientas, las cuales no están descritas por separado. Las combinaciones de teclas se pueden ver en los elementos del menú y no se enumeran en este manual.
 
 ![Little Navmap Menu and Toolbars](../images/menutoolbar.jpg "Little Navmap Menu and Toolbars")
 
-_**Imagen superior:** Menú y barras de herramientas colocadas en sus posiciones predeterminadas._
+_**Imagen Superior:** Menú y barras de herramientas colocadas en sus posiciones predeterminadas._
 
 ### Menú Archivo {#file-menu}
 
@@ -15,7 +15,7 @@ Borra el plan de vuelo actual.
 
 Tiene que utilizar el diálogo [Menú Contextual de la tabla de resultados de búsqueda](SEARCH.md#search-result-table-view-context-menu), [Menú contextual del Mapa](MAPDISPLAY.md#map-context-menu) o el [Descripción de la Ruta del Plan de Vuelo](ROUTEDESCR.md) para crear un plan de vuelo.
 
-#### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Abrir el Plan de Vuelo {#open-flight-plan}
+#### ![Open Flight Plan](../images/icons/fileopen.png "Open Flight Plan") Abrir  Plan de Vuelo {#open-flight-plan}
 
 Abre el archivo de plan de vuelo PLN de FSX, PLN de FS9, PNL de FSC, FMS de X-Plane o FLP. El tipo de archivo se determina por el contenido, no por su extensión. Consultar [Formatos del Plan de Vuelo](FLIGHTPLANFMT.md) para  más información.
 
@@ -24,7 +24,7 @@ El plan de vuelo abierto se volverá a cargar de nuevo al inicio \(la recarga y 
 La información de procedimientos y velocidad sobre el terreno se añadirá al plan de vuelo si se guarda el archivo como PLN en _Little Navmap_. La información adicional se ignorará en FSX o P3D , pero  _Little Navmap_ permitirá cargar toda la información. También puede **arrastrar y soltar archivos desde un gestor de archivos** como Windows Explorer o el Finder de macOS dentro de la ventana principal de _Little Navmap_ para cargarlos. 
 Se aceptan planes de vuelo simples y todos los formatos permitidos para cargar (`FMS`, `FLP`, `PLN`\), así como archivos de prestaciones de aeronave \(`lnmperf`\). 
 
-#### ![Append flight plan](../images/icons/fileappend.png "Append flight plan") Adjuntar el Plan de Vuelo {#append-flight-plan}
+#### ![Append flight plan](../images/icons/fileappend.png "Append flight plan") Adjuntar Plan de Vuelo {#append-flight-plan}
 
 Agrega salidas, llegadas y todos los waypoints del plan de vuelo actual.
 
@@ -87,11 +87,11 @@ Como cualquier otra función de exportación, esto no cambia el nombre y tipo de
 
 Consultar además [Formatos de Plan de Vuelo](FLIGHTPLANFMT.md).
 
-#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Exportar el Plan de Vuelo como formato X-Plane FMS 3 {#export-flight-plan-as-fms3}
+#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Exportar el Plan de Vuelo como X-Plane FMS 3 {#export-flight-plan-as-fms3}
 
 Guarda el plan de vuelo utilizando el anterior formato de X-Plane FMS 3, que es limitado pero puede ser cargado por X-Plane 10 y X-Plane 11.05. Se muestra un cuadro de diálogo de advertencia si se detectan características no compatibles en el plan de vuelo actual.
 
-Consultar [Flight Plan Formats](FLIGHTPLANFMT.md) para obtener más información sobre las limitaciones.
+Consultar [Formatos de Plan de Vuelo](FLIGHTPLANFMT.md) para más información sobre las limitaciones.
 
 Esta función de exportación no cambia el nombre y tipo de archivo actual. Las copias guardadas seguirán usando el mismo nombre y formato de archivo que antes.
 
@@ -140,7 +140,7 @@ Exporta el plan de vuelo actual como archivo TXT utilizable en los aviones de JA
 
 Ni los procedimientos ni sus respectivos waypoints se incluyen en el archivo exportado.
 
-##### Exportar el Plan de Vuelo com Majestic Dash FPR {#export-flight-plan-as-fpr}
+##### Exportar el Plan de Vuelo como Majestic Dash FPR {#export-flight-plan-as-fpr}
 
 Exporta del plan de vuelo actual para el software Majestic MJC8 Q400. 
 
@@ -173,7 +173,7 @@ Guarde el archivo en `FSXP3D\iFly\737NG\navdata\FLTPLAN`.
 
 Adjunta el plan de vuelo al archivo `companyroutes.xml` para el simulador [ProSim](https://prosim-ar.com). El formato no permite guardar los procedimientos.
 
-Crear un archivo de backup llamado `companyroutes.xml_lnm_backup` antes de modificar el archivo.
+Crea un archivo de respaldo llamado `companyroutes.xml_lnm_backup` antes de modificar el archivo.
 
 ##### Exportar el Plan de Vuelo como PLN para BBS Airbus {#export-flight-plan-as-bbs}
 
@@ -227,13 +227,13 @@ Guardar los planes de vuelo con este método tiene varias limitaciones:
 
 Debido a estas limitaciones, se recomienda guardar una copia del plan de vuelo con información completa antes de habilitar una de estas opciones.
 
-#### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Agregar Google Earth KML {#add-google-earth-kml}
+#### ![Add Google Earth KML](../images/icons/kmlfileopen.png "Add Google Earth KML") Agregar KML de Google Earth  {#add-google-earth-kml}
 
 Permite agregar uno o más archivos KML o KMZ de Google Earth a la visualización del mapa. Todos los archivos KML o KMZ agregados se volverán a cargar al inicio. La recarga y el centrado se pueden desactivar en el cuadro de diálogo `Opciones` en la pestaña `Inicio` e `Interfaz de usuario`.
 
 Debido a la variedad de archivos KML no se puede garantizar que se visualicen correctamente en el mapa todos los archivos.
 
-#### ![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map") Borrar KML de Google Earth de la Carta del Mapa {#clear-google-earth-kml-from-map}
+#### ![Clear Google Earth KML from Map](../images/icons/cancel.png "Clear Google Earth KML from Map") Borrar KML de Google Earth del Mapa {#clear-google-earth-kml-from-map}
 
 Elimina del mapa todos los archivos KML cargados.
 
@@ -283,15 +283,15 @@ Alterna el modo de edición de arrastrar y soltar el plan de vuelo en el mapa. V
 Abre un diálogo con la descripción de ruta del plan de vuelo actual que además permite modificar el actual plan de vuelo o introducir uno nuevo.
 [Plan de Vuelo desde la Descripción de Ruta](ROUTEDESCR.md) da mejor información sobre este asunto.
 
-#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copia la Ruta del Plan de Vuelo al Portapapeles {#flight-plan-route-clipboard}
+#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Copiar la Ruta del Plan de Vuelo al Portapapeles {#flight-plan-route-clipboard}
 
 Copia la descripción de ruta del plan de vuelo actual al portapapeles usando los ajustes del diálogo [Plan de Vuelo desde descripción de ruta](ROUTEDESCR.md#flight-plan-from-route-description) .
 
-#### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Calcular Plan de Vuelo directo {#calculate-direct}
+#### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Calcular Plan de Vuelo Directo {#calculate-direct}
 
 Elimina los waypoints intermedios y conecta salida y destino usando una linea de gran círculo.
 
-Puede calcular un plan de vuelo entre cualquier tipo de waypoint, incluso puntos definidos por el usuario \(click derecho en el mapa y seleccionar `Agregar posición al plan de vuelo` para crear uno\). Esto permite la creación de fragmentos que pueden fusionarse en los planos de vuelo. Por ejemplo, puede usar esta característica para cruzar el Atlántico Norte con distintas salidas y destinos. Esto se aplica a todos los modos de cálculo del plan de vuelo.
+Puede calcular un plan de vuelo entre cualquier tipo de waypoint, incluso puntos definidos por el usuario \(click derecho en el mapa y seleccionar `Agregar posición al plan de vuelo` para crear uno\). Esto permite la creación de fragmentos que pueden fusionarse en los planes de vuelo. Por ejemplo, puede usar esta característica para cruzar el Atlántico Norte con distintas salidas y destinos. Esto se aplica a todos los modos de cálculo del plan de vuelo.
 
 #### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Calcular Radionavegación {#calculate-radionav}
 
@@ -350,7 +350,7 @@ Va al punto central utilizado para la distancia de búsqueda. Consultar [Definir
 
 Aleja el mapa \(si es necesario\) para mostrar el plan de vuelo completo en el mapa.
 
-#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Borra todos los Resaltados y Selecciones  {#remove-highlights}
+#### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Borrar todos los Resaltados y Selecciones  {#remove-highlights}
 
 Deselecciona todas las entradas en la tabla del plan de vuelo, todas las tablas de resultados de búsqueda, y borra todas las marcas resaltadas en el mapa. Use esto para tener una vista limpia del mapa mientras vuela.  
 
@@ -375,7 +375,7 @@ La trayectoria puede ser exportada junto con el plan de vuelo en un archivo `GPX
 
 #### ![Map Position Back](../images/icons/back.png "Map Position Back") ![Map Position Forward](../images/icons/next.png "Map Position Forward") Posición del Mapa Anterior/Posterior {#map-position-back-forward}
 
-Salta hacia adelante o hacia atrás en el histórico de posición del mapa. El histórico completo se guarda y se restaura cuando se inicia _Little Navmap_.
+Salta hacia adelante o hacia atrás en el histórico de posiciones del mapa. El histórico completo se guarda y se restaura cuando se inicia _Little Navmap_.
 
 ### Menú Ver {#view-menu}
 
@@ -548,7 +548,7 @@ La longitud se limita por razones de rendimiento. Si excede de la máxima, la tr
 
 La trayectoria se puede exportar, junto con el plan de vuelo, a un archivo `GPX` usando [Exportar Plan de Vuelo como GPX](MENUS.md#export-flight-plan-as-gpx).
 
-#### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Mostrar la Rosa de los Vientos {#show-compass-rose}
+#### ![Show Compass Rose](../images/icons/compassrose.png "Show Compass Rose") Mostrar  Rosa de los Vientos {#show-compass-rose}
 
 Muestra en el mapa la rosa de los vientos, que indica el norte verdadero y el norte magnético. El rumbo y ruta de la aeronave se indican si está conectado el simulador.
 
@@ -578,7 +578,7 @@ En la distancia de zoom mas baja, todos los aviones y barcos se dibujan a escala
 
 Las etiquetas de las aeronaves se ven obligadas a mostrarse independientemente del nivel de zoom para las siguientes cinco aeronaves AI / multijugador más cercanas al usuario que estén a 20 millas de distancia y 5000 pies de altura.
 
-Todos los iconos de las aeronaves pueden personalizarse: [Iconos de aeronaves AI y Multiplayer](CUSTOMIZE.md#customize-aircraft-icons).
+Todos los iconos de las aeronaves pueden personalizarse: [Iconos de Aeronaves AI y Multiplayer](CUSTOMIZE.md#customize-aircraft-icons).
 
 #### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Mostrar Cuadrícula en el Mapa {#show-map-grid}
 
@@ -670,7 +670,7 @@ Vea [Sombra Solar- Ajuste de Hora definida por Usuario](SUNSHADOW.md#sun-shadow-
 
 La proyección plana proporciona un movimiento más fluido y nítido al usar temas basados en mapas en línea como _OpenStreetMap_ o _OpenTopoMap_.
 
-##### Esférico {#spherical}
+##### Esférica {#spherical}
 
 Muestra la tierra como un globo, que es la proyección más natural. El movimiento puede parpadear ligeramente cuando se utiliza el mosaico de imágenes basado en temas de mapas en línea como _OpenStreetMap_ o _OpenTopoMap_. Use los temas del mapa `Simple`,`Plano` o `Atlas` para evitar esto.
 
@@ -726,13 +726,13 @@ Mosaicos del mapa de [Stamen Design](https://stamen.com), bajo [CC BY 3.0](https
 
 _**Imagen Superior:** Vista mostrando el tema terreno Estambre._
 
-##### CARTO Claro {#carto-light} \(New in version 1.4.4\)
+##### CARTO Claro {#carto-light} \(Nuevo en la Versión 1.4.4\)
 
 Mapa muy brillante llamado *Positrón* que permite concentrarse en las características de aviación en la visualización del mapa. El mapa incluye la misma opción de sombreado de montañas que el _OpenStreetMap_.
 
 Mosaicos del Mapa y estilo por [CARTO](https://carto.com/). Datos de [OpenStreetMap](https://www.openstreetmap.org), bajo [ODbL](https://www.openstreetmap.org/copyright).
 
-##### CARTO Oscuro {#carto-light} \(New in version 1.4.4\)
+##### CARTO Oscuro {#carto-light} \(Nuevo en la Version 1.4.4\)
 
 Un mapa oscuro llamado *Dark Matter*. El mapa incluye la misma opción de sombreado de montañas que _OpenStreetMap_.
 
@@ -770,7 +770,7 @@ El programa puede cambiar un plan de vuelo cargado si cambia entre diferentes ba
 
 Este sub-menú también indica que el ciclo de AIRAC se agrega si se encuentra una base de datos de Navigraph en el directorio de la base de datos.
 
-Consulte el capítulo [Bases de datos de navegación](NAVDATA.md) para obtener más información sobre estas bases de datos y los tres modos de visualización diferentes que se muestran a continuación.
+Consulte el capítulo [Bases de Datos de Navegación](NAVDATA.md) para obtener más información sobre estas bases de datos y los tres modos de visualización diferentes que se muestran a continuación.
 
 ##### Usar Navigraph para Todas las Características {#navigraph-all}
 
@@ -814,7 +814,7 @@ Despliega la ventana del panel `Búsqueda` y la pestaña` Puntos de Usuario` don
 
 Importa un archivo CSV que sea compatible con el formato ampliamente utilizado desde Plan-G y agrega todo el contenido a la base de datos.
 
-Tenga en cuenta que el formato CSV es el único formato que permite escribir y leer todos los campos de datos admitidos.
+Tenga en cuenta que el formato CSV es el único que permite escribir y leer todos los campos de datos admitidos.
 
 Consulte [Formato de Datos CSV](USERPOINT.md#userpoints-csv) para una descripción más detallada.
 
@@ -832,7 +832,7 @@ Consulte [Formato de Datos user_fix.dat de X-Plane](USERPOINT.md#userpoints-xpla
 
 #### Importar GTN de Garmin {#userdata-menu-import-garmin-gtn}
 
-Lee puntos definidos por el usuario desde el archivo `user.wpt` de Garmin. Consulte el manual de la unidad Garmin que está utilizando para obtener más información sobre el formato y la ubicación del archivo.
+Lee puntos definidos por el usuario desde el archivo `user.wpt` de Garmin. Consulte el manual de la unidad Garmin que está utilizando para obtener más información sobre el formato y ubicación del archivo.
 
 Los puntos de usuario importados son del tipo `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") y pueden ser modificados utilizando la funcionalidad de edición en masa.
 
@@ -871,7 +871,7 @@ Los campos de región e identificación son necesarios para esta opción de expo
 
 Consulte la documentación de Prepar3D SDK para obtener información sobre cómo compilar el BGL y cómo agregarlo al simulador.
 
-#### Crear entradas al Libro de Registro Logbook {#userdata-menu-create-logbook}
+#### Crear Entradas al Libro de Registro Logbook {#userdata-menu-create-logbook}
 
 Seleccionando esta opción de menú se activa la característica simple de logbook.
 
@@ -892,15 +892,15 @@ _Little Navmap_ además crea una copia de seguridad completa de la base de datos
 Este menú contiene funcionalidades para perfiles de prestaciones de aeronaves, que permiten hacer planes de consumo de combustible y estimaciones de tiempos de travesía. 
 Vea [Prestaciones Aeronave](AIRCRAFTPERF.md) y [Editar Prestaciones Aeronave](AIRCRAFTPERFEDIT.md) para más información.
 
-#### ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") Nueva Prestación de Aeronave  {#aircraft-menu-new}
+#### ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") Nuevas Prestaciones de Aeronave  {#aircraft-menu-new}
 
 Crea un nuevo perfil de prestaciones con valores por defecto. El perfil de 3 mn por cada 1000 pies de descenso, normas de ascenso y de no consumo de combustible, está predeterminado. Aparecerá un mensaje de advertencia en rojo si el perfil no está completo. 
 
-#### ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance") Carga Prestaciones de Aeronave  {#aircraft-menu-load}
+#### ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance") Cargar Prestaciones de Aeronave  {#aircraft-menu-load}
 
 Carga un perfil de prestaciones `lnmperf`. También puede cargar un perfil arrastrando el archivo desde el explorador de Windows a la ventana principal de _Little Navmap_.
 
-#### ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance") Guardar Prestaciones de Aeronave.  {#aircraft-menu-save}
+#### ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance") Guardar Prestaciones de Aeronave  {#aircraft-menu-save}
 
 Guarda el perfil actual. Abre un archivo de diálogo si no se guardó antes. 
 
@@ -910,17 +910,17 @@ Permite guardar el perfil actual usando un nuevo nombre de archivo.
 
 #### ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") Editar Prestaciones de Aeronave {#aircraft-menu-edit}
 
-Abre el dialogo [Editar Prestaciones de Aeronave](AIRCRAFTPERFEDIT.md) para el perfil actual de prestaciones. 
+Abre el diálogo [Editar Prestaciones de Aeronave](AIRCRAFTPERFEDIT.md) para el perfíl actual de prestaciones. 
 
 #### Archivos Recientes de Prestaciones  {#aircraft-menu-recent}
 
-Muestra todos los archivos de prestaciones cargados recientemente para un acceso rápido. Puede borrar la lista seleccionando el item del sub-menú `Borrar Menú`. 
+Muestra todos los archivos de prestaciones cargados recientemente para un acceso rápido. Puede borrar la lista seleccionando el elemento del sub-menú `Borrar Menú`. 
 
 #### Recopilar Prestaciones del Vuelo  {#aircraft-menu-collect}
 
 Muestra un diálogo de confirmación con una ayuda rápida, e inicia la recopilación automática de prestaciones del avión mientras vuela.  
 
-Vea [Recopilar Prestaciones del Vuelo](AIRCRAFTPERF.md#aircraft-performance-collect).
+Vea  [Recopilar Prestaciones del Vuelo](AIRCRAFTPERF.md#aircraft-performance-collect).
 
 
 ### Menú Herramientas {#tools-menu}
@@ -945,7 +945,7 @@ Muestra u oculta las capas de mapas flotantes, como la vista general en la esqui
 
 #### Estilos {#window-styles}
 
-Permite cambiar el estilo de interfaz gráfica de usuario en vuelo. No se necesita reiniciar. 
+Permite cambiar el estilo de la interfaz gráfica del usuario en vuelo. No se necesita reiniciar. 
 
 Los estilos de interfaz de usuario contienen un modo `Noche` que puede usarse para vuelos en entornos oscuros. También puede atenuar el mapa y el perfil de elevación mostrados en este estilo, en el dialogo `Opciones` en la pestaña `Mostrar Mapa` \(`Atenuación del Mapa en Estilo Noche` en la parte inferior del diálogo\).
 
@@ -963,7 +963,7 @@ Sube todas las ventanas no acopladas \(es decir, flotantes \) sobre la ventana p
 
 #### ![Information](../images/icons/infodock.png "Information") Información {#information}
 
-#### ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Perfil de Elevación del Plan de Vuelo {#flight-plan-elevation-profile}
+#### ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Perfíl de Elevación del Plan de Vuelo {#flight-plan-elevation-profile}
 
 #### ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Aeronave del Simulador {#simulator-aircraft}
 
@@ -971,7 +971,7 @@ Sube todas las ventanas no acopladas \(es decir, flotantes \) sobre la ventana p
 
 Abre y cierra estos paneles. El panel de mapa no se puede cerrar.
 
-#### Menú Principal, Barra de Herramientas del Mapa, Barra de Herramientas de Espacios Aéreos, Barra de Opciones de Mapa, Barra de Plan de Vuelo, Barra de Paneles, Barra de Estado {#main-toolbar-options}
+#### Menú Principal, Barra de Herramientas del Mapa, Barra de Herramientas de Espacios Aéreos, Barra de Opciones del Mapa, Barra del Plan de Vuelo, Barra de Paneles, Barra de Estado {#main-toolbar-options}
 
 Muestra u oculta estas barras de herramientas y la barra de estado.
 
@@ -979,7 +979,7 @@ Muestra u oculta estas barras de herramientas y la barra de estado.
 
 Restablece el diseño las ventanas a su valor predeterminado. Esto implica visibilidad, posición y estado de todas las ventanas, así como las barras de herramientas. Esta función puede ser útil si se pierde una ventana en configuraciones de monitores múltiples.
 
-### Menu Ayuda {#help-menu}
+### Menú Ayuda {#help-menu}
 
 #### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contenidos \(Online\) {#help-contents}
 
@@ -991,7 +991,7 @@ Muestra los tutoriales online en el navegador predeterminado.
 
 #### ![Frequently asked Questions \(Online\)](../images/icons/help.png "Frequently asked Questions \(Online\)") Preguntas más Frecuentes  \(Online\) {#help-faq}
 
-Muestra las preguntas más frecuentes  en el navegador. 
+Muestra las preguntas más frecuentes en el navegador. 
 
 #### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contenidos \(Offline, PDF\) {#help-contents-offline}
 

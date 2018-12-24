@@ -6,7 +6,7 @@ Los colores , tamaños y etiquetas de texto de algunos elementos del mapa pueden
 
 Los rumbos y cursos tienen sufijo con `°T` para verdadero, y `°M` para magnético.
 
-### Clicks del Ratón {#mouse-clicks}
+### Clics de Ratón {#mouse-clicks}
 
 Un clic en el mapa en el lugar activo de una entidad, como un anillo de rango, lo elimina. El cursor cambia a un símbolo de mano para indicar un punto activo que permite eliminar una función haciendo clic o eliminando / editando en el menú contextual.
 
@@ -159,7 +159,7 @@ Los colores de las pistas , calles de rodaje , helipuertos y áreas de tráfico,
 | ![Helipad](../images/legend/helipad.png) ![Helipad](../images/legend/helipadmedical.png) ![Helipad](../images/legend/helipadsquare.png) | Helipuertos. El texto rojo indica helipuerto médico. El color indica la superficie. |
 
 
-### Leyenda del perfil de Elevación {#elevation-profile-legend}
+### Leyenda del Perfíl de Elevación {#elevation-profile-legend}
 Los colores y símbolos del perfil de elevación siguen el estilo del mapa principal de acuerdo a los ajustes de las opciones en la pestaña `Visualización del mapa`. Los colores, patrones y símbolos de los aeropuertos, radioayudas, procedimientos, tramos del plan de vuelo activos y realizados son los mismos. El perfil de visualización sigue otros ajustes del mapa como visibilidad o línea del plan de vuelo, aeronave y rastro de la misma.
 
 | Símbolo | Descripción |
@@ -169,9 +169,9 @@ Los colores y símbolos del perfil de elevación siguen el estilo del mapa princ
 | ![Top of Climb](../images/legend/profiletoc.png) | TOC. Cima del ascenso con distancia desde la salida. |
 | ![Top of Descent](../images/legend/profiletod.png) | TOD con distancia al destino. |
 | ![At](../images/legend/proc_at.png) | Restricción de altitud de un procedimiento con nombre de waypoint. |
-| ![At or above](../images/legend/proc_atabove.png) | A o por encima de la restricción de altitud de un procedimiento. |
-| ![At or below](../images/legend/proc_atbelow.png) | A o por debajo de la restricción de altitud de un procedimiento. |
-| ![Between](../images/legend/proc_between.png) | A o por encima y A o por debajo \(entre\) la restricción de altitud de un procedimiento procedure. |
+| ![At or above](../images/legend/proc_atabove.png) | A, o por encima de, la restricción de altitud de un procedimiento. |
+| ![At or below](../images/legend/proc_atbelow.png) | A,o por debajo de, la restricción de altitud de un procedimiento. |
+| ![Between](../images/legend/proc_between.png) | A, o por encima, y A, o por debajo, \(entre\) la restricción de altitud de un procedimiento procedure. |
 | ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Altitud mínima de seguridad para el plan de vuelo. Es la altitud incrementada en 1.000 pies y redondeada al alza a los siguientes 500 pies. La constante de 1.000 pies puede cambiarse en la pestaña `Plan de Vuelo` del cuadro de dialogo `Opciones`. |
 | ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Altitud mínima de seguridad para un tramo del plan de vuelo. Es aplicable lo dicho en el apartado anterior. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | Aeronave del usuario si está conectado al simulador. Las etiquetas muestran la altitud actual y las tasas de ascenso y descenso. |
@@ -179,7 +179,7 @@ Los colores y símbolos del perfil de elevación siguen el estilo del mapa princ
 | ![ILS](../images/legend/profile_ils.png) | Senda del ILS. La etiqueta muestra el identificador, frecuencia, rumbo magnético, ángulo de la senda de planeo y la indicación DME si está disponible. Solo se muestra si se selecciona aproximación y la cabecera tiene ILS. El ángulo de apertura no tiene relación con la precisión de la pendiente real. |
 | ![VASI](../images/legend/profile_vasi.png) | Indicador de pendiente de aproximación visual. La etiqueta muestra la pendiente de inclinación y el tipo VASI. Solo se muestra si se selecciona una aproximación y el final de la pista tiene un VASI. El ángulo de apertura no tiene relación con la precisión de la pendiente real. |
 
-### Airport Traffic  Pattern {#airport-traffic-pattern}
+### Patrón de Tráfico de Aeropuerto {#airport-traffic-pattern}
 
 El color y los indicadores dependen de la elección del usuario en el diálogo del patrón de tráfico del aeropuerto.
 
@@ -208,8 +208,8 @@ La cuadrícula de altitud mínima fuera de ruta proporciona una altitud libre de
 | ![IFR](../images/legend/weather_ifr.png) | IFR. Reglas de vuelo por Instrument. Visibilidad inferior a 3 millas estatutarias o techo de nubes inferior a 1000 ft. |
 | ![LIFR](../images/legend/weather_lifr.png) | LIFR. IFR límite. Visibilidad inferior a 1 milla estatutaria o techo de nubes inferior a 500 ft. |
 
-#### Coverture de Nubes {#airport-weather-cloud}
-| Symbol | Description |
+#### Cobertura de Nubes {#airport-weather-cloud}
+| Símbolo | Descripción |
 | --- | --- |
 | ![Clear](../images/legend/weather_vfr_clear.png) | Sin nubes. |
 | ![Few](../images/legend/weather_vfr_few.png) | Pocas nubes |
@@ -218,10 +218,10 @@ La cuadrícula de altitud mínima fuera de ruta proporciona una altitud libre de
 | ![Overcast](../images/legend/weather_vfr_ovc.png) | Cielo cubierto |
 
 #### Viento {#airport-weather-wind}
-| Symbol | Description |
+| Símbolo | Descripción |
 | --- | --- |
-| ![No Wind](../images/legend/weather_vfr_clear.png) | Sin linea indica viento inferior a 2 nudos. |
-| ![4 Knots Wind](../images/legend/weather_wind4.png) | Con línea sin raya indica viento inferior a 5 nudos. |
+| ![No Wind](../images/legend/weather_vfr_clear.png) | Sin linea, indica viento inferior a 2 nudos. |
+| ![4 Knots Wind](../images/legend/weather_wind4.png) | Con línea, sin raya, indica viento inferior a 5 nudos. |
 | ![5 Knots Wind](../images/legend/weather_wind5.png) | Raya pequeña para viento de 5 nudos. |
 | ![10 Knots Wind](../images/legend/weather_wind10.png) | Raya larga para viento de 10 nudos. |
 | ![50 Knots Wind](../images/legend/weather_wind50.png) | Viento de 50 nudos.|
