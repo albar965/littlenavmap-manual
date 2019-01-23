@@ -1,196 +1,199 @@
-## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flight Plan Dock Window {#flight-plan-dock-window}
+## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flugplan-Dockfenster {#flight-plan-dock-window}
 
-### Upper Part {#upper-part}
+### Oberer Teil {#upper-part}
 
-The top shows a label that contains departure, departure position \(parking, runway or helipad\), destination, flight plan distance, traveling time, used procedures \(SID, STAR, approach and transitions\) as well as flight plan type.
+Die Oberseite zeigt ein Etikett, das Abflug, Abflugposition \(Parken, Start- und Landebahn oder Hubschrauberlandeplatz\), Ziel, Flugplandistanz, Reisezeit, verwendete Verfahren \(SID, STAR, Anflug und Übergänge\) sowie Flugplantyp enthält.
 
-Traveling time is only shown if a valid aircraft performance profile is loaded.
+Die Reisezeit wird nur angezeigt, wenn ein gültiges Leistungsprofil des Flugzeugs geladen ist.
 
-The ARINC name of the approach procedure which is needed by some FMCs is shown in parentheses.
+Der ARINC-Name des Anflugverfahrens, der von einigen FMCs benötigt wird, ist in Klammern angegeben.
 
 ![Flight Plan Header](../images/flightplanheader.jpg "Flight Plan Header")
 
-_**Picture above:** Header of a flight plan. _`VORDME LITSY`_ has _`D34`_ as ARINC name._
+_**Bild oben:** Header eines Flugplans _`VORDME LITSY`_ hat _`D34`_ als ARINC Name._
 
-Besides the label there are three input fields on top of this dock window:
+Neben dem Label gibt es drei Eingabefelder oben in diesem Dockfenster:
 
-* **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
-* **Flight Plan Type \(IFR or VFR\):** This is saved with the flight plan.
+* **Reiseflughöhe \(ft\):** Dieser Wert wird mit dem Flugplan gespeichert und dient auch zur Berechnung eines Airway-Flugplans basierend auf der gegebenen Höhe. Dieses Feld wird automatisch auf die minimale Höhe für einen Flugplan gesetzt, wenn ein Plan entlang der Victor- oder Jet-Airways berechnet wird und Höhenbeschränkungen gefunden wurden. Siehe auch [Berechne für die gegebene Höhe](MENUS.md#calculate-based-on-given-altitude).
+* **Flugplantyp \(IFR or VFR\):** Dieser wird mit dem Flugplan gespeichert..
 
-### Flight Plan Table {#flight-plan-table}
+### Flugplan-Tabelle {#flight-plan-table}
 
-The table view allows the same operations as the search table view except sorting. See [here](SEARCH.md#table-view) for more information.
+Die Tabellenansicht erlaubt die gleichen Operationen wie die Such-Tabellenansicht, mit Ausnahme der Sortierung. Siehe auch [hier](SEARCH.md#table-view) für weitere Informationen.
 
-All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Use `Shift+Click` or `Ctrl+Click` to select two or more elements \(multi-selection\).
+Alle ausgewählten Elemente in der Flugplantabellenansicht werden auf der Karte durch einen schwarz/grünen Kreis hervorgehoben. Siehe auch [Highlights](MAPDISPLAY.md#highlights) für weitere Informationen. Benutze `Shift+Click` oder `Ctrl+Click` um zwei oder mehr Elemente auszuwählen \(Mehrfachauswahl\).
 
-The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator.
+Der aktive Flugplanabschnitt wird in Magenta hervorgehoben, wenn _Little Navmap_ mit einem Simulator verbunden ist.
 
-Procedure legs have dark blue color and legs of a missed approach have a dark red color.
+Prozedurabschnitte haben eine dunkelblaue Farbe und Abschnitte, die bei einem verpassten Anflug eine dunkelrote Farbe haben.
 
-If a waypoint of a flight plan cannot be found in the database it will be displayed in red. This can happen if the used AIRAC cycles do no match. The same applies to airways. The position on the map is still correct.
+Wenn ein Wegpunkt eines Flugplans in der Datenbank nicht gefunden wird, wird er rot angezeigt. Dies kann passieren, wenn die verwendeten AIRAC-Zyklen nicht übereinstimmen. Gleiches gilt für die Luftstraßen. Die Position auf der Karte ist weiterhin korrekt.
 
-Airways are also displayed in red if the minimum or maximum airway altitude restrictions are violated by the selected cruise altitude.
+Luftstraßen werden ebenfalls rot angezeigt, wenn die minimale oder maximale Luftwegshöhenbeschränkung durch die gewählte Reiseflughöhe verletzt wird.
 
 ![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
 
-_**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could not be found in the database._
+_**Bild oben:** Der Wegpunkt _`ALTAG`_ und Teile des Airways _`V324`_konnten nicht in der Datenbank gefunden werden._
 
-#### Table Columns {#flight-plan-table-columns}
+#### Tabellenspalten {#flight-plan-table-columns}
 
-* `Ident`: ICAO ident of the navaid or airport. The ident can be suffixed as shown below:
-  * `+` or `-` and a distance value: Shows waypoints in procedures that are relative to a fix.
-  * `(IAF)`: Initial fix of a procedure or transition.
-  * `(FAF)`: Final approach fix. Depending on procedure either the FAF or FACF are shown with a Maltese cross on the map and in the elevation profile.
-  * `(FACF)`: Final approach course fix. 
+* `Identifikation`: ICAO-Ident des Navaids oder des Flughafens. Die Kennung kann wie folgt angehängt werden:
+  * `+` oder `-` und einen Distanz-Wert: Zeigt Wegpunkte in Prozeduren an, die sich auf einen Fix beziehen.
+  * `(IAF)`: Initial Fix eines Verfahrens oder Übergangs.
+  * `(FAF)`: Final Appraoch Fix. Je nach Verfahren werden entweder die FAF oder die FACF mit einem maltesischen Kreuz auf der Karte und im Höhenprofil dargestellt.
+  * `(FACF)`: Endanflugkursfixierung. 
   * `(MAP)`: Missed approach point.
-* `Region`: Two letter region code of a navaid.
-* `Name`: Name of airport or radio navaid.
-* `Procedure`: Either `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed` plus the name of the procedure.
-* `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
-* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
-  * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
-  * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
-  * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
-  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
-  * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
-  * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
-* `Type`: Type of a radio navaid. Shows `ILS` or `LOC` for ILS or localizer approaches on the last runway leg.
-* `Freq.`: Frequency or channel of a radio navaid. Also shows ILS or localizer frequency for corresponding approaches on the last runway leg.
-* `Range`: Range of a radio navaid if available.
-* `Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
-* `Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
-* `Distance`: Distance of the flight plan leg.
-* `Remaining`: Remaining distance to destination airport or procedure end point \(usually the runway\).
-* `Leg Time`: Flying time for this leg. Calculated based on the selected aircraft performance profile \(see [Aircraft Performance](AIRCRAFTPERF.md)\). This is a static value and not updated while flying. Empty if performance calculation failed.
-* `ETA`: Estimated time of arrival. This is a static value and not updated while flying. Calculated based on the selected aircraft performance profile. Empty if performance calculation failed.
-* `Fuel Rem.`: Fuel remaining at waypoint, once for volume and once for weight. This is a static value and not updated while flying. Calculated based on the selected aircraft performance profile. Empty if aircraft performance profile has no fuel consumption numbers set.
-* `Remarks`: Turn instructions, flyover or related navaid for procedure legs.
+* `Region`: Zweibuchstabiger Regionscode eines Navaids.
+* `Name`: Name des Flughafens oder des Radios navaid.
+* `Prozedurtyp`: Entweder `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` oder `Missed` plus Name der Prozedur.
+* `Luftstrasse oder Prozedur`: Enthält den Airway-Namen für en route Strecken oder eine Prozeduranweisung..
+* `Beschränkung`: Entweder Mindesthöhe für das Luftstraßensegment auf der Strecke, Verfahrenshöhenbeschränkung oder Verfahrensgeschwindigkeitsbegrenzung. Ein `/` trennt Höhe und Geschwindigkeitsbeschränkung. Für Verfahren gibt es folgende Höhenbeschränkungen:
+  * **Nur die Ziffer:** Fliegen Sie in Höhe oder Geschwindigkeit. Beispiel: `5.400` oder `210`.
+  * **Prefix** `A`: Fliegen Sie in oder über Höhe oder Geschwindigkeit. Beispiel: `A 1.800`.
+  * **Prefix** `B`: Fliegen Sie in oder unter Höhe oder Geschwindigkeit. Beispiel: `B 10.000` oder `B 220`.
+  * **Range:** Fliegen Sie auf oder über Höhe eins und auf oder unter Höhe zwei. Beispiel: `A 8.000, B 10.000`.
+  * **Höhe und Geschwindigkeitsbegrenzung:** Werte getrennt durch `/`. Beispiel: `A 8.000, B 10.000/B220`.
+  * **Nur Geschwindigkeitsbegrenzung:** Ein vorangestelltes `/` bedeutet keine Höhe, sondern eine Geschwindigkeitsbeschränkung. Beispiel: `/B250`.
+* `Typ`: Typ einer Radio-Navaid. Zeigt `ILS` oder `LOC` für ILS- oder Localizer-Anflüge auf dem letzten Runway-Abschnitt.
+* `Freq.`: Frequenz oder Kanal eines Radio-Navaids. Zeigt auch die ILS- oder Localizer-Frequenz für entsprechende Anflüge auf der letzten Runway-Abschnitt
+* `Reichweite`: Reichweite einer Radio-Navaid, falls vorhanden.
+* `Kurs °M:`** Dies ist der Startkurs der Großkreisroute, die die beiden Wegpunkte der Etappe verbindet. Verwenden Sie diesen Kurs bei dem Abflug, wenn Sie lange Strecken ohne Navids zurücklegen. Beachten Sie, dass Sie Ihren Kurs ständig ändern müssen, wenn Sie entlang einer großen Kreislinie fliegen.
+* `Direkt °M:`** Dies ist der konstante Verlauf der Rhumb-Linie, die zwei Wegpunkte eines Weges verbindet. Je nach Route und Entfernung kann sie vom Verlauf der Großkreislinie abweichen. Verwenden Sie diesen Kurs, wenn Sie entlang der Luftwege oder zu VOR- oder NDB-Stationen fliegen. Im Gegensatz zum Kurs, der vom GPS-Gerät des Flugsimulators angezeigt wird, erhalten Sie so die genaue radiale Position, wenn Sie sich einem VOR oder NDB in einem Flugplan nähern.
+* `Distanz`: Entfernung der Flugplanstrecke.
+* `Verbleibend`: Verbleibende Entfernung zum Zielflughafen oder Verfahrensendpunkt \(normalerweise die Start- und Landebahn\).
+* `Abschnittszeit`: Flugzeit für diese Etappe. Berechnet auf der Grundlage des ausgewählten Leistungsprofils des Flugzeugs. \(siehe auch [Flugzeug-Performance](AIRCRAFTPERF.md)\). Dies ist ein statischer Wert und wird während des Fluges nicht aktualisiert. Leer, wenn die Leistungsberechnung fehlgeschlagen ist.
+* `ETA`: Geschätzte Ankunftszeit. Dies ist ein statischer Wert und wird während des Fluges nicht aktualisiert. Berechnet auf der Grundlage des ausgewählten Leistungsprofils des Flugzeugs. Leer, wenn die Leistungsberechnung fehlgeschlagen ist.
+* `Restl. Treibstoff`: Treibstoff, der am Wegpunkt verbleibt, einmal für Volumen und einmal für Gewicht. Dies ist ein statischer Wert und wird während des Fluges nicht aktualisiert. Berechnet auf der Grundlage des ausgewählten Leistungsprofils des Flugzeugs. Leer, wenn das Leistungsprofil des Flugzeugs keine Kraftstoffverbrauchszahlen enthält.
+* `Kommentare`: Turn-Anweisungen, Überflüge oder zugehörige Navaids für Prozedurabschnitte.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-_**Picture above:** The _`Flight Plan`_ dock window. The flight plan uses a SID for departure and a STAR, a transition and an approach for arrival._
+_**Bild oben:** Das _`Flugpan`_ Dock Fenster. Der Flugplan verwendet eine SID für den Abflug und eine STAR, eine Transition und einen Approach für die Ankunft.._
 
-### Mouse Clicks {#mouse-clicks}
+### Mausklicks {#mouse-clicks}
 
-A double-click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. A single click selects an object and highlights it on the map using a black/green circle.
+Ein Doppelklick auf einen Eintrag in der Tabellenansicht zeigt entweder ein Flughafendiagramm oder zoomt auf die Navaid. Zusätzlich werden Details in dem `Information` Dockfenster. Ein einziger Klick wählt ein Objekt aus und markiert es auf der Karte mit einem schwarz/grünen Kreis.
 
-### Top Button {#top-button}
+### Obere Schaltfläche {#top-button}
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl löschen {#clear-selection}
 
-Deselect all entries in the table and remove any highlight circles from the map.
+Alle Markierungen in der Tabelle aufheben und alle hervorgehobenen Kreise aus der Karte entfernen.
 
-### Flight Plan Table View Context Menu {#flight-plan-table-view-context-menu}
+### Kontextmenü für die Ansicht der Flugplantabelle {#flight-plan-table-view-context-menu}
 
-#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-1}
+#### ![Show Information](../images/icons/globals.png "Show Information") Informationen anzeigen {#show-information-1}
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+Gleich wie bei dem  [Karten-Kontextmenü](MAPDISPLAY.md#map-context-menu).
 
-#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
+#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Auf der Karte zeigen {#show-on-map}
 
-Show either the airport diagram or zooms to the navaid on the map. The zoom distance can be changed in the dialog `Options` on the tab `Map`.
+Zeigt entweder das Flughafendiagramm oder zoomt auf das navaid auf der Karte. Der Zoomabstand kann im Dialogfeld  `Einstellungen` auf der Registerkarte `Karte` geändert werden.
 
-#### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Activate Flight Plan Leg {#activate}
+#### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Flugplanabschnitt aktivieren {#activate}
 
-Makes the selected leg the active \(magenta\) flight plan leg. The active leg might change if _Little Navmap_ is connected to the simulator and the user aircraft is moving.
+Macht die ausgewählte Strecke zum aktiven \(magenta\) Flugplanabschnitt. Das aktive Teilstück kann sich ändern, wenn _Little Navmap_ mit dem Simulator verbunden ist und sich das Benutzerflugzeug bewegt.
 
-#### Follow Selection {#follow-selection}
+#### Folge Auswahl {#follow-selection}
 
-The map view will be centered - not zoomed in - on the selected airport or navaid when this function is enabled.
+Die Kartenansicht wird - nicht vergrößert - auf den ausgewählten Flughafen oder Navaid zentriert, wenn diese Funktion aktiviert ist.
 
-#### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Move Selected Legs up/down {#move-selected-legs-up-down}
+#### ![Move Selected Legs up](../images/icons/routelegup.png "Move Selected Legs up")![Move Selected Legs down](../images/icons/routelegdown.png "Move Selected Legs down") Ausgewählte Flugplanabschnitte noch oben/unten bewegen {#move-selected-legs-up-down}
 
-Move all selected flight plan legs up or down in the list. This works also if multiple legs are selected.
+Alle ausgewählten Flugplanstrecken in der Liste nach oben oder unten verschieben. Dies funktioniert auch, wenn mehrere Abschnitte ausgewählt sind.
 
-Airway names will be removed when waypoints in the flight plan are moved or deleted because the new flight plan legs will not follow any airway but rather use direct connections.
+Airway-Namen werden entfernt, wenn Wegpunkte im Flugplan verschoben oder gelöscht werden, da die neuen Flugplan-Strecken keinem Airway folgen, sondern direkte Verbindungen nutzen.
 
-Procedures or procedure legs cannot be moved and waypoints cannot be moved into or across procedures.
+Prozeduren oder Prozedurenabschnitte können nicht verschoben werden und Wegpunkte können nicht in oder zwischen Prozeduren verschoben werden.
 
-#### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Delete Selected Legs or Procedure {#delete-selected-legs}
+#### ![Delete Selected Legs or Procedure](../images/icons/routedeleteleg.png "Delete Selected Legs or Procedure") Ausgewählten Abschnitt oder Prozedur löschen {#delete-selected-legs}
 
-Delete all selected flight plan legs. Use `Undo` if you delete legs accidentally.
+Alle ausgewählten Flugplanabschnitte löschen. Nutze `Undo` wenn Sie versehentlich Abschnitte löschen.
 
-The whole procedure is deleted if the selected flight plan leg is a part of a procedure. Deleting a procedure deletes its transition too.
+Die gesamte Prozedur wird gelöscht, wenn die ausgewählte Flugplanstrecke Teil einer Prozedur ist. Das Löschen einer Prozedur löscht auch deren Übergang.
 
-#### ![Edit Position](../images/icons/routestring.png "Edit Position") Edit Position {#edit-name-of-user-waypoint}
+#### ![Edit Position](../images/icons/routestring.png "Edit Position") Bearbeite Position {#edit-name-of-user-waypoint}
 
-Allows to change the name or coordinates of a user-defined waypoint. The length of the name is limited to 10 characters when saving. See [Edit Flight Plan Position](EDITFPPOSITION.md).
+Ermöglicht das Ändern des Namens oder der Koordinaten eines benutzerdefinierten Wegpunktes. Die Länge des Namens ist beim Speichern auf 10 Zeichen begrenzt. Siehe auch [Bearbeite Flugplanposition](EDITFPPOSITION.md).
 
-#### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insert Flight Plan before {#insert-flight-plan}
+#### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Füge Flugplan vor ... ein {#insert-flight-plan}
 
-Inserts a flight plan before the selected leg into the current plan.
+Fügt einen Flugplan vor der ausgewählten Teilstrecke in den aktuellen Plan ein.
 
-Using `Insert Flight Plan before` or `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. 
+Nutze `Füge Flugpaln vor` oder `Flugplan anhängen` ermöglicht es, komplette Flugpläne oder Flugplanausschnitte in einen neuen Plan zu laden oder zusammenzuführen.  
 
-Procedures are inserted from the loaded flight plan and dropped from the current one depending on insert position.
+Prozeduren werden aus dem geladenen Flugplan eingefügt und je nach Einfügeposition aus dem aktuellen Flugplan entfernt.
 
-If you insert a flight plan after departure all procedures from the loaded plan are ignored and current procedures are kept.
+Wenn Sie nach dem Abflug einen Flugplan einfügen, werden alle Prozeduren aus dem geladenen Plan ignoriert und die aktuellen Prozeduren beibehalten.
 
-Inserting before departure takes the departure procedures from the loaded flight plan and drops the current departure procedures.
+Das Einfügen vor dem Abflug übernimmt die Abflugverfahren aus dem geladenen Flugplan und löscht die aktuellen Abflugverfahren.
 
-The inserted legs are selected after loading the flight plan.
+Die eingefügten Abschnitte werden nach dem Laden des Flugplans ausgewählt.
 
-#### ![Append Flight Plan](../images/icons/fileappend.png "Append Flight Plan") Append Flight Plan {#append-flight-plan}
+#### ![Append Flight Plan](../images/icons/fileappend.png "Append Flight Plan") Flugplan anhängen {#append-flight-plan}
 
-Adds departure, destination and all waypoints of another flight plan to the end of the current plan.
+Fügt Start-, Ziel- und alle Wegpunkte eines anderen Flugplans an das Ende des aktuellen Plans an.
 
-All currently selected arrival procedures will be removed when appending a flight plan. Arrival and approach procedures from the appended flight plan are added to the current one if any.
+Alle aktuell ausgewählten Ankunftsverfahren werden beim Anhängen eines Flugplans entfernt. Die Ankunfts- und An- und Abflugverfahren aus dem beigefügten Flugplan werden zu dem aktuellen, falls vorhanden, hinzugefügt.
 
-The appended legs are selected after loading the flight plan.
+Die angehängten Strecken werden nach dem Laden des Flugplans ausgewählt.
 
-#### Calculate for selected Legs {#calculate-for-selected-legs}
 
-This is a submenu containing entries for flight plan calculation methods as described here:
+#### Für ausgewählten Abschnitt berechnen {#calculate-for-selected-legs}
 
-![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calculate Radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calculate high Altitude](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculate low Altitude](MENUS.md#calculate-low-altitude) and ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 
-Calculate a flight plan fragment between the first and last selected waypoint. All existing legs in between are deleted and replaced with the calculated flight plan fragment.
+Dies ist ein Untermenü mit Einträgen für Flugplanberechnungsmethoden, wie hier beschrieben:
 
-This menu is only active when more than one flight plan leg is selected and neither the first nor the last selected row is a procedure. You can either select the first and the last leg \(`Ctrl+Click`\) and start the calculation or you can select a whole range of legs \(`Shift+Click` and drag\) before calculation.
+![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Funknavigation berechnen](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Hohe Route berechnen](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Niedrige Route berechnen](MENUS.md#calculate-low-altitude) und ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Berechne für die gegebene Höhe](MENUS.md#calculate-based-on-given-altitude).
 
-This function can be useful if you have to cross oceanic legs that are void of airways:
+Berechnen Sie ein Flugplanteil zwischen dem ersten und letzten ausgewählten Wegpunkt. Alle dazwischen liegenden bestehenden Strecken werden gelöscht und durch das berechnete Flugplanteil ersetzt.
 
-1. Set departure and destination.
-2. Find the last waypoint on an airway before entering the ocean. Choose the closest to the flight plan line. Add the waypoint to the flight plan.
-4. Select departure and this waypoint and calculate the flight plan fragment.
-3. Repeat the process for the first waypoint on an airway close to the coast of your destination continent.
-5. Select this waypoint and the destination and calculate the flight plan fragment.
 
-While not entirely realistic, this is a sensible workaround until _Little Navmap_ supports NAT or PACOT tracks.
+Dieses Menü ist nur aktiv, wenn mehr als eine Flugplanetappe ausgewählt ist und weder die erste noch die letzte ausgewählte Zeile eine Prozedur ist. Sie können entweder den ersten und den letzten Abschnitt mit \(`Ctrl+Click`\) auswählen und die Berechnung starten oder Sie können einen ganzen Streckenbereich  \(`Shift+Click` und ziehen\) vor der Kalkulation auswählen.
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-1}
+Diese Funktion kann nützlich sein, wenn Sie ozeanische Etappen überqueren müssen, die frei von Luftstraßen sind:
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+1. Abflug und Ziel einstellen.
+2. Finden Sie den letzten Wegpunkt auf einem Luftweg, bevor Sie in den Atlantik einfliegen. Wählen Sie denjenigen aus, der der Flugplanlinie am nächsten liegt. Fügen Sie den Wegpunkt dem Flugplan hinzu.
+4. Wählen Sie Abflug und diesen Wegpunkt aus und berechnen Sie das Flugplarfragment.
+3. Wiederholen Sie den Vorgang für den ersten Wegpunkt auf einem Luftweg nahe der Küste Ihres Zielkontinents.
+5. Wählen Sie diesen Wegpunkt und das Ziel aus und berechnen Sie das Flugplanfragment.
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-1}
+Obwohl nicht ganz realistisch, ist dies ein sinnvoller Lösungsweg, bis _Little Navmap_ NAT- oder PACOT-Tracks unterstützt.
 
-Show the range rings for all selected radio navaids in the flight plan. Simply select all legs of the flight plan and use this function to display a range circle for each radio navaid in the flight plan.
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Zeige Enfernungsringe {#show-range-rings-1}
 
-Otherwise, the same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+Das Gleiche wie [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
 
-#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Zeige Reichweite für Navigationsringe {#show-navaid-range-1}
 
-This menu item is enabled if clicked on an airport. Shows a dialog that allows to customize and display an airport traffic pattern on the map.
+Zeigt die Entfernungsringe für alle ausgewählten Radionavigatoren im Flugplan an. Wählen Sie einfach alle Teilstrecken des Flugplans aus und verwenden Sie diese Funktion, um für jede Funk-Navaid im Flugplan einen Reichweitenkreis anzuzeigen.
 
-See [Traffic Pattern](TRAFFICPATTERN.md).
+Sonst das Gleiche wie im [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
 
-#### ![Copy](../images/icons/copy.png "Copy") Copy {#copy-0}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Platzrunde anzeigen {#show-traffic-pattern}
 
-Copy the selected entries in CSV format to the clipboard. The CSV will include a header. This will observe changes to the table view like column order.
+Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flughafen klicken. Zeigt einen Dialog an, der es ermöglicht, eine Platzrunde auf der Karte anzuzeigen und anzupassen.
 
-#### Select All {#select-all-0}
+Siehe [Platzrunde anzeigen](TRAFFICPATTERN.md).
 
-Select all flight plan legs.
+#### ![Copy](../images/icons/copy.png "Copy") Kopieren {#copy-0}
 
-##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+Kopiert die ausgewählten Einträge im CSV-Format in die Zwischenablage. Das CSV wird einen Header enthalten. Dadurch werden Änderungen in der Tabellenansicht wie z.B. die Spaltenreihenfolge beachtet.
 
-Deselect all currently selected flight plan legs and remove any highlight circles from the map.
+#### Alle auswählen {#select-all-0}
 
-#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view-0}
+Wählt alle Flugplanetappen aus.
 
-Reset the column order and column widths to default.
+##### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl aufheben {#clear-selection}
 
-#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-1}
+Deaktiviert alle aktuell ausgewählten Flugplanstrecken und entfernt alle Highlight-Kreise aus der Karte.
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+#### ![Reset View](../images/icons/cleartable.png "Reset View") Ansicht zurücksetzen {#reset-view-0}
+
+Setzt die Spaltenreihenfolge und die Spaltenbreiten auf den Standard zurück.
+
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Zentrum für Distanzsuche setzen {#set-center-for-distance-search-1}
+
+Das Gleiche wie im  [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
 

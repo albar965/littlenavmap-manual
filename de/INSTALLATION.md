@@ -1,90 +1,88 @@
 ## Installation {#installation}
 
-`Highlighted text` is used to denote window, menu, button, file or directory names.
+`Hervorgehobener Text` wird verwendet, um Fenster-, Menü-, Schaltflächen-, Datei- oder Verzeichnisnamen zu bezeichnen.
 
-*Little Navmap* for Windows is a 32-bit application and was tested with Windows 7, Windows 8, Windows 10 \(32-bit and 64-bit\).
+*Little Navmap* für Windows ist eine 32-Bit-Anwendung und wurde mit Windows 7, Windows 8, Windows 10 getestet. \(32-bit and 64-bit\).
 
-The macOS and Linux versions are both 64-bit and were tested with macOS Sierra and Ubuntu Linux.
+Die MacOS- und Linux-Versionen sind beide 64-Bit-Versionen und wurden mit MacOS Sierra und Ubuntu Linux getestet.
 
-### Updating {#installation-updating}
-Delete all installed files of a previous _Little Navmap_ version before installing a new version. All files from the previous ZIP archive can be deleted since settings are stored in separate directories \(except [custom map themes](MAPTHEMES.md)\). In any case do not merge the installation directories.
+### Aktualisierung {#installation-updating}
+Löschen Sie alle installierten Dateien einer früheren  _Little Navmap_ Version vor der Installation einer neuen Version. Alle Dateien aus dem bisherigen ZIP-Archiv können gelöscht werden, da die Einstellungen in separaten Verzeichnissen gespeichert sind. \(mit Ausnahme von [custom map themes](MAPTHEMES.md)\). In jedem Fall sollten Sie die Installationsverzeichnisse nicht zusammenführen.
 
-There is no need to delete the old settings directory. The program is written in a way that it can always work with old setting files.
+Es ist nicht erforderlich, das alte Einstellungsverzeichnis zu löschen. Das Programm ist so geschrieben, dass es immer mit alten Einstellungsdateien arbeiten kann.
 
 ### Windows
-The installation of _Little Navmap_ does not change any registry entries \(in Windows\) and involves a simple copy of files therefore an installer or setup program is not required.
+Die Installation von _Little Navmap_ ändert keine Registrierungseinträge \(in Windows\) und beinhaltet eine einfache Kopie von Dateien, daher ist kein Installer oder Setup-Programm erforderlich.
 
-Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
+Entpacken Sie das Archiv nicht in den Ordner `c:\Program Files\` oder `c:\Program Files (x86)\`, da dies Administratorrechte erfordert. Windows behält die Kontrolle über diese Ordner, daher können andere Probleme wie ersetzte oder gelöschte Dateien auftreten.
 
-Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`.
+Entpacken Sie das Zip-Archiv in einen Ordner wie z.B. `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` oder `c:\Little Navmap`. Starten Sie dann das Programm mit einem Doppelklick auf `littlenavmap.exe`.
 
-**See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
+**Siehe [Erster Start](INTRO.md#first-start) für weitere Informationen zum ersten Start nach der Installation.**
 
-In some cases you have to install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784).
+In einigen Fällen müssen Sie das Programm [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784) installieren.
 
-**Install the Visual C++ Redistributable Package if you get a warning about the SSL subsystem not being initialized.
-The program will not be able to use encrypted network connections \(i.e. HTTPS\) that are needed to check for updates or
-to load online maps.**
+**Installieren Sie das Visual C++ Redistributable Package, wenn Sie eine Warnung erhalten, dass das SSL-Subsystem nicht initialisiert wird. Das Programm kann keine verschlüsselten Netzwerkverbindungen \(z.B. HTTPS\) verwenden, die benötigt werden, um nach Updates zu suchen oder um Online-Karten zu laden**
 
-**Install both 32 bit \(**`vcredist_x86.exe`**\) and 64 bit \(**`vcredist_x64.exe`**\) versions. **
+**Installieren Sie sowohl 32 Bit \(**`vcredist_x86.exe`**\) als auch 64 bit \(**`vcredist_x64.exe`**\) Versionen. **
 
-Usually this is already installed since many other programs require it.
+Normalerweise ist dies bereits installiert, da viele andere Programme es benötigen.
 
-You also have to install the redistributable if you get an error like `Error while checking for updates ... Error creating SSL context`.
+Sie müssen die Redistributable auch installieren, wenn Sie einen Fehler wie z.B. `Error while checking for updates ... Error creating SSL context` erhalten.
 
-_Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit and 64-bit\). Windows XP is not supported.
+_Little Navmap_ ist eine 32-Bit-Anwendung und wurde mit Windows 7, Windows 8 und Windows 10 \(32-Bit und 64-Bit\) getestet. Windows XP wird nicht unterstützt.
 
-You can find redistributable packages for all versions here: [The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
+Weiterverteilbare Pakete für alle Versionen finden Sie hier: [The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
-#### Other Simulators than FSX SP2 {#other-simulators-than-fsx-sp2}
+#### Andere Simulatoren als FSX SP2 {#other-simulators-than-fsx-sp2}
 
-This program was compiled using plain FSX SP2 \(no Acceleration\) SimConnect version 10.0.61259.0.
+Dieses Programm wurde mit dem einfachen FSX SP2 \(no Acceleration\) SimConnect Version 10.0.61259.0 erstellt.
 
-You might have to install an older version of SimConnect if you use _Prepar3D_ or _FSX Steam Edition_. If not sure about this simply try _Little Navmap_ out. If it fails with an error message follow the instructions below:
+Möglicherweise müssen Sie eine ältere Version von SimConnect installieren, wenn Sie _Prepar3D_ oder _FSX Steam Edition_ verwenden. Wenn Sie sich nicht sicher sind, probieren Sie einfach _Little Navmap_ aus. Wenn es mit einer Fehlermeldung fehlschlägt, befolgen Sie die folgenden Anweisungen:
 
-_**Prepar3D**_: In the same directory as `Prepar3D.exe` is a `redist\Interface` directory \(normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v4\redist\Interface`\). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
+_**Prepar3D**_: Im selben Verzeichnis wie `Prepar3D.exe` befindet sich ein `redist\Interface` Verzeichnis \(normalerweise `C:\Program Files (x86)\Lockheed Martin\Prepar3D v4\redist\Interface`\). Es gibt mehrere ältere Versionen von SimConnect. Sie müssen `FSX-SP2-XPACK.msi` für _Little Navmap_ installieren.
 
-_**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
+_**FSX Steam Edition**_: Die Installation fügt den Ordner `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` hinzu, in dem Sie die älteren SimConnect-Schnittstellen finden.
 
-#### Improve Start-up Time {#improve-start-up-time}
+#### Verbesserte Start-up Zeit {#improve-start-up-time}
 
-Anti-virus program can significantly slow down the startup and execution of the program in Windows.
+Antivirenprogramme können den Start und die Ausführung des Programms unter Windows erheblich verlangsamen.
 
-Therefore, it is recommended to exclude the following directories from scanning:
+Daher wird empfohlen, die folgenden Verzeichnisse vom Scannen auszuschließen:
 
-* Disk cache for map tiles: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
-* Scenery library and userdata databases`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
+* Festplatten-Cache für Kartenkacheln: `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
+* Szenenbibliothek und Benutzerdatenbanken`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`
 
-These directories to not contain executable files and are accessed frequently by _Little Navmap_.
+Diese Verzeichnisse dürfen keine ausführbaren Dateien enthalten und werden häufig von _Little Navmap_ aufgerufen.
 
 ### macOS
 
-Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
+Entpacken Sie die ZIP-Datei und kopieren Sie die Anwendung `Little Navmap` in den Ordner `Applications` oder einen anderen Ordner.
 
-**Note on first start on macOS:** When starting the application you will get a message `Little Navmap is from an unidentified developer. Are you sure you want to open it?` or similar.
+**Hinweis zum ersten Start unter macOS:** Beim Starten der Anwendung erhalten Sie die Meldung "Little Navmap is from a unidentified developer". Bist du sicher, dass du es öffnen willst? Oder ähnlich.
 
-To bypass this right click or `Ctrl+Click` on the application and select open. You probably have to enter an administrator name and password once. The program can be started normally after this procedure.
+Um dieses zu umgehen, klicken Sie mit der rechten Maustaste oder `Strg+Klick` auf die Anwendung und wählen Sie Öffnen. Wahrscheinlich müssen Sie einen Administratornamen und ein Passwort einmal eingeben. Nach diesem Vorgang kann das Programm normal gestartet werden..
 
 ### Linux
 
-Extract the tar archive to any place and run the executable `littlenavmap` to start the program from a terminal:
+Entpacken Sie das tar-Archiv an einen beliebigen Ort und führen Sie die ausführbare `littlenavmap` aus, um das Programm von einem Terminal aus zu starten.:
 
 `./littlenavmap`
 
-Most file managers will start the program if double-clicked.
+Die meisten Dateimanager starten das Programm, wenn sie doppelt darauf klicken.
 
 ### X-Plane
 
-*Little Navmap* **can only connect to X-Plane using the *Little Xpconnect* X-Plane plugin which has to be installed as well.**
+*Little Navmap* **kann sich nur mit X-Plane über das *Little Xpconnect* X-Plane Plugin verbinden, das ebenfalls installiert werden muss.**
 
-The *Little Xpconnect* plugin is included in the *Little Navmap* archive but can also be downloaded separately. See the included `README.txt` in the `Little Xpconnect` directory for installation instructions.
+Das *Little Xpconnect* Plugin ist im *Little Navmap* Archiv enthalten, kann aber auch separat heruntergeladen werden. Siehe die mitgelieferte `README.txt` im Verzeichnis `Little Xpconnect` für Installationsanweisungen.
 
-The plugin 64-bit only and is available for Windows, macOS and Linux.
+Das Plugin ist nur für 64-Bit verfügbar und für Windows, MacOS und Linux.
 
-### Additional Programs
+### Zusätzliche Programme
 
-The downloaded *Little Navmap* archive contains two additional directories \(or applications for macOS\):
+Das heruntergeladene *Little Navmap*-Archiv enthält zwei zusätzliche Verzeichnisse \(oder Applikationen für macOS\):
 
-`Little Navconnect`: A complete copy of the program allowing remote flight simulator connections for FSX, P3D and X-Plane.
+`Little Navconnect`: Eine vollständige Kopie des Programms, das Remote-Verbindungen für FSX, P3D und X-Plane ermöglicht.
 
-`Little Xpconnect`: This is the 64-bit plugin that is needed for *Little Navmap* or *Little Navconnect* to connect to X-Plane.
+`Little Xpconnect`: Dies ist das 64-Bit-Plugin, das für *Little Navmap* oder *Little Navconnect* zur Verbindung mit X-Plane benötigt wird.

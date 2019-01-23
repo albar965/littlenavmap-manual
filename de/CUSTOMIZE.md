@@ -1,54 +1,56 @@
-## Customizing General {#customize}
+## Anpassen generell {#customize}
 
-_Little Navmap_ creates multiple configuration files in the directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` when started. These allow extended customization of the program.
+_Little Navmap_ erstellt beim Start mehrere Konfigurationsdateien im Verzeichnis `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. Dieses ermöglicht eine erweiterte Anpassung des Programms.
 
-The files use the Windows-`INI` style that has groups in square brackets and `key=value` lines. See [here](https://en.wikipedia.org/wiki/INI_file) for more information about this type of configuration files.
+Die Dateien verwenden die Windows-`INI` Stile, die Gruppen in eckigen Klammern haben und `key=value` Zeilen haben. Siehe [hier](https://en.wikipedia.org/wiki/INI_file) für weitere Informationen über diese Art von Konfigurationsdateien.
 
-Note that you have to restart _Little Navmap_ to see any changes. Also, do not edit the files while _Little Navmap_ is running since it might overwrite your changes.
+Beachten Sie, dass Sie _Little Navmap_ neu starten müssen, um alle Änderungen zu erhalten. Bearbeiten Sie auch nicht die Dateien, während _Little Navmap_ läuft, da dies Ihre Änderungen überschreiben könnte.
 
-To undo all changes simply delete a file. It will be created again containing the default values when _Little Navmap_ is started.
+Um alle Änderungen rückgängig zu machen, löschen Sie einfach eine Datei. Sie wird beim Start von _Little Navmap_ mit den Standardwerten neu erstellt.
 
-Single lines can also be deleted and will be restored with the default value when _Little Navmap_ is started.
+Einzelne Zeilen können auch gelöscht werden und werden beim Start von _Little Navmap_ mit dem Standardwert wiederhergestellt.
 
-Keys and values are case sensitive. Order in the files is not important if the keys remain in their respective sections. The program might reorder the keys when saving or updating the files.
+Schlüssel und Werte sind case-sensitiv. Die Reihenfolge in den Dateien ist nicht wichtig, wenn die Schlüssel in ihren jeweiligen Abschnitten bleiben. Das Programm kann die Schlüssel beim Speichern oder Aktualisieren der Dateien neu anordnen.
 
 ## Version {#customize-version}
 
-Some of the INI files contain a section `[Options]` with a key `Version` as shown below.
+Einige der INI-Dateien enthalten einen Abschnitt  `[Options]` mit einem Key `Version` wie unten gezeigt.
 ``` INI
 [Options]
 Version=2.0.1
 ```
-**Do not delete this since _Little Navmap_ relies on this information when updating the file. It will reset the file occasionally whenever the default settings change. A backup will be created to save your user customizations.**
+**Löschen Sie dies nicht, da _Little Navmap_ beim Aktualisieren der Datei auf diese Informationen angewiesen ist. Es wird die Datei gelegentlich zurückgesetzt, wenn sich die Standardeinstellungen ändern. Es wird ein Backup erstellt, um Ihre Benutzeranpassungen zu speichern.
+**
 
-**Add this version section to all new files. Otherwise, **_Little Navmap_** might reset the content.**
+**Fügen Sie diesen Versionsabschnitt zu allen neuen Dateien hinzu. Andernfalls könnte **_Little Navmap_** den Inhalt zurücksetzen.
+**
 
-Examples for backup files: `little_navmap_mapstyle_backup_2.0.0.ini` or `little_navmap_mapstyle_backup.ini`.
+Beispiele von Backup-Dateien: `little_navmap_mapstyle_backup_2.0.0.ini` oder `little_navmap_mapstyle_backup.ini`.
 
-The file will be backed up and reset if you delete or change the version.
+Die Datei wird gesichert und zurückgesetzt, wenn Sie die Version löschen oder ändern.
+
 
 ## GUI {#customize-gui}
 
-Only two user interface styles can be customized. These are `Fusion` and `Night` and can be found in the dialog [User Interface](OPTIONS.md#user-interface) tab of the options dialog. These two styles are available on all operating systems.
+Es können nur zwei Arten von Benutzeroberflächen angepasst werden. Diese sind `Fusion` und `Nacht` und befinden sich im Dialogfeld [Nutzerschnitstelle](OPTIONS.md#user-interface) Registerkarte des Einstelldialogs. Diese beiden Stile sind auf allen Betriebssystemen verfügbar.
 
-Two files are generated that allow the customization for all window, button and dialog colors. These are:
-
+Es werden zwei Dateien erzeugt, die die Anpassung für alle Fenster-, Schaltflächen- und Dialogfarben ermöglichen. Das sind:
 * `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini`
 
 * `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini`
 
-The key names in these files are derived from the _Qt_ palette options. Each key consists of the group and role name separated by an underscore. See below for more information on the color formats used.
+Die Schlüsselnamen in diesen Dateien stammen von den Optionen der _Qt_ Palette. Jeder Schlüssel besteht aus dem Gruppennamen und dem Rollennamen, getrennt durch einen Unterstrich. Weitere Informationen zu den verwendeten Farbformaten finden Sie weiter unten.
 
-See here for more information about [groups](http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) and [roles](http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum).
+Sehen Sie hier für weitere Informationen über [Gruppen](http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) und [Rollen](http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum).
 
 
 ## Online Network Center {#customize-online-center}
 
-The configuration file `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap.ini` allows to change the size of the online network center circles.
+Die Konfigurationsdatei `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap.ini` ermöglicht es, die Größe der Online-Netzwerk Center zu ändern.
 
-Radius is in nautical miles. The visual range is used if radius is -1. No circle is drawn if the value is 0.
+Der Radius liegt in nautischen Meilen. Der Sichtbereich wird verwendet, wenn der Radius -1 ist. Es wird kein Kreis gezeichnet, wenn der Wert 0 ist.
 
-**Do not delete this file since it contains all program settings, map history, opened files and more. Edit only the keys shown below.**
+**Löschen Sie diese Datei nicht, da sie alle Programmeinstellungen, den Kartenverlauf, geöffnete Dateien und vieles mehr enthält. Bearbeiten Sie nur die untenstehenden Schlüssel.**
 
 ``` INI
 [Online]
@@ -62,24 +64,24 @@ CenterRadiusObserver=-1
 CenterRadiusTower=10
 ```
 
-## Map Display {#customize-map-display}
+## Kartenanzeige {#customize-map-display}
 
-The file
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` allows to customize various aspects of the map display and is currently limited to colors and pens. Most key names are self explaining. See below for more information about color values.
+Die Datei
+`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` ermöglicht die Anpassung verschiedener Ansichten der Kartendarstellung und ist derzeit auf Farben und Stifte beschränkt. Die meisten Schlüsselnamen sind selbsterklärend. Weitere Informationen zu den Farbwerten finden Sie weiter unten.
 
-### Color Format {#customize-formats-color}
+### Farbformate {#customize-formats-color}
 
-Color can be in one of these formats which are commonly used in web design:
+Farben können in einem dieser Formate sein, die häufig im Webdesign verwendet werden:
 
-* `#RRGGBB` each of R, G, B and A is a single hex digit. Each color value ranges from 00 - FF \(decimal 0-255\)
-* `#AARRGGBB` first two digits contain the alpha/transparency value. `00` equals to fully tranparent and `FF` \(decimal 255\) to opaque.
-* SVG color name
+* `#RRGGBB` jedes von R, G, B und A ist eine einzelne Hexadezimalziffer. Jeder Farbwert reicht von 00 - FF \(dezimal 0-255\)
+* `#AARRGGBB` Die ersten beiden Ziffern enthalten den Alpha/Transparenzwert. `00` bedeutet volle Transparenz und bis `FF` \(decimal 255\) undurchsichtig.
+* SVG Farbname
 
-SVG color name is one of the colors defined in the list of [SVG color keyword names](https://www.w3.org/TR/SVG/types.html#ColorKeywords) provided by the World Wide Web Consortium; for example, `steelblue` or `gainsboro`. Note that you cannot enter an alpha channel value if you use a color name.
+SVG Farbname ist eine der in der Liste der Farben definierten Farben. [SVG Farbe Keyword Namen](https://www.w3.org/TR/SVG/types.html#ColorKeywords) die vom World Wide Web Consortium bereitgestellt werden, z.B. " steelblue " oder "gainsboro ". Beachten Sie, dass Sie keinen Alpha-Kanalwert eingeben können, wenn Sie einen Farbnamen verwenden.
 
-You can use the [w3schools color picker](https://www.w3schools.com/colors/colors_picker.asp) to get the hex values for a color.
+Sie können die Funktion [w3schools color picker](https://www.w3schools.com/colors/colors_picker.asp) benutzen, um die Hex-Werte für eine Farbe zu erhalten.
 
-**Examples:**
+**Beispiele:**
 
 `Active_Highlight=#308cc6`
 
@@ -89,13 +91,13 @@ You can use the [w3schools color picker](https://www.w3schools.com/colors/colors
 
 ### Pen Format {#customize-formats-pen}
 
-A pen contains the following values in a comma separated list:
+Ein Pen enthält die folgenden Werte in einer kommagetrennten Liste:
 
-* Color as described above
-* Pen width as a floating point value measured in pixels. You have to use `.` as decimal separator no matter what your locale defines.
-* Pen style. One of the following values: `Solid`, `Dash`, `Dot`, `DashDot` and `DashDotDot`.
+* Farbe wie oben beschrieben
+* Pen-Breite als Fließkommawert gemessen in Pixeln. Sie müssen den `.` als Dezimaltrennzeichen nemen, unabhängig davon, was Ihr Gebietsschema definiert.
+* Pen-Stil. Einer der folgenden Werte: `Solid`, `Dash`, `Dot`, `DashDot` und `DashDotDot`.
 
-**Examples:**
+**Beispiele:**
 
 `RestrictedPen=#fd8c00, 2, DashDotDot`
 
@@ -103,22 +105,23 @@ A pen contains the following values in a comma separated list:
 
 `NationalParkPen=#509090, 2.1, Solid`
 
-## Icons  {#customize-icons}
+## Icons {#customize-icons}
 
-To change an icon download it from the Github source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/2.0/resources/icons) or extract the included file `Little Navmap/customize/icons.zip`.
+Um ein Symbol zu ändern, laden Sie es aus dem Github Quell-Repository herunter. [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/2.0/resources/icons) oder entpacken Sie die enthaltene Datei
+ `Little Navmap/customize/icons.zip`.
+ 
+Ändern Sie das Icon und speichern Sie es im Einstellungsordner `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. _Little Navmap_ erkennt und verwendet das Symbol automatisch beim nächsten Start.
 
-Modify the icon and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. _Little Navmap_ will automatically detect and use the icon on next startup.
+Das Format ist auf SVG beschränkt. \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\), wo erweiterte Grafikeffekte wie Texturen nicht funktionieren.
 
-The format is limited to SVG \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\) where advanced graphics effects like textures will not work.
-
-You can use the free vector drawing program [Inkscape](https://inkscape.org) to edit the icons.
-Restart *Little Navmap* to see the changes.
+Sie können das kostenlose Vektorzeichnungsprogramm  [Inkscape](https://inkscape.org) verwenden,um Icons zu editieren.
+Starten Sie *Little Navmap* neu, um die Änderungen zu sehen.
 
 ### User, AI and Multiplayer Aircraft Icons {#customize-aircraft-icons}
 
-All icons for user, AI/multiplayer aircraft, helicopters and ships are stored in the program but can be overloaded by the user.
+Alle Symbole für Benutzer, KI/Multiplayer-Flugzeuge, Hubschrauber und Schiffe sind im Programm gespeichert, können aber vom Benutzer überschrieben werden.
 
-The icons are:
+Die Icons sind:
 
 * `aircraft_boat_ground_user.svg`
 * `aircraft_boat_ground.svg`
@@ -139,15 +142,15 @@ The icons are:
 * `aircraft_online.svg`
 * `aircraft_online_ground.svg`
 
-The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
+The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. Das Icon zeigt fliegende Flugzeuge an, wenn `ground` fehlt und wenn für KI/Multiplayer-Fahrzeuge `user` fehlt. Aus historischen Gründen werden alle Icons mit einem Präfix  `aircraft` versehen.
 
 ### Userpoint Category Icons {#customize-userpoint-icons}
 
-Icons for userpoint categories are stored in the program but can be overloaded by the user as well.
+Icons für Userpoint-Kategorien werden im Programm gespeichert, können aber auch vom Benutzer überschrieben werden.
 
-Default category icons can be overloaded with another icon by placing a file with one of the default category names in the settings directory.
+Standardkategoriensymbole können mit einem anderen Symbol überschrieben werden, indem eine Datei mit einem der Standardkategorienamen im Einstellungsverzeichnis abgelegt wird.
 
-New categories can be added by placing a new icon adhering to a certain name pattern in the default directory.
+Neue Kategorien können hinzugefügt werden, indem ein neues Symbol, das einem bestimmten Namensmuster entspricht, im Standardverzeichnis platziert wird.
 
 * `userpoint_Airport.png`
 * `userpoint_Airstrip.png`
@@ -169,10 +172,10 @@ New categories can be added by placing a new icon adhering to a certain name pat
 * `userpoint_VRP.png`
 * `userpoint_Waypoint.png`
 
-The text between the first underscore `_` and the `.png` ending defines the category.
-For example `userpoint_My Places.png` creates a new category `My Places`.
+Der Text zwischen dem ersten Unterstrich `_` und dem `.png` Ende definiert die Kategorie.
+Zum Beispiel `userpoint_My Places.png` erstellt eine neue Kategorie `My Places`.
 
-Do not use special characters like `/` for categories. Only letters, digits, space, underscore and dashes are allowed. Umlauts and accented characters are no problem.
+Verwenden Sie für Kategorien keine Sonderzeichen wie z.B. `/`. Es sind nur Buchstaben, Ziffern, Leerzeichen, Unterstriche und Bindestriche erlaubt. Umlaute und Akzentzeichen sind kein Problem.
 
 
 
