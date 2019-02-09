@@ -35,10 +35,11 @@
 * [Dock Window](FLIGHTPLAN.md)
 * [Procedures](APPROACHES.md)
 * [Edit Position](EDITFPPOSITION.md)
-* [Route Description](ROUTEDESCR.md) 
+* [Route Description](ROUTEDESCR.md)
 * [Editing on the Map](MAPFPEDIT.md)
 * [Formats](FLIGHTPLANFMT.md)
 * [Elevation Profile Dock Window](PROFILE.md)
+* [Flight Plan Online Export](ROUTEEXPORT.md)
 
 ### Aircraft Performance
 

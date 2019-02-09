@@ -73,6 +73,20 @@ This function changes the current file type and name which means that all furthe
 
 Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS, the G1000 or the FMS.
 
+#### ![Save Flight Plan as FlightGear FGFP](../images/icons/saveasfg.png "Save Flight Plan as FlightGear FGFP") Save Flight Plan as FlightGear FGFP {#save-flight-plan-as-fgfp}
+
+FlightPlan format which can be loaded into the RouteManager of the free flight simulator [FlightGear](http://www.flightgear.org).
+
+_Little Navmap_ can read and write this format.
+
+A warning dialog will be shown with the warning above when saving.
+
+See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
+
+This function changes the current file type and name which means that all further saves will go into the new FGFP file and the file will be reloaded on next start.
+
+You can save the files into any folder and load it within FlightGear.
+
 #### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
 
 Exports the current flight plan as an FLP file usable by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft. This format is limited so a dialog is shown if any unsupported features are detected in the current flight plan.
@@ -91,7 +105,13 @@ Like any other export function this does not change the current file name and ty
 
 See also [Flight Plan Formats](FLIGHTPLANFMT.md).
 
-#### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Export Flight Plan as X-Plane FMS 3 {#export-flight-plan-as-fms3}
+#### Export Flight Plan to Aircraft Formats (Sub-Menu) {#export-submenu-aircraft}
+
+See [Flight Plan Formats](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
+
+All export functions do not change the current file name and type. Further saves will still use the same file name and format as before.
+
+##### Export Flight Plan as X-Plane FMS 3 {#export-flight-plan-as-fms3}
 
 Saves the flight plan using the older X-Plane FMS 3 format which is limited but can be loaded by X-Plane 10 and X-Plane 11.05. A warning dialog is shown if any unsupported features are detected in the current flight plan.
 
@@ -100,38 +120,6 @@ See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 This export function this does not change the current file name and type. Further saves will still use the same file name and format as before.
 
 Store FMS files into the `Output/FMS plans` directory inside the X-Plane directory if you would like to use the flight plan in the X-Plane GPS or FMS.
-
-#### Export Flight Plan to other Formats (Sub-Menu) {#export-submenu}
-
-See [Flight Plan Formats](FLIGHTPLANFMT.md) for more detailed information on the available export formats.
-
-Export functions do not change the current file name and type. Further saves will still use the same file name and format as before.
-
-##### Export Flight Plan as Garmin GTN GFP {#save-flight-plan-as-gfp}
-
-Exports the flight plan in GFP format used by the _Flight1 GTN 650/750_.
-
-Procedures are not included in the exported file.
-
-See [Flight Plan Formats](FLIGHTPLANFMT.md#flight-plan-formats-gfp) for more information about this export format and how to work around locked waypoints.
-
-##### Export Flight Plan as GFP for Reality XP GTN {#save-flight-plan-as-rxpgtn}
-
-Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_. This format allows to save procedures and airways.
-
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes) for information about paths and other remarks.
-
-##### Export Flight Plan to FPL for the Reality XP GNS {#save-flight-plan-as-rxpgns}
-
-Save flight plan as FPL file usable by the _Reality XP GNS 530W/430W V2_.
-
-Procedures or their respective waypoints are not included in the exported file.
-
-The default directory to save the flight plans for the GNS units is
-`C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
-
-See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
 
 ##### Export Flight Plan as PMDG RTE {#export-flight-plan-as-rte}
 
@@ -185,6 +173,66 @@ Save flight plan as PLN file for the Blackbox Simulations Airbus. The format doe
 
 Save the file to `FSXP3D\BlackBox Simulation\Airbus A330` or `FSXP3D\Blackbox Simulation\Company Routes` depending on aircraft.
 
+##### MDX \(Leonardo MaddogX\) {#flight-plan-formats-mdx}
+
+Flight plan for the Leonardo MaddogX aircraft. Saving of procedures is not supported.
+
+##### RTE \(QualityWings Aircraft\) {#flight-plan-formats-qw-rte}
+
+Export plan for QualityWings aircraft. Saving of procedures is not supported. The file location depends on the aircraft.
+
+##### RTE \(Level-D Aircraft\) {#flight-plan-formats-leveld-rte}
+
+Flight plan for Level-D aircraft. This format cannot save procedures. Save this to `FSXP3D\Level-D Simulations\navdata\Flightplans`.
+
+##### FPL \(Feelthere/Wilco Aircraft\) {#flight-plan-formats-feelthere}
+
+This format cannot save procedures. The location depends on the aircraft.
+
+#### Export Flight Plan to Garmin Formats (Sub-Menu) {#export-submenu-garmin}
+
+##### Export Flight Plan as Garmin GTN GFP {#save-flight-plan-as-gfp}
+
+Exports the flight plan in GFP format used by the _Flight1 GTN 650/750_.
+
+Procedures are not included in the exported file.
+
+See [Flight Plan Formats](FLIGHTPLANFMT.md#flight-plan-formats-gfp) for more information about this export format and how to work around locked waypoints.
+
+##### Export Flight Plan as GFP for Reality XP GTN {#save-flight-plan-as-rxpgtn}
+
+Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_. This format allows to save procedures and airways.
+
+See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes) for information about paths and other remarks.
+
+##### Export Flight Plan to FPL for the Reality XP GNS {#save-flight-plan-as-rxpgns}
+
+Save flight plan as FPL file usable by the _Reality XP GNS 530W/430W V2_.
+
+Procedures or their respective waypoints are not included in the exported file.
+
+The default directory to save the flight plans for the GNS units is
+`C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
+for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+
+See also [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
+
+#### Export Flight Plan to Online Formats (Sub-Menu) {#export-submenu-online}
+
+##### FPL \(IvAp or X-IvAp\) {#flight-plan-formats-ivap}
+
+Export flight plan format for IVAO online network clients [IvAp or X-IvAp](https://www.ivao.aero/softdev/ivap.asp).
+
+The [Flight Plan Online Export](ROUTEEXPORT.md) dialog will appear before where you can add all needed information.
+
+##### VFP \(vPilot\) {#flight-plan-formats-vpilot}
+
+Export the flight plan for the VATSIM [vPilot](https://www.vatsim.net/pilots/software) online network client.
+
+The [Flight Plan Online Export](ROUTEEXPORT.md) dialog will appear before where you can add all needed information.
+
+#### Export Flight Plan to other Formats (Sub-Menu) {#export-submenu-other}
+
 ##### Export Flight Plan for UFMC {#export-flight-plan-as-ufmc}
 
 Save flight plan as [UFMC](http://ufmc.eadt.eu) file. The format does not allow saving of procedures.
@@ -197,6 +245,10 @@ Save flight plan as FPL file usable by [X-FMC](https://www.x-fmc.com). The forma
 
 The file should be saved to Path to `XPLANE\Resources\plugins\XFMC\FlightPlans`.
 
+##### EFBR \(Electronic Flight Bag\) {#flight-plan-formats-efbr}
+
+Export flight plan for the [AivlaSoft Electronic Flight Bag](https://aivlasoft.com). Saving of procedures is not supported.
+
 ##### Export Flight Plan as GPX {#export-flight-plan-as-gpx}
 
 Exports the current flight plan into a GPS Exchange Format file which can be read by Google Earth and most other GIS applications.
@@ -205,17 +257,18 @@ The flight plan is exported as a route and the flown aircraft trail as a track i
 
 The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
 
-**Do not forget to clear the aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
-
+**Do not forget to clear the aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before a flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
 
 ##### Show Flight Plan in SkyVector {#export-flight-plan-as-skyvector}
 
 Opens the default web browser and shows the current flight plan in [SkyVector](https://skyvector.com). Procedures are not shown.
 
+Note that the flight plan will not be displayed if a small airport is unknown to Skyvector.
+
 Example: [ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C ENBO](https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO). Note missing SID and STAR in SkyVector.
 
-##### Save Waypoints for Approaches {#export-flight-plan-approach-waypoints}
-##### Save Waypoints for SID and STAR {#export-flight-plan-sid-star-waypoints}
+#### Save Waypoints for Approaches {#export-flight-plan-approach-waypoints}
+#### Save Waypoints for SID and STAR {#export-flight-plan-sid-star-waypoints}
 
 Save procedure waypoints instead of procedure information if checked. This affects all flight plan export and save formats.
 
@@ -250,7 +303,24 @@ You should restart the application after going online again.
 
 ### ![Save Map as Image](../images/icons/mapsaveasimage.png "Save Map as Image") Save Map as Image {#save-map-as-image}
 
-Saves the current map view as an image file. Allowed formats are JPEG, PNG and BMP.
+Saves the current map view as an image file. Allowed formats are JPEG, PNG and BMP.  The image does not include the map overlays.
+
+### ![Save Map as Image for AviTab](../images/icons/mapsaveasimage.png "Save Map as Image") Save Map as Image {#save-map-as-avitab}
+
+Saves the current map view as an image file for [AviTab](https://github.com/fpw/avitab). Allowed formats are JPEG and PNG.
+
+The saved file is accompanied by a calibration file in JSON format. It has the same name as the image with an additional `.json` extension.
+
+The files have to be saved to `.../X-Plane 11/Resources/plugins/AviTab/MapTiles/Mercator`.
+
+See here in the AviTab documentation for more information how to load the map image: [Map App - Mercator](https://github.com/fpw/avitab/wiki/Map-App#mercator).
+
+Note that _Little Navmap_ limits the saved image to the size of the currently visible map window. Undock and maximize the map window to
+get a higher resolution image for export.
+
+### Copy Map Image to Clipboard {#save-map-to-clipboard}
+
+Copies the current map image to the clipboard. The image does not include the map overlays.
 
 ### ![Print Map](../images/icons/printmap.png "Print Map") Print Map {#print-map}
 
@@ -686,6 +756,8 @@ _**Picture above:** Spherical map projection with _`Simple`_ offline map theme s
 #### Theme {#theme}
 
 Please note that all the online maps are delivered from free services therefore fast download speeds and high availability cannot be guaranteed. In any case it is easy to deliver and install a new online map source without creating a new _Little Navmap_ release. See [Creating or adding Map Themes](MAPTHEMES.md) for more information.
+
+Custom map themes are prefixed with a `*` in the drop down box in the toolbar and with the word `Custom` in the menu.
 
 ##### OpenStreetMap {#openstreetmap}
 

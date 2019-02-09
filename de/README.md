@@ -8,7 +8,7 @@ _Little Navmap_ ist ein freier Open-Source Flugplaner, Navigationswerkzeug, Kart
 
 ---
 
-Mehr über meine Projekte auf [**GitHub**](https://albar965.github.io).
+Mehr über meine Projekte auf [**www.littlenavmap.org**](www.littlenavmap.org).
 
 ---
 

@@ -125,6 +125,8 @@ The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 
 The bottom part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
 
+Look for posts in the [support forum at AVSIM](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/) if the original download is not available.
+
 Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
 
 ![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")

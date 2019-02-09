@@ -10,29 +10,37 @@ Note the difference between `Save Flight Plan as ...` and `Export Flight Plan as
 
 The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(X = supported, 0 = not supported\):
 
-| Format                        | Read | Write | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Cruise<br/>Alt. | Ground<br/>speed  | Proc. |
-| ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ----  |
-| FSX PLN<br/>annotated         | X    | X     | X     | X           | X                      | X               | X               | X                 | X     |
-| FSX PLN                       | X    | X     | X     | X           | X                      | X               | X               | 0                 | 0     |
-| FS9 PLN<br/>clean             | X    | 0     | X     | X           | X                      | X               | X               | 0                 | 0     |
-| FSC PLN                       | X    | 0     | X     | 0           | X                      | 0               | 0               | 0                 | 0     |
-| X-Plane<br/>FMS 11            | X    | X     | X     | 0           | X                      | 0               | X               | 0                 | X     |
-| X-Plane<br/>FMS 3             | X    | X     | 0     | 0           | X                      | 0               | X               | 0                 | 0     |
-| FLP                           | X    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | X     |
-| Reality XP<br/>GNS FPL        | 0    | X     | 0     | 0           | X                      | 0               | 0               | 0                 | 0     |
-| Reality XP<br/>GTN GFP        | 0    | X     | X     | 0           | X[^2]                  | 0               | 0               | 0                 | X     |
-| Flight1 GTN                   | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| PMDG RTE                      | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| TXT                           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| Majestic Dash<br/>FPR [^1]    | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| IXEG 737 FPL                  | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| FLTPLAN<br/>for iFly          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| ProSim<br/>`companyroutes.xml`| 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| PLN for<br/>BBS Airbus        | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| FPL for<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
-| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^3] |
-| GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| Format                        | Read | Write | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Cruise<br/>Alt. | Ground<br/>speed  | Proc.  |
+| ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ------ |
+| FSX PLN<br/>annotated         | X    | X     | X     | X           | X                      | X               | X               | X                 | X      |
+| FSX PLN                       | X    | X     | X     | X           | X                      | X               | X               | 0                 | 0      |
+| FS9 PLN<br/>clean             | X    | 0     | X     | X           | X                      | X               | X               | 0                 | 0      |
+| FSC PLN                       | X    | 0     | X     | 0           | X                      | 0               | 0               | 0                 | 0      |
+| X-Plane<br/>FMS 11            | X    | X     | X     | 0           | X                      | 0               | X               | 0                 | X      |
+| X-Plane<br/>FMS 3             | X    | X     | 0     | 0           | X                      | 0               | X               | 0                 | 0      |
+| FlightGear<br/>FGFP           | X    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | X [^2] |
+| FLP                           | X    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | X      |
+| Reality XP<br/>GNS FPL        | 0    | X     | 0     | 0           | X                      | 0               | 0               | 0                 | 0      |
+| Reality XP<br/>GTN GFP        | 0    | X     | X     | 0           | X [^1]                 | 0               | 0               | 0                 | X      |
+| Flight1 GTN                   | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| PMDG RTE                      | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| TXT                           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| Majestic Dash<br/>FPR         | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| IXEG 737 FPL                  | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| FLTPLAN<br/>for iFly          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| ProSim<br/>`companyroutes.xml`| 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| PLN for<br/>BBS Airbus        | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^2] |
+| MDX for<br/>MaddogX           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| RTE for<br/>QualityWings      | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| EFBR for<br/>EFB              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| RTE for<br/>Level-D           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| FPL for<br/>Feelthere         | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| FPL for<br/>IVAP/X-IVAP [^3]  | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| VFP for<br/>vPilot [^3]       | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| FPL for<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 
 Procedure waypoints are excluded from all file formats by default, except for GPX. You have to use the GPS or FMS in the simulator to select procedures.
 
@@ -74,9 +82,9 @@ This is the same as the FSX PLN but without additional annotations which contain
 
 ### ![FMS 11](../images/icons/saveasfms.png "FMS 11") FMS 11 \(X-Plane\) {#flight-plan-formats-fms11}
 
-New X-Plane FMS format which can be loaded into the stock GPS, the G1000 and the FMS of X-Plane 11.10. This is the default save format for X-Plane FMS now. Use the export function to save old FMS version 3 files.
+X-Plane FMS format which can be loaded into the stock GPS, the G1000 and the FMS of [X-Plane 11.10](https://www.x-plane.com) or later. This is the default save format for X-Plane FMS now. Use the export function to save old FMS version 3 files.
 
-**This format is supported as of X-Plane 11.10. It can already be used in the beta versions but might crash X-Plane version 11.05 and below.**
+**This format is supported as of X-Plane 11.10.**
 
 _Little Navmap_ can read and write this format.
 
@@ -89,6 +97,14 @@ X-Plane FMS format which can be loaded into the stock GPS and FMS of X-Plane 10 
 _Little Navmap_ can read and write this format.
 
 Store these files into the `Output/FMS plans` directory inside the X-Plane directory.
+
+### ![FGFP](../images/icons/saveasfg.png "FGFP") FGFP \(FlightGear\) {#flight-plan-formats-fgfp}
+
+FlightPlan format which can be loaded into the RouteManager of the free flight simulator [FlightGear](http://www.flightgear.org).
+
+_Little Navmap_ can read and write this format.
+
+You can save the files into any folder and load it within FlightGear.
 
 ### FLP {#flight-plan-formats-flp}
 
@@ -174,7 +190,7 @@ The file is a simple text format containing only one line of text. Example for t
 
 ### FPR \(Majestic Dash\) {#flight-plan-formats-fpr}
 
-Flight plan format for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints.
+Flight plan format for the Majestic Software MJC8 Q400. Note that the export is limited to a list of waypoints.
 
 The flight plan has to be saved to `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\nav\routes`.
 
@@ -231,6 +247,38 @@ This format is for the Blackbox Simulations Airbus for FSX or P3D. Save this to 
 
 This format cannot save procedures.
 
+### MDX \(Leonardo MaddogX\) {#flight-plan-formats-mdx}
+
+Flight plan for the Leonardo MaddogX aircraft. This format cannot save procedures.
+
+### RTE \(QualityWings Aircraft\) {#flight-plan-formats-qw-rte}
+
+Flight plan for QualityWings aircraft. This format cannot save procedures. The location depends on the aircraft.
+
+### EFBR \(Electronic Flight Bag\) {#flight-plan-formats-efbr}
+
+Flight plan for the [AivlaSoft Electronic Flight Bag](https://aivlasoft.com). Saving of procedures is not supported.
+
+### RTE \(Level-D Aircraft\) {#flight-plan-formats-leveld-rte}
+
+Flight plan for Level-D aircraft. This format cannot save procedures. Save this to `YOURSIMULATOR\Level-D Simulations\navdata\Flightplans`.
+
+### FPL \(Feelthere/Wilco Aircraft\) {#flight-plan-formats-feelthere}
+
+The formats above cannot save procedures. The location depends on the aircraft.
+
+### FPL \(IvAp or X-IvAp\) {#flight-plan-formats-ivap}
+
+Flight plan format for the IVAO online network clients [IvAp or X-IvAp](https://www.ivao.aero/softdev/ivap.asp).
+
+The [Flight Plan Online Export](ROUTEEXPORT.md) dialog will appear before where you can add all needed information.
+
+### VFP \(vPilot\) {#flight-plan-formats-vpilot}
+
+Flight plan format for the VATSIM [vPilot](https://www.vatsim.net/pilots/software) online network client.
+
+The [Flight Plan Online Export](ROUTEEXPORT.md) dialog will appear before where you can add all needed information.
+
 ### UFMC \(Universal Flight Management Computer\) {#flight-plan-formats-ufmc}
 
 A flight plan format for the [UFMC](http://ufmc.eadt.eu). The format does not allow saving of procedures.
@@ -272,6 +320,6 @@ _Little Navmap_ allows to change the Garmin export to replace all waypoints with
 
 The export of user-defined waypoints can be enabled in the options dialog on tab `Flight Plan`.
 
-[^1]: The FPR format does allow saving of airways and procedures but this will be implemented in a future release of _Little Navmap_.
-[^2]: User-defined waypoints will be renamed when loading into the GTN.
-[^3]: Only SID and STAR. Saving or approaches is not supported.
+[^1]: User-defined waypoints will be renamed when loading into the GTN.
+[^2]: Only SID and STAR. Saving or approaches is not supported.
+[^3]: Additional information for online flying can be added in a dialog before saving.

@@ -1,8 +1,14 @@
 {
-  "plugins": ["-sharing"],
-  "pluginsConfig": {
+  "plugins": ["-sharing", "anchorjs", "-livereload"],
+    "pluginsConfig": {
     "theme-default": {
-        "showLevel": true
+      "showLevel": true
+    },
+    "search": {
+      "maxIndexSize": 1000000000
+    },
+    "lunr": {
+      "maxIndexSize": 1000000000
     }
   }
 }

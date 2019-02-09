@@ -9,7 +9,7 @@ airport search and airport information system for Flight Simulator X, Flight Sim
 
 ---
 
-More about my projects at [**GitHub**](https://albar965.github.io).
+More about my projects at [**www.littlenavmap.org**](https://www.littlenavmap.org).
 
 ---
 

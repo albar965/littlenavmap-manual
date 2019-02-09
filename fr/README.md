@@ -8,12 +8,12 @@ _Little Navmap_ est un planificateur de vol open source gratuit, un outil de nav
 
 ---
 
-Plus d'informations sur mes projets à [**GitHub**](https://albar965.github.io).
+Plus d'informations sur mes projets à [**www.littlenavmap.org**](https://www.littlenavmap.org).
 
 ---
 
 Copyright 2015-2018 Alexander Barthel
-© 2017-2018 traduction française Patrick JUNG alias Patbest 
+© 2017-2018 traduction française Patrick JUNG alias Patbest
 ![Aviabest](../images/aviabest.png)
 ---
 

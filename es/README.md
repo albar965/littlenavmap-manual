@@ -8,11 +8,11 @@ _Little Navmap_ es un planificador de vuelo gratuito de código abierto con herr
 
 ---
 
-Más acerca de mi proyecto en [**GitHub**](https://albar965.github.io).
+Más acerca de mi proyecto en [**www.littlenavmap.org**](https://www.littlenavmap.org).
 
 ---
 
-Copyright 2015-2018 Alexander Barthel. 
+Copyright 2015-2018 Alexander Barthel.
 
 Traducción al español, Alfredo alias _fred_, Josemi alias _aquileo_, Emilio alias _zxplane_.
 
