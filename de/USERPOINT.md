@@ -1,228 +1,226 @@
-## User-defined Waypoints {#userpoints}
+## Nutzerdefinierte Wegpunkte {#userpoints}
 
-User-defined waypoints \(or userpoints\) allow for adding, editing, searching, exporting, and importing bookmarks, points of interest, waypoints and more. You can pick freely which types you want to see as icons on the map.
+Nutzerdefinierte Wegpunkte \(oder Nutzerpunkte\) ermöglichen das Hinzufügen, Bearbeiten, Suchen, Exportieren und Importieren von Lesezeichen, Points of Interest, Wegpunkten und mehr. Sie können frei wählen, welche Typen Sie als Symbole auf der Karte sehen möchten.
 
 ![Overview of User-defined Waypoints](../images/userpoint_overview.jpg "Overview of User-defined Waypoints")
 
-_**Picture above:** An overview of userpoint functionality showing information on the left dock window, highlighted userpoints on the map, userpoints selected in the search window on the right, and the drop down menu opened by clicking the userpoint icon in the dock window._
+_**Bild oben:** Eine Übersicht über die Nutzerpunktfunktionalität, die Informationen über das linke Dockfenster, hervorgehobene Nutzerpunkte auf der Karte, im Suchfenster rechts ausgewählte Nutzerpunkte und das Dropdown-Menü, das durch Anklicken des Nutzerpunkt-Symbols im Dockfenster geöffnet wird.._
 
-## User-defined Waypoint Search {#userpoints-search}
+## Nutzerdefinierte Wegpunkt-Suche {#userpoints-search}
 
-The functionality of the search filters and the result table is similar to the airport and navaid search. See [Search Dock Window](SEARCH.md) for information about search filters and buttons.
+Die Funktionalität der Suchfilter und der Ergebnistabelle ist ähnlich wie bei der Flughafen- und Navaidsuche. Siehe [Dockfenster Suche](SEARCH.md) für Informationen über Suchfilter und Schaltflächen.
 
-Additional context menu items and buttons allow adding, editing, and deleting of userpoints.
+Zusätzliche Kontextmenüelemente und Schaltflächen ermöglichen das Hinzufügen, Bearbeiten und Löschen von Benutzerpunkten.
 
-### Top Buttons and additional Menu Items {#userpoints-top-buttons}
+### Top-Buttons und zusätzliche Menüpunkte {#userpoints-top-buttons}
 
-See [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu) for a description of common context menu items across all search dialogs.
+Siehe [Suchergebnistabelle Ansicht Kontextmenü](SEARCH.md#search-result-table-view-context-menu) für eine Beschreibung der gemeinsamen Kontextmenüelemente über alle Suchdialoge hinweg.
 
-#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Add Userpoint {#userpoints-add}
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Nutzerpunkt hinzufügen {#userpoints-add}
 
-Add a user-defined waypoint to the userdata.
+Fügt den Benutzerdaten einen nutzerdefinierten Wegpunkt hinzu.
 
-Some fields of the new userpoint dialog are populated automatically depending on a selected userpoint or, if nothing is selected in the search result table, based on previous additions. This allows to quickly add similar userpoints to the database without the need to re-enter all the information.
+Einige Felder des neuen Nutzerpunkt-Dialogs werden abhängig von einem ausgewählten Nutzerpunkt automatisch oder, wenn in der Suchergebnistabelle nichts ausgewählt ist, basierend auf früheren Ergänzungen ausgefüllt. Dies ermöglicht es, der Datenbank schnell ähnliche Benutzerpunkte hinzuzufügen, ohne dass alle Informationen erneut eingegeben werden müssen.
 
-Note that you have to add the coordinates manually if the dialogs starts empty i.e. nothing was selected in the result table. Add userpoints with the map context menu [Add Userpoint](MAPDISPLAY.md#add-userpoint) to avoid this and have the coordinates set automatically.
+Beachten Sie, dass Sie die Koordinaten manuell hinzufügen müssen, wenn die Dialoge leer beginnen, d.h. in der Ergebnistabelle nichts ausgewählt wurde. Fügen Sie Nutzerpunkte über das Kontextmenü [Nutzerpunkt hinzufügen](MAPDISPLAY.md#add-userpoint) hinzu, um dies zu vermeiden und die Koordinaten automatisch erstellen zu lassen.
 
-See below for more information about the add dialog.
+Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog.
 
-#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Edit Userpoint {#userpoints-edit}
+#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Nutzerpunkte bearbeiten {#userpoints-edit}
 
-Open the edit dialog for one or more userpoints.
+Öffnet den Bearbeitungsdialog für einen oder mehrere Nutzerpunkte.
 
-The edit dialog shows a column of checkboxes on the right side if more than one userpoint is selected. These allow to choose the fields to edit.
+Der Bearbeitungsdialog zeigt auf der rechten Seite eine Reihe von Kontrollkästchen, wenn mehr als ein Benutzerpunkt ausgewählt ist. Diese ermöglichen es, die zu bearbeitenden Felder auszuwählen.
 
-See below for more information about the add dialog.
+Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog.
 
-#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Delete Userpoint {#userpoints-delete}
+#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Nutzerpunkt löschen {#userpoints-delete}
 
-Remove the selected userpoints after a confirmation dialog.
+Entfernt die ausgewählten Benutzerpunkte nach einem Bestätigungsdialog.
 
-#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#userpoints-reset-search}
+#### ![Reset Search](../images/icons/clear.png "Reset Search") Suche zurücksetzen {#userpoints-reset-search}
 
-Clear search filters and revert to showing all entries in the search result table view.
+Löscht die Suchfilter und kehrt zur Anzeige aller Einträge in der Tabellenansicht der Suchergebnisse zurück.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#userpoints-clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl aufheben {#userpoints-clear-selection}
 
-Deselect all selected entries in the table and remove any highlight circles from the map.
+Deaktiviert alle markierten Einträge in der Tabelle und entfernt alle markierten Kreise aus der Karte.
 
-#### ![Help](../images/icons/help.png "Help") Help {#userpoints-help}
+#### ![Help](../images/icons/help.png "Help") Hilfe {#userpoints-help}
 
-Display a quick help in the tooltip. Click to open this chapter of the manual in the default browser.
+Zeigt eine Kurzhilfe im Tooltip an. Klicken Sie hier, um dieses Kapitel des Handbuchs im Standardbrowser zu öffnen.
 
-#### ![Menu Button](../images/icons/menubutton.png "Menu Button") Menu Button {#userpoints-menu}
+#### ![Menu Button](../images/icons/menubutton.png "Menu Button") Menü-Schaltfläche {#userpoints-menu}
 
-Drop down menu button that allows to hide or show search options.
+Dropdown-Menü-Taste, mit der Sie Suchoptionen ein- oder ausblenden können.
 
-The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications.
+Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige `*`, um anzuzeigen, dass die zugehörige Filterzeile Änderungen aufweist.
 
-### Add Userpoints Dialog {#userpoints-dialog-add}
+### Dialogfeld Nutzerpunkte hinzufügen
+ {#userpoints-dialog-add}
 
-The dialog is shown when selecting [Add Userpoint](MAPDISPLAY.md#add-userpoint) ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") in the map context menu, using the top button in the userpoint search tab, or selecting `Add Userpoint` from the context menu in the search result table.
+Der Dialog wird angezeigt, wenn Sie im Kontextmenü Karte [Nutzerpunkt hinzufügen](MAPDISPLAY.md#add-userpoint) ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") über die oberste Schaltfläche in der Registerkarte Nutzerpunkt-Suche oder über die Auswahl von `Nutzerpunkt hinzufügen` aus dem Kontextmenü in der Suchergebnistabelle wählen.
 
-The dialog will be populated automatically depending on the selected map context, the selection in the search result table or previous additions.
+Der Dialog wird je nach ausgewähltem Kartenkontext, der Auswahl in der Suchergebnistabelle oder früheren Ergänzungen automatisch gefüllt.
 
-`Type` can be selected from a drop down list or entered freely.
+`Type` kann aus einer Dropdown-Liste ausgewählt oder frei eingegeben werden.
 
-The field `Description` allows multi line text and special characters. Formatting like italic or bold is not supported.
+Das Feld `Beschreibung` erlaubt mehrzeiligen Text und Sonderzeichen. Formatierungen wie kursiv oder fett werden nicht unterstützt.
 
-Links are recognized in the field `Description` and can be opened in the dock window `Information` on tab `Navaids` which is shown after clicking on a userpoint or selecting `Show Information` in one of the context menus. Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like `file:///C:/Projekte/atools` on Windows or `file:///home/alex/Aircraft_Notes.txt` on macOS or Linux.
+Links werden im Feld `Beschreibung` erkannt und können im Dockfenster `Information` auf der Registerkarte `Navaids` geöffnet werden, die nach dem Anklicken eines Nutzerpunkts oder dem Auswählen von `Informationen anzeigen` in einem der Kontextmenüs angezeigt wird. Normale Weblinks wie  `http://www.example.com` oder `https://www.example.com` werden neben Verzeichnis- oder Dateilinks wie z.B. `file:///C:/Projekte/atools` unter Windows oder `file:///home/alex/Aircraft_Notes.txt` aus macOS oder Linux erkannt.
 
-The field `Visible from` allows to define visibility on the map depending on zoom distance. The zoom distance \(viewpoint distance to earth surface\) for the current map view is shown in the [Statusbar](MENUS.md#statusbar). The user point will be visible for all zoom distances smaller than the value in `Visible from`. Maximum value is 3000 nm and minimum value is 1 nm.
+Das Feld `Sichtbar von` ermöglicht die Festlegung der Sichtbarkeit auf der Karte in Abhängigkeit von der Zoomdistanz. Der Zoomabstand \(Blickwinkelabstand zur Erdoberfläche\) für die aktuelle Kartenansicht wird in der [Statusleiste](MENUS.md#statusbar) angezeigt. Der Nutzerpunkt ist für alle Zoomabstände sichtbar, die kleiner sind als der Wert in `Sichtbar von`. Der Maximalwert beträgt 3000 nm und der Minimalwert 1 nm.
 
-Valid coordinates are required to confirm the dialog. See [Coordinate Formats](COORDINATES.md#coordinates-formats) for a detailed description of the recognized coordinate formats. A label below the coordinates displays the parsed coordinates or an error message in case the coordinates could not be parsed.
+Zur Bestätigung des Dialogs sind gültige Koordinaten erforderlich. Eine detaillierte Beschreibung der erkannten Koordinatenformate finden Sie unter [Koordinatenformate](COORDINATES.md#coordinates-formats). Ein Label unter den Koordinaten zeigt die analysierten Koordinaten oder eine Fehlermeldung an, falls die Koordinaten nicht analysiert werden konnten.
 
-All other text fields are optional and can be left blank.
+Alle anderen Textfelder sind optional und können leer gelassen werden.
 
-The userpoint is removed on next startup of _Little Navmap_ when `Temporary userpoint. Delete on next startup.` is checked.
+Der Benutzerpunkt wird beim nächsten Start von _Little Navmap_ entfernt, wenn `Temporärer Benutzerpunkt. Löschen beim nächsten Start` ausgewählte wurde.
 
-The button `Reset` clears all fields with exception of the coordinates and sets the type of the userpoint to `Bookmark`.
+Die Schaltfläche `Reset` löscht alle Felder mit Ausnahme der Koordinaten und setzt den Typ des Benutzerpunktes auf `Bookmark`.
 
 ![Add Dialog for User-defined Waypoint](../images/userpoint_add.jpg "Add Dialog for User-defined Waypoints")
 
-_**Picture above:** Add dialog that has been populated automatically by context. The user right-clicked on an airport and selected _`Add Userpoint Airport Frankfurt am Main (EDDF)`_._
+_**Bild oben:** Fügt einen Dialog hinzu, der automatisch durch den Kontext gefüllt wurde. Der Benutzer hat mit der rechten Maustaste auf einen Flughafen geklickt und _`Füge Nutzerpunkt Flughafen Frankfurt am Main (EDDF) hinzu`_ausgewählt._
 
-#### Edit Userpoints Dialog {#userpoints-dialog-edit}
+#### Dialog Nutzerpunkte bearbeiten {#userpoints-dialog-edit}
 
-##### A single Userpoint
+##### Ein einzelner Nutzerpunkt
 
-The edit dialog shows the same edit fields as the dialog used to add userpoints above.
+Der Bearbeitungsdialog zeigt die gleichen Bearbeitungsfelder wie der Dialog zum Hinzufügen von Benutzerpunkten oben.
 
-Additional metadata shown at the bottom:
+Zusätzliche Metadaten werden unten angezeigt:
 
-* **Last Change:** Date and time of import, creation or change.
-* **Imported from file:** File and path of source file from CSV, X-Plane or Garmin import. You can filter the userpoint search for this name.
-* **Temporary userpoint - will be deleted on next startup.** This indicates that the userpoint is temporary.
+* **Letzte Änderung:** Datum und Uhrzeit des Imports, der Erstellung oder Änderung.
+* **Importiert aus Datei:** Datei und Pfad der Quelldatei aus dem CSV-, X-Plane- oder Garmin-Import. Sie können die Nutzerpunktsuche nach diesem Namen filtern.
+* **Temporärer Nutzerpunkt - wird beim nächsten Start gelöscht.** Dies bedeutet, dass der Benutzerpunkt temporär ist.
 
-The button `Reset` undoes all manual changes and reverts all fields to their original state.
-
+Die Schaltfläche `Reset` macht alle manuellen Änderungen rückgängig und setzt alle Felder in ihren ursprünglichen Zustand zurück.
 ![Edit Dialog for one User-defined Waypoint](../images/userpoint_edit.jpg "Edit Dialog for one User-defined Waypoint")
 
-_**Picture above:** Edit dialog for a single userpoint._
+_**Bild oben:** Bearbeitungsdialog für einen einzelnen Nutzerpunkt._
 
-##### Multiple Userpoints
+##### Mehrere Nutzerpunkte
 
-If more than one userpoint was selected for editing, the edit dialog shows a column of checkboxes on the right side.
+Wenn mehr als ein Nutzerpunkt zur Bearbeitung ausgewählt wurde, zeigt der Bearbeitungsdialog auf der rechten Seite eine Spalte mit Kontrollkästchen an.
 
-If checked, the field to the left is unlocked and any text entered will be assigned to the respective field in all selected userpoints. Unchecked fields will not be altered for any of the userpoints.
+Wenn diese Option aktiviert ist, wird das linke Feld entsperrt und der eingegebene Text wird in allen ausgewählten Benutzerpunkten dem jeweiligen Feld zugeordnet. Nicht angekreuzte Felder werden für keinen der Benutzerpunkte geändert.
 
-In combination with the powerful search function, this allows for bulk changes like fixing an invalid region and simultaneously changing the visibility range for the affected userpoints:
+In Kombination mit der leistungsstarken Suchfunktion ermöglicht dies Massenänderungen wie das Fixieren eines ungültigen Bereichs und die gleichzeitige Änderung des Sichtbarkeitsbereichs für die betroffenen Nutzerpunkte:
 
-1. Search for all userpoints with the invalid region.
-2. Select all the resulting userpoints, e.g. by clicking on one of the userpoints among the search results and pressing `Ctrl+A` or by clicking on the top left corner of the column header.
-3. Right-click one of the highlighted userpoints and select `Edit Userpoints` from the context menu.
-4. Click the checkbox to the right of the `Region:` field and change the region.
-5. Click the checkbox to the right of the `Visible from:` field and adjust the value.
-6. Click `OK`.
-
+1. Suchen Sie nach allen Nutzerpunkten mit dem ungültigen Bereich.
+2. Wählen Sie alle so entstandenen Nutzerpunkte aus, z.B. indem Sie auf einen der Nutzerpunkte in den Suchergebnissen klicken und Strg+A drücken oder indem Sie auf die linke obere Ecke der Spaltenüberschrift klicken.
+3. Klicken Sie mit der rechten Maustaste auf einen der markierten Benutzerpunkte und wählen Sie im Kontextmenü `Nutzerpunkte bearbeiten`.
+4. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld `Region:` und ändern Sie die Region.
+5. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld `Sichtbar von:` und passen Sie den Wert an.
+6. Klicken Sie auf `OK`.
 ![Edit Dialog for User-defined Waypoints](../images/userpoint_edit_bulk.jpg "Edit Dialog for User-defined Waypoints")
 
-_**Picture above:** Edit dialog for more than one userpoint. The fields _`Region`_ and _`Visible from`_ will be changed for all selected points. All other fields remain unchanged._
+_**Bild oben:** Bearbeitungsdialog für mehr als einen Nutzerpunkt. Die Felder _`Region`_ und _`Sichtbar von`_ werden für alle ausgewählten Punkte geändert. Alle anderen Felder bleiben unverändert._
 
-### Types {#userpoints-types}
+### Typen {#userpoints-types}
 
-The userpoint type can be any text string. If the text matches an entry from the list below, the appropriate icon is used. Otherwise, the icon for `Unknown` ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") is used.
+Der Nutzerpunkttyp kann eine beliebige Textzeichenfolge sein. Wenn der Text mit einem Eintrag aus der Liste unten übereinstimmt, wird das entsprechende Symbol verwendet. Andernfalls wird das Symbol für `Unbekannt` ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") angezeigt.
 
-Types and icons can be customized and new types can be added. See [Userpoint Category Icons](CUSTOMIZE.md#customize-userpoint-icons) for information on how to do this.
+Typen und Symbole können angepasst und neue Typen hinzugefügt werden. Weitere Informationen hierzu finden Sie unter [Nutzerpunk Kategorien Icons](CUSTOMIZE.md#customize-userpoint-icons).
 
-Some types are used as defaults when adding new userpoints. This depends on the context, i.e. what was below the cursor when right-clicking on the map.
+Einige Typen werden als Standardeinstellungen beim Hinzufügen neuer Nutzerpunkte verwendet. Dies hängt vom Kontext ab, d.h. davon, was sich beim Rechtsklick auf die Karte unter dem Cursor befand.
 
-**Note that the userpoint types cannot be translated to other languages for now.**
+**Beachten Sie, dass die Userpoint-Typen vorerst nicht in andere Sprachen übersetzt werden können..**
 
-* ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Default when creating a userpoint on top of an airport.
+* ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Standard beim Erstellen eines Nutzerpunktes auf einem Flughafen.
 * ![Airstrip](../images/icons/userpoint_Airstrip.png "Airstrip") **Airstrip**
-* ![Bookmark](../images/icons/userpoint_Bookmark.png "Bookmark") **Bookmark**: Default type for new userpoints.
+* ![Bookmark](../images/icons/userpoint_Bookmark.png "Bookmark") **Bookmark**: Standardtyp für neue Nutzerpunkte.
 * ![Cabin](../images/icons/userpoint_Cabin.png "Cabin") **Cabin**
 * ![Closed](../images/icons/userpoint_Closed.png "Closed") **Closed airport**
 * ![Error](../images/icons/userpoint_Error.png "Error") **Error**
 * ![Flag](../images/icons/userpoint_Flag.png "Flag") **Flag**
 * ![Helipad](../images/icons/userpoint_Helipad.png "Helipad") **Helipad**
 * ![Location](../images/icons/userpoint_Location.png "Location") **Location**
-* ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") **Logbook**: Type of automatically added logbook entries for takeoff and landing. See menu item [Create Logbook entries](MENUS.md#userdata-menu-create-logbook).
+* ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") **Logbook**: Typ der automatisch hinzugefügten Logbucheinträge für Start und Landung. Siehe Menüpunkt [Logbucheintrag erstellen](MENUS.md#userdata-menu-create-logbook).
 * ![Marker](../images/icons/userpoint_Marker.png "Marker") **Marker**
 * ![Mountain](../images/icons/userpoint_Mountain.png "Mountain") **Mountain**
 * ![Obstacle](../images/icons/userpoint_Obstacle.png "Obstacle") **Obstacle**
 * ![Pin](../images/icons/userpoint_Pin.png "Pin") **Pin**
 * ![POI](../images/icons/userpoint_POI.png "POI") **POI**
 * ![Seaport](../images/icons/userpoint_Seaport.png "Seaport") **Seaport**
-* ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Unknown**: Type named `Unknown` and all types which do not match the default types in this list.
-* ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Visual reporting point.
-* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Default when creating a userpoint on top of a navaid.
+* ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Unknown**: Typ namens `Unbekannt` und alle Typen, die nicht mit den Standardtypen in dieser Liste übereinstimmen.
+* ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Sichtbarer Meldepunkt.
+* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Standard beim Erstellen eines Nutzerpunktes über einer Navaid.
 
-### CSV Data Format {#userpoints-csv}
+### CSV Datenformat {#userpoints-csv}
 
-The CSV data format is aligned to the format already used around the flight simulator community and other applications.
+Das CSV-Datenformat ist auf das Format abgestimmt, das bereits in der Flugsimulatorgemeinschaft und anderen Anwendungen verwendet wird.
 
-Each row in the file represents a user-defined waypoint.
+Jede Zeile in der Datei repräsentiert einen benutzerdefinierten Wegpunkt.
 
-The minimum fields for import are `Type`, `Name`, `Ident`, `Latitude` and `Longitude`. Only `Latitude` and `Longitude` need to be filled, the rest can be empty.
+Die Mindestfelder für den Import sind `Typ`, `Name`, `Ident`, `Breitengrad` und `Längengrad`. Nur `Breitengrad` und `Längengrad` müssen ausgefüllt werden, der Rest kann leer sein.
 
-All twelve fields are saved when exporting userpoints as CSV. Also, the multi line field `Description` is enclosed in quotes if needed and preserves line breaks.
+Alle zwölf Felder werden beim Export von Nutzerpunkten als CSV gespeichert. Außerdem wird das mehrzeilige Feld `Beschreibung` bei Bedarf in Anführungszeichen gesetzt und berücksichtigt Zeilenumbrüche.
 
-English number format \(dot `.` as decimal separator\) is used in import and export to allow exchange of files on computers with different language and locale settings.
+Das englische Zahlenformat \(dot `.` als Dezimaltrennzeichen\) wird beim Import und Export verwendet, um den Austausch von Dateien auf Computern mit unterschiedlichen Sprach- und Ländereinstellungen zu ermöglichen.
 
-_Little Navmap_ uses [UTF-8](https://en.wikipedia.org/wiki/UTF-8 ) encoding when reading and writing files. This is only relevant if you use special characters like umlauts, accents or others. Otherwise encoding does not matter.
+_Little Navmap_ ntzt [UTF-8](https://en.wikipedia.org/wiki/UTF-8 ) Kodierung beim Lesen und Schreiben von Dateien. Dies ist nur von Bedeutung, wenn Sie Sonderzeichen wie Umlaute, Akzente oder andere verwenden. Andernfalls spielt die Kodierung keine Rolle.
 
-If an application fails to load a CSV file exported by _Little Navmap_, use [_LibreOffice Calc_](https://www.libreoffice.org), _Microsoft Excel_ or any other spreadsheet software capable of reading and writing CSV files to adapt the exported file to the format expected by that application.
+Wenn eine Anwendung eine CSV-Datei, die von _Little Navmap_ exportiert wurde, nicht lädt, verwenden Sie [_LibreOffice Calc_](https://www.libreoffice.org), _Microsoft Excel_ oder eine andere Tabellenkalkulationssoftware, die CSV-Dateien lesen und schreiben kann, um die exportierte Datei an das von dieser Anwendung erwartete Format anzupassen.
 
-See [Comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values) in the Wikipedia for detailed information on the format.
+Detaillierte Informationen zum Format finden Sie unter [Kommagetrennte Werte](https://en.wikipedia.org/wiki/Comma-separated_values) in der Wikipedia.
 
-**Example for an absolute minimal userpoint consisting of coordinates only:**
+**Beispiel für einen absolut minimalen Benutzerpunkt, der nur aus Koordinaten besteht:**
 
 ```
 ,,,49.0219993591,7.8840069771
 ```
-`Visible from` will be set to the default of 250 nm and the userpoint will be shown using the `Unknown` ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") icon after import.
+`Sichtbar von` wird auf den Standard von 250 nm gesetzt und der Benutzerpunkt wird nach dem Import mit dem Symbol `Unbekannt` ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") angezeigt.
 
-**Example for a minimal userpoint record with type **`Mountain`**, ident and name for import:**
+**Beispiel für einen minimalen Nutzerpunkt-Datensatz mit Typ  **`Mountain`**, Identität und Name für den Import:**
 
 ```
 Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771
 ```
-`Visible from` will be set to the default of 250 nm after import.
+`Sichtbar von` wird nach dem Import auf den Standard von 250 nm gesetzt.
 
-**Example for an exported userpoint with type **`Mountain`** and all fields set:**
+**Beispiel für einen exportierten Benutzerpunkt mit Typ **`Mountain`** und allen eingestellten Feldern:**
 
 ```
 Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771,1200,2.0085027218,"View,Interesting,Point","Interesting point ""Eselsberg"" - nice view",ED,250,2018-05-17T17:44:26.864
 ```
 
-Take note of the following challenges when parsing CSV files: In the field `Tags`, the list `"View,Interesting,Point"` is enclosed in double quotes since it contains commas. The field description `"Interesting point ""Eselsberg"" - nice view"` is enclosed in double quotes since the text itself contains a pair of double quotes (`"Eselsberg"`) which are, in turn, escaped by another double quote each.
+Beachten Sie die folgenden Einschränkungen beim Verarbeiten von CSV-Dateien: Im Feld `Tags` wird die Liste `"View,Interesting,Point"` in Anführungszeichen gesetzt, da sie Kommas enthält. Die Feldbeschreibung `"Interesting point ""Eselsberg"" - nice view "` ist in Anführungszeichen gesetzt, da der Text selbst ein Paar doppelter Anführungszeichen (`"Eselsberg"`) enthält, die wiederum durch jeweils ein weiteres doppeltes Anführungszeichen entkommen sind.
 
-#### CSV Fields
+#### CSV Felder
 
-| Position | Name                 | Required| Empty Allowed|  Comment                                                                                                                                                                       |
+| Position | Name                 | Erforderlich| Leer erlaubt|  Kommentar                                                                                                                                                                       |
 | -------- | -------------------- | ------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1        | Type                 | Yes     | Yes          | One of the predefined or user-defined types. The icon for `Unknown` is used if the type does not match one of the known types.                                                 |
-| 2        | Name                 | Yes     | Yes          | Free to use field. Used for Garmin export.                                                                                                                                     |
-| 3        | Ident                | Yes     | Yes          | Required only for Garmin and X-Plane export. Has to be a unique valid identifier with maximum of five characters for these exports.                                            |
-| 4        | Latitude             | Yes     | No           | Range from -90 to 90 degrees using dot `.` as decimal separator                                                                                                                |
-| 5        | Longitude            | Yes     | No           | Range from -180 to 180 degrees using dot `.` as decimal separator.                                                                                                             |
-| 6        | Altitude             | No      | Yes          | Must be a valid number if used. Unit is always feet.                                                                                                                           |
-| 7        | Magnetic variance    | No      | Yes          | Ignored on import and set to a valid calculated value on export.                                                                                                               |
-| 8        | Tags                 | No      | Yes          | Free to use field. GUI has no special tag search.                                                                                                                              |
-| 9        | Description          | No      | Yes          | Free to use field which allows line breaks.                                                                                                                                    |
-| 10       | Region               | No      | Yes          | Two letter ICAO region of a userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.                                       |
-| 11       | Visible from         | No      | Yes          | Defines from what zoom distance in nautical miles \(shown on [Status Bar](MENUS.md#statusbar)\) the userpoint is visible. Set to 250 nm if empty on import.                    |
-| 12       | Last update timestamp| No      | Yes          | ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in GUI.|
+| 1        | Type                 | Ja     | Ja          | Einer der vordefinierten oder benutzerdefinierten Typen. Das Symbol für `Unbekannt` wird verwendet, wenn der Typ nicht mit einem der bekannten Typen übereinstimmt.                                                 |
+| 2        | Name                 | Ja     | Ja          | Freies Feld. Wird für den Garmin-Export verwendet.                                                                                                                                     |
+| 3        | Ident                | Ja     | Ja          | Nur für den Export von Garmin und X-Plane erforderlich. Muss ein eindeutiger gültiger Identifikator mit maximal fünf Zeichen für diese Exporte sein.                                          |
+| 4        | Latitude             | Ja     | Nein           | Bereich von -90 bis 90 Grad mit Punkt `.` als Dezimaltrennzeichen                                                                                                                |
+| 5        | Longitude            | Ja     | Nein           | Bereich von -180 bis 180 Grad mit Punkt `.` als Dezimaltrennzeichen.                                                                                                            |
+| 6        | Altitude             | Nein      | Ja          | Muss eine gültige Zahl sein, wenn sie verwendet wird. Die Einheit ist immer feet.                                                                                                                          |
+| 7        | Magnetic variance    | Nein      | Ja          | Wird beim Import ignoriert und beim Export auf einen gültigen berechneten Wert gesetzt.                                                                                                               |
+| 8        | Tags                 | Nein      | Ja          | Freies Feld. GUI hat keine spezielle Stichwortsuche.                                                                                                                              |
+| 9        | Description          | Nein     | Ja          | Frei verwendbares Feld, das Zeilenumbrüche erlaubt.                                                                                                                                    |
+| 10       | Region               | Nein      | Ja          | ICAO-Region mit zwei Buchstaben für einen Nutzerpunkt oder Wegpunkt. Wird für den Export von X-Plane verwendet. Ersetzt durch den Standardwert `ZZ` beim X-Plane Export, wenn dieser leer ist.                                       |
+| 11       | Visible from         | Nein      | Ja          | Definiert, ab welcher Zoomdistanz in Seemeilen \(angezeigt in [Statusleiste](MENUS.md#statusleiste)\) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.                    |
+| 12       | Last update timestamp| Nein      | Ja          | ISO-Datum und Uhrzeit der letzten Änderung. Das Format ist unabhängig von den Einstellungen des Systemdatumsformats. Format: `YYYY-MM-DDTHH:mm:ss`. Beispiel: `2018-03-28T22:06:16.763`. Nicht in der GUI editierbar.|
 
-### X-Plane user_fix.dat Data Format {#userpoints-xplane}
+### X-Plane Nutzer_fix.dat Data Format {#userpoints-xplane}
 
-This allows to read and write the X-Plane `user_fix.dat` file for user-defined waypoints. The file does not exist by default and has to be saved to `XPLANE/Custom Data/user_fix.dat`.
+Dies ermöglicht das Lesen und Schreiben der X-Plane `user_fix.dat` Datei für nutzerdefinierte Wegpunkte. Die Datei ist standardmäßig nicht vorhanden und muss unter `XPLANE/Custom Data/user_fix.dat` gespeichert werden.
 
-The format is described by _Laminar Research_ in a PDF file which can be downloaded here: [XP-FIX1101-Spec.pdf](https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf).
+Das Format wird von _Laminar Research_ in einer PDF-Datei beschrieben, die Sie hier herunterladen können: [XP-FIX1101-Spec.pdf](https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf).
 
-The file consists of a header and a number of rows for the user fixes. Each row has five columns which are separated by space or tab characters.
+Die Datei besteht aus einem Header und einer Anzahl von Zeilen für die Benutzerfixes. Jede Zeile hat fünf Spalten, die durch Leerzeichen oder Tabulatorzeichen getrennt sind.
 
-There are five columns of data in the file:
-
+Es gibt fünf Datenspalten in der Datei:
 1. Latitude
 2. Longitude
 3. Ident
 4. Airport ident
 5. Region
 
-**Example for **`user_fix.dat`**:**
+**Beispiel für **`user_fix.dat`**:**
 ```
 I
 1101 Version - data cycle 1704, build 20170325, metadata FixXP1101. NoCopyright (c) 2017 achwodu
@@ -232,11 +230,11 @@ I
 99
 ```
 
-**Note that, while the user-defined waypoints are not displayed on the X-Plane map, they can be selected and used to build flight plans in the X-Plane stock GPS and FMS.**
+**Beachten Sie, dass die nutzerdefinierten Wegpunkte zwar nicht auf der X-Plane Karte dargestellt werden, aber ausgewählt und verwendet werden können, um Flugpläne im X-Plane Bestands GPS und FMS zu erstellen.**
 
 #### Import
 
-**Example line from **`user_fix.dat`** above:**
+**Beispielzeile aus **`user_fix.dat`** oben:**
 
 ` 50.88166700  12.58666700 PACEC ENRT ZZ`
 
@@ -248,34 +246,34 @@ I
 
 #### Export
 
-The mapping is the same as for the import.
+Das Mapping ist das Gleiche wie beim Import.
 
 * Ident to fix ident.
 * Tags to fix airport.
 * Region to fix region.
 
-All other fields are ignored.
+Alle anderen Felder werden ignoriert.
 
-The ident is adjusted to match a up to five digit and letter combination. A generated ident is used if that is not possible or the ident is empty.
+Die Identität wird so eingestellt, dass sie einer bis zu fünfstelligen Buchstabenkombination entspricht. Eine generierte Identität wird verwendet, wenn dies nicht möglich ist oder die Identität leer ist.
 
-Fix airport is always `ENRT` when exporting.
+Der Fix-Flughafen ist beim Export immer `ENRT`.
 
-The region is adjusted for a two letter digit and letter combination. `ZZ` is used if that is not possible or the region is empty.
+Der Bereich ist auf eine zweistellige Buchstabenzahl und eine Buchstabenkombination eingestellt. `ZZ` wird verwendet, wenn dies nicht möglich ist oder der Bereich leer ist.
 
-**The ident has to be unique in the **`user_fix.dat`**. Therefore it is recommended to set a unique ident for each waypoint manually or leave the field empty so **_Little Navmap_** can generate an ident during export.**
+**Die Identität muss in der **`user_fix.dat`** eindeutig sein. Daher wird empfohlen, für jeden Wegpunkt manuell eine eindeutige Identität festzulegen oder das Feld leer zu lassen, damit **_Little Navmap_** beim Export eine Identität erzeugen kann.**
 
 ### Garmin user.wpt Data Format {#userpoints-garmin}
 
-The Garmin user waypoint file is a CSV file. Each row in the file represents a unique user waypoint.
+Die Garmin-Nutzer-Wegpunktdatei ist eine CSV-Datei. Jede Zeile in der Datei repräsentiert einen eindeutigen Nutzer-Wegpunkt.
 
-There must be four columns of data in the file:
+Es müssen vier Spalten mit Daten in der Datei vorhanden sein:
 
 1. Waypoint ident
 2. Waypoint name or description
 3. Latitude
 4. Longitude
 
-**Example of a **`user.wpt`** file:**
+*Beispiel für eine **`user.wpt`** Datei:**
 ```
 MTHOOD,MT HOOD PEAK,45.3723,-121.69783
 CRTRLK,CRATER LAKE,42.94683,-122.11083
@@ -283,13 +281,13 @@ CRTRLK,CRATER LAKE,42.94683,-122.11083
 1NSAL,1NM NORTH SALERNO TOWN,40.69640000,14.78500000
 ```
 
-The waypoint ident can be up to 10 numbers or capital letters but the GTN will shorten the name to the first 6 characters. No special characters or symbols can be used. _Little Navmap_ adjusts the ident accordingly.
+Die Wegpunkt-Identität kann aus bis zu 10 Ziffern oder Großbuchstaben bestehen, das GTN verkürzt aber den Namen auf die ersten 6 Zeichen. Es dürfen keine Sonderzeichen oder Symbole verwendet werden. _Little Navmap_ passt die Identität entsprechend an.
 
-The waypoint name can be up to 25 numbers, capital letters, spaces, or forward slash `/` characters. The name is displayed when selecting waypoints to provide additional context to the pilot. _Little Navmap_ adjusts the name according to limitations.
+Der Name des Wegpunktes kann aus bis zu 25 Zahlen, Großbuchstaben, Leerzeichen oder Schrägstrichen bestehen. Der Name wird bei der Auswahl von Wegpunkten angezeigt, um dem Piloten einen zusätzlichen Kontext zu bieten. _Little Navmap_ passt den Namen entsprechend den Einschränkungen an.
 
 #### Import
 
-**Example line from **`user.wpt`** above:**
+**Beispielzeile aus **`user.wpt`** oben:**
 
 `MTHOOD,MT HOOD PEAK,45.3723,-121.69783`
 
@@ -300,19 +298,19 @@ The waypoint name can be up to 25 numbers, capital letters, spaces, or forward s
 
 #### Export
 
-Mapping of fields is same as import but all fields are adjusted to limitations.
+Die Zuordnung von Feldern ist identisch mit dem Import, aber alle Felder sind an die Beschränkungen angepasst.
 
-Note: If an imported waypoint ends up being within 0.001° latitude and longitude of an existing user waypoint in the GTN, the existing waypoint and name will be reused.
+Hinweis: Wenn ein importierter Wegpunkt innerhalb von 0,001° Breitengrad und Längengrad eines vorhandenen Nutzer-Wegpunktes im GTN liegt, wird der vorhandene Wegpunkt und Name wiederverwendet.
 
 #### Export XML for FSX/P3D BGL Compiler {#userpoints-bgl}
 
-This export option creates an XML file which can be compiled into an BGL file containing waypoints.
+Diese Exportoption erstellt eine XML-Datei, die in eine BGL-Datei mit Wegpunkten kompiliert werden kann.
 
-The region and ident fields are required for this export option. If region is empty or otherwise invalid `ZZ` is used. All waypoints are of type `NAMED`.
+Die Felder Region und Identität sind für diese Exportmöglichkeit erforderlich. Wenn der Bereich leer oder anderweitig ungültig ist, wird `ZZ` verwendet. Alle Wegpunkte sind vom Typ `NAMED`.
 
-See Prepar3D SDK documentation for information on how to compile and add the BGL to the simulator.
+Weitere Informationen zum Kompilieren und Hinzufügen des BGL zum Simulator finden Sie in der Dokumentation Prepar3D SDK.
 
-**Example:**
+**Beispiel:**
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <FSData version="9.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bglcomp.xsd">
@@ -322,10 +320,10 @@ See Prepar3D SDK documentation for information on how to compile and add the BGL
 </FSData>
 ```
 
-### Database Backup Files {#userpoints-data-format}
+### Datenbank-Backup-Dateien {#userpoints-data-format}
 
-_Little Navmap_ creates a full database backup on every start since undo functionality is not available for userpoints.
+_Little Navmap_ erstellt bei jedem Start ein vollständiges Datenbank-Backup, da die Undo-Funktionalität für Benutzerpunkte nicht verfügbar ist.
 
-You can also use the CSV export to create backups manually since CSV allows to export the full dataset.
+Sie können den CSV-Export auch verwenden, um Backups manuell zu erstellen, da CSV den Export des gesamten Datensatzes ermöglicht.
 
-See [Userdata](FILES.md#userdata) for information about database backup files.
+Weitere Informationen zu Datenbank-Backup-Dateien finden Sie unter [Benutzerdaten](FILES.md#userdata).
