@@ -1,220 +1,212 @@
-## ![Options](../images/icons/settings.png "Options") Options Dialog {#options-dialog}
+## ![Options](../images/icons/settings.png "Options") Dialog Einstellungen {#options-dialog}
 
-Most options are self-explaining and tooltips contain more detailed explanations if applicable.
+Die meisten Optionen sind selbsterklärend und die Tooltips enthalten gegebenenfalls detailliertere Erklärungen.
 
-You can immediately check the effect of your changes on the map display by moving the dialog
-`Options` to the side and pressing `Apply`.
+Sie können die Auswirkungen Ihrer Änderungen auf die Kartendarstellung sofort überprüfen, indem Sie den Dialog 'Optionen' zur Seite verschieben und auf 'Anwenden' drücken.
 
-The button `Restore Defaults` only restores the options of this dialog back to default. Other
-settings like map display, table views or dock window positions are not affected. To reset all
-saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
+Die Schaltfläche `Standard wiederherstellen` setzt nur die Optionen dieses Dialogs wieder auf die Standardeinstellungen zurück. Sonstige Einstellungen wie Kartendarstellung, Tabellenansichten oder Dockfensterpositionen bleiben davon unberührt. So setzen Sie alle gespeicherte Einstellungen komplett siehe [Fehlerbehebung](APPENDIX.md#Problembehandlung).
 
-### Startup {#startup}
+### Start {#startup}
 
-Allows to customize what should be loaded and shown on startup of _Little Navmap_.
+Ermöglicht die Anpassung, was beim Start von _Little Navmap_ geladen und angezeigt werden soll.
 
-You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information. 
-Change the settings here if you wish to get notifications about beta releases.
+Sie können auch die Häufigkeit der automatischen Aktualisierungsprüfung und der Aktualisierungskanäle konfigurieren. Weitere Informationen finden Sie unter [Auf Aktualisierungen prüfen](UPDATE.md). 
+Ändern sie die Einstellungen hier, wenn sie Benachrichtigungen über Beta-Versionen erhalten möchten.
 
-### User Interface {#user-interface}
+### Nutzerschnittstelle {#user-interface}
 
-Has options for text sizes in information windows and flight plan as well as the search result table.
+Verfügt über Optionen für Textgrößen in Informationsfenstern und Flugplänen sowie in der Suchergebnistabelle.
 
-This tab also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
+Diese Registerkarte enthält auch Optionen, um die Programmsprache und die lokalen Einstellungen \(Zahlen-, Datums- und Zeitformate\) auf Englisch zu erzwingen, wenn Sie keine übersetzte Benutzeroberfläche verwenden möchten.
 
 ![User Interface](../images/optionsui.jpg "User Interface")
 
-_**Picture above:** Tab _`User Interface`_ using the style _`Night`_._
+_**Bild oben:** Tab _`Nutzerschnittstelle`_ mit dem Stil _`Nacht`_._.
 
-### Map {#map}
+### Karte {#map}
 
-Has map related customization options. Allows to set the click sensitivity, zoom distances and more.
+Enthält kartenbezogene Anpassungsoptionen. Ermöglicht die Einstellung der Klickempfindlichkeit, der Zoomabstände und mehr.
 
-#### Avoid blurred map display by zooming out to next best step {#blurred-map}
+#### Vermeiden Sie verschwommene Kartendarstellungen, indem Sie auf den nächstbesten Schritt zoomen {#blurred-map}
 
-Checking this helps to get a sharp background image for online maps \(e.g. from OpenStreetMap\) when _Little Navmap_ zooms to or centers map features like airports, the active flight plan leg and others. This works best with the map projection `Mercator`.
+Wenn Sie dies aktivieren, erhalten Sie ein scharfes Hintergrundbild für Online-Karten (z.B. von OpenStreetMap\), wenn _Little Navmap_ auf Kartenfunktionen wie Flughäfen, die aktive Flugplanetappe und andere zoomt oder zentriert. Dies funktioniert am besten mit der Kartenprojektion `Mercator`.
 
-As a result the map might be zoomed out farther than expected in some cases.
+Dadurch kann es in einigen Fällen vorkommen, dass die Karte weiter als erwartet vergrößert wird.
 
-### Map Display {#map-display}
+### Kartenanzeige {#map-display}
 
-This tab contains options for symbol and text sizes, flight plan and aircraft trail colors and more.
+Diese Registerkarte enthält Optionen für Symbol- und Textgrößen, Flugplan- und Flugzeugpfadfarben und mehr.
 
-The right side of the tab contains a tree view that allows to select the text labels that should be shown at
-airports, user aircraft and AI/multiplayer aircraft.
+Die rechte Seite der Registerkarte enthält eine Baumansicht, in der Sie die Textbeschriftungen auswählen können, die bei der Anzeige von Flughäfen, Benutzerflugzeuge und KI/Multiplayer-Flugzeuge angezeigt werden sollen.
 
 ![Map Display](../images/optionmapdisplay.jpg "Map Display")
 
-_**Picture above:** Tab _`Map Display`_._
+_**Bild oben:** Registerkarte _`Kartenanzeige`_._._
 
-### Units {#units}
+### Einheiten {#units}
 
-You can change all units that are used by _Little Navmap_ on this tab between nautical, imperial and metric.
-Mixed settings like meter for altitude and nautical miles for distance are possible.
+Sie können alle Einheiten, die von _Little Navmap_ auf dieser Registerkarte verwendet werden, zwischen nautisch, imperial und metrisch ändern. Gemischte Einstellungen wie Höhenmesser und Seemeilen für die Entfernung sind möglich.
 
-**Note that any numbers used in the program are not converted when changing units. That means that you will
-have a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation` from feet to meter.
-This also applies to flight plan altitude. Therefore, do not forget to adapt these numbers after changing units.**
+**Beachten Sie, dass die im Programm verwendeten Zahlen beim Ändern der Einheiten nicht umgerechnet werden. Das bedeutet, dass Sie nach dem Ändern der Einstellung `Höhe und Elevation` von Fuß auf Meter einen Mindesthöhenpuffer von 1000 Metern haben. Dies gilt auch für die Flugplanhöhe. Vergessen Sie daher nicht, diese Angaben nach einem Einheitenwechsel anzupassen.**
 
-### Simulator Aircraft {#simulator-aircraft}
+### Simulatorflugzeug {#simulator-aircraft}
 
-Allows to change various aspects around the display of the user aircraft while flying. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
+Ermöglicht es, verschiedene Aspekte rund um die Anzeige des Benutzerflugzeugs während des Fluges zu ändern. Alle Einstellungen, die zu einer flüssigeren Flugzeuganzeige führen, verbrauchen mehr CPU und können möglicherweise zu Stottern im Simulator führen.
 
-#### Center map on aircraft and next flight plan waypoint {#simulator-aircraft-center-wp}
+#### Zentriere Karte auf Flugzeug und nächsten Wegpunkt des Flugplan. {#simulator-aircraft-center-wp}
 
-The map is zoomed to show both the aircraft and the next active waypoint on the flight plan if this is enabled while flying. _Little Navmap_ uses several criteria to minimize map updates in this mode.
+Die Karte wird gezoomt, um sowohl das Flugzeug als auch den nächsten aktiven Wegpunkt im Flugplan anzuzeigen, wenn dies während des Fluges aktiviert ist. _Little Navmap_ verwendet mehrere Kriterien, um die Aktualisierung der Karte in diesem Modus zu minimieren.
 
-The map will fall back to the default mode of simply centering the aircraft if no flight plan is loaded, the aircraft is on ground or the flight plan is more than 50 nm away from the user aircraft.
+Die Karte greift auf den Standardmodus der einfachen Zentrierung des Flugzeugs zurück, wenn kein Flugplan geladen ist, das Flugzeug am Boden steht oder der Flugplan mehr als 50 nm vom Benutzerflugzeug entfernt ist.
 
-#### Do not use box mode for following the aircraft. Move the map constantly.  {#simulator-aircraft-move-constantly}
+#### Boxmodus nicht zum Folgen des Flugzeuges verwenden. Karte konstant bewegen.  {#simulator-aircraft-move-constantly}
 
-Map will follow the aircraft constantly when checked. This is also used for `Center map on aircraft and next flight plan waypoint`.
+Die Karte folgt dem Flugzeug ständig, wenn es überprüft wird. Dies wird auch für die `Zentriere Karte auf Flugzeug und nächsten Wegpunkt des Flugplan` verwendet.
 
-This option will cause _Little Navmap_ to consume more CPU resources while flying.
+Diese Option bewirkt, dass _Little Navmap_ während des Fluges mehr CPU-Ressourcen verbraucht.
 
-#### Simulator aircraft scroll box size (percent of map window size)  {#simulator-aircraft-scroll-box}
+#### Größe der Scrollbox für das Simulatorflugzeug (Prozent von Kartenfenstergröße)  {#simulator-aircraft-scroll-box}
 
-Smaller values keep the aircraft centered and will move the map more often. Larger values will update the map only when aircraft reaches map boundary.
+Kleinere Werte halten das Flugzeug in der Mitte und verschieben die Karte öfter. Größere Werte aktualisieren die Karte nur, wenn das Flugzeug die Kartengrenze erreicht.
 
-This setting is ignored when `Center map on aircraft and next flight plan waypoint` is checked and a flight plan is set.
+Diese Einstellung wird ignoriert, wenn die `Zentriere Karte auf Flugzeug und nächsten Wegpunkt des Flugplan`  überprüft werden und ein Flugplan erstellt wird.
 
-#### Keep active leg on top of flight plan table {#simulator-aircraft-keep-active}
+#### Halte aktiven Streckenteil an der Spitze der Flugplantabelle {#simulator-aircraft-keep-active}
 
-The active \(magenta\) leg will be shown on top of the flight plan table when a new leg is activated.
+Die aktive \(magenta\) Etappe wird oben in der Flugplattentabelle angezeigt, wenn eine neue Etappe aktiviert wird.
 
-#### Allow scrolling and zooming in the map {#simulator-aircraft-allow-scroll-zoom}
+#### Scrollen und Zoomen in der Karte erlauben {#simulator-aircraft-allow-scroll-zoom}
 
-The map will stop following the aircraft for the given time if the user does any interaction with the map like scrolling or zooming. You can quickly check out the destination or your overall progress, and after you stop moving around, _Little Navmap_ will return to following your aircraft.
+Die Karte folgt dem Flugzeug für die angegebene Zeit nicht mehr, wenn der Benutzer mit der Karte interagiert, z.B. scrollt oder zoomt. Sie können sich schnell das Ziel oder Ihren Gesamtfortschritt ansehen, und nachdem Sie mit der Bewegung aufhören, kehrt _Little Navmap_ zur Verfolgung Ihres Flugzeugs zurück.
 
-This option is also used in the [Flight Plan Elevation Profile](PROFILE.md).
+Diese Option wird auch im [Höhenprofil Flugplan](PROFILE.md) verwendet.
 
-**Note if you use the default aircraft centering mode or if _Little Navmap_ falls back to this mode \(see above\):**
+**Beachten Sie, ob Sie den Standard-Flugzeugzentriermodus verwenden oder ob _Little Navmap_ auf diesen Modus zurückfällt \(siehe oben\):**
 
-1. Using the mouse wheel or the `+` and `-` key to zoom will change and keep the zoom distance. The aircraft is still centered but the new zoom distance is used.
-1. Starting to look around by moving the map with mouse drag or cursor keys: This will remember the last position **and** the zoom distance. You can do any map movements and _Little Navmap_ will jump back to the last position and zoom distance where you started the movement when time is over.
+1. Mit dem Mausrad oder der Taste `+` und `-` zum Zoomen ändern Sie den Zoomabstand und halten ihn ein. Das Flugzeug ist noch zentriert, aber der neue Zoomabstand wird verwendet.
+2. Sie können  sich umsehen, indem Sie die Karte mit der Maus oder den Pfeiltasten bewegen: Dadurch wird die letzte Position **und** die Zoomdistanz gespeichert. Sie können beliebige Kartenbewegungen durchführen und _Little Navmap_ springt, wenn die Zeit abgelaufen ist, zurück zur letzten Position und Zoomdistanz, an der Sie die Bewegung gestartet haben.
 
-The same from point two applies if you jump to airports, navaids or other features by double click, context menu \(`Show on Map`\) or map link.
+Dasselbe gilt ab Punkt zwei, wenn Sie per Doppelklick, Kontextmenü \(`Zeige auf Karte`\) oder Kartenlink zu Flughäfen, Navids oder anderen Features springen.
 
-Toggle ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") `Center Aircraft` on and off if you find that the map jumps back to the wrong position.
+Schalten sie ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") `Zentriere Flugzeug` ein und aus, wenn sie feststellen, dass die Karte in die falsche Position zurückspringt.
 
-This option is also used in the [Flight Plan Elevation Profile](PROFILE.md).
+Diese Option wird auch im [Höhenprofil Flugplan](PROFILE.md) verwendet.
 
-#### Jump back to aircraft and resume aircraft following after this time {#simulator-aircraft-jump-timeout}
+#### Springe nach dieser Zeit zum Flugzeug zurück und nehme die Flugzeugverfolgung wieder auf {#simulator-aircraft-jump-timeout}
 
-Time until aircraft following is activated again after any map interaction like scrolling or zooming.
+Zeit, bis die Flugzeugnachführung nach jeder Karteninteraktion wie Scrollen oder Zoomen wieder aktiviert wird.
 
 ![Simulator Aircraft](../images/options_simac.jpg "Simulator Aircraft")
 
-_**Picture above:** Tab _`Simulator Aircraft`_._
+_**Bild oben:** Registerkarte _`Simulatorflugzeug`_._
 
-### Cache and Files {#cache}
+### Zwischenspeicher und Dateien {#cache}
 
-#### Map Display {#cache-map-display}
+#### Kartenanzeige {#cache-map-display}
 
-Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles from the online maps like the _OpenStreetMap_, _OpenMapSurfer_  or _OpenTopoMap_.
+Hier können Sie die Cache-Größe im RAM und auf der Festplatte ändern. Diese Caches werden verwendet, um die heruntergeladenen Bildkacheln von den Online-Karten wie der _OpenStreetMap_, _OpenMapSurfer_ oder _OpenTopoMap_ zu speichern.
 
-All image tiles expire after two weeks and will be reloaded from the online services then.
+Alle Bildkacheln verfallen nach zwei Wochen und werden dann von den Online-Services wieder geladen.
 
-Note that a reduction of size or erasing the disk cache is done in background and can take a while.
+Beachten Sie, dass eine Reduzierung der Größe oder das Löschen des Festplatten-Cache im Hintergrund erfolgt und einige Zeit dauern kann.
 
-The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
+Der RAM-Cache hat eine Mindestgröße von 100 MB und eine Maximalgröße von 2 GB.
 
-The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
+Der Festplatten-Cache hat eine Mindestgröße von 500 MB und eine Maximalgröße von 8 GB.
 
-#### Flight Plan Elevation Profile {#cache-elevation}
+#### Flugplanhöhenprofil {#cache-elevation}
 
-The bottom part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
+Der untere Teil dieser Registerkarte ermöglicht die Installation der frei herunterladbaren [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) Höhendaten.
 
-Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
+Laden Sie das ZIP-Archiv über den Link im Dialog herunter und entpacken Sie es. Wählen Sie das extrahierte Verzeichnis mit `GLOBE-Verzeichnis auswählen ...` so, dass es auf die Dateien `a10g` bis `p10g` zeigt. Das Label im Dialogfeld zeigt einen Fehler an, wenn der Pfad ungültig ist.
 
 ![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")
 
-_**Picture above:** Tab _`Cache and Files`_ with properly selected GLOBE elevation data._
+_**Bild oben:** Registerkarte _`Zwischenspeicher und Dateien`_ mit richtig ausgewählten GLOBE-Höhendaten._
 
-### Flight Plan {#flight-plan}
+### Flugplan {#flight-plan}
 
-Here you can set preferences for flight plan calculation or adjust the rule of thumb for the top of descent display.
+Hier können Sie Einstellungen für die Flugplanberechnung vornehmen oder die Faustregel für die Anzeige Top of Descent anpassen.
 
-### Weather {#weather}
+### Wetter {#weather}
 
-You can select the various weather sources that should be shown in the `Information` dock window or in the map
-tooltips.
+Sie können die verschiedenen Wetterquellen auswählen, die im Dockfenster `Information` oder in den Karten-Tooltips angezeigt werden sollen.
 
-The weather type `Flight Simulator` will either display weather from the FSX or P3D connection or from X-Planes `METAR.rwx` weather file.
+Der Wettertyp `Flugsimulator` zeigt entweder das Wetter von der FSX- oder P3D-Verbindung oder von X-Planes `METAR.rwx` Wetterdatei an.
 
-_Active Sky_ can only be selected if either _Active Sky Next_, _AS16_ or _Active Sky for Prepar3D v4_ are installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
+_Active Sky_ kann nur ausgewählt werden, wenn entweder _Active Sky Next_, _AS16_ oder _Active Sky for Prepar3D v4_ installiert sind oder die Wetterdatei direkt ausgewählt wird. Die direkte Auswahl der Wetterdatei _Active Sky_ kann nützlich sein, wenn Sie ein vernetztes Setup ausführen. Verwenden Sie Windows-Freigaben oder einen Cloud-Service, um Zugriff auf die Datei auf dem Remotecomputer zu erhalten.
 
-The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services change the URLs.
+Die URLs des NOAA- und VATSIM-Wetters können geändert werden, wenn Sie eine andere Quelle nutzen möchten oder die Dienste die URLs ändern.
 
-The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect to Internet. Check your firewall settings if these fail.
+Mit den Test-Buttons für die Online-Wetterdienste kann auch herausgefunden werden, ob _Little Navmap_ eine Verbindung zum Internet herstellen kann. Überprüfen Sie Ihre Firewall-Einstellungen, wenn diese fehlschlagen.
 
 ![Weather Options](../images/optionsweather.jpg "Weather Options")
 
-_**Picture above:** Tab _`Weather`_ with manually selected Active Sky weather file on a network share._
+_**Bild oben:** Registerkarte _`Wetter`_ mit manuell ausgewählter Active Sky Wetterdatei auf einer Netzwerkfreigabe._
 
-### Online Flying {#online-flying}
+### Online fliegen {#online-flying}
 
-This tab allows to change settings for online networks.
+Auf dieser Registerkarte können Sie die Einstellungen für Online-Netzwerke ändern.
 
-Note that all related window tabs, menu items and toolbar buttons are hidden if this is set to `None`.
+Beachten Sie, dass alle zugehörigen Fensterregisterkarten, Menüpunkte und Schaltflächen in der Symbolleiste ausgeblendet sind, wenn diese auf `Keine` gesetzt sind.
 
-See [Online Networks](ONLINENETWORKS.md) for an overview.
+Eine Übersicht finden Sie unter [Online-Netzwerke](ONLINENETWORKS.md).
 
-**Not all networks might be enabled depending on release.**
+**Je nach Version sind möglicherweise nicht alle Netzwerke aktiviert..**
 
 ![Online Network Options](../images/options_network.jpg "Online Network Options")
 
-_**Picture above:** Tab _`Online Flying`_ with VATSIM network enabled._
+_**Bild oben:** Registerkarte _`Online fliegen`_ mit aktiviertem VATSIM-Netzwerk._
 
-#### Online Service {#online-service}
+#### Onlinedienste {#online-service}
 
-##### None {#online-service-none}
+##### Keine {#online-service-none}
 
-Disables all online services and hides all related window tabs, menu items and toolbar buttons. No downloads will be done.
+Deaktiviert alle Online-Dienste und blendet alle zugehörigen Fensterregisterkarten, Menüpunkte und Schaltflächen in der Symbolleiste aus. Es werden keine Downloads durchgeführt.
 
 ##### VATSIM {#online-service-vatsim}
 
-Uses the predefined configuration for the [VATSIM](https://www.vatsim.net) network. No other settings are needed.
+Verwendet die vordefinierte Konfiguration für das Netzwerk [VATSIM](https://www.vatsim.net). Es sind keine weiteren Einstellungen erforderlich.
 
-The update rate depends on configuration and is typically three minutes.
+Die Aktualisierungsrate hängt von der Konfiguration ab und beträgt in der Regel drei Minuten.
 
 ##### IVAO {#online-service-ivao}
 
-Uses the predefined configuration for the [IVAO](https://ivao.aero) network. No other settings are needed.
+Verwendet die vordefinierte Konfiguration für das Netzwerk [IVAO](https://ivao.aero). Es sind keine weiteren Einstellungen erforderlich.
 
-The update rate depends on configuration and is typically three minutes.
+Die Aktualisierungsrate hängt von der Konfiguration ab und beträgt in der Regel drei Minuten.
 
-##### Custom with Status File {#online-service-custom-status}
+##### Eigener mit Statusdatei {#online-service-custom-status}
 
-This option allows to connect to a private network and will download a `status.txt` file on startup which contains further links to e.g. the `whazzup.txt` file.
+Diese Option ermöglicht die Verbindung zu einem privaten Netzwerk und lädt beim Start eine Datei `status.txt` herunter, die weitere Links zu z.B. der Datei `whazzup.txt` enthält.
 
-##### Custom {#online-service-custom-whazzup}
+##### Eigner {#online-service-custom-whazzup}
 
-This option allows to connect to a private network and will periodically download a `whazzup.txt` file which contains information about online clients/aircraft and online centers/ATC.
+Diese Option ermöglicht die Verbindung zu einem privaten Netzwerk und lädt regelmäßig eine Datei `whazzup.txt` herunter, die Informationen über Online-Kunden/Flugzeuge und Online-Zentren/ATC enthält.
 
-#### Settings {#online-service-settings}
+#### Einstellungen {#online-service-settings}
 
-##### Status File URL {#online-service-settings-status-url}
+##### URL Status-Datei {#online-service-settings-status-url}
 
-URL of the `status.txt` file. You can also use a local path like `C:\Users\YOURUSERNAME\Documents\status.txt`.
+URL der Datei `status.txt`. Sie können auch einen lokalen Pfad wie `C:\Users\YOURUSERNAME\Documents\status.txt` verwenden.
 
-This file is downloaded only on startup of the program.
+Diese Datei wird erst beim Start des Programms heruntergeladen.
 
-A push button `Test` allows to check if the URL is valid and shows the first few lines from the downloaded text file. This does not work with local paths.
+Ein push button `Test` ermöglicht es, zu überprüfen, ob die URL gültig ist und zeigt die ersten Zeilen der heruntergeladenen Textdatei an. Dies funktioniert nicht mit lokalen Pfaden.
 
-The status file format is explained in the IVAO documentation library: [Status File Format](https://doc.ivao.aero/apidocumentation:whazzup:statusfileformat).
+Das Format der Statusdatei wird in der IVAO-Dokumentationsbibliothek erläutert: [Statusdateiformat](https://doc.ivao.aero/apidocumentation:whazzup:statusfileformat).
 
-##### Whazzup File URL {#online-service-settings-whazzup-url}
+##### URL Whazzup-Datei {#online-service-settings-whazzup-url}
 
-URL of the `whazzup.txt` file. You can also use a local path like `C:\Users\YOURUSERNAME\Documents\whazzup.txt`.
+URL der Datei `whazzup.txt`. Sie können auch einen lokalen Pfad wie `C:\Users\YOURUSERNAME\Documents\whazzup.txt` verwenden.
 
-This file is downloaded according to the set update rate.
+Diese Datei wird entsprechend der eingestellten Aktualisierungsrate heruntergeladen.
 
-A push button `Test` allows to check if the URL is valid. The test does not work with local paths.
+Ein Button `Test` ermöglicht es, zu überprüfen, ob die URL gültig ist. Der Test funktioniert nicht mit lokalen Pfaden.
 
-The whazzup file format is explained in the IVAO documentation library: [Whazzup File Format](https://doc.ivao.aero/apidocumentation:whazzup:fileformat).
+Das Whazzup-Dateiformat wird in der IVAO-Dokumentationsbibliothek erläutert: [Whazzup Dateiformat](https://doc.ivao.aero/apidocumentation:whazzup:fileformat).
 
-**Example for a **`whazzup.txt` **file:**
+**Beispiel für eine **`whazzup.txt` **Datei:**
 
 ```
 !GENERAL
@@ -231,66 +223,61 @@ CONNECTED SERVERS = 41
 ...
 ```
 
-##### Update Every {#online-service-settings-update}
+##### Updateintervall {#online-service-settings-update}
 
-Sets the update rate that defines how often the `whazzup.txt` file is downloaded.
+Legt die Aktualisierungsrate fest, die definiert, wie oft die Datei `whazzup.txt` heruntergeladen wird.
 
-Allowed values are 30 to 1800 seconds, 180s being the default.
+Die zulässigen Werte liegen zwischen 30 und 1800 Sekunden, wobei 180s die Voreinstellung sind.
 
-You can use smaller update rates for private online networks to improve map display updates.
+Sie können kleinere Aktualisierungsraten für private Online-Netzwerke verwenden, um die Aktualisierung der Kartendarstellung zu verbessern.
 
-**Do not use update rates smaller than two minutes for official online networks. They might decide to block the application if downloads are excessive.**
+**Verwenden Sie für offizielle Online-Netzwerke keine Update-Raten, die kleiner als zwei Minuten sind. Sie werden möglicherweise die Anwendung zu blockieren, wenn die Downloads zu groß sind.**
 
 ##### Format {#online-service-settings-format}
 
-`IVAO` or `VATSIM`. Depends on the format used by your private network. Try both options if unsure.
+`IVAO` oder `VATSIM`. Hängt von dem Format ab, das von Ihrem privaten Netzwerk verwendet wird. Probieren Sie beide Optionen aus, wenn Sie unsicher sind.
 
-### Scenery Library Database {#scenery-library-database}
+### Szeneriebibliothek {#scenery-library-database}
 
-Allows to configure the loading of the scenery library database.
+Ermöglicht das Laden der Datenbank der Szenerie-Bibliothek zu konfigurieren.
 
-Note that these paths apply to all Flight Simulators, FSX, P3D and X-Plane.
+Beachten Sie, dass diese Pfade für alle Flugsimulatoren, FSX, P3D und X-Plane gelten.
 
-You have to reload the scenery database in order for the changes to
-take effect.
+Sie müssen die Szenen-Datenbank neu laden, damit die Änderungen wirksam werden.
 
-#### Select Paths to exclude from loading {#scenery-library-database_exclude}
+#### Pfad auswählen, der vom Laden ausgeschlossen werden soll {#scenery-library-database_exclude}
 
-All directories including sub-directories in this list will be omitted when loading the scenery
-library into the _Little Navmap_ database. You can also use this list to speed up database loading
-if you exclude directories that do not contain airports or navaids \(landclass, elevation data and others\).
+Alle Verzeichnisse, einschließlich der Unterverzeichnisse in dieser Liste, werden beim Laden der Szeneriebibliothek in die _Little Navmap_ Datenbank weggelassen. Sie können diese Liste auch verwenden, um das Laden der Datenbank zu beschleunigen, wenn Sie Verzeichnisse ausschließen, die keine Flughäfen oder Navigationssysteme enthalten (Landklasse, Höhendaten und andere).
 
-You can also exclude `BGL` or `DAT` files if needed.
+Sie können auch `BGL`- oder `DAT`-Dateien bei Bedarf ausschließen.
 
-Note that you can select more than one entry in the file or directory dialogs.
+Beachten Sie, dass Sie in den Datei- oder Verzeichnisdialogen mehr als einen Eintrag auswählen können.
 
-Select one or more entries in the list and click on `Remove` to delete then from the list.
+Wählen Sie einen oder mehrere Einträge in der Liste aus und klicken Sie auf `Entfernen`, um sie dann aus der Liste zu löschen.
 
-#### Select Paths to exclude add-on recognition {#scenery-library-database_exclude-add-on}
+#### Pfad auswählen, der von der Add-On Erkennung ausgeschlossen werden soll {#scenery-library-database_exclude-add-on}
 
-**FSX/P3D:** All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be highlighted on the map as well as considered during search for add-ons.
+**FSX/P3D:** Alle Scenery-Daten, die außerhalb des Verzeichnisses des Basis-Flugsimulators `Scenery` gefunden werden, gelten als Add-on und werden auf der Karte hervorgehoben sowie bei der Suche nach Add-ons berücksichtigt.
 
-**X-Plane:** All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
+**X-Plane:** Alle Flughäfen im Ordner `Custom Scenery` gelten als Zusatzflughäfen und werden entsprechend markiert.
 
-You can use this list to modify this behavior.
+Sie können diese Liste verwenden, um dieses Verhalten zu ändern.
 
-Add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct certain aspects
-of airports like elevation, magnetic variance or others. All these airports will be recognized as add-on airports
-since all their files are not stored in the base flight simulator `Scenery` directory.
+Add-ons, wie _Orbx FTX Vector_ oder _fsAerodata_ fügen Szenerdateien hinzu, die bestimmte Aspekte von Flughäfen wie Höhe, magnetische Varianz oder andere korrigieren. Alle diese Flughäfen werden als Zusatzflughäfen erkannt, da alle ihre Dateien nicht im Verzeichnis des Basis-Flugsimulators `Scenery` gespeichert sind.
 
-Insert the corresponding directories or files into this list to avoid unwanted highlighting of these airports as add-ons.
+Fügen Sie die entsprechenden Verzeichnisse oder Dateien in diese Liste ein, um zu vermeiden, dass diese Flughäfen als Add-Ons unerwünscht hervorgehoben werden.
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Picture above:** Tab _`Scenery Library Database`_ with three directories and three files excluded from loading and two directories excluded from add-on recognition._
+_**Bild oben:** Registerkarte _`Szeneriebibliothek`_ mit drei Verzeichnissen und drei Dateien, die vom Laden ausgeschlossen sind, und zwei Verzeichnissen, die von der Add-On-Erkennung ausgeschlossen sind._
 
-#### Examples
+#### Beispiele
 
-Provided your simulator is installed in `C:\Games\FSX`.
+Vorausgesetzt, Ihr Simulator ist installiert in `C:\Games\FSX`.
 
 ##### ORBX Vector
 
-Exclude the directories below from add-on recognition. Do not exclude them from loading since you will see wrong airport altitudes.
+Schließt die folgenden Verzeichnisse von der Add-On-Erkennung aus. Schließen sie sie nicht vom Laden aus, da sie dann falsche Flughafenhöhen vorfinden.
 
 * `C:\Games\FSX\ORBX\FTX_VECTOR\FTX_VECTOR_AEC`
 * `C:\Games\FSX\ORBX\FTX_VECTOR\FTX_VECTOR_APT`
@@ -298,7 +285,7 @@ Exclude the directories below from add-on recognition. Do not exclude them from 
 
 ##### Flight1 Ultimate Terrain Europe
 
-Exclude these directories from loading to speed up the process:
+Schließt diese Verzeichnisse vom Laden aus, um den Ladevorgang zu beschleunigen:
 
 * `C:\Games\FSX\Scenery\UtEurAirports`
 * `C:\Games\FSX\Scenery\UtEurGP`
@@ -309,7 +296,7 @@ Exclude these directories from loading to speed up the process:
 
 ##### ORBX Regions
 
-Exclude these directories from loading:
+Schließt diese Verzeichnisse vom Laden aus:
 
 * `C:\Games\FSX\ORBX\FTX_NZ\FTX_NZSI_07_MESH`
 * `C:\Games\FSX\ORBX\FTX_NA\FTX_NA_CRM07_MESH`

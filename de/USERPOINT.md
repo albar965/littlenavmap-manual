@@ -56,8 +56,7 @@ Dropdown-Menü-Taste, mit der Sie Suchoptionen ein- oder ausblenden können.
 
 Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige `*`, um anzuzeigen, dass die zugehörige Filterzeile Änderungen aufweist.
 
-### Dialogfeld Nutzerpunkte hinzufügen
- {#userpoints-dialog-add}
+### Dialogfeld Nutzerpunkte hinzufügen {#userpoints-dialog-add}
 
 Der Dialog wird angezeigt, wenn Sie im Kontextmenü Karte [Nutzerpunkt hinzufügen](MAPDISPLAY.md#add-userpoint) ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") über die oberste Schaltfläche in der Registerkarte Nutzerpunkt-Suche oder über die Auswahl von `Nutzerpunkt hinzufügen` aus dem Kontextmenü in der Suchergebnistabelle wählen.
 
@@ -96,6 +95,7 @@ Zusätzliche Metadaten werden unten angezeigt:
 * **Temporärer Nutzerpunkt - wird beim nächsten Start gelöscht.** Dies bedeutet, dass der Benutzerpunkt temporär ist.
 
 Die Schaltfläche `Reset` macht alle manuellen Änderungen rückgängig und setzt alle Felder in ihren ursprünglichen Zustand zurück.
+
 ![Edit Dialog for one User-defined Waypoint](../images/userpoint_edit.jpg "Edit Dialog for one User-defined Waypoint")
 
 _**Bild oben:** Bearbeitungsdialog für einen einzelnen Nutzerpunkt._
@@ -114,6 +114,7 @@ In Kombination mit der leistungsstarken Suchfunktion ermöglicht dies Massenänd
 4. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld `Region:` und ändern Sie die Region.
 5. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld `Sichtbar von:` und passen Sie den Wert an.
 6. Klicken Sie auf `OK`.
+
 ![Edit Dialog for User-defined Waypoints](../images/userpoint_edit_bulk.jpg "Edit Dialog for User-defined Waypoints")
 
 _**Bild oben:** Bearbeitungsdialog für mehr als einen Nutzerpunkt. Die Felder _`Region`_ und _`Sichtbar von`_ werden für alle ausgewählten Punkte geändert. Alle anderen Felder bleiben unverändert._
@@ -205,7 +206,7 @@ Beachten Sie die folgenden Einschränkungen beim Verarbeiten von CSV-Dateien: Im
 | 11       | Visible from         | Nein      | Ja          | Definiert, ab welcher Zoomdistanz in Seemeilen \(angezeigt in [Statusleiste](MENUS.md#statusleiste)\) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.                    |
 | 12       | Last update timestamp| Nein      | Ja          | ISO-Datum und Uhrzeit der letzten Änderung. Das Format ist unabhängig von den Einstellungen des Systemdatumsformats. Format: `YYYY-MM-DDTHH:mm:ss`. Beispiel: `2018-03-28T22:06:16.763`. Nicht in der GUI editierbar.|
 
-### X-Plane Nutzer_fix.dat Data Format {#userpoints-xplane}
+### X-Plane User_fix.dat Data Format {#userpoints-xplane}
 
 Dies ermöglicht das Lesen und Schreiben der X-Plane `user_fix.dat` Datei für nutzerdefinierte Wegpunkte. Die Datei ist standardmäßig nicht vorhanden und muss unter `XPLANE/Custom Data/user_fix.dat` gespeichert werden.
 
@@ -238,11 +239,11 @@ I
 
 ` 50.88166700  12.58666700 PACEC ENRT ZZ`
 
-* The coordinates are read into the _Little Navmap_ userpoint coordinates.
-* The fix ident `PACEC` is read into the **Ident** field in _Little Navmap_.
-* The fix airport `ENRT` \(enroute: no airport here\) is read into the **Tags** field in _Little Navmap_.
-* The region `ZZ` \(invalid or no region\) is read into the **Region** field in _Little Navmap_.
-* **Type** will be set to `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") for all imported fixes.
+* Die Koordinaten werden in die  _Little Navmap_  Nutzerpunkt-Koordinaten eingelesen.
+* Die Fix-Id `PACEC` wird in das Feld **Ident** in _Little Navmap_ eingelesen.
+* Der festgelegte Flughafen `ENRT` \(enroute: kein Flughafen hier\) wird in das Feld **Tags** in _Little Navmap_ eingelesen.
+* Die Region `ZZ` \(ungültig oder keine Region\) wird in das Feld **Region** in _Little Navmap_ eingelesen.
+* **Type** wird auf `Wegpunkt`  ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") für alle importierten Korrekturen gesetzt.
 
 #### Export
 
@@ -291,10 +292,10 @@ Der Name des Wegpunktes kann aus bis zu 25 Zahlen, Großbuchstaben, Leerzeichen 
 
 `MTHOOD,MT HOOD PEAK,45.3723,-121.69783`
 
-* The ident `MTHOOD` is read into the **Ident** field in _Little Navmap_.
-* The name `MT HOOD PEAK` is read into the **Name** field in _Little Navmap_.
-* The coordinates are read into the _Little Navmap_ userpoint coordinates.
-* **Type** will be set to `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") for all imported waypoints.
+* Die Identität `MTHOOD` wird in das Feld **Ident** in _Little Navmap_ eingelesen.
+* Der Name `MT HOOD PEAK` wird in das Feld **Name** in _Little Navmap_ eingelesen.
+* Die Koordinaten werden in die _Little Navmap_ Nutzerpunkt-Koordinaten eingelesen.
+* **Type** wird auf `Wegpunkt` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") für alle importierten Wegpunkte gesetzt.
 
 #### Export
 

@@ -86,7 +86,7 @@ Suchen Sie nun nach `APX41080.bgl` und schließen Sie dessen Verzeichnis vom Lad
 * Prozeduren werden in manchen Fällen falsch gezeichnet.
 * Das Flughafen-Suchattribut `Prozeduren` funktioniert in der gemischten Datenbank nicht korrekt. Es werden nur Simulatorflughäfen mit Prozeduren angezeigt, anstatt den Navigraph-Flughafenstatus zu verwenden.
 
-## Wie meldet man einen Fehler? {#how-to-report-a-bug}
+## Einen Fehler melden {#how-to-report-a-bug}
 
 Wenn etwas schief geht, schicken Sie mir bitte alle beteiligten Dateien wie KML, PLN oder BGL (wenn das Copyright es erlaubt), _Little Navmap_s Logdatei und die Konfigurationsdatei, die beide im About-Dialog zu finden sind. Meine E-Mail-Adressen werden auch im About-Dialog von _Little Navmap_ angezeigt.
 

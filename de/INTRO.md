@@ -1,206 +1,220 @@
-## First Start {#first-start}
+## Erster Start {#first-start}
 
-_Little Navmap_ will copy and prepare the included Navigraph database on the first startup. See [Navigraph](MENUS.md/#navigraph) for more information about the integration.
+_Little Navmap_ kopiert und bereitet die mitgelieferte Navigraph-Datenbank beim ersten Start vor. Weitere Informationen zur Integration finden Sie unter [Navigraph](MENUS.md/#navigraph).
 
-The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown once the preparation is finished. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database.
+Das Dialogfenster [Szeneriebibliothek](SCENERY.md#load-scenery-library-dialog) wird angezeigt, sobald die Vorbereitung abgeschlossen ist. Von dort aus können Sie alle erkannten Flugsimulatoren auswählen und deren Szenerienbibliotheken in die interne Datenbank von _Little Navmap_ laden.
 
-**Note that X-Plane cannot be recognized automatically. You have to set the path in the `Scenery Library Dialog` before you can load the database or selecting it in the menu.**
+**Beachten Sie, dass X-Plane nicht automatisch erkannt werden kann. Sie müssen den Pfad im `Szeneriebibliothek Dialog` einstellen, bevor Sie die Datenbank laden oder im Menü auswählen können.**
 
-One database is kept for each simulator and can be changed on the fly in the [Scenery Library Menu](MENUS.md#scenery-library-menu).
 
-A warning dialog will be shown on Windows when starting _Little Navmap_ the first time on a system without FSX or P3D flight simulator installations. See chapter [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on this.
+Eine Datenbank wird für jeden Simulator gespeichert und kann im Menü [Szeneriebibliothek](MENUS.md#scenery-library-menu) direkt geändert werden.
 
-You can also go directly to the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) from there if you have X-Plane installed.
+Unter Windows wird beim ersten Start von _Little Navmap_ auf einem System ohne FSX- oder P3D-Flugsimulator-Installation ein Warndialog angezeigt. Weitere Informationen hierzu finden Sie im Kapitel [Installation ohne vorhandenen Flugsimulator](RUNNOSIM.md#running-without-flight-simulator-installation).
 
-One or more scenery library databases may need to be updated when you install a new version of _Little Navmap_. A question dialog will pop up prompting you to erase the now incompatible database. You can reload the scenery in the [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) after erasing the databases.
+Wenn Sie X-Plane installiert haben, können sie auch direkt zum [Szeneriebibliothek Dialog](SCENERY.md#load-scenery-library-dialog) gehen, .
 
-## Recommended things to do after Installing {#things-to-do-after-installing}
+Eine oder mehrere Szenerie-Bibliotheksdatenbanken müssen möglicherweise aktualisiert werden, wenn Sie eine neue Version von _Little Navmap_ installieren. Es erscheint ein Fragedialog, in dem Sie aufgefordert werden, die jetzt inkompatible Datenbank zu löschen. Sie können die Szenerie im [Szeneriebibliothek Dialog](SCENERY.md#load-scenery-library-dialog) nach dem Löschen der Datenbanken neu laden.
 
-* The elevation data which is used by default is limited and has a lot of problems. Therefore, I recommend to download and use the offline GLOBE elevation data. See [Options Dialog / Flight Plan Elevation Profile](OPTIONS.md#cache-elevation) for more information.
-* Have a look at the [tutorials](TUTORIALS.md) if you use the program the first time.
-* See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update _Little Navmap_'s navigation data.
-* See [Connecting to a Flight Simulator](CONNECT.md) for the next step to use *Little Navmap* as a moving map. The included *Little Xpconnect* plugin has to be installed for X-Plane.
 
-## How to run a network Setup {#network-setup}
+## Empfohlene Aktionen nach der Installation {#things-to-do-after-installing}
 
-See the two chapters below if you like to run _Little Navmap_ in a networked setup using one computer for the flight simulator and one computer to run _Little Navmap_.
+* Die standardmäßig verwendeten Höhendaten sind begrenzt und haben viele Probleme. Daher empfehle ich, die offline GLOBE Höhendaten herunterzuladen und zu verwenden. Weitere Informationen finden Sie unter [Optionsdialog / Flugplanhöhenprofil](OPTIONS.md#cache-elevation).
+* Schauen Sie sich die [Tutorials](TUTORIALS.md) an, wenn Sie das Programm zum ersten Mal verwenden.
+* Siehe [Navigraph-Updates installieren](https://albar965.github.io/littlenavmap_navigraph.html) auf meiner Homepage für Informationen, wie man die Navigationsdaten von _Little Navmap_ aktualisiert.
+* Siehe [Verbindung zu einem Flugsimulator](CONNECT.md) für den nächsten Schritt, um *Little Navmap* als Moving Map zu verwenden. Das mitgelieferte *Little Xpconnect* Plugin muss für X-Plane installiert sein.
+
+
+## So führen Sie ein Netzwerk-Setup aus {#network-setup}
+
+Lesen Sie die beiden folgenden Kapitel, wenn Sie _Little Navmap_ in einem vernetzten Setup mit einem Computer für den Flugsimulator und einem Computer für _Little Navmap_ ausführen möchten.
 
 * [Connecting to a Flight Simulator](CONNECT.md)
 * [Running without Flight Simulator Installation](RUNNOSIM.md)
 
-**How to prepare a network setup:**
+**Wie man eine Netzwerkeinrichtung vorbereitet:**
 
-1. Install/extract the whole *Little Navmap* archive on the flying **and** network computer.
-1. Copy *Little Xpconnect* to the X-Plane plugins folder if you use X-Plane.
-2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -&gt; `Scenery Library` -&gt; `Load Scenery Library ...`
-3. Copy the database files to the network computer. Quit *Little Navmap* before copying.
+1. Installieren/Entpacken des gesamten *Little Navmap*-Archivs auf dem aktiven **und** Netzwerkcomputer.
+1. Kopieren Sie *Little Xpconnect* in den Ordner X-Plane Plugins, wenn Sie X-Plane verwenden.
+2. Verwenden Sie *Little Navmap*, um die Szenerie-Datenbank auf dem Flugcomputer zu generieren. Hauptmenü -&gt; `Szeneriebibliothek` -&gt; `Szeneriebibliothek laden ....`
+3. Kopieren Sie die Datenbankdateien auf den Netzwerkcomputer. Beenden Sie *Little Navmap* vor dem Kopieren.
 
-**Flying in a network setup:**
 
-1. Start the simulator
-2. Start *Little Navconnect* on the flying computer.
-3. Run *Little Navmap* on the network computer.
-4. Connect *Little Navmap* on the network computer to *Little Navconnect* on the flying computer. Main menu -&gt; `Tools` -&gt; `Flight Simulator Connection ...`
+**Fliegen in einem Netzwerk:**
 
-See links above for detailed instructions.
+1. Starten Sie den Simulator
+2. Starten Sie *Little Navconnect* auf dem Flugsimulatorcomputer.
+3. Führen Sie *Little Navmap* auf dem Netzwerkcomputer aus.
+4. Verbinden Sie *Little Navmap* auf dem Netzwerkcomputer mit *Little Navconnect* auf dem Flugsimulatorcomputer. Hauptmenü -&gt; `Werkezeuge` -&gt; `Flugsimulatorverbindung ...`
 
-## General {#general-remarks}
+Siehe Links oben für detaillierte Anweisungen.
 
-### User Interface {#user-interface}
 
-#### Dock Windows
+## Allgemeines {#general-remarks}
 
-The user interface of _Little Navmap_ consists of a main window and several dock windows which can be detached from the main window or arranged in any order within the main window.
+### Benutzeroberfläche {#user-interface}
 
-The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double-clicking their title bar or by clicking on the window symbol on the top right.
+#### Dockfenster
 
-Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
+Die Benutzeroberfläche von _Little Navmap_ besteht aus einem Hauptfenster und mehreren Dockfenstern, die vom Hauptfenster getrennt oder in beliebiger Reihenfolge innerhalb des Hauptfensters angeordnet werden können.
 
-All docked windows except the map window can be closed if they are not needed. You can even drop docked windows on each other to create a tabbed view. The tabs will appear at the bottom of the dock stack in this case.
+Die angedockten Fenster können in ihrer angedockten Position bewegt und vom Hauptfenster gelöst werden, indem man sie einfach aus dem Hauptfenster zieht, auf die Titelleiste doppelklickt oder auf das Fenstersymbol oben rechts klickt.
 
-**Hold **`Ctrl`** while clicking on the window titlebar to prevent a window from going into docked state and keep it floating.**
+Doppelklicken Sie auf die Titelleiste des angedockten Fensters oder klicken Sie erneut auf das Fenstersymbol, um die Fenster wieder in ihre angedockte Position zu bringen.
 
-Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
+Alle angedockten Fenster außer dem Kartenfenster können geschlossen werden, wenn sie nicht benötigt werden. Sie können sogar angedockte Fenster aufeinander legen, um eine Tabbed View zu erstellen. Die Registerkarten erscheinen in diesem Fall am unteren Rand des Dockstapels.
 
-**Use the **`Main Menu` -&gt; `Window` **menu to restore closed windows or toolbars.**
+**Halten Sie **`Strg`** gedrückt, während Sie auf die Fenstertitelzeile klicken, um zu verhindern, dass ein Fenster in den angedockten Zustand übergeht und schwebend bleibt.**
 
-**The **`Main Menu` -&gt; `Window` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
+Symbolleisten sind auch durch Klicken auf den linken Knopf verschiebbar und können auch geschlossen oder vom Hauptfenster gelöst werden.
 
-#### Context Menus
+**Verwenden Sie das ** `Hauptmenu` -&gt; `Fenster`**, um geschlossene Fenster oder Symbolleisten wiederherzustellen.**
 
-**Use the context menus to build a flight plan.**
+**Der **`Hauptmenupunkt` -&gt; `Fenster` -&gt; `Fensterlayout zurücksetzen`**  kann verwendet werden, um den Status und die Positionen aller Dockfenster und Symbolleisten wieder auf den Standardwert zurückzusetzen.**
 
-Context menus can be found in the following places:
+#### Kontextmenüs
 
-* Map display window - [Map Context Menu](MAPDISPLAY.md#map-context-menu)
-* Flight plan table - [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu)
-* Airport and navaid search result tables - [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu)
-* Procedure search tree - [Procedure Tree Context Menu](SEARCHPROCS.md#procedure-context-menu)
+**Verwenden Sie die Kontextmenüs, um einen Flugplan zu erstellen.**
 
-The context menus provide functionality to get more information about an object at the clicked position or to build or edit a flight plan.
+Kontextmenüs finden Sie an den folgenden Stellen:
 
-#### Tooltip Help, Help Buttons and Help Menu {#help}
+* Kartenanzeigefenster - [Karten-Kontextmenü](MAPDISPLAY.md#map-Kontextmenü)
+* Flugplantabelle - [Flugplattentabelle Ansicht Kontextmenü](FLIGHTPLAN.md#Flugplan-Tabelle-Ansicht Kontextmenü)
+* Flughafen- und navaid-Suchergebnistabellen - [Suchergebnis-Tabelle Ansicht Kontextmenü](SEARCH.md#search-result-table-view-context-menu)
+* Prozeduren-Suchbaum - [Prozedurenbaum Kontextmenü](SEARCHPROCS.md#procedure-context-menu)
 
-The help menu of *Little Navmap* contains links to the online help, an included offline help PDF document, online tutorials and the map legend.
+Die Kontextmenüs bieten Funktionen, um mehr Informationen über ein Objekt an der angeklickten Position zu erhalten oder einen Flugplan zu erstellen oder zu bearbeiten.
 
-The program uses tooltips to display more information on buttons and other controls.
+#### Tooltip Hilfe, Hilfebuttons und Hilfemenü {#help}
 
-A more detailed description is shown on the left side of the statusbar if you hover the mouse over a menu item.
+Das Hilfemenü von *Little Navmap* enthält Links zur Online-Hilfe, ein enthaltenes Offline-Hilfe-PDF-Dokument, Online-Tutorials und die Kartenlegende.
 
-Most dialogs and some dock windows show help buttons ![Help](../images/icons/help.png "Help") which will open the corresponding sections of the online manual.
+Das Programm verwendet Tooltips, um weitere Informationen zu Schaltflächen und anderen Bedienelementen anzuzeigen.
 
-#### Window Title
+Eine detailliertere Beschreibung wird auf der linken Seite der Statusleiste angezeigt, wenn Sie mit der Maus über einen Menüpunkt fahren.
 
-The main window title shows the application name and version.
+Die meisten Dialoge und einige Dockfenster zeigen Hilfebuttons ![Hilfe](../images/icons/help.png " Help"), die die entsprechenden Abschnitte des Online-Handbuchs öffnen.
 
-Furthermore, it indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name, the aircraft performance file name with trailing `*` for both if either has changed.
+#### Fenster-Titel
 
-A `N` will be appended if the Navigraph database is used. Example below for Prepar3D:
+Der Titel des Hauptfensters zeigt den Namen und die Version der Anwendung an.
 
-* `P3DV4`: All features on the map and all information in dialogs and windows comes from the flight simulator database.
-* `P3DV4 / N`: Airports and ILS are shown and used from the flight simulator database. Navaids, airspace, airways and procedures are used from the Navigraph database.
-* `(P3DV4) / N`: All data is used from the Navigraph database. No aprons, no taxiways and no parking positions are available for airports.
+Außerdem zeigt es die aktuell ausgewählte Simulator-Datenbank \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` oder `XP11`\),  den Flugplandateinamen, den Flugzeugleistungsdateinamen mit nachlaufendem `*` für beide an, wenn sich beide geändert haben.
 
-**Example:** `Little Navmap 2.2.1 - XP11 / N LOAG_LOWW.fmc * - PA30 Twin Comanche.lnmperf`
+Bei Verwendung der Navigraph-Datenbank wird ein `N` angehängt. Beispiel unten für Prepar3D:
 
-Version 2.2.1, X-Plane selected, Navigraph database in use, flight plan `LOAG_LOWW.fmc` changed and performance profile `PA30 Twin Comanche.lnmperf` unchanged.
+* `P3DV4`: Alle Funktionen auf der Karte und alle Informationen in Dialogen und Fenstern stammen aus der Datenbank des Flugsimulators.
+* `P3DV4 / N`: Flughäfen und ILS werden aus der Flugsimulator-Datenbank angezeigt und genutzt. Navaids, Luftraum, Luftstraßen und Verfahren werden aus der Navigraph-Datenbank verwendet.
+* `(P3DV4) / N`: Alle Daten werden aus der Navigraph-Datenbank verwendet. Für Flughäfen gibt es keine Vorfelder, keine Rollwege und keine Parkplätze.
 
-#### Information and Simulator Aircraft Text
+**Beispiel:** `Little Navmap 2.2.1 - XP11 / N LOAG_LOWW.fmc * - PA30 Twin Comanche.lnmperf`
 
-You can change the text size permanently in the options dialog for these windows.
+Version 2.2.1, X-Plane ausgewählt, Navigraph-Datenbank im Gebrauch, Flugplan `LOAG_LOWW.fmc` geändert und Leistungsprofil `PA30 Twin Comanche.lnmperf` unverändert.
 
-A quick way to change the text size is to use the mousewheel and `Ctrl` key. This setting won't be saved across sessions, though.
+#### Text zu Informationen und Simulator Flugzeuge
 
-#### Error Messages
+Sie können die Textgröße im Optionsdialog für diese Fenster dauerhaft ändern.
 
-_Little Navmap_ shows error messages with white text on red background for problems with the aircraft performance, top of descent/climb calculation and other issues.
+Eine schnelle Möglichkeit, die Textgröße zu ändern, ist die Verwendung des Mausrads und der Taste "Strg". Diese Einstellung wird jedoch nicht sitzungsübergreifend gespeichert.
 
-Tooltips on these error messages give more help in some cases.
+#### Fehlermeldungen
 
-#### Tabs
+_Little Navmap_ zeigt Fehlermeldungen mit weißem Text auf rotem Hintergrund bei Problemen mit der Flugzeugleistung, der Kalkulation von top of descent/climb und anderen Problemen.
 
-Tabs that appear on top of a window are fixed. A tooltip gives more information about the function of a tab.
+Tooltips zu diesen Fehlermeldungen bieten in einigen Fällen weitere Hilfe.
 
-Tabs at the bottom of a window appear when you drop dock windows on each other. Grab a window title bar to move a window out of the stacked display. You can change the order of these tabs by dragging them around.
+#### Registerkarten
 
-The mousewheel allows to cycle between tabs in a more convenient way.
+Registerkarten, die über einem Fenster erscheinen, sind fixiert. Ein Tooltip gibt weitere Informationen über die Funktion einer Registerkarte.
 
-#### Copy and Paste
+Registerkarten am unteren Rand eines Fensters werden angezeigt, wenn Sie Dockfenster aufeinander legen. Wählen Sie eine Fenstertitelzeile, um ein Fenster aus dem gestapelten Display zu verschieben. Sie können die Reihenfolge dieser Registerkarten ändern, indem Sie sie mit der Maus verschieben.
 
-Almost all dialogs, text labels and all information windows in _Little Navmap_ allow copy and paste.
+Das Mausrad ermöglicht es, auf komfortablere Weise zwischen den Registerkarten zu wechseln.
 
-You can select the text using the mouse and then either use `Ctrl+C` or the context menu to copy it to the clipboard. The information and simulator aircraft windows even support copying of formatted text including the icons. This can be helpful to report errors.
+#### Kopieren und Einfügen
 
-The table views for the flight plan or airport/navaid search results allow copying of the results in CSV format to the clipboard which can be pasted into a spreadsheet program like [_LibreOffice Calc_](https://www.libreoffice.org) or _Microsoft Excel_.
+Fast alle Dialoge, Textbeschriftungen und alle Informationsfenster in _Little Navmap_ erlauben das Kopieren und Einfügen.
 
-### Translation and Locale {#translation-and-locale}
+Sie können den Text mit der Maus auswählen und dann entweder über `Strg+C` oder das Kontextmenü in die Zwischenablage kopieren. Die Fenster des Informations- und Simulatorflugzeugs unterstützen sogar das Kopieren von formatiertem Text einschließlich der Symbole. Dies kann hilfreich sein, um Fehler zu melden.
 
-_Little Navmap_ is currently available in several languages. 
+Die Tabellenansichten für die Flugplan- oder Flughafen-/Navaid-Suchergebnisse ermöglichen das Kopieren der Ergebnisse im CSV-Format in die Zwischenablage, die in ein Tabellenkalkulationsprogramm wie [_LibreOffice Calc_](https://www.libreoffice.org) oder _Microsoft Excel_ eingefügt werden können.
 
-I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available. See [Translating](https://github.com/albar965/littlenavmap/wiki/Translating) in the Github _Little Navmap_ wiki for more information.
 
-You can override the user interface language in the dialog `Options` the the tab `User Interface`.
+### Übersetzung und Sprachgebrauch {#translation-and-locale}
 
-Despite using the English language in the user interface the locale settings of the operating system will be used. So, e.g. on a German version of Windows you will see comma as a decimal separator instead of the English dot.
+_Little Navmap_ ist derzeit in mehreren Sprachen verfügbar. 
 
-The language and locale settings can be forced to English in the dialog `Options` on the tab `User Interface` if a translated user interface is not desired.
+Ich unterstütze gerne jeden, der die Benutzeroberfläche oder das Handbuch in eine andere Sprache übersetzen möchte. Sprachpakete können einer _Little Navmap_-Installation später hinzugefügt werden, sobald sie verfügbar sind. Weitere Informationen finden Sie unter [Translating](https://github.com/albar965/littlenavmap/wiki/Translating) im Github _Little Navmap_ Wiki.
 
-Please note that some screenshots in this manual were taken using German locale, therefore a comma is used as a decimal separator and a dot as a thousands separator.
+Sie können die Sprache der Benutzeroberfläche im Dialog `Einstellungen` auf der Registerkarte `Benutzeroberfläche` überschreiben.
 
-### Map Legend {#map-legend}
+Trotz der Verwendung der englischen Sprache in der Benutzeroberfläche werden die lokalen Einstellungen des Betriebssystems verwendet. So sehen Sie z.B. bei einer deutschen Version von Windows das Komma als Dezimaltrennzeichen anstelle des englischen Punktes.
 
-The legend explains all the map icons and the `Flight Plan Elevation Profile` icons. It is available in the `Legend` dock window or in this manual: [Legend](LEGEND.md).
+Die Sprach- und Gebietsschemaeinstellungen können im Dialog `Einstellungen` auf der Registerkarte `Benutzeroberfläche` auf Englisch erzwungen werden, wenn keine übersetzte Benutzeroberfläche gewünscht wird.
 
-### Naming Conventions used in this Manual {#naming-conventions-used-in-this-manual}
+Bitte beachten Sie, dass einige Screenshots in diesem Handbuch in deutscher Sprache erstellt wurden, daher wird ein Komma als Dezimaltrennzeichen und ein Punkt als Tausendertrennzeichen verwendet.
 
-`Highlighted text` is used to denote window, menu, button, file or directory names.
-See the [Glossary](GLOSSARY1.md) for explanations of common terms in this manual.
+
+### Kartenlegende {#map-legend}
+
+Die Legende erklärt alle Kartensymbole und die Symbole `Flugplan Höhenprofil`. Sie ist im Dockfenster `Legende` oder in dieser Anleitung verfügbar: [Legend](LEGEND.md).
+
+
+### In diesem Handbuch verwendete Namenskonventionen {#naming-conventions-used-in-this-manual}
+
+`Hervorgehobener Text` wird verwendet, um Fenster-, Menü-, Schaltflächen-, Datei- oder Verzeichnisnamen zu bezeichnen.
+Im [Glossar](GLOSSARY1.md) finden Sie Erklärungen zu gängigen Begriffen in diesem Handbuch.
+
 
 ### Rating {#rating}
 
-Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(`Empty Airport`\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab.
+Flughäfen erhalten je nach Einrichtung eine Bewertung von null bis fünf Sternen. Flughäfen ohne Rating gelten als langweilig und werden mit einem grauen Symbol unter allen anderen Flughäfen auf der Karte \(`Empty Airport`\) angezeigt. Dieses Verfahren kann im Dialogfeld `Einstellungen` auf der Registerkarte `Kartendarstellung` deaktiviert werden.
 
-The criteria below are used to calculate the rating. Each item gives one star:
+Die folgenden Kriterien werden zur Berechnung des Ratings herangezogen. Jeder Gegenstand erhält einen Stern:
 
-  1. Add-on \(or 3D for X-Plane\)
-  2. Parking positions \(ramp or gate\)
+  1. Add-on \(oder 3D für X-Plane\)
+  2. Parkpositionen \(Rampe oder Gate\)
   3. Taxiways
   4. Aprons
-  5. Tower building \(only if at least one of the other conditions is met\).
+  5. Tower Gebäude \(nur wenn mindestens eine der anderen Bedingungen erfüllt ist\).
 
-All airports that are not located in the default `Scenery` directory of FSX/P3D or are located in the `Custom Scenery` directory of X-Plane are considered add-on airports which raises the rating by one star.
+Alle Flughäfen, die sich nicht im standardmäßigen `Scenery`-Verzeichnis des FSX/P3D oder im `Custom Scenery`-Verzeichnis von X-Plane befinden, gelten als Zusatzflughäfen, die die Bewertung um einen Stern erhöhen.
 
-Airports in the `Custom Scenery/Global Airports/Earth nav data/apt.dat` file of X-Plane are 3D airports which raises the rating by one star too.
+Flughäfen in der Datei `Custom Scenery/Global Airports/Earth nav data/apt.dat` von X-Plane sind 3D-Flughäfen, was die Bewertung ebenfalls um einen Stern erhöht.
 
-### Navdata Updates {#navdata-updates}
+### Navdata Updates {##navdata-updates}
 
-_Little Navmap_ comes with a ready to use database from Navigraph including airspaces, SIDs, STARs and more. The database can be updated by using Navigraph's _FMS Data Manager_.
+_Little Navmap_ enthält eine gebrauchsfertige Datenbank von Navigraph mit Lufträumen, SIDs, STARs und mehr. Die Datenbank kann mit dem _FMS Data Manager_ von Navigraph aktualisiert werden.
 
-See the chapter [Navigation Databases](NAVDATA.md) for more information.
+Weitere Informationen finden Sie im Kapitel [Navigationsdatenbanken](NAVDATA.md).
 
-#### FSX and Prepar3D
 
-*Little Navmap* is compatible with navdata updates from [_fsAerodata_](https://www.fsaerodata.com) or [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
+#### FSX und Prepar3D
 
-#### X-Plane
+*Little Navmap* ist kompatibel mit Navdata-Updates von [_fsAerodata_](https://www.fsaerodata.com) oder [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
 
-*Little Navmap* will use any navdata updates that are installed in the directory `Custom Data`. Any older updates installed in the GPS directories are not used.
-
-User-defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
-
-Note that neither ARINC nor the FAACIFP files are supported.
-
-### Magnetic Declination {#magnetic-declination}
-
-The calibrated magnetic declination of a VOR may differ from the actual declination in a region as it does in reality. Therefore, magnetic course values might differ in some cases.
-
-#### FSX and Prepar3D
-
-The declination used to calculate the magnetic course is taken from the `magdec.bgl` file in the scenery database.
-
-Updates for this file are available here: [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
 
 #### X-Plane
 
-The declination values for X-Plane \(airports and all navaids except VORs\) is calculated based on the included `magdec.bgl` file which is based on the values for the beginning of 2017.
+*Little Navmap* verwendet alle Navdata-Updates, die im Verzeichnis `Custom Data` installiert sind. Alle älteren Updates, die in den GPS-Verzeichnissen installiert sind, werden nicht verwendet.
+
+Benutzerdefinierte Daten aus den Dateien `user_fix.dat` und `user_nav.dat` werden gelesen und gegebenenfalls in die Datenbank übernommen.
+
+Beachten Sie, dass weder ARINC noch die FAACIFP-Dateien unterstützt werden.
+
+
+### Magnetische Missweisung {#magnetic-declination}
+
+Die kalibrierte magnetische Missweisung eines VOR kann von der tatsächlichen Missweisung in einem Bereich abweichen, wie sie in Wirklichkeit der Fall ist. Daher können die Werte des magnetischen Verlaufs in einigen Fällen abweichen.
+
+
+#### FSX und Prepar3D
+
+Die Deklination zur Berechnung des magnetischen Kurses wird aus der Datei `magdec.bgl` in der Szenen-Datenbank übernommen.
+
+Updates für diese Datei finden Sie hier: [_FSX/P3D Navaids Update_](http://www.aero.sors.fr/navaids3.html).
+
+#### X-Plane
+
+Die Deklinationswerte für X-Plane \(Flughäfen und alle Navaids außer VORs\) werden basierend auf der enthaltenen Datei `magdec.bgl` berechnet, die auf den Werten für Anfang 2017 basiert.
+
 

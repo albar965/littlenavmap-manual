@@ -1,16 +1,17 @@
-## Flight Plan Formats {#flight-plan-formats}
+## Flugplanformate {#flight-plan-formats}
 
-_Little Navmap_ supports several flight plan formats, all of which have different limitations. Only some of these formats can be loaded and saved.
+_Little Navmap_ unterstützt mehrere Flugplanformate, die alle unterschiedliche Einschränkungen haben. Nur einige dieser Formate können geladen und gespeichert werden.
 
-The program uses different `Save as ...` file dialogs instead of just one. This means the directory for each file format is retained separately, removing the need to navigate back and forth between the FSX flight plan directory, the P3D flight plan directory and the X-Plane FMS output directory.
+Das Programm verwendet anstelle von nur einem verschiedene "Speichern unter..." Datei-Dialoge. Das bedeutet, dass das Verzeichnis für jedes Dateiformat separat beibehalten wird, so dass nicht zwischen dem FSX-Flugplanverzeichnis, dem P3D-Flugplanverzeichnis und dem X-Plane FMS-Ausgabeverzeichnis hin und her navigiert werden muss.
 
-Note the difference between `Save Flight Plan as ...` and `Export Flight Plan as ...`: `Export` does not change the current file name while `Save as ...` does.
+Beachten Sie den Unterschied zwischen `Flugplan speichern unter...` und `Flugplan exportieren unter...`: `Exportieren` ändert den aktuellen Dateinamen nicht, während `Speichern unter...` dies tut.
+
 
 ### Feature Table {#flight-plan-formats-feature}
 
 The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(X = supported, 0 = not supported\):
 
-| Format                        | Read | Write | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Cruise<br/>Alt. | Ground<br/>speed  | Proc. |
+| Format                        | Lesen | Schreiben | Airw. | VFR/<br/>IFR| Nutzer<br/>Wpt.<br/>Namen| Abflug<br/>Parking| Cruise<br/>Alt. | Grund<br/>speed  | Proz. |
 | ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ----  |
 | FSX PLN<br/>annotated         | X    | X     | X     | X           | X                      | X               | X               | X                 | X     |
 | FSX PLN                       | X    | X     | X     | X           | X                      | X               | X               | 0                 | 0     |
@@ -34,162 +35,165 @@ The table below shows the capabilities of _Little Navmap_ and the supported flig
 | Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^3] |
 | GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 
-Procedure waypoints are excluded from all file formats by default, except for GPX. You have to use the GPS or FMS in the simulator to select procedures.
+Prozedur-Wegpunkte sind standardmäßig von allen Dateiformaten ausgeschlossen, mit Ausnahme von GPX. Sie müssen das GPS oder FMS im Simulator verwenden, um Verfahren auszuwählen.
 
-You can enable saving of waypoints by checking the menu items [Save Waypoints for Approaches](MENUS.md#export-flight-plan-approach-waypoints) and/or [Save Waypoints for SID and STAR](MENUS.md#export-flight-plan-sid-star-waypoints).
 
-A dialog is shown if any unsupported features are detected in the current flight plan when trying to save a plan. You can disable this dialog for future saves if you know what you are doing.
+Sie können das Speichern von Wegpunkten aktivieren, indem Sie die Menüpunkte [Speichere Anflug-Wegpunkte](MENUS.md#export-flight-plan-approach-waypoints) und/oder [Speichere Wegpnkte für SID und STAR](MENUS.md#export-flight-plan-sid-star-waypoints) anklicken.
 
-The current file name and type will change if you save a plan to a format that is readable and writable. This does not happen when exporting.
+Ein Dialog wird angezeigt, wenn beim Versuch, einen Plan zu speichern, nicht unterstützte Merkmale im aktuellen Flugplan erkannt werden. Sie können diesen Dialog für zukünftiges Speichern deaktivieren, wenn Sie wissen, was Sie tun.
 
-An example shows how the program deals with the limited formats:
+Der aktuelle Dateiname und Typ ändert sich, wenn Sie einen Plan in einem Format speichern, das lesbar und beschreibbar ist. Dies geschieht nicht beim Export.
 
-1. Create a flight plan including procedures.
-2. Save as PLN - current filename changes to new file name `NAME.pln`.
-3. Save as FMS - a warning is shown and after saving the current filename changes to new `NAME.fms`.
-4. Restart program - `NAME.fms` will be reloaded and procedures are lost.
-5. Now export as GFP - Current filename remains `NAME.fms`.
+Ein Beispiel zeigt, wie das Programm mit den begrenzten Formaten umgeht:
 
-### User Waypoint Names {#flight-plan-formats-user-waypoints}
+1. Erstellen Sie einen Flugplan mit Prozeduren.
+2. Speichern unter PLN - der aktuelle Dateiname ändert sich in einen neuen Dateinamen `NAME.pln`.
+3. Als FMS speichern - es wird eine Warnung angezeigt und nach dem Speichern ändert sich der aktuelle Dateiname in einen neuen `NAME.fms`.
+4. Programm neu starten - `NAME.fms` wird neu geladen und Prozeduren gehen verloren.
+5. Jetzt als GFP exportieren - der aktuelle Dateiname bleibt `NAME.fms`.
 
-User waypoint names will be adapted to format limitations when saving. That means that waypoint names can change when reloading a flight plan.
 
-* **PLN:** Maximum length for FSX or Prepar3D is 10 charaters and no special characters are allowed. Unsupported characters will be removed and the length will be truncated.
-* **FMS:** No spaces allowed. These will be replaced with underscores \(`_`\).
-* **FLP:** All user waypoint names will be replaced by coordinates.
+### Benutzerwegpunkt-Namen {#flight-plan-formats-user-waypoints}
+
+Die Namen der Benutzer-Wegpunkte werden beim Speichern an die Formatbeschränkungen angepasst. Das bedeutet, dass sich die Namen der Wegpunkte beim Neuladen eines Flugplans ändern können.
+
+* **PLN:** Die maximale Länge für FSX oder Prepar3D beträgt 10 Zeichen und es sind keine Sonderzeichen erlaubt. Nicht unterstützte Zeichen werden entfernt und die Länge wird gekürzt.
+* **FMS:** Keine Leerzeichen erlaubt. Diese werden durch Unterstriche  \(`_`\)  ersetzt.
+* **FLP:** Alle Benutzer-Wegpunktnamen werden durch Koordinaten ersetzt.
 
 ### ![FSX PLN](../images/icons/filesave.png "FSX PLN") FSX PLN {#flight-plan-formats-fsx-pln}
 
-The format FSX PLN is used as a default format because it supports most features and allows to include additional information in form of annotations which will be ignored by flight simulators and most other tools.
+Das Format FSX PLN wird als Standardformat verwendet, da es die meisten Funktionen unterstützt und es ermöglicht, zusätzliche Informationen in Form von Anmerkungen einzufügen, die von Flugsimulatoren und den meisten anderen Tools ignoriert werden.
 
-**Note that P3D v4.2 overwrites the flight plan when loading, which erases all annotations. Save a copy of the plan to another location if you like to keep all information about procedures or speed.**
+**Beachten Sie, dass P3D v4.2 beim Laden den Flugplan überschreibt, wodurch alle Anmerkungen gelöscht werden. Speichern Sie eine Kopie des Plans an einem anderen Ort, wenn Sie alle Informationen über Abläufe oder Geschwindigkeit behalten möchten.**
 
 ### ![FS9 PLN](../images/icons/filesave.png "FS9 PLN") FS9 PLN {#flight-plan-formats-fs9-pln}
 
-File format of the Flight Simulator 2004. Uses the same PLN extension as the FSX PLN format. _Little Navmap_ can only read this format. Therefore a warning dialog is shown before overwriting a file with the newer FSX PLN format.
+Dateiformat des Flugsimulators 2004. Verwendet die gleiche PLN-Erweiterung wie das FSX PLN-Format. _Little Navmap_ kann nur dieses Format lesen. Daher wird vor dem Überschreiben einer Datei mit dem neueren FSX PLN-Format ein Warndialog angezeigt.
 
 ### ![Clean PLN](../images/icons/filesaveclean.png "Clean PLN") Clean PLN {#flight-plan-formats-clean-pln}
 
-This is the same as the FSX PLN but without additional annotations which contain information about selected procedures or ground speed. Use this format if an application cannot deal with the annotated format.
+Dies ist das gleiche wie beim FSX PLN, jedoch ohne zusätzliche Anmerkungen, die Informationen über ausgewählte Verfahren oder die Grundgeschwindigkeit enthalten. Verwenden Sie dieses Format, wenn eine Anwendung nicht mit dem kommentierten Format umgehen kann.
 
 ### ![FMS 11](../images/icons/saveasfms.png "FMS 11") FMS 11 \(X-Plane\) {#flight-plan-formats-fms11}
 
-New X-Plane FMS format which can be loaded into the stock GPS, the G1000 and the FMS of X-Plane 11.10. This is the default save format for X-Plane FMS now. Use the export function to save old FMS version 3 files.
+Neues X-Plane FMS-Format, das in das Standard-GPS, das G1000 und das FMS von X-Plane 11.10 geladen werden kann. Dies ist nun das Standardspeicherformat für X-Plane FMS. Verwenden Sie die Exportfunktion, um alte FMS-Version 3-Dateien zu speichern.
 
-**This format is supported as of X-Plane 11.10. It can already be used in the beta versions but might crash X-Plane version 11.05 and below.**
+**Dieses Format wird ab X-Plane 11.10 unterstützt. Es kann bereits in den Beta-Versionen verwendet werden, kann aber X-Plane Version 11.05 und darunter abstürzen.**
 
-_Little Navmap_ can read and write this format.
+_Little Navmap_ kann dieses Format lesen und schreiben.
 
-Store these files into the `Output/FMS plans` directory inside the X-Plane directory.
+Speichern Sie diese Dateien im Verzeichnis `Output/FMS plans` im Ordner X-Plane.
 
 ### ![FMS 3](../images/icons/saveasfms.png "FMS 3") FMS 3 \(X-Plane\) {#flight-plan-formats-fms3}
 
-X-Plane FMS format which can be loaded into the stock GPS and FMS of X-Plane 10 and 11.05. The format is very limited and basically stores only a list of waypoints.
+X-Plane FMS-Format, das in das Standard-GPS und FMS von X-Plane 10 und 11.05 geladen werden kann. Das Format ist sehr begrenzt und speichert im Grunde nur eine Liste von Wegpunkten.
 
-_Little Navmap_ can read and write this format.
+_Little Navmap_ kann dieses Format lesen und schreiben.
 
-Store these files into the `Output/FMS plans` directory inside the X-Plane directory.
+Speichern Sie diese Dateien im Verzeichnis `Output/FMS plans` im X-Plane-Verzeichnis.
 
 ### FLP {#flight-plan-formats-flp}
 
-A format that can be read by the X-Plane FMS \(not the X-Plane GPS\), Aerosoft Airbus and other add-on aircraft. Supports airways and procedures.
+Ein Format, das vom X-Plane FMS \(nicht vom X-Plane GPS\), Aerosoft Airbus und anderen Add-On-Flugzeugen gelesen werden kann. Unterstützt die Airway und Verfahren.
 
-You can load these files into the X-Plane FMS including airway information. Procedures are saved in the FLP but cannot loaded yet by the FMS. You have to select these manually after loading the flight plan.
+Sie können diese Dateien mit den Aiway-Informationen in das X-Plane FMS laden. Prozeduren werden im FLP gespeichert, können aber vom FMS noch nicht geladen werden. Diese müssen Sie nach dem Laden des Flugplans manuell auswählen.
 
-Store these files into the `Output/FMS plans` directory inside the X-Plane directory if you want to use them in X-Plane.
-
+Speichern Sie diese Dateien im Verzeichnis `Output/FMS plans` im X-Plane-Verzeichnis, wenn sie sie in X-Plane verwenden möchten.
 
 ### FPL \(Reality XP Garmin GNS\) {#flight-plan-formats-rxpgns}
 
-Flight plan format as FPL file usable by the _Reality XP GNS 530W/430W V2_.
+Flugplanformat als FPL-Datei verwendbar mit dem _Reality XP GNS 530W/430W V2_.
 
-This file format can only be exported. Reading is not supported.
+Dieses Dateiformat kann nur exportiert werden. Das Lesen wird nicht unterstützt.
 
-See [below](#garmin-notes) for information on known problems when exporting flight plan data for the GNS.
+Informationen zu bekannten Problemen beim Export von Flugplandaten für das GNS finden sie [unten](#garmin-notes).
 
-_Little Navmap_ considers the `GNSAPPDATA` environment variable if set. See the GNS manual for more information.
+_Little Navmap_ berücksichtigt die Umgebungsvariable `GNSAPPDATA`, falls gesetzt. Weitere Informationen finden Sie im GNS-Handbuch.
 
-The default directory to save the flight plans for the GNS units is
+Das Standardverzeichnis zum Speichern der Flugpläne für die GNS-Einheiten ist
 `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+für alle Simulatoren. Das Verzeichnis wird beim ersten Export von _Little Navmap_ automatisch erstellt, wenn es nicht existiert.
 
 ### GFP \(Reality XP Garmin GTN\) {#flight-plan-formats-rxpgtn}
 
-Save flight plan as GFP file usable by the _Reality XP GTN 750/650 Touch_.
+Speichern Sie den Flugplan als GFP-Datei, die vom _Reality XP GTN 750/650 Touch_ verwendet werden kann.
 
-This file format can only be exported. Reading is not supported.
+Dieses Dateiformat kann nur exportiert werden. Das Lesen wird nicht unterstützt.
 
-See [below](#garmin-notes) for information on known problems when exporting flight plan data for the GTN.
+Informationen zu bekannten Problemen beim Export von Flugplandaten für das GTN finden sie [unten](#garmin-notes).
 
-_Little Navmap_ considers the `GTNSIMDATA` environment variable if set. See the GTN manual for more information.
+_Little Navmap_ berücksichtigt die Umgebungsvariable `GTNSIMDATA`, falls gesetzt. Weitere Informationen finden Sie im GTN-Handbuch.
 
 #### Garmin GTN Trainer 6.41
 
-The default directory to save the flight plans for the GTN units is
+Das Standardverzeichnis zum Speichern der Flugpläne für die GTN-Einheiten ist für alle Simulatoren
 `C:\ProgramData\Garmin\Trainers\GTN\FPLN`
-for all simulators. The directory will be created automatically by _Little Navmap_ on first export if it does not exist.
+Das Verzeichnis wird beim ersten Export von _Little Navmap_ automatisch erstellt, wenn es nicht existiert.
 
 #### Garmin GTN Trainer 6.21
 
-If you're using the trainer version 6.21 then the default path is `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. You have to create this directory manually and then navigate to it in the file dialog when saving. _Little Navmap_ will remember the selected directory.
+Wenn Sie die Trainerversion 6.21 verwenden, lautet der Standardpfad `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. Sie müssen dieses Verzeichnis manuell anlegen und beim Speichern im Datei-Dialog darauf zugreifen. _Little Navmap_ merkt sich das ausgewählte Verzeichnis.
+
 
 ### GFP \(Flight1 Garmin GTN\) {#flight-plan-formats-gfp}
 
-This is the flight plan format used by the _Flight1 GTN 650/750_.
+Dies ist das Flugplanformat, das vom _Flight1 GTN 650/750_ verwendet wird.
 
-This file format can only be exported. Reading is not supported.
+Dieses Dateiformat kann nur exportiert werden. Das Lesen wird nicht unterstützt.
 
-See [below](#garmin-notes) for information on problems when exporting flight plan data for the GTN.
+Informationen zu Problemen beim Export von Flugplandaten für das GTN finden Sie [unten](#garmin-notes).
 
-The default directories to save the flight plans for the GTN units are:
+Die Standardverzeichnisse zum Speichern der Flugpläne für die GTN-Einheiten sind:
 
 * **Prepar3D v3:** `C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL`.
 * **Prepar3D v4:** `C:\Program Files\Lockheed Martin\Prepar3D v4\F1TGTN\FPL`.
 * **Flight Simulator X:** `C:\ProgramFiles(x86)\Microsoft Games\Flight Simulator X\F1GTN\FPL`
 
-You might need to change the user privileges on this directory if your saved flight plans do not show up in the GTN. Give yourself full control and/or ownership of this directory to avoid this.
+Möglicherweise müssen Sie die Benutzerrechte in diesem Verzeichnis ändern, wenn Ihre gespeicherten Flugpläne nicht im GTN angezeigt werden. Geben Sie sich die volle Kontrolle und/oder das Recht auf dieses Verzeichnis, um dies zu vermeiden.
 
-A typical symptom is that you can save the flight plan in _Little Navmap_ and you can also see the saved plan in _Little Navmap_'s open dialogs but it does not show up in the GTN unit. Change the privileges of the export directory as mentioned above if that is the case.
+Ein typisches Symptom ist, dass Sie den Flugplan in _Little Navmap_ speichern können und Sie können den gespeicherten Plan auch in den offenen Dialogen von _Little Navmap_ sehen, aber er erscheint nicht in der GTN-Einheit. Ändern Sie die Berechtigungen des Exportverzeichnisses wie oben beschrieben, wenn dies der Fall ist.
 
-The file is a simple text format containing only one line of text. Example for the content of a flight plan file named `KEAT-CYPU.gfp`:
+Die Datei ist ein einfaches Textformat, das nur eine Zeile Text enthält. Beispiel für den Inhalt einer Flugplandatei  `KEAT-CYPU.gfp`:
 
 `FPN/RI:F:KEAT:F:EAT.V120.SEA.V495.CONDI.V338.YVR.V330.TRENA:F:N50805W124202:F:N51085W124178:F:CAG3:F:N51846W124150:F:CYPU`
 
 ### RTE \(PMDG\) {#flight-plan-formats-rte}
 
-A PMDG RTE file. File location depends on the used aircraft but is usually `PMDG\FLIGHTPLANS` in the simulator base directory.
+Eine PMDG RTE-Datei. Der Speicherort der Datei hängt vom verwendeten Flugzeug ab, ist aber in der Regel `PMDG\FLIGHTPLANS` im Stammverzeichnis des Simulators.
 
-### TXT \(JARDesign and Rotate Simulations\) {#flight-plan-formats-txt}
+### TXT \(JARDesign und Rotate Simulations\) {#flight-plan-formats-txt}
 
-A simple file format usable by JARDesign or Rotate Simulations aircraft. Location depends on the used aircraft which is usually in the X-Plane directory `aircraft`.
+Ein einfaches Dateiformat, das von JARDesign oder Rotate Simulations Flugzeugen verwendet werden kann. Der Standort hängt vom verwendeten Flugzeug ab, das sich normalerweise im Verzeichnis `aircraft` von X-Plane befindet. .
 
-The file is a simple text format containing only one line of text. Example for the content of a `TXT` file named `CBZ9CYDC.txt`:
+
+Die Datei ist ein einfaches Textformat, das nur eine Zeile Text enthält. Beispiel für den Inhalt einer `TXT`Datei `CBZ9CYDC.txt`:
 
 `CBZ9 SID AIRIE V324 YKA B8 DURAK STAR CYDC`
 
 ### FPR \(Majestic Dash\) {#flight-plan-formats-fpr}
 
-Flight plan format for the Majestic Software MJC8 Q400. Note that the export is currently limited to a list of waypoints.
+Flugplanformat für die Majestic Software MJC8 Q400. Beachten Sie, dass der Export derzeit auf eine Liste von Wegpunkten beschränkt ist.
 
-The flight plan has to be saved to `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\nav\routes`.
+Der Flugplan muss unter  `YOURSIMULATOR\SimObjects\Airplanes\mjc8q400\nav\routes` gespeichert werden.
 
-Note that the FMC in the Dash will show invalid coordinates when you press `INFO` on a waypoint or airport. The flight plan, navigation and autopilot are not affected otherwise.
+Beachten Sie, dass die FMC im Dash ungültige Koordinaten anzeigt, wenn Sie auf einem Wegpunkt oder Flughafen auf `INFO` drücken. Der Flugplan, die Navigation und der Autopilot bleiben davon unberührt.
 
 ### FPL \(IXEG Boeing\) {#flight-plan-formats-fpl}
 
-Exports the current flight plan as a FPL file usable by the IXEG Boeing 737. The format is the same as TXT but with a different file extension.
+Exportiert den aktuellen Flugplan als FPL-Datei, die von der IXEG Boeing 737 verwendet werden kann. Das Format ist das gleiche wie bei TXT, jedoch mit einer anderen Dateiendung.
 
-The file should be saved to `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroutes`. You have to create the directory manually if it does not exist.
+Die Datei sollte unter `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroutes` gespeichert werden. Sie müssen das Verzeichnis manuell anlegen, wenn es nicht existiert.
 
 ### corte.in \(Flight Factor Airbus\) {#flight-plan-formats-cortein}
 
-A format for the Flight Factor Airbus. The file is not truncated and flight plans are appended when saving.
+Ein Format für den Flight Factor Airbus. Die Datei wird nicht abgeschnitten und die Flugpläne werden beim Speichern angehängt.
 
-Flight plans are saved in a slightly extended ATS route notation which also allows to save the cruise altitude and approach procedures. Edit the file with a simple text editor if you want to remove flight plans.
+Die Flugpläne werden in einer leicht erweiterten ATS-Routen-Notation gespeichert, die es auch ermöglicht, die Reiseflughöhe und die Anflugverfahren zu speichern. Bearbeiten Sie die Datei mit einem einfachen Texteditor, wenn Sie Flugpläne entfernen möchten.
 
-While this format allows saving of SID and STAR the option for approaches was removed since it is unreliable.
+Während dieses Format das Speichern von SID und STAR ermöglicht, wurde die Option für Approaches entfernt, da sie unzuverlässig ist.
 
-**Example:**
+**Beispiel:**
 
 ```
 RTE ETOPS002 EINN 06 UNBE2A UNBEG DCT 5420N DCT NICSO N236A ALLEX Q822 ENE DCT CORVT KJFK I22R JFKBOS01 CI30 FL360
@@ -198,19 +202,19 @@ RTE EDDFEGLL EDDF 25C BIBT4G BIBTI UZ29 NIK UL610 LAM EGLL I27R LAM CI25 FL330
 
 ### FLTPLAN \(iFly 737NG\) {#flight-plan-formats-ifly}
 
-Flight plan format for the iFly 737NG for FSX or P3D. The file has to be saved to `YOURSIMULATOR/iFly/737NG/navdata/FLTPLAN`.
+Flugplanformat für den iFly 737NG für FSX oder P3D. Die Datei muss unter `YOURSIMULATOR/iFly/737NG/navdata/FLTPLAN` gespeichert werden.
 
-Procedures cannot be saved.
+Prozeduren können nicht gespeichert werden.
 
 ### companyroutes.xml \(ProSim\) {#flight-plan-formats-prosim}
 
-A flight plan format for [ProSim](https://prosim-ar.com). The flight plan is appended to the file `companyroutes.xml` when saving. Remove flight plans manually in a text editor.
+Ein Flugplanformat für [ProSim](https://prosim-ar.com). Der Flugplan wird beim Speichern an die Datei `companyroutes.xml` angehängt. Entfernen Sie Flugpläne manuell in einem Texteditor.
 
-_Little Navmap_ creates up to two backup files when saving the flight plan: `companyroutes.xml_lnm_backup` and `companyroutes.xml_lnm_backup.1`.
+_Little Navmap_ erstellt beim Speichern des Flugplans bis zu zwei Sicherungsdateien: `companyroutes.xml_lnm_backup` und `companyroutes.xml_lnm_backup.1`.
 
-Procedures cannot be saved.
+Prozeduren können nicht gespeichert werden.
 
-**Example:**
+**Beispiel:**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -222,51 +226,51 @@ Procedures cannot be saved.
 
 ### PLN \(BBS Airbus\) {#flight-plan-formats-bbs}
 
-This format is for the Blackbox Simulations Airbus for FSX or P3D. Save this to `YOURSIMULATOR/Blackbox Simulation/Company Routes` or `YOURSIMULATOR/BlackBox Simulation/Airbus A330` depending on aircraft type.
+Dieses Format ist für die Blackbox-Simulationen Airbus für FSX oder P3D. Speichern Sie unter `YOURSIMULATOR/Blackbox Simulation/Company Routes` oder `YOURSIMULATOR/BlackBox Simulation/Airbus A330` in Abhängigkeit vom Fluzeugtyp.
 
-This format cannot save procedures.
+Prozeduren können nicht gespeichert werden.
 
 ### UFMC \(Universal Flight Management Computer\) {#flight-plan-formats-ufmc}
 
-A flight plan format for the [UFMC](http://ufmc.eadt.eu). The format does not allow saving of procedures.
+Ein Flugplanformat für [UFMC](http://ufmc.eadt.eu). Das Format erlaubt kein Speichern von Prozeduren.
 
-Save the flight plan to `XPLANE\Custom Data\UFMC\FlightPlans`.
+Speichern Sie den Flugplan unter `XPLANE\Custom Data\UFMC\FlightPlans`.
 
 ### FPL for X-FMC \(Universal FMC for X-Plane\) {#flight-plan-formats-xfmc}
 
-Save flight plan as FPL file for the [X-FMC](https://www.x-fmc.com). The format does not allow saving of procedures.
+Flugplan als FPL-Datei für  [X-FMC](https://www.x-fmc.com) speichern. Das Format erlaubt kein Speichern von Prozeduren.
 
-The file should be saved to Path to `XPLANE\Resources\plugins\XFMC\FlightPlans`.
+Die Datei sollte im Verzeichnis  `XPLANE\Resources\plugins\XFMC\FlightPlans` gespeichert werden.
 
 ### GPX {#flight-plan-formats-gpx}
 
-GPX is not a flight plan format.
+GPX ist kein Flugplanformat.
 
-The GPS Exchange Format can be read by Google Earth and most other GIS applications.
+Das GPS-Austauschformat kann von Google Earth und den meisten anderen GIS-Anwendungen gelesen werden.
 
-The flight plan is embedded as a route and the flown aircraft trail as a track including simulator time and altitude.
+Der Flugplan wird als Route und der geflogene Flugzeugpfad als Track inklusive Simulatorzeit und -höhe eingebettet.
 
-The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
+Die Route hat für alle Wegpunkte eine Start- und Zielhöhe sowie eine Reiseflughöhe eingestellt. Wegpunkte aller Prozeduren sind in der exportierten Datei enthalten. Beachten Sie, dass die Wegpunkte es nicht erlauben, alle Teile einer Prozedur wie Holdig oder Prozedurturns zu reproduzieren.
 
-## Notes about the Garmin Formats GFP and FPL {#garmin-notes}
+## Hinweise zu den Garmin-Formaten GFP und FPL {#garmin-notes}
 
-Various problems can appear when reading exported flight plans into the Garmin units.
-Most of these are a result of the Garmin navigation database which uses data of an older AIRAC cycle \(mostly 1611 at the time of writing\).
-Updated simulator or add-on databases \(like the one in _Little Navmap_\) can use the latest navdata or an old one from FSX or P3D stock data. X-Plane 11.10 stock navdata is currently based on 1611.
+Beim Lesen von exportierten Flugplänen in die Garmin-Geräte können verschiedene Probleme auftreten.
+Die meisten davon sind das Ergebnis der Garmin-Navigationsdatenbank, die Daten eines älteren AIRAC-Zyklus (meist 1611 zum Zeitpunkt des Schreibens) verwendet.
+Aktualisierte Simulator- oder Add-on-Datenbanken \(wie die in _Little Navmap_\) können die neuesten Navdata oder eine alte aus FSX- oder P3D-Aktien verwenden. X-Plane 11.10 Bestand navdata basiert derzeit auf 1611.
 
-Any waypoints, airways or procedures that are removed, added or renamed over time can cause locked waypoints or other messages when reading a flight plan into the GNS or GTN.
+Alle Wegpunkte, Luftstraßen oder Verfahren, die im Laufe der Zeit entfernt, hinzugefügt oder umbenannt werden, können beim Lesen eines Flugplans in das GNS oder GTN zu gesperrten Wegpunkten oder anderen Nachrichten führen.
 
-It is easy to remove locked waypoints within the GNS or GTN to enable the flight plan to be activated. Refer to the documentation of the Garmin unit.
+Es ist einfach, gesperrte Wegpunkte innerhalb des GNS oder GTN zu entfernen, damit der Flugplan aktiviert werden kann. Lesen Sie die Dokumentation des Garmin-Geräts.
 
-_Little Navmap_ allows to change the Garmin export to replace all waypoints with user-defined waypoints to avoid locking. While this is a sufficient approach to avoid the locked waypoints it comes with a few limitations:
+_Little Navmap_ ermöglicht es, den Garmin-Export so zu ändern, dass alle Wegpunkte durch benutzerdefinierte Wegpunkte ersetzt werden, um eine Sperrung zu vermeiden. Dies ist zwar ein ausreichender Ansatz, um die gesperrten Wegpunkte zu vermeiden, hat aber einige Einschränkungen:
 
-* Departure and destination airport are not saved as user-defined waypoints. These have to exist in the Garmin navigation database.
-* Navaid information like frequencies cannot be displayed since the waypoint cannot be related to the radio navaid.
-* Procedures like SID and STAR cannot be saved with the flight plan and have to be selected manually.
-* The GTN \(not the GNS\) changes all names to a generic `USERWPT...` scheme.
+* Abflug- und Zielflughafen werden nicht als benutzerdefinierte Wegpunkte gespeichert. Diese müssen in der Garmin-Navigationsdatenbank vorhanden sein.
+* Navaid-Informationen wie Frequenzen können nicht angezeigt werden, da der Wegpunkt nicht mit der Radio-Navaid in Verbindung gebracht werden kann.
+* Verfahren wie SID und STAR können nicht mit dem Flugplan gespeichert werden und müssen manuell ausgewählt werden.
+* Das GTN \(nicht das GNS\) ändert alle Namen in ein generisches `USERWPT...`Schema.
 
-The export of user-defined waypoints can be enabled in the options dialog on tab `Flight Plan`.
+Der Export von benutzerdefinierten Wegpunkten kann im Optionsdialog auf der Registerkarte `Flugplan` eingeschaltet werden.
 
-[^1]: The FPR format does allow saving of airways and procedures but this will be implemented in a future release of _Little Navmap_.
-[^2]: User-defined waypoints will be renamed when loading into the GTN.
-[^3]: Only SID and STAR. Saving or approaches is not supported.
+[^1]: Das FPR-Format ermöglicht die Speicherung von Luftstraßen und Verfahren, aber dies wird in einer zukünftigen Version von _Little Navmap_ implementiert.
+[^2]: Nutzer Wegpunkte werden beim Laden in das GTN umbenannt.
+[^3]: Nur SID und STAR. Speichern oder Approaches werden nicht unterstützt.

@@ -1,4 +1,4 @@
-## Tips und Tricks {#tips-and-tricks}
+## Tipps und Tricks {#tips-and-tricks}
 
 ### Zeige Reichweiten der Navigationshilfen eines Flugplanes{#tips-and-tricks-navaid-range}
 

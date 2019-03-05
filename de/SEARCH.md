@@ -1,187 +1,187 @@
-## ![Search](../images/icons/searchdock.png "Search") Search Dock Window {#search-dock-window}
+## ![Search](../images/icons/searchdock.png "Search") Dockfenster Suche {#search-dock-window}
 
-The search dock window contains several tabs with similar functionality that allows to search for objects by name, ident or other criteria.
+Das Dockfenster für die Suche enthält mehrere Registerkarten mit ähnlicher Funktionalität, mit denen Sie nach Objekten nach Namen, Identität oder anderen Kriterien suchen können.
 
-Airport, navaid, userpoint and online search tabs contain multiple rows of search filters. These rows can be switched on and off with the drop down menu on the menu button ![Menu Button](../images/icons/menubutton.png "Menu Button") on the top right in the airport, navaid and userpoint search tabs.
+Die Registerkarten Flughafen, Navaid, Userpoint und Online-Suche enthalten mehrere Zeilen von Suchfiltern. Diese Zeilen können über das Dropdown-Menü auf der Menütaste ![Menu Button](../images/icons/menubutton.png  "Menütaste") oben rechts in den Registerkarten Flughafen, Navaid und Userpoint ein- und ausgeschaltet werden.
 
-The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
+Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige `*`, um anzuzeigen, dass die zugehörige Filterzeile Änderungen aufweist. Auf diese Weise können Sie herausfinden, warum eine Suche nicht die erwarteten Ergebnisse liefert.
 
-**If you do not get the expected results or no results at all use the `Reset Search` menu item, button ![Reset Search](../images/icons/clear.png "Reset Search") or press `Ctrl+R` to clear all search criteria.**
+**Wenn Sie nicht oder gar nicht die erwarteten Ergebnisse erhalten, verwenden Sie den Menüpunkt `Suche zurücksetzen`, Schaltfläche ![Reset Search](../images/icons/clear.png "Reset Search") oder drücken Sie `Strg+R`, um alle Suchkriterien zu löschen.**
 
-Filters are defined by various controls which are mostly self explaining. Only text filters and the tri-state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
+Filter werden durch verschiedene Kontrollen definiert, die meist selbsterklärend sind. Nur Textfilter und die Kontrollkästchen mit drei Zuständen wie `Beleuchtung`, `Ansatz` oder `Geschlossen` benötigen unten ein paar zusätzliche Bemerkungen.
 
-All filters can be used together where all conditions have to be met \(`and` operator\). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
+Alle Filter können zusammen verwendet werden, wenn alle Bedingungen erfüllt sein müssen \(`und` Operator\). Alle Filter mit Ausnahme des Entfernungssuchfilters werden sofort angewendet. Die Entfernungssuche wird bei jeder Änderung mit einer kurzen Verzögerung durchgeführt.
 
-**Entering three or four characters in the `ICAO Code` field of the airport search tab will trigger a quick search which ignores all other filters and shows the airports matching that partial or full ICAO code.**
+**Die Eingabe von drei oder vier Zeichen im Feld `ICAO Code` auf der Registerkarte Flughafensuche löst eine Schnellsuche aus, die alle anderen Filter ignoriert und die Flughäfen anzeigt, die mit diesem teilweisen oder vollständigen ICAO-Code übereinstimmen.**
 
-A tooltip on the blue help button on the top right shows information about searching.
+Ein Tooltip auf der blauen Hilfetaste oben rechts zeigt Informationen zur Suche.
 
-### Text filters {#text-filters}
+### Textfilter {#text-filters}
 
-The standard is to search for entries that start with the entered text.
+Standard ist die Suche nach Einträgen, die mit dem eingegebenen Text beginnen.
 
-The placeholder `*` stands for any text. Once a `*` is included in the term, the standard search \(match start of text\) is no longer used. In that case you might have to add a `*` at the end of the search term as well to get the expected result.
+Der Platzhalter `*` steht für einen beliebigen Text. Sobald ein `*` in den Begriff aufgenommen wird, wird die Standardsuche \(Matchanfang des Textes\) nicht mehr verwendet. In diesem Fall müssen Sie eventuell auch ein `*` am Ende des Suchbegriffs hinzufügen, um das erwartete Ergebnis zu erhalten.
 
-The search is negated \(find all entries that do not match\) if the first character in a search box is a `-`.
+Die Suche wird negiert \(findet alle Einträge, die nicht übereinstimmen\), wenn das erste Zeichen in einem Suchfeld ein `-` ist.
 
-Note that all of the above does not apply to numeric fields like `Runways: Min` or `Altitude: Max`.
+Beachten Sie, dass all dies nicht für numerische Felder wie `Runways: Min` oder `Altitude: Max` gilt.
 
-### Tri state checkboxes {#tri-state-checkboxes}
+### Tri-Status-Checkboxen {#Tri-Status-Checkboxen}
 
-These are used to filter airports by presence of certain facilities or properties.
+Diese werden verwendet, um Flughäfen nach dem Vorhandensein bestimmter Einrichtungen oder Objekte zu filtern.
 
-Below are the states as they are shown in Windows 10:
+Nachfolgend finden Sie die Zustände, wie sie in Windows 10 dargestellt sind:
 
-* **Black Box:** Condition is ignored.
-* **Checked:** Condition must match.
-* **Empty Box:** Condition must not match.
+* **Black Box:** Bedingung wird ignoriert.
+* **Checked:** Bedingung muss übereinstimmen.
+* **Empty Box:** Die Bedingung muss nicht übereinstimmen.
 
-Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used \(red fill on Linux or a `-` for macOS\).
+Die Farben und das Aussehen dieser Kontrollkästchen variieren je nach Thema und Betriebssystem. Anstelle von Grau kann also eine andere Farbe verwendet werden \(rote Füllung unter Linux oder ein `-` für macOS\).
 
-### Distance search {#distance-search}
+### Distanzsuche {#distance-search}
 
-This function is only available in the airport and navaid search.
+Diese Funktion ist nur in der Flughafen- und Navigationssuche verfügbar.
 
-This function allows you to combine all other search options with a simple spatial search.
+Mit dieser Funktion können Sie alle anderen Suchoptionen mit einer einfachen räumlichen Suche kombinieren.
 
-The checkbox `Distance` has to be selected to enable this search. The result will include only airports or navaids that are within the given minimum and maximum range of nautical miles from the search center. This allows you to quickly search for a destination that is within the range of your aircraft and fulfills other criteria like having lighted runways and fuel.
+Um diese Suche zu ermöglichen, muss das Kontrollkästchen `Entfernung` aktiviert sein. Das Ergebnis wird nur Flughäfen oder Navaids beinhalten, die innerhalb der angegebenen minimalen und maximalen Reichweite von Seemeilen vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell nach einem Ziel suchen, das sich in der Reichweite Ihres Flugzeugs befindet und andere Kriterien wie beleuchtete Start- und Landebahnen und Kraftstoff erfüllt.
 
-The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
+Die Mitte für die Entfernungssuche wird durch ein Symbol ![Distance Search Symbol](../images/icons/distancemark.png "Distanzsuche") hervorgehoben.
 
-To restrict the search further you can select a direction \(North, East, South and West\).
+Um die Suche weiter einzuschränken, können Sie eine Richtung wählen \(Nord, Ost, Süd und West\).
 
-Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
+Überprüfen Sie das Dropdown-Menü für die Änderungsanzeige `*` und die Suchfelder für den verbleibenden Text, wenn die Entfernungssuche keine oder unerwartete Ergebnisse liefert. Verwenden Sie `Suche zurücksetzen` im Kontextmenü der Ergebnistabelle oder drücken Sie `Strg+R`, um alle Suchkriterien zu löschen.
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-_**Picture above A complex distance search:** Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table._
+_**Bild oben Eine komplexe Distenzsuche:** Findet alle Flughäfen in einer Entfernung zwischen 200 und 400 Seemeilen von Frankfurt \(EDDF\). Flughäfen sollten eine Bewertung von mehr als 0 haben und mindestens eine beleuchtete Start- und Landebahn haben. Militärische und geschlossene Flughäfen sind ausgeschlossen. Die resultierenden Flughäfen werden auf der Karte durch Auswahl in der Suchergebnistabelle hervorgehoben._
 
 ![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
 
-_**Picture above A complex search for scenery:** This example shows how to find specific add-on scenery by using the _`Scenery Path`_ search field. This shows all airports of the Orbx New Zealand South Island add-on scenery that have lighted runways._
+_**Bild oben Eine komplexe Szeneriesuche:** Dieses Beispiel zeigt, wie man bestimmte Add-On-Szenarien über das Suchfeld _`Scenery Path`_ findet. Dies zeigt alle Flughäfen der Orbx New Zealand South Island Add-on-Szenerie, die beleuchtete Start- und Landebahnen haben._
 
-### Search Result Table View {#search-result-table-view}
+### Anzeige der Suchergebnistabelle {#search-result-table-view}
 
-All selected elements in the table view will be highlighted on the map using a black/yellow circle. See [Highlights](MAPDISPLAY.md#highlights) for more information.
+Alle ausgewählten Elemente in der Tabellenansicht werden auf der Karte durch einen schwarz/gelben Kreis hervorgehoben. Weitere Informationen finden Sie unter [Highlights](MAPDISPLAY.md#highlights).
 
-Use `Shift+Click` or `Ctrl+Click` to select two or more elements (multi-selection).
+Verwenden Sie `Shift+Klick` oder `Strg+Klick`, um zwei oder mehr Elemente auszuwählen (Mehrfachauswahl).
 
-#### Header {#table-view}
+#### Kopfzeile {#table-view}
 
-The header of all table views allows the following manipulation:
+Der Kopfzeile aller Tabellensichten ermöglicht die folgende Manipulation:
 
-* **Click on the top left corner of the column header:** Select all result rows.
-* **Click on a column header:** Sort ascending or descending \(only for search result tables - not for flight plan table\).
-* **Click and drag on the column header:** Change column order.
-* **Double-click on column border:** Automatically fit column size to content.
-* **Click and drag on column border:** Change column width.
-* **Click into the empty space below all rows:** Deselect all entries and remove highlights on the map.
+* ** Klicken Sie auf die linke obere Ecke der Spaltenüberschrift:**  Alle Ergebniszeilen auswählen.
+*  **Klicken Sie auf eine Spaltenüberschrift:**  Sortieren aufsteigend oder absteigend \(nur für Suchergebnistabellen - nicht für Flugplattentabelle\).
+*  **Klicken und ziehen Sie auf die Spaltenüberschrift:**  Spaltenreihenfolge ändern.
+*  **Doppelklicken Sie auf den Spaltenrand:**  Passen Sie die Spaltengröße automatisch an den Inhalt an.
+* ** Klicken und ziehen Sie auf den Spaltenrand:** Spaltenbreite ändern.
+* ** Klicken Sie in den leeren Bereich unter allen Zeilen:**  Alle Einträge abwählen und Highlights auf der Karte entfernen.
 
-The above applies to all table views in the program and partially also to the tree view of the procedure search.
+Dies gilt für alle Tabellensichten im Programm und teilweise auch für die Baumansicht der Prozedurensuche.
 
-The program saves the sort order, column widths and positions until `Reset View` is selected in the context menu.
+Das Programm speichert die Sortierreihenfolge, Spaltenbreiten und -positionen, bis im Kontextmenü die Option `Ansicht zurücksetzen` ausgewählt wird.
 
 ![Airport Search Result Table](../images/airportsearchtable.jpg "Airport Search Result Table")
 
-_**Picture above:** Airport search result table. All additional search options are hidden by using the drop down menu of the menu button on the top right._
+_**Bild oben:** Ergebnisliste der Flughafensuche. Alle zusätzlichen Suchoptionen werden über das Dropdown-Menü der Menütaste oben rechts ausgeblendet._
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-_**Picture above:** Navaid search limited to ICAO region _`LI`_ \(Italy\) and VOR, VORTAC and TACAN stations that have a range of 100 or more nautical miles._
+_**Bild oben:** Die Navaid-Suche ist auf die ICAO-Region _`LI`_ \(Italien\) und die Stationen VOR, VORTAC und TACAN beschränkt, die eine Reichweite von 100 oder mehr Seemeilen haben._
 
-#### Mouse Clicks {#mouse-clicks-0}
+#### Mausklicks {#mouse-clicks-0}
 
-A double-click on an entry in the table view shows either an airport diagram or zooms to the navaid or other feature. Additionally, details are shown in the `Information` dock window. Single click selects an object and highlights it on the map using a black/yellow circle.
+Ein Doppelklick auf einen Eintrag in der Tabellenansicht zeigt entweder ein Flughafendiagramm oder zoomt auf die Navaid oder ein anderes Feature. Zusätzlich werden Details im Dockfenster `Information` angezeigt. Ein einfacher Klick wählt ein Objekt aus und markiert es auf der Karte mit einem schwarz/gelben Kreis.
 
-### Top Buttons {#top-buttons}
+### Obere Schaltflächen {#top-buttons}
 
-Available buttons and menu items depend on search tab.
+Die verfügbaren Schaltflächen und Menüpunkte hängen von der Registerkarte Suche ab.
 
-#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
+#### ![Reset Search](../images/icons/clear.png "Reset Search") Suche zurücksetzen {#reset-search}
 
-Clear search filters and show all entries again in the search result table view.
+Löschen Sie die Suchfilter und zeigen Sie alle Einträge wieder in der Ansicht der Suchergebnistabelle an.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl löschen {#clear-selection}
 
-Deselect all entries in the table and remove any highlight circles from the map.
+Entfernt alle Einträge in der Tabelle und entfernt alle hervorgehobenen Kreise aus der Karte.
 
-#### ![Help](../images/icons/help.png "Help") Help {#help}
+#### ![Help](../images/icons/help.png "Help") Hilfe {#help}
 
-Display a quick help in the tooltip. Click to open this chapter of the manual in the default browser.
+Zeigt eine Schnellhilfe im Tooltip an. Klicken Sie hier, um dieses Kapitel des Handbuchs im Standardbrowser zu öffnen.
 
-#### ![Menu Button](../images/icons/menubutton.png "Menu Button") Menu Button {#menu}
+#### ![Menu Button](../images/icons/menubutton.png "Menu Button") Menütaste {#menu}
 
-Drop down menu button that allows to hide or show search options.
+Dropdown-Menü-Taste, mit der Sie Suchoptionen ein- oder ausblenden können.
 
-The drop down menu prefixes menu items with a change indicator `*` to show that the related filter row has modifications. You can use this to find out why a search does not give the expected results.
+Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige `*`, um anzuzeigen, dass die zugehörige Filterzeile Änderungen aufweist. Auf diese Weise können Sie herausfinden, warum eine Suche nicht die erwarteten Ergebnisse liefert.
 
-### Search Result Table View Context Menu {#search-result-table-view-context-menu}
+### Kontextmenü Anzeige der Tabelle der Suchergebnisse {#search-result-table-view-context-menu}
 
-Available menu items depend on search tab.
+Die verfügbaren Menüpunkte hängen von der Registerkarte Suche ab.
 
-#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-0}
+#### ![Show Information](../images/icons/globals.png "Show Information") Zeige Informationen {#show-information-0}
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+Gleiche wie [Kontextmenü Karte](MAPDISPLAY.md#map-context-menu).
 
-#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Show Procedures {#show-procedures}
+#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Zeige Prozeduren {#show-procedures}
 
-Open the procedure search tab of the search dock window and display all procedures for the airport.
+Öffnet die Registerkarte Verfahrenssuche des Suchdockfensters und zeigt alle Prozeduren für den Flughafen an.
 
-See [Procedure Search](SEARCHPROCS.md) for more information.
+Weitere Informationen finden Sie unter [Suche Prozeduren](SEARCHPROCS.md).
 
-#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
+#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Zeige auf Karte {#show-on-map}
 
-Show either the airport diagram or zooms to the navaid, userpoint or other features on the map.
+Zeigt entweder das Flughafendiagramm an oder zoomt auf das Navaid, den Benutzerpunkt oder andere Funktionen auf der Karte.
 
-#### Follow Selection {#follow-selection}
+#### Auswahl folgen {#follow-selection}
 
-The map view will be centered - not zoomed in - on the selected feature when this function is enabled.
+Die Kartenansicht wird - nicht vergrößert - auf die ausgewählte Funktion zentriert, wenn diese Funktion aktiviert ist.
 
-#### ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding") Filter by Entries including/excluding {#filter-by-entries-including-excluding}
+#### ![Filter by Entries including](../images/icons/filter-add.png "Filter by Entries including")![Filter by Entries excluding](../images/icons/filter-remove.png "Filter by Entries excluding") Filtern nach Einträgen inklusive/exklusiv {#filter-by-entries-including-excluding}
 
-Use the field under the cursor to set a search filter that includes or excludes the text of the field. This is only enabled for text columns.
+Verwenden Sie das Feld unter dem Cursor, um einen Suchfilter zu setzen, der den Text des Feldes ein- oder ausschließt. Dies ist nur für Textspalten aktiviert.
 
-#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
+#### ![Reset Search](../images/icons/clear.png "Reset Search") Suche zurücksetzen {#reset-search}
 
-Clear search filters and revert to showing all entries in the search result table view.
+Löscht die Suchfilter und kehrt zur Anzeige aller Einträge in der Tabellenansicht der Suchergebnisse zurück.
 
-#### ![Show All](../images/icons/load-all.png "Show All") Show All {#show-all}
+#### ![Show All](../images/icons/load-all.png "Show All") Alle anzeigen {#show-all}
 
-The table view does not show all entries initially for performance reasons. This menu item allows to load and show the whole search result. The view switches back to the limited number of entries after a search filter is modified or the sort order is changed. The number of all, visible and selected entries is shown at the bottom of the tab.
+Die Tabellenansicht zeigt aus Performancegründen zunächst nicht alle Einträge an. Mit diesem Menüpunkt kann das gesamte Suchergebnis geladen und angezeigt werden. Die Ansicht wechselt wieder auf die begrenzte Anzahl von Einträgen, nachdem ein Suchfilter geändert oder die Sortierreihenfolge geändert wurde. Die Anzahl aller sichtbaren und ausgewählten Einträge wird am unteren Rand der Registerkarte angezeigt.
 
-Be aware that showing all navaids and airports can take some time especially if they are highlighted on the map when selecting all entries in the search result. The program does not crash but needs a few seconds to highlight all the objects on the map.
+Beachten Sie, dass die Anzeige aller Navaids und Flughäfen einige Zeit in Anspruch nehmen kann, insbesondere wenn sie bei der Auswahl aller Einträge im Suchergebnis auf der Karte markiert sind. Das Programm stürzt nicht ab, sondern benötigt einige Sekunden, um alle Objekte auf der Karte zu markieren.
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings-0}
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Reichweitenringe anzeigen {#show-range-rings-0}
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-0}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Navaid Reichweite anzeigen {#show-navaid-range-0}
 
-#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Flughafen-Verkehrsstruktur anzeigen {#show-traffic-pattern}
 
-#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Als Startflugplatz setzen {#set-as-flight-plan-departure-0}
 
-#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Als Zielflugplatz setzen {#set-as-flight-plan-destination-0}
 
-#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan-0}
-#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Append Position to Flight Plan {#append-position-to-flight-plan-0}
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Position zum Flugplan hinzufügen {#add-position-to-flight-plan-0}
+#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Position an den Flugplan anhängen {#append-position-to-flight-plan-0}
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+Gleich wie [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
 
-#### ![Copy](../images/icons/copy.png "Copy") Copy {#copy}
+#### ![Copy](../images/icons/copy.png "Copy") Kopieren {#copy}
 
-Copy the selected entries in CSV format to the clipboard. This will observe changes to the table view like column order and sort order. The CSV includes a header line.
+Kopiert die ausgewählten Einträge im CSV-Format in die Zwischenablage. Dadurch werden Änderungen in der Tabellenansicht wie Spaltenreihenfolge und Sortierreihenfolge berücksichtigt. Das CSV beinhaltet eine Kopfzeile.
 
-#### Select All {#select-all}
+#### Alle auswählen {#select-all}
 
-Select all visible entries. To select all available entries the function `Show All` has to be used first.
+Alle sichtbaren Einträge markieren. Um alle verfügbaren Einträge auszuwählen, muss zuerst die Funktion `Alle anzeigen` verwendet werden.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl löschen {#clear-selection}
 
-Deselect all entries in the table and remove any highlight circles from the map.
+Entfernt alle Einträge in der Tabelle und entfernt alle hervorgehobenen Kreise aus der Karte.
 
-#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
+#### ![Reset View](../images/icons/cleartable.png "Reset View") Ansicht zurücksetzen {#reset-view}
 
-Reset sort order, column order and column widths to default.
+Setzt die Sortierreihenfolge, Spaltenreihenfolge und Spaltenbreiten auf den Standard zurück.
 
-#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-0}
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Center für die Entfernungssuche einstellen {#set-center-for-distance-search-0}
 
-Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+Gleich wie [Kontextmenü Karte](MAPDISPLAY.md#map-context-menu).

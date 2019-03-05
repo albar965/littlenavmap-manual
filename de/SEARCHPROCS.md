@@ -1,129 +1,131 @@
-## ![Search](../images/icons/searchdock.png "Search") Search Dock Window - Procedures {#search-dock-window}
+## ![Search](../images/icons/searchdock.png "Search") Suchdockfenster - Prozeduren {#search-dock-window}
 
-The tab `Procedures` allows previewing and adding approach and departure procedures to the flight plan. Procedures of a selected airport are arranged in a tree which indicates the dependencies between approaches and transitions.
+Die Registerkarte `Prozeduren` ermöglicht die Vorschau und das Hinzufügen von An- und Abflugverfahren zum Flugplan. Die Verfahren eines ausgewählten Flughafens sind in einem Baum angeordnet, der die Abhängigkeiten zwischen Anflügen und Transitionen anzeigt.
 
-See [Procedures](APPROACHES.md) for general information about SID, STAR, approaches and transitions.
+Siehe [Procedures](APPROACHES.md) für allgemeine Informationen über SID, STAR, Ansätze und Übergänge.
 
 
-Note that the SID and STAR names are limited to 5 characters in FSX and P3D due to a limitation in the BGL file format. Therefore procedure names are slightly modified. However, this does not apply to procedures from a Navigraph or X-Plane scenery database.
+Beachten Sie, dass die SID- und STAR-Namen im FSX und P3D aufgrund einer Einschränkung des BGL-Dateiformats auf 5 Zeichen begrenzt sind. Daher werden die Prozedurnamen leicht modifiziert. Dies gilt jedoch nicht für Verfahren aus einer Navigraph- oder X-Plane-Szenerie-Datenbank.
 
-**See the **[**Procedures**](APPROACHES.md#delete-selected-legs)** chapter of this manual for more details.**
+**Siehe für weitere Details Kapitel **[**Procedures**](APPROACHES.md#delete-selected-legs)** in diesem Handbuch.**
 
-Procedure legs are shown when a procedure node is expanded in the tree. Procedures can be filtered by runway and type.
+Prozedurenstrecken werden angezeigt, wenn ein Prozedurenknoten im Baum aufgeklappt wird. Die Verfahren können nach Start- und Landebahn und Typ gefiltert werden.
 
-Right-click on a procedure to get more options in the context menu, like centering the map on the procedure or adding it to your flight plan.
+Klicken Sie mit der rechten Maustaste auf eine Prozedur, um weitere Optionen im Kontextmenü zu erhalten, wie z.B. die Zentrierung der Karte auf die Prozedur oder das Hinzufügen zu Ihrem Flugplan.
 
-Use the context menu of the flight plan table to remove procedures like any other waypoint. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
+Verwenden Sie das Kontextmenü der Flugplattentabelle, um Prozeduren wie jeden anderen Wegpunkt zu entfernen. Siehe [Ausgewählte Legs oder Prozeduren löschen](FLIGHTPLAN.md#delete-selected-legs).
 
-Procedure legs are highlighted in red if one or more navaids could not be resolved. A warning dialog will be displayed if you try to add this procedure to a flight plan.
+Verfahrensabschnitte sind rot markiert, wenn ein oder mehrere Navids nicht aufgelöst werden konnten. Wenn Sie versuchen, dieses Verfahren einem Flugplan hinzuzufügen, wird ein Warndialog angezeigt.
 
 ![Navaid Search Result Table](../images/proceduresearch.jpg "Navaid Search Result Table")
 
-_**Picture above:** Showing a transition and a RNAV approach. Start and endpoint of a transition leg are highlighted on the map._
+_**Bild oben:** Zeigt eine Transition und einen RNAV-Anflug. Start- und Endpunkt eines Übergangsabschnitts sind auf der Karte markiert._
 
-### Procedure Tree {#procedure-tree}
+#### Prozedurenbaum {#procedure-tree}
 
-Legs are shown in dark blue while missed approach legs are shown in dark red color.
+Die Legs sind dunkelblau dargestellt, während fehlende Anfluglegs in dunkelroter Farbe dargestellt sind.
 
-Bold red text indicates an error in the leg. The procedure is incomplete and should not be used in a flight plan.
+Fettgedruckter roter Text zeigt einen Fehler im Abschnitt an. Das Verfahren ist unvollständig und sollte nicht in einem Flugplan verwendet werden.
 
-* `Description`: Either description of the procedure or flight instruction for procedure legs.
-* `Course °M`: Magnetic course for a leg.
-* `Dist./Time`: Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in nautical miles.
-* `Ident`: Ident of the initial fix or name of the procedure. Fix name for legs.
-* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
-  * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
-  * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
-  * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
-  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
-  * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
-  * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
-* `Remarks`: Shows fly-over, turn direction or related navaid for a procedure leg.
+* `Beschreibung`: Entweder Beschreibung des Verfahrens oder Fluganweisung für Verfahrensabschnitte.
+* `Kurs °M`: Magnetischer Kurs für ein Teilstück.
+* `Dist./Zeit`: Entfernung der Flugzeit für eine Etappe. Holds können eine Etappenzeit in Minuten oder eine Etappenlänge in Seemeilen haben.
+* `Ident`: Kennung des anfänglichen Fixes oder Name der Prozedur. Name für Legs festlegen.
+* `Beschränkung`: Entweder Mindesthöhe für das Atemwegssegment auf der Strecke, Verfahrenshöhenbeschränkung oder Verfahrensgeschwindigkeitsbegrenzung. Ein `/` trennt Höhe und Geschwindigkeitsbeschränkung. Für Verfahren gibt es folgende Höhenbeschränkungen:
+  * Nur Zahl:**Fliegen Sie in Höhe oder Geschwindigkeit. Beispiel: `5.400` oder `210`.
+  * **Präfix** `A`: Fliegen Sie in oder über Höhe oder Geschwindigkeit. Beispiel: `A 1.800`.
+  * **Präfix** `B`: Fliegen Sie in oder unter Höhe oder Geschwindigkeit. Beispiel: `B 10.000` oder `B 220`.
+  * * **Reichweite:** Fliegen Sie auf oder über Höhe eins und auf oder unter Höhe zwei. Beispiel: `A 8.000, B 10.000`.
+  * Höhen- und Geschwindigkeitsbegrenzung:** Werte getrennt durch `/`. Beispiel: `A 8.000, B 10.000/B220`.
+  * * **Nur Geschwindigkeitsbegrenzung:** Ein vorangestelltes `/` bedeutet keine Höhe, sondern eine Geschwindigkeitsbeschränkung. Beispiel: `/B250`.
+* `Bemerkungen`: Zeigt die Überflug-, Drehrichtungsanzeige oder die zugehörige Navigation für ein Operationsbein an.
 
-### Top Buttons {#top-buttons}
 
-#### Type Filter \(All Procedures\) {#procedure-filter-type}
+### Obere Schaltflächen {#top-buttons}
 
-The type filter is not available for an FSX or P3D stock database. A navdata update is needed to get SID and STAR procedures.
+#### Typ Filter \(All Procedures\) {#procedure-filter-type}
 
-This filter is always available for a X-Plane database which contains SIDs and STARs already in the stock data.
+Der Typfilter ist für eine FSX- oder P3D-Bestandsdatenbank nicht verfügbar. Ein Navdata-Update ist erforderlich, um die SID- und STAR-Verfahren zu erhalten.
 
-The type filter allows the selections below:
+Dieser Filter ist immer verfügbar für eine X-Plane Datenbank, die SIDs und STARs bereits in den Bestandsdaten enthält.
 
-* `All Procedures`: SID, STAR and approaches
-* `Departure Procedures`: Only SID
-* `Arrival Procedures`: STAR and approaches
-* `Only Approaches and Transitions`: No SID and no STAR
+Der Typfilter ermöglicht die folgenden Auswahlmöglichkeiten:
 
-The respective transitions are always shown.
+* `Alle Verfahren`: SID, STAR und Anflüge
+* `Abflugverfahren`: Nur SID
+* `Ankunftsverfahren`: STAR und Ansätze
+* `Nur Anflüge und Transitionen`: Keine SID und kein STAR
+
+Die jeweiligen Übergänge werden immer angezeigt.
+
 
 #### Runway Filter \(All Runways\) {#procedure-filter-runway}
 
-This filter is always available and helps to find procedures for a certain departure or arrival runway.
+Dieser Filter ist immer verfügbar und hilft, Prozeduren für eine bestimmte Start- oder Landebahn zu finden.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl zurücksetzen {#clear-selection}
 
-Deselect all entries in the table and remove any highlight circles from the map.
+Entfernt alle Einträge in der Tabelle und entfernt alle hervorgehobenen Kreise aus der Karte.
 
-#### ![Help](../images/icons/help.png "Help") Help {#help}
+#### ![Help](../images/icons/help.png "Help") Hilfe {#help}
 
-Open this chapter of the manual in the default browser.
+Öffnet dieses Kapitel des Handbuchs im Standardbrowser.
 
-### Procedure Tree Context Menu {#procedure-context-menu}
+### Kontextmenü des Verfahrensbaums {#procedure-context-menu}
 
-#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#procedure-show-on-map}
+#### ![Show on Map](../images/icons/showonmap.png "Show on Map") Auf der Karte anzeigen {#procedure-show-on-map}
 
-Center the map on the selected procedure.
+Zentriert die Karte auf die ausgewählte Prozedur.
 
-#### Follow Selection {#follow-selection}
+#### Auswahl folgen {#follow-selection}
 
-The map view will be zoomed on the selected procedure when this function is enabled. 
+Die Kartenansicht wird bei aktivierter Funktion auf das ausgewählte Verfahren gezoomt. 
 
-#### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
+#### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") In den Flugplan einfügen / Als Reiseziel verwenden / Als Abflug verwenden {#procedure-insert}
 
-Text and functionality of this menu item depends on the selected procedure type and whether the procedure's airport is already the departure or destination airport of the current flight plan.
+Text und Funktionalität dieses Menüpunktes hängen von der gewählten Verfahrensart ab und ob der Flughafen des Verfahrens bereits der Start- oder Zielflughafen des aktuellen Flugplans ist.
 
-Use the context menu of the flight plan table to remove procedures. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
+Verwenden Sie das Kontextmenü der Flugplattentabelle, um Prozeduren zu entfernen. Siehe [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs.
 
-If a transition is selected, the corresponding procedure \(approach, SID or STAR\) is added or replaced as well.
+Wenn eine Transition ausgewählt wird, wird auch die entsprechende Prozedur \(Approach, SID oder STAR\) hinzugefügt oder ersetzt.
 
-`Insert ... into Flight Plan`:
+`Einfügen.... in den Flugplan`:
 
-This menu item will add the selected procedure to the current flight plan. A procedure of the same type \(SID, STAR or approach with or without transition\) will be replaced if already present in the flight plan.
+Mit diesem Menüpunkt wird die ausgewählte Prozedur in den aktuellen Flugplan aufgenommen. Ein Verfahren des gleichen Typs \(SID, STAR oder Approach mit oder ohne Transition\) wird ersetzt, wenn es bereits im Flugplan vorhanden ist.
 
-`Use ... as Destination` or `Use ... as Departure`:
+`Verwenden Sie .... als Ziel` oder `Verwenden Sie .... als Abflug`:
 
-This will add or replace the destination or departure airport and add the selected procedure.
+Dadurch wird der Ziel- oder Abflughafen hinzugefügt oder ersetzt und das ausgewählte Verfahren hinzugefügt.
 
-If the flight plan is empty, the departure or destination airport is added to the flight plan as well.
+Wenn der Flugplan leer ist, wird auch der Abflug- oder Zielflughafen in den Flugplan aufgenommen.
 
-#### ![Show Information for Airport](../images/icons/globals.png "Show Information for Airport") Show Information for Airport {#show-information}
+#### ![Show Information for Airport](../images/icons/globals.png "Show Information for Airport") Informationen zum Flughafen anzeigen {#show-information}
 
-Show detailed information in the `Information` dock window for the airport.
+Zeigt detaillierte Informationen für den Flughafen im Dockfenster `Information` an.
 
-See the [Information Dock Window](INFO.md#information-dock-window) for details.
+Weitere Informationen finden Sie im Fenster [Information Dock Window](INFO.md#information-dock-window).
 
-#### ![Show Airport on Map](../images/icons/showonmap.png "Show Airport on Map") Show Airport on Map {#show-on-map}
+#### ![Show Airport on Map](../images/icons/showonmap.png "Show Airport on Map") Flughafen auf der Karte anzeigen {#show-on-map}
 
-Show the airport on the map. The zoom distance can be changed in the dialog `Options` on the tab `Map`.
+Zeigt den Flughafen auf der Karte an. Der Zoomabstand kann im Dialog `Optionen` auf der Registerkarte `Karte` geändert werden.
 
-#### ![Show Airport in Search](../images/icons/search.png "Show Airport in Search") Show Airport in Search {#show-in-search}
+#### ![Show Airport in Search](../images/icons/search.png "Show Airport in Search") Flughafen in der Suche anzeigen {#show-in-search}
 
-Shows the airport in the search dialog.
+Zeigt den Flughafen im Suchdialog an.
 
-#### Expand All / Collapse All
+#### Alles expandieren / Alles komprimieren
 
-Expand all procedures so that their legs and transitions are shown or collapse the tree.
+Expandieren Sie alle Prozeduren so, dass ihre Legs und Transitions angezeigt werden oder komprimieren Sie den Baum.
 
-#### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#reset-search}
+#### ![Reset Search](../images/icons/clear.png "Reset Search") Suche zurücksetzen {#reset-search}
 
-Clear search filters and revert to showing all procedures in the tree.
+Löschen Sie die Suchfilter und kehren Sie zur Anzeige aller Prozeduren im Baum zurück.
 
-#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Clear Selection {#clear-selection}
+#### ![Clear Selection](../images/icons/clearselection.png "Clear Selection") Auswahl aufheben {#clear-selection}
 
-Deselect the currently selected procedure and remove the preview from the map.
+Deaktiviert die aktuell ausgewählte Prozedur und entfernt die Vorschau aus der Karte.
 
-#### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view}
+#### ![Reset View](../images/icons/cleartable.png "Reset View") Ansicht zurücksetzen {#reset-view}
 
-Reset column order and column widths to default.
+Setzt die Spaltenreihenfolge und die Spaltenbreiten auf den Standardwert zurück.
 

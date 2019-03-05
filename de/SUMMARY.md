@@ -7,41 +7,81 @@
 * [Schnellübersicht](QUICKOVERVIEW.md)
 * [Erster Start](INTRO.md#first-start)
 * [Allgemeine Bemerkungen](INTRO.md#general-remarks)
+
+### Benutzerschnittstelle
+
 * [Menüs und Symbolleisten](MENUS.md)
 * [Statusleiste](MENUS.md#statusbar)
-* [Kartenanzeige](MAPDISPLAY.md)
-* [Legende der Kartenanzeige](LEGEND.md)
-* [Bearbeitung des Flugplans](MAPFPEDIT.md)
-* [Such-Dock-Fenster - Flughäfen und Navigationshilfen](SEARCH.md)
-* [Such-Dock-Fenster - Prozeduren](SEARCHPROCS.md)
+* [Koordinatenformate](COORDINATES.md)
 * [Navigationsdatenbanken](NAVDATA.md)
+
+### Kartenanzeige
+
+* [Übersicht](MAPDISPLAY.md)
+* [Kompassrose](COMPASSROSE.md)
+* [Sonnenschatten](SUNSHADOW.md)
+* [Platzrunde](TRAFFICPATTERN.md)
+* [Legende](LEGEND.md)
+
+### Suche
+
+* [Dockfenster Suche](SEARCH.md)
+* [Dockfenster Prozeduren](SEARCHPROCS.md)
+* [Nutzerpunkte](USERPOINT.md)
+* [Online Netzwerke](ONLINENETWORKS.md)
+
+### Flugplan
+
+* [Dockfenster Flugplan](FLIGHTPLAN.md)
+* [Prozeduren](APPROACHES.md)
+* [Position Bearbeiten](EDITFPPOSITION.md)
+* [Routenbeschreibung](ROUTEDESCR.md)
+* [Flugplan bearbeiten](MAPFPEDIT.md)
 * [Flugplanformate](FLIGHTPLANFMT.md)
-* [Flugplan-Dock-Fenster](FLIGHTPLAN.md)
-* [Flugplanverfahren](APPROACHES.md)
-* [Flugplan Routenbeschreibung](ROUTEDESCR.md)
 * [Flugplan Höhenprofil Dockfenster](PROFILE.md)
-* [Informations-Dock-Fenster](INFO.md#information-dock-window)
-* [Legenden-Dock-Fenster](INFO.md#legend-dock-window)
-* [Simulator-Flugzeug-Dock-Fenster](INFO.md#simulator-aircraft-dock-window)
+* [Flugplan Online Export](ROUTEEXPORT.md)
+
+### Flugzeugleistung
+
+* [Übersicht](AIRCRAFTPERF.md)
+* [Bearbeiten](AIRCRAFTPERFEDIT.md)
+
+### Informationen
+
+* [Dockfenster Information](INFO.md)
+* [Dockfenster Simulatorflugzeug](INFO.md#simulator-aircraft-dock-window)
+* [Dockfenster Legende](INFO.md#legend-dock-window)
 * [Wetter](WEATHER.md)
-* [Drucken der Karte](PRINT.md#printing-the-map)
-* [Drucken des Flugplans](PRINT.md#printing-the-flight-plan)
-* [Dialog Scenery Library laden](SCENERY.md)
-* [Verbinden zu einem Flugsimulator](CONNECT.md)
-* [Suche nach Updates](UPDATE.md)
-* [Optionen-Dialog](OPTIONEN.md)
+
+### Drucken
+
+* [Karte](PRINT.md#printing-the-map)
+* [Flugplan](PRINT.md#printing-the-flight-plan)
+
+### Werkzeuge
+
+* [Dialog Szeneriebibliothek laden](SCENERY.md)
+* [Verbindung zu einem Flugsimulator herstellen](CONNECT.md)
+* [Nach Updates suchen](UPDATE.md)
+* [Dialog Einstellungen](OPTIONS.md)
 * [Benutzung ohne Flugsimulator-Installation](RUNNOSIM.md)
+
+### Tutorials
+
+* [Allgemeines](TUTORIALS.md)
+* [Erstellen eines VFR-Flugplans](TUTORIALVFR.md)
+* [Erstellen eines IFR-Flugplans mit Anflugverfahren](TUTORIALIFR.md)
+
+### Anhang
+
 * [Anpassen](CUSTOMIZE.md)
-* [Erstellen oder Hinzufügen von Kartenmotiven](MAPTHEMES.md)
-* [Dateien](FILES.md)
-* [Tutorials - Allgemein](TUTORIALS.md)
-* [Tutorial - Erstellen eines VFR-Flugplans](TUTORIALVFR.md)
-* [Tutorial - Erstellung eines IFR-Flugplans mit Anflugverfahren](TUTORIALIFR.md)
+* [Kartenthemen erstellen](MAPTHEMES.md)
+* [Dateien und Pfade](FILES.md)
 * [Tipps und Tricks](TIPS.md)
 * [Tipps für alte und langsame Computer](APPENDIX.md#tips-for-old-and-slow)
 * [Fehlerbehebung](APPENDIX.md#troubleshoot)
 * [Bekannte Probleme](APPENDIX.md#known-problems)
-* [Wie man einen Fehler meldet](APPENDIX.md#how-to-report-a-bug)
+* [Einen Fehler melden](APPENDIX.md#how-to-report-a-bug)
 * [Glossar](GLOSSARY1.md)
 * [Lizenz](LICENSE.md)
- 
+

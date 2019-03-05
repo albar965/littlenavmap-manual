@@ -1,266 +1,267 @@
-## Map Display {#map-display}
+## Karte {#map-display}
 
-See the [Nav Map Legend](LEGEND.md) for details about the various symbols shown by the map.
+Für Details zu den verschiedenen Symbolen, die auf der Karte angezeigt werden, siehe  [Legende der Kartenanzeige](LEGEND.md).
 
-### Moving {#moving}
+### Bewegen {#moving}
 
-Use click and drag to move the map and the mouse wheel to zoom in or out. Use `Shift+Wheel` to zoom in small steps. You can also use the overlay buttons on the right side of the map.
+Bewegen Sie die Karte per Mausklick und Drag&Drop und das Mausrad zum Vergrößern oder Verkleinern. Verwenden Sie `Shift+Wheel`, um in kleinen Schritten zu zoomen. Sie können auch die Overlay-Buttons auf der rechten Seite der Karte verwenden.
 
-Alternatively use the keyboard to move around the map:
+Alternativ können Sie sich auch mit der Tastatur durch die Karte bewegen:
 
-* Cursor keys: Scroll the map
-* `+` and `-`: Zoom in and out
-* `Alt+Left` and `Alt+Right`: Go forward or backward in the map position history
-* `Ctrl++` and `Ctrl+-`: Increase or decrease details
-* `Ctrl+Home`: Go to home postion
-* `Ctrl+End`: Go to center for distance search
+* Cursortasten: Scrollen Sie durch die Karte
+* `+` und `-`: Vergrößern und Verkleinern
+* `Alt+Links` und `Alt+Rechts`: Vorwärts- oder Rückwärtsgehen in der Kartenpositionshistorie
+* `Strg++` und `Strg+-`: Details vergrößern oder verkleinern
+* `Strg+Haus`: Zur Startseite gehen
+* `Strg+Ende`: Gehe zur Mitte für die Entfernungssuche
 
-Do not forget to activate the map window by clicking into it before using keys for movement.
+Vergessen Sie nicht, das Kartenfenster zu aktivieren, indem Sie darauf klicken, bevor Sie die Tasten zur Bewegung verwenden.
 
-### Mouse Clicks {#mouse-clicks}
+### Mausklicks {#mouse-clicks}
 
-A single click shows details about all map objects nearby the clicked position in the `Information` dock window. Windows and tabs are raised depending on clicked objects.
+Ein einziger Klick zeigt Details über alle Kartenobjekte in der Nähe der angeklickten Position im Dockfenster `Information`. Fenster und Registerkarten werden je nach angeklickten Objekten geöffnet.
 
-A single click on a user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
+Ein einfacher Klick auf ein Benutzerflugzeug, KI-Flugzeug oder Multiplayer-Flugzeug zeigt Details im Dockfenster des `Simulatorflugzeuges` an.
 
-A double-click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window. The same applies for all AI or multiplayer aircraft or ships.
+Ein Doppelklick vergrößert die Darstellung des Flughafendiagramms oder der Navaid und zeigt Details im Dockfenster `Information` an. Dasselbe gilt für alle KI- oder Multiplayer-Flugzeuge oder -Schiffe.
 
-The double-click and single-click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
+Die Doppelklick- und Ein-Klick-Funktionalität funktioniert nicht für Flugplan-Wegpunkte oder Flughäfen, wenn der Flugplan-Editiermodus aktiviert ist. Der Bearbeitungsmodus kann über die Symbolleiste oder `Hauptmenü` -&gt; `Flugplan` -&gt; `Flugplan auf Karte bearbeiten` deaktiviert werden.
 
-The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map` tab.
+Die Empfindlichkeit des Mausklicks kann im Dialogfeld `Einstellungen` auf der Registerkarte `Karte` eingestellt werden.
 
-### Mouse Click Hotspots {#mouse-click-hotspots}
 
-Map marks like range rings or measurement lines have hotspots to indicate that a modifier-click can remove them or an action is available in the context menu. The same applies to the flight plan drag and drop editing mode.
+### Mausklick-Hotspots {#mouse-click-hotspots}
 
-The mouse cursor changes into a hand ![Hand Cursor](../images/cursorhand.jpg) to indicate a click spot.
+Kartenmarkierungen wie Entfernungsringe oder Messlinien haben Hotspots, die anzeigen, dass ein Modifikatorklick sie entfernen kann oder eine Aktion im Kontextmenü verfügbar ist. Gleiches gilt für den Drag&Drop-Bearbeitungsmodus des Flugplans.
 
-Click spots are:
-* Center of range rings \(small circle\).
-* End of a measurement line \(cross\).
-* Runway threshold point \(small circle\) for airport traffic patterns.
+Der Mauszeiger verwandelt sich in eine Hand ![Hand Cursor](../images/cursorhand.jpg), um einen Klickpunkt anzuzeigen.
 
-### Mouse Clicks and Modifiers {#mouse-clicks-modifiers}
+Klickpunkte sind:
+* Mitte der Entfernungsringe \(kleiner Kreis\).
+* Ende einer Messlinie \(Kreuz).
+* Start- und Landebahn-Schwellenpunkt \(kleiner Kreis\ für Flughafenverkehrsmuster.
 
-You can use the keyboard and mouse click to get quick access to the following functions:
 
-* `Shift+Click`: Add or remove range rings or navaid range rings.
-* `Ctrl+Click`: Start rhumb-line measurement or delete a measurement line.
-* `Alt+Click`: Start great circle line measurement or delete measurement line.
-* `Ctrl+Shift+Click`: Add or edit an userpoint.
-* `Ctrl+Alt+Click`: Insert airport, navaid, userpoint or position into the nearest flight plan leg.
-* `Shift+Alt+Click`: Append airport, navaid, userpoint or position to flight plan.
+### Mausklicks und Modifikatoren {#mouse-clicks-modifiers}
+
+Mit der Tastatur und dem Mausklick können Sie schnell auf die folgenden Funktionen zugreifen:
+
+* `Umschalt+Klick`: Hinzufügen oder Entfernen von Entfernungsringen oder Navaid Entfernungsringen.
+* `Strg+Klick`: Starten Sie die Rhumb-Line-Messung oder löschen Sie eine Messlinie.
+* `Alt+Klick`: Starten Sie die Messung der Großkreislinie oder löschen Sie die Messlinie.
+* `Strg+Shift+Klick`: Hinzufügen oder Bearbeiten eines Benutzerpunktes.
+* `Strg+Alt+Klick`: Fügen Sie Flughafen, Navaid, Benutzerpunkt oder Position in die nächstgelegene Flugplan-Strecke ein.
+* `Umschalt+Alt+Klick`: Fügen Sie Flughafen, Navigation, Benutzerpunkt oder Position an den Flugplan an.
 
 Clicking again on the hotspot removes the marks, measurement lines or flight plan waypoints.
 
-### Aircraft {#aircraft}
+### Flugzeug {#aircraft}
 
-The user aircraft and AI or multiplayer aircraft or ships will be shown on the map if the program is connected to a flight simulator. Color indicates user or AI or multiplayer vehicle and the symbol shape indicates if the aircraft is an piston/turboprop, jet, helicopter or a ship. The symbol outline changes to gray if an aircraft is on ground.
+Das Benutzerflugzeug und KI- oder Mehrspielerflugzeug oder -schiffe werden auf der Karte angezeigt, wenn das Programm mit einem Flugsimulator verbunden ist. Die Farbe zeigt den Benutzer oder ein KI- oder Mehrspielerfahrzeug an und die Symbolform zeigt an, ob es sich bei dem Flugzeug um einen Kolben/Turboprop, Jet, Helikopter oder ein Schiff handelt. Die Symbolumrandung wird grau, wenn sich ein Flugzeug am Boden befindet.
 
-Little Navmap  limits the display of AI vehicles depending on size. Zoom close to see small aircraft or boats
+Little Navmap begrenzt die Anzeige von KI-Fahrzeugen je nach Größe. Zoomen Sie nah heran, um kleine Flugzeuge oder Boote zu sehen.
 
-AI and multiplayer aircraft on ground are shown only on small zoom distances to avoid cluttered airports. This means that an AI aircraft can disappear from the map when landing on an airport.
+KI- und Multiplayer-Flugzeuge  werden am Boden nur in kleinen Zoomabständen angezeigt, um überfüllte Flughäfen zu vermeiden. Das bedeutet, dass ein KI-Flugzeug bei der Landung auf einem Flughafen von der Karte verschwinden kann.
 
-On the lowest zoom distance all aircraft are drawn to scale as are the parking spots which means you can easily check if your aircraft fits on an apron, parking spot or taxiway.
+Auf der untersten Zoomdistanz werden alle Flugzeuge sowie die Parkplätze maßstabsgetreu dargestellt, so dass Sie leicht überprüfen können, ob Ihr Flugzeug auf ein Vorfeld, einen Parkplatz oder einen Rollweg passt.
 
-A yellow wind arrow and labels for the situation around the user aircraft can be displayed on the
-top center of the map. The displayed labels for aircraft can be configured in the dialog `Options` on tab `Map Display`. No labels are shown for ship traffic.
+Ein gelber Windpfeil und Bezeichnungen für die Verhältnisse um das Benutzerflugzeug herum können in der oberen Mitte der Karte angezeigt werden.
+ Die angezeigten Labels für Flugzeuge können im Dialog `Einstellungen` auf der Registerkarte `Kartenanzeige` konfiguriert werden.   Es werden keine Labels für den Schiffsverkehr angezeigt.
 
-See the [Nav Map Legend](LEGEND.md#aircraft) for details about the aircraft type.
+
+Siehe auch [Navigationskartenlegende](LEGEND.md#aircraft) für Details über den Flugzeugtyp.
 
 ### Tooltips {#tooltips}
 
-Hovering the mouse over the map will show tooltips for all map objects including airports, VOR, NDB, airways, parking, fuel box, towers, aircraft and ships. The tooltip is truncated and shows a message `More...` if it gets too long. In that case reduce details or zoom in closer.
+Wenn Sie mit der Maus über die Karte fahren, werden QuickInfos für alle Kartenobjekte angezeigt, einschließlich Flughäfen, VOR, NDB, Luftstraßen, Parkplätze, Treibstofftanks, Türme, Flugzeuge und Schiffe. Der Tooltip wird abgeschnitten und zeigt eine Meldung `Mehr....` an, wenn er zu lang wird. In diesem Fall reduzieren Sie Details oder zoomen Sie näher heran.
 
-The sensitivity for the tooltip display can be adjusted in the `Options` dialog on the `Map` tab.
+Die Empfindlichkeit für die Tooltip-Anzeige kann im Dialog `Einstellungen` auf der Registerkarte `Karte` eingestellt werden.
+
 
 ![Tooltip](../images/tooltip.jpg "Tooltip") ![Tooltip Airspace](../images/tooltipairspace.jpg "Tooltip Airspace")
 
-_**Pictures above:** Tooltip with information for an airport and a VOR and a tooltip with information about airspaces._
+_**Bild oben:** Tooltip mit Informationen für einen Flughafen und ein VOR und ein Tooltip mit Informationen über Lufträume._
 
 ### Highlights {#highlights}
 
-Airports, navaids or other features that are selected in the flight plan table or in a search result table are highlighted on the map with a green/black or a yellow/black ring respectively.
+Flughäfen, Navaids oder andere Merkmale, die in der Flugplantabelle oder in einer Suchergebnistabelle ausgewählt sind, werden auf der Karte mit einem grün/schwarzen bzw. gelb/schwarzen Ring markiert.
 
-Waypoints that are selected in the procedure preview are highlighted with a blue/black ring.
+Wegpunkte, die in der Prozedurvorschau ausgewählt werden, werden mit einem blau/schwarzen Ring markiert.
 
-These highlight circles provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance \(ring is empty\). This allows double-click for zoom in, single-click for information dock window and all context menu entries.
+Diese Markierungskreise bieten alle Funktionen der sichtbaren Kartenobjekte, auch wenn die Objekte bei der aktuellen Zoomdistanz nicht angezeigt werden \(Ring ist leer\). Dies ermöglicht einen Doppelklick zum Vergrößern, einen einfachen Klick für das Informations-Dockfenster und alle Einträge im Kontextmenü.
 
-You can use the button `Clear Selection` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") on top of the flight plan and search windows to remove any map highlights.
+Sie können die Schaltfläche `Auswahl löschen` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") oben im Flugplan und in den Suchfenstern verwenden, um eventuelle Kartenhighlights zu entfernen.
 
-### Airport Diagram {#airport-diagram}
+### Flughafendiagram {#airport-diagram}
 
-The display will change from a single icon to an airport diagram if you zoom in deep enough to an airport. The diagram shows all taxiways, parking positions, gates, runways and more.
+Die Anzeige wechselt von einem einzelnen Symbol zu einem Flughafendiagramm, wenn Sie tief genug in einen Flughafen hineinzoomen. Das Diagramm zeigt alle Rollwege, Parkpositionen, Tore, Start- und Landebahnen und mehr.
 
-The airport diagram provides more information through tooltips for parking and tower positions. A right-click on a parking position opens the context menu and allows to select the start position for flight plan departure.
+Das Flughafendiagramm bietet weitere Informationen durch Tooltips für Park- und Towerpositionen. Ein Rechtsklick auf eine Parkposition öffnet das Kontextmenü und ermöglicht die Auswahl der Startposition für den Start des Flugplans.
 
-**Airspaces are hidden if the airport diagram is shown.**
+**Lufträume werden ausgeblendet, wenn das Flughafendiagramm angezeigt wird.**
 
-See the [Nav Map Legend](LEGEND.md#airport-diagram) for details about the airport diagram.
+Siehe [Navigationskartenlegende](LEGEND.md#airport-diagram) für weitere Details über den Flughafen.
 
 ![Airport Diagram](../images/airportdiagram1.jpg "Airport Diagram")
 
-_**Picture above:** High level view of the airport diagram of EDDH._
+_**Bild oben:** High-Level-Ansicht des Flughafendiagramms von EDDH._
 
 ![Airport Diagram](../images/airportdiagram2.jpg "Airport Diagram")
 
-_**Picture above:** Detailed view of the airport diagram. Shows blue gates on the right and a few green general aviation ramp parking spots on the left. Long displaced threshold of runway 33 is visible. Dashed yellow lines indicate taxi paths._
+_**Bild oben:** Detailansicht des Flughafendiagramms. Zeigt rechts blaue Tore und links ein paar grüne Parkplätze für die allgemeine Luftfahrt. Die langgestellte Schwelle der Piste 33 ist sichtbar. Gestrichelte gelbe Linien zeigen Taxistrecken an._
 
-### Map Context Menu {#map-context-menu}
+### Kontextmenü Karte {#map-context-menu}
 
-The map context menu can be activated using right-click or the menu key. Menu items are enabled or disabled depending on selected object and some menu items contain the name of the selected map object for clarification.
+Das Kontextmenü der Karte kann durch Rechtsklick oder die Menütaste aktiviert werden. Je nach ausgewähltem Objekt werden Menüpunkte aktiviert oder deaktiviert, und einige Menüpunkte enthalten zur Verdeutlichung den Namen des ausgewählten Kartenobjekts.
 
-#### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information}
+#### ![Show Information](../images/icons/globals.png "Show Information") Zeige Information {#show-information}
 
-Show detailed information in the `Information` dock window for the nearest airport, airway, airspace or navaid which name is shown in the menu item.
 
-If you like to see information on all objects nearby a click position do a single left click into the map.
+Zeigt detaillierte Informationen für den nächstgelegenen Flughafen, die Luftstraßen, den Luftraum oder die Navaid im Dockfenster`Information` an, deren Name im Menüpunkt angezeigt wird.
 
-See the [Information Dock Window](INFO.md#information-dock-window) for details.
+Wenn Sie Informationen über alle Objekte in der Nähe einer Klickposition sehen möchten, klicken Sie mit einem einzigen Linksklick in die Karte.
 
-#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Show Procedures {#show-procedures}
+Siehe [Information Dock Fenster](INFO.md#information-dock-window) für weitere Details.
 
-Open the procedure search tab of the search dock window and display all procedures for the airport.
+#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Zeige Prozeduren {#show-procedures}
 
-See [Procedure Search](SEARCHPROCS.md) for more information.
+Öffnet die Registerkarte Verfahrenssuche des Suchdockfensters und zeigt alle Verfahren für den Flughafen an.
 
-#### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Measure GC Distance from here {#measure-gc-distance-from-here}
+Siehe [Prozedurensuche](SEARCHPROCS.md) für weitere Informationen.
 
-Display distances from the selected origin as you move the mouse over the map. Left-click on the map to end measuring and keep the measurement line. All measurement lines are saved and will be restored on next start up.
+#### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Messe den GC Abstand von hier aus. {#measure-gc-distance-from-here}
 
-You can use the keyboard, mouse wheel or the map overlays to scroll and zoom while dragging a line.
+Zeigt Entfernungen vom ausgewählten Ursprung an, während Sie mit der Maus über die Karte fahren. Klicken Sie mit der linken Maustaste auf die Karte, um die Messung zu beenden und die Messlinie beizubehalten. Alle Messleitungen werden gespeichert und beim nächsten Start wiederhergestellt.
 
-Right-click, press the escape key or click outside of the map window to cancel the measurement line editing.
+Sie können mit der Tastatur, dem Mausrad oder den Kartenüberlagerungen scrollen und zoomen, während Sie eine Linie ziehen.
 
-Measurement lines use nautical miles, kilometers or statue miles as unit. Feet or meter will be added as unit if the lines are short enough. This allows to measure e.g. takeoff distance for crossing takeoffs.
+Klicken Sie mit der rechten Maustaste, drücken Sie die Escape-Taste oder klicken Sie außerhalb des Kartenfensters, um die Bearbeitung der Messlinie abzubrechen.
 
-A great circle gives the shortest distance from point to point on earth but does not use a constant course. For that reason the measurement line will show two course values. One for the start and one for the end position.
+Messlinien verwenden Seemeilen, Kilometer oder Statuenmeilen als Einheit. Feet oder Meter werden als Einheit hinzugefügt, wenn die Linien kurz genug sind. Auf diese Weise kann z.B. die Startstrecke für kreuzende Starts gemessen werden.
 
-Course is always indicated in degrees true which is indicated by the suffix `°T`. Additional information like ident or frequency will be added to the line if the measurement starts at a navaid or an airport.
+Ein Großkreis gibt die kürzeste Entfernung von Punkt zu Punkt auf der Erde an, verwendet aber keinen konstanten Kurs. Aus diesem Grund zeigt die Messlinie zwei Kurswerte an. Eine für die Start- und eine für die Endposition.
 
-The width of distance measurement lines can be changed in the dialog `Options` on the tab `Map Display`.
+Der Kurs wird immer in Grad true angegeben, was durch das Suffix `°T` angezeigt wird. Zusätzliche Informationen wie Identität oder Frequenz werden der Zeile hinzugefügt, wenn die Messung an einem Navaid oder einem Flughafen beginnt.
 
-See the [Nav Map Legend](LEGEND.md#map-marks) for details on measurement lines.
+Die Breite der Distanzmesslinien kann im Dialog `Einstellungen` auf der Registerkarte `Kartendarstellung` geändert werden.
+Siehe [Navigationskartenlegende](LEGEND.md#map-marks) für Details zu den Messlinien.
 
-#### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Measure Rhumb Distance from here {#measure-rhumb-distance-from-here}
+#### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Rhumb Distance von hier aus messen. {#measure-rhumb-distance-from-here}
 
-A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is slightly longer than the great circle route.
+Eine Rhumb-Linie ist eine Linie mit konstantem Verlauf, die zwischen den Wegpunkten eines Luftwegs oder bei der Annäherung an eine VOR- oder NDB-Station verwendet wird. Der Abstand zwischen den Punkten ist etwas größer als die Großkreisroute.
 
-The course for a rhumb line is indicated in degrees magnetic and true \(`°M`, `°T` or `°M/T` if both values are equal\).
+Der Kurs einer Rhumb-Linie wird in Grad magnetisch und wahr \(`°M`, `°T` oder `°M/T`\) angegeben, wenn beide Werte gleich sind.
 
-Note that the rhumb line connecting two points on earth is longer than the great circle path. Also, near the poles and for longer distances the rhumb line is not usable.
+Die magnetische Abweichung zur Berechnung des magnetischen Verlaufs wird aus der globalen Datei `magdec.bgl` am Anfang der Messung übernommen.
 
-The magnetic declination to calculate the magnetic course will be taken from the global `magdec.bgl` file at the origin of the measurement.
+Die magnetische Abweichung von einem Flughafen oder einer Navaid wird verwendet, wenn die Messung an einem solchen Punkt beginnt. Zusätzliche Informationen wie Identität und Frequenz werden in diesem Fall ebenfalls in die Leitung eingefügt.
 
-The magnetic declination of an airport or navaid will be used if the measurement starts at a such a point. Additional information like ident and frequency will be added to the line in this case as well.
+Sieh [Magnetische Deklination](INTRO.md#magnetic-declination) für Hinweise zu diesem Thema.
 
-See [Magnetic Declination](INTRO.md#magnetic-declination) for remarks on that topic.
+#### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Entfernungsmessung entfernen {#remove-distance-measurement}
 
-#### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
+Entfernt die ausgewählte Zeile. Dieser Menüpunkt ist aktiv, wenn Sie mit der rechten Maustaste auf den Endpunkt einer Abstandsmesslinie \(kleines Kreuz\) klicken. 
 
-Remove the selected line. This menu item is active if you right-click on the end point of a distance measurement line \(small cross\). 
+#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Flughafen-Verkehrsdiagramm anzeigen {#show-traffic-pattern}
 
-#### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
+Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flughafen klicken. Zeigt einen Dialog an, der es ermöglicht, ein Flughafen-Verkehrsdiagramm auf der Karte anzupassen und anzuzeigen.
 
-This menu item is enabled if clicked on an airport. Shows a dialog that allows to customize and display an airport traffic pattern on the map.
+Siehe [Traffic Pattern](TRAFFICPATTERN.md).
 
-See [Traffic Pattern](TRAFFICPATTERN.md).
-
-#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Remove Airport Traffic Pattern {#remove-traffic-pattern}
+#### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Flughafenverkehrsmuster entfernen {#remove-traffic-pattern}
 
 Enabled if clicked on the airport traffic pattern hotspot \(circle at runway threshold\) which is indicated by a hand cursor.
 
 See [Traffic Pattern](TRAFFICPATTERN.md).
 
-#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings}
+#### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Reichweitenringe anzeigen {#show-range-rings}
 
-Show multiple red range rings around the clicked position. The number and distance of the range rings can be changed in the `Options` dialog on the `Map Display` tab. A label indicates the radius of each ring in nautical miles.
+Zeigt mehrere rote Bereichsringe um die angeklickte Position herum an. Die Anzahl und Entfernung der Entfernungsringe kann im Dialogfeld `Einstellungen`  auf der Registerkarte `Kartenanzeige` geändert werden. Ein Label zeigt den Radius jedes Rings in Seemeilen an.
 
-The width of all range rings can be changed in the dialog `Options` on the tab `Map Display`.
+Die Breite aller Range Ringe kann im Dialog `Einstellungen` auf der Registerkarte `Kartendarstellung` geändert werden.
 
-#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
+#### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Navaid Bereich anzeigen {#show-navaid-range}
 
-Show a ring around the clicked radio navaid \(VOR or NDB\) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
+Zeigt einen Ring um das angeklickte Radio navaid \(VOR oder NDB\), der die Reichweite des Navaids anzeigt. Ein Label zeigt Ident- und Frequenzangaben und die Ringfarbe zeigt den Navaid-Typ an.
 
-#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Remove Range Ring {#remove-range-ring}
+#### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Entfernungsringe entfernen {#remove-range-ring}
 
 Remove the selected rings from the map. This menu item is active if you right-click on the center point of a range ring \(small circle\).
 
-#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
+#### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Entferne alle Entfernungsringe und Distanzmessungen. {#remove-all-range-rings-and-distance-measurements}
 
-Remove all rings and distance measurement lines from the map.
+Entfernt alle Ringe und Distanzmesslinien aus der Karte.
 
-#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure}
+#### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Als Startflugplatz setzen {#set-as-flight-plan-departure}
 
-This is active if the click is at an airport, an airport parking position or a fuel box. It will either replace the current flight plan departure or add a new departure if the flight plan is empty.
+Dies ist aktiv, wenn sich der Klick auf einem Flughafen, einer Flughafen-Parkplatz oder einer Kraftstoffbox befindet. Er ersetzt entweder den aktuellen Flugplanstart oder fügt einen neuen Flug hinzu, wenn der Flugplan leer ist.
 
-The default runway will be used as starting position if the clicked object is an airport. The airport and parking position will replace both the current departure and start position if a parking position is clicked within an airport diagram.
+Die standardmäßige Startbahn wird als Startposition verwendet, wenn das angeklickte Objekt ein Flughafen ist. Die Flughafen- und Parkposition ersetzt sowohl die aktuelle Abflug- als auch die Startposition, wenn eine Parkposition in einem Flughafendiagramm angeklickt wird.
 
-#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination}
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Als Zielflugplatzs setzen {#set-as-flight-plan-destination}
 
-This menu item is active if the click is at an airport. It will either replace the flight plan destination or add the airport if the flight plan is empty.
+Dieser Menüpunkt ist aktiv, wenn sich der Klick auf einem Flughafen befindet. Er ersetzt entweder das Flugplanziel oder fügt den Flughafen hinzu, wenn der Flugplan leer ist.
 
-#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan}
+#### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Position zum Flugplan hinzufügen {#add-position-to-flight-plan}
 
-Insert the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is near the flight plan end points.
+Fügt das angeklickte Objekt in die nächstgelegene Flugplanstrecke ein. Das Objekt wird vor dem Start oder nach dem Ziel hinzugefügt, wenn sich die angeklickte Position in der Nähe der Flugplanendpunkte befindet.
 
-The text `Position` is replaced with an object name if an airport, navaid or userpoint is at the clicked position.
+Der Text `Position` wird durch einen Objektnamen ersetzt, wenn sich ein Flughafen, Navaid oder Benutzerpunkt an der angeklickten Position befindet.
 
-A user-defined flight plan position is added to the plan if no airport or navaid is near the clicked point.
+Eine benutzerdefinierte Flugplanposition wird dem Plan hinzugefügt, wenn sich kein Flughafen oder Navaid in der Nähe des angeklickten Punktes befindet.
 
-A userpoint is converted to a user-defined flight plan position if added to the plan.
+Ein Benutzerpunkt wird in eine benutzerdefinierte Flugplanposition umgewandelt, wenn er dem Plan hinzugefügt wird.
+#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Position an den Flugplan anhängen {#append-position-to-flight-plan}
 
-#### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Append Position to Flight Plan {#append-position-to-flight-plan}
+Das Gleiche wie `Position zum Flugplan hinzufügen`, aber das ausgewählte Objekt oder die ausgewählte Position wird immer hinter dem Zielflugplatz oder dem letzten Wegpunkt des Flugplans angehängt.
 
-Same as `Add Position to Flight Plan` but will always append the selected object or position after the destination or last waypoint of the flight plan.
+#### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Aus dem Flugplan löschen {#delete-from-flight-plan}
 
-#### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Delete from Flight Plan {#delete-from-flight-plan}
+Löscht die ausgewählte Flughafen-, Navigations- oder Benutzerflugplanposition aus dem Plan.
 
-Delete the selected airport, navaid or user flight plan position from the plan.
+#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Flugplan Position bearbeiten {#edit-name-of-user-waypoint}
 
-#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Edit Flight Plan Position {#edit-name-of-user-waypoint}
+Ändert den Namen oder die Position eines benutzerdefinierten Wegpunktes. Siehe [Flugplanposition bearbeiten](EDITFPPOSITION.html).
 
-Change the name or position of a user-defined waypoint. See [Edit Flight Plan Position](EDITFPPOSITION.html).
+Die Länge des Namens ist beim Speichern in einer PLN-Datei auf 10 Zeichen begrenzt. Andere Flugplanformate haben stärkere Einschränkungen in Bezug auf Länge und zulässige Zeichen.
 
-The length of the name is limited to 10 characters when saving to a PLN file. Other flight plan formats have stronger limitations on length and allowed characters.
+Sie können die Koordinaten auch direkt bearbeiten, anstatt die Flugplanposition zu ziehen \([Flugplanbearbeitung](MAPFPEDIT.md#map-flight-plan-editing)\). 
 
-You can also edit the coordinates directly instead of dragging the flight plan position \([Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)\). 
+Siehe [Koordinatenformate](COORDINATES.md) für eine Liste von Formaten, die vom Bearbeitungsdialog erkannt werden.
 
-See [Coordinate Formats](COORDINATES.md) for a list of formats that are recognized by the edit dialog.
+#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Füge Nutzerpunkt hinzu {#add-userpoint}
 
-#### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Add Userpoint {#add-userpoint}
+Fügt einen benutzerdefinierten Wegpunkt zu den Benutzerdaten hinzu. Einige Felder des Benutzerpunkt-Dialogs werden abhängig vom ausgewählten Kartenobjekt automatisch ausgefüllt.
 
-Add a user-defined waypoint to the userdata. Some fields of the userpoint dialog are populated automatically depending on the selected map object.
+Koordinaten werden immer ausgefüllt. Wenn es sich bei dem ausgewählten Objekt um einen Flughafen oder eine Navaid handelt, wird ein Benutzerpunkt vom Typ `Flughafen` bzw. `Wegpunkt` erstellt und die Felder Identität, Region, Name und Höhe werden ausgefüllt.
 
-Coordinates are always filled-in. If the selected object is an airport or navaid, a userpoint of type `Airport` or `Waypoint` respectively is created and the fields Ident, Region, Name and Altitude are filled-in.
+Wenn die ausgewählte Position ein leerer Kartenraum ist, wird an dieser Position ein Benutzerpunkt vom Typ `Bookmark` erstellt. Die Höhe wird ausgefüllt, wenn GLOBE Offline-Höhendaten installiert sind. Siehe [Flugplan-Höhenprofil](OPTIONS.md#cache-elevation).
 
-If the selected position is empty map space, a userpoint of type `Bookmark` is created at this position. Altitude is filled-in if GLOBE offline elevation data is installed. See [Flight Plan Elevation Profile](OPTIONS.md#cache-elevation).
+Weitere Informationen finden Sie unter [Benutzerpunkte hinzufügen](USERPOINT.md#userpoints-dialog-add).
 
-See [Add Userpoints](USERPOINT.md#userpoints-dialog-add) for more information.
 
-#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Edit Userpoint {#edit-userpoint}
+#### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Bearbeite Nutzerpunkt {#edit-userpoint}
 
-Open the edit dialog for a userpoint. Only enabled if the selected object is a userpoint.  See [Edit Userpoints](USERPOINT.md#userpoints-dialog-edit).
+Öffnet den Bearbeitungsdialog für einen Benutzerpunkt. Nur aktiviert, wenn das ausgewählte Objekt ein Benutzerpunkt ist.  Siehe [Benutzerpunkte bearbeiten](USERPOINT.md#userpoints-dialog-edit).
 
-#### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Move Userpoint {#move-userpoint}
+#### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Verschiebe Nutzerpunkt {#move-userpoint}
 
-Move the userpoint to a new position on the map. Only enabled if the selected object is a userpoint.
+Verschiebt den Benutzerpunkt an eine neue Position auf der Karte. Nur aktiviert, wenn das ausgewählte Objekt ein Benutzerpunkt ist.
 
-Left-click to place the userpoint at the new position. Right-click or press the escape key to cancel the operation and return the userpoint to its former position.
+Mit einem Linksklick wird der Benutzerpunkt an die neue Position gesetzt. Klicken Sie mit der rechten Maustaste oder drücken Sie die Escape-Taste, um den Vorgang abzubrechen und um den Benutzerpunkt wieder an seine vorherige Position zu bringen.
+#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Lösche Nutzerpunkt {#delete-userpoint}
 
-#### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Delete Userpoint {#delete-userpoint}
+Entfernt den benutzerdefinierten Wegpunkt nach Bestätigung aus den Benutzerdaten. Nur aktiviert, wenn das ausgewählte Objekt ein Benutzerpunkt ist.
 
-Remove the user-defined waypoint from the userdata after confirmation. Only enabled if the selected object is a userpoint.
+#### ![Show in Search](../images/icons/search.png "Show in Search") Zeige in der Suche {#show-in-search}
 
-#### ![Show in Search](../images/icons/search.png "Show in Search") Show in Search {#show-in-search}
+Zeigt den nächstgelegenen Flughafen, Navaid, Benutzerpunkt, Online-Client oder Online-Center im Suchdialog an. Die aktuellen Suchparameter werden zurückgesetzt.
 
-Show the nearest airport, navaid, userpoint, online client or online center in the search dialog. The current search parameters are reset.
+#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Zentrum für Distanzsuche setzen {#set-center-for-distance-search}
 
-#### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search}
+Setzt das Zentrum der Distanzsuche für die Suchfunktion. Siehe [Distanzsuche](SEARCH.md#distance-search). Das Zentrum der Distanzsuche ist hervorgehoben duch ein  ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") Symbol.
 
-Set the center point for the distance search function. See [Distance search](SEARCH.md#distance-search). The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
+#### ![Set Home](../images/icons/home.png "Set Home") Heimansicht setzen {#set-home}
 
-#### ![Set Home](../images/icons/home.png "Set Home") Set Home {#set-home}
-
-Set the currently visible map view as your home view. The center of the home area is highlighted by a ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") symbol.
+Legt die aktuell sichtbare Kartenansicht als Heimansicht fest. Die Mitte des Home-Bereichs wird hervorgehoben durch ein  ![Home Symbol](../images/icons/homesymbol.png "Home Symbol") Symbol.
 
