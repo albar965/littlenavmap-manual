@@ -1,35 +1,35 @@
-## ![Sun Shading](../images/icons/mapshadow.png "Sun Shading") Sun Shading {#sun-shadow}
+## ![Sun Shading](../images/icons/mapshadow.png "Sun Shading") Sonnenschatten {#sun-shadow}
 
-_Little Navmap_ allows to display the sun shadow on the globe. This works in both projections `Mercator` and `Spherical`.
+_Little Navmap_ ermöglicht es, den Sonnenschatten auf dem Globus anzuzeigen. Dies funktioniert sowohl bei den Projektionen `Mercator` als auch `Sphärisch`.
 
-Enable the shadow in the menu `View` -&gt; [Show Sun Shading](MENUS.md#show-sun-shading).
+Aktivieren Sie den Schatten im Menü `Ansicht` -&gt; [Sonnenschatten anzeigen](MENUS.md#show-sun-shading).
 
-You can change the time source for the sun shading in `View` -&gt; [Sun Shading Time](MENUS.md#show-sun-shading-time ).
+Sie können die Zeitangabe für den Sonneschatten unter `Ansicht` -&gt; [Sonnenschatten Zeit](MENUS.md#show-sun-shading-time ) ändern.
 
-The shadow darkness can be changed in the dialog `Options` on tab `Map Display`, `Sun shading Darkness` at the bottom of the dialog.
+Die Schattendunkelheit kann im Dialog `Einstellungen` auf der Registerkarte `Kartenanzeige`, `Sonnenschattierung verdunkeln` am unteren Rand des Dialogs geändert werden.
 
 ![Sun Shading](../images/sunshadow.jpg)
 
-_**Picture above:** Sun shading on the northern hemisphere._
+_**Bild oben:** Sonneschatten auf der Nordhalbkugel._
 
-### Time Sources {#sun-shadow-time-sources}
+### Zeitquellen {#sun-shadow-time-sources}
 
-You can choose between three time source for the sun shading. Time is not fixed and will advance for all sources or updated from simulator time.
+Für den Sonnenschatten können Sie zwischen drei Zeitquellen wählen. Die Zeit ist nicht festgelegt und wird für alle Quellen weiterlaufen oder von der Simulatorzeit aktualisiert.
 
-* `Simulator`: Uses the time of the connected flight simulator. Falls back to real time if not connected to a simulator. Automatically updates the shadow if the simulator time changes.
-* `Real UTC Time`: Always use real time.
-* `User defined Time`: Allows to use the user defined time as changed by `Set User defined Time` below. 
+* `Simulator`: Verwendet die Zeit des angeschlossenen Flugsimulators. Fällt auf Echtzeit zurück, wenn er nicht mit einem Simulator verbunden ist. Aktualisiert den Schatten automatisch, wenn sich die Zeit im Simulator ändert.
+* `Real UTC Time`: Verwendet immer die Echtzeit.
+* `Benutzerdefinierte Zeit`: Ermöglicht die Verwendung der benutzerdefinierten Zeit, wie sie durch `Benutzerdefinierte Zeit einstellen` unten geändert wurde. 
 
-### Set User defined Time {#sun-shadow-user-defined}
+### Benutzerdefinierte Zeit einstellen {#sun-shadow-user-defined}
 
-The menu `View` -&gt; `Sun Shading Time` -&gt; `Set User defined Time` opens a dialog to set a user defined time in UTC as a source for the sun shading.
+Das Menü `Ansicht` -&gt; `Sonnenschattenzeit` -&gt; `Benutzerdefinierte Zeit einstellen` öffnet einen Dialog, um eine benutzerdefinierte Zeit in UTC als Quelle für den Sonnenschatten einzustellen.
 
-You can move the dialog away from the map window and see the results immediately by clicking the button `Apply`.
+Sie können den Dialog vom Kartenfenster wegbewegen und die Ergebnisse sofort sehen, indem Sie auf die Schaltfläche `Anwenden` klicken.
 
-**Do not forget to click on a date when changing months or years. Otherwise the old date will be used.**
+**Vergessen Sie nicht, beim Wechsel von Monaten oder Jahren auf ein Datum zu klicken. Andernfalls wird das alte Datum verwendet.**
 
-Note that the user defined time is reset to current real time when restarting _Little Navmap_.
+Beachten Sie, dass die benutzerdefinierte Zeit beim Neustart von _Little Navmap_ auf die aktuelle Echtzeit zurückgesetzt wird.
 
 ![Date and Time for Sun Shading](../images/sunshadowtime.jpg)
 
-_**Picture above:** Date and time for sun shading on November 8 at 10:42 pm Zulu Time._
+_**Bild oben:** Datum und Uhrzeit des Sonneschattens am 8. November um 22:42 Uhr Zulu Zeit._

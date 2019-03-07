@@ -1,31 +1,31 @@
-## ![Traffic Pattern](../images/icons/trafficpattern.png "Traffic Pattern") Traffic Pattern {#traffic-pattern}
+## ![Traffic Pattern](../images/icons/trafficpattern.png "Traffic Pattern") Platzrunde {#traffic-pattern}
 
-_Little Navmap_ can display an airport traffic patterns as a guidance on the map.
+_Little Navmap_ kann ein Flughafen-Platzrunde als Orientierungshilfe auf der Karte anzeigen.
 
-Right click on an airport in the map, flight plan table or airport search result table and select [Display Airport Traffic Pattern](MAPDISPLAY.md#show-traffic-pattern).
+Klicken Sie mit der rechten Maustaste auf einen Flughafen in der Karte, Flugplattentabelle oder Flughafen-Suchergebnistabelle und wählen Sie[ Platzrunde anzeigen](MAPDISPLAY.md#show-traffic-pattern).
 
-This will show a dialog where you can select a runway and customize the pattern.
+Es wird ein Dialogfeld angezeigt, in dem Sie eine Start- und Landebahn auswählen und das Profil anpassen können.
 
-The title shows airport name, ICAO airport ident and elevation.
+Der Titel zeigt den Flughafennamen, die ICAO-Flughafenidentität und die Höhe.
 
-* `Runway`: Select the runway here. Shows length and surface type. The label below shows name, length, width, magnetic heading, surface and light status of the currently selected runway.
-* `Turn direction`: Select to choose between left or right turn pattern. This is automatically updated when selecting a runway from FSX or P3D.
-* `Base 45° after threshold`: Calculates the final leg length automatically when checked.
-* `Base leg to runway threshold`: Length of the final leg. Measured from turn to final to the runway threshold.
-* `Downwind to runway`: Parallel distance from downwind leg to runway.
-* `Pattern altitude`: Pattern altitude above airport elevation. This is automatically updated when selecting a runway from FSX or P3D.
-* `Entry and exit indicators`: Shows dashed lines and arrows giving hints for entry and exit points.
-* `Line Color`: Color of the pattern lines and labels.
+* `Runway`: Wählen Sie hier die Start- und Landebahn aus. Zeigt Länge und Oberflächentyp an. Das folgende Etikett zeigt Name, Länge, Breite, Magnetkopf, Oberfläche und Lichtstatus der aktuell ausgewählten Start- und Landebahn.
+* `Richtung`: Wählen Sie diese Option, um zwischen einem Links- oder Rechtsdrehmuster zu wählen. Diese wird bei der Auswahl einer Start- und Landebahn aus dem FSX oder P3D automatisch aktualisiert.
+* `Queranflug 45° zum Runway-Ende`: Berechnet bei Überprüfung automatisch die endgültige Streckenlänge.
+* `Endabschnitt`: Länge der letzten Etappe. Gemessen von der Wende bis zur Endphase bis zur Schwelle der Runway.
+* `Gegenanflug zum Runway`: Paralleler Abstand vom Gegenanflug zur Start- und Landebahn.
+* `Höhe der Platzrunde`: Höhe der Platzrunde über der Flughafenhöhe. Diese wird bei der Auswahl einer Start- und Landebahn aus dem FSX oder P3D automatisch aktualisiert.
+* `Ein- und Ausgabepfeile:`  Zeigt gestrichelte Linien und Pfeile, die Hinweise auf Ein- und Ausstiegspunkte geben.
+* `Linienfarbe`: Farbe der Musterlinien und Beschriftungen.
 
-Traffic patterns can be removed by either selecting `Map` -&gt; `Remove all Ranges, Measurements and Patterns` or by right click on the hotspot \(circle\) at the runway threshold.
+Platzrunden können entfernt werden, indem Sie entweder `Karte` -&gt; `Alle Bereiche, Messungen und Muster entfernen` wählen oder indem Sie mit der rechten Maustaste auf den Hotspot \(Kreis\) an der Startbahnschwelle klicken.
 
-See [Legend - Airport Traffic  Pattern](LEGEND.md#airport-traffic-pattern) for details about the displayed numbers in the pattern.
+Siehe [Legende - Flughafen-Platzrunde](LEGEND.md#airport-traffic-pattern) für Details zu den angezeigten Zahlen in der Vorlage.
 
 ![Traffic Pattern Dialog](../images/pattern_dialog.jpg "Traffic Pattern Dialog")
 
-_**Picture above:** Traffic pattern dialog for _`EDFE`_ runway 08 at 1000 ft above airport elevation._
+_**Bild oben:** Platzrundendialog für _`EDFE`_ Runway 08 in 1000 ft über der Flughafenhöhe._
 
 ![Traffic Pattern](../images/pattern.jpg "Traffic Pattern")
 
-_**Picture above:** Traffic Pattern for the settings in the dialog above. Downwind leg shows pattern altitude above MSL and course and final leg shows runway name and course._
+_**Bild oben:** Einstellungen für die Platzrunde im obigen Dialog. Der Gegenanflug zeigt die Profilhöhe über MSL und die Kurs- und Schlussetappe zeigt den Namen der Runway und den Kurs._
 
