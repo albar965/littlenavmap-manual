@@ -66,12 +66,12 @@ Die Größe der Kreisformen kann in der Konfigurationsdatei geändert werden. Si
 _**Bild oben:** Online-Netzwerkcenter/ATC in der Suchleiste, Karte, Tooltip und Informationsfenster._
 
 
-### Online Network Client Suche {#search-client}
-### Online Network Center Suche {#search-center}
+### Online Clients {#search-client}
+### Online Centers {#search-center}
 
 Die Funktionalität der Suchfilter in diesen beiden Registerkarten und den Ergebnistabellen ist ähnlich wie bei der Flughafen- und Navigationssuche. Siehe [Dockfenster Suche](SEARCH.md) für Informationen über Suchfilter, Schaltflächen und Kontextmenüelemente.
 
-### Online Server Search {#search-server}
+### Online Server {#search-server}
 
 Zeigt alle Online-Server in einer Tabelle an und verfügt über keine Suchfunktion. Über das Kontextmenü können Sie Teile der Ergebnistabelle wie die IP-Adresse kopieren.
 

@@ -1,4 +1,4 @@
-## Erstellen und hinzufügen von Kartenthemen {#creating-or-adding-map-themes}
+## Kartenthemen erstellen {#creating-or-adding-map-themes}
 
 Um eine beliebige Online-Karte einer Offline-Karte zu _Little Navmap_ hinzuzufügen, fügen Sie einfach das Kartenverzeichnis aus einem heruntergeladenen oder selbst erstellten Kartenthema in das Verzeichnis `data\maps\earth` ein.
 

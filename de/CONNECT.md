@@ -68,11 +68,11 @@ _**Bild oben:** _[_Little Navconnect_](https://albar965.github.io/littlenavconne
 
 ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
-_**Bild oben:** Verbindungsdialog  mit den korrekten Einstellungen, um auf den Simulator -PC und Little Navconnect wie oben gezeigt zuzugreifen.
+_**Bild oben:** Verbindungsdialog  mit den korrekten Einstellungen, um auf den Simulator -PC und Little Navconnect wie oben gezeigt zuzugreifen._
 
 Gehen Sie nun nach dem Öffnen des Dialogs wie folgt vor:
 
-4. Wählen Sie `Verbinden mit einem Netz-Flugsimulator`.
+4. Wählen Sie `Connect to a remote flight simulator via Little Navconnect`.
 5. Fügen Sie den Wert für den Hostnamen hinzu. Dies kann entweder der Hostname oder die von _Little Navconnect_ angezeigte IP-Adresse sein.
 6. Überprüfen Sie den Wert für den Port. `51968` ist der Standardwert und muss normalerweise nicht geändert werden.
 7. Klicken Sie auf `Verbinden`. Der Dialog wird geschlossen und _Little Navmap_ versucht im Hintergrund eine Verbindung aufzubauen.

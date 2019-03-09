@@ -1,35 +1,34 @@
-## Flight Plan Online Export {#flight-plan-online-export}
+## Flugplan Online Export {#flight-plan-online-export}
 
-This dialog appears when exporting a flight plan for the online network clients using the export menu items
-[FPL \(IvAp or X-IvAp\)](MENU.md#flight-plan-formats-ivap) or [VFP \(vPilot\)](https://www.vatsim.net/pilots/software).
+Dieser Dialog erscheint beim Export eines Flugplans für die Online-Netzwerk-Clients über die Exportmenüpunkte
+[FPL \(IvAp oder X-IvAp\)](MENU.md#flight-plan-formats-ivap) oder [VFP \(vPilot\)](https://www.vatsim.net/pilots/software).
 
-Some input fields might hidden depending on format.
+Einige Eingabefelder können je nach Format ausgeblendet sein.
 
-Fields that contain information which cannot be extracted from the current flight plan are saved between
-sessions \(e.g. `Pilot in command` or `Equipment`).
+Felder, die Informationen enthalten, die nicht aus dem aktuellen Flugplan extrahiert werden können, werden zwischen den Sitzungen gespeichert (z.B. `Pilot in Command` oder `Equipment`).
 
-Other input fields in this dialog are extracted from the current flight plan. The fields can be adjusted manually and are not saved between sessions.
-These are:
+Andere Eingabefelder in diesem Dialog werden aus dem aktuellen Flugplan extrahiert. Die Felder können manuell angepasst werden und werden nicht zwischen den Sitzungen gespeichert.
+Das sind:
 
-* `Flight Rules`: From the current flight plan. `IFR` or `VFR` for VFP and `I` or `V` for FPL. Change manually if needed.
-* `Aircraft type`: From the current aircraft performance \([Aircraft Performance](AIRCRAFTPERF.md)\).
-* `Departure`: First waypoint in flight plan. \([Flight Plan - Dock Window](FLIGHTPLAN.md)\).
-* `Destination`: Last waypoint in flight plan.
-* `Route`: Generated from the flight plan waypoints, airways, SID and STAR. \([Flight Plan Route Description](ROUTEDESCR.md)\).
-* `Cruise altitude`: Taken from flight plan. Cruise altitude in feet.
-* `True Airspeed`: From the current aircraft performance cruise speed.
-* `Departure time`: Uses current UTC time as default. Adjust as needed.
-* `Actual`: Actual departure time. Uses same default time as above. Adjust as needed.
-* `Enroute`: Traveling time as calculated by flight plan and current aircraft performance.
-* `Endurance`: Uses same default as above. Adjust as needed.
+* `Flugregel`: Aus dem aktuellen Flugplan. `IFR` oder `VFR` für VFP und `I` oder `V` für FPL. Bei Bedarf manuell ändern.
+* `Flugzeugtyp`: Aus der aktuellen Flugzeugleistung \([Flugzeugleistung](AIRCRAFTPERF.md)\).
+* `Abflug`: Erster Wegpunkt im Flugplan \([Dockfenster Flugplan](FLIGHTPLAN.md)\).
+* `Ziel`: Letzter Wegpunkt im Flugplan
+* `Route`: Erzeugt aus den Flugplanwegpunkten, Airways, SID und STAR. \([Flugplan Routenbeschreibung](ROUTEDESCR.md)\).
+* `Reiseflughöhe`: Aus dem Flugplan übernommen. Reiseflughöhe in Fuß.
+* `Wahre Luftgeschwindigkeit`: Von der aktuellen Reisegeschwindigkeit der Flugzeugleistung.
+* `Abflugzeit`: Verwendet die aktuelle UTC-Zeit als Standard. Bei Bedarf anpassen.
+* `Tatsächliche`: Aktuelle Abflugzeit. Verwendet die gleiche Standardzeit wie oben. Bei Bedarf anpassen.
+* `Unterwegs`: Reisezeit, berechnet aus dem Flugplan und der aktuellen Flugzeugleistung.
+* `Dauer`: Verwendet die gleiche Standardeinstellung wie oben. Bei Bedarf anpassen.
 
-### Buttons
+### Schaltflächen
 
-* `OK`: Saves relevant fields for the next session and opens the 'Save as' dialog.
-* `Cancel`: Discards all changes and closes dialog.
-* `Reset`: Undoes all changes that were made since opening the dialog.
-* `Help`: Shows this online help page.
+* `OK`: Speichert relevante Felder für die nächste Sitzung und öffnet das Dialogfenster `Speichern als`.
+* `Abbrechen`: Verwirft alle Änderungen und schließt den Dialog.
+* `Zurücksetzen`: Macht alle Änderungen rückgängig, die seit dem Öffnen des Dialogs vorgenommen wurden.
+* `Hilfe`: Zeigt diese Onlinehilfeseite an.
 
 ![Flight Plan Online Export Dialog](../images/routeexport.jpg "Flight Plan Online Export Dialog")
 
-_**Picture above:** Flight Plan Online Export Dialog for VATSIM vPilot._
+_**Bild oben:** Flugplan Online Export Dialog für VATSIM vPilot._

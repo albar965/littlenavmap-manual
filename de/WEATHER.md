@@ -1,4 +1,4 @@
-## Weather {#weather}
+## Wetter {#weather}
 
 _Little Navmap_ kann Wetter als METARs und dekodiertes Wetter im Informationsfenster und Tooltips sowie Wettersymbole auf der Karte anzeigen.
 

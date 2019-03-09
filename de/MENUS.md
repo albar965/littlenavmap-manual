@@ -31,13 +31,13 @@ Es werden Einzelflugpläne und alle zulässigen Formate zum Laden von \(`FMS`, `
 
 Fügt Abflug, Ziel und alle Wegpunkte dem aktuellen Flugplan hinzu.
 
-Mit `Flugplan anhängen` können Sie komplette Flugpläne oder Flugplan-Teile in einen neuen Plan laden oder zusammenführen. Alle Wegpunkte werden am Ende des aktuellen Flugplans hinzugefügt. Sie können danach mit den  Auswahlfeldern `Lösche ausgewählten Abschnitt` und `Ausgewählte Flugplanabschntte nach oben/unten verschieben` die Waypoints und Flugplätze wunschgemäß anordnen. Siehe auch [Kextmenue im Flugplanfenster](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
+Mit `Flugplan anhängen` können Sie komplette Flugpläne oder Flugplan-Teile in einen neuen Plan laden oder zusammenführen. Alle Wegpunkte werden am Ende des aktuellen Flugplans hinzugefügt. Sie können danach mit den  Auswahlfeldern `Lösche ausgewählten Abschnitt` und `Ausgewählte Flugplanabschntte nach oben/unten verschieben` die Waypoints und Flugplätze wunschgemäß anordnen. Siehe auch [Kontextmenue im Flugplanfenster](FLIGHTPLAN.md#flight-plan-table-view-context-menu).
 
 Alle Ankunftsprozeduren werden entfernt, wenn eine Flugplans angehängt wird.
 
 Die angehängten Strecken werden nach dem Laden des Flugplans ausgewählt.
 
-#### Neuester Flugplan {#recent-flight-plan}
+#### Aktueller Flugplan {#recent-flight-plan}
 
 Zeigt alle zuletzt geladenen Flugpläne für den schnellen Zugriff an. Sie können die Liste löschen, indem Sie `Menü löschen` wählen.
 
@@ -56,7 +56,7 @@ _Little Navmap_ ermöglicht die Erstellung von Flugplänen, die als Flugplanauss
 
 Ein Warndialog wird auch angezeigt, wenn der Abflughafen über Parkpositionen verfügt, aber im Flugplan keine zugeordnet ist..
 
-Prozeduren werden als Anmerkung in der Flugplandatei gespeichert, wenn der Flugplan welche enthält. Dies stellt für die Simulatoren und die meisten anderen Programme kein Problem dar. Benutze [Export clean Flight Plan](MENUS.md#export-clean-flight-plan), wenn ein Programm Probleme beim Lesen der PLN-Dateien hat, die von _Little Navmap_ gespeichert wurden.
+Prozeduren werden als Anmerkung in der Flugplandatei gespeichert, wenn der Flugplan welche enthält. Dies stellt für die Simulatoren und die meisten anderen Programme kein Problem dar. Benutze [Flugplan als PLN speichern](MENUS.md#export-clean-flight-plan), wenn ein Programm Probleme beim Lesen der PLN-Dateien hat, die von _Little Navmap_ gespeichert wurden.
 
 Beachten Sie, dass die Wegpunkte einer Prozedur nicht mit dem Flugplan gespeichert werden. Dies wird vom FSX oder P3D nicht unterstützt. Verwenden Sie das GPS, FMC oder andere Möglichkeiten, um ein Verfahren in Ihrem Flugzeug auszuwählen..
 
@@ -70,7 +70,7 @@ Speichert den Flugplan im neuen X-Plane FMS 11 Format. **Dieses Format kann nur 
 
 Beim Speichern wird ein Warndialog mit der obigen Warnung angezeigt.
 
-Für weitere Informationen zu Einschränkungen siehe [Flight Plan Formats](FLIGHTPLANFMT.md).
+Für weitere Informationen zu Einschränkungen siehe [Flugplanformate](FLIGHTPLANFMT.md).
 
 Diese Funktion ändert den aktuellen Dateityp und den Namen. Dies bedeutet, dass alle weiteren Sicherungsvorgänge in der neuen FMS-Datei gespeichert werden und die Datei beim nächsten Start erneut geladen wird.
 
@@ -80,7 +80,7 @@ Speichern Sie FMS-Dateien im `Output/FMS plans` Verzeichnis von X-Plane, wenn Si
 
 Exportiert den aktuellen Flugplan als FLP-Datei, die von X-Plane FMS, Aerosoft Airbus und anderen Zusatzflugzeugen verwendet werden kann. Dieses Format ist begrenzt, sodass ein Dialogfeld angezeigt wird, wenn im aktuellen Flugplan nicht unterstützte Funktionen erkannt werden.
 
-Für weitere Informationen zu Einschränkungen siehe [Formate Flugplan](FLIGHTPLANFMT.md).
+Für weitere Informationen zu Einschränkungen siehe [Flugplanformate](FLIGHTPLANFMT.md).
 
 Diese Funktion ändert den aktuellen Dateityp und den Namen. Dies bedeutet, dass alle weiteren Sicherungsvorgänge in der neuen FLP-Datei gespeichert werden und die Datei beim nächsten Start erneut geladen wird.
 
@@ -92,13 +92,13 @@ Speichert einen Flugplan ohne Prozedur- oder Geschwindigkeitsangaben, wenn Progr
 
 Wie bei jeder anderen Exportfunktion ändert dies nicht den aktuellen Dateinamen und -typ. Weitere Sicherungen verwenden denselben Dateinamen und dasselbe Format wie zuvor.
 
-Siehe auch [Flight Plan Formats](FLIGHTPLANFMT.md).
+Siehe auch [Flugplanformate](FLIGHTPLANFMT.md).
 
 #### ![Export Flight Plan as X-Plane FMS 3](../images/icons/saveasfms.png "Export Flight Plan as X-Plane FMS 3") Flugplan als X-Plane FMS 3 exportieren {#export-flight-plan-as-fms3}
 
 Speichert den Flugplan im älteren X-Plane FMS 3-Format, das begrenzt ist, aber von X-Plane 10 und X-Plane 11.05 geladen werden kann. Ein Warndialogfeld wird angezeigt, wenn im aktuellen Flugplan nicht unterstützte Funktionen erkannt werden.
 
-Für weitere Informationen zu Einschränkungen siehe [Flight Plan Formats](FLIGHTPLANFMT.md) .
+Für weitere Informationen zu Einschränkungen siehe [Flugplanformate](FLIGHTPLANFMT.md) .
 
 Diese Exportfunktion ändert den aktuellen Dateinamen und -typ nicht. Weitere Sicherungen verwenden denselben Dateinamen und dasselbe Format wie zuvor.
 
@@ -106,7 +106,7 @@ Speichern Sie FMS-Dateien im `Output/FMS plans` Verzeichnis von X-Plane, wenn Si
 
 #### Flugplan in andere Formate exportieren (Sub-Menu) {#export-submenu}
 
-Für detailliertere Informationen zu den verfügbaren Exportformaten siehe [Flight Plan Formats](FLIGHTPLANFMT.md).
+Für detailliertere Informationen zu den verfügbaren Exportformaten siehe [Flugplanformate](FLIGHTPLANFMT.md).
 
 Exportfunktionen ändern nicht den aktuellen Dateinamen und -typ. Weitere Sicherungen verwenden denselben Dateinamen und dasselbe Format wie zuvor.
 
@@ -116,13 +116,13 @@ Exportiert den Flugplan im GFP-Format, das von _Flight1 GTN 650/750_  verwendet 
 
 Prozeduren sind nicht in der exportierten Datei enthalten.
 
-Weitere Informationen zu diesem Exportformat und zum Umgang mit gesperrten Wegpunkten sieh [Flight Plan Formats](FLIGHTPLANFMT.md#flight-plan-formats-gfp).
+Weitere Informationen zu diesem Exportformat und zum Umgang mit gesperrten Wegpunkten siehe [Flugplanformate](FLIGHTPLANFMT.md#flight-plan-formats-gfp).
 
 ##### Flugplan als FPL für den Reality XP GTN speichern {#save-flight-plan-as-rxpgtn}
 
 Speichern Sie den Flugplan als GFP-Datei, die von  _Reality XP GTN 750/650 Touch_ verwendet werden kann. Dieses Format ermöglicht das Speichern von Prozeduren und Airways.
 
-Informationen zu Pfaden und anderen Hinweisen siehe auch [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
+Informationen zu Pfaden und anderen Hinweisen siehe auch [Hinweise zu den Garmin-Formaten GFP und FPL](FLIGHTPLANFMT.md#garmin-notes).
 
 ##### Flugplan als FLP für den Reality XP GNS speichern {#save-flight-plan-as-rxpgns}
 
@@ -134,7 +134,7 @@ Das Standardverzeichnis zum Speichern der Flugpläne für die GNS-Einheiten laut
 `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
 Das Verzeichnis wird automatisch von _Little Navmap_ beim ersten Export erstellt, wenn es noch nicht existiert.
 
-Siehe auch [Notes about the Garmin Formats GFP and FPL](FLIGHTPLANFMT.md#garmin-notes).
+Siehe auch [Hinweise zu den Garmin-Formaten GFP und FPL](FLIGHTPLANFMT.md#garmin-notes).
 
 ##### Flugplan als  PMDG RTE exportieren {#export-flight-plan-as-rte}
 
@@ -208,7 +208,7 @@ Der Flugplan wird als Route exportiert und der geflogene Flugzeugpfad wird als T
 
 Die Route hat für alle Wegpunkte eine Start- und Zielhöhe sowie eine Reiseflughöhe. Wegpunkte aller Verfahren sind in der exportierten Datei enthalten. Beachten Sie, dass die Wegpunkte nicht alle Teile einer Prozedur wie Holds oder Prozedurwechsel reproduzieren können.
 
-**Vergessen Sie nicht, vor dem Flug den Flugzeugpfad zu löschen \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\), um alte Spursegmente in der exportierten GPX-Datei zu vermeiden. Oder deaktivieren Sie das Neuladen des Pfads im Optionsdialog auf der Seite **`Startup`**.**
+**Vergessen Sie nicht, vor dem Flug den Flugzeugpfad zu löschen \([Flugpfad des Simulatorflugzeuges löschen](MENUS.md#delete-aircraft-trail)\), um alte Spursegmente in der exportierten GPX-Datei zu vermeiden. Oder deaktivieren Sie das Neuladen des Pfads im Optionsdialog auf der Seite **`Startup`**.**
 
 
 ##### Flugplan in SkyVector {#export-flight-plan-as-skyvector} anzeigen
@@ -257,11 +257,11 @@ Speichert die aktuelle Kartenansicht als Bilddatei. Zulässige Formate sind JPEG
 
 ### ![Print Map](../images/icons/printmap.png "Print Map") Karte drucken {#print-map}
 
-Ermöglicht das Drucken der aktuellen Kartenansicht. Für weitere Informationen siehe [Printing the Map](PRINT.md#printing-the-map).
+Ermöglicht das Drucken der aktuellen Kartenansicht. Für weitere Informationen siehe [Karte drucken](PRINT.md#printing-the-map).
 
 ### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Flugplan drucken {#print-flight-plan}
 
-Öffnet ein Druckdialogfeld, in dem Sie flugplanbezogene Informationen zum Drucken auswählen können. Für weitere Informationen siehe [Map Flight Plan Printing](PRINT.md#printing-the-flight-plan).
+Öffnet ein Druckdialogfeld, in dem Sie flugplanbezogene Informationen zum Drucken auswählen können. Für weitere Informationen siehe [Flugplan drucken](PRINT.md#printing-the-flight-plan).
 
 ### ![Quit](../images/icons/application-exit.png "Quit") Beenden {#file-quit}
 
@@ -275,7 +275,7 @@ Ermöglicht das Rückgängigmachen und Wiederholen aller Flugplanänderungen.
 
 #### ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure") Startposition für den Abflug wählen {#select-a-start-position-for-departure}
 
-Am Startflughafen kann als Startposition ein Parkplatz \(Gate, Rampe oder Tankplatz\), Landebahn oder Hubschrauberlandeplatz ausgewählt werden. Eine Parkposition kann auch im Kartenkontextmenüelement  [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) wenn Sie mit der rechten Maustaste auf eine Parkposition klicken, ausgewählt werden. Wenn keine Position ausgewählt ist, wird das längste primäre Start- und Landebahnende automatisch als Start ausgewählt.
+Am Startflughafen kann als Startposition ein Parkplatz \(Gate, Rampe oder Tankplatz\), Landebahn oder Hubschrauberlandeplatz ausgewählt werden. Eine Parkposition kann auch im Kartenkontextmenüelement  [Als Startflugplatz setzen](MAPDISPLAY.md#set-as-flight-plan-departure) wenn Sie mit der rechten Maustaste auf eine Parkposition klicken, ausgewählt werden. Wenn keine Position ausgewählt ist, wird das längste primäre Start- und Landebahnende automatisch als Start ausgewählt.
 
 ![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
@@ -283,16 +283,16 @@ _**Bild oben:** Auswahldialog für Startposition EDDN._
 
 #### ![Edit Flight Plan on Map](../images/icons/routeedit.png "Edit Flight Plan on Map") Flugplan auf der Karte bearbeiten {#edit-flight-plan-on-map}
 
-Schaltet den Flugplan-Drag-and-Drop-Bearbeitungsmodus auf der Karte um. Siehe auch [Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing).
+Schaltet den Flugplan-Drag-and-Drop-Bearbeitungsmodus auf der Karte um. Siehe auch [Flugplan bearbeiten](MAPFPEDIT.md#map-flight-plan-editing).
 
-#### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") Neuer Flugplan aus der Routenbeschreibung {#new-flight-plan-from-description}
+#### ![New Flight Plan from Route Description](../images/icons/newroutefromstring.png "New Flight Plan from Route Description") Neuer Flugplan aus Routenbeschreibung {#new-flight-plan-from-description}
 
 Öffnet einen Dialog mit der Routenbeschreibung des aktuellen Flugplans, in dem auch der aktuelle Flugplan geändert oder ein neuer eingegeben werden kann.
-[Flight Plan from Route Description](ROUTEDESCR.md) gibt weitere Informationen zu diesem Thema.
+[Neuer Flugplan aus Routenbeschreibung](ROUTEDESCR.md) gibt weitere Informationen zu diesem Thema.
 
-#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Flugplan in die Zwischenablage kopieren {#flight-plan-route-clipboard}
+#### ![Copy Flight Plan Route to Clipboard](../images/icons/routestring.png "Copy Flight Plan Route to Clipboard") Routenbeschreibung des Flugplans in die Zwischenablage kopieren {#flight-plan-route-clipboard}
 
-Kopiert die Routenbeschreibung des aktuellen Flugplans mit den Einstellungen von [Flight Plan from Route Description](ROUTEDESCR.md#flight-plan-from-route-description) in die Zwischenablage.
+Kopiert die Routenbeschreibung des aktuellen Flugplans mit den Einstellungen von [Routenbeschreibung des Flugplans in die Zwischenablage kopieren](ROUTEDESCR.md#flight-plan-from-route-description) in die Zwischenablage.
 
 #### ![Calculate Direct](../images/icons/routedirect.png "Calculate Direct") Direkten Weg berechnen {#calculate-direct}
 
@@ -368,9 +368,9 @@ Entfernt alle Entfernungsringe, navaidischen Entfernungsringe, Messlinien und Ve
 
 #### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Flugzeug zentrieren {#center-aircraft}
 
-Zoomt auf das Benutzerflugzeug, wenn es direkt mit einem Flugsimulator oder über eine Remote-Verbindung via [Little Navconnect](https://albar965.github.io/littlenavconnect.html)verbunden ist und hält das Flugzeug auf der Karte zentriert.
+Zoomt auf das Benutzerflugzeug, wenn es direkt mit einem Flugsimulator oder über eine Remote-Verbindung via [Little Navconnect](https://albar965.github.io/littlenavconnect.html) verbunden ist und hält das Flugzeug auf der Karte zentriert.
 
-Die Zentrierung des Flugzeugs kann im `Einstellung` Dialog im `Simulator Aircraft` Tab geändert werden.
+Die Zentrierung des Flugzeugs kann im `Einstellung` Dialog im `Simulatorflugzeug` -Tab geändert werden.
 
 #### ![Delete Aircraft Trail](../images/icons/aircrafttraildelete.png "Delete Aircraft Trail") Flugzeugpfad löschen {#delete-aircraft-trail}
 
@@ -499,7 +499,7 @@ Ein- oder Ausblenden von Center, Tower, Modus C und anderen Lufträumen.
 
 Ermöglicht die Filterung der Luftraumanzeige nach Höhe. Entweder unter oder über 10.000 Fuß oder 18.000 Fuß oder nur Lufträume, die sich mit der Flugplanhöhe kreuzen.
 
-#### Userpoints
+#### Nutzerpunkte
 
 Ermöglicht das Ein- und Ausblenden nach Typ von benutzerdefinierten Wegpunkte.
 

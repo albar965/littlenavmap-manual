@@ -1,4 +1,4 @@
-## Edit Flight Plan Position {#edit-flightplan-position}
+## Flugplanposition bearbeiten {#edit-flightplan-position}
 
 In diesem Dialog können Sie eine benutzerdefinierte Flugplanposition bearbeiten, die Sie über ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") [Position zum Flugplan hinzufügen](MAPDISPLAY.md#add-position-to-flight-plan) oder ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") [Position an den Flugplan anhängen](MAPDISPLAY.md#append-position-to-flight-plan) hinzugefügt haben.
 

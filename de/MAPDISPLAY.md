@@ -4,7 +4,7 @@ Für Details zu den verschiedenen Symbolen, die auf der Karte angezeigt werden, 
 
 ### Bewegen {#moving}
 
-Bewegen Sie die Karte per Mausklick und Drag&Drop und das Mausrad zum Vergrößern oder Verkleinern. Verwenden Sie `Shift+Wheel`, um in kleinen Schritten zu zoomen. Sie können auch die Overlay-Buttons auf der rechten Seite der Karte verwenden.
+Bewegen Sie die Karte per Mausklick und Drag&Drop und das Mausrad zum Vergrößern oder Verkleinern. Verwenden Sie `Shift+Mausrad`, um in kleinen Schritten zu zoomen. Sie können auch die Overlay-Buttons auf der rechten Seite der Karte verwenden.
 
 Alternativ können Sie sich auch mit der Tastatur durch die Karte bewegen:
 
@@ -186,7 +186,7 @@ Zeigt einen Ring um das angeklickte Radio navaid \(VOR oder NDB\), der die Reich
 
 #### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Entfernungsringe entfernen {#remove-range-ring}
 
-Remove the selected rings from the map. This menu item is active if you right-click on the center point of a range ring \(small circle\).
+Entfernt die ausgewählten Ringe aus der Karte. Dieser Menüpunkt ist aktiv, wenn Sie mit der rechten Maustaste auf den Mittelpunkt eines Entfernungsrings \(kleiner Kreis\) klicken.
 
 #### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Entferne alle Entfernungsringe und Distanzmessungen. {#remove-all-range-rings-and-distance-measurements}
 
@@ -198,7 +198,7 @@ Dies ist aktiv, wenn sich der Klick auf einem Flughafen, einer Flughafen-Parkpla
 
 Die standardmäßige Startbahn wird als Startposition verwendet, wenn das angeklickte Objekt ein Flughafen ist. Die Flughafen- und Parkposition ersetzt sowohl die aktuelle Abflug- als auch die Startposition, wenn eine Parkposition in einem Flughafendiagramm angeklickt wird.
 
-#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Als Zielflugplatzs setzen {#set-as-flight-plan-destination}
+#### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Als Zielflugplatz setzen {#set-as-flight-plan-destination}
 
 Dieser Menüpunkt ist aktiv, wenn sich der Klick auf einem Flughafen befindet. Er ersetzt entweder das Flugplanziel oder fügt den Flughafen hinzu, wenn der Flugplan leer ist.
 

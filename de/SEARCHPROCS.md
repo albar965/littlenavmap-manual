@@ -2,12 +2,12 @@
 
 Die Registerkarte `Prozeduren` ermöglicht die Vorschau und das Hinzufügen von An- und Abflugverfahren zum Flugplan. Die Verfahren eines ausgewählten Flughafens sind in einem Baum angeordnet, der die Abhängigkeiten zwischen Anflügen und Transitionen anzeigt.
 
-Siehe [Procedures](APPROACHES.md) für allgemeine Informationen über SID, STAR, Ansätze und Übergänge.
+Siehe [Prozeduren](APPROACHES.md) für allgemeine Informationen über SID, STAR, Ansätze und Übergänge.
 
 
 Beachten Sie, dass die SID- und STAR-Namen im FSX und P3D aufgrund einer Einschränkung des BGL-Dateiformats auf 5 Zeichen begrenzt sind. Daher werden die Prozedurnamen leicht modifiziert. Dies gilt jedoch nicht für Verfahren aus einer Navigraph- oder X-Plane-Szenerie-Datenbank.
 
-**Siehe für weitere Details Kapitel **[**Procedures**](APPROACHES.md#delete-selected-legs)** in diesem Handbuch.**
+**Siehe für weitere Details Kapitel **[**Prozeduren**](APPROACHES.md#delete-selected-legs)** in diesem Handbuch.**
 
 Prozedurenstrecken werden angezeigt, wenn ein Prozedurenknoten im Baum aufgeklappt wird. Die Verfahren können nach Start- und Landebahn und Typ gefiltert werden.
 
@@ -103,11 +103,11 @@ Wenn der Flugplan leer ist, wird auch der Abflug- oder Zielflughafen in den Flug
 
 Zeigt detaillierte Informationen für den Flughafen im Dockfenster `Information` an.
 
-Weitere Informationen finden Sie im Fenster [Information Dock Window](INFO.md#information-dock-window).
+Weitere Informationen finden Sie im Fenster [Dockfenster Information](INFO.md#information-dock-window).
 
 #### ![Show Airport on Map](../images/icons/showonmap.png "Show Airport on Map") Flughafen auf der Karte anzeigen {#show-on-map}
 
-Zeigt den Flughafen auf der Karte an. Der Zoomabstand kann im Dialog `Optionen` auf der Registerkarte `Karte` geändert werden.
+Zeigt den Flughafen auf der Karte an. Der Zoomabstand kann im Dialog `Einstellungen` auf der Registerkarte `Karte` geändert werden.
 
 #### ![Show Airport in Search](../images/icons/search.png "Show Airport in Search") Flughafen in der Suche anzeigen {#show-in-search}
 

@@ -1,4 +1,4 @@
-## ![Nach Updates suchen](.../images/icons/revert.png "Nach Updates suchen") Nach Updates suchen {#checking-for-updates}
+## ![Checking for Updates](../images/icons/revert.png "Checking for Updates") Nach Updates suchen {#checking-for-updates}
 
 _Little Navmap_ überprüft automatisch die [Homepage](https://albar965.github.io/) auf verfügbare Updates beim Start. Frequenz- und Update-Kanäle sind konfigurierbar. Siehe unten für Konfigurationsoptionen.
 

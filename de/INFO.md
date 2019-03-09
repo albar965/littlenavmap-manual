@@ -1,4 +1,4 @@
-## ![Information](../images/icons/infodock.png "Information") Dockingfenster Information {#information-dock-window}
+## ![Information](../images/icons/infodock.png "Information") Dockfenster Information {#information-dock-window}
 
 Dieses Dock-Fenster enthält auf mehreren Registerkarten Textinformationen über Flugplätze sowie Informationen zu einer oder mehreren Navigationshilfen, Airways sowie eine zusätzliche Registerkarte mit Informationen zum Luftraum.
 
@@ -26,7 +26,7 @@ _**Bild oben:** Übersicht Flughafeninformationen. Zusätzliche Registerkarten z
 
 _**Bild oben:** Informationen über Navigationshilfen. Zwei Navigationshilfen waren beim Klicken nahe am Cursor._
 
-## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Dockingfenster Simulatorflugzeug {#simulator-aircraft-dock-window}
+## ![Simulator Aircraft](../images/icons/aircraftdock.png "Simulator Aircraft") Dockfenster Simulatorflugzeug {#simulator-aircraft-dock-window}
 
 Dieses Dock-Fenster zeigt Informationen über das Benutzerflugzeug und in mehreren Registerkarten Informationen über AI- oder Multiplayer-Flugzeuge. Um diese Funktion zu aktivieren muss _Little Navmap_ mit dem Simulator verbunden sein.
 Für weitere Informationen zu diesem Thema siehe [Verbinden mit dem Flugsimulator](CONNECT.md#connecting-to-a-flight-simulator) .
@@ -59,7 +59,7 @@ Beachten Sie, dass Informationen zu KI-Flugzeugen von X-Plane begrenzt sind. Nur
 
 _**Bild oben:** Informationen über ein AI-Flugzeug._
 
-## ![Legend](../images/icons/legenddock.png "Legend") Dockingfenster Legende  {#legend-dock-window}
+## ![Legend](../images/icons/legenddock.png "Legend") Dockfenster Legende  {#legend-dock-window}
 
 Enthält zwei Registerkarten: Eine Registerkarte  `Navigationskarte` erklärt die verschiedenen Flughafen- und Navigationshilfensymbole und eine Registerkarte `Karte`, die die allgemeine Legende für die Basiskarte wie zum Beispiel  _OpenStreetMap_ zeigt.
 

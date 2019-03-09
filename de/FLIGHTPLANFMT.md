@@ -7,13 +7,13 @@ Das Programm verwendet anstelle von nur einem verschiedene "Speichern unter..." 
 Beachten Sie den Unterschied zwischen `Flugplan speichern unter...` und `Flugplan exportieren unter...`: `Exportieren` ändert den aktuellen Dateinamen nicht, während `Speichern unter...` dies tut.
 
 
-### Feature Table {#flight-plan-formats-feature}
+### Funktionsübersicht {#flight-plan-formats-feature}
 
-The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(X = supported, 0 = not supported\):
+Die folgende Tabelle zeigt die Möglichkeiten von _Little Navmap_ und die unterstützten Flugplanformate \(X = unterstützt, 0 = nicht unterstützt\):
 
 | Format                        | Lesen | Schreiben | Airw. | VFR/<br/>IFR| Nutzer<br/>Wpt.<br/>Namen| Abflug<br/>Parking| Cruise<br/>Alt. | Grund<br/>speed  | Proz. |
 | ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ----  |
-| FSX PLN<br/>annotated         | X    | X     | X     | X           | X                      | X               | X               | X                 | X     |
+| FSX PLN<br/>kommentiert         | X    | X     | X     | X           | X                      | X               | X               | X                 | X     |
 | FSX PLN                       | X    | X     | X     | X           | X                      | X               | X               | 0                 | 0     |
 | FS9 PLN<br/>clean             | X    | 0     | X     | X           | X                      | X               | X               | 0                 | 0     |
 | FSC PLN                       | X    | 0     | X     | 0           | X                      | 0               | 0               | 0                 | 0     |

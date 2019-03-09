@@ -30,20 +30,20 @@ Die SID- und STAR-Verfahren erfordern ein Update der Navdata, mit Ausnahme von X
 
 _**Bild oben:** Eine erfolgreich gelesene Routenbeschreibung mit einigen Warnungen über ignorierte Elemente. Der Wegpunkt _`LLL`_ konnte nicht gefunden werden. Geschwindigkeit, Höhe, SID und STAR wurden erkannt. Die Grundgeschwindigkeit von 433 Knoten wird basierend auf der gegebenen Machzahl 0,74 und den Bedingungen der Standardatmosphäre berechnet._
 
-### Buttons {#buttons}
+### Schaltflächen {#buttons}
 
-* `To Clipboard`: Kopiert die aktuelle Beschreibung als einfachen Text in die Zwischenablage.
-* `From Clipboard`: Fügt Text aus der Zwischenablage in das Eingabefeld ein. Der eingefügte Text wird in Großbuchstaben umgewandelt und alle ungültigen Zeichen werden aus dem Text entfernt.
-* `Update from Flight Plan`: Erstellt den Routenstrang aus dem aktuellen Flugplan erneut. Verwenden Sie dies, nachdem Sie die Einstellungen mit der Dropdown-Menü-Taste geändert haben.
-* `Read Route Description`: Liest die Routenbeschreibung und zeigt in der unteren Hälfte des Dialogs alle Meldungen, Warnungen und Fehler an. Der aktuelle Flugplan ist von dieser Aktion nicht betroffen.
+* `In die Zwischenablage kopieren`: Kopiert die aktuelle Beschreibung als einfachen Text in die Zwischenablage.
+* `Aus Zwischenablage`: Fügt Text aus der Zwischenablage in das Eingabefeld ein. Der eingefügte Text wird in Großbuchstaben umgewandelt und alle ungültigen Zeichen werden aus dem Text entfernt.
+* `Aktualisiere vom Flugplan`: Erstellt den Routenstrang aus dem aktuellen Flugplan erneut. Verwenden Sie dies, nachdem Sie die Einstellungen mit der Dropdown-Menü-Taste geändert haben.
+* `Lese Routenbeschreibung`: Liest die Routenbeschreibung und zeigt in der unteren Hälfte des Dialogs alle Meldungen, Warnungen und Fehler an. Der aktuelle Flugplan ist von dieser Aktion nicht betroffen.
 * `IFR` / `VFR`: Definiert die Art des generierten Flugplans und die automatisch ermittelte Reiseflughöhe.
 * **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"):
-  * `Add departure and destination airport`:  Beachten Sie, dass das Deaktivieren dieser Option zu einem Routen-String führt, der nicht in einen Flugplan zurückgelesen werden kann.
-  * `Add DCT (direct) instructions`: Fügt `DCT` für alle direkten Wegpunktverbindungen im Flugplan hinzu.
-  * `Add cruise speed and altitude instruction`: Fügt die Reiseflughöhe aus dem Flugplan und die Bodengeschwindigkeit, wie im Dockfenster des Flugplans eingestellt,  hinzu.
-  * `Add SID and STAR`: Fügt SID- und STAR-Namen hinzu, falls diese für Abflug oder Ankunft verwendet werden.
-  * `Add generic SID and STAR`: Fügt die allgemeinen Schlüsselwörter `SID` und `STAR` hinzu, wenn keine echte SID und/oder STAR ausgewählt wurden.
-  * `Add Waypoints instead of Airways`: Fügt keine Luftstraßennamen ein, sondern verwendet nur Wegpunkte.
+  * `Abflug- und Zielflugplatz inzufügen`:  Beachten Sie, dass das Deaktivieren dieser Option zu einem Routen-String führt, der nicht in einen Flugplan zurückgelesen werden kann.
+  * `DCT (Direkt) Instruktionen hinzufügen`: Fügt `DCT` für alle direkten Wegpunktverbindungen im Flugplan hinzu.
+  * `Fluggeschwindigkeits- und Höhenanweisungen für Reiseflug hinzufügen`: Fügt die Reiseflughöhe aus dem Flugplan und die Bodengeschwindigkeit, wie im Dockfenster des Flugplans eingestellt,  hinzu.
+  * `SID und STAR hinzufügen`: Fügt SID- und STAR-Namen hinzu, falls diese für Abflug oder Ankunft verwendet werden.
+  * `Generische SID und STAR hinzufügen`: Fügt die allgemeinen Schlüsselwörter `SID` und `STAR` hinzu, wenn keine echte SID und/oder STAR ausgewählt wurden.
+  * `Wegpunkte statt Luftstraßen hinzufügen`: Fügt keine Luftstraßennamen ein, sondern verwendet nur Wegpunkte.
 * `Flugplan erstellen`: Schließt den Dialog und erstellt einen neuen Flugplan für die analysierte Routenbeschreibung und ersetzt den aktuellen Plan. Sie müssen auf `Routenbeschreibung lesen`  klicken, bevor Sie einen Flugplan erstellen können.
 
 ### Format {#format}
@@ -64,7 +64,7 @@ Beispiele: `KEAT`, `CYPU`, `S16`.
 
 `ENROUTE`: Dies ist eine Liste von entweder `WAYPOINT` oder einem `AIRWAYWAYPOINT`, die den aktuellen Flugplan bilden. Der erste Eintrag muss ein Flughafen, Wegpunkt, VOR oder NDB sein.
 
-`WAYPOINT`: Ein Waypoint, VOR, NDB, Flughafen oder benutzerdefinierte Koordinaten. Siehe unten für Details zu den Koordinaten. Einem Wegpunkt kann `DCT` vorangestellt werden, um eine direkte Verbindung ohne Luftstraße anzuzeigen. Wegpunkte können mit einem optionalen `/SPEEDALT`-Wert versehen werden, obwohl dieser ignoriert wird.
+`WAYPOINT`: Eine Luftstraße, VOR, NDB, Flughafen oder benutzerdefinierte Koordinaten. Siehe unten für Details zu den Koordinaten. Einem Wegpunkt kann `DCT` vorangestellt werden, um eine direkte Verbindung ohne Luftstraße anzuzeigen. Wegpunkte können mit einem optionalen `/SPEEDALT`-Wert versehen werden, obwohl dieser ignoriert wird.
 
 
 Beispiele: `TAU`, `BOMBI`, `AST`, `CL`, `EDDF`.

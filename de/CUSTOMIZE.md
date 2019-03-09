@@ -1,4 +1,4 @@
-## Anpassen generell {#customize}
+## Anpassen {#customize}
 
 _Little Navmap_ erstellt beim Start mehrere Konfigurationsdateien im Verzeichnis `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. Dieses ermöglicht eine erweiterte Anpassung des Programms.
 

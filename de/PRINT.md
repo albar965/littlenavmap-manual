@@ -1,6 +1,6 @@
 ## Drucken {#printing}
 
-### ![Karte drucken](.../images/icons/printmap.png "Karte drucken") Karte drucken {#printing-the-map}
+### ![Print Map](../images/icons/printmap.png "Print Map") Karte drucken {#printing-the-map}
 
 Öffnet den Druckvorschau-Dialog, in dem die aktuelle Kartenansicht gedruckt werden kann.
 
@@ -10,7 +10,7 @@ Der Druck ist derzeit auf die Bildschirmauflösung der aktuellen Kartenansicht b
 
 _**Bild oben:** Druckvorschau-Dialog für die aktuelle Karte._
 
-### ![Flugplan drucken](.../images/icons/printflightplan.png "Flugplan drucken") Flugplan drucken {#printing-the-flight-plan}
+### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Flugplan drucken {#printing-the-flight-plan}
 
 Ermöglicht das Ausdrucken des aktuellen Flugplans zusammen mit Informationen zum Abflug- und Zielflughafen.
 

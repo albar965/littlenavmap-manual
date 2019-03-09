@@ -9,7 +9,7 @@ Das Dialogfenster [Szeneriebibliothek](SCENERY.md#load-scenery-library-dialog) w
 
 Eine Datenbank wird für jeden Simulator gespeichert und kann im Menü [Szeneriebibliothek](MENUS.md#scenery-library-menu) direkt geändert werden.
 
-Unter Windows wird beim ersten Start von _Little Navmap_ auf einem System ohne FSX- oder P3D-Flugsimulator-Installation ein Warndialog angezeigt. Weitere Informationen hierzu finden Sie im Kapitel [Installation ohne vorhandenen Flugsimulator](RUNNOSIM.md#running-without-flight-simulator-installation).
+Unter Windows wird beim ersten Start von _Little Navmap_ auf einem System ohne FSX- oder P3D-Flugsimulator-Installation ein Warndialog angezeigt. Weitere Informationen hierzu finden Sie im Kapitel [Benutzung ohn Flugsimulator-Installation](RUNNOSIM.md#running-without-flight-simulator-installation).
 
 Wenn Sie X-Plane installiert haben, können sie auch direkt zum [Szeneriebibliothek Dialog](SCENERY.md#load-scenery-library-dialog) gehen, .
 
@@ -18,7 +18,7 @@ Eine oder mehrere Szenerie-Bibliotheksdatenbanken müssen möglicherweise aktual
 
 ## Empfohlene Aktionen nach der Installation {#things-to-do-after-installing}
 
-* Die standardmäßig verwendeten Höhendaten sind begrenzt und haben viele Probleme. Daher empfehle ich, die offline GLOBE Höhendaten herunterzuladen und zu verwenden. Weitere Informationen finden Sie unter [Optionsdialog / Flugplanhöhenprofil](OPTIONS.md#cache-elevation).
+* Die standardmäßig verwendeten Höhendaten sind begrenzt und haben viele Probleme. Daher empfehle ich, die offline GLOBE Höhendaten herunterzuladen und zu verwenden. Weitere Informationen finden Sie unter [Einstellungen / Flugplanhöhenprofil](OPTIONS.md#cache-elevation).
 * Schauen Sie sich die [Tutorials](TUTORIALS.md) an, wenn Sie das Programm zum ersten Mal verwenden.
 * Siehe [Navigraph-Updates installieren](https://albar965.github.io/littlenavmap_navigraph.html) auf meiner Homepage für Informationen, wie man die Navigationsdaten von _Little Navmap_ aktualisiert.
 * Siehe [Verbindung zu einem Flugsimulator](CONNECT.md) für den nächsten Schritt, um *Little Navmap* als Moving Map zu verwenden. Das mitgelieferte *Little Xpconnect* Plugin muss für X-Plane installiert sein.
@@ -28,8 +28,8 @@ Eine oder mehrere Szenerie-Bibliotheksdatenbanken müssen möglicherweise aktual
 
 Lesen Sie die beiden folgenden Kapitel, wenn Sie _Little Navmap_ in einem vernetzten Setup mit einem Computer für den Flugsimulator und einem Computer für _Little Navmap_ ausführen möchten.
 
-* [Connecting to a Flight Simulator](CONNECT.md)
-* [Running without Flight Simulator Installation](RUNNOSIM.md)
+* [Verbindung zu einem Flugsimulator herstellen](CONNECT.md)
+* [Benutzung ohne Flugsimulator-Installation](RUNNOSIM.md)
 
 **Wie man eine Netzwerkeinrichtung vorbereitet:**
 
