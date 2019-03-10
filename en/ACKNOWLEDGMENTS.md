@@ -17,7 +17,7 @@ Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind suppo
 
 The French translation of the program was done by Patrick JUNG alias Patbest. Thank you!
 
-Dankeschön! for the German translation to merspieler and Stephan Leukert.
+Thanks to Karl Wichelmann, Stephan Leukert and merspieler for the German translation of the user manual.
 
 Thanks to Ricardo Vitor for the translation to Brazilian Portuguese.
 

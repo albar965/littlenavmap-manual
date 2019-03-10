@@ -17,6 +17,8 @@ Danke an Jose von [fsAerodata](https://www.fsaerodata.com/) für seine nette Hil
 
 Die Französische übersetzung des Programms wurde von Patrick JUNG alias Patbest durchgeführt. Danke!
 
+Vielen Dank an Karl Wichelmann, Stephan Leukert und merspieler für die deutsche Übersetzung des Benutzerhandbuches.
+
 Danke and die Beta-Tester für ihre Mühe, Geduld und Ideen: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo und Sam.
 
 Ein weiteres dickes Danke geht an Mark aus Deutschland für seine großartigen Ideen und seine endlosen Fehlerberichte.

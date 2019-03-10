@@ -14,7 +14,7 @@ Mehr über meine Projekte auf [**www.littlenavmap.org**](www.littlenavmap.org).
 
 Copyright 2015-2017 Alexander Barthel
 
-Übersetzung von merspieler und Karl Wichelmann.
+Übersetzung von Karl Wichelmann, Stephan Leukert und merspieler.
 
 ---
 
