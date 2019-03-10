@@ -1,4 +1,4 @@
-## Acknowledgments {#acknowledgments}
+## Danksagungen {#acknowledgments}
 
 Ein Dankeschön geht an alle, die mich unterstützen, mir Ihre Log-Dateien, Bildschirmfotos, Ideen für Verbesserungen, freuntliche Nachrichten, Spenden um mehr zukommen lassen.
 
