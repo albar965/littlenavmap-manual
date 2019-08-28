@@ -21,6 +21,8 @@
 * [Compass Rose](COMPASSROSE.md)
 * [Sun Shading](SUNSHADOW.md)
 * [Traffic Pattern](TRAFFICPATTERN.md)
+* [Holding](HOLD.md)
+* [Image Export](IMAGEEXPORT.md)
 * [Legend](LEGEND.md)
 
 ### Search
@@ -34,6 +36,7 @@
 
 * [Dock Window](FLIGHTPLAN.md)
 * [Procedures](APPROACHES.md)
+* [User Defined Approach](CUSTOMPROCEDURE.md)
 * [Edit Position](EDITFPPOSITION.md)
 * [Route Description](ROUTEDESCR.md)
 * [Editing on the Map](MAPFPEDIT.md)
@@ -41,10 +44,16 @@
 * [Elevation Profile Dock Window](PROFILE.md)
 * [Flight Plan Online Export](ROUTEEXPORT.md)
 
+### Logbook
+
+* [Overview](LOGBOOK.md)
+
 ### Aircraft Performance
 
 * [Overview](AIRCRAFTPERF.md)
 * [Editing](AIRCRAFTPERFEDIT.md)
+* [Collection](AIRCRAFTPERFCOLL.md)
+* [Merge](AIRCRAFTPERFMERGE.md)
 
 ### Information
 
@@ -62,6 +71,7 @@
 
 * [Load Scenery Library Dialog](SCENERY.md)
 * [Connecting to a Flight Simulator](CONNECT.md)
+* [Webserver](WEBSERVER.md)
 * [Checking for Updates](UPDATE.md)
 * [Options Dialog](OPTIONS.md)
 * [Running without Flight Simulator Installation](RUNNOSIM.md)
