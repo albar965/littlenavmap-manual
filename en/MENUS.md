@@ -39,6 +39,12 @@ The appended legs are selected after loading the flight plan.
 
 Shows all recently loaded flight plans for quick access. You can clear the list by selecting  `Clear Menu`.
 
+#### Reset all for a new Flight {#reset-for-new-flight}
+
+Not finished yet.
+
+TODO
+
 #### ![Save Flight Plan](../images/icons/filesave.png "Save Flight Plan") Save Flight Plan {#save-flight-plan}
 
 #### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Save Flight Plan as PLN {#save-flight-plan-as}
