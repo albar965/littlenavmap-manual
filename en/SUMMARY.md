@@ -84,6 +84,7 @@
 
 ### Appendix
 
+* [Keyboard Shortcuts](SHORTCUTS.md)
 * [Customize](CUSTOMIZE.md)
 * [Creating Map Themes](MAPTHEMES.md)
 * [Files](FILES.md)

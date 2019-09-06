@@ -10,6 +10,8 @@ Heading and course are suffixed with `°T` for true course or `°M` for magnetic
 
 A click in the map on the active spot of a feature like a range ring removes it. The cursor changes to a hand symbol to indicate an active spot which allows to remove a feature by click or remove/edit it in the context menu.
 
+The display of a map feature class will be enabled if you use on of these mouse clicks. A `Shift+Click` will enable display of range rings, for example. You can enable or disable visibility in menu `View` -> `User Features` or the toolbar.
+
 | Mouse | Description |
 | --- | --- |
 | `Single Click` | Show information about all features around the cursor position. |
@@ -18,14 +20,14 @@ A click in the map on the active spot of a feature like a range ring removes it.
 | `Ctrl+Click` | Start rhumb-line measurement or delete a measurement line. |
 | `Alt+Click` | Start great circle line measurement or delete measurement line. |
 | `Ctrl+Shift+Click` | Add or edit an userpoint. |
-|`Ctrl+Alt+Click` | Insert airport, navaid, userpoint or position into the nearest flight plan leg. |
+| `Ctrl+Alt+Click` | Insert airport, navaid, userpoint or position into the nearest flight plan leg. |
 | `Shift+Alt+Click` | Append airport, navaid, userpoint or position to flight plan. |
 | `Wheel` | Zoom in or out. |
 | `Shift+Wheel` | Zoom in or out in small steps. |
 
 ### Key Commands {#key-commands}
 
-You have to activate the map window (i.e. click into it) before you can use the keyboard shortcuts.
+You have to activate the map window (i.e. click into it or press the key `F2`) before you can use the keyboard shortcuts.
 
 | Key| Description |
 | --- | --- |
@@ -42,22 +44,26 @@ You have to activate the map window (i.e. click into it) before you can use the 
 
 | Symbol | Description |
 | --- | --- |
-| ![Home](../images/legend/home.png "Home") | Center of the home position. |
-| ![Mark](../images/legend/mark.png "Mark") | Center point that will be used for distance searches.
-| ![Flight Plan](../images/legend/route_leg.png "Flight Plan") | Flight plan with distance, direction and magnetic course at each leg. |
-| ![Flight Plan Procedure](../images/legend/route_procedure_leg.png "Flight Plan Procedure") | Flight plan procedure leg with the same information as above.
-| ![Active Leg](../images/legend/activesegment.png "Active Leg") | Active flight plan leg |
-| ![Flight Plan Departure Position](../images/legend/route_start.png "Flight Plan Departure Position") | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
-| ![Top of Descent](../images/legend/routetod.png "Top of Descent") | Top of descent point with distance to destination. |
-| ![Range](../images/legend/range_rings.png "Range") | Range rings labeled with distance. |
-| ![Range VOR](../images/legend/range_vor.png "Range VOR") ![Range NDB](../images/legend/range_ndb.png "Range NDB") | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
-| ![Distance GC](../images/legend/distance_gc.png "Distance GC") | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance "Great circle") distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
-| ![Distance Rhumb](../images/legend/distance_rhumb.png "Distance Rhumb") | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
+| ![Home](../images/legend/home.png) | Center of the home position. |
+| ![Mark](../images/legend/mark.png) | Center point that will be used for distance searches. |
+| ![Center](../images/legend/centermark.png) | Shows map center. Useful for `Click and Center` navigation mode. Also shows map navigation click/touch areas if enabled. |
+| ![Flight Plan](../images/legend/route_leg.png) | Flight plan with distance, direction and magnetic course at each leg. Displayed values can be changed in dialog `Options` on tab `Map Display 2`.<br/>`°M` and `°T` indicate magnetic or true course, respectively. `R` and `GC` indicate rhumb line or great circle line. Suffixes might be hidden if only one type is selected (rhumb or great circle) |
+| ![Flight Plan Procedure](../images/legend/route_procedure_leg.png) | Flight plan procedure leg with the same information as above. |
+| ![Active Leg](../images/legend/activesegment.png) | Active flight plan leg |
+| ![Wind Barb](../images/legend/route_wind.png) | Wind direction and speed at flight plan waypoint. See chapter `High Altitude Winds` below for details about wind barbs. |
+| ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
+| ![Top of Climb](../images/legend/routetoc.png) | Top of climb point with distance from departure. |
+| ![Top of Descent](../images/legend/routetod.png) | Top of descent point with distance to destination. |
+| ![Range](../images/legend/range_rings.png) | Range rings labeled with distance. |
+| ![Range VOR](../images/legend/range_vor.png) ![Range NDB](../images/legend/range_ndb.png) | VOR or NDB range rings labeled with ident and frequency. Color indicates Navaid type. |
+| ![Distance GC](../images/legend/distance_gc.png) | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance) distance and course measurement line indicating length and true heading at start and destination. The two heading values will be equal for small distances. For shorter distances length is also shown in feet or meters. |
+| ![Distance Rhumb](../images/legend/distance_rhumb.png) | [Rhumb line](https://en.wikipedia.org/wiki/Rhumb_line) of equal bearing distance measurement indicating distance and true heading. Rhumb lines are used to approach a VOR or NDB or travel along airways. For shorter distances length is also shown in feet. |
 | ![Distance VOR](../images/legend/distance_vor.png) | Measurement lines starting from an airport or navaid have the same color and additional ident and frequency labels. Course for rhumb lines will be shown in magnetic if the navaid has a magnetic variation attribute. |
 | ![Search Highlight](../images/legend/highlight_search.png) | A highlighted airport or navaid selected in the search result table. |
 | ![Flight Plan Hightlight](../images/legend/highlight_route.png) | A highlighted airport or navaid selected in the flight plan table. |
 | ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
+| ![Elevation Profile Position](../images/legend/route_profile_mark.png)| This shows the related position on the flight plan when hovering the mouse above the elevation profile. |
 
 
 ### Compass Rose {#compass-rose}
@@ -68,13 +74,13 @@ The colors for flight plan leg course and crab angle indicator depend on setting
 
 | Symbol | Description |
 | --- | --- |
-| ![True North](../images/legend/compass_rose_true_north.png "True North") | True north. |
-| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Magnetic north. |
-| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Distance circles and marks from user aircraft if connected. |
-| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Solid line shows aircraft track in degrees magnetic if connected. |
-| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Dashed line shows aircraft heading if connected. |
-| ![Flight Plan Leg Course](../images/legend/compass_rose_leg.png "Flight Plan Leg Course") | Magenta line segment shows the course to next waypoint of the active flight plan leg. Hidden if no flight plan loaded. |
-| ![Crab Angle](../images/legend/compass_rose_crab.png "Crab Angle") | Crab angle indicator. Shows the heading that has to be flown towards the next waypoint of the active flight plan leg considering cross wind. Hidden if no flight plan loaded. |
+| ![True North](../images/legend/compass_rose_true_north.png) | True north. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png) | Magnetic north. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png) | Distance circles and marks from user aircraft if connected. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png) | Solid line shows aircraft track in degrees magnetic if connected. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png) | Dashed line shows aircraft heading if connected. |
+| ![Flight Plan Leg Course](../images/legend/compass_rose_leg.png) | Magenta line segment shows the course to next waypoint of the active flight plan leg. Hidden if no flight plan loaded. |
+| ![Crab Angle](../images/legend/compass_rose_crab.png) | Crab angle indicator. Shows the heading that has to be flown towards the next waypoint of the active flight plan leg considering cross wind. Hidden if no flight plan loaded. |
 
 ### Aircraft and Ships {#vehicles}
 
@@ -106,6 +112,7 @@ The symbol is shown smaller if an airport has no runways. This is the case for s
 | ![Heliport](../images/legend/heliport.png) | Heliport having only helipads and no runways. |
 | ![Closed Airport with Tower](../images/legend/airport_tower_closed.png) ![Closed Airport](../images/legend/airport_closed.png) | Abandoned airport. All runways are closed. |
 | ![Airport with Fuel](../images/legend/airport_tower_fuel.png) ![Airport with soft Runways and Fuel](../images/legend/airport_soft_fuel.png) | Airports that have fuel available. |
+| ![Airport Weather](../images/legend/airport_weather.png) | Weather at airport. See chapter `Airport Weather` below. |
 | ![Airport Text](../images/legend/airportlabel.png)  | Airport label showing name, ident, ATIS frequency, elevation, lighted runways \(`L`\) and length of longest runway. The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
 | ![Airport Overview](../images/legend/airport_overview.png) | Airport runway overview shown before the full airport diagram when zooming in. |
 
@@ -136,11 +143,12 @@ See chapter [Procedures](APPROACHES.md) for more detailed information on all the
 
 | Symbol | Description |
 | --- | --- |
-| ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, approach or transition leg in preview with distance, direction and magnetic course at each leg. |
-| ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) | SID, STAR, approach or transition leg which is part of the flight plan. |
-| ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Missed approach leg in preview. |
-| ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Missed approach leg which is a part of the flight plan. |
-| ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Dotted line indicates circle-to-land or straight-in part of a procedure leading to a runway end. |
+| ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, approach or transition leg for flight plan and in preview with distance, direction and magnetic course at each leg. |
+| ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Missed approach leg for flight plan and preview. |
+| ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Dotted line indicates circle-to-land or straight-in part of a procedure leading to a runway end. Here part of flight plan. |
+| ![Vectors](../images/legend/procvectors.png) | Vector leg indicating course to an initial fix. Here part of flight plan. |
+| ![Manual](../images/legend/procmanual.png) | Manual leg. Fly according to ATC instructions. Here shown as preview. |
+| ![Alternate](../images/legend/routealternate.png) | Leg to alternate destination. |
 | ![Procedure Point](../images/legend/proc_point.png) | Gray yellow filled circle indicates a procedure point which is not a navaid but defined by course and/or distance from a navaid, an altitude restriction or manual termination. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | A black circle indicates an overfly waypoint. Can be a procedure point or a navaid. |
 | ![Procedure FAF](../images/legend/proc_faf.png) | The Maltese cross highlights the final approach fix or the final approach course fix. |
@@ -149,6 +157,7 @@ See chapter [Procedures](APPROACHES.md) for more detailed information on all the
 | ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Intercept the next approach leg at a course of about 45 degrees. |
 | ![Procedure Altitude](../images/legend/procinterceptalt.png) | Procedure leg that is terminated when reaching the given altitude. |
 | ![Procedure Intercept Distance](../images/legend/procinterceptcd.png) | A fix defined by a course or heading and distance to a navaid.|
+| ![Procedure Intercept Radial](../images/legend/procradial.png) | Turn to intercept a radio navaid radial.|
 | ![Procedure Intercept Course Distance](../images/legend/procinterceptd.png) |  This fix is defined by a heading or track which is terminated by reaching a DME distance. |
 | ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Intercept a course to the next fix at an angle of about 45 degrees. |
 
@@ -205,6 +214,17 @@ Color and indicators depend on user choice in airport traffic pattern dialog.
 | ![Final](../images/legend/pattern_runway.png) | Final leg of airport traffic pattern with with runway and magnetic course. |
 | ![Entry Indicator](../images/legend/pattern_entry.png) | Arrow and dashed line shows path for pattern entry. |
 | ![Exit Indicator](../images/legend/pattern_exit.png) | Dashed line and arrows show path for pattern exit. |
+| ![Active Position](../images/legend/patternactive.png) | White circle is active point at the runway threshold of the pattern. Mouse cursor changes above and allows to remove the pattern in the context menu. |
+
+### Holding {#holding}
+
+Color depends on user choice in holding dialog.
+
+| Symbol | Description |
+| --- | --- |
+| ![Inbound to Fix](../images/legend/holdinbound.png) | Holding fix, magnetic and true inbound course, time for straight leg and navaid ident (`LBU`). Ident is only shown if holding is attached to navaid. True course display depends on options. |
+| ![outbound from Fix](../images/legend/holdoutbound.png) | Magnetic and true outbound course, speed and altitude as given in the dialog. True course display depends on options. |
+| ![Active Position](../images/legend/holdactive.png) | Active point and holding fix. Mouse cursor changes above and allows to remove the holding in the context menu. |
 
 ### MORA Grid {#mora-grid}
 
@@ -214,7 +234,7 @@ The minimum off-route altitude grid provides an obstacle clearance altitude with
 | --- | --- |
 | ![MORA Grid](../images/legend/map_mora.png) | MORA grid. Large number is 1000 feet and small number 100 feet. Example here: 3300, 4400, 6000, 9900 and 10500 feet. |
 
-### Weather {#airport-weather}
+### Airport Weather {#airport-weather}
 
 #### Flight Rules {#airport-weather-flightrules}
 | Symbol Color | Description |
@@ -234,13 +254,22 @@ The minimum off-route altitude grid provides an obstacle clearance altitude with
 | ![Overcast](../images/legend/weather_vfr_ovc.png) | Overcast |
 
 #### Wind {#airport-weather-wind}
+
 | Symbol | Description |
 | --- | --- |
 | ![No Wind](../images/legend/weather_vfr_clear.png) | No pointer indicates wind below 2 knots. |
-| ![4 Knots Wind](../images/legend/weather_wind4.png) | Pointer without wind barb shows wind below 5 knots. |
+| ![4 Knots Wind](../images/legend/weather_wind4.png) | Pointer without wind barb shows wind below 5 knots from north-west. |
 | ![5 Knots Wind](../images/legend/weather_wind5.png) | Short barb is 5 knots wind. |
 | ![10 Knots Wind](../images/legend/weather_wind10.png) | Long barb is 10 knots wind. |
 | ![50 Knots Wind](../images/legend/weather_wind50.png) | 50 knots wind.|
 | ![25 Knots Wind](../images/legend/weather_wind25.png) | Example: 25 knots. |
 | ![65 Knots Wind](../images/legend/weather_wind65.png) | Example: 65 knots. |
+| ![15 Knots steady Wind gusting to 30 Knots](../images/legend/weather_wind_gust.png) | Example: 15 knots steady wind (black) gusting to 30 knots (red). |
 
+### High Altitude Wind {#high-alt-wind}
+
+| Symbol | Description |
+| --- | --- |
+| ![No Wind](../images/legend/wind_none.png) | No pointer indicates wind below 2 knots. |
+| ![Wind below 5 Knots](../images/legend/wind_low.png) | Below 5 knots from west. |
+| ![25 Knots Wind](../images/legend/wind_25.png) | Example: 25 knots. |

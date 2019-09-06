@@ -27,6 +27,8 @@ Thanks to Alfredo alias _fred_, Josemi alias _aquileo_ and Emilio alias _zxplane
 
 Thank you! to Eddy Crequie for doing the Dutch translation.
 
+Ein herzliches Dankeschön and Jannik Prinz for setting up the Tavis CI builds.
+
 Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo, Sam and many others.
 
 Thanks to Gradus Hageman for his testing efforts, his ideas and for generally pointing me into the right direction.
