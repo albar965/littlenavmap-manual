@@ -10,6 +10,10 @@
 
 * [Little Navmap User Manual](fr/README.md) \(Work in progress\)
 
+# 简体中文
+
+* [Little NavMap用户手册](cn/README.md) \(Work in progress\)
+  
 <!--
 # Deutsch
 
@@ -18,4 +22,6 @@
 # Italian
 
 * [Little Navmap User Manual](it/README.md) \(Work in progress\)
+
+  
 -->
