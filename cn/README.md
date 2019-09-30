@@ -1,15 +1,15 @@
-# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Little Navmap User Manual {#little-navmap-user-manual}
+# ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Little Navmap用户手册 {#little-navmap-user-manual}
 
 **Version 2.0**
 
-_Little Navmap_ is a free open source flight planner, navigation tool, moving map,
-airport search and airport information system for Flight Simulator X, Flight Simulator - Steam Edition,  Prepar3D v2 to v4 and X-Plane 11.
+_Little Navmap_ 是一个免费、开源的软件，包含飞行计划，导航工具，移动地图，
+机场搜索和机场信息系统等功能，同时支持FSX，FSX steam版，P3d v2到v4和X- plane 11。
 
-**Do not use this program for real world navigation.**
+**请勿使用此软件用作真实世界的导航**
 
 ---
 
-More about my projects at [**GitHub**](https://albar965.github.io).
+我更多的项目在 [**GitHub**](https://albar965.github.io).
 
 ---
 
@@ -17,7 +17,7 @@ Copyright 2015-2018 Alexander Barthel
 
 ---
 
-Last updated {{ gitbook.time }}.
+最近更新 {{ gitbook.time }}.
 
 
 
