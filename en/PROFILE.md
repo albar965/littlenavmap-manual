@@ -158,7 +158,7 @@ Note that the TOC and TOD calculation is influenced by altitude restrictions in 
 
 The path is also forced to the lowest allowed altitude at the final approach fix and the final approach course fix to avoid arriving above the ILS glide slope or too high at the destination runway.
 
-You can safely follow the descent path as shown by _Little Navmap_, provided you can manage your aircraft speed at the same time. For large aircraft you might want to descent around 10 nm earlier to reduce speed to 250 knots below 10,000 feet.
+You can safely follow the descent path as shown by _Little Navmap_, provided you can manage your aircraft speed at the same time. For large aircraft you might want to descent around 10 nm earlier to reduce speed to 250 knots below 10000 feet.
 
 The climb and descent paths are affected by wind and are moved accordingly for strong head- or tailwinds. The climb path will be steeper in the elevation profile if you climb in a strong head wind, for example.
 
@@ -168,7 +168,7 @@ The plan will switch to a flat display showing only a flight plan line at cruise
 
 ![Descent Path](../images/profile_descent.jpg "Descent Path")
 
-_**Picture above:** An approach procedure which requires the aircraft to descent early due to a restriction between 7,000 and 10,000 ft at _`ARTIP`_._
+_**Picture above:** An approach procedure which requires the aircraft to descent early due to a restriction between 7000 and 10000 ft at _`ARTIP`_._
 
 ### Elevation Data {#elevation-data}
 

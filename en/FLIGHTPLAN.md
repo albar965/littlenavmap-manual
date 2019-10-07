@@ -47,15 +47,15 @@ Alternate airports are shown at the end of the list using gray text. Note that m
 * `Airway or Procedure`: Contains the airway name for en-route legs or procedure instruction.
 * `Restriction`:
   * For airways:
-    * Example `10.000`: Minimum altitude for airway segment.
-    * Example `0-20.000`: Maximum airway altitude. Minimum does not apply.
-    * Example `10.000-20.000`: Minimum and maximum airway altitude.
+    * Example `10,000`: Minimum altitude for airway segment.
+    * Example `0-20,000`: Maximum airway altitude. Minimum does not apply.
+    * Example `10,000-20,000`: Minimum and maximum airway altitude.
   * For procedures: Altitude restriction or speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
-    * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
-    * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
-    * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
-    * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
-    * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
+    * **Number only:** Fly at altitude or speed. Example: `5,400` or `210`.
+    * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1,800`.
+    * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10,000` or `B 220`.
+    * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8,000, B 10,000`.
+    * **Altitude and speed limit:** Values separated by `/`. Example: `A 8,000, B 10,000/B220`.
     * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
 * `Type`: Type of a radio navaid. Shows `ILS` or `LOC` for ILS or localizer approaches on the last runway leg.
 * `Freq.`: Frequency or channel of a radio navaid. Also shows ILS or localizer frequency for corresponding approaches on the last runway leg.

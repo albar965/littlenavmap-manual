@@ -8,7 +8,7 @@ While this tutorial looks quite lengthy it is normally a matter of half a minute
 
 You should at least read through the VFR tutorial [Building a VFR Flight Plan](TUTORIALVFR.md) before doing this one.
 
-The flight plan will go across the UK using an IFR capable aircraft. Its maximum range should be more than 600 nautical miles including reserves and a cruise altitude of 10,000 feet.
+The flight plan will go across the UK using an IFR capable aircraft. Its maximum range should be more than 600 nautical miles including reserves and a cruise altitude of 10000 feet.
 
 The tutorial assumes the following preconditions:
 
@@ -93,7 +93,7 @@ Check the following in the airport search tab:
 2. `Procedures`: Show only airports that have procedures to get a more interesting approach.
 3. Deselect `Military` and `Closed` \(click the checkboxes twice\): This will return only civilian airports and avoid airports that have all runways closed.
 6. In the combo box `Any Surface` select `Any is Hard` to avoid airports having only soft surfaced runways.
-7. Select a minimum runway length of 2,500 feet or whatever you chosen aircraft needs in the field `Runways:` `Min:`.
+7. Select a minimum runway length of 2500 feet or whatever you chosen aircraft needs in the field `Runways:` `Min:`.
 
 See also [Search Dock Window - Airports and Navaids](SEARCH.md).
 
@@ -162,8 +162,8 @@ It can happen that the minimum altitude of the result might be too high for the 
 
 Therefore, try an alternate calculation method which limits your cruise altitude:
 
-* Enter 10,000 feet in the `Flight plan altitude` field.
-* Click on `Flight Plan` -&gt; `Calculate based on given Altitude` ![Calculate based on given Altitude](../images/icons/routealt.png). This will result in a flight plan that uses only airways having a minimum altitude below or equal to 10,000 feet. Note that you can get a mix of Victor and Jet airways depending on used altitude. The calculation might also fail if you set the cruise altitude too low.
+* Enter 10000 feet in the `Flight plan altitude` field.
+* Click on `Flight Plan` -&gt; `Calculate based on given Altitude` ![Calculate based on given Altitude](../images/icons/routealt.png). This will result in a flight plan that uses only airways having a minimum altitude below or equal to 10000 feet. Note that you can get a mix of Victor and Jet airways depending on used altitude. The calculation might also fail if you set the cruise altitude too low.
 
 ![Calculate Flight Plan](../images/tutorial/ifrcalcalt.jpg)
 

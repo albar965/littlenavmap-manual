@@ -84,7 +84,7 @@ _**Picture above:** Weather situation around New York. All airports are VFR and 
 
 ### Winds Aloft {#wind}
 
-_Little Navmap_ can download and display winds aloft based on either X-Plane or the [National Oceanic and Atmospheric Administration](https://www.noaa.gov/) data. 
+_Little Navmap_ can download and display winds aloft based on either X-Plane or the [National Oceanic and Atmospheric Administration](https://www.noaa.gov/) data.
 
 The latter one are winds aloft forecasts which are updated four times a day and are used by most simulators and weather programs as data source. The wind speed and direction is arranged in an one-degree grid.
 
@@ -108,7 +108,7 @@ The menu button enables or disables wind aloft display by a wind barb grid at di
 
 The drop down menu has the following items:
 
-* `At Flight Plan Waypoints`: Toggles wind barbs with a yellow border at flight plan waypoints on and off. Wind barbs below 4,000 feet above mean sea level are omitted. This function is independent of the selection below.
+* `At Flight Plan Waypoints`: Toggles wind barbs with a yellow border at flight plan waypoints on and off. Wind barbs below 4000 feet above mean sea level are omitted. This function is independent of the selection below.
 * `None`: Do not show the wind barb grid. Wind data is still downloaded and processed until the source is set to `Disabled`.
 * `Ground (only NOAA)`: Show the wind barb grid for winds near ground (about 260 feet). Only available if the NOAA wind source is selected.
 * `At Flight Plan Cruise Altitude`: Show the wind barb grid for winds at the current flight plan cruise altitude.

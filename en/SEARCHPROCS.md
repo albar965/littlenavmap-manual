@@ -32,11 +32,11 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
 * `Dist./Time`: Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in nautical miles.
 * `Ident`: Ident of the initial fix or name of the procedure. Fix name for legs.
 * `Restriction`: Either minimum altitude for en-route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
-  * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
-  * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
-  * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
-  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
-  * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
+  * **Number only:** Fly at altitude or speed. Example: `5,400` or `210`.
+  * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1,800`.
+  * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10,000` or `B 220`.
+  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8,000, B 10,000`.
+  * **Altitude and speed limit:** Values separated by `/`. Example: `A 8,000, B 10,000/B220`.
   * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
 * `Remarks`: Shows fly-over, turn direction or related navaid for a procedure leg.
 
@@ -77,7 +77,7 @@ Center the map on the selected procedure.
 
 #### Follow Selection {#follow-selection}
 
-The map view will be zoomed on the selected procedure when this function is enabled. 
+The map view will be zoomed on the selected procedure when this function is enabled.
 
 #### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") Insert into Flight Plan / Use as Destination / Use as Departure {#procedure-insert}
 

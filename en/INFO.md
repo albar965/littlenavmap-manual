@@ -116,7 +116,7 @@ The aircraft and progress tabs show warnings and errors by highlighting text in 
 * Fuel and time estimated since aircraft performance not valid.
 * Gross weight exceeding max gross weight.
 * Insufficient fuel at destination (if aircraft performance is valid).
-* Speed limit of 250 knots exceeded below 10,000 feet.
+* Speed limit of 250 knots exceeded below 10000 feet.
 * Icing.
 
 Note that the fuel and time estimates are based on the aircraft performance if valid. \([Aircraft Performance](AIRCRAFTPERF.md)\).

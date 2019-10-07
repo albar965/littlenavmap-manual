@@ -42,7 +42,7 @@ A label `Estimated range with reserve` shows the maximum distance and time to fl
 
 #### Reserve Fuel {#reserve-fuel}
 
-Final reserve fuel is the minimum fuel required to fly for 30 minutes at 1,500 feet above the alternate airport or at the destination airport at holding speed if an alternate is not required. Some authorities require sufficient fuel for 45 minutes holding time.
+Final reserve fuel is the minimum fuel required to fly for 30 minutes at 1500 feet above the alternate airport or at the destination airport at holding speed if an alternate is not required. Some authorities require sufficient fuel for 45 minutes holding time.
 
 Alternate fuel is the amount of fuel required to fly the missed approach at the destination airport and to the alternate airport.
 

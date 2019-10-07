@@ -121,7 +121,7 @@ Now look if your flight plan touches any airspaces.
 
 Click into one of the airspaces nearby start and destination and have a look at the information dock window. There are several airspaces:
 
-* `Geneva TMA Sector 8` which starts at 9,500 feet above mean sea level \(MSL\). This is higher than our cruise altitude and won't affect us.
+* `Geneva TMA Sector 8` which starts at 9500 feet above mean sea level \(MSL\). This is higher than our cruise altitude and won't affect us.
 * Two Class E airspaces. The information window notes for these: `Controlled, IFR and VFR, ATC clearance required for IFR only`. No problem because we will fly using VFR.
 
 The situation is similar at the destination.

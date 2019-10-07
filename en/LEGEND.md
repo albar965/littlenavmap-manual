@@ -103,7 +103,7 @@ The symbol is shown smaller if an airport has no runways. This is the case for s
 
 | Symbol | Description |
 | --- | --- |
-| ![Large Airport](../images/legend/airport_tower_8000.png) ![Large Airport](../images/legend/airport_8000.png) | Airports with hard surface runways longer than 8,000 ft or 2,400 meters. All runways longer than 4,000 ft or about 1,200 meters are shown. Only for lower zoom distances. |
+| ![Large Airport](../images/legend/airport_tower_8000.png) ![Large Airport](../images/legend/airport_8000.png) | Airports with hard surface runways longer than 8000 ft or 2400 meters. All runways longer than 4000 ft or about 1200 meters are shown. Only for lower zoom distances. |
 | ![Airport with Tower](../images/legend/airport_tower.png) ![Airport](../images/legend/airport.png) | Airports with hard surface runways. White line shows heading of longest runway. |
 | ![Airport with soft runways and Tower](../images/legend/airport_tower_soft.png) ![Airport with soft Runways](../images/legend/airport_soft.png) | Airports with soft surface runways. |
 | ![Airport Empty](../images/legend/airport_empty.png) ![Airport Empty Soft](../images/legend/airport_empty_soft.png) | Empty airports shown in gray. No taxiways, no parking spots and no aprons. |

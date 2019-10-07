@@ -585,7 +585,7 @@ Show or hide center, tower, mode C and other airspaces.
 
 ##### ![Airspace Altitude Limitations](../images/icons/airspacealt.png "Airspace Altitude Limitations") Airspace Altitude Limitations {#airspace-altitude-limitations}
 
-Allows filtering of the airspace display by altitude. Either below or above 10,000 ft or 18,000 ft or only airspaces intersecting with the flight plan altitude.
+Allows filtering of the airspace display by altitude. Either below or above 10000 ft or 18000 ft or only airspaces intersecting with the flight plan altitude.
 
 #### Airspace Source (Sub-Menu) {#airspace-source}
 
