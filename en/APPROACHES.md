@@ -35,6 +35,15 @@ Procedure waypoints are not saved in the flight plan since the PLN format does n
 
 You can enable saving of waypoints by checking the menu items [Save Waypoints for Approaches](MENUS.md#export-flight-plan-approach-waypoints) and/or [Save Waypoints for SID and STAR](MENUS.md#export-flight-plan-sid-star-waypoints).
 
+**It is not possible to assign an approach or STAR to an alternate airport. Create a new flight plan for the alternate trip if you wish to do so.**
+
+### Create Approach {#procedures-custom}
+
+A user defined approach can be created and applied to all airports, even small airstrips which do not provide approach procedures.
+
+This user defined approach consists of a final approach leg and can be customized by changing altitude and length. This approach allows _Little Navmap_ to give vertical guidance and to show ILS and/or VASI slopes at the destination.
+
+See more about this type of approach in chapter [User Defined Approach](CUSTOMPROCEDURE.md).
 
 ### Inserting a Procedure into a Flight Plan {#procedures-insert}
 
@@ -81,6 +90,8 @@ If a time is given, fly the hold as usual:
 
 Do not follow the lines exactly, they are just an indicator for what to fly. An exception are holds where a distance is given for the straight leg. The hold size will match the distance in this case.
 
+Note that procedure holds are part of the flight plan and differ from the user defined holdings ([Holdings](HOLD.md)) which are simply map display objects.
+
 ![Hold](../images/hold.jpg "Hold")
 
 _**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at _`ZUNAD`_ and fly at or above 2600 feet. Course is 61° magnetic degrees._
@@ -121,6 +132,7 @@ Four additional types are used by *Little Navmap*:
 * `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway is not available. The altitude restriction indicates the elevation of the runway.
 * `Straight In`: Added to an approach procedure to show the course from the missed approach point \(MAP\) to the runway threshold. It is added when an approach ends with a runway fix. The leg has an altitude restriction 50 feet above the threshold.
 * `Circle to Land`: Added to an approach procedure to show the course from the missed approach point to the airport. It is added if an approach does not end with a runway fix.
+* `Vectors`: Vectors connect legs that are manually terminated by ATC with their successors which is often an initial fix.
 
 | | |
 | -- | -- |
@@ -133,6 +145,7 @@ Four additional types are used by *Little Navmap*:
 * **Radial and distance:** Example: `WIK/7nm/291°M`. A fix defined by a course or heading and distance to a navaid.
 * **Distance to DME:** Example: `WIK/9nm`. This fix is defined by a heading or track which is terminated by reaching a DME distance.
 * `Intercept Course to Fix`: Intercept a course to the next fix at an angle of about 45 degrees.
+* `Course/Heading to radial termination`: Example: `LPD/135°M`. Turn left or right to intercept a radio navaid radial.
 * `Intercept Leg`: Intercept the next approach leg at a course of about 45 degrees.
 * `Altitude`: A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft, 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
 * `Manual`: Fly a heading, track or a hold until manually terminated by ATC.

@@ -1,7 +1,6 @@
 ## Flight Plan Route Description {#flight-plan-from-route-description}
 
-This dialog allows you to create a flight plan from a route description as generated or provided 
-by various online services.
+This dialog allows you to create a flight plan from a route description as generated or provided by various online services.
 
 The `New Flight Plan from Route Description` dialog opens with the route description for the current flight plan which also contains information about speed and cruise altitude if enabled.
 
@@ -36,13 +35,17 @@ _**Picture above:** A route description that was read successfully with a few wa
 * `Update from Flight Plan`: Create the route string from the current flight plan again. Use this after changing settings with drop down menu button.
 * `Read Route Description`: Reads the route description and displays any messages, warnings and errors in the bottom half of the dialog. The current flight plan is not affected by this action.
 * `IFR` / `VFR`: Defines the type of the generated flight plan and the automatically determined cruise altitude.
-* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"):
-  * `Add departure and destination airport`: Note that disabling this option will result in a route string which cannot be read back into a flight plan.
-  * `Add DCT (direct) instructions`: Add `DCT` for any direct waypoint connections in the flight plan.
-  * `Add cruise speed and altitude instruction`: Add cruise altitude from flight plan and ground speed as set in the flight plan dock window.
-  * `Add SID and STAR`: Add SID and STAR names if any are used for departure or arrival.
-  * `Add generic SID and STAR`: Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
-  * `Add Waypoints instead of Airways`: Does not insert any airway names but uses waypoints only.
+* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"): `Write` denotes flight plan to description and `Read` denotes description to flight plan.
+  * `Write departure and destination airport`: Note that disabling this option will result in a route string which cannot be read back into a flight plan.
+  * `Write DCT (direct) instructions`: Add `DCT` for any direct waypoint connections in the flight plan.
+  * `Write cruise speed and altitude instruction`: Add cruise altitude from flight plan and ground speed as set in the flight planning dock window.
+  * `Write SID and STAR`: Add SID and STAR names if any are used for departure or arrival.
+  * `Write generic SID and STAR`: Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
+  * `Write Waypoints instead of Airways`: Does not insert any airway names but uses waypoints only.
+  * `Write Alternates`: Appends all alternate airports to the end of the description.
+  * `Read trailing Airports as Alternates`: 
+    * Enabled: A list of airports at the end of the description will be read as alternate airports except the first in the chain of consecutive airports which will be used as destination. Any airport with a valid STAR in the chain will be treated as destination too. 
+    * Disabled: Reading simply creates a flight plan with the airports as intermediate waypoints and the last one as destination. See example below.
 * `Create Flight Plan`: Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before you can create a flight plan.
 
 ### Format {#format}
@@ -57,9 +60,9 @@ All elements in square brackets are optional.
 
 Examples: `KEAT`, `CYPU`, `S16`.
 
-`ALTERNATES`: Alternate airports are optional and are simply appended to the flight plan. Alternates cannot be used in combination with an approach procedure.
+`ALTERNATES`: Alternate airports are optional and are added to the flight plan when reading depending on the option `Read trailing Airports as Alternates` as described above.
 
-`SPEEDALT`: An optional entry that contains the cruise speed and altitude. See below for a details.
+`SPEEDALT`: An optional entry that contains the cruise speed and altitude. See below for a details. Speed is ignored when reading.
 
 `ENROUTE`: This is a list of either `WAYPOINT` or an `AIRWAYWAYPOINT` forming the actual flight plan. The first entry has to be an airport, waypoint, VOR or NDB.
 
@@ -80,6 +83,26 @@ Examples: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
 `ETD` and `ETA`: Four digit departure and arrival time attached to the airport ident are ignored.
 
 `WAYPOINT.SPEEDALT`: For example `BOMBI/N0090A060`. Altitude changes at waypoints are not supported and ignored when reading.
+
+#### Alternates {#alternates}
+
+**Example when reading **`Read trailing Airports as Alternates`** enabled:**
+
+* `KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT`
+* `KPWA ATOKA J25 FUZ J33 CRIED J50 LFK KHOU KCLL KVCT`
+
+`KHOU` is read as destination, `KCLL` and `KVCT` are alternates for both examples.
+
+**Example when reading **`Read trailing Airports as Alternates`** disabled:**
+
+* `KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT`
+
+Not valid. Error message `BAYYY3.SJI not found` printed.
+`KVCT` is read as destination,  `KHOU` and `KCLL` are are intermediate waypoints.
+
+* `KPWA ATOKA J25 FUZ J33 CRIED J50 LFK KHOU KCLL KVCT`
+
+`KVCT` is read as destination,  `KHOU` and `KCLL` are are intermediate waypoints.
 
 #### Speed and Altitude {#speed-and-altitude}
 
@@ -182,3 +205,6 @@ Frankfurt Main \(EDDF\) to Fiumicino \(LIRF\):
 
 `KPWA SID ATOKA J25 FUZ J33 CRIED J50 LFK STAR KHOU`
 
+**Flight plan using SID and STAR procedures with transitions and two alternate airports:**
+
+`KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT`

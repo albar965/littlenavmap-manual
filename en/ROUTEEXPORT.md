@@ -1,14 +1,16 @@
 ## Flight Plan Online Export {#flight-plan-online-export}
 
 This dialog appears when exporting a flight plan for the online network clients using the export menu items
-[FPL \(IvAp or X-IvAp\)](MENU.md#flight-plan-formats-ivap) or [VFP \(vPilot\)](https://www.vatsim.net/pilots/software).
+[FPL \(IvAp or X-IvAp\)](MENUS.md#flight-plan-formats-ivap) or [VFP \(vPilot\)](https://www.vatsim.net/pilots/software).
 
 Some input fields might hidden depending on format.
+
+Note that IvAp and X-IvAp use a slightly different format.
 
 Fields that contain information which cannot be extracted from the current flight plan are saved between
 sessions \(e.g. `Pilot in command` or `Equipment`).
 
-Other input fields in this dialog are extracted from the current flight plan. The fields can be adjusted manually and are not saved between sessions.
+Other input fields in this dialog are extracted from the current flight plan. These fields can be adjusted manually and are not saved between sessions.
 These are:
 
 * `Flight Rules`: From the current flight plan. `IFR` or `VFR` for VFP and `I` or `V` for FPL. Change manually if needed.
@@ -25,7 +27,7 @@ These are:
 
 ### Buttons
 
-* `OK`: Saves relevant fields for the next session and opens the 'Save as' dialog.
+* `OK`: Saves relevant fields for the next session and opens the `Save as` dialog.
 * `Cancel`: Discards all changes and closes dialog.
 * `Reset`: Undoes all changes that were made since opening the dialog.
 * `Help`: Shows this online help page.

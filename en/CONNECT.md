@@ -8,7 +8,7 @@ _Little Navmap_ can connect directly if all programs are running on the same com
 
 #### All Simulators
 
-Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection` and choose the simulator to which the connection should be established.
+Open the connection dialog in _Little Navmap_ by selecting `Tools` -&gt; `Flight Simulator Connection` in the main menu and choose the simulator to which the connection should be established.
 
 ![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
 
@@ -59,7 +59,7 @@ _Little Navconnect_ can print multiple IP addresses or hostnames depending on yo
 
 ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
-_**Picture above:** _[_Little Navconnect_](https://albar965.github.io/littlenavconnect.html)_ is running and waiting for a Flight Simulator. It is running on the computer _`win10.fritz.box`_ with the IP address _`192.168.2.13`_._
+_**Picture above:** [Little Navconnect](https://albar965.github.io/littlenavconnect.html) is running and waiting for a Flight Simulator. It is running on the computer _`win10.fritz.box`_ with the IP address _`192.168.2.13`_._
 
 Change the port in _Little Navconnect_'s `Options` dialog if you see an error message like shown below:
 
@@ -67,7 +67,7 @@ Change the port in _Little Navconnect_'s `Options` dialog if you see an error me
 
 #### Start _Little Navmap_ on the Client / Remote Computer {#connect-start-navmap}
 
-Open the connection dialog in _Little Navmap_ by selecting `Main Menu` -&gt; `Tools` -&gt; `Flight Simulator Connection`.
+Open the connection dialog in _Little Navmap_ by selecting `Tools` -&gt; `Flight Simulator Connection`  in the main menu.
 ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
 _**Picture above:** Connect dialog with correct values to access the computer running the simulator and Little Navconnect as shown above._

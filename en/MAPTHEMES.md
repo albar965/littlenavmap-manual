@@ -2,9 +2,11 @@
 
 To add an arbitrary online or offline map to _Little Navmap_ simply add the map directory from a downloaded or self created map theme to the `data\maps\earth` directory.
 
-The full path to the DGML file \(see links below for more details about DGML\) describing the map must be `c:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
+**Check out the [Little Navmap Support Forum at AVSIM](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/) for more map themes.**
 
-The menu `Main Menu` -&gt; `Map` -&gt; `Theme` and the toolbar drop down box will receive an entry for each additional map theme. Custom map themes are prefixed with a `*` in the drop down box and with the word `Custom` in the menu.
+The full path to the DGML file \(see links below for more details about DGML\) describing the map must be `...\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml` if you like to add the [OpenCycleMap](http://www.opencyclemap.org) for example. The DGML file can refer to an online map service or included offline map data. Usually a map theme contains many more files than only the DGML.
+
+The menu `View` -&gt; `Theme` in the main menu and the toolbar drop down box will receive an entry for each additional map theme. Custom map themes are prefixed with a `*` in the drop down box and with the word `Custom` in the menu.
 
 The options `Show Country and City Names` and `Show Hillshading` are enabled for all additional map themes but might not work depending on properties defined in the map's DGML file.
 

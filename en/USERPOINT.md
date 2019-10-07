@@ -14,7 +14,7 @@ Additional context menu items and buttons allow adding, editing, and deleting of
 
 ### Top Buttons and additional Menu Items {#userpoints-top-buttons}
 
-See [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu) for a description of common context menu items across all search dialogs.
+See [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu) for a description of common context menu items across all search dialogs. All buttons have an equivalent in the result table context menu.
 
 #### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Add Userpoint {#userpoints-add}
 
@@ -37,6 +37,7 @@ See below for more information about the add dialog.
 #### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Delete Userpoint {#userpoints-delete}
 
 Remove the selected userpoints after a confirmation dialog.
+Undo is not possible but database backups are created on each start. See [Userdata](FILES.md#userdata) for information about database backup files.
 
 #### ![Reset Search](../images/icons/clear.png "Reset Search") Reset Search {#userpoints-reset-search}
 
@@ -66,7 +67,13 @@ The dialog will be populated automatically depending on the selected map context
 
 The field `Description` allows multi line text and special characters. Formatting like italic or bold is not supported.
 
-Links are recognized in the field `Description` and can be opened in the dock window `Information` on tab `Navaids` which is shown after clicking on a userpoint or selecting `Show Information` in one of the context menus. Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like `file:///C:/Projekte/atools` on Windows or `file:///home/alex/Aircraft_Notes.txt` on macOS or Linux.
+Links are recognized in the field `Description` and can be opened in the dock window `Information` on tab `Navaids` which is shown after clicking on a userpoint or selecting `Show Information` in one of the context menus.
+
+Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like `file:///C:/Users/me/Documents/Aircraft%20Notes.txt` on Windows or `file:///home/me/Aircraft%20Notes.txt` on macOS or Linux.
+
+Note that you have to use the forward slash `/` instead of the backslash `\` on Windows as a path separator.
+
+Replace spaces in links with `%20` since _Little Navmap_ recognizes links until the next space.
 
 The field `Visible from` allows to define visibility on the map depending on zoom distance. The zoom distance \(viewpoint distance to earth surface\) for the current map view is shown in the [Statusbar](MENUS.md#statusbar). The user point will be visible for all zoom distances smaller than the value in `Visible from`. Maximum value is 3000 nm and minimum value is 1 nm.
 
@@ -82,9 +89,9 @@ The button `Reset` clears all fields with exception of the coordinates and sets 
 
 _**Picture above:** Add dialog that has been populated automatically by context. The user right-clicked on an airport and selected _`Add Userpoint Airport Frankfurt am Main (EDDF)`_._
 
-#### Edit Userpoints Dialog {#userpoints-dialog-edit}
+### Edit Userpoints Dialog {#userpoints-dialog-edit}
 
-##### A single Userpoint
+#### A single Userpoint
 
 The edit dialog shows the same edit fields as the dialog used to add userpoints above.
 
@@ -100,7 +107,7 @@ The button `Reset` undoes all manual changes and reverts all fields to their ori
 
 _**Picture above:** Edit dialog for a single userpoint._
 
-##### Multiple Userpoints
+#### Multiple Userpoints
 
 If more than one userpoint was selected for editing, the edit dialog shows a column of checkboxes on the right side.
 
@@ -129,25 +136,41 @@ Some types are used as defaults when adding new userpoints. This depends on the 
 
 **Note that the userpoint types cannot be translated to other languages for now.**
 
+#### Airports
+
 * ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Default when creating a userpoint on top of an airport.
 * ![Airstrip](../images/icons/userpoint_Airstrip.png "Airstrip") **Airstrip**
+* ![Closed](../images/icons/userpoint_Closed.png "Closed") **Closed airport**
+* ![Helipad](../images/icons/userpoint_Helipad.png "Helipad") **Helipad**
+* ![Seaport](../images/icons/userpoint_Seaport.png "Seaport") **Seaport**
+
+#### Navaids
+
+* ![DME](../images/icons/userpoint_DME.png "DME") **DME**: Distance measuring equipment.
+* ![NDB](../images/icons/userpoint_NDB.png "NDB") **NDB**: Non-directional beacon.
+* ![TACAN](../images/icons/userpoint_TACAN.png "TACAN") **TACAN**: Tactical air navigation system.
+* ![VORDME](../images/icons/userpoint_VORDME.png "VORDME") **VORDME**: VHF omnidirectional range and DME.
+* ![VORTAC](../images/icons/userpoint_VORTAC.png "VORTAC") **VORTAC**: VOR and TACAN.
+* ![VOR](../images/icons/userpoint_VOR.png "VOR") **VOR**: VHF omnidirectional range.
+* ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Visual reporting point.
+* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Default when creating a userpoint on top of a navaid.
+
+#### Points of Interest
+
 * ![Bookmark](../images/icons/userpoint_Bookmark.png "Bookmark") **Bookmark**: Default type for new userpoints.
 * ![Cabin](../images/icons/userpoint_Cabin.png "Cabin") **Cabin**
-* ![Closed](../images/icons/userpoint_Closed.png "Closed") **Closed airport**
 * ![Error](../images/icons/userpoint_Error.png "Error") **Error**
 * ![Flag](../images/icons/userpoint_Flag.png "Flag") **Flag**
-* ![Helipad](../images/icons/userpoint_Helipad.png "Helipad") **Helipad**
+* ![Lighthouse](../images/icons/userpoint_Lighthouse.png "Lighthouse") **Lighthouse**
 * ![Location](../images/icons/userpoint_Location.png "Location") **Location**
-* ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") **Logbook**: Type of automatically added logbook entries for takeoff and landing. See menu item [Create Logbook entries](MENUS.md#userdata-menu-create-logbook).
+* ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") **Logbook**. Also legacy logbook entry.
 * ![Marker](../images/icons/userpoint_Marker.png "Marker") **Marker**
 * ![Mountain](../images/icons/userpoint_Mountain.png "Mountain") **Mountain**
 * ![Obstacle](../images/icons/userpoint_Obstacle.png "Obstacle") **Obstacle**
-* ![Pin](../images/icons/userpoint_Pin.png "Pin") **Pin**
 * ![POI](../images/icons/userpoint_POI.png "POI") **POI**
-* ![Seaport](../images/icons/userpoint_Seaport.png "Seaport") **Seaport**
-* ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Unknown**: Type named `Unknown` and all types which do not match the default types in this list.
-* ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Visual reporting point.
-* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Default when creating a userpoint on top of a navaid.
+* ![Pin](../images/icons/userpoint_Pin.png "Pin") **Pin**
+
+![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Unknown**: Type named `Unknown` and all types which do not match the default types in this list.
 
 ### CSV Data Format {#userpoints-csv}
 

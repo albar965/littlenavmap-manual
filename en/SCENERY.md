@@ -57,30 +57,64 @@ The first number in the second line is the file version. Here it is `1100`.
 
 Additionally the files `user_fix.dat` and `user_nav.dat` in the X-Plane directory `Custom Data` are read.
 
-### X-Plane Airspaces {#load-scenery-library-dialog-xp-airspaces}
+#### Prepar3D and FSX Airspaces {#load-scenery-library-p3d-fsx-airspaces}
 
-All files in [OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp) will be loaded when reading the X-Plane scenery library.
+_Little Navmap_ reads all airspaces from the scenery library of FSX based simulators. These airspaces are added in the airspace source `Simulator`.
 
-You can also copy airspaces from a present FSX or Prepar3D database if you own these simulators. See [Copy Airspaces to X-Plane Database](MENUS.md#copy-airspaces-to-xplane).
+#### OpenAir Airspaces {#load-scenery-library-openair-airspaces}
 
-Note that airspace files can have errors which may prevent the loading of an airspace file. These hard errors are reported after loading the scenery library. Other errors only affecting single airspaces or the geometry are reported in the log file only.
+_Little Navmap_ can read OpenAir airspaces ([OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp)) from X-Plane or a user defined directory.
 
-X-Plane 11 comes with a single airspace file that can be found in `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces/usa.txt`.
-Additional airspace files can be downloaded from the [OpenAirspace Directory](http://www.winpilot.com/openair/index.asp), [Soaring Services](http://soaringweb.org/), [openAIP](https://www.openaip.net/) or [Luftraumdaten Deutschland](https://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten) for example.
+Note that the publicly available airspace files can contain errors which may prevent the loading of an airspace file. These hard errors are reported after loading the scenery library. Other errors only affecting single airspaces or the geometry are reported in the log file only.
 
-Airspace files must have a `.txt` extension and are loaded from the following directories by *Little Navmap*:
+Additional airspace files can be downloaded from the [OpenAirspace Directory](http://www.winpilot.com/openair/index.asp), [Soaring Services](http://soaringweb.org/), [openAIP](https://www.openaip.net/) or [Luftraumdaten Deutschland](https://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten), for example.
 
-* `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces`
-* `YOUR_XPLANE_DIRECTORY/Custom Data/Airspaces`
-* `YOUR_ACCOUNT_NAME/Documents/Little Navmap/X-Plane Airspaces` where `Documents` is the documents directory in your language.
+Airspace files must have a `.txt` extension and are loaded from the following directories by _Little Navmap_:
 
 The files can be encoded in any [UTF](https://en.wikipedia.org/wiki/Unicode#UTF) format but must have a [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) to be recognized properly. Otherwise Windows ANSI coding \(`Windows-1252`\) is used. Special characters like umlauts or accents are not displayed correctly in names if the encoding is not correct. All other functionality is unaffected.
 
 You can convert the files using any advanced editor like [Notepad++](https://notepad-plus-plus.org/) for example.
 
-Airspaces will appear as duplicates in the map if an airspace file is found in more than one of these directories.
+Airspaces will appear as duplicates in the map if an airspace file is found in more than one of these directories or sources.
 
-**If X-Plane crashes when loading certain airspace files, move these files to the folder `Documents/Little Navmap/X-Plane Airspaces` instead. This way, the airspaces are at least available in *Little Navmap* which is more error tolerant.**
+See [Airspace Source](MENUS.md#airspace-source) for more information on airspace sources.
+
+##### X-Plane Airspaces {#load-scenery-library-xplane-airspaces}
+
+X-Plane 11 comes with a single airspace file that can be found in `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces/usa.txt`.
+
+_Little Navmap_ reads X-Plane airspaces from the following locations:
+
+* `YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces`
+* `YOUR_XPLANE_DIRECTORY/Custom Data/Airspaces`
+
+These airspaces are added to airspace source `Simulator`.
+
+##### User Airspaces {#load-scenery-library-user-airspaces}
+
+These airspaces are added in the airspace source `User`. You can load them by selecting `Scenery Library` -> `Load User Airspaces` ([Load User Airspaces](MENUS.md#load-user-airspaces)).
+
+A directory selection dialog will show up when running this function the first time. Select a directory containing OpenAir airspace files with file ending `.txt`. All files in the directory will be read recursively.
+
+Airspaces read with this function will be added to the airspace source `User` and are stored in a database independent of flight simulator databases.
+
+You can change the directory and file extensions to read in the options dialog: [User Airspaces](OPTIONS.md#cache-user-airspaces).
+
+##### Online Airspaces {#load-scenery-library-online-airspaces}
+
+Online centers are displayed as circular airspaces in _Little Navmap_ per default and provide the same functionality as the other airspaces \(tooltips, information and more\). They are loaded with the online data when connected and are only stored in a temporary database which is deleted on exit.
+
+_Little Navmap_ can use real center boundaries instead of the circular airspaces. First you have to enable one or both options in [Map Display Online](OPTIONS.md#map-display-online) under `Online Center Boundary Lookup in User Airspaces`. These are enabled per default.
+
+There are two options:
+
+1. Create an OpenAir airspace file which contains a single boundary for a center.  Give the file the same name as the callsign for the center, i.e. name the file `EDDB_TWR.txt` for the center with the callsign `EDDB_TWR`.
+2. Create an OpenAir airspace containing the boundaries for all the centers you need. Give the file any name but name the boundaries according to the callsign of the centers.
+You need a line in the file containing `AN EDDF_TWR` (`AN` = airspace name) to use the boundary for a center with the callsign `EDDB_TWR`.
+
+Now place the file or files into you user airspace directory and reload the user airspaces. See above [User Airspaces](SCENERY.md#load-scenery-library-user-airspaces) how to do this.
+
+Once done the center should show the correct boundary.
 
 ### Load Scenery Library Dialog Options {#load-scenery-library-dialog-options}
 
@@ -88,7 +122,7 @@ Airspaces will appear as duplicates in the map if an airspace file is found in m
 * `Reset Paths`: Reset all paths back to default values.
 * `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
 * `Scenery Configuration File` and `Select ...` \(only FSX and P3D\): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
-* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading. This applies to the FSX/P3D `scenery.cfg` as well as X-Plane's `scenery_packs.ini` which both allow to disable scenery entries. 
+* `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading. This applies to the FSX/P3D `scenery.cfg` as well as X-Plane's `scenery_packs.ini` which both allow to disable scenery entries.
 * `Read Prepar3D add-on.xml packages` \(only P3D v3 and v4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
 * `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database is restored. The dialog is closed and the program will switch to show the loaded database once it is successfully loaded.
 * `Close`: Keep all settings and changes in the dialog and close it without loading anything.
@@ -103,3 +137,24 @@ _**Picture above:** Load Scenery Dialog. Scenery data is already loaded for FSX.
 
 _**Picture above:** Progress dialog shown while loading the scenery library into Little Navmap's internal database._
 
+### Magnetic Declination {#magnetic-declination}
+
+_Little Navmap_ reads the magnetic declination from different sources or calculates it using the world magnetic model (WMM) depending on simulator and navaid.
+
+The data is updated when loading the scenery library and is also stored in the scenery library database for each simulator.
+
+Note that the calibrated magnetic declination of a VOR may differ from the actual declination in a region as it does in reality. The calibration of a VOR could be done a long time ago while the real declination in the environment changed in the meantime. Therefore, magnetic course values might differ in some cases. This can result in strange course readings in flight plans.
+
+#### FSX and Prepar3D
+
+The magnetic declination (or variation) used to calculate the magnetic course is taken from the `magdec.bgl` file in the scenery database of FSX or Prepar3D.
+
+Updates for this file are available here: [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
+
+_Little Navmap_ falls back to the world magnetic model if the file `magdec.bgl` is not available for some reason.
+
+#### X-Plane
+
+The magnetic declination values for X-Plane \(airports and all navaids except VORs\) are calculated using the world magnetic model based on the real current year and month. This is calculated while loading the scenery library and saved in X-Plane scenery library database.
+
+VOR stations come with their own declination values which might differ from the calculated declination values in their environment as mentioned above.

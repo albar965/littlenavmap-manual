@@ -6,9 +6,11 @@ The program uses different `Save as ...` file dialogs instead of just one. This 
 
 Note the difference between `Save Flight Plan as ...` and `Export Flight Plan as ...`: `Export` does not change the current file name while `Save as ...` does.
 
+**Always save a copy in the default PLN format before saving to other formats like FMS. This allows _Little Navmap_ to restore all flight plan properties like procedures and alternate airports.**
+
 ### Feature Table {#flight-plan-formats-feature}
 
-The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(X = supported, 0 = not supported\):
+The table below shows the capabilities of _Little Navmap_ and the supported flight plan formats \(`X` = supported, `0` = not supported, `-` = not applicable\):
 
 | Format                        | Read | Write | Airw. | VFR/<br/>IFR| User<br/>Wpt.<br/>Names| Dep.<br/>Parking| Cruise<br/>Alt. | Ground<br/>speed  | Proc.  |
 | ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ------ |
@@ -36,11 +38,13 @@ The table below shows the capabilities of _Little Navmap_ and the supported flig
 | EFBR for<br/>EFB              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | RTE for<br/>Level-D           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | FPL for<br/>Feelthere         | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| XML for<br/>TDFi Design       | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | FPL for<br/>IVAP/X-IVAP [^3]  | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | VFP for<br/>vPilot [^3]       | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | FPL for<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
-| GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| GPX                           | 0    | X     | -     | -           | -                      | -               | -               | -                 | -      |
+| HTML                          | 0    | X     | -     | -           | -                      | -               | -               | -                 | -      |
 
 Procedure waypoints are excluded from all file formats by default, except for GPX. You have to use the GPS or FMS in the simulator to select procedures.
 
@@ -89,6 +93,13 @@ X-Plane FMS format which can be loaded into the stock GPS, the G1000 and the FMS
 _Little Navmap_ can read and write this format.
 
 Store these files into the `Output/FMS plans` directory inside the X-Plane directory.
+
+Note that although _Little Navmap_ can read and write this format, it has limitations:
+
+* Airports are adapted to use real ICAO idents instead the X-Plane idents in rare cases when saving. As a result _Little Navmap_ might not be able to read these.
+* _Little Navmap_ cannot determine the cruise altitude of a flight plan in some cases. You might see errors about violated altitude restrictions after loading. Adjust the cruise altitude manually if this is the case.
+
+Always save a copy in the default PLN format. This allows _Little Navmap_ to restore all flight plan properties like procedures and alternate airports.
 
 ### ![FMS 3](../images/icons/saveasfms.png "FMS 3") FMS 3 \(X-Plane\) {#flight-plan-formats-fms3}
 
@@ -265,11 +276,18 @@ Flight plan for Level-D aircraft. This format cannot save procedures. Save this 
 
 ### FPL \(Feelthere/Wilco Aircraft\) {#flight-plan-formats-feelthere}
 
-The formats above cannot save procedures. The location depends on the aircraft.
+The format above cannot save procedures. The location depends on the aircraft.
 
-### FPL \(IvAp or X-IvAp\) {#flight-plan-formats-ivap}
+### XML \(TDFi Design Boeing 717\) {#flight-plan-formats-tdfi}
+
+Flight plan format for the TDFi Design Boeing 717. The format above cannot save procedures.
+
+### FPL \(IvAp\) {#flight-plan-formats-ivap}
+### FPL \(X-IvAp\) {#flight-plan-formats-xivap}
 
 Flight plan format for the IVAO online network clients [IvAp or X-IvAp](https://www.ivao.aero/softdev/ivap.asp).
+
+The file format for these two clients differs slightly.
 
 The [Flight Plan Online Export](ROUTEEXPORT.md) dialog will appear before where you can add all needed information.
 
@@ -300,6 +318,10 @@ The GPS Exchange Format can be read by Google Earth and most other GIS applicati
 The flight plan is embedded as a route and the flown aircraft trail as a track including simulator time and altitude.
 
 The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
+
+### HTML {#flight-plan-formats-html}
+
+This is not a flight plan format. This function saves the current flight plan as a single HTML webpage with all images embedded. You can open this page in any web browser.
 
 ## Notes about the Garmin Formats GFP and FPL {#garmin-notes}
 

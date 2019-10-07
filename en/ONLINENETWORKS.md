@@ -1,16 +1,16 @@
 ## Online Networks {#online-networks}
 
-The online network functionality allows to connect to [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero) or other online networks which publish `whazzup.txt` files. This covers display of information for centers, clients and servers on the map.
+The online network functionality allows to connect to [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero), [PilotEdge](https://www.pilotedge.net/) or other online networks which publish `whazzup.txt` files. This covers display of information for centers, clients and servers on the map.
 
 Network specific information like user names, active centers/towers, frequencies, flight plans and much more are displayed world wide without limits like distance to the user aircraft.
 
-**Note that all related window tabs, menu items and toolbar buttons are hidden if online networks are disabled which is the default. **
-
 Access to online networks can be enabled and configured in the dialog `Options` on tab [Online Flying](OPTIONS.md#online-flying). Predefined options for the well known networks are available as well as freely configurable ones.
 
-![Overview of Online Network Functions](../images/online_overview.jpg "Overview of Online Network Functions")
+**Online network related functionality can be found in the following places:**
 
-_**Picture above:** An overview of all online network related windows, tabs and buttons._
+* Search dock window, tabs `Online Clients`, `Online Centers` and `Online Server`.
+* Information dock window, tabs `Online Clients` and `Online Centers`.
+* Options dialog, `Online Flying`.
 
 ### Simulator and Online Aircraft Duplicates {#online-networks-duplicates}
 
@@ -42,9 +42,9 @@ _**Picture above:** Online network clients/aircraft in search tab, map, tooltip 
 
 #### Centers {#online-networks-centers}
 
-Online centers are displayed as circular airspaces in _Little Navmap_ and provide the same functionality as the other airspaces \(tooltips, information and more\). They can be enabled  separately from the other airspaces by using the button ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") or menu item [Show Online Network Airspaces](MENUS.md#show-online-airspaces).
+Online centers are displayed as circular airspaces in _Little Navmap_ and provide the same functionality as the other airspaces \(tooltips, information and more\). They can be enabled  separately from the other airspaces by selecting `Online` as airspace source ([Airspace Source](MENUS.md#airspace-source))
 
-**Note that the circles do not represent the real airspaces and are only used to indicate the presence of an active center, tower, ground or other position.**
+**Note that the circles do not represent the real airspaces and are only used to indicate the presence of an active center, tower, ground or other position.** See next chapter how to assign airspace boundaries to a center.
 
 Detailed information for online centers/airspaces is shown on the tab `Online Centers` in the [Information Dock Window](INFO.md).
 
@@ -61,10 +61,11 @@ The following types are available and can be enabled in the drop down menus on t
 
 The size of the circle shapes can be changed in the configuration file. See [Online Network Center](CUSTOMIZE.md#customize-online-center).
 
+You can also assign centers to a boundary shape using imported OpenAIR airspaces from the user airspace database. See [Online Airspaces](SCENERY.md#load-scenery-library-online-airspaces) for more information about this.
+
 ![Customize Online Network Centers](../images/online_center.jpg "Online Network Center")
 
 _**Picture above:** Online network center/ATC in search tab, map, tooltip and information window._
-
 
 ### Online Network Client Search {#search-client}
 ### Online Network Center Search {#search-center}

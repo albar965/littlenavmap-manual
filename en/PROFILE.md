@@ -2,7 +2,9 @@
 
 This dock window shows the ground elevation, flight plan with cruise, climb, descent legs and altitude restrictions together with all flight plan waypoints. It is only available when a flight plan is loaded. The user aircraft will be shown if _Little Navmap_ is connected to the simulator.
 
-Note that the elevation display covers only the flight plan and will not change the depiction if you get off the flight plan with your simulator aircraft.
+Note that the elevation display covers only the flight plan and will not change the depiction if you get off the flight plan with your simulator aircraft. You need a valid flight plan (i.e. a departure and destination) to see the elevation profile.
+
+The elevation profile also does not cover missed approaches and legs to alternate airports. Create a new flight plan from the destination to the alternate airport if you wish to use the elevation profile.
 
 Movement of the aircraft in the elevation profile is tied to the active flight plan leg and will not be correct if flying away from the active leg.
 
@@ -25,8 +27,15 @@ In addition, the information below is shown in the top label when hovering the m
 * Ground elevation at cursor position.
 * Flight plan altitude above ground considering cruise altitude as well as climb and descent slopes.
 * Safe altitude for the flight plan leg at the cursor position corresponding to the orange line.
+* Wind direction, speed and tail- (`►`) or headwind (`◄`).
 
-**Example:** `ANDOR ► SJA, 38 nm ► 112 nm, Ground Elevation 984 ft, Above Ground Altitude 8,016 ft, Leg Safe Altitude 3,000 ft`
+**Example:** `ANDOR ► SJA, 38 nm ► 112 nm, Ground Elevation 984 ft, Above Ground Altitude 8,016 ft, Leg Safe Altitude 3,000 ft, Wind 227°M, 14 kts, ► 9 kts`
+
+### Bottom Label {#bottom-label}
+
+This is only shown if the profile could not be built due to errors in the flight plan or aircraft performance.
+
+The error messages are the same as in the [Error Display](FLIGHTPLAN.md#flight-plan-table-error) in the flight planning window.
 
 ### Zoom Sliders {#zoom-sliders}
 
@@ -69,7 +78,9 @@ Resets the view back to 100 percent showing the whole flight plan.
 
 #### ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") Center Aircraft {#center-aircraft}
 
-If this option is selected, the aircraft remains centered on the left half of the altitude profile during flight.
+If this option is selected, the aircraft remains centered on the left of the altitude profile during flight.
+
+The aircraft will be kept on the upper part of the window if the aircraft is descending and on the lower part if climbing.
 
 See also for more information on jump back in the options dialog on tab [Simulator Aircraft](OPTIONS.md#simulator-aircraft).
 
@@ -141,7 +152,7 @@ _**Picture above:** Flight plan elevation profile with line indicating the mouse
 
 ### Top of Climb and Top of Descent Paths {#toc-and-tod-paths}
 
-The elevation profile will also display the top of climb and top of descent which are calculated based on the current [Aircraft Performance](AIRCRAFTPERF.md) profile.
+The elevation profile will also display the top of climb and top of descent which are calculated based on the current [Aircraft Performance](AIRCRAFTPERF.md) profile and wind situation.
 
 Note that the TOC and TOD calculation is influenced by altitude restrictions in procedures. _Little Navmap_ will calculate a climb or descent path always adhering to restrictions. The resulting path might use a higher or lower climb or descent speed than expected.
 
@@ -149,9 +160,9 @@ The path is also forced to the lowest allowed altitude at the final approach fix
 
 You can safely follow the descent path as shown by _Little Navmap_, provided you can manage your aircraft speed at the same time. For large aircraft you might want to descent around 10 nm earlier to reduce speed to 250 knots below 10,000 feet.
 
-The climb and descent paths do not consider wind settings. Expect differences when following the paths with a strong head or tail wind.
+The climb and descent paths are affected by wind and are moved accordingly for strong head- or tailwinds. The climb path will be steeper in the elevation profile if you climb in a strong head wind, for example.
 
-You actual climb path will be steeper in the elevation profile if you climb in a strong head wind, for example.
+See chapter [Winds Aloft](WEATHER.md#wind) for more information.
 
 The plan will switch to a flat display showing only a flight plan line at cruise altitude if the TOC and/or TOD cannot be calculated or if the plan violates altitude restrictions. A red warning message is displayed if this is the case.
 
@@ -169,8 +180,7 @@ Close the `Flight Plan Elevation Profile` window if you think that it causes per
 
 Note that the online elevation data does not cover all countries and currently ends at 60 degrees north. The data contains several known errors.
 
-The calculation of online elevation points is limited to flight plan segments not longer than 2000 nautical miles to avoid overloading.
-Add more waypoints or calculate a flight plan to avoid this limitation.
+The calculation of online elevation points is limited to flight plan segments not longer than 2000 nautical miles to avoid overloading. Add more waypoints or calculate a flight plan to avoid this limitation.
 
 #### Offline Elevation Data {#flight-plan-elevation-profile-offline}
 

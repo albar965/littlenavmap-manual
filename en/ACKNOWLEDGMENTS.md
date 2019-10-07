@@ -25,6 +25,8 @@ Thanks to Daniel "Wolf" \([wolfinformatica.com](http://wolfinformatica.com)\) fo
 
 Thanks to Alfredo alias _fred_, Josemi alias _aquileo_ and Emilio alias _zxplane_ from [X-PLANE.es](http://www.x-plane.es/) for the Spanish translation of the manual.
 
+Many thanks to Valerio Messina and Flavio Borgna for the Italian translation.
+
 Thank you! to Eddy Crequie for doing the Dutch translation.
 
 Ein herzliches Dankeschön and Jannik Prinz for setting up the Tavis CI builds.
@@ -58,8 +60,6 @@ No [Qt application framework](https://www.qt.io) and I could not even draw a sim
 Let's not forget about all the services that provide us all the online maps for free:
 
 [Stamen Design](http://maps.stamen.com), [OpenTopoMap](https://www.opentopomap.org) and [CARTO](https://carto.com/).
-
-A thank-you to the [GIScience / Geoinformatics Research Group](https://www.geog.uni-heidelberg.de/gis/index_en.html) of Heidelberg University for kindly giving me permission to use their map [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
 
 And last but not least: If there were no [OpenStreetMap](https://www.openstreetmap.org) and its thousands of contributors none of us would have any maps at all.
 

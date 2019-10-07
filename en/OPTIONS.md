@@ -1,34 +1,43 @@
 ## ![Options](../images/icons/settings.png "Options") Options Dialog {#options-dialog}
 
-Most options are self-explaining and tooltips contain more detailed explanations if applicable.
+This dialog consists of several pages with configuration options which can be selected in the list on the left side. Each entry in the page list has a tooltip for easier navigation.
 
-You can immediately check the effect of your changes on the map display by moving the dialog
-`Options` to the side and pressing `Apply`.
+**Most options are self-explaining and tooltips contain more detailed explanations if applicable.**
 
-The button `Restore Defaults` only restores the options of this dialog back to default. Other
-settings like map display, table views or dock window positions are not affected. To reset all
-saved settings completely see [Troubleshoot](APPENDIX.md#troubleshoot).
+You can immediately check the effect of your changes on the map display by moving the dialog `Options` to the side and pressing `Apply`.
 
-### Startup {#startup}
+The button `Restore Defaults` restores only the options of this dialog back to default. Other settings like map display, table views or dock window positions are not affected. You can press `Cancel` to close the dialog and undo this action.
+
+To reset all saved settings completely see [Reset all Settings and Restart](MENUS.md#reset-and-restart).
+
+The following chapters give a brief description of each page.
+
+### ![Startup](../images/icons/littlenavmap.png "Startup") Startup {#startup}
 
 Allows to customize what should be loaded and shown on startup of _Little Navmap_.
 
-You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information. 
+You can also configure the frequency of the automatic update check and channels. See [Checking for Updates](UPDATE.md) for more information.
 Change the settings here if you wish to get notifications about beta releases.
 
-### User Interface {#user-interface}
+### ![User Interface](../images/icons/statusbar.png "User Interface") User Interface {#user-interface}
 
-Has options for text sizes in information windows and flight plan as well as the search result table.
+Has options for high DPI support, text sizes in information windows and flight plan as well as the search result table.
 
-This tab also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
+This page also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
 
 ![User Interface](../images/optionsui.jpg "User Interface")
 
-_**Picture above:** Tab _`User Interface`_ using the style _`Night`_._
+_**Picture above:** Page _`User Interface`_._
 
-### Map {#map}
+### ![Map](../images/icons/mapsettings.png "Map") Map {#map}
 
-Has map related customization options. Allows to set the click sensitivity, zoom distances and more.
+Has map related customization options. Allows to set the tooltips, scroll performance and more.
+
+### ![Map Navigation](../images/icons/mapnavigation.png "Map Navigation") Map Navigation {#map-navigation}
+
+Contains all options for moving and zooming around in the map as well as click sensitivity and zoom distances.
+
+Three navigation modes are available. Tooltips give more information about these.
 
 #### Avoid blurred map display by zooming out to next best step {#blurred-map}
 
@@ -36,27 +45,57 @@ Checking this helps to get a sharp background image for online maps \(e.g. from 
 
 As a result the map might be zoomed out farther than expected in some cases.
 
-### Map Display {#map-display}
+### ![Map Display](../images/icons/mapdisplay.png "Map Display") Map Display {#map-display}
 
-This tab contains options for symbol and text sizes, flight plan and aircraft trail colors and more.
-
-The right side of the tab contains a tree view that allows to select the text labels that should be shown at
-airports, user aircraft and AI/multiplayer aircraft.
+This page contains options for symbol sizes, text sizes, flight plan, user aircraft trail colors and more.
 
 ![Map Display](../images/optionmapdisplay.jpg "Map Display")
 
-_**Picture above:** Tab _`Map Display`_._
+_**Picture above:** Page _`Map Display`_._
 
-### Units {#units}
+### ![Map Display 2](../images/icons/mapdisplay2.png "Map Display 2") Map Display 2 {#map-display-2}
 
-You can change all units that are used by _Little Navmap_ on this tab between nautical, imperial and metric.
+More display options for user features like range rings and more.
+
+The right side of the page contains a tree view that allows to select the text labels that should be shown at airports, user aircraft, AI/multiplayer aircraft and other map features.
+
+Tooltips give explanations for the various settings in the tree.
+
+![Map Display 2](../images/optionmapdisplay2.jpg "Map Display 2")
+
+_**Picture above:** Page _`Map Display 2`_._
+
+### ![Map Display Online](../images/icons/airspaceonline.png "Map Display Online") Map Display Online {#map-display-online}
+
+This page allows to change the default center circle sizes for online flying.
+
+Two options below `Online Center Boundary Lookup in User Airspaces` can be used to assign OpenAir airspaces from the user airspace database to centers by matching filename or airspace name with the callsign of the center.
+
+* `By airspace name vs. callsign`: Use the airspace name within a file to assign the geometry to a center by callsign.
+* `By airspace &file name vs. callsign`: Use the airspace filename minus the `.txt` extension to assign the geometry to a center by callsign.
+
+See [Online Airspaces](SCENERY.md#load-scenery-library-online-airspaces) for more information.
+
+### ![Units](../images/icons/units.png "Units") Units {#units}
+
+You can change all units that are used by _Little Navmap_ on this page between nautical, imperial and metric.
 Mixed settings like meter for altitude and nautical miles for distance are possible.
 
 **Note that any numbers used in the program are not converted when changing units. That means that you will
-have a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation` from feet to meter.
+get a minimum altitude buffer of 1000 meter after changing the setting `Altitude and Elevation` from feet to meter.
 This also applies to flight plan altitude. Therefore, do not forget to adapt these numbers after changing units.**
 
-### Simulator Aircraft {#simulator-aircraft}
+* `Show other fuel units too`: Shows kilogram and liter as small text besides main units if lbs and gallon are selected and vice versa. This is applied only to the most important fuel values like block and trip fuel, for example.
+* `Show true course and heading besides magnetic course in information displays`: Add true heading as small text besides magnetic heading displays. This applies to information, progress as well as map display (traffic patterns and holds).
+
+**Note about coordinate formats **`Latitude and Longitude with sign` and `Longitude and Latitude with sign`**:**
+
+* Latitude: Negative is south and positive is north.
+* Longitude: Negative is west and positive is east values.
+
+Choosing these display formats will also enable input of signed decimal values. The reading order for coordinates will also change depending on the chosen format above if entering signed numbers.
+
+### ![Simulator Aircraft](../images/icons/aircraft.png "Simulator Aircraft") Simulator Aircraft {#simulator-aircraft}
 
 Allows to change various aspects around the display of the user aircraft while flying. All settings resulting in a more fluid aircraft display will use more CPU and can potentially induce stutters in the simulator.
 
@@ -105,68 +144,35 @@ Time until aircraft following is activated again after any map interaction like 
 
 ![Simulator Aircraft](../images/options_simac.jpg "Simulator Aircraft")
 
-_**Picture above:** Tab _`Simulator Aircraft`_._
+_**Picture above:** Page _`Simulator Aircraft`_._
 
-### Cache and Files {#cache}
+### ![Flight Plan](../images/icons/route.png "Flight Plan") Flight Plan {#flight-plan}
 
-#### Map Display {#cache-map-display}
+Here you can set preferences for flight plan calculation, adjust the rule of thumb for the top of descent display or change the default filename for saving flight plans.
 
-Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles from the online maps like the _OpenStreetMap_, _OpenMapSurfer_  or _OpenTopoMap_.
+### ![Weather](../images/icons/weather.png "Weather") Weather {#weather}
 
-All image tiles expire after two weeks and will be reloaded from the online services then.
-
-Note that a reduction of size or erasing the disk cache is done in background and can take a while.
-
-The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
-
-The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
-
-#### Flight Plan Elevation Profile {#cache-elevation}
-
-The bottom part of this tab allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
-
-Look for posts in the [support forum at AVSIM](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/) if the original download is not available.
-
-Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
-
-![GLOBE Elevation Data](../images/optionelevation.jpg "GLOBE Elevation Data")
-
-_**Picture above:** Tab _`Cache and Files`_ with properly selected GLOBE elevation data._
-
-### Flight Plan {#flight-plan}
-
-Here you can set preferences for flight plan calculation or adjust the rule of thumb for the top of descent display.
-
-### Weather {#weather}
-
-You can select the various weather sources that should be shown in the `Information` dock window or in the map
-tooltips.
+You can select the various weather sources to be be shown in the `Information` dock window or in the map tooltips.
 
 The weather type `Flight Simulator` will either display weather from the FSX or P3D connection or from X-Planes `METAR.rwx` weather file.
 
 _Active Sky_ can only be selected if either _Active Sky Next_, _AS16_, _Active Sky for Prepar3D v4_ or _Active Sky XP_ are installed or the weather file is selected directly. Selecting the _Active Sky_ weather file directly can be useful if you run a networked setup. Use Windows shares or a cloud service to get access to the file on the remote computer.
 
-The URLs of the NOAA and VATSIM weather can be modified if you like to use another source or the services change the URLs.
+The URLs of various weather services can be modified if you like to use another source. Usually there is no need to change these values.
+
+You can change the path to the X-Plane weather file if you'd like to load it on a remote computer using a network share.
 
 The test buttons for the online weather services can also be used to find out if _Little Navmap_ can connect to Internet. Check your firewall settings if these fail.
 
 ![Weather Options](../images/optionsweather.jpg "Weather Options")
 
-_**Picture above:** Tab _`Weather`_ with manually selected Active Sky weather file on a network share._
+_**Picture above:** Page _`Weather`_._
 
-### Online Flying {#online-flying}
+### ![Online Flying](../images/icons/aircraft_online.png "Online Flying") Online Flying {#online-flying}
 
-This tab allows to change settings for online networks.
-
-Note that all related window tabs, menu items and toolbar buttons are hidden if this is set to `None`.
+This page allows to change settings for online networks.
 
 See [Online Networks](ONLINENETWORKS.md) for an overview.
-
-**Not all networks might be enabled depending on release.**
-
-![Online Network Options](../images/options_network.jpg "Online Network Options")
-
-_**Picture above:** Tab _`Online Flying`_ with VATSIM network enabled._
 
 #### Online Service {#online-service}
 
@@ -185,6 +191,10 @@ The update rate depends on configuration and is typically three minutes.
 Uses the predefined configuration for the [IVAO](https://ivao.aero) network. No other settings are needed.
 
 The update rate depends on configuration and is typically three minutes.
+
+##### PilotEdge {#online-service-pilotedge}
+
+Configuration for the [PilotEdge](https://www.pilotedge.net/) network.
 
 ##### Custom with Status File {#online-service-custom-status}
 
@@ -237,17 +247,61 @@ CONNECTED SERVERS = 41
 
 Sets the update rate that defines how often the `whazzup.txt` file is downloaded.
 
-Allowed values are 30 to 1800 seconds, 180s being the default.
+Allowed values are 5 to 1800 seconds, 180s being the default.
 
 You can use smaller update rates for private online networks to improve map display updates.
 
-**Do not use update rates smaller than two minutes for official online networks. They might decide to block the application if downloads are excessive.**
+**Do not use update rates smaller than two minutes for official online networks. They might decide to block the application or block you based on your internet address if downloads are excessive.**
 
 ##### Format {#online-service-settings-format}
 
 `IVAO` or `VATSIM`. Depends on the format used by your private network. Try both options if unsure.
 
-### Scenery Library Database {#scenery-library-database}
+### ![Web Server](../images/icons/web.png "Web Server") Web Server {#web-server}
+
+Configuration options for the internal web server of _Little Navmap_.
+
+* `Document root directory`: The root directory of the web server pages. Change this only if you would like to run a customized web server using your own style sheets and you own HTML templates.
+* `Select Directory ...`: Select root folder. _Little Navmap_ will show a warning if no `index.html` file is found in the root directory.
+* `Port number`: Default 8965. That means you have to use the address `http://localhost:8965/` in your browser to access the web page of _Little Navmap_, for example. Change this value if you get errors like `Unable to start the server. Error: The bound address is already in use.`.
+* `Use encrypted connection (HTTPS / SSL)`: Encrypted connections use a pre-computed self-signed certificate which comes with _Little Navmap_. A browser will show an error message if using this certificate and requires to add a security exception. The encrypted address is `https://localhost:8965/`, for example. Creating a self signed certificate is quite complex. Look at the various web articles by searching for `How to create a self signed certificate`.
+* `Start Server`: Start or stop the server to test the changes above. The server status (running or not running) is reverted to the previous state when pressing `Cancel` in the options dialog.
+
+Label `Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)`: Shows two links to the web server. Clicking on either opens the page in your default browser. You can always try the IP address link if the first link using the computer name does not work.
+
+See [Web Server](WEBSERVER.md) for detailed information.
+
+### ![Cache and Files](../images/icons/filesave.png "Cache and Files") Cache and Files {#cache}
+
+#### Map Display {#cache-map-display}
+
+Here you can change the cache size in RAM and on disk. These caches are used to store the downloaded images tiles from the online maps like the _OpenStreetMap_ or _OpenTopoMap_.
+
+All image tiles expire after two weeks and will be reloaded from the online services then.
+
+Note that a reduction of size or erasing the disk cache is done in background and can take a while.
+
+The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
+
+The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
+
+#### Flight Plan Elevation Profile {#cache-elevation}
+
+The bottom part of this page allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
+
+Look for posts in the [support forum at AVSIM](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/) if the original download is not available.
+
+Download the ZIP archive from the link in the dialog and extract it. Select the extracted directory using `Select GLOBE Directory ...` so, that it points to the files `a10g` to `p10g`. The label in the dialog will show an error if the path is invalid.
+
+#### User Airspaces {#cache-user-airspaces}
+
+You can select the path to the user airspace and file extensions to read. _Little Navmap_ reads all OpenAir files with the given extension in the selected directory recursively into the user airspace database.
+
+You can provide more than one file extension using a space separated list.
+
+See also [User Airspaces](SCENERY.md#load-scenery-library-user-airspaces) and [Load User Airspaces](MENUS#load-user-airspaces).
+
+### ![Scenery Library Database](../images/icons/database.png "Scenery Library Database") Scenery Library Database {#scenery-library-database}
 
 Allows to configure the loading of the scenery library database.
 
@@ -284,7 +338,7 @@ Insert the corresponding directories or files into this list to avoid unwanted h
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Picture above:** Tab _`Scenery Library Database`_ with three directories and three files excluded from loading and two directories excluded from add-on recognition._
+_**Picture above:** Page _`Scenery Library Database`_ with three directories and three files excluded from loading and two directories excluded from add-on recognition._
 
 #### Examples
 

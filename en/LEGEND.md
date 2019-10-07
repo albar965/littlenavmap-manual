@@ -50,7 +50,7 @@ You have to activate the map window (i.e. click into it or press the key `F2`) b
 | ![Flight Plan](../images/legend/route_leg.png) | Flight plan with distance, direction and magnetic course at each leg. Displayed values can be changed in dialog `Options` on tab `Map Display 2`.<br/>`°M` and `°T` indicate magnetic or true course, respectively. `R` and `GC` indicate rhumb line or great circle line. Suffixes might be hidden if only one type is selected (rhumb or great circle) |
 | ![Flight Plan Procedure](../images/legend/route_procedure_leg.png) | Flight plan procedure leg with the same information as above. |
 | ![Active Leg](../images/legend/activesegment.png) | Active flight plan leg |
-| ![Wind Barb](../images/legend/route_wind.png) | Wind direction and speed at flight plan waypoint. See chapter `High Altitude Winds` below for details about wind barbs. |
+| ![Wind Barb](../images/legend/route_wind.png) | Wind direction and speed at flight plan waypoint. See chapter `Winds Aloft` below for details about wind barbs. |
 | ![Flight Plan Departure Position](../images/legend/route_start.png) | Flight plan departure position on airport. Either parking, fuel box, helipad, water or runway. |
 | ![Top of Climb](../images/legend/routetoc.png) | Top of climb point with distance from departure. |
 | ![Top of Descent](../images/legend/routetod.png) | Top of descent point with distance to destination. |
@@ -64,7 +64,7 @@ You have to activate the map window (i.e. click into it or press the key `F2`) b
 | ![Procedure Highlight From](../images/legend/highlightprocfrom.png) ![Procedure Highlight From](../images/legend/highlightprocto.png)| Highlighted positions of a procedure leg in the preview. Small circle show _from_ and large circle _to_ position.|
 | ![Procedure Highlight Related](../images/legend/highlightprocrec.png)| Thin circle shows the recommended or related navaid of a procedure leg. This can be a VORDME for a DME arc approach leg for example.|
 | ![Elevation Profile Position](../images/legend/route_profile_mark.png)| This shows the related position on the flight plan when hovering the mouse above the elevation profile. |
-
+| ![Logbook Entry](../images/legend/logbook_entry.png) | Airports and great circle path between departure and destination for a logbook entry selected in the search result table. Label shows departure, destination and great circle distance between airports. |
 
 ### Compass Rose {#compass-rose}
 
@@ -266,7 +266,7 @@ The minimum off-route altitude grid provides an obstacle clearance altitude with
 | ![65 Knots Wind](../images/legend/weather_wind65.png) | Example: 65 knots. |
 | ![15 Knots steady Wind gusting to 30 Knots](../images/legend/weather_wind_gust.png) | Example: 15 knots steady wind (black) gusting to 30 knots (red). |
 
-### High Altitude Wind {#high-alt-wind}
+### Winds Aloft {#high-alt-wind}
 
 | Symbol | Description |
 | --- | --- |

@@ -14,8 +14,8 @@ Print the current flight plan together with departure and destination airport in
 
 #### Options
 
-* `Print Table Header`: Adds a header showing departure, destination and other information like the label on top of the tab `Plan` in the dock window `Flight Plan`.
-* `Print Fuel Report`: Print the fuel calculation report from the tab `Aircraft` in the dock window `Flight Plan`.
+* `Print Table Header`: Adds a header showing departure, destination and other information like the label on top of the tab `Plan` in the dock window `Flight Planning`.
+* `Print Fuel Report`: Print the fuel calculation report from the tab `Aircraft` in the dock window `Flight Planning`.
 * `New page after each chapter`: Add a page feed after header, flight plan, fuel report and airport information.
 * `Text Size`: Allows to increase or decrease the size of all texts except the flight plan table.
 

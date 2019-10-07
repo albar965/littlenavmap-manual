@@ -125,9 +125,15 @@ Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show Procedures](../images/icons/approach.png "Show Procedures") Show Procedures {#show-procedures}
 
-Open the procedure search tab of the search dock window and display all procedures for the airport.
+Open the procedure search tab of the search dock window and display all procedures for the airport. Only available in the airport search tab.
 
 See [Procedure Search](SEARCHPROCS.md) for more information.
+
+#### ![Create Approach](../images/icons/approachcustom.png "Create Approach") Create Approach {#show-approach-custom}
+
+Opens a dialog which allows to create a simple user defined final approach. Only available in the airport search tab.
+
+See [User Defined Approach](CUSTOMPROCEDURE.md) for more information.
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
@@ -157,11 +163,20 @@ Be aware that showing all navaids and airports can take some time especially if 
 
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
 
+#### ![Display Holdings](../images/icons/hold.png "Holdings") Display Holdings {#show-holdings}
+
+Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+
+Note that the menu item is disabled if the respective user feature is hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Set as Flight Plan Departure {#set-as-flight-plan-departure-0}
 
 #### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Set as Flight Plan Destination {#set-as-flight-plan-destination-0}
 
+#### ![Set as Flight Plan Alternate](../images/icons/airportroutealt.png "Set as Flight Plan Alternate") Set as Flight Plan Alternate {#set-as-flight-plan-alt-0}
+
 #### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan-0}
+
 #### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Append Position to Flight Plan {#append-position-to-flight-plan-0}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).

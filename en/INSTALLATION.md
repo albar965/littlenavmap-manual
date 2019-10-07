@@ -20,21 +20,9 @@ Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little N
 
 **See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
 
-In some cases you have to install the [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784).
-
-**Install the Visual C++ Redistributable Package if you get a warning about the SSL subsystem not being initialized.
-The program will not be able to use encrypted network connections \(i.e. HTTPS\) that are needed to check for updates or
-to load online maps.**
-
-**Install both 32 bit \(**`vcredist_x86.exe`**\) and 64 bit \(**`vcredist_x64.exe`**\) versions. **
-
-Usually this is already installed since many other programs require it.
-
-You also have to install the redistributable if you get an error like `Error while checking for updates ... Error creating SSL context`.
+I recommend to install the [Visual C++ Runtime Installer (All-In-One) v56](https://www.majorgeeks.com/files/details/visual_c_runtime_installer.html) package from MajorGeeks.Com if needed.
 
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 \(32-bit and 64-bit\). Windows XP is not supported.
-
-You can find redistributable packages for all versions here: [The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
 #### Other Simulators than FSX SP2 {#other-simulators-than-fsx-sp2}
 

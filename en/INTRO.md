@@ -1,6 +1,6 @@
 ## First Start {#first-start}
 
-_Little Navmap_ will copy and prepare the included Navigraph database on the first startup. See [Navigraph](MENUS.md/#navigraph) for more information about the integration.
+_Little Navmap_ will copy and prepare the included Navigraph database on the first startup. See [Navigraph](MENUS.md#navigraph) for more information about the integration.
 
 The [Scenery Library Dialog](SCENERY.md#load-scenery-library-dialog) dialog will be shown once the preparation is finished. From there you can select all recognized Flight Simulators and load their scenery libraries into _Little Navmap_'s internal database.
 
@@ -48,23 +48,9 @@ See links above for detailed instructions.
 
 ### User Interface {#user-interface}
 
-#### Dock Windows
+#### Dock Windows and Tabs
 
-The user interface of _Little Navmap_ consists of a main window and several dock windows which can be detached from the main window or arranged in any order within the main window.
-
-The docked windows can be moved around in their docked position and can be detached from the main window by simply dragging them outside of the main window, by double-clicking their title bar or by clicking on the window symbol on the top right.
-
-Double click on the docked window's title bar or click on the window symbol again to move the windows back into their docked position.
-
-All docked windows except the map window can be closed if they are not needed. You can even drop docked windows on each other to create a tabbed view. The tabs will appear at the bottom of the dock stack in this case.
-
-**Hold **`Ctrl`** while clicking on the window titlebar to prevent a window from going into docked state and keep it floating.**
-
-Toolbars are also movable by clicking on the left handle and can also be closed or detached from the main window.
-
-**Use the **`Main Menu` -&gt; `Window` **menu to restore closed windows or toolbars.**
-
-**The **`Main Menu` -&gt; `Window` -&gt; `Reset Window Layout`** menu item can be used to reset the state and positions of all dock windows and toolbars back to their default.**
+See the chapters [Dock Windows](DOCKWINDOWS.md) and [Tabs](TABS.md) for more information.
 
 #### Context Menus
 
@@ -72,10 +58,11 @@ Toolbars are also movable by clicking on the left handle and can also be closed 
 
 Context menus can be found in the following places:
 
-* Map display window - [Map Context Menu](MAPDISPLAY.md#map-context-menu)
-* Flight plan table - [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu)
-* Airport and navaid search result tables - [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu)
-* Procedure search tree - [Procedure Tree Context Menu](SEARCHPROCS.md#procedure-context-menu)
+* Map display window: [Map Context Menu](MAPDISPLAY.md#map-context-menu)
+* Flight plan table: [Flight Plan Table View Context Menu](FLIGHTPLAN.md#flight-plan-table-view-context-menu)
+* Airport, navaid and other search result tables: [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-context-menu)
+* Procedure search tree: [Procedure Tree Context Menu](SEARCHPROCS.md#procedure-context-menu)
+* Elevation Profile: [Elevation Profile](PROFILE.md#context-menu)
 
 The context menus provide functionality to get more information about an object at the clicked position or to build or edit a flight plan.
 
@@ -87,7 +74,7 @@ The program uses tooltips to display more information on buttons and other contr
 
 A more detailed description is shown on the left side of the statusbar if you hover the mouse over a menu item.
 
-Most dialogs and some dock windows show help buttons ![Help](../images/icons/help.png "Help") which will open the corresponding sections of the online manual.
+Most dialogs and dock windows show help buttons ![Help](../images/icons/help.png "Help") which will open the corresponding sections of the online manual.
 
 #### Window Title
 
@@ -109,7 +96,7 @@ Version 2.2.1, X-Plane selected, Navigraph database in use, flight plan `LOAG_LO
 
 You can change the text size permanently in the options dialog for these windows.
 
-A quick way to change the text size is to use the mousewheel and `Ctrl` key. This setting won't be saved across sessions, though.
+A quick way to change the text size is to use the mouse wheel and `Ctrl` key. This setting won't be saved across sessions, though.
 
 #### Error Messages
 
@@ -117,13 +104,9 @@ _Little Navmap_ shows error messages with white text on red background for probl
 
 Tooltips on these error messages give more help in some cases.
 
-#### Tabs
+#### Activating and raising Windows and Tabs
 
-Tabs that appear on top of a window are fixed. A tooltip gives more information about the function of a tab.
-
-Tabs at the bottom of a window appear when you drop dock windows on each other. Grab a window title bar to move a window out of the stacked display. You can change the order of these tabs by dragging them around.
-
-The mousewheel allows to cycle between tabs in a more convenient way.
+_Little Navmap_ opens and raises dock windows and tabs for certain actions like `File` -> `New Flight Plan` or `Aircraft` -> `Open Aircraft Performance ...` to avoid confusion for new users. This behavior can be disabled in the options dialog on tab `User Interface` by unchecking the option `Raise related windows on actions`.
 
 #### Copy and Paste
 
@@ -135,7 +118,7 @@ The table views for the flight plan or airport/navaid search results allow copyi
 
 ### Translation and Locale {#translation-and-locale}
 
-_Little Navmap_ is currently available in several languages. 
+_Little Navmap_ is currently available in several languages.
 
 I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available. See [Translating](https://github.com/albar965/littlenavmap/wiki/Translating) in the Github _Little Navmap_ wiki for more information.
 
@@ -189,18 +172,3 @@ See the chapter [Navigation Databases](NAVDATA.md) for more information.
 User-defined data from the files `user_fix.dat` and `user_nav.dat` is read and merged into the database if found.
 
 Note that neither ARINC nor the FAACIFP files are supported.
-
-### Magnetic Declination {#magnetic-declination}
-
-The calibrated magnetic declination of a VOR may differ from the actual declination in a region as it does in reality. Therefore, magnetic course values might differ in some cases.
-
-#### FSX and Prepar3D
-
-The declination used to calculate the magnetic course is taken from the `magdec.bgl` file in the scenery database.
-
-Updates for this file are available here: [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
-
-#### X-Plane
-
-The declination values for X-Plane \(airports and all navaids except VORs\) is calculated based on the included `magdec.bgl` file which is based on the values for the beginning of 2017.
-

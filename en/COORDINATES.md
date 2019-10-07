@@ -1,6 +1,6 @@
 ## Coordinate Formats {#coordinates-formats}
 
-This chapter briefly describes the recognized coordinate formats in flight plan position dialogs and userpoint dialogs. 
+This chapter briefly describes the recognized coordinate formats in flight plan position dialogs and userpoint dialogs.
 
 The input field shows a message below which indicates if the coordinates were recognized and shows the translated coordinates in the preset format as chosen in dialog `Options` on tab `Units`. A red message is shown in case of error.
 
@@ -14,13 +14,22 @@ _**Picture above:** Editing a user-defined flight plan position. Tooltip gives a
 
 Latitude has to be first and longitude second.
 
-N/S and E/W designators are required. Case does not matter. 
+N/S and E/W designators are required. Case does not matter.
 
 Degree, minute and second signs can be omitted if numbers are separated by spaces.
 
 A space is only required to separate latitude and longitude or degrees/minutes/seconds if no unit signs are used.
 
 Decimal separator can be period \(English\) or the locale dependent separator like e.g. comma \(German\).
+
+### Signed Decimal Formats
+
+For the coordinate formats `Latitude and Longitude with sign` and `Longitude and Latitude with sign`:
+
+* Latitude: Negative is south and positive is north.
+* Longitude: Negative is west and positive is east values.
+
+Choosing these display formats will also enable input of signed decimal values. The reading order for coordinates will also change depending on the chosen format if entering signed numbers.
 
 ### Other Formats
 

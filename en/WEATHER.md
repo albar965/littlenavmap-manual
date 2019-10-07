@@ -72,7 +72,7 @@ Note that the indication of `Departure` or `Destination` depends entirely on the
 
 _Little Navmap_ can show weather symbols for airports having a weather station for all available weather sources. Select sources for display with the [Airport Weather Source](MENUS.md#airport-weather-source) menu item.
 
-Note that airport weather is only displayed for stations and not interpolated. Stations that are not airports are not supported.
+Note that airport weather is only displayed for stations and not interpolated. Stations which are not airports are not supported.
 
 A suffix ` - Map` is added to the flight rules in the METAR and decoded weather display of the information window and tooltips to indicate which source is shown on the map.
 
@@ -81,3 +81,49 @@ See [Legend - Airport Weather](LEGEND.md#airport-weather) for an explanation of 
 ![Airport Weather](../images/weather_map.jpg "Weather tab")
 
 _**Picture above:** Weather situation around New York. All airports are VFR and low winds._
+
+### Winds Aloft {#wind}
+
+_Little Navmap_ can download and display winds aloft based on either X-Plane or the [National Oceanic and Atmospheric Administration](https://www.noaa.gov/) data. 
+
+The latter one are winds aloft forecasts which are updated four times a day and are used by most simulators and weather programs as data source. The wind speed and direction is arranged in a one-degree grid.
+
+_Little Navmap_ can display a wind barbs grid for a selected wind layer or at flight plan waypoints. Tooltips at the wind barbs show wind details for several layers at the position.
+
+Hovering the mouse over the elevation profile shows the wind at the flight plan position. See [Flight Plan Elevation Profile - Top Label](PROFILE.md#top-label).
+
+Winds are used to calculate flight time, trip fuel, block fuel, top of descent and top of climb.
+
+A manual wind setting for cruise altitude can also be used. See [Aircraft Performance - Buttons] (AIRCRAFTPERF.md#aircraft-performance-buttons).
+
+See [Legend - Winds Aloft](LEGEND.md#high-alt-wind) for an explanation of the wind symbols and [Options - Weather](OPTIONS.md#weather) for more configuration options.
+
+Select wind data source for display with [Wind Source](MENUS.md#wind-source).
+
+#### ![Wind Levels Button(../images/icons/wind.png "Wind Levels Button") Wind Levels Button {#wind-levels}
+
+Same as [Wind Levels Menu](MENUS.md#wind-levels).
+
+The menu button enables or disables wind aloft display by a wind barb grid at different layers as well as at flight plan waypoints.
+
+The drop down menu has the following items:
+
+* `At Flight Plan Waypoints`: Toggles wind barbs with a yellow border at flight plan waypoints on and off. Wind barbs below 4,000 feet above mean sea level are omitted. This function is independent of the selection below.
+* `None`: Do not show the wind barb grid. Wind data is still downloaded and processed until the source is set to `Disabled`.
+* `Ground (only NOAA)`: Show the wind barb grid for winds near ground (about 260 feet). Only available if the NOAA wind source is selected.
+* `At Flight Plan Cruise Altitude`: Show the wind barb grid for winds at the current flight plan cruise altitude.
+* `At 5,000 ft` - `At 45,000 ft`: Show wind barb grid for the selected altitude.
+
+### Tooltips {#wind-tooltips}
+
+The wind barbs show an optional tooltip with wind direction, speed and wind source if you hover the mouse over them.
+
+Direction is magnetic per default but can be changed in the options dialog on page `Units`. These tooltips show the wind for all layers where the currently shown layer is highlighted **bold**. The cruise altitude is added as an extra layer if selected for display.
+
+![Winds Aloft](../images/wind.jpg "Winds Aloft")
+
+_**Picture above:** Winds aloft display with tooltip at wind barbs in grid and wind drop down menu._
+
+![Winds Aloft at Flight Plan](../images/wind_route.jpg "Winds Aloft at Flight Plan")
+
+_**Picture above:** Wind barbs shown at flight plan waypoints and wind data in tooltip._

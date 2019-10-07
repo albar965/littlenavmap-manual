@@ -4,11 +4,27 @@
 
 This tutorial will show how to create a simple flight plan based on the map and its context menus.
 
-The flight will take us through the lovely valleys of the French alps. You can use this flight plan for any small aircraft like the free [Flight1 Cessna 162 SkyCatcher](http://www.flight1.com/view.asp?page=skycatcher) or the default Cessna 172.
+The flight plan included in the _Little Navmap_ directory: `.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) to Challes-les-Eaux (LFLE).pln`.
+
+The airport names might differ depending on simulator.
+
+The flight will take us through the valleys of the French alps. You can use this flight plan for any small aircraft like the free [Flight1 Cessna 162 SkyCatcher](http://www.flight1.com/view.asp?page=skycatcher) or the default Cessna 172 of X-Plane or Prepar3D.
 
 The flight will only go through Class E airspace. There is no need to contact ATC.
 
 The flight plan is: _Meythet \(LFLP\) Parking 11, Ramp GA Small to Challes-les-Eaux \(LFLE\), 41 nm, 0 h 24 m, Direct_
+
+### Prepare Flight
+
+I'd recommend to get use `Flight` -> `Reset all for a new Flight` ![Reset all for a new Flight](../images/icons/reload.png "Reset all for a new Flight") before each flight to get a clean base for fuel calculation and other functions. Uncheck `Create a new and empty flight plan` in the dialog if your plan is already loaded.
+
+### Default Aircraft Performance
+
+This tutorial does not cover creating or collecting aircraft performance files. See [Creating an Aircraft Performance File](TUTORIALPERF.md) if you like to do this.
+
+Therefore, we will simply use the default which gives a three degree climb and descent angle as well as 100 knots cruise speed.
+
+Select `Aircraft` -> `New Aircraft Performance ...` ![New Aircraft Performance ...](../images/icons/aircraftperfnew.png). Accept the default values by pressing `OK` in the dialog. You will see several warnings in the fuel report. Ignore these for now since the aircraft performance is sufficient to calculate the top of descent and top of climb for the elevation profile.
 
 ### Departure Airport
 
@@ -16,7 +32,7 @@ Find the departure airport:
 Click into the map and zoom to the French Alps. You can use the following functions to navigate:
 
 * The map overlay on the left.
-* The mouse \(click and drag\) to move and the mousewheel to zoom.
+* The mouse \(click and drag\) to move and the mouse wheel to zoom.
 * The cursor keys to move and the keys `+` and `-` for zooming in and out \(click into the map window to activate it before using the  keys\).
 
 Use the back ![Back](../images/icons/back.png) and forward ![Forward](../images/icons/next.png) buttons to jump in the position history like a web browser.
@@ -43,7 +59,7 @@ You can also click on the airport icon and select it for departure. A runway wil
 
 ### En Route Waypoints
 
-We add the waypoints now:
+Add the waypoints now:
 
 * Scroll along the valley to the south east across the lake Lac d'Annecy.
 * Click `Append Position to Flight Plan` ![Append Position to Flight Plan](../images/icons/routeadd.png). The clicked position will be added as an user-defined waypoint to the end of your plan.
@@ -56,7 +72,7 @@ Another function is `Add Position to Flight Plan` ![Add Position to Flight Plan]
 
 _Little Navmap_ will automatically assign names to the user-defined waypoints. You can leave these as they are or replace them with a more meaningful name.
 
-To change a waypoint name right-click on the user waypoint and select `Edit Name of User Waypoint` ![Edit Name of User Waypoint](../images/icons/routestring.png). Use nearby villages, mountains, lakes or other points of interest.
+Right-click on the user waypoint and select `Edit Flight Plan Position WP1` ![Edit Flight Plan Position](../images/icons/routestring.png) to change a waypoint name or its coordinates. Use nearby villages, mountains, lakes or other points of interest. Do not change the coordinates now.
 
 The flight simulator limits the name to a certain length and to certain characters. Nothing will be added to the name if it is too long or if you type the wrong characters.
 
@@ -93,7 +109,7 @@ Now check the cruise altitude:
 * Adjust the flight plan cruise altitude until you're above the red line.
 * Select `Flight Plan` -&gt; `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png) to get the correct altitude adjusted by the hemispherical rule.
 
-Note that the default hemispherical rule is not correct for France until you change it in the options dialog, but I'll avoid this for the sake of simplicity now.
+Note that the default hemispherical rule is not correct for France until you change it in the options dialog, but avoid this for the sake of simplicity now.
 
 ![Elevation Profile](../images/tutorial/vfrprofile.jpg)
 
@@ -110,17 +126,9 @@ Click into one of the airspaces nearby start and destination and have a look at 
 
 The situation is similar at the destination.
 
+Note that you might find different airspaces depending if you use the latest navdata or stock airspace data.
+
 ![Airspaces](../images/tutorial/vfrairspace.jpg)
-
-### Groundspeed
-
-Now adjust the speed to your expected ground speed. This allows the program to estimate flying time for the whole plan and for the legs.
-
-The speed is saved as an annotation in the PLN file. So when you load the plan into _Little Navmap_ it will restore the given speed. The speed value has no effect in the simulator.
-
-Note that the plan is static and will not change during flight.
-
-![Cruise Speed](../images/tutorial/vfrspeed.jpg)
 
 Save the plan using `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
 
@@ -139,9 +147,11 @@ See also [Connecting to a Flight Simulator](CONNECT.md).
 
 ### Looking at Places while Flying
 
-The program will stop following your aircraft if you start any action that zooms in to an airport or navaid \(double-click, toolbar button or link in the information window\):
+You can enable aircraft centering in `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png).
 
-* Double-click on the destination airport for example to zoom to the airport diagram.
-* When done click the back button ![Back](../images/icons/back.png) until you are back at your aircraft.
-* Then enable `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png) again to keep the aircraft centered.
+_Little Navmap_ will keep your aircraft and the next flight plan waypoint centered on the screen as as a default setting. You can choose between three modes for keeping the aircraft on screen in `Tools` -> `Options` -> `Simulator Aircraft` ([Options - Page Simulator Aircraft](OPTIONS.md#simulator-aircraft)).
+
+The program will stop following your aircraft for 10 seconds if you start any action that zooms in to an airport or navaid \(double-click, toolbar button or link in the information window\) or just simply move or zoom around in the map.
+
+Double-click on the destination airport to zoom to the airport diagram, for example. When done click the back button ![Back](../images/icons/back.png) until you are back at your aircraft.
 

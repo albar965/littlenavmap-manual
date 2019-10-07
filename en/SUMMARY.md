@@ -10,6 +10,8 @@
 
 ### User Interface
 
+* [Dock Windows](DOCKWINDOWS.md)
+* [Tabs](TABS.md)
 * [Menus and Toolbars](MENUS.md)
 * [Statusbar](MENUS.md#statusbar)
 * [Coordinate Formats](COORDINATES.md)
@@ -34,19 +36,16 @@
 
 ### Flight Plan
 
-* [Dock Window](FLIGHTPLAN.md)
+* [Flight Plan Tab](FLIGHTPLAN.md)
 * [Procedures](APPROACHES.md)
 * [User Defined Approach](CUSTOMPROCEDURE.md)
 * [Edit Position](EDITFPPOSITION.md)
+* [Reset for new Flight](RESET.md)
 * [Route Description](ROUTEDESCR.md)
 * [Editing on the Map](MAPFPEDIT.md)
 * [Formats](FLIGHTPLANFMT.md)
 * [Elevation Profile Dock Window](PROFILE.md)
 * [Flight Plan Online Export](ROUTEEXPORT.md)
-
-### Logbook
-
-* [Overview](LOGBOOK.md)
 
 ### Aircraft Performance
 
@@ -54,6 +53,10 @@
 * [Editing](AIRCRAFTPERFEDIT.md)
 * [Collection](AIRCRAFTPERFCOLL.md)
 * [Merge](AIRCRAFTPERFMERGE.md)
+
+### Logbook
+
+* [Overview](LOGBOOK.md)
 
 ### Information
 
@@ -81,6 +84,7 @@
 * [Overview](TUTORIALS.md)
 * [Building a VFR Flight Plan](TUTORIALVFR.md)
 * [Building an IFR Flight Plan with Approach Procedures](TUTORIALIFR.md)
+* [Creating aircraft performance](TUTORIALPERF.md)
 
 ### Appendix
 

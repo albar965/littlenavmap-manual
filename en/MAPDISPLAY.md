@@ -26,7 +26,7 @@ A single click on a user aircraft, AI aircraft or multiplayer aircraft shows det
 
 A double-click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window. The same applies for all AI or multiplayer aircraft or ships.
 
-The double-click and single-click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Main Menu` -&gt; `Flight Plan` -&gt; `Edit Flight Plan on Map`.
+The double-click and single-click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Flight Plan` -&gt; `Edit Flight Plan on Map` in the main menu.
 
 The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map` tab.
 
@@ -125,6 +125,12 @@ Open the procedure search tab of the search dock window and display all procedur
 
 See [Procedure Search](SEARCHPROCS.md) for more information.
 
+#### ![Create Approach](../images/icons/approachcustom.png "Create Approach") Create Approach {#show-approach-custom}
+
+Opens a dialog which allows to create a simple user defined final approach.
+
+See [User Defined Approach](CUSTOMPROCEDURE.md) for more information.
+
 #### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Measure GC Distance from here {#measure-gc-distance-from-here}
 
 Display distances from the selected origin as you move the mouse over the map. Left-click on the map to end measuring and keep the measurement line. All measurement lines are saved and will be restored on next start up.
@@ -143,6 +149,8 @@ The width of distance measurement lines can be changed in the dialog `Options` o
 
 See the [Nav Map Legend](LEGEND.md#map-marks) for details on measurement lines.
 
+Note that the menu item is disabled if holdings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Measure Rhumb Distance from here {#measure-rhumb-distance-from-here}
 
 A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is slightly longer than the great circle route.
@@ -157,9 +165,11 @@ The magnetic declination of an airport or navaid will be used if the measurement
 
 See [Magnetic Declination](INTRO.md#magnetic-declination) for remarks on that topic.
 
+Note that the menu item is disabled if measurement lines are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
 
-Remove the selected line. This menu item is active if you right-click on the end point of a distance measurement line \(small cross\). 
+Remove the selected line. This menu item is active if you right-click on the end point of a distance measurement line \(small cross\).
 
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
 
@@ -167,11 +177,29 @@ This menu item is enabled if clicked on an airport. Shows a dialog that allows t
 
 See [Traffic Pattern](TRAFFICPATTERN.md).
 
+Note that the menu item is disabled if traffic patterns are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Remove Airport Traffic Pattern {#remove-traffic-pattern}
 
-Enabled if clicked on the airport traffic pattern hotspot \(circle at runway threshold\) which is indicated by a hand cursor.
+Enabled if clicked on the airport traffic pattern hotspot \(white filled circle at runway threshold\) which is indicated by a hand cursor. Removes the traffic pattern from the map.
 
 See [Traffic Pattern](TRAFFICPATTERN.md).
+
+#### ![Display Holding](../images/icons/hold.png "Display Holding") Display Holding {#holding}
+
+Allows to display a holding pattern at any position on the map. The hold may also be attached to navaids.
+Opens a dialog for customization of the hold once selected.
+
+See chapter [Holding](HOLD.md) for more information.
+
+Note that the menu item is disabled if holdings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
+#### Remove Holding
+
+Enabled if clicked on the hotspot \(holding fix, white filled triangle\) which is indicated by a hand cursor.
+Removes the holding from the map.
+
+See chapter [Holding](HOLD.md) for more information.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Show Range Rings {#show-range-rings}
 
@@ -179,9 +207,13 @@ Show multiple red range rings around the clicked position. The number and distan
 
 The width of all range rings can be changed in the dialog `Options` on the tab `Map Display`.
 
+Note that the menu item is disabled if range rings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
 
 Show a ring around the clicked radio navaid \(VOR or NDB\) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
+
+Note that the menu item is disabled if range rings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
 
 #### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Remove Range Ring {#remove-range-ring}
 
@@ -201,6 +233,12 @@ The default runway will be used as starting position if the clicked object is an
 
 This menu item is active if the click is at an airport. It will either replace the flight plan destination or add the airport if the flight plan is empty.
 
+#### ![Set as Flight Plan Alternate](../images/icons/airportroutealt.png "Set as Flight Plan Alternate") Set as Flight Plan Alternate {#set-as-flight-plan-alternate}
+
+This menu item is active clicked at an airport. Selecting this item adds the airport as an alternate to the current flight plan.
+
+More than one alternate can be added to the flight plan. Legs to the alternate airports originate all from the destination.
+
 #### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Add Position to Flight Plan {#add-position-to-flight-plan}
 
 Insert the clicked object into the nearest flight plan leg. The object will be added before departure or after destination if the clicked position is near the flight plan end points.
@@ -217,7 +255,7 @@ Same as `Add Position to Flight Plan` but will always append the selected object
 
 #### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Delete from Flight Plan {#delete-from-flight-plan}
 
-Delete the selected airport, navaid or user flight plan position from the plan.
+Delete the selected airport, navaid or user flight plan position from the plan. This can be departure, destination, alternate airport or an intermediate waypoint.
 
 #### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Edit Flight Plan Position {#edit-name-of-user-waypoint}
 
@@ -225,7 +263,7 @@ Change the name or position of a user-defined waypoint. See [Edit Flight Plan Po
 
 The length of the name is limited to 10 characters when saving to a PLN file. Other flight plan formats have stronger limitations on length and allowed characters.
 
-You can also edit the coordinates directly instead of dragging the flight plan position \([Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)\). 
+You can also edit the coordinates directly instead of dragging the flight plan position \([Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)\).
 
 See [Coordinate Formats](COORDINATES.md) for a list of formats that are recognized by the edit dialog.
 
@@ -252,6 +290,12 @@ Left-click to place the userpoint at the new position. Right-click or press the 
 #### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Delete Userpoint {#delete-userpoint}
 
 Remove the user-defined waypoint from the userdata after confirmation. Only enabled if the selected object is a userpoint.
+
+#### ![Edit Log Entry](../images/icons/logdata_edit.png "Edit Log Entry") Edit Log Entry {#edit-log-entry}
+
+Active when clicked on the blue great circle line or an airport of a logbook entry highlight.
+
+Allows to edit the respective logbook entry. See [Edit Logbook Entry](LOGBOOK.md#logbook-dialog-edit).
 
 #### ![Show in Search](../images/icons/search.png "Show in Search") Show in Search {#show-in-search}
 

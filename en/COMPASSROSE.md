@@ -1,4 +1,4 @@
-## Compass Rose {#compass-rose}
+## ![Compass Rose](../images/icons/compassrose.png "Compass Rose") Compass Rose {#compass-rose}
 
 The compass rose indicates true north, magnetic north, aircraft heading and aircraft track.
 

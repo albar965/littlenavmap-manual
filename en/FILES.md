@@ -12,7 +12,7 @@ The program keeps three log files and rotates these on each startup if the file 
 
 `abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
 
-Send the log file `abarthel-little_navmap.log` if you like to report an error. 
+Send the log file `abarthel-little_navmap.log` if you like to report an error.
 
 **Please compress the log file using ZIP when sending per email.**
 
@@ -77,9 +77,21 @@ The files are:
 
 #### Userdata {#userdata}
 
-The file `little_navmap_userdata.sqlite` contains the user-defined waypoints. 
+The file `little_navmap_userdata.sqlite` contains the user-defined waypoints.
 
 _Little Navmap_ creates a backup copy on startup and keeps up to four backup files: `little_navmap_userdata_backup.sqlite` to `little_navmap_userdata_backup.sqlite.3`. You can copy these files back to the original database `little_navmap_userdata.sqlite` if you did something wrong.
+
+#### User Airspaces {#user-airspaces}
+
+The file `little_navmap_userairspace.sqlite` contains the user-defined airspaces read by using [Load User Airspaces](MENUS.md#load-user-airspaces).
+
+It is backed up in the same way as the userdata.
+
+#### Logbook {#logbook}
+
+The file `little_navmap_logbook.sqlite` is used to store logbook entries.
+
+_Little Navmap_ creates backup copies on startup and keeps up to four backup files as for the user-defined waypoints as described above.
 
 #### Other Database Files
 
@@ -102,7 +114,7 @@ The added comment is an XML comment starting with `<!-- LNMDATA` and ending with
 
 _Little Navmap_ stores metadata like version and date in the file which helps when reporting errors or for future extensions.
 
-The most important data is procedure information which allows the program to restore SIDs, STARs, approaches and transitions in an error tolerant way when loading flight plans.
+The most important data is alternate airports and procedure information which allows the program to restore SIDs, STARs, approaches and transitions in an error tolerant way when loading flight plans.
 
 Use [Export as Clean PLN](MENUS.md#export-clean-flight-plan) ![Export as Clean PLN](../images/icons/filesaveclean.png "Export as Clean PLN")  if a program is not capable of reading the annotated files.
 

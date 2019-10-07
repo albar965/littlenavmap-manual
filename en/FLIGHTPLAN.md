@@ -1,10 +1,14 @@
-## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flight Plan Dock Window {#flight-plan-dock-window}
+## ![Flight Plan Tab](../images/icons/routedock.png "Flight Plan Tab") Flight Plan Tab {#flight-plan-dock-window}
+
+The Flight Planning Dock Window contains the three tabs: `Flight Plan` (this chapter), [Fuel Report](AIRCRAFTPERF.md) and [Current Performance](AIRCRAFTPERFCOLL.md).
 
 ### Upper Part {#upper-part}
 
 The top shows a label that contains departure, departure position \(parking, runway or helipad\), destination, flight plan distance, traveling time, used procedures \(SID, STAR, approach and transitions\) as well as flight plan type.
 
-Traveling time is only shown if a valid aircraft performance profile is loaded.
+The label also displays error messages if, for example, the runway of a STAR differs from the runway of the following approach procedure.
+
+Traveling time is only shown if a valid aircraft performance profile is loaded that has at least climb, cruise and descent speeds set.
 
 The ARINC name of the approach procedure which is needed by some FMCs is shown in parentheses.
 
@@ -12,10 +16,10 @@ The ARINC name of the approach procedure which is needed by some FMCs is shown i
 
 _**Picture above:** Header of a flight plan. _`VORDME LITSY`_ has _`D34`_ as ARINC name._
 
-Besides the label there are three input fields on top of this dock window:
+Besides the label there are two input fields on top of this dock window:
 
-* **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
-* **Flight Plan Type \(IFR or VFR\):** This is saved with the flight plan.
+* **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate high Altitude](MENUS.md#calculate-high-altitude) and following chapters about flight plan calculation.
+* **Flight Plan Type \(IFR or VFR\):** This is saved with the flight plan and is only relevant for FSX or Prepar3D.
 
 ### Flight Plan Table {#flight-plan-table}
 
@@ -23,17 +27,11 @@ The table view allows the same operations as the search table view except sortin
 
 All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Use `Shift+Click` or `Ctrl+Click` to select two or more elements \(multi-selection\).
 
-The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator.
+The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator, the user aircraft is airborne and user aircraft is closer than 50 nautical miles to the flight plan.
 
 Procedure legs have dark blue color and legs of a missed approach have a dark red color.
 
-If a waypoint of a flight plan cannot be found in the database it will be displayed in red. This can happen if the used AIRAC cycles do no match. The same applies to airways. The position on the map is still correct.
-
-Airways are also displayed in red if the minimum or maximum airway altitude restrictions are violated by the selected cruise altitude.
-
-![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
-
-_**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could not be found in the database._
+Alternate airports are shown at the end of the list using gray text. Note that more than one alternate can be added to the flight plan. Legs to the alternate airports originate all from the destination.
 
 #### Table Columns {#flight-plan-table-columns}
 
@@ -41,24 +39,30 @@ _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could
   * `+` or `-` and a distance value: Shows waypoints in procedures that are relative to a fix.
   * `(IAF)`: Initial fix of a procedure or transition.
   * `(FAF)`: Final approach fix. Depending on procedure either the FAF or FACF are shown with a Maltese cross on the map and in the elevation profile.
-  * `(FACF)`: Final approach course fix. 
+  * `(FACF)`: Final approach course fix.
   * `(MAP)`: Missed approach point.
 * `Region`: Two letter region code of a navaid.
 * `Name`: Name of airport or radio navaid.
-* `Procedure`: Either `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed` plus the name of the procedure.
+* `Procedure`: Either `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed` plus the name of the procedure. Contains the text `Alternate` for alternate airports at the end of the list.
 * `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
-* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
-  * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
-  * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
-  * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
-  * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
-  * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
-  * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
+* `Restriction`:
+  * For airways:
+    * Example `10.000`: Minimum altitude for airway segment.
+    * Example `0-20.000`: Maximum airway altitude. Minimum does not apply.
+    * Example `10.000-20.000`: Minimum and maximum airway altitude.
+  * For procedures: Altitude restriction or speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
+    * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
+    * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
+    * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.
+    * **Range:** Fly at or above altitude one and at or below altitude two. Example: `A 8.000, B 10.000`.
+    * **Altitude and speed limit:** Values separated by `/`. Example: `A 8.000, B 10.000/B220`.
+    * **Speed limit only:** A prefixed `/` indicates no altitude but a speed restriction. Example: `/B250`.
 * `Type`: Type of a radio navaid. Shows `ILS` or `LOC` for ILS or localizer approaches on the last runway leg.
 * `Freq.`: Frequency or channel of a radio navaid. Also shows ILS or localizer frequency for corresponding approaches on the last runway leg.
 * `Range`: Range of a radio navaid if available.
 * `Course °M:`** This is the start course of the great circle route connecting the two waypoints of the leg. Use this course at departure if you travel long distances without navaids. Be aware that you have to change you course constantly when traveling along a great circle line.
 * `Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
+* `Course °T:` and `Direct °T:`** The same as the two fields above but using true course. Use this in areas with high magnetic variation.
 * `Distance`: Distance of the flight plan leg.
 * `Remaining`: Remaining distance to destination airport or procedure end point \(usually the runway\).
 * `Leg Time`: Flying time for this leg. Calculated based on the selected aircraft performance profile \(see [Aircraft Performance](AIRCRAFTPERF.md)\). This is a static value and not updated while flying. Empty if performance calculation failed.
@@ -68,7 +72,33 @@ _**Picture above:** The waypoint _`ALTAG`_ and parts of the airway _`V324`_could
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-_**Picture above:** The _`Flight Plan`_ dock window. The flight plan uses a SID for departure and a STAR, a transition and an approach for arrival._
+_**Picture above:** The _`Flight Planning`_ dock window. The flight plan uses a SID for departure and a STAR, a transition and an approach for arrival._
+
+#### Column Selection {#flight-plan-table-columns}
+
+Choose `Select visible Columns` from the flight plan table context menu to customize the table. You can still move and resize columns in the table. All changes are saved.
+
+![Flight Plan Column Selection](../images/flightplan_columns.jpg "Flight Plan Column Selection")
+
+_**Picture above:** The flight plan column selection dialog with tooltip._
+
+#### Error Display {#flight-plan-table-error}
+
+If a waypoint of a flight plan cannot be found in the database it will be displayed in red. This can happen if the used AIRAC cycles do no match. The same applies to airways. The position on the map is still correct.
+
+Airways are also displayed in red if the minimum altitude, maximum altitude or one-way restrictions are violated.
+
+Hover the mouse over a field in the table to see a tooltip giving more information about the error.
+
+Note that flight plans are still usable in _Little Navmap_ although saving and exporting to other formats is limited and can lead to unexpected results.
+
+![Flight Plan Errors](../images/flightplan_errors.jpg "Flight Plan Errors")
+
+_**Picture above:** The _`Flight Planning`_ with three different tooltips showing errors._
+
+![Flight Plan Errors Procedure](../images/flightplan_errors2.jpg "Flight Plan Errors Procedure")
+
+_**Picture above:** Tooltip on error message showing violations of altitude restrictions._
 
 ### Mouse Clicks {#mouse-clicks}
 
@@ -85,6 +115,14 @@ Deselect all entries in the table and remove any highlight circles from the map.
 #### ![Show Information](../images/icons/globals.png "Show Information") Show Information {#show-information-1}
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
+
+#### ![Show Procedures](../images/icons/approach.png "Show Procedures") Show Procedures {#show-procedures}
+
+Same as the [Map Context Menu](MAPDISPLAY.md#show-procedures). Only enabled for airports having procedures.
+
+#### ![Create Approach](../images/icons/approachcustom.png "Create Approach") Create Approach {#show-approach-custom}
+
+Same as the [Map Context Menu](MAPDISPLAY.md#show-approach-custom). Only enabled for airports having procedures.
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Show on Map {#show-on-map}
 
@@ -112,15 +150,15 @@ Delete all selected flight plan legs. Use `Undo` if you delete legs accidentally
 
 The whole procedure is deleted if the selected flight plan leg is a part of a procedure. Deleting a procedure deletes its transition too.
 
-#### ![Edit Position](../images/icons/routestring.png "Edit Position") Edit Position {#edit-name-of-user-waypoint}
+#### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Position") Edit Position {#edit-name-of-user-waypoint}
 
-Allows to change the name or coordinates of a user-defined waypoint. The length of the name is limited to 10 characters when saving. See [Edit Flight Plan Position](EDITFPPOSITION.md).
+Allows to change the name or coordinates of a user-defined waypoint in the flight plan. The length of the name is limited to 10 characters when saving. See [Edit Flight Plan Position](EDITFPPOSITION.md).
 
 #### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insert Flight Plan before {#insert-flight-plan}
 
 Inserts a flight plan before the selected leg into the current plan.
 
-Using `Insert Flight Plan before` or `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan. 
+Using `Insert Flight Plan before` or `Append Flight Plan` allows to load or merge complete flight plans or flight plan snippets into a new plan.
 
 Procedures are inserted from the loaded flight plan and dropped from the current one depending on insert position.
 
@@ -162,17 +200,33 @@ While not entirely realistic, this is a sensible workaround until _Little Navmap
 
 Same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
+Note that the menu item is disabled if range rings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range-1}
 
 Show the range rings for all selected radio navaids in the flight plan. Simply select all legs of the flight plan and use this function to display a range circle for each radio navaid in the flight plan.
 
 Otherwise, the same as the [Map Context Menu](MAPDISPLAY.md#map-context-menu).
 
+Note that the menu item is disabled if range rings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
+
+Same as the [Map Context Menu](MAPDISPLAY.md#show-traffic-pattern).
 
 This menu item is enabled if clicked on an airport. Shows a dialog that allows to customize and display an airport traffic pattern on the map.
 
 See [Traffic Pattern](TRAFFICPATTERN.md).
+
+Note that the menu item is disabled if traffic patterns are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
+
+#### ![Display Holding](../images/icons/hold.png "Display Holding") Display Holding {#holding}
+
+Same as the [Map Context Menu](MAPDISPLAY.md#holding).
+
+See also [Holding](HOLD.md).
+
+Note that the menu item is disabled if holdings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
 
 #### ![Copy](../images/icons/copy.png "Copy") Copy {#copy-0}
 
@@ -188,7 +242,11 @@ Deselect all currently selected flight plan legs and remove any highlight circle
 
 #### ![Reset View](../images/icons/cleartable.png "Reset View") Reset View {#reset-view-0}
 
-Reset the column order and column widths to default.
+Reset the column order, visibility and widths back to default.
+
+#### Select visible Columns
+
+See chapter [Column Selection](#flight-plan-table-columns) above.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Set Center for Distance Search {#set-center-for-distance-search-1}
 

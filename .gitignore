@@ -2,3 +2,6 @@ _book/
 node_modules/
 book_*.pdf
 .directory
+/*.pro.user
+*~
+*.kra
