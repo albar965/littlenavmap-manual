@@ -59,7 +59,7 @@ Saves the flight plan to an FSX/P3D PLN file \(XML format\). This annotated form
 
 **Always save a copy of the flight plan in the default PLN format to be able to reload all information. Writing to and reading from other formats like X-Plane PLN might result in information loss. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.**
 
-_Little Navmap_ will allow flight plans to be created that may be useful as a flight plan snippet but are unusable by the flight simulator. This occurs if a flight plan does not have a departure or destination airport. A warning dialog will be shown when saving a incomplete flight plan.
+_Little Navmap_ will allow flight plans to be created that may be useful as a flight plan snippet but are unusable by the flight simulator. This occurs if a flight plan does not have a departure or destination airport. A warning dialog will be shown when saving an incomplete flight plan.
 
 A warning dialog will also be shown if the departure airport has parking positions but none is assigned in the flight plan.
 
@@ -618,7 +618,7 @@ See also [User Airspaces](SCENERY.md#load-scenery-library-user-airspaces) and [L
 
 Hides or shows the respective user feature.
 
-Note that the menu item to add a user feature is disabled if the respective user feature is hidden on the map. The menu item is suffixed with the text `hidden on map` if this is the case.
+Note that the menu item to add an user feature is disabled if the respective user feature is hidden on the map. The menu item is suffixed with the text `hidden on map` if this is the case.
 
 #### Userpoints (Sub-Menu) {#userpoints}
 
@@ -770,7 +770,7 @@ Allows to use the user defined time as set by using `Set User defined Time` belo
 
 ##### Set User defined Time
 
-Opens a dialog to set a user defined time in UTC as a source for the sun shading.
+Opens a dialog to set an user defined time in UTC as a source for the sun shading.
 
 See [Sun Shading - Set User defined Time](SUNSHADOW.md#sun-shadow-user-defined) for more information.
 

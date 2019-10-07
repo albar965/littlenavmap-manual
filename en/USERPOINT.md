@@ -18,7 +18,7 @@ See [Search Result Table View Context Menu](SEARCH.md#search-result-table-view-c
 
 #### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Add Userpoint {#userpoints-add}
 
-Add a user-defined waypoint to the userdata.
+Add an user-defined waypoint to the userdata.
 
 Some fields of the new userpoint dialog are populated automatically depending on a selected userpoint or, if nothing is selected in the search result table, based on previous additions. This allows to quickly add similar userpoints to the database without the need to re-enter all the information.
 
@@ -67,7 +67,7 @@ The dialog will be populated automatically depending on the selected map context
 
 The field `Description` allows multi line text and special characters. Formatting like italic or bold is not supported.
 
-Links are recognized in the field `Description` and can be opened in the dock window `Information` on tab `Navaids` which is shown after clicking on a userpoint or selecting `Show Information` in one of the context menus.
+Links are recognized in the field `Description` and can be opened in the dock window `Information` on tab `Navaids` which is shown after clicking on an userpoint or selecting `Show Information` in one of the context menus.
 
 Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like `file:///C:/Users/me/Documents/Aircraft%20Notes.txt` on Windows or `file:///home/me/Aircraft%20Notes.txt` on macOS or Linux.
 
@@ -138,7 +138,7 @@ Some types are used as defaults when adding new userpoints. This depends on the 
 
 #### Airports
 
-* ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Default when creating a userpoint on top of an airport.
+* ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Default when creating an userpoint on top of an airport.
 * ![Airstrip](../images/icons/userpoint_Airstrip.png "Airstrip") **Airstrip**
 * ![Closed](../images/icons/userpoint_Closed.png "Closed") **Closed airport**
 * ![Helipad](../images/icons/userpoint_Helipad.png "Helipad") **Helipad**
@@ -153,7 +153,7 @@ Some types are used as defaults when adding new userpoints. This depends on the 
 * ![VORTAC](../images/icons/userpoint_VORTAC.png "VORTAC") **VORTAC**: VOR and TACAN.
 * ![VOR](../images/icons/userpoint_VOR.png "VOR") **VOR**: VHF omnidirectional range.
 * ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Visual reporting point.
-* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Default when creating a userpoint on top of a navaid.
+* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Default when creating an userpoint on top of a navaid.
 
 #### Points of Interest
 
@@ -176,7 +176,7 @@ Some types are used as defaults when adding new userpoints. This depends on the 
 
 The CSV data format is aligned to the format already used around the flight simulator community and other applications.
 
-Each row in the file represents a user-defined waypoint.
+Each row in the file represents an user-defined waypoint.
 
 The minimum fields for import are `Type`, `Name`, `Ident`, `Latitude` and `Longitude`. Only `Latitude` and `Longitude` need to be filled, the rest can be empty.
 
@@ -218,14 +218,14 @@ Take note of the following challenges when parsing CSV files: In the field `Tags
 | -------- | -------------------- | ------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1        | Type                 | Yes     | Yes          | One of the predefined or user-defined types. The icon for `Unknown` is used if the type does not match one of the known types.                                                 |
 | 2        | Name                 | Yes     | Yes          | Free to use field. Used for Garmin export.                                                                                                                                     |
-| 3        | Ident                | Yes     | Yes          | Required only for Garmin and X-Plane export. Has to be a unique valid identifier with maximum of five characters for these exports.                                            |
+| 3        | Ident                | Yes     | Yes          | Required only for Garmin and X-Plane export. Has to be an unique valid identifier with maximum of five characters for these exports.                                            |
 | 4        | Latitude             | Yes     | No           | Range from -90 to 90 degrees using dot `.` as decimal separator                                                                                                                |
 | 5        | Longitude            | Yes     | No           | Range from -180 to 180 degrees using dot `.` as decimal separator.                                                                                                             |
 | 6        | Altitude             | No      | Yes          | Must be a valid number if used. Unit is always feet.                                                                                                                           |
 | 7        | Magnetic variance    | No      | Yes          | Ignored on import and set to a valid calculated value on export.                                                                                                               |
 | 8        | Tags                 | No      | Yes          | Free to use field. GUI has no special tag search.                                                                                                                              |
 | 9        | Description          | No      | Yes          | Free to use field which allows line breaks.                                                                                                                                    |
-| 10       | Region               | No      | Yes          | Two letter ICAO region of a userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.                                       |
+| 10       | Region               | No      | Yes          | Two letter ICAO region of an userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.                                       |
 | 11       | Visible from         | No      | Yes          | Defines from what zoom distance in nautical miles \(shown on [Status Bar](MENUS.md#statusbar)\) the userpoint is visible. Set to 250 nm if empty on import.                    |
 | 12       | Last update timestamp| No      | Yes          | ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in GUI.|
 
@@ -265,7 +265,7 @@ I
 
 * The coordinates are read into the _Little Navmap_ userpoint coordinates.
 * The fix ident `PACEC` is read into the **Ident** field in _Little Navmap_.
-* The fix airport `ENRT` \(enroute: no airport here\) is read into the **Tags** field in _Little Navmap_.
+* The fix airport `ENRT` \(en-route: no airport here\) is read into the **Tags** field in _Little Navmap_.
 * The region `ZZ` \(invalid or no region\) is read into the **Region** field in _Little Navmap_.
 * **Type** will be set to `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") for all imported fixes.
 
@@ -279,17 +279,17 @@ The mapping is the same as for the import.
 
 All other fields are ignored.
 
-The ident is adjusted to match a up to five digit and letter combination. A generated ident is used if that is not possible or the ident is empty.
+The ident is adjusted to match an up to five digit and letter combination. A generated ident is used if that is not possible or the ident is empty.
 
 Fix airport is always `ENRT` when exporting.
 
 The region is adjusted for a two letter digit and letter combination. `ZZ` is used if that is not possible or the region is empty.
 
-**The ident has to be unique in the **`user_fix.dat`**. Therefore it is recommended to set a unique ident for each waypoint manually or leave the field empty so **_Little Navmap_** can generate an ident during export.**
+**The ident has to be unique in the **`user_fix.dat`**. Therefore it is recommended to set an unique ident for each waypoint manually or leave the field empty so **_Little Navmap_** can generate an ident during export.**
 
 ### Garmin user.wpt Data Format {#userpoints-garmin}
 
-The Garmin user waypoint file is a CSV file. Each row in the file represents a unique user waypoint.
+The Garmin user waypoint file is a CSV file. Each row in the file represents an unique user waypoint.
 
 There must be four columns of data in the file:
 

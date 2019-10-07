@@ -42,7 +42,7 @@ Final approach fix. The point where the final approach segment begins on the ins
 This term refers to a waypoint, radio navaid or an calculated point on a procedure.
 
 ### Flight Plan Position
-A user-defined waypoint which is part of the flight plan.
+An user-defined waypoint which is part of the flight plan.
 
 ### FLP
 Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft.
@@ -84,7 +84,7 @@ GA ramp, cargo ramp, fuel box or gate at an airport.
 FSX and P3D flight plan format. Can save all information in flight plans using annotations.
 
 ### POI
-Point of interest. A userpoint type.
+Point of interest. An userpoint type.
 
 ### Procedure
 A STAR, SID or approach and the respecitive transitions.
@@ -134,10 +134,10 @@ VHF omni directional radio range with distance measuring equipment- radio navaid
 Co-located VHF omnidirectional range (VOR) beacon and tactical air navigation system (TACAN) beacon.
 
 ### Userpoint
-A user-defined waypoint like a bookmark, point of interest or visual reporting point \(VRP\).
+An user-defined waypoint like a bookmark, point of interest or visual reporting point \(VRP\).
 
 ### VRP
-Visual reporting point for VFR flights. A userpoint type.
+Visual reporting point for VFR flights. An userpoint type.
 
 ### Waypoint
 Navaid defined by coordinates.

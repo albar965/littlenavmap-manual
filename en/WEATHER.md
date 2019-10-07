@@ -86,7 +86,7 @@ _**Picture above:** Weather situation around New York. All airports are VFR and 
 
 _Little Navmap_ can download and display winds aloft based on either X-Plane or the [National Oceanic and Atmospheric Administration](https://www.noaa.gov/) data. 
 
-The latter one are winds aloft forecasts which are updated four times a day and are used by most simulators and weather programs as data source. The wind speed and direction is arranged in a one-degree grid.
+The latter one are winds aloft forecasts which are updated four times a day and are used by most simulators and weather programs as data source. The wind speed and direction is arranged in an one-degree grid.
 
 _Little Navmap_ can display a wind barbs grid for a selected wind layer or at flight plan waypoints. Tooltips at the wind barbs show wind details for several layers at the position.
 

@@ -10,7 +10,7 @@ An airline flight containing all variations can use the following procedures or 
 1. Departure airport
 2. SID
 3. SID Transition
-4. En route airway system
+4. en-route airway system
 5. STAR transition
 6. STAR
 7. Transition to approach
@@ -20,7 +20,7 @@ An airline flight containing all variations can use the following procedures or 
 A small aircraft IFR flight can use the following procedures or segments:
 
 1. Departure airport
-2. En route airway system
+2. en-route airway system
 3. Transition to approach
 4. Approach
 5. Destination
@@ -39,7 +39,7 @@ You can enable saving of waypoints by checking the menu items [Save Waypoints fo
 
 ### Create Approach {#procedures-custom}
 
-A user defined approach can be created and applied to all airports, even small airstrips which do not provide approach procedures.
+An user defined approach can be created and applied to all airports, even small airstrips which do not provide approach procedures.
 
 This user defined approach consists of a final approach leg and can be customized by changing altitude and length. This approach allows _Little Navmap_ to give vertical guidance and to show ILS and/or VASI slopes at the destination.
 

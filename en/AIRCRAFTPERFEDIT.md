@@ -60,7 +60,7 @@ Fuel that is added at the discretion of the captain or the dispatcher.
 
 #### Contingency Fuel {#contingency-fuel}
 
-Contingency fuel is carried to account for additional enroute fuel consumption caused by wind, routing changes or traffic management restrictions.
+Contingency fuel is carried to account for additional en-route fuel consumption caused by wind, routing changes or traffic management restrictions.
 
 The value is given in percent of trip fuel.
 

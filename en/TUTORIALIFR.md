@@ -141,7 +141,7 @@ If you like what you see right-click again on the transition and select `Use EGP
 This will do two things:
 
 1. Add Wick as the destination airport to the flight plan. Any previous destination in the flight plan will be replaced.
-2. Add the approach and its transition to the flight plan. The procedure legs use a dark blue color and the missed approach legs use a dark red color in the flight plan table. Flight plan en route legs are black. Again, any previous procedure is replaced with this new one.
+2. Add the approach and its transition to the flight plan. The procedure legs use a dark blue color and the missed approach legs use a dark red color in the flight plan table. Flight plan en-route legs are black. Again, any previous procedure is replaced with this new one.
 
 **About adding transition and approaches:** Approaches and transitions are closely related which is already indicated by the tree structure in the procedure search tab. You can add an approach alone but a transition always belongs to an approach.
 
@@ -149,7 +149,7 @@ You have to select the transition to add or show both, approach and transition.
 
 ### Calculate a Flight Plan {#tutorial-ifr-calculate-flight-plan}
 
-Now we have the departure airport, an approach procedure and the destination all connected by a straight line. Next is the en route part of the flight plan:
+Now we have the departure airport, an approach procedure and the destination all connected by a straight line. Next is the en-route part of the flight plan:
 
 * Set `IFR` as the flight plan type in the dock window `Flight Planning`. This allows the automatic flight plan calculation to adjust the cruise altitude.
 * Click `Flight Plan` -&gt; `Calculate low Altitude` ![Calculate low Altitude](../images/icons/routelow.png) to start the automatic flight plan calculation for Victor airways. The calculation will create a route from your departure airport to the intial fix of the transition.
@@ -275,7 +275,7 @@ If ATC clears you to the initial fix of the procedure:
 
 This will give a direct connection from your current aircraft position to the start of the procedure which you can use to get course and distance to the initial fix.
 
-Below: After changing the approach procedure and adding a user-defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition \(43 nm and 314 degrees magnetic course\).
+Below: After changing the approach procedure and adding an user-defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition \(43 nm and 314 degrees magnetic course\).
 
 ![Changed Approach](../images/tutorial/ifrapproach.jpg)
 

@@ -22,7 +22,7 @@ These are:
 * `True Airspeed`: From the current aircraft performance cruise speed.
 * `Departure time`: Uses current UTC time as default. Adjust as needed.
 * `Actual`: Actual departure time. Uses same default time as above. Adjust as needed.
-* `Enroute`: Traveling time as calculated by flight plan and current aircraft performance.
+* `en-route`: Traveling time as calculated by flight plan and current aircraft performance.
 * `Endurance`: Uses same default as above. Adjust as needed.
 
 ### Buttons

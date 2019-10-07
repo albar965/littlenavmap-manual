@@ -22,7 +22,7 @@ Do not forget to activate the map window by clicking into it before using keys f
 
 A single click shows details about all map objects nearby the clicked position in the `Information` dock window. Windows and tabs are raised depending on clicked objects.
 
-A single click on a user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
+A single click on an user aircraft, AI aircraft or multiplayer aircraft shows details in the `Simulator Aircraft` dock window.
 
 A double-click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window. The same applies for all AI or multiplayer aircraft or ships.
 
@@ -245,9 +245,9 @@ Insert the clicked object into the nearest flight plan leg. The object will be a
 
 The text `Position` is replaced with an object name if an airport, navaid or userpoint is at the clicked position.
 
-A user-defined flight plan position is added to the plan if no airport or navaid is near the clicked point.
+An user-defined flight plan position is added to the plan if no airport or navaid is near the clicked point.
 
-A userpoint is converted to a user-defined flight plan position if added to the plan.
+An userpoint is converted to an user-defined flight plan position if added to the plan.
 
 #### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Append Position to Flight Plan {#append-position-to-flight-plan}
 
@@ -259,7 +259,7 @@ Delete the selected airport, navaid or user flight plan position from the plan. 
 
 #### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Edit Flight Plan Position {#edit-name-of-user-waypoint}
 
-Change the name or position of a user-defined waypoint. See [Edit Flight Plan Position](EDITFPPOSITION.html).
+Change the name or position of an user-defined waypoint. See [Edit Flight Plan Position](EDITFPPOSITION.html).
 
 The length of the name is limited to 10 characters when saving to a PLN file. Other flight plan formats have stronger limitations on length and allowed characters.
 
@@ -269,27 +269,27 @@ See [Coordinate Formats](COORDINATES.md) for a list of formats that are recogniz
 
 #### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Add Userpoint {#add-userpoint}
 
-Add a user-defined waypoint to the userdata. Some fields of the userpoint dialog are populated automatically depending on the selected map object.
+Add an user-defined waypoint to the userdata. Some fields of the userpoint dialog are populated automatically depending on the selected map object.
 
-Coordinates are always filled-in. If the selected object is an airport or navaid, a userpoint of type `Airport` or `Waypoint` respectively is created and the fields Ident, Region, Name and Altitude are filled-in.
+Coordinates are always filled-in. If the selected object is an airport or navaid, an userpoint of type `Airport` or `Waypoint` respectively is created and the fields Ident, Region, Name and Altitude are filled-in.
 
-If the selected position is empty map space, a userpoint of type `Bookmark` is created at this position. Altitude is filled-in if GLOBE offline elevation data is installed. See [Flight Plan Elevation Profile](OPTIONS.md#cache-elevation).
+If the selected position is empty map space, an userpoint of type `Bookmark` is created at this position. Altitude is filled-in if GLOBE offline elevation data is installed. See [Flight Plan Elevation Profile](OPTIONS.md#cache-elevation).
 
 See [Add Userpoints](USERPOINT.md#userpoints-dialog-add) for more information.
 
 #### ![Edit Userpoint](../images/icons/userdata_edit.png "Edit Userpoint") Edit Userpoint {#edit-userpoint}
 
-Open the edit dialog for a userpoint. Only enabled if the selected object is a userpoint.  See [Edit Userpoints](USERPOINT.md#userpoints-dialog-edit).
+Open the edit dialog for an userpoint. Only enabled if the selected object is an userpoint.  See [Edit Userpoints](USERPOINT.md#userpoints-dialog-edit).
 
 #### ![Move Userpoint](../images/icons/userdata_move.png "Move Userpoint") Move Userpoint {#move-userpoint}
 
-Move the userpoint to a new position on the map. Only enabled if the selected object is a userpoint.
+Move the userpoint to a new position on the map. Only enabled if the selected object is an userpoint.
 
 Left-click to place the userpoint at the new position. Right-click or press the escape key to cancel the operation and return the userpoint to its former position.
 
 #### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Delete Userpoint {#delete-userpoint}
 
-Remove the user-defined waypoint from the userdata after confirmation. Only enabled if the selected object is a userpoint.
+Remove the user-defined waypoint from the userdata after confirmation. Only enabled if the selected object is an userpoint.
 
 #### ![Edit Log Entry](../images/icons/logdata_edit.png "Edit Log Entry") Edit Log Entry {#edit-log-entry}
 

@@ -31,7 +31,7 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
 * `Course °M`: Magnetic course for a leg.
 * `Dist./Time`: Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in nautical miles.
 * `Ident`: Ident of the initial fix or name of the procedure. Fix name for legs.
-* `Restriction`: Either minimum altitude for en route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
+* `Restriction`: Either minimum altitude for en-route airway segment, procedure altitude restriction or procedure speed limit. A `/` separates altitude and speed restriction. The following altitude restrictions exist for procedures:
   * **Number only:** Fly at altitude or speed. Example: `5.400` or `210`.
   * **Prefix** `A`: Fly at or above altitude or speed. Example: `A 1.800`.
   * **Prefix** `B`: Fly at or below altitude or speed. Example: `B 10.000` or `B 220`.

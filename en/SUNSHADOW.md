@@ -22,7 +22,7 @@ You can choose between three time source for the sun shading. Time is not fixed 
 
 ### Set User defined Time {#sun-shadow-user-defined}
 
-The menu `View` -&gt; `Sun Shading Time` -&gt; `Set User defined Time` opens a dialog to set a user defined time in UTC as a source for the sun shading.
+The menu `View` -&gt; `Sun Shading Time` -&gt; `Set User defined Time` opens a dialog to set an user defined time in UTC as a source for the sun shading.
 
 You can move the dialog away from the map window and see the results immediately by clicking the button `Apply`.
 

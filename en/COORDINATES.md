@@ -8,7 +8,7 @@ Check the displayed translated coordinates to verify that your input was parsed 
 
 ![Edit Flight Plan Position](../images/edit_flightplan_waypoint_tooltip.jpg "Edit Flight Plan Position")
 
-_**Picture above:** Editing a user-defined flight plan position. Tooltip gives a quick help on coordinate formats._
+_**Picture above:** Editing an user-defined flight plan position. Tooltip gives a quick help on coordinate formats._
 
 ### General
 

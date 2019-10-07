@@ -1,6 +1,6 @@
 ## User Defined Approach {#user-defined-approach}
 
-A user defined approach can be created and applied to all airports, even small airstrips which do not provide approach procedures.
+An user defined approach can be created and applied to all airports, even small airstrips which do not provide approach procedures.
 
 A defined approach consists of a final approach leg which can be customized by changing altitude and length. This enables vertical guidance in the elevation profile and allows to show ILS and/or VASI slopes at the destination.
 
@@ -14,7 +14,7 @@ The approach is saved in the annotated PLN flight plan file (default format) lik
 
 ### Waypoints
 
-A user defined or custom approach consists of two waypoints which also indicate the runway name:
+An user defined or custom approach consists of two waypoints which also indicate the runway name:
 
 * `IF22`: The initial fix or start of the approach procedure. This point has an altitude restriction based on the entry altitude above the runway which is runway `22` in this example.
 * `RW22`: The runway threshold for runway `22` here.
@@ -36,4 +36,4 @@ A click on the `OK` button or a double click into the list `Runways` closes the 
 _**Picture above:** Dialog shown after right clicking on an airport and selecting _`Create Approach for Airport and use as Destination`_ on airport _`3R2`_._
 
 ![User Defined Approach](../images/proc_custom_map.jpg "User Defined Approach")
-_**Picture above:** A user defined approach for airport _`3R2`_ to runway _`22`_. Elevation profile shows approach slope and PAPI for vertical guidance._
+_**Picture above:** An user defined approach for airport _`3R2`_ to runway _`22`_. Elevation profile shows approach slope and PAPI for vertical guidance._

@@ -63,7 +63,7 @@ _Little Navmap_ reads all airspaces from the scenery library of FSX based simula
 
 #### OpenAir Airspaces {#load-scenery-library-openair-airspaces}
 
-_Little Navmap_ can read OpenAir airspaces ([OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp)) from X-Plane or a user defined directory.
+_Little Navmap_ can read OpenAir airspaces ([OpenAir airspace format](http://www.winpilot.com/UsersGuide/UserAirspace.asp)) from X-Plane or an user defined directory.
 
 Note that the publicly available airspace files can contain errors which may prevent the loading of an airspace file. These hard errors are reported after loading the scenery library. Other errors only affecting single airspaces or the geometry are reported in the log file only.
 

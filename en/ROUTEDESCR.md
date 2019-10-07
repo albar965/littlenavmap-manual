@@ -74,7 +74,7 @@ Examples: `TAU`, `BOMBI`, `AST`, `CL`, `EDDF`.
 
 Examples: `V495 CONDI`, `V338 YVR`, `V330 TRENA`.
 
-`SID.TRANS` and `STAR.TRANS`: Either the words `SID` or `STAR` or real SID, STAR and transition names where the optional transition is separated by a `.`. The generic keywords `SID` and `STAR` create a direct connection to the en route part.
+`SID.TRANS` and `STAR.TRANS`: Either the words `SID` or `STAR` or real SID, STAR and transition names where the optional transition is separated by a `.`. The generic keywords `SID` and `STAR` create a direct connection to the en-route part.
 
 Examples: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
 

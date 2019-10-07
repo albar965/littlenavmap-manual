@@ -104,7 +104,7 @@ _**Picture above:** Display of VASI slope at destination airport. Slope is 3 deg
 
 #### ![Show ILS](../images/icons/ils.png "Show ILS") Show ILS {#show-ils}
 
-Shows a ILS glideslope if an approach with a runway is selected in the flight plan and if the runway has an ILS.
+Shows an ILS glideslope if an approach with a runway is selected in the flight plan and if the runway has an ILS.
 
 The slope is drawn with the correct angle to be usable as an approach guide. The vertical opening angle is only meant for depiction and has no relation to the real ILS accuracy.
 

@@ -57,7 +57,7 @@ This will select your departure parking position which will be highlighted by a 
 
 You can also click on the airport icon and select it for departure. A runway will be automatically assigned as departure position.
 
-### En Route Waypoints
+### En-Route Waypoints
 
 Add the waypoints now:
 

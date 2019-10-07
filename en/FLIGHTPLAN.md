@@ -44,7 +44,7 @@ Alternate airports are shown at the end of the list using gray text. Note that m
 * `Region`: Two letter region code of a navaid.
 * `Name`: Name of airport or radio navaid.
 * `Procedure`: Either `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` or `Missed` plus the name of the procedure. Contains the text `Alternate` for alternate airports at the end of the list.
-* `Airway or Procedure`: Contains the airway name for en route legs or procedure instruction.
+* `Airway or Procedure`: Contains the airway name for en-route legs or procedure instruction.
 * `Restriction`:
   * For airways:
     * Example `10.000`: Minimum altitude for airway segment.
@@ -152,7 +152,7 @@ The whole procedure is deleted if the selected flight plan leg is a part of a pr
 
 #### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Position") Edit Position {#edit-name-of-user-waypoint}
 
-Allows to change the name or coordinates of a user-defined waypoint in the flight plan. The length of the name is limited to 10 characters when saving. See [Edit Flight Plan Position](EDITFPPOSITION.md).
+Allows to change the name or coordinates of an user-defined waypoint in the flight plan. The length of the name is limited to 10 characters when saving. See [Edit Flight Plan Position](EDITFPPOSITION.md).
 
 #### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Insert Flight Plan before {#insert-flight-plan}
 
