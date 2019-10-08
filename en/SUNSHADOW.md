@@ -2,9 +2,9 @@
 
 _Little Navmap_ allows to display the sun shadow on the globe. This works in both projections `Mercator` and `Spherical`.
 
-Enable the shadow in the menu `View` -&gt; [Show Sun Shading](MENUS.md#show-sun-shading).
+Enable the shadow in the menu `View` -> [Show Sun Shading](MENUS.md#show-sun-shading).
 
-You can change the time source for the sun shading in `View` -&gt; [Sun Shading Time](MENUS.md#show-sun-shading-time ).
+You can change the time source for the sun shading in `View` -> [Sun Shading Time](MENUS.md#show-sun-shading-time ).
 
 The shadow darkness can be changed in the dialog `Options` on tab `Map Display`, `Sun shading Darkness` at the bottom of the dialog.
 
@@ -22,7 +22,7 @@ You can choose between three time source for the sun shading. Time is not fixed 
 
 ### Set User defined Time {#sun-shadow-user-defined}
 
-The menu `View` -&gt; `Sun Shading Time` -&gt; `Set User defined Time` opens a dialog to set an user defined time in UTC as a source for the sun shading.
+The menu `View` -> `Sun Shading Time` -> `Set User defined Time` opens a dialog to set an user defined time in UTC as a source for the sun shading.
 
 You can move the dialog away from the map window and see the results immediately by clicking the button `Apply`.
 

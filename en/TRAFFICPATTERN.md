@@ -8,7 +8,7 @@ This will show a dialog where you can select a runway and customize the pattern.
 
 Note that the menu item is disabled if traffic patterns are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
 
-_Little Navmap_ shows a tooltip with information about the traffic pattern when hovering the mouse above the hotspot \(white filled circle\) at runway threshold.
+_Little Navmap_ shows a tooltip with information about the traffic pattern when hovering the mouse above the hotspot (white filled circle) at runway threshold.
 
 ### Traffic Pattern Dialog
 
@@ -24,7 +24,7 @@ _Little Navmap_ shows a tooltip with information about the traffic pattern when 
 * `Entry and exit indicators`: Shows dashed lines and arrows giving hints for entry and exit points.
 * `Line Color`: Color of the pattern lines and labels.
 
-Traffic patterns can be removed by either selecting `Map` -&gt; `Remove all Ranges, Measurements and Patterns` or by right click on the hotspot \(circle\) at the runway threshold.
+Traffic patterns can be removed by either selecting `Map` -> `Remove all Ranges, Measurements and Patterns` or by right click on the hotspot (circle) at the runway threshold.
 
 A click on `OK` or a double click into the list `Runways` closes the dialog and creates the traffic pattern.
 
@@ -32,7 +32,7 @@ See [Legend - Airport Traffic  Pattern](LEGEND.md#airport-traffic-pattern) for d
 
 ![Traffic Pattern Dialog](../images/pattern_dialog.jpg "Traffic Pattern Dialog")
 
-_**Picture above:** Traffic pattern dialog for _`EDFE`_ runway 08 at 1000 ft above airport elevation._
+_**Picture above:** Traffic pattern dialog for `EDFE` runway 08 at 1000 ft above airport elevation._
 
 ![Traffic Pattern](../images/pattern.jpg "Traffic Pattern")
 

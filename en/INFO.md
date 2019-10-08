@@ -6,7 +6,7 @@ This dock window contains text information about airports in several tabs as wel
 
 All information can be copied to the clipboard as formatted text. Use the context menu of the text fields or use `Ctrl+A` to select all and `Ctrl+C` to copy the content to the clipboard. Note that the formatted clipboard content is removed when _Little Navmap_ is closed.
 
-Bearing and distance \(rhumb line constant course\) to the user aircraft is shown for airports, navaids and userpoints if connected to a simulator and if the distance is below 500 NM.
+Bearing and distance (rhumb line constant course) to the user aircraft is shown for airports, navaids and userpoints if connected to a simulator and if the distance is below 500 NM.
 
 The display of additional units for fuel and weight as well as true course can be enabled in the options dialog on tab `Units`.
 
@@ -32,7 +32,7 @@ Other links open web pages with airport information in the web browser or a file
 
 ### Scenery Information {#scenery}
 
-All information about airports and navaids includes one or more links at the bottom of the object information in section `Scenery`. These links point to the matching `BGL` \(FSX, P3D\) or `dat` \(X-Plane\) files that contain information about the airport or navaid. Click the links to open the containing folder in your file manager \(e.g. Windows Explorer\). If possible, the matching file will be selected automatically.
+All information about airports and navaids includes one or more links at the bottom of the object information in section `Scenery`. These links point to the matching `BGL` (FSX, P3D) or `dat` (X-Plane) files that contain information about the airport or navaid. Click the links to open the containing folder in your file manager (e.g. Windows Explorer). If possible, the matching file will be selected automatically.
 
 Multiple links can appear for airports since these can be updated by several files from different add-on sceneries or navdata updates.
 
@@ -46,7 +46,7 @@ Sunrise and sunset for the airport are calculated based on current real date if 
 
 Preferred runways depending on wind are shown after the METAR. More details about preferred runways are on the tab `Weather`.
 
-The tab `Weather` shows decoded weather information for a selected airport. The flight rules icon \([Legend - Airport Weather](LEGEND.md#airport-weather)\) has a suffix ` - Map` if the shown weather source is the source for airport weather icons on the map. Also shown is detailed information for best runways for takeoff and landing based on wind conditions.
+The tab `Weather` shows decoded weather information for a selected airport. The flight rules icon ([Legend - Airport Weather](LEGEND.md#airport-weather)) has a suffix ` - Map` if the shown weather source is the source for airport weather icons on the map. Also shown is detailed information for best runways for takeoff and landing based on wind conditions.
 
 Additional links for helipads are available in the tab `Runways`.
 
@@ -83,7 +83,7 @@ Click the link `Remove Highlights from Map` in the information window to remove 
 
 ![Airspace Information](../images/infoairspace.jpg "Airspace Information")
 
-_**Picture above:** Two airspaces that are shown in the information after clicking into the map. Two airspaces are highlighted on the map after clicking onto the _`Map`_ link in the information text._
+_**Picture above:** Two airspaces that are shown in the information after clicking into the map. Two airspaces are highlighted on the map after clicking onto the `Map` link in the information text._
 
 #### Other Tabs {#other-tabs}
 
@@ -119,7 +119,7 @@ The aircraft and progress tabs show warnings and errors by highlighting text in 
 * Speed limit of 250 knots exceeded below 10000 feet.
 * Icing.
 
-Note that the fuel and time estimates are based on the aircraft performance if valid. \([Aircraft Performance](AIRCRAFTPERF.md)\).
+Note that the fuel and time estimates are based on the aircraft performance if valid. ([Aircraft Performance](AIRCRAFTPERF.md)).
 
 Fuel at destination is estimated by remaining fuel in tanks so far and consumption as predicted by aircraft performance for remaining distance.
 
@@ -131,9 +131,9 @@ _**Picture above:** Aircraft progress information when connected to a flight sim
 
 #### Tab AI / Multiplayer
 
-Information about an AI or multiplayer aircraft from the simulator \(not online networks\) or ship is displayed in this tab if a vehicle is clicked on the map.
+Information about an AI or multiplayer aircraft from the simulator (not online networks) or ship is displayed in this tab if a vehicle is clicked on the map.
 
-This also includes the aircraft's departure and destination airports that can be shown on the map by clicking on the blue links \(only for FSX or P3D and if a flight plan is filed\).
+This also includes the aircraft's departure and destination airports that can be shown on the map by clicking on the blue links (only for FSX or P3D and if a flight plan is filed).
 
 Note that information on AI aircraft is limited on X-Plane. Only position, altitude and heading can be displayed.
 

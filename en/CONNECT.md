@@ -8,7 +8,7 @@ _Little Navmap_ can connect directly if all programs are running on the same com
 
 #### All Simulators
 
-Open the connection dialog in _Little Navmap_ by selecting `Tools` -&gt; `Flight Simulator Connection` in the main menu and choose the simulator to which the connection should be established.
+Open the connection dialog in _Little Navmap_ by selecting `Tools` -> `Flight Simulator Connection` in the main menu and choose the simulator to which the connection should be established.
 
 ![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
 
@@ -53,13 +53,13 @@ For X-Plane you also have to install the *Little Xpconnect* plugin. See the file
 
 #### Start _Little Navconnect_ on the Flying Computer {#connect-start-navconnect}
 
-_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ \(`littlenavconnect.exe`\) on the computer running the simulator and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the computer running the simulator. You can use the IP address or the hostname.
+_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ (`littlenavconnect.exe`) on the computer running the simulator and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the computer running the simulator. You can use the IP address or the hostname.
 
 _Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have Ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. Also make sure to set up the Windows firewall properly to allow communication between `littlenavmap.exe` and `littlenavconnect.exe` on both computers.
 
 ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
-_**Picture above:** [Little Navconnect](https://albar965.github.io/littlenavconnect.html) is running and waiting for a Flight Simulator. It is running on the computer _`win10.fritz.box`_ with the IP address _`192.168.2.13`_._
+_**Picture above:** [Little Navconnect](https://albar965.github.io/littlenavconnect.html) is running and waiting for a Flight Simulator. It is running on the computer `win10.fritz.box` with the IP address `192.168.2.13`._
 
 Change the port in _Little Navconnect_'s `Options` dialog if you see an error message like shown below:
 
@@ -67,7 +67,7 @@ Change the port in _Little Navconnect_'s `Options` dialog if you see an error me
 
 #### Start _Little Navmap_ on the Client / Remote Computer {#connect-start-navmap}
 
-Open the connection dialog in _Little Navmap_ by selecting `Tools` -&gt; `Flight Simulator Connection`  in the main menu.
+Open the connection dialog in _Little Navmap_ by selecting `Tools` -> `Flight Simulator Connection`  in the main menu.
 ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
 _**Picture above:** Connect dialog with correct values to access the computer running the simulator and Little Navconnect as shown above._
@@ -79,13 +79,13 @@ Now do the following after opening the dialog:
 6. Check the value for the port. `51968` is the default value and usually does not need to be changed.
 7. Click connect. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
 
-Establishing a connection can take some time, depending on your network. The aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. If no flight is loaded yet \(i.e. the simulator still shows the opening screen\), you will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window.
+Establishing a connection can take some time, depending on your network. The aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. If no flight is loaded yet (i.e. the simulator still shows the opening screen), you will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window.
 
 Note that it can take a while until an error is shown if you used the wrong values for hostname or port.
 
-Selecting `Connect automatically` is recommended. The start order of all three programs \(simulator, _Little Navconnect_ and _Little Navmap_\) does not matter if this is checked and the programs will find each other.
+Selecting `Connect automatically` is recommended. The start order of all three programs (simulator, _Little Navconnect_ and _Little Navmap_) does not matter if this is checked and the programs will find each other.
 
-Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` in `Tools` -&gt; `Options` of _Little Navconnect_ to disable the transfer of this information across the network. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
+Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` in `Tools` -> `Options` of _Little Navconnect_ to disable the transfer of this information across the network. This can be useful for performance reasons if you use large amounts of AI but do not want to see it in _Little Navmap_.
 
 ### Connect Dialog Options {#options}
 

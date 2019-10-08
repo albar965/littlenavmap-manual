@@ -206,7 +206,7 @@ See [Logbook](FILES.md#logbook) for information about database backup files.
 
 ### CSV Data Format {#logbook-csv}
 
-English number format \(dot `.` as decimal separator\) is used in import and export to allow exchange of files on computers with different language and locale settings.
+English number format (dot `.` as decimal separator) is used in import and export to allow exchange of files on computers with different language and locale settings.
 
 _Little Navmap_ uses [UTF-8](https://en.wikipedia.org/wiki/UTF-8 ) encoding when reading and writing files. This is only relevant if you use special characters like umlauts, accents or others. Otherwise encoding does not matter.
 

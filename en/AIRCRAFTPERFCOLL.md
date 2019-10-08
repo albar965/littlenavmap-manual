@@ -24,7 +24,7 @@ Follow the steps below to collect performance for an aircraft.
 1. Start and fly as precise as possible regarding speeds and performance settings of the aircraft.
 1. The collection is completed once the field `Current flight segment:` in the report shows `Finished.`.
 1. Select `Aircraft` -> `Merge collected Aircraft Performance` in the main menu and copy all values in the dialog. See [Aircraft Performance Merge](AIRCRAFTPERFMERGE.md) for more information on merging.
-1. Edit the aircraft performance data \([Editing Aircraft Performance](AIRCRAFTPERFEDIT.md)\) and adjust the numbers to your liking or flying habits.
+1. Edit the aircraft performance data ([Editing Aircraft Performance](AIRCRAFTPERFEDIT.md)) and adjust the numbers to your liking or flying habits.
 
 **Do not forget to add at least sufficient reserve fuel. Otherwise you will run out of fuel at destination if you rely on this plan.**
 

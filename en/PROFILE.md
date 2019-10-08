@@ -94,7 +94,7 @@ The trail in the elevation profile is of no relevance for the `GPX` file export.
 
 #### ![Show VASI](../images/icons/approachguide.png "Show VASI") Show VASI {#show-vasi}
 
-Shows a VASI slope if an approach procedure with a runway \(not circle-to-land\) is selected in the flight plan and if the runway has a VASI.
+Shows a VASI slope if an approach procedure with a runway (not circle-to-land) is selected in the flight plan and if the runway has a VASI.
 
 The slope is drawn with the correct angle to be usable as an approach guide. The vertical opening angle is only meant for depiction and has no relation to the real VASI accuracy.
 
@@ -141,14 +141,14 @@ For more information see the `Navmap` tab in the `Legend` dock window or the
 
 The elevation profile uses actual altitude for display of restrictions, slope and cruise. You have to expect differences between actual and indicated altitude when flying above transition altitude using the standard altimeter setting of 29.92 inches.
 
-**Note that the profile display depends on the correct sequencing of the active flight plan leg \(magenta line\). The aircraft will be displayed in the wrong position and the aircraft trail will be erratic if the active leg is not correct or manually changed.**
+**Note that the profile display depends on the correct sequencing of the active flight plan leg (magenta line). The aircraft will be displayed in the wrong position and the aircraft trail will be erratic if the active leg is not correct or manually changed.**
 
-**The aircraft trail will be displayed incorrectly in the elevation profile if the flight plan is changed \(i.e. the flight plan length or geometry changes\).**
+**The aircraft trail will be displayed incorrectly in the elevation profile if the flight plan is changed (i.e. the flight plan length or geometry changes).**
 You can delete the profile aircraft trail in context menu [Delete Aircraft Trail](PROFILE.md#delete-aircraft-trail) while keeping the trail on the map.
 
 ![Flight Plan Elevation Profile](../images/profile.jpg "Flight Plan Elevation Profile")
 
-_**Picture above:** Flight plan elevation profile with line indicating the mouse hovering position. Orange lines show minimum safe altitude for flight plan segments. Red line shows overall minimum safe altitude. Top of climb and top of descent points shown including slope. Orange flight plan lines show procedure legs. Waypoint _`EV501`_ has an overfly condition and there are several altitude restrictions shown for the approach procedure._
+_**Picture above:** Flight plan elevation profile with line indicating the mouse hovering position. Orange lines show minimum safe altitude for flight plan segments. Red line shows overall minimum safe altitude. Top of climb and top of descent points shown including slope. Orange flight plan lines show procedure legs. Waypoint `EV501` has an overfly condition and there are several altitude restrictions shown for the approach procedure._
 
 ### Top of Climb and Top of Descent Paths {#toc-and-tod-paths}
 
@@ -168,7 +168,7 @@ The plan will switch to a flat display showing only a flight plan line at cruise
 
 ![Descent Path](../images/profile_descent.jpg "Descent Path")
 
-_**Picture above:** An approach procedure which requires the aircraft to descent early due to a restriction between 7000 and 10000 ft at _`ARTIP`_._
+_**Picture above:** An approach procedure which requires the aircraft to descent early due to a restriction between 7000 and 10000 ft at `ARTIP`._
 
 ### Elevation Data {#elevation-data}
 

@@ -13,7 +13,7 @@ This dialog appears when saving the map view to an image file, for AviTab or cop
   * `2160p, 3840 × 2160, 16∶9` and
   * `4320p, 7680 × 4320, 16:9`: Pre-defined typical image and monitor resolutions.
 * `Width` and `Height`: Use this to define the pixel size for the image if `Custom Resolution` is selected.
-* `Zoom out to avoid blurred map`: Checking this option helps to get a sharp background image for online maps \(e.g. from OpenStreetMap\). This works best with the map projection `Mercator`. As a result the map might be zoomed out farther than expected in some cases.
+* `Zoom out to avoid blurred map`: Checking this option helps to get a sharp background image for online maps (e.g. from OpenStreetMap). This works best with the map projection `Mercator`. As a result the map might be zoomed out farther than expected in some cases.
 
 Note that all options except `Current Map View` will change visible details. Navaids might appear which are not shown in the map on screen, for example.
 

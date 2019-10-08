@@ -26,7 +26,7 @@ A single click on an user aircraft, AI aircraft or multiplayer aircraft shows de
 
 A double-click zooms in showing either the airport diagram or the navaid closely and also shows details in the `Information` dock window. The same applies for all AI or multiplayer aircraft or ships.
 
-The double-click and single-click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Flight Plan` -&gt; `Edit Flight Plan on Map` in the main menu.
+The double-click and single-click functionality does not work for flight plan waypoints or airports if the flight plan edit mode is enabled. The edit mode can be disabled using the toolbar or `Flight Plan` -> `Edit Flight Plan on Map` in the main menu.
 
 The mouse click sensitivity can be adjusted in the `Options` dialog on the `Map` tab.
 
@@ -37,9 +37,9 @@ Map marks like range rings or measurement lines have hotspots to indicate that a
 The mouse cursor changes into a hand ![Hand Cursor](../images/cursorhand.jpg) to indicate a click spot.
 
 Click spots are:
-* Center of range rings \(small circle\).
-* End of a measurement line \(cross\).
-* Runway threshold point \(small circle\) for airport traffic patterns.
+* Center of range rings (small circle).
+* End of a measurement line (cross).
+* Runway threshold point (small circle) for airport traffic patterns.
 
 ### Mouse Clicks and Modifiers {#mouse-clicks-modifiers}
 
@@ -85,7 +85,7 @@ Airports, navaids or other features that are selected in the flight plan table o
 
 Waypoints that are selected in the procedure preview are highlighted with a blue/black ring.
 
-These highlight circles provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance \(ring is empty\). This allows double-click for zoom in, single-click for information dock window and all context menu entries.
+These highlight circles provide all functionality of visible map objects, even if the objects are not shown at the current zoom distance (ring is empty). This allows double-click for zoom in, single-click for information dock window and all context menu entries.
 
 You can use the button `Clear Selection` ![Clear Selection](../images/icons/clearselection.png "Clear Selection") on top of the flight plan and search windows to remove any map highlights.
 
@@ -155,7 +155,7 @@ Note that the menu item is disabled if holdings are hidden on the map (menu `Vie
 
 A rhumb line is a line of constant course and used between the waypoints of an airway or when approaching a VOR or NDB station. Distance between points is slightly longer than the great circle route.
 
-The course for a rhumb line is indicated in degrees magnetic and true \(`°M`, `°T` or `°M/T` if both values are equal\).
+The course for a rhumb line is indicated in degrees magnetic and true (`°M`, `°T` or `°M/T` if both values are equal).
 
 Note that the rhumb line connecting two points on earth is longer than the great circle path. Also, near the poles and for longer distances the rhumb line is not usable.
 
@@ -169,7 +169,7 @@ Note that the menu item is disabled if measurement lines are hidden on the map (
 
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Remove Distance measurement {#remove-distance-measurement}
 
-Remove the selected line. This menu item is active if you right-click on the end point of a distance measurement line \(small cross\).
+Remove the selected line. This menu item is active if you right-click on the end point of a distance measurement line (small cross).
 
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Display Airport Traffic Pattern {#show-traffic-pattern}
 
@@ -181,7 +181,7 @@ Note that the menu item is disabled if traffic patterns are hidden on the map (m
 
 #### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Remove Airport Traffic Pattern {#remove-traffic-pattern}
 
-Enabled if clicked on the airport traffic pattern hotspot \(white filled circle at runway threshold\) which is indicated by a hand cursor. Removes the traffic pattern from the map.
+Enabled if clicked on the airport traffic pattern hotspot (white filled circle at runway threshold) which is indicated by a hand cursor. Removes the traffic pattern from the map.
 
 See [Traffic Pattern](TRAFFICPATTERN.md).
 
@@ -196,7 +196,7 @@ Note that the menu item is disabled if holdings are hidden on the map (menu `Vie
 
 #### Remove Holding
 
-Enabled if clicked on the hotspot \(holding fix, white filled triangle\) which is indicated by a hand cursor.
+Enabled if clicked on the hotspot (holding fix, white filled triangle) which is indicated by a hand cursor.
 Removes the holding from the map.
 
 See chapter [Holding](HOLD.md) for more information.
@@ -211,13 +211,13 @@ Note that the menu item is disabled if range rings are hidden on the map (menu `
 
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Show Navaid range {#show-navaid-range}
 
-Show a ring around the clicked radio navaid \(VOR or NDB\) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
+Show a ring around the clicked radio navaid (VOR or NDB) indicating the navaid's range. A label shows ident and frequency and the ring color indicates the navaid type.
 
 Note that the menu item is disabled if range rings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
 
 #### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Remove Range Ring {#remove-range-ring}
 
-Remove the selected rings from the map. This menu item is active if you right-click on the center point of a range ring \(small circle\).
+Remove the selected rings from the map. This menu item is active if you right-click on the center point of a range ring (small circle).
 
 #### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Remove all Range Rings and Distance measurements {#remove-all-range-rings-and-distance-measurements}
 
@@ -263,7 +263,7 @@ Change the name or position of an user-defined waypoint. See [Edit Flight Plan P
 
 The length of the name is limited to 10 characters when saving to a PLN file. Other flight plan formats have stronger limitations on length and allowed characters.
 
-You can also edit the coordinates directly instead of dragging the flight plan position \([Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)\).
+You can also edit the coordinates directly instead of dragging the flight plan position ([Flight Plan Editing](MAPFPEDIT.md#map-flight-plan-editing)).
 
 See [Coordinate Formats](COORDINATES.md) for a list of formats that are recognized by the edit dialog.
 

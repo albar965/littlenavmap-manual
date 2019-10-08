@@ -1,6 +1,6 @@
 ## User-defined Waypoints {#userpoints}
 
-User-defined waypoints \(or userpoints\) allow for adding, editing, searching, exporting, and importing bookmarks, points of interest, waypoints and more. You can pick freely which types you want to see as icons on the map.
+User-defined waypoints (or userpoints) allow for adding, editing, searching, exporting, and importing bookmarks, points of interest, waypoints and more. You can pick freely which types you want to see as icons on the map.
 
 ![Overview of User-defined Waypoints](../images/userpoint_overview.jpg "Overview of User-defined Waypoints")
 
@@ -75,7 +75,7 @@ Note that you have to use the forward slash `/` instead of the backslash `\` on 
 
 Replace spaces in links with `%20` since _Little Navmap_ recognizes links until the next space.
 
-The field `Visible from` allows to define visibility on the map depending on zoom distance. The zoom distance \(viewpoint distance to earth surface\) for the current map view is shown in the [Statusbar](MENUS.md#statusbar). The user point will be visible for all zoom distances smaller than the value in `Visible from`. Maximum value is 3000 nm and minimum value is 1 nm.
+The field `Visible from` allows to define visibility on the map depending on zoom distance. The zoom distance (viewpoint distance to earth surface) for the current map view is shown in the [Statusbar](MENUS.md#statusbar). The user point will be visible for all zoom distances smaller than the value in `Visible from`. Maximum value is 3000 nm and minimum value is 1 nm.
 
 Valid coordinates are required to confirm the dialog. See [Coordinate Formats](COORDINATES.md#coordinates-formats) for a detailed description of the recognized coordinate formats. A label below the coordinates displays the parsed coordinates or an error message in case the coordinates could not be parsed.
 
@@ -87,7 +87,7 @@ The button `Reset` clears all fields with exception of the coordinates and sets 
 
 ![Add Dialog for User-defined Waypoint](../images/userpoint_add.jpg "Add Dialog for User-defined Waypoints")
 
-_**Picture above:** Add dialog that has been populated automatically by context. The user right-clicked on an airport and selected _`Add Userpoint Airport Frankfurt am Main (EDDF)`_._
+_**Picture above:** Add dialog that has been populated automatically by context. The user right-clicked on an airport and selected `Add Userpoint Airport Frankfurt am Main (EDDF)`._
 
 ### Edit Userpoints Dialog {#userpoints-dialog-edit}
 
@@ -124,7 +124,7 @@ In combination with the powerful search function, this allows for bulk changes l
 
 ![Edit Dialog for User-defined Waypoints](../images/userpoint_edit_bulk.jpg "Edit Dialog for User-defined Waypoints")
 
-_**Picture above:** Edit dialog for more than one userpoint. The fields _`Region`_ and _`Visible from`_ will be changed for all selected points. All other fields remain unchanged._
+_**Picture above:** Edit dialog for more than one userpoint. The fields `Region` and `Visible from` will be changed for all selected points. All other fields remain unchanged._
 
 ### Types {#userpoints-types}
 
@@ -182,7 +182,7 @@ The minimum fields for import are `Type`, `Name`, `Ident`, `Latitude` and `Longi
 
 All twelve fields are saved when exporting userpoints as CSV. Also, the multi line field `Description` is enclosed in quotes if needed and preserves line breaks.
 
-English number format \(dot `.` as decimal separator\) is used in import and export to allow exchange of files on computers with different language and locale settings.
+English number format (dot `.` as decimal separator) is used in import and export to allow exchange of files on computers with different language and locale settings.
 
 _Little Navmap_ uses [UTF-8](https://en.wikipedia.org/wiki/UTF-8 ) encoding when reading and writing files. This is only relevant if you use special characters like umlauts, accents or others. Otherwise encoding does not matter.
 
@@ -226,7 +226,7 @@ Take note of the following challenges when parsing CSV files: In the field `Tags
 | 8        | Tags                 | No      | Yes          | Free to use field. GUI has no special tag search.                                                                                                                              |
 | 9        | Description          | No      | Yes          | Free to use field which allows line breaks.                                                                                                                                    |
 | 10       | Region               | No      | Yes          | Two letter ICAO region of an userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.                                       |
-| 11       | Visible from         | No      | Yes          | Defines from what zoom distance in nautical miles \(shown on [Status Bar](MENUS.md#statusbar)\) the userpoint is visible. Set to 250 nm if empty on import.                    |
+| 11       | Visible from         | No      | Yes          | Defines from what zoom distance in nautical miles (shown on [Status Bar](MENUS.md#statusbar)) the userpoint is visible. Set to 250 nm if empty on import.                    |
 | 12       | Last update timestamp| No      | Yes          | ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in GUI.|
 
 ### X-Plane user_fix.dat Data Format {#userpoints-xplane}
@@ -265,8 +265,8 @@ I
 
 * The coordinates are read into the _Little Navmap_ userpoint coordinates.
 * The fix ident `PACEC` is read into the **Ident** field in _Little Navmap_.
-* The fix airport `ENRT` \(en-route: no airport here\) is read into the **Tags** field in _Little Navmap_.
-* The region `ZZ` \(invalid or no region\) is read into the **Region** field in _Little Navmap_.
+* The fix airport `ENRT` (en-route: no airport here) is read into the **Tags** field in _Little Navmap_.
+* The region `ZZ` (invalid or no region) is read into the **Region** field in _Little Navmap_.
 * **Type** will be set to `Waypoint` ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") for all imported fixes.
 
 #### Export

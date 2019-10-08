@@ -12,7 +12,7 @@ The flight will take us through the valleys of the French alps. You can use this
 
 The flight will only go through Class E airspace. There is no need to contact ATC.
 
-The flight plan is: _Meythet \(LFLP\) Parking 11, Ramp GA Small to Challes-les-Eaux \(LFLE\), 41 nm, 0 h 24 m, Direct_
+The flight plan is: _Meythet (LFLP) Parking 11, Ramp GA Small to Challes-les-Eaux (LFLE), 41 nm, 0 h 24 m, Direct_
 
 ### Prepare Flight
 
@@ -32,8 +32,8 @@ Find the departure airport:
 Click into the map and zoom to the French Alps. You can use the following functions to navigate:
 
 * The map overlay on the left.
-* The mouse \(click and drag\) to move and the mouse wheel to zoom.
-* The cursor keys to move and the keys `+` and `-` for zooming in and out \(click into the map window to activate it before using the  keys\).
+* The mouse (click and drag) to move and the mouse wheel to zoom.
+* The cursor keys to move and the keys `+` and `-` for zooming in and out (click into the map window to activate it before using the  keys).
 
 Use the back ![Back](../images/icons/back.png) and forward ![Forward](../images/icons/next.png) buttons to jump in the position history like a web browser.
 
@@ -48,7 +48,7 @@ Now:
 
 * Zoom in until you see the airport diagram showing taxiways, runway details, parking positions and more.
 * Zoom in further until you see the white parking numbers.
-* Right-click on the center of one of the green ramp parking spots \(11 is used here\).
+* Right-click on the center of one of the green ramp parking spots (11 is used here).
 * Choose `Select Airport Meythet (LFLP) / Parking 11 as Flight Plan Departure` ![Select Airport / Parking as Flight Plan Departure](../images/icons/airportroutestart.png) in the context menu.
 
 ![Meythet (LFLP) Parking](../images/tutorial/vfrmapparking.jpg)
@@ -93,7 +93,7 @@ Now there is a flight plan. Yours might look a bit different.
 
 ![VFR Flight Plan](../images/tutorial/vfrflightplan.jpg)
 
-You can also use the drag and drop feature to move points or add new ones. Enable it by checking `Flight Plan` -&gt; `Edit Flight Plan on Map` ![Edit Flight Plan on Map](../images/icons/routeedit.png) and click on a flight plan waypoint to move it. Click on a flight plan leg to add a new waypoint into this leg.
+You can also use the drag and drop feature to move points or add new ones. Enable it by checking `Flight Plan` -> `Edit Flight Plan on Map` ![Edit Flight Plan on Map](../images/icons/routeedit.png) and click on a flight plan waypoint to move it. Click on a flight plan leg to add a new waypoint into this leg.
 
 See [Map Flight Plan Editing](MAPFPEDIT.md) for more information.
 
@@ -107,7 +107,7 @@ Now check the cruise altitude:
 
 * Look at the flight plan elevation profile. There is a red line indicating the minimum safe altitude.
 * Adjust the flight plan cruise altitude until you're above the red line.
-* Select `Flight Plan` -&gt; `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png) to get the correct altitude adjusted by the hemispherical rule.
+* Select `Flight Plan` -> `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png) to get the correct altitude adjusted by the hemispherical rule.
 
 Note that the default hemispherical rule is not correct for France until you change it in the options dialog, but avoid this for the sake of simplicity now.
 
@@ -121,7 +121,7 @@ Now look if your flight plan touches any airspaces.
 
 Click into one of the airspaces nearby start and destination and have a look at the information dock window. There are several airspaces:
 
-* `Geneva TMA Sector 8` which starts at 9500 feet above mean sea level \(MSL\). This is higher than our cruise altitude and won't affect us.
+* `Geneva TMA Sector 8` which starts at 9500 feet above mean sea level (MSL). This is higher than our cruise altitude and won't affect us.
 * Two Class E airspaces. The information window notes for these: `Controlled, IFR and VFR, ATC clearance required for IFR only`. No problem because we will fly using VFR.
 
 The situation is similar at the destination.
@@ -130,28 +130,28 @@ Note that you might find different airspaces depending if you use the latest nav
 
 ![Airspaces](../images/tutorial/vfrairspace.jpg)
 
-Save the plan using `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
+Save the plan using `File` -> `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
 
 ### Flying
 
 Follow the steps below to get a moving map and see your aircraft in _Little Navmap_:
 
-* Open the dialog `Connect` using `Tools` -&gt; `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable it if not. _Little Navmap_ will find the simulator no matter if it is already started or will be started later.
+* Open the dialog `Connect` using `Tools` -> `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable it if not. _Little Navmap_ will find the simulator no matter if it is already started or will be started later.
 
 ![Connect Dialog](../images/tutorial/vfrconnect.jpg)
 * Click `Connect` which will close the dialog.
-* Enable `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep it centered if an active flight is loaded, i.e. the simulator is not in the opening screen.
+* Enable `Map` -> `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep it centered if an active flight is loaded, i.e. the simulator is not in the opening screen.
 * Start the simulator if not already done, load the flight plan and go flying.
 
 See also [Connecting to a Flight Simulator](CONNECT.md).
 
 ### Looking at Places while Flying
 
-You can enable aircraft centering in `Map` -&gt; `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png).
+You can enable aircraft centering in `Map` -> `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png).
 
 _Little Navmap_ will keep your aircraft and the next flight plan waypoint centered on the screen as as a default setting. You can choose between three modes for keeping the aircraft on screen in `Tools` -> `Options` -> `Simulator Aircraft` ([Options - Page Simulator Aircraft](OPTIONS.md#simulator-aircraft)).
 
-The program will stop following your aircraft for 10 seconds if you start any action that zooms in to an airport or navaid \(double-click, toolbar button or link in the information window\) or just simply move or zoom around in the map.
+The program will stop following your aircraft for 10 seconds if you start any action that zooms in to an airport or navaid (double-click, toolbar button or link in the information window) or just simply move or zoom around in the map.
 
 Double-click on the destination airport to zoom to the airport diagram, for example. When done click the back button ![Back](../images/icons/back.png) until you are back at your aircraft.
 

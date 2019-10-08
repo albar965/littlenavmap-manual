@@ -42,7 +42,7 @@ Bold red text indicates an error in the leg. The procedure is incomplete and sho
 
 ### Top Buttons {#top-buttons}
 
-#### Type Filter \(All Procedures\) {#procedure-filter-type}
+#### Type Filter (All Procedures) {#procedure-filter-type}
 
 The type filter is not available for an FSX or P3D stock database. A navdata update is needed to get SID and STAR procedures.
 
@@ -57,7 +57,7 @@ The type filter allows the selections below:
 
 The respective transitions are always shown.
 
-#### Runway Filter \(All Runways\) {#procedure-filter-runway}
+#### Runway Filter (All Runways) {#procedure-filter-runway}
 
 This filter is always available and helps to find procedures for a certain departure or arrival runway.
 
@@ -85,11 +85,11 @@ Text and functionality of this menu item depends on the selected procedure type 
 
 Use the context menu of the flight plan table to remove procedures. See [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs).
 
-If a transition is selected, the corresponding procedure \(approach, SID or STAR\) is added or replaced as well.
+If a transition is selected, the corresponding procedure (approach, SID or STAR) is added or replaced as well.
 
 `Insert ... into Flight Plan`:
 
-This menu item will add the selected procedure to the current flight plan. A procedure of the same type \(SID, STAR or approach with or without transition\) will be replaced if already present in the flight plan.
+This menu item will add the selected procedure to the current flight plan. A procedure of the same type (SID, STAR or approach with or without transition) will be replaced if already present in the flight plan.
 
 `Use ... as Destination` or `Use ... as Departure`:
 

@@ -20,7 +20,7 @@ See also [Measure GC Distance from here](MAPDISPLAY.md#measure-gc-distance-from-
 
 ![VOR Radials](../images/tutorial/tipvor.jpg)
 
-The same can be used when flying airways without GPS. In the example below fly 323 degrees magnetic to VOR `SFD` \(radial 143\). You are at `WAFFU` when the DME shows 13.7 nautical miles. Then turn left to 280°M until you intercept 302° to `GWC`.
+The same can be used when flying airways without GPS. In the example below fly 323 degrees magnetic to VOR `SFD` (radial 143). You are at `WAFFU` when the DME shows 13.7 nautical miles. Then turn left to 280°M until you intercept 302° to `GWC`.
 
 ![VOR Airways](../images/tutorial/tipvorairway.jpg)
 

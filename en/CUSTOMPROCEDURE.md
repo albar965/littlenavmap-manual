@@ -33,7 +33,7 @@ A click on the `OK` button or a double click into the list `Runways` closes the 
 
 ![Create User Defined Approach](../images/proc_custom.jpg "Create User Defined Approach")
 
-_**Picture above:** Dialog shown after right clicking on an airport and selecting _`Create Approach for Airport and use as Destination`_ on airport _`3R2`_._
+_**Picture above:** Dialog shown after right clicking on an airport and selecting `Create Approach for Airport and use as Destination` on airport `3R2`._
 
 ![User Defined Approach](../images/proc_custom_map.jpg "User Defined Approach")
-_**Picture above:** An user defined approach for airport _`3R2`_ to runway _`22`_. Elevation profile shows approach slope and PAPI for vertical guidance._
+_**Picture above:** An user defined approach for airport `3R2` to runway `22`. Elevation profile shows approach slope and PAPI for vertical guidance._

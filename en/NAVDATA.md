@@ -25,11 +25,11 @@ An advantage of this mode is that approach procedures always match the airport r
 
 ![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")
 
-_**Picture above:** Airport diagram for _`EDDN`_ from simulator scenery \(X-Plane\) as shown in the modes _`Do not use Navigraph Database`_ or _`Use Navigraph for Navaids and Procedures`_._
+_**Picture above:** Airport diagram for `EDDN` from simulator scenery (X-Plane) as shown in the modes `Do not use Navigraph Database` or `Use Navigraph for Navaids and Procedures`._
 
 ![Airport from Navdatabase](../images/airport_navigraph_only.jpg "Airport from Navdatabase")
 
-_**Picture above:** Airport _`EDDN`_ from the Navigraph database while _`Use Navigraph for all Features`_ is enabled. Note missing runway surface information, aprons, taxiways and parking positions._
+_**Picture above:** Airport `EDDN` from the Navigraph database while `Use Navigraph for all Features` is enabled. Note missing runway surface information, aprons, taxiways and parking positions._
 
 ## Do not use Navigraph Database {#navigraph-none}
 
@@ -43,7 +43,7 @@ This mode blends navaids and other features from the Navigraph database with the
 
 The following features are taken from the simulator database when using this mode:
 
-* Airports \(also `Search` dock window, tab `Airport`\)
+* Airports (also `Search` dock window, tab `Airport`)
 * Aprons
 * Taxiways
 * Parking positions
@@ -52,11 +52,11 @@ The following features are taken from the simulator database when using this mod
 
 The following features are taken from the Navigraph database:
 
-* Navaids \(waypoints/intersections, VOR, NDB, marker\) which affects:
+* Navaids (waypoints/intersections, VOR, NDB, marker) which affects:
  * `Search` dock window, tab `Navaid`
  * Flight plan calculation
  * Route Description
-* Procedures \(approaches, SIDs and STARs\). This affects:
+* Procedures (approaches, SIDs and STARs). This affects:
  * `Search` dock window, tab `Procedures`
  * Loading and display of procedures from flight plans.
 * Airways
@@ -65,7 +65,7 @@ The following features are taken from the Navigraph database:
 ### Limitations in this mode
 
 * _Little Navmap_ ignores any mismatches between procedures and runways due to airport updates and will not display a warning. Update an airport using payware or freeware scenery if you find that an approach or departure procedure does not start at a runway end of an airport.
-* Procedures cannot be recognized when selecting `Show Procedures` in the menu if an airport has changed its ICAO ident \(e.g. `Kulik Lake`: ident changed from `LKK` to `PAKL`\). If you suspect such a case use the mode `Use Navigraph for all Features` to get the procedures for the airport.
+* Procedures cannot be recognized when selecting `Show Procedures` in the menu if an airport has changed its ICAO ident (e.g. `Kulik Lake`: ident changed from `LKK` to `PAKL`). If you suspect such a case use the mode `Use Navigraph for all Features` to get the procedures for the airport.
 * The airport search `Procedures` only considers procedures available in the simulator. Switch to `Use Navigraph for all Features` to look for airports that have procedures from the Navigraph database.
 * ILS placement or presence might not match approach procedures if an airport has a new ILS which is not present in stock scenery or an old scenery add-on. If you encounter an ILS approach without ILS station, switch to `Use Navigraph for all Features` to overcome this limitation.
 

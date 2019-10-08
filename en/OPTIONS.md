@@ -23,11 +23,11 @@ Change the settings here if you wish to get notifications about beta releases.
 
 Has options for high DPI support, text sizes in information windows and flight plan as well as the search result table.
 
-This page also contains options to force the program language and locale settings \(number, date and time formats\) to English if you do not want to use a translated user interface.
+This page also contains options to force the program language and locale settings (number, date and time formats) to English if you do not want to use a translated user interface.
 
 ![User Interface](../images/optionsui.jpg "User Interface")
 
-_**Picture above:** Page _`User Interface`_._
+_**Picture above:** Page `User Interface`._
 
 ### ![Map](../images/icons/mapsettings.png "Map") Map {#map}
 
@@ -41,7 +41,7 @@ Three navigation modes are available. Tooltips give more information about these
 
 #### Avoid blurred map display by zooming out to next best step {#blurred-map}
 
-Checking this helps to get a sharp background image for online maps \(e.g. from OpenStreetMap\) when _Little Navmap_ zooms to or centers map features like airports, the active flight plan leg and others. This works best with the map projection `Mercator`.
+Checking this helps to get a sharp background image for online maps (e.g. from OpenStreetMap) when _Little Navmap_ zooms to or centers map features like airports, the active flight plan leg and others. This works best with the map projection `Mercator`.
 
 As a result the map might be zoomed out farther than expected in some cases.
 
@@ -51,7 +51,7 @@ This page contains options for symbol sizes, text sizes, flight plan, user aircr
 
 ![Map Display](../images/optionmapdisplay.jpg "Map Display")
 
-_**Picture above:** Page _`Map Display`_._
+_**Picture above:** Page `Map Display`._
 
 ### ![Map Display 2](../images/icons/mapdisplay2.png "Map Display 2") Map Display 2 {#map-display-2}
 
@@ -63,7 +63,7 @@ Tooltips give explanations for the various settings in the tree.
 
 ![Map Display 2](../images/optionmapdisplay2.jpg "Map Display 2")
 
-_**Picture above:** Page _`Map Display 2`_._
+_**Picture above:** Page `Map Display 2`._
 
 ### ![Map Display Online](../images/icons/airspaceonline.png "Map Display Online") Map Display Online {#map-display-online}
 
@@ -119,7 +119,7 @@ This setting is ignored when `Center map on aircraft and next flight plan waypoi
 
 #### Keep active leg on top of flight plan table {#simulator-aircraft-keep-active}
 
-The active \(magenta\) leg will be shown on top of the flight plan table when a new leg is activated.
+The active (magenta) leg will be shown on top of the flight plan table when a new leg is activated.
 
 #### Allow scrolling and zooming in the map {#simulator-aircraft-allow-scroll-zoom}
 
@@ -127,12 +127,12 @@ The map will stop following the aircraft for the given time if the user does any
 
 This option is also used in the [Flight Plan Elevation Profile](PROFILE.md).
 
-**Note if you use the default aircraft centering mode or if _Little Navmap_ falls back to this mode \(see above\):**
+**Note if you use the default aircraft centering mode or if _Little Navmap_ falls back to this mode (see above):**
 
 1. Using the mouse wheel or the `+` and `-` key to zoom will change and keep the zoom distance. The aircraft is still centered but the new zoom distance is used.
 1. Starting to look around by moving the map with mouse drag or cursor keys: This will remember the last position **and** the zoom distance. You can do any map movements and _Little Navmap_ will jump back to the last position and zoom distance where you started the movement when time is over.
 
-The same from point two applies if you jump to airports, navaids or other features by double click, context menu \(`Show on Map`\) or map link.
+The same from point two applies if you jump to airports, navaids or other features by double click, context menu (`Show on Map`) or map link.
 
 Toggle ![Center Aircraft](../images/icons/centeraircraft.png "Center Aircraft") `Center Aircraft` on and off if you find that the map jumps back to the wrong position.
 
@@ -144,7 +144,7 @@ Time until aircraft following is activated again after any map interaction like 
 
 ![Simulator Aircraft](../images/options_simac.jpg "Simulator Aircraft")
 
-_**Picture above:** Page _`Simulator Aircraft`_._
+_**Picture above:** Page `Simulator Aircraft`._
 
 ### ![Flight Plan](../images/icons/route.png "Flight Plan") Flight Plan {#flight-plan}
 
@@ -166,7 +166,7 @@ The test buttons for the online weather services can also be used to find out if
 
 ![Weather Options](../images/optionsweather.jpg "Weather Options")
 
-_**Picture above:** Page _`Weather`_._
+_**Picture above:** Page `Weather`._
 
 ### ![Online Flying](../images/icons/aircraft_online.png "Online Flying") Online Flying {#online-flying}
 
@@ -314,7 +314,7 @@ take effect.
 
 All directories including sub-directories in this list will be omitted when loading the scenery
 library into the _Little Navmap_ database. You can also use this list to speed up database loading
-if you exclude directories that do not contain airports or navaids \(landclass, elevation data and others\).
+if you exclude directories that do not contain airports or navaids (landclass, elevation data and others).
 
 You can also exclude `BGL` or `DAT` files if needed.
 
@@ -338,7 +338,7 @@ Insert the corresponding directories or files into this list to avoid unwanted h
 
 ![Scenery Library Database](../images/optionscenery.jpg "Scenery Library Database")
 
-_**Picture above:** Page _`Scenery Library Database`_ with three directories and three files excluded from loading and two directories excluded from add-on recognition._
+_**Picture above:** Page `Scenery Library Database` with three directories and three files excluded from loading and two directories excluded from add-on recognition._
 
 #### Examples
 

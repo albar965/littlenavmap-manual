@@ -23,7 +23,7 @@ The program can either consider NOAA real world wind prediction or the X-Plane w
 * Remaining fuel at each leg in flight plan table.
 * Remaining fuel at top of descent and destination in the tab `Progress` in the `Information` window as well as traveling times.
 
-Fuel is shown both as weight \(`lbs` or `kg`\) or as volume \(`gallons`, `liter`\) and can be entered in all available units independent of the program settings.
+Fuel is shown both as weight (`lbs` or `kg`) or as volume (`gallons`, `liter`) and can be entered in all available units independent of the program settings.
 
 Additional display of other fuel units can be enabled in the dialog `Options` on the tab `Units`.
 
@@ -33,7 +33,7 @@ Red warning messages are shown if aircraft performance contains wrong values tha
 
 ![Aircraft Performance Error](../images/perf_error.jpg "Aircraft Performance Error")
 
-_**Picture above:** Aircraft Performance tab showing an error about a missing value. The _`*`_ in the tab label shows unsaved changes._
+_**Picture above:** Aircraft Performance tab showing an error about a missing value. The `*` in the tab label shows unsaved changes._
 
 A default profile with 3 nautical miles per 1000 feet for descent and climb rules and no fuel consumption is default. Red warning messages will be shown if used since the profile is not complete.
 
@@ -47,7 +47,7 @@ _**Picture above:** Fuel report tab. Average headwind of 10 knots is based on NO
 
 ### Files {#aircraft-performance-files}
 
-Performance profile files \(file extension `lnmperf`\) can be saved and loaded like flight plan files.
+Performance profile files (file extension `lnmperf`) can be saved and loaded like flight plan files.
 The performance files can be dragged from a file manager like Windows Explorer or macOS Finder and dropped into the _Little Navmap_ main window to load them.
 
 **Do not save the files into the **_Little Navmap_** directory since it might be deleted when doing an update. Neither save them in **`C:\Program Files`** or one of its sub-directories. Save the files into your **`Documents`** folder or a sub-directory in this folder like **`Documents\Little Navmap\Performance`**.**
@@ -73,7 +73,7 @@ See the chapter [Weather - Winds Aloft](WEATHER.md#wind) for more information on
 The buttons on top have the same functionality as the items in the main menu [Aircraft](MENUS.md#aircraft-menu).
 
 * `Manual Wind`: This checkbox overrides the wind source and allows to set the average wind direction and speed manually. Two input fields for speed and direction are shown if this is checked.
-* ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") `Edit Aircraft Performance`: Opens the edit dialog for the currently loaded profile. You can also use the menu item `Aircraft` -&gt; `Edit Aircraft Performance ...` to change the currently loaded performance data. See [Editing Aircraft Performance](AIRCRAFTPERFEDIT.md) for a description of the edit dialog.
+* ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as") `Edit Aircraft Performance`: Opens the edit dialog for the currently loaded profile. You can also use the menu item `Aircraft` -> `Edit Aircraft Performance ...` to change the currently loaded performance data. See [Editing Aircraft Performance](AIRCRAFTPERFEDIT.md) for a description of the edit dialog.
 * ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") `New Aircraft Performance`: Creates a new performance profile with default values and opens the edit dialog. A profile with 3 nautical miles per 1000 feet for descent and climb rules and no fuel consumption is default. Red warning messages will be shown since the profile is not complete.
 * ![Open Aircraft Performance](../images/icons/aircraftperfload.png "Open Aircraft Performance") `Open Aircraft Performance`: Load a `lnmperf` file.
 * ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance") `Save Aircraft Performance`: Save current profile to a `lnmperf` file.

@@ -86,12 +86,12 @@ The colors for flight plan leg course and crab angle indicator depend on setting
 
 | Symbol | Description |
 | --- | --- |
-| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft \(jet, piston/turboprop or helicopter\). Optionally a black needle protruding from the nose can show the current ground track. |
+| ![Small GA](../images/icons/aircraft_small_user.png) ![Jet](../images/icons/aircraft_jet_user.png) ![Helicopter](../images/icons/aircraft_helicopter_user.png) | Current user vehicle if connected to the flight simulator. Labels vary and can be customized in `Options` on the tab `Map Display`. The user aircraft depends on selected aircraft (jet, piston/turboprop or helicopter). Optionally a black needle protruding from the nose can show the current ground track. |
 | ![Small GA on Ground](../images/icons/aircraft_small_ground_user.png) ![Jet on Ground](../images/icons/aircraft_jet_ground_user.png) ![Helicopter on Ground](../images/icons/aircraft_helicopter_ground_user.png) ![Ship on Ground](../images/icons/aircraft_boat_ground_user.png)| User aircraft or ship on ground |
 | ![Aircraft Track](../images/legend/aircraft_trackneedle.png) | Needle showing the current ground track of the aircraft. Aircraft nose shows heading. |
 | ![Trail](../images/legend/aircraft_track.png) | User aircraft trail if connected to the flight simulator. |
 | ![Wind](../images/legend/windpointer.png) | Wind around the user aircraft with direction in degrees magnetic and speed. |
-| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type \(jet, piston/turboprop, helicopter or ship\). |
+| ![Small GA](../images/icons/aircraft_small.png) ![Jet](../images/icons/aircraft_jet.png) ![Helicopter](../images/icons/aircraft_helicopter.png) ![Small GA](../images/icons/aircraft_small_ground.png) ![Jet](../images/icons/aircraft_jet_ground.png) ![Helicopter](../images/icons/aircraft_helicopter_ground.png) ![Ship](../images/icons/aircraft_boat_ground.png) | AI or multiplayer aircraft. Labels vary and can be customized in `Options` on the tab `Map Display`. The symbol depends on aircraft type (jet, piston/turboprop, helicopter or ship). |
 | ![Online on in Flight](../images/icons/aircraft_online.png) ![Online on Ground](../images/icons/aircraft_online_ground.png) | Online network aircraft/client. Labels vary and can be customized as above. |
 
 
@@ -113,7 +113,7 @@ The symbol is shown smaller if an airport has no runways. This is the case for s
 | ![Closed Airport with Tower](../images/legend/airport_tower_closed.png) ![Closed Airport](../images/legend/airport_closed.png) | Abandoned airport. All runways are closed. |
 | ![Airport with Fuel](../images/legend/airport_tower_fuel.png) ![Airport with soft Runways and Fuel](../images/legend/airport_soft_fuel.png) | Airports that have fuel available. |
 | ![Airport Weather](../images/legend/airport_weather.png) | Weather at airport. See chapter `Airport Weather` below. |
-| ![Airport Text](../images/legend/airportlabel.png)  | Airport label showing name, ident, ATIS frequency, elevation, lighted runways \(`L`\) and length of longest runway. The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
+| ![Airport Text](../images/legend/airportlabel.png)  | Airport label showing name, ident, ATIS frequency, elevation, lighted runways (`L`) and length of longest runway. The text labels for an airport can be changed in the dialog `Options` on the tab `Map Display`. |
 | ![Airport Overview](../images/legend/airport_overview.png) | Airport runway overview shown before the full airport diagram when zooming in. |
 
 ### Navaids {#navaids}
@@ -122,18 +122,18 @@ Navaids that are part of the flight plan have a light yellow text background.
 
 | Symbol | Description |
 | --- | --- |
-| ![VORDME](../images/legend/vordme_small.png) ![VORDME](../images/legend/vordme_large.png) | VOR DME including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
+| ![VORDME](../images/legend/vordme_small.png) ![VORDME](../images/legend/vordme_large.png) | VOR DME including ident, type (High, Low or Terminal) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
 | ![VOR](../images/legend/vor_small.png) ![VOR](../images/legend/vor_large.png) | VOR including ident, type and frequency. |
 | ![DME](../images/legend/dme.png) | DME including ident, type and frequency. |
-| ![TACAN](../images/legend/tacan_small.png) ![TACAN](../images/legend/tacan_large.png) | TACAN  including ident, type \(High, Low or Terminal\) and channel. Compass rose shows magnetic variation on lower zoom distances. |
-| ![VORTAC](../images/legend/vortac_small.png) ![VORTAC](../images/legend/vortac_large.png) | VORTAC  including ident, type \(High, Low or Terminal\) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
-| ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type \(HH, H, MH or CL - compass locator\) and frequency. |
+| ![TACAN](../images/legend/tacan_small.png) ![TACAN](../images/legend/tacan_large.png) | TACAN  including ident, type (High, Low or Terminal) and channel. Compass rose shows magnetic variation on lower zoom distances. |
+| ![VORTAC](../images/legend/vortac_small.png) ![VORTAC](../images/legend/vortac_large.png) | VORTAC  including ident, type (High, Low or Terminal) and frequency. Compass rose shows magnetic variation on lower zoom distances. |
+| ![NDB](../images/legend/ndb_small.png) ![NDB](../images/legend/ndb_large.png) | NDB including ident, type (HH, H, MH or CL - compass locator) and frequency. |
 | ![Waypoint](../images/legend/waypoint.png) | Waypoint with name. |
 | ![User-defined Waypoint](../images/legend/userwaypoint.png) | User-defined waypoint with name. |
 | ![Waypoint](../images/legend/waypoint_invalid.png) | Invalid airport, waypoint, VOR or NDB that is part of the flight plan but could not be found in the Scenery Database. |
 | ![Marker](../images/legend/marker_outer.png) ![Marker](../images/legend/marker_middle.png) ![Marker](../images/legend/marker_inner.png) | Marker with type and heading indicated by lens shape. |
-| ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type \(Jet or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
-| ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type \(Victor or Both\), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
+| ![Jet Airway](../images/legend/airway_jet.png) | Jet airway with label showing name, type (Jet or Both), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
+| ![Victor Airway](../images/legend/airway_victor.png) | Victor airway with label showing name, type (Victor or Both), minimum and maximum altitude. Text depends on zoom distance. A preceding arrow will show the allowed direction if the airway is one-way. |
 | ![ILS](../images/legend/ils_gs.png) | ILS with glideslope and markers. Label shows ident, frequency, magnetic heading, glideslope pitch and DME indication if available. |
 | ![Localizer](../images/legend/ils_large.png) | Localizer. Label shows ident, frequency, magnetic heading and DME indication if available. |
 
@@ -167,7 +167,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White is used f
 
 | Symbol | Description |
 | --- | --- |
-| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator \(`L`\) and surface type. |
+| ![Runway](../images/legend/runway.png) | Runway with length, width, light indicator (`L`) and surface type. |
 | ![Runway End](../images/legend/runway_end.png) | Runway end with ident and magnetic heading. |
 | ![Runway Threshold](../images/legend/runway_threshold.png) | Displaced threshold. Do not use for landing. |
 | ![Runway Overrun](../images/legend/runway_overrun.png) | Overrun area. Do not use for taxi, takeoff or landing. |
@@ -196,7 +196,7 @@ The colors and symbols of the elevation profile follow the style of the main map
 | ![At](../images/legend/proc_at.png) | At altitude restriction of a procedure with waypoint name. |
 | ![At or above](../images/legend/proc_atabove.png) | At or above altitude restriction of a procedure. |
 | ![At or below](../images/legend/proc_atbelow.png) | At or below altitude restriction of a procedure. |
-| ![Between](../images/legend/proc_between.png) | At or above and at or below \(between\) altitude restriction of a procedure. |
+| ![Between](../images/legend/proc_between.png) | At or above and at or below (between) altitude restriction of a procedure. |
 | ![Profile Safe Alt](../images/legend/profile_safe_alt.png) | Minimum safe altitude for flight plan. This is elevation plus 1000 feet rounded up to the next 500 ft. The 1000 feet buffer can be changed in the dialog `Options` on the tab `Flight Plan` |
 | ![Profile Segment Safe Alt](../images/legend/profilesegminalt.png) | Minimum safe altitude for a flight plan segment. The same rules apply as to the minimum safe altitude for flight plan. |
 | ![Aircraft](../images/legend/profile_aircraft.png) | User aircraft if connected to the simulator. Labels show actual altitude and climb/sink rate. |

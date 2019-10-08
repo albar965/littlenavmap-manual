@@ -2,7 +2,7 @@
 
 ### General {#tutorials-general}
 
-All functions will be referred by the names in the main menu by using `Menu Name` -&gt; `Menu Item`. The icons are shown as well, so you can find the buttons on one of the toolbars. Screenshots will provide more help.
+All functions will be referred by the names in the main menu by using `Menu Name` -> `Menu Item`. The icons are shown as well, so you can find the buttons on one of the toolbars. Screenshots will provide more help.
 
 Note that flight plan distances, available procedures and airport names might differ between the simulators and used navdata cycles.
 
@@ -12,10 +12,10 @@ Screenshots were made on Linux and Windows. Therefore, look and feel will be dif
 
 To have a clean common base, I recommend the following:
 
-* Select `Window` -&gt; `Reset Window Layout` to get all the dock windows back into their default place.
+* Select `Window` -> `Reset Window Layout` to get all the dock windows back into their default place.
 * Use the map theme `OpenStreetMap` with hill shading ![Hill Shading](../images/icons/hillshading.png) enabled.
-* Reset the map display settings in `View` -&gt; `Reset Display Settings` to make sure that all needed features are shown on the map.
-* Select `File` -&gt; `Reset all for a new Flight` ![Reset all for a new Flight](../images/icons/reload.png "Reset all for a new Flight") and check all buttons in the dialog  to start with a clean flight plan table.
+* Reset the map display settings in `View` -> `Reset Display Settings` to make sure that all needed features are shown on the map.
+* Select `File` -> `Reset all for a new Flight` ![Reset all for a new Flight](../images/icons/reload.png "Reset all for a new Flight") and check all buttons in the dialog  to start with a clean flight plan table.
 
 ### Tutorials {#tutorials-summary}
 

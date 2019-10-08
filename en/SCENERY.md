@@ -11,7 +11,7 @@ On Windows that can be a path like `C:\Simulators\X-Plane 11`, the executable be
 
 Loading a scenery library can take from 2 to 15 minutes depending on your setup and amount of scenery add-ons. You can speed this up by excluding directories containing neither airport nor navigation data in the `Options` dialog on the `Scenery Library Database` tab.
 
-For FSX/P3D, all airports that are not located in the default `Scenery` directory of FSX/P3D are considered to be add-on airports. For X-Plane, all airports located in the `Custom Scenery` directory of X-Plane are considered to be add-on airports. Add-on airports are highlighted on the map using emphasized \(bold and italic\) text.
+For FSX/P3D, all airports that are not located in the default `Scenery` directory of FSX/P3D are considered to be add-on airports. For X-Plane, all airports located in the `Custom Scenery` directory of X-Plane are considered to be add-on airports. Add-on airports are highlighted on the map using emphasized (bold and italic) text.
 
 If an add-on only corrects airport elevations or navigation data, it might be undesirable to display the updated airports as add-on airports on the map. You can exclude folders populated by this add-on from the add-on recognition in the `Options` dialog on the `Scenery Library Database` tab.
 
@@ -19,7 +19,7 @@ See [Options](OPTIONS.md#scenery-library-database) for more information about ex
 
 If you cancel the loading process or if the loading process fails, the previous scenery library database is restored immediately.
 
-The menu `Scenery Library` -&gt; `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search switch instantaneously to the newly loaded simulator data.
+The menu `Scenery Library` -> `Flight Simulators` is synchronized with the simulator selection in the dialog. Once a database is successfully loaded, the display, flight plan and search switch instantaneously to the newly loaded simulator data.
 
 Note that the final number of airports, navaids and other objects shown in the `Load Scenery Library` dialog are lower than the counts shown in the progress dialog, because, after the data has been loaded, a separate process removes duplicates and deletes stock airports that were replaced by add-ons.
 
@@ -33,7 +33,7 @@ Note that the final number of airports, navaids and other objects shown in the `
 
 An error dialog is shown after loading if any files could not be read or directories were not found. In this case you should check if the airports of the affected sceneries display correctly and show the correct information. The error dialog allows copy and paste of formatted text which is useful for error reporting.
 
-The `Load Scenery Library` dialog shows the last time of loading \(`Last Update:`\), the program and the database version. Major database version differences indicate incompatible databases. The program will ask if the incompatible databases can be erased on startup before the scenery database can be reloaded. Minor database differences indicate compatible changes where a reload is recommended but not required.
+The `Load Scenery Library` dialog shows the last time of loading (`Last Update:`), the program and the database version. Major database version differences indicate incompatible databases. The program will ask if the incompatible databases can be erased on startup before the scenery database can be reloaded. Minor database differences indicate compatible changes where a reload is recommended but not required.
 
 ### X-Plane Airports and Navdata {#load-scenery-library-dialog-xp-apt-navdata}
 
@@ -50,10 +50,10 @@ The first number in the second line is the file version. Here it is `1100`.
 
 *Little Navmap* can read the following X-Plane scenery files:
 
-* **Airports \(**`apt.dat`**\):** Version 850 up to 1100. This covers X-Plane 10 airports and older add-on scenery. Newer files than 1100 might work but are not tested.
-* **Navdata \(**`earth_awy.dat`**, **`earth_fix.dat`** and **`earth_nav.dat`**\):** Version 850 up to 1100. This excludes X-Plane 10 navdata files. Newer files than 1100 might work but are not tested.
-* **Procedures \(**`ICAO.dat`** in the **`CIFP`**directory\):** All procedures from X-Plane 11.
-* **Airspaces \(**`*.txt`**\):** The included `usa.txt` and all files in OpenAir format. See next chapter for more information.
+* **Airports (**`apt.dat`**):** Version 850 up to 1100. This covers X-Plane 10 airports and older add-on scenery. Newer files than 1100 might work but are not tested.
+* **Navdata (**`earth_awy.dat`**, **`earth_fix.dat`** and **`earth_nav.dat`**):** Version 850 up to 1100. This excludes X-Plane 10 navdata files. Newer files than 1100 might work but are not tested.
+* **Procedures (**`ICAO.dat`** in the **`CIFP`**directory):** All procedures from X-Plane 11.
+* **Airspaces (**`*.txt`**):** The included `usa.txt` and all files in OpenAir format. See next chapter for more information.
 
 Additionally the files `user_fix.dat` and `user_nav.dat` in the X-Plane directory `Custom Data` are read.
 
@@ -71,7 +71,7 @@ Additional airspace files can be downloaded from the [OpenAirspace Directory](ht
 
 Airspace files must have a `.txt` extension and are loaded from the following directories by _Little Navmap_:
 
-The files can be encoded in any [UTF](https://en.wikipedia.org/wiki/Unicode#UTF) format but must have a [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) to be recognized properly. Otherwise Windows ANSI coding \(`Windows-1252`\) is used. Special characters like umlauts or accents are not displayed correctly in names if the encoding is not correct. All other functionality is unaffected.
+The files can be encoded in any [UTF](https://en.wikipedia.org/wiki/Unicode#UTF) format but must have a [BOM](https://en.wikipedia.org/wiki/Byte_order_mark) to be recognized properly. Otherwise Windows ANSI coding (`Windows-1252`) is used. Special characters like umlauts or accents are not displayed correctly in names if the encoding is not correct. All other functionality is unaffected.
 
 You can convert the files using any advanced editor like [Notepad++](https://notepad-plus-plus.org/) for example.
 
@@ -102,7 +102,7 @@ You can change the directory and file extensions to read in the options dialog: 
 
 ##### Online Airspaces {#load-scenery-library-online-airspaces}
 
-Online centers are displayed as circular airspaces in _Little Navmap_ per default and provide the same functionality as the other airspaces \(tooltips, information and more\). They are loaded with the online data when connected and are only stored in a temporary database which is deleted on exit.
+Online centers are displayed as circular airspaces in _Little Navmap_ per default and provide the same functionality as the other airspaces (tooltips, information and more). They are loaded with the online data when connected and are only stored in a temporary database which is deleted on exit.
 
 _Little Navmap_ can use real center boundaries instead of the circular airspaces. First you have to enable one or both options in [Map Display Online](OPTIONS.md#map-display-online) under `Online Center Boundary Lookup in User Airspaces`. These are enabled per default.
 
@@ -121,9 +121,9 @@ Once done the center should show the correct boundary.
 * `Simulator`: Select the simulator to load, show database statistics in the label above.
 * `Reset Paths`: Reset all paths back to default values.
 * `Flight Simulator Base Path` and `Select ...`: The path to the base directory of the selected flight simulator. This usually the directory containing the `FSX.exe` or `Prepar3D.exe`. This is the base for all relative paths found in the `scenery.cfg` file.
-* `Scenery Configuration File` and `Select ...` \(only FSX and P3D\): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
+* `Scenery Configuration File` and `Select ...` (only FSX and P3D): The file `scenery.cfg` of the simulator. You can also create copies of the original file, modify them by removing or adding sceneries and select them here for loading.
 * `Read inactive Scenery Entries`: This will read all scenery entries, also the inactive/disabled ones. This is helpful if you use a tool to disable scenery before flying but still want to see all add-on sceneries in _Little Navmap_ without reloading. This applies to the FSX/P3D `scenery.cfg` as well as X-Plane's `scenery_packs.ini` which both allow to disable scenery entries.
-* `Read Prepar3D add-on.xml packages` \(only P3D v3 and v4\): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
+* `Read Prepar3D add-on.xml packages` (only P3D v3 and v4): If enabled, reads P3D v4 or v3 `add-on.xml` packages. These are read from subdirectories of `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons` and `C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`.
 * `Load`: Starts the database loading process. You can stop the loading process at any time and the previous database is restored. The dialog is closed and the program will switch to show the loaded database once it is successfully loaded.
 * `Close`: Keep all settings and changes in the dialog and close it without loading anything.
 
@@ -155,6 +155,6 @@ _Little Navmap_ falls back to the world magnetic model if the file `magdec.bgl` 
 
 #### X-Plane
 
-The magnetic declination values for X-Plane \(airports and all navaids except VORs\) are calculated using the world magnetic model based on the real current year and month. This is calculated while loading the scenery library and saved in X-Plane scenery library database.
+The magnetic declination values for X-Plane (airports and all navaids except VORs) are calculated using the world magnetic model based on the real current year and month. This is calculated while loading the scenery library and saved in X-Plane scenery library database.
 
 VOR stations come with their own declination values which might differ from the calculated declination values in their environment as mentioned above.

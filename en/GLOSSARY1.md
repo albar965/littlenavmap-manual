@@ -9,7 +9,7 @@ FSX/P3D: All scenery data that is found outside of the base flight simulator `Sc
 X-Plane: All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
 
 ### Approach Procedure
-An approach procedure is a series of maneuvers for the transfer of an aircraft in instrument flight conditions from the initial approach to a landing or to a point from which a landing may be made visually. If a flight plan includes a standard arrival procedure \(STAR\), an approach procedure will normally follow the STAR.
+An approach procedure is a series of maneuvers for the transfer of an aircraft in instrument flight conditions from the initial approach to a landing or to a point from which a landing may be made visually. If a flight plan includes a standard arrival procedure (STAR), an approach procedure will normally follow the STAR.
 
 ### Arrival Procedure
 Approach, transition or STAR procedure.
@@ -24,7 +24,7 @@ Comma-separated values text file.
 A text file format used by X-Plane to store airport, navaid and procedure information.
 
 ### Departure Procedure
-SID \(standard instrument departure\) procedure.
+SID (standard instrument departure) procedure.
 
 ### DME
 Distance measuring equipment or a radio navaid.
@@ -101,7 +101,7 @@ Note that the rhumb line connecting two points on earth is longer than the great
 
 ### Scenery Library Database
 
-This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ when reading all the flight simulator BGL or DAT files. It allows fast complex searches and map display.
+This is an internal database ([SQLite](http://sqlite.org)) that is created by _Little Navmap_ when reading all the flight simulator BGL or DAT files. It allows fast complex searches and map display.
 
 ### SID
 A standard instrument departure is an air traffic control departure procedure that helps to simplify clearance delivery procedures. A SID will keep aircraft away from terrain but it is optimized for air traffic control route of flight and does not necessarily provide the best climb gradient. It provides a balance between terrain and obstacle avoidance, noise abatement and airspace management.
@@ -110,7 +110,7 @@ A standard instrument departure is an air traffic control departure procedure th
 A programming interface that allows applications to read and write flight simulator parameters.
 
 ### STAR
-A standard terminal arrival is a flight route that usually covers the phase of a flight between the last point of the route filled in the flight plan and the first point of the approach to the airport, normally the initial approach fix \(IAF\). A STAR connects the en-route phase with the approach phase of the flight.
+A standard terminal arrival is a flight route that usually covers the phase of a flight between the last point of the route filled in the flight plan and the first point of the approach to the airport, normally the initial approach fix (IAF). A STAR connects the en-route phase with the approach phase of the flight.
 
 ### Start position
 Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.
@@ -134,7 +134,7 @@ VHF omni directional radio range with distance measuring equipment- radio navaid
 Co-located VHF omnidirectional range (VOR) beacon and tactical air navigation system (TACAN) beacon.
 
 ### Userpoint
-An user-defined waypoint like a bookmark, point of interest or visual reporting point \(VRP\).
+An user-defined waypoint like a bookmark, point of interest or visual reporting point (VRP).
 
 ### VRP
 Visual reporting point for VFR flights. An userpoint type.

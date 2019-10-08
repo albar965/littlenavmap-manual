@@ -10,7 +10,7 @@ This will show a dialog where you can select a runway and customize the holding.
 
 Note that the menu item is disabled if holdings are hidden on the map (menu `View` -> `User Features`). The menu item is suffixed with the text `hidden on map` if this is the case.
 
-_Little Navmap_ shows a tooltip with information about the holding when hovering the mouse above the hotspot \(white filled triangle\) at the holding fix.
+_Little Navmap_ shows a tooltip with information about the holding when hovering the mouse above the hotspot (white filled triangle) at the holding fix.
 
 ### Holding Dialog
 
@@ -27,15 +27,15 @@ _Little Navmap_ shows a tooltip with information about the holding when hovering
 * `Altitude label`: Altitude to display at the holding.
 * `Line Color`: Color of the holding lines and labels.
 
-Holdings can be removed by either selecting `Map` -&gt; `Remove all Ranges, Measurements and Patterns` or by right click on the hotspot \(triangle\) at the holding fix.
+Holdings can be removed by either selecting `Map` -> `Remove all Ranges, Measurements and Patterns` or by right click on the hotspot (triangle) at the holding fix.
 
 See [Legend - Holding](LEGEND.md#holding) for details about the displayed numbers in the pattern.
 
 ![Holding Dialog](../images/holding_dialog.jpg "Holding Dialog")
 
-_**Picture above:** Holding dialog for VORDME _`RID`_._
+_**Picture above:** Holding dialog for VORDME `RID`._
 
 ![Holding](../images/holding.jpg "Holding")
 
-_**Picture above:** Holding at VORDME _`RID`_. Inbound label shows inbound magnetic course, holding time and navaid ident. Outbound track has outbound magnetic course, speed and altitude as label. While filled triangle is the hotspot and holding fix._
+_**Picture above:** Holding at VORDME `RID`. Inbound label shows inbound magnetic course, holding time and navaid ident. Outbound track has outbound magnetic course, speed and altitude as label. While filled triangle is the hotspot and holding fix._
 

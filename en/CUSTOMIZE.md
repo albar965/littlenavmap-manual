@@ -71,8 +71,8 @@ The file
 
 Color can be in one of these formats which are commonly used in web design:
 
-* `#RRGGBB` each of R, G, B and A is a single hex digit. Each color value ranges from 00 - FF \(decimal 0-255\)
-* `#AARRGGBB` first two digits contain the alpha/transparency value. `00` equals to fully tranparent and `FF` \(decimal 255\) to opaque.
+* `#RRGGBB` each of R, G, B and A is a single hex digit. Each color value ranges from 00 - FF (decimal 0-255)
+* `#AARRGGBB` first two digits contain the alpha/transparency value. `00` equals to fully tranparent and `FF` (decimal 255) to opaque.
 * SVG color name
 
 SVG color name is one of the colors defined in the list of [SVG color keyword names](https://www.w3.org/TR/SVG/types.html#ColorKeywords) provided by the World Wide Web Consortium; for example, `steelblue` or `gainsboro`. Note that you cannot enter an alpha channel value if you use a color name.
@@ -109,7 +109,7 @@ To change an icon download it from the Github source repository [Icon Resources]
 
 Modify the icon and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. _Little Navmap_ will automatically detect and use the icon on next startup.
 
-The format is limited to SVG \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\) where advanced graphics effects like textures will not work.
+The format is limited to SVG ([Scalable Vector Graphics (SVG) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)) where advanced graphics effects like textures will not work.
 
 You can use the free vector drawing program [Inkscape](https://inkscape.org) to edit the icons.
 Restart *Little Navmap* to see the changes.
@@ -139,7 +139,7 @@ The icons are:
 * `aircraft_online.svg`
 * `aircraft_online_ground.svg`
 
-The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
+The suffixes are chosen by vehicle type, status (ground or airborne) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
 
 ### Userpoint Category Icons {#customize-userpoint-icons}
 

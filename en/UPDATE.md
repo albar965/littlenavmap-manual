@@ -2,7 +2,7 @@
 
 _Little Navmap_ will automatically check its [home page](https://albar965.github.io/) for available updates on startup. Frequency and update channels are configurable. See below for configuration options.
 
-You can always check manually for updates by selecting `Help` -&gt; `Check for Updates` in the main menu.
+You can always check manually for updates by selecting `Help` -> `Check for Updates` in the main menu.
 
 Note that the installation still has to be done manually.
 
@@ -45,7 +45,7 @@ Copy the contents of the window as formatted text into the clipboard for later r
 You can set the interval for update checks. Default is `Daily`.
 Choices `Daily`, `Weekly` or `Manual` where the latter one will never check automatically.
 
-Select `Help` -&gt; `Check for Updates` in the main menu to search manually for new versions.
+Select `Help` -> `Check for Updates` in the main menu to search manually for new versions.
 
 Note that the daily or weekly check is only done when starting the program.
 
@@ -65,4 +65,4 @@ Checks for updates immediately. This will use the current settings as shown in t
 
 ![Update Options](../images/updateoptions.jpg "Update Options")
 
-_**Picture above:** Update notification settings in dialog _`Options`_._
+_**Picture above:** Update notification settings in dialog `Options`._

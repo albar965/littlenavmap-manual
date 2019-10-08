@@ -20,7 +20,7 @@ The program also fetches AI or multiplayer aircraft from the simulator which are
 
 Therefore, the user aircraft and other client aircraft can appear duplicated on the map.
 
-_Little Navmap_ tries to remove these duplicates by matching the aircraft registration \(simulator\) and the client callsign \(online network\). Aircraft can appear duplicated if this information is not available which is the case for X-Plane. Refer to the configuration of your online network tool how to add this information.
+_Little Navmap_ tries to remove these duplicates by matching the aircraft registration (simulator) and the client callsign (online network). Aircraft can appear duplicated if this information is not available which is the case for X-Plane. Refer to the configuration of your online network tool how to add this information.
 
 ### Map Display {#online-networks-mapdisplay}
 
@@ -42,7 +42,7 @@ _**Picture above:** Online network clients/aircraft in search tab, map, tooltip 
 
 #### Centers {#online-networks-centers}
 
-Online centers are displayed as circular airspaces in _Little Navmap_ and provide the same functionality as the other airspaces \(tooltips, information and more\). They can be enabled  separately from the other airspaces by selecting `Online` as airspace source ([Airspace Source](MENUS.md#airspace-source))
+Online centers are displayed as circular airspaces in _Little Navmap_ and provide the same functionality as the other airspaces (tooltips, information and more). They can be enabled  separately from the other airspaces by selecting `Online` as airspace source ([Airspace Source](MENUS.md#airspace-source))
 
 **Note that the circles do not represent the real airspaces and are only used to indicate the presence of an active center, tower, ground or other position.** See next chapter how to assign airspace boundaries to a center.
 
@@ -51,12 +51,12 @@ Detailed information for online centers/airspaces is shown on the tab `Online Ce
 The following types are available and can be enabled in the drop down menus on the airspace toolbar or sub menu [Airspaces](MENUS.md#airspaces):
 
 * **Observer:** Circle size is taken from the `Visual Range` value of the center.
-* **Flight Information \(Center\):** Uses `Visual Range`.
-* **Delivery \(Clearance\):** Uses `Visual Range`.
+* **Flight Information (Center):** Uses `Visual Range`.
+* **Delivery (Clearance):** Uses `Visual Range`.
 * **Ground:** Shows a circle with a diameter of 10 nm.
 * **Tower:** 20 nm circle.
 * **Approach:** 40 nm circle.
-* **ACC \(Center\):** Uses `Visual Range`.
+* **ACC (Center):** Uses `Visual Range`.
 * **Departure:** Uses `Visual Range`.
 
 The size of the circle shapes can be changed in the configuration file. See [Online Network Center](CUSTOMIZE.md#customize-online-center).

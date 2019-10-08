@@ -10,9 +10,9 @@ Weather can be taken from the following sources:
 * [VATSIM](https://www.vatsim.net) network online weather service
 * [IVAO](https://www.ivao.aero) network online weather service
 * [HiFi Simulation Technologies](http://www.hifisimtech.com):
-  * _Active Sky Next_ \(ASN\)
+  * _Active Sky Next_ (ASN)
   * _AS16_
-  * _Active Sky for Prepar3D v4_ \(ASP4\)
+  * _Active Sky for Prepar3D v4_ (ASP4)
 
 You can define in the `Options` dialog on the `Weather` tab which sources are used to display the METAR information in tooltips or the tab `Weather` in the `Information` dock window.
 
@@ -29,7 +29,7 @@ Also, weather and nearest weather in X-Plane might be inaccurate. This is due to
 
 ![Weather tab](../images/weather.jpg "Weather tab")
 
-_**Picture above:** Decoded weather information from X-Plane and NOAA. The weather symbols on the map use NOAA as source \(suffix _`- Map`_ after the flight rules\). X-Plane weather is older than six hours and therefore highlighted red._
+_**Picture above:** Decoded weather information from X-Plane and NOAA. The weather symbols on the map use NOAA as source (suffix `- Map` after the flight rules). X-Plane weather is older than six hours and therefore highlighted red._
 
 ### Weather Sources
 
@@ -39,7 +39,7 @@ Weather information from a flight simulator or the X-Plane `METAR.rwx` falls in 
 
 * `Station`: The airport has a weather station. This is the most precise weather indication.
 * `Nearest`: The selected airport has no weather station and the report from the closest existing weather station was fetched. The ident of the closest station as well as distance and elevation are shown in the METAR and on the decoded weather tab. Note that the this weather station is not necessarily an airport.
-* `Interpolated` \(not for X-Plane\): The weather is interpolated by the flight simulator using three stations closest to the selected airport. FSX and P3D only provide non-interpolated weather for airports close to the user aircraft. The weather for other airports is always interpolated. The ident of the selected airport is used in the METAR report for this kind of weather report.
+* `Interpolated` (not for X-Plane): The weather is interpolated by the flight simulator using three stations closest to the selected airport. FSX and P3D only provide non-interpolated weather for airports close to the user aircraft. The weather for other airports is always interpolated. The ident of the selected airport is used in the METAR report for this kind of weather report.
 
 The flight simulator weather is updated every 15 seconds to catch manual changes or changes in the weather theme.
 
@@ -100,7 +100,7 @@ See [Legend - Winds Aloft](LEGEND.md#high-alt-wind) for an explanation of the wi
 
 Select wind data source for display with [Wind Source](MENUS.md#wind-source).
 
-#### ![Wind Levels Button(../images/icons/wind.png "Wind Levels Button") Wind Levels Button {#wind-levels}
+#### ![Wind Levels Button](../images/icons/wind.png "Wind Levels Button") Wind Levels Button {#wind-levels}
 
 Same as [Wind Levels Menu](MENUS.md#wind-levels).
 

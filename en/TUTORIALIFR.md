@@ -53,7 +53,7 @@ Go to the dock window `Search` and follow the steps below:
 
 Now look for the departure airport:
 
-* Enter `EGHJ` in the `ICAO Code` search field on the top left \(case does not matter\).
+* Enter `EGHJ` in the `ICAO Code` search field on the top left (case does not matter).
 * Right-click on the airport in the result table.
 * Choose `Set as Flight Plan Departure` ![Set as Flight Plan Departure](../images/icons/airportroutestart.png). This will assign a default runway as a start position.
 
@@ -63,7 +63,7 @@ Your flight plan has one entry now. This is already sufficient if you want to fl
 
 Starting from a runway is not quite realistic. Let's select a parking position:
 
-* Go to `Flight Plan` -&gt; `Select a Start Position for Departure` ![Select a Start Position for Departure](../images/icons/parkingstartset.png).
+* Go to `Flight Plan` -> `Select a Start Position for Departure` ![Select a Start Position for Departure](../images/icons/parkingstartset.png).
 * Choose one of the GA small ramp positions.
 * Click `Ok` and the position will be highlighted on the map.
 
@@ -91,7 +91,7 @@ Check the following in the airport search tab:
 
 1. `Rating`: We'd like to get airports that are either add-ons or have basic scenery requirements, like taxiways, parking spots and more. Everything else is boring. Select the one with at least four stars. You can also select `3D` if you fly X-Plane.
 2. `Procedures`: Show only airports that have procedures to get a more interesting approach.
-3. Deselect `Military` and `Closed` \(click the checkboxes twice\): This will return only civilian airports and avoid airports that have all runways closed.
+3. Deselect `Military` and `Closed` (click the checkboxes twice): This will return only civilian airports and avoid airports that have all runways closed.
 6. In the combo box `Any Surface` select `Any is Hard` to avoid airports having only soft surfaced runways.
 7. Select a minimum runway length of 2500 feet or whatever you chosen aircraft needs in the field `Runways:` `Min:`.
 
@@ -102,7 +102,7 @@ You can also limit the maximum runway length if you are looking for a short land
 The search result changes on the fly while doing all these adjustments, though we are not there yet:
 
 * Check `Distance:` to activate the spatial search.
-* Change the maximum distance to 600 and the minimum to 400 nautical miles \(to avoid short hops\). The result table will now update with a small delay since the distance search is more complex.
+* Change the maximum distance to 600 and the minimum to 400 nautical miles (to avoid short hops). The result table will now update with a small delay since the distance search is more complex.
 * To find only airports north of your position select `North` in the combo box `Any Direction`. Note that the search result is sorted by distance with the closest airport first.
 * Choose an airport for your trip. We use `Wick (EGPC)` for this tutorial.
 * ![Search for Destination](../images/tutorial/ifrsearchdest.jpg)
@@ -152,24 +152,24 @@ You have to select the transition to add or show both, approach and transition.
 Now we have the departure airport, an approach procedure and the destination all connected by a straight line. Next is the en-route part of the flight plan:
 
 * Set `IFR` as the flight plan type in the dock window `Flight Planning`. This allows the automatic flight plan calculation to adjust the cruise altitude.
-* Click `Flight Plan` -&gt; `Calculate low Altitude` ![Calculate low Altitude](../images/icons/routelow.png) to start the automatic flight plan calculation for Victor airways. The calculation will create a route from your departure airport to the intial fix of the transition.
+* Click `Flight Plan` -> `Calculate low Altitude` ![Calculate low Altitude](../images/icons/routelow.png) to start the automatic flight plan calculation for Victor airways. The calculation will create a route from your departure airport to the intial fix of the transition.
 
-The flight plan cruise altitude is automatically adjusted according to the hemispherical rule \(the rule can be changed in `Tools` -&gt; `Options` ![Options](../images/icons/settings.png) on the tab `Flight Plan`\), the altitude restrictions of the airways and the flight plan type \(`VFR` or `IFR`\). You can see the minimum altitude for each airway segment in the flight plan table in the column `Restriction`.
+The flight plan cruise altitude is automatically adjusted according to the hemispherical rule (the rule can be changed in `Tools` -> `Options` ![Options](../images/icons/settings.png) on the tab `Flight Plan`), the altitude restrictions of the airways and the flight plan type (`VFR` or `IFR`). You can see the minimum altitude for each airway segment in the flight plan table in the column `Restriction`.
 
-The altitude can also be adjusted according to the hemispherical rule by clicking `Flight Plan` -&gt; `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png).
+The altitude can also be adjusted according to the hemispherical rule by clicking `Flight Plan` -> `Adjust Flight Plan Altitude` ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png).
 
 It can happen that the minimum altitude of the result might be too high for the chosen aircraft.
 
 Therefore, try an alternate calculation method which limits your cruise altitude:
 
 * Enter 10000 feet in the `Flight plan altitude` field.
-* Click on `Flight Plan` -&gt; `Calculate based on given Altitude` ![Calculate based on given Altitude](../images/icons/routealt.png). This will result in a flight plan that uses only airways having a minimum altitude below or equal to 10000 feet. Note that you can get a mix of Victor and Jet airways depending on used altitude. The calculation might also fail if you set the cruise altitude too low.
+* Click on `Flight Plan` -> `Calculate based on given Altitude` ![Calculate based on given Altitude](../images/icons/routealt.png). This will result in a flight plan that uses only airways having a minimum altitude below or equal to 10000 feet. Note that you can get a mix of Victor and Jet airways depending on used altitude. The calculation might also fail if you set the cruise altitude too low.
 
 ![Calculate Flight Plan](../images/tutorial/ifrcalcalt.jpg)
 
 Use this flight plan for now.
 
-Save the plan using `File` -&gt; `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
+Save the plan using `File` -> `Save Flight Plan` ![Save Flight Plan](../images/icons/filesave.png). The program usually finds the right directory for the flight plans and gives a sensible name by default.
 
 The waypoints of the approach procedure are not saved in the flight plan. You have to select the approach in your GPS or FMC in the simulator or fly it by radio navaids and a stopwatch.
 
@@ -191,8 +191,8 @@ The plan might look different, depending if you use stock navaids or navdata upd
 
 Now you can check if you pass through any airspaces:
 
-* Enable airspaces by selecting `View` -&gt; `Airspaces` -&gt; `Show Airspaces` ![Show Airspaces](../images/icons/airspace.png) if not already done.
-* Check `View` -&gt; `Airspaces` -&gt; `At flight plan cruise altitude` ![At flight plan cruise altitude](../images/icons/airspaceroutealt.png) in the menu or the toolbar menu button.
+* Enable airspaces by selecting `View` -> `Airspaces` -> `Show Airspaces` ![Show Airspaces](../images/icons/airspace.png) if not already done.
+* Check `View` -> `Airspaces` -> `At flight plan cruise altitude` ![At flight plan cruise altitude](../images/icons/airspaceroutealt.png) in the menu or the toolbar menu button.
 
 ![Select Airspaces](../images/tutorial/ifrairspacesel.jpg)
 
@@ -202,19 +202,19 @@ This will display only airspaces on the map that are relevant for your cruise al
 
 ### Flying {#tutorial-ifr-flying}
 
-Open the dialog `Connect` using `Tools` -&gt; `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable, if not.
+Open the dialog `Connect` using `Tools` -> `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable, if not.
 
 _Litte Navmap_ will find the simulator no matter if it is already started or if it is started later. Click `Connect`.
 
 See also [Connecting to a Flight Simulator](CONNECT.md).
 
-Enable `Map` -&gt; `Center Aircraft` ![New Flight Plan](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep aircraft and next flight plan waypoint centered. This will happen only if an active flight is loaded, i.e. the simulator is not in the opening screen.
+Enable `Map` -> `Center Aircraft` ![New Flight Plan](../images/icons/centeraircraft.png). The map will jump to the simulator aircraft and keep aircraft and next flight plan waypoint centered. This will happen only if an active flight is loaded, i.e. the simulator is not in the opening screen.
 
 Start the simulator if not already done, load the flight plan and go flying.
 
 ### Top of Descent {#tutorial-ifr-top-of-descent}
 
-A top of descent indication is displayed on the map and in the elevation profile which also shows the distance from top of descent to the destination. This number includes the distance of approach procedures \(excluding holds\).
+A top of descent indication is displayed on the map and in the elevation profile which also shows the distance from top of descent to the destination. This number includes the distance of approach procedures (excluding holds).
 
 Altitude restrictions in procedures are considered in the top of descent calculation.
 
@@ -270,18 +270,18 @@ To completely get rid of a procedure:
 
 If ATC clears you to the initial fix of the procedure:
 
-1. Delete any intermediate waypoints between your current aircraft position and the initial fix of the procedure: Right-click in the flight plan table and select `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) for all waypoints between your current aircraft position and the initial fix or start of the procedure. Avoid deleting your approach \(you can also right-click on a flight plan waypoint on the map and delete it from the context menu\).
+1. Delete any intermediate waypoints between your current aircraft position and the initial fix of the procedure: Right-click in the flight plan table and select `Delete selected Leg or Procedure` ![Delete selected Leg or Procedure](../images/icons/routedeleteleg.png) for all waypoints between your current aircraft position and the initial fix or start of the procedure. Avoid deleting your approach (you can also right-click on a flight plan waypoint on the map and delete it from the context menu).
 3. Then right-click on your aircraft on the map and select `Add Position to Flight Plan` ![Add Position to Flight Plan](../images/icons/routeadd.png).
 
 This will give a direct connection from your current aircraft position to the start of the procedure which you can use to get course and distance to the initial fix.
 
-Below: After changing the approach procedure and adding an user-defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition \(43 nm and 314 degrees magnetic course\).
+Below: After changing the approach procedure and adding an user-defined waypoint at the aircraft position to the flight plan. Now we get course and altitude indications for a direct leg to the start of the transition (43 nm and 314 degrees magnetic course).
 
 ![Changed Approach](../images/tutorial/ifrapproach.jpg)
 
 ### Going Missed {#tutorial-ifr-going-missed}
 
-I recommend hiding the missed approaches on the map by unchecking `View` -&gt; `Show Missed Approaches` ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches"). This helps uncluttering the map display.
+I recommend hiding the missed approaches on the map by unchecking `View` -> `Show Missed Approaches` ![Show Missed Approaches](../images/icons/missed.png "Show Missed Approaches"). This helps uncluttering the map display.
 
-* **If the missed approach is not shown:** The progress window shows distance and time to destination. Activating the next leg \(shown in magenta color\) will stop if the destination \(i.e. the runway threshold\) is reached, even when passing the threshold.
+* **If the missed approach is not shown:** The progress window shows distance and time to destination. Activating the next leg (shown in magenta color) will stop if the destination (i.e. the runway threshold) is reached, even when passing the threshold.
 * **If the missed is shown and the aircraft passes the runway threshold:**  The first leg of the missed approach is activated and simulator aircraft progress will display the remaining distance to the end of the missed procedure.

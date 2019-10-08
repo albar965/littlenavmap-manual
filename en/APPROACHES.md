@@ -25,7 +25,7 @@ A small aircraft IFR flight can use the following procedures or segments:
 4. Approach
 5. Destination
 
-Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure \(although the SID may be empty and consist only of a transition\). If you delete a procedure from the flight plan, its transition will be deleted too.
+Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure (although the SID may be empty and consist only of a transition). If you delete a procedure from the flight plan, its transition will be deleted too.
 
 Procedure information is saved together with a flight plan as an annotation in the PLN file and will be restored by _Little Navmap_ when loading the flight plan.
 
@@ -59,13 +59,13 @@ Deleting a single leg that is part of a procedure will remove the whole procedur
 
 ![Delete Procedure](../images/deleteprocedure.jpg "Delete Procedure")
 
-_**Picture above:** About to remove the transition _`MUN`_ of the approach _`RNAV BEGEN`_ from the flight plan._
+_**Picture above:** About to remove the transition `MUN` of the approach `RNAV BEGEN` from the flight plan._
 
 ### Limitations when editing a flight plan with procedures {#procedures-limitations}
 
 * Deleting a leg of a procedure will remove the whole procedure from the flight plan.
 * You cannot move a procedure leg up or down neither can you move or add a flight plan leg into a procedure.
-* You cannot add waypoints in between procedures \(e.g. between a STAR and an approach\). Waypoints can only be added to the route between departure and arrival procedures.
+* You cannot add waypoints in between procedures (e.g. between a STAR and an approach). Waypoints can only be added to the route between departure and arrival procedures.
 * You cannot add waypoints between departure airport and a SID procedure.
 * You cannot add waypoints between arrival procedure and destination airport.
 * If you delete or replace the departure airport all SID procedures are removed too.
@@ -73,7 +73,7 @@ _**Picture above:** About to remove the transition _`MUN`_ of the approach _`RNA
 
 ### Flying Procedures {#procedures-flying}
 
-Procedure legs are pre-calculated, with the exception of holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg \(e.g. if too many lines are overlapping\) look at the procedure table in the flight plan window.
+Procedure legs are pre-calculated, with the exception of holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg (e.g. if too many lines are overlapping) look at the procedure table in the flight plan window.
 
 #### Holds {#procedures-holds}
 
@@ -83,7 +83,7 @@ If a time is given, fly the hold as usual:
 
 1. Enter at the fix using a proper entry procedure
 2. Do a standard turn
-3. Fly the straight leg for the given time \(typically one minute\)
+3. Fly the straight leg for the given time (typically one minute)
 4. Do standard turn
 5. Fly to fix
 6. Exit hold when done or instructed by ATC
@@ -94,7 +94,7 @@ Note that procedure holds are part of the flight plan and differ from the user d
 
 ![Hold](../images/hold.jpg "Hold")
 
-_**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at _`ZUNAD`_ and fly at or above 2600 feet. Course is 61° magnetic degrees._
+_**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at `ZUNAD` and fly at or above 2600 feet. Course is 61° magnetic degrees._
 
 #### Exiting a Hold {#procedures-flying-exit-holds}
 
@@ -102,7 +102,7 @@ _Little Navmap_ will detect when a hold is exited and advance the active leg to 
 
 1. **If the next leg continues after or at the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile.
 
-2. **If the next leg starts before the hold fix:** Exit the hold at its fix. Exit right turn holds to the left and vice versa \(i.e. turn outside the hold\). Proceed to the fix of the next leg which will be activated.
+2. **If the next leg starts before the hold fix:** Exit the hold at its fix. Exit right turn holds to the left and vice versa (i.e. turn outside the hold). Proceed to the fix of the next leg which will be activated.
 
 You can activate the next leg manually if you do not exit the hold at its fix. Right-click in the flight plan table on the next leg and select `Activate Flight Plan Leg`.
 
@@ -114,7 +114,7 @@ Fly the procedure turn as usual: Minimum one minute from the fix. Use more if yo
 
 ![Procedure Turn](../images/procedureturn.jpg "Procedure Turn")
 
-_**Picture above:** A procedure turn. Fly at least one minute outbound 61° from _`ABERN`_, turn left to 16°, fly one minute, turn 180° and fly to _`LAMMB`_, then 242° to _`ABERN`_._
+_**Picture above:** A procedure turn. Fly at least one minute outbound 61° from `ABERN`, turn left to 16°, fly one minute, turn 180° and fly to `LAMMB`, then 242° to `ABERN`._
 
 #### Distances {#procedures-distances}
 
@@ -124,20 +124,20 @@ All procedure legs, with the exception of holds and procedure turns, are include
 
 ### Special Leg Types {#procedures-leg-types}
 
-All procedure leg types \(`Track to Fix`, `Initial Fix` and more\) that are shown in *Little Navmap* are based on the ARINC 424 path terminator concept. A deeper knowledge of these leg types is not important for the simulator pilot.
+All procedure leg types (`Track to Fix`, `Initial Fix` and more) that are shown in *Little Navmap* are based on the ARINC 424 path terminator concept. A deeper knowledge of these leg types is not important for the simulator pilot.
 
 Four additional types are used by *Little Navmap*:
 
 * `Start of Procedure`: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track to a fix. It indicates the first position of the procedure.
 * `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway is not available. The altitude restriction indicates the elevation of the runway.
-* `Straight In`: Added to an approach procedure to show the course from the missed approach point \(MAP\) to the runway threshold. It is added when an approach ends with a runway fix. The leg has an altitude restriction 50 feet above the threshold.
+* `Straight In`: Added to an approach procedure to show the course from the missed approach point (MAP) to the runway threshold. It is added when an approach ends with a runway fix. The leg has an altitude restriction 50 feet above the threshold.
 * `Circle to Land`: Added to an approach procedure to show the course from the missed approach point to the airport. It is added if an approach does not end with a runway fix.
 * `Vectors`: Vectors connect legs that are manually terminated by ATC with their successors which is often an initial fix.
 
 | | |
 | -- | -- |
 | ![Straight in Procedure](../images/proc_straightin.jpg "Straight in Procedure") | ![Circle to Land](../images/proc_ctl.jpg "Circle to Land") |
-| _**Picture above:** _`Straight In`_ example: _`ENSH`_ approach _`LOC FL01 (L01)`_ to runway 01. White/orange dotted line is the straight-in leg. _`ML01`_ is the MAP. If runway is not visible at _`ML01`_ turn left to missed._ | _**Picture above:** _`Circle to Land`_ in example: _`LSZC RNAV-A KUSIX (RNVA)`_. White/orange dotted line is the circle-to-land leg. _`ZC701`_ is the MAP. No guidance is given for this leg. You have to navigate around the mountain to get to runways 06 or 24._ |
+| _**Picture above:** `Straight In` example: `ENSH` approach `LOC FL01 (L01)` to runway 01. White/orange dotted line is the straight-in leg. `ML01` is the MAP. If runway is not visible at `ML01` turn left to missed._ | _**Picture above:** `Circle to Land` in example: `LSZC RNAV-A KUSIX (RNVA)`. White/orange dotted line is the circle-to-land leg. `ZC701` is the MAP. No guidance is given for this leg. You have to navigate around the mountain to get to runways 06 or 24._ |
 
 ### Fix Types in a Procedure {#procedures-fix-types}
 
@@ -150,7 +150,7 @@ Four additional types are used by *Little Navmap*:
 * `Altitude`: A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft, 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
 * `Manual`: Fly a heading, track or a hold until manually terminated by ATC.
 
-Runway fixes are prefixed with `RW`. They usually have an altitude restriction a few feet above the runway. Higher altitude restrictions \(i.e. > 500 ft\) indicate a circling approach.
+Runway fixes are prefixed with `RW`. They usually have an altitude restriction a few feet above the runway. Higher altitude restrictions (i.e. > 500 ft) indicate a circling approach.
 
 ### Altitude and Speed Restrictions {#procedures-restrictions}
 

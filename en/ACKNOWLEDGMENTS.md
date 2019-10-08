@@ -21,7 +21,7 @@ Thanks to Karl Wichelmann, Stephan Leukert and merspieler for the German transla
 
 Thanks to Ricardo Vitor for the translation to Brazilian Portuguese.
 
-Thanks to Daniel "Wolf" \([wolfinformatica.com](http://wolfinformatica.com)\) for the Spanish translation.
+Thanks to Daniel "Wolf" ([wolfinformatica.com](http://wolfinformatica.com)) for the Spanish translation.
 
 Thanks to Alfredo alias _fred_, Josemi alias _aquileo_ and Emilio alias _zxplane_ from [X-PLANE.es](http://www.x-plane.es/) for the Spanish translation of the manual.
 

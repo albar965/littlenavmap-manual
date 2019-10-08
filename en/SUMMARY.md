@@ -56,7 +56,7 @@
 
 ### Logbook
 
-* [Overview](LOGBOOK.md)
+* [Logbook](LOGBOOK.md)
 
 ### Information
 

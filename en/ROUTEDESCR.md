@@ -20,13 +20,13 @@ If a navdata update is not an option, pick the online service's AIRAC cycle that
 
 Note that even flight plans calculated in _Little Navmap_ cannot be converted back exactly in some cases. This happens due to navaid ambiguities like NDB and VOR stations having the same names or errors in the source data.
 
-The cruise speed and altitude are used to create the flight plan if given. Otherwise the cruise altitude is automatically determined by the flight plan type \(IFR or VFR\) and the minimum altitude of the used airway segments.
+The cruise speed and altitude are used to create the flight plan if given. Otherwise the cruise altitude is automatically determined by the flight plan type (IFR or VFR) and the minimum altitude of the used airway segments.
 
 SID and STAR procedures require a navdata update except for X-Plane which already comes with a complete navigation database.
 
 ![Route Description Dialog](../images/routedescr.jpg "Route Description Dialog")
 
-_**Picture above:** A route description that was read successfully with a few warnings about ignored elements. The waypoint _`LLL`_ could not be found. Speed, altitude, SID and STAR were recognized. The ground speed of 433 knots is calculated based on given mach number 0.74 and standard atmosphere conditions._
+_**Picture above:** A route description that was read successfully with a few warnings about ignored elements. The waypoint `LLL` could not be found. Speed, altitude, SID and STAR were recognized. The ground speed of 433 knots is calculated based on given mach number 0.74 and standard atmosphere conditions._
 
 ### Buttons {#buttons}
 
@@ -138,22 +138,22 @@ Examples:
 
 Coordinates can be supplied in different formats:
 
-**Degrees** only \(7 characters\): Two digits and north/south indicator plus three digits and east/west indicator.
+**Degrees** only (7 characters): Two digits and north/south indicator plus three digits and east/west indicator.
 
 Example: `51N010E`
 
-**Degrees and minutes** \(11 characters\): Two digits degrees, two digits for minutes and north/south indicator.
+**Degrees and minutes** (11 characters): Two digits degrees, two digits for minutes and north/south indicator.
 Then three digits for degrees, two digits for minutes and east/west indicator.
 
 Example: `4010N03822W`.
 
-**Degrees, minutes and seconds** \(15 characters\): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator.
+**Degrees, minutes and seconds** (15 characters): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator.
 Then three digits for degrees, two digits for minutes, two digits for seconds and east/west indicator. This format is used by
 [SkyVector](https://skyvector.com) for example.
 
 Example: `481200N0112842E`.
 
-**North Atlantic track points** \(NAT\). Two digits degrees north and two digits degrees west followed by character `N`.
+**North Atlantic track points** (NAT). Two digits degrees north and two digits degrees west followed by character `N`.
 
 Example: `5010N`.
 
@@ -161,13 +161,13 @@ Example: `5010N`.
 
 Examples: `N4200 W02000` or `N4200/W02000`.
 
-**Garmin GFP format** \(13 characters\) north/south indicator, two digits degrees, three digits for minutes by 10. Then east/west indicator, three digits degrees, three digits minutes by 10. This format is used by the _Flight1 GTN 650/750_.
+**Garmin GFP format** (13 characters) north/south indicator, two digits degrees, three digits for minutes by 10. Then east/west indicator, three digits degrees, three digits minutes by 10. This format is used by the _Flight1 GTN 650/750_.
 
 Example: `N48194W123096`
 
 ### Flight Plan Description Examples {#examples}
 
-Frankfurt Main \(EDDF\) to Fiumicino \(LIRF\):
+Frankfurt Main (EDDF) to Fiumicino (LIRF):
 
 **Direct connection:**
 
@@ -177,7 +177,7 @@ Frankfurt Main \(EDDF\) to Fiumicino \(LIRF\):
 
 `EDDF FRD KPT BOA CMP LIRF`.
 
-**Same as above with departure time \(**`ETD`**\) and arrival time \(**`ETA`**\) which both will be ignored:**
+**Same as above with departure time (**`ETD`**) and arrival time (**`ETA`**) which both will be ignored:**
 
 `EDDF1200 FRD KPT BOA CMP LIRF1300`.
 

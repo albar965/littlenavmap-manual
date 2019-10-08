@@ -20,7 +20,7 @@ _**Picture above:** Cursor above the toolbar handle that has to be clicked to mo
 
 **Use the **`Window`** menu in the in the main menu to restore closed windows, toolbars and tabs.**
 
-**The **`Window` -&gt; `Reset Window Layout`** menu item in the main menu can be used to reset the state and positions of all dock windows and toolbars back to their default.**
+**The **`Window` -> `Reset Window Layout`** menu item in the main menu can be used to reset the state and positions of all dock windows and toolbars back to their default.**
 
 ![Dock Window Titlebar](../images/dock_titlebar.jpg "Dock Window Titlebar")
 

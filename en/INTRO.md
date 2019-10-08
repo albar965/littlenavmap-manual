@@ -32,7 +32,7 @@ See the two chapters below if you like to run _Little Navmap_ in a networked set
 
 1. Install/extract the whole *Little Navmap* archive on the flying **and** network computer.
 1. Copy *Little Xpconnect* to the X-Plane plugins folder if you use X-Plane.
-2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -&gt; `Scenery Library` -&gt; `Load Scenery Library ...`
+2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -> `Scenery Library` -> `Load Scenery Library ...`
 3. Copy the database files to the network computer. Quit *Little Navmap* before copying.
 
 **Flying in a network setup:**
@@ -40,7 +40,7 @@ See the two chapters below if you like to run _Little Navmap_ in a networked set
 1. Start the simulator
 2. Start *Little Navconnect* on the flying computer.
 3. Run *Little Navmap* on the network computer.
-4. Connect *Little Navmap* on the network computer to *Little Navconnect* on the flying computer. Main menu -&gt; `Tools` -&gt; `Flight Simulator Connection ...`
+4. Connect *Little Navmap* on the network computer to *Little Navconnect* on the flying computer. Main menu -> `Tools` -> `Flight Simulator Connection ...`
 
 See links above for detailed instructions.
 
@@ -80,7 +80,7 @@ Most dialogs and dock windows show help buttons ![Help](../images/icons/help.png
 
 The main window title shows the application name and version.
 
-Furthermore, it indicates the currently selected simulator database \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`\), the flight plan file name, the aircraft performance file name with trailing `*` for both if either has changed.
+Furthermore, it indicates the currently selected simulator database (`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` or `XP11`), the flight plan file name, the aircraft performance file name with trailing `*` for both if either has changed.
 
 A `N` will be appended if the Navigraph database is used. Example below for Prepar3D:
 
@@ -141,15 +141,15 @@ See the [Glossary](GLOSSARY1.md) for explanations of common terms in this manual
 
 ### Rating {#rating}
 
-Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map \(`Empty Airport`\). This behavior can be switched off in the `Options` dialog on the `Map Display` tab.
+Airports get a zero to five star rating depending on facilities. Airports that have no rating are considered boring and will be displayed using a gray symbol below all other airports on the map (`Empty Airport`). This behavior can be switched off in the `Options` dialog on the `Map Display` tab.
 
 The criteria below are used to calculate the rating. Each item gives one star:
 
-  1. Add-on \(or 3D for X-Plane\)
-  2. Parking positions \(ramp or gate\)
+  1. Add-on (or 3D for X-Plane)
+  2. Parking positions (ramp or gate)
   3. Taxiways
   4. Aprons
-  5. Tower building \(only if at least one of the other conditions is met\).
+  5. Tower building (only if at least one of the other conditions is met).
 
 All airports that are not located in the default `Scenery` directory of FSX/P3D or are located in the `Custom Scenery` directory of X-Plane are considered add-on airports which raises the rating by one star.
 

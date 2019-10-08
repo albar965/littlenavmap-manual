@@ -15,7 +15,7 @@ The dialog is opened when clicking on the edit button in the tab `Fuel Report`, 
 ### Tab Aircraft
 
 * `Aircraft model`: Can be used freely. Determined from aircraft name when _Little Navmap_ collects data for a performance profile.
-* `Aircraft type`: The ICAO aircraft type designator. See [List of ICAO aircraft type designators](https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators) \(Wikipedia\). _Little Navmap_ will show a warning in the tab `Fuel Report` if the flown aircraft does not match the type. Detected automatically when collecting performance.
+* `Aircraft type`: The ICAO aircraft type designator. See [List of ICAO aircraft type designators](https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators) (Wikipedia). _Little Navmap_ will show a warning in the tab `Fuel Report` if the flown aircraft does not match the type. Detected automatically when collecting performance.
 * `Required runway`: Only for information. Shown in the fuel report if bigger than zero.
 * `Required runway type`: Only for information. Shown in the fuel report if it differs from default `Hard`.
 
@@ -29,10 +29,10 @@ All speeds are entered in true airspeed. This makes the values independent of wi
 
 #### Fuel {#fuel}
 
-* `Fuel Units`: Either `Volume` \(gallons or liters\) or `Weight` \(lbs or kilograms\). The numbers in the dialog will be converted using the weight of the selected `Fuel Type` when changing the unit. Rounding errors might occur when switching forth and back noticeable a small changes.
-* `Fuel Type`: `Avgas` \(default\) or `Jetfuel`. Needed to convert fuel numbers between weight and volume. This is detected automatically when collecting aircraft performance.
+* `Fuel Units`: Either `Volume` (gallons or liters) or `Weight` (lbs or kilograms). The numbers in the dialog will be converted using the weight of the selected `Fuel Type` when changing the unit. Rounding errors might occur when switching forth and back noticeable a small changes.
+* `Fuel Type`: `Avgas` (default) or `Jetfuel`. Needed to convert fuel numbers between weight and volume. This is detected automatically when collecting aircraft performance.
 
-See [Fuel - Flight Planning Definitions](https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions) \(SKYbrary\) for more information on the various fuel types.
+See [Fuel - Flight Planning Definitions](https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions) (SKYbrary) for more information on the various fuel types.
 
 #### Usable Fuel {#usable-fuel}
 
@@ -69,7 +69,7 @@ The value is given in percent of trip fuel.
 Values for climb are detected automatically when collecting performance.
 
 * `Average climb speed`: Average true airspeed from takeoff to cruise altitude.
-* `Average vertical climb speed`: Vertical speed in climb phase. Either feet per minute \(`fpm`\) or meter per second \(`m/s`\).
+* `Average vertical climb speed`: Vertical speed in climb phase. Either feet per minute (`fpm`) or meter per second (`m/s`).
 * `Average fuel flow in climb`: Fuel flow in climb phase. Either `gal`, `lbs`, `l` or `kg`.
 
 Climb speed and vertical climb speed are used to calculate the top of climb which also varies with wind conditions.
@@ -102,7 +102,7 @@ _Little Navmap_ uses the values from the cruise phase as a default. The flight t
 
 ![Aircraft Performance Edit](../images/perf_edit_perf.jpg "Aircraft Performance Edit")
 
-_**Picture above:** Aircraft performance edit dialog tab _`Performance`_._
+_**Picture above:** Aircraft performance edit dialog tab `Performance`._
 
 ### Tab Description or Comments {#description}
 

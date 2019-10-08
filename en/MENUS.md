@@ -18,12 +18,12 @@ You have to use the [Search Result Table View Context Menu](SEARCH.md#search-res
 
 Opens an FSX PLN, an FS9 PLN, an FSC PLN, an X-Plane FMS or an FLP flight plan file and shows the flight plan table. The type of file is determined by content and not file extension. See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information.
 
-An opened flight plan file will be reloaded on start up \(reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab\).
+An opened flight plan file will be reloaded on start up (reload and centering can be switched off in the `Options` dialog on the `Startup` and `User Interface` tab).
 
 Procedure information and ground speed will be added to the flight plan if a PLN file is saved by _Little Navmap_. The additional information will be ignored by FSX or P3D but allows to reload all information by _Little Navmap_.
 
 You can also **drag and drop files from a file manager** like Windows Explorer or macOS Finder into the _Little Navmap_ main window to load them.
-Single flight plans and all allowed formats for loading \(`FMS`, `FLP`, `PLN`\) as well as aircraft performance files \(`lnmperf`\) are accepted.
+Single flight plans and all allowed formats for loading (`FMS`, `FLP`, `PLN`) as well as aircraft performance files (`lnmperf`) are accepted.
 
 **Always save a copy of the flight plan in PLN format to be able to reload all information. Writing to and reading from other formats like X-Plane PLN might result in information loss.**
 
@@ -51,7 +51,7 @@ See [Reset all for a new Flight](RESET.md) for more information on limitations.
 
 #### ![Save Flight Plan as PLN](../images/icons/filesaveas.png "Save Flight Plan as PLN") Save Flight Plan as PLN {#save-flight-plan-as}
 
-Saves the flight plan to an FSX/P3D PLN file \(XML format\). This annotated format allows to save all flight plan attributes of *Little Navmap*.
+Saves the flight plan to an FSX/P3D PLN file (XML format). This annotated format allows to save all flight plan attributes of *Little Navmap*.
 
 `Save Flight Plan as PLN` changes the current file type and name in *Little Navmap* which means that all further saves will go into the new PLN file.
 
@@ -276,7 +276,7 @@ The flight plan is exported as a route and the flown aircraft trail as a track i
 
 The route has departure and destination elevation and cruise altitude set for all waypoints. Waypoints of all procedures are included in the exported file. Note that the waypoints will not allow to reproduce all parts of a procedure like holds or procedure turns.
 
-**Do not forget to clear the aircraft trail \([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)\) before a flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
+**Do not forget to clear the aircraft trail ([Delete Aircraft Trail](MENUS.md#delete-aircraft-trail)) before a flight to avoid old trail segments in the exported GPX file. Or, disable the reloading of the trail in the options dialog on page **`Startup`**.**
 
 ##### Show Flight Plan in SkyVector {#export-flight-plan-as-skyvector}
 
@@ -376,7 +376,7 @@ Allows undo and redo of all flight plan changes.
 
 #### ![Select a Start Position for Departure](../images/icons/parkingstartset.png "Select a Start Position for Departure") Select a Start Position for Departure {#select-a-start-position-for-departure}
 
-A parking spot \(gate, ramp or fuel box\), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right-clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
+A parking spot (gate, ramp or fuel box), runway or helipad can be selected as a start position at the departure airport. A parking position can also be selected in the map context menu item [Set as Flight Plan Departure](MAPDISPLAY.md#set-as-flight-plan-departure) when right-clicking on a parking position. If no position is selected the longest primary runway end is selected automatically as start.
 
 ![Select Start Position Dialog](../images/selectstartposition.jpg "Select Start Position Dialog")
 
@@ -399,7 +399,7 @@ Copies the route description of the current flight plan to the clipboard using t
 
 Deletes all intermediate waypoints and connects departure and destination using a great circle line.
 
-You can calculate a flight plan between any kind of waypoints, even user-defined waypoints \(right-click on the map and select `Add Position to Flight plan` to create one\). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
+You can calculate a flight plan between any kind of waypoints, even user-defined waypoints (right-click on the map and select `Add Position to Flight plan` to create one). This allows the creation of snippets that can be merged into flight plans. For example you can use this feature for crossing the North Atlantic with varying departures and destinations. This applies to all flight plan calculation modes.
 
 #### ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav") Calculate Radionav {#calculate-radionav}
 
@@ -415,11 +415,11 @@ Calculated flight plans along airways will obey all airway restrictions like min
 
 Cruise altitude is corrected to the next sensible value (1000 ft for IFR and 500 ft for VFR) if it violates airway altitude restrictions.
 
-A simplified east/west rule is optionally used to adjust the cruise altitude to odd/even values \(this can be switched off in the `Options` dialog on the `Flight Plan` tab\). This correction is always applied if enabled.
+A simplified east/west rule is optionally used to adjust the cruise altitude to odd/even values (this can be switched off in the `Options` dialog on the `Flight Plan` tab). This correction is always applied if enabled.
 
 The default behavior is to jump from the departure airport to the next waypoint of a suitable airway and vice versa for the destination. This can be changed in `Options` dialog on the `Flight Plan` tab if VOR or NDB stations are preferred as transition points to airways.
 
-The airway network does not cover all areas \(the north Atlantic tracks are missing for example - these change daily\), therefore calculation across large ocean areas can fail.
+The airway network does not cover all areas (the north Atlantic tracks are missing for example - these change daily), therefore calculation across large ocean areas can fail.
 
 Create the airway manually as a workaround or use an online planning tool to obtain a route string and use the `New Flight Plan from String` option to create the flight plan.
 
@@ -445,7 +445,7 @@ Note that this function does not consider one-way airways in the X-Plane databas
 
 #### ![Adjust Flight Plan Altitude](../images/icons/routeadjustalt.png "Adjust Flight Plan Altitude") Adjust Flight Plan Altitude {#adjust-flight-plan-alt}
 
-Changes the flight plan altitude according to a simplified East/West rule and the current route type \(IFR or VFR\). Rounds the altitude up to the nearest even 1000 feet \(or meter\) for westerly flight plans or odd 1000 feet \(or meter\) for easterly flight plans. Adds 500 feet for VFR flight plans.
+Changes the flight plan altitude according to a simplified East/West rule and the current route type (IFR or VFR). Rounds the altitude up to the nearest even 1000 feet (or meter) for westerly flight plans or odd 1000 feet (or meter) for easterly flight plans. Adds 500 feet for VFR flight plans.
 
 ### Map Menu {#map-menu}
 
@@ -459,7 +459,7 @@ Go to the center point used for distance searches. See [Set Center for Distance 
 
 #### ![Center Flight Plan](../images/icons/centerroute.png "Center Flight Plan") Center Flight Plan {#center-flight-plan}
 
-Zooms out the map \(if required\) to display the whole flight plan on the map.
+Zooms out the map (if required) to display the whole flight plan on the map.
 
 #### ![Remove all Highlights and Selections](../images/icons/clearselection.png "Remove all Highlights and Selections") Remove all Highlights and Selections {#remove-highlights}
 
@@ -573,7 +573,7 @@ Allows selection of the Class F and Class G airspaces or flight information regi
 
 ##### ![Restricted Airspaces](../images/icons/airspacerestr.png "Restricted Airspaces") Restricted Airspaces {#restricted-airspaces}
 
-Show or hide MOA \(military operations area\), restricted, prohibited and danger airspaces.
+Show or hide MOA (military operations area), restricted, prohibited and danger airspaces.
 
 ##### ![Special Airspaces](../images/icons/airspacespec.png "Special Airspaces") Special Airspaces {#special-airspaces}
 
@@ -645,7 +645,7 @@ Show or hide the missed approaches of the current flight plan. This does not aff
 
 Shows the user aircraft and keeps it centered on the map if connected to the simulator. The user aircraft is always shown independently of the zoom distance.
 
-The icon color and shape indicates the aircraft type and whether the aircraft is on ground \(gray border\).
+The icon color and shape indicates the aircraft type and whether the aircraft is on ground (gray border).
 
 ![User Aircraft](../images/icons/aircraft_small_user.png "User Aircraft") User aircraft in flight.
 
@@ -668,7 +668,7 @@ This allows a quick inspection of an airport or navaid during flight. To display
 
 Show the user aircraft trail. The trail is always shown independently of the zoom distance. It is saved and will be reloaded on program startup.
 
-The trail can be deleted manually by selecting `Map` -&gt; `Delete Aircraft Trail` in the main menu.
+The trail can be deleted manually by selecting `Map` -> `Delete Aircraft Trail` in the main menu.
 
 The length of the trail is limited for performance reasons. If it exceeds the maximum length, the trail is truncated and the oldest segments are lost.
 
@@ -686,7 +686,7 @@ See [Compass Rose](COMPASSROSE.md) for details.
 
 Shows AI and multiplayer aircraft or ships on the map. Multiplayer vehicles can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
 
-The icon color and shape indicates the aircraft type and whether the aircraft is on ground \(gray border\).
+The icon color and shape indicates the aircraft type and whether the aircraft is on ground (gray border).
 
 ![AI or Multiplayer Aircraft](../images/icons/aircraft_small.png "AI or Multiplayer Aircraft") AI or multiplayer aircraft from the simulator. This includes aircraft that are injected by the various online network clients. A click on the AI aircraft or ship shows more information in the `Simulator Aircraft` dock window in the tab `AI / Multiplayer`.
 
@@ -708,7 +708,7 @@ All aircraft icons can be customized: [User, AI and Multiplayer Aircraft Icons](
 
 #### ![Show Map Grid](../images/icons/mapgrid.png "Show Map Grid") Show Map Grid {#show-map-grid}
 
-Show a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [antimeridian](https://en.wikipedia.org/wiki/180th_meridian) \(near the date line\) on the map.
+Show a latitude/longitude grid as well as the [meridian](https://en.wikipedia.org/wiki/Prime_meridian) and [antimeridian](https://en.wikipedia.org/wiki/180th_meridian) (near the date line) on the map.
 
 #### ![Show Country and City Names](../images/icons/cities.png "Show Country and City Names") Show Country and City Names {#show-country-and-city-names}
 
@@ -788,7 +788,7 @@ Online maps can appear slightly blurred when using this projection. This is a re
 
 ![Little Navmap Spherical projection and Simple Map Theme](../images/sphericalpolitical.jpg "Little Navmap Spherical projection and Simple Map Theme")
 
-_**Picture above:** Spherical map projection with _`Simple`_ offline map theme selected._
+_**Picture above:** Spherical map projection with `Simple` offline map theme selected._
 
 #### Theme {#theme}
 
@@ -801,7 +801,7 @@ Custom map themes are prefixed with a `*` in the drop down box in the toolbar an
 
 ##### OpenStreetMap {#openstreetmap}
 
-This is an online raster \(i.e. based on images\) map that includes a hill shading option. Note that the _OpenStreetMap_ hill shading does not cover the whole globe.
+This is an online raster (i.e. based on images) map that includes a hill shading option. Note that the _OpenStreetMap_ hill shading does not cover the whole globe.
 
 ![OpenStreetMap and Hill shading](../images/osmhillshading.jpg "OpenStreetMap and Hill shading")
 
@@ -827,27 +827,27 @@ Map tiles by [Stamen Design](https://stamen.com), under [CC BY 3.0](https://crea
 
 _**Picture above:** View showing Stamen Terrain theme._
 
-##### CARTO Light {#carto-light} \(New in version 1.4.4\)
+##### CARTO Light {#carto-light} (New in version 1.4.4)
 
 A very bright map called *Positron* which allows to concentrate on the aviation features on the map display. The map includes the same hill shading option as the _OpenStreetMap_.
 
 Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
 
-##### CARTO Dark {#carto-light} \(New in version 1.4.4\)
+##### CARTO Dark {#carto-light} (New in version 1.4.4)
 
 A dark map called *Dark Matter*. The map includes the same hill shading option as the _OpenStreetMap_.
 
 Map tiles and style by [CARTO](https://carto.com/). Data by [OpenStreetMap](https://www.openstreetmap.org), under [ODbL](https://www.openstreetmap.org/copyright).
 
-##### Simple \(Offline\) {#simple-offline}
+##### Simple (Offline) {#simple-offline}
 
 This is a political map using colored country polygons. Boundaries and water bodies are depicted coarse. The map included in _Little Navmap_ has an option to display city and country names.
 
-##### Plain \(Offline\) {#plain-offline}
+##### Plain (Offline) {#plain-offline}
 
 A very simple map. The map is included in _Little Navmap_ and has an option to display city and country names. Boundaries and water bodies are depicted coarse.
 
-##### Atlas \(Offline\) {#atlas-offline}
+##### Atlas (Offline) {#atlas-offline}
 
 A very simple map including coarse hill shading and land colors. The map is included in _Little Navmap_ and has an option to display city and country names. Boundaries and water bodies are depicted coarse.
 
@@ -1095,7 +1095,7 @@ Ignores the Navigraph database and shows only information read from the simulato
 
 #### Show Database Files {#show-database-files}
 
-Open _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer \(e.g. Windows, Mac or Linux\) using the same database that was created on the computer running the flight simulator.
+Open _Little Navmap_'s database directory in a file manager. See [Running without Flight Simulator Installation](RUNNOSIM.md#running-without-flight-simulator-installation) for more information on copying database files between different computers. This allows _Little Navmap_ to be run on a remote computer (e.g. Windows, Mac or Linux) using the same database that was created on the computer running the flight simulator.
 
 #### ![Load User Airspaces](../images/icons/databaseairspace.png "Load User Airspaces") Load User Airspaces {#load-user-airspaces}
 
@@ -1155,7 +1155,7 @@ Show or hide floating map overlays, like the overview on the top left or the com
 
 Allows to switch the style of the graphical user interface on the fly. A restart is not needed.
 
-The user interface styles contain a `Night` mode that can be used for flights in a dark environment. You can also dim the map and elevation profile display for this style in the dialog `Options` on tab `Map Display` \(`Map Dimming in Night Style` at the bottom of the dialog\).
+The user interface styles contain a `Night` mode that can be used for flights in a dark environment. You can also dim the map and elevation profile display for this style in the dialog `Options` on tab `Map Display` (`Map Dimming in Night Style` at the bottom of the dialog).
 
 The colors for the styles `Fusion` and `Night` can be changed by editing configuration files. See [Customize](CUSTOMIZE.md) for more information.
 
@@ -1169,7 +1169,7 @@ Some shortcuts also activate a search fields or tables like the airport ICAO sea
 
 #### Show all floating Windows {#search}
 
-Raises all undocked \(i.e. floating\) windows before the main window. This can be helpful if a window got lost.
+Raises all undocked (i.e. floating) windows before the main window. This can be helpful if a window got lost.
 See [Dock Windows](DOCKWINDOWS.md) for more information about floating dock windows.
 
 #### ![Search](../images/icons/searchdock.png "Search") Search {#search}
@@ -1196,19 +1196,19 @@ Reset the main window layout back to default. This involves visibility, position
 
 ### Help Menu {#help-menu}
 
-#### ![Contents \(Online\)](../images/icons/help.png "Contents \(Online\)") Contents \(Online\) {#help-contents}
+#### ![Contents (Online)](../images/icons/help.png "Contents (Online)") Contents (Online) {#help-contents}
 
 Show the online user manual in the default web browser.
 
-#### ![Tutorials \(Online\)](../images/icons/help.png "Tutorials \(Online\)") Tutorials \(Online\) {#help-tutorials}
+#### ![Tutorials (Online)](../images/icons/help.png "Tutorials (Online)") Tutorials (Online) {#help-tutorials}
 
 Shows the online tutorials in the default web browser.
 
-#### ![Frequently asked Questions \(Online\)](../images/icons/help.png "Frequently asked Questions \(Online\)") Frequently asked Questions \(Online\) {#help-faq}
+#### ![Frequently asked Questions (Online)](../images/icons/help.png "Frequently asked Questions (Online)") Frequently asked Questions (Online) {#help-faq}
 
 Shows the frequently asked questions in the web browser.
 
-#### ![Contents \(Offline, PDF\)](../images/icons/help.png "Contents \(Offline, PDF\)") Contents \(Offline, PDF\) {#help-contents-offline}
+#### ![Contents (Offline, PDF)](../images/icons/help.png "Contents (Offline, PDF)") Contents (Offline, PDF) {#help-contents-offline}
 
 Show the included PDF user manual in the default PDF viewer.
 
@@ -1248,7 +1248,7 @@ See [Checking for Updates](UPDATE.md) for more information.
 
 ## Statusbar {#statusbar}
 
-The statusbar at the bottom of the main window shows various indications \(from left to right\):
+The statusbar at the bottom of the main window shows various indications (from left to right):
 
 * Last action or quick help explaining a menu item or toolbar button.
 * Connection status for a local or remote connection. The tooltip provides more detail about the status, like the hostname for remote connections.
@@ -1264,7 +1264,7 @@ The statusbar at the bottom of the main window shows various indications \(from 
   * `Waiting for Data ...`: Map data is missing in the cache and was requested. Now waiting for reply.
   * `Waiting for Update ...`: Map data is already loaded but expired after two weeks. Waiting for new data after requesting an update.
   * `Incomplete.`: Download failed. Note that the progress indicator can look like it is stuck in the message `Waiting for Data ...` if no hill shading is available for a _OpenStreetMap_ region or if you zoom in too close when using certain online maps.
-* Zoom distance \(viewpoint distance to earth surface\) in nautical miles or kilometers.
+* Zoom distance (viewpoint distance to earth surface) in nautical miles or kilometers.
 * Cursor position on map as latitude and longitude depending on selected unit in the dialog `Options`.
   * Ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
   * Magnetic variance at the cursor position in degrees West or East.
@@ -1272,4 +1272,4 @@ The statusbar at the bottom of the main window shows various indications \(from 
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 
-_**Picture above:** Status bar message about the last action on the left side \(_`Options changed.`_\), the connection status _`Disconnected`_ and a tooltip that indicates what is currently shown on the map. The map detail level is unchanged and the map coordinates at the cursor position are shown on the bottom right. Altitude at cursor is shown too since offline elevation data is installed. The online map download progress indicator shows _`Done.`_ indicating all map tiles were downloaded. Zoom distance is 14.7 nautical miles._
+_**Picture above:** Status bar message about the last action on the left side (`Options changed.`), the connection status `Disconnected` and a tooltip that indicates what is currently shown on the map. The map detail level is unchanged and the map coordinates at the cursor position are shown on the bottom right. Altitude at cursor is shown too since offline elevation data is installed. The online map download progress indicator shows `Done.` indicating all map tiles were downloaded. Zoom distance is 14.7 nautical miles._

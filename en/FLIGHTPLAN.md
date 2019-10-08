@@ -4,7 +4,7 @@ The Flight Planning Dock Window contains the three tabs: `Flight Plan` (this cha
 
 ### Upper Part {#upper-part}
 
-The top shows a label that contains departure, departure position \(parking, runway or helipad\), destination, flight plan distance, traveling time, used procedures \(SID, STAR, approach and transitions\) as well as flight plan type.
+The top shows a label that contains departure, departure position (parking, runway or helipad), destination, flight plan distance, traveling time, used procedures (SID, STAR, approach and transitions) as well as flight plan type.
 
 The label also displays error messages if, for example, the runway of a STAR differs from the runway of the following approach procedure.
 
@@ -14,18 +14,18 @@ The ARINC name of the approach procedure which is needed by some FMCs is shown i
 
 ![Flight Plan Header](../images/flightplanheader.jpg "Flight Plan Header")
 
-_**Picture above:** Header of a flight plan. _`VORDME LITSY`_ has _`D34`_ as ARINC name._
+_**Picture above:** Header of a flight plan. `VORDME LITSY` has `D34` as ARINC name._
 
 Besides the label there are two input fields on top of this dock window:
 
-* **Cruise altitude \(ft\):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate high Altitude](MENUS.md#calculate-high-altitude) and following chapters about flight plan calculation.
-* **Flight Plan Type \(IFR or VFR\):** This is saved with the flight plan and is only relevant for FSX or Prepar3D.
+* **Cruise altitude (ft):** This value is saved with the flight plan and is also used to calculate an airway flight plan based on given altitude. This field is set automatically to the minimum altitude for a flight plan if a plan along Victor or Jet airways is calculated and altitude restrictions were found. See [Calculate high Altitude](MENUS.md#calculate-high-altitude) and following chapters about flight plan calculation.
+* **Flight Plan Type (IFR or VFR):** This is saved with the flight plan and is only relevant for FSX or Prepar3D.
 
 ### Flight Plan Table {#flight-plan-table}
 
 The table view allows the same operations as the search table view except sorting. See [here](SEARCH.md#table-view) for more information.
 
-All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Use `Shift+Click` or `Ctrl+Click` to select two or more elements \(multi-selection\).
+All selected elements in the flight plan table view will be highlighted on the map using a black/green circle. See [Highlights](MAPDISPLAY.md#highlights) for more information. Use `Shift+Click` or `Ctrl+Click` to select two or more elements (multi-selection).
 
 The active flight plan leg is highlighted in magenta when _Little Navmap_ is connected to a simulator, the user aircraft is airborne and user aircraft is closer than 50 nautical miles to the flight plan.
 
@@ -64,15 +64,15 @@ Alternate airports are shown at the end of the list using gray text. Note that m
 * `Direct °M:`** This is the constant course of the rhumb line connecting two waypoints of a leg. Depending on route and distance it can differ from the course of the great circle line. Use this course if you travel along airways or towards VOR or NDB stations. Opposed to the course shown by the flight simulator GPS unit this will give you the precise radial when approaching a VOR or NDB on a flight plan.
 * `Course °T:` and `Direct °T:`** The same as the two fields above but using true course. Use this in areas with high magnetic variation.
 * `Distance`: Distance of the flight plan leg.
-* `Remaining`: Remaining distance to destination airport or procedure end point \(usually the runway\).
-* `Leg Time`: Flying time for this leg. Calculated based on the selected aircraft performance profile \(see [Aircraft Performance](AIRCRAFTPERF.md)\). This is a static value and not updated while flying. Empty if performance calculation failed.
+* `Remaining`: Remaining distance to destination airport or procedure end point (usually the runway).
+* `Leg Time`: Flying time for this leg. Calculated based on the selected aircraft performance profile (see [Aircraft Performance](AIRCRAFTPERF.md)). This is a static value and not updated while flying. Empty if performance calculation failed.
 * `ETA`: Estimated time of arrival. This is a static value and not updated while flying. Calculated based on the selected aircraft performance profile. Empty if performance calculation failed.
 * `Fuel Rem.`: Fuel remaining at waypoint, once for volume and once for weight. This is a static value and not updated while flying. Calculated based on the selected aircraft performance profile. Empty if aircraft performance profile has no fuel consumption numbers set.
 * `Remarks`: Turn instructions, flyover or related navaid for procedure legs.
 
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
-_**Picture above:** The _`Flight Planning`_ dock window. The flight plan uses a SID for departure and a STAR, a transition and an approach for arrival._
+_**Picture above:** The `Flight Planning` dock window. The flight plan uses a SID for departure and a STAR, a transition and an approach for arrival._
 
 #### Column Selection {#flight-plan-table-columns}
 
@@ -94,7 +94,7 @@ Note that flight plans are still usable in _Little Navmap_ although saving and e
 
 ![Flight Plan Errors](../images/flightplan_errors.jpg "Flight Plan Errors")
 
-_**Picture above:** The _`Flight Planning`_ with three different tooltips showing errors._
+_**Picture above:** The `Flight Planning` with three different tooltips showing errors._
 
 ![Flight Plan Errors Procedure](../images/flightplan_errors2.jpg "Flight Plan Errors Procedure")
 
@@ -130,7 +130,7 @@ Show either the airport diagram or zooms to the navaid on the map. The zoom dist
 
 #### ![Activate Flight Plan Leg](../images/icons/routeactiveleg.png "Activate Flight Plan Leg") Activate Flight Plan Leg {#activate}
 
-Makes the selected leg the active \(magenta\) flight plan leg. The active leg might change if _Little Navmap_ is connected to the simulator and the user aircraft is moving.
+Makes the selected leg the active (magenta) flight plan leg. The active leg might change if _Little Navmap_ is connected to the simulator and the user aircraft is moving.
 
 #### Follow Selection {#follow-selection}
 
@@ -184,7 +184,7 @@ This is a submenu containing entries for flight plan calculation methods as desc
 
 Calculate a flight plan fragment between the first and last selected waypoint. All existing legs in between are deleted and replaced with the calculated flight plan fragment.
 
-This menu is only active when more than one flight plan leg is selected and neither the first nor the last selected row is a procedure. You can either select the first and the last leg \(`Ctrl+Click`\) and start the calculation or you can select a whole range of legs \(`Shift+Click` and drag\) before calculation.
+This menu is only active when more than one flight plan leg is selected and neither the first nor the last selected row is a procedure. You can either select the first and the last leg (`Ctrl+Click`) and start the calculation or you can select a whole range of legs (`Shift+Click` and drag) before calculation.
 
 This function can be useful if you have to cross oceanic legs that are void of airways:
 

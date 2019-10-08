@@ -10,7 +10,7 @@ The drop down menu prefixes menu items with a change indicator `*` to show that 
 
 Filters are defined by various controls which are mostly self explaining. Only text filters and the tri-state checkboxes like `Lighted`, `Approach` or `Closed` need a few extra remarks below.
 
-All filters can be used together where all conditions have to be met \(`and` operator\). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
+All filters can be used together where all conditions have to be met (`and` operator). All filters except the distance search filter are applied immediately. The distance search is applied after a short delay for each change.
 
 **Entering three or four characters in the `ICAO Code` field of the airport search tab will trigger a quick search which ignores all other filters and shows the airports matching that partial or full ICAO code.**
 
@@ -20,9 +20,9 @@ A tooltip on the blue help button on the top right shows information about searc
 
 The standard is to search for entries that start with the entered text.
 
-The placeholder `*` stands for any text. Once a `*` is included in the term, the standard search \(match start of text\) is no longer used. In that case you might have to add a `*` at the end of the search term as well to get the expected result.
+The placeholder `*` stands for any text. Once a `*` is included in the term, the standard search (match start of text) is no longer used. In that case you might have to add a `*` at the end of the search term as well to get the expected result.
 
-The search is negated \(find all entries that do not match\) if the first character in a search box is a `-`.
+The search is negated (find all entries that do not match) if the first character in a search box is a `-`.
 
 Note that all of the above does not apply to numeric fields like `Runways: Min` or `Altitude: Max`.
 
@@ -36,7 +36,7 @@ Below are the states as they are shown in Windows 10:
 * **Checked:** Condition must match.
 * **Empty Box:** Condition must not match.
 
-Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used \(red fill on Linux or a `-` for macOS\).
+Colors and look of these checkboxes vary with theme and operation system. So instead of gray another color might be used (red fill on Linux or a `-` for macOS).
 
 ### Distance search {#distance-search}
 
@@ -48,17 +48,17 @@ The checkbox `Distance` has to be selected to enable this search. The result wil
 
 The center for the distance search is highlighted by a ![Distance Search Symbol](../images/icons/distancemark.png "Distance Search Symbol") symbol.
 
-To restrict the search further you can select a direction \(North, East, South and West\).
+To restrict the search further you can select a direction (North, East, South and West).
 
 Check the drop down menu for the change indicator `*` and the search fields for any remaining text if the distance search does not give any or unexpected results. Use `Reset Search` in the context menu of the result table or press `Ctrl+R` to clear all search criteria.
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-_**Picture above A complex distance search:** Find all airports within a distance between 200 and 400 nautical miles from Frankfurt \(EDDF\). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table._
+_**Picture above A complex distance search:** Find all airports within a distance between 200 and 400 nautical miles from Frankfurt (EDDF). Airports should have a rating greater than 0 and should have at least one lighted runway. Military and closed airports are excluded. The resulting airports are highlighted on the map by selecting them in the search result table._
 
 ![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
 
-_**Picture above A complex search for scenery:** This example shows how to find specific add-on scenery by using the _`Scenery Path`_ search field. This shows all airports of the Orbx New Zealand South Island add-on scenery that have lighted runways._
+_**Picture above A complex search for scenery:** This example shows how to find specific add-on scenery by using the `Scenery Path` search field. This shows all airports of the Orbx New Zealand South Island add-on scenery that have lighted runways._
 
 ### Search Result Table View {#search-result-table-view}
 
@@ -71,7 +71,7 @@ Use `Shift+Click` or `Ctrl+Click` to select two or more elements (multi-selectio
 The header of all table views allows the following manipulation:
 
 * **Click on the top left corner of the column header:** Select all result rows.
-* **Click on a column header:** Sort ascending or descending \(only for search result tables - not for flight plan table\).
+* **Click on a column header:** Sort ascending or descending (only for search result tables - not for flight plan table).
 * **Click and drag on the column header:** Change column order.
 * **Double-click on column border:** Automatically fit column size to content.
 * **Click and drag on column border:** Change column width.
@@ -87,7 +87,7 @@ _**Picture above:** Airport search result table. All additional search options a
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-_**Picture above:** Navaid search limited to ICAO region _`LI`_ \(Italy\) and VOR, VORTAC and TACAN stations that have a range of 100 or more nautical miles._
+_**Picture above:** Navaid search limited to ICAO region `LI` (Italy) and VOR, VORTAC and TACAN stations that have a range of 100 or more nautical miles._
 
 #### Mouse Clicks {#mouse-clicks-0}
 
