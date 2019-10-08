@@ -12,7 +12,7 @@ Open the connection dialog in _Little Navmap_ by selecting `Tools` -> `Flight Si
 
 ![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
 
-_**Picture above:** Little Navmap connect dialog set up for a local connection to FSX or P3D. The connection will be established manually._
+_**Picture above:** _Little Navmap_ connect dialog set up for a local connection to FSX or P3D. The connection will be established manually._
 
 Select `Connect directly to local Flight Simulator`.
 
@@ -28,7 +28,7 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` t
 
 You have to intall the included *Little Xpconnect* plugin to use *Little Navmap* as a moving map with X-Plane.
 
-The plugin is bundled with Little Navmap and can be downloaded separately too.
+The plugin is bundled with _Little Navmap_ and can be downloaded separately too.
 
 Copy the whole plugin directory `Little Xpconnect` into the directory `plugins`
 in the directory `Resources` in the X-Plane installation. The complete path
@@ -36,7 +36,7 @@ should look like `.../X-Plane 11/Resources/plugins/Little Xpconnect`
 
 You can check the X-Plane plugin manager to see if it is loaded  correctly.
 
-When connecting with Little Navmap select the option `Connect directly to a local
+When connecting with _Little Navmap_ select the option `Connect directly to a local
 X-Plane simulator`.
 
 ### Remote Connection {#remote-connection}

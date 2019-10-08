@@ -14,4 +14,4 @@ Use this to reset functions for a new flight. This is optional but always helpfu
 
 ![Reset for a new Flight Dialog](../images/resetflight.jpg "Reset for a new Flight Dialog")
 
-_**Picture above:** Resetting Little Navmap for a new flight._
+_**Picture above:** Resetting _Little Navmap_ for a new flight._
