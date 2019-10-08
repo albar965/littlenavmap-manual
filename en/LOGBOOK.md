@@ -106,7 +106,7 @@ Links are recognized in the field `Description` and can be opened in the dock wi
 
 Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like `file:///C:/Users/me/Documents/Aircraft%20Notes.txt` on Windows or `file:///home/me/Aircraft%20Notes.txt` on macOS or Linux.
 
-Note that you have to use the forward slash `/` instead of the backslash `\\` on Windows as a path separator.
+Note that you have to use the forward slash `/` instead of the backslash `\` on Windows as a path separator.
 
 Replace spaces in links with `%20` since _Little Navmap_ recognizes links until the next space.
 

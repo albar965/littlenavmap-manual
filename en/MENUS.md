@@ -1232,7 +1232,7 @@ Display information about the [Marble widget](https://marble.kde.org) that is us
 
 Display information about the [Qt application framework](https://www.qt.io) that is used by _Little Navmap_.
 
-#### ![Donate for this Program](../images/icons/about.png "Dontate for this Program") Dontate for this Program {#donate}
+#### ![Donate for this Program](../images/icons/about.png "Donate for this Program") Donate for this Program {#donate}
 
 Opens the donation web page in your default browser.
 
