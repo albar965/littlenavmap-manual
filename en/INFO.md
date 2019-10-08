@@ -44,6 +44,35 @@ These six tabs show information for one selected airport.
 
 Sunrise and sunset for the airport are calculated based on current real date if no simulator is connected. Otherwise the simulator date is used. This is indicated by the text `(civil twilight, real date)` or `(civil twilight, simulator date)`.
 
+##### Airport Tab - Links
+
+Links to several online services like [SkyVector](https://skyvector.com/) or the [The X-Plane Scenery Gateway](https://gateway.x-plane.com/) open the browser with information for the airport using the respective online service.
+
+##### Airport Tab - Files
+
+_Little Navmap_ will show extra links to local files if you put these into a special folder with the name of the airport ICAO ident.
+
+You have to use the translated folder names or the English variant depending on the program and system language.
+
+The path to the airport files is shown on top of the `Files` section.
+
+You can use any file type. A file will be opened with the default application like a PDF reader if you click on the link.
+
+Examples for airport Ouessant (`LFEC`):
+
+* `/home/USERNAME/Documents/Little Navmap Files/Airports/LFEC`: Linux
+* `/home/USERNAME/Dokumente/Little Navmap Dateien/LFEC`: Linux with German translation
+* `/Users/USERNAME/Documents/Little Navmap Files/Airports/LFEC`: macOS
+* `/Users/USERNAME/Documents/Little Navmap Dateien/LFEC`: macOS with German translation
+* `C:\Users\YOURUSERNAME\Documents\Little Navmap Files/Airports/LFEC`: Windows
+* `C:\Users\YOURUSERNAME\Documents\Little Navmap Dateien/LFEC`: Windows with German translation
+
+![Airport Information Links](../images/infolinks.jpg "Airport Information Links")
+
+_**Picture above:** Airport information with linked web-sites in the `Links` section and links to user files in the `Files` section._
+
+##### Other Tabs
+
 Preferred runways depending on wind are shown after the METAR. More details about preferred runways are on the tab `Weather`.
 
 The tab `Weather` shows decoded weather information for a selected airport. The flight rules icon ([Legend - Airport Weather](LEGEND.md#airport-weather)) has a suffix ` - Map` if the shown weather source is the source for airport weather icons on the map. Also shown is detailed information for best runways for takeoff and landing based on wind conditions.
