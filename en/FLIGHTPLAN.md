@@ -100,6 +100,34 @@ _**Picture above:** The `Flight Planning` with three different tooltips showing 
 
 _**Picture above:** Tooltip on error message showing violations of altitude restrictions._
 
+### Magnetic Declination {#magnetic-declination}
+
+_Little Navmap_ uses the [magnetic declination](https://en.wikipedia.org/wiki/Magnetic_declination) that is stored with VOR stations or the actual environment declination. The latter one is calculated by the program using the world magnetic mode. ([WMM](https://en.wikipedia.org/wiki/World_Magnetic_Model)) or loaded from the simulator scenery database.
+
+Note that the magnetic declination of a VOR (also: calibration for VOR, VORDME and VORTAC) may differ from the actual declination in a simulator region as it does in reality. The calibration of a VOR might be very old while the real declination in the environment changed in the meantime due to the wandering of the magnetic pole. Therefore, magnetic course values might differ. This can result in strange course readings in flight plans.
+
+_Little Navmap_ uses the declination of a VOR to calculate the inbound and outbound magnetic course of a flight plan leg to and from this VOR. This allows the pilot to use the VOR radials for navigation. For all other legs the actual environment declination is used.
+
+You can disable the use of VOR declination in the options dialog on page `Flight Plan` by checking `Ignore declination of VOR and other radio navaids`. This will use the environment declination for all calculations. You might want ot use this if you fly entirely based on GPS and ignore VOR stations.
+
+**Examples below:** A flight plan crossing the `VORTAC Battle Ground (BTG)` last calibrated 1975 ([source](http://www.pilotnav.com/navaid/faa-2529)) with a declination of 21° East while the environment has an actual declination of 15.2° East. You can see the actual declination below the mouse cursor in the status bar of _Little Navmap_.
+
+Below a flight plan with three legs all having a true course of 90°.
+
+**Example with `Ignore declination of VOR and other radio navaids` not checked:**
+
+![Magnetic Declination On](../images/magvarenabled.jpg "Magnetic Declination On")
+
+_**Picture above:** Note the course difference when flying to and from `BTG` compared to the magnetic course when flying to `YIPYU`. Magnetic course in- and outbound to/from `BTG` is calculated based on the station declination 21° East while course to `YIPYU` is based on 15.2° East._
+
+**Example with `Ignore declination of VOR and other radio navaids` checked:**
+
+![Magnetic Declination Off](../images/magvardisabled.jpg "Magnetic Declination Off")
+
+_**Picture above:** All magnetic course values are equal since the environment declination of 15.2° East is used to calculate the magnetic course for all legs._
+
+See also [Magnetic Declination](SCENERY.md#magnetic-declination) for more information about declination values and scenery databases.
+
 ### Mouse Clicks {#mouse-clicks}
 
 A double-click on an entry in the table view shows either an airport diagram or zooms to the navaid. Additionally, details are shown in the `Information` dock window. A single click selects an object and highlights it on the map using a black/green circle.

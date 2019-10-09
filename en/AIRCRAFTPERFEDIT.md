@@ -64,6 +64,8 @@ Contingency fuel is carried to account for additional en-route fuel consumption 
 
 The value is given in percent of trip fuel.
 
+**Note that the ICAO recommends to use 5 percent contingency fuel for all flights.**
+
 #### Climb {#climb}
 
 Values for climb are detected automatically when collecting performance.

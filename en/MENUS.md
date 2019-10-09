@@ -1267,7 +1267,7 @@ The statusbar at the bottom of the main window shows various indications (from l
 * Zoom distance (viewpoint distance to earth surface) in nautical miles or kilometers.
 * Cursor position on map as latitude and longitude depending on selected unit in the dialog `Options`.
   * Ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
-  * Magnetic variance at the cursor position in degrees West or East.
+  * Magnetic declination at the cursor position in degrees West or East.
 * Current date of month and zulu/UTC time `hours:minutes:seconds`. This is the real world time and not the simulator time. The tooltip gives more date and time information.
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")

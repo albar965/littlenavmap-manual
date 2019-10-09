@@ -148,7 +148,7 @@ _**Picture above:** Page `Simulator Aircraft`._
 
 ### ![Flight Plan](../images/icons/route.png "Flight Plan") Flight Plan {#flight-plan}
 
-Here you can set preferences for flight plan calculation, adjust the rule of thumb for the top of descent display or change the default filename for saving flight plans.
+Here you can set preferences for flight plan calculation or change the default filename for saving flight plans.
 
 ### ![Weather](../images/icons/weather.png "Weather") Weather {#weather}
 
@@ -331,7 +331,7 @@ Select one or more entries in the list and click on `Remove` to delete then from
 You can use this list to modify this behavior.
 
 Add-ons, like _Orbx FTX Vector_ or _fsAerodata_ add scenery files that correct certain aspects
-of airports like elevation, magnetic variance or others. All these airports will be recognized as add-on airports
+of airports like elevation, magnetic declination or others. All these airports will be recognized as add-on airports
 since all their files are not stored in the base flight simulator `Scenery` directory.
 
 Insert the corresponding directories or files into this list to avoid unwanted highlighting of these airports as add-ons.

@@ -70,7 +70,7 @@ See also [Little Navmap - Frequently asked Questions](https://albar965.github.io
 * There are errors in the online elevation source data (like in northern Italy, Po Valley or Lake Titicaca in Peru and Bolivia) which will show up in the flight plan elevation profile.
 * The Mercator projection shows occasional display problems depending on zoom distance like horizontal lines near the anti meridian or missing flight plan segments.
 * The Marble floating map overlays on the map can be configured but do not save all settings except their visibility.
-* Magnetic variance is partially not set (for example VORDME Cambridge Bay YCB) or inconsistent between airports an adjacent navaids. This is an error in the source data.
+* Magnetic declination is partially not set (for example VORDME Cambridge Bay YCB) or inconsistent between airports an adjacent navaids. This is an error in the source data.
 * Airports are misplaced (for example Cabo San Lucas, MM15 in Mexico) compared to the background maps. This is an error in the source data and cannot be fixed.
 * Very long route legs can disappear from the map when zooming in. The label is still visible though.
 * Tooltips of large airspaces can appear at wrong places.

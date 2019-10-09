@@ -139,11 +139,11 @@ _**Picture above:** Progress dialog shown while loading the scenery library into
 
 ### Magnetic Declination {#magnetic-declination}
 
-_Little Navmap_ reads the magnetic declination from different sources or calculates it using the world magnetic model (WMM) depending on simulator and navaid.
+_Little Navmap_ reads the [magnetic declination](https://en.wikipedia.org/wiki/Magnetic_declination) from different sources or calculates it using the world magnetic model ([WMM](https://en.wikipedia.org/wiki/World_Magnetic_Model)) depending on simulator and navaid.
 
 The data is updated when loading the scenery library and is also stored in the scenery library database for each simulator.
 
-Note that the calibrated magnetic declination of a VOR may differ from the actual declination in a region as it does in reality. The calibration of a VOR could be done a long time ago while the real declination in the environment changed in the meantime. Therefore, magnetic course values might differ in some cases. This can result in strange course readings in flight plans.
+See chapter [Flight Plan - Magnetic Declination](FLIGHTPLAN.md#magnetic-declination) for information how this impacts flight plans.
 
 #### FSX and Prepar3D
 
