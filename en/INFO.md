@@ -129,6 +129,8 @@ This dock window shows information about the user aircraft and about AI or multi
 
 Gives an overview about the user aircraft and shows type, weight and fuel information.
 
+The aircraft tab shows a red warning text `Gross weight exceeding max gross weight.` if the gross weight is too high.
+
 ![Aircraft Information](../images/infoac.jpg "Aircraft Information")
 
 _**Picture above:** Aircraft information when connected to a flight simulator. Alternate units (liter and kg) are enabled._
@@ -143,16 +145,17 @@ The aircraft and progress tabs show warnings and errors by highlighting text in 
 
 * Fuel and time estimated since flight plan not valid.
 * Fuel and time estimated since aircraft performance not valid.
-* Gross weight exceeding max gross weight.
-* Insufficient fuel at destination (if aircraft performance is valid).
+* Insufficient fuel at destination (only if aircraft performance is valid).
 * Speed limit of 250 knots exceeded below 10000 feet.
 * Icing.
 
 Note that the fuel and time estimates are based on the aircraft performance if valid. ([Aircraft Performance](AIRCRAFTPERF.md)).
 
-Fuel at destination is estimated by remaining fuel in tanks so far and consumption as predicted by aircraft performance for remaining distance.
+Fuel at destination and at top of descent is estimated by the current fuel amount in tanks and the consumption as predicted by aircraft performance for the remaining distance to fly. Wind as well as the different fuel flow numbers of the climb cruise and descent phases is considered in this calculation.
 
-_Little Navmap_ can show a warning about fuel at destination in the early flight phases (climb). This is normal since fuel flow is higher for takeoff and early climb.
+Time of arrival is similarly calculated by current time and aircraft performance prediction considering wind, climb cruise and descent phases.
+
+**_Little Navmap_ might show an orange warning about insufficient fuel at destination in the early flight phases. This is normal since fuel flow is higher for takeoff and early climb.**
 
 ![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progresss Information")
 

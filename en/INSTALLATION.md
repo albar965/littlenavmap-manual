@@ -12,11 +12,12 @@ Delete all installed files of a previous _Little Navmap_ version before installi
 There is no need to delete the old settings directory. The program is written in a way that it can always work with old setting files.
 
 ### Windows
+
 The installation of _Little Navmap_ does not change any registry entries (in Windows) and involves a simple copy of files therefore an installer or setup program is not required.
 
 Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
 
-Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`.
+Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. The extension `.exe` might be hidden in Windows Explorer depending on settings. In that case look for a file `littlenavmap` having a light blue globe icon.
 
 **See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
 
