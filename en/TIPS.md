@@ -12,7 +12,7 @@ Remove the range rings by selecting `Remove all Range Rings and Distance Measure
 
 ### Use the measurement lines to get a VOR Radial Intersection {#tips-and-tricks-vor-radials}
 
-Measurment lines can start at airports or navaids where they use the magnetic variation if available. You can use them to find an airport by radial and distance if you like to navigate the old fashioned way.
+Measurement lines can start at airports or navaids where they use the magnetic variation if available. You can use them to find an airport by radial and distance if you like to navigate the old fashioned way.
 
 Below is an example that gets radial and distance from two VORs for `ETUO`. Measurement lines can also start at NDBs or waypoints. Note the suffix `M` which indicates magnetic course.
 
@@ -24,7 +24,7 @@ The same can be used when flying airways without GPS. In the example below fly 3
 
 ![VOR Airways](../images/tutorial/tipvorairway.jpg)
 
-### Use the measurment lines for Approach Guidance {#tips-and-tricks-approach-guidance}
+### Use the measurement lines for Approach Guidance {#tips-and-tricks-approach-guidance}
 
 Right-click on the airport and choose `Measure Rhumb Distance from here` ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png). Pull the line using the opposing course to 3 nautical miles out to get guidance for the final approach.
 

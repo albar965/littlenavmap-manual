@@ -108,7 +108,7 @@ Note that the magnetic declination of a VOR (also: calibration for VOR, VORDME a
 
 _Little Navmap_ uses the declination of a VOR to calculate the inbound and outbound magnetic course of a flight plan leg to and from this VOR. This allows the pilot to use the VOR radials for navigation. For all other legs the actual environment declination is used.
 
-You can disable the use of VOR declination in the options dialog on page `Flight Plan` by checking `Ignore declination of VOR and other radio navaids`. This will use the environment declination for all calculations. You might want ot use this if you fly entirely based on GPS and ignore VOR stations.
+You can disable the use of VOR declination in the options dialog on page `Flight Plan` by checking `Ignore declination of VOR and other radio navaids`. This will use the environment declination for all calculations. You might want to use this if you fly entirely based on GPS and ignore VOR stations.
 
 **Examples below:** A flight plan crossing the `VORTAC Battle Ground (BTG)` last calibrated 1975 ([source](http://www.pilotnav.com/navaid/faa-2529)) with a declination of 21° East while the environment has an actual declination of 15.2° East. You can see the actual declination below the mouse cursor in the status bar of _Little Navmap_.
 
@@ -206,7 +206,7 @@ The appended legs are selected after loading the flight plan.
 
 #### Calculate for selected Legs {#calculate-for-selected-legs}
 
-This is a submenu containing entries for flight plan calculation methods as described here:
+This is a sub menu containing entries for flight plan calculation methods as described here:
 
 ![Calculate Radionav](../images/icons/routeradio.png "Calculate Radionav")[Calculate Radionav](MENUS.md#calculate-radionav), ![Calculate high Altitude](../images/icons/routehigh.png "Calculate high Altitude")[Calculate high Altitude](MENUS.md#calculate-high-altitude), ![Calculate low Altitude](../images/icons/routelow.png "Calculate low Altitude")[Calculate low Altitude](MENUS.md#calculate-low-altitude) and ![Calculate based on given Altitude](../images/icons/routealt.png "Calculate based on given Altitude")[Calculate based on given Altitude](MENUS.md#calculate-based-on-given-altitude).
 

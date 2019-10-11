@@ -282,7 +282,7 @@ The route has departure and destination elevation and cruise altitude set for al
 
 Opens the default web browser and shows the current flight plan in [SkyVector](https://skyvector.com). Procedures are not shown.
 
-Note that the flight plan will not be displayed if a small airport is unknown to Skyvector.
+Note that the flight plan will not be displayed if a small airport is unknown to SkyVector.
 
 Example: [ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C ENBO](https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO). Note missing SID and STAR in SkyVector.
 
@@ -907,7 +907,7 @@ See [User-defined Waypoints](USERPOINT.md) for more information on user-defined 
 
 #### Userpoint Search {#userdata-menu-show-search}
 
-Raise the dock window `Search` and the tab `Userpoints` where you can edit, add delete and seach user-defined waypoints.
+Raise the dock window `Search` and the tab `Userpoints` where you can edit, add delete and search user-defined waypoints.
 
 #### Import CSV {#userdata-menu-import-csv}
 
@@ -982,7 +982,7 @@ _Little Navmap_ also creates a full database backup on every start. See [Files](
 
 #### Logbook Search {#logbook-search}
 
-Raise the dock window `Search` and the tab `Logbook` where you can edit, add delete and seach logbook entries.
+Raise the dock window `Search` and the tab `Logbook` where you can edit, add delete and search logbook entries.
 
 #### Show Statistics {#logbook-statistics}
 
@@ -1251,7 +1251,7 @@ See [Checking for Updates](UPDATE.md) for more information.
 The statusbar at the bottom of the main window shows various indications (from left to right):
 
 * Last action or quick help explaining a menu item or toolbar button.
-* Connection status for a local or remote connection. The tooltip provides more detail about the status, like the hostname for remote connections.
+* Connection status for a local or remote connection. The tooltip provides more detail about the status, like the host name for remote connections.
   * `Connecting...`: The program is trying to establish a connection which was initiated either manually or automatically.
   * `Connected`: A connection was established.
   * `Disconnected`: The simulator or _Little Navconnect_ exited.
@@ -1268,7 +1268,7 @@ The statusbar at the bottom of the main window shows various indications (from l
 * Cursor position on map as latitude and longitude depending on selected unit in the dialog `Options`.
   * Ground elevation below the cursor after a short delay if the [GLOBE](https://ngdc.noaa.gov/mgg/topo/globe.html) offline elevation data is selected.
   * Magnetic declination at the cursor position in degrees West or East.
-* Current date of month and zulu/UTC time `hours:minutes:seconds`. This is the real world time and not the simulator time. The tooltip gives more date and time information.
+* Current date of month and Zulu/UTC time `hours:minutes:seconds`. This is the real world time and not the simulator time. The tooltip gives more date and time information.
 
 ![Statusbar](../images/statusbar.jpg "Statusbar")
 

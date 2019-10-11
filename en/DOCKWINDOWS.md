@@ -22,7 +22,7 @@ _**Picture above:** Cursor above the toolbar handle that has to be clicked to mo
 
 **The **`Window` -> `Reset Window Layout`** menu item in the main menu can be used to reset the state and positions of all dock windows and toolbars back to their default.**
 
-![Dock Window Titlebar](../images/dock_titlebar.jpg "Dock Window Titlebar")
+![Dock Window Title bar](../images/dock_titlebar.jpg "Dock Window Title bar")
 
 _**Picture above:** Title bar of a dock window marked red._
 

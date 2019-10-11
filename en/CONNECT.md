@@ -26,7 +26,7 @@ Deselect `Fetch AI or multiplayer aircraft` or `Fetch AI or multiplayer ships` t
 
 #### X-Plane
 
-You have to intall the included *Little Xpconnect* plugin to use *Little Navmap* as a moving map with X-Plane.
+You have to install the included *Little Xpconnect* plugin to use *Little Navmap* as a moving map with X-Plane.
 
 The plugin is bundled with _Little Navmap_ and can be downloaded separately too.
 
@@ -53,9 +53,9 @@ For X-Plane you also have to install the *Little Xpconnect* plugin. See the file
 
 #### Start _Little Navconnect_ on the Flying Computer {#connect-start-navconnect}
 
-_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ (`littlenavconnect.exe`) on the computer running the simulator and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the computer running the simulator. You can use the IP address or the hostname.
+_Little Navconnect_ is bundled together with the _Little Navmap_ download archive. Start _Little Navconnect_ (`littlenavconnect.exe`) on the computer running the simulator and take note of the message that is printed in the logging window. You only need the colored values which tell you the name and address of the computer running the simulator. You can use the IP address or the host name.
 
-_Little Navconnect_ can print multiple IP addresses or hostnames depending on your network configuration. This can happen if you have Ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. Also make sure to set up the Windows firewall properly to allow communication between `littlenavmap.exe` and `littlenavconnect.exe` on both computers.
+_Little Navconnect_ can print multiple IP addresses or host names depending on your network configuration. This can happen if you have Ethernet plugged in and are connected using wireless LAN too, for example. You have to try if you are unsure which one to use. Also make sure to set up the Windows firewall properly to allow communication between `littlenavmap.exe` and `littlenavconnect.exe` on both computers.
 
 ![Little Navconnect](../images/littlenavconnect.jpg "Little Navconnect")
 
@@ -75,13 +75,13 @@ _**Picture above:** Connect dialog with correct values to access the computer ru
 Now do the following after opening the dialog:
 
 4. Select `Connect to a remote Flight Simulator`.
-5. Add the value for hostname. This can be either the hostname or the IP address printed by _Little Navconnect_.
+5. Add the value for host name. This can be either the host name or the IP address printed by _Little Navconnect_.
 6. Check the value for the port. `51968` is the default value and usually does not need to be changed.
 7. Click connect. The dialog will close and _Little Navmap_ will try to establish a connection in the background.
 
 Establishing a connection can take some time, depending on your network. The aircraft will show up on the map and on the `Simulator Aircraft` dock window once a flight is set up and loaded on the simulator. If no flight is loaded yet (i.e. the simulator still shows the opening screen), you will see the message `Connected. Waiting for update.` in the `Simulator Aircraft` dock window.
 
-Note that it can take a while until an error is shown if you used the wrong values for hostname or port.
+Note that it can take a while until an error is shown if you used the wrong values for host name or port.
 
 Selecting `Connect automatically` is recommended. The start order of all three programs (simulator, _Little Navconnect_ and _Little Navmap_) does not matter if this is checked and the programs will find each other.
 

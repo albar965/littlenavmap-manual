@@ -105,7 +105,7 @@ A pen contains the following values in a comma separated list:
 
 ## Icons  {#customize-icons}
 
-To change an icon download it from the Github source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/2.0/resources/icons) or extract the included file `Little Navmap/customize/icons.zip`.
+To change an icon download it from the GitHub source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/2.0/resources/icons) or extract the included file `Little Navmap/customize/icons.zip`.
 
 Modify the icon and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. _Little Navmap_ will automatically detect and use the icon on next startup.
 

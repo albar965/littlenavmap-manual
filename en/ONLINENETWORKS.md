@@ -61,7 +61,7 @@ The following types are available and can be enabled in the drop down menus on t
 
 The size of the circle shapes can be changed in the configuration file. See [Online Network Center](CUSTOMIZE.md#customize-online-center).
 
-You can also assign centers to a boundary shape using imported OpenAIR airspaces from the user airspace database. See [Online Airspaces](SCENERY.md#load-scenery-library-online-airspaces) for more information about this.
+You can also assign centers to a boundary shape using imported OpenAir airspaces from the user airspace database. See [Online Airspaces](SCENERY.md#load-scenery-library-online-airspaces) for more information about this.
 
 ![Customize Online Network Centers](../images/online_center.jpg "Online Network Center")
 

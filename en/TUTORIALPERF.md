@@ -26,7 +26,7 @@ Ignore the various warnings and error messages in the fuel report for now. This 
 
 Also ignore the zero values in the fuel plan. Fuel flow data has to be entered in the performance profile to get a valid fuel prediction.
 
-Start and load a flight with aircraft engines running or not. Connect _Litte Navmap_ to the simulator.
+Start and load a flight with aircraft engines running or not. Connect _Little Navmap_ to the simulator.
 
 Select `Flight` -> `Reset all for a new Flight` ![Reset all for a new Flight](../images/icons/reload.png "Reset all for a new Flight") in the menu. Remove the check mark  from `Create a new and empty flight plan` since a plan is already loaded. Click `OK` to get a clean base for fuel calculation, logbook and other functions.
 

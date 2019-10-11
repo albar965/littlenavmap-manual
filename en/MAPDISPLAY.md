@@ -13,7 +13,7 @@ Alternatively use the keyboard to move around the map:
 * `*` and `/`: Zoom in and out in small steps
 * `Alt+Left` and `Alt+Right`: Go forward or backward in the map position history
 * `Ctrl++` and `Ctrl+-`: Increase or decrease details
-* `Ctrl+Home`: Go to home postion
+* `Ctrl+Home`: Go to home position
 * `Ctrl+End`: Go to center for distance search
 
 Do not forget to activate the map window by clicking into it before using keys for movement.

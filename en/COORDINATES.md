@@ -38,7 +38,7 @@ These have to be given exactly as shown in the examples.
 * Degrees and minutes: `N44124W122451`, `N14544W017479` or `S31240E136502`
 * Degrees only `46N078W`
 * Degrees and minutes `4620N07805W`
-* Degrees, minutes and seconds `481200N0112842E` (Skyvector)
+* Degrees, minutes and seconds `481200N0112842E` (SkyVector)
 * Degrees and minutes in pair `N6500 W08000` or `N6500/W08000`
 * NAT type `5020N`
 

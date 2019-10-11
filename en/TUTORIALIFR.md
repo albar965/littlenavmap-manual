@@ -65,7 +65,7 @@ Starting from a runway is not quite realistic. Let's select a parking position:
 
 * Go to `Flight Plan` -> `Select a Start Position for Departure` ![Select a Start Position for Departure](../images/icons/parkingstartset.png).
 * Choose one of the GA small ramp positions.
-* Click `Ok` and the position will be highlighted on the map.
+* Click `OK` and the position will be highlighted on the map.
 
 ![Assign Parking](../images/tutorial/ifrselparking.jpg)
 
@@ -152,7 +152,7 @@ You have to select the transition to add or show both, approach and transition.
 Now we have the departure airport, an approach procedure and the destination all connected by a straight line. Next is the en-route part of the flight plan:
 
 * Set `IFR` as the flight plan type in the dock window `Flight Planning`. This allows the automatic flight plan calculation to adjust the cruise altitude.
-* Click `Flight Plan` -> `Calculate low Altitude` ![Calculate low Altitude](../images/icons/routelow.png) to start the automatic flight plan calculation for Victor airways. The calculation will create a route from your departure airport to the intial fix of the transition.
+* Click `Flight Plan` -> `Calculate low Altitude` ![Calculate low Altitude](../images/icons/routelow.png) to start the automatic flight plan calculation for Victor airways. The calculation will create a route from your departure airport to the initial fix of the transition.
 
 The flight plan cruise altitude is automatically adjusted according to the hemispherical rule (the rule can be changed in `Tools` -> `Options` ![Options](../images/icons/settings.png) on the tab `Flight Plan`), the altitude restrictions of the airways and the flight plan type (`VFR` or `IFR`). You can see the minimum altitude for each airway segment in the flight plan table in the column `Restriction`.
 
@@ -204,7 +204,7 @@ This will display only airspaces on the map that are relevant for your cruise al
 
 Open the dialog `Connect` using `Tools` -> `Flight Simulator Connection` ![Flight Simulator Connection](../images/icons/network.png) and check if `Connect automatically` is selected. Enable, if not.
 
-_Litte Navmap_ will find the simulator no matter if it is already started or if it is started later. Click `Connect`.
+_Little Navmap_ will find the simulator no matter if it is already started or if it is started later. Click `Connect`.
 
 See also [Connecting to a Flight Simulator](CONNECT.md).
 

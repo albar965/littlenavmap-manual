@@ -66,7 +66,7 @@ An example shows how the program deals with the limited formats:
 
 User waypoint names will be adapted to format limitations when saving. That means that waypoint names can change when reloading a flight plan.
 
-* **PLN:** Maximum length for FSX or Prepar3D is 10 charaters and no special characters are allowed. Unsupported characters will be removed and the length will be truncated.
+* **PLN:** Maximum length for FSX or Prepar3D is 10 characters and no special characters are allowed. Unsupported characters will be removed and the length will be truncated.
 * **FMS:** No spaces allowed. These will be replaced with underscores (`_`).
 * **FLP:** All user waypoint names will be replaced by coordinates.
 
@@ -321,7 +321,7 @@ The route has departure and destination elevation and cruise altitude set for al
 
 ### HTML {#flight-plan-formats-html}
 
-This is not a flight plan format. This function saves the current flight plan as a single HTML webpage with all images embedded. You can open this page in any web browser.
+This is not a flight plan format. This function saves the current flight plan as a single HTML web page with all images embedded. You can open this page in any web browser.
 
 ## Notes about the Garmin Formats GFP and FPL {#garmin-notes}
 

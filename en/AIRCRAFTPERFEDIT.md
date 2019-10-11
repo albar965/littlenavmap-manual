@@ -91,7 +91,7 @@ Descent values are detected automatically when collecting performance.
 * `Average vertical descent speed`: Average vertical speed.
 * `Average fuel flow for descent`: Average fuel flow on descent.
 
-A label `Descent Rule of Thumb` shows the calculated rule of thumb for descent. The default is 3 nm per 1000 ft.
+A label `Descent Rule of Thumb` shows the calculated rule of thumb for descent. The default is 3 NM per 1000 ft.
 
 Descent speed and vertical descent speed are used to calculate the top of descent which also varies with wind conditions.
 

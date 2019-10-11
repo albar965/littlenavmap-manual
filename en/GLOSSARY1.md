@@ -87,7 +87,7 @@ FSX and P3D flight plan format. Can save all information in flight plans using a
 Point of interest. An userpoint type.
 
 ### Procedure
-A STAR, SID or approach and the respecitive transitions.
+A STAR, SID or approach and the respective transitions.
 
 ### Radio navaid
 VOR, VORTAC, TACAN or NDB.

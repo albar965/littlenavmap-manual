@@ -6,7 +6,7 @@ Follow these steps if you want to install _Little Navmap_ on a computer not cont
 
 This scenario is typically used when connecting to the flight simulator to watch the progress of a flight remotely.
 
-Flight plans can be created, loaded and saved on the client computer. You only have to make sure that these are transfered to the flight simulator computer using Windows shares or by other means.
+Flight plans can be created, loaded and saved on the client computer. You only have to make sure that these are transferred to the flight simulator computer using Windows shares or by other means.
 
 These instructions apply to Windows, macOS and Linux computers equally.
 

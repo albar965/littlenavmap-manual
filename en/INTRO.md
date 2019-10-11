@@ -120,7 +120,7 @@ The table views for the flight plan or airport/navaid search results allow copyi
 
 _Little Navmap_ is currently available in several languages.
 
-I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available. See [Translating](https://github.com/albar965/littlenavmap/wiki/Translating) in the Github _Little Navmap_ wiki for more information.
+I will happily support anybody who would like to translate the user interface or manual into another language. Language packages can be added to a _Little Navmap_ installation later once they are available. See [Translating](https://github.com/albar965/littlenavmap/wiki/Translating) in the GitHub _Little Navmap_ wiki for more information.
 
 You can override the user interface language in the dialog `Options` the the tab `User Interface`.
 
