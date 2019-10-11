@@ -21,7 +21,7 @@ Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little N
 
 **See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
 
-I recommend to install the [Visual C++ Runtime Installer (All-In-One) v56](https://www.majorgeeks.com/files/details/visual_c_runtime_installer.html) package from MajorGeeks.Com if needed.
+I recommend to install the [Visual C++ Runtime Installer (All-In-One) v56](https://www.majorgeeks.com/files/details/visual_c_runtime_installer.html) package from MajorGeeks.Com but only if you get errors when starting _Little Navmap_.
 
 _Little Navmap_ is a 32-bit application and was tested with Windows 7, Windows 8 and Windows 10 (32-bit and 64-bit). Windows XP is not supported.
 
