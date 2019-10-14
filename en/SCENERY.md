@@ -35,6 +35,8 @@ An error dialog is shown after loading if any files could not be read or directo
 
 The `Load Scenery Library` dialog shows the last time of loading (`Last Update:`), the program and the database version. Major database version differences indicate incompatible databases. The program will ask if the incompatible databases can be erased on startup before the scenery database can be reloaded. Minor database differences indicate compatible changes where a reload is recommended but not required.
 
+**Close _Little Navmap_ when updating, copying or replacing its databases manually or using other programs. _Little Navmap_ might crash or show wrong data otherwise.**
+
 ### X-Plane Airports and Navdata {#load-scenery-library-dialog-xp-apt-navdata}
 
 *Little Navmap* reads airport and navaid data from X-Plane's `*.dat` files. To check a version of a file you can open it in a text editor that is capable of dealing with large files. The first lines of the file will look like:

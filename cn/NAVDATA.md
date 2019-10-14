@@ -9,6 +9,8 @@ _Little Navmap_ is bundled with a navigation database from a recent AIRAC cycle 
 
 **See [Install Navigraph Updates](https://albar965.github.io/littlenavmap_navigraph.html) on my home page for information how to update **_Little Navmap_**'s navigation data.**
 
+**In any case close _Little Navmap_ when updating, copying or replacing its databases. _Little Navmap_ might crash or show wrong data otherwise.**
+
 Three display modes can be selected from the menu `Scenery Library` as shown below.
 
 ## Use Navigraph for all Features {#navigraph-all}

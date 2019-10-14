@@ -161,6 +161,8 @@ _Little Navmap_ comes with a ready to use database from Navigraph including airs
 
 See the chapter [Navigation Databases](NAVDATA.md) for more information.
 
+**In any case close _Little Navmap_ when updating, copying or replacing its databases. _Little Navmap_ might crash or show wrong data otherwise.**
+
 #### FSX and Prepar3D
 
 *Little Navmap* is compatible with navdata updates from [_fsAerodata_](https://www.fsaerodata.com) or [_FSX/P3D Navaids update_](http://www.aero.sors.fr/navaids3.html).
