@@ -95,7 +95,7 @@ See [Flight Plan Formats](FLIGHTPLANFMT.md) for more information on limitations.
 
 This function changes the current file type and name which means that all further saves will go into the new FGFP file and the file will be reloaded on next start.
 
-You can save the files into any folder and load it within FlightGear.
+You can save the files into any directory and load it within FlightGear.
 
 #### ![Save Flight Plan FLP](../images/icons/saveasflp.png "Save Flight Plan FLP") Save Flight Plan as FLP {#save-flight-plan-as-flp}
 

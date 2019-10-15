@@ -31,7 +31,7 @@ See the two chapters below if you like to run _Little Navmap_ in a networked set
 **How to prepare a network setup:**
 
 1. Install/extract the whole *Little Navmap* archive on the flying **and** network computer.
-1. Copy *Little Xpconnect* to the X-Plane plugins folder if you use X-Plane.
+1. Copy *Little Xpconnect* to the X-Plane plugins directory if you use X-Plane.
 2. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -> `Scenery Library` -> `Load Scenery Library ...`
 3. Copy the database files to the network computer. Quit *Little Navmap* before copying.
 

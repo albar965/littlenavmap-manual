@@ -262,7 +262,7 @@ You can use smaller update rates for private online networks to improve map disp
 Configuration options for the internal web server of _Little Navmap_.
 
 * `Document root directory`: The root directory of the web server pages. Change this only if you would like to run a customized web server using your own style sheets and you own HTML templates.
-* `Select Directory ...`: Select root folder. _Little Navmap_ will show a warning if no `index.html` file is found in the root directory.
+* `Select Directory ...`: Select root directory. _Little Navmap_ will show a warning if no `index.html` file is found in the root directory.
 * `Port number`: Default 8965. That means you have to use the address `http://localhost:8965/` in your browser to access the web page of _Little Navmap_, for example. Change this value if you get errors like `Unable to start the server. Error: The bound address is already in use.`.
 * `Use encrypted connection (HTTPS / SSL)`: Encrypted connections use a pre-computed self-signed certificate which comes with _Little Navmap_. A browser will show an error message if using this certificate and requires to add a security exception. The encrypted address is `https://localhost:8965/`, for example. Creating a self signed certificate is quite complex. Look at the various web articles by searching for `How to create a self signed certificate`.
 * `Start Server`: Start or stop the server to test the changes above. The server status (running or not running) is reverted to the previous state when pressing `Cancel` in the options dialog.
@@ -326,7 +326,7 @@ Select one or more entries in the list and click on `Remove` to delete then from
 
 **FSX/P3D:** All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on and will be highlighted on the map as well as considered during search for add-ons.
 
-**X-Plane:** All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
+**X-Plane:** All airports in the `Custom Scenery` directory are considered add-on airports and will be highlighted accordingly.
 
 You can use this list to modify this behavior.
 

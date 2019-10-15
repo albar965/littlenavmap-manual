@@ -32,7 +32,7 @@ Other links open web pages with airport information in the web browser or a file
 
 ### Scenery Information {#scenery}
 
-All information about airports and navaids includes one or more links at the bottom of the object information in section `Scenery`. These links point to the matching `BGL` (FSX, P3D) or `dat` (X-Plane) files that contain information about the airport or navaid. Click the links to open the containing folder in your file manager (e.g. Windows Explorer). If possible, the matching file will be selected automatically.
+All information about airports and navaids includes one or more links at the bottom of the object information in section `Scenery`. These links point to the matching `BGL` (FSX, P3D) or `dat` (X-Plane) files that contain information about the airport or navaid. Click the links to open the containing directory in your file manager (e.g. Windows Explorer). If possible, the matching file will be selected automatically.
 
 Multiple links can appear for airports since these can be updated by several files from different add-on sceneries or navdata updates.
 
@@ -50,9 +50,7 @@ Links to several online services like [SkyVector](https://skyvector.com/) or the
 
 ##### Airport Tab - Files
 
-_Little Navmap_ will show extra links to local files if you put these into a special folder with the name of the airport ICAO ident.
-
-You have to use the translated folder names or the English variant depending on the program and system language.
+_Little Navmap_ will show extra links to local files if you put these into a special directory with the name of the airport ICAO ident.
 
 The path to the airport files is shown on top of the `Files` section.
 
@@ -61,11 +59,15 @@ You can use any file type. A file will be opened with the default application li
 Examples for airport Ouessant (`LFEC`):
 
 * `/home/USERNAME/Documents/Little Navmap Files/Airports/LFEC`: Linux
-* `/home/USERNAME/Dokumente/Little Navmap Dateien/LFEC`: Linux with German translation
+* `/home/USERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC`: Linux with German translation
 * `/Users/USERNAME/Documents/Little Navmap Files/Airports/LFEC`: macOS
-* `/Users/USERNAME/Documents/Little Navmap Dateien/LFEC`: macOS with German translation
+* `/Users/USERNAME/Documents/Little Navmap Dateien/Flugplätze/LFEC`: macOS with German translation
 * `C:\Users\YOURUSERNAME\Documents\Little Navmap Files/Airports/LFEC`: Windows
-* `C:\Users\YOURUSERNAME\Documents\Little Navmap Dateien/LFEC`: Windows with German translation
+* `C:\Users\YOURUSERNAME\Documents\Little Navmap Dateien/Flugplätze/LFEC`: Windows with German translation
+
+You can use the translated directory names or the English variant. Translated directory names depend on the program and system language. _Little Navmap_ will only use the English names if you set the user interface language to English.
+
+_Little Navmap_ looks for files using both the translated path and the English path like: `...\Little Navmap Files\Airports\LFEC` and `...\Little Navmap Dateien\Flugplätze\LFEC`.
 
 ![Airport Information Links](../images/infolinks.jpg "Airport Information Links")
 

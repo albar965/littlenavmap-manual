@@ -115,7 +115,7 @@ FlightPlan format which can be loaded into the RouteManager of the free flight s
 
 _Little Navmap_ can read and write this format.
 
-You can save the files into any folder and load it within FlightGear.
+You can save the files into any directory and load it within FlightGear.
 
 ### FLP {#flight-plan-formats-flp}
 

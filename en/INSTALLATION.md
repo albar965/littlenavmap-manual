@@ -15,9 +15,9 @@ There is no need to delete the old settings directory. The program is written in
 
 The installation of _Little Navmap_ does not change any registry entries (in Windows) and involves a simple copy of files therefore an installer or setup program is not required.
 
-Do not extract the archive into the folder `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these folders, therefore other problems might occur like replaced or deleted files.
+Do not extract the archive into the directory `c:\Program Files\` or `c:\Program Files (x86)\` since this requires administrative privileges. Windows keeps control of these directories, therefore other problems might occur like replaced or deleted files.
 
-Extract the Zip archive into a folder like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. The extension `.exe` might be hidden in Windows Explorer depending on settings. In that case look for a file `littlenavmap` having a light blue globe icon.
+Extract the Zip archive into a directory like `c:\Users\YOURNAME\Documents\Little Navmap`, `c:\Users\YOURNAME\Programs\Little Navmap` or `c:\Little Navmap`. Then start the program by double-clicking `littlenavmap.exe`. The extension `.exe` might be hidden in Windows Explorer depending on settings. In that case look for a file `littlenavmap` having a light blue globe icon.
 
 **See [First Start](INTRO.md#first-start) for more information on the first start after installation.**
 
@@ -33,7 +33,7 @@ You might have to install an older version of SimConnect if you use _Prepar3D_ o
 
 _**Prepar3D**_: In the same directory as `Prepar3D.exe` is a `redist\Interface` directory (normally `C:\Program Files (x86)\Lockheed Martin\Prepar3D v4\redist\Interface`). There are multiple legacy versions of SimConnect available. You have to install `FSX-SP2-XPACK.msi` for _Little Navmap_.
 
-_**FSX Steam Edition**_: The installation adds the folder `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
+_**FSX Steam Edition**_: The installation adds the directory `C:\Program Files (x86)\Steam\SteamApps\common\FSX\SDK\Core Utilities Kit\SimConnect SDK\LegacyInterfaces` where you can find the legacy SimConnect interfaces.
 
 #### Improve Start-up Time {#improve-start-up-time}
 
@@ -48,7 +48,7 @@ These directories to not contain executable files and are accessed frequently by
 
 ### macOS
 
-Extract the ZIP file and copy the `Little Navmap` application to the folder `Applications` or any other folder.
+Extract the ZIP file and copy the `Little Navmap` application to the directory `Applications` or any other directory.
 
 **Note on first start on macOS:** When starting the application you will get a message `Little Navmap is from an unidentified developer. Are you sure you want to open it?` or similar.
 

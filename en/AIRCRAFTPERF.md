@@ -50,7 +50,7 @@ _**Picture above:** Fuel report tab. Average headwind of 10 knots is based on NO
 Performance profile files (file extension `lnmperf`) can be saved and loaded like flight plan files.
 The performance files can be dragged from a file manager like Windows Explorer or macOS Finder and dropped into the _Little Navmap_ main window to load them.
 
-**Do not save the files into the **_Little Navmap_** directory since it might be deleted when doing an update. Neither save them in **`C:\Program Files`** or one of its sub-directories. Save the files into your **`Documents`** folder or a sub-directory in this folder like **`Documents\Little Navmap\Performance`**.**
+**Do not save the files into the **_Little Navmap_** directory since it might be deleted when doing an update. Neither save them in **`C:\Program Files`** or one of its sub-directories. Save the files into your **`Documents`** directory or a sub-directory in there like **`Documents\Little Navmap\Performance`**.**
 
 **Aircraft performance files from contributors and my own flights are available in the [download section of littlenavmap.org](https://www.littlenavmap.org/downloads/Aircraft%20Performance/).**
 

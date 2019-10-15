@@ -6,7 +6,7 @@ X-Plane airport which contains at least one 3D object. May be a fully constructe
 ### Add-on airport
 FSX/P3D: All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on.
 
-X-Plane: All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
+X-Plane: All airports in the `Custom Scenery` directory are considered add-on airports and will be highlighted accordingly.
 
 ### Approach Procedure
 An approach procedure is a series of maneuvers for the transfer of an aircraft in instrument flight conditions from the initial approach to a landing or to a point from which a landing may be made visually. If a flight plan includes a standard arrival procedure (STAR), an approach procedure will normally follow the STAR.
@@ -96,7 +96,7 @@ VOR, VORTAC, TACAN or NDB.
 Airport zero to five star rating depending on facilities.
 
 ### Rhumb Line
-When using a magnetic compass or direction indicator it is more convenient to fly a constant track direction. This can be achieved by following a rhumb line track, rather than a great circle track. 
+When using a magnetic compass or direction indicator it is more convenient to fly a constant track direction. This can be achieved by following a rhumb line track, rather than a great circle track.
 Note that the rhumb line connecting two points on earth is longer than the great circle path. Also, near the poles and for longer distances the rhumb line is not usable.
 
 ### Scenery Library Database
