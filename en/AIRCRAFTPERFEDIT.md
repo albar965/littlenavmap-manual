@@ -15,9 +15,21 @@ The dialog is opened when clicking on the edit button in the tab `Fuel Report`, 
 ### Tab Aircraft
 
 * `Aircraft model`: Can be used freely. Determined from aircraft name when _Little Navmap_ collects data for a performance profile.
-* `Aircraft type`: The ICAO aircraft type designator. See [List of ICAO aircraft type designators](https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators) (Wikipedia). _Little Navmap_ will show a warning in the tab `Fuel Report` if the flown aircraft does not match the type. Detected automatically when collecting performance.
+* `Aircraft type`: The ICAO aircraft type designator. _Little Navmap_ will show a warning in the tab `Fuel Report` if the flown aircraft does not match the type. Detected automatically when collecting performance.
 * `Required runway`: Only for information. Shown in the fuel report if bigger than zero.
 * `Required runway type`: Only for information. Shown in the fuel report if it differs from default `Hard`.
+
+#### Aircraft Type
+
+See [List of ICAO aircraft type designators](https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators) (Wikipedia).
+
+X-Plane:
+
+Its value can be read with X-Plane Planemaker program, opening the related aircraft file `.acf`, then main menu -> `Standard` -> `Author`, field `ICAO code for ATC`. It is stored as as e.g. `P acf/_ICAO BE58` in the `.acf` file.
+
+FSX, FSX-SE and Prepar3D:
+
+The model can be found with any text editor, opening the related aircraft.cfg file, key `ATC_model` under the section `[General]`.
 
 ![Aircraft Performance Edit - Tab Aircraft](../images/perf_edit_aircraft.jpg "Aircraft Performance Edit - Tab Aircraft")
 
