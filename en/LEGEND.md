@@ -211,7 +211,7 @@ Color and indicators depend on user choice in airport traffic pattern dialog.
 | Symbol | Description |
 | --- | --- |
 | ![Downwind](../images/legend/pattern_downwind.png) | Downwind leg of airport traffic pattern with altitude and magnetic course. |
-| ![Final](../images/legend/pattern_runway.png) | Final leg of airport traffic pattern with with runway and magnetic course. |
+| ![Final](../images/legend/pattern_runway.png) | Final leg of airport traffic pattern with runway and magnetic course. |
 | ![Entry Indicator](../images/legend/pattern_entry.png) | Arrow and dashed line shows path for pattern entry. |
 | ![Exit Indicator](../images/legend/pattern_exit.png) | Dashed line and arrows show path for pattern exit. |
 | ![Active Position](../images/legend/patternactive.png) | White circle is active point at the runway threshold of the pattern. Mouse cursor changes above and allows to remove the pattern in the context menu. |

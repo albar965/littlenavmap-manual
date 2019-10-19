@@ -39,7 +39,7 @@ Completely ignores the Navigraph database and shows only information read from t
 
 Default mode after installation or update of _Little Navmap_.
 
-This mode blends navaids and other features from the Navigraph database with the simulator database. This affects the map display, all information windows and and all search windows.
+This mode blends navaids and other features from the Navigraph database with the simulator database. This affects the map display, all information windows and all search windows.
 
 The following features are taken from the simulator database when using this mode:
 

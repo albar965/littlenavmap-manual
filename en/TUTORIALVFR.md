@@ -149,7 +149,7 @@ See also [Connecting to a Flight Simulator](CONNECT.md).
 
 You can enable aircraft centering in `Map` -> `Center Aircraft` ![Center Aircraft](../images/icons/centeraircraft.png).
 
-_Little Navmap_ will keep your aircraft and the next flight plan waypoint centered on the screen as as a default setting. You can choose between three modes for keeping the aircraft on screen in `Tools` -> `Options` -> `Simulator Aircraft` ([Options - Page Simulator Aircraft](OPTIONS.md#simulator-aircraft)).
+_Little Navmap_ will keep your aircraft and the next flight plan waypoint centered on the screen as a default setting. You can choose between three modes for keeping the aircraft on screen in `Tools` -> `Options` -> `Simulator Aircraft` ([Options - Page Simulator Aircraft](OPTIONS.md#simulator-aircraft)).
 
 The program will stop following your aircraft for 10 seconds if you start any action that zooms in to an airport or navaid (double-click, toolbar button or link in the information window) or just simply move or zoom around in the map.
 

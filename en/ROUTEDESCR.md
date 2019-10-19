@@ -43,8 +43,8 @@ _**Picture above:** A route description that was read successfully with a few wa
   * `Write generic SID and STAR`: Add the generic `SID` and `STAR` keywords if no real SID and/or STAR were selected.
   * `Write Waypoints instead of Airways`: Does not insert any airway names but uses waypoints only.
   * `Write Alternates`: Appends all alternate airports to the end of the description.
-  * `Read trailing Airports as Alternates`: 
-    * Enabled: A list of airports at the end of the description will be read as alternate airports except the first in the chain of consecutive airports which will be used as destination. Any airport with a valid STAR in the chain will be treated as destination too. 
+  * `Read trailing Airports as Alternates`:
+    * Enabled: A list of airports at the end of the description will be read as alternate airports except the first in the chain of consecutive airports which will be used as destination. Any airport with a valid STAR in the chain will be treated as destination too.
     * Disabled: Reading simply creates a flight plan with the airports as intermediate waypoints and the last one as destination. See example below.
 * `Create Flight Plan`: Closes the dialog and creates a new flight plan for the parsed route description and replaces the current plan. You have to click `Read Route Description` before you can create a flight plan.
 
@@ -98,11 +98,11 @@ Examples: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
 * `KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT`
 
 Not valid. Error message `BAYYY3.SJI not found` printed.
-`KVCT` is read as destination,  `KHOU` and `KCLL` are are intermediate waypoints.
+`KVCT` is read as destination,  `KHOU` and `KCLL` are intermediate waypoints.
 
 * `KPWA ATOKA J25 FUZ J33 CRIED J50 LFK KHOU KCLL KVCT`
 
-`KVCT` is read as destination,  `KHOU` and `KCLL` are are intermediate waypoints.
+`KVCT` is read as destination,  `KHOU` and `KCLL` are intermediate waypoints.
 
 #### Speed and Altitude {#speed-and-altitude}
 

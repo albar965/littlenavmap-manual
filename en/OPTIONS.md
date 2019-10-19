@@ -152,7 +152,7 @@ Here you can set preferences for flight plan calculation or change the default f
 
 ### ![Weather](../images/icons/weather.png "Weather") Weather {#weather}
 
-You can select the various weather sources to be be shown in the `Information` dock window or in the map tooltips.
+You can select the various weather sources to be shown in the `Information` dock window or in the map tooltips.
 
 The weather type `Flight Simulator` will either display weather from the FSX or P3D connection or from X-Planes `METAR.rwx` weather file.
 
@@ -287,7 +287,7 @@ The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 
 #### Flight Plan Elevation Profile {#cache-elevation}
 
-The bottom part of this page allows to install the the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
+The bottom part of this page allows to install the freely downloadable [GLOBE - Global Land One-km Base Elevation Project](https://ngdc.noaa.gov/mgg/topo/globe.html) elevation data.
 
 Look for posts in the [support forum at AVSIM](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/) if the original download is not available.
 

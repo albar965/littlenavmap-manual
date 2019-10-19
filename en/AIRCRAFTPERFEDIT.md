@@ -25,7 +25,7 @@ See [List of ICAO aircraft type designators](https://en.wikipedia.org/wiki/List_
 
 X-Plane:
 
-Its value can be read with X-Plane Planemaker program, opening the related aircraft file `.acf`, then main menu -> `Standard` -> `Author`, field `ICAO code for ATC`. It is stored as as e.g. `P acf/_ICAO BE58` in the `.acf` file.
+Its value can be read with X-Plane Plane Maker program, opening the related aircraft file `.acf`, then main menu -> `Standard` -> `Author`, field `ICAO code for ATC`. It is stored as e.g. `P acf/_ICAO BE58` in the `.acf` file.
 
 FSX, FSX-SE and Prepar3D:
 

@@ -30,7 +30,7 @@ Shows the map as currently configured, i.e. airports, navaids, theme and more fe
 * `Reload Map`: Reload the map manually.
 * `User Aircraft`: Centers the user aircraft on the map.
 * `Flight Plan`: Centers the flight plan on the map.
-* `Show Airport`: Jumps the the airport which ICAO ident is given in the input field to the left of this button. Press the `Return` key or this button to jump to the airport.
+* `Show Airport`: Jumps the airport which ICAO ident is given in the input field to the left of this button. Press the `Return` key or this button to jump to the airport.
 
 ##### Map Navigation
 

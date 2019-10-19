@@ -159,7 +159,7 @@ The file should be saved to `XPLANE\Aircraft\X-Aviation\IXEG 737 Classic\coroute
 
 ##### Export Flight Plan to corte.in for Flight Factor Airbus {#export-flight-plan-as-fpl}
 
-Appends the the flight plan to a new or already present `corte.in` company routes file for the Flight Factor Airbus aircraft.
+Appends the flight plan to a new or already present `corte.in` company routes file for the Flight Factor Airbus aircraft.
 
 The file will be automatically created if it does not exist. Otherwise the flight plan will be appended to the file. You have to remove the flight plan manually from the `corte.in` file with a simple text editor if you wish to get rid of it.
 
@@ -722,7 +722,7 @@ Show hill shading on the map. Availability of these options depends on the selec
 
 Toggles the display of minimum off-route altitude grid on the map.
 
-The minimum off-route altitude grid grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL or higher terrain is cleared by 2000 feet.
+The minimum off-route altitude grid provides an obstacle clearance altitude within an one degree grid. The altitudes clear all terrain and obstructions by 1000 feet in areas where the highest elevations are 5000 feet MSL or lower. Where the highest elevations are above 5000 feet MSL or higher terrain is cleared by 2000 feet.
 
 The large number is 1000 feet and small number 100 feet minimum altitude.
 
@@ -1087,7 +1087,7 @@ Completely ignores the simulator database and takes all information from the Nav
 
 ##### Use Navigraph for Navaids and Procedures {#navigraph-navaid-proc}
 
-This mode blends navaids and more from the Navigraph database with the simulator database. This affects the map display, all information and and all search windows.
+This mode blends navaids and more from the Navigraph database with the simulator database. This affects the map display, all information and all search windows.
 
 ##### Do not use Navigraph Database {#navigraph-none}
 
