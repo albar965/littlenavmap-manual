@@ -2,7 +2,7 @@
 
 _Little Navmap_ überprüft automatisch die [Homepage](https://albar965.github.io/) auf verfügbare Updates beim Start. Frequenz- und Update-Kanäle sind konfigurierbar. Siehe unten für Konfigurationsoptionen.
 
-Es kann jederzeit manuell nach Updates gesucht werden, indem `Hauptmenü` -&gt; `Hilfe` -&gt; `Auf Updates prüfen` ausgewählt wird.
+Es kann jederzeit manuell nach Updates gesucht werden, indem `Hilfe` -> `Auf Updates prüfen` im Hauptmenue ausgewählt wird.
 
 Zu beachten ist, dass die Installation noch manuell erfolgen muss.
 
@@ -32,7 +32,7 @@ _**Bild oben:** Aktualisierungs-Benachrichtigungsdialog, der eine verfügbare Be
 #### Suchen nach Aktualisierungen:
 "Täglich","wöchentlich" oder"manuell".
 
-`Hauptmenü` -&gt; `Hilfe` -&gt; `Auf Updates prüfen` startet die manuelle Suche nach neuen Versionen.
+`Hilfe` -> `Auf Updates prüfen` im Hauptmenue startet die manuelle Suche nach neuen Versionen.
 
 Die tägliche oder wöchentliche Überprüfung wird nur beim Programmstart durchgeführt.
 
@@ -50,4 +50,4 @@ Prüft sofort nach Updates. Dabei werden die aktuellen Einstellungen verwendet, 
 
 ![Aktualisierungs-Optionen](.../images/updateoptions.jpg "Aktualisierungs-Optionen")
 
-_**Bild oben:** Benachrichtigungseinstellungen im Dialogfeld aktualisieren _`Optionen`_._
+_**Bild oben:** Benachrichtigungseinstellungen im Dialogfeld aktualisieren `Optionen`._

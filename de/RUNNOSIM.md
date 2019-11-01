@@ -12,7 +12,7 @@ Diese Anleitung gilt für Windows-, MacOS- und Linux-Computer gleichermaßen.
 
 1.  _Little Navmap_ sowohl auf Ihrem Flugcomputer als auch auf dem Client-Computer ohne Simulator installieren.
 2.  _Little Navmap_ auf dem fliegenden Computer starten und um die Datenbanken der Landschaftsbibliothek zu generieren. Weitere Informationen sind unter [Dialogfeld Szenenbibliothek laden] (SCENERY.md) zu finden.
-3.  `Hauptmenü` -> `Szenerie-Bibliothek` -> `Datenbankdateien anzeigen` auf dem fliegenden Computer auswählen. Dadurch wird das Verzeichnis mit den Datenbankdateien in einem Dateimanager wie Windows Explorer oder Apple Finder geöffnet. Eine oder mehrere Datenbankdateien wie `little_navmap_fsx.sqlite`, `little_navmap_p3dv3.sqlite` oder `little_navmap_xp11.sqlite` sind dort zu finden.
+3.  Wählen Sie `Szenerie-Bibliothek` -> `Datenbankdateien anzeigen` im Hauptmenue auf dem fliegenden Computer aus. Dadurch wird das Verzeichnis mit den Datenbankdateien in einem Dateimanager wie Windows Explorer oder Apple Finder geöffnet. Eine oder mehrere Datenbankdateien wie `little_navmap_fsx.sqlite`, `little_navmap_p3dv3.sqlite` oder `little_navmap_xp11.sqlite` sind dort zu finden.
 4.  _Little Navmap_ auf dem fliegenden Computer beenden.
 5.  _Little Navmap_ auf dem Klient-/Entfernten-Computer starten und `Scenery Library` -> `Show Database Files` auswählen.
 6.  _Little Navmap_ auf dem Klient-Computer beenden, damit die Datenbankdateien kopiert werden können.

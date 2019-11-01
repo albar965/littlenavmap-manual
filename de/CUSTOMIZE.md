@@ -73,8 +73,8 @@ Die Datei
 
 Farben können in einem dieser Formate sein, die häufig im Webdesign verwendet werden:
 
-* `#RRGGBB` jedes von R, G, B und A ist eine einzelne Hexadezimalziffer. Jeder Farbwert reicht von 00 - FF \(dezimal 0-255\)
-* `#AARRGGBB` Die ersten beiden Ziffern enthalten den Alpha/Transparenzwert. `00` bedeutet volle Transparenz und bis `FF` \(decimal 255\) undurchsichtig.
+* `#RRGGBB` jedes von R, G, B und A ist eine einzelne Hexadezimalziffer. Jeder Farbwert reicht von 00 - FF (dezimal 0-255)
+* `#AARRGGBB` Die ersten beiden Ziffern enthalten den Alpha/Transparenzwert. `00` bedeutet volle Transparenz und bis `FF` (decimal 255) undurchsichtig.
 * SVG Farbname
 
 SVG Farbname ist eine der in der Liste der Farben definierten Farben. [SVG Farbe Keyword Namen](https://www.w3.org/TR/SVG/types.html#ColorKeywords) die vom World Wide Web Consortium bereitgestellt werden, z.B. " steelblue " oder "gainsboro ". Beachten Sie, dass Sie keinen Alpha-Kanalwert eingeben können, wenn Sie einen Farbnamen verwenden.
@@ -112,7 +112,7 @@ Um ein Symbol zu ändern, laden Sie es aus dem Github Quell-Repository herunter.
  
 Ändern Sie das Icon und speichern Sie es im Einstellungsordner `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`. _Little Navmap_ erkennt und verwendet das Symbol automatisch beim nächsten Start.
 
-Das Format ist auf SVG beschränkt. \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\), wo erweiterte Grafikeffekte wie Texturen nicht funktionieren.
+Das Format ist auf SVG beschränkt. \([Scalable Vector Graphics (SVG) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\), wo erweiterte Grafikeffekte wie Texturen nicht funktionieren.
 
 Sie können das kostenlose Vektorzeichnungsprogramm  [Inkscape](https://inkscape.org) verwenden,um Icons zu editieren.
 Starten Sie *Little Navmap* neu, um die Änderungen zu sehen.
@@ -142,7 +142,7 @@ Die Icons sind:
 * `aircraft_online.svg`
 * `aircraft_online_ground.svg`
 
-The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. Das Icon zeigt fliegende Flugzeuge an, wenn `ground` fehlt und wenn für KI/Multiplayer-Fahrzeuge `user` fehlt. Aus historischen Gründen werden alle Icons mit einem Präfix  `aircraft` versehen.
+Die Suffixe werden nach Fahrzeugtyp, Status (Boden oder Luft) und Benutzer oder KI/Multiplayer ausgewählt. Das Icon zeigt fliegende Flugzeuge an, wenn `ground` fehlt und wenn für KI/Multiplayer-Fahrzeuge `user` fehlt. Aus historischen Gründen werden alle Icons mit einem Präfix  `aircraft` versehen.
 
 ### Userpoint Category Icons {#customize-userpoint-icons}
 

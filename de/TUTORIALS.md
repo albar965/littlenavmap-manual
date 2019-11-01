@@ -2,21 +2,20 @@
 
 ### Allgemeines {#tutorials-general}
 
-Diese Tutorials basieren auf:
-* FSX oder P3D Szenerie, können aber einfach für X-Plane übernommen werden.
-* Eine bereits geladene Szeneriedatenbank. Das Laden der Datenbank wird in der Regel beim ersten Start durchgeführt.
-* Bei FSX oder P3D mitgelieferte Navigationsdaten. Unterschiede können durch eine Aktualisierung der Navigationsdaten oder der Nutzung von Add-On Flughäfen entstehen.
+Alle Funktionen werden über den Namen im Hauptmenü mit `Menüname` -> `Menüpunkt` bezeichnet. Die Symbole werden ebenfalls angezeigt, so dass Sie die Schaltflächen auf einer der Symbolleisten finden. Screenshots bieten weitere Hilfe.
 
-Alle Funktionen werden hier bei ihrem Namen im Hauptmenü unter `Menüname` -&gt; `Menüfunktion` genannt. Ebenfalls werden, zum leichteren auffinden der Knöpfe in der Werkzeugleiste, die Symbole angezeigt. Bildschirmabbilder werden als zusätzliche Hilfe angezeigt.
+Beachten Sie, dass sich die Flugplanentfernungen, verfügbaren Verfahren und Flughafennamen zwischen den Simulatoren und den verwendeten Navdata-Zyklen unterscheiden können.
+
+Screenshots wurden unter Linux und Windows erstellt. Daher wird das Aussehen und die Haptik anders sein.
 
 ### Schnellstart
 
-Um aus den Ursprungszustand zurückzusetzen:
+Um eine saubere gemeinsame Basis zu haben, empfehle ich folgendes:
 
-* `Fenster` -&gt; `Fensteranordnung zurücksetzen` um alle Fenster an ihre ursprüngliche position zurückzusetzen.
-* Kartenthema `OpenStreetMap` mit Bergschattierung ![Hill Shading](../images/icons/hillshading.png) auswählen.
-* Kartenansichtseinstellungen über `Karte` -&gt; `Anzeigeeinstellungen zurücksetzen` zurücksetzen, um sicher zu gehen, dass alle benötigten Funktionen angezeigt werden.
-* `Datei` -&gt; `Neuer Flugplan` ![New Flight Plan](../images/icons/filenew.png) auswählen um mit einem leeren Flugplan zu starten.
+* Wählen Sie `Window` -> `Reset Window Layout`, um alle Dockfenster wieder an ihren ursprünglichen Platz zu bringen.
+* Verwenden Sie das Kartenmotiv `OpenStreetMap` mit aktivierter Hügelschattierung ![Hill Shading](../images/icons/hillshading.png).
+* Setzen Sie die Einstellungen für die Kartendarstellung unter "Ansicht" -> "Anzeigeeinstellungen zurücksetzen" zurück, um sicherzustellen, dass alle erforderlichen Funktionen auf der Karte angezeigt werden.
+* Wählen Sie `Datei` -> `Alle zurücksetzen für einen neuen Flug` ![Alle zurücksetzen für einen neuen Flug](../images/icons/reload.png "Alle zurücksetzen für einen neuen Flug") und markieren Sie alle Schaltflächen im Dialog, um mit einer sauberen Flugplattentabelle zu beginnen.
 
 ### Tutorials {#tutorials-summary}
 
@@ -24,4 +23,6 @@ Um aus den Ursprungszustand zurückzusetzen:
 In diesem Tutorial wird erklärt, wie ein einfacher Flugplan anhand der Karte und Kontextmenüs erstellt werden kann.
 2. [IFR Flugplan mir Anflugprozedur erstellen](TUTORIALIFR.md)
 In diesem längeren Tutorial wird erklärt, wie man einen komplexeren IFR Flugplan mit Anflugprozeduren erstellen kann. Es werden die Verbesserte Flughafensuche, räumliche Suche und die automatische Flugplanberechnung vorgestellt.
+3. Dieses Tutorial zeigt, wie Sie die Flugzeugleistung während des Fluges automatisch erfassen und wie Sie das Ergebnis zusammenführen und optimieren können.
+
 

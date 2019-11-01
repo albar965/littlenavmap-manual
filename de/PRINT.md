@@ -14,13 +14,18 @@ _**Bild oben:** Druckvorschau-Dialog für die aktuelle Karte._
 
 Ermöglicht das Ausdrucken des aktuellen Flugplans zusammen mit Informationen zum Abflug- und Zielflughafen.
 
-#### Optionen zum Anpassen der Flugplattentabelle
+##### Optionen
 
-Die gedruckte Flugplantabelle hat die gleiche Spaltenreihenfolge wie die Flugplantabelle im Dockfenster. Spalten werden beim Drucken weggelassen, wenn ihre Breite auf die minimale Größe reduziert wird. Weitere Informationen sind unter[Tabellenansicht](SEARCH.md#table-view) zu finden.
+* `Tabellenüberschrift drucken`: Fügt eine Überschrift hinzu, die Abflug, Ziel und andere Informationen anzeigt, wie z.B. das Label oben auf der Registerkarte `Plan` im Dockfenster `Flugplanung`.
+* `Kraftstoffbericht drucken`: Drucken Sie den Kraftstoffberechnungsbericht über die Registerkarte `Flugzeug` im Dockfenster `Flugplanung` aus.
+* Neue Seite nach jedem Kapitel": Fügen Sie einen Seitenvorschub nach Kopfzeile, Flugplan, Tankanzeige und Flughafeninformationen hinzu.
+* `Textgröße`: Ermöglicht die Vergrößerung oder Verkleinerung aller Texte mit Ausnahme der Flugplattentabelle.
 
-![Zusammengeklappte Spalte in der Flugplantabelle](.../images/collapsedcolumn.png)
+##### Flugplan
 
-_**Bild oben:** Die Spalte _`Name`_ ist zugeklappt und wird nicht zur gedruckten Flugplantabelle hinzugefügt._
+* Flugplattentabelle drucken": Fügt den Flugplan dem Ausdruck hinzu.
+* `Textgröße`: Vergrößern oder verkleinern Sie den Text der Flugplattentabelle.
+* Flugplanspalten zum Drucken auswählen": Klicken Sie auf die Namen, um Flugplanspalten ein- oder auszuschließen.
 
 #### Optionen für Abflug- und Zielort
 

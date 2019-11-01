@@ -1,93 +1,131 @@
-## Add-on Flughafen
+### 3D
+
+X-Plane Flughafen, der mindestens ein 3D-Objekt enthält. Möglicherweise handelt es sich um einen vollständig errichteten Großflughafen.
+
+### Add-on Flughafen
 Dies ist ein Flughafen, der beim Laden der Datenbank außerhalb des Standard-Szenerieverzeichnises des Flugsimulators gefunden wurde.
 
-## Anflugsverfahren
+X-Plane: Alle Flughäfen im Verzeichnis `Custom Scenery` gelten als Zusatzflughäfen und werden entsprechend markiert.
+
+### Arrival Prozeduren
+Eine Arrival-Prozedur ist eine Reihe von Manövern für den Übergang eines Flugzeugs unter Instrumentenflugbedingungen vom ersten Anflug auf eine Landung oder zu einem Punkt, von dem aus eine Landung visuell erfolgen kann. Wenn ein Flugplan ein Standard-Ankunftsverfahren (STAR) beinhaltet, folgt ein Anflugverfahren normalerweise dem STAR.
+
+
+### Anflugsverfahren
 Anflug-, Übergangs- oder STAR-Verfahren.
 
 
-## BGL
+### BGL
 Eine Binärdatei mit der Endung `BGL`, die Teil einer Flugsimulatorlandschaft ist, die Flughafen-, Navigationshilfen- oder Luftweg-Informationen enthält. Diese Dateien können auch Verkehr, Landklassen, Höhenangaben oder andere Informationen enthalten, die für _Little Navmap_ nicht relevant sind.
 
-## DAT
+### CSV
+Kommaseparierte Textdatei mit Daten.
+
+
+### DAT
 Ein Textdateiformat, das von X-Plane verwendet wird, um Flughafen-, Navigationshilfen- und Prozedurinformationen zu speichern.
 
-## Abflugverfahren
+### Abflugverfahren
 SID-Verfahren.
 
-## DME
+### DME
 Entfernungsmessgeräte oder eine Radio-Navigationshilfe.
 
-## Leerer Flughafen
+### Leerer Flughafen
 Ein Flughafen, der keine Rollwege, keine Parkpositionen oder Gates, keine Vorfelder hat und kein Zusatzflughafen und kein Wasserflughafen ist.
 
-## Fix
+#### FACF
+Endanflugkurs fixiert. Ein Punkt, der auf den Endanflugverlauf eines Instrumentenverfahrens ausgerichtet ist.
+
+### FAF
+Endanflug Fix. Der Punkt, an dem das Endanflugsegment mit dem Instrumentenansatz beginnt.
+
+### Fix
 Dieser Begriff bezieht sich auf einen Wegpunkt, Radio-Navigationshilfe oder einen berechneten Punkt auf einer Prozedur.
 
-## FLP
+### Flugplanposition
+Ein benutzerdefinierter Wegpunkt, der Teil des Flugplans ist.
+
+### FLP
 Flugplanformat, das von X-Plane FMS, Aerosoft Airbus und anderen Add-On-Flugzeugen verwendet wird.
 
-## FMS
+### FMS
 X-Plane Flugplanformat.
 
-## FS9
+### FS9
 Flugsimulator 2004.
 
-## FSX
+### FSX
 Flugsimulator X oder Flugsimulator - Steam Edition.
 
-## GIS
+### GIS
 Ein geographisches Informationssystem wie z.B. Google Earth.
 
-## Initialer Fix
+#### ILS
+Instrumentenlandesystem.
+
+### Initialer Fix
 Dies ist der erste Fix einer Prozedur.
 
-## Navigationshilfe
+### MAP
+Verpasster Annäherungspunkt. Der Punkt auf der Endanflugstrecke, der den Endpunkt der Endanflugstrecke und den Beginn der verpassten Anflugstrecke darstellt.
+
+### Navigationshilfe
 VOR, VORTAC, TACAN, NDB oder Wegpunkt/Kreuzung.
 
-## NDB
+### NDB
 Nicht gerichtetes Funkfeuer - Radio-Navigationshilfe.
 
-## P3D
+### P3D
 Prepar3D v2 bis v4.
 
-## Parkposition
+### Parkposition
 GA-Rampe, Laderampe, Treibstoffkasten oder Flugsteig.
 
-## PLN
+### PLN
 FSX und P3D Flugplanformat. Kann alle Informationen in Flugplänen mit Annotationen speichern.
 
-## Prozedur
+### POI
+Interessanter Ort. Ein Benutzerpunkttyp.
+
+### Prozedur
 Anflug, Übergang, SID oder STAR.
 
-## Radio-Navigationshilfe
+### Radio-Navigationshilfe
 VOR, VORTAC, TACAN oder NDB.
 
-## Bewertung
+### Bewertung
 Flughafen von null bis fünf Sternen, je nach Ausstattung.
 
-## Sceneriebibliothek-Datenbank
-Dies ist eine interne \([SQLite](http://sqlite.org)\) Datenbank, die von _Little Navmap_ beim Lesen aller BGL- oder DAT-Dateien des Flugsimulators erstellt wird. Es ermöglicht eine schnelle, komplexe Suche und Kartendarstellung.
+### Rhumb Line
+Bei Verwendung eines Magnetkompasses oder einer Richtungsanzeige ist es bequemer, eine konstante Flugrichtung zu fliegen. Dies kann erreicht werden, indem man einer Rhumb-Line-Linie folgt und nicht einer Großkreisbahn.
+Zu beachten ist, dass die Rhumb-Linie, die zwei Punkte auf der Erde verbindet, länger ist als der Großkreisweg. Auch in der Nähe der Pole und bei größeren Entfernungen ist die Lahnlinie nicht verwendbar.
 
-## SID
-Standard-Instrumentenabflug.
+### Sceneriebibliothek-Datenbank
+Dies ist eine interne ([SQLite](http://sqlite.org)) Datenbank, die von _Little Navmap_ beim Lesen aller BGL- oder DAT-Dateien des Flugsimulators erstellt wird. Es ermöglicht eine schnelle, komplexe Suche und Kartendarstellung.
 
-## SimConnect
+### SID
+Ein Standardinstrumentenabflug ist ein Abflugverfahren der Flugsicherung, das dazu beiträgt, die Abfertigungsverfahren zu vereinfachen. Eine SID hält Flugzeuge vom Gelände fern, ist aber für die Flugroute der Flugsicherung optimiert und bietet nicht unbedingt das beste Steiggefälle. Es bietet ein Gleichgewicht zwischen Gelände- und Hindernisvermeidung, Lärmminderung und Luftraummanagement.
+
+
+### SimConnect
 Eine Programmierschnittstelle, die es Anwendungen ermöglicht, Flugsimulatorparameter zu lesen und zu schreiben.
 
-## STAR
-Standard Ankunftsprozedur am Terminal. Meist gefolgt von einem Übergang und einer Annäherung.
+### STAR
+Eine Standard-Ankunftsprozedur ist eine Flugroute, die in der Regel die Phase eines Fluges zwischen dem letzten im Flugplan angegebenen Punkt der Route und dem ersten Punkt der Anflugroute auf den Flughafen abdeckt, normalerweise dem Initial Approach Fix (IAF). Ein STAR verbindet die En-Route-Phase mit der Anflugphase des Fluges.
 
-## Startposition
+
+### Startposition
 Wird für den Abflug in Flugplänen verwendet. Entweder Start- und Landebahn, Hubschrauberlandeplatz, GA-Rampe, Laderampe, Treibstoffkasten oder Flugsteig.
 
-## TACAN
+### TACAN
 Taktisches Flugsicherungssystem - Radio-Navigationshilfe, das von Militärflugzeugen verwendet wird.
 
-## VOR
+### VOR
 UKW Rundum-Richtfunkreichfeuer - Radio-Navigationshilfe.
 
-## VORDME
+### VORDME
 UKW Rundum-Richtfunkfeuer mit Entfernungsmessgeräten - Radio-Navigationshilfe.
 
-## VORTAC
+### VORTAC
 Ko-positionierte UKW-Rundumfunkfeuer (VOR) und TACAN-Funkfeuer (TACAN).

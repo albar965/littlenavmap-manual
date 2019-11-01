@@ -10,11 +10,12 @@ _Little Navmap_ ist ein freier Open-Source Flugplaner, Navigationswerkzeug, Kart
 
 Mehr über meine Projekte auf [**www.littlenavmap.org**](www.littlenavmap.org).
 
+[**Supportforum auf AVSIM**](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/).
+
 ---
 
-Copyright 2015-2017 Alexander Barthel
+Copyright 2015-2019 Alexander Barthel
 
-Übersetzung von Karl Wichelmann, Stephan Leukert und merspieler.
 
 ---
 

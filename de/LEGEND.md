@@ -9,6 +9,9 @@ Kurse und Richtungen werden mit `°T` für den wahren Kurs oder `°M` für den m
 ### Mausklicks {#mouse-clicks}
 
 Ein Klick in der Karte auf die aktive Stelle eines Objektes wie z.B. eines Entfernungsrings entfernt es. Der Cursor verwandelt sich in ein Handsymbol, um einen aktiven Punkt anzuzeigen, der es ermöglicht, ein Objekt durch Anklicken oder Entfernen bzw. Bearbeiten im Kontextmenü zu entfernen.
+Die Anzeige einer Kartenfeatureklasse wird aktiviert, wenn Sie diese Mausklicks verwenden. Ein `Shift+Klick` ermöglicht z.B. die Anzeige von Entfernungsringen. 
+
+Sie können die Anzeige im Menü `Ansicht` -> `Benutzerfunktionen` oder in der Symbolleiste aktivieren oder deaktivieren.
 
 | Maus | Beschreibung |
 | --- | --- |
@@ -43,18 +46,23 @@ Sie müssen das Kartenfenster aktivieren (d.h. anklicken), bevor Sie die Tastenk
 | --- | --- |
 | ![Heim-Position](../images/legend/home.png) | Mittelpunkt der Heim-Position. |
 | ![Distanzsuche](../images/legend/mark.png) | Mittelpunkt für die Distanzsuche. |
-| ![Flugplan](../images/legend/route_leg.png) | Flugplan mit Entfernung, Richtung und magnetischem Kurs an jeden Abschnitt. |
-| ![Flugplan Parkposition](../images/legend/route_start.png) | Startposition des Flugplanes. Kann eine beliebige Parkposition sowie auch Landebahn oder Helikopterlandeplatz sein. |
-| ![Flugzeug](../images/legend/aircraft.png)     ![Aircraft](../images/legend/aircraft_text.png) | Aktuelle Flugzeugposition, wenn eine Verbindung mit dem Simulator besteht. Die Texte sind: Registrierung, Fluglinie (wenn verfügbar), Flugnummer (wenn verfügbar), angezeigte Geschwindigkeit, Bodengeschwindigkeit, magnetischer Kurs, Höhe, Steig- oder Sinkindikator, magnetische Windrichtung und Windgeschwindigkeit. |
-| ![Flugzeug am Boden](../images/legend/aircraft_ground.png) | Simulatorflugzeug am Boden. |
-| ![Spur](../images/legend/aircraft_track.png) | Spur des Simulatorflugzeuges, wenn eine Verbindung besteht. |
-| ![Reichweite](../images/legend/range_rings.png) | Reichweitenringe mit Entfernung. |
-| ![Reichweite VOR](../images/legend/range_vor.png)    ![Range NDB](../images/legend/range_ndb.png) | Reichweite einer VOR- or NDB-Station mit Kennung und Frequenz. Die Farbe zeigt den Typ an. |
-| ![Distanz GC](../images/legend/distance_gc.png) | Entfernungsmessung mittels [Großkreisroute](https://de.wikipedia.org/wiki/Gro%C3%9Fkreis). Texte zeigen Entfernung und wahren Kurs am Start und Ende der Messung (die Kurse sind bei kurzen Entfernungen gleich). Für kürzere Entfernungen wird die Länge auch in Fuß angezeigt. |
-| ![Distanz Rhumb](../images/legend/distance_rhumb.png) | [Rhumb-Linie](https://de.wikipedia.org/wiki/Loxodrome) von gleichen Kurs. Die Texte zeigen Entfernung und wahren Kurs. Rhumb-Linien werden benutzt um entlang von Luftstraßen und Funkfeuern zu navigieren. Für kürzere Entfernungen wird die Länge auch in Fuß angezeigt. |
+| ![Center](../images/legend/centermark.png) | Zeigt die Kartenmitte an. Nützlich für den Navigationsmodus `Klick und Zentrieren`. Zeigt auch die Klick-/Touch-Bereiche der Kartennavigation an, falls aktiviert. |
+|  ![Flight Plan](../images/legend/route_leg.png) | Flugplan mit Entfernung, Richtung und magnetischem Kurs auf jeder Strecke. Die angezeigten Werte können im Dialog `Optionen` auf der Registerkarte `Kartenanzeige 2`.<br/>`°M` und `°T` können geändert werden, um den magnetischen bzw. wahren Kurs anzuzeigen. `R` und `GC` bezeichnen Rhumb-Linie oder Großkreislinie. Suffixe können ausgeblendet werden, wenn nur ein Typ ausgewählt ist (Rhumb oder Großkreis) |
+| ![Flight Plan Procedure](../images/legend/route_procedure_leg.png) | Flugplanverfahren mit den gleichen Informationen wie oben. |
+| ![Active Leg](../images/legend/activesegment.png) | Aktive Flugplanstrecke |
+| ![Wind Barb](../images/legend/route_wind.png) | Windrichtung und Geschwindigkeit am Flugplan-Wegpunkt. Siehe Kapitel `Winds Aloft` weiter unten für Details über Windspitzen. |
+| ![Flight Plan Departure Position](../images/legend/route_start.png)| Flugplan Abflugposition am Flughafen. Entweder Parken, Treibstofftank, Landeplatz, Wasser oder Start- und Landebahn. |
+| ![Top of Climb](../images/legend/routetoc.png) | Top of Climb Punkt mit Abstand vom Abflug. |
+| ![Top of Descent](../images/legend/routetod.png) | Top of Descent Punkt mit Entfernung zum Ziel. |
+| ![Range](../images/legend/range_rings.png) | Entfernungsringe, die mit dem Abstand gekennzeichnet sind. |
+| ![Range VOR](../images/legend/range_vor.png) ![Range NDB](../images/legend/range_ndb.png) | VOR- oder NDB-Entfernungsringe mit Kennzeichnung durch Identität und Frequenz. Die Farbe zeigt den Typ Navaid an. |
+| ![Distance GC](../images/legend/distance_gc.png) | [Great circle](https://en.wikipedia.org/wiki/Great-circle_distance) Entfernungs- und Kursmesslinie mit Angabe der Länge und des wahren Kurses am Start und Ziel. Die beiden Überschriftenwerte sind bei kleinen Abständen gleich. Für kürzere Strecken wird die Länge auch in Fuß oder Meter angegeben. |
+| ![Distance Rhumb](../images/legend/distance_rhumb.png) |[Rhumb-Linie](https://en.wikipedia.org/wiki/Rhumb_line) der gleichen Bearing-Distanzmessung, die Distanz und wahren Kurs anzeigt. Rhumb-Linien werden verwendet, um sich einem VOR oder NDB zu nähern oder entlang der Luftstraßen zu fliegen. Für kürzere Strecken wird die Länge auch in Fuß angegeben. |
 | ![Distanz VOR](../images/legend/distance_vor.png) | Entfernungsmessungen, die von einen Flugplatz oder Funkfeuer bzw. Wegpunkt starten, erhalten die gleiche Farbe, wie das Symbol und zusätzlich noch die Kennung und Frequenz. Rhumb-Linien erhalten eine magenetische Kursangabe, wenn sie von einen Kartenobjekt aus starten, das eine magnetische Varianz zugewiesen hat. |
 | ![Suchhervorhebung](../images/legend/highlight_search.png) | Ein Flugplatz oder Navigationspunkt, der in den Suchergebnissen selektiert ist. |
 | ![Flugplanhervorhebung](../images/legend/highlight_route.png) | Ein Flugplatz oder Navigationspunkt, der in der Flugplantabelle selektiert ist. |
+| ![Elevation Profile Position](../images/legend/route_profile_mark.png)| Zeigt die entsprechende Position auf dem Flugplan an, wenn Sie mit der Maus über das Höhenprofil fahren. |
+| ![Logbook Entry](../images/legend/logbook_entry.png) | Flughäfen und Großkreiskreis zwischen Abflug und Ziel für einen in der Suchergebnistabelle ausgewählten Logbucheintrag. Das Label zeigt Abflug, Ziel und Großkreisabstand zwischen den Flughäfen. |
 
 ### Kompassrose {#compass-rose}
 
@@ -64,13 +72,13 @@ Die Farben für den Flugplanverlauf und den Schiebewinkel hängen von den Einste
 
 | Symbol | Beschreibung |
 | --- | --- |
-| ![Geographischer Norden](../images/legend/compass_rose_true_north.png "True North") | Geographischer Norden. |
-| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Magnetischer Norden. |
-| ![Distanzringe](../images/legend/compass_rose_dist.png "Distance Circles") | Entfernungskreise und Markierungen vom Benutzerflugzeug, falls mit dem Simulator verbunden. |
-| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Die durchgezogene Linie zeigt die Flugbahn in Grad magnetisch an, wenn falls verbunden. |
-| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Die gestrichelte Linie zeigt den Kurs des Flugzeugs an, falls verbunden. |
-| ![Flugplan Leg Course](../images/legend/compass_rose_leg.png "Flight Plan Leg Course") | Das Magenta-Liniensegment zeigt den Kurs zum nächsten Wegpunkt des aktiven Flugplanabschnitts an. Versteckt, wenn kein Flugplan geladen ist. |
-| ![Crab Angle](../images/legend/compass_rose_crab.png "Crab Angle") | Schiebewinkel. Zeigt die Richtung an, die unter Berücksichtigung des Seitenwindes zum nächsten Wegpunkt des aktiven Flugplanabschnitts geflogen werden muss. Versteckt, wenn kein Flugplan geladen ist. |
+| ![Geographischer Norden](../images/legend/compass_rose_true_north.png) | Geographischer Norden. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png) | Magnetischer Norden. |
+| ![Distanzringe](../images/legend/compass_rose_dist.png) | Entfernungskreise und Markierungen vom Benutzerflugzeug, falls mit dem Simulator verbunden. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png) | Die durchgezogene Linie zeigt die Flugbahn in Grad magnetisch an, wenn falls verbunden. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png) | Die gestrichelte Linie zeigt den Kurs des Flugzeugs an, falls verbunden. |
+| ![Flugplan Leg Course](../images/legend/compass_rose_leg.png) | Das Magenta-Liniensegment zeigt den Kurs zum nächsten Wegpunkt des aktiven Flugplanabschnitts an. Versteckt, wenn kein Flugplan geladen ist. |
+| ![Crab Angle](../images/legend/compass_rose_crab.png) | Schiebewinkel. Zeigt die Richtung an, die unter Berücksichtigung des Seitenwindes zum nächsten Wegpunkt des aktiven Flugplanabschnitts geflogen werden muss. Versteckt, wenn kein Flugplan geladen ist. |
 
 ### Flugzeuge und Schiffe {#vehicles}
 
@@ -101,7 +109,8 @@ Das Symbol wird kleiner gezeichnet, wenn der Flugplatz keine Landebahnen hat. Di
 | ![Heliport](../images/legend/heliport.png) | Helikopterflugplatz. |
 | ![Closed Airport with Tower](../images/legend/airport_tower_closed.png)    ![Closed Airport](../images/legend/airport_closed.png) | Geschlossener bzw. aufgegebener Flugplatz. Alle Landebahnen sind geschlossen. |
 | ![Airport with Fuel](../images/legend/airport_tower_fuel.png)    ![Airport with soft Runways and Fuel](../images/legend/airport_soft_fuel.png) | Flugplätze die Treibstoff anbieten. |
-| ![Airport Text](../images/legend/airport_text.png) | Flugplatztext, der folgendes (wenn verfügbar) zeigt: Name, Kennung, Towerfrequenz (CT - 119.550) and Frequenzen für Wetterdienste (ATIS 127.150 or AWOS/ASOS), Höhe (152 ft), Verfügbarkeit beleuchteter Landebahnen (L), längste Landebahn in Fuß * 100 (7.400 Fuß) und Unicom Frequenz (122.95). |
+|  ![Airport Weather](../images/legend/airport_weather.png) | Wetter am Flughafen. Siehe Kapitel `Flughafenwetter` weiter unten. |
+| ![Airport Text](../images/legend/airportlabel.png) | Flughafen-Label mit Name, Identität, ATIS-Frequenz, Höhe, beleuchteten Pisten (`L`) und Länge der längsten Piste. Die Textbeschriftungen für einen Flughafen können im Dialog `Optionen` auf der Registerkarte `Kartenanzeige` geändert werden. |
 | ![Airport Overview](../images/legend/airport_overview.png) | Übersicht über die Start- und Landebahnen des Flughafens, die beim Vergrößern der Karte vor dem vollständigen Flughafendiagramm angezeigt wird. |
 
 ### Wegpunkte, Funkfeuer und Luftstraßen {#navaids}
@@ -129,11 +138,12 @@ Siehe Kapitel [Prozeduren](APPROACHES.md) für detailliertere Informationen übe
 
 | Symbol | Beschreibung |
 | --- | --- |
-| ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, Anflug- oder Übergangsabschnitt in der Vorschau mit Entfernung, Richtung und magnetischem Kurs auf jedem Abschnitt. |
-| ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) | SID, STAR, Anflug- oder Übergangsabschnitt, der Teil des Flugplans ist. |
-| ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Fehlanflugabschnitt in der Vorschau. |
-| ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) | Fehlanflugabschnitt der Teil des Flugplanes ist. |
-| ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Die gestrichelte Linie kennzeichnet einen Circle-to-Land oder einen geraden Teil einer Prozedur, die nach dem Fehlanflugpunkt zu einem Start- und Landebahnende führt. |
+| ![Procedure Leg Flight Plan](../images/legend/proc_flightplan.png) ![Procedure Leg Preview](../images/legend/proc_preview.png) | SID, STAR, Anflug oder Transition für den Flugplan und in der Vorschau mit Entfernung, Richtung und Magnetkurs auf jeder Strecke. |
+| ![Missed Leg Flight Plan](../images/legend/proc_missed_flightplan.png) ![Missed Leg Preview](../images/legend/proc_missed_preview.png) | Verpasste Anflugstrecke für Flugplan und Vorschau. |
+| ![Circle to Land or Straight in](../images/legend/proc_ctl.png) | Gepunktete Linie zeigt Kreis-zu-Land oder geradlinigen Teil eines Verfahrens an, der zu einem Start- und Landebahnende führt. Hier ein Teil des Flugplans. |
+| ![Vectors](../images/legend/procvectors.png) | Vector Abschnitt zeigt den Kurs zu einem ersten Fix an. Hier ein Teil des Flugplans. |
+| ![Manual](../images/legend/procmanual.png) | Manueller Abschnitt. Fliegen Sie nach den Anweisungen des ATC. Hier als Vorschau dargestellt. |
+| ![Alternate](../images/legend/routealternate.png) | Legende zum alternativen Ziel. |
 | ![Procedure Point](../images/legend/proc_point.png) | Der grau-gelb gefüllte Kreis kennzeichnet einen Prozedurpunkt, der keine Navigationshilfe ist, sondern durch Kurs bzw. Entfernung von einer Navigationshilfe, einer Höhenbeschränkung oder einer manuellen Beendigung definiert ist. |
 | ![Procedure Overfly](../images/legend/proc_flyover.png) | Ein schwarzer Kreis zeigt einen Wegpunkt an der zwangsweise überflogen werden muss. Dies kann ein Prozedurpunkt oder eine Navigationshilfe sein. |
 | ![Procedure FAF](../images/legend/proc_faf.png) | Das Malteserkreuz markiert den Endanflug oder den Punkt für den finalen Endanflugkurs. |
@@ -142,6 +152,7 @@ Siehe Kapitel [Prozeduren](APPROACHES.md) für detailliertere Informationen übe
 | ![Procedure Intercept Leg](../images/legend/procinterceptleg.png) | Den nächsten Abschnitt bei einem Kurs von etwa 45 Grad abfangen. |
 | ![Procedure Altitude](../images/legend/procinterceptalt.png) | Prozedurabschnitt, der bei Erreichen der vorgegebenen Höhe beendet wird. |
 | ![Procedure Intercept Distance](../images/legend/procinterceptcd.png) | Ein Punkt, der durch einen Kurs oder eine Richtung und die Entfernung zu einer Navigationshilfe definiert ist. |
+| ![Prozedur Intercept Radial](../images/legend/procradial.png) | Turn, um ein radio navaid radial zu intercepten.|
 | ![Procedure Intercept Course Distance](../images/legend/procinterceptd.png) | Dieser Punkt wird durch einen Kurs oder eine Spur definiert, die durch Erreichen einer DME-Distanz beendet wird. |
 | ![Procedure Intercept Course to Fix](../images/legend/procinterceptcoursetofix.png) | Fangen Sie einen Kurs zum nächsten Punkt in einem Winkel von etwa 45 Grad ab. |
 
@@ -198,6 +209,17 @@ Farbe und Indikatoren hängen von der Wahl des Benutzers im Dialogfeld `Platzrun
 | ![Final](../images/legend/pattern_runway.png) | Endabschnitt der Platzrunde mit Start- und Landebahn sowie magnetischen Kurs. |
 | ![Entry Indicator](../images/legend/pattern_entry.png) | Pfeil und gestrichelte Linien zeigen den Pfad für den Eintritt in die Platzrunde. |
 | ![Exit Indicator](../images/legend/pattern_exit.png) | Gestrichelte Linie und Pfeile zeigen den Pfad für den Austritt aus der Platzrunde. |
+|  ![Active Position](../images/legend/patternactive.png)  | Weißer Kreis ist aktiver Punkt an der Startbahnschwelle des Musters. Der Mauszeiger ändert sich nach oben und ermöglicht es, das Muster im Kontextmenü zu entfernen. |
+
+### Holding {#holding}
+
+Die Farbe hängt von der Wahl des Benutzers im Haltedialog ab.
+
+| Symbol | Beschreibung |
+| --- | --- |
+| ![Inbound to Fix](../images/legend/holdinbound.png) | Holding fix, magnetischer und echter Inbound-Kurs, Zeit für gerades Leg und navaid ident (`LBU`). Die Identität wird nur angezeigt, wenn das Holding an ein Navaid gekoppelt ist. Die echte Kursanzeige hängt von den Optionen ab. |
+| ![outbound from Fix](../images/legend/holdoutbound.png) | Magnetischer und echter Outbound-Kurs, Geschwindigkeit und Höhe wie im Dialog angegeben. Die echte Kursanzeige hängt von den Optionen ab. |
+| ![Active Position](../images/legend/holdactive.png) | Aktivpunkt und Holdingfix. Der Mauszeiger ändert sich nach oben und ermöglicht es, die Haltung im Kontextmenü zu entfernen. |
 
 ### MORA-Gitter {#mora-grid}
 
@@ -207,7 +229,7 @@ Das minimale Off-Route-Höhenraster stellt eine Hindernisfreigabe innerhalb eine
 | --- | --- |
 | ![MORA Grid](../images/legend/map_mora.png) | MORA-Gitter. Die große Zahl ist 1000 Fuß und kleine Zahl 100 Fuß. Beispiel hier: 3300, 4400, 6000, 9900 und 10500 Fuß. |
 
-### Wetter {#airport-weather}
+### Flugplatzwetter {#airport-weather}
 
 #### Flugregeln {#airport-weather-flightrules}
 
@@ -239,4 +261,13 @@ Das minimale Off-Route-Höhenraster stellt eine Hindernisfreigabe innerhalb eine
 | ![50 Knots Wind](../images/legend/weather_wind50.png) | 50 Knoten Wind.|
 | ![25 Knots Wind](../images/legend/weather_wind25.png) | Beispiel: 25 Knoten. |
 | ![65 Knots Wind](../images/legend/weather_wind65.png) | Beispiel: 65 Knoten. |
+| ![15 Knots steady Wind gusting to 30 Knots](../images/legend/weather_wind_gust.png) | Beispiel: 15 Knoten stetiger Wind (schwarz) böen bis 30 Knoten (rot). |
+
+#### Höhenwinde {#high-alt-wind}
+
+| Symbol | Beschreibung | 
+| --- | --- |
+| ![No Wind](../images/legend/wind_none.png) | Kein Zeiger zeigt Wind unter 2 Knoten an. |
+| ![Wind below 5 Knots](../images/legend/wind_low.png) | Unter 5 Knoten von Westen. |
+| ![25 Knots Wind](../images/legend/wind_25.png) | Beispiel: 25 Knoten. |
 

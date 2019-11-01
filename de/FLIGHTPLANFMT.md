@@ -6,10 +6,11 @@ Das Programm verwendet anstelle von nur einem verschiedene "Speichern unter..." 
 
 Beachten Sie den Unterschied zwischen `Flugplan speichern unter...` und `Flugplan exportieren unter...`: `Exportieren` ändert den aktuellen Dateinamen nicht, während `Speichern unter...` dies tut.
 
+**Speichern Sie immer eine Kopie im Standardformat PLN, bevor Sie sie in anderen Formaten wie FMS speichern. Dies ermöglicht es _Little Navmap_, alle Flugplaneigenschaften wie Prozeduren und alternative Flughäfen wiederherzustellen.**
 
 ### Funktionsübersicht {#flight-plan-formats-feature}
 
-Die folgende Tabelle zeigt die Möglichkeiten von _Little Navmap_ und die unterstützten Flugplanformate \(X = unterstützt, 0 = nicht unterstützt\):
+Die folgende Tabelle zeigt die Möglichkeiten von _Little Navmap_ und die unterstützten Flugplanformate (X = unterstützt, 0 = nicht unterstützt):
 
 | Format                        | Lesen | Schreiben | Airw. | VFR/<br/>IFR| Nutzer<br/>Wpt.<br/>Namen| Abflug<br/>Parking| Cruise<br/>Alt. | Grund<br/>speed  | Proz. |
 | ----------------------------- | ---- | ----- | ----- | ----------- | ---------------------- | --------------- | --------------- | ----------------- | ----  |
@@ -19,6 +20,7 @@ Die folgende Tabelle zeigt die Möglichkeiten von _Little Navmap_ und die unters
 | FSC PLN                       | X    | 0     | X     | 0           | X                      | 0               | 0               | 0                 | 0     |
 | X-Plane<br/>FMS 11            | X    | X     | X     | 0           | X                      | 0               | X               | 0                 | X     |
 | X-Plane<br/>FMS 3             | X    | X     | 0     | 0           | X                      | 0               | X               | 0                 | 0     |
+| FlightGear<br/>FGFP           | X    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | X [^2] |
 | FLP                           | X    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | X     |
 | Reality XP<br/>GNS FPL        | 0    | X     | 0     | 0           | X                      | 0               | 0               | 0                 | 0     |
 | Reality XP<br/>GTN GFP        | 0    | X     | X     | 0           | X[^2]                  | 0               | 0               | 0                 | X     |
@@ -30,10 +32,20 @@ Die folgende Tabelle zeigt die Möglichkeiten von _Little Navmap_ und die unters
 | FLTPLAN<br/>for iFly          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | ProSim<br/>`companyroutes.xml`| 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | PLN for<br/>BBS Airbus        | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^2] |
+| MDX for<br/>MaddogX           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| RTE for<br/>QualityWings      | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| EFBR for<br/>EFB              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| RTE for<br/>Level-D           | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| FPL for<br/>Feelthere         | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| XML for<br/>TDFi Design       | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| FPL for<br/>IVAP/X-IVAP [^3]  | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
+| VFP for<br/>vPilot [^3]       | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0      |
 | UFMC                          | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | FPL for<br/>XFMC              | 0    | X     | X     | 0           | 0                      | 0               | 0               | 0                 | 0     |
 | Flight Factor<br/>`corte.in`  | 0    | X     | X     | 0           | 0                      | 0               | X               | 0                 | X [^3] |
 | GPX                           | 0    | X     | 0     | 0           | 0                      | 0               | 0               | 0                 | 0     |
+| HTML                          | 0    | X     | -     | -           | -                      | -               | -               | -                 | -      |
 
 Prozedur-Wegpunkte sind standardmäßig von allen Dateiformaten ausgeschlossen, mit Ausnahme von GPX. Sie müssen das GPS oder FMS im Simulator verwenden, um Verfahren auszuwählen.
 
@@ -77,7 +89,7 @@ Dies ist das gleiche wie beim FSX PLN, jedoch ohne zusätzliche Anmerkungen, die
 
 ### ![FMS 11](../images/icons/saveasfms.png "FMS 11") FMS 11 \(X-Plane\) {#flight-plan-formats-fms11}
 
-Neues X-Plane FMS-Format, das in das Standard-GPS, das G1000 und das FMS von X-Plane 11.10 geladen werden kann. Dies ist nun das Standardspeicherformat für X-Plane FMS. Verwenden Sie die Exportfunktion, um alte FMS-Version 3-Dateien zu speichern.
+Neues X-Plane FMS-Format, das in das Standard-GPS, das G1000 und das FMS von [X-Plane 11.10](https://www.x-plane.com) geladen werden kann. Dies ist nun das Standardspeicherformat für X-Plane FMS. Verwenden Sie die Exportfunktion, um alte FMS-Version 3-Dateien zu speichern.
 
 **Dieses Format wird ab X-Plane 11.10 unterstützt. Es kann bereits in den Beta-Versionen verwendet werden, kann aber X-Plane Version 11.05 und darunter abstürzen.**
 
@@ -85,7 +97,14 @@ _Little Navmap_ kann dieses Format lesen und schreiben.
 
 Speichern Sie diese Dateien im Verzeichnis `Output/FMS plans` im Ordner X-Plane.
 
-### ![FMS 3](../images/icons/saveasfms.png "FMS 3") FMS 3 \(X-Plane\) {#flight-plan-formats-fms3}
+Beachten Sie, dass _Little Navmap_ dieses Format zwar lesen und schreiben kann, aber Einschränkungen hat:
+
+* Flughäfen sind so angepasst, dass sie beim Speichern in seltenen Fällen echte ICAO-Ids anstelle der X-Plane-Ids verwenden. Infolgedessen kann _Little Navmap_ diese möglicherweise nicht lesen.
+* Die kleine Navmap_ kann in einigen Fällen die Reiseflughöhe eines Flugplans nicht bestimmen. Möglicherweise sehen Sie nach dem Laden Fehler bei der Verletzung von Höhenbeschränkungen. Stellen Sie die Reiseflughöhe in diesem Fall manuell ein.
+
+Speichern Sie eine Kopie immer im Standardformat PLN. Dies ermöglicht es _Little Navmap_, alle Flugplaneigenschaften wie Verfahren und alternative Flughäfen wiederherzustellen.
+
+### ![FMS 3](../images/icons/saveasfms.png "FMS 3") FMS 3 (X-Plane) {#flight-plan-formats-fms3}
 
 X-Plane FMS-Format, das in das Standard-GPS und FMS von X-Plane 10 und 11.05 geladen werden kann. Das Format ist sehr begrenzt und speichert im Grunde nur eine Liste von Wegpunkten.
 
@@ -93,9 +112,17 @@ _Little Navmap_ kann dieses Format lesen und schreiben.
 
 Speichern Sie diese Dateien im Verzeichnis `Output/FMS plans` im X-Plane-Verzeichnis.
 
+### ![FGFP](../images/icons/saveasfg.png "FGFP") FGFP (FlightGear) {#flight-plan-formats-fgfp}
+
+FlightPlan-Format, das in den RouteManager des Freiflugsimulators[FlightGear] (http://www.flightgear.org) geladen werden kann.
+
+_Little Navmap_ kann dieses Format lesen und schreiben.
+
+Sie können die Dateien in einem beliebigen Verzeichnis speichern und in FlightGear laden.
+
 ### FLP {#flight-plan-formats-flp}
 
-Ein Format, das vom X-Plane FMS \(nicht vom X-Plane GPS\), Aerosoft Airbus und anderen Add-On-Flugzeugen gelesen werden kann. Unterstützt die Airway und Verfahren.
+Ein Format, das vom X-Plane FMS (nicht vom X-Plane GPS), Aerosoft Airbus und anderen Add-On-Flugzeugen gelesen werden kann. Unterstützt die Airway und Verfahren.
 
 Sie können diese Dateien mit den Aiway-Informationen in das X-Plane FMS laden. Prozeduren werden im FLP gespeichert, können aber vom FMS noch nicht geladen werden. Diese müssen Sie nach dem Laden des Flugplans manuell auswählen.
 
@@ -115,7 +142,7 @@ Das Standardverzeichnis zum Speichern der Flugpläne für die GNS-Einheiten ist
 `C:\ProgramData\Garmin\GNS Trainer Data\GNS\FPL`
 für alle Simulatoren. Das Verzeichnis wird beim ersten Export von _Little Navmap_ automatisch erstellt, wenn es nicht existiert.
 
-### GFP \(Reality XP Garmin GTN\) {#flight-plan-formats-rxpgtn}
+### GFP (Reality XP Garmin GTN) {#flight-plan-formats-rxpgtn}
 
 Speichern Sie den Flugplan als GFP-Datei, die vom _Reality XP GTN 750/650 Touch_ verwendet werden kann.
 
@@ -125,13 +152,15 @@ Informationen zu bekannten Problemen beim Export von Flugplandaten für das GTN 
 
 _Little Navmap_ berücksichtigt die Umgebungsvariable `GTNSIMDATA`, falls gesetzt. Weitere Informationen finden Sie im GTN-Handbuch.
 
-#### Garmin GTN Trainer 6.41
+#### Garmin GTN Trainer nach Version 6.41 
 
 Das Standardverzeichnis zum Speichern der Flugpläne für die GTN-Einheiten ist für alle Simulatoren
-`C:\ProgramData\Garmin\Trainers\GTN\FPLN`
-Das Verzeichnis wird beim ersten Export von _Little Navmap_ automatisch erstellt, wenn es nicht existiert.
+`C:\ProgramData\Garmin\Trainers\Databases\FPLN`Das Verzeichnis wird beim ersten Export von _Little Navmap_ automatisch erstellt, wenn es nicht existiert.
 
 #### Garmin GTN Trainer 6.21
+
+Das Standardverzeichnis zum Speichern der Flugpläne für die GTN-Einheiten ist
+`C:\ProgramData\Garmin\Trainer\GTN\FPLN` für alle Simulatoren. Sie müssen dieses Verzeichnis manuell anlegen und beim Speichern im Datei-Dialog darauf zugreifen. _Little Navmap_ speichert das ausgewählte Verzeichnis.
 
 Wenn Sie die Trainerversion 6.21 verwenden, lautet der Standardpfad `C:\ProgramData\Garmin\GTN Trainer Data\GTN\FPLN`. Sie müssen dieses Verzeichnis manuell anlegen und beim Speichern im Datei-Dialog darauf zugreifen. _Little Navmap_ merkt sich das ausgewählte Verzeichnis.
 
@@ -229,6 +258,44 @@ Prozeduren können nicht gespeichert werden.
 Dieses Format ist für die Blackbox-Simulationen Airbus für FSX oder P3D. Speichern Sie unter `YOURSIMULATOR/Blackbox Simulation/Company Routes` oder `YOURSIMULATOR/BlackBox Simulation/Airbus A330` in Abhängigkeit vom Fluzeugtyp.
 
 Prozeduren können nicht gespeichert werden.
+### MDX (Leonardo MaddogX) {#Flugplan-Formate-mdx}
+
+Flugplan für das Leonardo MaddogX Flugzeug. Dieses Format kann keine Prozeduren speichern.
+
+### RTE (QualityWings Aircraft) {#flight-plan-formats-qw-rte}
+
+Flugplan für QualityWings-Flugzeuge. Dieses Format kann keine Prozeduren speichern. Der Standort ist abhängig vom Flugzeug.
+
+### EFBR (Electronic Flight Bag) {#flight-plan-formats-efbr}
+
+Flugplan für das[AivlaSoft Electronic Flight Bag] (https://aivlasoft.com). Das Speichern von Prozeduren wird nicht unterstützt.
+
+### RTE (Level-D Aircraft) {#flight-plan-formats-leveld-rte}
+
+Flugplan für Level-D Flugzeuge. Dieses Format kann keine Prozeduren speichern. Speichern Sie dies in `YOURSIMULATOR\Level-D Simulations\navdata\Flightplans`.
+
+### FPL (Feelthere/Wilco Aircraft) {#flight-plan-formate-feel-there}
+
+Das obige Format kann keine Prozeduren speichern. Der Standort ist abhängig vom Flugzeug.
+
+### XML (TDFi Design Boeing 717) {#flight-plan-formats-tdfi}
+
+Flugplanformat für die TDFi Design Boeing 717. Das obige Format kann keine Prozeduren speichern.
+
+### FPL (IvAp) {#flight-plan-formats-ivap}
+### FPL (X-IvAp) {#flight-plan-formats-xivap}
+
+Flugplanformat für die IVAO Online-Netzwerk-Clients[IvAp oder X-IvAp](https://www.ivao.aero/softdev/ivap.asp).
+
+Das Dateiformat für diese beiden Clients unterscheidet sich leicht.
+
+Das Dialogfeld [Flugplan Online Export](ROUTEEXPORT.md) wird angezeigt, in dem Sie alle erforderlichen Informationen hinzufügen können.
+
+### VFP (vPilot) {#flight-plan-formats-vpilot}
+
+Flugplanformat für den Online-Netzwerk-Client VATSIM[vPilot](https://www.vatsim.net/pilots/software).
+
+Das Dialogfeld [Flugplan Online Export](ROUTEEXPORT.md) wird angezeigt, in dem Sie alle erforderlichen Informationen hinzufügen können.
 
 ### UFMC \(Universal Flight Management Computer\) {#flight-plan-formats-ufmc}
 
@@ -252,6 +319,9 @@ Der Flugplan wird als Route und der geflogene Flugzeugpfad als Track inklusive S
 
 Die Route hat für alle Wegpunkte eine Start- und Zielhöhe sowie eine Reiseflughöhe eingestellt. Wegpunkte aller Prozeduren sind in der exportierten Datei enthalten. Beachten Sie, dass die Wegpunkte es nicht erlauben, alle Teile einer Prozedur wie Holdig oder Prozedurturns zu reproduzieren.
 
+### HTML {#flight-plan-formats-html}
+Dies ist kein Flugplanformat. Diese Funktion speichert den aktuellen Flugplan als eine einzige HTML-Webseite mit allen eingebetteten Bildern. Sie können diese Seite in jedem Webbrowser öffnen.
+
 ## Hinweise zu den Garmin-Formaten GFP und FPL {#garmin-notes}
 
 Beim Lesen von exportierten Flugplänen in die Garmin-Geräte können verschiedene Probleme auftreten.
@@ -271,6 +341,8 @@ _Little Navmap_ ermöglicht es, den Garmin-Export so zu ändern, dass alle Wegpu
 
 Der Export von benutzerdefinierten Wegpunkten kann im Optionsdialog auf der Registerkarte `Flugplan` eingeschaltet werden.
 
-[^1]: Das FPR-Format ermöglicht die Speicherung von Luftstraßen und Verfahren, aber dies wird in einer zukünftigen Version von _Little Navmap_ implementiert.
-[^2]: Nutzer Wegpunkte werden beim Laden in das GTN umbenannt.
-[^3]: Nur SID und STAR. Speichern oder Approaches werden nicht unterstützt.
+[^1]: Benutzerdefinierte Wegpunkte werden beim Laden in das GTN umbenannt.
+[^2]: Nur SID und STAR. Das Speichern oder Herangehensweise wird nicht unterstützt.
+[^3]: Zusätzliche Informationen zum Online-Fliegen können vor dem Speichern in einem Dialog hinzugefügt werden.
+
+

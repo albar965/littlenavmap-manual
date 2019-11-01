@@ -1,8 +1,14 @@
-## ![Flight Plan](../images/icons/routedock.png "Flight Plan") Flugplan-Dockfenster {#flight-plan-dock-window}
+### ![Flight Plan Tab](../images/icons/routedock.png "Flight Plan Tab") Flight Plan Tab {#flight-plan-dock-window}
+
+Das Flugplanungsdockfenster enthält die drei Registerkarten: `Flugplan` (dieses Kapitel), [Kraftstoffbericht](AIRCRAFTPERF.md) und [Aktuelle Leistung](AIRCRAFTPERFCOLL.md).
 
 ### Oberer Teil {#upper-part}
 
 Die Oberseite zeigt ein Etikett, das Abflug, Abflugposition \(Parken, Start- und Landebahn oder Hubschrauberlandeplatz\), Ziel, Flugplandistanz, Reisezeit, verwendete Verfahren \(SID, STAR, Anflug und Übergänge\) sowie Flugplantyp enthält.
+
+Das Label zeigt auch Fehlermeldungen an, wenn sich z.B. die Start- und Landebahn eines STAR von der Start- und Landebahn des folgenden Anflugverfahrens unterscheiden.
+
+Die Reisezeit wird nur angezeigt, wenn ein gültiges Leistungsprofil des Flugzeugs geladen ist, für das mindestens die Steig-, Reise- und Sinkgeschwindigkeit eingestellt ist.
 
 Die Reisezeit wird nur angezeigt, wenn ein gültiges Leistungsprofil des Flugzeugs geladen ist.
 
@@ -15,7 +21,7 @@ _**Bild oben:** Header eines Flugplans _`VORDME LITSY`_ hat _`D34`_ als ARINC Na
 Neben dem Label gibt es drei Eingabefelder oben in diesem Dockfenster:
 
 * **Reiseflughöhe \(ft\):** Dieser Wert wird mit dem Flugplan gespeichert und dient auch zur Berechnung eines Airway-Flugplans basierend auf der gegebenen Höhe. Dieses Feld wird automatisch auf die minimale Höhe für einen Flugplan gesetzt, wenn ein Plan entlang der Victor- oder Jet-Airways berechnet wird und Höhenbeschränkungen gefunden wurden. Siehe auch [Berechne für die gegebene Höhe](MENUS.md#calculate-based-on-given-altitude).
-* **Flugplantyp \(IFR or VFR\):** Dieser wird mit dem Flugplan gespeichert..
+* **Flugplantyp \(IFR or VFR\):** Dieser wird mit dem Flugplan gespeichertund ist nur für FSX oder Prepar3D relevant.
 
 ### Flugplan-Tabelle {#flight-plan-table}
 
@@ -23,7 +29,7 @@ Die Tabellenansicht erlaubt die gleichen Operationen wie die Such-Tabellenansich
 
 Alle ausgewählten Elemente in der Flugplantabellenansicht werden auf der Karte durch einen schwarz/grünen Kreis hervorgehoben. Siehe auch [Highlights](MAPDISPLAY.md#highlights) für weitere Informationen. Benutze `Shift+Click` oder `Ctrl+Click` um zwei oder mehr Elemente auszuwählen \(Mehrfachauswahl\).
 
-Der aktive Flugplanabschnitt wird in Magenta hervorgehoben, wenn _Little Navmap_ mit einem Simulator verbunden ist.
+Der aktive Flugplanabschnitt wird in Magenta hervorgehoben, wenn _Little Navmap_ mit einem Simulator verbunden ist, das Benutzerflugzeug in der Luft ist und das Benutzerflugzeug näher als 50 Seemeilen am Flugplan liegt.
 
 Prozedurabschnitte haben eine dunkelblaue Farbe und Abschnitte, die bei einem verpassten Anflug eine dunkelrote Farbe haben.
 
@@ -34,6 +40,25 @@ Luftstraßen werden ebenfalls rot angezeigt, wenn die minimale oder maximale Luf
 ![Waypoint not found](../images/wpnotfound.jpg "Waypoint not found")
 
 _**Bild oben:** Der Wegpunkt _`ALTAG`_ und Teile des Airways _`V324`_konnten nicht in der Datenbank gefunden werden._
+
+Neben dem Label befinden sich zwei Eingabefelder über diesem Dockfenster:
+
+* * **Reiseflughöhe (ft):** Dieser Wert wird mit dem Flugplan gespeichert und dient auch zur Berechnung eines Airwayflugplans basierend auf der gegebenen Höhe. Dieses Feld wird automatisch auf die minimale Höhe für einen Flugplan gesetzt, wenn ein Plan entlang der Victor- oder Jet-Airways berechnet wird und Höhenbeschränkungen gefunden wurden. Siehe [Große Höhe berechnen](MENUS.md#calculate-high-altitude) und die folgenden Kapitel zur Flugplanberechnung.
+* * **Flugplantyp (IFR oder VFR):** Dieser wird mit dem Flugplan gespeichert und ist nur für FSX oder Prepar3D relevant.
+
+#### Flugplantabelle  {#flight-plan-table}
+
+Die Tabellenansicht erlaubt die gleichen Operationen wie die Such-Tabellenansicht, mit Ausnahme der Sortierung. Siehe [hier](SEARCH.md#table-view) für weitere Informationen.
+
+Alle ausgewählten Elemente in der Flugplattentabellenansicht werden auf der Karte durch einen schwarz/grünen Kreis hervorgehoben. Weitere Informationen finden Sie unter[Highlights](MAPDISPLAY.md#highlights). Verwenden Sie `Shift+Klick` oder `Strg+Klick`, um zwei oder mehr Elemente auszuwählen (Mehrfachauswahl).
+
+Der aktive Flugplanabschnitt wird in Magenta hervorgehoben, wenn _Little Navmap_ mit einem Simulator verbunden ist, das Benutzerflugzeug in der Luft ist und das Benutzerflugzeug näher als 50 Seemeilen am Flugplan liegt.
+
+Operationsbeine haben eine dunkelblaue Farbe und Beine, die bei einer verpassten Annäherung eine dunkelrote Farbe haben.
+
+Alternative Flughäfen werden am Ende der Liste mit grauem Text angezeigt. Beachten Sie, dass dem Flugplan mehr als eine Alternative hinzugefügt werden kann. Beine zu den alternativen Flughäfen stammen alle vom Zielort.
+
+
 
 #### Tabellenspalten {#flight-plan-table-columns}
 
@@ -47,18 +72,24 @@ _**Bild oben:** Der Wegpunkt _`ALTAG`_ und Teile des Airways _`V324`_konnten nic
 * `Name`: Name des Flughafens oder des Radios navaid.
 * `Prozedurtyp`: Entweder `SID`, `SID Transition`, `STAR`, `STAR Transition`, `Transition`, `Approach` oder `Missed` plus Name der Prozedur.
 * `Luftstrasse oder Prozedur`: Enthält den Airway-Namen für en route Strecken oder eine Prozeduranweisung..
-* `Beschränkung`: Entweder Mindesthöhe für das Luftstraßensegment auf der Strecke, Verfahrenshöhenbeschränkung oder Verfahrensgeschwindigkeitsbegrenzung. Ein `/` trennt Höhe und Geschwindigkeitsbeschränkung. Für Verfahren gibt es folgende Höhenbeschränkungen:
-  * **Nur die Ziffer:** Fliegen Sie in Höhe oder Geschwindigkeit. Beispiel: `5.400` oder `210`.
-  * **Prefix** `A`: Fliegen Sie in oder über Höhe oder Geschwindigkeit. Beispiel: `A 1.800`.
-  * **Prefix** `B`: Fliegen Sie in oder unter Höhe oder Geschwindigkeit. Beispiel: `B 10.000` oder `B 220`.
-  * **Range:** Fliegen Sie auf oder über Höhe eins und auf oder unter Höhe zwei. Beispiel: `A 8.000, B 10.000`.
-  * **Höhe und Geschwindigkeitsbegrenzung:** Werte getrennt durch `/`. Beispiel: `A 8.000, B 10.000/B220`.
-  * **Nur Geschwindigkeitsbegrenzung:** Ein vorangestelltes `/` bedeutet keine Höhe, sondern eine Geschwindigkeitsbeschränkung. Beispiel: `/B250`.
+* `Beschränkungen`: 
+* * Für die Luftwege:
+    * Beispiel `10.000`: Minimale Höhe für das Atemwegssegment.
+    * Beispiel `0-20.000`: Maximale Atemwegshöhe. Das Minimum ist nicht anwendbar.
+    * Beispiel `10,000-20,000`: Minimale und maximale Atemwegshöhe.
+  * Für Prozeduren: Höhenbegrenzung oder Geschwindigkeitsbegrenzung. Ein `/` trennt Höhe und Geschwindigkeitsbeschränkung. Für Verfahren gibt es folgende Höhenbeschränkungen:
+    * ** Nur Zahl:**Fliegen Sie in Höhe oder Geschwindigkeit. Beispiel: `5,400` oder `210`.
+    * **Präfix** `A`: Fliegen Sie in oder über Höhe oder Geschwindigkeit. Beispiel: `A 1.800`.
+    * **Präfix** `B`: Fliegen Sie in oder unter Höhe oder Geschwindigkeit. Beispiel: `B 10.000` oder `B 220`.
+    * **Reichweite:** Fliegen Sie auf oder über Höhe eins und auf oder unter Höhe zwei. Beispiel: `A 8.000, B 10.000`.
+   * ** Höhen- und Geschwindigkeitsbegrenzung:** Werte getrennt durch `/`. Beispiel: `A 8.000, B 10.000/B220`.
+
 * `Typ`: Typ einer Radio-Navaid. Zeigt `ILS` oder `LOC` für ILS- oder Localizer-Anflüge auf dem letzten Runway-Abschnitt.
 * `Freq.`: Frequenz oder Kanal eines Radio-Navaids. Zeigt auch die ILS- oder Localizer-Frequenz für entsprechende Anflüge auf der letzten Runway-Abschnitt
 * `Reichweite`: Reichweite einer Radio-Navaid, falls vorhanden.
 * `Kurs °M:`** Dies ist der Startkurs der Großkreisroute, die die beiden Wegpunkte der Etappe verbindet. Verwenden Sie diesen Kurs bei dem Abflug, wenn Sie lange Strecken ohne Navids zurücklegen. Beachten Sie, dass Sie Ihren Kurs ständig ändern müssen, wenn Sie entlang einer großen Kreislinie fliegen.
 * `Direkt °M:`** Dies ist der konstante Verlauf der Rhumb-Linie, die zwei Wegpunkte eines Weges verbindet. Je nach Route und Entfernung kann sie vom Verlauf der Großkreislinie abweichen. Verwenden Sie diesen Kurs, wenn Sie entlang der Luftwege oder zu VOR- oder NDB-Stationen fliegen. Im Gegensatz zum Kurs, der vom GPS-Gerät des Flugsimulators angezeigt wird, erhalten Sie so die genaue radiale Position, wenn Sie sich einem VOR oder NDB in einem Flugplan nähern.
+* `Kurs °T:` und `Direkt °T:`** Das gleiche wie die beiden obigen Felder, aber mit echtem Kurs. Verwenden Sie dies in Bereichen mit hoher magnetischer Variation.
 * `Distanz`: Entfernung der Flugplanstrecke.
 * `Verbleibend`: Verbleibende Entfernung zum Zielflughafen oder Verfahrensendpunkt \(normalerweise die Start- und Landebahn\).
 * `Abschnittszeit`: Flugzeit für diese Etappe. Berechnet auf der Grundlage des ausgewählten Leistungsprofils des Flugzeugs. \(siehe auch [Flugzeug-Performance](AIRCRAFTPERF.md)\). Dies ist ein statischer Wert und wird während des Fluges nicht aktualisiert. Leer, wenn die Leistungsberechnung fehlgeschlagen ist.
@@ -69,6 +100,61 @@ _**Bild oben:** Der Wegpunkt _`ALTAG`_ und Teile des Airways _`V324`_konnten nic
 ![Flight Plan](../images/flightplan.jpg "Flight Plan")
 
 _**Bild oben:** Das _`Flugpan`_ Dock Fenster. Der Flugplan verwendet eine SID für den Abflug und eine STAR, eine Transition und einen Approach für die Ankunft.._
+
+#### Spaltenauswahl {#Flugplan-Tabellenspalten}
+
+Wählen Sie im Kontextmenü der Flugplattentabelle "Sichtbare Spalten auswählen", um die Tabelle anzupassen. Sie können die Spalten in der Tabelle weiterhin verschieben und in der Größe ändern. Alle Änderungen werden gespeichert.
+
+![Spaltenauswahl Flugplan](../images/flightplan_columns.jpg "Spaltenauswahl Flugplan")
+
+_**Bild oben:** Der Spaltenauswahldialog des Flugplans mit Tooltip._*.
+
+#### Fehleranzeige {#flight-plan-table-error}
+
+Wenn ein Wegpunkt eines Flugplans in der Datenbank nicht gefunden wird, wird er rot angezeigt. Dies kann passieren, wenn die verwendeten AIRAC-Zyklen nicht übereinstimmen. Gleiches gilt für die Atemwege. Die Position auf der Karte ist noch korrekt.
+
+Die Airways werden auch rot angezeigt, wenn die minimale Höhe, die maximale Höhe oder die One-Way-Beschränkungen verletzt werden.
+
+Fahren Sie mit der Maus über ein Feld in der Tabelle, um einen Tooltip mit weiteren Informationen zum Fehler zu sehen.
+
+Beachten Sie, dass Flugpläne in _Little Navmap_ noch verwendbar sind, obwohl das Speichern und Exportieren in andere Formate eingeschränkt ist und zu unerwarteten Ergebnissen führen kann.
+
+![Flugplanfehler](../images/flightplan_errors.jpg "Flugplanfehler")
+
+_**Bild oben:** Die `Flugplanung` mit drei verschiedenen Tooltips, die Fehler anzeigen.
+
+![Flugplanfehlerverfahren](../Bilder/Flugplanfehler2.jpg "Flugplanfehlerverfahren")
+
+_**Bild oben:** Tooltip zur Fehlermeldung bei Verletzungen von Höhenbeschränkungen._
+
+### Magnetische Deklination {#magnetische-Deklination}
+
+_Little Navmap_ verwendet die [magnetische Deklination](https://en.wikipedia.org/wiki/Magnetic_declination), die bei VOR-Stationen oder der tatsächlichen Deklination der Umgebung gespeichert ist. Letzteres wird vom Programm mit Hilfe des Weltmagnetmodus berechnet. ([WMM](https://en.wikipedia.org/wiki/World_Magnetic_Model)) oder aus der Datenbank des Simulators geladen.
+
+Beachten Sie, dass die magnetische Deklination eines VOR (auch: Kalibrierung für VOR, VORDME und VORTAC) von der tatsächlichen Deklination in einem Simulatorbereich abweichen kann. Die Kalibrierung eines VOR könnte sehr alt sein, während sich die tatsächliche Deklination in der Umgebung durch die Wanderung des Magnetpols inzwischen verändert hat. Daher können die Werte des magnetischen Verlaufs abweichen. Dies kann zu seltsamen Kurslesen in den Flugplänen führen.
+
+_Little Navmap_ verwendet die Deklination eines VOR, um den ein- und ausgehenden magnetischen Kurs eines Flugplanabschnitts zu und von diesem VOR zu berechnen. Dies ermöglicht es dem Piloten, die VOR-Radiale zur Navigation zu nutzen. Für alle anderen Etappen wird die tatsächliche Deklination der Umgebung verwendet.
+
+Sie können die Verwendung der VOR-Deklination im Optionsdialog auf der Seite `Flugplan` deaktivieren, indem Sie `Deklination von VOR und anderen Radionavids ignorieren` aktivieren. Dabei wird die Deklination der Umgebung für alle Berechnungen verwendet. Sie können dies verwenden, wenn Sie ausschließlich mit GPS fliegen und VOR-Stationen ignorieren.
+
+**Beispiele unten:** Ein Flugplan, der das VORTAC Battle Ground (BTG) `überquert, wurde zuletzt 1975 ([Quelle](http://www.pilotnav.com/navaid/faa-2529)) mit einer Deklination von 21° Ost kalibriert, während die Umgebung eine tatsächliche Deklination von 15,2° Ost aufweist. Die aktuelle Deklination sehen Sie unter dem Mauszeiger in der Statusleiste von _Little Navmap_.
+
+Nachfolgend ein Flugplan mit drei Etappen, die alle einen wahren Kurs von 90° haben.
+
+**Beispiel mit `Ignorieren der Deklination von VOR und anderen Radionavids ignorieren` nicht angehakt:**
+
+![Magnetische Deklination Ein](../images/magvarenabled.jpg "Magnetische Deklination Ein")
+
+_**Bild oben:** Beachten Sie den Kursunterschied beim Fliegen von und nach `BTG` gegenüber dem Magnetkurs beim Fliegen nach `YIPYU`. Der Magnetkurs in- und outbound zu/von `BTG` wird basierend auf der Stationsdeklination 21° Ost berechnet, während der Kurs zu `YIPYU` auf 15,2° Ost basiert.
+
+**Beispiel mit `Ignorieren der Deklination von VOR und anderen Radionavids ignorieren` angekreuzt:**
+
+![Magnetische Deklination Aus](../Bilder/magvardisabled.jpg "Magnetische Deklination Aus")
+
+Alle magnetischen Kurswerte sind gleich, da die Umgebungsdeklination von 15,2° Ost zur Berechnung des magnetischen Kurses für alle Beine herangezogen wird._
+
+Siehe auch [Magnetische Deklination](SCENERY.md#magnetic-declination) für weitere Informationen über Deklinationswerte und Szenen-Datenbanken.
+
 
 ### Mausklicks {#mouse-clicks}
 
@@ -85,6 +171,14 @@ Alle Markierungen in der Tabelle aufheben und alle hervorgehobenen Kreise aus de
 #### ![Show Information](../images/icons/globals.png "Show Information") Informationen anzeigen {#show-information-1}
 
 Gleich wie bei dem  [Karten-Kontextmenü](MAPDISPLAY.md#map-context-menu).
+
+##### ![Show Procedures](../images/icons/approach.png "Show Procedures") Prozeduren anzeigen {#Show-Procedures}
+
+Wie im Kontextmenü [Karte](MAPDISPLAY.md#Show-Procedures). Nur für Flughäfen mit Verfahren zugelassen.
+
+#### ![Create Approach](../images/icons/approachcustom.png "Create Approach") Anflug erstellen {#show-approach-custom}
+
+Wie im Kontextmenü [Map Context Menu](MAPDISPLAY.md#show approach-custom). Nur für Flughäfen mit Verfahren zugelassen.
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Auf der Karte zeigen {#show-on-map}
 
@@ -112,9 +206,9 @@ Alle ausgewählten Flugplanabschnitte löschen. Nutze `Undo` wenn Sie versehentl
 
 Die gesamte Prozedur wird gelöscht, wenn die ausgewählte Flugplanstrecke Teil einer Prozedur ist. Das Löschen einer Prozedur löscht auch deren Übergang.
 
-#### ![Edit Position](../images/icons/routestring.png "Edit Position") Bearbeite Position {#edit-name-of-user-waypoint}
+#### ![Edit Position](../images/icons/routestring.png "Edit Position") Bearbeite Flugplan-Position {#edit-name-of-user-waypoint}
 
-Ermöglicht das Ändern des Namens oder der Koordinaten eines benutzerdefinierten Wegpunktes. Die Länge des Namens ist beim Speichern auf 10 Zeichen begrenzt. Siehe auch [Bearbeite Flugplanposition](EDITFPPOSITION.md).
+Ermöglicht das Ändern des Namens oder der Koordinaten eines benutzerdefinierten Wegpunktes eines Flugplanes. Die Länge des Namens ist beim Speichern auf 10 Zeichen begrenzt. Siehe auch [Bearbeite Flugplanposition](EDITFPPOSITION.md).
 
 #### ![Insert Flight Plan before](../images/icons/fileinsert.png "Insert Flight Plan before") Füge Flugplan vor ... ein {#insert-flight-plan}
 
@@ -165,6 +259,8 @@ Obwohl nicht ganz realistisch, ist dies ein sinnvoller Lösungsweg, bis _Little 
 
 Das Gleiche wie [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
 
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Entfernungsringe auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Benutzerfunktionen`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Zeige Reichweite für Navigationsringe {#show-navaid-range-1}
 
 Zeigt die Entfernungsringe für alle ausgewählten Radionavigatoren im Flugplan an. Wählen Sie einfach alle Teilstrecken des Flugplans aus und verwenden Sie diese Funktion, um für jede Funk-Navaid im Flugplan einen Reichweitenkreis anzuzeigen.
@@ -173,9 +269,21 @@ Sonst das Gleiche wie im [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
 
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Platzrunde anzeigen {#show-traffic-pattern}
 
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Entfernungsringe auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Benutzerfunktionen`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flughafen klicken. Zeigt einen Dialog an, der es ermöglicht, eine Platzrunde auf der Karte anzuzeigen und anzupassen.
 
 Siehe [Platzrunde anzeigen](TRAFFICPATTERN.md).
+
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Verkehrsmuster auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Benutzerfunktionen`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
+##### ![Display Holding](../images/icons/hold.png "Display Holding") Display Holding Holding {#holding}
+
+Gleich wie das Kontextmenü[Karte](MAPDISPLAY.md#holding).
+
+Siehe auch [Holding](HOLD.md).
+
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Bestände auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Benutzerfunktionen`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
 
 #### ![Copy](../images/icons/copy.png "Copy") Kopieren {#copy-0}
 
@@ -192,6 +300,10 @@ Deaktiviert alle aktuell ausgewählten Flugplanstrecken und entfernt alle Highli
 #### ![Reset View](../images/icons/cleartable.png "Reset View") Ansicht zurücksetzen {#reset-view-0}
 
 Setzt die Spaltenreihenfolge und die Spaltenbreiten auf den Standard zurück.
+
+##### Sichtbare Spalten auswählen
+
+Siehe Kapitel [Tabellenspaltenauswahl](#flight-plan-table-columns) oben.
 
 #### ![Set Center for Distance Search](../images/icons/mark.png "Set Center for Distance Search") Zentrum für Distanzsuche setzen {#set-center-for-distance-search-1}
 

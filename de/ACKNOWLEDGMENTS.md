@@ -1,4 +1,4 @@
-## Danksagungen {#acknowledgments}
+## Acknowledgments {#acknowledgments}
 
 Ein Dankeschön geht an alle, die mich unterstützen, mir Ihre Log-Dateien, Bildschirmfotos, Ideen für Verbesserungen, freuntliche Nachrichten, Spenden um mehr zukommen lassen.
 
@@ -17,7 +17,17 @@ Danke an Jose von [fsAerodata](https://www.fsaerodata.com/) für seine nette Hil
 
 Die Französische übersetzung des Programms wurde von Patrick JUNG alias Patbest durchgeführt. Danke!
 
-Vielen Dank an Karl Wichelmann, Stephan Leukert und merspieler für die deutsche Übersetzung des Benutzerhandbuches.
+Vielen	Dank	an	Karl	Wichelmann,	Stephan	Leukert	und	merspieler	für	die	deutsche	Übersetzung	des	Benutzerhandbuches.
+
+Dank an Daniel "Wolf" ([wolfinformatica.com](http://wolfinformatica.com)) für die spanische Übersetzung.
+
+Dank an Alfredo alias _fred_, Josemi alias _aquileo_ und Emilio alias _zxplane_ von [X-PLANE.es](http://www.x-plane.es/) für die spanische Ünersetzung des Handuches.
+
+Vielen Dank an Valerio Messina und Flavio Borgna für die italienische Übersetzung.
+
+Dank an Eddy Crequie für die niederländische Übersetzung.
+
+Ein herzliches Dankeschön und Jannik Prinz für die Einrichtung der Tavis CI-Builds.
 
 Danke and die Beta-Tester für ihre Mühe, Geduld und Ideen: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo und Sam.
 

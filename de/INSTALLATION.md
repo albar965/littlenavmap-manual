@@ -20,19 +20,10 @@ Entpacken Sie das Zip-Archiv in einen Ordner wie z.B. `c:\Users\YOURNAME\Documen
 
 **Siehe [Erster Start](INTRO.md#first-start) für weitere Informationen zum ersten Start nach der Installation.**
 
-In einigen Fällen müssen Sie das Programm [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784) installieren.
-
-**Installieren Sie das Visual C++ Redistributable Package, wenn Sie eine Warnung erhalten, dass das SSL-Subsystem nicht initialisiert wird. Das Programm kann keine verschlüsselten Netzwerkverbindungen \(z.B. HTTPS\) verwenden, die benötigt werden, um nach Updates zu suchen oder um Online-Karten zu laden**
-
-**Installieren Sie sowohl 32 Bit \(**`vcredist_x86.exe`**\) als auch 64 bit \(**`vcredist_x64.exe`**\) Versionen. **
-
-Normalerweise ist dies bereits installiert, da viele andere Programme es benötigen.
-
-Sie müssen die Redistributable auch installieren, wenn Sie einen Fehler wie z.B. `Error while checking for updates ... Error creating SSL context` erhalten.
+Ich empfehle das Programm [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784) zu installieren.
 
 _Little Navmap_ ist eine 32-Bit-Anwendung und wurde mit Windows 7, Windows 8 und Windows 10 \(32-Bit und 64-Bit\) getestet. Windows XP wird nicht unterstützt.
 
-Weiterverteilbare Pakete für alle Versionen finden Sie hier: [The latest supported Visual C++ downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
 #### Andere Simulatoren als FSX SP2 {#other-simulators-than-fsx-sp2}
 
@@ -81,7 +72,7 @@ Das Plugin ist nur für 64-Bit verfügbar und für Windows, MacOS und Linux.
 
 ### Zusätzliche Programme
 
-Das heruntergeladene *Little Navmap*-Archiv enthält zwei zusätzliche Verzeichnisse \(oder Applikationen für macOS\):
+Das heruntergeladene *Little Navmap*-Archiv enthält zwei zusätzliche Verzeichnisse (oder Applikationen für macOS):
 
 `Little Navconnect`: Eine vollständige Kopie des Programms, das Remote-Verbindungen für FSX, P3D und X-Plane ermöglicht.
 

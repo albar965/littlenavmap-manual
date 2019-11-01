@@ -10,6 +10,8 @@
 
 ### Benutzerschnittstelle
 
+* [Dock Windows](DOCKWINDOWS.md)
+* [Tabs](TABS.md)
 * [Menüs und Symbolleisten](MENUS.md)
 * [Statusleiste](MENUS.md#statusbar)
 * [Koordinatenformate](COORDINATES.md)
@@ -22,6 +24,9 @@
 * [Sonnenschatten](SUNSHADOW.md)
 * [Platzrunde](TRAFFICPATTERN.md)
 * [Legende](LEGEND.md)
+* [Holding](HOLD.md)
+* [Image Export](IMAGEEXPORT.md)
+
 
 ### Suche
 
@@ -34,7 +39,9 @@
 
 * [Dockfenster Flugplan](FLIGHTPLAN.md)
 * [Prozeduren](APPROACHES.md)
+* [Benutzerdefinierter Approach](CUSTOMPROCEDURE.md)
 * [Position Bearbeiten](EDITFPPOSITION.md)
+* [Reset für neuen Flug](RESET.md)
 * [Routenbeschreibung](ROUTEDESCR.md)
 * [Flugplan bearbeiten](MAPFPEDIT.md)
 * [Flugplanformate](FLIGHTPLANFMT.md)
@@ -45,6 +52,12 @@
 
 * [Übersicht](AIRCRAFTPERF.md)
 * [Bearbeiten](AIRCRAFTPERFEDIT.md)
+* [Sammeln](AIRCRAFTPERFCOLL.md)
+* [Mischen](AIRCRAFTPERFMERGE.md)
+
+### Logbook
+
+* [Logbook](LOGBOOK.md)
 
 ### Informationen
 
@@ -62,6 +75,7 @@
 
 * [Dialog Szeneriebibliothek laden](SCENERY.md)
 * [Verbindung zu einem Flugsimulator herstellen](CONNECT.md)
+* [Webserver](WEBSERVER.md)
 * [Nach Updates suchen](UPDATE.md)
 * [Dialog Einstellungen](OPTIONS.md)
 * [Benutzung ohne Flugsimulator-Installation](RUNNOSIM.md)
@@ -71,9 +85,11 @@
 * [Allgemeines](TUTORIALS.md)
 * [Erstellen eines VFR-Flugplans](TUTORIALVFR.md)
 * [Erstellen eines IFR-Flugplans mit Anflugverfahren](TUTORIALIFR.md)
+* [Flugzeugleistung erstellen](TUTORIALPERF.md)
 
 ### Anhang
 
+* [Tastenkombinationen](SHORTCUTS.md)
 * [Anpassen](CUSTOMIZE.md)
 * [Kartenthemen erstellen](MAPTHEMES.md)
 * [Dateien und Pfade](FILES.md)

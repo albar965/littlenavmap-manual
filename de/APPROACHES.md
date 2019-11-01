@@ -29,11 +29,23 @@ Beachten Sie, dass Übergänge in Verbindung mit einem Anflug, einer SID oder ei
 
 Prozedurinformationen werden zusammen mit einem Flugplan als Anmerkung in der PLN-Datei gespeichert und beim Laden des Flugplans von _Little Navmap_ wiederhergestellt.
 
- Prozedur-Wegpunkte sind von allen Flugplanformaten standardmäßig ausgeschlossen. Sie müssen im Simulator das GPS oder FMS  verwenden, um Prozeduren auszuwählen.
+Prozedur-Wegpunkte sind von allen Flugplanformaten standardmäßig ausgeschlossen. Sie müssen im Simulator das GPS oder FMS  verwenden, um Prozeduren auszuwählen.
 
 Prozedur-Wegpunkte werden nicht im Flugplan gespeichert, da das PLN-Format nicht alle verschiedenen Streckentypen unterstützt und der Flugsimulator sie nicht korrekt darstellen kann. Wählen Sie die Prozeduren bei Bedarf manuell in Ihrem GPS oder FMC aus.
 
 Sie können das Speichern von Wegpunkten aktivieren, indem Sie die Menüpunkte [Wegpunkte für Anflüge speichern](MENUS.md#Export-Flugplan-Anflug-Wegpunkte) und/oder [Wegpunkte für SID und STAR speichern](MENUS.md#Export-Flugplan-Sid-Star-Wegpunkte) markieren.
+
+**Es ist nicht möglich, einen Anflug oder STAR einem alternativen Flughafen zuzuordnen. Legen Sie einen neuen Flugplan für die alternative Reise an, wenn Sie dies wünschen.**
+
+### Anflug erstellen {#procedures-custom}.
+
+Ein benutzerdefinierter Anflug kann für alle Flughäfen erstellt und angewendet werden, auch für kleine Landebahnen, die keine Anflugverfahren anbieten.
+
+Dieser benutzerdefinierte Anflug besteht aus einem Endanflugabschnitt und kann durch Änderung von Höhe und Länge angepasst werden. Dieser Anflug ermöglicht es _Little Navmap_, vertikale Orientierungen zu geben und ILS- und/oder VASI-Neigung am Zielort anzuzeigen.
+
+Mehr über diese Art von Ansatz erfahren Sie im Kapitel [Benutzerdefinierter Anflug](CUSTOMPROCEDURE.md).
+
+
 
 ### Eine Prozedur in den Flugplan einfügen {#procedures-insert}
 
@@ -108,7 +120,7 @@ Sie können die nächste Teilstrecke manuell aktivieren, wenn Sie die Schleife n
 
 
 
-#### Wendeprozeduren {#procedures-turns}.
+#### Procedure Turns {#procedures-turns}.
 
 
 Die Daten des Flugsimulators verschieben den Wendepunkt einer Prozedur um 10 Seemeilen vom Fix entfernt, der normalerweise zu weit liegt.
@@ -139,9 +151,18 @@ Alle Prozedurabschnitte, mit Ausnahme von Warteschleifen und Wendeprozeduren, we
 
 Alle in *Little Navmap* gezeigten Prozedur Leg-Typen \(`Track to Fix`, `Initial Fix` und mehr\) basieren auf dem ARINC 424 Pfad-Terminator-Konzept. Eine tiefere Kenntnis dieser Leg-Typen ist für den Simulatorpiloten nicht wichtig, mit Ausnahme von zwei Typen, die durch *Little Navmap* hinzugefügt wurden.
 
+Fünf weitere Typen werden von *Little Navmap* verwendet:
+
 * `Start of Procedure`: Dieser Streckenabschnitt wird hinzugefügt, wenn eine Prozedur nicht mit einem anfänglichen Fix beginnt, sondern mit einem Kurs, einem Heading oder einem Track zu einem Fix. Sie zeigt die Anfangsposition der Prozedur an und ist nicht mit einem Fix verbunden.
 * `Proceed to Runway` in einer SID: Der erste Abschnitt einer SID, der die Startposition auf der Startbahn angibt. Wenn die Start- und Landebahn nicht gefunden wird, kann das Programm auf das Flughafenzentrum zurückfallen. Die Höhenbeschränkung gibt die Höhe der Start- und Landebahn an.
 * `Proceed to Runway` in einem Landeanflug: Dieses Teilstück/Leg wird zu einer Landeprozedur hinzugefügt, um die Kurslinie von einem verpassten Anflugpunkt \(MAP\) bis zum Ende der Landebahn zu zeigen. Sie wird hinzugefügt, wenn ein Landeanflug nicht mit einem Startbahn-Fix endet und eine Höhenbeschränkung von 50 Fuß über der Landebahnschwelle hat.
+* `Circle to Land`: Hinzugefügt zu einem Anflugverfahren, um den Kurs vom verpassten Anflugpunkt zum Flughafen anzuzeigen. Sie wird hinzugefügt, wenn ein Approach nicht mit einer Start- und Landebahnfixierung endet.
+* `Vektoren`: Vektoren verbinden Legs, die von ATC manuell mit ihren Nachfolgern beendet werden, was oft eine erste Lösung ist.
+
+| | |
+| -- | -- |
+Straight in Procedure](../images/proc_straightin.jpg "Straight in Procedure") | | ![Circle to Land](../images/proc_ctl.jpg "Circle to Land") | |
+| Bild oben:** `Straight In` Beispiel: `ENSH` Approach `LOC FL01 (L01)` auf Start- und Landebahn 01. Die weiß/orange gestrichelte Linie ist das gerade Leg. `ML01` ist die MAP. Wenn die Start- und Landebahn bei `ML01` nicht sichtbar ist, biegen Sie links ab, um sie zu verlassen._ | _**Bild oben:** `Circle to Land` im Beispiel: `LSZC RNAV-A KUSIX (RNVA)`. Die weiß/orange gestrichelte Linie ist der Circle to Land-Abschnitt. ZC701` ist die MAP. Für diese Etappe wird keine Anleitung gegeben. Sie müssen um den Berg herum navigieren, um zu den Start- und Landebahnen 06 oder 24 zu gelangen._|
 
 ### Fix-Typen in einer Prozedur {#procedures-fix-types}
 
@@ -149,6 +170,8 @@ Alle in *Little Navmap* gezeigten Prozedur Leg-Typen \(`Track to Fix`, `Initial 
 * **Radial und Entfernung:** Beispiel: `WIK/7nm/291°M`. Ein Fix, definiert durch einen Kurs oder Steuerkurs und durch die Entfernung zu einem Navaid.
 * **Entfernung zu DME:** Beispiel: `WIK/9nm`. Dieser Fix wird durch einen Steuerkurs oder einen Track definiert, die beim Erreichen einer DME-Distanz beendet wird.
 * `Intercept Course to Fix`: Fangen Sie einen Kurs zum nächsten Fix in einem Winkel von etwa 45 Grad ein.
+* Kurs/Führung zum radialen Abschluss": Beispiel: `LPD/135°M`. Biegen Sie nach links oder rechts ab, um einen radialen Radio-Navaid abzufangen.
+* `Course/Heading to radial termination`: Beispiel: `LPD/135°M`. Biegen Sie nach links oder rechts ab, um einen radialen Radio-Navaid abzufangen.
 * `Intercept Leg`: Fangen Sie das nächste Landeanflugstrecke bei einem Kurs von etwa 45 Grad ein.
 * `Altitude`: Ein Leg oder Warteschleife , der durch Erreichen einer bestimmten Flughöhe beendet wird und wird meist bei verpassten Anflügen verwendet. Da die Entfernung vom Flugzeug abhängt, werden für diese Strecke 2 Seemeilen Länge verwendet. Sie können die Linie ignorieren und zur nächsten Strecke übergehen, sobald die Flughöhenkriterien erfüllt sind.
 * `Manual`: Fliegen Sie einen Steuerkurs, einen Track oder eine Warteschleife, bis er manuell von ATC beendet wird.

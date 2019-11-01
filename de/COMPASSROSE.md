@@ -1,29 +1,35 @@
-## Kompassrose{#compass-rose}
+## ![Compass Rose](../images/icons/compassrose.png "Compass Rose") Compass Rose {#compass-rose}
 
-Die Kompassrose zeigt den geographischen Norden, den magnetischen Norden, die Flugrichtung und die Flugbahn an.
+The compass rose indicates true north, magnetic north, aircraft heading and aircraft track.
 
-Wenn _Little Navmap_ an einen Simulator angeschlossen ist, werden Steuerkurs, Track, Distanzringe und Marker angezeigt. Die Rose ist um das Simulatorflugzeug zentriert, wenn es angeschlossen ist.
+User aircraft heading, track, distance rings and markers are shown if _Little Navmap_ is connected to a simulator. The rose is centered around the user aircraft if connected.
 
-Die Kompassrose wird in der aktuellen Ansicht zentriert gehalten, wenn sie nicht mit einem Simulator verbunden ist. Die magnetische Deklination basiert auf der Deklination in der Mitte.
+The compass rose is kept centered in the current view if not connected to a simulator. Magnetic declination is based on the declination in the center.
 
-Die Größe ist an die Größe der Kartenansicht angepasst, jedoch nicht größer als 1000 nm und nicht kleiner als 4 nm.
+The size is adapted to the map view size but not larger than 1000 nm and not smaller than 4 nm.
 
-Die Linienstärke kann im Dialog `Optionen` auf der Registerkarte `Kartendarstellung` geändert werden.
+Line thickness and other display options can be changed in dialog `Options` on the tab `Map Display`.
 
-### Indikatoren
+The colors for flight plan leg course and crab angle indicator depend on settings for active flight plan leg which can be changed in the dialog `Options` on tab `Map Display`.
 
-![True North](../images/legend/compass_rose_true_north.png "True North") geographischer Norden.
+![Compass Rose Display Options](../images/compass_rose_opts.jpg "Compass Rose Display Options")
 
-![Magnetischer Norden](../images/legend/compass_rose_mag_north.png "Magnetischer Norden") Magnetischer Norden.
+_**Picture above:** Compass rose display settings in options dialog._
 
-![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") Distanzkreise und Markierungen vom Simulatorflugzeug wenn verbunden.
+### Indicators
 
-![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") Die durchgezogene Linie zeigt die Flugzeugspur in Grad magnetisch an, wenn verbunden.
+| | |
+| --- | --- |
+| ![True North](../images/legend/compass_rose_true_north.png "True North") | True north. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Magnetic north. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Distance circles and marks from user aircraft if connected. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Solid line shows aircraft track in degrees magnetic if connected. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Dashed line shows aircraft heading if connected. |
+| ![Flight Plan Leg Course](../images/legend/compass_rose_leg.png "Flight Plan Leg Course") | Magenta line segment shows the course to next waypoint of the active flight plan leg. Hidden if no flight plan loaded. |
+| ![Crab Angle](../images/legend/compass_rose_crab.png "Crab Angle") | Crab angle indicator. Shows the heading that has to be flown towards the next waypoint of the active flight plan leg considering cross wind. Hidden if no flight plan loaded. |
 
-![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") Die gestrichelte Linie zeigt den Steuerkurs des Flugzeugs in Grad magnetisch an, wenn verbunden.
-
-### Beispiele
+### Examples
 | | |
 | --- | --- |
 | ![Compass Rose](../images/compass_rose.jpg "Compass Rose") | ![Compass Rose Aircraft](../images/compass_rose_aircraft.jpg "Compass Rose with Aircraft") |
-| _**Bild oben:** Kompassrose ohne Simulatoranschluss._ | _**Bild oben:** Kompassrose zentriert um das Simulatorflugzeug._ |
+| _**Picture above:** Compass rose without simulator connection. Distance rings disabled._ | _**Picture above:** Compass rose centered around user aircraft. No flight plan loaded. Therefore, crab angle and next waypoint indicators hidden._ |

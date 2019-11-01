@@ -2,13 +2,18 @@
 
 _Little Navmap_ kann ein Flughafen-Platzrunde als Orientierungshilfe auf der Karte anzeigen.
 
-Klicken Sie mit der rechten Maustaste auf einen Flughafen in der Karte, Flugplattentabelle oder Flughafen-Suchergebnistabelle und wählen Sie[ Platzrunde anzeigen](MAPDISPLAY.md#show-traffic-pattern).
+Klicken Sie mit der rechten Maustaste auf einen Flughafen in der Karte, Flugplattentabelle oder Flughafen-Suchergebnistabelle und wählen Sie [ Platzrunde anzeigen](MAPDISPLAY.md#show-traffic-pattern).
 
-Es wird ein Dialogfeld angezeigt, in dem Sie eine Start- und Landebahn auswählen und das Profil anpassen können.
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Platzrunden auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
 
-Der Titel zeigt den Flughafennamen, die ICAO-Flughafenidentität und die Höhe.
+_Little Navmap_ zeigt einen Tooltip mit Informationen über die Platzrunde, wenn Sie mit der Maus über den Hotspot (weißer gefüllter Kreis) an der Pistenschwelle fahren.
 
-* `Runway`: Wählen Sie hier die Start- und Landebahn aus. Zeigt Länge und Oberflächentyp an. Das folgende Etikett zeigt Name, Länge, Breite, Magnetkopf, Oberfläche und Lichtstatus der aktuell ausgewählten Start- und Landebahn.
+### Platzrunden-Dialog
+
+**Eingabe- und Auswahlfelder des Dialogs:**
+
+* Dialoüberschrift: Zeigt den Flughafennamen und seine ICAO-Identität sowie die Feldhöhe an.
+* `Runways`: Liste der verfügbaren Start- und Landebahnen für den Flughafen. Zeigt den Namen der Start- und Landebahn, Länge, Breite, Magnetkopf, Oberfläche und Beleuchtungszustand an.
 * `Richtung`: Wählen Sie diese Option, um zwischen einem Links- oder Rechtsdrehmuster zu wählen. Diese wird bei der Auswahl einer Start- und Landebahn aus dem FSX oder P3D automatisch aktualisiert.
 * `Queranflug 45° zum Runway-Ende`: Berechnet bei Überprüfung automatisch die endgültige Streckenlänge.
 * `Endabschnitt`: Länge der letzten Etappe. Gemessen von der Wende bis zur Endphase bis zur Schwelle der Runway.
@@ -18,6 +23,8 @@ Der Titel zeigt den Flughafennamen, die ICAO-Flughafenidentität und die Höhe.
 * `Linienfarbe`: Farbe der Musterlinien und Beschriftungen.
 
 Platzrunden können entfernt werden, indem Sie entweder `Karte` -&gt; `Alle Bereiche, Messungen und Muster entfernen` wählen oder indem Sie mit der rechten Maustaste auf den Hotspot \(Kreis\) an der Startbahnschwelle klicken.
+
+Ein Klick auf `OK` oder ein Doppelklick in die Liste `Runways` schließt den Dialog und erzeugt die Platzrunde.
 
 Siehe [Legende - Flughafen-Platzrunde](LEGEND.md#airport-traffic-pattern) für Details zu den angezeigten Zahlen in der Vorlage.
 

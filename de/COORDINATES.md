@@ -22,6 +22,16 @@ Ein Leerzeichen ist nur erforderlich, um Breiten- und Längengrad oder Grad/Minu
 
 Dezimaltrennzeichen kann der Punkt \(Englisch\) oder das ortsabhängige Trennzeichen wie z.B. Komma \(Deutsch\) sein.
 
+### Vorzeichenbehaftete Dezimalformate
+
+Für die Koordinatenformate `Breitengrad und Längengrad mit Vorzeichen` und `Längengrad und Breitengrad mit Vorzeichen`:
+
+* Breitengrad: Negativ ist Süden und Positiv ist Norden.
+* Längengrad: Negativ ist West und positiv sind Ostwerte.
+
+Die Wahl dieser Anzeigeformate ermöglicht auch die Eingabe von vorzeichenbehafteten Dezimalwerten. Die Lesereihenfolge für Koordinaten ändert sich je nach gewähltem Format auch bei der Eingabe von signierten Zahlen.
+
+
 ###Andere Formate
 
 Diese müssen genau wie in den Beispielen angegeben werden.
@@ -29,7 +39,7 @@ Diese müssen genau wie in den Beispielen angegeben werden.
 * Grad und Minuten: `N44124W122451`, `N14544W017479` oder `S31240E136502`.
 * Grad nur `46N078W`
 * Grad und Minuten `4620N07805W`
-* Grad, Minuten und Sekunden `481200N0112842E` \(Skyvector\)
+* Grad, Minuten und Sekunden `481200N0112842E` (Skyvector)
 * Grad und Minuten im Paar `N6500 W08000` oder `N6500/W08000`.
 NAT-Typ `5020N`
 

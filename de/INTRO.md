@@ -35,7 +35,7 @@ Lesen Sie die beiden folgenden Kapitel, wenn Sie _Little Navmap_ in einem vernet
 
 1. Installieren/Entpacken des gesamten *Little Navmap*-Archivs auf dem aktiven **und** Netzwerkcomputer.
 1. Kopieren Sie *Little Xpconnect* in den Ordner X-Plane Plugins, wenn Sie X-Plane verwenden.
-2. Verwenden Sie *Little Navmap*, um die Szenerie-Datenbank auf dem Flugcomputer zu generieren. Hauptmenü -&gt; `Szeneriebibliothek` -&gt; `Szeneriebibliothek laden ....`
+2. Verwenden Sie *Little Navmap*, um die Szenerie-Datenbank auf dem Flugcomputer zu generieren. Hauptmenü -> `Szeneriebibliothek` -> `Szeneriebibliothek laden ....`
 3. Kopieren Sie die Datenbankdateien auf den Netzwerkcomputer. Beenden Sie *Little Navmap* vor dem Kopieren.
 
 
@@ -55,21 +55,8 @@ Siehe Links oben für detaillierte Anweisungen.
 
 #### Dockfenster
 
-Die Benutzeroberfläche von _Little Navmap_ besteht aus einem Hauptfenster und mehreren Dockfenstern, die vom Hauptfenster getrennt oder in beliebiger Reihenfolge innerhalb des Hauptfensters angeordnet werden können.
+Weitere Informationen finden Sie in den Kapiteln [Dock Windows](DOCKWINDOWS.md) und [Tabs](TABS.md).
 
-Die angedockten Fenster können in ihrer angedockten Position bewegt und vom Hauptfenster gelöst werden, indem man sie einfach aus dem Hauptfenster zieht, auf die Titelleiste doppelklickt oder auf das Fenstersymbol oben rechts klickt.
-
-Doppelklicken Sie auf die Titelleiste des angedockten Fensters oder klicken Sie erneut auf das Fenstersymbol, um die Fenster wieder in ihre angedockte Position zu bringen.
-
-Alle angedockten Fenster außer dem Kartenfenster können geschlossen werden, wenn sie nicht benötigt werden. Sie können sogar angedockte Fenster aufeinander legen, um eine Tabbed View zu erstellen. Die Registerkarten erscheinen in diesem Fall am unteren Rand des Dockstapels.
-
-**Halten Sie **`Strg`** gedrückt, während Sie auf die Fenstertitelzeile klicken, um zu verhindern, dass ein Fenster in den angedockten Zustand übergeht und schwebend bleibt.**
-
-Symbolleisten sind auch durch Klicken auf den linken Knopf verschiebbar und können auch geschlossen oder vom Hauptfenster gelöst werden.
-
-**Verwenden Sie das ** `Hauptmenu` -&gt; `Fenster`**, um geschlossene Fenster oder Symbolleisten wiederherzustellen.**
-
-**Der **`Hauptmenupunkt` -&gt; `Fenster` -&gt; `Fensterlayout zurücksetzen`**  kann verwendet werden, um den Status und die Positionen aller Dockfenster und Symbolleisten wieder auf den Standardwert zurückzusetzen.**
 
 #### Kontextmenüs
 
@@ -81,6 +68,7 @@ Kontextmenüs finden Sie an den folgenden Stellen:
 * Flugplantabelle - [Flugplattentabelle Ansicht Kontextmenü](FLIGHTPLAN.md#Flugplan-Tabelle-Ansicht Kontextmenü)
 * Flughafen- und navaid-Suchergebnistabellen - [Suchergebnis-Tabelle Ansicht Kontextmenü](SEARCH.md#search-result-table-view-context-menu)
 * Prozeduren-Suchbaum - [Prozedurenbaum Kontextmenü](SEARCHPROCS.md#procedure-context-menu)
+* Höhenprofil: [Elevation Profile](PROFILE.md#context-menu)
 
 Die Kontextmenüs bieten Funktionen, um mehr Informationen über ein Objekt an der angeklickten Position zu erhalten oder einen Flugplan zu erstellen oder zu bearbeiten.
 
@@ -98,7 +86,7 @@ Die meisten Dialoge und einige Dockfenster zeigen Hilfebuttons ![Hilfe](../image
 
 Der Titel des Hauptfensters zeigt den Namen und die Version der Anwendung an.
 
-Außerdem zeigt es die aktuell ausgewählte Simulator-Datenbank \(`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` oder `XP11`\),  den Flugplandateinamen, den Flugzeugleistungsdateinamen mit nachlaufendem `*` für beide an, wenn sich beide geändert haben.
+Außerdem zeigt es die aktuell ausgewählte Simulator-Datenbank (`FSX`, `FSXSE`, `P3DV2`, `P3DV3`, `P3DV4` oder `XP11`),  den Flugplandateinamen, den Flugzeugleistungsdateinamen mit nachlaufendem `*` für beide an, wenn sich beide geändert haben.
 
 Bei Verwendung der Navigraph-Datenbank wird ein `N` angehängt. Beispiel unten für Prepar3D:
 
@@ -122,13 +110,10 @@ _Little Navmap_ zeigt Fehlermeldungen mit weißem Text auf rotem Hintergrund bei
 
 Tooltips zu diesen Fehlermeldungen bieten in einigen Fällen weitere Hilfe.
 
-#### Registerkarten
+#### Aktivierung und Aufrufen von Windows und Tabs
 
-Registerkarten, die über einem Fenster erscheinen, sind fixiert. Ein Tooltip gibt weitere Informationen über die Funktion einer Registerkarte.
+Little Navmap_ öffnet und klappt Dockfenster und Registerkarten für bestimmte Aktionen auf, wie `Datei` -> `Neuer Flugplan` oder `Flugzeug` -> `Open Aircraft Performance ...`, um Verwirrung für neue Benutzer zu vermeiden. Dieses Vorgehen kann im Optionsdialog auf der Registerkarte `Benutzeroberfläche` deaktiviert werden, indem Sie die Option `Zugehörige Fenster bei Aktionen öffnen` deaktiviert werden.
 
-Registerkarten am unteren Rand eines Fensters werden angezeigt, wenn Sie Dockfenster aufeinander legen. Wählen Sie eine Fenstertitelzeile, um ein Fenster aus dem gestapelten Display zu verschieben. Sie können die Reihenfolge dieser Registerkarten ändern, indem Sie sie mit der Maus verschieben.
-
-Das Mausrad ermöglicht es, auf komfortablere Weise zwischen den Registerkarten zu wechseln.
 
 #### Kopieren und Einfügen
 
@@ -167,15 +152,15 @@ Im [Glossar](GLOSSARY1.md) finden Sie Erklärungen zu gängigen Begriffen in die
 
 ### Rating {#rating}
 
-Flughäfen erhalten je nach Einrichtung eine Bewertung von null bis fünf Sternen. Flughäfen ohne Rating gelten als langweilig und werden mit einem grauen Symbol unter allen anderen Flughäfen auf der Karte \(`Empty Airport`\) angezeigt. Dieses Verfahren kann im Dialogfeld `Einstellungen` auf der Registerkarte `Kartendarstellung` deaktiviert werden.
+Flughäfen erhalten je nach Einrichtung eine Bewertung von null bis fünf Sternen. Flughäfen ohne Rating gelten als langweilig und werden mit einem grauen Symbol unter allen anderen Flughäfen auf der Karte (`Empty Airport`) angezeigt. Dieses Verfahren kann im Dialogfeld `Einstellungen` auf der Registerkarte `Kartendarstellung` deaktiviert werden.
 
 Die folgenden Kriterien werden zur Berechnung des Ratings herangezogen. Jeder Gegenstand erhält einen Stern:
 
-  1. Add-on \(oder 3D für X-Plane\)
-  2. Parkpositionen \(Rampe oder Gate\)
+  1. Add-on (oder 3D für X-Plane)
+  2. Parkpositionen (Rampe oder Gate)
   3. Taxiways
   4. Aprons
-  5. Tower Gebäude \(nur wenn mindestens eine der anderen Bedingungen erfüllt ist\).
+  5. Tower Gebäude (nur wenn mindestens eine der anderen Bedingungen erfüllt ist).
 
 Alle Flughäfen, die sich nicht im standardmäßigen `Scenery`-Verzeichnis des FSX/P3D oder im `Custom Scenery`-Verzeichnis von X-Plane befinden, gelten als Zusatzflughäfen, die die Bewertung um einen Stern erhöhen.
 
@@ -186,6 +171,8 @@ Flughäfen in der Datei `Custom Scenery/Global Airports/Earth nav data/apt.dat` 
 _Little Navmap_ enthält eine gebrauchsfertige Datenbank von Navigraph mit Lufträumen, SIDs, STARs und mehr. Die Datenbank kann mit dem _FMS Data Manager_ von Navigraph aktualisiert werden.
 
 Weitere Informationen finden Sie im Kapitel [Navigationsdatenbanken](NAVDATA.md).
+
+**Schließen Sie auf jeden Fall _Little Navmap_, wenn Sie Ihre Datenbanken aktualisieren, kopieren oder ersetzen.  _Little Navmap_ könnte abstürzen oder falsche Daten anzeigen.**
 
 
 #### FSX und Prepar3D
@@ -200,21 +187,5 @@ Weitere Informationen finden Sie im Kapitel [Navigationsdatenbanken](NAVDATA.md)
 Benutzerdefinierte Daten aus den Dateien `user_fix.dat` und `user_nav.dat` werden gelesen und gegebenenfalls in die Datenbank übernommen.
 
 Beachten Sie, dass weder ARINC noch die FAACIFP-Dateien unterstützt werden.
-
-
-### Magnetische Missweisung {#magnetic-declination}
-
-Die kalibrierte magnetische Missweisung eines VOR kann von der tatsächlichen Missweisung in einem Bereich abweichen, wie sie in Wirklichkeit der Fall ist. Daher können die Werte des magnetischen Verlaufs in einigen Fällen abweichen.
-
-
-#### FSX und Prepar3D
-
-Die Deklination zur Berechnung des magnetischen Kurses wird aus der Datei `magdec.bgl` in der Szenen-Datenbank übernommen.
-
-Updates für diese Datei finden Sie hier: [_FSX/P3D Navaids Update_](http://www.aero.sors.fr/navaids3.html).
-
-#### X-Plane
-
-Die Deklinationswerte für X-Plane \(Flughäfen und alle Navaids außer VORs\) werden basierend auf der enthaltenen Datei `magdec.bgl` berechnet, die auf den Werten für Anfang 2017 basiert.
 
 
