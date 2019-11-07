@@ -8,7 +8,7 @@ _Little Navmap_ kann sich direkt verbinden, wenn alle Programme auf dem gleichen
 
 ####Alle Simulatoren
 
-Öffnen Sie den Verbindungsdialog in _Little Navmap_, indem Sie `Hauptmenü` -&gt; `Tools` -&gt; `Flugsimulatorverbindung` auswählen und den Simulator auswählen, zu dem die Verbindung aufgebaut werden soll.
+Öffnen Sie den Verbindungsdialog in _Little Navmap_, indem Sie  `Werkzeuge` -&gt; `Flugsimulatorverbindung` im Hauptmenue wählen und den Simulator auswählen, zu dem die Verbindung aufgebaut werden soll.
 
 ![Little Navmap Connect Dialog](../images/connectlocal.jpg "Little Navmap Connect Dialog")
 
@@ -28,7 +28,7 @@ Deaktivieren Sie `Fetch AI or multiplayer aircraft` oder `Fetch AI or multiplaye
 
 Sie müssen das mitgelieferte *Little Xpconnect* Plugin installieren, um *Little Navmap* als Moving Map mit X-Plane zu verwenden.
 
-Das Plugin ist im Lieferumfang von Little Navmap enthalten und kann auch separat heruntergeladen werden.
+Das Plugin ist im Lieferumfang von _Little Navmap_ enthalten und kann auch separat heruntergeladen werden.
 
 Kopieren Sie das gesamte Plugin-Verzeichnis `Little Xpconnect` in das Verzeichnis `plugins` im Verzeichnis `Resources` in der X-Plane-Installation. Der komplette Pfad sollte wie `.../X-Plane 11/Ressourcen/Plugins/Little Xpconnect` aussehen.
 
@@ -50,7 +50,7 @@ Für X-Plane müssen Sie auch das *Little Xpconnect* Plugin installieren. Siehe 
 
 ####Start _Little Navconnect_ auf dem Simulator-PC {#_connect-start-navconnect}
 
-_Little Navconnect_ wird zusammen mit dem Download-Archiv _Little Navmap_ ausgeliefert. Starten Sie _Little Navconnect_ \(`littlenavconnect.exe`\) auf dem Computer, auf dem der Simulator läuft und notieren Sie sich die Meldung, die im Protokollfenster ausgegeben wird. Sie benötigen nur die farbigen Werte, die Ihnen den Namen und die Adresse des Simulator-PC mitteilen. Sie können die IP-Adresse oder den Hostnamen verwenden.
+_Little Navconnect_ wird zusammen mit dem Download-Archiv _Little Navmap_ ausgeliefert. Starten Sie _Little Navconnect_ (`littlenavconnect.exe`) auf dem Computer, auf dem der Simulator läuft und notieren Sie sich die Meldung, die im Protokollfenster ausgegeben wird. Sie benötigen nur die farbigen Werte, die Ihnen den Namen und die Adresse des Simulator-PC mitteilen. Sie können die IP-Adresse oder den Hostnamen verwenden.
 
 _Little Navconnect_ kann je nach Netzwerkkonfiguration mehrere IP-Adressen oder Hostnamen anzeigen. Dies kann passieren, wenn Sie z.B. Ethernet angeschlossen haben und auch über Wireless LAN verbunden sind. Sie müssen durch Versuche herausfinden, wenn Sie unsicher sind, welche Sie verwenden sollen. Stellen Sie außerdem sicher, dass die Windows-Firewall richtig eingerichtet ist, um die Kommunikation zwischen `littlenavmap.exe` und `littlenavconnect.exe` auf beiden Rechnern zu ermöglichen.
 
@@ -64,7 +64,7 @@ _**Bild oben:** _[_Little Navconnect_](https://albar965.github.io/littlenavconne
 
 #### Start _Little Navmap_ auf dem Client / Remote Computer {#connect-start-navmap}
 
-Öffnen Sie den Verbindungsdialog in _Little Navmap_, indem Sie `Hauptmenü` -&gt; `Tools` -&gt; `Flugsimulatorverbindung` wählen.
+Öffnen Sie den Verbindungsdialog in _Little Navmap_, indem Sie `Tools` -> `Flugsimulatorverbindung` im Hauptmenue wählen.
 
 ![Little Navmap Connect Dialog](../images/connect.jpg "Little Navmap Connect Dialog")
 
@@ -83,7 +83,7 @@ Beachten Sie, dass es eine Weile dauern kann, bis ein Fehler angezeigt wird, wen
 
 Die Auswahl von `Automatisch verbinden` wird empfohlen. Die Startreihenfolge aller drei Programme \(Simulator, _Little Navconnect_ und _Little Navmap_\) spielt keine Rolle, ob dies markiert ist und die Programme werden sich gegenseitig finden.
 
-Deaktivieren Sie `Fetch AI or multiplayer aircraft` oder `Fetch AI or multiplayer ships` in `Tools` -&gt; `Options` von _Little Navconnect_, um die Übertragung dieser Informationen über das Netzwerk zu deaktivieren. Dies kann aus Performancegründen nützlich sein, wenn Sie große Mengen an KI verwenden, diese aber nicht in _Little Navmap_ sehen wollen.
+Deaktivieren Sie `Fetch AI or multiplayer aircraft` oder `Fetch AI or multiplayer ships` in `Tools` -> `Options` von _Little Navconnect_, um die Übertragung dieser Informationen über das Netzwerk zu deaktivieren. Dies kann aus Performancegründen nützlich sein, wenn Sie große Mengen an KI verwenden, diese aber nicht in _Little Navmap_ sehen wollen.
 
 ###Verbindungsdialog-Optionen{#options}
 

@@ -1,4 +1,5 @@
 _book/
+build/
 node_modules/
 book_*.pdf
 .directory

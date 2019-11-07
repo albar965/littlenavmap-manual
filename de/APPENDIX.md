@@ -2,8 +2,8 @@
 
 ### CPU-Zyklen speichern {#save-cycles}
 
-* Dialog `Optionen` -&gt; `Map` -&gt; `Details beim Blättern ...`: Benutze `Normal ...`
-* Dialog `Optionen` -&gt; `Simulatorflugzeug` -&gt; `Simulatorflugzeug-Scrollboxgröße ...`: Verwenden Sie einen höheren Wert, um Kartenaktualisierungen zu reduzieren.
+* Dialog `Optionen` -> `Map` -> `Details beim Blättern ...`: Benutze `Normal ...`
+* Dialog `Optionen` -> `Simulatorflugzeug` -> `Simulatorflugzeug-Scrollboxgröße ...`: Verwenden Sie einen höheren Wert, um Kartenaktualisierungen zu reduzieren.
 * Schließen Sie das Fenster `Flugplan Höhenprofil`. Die gesamte Hintergrundverarbeitung wird gestoppt, wenn es geschlossen wird.
 * Vermeiden Sie Lufträume. Schalten Sie diese mit der Schaltfläche !/./images/icons/airspace.png "Zeige Lufträume") in der Lufträume-Symbolleiste aus.
 * Schalten Sie den gesamten KI-Verkehr im Dialog "Verbinden" aus. Siehe[hier](CONNECT.md#Optionen).
@@ -44,11 +44,10 @@ MapQueryTaxipathCache=100
 ```
 ## Fehlerbehebung {#troubleshoot}
 
-* **Programm stürzt beim Start ab:** Löschen Sie die Einstellungen und die Datenbankdateien. In Windows 7, 8 oder 10 können diese in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel` gefunden werden. Löschen Sie\(oder besser: umbenennen oder verschieben Sie\) die Dateien `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` und das Verzeichnis `little_navmap_db`.
+* **Programm stürzt beim Start ab:** Löschen Sie die Einstellungen und die Datenbankdateien. In Windows 7, 8 oder 10 können diese in `c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel` gefunden werden. Löschen Sie(oder besser: umbenennen oder verschieben Sie) die Dateien `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` und das Verzeichnis `little_navmap_db`.
 Versuchen Sie zuerst, die Datenbank zu löschen, wenn diese das Problem verursacht. Versuchen Sie dann, die Einstellungsdateien zu löschen, wenn das Entfernen der Datenbanken nicht half.
 * **Das Programm startet langsam:** Dies kann passieren, wenn eine Entfernungssuche in einem der Suchtabellen aktiviert ist. Die Suche wird bei jedem Start ausgeführt. Deaktivieren Sie einfach die Entfernungssuche oder setzen Sie die Suchoptionen zurück, um den langsamen Start zu vermeiden.
 * **Online-Karten werden nicht geladen oder aktualisiert:** Überprüfen Sie Ihre Firewall-Einstellungen, wenn Windows ausgehende Verbindungen blockiert. Überprüfen Sie auch, ob der Offline-Modus nicht versehentlich im Menü "Datei" aktiviert wurde. Überprüfen Sie, ob sich _Little Navmap_ mit dem Internet verbinden kann, indem Sie den Optionen-Dialog auf der Registerkarte `Wetter` aufrufen. Verwenden Sie einen der Buttons `Test` für NOAA oder VATSIM Wetter. _Little Navmap_ kann sich mit dem Internet nicht verbinden, wenn diese nicht funktionieren.
-* ** Der Zoom kann zu schnell sein, wenn Sie ein Touchpad** mit _OpenStreetMap_, _OpenTopoMap_ oder einem der anderen Online-Kartenthemes verwenden. Verwenden Sie die Kartenlayouts `Flach`, `Einfach` oder `Atlas` oder verwenden Sie die Overlay-Zoomtasten oder die Tastatur \(`+` und `-`\).
 * **side-by-side Konfigurationsfehler**: Sie betreiben _Little Navmap_ auf einem Computer ohne Simulator \(d.h. ohne SimConnect\) Installation, wenn Sie diesen Fehler erhalten. Verwenden Sie stattdessen `littlenavmap-nosimconnect.exe`, das alle Funktionen außer der direkten Verbindung und dem Laden der Szenen-Datenbank bietet.
 
 ** Hinweis: **`littlenavmap-nosimconnect.exe`** wird ab *Little Navmap* Version 1.4.4 nicht mehr verwendet. Sie können **`littlenavmap.exe`** auf allen Computern verwenden, egal ob SimConnect installiert ist oder nicht.
@@ -71,12 +70,11 @@ Suchen Sie nun nach `APX41080.bgl` und schließen Sie dessen Verzeichnis vom Lad
 * Add-on-Entwickler müssen alle Arten von Workarounds verwenden, um FSX- oder P3D-Beschränkungen zu vermeiden, was bedeutet, dass die Anzeige und Informationen für Add-on-Flughäfen nicht immer korrekt sind. Viele dieser Änderungen werden auch durchgeführt, damit sich die KI korrekt verhält. Typische Beispiele sind: Flughäfen ohne Start- und Landebahnen, Flughäfen mit einer Start- und Landebahnbreite von 0 x 0 ft oder 0 ft, Taxibahnen mit einer Breite von 0 ft, scheinbar geschlossene Rollbahnen, doppelte Flughäfen, doppelte Start- und Landebahnen im Wasser, Rollbahnen im Wasser, Militärgates auf zivilen Flughäfen und vieles mehr.
 * Das Parsen von Routenbeschreibungen kann in seltenen Fällen auch bei bereits berechneten Flugplänen Wegpunkte überspringen. Dies kann durch fragmentierte Luftwege, Fehler in den Quelldaten oder Mehrdeutigkeiten zwischen den Navaids passieren.
 * Einige KML/KMZ-Dateien erscheinen nicht auf der Karte. Das Hinzufügen eines Mittelpunkt-Pushpins zur KML/KMZ-Datei kann dies beheben.
-* Die Abdeckung für Online-Höhen- und _OpenStreetMap_ Hill Shading-Daten ist begrenzt und endet derzeit bei 60 Grad Nord. Verwenden Sie die Kartenmotive _OpenTopoMap_, _OpenMapSurfer_ oder _Stamen Terrain_ mit weltweiter Abdeckung für Bergschattierungen.
+* Die Abdeckung für Online-Höhen- und _OpenStreetMap_ Hill Shading-Daten ist begrenzt und endet derzeit bei 60 Grad Nord. Verwenden Sie die Kartenmotive _OpenTopoMap_ oder _Stamen Terrain_ mit weltweiter Abdeckung für Bergschattierungen.
 * Es gibt Fehler in den Online-Höhenquellendaten (wie in Norditalien, der Poebene oder dem Titicacasee in Peru und Bolivien), die im Höhenprofil des Flugplans angezeigt werden.
 * Die Mercator-Projektion zeigt gelegentliche Darstellungsprobleme in Abhängigkeit von der Zoomdistanz, wie z.B. horizontale Linien in der Nähe des Anti-Meridians oder fehlende Flugplansegmente.
 * Die Marmor-Floating-Landkarten-Overlays auf der Karte können konfiguriert werden, speichern aber nicht alle Einstellungen können gespeichert werden mit Ausnahme ihrer Sichtbarkeit.
-* Flugplan und Luftwege werden mit großen Kreislinien anstelle von Rhumb-Linien gezeichnet. Entfernung und Kurs sind davon nicht betroffen.
-* Magnetische Varianz ist teilweise nicht eingestellt (z.B. VORDME Cambridge Bay YCB\) oder inkonsistent zwischen Flughäfen und benachbarten Navaids. Dies ist ein Fehler in der Quelle.
+* Magnetische Abweichung ist teilweise nicht eingestellt (z.B. VORDME Cambridge Bay YCB) oder inkonsistent zwischen Flughäfen und benachbarten Navaids. Dies ist ein Fehler in der Quelle.
 * Flughäfen sind falsch plaziert (zum Beispiel Cabo San Lucas, MM15 in Mexiko) im Vergleich zu den Hintergrundkarten. Dies ist ein Fehler in den Quelldaten und kann nicht behoben werden.
 * Kartenausdrucke können unscharf sein, da sie von der Bildschirmauflösung abhängen. Als Workaround vergrößern Sie das sichtbare Kartenfenster.
 * Sehr lange Streckenabschnitte können beim Zoomen von der Karte verschwinden. Das Etikett ist aber immer noch sichtbar.
@@ -86,7 +84,7 @@ Suchen Sie nun nach `APX41080.bgl` und schließen Sie dessen Verzeichnis vom Lad
 * Prozeduren werden in manchen Fällen falsch gezeichnet.
 * Das Flughafen-Suchattribut `Prozeduren` funktioniert in der gemischten Datenbank nicht korrekt. Es werden nur Simulatorflughäfen mit Prozeduren angezeigt, anstatt den Navigraph-Flughafenstatus zu verwenden.
 
-## Einen Fehler melden {#how-to-report-a-bug}
+## Wie meldet man einen Fehler? {#how-to-report-a-bug}
 
 Wenn etwas schief geht, schicken Sie mir bitte alle beteiligten Dateien wie KML, PLN oder BGL (wenn das Copyright es erlaubt), _Little Navmap_s Logdatei und die Konfigurationsdatei, die beide im About-Dialog zu finden sind. Meine E-Mail-Adressen werden auch im About-Dialog von _Little Navmap_ angezeigt.
 

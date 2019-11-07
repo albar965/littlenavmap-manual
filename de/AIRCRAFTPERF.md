@@ -1,87 +1,105 @@
 ## ![Aircraft Performance](../images/icons/aircraftperf.png "Aircraft Performance") Flugzeugleistung {#aircraft-performance}
 
-_Little Navmap_ bietet Funktionen zum Bearbeiten, Erstellen und Sammeln von Daten von Flugzeugleistungsprofilen. So können der Treibstoffbedarf, die Flugzeit sowie die Steig- und Abstiegswege ermittelt werden.
+Die Flugzeugleistung und die Treibstoffberichte werden im Dockfenster `Flugplanung` angezeigt.
 
-Durchschnittliche Leistungsdaten wie Geschwindigkeit, vertikale Geschwindigkeit und Kraftstoffdurchfluss werden für die Flugphasen Taxi/Abflug, Steigflug, Reiseflug und Sinkflug ermittelt, um den Kraftstoffbedarf zu berechnen.
+_Little Navmap_ bietet Funktionen zum Bearbeiten, Erstellen und Sammeln von Leistungsprofilen von Flugzeugen. So können der Treibstoffbedarf, die Flugzeit sowie die Steig- und Abstiegswege ermittelt werden.
 
-Eine einfache Einstellung für den Wind in Reiseflughöhe kann verwendet werden, um den Flugplan an das Wetter anzupassen.
+Durchschnittliche Leistungsdaten wie Geschwindigkeit, Vertikalgeschwindigkeit und Kraftstoffdurchfluss werden für die Flugphasen Taxi/Abflug, Steigen, Fahren, Fahren und Sinken verwendet, um den Kraftstoffbedarf zu berechnen.
 
-**Die Leistung des Flugzeugs wird für die folgenden Funktionen verwendet:**.
+Das Programm kann entweder die NOAA-Windvorhersage aus der realen Welt oder die X-Plane-Winde in der Höhe berücksichtigen, um den Kraftstoffbericht zu berechnen. Alternativ kann eine einfache Einstellung für den Wind in Reiseflughöhe verwendet werden, um den Wetterplan anzupassen.
 
-* Berechnung der Flugzeit, die im Header des Flugplans angezeigt wird.
-* Berechnung von Top of Climbing und Top of Descent, die auf der Karte und im Höhenprofil dargestellt sind. Beachten Sie, dass Höhenbeschränkungen in den Verfahren die Höhe der Top of Descent oder Top of Climb-Distanzen beeinflussen können.
-* Treibstoffplanungsbericht in der Registerkarte `Flugzeug` des Dockfensters `Flugplan`.
-* Zeigt den verbleibenden Kraftstoff auf jeder Etappe in der Flugplattentabelle an.
+**Verwandte Kapitel:**
 
-Treibstoff wird sowohl als Gewicht \(`lbs` oder `kg`\) als auch als Volumen \(`gallons`, `liter`\) angezeigt und kann in einer der beiden Einheiten eingegeben werden.
+* [Wetter - Höhenwinde](WEATHER.md#wind): Informationen über den Wind in der Höhe.
+* [Sammlung der Flugzeugleistung](AIRCRAFTPERFCOLL.md): Automatische und permanente Erfassung der Flugzeugleistung im Hintergrund.
+* [Bearbeitung der Flugzeugleistung](AIRCRAFTPERFEDIT.md): Manuelle Leistungsänderung.
+* [Zusammenführung der Flugzeugleistung](AIRCRAFTPERFMERGE.md): Leistungsdaten, die von einem Flug oder einer anderen Datei gesammelt wurden, in den aktuell geladenen zusammenführen.
+
+**Die Leistung des Flugzeugs und die Windsituation in der Höhe werden für die folgenden Funktionen verwendet:**
+
+* Berechnung von top of climb und top of descent, die auf der Karte und im Höhenprofil dargestellt sind. Beachten Sie, dass Wind- und Höhenbeschränkungen in den Verfahren die Höhe des Abstiegs oder die Höhe oder die Steigstrecke beeinflussen können.
+* Kraftstoffplanungsbericht in der Registerkarte `Benzinbericht` des Dockfensters `Flugplanung`.
+* Verbleibender Treibstoff auf jedem Abschnitt der Flugplattentabelle.
+* Verbleibender Kraftstoff am Anfang von Abstieg und Ziel im Reiter "Fortschritt" im Fenster "Informationen" sowie Reisezeiten.
+
+Der Kraftstoff wird sowohl als Gewicht (`lbs` oder `kg`) als auch als Volumen (`gallons`, `liter`) angezeigt und kann unabhängig von den Programmeinstellungen in allen verfügbaren Einheiten eingegeben werden.
+
+Die zusätzliche Anzeige anderer Kraftstoffeinheiten kann im Dialog `Optionen` auf der Registerkarte `Einheiten` aktiviert werden.
 
 Siehe [Top of Climb und Top of Descent Pfad](PROFILE.md#toc-and-tod-paths) für Details zur Berechnung von TOC und TOD.
 
-Rote Warnmeldungen werden angezeigt, wenn die Flugzeugleistung falsche Werte enthält, die _Little Navmap_ davon abhält, den Kraftstoffverbrauch, das Steigen oder Sinken zu berechnen.
+Rote Warnmeldungen werden angezeigt, wenn die Flugzeugleistung falsche Werte enthält, die _Little Navmap_ davon abhalten, den Treibstoffverbrauch, das Steigen oder Sinken zu berechnen. Eine orangefarbene Warnmeldung wird angezeigt, wenn der geflogene Flugzeugtyp nicht mit dem Typ in der Flugzeugleistung übereinstimmt.
 
 ![Aircraft Performance Error](../images/perf_error.jpg "Aircraft Performance Error")
 
-_**Bild oben:** Registerkarte Flugzeugleistung, die einen Fehler anzeigt._
+_**Bild oben:** Registerkarte Aircraft Performance, die einen Fehler über einen fehlenden Wert anzeigt. Das `*` im Tab-Label zeigt nicht gespeicherte Änderungen an._
 
-Ein Standardprofil mit 3 nm pro 1000 ft für Abstiegs- und Aufstiegsregeln und keinem Kraftstoffverbrauch ist Standard. Rote Warnmeldungen werden bei Verwendung angezeigt, da das Profil nicht vollständig ist.
+Ein Standardprofil mit 3 Seemeilen pro 1000 Fuß für Abstiegs- und Aufstiegsregeln und keinem Kraftstoffverbrauch ist Standard. Rote Warnmeldungen werden bei Verwendung angezeigt, da das Profil nicht vollständig ist.
 
-_Little Navmap_ verfügt über Funktionen zur automatischen Erfassung von Leistungsdaten für ein Flugzeug während eines typischen Fluges.
-Dies kann verwendet werden, um ein grundlegendes Leistungsprofil zu erhalten, das manuell angepasst werden kann.
-Siehe unten im Kapitel[ Leistung für den Flug sammeln](#aircraft-performance-collect) für weitere Informationen.
+**Das standardmäßige Leistungsprofil reicht aus, um die Höhe des Anstiegs und des Abstiegs zu berechnen und kann verwendet werden, wenn Sie die Berichte über Kraftstoff und Fahrzeit ignorieren möchten.**
 
-**Beachten Sie, dass die Treibstoff- und Zeitschätzungen im Dockfenster **`Simulatorflugzeug`** auf der Registerkarte **`Fortschritt`** auf dem tatsächlichen Treibstoffverbrauch und der Geschwindigkeit basieren und nicht vom Leistungsprofil des Flugzeugs beeinflusst werden.**
+_Little Navmap_ sammelt Leistungsdaten für ein Flugzeug permanent während des Fluges. Die gesammelten Daten können zusammengeführt oder in das aktuell verwendete oder ein neues Profil kopiert werden, das manuell angepasst werden kann. Das Zusammenführen kann jederzeit erfolgen. Siehe [Aircraft Performance Collection](AIRCRAFTPERFCOLL.md).
 
 ![Aircraft Performance Tab](../images/perf_report.jpg "Aircraft Performance Tab")
 
-_**Bild oben:**  Registerkarte Flugzeugleistung mit Treibstoffplanung und eingegebenem Wind auf Reiseflughöhe. Die _`*`_ im Tab-Label zeigt nicht gespeicherte Änderungen an und die Beschreibung der Performance-Datei enthält einen Weblink._
+_**Bild oben:** Registerkarte Kraftstoffbericht. Der durchschnittliche Gegenwind von 10 Knoten basiert auf der NOAA-Windflugvorhersage und wird auch bei der Kraftstoffberechnung berücksichtigt. Der Treibstoffbedarf für einen alternativen Flughafen wird ebenfalls angezeigt. Die Beschreibung der Leistungsdatei enthält einen Weblink._
 
 ### Dateien {#aircraft-performance-files}
 
-Leistungsprofildateien \(Dateiendung `lnmperf`\) können wie Flugplandateien gespeichert und geladen werden. Die Leistungsdateien können aus einem Dateimanager wie dem Windows Explorer oder dem macOS Finder ausgewählt und in das Hauptfenster _Little Navmap_ gezogen werden, um sie zu laden.
+Leistungsprofildateien (Dateiendung `lnmperf`) können wie Flugplandateien gespeichert und geladen werden. Die Leistungsdateien können aus einem Dateimanager wie dem Windows Explorer oder dem macOS Finder ausgewählt und in das Hauptfenster _Little Navmap_ gezogen werden, um sie zu laden.
 
-**Speichern Sie die Dateien nicht im Verzeichnis **_Little Navmap_**, da sie beim nächsten Update möglicherweise gelöscht werden. Speichern Sie sie weder in **`C:\Program Files`** oder einem seiner Unterverzeichnisse. Speichern Sie die Dateien in Ihrem **`Dokumente`** Ordner oder einem Unterverzeichnis in diesem Ordner.**
+**Speichern Sie die Dateien nicht im Verzeichnis **_Little Navmap_**, da sie bei einem Update möglicherweise gelöscht werden. Speichern Sie sie weder in **`C:\Program Files`** noch in einem seiner Unterverzeichnisse. Speichern Sie die Dateien in Ihrem **`Documents`** Verzeichnis oder einem Unterverzeichnis wie **`Documents\Little Navmap\Performance`**.**.
+
+**Flugleistungsdateien von Mitfliegern und meine eigenen Flüge sind im [Download-Bereich von littlenavmap.org](https://www.littlenavmap.org/downloads/Aircraft%20Performance/).** verfügbar.
 
 ### Wind {#aircraft-performance-wind}
 
-Sie können die geschätzte durchschnittliche Windgeschwindigkeit und Windrichtung in Reiseflughöhe eingeben. Dies wird bei der Berechnung der Flugzeit und des Treibstoffverbrauchs für jede Strecke und den gesamten Flugplan berücksichtigt.
+Sie können die geschätzte durchschnittliche Windgeschwindigkeit und Windrichtung auf Reiseflughöhe eingeben, NOAA-Windvorhersagen herunterladen oder die X-Plane Winddatei verwenden. Dies wird bei der Berechnung der Flugzeit und des Treibstoffverbrauchs für jede Strecke und den gesamten Flugplan berücksichtigt.
 
-Der Kraftstoffbericht wird sofort aktualisiert, wenn sich die Windgeschwindigkeit oder -richtung ändert.
+Der Wind beeinflusst auch den top of descent und top of climb. So wird beispielsweise der Gipfel des Anstiegs eine kürzere Strecke für einen starken Gegenwind sein. Die Zeit, um den top of climb zu erreichen, ist die gleiche.
 
-Die Windgeschwindigkeit wird vom Boden auf die Reiseflughöhe für die Steig- und Abstiegsphase interpoliert.
+Der Kraftstoffbericht wird sofort aktualisiert, wenn sich die Windgeschwindigkeit, die Windrichtung, die Windquelle oder der Flugplan ändert.
 
-Beachten Sie, dass die Windeinstellung den Top of Climb oder Top of Descent in  _Little Navmap_ nicht verändert.  Sie wirkt sich nur auf die Bodengeschwindigkeit, also die Flugzeit und den Treibstoffverbrauch aus.
+Die Windgeschwindigkeit wird vom Boden auf die Reiseflughöhe für die Steig- und Abstiegsphase bei Verwendung von manuellem Wind interpoliert.
+
+Siehe Kapitel [Wetter - Höhenwinde](WEATHER.md#wind) für weitere Informationen über die Winde hoch oben.
+
+### Schaltfläche Treibstoff-Report {#fuel-report}
 
 ### Schaltflächen {#aircraft-performance-buttons}
 
 Die Schaltflächen oben haben die gleiche Funktionalität wie die Einträge im Hauptmenü [Flugzeug](MENUS.md#aircraft-menu).
 
-* ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as")
-`Flugzeugleistung bearbeiten`: Öffnet den Bearbeitungsdialog für das aktuell geladene Profil.
-* ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") `Flugzeugleistung erstellen`: Erstellt ein neues Leistungsprofil mit Standardwerten. Ein Profil mit 3 nm pro
-1000 ft für Abstiegs- und Aufstiegsregeln und kein Kraftstoffverbrauch 
-ist die Voreinstellung. Rote Warnmeldungen werden angezeigt, da das Profil nicht vollständig ist.
-* ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance")
-`Flugzeugleistung öffnen`: Läd eine `lnmperf` Datei.
-* ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance")
-`Flugzeugleistung speichern`: Speichert das aktuelle Profil in eine `lnmperf` Datei.
-* ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Save Aircraft Performance
-as") `Flugzeugleistung speichern als`: Speichert das aktuelle Profil in eine neue `lnmperf` Datei.
+* `Manueller Wind`: Dieses Kontrollkästchen überschreibt die Windquelle und ermöglicht es, die durchschnittliche Windrichtung und -geschwindigkeit manuell einzustellen. Wenn dies aktiviert ist, werden zwei Eingabefelder für Geschwindigkeit und Richtung angezeigt.
+* ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Flugleistungen bearbeiten als") `Flugleistungen bearbeiten`: Öffnet den Bearbeitungsdialog für das aktuell geladene Profil. Sie können auch den Menüpunkt `Flugzeug` -> `Flugzeugleistung bearbeiten ...` verwenden, um die aktuell geladenen Leistungsdaten zu ändern. Eine Beschreibung des Bearbeitungsdialogs finden Sie unter [Flugleistung bearbeiten](AIRCRAFTPERFEDIT.md).
+* ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") `New Aircraft Performance`: Erstellt ein neues Leistungsprofil mit Standardwerten und öffnet den Bearbeitungsdialog. Ein Profil mit 3 Seemeilen pro 1000 Fuß für Abstiegs- und Aufstiegsregeln und keinem Kraftstoffverbrauch ist Standard. Rote Warnmeldungen werden angezeigt, da das Profil nicht vollständig ist.
+* ![Open Aircraft Performance](../images/icons/aircraftperfload.png "Open Aircraft Performance") `Open Aircraft Performance`: Lädt eine `lnmperf` Datei.
+* ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Flugleistung speichern") `Flugzeugleistung speichern`: Speichert das aktuelle Profil in eine `lnmperf` Datei.
+* ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Flugleistung speichern unter") `Flugzeugleistung speichern unter`: Speichert das aktuelle Profil in eine neue `lnmperf` Datei.
+* ![Help](../images/icons/help.png "Help") Hilfe: Klicken Sie hier, um dieses Kapitel des Handbuchs im Standardbrowser zu öffnen.
 
 ### Leistungsbericht {#aircraft-performance-report}
 
-Beachten Sie, dass die Registerkarte `Flugzeug` im Dockfenster `Flugplan` für die Treibstoffplanung bestimmt ist und sich während des Fluges nicht ändert (außer bei der Erfassung von Leistungsdaten).
+Beachten Sie, dass die Registerkarte `Fuel Report` im Dockfenster `Flight Planning` für die Treibstoffplanung gedacht ist und sich während des Fluges nicht ändert.
 
-Ein Flugplan muss geladen werden, um den Treibstoffplanungsbericht zu sehen.
+Der Kraftstoffplanungsbericht wird jedoch automatisch aktualisiert, wenn sich der Flugplan, die Reiseflughöhe oder die Windsituation ändern.
 
-Bei der Erfassung von Leistungszahlen wird ein anderer Bericht angezeigt.
+Ein Flugplan muss geladen werden, um den vollständigen Kraftstoffplanungsbericht anzuzeigen. Ansonsten werden nur grundlegende Informationen wie die geschätzte Reichweite und andere Informationen über das Flugzeug angezeigt.
 
-Der Kraftstoffplanungsbericht wird automatisch aktualisiert, wenn sich der Flugplan, die Reiseflughöhe oder der Wind ändern.
+Eine detaillierte Beschreibung aller Kraftstoffmöglichkeiten finden Sie unter [Flugleistung bearbeiten](AIRCRAFTPERFEDIT.md).
 
-Eine detaillierte Beschreibung aller Kerosinwerte finden Sie unter [Flugleistung bearbeiten](AIRCRAFTPERFEDIT.md).
+Die Textgröße des Berichts kann im Dialog `Optionen` auf `Benutzeroberfläche` geändert werden.
 
-Die Textgröße des Berichts kann im Dialog `Einstellungen` auf der `Benutzeroberfläche` geändert werden.
+###### Luftfahrzeugbereich {#aircraft-performance-aircraft}
 
-#### Flugplan {#aircraft-performance-flightplan}
+* `Kraftstoffart`: Wie im Leistungsprofil festgelegt. Entweder `Avgas` oder `Jetfuel`. Dient zum Ändern von Werten beim Umschalten zwischen Volumen und Gewicht als Kraftstoffeinheit und zum Umrechnen zwischen den Einheiten im Bericht.
+* `Nutzbarer Kraftstoff`: Wird wie im Leistungsprofil eingestellt dargestellt. Wird nur angezeigt, wenn sie größer als Null ist. Eine rote Warnmeldung wird angezeigt, wenn der Blockkraftstoff diesen Wert überschreitet.
+* Geschätzte Reichweite mit Reserve": Berechnet auf der Grundlage von nutzbarem Kraftstoff, Geschwindigkeit und Kraftstoffdurchfluss für die Reisephase und Reservekraftstoff. Zeigt eine orangefarbene Warnung an, wenn die Kraftstoffdurchflusswerte nicht eingestellt sind.
+* `Reserve Kraftstoff` und `Taxi Kraftstoff`: Wird nur bei leerem Flugplan angezeigt.
+*"Minimale Start- und Landebahn": Wird angezeigt, wenn im Leistungsprofil eingestellt.
+
+
+#### Auswahl Flugplan {#aircraft-performance-flightplan}
 
 * `Distanz und Zeit`: Gesamte Flugplanentfernung und Reisezeit einschließlich Verfahren. Gleiche Werte wie oben auf der Registerkarte `Plan`.
 * `Durchschnittliche Grundgeschwindigkeit`: Grundgeschwindigkeit über alle Flugphasen Steigflug, Reiseflug und Sinkflug.
@@ -90,72 +108,50 @@ Errechnet auf Basis der angegebenen Geschwindigkeiten und des Windes, der oben a
 * `Mach im Reiseflugt`: Mach-Zahl bei Flugplan-Reiseflughöhe, berechnet auf der Grundlage der gegebenen tatsächlichen Fluggeschwindigkeit und der atmosphärischen Standardbedingungen der ISA.
 
 
-#### Treibstoffplan {#aircraft-performance-fuelplan}
+#### Auswahl Treibstoff {#aircraft-performance-fuelplan}
 
-*`Typ`: "Jetfuel" oder "Avgas". Dient zum Ändern der Werte beim Umschalten zwischen Volumen und Gewicht als Kraftstoffeinheit und zum Umrechnen zwischen den Einheiten im Bericht.
-* `Benötigt für Flug`: Treibstoff, der während des Fluges verbraucht wird und alle Phasen vom Abflug bis zur Landung am Zielort abdeckt. Nicht enthalten sind Notfallkraftstoff oder zusätzlicher oder Reservekraftstoff.
-* `Zu ladender Treibstoff`: Ist der gesamte Treibstoff, der für den Flug benötigt wird. Inklusive Reise, Reservierung, Extra, Taxi und Notfallkraftstoff.
-* `Treibstoff am Ziel`: Erwarteter Kraftstoff am Bestimmungsort. Entspricht der Reserve, wenn Eventualfall und zusätzlicher Kraftstoff nicht eingestellt sind.
+Wird nur mit einem gültigen Flugplan angezeigt.
+
+* `Reisetreibstoff`: Treibstoff, der während des Fluges verbraucht wird und alle Phasen vom Start am Abflug bis zur Landung am Zielort abdeckt. Nicht enthalten sind Notfall-, Zusatz-, Reserve- oder Ersatzbrennstoffe.
+* `Block Fuel`: Zu beladender Kraftstoff. Blockkraftstoff ist der gesamte Kraftstoff, der für den Flug benötigt wird. Beinhaltet Reise, Reservierung, Extra, Taxi, weitestgehend alternativer Flughafen und Notfalltreibstoff.
+* `Treibstoff am Zielort`: Erwarteter Kraftstoff am Bestimmungsort. Entspricht der Reserve, wenn kein Notfallkraftstoff, kein zusätzlicher Kraftstoff und keine alternativen Flughäfen eingestellt sind.
+* `Alternativer Kraftstoff`: Treibstoff, der für die Fahrt vom Bestimmungsort zum entferntesten Ausweichflughafen benötigt wird.
+
 * `Reserve`: Reservetreibstoff wie im Bearbeitungsdialog eingestellt.
 * `Treibstoff Rollen`: Taxi-Treibstoff wie im Bearbeitungsdialog eingestellt.
 * `Extratreibstoff`: Zusätzlicher Kraftstoff, wie im Bearbeitungsdialog eingestellt.
 * `Streckenreserve`: Notfallkraftstoff berechnet aus dem im Bearbeitungsdialog angegebenen Prozentsatz und dem Reisetreibstoff.
 
 
-#### Steigflug und Sinkflug {#aircraft-performance-climb-descent}
+#### Auswahl Steigflug und Sinkflug {#aircraft-performance-climb-descent}
 
-* `Steigflug`: Geschwindigkeit und Vertikalgeschwindigkeit wie angegeben plus der berechnete Flugbahnwinkel.
+Wird nur mit einem gültigen Flugplan angezeigt.
+
+* `Steigflug`: Geschwindigkeit und Vertikalgeschwindigkeit wie angegeben plus der berechnete Flugbahnwinkel. Der Flugbahnwinkel wird durch die Windprognose beeinflusst.
 * `Zeit für Steigflug`: Berechnete Steigflugzeit für die angegebene Reiseflughöhe.
-* `Sinkflug`: Geschwindigkeit und Vertikalgeschwindigkeit in der Abstiegsphase wie angegeben zuzüglich des berechneten Flugbahnwinkels.
+* `Sinkflug`: Geschwindigkeit und Vertikalgeschwindigkeit in der Abstiegsphase wie angegeben zuzüglich des berechneten Flugbahnwinkels. Der Flugbahnwinkel wird durch die Windprognose beeinflusst.
 * `Faustregel für Sinkflug`: Berechnete Faustregel für den Abstieg.
 
-Beachten Sie, dass Höhenbeschränkungen in den Verfahren die Höhe der Abstiegs-, Top- oder Steigstrecken beeinflussen können.
+Beachten Sie, dass Höhenbeschränkungen in den Verfahren die Höhe der Abstiegs-, Top- oder Steigstrecken beeinflussen können. Der Flugbahnwinkel ist nur gültig, wenn das Flugzeug ungeachtet der Höhenbeschränkungen frei steigen oder sinken kann.
 
-#### Datei für Flugzeugleistung {#aircraft-performance-description}
+#### Auswahl Datei für Flugzeugleistung {#aircraft-performance-description}
 
 Dies ist ein freies Klartextfeld für Notizen und Links.
 
-Links werden erkannt und können hier im Bericht geöffnet werden. Normale Weblinks wie `http://www.example.com` oder `https://www.example.com` werden neben Verzeichnis- oder Dateiverknüpfungen wie z.B.
-`file:///C:/Projekte/atools` unter Windows oder `file:///home/me/Aircraft_Notes.txt` unter MacOS oder Linux erkannt.
+Links werden erkannt und können hier im Bericht geöffnet werden. Normale Weblinks wie `http://www.example.com` oder `https://www.example.com` werden neben Verzeichnis- oder Dateiverknüpfungen wie z.B. `file:///C:/Projekte/atools` unter Windows oder `file:///home/me/Aircraft_Notes.txt` unter MacOS oder Linux erkannt.
 
-#### Datei {#aircraft-performance-file}
+Normale Weblinks wie `http://www.example.com` oder `https://www.example.com` werden neben Verzeichnis- oder Dateilinks wie `file:///C:/Users/me/Documents/Aircraft%20Notes.txt` unter Windows oder `file:///home/me/Aircraft%20Notes.txt` unter MacOS oder Linux erkannt.
+
+Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich `/` anstelle des Backslash `\`` als Pfadtrennzeichen verwenden müssen.
+
+Ersetzen Sie Leerzeichen in Links durch `%20`, da _Little Navmap_ Links bis zum nächsten Leerzeichen erkennt.
+
+
+#### Auswahl Leistungsdatei {#aircraft-performance-file}
 
 Enthält einen Link zur Flugzeugleistungsdatei. Öffnet die Datei oder das Verzeichnis im Standard-Dateimanager wie Windows Explorer oder macOS Finder.
 
-### Flugzeugleistung bearbeiten {#aircraft-performance-edit}
-
-Sie können den Edit-Button ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "EditAircraft Performance as") oben auf der Registerkarte oder den Menüpunkt `Flugzeug` -&gt; `Flugzeugleistung bearbeiten ...` verwenden, um die aktuell geladenen Leistungsdaten zu ändern.
-
-Siehe [Flugzeugleistungsdaten bearbeiten](AIRCRAFTPERFEDIT.md) für eine Beschreibung des Bearbeitungsdialogs.
-
-### Erfasse Daten für Flugzeugleistung {#aircraft-performance-collect}
-
-Der Leistungsdatenerfassungsmodus kann für ein grundlegendes Leistungsprofil verwendet werden, das manuell angepasst werden kann. _Little Navmap_ sammelt Treibstofffluss- und Geschwindigkeitsdaten und berechnet Durchschnittswerte für alle Flugphasen.
-
-Der Wind hat keinen Einfluss auf die Berechnung, da alle Geschwindigkeiten auf der Basis der tatsächlichen Fluggeschwindigkeit basieren.
-
-Ein Bericht über die aktuellen durchschnittlichen Teibstoff- und Geschwindigkeitswerte wird angezeigt. Zwischenergebnisse können Sie jederzeit speichern.
-
-Bei der Datenerfassung zeigt das Höhenprofil 3 nm pro 1000 ft Steigung und 
-Abstiegsneigung. Sie müssen den benötigten Abstieg selbst einschätzen.
-
-Führen Sie die folgenden Schritte aus, um den automatischen Leistungserfassung-Modus zu starten.
-
-1. Verbinden Sie _Little Navmap_ mit dem Simulator.
-1. Tanken Sie Ihr Flugzeug im bestmöglichen Schätzwert für die Reise.
-2. Stellen Sie Ihr Flugzeug am Abflug auf den Parkplatz mit abgeschalteten Triebwerken.
-1. Wählen Sie `Flugzeug` -&gt; `Erfasse Daten für Flugzeugleistung`. Es erscheint ein Dialog mit Kurzhilfe und der Bericht wird durch einen Bericht ersetzt, der die erkannten Flugphasen und andere Werte anzeigt.
-3. Führen Sie einen typischen Flug in der typischen Reiseflughöhe und der typischen Entfernung für das gewählte Flugzeug durch. Ein kurzer Hopser in geringer Höhe und geringem Gewicht reicht nicht aus.
-4. Die Sammlung wird beim Touchdown abgeschlossen und _Little Navmap_ wechselt in den Standard-Treibstoffberichtsmodus.
-
-
-Bearbeiten Sie nun die Flugzeugleistungsdaten \([Fluggerätleistung bearbeiten](AIRCRAFTPERFEDIT.md)\) und passen Sie die Zahlen nach Ihren Wünschen an.
-
-**Vergessen Sie nicht, immer ausreichend Reservekraftstoff hinzuzufügen. Andernfalls geht Ihnen am Bestimmungsort der Kraftstoff aus, wenn Sie sich auf diesen Plan verlassen.**
-
-![Collecting Aircraft Performance](../images/perf_collect.jpg "Collecting Aircraft Performance")
-
-_**Bild oben:** Bericht, der bei der Erfassung der Flugzeugleistung angezeigt wird. Die Phasen `Taxi und Start` und `Steigflug` sind bereits abgeschlossen. Die aktuelle Phase ist `Reiseflug`._
+igt wird. Die Phasen `Taxi und Start` und `Steigflug` sind bereits abgeschlossen. Die aktuelle Phase ist `Reiseflug`._
 
 
 Sie können Ihr Flugzeug in Reiseflughöhe bewegen, mit Warp-Tools schnell an den Top of Descent kommen oder Kraftstoff und Zeit manuell anpassen. Dies hat keinen Einfluss auf die Leistungsberechnung, da _Little Navmap_ den tatsächlichen Kraftstofffluss aus dem Simulator liest, anstatt verbrauchten Kraftstoff und Zeit zu anzuwenden.
