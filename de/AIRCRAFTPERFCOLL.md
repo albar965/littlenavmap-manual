@@ -1,72 +1,72 @@
-## Aircraft Performance Collection {#aircraft-perf-coll}
+## Sammlung von Flugzeugleistungen {#aircraft-perf-coll}
 
-The performance data collection can be used to create a basic performance profile which can be fine tuned manually. _Little Navmap_ permanently collects fuel flow and speed data and calculates average values for all flight phases.
+Aus der Leistungsdatenerfassung kann ein grundlegendes Leistungsprofil erstellt werden, das manuell angepasst werden kann. _Little Navmap_  sammelt permanent Kraftstofffluss- und Geschwindigkeitsdaten und berechnet Durchschnittswerte für alle Flugphasen.
 
-Wind does not affect the calculation since all speeds are based on true airspeed.
+Der Wind hat keinen Einfluss auf die Berechnung, da alle Geschwindigkeiten auf der Basis der tatsächlichen Fluggeschwindigkeit basieren.
 
-The collection begins automatically once _Little Navmap_ is started and connected to a simulator. You can reset the collection manually to get a clean base.
+Die Sammlung beginnt automatisch, sobald _Little Navmap_  gestartet und mit einem Simulator verbunden wird. Sie können die Sammlung manuell zurücksetzen, um eine saubere Basis zu erhalten.
 
-A report of current average fuel and speed numbers is shown on the tab `Current Performance` in the window. You can copy or merge intermediate results at any time into your currently loaded performance profile.
+Ein Bericht über die aktuellen durchschnittlichen Kraftstoff- und Geschwindigkeitszahlen wird auf der Registerkarte `Aktuelle Leistung` im Fenster angezeigt.  Zwischenergebnisse können Sie jederzeit in Ihr aktuell geladenes Leistungsprofil kopieren oder zusammenführen.
 
-_Little Navmap_ will show 3 nautical miles per 1000 feet climb and descent slopes when collecting data based on an default or new elevation profile. You have to estimate the needed top of descent yourself.
+_Little Navmap_ zeigt 3 Seemeilen pro 1000 Fuß Steigung und Gefälle, wenn Sie Daten basierend auf einem Standard- oder neuen Höhenprofil sammeln. Sie müssen  den benötigten Abstieg selbst einschätzen.
 
-**The flight plan cruise altitude is used to detect the cruise phase of the aircraft. Set the cruise altitude in the flight plan tab at least to the intended cruise altitude if you do not plan use a flight plan .**
+**Die Flugplan-Reiseflughöhe wird verwendet, um die Reisephase des Flugzeugs zu erfassen. Stellen Sie die Reiseflughöhe in der Registerkarte Flugplan mindestens auf die gewünschte Reiseflughöhe ein, wenn Sie nicht die Verwendung eines Flugplans planen.**
 
-### Quick How To
+### Schnelle Anleitung
 
-Follow the steps below to collect performance for an aircraft.
+Führen Sie die folgenden Schritte aus, um die Leistung für ein Flugzeug zu erfassen.
 
-1. Connect _Little Navmap_ to the simulator.
-1. Fuel up your aircraft at best guess for the trip.
-1. Use a typical load for the aircraft.
-1. Create and use a flight plan for the trip. Use a typical distance and cruise altitude for this aircraft. A short hop does not suffice.
-1. Place your aircraft on the parking spot at departure with engines shut down or running.
-1. Start and fly as precise as possible regarding speeds and performance settings of the aircraft.
-1. The collection is completed once the field `Current flight segment:` in the report shows `Finished.`.
-1. Select `Aircraft` -> `Merge collected Aircraft Performance` in the main menu and copy all values in the dialog. See [Aircraft Performance Merge](AIRCRAFTPERFMERGE.md) for more information on merging.
-1. Edit the aircraft performance data ([Editing Aircraft Performance](AIRCRAFTPERFEDIT.md)) and adjust the numbers to your liking or flying habits.
+1. Verbinden Sie _Little Navmap_ mit dem Simulator.
+2. Tanken Sie Ihr Flugzeug im besten Fall für die Reise.
+3. Verwenden Sie eine typische Last für das Flugzeug.
+4. Erstellen und verwenden Sie einen Flugplan für die Reise. Verwenden Sie eine typische Entfernung und Reiseflughöhe für dieses Flugzeug. Ein kurzer Sprung reicht nicht aus.
+5. Stellen Sie Ihr Flugzeug beim Abflug mit abgeschalteten oder laufenden Triebwerken auf den Parkplatz.
+6. Starten und fliegen Sie so präzise wie möglich in Bezug auf Geschwindigkeiten und Leistungseinstellungen des Flugzeugs.
+7. Die Sammlung ist abgeschlossen, sobald das Feld `Aktuelles Flugsegment`:  im Bericht `Fertig`anzeigt.
+8. Wählen Sie im Hauptmenü `Flugzeug` -> `Gesammelte Flugzeugleistung zusammenführen` und kopieren Sie alle Werte in den Dialog. Weitere Informationen zum Zusammenführen finden Sie unter [Flugzeugleistung zusammenführen](AIRCRAFTPERFMERGE.md).
+9. Bearbeiten Sie die Leistungsdaten des Flugzeugs ([Flugzeugleistung bearbeiten](AIRCRAFTPERFEDIT.md)) und passen Sie die Zahlen Ihren Wünschen oder Fluggewohnheiten an.
 
-**Do not forget to add at least sufficient reserve fuel. Otherwise you will run out of fuel at destination if you rely on this plan.**
+**Vergessen Sie nicht, mindestens ausreichend Reservekraftstoff hinzuzufügen. Andernfalls geht ihnen am Zielort der Treibstoff aus, wenn sie sich auf diesen Plan verlassen.**
 
-Other recommended fields to edit are `Usable Fuel`, `Required Runway` and `Required Runway Type`.
+Weitere empfohlene Eingabefelder sind `Usable Fuel`, `Required Runway` und `Required Runway Type`.
 
-You can move your airplane at cruise altitude, use warp tools to get quickly near top of descent or adjust fuel and time manually. This will not affect performance calculation since _Little Navmap_ reads the actual fuel flow from the simulator instead of using consumed fuel and time.
+Sie können Ihr Flugzeug in Reiseflughöhe bewegen, mit Warp-Tools schnell an den top of descent kommen oder Kraftstoff und Zeit manuell anpassen. Dies hat keinen Einfluss auf die Leistungsberechnung, da _Little Navmap_ den tatsächlichen Kraftstofffluss aus dem Simulator liest, anstatt verbrauchten Kraftstoff und Zeit zu verbrauchen.
 
-In any case stay a few minutes at cruise altitude so that _Little Navmap_ can get numbers for this phase of flight.
+Bleiben Sie auf jeden Fall ein paar Minuten in Reiseflughöhe, damit _Little Navmap_  Zahlen für diese Flugphase erhalten kann.
 
-**You can create different performance profiles for different cruise altitude ranges to cover fuel flow variations.**
+**Sie können verschiedene Leistungsprofile für verschiedene Reiseflughöhenbereiche erstellen, um Schwankungen des Kraftstoffdurchflusses abzudecken.**
 
 ![Collecting Aircraft Performance](../images/perf_collect.jpg "Collecting Aircraft Performance")
 
-_**Picture above:** Report shown when collecting aircraft performance. All phases are already finished._
+_**Bild oben:** Bericht, der bei der Erfassung der Flugzeugleistung angezeigt wird. Alle Phasen sind bereits abgeschlossen._
 
-### Tab Current Performance {#aircraft-performance-collect}
+### Registerkarte Aktuelle Leistung {#aircraft-performance-collect}
 
 #### Buttons {#aircraft-performance-buttons}
 
-* ![Restart Aircraft Performance Collection](../images/icons/aircraftperfreset.png "Restart Aircraft Performance Collection") `Restart Aircraft Performance Collection`: Resets all collected fuel and speed parameters back to zero. Nevertheless performance collection will continue immediately even while in cruise, for example.
-* ![Merge collected Aircraft Performance](../images/icons/aircraftperfmerge.png "Merge collected Aircraft Performance") `Merge collected Aircraft Performance`: Opens a dialog allowing to merge the collected performance parameters into the currently loaded performance file. This can be used in all flight phases. See [Aircraft Performance Merge](AIRCRAFTPERFMERGE.md) for more information on merging.
-* ![Help](../images/icons/help.png "Help") Help: Click to open this chapter of the manual in the default browser.
+* ![Restart Aircraft Performance Collection](../images/icons/aircraftperfreset.png "Restart Aircraft Performance Collection") `Restart Aircraft Performance Collection`: Setzt alle gesammelten Kraftstoff- und Geschwindigkeitsparameter auf Null zurück. Dennoch wird die Leistungserfassung auch während der Fahrt sofort fortgesetzt.
+* ![Merge collected Aircraft Performance](../images/icons/aircraftperfmerge.png "Merge collected Aircraft Performance") `Merge collected Aircraft Performance`: Öffnet einen Dialog, in dem die gesammelten Leistungsparameter in die aktuell geladene Leistungsdatei übernommen werden können. Dies kann in allen Flugphasen genutzt werden. This can be used in all flight phases. Weitere Informationen zum Zusammenführen finden Sie unter [Flugzeugleistung zusammenführen](AIRCRAFTPERFMERGE.md).
+* ![Help](../images/icons/help.png "Help") Hilfe: Klicken Sie hier, um dieses Kapitel des Handbuchs im Standardbrowser zu öffnen.
 
 #### Report {#aircraft-performance-report}
 
-The text size of the report can be changed in dialog `Options` on `User Interface`.
+Die Textgröße des Berichts kann im Dialog `Optionen` auf `Benutzeroberfläche` geändert werden.
 
-##### Aircraft Section
+##### Abschnitt Luftfahrzeuge
 
-* `Current flight segment`: Shows which flight phases (`Climb`, `Cruise` and more) are detected.
-* `Aircraft status`: More information about aircraft status like fuel flow or on ground status.
+* `Aktuelles Flugsegment`: Zeigt an, welche Flugphasen (`Climb`, `Cruise` und mehr) erkannt werden.
+* `Flugzeugstatus`: Weitere Informationen zum Flugzeugstatus wie Treibstofffluss oder Bodenstatus.
 
-##### Fuel Section
+##### Abscnitt Kraftstoff
 
-* `Fuel Type`: Fuel type as reported by simulator. This is calculated based on the volume/weight ratio. Correct this manually if add-on aircraft do not provide a correct fuel type.
-* `Total Fuel Consumed`: Fuel consumed so far since the restart of _Little Navmap_ or the last reset of the collection function.
-* `Taxi Fuel`: Fuel used from first detected fuel flow to lift off.
+* `Fuel Type`: Kraftstoffart, wie vom Simulator gemeldet. Diese wird auf Basis des Volumen/Gewichtsverhältnisses berechnet. Korrigieren Sie dies manuell, wenn das Zusatzflugzeug keinen korrekten Kraftstofftyp liefert.
+* `Total Fuel Consumed`: Der bisherige Kraftstoffverbrauch seit dem Neustart von _Little Navmap_ oder dem letzten Zurücksetzen der Sammelfunktion.
+* `Taxi Fuel`: Kraftstoff, der vom ersten erfassten Kraftstoffdurchfluss zum Abheben verwendet wird.
 
-##### Average Performance Section - Climb, Cruise and Descent
+##### Abschnitt über die durchschnittliche Leistung - Steigflug, Reiseflug und Sinkflug
 
-Average values for the different flight phases. Sections for not yet started phases are omitted. Passed sections like e.g. climb will show zero values if you restart the collection mid flight in e.g. cruise.
+Durchschnittswerte für die verschiedenen Flugphasen. Abschnitte für noch nicht gestartete Phasen entfallen. Passierte Abschnitte wie z.B. Steigen zeigen Nullwerte an, wenn Sie die Sammlung während des Fluges neu starten, z.B. bei Reiseflug.
 
-* `True Airspeed`: True airspeed average.
-* `Vertical Speed`: Average climb or descent speed. Not shown for cruise phase.
-* `Fuel Flow`: Fuel flow average.
+* `True Airspeed`: Echter Mittelwert der Fluggeschwindigkeit.
+* `Vertical Speed`: Durchschnittliche Steig- oder Sinkgeschwindigkeit. Nicht dargestellt für die Reiseflugphase.
+* `Fuel Flow`: Durchschnittlicher Kraftstoffdurchfluss.

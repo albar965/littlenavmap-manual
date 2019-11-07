@@ -20,7 +20,7 @@ Wenn ein Navdata-Update nicht möglich ist, wählen Sie den AIRAC-Zyklus des Onl
 
 Beachten Sie, dass auch in _Little Navmap_ berechnete Flugpläne in einigen Fällen nicht exakt zurückgerechnet werden können. Dies geschieht aufgrund von navaiden Mehrdeutigkeiten wie z.B. NDB- und VOR-Stationen mit gleichen Namen oder Fehlern in den Quelldaten.
 
-Die Reisegeschwindigkeit und die Höhe werden falls vorhanden verwendet, um den Flugplan zu erstellen. Andernfalls wird die Reiseflughöhe automatisch durch den Flugplantyp \(IFR oder VFR\) und die Mindesthöhe der verwendeten Atemwegsabschnitte bestimmt.
+Die Reisegeschwindigkeit und die Höhe werden falls vorhanden verwendet, um den Flugplan zu erstellen. Andernfalls wird die Reiseflughöhe automatisch durch den Flugplantyp (IFR oder VFR) und die Mindesthöhe der verwendeten Atemwegsabschnitte bestimmt.
 
 Die SID- und STAR-Verfahren erfordern ein Update der Navdata, mit Ausnahme von X-Plane, das bereits mit einer vollständigen Navigationsdatenbank ausgestattet ist.
 
@@ -28,7 +28,7 @@ Die SID- und STAR-Verfahren erfordern ein Update der Navdata, mit Ausnahme von X
 
 ![Route Description Dialog](../images/routedescr.jpg "Route Description Dialog")
 
-_**Bild oben:** Eine erfolgreich gelesene Routenbeschreibung mit einigen Warnungen über ignorierte Elemente. Der Wegpunkt _`LLL`_ konnte nicht gefunden werden. Geschwindigkeit, Höhe, SID und STAR wurden erkannt. Die Grundgeschwindigkeit von 433 Knoten wird basierend auf der gegebenen Machzahl 0,74 und den Bedingungen der Standardatmosphäre berechnet._
+_**Bild oben:** Eine erfolgreich gelesene Routenbeschreibung mit einigen Warnungen über ignorierte Elemente. Der Wegpunkt `LLL` konnte nicht gefunden werden. Geschwindigkeit, Höhe, SID und STAR wurden erkannt. Die Grundgeschwindigkeit von 433 Knoten wird basierend auf der gegebenen Machzahl 0,74 und den Bedingungen der Standardatmosphäre berechnet._
 
 ### Schaltflächen {#buttons}
 
@@ -37,14 +37,18 @@ _**Bild oben:** Eine erfolgreich gelesene Routenbeschreibung mit einigen Warnung
 * `Aktualisiere vom Flugplan`: Erstellt den Routenstrang aus dem aktuellen Flugplan erneut. Verwenden Sie dies, nachdem Sie die Einstellungen mit der Dropdown-Menü-Taste geändert haben.
 * `Lese Routenbeschreibung`: Liest die Routenbeschreibung und zeigt in der unteren Hälfte des Dialogs alle Meldungen, Warnungen und Fehler an. Der aktuelle Flugplan ist von dieser Aktion nicht betroffen.
 * `IFR` / `VFR`: Definiert die Art des generierten Flugplans und die automatisch ermittelte Reiseflughöhe.
-* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"):
-  * `Abflug- und Zielflugplatz inzufügen`:  Beachten Sie, dass das Deaktivieren dieser Option zu einem Routen-String führt, der nicht in einen Flugplan zurückgelesen werden kann.
-  * `DCT (Direkt) Instruktionen hinzufügen`: Fügt `DCT` für alle direkten Wegpunktverbindungen im Flugplan hinzu.
-  * `Fluggeschwindigkeits- und Höhenanweisungen für Reiseflug hinzufügen`: Fügt die Reiseflughöhe aus dem Flugplan und die Bodengeschwindigkeit, wie im Dockfenster des Flugplans eingestellt,  hinzu.
-  * `SID und STAR hinzufügen`: Fügt SID- und STAR-Namen hinzu, falls diese für Abflug oder Ankunft verwendet werden.
-  * `Generische SID und STAR hinzufügen`: Fügt die allgemeinen Schlüsselwörter `SID` und `STAR` hinzu, wenn keine echte SID und/oder STAR ausgewählt wurden.
-  * `Wegpunkte statt Luftstraßen hinzufügen`: Fügt keine Luftstraßennamen ein, sondern verwendet nur Wegpunkte.
-* `Flugplan erstellen`: Schließt den Dialog und erstellt einen neuen Flugplan für die analysierte Routenbeschreibung und ersetzt den aktuellen Plan. Sie müssen auf `Routenbeschreibung lesen`  klicken, bevor Sie einen Flugplan erstellen können.
+* **Menu Button **![Menu Button](../images/icons/menubutton.png "Menu Button"): `Schreibe` bezeichnet den Flugplan zur Beschreibung und `Lesen` bezeichnet die Beschreibung zum Flugplan.
+ * `Schreibe Abflug- und Zielflughafen`: Beachten Sie, dass das Deaktivieren dieser Option zu einem Routen-String führt, der nicht in einen Flugplan zurückgelesen werden kann.
+  * `Schreibe DCT (direkte) Anweisungen`: Füge `DCT` für alle direkten Wegpunktverbindungen im Flugplan hinzu.
+  * `Schreibe die Anweisungen für Reisegeschwindigkeit und Höhe`: Fügt die Reiseflughöhe aus dem Flugplan und die Bodengeschwindigkeit hinzu, wie im Dockfenster der Flugplanung eingestellt.
+  * `Schreibe SID und STAR`: Fügt SID- und STAR-Namen hinzu, falls diese für Abflug oder Ankunft verwendet werden.
+  * `Schreibe generische SID und STAR`: Fügt die allgemeinen Schlüsselwörter `SID` und `STAR` hinzu, wenn keine echte SID und/oder STAR ausgewählt wurden.
+  * `Schreibe Waypoints anstelle von Airways`: Fügt keine Airway-Namen ein, sondern verwendet nur Wegpunkte.
+  * `Schreibe Alternativen`: Fügt alle alternativen Flughäfen an das Ende der Beschreibung an.
+  * `Nachfolgende Flughäfen als Alternative lesen`:
+    * Aktiviert: Eine Liste der Flughäfen am Ende der Beschreibung wird als Alternativflughäfen gelesen, mit Ausnahme des ersten in der Reihe der aufeinanderfolgenden Flughäfen, die als Bestimmungsort verwendet werden. Jeder Flughafen mit einem gültigen STAR in der Flugroute wird ebenfalls als Ziel behandelt.
+    * Deaktiviert: Das Lesen erstellt einfach einen Flugplan mit den Flughäfen als Zwischenziele und dem letzten als Ziel. Siehe Beispiel unten.
+* `Flugplan erstellen`: Schließt den Dialog und erstellt einen neuen Flugplan für die analysierte Routenbeschreibung und ersetzt den aktuellen Plan. Sie müssen auf `Routenbeschreibung lesen` klicken, bevor Sie einen Flugplan erstellen können.
 
 ### Format {#format}
 
@@ -57,10 +61,9 @@ Alle Elemente in eckigen Klammern sind optional.
 `FROM` und `TO`: Dies sind die erforderlichen 3 oder 4 Buchstaben Identifikationen für Start- und Zielflughäfen.
 
 Beispiele: `KEAT`, `CYPU`, `S16`.
+`ALTERNATES`: Alternative Flughäfen sind optional und werden beim Lesen in Abhängigkeit von der Option `Nachfolgende Flughäfen als Alternative lesen` wie oben beschrieben in den Flugplan aufgenommen.
 
-`ALTERNATES`: Alternative Flughäfen sind optional und werden einfach an den Flugplan angehängt. Alternativen können nicht in Kombination mit einem Anflugverfahren verwendet werden.
-
-`SPEEDALT`: Ein optionaler Eintrag, der die Reisegeschwindigkeit und die Höhe enthält. Siehe unten für Details.
+`SPEEDALT`: Ein optionaler Eintrag, der die Reisegeschwindigkeit und die Höhe enthält. Siehe unten für Details. Die Geschwindigkeit wird beim Lesen ignoriert.
 
 `ENROUTE`: Dies ist eine Liste von entweder `WAYPOINT` oder einem `AIRWAYWAYPOINT`, die den aktuellen Flugplan bilden. Der erste Eintrag muss ein Flughafen, Wegpunkt, VOR oder NDB sein.
 
@@ -73,7 +76,7 @@ Beispiele: `TAU`, `BOMBI`, `AST`, `CL`, `EDDF`.
 
 Beispiele: `V495 CONDI`, `V338 YVR`, `V330 TRENA`.
 
-`SID.TRANS` und `STAR.TRANS`: Entweder die Wörter `SID` oder `STAR` oder echte SID-, STAR- und Übergangsnamen, wobei der optionale Übergang durch ein `.` getrennt ist. Die generischen Schlüsselwörter `SID` und `STAR` stellen eine direkte Verbindung zum en route Teil her.
+`SID.TRANS` und `STAR.TRANS`: Entweder die Wörter `SID` oder `STAR` oder echte SID-, STAR- und Übergangsnamen, wobei der optionale Übergang durch ein `.` getrennt ist. Die generischen Schlüsselwörter `SID` und `STAR` stellen eine direkte Verbindung zum en-route Teil her.
 
 
 Beispiele: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
@@ -84,6 +87,27 @@ Beispiele: `RDHK2.HOLLE`, `OHIO3.LFK`, `RDHK2`, `OHIO3`.
 `ETD` und `ETA`: Vierstellige Abflug- und Ankunftszeiten, die an die Flughafen-Identität gebunden sind, werden ignoriert.
 
 `WAYPOINT.SPEEDALT`: Zum Beispiel `BOMBI/N0090A060`. Höhenänderungen an Wegpunkten werden nicht unterstützt und beim Lesen ignoriert.
+
+#### Alternativen {#alternates}
+
+**Beispiel beim Lesen ** `Lesen von nachfolgenden Flughäfen als Alternative`** aktiviert:***
+
+* `KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 SCHRIE J50 LFK BAYYYY3.SJI KHOU KCLL KVCT'.
+* `KPWA ATOKA J25 FUZ J33 SCHRIE J50 LFK KHOU KHOU KCLL KVCT`
+
+`KHOU` wird als Ziel gelesen, `KCLL` und `KVCT` sind Alternativen für beide Beispiele.
+
+**Beispiel beim Lesen **`Lesen von nachfolgenden Flughäfen als Alternative`** deaktiviert:***
+
+* `KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 SCHRIE J50 LFK BAYYYY3.SJI KHOU KCLL KVCT'.
+
+Nicht gültig. Fehlermeldung `BAYYYY3.SJI nicht gefunden` ausgegeben.
+`KVCT` wird als Ziel gelesen, `KHOU` und `KCLL` sind Zwischenziele.
+
+* `KPWA ATOKA J25 FUZ J33 SCHRIE J50 LFK KHOU KHOU KCLL KVCT`
+
+`KVCT` wird als Ziel gelesen, `KHOU` und `KCLL` sind Zwischenziele.
+
 
 #### Geschwindigkeit und Höhe {#speed-and-altitude}
 
@@ -119,22 +143,22 @@ Beispiele:
 
 Die Koordinaten können in verschiedenen Formaten bereitgestellt werden:
 
-**Grad** nur 7 Zeichen: Zwei Ziffern und Nord/Süd-Anzeige sowie drei Ziffern und Ost/West-Anzeige.
+**Grad** nur (7 Zeichen): Zwei Ziffern und Nord/Süd-Anzeige sowie drei Ziffern und Ost/West-Anzeige.
 
 
 Beispiel: `51N010E`
 
-**Grad und Minuten** \(11 Zeichen\): Zwei Ziffern Grad, zwei Ziffern für Minuten und Nord/Süd-Anzeige.
+**Grad und Minuten** (11 Zeichen): Zwei Ziffern Grad, zwei Ziffern für Minuten und Nord/Süd-Anzeige.
 Dann drei Ziffern für Grad, zwei Ziffern für Minuten und Ost/West-Anzeige.
 
 Beispiel: `4010N03822W`.
 
-**Grad, Minuten und Sekunden** \(15 Zeichen\): Zwei Stellen Grad, zwei Stellen für Minuten, zwei Stellen für Sekunden und Nord/Süd-Anzeige.
+**Grad, Minuten und Sekunden** (15 Zeichen): Zwei Stellen Grad, zwei Stellen für Minuten, zwei Stellen für Sekunden und Nord/Süd-Anzeige.
 Dann drei Ziffern für Grad, zwei Ziffern für Minuten, zwei Ziffern für Sekunden und Ost/West-Anzeige. Dieses Format wird zum Beispiel  von [SkyVector](https://skyvector.com) verwendet.
 
 Beispiel: `481200N0112842E`.
 
-**Nordatlantische Track Points** \(NAT\). Zwei Ziffern Grad Nord und zwei Ziffern Grad West, gefolgt von dem Zeichen `N`.
+**Nordatlantische Track Points** (NAT). Zwei Ziffern Grad Nord und zwei Ziffern Grad West, gefolgt von dem Zeichen `N`.
 
 Beispiel: `5010N`.
 
@@ -143,13 +167,13 @@ Beispiel: `5010N`.
 Beispiele: `N4200 W02000` oder `N4200/W02000`.
 
 
-**Garmin GFP Format** \(13 Zeichen\) Nord-/Südanzeige, zweistellig, dreistellig für Minuten bis 10. Dann Ost/West-Anzeige, drei Ziffern Grad, drei Ziffern Minuten um 10. Dieses Format wird vom _Flight1 GTN 650/750_ verwendet.
+**Garmin GFP Format** (13 Zeichen) Nord-/Südanzeige, zweistellig, dreistellig für Minuten bis 10. Dann Ost/West-Anzeige, drei Ziffern Grad, drei Ziffern Minuten um 10. Dieses Format wird vom _Flight1 GTN 650/750_ verwendet.
 
 Beispiel: `N48194W123096`N48194W123096`.
 
 ### Beispiele für Flugplanbeschreibungen {#examples}
 
-Frankfurt Main \(EDDF\) nach Fiumicino \(LIRF\):
+Frankfurt Main (EDDF) nach Fiumicino (LIRF):
 
 **Direkte Verbindung:**
 
@@ -159,7 +183,7 @@ Frankfurt Main \(EDDF\) nach Fiumicino \(LIRF\):
 
 `EDDF FRD KPT BOA CMP LIRF`.
 
-**Wie oben mit Abflugzeit \(**`ETD`**\) und Ankunftszeit \(**`ETA`**\), die beide ignoriert werden:**
+**Wie oben mit Abflugzeit (**`ETD`**) und Ankunftszeit (**`ETA`**), die beide ignoriert werden:**
 
 `EDDF1200 FRD KPT BOA CMP LIRF1300`.
 
@@ -186,4 +210,9 @@ Frankfurt Main \(EDDF\) nach Fiumicino \(LIRF\):
 **Flugplan mit den generischen Schlüsselwörtern SID und STAR:**
 
 `KPWA SID ATOKA J25 FUZ J33 CRIED J50 LFK STAR KHOU`
+
+**Flugplan mit SID- und STAR-Verfahren mit Transitionen und zwei alternativen Flughäfen:**
+
+`KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 SCHRIE J50 LFK BAYYYY3.SJI KHOU KCLL KVCT'.
+
 

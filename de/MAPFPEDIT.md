@@ -1,6 +1,6 @@
 ## Menü Flugplan bearbeiten {#map-flight-plan-editing}
 
-Diese Funktion ist durch Ziehen und Ablegen des Flugplans standardmäßig aktiviert. Sie kann über die Symbolleiste oder über das  `Hauptmenu` -> `Flugplan` -> `Flugplan auf der Karte Bearbeiten` geschaltet werden.
+Der Drag&Drop-Bearbeitungsmodus für den Flugplan ist standardmäßig aktiviert. Er kann über die Symbolleiste oder `Flugplan` -> `Flugplan auf Karte bearbeiten` im Hauptmenü ausgewählt werden.
 
 Sie können die Tastatur, das Mausrad oder die Karten-Overlays verwenden, um beim Bearbeiten der Route zu blättern und zu zoomen.
 

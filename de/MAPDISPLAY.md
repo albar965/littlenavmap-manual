@@ -10,6 +10,7 @@ Alternativ können Sie sich auch mit der Tastatur durch die Karte bewegen:
 
 * Cursortasten: Scrollen Sie durch die Karte
 * `+` und `-`: Vergrößern und Verkleinern
+* `*` und `/`: Vergrößern und Verkleinern in kleinen Schritten
 * `Alt+Links` und `Alt+Rechts`: Vorwärts- oder Rückwärtsgehen in der Kartenpositionshistorie
 * `Strg++` und `Strg+-`: Details vergrößern oder verkleinern
 * `Strg+Haus`: Zur Startseite gehen
@@ -37,8 +38,8 @@ Kartenmarkierungen wie Entfernungsringe oder Messlinien haben Hotspots, die anze
 Der Mauszeiger verwandelt sich in eine Hand ![Hand Cursor](../images/cursorhand.jpg), um einen Klickpunkt anzuzeigen.
 
 Klickpunkte sind:
-* Mitte der Entfernungsringe \(kleiner Kreis\).
-* Ende einer Messlinie \(Kreuz).
+* Mitte der Entfernungsringe (kleiner Kreis).
+* Ende einer Messlinie (Kreuz).
 * Start- und Landebahn-Schwellenpunkt \(kleiner Kreis\ für Flughafenverkehrsmuster.
 
 
@@ -129,6 +130,12 @@ Siehe [Information Dock Fenster](INFO.md#information-dock-window) für weitere D
 
 Siehe [Prozedurensuche](SEARCHPROCS.md) für weitere Informationen.
 
+#### ![Create Approach](../images/icons/approachcustom.png "Create Approach") Anflug erstellen {#show-approach-custom}
+
+Öffnet einen Dialog, der es ermöglicht, einen einfachen, benutzerdefinierten Endanflug zu erstellen.
+
+Weitere Informationen finden Sie unter [Benutzerdefinierter Anflug](CUSTOMPROCEDURE.md).
+
 #### ![Measure GC Distance from here](../images/icons/distancemeasure.png "Measure GC Distance from here") Messe den GC Abstand von hier aus. {#measure-gc-distance-from-here}
 
 Zeigt Entfernungen vom ausgewählten Ursprung an, während Sie mit der Maus über die Karte fahren. Klicken Sie mit der linken Maustaste auf die Karte, um die Messung zu beenden und die Messlinie beizubehalten. Alle Messleitungen werden gespeichert und beim nächsten Start wiederhergestellt.
@@ -146,17 +153,23 @@ Der Kurs wird immer in Grad true angegeben, was durch das Suffix `°T` angezeigt
 Die Breite der Distanzmesslinien kann im Dialog `Einstellungen` auf der Registerkarte `Kartendarstellung` geändert werden.
 Siehe [Navigationskartenlegende](LEGEND.md#map-marks) für Details zu den Messlinien.
 
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Holdings auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 #### ![Measure Rhumb Distance from here](../images/icons/distancemeasurerhumb.png "Measure Rhumb Distance from here") Rhumb Distance von hier aus messen. {#measure-rhumb-distance-from-here}
 
 Eine Rhumb-Linie ist eine Linie mit konstantem Verlauf, die zwischen den Wegpunkten eines Luftwegs oder bei der Annäherung an eine VOR- oder NDB-Station verwendet wird. Der Abstand zwischen den Punkten ist etwas größer als die Großkreisroute.
 
-Der Kurs einer Rhumb-Linie wird in Grad magnetisch und wahr \(`°M`, `°T` oder `°M/T`\) angegeben, wenn beide Werte gleich sind.
+Der Kurs einer Rhumb-Linie wird in Grad magnetisch und wahr (`°M`, `°T` oder `°M/T`) angegeben, wenn beide Werte gleich sind.
+
+Zu beachten ist, dass die Rhumb-Linie, die zwei Punkte auf der Erde verbindet, länger ist als der Großkreisweg. Auch in der Nähe der Pole und bei größeren Entfernungen ist die Rhumb-Linie nicht verwendbar.
 
 Die magnetische Abweichung zur Berechnung des magnetischen Verlaufs wird aus der globalen Datei `magdec.bgl` am Anfang der Messung übernommen.
 
 Die magnetische Abweichung von einem Flughafen oder einer Navaid wird verwendet, wenn die Messung an einem solchen Punkt beginnt. Zusätzliche Informationen wie Identität und Frequenz werden in diesem Fall ebenfalls in die Leitung eingefügt.
 
 Sieh [Magnetische Deklination](INTRO.md#magnetic-declination) für Hinweise zu diesem Thema.
+
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Messlinien auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
 
 #### ![Remove Distance measurement](../images/icons/distancemeasureoff.png "Remove Distance measurement") Entfernungsmessung entfernen {#remove-distance-measurement}
 
@@ -168,11 +181,28 @@ Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flughafen klicken. Zeigt ein
 
 Siehe [Traffic Pattern](TRAFFICPATTERN.md).
 
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Messlinien auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 #### ![Remove Airport Traffic Pattern](../images/icons/trafficpatternoff.png "Remove Airport Traffic Pattern") Flughafenverkehrsmuster entfernen {#remove-traffic-pattern}
 
-Enabled if clicked on the airport traffic pattern hotspot \(circle at runway threshold\) which is indicated by a hand cursor.
+Aktiviert, wenn auf den Hotspot des Flughafen-Verkehrsmusters (weißer gefüllter Kreis an der Schwelle der Start- und Landebahn) geklickt wird, der durch einen manuellen Cursor angezeigt wird. Entfernt das Verkehrsmuster aus der Karte.
 
 See [Traffic Pattern](TRAFFICPATTERN.md).
+
+##### ![Display Holding](../images/icons/hold.png "Display Holding") Holding anzeigen {#holding}
+
+Ermöglicht die Darstellung eines Holdings an beliebiger Stelle auf der Karte. Das Holding kann auch an Navaids angehängt werden. Öffnet einen Dialog zur Anpassung des einmal ausgewählten Holdings.
+
+Siehe Kapitel [Holding](HOLD.md) für weitere Informationen.
+
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Holdings auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
+##### Holding entfernen
+
+Aktiviert, wenn auf den Hotspot geklickt wird (Holding fix, weiß gefülltes Dreieck), der durch einen manuellen Mauszeiger angezeigt wird.
+Entfernt das Holding von der Karte.
+
+Siehe Kapitel [Holding](HOLD.md) für weitere Informationen.
 
 #### ![Show Range Rings](../images/icons/rangerings.png "Show Range Rings") Reichweitenringe anzeigen {#show-range-rings}
 
@@ -180,13 +210,17 @@ Zeigt mehrere rote Bereichsringe um die angeklickte Position herum an. Die Anzah
 
 Die Breite aller Range Ringe kann im Dialog `Einstellungen` auf der Registerkarte `Kartendarstellung` geändert werden.
 
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Holdings auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 #### ![Show Navaid range](../images/icons/navrange.png "Show Navaid range") Navaid Bereich anzeigen {#show-navaid-range}
 
 Zeigt einen Ring um das angeklickte Radio navaid \(VOR oder NDB\), der die Reichweite des Navaids anzeigt. Ein Label zeigt Ident- und Frequenzangaben und die Ringfarbe zeigt den Navaid-Typ an.
 
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Holdings auf der Karte ausgeblendet sind (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 #### ![Remove Range Ring](../images/icons/rangeringoff.png "Remove Range Ring") Entfernungsringe entfernen {#remove-range-ring}
 
-Entfernt die ausgewählten Ringe aus der Karte. Dieser Menüpunkt ist aktiv, wenn Sie mit der rechten Maustaste auf den Mittelpunkt eines Entfernungsrings \(kleiner Kreis\) klicken.
+Entfernt die ausgewählten Ringe aus der Karte. Dieser Menüpunkt ist aktiv, wenn Sie mit der rechten Maustaste auf den Mittelpunkt eines Entfernungsrings (kleiner Kreis) klicken.
 
 #### ![Remove all Range Rings and Distance measurements](../images/icons/rangeringsoff.png "Remove all Range Rings and Distance measurements") Entferne alle Entfernungsringe und Distanzmessungen. {#remove-all-range-rings-and-distance-measurements}
 
@@ -201,6 +235,12 @@ Die standardmäßige Startbahn wird als Startposition verwendet, wenn das angekl
 #### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Als Zielflugplatz setzen {#set-as-flight-plan-destination}
 
 Dieser Menüpunkt ist aktiv, wenn sich der Klick auf einem Flughafen befindet. Er ersetzt entweder das Flugplanziel oder fügt den Flughafen hinzu, wenn der Flugplan leer ist.
+
+#### ![Set as Flight Plan Alternate](../images/icons/airportroutealt.png "Set as Flight Plan Alternate") Als Flugplanalternative festlegen {#set-as-flight-plan-alternate}
+
+Dieser Menüpunkt ist aktiv, wenn Sie an einem Flughafen angeklickt haben. Wenn Sie diesen Punkt auswählen, wird der Flughafen als Alternative zum aktuellen Flugplan hinzugefügt.
+
+Dem Flugplan können mehr als eine Alternative hinzugefügt werden. Die Flugstrecken zu den alternativen Flughäfen beginnen alle vom Zielort aus.
 
 #### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Position zum Flugplan hinzufügen {#add-position-to-flight-plan}
 
@@ -217,7 +257,7 @@ Das Gleiche wie `Position zum Flugplan hinzufügen`, aber das ausgewählte Objek
 
 #### ![Delete from Flight Plan](../images/icons/routedeleteleg.png "Delete from Flight Plan") Aus dem Flugplan löschen {#delete-from-flight-plan}
 
-Löscht die ausgewählte Flughafen-, Navigations- oder Benutzerflugplanposition aus dem Plan.
+Löscht die ausgewählte Flughafen-, Navigations- oder Benutzerflugplanposition aus dem Plan. Dies kann Abflug, Ziel, alternativer Flughafen oder ein Zwischenziel sein.
 
 #### ![Edit Flight Plan Position](../images/icons/routestring.png "Edit Flight Plan Position") Flugplan Position bearbeiten {#edit-name-of-user-waypoint}
 
@@ -252,6 +292,12 @@ Mit einem Linksklick wird der Benutzerpunkt an die neue Position gesetzt. Klicke
 #### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Lösche Nutzerpunkt {#delete-userpoint}
 
 Entfernt den benutzerdefinierten Wegpunkt nach Bestätigung aus den Benutzerdaten. Nur aktiviert, wenn das ausgewählte Objekt ein Benutzerpunkt ist.
+
+#### ![Edit Log Entry](../images/icons/logdata_edit.png "Edit Log Entry") Logbucgeintrag bearbeiten {#edit-log-entry}
+
+Aktiv, wenn Sie auf die blaue Großkreidelinie oder einen Flughafen eines Logbucheintrags klicken.
+
+Ermöglicht das Bearbeiten des jeweiligen Logbucheintrags. Siehe [Logbucheintrag bearbeiten](LOGBOOK.md#logbuch-dialog-edit).
 
 #### ![Show in Search](../images/icons/search.png "Show in Search") Zeige in der Suche {#show-in-search}
 

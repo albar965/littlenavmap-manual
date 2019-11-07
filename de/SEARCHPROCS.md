@@ -43,7 +43,7 @@ Fettgedruckter roter Text zeigt einen Fehler im Abschnitt an. Das Verfahren ist 
 
 ### Obere Schaltflächen {#top-buttons}
 
-#### Typ Filter \(All Procedures\) {#procedure-filter-type}
+#### Typ Filter (All Procedures) {#procedure-filter-type}
 
 Der Typfilter ist für eine FSX- oder P3D-Bestandsdatenbank nicht verfügbar. Ein Navdata-Update ist erforderlich, um die SID- und STAR-Verfahren zu erhalten.
 
@@ -59,7 +59,7 @@ Der Typfilter ermöglicht die folgenden Auswahlmöglichkeiten:
 Die jeweiligen Übergänge werden immer angezeigt.
 
 
-#### Runway Filter \(All Runways\) {#procedure-filter-runway}
+#### Runway Filter (All Runways) {#procedure-filter-runway}
 
 Dieser Filter ist immer verfügbar und hilft, Prozeduren für eine bestimmte Start- oder Landebahn zu finden.
 
@@ -79,7 +79,7 @@ Zentriert die Karte auf die ausgewählte Prozedur.
 
 #### Auswahl folgen {#follow-selection}
 
-Die Kartenansicht wird bei aktivierter Funktion auf das ausgewählte Verfahren gezoomt. 
+Die Kartenansicht wird bei aktivierter Funktion auf das ausgewählte Verfahren gezoomt.
 
 #### ![Insert into Flight Plan / Use as Destination / Use as Departure](../images/icons/routeadd.png "Insert into Flight Plan / Use as Destination / Use as Departure") In den Flugplan einfügen / Als Reiseziel verwenden / Als Abflug verwenden {#procedure-insert}
 
@@ -87,11 +87,11 @@ Text und Funktionalität dieses Menüpunktes hängen von der gewählten Verfahre
 
 Verwenden Sie das Kontextmenü der Flugplattentabelle, um Prozeduren zu entfernen. Siehe [Delete Selected Legs or Procedure](FLIGHTPLAN.md#delete-selected-legs.
 
-Wenn eine Transition ausgewählt wird, wird auch die entsprechende Prozedur \(Approach, SID oder STAR\) hinzugefügt oder ersetzt.
+Wenn eine Transition ausgewählt wird, wird auch die entsprechende Prozedur (Approach, SID oder STAR) hinzugefügt oder ersetzt.
 
 `Einfügen.... in den Flugplan`:
 
-Mit diesem Menüpunkt wird die ausgewählte Prozedur in den aktuellen Flugplan aufgenommen. Ein Verfahren des gleichen Typs \(SID, STAR oder Approach mit oder ohne Transition\) wird ersetzt, wenn es bereits im Flugplan vorhanden ist.
+Mit diesem Menüpunkt wird die ausgewählte Prozedur in den aktuellen Flugplan aufgenommen. Ein Verfahren des gleichen Typs (SID, STAR oder Approach mit oder ohne Transition) wird ersetzt, wenn es bereits im Flugplan vorhanden ist.
 
 `Verwenden Sie .... als Ziel` oder `Verwenden Sie .... als Abflug`:
 

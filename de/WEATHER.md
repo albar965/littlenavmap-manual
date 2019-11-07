@@ -10,9 +10,9 @@ Das Wetter kann aus den folgenden Quellen entnommen werden:
 * [VATSIM](https://www.vatsim.net) Netzwerk Online-Wetterdienst
 * [IVAO](https://www.ivao.aero) Netzwerk Online-Wetterdienst
 * [HiFi Simulation Technologies](http://www.hifisimtech.com):
-  * _Active Sky Next_ \(ASN\)
+  * _Active Sky Next_ (ASN)
   * _AS16_
-  * _Active Sky for Prepar3D v4_ \(ASP4\)
+  * _Active Sky for Prepar3D v4_ (ASP4)
 
 Sie können im Dialogfeld `Einstellungen` auf der Registerkarte `Wetter` oder auf der Registerkarte `Wetter` im Dockfenster `Information`festlegen, welche Quellen zur Anzeige der METAR-Informationen in Tooltips verwendet werden.
 
@@ -29,7 +29,7 @@ Außerdem können Wetter und nächstes Wetter in X-Plane ungenau sein. Dies ist 
 
 ![Weather tab](../images/weather.jpg "Weather tab")
 
-_**Foto oben:** Dekodierte Wetterinformationen von X-Plane und NOAA. Die Wettersymbole auf der Karte verwenden NOAA als Quelle. \(suffix _`- Map`_ nach den Flugregeln\). Das X-Plane-Wetter ist älter als sechs Stunden und daher rot markiert._
+_**Bild oben:** Dekodierte Wetterinformationen von X-Plane und NOAA. Die Wettersymbole auf der Karte verwenden NOAA als Quelle. (suffix _`- Map`_ nach den Flugregeln). Das X-Plane-Wetter ist älter als sechs Stunden und daher rot markiert._
 
 ### Wetter-Quellen
 
@@ -39,7 +39,7 @@ Wetterinformationen von einem Flugsimulator oder X-Plane `METAR.rwx` fallen je n
 
 * `Station`: Der Flughafen verfügt über eine Wetterstation. Dies ist die genaueste Wetteranzeige.
 * `Nearest`: Der ausgewählte Flughafen hat keine Wetterstation und der Bericht von der nächstgelegenen bestehenden Wetterstation wurde abgeholt. Die Kennung der nächstgelegenen Station sowie Entfernung und Höhe werden im METAR und auf der decodierten Wetterkarte angezeigt. Beachten Sie, dass die Wetterstation nicht unbedingt ein Flughafen ist.
-* `Interpolated` \(nicht für X-Plane\): Das Wetter wird vom Flugsimulator von drei Stationen  interpoliert, die dem ausgewählten Flughafen am nächsten sind. FSX und P3D bieten nur nicht interpoliertes Wetter für Flughäfen in der Nähe des Benutzerflugzeugs. Das Wetter für andere Flughäfen wird immer interpoliert. Die Kennung des ausgewählten Flughafens wird im METAR-Report für diese Art von Wetterbericht verwendet.
+* `Interpolated` (nicht für X-Plane): Das Wetter wird vom Flugsimulator von drei Stationen  interpoliert, die dem ausgewählten Flughafen am nächsten sind. FSX und P3D bieten nur nicht interpoliertes Wetter für Flughäfen in der Nähe des Benutzerflugzeugs. Das Wetter für andere Flughäfen wird immer interpoliert. Die Kennung des ausgewählten Flughafens wird im METAR-Report für diese Art von Wetterbericht verwendet.
 
 Das Wetter im Flugsimulator wird alle 15 Sekunden aktualisiert, um manuelle Änderungen oder Änderungen im Wetterschema zu erfassen.
 
@@ -78,4 +78,54 @@ Siehe auch [Legende - Flugplatzwetter](LEGEND.md#airport-weather) für eine Besc
 ![Airport Weather](../images/weather_map.jpg "Weather tab")
 
 _**Bild oben:** Wettersituation um New York. Alle Flughäfen sind VFR- und mit wenig Wind.
+
+#### Höhenwinde {#wind}
+
+_Little Navmap_ kann Höhenwinde herunterladen und anzeigen, die entweder auf X-Plane oder den Daten der [National Oceanic and Atmospheric Administration] (https://www.noaa.gov/) basieren.
+
+Letztere sind Höhenwindvorhersagen, die viermal täglich aktualisiert werden und von den meisten Simulatoren und Wetterprogrammen als Datenquelle genutzt werden. Die Windgeschwindigkeit und -richtung ist in einem Ein-Grad-Raster angeordnet.
+
+_Little Navmap_ kann ein Windparchengitter für eine ausgewählte Windschicht oder an Flugplan-Wegpunkten anzeigen. Tooltips an den Windfäden zeigen Winddetails für mehrere Ebenen an der Position.
+
+Wenn Sie mit der Maus über das Höhenprofil fahren, wird der Wind an der Flugplanposition angezeigt. Siehe [Flugplan Höhenprofil - Top Label](PROFILE.md#top-label).
+
+Winde werden zur Berechnung der Flugzeit, des Reisetreibstoffs, des Blocktreibstoffs, des top of descent und des top of climb verwendet.
+
+Eine manuelle Windeinstellung für die Reiseflughöhe kann ebenfalls vorgenommen werden. Siehe [Aircraft Performance - Buttons] (AIRCRAFTPERF.md#aircraft-performance-buttons).
+
+Unter [Legende - Winds Aloft](LEGEND.md#high-alt-wind) finden Sie eine Erklärung der Windsymbole und unter [Optionen - Wetter](OPTIONS.md#weather) weitere Konfigurationsmöglichkeiten.
+
+Winddatenquelle für die Anzeige mit [Wind Source](MENUS.md#wind-source) auswählen.
+
+#### ![Wind Levels Button](../images/icons/wind.png "Wind Levels Button") Schaltfläche "Windstufen" {#wind-level}
+
+Gleich wie das Menü [Wind Levels Menu](MENUS.md#wind-levels).
+
+Die Menüschaltfläche aktiviert oder deaktiviert die Anzeige der Windhöhe durch ein Windbarbenraster auf verschiedenen Ebenen sowie an Flugplan-Wegpunkten.
+
+Das Dropdown-Menü enthält die folgenden Elemente:
+
+* `Bei Flugplan-Wegpunkten`: Schaltet Windkurven mit gelbem Rand an Flugplan-Wegpunkten ein und aus. Windbögen unter 4000 Fuß über dem mittleren Meeresspiegel entfallen. Diese Funktion ist unabhängig von der Auswahl unten.
+* `Keine`: Zeigen Sie das Windspitzengitter nicht an. Die Winddaten werden weiterhin heruntergeladen und verarbeitet, bis die Quelle auf `Deaktiviert` gesetzt wird.
+* `Ground (nur NOAA)`: Zeigt das Windbarbengitter für bodennahen Wind (ca. 260 Fuß). Nur verfügbar, wenn die NOAA-Windquelle ausgewählt ist.
+* `Auf Flugplan Reiseflughöhe`: Zeigt das Windstachelgitter für Winde in der aktuellen Flugplan-Kreuzfahrthöhe an.
+* `At 5.000 ft` - `At 45.000 ft`: Zeigt das Windfahnengitter für die ausgewählte Höhe an.
+
+### Tooltips {##Wind-Tooltips}
+
+Die Windpunkte zeigen einen optionalen Tooltip mit Windrichtung, Geschwindigkeit und Windquelle, wenn Sie mit der Maus darüber fahren.
+
+Die Richtung ist standardmäßig magnetisch, kann aber im Optionsdialog auf der Seite `Einheiten` geändert werden. Diese Tooltips zeigen den Wind für alle Ebenen an, in denen die aktuell angezeigte Ebene markiert ist **fett**. Die Reiseflughöhe wird als zusätzliche Ebene hinzugefügt, wenn sie für die Anzeige ausgewählt wird.
+
+![Winds Aloft](../images/wind.jpg "Winds Aloft")
+
+_**Bild oben:** mit Tooltip bei Windpunkten im Gitter und Wind-Dropdownmenü._
+
+![Winds Aloft at Flight Plan](.../images/wind_route.jpg "Winds Aloft at Flight Plan")
+
+_**Bild oben:** Windpunkte an Flugplan-Wegpunkten und Winddaten in Tooltip._*.
+
+
+
+
 _

@@ -70,5 +70,5 @@ Sie können die übersetzten Verzeichnisnamen oder die englische Variante verwen
 _Little Navmap_  sucht nach Dateien, die sowohl den übersetzten als auch den englischen Pfad verwenden: `...\Little Navmap Files\Airports\LFEC` und `...\Little Navmap Dateien\Flugplätze\LFEC`.
 
 ![Links zu Flughafeninformationen](.../images/infolinks.jpg "Flughafeninformationen
-*** Übersetzt mit www.DeepL.com/Translator (kostenlose Version) ***
+
 

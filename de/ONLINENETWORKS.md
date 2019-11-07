@@ -1,16 +1,16 @@
 ## Online Netzwerke {#online-networks}
 
-Die Online-Netzwerkfunktionalität ermöglicht das Herstellen einer Verbindung [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero)  oder andere Online-Netzwerke, die `whazzup.txt` Dateien veröffentlichen. Dies umfasst die Anzeige von Informationen für Zentren, Clients und Server auf der Karte.
+Die Online-Netzwerkfunktionalität ermöglicht das Herstellen einer Verbindung [VATSIM](https://www.vatsim.net), [IVAO](https://ivao.aero), [PilotEdge](https://www.pilotedge.net/)  oder andere Online-Netzwerke, die `whazzup.txt` Dateien veröffentlichen. Dies umfasst die Anzeige von Informationen für Zentren, Clients und Server auf der Karte.
 
 Netzwerkspezifische Informationen wie Benutzernamen, aktive Center/Towers, Frequenzen, Flugpläne und vieles mehr werden weltweit ohne Einschränkungen wie Entfernung zum Benutzerflugzeug angezeigt.
 
-**Beachten Sie, dass alle zugehörigen Fensterregisterkarten, Menüpunkte und Schaltflächen in der Symbolleiste ausgeblendet sind, wenn Online-Netzwerke deaktiviert sind, was der Standard ist. **
-
 Der Zugriff auf Online-Netzwerke kann im Dialog "Einstellungen" auf der Registerkarte " [Online Fliegen](OPTIONS.md#online-flying) aktiviert und konfiguriert werden. Vordefinierte Optionen für die bekannten Netzwerke sind ebenso verfügbar wie frei konfigurierbare.
 
-![Overview of Online Network Functions](../images/online_overview.jpg "Overview of Online Network Functions")
+!**Die Funktionalität des Online-Netzwerks finden Sie an folgenden Stellen:***.
 
-_**Bild oben:** Eine Übersicht über alle Fenster, Registerkarten und Schaltflächen für das Online-Netzwerk._
+* Suchen Sie das Dockfenster, die Registerkarten `Online Clients`, `Online Center` und `Online Server`.
+* Informations-Dockfenster, Registerkarten `Online Clients` und `Online-Center`.
+* Optionen-Dialog, `Online Flying`.
 
 ### Simulator- und Online-Doppelbilder von Flugzeugen {#online-networks-duplicates}
 
@@ -42,7 +42,7 @@ _**Bild oben:** Online-Netzwerk-Clients/Flugzeuge in Suchmaske, Karte, Tooltip u
 
 #### Centers {#online-networks-centers}
 
-Online-Center werden in _Little Navmap_ als kreisförmige Lufträume dargestellt und bieten die gleiche Funktionalität wie die anderen Lufträume \(Tooltips, Informationen und mehr\). Sie können getrennt von den anderen Lufträumen über die Schaltfläche ![Show Online Network Airspaces](../images/icons/airspaceonline.png "Show Online Network Airspaces") oder Menue [Zeige Onlinnetzwerk Lufträume](MENUS.md#show-online-airspaces) aktiviert werden.
+Online-Center werden in _Little Navmap_ als kreisförmige Lufträume dargestellt und bieten die gleiche Funktionalität wie die anderen Lufträume (Tooltips, Informationen und mehr). Sie können getrennt von den anderen Lufträumen aktiviert werden, indem man `Online` als Luftraumquelle wählt ([Luftraumquelle](MENUS.md#airspace-source))
 
 **Beachten Sie, dass die Kreise nicht die realen Lufträume darstellen und nur dazu verwendet werden, das Vorhandensein eines aktiven Centers, Towers, Ground oder einer anderen Position anzuzeigen.**
 
@@ -51,15 +51,17 @@ Detaillierte Informationen zu den Online-Zentren/Lufträumen finden Sie auf der 
 Die folgenden Varianten sind verfügbar und können in den Dropdown-Menüs in der Luftraum-Symbolleiste oder im Untermenü  [Airspaces](MENUS.md#airspaces) aktiviert werden.:
 
 * **Observer:** Die Kreisgröße wird aus dem Wert `Visual Range` der Center genommen.
-* **Flight Information \(Center\):** Nutzt `Visual Range`.
-* **Delivery \(Clearance\):** Uses `Visual Range`.
+* **Flight Information (Center):** Nutzt `Visual Range`.
+* **Delivery (Clearance):** Uses `Visual Range`.
 * **Ground:** Zeigt einen Kreis mit einem Durchmesser von 10 nm..
 * **Tower:** 20 nm Kreis.
 * **Approach:** 40 nm Kreis.
-* **ACC \(Center\):** Nutz `Visual Range`.
+* **ACC (Center):** Nutz `Visual Range`.
 * **Departure:** Nutz `Visual Range`.
 
 Die Größe der Kreisformen kann in der Konfigurationsdatei geändert werden. Siehe [Online Network Center](CUSTOMIZE.md#customize-online-center).
+
+Sie können Center auch einer Grenzform zuordnen, indem Sie OpenAir-Lufträume aus der Benutzerluftraumdatenbank importieren. Weitere Informationen hierzu finden Sie unter [Online Airspaces](SCENERY.md#load-scenery-library-online-airspaces).
 
 ![Customize Online Network Centers](../images/online_center.jpg "Online Network Center")
 

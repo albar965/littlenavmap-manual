@@ -1,6 +1,6 @@
 ## Nutzerdefinierte Wegpunkte {#userpoints}
 
-Nutzerdefinierte Wegpunkte \(oder Nutzerpunkte\) ermöglichen das Hinzufügen, Bearbeiten, Suchen, Exportieren und Importieren von Lesezeichen, Points of Interest, Wegpunkten und mehr. Sie können frei wählen, welche Typen Sie als Symbole auf der Karte sehen möchten.
+Nutzerdefinierte Wegpunkte (oder Nutzerpunkte) ermöglichen das Hinzufügen, Bearbeiten, Suchen, Exportieren und Importieren von Lesezeichen, Points of Interest, Wegpunkten und mehr. Sie können frei wählen, welche Typen Sie als Symbole auf der Karte sehen möchten.
 
 ![Overview of User-defined Waypoints](../images/userpoint_overview.jpg "Overview of User-defined Waypoints")
 
@@ -14,7 +14,7 @@ Zusätzliche Kontextmenüelemente und Schaltflächen ermöglichen das Hinzufüge
 
 ### Top-Buttons und zusätzliche Menüpunkte {#userpoints-top-buttons}
 
-Siehe [Suchergebnistabelle Ansicht Kontextmenü](SEARCH.md#search-result-table-view-context-menu) für eine Beschreibung der gemeinsamen Kontextmenüelemente über alle Suchdialoge hinweg.
+Siehe [Suchergebnistabelle Ansicht Kontextmenü](SEARCH.md#search-result-table-view-context-menu) für eine Beschreibung der gemeinsamen Kontextmenüelemente über alle Suchdialoge hinweg. Alle Schaltflächen haben ein Äquivalent im Kontextmenü der Ergebnistabelle.
 
 #### ![Add Userpoint](../images/icons/userdata_add.png "Add Userpoint") Nutzerpunkt hinzufügen {#userpoints-add}
 
@@ -37,6 +37,8 @@ Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog.
 #### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Nutzerpunkt löschen {#userpoints-delete}
 
 Entfernt die ausgewählten Benutzerpunkte nach einem Bestätigungsdialog.
+
+Ein Rückgängigmachen ist nicht möglich, aber bei jedem Start werden Datenbanksicherungen erstellt. Weitere Informationen zu Datenbank-Backup-Dateien finden Sie unter [Nutzerdaten](FILES.md#userdata).
 
 #### ![Reset Search](../images/icons/clear.png "Reset Search") Suche zurücksetzen {#userpoints-reset-search}
 
@@ -68,7 +70,13 @@ Das Feld `Beschreibung` erlaubt mehrzeiligen Text und Sonderzeichen. Formatierun
 
 Links werden im Feld `Beschreibung` erkannt und können im Dockfenster `Information` auf der Registerkarte `Navaids` geöffnet werden, die nach dem Anklicken eines Nutzerpunkts oder dem Auswählen von `Informationen anzeigen` in einem der Kontextmenüs angezeigt wird. Normale Weblinks wie  `http://www.example.com` oder `https://www.example.com` werden neben Verzeichnis- oder Dateilinks wie z.B. `file:///C:/Projekte/atools` unter Windows oder `file:///home/alex/Aircraft_Notes.txt` aus macOS oder Linux erkannt.
 
-Das Feld `Sichtbar von` ermöglicht die Festlegung der Sichtbarkeit auf der Karte in Abhängigkeit von der Zoomdistanz. Der Zoomabstand \(Blickwinkelabstand zur Erdoberfläche\) für die aktuelle Kartenansicht wird in der [Statusleiste](MENUS.md#statusbar) angezeigt. Der Nutzerpunkt ist für alle Zoomabstände sichtbar, die kleiner sind als der Wert in `Sichtbar von`. Der Maximalwert beträgt 3000 nm und der Minimalwert 1 nm.
+Normale Weblinks wie `http://www.example.com` oder `https://www.example.com` werden neben Verzeichnis- oder Dateilinks wie `file:///C:/Users/me/Documents/Aircraft%20Notes.txt` unter Windows oder `file:///home/me/Aircraft%20Notes.txt` unter MacOS oder Linux erkannt.
+
+Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich `/` anstelle des Backslash `\` als Pfadtrennzeichen verwenden müssen.
+
+Ersetzen Sie Leerzeichen in Links durch `%20`, da _Little Navmap_  Links bis zum nächsten Leerzeichen erkennt.
+
+Das Feld `Sichtweite von` ermöglicht die Festlegung der Sichtbarkeit auf der Karte in Abhängigkeit von der Zoomdistanz. Die Zoomdistanz (Blickwinkelabstand zur Erdoberfläche) für die aktuelle Kartenansicht wird in der [Statusleiste](MENUS.md#statusbar) angezeigt. Der Nutzerpunkt ist für alle Zoomabstände sichtbar, die kleiner sind als der Wert in `Sichtweite von`. Der Maximalwert beträgt 3000 nm und der Minimalwert 1 nm.
 
 Zur Bestätigung des Dialogs sind gültige Koordinaten erforderlich. Eine detaillierte Beschreibung der erkannten Koordinatenformate finden Sie unter [Koordinatenformate](COORDINATES.md#coordinates-formats). Ein Label unter den Koordinaten zeigt die analysierten Koordinaten oder eine Fehlermeldung an, falls die Koordinaten nicht analysiert werden konnten.
 
@@ -80,11 +88,11 @@ Die Schaltfläche `Reset` löscht alle Felder mit Ausnahme der Koordinaten und s
 
 ![Add Dialog for User-defined Waypoint](../images/userpoint_add.jpg "Add Dialog for User-defined Waypoints")
 
-_**Bild oben:** Fügt einen Dialog hinzu, der automatisch durch den Kontext gefüllt wurde. Der Benutzer hat mit der rechten Maustaste auf einen Flughafen geklickt und _`Füge Nutzerpunkt Flughafen Frankfurt am Main (EDDF) hinzu`_ausgewählt._
+_**Bild oben:** Fügt einen Dialog hinzu, der automatisch durch den Kontext gefüllt wurde. Der Benutzer hat mit der rechten Maustaste auf einen Flughafen geklickt und `Füge Nutzerpunkt Flughafen Frankfurt am Main (EDDF) hinzu` ausgewählt._
 
-#### Dialog Nutzerpunkte bearbeiten {#userpoints-dialog-edit}
+### Dialog Nutzerpunkte bearbeiten {#userpoints-dialog-edit}
 
-##### Ein einzelner Nutzerpunkt
+#### Ein einzelner Nutzerpunkt
 
 Der Bearbeitungsdialog zeigt die gleichen Bearbeitungsfelder wie der Dialog zum Hinzufügen von Benutzerpunkten oben.
 
@@ -100,7 +108,7 @@ Die Schaltfläche `Reset` macht alle manuellen Änderungen rückgängig und setz
 
 _**Bild oben:** Bearbeitungsdialog für einen einzelnen Nutzerpunkt._
 
-##### Mehrere Nutzerpunkte
+#### Mehrere Nutzerpunkte
 
 Wenn mehr als ein Nutzerpunkt zur Bearbeitung ausgewählt wurde, zeigt der Bearbeitungsdialog auf der rechten Seite eine Spalte mit Kontrollkästchen an.
 
@@ -117,7 +125,7 @@ In Kombination mit der leistungsstarken Suchfunktion ermöglicht dies Massenänd
 
 ![Edit Dialog for User-defined Waypoints](../images/userpoint_edit_bulk.jpg "Edit Dialog for User-defined Waypoints")
 
-_**Bild oben:** Bearbeitungsdialog für mehr als einen Nutzerpunkt. Die Felder _`Region`_ und _`Sichtbar von`_ werden für alle ausgewählten Punkte geändert. Alle anderen Felder bleiben unverändert._
+_**Bild oben:** Bearbeitungsdialog für mehr als einen Nutzerpunkt. Die Felder `Region` und `Sichtbar von` werden für alle ausgewählten Punkte geändert. Alle anderen Felder bleiben unverändert._
 
 ### Typen {#userpoints-types}
 
@@ -129,25 +137,40 @@ Einige Typen werden als Standardeinstellungen beim Hinzufügen neuer Nutzerpunkt
 
 **Beachten Sie, dass die Userpoint-Typen vorerst nicht in andere Sprachen übersetzt werden können..**
 
+#### Flughäfen
+* ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Standard beim Erstellen eines Benutzerpunktes auf einem Flughafen.
+* ![Airstrip](../images/icons/userpoint_Airstrip.png "Airstrip") **Airstrip**
+* ![Closed](../images/icons/userpoint_Closed.png "Closed") **Closed airport**
+* ![Helipad](../images/icons/userpoint_Helipad.png "Helipad") **Helipad**
+* ![Seaport](../images/icons/userpoint_Seaport.png "Seaport") **Seaport**
+
+#### Navaids
+* ![DME](../images/icons/userpoint_DME.png "DME") **DME**: Entfernungsmessgeräte.
+* ![NDB](../images/icons/userpoint_NDB.png "NDB") **NDB**: Non-directional beacon.
+* ![TACAN](../images/icons/userpoint_TACAN.png "TACAN") **TACAN**: Taktisches Flugsicherungssystem.
+* ![VORDME](../images/icons/userpoint_VORDME.png "VORDME") **VORDME**:  VHF-Rundstrahlungsbereich und DME.
+* ![VORTAC](../images/icons/userpoint_VORTAC.png "VORTAC") **VORTAC**: VOR und TACAN.
+* ![VOR](../images/icons/userpoint_VOR.png "VOR") **VOR**: VHF-Rundstrahlungsbereich.
+* ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Visueller Meldepunkt.
+* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Standardeinstellung beim Erstellen eines Benutzerpunkts auf einem Navaid.
+
+#### Sehenswürdigkeiten
+
 * ![Airport](../images/icons/userpoint_Airport.png "Airport") **Airport**: Standard beim Erstellen eines Nutzerpunktes auf einem Flughafen.
 * ![Airstrip](../images/icons/userpoint_Airstrip.png "Airstrip") **Airstrip**
 * ![Bookmark](../images/icons/userpoint_Bookmark.png "Bookmark") **Bookmark**: Standardtyp für neue Nutzerpunkte.
 * ![Cabin](../images/icons/userpoint_Cabin.png "Cabin") **Cabin**
-* ![Closed](../images/icons/userpoint_Closed.png "Closed") **Closed airport**
 * ![Error](../images/icons/userpoint_Error.png "Error") **Error**
 * ![Flag](../images/icons/userpoint_Flag.png "Flag") **Flag**
-* ![Helipad](../images/icons/userpoint_Helipad.png "Helipad") **Helipad**
+* * ![Lighthouse](../images/icons/userpoint_Lighthouse.png "Lighthouse") **Leuchtturm**
 * ![Location](../images/icons/userpoint_Location.png "Location") **Location**
-* ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") **Logbook**: Typ der automatisch hinzugefügten Logbucheinträge für Start und Landung. Siehe Menüpunkt [Logbucheintrag erstellen](MENUS.md#userdata-menu-create-logbook).
+* ![Logbook](../images/icons/userpoint_Logbook.png "Logbook") **Logbook**. Auch Legacy-Logbuch-Eintrag.
 * ![Marker](../images/icons/userpoint_Marker.png "Marker") **Marker**
 * ![Mountain](../images/icons/userpoint_Mountain.png "Mountain") **Mountain**
 * ![Obstacle](../images/icons/userpoint_Obstacle.png "Obstacle") **Obstacle**
-* ![Pin](../images/icons/userpoint_Pin.png "Pin") **Pin**
 * ![POI](../images/icons/userpoint_POI.png "POI") **POI**
-* ![Seaport](../images/icons/userpoint_Seaport.png "Seaport") **Seaport**
+* ![Pin](../images/icons/userpoint_Pin.png "Pin") **Pin**
 * ![Unknown](../images/icons/userpoint_Unknown.png "Unknown") **Unknown**: Typ namens `Unbekannt` und alle Typen, die nicht mit den Standardtypen in dieser Liste übereinstimmen.
-* ![VRP](../images/icons/userpoint_VRP.png "VRP") **VRP**: Sichtbarer Meldepunkt.
-* ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") **Waypoint**: Standard beim Erstellen eines Nutzerpunktes über einer Navaid.
 
 ### CSV Datenformat {#userpoints-csv}
 
@@ -159,7 +182,7 @@ Die Mindestfelder für den Import sind `Typ`, `Name`, `Ident`, `Breitengrad` und
 
 Alle zwölf Felder werden beim Export von Nutzerpunkten als CSV gespeichert. Außerdem wird das mehrzeilige Feld `Beschreibung` bei Bedarf in Anführungszeichen gesetzt und berücksichtigt Zeilenumbrüche.
 
-Das englische Zahlenformat \(dot `.` als Dezimaltrennzeichen\) wird beim Import und Export verwendet, um den Austausch von Dateien auf Computern mit unterschiedlichen Sprach- und Ländereinstellungen zu ermöglichen.
+Das englische Zahlenformat (dot `.` als Dezimaltrennzeichen) wird beim Import und Export verwendet, um den Austausch von Dateien auf Computern mit unterschiedlichen Sprach- und Ländereinstellungen zu ermöglichen.
 
 _Little Navmap_ ntzt [UTF-8](https://en.wikipedia.org/wiki/UTF-8 ) Kodierung beim Lesen und Schreiben von Dateien. Dies ist nur von Bedeutung, wenn Sie Sonderzeichen wie Umlaute, Akzente oder andere verwenden. Andernfalls spielt die Kodierung keine Rolle.
 
@@ -199,11 +222,11 @@ Beachten Sie die folgenden Einschränkungen beim Verarbeiten von CSV-Dateien: Im
 | 4        | Latitude             | Ja     | Nein           | Bereich von -90 bis 90 Grad mit Punkt `.` als Dezimaltrennzeichen                                                                                                                |
 | 5        | Longitude            | Ja     | Nein           | Bereich von -180 bis 180 Grad mit Punkt `.` als Dezimaltrennzeichen.                                                                                                            |
 | 6        | Altitude             | Nein      | Ja          | Muss eine gültige Zahl sein, wenn sie verwendet wird. Die Einheit ist immer feet.                                                                                                                          |
-| 7        | Magnetic variance    | Nein      | Ja          | Wird beim Import ignoriert und beim Export auf einen gültigen berechneten Wert gesetzt.                                                                                                               |
+| 7        | Magnetic declination    | Nein      | Ja          | Wird beim Import ignoriert und beim Export auf einen gültigen berechneten Wert gesetzt.                                                                                                               |
 | 8        | Tags                 | Nein      | Ja          | Freies Feld. GUI hat keine spezielle Stichwortsuche.                                                                                                                              |
 | 9        | Description          | Nein     | Ja          | Frei verwendbares Feld, das Zeilenumbrüche erlaubt.                                                                                                                                    |
 | 10       | Region               | Nein      | Ja          | ICAO-Region mit zwei Buchstaben für einen Nutzerpunkt oder Wegpunkt. Wird für den Export von X-Plane verwendet. Ersetzt durch den Standardwert `ZZ` beim X-Plane Export, wenn dieser leer ist.                                       |
-| 11       | Visible from         | Nein      | Ja          | Definiert, ab welcher Zoomdistanz in Seemeilen \(angezeigt in [Statusleiste](MENUS.md#statusleiste)\) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.                    |
+| 11       | Visible from         | Nein      | Ja          | Definiert, ab welcher Zoomdistanz in Seemeilen (angezeigt in [Statusleiste](MENUS.md#statusleiste)) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.                    |
 | 12       | Last update timestamp| Nein      | Ja          | ISO-Datum und Uhrzeit der letzten Änderung. Das Format ist unabhängig von den Einstellungen des Systemdatumsformats. Format: `YYYY-MM-DDTHH:mm:ss`. Beispiel: `2018-03-28T22:06:16.763`. Nicht in der GUI editierbar.|
 
 ### X-Plane User_fix.dat Data Format {#userpoints-xplane}
@@ -241,8 +264,8 @@ I
 
 * Die Koordinaten werden in die  _Little Navmap_  Nutzerpunkt-Koordinaten eingelesen.
 * Die Fix-Id `PACEC` wird in das Feld **Ident** in _Little Navmap_ eingelesen.
-* Der festgelegte Flughafen `ENRT` \(enroute: kein Flughafen hier\) wird in das Feld **Tags** in _Little Navmap_ eingelesen.
-* Die Region `ZZ` \(ungültig oder keine Region\) wird in das Feld **Region** in _Little Navmap_ eingelesen.
+* Der festgelegte Flughafen `ENRT` (enroute: kein Flughafen hier) wird in das Feld **Tags** in _Little Navmap_ eingelesen.
+* Die Region `ZZ` (ungültig oder keine Region) wird in das Feld **Region** in _Little Navmap_ eingelesen.
 * **Type** wird auf `Wegpunkt`  ![Waypoint](../images/icons/userpoint_Waypoint.png "Waypoint") für alle importierten Korrekturen gesetzt.
 
 #### Export

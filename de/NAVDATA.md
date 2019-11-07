@@ -25,11 +25,11 @@ Ein Vorteil dieses Modus ist, dass die Anflugverfahren immer dem Layout der Star
 
 ![Airport from Simulator Scenery](../images/airport_simulator_scenery.jpg "Airport from Simulator Scenery")
 
-_**Bild oben:** Flughafendiagramm für _`EDDN`_ aus der Simulator Szenery \(X-Plane\) in den Modi _`Navigraph Datenbank nicht benutzen`_ oder _`Nutze Navigraph für Navigationshilfen und Prozeduren`_._
+_**Bild oben:** Flughafendiagramm für _`EDDN`_ aus der Simulator Szenery \(X-Plane\) in den Modi _`Navigraph Datenbank nicht benutzen`_ oder _`Nutze Navigraph für Navigationshilfen und Prozeduren`._
 
 ![Airport from Navdatabase](../images/airport_navigraph_only.jpg "Airport from Navdatabase")
 
-_**Bild oben:** Flughafen _`EDDN`_ aus der Navigraph-Datenbank, während  _`Navigraph für alle Funktionen benutzen`_ aktiviert ist. Beachten Sie fehlende Oberflächeninformationen der Start- und Landebahn, Vorfelder, Rollwege und Parkpositionen._
+_**Bild oben:** Flughafen `EDDN` aus der Navigraph-Datenbank, während  _`Navigraph für alle Funktionen benutzen`_ aktiviert ist. Beachten Sie fehlende Oberflächeninformationen der Start- und Landebahn, Vorfelder, Rollwege und Parkpositionen._
 
 ## Navigraph Datenbank nicht benutzen {#navigraph-none}
 
@@ -43,7 +43,7 @@ Dieser Modus mischt Navaids und andere Funktionen aus der Navigraph-Datenbank mi
 
 Die folgenden Funktionen werden aus der Simulator-Datenbank übernommen, wenn Sie diesen Modus verwenden:
 
-* Flughäfen \(auch `Suche` Dockfenster, Registerkarte `Flughafen`\)
+* Flughäfen (auch `Suche` Dockfenster, Registerkarte `Flughafen`)
 * Aprons
 * Taxiways
 * Parkpositionen
@@ -52,11 +52,11 @@ Die folgenden Funktionen werden aus der Simulator-Datenbank übernommen, wenn Si
 
 Die folgenden Funktionen werden aus der Navigraph-Datenbank übernommen:
 
-* Navaids \(waypoints/intersections, VOR, NDB, marker\) die sich auf:
+* Navaids (waypoints/intersections, VOR, NDB, marker) die sich auf:
  * `Suche` Dockfenster, Registerkarte `Navaid`
  * Flugplanberechnung
  * Routenbeschreibung
-* Prozeduren \(approaches, SIDs and STARs\). Dies betrifft:
+* Prozeduren (approaches, SIDs and STARs). Dies betrifft:
  * `Suche` Dockfenster, Registerkarte `Prozeduren`
  * Laden und Anzeigen von Prozeduren aus Flugplänen.
 * Luftstraßen

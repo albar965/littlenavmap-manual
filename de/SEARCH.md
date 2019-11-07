@@ -10,7 +10,7 @@ Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige `*`, um 
 
 Filter werden durch verschiedene Kontrollen definiert, die meist selbsterklärend sind. Nur Textfilter und die Kontrollkästchen mit drei Zuständen wie `Beleuchtung`, `Ansatz` oder `Geschlossen` benötigen unten ein paar zusätzliche Bemerkungen.
 
-Alle Filter können zusammen verwendet werden, wenn alle Bedingungen erfüllt sein müssen \(`und` Operator\). Alle Filter mit Ausnahme des Entfernungssuchfilters werden sofort angewendet. Die Entfernungssuche wird bei jeder Änderung mit einer kurzen Verzögerung durchgeführt.
+Alle Filter können zusammen verwendet werden, wenn alle Bedingungen erfüllt sein müssen (`und` Operator). Alle Filter mit Ausnahme des Entfernungssuchfilters werden sofort angewendet. Die Entfernungssuche wird bei jeder Änderung mit einer kurzen Verzögerung durchgeführt.
 
 **Die Eingabe von drei oder vier Zeichen im Feld `ICAO Code` auf der Registerkarte Flughafensuche löst eine Schnellsuche aus, die alle anderen Filter ignoriert und die Flughäfen anzeigt, die mit diesem teilweisen oder vollständigen ICAO-Code übereinstimmen.**
 
@@ -20,9 +20,9 @@ Ein Tooltip auf der blauen Hilfetaste oben rechts zeigt Informationen zur Suche.
 
 Standard ist die Suche nach Einträgen, die mit dem eingegebenen Text beginnen.
 
-Der Platzhalter `*` steht für einen beliebigen Text. Sobald ein `*` in den Begriff aufgenommen wird, wird die Standardsuche \(Matchanfang des Textes\) nicht mehr verwendet. In diesem Fall müssen Sie eventuell auch ein `*` am Ende des Suchbegriffs hinzufügen, um das erwartete Ergebnis zu erhalten.
+Der Platzhalter `*` steht für einen beliebigen Text. Sobald ein `*` in den Begriff aufgenommen wird, wird die Standardsuche (Matchanfang des Textes) nicht mehr verwendet. In diesem Fall müssen Sie eventuell auch ein `*` am Ende des Suchbegriffs hinzufügen, um das erwartete Ergebnis zu erhalten.
 
-Die Suche wird negiert \(findet alle Einträge, die nicht übereinstimmen\), wenn das erste Zeichen in einem Suchfeld ein `-` ist.
+Die Suche wird negiert (findet alle Einträge, die nicht übereinstimmen), wenn das erste Zeichen in einem Suchfeld ein `-` ist.
 
 Beachten Sie, dass all dies nicht für numerische Felder wie `Runways: Min` oder `Altitude: Max` gilt.
 
@@ -36,7 +36,7 @@ Nachfolgend finden Sie die Zustände, wie sie in Windows 10 dargestellt sind:
 * **Checked:** Bedingung muss übereinstimmen.
 * **Empty Box:** Die Bedingung muss nicht übereinstimmen.
 
-Die Farben und das Aussehen dieser Kontrollkästchen variieren je nach Thema und Betriebssystem. Anstelle von Grau kann also eine andere Farbe verwendet werden \(rote Füllung unter Linux oder ein `-` für macOS\).
+Die Farben und das Aussehen dieser Kontrollkästchen variieren je nach Thema und Betriebssystem. Anstelle von Grau kann also eine andere Farbe verwendet werden (rote Füllung unter Linux oder ein `-` für macOS).
 
 ### Distanzsuche {#distance-search}
 
@@ -48,17 +48,17 @@ Um diese Suche zu ermöglichen, muss das Kontrollkästchen `Entfernung` aktivier
 
 Die Mitte für die Entfernungssuche wird durch ein Symbol ![Distance Search Symbol](../images/icons/distancemark.png "Distanzsuche") hervorgehoben.
 
-Um die Suche weiter einzuschränken, können Sie eine Richtung wählen \(Nord, Ost, Süd und West\).
+Um die Suche weiter einzuschränken, können Sie eine Richtung wählen (Nord, Ost, Süd und West).
 
 Überprüfen Sie das Dropdown-Menü für die Änderungsanzeige `*` und die Suchfelder für den verbleibenden Text, wenn die Entfernungssuche keine oder unerwartete Ergebnisse liefert. Verwenden Sie `Suche zurücksetzen` im Kontextmenü der Ergebnistabelle oder drücken Sie `Strg+R`, um alle Suchkriterien zu löschen.
 
 ![Complex Distance Search](../images/complexsearch.jpg "Complex Distance Search")
 
-_**Bild oben Eine komplexe Distenzsuche:** Findet alle Flughäfen in einer Entfernung zwischen 200 und 400 Seemeilen von Frankfurt \(EDDF\). Flughäfen sollten eine Bewertung von mehr als 0 haben und mindestens eine beleuchtete Start- und Landebahn haben. Militärische und geschlossene Flughäfen sind ausgeschlossen. Die resultierenden Flughäfen werden auf der Karte durch Auswahl in der Suchergebnistabelle hervorgehoben._
+_**Bild oben Eine komplexe Distenzsuche:** Findet alle Flughäfen in einer Entfernung zwischen 200 und 400 Seemeilen von Frankfurt (EDDF). Flughäfen sollten eine Bewertung von mehr als 0 haben und mindestens eine beleuchtete Start- und Landebahn haben. Militärische und geschlossene Flughäfen sind ausgeschlossen. Die resultierenden Flughäfen werden auf der Karte durch Auswahl in der Suchergebnistabelle hervorgehoben._
 
 ![Complex Search for Scenery](../images/complexsearch2.jpg "Complex Search for Scenery")
 
-_**Bild oben Eine komplexe Szeneriesuche:** Dieses Beispiel zeigt, wie man bestimmte Add-On-Szenarien über das Suchfeld _`Scenery Path`_ findet. Dies zeigt alle Flughäfen der Orbx New Zealand South Island Add-on-Szenerie, die beleuchtete Start- und Landebahnen haben._
+_**Bild oben Eine komplexe Szeneriesuche:** Dieses Beispiel zeigt, wie man bestimmte Add-On-Szenarien über das Suchfeld `Scenery Path` findet. Dies zeigt alle Flughäfen der Orbx New Zealand South Island Add-on-Szenerie, die beleuchtete Start- und Landebahnen haben._
 
 ### Anzeige der Suchergebnistabelle {#search-result-table-view}
 
@@ -71,7 +71,7 @@ Verwenden Sie `Shift+Klick` oder `Strg+Klick`, um zwei oder mehr Elemente auszuw
 Der Kopfzeile aller Tabellensichten ermöglicht die folgende Manipulation:
 
 * ** Klicken Sie auf die linke obere Ecke der Spaltenüberschrift:**  Alle Ergebniszeilen auswählen.
-*  **Klicken Sie auf eine Spaltenüberschrift:**  Sortieren aufsteigend oder absteigend \(nur für Suchergebnistabellen - nicht für Flugplattentabelle\).
+*  **Klicken Sie auf eine Spaltenüberschrift:**  Sortieren aufsteigend oder absteigend (nur für Suchergebnistabellen - nicht für Flugplattentabelle).
 *  **Klicken und ziehen Sie auf die Spaltenüberschrift:**  Spaltenreihenfolge ändern.
 *  **Doppelklicken Sie auf den Spaltenrand:**  Passen Sie die Spaltengröße automatisch an den Inhalt an.
 * ** Klicken und ziehen Sie auf den Spaltenrand:** Spaltenbreite ändern.
@@ -87,7 +87,7 @@ _**Bild oben:** Ergebnisliste der Flughafensuche. Alle zusätzlichen Suchoptione
 
 ![Navaid Search Result Table](../images/navaidsearchtable.jpg "Navaid Search Result Table")
 
-_**Bild oben:** Die Navaid-Suche ist auf die ICAO-Region _`LI`_ \(Italien\) und die Stationen VOR, VORTAC und TACAN beschränkt, die eine Reichweite von 100 oder mehr Seemeilen haben._
+_**Bild oben:** Die Navaid-Suche ist auf die ICAO-Region _`LI`_ (Italien) und die Stationen VOR, VORTAC und TACAN beschränkt, die eine Reichweite von 100 oder mehr Seemeilen haben._
 
 #### Mausklicks {#mouse-clicks-0}
 
@@ -125,9 +125,15 @@ Gleiche wie [Kontextmenü Karte](MAPDISPLAY.md#map-context-menu).
 
 #### ![Show Procedures](../images/icons/approach.png "Show Procedures") Zeige Prozeduren {#show-procedures}
 
-Öffnet die Registerkarte Verfahrenssuche des Suchdockfensters und zeigt alle Prozeduren für den Flughafen an.
+Öffnet die Registerkarte Verfahrenssuche des Suchdockfensters und zeigt alle Prozeduren für den Flughafen an. Nur verfügbar in der Flugplatzsuchtabelle.
 
 Weitere Informationen finden Sie unter [Suche Prozeduren](SEARCHPROCS.md).
+
+#### ![Create Approach](../images/icons/approachcustom.png "Create Approach") Anflug erstellen {#show-approach-custom}
+
+Öffnet einen Dialog, der es ermöglicht, einen einfachen, benutzerdefinierten Endanflug zu erstellen. Nur in der Registerkarte Flughafensuche verfügbar.
+
+Weitere Informationen finden Sie unter [Benutzerdefinierter Anflug](CUSTOMPROCEDURE.md).
 
 #### ![Show on Map](../images/icons/showonmap.png "Show on Map") Zeige auf Karte {#show-on-map}
 
@@ -157,11 +163,20 @@ Beachten Sie, dass die Anzeige aller Navaids und Flughäfen einige Zeit in Anspr
 
 #### ![Display Airport Traffic Pattern](../images/icons/trafficpattern.png "Display Airport Traffic Pattern") Flughafen-Verkehrsstruktur anzeigen {#show-traffic-pattern}
 
+#### ![Display Holdings](../images/icons/hold.png "Holdings") Holdings anzeigen {#show-holdings}
+
+Wie im Kontextmenü [Karte](MAPDISPLAY.md#map-Kontextmenü).
+
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn die jeweilige Benutzerfunktion auf der Karte ausgeblendet ist (Menü `Ansicht` -> `Nutzerobjekte`). Der Menüpunkt wird in diesem Fall mit dem Text `auf der Karte versteckt` versehen.
+
 #### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Als Startflugplatz setzen {#set-as-flight-plan-departure-0}
 
 #### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Als Zielflugplatz setzen {#set-as-flight-plan-destination-0}
 
+#### ![Set as Flight Plan Alternate](../images/icons/airportroutealt.png "Set as Flight Plan Alternate") Als alternativen Flugplan festlegen {#set-as-flight-plan-alt-0}
+
 #### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Position zum Flugplan hinzufügen {#add-position-to-flight-plan-0}
+
 #### ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") Position an den Flugplan anhängen {#append-position-to-flight-plan-0}
 
 Gleich wie [Kontextmenu Karte](MAPDISPLAY.md#map-context-menu).
