@@ -1,4 +1,4 @@
-### ![Flight Plan Tab](../images/icons/routedock.png "Flight Plan Tab") Flight Plan Tab {#flight-plan-dock-window}
+### ![Flight Plan Tab](../images/icons/routedock.png "Flight Plan Tab") Registerkarte Flugplan {#flight-plan-dock-window}
 
 Das Flugplanungsdockfenster enthält die drei Registerkarten: `Flugplan` (dieses Kapitel), [Kraftstoffbericht](AIRCRAFTPERF.md) und [Aktuelle Leistung](AIRCRAFTPERFCOLL.md).
 

@@ -62,13 +62,127 @@ Beispiele für den Flughafen Ouessant (`LFEC`):
 * `/home/USERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC`: Linux mit deutscher Übersetzung
 * `Benutzer/Username/Dokumente/Little Navmap Files/Flughäfen/LFEC`: macOS
 * `Benutzer/UNSERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC`: macOS mit deutscher Übersetzung
-* `C:\Users\YOURUSERNAME\Dokumente\Little Navmap Files/Airports/LFEC`: Fenster
+* `C:\Users\YOURUSERNAME\Dokumente\Little Navmap Files/Airports/LFEC`: Windows
 * `C:\Users\YOURUSERNAME\Dokumente\Little Navmap Dateien/Flugplätze/LFEC`: Windows mit deutscher Übersetzung
 
 Sie können die übersetzten Verzeichnisnamen oder die englische Variante verwenden. Die übersetzten Verzeichnisnamen hängen vom Programm und der Systemsprache ab. _Little Navmap_  verwendet die englischen Namen nur, wenn Sie die Sprache der Benutzeroberfläche auf Englisch einstellen.
 
 _Little Navmap_  sucht nach Dateien, die sowohl den übersetzten als auch den englischen Pfad verwenden: `...\Little Navmap Files\Airports\LFEC` und `...\Little Navmap Dateien\Flugplätze\LFEC`.
 
-![Links zu Flughafeninformationen](.../images/infolinks.jpg "Flughafeninformationen
+![Airport Information Links](../images/infolinks.jpg "Airport Information Links")
+
+_**Bild oben:** Flughafeninformationen mit verlinkten Websites im Abschnitt `Links` und Links zu Benutzerdateien im `Abschnitt Dateien`._
+
+##### Andere Tabs
+
+Bevorzugte Start- und Landebahnen in Abhängigkeit vom Wind werden nach dem METAR angezeigt. Weitere Details zu den bevorzugten Start- und Landebahnen finden Sie auf der Registerkarte `Wetter`.
+
+Die Registerkarte `Wetter` zeigt dekodierte Wetterinformationen für einen ausgewählten Flughafen. Das Flugregeln-Symbol  ([Legend - Airport Weather](LEGEND.md#airport-weather)) hat ein Suffix ` - Karte`, wenn die angezeigte Wetterquelle die Quelle für Flughafenwetter-Symbole auf der Karte ist. Außerdem werden detaillierte Informationen zu den besten Start- und Landebahnen je nach Windverhältnissen angezeigt.
+
+Zusätzliche Links für Hubschrauberlandeplätze finden Sie im Tab `Startbahnen`.
+
+Die Registerkarte `Nächste` zeigt Flughäfen mit Verfahren und nächstgelegenen Navigationssystemen im Vergleich zum ausgewählten Flughafen.
+
+![Airport Information](../images/infoairport.jpg "Airport Information")
+
+_**Bild oben:** Übersicht über die Flughafeninformationen. Zusätzliche Registerkarten zeigen Informationen zu Start- und Landebahnen, COM-Frequenzen, Anflügen und Wetter. Wettersymbole Benutzer NOAA Wetter als Quelle. Sonnenuntergang und Sonnenaufgang basieren auf dem tatsächlichen Datum, da sie nicht mit einem Simulator verbunden sind. Die Windrichtung bevorzugt die Pisten 09 und 14._
+
+#### Tab Navaids {#navaids}
+
+Mehr als eine Navaid- oder Luftstraße kann in diese Registerkarte geladen werden, wenn Sie mit der linken Maustaste klicken. VOR, NDB, Waypoint, Airway und ILS Informationen werden in dieser Registerkarte angezeigt.
+
+Ein Luftweg wird immer mit allen seinen Wegpunkten angezeigt. Klicken Sie auf einen beliebigen blauen Wegpunktlink, um die Karte um den Wegpunkt zu zentrieren.
+
+Ganze Luftwege werden markiert und auf der Karte angezeigt, wenn Sie auf den Link `Karte" ` im Informationsfenster klicken.
+
+Die hervorgehobenen Atemwege haben einen eigenen Tooltip, der auch angezeigt wird, wenn alle anderen Atemwege ausgeblendet sind.
+
+Klicken Sie im Informationsfenster auf den Link `Airway Highlights aus der Karte entfernen`, um sie aus der Karte zu entfernen.
+
+| | |
+| -- | -- |
+| ![Navaid Information](../images/infonavaid.jpg "Navaid Information") | ![Airway Information](../images/infoairway.jpg "Airway Information") |
+| _**Bild oben:** Navaid-Informationen. Zwei Navaids befanden sich beim Anklicken in der Nähe des Mauszeigers._ | _**Bild oben:** Navaid-Informationen. Anzeige mehrerer Luftstraßen mit Höhenbeschränkungen und Liste der anklickbaren Wegpunkte. Wenn Sie auf den Link `Karte` klicken, wird ein ganzer Luftstraße markiert._ |
+
+#### Tab Lufträume {#airspaces}
+
+Lufträume werden auf der Karte mit ihrer Grenze und einem Textlabel markiert, wenn Sie auf den Link `Karte` im Informationsfenster klicken.
+
+Die hervorgehobenen Lufträume haben einen eigenen Tooltip, der auch angezeigt wird, wenn alle anderen Lufträume ausgeblendet sind.
+
+Klicken Sie im Informationsfenster auf den Link `Highlights aus der Karte entfernen`, um die Highlights aus der Karte zu entfernen.
+
+![Airspace Information](../images/infoairspace.jpg "Airspace Information")
+
+_**Bild oben:** Zwei Lufträume, die in den Informationen angezeigt werden, nachdem Sie auf die Karte geklickt haben. Zwei Lufträume werden auf der Karte markiert, nachdem Sie auf den Link `Karte` im Informationstext geklickt haben._
+
+#### Andere Tabs {#other-tabs}
+
+* `Userpoints`: Zeigt Informationen über benutzerdefinierte Wegpunkte oder Points of Interest an.
+* `Logbuch`: Details zu den Logbucheinträgen.
+* `Online-Cients`: Online-Netzwerk-Clients/Flugzeuge.
+* `Online-Center`: Online-Netzwerkzentren/Lufträume.
+
+### ![Tabs in Simulator Aircraft Dock Window](../images/icons/aircraftdock.png "Tabs in Simulator Aircraft Dock Window") Tabs im Dockfenster des Simulatorflugzeugs {#simulator-aircraft-dock-window}
+
+Dieses Dockfenster zeigt Informationen über das Benutzerflugzeug und über KI- oder Mehrspielerflugzeuge in mehreren Registerkarten an. _Little Navmap_ muss mit dem Simulator verbunden sein, um diese Funktion zu aktivieren. Weitere Informationen zu diesem Thema finden Sie unter [Verbindung zu einem Flugsimulator](CONNECT.md#connecting-to-a-flight-simulator).
+
+#### Tab Flugzeug {#aircraft}
+
+Gibt einen Überblick über das Benutzerflugzeug und zeigt Informationen zu Typ, Gewicht und Kraftstoff an.
+
+Auf der Registerkarte Flugzeug erscheint ein roter Warnhinweis `Bruttogewicht über dem maximalen Bruttogewicht`, wenn das Bruttogewicht zu hoch ist.
+
+![Aircraft Information](../images/infoac.jpg "Aircraft Information")
+
+_**Bild oben:** Flugzeuginformationen, wenn sie mit einem Flugsimulator verbunden sind. Alternative Einheiten (Liter und kg) sind aktiviert._
+
+#### Tab Fortschritt {#progress}
+
+Zeigt Informationen ähnlich einem Flight Management Computer über das Benutzerflugzeug an. Dies umfasst den Fortschritt des Flugplans, die Parameter Höhe, Geschwindigkeit, Umgebung und Umgebung.
+
+Die Textinformationen auf der Registerkarte haben oben links einen Link `Mehr Weniger`. Hiermit können Sie zwischen detaillierteren und weniger Informationen wechseln.
+
+Die Registerkarten Flugzeug und Fortschritt zeigen Warnungen und Fehler an, indem sie den Text in rot oder orange markieren. Das sind:
+
+* Kraftstoff und Zeit, die seit dem Flugplan geschätzt wurden, sind ungültig.
+* Kraftstoff und Zeit, die seit der Flugzeugleistung geschätzt wurden, sind nicht gültig.
+* Zu wenig Kraftstoff am Bestimmungsort (nur bei gültiger Flugzeugleistung).
+* Geschwindigkeitsbegrenzung von 250 Knoten überschritten unter 10000 Fuß.
+* Vereisung.
+
+Beachten Sie, dass die Treibstoff- und Zeitschätzungen auf der Grundlage der Flugzeugleistung basieren, sofern diese gültig ist. ([Flugzeugleistung](AIRCRAFTPERF.md)).
+
+Der Kraftstoff am Zielort und am oberen Ende des Abstiegs wird durch die aktuelle Kraftstoffmenge in den Tanks und den von der Flugleistung vorhergesagten Verbrauch für die verbleibende Flugstrecke geschätzt. Wind sowie die unterschiedlichen Kraftstoffdurchflusszahlen der Steig- und Sinkphasen werden in dieser Berechnung berücksichtigt.
+
+Die Ankunftszeit wird ebenfalls durch die aktuelle Zeit und die Vorhersage der Flugzeugleistung unter Berücksichtigung von Wind, Steigflug und Abstiegsphasen berechnet.
+
+**_Little Navmap_könnte eine orangefarbene Warnung vor zu wenig Kraftstoff am Zielort in den frühen Flugphasen anzeigen. Dies ist normal, da der Kraftstoffdurchfluss für Start und frühes Steigen höher ist.**
+
+![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progresss Information")
+
+_**Bild oben:** Fortschrittsinformationen des Flugzeugs, wenn es mit einem Flugsimulator und einem Benutzerflugzeug in der Luft verbunden ist. Es sind alternative Gewichts- und Kraftstoffeinheiten (kg und Liter) sowie eine echte Kursanzeige aktiviert._
+
+#### Tab AI / Multiplayer
+
+Informationen über ein KI- oder Mehrspielerflugzeug aus dem Simulator (nicht aus dem Online-Netzwerk) oder dem Schiff werden in dieser Registerkarte angezeigt, wenn ein Fahrzeug auf der Karte angeklickt wird.
+
+Dazu gehören auch die Abflug- und Zielflughäfen des Flugzeugs, die durch Anklicken der blauen Links auf der Karte angezeigt werden können (nur für FSX oder P3D und wenn ein Flugplan hinterlegt ist).
+
+Beachten Sie, dass die Informationen über KI-Flugzeuge auf X-Plane begrenzt sind. Es können nur Position, Höhe und Richtung angezeigt werden.
+
+![AI Aircraft Information](../images/infoacai.jpg "AI Aircraft Information")
+
+_**Bild oben:** Informationen über ein AI aircraft._
+
+## ![Legend Dock Window](../images/icons/legenddock.png "Legend Dock Window") Beschriftung Dock Window {#legend-dock-window}
+
+Enthält zwei Registerkarten: Eine Registerkarte `Navmap`, die die verschiedenen Flughafen- und Navigationssymbole erklärt, und eine Registerkarte `Karte`, die die
+allgemeine Legende für die Grundkarte wie z.B. die _OpenStreetMap_.
+
+Der Inhalt der Legende `Navmap` ist auch im Online-Handbuch verfügbar: [Nav Map Legende](LEGEND.md).
+
+Beachten Sie, dass die allgemeine Kartenlegende nicht für alle Kartenmotive verfügbar ist.
+
 
 

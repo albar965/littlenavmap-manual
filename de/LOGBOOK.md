@@ -1,4 +1,4 @@
-## Logbook {#logbook}
+## Logbuch {#logbook}
 
 _Little Navmap_ erstellt bei der Erkennung eines Starts oder einer Landung automatisch Logbucheinträge für jeden Flug. Ein Logbucheintrag, der nur den Abflug enthält, wird beim Start erstellt und mit dem Ziel und weiteren Informationen zur Landung abgeschlossen.
 
@@ -10,7 +10,7 @@ Verwenden Sie [Alle Einstellungen zurücksetzen und neu starten](#reset-and-rest
 
 Die Bearbeitungsfunktionalität im Logbuch ist vergleichbar mit der Bearbeitung von Benutzerpunkten ([Benutzerdefinierte Wegpunkte](USERPOINT.md#userpoints)).
 
-## Logbook Suche {#search}
+## Logbuch Suche {#search}
 
 Die Funktionalität der Suchfilter und der Ergebnistabelle entspricht der Flughafen- und Navaidsuche. Siehe [Fenster Suche](SEARCH.md) für Informationen über Suchfilter und Schaltflächen.
 
@@ -179,11 +179,11 @@ I
 
 ### Konvertierung {#convert}
 
-Konvertiert automatisch alle älteren Protokolleinträge, die als Benutzerpunkte mit dem Typ `Logbook` gesammelt wurden. Die Konvertierung kopiert sie nach dem Anzeigen eines Informationsdialogs in das neue Logbuch.
+Konvertiert automatisch alle älteren Protokolleinträge, die als Benutzerpunkte mit dem Typ `Logbuch` gesammelt wurden. Die Konvertierung kopiert sie nach dem Anzeigen eines Informationsdialogs in das neue Logbuch.
 
 Die Konvertierung funktioniert am besten, wenn das Feld `Beschreibung` in den Benutzerpunkten nicht geändert wurde und keine Einträge manuell eingefügt wurden.
 
-Die konvertierten Logbucheinträge werden an das aktuelle Logbuch angehängt. Der ursprüngliche Benutzerpunkt vom Typ `Logbook` wird nicht gelöscht oder geändert.
+Die konvertierten Logbucheinträge werden an das aktuelle Logbuch angehängt. Der ursprüngliche Benutzerpunkt vom Typ `Logbuch` wird nicht gelöscht oder geändert.
 
 Die konvertierten Logbucheinträge erhalten eine Beschreibung mit der Aufschrift `Konvertiert aus Benutzerdaten`, die es ermöglicht, nach den importierten Einträgen zu suchen. Verwenden Sie ein Muster wie `*Konvertiert aus Benutzerdaten*` im Suchfeld Beschreibung, um nach allen Einträgen zu suchen.
 
@@ -201,7 +201,7 @@ _Little Navmap_ erstellt bei jedem Start eine vollständige Datenbanksicherung, 
 
 Sie können den CSV-Export auch verwenden, um Backups manuell zu erstellen, da CSV den Export des gesamten Datensatzes ermöglicht.
 
-Zu Informationen über Datenbanksicherungsdateien siehe [Logbook](FILES.md#logbook).
+Zu Informationen über Datenbanksicherungsdateien siehe [Logbuch](FILES.md#logbook).
 
 
 ### CSV Datenformat {#logbook-csv}

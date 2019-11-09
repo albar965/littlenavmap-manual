@@ -72,10 +72,10 @@ Die Schaltflächen oben haben die gleiche Funktionalität wie die Einträge im H
 
 * `Manueller Wind`: Dieses Kontrollkästchen überschreibt die Windquelle und ermöglicht es, die durchschnittliche Windrichtung und -geschwindigkeit manuell einzustellen. Wenn dies aktiviert ist, werden zwei Eingabefelder für Geschwindigkeit und Richtung angezeigt.
 * ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Flugleistungen bearbeiten als") `Flugleistungen bearbeiten`: Öffnet den Bearbeitungsdialog für das aktuell geladene Profil. Sie können auch den Menüpunkt `Flugzeug` -> `Flugzeugleistung bearbeiten ...` verwenden, um die aktuell geladenen Leistungsdaten zu ändern. Eine Beschreibung des Bearbeitungsdialogs finden Sie unter [Flugleistung bearbeiten](AIRCRAFTPERFEDIT.md).
-* ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") `New Aircraft Performance`: Erstellt ein neues Leistungsprofil mit Standardwerten und öffnet den Bearbeitungsdialog. Ein Profil mit 3 Seemeilen pro 1000 Fuß für Abstiegs- und Aufstiegsregeln und keinem Kraftstoffverbrauch ist Standard. Rote Warnmeldungen werden angezeigt, da das Profil nicht vollständig ist.
-* ![Open Aircraft Performance](../images/icons/aircraftperfload.png "Open Aircraft Performance") `Open Aircraft Performance`: Lädt eine `lnmperf` Datei.
+* ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") `Neue Flugzeugleistung erstellen`: Erstellt ein neues Leistungsprofil mit Standardwerten und öffnet den Bearbeitungsdialog. Ein Profil mit 3 Seemeilen pro 1000 Fuß für Abstiegs- und Aufstiegsregeln und keinem Kraftstoffverbrauch ist Standard. Rote Warnmeldungen werden angezeigt, da das Profil nicht vollständig ist.
+* ![Open Aircraft Performance](../images/icons/aircraftperfload.png "Open Aircraft Performance") `Flugzeugleistung öffnen`: Lädt eine `lnmperf` Datei.
 * ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Flugleistung speichern") `Flugzeugleistung speichern`: Speichert das aktuelle Profil in eine `lnmperf` Datei.
-* ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Flugleistung speichern unter") `Flugzeugleistung speichern unter`: Speichert das aktuelle Profil in eine neue `lnmperf` Datei.
+* ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Flugleistung speichern unter") `Flugzeugleistung speichern als`: Speichert das aktuelle Profil in eine neue `lnmperf` Datei.
 * ![Help](../images/icons/help.png "Help") Hilfe: Klicken Sie hier, um dieses Kapitel des Handbuchs im Standardbrowser zu öffnen.
 
 ### Leistungsbericht {#aircraft-performance-report}
@@ -92,10 +92,10 @@ Die Textgröße des Berichts kann im Dialog `Optionen` auf `Benutzeroberfläche`
 
 ###### Luftfahrzeugbereich {#aircraft-performance-aircraft}
 
-* `Kraftstoffart`: Wie im Leistungsprofil festgelegt. Entweder `Avgas` oder `Jetfuel`. Dient zum Ändern von Werten beim Umschalten zwischen Volumen und Gewicht als Kraftstoffeinheit und zum Umrechnen zwischen den Einheiten im Bericht.
-* `Nutzbarer Kraftstoff`: Wird wie im Leistungsprofil eingestellt dargestellt. Wird nur angezeigt, wenn sie größer als Null ist. Eine rote Warnmeldung wird angezeigt, wenn der Blockkraftstoff diesen Wert überschreitet.
+* `Teibstofftyp`: Wie im Leistungsprofil festgelegt. Entweder `Avgas` oder `Jetfuel`. Dient zum Ändern von Werten beim Umschalten zwischen Volumen und Gewicht als Kraftstoffeinheit und zum Umrechnen zwischen den Einheiten im Bericht.
+* `Verwendbarer Teibstoff`: Wird wie im Leistungsprofil eingestellt dargestellt. Wird nur angezeigt, wenn sie größer als Null ist. Eine rote Warnmeldung wird angezeigt, wenn der Blockkraftstoff diesen Wert überschreitet.
 * Geschätzte Reichweite mit Reserve": Berechnet auf der Grundlage von nutzbarem Kraftstoff, Geschwindigkeit und Kraftstoffdurchfluss für die Reisephase und Reservekraftstoff. Zeigt eine orangefarbene Warnung an, wenn die Kraftstoffdurchflusswerte nicht eingestellt sind.
-* `Reserve Kraftstoff` und `Taxi Kraftstoff`: Wird nur bei leerem Flugplan angezeigt.
+* `Reserveteibstoff` und `Teibstoff zum Rollen`: Wird nur bei leerem Flugplan angezeigt.
 *"Minimale Start- und Landebahn": Wird angezeigt, wenn im Leistungsprofil eingestellt.
 
 
@@ -151,9 +151,3 @@ Ersetzen Sie Leerzeichen in Links durch `%20`, da _Little Navmap_ Links bis zum 
 
 Enthält einen Link zur Flugzeugleistungsdatei. Öffnet die Datei oder das Verzeichnis im Standard-Dateimanager wie Windows Explorer oder macOS Finder.
 
-igt wird. Die Phasen `Taxi und Start` und `Steigflug` sind bereits abgeschlossen. Die aktuelle Phase ist `Reiseflug`._
-
-
-Sie können Ihr Flugzeug in Reiseflughöhe bewegen, mit Warp-Tools schnell an den Top of Descent kommen oder Kraftstoff und Zeit manuell anpassen. Dies hat keinen Einfluss auf die Leistungsberechnung, da _Little Navmap_ den tatsächlichen Kraftstofffluss aus dem Simulator liest, anstatt verbrauchten Kraftstoff und Zeit zu anzuwenden.
-
-Bleiben Sie auf jeden Fall ein paar Minuten in Reiseflughöhe, damit _Little Navmap_  Werte für diese Flugphase erhalten kann.
