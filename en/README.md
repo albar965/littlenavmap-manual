@@ -9,7 +9,7 @@ airport search and airport information system for Flight Simulator X, Flight Sim
 
 ---
 
-More about my projects at [**www.littlenavmap.org**](https://www.littlenavmap.org).
+More about my projects at [**www.littlenavmap.org**](https://www.littlenavmap.org/).
 
 [**Support forum at AVSIM**](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/).
 
