@@ -1,4 +1,4 @@
-##Docking-Fenster
+## Dockfenster
 
 Die Benutzeroberfläche von _Little Navmap_ besteht aus einem Hauptfenster und mehreren Dockfenstern, die vom Hauptfenster getrennt oder innerhalb des Hauptfensters angeordnet werden können.
 

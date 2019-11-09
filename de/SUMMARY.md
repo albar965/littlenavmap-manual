@@ -10,8 +10,8 @@
 
 ### Benutzerschnittstelle
 
-* [Dock Windows](DOCKWINDOWS.md)
-* [Tabs](TABS.md)
+* [Dockfenster](DOCKWINDOWS.md)
+* [Tabulatoren](TABS.md)
 * [Menüs und Symbolleisten](MENUS.md)
 * [Statusleiste](MENUS.md#statusbar)
 * [Koordinatenformate](COORDINATES.md)
@@ -23,7 +23,7 @@
 * [Kompassrose](COMPASSROSE.md)
 * [Sonnenschatten](SUNSHADOW.md)
 * [Platzrunde](TRAFFICPATTERN.md)
-* [Legende](LEGEND.md)
+* [Kartenlegende](LEGEND.md)
 * [Holding](HOLD.md)
 * [Image Export](IMAGEEXPORT.md)
 
@@ -55,9 +55,9 @@
 * [Sammeln](AIRCRAFTPERFCOLL.md)
 * [Mischen](AIRCRAFTPERFMERGE.md)
 
-### Logbook
+### Logbuch
 
-* [Logbook](LOGBOOK.md)
+* [Logbuch](LOGBOOK.md)
 
 ### Informationen
 
