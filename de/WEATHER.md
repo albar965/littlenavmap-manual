@@ -121,9 +121,9 @@ Die Richtung ist standardmäßig magnetisch, kann aber im Optionsdialog auf der 
 
 _**Bild oben:** mit Tooltip bei Windpunkten im Gitter und Wind-Dropdownmenü._
 
-![Winds Aloft at Flight Plan](.../images/wind_route.jpg "Winds Aloft at Flight Plan")
+![Winds Aloft at Flight Plan](../images/wind_route.jpg "Winds Aloft at Flight Plan")
 
-_**Bild oben:** Windpunkte an Flugplan-Wegpunkten und Winddaten in Tooltip._*.
+_**Bild oben:** Windpunkte an Flugplan-Wegpunkten und Winddaten in Tooltip._
 
 
 

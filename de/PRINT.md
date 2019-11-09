@@ -4,13 +4,9 @@
 
 Öffnet den Druckvorschau-Dialog, in dem die aktuelle Kartenansicht gedruckt werden kann.
 
-Der Druck ist derzeit auf die Bildschirmauflösung der aktuellen Kartenansicht beschränkt. Um einen weniger verschwommenen Ausdruck zu erhalten, vergrößern Sie das Kartenfenster so weit wie möglich. Das Kartenfenster kann abkoppeln werden, um dies zu erreichen.
-
-![Dialog Kartenvorschau drucken](.../images/printmap.jpg "Dialog Kartenvorschau drucken")
+![Print Map Preview Dialog](../images/printmap.jpg "Print Map Preview Dialog")
 
 _**Bild oben:** Druckvorschau-Dialog für die aktuelle Karte._
-
-### ![Print Flight Plan](../images/icons/printflightplan.png "Print Flight Plan") Flugplan drucken {#printing-the-flight-plan}
 
 Ermöglicht das Ausdrucken des aktuellen Flugplans zusammen mit Informationen zum Abflug- und Zielflughafen.
 
@@ -18,14 +14,14 @@ Ermöglicht das Ausdrucken des aktuellen Flugplans zusammen mit Informationen zu
 
 * `Tabellenüberschrift drucken`: Fügt eine Überschrift hinzu, die Abflug, Ziel und andere Informationen anzeigt, wie z.B. das Label oben auf der Registerkarte `Plan` im Dockfenster `Flugplanung`.
 * `Kraftstoffbericht drucken`: Drucken Sie den Kraftstoffberechnungsbericht über die Registerkarte `Flugzeug` im Dockfenster `Flugplanung` aus.
-* Neue Seite nach jedem Kapitel": Fügen Sie einen Seitenvorschub nach Kopfzeile, Flugplan, Tankanzeige und Flughafeninformationen hinzu.
+* `Neue Seite nach jedem Kapitel`: Fügt einen Seitenvorschub nach Kopfzeile, Flugplan, Tankanzeige und Flughafeninformationen hinzu.
 * `Textgröße`: Ermöglicht die Vergrößerung oder Verkleinerung aller Texte mit Ausnahme der Flugplattentabelle.
 
 ##### Flugplan
 
-* Flugplattentabelle drucken": Fügt den Flugplan dem Ausdruck hinzu.
+* `Flugplattentabelle drucken`: Fügt den Flugplan dem Ausdruck hinzu.
 * `Textgröße`: Vergrößern oder verkleinern Sie den Text der Flugplattentabelle.
-* Flugplanspalten zum Drucken auswählen": Klicken Sie auf die Namen, um Flugplanspalten ein- oder auszuschließen.
+* `Flugplanspalten zum Drucken auswählen`: Klicken Sie auf die Namen, um Flugplanspalten ein- oder auszuschließen.
 
 #### Optionen für Abflug- und Zielort
 

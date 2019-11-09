@@ -1,4 +1,4 @@
-## ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Flugplan Höhenprofil Dockfenster {#flight-plan-elevation-profile-dock-window}
+## ![Flight Plan Elevation Profile](../images/icons/profiledock.png "Flight Plan Elevation Profile") Dockfenster Flugplan Höhenprofil {#flight-plan-elevation-profile-dock-window}
 
 Dieses Dockfenster zeigt die Geländehöhe und die Reiseflughöhe des Flugplans zusammen mit allen Wegpunkten des Flugplans an. Sie steht nur zur Verfügung, wenn ein Flugplan geladen ist. Das Benutzerflugzeug wird ebenfalls angezeigt, wenn _Little Navmap_ mit dem Simulator verbunden ist.
 

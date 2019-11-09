@@ -14,8 +14,9 @@ Mehr über meine Projekte auf [**www.littlenavmap.org**](www.littlenavmap.org).
 
 ---
 
-Copyright 2015-2019 Alexander Barthel
+Copyright 2015-2019 Alexander Barthel.
 
+Deutsche Übersetzung von Karl Wichelmann.
 
 ---
 
