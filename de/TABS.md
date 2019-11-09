@@ -28,7 +28,7 @@ Das Kontextmenü über der Tab-Leiste (Rechtsklick auf eine der Tabs) und die Ta
 
 Registerkarten am unteren Rand eines Fensters werden angezeigt, wenn Sie Dockfenster aufeinander legen. Wählen Sie eine Fenstertitelzeile, um ein Fenster aus dem gestapelten Display zu verschieben. Sie können die Reihenfolge dieser Registerkarten auch ändern, indem Sie sie mit der Maus verschieben.
 
-Weitere Informationen über gestapelte Dockfenster finden Sie unter [Docking Fenster](DOCKWINDOWS.md).
+Weitere Informationen über gestapelte Dockfenster finden Sie unter [Dockfenster](DOCKWINDOWS.md).
 
 ![Tab Menus](../images/tabs.jpg "Tab Menus")
 
