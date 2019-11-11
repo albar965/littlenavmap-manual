@@ -1,6 +1,6 @@
 # ![Little Navmap](../images/littlenavmap.svg "Little Navmap") Little Navmap Handbuch {#little-navmap-user-manual}
 
-**Version 2.2**
+**Version 2.4**
 
 _Little Navmap_ ist ein freier Open-Source Flugplaner, Navigationswerkzeug, Karte, Flughafen-Suche- und Informationssystem für Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 bis v4 und X-Plane 11.
 
@@ -8,7 +8,7 @@ _Little Navmap_ ist ein freier Open-Source Flugplaner, Navigationswerkzeug, Kart
 
 ---
 
-Mehr über meine Projekte auf [**www.littlenavmap.org**](www.littlenavmap.org).
+Mehr über meine Projekte auf [**www.littlenavmap.org**](https://www.littlenavmap.org/).
 
 [**Supportforum auf AVSIM**](https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/).
 

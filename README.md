@@ -2,6 +2,10 @@
 
 * [Little Navmap User Manual](en/README.md)
 
+# Deutsch
+
+* [Little Navmap Benutzerhandbuch](de/README.md)
+
 # French
 
 * [Little Navmap User Manual](fr/README.md) (based on version 2.2)
@@ -9,10 +13,6 @@
 # Español
 
 * [Manual de Usuario](es/README.md) (based on version 2.2)
-
-# Deutsch
-
-* [Little Navmap Benutzerhandbuch](de/README.md) (based on version 2.2)
 
 # Italian
 
