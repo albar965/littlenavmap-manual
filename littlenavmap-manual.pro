@@ -19,6 +19,14 @@ TEMPLATE = aux
 
 OTHER_FILES = \
   *.md \
+  *.rst \
+  *.txt \
+  *.sh \
   book.json \
   compile.sh \
-  $$files(en/*, true)
+  src/conf.py \
+  $$files(en/*.md, false) \
+  $$files(de/*.md, false) \
+  $$files(src/_static/*, true) \
+  $$files(src/en/*.rst, false) \
+  $$files(src/de/*.rst, false)

@@ -1,0 +1,79 @@
+body {
+  font-size: 1em;
+  color: #101010;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
+  font-size: 1.em;
+  color: black;
+  background-color: #e8e8e8;
+  border: solid;
+  border-color: lightgray;
+  border-width: 0.2px;
+  border-radius: 3px;
+}
+
+content code {
+  color: black;
+  font-family: Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
+}
+
+.wy-nav-content {
+  max-width: 1200px;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+  white-space: normal;
+}
+
+footer p {
+  color:#606060;
+  font-size: 0.8rem;
+}
+
+.wy-side-nav-search > div.version {
+  color: white;
+}
+
+.wy-side-nav-search, .wy-nav-top {
+  background: #006060;
+}
+
+/* Sidebar */
+.wy-nav-side {
+  background: #008080;
+}
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: white;
+}
+
+/*.caption {
+    background:     #f4f4f4;
+}*/
+
+/*table, td, th {
+    white-space: pre-line;
+}*/
+
+/*pre, code {
+  font-size: 1.2em;
+  background-color: #e8e8e8;
+  background: #e8e8e8;
+  border: solid;
+  border-color: lightgray;
+  border-width: 0.2px;
+  border-radius: 3px;
+  color: #000000;
+}
+
+pre code {
+  border: none;
+  color: #000000;
+}*/

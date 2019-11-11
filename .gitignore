@@ -1,8 +1,10 @@
 _book/
 build/
+deploy/
 node_modules/
 book_*.pdf
 .directory
+/*.log
 /*.pro.user
 *~
 *.kra
