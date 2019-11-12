@@ -7,12 +7,12 @@
 
 set -e
 
-target=$1
+TARGET=$1
 
 shift 1
 
 # Run for all given language codes ==============
 for LANGNAME in "$@" ; do
-  mkdir -pv build/${target}/${LANGNAME}
-  sphinx-build -q -N -n -c src -b ${target} src/${LANGNAME} build/${target}/${LANGNAME} -j 4 -Dlanguage=${LANGNAME}
+  mkdir -pv build/${TARGET}/${LANGNAME}
+  sphinx-build -N -n -c src -b ${TARGET} src/${LANGNAME} build/${TARGET}/${LANGNAME} -j 4 -Dlanguage=${LANGNAME}
 done

@@ -100,7 +100,7 @@ result table or press ``Ctrl+R`` to clear all search criteria.
 
 .. figure:: ../images/complexsearch.jpg
 
-        **Picture above A complex distance search:** Find all airports within
+        A complex distance search: Find all airports within
         a distance between 200 and 400 nautical miles from Frankfurt (EDDF).
         Airports should have a rating greater than 0 and should have at least
         one lighted runway. Military and closed airports are excluded. The
@@ -109,7 +109,7 @@ result table or press ``Ctrl+R`` to clear all search criteria.
 
 .. figure:: ../images/complexsearch2.jpg
 
-        **Picture above A complex search for scenery:** This example shows how
+        A complex search for scenery: This example shows how
         to find specific add-on scenery by using the ``Scenery Path`` search
         field. This shows all airports of the Orbx New Zealand South Island
         add-on scenery that have lighted runways.

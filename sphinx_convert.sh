@@ -19,7 +19,9 @@ for LANGNAME in "$@" ; do
   mkdir -pv src/${LANGNAME}
 
   # Copy English index file
-  cp -v src/en/index.rst src/${LANGNAME}
+  if [ $LANGNAME != "en" ] ; then
+    cp -v src/en/index.rst src/${LANGNAME}
+  fi
 
   # Convert all files using pandoc
   for i in $APROJECTS/littlenavmap-manual/${LANGNAME}/*.md ; do

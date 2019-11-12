@@ -20,7 +20,7 @@ for LANGNAME in "$@" ; do
   rm -rfv deploy/${LANGNAME} deploy/littlenavmap_book_${LANGNAME}.mobi deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}.pdf
 
   # Copy generated HTML documentation
-  cp -av build/html/${LANGNAME} deploy
+  cp -av build/html/${LANGNAME} deploy/en
 
   # Strip unneeded files off
   rm -rfv deploy/${LANGNAME}/.doctrees deploy/${LANGNAME}/.buildinfo
