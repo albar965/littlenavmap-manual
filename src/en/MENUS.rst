@@ -1247,12 +1247,14 @@ the zoom distance.
 Show or hide the missed approaches of the current flight plan. This does
 not affect the preview in the search tab ``Procedures``.
 
-**Note that this function changes the active flight plan leg
-sequencing:** Sequencing the active leg will stop if the destination is
-reached and missed approaches are not displayed. Otherwise sequencing
-will continue with the missed approach and the simulator aircraft
-progress will show the remaining distance to the end of the missed
-approach instead.
+.. note::
+
+       This function changes the active flight plan leg
+       sequencing: Sequencing the active leg will stop if the destination is
+       reached and missed approaches are not displayed. Otherwise sequencing
+       will continue with the missed approach and the simulator aircraft
+       progress will show the remaining distance to the end of the missed
+       approach instead.
 
 .. _show-aircraft:
 
@@ -1527,7 +1529,7 @@ toolbar and with the word ``Custom`` in the menu.
 
    Check out the `Little Navmap Support Forum at
    AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ for
-   more map themes.**
+   more map themes.
 
 OpenStreetMap
 '''''''''''''

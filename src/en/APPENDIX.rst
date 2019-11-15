@@ -113,7 +113,7 @@ Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
    directories containing only landclass, elevation data or other for
    *Little Navmap* irrelevant data. You can do that in the ``Options``
    dialog on the ``Scenery Library Database`` tab. See
-   :ref:`scenery-library-database_exclude`.
+   :ref:`scenery-library-database-exclude`.
 -  **Crash while loading the scenery library database:** You can exclude
    scenery directories in the ``Options`` dialog on the
    ``Scenery Library Database`` tab if loading of an add-on BGL causes

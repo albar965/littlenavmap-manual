@@ -8,7 +8,7 @@ General
 
 Departure and arrival procedures will typically be used when flying an
 airliner, but smaller aircraft, too, have to use at least an approach
-procedure at their destination when flying IFR. Flight simulator stock
+procedure at their destination when flying IFR. FSX and Prepar3D stock
 data provides only approaches and transitions. SIDs and STARs are not
 available. These can be added by navdata updates.
 
@@ -56,9 +56,11 @@ procedures manually in your GPS or FMC as needed.
 You can enable saving of waypoints by checking the menu items :ref:`export-flight-plan-approach-waypoints` and/or
 :ref:`export-flight-plan-sid-star-waypoints`.
 
-**It is not possible to assign an approach or STAR to an alternate
-airport. Create a new flight plan for the alternate trip if you wish to
-do so.**
+.. note::
+
+      It is not possible to assign an approach or STAR to an alternate
+      airport. Create a new flight plan for the alternate trip if you wish to
+      do so.
 
 .. _procedures-custom:
 
@@ -330,8 +332,9 @@ the last point of an approach. The display of remaining flight plan
 distance will switch to display of remaining distance to last missed
 approach leg.
 
-**No missed approach legs are activated if missed approaches are not
-shown.**
+.. note::
+
+   Missed approach legs note are activated if missed approaches are hidden on the map.
 
 .. _procedures-highlights:
 

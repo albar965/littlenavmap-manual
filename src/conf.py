@@ -101,8 +101,8 @@ stickysidebar = False
 html_logo = 'images/littlenavmap.svg'
 html_favicon = 'images/littlenavmap.svg'
 html_show_sphinx = False
-html_show_sourcelink = False
-html_copy_source = False
+html_show_sourcelink = True
+html_copy_source = True
 #html_add_permalinks=False
 
 

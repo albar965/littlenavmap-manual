@@ -1,3 +1,5 @@
+.. _aircraft-performance:
+
 |Aircraft Performance| Aircraft Performance
 -------------------------------------------
 

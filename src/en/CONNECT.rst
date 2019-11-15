@@ -125,7 +125,7 @@ an error message like shown below:
 .. _connect-start-navmap:
 
 Start *Little Navmap* on the Client / Remote Computer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
 ``Flight Simulator Connection`` in the main menu.s

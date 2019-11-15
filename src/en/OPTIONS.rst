@@ -568,7 +568,7 @@ X-Plane.
 You have to reload the scenery database in order for the changes to take
 effect.
 
-.. _scenery-library-database_exclude:
+.. _scenery-library-database-exclude:
 
 Select Paths to exclude from loading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -587,7 +587,7 @@ dialogs.
 Select one or more entries in the list and click on ``Remove`` to delete
 then from the list.
 
-.. _scenery-library-database_exclude-add-on:
+.. _scenery-library-database-exclude-add-on:
 
 Select Paths to exclude add-on recognition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
