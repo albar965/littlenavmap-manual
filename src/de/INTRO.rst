@@ -299,7 +299,7 @@ Jeder Gegenstand erhält einen Stern:
 Alle Flugplätze, die sich nicht im standardmäßigen
 ``Scenery``-Verzeichnis des FSX/P3D oder im
 ``Custom Scenery``-Verzeichnis von X-Plane befinden, gelten als
-ZusatzFlugplätze, die die Bewertung um einen Stern erhöhen.
+Add-On-Flugplätze, die die Bewertung um einen Stern erhöhen.
 
 Flugplätze in der Datei
 ``Custom Scenery/Global Airports/Earth nav data/apt.dat`` von X-Plane

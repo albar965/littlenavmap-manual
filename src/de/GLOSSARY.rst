@@ -12,7 +12,7 @@ Add-on Flugplatz
     Standard-Szenerieverzeichnises des Flugsimulators gefunden wurde.
 
     X-Plane: Alle Flugplätze im Verzeichnis ``Custom Scenery`` gelten als
-    ZusatzFlugplätze und werden entsprechend markiert.
+    Add-On-Flugplätze und werden entsprechend markiert.
 
 Ankunftsprozedur
     Eine Ankunftsprozedur ist eine Reihe von Manövern für den Übergang eines

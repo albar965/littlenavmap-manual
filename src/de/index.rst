@@ -22,7 +22,13 @@ Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.or
 
 --------------
 
-Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert und merspieler.
+Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler und Alexander Barthel.
+
+--------------
+
+Diese Anleitung wurde mit `Sphinx <https://www.sphinx-doc.org/>`__ unter Benutzung der
+`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__ erstellt.
+Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
 
 --------------
 

@@ -23,6 +23,7 @@ project = u'Little Navmap User Manual'
 copyright = u'2019, Alexander Barthel'
 author = u'Alexander Barthel'
 
+# VERSION_NUMBER
 # The short X.Y version
 version = u'2.4'
 # The full version, including alpha/beta/rc tags

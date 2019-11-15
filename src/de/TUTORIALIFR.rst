@@ -3,7 +3,7 @@
 Erstellen eines IFR-Flugplans mit Anflugprozeduren
 -----------------------------------------------------
 
-Dieses Tutorial zeigt Ihnen, wie ein komplexerer IFRFlugplan
+Dieses Tutorial zeigt Ihnen, wie ein komplexerer IFR-Flugplan
 einschließlich Anflugprozeduren zu erstellen ist. Es erklärt die
 erweiterte Flugplatzsuchfunktion und die automatische
 Flugplanberechnung.

@@ -648,14 +648,14 @@ werden auf der Karte hervorgehoben sowie bei der Suche nach Add-ons
 berücksichtigt.
 
 **X-Plane:** Alle Flugplätze im Ordner ``Custom Scenery`` gelten als
-ZusatzFlugplätze und werden entsprechend markiert.
+Add-On-Flugplätze und werden entsprechend markiert.
 
 Sie können diese Liste verwenden, um dieses Verhalten zu ändern.
 
 Add-ons, wie *Orbx FTX Vector* oder *fsAerodata* fügen Szenerdateien
 hinzu, die bestimmte Aspekte von Flugplätze wie Höhe, magnetische
 Missweisung oder andere korrigieren. Alle diese Flugplätze werden als
-ZusatzFlugplätze erkannt, da alle ihre Dateien nicht im Verzeichnis des
+Add-On-Flugplätze erkannt, da alle ihre Dateien nicht im Verzeichnis des
 Basis-Flugsimulators ``Scenery`` gespeichert sind.
 
 Fügen Sie die entsprechenden Verzeichnisse oder Dateien in diese Liste

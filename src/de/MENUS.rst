@@ -1101,7 +1101,7 @@ Runways zu sehen.
 Ein leerer Flugplatz ist definiert als ein Flugplatz, der weder
 Parkplätze noch Rollwege noch Vorfelder hat und kein Add-on ist. Diese
 Flugplätze werden in *Little Navmap* unterschiedlich behandelt, da diese
-die langweiligsten aller StandardFlugplätze sind. Leere Flugplätze sind
+die langweiligsten aller Standardflugplätze sind. Leere Flugplätze sind
 grau und hinter allen anderen Flugplätze auf der Karte dargestellt.
 
 Flugplätze, die nur über Wasserlaufbahnen verfügen, sind von dieser

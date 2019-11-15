@@ -62,8 +62,8 @@ oder ändern.
 
 .. _customize-gui:
 
-GUI
----
+Benutzeroberfläche
+------------------
 
 Es können nur zwei Arten von Benutzeroberflächen angepasst werden. Diese
 sind ``Fusion`` und ``Night`` und befinden sich auf der Seite

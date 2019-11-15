@@ -21,6 +21,12 @@ More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`_
 
 --------------
 
+This manual was compiled using `Sphinx <https://www.sphinx-doc.org/>`__ using the
+`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__.
+The sources of this manual are availabe on `Github <https://github.com/albar965/littlenavmap-manual>`__.
+
+--------------
+
 Table of Contents
 ------------------------------
 

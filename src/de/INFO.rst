@@ -345,7 +345,7 @@ Informationen über ein KI- oder Mehrspielerflugzeug aus dem Simulator
 Reiter angezeigt, wenn ein Fahrzeug auf der Karte angeklickt
 wird.
 
-Dazu gehören auch die Abflug- und ZielFlugplätze des Flugzeugs, die durch
+Dazu gehören auch die Abflug- und Zielflugplätze des Flugzeuges, die durch
 Anklicken der blauen Links auf der Karte angezeigt werden können (nur
 für FSX oder P3D und wenn ein Flugplan hinterlegt ist).
 

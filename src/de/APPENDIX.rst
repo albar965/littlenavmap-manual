@@ -202,7 +202,7 @@ Bekannte Probleme
    mit dem gleichen Namen hat.
 -  Prozeduren werden in manchen Fällen falsch gezeichnet.
 -  Das Flugplatz-Suchattribut ``Prozeduren`` funktioniert in der
-   gemischten Datenbank nicht korrekt. Es werden nur SimulatorFlugplätze
+   gemischten Datenbank nicht korrekt. Es werden nur Simulatorflugplätze
    mit Prozeduren angezeigt, anstatt den Navigraph-Flugplatzstatus zu
    verwenden.
 

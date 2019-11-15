@@ -33,8 +33,8 @@ Seite ``Szeneriebibliothek`` ausschließen.
 Für den FSX/P3D gelten alle Flugplätze, die sich nicht im
 Standardverzeichnis ``Scenery`` des FSX/P3D befinden, als zusätzliche
 Flugplätze. Für X-Plane gelten alle Flugplätze, die sich im Verzeichnis
-``Custom Scenery`` von X-Plane befinden, als ZusatzFlugplätze.
-ZusatzFlugplätze werden auf der Karte durch hervorgehobenen Text
+``Custom Scenery`` von X-Plane befinden, als Add-On-Flugplätze.
+Add-On-Flugplätze werden auf der Karte durch hervorgehobenen Text
 hervorgehoben.
 
 Wenn ein Add-on nur Flugplatzhöhen oder Navigationsdaten korrigiert,
@@ -60,7 +60,7 @@ Beachten Sie, dass die endgültige Anzahl der Flugplätze, Navigationshilfen und
 anderer Objekte, die im Dialogfeld ``Szeneriebibliothek laden``
 angezeigt werden, niedriger ist als die im Fortschrittsdialog
 angezeigten Werte, da nach dem Laden der Daten ein separater Prozess
-Duplikate entfernt und LagerFlugplätze löscht, die durch Add-ons ersetzt
+Duplikate entfernt und Flugplätze löscht, die durch Add-ons ersetzt
 wurden.
 
 **Nur FSX oder P3D:** Das Programm versucht, die Basispfade und
