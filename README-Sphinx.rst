@@ -35,6 +35,7 @@ Why Sphinx?
 
 #. It is an open document generator which can be run on Linux, Windows and macOS to
    create the documentation.
+#. Documents contain an index for all headlines.
 #. reStructuredText provides more formatting features than Markdown.
 #. Much faster compilation than the now unsupported Gitbook toolchain.
 #. Better search with highlighting of terms in page.
@@ -43,7 +44,7 @@ Why Sphinx?
 #. Can generate ePUB format which is convertible to PDF and MOBI including working
    links and index.
 #. Generated documents work correctly with anchors. Gitbook generated documentation
-   often missed anchors in the middle of a page when loading the due to the
+   often missed anchors in the middle of a page when loading them due to the
    useless smooth scroll feature.
 #. Does error checking on internal and external links.
 

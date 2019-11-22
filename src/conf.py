@@ -102,9 +102,10 @@ stickysidebar = False
 html_logo = 'images/littlenavmap.svg'
 html_favicon = 'images/littlenavmap.svg'
 html_show_sphinx = False
-html_show_sourcelink = True
-html_copy_source = True
+html_show_sourcelink = False
+html_copy_source = False
 #html_add_permalinks=False
+html_show_copyright = True
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -189,7 +190,7 @@ texinfo_documents = [
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = 'Little Navmap User Manual'
+#epub_title = 'Little Navmap User Manual'
 
 epub_copyright  = 'Alexander Barthel and Contributors'
 
