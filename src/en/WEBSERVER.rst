@@ -1,5 +1,3 @@
-.. _webserver:
-
 Web Server
 ----------
 
@@ -20,8 +18,11 @@ Port and other settings can be changed in :ref:`web-server`.
 You need to adjust you router settings to access it from the internet
 outside your local network. Check out your router manual how to do this.
 In general you have to change the firewall settings to forward the port
-8965 from the router to the computer running *Little Navmap*. **Do not
-open the firewall completely.**
+8965 from the router to the computer running *Little Navmap*.
+
+.. warning::
+
+     Never open the firewall completely. This is a security risk.
 
 Web Page
 ~~~~~~~~
@@ -120,7 +121,7 @@ The links ``Runways``, ``Com Frequencies``, ``Procedures`` and
 Web Developers
 ~~~~~~~~~~~~~~
 
-*Little Navmap* can deliver map images, flight plan table and more my
+*Little Navmap* can deliver map images, the flight plan table and more for
 HTTP requests.
 
 See directory ``.../Little Navmap/web/test.html`` or

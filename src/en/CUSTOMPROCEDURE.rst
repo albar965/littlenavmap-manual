@@ -36,7 +36,7 @@ indicate the runway name:
    the runway which is runway ``22`` in this example.
 -  ``RW22``: The runway threshold for runway ``22`` here.
 
-Create Approach Dialog
+Create Approach
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Right click into the map, flight plan table or airport search result

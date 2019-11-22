@@ -1,7 +1,5 @@
-.. _holdings:
-
-|Holding Icon| Holding
-----------------------
+|Holding Icon| Holdings
+-----------------------
 
 *Little Navmap* can display a holding pattern at any place or navaid on
 the map.
@@ -24,23 +22,21 @@ text ``hidden on map`` if this is the case.
 hovering the mouse above the hotspot (white filled triangle) at the
 holding fix.
 
-Holding Dialog
+Create Holding
 ~~~~~~~~~~~~~~
 
 **Dialog input and selection fields:**
 
 -  Dialog header: Shows navaid name and ICAO ident or coordinates if
    holding is not attached to a navaid.
--  ``Runways``: List of available runways for the airport. Shows runway
-   name, length, width, magnetic heading, surface and lighting status.
 -  ``Turn direction``: Select to choose between left or right turn.
--  ``Course``: Magnetic course of inbound (towards fix) leg of holding
+-  ``Course``: Course of the inbound (towards fix) leg of holding
    in magnetic degree.
 -  ``Speed``: Intended holding speed. Used together with time to
    calculate holding size.
 -  ``Time``: Time of the straight legs in the holding. Used together
    with speed to calculate holding size.
--  Label ``Straight section length``: Length of the straight inbound and
+-  Label ``Straight section length``: Calculated length of the straight inbound and
    outbound sections.
 -  Label ``Total time to complete``: Total time to complete one holding.
 -  ``Altitude label``: Altitude to display at the holding.
@@ -50,7 +46,7 @@ Holdings can be removed by either selecting ``Map`` ->
 ``Remove all Ranges, Measurements and Patterns`` or by right click on
 the hotspot (triangle) at the holding fix.
 
-See :ref:`holding` for details about the
+See :ref:`holding-legend` for details about the
 displayed numbers in the pattern.
 
 .. figure:: ../images/holding_dialog.jpg

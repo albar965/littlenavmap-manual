@@ -1,5 +1,3 @@
-.. _little-navmap-shortcuts:
-
 Keyboard Shortcuts
 ------------------
 
@@ -257,8 +255,6 @@ Help
 | Help -> Contents (Online) | ``F1``       |
 +---------------------------+--------------+
 | Help -> Navmap Legend     | ``Shift+F1`` |
-+---------------------------+--------------+
-| Help -> Debug Action      | ``Ctrl+F1``  |
 +---------------------------+--------------+
 
 .. _shortcuts-context:

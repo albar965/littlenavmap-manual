@@ -1,5 +1,3 @@
-.. _coordinates-formats:
-
 Coordinate Formats
 ------------------
 

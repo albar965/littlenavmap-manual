@@ -3,8 +3,8 @@ Menus and Toolbars
 
 This chapter describes all the menu items of *Little Navmap*. You will
 find most of this functionality on the toolbars as well which are not be
-described separately. Key combinations can be seen on the menu items and
-are not listed in this manual.
+described separately. Keyboard shortcuts can be seen on the menu items.
+See :doc:`SHORTCUTS`.
 
 .. figure:: ../images/menutoolbar.jpg
 
@@ -20,8 +20,8 @@ File Menu
 
 Erases the current flight plan and shows the flight plan table.
 
-You have to use the :ref:`search-result-table-view-context-menu`, the
-:ref:`map-context-menu` or the
+You have to use :ref:`search-result-table-view-context-menu`,
+:ref:`map-context-menu` or
 :doc:`ROUTEDESCR` dialog to create a new flight plan.
 
 .. _open-flight-plan:
@@ -34,23 +34,25 @@ flight plan file and shows the flight plan table. The type of file is
 determined by content and not file extension. See :doc:`FLIGHTPLANFMT` for more information.
 
 An opened flight plan file will be reloaded on start up (reload and
-centering can be switched off in the ``Options`` dialog on the
-``Startup`` and ``User Interface`` tab).
+centering can be switched off in the ``Options`` dialog on
+:ref:`startup` and :ref:`user-interface`).
 
 Procedure information and ground speed will be added to the flight plan
 if a PLN file is saved by *Little Navmap*. The additional information
 will be ignored by FSX or P3D but allows to reload all information by
 *Little Navmap*.
 
-You can also **drag and drop files from a file manager** like Windows
+You can also drag and drop files from a file manager like Windows
 Explorer or macOS Finder into the *Little Navmap* main window to load
 them. Single flight plans and all allowed formats for loading (``FMS``,
 ``FLP``, ``PLN``) as well as aircraft performance files (``lnmperf``)
 are accepted.
 
-**Always save a copy of the flight plan in PLN format to be able to
-reload all information. Writing to and reading from other formats like
-X-Plane PLN might result in information loss.**
+.. warning::
+
+        Always save a copy of the flight plan in PLN format to be able to
+        reload all information. Writing to and reading from other formats like
+        X-Plane FMS might result in information loss.
 
 .. _append-flight-plan:
 
@@ -112,14 +114,14 @@ PLN file.
 .. note::
 
    You can save the flight plan files in any place if not used
-   by a simulator. I recommend a directory in  ``Documents`` like
+   by a simulator. I recommend a directory in ``Documents`` like
    ``Documents\Little Navmap\Flight Plans``.
 
 .. warning::
 
    Always save a copy of the flight plan in the default PLN format to be
    able to reload all information. Writing to and reading from other
-   formats like X-Plane PLN might result in information loss.
+   formats like X-Plane FMS might result in information loss.
    See :doc:`FLIGHTPLANFMT` for more
    information.
 
@@ -130,18 +132,16 @@ airport. A warning dialog will be shown when saving an incomplete flight
 plan.
 
 A warning dialog will also be shown if the departure airport has parking
-positions but none is assigned in the flight plan.
+positions but none is assigned in the flight plan. The dialog can be deactivated.
 
-Procedures will be saved as an annotation in the flight plan file if the
-flight plan contains any. This causes no problem for the simulators and
+Procedures, alternate airports and more will be saved as annotations in
+the flight plan file. This causes no problem for the simulators and
 most other programs. Use :ref:`export-clean-flight-plan` if a program has problems
 reading the PLN files saved by *Little Navmap*.
 
 Note that the waypoints of a procedure are not saved with the flight
 plan. This is not supported by FSX or P3D. Use the GPS, FMC or other
 ways to select a procedure in your aircraft.
-
-The set ground speed is also saved with the flight plan.
 
 .. _save-flight-plan-as-fms11:
 
@@ -150,7 +150,7 @@ The set ground speed is also saved with the flight plan.
 
 Saves the flight plan using the new X-Plane FMS 11 format.
 
-A warning dialog will be shown with the warning above when saving.
+A warning describing the format restrictions will be shown.
 
 See :doc:`FLIGHTPLANFMT` for more information on
 limitations.
@@ -163,21 +163,17 @@ Store FMS files into the ``Output/FMS plans`` directory inside the
 X-Plane directory if you would like to use the flight plan in the
 X-Plane GPS, the G1000 or the FMS.
 
-**Always save a copy of the flight plan in the default PLN format to be
-able to reload all information. Writing to and reading from other
-formats like X-Plane PLN might result in information loss.**
-
 .. _save-flight-plan-as-fgfp:
 
 |Save Flight Plan as FlightGear FGFP| Save Flight Plan as FlightGear FGFP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FlightPlan format which can be loaded into the RouteManager of the free
+Flightplan format which can be loaded into the RouteManager of the free
 flight simulator `FlightGear <http://www.flightgear.org>`__.
 
 *Little Navmap* can read and write this format.
 
-A warning dialog will be shown with the warning above when saving.
+A deactivateable warning dialog will be shown when saving.
 
 See :doc:`FLIGHTPLANFMT` for more information on
 limitations.
@@ -213,7 +209,7 @@ X-Plane directory if you want to load it into the FMS.
 |Export as Clean PLN| Export as Clean PLN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Saves a flight plan without any procedure or speed annotations if
+Saves a flight plan without any annotations if
 programs have problems reading the PLN files saved by *Little Navmap*.
 This is rarely needed.
 
@@ -333,9 +329,6 @@ Appends flight plan to the ``companyroutes.xml`` file for
 `ProSim <https://prosim-ar.com>`__ simulators. The format does not allow
 saving of procedures.
 
-Creates a backup file named ``companyroutes.xml_lnm_backup`` before
-modifying the file.
-
 .. _export-flight-plan-as-bbs:
 
 Export Flight Plan as PLN for BBS Airbus
@@ -447,7 +440,7 @@ Export the flight plan for the VATSIM
 `vPilot <https://www.vatsim.net/pilots/software>`__ online network
 client.
 
-The :doc:`ROUTEEXPORT` dialog will appear
+:doc:`ROUTEEXPORT` will appear
 before where you can add all needed information.
 
 .. _flight-plan-formats-ivap:
@@ -463,7 +456,7 @@ Export Flight Plan as X-IvAp FPL
 Export flight plan format for IVAO online network clients `IvAp or
 X-IvAp <https://www.ivao.aero/softdev/ivap.asp>`__.
 
-The :doc:`ROUTEEXPORT` dialog will appear
+:doc:`ROUTEEXPORT` will appear
 before where you can add all needed information.
 
 .. _export-submenu-other:
@@ -529,7 +522,7 @@ parts of a procedure like holds or procedure turns.
 
    Do not forget to clear the aircraft trail (:ref:`delete-aircraft-trail`) before a flight to avoid
    old trail segments in the exported GPX file. Or, disable the reloading
-   of the trail in the options dialog on page ``Startup``.
+   of the trail in the options dialog on :ref:`startup`.
 
 .. _export-flight-plan-as-skyvector:
 
@@ -587,8 +580,8 @@ plan with full information before enabling one of these options.
 
 Allows addition of one or more Google Earth KML or KMZ files to the map
 display. All added KML or KMZ files will be reloaded on start up. Reload
-and centering can be switched off in the ``Options`` dialog on the
-``Startup`` and ``User Interface`` tab.
+and centering can be switched off in the ``Options`` dialog on
+:ref:`startup` and :ref:`user-interface`.
 
 Due to the variety of KML files it is not guaranteed that all files will
 show up properly on the map.
@@ -612,6 +605,9 @@ the status bar if this mode is enabled.
 
 You should restart the application after going online again.
 
+Note that this function does not affect the download of weather information.
+You can disable this in the respective menus separately.
+
 .. _save-map-as-image:
 
 |Save Map as Image| Save Map as Image
@@ -620,7 +616,7 @@ You should restart the application after going online again.
 Saves the current map view as an image file. Allowed formats are JPEG,
 PNG and BMP. The image does not include the map overlays.
 
-The :doc:`IMAGEEXPORT` will show up before saving
+:doc:`IMAGEEXPORT` will show up before saving
 which allows to select the image size.
 
 .. _save-map-as-avitab:
@@ -632,10 +628,11 @@ Saves the current map view as an image file for
 `AviTab <https://github.com/fpw/avitab>`__. Allowed formats are JPEG and
 PNG.
 
-The :doc:`IMAGEEXPORT` will show up before saving
+:doc:`IMAGEEXPORT` will show up before saving
 which allows to select the image size.
 
-The saved file is accompanied by a calibration file in JSON format. It
+The saved file is accompanied by a calibration file in
+`JSON-Format <https://en.wikipedia.org/wiki/JSON>`__. It
 has the same name as the image with an additional ``.json`` extension.
 
 The files have to be saved to
@@ -653,8 +650,8 @@ Copy Map Image to Clipboard
 Copies the current map image to the clipboard. The image does not
 include the map overlays.
 
-The :doc:`IMAGEEXPORT` will show up before copying
-the image to the clipboard which allows to select the image size.
+:doc:`IMAGEEXPORT` will show up before copying
+the image which allows to select the image size.
 
 .. _print-map:
 
@@ -676,8 +673,8 @@ information to be printed. See :ref:`printing-the-flight-plan` for more informat
 |Quit| Quit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Exits the application. Will ask for confirmation if there is a changed
-flight plan.
+Exits the application. Will ask for confirmation if there are changed
+files.
 
 Flight Plan Menu
 ~~~~~~~~~~~~~~~~
@@ -687,7 +684,7 @@ Flight Plan
 
 Opens and raises the flight planning dock window and flight plan tab.
 Also activates the flight plan table for quick navigation. Same as
-``Window`` -> ``Shortcuts`` -> ``Airport Search`` or pressing ``F4``.
+``Window`` -> ``Shortcuts`` -> ``Flight Plan`` or pressing ``F7``.
 
 See :ref:`shortcuts-main-window` for
 a full list or shortcuts.
@@ -704,7 +701,7 @@ a full list or shortcuts.
 
 .. _undo-redo:
 
-|Undo|\ |Redo| Undo/Redo
+|Undo| |Redo| Undo/Redo
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Allows undo and redo of all flight plan changes.
@@ -736,7 +733,7 @@ Toggles the flight plan drag and drop edit mode on the map. See :doc:`MAPFPEDIT`
 |New Flight Plan from Route Description| New Flight Plan from Route Description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens a dialog with the route description of the current flight plan
+Opens a dialog with the ATS route description of the current flight plan
 that also allows to modify the current flight plan or enter a new one.
 :doc:`ROUTEDESCR` gives more
 information about this topic.
@@ -747,8 +744,7 @@ information about this topic.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Copies the route description of the current flight plan to the clipboard
-using the settings from the :ref:`flight-plan-from-route-description`
-dialog.
+using the current settings from :doc:`ROUTEDESCR`.
 
 .. _calculate-direct:
 
@@ -758,12 +754,14 @@ dialog.
 Deletes all intermediate waypoints and connects departure and
 destination using a great circle line.
 
-You can calculate a flight plan between any kind of waypoints, even
-user-defined waypoints (right-click on the map and select
-``Add Position to Flight plan`` to create one). This allows the creation
-of snippets that can be merged into flight plans. For example you can
-use this feature for crossing the North Atlantic with varying departures
-and destinations. This applies to all flight plan calculation modes.
+.. tip::
+
+    You can calculate a flight plan between any kind of waypoints, even
+    user-defined waypoints (right-click on the map and select
+    ``Add Position to Flight plan`` to create one). This allows the creation
+    of snippets that can be merged into flight plans. For example you can
+    use this feature for crossing the North Atlantic with varying departures
+    and destinations. This applies to all flight plan calculation modes.
 
 .. _calculate-radionav:
 
@@ -788,7 +786,7 @@ between any kind of waypoint.
 Uses Jet airways to create a flight plan.
 
 Calculated flight plans along airways will obey all airway restrictions
-like minimum and maximum altitude. The program will also adhere to
+like minimum and maximum altitude. *Little Navmap* will also adhere to
 one-way restrictions for X-Plane and Navigraph based navdata.
 
 Cruise altitude is corrected to the next sensible value (1000 ft for IFR
@@ -796,12 +794,12 @@ and 500 ft for VFR) if it violates airway altitude restrictions.
 
 A simplified east/west rule is optionally used to adjust the cruise
 altitude to odd/even values (this can be switched off in the ``Options``
-dialog on the ``Flight Plan`` tab). This correction is always applied if
+dialog on :ref:`flight-plan`). This correction is always applied if
 enabled.
 
 The default behavior is to jump from the departure airport to the next
 waypoint of a suitable airway and vice versa for the destination. This
-can be changed in ``Options`` dialog on the ``Flight Plan`` tab if VOR
+can be changed in ``Options`` dialog on :ref:`flight-plan` if VOR
 or NDB stations are preferred as transition points to airways.
 
 The airway network does not cover all areas (the north Atlantic tracks
@@ -838,7 +836,7 @@ as in ``Calculate high Altitude``.
 |Calculate based on given Altitude| Calculate based on given Altitude
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use the value in the altitude field of the flight plan to find a flight
+Use the value in the altitude field of the tab ``Flight Plan`` to find a flight
 plan along Victor and/or Jet airways. Calculation will fail if the
 altitude value is too low. Everything else is the same as in
 ``Calculate high Altitude``.
@@ -853,7 +851,7 @@ waypoints. A default runway is assigned for the new departure start
 position.
 
 This function removes all airway references since the result would not be valid
-due to one-way restrictions.
+due to one-way restrictions. Procedures are removed too.
 
 .. _adjust-flight-plan-alt:
 
@@ -865,6 +863,8 @@ rule and the current route type (IFR or VFR). Rounds the altitude up to
 the nearest even 1000 feet (or meter) for westerly flight plans or odd
 1000 feet (or meter) for easterly flight plans. Adds 500 feet for VFR
 flight plans.
+
+The rule can be changed in the options on :ref:`flight-plan`.
 
 Map Menu
 ~~~~~~~~
@@ -892,8 +892,7 @@ Symbol| symbol.
 |Center Flight Plan| Center Flight Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Zooms out the map (if required) to display the whole flight plan on the
-map.
+Displays the whole flight plan on the map.
 
 .. _remove-highlights:
 
@@ -913,6 +912,8 @@ Removes all user features which are range rings, navaid range rings,
 measurement lines, airport traffic patterns and holdings from the map.
 This cannot be undone.
 
+A warning dialog is shown before removing the user features.
+
 .. _center-aircraft:
 
 |Center Aircraft| Center Aircraft
@@ -923,7 +924,7 @@ or remotely connected using `Little
 Navconnect <https://albar965.github.io/littlenavconnect.html>`__ and
 keeps the aircraft centered on the map.
 
-The centering of the aircraft can be changed in the :ref:`simulator-aircraft` tab in dialog ``Options``.
+The centering of the aircraft can be changed on :ref:`simulator-aircraft` tab in dialog ``Options``.
 
 .. _delete-aircraft-trail:
 
@@ -1022,28 +1023,29 @@ zoom distance.
 '''''''''''''''''''''''''''''''''''''''''
 
 Show empty airports. This button or menu item might not be visible
-depending on settings in the ``Options`` dialog on the ``Map Display``
-tab. The status of this button is combined with the other airport
+depending on settings in the ``Options`` dialog on :ref:`map`.
+The status of this button is combined with the other airport
 buttons. This means, for example: You have to enable soft surfaced
 airport display and empty airports to see empty airports having only
 soft runways.
 
 An empty airport is defined as one which has neither parking nor
 taxiways nor aprons and is not an add-on. These airports are treated
-differently in *Little Navmap* since they are the most boring of all
-default airports. Empty airports are drawn gray and behind all other
+differently in *Little Navmap*. Empty airports are drawn gray and behind all other
 airports on the map.
+
+This function helps the user to avoid airports that have no scenery elements.
+
 
 Airports having only water runways are excluded from this definition to
 avoid unintentional hiding.
 
-X-Plane and 3D airports
-
+**X-Plane and 3D airports**
 
 The function can be extended to X-Plane airports which are not marked as
 ``3D``. This can be done by checking
 ``Consider all X-Plane airports not being 3D empty`` in the ``Options``
-dialog on the ``Map Display`` tab. All airports not being marked as
+dialog on :ref:`map`. All airports not being marked as
 ``3D`` will be shown in gray on the map and can be hidden like described
 above if enabled.
 
@@ -1192,6 +1194,9 @@ See also :ref:`load-scenery-library-user-airspaces` and :ref:`load-user-airspace
 Online
 ''''''
 
+Selects the online centers for display.
+Only visible if connected to an online service like VATSIM or IVAO.
+
 .. _user-features:
 
 User Features (Sub-Menu)
@@ -1239,6 +1244,8 @@ user-defined waypoints.
 Show or hide the flight plan. The flight plan is shown independently of
 the zoom distance.
 
+Note that the flight plan is also hidden in the elevation profile if you switch it off here.
+
 .. _show-missed-approaches:
 
 |Show Missed Approaches| Show Missed Approaches
@@ -1266,32 +1273,14 @@ the simulator. The user aircraft is always shown independently of the
 zoom distance.
 
 The icon color and shape indicates the aircraft type and whether the
-aircraft is on ground (gray border).
+aircraft is on ground (gray border on ground).
 
 |User Aircraft| User aircraft in flight.
 
 A click on the user aircraft shows more information in the
 ``Simulator Aircraft`` dock window.
 
-More options to change the map behavior while flying can be found in the
-dialog :ref:`simulator-aircraft`.
-
-The aircraft centering will be switched off when using one of the
-following functions. Note that this default behavior can be modified in
-the options dialog.
-
--  Double-click into a table view or map display to zoom to an airport
-   or a navaid.
--  Context menu item ``Show on map``.
--  ``Goto Home`` or ``Goto Center for Distance Search``.
--  ``Map`` link in ``Information`` dock window.
--  ``Show Flight Plan``, when selected manually, or automatically after
-   loading a flight plan.
--  Centering a Google Earth KML/KMZ file after loading
-
-This allows a quick inspection of an airport or navaid during flight. To
-display the aircraft again use ``Map Position Back`` or enable
-``Show Aircraft`` again.
+More options to change the map behavior while flying can be found here :ref:`simulator-aircraft`.
 
 .. _show-aircraft-trail:
 
@@ -1320,8 +1309,8 @@ Show a compass rose on the map which indicates true north and magnetic
 north. Aircraft heading and aircraft trail are shown if connected to a
 simulator.
 
-The rose is centered around the user aircraft if connected. Otherwise it
-is centered on the map view.
+The rose is centered around the user aircraft if connected to a simulator.
+Otherwise it is centered on the map view.
 
 See :doc:`COMPASSROSE` for details.
 
@@ -1337,7 +1326,9 @@ The icon color and shape indicates the aircraft type and whether the
 aircraft is on ground (gray border).
 
 |AI or Multiplayer Aircraft| AI or multiplayer aircraft from the
-simulator. This includes aircraft that are injected by the various
+simulator.
+
+This includes aircraft that are injected by the various
 online network clients. A click on the AI aircraft or ship shows more
 information in the ``Simulator Aircraft`` dock window in the tab
 ``AI / Multiplayer``.
@@ -1426,7 +1417,7 @@ altitude.
 Shows icons for airport weather where a weather station is available.
 Select source for display with :ref:`airport-weather-source` below.
 
-See :ref:`airport-weather` for an
+See :ref:`airport-weather-legend` for an
 explanation of the symbols and :ref:`airport-weather` for more information.
 
 .. _wind-levels:
@@ -1449,8 +1440,8 @@ Enables the display of sun shading on the globe. This works in both
 projections ``Mercator`` and ``Spherical``.
 
 You can change the time source with the ``Sun Shading Time`` menu below.
-The shadow darkness can be changed in the dialog ``Options`` on tab
-``Map Display``.
+The shadow darkness can be changed in the dialog ``Options`` on
+:ref:`map-display-2`.
 
 See :doc:`SUNSHADOW` for more information.
 
@@ -1517,19 +1508,26 @@ display.
 Theme
 ^^^^^
 
-Please note that all the online maps are delivered from free services
-therefore fast download speeds and high availability cannot be
-guaranteed. In any case it is easy to deliver and install a new online
-map source without creating a new *Little Navmap* release. See :doc:`MAPTHEMES` for more information.
+Allows to change the map theme which defines the look and feel of the background map.
 
 Custom map themes are prefixed with a ``*`` in the drop down box in the
 toolbar and with the word ``Custom`` in the menu.
 
-.. note::
+.. tip::
 
    Check out the `Little Navmap Support Forum at
    AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ for
    more map themes.
+
+.. note::
+
+    Please note that all the online maps are delivered from free services
+    therefore fast download speeds and high availability cannot be
+    guaranteed.
+
+In any case it is easy to deliver and install a new online
+map source without creating a new *Little Navmap* release.
+See :doc:`MAPTHEMES` for more information.
 
 OpenStreetMap
 '''''''''''''
@@ -1545,7 +1543,7 @@ cover the whole globe.
 OpenTopoMap
 '''''''''''
 
-An online raster map that mimics a topographic map. Includes hill
+An online raster map that mimics a topographic map. Includes integrated hill
 shading and elevation contour lines at lower zoom distances.
 
 The tiles for this map are provided by
@@ -1558,7 +1556,7 @@ The tiles for this map are provided by
 Stamen Terrain
 ''''''''''''''
 
-A terrain map featuring hill shading and natural vegetation colors. The
+A terrain map featuring integrated hill shading and natural vegetation colors. The
 hill shading is available worldwide.
 
 Map tiles by `Stamen Design <https://stamen.com>`__, under `CC BY
@@ -1764,10 +1762,10 @@ Create or append user-defined waypoints to a CSV file. A dialog asks if
 only selected userpoints should be exported and if the userpoints should
 be appended to an already present file.
 
-Note that the exported file contains an extra column ``Region`` compared
+Note that the exported file contains extra columns compared
 to the Plan-G format. The description field supports more than one line
 of text and special characters. Therefore, not all programs might be
-able to import this file. If needed, adapt the user-defined waypoints.
+able to import this file. If needed, adapt the file.
 
 .. _userdata-menu-export-user-fix:
 
@@ -1837,6 +1835,8 @@ Logbook Search
 
 Raise the dock window ``Search`` and the tab ``Logbook`` where you can
 edit, add delete and search logbook entries.
+
+See :doc:`LOGBOOK` for more information.
 
 .. _logbook-statistics:
 
@@ -1953,7 +1953,7 @@ You can clear the list by selecting the sub-menu item ``Clear Menu``.
 |Edit Aircraft Performance| Edit Aircraft Performance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens the :doc:`AIRCRAFTPERFEDIT` dialog for
+Opens :doc:`AIRCRAFTPERFEDIT` for
 the current performance profile.
 
 .. _aircraft-menu-open-merge:
@@ -1961,7 +1961,7 @@ the current performance profile.
 |Open Aircraft Performance and Merge| Open Aircraft Performance and Merge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens a file loading dialog and subsequently the :doc:`AIRCRAFTPERFMERGE` dialog which allows to merge or copy
+Opens a file loading dialog and subsequently :doc:`AIRCRAFTPERFMERGE` which allows to merge or copy
 data from the opened file to the current aircraft performance.
 
 .. _aircraft-menu-merge:
@@ -1969,7 +1969,7 @@ data from the opened file to the current aircraft performance.
 |Merge collected Aircraft Performance| Merge collected Aircraft Performance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens the :doc:`AIRCRAFTPERFMERGE` dialog
+Opens :doc:`AIRCRAFTPERFMERGE`
 which allows to merge or copy data from the collected aircraft
 performance to the currently loaded aircraft performance.
 
@@ -1995,7 +1995,9 @@ Flight Simulators
 
 One menu item is created for each Flight Simulator installation or
 database found. These menu items allow switching of databases on the
-fly. The menu item is disabled if only one Flight Simulator was found.
+fly.
+
+The menu item is disabled if only one Flight Simulator was found.
 
 The loaded AIRAC cycle is displayed only for X-Plane and Navigraph data
 since the information is not available for FSX or P3D simulators.
@@ -2006,28 +2008,30 @@ since the information is not available for FSX or P3D simulators.
    the ``Load Scenery Library Dialog`` first to enable the X-Plane
    menu item.
 
-This menu is synchronized with simulator selection in the :ref:`load-scenery-library-dialog`. Once a
+This menu is synchronized with simulator selection in :doc:`SCENERY`. Once a
 database is successfully loaded, the display, flight plan and search
 will switch over to the newly loaded simulator data.
 
-**Note that the program does not keep you from using a X-Plane scenery
-database while being connected to FSX/Prepar3D or vice versa. You will
-get unwanted effects like wrong weather information if using such a
-setup.**
+.. warning::
+
+      Note that *Little Navmap* does not keep you from using a X-Plane scenery
+      database while being connected to FSX/Prepar3D or vice versa. You will
+      get unwanted effects like wrong weather information if using such a
+      setup.
 
 The program might change a loaded flight plan if you switch between
 different databases. This can happen if a departure position is set in
 the plan which does not exist in the other database. Click
 ``New Flight Plan`` before switching to avoid this.
 
-Navigraph
-^^^^^^^^^
+Navigraph  (Sub-Menu)
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This sub menu also indicating the AIRAC cycle is added if a Navigraph
 database is found in the database directory.
 
 See the chapter :doc:`NAVDATA` for more
-information about these databases and the three different display modes
+information about scenery databases and the three different display modes
 shown below.
 
 .. _navigraph-all:
@@ -2082,7 +2086,7 @@ See also :ref:`load-scenery-library-user-airspaces`.
 |Load Scenery Library| Load Scenery Library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open the ``Load Scenery Library`` dialog. See :ref:`load-scenery-library-dialog` for more information.
+Open the ``Load Scenery Library`` dialog. See :doc:`SCENERY` for more information.
 This menu item is disabled if no flight simulator installations are
 found.
 
@@ -2098,7 +2102,7 @@ Open the ``Connect`` dialog allowing *Little Navmap* to connect directly
 to a Flight Simulator, the *Little Xpconnect* X-Plane plugin, or
 remotely using the `Little
 Navconnect <https://albar965.github.io/littlenavconnect.html>`__ agent.
-See :ref:`connecting-to-a-flight-simulator` for more
+See :doc:`CONNECT` for more
 information.
 
 .. _run-webserver:
@@ -2118,7 +2122,7 @@ Open Webserver Page in Browser
 
 Only enabled if the web server is running. Opens the web server page in
 your default browser. The default address is like
-``http://YOUR_COMPUTER_NAME:8965``.
+``http://YOUR_COMPUTER_NAME:8965`` or ``http://localhost:8965``.
 
 .. _reset-and-restart:
 
@@ -2157,7 +2161,7 @@ layout. This is normally only done when exiting *Little Navmap*.
 |Options| Options
 ^^^^^^^^^^^^^^^^^
 
-Open the :ref:`options-dialog`.
+Open :doc:`OPTIONS`.
 
 Window Menu
 ~~~~~~~~~~~
@@ -2180,8 +2184,8 @@ restart is not needed.
 
 The user interface styles contain a ``Night`` mode that can be used for
 flights in a dark environment. You can also dim the map and elevation
-profile display for this style in the dialog ``Options`` on tab
-``Map Display`` (``Map Dimming in Night Style`` at the bottom of the
+profile display for this style in the dialog ``Options`` on
+:ref:`map-display-2` (``Map Dimming in Night Style`` at the bottom of the
 dialog).
 
 The colors for the styles ``Fusion`` and ``Night`` can be changed by
@@ -2250,7 +2254,28 @@ stacked dock windows.
 
 .. _main-toolbar-options:
 
-Main Toolbar, Map Toolbar, Map Airspaces Toolbar, Map Options Toolbar, Flight Plan Toolbar, Dock Window Toolbar, Statusbar
+File Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Map Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Map Options Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Map Projection and Theme Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Flight Plan Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Map Airspaces Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Dock Window Toolbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Statusbar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show or hide these toolbars and the statusbar.
@@ -2361,71 +2386,6 @@ See :doc:`UPDATE` for more information.
 
 .. _statusbar:
 
-Statusbar
----------
-
-The statusbar at the bottom of the main window shows various indications
-(from left to right):
-
--  Last action or quick help explaining a menu item or toolbar button.
--  Connection status for a local or remote connection. The tooltip
-   provides more detail about the status, like the host name for remote
-   connections.
-
-   -  ``Connecting...``: The program is trying to establish a connection
-      which was initiated either manually or automatically.
-   -  ``Connected``: A connection was established.
-   -  ``Disconnected``: The simulator or *Little Navconnect* exited.
-
--  Indicator that shows airport types, airspaces, navaids or AI vehicles
-   currently visible on the map. The tooltip gives more details.
-
-   -  A red warning message ``Too many objects`` will be shown if too
-      many objects are displayed on the map due to too high a detail
-      level. The map display will be incomplete if this happens.
-   -  A red ``Database empty`` message will be shown if the currently
-      selected database has no content and needs to be loaded.
-
--  Map detail level. Range is -5 for least detail to +5 for most detail.
--  Online map download progress indicator. This shows the state of the
-   current map download. The text is prefixed with a red ``Offline.``
-   indication if offline mode is enabled.
-
-   -  ``Done.``: All map data loaded successfully.
-   -  ``Waiting for Data ...``: Map data is missing in the cache and was
-      requested. Now waiting for reply.
-   -  ``Waiting for Update ...``: Map data is already loaded but expired
-      after two weeks. Waiting for new data after requesting an update.
-   -  ``Incomplete.``: Download failed. Note that the progress indicator
-      can look like it is stuck in the message ``Waiting for Data ...``
-      if no hill shading is available for a *OpenStreetMap* region or if
-      you zoom in too close when using certain online maps.
-
--  Zoom distance (viewpoint distance to earth surface) in nautical miles
-   or kilometers.
--  Cursor position on map as latitude and longitude depending on
-   selected unit in the dialog ``Options``.
-
-   -  Ground elevation below the cursor after a short delay if the
-      `GLOBE <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ offline
-      elevation data is selected.
-   -  Magnetic declination at the cursor position in degrees West or
-      East.
-
--  Current date of month and Zulu/UTC time ``hours:minutes:seconds``.
-   This is the real world time and not the simulator time. The tooltip
-   gives more date and time information.
-
-.. figure:: ../images/statusbar.jpg
-
-         Status bar message about the last action on the
-         left side (``Options changed.``), the connection status ``Disconnected``
-         and a tooltip that indicates what is currently shown on the map. The map
-         detail level is unchanged and the map coordinates at the cursor position
-         are shown on the bottom right. Altitude at cursor is shown too since
-         offline elevation data is installed. The online map download progress
-         indicator shows ``Done.`` indicating all map tiles were downloaded. Zoom
-         distance is 14.7 nautical miles.
 
 .. |New Flight Plan| image:: ../images/icon_filenew.png
 .. |Open Flight Plan| image:: ../images/icon_fileopen.png

@@ -177,6 +177,9 @@ Userpoint
     An user-defined waypoint like a bookmark, point of interest or visual
     reporting point (VRP).
 
+UTC
+    Universal coordinated time. Also: Greenwich time or zulu time.
+
 VRP
     Visual reporting point for VFR flights. An userpoint type.
 

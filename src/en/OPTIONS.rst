@@ -1,6 +1,4 @@
-.. _options-dialog:
-
-|Options| Options Dialog
+|Options| Options
 ------------------------
 
 This dialog consists of several pages with configuration options which
@@ -9,9 +7,6 @@ list has a tooltip for easier navigation.
 
 **Most options are self-explaining and tooltips contain more detailed
 explanations if applicable.**
-
-You can immediately check the effect of your changes on the map display
-by moving the dialog ``Options`` to the side and pressing ``Apply``.
 
 The button ``Restore Defaults`` restores only the options of this dialog
 back to default. Other settings like map display, table views or dock
@@ -22,10 +17,15 @@ To reset all saved settings completely see :ref:`reset-and-restart`.
 
 The following chapters give a brief description of each page.
 
+.. tip::
+
+   You can immediately check the effect of your changes on the map display
+   by moving the dialog ``Options`` to the side and pressing ``Apply``.
+
 .. _startup:
 
-|Startup| Startup
-~~~~~~~~~~~~~~~~~
+|Startup| Startup and Update
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Allows to customize what should be loaded and shown on startup of
 *Little Navmap*.
@@ -118,7 +118,7 @@ Tooltips give explanations for the various settings in the tree.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This page allows to change the default center circle sizes for online
-flying.
+centers.
 
 Two options below ``Online Center Boundary Lookup in User Airspaces``
 can be used to assign OpenAir airspaces from the user airspace database
@@ -168,7 +168,7 @@ altitude and nautical miles for distance are possible.
 
 Choosing these display formats will also enable input of signed decimal
 values. The reading order for coordinates will also change depending on
-the chosen format above if entering signed numbers.
+the chosen format above when entering signed numbers.
 
 .. _simulator-aircraft:
 
@@ -229,16 +229,19 @@ when a new leg is activated.
 Allow scrolling and zooming in the map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Allow scrolling Active
+''''''''''''''''''''''''
+
 The map will stop following the aircraft for the given time if the user
 does any interaction with the map like scrolling or zooming. You can
 quickly check out the destination or your overall progress, and after
 you stop moving around, *Little Navmap* will return to following your
 aircraft.
 
-This option is also used in the :doc:`PROFILE`.
+This option is also used in :doc:`PROFILE`.
 
-**Note if you use the default aircraft centering mode or if Little
-Navmap falls back to this mode (see above):**
+**Note if you use the default aircraft centering mode or if *Little
+Navmap* falls back to this mode (see above):**
 
 #. Using the mouse wheel or the ``+`` and ``-`` key to zoom will change
    and keep the zoom distance. The aircraft is still centered but the
@@ -256,9 +259,29 @@ link.
 Toggle |Center Aircraft| ``Center Aircraft`` on and off if you find that
 the map jumps back to the wrong position.
 
-This option is also used in the :doc:`PROFILE`.
+This option is also used in :doc:`PROFILE`.
 
 .. _simulator-aircraft-jump-timeout:
+
+Allow scrolling not active
+''''''''''''''''''''''''''''''''
+
+The aircraft centering will be switched off when using one of the
+following functions. Note that this default behavior can be modified in
+the options dialog.
+
+-  Double-click into a table view or map display to zoom to an airport
+   or a navaid.
+-  Context menu item ``Show on map``.
+-  ``Goto Home`` or ``Goto Center for Distance Search``.
+-  ``Map`` link in ``Information`` dock window.
+-  ``Show Flight Plan``, when selected manually, or automatically after
+   loading a flight plan.
+-  Centering a Google Earth KML/KMZ file after loading
+
+This allows a quick inspection of an airport or navaid during flight. To
+display the aircraft again use ``Map Position Back`` or enable
+``Show Aircraft`` again.
 
 Jump back to aircraft and resume aircraft following after this time
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -490,12 +513,10 @@ Configuration options for the internal web server of *Little Navmap*.
 -  ``Start Server``: Start or stop the server to test the changes above.
    The server status (running or not running) is reverted to the
    previous state when pressing ``Cancel`` in the options dialog.
-
-Label
-``Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)``:
-Shows two links to the web server. Clicking on either opens the page in
-your default browser. You can always try the IP address link if the
-first link using the computer name does not work.
+-  Label ``Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)``:
+   Shows two links to the web server. Clicking on either one opens the page in
+   your default browser. You can always try the IP address link if the
+   first link using the computer name does not work.
 
 See :doc:`WEBSERVER` for detailed information.
 
@@ -532,10 +553,6 @@ The bottom part of this page allows to install the freely downloadable
 `GLOBE - Global Land One-km Base Elevation
 Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ elevation data.
 
-Look for posts in the `support forum at
-AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__
-if the original download is not available.
-
 Download the ZIP archive from the link in the dialog and extract it.
 Select the extracted directory using ``Select GLOBE Directory ...`` so,
 that it points to the files ``a10g`` to ``p10g``. The label in the
@@ -546,7 +563,7 @@ dialog will show an error if the path is invalid.
 User Airspaces
 ^^^^^^^^^^^^^^
 
-You can select the path to the user airspace and file extensions to
+You can select the path to the user airspaces and file extensions to
 read. *Little Navmap* reads all OpenAir files with the given extension
 in the selected directory recursively into the user airspace database.
 

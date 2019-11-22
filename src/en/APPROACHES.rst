@@ -53,7 +53,9 @@ format does not support all the different leg types and the flight
 simulator would not be able to display them correctly. Select the
 procedures manually in your GPS or FMC as needed.
 
-You can enable saving of waypoints by checking the menu items :ref:`export-flight-plan-approach-waypoints` and/or
+Some flightplan formats like X-Plane FMS allow saving and loading of procedures.
+
+You can enable saving of waypoints by checking :ref:`export-flight-plan-approach-waypoints` and/or
 :ref:`export-flight-plan-sid-star-waypoints`.
 
 .. note::

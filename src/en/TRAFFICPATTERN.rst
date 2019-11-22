@@ -1,7 +1,5 @@
-.. _traffic-pattern:
-
-|Traffic Pattern Icon| Traffic Pattern
---------------------------------------
+|Traffic Pattern Icon| Traffic Patterns
+---------------------------------------
 
 *Little Navmap* can display an airport traffic patterns for guidance on
 the map.
@@ -20,7 +18,7 @@ with the text ``hidden on map`` if this is the case.
 pattern when hovering the mouse above the hotspot (white filled circle)
 at runway threshold.
 
-Traffic Pattern Dialog
+Create Traffic Pattern
 ~~~~~~~~~~~~~~~~~~~~~~
 
 **Dialog input and selection fields:**

@@ -1,5 +1,3 @@
-.. _checking-for-updates:
-
 |Checking for Updates| Checking for Updates
 -------------------------------------------
 
@@ -13,14 +11,17 @@ You can always check manually for updates by selecting ``Help`` ->
 
 Note that the installation still has to be done manually.
 
-Notification
-~~~~~~~~~~~~
+Notification Dialog
+~~~~~~~~~~~~~~~~~~~~~
 
 The dialog showing available updates contains a change log, various
 other messages and one or more download links.
 
-Download in Web Browser
+Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+Download in Web Browser
+''''''''''''''''''''''''''''''
 
 Opens your default web browser and start the download or shows a
 download page. You might not necessarily see a web page if the download
@@ -28,19 +29,8 @@ starts in the background.
 
 The update dialog stays to allow reading the release notes.
 
-Ignore this Update
-^^^^^^^^^^^^^^^^^^
-
-Pressing this button will close the dialog and put the shown version on
-a blacklist. You will not see any reminders for this version again but
-for newer versions.
-
-This button is not visible when checking manually.
-
-Note that a manual check for updates ignores the blacklisted updates.
-
 Remind me Later
-^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''
 
 Dismiss the dialog. You will be notified again on next startup depending
 on selected frequency. You can also press the escape key to trigger this
@@ -48,19 +38,35 @@ action.
 
 This button is not visible when checking manually.
 
-.. figure:: ../images/updatedialog.jpg
-
-     Update notification dialog showing an available beta version including change log and download link.
-
 Copy to Clipboard
-^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''
 
 Copy the contents of the window as formatted text into the clipboard for
 later reading. This allows to paste the release notes into LibreOffice
 Writer or MS Word.
 
+Ignore this Update
+''''''''''''''''''''''''''''''
+
+Pressing this button will close the dialog and ignore the shown
+version in the future. You will not see any reminders for this version again but
+only for newer versions.
+
+This button is not visible when checking manually.
+
+Note that a manual check for updates supersedes the ignored versions.
+
+
+.. figure:: ../images/updatedialog.jpg
+
+     Update notification dialog showing an available beta version including change log and download link.
+
+
 Options
 ~~~~~~~
+
+Update check settings can be changed in the options dialog on the page
+``Startup and Update``.
 
 Check for Updates
 ^^^^^^^^^^^^^^^^^

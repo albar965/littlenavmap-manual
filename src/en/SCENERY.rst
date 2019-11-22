@@ -1,6 +1,4 @@
-.. _load-scenery-library-dialog:
-
-|Load Scenery Library| Load Scenery Library Dialog
+|Load Scenery Library| Load Scenery Library
 --------------------------------------------------
 
 This dialog allows loading of the scenery library data from all four
@@ -244,7 +242,7 @@ this.
 
 Once done the center should show the correct boundary.
 
-Load Scenery Library Dialog Options
+Load Scenery Library Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  ``Simulator``: Select the simulator to load, show database statistics

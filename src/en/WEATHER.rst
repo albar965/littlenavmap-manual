@@ -1,5 +1,3 @@
-.. _weather:
-
 Weather
 -------
 
@@ -20,8 +18,9 @@ Weather can be taken from the following sources:
    -  *Active Sky Next* (ASN)
    -  *AS16*
    -  *Active Sky for Prepar3D v4* (ASP4)
+   -  *ASX* for X-Plane
 
-You can define in the ``Options`` dialog on the ``Weather`` tab which
+You can define in the ``Options`` dialog on the page ``Weather`` which
 sources are used to display the METAR information in tooltips or the tab
 ``Weather`` in the ``Information`` dock window.
 
@@ -46,10 +45,10 @@ highlighted in red if the METAR information is older than six hours.
       around the aircraft. Be aware that *Little Navmap* might display
       information from an obsolete or inactive downloaded weather file.
 
-Also, weather and nearest weather in X-Plane might be inaccurate. This
-is due to interpolation between weather stations. Another problem is
-X-Plane falling back to default weather if a METAR cannot be decoded
-although it is reported correctly in *Little Navmap*.
+      Also, weather and nearest weather in X-Plane might be inaccurate. This
+      is due to interpolation between weather stations. Another problem is
+      X-Plane falling back to default weather if a METAR cannot be decoded
+      although it is reported correctly in *Little Navmap*.
 
 .. figure:: ../images/weather.jpg
 
@@ -87,12 +86,6 @@ changes or changes in the weather theme.
 *Little Navmap* watches the X-Plane ``METAR.rwx`` file for changes and
 will apply updates immediately.
 
-.. note::
-
-     The nearest weather will not necessarily depict the weather at
-     the selected station due to the interpolation between multiple stations
-     which is done by the simulator.
-
 Online - NOAA, VATSIM and IVAO
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -125,13 +118,14 @@ Note that the indication of ``Departure`` or ``Destination`` depends
 entirely on the flight plan loaded in *Active Sky* and not the flight
 plan in *Little Navmap*.
 
+.. _airport-weather:
+
 Airport Weather
 ~~~~~~~~~~~~~~~
 
 *Little Navmap* can show weather symbols for airports having a weather
 station for all available weather sources. Select sources for display
-with the :ref:`airport-weather-source`
-menu item.
+with :ref:`airport-weather-source`.
 
 Note that airport weather is only displayed for stations and not
 interpolated. Stations which are not airports are not supported.
@@ -140,8 +134,7 @@ A suffix ``- Map`` is added to the flight rules in the METAR and decoded
 weather display of the information window and tooltips to indicate which
 source is shown on the map.
 
-See :ref:`airport-weather` for an
-explanation of the symbols.
+See :ref:`airport-weather-legend` for an explanation of the symbols.
 
 .. figure:: ../images/weather_map.jpg
 
@@ -156,18 +149,18 @@ Winds Aloft
 X-Plane or the `National Oceanic and Atmospheric
 Administration <https://www.noaa.gov/>`__ data.
 
-The latter one are winds aloft forecasts which are updated four times a
+The latter ones are winds aloft forecasts which are updated four times a
 day and are used by most simulators and weather programs as data source.
 The wind speed and direction is arranged in an one-degree grid.
 
-*Little Navmap* can display a wind barbs grid for a selected wind layer
+*Little Navmap* can display a wind barb grid for a selected wind layer
 or at flight plan waypoints. Tooltips at the wind barbs show wind
 details for several layers at the position.
 
 Hovering the mouse over the elevation profile shows the wind at the
 flight plan position. See :ref:`top-label`.
 
-Winds are used to calculate flight time, trip fuel, block fuel, top of
+Winds are used to calculate flight time, trip fuel, top of
 descent and top of climb.
 
 A manual wind setting for cruise altitude can also be used. See

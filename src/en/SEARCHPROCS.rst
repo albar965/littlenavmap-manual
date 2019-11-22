@@ -1,6 +1,4 @@
-.. _search-dock-window-procs:
-
-|Search| Search Dock Window - Procedures
+|Search| Search Procedures
 ----------------------------------------
 
 The tab ``Procedures`` allows previewing and adding approach and
@@ -175,7 +173,7 @@ added to the flight plan as well.
 Show detailed information in the ``Information`` dock window for the
 airport.
 
-See the :ref:`information-dock-window`
+See the :doc:`INFO`
 for details.
 
 .. _show-on-map-procs:

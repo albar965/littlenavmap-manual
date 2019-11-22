@@ -12,9 +12,8 @@ range ring around every radio navaid in the flight plan.
 
 See also :ref:`show-navaid-range`.
 
-Remove the range rings by selecting
-``Remove all Range Rings and Distance Measurements`` |Remove all Range
-Rings and Distance Measurements|.
+Remove the range rings by right clicking onto the center and select
+``Remove Range Ring`` from the context menu.
 
 |Range Rings|
 
@@ -29,7 +28,7 @@ radial and distance if you like to navigate the old fashioned way.
 
 Below is an example that gets radial and distance from two VORs for
 ``ETUO``. Measurement lines can also start at NDBs or waypoints. Note
-the suffix ``M`` which indicates magnetic course.
+the suffix ``°M`` which indicates magnetic course.
 
 See also :ref:`measure-gc-distance-from-here` and :ref:`measure-rhumb-distance-from-here`.
 
@@ -41,18 +40,6 @@ below fly 323 degrees magnetic to VOR ``SFD`` (radial 143). You are at
 280°M until you intercept 302° to ``GWC``.
 
 |VOR Airways|
-
-.. _tips-and-tricks-approach-guidance:
-
-Use the measurement lines for Approach Guidance
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Right-click on the airport and choose
-``Measure Rhumb Distance from here`` |Measure Rhumb Distance from here|.
-Pull the line using the opposing course to 3 nautical miles out to get
-guidance for the final approach.
-
-|Approach Guidance|
 
 .. _tips-and-tricks-addon-airports:
 
@@ -90,8 +77,8 @@ Assume you'd like to go east:
    Search|. This is the center point for the spatial search.
 #. Add any additional criteria in the search like lighted runways,
    procedures, fuel, minimum runway length and more.
-#. Adjust the minimum and maximum distance, set direction to ``East``
-   and click the checkbox before ``Distance``.
+#. Click the checkbox before ``Distance``, adjust the minimum and maximum
+   distance and set direction to ``East``.
 #. Select all in the result table to see the airports on the map.
 #. Choose your next destination airport.
 #. Add as destination.

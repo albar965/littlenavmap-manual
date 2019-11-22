@@ -1,5 +1,3 @@
-.. _edit-flightplan-position:
-
 Edit Flight Plan Position
 -------------------------
 

@@ -1,5 +1,3 @@
-.. _compass-rose:
-
 |Compass Rose Icon| Compass Rose
 ---------------------------------
 

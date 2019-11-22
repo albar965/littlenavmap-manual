@@ -1,6 +1,4 @@
-.. _information-dock-window:
-
-|Information| Information Dock Window
+|Information| Information
 -------------------------------------
 
 General
@@ -12,7 +10,9 @@ tab plus an additional tab showing airspace information.
 
 All information can be copied to the clipboard as formatted text. Use
 the context menu of the text fields or use ``Ctrl+A`` to select all and
-``Ctrl+C`` to copy the content to the clipboard. Note that the formatted
+``Ctrl+C`` to copy the content to the clipboard.
+
+Note that the formatted
 clipboard content is removed when *Little Navmap* is closed.
 
 Bearing and distance (rhumb line constant course) to the user aircraft
@@ -104,7 +104,7 @@ Airport Tab - Files
 *Little Navmap* will show extra links to local files if you put these
 into a special directory with the name of the airport ICAO ident.
 
-The path to the airport files is shown on top of the ``Files`` section.
+The path to the airport files is shown in the ``Files`` section.
 
 You can use any file type. A file will be opened with the default
 application like a PDF reader if you click on the link.
@@ -120,7 +120,7 @@ Examples for airport Ouessant (``LFEC``):
    macOS with German translation
 -  ``C:\Users\YOURUSERNAME\Documents\Little Navmap Files/Airports/LFEC``:
    Windows
--  ``C:\Users\YOURUSERNAME\Documents\Little Navmap Dateien/Flugplätze/LFEC``:
+-  ``C:\Users\YOURUSERNAME\Dokumente\Little Navmap Dateien/Flugplätze/LFEC``:
    Windows with German translation
 
 You can use the translated directory names or the English variant.
@@ -144,7 +144,7 @@ Preferred runways depending on wind are shown after the METAR. More
 details about preferred runways are on the tab ``Weather``.
 
 The tab ``Weather`` shows decoded weather information for a selected
-airport. The flight rules icon (:ref:`airport-weather`) has a suffix ``- Map`` if the
+airport. The flight rules icon (:ref:`airport-weather-legend`) has a suffix ``- Map`` if the
 shown weather source is the source for airport weather icons on the map.
 Also shown is detailed information for best runways for takeoff and
 landing based on wind conditions.
@@ -227,7 +227,7 @@ Other Tabs
 
 This dock window shows information about the user aircraft and about AI
 or multiplayer aircraft in several tabs. *Little Navmap* has to be
-connected to the simulator to enable this feature. See :ref:`connecting-to-a-flight-simulator` for
+connected to the simulator to enable this feature. See :doc:`CONNECT` for
 more information on this topic.
 
 .. _aircraft:
@@ -237,10 +237,6 @@ Tab Aircraft
 
 Gives an overview about the user aircraft and shows type, weight and
 fuel information.
-
-The aircraft tab shows a red warning text
-``Gross weight exceeding max gross weight.`` if the gross weight is too
-high.
 
 .. figure:: ../images/infoac.jpg
 

@@ -1,5 +1,5 @@
 Navigation Databases
-====================
+----------------------
 
 *Little Navmap* can use up to two databases in parallel:
 
@@ -8,7 +8,7 @@ Navigation Databases
 #. **Navigation database:** Provided by Navigraph. Does not have to be
    compiled and can be updated by the Navigraph *FMS Data Manager*.
 
-*Little Navmap* is bundled with a navigation database from a recent
+*Little Navmap* is bundled with a navigation database from an older
 AIRAC cycle that is enabled per default.
 
 .. note::
@@ -30,7 +30,7 @@ shown below.
 .. _navdata-navigraph-all:
 
 Use Navigraph for all Features
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Uses only information from the Navigraph database.
 
@@ -62,7 +62,7 @@ airport runway layout.
 .. _navdata-navigraph-none:
 
 Do not use Navigraph Database
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Completely ignores the Navigraph database and shows only information
 read from the simulator scenery.
@@ -70,9 +70,9 @@ read from the simulator scenery.
 .. _navdata-navigraph-navaid-proc:
 
 Use Navigraph for Navaids and Procedures
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default mode after installation or update of *Little Navmap*.
+Default mode after installation of *Little Navmap*.
 
 This mode blends navaids and other features from the Navigraph database
 with the simulator database. This affects the map display, all
@@ -91,17 +91,19 @@ this mode:
 The following features are taken from the Navigraph database:
 
 -  Navaids (waypoints/intersections, VOR, NDB, marker) which affects:
--  ``Search`` dock window, tab ``Navaid``
--  Flight plan calculation
--  Route Description
--  Procedures (approaches, SIDs and STARs). This affects:
--  ``Search`` dock window, tab ``Procedures``
--  Loading and display of procedures from flight plans.
+
+   -  ``Search`` dock window, tab ``Navaid``
+   -  Flight plan calculation
+   -  Route Description
+   -  Procedures (approaches, SIDs and STARs). This affects:
+   -  ``Search`` dock window, tab ``Procedures``
+   -  Loading and display of procedures from flight plans.
+
 -  Airways
 -  Airspaces
 
 Limitations in this mode
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  *Little Navmap* ignores any mismatches between procedures and runways
    due to airport updates and will not display a warning. Update an
@@ -122,7 +124,7 @@ Limitations in this mode
    switch to ``Use Navigraph for all Features`` to overcome this
    limitation.
 
-Using the *fsAerodata* navdata update will mitigate or even remove all
+Using the *fsAerodata* navdata update will remove many
 of the limitations above since it will synchronize the simulator scenery
 with the Navigraph database.
 

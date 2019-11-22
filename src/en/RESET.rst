@@ -1,14 +1,9 @@
-.. _reset-for-new-flight:
-
 |Reset all for a new Flight| Reset all for a new Flight
 -------------------------------------------------------
 
 Use this to reset functions for a new flight. This is optional but
 always helpful if you with to record logbook entries or aircraft
 performance between flights.
-
-Reset for a new Flight Dialog
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Dialog input and selection fields:**
 
@@ -25,7 +20,7 @@ Reset for a new Flight Dialog
 
 .. figure:: ../images/resetflight.jpg
 
-         Resetting Little Navmap for a new flight.
+         Resetting *Little Navmap* functions for a new flight.
 
 .. |Reset all for a new Flight| image:: ../images/icon_reload.png
 

@@ -1,5 +1,3 @@
-.. _customize:
-
 Customizing General
 -------------------
 
@@ -63,7 +61,7 @@ GUI
 ^^^^^^^^
 
 Only two user interface styles can be customized. These are ``Fusion``
-and ``Night`` and can be found in the dialog :ref:`user-interface` tab of the options dialog.
+and ``Night`` and can be found in :ref:`user-interface` in the options dialog.
 These two styles are available on all operating systems.
 
 Two files are generated that allow the customization for all window,
@@ -80,35 +78,6 @@ See below for more information on the color formats used.
 See here for more information about
 `groups <http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum>`__ and
 `roles <http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum>`__.
-
-.. _customize-online-center:
-
-Online Network Center
-^^^^^^^^^^^^^^^^^^^^^^^
-
-The configuration file
-``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap.ini``
-allows to change the size of the online network center circles.
-
-Radius is in nautical miles. The visual range is used if radius is -1.
-No circle is drawn if the value is 0.
-
-.. warning::
-
-      Do not delete this file since it contains all program settings, map
-      history, opened files and more. Edit only the keys shown below.
-
-.. code-block:: ini
-
-     [Online]
-     CenterRadiusACC=-1
-     CenterRadiusApproach=20
-     CenterRadiusDelivery=-1
-     CenterRadiusDeparture=-1
-     CenterRadiusFIR=-1
-     CenterRadiusGround=5
-     CenterRadiusObserver=-1
-     CenterRadiusTower=10
 
 .. _customize-map-display:
 
@@ -248,18 +217,25 @@ name pattern in the default directory.
 -  ``userpoint_Bookmark.png``
 -  ``userpoint_Cabin.png``
 -  ``userpoint_Closed.png``
+-  ``userpoint_DME.png``
 -  ``userpoint_Error.png``
 -  ``userpoint_Flag.png``
 -  ``userpoint_Helipad.png``
+-  ``userpoint_Lighthouse.png``
 -  ``userpoint_Location.png``
 -  ``userpoint_Logbook.png``
 -  ``userpoint_Marker.png``
 -  ``userpoint_Mountain.png``
+-  ``userpoint_NDB.png``
 -  ``userpoint_Obstacle.png``
--  ``userpoint_Pin.png``
 -  ``userpoint_POI.png``
+-  ``userpoint_Pin.png``
 -  ``userpoint_Seaport.png``
+-  ``userpoint_TACAN.png``
 -  ``userpoint_Unknown.png``
+-  ``userpoint_VOR.png``
+-  ``userpoint_VORDME.png``
+-  ``userpoint_VORTAC.png``
 -  ``userpoint_VRP.png``
 -  ``userpoint_Waypoint.png``
 

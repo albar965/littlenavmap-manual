@@ -1,6 +1,4 @@
-.. _flight-plan-elevation-profile-dock-window:
-
-|Flight Plan Elevation Profile Icon| Flight Plan Elevation Profile Dock Window
+|Flight Plan Elevation Profile Icon| Elevation Profile
 -------------------------------------------------------------------------------
 
 This dock window shows the ground elevation, flight plan with cruise,
@@ -63,7 +61,7 @@ Bottom Label
 This is only shown if the profile could not be built due to errors in
 the flight plan or aircraft performance.
 
-The error messages are the same as in the :ref:`flight-plan-table-error` in the flight
+The error messages are the same as in :ref:`flight-plan-table-error` in the flight
 planning window.
 
 Zoom Sliders
@@ -95,8 +93,8 @@ Mouse Movement
    highlighted on the map with a black/cyan circle.
 -  ``Wheel``: Zoom in and out horizontally.
 -  ``Shift+Wheel``: Zoom in and out vertically.
--  ``Left Click`` and drag: Move map up, down, left or right.
--  ``Left Double Click``: Zoom to position on map.
+-  ``Left Click and drag``: Move map up, down, left or right.
+-  ``Left Double Click``: Zoom to position on main map.
 -  ``Right Click``: Show context menu.
 
 .. _keyboard:
@@ -146,7 +144,7 @@ the altitude profile during flight.
 The aircraft will be kept on the upper part of the window if the
 aircraft is descending and on the lower part if climbing.
 
-See also for more information on jump back in the options dialog on tab
+See also for more information on jump back in the options dialog on
 :ref:`simulator-aircraft`.
 
 .. _delete-aircraft-trail-profile:
@@ -235,7 +233,7 @@ Profile Display
 ~~~~~~~~~~~~~~~
 
 The colors and symbols of the elevation profile follow the style of the
-main map as set in the options dialog on tab ``Map Display``. Colors,
+main map as set in the options dialog. Colors,
 patterns and symbols for airports, navaids, procedures, active and
 passed flight plan legs are the same. The profile display also follows
 other map settings like visibility of flight plan line, aircraft and
@@ -244,8 +242,7 @@ aircraft trail.
 Aircraft heading will turn if a backward movement relative to the active
 flight plan leg is detected.
 
-For more information see the ``Navmap`` tab in the ``Legend`` dock
-window or the :ref:`elevation-profile-legend` for details.
+For more information see the :ref:`elevation-profile-legend`.
 
 The elevation profile uses actual altitude for display of restrictions,
 slope and cruise. You have to expect differences between actual and
@@ -259,11 +256,13 @@ standard altimeter setting of 29.92 inches.
     the wrong position and the aircraft trail will be erratic if the active
     leg is not correct or manually changed.
 
-**The aircraft trail will be displayed incorrectly in the elevation
-profile if the flight plan is changed (i.e. the flight plan length or
-geometry changes).** You can delete the profile aircraft trail in
-context menu :ref:`delete-aircraft-trail` while keeping the trail on
-the map.
+.. note::
+
+    The aircraft trail will be displayed incorrectly in the elevation
+    profile if the flight plan is changed (i.e. the flight plan length or
+    geometry changes). You can delete the profile aircraft trail in
+    context menu :ref:`delete-aircraft-trail` while keeping the trail on
+    the map.
 
 .. figure:: ../images/profile.jpg
 
@@ -354,7 +353,7 @@ elevation data has several advantages:
 -  No known errors
 -  Display of altitude below the cursor in the status bar
 
-See the dialog :ref:`cache-elevation` in the
+See :ref:`cache-elevation` in the
 options dialog for instructions how to download and install the GLOBE
 data.
 

@@ -1,5 +1,3 @@
-.. _flight-plan-from-route-description:
-
 Flight Plan Route Description
 -----------------------------
 
@@ -17,7 +15,7 @@ during reading.
 The menu button |Menu Button| provides a dropdown menu than can be used
 to customize the generated route string.
 
-The description parser will try to use as much of the route as possible
+*Little Navmap* will try to use as much of the route as possible
 even if parts of the flight plan like waypoints or airways cannot be
 found or names are ambiguous. You will see warnings in the bottom half
 if that is the case.
@@ -29,7 +27,7 @@ or remove this waypoint manually.
 Many waypoints and airways will not be found if route descriptions from
 the latest AIRAC sources are used together with FSX/P3D stock data from
 2005. It is recommended to use a navigation data update for the stock
-scenery when reading route descriptions from online sources like
+scenery or *Little Navmap* when reading route descriptions from online sources like
 `RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight
 Planner <http://onlineflightplanner.org/>`__,
 `SimBrief <https://www.simbrief.com>`__ or
@@ -44,21 +42,18 @@ converted back exactly in some cases. This happens due to navaid
 ambiguities like NDB and VOR stations having the same names or errors in
 the source data.
 
-The cruise speed and altitude are used to create the flight plan if
+The cruise altitude is used to create the flight plan if
 given. Otherwise the cruise altitude is automatically determined by the
 flight plan type (IFR or VFR) and the minimum altitude of the used
 airway segments.
 
-SID and STAR procedures require a navdata update except for X-Plane
-which already comes with a complete navigation database.
+The cruise speed is ignored and produces a warning if found.
 
 .. figure:: ../images/routedescr.jpg
 
           A route description that was read successfully with
           a few warnings about ignored elements. The waypoint ``LLL`` could not be
-          found. Speed, altitude, SID and STAR were recognized. The ground speed
-          of 433 knots is calculated based on given mach number 0.74 and standard
-          atmosphere conditions.
+          found. Speed, altitude, SID and STAR were recognized.
 
 Buttons
 ~~~~~~~
@@ -67,7 +62,7 @@ Buttons
    clipboard.
 -  ``From Clipboard``: Insert text from clipboard into the input field.
    The inserted text is converted to upper case and all invalid
-   characters are removed from the text.
+   characters are removed from the text before reading.
 -  ``Update from Flight Plan``: Create the route string from the current
    flight plan again. Use this after changing settings with drop down
    menu button.
@@ -80,13 +75,12 @@ Buttons
    description and ``Read`` denotes description to flight plan.
 
    -  ``Write departure and destination airport``: Note that disabling
-      this option will result in a route string which cannot be read
+      this option will result in an invalid route description which cannot be read
       back into a flight plan.
    -  ``Write DCT (direct) instructions``: Add ``DCT`` for any direct
       waypoint connections in the flight plan.
    -  ``Write cruise speed and altitude instruction``: Add cruise
-      altitude from flight plan and ground speed as set in the flight
-      planning dock window.
+      altitude from flight plan and speed as set in the aircraft performance.
    -  ``Write SID and STAR``: Add SID and STAR names if any are used for
       departure or arrival.
    -  ``Write generic SID and STAR``: Add the generic ``SID`` and
@@ -130,7 +124,8 @@ flight plan when reading depending on the option
 ``Read trailing Airports as Alternates`` as described above.
 
 ``SPEEDALT``: An optional entry that contains the cruise speed and
-altitude. See below for a details. Speed is ignored when reading.
+altitude. See below for a details. Speed is ignored when reading since it is part of the
+aircraft performance profile.
 
 ``ENROUTE``: This is a list of either ``WAYPOINT`` or an
 ``AIRWAYWAYPOINT`` forming the actual flight plan. The first entry has
@@ -160,7 +155,7 @@ Features not supported
 ^^^^^^^^^^^^^^^^^^^^^^
 
 ``ETD`` and ``ETA``: Four digit departure and arrival time attached to
-the airport ident are ignored.
+the airport or waypoint ident are ignored.
 
 ``WAYPOINT.SPEEDALT``: For example ``BOMBI/N0090A060``. Altitude changes
 at waypoints are not supported and ignored when reading.
@@ -201,7 +196,7 @@ Speed is prefixed with:
 
 ``M``: Mach followed by a three digit value. The mach value is converted
 to knots ground speed assuming standard atmosphere conditions at the
-give flight altitude.
+given flight altitude.
 
 Altitude is prefixed with:
 

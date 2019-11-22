@@ -1,5 +1,3 @@
-.. _tutorial-ifr:
-
 Tutorial - Building an IFR Flight Plan with Approach Procedures
 -------------------------------------------------------------------
 
@@ -15,7 +13,7 @@ a minute to get a flight plan if you know where to go. The planning
 effort shown here is bigger to highlight some of the more advanced
 features of the program.
 
-You should at least read through the VFR tutorial :doc:`TUTORIALVFR` before doing this one.
+You should at least read through :doc:`TUTORIALVFR` before doing this one.
 
 The flight plan will go across the UK using an IFR capable aircraft. Its
 maximum range should be more than 600 nautical miles including reserves
@@ -27,11 +25,12 @@ The tutorial assumes the following preconditions:
    flight or think of it as you home base.
 -  You don't know where you want to fly today.
 -  You know the requirements for your aircraft:
--  Maximum range
--  Minimum runway length
--  Hard runways
--  Need a parking spot at the destination
--  Fuel for flying back
+
+   -  Maximum range
+   -  Minimum runway length
+   -  Hard runways
+   -  Need a parking spot at the destination
+   -  Fuel for flying back
 
 Prepare Flight
 ~~~~~~~~~~~~~~
@@ -112,7 +111,7 @@ position:
 |Assign Parking|
 
 Alternatively you can also select the start position directly on the
-map's context menu as described in the :doc:`TUTORIALVFR`.
+map's context menu as described in :doc:`TUTORIALVFR`.
 
 See also :ref:`set-as-flight-plan-departure`.
 
@@ -147,7 +146,7 @@ Check the following in the airport search tab:
 
 #. ``Rating``: We'd like to get airports that are either add-ons or have
    basic scenery requirements, like taxiways, parking spots and more.
-   Everything else is boring. Select the one with at least four stars.
+   Select the one with at least four stars.
    You can also select ``3D`` if you fly X-Plane.
 #. ``Procedures``: Show only airports that have procedures to get a more
    interesting approach.
@@ -175,8 +174,7 @@ though we are not there yet:
    combo box ``Any Direction``. Note that the search result is sorted by
    distance with the closest airport first.
 -  Choose an airport for your trip. We use ``Wick (EGPC)`` for this
-   tutorial.
--  |Search for Destination|
+   tutorial. |Search for Destination|
 -  Right-click on Wick in the result table.
 -  Select ``Show Information`` |Show Information|. This will fill the
    tabs in the dock window ``Information``.
@@ -222,8 +220,7 @@ legs in the procedure tree to see the start and end points of a leg.
 The procedure looks sufficiently complicated to make an interesting
 approach.
 
-More information on procedure search: `Search Dock Window -
-Procedures <SEARCHPROCS.html>:doc:`APPROACHES`
+More information on procedure search: :doc:`SEARCHPROCS` and :doc:`APPROACHES`
 for general information on procedures.
 
 If you like what you see right-click again on the transition and select
@@ -257,7 +254,8 @@ destination all connected by a straight line. Next is the en-route part
 of the flight plan:
 
 -  Set ``IFR`` as the flight plan type in the dock window
-   ``Flight Planning``. This allows the automatic flight plan
+   ``Flight Planning`` on tab ``Flightplan``.
+   This allows the automatic flight plan
    calculation to adjust the cruise altitude.
 -  Click ``Flight Plan`` -> ``Calculate low Altitude`` |Calculate low
    Altitude| to start the automatic flight plan calculation for Victor
@@ -281,7 +279,8 @@ for the chosen aircraft.
 Therefore, try an alternate calculation method which limits your cruise
 altitude:
 
--  Enter 10000 feet in the ``Flight plan altitude`` field.
+-  Enter 10000 feet in the ``Flight plan altitude`` field on the
+   tab ``Flightplan``.
 -  Click on ``Flight Plan`` -> ``Calculate based on given Altitude``
    |Calculate based on given Altitude|. This will result in a flight
    plan that uses only airways having a minimum altitude below or equal
@@ -375,38 +374,10 @@ calculation.
 
 The tab ``Progress`` in the dock window ``Simulator Aircraft`` will show
 the distance to the top of descent in the ``Flight Plan Progress``
-section:
-
-+-------------------------+--------------------+
-| Flight Plan Progress    |                    |
-+=========================+====================+
-| To Destination:         | 74 nm              |
-+-------------------------+--------------------+
-| Time and Date:          | 21.05.17 12:33 UTC |
-+-------------------------+--------------------+
-| Local Time:             | 14:33 CEST         |
-+-------------------------+--------------------+
-| **TOD to Destination:** | **64 nm**          |
-+-------------------------+--------------------+
-| **To Top of Descent:**  | **10,1 nm**        |
-+-------------------------+--------------------+
+section.
 
 The section ``Altitude`` will show the vertical path deviation after
-passing the top of descent:
-
-+-------------------------+---------------------+
-| Altitude                |                     |
-+=========================+=====================+
-| Indicated:              | 5,090 ft            |
-+-------------------------+---------------------+
-| Actual:                 | 5,051 ft            |
-+-------------------------+---------------------+
-| Above Ground:           | 5,051 ft            |
-+-------------------------+---------------------+
-| Ground Elevation:       | 0 ft                |
-+-------------------------+---------------------+
-| **Vertical Path Dev.:** | **-511 ft below ▲** |
-+-------------------------+---------------------+
+passing the top of descent.
 
 .. _tutorial-ifr-changing-procedures:
 
@@ -461,7 +432,7 @@ This will give a direct connection from your current aircraft position
 to the start of the procedure which you can use to get course and
 distance to the initial fix.
 
-Below: After changing the approach procedure and adding an user-defined
+**Below:** After changing the approach procedure and adding an user-defined
 waypoint at the aircraft position to the flight plan. Now we get course
 and altitude indications for a direct leg to the start of the transition
 (43 nm and 314 degrees magnetic course).

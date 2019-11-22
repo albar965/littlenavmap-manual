@@ -61,14 +61,6 @@ Options for Departure and Destination Airport
 -  ``Weather``: Print the decoded weather for all enabled sources as
    shown on the tab ``Weather`` in the ``Information`` dock window.
 
-General options
-^^^^^^^^^^^^^^^
-
--  ``Print flight plan table``: Print the flight plan as seen in the
-   flight plan table.
--  ``Text size``: Reduce the text size to avoid unnecessary line breaks
-   or increase it for better readability.
-
 .. figure:: ../images/printfp.jpg
 
       Print flight plan options dialog.

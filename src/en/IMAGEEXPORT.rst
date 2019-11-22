@@ -1,5 +1,5 @@
-Image Export
-------------
+Map Image Export
+-----------------
 
 This dialog appears when saving the map view to an image file, for
 AviTab or copying it to the clipboard.

@@ -12,14 +12,14 @@ Log files of *Little Navmap* are stored in the directories:
 -  macOS:
    ``/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log``
 
-The program keeps three log files and rotates these on each startup if
+The program keeps three log files and rotates these if
 the file size of 10 MB is exceeded. So you may find up to three logs:
 
 ``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` and
 ``abarthel-little_navmap.log.2``.
 
 Send the log file ``abarthel-little_navmap.log`` if you like to report
-an error.
+an error. All three are needed in some cases but sending the first is often sufficient.
 
 **Please compress the log file using ZIP when sending per email.**
 
@@ -27,6 +27,11 @@ an error.
 
 Configuration
 ~~~~~~~~~~~~~
+
+The files use the Windows-\ ``INI`` style that has groups in square
+brackets and ``key=value`` lines. See
+`here <https://en.wikipedia.org/wiki/INI_file>`__ for more information
+about this type of configuration files.
 
 All configuration files for my programs are stored in these directories:
 
@@ -90,7 +95,7 @@ you're interested in relational databases.
    Do not modify, move, rename or delete databases while *Little
    Navmap* is running.
 
-   Do not let the Navigraph FMS Database Manager update databases
+   Do not let the Navigraph *FMS Database Manager* update databases
    while *Little Navmap* is running. *Little Navmap* might crash,
    the update might fail or remain incomplete.
 
@@ -111,7 +116,7 @@ The files are:
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
 -  ``little_navmap_navigraph.sqlite``: Navigraph navdatabase. Can be
    either the included database or an update installed by the Navigraph
-   \_FMS Data Manager.
+   *FMS Data Manager*.
 
 .. _files-userdata:
 
@@ -190,43 +195,43 @@ files.
    :caption: Flightplan Example snippet
    :name: flightplan-example
 
-       <?xml version="1.0" encoding="UTF-8"?>
-       <SimBase.Document Type="AceXML" version="1,0">
-           <Descr>AceXML Document</Descr>
-           <!-- LNMDATA
-                _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
-                aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
-                aircraftperfname=Boeing 737-200|
-                aircraftperftype=B732|
-                approach=LITSI|
-                approacharinc=D34|
-                approachdistance=11.9|
-                approachrw=34|
-                approachsize=9|
-                approachsuffix=|
-                approachtype=VORDME|
-                cycle=1811|
-                navdata=NAVIGRAPH|
-                sidappr=MARE5W|
-                sidapprdistance=28.2|
-                sidapprrw=22|
-                sidapprsize=5|
-                simdata=XP11|
-                star=ASTU2D|
-                stardistance=128.4|
-                starrw=34|
-                starsize=5|
-                transition=ZAK|
-                transitiondistance=17.5|
-                transitionsize=3|
-                transitiontype=F
-       -->
-           <FlightPlan.FlightPlan>
+   <?xml version="1.0" encoding="UTF-8"?>
+   <SimBase.Document Type="AceXML" version="1,0">
+       <Descr>AceXML Document</Descr>
+       <!-- LNMDATA
+            _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
+            aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
+            aircraftperfname=Boeing 737-200|
+            aircraftperftype=B732|
+            approach=LITSI|
+            approacharinc=D34|
+            approachdistance=11.9|
+            approachrw=34|
+            approachsize=9|
+            approachsuffix=|
+            approachtype=VORDME|
+            cycle=1811|
+            navdata=NAVIGRAPH|
+            sidappr=MARE5W|
+            sidapprdistance=28.2|
+            sidapprrw=22|
+            sidapprsize=5|
+            simdata=XP11|
+            star=ASTU2D|
+            stardistance=128.4|
+            starrw=34|
+            starsize=5|
+            transition=ZAK|
+            transitiondistance=17.5|
+            transitionsize=3|
+            transitiontype=F
+   -->
+       <FlightPlan.FlightPlan>
 
-       ...
+   ...
 
-           </FlightPlan.FlightPlan>
-       </SimBase.Document>
+       </FlightPlan.FlightPlan>
+   </SimBase.Document>
 
 .. _aircraft-performance-file:
 

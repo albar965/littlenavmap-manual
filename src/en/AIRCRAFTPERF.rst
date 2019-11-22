@@ -1,5 +1,3 @@
-.. _aircraft-performance:
-
 |Aircraft Performance| Aircraft Performance
 -------------------------------------------
 
@@ -71,9 +69,11 @@ A default profile with 3 nautical miles per 1000 feet for descent and
 climb rules and no fuel consumption is default. Red warning messages
 will be shown if used since the profile is not complete.
 
-**The default performance profile is sufficient to calculate top of
-climb and top of descent and can be used if you wish to ignore the fuel
-and travel time reports.**
+.. note::
+
+      The default performance profile is sufficient to calculate top of
+      climb and top of descent and can be used if you wish to ignore the fuel
+      and travel time reports.
 
 *Little Navmap* collects performance data for an aircraft permanently
 while flying. The collected data can be merged or copied into the
@@ -105,7 +105,7 @@ the *Little Navmap* main window to load them.
    into your ``Documents`` directory or a sub-directory in there like
    ``Documents\Little Navmap\Performance``.
 
-.. note::
+.. tip::
 
     Aircraft performance files from contributors and my own flights are
     available in the `download section of

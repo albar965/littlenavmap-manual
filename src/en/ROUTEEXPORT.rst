@@ -2,8 +2,10 @@ Flight Plan Online Export
 -------------------------
 
 This dialog appears when exporting a flight plan for the online network
-clients using the export menu items :ref:`flight-plan-formats-ivap` or `VFP
-(vPilot) <https://www.vatsim.net/pilots/software>`__.
+clients using the export menu items
+:ref:`flight-plan-formats-ivap`,
+:ref:`flight-plan-formats-xivap` or
+:ref:`flight-plan-formats-vpilot`.
 
 Some input fields might hidden depending on format.
 
@@ -20,10 +22,10 @@ sessions. These are:
 -  ``Flight Rules``: From the current flight plan. ``IFR`` or ``VFR``
    for VFP and ``I`` or ``V`` for FPL. Change manually if needed.
 -  ``Aircraft type``: From the current aircraft performance (:doc:`AIRCRAFTPERF`).
--  ``Departure``: First waypoint in flight plan. (:doc:`FLIGHTPLAN`).
+-  ``Departure``: First waypoint in flight plan.
 -  ``Destination``: Last waypoint in flight plan.
 -  ``Route``: Generated from the flight plan waypoints, airways, SID and
-   STAR. (:doc:`ROUTEDESCR`).
+   STAR (:doc:`ROUTEDESCR`).
 -  ``Cruise altitude``: Taken from flight plan. Cruise altitude in feet.
 -  ``True Airspeed``: From the current aircraft performance cruise
    speed.
@@ -31,7 +33,7 @@ sessions. These are:
    needed.
 -  ``Actual``: Actual departure time. Uses same default time as above.
    Adjust as needed.
--  ``en-route``: Traveling time as calculated by flight plan and current
+-  ``En-route``: Traveling time as calculated by flight plan and current
    aircraft performance.
 -  ``Endurance``: Uses same default as above. Adjust as needed.
 

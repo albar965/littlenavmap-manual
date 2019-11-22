@@ -19,10 +19,10 @@ that the logbook flight detection is set up for a new flight.
 Editing functionality in the logbook is similar to the userpoints
 editing (:ref:`userpoints`).
 
-.. _search-logbook:
+.. _logbook-search:
 
 Logbook Search
---------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The functionality of the search filters and the result table is equal to
 the airport and navaid search. See :doc:`SEARCH`
@@ -48,7 +48,7 @@ shown if hovering the mouse over the blue line.
 .. _logbook-top-buttons:
 
 Top Buttons and additional Menu Items
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :ref:`search-result-table-view-context-menu` for a
 description of common context menu items across all search dialogs. All
@@ -57,15 +57,15 @@ buttons have an equivalent in the result table context menu.
 .. _logbook-add:
 
 |Add Logbook Entry| Add Logbook Entry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Add a logbook entry manually.
 
-See ``Add Logbook Entry Dialog`` below for more information about the
-add/edit dialog.
+See :ref:`logbook-dialog-add` and :ref:`logbook-dialog-edit`
+below for more information about the add/edit dialog.
 
 |Edit Logbook Entry| Edit Logbook Entry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Open the edit dialog for one or more logbook entries.
 
@@ -73,11 +73,11 @@ The edit dialog shows a column of checkboxes on the right side if more
 than one logbook entry is selected. These allow to choose the fields to
 change for all selected entries.
 
-See ``Edit Logbook Entry Dialog`` below for more information about the
+See :ref:`logbook-dialog-edit` below for more information about the
 add/edit dialog.
 
 |Delete Logbook Entry| Delete Logbook Entry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Remove the selected logbook entries after a confirmation dialog. Undo is
 not possible but database backups are created on each start. See
@@ -87,41 +87,41 @@ files.
 .. _open-flight-plan-logbook:
 
 |Open Flight Plan| Open Flight Plan
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Opens the referenced flight plan file. This menu item is disabled if the
 flight plan field in the logbook entry is empty or if the flight plan
-file is not accessible.
+file was moved or renamed.
 
 .. _aircraft-menu-load-logbook:
 
 |Open Aircraft Performance| Open Aircraft Performance
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Loads a ``lnmperf`` aircraft performance profile and shows the fuel
 report. This menu item is disabled if the aircraft performance field in
-the logbook entry is empty or if the file is not accessible.
+the logbook entry is empty or if the file was moved or renamed.
 
 |Reset Search| Reset Search
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Clear search filters and revert to showing all entries in the search
+Clear search filters and reverts to showing all entries in the search
 result table view.
 
 |Clear Selection| Clear Selection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Deselect all selected entries in the table and remove any highlighted
 logbook entries from the map.
 
 |Help| Help
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Display a quick help in the tooltip. Click to open this chapter of the
 manual in the default browser.
 
 |Menu Button| Menu Button
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Drop down menu button that allows to hide or show search options.
 
@@ -130,7 +130,7 @@ show that the related filter row has modifications.
 
 .. _logbook-dialog-add:
 
-Add Logbook Entry Dialog
+Add Logbook Entry
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Allows to create a new log entry manually. The dialog layout and
@@ -139,7 +139,7 @@ functionality is the same as for editing logbook entries. The button
 
 .. _logbook-dialog-edit:
 
-Edit Logbook Entry Dialog
+Edit Logbook Entry
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dialogs for editing and adding are equal and contain three tabs.
@@ -150,7 +150,7 @@ be freely edited.
 The button ``Reset`` undoes all manual changes and reverts all fields
 back to the original state.
 
-Page Logbook Entry
+Tab Logbook Entry
 ^^^^^^^^^^^^^^^^^^
 
 Additional notes about some fields on this page:
@@ -169,18 +169,18 @@ Additional notes about some fields on this page:
    plan and performance files. These are only references which will turn
    invalid if the files are moved or renamed.
 
-Page Fuel and Weight
+Tab Fuel and Weight
 ^^^^^^^^^^^^^^^^^^^^
 
-Block fuel and trip fuel are extracted from the :ref:`fuel-report`.
+Block fuel and trip fuel are extracted from :ref:`fuel-report`.
 
 Used fuel is the fuel consumption between liftoff and touchdown.
 
-Page Description or Comments
+Tab Description or Comments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Links are recognized in the field ``Description`` and can be opened in
-the dock window ``Information`` on tab ``Navaids`` which is shown after
+Links are recognized in the field ``Description or Comments`` and can be opened in
+the dock window ``Information`` on tab ``Logbook`` which is shown after
 clicking on a logbook entry or selecting ``Show Information`` in one of
 the context menus.
 
@@ -196,14 +196,14 @@ Replace spaces in links with ``%20`` since *Little Navmap* recognizes
 links until the next space.
 
 Edit a single Logbook Entry
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/logbook_edit.jpg
 
          Editing a logbook entry.
 
 Edit multiple Logbook Entries
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If more than one logbook entry was selected for editing, the edit dialog
 shows a column of checkboxes on the right side of available fields. Not
@@ -222,7 +222,7 @@ like fixing an invalid aircraft type.
 
 .. _statistics:
 
-Logbook Statistics Dialog
+Logbook Statistics
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This dialog shows two tabs:
@@ -254,15 +254,14 @@ logbook entries from the CSV file to already present logbook entries.
 Export and import can be done by using the menu items :ref:`logbook-import-csv` and
 :ref:`logbook-export-csv`.
 
-See chapter ``CSV Data Format`` below for more information on the
-format.
+See chapter :ref:`logbook-csv` below for more information on the format.
 
 .. _import-xplane:
 
 X-Plane Import
 ~~~~~~~~~~~~~~
 
-Import the X-Plane logbook file
+Imports the X-Plane logbook file
 ``.../X-Plane 11/Output/logbooks/X-Plane Pilot.txt`` into the *Little
 Navmap* logbook database. Note that the X-Plane logbook format is
 limited and does not provide enough information to fill all *Little
@@ -288,9 +287,15 @@ search field to look for all imported entries.
 
 **X-Plane logbook example:**
 
-´´´ I 1 Version 2 190917 EDDN ESNZ 4 0.8 0.0 0.0 0.0 C-STUB 727-100 2
-190917 ESNZ ESNZ 0 0.1 0.0 0.0 0.0 C-STUB 727-100 2 190920 LSZR LSZR 0
-0.2 0.0 0.0 0.0 SF34 ... ´´´
+.. code-block:: none
+
+      I
+      1 Version
+      2 190917    EDDN    ESNZ   4   0.8   0.0   0.0   0.0  C-STUB  727-100
+      2 190917    ESNZ    ESNZ   0   0.1   0.0   0.0   0.0  C-STUB  727-100
+      2 190920    LSZR    LSZR   0   0.2   0.0   0.0   0.0    SF34
+
+.. _convert-errors:
 
 .. _convert:
 
@@ -320,7 +325,7 @@ issues during conversion.
 
 .. figure:: ../images/logbook_conversion.jpg
 
-       Logbook conversion warnings shown after converting userpoints.
+       Warnings shown after converting userpoints to logbook entries.
 
 .. _logbook-data-format:
 
@@ -368,7 +373,7 @@ The first line of the CSV contains the field names.
 +-----------------------------------+-----------------------------------+
 | Field name                        | Description                       |
 +===================================+===================================+
-| aircraft_name                     | Fee name like ``Cessna 172``      |
+| aircraft_name                     | Free name like ``Cessna 172``     |
 +-----------------------------------+-----------------------------------+
 | aircraft_type                     | ICAO type descriptor like         |
 |                                   | ``B732``                          |
@@ -391,7 +396,7 @@ The first line of the CSV contains the field names.
 | used_fuel                         | As above                          |
 +-----------------------------------+-----------------------------------+
 | is_jetfuel                        | Calculated from aircraft fuel,    |
-|                                   | ``1`` = is jet fuel               |
+|                                   | ``1`` is jet fuel                 |
 +-----------------------------------+-----------------------------------+
 | grossweight                       | Weight at takeoff, lbs            |
 +-----------------------------------+-----------------------------------+

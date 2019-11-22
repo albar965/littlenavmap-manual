@@ -1,14 +1,12 @@
-.. _little-navmap-legend:
-
 Legend
 ------
 
 By default, all speeds are given in knots, distances in nautical miles,
 altitudes and elevations in feet. The units can be set to imperial or
-metric in the dialog ``Options`` on the tab :ref:`units`.
+metric in the dialog ``Options`` on :ref:`units`.
 
 Colors, size and text labels of some map elements can be changed in the
-dialog ``Options`` on the tab :ref:`map-display`. This legend shows the
+dialog ``Options`` on :ref:`map-display`. This legend shows the
 default values.
 
 Heading and course are suffixed with ``°T`` for true course or ``°M``
@@ -17,15 +15,17 @@ for magnetic course.
 Mouse Clicks
 ~~~~~~~~~~~~
 
+The display of a map feature class will be enabled if you use on of
+these mouse clicks. A ``Shift+Click`` will enable display of range
+rings, for example.
+
+You can enable or disable visibility in menu
+``View`` -> ``User Features`` or the toolbar.
+
 A click in the map on the active spot of a feature like a range ring
 removes it. The cursor changes to a hand symbol to indicate an active
 spot which allows to remove a feature by click or remove/edit it in the
 context menu.
-
-The display of a map feature class will be enabled if you use on of
-these mouse clicks. A ``Shift+Click`` will enable display of range
-rings, for example. You can enable or disable visibility in menu
-``View`` -> ``User Features`` or the toolbar.
 
 +-----------------------------------+-----------------------------------+
 | Mouse                             | Description                       |
@@ -88,8 +88,8 @@ You have to activate the map window (i.e. click into it or press the key
 
 .. _highlights:
 
-Map Marks
-~~~~~~~~~
+Highlights and User Features
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Description                       |
@@ -256,14 +256,11 @@ Aircraft and Ships
 | |Small GA User| |Jet User|               | Current user vehicle if connected |
 | |Helicopter User|                        | to the flight simulator. Labels   |
 |                                          | vary and can be customized in     |
-|                                          | ``Options`` on the tab            |
+|                                          | ``Options`` on the page           |
 |                                          | :ref:`map-display`. The user      |
 |                                          | aircraft depends on selected      |
 |                                          | aircraft (jet, piston/turboprop   |
-|                                          | or helicopter). Optionally a      |
-|                                          | black needle protruding from the  |
-|                                          | nose can show the current ground  |
-|                                          | track.                            |
+|                                          | or helicopter).                   |
 +------------------------------------------+-----------------------------------+
 | |Small GA on Ground| |Jet on             | User aircraft or ship on ground   |
 | Ground| |Helicopter on Ground|           |                                   |
@@ -343,7 +340,8 @@ scenery to display runways.
 | soft Runways and Fuel|            | available.                        |
 +-----------------------------------+-----------------------------------+
 | |Airport Weather|                 | Weather at airport. See chapter   |
-|                                   | :ref:`airport-weather` below.     |
+|                                   | :ref:`airport-weather-legend`     |
+|                                   | below.                            |
 +-----------------------------------+-----------------------------------+
 | |Airport Text|                    | Airport label showing name,       |
 |                                   | ident, ATIS frequency, elevation, |
@@ -653,7 +651,7 @@ aircraft trail.
 Airport Traffic Pattern
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Color and indicators depend on user choice in airport traffic pattern
+Color and indicators depend on user choice in :doc:`HOLD`
 dialog.
 
 +-----------------------------------+-----------------------------------+
@@ -679,6 +677,8 @@ dialog.
 |                                   | above and allows to remove the    |
 |                                   | pattern in the context menu.      |
 +-----------------------------------+-----------------------------------+
+
+.. _holding-legend:
 
 Holding
 ~~~~~~~
@@ -715,8 +715,6 @@ obstructions by 1000 feet in areas where the highest elevations are 5000
 feet MSL or lower. Where the highest elevations are above 5000 feet MSL
 terrain is cleared by 2000 feet.
 
-.. TODO add reference to options
-
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Description                       |
 +===================================+===================================+
@@ -726,7 +724,7 @@ terrain is cleared by 2000 feet.
 |                                   | 9900 and 10500 feet.              |
 +-----------------------------------+-----------------------------------+
 
-.. _airport-weather:
+.. _airport-weather-legend:
 
 Airport Weather
 ~~~~~~~~~~~~~~~

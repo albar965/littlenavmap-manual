@@ -1,5 +1,3 @@
-.. _sun-shadow:
-
 |Sun Shading Icon| Sun Shading
 -------------------------------
 
@@ -10,8 +8,8 @@ Enable the shadow in the menu ``View`` -> :ref:`show-sun-shading`.
 
 You can change the time source for the sun shading in ``View`` -> :ref:`show-sun-shading-time`.
 
-The shadow darkness can be changed in the dialog ``Options`` on tab
-``Map Display``, ``Sun shading Darkness`` at the bottom of the dialog.
+The shadow darkness can be changed in the dialog ``Options`` on page
+:ref:`map-display-2`, ``Sun shading Darkness`` at the bottom of the dialog.
 
 .. figure:: ../images/sunshadow.jpg
 
@@ -42,8 +40,10 @@ The menu ``View`` -> ``Sun Shading Time`` -> ``Set User defined Time``
 opens a dialog to set an user defined time in UTC as a source for the
 sun shading.
 
-You can move the dialog away from the map window and see the results
-immediately by clicking the button ``Apply``.
+.. tip::
+
+     You can move the dialog away from the map window and see the results
+     immediately by clicking the button ``Apply``.
 
 .. note::
 

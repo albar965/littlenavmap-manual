@@ -1,7 +1,7 @@
-.. _tips-for-old-and-slow:
-
 Appendix
 ---------------------
+
+.. _tips-for-old-and-slow:
 
 Tips for old and slow Computers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -68,7 +68,9 @@ Troubleshoot
 See also `Little Navmap - Frequently asked
 Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
 
--  **Program crashes on start up:** Delete the settings and the database
+-  **Program crashes on start up:** Use :ref:`reset-and-restart` to get a clean base in
+   case some settings cause problems. If that does not help:
+   Delete the settings and the database
    files. In Windows 7, 8 or 10 these can be found in
    ``c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel``. Delete (or
    better: rename or move) the files ``little_navmap.ini``,

@@ -1,6 +1,4 @@
-.. _flight-plan-dock-window:
-
-|Flight Plan Tab| Flight Plan Tab
+|Flight Plan Tab| Flight Plan
 ---------------------------------
 
 The Flight Planning Dock Window contains the three tabs: ``Flight Plan``
@@ -129,7 +127,7 @@ Table Columns
 -  ``Direct °M:`` This is the constant course of the rhumb line
    connecting two waypoints of a leg. Depending on route and distance it
    can differ from the course of the great circle line. Use this course
-   if you travel along airways or towards VOR or NDB stations. Opposed
+   if you travel along airways or towards or from VOR or NDB stations. Opposed
    to the course shown by the flight simulator GPS unit this will give
    you the precise radial when approaching a VOR or NDB on a flight
    plan.
@@ -165,6 +163,8 @@ Column Selection
 Choose ``Select visible Columns`` from the flight plan table context
 menu to customize the table. You can still move and resize columns in
 the table. All changes are saved.
+
+The changes can be undone by selecting ``Reset View`` in the context menu.
 
 .. figure:: ../images/flightplan_columns.jpg
 
@@ -207,7 +207,7 @@ Magnetic Declination
 
 *Little Navmap* uses the `magnetic
 declination <https://en.wikipedia.org/wiki/Magnetic_declination>`__ that
-is stored with VOR stations or the actual environment declination. The
+is stored either with VOR stations or the actual environment declination. The
 latter one is calculated by the program using the world magnetic mode.
 (`WMM <https://en.wikipedia.org/wiki/World_Magnetic_Model>`__) or loaded
 from the simulator scenery database.
@@ -216,7 +216,7 @@ Note that the magnetic declination of a VOR (also: calibration for VOR,
 VORDME and VORTAC) may differ from the actual declination in a simulator
 region as it does in reality. The calibration of a VOR might be very old
 while the real declination in the environment changed in the meantime
-due to the wandering of the magnetic pole. Therefore, magnetic course
+due to the wandering of the magnetic poles. Therefore, magnetic course
 values might differ. This can result in strange course readings in
 flight plans.
 
@@ -231,7 +231,10 @@ You can disable the use of VOR declination in the options dialog on page
 environment declination for all calculations. You might want to use this
 if you fly entirely based on GPS and ignore VOR stations.
 
-**Examples below:** A flight plan crossing the
+Examples
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+A flight plan crossing the
 ``VORTAC Battle Ground (BTG)`` last calibrated 1975
 (`source <http://www.pilotnav.com/navaid/faa-2529>`__) with a
 declination of 21° East while the environment has an actual declination
@@ -240,8 +243,7 @@ in the status bar of *Little Navmap*.
 
 Below a flight plan with three legs all having a true course of 90°.
 
-**Example with ``Ignore declination of VOR and other radio navaids`` not
-checked:**
+**Example with** ``Ignore declination of VOR and other radio navaids`` **not checked:**
 
 .. figure:: ../images/magvarenabled.jpg
 
@@ -250,8 +252,7 @@ checked:**
         Magnetic course in- and outbound to/from ``BTG`` is calculated based on
         the station declination 21° East while course to ``YIPYU`` is based on 15.2° East.
 
-**Example with ``Ignore declination of VOR and other radio navaids``
-checked:**
+**Example with** ``Ignore declination of VOR and other radio navaids`` **checked:**
 
 .. figure:: ../images/magvardisabled.jpg
 
@@ -270,8 +271,8 @@ diagram or zooms to the navaid. Additionally, details are shown in the
 ``Information`` dock window. A single click selects an object and
 highlights it on the map using a black/green circle.
 
-Top Button
-~~~~~~~~~~
+Top Buttons
+~~~~~~~~~~~
 
 .. _clear-selection:
 
@@ -291,14 +292,14 @@ Flight Plan Table View Context Menu
 |Show Information| Show Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 .. _show-procedures:
 
 |Show Procedures| Show Procedures
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`show-procedures`. Only
+Same as :ref:`show-procedures`. Only
 enabled for airports having procedures.
 
 .. _show-approach-custom:
@@ -306,7 +307,7 @@ enabled for airports having procedures.
 |Create Approach| Create Approach
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`show-approach-custom`.
+Same as :ref:`show-approach-custom`.
 Only enabled for airports having procedures.
 
 .. _show-on-map:
@@ -383,7 +384,7 @@ Procedures are inserted from the loaded flight plan and dropped from the
 current one depending on insert position.
 
 If you insert a flight plan after departure all procedures from the
-loaded plan are ignored and current procedures are kept.
+loaded plan are used and current procedures are kept.
 
 Inserting before departure takes the departure procedures from the
 loaded flight plan and drops the current departure procedures.
@@ -428,16 +429,20 @@ drag) before calculation.
 This function can be useful if you have to cross oceanic legs that are
 void of airways:
 
-#. Set departure and destination.
-#. Find the last waypoint on an airway before entering the ocean. Choose
-   the closest to the flight plan line. Add the waypoint to the flight
-   plan.
-#. Select departure and this waypoint and calculate the flight plan
-   fragment.
-#. Repeat the process for the first waypoint on an airway close to the
-   coast of your destination continent.
-#. Select this waypoint and the destination and calculate the flight
-   plan fragment.
+.. tip::
+
+    How to calculate a flightplan across the ocean:
+
+    #. Set departure and destination.
+    #. Find the last waypoint on an airway before entering the ocean. Choose
+       the closest to the direct flightplan line. Add the waypoint to the flight
+       plan.
+    #. Select departure and this waypoint and calculate the flight plan
+       fragment.
+    #. Repeat the process for the first waypoint on an airway close to the
+       coast of your destination continent.
+    #. Select this waypoint and the destination and calculate the flight
+       plan fragment.
 
 While not entirely realistic, this is a sensible workaround until
 *Little Navmap* supports NAT or PACOT tracks.
@@ -447,7 +452,7 @@ While not entirely realistic, this is a sensible workaround until
 |Show Range Rings| Show Range Rings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 Note that the menu item is disabled if range rings are hidden on the map
 (menu ``View`` -> ``User Features``). The menu item is suffixed with the
@@ -462,7 +467,7 @@ Show the range rings for all selected radio navaids in the flight plan.
 Simply select all legs of the flight plan and use this function to
 display a range circle for each radio navaid in the flight plan.
 
-Otherwise, the same as the :ref:`map-context-menu`.
+Otherwise, the same as :ref:`map-context-menu`.
 
 Note that the menu item is disabled if range rings are hidden on the map
 (menu ``View`` -> ``User Features``). The menu item is suffixed with the
@@ -473,7 +478,7 @@ text ``hidden on map`` if this is the case.
 |Display Airport Traffic Pattern| Display Airport Traffic Pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`show-traffic-pattern`.
+Same as :ref:`show-traffic-pattern`.
 
 This menu item is enabled if clicked on an airport. Shows a dialog that
 allows to customize and display an airport traffic pattern on the map.
@@ -489,7 +494,7 @@ with the text ``hidden on map`` if this is the case.
 |Display Holding| Display Holding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`holding`.
+Same as :ref:`holding`.
 
 See also :doc:`HOLD`.
 
@@ -503,7 +508,7 @@ text ``hidden on map`` if this is the case.
 ^^^^^^^^^^^
 
 Copy the selected entries in CSV format to the clipboard. The CSV will
-include a header. This will observe changes to the table view like
+include a header. This will reflect changes of the table view like
 column order.
 
 .. _select-all-0:
@@ -516,7 +521,7 @@ Select all flight plan legs.
 .. _clear-selection-flightplan:
 
 |Clear Selection| Clear Selection
-'''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Deselect all currently selected flight plan legs and remove any
 highlight circles from the map.
@@ -531,14 +536,14 @@ Reset the column order, visibility and widths back to default.
 Select visible Columns
 ^^^^^^^^^^^^^^^^^^^^^^
 
-See chapter :ref:`flight-plan-table-columns` above.
+See chapter :ref:`flight-plan-table-columns-select` above.
 
 .. _set-center-for-distance-search-1:
 
 |Set Center for Distance Search| Set Center for Distance Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 .. |Flight Plan Tab| image:: ../images/icon_routedock.png
 .. |Clear Selection| image:: ../images/icon_clearselection.png

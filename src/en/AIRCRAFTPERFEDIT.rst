@@ -1,4 +1,4 @@
-|Edit Aircraft Performance| Edit Aircraft Performance
+|Edit Aircraft Performance| Aircraft Performance Edit
 -----------------------------------------------------
 
 The dialog allows editing of all aircraft performance related parameters
@@ -43,17 +43,19 @@ See `List of ICAO aircraft type
 designators <https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators>`__
 (Wikipedia).
 
-X-Plane:
+X-Plane
+''''''''''
 
 Its value can be read with X-Plane Plane Maker program, opening the
 related aircraft file ``.acf``, then main menu -> ``Standard`` ->
 ``Author``, field ``ICAO code for ATC``. It is stored as e.g.
 ``P acf/_ICAO BE58`` in the ``.acf`` file.
 
-FSX, FSX-SE and Prepar3D:
+FSX, FSX-SE and Prepar3D
+'''''''''''''''''''''''''''''
 
 The model can be found with any text editor, opening the related
-aircraft.cfg file, key ``ATC_model`` under the section ``[General]``.
+``aircraft.cfg`` file, key ``ATC_model`` under the section ``[General]``.
 
 .. figure:: ../images/perf_edit_aircraft.jpg
 
@@ -129,7 +131,7 @@ restrictions.
 
 The value is given in percent of trip fuel.
 
-.. note::
+.. tip::
 
      ICAO recommends to use 5 percent contingency fuel for all flights.**
 
@@ -188,8 +190,6 @@ values accordingly here.
 .. figure:: ../images/perf_edit_perf.jpg
 
      Aircraft performance edit dialog tab ``Performance``.
-
-.. _description:
 
 Tab Description or Comments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

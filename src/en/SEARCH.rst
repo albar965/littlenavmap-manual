@@ -1,6 +1,4 @@
-.. _search-dock-window:
-
-|Search| Search Dock Window
+|Search| Search
 ---------------------------
 
 The search dock window contains several tabs with similar functionality
@@ -15,9 +13,11 @@ The drop down menu prefixes menu items with a change indicator ``*`` to
 show that the related filter row has modifications. You can use this to
 find out why a search does not give the expected results.
 
-**If you do not get the expected results or no results at all use the
-``Reset Search`` menu item, button Reset Search or press ``Ctrl+R`` to
-clear all search criteria.**
+.. note::
+
+      If you do not get the expected results or no results at all use the
+      ``Reset Search`` menu item, button Reset Search or press ``Ctrl+R`` to
+      clear all search criteria.
 
 Filters are defined by various controls which are mostly self
 explaining. Only text filters and the tri-state checkboxes like
@@ -28,7 +28,7 @@ All filters can be used together where all conditions have to be met
 applied immediately. The distance search is applied after a short delay
 for each change.
 
-**Entering three or four characters in the ``ICAO Code`` field of the
+**Entering three or four characters in the** ``ICAO Code`` **field of the
 airport search tab will trigger a quick search which ignores all other
 filters and shows the airports matching that partial or full ICAO
 code.**
@@ -190,7 +190,7 @@ table view.
 Deselect all entries in the table and remove any highlight circles from
 the map.
 
-.. _help:
+.. _search-help:
 
 |Help| Help
 ^^^^^^^^^^^
@@ -221,7 +221,7 @@ Available menu items depend on search tab.
 |Show Information| Show Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 .. _show-procedures:
 
@@ -309,7 +309,7 @@ to highlight all the objects on the map.
 |Display Holdings| Display Holdings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 Note that the menu item is disabled if the respective user feature is
 hidden on the map (menu ``View`` -> ``User Features``). The menu item is
@@ -340,7 +340,7 @@ suffixed with the text ``hidden on map`` if this is the case.
 |Append Position to Flight Plan| Append Position to Flight Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 .. _copy:
 
@@ -377,7 +377,7 @@ Reset sort order, column order and column widths to default.
 |Set Center for Distance Search| Set Center for Distance Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as the :ref:`map-context-menu`.
+Same as :ref:`map-context-menu`.
 
 .. |Search| image:: ../images/icon_searchdock.png
 .. |Menu Button| image:: ../images/icon_menubutton.png

@@ -44,5 +44,5 @@ These instructions apply to Windows, macOS and Linux computers equally.
    to reload the scenery library database now since you just copied a
    fully populated database file.**
 
-See the :ref:`remote-connection` for information about
+See :ref:`remote-connection` for information about
 networked setups.

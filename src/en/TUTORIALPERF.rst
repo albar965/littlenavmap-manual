@@ -107,7 +107,7 @@ you'd like to fine tune the values during flight. See :doc:`AIRCRAFTPERFMERGE` f
        Do not forget to add at least sufficient reserve fuel. Otherwise you
        will run out of fuel at destination if you rely on this plan.
 
-You might also want to change the usable fuel, alternate fuel flow after
+You should change the usable fuel and values for alternate after
 merging. Do this by selecting ``Aircraft`` ->
 ``Edit Aircraft Performance`` |Edit Aircraft Performance|. Note that
 required values have **bold** labels in the edit dialog.
@@ -118,9 +118,11 @@ description file of a performance profile.
 The chapter :doc:`AIRCRAFTPERFEDIT` explains
 details about editing.
 
-**Use performance files for different cruise altitude ranges to get more
-precise results for large or complex aircraft. For example, one file for
-FL300-FL350 and one for FL350-FL400.**
+.. tip::
+
+      Use performance files for different cruise altitude ranges to get more
+      precise results for large or complex aircraft. For example, one file for
+      FL300-FL350 and one for FL350-FL400.
 
 Use ``Aircraft`` -> ``Save Aircraft Performance`` |Save Aircraft
 Performance| and save the new performance file to any place like

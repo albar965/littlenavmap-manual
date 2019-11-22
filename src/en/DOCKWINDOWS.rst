@@ -11,7 +11,8 @@ main window (click the title bar to drag), by double-clicking their
 title bar or by clicking on the window symbol on the top right.
 
 Double click on the docked window's title bar or click on the window
-symbol again to move the windows back into their docked position.
+symbol again to move the windows back into their docked position
+in the main window.
 
 All docked windows, except the map window, can be closed if they are not
 needed. You can also drop docked windows on each other to create a
@@ -70,3 +71,6 @@ Toolbars can also be opened and closed in the main menu ``Window``.
         red at the bottom of the stacked dock windows.
 
 
+.. note::
+
+   You must click on the title bar of a window to remove it from the stack, not on the tab bar.

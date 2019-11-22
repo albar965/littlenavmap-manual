@@ -11,7 +11,7 @@ Network specific information like user names, active centers/towers,
 frequencies, flight plans and much more are displayed world wide without
 limits like distance to the user aircraft.
 
-Access to online networks can be enabled and configured in the dialog
+Access to online networks can be enabled and configured on
 :ref:`online-flying`.
 Predefined options for the well known networks are available as well as
 freely configurable ones.
@@ -23,7 +23,7 @@ places:**
    ``Online Server``.
 -  Information dock window, tabs ``Online Clients`` and
    ``Online Centers``.
--  Options dialog, ``Online Flying``.
+-  Options dialog, page :ref:`online-flying`.
 
 .. _online-networks-duplicates:
 
@@ -34,9 +34,9 @@ Simulator and Online Aircraft Duplicates
 three minutes depending on settings and network.
 
 The program also fetches AI or multiplayer aircraft from the simulator
-which are updated about two times a second. These aircraft are injected
+which are updated about several times a second. These aircraft are injected
 into the simulator by the various online clients so they are visible
-within the simulator.
+there.
 
 Therefore, the user aircraft and other client aircraft can appear
 duplicated on the map.
@@ -67,7 +67,7 @@ similar symbol depending on aircraft type and simulator. Use the
 list of online clients.
 
 Information for online aircraft is shown on the tab ``Online Clients``
-in the :doc:`INFO`.
+in :doc:`INFO`.
 
 All other functionality like context menu, double-click, tooltips, map
 highlights and other are the same as for the other aircraft.
@@ -96,8 +96,7 @@ airspaces by selecting ``Online`` as airspace source (:ref:`airspace-source`)
        other position.** See next chapter how to assign airspace boundaries to
        a center.
 
-Detailed information for online centers/airspaces is shown on the tab
-:doc:`INFO`.
+Detailed information for online centers/airspaces is shown on :doc:`INFO`.
 
 The following types are available and can be enabled in the drop down
 menus on the airspace toolbar or sub menu
@@ -113,8 +112,8 @@ menus on the airspace toolbar or sub menu
 -  **ACC (Center):** Uses ``Visual Range``.
 -  **Departure:** Uses ``Visual Range``.
 
-The size of the circle shapes can be changed in the configuration file.
-See :ref:`customize-online-center`.
+The size of the circle shapes can be changed in the options dialog.
+See :ref:`map-display-online`.
 
 You can also assign centers to a boundary shape using imported OpenAir
 airspaces from the user airspace database. See :ref:`load-scenery-library-online-airspaces` for more
@@ -124,15 +123,18 @@ information about this.
 
        Online network center/ATC in search tab, map, tooltip and information window.
 
+Online Search
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. _search-client:
 
 Online Network Client Search
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _search-center:
 
 Online Network Center Search
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The functionality of the search filters in these two tabs and the result
 tables are similar to the airport and navaid search. See :doc:`SEARCH` for information about search filters, buttons and
@@ -141,7 +143,7 @@ context menu items.
 .. _search-server:
 
 Online Server Search
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Displays all online servers in a table and has no search functionality.
 You can use the context menu to copy parts of the result table like the

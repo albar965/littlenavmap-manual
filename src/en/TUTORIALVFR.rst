@@ -55,14 +55,14 @@ Departure Airport
 Find the departure airport: Click into the map and zoom to the French
 Alps. You can use the following functions to navigate:
 
--  The map overlay on the left.
+-  The map overlay on the right.
 -  The mouse (click and drag) to move and the mouse wheel to zoom.
 -  The cursor keys to move and the keys ``+`` and ``-`` for zooming in
    and out (click into the map window to activate it before using the
    keys).
 
 Use the back |Back| and forward |Forward| buttons to jump in the
-position history like a web browser.
+position history like in a web browser.
 
 See also :doc:`MAPDISPLAY`.
 
@@ -109,7 +109,7 @@ Another function is ``Add Position to Flight Plan`` |Add Position to
 Flight Plan| which will insert the clicked position to the nearest
 flight plan leg. You can use this to add user-defined positions,
 airports or navaids in the middle of a flight plan. The nearest leg will
-be chosen automatically by *Little Navmap*.
+be chosen automatically by *Little Navmap* for inserting the new position.
 
 *Little Navmap* will automatically assign names to the user-defined
 waypoints. You can leave these as they are or replace them with a more
@@ -135,8 +135,7 @@ Destination Airport
 To add the destination:
 
 -  Right-click on ``Challes-les-Eaux (LFLE)``
--  Select ``Set Airport as Flight Plan Destination`` |Set Airport as
-   Flight Plan Destination|.
+-  Select ``Set Airport Challes-les-Eaux (LFLE) as Flight Plan Destination`` |Set Airport as Flight Plan Destination|.
 
 |Select Destination|
 
@@ -229,9 +228,6 @@ See also :doc:`CONNECT`.
 
 Looking at Places while Flying
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can enable aircraft centering in ``Map`` -> ``Center Aircraft``
-|Center Aircraft|.
 
 *Little Navmap* will keep your aircraft and the next flight plan
 waypoint centered on the screen as a default setting. You can choose

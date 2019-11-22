@@ -1,5 +1,3 @@
-.. _creating-or-adding-map-themes:
-
 Creating Map Themes
 -------------------
 
@@ -7,7 +5,7 @@ To add an arbitrary online or offline map to *Little Navmap* simply add
 the map directory from a downloaded or self created map theme to the
 ``data\maps\earth`` directory.
 
-.. note::
+.. tip::
 
    Check out the `Little Navmap Support Forum at
    AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__\ for
@@ -31,7 +29,7 @@ enabled for all additional map themes but might not work depending on
 properties defined in the map's DGML file.
 
 More maps and information about map configuration and DGML files can be
-found here on the Marble/KDE pages:
+found here on the Marble and KDE pages:
 
 -  Download more maps for the Marble widget (only Earth maps are
    supported in ``Little Navmap``): `Additional

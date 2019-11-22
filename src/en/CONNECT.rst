@@ -1,5 +1,3 @@
-.. _connecting-to-a-flight-simulator:
-
 |Flight Simulator Connection| Connecting to a Flight Simulator
 --------------------------------------------------------------
 
@@ -9,6 +7,9 @@ The setup procedure is different for local connections and remote
 *Little Navmap* can connect directly if all programs are running on the
 same computer. The *Little Navconnect* agent is needed if *Little
 Navmap* is used on a remote computer.
+
+The *Little Xpconnect* has to be installed in X-Plane to allow *Little Navmap*
+connecting to X-Plane.
 
 Local Connection
 ~~~~~~~~~~~~~~~~
@@ -74,8 +75,10 @@ on a remote computer by using the *Little Navconnect* agent on the
 flying computer which circumvents the error prone and tedious setup of a
 remote SimConnect connection.
 
-Weather information cannot be transferred across a remote
-connection from X-Plane.
+.. note::
+
+     Weather information cannot be transferred across a remote
+     connection from X-Plane.
 
 You have to extract the ZIP archive that contains ``littlenavmap.exe``
 and ``littlenavconnect.exe`` on both computers. Then load the scenery
@@ -97,7 +100,7 @@ Start *Little Navconnect* on the Flying Computer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Little Navconnect* is bundled together with the *Little Navmap*
-download archive. Start *Little Navconnect* (``littlenavconnect.exe``)
+download archive. Start *Little Navconnect* (``littlenavconnect.exe`` in Windows)
 on the computer running the simulator and take note of the message that
 is printed in the logging window. You only need the colored values which
 tell you the name and address of the computer running the simulator. You

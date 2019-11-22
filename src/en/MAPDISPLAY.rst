@@ -1,7 +1,7 @@
 Map Display
 -----------
 
-See the :doc:`LEGEND` for details about the various
+See :doc:`LEGEND` for details about the various
 symbols shown by the map.
 
 Moving
@@ -22,8 +22,10 @@ Alternatively use the keyboard to move around the map:
 -  ``Ctrl+Home``: Go to home position
 -  ``Ctrl+End``: Go to center for distance search
 
-**Do not forget to activate the map window by clicking into it before
-using keys for movement.**
+.. note::
+
+         Do not forget to activate the map window by clicking into it or pressing
+         ``F2`` before using keys for movement.
 
 Mouse Clicks
 ~~~~~~~~~~~~
@@ -63,6 +65,7 @@ Click spots are:
 - Center of range rings (small circle).
 - End of a measurement line (cross).
 - Runway threshold point (small circle) for airport traffic patterns.
+- Holding fix (small triange) of a holding.
 
 .. _mouse-clicks-modifiers:
 
@@ -72,15 +75,15 @@ Mouse Clicks and Modifiers
 You can use the keyboard and mouse click to get quick access to the
 following functions:
 
--  ``Shift+Click``: Add or remove range rings or navaid range rings.
--  ``Ctrl+Click``: Start rhumb-line measurement or delete a measurement
+-  ``Shift+Click``: Adds or removes range rings or navaid range rings.
+-  ``Ctrl+Click``: Starts a rhumb-line measurement or deletes a measurement
    line.
--  ``Alt+Click``: Start great circle line measurement or delete
+-  ``Alt+Click``: Starts great circle line measurement or deletes a
    measurement line.
 -  ``Ctrl+Shift+Click``: Add or edit an userpoint.
--  ``Ctrl+Alt+Click``: Insert airport, navaid, userpoint or position
+-  ``Ctrl+Alt+Click``: Inserts an airport, a navaid, an userpoint or a position
    into the nearest flight plan leg.
--  ``Shift+Alt+Click``: Append airport, navaid, userpoint or position to
+-  ``Shift+Alt+Click``: Appends an airport, a navaid, an userpoint or a position to the
    flight plan.
 
 Clicking again on the hotspot removes the marks, measurement lines or
@@ -102,17 +105,18 @@ AI and multiplayer aircraft on ground are shown only on small zoom
 distances to avoid cluttered airports. This means that an AI aircraft
 can disappear from the map when landing on an airport.
 
-On the lowest zoom distance all aircraft are drawn to scale as are the
-parking spots which means you can easily check if your aircraft fits on
-an apron, parking spot or taxiway.
+.. tip::
+
+    On the lowest zoom distance all aircraft are drawn to scale as are the
+    parking spots which means you can easily check if your aircraft fits on
+    an apron, parking spot or taxiway.
 
 A yellow wind arrow and labels for the situation around the user
 aircraft can be displayed on the top center of the map. The displayed
-labels for aircraft can be configured in the dialog ``Options`` on tab
-``Map Display``. No labels are shown for ship traffic.
+labels for aircraft can be configured in the dialog ``Options`` on
+:ref:`map-display-2`. No labels are shown for ship traffic.
 
-See the :ref:`aircraft` for details about the
-aircraft type.
+See :ref:`vehicles` for details about the aircraft type.
 
 Tooltips
 ~~~~~~~~
@@ -120,11 +124,11 @@ Tooltips
 Hovering the mouse over the map will show tooltips for all map objects
 including airports, VOR, NDB, airways, parking, fuel box, towers,
 aircraft and ships. The tooltip is truncated and shows a message
-``More...`` if it gets too long. In that case reduce details or zoom in
+``More ...`` if it gets too long. In that case reduce details or zoom in
 closer.
 
 The sensitivity for the tooltip display can be adjusted in the
-``Options`` dialog on the ``Map`` tab.
+``Options`` dialog on :ref:`map-navigation`.
 
 |Tooltip| |Tooltip Airspace|
 
@@ -146,8 +150,8 @@ objects, even if the objects are not shown at the current zoom distance
 (ring is empty). This allows double-click for zoom in, single-click for
 information dock window and all context menu entries.
 
-You can use the button ``Clear Selection`` |Clear Selection| on top of
-the flight plan and search windows to remove any map highlights.
+You can use  ``Map`` -> ``Remove all Highlights and Selections`` to remove all
+highlights from the map.
 
 Airport Diagram
 ~~~~~~~~~~~~~~~
@@ -161,10 +165,11 @@ parking and tower positions. A right-click on a parking position opens
 the context menu and allows to select the start position for flight plan
 departure.
 
-**Airspaces are hidden if the airport diagram is shown.**
+.. note::
 
-See the :ref:`airport-diagram` for details about
-the airport diagram.
+       Airspaces are hidden if the airport diagram is shown.
+
+See :ref:`airport-diagram` for details about the airport diagram.
 
 .. figure:: ../images/airportdiagram1.jpg
 
@@ -173,7 +178,7 @@ the airport diagram.
 .. figure:: ../images/airportdiagram2.jpg
 
          Detailed view of the airport diagram. Shows blue
-         gates on the right and a few green general aviation ramp parking spots
+         gates on the right and green general aviation ramp parking spots
          on the left. Long displaced threshold of runway 33 is visible. Dashed
          yellow lines indicate taxi paths.
 
@@ -199,8 +204,7 @@ menu item.
 If you like to see information on all objects nearby a click position do
 a single left click into the map.
 
-See the :ref:`information-dock-window`
-for details.
+See :doc:`INFO` for details.
 
 .. _show-procedures:
 
@@ -209,6 +213,8 @@ for details.
 
 Open the procedure search tab of the search dock window and display all
 procedures for the airport.
+
+The menu item text varies depending if the airport is a part of the flight plan.
 
 See :doc:`SEARCHPROCS` for more information.
 
@@ -252,9 +258,9 @@ suffix ``°T``. Additional information like ident or frequency will be
 added to the line if the measurement starts at a navaid or an airport.
 
 The width of distance measurement lines can be changed in the dialog
-``Options`` on the tab ``Map Display``.
+``Options`` on :ref:`map-display-2`.
 
-See the :ref:`highlights` for details on
+See :ref:`highlights` for details on
 measurement lines.
 
 Note that the menu item is disabled if holdings are hidden on the map
@@ -267,8 +273,7 @@ text ``hidden on map`` if this is the case.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A rhumb line is a line of constant course and used between the waypoints
-of an airway or when approaching a VOR or NDB station. Distance between
-points is slightly longer than the great circle route.
+of an airway or when approaching a VOR or NDB station.
 
 The course for a rhumb line is indicated in degrees magnetic and true
 (``°M``, ``°T`` or ``°M/T`` if both values are equal).
@@ -277,15 +282,12 @@ Note that the rhumb line connecting two points on earth is longer than
 the great circle path. Also, near the poles and for longer distances the
 rhumb line is not usable.
 
-The magnetic declination to calculate the magnetic course will be taken
-from the global ``magdec.bgl`` file at the origin of the measurement.
-
 The magnetic declination of an airport or navaid will be used if the
 measurement starts at a such a point. Additional information like ident
-and frequency will be added to the line in this case as well.
+and frequency will be added to the line in this case as well. Otherwise
+the calculated declination for the environment is used.
 
-See :ref:`magnetic-declination` for remarks
-on that topic.
+See :ref:`magnetic-declination` for remarks on that topic.
 
 Note that the menu item is disabled if measurement lines are hidden on
 the map (menu ``View`` -> ``User Features``). The menu item is suffixed
@@ -339,8 +341,8 @@ Note that the menu item is disabled if holdings are hidden on the map
 (menu ``View`` -> ``User Features``). The menu item is suffixed with the
 text ``hidden on map`` if this is the case.
 
-Remove Holding
-^^^^^^^^^^^^^^
+|Remove Holding| Remove Holding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enabled if clicked on the hotspot (holding fix, white filled triangle)
 which is indicated by a hand cursor. Removes the holding from the map.
@@ -358,7 +360,7 @@ on the ``Map Display`` tab. A label indicates the radius of each ring in
 nautical miles.
 
 The width of all range rings can be changed in the dialog ``Options`` on
-the tab ``Map Display``.
+:ref:`map`.
 
 Note that the menu item is disabled if range rings are hidden on the map
 (menu ``View`` -> ``User Features``). The menu item is suffixed with the
@@ -384,13 +386,6 @@ text ``hidden on map`` if this is the case.
 
 Remove the selected rings from the map. This menu item is active if you
 right-click on the center point of a range ring (small circle).
-
-.. _remove-all-range-rings-and-distance-measurements:
-
-|Remove all Range Rings and Distance measurements| Remove all Range Rings and Distance measurements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Remove all rings and distance measurement lines from the map.
 
 .. _set-as-flight-plan-departure:
 
@@ -469,10 +464,6 @@ intermediate waypoint.
 
 Change the name or position of an user-defined waypoint. See :doc:`EDITFPPOSITION`.
 
-The length of the name is limited to 10 characters when saving to a PLN
-file. Other flight plan formats have stronger limitations on length and
-allowed characters.
-
 You can also edit the coordinates directly instead of dragging the
 flight plan position (:doc:`MAPFPEDIT`).
 
@@ -497,8 +488,7 @@ If the selected position is empty map space, an userpoint of type
 ``Bookmark`` is created at this position. Altitude is filled-in if GLOBE
 offline elevation data is installed. See :ref:`cache-elevation`.
 
-See :ref:`userpoints-dialog-add` for more
-information.
+See :ref:`userpoints-dialog-add` for more information.
 
 .. _edit-userpoint:
 
@@ -544,7 +534,8 @@ Allows to edit the respective logbook entry. See :ref:`logbook-dialog-edit`.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show the nearest airport, navaid, userpoint, online client or online
-center in the search dialog. The current search parameters are reset.
+center in the search dialog. The current search parameters are reset
+in the respective tab.
 
 .. _set-center-for-distance-search:
 
@@ -556,44 +547,47 @@ search is highlighted by a |Distance Search Symbol| symbol.
 
 .. _set-home:
 
-|Set Home| Set Home
-^^^^^^^^^^^^^^^^^^^
+|Set Home| Set Home View
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Set the currently visible map view as your home view. The center of the
 home area is highlighted by a |Home Symbol| symbol.
 
-.. |Hand Cursor| image:: ../images/cursorhand.jpg
-.. |Tooltip| image:: ../images/tooltip.jpg
-.. |Tooltip Airspace| image:: ../images/tooltipairspace.jpg
+You can jump to the home view by using main menu ``Map`` -> ``Goto Home``.
+
+.. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Add Userpoint| image:: ../images/icon_userdata_add.png
+.. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Clear Selection| image:: ../images/icon_clearselection.png
-.. |Show Information| image:: ../images/icon_globals.png
-.. |Show Procedures| image:: ../images/icon_approach.png
 .. |Create Approach| image:: ../images/icon_approachcustom.png
+.. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
+.. |Delete from Flight Plan| image:: ../images/icon_routedeleteleg.png
+.. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
+.. |Display Holding| image:: ../images/icon_hold.png
+.. |Remove Holding| image:: ../images/icon_holdoff.png
+.. |Distance Search Symbol| image:: ../images/icon_distancemark.png
+.. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
+.. |Edit Log Entry| image:: ../images/icon_logdata_edit.png
+.. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
+.. |Hand Cursor| image:: ../images/cursorhand.jpg
+.. |Home Symbol| image:: ../images/icon_homesymbol.png
 .. |Measure GC Distance from here| image:: ../images/icon_distancemeasure.png
 .. |Measure Rhumb Distance from here| image:: ../images/icon_distancemeasurerhumb.png
-.. |Remove Distance measurement| image:: ../images/icon_distancemeasureoff.png
-.. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
+.. |Move Userpoint| image:: ../images/icon_userdata_move.png
 .. |Remove Airport Traffic Pattern| image:: ../images/icon_trafficpatternoff.png
-.. |Display Holding| image:: ../images/icon_hold.png
-.. |Show Range Rings| image:: ../images/icon_rangerings.png
-.. |Show Navaid range| image:: ../images/icon_navrange.png
+.. |Remove Distance measurement| image:: ../images/icon_distancemeasureoff.png
 .. |Remove Range Ring| image:: ../images/icon_rangeringoff.png
 .. |Remove all Range Rings and Distance measurements| image:: ../images/icon_rangeringsoff.png
+.. |Set Center for Distance Search| image:: ../images/icon_mark.png
+.. |Set Home| image:: ../images/icon_home.png
+.. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
 .. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
 .. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
-.. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
-.. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
-.. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
-.. |Delete from Flight Plan| image:: ../images/icon_routedeleteleg.png
-.. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
-.. |Add Userpoint| image:: ../images/icon_userdata_add.png
-.. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
-.. |Move Userpoint| image:: ../images/icon_userdata_move.png
-.. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
-.. |Edit Log Entry| image:: ../images/icon_logdata_edit.png
+.. |Show Information| image:: ../images/icon_globals.png
+.. |Show Navaid range| image:: ../images/icon_navrange.png
+.. |Show Procedures| image:: ../images/icon_approach.png
+.. |Show Range Rings| image:: ../images/icon_rangerings.png
 .. |Show in Search| image:: ../images/icon_search.png
-.. |Set Center for Distance Search| image:: ../images/icon_mark.png
-.. |Distance Search Symbol| image:: ../images/icon_distancemark.png
-.. |Set Home| image:: ../images/icon_home.png
-.. |Home Symbol| image:: ../images/icon_homesymbol.png
+.. |Tooltip Airspace| image:: ../images/tooltipairspace.jpg
+.. |Tooltip| image:: ../images/tooltip.jpg
 

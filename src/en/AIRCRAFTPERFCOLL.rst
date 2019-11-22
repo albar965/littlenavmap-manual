@@ -50,8 +50,10 @@ Follow the steps below to collect performance for an aircraft.
 #. Edit the aircraft performance data (:doc:`AIRCRAFTPERFEDIT`) and adjust the numbers to your
    liking or flying habits.
 
-**Do not forget to add at least sufficient reserve fuel. Otherwise you
-will run out of fuel at destination if you rely on this plan.**
+.. warning::
+
+     Do not forget to add at least sufficient reserve fuel. Otherwise you
+     will run out of fuel at destination if you rely on this plan.
 
 Other recommended fields to edit are ``Usable Fuel``,
 ``Required Runway`` and ``Required Runway Type``.
@@ -65,8 +67,10 @@ time.
 In any case stay a few minutes at cruise altitude so that *Little
 Navmap* can get numbers for this phase of flight.
 
-**You can create different performance profiles for different cruise
-altitude ranges to cover fuel flow variations.**
+.. tip::
+
+           You can create different performance profiles for different cruise
+           altitude ranges to cover fuel flow variations.
 
 .. figure:: ../images/perf_collect.jpg
 

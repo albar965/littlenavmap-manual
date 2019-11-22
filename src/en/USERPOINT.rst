@@ -1,5 +1,3 @@
-.. _userpoint:
-
 User-defined Waypoints
 ----------------------
 
@@ -18,7 +16,7 @@ icons on the map.
 .. _userpoints-search:
 
 User-defined Waypoint Search
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The functionality of the search filters and the result table is similar
 to the airport and navaid search. See :doc:`SEARCH`
@@ -30,7 +28,7 @@ deleting of userpoints.
 .. _userpoints-top-buttons:
 
 Top Buttons and additional Menu Items
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :ref:`search-result-table-view-context-menu` for a
 description of common context menu items across all search dialogs. All
@@ -39,7 +37,7 @@ buttons have an equivalent in the result table context menu.
 .. _userpoints-add:
 
 |Add Userpoint| Add Userpoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Add an user-defined waypoint to the userdata.
 
@@ -51,15 +49,15 @@ the information.
 
 Note that you have to add the coordinates manually if the dialogs starts
 empty i.e. nothing was selected in the result table. Add userpoints with
-the map context menu :ref:`add-userpoint` to
+the map context menu (:ref:`add-userpoint`) to
 avoid this and have the coordinates set automatically.
 
-See below for more information about the add dialog.
+See below for more information about the add dialog: :ref:`userpoints-dialog-add`.
 
 .. _userpoints-edit:
 
 |Edit Userpoint| Edit Userpoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Open the edit dialog for one or more userpoints.
 
@@ -72,7 +70,7 @@ See below for more information about the add dialog.
 .. _userpoints-delete:
 
 |Delete Userpoint| Delete Userpoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Remove the selected userpoints after a confirmation dialog. Undo is not
 possible but database backups are created on each start. See
@@ -82,7 +80,7 @@ files.
 .. _userpoints-reset-search:
 
 |Reset Search| Reset Search
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Clear search filters and revert to showing all entries in the search
 result table view.
@@ -90,7 +88,7 @@ result table view.
 .. _userpoints-clear-selection:
 
 |Clear Selection| Clear Selection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Deselect all selected entries in the table and remove any highlight
 circles from the map.
@@ -98,7 +96,7 @@ circles from the map.
 .. _userpoints-help:
 
 |Help| Help
-^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Display a quick help in the tooltip. Click to open this chapter of the
 manual in the default browser.
@@ -106,7 +104,7 @@ manual in the default browser.
 .. _userpoints-menu:
 
 |Menu Button| Menu Button
-^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''
 
 Drop down menu button that allows to hide or show search options.
 
@@ -115,7 +113,7 @@ show that the related filter row has modifications.
 
 .. _userpoints-dialog-add:
 
-Add Userpoints Dialog
+Add Userpoints
 ~~~~~~~~~~~~~~~~~~~~~
 
 The dialog is shown when selecting :ref:`add-userpoint` |Add Userpoint| in the map
@@ -150,14 +148,14 @@ links until the next space.
 The field ``Visible from`` allows to define visibility on the map
 depending on zoom distance. The zoom distance (viewpoint distance to
 earth surface) for the current map view is shown in the
-:ref:`statusbar`. The user point will be visible for
+:doc:`STATUSBAR`. The user point will be visible for
 all zoom distances smaller than the value in ``Visible from``. Maximum
 value is 3000 nm and minimum value is 1 nm.
 
-Valid coordinates are required to confirm the dialog. See :ref:`coordinates-formats` for a detailed
+Valid coordinates are required to confirm the dialog. See :doc:`COORDINATES` for a detailed
 description of the recognized coordinate formats. A label below the
 coordinates displays the parsed coordinates or an error message in case
-the coordinates could not be parsed.
+the coordinates are invalid.
 
 All other text fields are optional and can be left blank.
 
@@ -175,7 +173,7 @@ and sets the type of the userpoint to ``Bookmark``.
 
 .. _userpoints-dialog-edit:
 
-Edit Userpoints Dialog
+Edit Userpoints
 ~~~~~~~~~~~~~~~~~~~~~~
 
 A single Userpoint
@@ -191,7 +189,7 @@ Additional metadata shown at the bottom:
    X-Plane or Garmin import. You can filter the userpoint search for
    this name.
 -  **Temporary userpoint - will be deleted on next startup.** This
-   indicates that the userpoint is temporary.
+   indicates a temporary userpoint.
 
 The button ``Reset`` undoes all manual changes and reverts all fields to
 their original state.
@@ -210,7 +208,7 @@ If checked, the field to the left is unlocked and any text entered will
 be assigned to the respective field in all selected userpoints.
 Unchecked fields will not be altered for any of the userpoints.
 
-In combination with the powerful search function, this allows for bulk
+In combination with the search function, this allows for bulk
 changes like fixing an invalid region and simultaneously changing the
 visibility range for the affected userpoints:
 
@@ -304,9 +302,10 @@ flight simulator community and other applications.
 
 Each row in the file represents an user-defined waypoint.
 
-The minimum fields for import are ``Type``, ``Name``, ``Ident``,
-``Latitude`` and ``Longitude``. Only ``Latitude`` and ``Longitude`` need
-to be filled, the rest can be empty.
+The recommended minimum fields for import are ``Type``, ``Name``, ``Ident``,
+``Latitude`` and ``Longitude``.
+
+Only ``Latitude`` and ``Longitude`` are required, the rest can be empty.
 
 All twelve fields are saved when exporting userpoints as CSV. Also, the
 multi line field ``Description`` is enclosed in quotes if needed and
@@ -331,8 +330,10 @@ See `Comma-separated
 values <https://en.wikipedia.org/wiki/Comma-separated_values>`__ in the
 Wikipedia for detailed information on the format.
 
-**Example for an absolute minimal userpoint consisting of coordinates
-only:**
+Examples
+^^^^^^^^^^^^^
+
+Example for an absolute minimal userpoint consisting of coordinates only:
 
 .. code-block:: none
 
@@ -342,8 +343,7 @@ only:**
 default of 250 nm and the userpoint will be shown using the ``Unknown``
 |Unknown| icon after import.
 
-**Example for a minimal userpoint record with type** ``Mountain`` **,
-ident and name for import:**
+Example for a minimal userpoint record with type ``Mountain`` , ident and name for import:
 
 .. code-block:: none
 
@@ -351,14 +351,15 @@ ident and name for import:**
 
 ``Visible from`` will be set to the default of 250 nm after import.
 
-**Example for an exported userpoint with type** ``Mountain`` **and
-all fields set:**
+Example for an exported userpoint with type ``Mountain`` and all fields set:
 
 .. code-block:: none
 
    Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771,1200,2.0085027218,"View,Interesting,Point","Interesting point ""Eselsberg"" - nice view",ED,250,2018-05-17T17:44:26.864
 
-Take note of the following challenges when parsing CSV files: In the
+Note of the following when parsing the CSV files:
+
+In the
 field ``Tags``, the list ``"View,Interesting,Point"`` is enclosed in
 double quotes since it contains commas. The field description
 ``"Interesting point ""Eselsberg"" - nice view"`` is enclosed in double
@@ -382,7 +383,7 @@ Position   Name                    Required   Empty Allowed   Comment
 8          Tags                    No         Yes             Free to use field. GUI has no special tag search.
 9          Description             No         Yes             Free to use field which allows line breaks.
 10         Region                  No         Yes             Two letter ICAO region of an userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.
-11         Visible from            No         Yes             Defines from what zoom distance in nautical miles (shown on :ref:`statusbar`) the userpoint is visible. Set to 250 nm if empty on import.
+11         Visible from            No         Yes             Defines from what zoom distance in nautical miles (shown on :doc:`STATUSBAR`) the userpoint is visible. Set to 250 nm if empty on import.
 12         Last update timestamp   No         Yes             ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in GUI.
 ========   =====================   ========   =============   ================================================================================================================================================================================
 
@@ -530,9 +531,11 @@ Export
 Mapping of fields is same as import but all fields are adjusted to
 limitations.
 
-Note: If an imported waypoint ends up being within 0.001° latitude and
-longitude of an existing user waypoint in the GTN, the existing waypoint
-and name will be reused.
+.. note::
+
+       If an imported waypoint ends up being within 0.001° latitude and
+       longitude of an existing user waypoint in the GTN, the existing waypoint
+       and name will be reused.
 
 .. _userpoints-bgl:
 
