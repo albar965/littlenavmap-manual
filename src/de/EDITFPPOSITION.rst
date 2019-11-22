@@ -1,5 +1,3 @@
-.. _edit-flightplan-position:
-
 Flugplanposition bearbeiten
 ---------------------------
 
@@ -22,16 +20,15 @@ gespeichert wird und lange Namen werden auf 10 Zeichen gekürzt.
 Koordinaten
 ~~~~~~~~~~~
 
-Sie können die Koordinaten auch direkt in diesem Dialog bearbeiten,
-indem Sie die Drag & Drop-Funktion :doc:`MAPFPEDIT` verwenden. Dieses kann nützlich sein, wenn
-Sie Wegpunkte mit bekannten Koordinaten wie visuellen Berichtspunkten
+Neben der Drag & Drop-Funktion (:doc:`MAPFPEDIT`) können sie die
+Koordinaten auch direkt in diesem Dialog bearbeiten. Dies kann nützlich sein, wenn
+Sie Wegpunkte mit bekannten Koordinaten wie Berichtspunkten
 hinzufügen möchten.
 
 Der Tooltip des Koordinateneingabefelds zeigt die verfügbaren Formate
 an.
 
-Für weiere Informationen siehe auch
-:doc:`COORDINATES`.
+Für weiere Informationen siehe auch :doc:`COORDINATES`.
 
 .. figure:: ../images/edit_flightplan_waypoint.jpg
 

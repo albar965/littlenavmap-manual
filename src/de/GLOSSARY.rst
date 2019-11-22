@@ -5,11 +5,11 @@ Glossar
 
 3D
     X-Plane Flugplatz, der mindestens ein 3D-Objekt enthält. Möglicherweise
-    handelt es sich um einen vollständig errichteten GroßFlugplatz.
+    handelt es sich um einen vollständig errichteten Großflugplatz.
 
 Add-on Flugplatz
     Dies ist ein Flugplatz, der beim Laden der Datenbank außerhalb des
-    Standard-Szenerieverzeichnises des Flugsimulators gefunden wurde.
+    Standard-Szenerieverzeichnisses des Flugsimulators gefunden wurde.
 
     X-Plane: Alle Flugplätze im Verzeichnis ``Custom Scenery`` gelten als
     Add-On-Flugplätze und werden entsprechend markiert.
@@ -19,15 +19,21 @@ Ankunftsprozedur
     Flugzeugs unter Instrumentenflugbedingungen vom ersten Anflug auf eine
     Landung oder zu einem Punkt, von dem aus eine Landung visuell erfolgen
     kann. Wenn ein Flugplan ein Standard-Ankunftsprozedur (STAR)
-    beinhaltet, folgt eine Anflugprozedur normalerweise dem STAR.
+    beinhaltet, folgt eine Anflugprozedur normalerweise der STAR.
+
+Abflugprozeduren
+    SID-Prozeduren.
 
 Anflugprozeduren
     Anflug-, Übergangs- oder STAR-Prozeduren.
 
+Bewertung
+    Flugplatzwertung von null bis fünf Sternen, je nach Ausstattung.
+
 BGL
     Eine Binärdatei mit der Endung ``BGL``, die Teil einer
     Flugsimulatorszenerie ist, die Flugplatz-, Navigationshilfen- oder
-    Luftweg-Informationen enthält. Diese Dateien können auch Verkehr,
+    Luftstraßeninformationen enthält. Diese Dateien können auch Verkehr,
     Landklassen, Höhenangaben oder andere Informationen enthalten, die für
     *Little Navmap* nicht relevant sind.
 
@@ -38,28 +44,20 @@ DAT
     Ein Textdateiformat, das von X-Plane verwendet wird, um Flugplatz-,
     Navigationshilfen- und Prozedurinformationen zu speichern.
 
-Abflugprozeduren
-    SID-Prozeduren.
-
 DME
-    Entfernungsmessgeräte oder eine Radio-Navigationshilfe.
-
-Leerer Flugplatz
-    Ein Flugplatz, der keine Rollwege, keine Parkpositionen oder Gates,
-    keine Vorfelder hat und kein Add-On-Flugplatz und kein Wasserflugplatz
-    ist.
+    Eine Radio-Navigationshilfe zur Entfernungsmessung.
 
 FACF
-    Endanflugkurs fixiert. Ein Punkt, der auf den Endanflugverlauf einer
+    Endanflugkurspunkt. Ein Punkt, der auf den Endanflugverlauf einer
     Instrumentenprozedure ausgerichtet ist.
 
 FAF
-    Endanflug Fix. Der Punkt, an dem das Endanflugsegment mit dem
+    Endanflugpunkt. Der Punkt, an dem das Endanflugsegment mit dem
     Instrumentenanflug beginnt.
 
 Fix
     Dieser Begriff bezieht sich auf einen Wegpunkt, Radio-Navigationshilfe
-    oder einen berechneten Punkt auf einer Prozedur.
+    oder einen berechneten Punkt auf einer Prozedur. Wird in dieser Anleitung Punkt genannt.
 
 Flugplanposition
     Ein benutzerdefinierter Wegpunkt, der Teil des Flugplans ist.
@@ -77,24 +75,42 @@ FS9
 FSX
     Flugsimulator X oder Flugsimulator - Steam Edition.
 
+Funkfeuer
+    VOR, VORTAC, TACAN oder NDB.
+
 GIS
     Ein geographisches Informationssystem wie z.B. Google Earth.
 
 ILS
     Instrumentenlandesystem.
 
+Leerer Flugplatz
+    Ein Flugplatz, der keine Rollwege, keine Parkpositionen oder Gates,
+    keine Vorfelder hat und kein Add-On-Flugplatz und kein Wasserflugplatz
+    ist.
+
+Loxodrome
+    Auch Rhumb-Linie genannt.
+    Bei Verwendung eines Magnetkompasses oder einer Richtungsanzeige ist es
+    bequemer, eine konstante Flugrichtung zu fliegen. Dies kann erreicht
+    werden, indem man einer Loxodrome folgt und nicht einer
+    Großkreisbahn. Zu beachten ist, dass die Loxodrome, die zwei Punkte
+    auf der Erde verbindet, länger ist als der Großkreisweg. Auch in der
+    Nähe der Pole und bei größeren Entfernungen ist die Loxodrome nicht
+    verwendbar.
+
 Initialer Fix
-    Dies ist der erste Fix einer Prozedur.
+    Dies ist der erste Fix einer Prozedur auch intitialer Anflugpunkt.
 
 MAP
-    Fehlanflugspunkt. Der Punkt auf der Endanflugstrecke, der den
+    Fehlanflugpunkt. Der Punkt auf der Endanflugstrecke, der den
     Endpunkt der Endanflugstrecke und den Beginn des Fehlanfluges darstellt.
 
 Navigationshilfe
-    VOR, VORTAC, TACAN, NDB oder Wegpunkt/Kreuzung.
+    VOR, VORTAC, TACAN, NDB oder Wegpunkt bzw. Kreuzung.
 
 NDB
-    Nicht gerichtetes Funkfeuer - Radio-Navigationshilfe.
+    Ungerichtetes Funkfeuer - Radio-Navigationshilfe.
 
 P3D
     Prepar3D v2 bis v4.
@@ -112,54 +128,42 @@ POI
 Prozedur
     Anflug, Übergang, SID oder STAR.
 
-Funkfeuer
-    VOR, VORTAC, TACAN oder NDB.
-
-Bewertung
-    Flugplatz von null bis fünf Sternen, je nach Ausstattung.
-
-Rhumb Line
-    Bei Verwendung eines Magnetkompasses oder einer Richtungsanzeige ist es
-    bequemer, eine konstante Flugrichtung zu fliegen. Dies kann erreicht
-    werden, indem man einer Rhumb-Line-Linie folgt und nicht einer
-    Großkreisbahn. Zu beachten ist, dass die Rhumb-Linie, die zwei Punkte
-    auf der Erde verbindet, länger ist als der Großkreisweg. Auch in der
-    Nähe der Pole und bei größeren Entfernungen ist die Lahnlinie nicht
-    verwendbar.
-
-Szeneriebibliothek-Datenbank
-    Dies ist eine interne (`SQLite <http://sqlite.org>`__) Datenbank, die
-    von *Little Navmap* beim Lesen aller BGL- oder DAT-Dateien des
-    Flugsimulators erstellt wird. Es ermöglicht eine schnelle, komplexe
-    Suche und Kartendarstellung.
-
 SID
     Ein Standardinstrumentenabflug ist eine Abflugprozedur der
-    Flugsicherung, das dazu beiträgt, die Abfertigungsverfahren zu
+    Flugsicherung, die dazu beiträgt, die Abfertigungsverfahren zu
     vereinfachen. Eine SID hält Flugzeuge vom Gelände fern, ist aber für die
     Flugroute der Flugsicherung optimiert und bietet nicht unbedingt das
-    beste Steiggefälle. Es bietet ein Gleichgewicht zwischen Gelände- und
+    beste Steigrate. Sie bietet ein Gleichgewicht zwischen Gelände- und
     Hindernisvermeidung, Lärmminderung und Luftraummanagement.
 
 SimConnect
     Eine Programmierschnittstelle, die es Anwendungen ermöglicht,
-    Flugsimulatorparameter zu lesen und zu schreiben.
+    Flugsimulatorparameter mit FSX und Prepar3D zu lesen und zu schreiben.
 
 STAR
     Eine Standard-Ankunftsprozedur ist eine Flugroute, die in der Regel die
     Phase eines Fluges zwischen dem letzten im Flugplan angegebenen Punkt
     der Route und dem ersten Punkt der Anflugroute auf den Flugplatz
     abdeckt, normalerweise dem Initial Approach Fix (IAF). Ein STAR
-    verbindet die En-Route-Phase mit der Anflugphase des Fluges.
+    verbindet die Reiseflugphase mit der Anflugphase des Fluges.
 
 Startposition
     Wird für den Abflug in Flugplänen verwendet. Entweder Start- und
     Landebahn, Hubschrauberlandeplatz, GA-Rampe, Laderampe, Treibstoffkasten
     oder Flugsteig.
 
+Szeneriedatenbank
+    Dies ist eine interne (`SQLite <http://sqlite.org>`__) Datenbank, die
+    von *Little Navmap* beim Lesen aller BGL- oder DAT-Dateien des
+    Flugsimulators erstellt wird. Es ermöglicht eine schnelle, komplexe
+    Suche und Kartendarstellung.
+
 TACAN
     Taktisches Flugsicherungssystem - Radio-Navigationshilfe, das von
     Militärflugzeugen verwendet wird.
+
+UTC
+    Universal coordinated time. Auch: Greenwich-Zeit oder Zulu-Zeit.
 
 VOR
     UKW Rundum-Richtfunkreichfeuer - Radio-Navigationshilfe.
@@ -170,3 +174,4 @@ VORDME
 
 VORTAC
     Ko-positionierte UKW-Rundumfunkfeuer (VOR) und TACAN-Funkfeuer (TACAN).
+

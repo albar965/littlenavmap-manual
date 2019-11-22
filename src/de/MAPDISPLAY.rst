@@ -1,33 +1,34 @@
 Karte
 -----
 
-Für Details zu den verschiedenen Symbolen, die auf der Karte angezeigt
-werden, siehe :doc:`LEGEND`.
+Für Details zu Kartensymbolen siehe :doc:`LEGEND`.
 
 .. _moving:
 
 Bewegen
 ~~~~~~~
 
-Bewegen Sie die Karte per Mausklick und Drag&Drop und das Mausrad zum
-Vergrößern oder Verkleinern. Verwenden Sie ``Shift+Mausrad``, um in
-kleinen Schritten zu zoomen. Sie können auch die Overlay-Buttons auf der
+Bewegen Sie die Karte per Mausklick mit Drag und Drop und nutzen Sie das Mausrad zum
+Vergrößern oder Verkleinern. Verwenden Sie ``Umschalt+Mausrad``, um in
+kleinen Schritten zu zoomen. Sie können auch die Overlay-Schaltflächen auf der
 rechten Seite der Karte verwenden.
 
 Alternativ können Sie sich auch mit der Tastatur durch die Karte
 bewegen:
 
--  Richtungstasten: Scrollen Sie durch die Karte
--  ``+`` und ``-``: Vergrößern und Verkleinern
--  ``*`` und ``/``: Vergrößern und Verkleinern in kleinen Schritten
+-  Pfeiltasten: Rollen Sie durch die Karte
+-  ``+`` und ``-``: Vergrößern und verkleinern
+-  ``*`` und ``/``: Vergrößern und verkleinern in kleinen Schritten
 -  ``Alt+Links`` und ``Alt+Rechts``: Vorwärts- oder Rückwärtsgehen in
    der Kartenpositionshistorie
 -  ``Strg++`` und ``Strg+-``: Details vergrößern oder verkleinern
--  ``Strg+Haus``: Zur Startseite gehen
+-  ``Strg+Pos1``: Zur Startseite gehen
 -  ``Strg+Ende``: Gehe zur Mitte für die Entfernungssuche
 
-Vergessen Sie nicht, das Kartenfenster zu aktivieren, indem Sie darauf
-klicken, bevor Sie die Tasten zur Bewegung verwenden.
+.. note::
+
+        Vergessen Sie nicht, das Kartenfenster zu aktivieren, indem Sie darauf
+        klicken oder es mit ``F2`` aktivieren, bevor Sie die Tasten zur Bewegung verwenden.
 
 .. _mouse-clicks:
 
@@ -35,44 +36,45 @@ Mausklicks
 ~~~~~~~~~~
 
 Ein einziger Klick zeigt Details über alle Kartenobjekte in der Nähe der
-angeklickten Position im Dockfenster ``Information``. Fenster und
+angeklickten Position im Dockfenster ``Informationen``. Fenster und
 Reiter werden je nach angeklickten Objekten geöffnet.
 
 Ein einfacher Klick auf ein Benutzerflugzeug, KI-Flugzeug oder
-Multiplayer-Flugzeug zeigt Details im Dockfenster des
-``Simulatorflugzeuges`` an.
+Mehrspieler-Flugzeug zeigt Details im Dockfenster
+``Simulatorflugzeug`` an.
 
-Ein Doppelklick vergrößert die Darstellung des Flugplatzdiagramms oder
-der Navigationshilfe und zeigt Details im Dockfenster ``Information`` an. Dasselbe
-gilt für alle KI- oder Multiplayer-Flugzeuge oder -Schiffe.
+Ein Doppelklick vergrößert bis zur Darstellung das Flugplatzdiagramm oder
+der Navigationshilfe und zeigt Details im Dockfenster ``Informationen`` an. Dasselbe
+gilt für alle KI- oder Mehrspieler-Flugzeuge oder -Schiffe.
 
-Die Doppelklick- und Ein-Klick-Funktionalität funktioniert nicht für
-Flugplan-Wegpunkte oder Flugplätze, wenn der Flugplan-Editiermodus
-aktiviert ist. Der Bearbeitungsmodus kann über die Symbolleiste oder
-``Hauptmenü`` -> ``Flugplan`` -> ``Flugplan auf Karte bearbeiten``
+Die Doppelklick- und Einfachklick-Funktionalität funktioniert nicht für
+Flugplan-Wegpunkte oder Flugplätze, wenn der Flugplanbearbeitungsmodus
+aktiviert ist. Dieser kann über die Symbolleiste oder im Hauptmenü
+unter ``Flugplan`` -> ``Flugplan auf der Karte bearbeiten``
 deaktiviert werden.
 
 Die Empfindlichkeit des Mausklicks kann im Dialogfeld ``Einstellungen``
-auf der Seite ``Karte`` eingestellt werden.
+auf der Seite ``Kartennavigation`` eingestellt werden.
 
 .. _mouse-click-hotspots:
 
 Mausklick - Aktive Punkte
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Kartenmarkierungen wie Distanzkreise oder Messlinien haben Hotspots,
-die anzeigen, dass ein Modifikatorklick sie entfernen kann oder eine
+Kartenmarkierungen wie Distanzkreise oder Messlinien haben aktive Punkte,
+die anzeigen, dass ein Klick mit ``Umschalt``, ``Strg`` bzw. ``Alt`` sie entfernen kann oder eine
 Aktion im Kontextmenü verfügbar ist. Gleiches gilt für den
-Drag&Drop-Bearbeitungsmodus des Flugplans.
+Drag und Drop-Bearbeitungsmodus des Flugplans.
 
 Der Mauszeiger verwandelt sich in eine Hand |Hand Cursor|, um einen
 Klickpunkt anzuzeigen.
 
 Klickpunkte sind:
 
--  Mitte derDistanzkreisee (kleiner Kreis).
+-  Mitte der Distanzkreise (kleiner Kreis).
 -  Ende einer Messlinie (Kreuz).
--  Start- und Landebahn-Schwellenpunkt (kleiner Kreis für Platzrunden).
+-  Start- und Landebahn-Schwellenpunkt (kleiner Kreis).
+-  Ursprungspunkt (Fix) von Warteschleifen (kleines Dreieck).
 
 .. _mouse-clicks-modifiers:
 
@@ -82,74 +84,74 @@ Mausklicks und Modifikatoren
 Mit der Tastatur und dem Mausklick können Sie schnell auf die folgenden
 Funktionen zugreifen:
 
--  ``Umschalt+Klick``: Distanzkreise oder Entfernungsringe von Navigationshilfen.
--  ``Strg+Klick``: Starten Sie die Rhumb-Line-Messung oder löschen Sie
-   eine Messlinie.
--  ``Alt+Klick``: Starten Sie die Messung der Großkreislinie oder
-   löschen Sie die Messlinie.
--  ``Strg+Shift+Klick``: Hinzufügen oder Bearbeiten eines
-   Nutzerpunktes.
+-  ``Umschalt+Klick``: Distanzkreise oder Entfernungsringe von Navigationshilfen erstellen oder löschen.
+-  ``Strg+Klick``: Startet eine Messung mit Loxodrome oder löscht eine Messlinie.
+-  ``Alt+Klick``: Startet die Messung der Großkreislinie oder löscht die Messlinie.
+-  ``Strg+Umschalt+Klick``: Hinzufügen oder Bearbeiten eines Nutzerpunktes.
 -  ``Strg+Alt+Klick``: Fügen Sie Flugplatz, Navigationshilfe, Benutzerpunkt oder
-   Position in die nächstgelegene Flugplan-Strecke ein.
+   Position in den nächstgelegenen Flugplanabschnitt ein.
 -  ``Umschalt+Alt+Klick``: Fügen Sie Flugplatz, Navigation,
-   Benutzerpunkt oder Position an den Flugplan an.
+   Benutzerpunkt oder Position am Ende des Flugplanes an.
 
 Ein zweiter Klick auf den aktiven Punkt des Nutzerobjektes entfernt es wieder.
-
-.. _aircraft:
 
 Flugzeug
 ~~~~~~~~
 
-Das Benutzerflugzeug und KI- oder Mehrspielerflugzeug oder -schiffe
+Das Benutzerflugzeug und KI- oder Mehrspielerflugzeug sowie -schiffe
 werden auf der Karte angezeigt, wenn das Programm mit einem
 Flugsimulator verbunden ist. Die Farbe zeigt den Benutzer oder ein KI-
 oder Mehrspielerfahrzeug an und die Symbolform zeigt an, ob es sich bei
-dem Flugzeug um einen Kolben/Turboprop, Jet, Helikopter oder ein Schiff
+dem Flugzeug um einen Kolbenflugzeug, Turboprop, Jet, Helikopter oder ein Schiff
 handelt. Die Symbolumrandung wird grau, wenn sich ein Flugzeug am Boden
 befindet.
 
-Little Navmap begrenzt die Anzeige von KI-Fahrzeugen je nach Größe.
+*Little Navmap* begrenzt die Anzeige von KI-Fahrzeugen je nach Größe.
 Zoomen Sie nah heran, um kleine Flugzeuge oder Boote zu sehen.
 
-KI- und Multiplayer-Flugzeuge werden am Boden nur in kleinen
+KI- und Mehrspieler-Flugzeuge werden am Boden nur in kleinen
 Zoomabständen angezeigt, um überfüllte Flugplätze zu vermeiden. Das
 bedeutet, dass ein KI-Flugzeug bei der Landung auf einem Flugplatz von
 der Karte verschwinden kann.
 
-Auf der untersten Zoomdistanz werden alle Flugzeuge sowie die Parkplätze
-maßstabsgetreu dargestellt, so dass Sie leicht überprüfen können, ob Ihr
-Flugzeug auf ein Vorfeld, einen Parkplatz oder einen Rollweg passt.
+.. tip::
+
+   Auf der untersten Zoomdistanz werden alle Flugzeuge sowie die Parkplätze
+   maßstabsgetreu dargestellt, so dass Sie leicht überprüfen können, ob Ihr
+   Flugzeug auf ein Vorfeld, einen Parkplatz oder einen Rollweg passt.
 
 Ein gelber Windpfeil und Bezeichnungen für die Verhältnisse um das
-Benutzerflugzeug herum können in der oberen Mitte der Karte angezeigt
-werden. Die angezeigten Labels für Flugzeuge können im Dialog
-``Einstellungen`` auf der Seite ``Kartenanzeige`` konfiguriert
-werden. Es werden keine Labels für den Schiffsverkehr angezeigt.
+Benutzerflugzeug können in der oberen Mitte der Karte angezeigt
+werden. Die angezeigten Beschriftungen für Flugzeuge können im Dialog
+``Einstellungen`` auf :ref:`map-display-2` konfiguriert
+werden. Es werden keine Beschriftungen für den Schiffsverkehr angezeigt.
 
-Siehe auch :ref:`aircraft` für Details
-über den Flugzeugtyp.
+Siehe auch :ref:`vehicles` für Details über den Flugzeugtyp.
 
 Tooltips
 ~~~~~~~~
 
-Wenn Sie mit der Maus über die Karte fahren, werden QuickInfos für alle
+Wenn Sie mit der Maus über die Karte fahren, werden Tooltips für alle
 Kartenobjekte angezeigt, einschließlich Flugplätze, VOR, NDB,
-Luftstraßen, Parkplätze, Treibstofftanks, Türme, Flugzeuge und Schiffe.
+Luftstraßen, Parkplätze, Tankstellen, Tower, Flugzeuge und Schiffe.
 Der Tooltip wird abgeschnitten und zeigt eine Meldung ``Mehr ...`` an,
 wenn er zu lang wird. In diesem Fall reduzieren Sie Details oder zoomen
 Sie näher heran.
 
 Die Empfindlichkeit für die Tooltip-Anzeige kann im Dialog
-``Einstellungen`` auf der Seite ``Karte`` eingestellt werden.
+``Einstellungen`` auf :ref:`map-navigation` eingestellt werden.
 
-|Tooltip| |Tooltip Airspace|
+.. figure:: ../images/tooltip.jpg
 
-**Bild oben:** *Tooltip mit Informationen für einen Flugplatz und ein
-VOR und ein Tooltip mit Informationen über Lufträume.*
+         Tooltip mit Informationen für einen Flugplatz und ein VOR.
 
-Highlights
-~~~~~~~~~~
+.. figure:: ../images/tooltipairspace.jpg
+
+         Tooltip mit Informationen über Lufträume.
+
+
+Hervorhebungen
+~~~~~~~~~~~~~~~~
 
 Flugplätze, Navigationshilfen oder andere Merkmale, die in der Flugplantabelle oder
 in einer Suchergebnistabelle ausgewählt sind, werden auf der Karte mit
@@ -164,39 +166,37 @@ angezeigt werden (Ring ist leer). Dies ermöglicht einen Doppelklick zum
 Vergrößern, einen einfachen Klick für das Informations-Dockfenster und
 alle Einträge im Kontextmenü.
 
-Sie können die Schaltfläche ``Auswahl löschen`` |Clear Selection| oben
-im Flugplan und in den Suchfenstern verwenden, um eventuelle
-Kartenhighlights zu entfernen.
+Sie können im Hauptmenü mit ``Karte`` -> ``Alle Hervorhebungen und Auswahlen entfernen``
+alle Hervorhebungen zu entfernen.
 
-Flugplatzdiagram
-~~~~~~~~~~~~~~~~
+Flugplatzdiagramm
+~~~~~~~~~~~~~~~~~~~
 
 Die Anzeige wechselt von einem einzelnen Symbol zu einem
-Flugplatzdiagramm, wenn Sie tief genug in einen Flugplatz hineinzoomen.
-Das Diagramm zeigt alle Rollwege, Parkpositionen, Tore, Start- und
-Landebahnen und mehr.
+Flugplatzdiagramm, wenn Sie tief genug zu einem Flugplatz hineinzoomen.
+Das Diagramm zeigt alle Rollwege, Parkpositionen, Gates, Runways und mehr.
 
 Das Flugplatzdiagramm bietet weitere Informationen durch Tooltips für
 Park- und Towerpositionen. Ein Rechtsklick auf eine Parkposition öffnet
 das Kontextmenü und ermöglicht die Auswahl der Startposition für den
-Start des Flugplans.
+Flugplans.
 
-**Lufträume werden ausgeblendet, wenn das Flugplatzdiagramm angezeigt
-wird.**
+.. note::
 
-Siehe :ref:`airport-diagram` für
-weitere Details über den Flugplatz.
+     Lufträume werden ausgeblendet, wenn das Flugplatzdiagramm angezeigt wird.
+
+Siehe :ref:`airport-diagram` für weitere Details über den Flugplatz.
 
 .. figure:: ../images/airportdiagram1.jpg
 
-        High-Level-Ansicht des Flugplatzdiagramms von EDDH.
+        Ferne Ansicht des Flugplatzdiagramms von EDDH.
 
 .. figure:: ../images/airportdiagram2.jpg
 
         Detailansicht des Flugplatzdiagramms. Zeigt rechts
-        blaue Tore und links ein paar grüne Parkplätze für die allgemeine
+        blaue Gate und links grüne Parkplätze für die allgemeine
         Luftfahrt. Die langgestellte Schwelle der Piste 33 ist sichtbar.
-        Gestrichelte gelbe Linien zeigen Taxistrecken an.
+        Gestrichelte gelbe Linien zeigen Rollbahnpfade an.
 
 .. _map-context-menu:
 
@@ -213,15 +213,14 @@ Verdeutlichung den Namen des ausgewählten Kartenobjekts.
 |Show Information| Zeige Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Zeigt detaillierte Informationen für den nächstgelegenen Flugplatz, die
-Luftstraßen, den Luftraum oder die Navigationshilfen im
-Dockfenster ``Information`` an, deren Name im Menüpunkt angezeigt wird.
+Zeigt detaillierte Informationen für den nächstgelegenen Flugplatz,
+Luftstraßen, Luftraum oder Navigationshilfen im
+Dockfenster ``Informationen`` an.
 
 Wenn Sie Informationen über alle Objekte in der Nähe einer Klickposition
 sehen möchten, klicken Sie mit einem einzigen Linksklick in die Karte.
 
-Siehe :ref:`information-dock-window` für
-weitere Details.
+Siehe :doc:`INFO` für weitere Details.
 
 .. _show-procedures:
 
@@ -230,6 +229,9 @@ weitere Details.
 
 Öffnet den Reiter ``Prozeduren`` des Suchfensters und zeigt
 alle Prozeduren für den Flugplatz an.
+
+Der Name des Menüpunktes variiert, je nach dem
+ob der Flugplatz Teil des Flugplanes ist.
 
 Siehe :doc:`SEARCHPROCS` für weitere Informationen.
 
@@ -241,6 +243,9 @@ Siehe :doc:`SEARCHPROCS` für weitere Informationen.
 Öffnet einen Dialog, der es ermöglicht, einen einfachen,
 benutzerdefinierten Endanflug zu erstellen.
 
+Der Name des Menüpunktes variiert, je nach dem
+ob der Flugplatz Teil des Flugplanes ist.
+
 Weitere Informationen finden Sie unter :doc:`CUSTOMPROCEDURE`.
 
 .. _measure-gc-distance-from-here:
@@ -250,38 +255,38 @@ Weitere Informationen finden Sie unter :doc:`CUSTOMPROCEDURE`.
 
 Zeigt Entfernungen vom ausgewählten Ursprung an, während Sie mit der
 Maus über die Karte fahren. Klicken Sie mit der linken Maustaste auf die
-Karte, um die Messung zu beenden und die Messlinie beizubehalten. Alle
-Messleitungen werden gespeichert und beim nächsten Start
+Karte, um die Messung zu beenden und die Messlinie zu behalten. Alle
+Messlinien werden gespeichert und beim nächsten Start
 wiederhergestellt.
 
-Sie können mit der Tastatur, dem Mausrad oder den Kartenüberlagerungen
+Sie können mit der Tastatur, dem Mausrad oder den Kartenoverlays
 scrollen und zoomen, während Sie eine Linie ziehen.
 
-Klicken Sie mit der rechten Maustaste, drücken Sie die Escape-Taste oder
+Klicken Sie mit der rechten Maustaste, drücken Sie die Taste ``Esc`` oder
 klicken Sie außerhalb des Kartenfensters, um die Bearbeitung der
 Messlinie abzubrechen.
 
-Messlinien verwenden Seemeilen, Kilometer oder Statuenmeilen als
-Einheit. Feet oder Meter werden als Einheit hinzugefügt, wenn die Linien
+Messlinien verwenden nautische Meilen, Kilometer oder Meilen als
+Einheit. Fuß oder Meter werden als Einheit hinzugefügt, wenn die Linien
 kurz genug sind. Auf diese Weise kann z.B. die Startstrecke für
-kreuzende Starts gemessen werden.
+Starts von Kreuzungen gemessen werden.
 
 Ein Großkreis gibt die kürzeste Entfernung von Punkt zu Punkt auf der
 Erde an, verwendet aber keinen konstanten Kurs. Aus diesem Grund zeigt
 die Messlinie zwei Kurswerte an. Eine für die Start- und eine für die
 Endposition.
 
-Der Kurs wird immer in Grad true angegeben, was durch das Suffix ``°T``
+Der Kurs wird immer in wahren Grad angegeben, was durch das Suffix ``°T``
 angezeigt wird. Zusätzliche Informationen wie Kennung oder Frequenz
 werden der Zeile hinzugefügt, wenn die Messung an einer Navigationshilfen oder
 einem Flugplatz beginnt.
 
 Die Breite der Distanzmesslinien kann im Dialog ``Einstellungen`` auf
-der Seite ``Kartendarstellung`` geändert werden. Siehe
+:ref:`map-display-2` geändert werden. Siehe
 :ref:`highlights` für Details zu den
 Messlinien.
 
-Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Warteschleifen auf der
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Messlinien auf der
 Karte ausgeblendet sind (Menü ``Ansicht`` -> ``Nutzerobjekte``). Der
 Menüpunkt wird in diesem Fall mit dem Text ``auf der Karte versteckt``
 versehen.
@@ -291,28 +296,24 @@ versehen.
 |Measure Rhumb Distance from here| Rhumb Distance von hier aus messen.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Eine Rhumb-Linie ist eine Linie mit konstantem Verlauf, die zwischen den
-Wegpunkten eines Luftwegs oder bei der Annäherung an eine VOR- oder
-NDB-Station verwendet wird. Der Abstand zwischen den Punkten ist etwas
-größer als die Großkreisroute.
+Eine Rhumb-Linie oder auch Loxodrom ist eine Linie mit konstantem Verlauf, die zwischen den
+Wegpunkten einer Luftstraße oder bei der Annäherung an eine VOR- oder
+NDB-Station verwendet wird.
 
-Der Kurs einer Rhumb-Linie wird in Grad magnetisch und wahr (``°M``,
-``°T`` oder ``°M/T``) angegeben, wenn beide Werte gleich sind.
+Der Kurs einer Rhumb-Linie wird in Grad magnetisch und wahr angegeben (``°M``,
+``°T`` oder ``°M/T`` wenn beide Werte gleich sind).
 
 Zu beachten ist, dass die Rhumb-Linie, die zwei Punkte auf der Erde
 verbindet, länger ist als der Großkreisweg. Auch in der Nähe der Pole
 und bei größeren Entfernungen ist die Rhumb-Linie nicht verwendbar.
 
-Die magnetische Abweichung zur Berechnung des magnetischen Verlaufs wird
-aus der globalen Datei ``magdec.bgl`` am Anfang der Messung übernommen.
-
 Die magnetische Abweichung von einem Flugplatz oder einer Navigationshilfe wird
 verwendet, wenn die Messung an einem solchen Punkt beginnt. Zusätzliche
 Informationen wie Kennung und Frequenz werden in diesem Fall ebenfalls
-in die Leitung eingefügt.
+in die Leitung eingefügt. Ansonsten wird die berechnete magnetische Deklination
+für die Umgebung verwendet.
 
-Sieh :ref:`magnetic-declination` für
-Hinweise zu diesem Thema.
+Sieh :ref:`magnetic-declination` für Hinweise zu diesem Thema.
 
 Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Messlinien auf
 der Karte ausgeblendet sind (Menü ``Ansicht`` -> ``Nutzerobjekte``). Der
@@ -321,25 +322,25 @@ versehen.
 
 .. _remove-distance-measurement:
 
-|Remove Distance measurement| Entfernungsmessung entfernen
+|Remove Distance measurement| Distanzmessung entfernen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entfernt die ausgewählte Zeile. Dieser Menüpunkt ist aktiv, wenn Sie mit
+Entfernt die ausgewählte Messlinie. Dieser Menüpunkt ist aktiv, wenn Sie mit
 der rechten Maustaste auf den Endpunkt einer Abstandsmesslinie (kleines
 Kreuz) klicken.
 
 .. _show-traffic-pattern:
 
-|Display Airport Traffic Pattern| Flugplatz-Verkehrsdiagramm anzeigen
+|Display Airport Traffic Pattern| Platzrunde anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flugplatz klicken.
-Zeigt einen Dialog an, der es ermöglicht, ein Flugplatz-Verkehrsdiagramm
+Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flugplatz klicken und
+zeigt einen Dialog an, der es ermöglicht, ein Platzrundediagramm
 auf der Karte anzupassen und anzuzeigen.
 
 Siehe :doc:`TRAFFICPATTERN`.
 
-Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Messlinien auf
+Beachten Sie, dass der Menüpunkt deaktiviert ist, wenn Platzrunden auf
 der Karte ausgeblendet sind (Menü ``Ansicht`` -> ``Nutzerobjekte``). Der
 Menüpunkt wird in diesem Fall mit dem Text ``auf der Karte versteckt``
 versehen.
@@ -349,7 +350,7 @@ versehen.
 |Remove Airport Traffic Pattern| Platzrunde entfernen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Aktiviert, wenn auf den Hotspot der Platzrunde (weißer
+Aktiviert, wenn auf dem aktiven Punkt der Platzrunde (weißer
 gefüllter Kreis an der Schwelle der Start- und Landebahn) geklickt wird,
 der durch einen anderen Mauszeiger angezeigt wird. Entfernt die Platzrunde aus der Karte.
 
@@ -357,8 +358,8 @@ Siehe auch :doc:`TRAFFICPATTERN`.
 
 .. _holding:
 
-|Display Holding| Warteschleife Anzeigen
-''''''''''''''''''''''''''''''''''''''''''
+|Display Holding| Zeige Warteschleife
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ermöglicht die Darstellung einer Warteschleife an beliebiger Stelle auf der
 Karte. Die Warteschleife kann auch an Navigationshilfen angehängt werden. Öffnet einen
@@ -371,10 +372,10 @@ Karte ausgeblendet sind (Menü ``Ansicht`` -> ``Nutzerobjekte``). Der
 Menüpunkt wird in diesem Fall mit dem Text ``auf der Karte versteckt``
 versehen.
 
-Warteschleife Entfernen
-''''''''''''''''''''''''''
+|Remove Holding|  Warteschleife Entfernen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Aktiviert, wenn auf den Hotspot geklickt wird (Warteschleifenursprung, weiß
+Aktiviert, wenn auf den aktiven Punkt geklickt wird (Warteschleifenursprung, weiß
 gefülltes Dreieck), der durch einen geänderten Mauszeiger angezeigt wird.
 Entfernt die Warteschleife von der Karte.
 
@@ -388,12 +389,11 @@ Siehe Kapitel :doc:`HOLD` für weitere Informationen.
 Zeigt mehrere rote Distanzkreise um die angeklickte Position herum an.
 Die Anzahl und Entfernung der Entfernungsringe kann im Dialogfeld
 ``Einstellungen`` auf der Seite ``Kartenanzeige`` geändert
-werden. Eine Beschriftung zeigt den Radius jedes Rings in Seemeilen an.
+werden. Eine Beschriftung zeigt den Radius jedes Rings in nautischen Meilen an.
 
-Die Breite aller Range Ringe kann im Dialog ``Einstellungen`` auf der
-Seite ``Kartendarstellung`` geändert werden.
+Die Distanz aller Ringe kann im Dialog ``Einstellungen`` auf :ref:`map` geändert werden.
 
-BDistanzkreises der Menüpunkt deaktiviert ist, wenn Entfernungsringe auf der
+Der Menüpunkt ist deaktiviert, wenn Entfernungsringe auf der
 Karte ausgeblendet sind (Menü ``Ansicht`` -> ``Nutzerobjekte``). Der
 Menüpunkt wird in diesem Fall mit dem Text ``auf der Karte versteckt``
 versehen.
@@ -405,7 +405,7 @@ versehen.
 
 Zeigt einen Ring um das angeklickte Funkfeuer (VOR oder NDB), der die
 Reichweite der Navigationshilfe anzeigt. Eine Beschriftung zeigt Kennung- und
-Frequenzangaben. Die Ringfarbe zeigt den Type der Navigationshilfe.
+Frequenzangaben. Die Ringfarbe zeigt den Typ der Navigationshilfe.
 
 Der Menüpunkt ist deaktiviert, wenn Entfernungsringe auf der
 Karte ausgeblendet sind (Menü ``Ansicht`` -> ``Nutzerobjekte``). Der
@@ -417,16 +417,9 @@ versehen.
 |Remove Range Ring| Distanzkreise Entfernen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entfernt die ausgewählten Ringe aus der Karte. Dieser Menüpunkt ist
+Entfernt die ausgewählten Distanzkreise aus der Karte. Dieser Menüpunkt ist
 aktiv, wenn Sie mit der rechten Maustaste auf den Mittelpunkt eines
 Entfernungsrings (kleiner Kreis) klicken.
-
-.. _remove-all-range-rings-and-distance-measurements:
-
-|Remove all Range Rings and Distance measurements| Entferne alle Entfernungsringe und Distanzmessungen.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Entfernt alle Ringe und Distanzmesslinien aus der Karte.
 
 .. _set-as-flight-plan-departure:
 
@@ -434,11 +427,11 @@ Entfernt alle Ringe und Distanzmesslinien aus der Karte.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dies ist aktiv, wenn sich der Klick auf einem Flugplatz, einer
-Flugplatz-Parkplatz oder einer Kraftstoffbox befindet. Er ersetzt
+Parkposition oder einer Tankstelle befindet. Er ersetzt
 entweder den aktuellen Flugplanstart oder fügt einen neuen Flug hinzu,
 wenn der Flugplan leer ist.
 
-Die standardmäßige Startbahn wird als Startposition verwendet, wenn das
+Eine beliebige Startbahn wird als Startposition verwendet, wenn das
 angeklickte Objekt ein Flugplatz ist. Die Flugplatz- und Parkposition
 ersetzt sowohl die aktuelle Abflug- als auch die Startposition, wenn
 eine Parkposition in einem Flugplatzdiagramm angeklickt wird.
@@ -457,12 +450,12 @@ hinzu, wenn der Flugplan leer ist.
 |Set as Flight Plan Alternate| Als Ausweichflugplatz hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dieser Menüpunkt ist aktiv, wenn Sie an einem Flugplatz angeklickt
+Dieser Menüpunkt ist aktiv, wenn Sie einem Flugplatz angeklickt
 haben. Wenn Sie diesen Punkt auswählen, wird der Flugplatz als
-Alternative zum aktuellen Flugplan hinzugefügt.
+Ausweichflugplatz zum aktuellen Flugplan hinzugefügt.
 
-Dem Flugplan können mehr als ein Ausweichflugplatz hinzugefügt werden. Die
-Flugstrecken zu den Ausweichflugplätzen beginnen alle vom Zielort
+Dem Flugplan können mehrere Ausweichflugplätze hinzugefügt werden. Die
+Flugstrecken zu den Ausweichflugplätzen beginnen alle vom Zielplatz
 aus.
 
 .. _add-position-to-flight-plan:
@@ -511,13 +504,8 @@ Ausweichflugplatz oder ein Zwischenziel sein.
 Ändert den Namen oder die Position eines benutzerdefinierten Wegpunktes.
 Siehe :doc:`EDITFPPOSITION`.
 
-Die Länge des Namens ist beim Speichern in einer PLN-Datei auf 10
-Zeichen begrenzt. Andere Flugplanformate haben stärkere Einschränkungen
-in Bezug auf Länge und zulässige Zeichen.
-
 Sie können die Koordinaten auch direkt bearbeiten, anstatt die
-Flugplanposition zu ziehen
-(:ref:`map-flight-plan-editing`).
+Flugplanposition zu ziehen (:doc:`MAPFPEDIT`).
 
 Siehe :doc:`COORDINATES` für eine Liste von
 Formaten, die vom Bearbeitungsdialog erkannt werden.
@@ -527,7 +515,7 @@ Formaten, die vom Bearbeitungsdialog erkannt werden.
 |Add Userpoint| Füge Nutzerpunkt hinzu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Fügt einen benutzerdefinierten Wegpunkt zu den Benutzerdaten hinzu.
+Fügt einen benutzerdefinierten Wegpunkt zu den Nutzerdaten hinzu.
 Einige Felder des Benutzerpunkt-Dialogs werden abhängig vom ausgewählten
 Kartenobjekt automatisch ausgefüllt.
 
@@ -548,7 +536,7 @@ Weitere Informationen finden Sie unter :ref:`userpoints-dialog-add`.
 |Edit Userpoint| Bearbeite Nutzerpunkt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Öffnet den Bearbeitungsdialog für einen Benutzerpunkt. Nur aktiviert,
+Öffnet den Bearbeitungsdialog für einen Nutzerpunkt. Nur aktiviert,
 wenn das ausgewählte Objekt ein Benutzerpunkt ist. Siehe :ref:`userpoints-dialog-edit`.
 
 .. _move-userpoint:
@@ -556,7 +544,7 @@ wenn das ausgewählte Objekt ein Benutzerpunkt ist. Siehe :ref:`userpoints-dialo
 |Move Userpoint| Verschiebe Nutzerpunkt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Verschiebt den Benutzerpunkt an eine neue Position auf der Karte. Nur
+Verschiebt den Nutzerpunkt an eine neue Position auf der Karte. Nur
 aktiviert, wenn das ausgewählte Objekt ein Benutzerpunkt ist.
 
 Mit einem Linksklick wird der Benutzerpunkt an die neue Position
@@ -575,11 +563,11 @@ Benutzerpunkt ist.
 
 .. _edit-log-entry:
 
-|Edit Log Entry| Logbucgeintrag bearbeiten
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Edit Log Entry| Logbuchgeintrag bearbeiten
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Aktiv, wenn Sie auf die blaue Großkreidelinie oder einen Flugplatz eines
-Logbucheintrags klicken.
+Aktiv, wenn Sie auf die blaue Großkreislinie oder den Flugplatz eines
+auf der Karte hervorgehobenen Logbucheintrages klicken.
 
 Ermöglicht das Bearbeiten des jeweiligen Logbucheintrags. Siehe
 :ref:`logbook-dialog-edit`.
@@ -591,7 +579,7 @@ Ermöglicht das Bearbeiten des jeweiligen Logbucheintrags. Siehe
 
 Zeigt den nächstgelegenen Flugplatz, die nächste Navigationshilfe, den nächsten Nutzerpunkt,
 Online-Client oder Online-Center im Suchdialog an. Die aktuellen
-Suchparameter werden zurückgesetzt.
+Suchparameter im entsprechenden Reiter werden zurückgesetzt.
 
 .. _set-center-for-distance-search:
 
@@ -610,9 +598,10 @@ Distanzsuche ist hervorgehoben duch ein |Distance Search Symbol| Symbol.
 Legt die aktuell sichtbare Kartenansicht als Heimansicht fest. Die Mitte
 des Home-Bereichs wird hervorgehoben durch ein |Home Symbol| Symbol.
 
+Sie können mittels Hauptmenü mit ``Karte`` -> ``Gehe zur Heimposition``
+die Ansicht aktivieren.
+
 .. |Hand Cursor| image:: ../images/cursorhand.jpg
-.. |Tooltip| image:: ../images/tooltip.jpg
-.. |Tooltip Airspace| image:: ../images/tooltipairspace.jpg
 .. |Clear Selection| image:: ../images/icon_clearselection.png
 .. |Show Information| image:: ../images/icon_globals.png
 .. |Show Procedures| image:: ../images/icon_approach.png
@@ -623,6 +612,7 @@ des Home-Bereichs wird hervorgehoben durch ein |Home Symbol| Symbol.
 .. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
 .. |Remove Airport Traffic Pattern| image:: ../images/icon_trafficpatternoff.png
 .. |Display Holding| image:: ../images/icon_hold.png
+.. |Remove Holding| image:: ../images/icon_holdoff.png
 .. |Show Range Rings| image:: ../images/icon_rangerings.png
 .. |Show Navaid range| image:: ../images/icon_navrange.png
 .. |Remove Range Ring| image:: ../images/icon_rangeringoff.png

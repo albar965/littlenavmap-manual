@@ -1,6 +1,4 @@
-.. _search-dock-window-procs:
-
-|Search| Suchdockfenster - Prozeduren
+|Search| Prozedursuche
 -------------------------------------
 
 Der Reiter ``Prozeduren`` ermöglicht die Vorschau und das
@@ -28,7 +26,7 @@ Klicken Sie mit der rechten Maustaste auf eine Prozedur, um weitere
 Optionen im Kontextmenü zu erhalten, wie z.B. die Zentrierung der Karte
 auf die Prozedur oder das Hinzufügen zu Ihrem Flugplan.
 
-Verwenden Sie das Kontextmenü der Flugplattentabelle, um Prozeduren wie
+Verwenden Sie das Kontextmenü der Flugplantabelle, um Prozeduren wie
 jeden anderen Wegpunkt zu entfernen. Siehe :ref:`delete-selected-legs`.
 
 Prozedurabschnitte sind rot markiert, wenn ein oder mehrere Navigationshilfen
@@ -54,7 +52,7 @@ werden.
    Fluganweisung für Prozedurabschnitte.
 -  ``Kurs °M``: Magnetischer Kurs für ein Teilstück.
 -  ``Dist./Zeit``: Entfernung der Flugzeit für eine Etappe. Warteschleifen können
-   eine Etappenzeit in Minuten oder eine Etappenlänge in Seemeilen
+   eine Etappenzeit in Minuten oder eine Etappenlänge in nautischen Meilen
    haben.
 -  ``Ident``: Kennung des anfänglichen Fixes oder Name der Prozedur.
    Name für Abschnitte festlegen.
@@ -83,7 +81,7 @@ werden.
          Beispiel: ``/B250``.
 
 -  ``Bemerkungen``: Zeigt die Überflug-, Drehrichtungsanzeige oder die
-   zugehörige Navigation für ein Operationsbein an.
+   zugehörige Navigation für einen Abschnitt an.
 
 Obere Schaltflächen
 ~~~~~~~~~~~~~~~~~~~
@@ -159,7 +157,7 @@ Text und Funktionalität dieses Menüpunktes hängen von der gewählten
 Prozedurart ab und ob der Flugplatz der Prozedur bereits der Start-
 oder Zielflugplatz des aktuellen Flugplans ist.
 
-Verwenden Sie das Kontextmenü der Flugplattentabelle, um Prozeduren zu
+Verwenden Sie das Kontextmenü der Flugplantabelle, um Prozeduren zu
 entfernen. Siehe :ref:`delete-selected-legs`.
 
 Wenn ein Übergang ausgewählt wird, wird auch die entsprechende
@@ -186,9 +184,9 @@ den Flugplan aufgenommen.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt detaillierte Informationen für den Flugplatz im Dockfenster
-``Information`` an.
+``Informationen`` an.
 
-Weitere Informationen finden Sie im Fenster :ref:`information-dock-window`.
+Weitere Informationen finden Sie im Fenster :doc:`INFO`.
 
 .. _show-on-map-procs:
 

@@ -1,6 +1,4 @@
-.. _search-dock-window:
-
-|Search| Dockfenster Suche
+|Search| Suche
 --------------------------
 
 Das Dockfenster für die Suche enthält mehrere Reiter mit
@@ -18,9 +16,11 @@ Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige
 aufweist. Auf diese Weise können Sie herausfinden, warum eine Suche
 nicht die erwarteten Ergebnisse liefert.
 
-**Wenn Sie nicht oder gar nicht die erwarteten Ergebnisse erhalten,
-verwenden Sie den Menüpunkt ``Suche zurücksetzen``, Schaltfläche Reset
-Search oder drücken Sie ``Strg+R``, um alle Suchkriterien zu löschen.**
+.. note::
+
+           Wenn Sie nicht oder gar nicht die erwarteten Ergebnisse erhalten,
+           verwenden Sie den Menüpunkt ``Suche zurücksetzen``, Schaltfläche Reset
+           Search oder drücken Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 
 Filter werden durch verschiedene Kontrollen definiert, die meist
 selbsterklärend sind. Nur Textfilter und die Kontrollkästchen mit drei
@@ -32,7 +32,7 @@ erfüllt sein müssen (``und`` Operator). Alle Filter mit Ausnahme des
 Entfernungssuchfilters werden sofort angewendet. Die Entfernungssuche
 wird bei jeder Änderung mit einer kurzen Verzögerung durchgeführt.
 
-**Die Eingabe von drei oder vier Zeichen im Feld ``ICAO Code`` auf dem
+**Die Eingabe von drei oder vier Zeichen im Feld** ``ICAO Code`` **auf dem
 Reiter Flugplatzsuche löst eine Schnellsuche aus, die alle
 anderen Filter ignoriert und die Flugplätze anzeigt, die mit diesem
 teilweisen oder vollständigen ICAO-Code übereinstimmen.**
@@ -91,8 +91,8 @@ einfachen räumlichen Suche kombinieren.
 
 Um diese Suche zu ermöglichen, muss das Kontrollkästchen ``Entfernung``
 aktiviert sein. Das Ergebnis wird nur Flugplätze oder Navigationshilfen beinhalten,
-die innerhalb der angegebenen minimalen und maximalen Reichweite von
-Seemeilen vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell
+die innerhalb der angegebenen minimalen und maximalen Reichweite an
+nautischen Meilen vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell
 nach einem Ziel suchen, das sich in der Reichweite Ihres Flugzeugs
 befindet und andere Kriterien wie beleuchtete Start- und Landebahnen und
 Kraftstoff erfüllt.
@@ -111,8 +111,8 @@ Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 
 .. figure:: ../images/complexsearch.jpg
 
-        Bild oben Eine komplexe Distanzsuche: Findet alle Flugplätze in
-        einer Entfernung zwischen 200 und 400 Seemeilen von Frankfurt (EDDF).
+        Eine komplexe Distanzsuche: Findet alle Flugplätze in
+        einer Entfernung zwischen 200 und 400 nautischen Meilen von Frankfurt (EDDF).
         Flugplätze sollten eine Bewertung von mehr als 0 haben und mindestens
         eine beleuchtete Start- und Landebahn haben. Militärische und
         geschlossene Flugplätze sind ausgeschlossen. Die resultierenden Flugplätze
@@ -135,7 +135,7 @@ Alle ausgewählten Elemente in der Tabellenansicht werden auf der Karte
 durch einen schwarz/gelben Kreis hervorgehoben. Weitere Informationen
 finden Sie unter :ref:`highlights`.
 
-Verwenden Sie ``Shift+Klick`` oder ``Strg+Klick``, um zwei oder mehr
+Verwenden Sie ``Umschalt+Klick`` oder ``Strg+Klick``, um zwei oder mehr
 Elemente auszuwählen (Mehrfachauswahl).
 
 .. _table-view:
@@ -150,7 +150,7 @@ Manipulation:
    Alle Ergebniszeilen auswählen.
 -  **Klicken Sie auf eine Spaltenüberschrift:** Sortieren aufsteigend
    oder absteigend (nur für Suchergebnistabellen - nicht für
-   Flugplattentabelle).
+   Flugplantabelle).
 -  **Klicken und ziehen Sie auf die Spaltenüberschrift:**
    Spaltenreihenfolge ändern.
 -  **Doppelklicken Sie auf den Spaltenrand:** Passen Sie die
@@ -158,7 +158,7 @@ Manipulation:
 -  Klicken und ziehen Sie auf den Spaltenrand: Spaltenbreite
    ändern.
 -  Klicken Sie in den leeren Bereich unter allen Zeilen: Alle
-   Einträge abwählen und Highlights auf der Karte entfernen.
+   Einträge abwählen und Hervorhebungen auf der Karte entfernen.
 
 Dies gilt für alle Tabellensichten im Programm und teilweise auch für
 die Baumansicht der Prozedurensuche.
@@ -177,7 +177,7 @@ ausgewählt wird.
 
         Die Navigationshilfensuche ist auf die ICAO-Region* ``LI``
         (Italien) und die Stationen VOR, VORTAC und TACAN beschränkt, die eine
-        Reichweite von 100 oder mehr Seemeilen haben.
+        Reichweite von 100 oder mehr nautischen Meilen haben.
 
 .. _mouse-clicks-0:
 
@@ -186,7 +186,7 @@ Mausklicks
 
 Ein Doppelklick auf einen Eintrag in der Tabellenansicht zeigt entweder
 ein Flugplatzdiagramm oder zoomt auf die Navigationshilfe oder ein anderes
-Kartenobjekt. Zusätzlich werden Details im Dockfenster ``Information``
+Kartenobjekt. Zusätzlich werden Details im Dockfenster ``Informationen``
 angezeigt. Ein einfacher Klick wählt ein Objekt aus und markiert es auf
 der Karte mit einem schwarz/gelben Kreis.
 
@@ -213,7 +213,7 @@ Ansicht der Suchergebnistabelle an.
 Entfernt alle Einträge in der Tabelle und entfernt alle hervorgehobenen
 Kreise aus der Karte.
 
-.. _help:
+.. _search-help:
 
 |Help| Hilfe
 ^^^^^^^^^^^^
@@ -246,7 +246,7 @@ Die verfügbaren Menüpunkte hängen von dem Reiter Suche ab.
 |Show Information| Zeige Informationen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleiche wie :ref:`map-context-menu`.
+Das Gleiche, wie :ref:`map-context-menu`.
 
 .. _show-procedures:
 
@@ -373,7 +373,7 @@ Benutzerfunktion auf der Karte ausgeblendet ist (Menü ``Ansicht`` ->
 |Append Position to Flight Plan| Position an den Flugplan anhängen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleich wie :ref:`map-context-menu`.
+Das Gleiche, wie :ref:`map-context-menu`.
 
 .. _copy:
 
@@ -415,7 +415,7 @@ den Standard zurück.
 |Set Center for Distance Search| Center für die Entfernungssuche einstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleich wie :ref:`map-context-menu`.
+Das Gleiche, wie :ref:`map-context-menu`.
 
 .. |Search| image:: ../images/icon_searchdock.png
 .. |Menu Button| image:: ../images/icon_menubutton.png

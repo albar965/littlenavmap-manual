@@ -1,5 +1,3 @@
-.. _files:
-
 Dateien
 -------
 
@@ -15,23 +13,25 @@ in folgenden Verzeichnisen gespeichert:
 -  macOS
    ``/var/folders/ZUFÄLLIGER_VERZEICHNIS_NAME/abarthel-little_navmap.log``
 
-Es werden die drei letzten Log-Dateien behalten und zuwischen ihnen beim
-Start gewechselt. Folgende drei Dateien können gefunden werden:
+Das Programm führt drei Logdateien und dreht wechselt diese, wenn
+die Dateigröße von 10 MB überschritten wird. So können Sie bis zu drei Dateien finden:
 
-``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` and
+``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` und
 ``abarthel-little_navmap.log.2``.
 
-Beim Melden eines Absturtzes ist darauf zu achten, dass die richtige
-Log-Datei an die Email angehängt wird. Das Programm sollte bis zum
-Senden der Mail nicht neugestartet werden, da es sein könnte, dass die
-relevante Log-Datei dabei überschrieben wird. Fall Sie unsicher sind,
-welche Datei sie anhängen sollen, senden Sie alle Dateien in einem
-Zip-Archiv.
+Senden Sie die Protokolldatei ``abarthel-little_navmap.log``, wenn Sie einen Fehler melden möchten. Alle drei werden in einigen Fällen benötigt, aber das Senden der ersten ist oft ausreichend.
+
+**Bitte komprimieren Sie die Protokolldateien mit ZIP, wenn Sie diese per E-Mail senden.**
 
 .. _configuration:
 
 Konfiguration
 ~~~~~~~~~~~~~
+
+Die Dateien verwenden den Windows- ``INI`` Stil, die Gruppen in
+eckigen Klammern und Schlüssel/Wert-Paare ``key=value`` benutzen. Siehe
+`hier <https://de.wikipedia.org/wiki/Initialisierungsdatei>`__ für weitere
+Informationen über diese Art von Konfigurationsdateien.
 
 Alle Konfigurationsdateien für meine Programme werden in folgenden
 Verzeichnissen gespeichert:
@@ -39,46 +39,71 @@ Verzeichnissen gespeichert:
 -  Windows: ``C:\Benutzer\BENUTZERNAME\AppData\Roaming\ABarthel``
 -  Linux und macOS: ``$HOME/.config/ABarthel``
 
--  ``little_navmap.ini``: INI-Style Konfigurationsdatei. Textdatei.
+-  ``little_navmap.ini``: INI-Konfigurationsdatei. Textdatei.
 -  ``little_navmap.history``: Enthält die Kartenpositionshistorie.
    Binärdatei.
--  ``little_navmap.track``: Enthält die Flugzeugspur. Binärdatei.
+-  ``little_navmap.track``: Enthält die Flugzeugpfad. Binärdatei.
+-  ``little_navmap_profile.track``: Benutzerflugzeugpfad für das
+   Höhenprofil. Binärdatei.
 
 Drei weitere Konfigurationsdateien werden für benutzerdefinierte Farben
-und Styles erstellt:
+und Stile erstellt:
 
--  ``little_navmap_fusionstyle.ini``: INI-Style Konfigurationsdatei für
+-  ``little_navmap_fusionstyle.ini``: INI-Konfigurationsdatei für
    Anpassungen der Oberflächenfarbe für den ``Fusion`` Style.
--  ``little_navmap_nightstyle.ini``: INI-Style Konfigurationsdatei für
+-  ``little_navmap_nightstyle.ini``: INI-Konfigurationsdatei für
    Anpassungen der Oberflächenfarbe für den ``Night`` Style.
--  ``little_navmap_mapstyle.ini``: INI-Style Konfigurationsdatei.
+-  ``little_navmap_mapstyle.ini``: INI-Konfigurationsdatei.
    Textdatei. Enthält Anpassungen der Kartenanzeige.
 
 Siehe :doc:`CUSTOMIZE` für mehr Informationen.
 
 .. note::
 
-   *Little Navmap* wird diese Dateien unter Umständen bei einer Aktualisierung zurücksetzen.
+   *Little Navmap* wird diese Dateien unter Umständen bei einer Aktualisierung
+   zurücksetzen.
    Vor dem Zurücksetzen wird immer eine Sicherheitskopie erstellt.
    Dies wird üblicherweise in der Liste der Änderungen angekündigt.
 
-Der Festplattenzwischenspeicher, der für alle heruntergeladenen
-Onlinekartenteile verwendet wird, ist hier zu finden:
+Festplattenzwischenspeicher
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Der Zwischenspeicher, der für alle Onlinekarten verwendet wird, ist hier zu finden:
 
 -  Windows: ``C:\Benutzer\BENUTZERNAME\AppData\Local\.marble\data``
 -  Linux und macOS: ``$HOME/.local/share/marble``
 
-Die Szeneriebibliotheksdatenbank ist in diesem Verzeichnis gespeichert:
+Sie können den Zwischenspeicher manuell löschen, um Platz zu sparen, wenn *Little Navmap* nicht läuft.
 
-``...\ABarthel\little_navmap_db``
+Datenbanken
+~~~~~~~~~~~~~~
 
-Es können bis zu sechs Dateien, abhängig welche Simulatoren und
-Szeneriebibliotheken installiert sind, enthalten sein.
+Die Datenbanken werden in diesem Verzeichnissen gespeichert:
+
+-  Windows:
+   ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
+-  Linux und macOS: ``$HOME/.config/ABarthel/little_navmap_db``
 
 Alle diese Datenbanken sind `SQLite <http://sqlite.org>`__ Dateien
 welche beispielsweise mit dem `DB Browser for
 SQLite <https://github.com/sqlitebrowser/sqlitebrowser/releases>`__
 geöffnet werden können.
+
+.. warning::
+
+   Diese Dateien dürfen nicht verschoben, umbenannt oder geändert werden, während
+   *Little Navmap* läuft.
+
+   Der Navigraph *FMS Database Manager* darf nicht dazu verwendet werden,
+   die Datenbanken zu aktualisieren, während *Little Navmap* läuft.
+
+   *Little Navmap* kann abstürzen oder die Aktualisierung kann fehlschlagen.
+
+Szeneriebibliothek
+^^^^^^^^^^^^^^^^^^^
+
+Die Anzahl der Dateien hängt davon ab, welche Simulatoren Sie installiert haben
+und welche Szenerienbibliotheken Sie geladen haben.
 
 Die Dateien sind:
 
@@ -90,21 +115,12 @@ Die Dateien sind:
 -  ``little_navmap_p3dv4.sqlite``: Prepar3D v4
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
 -  ``little_navmap_navigraph.sqlite``: Navigraph Navigationsdatenbank.
-   Kann entweder die mitgelieferte oder eine vom Navigraph *FMS DATA
-   MANAGER* installierte Datenbank sein.
-
-.. warning::
-
-   Diese Dateien dürfen nicht verschoben, umbenannt oder geändert werden, während *Little Navmap* läuft.
-
-   Der Navigraph FMS Database Manager darf nicht dazu verwendet werden, die Datenbanken zu aktualisieren,
-   während *Little Navmap* läuft.
-
-   *Little Navmap* kann abstürzen oder die Aktualisierung kann fehlschlagen.
+   Kann entweder die mitgelieferte oder eine vom Navigraph
+   *FMS Data Manager* installierte Datenbank sein.
 
 .. _files-userdata:
 
-Benutzerdaten
+Nutzerpunkte
 ^^^^^^^^^^^^^^^
 
 Die Datei ``little_navmap_userdata.sqlite`` enthält die
@@ -118,19 +134,18 @@ kopieren, wenn Sie etwas falsch gemacht haben.
 
 .. _user-airspaces:
 
-Benutzerlufträume
+Nutzerlufträume
 ^^^^^^^^^^^^^^^^^^^^^
 
 Die Datei ``little_navmap_userairspace.sqlite`` enthält die
 benutzerdefinierten Lufträume, die über :ref:`load-user-airspaces` gelesen werden.
 
-Die Sicherung erfolgt auf die gleiche Weise wie bei den Benutzerdaten.
+Die Sicherung erfolgt auf die gleiche Weise wie bei den Nutzerpunkten.
 
 .. _files-logbook:
 
 Logbuch
 ^^^^^^^^^^^^^^^
-
 
 Die Datei ``little_navmap_logbook.sqlite`` wird zum Speichern von
 Logbucheinträgen verwendet.
@@ -146,15 +161,17 @@ Weitere Dateien wie
 
 -  ``little_navmap_compiling.sqlite``,
 -  ``little_navmap_compiling.sqlite-journal``,
--  ``little_navmap_temp.sqlite`` and
--  ``little_navmap_temp.sqlite-journal``
+-  ``little_navmap_temp.sqlite``,
+-  ``little_navmap_temp.sqlite-journal``,
+-  ``little_navmap_onlinedata.sqlite`` or
+-  ``little_navmap_onlinedata.sqlite-journal``
 
-sind Rückstände von temporären Prozessen und können ignoriert werden.
+sind Ergebnisse von temporären Prozessen und können ignoriert werden.
 
 .. _annotated-pln:
 
-Flugzeugleistungsdateiformat
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Kommentiertes Flugplandateiformat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* verwendet das Flugplanformat
 FSX/P3D `XML <https://en.wikipedia.org/wiki/XML>`__. Der XML-Standard
@@ -167,7 +184,7 @@ befindet sich eine einfache Schlüssel/Werteliste, die durch
 ``|`` Symbole getrennt ist.
 
 *Little Navmap* speichert Metadaten wie Version und Datum in der Datei,
-was bei der Fehlermeldung oder bei zukünftigen Erweiterungen hilft.
+was bei Fehlermeldungen oder bei zukünftigen Erweiterungen hilft.
 
 Die wichtigsten Daten sind Ausweichflugplätze und
 Prozedurinformationen, die es dem Programm ermöglichen, SIDs, STARs,
@@ -181,43 +198,43 @@ ein Programm die kommentierten Dateien nicht lesen kann.
    :caption: Flightplan Example snippet
    :name: flightplan-example
 
-       <?xml version="1.0" encoding="UTF-8"?>
-       <SimBase.Document Type="AceXML" version="1,0">
-           <Descr>AceXML Document</Descr>
-           <!-- LNMDATA
-                _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
-                aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
-                aircraftperfname=Boeing 737-200|
-                aircraftperftype=B732|
-                approach=LITSI|
-                approacharinc=D34|
-                approachdistance=11.9|
-                approachrw=34|
-                approachsize=9|
-                approachsuffix=|
-                approachtype=VORDME|
-                cycle=1811|
-                navdata=NAVIGRAPH|
-                sidappr=MARE5W|
-                sidapprdistance=28.2|
-                sidapprrw=22|
-                sidapprsize=5|
-                simdata=XP11|
-                star=ASTU2D|
-                stardistance=128.4|
-                starrw=34|
-                starsize=5|
-                transition=ZAK|
-                transitiondistance=17.5|
-                transitionsize=3|
-                transitiontype=F
-       -->
-           <FlightPlan.FlightPlan>
+   <?xml version="1.0" encoding="UTF-8"?>
+   <SimBase.Document Type="AceXML" version="1,0">
+       <Descr>AceXML Document</Descr>
+       <!-- LNMDATA
+            _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
+            aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
+            aircraftperfname=Boeing 737-200|
+            aircraftperftype=B732|
+            approach=LITSI|
+            approacharinc=D34|
+            approachdistance=11.9|
+            approachrw=34|
+            approachsize=9|
+            approachsuffix=|
+            approachtype=VORDME|
+            cycle=1811|
+            navdata=NAVIGRAPH|
+            sidappr=MARE5W|
+            sidapprdistance=28.2|
+            sidapprrw=22|
+            sidapprsize=5|
+            simdata=XP11|
+            star=ASTU2D|
+            stardistance=128.4|
+            starrw=34|
+            starsize=5|
+            transition=ZAK|
+            transitiondistance=17.5|
+            transitionsize=3|
+            transitiontype=F
+   -->
+       <FlightPlan.FlightPlan>
 
-       ...
+   ...
 
-           </FlightPlan.FlightPlan>
-       </SimBase.Document>
+       </FlightPlan.FlightPlan>
+   </SimBase.Document>
 
 .. _aircraft-performance-file:
 
@@ -225,22 +242,22 @@ Flugzeugleistungsdateiformat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die ``lnmperf`` Dateien sind einfache Textdateien und verwenden den
-Windows- ``INI`` Stil, der Gruppen in eckigen Klammern und
-``key=value`` Zeilen enthält. Weitere Informationen über diese Art von
+Windows- ``INI`` Stil, der Gruppen in eckigen Klammern und Schlüssel/Wert-Paare
+``key=value`` enthält. Weitere Informationen über diese Art von
 Konfigurationsdateien finden Sie
-unter `hier <https://en.wikipedia.org/wiki/INI_file>`__.
+unter `hier (Wikipedia)<https://en.wikipedia.org/wiki/INI_file>`__.
 
 Geschwindigkeitseinheiten sind immer Knoten und Fuß pro Minute.
-Kraftstoffeinheiten sind Gallonen oder lbs, abhängig vom Wert von
-``FuelAsVolume``. ``ContingencyFuelPercent`` ist ein Prozentsatz, der
-dem Fahrkraftstoff hinzugefügt wird.
+Kraftstoffeinheiten sind Gallonen oder lbs, abhängig vom Wert des
+``FuelAsVolume`` Schlüssels. ``ContingencyFuelPercent`` ist ein Prozentsatz, der
+dem Flugkraftstoff hinzugefügt wird.
 
 Die ``Beschreibung`` muss in doppelte Anführungszeichen gesetzt werden.
 ``\n`` werden als Zeilenumbrüche interpretiert.
 
 Beachten Sie, dass Kommentare, die mit ``#`` oder ``;`` beginnen, beim
-Speichern der Datei in *Little Navmap* ersetzt werden. Du kannst einen
-Dummy Key wie ``Comment1=my remarks`` hinzufügen, um dies zu umgehen.
+Speichern der Datei in *Little Navmap* ersetzt werden. Ein Schlüssel als Platzhalter,
+wie ``Kommentar=Meine Anmerkungen`` kann benutzt werden, um dies zu umgehen.
 Unbekannte Schlüssel werden beim Speichern nicht ersetzt.
 
 .. code-block:: ini

@@ -1,5 +1,3 @@
-.. _quick-overview:
-
 Schnellübersicht
 ----------------
 
@@ -10,12 +8,12 @@ Schnellübersicht
 
 .. figure:: ../images/contextmenus.jpg
 
-      Die drei wichtigsten Kontextmenüs welche unter anderem
-      zum erstellen eines Flugplans gebraucht werden.
+      Die wichtigsten Kontextmenüs welche unter anderem
+      zum Erstellen eines Flugplans gebraucht werden.
 
 .. figure:: ../images/help.jpg
 
       Wo Sie Hilfe und weitere Informationen erhalten können.
-      Tooltips, Statusleiste und Hilfebuttons sind rot markiert.
+      Tooltips, Statusleiste und Hilfeschaltflächen sind rot markiert.
 
 

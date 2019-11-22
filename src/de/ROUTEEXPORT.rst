@@ -1,43 +1,40 @@
-.. _flight-plan-online-export:
-
 Flugplan Online Export
 ----------------------
 
 Dieser Dialog erscheint beim Export eines Flugplans für die
-Online-Netzwerk-Clients über die Exportmenüpunkte `FPL (IvAp or
-X-IvAp) <MENUS.html#flight-plan-formats-ivap>`__ oder `VFP
-(vPilot) <https://www.vatsim.net/pilots/software>`__.
+Online-Netzwerk-Clients über :ref:`flight-plan-formats-ivap`,
+:ref:`flight-plan-formats-xivap` oder
+:ref:`flight-plan-formats-vpilot`.
 
 Einige Eingabefelder können je nach Format ausgeblendet sein.
 
-Beachten Sie, dass IvAp und X-IvAp ein etwas anderes Format verwenden.
+Beachten Sie, dass IvAp und X-IvAp jeweils ein etwas anderes Format verwenden.
 
-Felder, die Informationen enthalten, die nicht aus dem aktuellen
-Flugplan extrahiert werden können, werden gespeichert zwischen Sitzungen
+Felder, die Informationen enthalten, welche nicht aus dem aktuellen
+Flugplan extrahiert werden können, werden zwischen Sitzungen gespeichert
 (z.B. ``Pilot in command`` oder ``Equipment``).
 
 Andere Eingabefelder in diesem Dialog werden aus dem aktuellen Flugplan
-extrahiert. Diese Felder können manuell angepasst werden und werden
+heraus gefüllt. Diese Felder können manuell angepasst werden und werden
 nicht zwischen den Sitzungen gespeichert. Das sind:
 
 -  ``Flugregeln``: Aus dem aktuellen Flugplan. ``IFR`` oder ``VFR`` für
    VFP und ``I`` oder ``V`` für FPL. Bei Bedarf manuell ändern.
--  ``Flugzeugtyp``: Aus der aktuellen Flugzeugleistung
-   (:doc:`AIRCRAFTPERF`).
--  :doc:`FLIGHTPLAN`).
+-  ``Flugzeugtyp``: Aus der aktuellen Flugzeugleistung (:doc:`AIRCRAFTPERF`).
+-  ``Abflug``: Erster Wegpunkt im Flugplan.
 -  ``Ziel``: Letzter Wegpunkt im Flugplan.
 -  ``Route``: Erzeugt aus den Flugplan-Wegpunkten, Luftstraßen, SID und
-   STAR. (:doc:`ROUTEDESCR`).
+   STAR (:doc:`ROUTEDESCR`).
 -  ``Reiseflughöhe``: Aus dem Flugplan übernommen. Reiseflughöhe in Fuß.
--  ``Wahre Fluggeschwindigkeit``: Ausgehend von der aktuellen
+-  ``Wahre Luftgeschw.``: Gefüllt ausgehend von der aktuellen
    Reisegeschwindigkeit der Flugzeugleistung.
--  ``Abfahrtszeit``: Verwendet die aktuelle UTC-Zeit als Standard. Bei
+-  ``Abflugzeit``: Verwendet die aktuelle UTC-Zeit als Standard. Bei
    Bedarf anpassen.
--  ``Aktuell``: Tatsächliche Abflugzeit. Verwendet die gleiche
+-  ``Tatsächliche``: Tatsächliche Abflugzeit. Verwendet die gleiche
    Standardzeit wie oben. Bei Bedarf anpassen.
--  ``en-route``: Reisezeit, berechnet aus dem Flugplan und der aktuellen
+-  ``Unterwegs``: Reisezeit, berechnet aus dem Flugplan und der aktuellen
    Flugzeugleistung.
--  ``Dauer``: Verwendet die gleiche Standardeinstellung wie oben. Bei
+-  ``Ausdauer``: Verwendet die gleiche Standardeinstellung wie oben. Bei
    Bedarf anpassen.
 
 Schaltflächen

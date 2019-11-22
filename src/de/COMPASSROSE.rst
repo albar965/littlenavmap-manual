@@ -1,6 +1,4 @@
-.. _compass-rose:
-
-|Compass Rose Icon| Kompass Rose
+|Compass Rose Icon| Kompassrose
 ------------------------------------
 
 Die Kompassrose zeigt den wahren Norden, den magnetischen Norden, den
@@ -32,30 +30,31 @@ werden können.
         Einstellungen für die Anzeige der Kompassrose im
         Optionsdialog.
 
-Indikatoren
+Anzeige
 ~~~~~~~~~~~
 
 +-----------------------------------+-----------------------------------+
 | |True North|                      | Geografischer Norden.             |
 +-----------------------------------+-----------------------------------+
-| |Magnetic North|                  | Magnetisch Nord.                  |
+| |Magnetic North|                  | Magnetisch Norden.                |
 +-----------------------------------+-----------------------------------+
 | |Distance Circles|                | Abstandskreise und Markierungen   |
 |                                   | vom Benutzerflugzeug, falls       |
-|                                   | verbunden.                        |
+|                                   | mit dem Simulator verbunden.      |
 +-----------------------------------+-----------------------------------+
 | |Aircraft Track|                  | Die durchgezogene Linie zeigt die |
-|                                   | Flugbahn in magnetischen Graden   |
-|                                   | an, wenn sie verbunden ist.       |
+|                                   | Flugbahn in Grad magnetisch       |
+|                                   | an, wenn verbunden.               |
 +-----------------------------------+-----------------------------------+
 | |Aircraft Heading|                | Die gestrichelte Linie zeigt den  |
-|                                   | Kurs des Flugzeugs an, wenn es    |
-|                                   | verbunden ist.                    |
+|                                   | Kurs des Flugzeugs an, wenn       |
+|                                   | verbunden.                        |
 +-----------------------------------+-----------------------------------+
-| |Flight Plan Leg Course|          | Das Magenta-Liniensegment zeigt   |
+| |Flight Plan Leg Course|          | Das magentafarbene                |
+|                                   | Liniensegment zeigt               |
 |                                   | den Kurs zum nächsten Wegpunkt    |
-|                                   | der aktiven Flugplanetappe.       |
-|                                   | Versteckt, wenn kein Flugplan     |
+|                                   | des aktiven Flugplanabschnittes.  |
+|                                   | Nicht gezeigt, wenn kein Flugplan |
 |                                   | geladen ist.                      |
 +-----------------------------------+-----------------------------------+
 | |Crab Angle|                      | Schiebewinkel. Zeigt die          |

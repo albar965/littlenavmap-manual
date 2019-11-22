@@ -1,5 +1,3 @@
-.. _little-navmap-legend:
-
 Kartenlegende
 -------------
 
@@ -9,7 +7,7 @@ Dialog ``Einstellungen`` auf der Seite ``Einheiten`` auf
 imperial oder metrisch eingestellt werden.
 
 Farben, Größen und Textbeschriftungen einiger Kartenelemente können im
-Dialog ``Einstellungen`` auf der Seite ``Kartendarstellung``
+Dialog ``Einstellungen`` auf :ref:`map-display`
 geändert werden. Diese Legende zeigt die Standardwerte.
 
 Kurse und Richtungen werden mit ``°T`` für den wahren Kurs oder ``°M``
@@ -18,16 +16,18 @@ für den magnetischen Kurs ergänzt.
 Mausklicks
 ~~~~~~~~~~
 
-Ein Klick in der Karte auf die aktive Stelle eines Objektes wie z.B.
-eines Entfernungsrings entfernt es. Der Mauszeiger verwandelt sich in ein
-Handsymbol, um einen aktiven Punkt anzuzeigen, der es ermöglicht, ein
-Objekt durch Anklicken oder Entfernen bzw. Bearbeiten im Kontextmenü zu
-entfernen. Die Anzeige einer Kartenfeatureklasse wird aktiviert, wenn
-Sie diese Mausklicks verwenden. Ein ``Shift+Klick`` ermöglicht z.B. die
+Die Anzeige einer Kartenfeatureklasse wird aktiviert, wenn
+Sie diese Mausklicks verwenden. Ein ``Umschalt+Klick`` ermöglicht z.B. die
 Anzeige von Distanzkreisen.
 
 Sie können die Anzeige im Menü ``Ansicht`` -> ``Nutzerobjekte``
 oder in der Symbolleiste aktivieren oder deaktivieren.
+
+Ein Klick in der Karte auf die aktive Stelle eines Objektes wie z.B.
+eines Entfernungsrings entfernt es. Der Mauszeiger verwandelt sich in ein
+Handsymbol, um einen aktiven Punkt anzuzeigen, der es ermöglicht, ein
+Objekt durch Anklicken oder Entfernen bzw. Bearbeiten im Kontextmenü zu
+entfernen.
 
 +-----------------------------------+-----------------------------------+
 | Maus                              | Beschreibung                      |
@@ -44,7 +44,7 @@ oder in der Symbolleiste aktivieren oder deaktivieren.
 |                                   | Reichweitenringen für Funkfeuer.  |
 +-----------------------------------+-----------------------------------+
 | ``Strg+Klick``                    | Startet eine Messung mit          |
-|                                   | Rhumb-Linie oder löscht eine      |
+|                                   | Loxodrome oder löscht eine        |
 |                                   | Messung.                          |
 +-----------------------------------+-----------------------------------+
 | ``Alt+Klick``                     | Startet eine Messung mit          |
@@ -77,8 +77,8 @@ oder in der Symbolleiste aktivieren oder deaktivieren.
 Tastenkombinationen
 ~~~~~~~~~~~~~~~~~~~
 
-Sie müssen das Kartenfenster aktivieren (d.h. anklicken), bevor Sie die
-Tastenkombinationen verwenden können.
+Sie müssen das Kartenfenster aktivieren (d.h. anklicken oder ``F2`` drücken),
+bevor Sie die Tastenkombinationen verwenden können.
 
 +-----------------------------------+-----------------------------------+
 | Tasten                            | Beschreibung                      |
@@ -92,7 +92,7 @@ Tastenkombinationen verwenden können.
 |                                   | vergrößern oder verkleinern.      |
 +-----------------------------------+-----------------------------------+
 | ``Alt+Links`` and ``Alt+Rechts``  | In der Kartenpositionshistorie    |
-|                                   | vorwärts oder rückwärts gehen.    |
+|                                   | vorwärts oder rückwärts springen. |
 +-----------------------------------+-----------------------------------+
 | ``Strg++`` and ``Strg+-``         | Mehr oder weniger Details         |
 |                                   | darstellen.                       |
@@ -105,8 +105,8 @@ Tastenkombinationen verwenden können.
 
 .. _highlights:
 
-Kartenmarkierungen
-~~~~~~~~~~~~~~~~~~
+Hervorhebungen und Nutzerobjekte
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
@@ -128,43 +128,45 @@ Kartenmarkierungen
 |                                   | können im Dialog                  |
 |                                   | ``Einstellungen`` auf             |
 |                                   | der Seite                         |
-|                                   | ``Kartenanzeige 2``. ``°M`` und   |
-|                                   | ``°T`` können geändert werden, um |
+|                                   | :ref:`map-display-2` geändert     |
+|                                   | werden. ``°M`` und                |
+|                                   | ``°T`` zeigen                     |
 |                                   | den magnetischen bzw. wahren Kurs |
-|                                   | anzuzeigen. ``R`` und ``GC``      |
-|                                   | bezeichnen Rhumb-Linie oder       |
-|                                   | Großkreislinie. Suffixe können    |
-|                                   | ausgeblendet werden, wenn nur ein |
-|                                   | Typ ausgewählt ist (Rhumb oder    |
-|                                   | Großkreis)                        |
+|                                   | an. ``R`` und ``GC``              |
+|                                   | bezeichnen Rhumb-Linie            |
+|                                   | (Loxodrome) oder                  |
+|                                   | Großkreislinie. Suffixe werden    |
+|                                   | ausgeblendet, wenn nur ein        |
+|                                   | Typ ausgewählt ist (Loxodrome     |
+|                                   | oder Großkreis)                   |
 +-----------------------------------+-----------------------------------+
-| |Flight Plan Procedure|           | Flugplanprozedure mit den         |
+| |Flight Plan Procedure|           | Flugplanprozedur mit den          |
 |                                   | gleichen Informationen wie oben.  |
 +-----------------------------------+-----------------------------------+
 | |Active Leg|                      | Aktive Flugplanstrecke            |
 +-----------------------------------+-----------------------------------+
 | |Wind Barb|                       | Windrichtung und Geschwindigkeit  |
 |                                   | am Flugplan-Wegpunkt. Siehe       |
-|                                   | Kapitel ``Winds Aloft`` weiter    |
+|                                   | Kapitel :ref:`high-alt-wind`      |
 |                                   | unten für Details über            |
-|                                   | Windspitzen.                      |
+|                                   | Windsymbole.                      |
 +-----------------------------------+-----------------------------------+
 | |Flight Plan Departure Position|  | Flugplan Abflugposition am        |
 |                                   | Flugplatz. Entweder Parken,       |
-|                                   | Treibstofftank, Landeplatz,       |
-|                                   | Wasser oder Start- und Landebahn. |
+|                                   | Landeplatz,                       |
+|                                   | Wasser oder Runway.               |
 +-----------------------------------+-----------------------------------+
-| |Top of Climb|                    | Top of Climb Punkt mit Abstand    |
+| |Top of Climb|                    | Steigflugende mit Abstand         |
 |                                   | vom Abflug.                       |
 +-----------------------------------+-----------------------------------+
-| |Top of Descent|                  | Top of Descent Punkt mit          |
+| |Top of Descent|                  | Sinkflugbeginn mit                |
 |                                   | Entfernung zum Ziel.              |
 +-----------------------------------+-----------------------------------+
 | |Range|                           | Distanzkreise, die mit dem        |
 |                                   | Abstand gekennzeichnet sind.      |
 +-----------------------------------+-----------------------------------+
 | |Range VOR| |Range NDB|           | VOR- oder NDB-Distanzkreise       |
-|                                   | mit Kennzeichnung durch Kennung   |
+|                                   | mit Kennzeichnung der Kennung     |
 |                                   | und Frequenz. Die Farbe zeigt den |
 |                                   | Typ der Navigationshilfen an.     |
 +-----------------------------------+-----------------------------------+
@@ -174,16 +176,15 @@ Kartenmarkierungen
 |                                   | Entfernungs- und Kursmesslinie    |
 |                                   | mit Angabe der Länge und des      |
 |                                   | wahren Kurses am Start und Ziel.  |
-|                                   | Die beiden Überschriftenwerte     |
+|                                   | Die beiden Werte                  |
 |                                   | sind bei kleinen Abständen        |
 |                                   | gleich. Für kürzere Strecken wird |
 |                                   | die Länge auch in Fuß oder Meter  |
 |                                   | angegeben.                        |
 +-----------------------------------+-----------------------------------+
 | |Distance Rhumb|                  | `Rhumb-Linie <https://en.wikipedi |
-|                                   | a.org/wiki/Rhumb_line>`__         |
-|                                   | der gleichen                      |
-|                                   | Bearing-Distanzmessung, die       |
+|                                   | a.org/wiki/Rhumb_line>`__ bzw.    |
+|                                   | Loxodrome, die                    |
 |                                   | Distanz und wahren Kurs anzeigt.  |
 |                                   | Rhumb-Linien werden verwendet, um |
 |                                   | sich einem VOR oder NDB zu nähern |
@@ -206,7 +207,7 @@ Kartenmarkierungen
 +-----------------------------------+-----------------------------------+
 | |Search Highlight|                | Ein Flugplatz oder                |
 |                                   | Navigationspunkt, der in den      |
-|                                   | Suchergebnissen selektiert ist.   |
+|                                   | Suchergebnissen ausgewählt ist.   |
 +-----------------------------------+-----------------------------------+
 | |Flight Plan Hightlight|          | Ein Flugplatz oder                |
 |                                   | Navigationspunkt, der in der      |
@@ -229,10 +230,10 @@ Kartenmarkierungen
 |                                   | der Maus über das Höhenprofil     |
 |                                   | fahren.                           |
 +-----------------------------------+-----------------------------------+
-| |Logbook Entry|                   | Flugplätze und Großkreiskreis     |
+| |Logbook Entry|                   | Flugplätze und Großkreislinie     |
 |                                   | zwischen Abflug und Ziel für      |
 |                                   | einen in der Suchergebnistabelle  |
-|                                   | ausgewählten Logbucheintrag. Das  |
+|                                   | ausgewählten Logbucheintrag. Die  |
 |                                   | Beschriftung zeigt Abflug, Ziel   |
 |                                   | und                               |
 |                                   | Großkreisabstand zwischen den     |
@@ -244,12 +245,12 @@ Kartenmarkierungen
 Kompassrose
 ~~~~~~~~~~~
 
-Die Linienstärke kann im Dialog ``Einstellungen`` auf der Seite
-``Kartendarstellung`` geändert werden.
+Die Linienstärke kann im Dialog ``Einstellungen`` auf der
+:ref:`map-display-2` geändert werden.
 
 Die Farben für den Flugplanverlauf und den Schiebewinkel hängen von den
 Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
-``Einstellungen`` auf der Seite ``Karte`` geändert werden können.
+``Einstellungen`` auf der :ref:`map` geändert werden können.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
@@ -274,7 +275,8 @@ Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 | |Flight Plan Leg Course|          | Das Magenta-Liniensegment zeigt   |
 |                                   | den Kurs zum nächsten Wegpunkt    |
 |                                   | des aktiven Flugplanabschnitts    |
-|                                   | an. Versteckt, wenn kein Flugplan |
+|                                   | an. Nicht angezeigt,              |
+|                                   | wenn kein Flugplan                |
 |                                   | geladen ist.                      |
 +-----------------------------------+-----------------------------------+
 | |Crab Angle|                      | Schiebewinkel. Zeigt die Richtung |
@@ -282,8 +284,8 @@ Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 |                                   | des Seitenwindes zum nächsten     |
 |                                   | Wegpunkt des aktiven              |
 |                                   | Flugplanabschnitts geflogen       |
-|                                   | werden muss. Versteckt, wenn kein |
-|                                   | Flugplan geladen ist.             |
+|                                   | werden muss. Nicht angezeigt,     |
+|                                   | wenn kein Flugplan geladen ist.   |
 +-----------------------------------+-----------------------------------+
 
 .. _vehicles:
@@ -299,15 +301,12 @@ Flugzeuge und Schiffe
 |                                   | verbunden ist. Die Beschriftungen |
 |                                   | variieren und können unter        |
 |                                   | ``Einstellungen`` auf der         |
-|                                   | Seite ``Kartenanzeige``           |
+|                                   | Seite :ref:`map-display`          |
 |                                   | angepasst werden. Das             |
 |                                   | Benutzerflugzeug hängt von dem    |
 |                                   | ausgewählten Flugzeug ab (Jet,    |
 |                                   | Kolben/Turboprop oder             |
-|                                   | Helikopter). Optional kann eine   |
-|                                   | aus der Nase ragende schwarze     |
-|                                   | Nadel die aktuelle Bodenspur      |
-|                                   | anzeigen.                         |
+|                                   | Helikopter).                      |
 +-----------------------------------+-----------------------------------+
 | |Small GA on Ground| |Jet on      | Benutzerflugzeug am Boden.        |
 | Ground| |Helicopter on Ground|    |                                   |
@@ -329,7 +328,7 @@ Flugzeuge und Schiffe
 | |Small GA Ground| |Jet Ground|    | Die Beschriftungen variieren und  |
 | |Helicopter Ground| |Ship|        | können unter ``Einstellungen``    |
 |                                   | auf der Seite                     |
-|                                   | ``Kartenanzeige`` angepasst       |
+|                                   | :ref:`map-display` angepasst      |
 |                                   | werden. Das Symbol hängt vom      |
 |                                   | Flugzeugtyp ab (Jet,              |
 |                                   | Kolben/Turboprop, Helikopter oder |
@@ -343,13 +342,13 @@ Flugzeuge und Schiffe
 
 .. _airports:
 
-Flugplatzsymbole
+Flugplätze
 ~~~~~~~~~~~~~~~~
 
 Flugplätze mit Tower werden in Dunkelblau und andere in Magenta
 dargestellt. Texte von Add-On-Flugplätzen werden kursiv und
 unterstrichen hervorgehoben. Flugplätze, die ein Teil eines Flugplanes
-sind, werden mit der Farbe Hellgelb hervorgehoben.
+sind, werden mit der Farbe Hellgelb in der Beschriftung hervorgehoben.
 
 Das Symbol wird kleiner gezeichnet, wenn der Flugplatz keine Landebahnen
 hat. Dies kann bei Add-On-Flugplätzen vorkommen, die andere Techniken
@@ -365,12 +364,12 @@ benutzen, um Landebahnen zu zeichnen.
 |                                   | dargestellt. Nur für niedrige     |
 |                                   | Zoomstufen.                       |
 +-----------------------------------+-----------------------------------+
-| |Airport with Tower| |Airport|    | Flugplätze mit festen             |
+| |Airport with Tower| |Airport|    | Flugplätze mit befestigten        |
 |                                   | Landebahnen. Die weiße Linie      |
 |                                   | zeigt die Ausrichtung der         |
 |                                   | längsten Landebahn.               |
 +-----------------------------------+-----------------------------------+
-| |Airport with soft runways and    | Flugplätze mit weichen            |
+| |Airport with soft runways and    | Flugplätze mit unbefestigten      |
 | Tower| |Airport with soft         | Landebahnen.                      |
 | Runways|                          |                                   |
 +-----------------------------------+-----------------------------------+
@@ -394,7 +393,8 @@ benutzen, um Landebahnen zu zeichnen.
 | soft Runways and Fuel|            | anbieten.                         |
 +-----------------------------------+-----------------------------------+
 | |Airport Weather|                 | Wetter am Flugplatz. Siehe        |
-|                                   | Kapitel ``Flugplatzwetter``       |
+|                                   | Kapitel                           |
+|                                   | :ref:`airport-weather-legend`     |
 |                                   | weiter unten.                     |
 +-----------------------------------+-----------------------------------+
 | |Airport Text|                    | Flugplatz-Beschriftung mit Name,  |
@@ -404,11 +404,11 @@ benutzen, um Landebahnen zu zeichnen.
 |                                   | Textbeschriftungen für einen      |
 |                                   | Flugplatz können im Dialog        |
 |                                   | ``Einstellungen`` auf der         |
-|                                   | Seite ``Kartenanzeige``           |
+|                                   | Seite :ref:`map-display`          |
 |                                   | geändert werden.                  |
 +-----------------------------------+-----------------------------------+
 | |Airport Overview|                | Übersicht über die Start- und     |
-|                                   | Landebahnen des Flugplatzs, die   |
+|                                   | Landebahnen des Flugplatzes, die  |
 |                                   | beim Vergrößern der Karte vor dem |
 |                                   | vollständigen Flugplatzdiagramm   |
 |                                   | angezeigt wird.                   |
@@ -416,10 +416,10 @@ benutzen, um Landebahnen zu zeichnen.
 
 .. _navaids:
 
-Wegpunkte, Funkfeuer und Luftstraßen
+Navigationshilfen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Navigationspunkte, die Teil eines Flugplanes sind, werden hellgelb
+Navigationshilfen, die Teil eines Flugplanes sind, werden hellgelb
 hervorgehoben.
 
 +-----------------------------------+-----------------------------------+
@@ -467,7 +467,7 @@ hervorgehoben.
 | |Marker Inner|                    | Kurs.                             |
 +-----------------------------------+-----------------------------------+
 | |Jet Airway|                      | Jet-Luftstraße mit Namen, Typ     |
-|                                   | (Jet oder Both) und               |
+|                                   | (Jet oder Beide/Both) und         |
 |                                   | Höhenrestriktion.                 |
 +-----------------------------------+-----------------------------------+
 | |Victor Airway|                   | Victor-Luftstraße mit Namen, Typ  |
@@ -477,9 +477,9 @@ hervorgehoben.
 | |ILS|                             | ILS mit Gleitpfad und             |
 |                                   | Markierungen.                     |
 |                                   | Die Beschriftung zeigt die Kennung|
-|                                   | und die Frequenz an,              |
-|                                   | Magnetischer Kurs, Gleitpfad      |
-|                                   | Neigungs- und DME-Anzeige wenn    |
+|                                   | und die Frequenz an, sowie        |
+|                                   | magnetischen Kurs, Gleitpfadwinkel|
+|                                   | und DME-Anzeige wenn              |
 |                                   | verfügbar.                        |
 +-----------------------------------+-----------------------------------+
 | |Localizer|                       | Localizer. Die Beschriftung       |
@@ -508,14 +508,15 @@ Informationen über alle Abschnitte.
 | Leg Preview|                      | Flugplan und Vorschau.            |
 +-----------------------------------+-----------------------------------+
 | |Circle to Land or Straight in|   | Gepunktete Linie zeigt            |
-|                                   | Kreis-zu-Land oder geradlinigen   |
+|                                   | Kreisen um zu Landen oder den     |
+|                                   | geradlinigen                      |
 |                                   | Teil einer Prozedur an, der zu    |
 |                                   | einem Start- und Landebahnende    |
 |                                   | führt. Hier ein Teil des          |
 |                                   | Flugplans.                        |
 +-----------------------------------+-----------------------------------+
-| |Vectors|                         | Vector Abschnitt zeigt den Kurs   |
-|                                   | zu einem ersten Fix an. Hier ein  |
+| |Vectors|                         | Vektorabschnitt zeigt den Kurs    |
+|                                   | zu einem ersten Punkt an. Hier ein|
 |                                   | Teil des Flugplans.               |
 +-----------------------------------+-----------------------------------+
 | |Manual|                          | Manueller Abschnitt. Fliegen Sie  |
@@ -544,7 +545,7 @@ Informationen über alle Abschnitte.
 |                                   | Endanflug oder den Punkt für den  |
 |                                   | finalen Endanflugkurs.            |
 +-----------------------------------+-----------------------------------+
-| |Procedure GS|                    | Das Prefix ``GS`` zeigt keine     |
+| |Procedure GS|                    | Das Präfix ``GS`` zeigt keine     |
 |                                   | Höhenrestriktion an sondern ist   |
 |                                   | ein Indikator für den             |
 |                                   | ILS-Gleitpfad. Kann ``auf`` oder  |
@@ -592,7 +593,7 @@ benutzt.
 | Symbol                            | Beschreibung                      |
 +===================================+===================================+
 | |Runway|                          | Landebahn mit Länge, Breite,      |
-|                                   | Lichtindikator (L) und            |
+|                                   | Lichtindikator (``L``) und        |
 |                                   | Oberflächentyp.                   |
 +-----------------------------------+-----------------------------------+
 | |Runway End|                      | Landebahnende mit Kennung und     |
@@ -648,7 +649,7 @@ Höhenprofil
 ~~~~~~~~~~~
 
 Die Farben und Symbole des Höhenprofils folgen dem Stil der Hauptkarte,
-wie er im Einstellungsdialog auf der Seite ``Kartendarstellung``
+wie er im Einstellungsdialog auf der Seite :ref:`map-display`
 eingestellt ist. Farben, Platzrunden und Symbole für Flugplätze,
 Navigationshilfen, Prozeduren, aktive und abgeflogene Flugplanabschnitte
 sind identisch. Die Profilanzeige folgt auch anderen Karteneinstellungen
@@ -691,7 +692,7 @@ wie der Sichtbarkeit von Flugplanlinie, Flugzeug und Flugzeugpfad.
 |                                   | die nächsten 500 Fuß. Der 1000    |
 |                                   | Fuß Puffer kann im Dialog         |
 |                                   | ``Einstellungen`` auf der         |
-|                                   | Seite ``Flugplan``                |
+|                                   | Seite :ref:`flight-plan`          |
 |                                   | geändert werden.                  |
 +-----------------------------------+-----------------------------------+
 | |Profile Segment Safe Alt|        | Minimale sichere Höhe für ein     |
@@ -712,7 +713,7 @@ wie der Sichtbarkeit von Flugplanlinie, Flugzeug und Flugzeugpfad.
 +-----------------------------------+-----------------------------------+
 | |ILS Profile|                     | ILS-Gleitpfad. Die Beschriftung   |
 |                                   | zeigt Kennung, Frequenz,          |
-|                                   | Magnetischen Kurs, Neigung des    |
+|                                   | magnetischen Kurs, Neigung des    |
 |                                   | Gleitpfades und DME-Anzeige,      |
 |                                   | falls vorhanden. Dies wird nur    |
 |                                   | angezeigt, wenn ein Anflug        |
@@ -737,8 +738,7 @@ wie der Sichtbarkeit von Flugplanlinie, Flugzeug und Flugzeugpfad.
 Platzrunde
 ~~~~~~~~~~
 
-Farbe und Indikatoren hängen von der Wahl des Benutzers im Dialogfeld
-``Platzrunde`` ab.
+Farbe und Indikatoren hängen von der Wahl des Benutzers für :doc:`HOLD` ab.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
@@ -767,17 +767,19 @@ Farbe und Indikatoren hängen von der Wahl des Benutzers im Dialogfeld
 |                                   | entfernen.                        |
 +-----------------------------------+-----------------------------------+
 
+.. _holding-legend:
+
 Warteschleife
 ~~~~~~~~~~~~~~~
 
-Die Farbe hängt von der Wahl des Benutzers im Haltedialog ab.
+Die Farbe hängt von der Wahl des Benutzers im Dialog :doc:`HOLD` ab.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
 +===================================+===================================+
 | |Inbound to Fix|                  | Warteschleifenursprung,           |
 |                                   | magnetischer und                  |
-|                                   | echter Inbound-Kurs, Zeit für     |
+|                                   | echter einwärts-Kurs, Zeit für    |
 |                                   | geraden Abschnitt und Kennung     |
 |                                   | der Navigationshilfe              |
 |                                   | (``LBU``). Die Kennung wird nur   |
@@ -789,12 +791,12 @@ Die Farbe hängt von der Wahl des Benutzers im Haltedialog ab.
 |                                   | Einstellungen ab.                 |
 +-----------------------------------+-----------------------------------+
 | |outbound from Fix|               | Magnetischer und echter           |
-|                                   | Outbound-Kurs, Geschwindigkeit    |
+|                                   | auswärts-Kurs, Geschwindigkeit    |
 |                                   | und Höhe wie im Dialog angegeben. |
 |                                   | Die echte Kursanzeige hängt von   |
 |                                   | den Optionen ab.                  |
 +-----------------------------------+-----------------------------------+
-| |Active Position Hold|            | Aktivpunkt und Ursprung der       |
+| |Active Position Hold|            | Aktiver Punkt und Ursprung der    |
 |                                   | Warteschleife. Der                |
 |                                   | Mauszeiger ändert sich            |
 |                                   | und ermöglicht es, die            |
@@ -813,6 +815,9 @@ Gelände und Hindernisse um 1000 Fuß in Gebieten, in denen die höchsten
 Lagen 5000 Fuß oder niedriger sind. Wo die Höhen über 5000 Fuß liegen,
 wird das Gelände um 2000 Fuß übergangen.
 
+Textgröße und Transparenz können im Einstellungsdialog auf der Seite
+:ref:`map-display-2` eingestellt werden.
+
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
 +===================================+===================================+
@@ -822,7 +827,7 @@ wird das Gelände um 2000 Fuß übergangen.
 |                                   | 9900 und 10500 Fuß.               |
 +-----------------------------------+-----------------------------------+
 
-.. _airport-weather:
+.. _airport-weather-legend:
 
 Flugplatzwetter
 ~~~~~~~~~~~~~~~
@@ -894,8 +899,8 @@ Wind
 | |65 Knots Wind|                   | Beispiel: 65 Knoten.              |
 +-----------------------------------+-----------------------------------+
 | |15 Knots steady Wind gusting to  | Beispiel: 15 Knoten stetiger Wind |
-| 30 Knots|                         | (schwarz) böen bis 30 Knoten      |
-|                                   | (rot).                            |
+| 30 Knots|                         | (schwarz) und                     |
+|                                   | Böen bis 30 Knoten (rot).         |
 +-----------------------------------+-----------------------------------+
 
 .. _high-alt-wind:
@@ -906,8 +911,8 @@ Höhenwinde
 =====================  =========================================
 Symbol                 Beschreibung
 =====================  =========================================
-|No Wind Aloft|        Kein Zeiger zeigt Wind unter 2 Knoten an.
-|Wind below 5 Knots|   Unter 5 Knoten von Westen.
+|No Wind Aloft|        Kein Zeiger bedeutet Wind unter 2 Knoten.
+|Wind below 5 Knots|   Unter 5 Knoten aus Westen.
 |25 Knots Wind Aloft|  Beispiel: 25 Knoten.
 =====================  =========================================
 

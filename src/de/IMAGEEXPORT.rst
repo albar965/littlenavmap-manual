@@ -1,9 +1,7 @@
-.. _image-export:
+Karte als Bild exportieren
+----------------------------
 
-Bid exportieren
----------------
-
-Dieser Dialog erscheint beim Speichern der Kartenansicht in einer
+Dieser Dialog erscheint beim Speichern der Kartenansicht in eine
 Bilddatei, für AviTab oder beim Kopieren in die Zwischenablage.
 
 **Eingabe- und Auswahlfelder des Dialogs:**
@@ -12,10 +10,9 @@ Bilddatei, für AviTab oder beim Kopieren in die Zwischenablage.
    folgenden Optionen stehen zur Verfügung:
 
    -  ``Aktuelle Kartenansicht``: Exportieren Sie die Kartenansicht wie
-      abgebildet. Die aktuelle Pixelgröße dieses Bildes wird im
-      Listeneintrag angezeigt.
-   -  ``Individuelle Lösung``: Verwenden Sie die Pixelgröße aus den
-      Eingabefeldern ``Breite`` und ``Höhe``.
+      abgebildet. Die Pixelgröße dieses Bildes wird im Listeneintrag angezeigt.
+   -  ``Nutzerdefinierte Auflösung``: Verwendet die Pixelgröße aus den Eingabefeldern
+      ``Breite`` und ``Höhe``.
    -  ``720p, 1280 × 720, 16∶9``,
    -  ``1080p, 1920 × 1080, 16∶9``,
    -  ``1440p, 2560 × 1440, 16∶9``,
@@ -24,23 +21,23 @@ Bilddatei, für AviTab oder beim Kopieren in die Zwischenablage.
       Monitorauflösungen.
 
 -  ``Breite`` und ``Höhe``: Hiermit legen Sie die Pixelgröße für das
-   Bild fest, wenn ``Benutzerdefinierte Auflösung`` ausgewählt ist.
--  ``Zoomen Sie heraus, um verschwommene Karten zu vermeiden``: Wenn Sie
-   diese Option aktivieren, erhalten Sie ein scharfes Hintergrundbild
-   für Online-Karten (z.B. von OpenStreetMap). Dies funktioniert am
-   besten mit der Kartenprojektion ``Mercator``. Dadurch kann es in
+   Bild fest, wenn ``Nutzerdefinierte Auflösung`` ausgewählt ist.
+-  ``Unscharfe Kartenanzeige vermeiden``: Wenn Sie
+   diese Einstellung aktivieren, erhalten Sie ein scharfes Hintergrundbild
+   für Onlinekarten (z.B. von OpenStreetMap). Dies funktioniert am
+   besten mit der Kartenprojektion ``Mercator``. Es kann jedoch in
    einigen Fällen vorkommen, dass die Karte weiter als erwartet
    vergrößert wird.
 
 .. note::
 
-      Beachten Sie, dass alle Optionen mit Ausnahme der
-      ``Aktuellen Kartenansicht`` sichtbare Details ändern. Es können z.B.
+      Beachten Sie, dass alle Einstellungen mit Ausnahme von
+      ``Aktuelle Kartenansicht`` sichtbare Details ändern. Es können z.B.
       Navigationshilfen erscheinen, die nicht in der Karte auf dem Bildschirm angezeigt
       werden.
 
 .. figure:: ../images/image_export.jpg
 
-         Dialog nach ``Speicher Karte als Bild ...``.
+         Dialog nach den Aufruf von ``Karte als Bild speichern ...``.
 
 

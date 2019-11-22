@@ -1,6 +1,4 @@
-.. _options-dialog:
-
-|Options| Dialog Einstellungen
+|Options| Einstellungen
 ------------------------------
 
 Dieser Dialog besteht aus mehreren Seiten mit Konfigurationsoptionen,
@@ -10,10 +8,6 @@ Navigation.
 
 **Die meisten Optionen sind selbsterklärend und Tooltips enthalten ggf.
 detailliertere Erklärungen.**
-
-Sie können die Auswirkungen Ihrer Änderungen auf die Kartendarstellung
-sofort überprüfen, indem Sie den Dialog ``Einstellungen`` zur Seite bewegen
-und ``Anwenden`` drücken.
 
 Die Schaltfläche ``Standardeinstellungen wiederherstellen`` stellt nur
 die Optionen dieses Dialogs wieder auf den Standard zurück. Andere
@@ -26,10 +20,16 @@ Um alle gespeicherten Einstellungen vollständig zurückzusetzen, siehe
 :ref:`reset-and-restart`. Die folgenden Kapitel geben
 eine kurze Beschreibung für jeder Seite.
 
+.. tip::
+
+     Sie können die Auswirkungen Ihrer Änderungen auf die Kartendarstellung
+     sofort überprüfen, indem Sie den Dialog ``Einstellungen`` zur Seite bewegen
+     und ``Anwenden`` drücken.
+
 .. _startup:
 
-|Startup| Startup
-~~~~~~~~~~~~~~~~~
+|Startup| Startup und Aktualisierung
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ermöglicht die Anpassung, was beim Start von *Little Navmap* geladen und
 angezeigt werden soll.
@@ -37,7 +37,7 @@ angezeigt werden soll.
 Sie können auch die Häufigkeit der automatischen Aktualisierungsprüfung
 und der Aktualisierungskanäle konfigurieren. Weitere Informationen
 finden Sie unter :doc:`UPDATE`. Ändern Sie
-die Einstellungen hier, wenn Sie Benachrichtigungen über Beta-Versionen
+die Einstellungen hier, wenn Sie Benachrichtigungen über Test- bzw. Vorversionen
 erhalten möchten.
 
 .. _user-interface:
@@ -45,11 +45,11 @@ erhalten möchten.
 |User Interface Icon| Nutzerschnittstelle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Verfügt über Optionen für hohe DPI-Unterstützung, Textgrößen in
-Informationsfenstern und Flugplänen sowie in der Suchergebnistabelle.
+Verfügt über Optionen für hochauflösende Monitore, Textgrößen in
+Informationsfenstern, Flugplänen und der Suchergebnistabelle.
 
 Diese Seite enthält auch Optionen, um die Programmsprache und
-die lokalen Einstellungen (Zahlen-, Datums- und Zeitformate) auf
+die Regionseinstellungen (Zahlen-, Datums- und Zeitformate) auf
 Englisch zu erzwingen, wenn Sie keine übersetzte Benutzeroberfläche
 verwenden möchten.
 
@@ -78,12 +78,12 @@ Informationen zu diesen Themen.
 
 .. _blurred-map:
 
-Vermeiden Sie verschwommene Kartendarstellungen, indem Sie auf den nächstbesten Schritt zoomen
+Unscharfe Kartenanzeige vermeiden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn Sie dies aktivieren, erhalten Sie ein scharfes Hintergrundbild für
 Online-Karten (z.B. von OpenStreetMap), wenn *Little Navmap* auf
-Kartenfunktionen wie Flugplätze, die aktive Flugplanetappe und andere
+Kartenobjekte wie Flugplätze, die aktive Flugplanetappe und andere
 zoomt oder zentriert. Dies funktioniert am besten mit der
 Kartenprojektion ``Mercator``.
 
@@ -111,7 +111,7 @@ Mehr Anzeigeoptionen für Nutzerobjekte wie Distanzkreise und mehr.
 
 Auf der rechten Seite der Seite befindet sich eine Baumansicht, in der
 Sie die Textbeschriftungen auswählen können, die an Flugplätze,
-Benutzerflugzeugen, KI/Multiplayer-Flugzeugen und anderen
+Benutzerflugzeugen, KI/Mehrspieler-Flugzeugen und anderen
 Kartenfunktionen angezeigt werden sollen.
 
 Tooltips erklären die verschiedenen Einstellungen im Baum.
@@ -125,20 +125,18 @@ Tooltips erklären die verschiedenen Einstellungen im Baum.
 |Map Display Online Icon| Online Kartenanzeige
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Auf dieser Seite können Sie die standardmäßigen Zentrierkreisgrößen für
-das Online-Fliegen ändern.
+Auf dieser Seite können Sie die Kreisgrößen für die Online-Center ändern.
 
-Zwei Optionen unter ``Größe für Online Lufträume und Center`` können
-verwendet werden, um OpenAir-Lufträume aus der Benutzerluftraumdatenbank
-Center zuzuordnen, indem Dateiname oder Luftraumname mit dem Rufzeichen
-der Zentrale übereinstimmen.
+Zwei Optionen unter ``Suche nach Lufträumen für Online-Center`` können
+verwendet werden, um OpenAir-Lufträume aus der Nutzerluftraumdatenbank
+zuzuordnen, indem Dateiname oder Luftraumname mit dem Rufzeichen des Centers
+verbunden werden.
 
--  ``Nach Luftraumnamen und Rufzeichen``: Verwenden Sie den Luftraumnamen
-   innerhalb einer Datei, um die Geometrie eines Center durch das
-   Rufzeichen zuzuordnen.
--  ``Nach Dateinamen des Luftraumes und Rufzeichen``: Verwenden Sie den
-   Luftraumdateinamen ohne die Erweiterung ``.txt``, um die Geometrie
-   eines Centers durch das Rufzeichen zuzuordnen.
+-  ``Nach Luftraumnamen und Rufzeichen``: Benutzt den Luftraumnamen
+   innerhalb einer OpenAir-Datei, um die Geometrie einem Center über das Rufzeichen zuzuordnen.
+-  ``Nach Dateinamen des Luftraumes und Rufzeichen``: Benutzt den
+   Dateinamen ohne die Erweiterung ``.txt``, um die Geometrie
+   einem Center über das Rufzeichen zuzuordnen.
 
 Weitere Informationen finden Sie unter :ref:`load-scenery-library-online-airspaces`.
 
@@ -149,42 +147,39 @@ Weitere Informationen finden Sie unter :ref:`load-scenery-library-online-airspac
 
 Sie können alle Einheiten, die von *Little Navmap* auf diesen
 Reiter verwendet werden, zwischen nautisch, imperial und metrisch
-ändern. Gemischte Einstellungen wie Höhenmesser und Seemeilen für die
-Entfernung sind möglich.
+ändern. Gemischte Einstellungen sind möglich.
 
 .. warning::
 
         Beachten Sie, dass die im Programm verwendeten Zahlen beim Ändern der
-        Einheiten nicht umgerechnet werden. Das bedeutet, dass Sie sich auf die
-        erhalten Sie einen Mindesthöhenpuffer von 1000 Metern, nachdem Sie die
-        Einstellung ``Höhe und Elevation`` von Fuß auf Fuß geändert haben. Dies
+        Einheiten nicht umgerechnet werden. Das bedeutet, dass Sie z.B.
+        einen Mindesthöhenpuffer von 1000 Metern erhalten, nachdem Sie die
+        Einstellung ``Höhe`` von Fuß auf Meter geändert haben. Dies
         gilt auch für die Flugplanhöhe. Vergessen Sie daher nicht, diese Nummern
         nach einem Einheitenwechsel anzupassen.
 
 -  ``Zeige auch andere Treibstoffeinheiten``: Zeigt Kilogramm und Liter
    als kleinen Text neben den Grundeinheiten an, wenn lbs und Gallone
    ausgewählt sind und umgekehrt. Dies gilt nur für die wichtigsten
-   Kraftstoffwerte wie z.B. Block- und Trip-Kraftstoff.
+   Kraftstoffwerte.
 -  ``Zeige auch wahren Kurs neben den magnetischen in Informationen an``:
-   Fügt neben den Anzeigen für magnetische Headings auch echte Headings
+   Fügt neben den Anzeigen für magnetische Kurse auch wahre Kurse
    als kleinen Text hinzu. Dies gilt für Information, Fortschritt sowie
    Kartendarstellung (Platzrunden und Warteschleifen).
 
-**Hinweis zu den
-Koordinatenformaten** ``Breite und Längengrad mit Vorzeichen`` und
-``Länge und Breite mit Vorzeichen`` **:**
+**Hinweis zu den Koordinatenformaten** ``Breiten- und Längengrad mit Vorzeichen`` und
+``Längen- und Breitengrad mit Vorzeichen`` **:**
 
 -  Breitengrad: Negativ ist Süden und Positiv ist Norden.
 -  Längengrad: Negativ ist West und positiv sind Ostwerte.
 
 Die Wahl dieser Anzeigeformate ermöglicht auch die Eingabe von
 vorzeichenbehafteten Dezimalwerten. Die Lesereihenfolge für Koordinaten
-ändert sich je nach gewähltem Format auch, wenn Sie vorzeichenbehaftete
-Zahlen eingeben.
+ändert sich je nach gewähltem Format.
 
 .. _simulator-aircraft:
 
-|Simulator Aircraft Icon| Simulatoflugzeug
+|Simulator Aircraft Icon| Simulatorflugzeug
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ermöglicht es, verschiedene Aspekte rund um die Anzeige des
@@ -197,14 +192,14 @@ können möglicherweise zu Stottern im Simulator führen.
 Zentriere Karte auf Flugzeug und nächsten Wegpunkt des Flugplan.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Karte wird gezoomt, um sowohl das Flugzeug als auch den nächsten
-aktiven Wegpunkt im Flugplan anzuzeigen, wenn dies während des Fluges
+Die Karte wird gezoomt, um während des Fluges sowohl das Flugzeug,
+als auch den nächsten aktiven Wegpunkt im Flugplan anzuzeigen, wenn dies
 aktiviert ist. *Little Navmap* verwendet mehrere Kriterien, um die
-Aktualisierung der Karte in diesem Modus zu minimieren.
+Aktualisierungen der Karte in diesem Modus zu minimieren.
 
 Die Karte greift auf den Standardmodus der einfachen Zentrierung des
 Flugzeugs zurück, wenn kein Flugplan geladen ist, das Flugzeug am Boden
-steht oder der Flugplan mehr als 50 nm vom Benutzerflugzeug entfernt
+steht oder der Flugplan mehr als 50 nautische Meilen vom Benutzerflugzeug entfernt
 ist.
 
 .. _simulator-aircraft-move-constantly:
@@ -212,8 +207,8 @@ ist.
 Boxmodus nicht zum Folgen des Flugzeuges verwenden. Karte konstant bewegen.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Karte folgt dem Flugzeug ständig, wenn es überprüft wird. Dies wird
-auch für die
+Die Karte folgt dem Flugzeug ständig, wenn aktiviert. Dies wird
+auch für die Funktion
 ``Zentriere Karte auf Flugzeug und nächsten Wegpunkt des Flugplan``
 verwendet.
 
@@ -229,34 +224,36 @@ Kleinere Werte halten das Flugzeug in der Mitte und verschieben die
 Karte öfter. Größere Werte aktualisieren die Karte nur, wenn das
 Flugzeug die Kartengrenze erreicht.
 
-Diese Einstellung wird ignoriert, wenn die
+Diese Einstellung wird ignoriert, wenn
 ``Zentriere Karte auf Flugzeug und nächsten Wegpunkt des Flugplan``
-überprüft werden und ein Flugplan erstellt wird.
+aktiviert ist und ein Flugplan vorhanden ist.
 
 .. _simulator-aircraft-keep-active:
 
 Halte aktiven Streckenteil an der Spitze der Flugplantabelle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die aktive (magenta) Etappe wird oben in der Flugplattentabelle
-angezeigt, wenn eine neue Etappe aktiviert wird.
+Die aktive (magenta) Etappe wird oben in der Flugplantabelle
+angezeigt, wenn eine neue aktiviert wird.
 
 .. _simulator-aircraft-allow-scroll-zoom:
 
 Scrollen und Zoomen in der Karte erlauben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Karte folgt dem Flugzeug für die angegebene Zeit nicht mehr, wenn
-der Benutzer mit der Karte interagiert, z.B. scrollt oder zoomt. Sie
+Scrollen erlauben Aktiviert
+'''''''''''''''''''''''''''''
+
+Die Karte beendet die Verfolgung des Flugzeuges für die angegebene Zeit, wenn
+der Benutzer mit der Karte interagiert. Sie
 können sich schnell das Ziel oder Ihren Gesamtfortschritt ansehen, und
 nachdem Sie mit der Bewegung aufhören, kehrt *Little Navmap* zur
-Verfolgung Ihres Flugzeugs zurück.
+Flugzeugverfolgung zurück.
 
-Diese Option wird auch im :doc:`PROFILE`
-verwendet.
+Diese Option wird auch im :doc:`PROFILE` verwendet.
 
-**Beachten Sie, ob Sie den Standard-Flugzeugzentriermodus verwenden oder
-ob Little Navmap auf diesen Modus zurückfällt (siehe oben):**
+**Falls Sie den Standard-Flugzeugzentriermodus verwenden oder
+wenn *Little Navmap* auf diesen Modus zurückfällt (siehe oben):**
 
 #. Mit dem Mausrad oder der Taste ``+`` und ``-`` zum Zoomen ändern Sie
    den Zoomabstand und halten ihn ein. Das Flugzeug ist noch zentriert,
@@ -264,21 +261,38 @@ ob Little Navmap auf diesen Modus zurückfällt (siehe oben):**
 #. Sie können sich umsehen, indem Sie die Karte mit der Maus oder den
    Pfeiltasten bewegen: Dadurch wird die letzte Position **und** die
    Zoomdistanz gespeichert. Sie können beliebige Kartenbewegungen
-   durchführen und *Little Navmap* springt, wenn die Zeit abgelaufen
-   ist, zurück zur letzten Position und Zoomdistanz, an der Sie die
-   Bewegung gestartet haben.
+   durchführen und *Little Navmap* springt nach Ablauf der Zeit
+   zurück zur letzten Position und Zoomdistanz.
 
 Dasselbe gilt ab Punkt zwei, wenn Sie per Doppelklick, Kontextmenü
-(``Zeige auf Karte``) oder Kartenlink zu Flugplätze, Navids oder anderen
-Features springen.
+(``Zeige auf Karte``) oder Kartenlink zu Flugplätzen, Navigationshilfen oder anderen
+Objekten springen.
 
 Schalten Sie |Center Aircraft| ``Zentriere Flugzeug`` ein und aus, wenn
 Sie feststellen, dass die Karte in die falsche Position zurückspringt.
 
-Diese Option wird auch im :doc:`PROFILE`
-verwendet.
+Diese Option wird auch im :doc:`PROFILE` verwendet.
 
-.. _simulator-aircraft-jump-timeout:
+Scrollen erlauben deaktiviert
+'''''''''''''''''''''''''''''''''''
+
+Die Flugzeugzentrierung wird bei Verwendung einer der nachfolgenden
+Funktionen abgeschaltet. Beachten Sie, dass dieses Standardverhalten im
+Optionsdialog geändert werden kann.
+
+-  Doppelklick in eine Tabellenansicht oder Kartendarstellung, um
+   zu einem Flugplatz oder einer Navigation zu gelangen.
+-  Kontextmenüeintrag ``Auf der Karte zeigen``.
+-  ``Gehe zur Heimposition`` oder ``Gehe zum Zentrum der Distanzsuche``.
+-  ``Karte`` Link im ``Informationen`` Dockfenster anklicken.
+-  ``Zeige Flugplan``, bei manueller Auswahl oder automatisch nach dem
+   Laden eines Flugplans.
+-  Zentrieren einer Google Earth KML/KMZ-Datei nach dem Laden
+
+Dies ermöglicht eine schnelle Prüfung eines Flugplatzs oder einer Navigationshilfe
+während des Fluges. Um das Flugzeug wieder anzuzeigen, verwenden Sie
+``Gehe zur letzten Kartenposition zurück`` oder aktivieren Sie wieder
+``Zeige Flugzeug``.
 
 Springe nach dieser Zeit zum Flugzeug zurück und nehme die Flugzeugverfolgung wieder auf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -304,15 +318,15 @@ den Standarddateinamen für das Speichern von Flugplänen ändern.
 ~~~~~~~~~~~~~~~~
 
 Sie können die verschiedenen Wetterquellen auswählen, die im Dockfenster
-``Information`` oder in den Karten-Tooltips angezeigt werden sollen.
+``Informationen`` oder in den Karten-Tooltips angezeigt werden sollen.
 
 Der Wettertyp ``Flugsimulator`` zeigt entweder das Wetter von der FSX-
-oder P3D-Verbindung oder von X-Planes ``METAR.rwx`` Wetterdatei an.
+oder P3D-Verbindung oder der Datei ``METAR.rwx`` von X-Plane an.
 
 *Active Sky* kann nur ausgewählt werden, wenn entweder *Active Sky
 Next*, *AS16* oder *Active Sky for Prepar3D v4* installiert sind oder
 die Wetterdatei direkt ausgewählt wird. Die direkte Auswahl der
-Wetterdatei *Active Sky* kann nützlich sein, wenn Sie ein vernetztes
+Wetterdatei für *Active Sky* kann nützlich sein, wenn Sie ein vernetztes
 Setup ausführen. Verwenden Sie Windows-Freigaben oder einen
 Cloud-Service, um Zugriff auf die Datei auf dem Remotecomputer zu
 erhalten.
@@ -324,7 +338,7 @@ Notwendigkeit, diese Werte zu ändern.
 Sie können den Pfad zur X-Plane-Wetterdatei ändern, wenn Sie diese über
 eine Netzwerkfreigabe auf einen Remotecomputer laden möchten.
 
-Mit den Test-Buttons für die Online-Wetterdienste kann auch
+Mit den Test-Schalflächen für die Online-Wetterdienste kann auch
 herausgefunden werden, ob *Little Navmap* eine Verbindung zum Internet
 herstellen kann. Überprüfen Sie Ihre Firewall-Einstellungen, wenn diese
 fehlschlagen.
@@ -341,8 +355,7 @@ fehlschlagen.
 Auf dieser Seite können Sie die Einstellungen für
 Online-Netzwerke ändern.
 
-Eine Übersicht finden Sie unter
-:doc:`ONLINENETWORKS`.
+Eine Übersicht finden Sie unter :doc:`ONLINENETWORKS`.
 
 .. _online-service:
 
@@ -387,8 +400,7 @@ der Regel drei Minuten.
 PilotEdge
 '''''''''
 
-Konfiguration für das Netzwerk
-`PilotEdge <https://www.pilotedge.net/>`__.
+Konfiguration für das Netzwerk `PilotEdge <https://www.pilotedge.net/>`__.
 
 .. _online-service-custom-status:
 
@@ -396,13 +408,13 @@ Eigener mit Statusdatei
 '''''''''''''''''''''''
 
 Diese Option ermöglicht die Verbindung zu einem privaten Netzwerk und
-lädt beim Start eine Datei ``status.txt`` herunter, die weitere Links zu
+lädt beim Start eine Datei ``status.txt`` herunter, die weitere Verweise zu
 z.B. der Datei ``whazzup.txt`` enthält.
 
 .. _online-service-custom-whazzup:
 
-Eigner
-''''''
+Eigener
+'''''''''
 
 Diese Option ermöglicht die Verbindung zu einem privaten Netzwerk und
 lädt regelmäßig eine Datei ``whazzup.txt`` herunter, die Informationen
@@ -423,8 +435,8 @@ URL der Datei ``status.txt``. Sie können auch einen lokalen Pfad wie
 
 Diese Datei wird erst beim Start des Programms heruntergeladen.
 
-Ein push button ``Test`` ermöglicht es, zu überprüfen, ob die URL gültig
-ist und zeigt die ersten Zeilen der heruntergeladenen Textdatei an. Dies
+Eine Schaltfläche ``Test`` ermöglicht es, zu überprüfen, ob die URL gültig
+ist und zeigt die ersten Zeilen der heruntergeladenen Textdatei an. Der Test
 funktioniert nicht mit lokalen Pfaden.
 
 Das Format der Statusdatei wird in der IVAO-Dokumentationsbibliothek
@@ -442,7 +454,7 @@ URL der Datei ``whazzup.txt``. Sie können auch einen lokalen Pfad wie
 Diese Datei wird entsprechend der eingestellten Aktualisierungsrate
 heruntergeladen.
 
-Ein Button ``Test`` ermöglicht es, zu überprüfen, ob die URL gültig ist.
+Eine Schaltfläche ``Test`` ermöglicht es, zu überprüfen, ob die URL gültig ist.
 Der Test funktioniert nicht mit lokalen Pfaden.
 
 Das Whazzup-Dateiformat wird in der IVAO-Dokumentationsbibliothek
@@ -484,9 +496,9 @@ verwenden, um die Aktualisierung der Kartendarstellung zu verbessern.
 
 .. warning::
 
-        Verwenden Sie für offizielle Online-Netzwerke keine Update-Raten, die
-        kleiner als zwei Minuten sind. Sie werden möglicherweise die Anwendung
-        oder durch Ihre Internetadresse blockiert, wenn die Downloads zu groß
+        Verwenden Sie für offizielle Online-Netzwerke keine Aktualisierungsraten, die
+        kleiner als zwei Minuten sind. Diese können die Anwendung
+        Ihre Internetadresse blockieren, wenn die Downloads zu groß
         sind.
 
 .. _online-service-settings-format:
@@ -513,10 +525,11 @@ Konfigurationsoptionen für den internen Webserver von *Little Navmap*.
    *Little Navmap* zeigt eine Warnung an, wenn keine ``index.html``
    Datei im Stammverzeichnis gefunden wird.
 -  ``Portnummer``: Standard 8965. Das bedeutet, dass Sie in Ihrem
-   Browser die Adresse ``http://localhost:8965/`` verwenden müssen, um
-   z.B. auf die Webseite von *Little Navmap* zuzugreifen. Ändern Sie
-   diesen Wert, wenn Sie Fehler wie ``Unable to start the server``
-   erhalten. Fehler: Die gebundene Adresse wird bereits verwendet.
+   Browser z.B. die Adresse ``http://localhost:8965/`` verwenden müssen, um
+   auf die Webseite von *Little Navmap* zuzugreifen. Ändern Sie
+   diesen Wert, wenn Sie Fehler wie
+   ``Kann Server nicht starten. Die angegebene Adresse ist bereits in Gebrauch.``
+   erhalten.
 -  ``Verschlüsselte Verbindung (HTTPS / SSL)``: Verschlüsselte
    Verbindungen verwenden ein vorberechnetes, selbstsigniertes
    Zertifikat, das mit *Little Navmap* geliefert wird. Ein Browser zeigt
@@ -525,20 +538,19 @@ Konfigurationsoptionen für den internen Webserver von *Little Navmap*.
    verschlüsselte Adresse ``https://localhost:8965/``. Die Erstellung
    eines selbstsignierten Zertifikats ist recht komplex. Schauen Sie
    sich die verschiedenen Webartikel an, indem Sie nach
-   ``How to create a self signed certificate`` suchen.
+   ``Selbstsigniertes Zertifikat selbst erstellen`` suchen.
 -  ``Webserver stoppen``: Starten oder stoppen Sie den Server, um die
    oben genannten Änderungen zu testen. Der Serverstatus (läuft oder
    läuft nicht) wird durch Drücken von ``Abbrechen`` im Optionsdialog
    auf den vorherigen Zustand zurückgesetzt.
 -  Beschriftung
    ``Webserver läuft unter http://my-computer:8965 (IP-Adresse http://192.168.1.1:8965)``:
-   Zeigt zwei Links zum Webserver an. Wenn Sie auf eine der beiden Optionen
+   Zeigt zwei Verweise zum Webserver an. Wenn Sie auf eine der beiden Verweise
    klicken, wird die Seite in Ihrem Standardbrowser geöffnet. Sie können
-   den Link zur IP-Adresse immer dann ausprobieren, wenn der erste Link mit
+   den Verweise zur IP-Adresse immer dann ausprobieren, wenn der erste Verweise mit
    dem Computernamen nicht funktioniert.
 
-Detaillierte Informationen finden Sie unter
-:doc:`WEBSERVER`.
+Detaillierte Informationen finden Sie unter :doc:`WEBSERVER`.
 
 .. _cache:
 
@@ -550,21 +562,21 @@ Detaillierte Informationen finden Sie unter
 Kartenanzeige
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Hier können Sie die Cache-Größe im RAM und auf der Festplatte ändern.
-Diese Caches werden verwendet, um die heruntergeladenen Bildkacheln von
+Hier können Sie die Zwischenspeicher-Größe im RAM und auf der Festplatte ändern.
+Die Zwischenspeicher werden verwendet, um die heruntergeladenen Bildkacheln von
 den Online-Karten wie der *OpenStreetMap* oder *OpenTopoMap* zu
 speichern.
 
 Alle Bildkacheln verfallen nach zwei Wochen und werden dann von den
-Online-Services wieder geladen.
+Onlinediensten wieder nachgeladen.
 
 Beachten Sie, dass eine Reduzierung der Größe oder das Löschen des
-Festplatten-Cache im Hintergrund erfolgt und einige Zeit dauern kann.
+Festplattenzwischenspeichers im Hintergrund erfolgt und einige Zeit dauern kann.
 
-Der RAM-Cache hat eine Mindestgröße von 100 MB und eine Maximalgröße von
+Der RAM-Zwischenspeicher hat eine Mindestgröße von 100 MB und eine Maximalgröße von
 2 GB.
 
-Der Festplatten-Cache hat eine Mindestgröße von 500 MB und eine
+Der Festplatten-Zwischenspeicher hat eine Mindestgröße von 500 MB und eine
 Maximalgröße von 8 GB.
 
 .. _cache-elevation:
@@ -576,32 +588,28 @@ Der untere Teil dieser Seite ermöglicht die Installation der frei
 herunterladbaren `GLOBE - Global Land One-km Base Elevation
 Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ Höhendaten.
 
-Suchen Sie nach Beiträgen im `support forum at
-AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
-wenn der ursprüngliche Download nicht verfügbar ist.
-
 Laden Sie das ZIP-Archiv über den Link im Dialog herunter und entpacken
 Sie es. Wählen Sie das extrahierte Verzeichnis mit
 ``GLOBE-Verzeichnis auswählen ...`` so, dass es auf die Dateien ``a10g``
-bis ``p10g`` zeigt. Das Label im Dialogfeld zeigt einen Fehler an, wenn
+bis ``p10g`` zeigt. Die Beschriftung im Dialog zeigt einen Fehler an, wenn
 der Pfad ungültig ist.
 
-.. _cache-Userlufträume:
+.. _cache-user-airspaces:
 
 Nutzerlufträume
 ^^^^^^^^^^^^^^^
 
-Sie können den Pfad zum Benutzerluftraum und die zu lesenden
+Sie können den Pfad zum Laden der Benutzerlufträume und die zu lesenden
 Dateiendungen auswählen. *Little Navmap* liest alle OpenAir-Dateien mit
 der angegebenen Erweiterung im ausgewählten Verzeichnis rekursiv in die
-Benutzer-Luftraumdatenbank.
+Benutzerdatenbank.
 
 Sie können mehr als eine Dateierweiterung über eine durch Leerzeichen
 getrennte Liste bereitstellen.
 
 Siehe auch
 :ref:`load-scenery-library-user-airspaces` und
-`Lade Nutzerlufträume <MENUS#load-user-airspaces>`__.
+:ref:`load-user-airspaces`.
 
 .. _scenery-library-database:
 
@@ -614,7 +622,7 @@ konfigurieren.
 Beachten Sie, dass diese Pfade für alle Flugsimulatoren, FSX, P3D und
 X-Plane gelten.
 
-Sie müssen die Szenen-Datenbank neu laden, damit die Änderungen wirksam
+Sie müssen die Szeneriebibliothek neu laden, damit die Änderungen wirksam
 werden.
 
 .. _scenery-library-database-exclude:
@@ -624,10 +632,10 @@ Pfad auswählen, der vom Laden ausgeschlossen werden soll
 
 Alle Verzeichnisse, einschließlich der Unterverzeichnisse in dieser
 Liste, werden beim Laden der Szeneriebibliothek in die *Little Navmap*
-Datenbank weggelassen. Sie können diese Liste auch verwenden, um das
-Laden der Datenbank zu beschleunigen, wenn Sie Verzeichnisse
-ausschließen, die keine Flugplätze oder Navigationssysteme enthalten
-(Landklasse, Höhendaten und andere).
+Datenbank ausgelassen. Sie können diese Liste auch verwenden, um das
+Laden der Datenbank zu beschleunigen, indem Sie Verzeichnisse
+ausschließen, die keine Flugplätze oder Navigationsdaten enthalten
+(Landklassen, Höhendaten und andere).
 
 Sie können auch ``BGL``- oder ``DAT``-Dateien bei Bedarf ausschließen.
 
@@ -635,31 +643,31 @@ Beachten Sie, dass Sie in den Datei- oder Verzeichnisdialogen mehr als
 einen Eintrag auswählen können.
 
 Wählen Sie einen oder mehrere Einträge in der Liste aus und klicken Sie
-auf ``Entfernen``, um sie dann aus der Liste zu löschen.
+auf ``Löschen``, um sie dann aus der Liste zu löschen.
 
 .. _scenery-library-database-exclude-add-on:
 
 Pfad auswählen, der von der Add-On Erkennung ausgeschlossen werden soll
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**FSX/P3D:** Alle Scenery-Daten, die außerhalb des Verzeichnisses des
+**FSX/P3D:** Alle Szeneriedaten, die außerhalb des Verzeichnisses des
 Basis-Flugsimulators ``Scenery`` gefunden werden, gelten als Add-on und
 werden auf der Karte hervorgehoben sowie bei der Suche nach Add-ons
 berücksichtigt.
 
-**X-Plane:** Alle Flugplätze im Ordner ``Custom Scenery`` gelten als
+**X-Plane:** Alle Flugplätze, die das Attribut ``3D`` gesetzt haben, gelten als
 Add-On-Flugplätze und werden entsprechend markiert.
 
 Sie können diese Liste verwenden, um dieses Verhalten zu ändern.
 
 Add-ons, wie *Orbx FTX Vector* oder *fsAerodata* fügen Szenerdateien
-hinzu, die bestimmte Aspekte von Flugplätze wie Höhe, magnetische
+hinzu, die bestimmte Aspekte von Flugplätzen wie Höhe, magnetische
 Missweisung oder andere korrigieren. Alle diese Flugplätze werden als
 Add-On-Flugplätze erkannt, da alle ihre Dateien nicht im Verzeichnis des
 Basis-Flugsimulators ``Scenery`` gespeichert sind.
 
 Fügen Sie die entsprechenden Verzeichnisse oder Dateien in diese Liste
-ein, um zu vermeiden, dass diese Flugplätze als Add-Ons unerwünscht
+ein, um zu vermeiden, dass diese Flugplätze unerwünscht als Add-Ons
 hervorgehoben werden.
 
 .. figure:: ../images/optionscenery.jpg
@@ -669,7 +677,7 @@ hervorgehoben werden.
       zwei Verzeichnissen, die von der Add-On-Erkennung ausgeschlossen sind.
 
 Beispiele
-^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vorausgesetzt, Ihr Simulator ist installiert in ``C:\Games\FSX``.
 

@@ -1,28 +1,26 @@
-.. _userpoints:
-
 Nutzerdefinierte Wegpunkte
 --------------------------
 
-Nutzerdefinierte Wegpunkte (oder Nutzerpunkte) ermöglichen das
+Benutzerdefinierte Wegpunkte (oder Nutzerpunkte) ermöglichen das
 Hinzufügen, Bearbeiten, Suchen, Exportieren und Importieren von
 Lesezeichen, Points of Interest, Wegpunkten und mehr. Sie können frei
 wählen, welche Typen Sie als Symbole auf der Karte sehen möchten.
 
 .. figure:: ../images/userpoint_overview.jpg
 
-        Eine Übersicht über die Nutzerpunktfunktionalität, die
-        Informationen über das linke Dockfenster, hervorgehobene Nutzerpunkte
+        Eine Übersicht über die Nutzerpunktfunktionalität:
+        Informationen im linken Dockfenster, hervorgehobene Nutzerpunkte
         auf der Karte, im Suchfenster rechts ausgewählte Nutzerpunkte und das
-        Dropdown-Menü, das durch Anklicken des Nutzerpunkt-Symbols im
-        Dockfenster geöffnet wird..
+        Dropdown-Menü.
 
 .. _userpoints-search:
 
 Nutzerdefinierte Wegpunkt-Suche
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die Funktionalität der Suchfilter und der Ergebnistabelle ist ähnlich
-wie bei der Flugplatz- und Navigationshilfensuche. Siehe :doc:`SEARCH` für Informationen über Suchfilter und
+wie bei der Flugplatz- und Navigationshilfensuche. Siehe
+:doc:`SEARCH` für Informationen über Suchfilter und
 Schaltflächen.
 
 Zusätzliche Kontextmenüelemente und Schaltflächen ermöglichen das
@@ -30,8 +28,8 @@ Hinzufügen, Bearbeiten und Löschen von Nutzerpunkten.
 
 .. _userpoints-top-buttons:
 
-Top-Buttons und zusätzliche Menüpunkte
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Obere Schaltflächen und zusätzliche Menüpunkte
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Siehe :ref:`search-result-table-view-context-menu` für
 eine Beschreibung der gemeinsamen Kontextmenüelemente über alle
@@ -40,8 +38,8 @@ Kontextmenü der Ergebnistabelle.
 
 .. _userpoints-add:
 
-|Add Userpoint| Nutzerpunkt hinzufügen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Add Userpoint| Füge Nutzerpunkt hinzu
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Fügt den Benutzerdaten einen nutzerdefinierten Wegpunkt hinzu.
 
@@ -49,20 +47,20 @@ Einige Felder des neuen Nutzerpunkt-Dialogs werden abhängig von einem
 ausgewählten Nutzerpunkt automatisch oder, wenn in der
 Suchergebnistabelle nichts ausgewählt ist, basierend auf früheren
 Ergänzungen ausgefüllt. Dies ermöglicht es, der Datenbank schnell
-ähnliche Nutzerpunkte hinzuzufügen, ohne dass alle Informationen
+ähnliche Punkte hinzuzufügen, ohne dass alle Informationen
 erneut eingegeben werden müssen.
 
 Beachten Sie, dass Sie die Koordinaten manuell hinzufügen müssen, wenn
-die Dialoge leer beginnen, d.h. in der Ergebnistabelle nichts ausgewählt
-wurde. Fügen Sie Nutzerpunkte über das Kontextmenü :ref:`add-userpoint` hinzu, um dies zu vermeiden
-und die Koordinaten automatisch erstellen zu lassen.
+die Dialoge leer geöffnet werden, d.h. in der Ergebnistabelle nichts ausgewählt
+wurde. Fügen Sie Nutzerpunkte über das Kontextmenü in der Karte (:ref:`add-userpoint`)
+hinzu, um dies zu vermeiden und die Koordinaten automatisch eintragen zu lassen.
 
-Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog.
+Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog: :ref:`userpoints-dialog-add`.
 
 .. _userpoints-edit:
 
-|Edit Userpoint| Nutzerpunkte bearbeiten
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Edit Userpoint| Bearbeite Nutzerpunkt
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Öffnet den Bearbeitungsdialog für einen oder mehrere Nutzerpunkte.
 
@@ -74,44 +72,43 @@ Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog.
 
 .. _userpoints-delete:
 
-|Delete Userpoint| Nutzerpunkt löschen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Delete Userpoint| Entferne Nutzerpunkt
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Entfernt die ausgewählten Nutzerpunkte nach einem Bestätigungsdialog.
+Löscht die ausgewählten Nutzerpunkte nach einem Bestätigungsdialog.
 
 Ein Rückgängigmachen ist nicht möglich, aber bei jedem Start werden
 Datenbanksicherungen erstellt. Weitere Informationen zu
-Datenbank-Backup-Dateien finden Sie unter
+Datenbanksicherungen finden Sie unter
 :ref:`files-userdata`.
 
 .. _userpoints-reset-search:
 
 |Reset Search| Suche zurücksetzen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Löscht die Suchfilter und kehrt zur Anzeige aller Einträge in der
-Tabellenansicht der Suchergebnisse zurück.
+Löscht die Suchfilter und zeigt wieder alle Einträge an.
 
 .. _userpoints-clear-selection:
 
 |Clear Selection| Auswahl aufheben
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Deaktiviert alle markierten Einträge in der Tabelle und entfernt alle
-markierten Kreise aus der Karte.
+Hervorhebungen aus der Karte.
 
 .. _userpoints-help:
 
 |Help| Hilfe
-^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Zeigt eine Kurzhilfe im Tooltip an. Klicken Sie hier, um dieses Kapitel
 des Handbuchs im Standardbrowser zu öffnen.
 
 .. _userpoints-menu:
 
-|Menu Button| Menü-Schaltfläche
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Menu Button| Menüschaltfläche
+'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Dropdown-Menü-Taste, mit der Sie Suchoptionen ein- oder ausblenden
 können.
@@ -122,62 +119,56 @@ aufweist.
 
 .. _userpoints-dialog-add:
 
-Dialogfeld Nutzerpunkte hinzufügen
+Nutzerpunkte hinzufügen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Der Dialog wird angezeigt, wenn Sie im Kontextmenü Karte :ref:`add-userpoint` |Add Userpoint| über die
-oberste Schaltfläche in dem Reiter Nutzerpunkt-Suche oder über
-die Auswahl von ``Nutzerpunkt hinzufügen`` aus dem Kontextmenü in der
-Suchergebnistabelle wählen.
+Der Dialog wird angezeigt, wenn Sie im Kontextmenü der Karte
+:ref:`add-userpoint` |Add Userpoint| auswählen, die
+oberste Schaltfläche in dem Reiter der Nutzerpunkt-Suche anklicken oder
+``Füge Nutzerpunkt hinzu`` im Kontextmenü der
+Suchergebnistabelle auswählen.
 
 Der Dialog wird je nach ausgewähltem Kartenkontext, der Auswahl in der
 Suchergebnistabelle oder früheren Ergänzungen automatisch gefüllt.
 
-``Type`` kann aus einer Dropdown-Liste ausgewählt oder frei eingegeben
+``Typ`` kann aus einer Auswahlliste gewählt oder frei eingegeben
 werden.
 
 Das Feld ``Beschreibung`` erlaubt mehrzeiligen Text und Sonderzeichen.
 Formatierungen wie kursiv oder fett werden nicht unterstützt.
 
-Links werden im Feld ``Beschreibung`` erkannt und können im Dockfenster
-``Information`` auf dem Reiter ``Navigationshilfen`` geöffnet werden, die
-nach dem Anklicken eines Nutzerpunkts oder dem Auswählen von
-``Informationen anzeigen`` in einem der Kontextmenüs angezeigt wird.
-Normale Weblinks wie ``http://www.example.com`` oder
-``https://www.example.com`` werden neben Verzeichnis- oder Dateilinks
-wie z.B. ``file:///C:/Projekte/atools`` unter Windows oder
-``file:///home/alex/Aircraft_Notes.txt`` aus macOS oder Linux erkannt.
+Verweise werden erkannt und können im Fenster ``Informationen`` geöffnet werden.
 
-Normale Weblinks wie ``http://www.example.com`` oder
-``https://www.example.com`` werden neben Verzeichnis- oder Dateilinks
-wie ``file:///C:/Users/me/Documents/Aircraft%20Notes.txt`` unter Windows
-oder ``file:///home/me/Aircraft%20Notes.txt`` unter MacOS oder Linux
-erkannt.
+Normale Verweise wie ``http://www.example.com`` oder
+``https://www.example.com`` werden neben Verzeichnis- oder Dateiverweisen
+wie ``file:///C:/Benutzer/ICH/Dokumente/Notizen%20Flugzeuge.txt`` unter Windows
+oder ``file:///home/ICH/Notizen%20Flugzeuge.txt`` unter MacOS oder Linux erkannt.
 
 Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich ``/``
-anstelle des Backslash ``\`` als Pfadtrennzeichen verwenden müssen.
+anstelle des umgekehrten Schrägstriches ``\`` als Pfadtrennzeichen
+verwenden müssen.
 
-Ersetzen Sie Leerzeichen in Links durch ``%20``, da *Little Navmap*
-Links bis zum nächsten Leerzeichen erkennt.
+Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da
+*Little Navmap* Verweise bis zum nächsten Leerzeichen erkennt.
 
-Das Feld ``Sichtweite von`` ermöglicht die Festlegung der Sichtbarkeit
+Das Feld ``Sichtbar von`` ermöglicht die Festlegung der Sichtbarkeit
 auf der Karte in Abhängigkeit von der Zoomdistanz. Die Zoomdistanz
-(Blickwinkelabstand zur Erdoberfläche) für die aktuelle Kartenansicht
-wird in der :ref:`statusbar` angezeigt. Der
+(Blickabstand zur Erdoberfläche) für die aktuelle Kartenansicht
+wird in der :doc:`STATUSBAR` angezeigt. Der
 Nutzerpunkt ist für alle Zoomabstände sichtbar, die kleiner sind als der
-Wert in ``Sichtweite von``. Der Maximalwert beträgt 3000 nm und der
+Wert in ``Sichtbar von``. Der Maximalwert beträgt 3000 nm und der
 Minimalwert 1 nm.
 
 Zur Bestätigung des Dialogs sind gültige Koordinaten erforderlich. Eine
 detaillierte Beschreibung der erkannten Koordinatenformate finden Sie
-unter :ref:`coordinates-formats`. Ein
+unter :doc:`COORDINATES`. Ein
 Textfeld unter den Koordinaten zeigt die analysierten Koordinaten oder eine
-Fehlermeldung an, falls die Koordinaten nicht analysiert werden konnten.
+Fehlermeldung an, falls die Koordinaten ungültig sind.
 
 Alle anderen Textfelder sind optional und können leer gelassen werden.
 
 Der Benutzerpunkt wird beim nächsten Start von *Little Navmap* entfernt,
-wenn ``Temporärer Benutzerpunkt. Löschen beim nächsten Start``
+wenn ``Temporärer Benutzerpunkt. Beim nächsten Start löschen``
 ausgewählte wurde.
 
 Die Schaltfläche ``Reset`` löscht alle Felder mit Ausnahme der
@@ -185,7 +176,7 @@ Koordinaten und setzt den Typ des Nutzerpunktes auf ``Bookmark``.
 
 .. figure:: ../images/userpoint_add.jpg
 
-      Fügt einen Dialog hinzu, der automatisch durch den
+      Dialog, der automatisch durch den
       Kontext gefüllt wurde. Der Benutzer hat mit der rechten Maustaste auf
       einen Flugplatz geklickt und
       ``Füge Nutzerpunkt Flugplatz Frankfurt am Main (EDDF) hinzu``
@@ -193,7 +184,7 @@ Koordinaten und setzt den Typ des Nutzerpunktes auf ``Bookmark``.
 
 .. _userpoints-dialog-edit:
 
-Dialog Nutzerpunkte bearbeiten
+Nutzerpunkte bearbeiten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ein einzelner Nutzerpunkt
@@ -209,11 +200,11 @@ Zusätzliche Metadaten werden unten angezeigt:
 -  **Importiert aus Datei:** Datei und Pfad der Quelldatei aus dem CSV-,
    X-Plane- oder Garmin-Import. Sie können die Nutzerpunktsuche nach
    diesem Namen filtern.
--  **Temporärer Nutzerpunkt - wird beim nächsten Start gelöscht.** Dies
-   bedeutet, dass der Benutzerpunkt temporär ist.
+-  **Temporärer Nutzerpunkt - wird beim nächsten Start gelöscht.** Zeigt einen
+   temporären Nutzerpunkt an.
 
-Die Schaltfläche ``Reset`` macht alle manuellen Änderungen rückgängig
-und setzt alle Felder in ihren ursprünglichen Zustand zurück.
+Die Schaltfläche ``Zurücksetzen`` macht alle manuellen Änderungen rückgängig
+und setzt alle Felder auf ihren ursprünglichen Zustand zurück.
 
 .. figure:: ../images/userpoint_edit.jpg
 
@@ -226,12 +217,12 @@ Wenn mehr als ein Nutzerpunkt zur Bearbeitung ausgewählt wurde, zeigt
 der Bearbeitungsdialog auf der rechten Seite eine Spalte mit
 Kontrollkästchen an.
 
-Wenn diese Option aktiviert ist, wird das linke Feld entsperrt und der
-eingegebene Text wird in allen ausgewählten Nutzerpunkten dem
-jeweiligen Feld zugeordnet. Nicht angekreuzte Felder werden für keinen
+Wenn diese aktiviert werden, wird das jeweils linke Feld entsperrt und der
+eingegebene Text in allen ausgewählten Nutzerpunkten dem
+zugeordnet. Nicht angekreuzte Felder werden für keinen
 der Nutzerpunkte geändert.
 
-In Kombination mit der leistungsstarken Suchfunktion ermöglicht dies
+In Kombination mit der Suchfunktion ermöglicht dies
 Massenänderungen wie das Fixieren eines ungültigen Bereichs und die
 gleichzeitige Änderung des Sichtbarkeitsbereichs für die betroffenen
 Nutzerpunkte:
@@ -243,7 +234,7 @@ Nutzerpunkte:
    Spaltenüberschrift klicken.
 #. Klicken Sie mit der rechten Maustaste auf einen der markierten
    Nutzerpunkte und wählen Sie im Kontextmenü
-   ``Nutzerpunkte bearbeiten``.
+   ``Bearbeite Nutzerpunkte``.
 #. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld
    ``Region:`` und ändern Sie die Region.
 #. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld
@@ -281,47 +272,42 @@ Flugplätze
 
 -  |Airport| **Airport**: Standard beim Erstellen eines Nutzerpunktes
    auf einem Flugplatz.
--  |Airstrip| **Airstrip**
--  |Closed| **Closed airport**
--  |Helipad| **Helipad**
--  |Seaport| **Seaport**
+-  |Airstrip| **Airstrip**: Kleiner Flugplatz.
+-  |Closed| **Closed airport**. Geschlossener Flugplatz.
+-  |Helipad| **Helipad**: Heliport.
+-  |Seaport| **Seaport**: Wasserlandeplatz.
 
 Navigationshilfen
 ^^^^^^^^^^^^^^^^^^^^
 
--  |DME| **DME**: Entfernungsmessgeräte.
--  |NDB| **NDB**: Non-directional beacon.
--  |TACAN| **TACAN**: Taktisches Flugsicherungssystem.
--  |VORDME| **VORDME**: VHF-Rundstrahlungsbereich und DME.
--  |VORTAC| **VORTAC**: VOR und TACAN.
--  |VOR| **VOR**: VHF-Rundstrahlungsbereich.
+-  |DME| **DME**
+-  |NDB| **NDB**
+-  |TACAN| **TACAN**
+-  |VORDME| **VORDME**
+-  |VORTAC| **VORTAC**
+-  |VOR| **VOR**
 -  |VRP| **VRP**: Visueller Meldepunkt.
--  |Waypoint| **Waypoint**: Standardeinstellung beim Erstellen eines
+-  |Waypoint| **Waypoint**: Wegpunkt. Standardeinstellung beim Erstellen eines
    Benutzerpunkts auf einer Navigationshilfe.
 
 Sehenswürdigkeiten
 ^^^^^^^^^^^^^^^^^^
 
--  |Airport| **Airport**: Standard beim Erstellen eines Nutzerpunktes
-   auf einem Flugplatz.
--  |Airstrip| **Airstrip**
--  |Bookmark| **Bookmark**: Standardtyp für neue Nutzerpunkte.
--  |Cabin| **Cabin**
--  |Error| **Error**
--  |Flag| **Flag**
--
-
-   -  |Lighthouse| **Leuchtturm**
-
--  |Location| **Location**
--  |Logbook| **Logbook**. Auch Legacy-Logbuch-Eintrag.
+-  |Bookmark| **Bookmark**: Lesezeichen. Standardtyp für neue Nutzerpunkte.
+-  |Cabin| **Cabin**: Hütte.
+-  |Error| **Error**: Fehler.
+-  |Flag| **Flag**: Flagge.
+-  |Lighthouse| **Lighthouse**: Leuchtturm.
+-  |Location| **Location**: Ort.
+-  |Logbook| **Logbook**. Logbucheinträge des alten Logbuchsytems.
 -  |Marker| **Marker**
--  |Mountain| **Mountain**
--  |Obstacle| **Obstacle**
--  |POI| **POI**
--  |Pin| **Pin**
--  |Unknown| **Unknown**: Typ namens ``Unbekannt`` und alle Typen, die
-   nicht mit den Standardtypen in dieser Liste übereinstimmen.
+-  |Mountain| **Mountain**: Berg.
+-  |Obstacle| **Obstacle**: Hindernis.
+-  |POI| **POI**: Point of interest. Sehenswürdigkeit.
+-  |Pin| **Pin**: Nadel.
+
+|Unknown| **Unknown**: Unbekannt. Der Typ ``Unknown`` und alle Type die keinen
+in den obigen Listen entsprechen.
 
 .. _userpoints-csv:
 
@@ -334,19 +320,20 @@ Flugsimulatorgemeinschaft und anderen Anwendungen verwendet wird.
 Jede Zeile in der Datei repräsentiert einen benutzerdefinierten
 Wegpunkt.
 
-Die Mindestfelder für den Import sind ``Typ``, ``Name``, ``Ident``,
-``Breitengrad`` und ``Längengrad``. Nur ``Breitengrad`` und
-``Längengrad`` müssen ausgefüllt werden, der Rest kann leer sein.
+Die empfohlenen Mindestfelder für den Import sind ``Typ``, ``Name``, ``Kennung``,
+``Breitengrad`` und ``Längengrad``.
+
+Nur ``Breitengrad`` und ``Längengrad`` sind zwingend notwendig, der Rest kann leer sein.
 
 Alle zwölf Felder werden beim Export von Nutzerpunkten als CSV
 gespeichert. Außerdem wird das mehrzeilige Feld ``Beschreibung`` bei
 Bedarf in Anführungszeichen gesetzt und berücksichtigt Zeilenumbrüche.
 
-Das englische Zahlenformat (dot ``.`` als Dezimaltrennzeichen) wird beim
+Das englische Zahlenformat (Punkt ``.`` als Dezimaltrennzeichen) wird beim
 Import und Export verwendet, um den Austausch von Dateien auf Computern
-mit unterschiedlichen Sprach- und Ländereinstellungen zu ermöglichen.
+mit unterschiedlichen Sprach- und Regionseinstellungen zu ermöglichen.
 
-*Little Navmap* ntzt `UTF-8 <https://en.wikipedia.org/wiki/UTF-8>`__
+*Little Navmap* nutzt die `UTF-8 <https://de.wikipedia.org/wiki/UTF-8>`__
 Kodierung beim Lesen und Schreiben von Dateien. Dies ist nur von
 Bedeutung, wenn Sie Sonderzeichen wie Umlaute, Akzente oder andere
 verwenden. Andernfalls spielt die Kodierung keine Rolle.
@@ -354,39 +341,50 @@ verwenden. Andernfalls spielt die Kodierung keine Rolle.
 Wenn eine Anwendung eine CSV-Datei, die von *Little Navmap* exportiert
 wurde, nicht lädt, verwenden Sie `LibreOffice Calc <https://www.libreoffice.org>`__, *Microsoft Excel* oder eine
 andere Tabellenkalkulationssoftware, die CSV-Dateien lesen und schreiben
-kann, um die exportierte Datei an das von dieser Anwendung erwartete
-Format anzupassen.
+kann, um die exportierte Datei anzupassen.
 
-Detaillierte Informationen zum Format finden Sie unter `Kommagetrennte Werte <https://en.wikipedia.org/wiki/Comma-separated_values>`__ in der
-Wikipedia.
+Detaillierte Informationen zum Format finden Sie unter `CSV (Dateiformat) <https://de.wikipedia.org/wiki/CSV_(Dateiformat)>`__ in der Wikipedia.
 
-**Beispiel für einen absolut minimalen Benutzerpunkt, der nur aus
-Koordinaten besteht:**
+Beispiele
+^^^^^^^^^^^^^
 
-``,,,49.0219993591,7.8840069771`` ``Sichtbar von`` wird auf den Standard
+Beispiel für einen absolut minimalen Benutzerpunkt, der nur aus
+Koordinaten besteht:
+
+.. code-block:: none
+
+   ,,,49.0219993591,7.8840069771
+
+``Sichtbar von`` wird auf den Standard
 von 250 nm gesetzt und der Benutzerpunkt wird nach dem Import mit dem
-Symbol ``Unbekannt`` |Unknown| angezeigt.
+Symbol ``Unknown`` |Unknown| angezeigt.
 
-**Beispiel für einen minimalen Nutzerpunkt-Datensatz mit
-Typ** ``Mountain`` **, Kennung und Name für den Import:**
+Beispiel für einen minimalen Nutzerpunkt-Datensatz mit
+Typ ``Mountain`` , Kennung und Name für den Import:
 
-``Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771``
-``Sichtbar von`` wird nach dem Import auf den Standard von 250 nm
-gesetzt.
+.. code-block:: none
 
-**Beispiel für einen exportierten Benutzerpunkt mit
-Typ** ``Mountain``  und allen eingestellten Feldern:
+    Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771
 
-``Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771,1200,2.0085027218,"View,Interesting,Point","Interesting point ""Eselsberg"" - nice view",ED,250,2018-05-17T17:44:26.864``
+``Sichtbar von`` wird nach dem Import auf den Standard von 250 nm gesetzt.
 
-Beachten Sie die folgenden Einschränkungen beim Verarbeiten von
-CSV-Dateien: Im Feld ``Tags`` wird die Liste
+Beispiel für einen exportierten Benutzerpunkt mit
+Typ ``Mountain``  und allen eingestellten Feldern:
+
+.. code-block:: none
+
+   Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771,1200,2.0085027218,"View,Interesting,Point","Interesting point ""Eselsberg"" - nice view",ED,250,2018-05-17T17:44:26.864
+
+Beachten Sie die folgenden Besonderheiten beim Verarbeiten von
+CSV-Dateien:
+
+Im Feld ``Tags`` wird die Liste
 ``"View,Interesting,Point"`` in Anführungszeichen gesetzt, da sie Kommas
 enthält. Die Feldbeschreibung
 ``"Interesting point ""Eselsberg"" - nice view "`` ist in
 Anführungszeichen gesetzt, da der Text selbst ein Paar doppelter
 Anführungszeichen (``"Eselsberg"``) enthält, die wiederum durch jeweils
-ein weiteres doppeltes Anführungszeichen entkommen sind.
+ein weiteres doppeltes Anführungszeichen maskiert werden.
 
 CSV Felder
 ^^^^^^^^^^
@@ -394,23 +392,23 @@ CSV Felder
 ========   =====================   ============   ============   =========================================================================================================================================================================================================================================
 Position   Name                    Erforderlich   Leer erlaubt   Kommentar
 ========   =====================   ============   ============   =========================================================================================================================================================================================================================================
-1          Type                    Ja             Ja             Einer der vordefinierten oder benutzerdefinierten Typen. Das Symbol für ``Unbekannt`` wird verwendet, wenn der Typ nicht mit einem der bekannten Typen übereinstimmt.
+1          Type                    Ja             Ja             Einer der vordefinierten oder benutzerdefinierten Typen. Das Symbol für ``Unknown`` wird verwendet, wenn der Typ nicht mit einem der bekannten Typen übereinstimmt.
 2          Name                    Ja             Ja             Freies Feld. Wird für den Garmin-Export verwendet.
 3          Ident                   Ja             Ja             Kennung. Nur für den Export von Garmin und X-Plane erforderlich. Muss ein eindeutiger gültiger Identifikator mit maximal fünf Zeichen für diese Exporte sein.
 4          Latitude                Ja             Nein           Breitengrad. Bereich von -90 bis 90 Grad mit Punkt ``.`` als Dezimaltrennzeichen.
 5          Longitude               Ja             Nein           Längengrad. Bereich von -180 bis 180 Grad mit Punkt ``.`` als Dezimaltrennzeichen.
-6          Altitude                Nein           Ja             Höhe. Muss eine gültige Zahl sein, wenn sie verwendet wird. Die Einheit ist immer feet.
+6          Altitude                Nein           Ja             Höhe. Muss eine gültige Zahl sein, wenn sie verwendet wird. Die Einheit ist immer Fuß.
 7          Magnetic declination    Nein           Ja             Magnetische Missweisung. Wird beim Import ignoriert und beim Export auf einen gültigen berechneten Wert gesetzt.
 8          Tags                    Nein           Ja             Ediketten. Freies Feld. Die Benutzeroberfläche hat keine spezielle Stichwortsuche.
 9          Description             Nein           Ja             Beschreibung. Frei verwendbares Feld, das Zeilenumbrüche erlaubt.
 10         Region                  Nein           Ja             ICAO-Region mit zwei Buchstaben für einen Nutzerpunkt oder Wegpunkt. Wird für den Export von X-Plane verwendet. Ersetzt durch den Standardwert ``ZZ`` beim X-Plane Export, wenn dieser leer ist.
-11         Visible from            Nein           Ja             Definiert, ab welcher Zoomdistanz in Seemeilen (angezeigt in :ref:`statusbar`) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.
+11         Visible from            Nein           Ja             Definiert, ab welcher Zoomdistanz in nautischen Meilen (angezeigt in :doc:`STATUSBAR`) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.
 12         Last update timestamp   Nein           Ja             ISO-Datum und Uhrzeit der letzten Änderung. Das Format ist unabhängig von den Einstellungen des Systemdatumsformats. Format: ``YYYY-MM-DDTHH:mm:ss``. Beispiel: ``2018-03-28T22:06:16.763``. Nicht in der Benutzeroberfläche bearbeitbar.
 ========   =====================   ============   ============   =========================================================================================================================================================================================================================================
 
 .. _userpoints-xplane:
 
-X-Plane User_fix.dat Data Format
+X-Plane user_fix.dat Datenformat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Dies ermöglicht das Lesen und Schreiben der X-Plane ``user_fix.dat``
@@ -428,10 +426,10 @@ Tabulatorzeichen getrennt sind.
 
 Es gibt fünf Datenspalten in der Datei:
 
-#. Latitude
-#. Longitude
-#. Ident
-#. Airport ident
+#. Breitengrad
+#. Längengrad
+#. Kennung
+#. Flugplatzkennung
 #. Region
 
 **Beispiel für** ``user_fix.dat`` **:**
@@ -449,35 +447,34 @@ Es gibt fünf Datenspalten in der Datei:
 .. note::
 
       Beachten Sie, dass die nutzerdefinierten Wegpunkte zwar nicht auf der
-      X-Plane Karte dargestellt werden, aber ausgewählt und verwendet werden
-      können, um Flugpläne im X-Plane Bestands GPS und FMS zu erstellen.
+      X-Plane Karte dargestellt werden, aber im X-Plane GPS und FMS verwendet werden
+      können.
 
 Import
 ^^^^^^
 
-**Beispielzeile aus** ``user_fix.dat``  oben:
+**Beispielzeile aus** ``user_fix.dat``  **oben:**
 
 ``50.88166700  12.58666700 PACEC ENRT ZZ``
 
 -  Die Koordinaten werden in die *Little Navmap* Nutzerpunkt-Koordinaten
    eingelesen.
--  Die Fix-Id ``PACEC`` wird in das Feld **Ident** in *Little Navmap*
-   eingelesen.
+-  ``PACEC`` wird in das Feld **Kennung** in *Little Navmap* eingelesen.
 -  Der festgelegte Flugplatz ``ENRT`` (enroute: kein Flugplatz hier)
    wird in das Feld **Tags** in *Little Navmap* eingelesen.
 -  Die Region ``ZZ`` (ungültig oder keine Region) wird in das Feld
    **Region** in *Little Navmap* eingelesen.
--  **Type** wird auf ``Wegpunkt`` |Waypoint| für alle importierten
-   Korrekturen gesetzt.
+-  **Typ** wird auf ``Waypoint`` |Waypoint| für alle importierten
+   Punkte gesetzt.
 
 Export
 ^^^^^^
 
-Das Mapping ist das Gleiche wie beim Import.
+Das Zuweisung ist das Gleiche wie beim Import.
 
--  Ident to fix ident.
--  Tags to fix airport.
--  Region to fix region.
+-  Kennung zu fix ident.
+-  Tags zu fix airport.
+-  Region zu fix region.
 
 Alle anderen Felder werden ignoriert.
 
@@ -485,7 +482,7 @@ Die Kennung wird so eingestellt, dass sie einer bis zu fünfstelligen
 Buchstabenkombination entspricht. Eine generierte Kennung wird
 verwendet, wenn dies nicht möglich ist oder die Kennung leer ist.
 
-Der Fix-Flugplatz ist beim Export immer ``ENRT``.
+Die Flugplatzkennung ist beim Export immer ``ENRT``.
 
 Der Bereich ist auf eine zweistellige Buchstabenzahl und eine
 Buchstabenkombination eingestellt. ``ZZ`` wird verwendet, wenn dies
@@ -495,8 +492,8 @@ nicht möglich ist oder der Bereich leer ist.
 
         Die Kennung muss in der ``user_fix.dat``  eindeutig sein.
         Daher wird empfohlen, für jeden Wegpunkt manuell eine eindeutige
-        Kennung festzulegen oder das Feld leer zu lassen, damit **Little
-        Navmap** beim Export eine Kennung erzeugen kann.
+        Kennung festzulegen oder das Feld leer zu lassen, damit *Little
+        Navmap* beim Export eine Kennung erzeugen kann.
 
 .. _userpoints-garmin:
 
@@ -508,10 +505,10 @@ Datei repräsentiert einen eindeutigen Nutzer-Wegpunkt.
 
 Es müssen vier Spalten mit Daten in der Datei vorhanden sein:
 
-#. Waypoint ident
-#. Waypoint name or description
-#. Latitude
-#. Longitude
+#. Wegpunktkennung
+#. Wegpunktname oder Beschreibung
+#. Breitengrad
+#. Längengrad
 
 **Beispiel für eine** ``user.wpt`` **Datei**:
 
@@ -536,17 +533,17 @@ an.
 Import
 ^^^^^^
 
-**Beispielzeile aus** ``user.wpt``  oben:
+**Beispielzeile aus** ``user.wpt``  **oben:**
 
 ``MTHOOD,MT HOOD PEAK,45.3723,-121.69783``
 
--  Die Kennung ``MTHOOD`` wird in das Feld **Ident** in *Little
+-  Die Kennung ``MTHOOD`` wird in das Feld **Kennung** in *Little
    Navmap* eingelesen.
 -  Der Name ``MT HOOD PEAK`` wird in das Feld **Name** in *Little
    Navmap* eingelesen.
 -  Die Koordinaten werden in die *Little Navmap* Nutzerpunkt-Koordinaten
    eingelesen.
--  **Type** wird auf ``Wegpunkt`` |Waypoint| für alle importierten
+-  **Typ** wird auf ``Waypoint`` |Waypoint| für alle importierten
    Wegpunkte gesetzt.
 
 Export
@@ -555,9 +552,11 @@ Export
 Die Zuordnung von Feldern ist identisch mit dem Import, aber alle Felder
 sind an die Beschränkungen angepasst.
 
-Hinweis: Wenn ein importierter Wegpunkt innerhalb von 0,001° Breitengrad
-und Längengrad eines vorhandenen Nutzer-Wegpunktes im GTN liegt, wird
-der vorhandene Wegpunkt und Name wiederverwendet.
+.. note::
+
+       Wenn ein importierter Wegpunkt innerhalb von 0,001° Breitengrad
+       und Längengrad eines vorhandenen Nutzer-Wegpunktes im GTN liegt, wird
+       der vorhandene Wegpunkt und Name wiederverwendet.
 
 .. _userpoints-bgl:
 
@@ -587,17 +586,17 @@ Simulator finden Sie in der Dokumentation Prepar3D SDK.
 
 .. _userpoints-data-format:
 
-Datenbank-Backup-Dateien
+Datenbanksicherungen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* erstellt bei jedem Start eine vollständige
-Datenbanksicherung, da die Undo-Funktionalität für Nutzerpunkte nicht
+Sicherung, da die Undo-Funktionalität für Nutzerpunkte nicht
 verfügbar ist.
 
-Sie können den CSV-Export auch verwenden, um Backups manuell zu
+Sie können auch den CSV-Export verwenden, um Backups manuell zu
 erstellen, da CSV den Export des gesamten Datensatzes ermöglicht.
 
-Weitere Informationen zu Datenbank-Backup-Dateien finden Sie unter
+Weitere Informationen zu Datenbanksicherungen finden Sie unter
 :ref:`files-userdata`.
 
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png

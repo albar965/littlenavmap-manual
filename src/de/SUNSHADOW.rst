@@ -1,5 +1,3 @@
-.. _sun-shadow:
-
 |Sun Shading Icon| Sonnenschatten
 ---------------------------------
 
@@ -10,11 +8,11 @@ als auch ``Sphärisch``.
 Aktivieren Sie den Schatten im Menü ``Ansicht`` ->
 :ref:`show-sun-shading`.
 
-Sie können die Zeitangabe für den Sonneschatten unter ``Ansicht`` ->
+Sie können die Zeitbasis für den Sonneschatten unter ``Ansicht`` ->
 :ref:`show-sun-shading-time` ändern.
 
-Die Schattendunkelheit kann im Dialog ``Einstellungen`` auf dem
-Reiter ``Kartenanzeige``, ``Sonnenschattierung verdunkeln`` am
+Die Dunkelheit des Schattens kann im Dialog ``Einstellungen`` auf der
+Seite :ref:`map-display-2`, ``Sonnenschattierung verdunkeln`` am
 unteren Rand des Dialogs geändert werden.
 
 .. figure:: ../images/sunshadow.jpg
@@ -34,7 +32,7 @@ von der Simulatorzeit aktualisiert.
    Fällt auf Echtzeit zurück, wenn er nicht mit einem Simulator
    verbunden ist. Aktualisiert den Schatten automatisch, wenn sich die
    Zeit im Simulator ändert.
--  ``Real UTC Time``: Verwendet immer die Echtzeit.
+-  ``Reale UTC Zeit``: Verwendet immer die Echtzeit.
 -  ``Benutzerdefinierte Zeit``: Ermöglicht die Verwendung der
    benutzerdefinierten Zeit, wie sie durch
    ``Benutzerdefinierte Zeit einstellen`` unten geändert wurde.
@@ -44,13 +42,15 @@ von der Simulatorzeit aktualisiert.
 Benutzerdefinierte Zeit einstellen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Das Menü ``Ansicht`` -> ``Sonnenschattenzeit`` ->
+Das Menü ``Ansicht`` -> ``Sonnenschatten Zeit`` ->
 ``Benutzerdefinierte Zeit einstellen`` öffnet einen Dialog, um eine
 benutzerdefinierte Zeit in UTC als Quelle für den Sonnenschatten
 einzustellen.
 
-Sie können den Dialog vom Kartenfenster wegbewegen und die Ergebnisse
-sofort sehen, indem Sie auf die Schaltfläche ``Anwenden`` klicken.
+.. tip::
+
+    Sie können den Dialog vom Kartenfenster wegbewegen und die Ergebnisse
+    sofort sehen, indem Sie auf die Schaltfläche ``Anwenden`` klicken.
 
 .. note::
 

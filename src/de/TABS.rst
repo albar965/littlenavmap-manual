@@ -1,9 +1,9 @@
-Tabulatoren
+Reiter
 -----------
 
-Die Dockfenster ``Flugplanung``, ``Information``, ``Simulatorflugzeug``
-und ``Suche`` verfügen über Reiter, mit denen Sie diese
-schließen, öffnen und verschieben können.
+Die Dockfenster ``Flugplanung``, ``Informationen``, ``Simulatorflugzeug``
+und ``Suche`` verfügen über Reiterleisten, die es erlauben Reiter
+(auch Tabs oder Registerkarten genannt) zu öffnen, zu schließen und zu verschieben.
 
 Tooltips geben weitere Informationen über die Funktion der Reiter.
 
@@ -19,15 +19,15 @@ die Reiterschaltfläche |Tab Button| hat die folgenden Menüpunkte:
 -  ``Alle öffnen``: Öffnet alle Reiter. Alle geschlossenen Reiter
    werden wieder geöffnet und auf der rechten Seite der Reiterleiste
    hinzugefügt.
--  ``Alle auer aktiven schließen:``: Alle Reiter werden
+-  ``Alle außer aktiven schließen:``: Alle Reiter werden
    geschlossen, mit Ausnahme des aktiven.
--  ``Reiteranordnung zurücksetzen``: Öffnet wieder alle
-   geschlossenen Reiter und stellt die Standardreihenfolge
+-  ``Reiteranordnung zurücksetzen``: Öffnet alle
+   geschlossenen Reiter wieder und stellt die Standardreihenfolge
    wieder her.
 -  ``Sperre Anordnung der Reiter``: Versteckt die
    Schließen-Schaltflächen, um ein versehentliches Schließen zu
    vermeiden. Das Bewegen durch Klicken und Ziehen sowie das Schließen
-   durch Doppelklicken werden deaktiviert. Eine gesperrte Reiterleiste nimmt
+   durch Doppelklick werden deaktiviert. Eine gesperrte Reiterleiste nimmt
    auch weniger Platz ein. Sie können die Reiter weiterhin über
    das Kontextmenü oder die Menütaste schließen und öffnen.
 -  ``Reiter ... schließen``: Nur im Kontextmenü sichtbar. Schließt
@@ -52,7 +52,7 @@ Reiter für gestapelte Dockfenster
 Reiter am unteren Rand eines Fensters werden angezeigt, wenn Sie
 Dockfenster aufeinander legen. Wählen Sie eine Fenstertitelzeile, um ein
 Fenster aus dem gestapelten Display zu verschieben. Sie können die
-Reihenfolge der Reiter auch ändern, indem Sie Sie mit der
+Reihenfolge der Reiter ändern, indem Sie Sie mit der
 Maus verschieben.
 
 Weitere Informationen über gestapelte Dockfenster finden Sie unter

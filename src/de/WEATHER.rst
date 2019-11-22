@@ -1,10 +1,8 @@
-.. _weather:
-
 Wetter
 ------
 
 *Little Navmap* kann Wetter als METARs und dekodiertes Wetter im
-Informationsfenster und Tooltips sowie Wettersymbole auf der Karte
+Informationsfenster und Tooltips, sowie Wettersymbole auf der Karte
 anzeigen.
 
 Das Wetter kann aus den folgenden Quellen entnommen werden:
@@ -22,15 +20,16 @@ Das Wetter kann aus den folgenden Quellen entnommen werden:
    -  *Active Sky Next* (ASN)
    -  *AS16*
    -  *Active Sky for Prepar3D v4* (ASP4)
+   -  *ASX* für X-Plane
 
 Sie können im Dialogfeld ``Einstellungen`` auf der Seite
-``Wetter`` oder auf dem Reiter ``Wetter`` im Dockfenster
-``Information`` festlegen, welche Quellen zur Anzeige der
-METAR-Informationen in Tooltips verwendet werden.
+``Wetter`` festlegen, welche Quellen zur Anzeige der
+METAR-Informationen  auf dem Reiter ``Wetter`` im Dockfenster
+``Informationen`` oder in Tooltips verwendet werden.
 
 Sie müssen den Basispfad für X-Plane im Dialogfeld
 ``Load Scenery Library`` festlegen, um das Lesen der Wetterdatei zu
-ermöglichen. Bestimmte Funktionen wie Bereiche von manuell erstellten
+ermöglichen. Bestimmte Funktionen wie Bereiche in manuell erstellten
 Wetterdateien werden nicht unterstützt.
 
 METARs werden in den Flugplatz-Tooltips und auf der Übersichtskarte
@@ -51,20 +50,20 @@ sind.
       Flugzeugs. Beachten Sie, dass *Little Navmap* Informationen aus einer
       veralteten oder inaktiven heruntergeladenen Wetterdatei anzeigen kann.
 
-Außerdem können Wetter und nächstes Wetter in X-Plane ungenau sein. Dies
-ist auf die Interpolation zwischen den Wetterstationen zurückzuführen.
-Ein weiteres Problem ist, dass X-Plane auf das Standardwetter
-zurückfällt, wenn ein METAR nicht dekodiert werden kann, obwohl es in
-*Little Navmap* korrekt gemeldet wird.
+      Außerdem können Wetter und nächstes Wetter in X-Plane ungenau sein. Dies
+      ist auf die Interpolation zwischen den Wetterstationen zurückzuführen.
+      Ein weiteres Problem ist, dass X-Plane auf das Standardwetter
+      zurückfällt, wenn ein METAR nicht dekodiert werden kann, obwohl es in
+      *Little Navmap* korrekt gemeldet wird.
 
 .. figure:: ../images/weather.jpg
 
         Dekodierte Wetterinformationen von X-Plane und NOAA.
         Die Wettersymbole auf der Karte verwenden NOAA als Quelle.
-        (Suffix ``- Map``  nach den Flugregeln). Das X-Plane-Wetter ist
+        (Suffix ``- Karte``  nach den Flugregeln). Das X-Plane-Wetter ist
         älter als sechs Stunden und daher rot markiert.
 
-Wetter-Quellen
+Wetterquellen
 ~~~~~~~~~~~~~~
 
 Flugsimulator
@@ -75,16 +74,16 @@ fallen je nach ausgewähltem Flugplatz in eine von drei Kategorien:
 
 -  ``Station``: Der Flugplatz verfügt über eine Wetterstation. Dies ist
    die genaueste Wetteranzeige.
--  ``Nearest``: Der ausgewählte Flugplatz hat keine Wetterstation und
-   der Bericht von der nächstgelegenen bestehenden Wetterstation wurde
-   abgeholt. Die Kennung der nächstgelegenen Station sowie Entfernung
+-  ``Nahes``: Der ausgewählte Flugplatz hat keine Wetterstation und
+   der Bericht wurde von der nächstgelegenen Wetterstation geholt.
+   Die Kennung der nächstgelegenen Station sowie Entfernung
    und Höhe werden im METAR und auf der decodierten Wetterkarte
    angezeigt. Beachten Sie, dass die Wetterstation nicht unbedingt ein
    Flugplatz ist.
--  ``Interpolated`` (nicht für X-Plane): Das Wetter wird vom
+-  ``Interpoliert`` (nicht für X-Plane): Das Wetter wird vom
    Flugsimulator von drei Stationen interpoliert, die dem ausgewählten
-   Flugplatz am nächsten sind. FSX und P3D bieten nur nicht
-   interpoliertes Wetter für Flugplätze in der Nähe des
+   Flugplatz am nächsten sind. FSX und P3D bieten nicht
+   interpoliertes Wetter nur für Flugplätze in der Nähe des
    Benutzerflugzeugs. Das Wetter für andere Flugplätze wird immer
    interpoliert. Die Kennung des ausgewählten Flugplatzs wird im
    METAR-Report für diese Art von Wetterbericht verwendet.
@@ -93,13 +92,7 @@ Das Wetter im Flugsimulator wird alle 15 Sekunden aktualisiert, um
 manuelle Änderungen oder Änderungen im Wetterschema zu erfassen.
 
 *Little Navmap* beobachtet die X-Plane- ``METAR.rwx`` Datei auf
-Änderungen und wird Updates sofort anwenden.
-
-.. note::
-
-        Beachten Sie, dass das nächstgelegene Wetter nicht unbedingt das Wetter
-        an der ausgewählten Station darstellt, da die Interpolation zwischen
-        mehreren Stationen durch den Simulator erfolgt.
+Änderungen und wird Aktualisierungen sofort anwenden.
 
 Online - NOAA, VATSIM und IVAO
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -112,11 +105,11 @@ Active Sky
 Alle *Active Sky* Programme werden beim Start für jeden Simulator
 automatisch erkannt. Die Dateien ``current_wx_snapshot.txt`` und
 ``activeflightplanwx.txt`` werden geladen und auf Änderungen überwacht.
-Das Wetter wird, falls erforderlich, in der Informationsanzeige neu
-geladen und aktualisiert.
+Das Wetter wird in der Informationsanzeige neu
+geladen und aktualisiert, falls erforderlich.
 
 Sie können die Datei ``current_wx_snapshot.txt`` auch manuell auswählen.
-In diesem Fall werden die METARs aus dieser Datei werden für alle
+In diesem Fall werden die METARs aus dieser Datei für alle
 installierten Flugsimulatoren angezeigt. Die Datei
 ``activeflightplanwx.txt`` wird aus dem selben Verzeichnis geladen.
 
@@ -135,8 +128,8 @@ Navmap* abhängt.
 
 .. _airport-weather:
 
-Airport Wetter
-~~~~~~~~~~~~~~
+Flugplatzwetter
+~~~~~~~~~~~~~~~~
 
 *Little Navmap* kann Wettersymbole für Flugplätze mit einer Wetterstation
 für alle verfügbaren Wetterquellen anzeigen. Wählen Sie die Quellen für
@@ -146,12 +139,11 @@ Beachten Sie, dass das Flugplatzwetter nur für Stationen angezeigt und
 nicht interpoliert wird. Stationen, die keine Flugplätze sind, werden
 nicht unterstützt.
 
-Ein Suffix ``- Map`` wird den Flugregeln im METAR hinzugefügt und
-dekodiert die Wetteranzeige des Informationsfensters und der Tooltips,
+Ein Suffix ``- Karte`` wird den Flugregeln im METAR, der
+dekodierten Wetteranzeige des Informationsfensters und der Tooltips hinzugefügt,
 um anzuzeigen, welche Quelle auf der Karte angezeigt wird.
 
-Siehe auch :ref:`airport-weather` für
-eine Beschreibung der Symbole.
+Siehe auch :ref:`airport-weather-legend` für eine Beschreibung der Symbole.
 
 .. figure:: ../images/weather_map.jpg
 
@@ -161,26 +153,26 @@ eine Beschreibung der Symbole.
 .. _wind:
 
 Höhenwinde
-^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 *Little Navmap* kann Höhenwinde herunterladen und anzeigen, die entweder
-auf X-Plane oder den Daten der [National Oceanic and Atmospheric
-Administration] (https://www.noaa.gov/) basieren.
+auf X-Plane oder den Daten der
+NOAA (`National Oceanic and Atmospheric Administration <https://www.noaa.gov/>`__) basieren.
 
 Letztere sind Höhenwindvorhersagen, die viermal täglich aktualisiert
 werden und von den meisten Simulatoren und Wetterprogrammen als
 Datenquelle genutzt werden. Die Windgeschwindigkeit und -richtung ist in
 einem Ein-Grad-Raster angeordnet.
 
-*Little Navmap* kann ein Windparchengitter für eine ausgewählte
+*Little Navmap* kann Windsymbole in einen Raster für eine ausgewählte
 Windschicht oder an Flugplan-Wegpunkten anzeigen. Tooltips an den
-Windfäden zeigen Winddetails für mehrere Ebenen an der Position.
+Windsymbolen zeigen Details für mehrere Ebenen an der Position.
 
 Wenn Sie mit der Maus über das Höhenprofil fahren, wird der Wind an der
 Flugplanposition angezeigt. Siehe :ref:`top-label`.
 
-Winde werden zur Berechnung der Flugzeit, des Reisetreibstoffs, des
-Blocktreibstoffs, des top of descent und des top of climb verwendet.
+HöhenWinde werden zur Berechnung der Flugzeit, des Reisetreibstoffs,
+des Steigflugendes und des Sinkflugbeginns verwendet.
 
 Eine manuelle Windeinstellung für die Reiseflughöhe kann ebenfalls
 vorgenommen werden. Siehe :ref:`aircraft-performance-buttons`.
@@ -188,33 +180,32 @@ vorgenommen werden. Siehe :ref:`aircraft-performance-buttons`.
 Unter :ref:`high-alt-wind` finden Sie
 eine Erklärung der Windsymbole und unter :ref:`weather` weitere Konfigurationsmöglichkeiten.
 
-Winddatenquelle für die Anzeige mit :ref:`wind-source` auswählen.
+Die Winddatenquelle kann man für die Anzeige mit :ref:`wind-source` auswählen.
 
 .. _wind-level:
 
 |Wind Levels Button| Schaltfläche Windebenen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleich wie das Menü :ref:`wind-levels`.
+Wie das Menü :ref:`wind-levels`.
 
 Die Menüschaltfläche aktiviert oder deaktiviert die Anzeige der Windhöhe
-durch ein Windbarbenraster auf verschiedenen Ebenen sowie an
-Flugplan-Wegpunkten.
+durch ein Windsymbolraster auf verschiedenen Ebenen sowie an Flugplan-Wegpunkten.
 
 Das Dropdown-Menü enthält die folgenden Elemente:
 
--  ``Bei Flugplan-Wegpunkten``: Schaltet Windkurven mit gelbem Rand an
-   Flugplan-Wegpunkten ein und aus. Windbögen unter 4000 Fuß über dem
-   mittleren Meeresspiegel entfallen. Diese Funktion ist unabhängig von
+-  ``An Flugplan-Wegpunkten``: Schaltet Windsymbole mit gelber Umrandung an
+   Flugplan-Wegpunkten ein und aus. Windsymbole unter 4000 Fuß über dem
+   mittleren Meeresspiegel werden nicht dargestellt. Diese Funktion ist unabhängig von
    der Auswahl unten.
--  ``Keine``: Zeigen Sie das Windspitzengitter nicht an. Die Winddaten
+-  ``Keine``: Zeigt das Windfahnengitter nicht an. Die Winddaten
    werden weiterhin heruntergeladen und verarbeitet, bis die Quelle auf
    ``Deaktiviert`` gesetzt wird.
--  ``Ground (nur NOAA)``: Zeigt das Windbarbengitter für bodennahen Wind
+-  ``Boden (nur NOAA)``: Zeigt das Windfahnengitter für bodennahen Wind
    (ca. 260 Fuß). Nur verfügbar, wenn die NOAA-Windquelle ausgewählt
    ist.
--  ``Auf Flugplan Reiseflughöhe``: Zeigt das Windstachelgitter für Winde
-   in der aktuellen Flugplan-Kreuzfahrthöhe an.
+-  ``Auf Reiseflughöhe``: Zeigt das Windfahnengitter für Winde
+   in der aktuellen Flugplan-Reiseflughöhe an.
 -  ``At 5.000 ft`` - ``At 45.000 ft``: Zeigt das Windfahnengitter für
    die ausgewählte Höhe an.
 
@@ -226,15 +217,15 @@ Tooltips
 Die Windpunkte zeigen einen optionalen Tooltip mit Windrichtung,
 Geschwindigkeit und Windquelle, wenn Sie mit der Maus darüber fahren.
 
-Die Richtung ist standardmäßig magnetisch, kann aber im Optionsdialog
+Die Richtung ist standardmäßig magnetisch, kann aber im Einstellungsdialog
 auf der Seite ``Einheiten`` geändert werden. Diese Tooltips zeigen den
-Wind für alle Ebenen an, in denen die aktuell angezeigte Ebene markiert
-ist **fett**. Die Reiseflughöhe wird als zusätzliche Ebene hinzugefügt,
+Wind für alle Ebenen an. Die aktuell angezeigte Ebene
+ist **fett** markiert. Die Reiseflughöhe wird als zusätzliche Ebene hinzugefügt,
 wenn sie für die Anzeige ausgewählt wird.
 
 .. figure:: ../images/wind.jpg
 
-      mit Tooltip bei Windpunkten im Gitter und
+      Mit Tooltip bei Windpunkten im Gitter und
       Wind-Dropdownmenü.
 
 .. figure:: ../images/wind_route.jpg

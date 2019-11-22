@@ -1,4 +1,4 @@
-Sammlung von Flugzeugleistungen
+Flugzeugleistung erfassen
 -------------------------------
 
 Aus der Leistungsdatenerfassung kann ein grundlegendes Leistungsprofil
@@ -7,72 +7,77 @@ sammelt permanent Kraftstofffluss- und Geschwindigkeitsdaten und
 berechnet Durchschnittswerte für alle Flugphasen.
 
 Der Wind hat keinen Einfluss auf die Berechnung, da alle
-Geschwindigkeiten auf der Basis der tatsächlichen Fluggeschwindigkeit
+Geschwindigkeiten auf der Basis der tatsächlichen Luftgeschwindigkeit
 basieren.
 
-Die Sammlung beginnt automatisch, sobald *Little Navmap* gestartet und
-mit einem Simulator verbunden wird. Sie können die Sammlung manuell
+Die Erfassung beginnt automatisch, sobald *Little Navmap* gestartet und
+mit einem Simulator verbunden wird. Sie können die Erfassung manuell
 zurücksetzen, um eine saubere Basis zu erhalten.
 
 Ein Bericht über die aktuellen durchschnittlichen Kraftstoff- und
 Geschwindigkeitszahlen wird auf dem Reiter ``Aktuelle Flugzeugleistung``
-im Fenster angezeigt. Zwischenergebnisse können Sie jederzeit in Ihr
+angezeigt. Zwischenergebnisse können Sie jederzeit in Ihr
 aktuell geladenes Leistungsprofil kopieren oder zusammenführen.
 
-*Little Navmap* zeigt 3 Seemeilen pro 1000 Fuß Steigung und Gefälle,
+*Little Navmap* zeigt 3 nautische Meilen pro 1000 Fuß Steigung und Gefälle,
 wenn Sie Daten basierend auf einem Standard- oder neuen Höhenprofil
 sammeln. Sie müssen den benötigten Abstieg selbst einschätzen.
 
 .. note::
 
       Die Flugplan-Reiseflughöhe wird verwendet, um die Reisephase des
-      Flugzeugs zu erfassen. Stellen Sie die Reiseflughöhe im Reiter ``Flugplan`` mindestens auf die gewünschte Reiseflughöhe ein,
-      wenn Sie nicht die Verwendung eines Flugplans planen.
+      Flugzeugs zu erfassen. Stellen Sie die Reiseflughöhe im Reiter ``Flugplan``
+      mindestens auf die gewünschte Reiseflughöhe ein,
+      wenn Sie die Verwendung eines Flugplans nicht beabsichtigen.
 
-Schnelle Anleitung
+Kurzanleitung
 ~~~~~~~~~~~~~~~~~~
 
 Führen Sie die folgenden Schritte aus, um die Leistung für ein Flugzeug
 zu erfassen.
 
 #. Verbinden Sie *Little Navmap* mit dem Simulator.
-#. Tanken Sie Ihr Flugzeug im besten Fall für die Reise.
-#. Verwenden Sie eine typische Last für das Flugzeug.
+#. Schätzen Sie den notwendigen Treibstoff ab und tanken Sie Ihr Flugzeug bestmöglichst für die Reise.
+#. Verwenden Sie eine typische Beladung für das Flugzeug.
 #. Erstellen und verwenden Sie einen Flugplan für die Reise. Verwenden
-   Sie eine typische Entfernung und Reiseflughöhe für dieses Flugzeug.
-   Ein kurzer Sprung reicht nicht aus.
+   Sie die typische Entfernung und Reiseflughöhe für dieses Flugzeug.
+   Ein kurzer Flug reicht nicht aus.
 #. Stellen Sie Ihr Flugzeug beim Abflug mit abgeschalteten oder
    laufenden Triebwerken auf den Parkplatz.
 #. Starten und fliegen Sie so präzise wie möglich in Bezug auf
    Geschwindigkeiten und Leistungseinstellungen des Flugzeugs.
 #. Die Sammlung ist abgeschlossen, sobald das Feld
-   ``Aktuelles Flugsegment``: im Bericht ``Fertig`` anzeigt.
+   ``Aktueller Flugabschnitt``: im Bericht ``Fertig`` anzeigt.
 #. Wählen Sie im Hauptmenü ``Flugzeug`` ->
-   ``Gesammelte Flugzeugleistung zusammenführen`` und kopieren Sie alle
-   Werte in den Dialog. Weitere Informationen zum Zusammenführen finden
+   ``Ermittelte Flugzeugleistung zusammenführen`` und kopieren Sie alle
+   Werte in das aktuelle Leistungsprofil. Weitere Informationen zum Zusammenführen finden
    Sie unter :doc:`AIRCRAFTPERFMERGE`.
 #. Bearbeiten Sie die Leistungsdaten des Flugzeugs (:doc:`AIRCRAFTPERFEDIT`) und passen Sie die Zahlen Ihren
    Wünschen oder Fluggewohnheiten an.
 
-**Vergessen Sie nicht, mindestens ausreichend Reservekraftstoff
-hinzuzufügen. Andernfalls geht ihnen am Zielort der Treibstoff aus, wenn
-Sie sich auf diesen Plan verlassen.**
+.. warning::
 
-Weitere empfohlene Eingabefelder sind ``Usable Fuel``,
-``Required Runway`` und ``Required Runway Type``.
+    Vergessen Sie nicht, mindestens ausreichend Reservekraftstoff
+    hinzuzufügen. Andernfalls geht ihnen am Zielort der Treibstoff aus, wenn
+    Sie sich auf diesen Plan verlassen.
 
-Sie können Ihr Flugzeug in Reiseflughöhe bewegen, mit Warp-Tools schnell
-an den top of descent kommen oder Kraftstoff und Zeit manuell anpassen.
+Weitere empfohlene Eingabefelder sind ``Verwendbarer Treibstoff``,
+``Benötigter Runway`` und ``Benötigter Runwaytyp``.
+
+Sie können Ihr Flugzeug in Reiseflughöhe bewegen, sich mit Warp-Tools schnell
+zum Beginn des Sinkfluges bewegen oder Kraftstoff und Zeit manuell anpassen.
 Dies hat keinen Einfluss auf die Leistungsberechnung, da *Little Navmap*
 den tatsächlichen Kraftstofffluss aus dem Simulator liest, anstatt
-verbrauchten Kraftstoff und Zeit zu verbrauchen.
+verbrauchten Kraftstoff und Zeit zu berechnen.
 
 Bleiben Sie auf jeden Fall ein paar Minuten in Reiseflughöhe, damit
-*Little Navmap* Zahlen für diese Flugphase erhalten kann.
+*Little Navmap* Zahlen für diese Flugphase ermitteln kann.
 
-**Sie können verschiedene Leistungsprofile für verschiedene
-Reiseflughöhenbereiche erstellen, um Schwankungen des
-Kraftstoffdurchflusses abzudecken.**
+.. tip::
+
+      Sie können verschiedene Leistungsprofile für verschiedene
+      Reiseflughöhenbereiche erstellen, um Schwankungen des
+      Kraftstoffdurchflusses abzudecken.
 
 .. figure:: ../images/perf_collect.jpg
 
@@ -84,63 +89,60 @@ Kraftstoffdurchflusses abzudecken.**
 Reiter Aktuelle Leistung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Buttons
-^^^^^^^
+Schaltflächen
+^^^^^^^^^^^^^^^^
 
 -  |Restart Aircraft Performance Collection|
-   ``Restart Aircraft Performance Collection``: Setzt alle gesammelten
-   Kraftstoff- und Geschwindigkeitsparameter auf Null zurück. Dennoch
-   wird die Leistungserfassung auch während der Fahrt sofort
-   fortgesetzt.
+   ``Erfassung der Flugzeugleistung neu starten``: Setzt alle gesammelten
+   Kraftstoff- und Geschwindigkeitsparameter auf Null zurück.
+   Die Leistungserfassung auch während des Fluges weiter fortgesetzt.
 -  |Merge collected Aircraft Performance|
-   ``Merge collected Aircraft Performance``: Öffnet einen Dialog, in dem
+   ``Ermittelte Flugzeugleistung zusammenführen``: Öffnet einen Dialog, in dem
    die gesammelten Leistungsparameter in die aktuell geladene
-   Leistungsdatei übernommen werden können. Dies kann in allen
-   Flugphasen genutzt werden. This can be used in all flight phases.
+   Datei übernommen werden können. Dies kann in allen
+   Flugphasen genutzt werden.
    Weitere Informationen zum Zusammenführen finden Sie unter
    :doc:`AIRCRAFTPERFMERGE`.
--  |Help| Hilfe: Klicken Sie hier, um dieses Kapitel des Handbuchs im
-   Standardbrowser zu öffnen.
+-  |Help| Hilfe: Klicken Sie hier, um dieses Kapitel im Webbrowser zu öffnen.
 
-Report
-^^^^^^
+Bericht
+^^^^^^^^^
 
 Die Textgröße des Berichts kann im Dialog ``Einstellungen`` auf der Seite
-``Benutzeroberfläche`` geändert werden.
+``Nutzerschnittstelle`` geändert werden.
 
-Abschnitt Luftfahrzeuge
+Flugzeug
 '''''''''''''''''''''''
 
--  ``Aktuelles Flugsegment``: Zeigt an, welche Flugphasen (``Climb``,
-   ``Cruise`` und mehr) erkannt werden.
+-  ``Aktueller Flugabschnitt``: Zeigt an, welche Flugphasen (``Steigflug``,
+   ``Reiseflug`` und mehr) erkannt werden.
 -  ``Flugzeugstatus``: Weitere Informationen zum Flugzeugstatus wie
-   Treibstofffluss oder Bodenstatus.
+   Treibstofffluss.
 
-Abscnitt Kraftstoff
+Treibstoff
 '''''''''''''''''''
 
--  ``Fuel Type``: Kraftstoffart, wie vom Simulator gemeldet. Diese wird
-   auf Basis des Volumen/Gewichtsverhältnisses berechnet. Korrigieren
-   Sie dies manuell, wenn das Zusatzflugzeug keinen korrekten
+-  ``Typ``: Kraftstoffart, wie vom Simulator gemeldet. Diese wird
+   auf Basis des Verhältnisses von Volumen zu Gewicht berechnet. Korrigieren
+   Sie dies manuell, wenn das Flugzeug keinen korrekten
    Kraftstofftyp liefert.
--  ``Total Fuel Consumed``: Der bisherige Kraftstoffverbrauch seit dem
+-  ``Verbraucht``: Der bisherige Kraftstoffverbrauch seit dem
    Neustart von *Little Navmap* oder dem letzten Zurücksetzen der
-   Sammelfunktion.
--  ``Taxi Fuel``: Kraftstoff, der vom ersten erfassten
+   Eraffungsfunktion.
+-  ``Treibstoff Rollen``: Kraftstoff, der vom ersten erfassten
    Kraftstoffdurchfluss zum Abheben verwendet wird.
 
-Abschnitt über die durchschnittliche Leistung - Steigflug, Reiseflug und Sinkflug
+Durchschn. Leistung - Steigflug, Reiseflug und Sinkflug
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
 Durchschnittswerte für die verschiedenen Flugphasen. Abschnitte für noch
-nicht gestartete Phasen entfallen. Passierte Abschnitte wie z.B. Steigen
-zeigen Nullwerte an, wenn Sie die Sammlung während des Fluges neu
-starten, z.B. bei Reiseflug.
+nicht gestartete Phasen werden nicht dargestellt. Vergangene Abschnitte, wie z.B. Steigen,
+zeigen Nullwerte an, wenn Sie die Sammlung während des Fluges, z.B. im Reiseflug, neu
+starten.
 
--  ``True Airspeed``: Echter Mittelwert der Fluggeschwindigkeit.
--  ``Vertical Speed``: Durchschnittliche Steig- oder
+-  ``Wahre Luftgeschwindigkeit``: Mittelwert der wahren Luftgeschwindigkeit.
+-  ``Vertikale Geschwindigkeit``: Durchschnittliche Steig- oder
    Sinkgeschwindigkeit. Nicht dargestellt für die Reiseflugphase.
--  ``Fuel Flow``: Durchschnittlicher Kraftstoffdurchfluss.
+-  ``Treibstofffluss``: Durchschnittlicher Kraftstoffdurchfluss.
 
 .. |Restart Aircraft Performance Collection| image:: ../images/icon_aircraftperfreset.png
 .. |Merge collected Aircraft Performance| image:: ../images/icon_aircraftperfmerge.png

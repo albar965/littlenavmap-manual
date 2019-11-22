@@ -1,5 +1,5 @@
-Erstellen eines VFR-Flugplans
------------------------------
+Tutorial - Erstellen eines VFR-Flugplans
+--------------------------------------------
 
 Allgemeines
 ~~~~~~~~~~~
@@ -7,7 +7,7 @@ Allgemeines
 In diesem Tutorial wird erklärt, wie Sie anhand der Karte und des
 Kontextmenüs einen einfachen Flugplan erstellen können.
 
-Der Flugplan ist im Verzeichnis *Little Navmap*:
+Der Flugplan ist im Verzeichnis *Little Navmap* enhalten:
 ``.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) nach Challes-les-Eaux (LFLE).pln``.
 
 Die Flugplatznamen können je nach Simulator unterschiedlich sein.
@@ -28,55 +28,55 @@ Flug vorbereiten
 ~~~~~~~~~~~~~~~~
 
 Ich würde empfehlen, vor jedem Flug ``Flug`` ->
-``Alles  für einen neuen Flug zurücksetzen`` |Reset all for a new
+``Alles für einen neuen Flug zurücksetzen`` |Reset all for a new
 Flight| zu verwenden, um eine saubere Basis für Treibstoffberechnung und
 andere Funktionen zu erhalten. Deaktivieren Sie im Dialog die Option
-``Neuen und leeren Flugplan erstellen``, wenn Ihr Plan bereits geladen
+``Neuen leeren Flugplan erstellen``, wenn der Plan bereits geladen
 ist.
 
 Standardflugzeugleistung
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dieses Tutorial behandelt nicht das Erstellen oder Sammeln von
+Dieses Tutorial behandelt nicht das Erstellen oder Erfassen von
 Flugzeugleistungsdateien. Siehe :doc:`TUTORIALPERF`, wenn Sie dies tun möchten.
 
 Daher werden wir einfach den Standard verwenden, der einen Steig- und
-Gefällewinkel von drei Grad sowie eine Reisegeschwindigkeit von 100
+Sinkwinkel von drei Grad sowie eine Reisegeschwindigkeit von 100
 Knoten angibt.
 
-Wählen Sie ``Flugzeug`` -> ``Neue Flugzeugleistung ...`` |New Aircraft
+Wählen Sie ``Flugzeug`` -> ``Neue Flugzeugleistung erstellen...`` |New Aircraft
 Performance ...|. Übernehmen Sie die Standardwerte, indem Sie im
-Dialogfeld auf ``OK`` drücken. Im Kraftstoffbericht werden mehrere
+Dialogfeld auf ``OK`` drücken. Im Treibstoffbericht werden mehrere
 Warnungen angezeigt. Ignorieren Sie diese vorerst, da die
 Flugzeugleistung ausreicht, um die Sink- und Steighöhe für das
 Höhenprofil zu berechnen.
 
-Abflug Flugplatz
+Startflugplatz
 ~~~~~~~~~~~~~~~~
 
-Abflugflugplatz suchen:
+Startflugplatz suchen: Klicken Sie auf die Karte und zoomen Sie auf
+die französischen Alpen. Sie können die folgenden Funktionen zum Navigieren verwenden:
 
-Klicken Sie auf die Karte und zoomen Sie auf die französischen Alpen.
-Sie können die folgenden Funktionen zum Navigieren verwenden:
-
--  Das Kartenoverlay auf der linken Seite.
--  Die Maus (klicken und ziehen) zum Bewegen und das Mausrad zum Zoomen
--  Die Richtungstasten zum Bewegen und die Tasten ``+`` und ``-`` zum
+-  Das Kartenoverlay auf der rechten Seite.
+-  Die Maus (klicken und ziehen) zum Bewegen und das Mausrad zum Zoomen.
+-  Die Pfeiltasten zum Bewegen und die Tasten ``+`` und ``-`` zum
    Vergrößern und Verkleinern (klicken Sie in das Kartenfenster, um es
    vor der Verwendung der Tasten zu aktivieren).
 
 Verwenden Sie die Zurück- |Back| und Vortasten |Forward|, um in den
-Positionsverlauf wie in einem Webbrowser zu springen.
+Positionsverlauf der Karte wie in einem Webbrowser zu springen.
 
-Siehe auch :doc:`MAPDISPLAY`. Suche hier nach dem
-Abflug-Flugplatz ``Meythet (LFLP)``: |Meythet (LFLP)| Gezoomt mit
-Hinweisen: |Meythet (LFLP) Tooltip|
+Siehe auch :doc:`MAPDISPLAY`.
+
+Suchen Sie hier nach dem
+Startflugplatz ``Meythet (LFLP)``: |Meythet (LFLP)| Näher mit
+Tooltip: |Meythet (LFLP) Tooltip|
 
 Dann:
 
--  Vergrößern Sie das Flugplatz-Diagramm, bis Taxiways, Runwaydetails,
+-  Vergrößern Sie das Flugplatz-Diagramm, bis Rollbahnen, Runwaydetails,
    Parkpositionen und vieles mehr angezeigt werden.
--  Zoomen Sie weiter, bis Sie die weißen Parknummern sehen.
+-  Zoomen Sie weiter, bis Sie die weißen Parkplatznummern sehen.
 -  Klicken Sie mit der rechten Maustaste auf die Mitte eines der grünen
    Parkplätze (in diesem Fall 11).
 -  Wählen Sie im KontextMenü
@@ -87,7 +87,7 @@ Dann:
 
 Damit wird ihre Ablugparkposition ausgewählt, die durch einen
 schwarz/gelben Kreis hervorgehoben wird. Der Flugplatz wird dem Flugplan
-ebenfalls als Abflugflugplatz hinzugefügt.
+ebenfalls als Startflugplatz hinzugefügt.
 
 Sie können auch auf das Flugplatzsymbol klicken und ihn als Startflugplatz
 auswählen. Eine Startbahn wird automatisch als Startposition zugewiesen.
@@ -98,11 +98,11 @@ Routen Wegpunkte
 Fügen Sie jetzt die Wegpunkte hinzu:
 
 -  Scrollen Sie entlang des Tales im Südosten über den See Lac d'Annecy
--  Klicke auf ``Position an den Flugplan anhängen`` |Append Position to
+-  Klicken Sie auf ``Position an den Flugplan anhängen`` |Append Position to
    Flight Plan|. Die angeklickte Position wird am Ende Ihres Plans als
    benutzerdefinierter Wegpunkt hinzugefügt
 
-Klicke auf Rückgängig |Undo| oder Widerholen |Redo| wenn Sie dem gerade
+Klicken Sie auf Rückgängig |Undo| oder Wiederholen |Redo|, wenn Sie mit dem gerade
 Hinzugefügten nicht einverstanden sind.
 
 |Append Waypoint|
@@ -111,21 +111,21 @@ Eine weitere Funktion ist ``Position zum Flugplan hinzufügen`` |Add
 Position to Flight Plan| welche die angeklickte Position in den nächsten
 Flugplanabschnitt einfügt. Damit kann man in der Mitte eines Flugplans
 benutzerdefinierte Positionen, Flugplätze oder Navigationshilfen
-hinzufügen. Der nächste Abschnitt wird automatisch von *Little Navmap*
-ausgewählt.
+hinzufügen. Der nächste Flugplanabschnitt wird automatisch von *Little Navmap*
+zum Einfügen ausgewählt.
 
 *Little Navmap* weist den benutzerdefinierten Wegpunkten automatisch
 Namen zu. Sie können diese belassen oder mit einem aussagekräftigeren
 Namen ersetzen.
 
 Klicken Sie mit der rechten Maustaste auf den Benutzer-Wegpunkt und
-wählen Sie ``Flugplanposition bearbeiten WP1`` |Edit Flight Plan
+wählen Sie ``Flugplan Position bearbeiten WP1`` |Edit Flight Plan
 Position|, um einen Wegpunktnamen oder dessen Koordinaten zu ändern.
 Benutzen Sie nahegelegene Dörfer, Berge, Seen oder andere
 Sehenswürdigkeiten. Ändern Sie die Koordinaten jetzt nicht.
 
 Der Flugsimulator begrenzt den Namen auf eine bestimmte Länge und auf
-bestimmte Zeichen. Dem Namen wird nichts hinzugefügt, wenn er zu lang
+bestimmte Zeichen. Eingaben werden verhindert, wenn der Name zu lang
 ist oder wenn falsche Zeichen eingeben werden.
 
 |Edit Waypoint Name|
@@ -139,8 +139,7 @@ Zielflugplatz
 So fügt man einen Zielflugplatz hinzu:
 
 -  Mit der rechten Maustaste auf ``Challes-les-Eaux (LFLE)`` klicken.
--  Wähle ``als Zielflugplatz setzen`` als Zielflugplatz |Set Airport as
-   Flight Plan Destination|.
+-  Wähle ``Challes-les-Eaux (LFLE) als Zielflugplatz setzen`` als Zielflugplatz |Set Airport as Flight Plan Destination|.
 
 |Select Destination|
 
@@ -149,15 +148,14 @@ anders aussehen
 
 |VFR Flight Plan|
 
-Sie können mit der Drag & Drop-Funktion auch Punkte verschieben oder
+Sie können mit der Drag und Drop-Funktion auch Punkte verschieben oder
 neue hinzufügen. Aktivieren Sie es, indem Sie ``Flugplan`` ->
 ``Flugplan auf der Karte bearbeiten`` |Edit Flight Plan on Map| wählen
 und klicken Sie auf einen Flugplan-Wegpunkt, um ihn zu verschieben.
 Klicken Sie auf einen Flugplanabschnitt, um diesem Zweig einen neuen
 Wegpunkt hinzuzufügen
 
-Siehe :doc:`MAPFPEDIT` für weitere
-Informationen.
+Siehe :doc:`MAPFPEDIT` für weitere Informationen.
 
 Reiseflughöhe
 ~~~~~~~~~~~~~
@@ -189,7 +187,7 @@ umfliegen.
 Lufträume
 ~~~~~~~~~
 
-Schauen Sie jetzt, ob Ihr Flugplan Lufträume tangiert.
+Schauen Sie jetzt, ob Ihr Flugplan Lufträume berührt.
 
 Klicken Sie in einen der Lufträume in der Nähe von Start und Ziel und
 sehen Sie sich das Informationsdockfenster an. Es gibt mehrere
@@ -206,7 +204,7 @@ Lufträume:
 Am Ziel ist die Situation ähnlich.
 
 Beachten Sie, dass Sie je nach Verwendung der neuesten Navigationsdaten- oder
-Luftraumdaten unterschiedliche Lufträume finden können.
+Luftraumdaten andere Lufträume finden können.
 
 |Airspaces|
 
@@ -217,8 +215,7 @@ für die Flugpläne und gibt standardmäßig einen sinnvollen Namen an.
 Fliegen
 ~~~~~~~
 
-Führen Sie die folgenden Schritte durch, um eine Moving Map zu erhalten
-und um ihr Flugzeug in *Little Navmap* zu sehen:
+Führen Sie die folgenden Schritte durch, um ihr Flugzeug in *Little Navmap* zu sehen:
 
 -  Öffnen Sie den Dialog ``Verbinden`` über ``Werkzeuge`` ->
    ``Flugsimulatorverbindung`` |Flight Simulator Connection| und prüfen
@@ -229,16 +226,13 @@ und um ihr Flugzeug in *Little Navmap* zu sehen:
 |Connect Dialog|
 
 -  Klicken Sie auf ``Verbinden``, um das Dialogfeld zu schließen.
--  Aktivieren Sie ``Karte`` -> ``Flugzeug zentrieren`` |Center Aircraft|. Das Simulatorflugzeug wird auf der Karte zentriert und es bleibt zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator befindet sich nicht im Eröffnungsbildschirm.
--  Starten Sie den Simulator falls noch nicht geschehen, laden Sie den Flugplan und fliegen Sie.
+-  Aktivieren Sie ``Karte`` -> ``Flugzeug zentrieren`` |Center Aircraft|. Das Simulatorflugzeug wird auf der Karte zentriert und bleibt zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator befindet sich nicht im Eröffnungsbildschirm.
+-  Starten Sie den Simulator, falls noch nicht geschehen, laden Sie den Flugplan und fliegen Sie.
 
 Siehe auch :doc:`CONNECT`.
 
 Während des Fliegens Orte anschauen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Sie können die Flugzeugzentrierung in ``Karte`` ->
-``Flugzeug zentrieren`` |Center Aircraft| aktivieren.
 
 *Little Navmap* hält Ihr Flugzeug und den nächsten Flugplan-Wegpunkt als
 Standardeinstellung auf dem Bildschirm zentriert. Sie können unter
@@ -247,8 +241,8 @@ drei Modi wählen, um das Flugzeug auf dem Bildschirm zu sehen.
 
 Das Programm hört für 10 Sekunden auf, Ihrem Flugzeug zu folgen, wenn
 Sie eine Aktion starten, die auf einen Flugplatz oder eine
-Navigationslösung zoomt (Doppelklick, Symbolleistenschalter oder Link im
-Informationsfenster) oder einfach nur in der Karte bewegen oder zoomen.
+Navigationshilfe zoomt (Doppelklick, Symbolleistenschalter oder Link im
+Informationsfenster) oder wenn Sie einfach nur in der Karte rollen oder zoomen.
 
 Doppelklicken Sie auf den Zielflugplatz, um z.B. zum Flugplatzdiagramm
 zu gelangen. Wenn Sie fertig sind, klicken Sie auf die Zurück-Taste

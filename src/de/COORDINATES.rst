@@ -1,18 +1,16 @@
-.. _coordinates-formats:
-
-Koordinaten-Formate
+Koordinatenformate
 -------------------
 
 Dieses Kapitel beschreibt kurz die erkannten Koordinatenformate in
-Flugplanpositions- und Userpoint-Dialogen.
+Flugplanpositions- und Nutzerpunkt-Dialogen.
 
-Das Eingabefeld zeigt eine Meldung an, ob die Koordinaten erkannt wurden
+Das Eingabefeld zeigt eine Meldung, ob die Koordinaten erkannt wurden
 und zeigt die übersetzten Koordinaten im voreingestellten Format, wie im
-Dialog ``Einstellungen`` auf der Reiter ``Einheiten`` gewählt. Im
+Dialog ``Einstellungen`` auf der Reiter ``Einheiten`` gewählt an. Im
 Fehlerfall wird eine rote Meldung angezeigt.
 
 Überprüfen Sie die angezeigten übersetzten Koordinaten, um
-sicherzustellen, dass Ihre Eingabe korrekt geparst wurde.
+sicherzustellen, dass Ihre Eingabe korrekt gelesen wurde.
 
 .. figure:: ../images/edit_flightplan_waypoint_tooltip.jpg
 
@@ -22,9 +20,9 @@ sicherzustellen, dass Ihre Eingabe korrekt geparst wurde.
 Allgemeines
 ~~~~~~~~~~~
 
-Der Breitengrad muss der erste und der Längengrad der zweite sein.
+Der Breitengrad muss der erste und der Längengrad der zweite Wert sein.
 
-N/S- und E/W-Kennungen sind erforderlich. Groß-/Kleinschreibung spielt
+N/S- und E/W-Kennungen sind erforderlich. Groß- und Kleinschreibung spielt
 keine Rolle.
 
 Grad-, Minuten- und Sekundenzeichen können weggelassen werden, wenn
@@ -44,12 +42,11 @@ Für die Koordinatenformate ``Breitengrad und Längengrad mit Vorzeichen``
 und ``Längengrad und Breitengrad mit Vorzeichen``:
 
 -  Breitengrad: Negativ ist Süden und Positiv ist Norden.
--  Längengrad: Negativ ist West und positiv sind Ostwerte.
+-  Längengrad: Negativ ist Westen und positiv ist Osten.
 
-Die Wahl dieser Anzeigeformate ermöglicht auch die Eingabe von
+Die Wahl dieser Anzeigeformate ermöglicht die Eingabe von
 vorzeichenbehafteten Dezimalwerten. Die Lesereihenfolge für Koordinaten
-ändert sich je nach gewähltem Format auch bei der Eingabe von signierten
-Zahlen.
+ändert sich je nach gewähltem Format auch bei der Eingabe.
 
 Andere Formate
 ~~~~~~~~~~~~~~

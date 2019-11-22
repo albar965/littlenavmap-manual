@@ -1,11 +1,9 @@
-.. _little-navmap-shortcuts:
-
-Tastatur Shortcuts
-------------------
+Tastaturabkürzungen
+--------------------
 
 .. _shortcuts-main:
 
-Hauptmenu
+Hauptmenü
 ~~~~~~~~~
 
 .. _shortcuts-main-file:
@@ -14,16 +12,16 @@ Datei
 ^^^^^
 
 ========================================================  ====================
-Menu                                                      Shortcut
+Menü                                                      Kurzbefehl
 ========================================================  ====================
 Datei -> Neuer Flugplan                                   ``Strg+N``
 Datei -> Flugplan öffnen....                              ``Strg+O``
-Datei -> Alles für einen neuen Flug zurücksetzen....      ``Ctrl+Alt+Shift+R``
+Datei -> Alles für einen neuen Flug zurücksetzen....      ``Strg+Alt+Umschalt+R``
 Datei -> Flugplan speichern                               ``Strg+S``
-Datei -> Flugplan als PLN speichern ...                   ``Strg+Shift+S``
-Datei -> Flugplan als X-Ebene FMS 11 speichern ...        ``Strg+Shift+X``
-Datei -> Flugplan als FlightGear FGFP speichern ...       ``Strg+Shift+G``
-Datei -> Kartenbild in die Zwischenablage kopieren ...    ``Alt+Shift+P``
+Datei -> Flugplan als PLN speichern ...                   ``Strg+Umschalt+S``
+Datei -> Speichere Flugplan als X-Xplane FMS 11 ...       ``Strg+Umschalt+X``
+Datei -> Speichere Flugplan als FlightGear FGFP ...       ``Strg+Umschalt+G``
+Datei -> Kartenbild in die Zwischenablage kopieren ...    ``Alt+Umschalt+P``
 Datei -> Karte drucken ...                                ``Strg+P``
 Datei -> Flugplan drucken ...                             ``Strg+Alt+P``
 Datei -> Beenden                                          ``Strg+Q``
@@ -35,16 +33,16 @@ Flugplan
 ^^^^^^^^
 
 ========================================================   ====================
-Menu                                                       Shortcut
+Menü                                                       Kurzbefehl
 ========================================================   ====================
 Flugplan -> Flugplan                                       ``F7``
 Flugplan -> Treibstoffbericht                              ``F8``
-Flugplan -> Flugplan rückgängig machen                     ``Ctrl+Z``
-Flugplan -> Wiederholter Flugplan                          ``Strg+Y``
-Flugplan -> Wählen Sie eine Startposition für den Abflug   ``Strg+Shift+P``
-Flugplan -> Flugplan auf der Karte bearbeiten              ``Strg+Shift+E``
-Flugplan -> Neuer Flugplan aus der Routenbeschreibung      ``Strg+Shift+N``
-Flugplan -> Flugplanhöhe anpassen                          ``Strg+Shift+J``
+Flugplan -> Flugplanänderung rückgängig machen             ``Strg+Z``
+Flugplan -> Flugplanänderung wiederherstellen              ``Strg+Y``
+Flugplan -> Startposition für den Abflug auswählen         ``Strg+Umschalt+P``
+Flugplan -> Flugplan auf der Karte bearbeiten              ``Strg+Umschalt+E``
+Flugplan -> Neuer Flugplan aus der Routenbeschreibung      ``Strg+Umschalt+N``
+Flugplan -> Reiseflugplanhöhe anpassen                     ``Strg+Umschalt+J``
 ========================================================   ====================
 
 .. _shortcuts-main-map:
@@ -53,29 +51,29 @@ Karte
 ^^^^^
 
 +-----------------------------------+-----------------------------------+
-| Menu                              | Shortcut                          |
+| Menü                              | Kurzbefehl                        |
 +===================================+===================================+
-| Karte -> Gehe zur Startseite      | ``Strg+Haus``                     |
+| Karte -> Gehe zur Heimposition    | ``Strg+Pos1``                     |
 +-----------------------------------+-----------------------------------+
 | Karte -> Gehe zum Zentrum für die | ``Strg+Ende``                     |
-| Entfernungssuche                  |                                   |
+| Distanzsuche                      |                                   |
 +-----------------------------------+-----------------------------------+
-| Karte -> Center Flight Plan       | ``Strg+Shift+F``                  |
+| Karte -> Flugplan zentrieren      | ``Strg+Umschalt+F``               |
 +-----------------------------------+-----------------------------------+
-| Karte -> Alle Highlights und      | ``Strg+H``                        |
-| Markierungen entfernen            |                                   |
+| Karte -> Alle Hervorhebungen und  | ``Strg+H``                        |
+| Auswahlen entfernen               |                                   |
 +-----------------------------------+-----------------------------------+
-| Karte -> Alle Distanzkreise,      | ``Alt+Shift+H``                   |
+| Karte -> Alle Distanzkreise,      | ``Alt+Umschalt+H``                |
 | Distanzmessungen, Platzrunden     |                                   |
 | und Warteschleifen entfernen      |                                   |
 +-----------------------------------+-----------------------------------+
-| Karte -> Center Aircraft          | ``Ctrl+Alt+A``                    |
+| Karte -> Flugzeug zentrieren      | ``Strg+Alt+A``                    |
 +-----------------------------------+-----------------------------------+
-| Karte -> Flugzeugschleppe löschen | ``Alt+Shift+T``                   |
+| Karte -> Flugzeugpfad löschen     | ``Alt+Umschalt+T``                |
 +-----------------------------------+-----------------------------------+
-| Karte -> Kartenposition Zurück    | ``Alt+Links``                     |
+| Karte -> Kartenposition zurück    | ``Alt+Links``                     |
 +-----------------------------------+-----------------------------------+
-| Karte -> Kartenposition vorwärts  | ``Alt+Rechts``                    |
+| Karte -> Kartenposition vor       | ``Alt+Rechts``                    |
 +-----------------------------------+-----------------------------------+
 
 .. _shortcuts-main-view:
@@ -84,69 +82,65 @@ Ansicht
 ^^^^^^^
 
 +---------------------------------------------+-----------------------------------+
-| Menu                                        | Shortcut                          |
+| Menü                                        | Kurzbefehl                        |
 +=============================================+===================================+
 | Ansicht -> Anzeigeeinstellungen             | ``Strg+Alt+R``                    |
 | zurücksetzen                                |                                   |
 +---------------------------------------------+-----------------------------------+
 | Ansicht -> Details -> Mehr                  | ``Strg++``                        |
-| Details -> Mehr Details                     |                                   |
+| Details                                     |                                   |
 +---------------------------------------------+-----------------------------------+
 | Ansicht -> Details ->                       | ``Strg+0``                        |
-| Standard-Detail                             |                                   |
+| Standard Details                            |                                   |
 +---------------------------------------------+-----------------------------------+
 | Ansicht -> Details -> Weniger               | ``Strg+-``                        |
-| Detail                                      |                                   |
+| Details                                     |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Flugplätze -> Flugplätze         | ``Strg+Alt+H``                    |
-| -> Flugplätze mit harten Start-             |                                   |
-| und Landebahnen anzeigen                    |                                   |
+| Ansicht -> Flugplätze ->                    | ``Strg+Alt+H``                    |
+| Zeige Flugplätze mit befestigten Runways    |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Flugplätze -> Flugplätze         | ``Strg+Alt+S``                    |
-| -> Flugplätze mit Soft-Rollbahnen           |                                   |
-| anzeigen                                    |                                   |
+| Ansicht -> Flugplätze ->                    | ``Strg+Alt+S``                    |
+| Zeige Flugplätze mit unbefestigten Runways  |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Flugplätze -> Leere              | ``Strg+Alt+E``                    |
-| Flugplätze anzeigen                         |                                   |
+| Ansicht -> Flugplätze ->                    | ``Strg+Alt+E``                    |
+| Zeige leere Flugplätze                      |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Navigationshilfen -> Zeige VOR   | ``Strg+Alt+V``                    |
+| Ansicht -> Navigationshilfen -> Zeige-VOR   | ``Strg+Alt+V``                    |
 | Stationen                                   |                                   |
 +---------------------------------------------+-----------------------------------+
 | Ansicht -> Navigationshilfen ->             | ``Strg+Alt+N``                    |
-| NDB-Stationen anzeigen                      |                                   |
+| Zeige NDB-Stationen                         |                                   |
 +---------------------------------------------+-----------------------------------+
 | Ansicht -> Navigationshilfen -> Zeige       | ``Strg+Alt+W``                    |
 | Wegpunkte                                   |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Navigationshilfen -> ILS-Federn  | ``Strg+Alt+I``                    |
-| anzeigen                                    |                                   |
+| Ansicht -> Navigationshilfen -> Zeige ILS   | ``Strg+Alt+I``                    |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Navigationshilfen -> Victor      | ``Ctrl+V``                        |
-| Airways anzeigen                            |                                   |
+| Ansicht -> Navigationshilfen ->             | ``Strg+V``                        |
+| Zeige Victor Luftstraßen                    |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Navigationshilfen -> Show Jet    | ``Ctrl+J``                        |
-| Airways                                     |                                   |
+| Ansicht -> Navigationshilfen ->             | ``Strg+J``                        |
+| Zeige Jet Luftstraßen                       |                                   |
 +---------------------------------------------+-----------------------------------+
 | Ansicht -> Lufträume -> Lufträume           | ``Strg+Alt+C``                    |
 | anzeigen                                    |                                   |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Flugplan anzeigen                | ``Strg+Alt+F``                    |
+| Ansicht -> Zeige Flugplan                   | ``Strg+Alt+F``                    |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Fehlende Ansätze                 | ``Strg+Alt+M``                    |
-| anzeigen                                    |                                   |
+| Ansicht -> Zeige Fehlanflüge                | ``Strg+Alt+M``                    |
 +---------------------------------------------+-----------------------------------+
-| Ansicht -> Kompassrose anzeigen             | ``Strg+Alt+D``                    |
+| Ansicht -> Zeige Kompassrose                | ``Strg+Alt+D``                    |
 +---------------------------------------------+-----------------------------------+
 
 .. _shortcuts-main-scenery-library:
 
-Szeneriebiblipthek
+Szeneriebibliothek
 ^^^^^^^^^^^^^^^^^^
 
 ==================================================== ================
-Menu                                                 Shortcut
+Menü                                                 Kurzbefehl
 ==================================================== ================
-Szenerie-Bibliothek -> Szenerie-Bibliothek laden ... ``Ctrl+Shift+L``
+Szeneriebibliothek -> Szeneriebibliothek laden ...   ``Strg+Umschalt+L``
 ==================================================== ================
 
 .. _shortcuts-main-userdata:
@@ -155,20 +149,20 @@ Nutzerdaten
 ^^^^^^^^^^^
 
 ===================================== ========
-Menu                                  Shortcut
+Menü                                  Kurzbefehl
 ===================================== ========
 Nutzerdaten -> Suche für Nutzerpunkte ``F6``
 ===================================== ========
 
 .. _shortcuts-main-logbook:
 
-Logbook
+Logbuch
 ^^^^^^^
 
 ======================== ============
-Menu                     Shortcut
+Menü                     Kurzbefehl
 ======================== ============
-Logbook -> Logbook Suche ``Shift+F6``
+Logbuch -> Logbuchsuche  ``Umschalt+F6``
 ======================== ============
 
 .. _shortcuts-main-aircraft:
@@ -177,10 +171,10 @@ Flugzeug
 ^^^^^^^^
 
 =========================================== ===============
-Menu                                        Shortcut
+Menü                                        Kurzbefehl
 =========================================== ===============
-Flugzeug -> Flugzeugleistung sichern ...    ``Alt+Shift+S``
-Flugzeug-> Flugzeugleistung besarbeiten ... ``Alt+Shift+E``
+Flugzeug -> Flugzeugleistung speichern ...  ``Alt+Umschalt+S``
+Flugzeug -> Flugzeugleistung bearbeiten ... ``Alt+Umschalt+E``
 =========================================== ===============
 
 .. _shortcuts-main-tools:
@@ -189,9 +183,9 @@ Werkzeuge
 ^^^^^^^^^
 
 ======================================= ================
-Menu                                    Shortcut
+Menü                                    Kurzbefehl
 ======================================= ================
-Werkzeuge -> Flugsimulatorverbindung... ``Ctrl+Shift+C``
+Werkzeuge -> Flugsimulatorverbindung... ``Strg+Umschalt+C``
 ======================================= ================
 
 .. _shortcuts-main-window:
@@ -199,31 +193,31 @@ Werkzeuge -> Flugsimulatorverbindung... ``Ctrl+Shift+C``
 Fenster
 ^^^^^^^
 
-===============================================================   ====================
-Menu                                                              Shortcut
-===============================================================   ====================
-Fenster -> Stil -> Fusion                                         ``Shift+F2``
-Fenster -> Stil -> Night                                          ``Umschaltung+F3``
-Fenster -> Tastenkombinationen -> Karte                           ``F2``
-Fenster -> Tastenkombinationen -> Höhenprofil                     ``F3``
-Fenster -> Tastenkombinationen -> Flugplatzsuche                  ``F4``
-Fenster -> Tastenkombinationen -> Navigationshilfensuche          ``F5``
-Fenster -> Tastenkombinationen -> Benutzerpunkt-Suche             ``F6``
-Fenster -> Tastenkombinationen -> Logbuchsuche                    ``Shift+F6``
-Fenster -> Tastenkombinationen -> Flugplan                        ``F7``
-Fenster -> Tastenkombinationen -> Kraftstoffbericht               ``F8``
-Fenster -> Tastenkombinationen -> Flugplatzinformationen          ``F9``
-Fenster -> Tastenkombinationen -> Flugplatz-Wetterinformationen   ``F10``
-Fenster -> Tastenkombinationen -> Navigationshilfen Information   ``F11``
-Fenster -> Tastenkombinationen -> Simulator Aircraft Progress     ``F12``
+================================================================  ====================
+Menü                                                              Kurzbefehl
+================================================================  ====================
+Fenster -> Oberflächenstil -> Fusion                              ``Umschalt+F2``
+Fenster -> Oberflächenstil -> Night                               ``Umschalt+F3``
+Fenster -> Schnellzugriff -> Karte                                ``F2``
+Fenster -> Schnellzugriff -> Höhenprofil                          ``F3``
+Fenster -> Schnellzugriff -> Flugplatzsuche                       ``F4``
+Fenster -> Schnellzugriff -> Suche für Navigationshilfen          ``F5``
+Fenster -> Schnellzugriff -> Suche für Benutzerpunkt              ``F6``
+Fenster -> Schnellzugriff -> Logbuchsuche                         ``Umschalt+F6``
+Fenster -> Schnellzugriff -> Flugplan                             ``F7``
+Fenster -> Schnellzugriff -> Treibstoffbericht                    ``F8``
+Fenster -> Schnellzugriff -> Flugplatzinformationen               ``F9``
+Fenster -> Schnellzugriff -> Wetterinformationen für Flugplatz    ``F10``
+Fenster -> Schnellzugriff -> Informationen für Navigationshilfen  ``F11``
+Fenster -> Schnellzugriff -> Simulatorflugzeug Fortschritt        ``F12``
 Fenster -> Alle schwebenden Fenster anzeigen                      ``Alt+0``
 Fenster -> Suche                                                  ``Alt+1``
 Fenster -> Flugplanung                                            ``Alt+2``
 Fenster -> Informationen                                          ``Alt+3``
-Fenster -> Flugplan Höhenprofil                                   ``Alt+4``
+Fenster -> Höhenprofil Flugplan                                   ``Alt+4``
 Fenster -> Simulatorflugzeug                                      ``Alt+5``
 Fenster -> Legende                                                ``Alt+6``
-===============================================================   ====================
+================================================================  ====================
 
 .. _shortcuts-main-help:
 
@@ -231,11 +225,10 @@ Hilfe
 ^^^^^
 
 ========================= ============
-Menu                      Shortcut
+Menü                      Kurzbefehl
 ========================= ============
 Hilfe -> Inhalte (Online) ``F1``
-Hilfe -> Navmap-Legende   ``Shift+F1``
-Hilfe -> Debug-Aktion     ``Strg+F1``
+Hilfe -> Navmap Legende   ``Umschalt+F1``
 ========================= ============
 
 .. _shortcuts-context:
@@ -248,21 +241,21 @@ Kontextmenüs
 Flugplantabelle
 ^^^^^^^^^^^^^^^
 
-======================================== =================
-Menu                                     Shortcut
-======================================== =================
-Informationen anzeigen                   ``Strg+I``
-Prozeduren anzeigen                      ``Strg+Shift+R``
-Ansatz erstellen                         ``Alt+Shift+C``
-Flugplan Etappe aktivieren               ``Ctrl+L``
-Ausgewählte Beine nach oben verschieben  ``Strg+Aufwärts``
-Ausgewählte Beine nach unten verschieben ``Strg+Abwärts``
-Ausgewählte Beine oder Prozedur löschen  ``Entfernen``
-Flugplanposition bearbeiten              ``Rückkehr``
-Copy                                     ``Ctrl+C``
-Alle auswählen                           ``Ctrl+A``
-Auswahl aufheben                         ``Strg+Shift+A``
-======================================== =================
+===================================================== =================
+Menü                                                  Kurzbefehl
+===================================================== =================
+Informationen anzeigen                                ``Strg+I``
+Zeige Prozeduren                                      ``Strg+Umschalt+R``
+Anflugprozedur erstellen                              ``Alt+Umschalt+C``
+Flugplanabschnitt aktivieren                          ``Strg+L``
+Ausgewählte Flugplanabschnitte nach oben verschieben  ``Strg+Aufwärts``
+Ausgewählte Flugplanabschnitte nach unten verschieben ``Strg+Abwärts``
+Ausgewählten Abschnitt oder Prozedur löschen          ``Entfernen``
+Bearbeite Flugplanposition                            ``Rückkehr``
+Kopieren                                              ``Strg+C``
+Alle auswählen                                        ``Strg+A``
+Auswahl aufheben                                      ``Strg+Umschalt+A``
+===================================================== =================
 
 .. _shortcuts-context-search:
 
@@ -270,17 +263,17 @@ Suchergebnistabellen und Sucheingabefelder
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ====================== ================
-Menu                   Shortcut
+Menü                   Kurzbefehl
 ====================== ================
 Informationen anzeigen ``Strg+I``
-Prozeduren anzeigen    ``Strg+Shift+R``
-Ansatz erstellen       ``Alt+Shift+C``
-Auf der Karte anzeigen ``Ctrl+M``
+Zeige Prozeduren       ``Strg+Umschalt+R``
+Anflug erstellen       ``Alt+Umschalt+C``
+Auf der Karte zeigen   ``Strg+M``
 Suche zurücksetzen     ``Strg+R``
-Alle anzeigen          ``Strg+Shift+O``
-Copy                   ``Ctrl+C``
-Alle auswählen         ``Ctrl+A``
-Auswahl aufheben       ``Strg+Shift+A``
+Alle anzeigen          ``Strg+Umschalt+O``
+Kopieren               ``Strg+C``
+Alle auswählen         ``Strg+A``
+Auswahl aufheben       ``Strg+Umschalt+A``
 ====================== ================
 
 .. _shortcuts-context-procedure:
@@ -289,10 +282,10 @@ Prozedurensuche - Zusätzliche Tastenkombinationen
 '''''''''''''''''''''''''''''''''''''''''''''''''
 
 ==================================== ==========
-Menu                                 Shortcut
+Menü                                 Kurzbefehl
 ==================================== ==========
-Informationen zum Flugplatz anzeigen ``Ctrl+I``
-Flugplatz auf der Karte anzeigen     ``Ctrl+M``
+Zeige Informationen für Flugplatz    ``Strg+I``
+Flugplatz auf der Karte anzeigen     ``Strg+M``
 ==================================== ==========
 
 .. _shortcuts-context-userpoint-logbook:
@@ -301,9 +294,9 @@ Nutzerpunkt- und Logbuchsuche - Zusätzliche Tastenkombinationen
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 ========== ==========
-Menu       Shortcut
+Menü       Kurzbefehl
 ========== ==========
-Hinzufügen ``Ins``
+Hinzufügen ``Einfg``
 Bearbeiten ``Return``
-Löschen    ``Del``
+Löschen    ``Entf``
 ========== ==========

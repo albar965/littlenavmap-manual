@@ -1,6 +1,4 @@
-.. _running-without-flight-simulator-installation:
-
-Benutzung ohne Flugsimulator-Installation
+Benutzung ohne Flugsimulatorinstallation
 -----------------------------------------
 
 ``littlenavmap.exe`` kann auf allen Computern verwenden, unabhängig
@@ -30,7 +28,7 @@ gleichermaßen.
    Datenbanken der Szeneriebibliothek zu generieren. Weitere
    Informationen sind unter :doc:`SCENERY` zu finden.
 #. Wählen Sie ``Szenerie-Bibliothek`` -> ``Datenbankdateien anzeigen``
-   im HauptMenü auf dem fliegenden Computer aus. Dadurch wird das
+   im Hauptmenü auf dem fliegenden Computer aus. Dadurch wird das
    Verzeichnis mit den Datenbankdateien in einem Dateimanager wie
    Windows Explorer oder Apple Finder geöffnet. Eine oder mehrere
    Datenbankdateien wie ``little_navmap_fsx.sqlite``,

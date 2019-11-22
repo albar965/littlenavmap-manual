@@ -1,54 +1,81 @@
 |Edit Aircraft Performance| Flugzeugleistung bearbeiten
 -------------------------------------------------------
 
+Der Dialog ermöglicht die Bearbeitung aller leistungsbezogenen Parameter des Flugzeugs auf drei Reitern. Die Etiketten für alle Werte, die für die Kraftstoffberechnung erforderlich sind, sind **fett**  hervorgehoben.
 
-TODO
-
-Alle Geschwindigkeiten werden in der wahren Fluggeschwindigkeit
-eingegeben. Dadurch sind die Werte unabhängig von Windeinflüssen, wie
-sie bei der Fahrgeschwindigkeit auftreten würden. Sie macht die Werte
-auch unabhängig von der Reiseflughöhe und der Abweichung von den
-ISA-Atmosphärenbedingungen, wie sie bei Verwendung der Mach-Zahl oder
-der angegebenen Fluggeschwindigkeit der Fall wäre.
+Der Dialog wird geöffnet wenn die Bearbeiten-Schaltfläche im
+``Treibstoffbericht``, ``Flugzeug`` ->
+``Neue Flugzeugleistung erstellen ...`` oder ``Flugzeugleistung bearbeiten ...`` im Hauptmenü ausgewählt werden.
 
 Schaltflächen
 ~~~~~~~~~~~~~
 
 -  ``OK``: Übernimmt alle im Dialog vorgenommenen Änderungen, speichert
-   das Profil aber nicht. Der Tankreport sowie Top of Climb und Top of
-   Descent im Fenster :doc:`PROFILE`
-   werden sofort angepasst.
--  ``Abbrechen``: Vernachlässigt alle Änderungen und schließt den
+   das Profil aber nicht. Der Treibstoffbericht sowie die Punkte für
+   Steig- und Sinkflug werden im :doc:`PROFILE` sofort angepasst.
+-  ``Abbrechen``: Ignoriert alle Änderungen und schließt den
    Dialog.
 -  ``Zurücksetzen``: Setzt alle Änderungen zurück, die seit dem Öffnen
    des Bearbeitungsdialogs vorgenommen wurden.
--  ``Voreinstellungen``: Setzt das Standardprofil mit 3 nm pro 1000 ft
-   für Abstiegs- und Aufstiegsregeln und ohne Kraftstoffverbrauch wieder
-   auf.
--  ``Hilfe``: Öffnet die Hilfe im Standard-Webbrowser.
+-  ``Voreinstellungen``: Stellt das Standardprofil mit 3 nm pro 1000 Fuß
+   für Ab- und Aufstiegsregeln ohne Kraftstoffverbrauch wieder her.
+-  ``Hilfe``: Öffnet diese Hilfe im Standard-Webbrowser.
 
-Eingabefelder
-~~~~~~~~~~~~~
+Reiter Flugzeug
+~~~~~~~~~~~~~~~~~
 
--  ``Name``: Kann frei verwendet werden. Wird aus dem Flugzeugnamen
-   übernommen, wenn Daten für ein Leistungsprofil gesammelt werden.
--  ``Flugzeugtyp``: Verwenden Sie dies, um die ICAO Flugzeugtypkennung
-   hinzuzufügen. Dies kann es zukünftigen Versionen oder *Little Navmap*
-   ermöglichen, das Leistungsprofil automatisch auszuwählen. Siehe
-   `Liste der ICAO
-   Flugzeugtypbezeichner <https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators>`__
-   (Wikipedia).
+-  ``Flugzeugmodell``: Kann frei benutzt werden. Wird aus dem Flugzeugnamen
+   ermittelt, wenn *Little Navmap* Daten für das Profil ermittelt.
+-  ``Flugzeugtyp``: ICAO Flugzeugkennung. *Little Navmap*
+   zeigt eine Warnung im Reiter ``Treibstoffbericht``, wenn das geflogene
+   Flugzeug nicht mit diesem Wert übereinstimmt.
+   Der Wert wird bei der Leistungserfassung automatisch ermittelt.
+-  ``Benötigter Runway``: Nur zu Informationszwecken. Wird im
+   Treibstoffbericht angezeigt, wenn größer als Null
+-  ``Benötigter Runwaytyp``: Nur zu Informationszwecken. Wird im
+   Treibstoffbericht angezeigt, wenn ungleich dem Standarwert
+   ``Befestigte Oberfläche``.
+
+Flugzeugtyp
+^^^^^^^^^^^^^
+Siehe `Liste der Flugzeugtypencodes <https://de.wikipedia.org/wiki/Liste_der_Flugzeugtypencodes>`__ (Wikipedia).
+
+X-Plane
+''''''''''
+
+Der Wert kann mit dem X-Plane Plane Maker Programm gelesen werden. Dazu die Flugzeugdatei ``.acf`` öffnen. Im Hauptmenü -> ``Standard`` ->
+``Author``, Feld ``ICAO code for ATC``. In der ``.acf``-Textdatei ist der Wert z.B. als ``P acf/_ICAO BE58`` zu finden.
+
+FSX, FSX-SE and Prepar3D
+''''''''''''''''''''''''
+
+Der Flugzeugtyp kann in der Datei ``aircraft.cfg`` gefunden werden.
+Dazu die Datei mit einen Textedito öffnen. Der Typ steht unter dem Schlüssel ``ATC_model`` im Abschnitt ``[General]``.
+
+.. figure:: ../images/perf_edit_aircraft.jpg
+
+    Reiter ``Flugzeugtyp`` im Bearbeiten-Dialog.
+
+Reiter Flugzeugleistung
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Alle Geschwindigkeiten werden in der wahren Luftgeschwindigkeit
+eingegeben. Dadurch sind die Werte unabhängig von Windeinflüssen, wie
+sie bei der Grundgeschwindigkeit auftreten würden. Dies macht die Werte
+auch unabhängig von der Reiseflughöhe und der Abweichung von den
+ISA-Atmosphärenbedingungen, wie sie bei Verwendung der Mach-Zahl oder
+der angezeigten Fluggeschwindigkeit der Fall wäre.
 
 Treibstoff
 ^^^^^^^^^^
 
--  ``Treibtoffeinheit``: Entweder ``Volume`` (Gallonen oder Liter) oder
-   ``Weight`` (lbs oder Kilogramm). Die Zahlen im Dialog werden beim
+-  ``Treibstoffeinheit``: Entweder ``Gewicht`` (Gallonen oder Liter) oder
+   ``Volumen`` (lbs oder Kilogramm). Die Zahlen im Dialog werden beim
    Ändern der Einheit mit dem Gewicht des ausgewählten Kraftstofftyps
    umgerechnet. Beim Vor- und Zurückschalten können Rundungsfehler
    auftreten.
--  ``Treibstofftyp``: ``Avgas`` (Standard) oder ``Jetfuel``. Wird
-   benötigt, um die Kraftstoffzahlen zwischen Gewicht und Volumen
+-  ``Treibstofftyp``: ``Flugbenzin`` (Standard) oder ``Kerosin``. Wird
+   benötigt, um die Werte zwischen Gewicht und Volumen
    umzurechnen. Dies wird bei der Erfassung der Flugzeugleistung
    automatisch erkannt.
 
@@ -57,13 +84,18 @@ Flugplandefinitionen <https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning
 (SKYbrary) für weitere Informationen zu den verschiedenen
 Kraftstoffarten.
 
-.. _reserve-fuel:
+Verwendbarer Treibstoff
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wird benutzt, um die geschätzte Reichweite zu berechnen und zu überprüfen, ob der zu ladende Treibstoff die Treibstoffkapazität überschreitet.
+
+Ein Textfeld ``Geschätzte Reichweite mit Reserven`` zeigt die maximale Flugdistanz und -zeit mit Reserven.
 
 Reservetreibstoff
 ^^^^^^^^^^^^^^^^^
 
 Endreservekraftstoff ist der Mindestkraftstoff, der benötigt wird, um 30
-Minuten lang in 1.500 Fuß Höhe über dem Ausweichflugplatz oder auf dem
+Minuten lang in 1500 Fuß Höhe über dem Ausweichflugplatz oder auf dem
 Zielflugplatz mit Haltegeschwindigkeit zu fliegen, wenn kein
 Ausweichflugplatz erforderlich ist. Einige Behörden verlangen genügend
 Kraftstoff für 45 Minuten Verweildauer.
@@ -78,23 +110,17 @@ Endreservetreibstoff.
 Sie müssen diesen Wert einstellen, um zu vermeiden, dass am Zielort der
 Kraftstoff ausgeht, wenn Sie sich auf dieses Profil verlassen.
 
-.. _taxi-fuel:
-
 Treibstoff zum Rollen
 ^^^^^^^^^^^^^^^^^^^^^
 
 ``Treibstoff zum Rollen`` ist der vor dem Start verwendete Treibstoff
-und beinhaltet APU-Verbrauch, Motorstart und Taxikraftstoff.
-
-.. _extra-fuel:
+und beinhaltet APU-Verbrauch, Motorstart und Rollkraftstoff.
 
 Extratreibstoff
 ^^^^^^^^^^^^^^^
 
 Kraftstoff, der nach Ermessen des Kapitäns oder des Dispatchers
 hinzugefügt wird.
-
-.. _contingency-fuel:
 
 Streckenreserve
 ^^^^^^^^^^^^^^^
@@ -103,69 +129,81 @@ Streckenreserve wird zur Berücksichtigung des zusätzlichen
 Kraftstoffverbrauchs auf der Strecke aufgrund von Wind, Routenänderungen
 oder Einschränkungen des Verkehrsmanagements verwendet.
 
-Der Wert wird in Prozent des Fahrkraftstoffs angegeben.
+Der Wert wird in Prozent des für den Flug benötigten Treibstoffes angegeben.
 
-.. note::
+.. tip::
 
      ICAO empfiehlt 5 Prozent Streckenreserve.
-
-.. _climb:
 
 Steigflug
 ^^^^^^^^^
 
--  ``Durchschnittliche Geschwindigkeit im Steigflug``: Durchschnittliche
-   tatsächliche Fluggeschwindigkeit vom Start bis zur Reiseflughöhe.
--  ``Durchschnittliche vertikale Geschwindigkeit``: Vertikale
+-  ``Durchschn. Geschw. im Steigflug``: Durchschnittliche
+   tatsächliche Luftgeschwindigkeit vom Start bis zur Reiseflughöhe.
+-  ``Durchschn. vertikale Geschw.``: Vertikale
    Geschwindigkeit in der Steigphase. Entweder Fuß pro Minute (``fpm``)
    oder Meter pro Sekunde (``m/s``).
--  ``Durchschnittlicher Treibstofffluss im Steigflug``:
+-  ``Durchschn. Treibstofffluss im Steigflug``:
    Treibstoffdurchfluss in der Steigphase. Entweder ``gal``, ``lbs``,
    ``l`` oder ``kg``.
-
-.. _cruise:
 
 Reiseflug
 ^^^^^^^^^
 
--  ``Geschwindigkeit in typischer Reiseflughöhe``: Echte
+-  ``Geschw. in typischer Reiseflughöhe``: Echte
    Fluggeschwindigkeit im Reiseflug.
 -  ``Treibstofffluss im Reiseflug``: Treibstofffluss in der
    Reiseflugphase.
 
-.. _descent:
-
 Sinkflug
 ^^^^^^^^
 
--  ``Durchschnittliche Geschwindigkeit im Sinkflug``: Echte
+-  ``Durchschn. Geschw. im Sinkflug``: Echte
    Fluggeschwindigkeit in der Sinkphase.
--  ``Durchschnittliche vertikale Geschwindigkeit im Sinkflug``:
+-  ``Durchschn. vertikale Geschw. im Sinkflug``:
    Durchschnittliche vertikale Geschwindigkeit.
--  ``Durchschnittlicher Treibstofffluss im Sinkflug``:
+-  ``Durchschn. Treibstofffluss im Sinkflug``:
    Durchschnittlicher Treibstofffluss im Sinkflug.
 
-Eine Beschriftung zeigt die berechnete Faustregel für den Abstieg. Der Standard
-ist 3 nm pro 1000 ft.
+Eine Beschriftung ``Faustregel für Sinkflug`` zeigt die berechnete Faustregel für den Abstieg. Der Standard ist 3 nm pro 1000 Fuß.
 
-.. _description:
+Die Sinkgeschwindigkeit und die vertikale Sinkgeschwindigkeit werden zur Berechnung des Sinkflugbeginns verwendet, der auch mit den Windverhältnissen variiert.
 
-Beschreibung oder Anmerkungen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ausweichflugplatz
+^^^^^^^^^^^^^^^^^^^^^^
 
-Dies ist ein freies Klartextfeld für Notizen und Links.
+-  ``Durchschn. Geschw. zum Ausweichflugplatz``: Durchschnittliche
+   Luftgeschwindigkeit für den Flug zum Ausweichflugplatz.
+-  ``Average fuel flow for alternate``: Durchschnittlicher
+   Treibstofffluss zum Ausweichflugplatz.
 
-Hier hinzugefügte Links werden erkannt und können im
-Flugzeugleistungsbericht geöffnet werden. Normale Weblinks wie
-``http://www.example.com`` oder ``https://www.example.com`` werden neben
-Verzeichnis- oder Dateiverknüpfungen wie z.B.
-``file:///C:/Projekte/atools`` unter Windows oder
-``file:///home/alex/Aircraft_Notes.txt`` unter MacOS oder Linux erkannt.
+*Little Navmap* benutzt standardmäßig die Werte aus der
+Reiseflugphase. Der Flug zum Ausweichflugplatz findet of auf
+niedriger Höhe statt und ergibt daher einen höheren Treibstofffluss.
+Daher sollten die Werte manuell angepasst werden.
 
-|Aircraft Performance Edit|
+.. figure:: ../images/perf_edit_perf.jpg
 
-**Bild oben:** *Dialog zur Bearbeitung der Flugzeugleistung.*
+     Bearbeiten-Dialog für Flugzeugleistung. Reiter ``Flugzeugleistung``.
+
+Reiter Beschreibung oder Anmerkungen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Dies ist ein freies Textfeld für Notizen und Verweise.
+
+Verweise werden erkannt und können im Treibstoffbericht geöffnet werden.
+
+Normale Verweise wie ``http://www.example.com`` oder
+``https://www.example.com`` werden neben Verzeichnis- oder Dateiverweisen
+wie ``file:///C:/Benutzer/ICH/Dokumente/Notizen%20Flugzeuge.txt`` unter Windows
+oder ``file:///home/ICH/Notizen%20Flugzeuge.txt`` unter MacOS oder Linux erkannt.
+
+Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich ``/``
+anstelle des umgekehrten Schrägstriches ``\`` als Pfadtrennzeichen
+verwenden müssen.
+
+Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da
+*Little Navmap* Links bis zum nächsten Leerzeichen erkennt.
 
 .. |Edit Aircraft Performance| image:: ../images/icon_aircraftperfedit.png
-.. |Aircraft Performance Edit| image:: ../images/perf_edit.jpg
 

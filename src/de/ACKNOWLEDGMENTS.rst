@@ -1,4 +1,4 @@
-Acknowledgments
+Danksagungen
 ---------------
 
 Ein Dankeschön geht an alle, die mich unterstützen, mir Ihre
@@ -78,7 +78,7 @@ mir erlaubt, auf all die Karten zuzugreifen und sie darzustellen, wäre
 ich immernoch für Jahre damit beschäftigt, es selbst zu tuen.
 
 An `Qt application framework <https://www.qt.io>`__ ohne welches ich
-nicht mal einen einfachen Knopf zeichnen könnte.
+nicht mal eine einfache Schaltfläche zeichnen könnte.
 
 Und lasst uns nicht die ganzen Dienste vergessen, die und die
 Onlinekarten kostenlos zur verfügung stellen:

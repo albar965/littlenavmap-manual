@@ -1,22 +1,19 @@
-.. _creating-or-adding-map-themes:
-
 Kartenthemen erstellen
 ----------------------
 
-Um eine beliebige Online-Karte einer Offline-Karte zu *Little Navmap*
+Um eine beliebige Online- oder Offline-Karte zu *Little Navmap*
 hinzuzufügen, fügen Sie einfach das Kartenverzeichnis aus einem
 heruntergeladenen oder selbst erstellten Kartenthema in das Verzeichnis
 ``data\maps\earth`` ein.
 
-.. note::
+.. tip::
 
         Schauen Sie im `Little Navmap Support Forum auf
         AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ nach.
         Dort werden weite Kartenthemen zur Verfügung gestellt.
 
-
 Der vollständige Pfad zur DGML-Datei (siehe Links unten für weitere
-Details über DGML), die die Karte beschreibt, muss
+Details über DGML), der die Karte beschreibt, muss
 ``C:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml``
 sein, wenn Sie z.B. die `OpenCycleMap <http://www.opencyclemap.org>`__
 hinzufügen möchten. Die DGML-Datei kann sich auf einen
@@ -24,19 +21,21 @@ Online-Kartendienst beziehen oder auch Offline-Kartendaten enthalten.
 Normalerweise enthält ein Kartenthema viel mehr Dateien als nur die
 DGML.
 
-Das Menü ``Karte`` -> ``Thema`` im HauptMenü und das Dropdown-Menü in
+Das Menü ``Ansicht`` -> ``Kartenthema`` im Hauptmenü und das Dropdown-Menü in
 der Symbolleiste erhalten einen Eintrag für jedes weitere Kartenthema.
+Benutzerdefinierte Kartenthemen werden mit einem ```*``` in der Dropdown-Liste
+und mit dem Wort ``Benutzerdefiniert`` im Menü versehen.
 
-Die Optionen ``Länder- und Städtenamen anzeigen`` und
-``Bergschattierungen anzeigen`` sind für alle zusätzlichen Kartenthemen
+Die Optionen ``Zeige Länder und Stadtnamen`` und
+``Bergschattierung anzeigen`` sind für alle zusätzlichen Kartenthemen
 aktiviert, funktionieren aber möglicherweise nicht, abhängig von den
 Eigenschaften, die in der DGML-Datei der Karte definiert sind.
 
 Weitere Karten und Informationen zur Kartenkonfiguration und
-DGML-Dateien auf den Marble/KDE-Seiten zu finden:
+DGML-Dateien auf den Marble und KDE-Seiten zu finden:
 
--  Weitere Karten (nur Erdkarten werden in ``Little Navmap``
-   unterstützt) für das Marmor-Widget stehen
+-  Weitere Karten (nur Erdkarten werden in *Little Navmap*
+   unterstützt) für das Marble-Widget stehen
    `hier <https://marble.kde.org/maps.php>`__ zur Verfügung.
 -  Ein Tutorial, das zeigt, wie man ein Kartenthema basierend auf
    gekachelten Bildern erstellt:

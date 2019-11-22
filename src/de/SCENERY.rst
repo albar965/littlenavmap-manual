@@ -1,9 +1,7 @@
-.. _load-scenery-library-dialog:
-
-|Load Scenery Library| Dialog Szeneriebibliothek laden
+|Load Scenery Library| Szeneriebibliothek laden
 ------------------------------------------------------
 
-Dieser Dialog ermöglicht das Laden der Szenenbibliotheksdaten von allen
+Dieser Dialog ermöglicht das Laden der Szeneriebibliothek von allen
 vier unterstützten Flugsimulatoren in die interne Datenbank *Little
 Navmap*. Die zu ladende Szenerienbibliothek kann im Dropdown-Menü
 ``Simulator:`` ausgewählt werden.
@@ -44,7 +42,7 @@ diesem Add-on belegt sind, von der Add-on-Erkennung im Dialogfeld
 ``Einstellungen`` auf dem Reiter ``Szeneriebibliothek``
 ausschließen.
 
-Weitere Informationen zum Ausschließen von Szenen finden Sie unter
+Weitere Informationen zum Ausschließen von Szenerie finden Sie unter
 :ref:`scenery-library-database`.
 
 Wenn Sie den Ladevorgang abbrechen oder wenn der Ladevorgang
@@ -84,7 +82,7 @@ Szenerien korrekt dargestellt werden und die richtigen Informationen
 anzeigen. Der Fehlerdialog ermöglicht das Kopieren und Einfügen von
 formatiertem Text, was für die Fehlerberichterstattung nützlich ist.
 
-Das Dialogfeld ``Szenenbibliothek laden`` zeigt den letzten
+Das Dialogfeld ``Szeneriebibliothek laden`` zeigt den letzten
 Ladezeitpunkt (``Letzte Aktualisierung:``), das Programm und die
 Datenbankversion. Größere Unterschiede in der Datenbankversion deuten
 auf inkompatible Datenbanken hin. Das Programm fragt, ob die
@@ -123,7 +121,7 @@ großen Dateien umzugehen. Die ersten Zeilen der Datei sehen wie folgt aus:
 -  **Airports (** ``apt.dat`` **):** Version 850 up to 1100. This
    covers X-Plane 10 airports and older add-on scenery. Newer files than
    1100 might work but are not tested.
--  **Navdata (** ``earth_awy.dat`` **,** ``earth_fix.dat``  and
+-  **Navdata (** ``earth_awy.dat`` **,** ``earth_fix.dat``  **und**
    ``earth_nav.dat``): Version 850 up to 1100. Dies schließt
    X-Plane 10 Navigationsdaten aus. Neuere Dateien als 1100 können funktionieren, sind aber ungetestet.
 -  **Procedures (** ``ICAO.dat``  in the
@@ -154,7 +152,7 @@ X-Plane oder einem benutzerdefinierten Verzeichnis lesen.
 
 Beachten Sie, dass die öffentlich zugänglichen Luftraumdateien Fehler
 enthalten können, die das Laden einer Luftraumdatei verhindern können.
-Diese schweren Fehler werden nach dem Laden der Szenenbibliothek
+Diese schweren Fehler werden nach dem Laden der Szeneriebibliothek
 gemeldet. Andere Fehler, die nur einzelne Lufträume oder die Geometrie
 betreffen, werden nur in der Protokolldatei gemeldet.
 
@@ -316,7 +314,7 @@ Dialog Einstellungen Szeneriebibliothek laden
 .. figure:: ../images/loadsceneryprogress.jpg
 
       Der Fortschrittsdialog wird beim Laden der
-      Szenenbibliothek in die interne Datenbank von Little Navmap angezeigt.
+      Szeneriebibliothek in die interne Datenbank von Little Navmap angezeigt.
 
 .. _magnetic-declination:
 
@@ -355,7 +353,7 @@ Die magnetischen Missweisungswerte für X-Plane (Flugplätze und alle
 Navigationshilfen außer VORs) werden mit dem Weltmagnetmodell berechnet, das auf
 dem tatsächlichen aktuellen Jahr und Monat basiert. Dieser wird beim
 Laden der Szenerienbibliothek berechnet und in der X-Plane
-Szenenbibliothek gespeichert.
+Szeneriebibliothek gespeichert.
 
 VOR-Stationen verfügen über eigene Deklinationswerte, die von den
 berechneten Deklinationswerten in ihrer Umgebung, wie oben erwähnt,

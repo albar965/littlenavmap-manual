@@ -1,24 +1,21 @@
-.. _flight-plan-from-route-description:
-
-Flugplan Routenbeschreibung
+Routenbeschreibung
 ---------------------------
 
-In diesem Dialog können Sie einen Flugplan aus einer Routenbeschreibung,
-wie sie generiert oder bereitgestellt wird, erstellen.
+In diesem Dialog können Sie aus einer Streckenbeschreibung einen Flugplan erstellen,
+wie sie von verschiedenen Online-Diensten generiert oder bereitgestellt wird.
 
-Der Dialog ``Neuer Flugplan aus der Routenbeschreibung`` wird mit der
-Routenbeschreibung für den aktuellen Flugplan geöffnet, der auch, falls
-aktiviert, Informationen über Geschwindigkeit und Reiseflughöhe enthält
-.
+Der Dialog ``Neuer Flugplan aus Routenbeschreibung`` wird mit der
+Routenbeschreibung für den aktuellen Flugplan geöffnet, der auch
+Informationen über Geschwindigkeit und Reiseflughöhe enthalten kann.
 
 In der oberen Hälfte des Dialogs befindet sich das Eingabefeld für die
 Routenbeschreibung, während in der unteren Hälfte alle Meldungen,
-Warnungen und Fehler angezeigt werden, die beim Lesen auftreten.
+Warnungen und Fehler angezeigt werden, die beim Lesen auftreten können.
 
 Die Menütaste |Menu Button| bietet ein Dropdown-Menü, mit dem Sie die
 generierte Routenfolge anpassen können.
 
-Der Beschreibungsparser wird versuchen, so viel wie möglich von der
+*Little Navmap* wird versuchen, so viel wie möglich von der
 Route zu nutzen, auch wenn Teile des Flugplans wie Wegpunkte oder
 Luftstraßen nicht gefunden werden können oder Namen mehrdeutig sind. In
 diesem Fall werden in der unteren Hälfte Warnungen angezeigt.
@@ -36,7 +33,7 @@ Lesen von Routenbeschreibungen aus Online-Quellen wie
 Planner <http://onlineflightplanner.org/>`__,
 `SimBrief <https://www.simbrief.com>`__ oder
 `SkyVector <https://skyvector.com>`__ ein Navigationsdaten-Update für
-die Bestandsszenerie zu verwenden.
+die Bestandsszenerie oder *Little Navmap* zu verwenden.
 
 Wenn eine Navigationsdatenaktualisierung nicht möglich ist, wählen Sie den AIRAC-Zyklus
 des Online-Dienstes, der dem Zyklus am nächsten liegt, auf dem die
@@ -47,23 +44,19 @@ einigen Fällen nicht exakt zurückgerechnet werden können. Dies geschieht
 aufgrund von Mehrdeutigkeiten bei Navigationshilfen, wie z.B. NDB- und VOR-Stationen
 mit gleichen Namen oder Fehlern in den Quelldaten.
 
-Die Reisegeschwindigkeit und die Höhe werden falls vorhanden verwendet,
-um den Flugplan zu erstellen. Andernfalls wird die Reiseflughöhe
+Die FLugplanhöhe werden verwendet, um den Flugplan zu erstellen, falls gegeben.
+Andernfalls wird die Reiseflughöhe
 automatisch durch den Flugplantyp (IFR oder VFR) und die Mindesthöhe der
 verwendeten Luftstraßenabschnitte bestimmt.
 
-Die SID- und STAR-Prozeduren erfordern ein Update der Navigationsdaten, mit
-Ausnahme von X-Plane, das bereits mit einer vollständigen
-Navigationsdatenbank ausgestattet ist.
+Die Reisegeschwindigkeit wird ignoriert und erzeugt eine Warnung, wenn sie gefunden wird.
 
 .. figure:: ../images/routedescr.jpg
 
           Eine erfolgreich gelesene Routenbeschreibung mit
           einigen Warnungen über ignorierte Elemente. Der Wegpunkt ``LLL`` konnte
           nicht gefunden werden. Geschwindigkeit, Höhe, SID und STAR wurden
-          erkannt. Die Grundgeschwindigkeit von 433 Knoten wird basierend auf der
-          gegebenen Machzahl 0,74 und den Bedingungen der Standardatmosphäre
-          berechnet.
+          erkannt.
 
 .. _buttons:
 
@@ -71,53 +64,52 @@ Schaltflächen
 ~~~~~~~~~~~~~
 
 -  ``In die Zwischenablage kopieren``: Kopiert die aktuelle Beschreibung
-   als einfachen Text in die Zwischenablage.
--  ``Aus Zwischenablage``: Fügt Text aus der Zwischenablage in das
+   als Text in die Zwischenablage.
+-  ``Aus Zwischenablage``: Fügt den Text aus der Zwischenablage in das
    Eingabefeld ein. Der eingefügte Text wird in Großbuchstaben
-   umgewandelt und alle ungültigen Zeichen werden aus dem Text entfernt.
--  ``Aktualisiere vom Flugplan``: Erstellt den Routenstrang aus dem
+   umgewandelt und alle ungültigen Zeichen werden vorher entfernt.
+-  ``Aktualisiere vom Flugplan``: Erstellt die Routenbeschreibung aus dem
    aktuellen Flugplan erneut. Verwenden Sie dies, nachdem Sie die
-   Einstellungen mit der Dropdown-Menü-Taste geändert haben.
+   Einstellungen mit der Dropdown-Menü-Schaltfläche geändert haben.
 -  ``Lese Routenbeschreibung``: Liest die Routenbeschreibung und zeigt
    in der unteren Hälfte des Dialogs alle Meldungen, Warnungen und
    Fehler an. Der aktuelle Flugplan ist von dieser Aktion nicht
    betroffen.
 -  ``IFR`` / ``VFR``: Definiert die Art des generierten Flugplans und
    die automatisch ermittelte Reiseflughöhe.
--  **Menu Button** |Menu Button|: ``Schreibe`` bezeichnet den Flugplan
-   zur Beschreibung und ``Lesen`` bezeichnet die Beschreibung zum
-   Flugplan.
--  ``Schreibe Abflug- und Zielflugplatz``: Beachten Sie, dass das
-   Deaktivieren dieser Option zu einem Routen-String führt, der nicht in
-   einen Flugplan zurückgelesen werden kann.
--  ``Schreibe DCT (direkte) Anweisungen``: Füge ``DCT`` für alle
-   direkten Wegpunktverbindungen im Flugplan hinzu.
--  ``Schreibe die Anweisungen für Reisegeschwindigkeit und Höhe``: Fügt
-   die Reiseflughöhe aus dem Flugplan und die Bodengeschwindigkeit
-   hinzu, wie im Dockfenster der Flugplanung eingestellt.
--  ``Schreibe SID und STAR``: Fügt SID- und STAR-Namen hinzu, falls
-   diese für Abflug oder Ankunft verwendet werden.
--  ``Schreibe generische SID und STAR``: Fügt die allgemeinen
-   Schlüsselwörter ``SID`` und ``STAR`` hinzu, wenn keine echte SID
-   und/oder STAR ausgewählt wurden.
--  ``Schreibe Waypoints anstelle von Airways``: Fügt keine Airway-Namen
-   ein, sondern verwendet nur Wegpunkte.
--  ``Ausweichflugplätze schreiben``: Fügt alle Ausweichflugplätze an das
-   Ende der Beschreibung an.
--  ``Lese Flugplätze am Ende als Ausweichflugplätze``:
+-  **Menüschaltfläche** |Menu Button|: *Schreiben* bezeichnet die Konvertierung aus dem Flugplan
+   zur Routenbeschreibung und *Lesen* bezeichnet das Lesen der Beschreibung in den Flugplan.
 
-   -  Aktiviert: Eine Liste der Flugplätze am Ende der Beschreibung wird
-      als Ausweichflugplätze gelesen, mit Ausnahme des ersten in der
-      Reihe der aufeinanderfolgenden Flugplätze, die als Bestimmungsort
-      verwendet werden. Jeder Flugplatz mit einem gültigen STAR in der
-      Flugroute wird ebenfalls als Ziel behandelt.
-   -  Deaktiviert: Das Lesen erstellt einfach einen Flugplan mit den
-      Flugplätze als Zwischenziele und dem letzten als Ziel. Siehe
-      Beispiel unten.
+   -  ``Abflug- und Zielflugplatz schreiben``: Beachten Sie, dass das
+      Deaktivieren dieser Option zu einer ungültigen Routenbeschreibung führt, die nicht in
+      einen Flugplan zurückgelesen werden kann.
+   -  ``DCT (direkt) Instruktionen schreiben``: Füge ``DCT`` für alle
+      direkten Wegpunktverbindungen im Flugplan hinzu.
+   -  ``Fluggeschwindigkeits- und Höhenanweisungen für Reiseflug schreiben``: Fügt
+      die Reiseflughöhe aus dem Flugplan und die Geschwindigkeit aus der Flugzeugleistung.
+   -  ``SID und STAR schreiben``: Fügt SID- und STAR-Namen hinzu, falls
+      diese für Abflug oder Ankunft verwendet werden.
+   -  ``Generische SID und STAR schreiben``: Fügt die allgemeinen
+      Schlüsselwörter ``SID`` und ``STAR`` hinzu, wenn keine echte SID
+      und STAR ausgewählt wurden.
+   -  ``Wegpunkte statt Luftstraßen schreiben``: Fügt keine Luftstraßennamen
+      ein, sondern verwendet nur die Wegpunkte.
+   -  ``Ausweichflugplätze schreiben``: Fügt alle Ausweichflugplätze an das
+      Ende der Beschreibung an.
+   -  ``Lese Flugplätze am Ende als Ausweichflugplätze``:
 
--  ``Flugplan erstellen``: Schließt den Dialog und erstellt einen neuen
+      -  Aktiviert: Eine Liste der Flugplätze am Ende der Beschreibung wird
+         als Ausweichflugplätze gelesen, mit Ausnahme des ersten in der
+         Reihe der aufeinanderfolgenden Flugplätze, die als Bestimmungsort
+         verwendet werden. Jeder Flugplatz mit einem gültigen STAR in der
+         Flugroute wird ebenfalls als Ziel behandelt.
+      -  Deaktiviert: Das Lesen erstellt einen Flugplan mit den
+         Flugplätzen als Zwischenziele und dem letzten als Ziel. Siehe
+         Beispiele unten.
+
+-  ``Erstelle Flugplan``: Schließt den Dialog und erstellt einen neuen
    Flugplan für die analysierte Routenbeschreibung und ersetzt den
-   aktuellen Plan. Sie müssen auf ``Routenbeschreibung lesen`` klicken,
+   aktuellen Plan. Sie müssen auf ``Lese Routenbeschreibung`` klicken,
    bevor Sie einen Flugplan erstellen können.
 
 Format
@@ -130,25 +122,27 @@ Die Routenbeschreibung muss den folgenden Formatregeln entsprechen:
 Alle Elemente in eckigen Klammern sind optional.
 
 ``FROM`` und ``TO``: Dies sind die erforderlichen 3 oder 4 Buchstaben
-Identifikationen für Start- und Zielflugplätze.
+ICAO-Kennungen für Start- und Zielflugplätze.
 
-Beispiele: ``KEAT``, ``CYPU``, ``S16``. ``ALTERNATES``: Ausweichflugplätze sind optional und werden beim Lesen in Abhängigkeit von der
+Beispiele: ``KEAT``, ``CYPU``, ``S16``.
+
+``ALTERNATES``: Ausweichflugplätze sind optional und werden beim Lesen in Abhängigkeit von der
 Option ``Lese Flugplätze am Ende als Ausweichflugplätze`` wie oben
 beschrieben in den Flugplan aufgenommen.
 
 ``SPEEDALT``: Ein optionaler Eintrag, der die Reisegeschwindigkeit und
 die Höhe enthält. Siehe unten für Details. Die Geschwindigkeit wird beim
-Lesen ignoriert.
+Lesen ignoriert, da sie in der Flugzeugleistung vorgegeben ist.
 
 ``ENROUTE``: Dies ist eine Liste von entweder ``WAYPOINT`` oder einem
 ``AIRWAYWAYPOINT``, die den aktuellen Flugplan bilden. Der erste Eintrag
 muss ein Flugplatz, Wegpunkt, VOR oder NDB sein.
 
-``WAYPOINT``: Eine Luftstraße, VOR, NDB, Flugplatz oder
+``WAYPOINT``: Ein Wegpunkt, VOR, NDB, Flugplatz oder
 benutzerdefinierte Koordinaten. Siehe unten für Details zu den
 Koordinaten. Einem Wegpunkt kann ``DCT`` vorangestellt werden, um eine
 direkte Verbindung ohne Luftstraße anzuzeigen. Wegpunkte können mit
-einem optionalen ``/SPEEDALT``-Wert versehen werden, obwohl dieser
+einem optionalen ``/SPEEDALT``-Wert versehen werden welcher
 ignoriert wird.
 
 Beispiele: ``TAU``, ``BOMBI``, ``AST``, ``CL``, ``EDDF``.
@@ -161,7 +155,7 @@ Beispiele: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``.
 ``SID.TRANS`` und ``STAR.TRANS``: Entweder die Wörter ``SID`` oder
 ``STAR`` oder echte SID-, STAR- und Übergangsnamen, wobei der optionale
 Übergang durch ein ``.`` getrennt ist. Die generischen Schlüsselwörter
-``SID`` und ``STAR`` stellen eine direkte Verbindung zum en-route Teil
+``SID`` und ``STAR`` stellen eine direkte Verbindung zum En-Route- bzw. Reiseteil
 her.
 
 Beispiele: ``RDHK2.HOLLE``, ``OHIO3.LFK``, ``RDHK2``, ``OHIO3``.
@@ -192,14 +186,12 @@ für beide Beispiele.
 
 -  ``KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 SCHRIE J50 LFK BAYYYY3.SJI KHOU KCLL KVCT``.
 
-Nicht gültig. Fehlermeldung ``BAYYYY3.SJI nicht gefunden`` ausgegeben.
-``KVCT`` wird als Ziel gelesen, ``KHOU`` und ``KCLL`` sind
-Zwischenziele.
+Nicht gültig. Fehlermeldung ``BAYYYY3.SJI nicht gefunden`` wird ausgegeben.
+``KVCT`` wird als Ziel gelesen, ``KHOU`` und ``KCLL`` sind Zwischenziele.
 
 -  ``KPWA ATOKA J25 FUZ J33 SCHRIE J50 LFK KHOU KHOU KCLL KVCT``
 
-``KVCT`` wird als Ziel gelesen, ``KHOU`` und ``KCLL`` sind
-Zwischenziele.
+``KVCT`` wird als Ziel gelesen, ``KHOU`` und ``KCLL`` sind Zwischenziele.
 
 .. _speed-and-altitude:
 
@@ -216,18 +208,18 @@ Die Geschwindigkeit wird mit vorangestellt:
 ``N``: Knoten, gefolgt von einem vierstelligen Wert.
 
 ``M``: Mach, gefolgt von einem dreistelligen Wert. Der Mach-Wert wird in
-Knotengrundgeschwindigkeit umgerechnet, wobei die Standardbedingungen
+Bodengeschwindigkeit in Knoten umgerechnet, wobei die Standardbedingungen
 der Atmosphäre auf der angegebenen Flughöhe angenommen werden.
 
 Die Höhe wird mit vorangestellt:
 
-``F``: dreistellige Flughöhe.
+``F``: Flugebene als dreistelliger Wert.
 
-``S``: Metrische Flugfläche in drei Ziffern von Dutzenden von Metern.
+``S``: Metrische Flugebene in drei Ziffern von zehn mal Metern.
 
 ``A``: Höhe in Hunderten von Metern in drei Ziffern.
 
-``M``: Höhe in Dutzenden von Metern in vier Ziffern.
+``M``: Höhe in zehn mal Metern in vier Ziffern.
 
 Beispiele:
 
@@ -236,8 +228,6 @@ Beispiele:
 ``M071F320`` Mach 0,71 bei Flugfläche 320.
 
 ``K0790M0710`` 790 Kilometer pro Stunde auf 7100 Metern.
-
-.. _coordinates:
 
 Koordinaten
 ^^^^^^^^^^^
@@ -263,7 +253,7 @@ Sekunden und Ost/West-Anzeige. Dieses Format wird zum Beispiel von
 
 Beispiel: ``481200N0112842E``.
 
-**Nordatlantische Track Points** (NAT). Zwei Ziffern Grad Nord und zwei
+**Nordatlantische Track Punkte** (NAT). Zwei Ziffern Grad Nord und zwei
 Ziffern Grad West, gefolgt von dem Zeichen ``N``.
 
 Beispiel: ``5010N``.

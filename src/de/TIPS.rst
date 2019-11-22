@@ -1,5 +1,3 @@
-.. _tips-and-tricks:
-
 Tipps und Tricks
 ----------------
 
@@ -15,9 +13,8 @@ wird ein Umkreisring um jede Funknavigation (VOR) im Flugplan gelegt.
 
 Siehe auch :ref:`show-navaid-range`.
 
-Entferne die Ringe durch Auswahl
-``Alle Distanzkreise und Distanzmessungen entfernen`` |Remove all
-Range Rings and Distance Measurements|.
+Zum Entfernen der Ringe auf das Zentrum rechtsklicken und im Kontextmenü
+``Distanzkreise entfernen`` auswählen.
 
 |Range Rings|
 
@@ -33,34 +30,21 @@ einen Flugplatz nach Radial und Entfernung anzufliegen.
 
 Unten ist ein Beispiel, das Radial und die Entfernung von zwei VORs für
 ``ETUO`` enthält. Messlinien können auch bei NDBs oder Wegpunkten
-beginnen. Beachten Sie den Suffix ``M`` , der den magnetischen Kurs
+beginnen. Beachten Sie den Suffix ``°M`` , der den magnetischen Kurs
 angibt.
 
-Siehe auch `Messe Loxodrome Distanz von
-hier <MAPDISPLAY.html#measure-gc-distance-from-here>`__ und
+Siehe auch :ref:`measure-gc-distance-from-here` und
 :ref:`measure-rhumb-distance-from-here`.
 
 |VOR Radials|
 
-Dieses kann auch beim Abfliegen von Airways ohne GPS verwendet werden.
-Im Beispiel unten fliegen Sie 323 Grad magnetisch zu VOR ``SFD`` (radial
-143). Sie sind bei ``WAFFU``, wenn Ihr DME 13.7 nautische Meilen
+Dieses kann auch beim Abfliegen von Luftstraßen ohne GPS verwendet werden.
+Im Beispiel unten fliegen Sie 323 Grad magnetisch zu VOR ``SFD`` (Radial
+143). Sie sind bei ``WAFFU``, wenn Ihr DME 13,7 nautische Meilen
 anzeigt. Dann drehen Sie links auf 280°M bis Sie 302° von ``GWC``
 einfangen.
 
 |VOR Airways|
-
-.. _tips-and-tricks-approach-guidance:
-
-Verwenden Sie die Messlinien für die Anflugorientierung
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Klicken Sie mit der rechten Maustaste auf den Flugplatz und wählen Sie
-``Messe Großkreisdistanz von hier`` |Measure Rhumb Distance from here|.
-Ziehen Sie die Linie mit dem gegenüberliegenden Kurs bis zu 3 Seemeilen
-hinaus, um eine Führung für den Endanflug zu erhalten.
-
-|Approach Guidance|
 
 .. _tips-and-tricks-addon-airports:
 
@@ -70,33 +54,33 @@ Suche nach Add-On Flugplätze
 Sie können den Szeneriepfad verwenden, um nach Add-On-Flugplätze eines
 bestimmten Entwicklers zu suchen. Klicken Sie auf einen der
 Add-On-Flugplätze und kopieren Sie den relevanten Teil des Pfades aus dem
-Informationsfenster. Fügen Sie dieses Pfadfragment in die
-``Sceneriepfad`` Eingabefeld auf dem Reiter ``Flugplätze`` des
-Suchdockfensters. Fügen Sie ``*`` am Anfang und am Ende, da es nur Teil
+Informationsfenster. Fügen Sie dieses Pfadfragment in das Eingabefeld
+``Szeneriepfad`` auf dem Reiter ``Flugplätze`` des
+Suchdockfensters ein. Fügen Sie einen Platzhalter ``*`` am Anfang und am Ende ein, da es nur Teil
 eines Pfades ist.
 
 Siehe auch :ref:`text-filters`.
 
-Wählen Sie alle in der Ergebnistabelle aus, um alle auf der Karte
-markierten Flugplätze anzuzeigen.
+Wählen Sie alle in der Ergebnistabelle aus, um sie auf der Karte
+hervorzuheben.
 
 |Search Add-On|
 
 .. _tips-and-tricks-rtw:
 
-Verwenden Sie die Suchfunktion, um eine Rund um die Welt-Reise zu planen
+Verwenden Sie die Suchfunktion, um eine Rund um die Welt Reise zu planen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die räumliche Suchfunktion ist nützlich, um eine Weltreise zu planen.
-Angenommen, Sie würden gerne nach Osten gehen:
+Angenommen, Sie würden gerne nach Osten fliegen:
 
 #. Gehen Sie zum Dockfenster ``Suche``, Rechtsklick mit der Maustaste in
    die Ergebnistabelle und wählen Sie ``Suche zurücksetzen`` |Reset
    Search|, um alle Suchkriterien loszuwerden, die die Abfrage
    beeinflussen können.
-#. Setzen Sie Ihren Abflug-Flugplatz.
+#. Setzen Sie Ihren Startflugplatz.
 #. Klicken Sie in der Suche oder auf der Karte mit der rechten Maustaste
-   auf Ihren Abflugflugplatz und wählen Sie
+   auf Ihren Startflugplatz und wählen Sie
    ``Zentrum für Distanzsuche setzen`` |Set Center for Distance Search|.
    Dies ist der Mittelpunkt für die räumliche Suche.
 #. Fügen Sie bei der Suche zusätzliche Kriterien wie beleuchtete
@@ -114,7 +98,7 @@ Angenommen, Sie würden gerne nach Osten gehen:
 #. Zurück zu 2., bis daß Sie die Welt umrundet haben.
 
 Das Bild unten zeigt ein Abfrageergebnis für Flugplätze im Osten.
-Beachten Sie, dass die schwarzen / gelben Hervorhebungskreise auch
+Beachten Sie, dass die schwarz/gelben Hervorhebungskreise auch
 Tooltips enthalten, egal ob der Flugplatz sichtbar ist oder nicht.
 
 |Approach Guidance RTW|

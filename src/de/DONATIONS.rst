@@ -1,4 +1,4 @@
-Donations
+Spenden
 ---------
 
 **Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen meine

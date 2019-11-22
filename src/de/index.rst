@@ -1,7 +1,5 @@
-.. Test documentation master file, created by
+.. LNM documentation master file, created by
    sphinx-quickstart on Mon Oct 28 14:40:04 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 Little Navmap Benutzerhandbuch
 ================================
@@ -17,8 +15,8 @@ verwendet werden.**
 Für die Programmversionen |version|. Zuletzt aktualisiert am |today|.
 
 Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.org>`__.
-
-`Supportforum auf AVSIM (Englisch) <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
+Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
+Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
 
 --------------
 
@@ -28,7 +26,7 @@ Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler und Alexa
 
 Diese Anleitung wurde mit `Sphinx <https://www.sphinx-doc.org/>`__ unter Benutzung der
 `Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__ erstellt.
-Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
+Die PDF und MOBI Formate wurden mit Hilfe von `Calibre <https://calibre-ebook.com/>`__ konvertiert.
 
 --------------
 
@@ -47,6 +45,7 @@ Table of Contents
    DOCKWINDOWS
    TABS
    MENUS
+   STATUSBAR
    COORDINATES
    NAVDATA
    MAPDISPLAY

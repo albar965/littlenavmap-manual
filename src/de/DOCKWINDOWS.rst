@@ -2,7 +2,7 @@ Dockfenster
 -----------
 
 Die Benutzeroberfläche von *Little Navmap* besteht aus einem
-Hauptfenster und mehreren Dockfenstern, die vom Hauptfenster getrennt
+Hauptfenster und mehreren sogenannten Dockfenstern, die vom Hauptfenster getrennt
 oder innerhalb des Hauptfensters angeordnet werden können.
 
 Die angedockten Fenster können in ihrer angedockten Position bewegt und
@@ -12,21 +12,20 @@ Titelleiste doppelklickt oder auf das Fenstersymbol oben rechts klickt.
 
 Doppelklicken Sie auf die Titelleiste des angedockten Fensters oder
 klicken Sie erneut auf das Fenstersymbol, um die Fenster wieder in ihre
-angedockte Position zu bringen.
+angedockte Position im Hauptfenster zu bringen.
 
 Alle angedockten Fenster, mit Ausnahme des Kartenfensters, können
 geschlossen werden, wenn sie nicht benötigt werden. Sie können auch
-angedockte Fenster aufeinander legen, um eine Tabbed View zu erstellen.
-Die Reiter erscheinen in diesem Fall am unteren Rand des
-Dockstapels.
+angedockte Fenster aufeinander legen, um eine Reiteransicht zu erstellen.
+Die Reiter erscheinen in diesem Fall am unteren Rand der gestapelten Dockfenster.
 
 Beachten Sie, dass sich die Dockfenster automatisch öffnen, wenn Sie
 Funktionen wie ``Informationen anzeigen`` oder z.B. das Benutzerflugzeug
-anklicken.
+in der Karte anklicken.
 
 Halten Sie beim Anklicken der Fenstertitelzeile ``Strg`` gedrückt, um zu
-verhindern, dass ein Fenster im Hauptfenster in den angedockten Zustand
-zurückkehrt und schwebt.
+verhindern, dass ein Fenster in den angedockten Zustand in das Hauptfenster
+zurückkehrt und im schwebenden Zustand bleibt.
 
 Symbolleisten sind auch durch Klicken auf den linken Griff verschiebbar
 und können ähnlich wie die Dockfenster geschlossen oder vom Hauptfenster
@@ -36,7 +35,7 @@ geöffnet und geschlossen werden.
 .. figure:: ../images/toolbar_move.jpg
 
       Mauszeiger über der Symbolleiste, die angeklickt werden
-      muss, um die Symbolleiste zu verschieben oder abzukoppeln.
+      muss, um sie zu verschieben oder abzukoppeln.
 
 .. note::
 
@@ -57,13 +56,13 @@ geöffnet und geschlossen werden.
 
 .. figure:: ../images/dock_docking.jpg
 
-        Bewegen eines Dockfensters umher. Der blaue Hintergrund
+        Verschieben eines Dockfensters. Der blaue Hintergrund
         öffnet sich, um ein Feld im Hauptfenster anzuzeigen, in dem das Dock
         abgelegt werden kann.
 
 .. figure:: ../images/dock_floating.jpg
 
-     Dockfenster im Floating-Status.
+     Dockfenster im schwebenden Zustand.
 
 .. figure:: ../images/dock_drop_stack.jpg
 
@@ -75,3 +74,7 @@ geöffnet und geschlossen werden.
         Ein Stapel von zwei Dockfenstern. Die Reiterleiste ist am
         unteren Rand der gestapelten Dockfenster rot markiert.
 
+.. note::
+
+   Sie müssen auf die Titelzeile eines Fensters klicken, um es aus dem Stapel zu entfernen und nicht
+   auf die Reiterleiste.

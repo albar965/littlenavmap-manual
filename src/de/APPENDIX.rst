@@ -1,29 +1,33 @@
+Anhang
+---------------------
+
 .. _tips-for-old-and-slow:
 
 Tipps für alte und langsame Computer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _save-cycles:
 
 CPU-Zyklen speichern
 ~~~~~~~~~~~~~~~~~~~~
 
--  Dialog ``Einstellungen`` -> ``Karte`` -> ``Details beim Blättern ...``:
-   Benutze ``Normal ...``
+-  Dialog ``Einstellungen`` -> ``Karte`` -> ``Details des Rollens ...``:
+   Hier ``Normal ...`` benutzen.
 -  Dialog ``Einstellungen`` -> ``Simulatorflugzeug`` ->
-   ``Simulatorflugzeug-Scrollboxgröße ...``: Verwenden Sie einen höheren
+   ``Aktualisierungen des Simulatorflugzeuges``: ``Niedrig`` verwenden.
+-  Dialog ``Einstellungen`` -> ``Simulatorflugzeug`` ->
+   ``Größe der Scrollbox ...``: Verwenden Sie einen höheren
    Wert, um Kartenaktualisierungen zu reduzieren.
--  Schließen Sie das Fenster ``Flugplan Höhenprofil``. Die gesamte
+-  Schließen Sie das Fenster ``Höhenprofil Flugplan``. Die gesamte
    Hintergrundverarbeitung wird gestoppt, wenn es geschlossen wird.
 -  Vermeiden Sie Lufträume. Schalten Sie diese mit der Schaltfläche
    ``Zeige Lufträume``) in der
    Lufträume-Symbolleiste aus.
 -  Schalten Sie den gesamten KI-Verkehr im Dialog ``Verbinden`` aus.
    Siehe :ref:`options`.
--  Verwenden Sie die Kartenprojektion ``Mercator``. Es verbraucht
-   weniger Ressourcen, da es die heruntergeladenen Bildkacheln
-   unverändert verwenden kann und sie nicht in das sphärische Format
-   umwandelt.
+-  Verwenden Sie die Kartenprojektion ``Mercator``. Diese verbraucht
+   weniger Ressourcen, da die heruntergeladenen Bildkacheln
+   unverändert verwenden werden können und sie nicht in das sphärische Format konvertiert werden müssen.
 
 .. _save-memory:
 
@@ -64,9 +68,15 @@ zu reduzieren.
 .. _troubleshoot:
 
 Fehlerbehebung
---------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
--  **Programm stürzt beim Start ab:** Löschen Sie die Einstellungen und
+Siehe auch `Little Navmap - Frequently asked
+Questions <https://albar965.github.io/littlenavmap-faq.html>`__ (Englisch) für mehr
+Informationen.
+
+-  **Programm stürzt beim Start ab:** Benutzen Sie :ref:`reset-and-restart`
+   falls bestimme Einstellungen Probleme verursachen.
+   Falls dies nicht hilft: Löschen Sie die Einstellungen und
    die Datenbankdateien. In Windows 7, 8 oder 10 können diese in
    ``c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`` gefunden werden.
    Löschen Sie(oder besser: umbenennen oder verschieben Sie) die Dateien
@@ -81,40 +91,29 @@ Fehlerbehebung
    Entfernungssuche oder setzen Sie die Suchoptionen zurück, um den
    langsamen Start zu vermeiden.
 -  **Online-Karten werden nicht geladen oder aktualisiert:** Überprüfen
-   Sie Ihre Firewall-Einstellungen, wenn Windows ausgehende Verbindungen
+   Sie Ihre Firewall-Einstellungen, ob Windows ausgehende Verbindungen
    blockiert. Überprüfen Sie auch, ob der Offline-Modus nicht
-   versehentlich im Menü ``Datei`` aktiviert wurde. Überprüfen Sie, ob
+   versehentlich im Menü ``Datei`` aktiviert wurde. Überprüfen Sie weiterhin, ob
    sich *Little Navmap* mit dem Internet verbinden kann, indem Sie den
    Optionen-Dialog auf dem Reiter ``Wetter`` aufrufen. Verwenden
-   Sie einen der Buttons ``Test`` für NOAA oder VATSIM Wetter. *Little
+   Sie eine der Schaltflächen ``Test`` für NOAA oder VATSIM Wetter. *Little
    Navmap* kann sich mit dem Internet nicht verbinden, wenn diese nicht
    funktionieren.
--  **side-by-side Konfigurationsfehler**: Sie betreiben *Little Navmap*
-   auf einem Computer ohne Simulator (d.h. ohne SimConnect)
-   Installation, wenn Sie diesen Fehler erhalten. Verwenden Sie
-   stattdessen ``littlenavmap-nosimconnect.exe``, das alle Funktionen
-   außer der direkten Verbindung und dem Laden der Szenen-Datenbank
-   bietet.
-
-Hinweis: ``littlenavmap-nosimconnect.exe`` wird ab *Little Navmap* Version 1.4.4 nicht mehr verwendet. Sie können
-``littlenavmap.exe`` auf allen Computern verwenden, egal ob
-SimConnect installiert ist oder nicht.
-
 -  **Suche zeigt kein Ergebnis oder unerwartete Ergebnisse:** Überprüfen
    Sie das Dropdown-Menü für den Änderungsindikator ``*`` und die
    Suchfelder für jeden verbleibenden Text, wenn die Entfernungssuche
    keine oder unerwartete Ergebnisse liefert. Verwenden Sie
-   ``Suchkriterien zurücksetzen`` im Kontextmenü der Ergebnistabelle
-   oder drücken Sie ``Ctrl+R``, um alle Suchkriterien zu löschen.
+   ``Suche zurücksetzen`` im Kontextmenü der Ergebnistabelle
+   oder drücken Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 -  **Such- oder Flugplantabellen zeigen seltsame Spaltennamen
    wie** ``airport_id``  oder andere: Dies kann passieren, wenn
    das Programm aktualisiert wird. Verwenden Sie
-   ``Ansicht aktualisieren`` im Kontextmenü der Ergebnistabelle.
+   ``Ansicht zurücksetzen`` im Kontextmenü der Ergebnistabelle.
 -  **Online-Karten wie**  **OpenStreetMap**  oder
    **OpenTopoMap** können bei Verwendung von Funktionen wie
-   ``Center Flight Plan`` oder ``Go to Home`` unscharf werden. Zoomen
+   ``Flugplan zentrieren`` oder ``Gehe zur Heimposition`` unscharf werden. Zoomen
    Sie einmal ein und aus mit dem Mausrad, den Zoomtasten oder der
-   Tastatur, das Problem zu beheben.
+   Tastatur, das Problem zu beheben. Siehe auch :ref:`blurred-map`.
 -  **Das Höhenprofil des Flugplans enthält Fehler oder ungültige
    Höhendaten:** Die Online-Höhendaten enthalten mehrere bekannte
    Fehler. Verwenden Sie die empfohlenen GLOBE Offline-Höhendaten. Siehe
@@ -127,12 +126,12 @@ SimConnect installiert ist oder nicht.
 -  **Das Laden der Szeneriedatenbank dauert zu lange:** Schliessen
    Sie diejenige Verzeichnissen aus, die nur Landklassen, Höhendaten
    oder andere für *Little Navmap* irrelevante Daten enthalten. Sie
-   können dies im Dialog ``Einstellungen`` auf der Seit
-   ``Szeneriebibliotheksdatenbank`` tun. Siehe
+   können dies im Dialog ``Einstellungen`` auf der Seite
+   ``Szeneriebibliothek`` tun. Siehe
    :ref:`scenery-library-database-exclude`.
--  **Absturz beim Laden der Szenerie-Bibliotheksdatenbank:** Sie können
-   Szenerieverzeichnisse im ``Einstellungen``-Dialog auf dem Reiter
-   ``Szenenbibliotheksdatenbank`` ausschließen, wenn das Laden eines
+-  **Absturz beim Laden der Szenerie-Bibliothek:** Sie können
+   Szenerieverzeichnisse im ``Einstellungen``-Dialog auf der Seite
+   ``Szeneriebibliothek`` ausschließen, wenn das Laden eines
    Add-Ons BGL das Programm zum Absturz bringt. Starten Sie das Programm
    nicht neu, nachdem es den Absturzdialog angezeigt hat, und laden Sie
    stattdessen die Protokolldatei, die typischerweise den Namen
@@ -148,7 +147,7 @@ SimConnect installiert ist oder nicht.
 .. _known-problems:
 
 Bekannte Probleme
------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 -  Einige Flugplatz-Add-Ons ändern nicht die Standard-Flugplätze, sondern
    fügen nur neue Szenerien oder Gebäude hinzu. Diese Add-ons werden
@@ -160,11 +159,11 @@ Bekannte Probleme
    sind. Viele dieser Änderungen werden auch durchgeführt, damit sich
    die KI korrekt verhält. Typische Beispiele sind: Flugplätze ohne
    Start- und Landebahnen, Flugplätze mit einer Start- und
-   Landebahnbreite von 0 x 0 ft oder 0 ft, Taxibahnen mit einer Breite
-   von 0 ft, scheinbar geschlossene Rollbahnen, doppelte Flugplätze,
+   Landebahnbreite von 0 x 0 Fuß oder 0 Fuß, Taxibahnen mit einer Breite
+   von 0 Fuß, scheinbar geschlossene Rollbahnen, doppelte Flugplätze,
    doppelte Start- und Landebahnen im Wasser, Rollbahnen im Wasser,
    Militärgates auf zivilen Flugplätze und vieles mehr.
--  Das Parsen von Routenbeschreibungen kann in seltenen Fällen auch bei
+-  Das Lesen von Routenbeschreibungen kann in seltenen Fällen auch bei
    bereits berechneten Flugplänen Wegpunkte überspringen. Dies kann
    durch fragmentierte Luftstraßen, Fehler in den Quelldaten oder
    Mehrdeutigkeiten zwischen den Navigationshilfen passieren.
@@ -175,31 +174,25 @@ Bekannte Probleme
    Verwenden Sie die Kartenmotive *OpenTopoMap* oder *Stamen Terrain*
    mit weltweiter Abdeckung für Bergschattierungen.
 -  Es gibt Fehler in den Online-Höhenquellendaten (wie in Norditalien,
-   der Poebene oder dem Titicacasee in Peru und Bolivien), die im
+   der Po-Ebene oder dem Titicacasee in Peru und Bolivien), die im
    Höhenprofil des Flugplans angezeigt werden.
--  Die Mercator-Projektion zeigt gelegentliche Darstellungsprobleme in
+-  Die Mercator-Projektion zeigt gelegentlich Darstellungsprobleme in
    Abhängigkeit von der Zoomdistanz, wie z.B. horizontale Linien in der
    Nähe des Anti-Meridians oder fehlende Flugplansegmente.
--  Die Marmor-Floating-Landkarten-Overlays auf der Karte können
-   konfiguriert werden, speichern aber nicht alle Einstellungen können
-   gespeichert werden mit Ausnahme ihrer Sichtbarkeit.
+-  Die Karten-Overlays auf der Karte können
+   konfiguriert werden, speichern aber nicht alle Einstellungen mit
+   Ausnahme ihrer Sichtbarkeit.
 -  Magnetische Abweichung ist teilweise nicht eingestellt (z.B. VORDME
-   Cambridge Bay YCB) oder inkonsistent zwischen Flugplätze und
+   Cambridge Bay YCB) oder inkonsistent zwischen Flugplätzen und
    benachbarten Navigationshilfen. Dies ist ein Fehler in der Quelle.
 -  Flugplätze sind falsch plaziert (zum Beispiel Cabo San Lucas, MM15 in
    Mexiko) im Vergleich zu den Hintergrundkarten. Dies ist ein Fehler in
    den Quelldaten und kann nicht behoben werden.
--  Kartenausdrucke können unscharf sein, da sie von der
-   Bildschirmauflösung abhängen. Als Workaround vergrößern Sie das
+-  Die Hintergrundkarte in Kartenausdrucken kann unscharf sein, da sie von der
+   Bildschirmauflösung abhängt. Als Übergangslösung vergrößern Sie das
    sichtbare Kartenfenster.
 -  Sehr lange Streckenabschnitte können beim Zoomen von der Karte
    verschwinden. Die Beschriftung ist aber immer noch sichtbar.
--  Tooltips großer Lufträume können an falschen Stellen erscheinen.
--  Das Scrollen auf der Karte kann bei einigen komplexen
-   X-Plane-Flugplätze sehr langsam sein.
--  Die falschen Prozeduren werden manchmal wiederhergestellt, wenn der
-   Flugplan neu geladen wird, wenn ein Flugplatz mehr als eine Prozedur
-   mit dem gleichen Namen hat.
 -  Prozeduren werden in manchen Fällen falsch gezeichnet.
 -  Das Flugplatz-Suchattribut ``Prozeduren`` funktioniert in der
    gemischten Datenbank nicht korrekt. Es werden nur Simulatorflugplätze
@@ -209,13 +202,12 @@ Bekannte Probleme
 .. _how-to-report-a-bug:
 
 Wie meldet man einen Fehler?
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn etwas schief geht, schicken Sie mir bitte alle beteiligten Dateien
-wie KML, PLN oder BGL (wenn das Copyright es erlaubt), Little Navmap_s
-Logdatei und die Konfigurationsdatei, die beide im About-Dialog zu
-finden sind. Meine E-Mail-Adressen werden auch im About-Dialog von
-*Little Navmap* angezeigt.
+wie KML, PLN oder BGL (falls das Copyright es erlaubt), *Little Navmaps*
+Logdatei und die Konfigurationsdatei, die beide im Dialog ``Über Little Navmap`` zu
+finden sind. Meine E-Mail-Adressen werden ebenfalls im diesem Dialog angezeigt.
 
 **Fügen Sie alle notwendigen Informationen hinzu:**
 
@@ -228,15 +220,15 @@ finden sind. Meine E-Mail-Adressen werden auch im About-Dialog von
 -  Simulator:
 -  X-Plane: 10, 11.05 oder 11.10 Beta Version
 -  FSX, FSX SE, P3D V4 oder V4.1
--  Fügen Sie Flugpläne oder andere von dem Fehler betroffene Dateien.
+-  Fügen Sie Flugpläne oder andere von dem Fehler betroffene Dateien hinzu.
 
-Bitte fügen Sie alle Schritte hinzu, die notwendig sind, um den Fehler
+Bitte geben Sie alle Schritte an, die notwendig sind, um den Fehler
 zu reproduzieren. Wenn möglich, schicken Sie mir die Log-Datei.
 
 **Bitte komprimieren Sie die Logdateien mit Zip, um zu vermeiden, dass
-mein Postfach vollgestopft wird.**
+mein Postfach überfüllt wird.**
 
-Wenn beim Laden der Szenenbibliothek ein Fehler auftritt, senden Sie mir
+Wenn beim Laden der Szeneriebibliothek ein Fehler auftritt, senden Sie mir
 die fehlerhaften Datei, wenn es die Größe zulässt. Der vollständige Name
 und Pfad der Datei wird oben im Fehlerdialog angezeigt, wenn eine
 bestimmte Datei den Fehler auslöst.
@@ -247,10 +239,10 @@ Datenschutzes haben: die Protokolldateien enthalten alle Systempfade
 Teil des Pfades enthalten. Sie können auch den Namen und die IP-Adresse
 Ihres Computers enthalten.
 
-Ich schlage vor, dass Sie diese Informationen entfernen, wenn Sie mit
-diesen Probleme haben. In keinem Fall sind Dateinamen von etwas anderes
-vorhanden, aber die Flugsimulator-Daten oder dessen
-Konfigurationsdateien sind dabei. Es werden keine Namen oder Inhalte von
+Ich schlage vor, dass Sie diese Informationen entfernen, wenn Sie damit
+Probleme haben. In keinem Fall sind Dateinamen von etwas anderem
+als Flugsimulator-Daten oder dessen
+Konfigurationsdateien enthalten. Es werden keine Namen oder Inhalte von
 persönlichen Dateien in die Protokolldateien gespeichert. Ich empfehle
 dringend, die Logdateien per privater Forumsnachricht oder per E-Mail zu
 versenden und sie nicht an Forumsbeiträge anzuhängen, wo sie öffentlich

@@ -1,5 +1,3 @@
-.. _customize:
-
 Anpassen
 --------
 
@@ -7,9 +5,9 @@ Anpassen
 Verzeichnis ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. Dieses
 ermöglicht eine erweiterte Anpassung des Programms.
 
-Die Dateien verwenden die Windows- ``INI`` Stile, die Gruppen in
-eckigen Klammern haben und ``key=value`` Zeilen haben. Siehe
-`hier <https://en.wikipedia.org/wiki/INI_file>`__ für weitere
+Die Dateien verwenden den Windows- ``INI`` Stil, die Gruppen in
+eckigen Klammern und Schlüssel/Wert-Paare ``key=value`` benutzen. Siehe
+`hier <https://de.wikipedia.org/wiki/Initialisierungsdatei>`__ für weitere
 Informationen über diese Art von Konfigurationsdateien.
 
 .. note::
@@ -22,21 +20,21 @@ Um alle Änderungen rückgängig zu machen, löschen Sie einfach eine Datei.
 Sie wird beim Start von *Little Navmap* mit den Standardwerten neu
 erstellt.
 
-Einzelne Zeilen können auch gelöscht werden und werden beim Start von
+Einzelne Zeilen können auch gelöscht werden. Diese werden dann beim Start von
 *Little Navmap* mit dem Standardwert wiederhergestellt.
 
-Schlüssel und Werte sind case-sensitiv. Die Reihenfolge in den Dateien
-ist nicht wichtig, wenn die Schlüssel in ihren jeweiligen Abschnitten
+Groß- und Kleinschreibung spielt für Schlüssel und Gruppen keine Rolle. Die Reihenfolge
+in den Dateien ist nicht wichtig, wenn die Schlüssel in ihren jeweiligen Abschnitten
 bleiben. Das Programm kann die Schlüssel beim Speichern oder
 Aktualisieren der Dateien neu anordnen.
 
 .. _customize-version:
 
 Version
--------
+^^^^^^^^
 
 Einige der INI-Dateien enthalten einen Abschnitt ``[Options]`` mit einem
-Key ``Version`` wie unten gezeigt.
+Schlüssel ``Version`` wie unten gezeigt.
 
 .. code-block:: ini
 
@@ -63,17 +61,18 @@ oder ändern.
 .. _customize-gui:
 
 Benutzeroberfläche
-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Es können nur zwei Arten von Benutzeroberflächen angepasst werden. Diese
+Es können nur zwei Arten von Stilen angepasst werden. Diese
 sind ``Fusion`` und ``Night`` und befinden sich auf der Seite
 :ref:`user-interface` des
-Einstelldialogs. Diese beiden Stile sind auf allen Betriebssystemen
+Einstellungsdialogs. Diese beiden Stile sind auf allen Betriebssystemen
 verfügbar.
 
 Es werden zwei Dateien erzeugt, die die Anpassung für alle Fenster-,
 Schaltflächen- und Dialogfarben ermöglichen. Das sind:
-``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
+
+-  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
 
 -  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini``
 
@@ -86,41 +85,10 @@ Sehen Sie hier für weitere Informationen über
 `Gruppen <http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum>`__ und
 `Rollen <http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum>`__.
 
-.. _customize-online-center:
-
-Online Network Center
----------------------
-
-Die Konfigurationsdatei
-``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap.ini``
-ermöglicht es, die Größe der Online-Netzwerk Center zu ändern.
-
-Der Radius liegt in nautischen Meilen. Der Sichtbereich wird verwendet,
-wenn der Radius -1 ist. Es wird kein Kreis gezeichnet, wenn der Wert 0
-ist.
-
-.. warning::
-
-      Löschen Sie diese Datei nicht, da sie alle Programmeinstellungen, den
-      Kartenverlauf, geöffnete Dateien und vieles mehr enthält. Bearbeiten Sie
-      nur die untenstehenden Schlüssel.
-
-.. code-block:: ini
-
-     [Online]
-     CenterRadiusACC=-1
-     CenterRadiusApproach=20
-     CenterRadiusDelivery=-1
-     CenterRadiusDeparture=-1
-     CenterRadiusFIR=-1
-     CenterRadiusGround=5
-     CenterRadiusObserver=-1
-     CenterRadiusTower=10
-
 .. _customize-map-display:
 
 Kartenanzeige
--------------
+^^^^^^^^^^^^^^^^
 
 Die Datei
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini``
@@ -131,7 +99,7 @@ Farbwerten finden Sie weiter unten.
 
 .. _customize-formats-color:
 
-Farbformate
+Farbformat
 ~~~~~~~~~~~
 
 Farben können in einem dieser Formate sein, die häufig im Webdesign
@@ -140,11 +108,11 @@ verwendet werden:
 -  ``#RRGGBB`` jedes von R, G, B und A ist eine einzelne
    Hexadezimalziffer. Jeder Farbwert reicht von 00 - FF (dezimal 0-255)
 -  ``#AARRGGBB`` Die ersten beiden Ziffern enthalten den
-   Alpha/Transparenzwert. ``00`` bedeutet volle Transparenz und bis
+   Alpha/Transparenzwert. ``00`` bedeutet volle Transparenz und
    ``FF`` (decimal 255) undurchsichtig.
 -  SVG Farbname
 
-SVG Farbname ist eine der in der Liste der Farben definierten Farben.
+Der SVG Farbname ist eine der in der Liste der Farben definierten Farben.
 `SVG Farbe Keyword
 Namen <https://www.w3.org/TR/SVG/types.html#ColorKeywords>`__ die vom
 World Wide Web Consortium bereitgestellt werden, z.B. ``steelblue`` oder
@@ -165,16 +133,16 @@ um die Hex-Werte für eine Farbe zu erhalten.
 
 .. _customize-formats-pen:
 
-Pen Format
-~~~~~~~~~~
+Stiftformat
+~~~~~~~~~~~~
 
-Ein Pen enthält die folgenden Werte in einer kommagetrennten Liste:
+Ein Stift bzw. Pen enthält die folgenden Werte in einer kommagetrennten Liste:
 
 -  Farbe wie oben beschrieben
--  Pen-Breite als Fließkommawert gemessen in Pixeln. Sie müssen den
+-  Stiftbreite als Fließkommawert gemessen in Pixeln. Sie müssen den
    ``.`` als Dezimaltrennzeichen nemen, unabhängig davon, was Ihr
    Gebietsschema definiert.
--  Pen-Stil. Einer der folgenden Werte: ``Solid``, ``Dash``, ``Dot``,
+-  Stil. Einer der folgenden Werte: ``Solid``, ``Dash``, ``Dot``,
    ``DashDot`` und ``DashDotDot``.
 
 **Beispiele:**
@@ -187,37 +155,37 @@ Ein Pen enthält die folgenden Werte in einer kommagetrennten Liste:
 
 .. _customize-icons:
 
-Icons
------
+Symbole
+^^^^^^^^
 
 Um ein Symbol zu ändern, laden Sie es aus dem Github Quell-Repository
 herunter. `Icon
-Resources <https://github.com/albar965/littlenavmap/tree/release/2.0/resources/icons>`__
+Resources <https://github.com/albar965/littlenavmap/tree/release/2.4/resources/icons>`__
 oder entpacken Sie die enthaltene Datei
 ``Little Navmap/customize/icons.zip``.
 
-Ändern Sie das Icon und speichern Sie es im Einstellungsordner
+Ändern Sie das Symbol und speichern Sie es im Einstellungsordner
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap*
 erkennt und verwendet das Symbol automatisch beim nächsten Start.
 
 Das Format ist auf SVG beschränkt. (`Scalable Vector Graphics (SVG) Tiny
-1.2 Specification <https://www.w3.org/TR/SVGMobile12>`__), wo erweiterte
+1.2 Specification <https://www.w3.org/TR/SVGMobile12>`__), bei dem erweiterte
 Grafikeffekte wie Texturen nicht funktionieren.
 
 Sie können das kostenlose Vektorzeichnungsprogramm
-`Inkscape <https://inkscape.org>`__ verwenden,um Icons zu editieren.
+`Inkscape <https://inkscape.org>`__ verwenden,um Icons zu bearbeiten.
 Starten Sie *Little Navmap* neu, um die Änderungen zu sehen.
 
 .. _customize-aircraft-icons:
 
-User, AI and Multiplayer Aircraft Icons
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Benutzer, KI Mehrspielerayer Flugzeugsymbole
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Alle Symbole für Benutzer, KI/Multiplayer-Flugzeuge, Hubschrauber und
+Alle Symbole für Benutzer, KI/Mehrspieler-Flugzeuge, Hubschrauber und
 Schiffe sind im Programm gespeichert, können aber vom Benutzer
 überschrieben werden.
 
-Die Icons sind:
+Die Symbole sind:
 
 -  ``aircraft_boat_ground_user.svg``
 -  ``aircraft_boat_ground.svg``
@@ -239,17 +207,17 @@ Die Icons sind:
 -  ``aircraft_online_ground.svg``
 
 Die Suffixe werden nach Fahrzeugtyp, Status (Boden oder Luft) und
-Benutzer oder KI/Multiplayer ausgewählt. Das Icon zeigt fliegende
-Flugzeuge an, wenn ``ground`` fehlt und wenn für
-KI/Multiplayer-Fahrzeuge ``user`` fehlt. Aus historischen Gründen werden
-alle Icons mit einem Präfix ``aircraft`` versehen.
+Benutzer oder KI/Mehrspieler ausgewählt. Das Icon zeigt
+Flugzeuge in der Luft an, wenn ``ground`` fehlt und für
+KI/Mehrspieler-Fahrzeuge ``user`` fehlt. Aus historischen Gründen werden
+alle Symbole mit einem Präfix ``aircraft`` versehen.
 
 .. _customize-userpoint-icons:
 
-Userpoint Category Icons
-~~~~~~~~~~~~~~~~~~~~~~~~
+Kategoriesymbole für Nutzerpunkte
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Icons für Userpoint-Kategorien werden im Programm gespeichert, können
+Symbole für Nutzerpunktkategorien werden im Programm gespeichert, können
 aber auch vom Benutzer überschrieben werden.
 
 Standardkategoriensymbole können mit einem anderen Symbol überschrieben
@@ -260,23 +228,32 @@ Neue Kategorien können hinzugefügt werden, indem ein neues Symbol, das
 einem bestimmten Namensmuster entspricht, im Standardverzeichnis
 platziert wird.
 
+Die Standardsymbole sind:
+
 -  ``userpoint_Airport.png``
 -  ``userpoint_Airstrip.png``
 -  ``userpoint_Bookmark.png``
 -  ``userpoint_Cabin.png``
 -  ``userpoint_Closed.png``
+-  ``userpoint_DME.png``
 -  ``userpoint_Error.png``
 -  ``userpoint_Flag.png``
 -  ``userpoint_Helipad.png``
+-  ``userpoint_Lighthouse.png``
 -  ``userpoint_Location.png``
 -  ``userpoint_Logbook.png``
 -  ``userpoint_Marker.png``
 -  ``userpoint_Mountain.png``
+-  ``userpoint_NDB.png``
 -  ``userpoint_Obstacle.png``
--  ``userpoint_Pin.png``
 -  ``userpoint_POI.png``
+-  ``userpoint_Pin.png``
 -  ``userpoint_Seaport.png``
+-  ``userpoint_TACAN.png``
 -  ``userpoint_Unknown.png``
+-  ``userpoint_VOR.png``
+-  ``userpoint_VORDME.png``
+-  ``userpoint_VORTAC.png``
 -  ``userpoint_VRP.png``
 -  ``userpoint_Waypoint.png``
 
