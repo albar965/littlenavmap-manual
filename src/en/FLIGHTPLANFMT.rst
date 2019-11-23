@@ -501,7 +501,7 @@ VFP (vPilot)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the VATSIM
-`vPilot <https://www.vatsim.net/pilots/software>`__ online network
+`vPilot <https://www.vatsim.net/pilots/download-required-software>`__ online network
 client.
 
 :doc:`ROUTEEXPORT` will appear

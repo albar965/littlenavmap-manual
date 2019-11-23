@@ -522,7 +522,7 @@ können.
 VFP (vPilot)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Flugplanformat für den `vPilot <https://www.vatsim.net/pilots/software>`__
+Flugplanformat für den `vPilot <https://www.vatsim.net/pilots/download-required-software>`__
 Online-Netzwerk-Client für VATSIM .
 
 :doc:`ROUTEEXPORT` wird

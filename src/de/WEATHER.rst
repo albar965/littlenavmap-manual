@@ -15,7 +15,7 @@ Das Wetter kann aus den folgenden Quellen entnommen werden:
 -  `NOAA <https://www.weather.gov>`__ Online-Wetterdienst
 -  `VATSIM <https://www.vatsim.net>`__ Netzwerk Online-Wetterdienst
 -  `IVAO <https://www.ivao.aero>`__ Netzwerk Online-Wetterdienst
--  `HiFi Simulation Technologies <http://www.hifisimtech.com>`__:
+-  `HiFi Simulation Technologies <https://www.hifisimtech.com>`__:
 
    -  *Active Sky Next* (ASN)
    -  *AS16*

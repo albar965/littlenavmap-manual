@@ -72,7 +72,6 @@ Thanks to all in the forums who patiently supported me and gave
 invaluable feedback during the public beta:
 
 `SimOuthouse <http://www.sim-outhouse.com>`__,
-`FlightX.net <https://flightx.net>`__ and
 `FSDeveloper.com <https://www.fsdeveloper.com>`__.
 
 Thanks to `AVSIM <https://www.avsim.com>`__ for kindly hosting the
@@ -85,7 +84,7 @@ Wiki <https://www.fsdeveloper.com/wiki>`__. So, here a huge thank-you to
 all the contributors.
 
 Also a thank you to Ed Williams for his `Aviation
-Formulary <http://www.edwilliams.org/avform.htm>`__.
+Formulary <http://www.edwilliams.org/>`__.
 
 Without the open source `Marble <https://marble.kde.org>`__ widget that
 allows me to access and display all the maps I would still be busy doing

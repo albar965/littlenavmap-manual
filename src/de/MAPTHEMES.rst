@@ -15,7 +15,7 @@ heruntergeladenen oder selbst erstellten Kartenthema in das Verzeichnis
 Der vollständige Pfad zur DGML-Datei (siehe Links unten für weitere
 Details über DGML), der die Karte beschreibt, muss
 ``C:\Own Programs\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml``
-sein, wenn Sie z.B. die `OpenCycleMap <http://www.opencyclemap.org>`__
+sein, wenn Sie z.B. die `OpenCycleMap <https://www.opencyclemap.org>`__
 hinzufügen möchten. Die DGML-Datei kann sich auf einen
 Online-Kartendienst beziehen oder auch Offline-Kartendaten enthalten.
 Normalerweise enthält ein Kartenthema viel mehr Dateien als nur die

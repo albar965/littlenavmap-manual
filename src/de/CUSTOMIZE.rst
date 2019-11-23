@@ -113,8 +113,8 @@ verwendet werden:
 -  SVG Farbname
 
 Der SVG Farbname ist eine der in der Liste der Farben definierten Farben.
-`SVG Farbe Keyword
-Namen <https://www.w3.org/TR/SVG/types.html#ColorKeywords>`__ die vom
+`CSS Colors <https://www.w3schools.com/cssref/css_colors.asp>`__;
+die vom
 World Wide Web Consortium bereitgestellt werden, z.B. ``steelblue`` oder
 ``gainsboro``. Beachten Sie, dass Sie keinen Alpha-Kanalwert eingeben
 können, wenn Sie einen Farbnamen verwenden.

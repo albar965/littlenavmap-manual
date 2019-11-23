@@ -104,9 +104,9 @@ design:
    ``00`` equals to fully tranparent and ``FF`` (decimal 255) to opaque.
 -  SVG color name
 
-SVG color name is one of the colors defined in the list of `SVG color
-keyword names <https://www.w3.org/TR/SVG/types.html#ColorKeywords>`__
-provided by the World Wide Web Consortium; for example, ``steelblue`` or
+SVG color name is one of the colors defined in the list of
+`CSS Colors <https://www.w3schools.com/cssref/css_colors.asp>`__;
+for example, ``steelblue`` or
 ``gainsboro``. Note that you cannot enter an alpha channel value if you
 use a color name.
 

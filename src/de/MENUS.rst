@@ -456,7 +456,7 @@ Flugplan als vPilot VFP exportieren
 '''''''''''''''''''''''''''''''''''
 
 Exportieren Sie den Flugplan für den Online-Netzwerk-Client VATSIM
-`vPilot <https://www.vatsim.net/pilots/software>`__.
+`vPilot <https://www.vatsim.net/pilots/download-required-software>`__.
 
 :doc:`ROUTEEXPORT` wird vorher
 eingeblendet und Sie können alle erforderlichen Informationen

@@ -61,17 +61,16 @@ wertvolle Rückmeldung wärend der Öffentlichen Beta-Phase gaben:
 
 `AVSIM <http://www.avsim.com>`__,
 `SimOuthouse <http://www.sim-outhouse.com>`__,
-`FlightX.net <http://flightx.net>`__ and
-`FSDeveloper.com <http://www.fsdeveloper.com>`__.
+`FSDeveloper.com <https://www.fsdeveloper.com>`__.
 
 Dieses Projekt und meine Bibliothek
 `atools <https://github.com/albar965/atools>`__ würden nicht ohne die
 fabelhafte Dokumentation der BGL-Dateien im `FSDeveloper
-Wiki <http://www.fsdeveloper.com/wiki>`__ existieren. Also, hier ein
+Wiki <https://www.fsdeveloper.com/wiki>`__ existieren. Also, hier ein
 riesiges Danke an alle Mitwirkende.
 
 Danke auch an Ed Williams für sein `Aviation
-Formulary <http://williams.best.vwh.net/avform.htm>`__.
+Formulary <http://www.edwilliams.org/>`__.
 
 Ohne das Open Source `Marble <https://marble.kde.org>`__ Widget das es
 mir erlaubt, auf all die Karten zuzugreifen und sie darzustellen, wäre

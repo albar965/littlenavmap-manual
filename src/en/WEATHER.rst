@@ -13,7 +13,7 @@ Weather can be taken from the following sources:
 -  `NOAA <https://www.weather.gov>`__ online weather service
 -  `VATSIM <https://www.vatsim.net>`__ network online weather service
 -  `IVAO <https://www.ivao.aero>`__ network online weather service
--  `HiFi Simulation Technologies <http://www.hifisimtech.com>`__:
+-  `HiFi Simulation Technologies <https://www.hifisimtech.com>`__:
 
    -  *Active Sky Next* (ASN)
    -  *AS16*

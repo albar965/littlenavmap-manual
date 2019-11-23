@@ -15,5 +15,5 @@ shift 1
 # Run for all given language codes ==============
 for LANGNAME in "$@" ; do
   mkdir -pv build/${TARGET}/${LANGNAME}
-  sphinx-build -E -a -N -n -c src -b ${TARGET} src/${LANGNAME} build/${TARGET}/${LANGNAME} -j 4 -Dlanguage=${LANGNAME}
+  sphinx-build -E -q -a -N -n -c src -b ${TARGET} src/${LANGNAME} build/${TARGET}/${LANGNAME} -j 4 -Dlanguage=${LANGNAME}
 done

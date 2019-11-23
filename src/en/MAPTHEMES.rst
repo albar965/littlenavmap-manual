@@ -14,7 +14,7 @@ the map directory from a downloaded or self created map theme to the
 The full path to the DGML file (see links below for more details about
 DGML) describing the map must be
 ``...\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml`` if
-you like to add the `OpenCycleMap <http://www.opencyclemap.org>`__ for
+you like to add the `OpenCycleMap <https://www.opencyclemap.org>`__ for
 example. The DGML file can refer to an online map service or included
 offline map data. Usually a map theme contains many more files than only
 the DGML.
