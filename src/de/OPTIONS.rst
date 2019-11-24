@@ -82,7 +82,7 @@ Unscharfe Kartenanzeige vermeiden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn Sie dies aktivieren, erhalten Sie ein scharfes Hintergrundbild für
-Online-Karten (z.B. von OpenStreetMap), wenn *Little Navmap* auf
+Online-Karten (z.B. von *OpenStreetMap*), wenn *Little Navmap* auf
 Kartenobjekte wie Flugplätze, die aktive Flugplanetappe und andere
 zoomt oder zentriert. Dies funktioniert am besten mit der
 Kartenprojektion ``Mercator``.

@@ -642,7 +642,7 @@ betrifft. Diese können Sie in den ensprechenden Menüs separat abschalten.
 .. _save-map-as-image:
 
 |Save Map as Image| Karte als Bild speichern
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Speichert die aktuelle Kartenansicht als Bilddatei. Erlaubte Formate
 sind JPEG, PNG und BMP. Das Bild enthält keine Karten-Overlays.
@@ -653,7 +653,7 @@ angezeigt, damit Sie die Bildgröße auswählen können.
 .. _save-map-as-avitab:
 
 |Save Map as Image for AviTab| Karte als Bild für AviTab speichern
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Speichert die aktuelle Kartenansicht als Bilddatei für
 `AviTab <https://github.com/fpw/avitab>`__. Erlaubte Formate sind JPEG
@@ -678,7 +678,7 @@ Mercator <https://github.com/fpw/avitab/wiki/Map-App#mercator>`__.
 .. _save-map-to-clipboard:
 
 Kartenbild in die Zwischenablage kopieren
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Kopiert das aktuelle Kartenbild in die Zwischenablage. Das Bild enthält
 keine die Karten-Overlays.
@@ -689,7 +689,7 @@ auswählen können.
 .. _print-map:
 
 |Print Map| Karte drucken
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ermöglicht das Drucken der aktuellen Kartenansicht. Für weitere
 Informationen siehe :ref:`printing-the-map`.
@@ -697,7 +697,7 @@ Informationen siehe :ref:`printing-the-map`.
 .. _print-flight-plan:
 
 |Print Flight Plan| Flugplan drucken
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Öffnet einen Druckdialog, in dem Sie flugplanbezogene Informationen
 zum Drucken auswählen können. Für weitere Informationen siehe :ref:`printing-the-flight-plan`.
@@ -705,7 +705,7 @@ zum Drucken auswählen können. Für weitere Informationen siehe :ref:`printing-
 .. _file-quit:
 
 |Quit| Beenden
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Beendet die Anwendung. Bei geänderten Dateien wird um eine Bestätigung
 gebeten.
@@ -1623,7 +1623,7 @@ Bergschattierungs-Option beinhaltet. Beachten Sie, dass die
 .. figure:: ../images/osmhillshading.jpg
 
         Blick auf einen italienischen Flugplatz mit
-        OpenStreetMap-Thema und Bergschattierungen.
+        *OpenStreetMap*-Thema und Bergschattierungen.
 
 OpenTopoMap
 '''''''''''
@@ -1634,7 +1634,7 @@ Die Karte wird von `OpenTopoMap <https://www.opentopomap.org>`__ zur Verfügung 
 
 .. figure:: ../images/otm.jpg
 
-      Blick auf die Ostalpen mit dem Thema OpenTopoMap. Ein
+      Blick auf die Ostalpen mit dem Thema *OpenTopoMap*. Ein
       Flugplan wird nördlich der Alpen angezeigt.
 
 Stamen Terrain
@@ -1701,8 +1701,8 @@ dargestellt.
 
 .. _weather-menu:
 
-Wettermenü
-~~~~~~~~~~
+Menü Wetter
+~~~~~~~~~~~~
 
 .. _airport-weather-source:
 
@@ -1927,7 +1927,7 @@ Datenbanksicherung. Siehe :ref:`files-userdata`.
 
 .. _logbook-menu:
 
-Logbuch-Menü
+Menü Logbuch
 ~~~~~~~~~~~~
 
 Logbuchsuche
@@ -2097,7 +2097,7 @@ weitere Informationen.
 
 .. _scenery-library-menu:
 
-Szenerie-Bibliothek Menü
+Menü Szeneriebibliothek
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _flight-simulators:

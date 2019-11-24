@@ -76,7 +76,7 @@ Avoid blurred map display by zooming out to next best step
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Checking this helps to get a sharp background image for online maps
-(e.g. from OpenStreetMap) when *Little Navmap* zooms to or centers map
+(e.g. from *OpenStreetMap*) when *Little Navmap* zooms to or centers map
 features like airports, the active flight plan leg and others. This
 works best with the map projection ``Mercator``.
 

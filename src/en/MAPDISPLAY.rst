@@ -184,7 +184,7 @@ See :ref:`airport-diagram` for details about the airport diagram.
 
 .. _map-context-menu:
 
-Map Context Menu
+Context Menu Map
 ~~~~~~~~~~~~~~~~
 
 The map context menu can be activated using right-click or the menu key.

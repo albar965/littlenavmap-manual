@@ -875,7 +875,7 @@ Symbol      Beschreibung
 .. _airport-weather-wind:
 
 Wind
-^^^^
+~~~~~~~~~~~~~~~
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |

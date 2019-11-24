@@ -1,5 +1,4 @@
-.. LNM documentation master file, created by
-   sphinx-quickstart on Mon Oct 28 14:40:04 2019.
+.. LNM documentation master file - German
 
 Little Navmap Benutzerhandbuch
 ================================
@@ -18,6 +17,8 @@ Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.or
 Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
 Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
 
+**Neue und komplett überarbeitete Version der Anleitung für Little Navmap* 2.4.**
+
 --------------
 
 Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler und Alexander Barthel.
@@ -30,7 +31,7 @@ Die PDF und MOBI Formate wurden mit Hilfe von `Calibre <https://calibre-ebook.co
 
 --------------
 
-Table of Contents
+Inhaltsverzeichnis
 ------------------------------
 
 .. toctree::
@@ -42,51 +43,62 @@ Table of Contents
    INSTALLATION
    QUICKOVERVIEW
    INTRO
+
    DOCKWINDOWS
    TABS
    MENUS
    STATUSBAR
-   COORDINATES
-   NAVDATA
+
    MAPDISPLAY
-   COMPASSROSE
-   SUNSHADOW
+   LEGEND
    TRAFFICPATTERN
    HOLD
+   COMPASSROSE
+   SUNSHADOW
    IMAGEEXPORT
-   LEGEND
+
+   PROFILE
+
    SEARCH
    SEARCHPROCS
    USERPOINT
+   LOGBOOK
    ONLINENETWORKS
+
+   INFO
+
    FLIGHTPLAN
+   MAPFPEDIT
    APPROACHES
    CUSTOMPROCEDURE
    EDITFPPOSITION
-   RESET
    ROUTEDESCR
-   MAPFPEDIT
    FLIGHTPLANFMT
-   PROFILE
    ROUTEEXPORT
+
    AIRCRAFTPERF
    AIRCRAFTPERFEDIT
    AIRCRAFTPERFCOLL
    AIRCRAFTPERFMERGE
-   LOGBOOK
-   INFO
+
+   SCENERY
+   NAVDATA
+
+   CONNECT
+   OPTIONS
    WEATHER
    PRINT
-   SCENERY
-   CONNECT
-   WEBSERVER
+   RESET
    UPDATE
-   OPTIONS
    RUNNOSIM
+   WEBSERVER
+
    TUTORIALS
    TUTORIALVFR
    TUTORIALIFR
    TUTORIALPERF
+
+   COORDINATES
    SHORTCUTS
    CUSTOMIZE
    MAPTHEMES

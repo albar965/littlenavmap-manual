@@ -1,8 +1,8 @@
 Dateien
 -------
 
-Logs
-~~~~
+Logdateien
+~~~~~~~~~~~~~
 
 Die Log-Dateien von *Little Navmap* werden abhängig vom Betriebssystem
 in folgenden Verzeichnisen gespeichert:
@@ -245,7 +245,7 @@ Die ``lnmperf`` Dateien sind einfache Textdateien und verwenden den
 Windows- ``INI`` Stil, der Gruppen in eckigen Klammern und Schlüssel/Wert-Paare
 ``key=value`` enthält. Weitere Informationen über diese Art von
 Konfigurationsdateien finden Sie
-unter `hier (Wikipedia)<https://en.wikipedia.org/wiki/INI_file>`__.
+unter `hier (Wikipedia) <https://en.wikipedia.org/wiki/INI_file>`__.
 
 Geschwindigkeitseinheiten sind immer Knoten und Fuß pro Minute.
 Kraftstoffeinheiten sind Gallonen oder lbs, abhängig vom Wert des

@@ -84,8 +84,8 @@ compatible changes where a reload is recommended but not required.
 
 .. warning::
 
-    Close Little Navmap when updating, copying or replacing its databases
-    manually or using other programs. Little Navmap might crash or show
+    Close *Little Navmap* when updating, copying or replacing its databases
+    manually or using other programs. *Little Navmap* might crash or show
     wrong data otherwise.
 
 .. _load-scenery-library-dialog-xp-apt-navdata:
@@ -288,7 +288,7 @@ Load Scenery Library Options
 
 .. figure:: ../images/loadsceneryprogress.jpg
 
-        Progress dialog shown while loading the scenery library into Little Navmap's internal database.
+        Progress dialog shown while loading the scenery library into *Little Navmap*'s internal database.
 
 .. _magnetic-declination:
 

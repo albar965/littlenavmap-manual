@@ -145,6 +145,6 @@ mit der Navigraph-Datenbank synchronisieren.
       Anflug aus dem Navigraph-Datenbankzyklus 1707 endet an der nicht
       sichtbaren Start- und Landebahn 09, wohingegen die veraltete Szenerie
       des FSX den Flugplatz an der falschen Position zeigt. EDVK wurde 2013
-      nördlich von Calden wieder aufgebaut. Der OpenStreetMap-Hintergrund
+      nördlich von Calden wieder aufgebaut. Der Hintergrund der *OpenStreetMap*
       zeigt den neuen Flugplatz.
 

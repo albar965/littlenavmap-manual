@@ -1,5 +1,4 @@
-.. LNM documentation master file, created by
-   sphinx-quickstart on Mon Oct 28 14:40:04 2019.
+.. LNM documentation master file - English
 
 Little Navmap User Manual
 ================================
@@ -17,9 +16,11 @@ More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`_
 Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
 The sources of this manual are availabe on `Github <https://github.com/albar965/littlenavmap-manual>`__.
 
+**New completely revised version of the Little Navmap 2.4 manual.**
+
 --------------
 
-This manual was compiled using `Sphinx <https://www.sphinx-doc.org/>`__ using the
+This manual was created using `Sphinx <https://www.sphinx-doc.org/>`__ and the
 `Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__.
 PDF and MOBI formats converted using `Calibre <https://calibre-ebook.com/>`__
 
@@ -37,51 +38,62 @@ Table of Contents
    INSTALLATION
    QUICKOVERVIEW
    INTRO
+
    DOCKWINDOWS
    TABS
    MENUS
    STATUSBAR
-   COORDINATES
-   NAVDATA
+
    MAPDISPLAY
-   COMPASSROSE
-   SUNSHADOW
+   LEGEND
    TRAFFICPATTERN
    HOLD
+   COMPASSROSE
+   SUNSHADOW
    IMAGEEXPORT
-   LEGEND
+
+   PROFILE
+
    SEARCH
    SEARCHPROCS
    USERPOINT
+   LOGBOOK
    ONLINENETWORKS
+
+   INFO
+
    FLIGHTPLAN
+   MAPFPEDIT
    APPROACHES
    CUSTOMPROCEDURE
    EDITFPPOSITION
-   RESET
    ROUTEDESCR
-   MAPFPEDIT
    FLIGHTPLANFMT
-   PROFILE
    ROUTEEXPORT
+
    AIRCRAFTPERF
    AIRCRAFTPERFEDIT
    AIRCRAFTPERFCOLL
    AIRCRAFTPERFMERGE
-   LOGBOOK
-   INFO
+
+   SCENERY
+   NAVDATA
+
+   CONNECT
+   OPTIONS
    WEATHER
    PRINT
-   SCENERY
-   CONNECT
-   WEBSERVER
+   RESET
    UPDATE
-   OPTIONS
    RUNNOSIM
+   WEBSERVER
+
    TUTORIALS
    TUTORIALVFR
    TUTORIALIFR
    TUTORIALPERF
+
+   COORDINATES
    SHORTCUTS
    CUSTOMIZE
    MAPTHEMES

@@ -123,8 +123,8 @@ der Tastatur zu aktivieren.
 
 .. _context-menu:
 
-Kontextmenü
-~~~~~~~~~~~
+Kontextmenü Höhenprofil
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _show-pos-on-map:
 

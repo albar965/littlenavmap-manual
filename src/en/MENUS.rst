@@ -1538,7 +1538,7 @@ cover the whole globe.
 
 .. figure:: ../images/osmhillshading.jpg
 
-       View at an Italian airport using OpenStreetMap theme and hill shading.
+       View at an Italian airport using *OpenStreetMap* theme and hill shading.
 
 OpenTopoMap
 '''''''''''
@@ -1551,7 +1551,7 @@ The tiles for this map are provided by
 
 .. figure:: ../images/otm.jpg
 
-      View at the eastern Alps using OpenTopoMap theme. A flight plan is shown north of the Alps.
+      View at the eastern Alps using *OpenTopoMap* theme. A flight plan is shown north of the Alps.
 
 Stamen Terrain
 ''''''''''''''

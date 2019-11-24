@@ -134,6 +134,6 @@ with the Navigraph database.
         The approach from the Navigraph database cycle 1707 ends at the not
         visible runway 09 while the outdated scenery from FSX shows the airport
         at the wrong position. EDVK was rebuild north of Calden in 2013. The
-        OpenStreetMap backgound shows the new airport.
+        *OpenStreetMap* backgound shows the new airport.
 
 

@@ -10,8 +10,8 @@ Tooltips geben weitere Informationen über die Funktion der Reiter.
 Beachten Sie, dass Sie einen Reiter nicht in ein anderes Fenster
 verschieben können.
 
-Menü
-~~~~
+Kontextmenü Reiterleiste
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Das Kontextmenü über der Reiterleiste (Rechtsklick auf einen Reiter) und
 die Reiterschaltfläche |Tab Button| hat die folgenden Menüpunkte:

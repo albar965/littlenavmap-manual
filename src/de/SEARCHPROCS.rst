@@ -38,7 +38,7 @@ einem Flugplan hinzuzufügen, wird ein Warndialog angezeigt.
         Zeigt einen Übergang und einen RNAV-Anflug. Start- und
         Endpunkt eines Übergangsabschnitts sind auf der Karte markiert.
 
-Prozedurenbaum
+Prozedurbaum
 ~~~~~~~~~~~~~~
 
 Die Abschnitte sind dunkelblau dargestellt, während Abschnitte des Fehlanfluges in
@@ -132,7 +132,7 @@ Kreise aus der Karte.
 
 .. _procedure-context-menu:
 
-Kontextmenü der Prozeduransicht
+Kontextmenü Prozeduren
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _procedure-show-on-map:

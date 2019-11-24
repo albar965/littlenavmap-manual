@@ -17,7 +17,7 @@ aktuellen Dateinamen nicht, während ``Speichern unter...`` dies tut.
 .. warning::
 
       Speichern Sie immer eine Kopie im Standardformat PLN, bevor Sie diese in
-      anderen Formaten wie FMS speichern. Dies ermöglicht es Little Navmap,
+      anderen Formaten wie FMS speichern. Dies ermöglicht es *Little Navmap*,
       alle Flugplaneigenschaften wie Prozeduren und Ausweichflugplätze
       wiederherzustellen.
 

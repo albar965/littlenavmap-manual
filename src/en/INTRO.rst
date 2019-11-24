@@ -271,8 +271,8 @@ information.
 
 .. warning::
 
-      In any case close Little Navmap when updating, copying or replacing
-      its databases. Little Navmap might crash or show wrong data otherwise.
+      In any case close *Little Navmap* when updating, copying or replacing
+      its databases. *Little Navmap* might crash or show wrong data otherwise.
 
 FSX and Prepar3D
 ^^^^^^^^^^^^^^^^

@@ -4,7 +4,7 @@ Schnellübersicht
 .. figure:: ../images/overview.jpg
 
       Eine Kurzübersicht der
-      wichtigsten Funktionen in Little Navmap
+      wichtigsten Funktionen in *Little Navmap*
 
 .. figure:: ../images/contextmenus.jpg
 

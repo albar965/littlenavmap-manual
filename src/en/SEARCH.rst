@@ -211,7 +211,7 @@ find out why a search does not give the expected results.
 
 .. _search-result-table-view-context-menu:
 
-Search Result Table View Context Menu
+Context Menu Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Available menu items depend on search tab.

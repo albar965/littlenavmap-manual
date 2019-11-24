@@ -3,7 +3,7 @@ Quick Overview
 
 .. figure:: ../images/overview.jpg
 
-      A quick overview of Little Navmap showing the most important functions.
+      A quick overview of *Little Navmap* showing the most important functions.
 
 
 .. figure:: ../images/contextmenus.jpg

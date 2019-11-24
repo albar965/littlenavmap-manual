@@ -18,7 +18,7 @@ file name while ``Save as ...`` does.
 .. warning::
 
    Always save a copy in the default PLN format before saving to other
-   formats like FMS. This allows Little Navmap to restore all flight plan
+   formats like FMS. This allows *Little Navmap* to restore all flight plan
    properties like procedures and alternate airports.
 
 .. _flight-plan-formats-feature:

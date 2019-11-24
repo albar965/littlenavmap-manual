@@ -284,7 +284,7 @@ the map.
 
 .. _flight-plan-table-view-context-menu:
 
-Flight Plan Table View Context Menu
+Context Menu Flight Plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _show-information-1:

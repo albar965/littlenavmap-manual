@@ -115,8 +115,8 @@ keyboard.
 
 .. _context-menu:
 
-Context Menu
-~~~~~~~~~~~~
+Context Menu Elevation Profile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _show-pos-on-map:
 

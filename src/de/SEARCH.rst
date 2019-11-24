@@ -60,10 +60,8 @@ wenn das erste Zeichen in einem Suchfeld ein ``-`` ist.
 Beachten Sie, dass all dies nicht für numerische Felder wie
 ``Runways: Min`` oder ``Altitude: Max`` gilt.
 
-.. _Tri-Status-Checkboxen:
-
-Tri-Status-Checkboxen
-~~~~~~~~~~~~~~~~~~~~~
+Dreistufige Kontrollkästchen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Diese werden verwendet, um Flugplätze nach dem Vorhandensein bestimmter
 Einrichtungen oder Objekte zu filtern.
@@ -71,9 +69,9 @@ Einrichtungen oder Objekte zu filtern.
 Nachfolgend finden Sie die Zustände, wie sie in Windows 10 dargestellt
 sind:
 
--  **Black Box:** Bedingung wird ignoriert.
--  **Checked:** Bedingung muss übereinstimmen.
--  **Empty Box:** Die Bedingung muss nicht übereinstimmen.
+-  **Schwarz ausgefülltes Kästchen:** Bedingung wird ignoriert.
+-  **Haken im Kästchen:** Bedingung muss übereinstimmen.
+-  **Leerers Kästchen:** Die Bedingung muss nicht übereinstimmen.
 
 Die Farben und das Aussehen dieser Kontrollkästchen variieren je nach
 Thema und Betriebssystem. Anstelle von Grau kann also eine andere Farbe
@@ -236,7 +234,7 @@ nicht die erwarteten Ergebnisse liefert.
 
 .. _search-result-table-view-context-menu:
 
-Kontextmenü Anzeige der Tabelle der Suchergebnisse
+Kontextmenü Suche
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die verfügbaren Menüpunkte hängen von dem Reiter Suche ab.

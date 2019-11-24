@@ -281,7 +281,7 @@ phases.
 
 .. note::
 
-     Little Navmap might show an orange warning about insufficient fuel at
+     *Little Navmap* might show an orange warning about insufficient fuel at
      destination in the early flight phases. This is normal since fuel flow
      is higher for takeoff and early climb.
 

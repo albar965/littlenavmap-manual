@@ -24,7 +24,7 @@ Bilddatei, für AviTab oder beim Kopieren in die Zwischenablage.
    Bild fest, wenn ``Nutzerdefinierte Auflösung`` ausgewählt ist.
 -  ``Unscharfe Kartenanzeige vermeiden``: Wenn Sie
    diese Einstellung aktivieren, erhalten Sie ein scharfes Hintergrundbild
-   für Onlinekarten (z.B. von OpenStreetMap). Dies funktioniert am
+   für Onlinekarten (z.B. von *OpenStreetMap*). Dies funktioniert am
    besten mit der Kartenprojektion ``Mercator``. Es kann jedoch in
    einigen Fällen vorkommen, dass die Karte weiter als erwartet
    vergrößert wird.

@@ -204,14 +204,14 @@ Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da
 *Little Navmap* Links bis zum nächsten Leerzeichen erkennt.
 
 Einzelnen Logbucheintrag bearbeiten
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../images/logbook_edit.jpg
 
           Logbucheintrag bearbeiten.
 
 Mehrere Logbucheinträge bearbeiten
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn mehr als ein Logbucheintrag zur Bearbeitung ausgewählt wurde, zeigt
 der Bearbeitungsdialog eine Spalte mit Kontrollkästchen auf der rechten

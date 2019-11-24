@@ -42,8 +42,8 @@ Copy to Clipboard
 ''''''''''''''''''''''''''''''
 
 Copy the contents of the window as formatted text into the clipboard for
-later reading. This allows to paste the release notes into LibreOffice
-Writer or MS Word.
+later reading. This allows to paste the release notes into *LibreOffice
+Writer* or *MS Word*.
 
 Ignore this Update
 ''''''''''''''''''''''''''''''

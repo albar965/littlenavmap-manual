@@ -303,7 +303,7 @@ Weitere Informationen finden Sie im Kapitel
 
 .. warning::
 
-     Schließen Sie auf jeden Fall Little Navmap, wenn Sie Ihre Datenbanken
+     Schließen Sie auf jeden Fall *Little Navmap*, wenn Sie Ihre Datenbanken
      aktualisieren, kopieren oder ersetzen. Little Navmap könnte abstürzen
      oder falsche Daten anzeigen.
 

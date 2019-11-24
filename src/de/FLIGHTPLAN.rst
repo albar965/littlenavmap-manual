@@ -304,7 +304,7 @@ Kreise aus der Karte entfernen.
 
 .. _flight-plan-table-view-context-menu:
 
-Kontextmenü für die Ansicht der Flugplantabelle
+Kontextmenü Flugplan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _show-information-1:

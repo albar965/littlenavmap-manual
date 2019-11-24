@@ -43,7 +43,7 @@ In die Zwischenablage kopieren
 ''''''''''''''''''''''''''''''''''
 
 Kopiert den Inhalt des Fensters als formatierten Text in die Zwischenablage zum späteren
-Lesen. Dies ermöglicht es, die Versionshinweise in LibreOffice Writer oder MS Word
+Lesen. Dies ermöglicht es, die Versionshinweise in *LibreOffice Writer* oder *MS Word*
 einzufügen.
 
 Diese Aktualisierung ignorieren

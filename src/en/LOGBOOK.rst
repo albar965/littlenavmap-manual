@@ -196,14 +196,14 @@ Replace spaces in links with ``%20`` since *Little Navmap* recognizes
 links until the next space.
 
 Edit a single Logbook Entry
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../images/logbook_edit.jpg
 
          Editing a logbook entry.
 
 Edit multiple Logbook Entries
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If more than one logbook entry was selected for editing, the edit dialog
 shows a column of checkboxes on the right side of available fields. Not

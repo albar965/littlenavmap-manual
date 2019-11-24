@@ -23,7 +23,7 @@ simulator to which the connection should be established.
 
 .. figure:: ../images/connectlocal.jpg
 
-     Little Navmap* connect dialog set up for a local
+     *Little Navmap* connect dialog set up for a local
      connection to FSX or P3D. The connection will be established manually.
 
 Select ``Connect directly to local Flight Simulator``.
@@ -136,7 +136,7 @@ Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
 .. figure:: ../images/connect.jpg
 
     Connect dialog with correct values to access the
-    computer running the simulator and Little Navconnect as shown above.
+    computer running the simulator and *Little Navconnect* as shown above.
 
 Now do the following after opening the dialog:
 

@@ -119,7 +119,7 @@ Open this chapter of the manual in the default browser.
 
 .. _procedure-context-menu:
 
-Procedure Tree Context Menu
+Context Menu Procedures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _procedure-show-on-map:

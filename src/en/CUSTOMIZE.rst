@@ -41,7 +41,7 @@ Some of the INI files contain a section ``[Options]`` with a key
 
 .. warning::
 
-   Do not delete the version since Little Navmap relies on this information when updating
+   Do not delete the version since *Little Navmap* relies on this information when updating
    the file. It will reset the file occasionally whenever the default
    settings change. A backup will be created to save your user
    customizations

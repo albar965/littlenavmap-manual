@@ -93,7 +93,7 @@ ein Neuladen empfohlen, aber nicht erforderlich ist.
 
 .. warning::
 
-      Schließen Sie Little Navmap, wenn Sie Ihre Datenbanken manuell oder
+      Schließen Sie *Little Navmap*, wenn Sie Ihre Datenbanken manuell oder
       mit anderen Programmen aktualisieren, kopieren oder ersetzen. Little
       Navmap könnte abstürzen oder falsche Daten anzeigen.
 
@@ -314,7 +314,7 @@ Dialog Einstellungen Szeneriebibliothek laden
 .. figure:: ../images/loadsceneryprogress.jpg
 
       Der Fortschrittsdialog wird beim Laden der
-      Szeneriebibliothek in die interne Datenbank von Little Navmap angezeigt.
+      Szeneriebibliothek in die interne Datenbank von *Little Navmap* angezeigt.
 
 .. _magnetic-declination:
 

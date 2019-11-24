@@ -9,8 +9,8 @@ Tooltips give more information about the function of a tab.
 
 Note that you cannot move a tab to another window.
 
-Menu
-~~~~
+Context Menu Tabbar
+~~~~~~~~~~~~~~~~~~~~
 
 The context menu above the tab bar (right click on one of the tabs) and
 the tab button |Tab Button| have the following menu items:

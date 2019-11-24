@@ -144,7 +144,7 @@ Little Navmap auf dem entfernten Computer starten
 .. figure:: ../images/connect.jpg
 
       Verbindungsdialog mit den korrekten Einstellungen, um
-      auf den Simulatorcomputer und Little Navconnect wie oben gezeigt
+      auf den Simulatorcomputer und *Little Navconnect* wie oben gezeigt
       zuzugreifen.
 
 Gehen Sie nun nach dem Öffnen des Dialogs wie folgt vor:
