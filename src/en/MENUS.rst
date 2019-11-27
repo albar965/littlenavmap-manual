@@ -76,7 +76,7 @@ The appended legs are selected after loading the flight plan.
 
 .. _recent-flight-plan:
 
-Recent Flight Plan (Sub-Menu)
+Recent Flight Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Shows all recently loaded flight plans for quick access. You can clear
@@ -221,7 +221,7 @@ See also :doc:`FLIGHTPLANFMT`.
 
 .. _export-submenu-aircraft:
 
-Export Flight Plan to Aircraft Formats (Sub-Menu)
+Export Flight Plan to Aircraft Formats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :doc:`FLIGHTPLANFMT` for more detailed
@@ -381,7 +381,7 @@ Flight plan for the TFDi Design Boeing 717 aircraft.
 
 .. _export-submenu-garmin:
 
-Export Flight Plan to Garmin Formats (Sub-Menu)
+Export Flight Plan to Garmin Formats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _save-flight-plan-as-gfp:
@@ -428,7 +428,7 @@ See also :ref:`garmin-notes`.
 
 .. _export-submenu-online:
 
-Export Flight Plan to Online Formats (Sub-Menu)
+Export Flight Plan to Online Formats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _flight-plan-formats-vpilot:
@@ -461,7 +461,7 @@ before where you can add all needed information.
 
 .. _export-submenu-other:
 
-Export Flight Plan to other Formats (Sub-Menu)
+Export Flight Plan to other Formats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _export-flight-plan-as-ufmc:
@@ -958,7 +958,7 @@ View Menu
 Resets all map display settings which can be changed in the menu
 ``View`` back to default.
 
-Details (Sub-Menu)
+Details
 ^^^^^^^^^^^^^^^^^^
 
 .. _more-details:
@@ -988,7 +988,7 @@ more airports, more navaids, more text information and bigger icons.
 The detail level is shown in the statusbar. Range is -5 for least detail
 to +5 for most detail.
 
-Airports (Sub-Menu)
+Airports
 ^^^^^^^^^^^^^^^^^^^
 
 .. _force-show-addon-airports:
@@ -1056,7 +1056,7 @@ The definition of ``3D`` is arbitrary, though. A ``3D`` airport may
 contain just a single object, such as a light pole or a traffic cone or
 it may be a fully constructed major airport.
 
-Navaids (Sub-Menu)
+Navaids
 ^^^^^^^^^^^^^^^^^^
 
 .. _show-vor-stations:
@@ -1094,7 +1094,7 @@ hidden on the map depending on zoom distance.
 
 .. _airspaces:
 
-Airspaces (Sub-Menu)
+Airspaces
 ^^^^^^^^^^^^^^^^^^^^
 
 Note that airspaces are hidden if the airport diagram is shown.
@@ -1161,7 +1161,7 @@ flight plan altitude.
 
 .. _airspace-source:
 
-Airspace Source (Sub-Menu)
+Airspace Source
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables various airspace databases for display.
@@ -1199,20 +1199,20 @@ Only visible if connected to an online service like VATSIM or IVAO.
 
 .. _user-features:
 
-User Features (Sub-Menu)
+User Features
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 |Range Rings| Range Rings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''
 
 |Measurement Lines| Measurement Lines
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''
 
 |Traffic Patterns| Traffic Patterns
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''
 
 |Holdings| Holdings
-^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''
 
 Hides or shows the respective user feature.
 
@@ -1222,7 +1222,7 @@ with the text ``hidden on map`` if this is the case.
 
 .. _userpoints:
 
-Userpoints (Sub-Menu)
+Userpoints
 ^^^^^^^^^^^^^^^^^^^^^
 
 Allows to hide or show user-defined waypoints by type.
@@ -1422,7 +1422,7 @@ explanation of the symbols and :ref:`airport-weather` for more information.
 
 .. _wind-levels:
 
-Wind levels (Sub-Menu)
+Wind levels
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables wind aloft display for different layers as well as
@@ -1617,7 +1617,7 @@ Weather Menu
 
 .. _airport-weather-source:
 
-Airport Weather Source (Sub-Menu)
+Airport Weather Source
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Selects the source for the airport weather symbol display on the map.
@@ -1659,7 +1659,7 @@ flying in the IVAO network.
 
 .. _wind-source:
 
-Wind source (Sub-Menu)
+Wind source
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Choose the source for winds aloft data here. This will affect the
@@ -1942,7 +1942,7 @@ Allows to save the current profile using a new filename.
 
 .. _aircraft-menu-recent:
 
-Recent Performance Files (Sub-Menu)
+Recent Performance Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Shows all recently loaded aircraft performance files for quick access.
@@ -2024,7 +2024,7 @@ different databases. This can happen if a departure position is set in
 the plan which does not exist in the other database. Click
 ``New Flight Plan`` before switching to avoid this.
 
-Navigraph  (Sub-Menu)
+Navigraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This sub menu also indicating the AIRAC cycle is added if a Navigraph
@@ -2168,7 +2168,7 @@ Window Menu
 
 .. _map-overlays:
 
-Map Overlays (Sub-Menu)
+Map Overlays
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Show or hide floating map overlays, like the overview on the top left or
@@ -2176,7 +2176,7 @@ the compass on the top right corner of the map window.
 
 .. _window-styles:
 
-Style (Sub-Menu)
+Style
 ^^^^^^^^^^^^^^^^
 
 Allows to switch the style of the graphical user interface on the fly. A
@@ -2197,7 +2197,7 @@ The available styles depend on the operating system except for
 
 .. _shortcuts:
 
-Shortcuts (Sub-Menu)
+Shortcuts
 ^^^^^^^^^^^^^^^^^^^^
 
 A list of menu items that open and raise the respective dock window and

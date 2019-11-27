@@ -82,7 +82,7 @@ Die angehängten Strecken werden nach dem Laden des Flugplans ausgewählt.
 
 .. _recent-flight-plan:
 
-Zuletzt verwendete Flugpläne (Untermenü)
+Zuletzt verwendete Flugpläne
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt alle zuletzt geladenen Flugpläne für den schnellen Zugriff an. Sie
@@ -233,7 +233,7 @@ Siehe auch :doc:`FLIGHTPLANFMT`.
 
 .. _export-submenu-aircraft:
 
-Export des Flugplans in Flugzeugformate (Untermenü)
+Export des Flugplans in Flugzeugformate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Detaillierte Informationen zu den verfügbaren Exportformaten finden Sie
@@ -399,7 +399,7 @@ Flugplan für das TFDi Design Boeing 717 Flugzeug.
 
 .. _export-submenu-garmin:
 
-Flugplan in Garmin-Formate exportieren (Untermenü)
+Flugplan in Garmin-Formate exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _save-flight-plan-as-gfp:
@@ -447,7 +447,7 @@ Siehe auch :ref:`garmin-notes`.
 
 .. _export-submenu-online:
 
-Flugplan in Online-Formate exportieren (Untermenü)
+Flugplan in Online-Formate exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _flight-plan-formats-vpilot:
@@ -479,7 +479,7 @@ Sie können alle erforderlichen Informationen hinzufügen.
 
 .. _export-submenu-other:
 
-Flugplan in andere Formate exportieren (Untermenü)
+Flugplan in andere Formate exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _export-flight-plan-as-ufmc:
@@ -1017,7 +1017,7 @@ Menü Ansicht
 Setzt alle Einstellungen der Kartendarstellung, die im Menü ``Ansicht``
 geändert werden können, wieder auf den Standard zurück.
 
-Details (Untermenü)
+Details
 ^^^^^^^^^^^^^^^^^^^
 
 .. _more-details:
@@ -1048,7 +1048,7 @@ Symbole.
 Die Detaillierungsstufe wird in der Statusleiste angezeigt. Der Bereich
 ist -5 für kleinste Details bis +5 für größte Details.
 
-Flugplätze (Untermenü)
+Flugplätze
 ^^^^^^^^^^^^^^^^^^^^^^
 
 .. _force-show-addon-airports:
@@ -1120,7 +1120,7 @@ kann nur ein einziges Objekt enthalten, wie beispielsweise einen
 Lichtmast oder einen Verkehrsleitkegel, oder er kann ein vollständig
 errichteter GroßFlugplatz sein.
 
-Navigationshilfen (Untermenü)
+Navigationshilfen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _show-vor-stations:
@@ -1158,7 +1158,7 @@ Je nach Zoom-Entfernung können Objekte auf der Karte ausgeblendet sein.
 
 .. _airspaces:
 
-Lufträume (Untermenü)
+Lufträume
 ^^^^^^^^^^^^^^^^^^^^^
 
 Beachten Sie, dass Lufträume ausgeblendet sind, wenn das
@@ -1228,7 +1228,7 @@ der Flugplanhöhe kreuzen.
 
 .. _airspace-source:
 
-Luftraumquelle (Untermenü)
+Luftraumquelle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Aktiviert oder deaktiviert verschiedene Luftraumdatenbanken für die
@@ -1265,20 +1265,20 @@ Nur sichtbar, wenn sie mit einem Online-Service wie VATSIM oder IVAO verbunden s
 
 .. _user-features:
 
-Nutzerobjekte (Untermenü)
+Nutzerobjekte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |Range Rings| Distanzkreise
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''
 
 |Measurement Lines| Messlinien
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''
 
 |Traffic Patterns| Platzrunden
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''
 
 |Holdings| Warteschleifen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''
 
 Schaltet die jeweiligen Nutzerobjekte aus oder ein.
 
@@ -1289,7 +1289,7 @@ ausgeblendet ist. Der Menüpunkt wird in diesem Fall mit dem Text
 
 .. _userpoints:
 
-Nutzerpunkte (Untermenü)
+Nutzerpunkte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ermöglicht das Ein- und Ausblenden von benutzerdefinierten
@@ -1499,7 +1499,7 @@ Siehe :ref:`airport-weather-legend` zur Erläuterung der Symbole und
 
 .. _wind-levels:
 
-Windebenen (Untermenü)
+Windebenen
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Aktiviert oder deaktiviert die Höhenwindanzeige für verschiedene
@@ -1525,7 +1525,7 @@ Für weitere Informationen siehe auch :doc:`SUNSHADOW`.
 
 .. _show-sun-shading-time:
 
-Sonnenschatten Zeit (Untermenü)
+Sonnenschatten Zeit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sie können zwischen drei Zeitquellen für den Sonnenschatten wählen.
@@ -1706,7 +1706,7 @@ Menü Wetter
 
 .. _airport-weather-source:
 
-Flugplatz-Wetterquelle (Untermenü)
+Flugplatz-Wetterquelle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wählt die Quelle für die Anzeige des Wettersymbols auf der Karte aus.
@@ -1750,7 +1750,7 @@ dies für Online-Flüge im IVAO-Netzwerk.
 
 .. _wind-source:
 
-Wind Quelle (Untermenü)
+Wind Quelle
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wählen Sie hier die Quelle für die Daten der Höhenwinde. Dies wirkt sich
@@ -2049,7 +2049,7 @@ Dateinamen.
 
 .. _aircraft-menu-recent:
 
-Aktuelle Leistungsdateien (Untermenü)
+Aktuelle Leistungsdateien
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt alle zuletzt geladenen Flugzeugleistungsdateien für den schnellen
@@ -2140,7 +2140,7 @@ eine Abflugposition festgelegt ist, die in der anderen Datenbank nicht
 vorhanden ist. Klicken Sie vor dem Wechsel auf ``Neuer Flugplan``, um dies
 zu vermeiden.
 
-Navigraph (Untermenü)
+Navigraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dieses Untermenü, das auch den AIRAC-Zyklus anzeigt, wird hinzugefügt,
@@ -2295,7 +2295,7 @@ Menü Fenster
 
 .. _map-overlays:
 
-Karten-Overlays (Untermenü)
+Karten-Overlays
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Schwebende Karten-Overlays, wie die Übersicht oben links oder der
@@ -2303,7 +2303,7 @@ Kompass oben rechts im Kartenfenster, können hier ein- oder ausgeblendet werden
 
 .. _window-styles:
 
-Oberflächenstil (Untermenü)
+Oberflächenstil
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ermöglicht es, den Stil der grafischen Benutzeroberfläche während der
@@ -2323,7 +2323,7 @@ Die verfügbaren Stile hängen vom verwendeten Betriebssystem ab.
 
 .. _shortcuts:
 
-Schnellzugriff (Untermenü)
+Schnellzugriff
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Eine Liste von Menüpunkten, die das jeweilige Dockfenster und
