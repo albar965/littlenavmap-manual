@@ -1,0 +1,202 @@
+3D
+--
+
+X-Plane airport which contains at least one 3D object. May be a fully
+constructed major airport.
+
+Add-on airport
+--------------
+
+This is an airport that was found outside the Flight Simulator default
+scenery folder when loading the database.
+
+Arrival Procedure
+-----------------
+
+Approach, transition or STAR procedure.
+
+BGL
+---
+
+A binary file with the extension ``BGL`` which is part of a flight
+simulator scenery containing airport, navaid or airway information.
+These files can also contain traffic, landclass, elevation or other
+information which is not relevant for *Little Navmap*.
+
+DAT
+---
+
+A text file format used by X-Plane to store airport, navaid and
+procedure information.
+
+Departure Procedure
+-------------------
+
+SID procedure.
+
+CSV
+---
+
+Comma-separated values text file.
+
+DME
+---
+
+Distance measuring equipment or a radio navaid.
+
+Empty airport
+-------------
+
+An airport that has no taxiways, no parking positions or gates, no
+aprons and is not an add-on airport and is not a water airport.
+
+Fix
+---
+
+This term refers to a waypoint, radio navaid or an calculated point on a
+procedure.
+
+FLP
+---
+
+Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other
+add-on aircraft.
+
+FMS
+---
+
+X-Plane flight plan format.
+
+FS9
+---
+
+Flight Simulator 2004.
+
+FSX
+---
+
+Flight Simulator X or Flight Simulator - Steam Edition.
+
+GIS
+---
+
+A geographical information system like Google Earth for example.
+
+Initial Fix
+-----------
+
+This is the first fix of a procedure.
+
+Navaid
+------
+
+VOR, VORTAC, TACAN, NDB or waypoint/intersection.
+
+NDB
+---
+
+Non directional beacon - radio navaid.
+
+P3D
+---
+
+Prepar3D v2 to v4.
+
+Parking
+-------
+
+GA ramp, cargo ramp, fuel box or gate.
+
+PLN
+---
+
+FSX and P3D flight plan format. Can save all information in flight plans
+using annotations.
+
+Procedure
+---------
+
+Approach, transition, SID or STAR.
+
+Radio navaid
+------------
+
+VOR, VORTAC, TACAN or NDB.
+
+Rating
+------
+
+Airport zero to five star rating depending on facilities.
+
+Scenery Library Database
+------------------------
+
+This is an internal database (`SQLite <http://sqlite.org>`__) that is
+created by *Little Navmap* when reading all the flight simulator BGL or
+DAT files. It allows fast complex searches and map display.
+
+SID
+---
+
+Standard instrument departure.
+
+SimConnect
+----------
+
+A programming interface that allows applications to read and write
+flight simulator parameters.
+
+STAR
+----
+
+Standard terminal arrival procedure. Usually followed by a transition
+and an approach.
+
+Start position
+--------------
+
+Used for departure in flight plans. Either runway, helipad, GA ramp,
+cargo ramp, fuel box or gate.
+
+TACAN
+-----
+
+Tactical air navigation system - radio navaid used by military aircraft.
+
+VOR
+---
+
+VHF Omni Directional Radio Range - radio navaid.
+
+VORDME
+------
+
+VHF Omni Directional Radio Range with distance measuring equipment-
+radio navaid.
+
+VORTAC
+------
+
+Co-located VHF omnidirectional range (VOR) beacon and tactical air
+navigation system (TACAN) beacon.
+
+Userpoint
+---------
+
+A user-defined waypoint like a bookmark, point of interest or visual
+reporting point (VRP).
+
+VRP
+---
+
+Visual reporting point for VFR flights. A userpoint type.
+
+POI
+---
+
+General point of interest. A userpoint type.
+
+Flight Plan Position
+--------------------
+
+A user-defined waypoint which is part of the flight plan.

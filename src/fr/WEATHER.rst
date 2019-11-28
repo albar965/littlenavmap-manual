@@ -1,0 +1,144 @@
+.. _weather:
+
+Météo
+-----
+
+*Little Navmap* peut afficher les METARs de plusieurs sources :
+
+-  FSX ou P3D si connecté. Ceci s'applique également aux configurations
+   réseau.
+-  Météo X-Plane en temps réel à partir du fichier ``METAR.rwx``. Pas
+   lors de l'utilisation de la configuration réseau.
+-  `NOAA <http://www.weather.gov>`__ service météorologique en ligne
+-  `VATSIM <http://www.vatsim.net>`__ service météorologique connecté au
+   réseau
+-  `HiFi Simulation Technologies <http://www.hifisimtech.com>`__:
+
+   -  *Active Sky Next* (ASN)
+   -  *AS16*
+   -  *Active Sky for Prepar3D v4* (ASP4)
+
+Vous pouvez définir dans la boîte de dialogue ``Options`` de l'onglet
+``Météo`` quelles sources sont utilisées pour afficher les informations
+METAR dans les infobulles ou l'onglet ``Météo`` dans la fenêtre
+``Informations``.
+
+Vous devez définir le chemin de base pour X-Plane dans la boîte de
+dialogue ``Charger la Bibliothèque des Scènes`` pour permettre la
+lecture du fichier météo. Certaines fonctions comme les régions des
+fichiers météo créés manuellement ne sont pas prises en charge.
+
+Les METAR sont affichés dans les infobulles de l'aérodrome et dans
+l'onglet ``Aérodrome``. Les informations météorologiques décodées pour
+toutes les sources sont disponibles dans l'onglet ``Météo``.
+
+**Notes sur la météo de X-Plane:** *Little Navmap* ne peut lire que le
+fichier X-Plane ``METAR.rwx`` qui contient la météo en ligne
+téléchargée. Le programme ne peut pas lire les situations
+météorologiques personnalisées de X-Plane. *Little Navmap* n'a accès à
+la météo locale autour de l'aéronef que si vous utilisez une situation
+météorologique personnalisée. Cela peut entraîner une situation dans
+laquelle vous utilisez la météo personnalisée et *Little Navmap* affiche
+toujours les informations d'un ancien fichier météo téléchargé.
+
+|Weather tab|
+
+**Image ci-dessus:**\ *Informations météorologiques décodées provenant
+de deux sources en ligne. Le simulateur de vol n'est pas connecté.*
+
+Simulateur de Vol
+~~~~~~~~~~~~~~~~~
+
+Les informations météorologiques provenant d'un simulateur de vol ou du
+fichier X-Plane ``METAR.rwx`` peuvent être affichées en trois types pour
+les METAR et les conditions météorologiques décodées qui dépendent des
+éléments suivants l'aérodrome sélectionné :
+
+-  ``Station``: L'aérodrome dispose d'une station météorologique. C'est
+   l'indication météorologique la plus précise.
+-  ``Le plus proche``: L'aérodrome cliqué n'a pas de station météo et le
+   temps le plus proche a été récupéré. L'identification de la station
+   la plus proche est indiquée dans le METAR et sur l'onglet météo
+   décodé. Notez que la station météorologique la plus proche n'est pas
+   nécessairement un aérodrome.
+-  ``Interpolé`` (Pas pour X-Plane): Le temps est interpolé par le
+   simulateur de vol en utilisant les trois stations les plus proches.
+   C'est généralement la seule option disponible dans les aéroports
+   éloignés des aéronerf utilisateurs. L'identifiant de l'aérodrome
+   cliqué est utilisé dans le rapport METAR pour ce type de rapport
+   météorologique.
+
+La météo du simulateur de vol est mise à jour toutes les 15 secondes
+pour tenir compte des changements dans le thème de la météo.
+
+*Little Navmap* surveille le fichier X-Plane ``METAR.rwx`` pour les
+changements et appliquera les mises à jour immédiatement.
+
+Notez que la météo la plus proche ne représentera pas nécessairement la
+météo à la station cliquée en raison de l'interpolation entre plusieurs
+stations qui est effectuée par le simulateur.
+
+NOAA, VATSIM et IVAO - Connecté
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+La météo en ligne des deux sources est mise à jour toutes les 10
+minutes.
+
+Active Sky
+~~~~~~~~~~
+
+Tous les programmes *Active Sky* sont reconnus automatiquement au
+démarrage de chaque simulateur. Les fichiers ``current_wx_snapshot.txt``
+et ``activeflightplanwx.txt`` sont chargés et surveillés pour les
+changements. La météo sera rechargée et mise à jour dans l'affichage des
+informations si nécessaire.
+
+Vous pouvez également sélectionner manuellement le fichier
+``current_wx_snapshot.txt``. Dans ce cas, les METAR de ce fichier sont
+affichés pour tous les simulateurs de vol installés. Le fichier
+``activeflightplanwx.txt`` sera chargé à partir du même répertoire.
+
+La sélection manuelle de fichiers peut également être utile si une
+nouvelle version de *Active Sky* n'est pas encore prise en charge par
+*Little Navmap*.
+
+Tous les programmes *Active Sky* sont reconnus automatiquement au
+démarrage de chaque simulateur Les fichiers ``current_wx_snapshot.txt``
+et ``activeflightplanwx.txt`` sont chargés et surveillés pour les
+modifications. La météo sera rechargée et mise à jour sur l'écran
+d'information si nécessaire.
+
+Notez que l'indication de ``Départ`` ou ``Destination`` dépend
+entièrement du plan de vol chargé dans *Active Sky* et non du plan de
+vol dans *Little Navmap*.
+
+.. _airport-weather:
+
+Météo Aérodrome
+~~~~~~~~~~~~~~~
+
+*Little Navmap* peut afficher les symboles météorologiques des
+aérodromes ayant une station météorologique pour toutes les sources
+météorologiques disponibles. Sélectionnez les sources à afficher avec
+l'élément de menu\ `Source Météo
+Aérodrome <MENUS.html#airport-weather-source>`__ .
+
+Notez que la météo de l'aérodrome n'est affichée que pour les stations
+et n'est pas interpolée. Les stations qui ne sont pas des aérodromes ne
+sont pas prises en charge.
+
+Un suffixe ``- Carte`` est ajouté aux règles de vol dans le METAR et
+l'affichage météorologique décodé de la fenêtre d'information et des
+infobulles pour indiquer quelle source est affichée sur la carte.
+
+Voir `Légende - Météo Aérodrome <LEGEND.html#airport-weather>`__ pour une
+explication des symboles.
+
+|Airport Weather|
+
+**Image ci-dessus:**\ *La situation météorologique autour de New York.
+Tous les aérodromes sont en VFR et les vents sont faibles..*
+
+.. |Weather tab| image:: ../images/weather_fr.jpg
+.. |Airport Weather| image:: ../images/weather_map.jpg
+

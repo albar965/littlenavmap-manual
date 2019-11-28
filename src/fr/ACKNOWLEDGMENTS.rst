@@ -1,0 +1,123 @@
+.. _acknowledgments:
+
+Remerciements
+-------------
+
+Un grand merci à toutes les personnes qui m'ont soutenu, en m'envoyant
+leurs fichiers journaux, captures d'écran, idées d'améliorations,
+messages amicaux, dons et plus encore.
+
+Un grand merci à Paul Watts pour son soutien, ses tests, ses conseils,
+les liens vers des outils incroyables et pour tout son travail sur le
+manuel.
+
+Un grand merci à `Hervé Sors <http://www.aero.sors.fr>`__ pour m'avoir
+permis d'inclure son fichier magdecl. bgl mis à jour ``magdecl.bgl``
+avec *Little Navmap*.
+
+Un merci tout spécial à Roberto S. de Suisse pour sa précieuse
+contribution et aussi pour l'aide qu'il nous a apportée dans la
+recherche des bugs les plus obscurs.
+
+Merci à Navigraph de m'avoir gentiment permis d'inclure un cycle AIRAC
+gratuit dans le téléchargement. Les cycles AIRAC actuels peuvent être
+achetés auprès de `Navigraph <http://www.navigraph.com>`__.
+
+Un grand merci à Jean Luc pour `Reality
+XP <http://www.reality-xp.com>`__ pour son grand soutien.
+
+Merci à Jose de `fsAerodata <https://www.fsaerodata.com/>`__ pour son
+aimable soutien.
+
+Un grand merci à Patrick Jung alias Patbest pour la traduction française
+des fichiers "légende" Navconnect, LittleNavMap et du Manuel de
+l'Utilisateur.
+
+Merci beaucoup! pour la traduction allemande à merspieler et Stephan
+Leukert.
+
+Merci à Ricardo Vitor pour la traduction en portugais brésilien.
+
+Merci à tous les bêta-testeurs pour leurs efforts, leur patience et
+leurs idées: Barry, Jean-Pierre, Brian, Gérard, John, Rémi et Sam.
+
+Un autre grand merci à Marc d'Allemagne pour toutes ses grandes idées et
+ses rapports de bugs sans fin.
+
+Merci à tous ceux qui mont patiemment soutenu dans les forums et qui mon
+donné un feedback inestimable lors de la bêta publique:
+
+`AVSIM <http://www.avsim.com>`__,
+`SimOuthouse <http://www.sim-outhouse.com>`__,
+`FlightX.net <http://flightx.net>`__ et
+`FSDeveloper.com <http://www.fsdeveloper.com>`__.
+
+Ce projet et mes outils de bibliothèque
+`atools <https://github.com/albar965/atools>`__ n'existeraient pas sans
+la fabuleuse documentation des fichiers BGL dans le `FSDeveloper
+Wiki <http://www.fsdeveloper.com/wiki>`__. Alors, voici un grand merci à
+tous les contributeurs.
+
+Merci aussi à Ed Williams pour son `Aviation
+Formulary <http://williams.best.vwh.net/avform.htm>`__.
+
+Sans le widget open source `Marble <https://marble.kde.org>`__ qui me
+permet d'accéder et d'afficher toutes les cartes, je serais encore
+occupé à le faire moi même pendant des années.
+
+Pas de `Qt application framework <https://www.qt.io>`__ et je n'ai même
+pas pu dessiner un simple bouton
+
+N'oublions pas tous les services qui nous fournissent gratuitement
+toutes les cartes en ligne:
+
+`Stamen Design <http://maps.stamen.com>`__,
+`MapTiles <http://maptiles.xyz>`__,
+`OpenTopoMap <http://www.opentopomap.org>`__ et
+`CARTO <https://carto.com/>`__.
+
+Un merci au `GIScience / Geoinformatics Research
+Group <http://www.geog.uni-heidelberg.de/gis/index_en.html>`__ de
+l'Université de Heidelberg pour m'avoir gentiment donné la permission
+dutiliser leur carte
+`OpenMapSurfer <http://korona.geog.uni-heidelberg.de>`__.
+
+Et enfin et surtout: S'il n' y avait pas
+d'\ `OpenStreetMap <http://www.openstreetmap.org>`__ et ses milliers de
+contributeurs, aucun d'entre nous n'aurait de cartes.
+
+Un merci a `AVSIM <https://www.avsim.com>`__ d'avoir bien voulu héberger
+le forum de support pour_Little Navmap_.
+
+Ce projet et ma librairie
+`atools <https://github.com/albar965/atools>`__ n'existerait pas sans la
+fabuleuse documentation des fichiers BGL dans le répertoire `FSDeveloper
+Wiki <https://www.fsdeveloper.com/wiki>`__. Alors, un grand merci à tous
+les contributeurs.
+
+Un grand merci aussi à Ed Williams pour son travail. `Aviation
+Formulary <http://www.edwilliams.org/avform.htm>`__.
+
+Sans l'open source `Marble <https://marble.kde.org>`__ qui me permet
+d'accéder et d'afficher toutes les cartes que je serais encore occupé à
+faire moi-même pendant des années.
+
+Pas de `Qt application framework <https://www.qt.io>`__ et je ne pouvais
+même pas dessiner un simple bouton.
+
+N'oublions pas tous les services qui nous fournissent toutes les cartes
+en ligne gratuitement :
+
+`Stamen Design <http://maps.stamen.com>`__,
+`OpenTopoMap <https://www.opentopomap.org>`__ et
+`CARTO <https://carto.com/>`__.
+
+Un grand merci à l'équipe de `GIScience / Geoinformatics Research
+Group <https://www.geog.uni-heidelberg.de/gis/index_en.html>`__ de
+Heidelberg University de m'avoir gracieusement donné la permission
+d'utiliser leur carte
+`OpenMapSurfer <http://korona.geog.uni-heidelberg.de>`__.
+
+Et enfin et surtout : S'il n'y avait pas d'
+`OpenStreetMap <https://www.openstreetmap.org>`__ et ses milliers de
+contributeurs, aucun d'entre nous n'aurait de carte du tout.

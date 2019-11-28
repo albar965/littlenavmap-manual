@@ -1,0 +1,434 @@
+.. _flight-plan-dock-window:
+
+|Flight Plan| Ventana del Plan de Vuelo
+---------------------------------------
+
+.. _upper-part:
+
+Parte Superior
+~~~~~~~~~~~~~~
+
+La parte superior muestra una etiqueta que contiene el aeropuerto de
+salida, la posición (estacionamiento , pista o helipuerto ), el destino
+, la distancia del plan de vuelo , el tiempo de travesía , los
+procedimientos (aproximaciones SID/STAR y transiciones\usados ) y
+también el tipo de plan de vuelo.
+
+El tiempo de vuelo se muestra solo si se carga un perfil válido de la
+performance del avión.
+
+El nombre AIRINC del procedimiento de aproximación que es necesario en
+algunos FMC se muestra entre paréntesis.
+
+|Flight Plan Header|
+
+**Imagen Superior:**\ *Encabezamiento del plan de
+vuelo.*\ ``VORDME LITSY``\ \_ tiene *``D34``* como nombre ARINC.\_
+
+Además , hay tres campos de entrada en la parte superior de esta
+ventana:
+
+-  **Altitud de Crucero (ft):** Este valor se guarda en el archivo PLN y
+   también se usa para calcular el plan de vuelo sobre aerovías ,
+   basándose en la altitud dada. Este campo se ajusta automáticamente a
+   la altitud mínima de las aerovías Vitor y Jet, y a las restricciones
+   de altitud si se encuentran. Ver `Cálculo basado en una altitud
+   dada <MENUS.html#calculate-based-on-given-altitude>`__.
+-  **Tipo de Plan de Vuelo (IFR or VFR):** Se guarda con el plan de
+   vuelo.
+
+.. _flight-plan-table:
+
+Tabla del Plan de Vuelo
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Esta vista permite las mismas operaciones que la de búsqueda, excepto la
+ordenación. Ver `aquí <SEARCH.html#table-view>`__ para más información.
+
+Todos los elementos seleccionados en la vista del plan de vuelo serán
+resaltados en el mapa mediante un círculo negro/verde. Vea
+`Resaltes <MAPDISPLAY.html#highlights>`__ para más información. Use
+``Shift+Clic`` ó ``Ctrl+Clic`` para seleccionar dos o más elementos
+(multi-selección).
+
+El tramo activo del plan de vuelo está resaltado en magenta cuando
+*Little Navmap* está conectado a un simulador.
+
+Los tramos de aproximación tienen un color azul oscuro , y los de
+aproximación perdida rojo oscuro.
+
+Si un fijo de un plan de vuelo no se encuentra en la base de datos, se
+mostrará en rojo. Esto puede suceder si los ciclos AIRAC usados no
+coinciden. Lo mismo es válido para las aerovías. La posición en el mapa
+seguirá siendo correcta.
+
+Las aerovías también se muestran en rojo si la altitud de crucero
+seleccionada viola las restricciones de altitud mínima o máxima de la
+aerovía.
+
+|Waypoint not found|
+
+**Imagen Superior:**\ *El fijo*\ ``ALTAG``\ \_ y partes de la aerovía
+*``V324``* no se encuentran en la base de datos.\_
+
+.. _flight-plan-table-columns:
+
+Columnas de la Tabla
+^^^^^^^^^^^^^^^^^^^^
+
+-  ``Ident``: Identificador ICAO de la ayuda o el aeropuerto.
+
+El identificador puede tener un sufijo tal como se muestra a
+continuación.
+
+-  ``+`` o ``-`` y un valor de distancia: Muestra waypoints en
+   procedimientos relativos al fijo.
+-  ``(IAF)``: Fijo inicial del procedimiento o de la transición.
+-  ``(FAF)``: Fijo final de una aproximación. Dependiendo del
+   procedimiento, tanto el FAF como el FACF se muestran con una cruz de
+   Malta en el mapa y en el perfil de elevación.
+-  ``(FACF)``: Fijo final del curso de aproximación.
+-  ``(MAP)``: Punto de aproximación frustrada.
+-  ``Región``: Código regional de dos letras de una ayuda.
+-  ``Nombre``: Nombre del aeropuerto o radioayuda.
+-  ``Procedimiento``: Ya sea una ``SID``, ``Transición SID``, ``STAR``,
+   ``Transición STAR``, ``Transición``, ``Aproximación`` o ``Frustrada``
+   más el nombre del procedimiento.
+-  ``Aerovía ó Procedimiento``: Contiene el nombre de la aerovía para
+   tramos en ruta , o instrucciones de procedimiento.
+-  ``Restricción``: Cada altitud mínima para un segmento en ruta de una
+   aerovía, restricciones de altitud o velocidad de un procedimiento. Un
+   ``/`` separa restricciones de altitud y velocidad. Existen las
+   siguientes restricciones de altitud en los procedimientos:
+
+   -  **Sólo número:** Volar a altitud o velocidad. Ejemplo ``5.400`` ó
+      ``210``.
+   -  **Prefijo** ``A``: Volar a , ó por encima de , altitud ó
+      velocidad. Ejemplo: ``A 1.800``.
+   -  **Prefijo** ``B``: Volar a , ó por debajo de , altitud ó
+      velocidad. Ejemplo: ``B 10.000`` ó ``B 220``.
+   -  **Rango:** Volar a , o por encima de , la primera altitud y a, o
+      por debajo de, la segunda. Ejemplo: ``A 8.000, B 10.000``.
+   -  **Límite de altitud y velocidad:** Valores separados por ``/``.
+      Ejemplo: ``A 8.000, B 10.000/B220``.
+   -  **Sólo límite de velocidad:** Un ``/`` previo indica restricción
+      de velocidad , no de altitud. Ejemplo: ``/B250``.
+
+-  ``Tipo``: Tipo de radioayuda. Muestra ``ILS`` o ``LOC`` para
+   aproximaciones ILS o localizador en el último tramo a pista.
+-  ``Freq.``: Frecuencia o canal de la radioayuda. También muestra la
+   frecuencia del ILS o localizador de las aproximaciones
+   correspondientes en el último tramo a pista.
+-  ``Rango``: Rango de la Radioayuda si está disponible.
+-  ``Curso °M:``\ \*\* Rumbo inicial de una ruta de gran círculo que
+   conecta los dos puntos del tramo. Use este curso inicial si viaja
+   largas distancias sin ayudas a la navegación. Recuerde que tiene que
+   ir cambiando el curso constantemente cuando viaje a lo largo de una
+   ruta de gran círculo.
+-  ``Directo °M:``\ \*\* Recorrido constante de la linea de rumbo que
+   conecta dos puntos del tramo. Dependiendo del trazado y la distancia
+   puede diferir de la linea de gran círculo. Use este curso si viaja
+   por aerovías , o hacia estaciones VOR o NDB. Opuesto al curso
+   mostrado por la unidad GPS del simulador de vuelo, tendrá la radial
+   precisa cuando se aproxime a un VOR o NDB del plan de vuelo.
+-  ``Distancia``: Distancia del tramo del plan de vuelo.
+-  ``Restante``: Distancia restante al aeropuerto de destino, o al punto
+   final del procedimiento (normalmente la pista).
+-  ``Tiempo del tramo``: Tiempo de vuelo para este tramo. Cálculo basado
+   en el perfil de performance del avión (Ver `Prestaciones del
+   Avión <AIRCRAFTPERF.html>`__). Este es un valor fijo y no se actualiza
+   durante el vuelo. No aparece si falló el cálculo de la performance.
+-  ``ETA``: Tiempo estimado de llegada. Es un valor estático y no se
+   actualiza durante el vuelo. Cálculo basado según el perfil de
+   performance del avión. No aparece si falló el cálculo de la
+   performance.
+-  ``Fuel Rem.``: Combustible restante en el waypoint, por volumen y por
+   peso. Es un valor estático y no se actualiza durante el vuelo.
+   Cálculo basado según el perfil de performance del avión. No aparece
+   si en el perfil de performance del avión no se configuró el consumo
+   de combustible.
+-  ``Observaciones``: Instrucciones de giro , sobrevuelos ó ayudas
+   relacionadas para los tramos de procedimiento.
+
+|Flight Plan|
+
+**Imagen Superior:**\ *Ventana del*\ ``Plan de Vuelo``\ *. El plan de
+vuelo tiene una SID para la salida , y una STAR una transición y una
+aproximación para la llegada.*
+
+.. _mouse-clicks:
+
+Clics del Ratón
+~~~~~~~~~~~~~~~
+
+Un doble clic en una entrada de la tabla muestra un diagrama del
+aeropuerto, o un zoom sobre una ayuda. Adicionalmente los detalles
+aparecen en la ventana ``Información``. Un único clic selecciona un
+objeto y lo resalta en el mapa con un círculo negro/verde.
+
+.. _top-button:
+
+Botón Superior
+~~~~~~~~~~~~~~
+
+.. _clear-selection:
+
+|Clear Selection| Borrar Selección
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Deselecciona todas las entradas en la tabla y borra cualquier círculo
+resaltado en el mapa.
+
+.. _flight-plan-table-view-context-menu:
+
+Menú Contextual de la Vista Plan de Vuelo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _show-information-1:
+
+|Show Information| Mostrar Información
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Igual que el `Menu Contextual del
+Mapa <MAPDISPLAY.html#map-context-menu>`__.
+
+.. _show-on-map:
+
+|Show on Map| Mostrar en el Mapa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Muestra el diagrama del aeropuerto , o hace zoom sobre una ayuda en el
+mapa. La distancia del zoom puede cambiarse en el diálogo ``Opciones``
+de la pestaña ``Mapa``.
+
+.. _activate:
+
+|Activate Flight Plan Leg| Activar Tramo del Plan de Vuelo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Convierte el tramo seleccionado en el tramo del plan de vuelo activo
+(magenta). El tramo activo podría cambiar si *Little Navmap* está
+conectado al simulador y el avión del usuario se está moviendo.
+
+.. _follow-selection:
+
+Seguir Selección
+^^^^^^^^^^^^^^^^
+
+La vista del mapa se centrará, sin ampliacion, en el aeropuerto o
+radioayuda seleccionada, cuando esta función esté activa.
+
+.. _move-selected-legs-up-down:
+
+|Move Selected Legs up|\ |Move Selected Legs down| Mover Tramo Seleccionado Arriba / Abajo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Mueve el tramo seleccionado del plan de vuelo arriba o abajo en la
+lista. También funciona si se seleccionan múltiples tramos.
+
+Los nombres de aerovías se borran al mover o borrar fijos del plan de
+vuelo, si los nuevos tramos usan conexiones directas y no siguen ninguna
+aerovía.
+
+Los procedimientos o tramos de procedimiento no se pueden mover , y los
+fijos tampoco se pueden mover dentro de un procedimiento.
+
+.. _delete-selected-legs:
+
+|Delete Selected Legs or Procedure| Borrar Tramos o Procedimientos Seleccionados
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Borra todos los tramos seleccionados del plan de vuelo. Use ``Deshacer``
+si borra tramos accidentalmente.
+
+Si el tramo seleccionado es parte de un procedimiento , se borrará el
+procedimiento completo. Borrar un procedimiento borra también su
+transición.
+
+.. _edit-name-of-user-waypoint:
+
+|Edit Position| Editar Posición
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Permite cambiar el nombre o coordenadas de un punto definido por el
+usuario. La longitud del nombre está limitado a 10 caracteres cuando se
+guarda. Consultar `Editar Posición en el Plan de
+Vuelo <EDITFPPOSITION.html>`__.
+
+.. _insert-flight-plan:
+
+|Insert Flight Plan before| Insertar Plan de Vuelo Antes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Inserta un plan de vuelo antes del tramo seleccionado en el plan de
+vuelo activo.
+
+Utilizar ``Insertar Plan de Vuelo antes`` o ``Adjuntar Plan de Vuelo`` ,
+permite cargar o combinar planes de vuelo completos o fragmentos de los
+mismos en un nuevo plan de vuelo.
+
+Los procedimientos se insertan desde el plan de vuelo cargado y se
+eliminan del actual dependiendo de la posición de inserción.
+
+Si inserta un plan de vuelo después de la salida, todos los
+procedimientos del plan cargado se ignoran y los procedimientos actuales
+se mantienen.
+
+La inserción antes de la salida toma los procedimientos de salida del
+plan de vuelo cargado y descarta los procedimientos de salida actuales.
+
+Los tramos insertados se seleccionan después de cargar el plan de vuelo.
+
+.. _append-flight-plan:
+
+|Append Flight Plan| Adjuntar Plan de Vuelo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Agrega la salida, el destino y todos los waypoints de otro plan de vuelo
+al final del plan actual.
+
+Todos los procedimientos de llegada seleccionados actualmente se
+eliminarán al anexar un plan de vuelo. Los procedimientos de llegada y
+aproximación del plan de vuelo adjunto se agregan al actual, si
+corresponde.
+
+Los tramos adjuntas se seleccionan después de cargar el plan de vuelo.
+
+.. _calculate-for-selected-legs:
+
+Calcular para Tramos Seleccionados
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Este es un submenú que tiene entradas para diversos métodos de cálculo:
+
+|Calculate Radionav|\ `Calcular
+Radionav <MENUS.html#calculate-radionav>`__, |Calculate high
+Altitude|\ `Calcular Alta Altitud <MENUS.html#calculate-high-altitude>`__,
+|Calculate low Altitude|\ `Calculate Baja
+Altitud <MENUS.html#calculate-low-altitude>`__ y |Calculate based on given
+Altitude|\ `Calcular Basado en Altitud
+dada <MENUS.html#calculate-based-on-given-altitude>`__.
+
+Calcula un fragmento del plan de vuelo entre el primer y último fijo
+seleccionado. Los tramos intermedios se borran y remplazan por el
+fragmento calculado.
+
+Este menú solo estará activo cuando se seleccione más de un tramo del
+plan de vuelo, y ni el primero ni el último sean un procedimiento. Puede
+seleccionar el primer y el último tramo (``Ctrl+Clic``) , o todo el
+rango de tramos (``Shift+Clic`` y arrastrar) antes de iniciar el
+cálculo.
+
+Esta función puede ser útil si atraviesa tramos oceánicos carentes de
+aerovías.
+
+#. Defina salida y destino.
+#. Busque el último fijo sobre una aerovía antes de entrar en el océano.
+   Escoja la aerovía más cercana a la linea del plan de vuelo. Añada el
+   fijo al plan de vuelo.
+#. Seleccione punto de partida y fijo, y calcule el fragmento del plan
+   de vuelo.
+#. Repita el proceso para el primer fijo sobre una aerovía cercana a la
+   costa del continente de destino.
+#. Seleccione este fijo y el destino , y calcule el fragmento del plan
+   de vuelo.
+
+Aunque no es enteramente realista , es un método alternativo razonable
+hasta que *Little Navmap* soporte pistas NAT o PACOT.
+
+.. _show-range-rings-1:
+
+|Show Range Rings| Mostrar Anillos de Distancia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lo mismo que en el `Menú Contextual del
+Mapa <MAPDISPLAY.html#map-context-menu>`__.
+
+.. _show-navaid-range-1:
+
+|Show Navaid range| Mostrar Rango de Radioayuda
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Muestra los anillos de distancia para todas las radioayudas
+seleccionadas en el plan de vuelo. Simplemente seleccione todos los
+tramos del plan de vuelo, y use esta función para mostrar los círculos
+de rango de cada radioayuda del plan de vuelo.
+
+Por otra parte , igual que en el `Menu Contextual del
+Mapa <MAPDISPLAY.html#map-context-menu>`__.
+
+.. _show-traffic-pattern:
+
+|Display Airport Traffic Pattern| Visualizar Patrón de Tráfico del Aeropuerto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Este menú se activa al hacer click en el aeropuerto. Muestra un diálogo
+que permite mostrar y configurar el patrón de tráfico del aeropuerto en
+el mapa.
+
+Consultar `Patrón de Tráfico <TRAFFICPATTERN.html>`__.
+
+.. _copy-0:
+
+|Copy| Copiar
+^^^^^^^^^^^^^
+
+Copia las entradas seleccionadas en formato CSV al portapapeles. El CSV
+incluirá un encabezamiento y tendrá en cuenta los cambios en la tabla ,
+como el orden de las columnas.
+
+.. _select-all-0:
+
+Seleccionar Todo
+^^^^^^^^^^^^^^^^
+
+Selecciona todos los tramos del plan de vuelo.
+
+.. _clear-selection:
+
+|Clear Selection| Borrar Selección
+''''''''''''''''''''''''''''''''''
+
+Deselecciona todos los segmentos seleccionados , y borra cualquier
+círculo resaltado en el mapa.
+
+.. _reset-view-0:
+
+|Reset View| Reiniciar Vista
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Devuelve la anchura y el orden de las columnas a su valor por defecto.
+
+.. _set-center-for-distance-search-1:
+
+|Set Center for Distance Search| Ajustar Centro para Búsqueda de Distancia
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Igual que en el `Menú Contextual del
+Mapa <MAPDISPLAY.html#map-context-menu>`__.
+
+.. |Flight Plan| image:: ../images/icon_routedock.png
+.. |Flight Plan Header| image:: ../images/flightplanheader.jpg
+.. |Waypoint not found| image:: ../images/wpnotfound.jpg
+.. |Flight Plan| image:: ../images/flightplan.jpg
+.. |Clear Selection| image:: ../images/icon_clearselection.png
+.. |Show Information| image:: ../images/icon_globals.png
+.. |Show on Map| image:: ../images/icon_showonmap.png
+.. |Activate Flight Plan Leg| image:: ../images/icon_routeactiveleg.png
+.. |Move Selected Legs up| image:: ../images/icon_routelegup.png
+.. |Move Selected Legs down| image:: ../images/icon_routelegdown.png
+.. |Delete Selected Legs or Procedure| image:: ../images/icon_routedeleteleg.png
+.. |Edit Position| image:: ../images/icon_routestring.png
+.. |Insert Flight Plan before| image:: ../images/icon_fileinsert.png
+.. |Append Flight Plan| image:: ../images/icon_fileappend.png
+.. |Calculate Radionav| image:: ../images/icon_routeradio.png
+.. |Calculate high Altitude| image:: ../images/icon_routehigh.png
+.. |Calculate low Altitude| image:: ../images/icon_routelow.png
+.. |Calculate based on given Altitude| image:: ../images/icon_routealt.png
+.. |Show Range Rings| image:: ../images/icon_rangerings.png
+.. |Show Navaid range| image:: ../images/icon_navrange.png
+.. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
+.. |Copy| image:: ../images/icon_copy.png
+.. |Reset View| image:: ../images/icon_cleartable.png
+.. |Set Center for Distance Search| image:: ../images/icon_mark.png
+
