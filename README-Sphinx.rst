@@ -1,5 +1,5 @@
-General
-=======
+Document Format Change
+==========================
 
 Sphinx is the future documentation generation tool for *Little Navmap*. A change was needed
 due to to regressions (e.g. dropping of PDF, format closed now and more) of
@@ -28,7 +28,6 @@ The Sphinx generated English documentation for *Little Navmap* can be accessed h
 * `PDF US Letter <https://www.littlenavmap.org/manuals/littlenavmap/develop/2.5/littlenavmap_book_en_letter.pdf>`_
 * `ePUB <https://www.littlenavmap.org/manuals/littlenavmap/develop/2.5/littlenavmap_book_en.epub>`_
 * `MOBI <https://www.littlenavmap.org/manuals/littlenavmap/develop/2.5/littlenavmap_book_en.mobi>`_
-
 
 Why Sphinx?
 -----------
@@ -108,3 +107,133 @@ Files created by running the script ``sphinx_rebuild_all.sh en``:
 * ``deploy/littlenavmap_book_en.mobi``: MOBI ebook format.
 * ``deploy/littlenavmap_book_en_a4.pdf``: PDF using A4 page size.
 * ``deploy/littlenavmap_book_en_letter.pdf``: PDF using US letter format.
+
+How adjust the Pandoc converted files
+-----------------------------------------------
+
+Converted files need manual adjustments which I cannot do for all languages.
+Note that some adaptions are optional.
+
+Please install the Sphinx tools locally to test your translation. Using the tools
+gives you clear error messages when compiling the manual. You can also use the online
+tools linked above for quick tests.
+
+Note that reST is dependent on indention with spaces for certain directives. You have to use
+four or more spaces to define blocks.
+
+Tables
+~~~~~~~~~~~~~~
+
+Tables are not converted properly. Copy the tables from the English reST files and insert your
+translated texts there. I recommend to use simple tables as described in
+`Tables <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables>`__.
+
+Note that Sphinx is very picky about alignment in tables.
+
+Code blocks
+~~~~~~~~~~~~~~
+
+Code blocks can be copied from the English manual as is. These don't need a translation.
+The blocks can be found by looking for the ``.. code-block::`` directive in the
+English reST files.
+
+Lists
+~~~~~~~~~~~~~~
+
+Nested lists are not converted properly by Pandoc. You have to add an empty line before and after a
+nested list and indent it.
+
+Example for a corrected sub list::
+
+   - List item 1
+   - List item 2
+
+       - Sub item 1
+       - Sub item 2
+
+   - List item 3
+
+In some cases lists are collapsed to a single line. You can find these by looking for an
+escaped star (``\*``).
+
+Images
+~~~~~~~~~~~~~~
+
+Small inline images like toolbar icons can be left as they are converted by Pandoc.
+
+Images with a caption can be converted, though.
+
+Look for the text ``Image Above`` (the translated phrase) in your converted reST file
+and replace it with a figure directive (``.. figure::``).
+
+Image references are enclosed in ``|`` and refer to an image at the bottom of the file.
+You have to inline these.
+
+Example source image before conversion::
+
+      |Little Navmap Overview|
+
+      **Image ci-dessus:**\ *Un bref aperçu de Little Navmap v1.8.5 montrant
+      les fonctions les plus importantes.*
+
+      ... more text until bottom of file
+
+      .. |Little Navmap Overview| image:: ../images/overview.jpg
+
+After conversion::
+
+   .. figure:: ../images/overview.jpg
+
+        Un bref aperçu de Little Navmap v1.8.5 montrant
+        les fonctions les plus importantes.
+
+Note that the ``Image ci-dessus:`` (``Image above``) can be removed and bold or italic is not needed anymore.
+
+See also
+`Images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`__ and
+`Figures <http://docutils.sourceforge.net/docs/ref/rst/directives.html#figure>`__.
+
+Nested bold, italic and/or code styles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nesting text styles like italic and bold is not allowed in reST. Pandoc escapes styles with an
+backslash ``\`` which can be removed.
+
+Example markdown with nested styles::
+
+   **Bold text with *italic* text mixed.**
+
+   *Italic text mixed with `code`.*
+
+Example reST cleaned up::
+
+    **Bold text with** *italic* **text mixed.**
+
+    *Italic text mixed with* ``code`` *.*
+
+Note the space before ``*.*``. Do **not** add a space before ``Italic`` and after ``with``.
+Try the online tools if in doubt about the outcome.
+
+References
+~~~~~~~~~~~~~~
+
+Pandoc creates external references per default. These can (optionally) be converted to internal
+references using HTML anchors.
+
+Example in Pandoc reST converted text::
+
+    `Tableau des résultats de recherche - Afficher le Menu Contextuel <SEARCH.html#search-result-table-view-context-menu>`__
+
+External link replaced with an anchor::
+
+    :ref:`search-result-table-view-context-menu`
+
+You can also use the ``:doc:`` directive to refer to documents::
+
+    :doc:`SEARCH`
+
+Sphinx will use the text from the next header after an anchor or at the top of a file as link text.
+
+See also
+`Cross-referencing arbitrary locations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#cross-referencing-arbitrary-locations>`__ and
+`Cross-referencing documents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#cross-referencing-documents>`__.
