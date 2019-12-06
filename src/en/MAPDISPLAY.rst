@@ -356,7 +356,7 @@ See chapter :doc:`HOLD` for more information.
 
 Show multiple red range rings around the clicked position. The number
 and distance of the range rings can be changed in the ``Options`` dialog
-on the ``Map Display`` tab. A label indicates the radius of each ring in
+on page :ref:`map`. A label indicates the radius of each ring in
 nautical miles.
 
 The width of all range rings can be changed in the dialog ``Options`` on

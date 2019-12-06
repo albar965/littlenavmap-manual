@@ -16,15 +16,11 @@ The size is adapted to the map view size but not larger than 1000 nm and
 not smaller than 4 nm.
 
 Line thickness and other display options can be changed in dialog
-``Options`` on the tab ``Map Display``.
+``Options`` on page :ref:`map-display-2`.
 
 The colors for flight plan leg course and crab angle indicator depend on
 settings for active flight plan leg which can be changed in the dialog
-``Options`` on tab ``Map Display``.
-
-.. figure:: ../images/compass_rose_opts.jpg
-
-   Compass rose display settings in options dialog.
+``Options`` on page :ref:`map-display`.
 
 Indicators
 ~~~~~~~~~~

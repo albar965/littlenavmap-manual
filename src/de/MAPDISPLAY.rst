@@ -388,7 +388,7 @@ Siehe Kapitel :doc:`HOLD` für weitere Informationen.
 
 Zeigt mehrere rote Distanzkreise um die angeklickte Position herum an.
 Die Anzahl und Entfernung der Entfernungsringe kann im Dialogfeld
-``Einstellungen`` auf der Seite ``Kartenanzeige`` geändert
+``Einstellungen`` auf der Seite :ref:`map` geändert
 werden. Eine Beschriftung zeigt den Radius jedes Rings in nautischen Meilen an.
 
 Die Distanz aller Ringe kann im Dialog ``Einstellungen`` auf :ref:`map` geändert werden.

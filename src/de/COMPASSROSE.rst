@@ -17,18 +17,13 @@ Die Größe ist an die Größe der Kartenansicht angepasst, jedoch nicht
 größer als 1000 nm und nicht kleiner als 4 nm.
 
 Linienstärke und andere Anzeigeoptionen können im Dialog
-``Einstellungen`` auf der Reiter ``Kartenanzeige`` geändert
+``Einstellungen`` auf der Seite :ref:`map-display-2` geändert
 werden.
 
-Die Farben für den Flugplanlauf und die Krebswinkelanzeige hängen von
+Die Farben für den Kurs des Flugplanabschnittes und die Schiebewinkelanzeige hängen von
 den Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
-``Einstellungen`` auf der Reiter ``Kartenanzeige`` geändert
+``Einstellungen`` auf der Seite :ref:`map-display` geändert
 werden können.
-
-.. figure:: ../images/compass_rose_opts.jpg
-
-        Einstellungen für die Anzeige der Kompassrose im
-        Optionsdialog.
 
 Anzeige
 ~~~~~~~~~~~

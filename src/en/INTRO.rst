@@ -239,7 +239,7 @@ Airports get a zero to five star rating depending on facilities.
 Airports that have no rating will be displayed
 using a gray symbol below all other airports on the map
 (``Empty Airport``). This behavior can be switched off in the
-``Options`` dialog on the ``Map Display`` tab.
+``Options`` dialog on the page :ref:`map`.
 
 This helps to avoid airports with scenery elements.
 
