@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Little Navmap User Manual'
+project = u'Little Navmap'
 copyright = u'2019, Alexander Barthel'
 author = u'Alexander Barthel'
 
@@ -133,7 +133,7 @@ html_css_files = [
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Little Navmap User Manual'
+htmlhelp_basename = 'Little Navmap'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -190,7 +190,7 @@ texinfo_documents = [
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
-#epub_title = 'Little Navmap User Manual'
+epub_title = 'Little Navmap'
 
 epub_copyright  = 'Alexander Barthel and Contributors'
 
@@ -198,7 +198,7 @@ epub_publisher  = 'Alexander Barthel'
 
 epub_author= 'Alexander Barthel and Contributors'
 
-epub_description  = 'Little Navmap User Manual'
+epub_description  = 'Little Navmap'
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.

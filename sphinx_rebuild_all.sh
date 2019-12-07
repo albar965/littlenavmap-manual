@@ -26,7 +26,7 @@ for LANGNAME in "$@" ; do
   rm -rfv deploy/${LANGNAME}/.doctrees deploy/${LANGNAME}/.buildinfo
 
   # Add cover to ePUB file and copy to deploy
-  ebook-convert build/epub/${LANGNAME}/LittleNavmapUserManual.epub deploy/littlenavmap_book_${LANGNAME}.epub --cover src/images/cover.png --preserve-cover-aspect-ratio
+  ebook-convert build/epub/${LANGNAME}/LittleNavmap.epub deploy/littlenavmap_book_${LANGNAME}.epub --cover src/images/cover.png --preserve-cover-aspect-ratio
 
   # Create MOBI file
   ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}.mobi
