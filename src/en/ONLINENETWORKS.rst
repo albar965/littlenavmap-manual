@@ -93,7 +93,7 @@ airspaces by selecting ``Online`` as airspace source (:ref:`airspace-source`)
 
        The circles do not represent the real airspaces and are only
        used to indicate the presence of an active center, tower, ground or
-       other position.** See next chapter how to assign airspace boundaries to
+       other position. See below how to assign airspace boundaries to
        a center.
 
 Detailed information for online centers/airspaces is shown on :doc:`INFO`.
