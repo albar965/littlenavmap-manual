@@ -1,43 +1,45 @@
-## Acknowledgments {#acknowledgments}
+## Ringraziamenti {#acknowledgments}
 
-A big thank-you for all people supporting me, sending me their log files, screen shots, ideas for improvements, friendly messages, donations and more.
+Un grande ringraziamento per tutte le persone che mi hanno supportano, che mi inviano i loro file di registro, schermate, idee per miglioramenti,messaggi amichevoli,donazioni e altro ancora.
 
-A huge Thank you! to Paul Watts for his support, for testing, tips, links to incredible tools and for all his work on the manual.
+Un enorme grazie! a Paul Watts per il suo supporto, per i test, i suggerimenti, i collegamenti a strumenti incredibili e per tutto il suo lavoro sul manuale.
 
-Plenty of thanks to [Hervé Sors](http://www.aero.sors.fr) for allowing me to include his updated `magdecl.bgl` file with _Little Navmap_.
+Mille grazie a [Hervé Sors](http://www.aero.sors.fr) per avermi permesso di includere il suo file `magdecl.bgl` aggiornato con _Little Navmap_.
 
-A very special thank-you to Roberto S. from Switzerland for his valuable input and also helping with his capability to find the most obscure bugs.
+Un ringraziamento molto speciale a Roberto S. dalla Svizzera per il suo prezioso contributo e anche per aiutare con la sua capacità di trovare i bug più oscuri.
 
-Thanks to Navigraph for kindly allowing me to include a free AIRAC cycle in the download. Thanks for Richard Stefan for his great support.
-Current AIRAC cycles can be purchased from [Navigraph](http://www.navigraph.com).
+Grazie a Navigraph per avermi gentilmente permesso di includere un ciclo AIRAC gratuito nel download. Grazie per Richard Stefan per il suo grande supporto. 
 
-A big Thank you! to Jean Luc from [Reality XP](http://www.reality-xp.com) for his great support.
+I cicli AIRAC attuali possono essere acquistati da [Navigraph](http://www.navigraph.com).
 
-Thanks to Jose from [fsAerodata](https://www.fsaerodata.com/) for his kind support.
+Un grande grazie! a Jean Luc di [Reality XP](http://www.reality-xp.com) for his great support.
 
-The French translation of the program was done by Patrick JUNG alias Patbest. Thank you!
+Grazie a Jose di [fsAerodata](https://www.fsaerodata.com/) per il suo grande supporto.
 
-Thanks to all beta testers for their effort, patience and ideas: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo and Sam.
+La traduzione francese del programma è stata fatta da Patrick JUNG alias Patbest. Grazie!
 
-Another big Danke! to Marc from Germany for all his great ideas and endless bug reports.
+Grazie a tutti i beta tester per l'impegno, la pazienza e le idee: Barry, Jean-Pierre, Brian, Gérard, John, Remi, Paolo and Sam.
 
-Thanks to all in the forums who patiently supported me and gave invaluable feedback during the public beta:
+Un altro grande Danke! a Marc dalla Germania per tutte le sue grandi idee e le infinite segnalazioni di bug.
+
+Grazie a tutti i forum che mi hanno supportato pazientemente e hanno dato un prezioso feedback durante la beta pubblica:
 
 [AVSIM](http://www.avsim.com), [SimOuthouse](http://www.sim-outhouse.com), [FlightX.net](http://flightx.net) and [FSDeveloper.com](http://www.fsdeveloper.com).
 
-This project and my library [atools](https://github.com/albar965/atools) would not exist without the fabulous documentation of the BGL files in the [FSDeveloper Wiki](http://www.fsdeveloper.com/wiki). So, here a huge thank-you to all the contributors.
+Questo progetto e i miei strumenti di libreria [atools](https://github.com/albar965/atools) non esisterebbero senza la favolosa documentazione dei file BGL in [FSDeveloper Wiki](http://www.fsdeveloper.com/wiki). Quindi, ecco un enorme grazie a tutti i 
 
-Also a thank you to Ed Williams for his [Aviation Formulary](http://williams.best.vwh.net/avform.htm).
+collaboratori.
 
-Without the open source [Marble](https://marble.kde.org) widget that allows me to access and display all the maps I would still be busy doing that myself for years.
+Un ringraziamento anche a Ed Williams per il suo [Aviation Formulary](http://williams.best.vwh.net/avform.htm).
 
-No [Qt application framework](https://www.qt.io) and I could not even draw a simple button.
+Senza il congegno open source [Marble](https://marble.kde.org) che mi consente di accedere e visualizzare tutte le mappe sarei ancora impegnato a farlo da solo per anni.
 
-Let's not forget about all the services that provide us all the online maps for free:
+Nessun [Qt application framework](https://www.qt.io) e non sono nemmeno riuscito a disegnare un semplice pulsante.
+
+Non dimentichiamoci di tutti i servizi che ci forniscono gratuitamente tutte le mappe online:
 
 [Stamen Design](http://maps.stamen.com), [MapTiles](http://maptiles.xyz), [OpenTopoMap](http://www.opentopomap.org) and [CARTO](https://carto.com/).
 
-A thank-you to the [GIScience / Geoinformatics Research Group](http://www.geog.uni-heidelberg.de/gis/index_en.html) of Heidelberg University for kindly giving me permission to use their map [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
+E Grazie a [GIScience / Geoinformatics Research Group](http://www.geog.uni-heidelberg.de/gis/index_en.html) dell'Università di Heidelberg  per avermi dato il permesso di usare la loro mappa [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).
 
-And last but not least: If there were no [OpenStreetMap](http://www.openstreetmap.org) and its thousands of contributors none of us would have any maps at all.
-
+E ultimo ma non meno importante: se non ci fossero [OpenStreetMap](http://www.openstreetmap.org) e i suoi migliaia di collaboratori nessuno di noi avrebbe alcuna mappa.
