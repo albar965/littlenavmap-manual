@@ -1,190 +1,189 @@
-## ![Aircraft Performance](../images/icons/aircraftperf.png "Aircraft Performance") Aircraft Performance {#aircraft-performance}
+## ![Prestazioni dell'aeromobile](../images/icons/aircraftperf.png "Aircraft Performance") Prestazioni dell'aeromobile{#aircraft-performance}
 
-_Little Navmap_ provides functionality for editing, creating and collecting aircraft performance
-profiles. This allows to determine needed fuel, flight time as well as climb and descent paths.
+_Little Navmap_ fornisce funzionalità per l'editing, la creazione e la raccolta dei profili delle prestazioni degli aeromobili. Ciò consente di determinare il carburante necessario, il tempo di volo nonché i percorsi di salita e discesa.
 
-Average performance data like speed, vertical speed and fuel flow is used for the flight phases
-taxi/takeoff, climb, cruise and descent to calculate fuel requirements.
+Per le fasi di volo vengono utilizzati i dati sulle prestazioni come velocità, velocità verticale e flusso di carburante
+taxi / decollo, salita, crociera e discesa per calcolare il fabbisogno di carburante.
 
-A simple setting for wind at cruise altitude can be used to adjust the plan for weather.
+È possibile utilizzare una semplice impostazione per il vento all'altitudine di crociera per regolare il piano di volo sul meteo.
 
-**Aircraft performance is used for the functions below:**
+** Le prestazioni dell'aeromobile vengono utilizzate per le funzioni seguenti: **
 
-* Calculation of the flight time which is shown in flight plan header.
-* Calculation of top of climb and top of descent which are shown on the map and in the elevation profile. Note that altitude restrictions in procedures might affect the top of descent or top or climb distances.
-* Fuel planning report in tab `Aircraft` of the dock window `Flight Plan`.
-* Show remaining fuel at each leg in flight plan table.
+* Calcolo del tempo di volo indicato nell'intestazione del piano di volo.
+* Calcolo del Top of Climb e del Top of Descend che sono mostrati sulla mappa e nel profilo altimetrico. Si noti che i limiti di altitudine nelle procedure potrebbero influenzare la distanza del culmine della discesa o del culmine della salita.
+* Rapporto sulla pianificazione del carburante nella scheda "Aerei" della finestra ancorata del  "Piano di volo".
+* Mostra nella tabella del piano di volo il carburante rimanente in ogni tappa .
+Il carburante è mostrato sia come peso \ (`lbs` o` kg` \) o come volume \ (`gallons`,` litre` \) e può essere
+inserito in entrambe le unità.
 
-Fuel is shown both as weight \(`lbs` or `kg`\) or as volume \(`gallons`, `liter`\) and can be
-entered in either unit.
+See [Percorsi Top of Climb e Top of Descend](PROFILE.md#toc-and-tod-paths) per dettagli sul calcolo del TOC e TOD.
 
-See [Top of Climb and Top of Descent Paths](PROFILE.md#toc-and-tod-paths) for details about the calculation of TOC and TOD.
+Vengono visualizzati messaggi di avvertimento rossi se le prestazioni dell'aeromobile contengono valori errati che impediscono a _Little Navmap_ di calcolare il consumo di carburante, la salita o la discesa.
 
-Red warning messages are shown if aircraft performance contains wrong values that keep _Little Navmap_ from calculating fuel consumption, climb or descent.
+![Errore della prestazione dell'aereo](../images/perf_error.jpg "Aircraft Performance Error")
 
-![Aircraft Performance Error](../images/perf_error.jpg "Aircraft Performance Error")
+_**Immagine sopra:** La tabella delle prestazioni dell'aereo sta mostrando un errore._
 
-_**Picture above:** Aircraft Performance tab showing an error._
+Un profilo prefissato con 3nm per 1000 ft per le regole di discesa e salita, con nessun consumo di carburante
+è predefinito. Verranno visualizzati messaggi di avvertimento rossi se usati, poichè il profilo non è completo. 
 
-A default profile with 3 nm per 1000 ft for descent and climb rules and no fuel consumption
-is default. Red warning messages will be shown if used since the profile is not complete.
+_Little Navmap_ ha capacità per raccogliere automaticamente i dati sulle prestazioni di un aeromobile durante
+un tipico volo.
+Questo può essere usato per ottenere un profilo delle prestazioni di base che può essere messo a punto manualmente.
+Vedi sotto nel capitolo [Raccogliere le prestazioni per il volo] (#aircraft-performance-collect) per ulteriori informazioni.
 
-_Little Navmap_ has functionality to collect performance data for an aircraft automatically during
-a typical flight.
-This can be used to get a basic performance profile which can be fine tuned manually.
-See below in chapter [Collect Performance for Flight](#aircraft-performance-collect) for more
-information.
 
-**Note that the fuel and time estimates in the dock window **`Simulator Aircraft`** on tab **`Progress`** are based on actual fuel consumption and speed and are not affected by the aircraft performance profile.**
+**Notare che il carburante ed il tempo stimato nella finestra ancorata **`Aereo del simulatore`** nella tabella **`Progresso`** si basano sul consumo e sulla velocità effettiva del carburante e non sono influenzati dal profilo delle prestazioni dell'aeromobile.**
 
-![Aircraft Performance Tab](../images/perf_report.jpg "Aircraft Performance Tab")
+![Tabella perstazioni dell'aereo](../images/perf_report.jpg "Aircraft Performance Tab")
 
-_**Picture above:** Aircraft Performance tab with fuel planning and entered cruise wind on top. The
-_`*`_ in the tab label shows unsaved changes and the performance file description contains a web link._
-
+_ ** Immagine sopra: ** Scheda Prestazioni dell'aereo con pianificazione del carburante e vento da crociera inserito in alto. L'
+_` * `_ nell'etichetta della scheda mostra le modifiche non salvate e la descrizione del file delle prestazioni  che contiene un collegamento web.
 ### Files {#aircraft-performance-files}
 
-Performance profile files \(file extension `lnmperf`\) can be saved and loaded like flight plan files.
-The performance files can be dragged from a file manager like Windows Explorer or macOS Finder and dropped into the _Little Navmap_ main window to load them.
+I file del profilo delle prestazioni \ (estensione `lnmperf` \) possono essere salvati e caricati come file del piano di volo.
+I file delle prestazioni possono essere trascinati da un file manager come Esplora risorse o macOS Finder e rilasciati nella finestra principale di _Little Navmap_ per caricarli.
 
-**Do not save the files into the **_Little Navmap_** directory since it will might be deleted on next update. Neither save them in **`C:\Program Files`** or one of its sub-directories. Save the files into your **`Documents`** folder or a sub-directory in this folder.**
+** Non salvare i file nella directory ** _ Little Navmap _ ** poiché potrebbe essere cancellato al prossimo aggiornamento. Né salvarli in ** `C: \ Programmi` ** o in una delle sue sottodirectory. Salvare i file nella cartella ** `Documents` ** o in una sottocartella in questa cartella. **
 
-### Wind {#aircraft-performance-wind}
+### Vento {#aircraft-performance-wind}
 
-You can enter the estimated average wind speed and wind direction at cruise altitude. This will be
-considered when calculating flight time and fuel consumption for each leg and the whole flight plan.
+È possibile inserire la velocità media stimata del vento e la direzione del vento all'altitudine di crociera. Questo sarà
+considerato nel calcolo del tempo di volo e del consumo di carburante per ciascuna tratta e l'intero piano di volo.
 
-The fuel report is updated immediately when changing wind speed or direction.
+Il rapporto sul carburante viene aggiornato immediatamente quando si cambia la velocità o la direzione del vento.
 
-The wind speed is interpolated from ground to cruise altitude for the climb and descent phases.
+La velocità del vento viene inserita da terra all'altitudine di crociera per le fasi di salita e discesa.
 
-Note that the wind setting will not change the top of climb or top of descent points in _Little
-Navmap_. It will only affect ground speed, thus flight time and fuel consumption.
+Notare che l'impostazione del vento non cambierà il top of climb o il top of descend in _Little
+Navmap_. Interesserà solo la velocità al suolo, quindi il tempo di volo e il consumo di carburante.
 
-### Buttons{#aircraft-performance-buttons}
+### Bottoni {#aircraft-performance-buttons}
 
-The buttons on top have the same functionality as the items in the main menu [Aircraft](MENUS.md#aircraft-menu).
+I pulsanti in alto hanno la stessa funzionalità degli elementi nel menu principale [Aereo](MENUS.md#aircraft-menu).
 
-* ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit Aircraft Performance as")
-`Edit Aircraft Performance`: Opens the edit dialog for the currently loaded profile.
-* ![New Aircraft Performance](../images/icons/aircraftperfnew.png "New Aircraft Performance") `New
-Aircraft Performance`: Creates a new performance profile with default values. A profile with 3 nm per
-1000 ft for descent and climb rules and no fuel consumption
-is default. Red warning messages will be shown since the profile is not complete.
-* ![Load Aircraft Performance](../images/icons/aircraftperfload.png "Load Aircraft Performance")
-`Load Aircraft Performance`: Load a `lnmperf` file.
+* ![Modifica le prestazioni dell'aereo](../images/icons/aircraftperfedit.png "Modifica le prestazioni dell'aereo come")
+`Modifica le prestazioni dell'aereo`: Apre la finestra di dialogo di modifica per il profilo attualmente caricato.
+* ![Nuova prestazione dell'aereo](../images/icons/aircraftperfnew.png "Nuova prestazione dell'aereo") `Nuova
+prestazione dell'aereo`: Crea un nuovo profilo delle prestazioni con valori predefiniti. Un profilo con 3 nm per
+1000 piedi per le regole di discesa e salita e nessun consumo di carburante
+è predefinito. Verranno visualizzati messaggi di avviso rossi perchè il profilo non è completo.
+* ![Carica profilo dell'aereo](../images/icons/aircraftperfload.png "Carica profilo dell'aereo")
+`Carica profilo dell'aereo`: Carica un file `lnmperf`.
 * ![Save Aircraft Performance](../images/icons/aircraftperfsave.png "Save Aircraft Performance")
-`Save Aircraft Performance`: Save current profile to a `lnmperf` file.
-* ![Save Aircraft Performance as](../images/icons/aircraftperfsaveas.png "Save Aircraft Performance
-as") `Save Aircraft Performance as`: Save current profile to a new `lnmperf` file.
+`Salva prestazione dell'aereo`: Salva il corrente profilo come file `lnmperf'.
+* ![Salva prestazione dell'aereo come](../images/icons/aircraftperfsaveas.png "Salva prestazione dell'aereo come") `Save Aircraft Performance as`: Save current profile to a new `lnmperf` file.
 
-### Performance Report {#aircraft-performance-report}
+### Rapporto sul rendimento {# aircraft-performance-report}
 
-Note that the tab `Aircraft` in the dock window `Flight plan` is meant for fuel planning and does
-not change during flight \(except when collecting performance data\).
+Si noti che la scheda "Aerei" nella finestra ancorata "Piano di volo" è pensata per la pianificazione del carburante e non lo 
+cambiare durante il volo \ (tranne quando si raccolgono dati sulle prestazioni \).
 
-A flight plan has to be loaded to see the fuel planning report.
+È necessario caricare un piano di volo per visualizzare il rapporto di pianificazione del carburante.
 
-A different report is displayed when collecting performance numbers.
+Un rapporto diverso viene visualizzato quando si raccolgono i valori delle prestazioni.
 
-The fuel planning report updates automatically if the flight plan, cruise altitude or wind are
-changed.
+Il rapporto sulla pianificazione del carburante si aggiorna automaticamente se il piano di volo, l'altitudine della crociera o il vento sono
+cambiati.
 
-See [Editing Aircraft Performance](AIRCRAFTPERFEDIT.md) for a detailed description of all fuel
-numbers.
+Vedere [Modifica delle prestazioni dell'aereo] (AIRCRAFTPERFEDIT.md) per una descrizione dettagliata di tutti i valori del  carburante.
 
-The text size of the report can be changed in dialog `Options` on `User Interface`.
 
-#### Flight Plan {#aircraft-performance-flightplan}
+Le dimensioni del testo del rapporto può essere modificata nella finestra di dialogo `Opzioni` nell' ` Interfaccia utente`.
 
-* `Distance and Time`: Total flight plan distance and traveling time including procedures. Same
-values as on top of the tab `Plan`.
-* `Average Ground Speed`: Ground speed across all the flight phases climb, cruise and descent.
-Calculated based on speeds as given and wind as entered on top the tab.
-* `True Airspeed at Cruise`: Cruise speed as given in the edit dialog.
-* `Mach at cruise`: Mach number at flight plan cruise altitude calculated based on given true airspeed and ISA atmospheric standard conditions.
+#### Piano di volo {#aircraft-performance-flightplan}
 
-#### Fuel Plan {#aircraft-performance-fuelplan}
 
-* `Fuel Type`: `Jetfuel` or `Avgas`. Used to change numbers when switching between volume and
-weight as fuel unit and to convert between units in the report.
-* `Trip Fuel`: Fuel that is consumed while flying and covers all phases from takeoff at departure to touchdown at the destination. Does not include contingency fuel or any extra or reserve fuel.
-* `Block Fuel`: Block fuel is the total fuel required for the flight. Includes trip, reserve, extra, taxi and contingency fuel.
-* `Fuel at Destination`: Expected fuel at destination. Will be equal to reserve if contingency and
-extra fuel are not set.
-* `Reserve Fuel`: Reserve fuel as set in the edit dialog.
-* `Taxi Fuel`: Taxi fuel as set in the edit dialog.
-* `Extra Fuel`: Extra fuel as set in the edit dialog.
-* `Contingency Fuel`: Contingency fuel calculated from the percentage given in the edit dialog and trip fuel.
+* `Distanza e tempo`: distanza totale del piano di volo e tempo di viaggio comprese le procedure. Stessi
+valori come nella parte superiore della scheda `Plan`.
+* `Velocità media al suolo`: velocità al suolo in tutte le fasi del volo in salita, crociera e discesa.
+Calcolato in base alle velocità indicate e al vento immesso nella parte superiore della scheda.
+* `Velocità vera di crociera`: velocità di crociera indicata nella finestra di modifica.
+* `Mach a crociera`: numero di Mach all'altitudine di crociera del piano di volo calcolata in base alla velocità reale indicata e alle condizioni standard atmosferiche ISA.
+#### Piano carburante {#aircraft-performance-fuelplan}
 
-#### Climb and Descent {#aircraft-performance-climb-descent}
+* `Tipo carburante`: `Jetfuel` o `Avgas`. Utilizzato per cambiare i valori quando si passa da volume a
+peso come unità di carburante e per convertire tra le unità nella relazione.
+* "Carburante di viaggio": carburante che viene consumato durante il volo e copre tutte le fasi dal decollo alla partenza al touchdown a destinazione. Non include carburante di emergenza o carburante extra o di riserva.
+* `Block Fuel`: Block fuel è il carburante totale richiesto per il volo. Include viaggio, riserva, carburante extra, taxi e imprevisto.
+* `carburante a destinazione`: carburante previsto a destinazione. Sarà uguale alla riserva se l'imprevisto o il carburante extra non è 
+impostato.
+* "Riserva carburante": riserva carburante come impostato nella finestra di modifica.
+* `carburante in taxi`:  il Carburante in taxi come impostato nella finestra di modifica.
+* `Carburante Extra`: carburante extra come impostato nella finestra di modifica.
+* "Carburante imprevisto": carburante per imprevisti calcolato sulla percentuale indicata nella finestra di modifica e carburante di viaggio.
+#### Salita e Discesa {#aircraft-performance-climb-descent}
 
-* `Climb`: Speed and vertical speed as given plus the calculated flight path angle.
-* `Time to Climb`: Calculated time to climb for the given cruise altitude.
-* `Descent`: Speed and vertical speed in descent phase as given plus the calculated flight path angle.
-* `Descent Rule of Thumb`: Calculated rule of thumb for descent.
+* `Salita`: velocità e velocità verticale come indicato più l'angolo di percorso calcolato del volo.
+* `Tempo di salita`: tempo calcolato per salire per l'altitudine data di crociera.
+* `Discesa`: velocità e velocità verticale nella fase di discesa come indicato più l'angolo di percorso calcolato del volo.
+* "Discesa regola del pollice": regola empirica calcolata per la discesa.
 
-Note that altitude restrictions in procedures might affect the top of descent or top or climb distances.
+Si noti che le restrizioni di altitudine nelle procedure potrebbero influenzare il top of descend o il top of climb.
 
-#### Performance File Description {#aircraft-performance-description}
 
-This is a free plain text field for notes and links.
+#### Descrizione del file delle prestazioni {#aircraft-performance-description}
 
-Links are recognized and can be opened here in the report. Normal web links like `http://www.example.com` or `https://www.example.com` are recognized besides directory or file links like
-`file:///C:/Projekte/atools` on Windows or `file:///home/me/Aircraft_Notes.txt` on macOS or Linux.
+
+Questo è un campo di testo semplice gratuito per note e collegamenti.
+
+
+I collegamenti sono riconosciuti e possono essere aperti nel rapporto qui. Collegamenti web normali come `http://www.example.com` o `https://www.example.com`sono riconosciuti come directory vicine o collegamenti ai file come
+
+`file:///C:/Projekte/atools` su Windows o `file:///home/me/Aircraft_Notes.txt` su macOS o Linux.
 
 #### File {#aircraft-performance-file}
 
-Contains a link to the aircraft performance file. Opens the file or directory in the default file
-manager like Windows Explorer or macOS Finder.
+Contiene un collegamento al file delle prestazioni dell'aereo. Apre il file o la directory nel file predefinito
+gestore come Windows Explorer o macOS Finder.
 
-### Edit Aircraft Performance {#aircraft-performance-edit}
+### Modifica prestazioni aerei  {#aircraft-performance-edit}
 
-You can use the edit button ![Edit Aircraft Performance](../images/icons/aircraftperfedit.png "Edit
-Aircraft Performance as") on top of the tab or the menu item `Aircraft` -&gt; `Edit Aircraft
-Performance ...` to change the currently loaded performance data.
+Puoi usare il bottone modifica ![Modifica prestazioni aerei](../images/icons/aircraftperfedit.png "Modifica
+prestazioni aerei come")nella parte superiore della scheda o nella voce di menu `Aereo` -&gt; `Modifica prestazioni
+aereo ...` per cambiare i dati sulle prestazioni attualemnet caricate.
 
-See [Editing Aircraft Performance](AIRCRAFTPERFEDIT.md) for a description of the edit dialog.
+Vedi [modificando prestazioni aereo](AIRCRAFTPERFEDIT.md) per una descrizione della finestra di modifica.
 
-### Collect Performance for Flight {#aircraft-performance-collect}
+### Raccogli le prestazioni per il volo  {#aircraft-performance-collect}
 
-The performance data collection mode can be used for a basic performance profile which can be
-fine tuned manually. _Little Navmap_ will collect fuel flow and speed data and calculate average values for all flight phases.
+La modalità di raccolta dei dati sulle prestazioni può essere utilizzata per un profilo delle prestazioni di base che può essere
+messo a punto manualmente. _Little Navmap_ raccoglierà i dati di flusso e velocità del carburante e calcolerà i valori medi per tutte le fasi del volo.
 
-Wind does not affect the calculation since all speeds are based on true airspeed.
+Il vento non influisce sul calcolo poiché tutte le velocità si basano sulla velocità reale.
 
-A report of current average fuel and speed numbers is shown. You can save intermediate results at
-any time.
+Viene mostrato un rapporto dei valori medi attuali di carburante e velocità. È possibile salvare i risultati intermedi 
+in qualsiasi momento
 
-When collecting data the elevation profile will show 3 nm per 1000 ft climb and descent slopes. You
-have to estimate the needed top of descent yourself.
+Quando si raccolgono dati, il profilo altimetrico mostrerà 3 nm per 1000 piedi di pendenza in salita e in discesa.
+devi stimare tu stesso il top of descend necessaria.
 
-Follow the steps below to start the automatic performance collection mode.
+Seguire i passaggi seguenti per avviare la modalità di raccolta automatica delle prestazioni.
 
-1. Connect _Little Navmap_ to the simulator.
-1. Fuel up your aircraft at best guess for the trip.
-2. Place your aircraft on the parking spot at departure with engines shut down.
-1. Select `Aircraft` -&gt; `Collect Performance for Flight`. A dialog will appear giving quick help
-and the report will be replaced by one showing the recognized flight phases and other numbers.
-3. Do a typical flight at typical cruise altitude and typical distance for the chosen aircraft. A
-short hop at low altitude and low weight is not sufficient.
-4. The collection is completed at touchdown and _Little Navmap_ will switch to the default fuel
-report mode.
+1. Collegare _Little Navmap_ al simulatore.
+1. Rifornisci il tuo aereo nelle  migliori eventualità per il viaggio.
+2. Collocare l'aereo alla partenza al parcheggio con i motori spenti.
+1. Seleziona `Aereo` - & gt; `Raccogli le prestazioni per il volo`. Apparirà una finestra di dialogo che ti darà un rapido aiuto
+e il rapporto sarà sostituito da uno che mostra le fasi di volo riconosciute e altri valori.
+3. Esegui un volo classico alla quota di crociera classica e alla distanza classica per l'aeromobile scelto. Un
+il balzo corto a bassa quota e il peso ridotto non sono sufficienti.
+4. La raccolta viene completata al touchdown e _Little Navmap_ passa alla modalità carburante predefinito.
 
-Now edit the aircraft performance data \([Editing Aircraft Performance](AIRCRAFTPERFEDIT.md)\) and
-adjust the numbers to your liking.
 
-**Do not forget to add at least sufficient reserve fuel. Otherwise you will run out of fuel at destination if
-you rely on this plan.**
+Ora modifica i dati sulle prestazioni dell'aereo \ ([Modifica delle prestazioni dell'aeromobile] (AIRCRAFTPERFEDIT.md) \) e
+regola i numeri a tuo piacimento.
 
-![Collecting Aircraft Performance](../images/perf_collect.jpg "Collecting Aircraft Performance")
+** Non dimenticare di aggiungere anche carburante di riserva sufficiente. Altrimenti rimarrai senza carburante a destinazione se
+ti affidi a questo piano. **
 
-_**Picture above:** Report shown when collecting aircraft performance. The phases `Taxi and
-Takeoff` and `Climb` are already finished. Current phase is `Cruise`._
+![Raccolta delle prestazioni dell'aereo](../images/perf_collect.jpg "Raccolta delle prestazioni dell'aereo")
 
-You can move your airplane at cruise altitude, use warp tools to get quickly near top of descent
-or adjust fuel and time manually. This will not affect performance calculation since _Little
-Navmap_ reads the actual fuel flow from the simulator instead of using consumed fuel and time.
+_**Immagine sopra:** Rapporto mostrato durante la raccolta delle prestazioni dell'aereo. Le fasi `Taxi,
+Decollo` e `Salita` sono già finiti. La fase corrente è `Crociera`._
 
-In any case stay a few minutes at cruise altitude so that _Little Navmap_ can get numbers for this
-phase of flight.
+Puoi portare il tuo aereo in crociera, utilizzare gli strumenti di deviazione per avvicinarti rapidamente al top of descend
+o regolare manualmente carburante e tempo. Ciò non influirà sul calcolo delle prestazioni,giachè _Little
+Navmap_ legge il flusso di carburante effettivo dal simulatore invece di utilizzare carburante e tempo consumati.
+
+In ogni caso, rimani alcuni minuti a quota di crociera in modo che _Little Navmap_ possa ottenere valori per questa
+fase di volo.
