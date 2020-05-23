@@ -13,7 +13,7 @@ bug più oscuri.
 
 Grazie a Navigraph per avermi gentilmente permesso di includere un ciclo AIRAC gratuito nel download. Grazie per Richard Stefan per il suo
 
-grande supporto. 
+grande supporto.
 
 I cicli AIRAC attuali possono essere acquistati da  [Navigraph](http://www.navigraph.com).
 
@@ -48,6 +48,3 @@ Non dimentichiamoci di tutti i servizi che ci forniscono gratuitamente tutte le 
 Un grazie alla [GIScience / Geoinformatics Research Group](http://www.geog.uni-heidelberg.de/gis/index_en.html) Universitità di Heidelberg  per avermi dato il permesso di usare la loro mappa [OpenMapSurfer](http://korona.geog.uni-heidelberg.de).)
 
 E, ultimo ma non meno importante: se non ci fosse [OpenStreetMap](http://www.openstreetmap.org) e le sue migliaia di collaboratori nessuno di noi avrebbe alcuna mappa.
-
-
-
