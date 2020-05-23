@@ -1,82 +1,83 @@
-## Customizing General {#customize}
 
-_Little Navmap_ creates multiple configuration files in the directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel` when started. These allow extended customization of the program.
+## Personalizzazione generale {#customize}
 
-The files use the Windows-`INI` style that has groups in square brackets and `key=value` lines. See [here](https://en.wikipedia.org/wiki/INI_file) for more information about this type of configuration files.
+_Little Navmap_ crea più file di configurazione nella directory `C: \ Users \ YOURUSERNAME \ AppData \ Roaming \ ABarthel` all'avvio. Ciò consente una personalizzazione estesa del programma.
 
-Note that you have to restart _Little Navmap_ to see any changes.
+I file usano lo stile Windows-`INI` che ha gruppi tra parentesi quadre e righe `key = value`. Vedi [qui] (https://en.wikipedia.org/wiki/INI_file) per maggiori informazioni su questo tipo di file di configurazione.
 
-To undo all changes simply delete a file. It will be created again containing the default values when _Little Navmap_ is started.
+Si noti che è necessario riavviare _Little Navmap_ per vedere eventuali modifiche.
 
-Single lines can also be deleted and will be restored with the default value when _Little Navmap_ is started.
+Per annullare tutte le modifiche è sufficiente eliminare un file. Verrà nuovamente creato contenendo i valori predefiniti all'avvio di _Little Navmap_.
 
-Keys and values are case sensitive. Order in the files is not important if the keys remain in their respective sections. The program might reorder the keys when saving or updating the files.
+Le singole righe possono anche essere eliminate e verranno ripristinate con il valore predefinito all'avvio di _Little Navmap_.
 
-## GUI {#customize-gui}
+Le chiavi e i valori fanno distinzione tra maiuscole e minuscole. L'ordine nei file non è importante se le chiavi rimangono nelle rispettive sezioni. Il programma potrebbe riordinare i tasti durante il salvataggio o l'aggiornamento dei file.
 
-Only two user interface styles can be customized. These are `Fusion` and `Night` and can be found in the dialog [User Interface](OPTIONS.md#user-interface) tab of the options dialog. These two styles are available on all operating systems.
+## GUI {# ustom-gui}
 
-Two files are generated that allow the customization for all window, button and dialog colors. These are:
+È possibile personalizzare solo due stili di interfaccia utente. Questi sono `Fusion` e` Night` e si trovano nella finestra di dialogo [Interfaccia utente] (OPTIONS.md # interfaccia utente) della finestra di dialogo delle opzioni. Questi due stili sono disponibili su tutti i sistemi operativi.
 
-* `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini`
+Vengono generati due file che consentono la personalizzazione per tutti i colori di finestre, pulsanti e finestre di dialogo. Questi sono:
 
-* `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini`
+* `C: \ Users \ YOURUSERNAME \ AppData \ Roaming \ ABarthel \ little_navmap_fusionstyle.ini`
 
-The key names in these files are derived from the _Qt_ palette options. Each key consists of the group and role name separated by an underscore. See below for more information on the color formats used.
+* `C: \ Users \ YOURUSERNAME \ AppData \ Roaming \ ABarthel \ little_navmap_nightstyle.ini`
 
-See here for more information about [groups](http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) and [roles](http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum).
+I nomi delle chiavi in ​​questi file derivano dalle opzioni della tavolozza _Qt_. Ogni chiave è costituita dal nome del gruppo e del ruolo separati da un trattino basso. Vedi sotto per maggiori informazioni sui formati di colore usati.
+
+Vedi qui per maggiori informazioni su [gruppi] (http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum) e [ruoli] (http://doc.qt.io/qt-5.6 /qpalette.html#ColorRole-enum).
+
+## Visualizzazione mappa {#ustom-map-display}
+
+Il file
+`C: \ Users \ YOURUSERNAME \ AppData \ Roaming \ ABarthel \ little_navmap_mapstyle.ini` consente di personalizzare vari aspetti della visualizzazione della mappa ed è attualmente limitato a colori e penne. La maggior parte dei nomi chiave si spiega da sé. Vedi sotto per maggiori informazioni sui valori di colore.
+
+### Formato colore {# personalizza-formati-colore}
+
+Il colore può essere in uno di questi formati che sono comunemente usati nel web design:
+
+* `# RRGGBB` ciascuno di R, G, B e A è una singola cifra esadecimale. Ogni valore di colore varia da 00 - FF \ (decimale 0-255 \)
+* Le prime due cifre di `# AARRGGBB` contengono il valore alfa / trasparenza. "00" equivale a completamente trasparente e "FF" \ (decimale 255 \) a opaco.
+* Nome colore SVG
+
+Il nome del colore SVG è uno dei colori definiti nell'elenco di [nomi delle parole chiave del colore SVG] (https://www.w3.org/TR/SVG/types.html#ColorKeywords) fornito dal World Wide Web Consortium; per esempio, `steelblue` o` gainsboro`. Si noti che non è possibile immettere un valore del canale alfa se si utilizza un nome di colore.
+
+È possibile utilizzare il [selettore colore w3schools] (https://www.w3schools.com/colors/colors_picker.asp) per ottenere i valori esadecimali per un colore.
+
+** Esempi: **
+
+`Active_Highlight = # 308cc6`
+
+`AlertFillColor = darkred`
+
+`ApproachFillColor = # 3060808a`
+
+### Formato penna {# personalizza-formati-penna}
+
+Una penna contiene i seguenti valori in un elenco separato da virgole:
+
+* Colore come descritto sopra
+* Larghezza della penna come valore mobile misurato in pixel. Devi usare `.` come separatore decimale, indipendentemente da ciò che definisce la tua località.
+* Stile penna. Uno dei seguenti valori: `Solido`,` Trattino`, `punto`,` tratto punto` e `Tratto punto punto`.
+
+** Esempi: **
+
+`RestrictedPen = # fd8c00, 2, Tratto punto`
+
+`ModecPen = # 509090, 2, solido`
+
+`NationalParkPen = # 509090, 2.1, Solido
 
 
-## Map Display {#customize-map-display}
+## Icone del aereo utente, AI e multiplayer {# personalizza-aerei-icone}
 
-The file
-`C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini` allows to customize various aspects of the map display and is currently limited to colors and pens. Most key names are self explaining. See below for more information about color values.
+Tutte le icone per utente, velivolo AI / multiplayer, elicotteri e navi sono memorizzate nel programma ma possono essere sovraccaricate dall'utente.
 
-### Color Format {#customize-formats-color}
+Il formato è limitato a SVG \ ([Scalable Vector Graphics \ (SVG \) Tiny 1.2 Specification] (https://www.w3.org/TR/SVGMobile12) \) dove gli effetti grafici avanzati come le trame non funzioneranno.
 
-Color can be in one of these formats which are commonly used in web design:
+Si noti che le icone verranno utilizzate solo sulla mappa e non nelle finestre informative.
 
-* `#RRGGBB` each of R, G, B and A is a single hex digit. Each color value ranges from 00 - FF \(decimal 0-255\)
-* `#AARRGGBB` first two digits contain the alpha/transparency value. `00` equals to fully tranparent and `FF` \(decimal 255\) to opaque.
-* SVG color name
-
-SVG color name is one of the colors defined in the list of [SVG color keyword names](https://www.w3.org/TR/SVG/types.html#ColorKeywords) provided by the World Wide Web Consortium; for example, `steelblue` or `gainsboro`. Note that you cannot enter an alpha channel value if you use a color name.
-
-You can use the [w3schools color picker](https://www.w3schools.com/colors/colors_picker.asp) to get the hex values for a color.
-
-**Examples:**
-
-`Active_Highlight=#308cc6`
-
-`AlertFillColor=darkred`
-
-`ApproachFillColor=#3060808a`
-
-### Pen Format {#customize-formats-pen}
-
-A pen contains the following values in a comma separated list:
-
-* Color as described above
-* Pen width as a floating point value measured in pixels. You have to use `.` as decimal separator no matter what your locale defines.
-* Pen style. One of the following values: `Solid`, `Dash`, `Dot`, `DashDot` and `DashDotDot`.
-
-**Examples:**
-
-`RestrictedPen=#fd8c00, 2, DashDotDot`
-
-`ModecPen=#509090, 2, Solid`
-
-`NationalParkPen=#509090, 2.1, Solid`
-
-## User, AI and Multiplayer Aircraft Icons {#customize-aircraft-icons}
-
-All icons for user, AI/multiplayer aircraft, helicopters and ships are stored in the program but can be overloaded by the user.
-
-The format is limited to SVG \([Scalable Vector Graphics \(SVG\) Tiny 1.2 Specification](https://www.w3.org/TR/SVGMobile12)\) where advanced graphics effects like textures will not work.
-
-Note that the icons will only be used on the map and not in the information windows.
-
-The icons are:
+Le icone sono:
 
 `aircraft_boat_ground_user.svg`
 
@@ -110,9 +111,10 @@ The icons are:
 
 `aircraft_small.svg`
 
-The suffixes are chosen by vehicle type, status \(ground or airborne\) and user or AI/multiplayer. The icon is for airborne vehicles if `ground` is missing and for AI/multiplayer vehicles if `user` is missing. For historical reasons all icons are prefixed with `aircraft`.
 
-To change an icon download it from the Github source repository [Icon Resources](https://github.com/albar965/littlenavmap/tree/release/1.4/resources/icons) and save it into the settings directory `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`.
+I suffissi sono scelti per tipo di veicolo, stato \ (di terra o di bordo \) e utente o AI / multiplayer. L'icona è per i veicoli decollati se manca "terra" e per i veicoli AI / multiplayer se manca "utente". Per motivi storici, tutte le icone sono precedute da "aerei".
 
-You can use the free vector drawing program [Inkscape](https://inkscape.org) to edit the icons.
-Restart *Little Navmap* to see the changes.
+Per cambiare un'icona scaricala dal repository dei sorgenti di Github [Icon Resources] (https://github.com/albar965/littlenavmap/tree/release/1.4/resources/icons) e salvalo nella directory delle impostazioni `C: \ Users \ VOSTRONOMEUTENTE \ AppData \ Roaming \ ABarthel`.
+
+È possibile utilizzare il programma di disegno vettoriale gratuito [Inkscape] (https://inkscape.org) per modificare le icone.
+Riavvia * Little Navmap * per vedere le modifiche.

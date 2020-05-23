@@ -1,9 +1,12 @@
-## Quick Overview {#quick-overview}
+## Panoramica veloce{#quick-overview}
 
 ![Little Navmap Overview](../images/overview.jpg "Little Navmap Overview")
 
-_**Picture above:** A quick overview of Little Navmap showing the most important functions._
+_**Immagine sopra:** Una veloce panoramica di Little Navmap che mostra le più importanti funzioni._
 
 ![Little Navmap Context Menus](../images/contextmenus.jpg "Little Navmap Context Menus")
 
-_**Picture above:** The three most important context menus which are also needed to build a flight plan._
+_**Immagine sopra:** I tre menu contestuali più importanti che sono anche necessari per costruire un piano di volo._
+
+
+

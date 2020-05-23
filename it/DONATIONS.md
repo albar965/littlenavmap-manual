@@ -1,6 +1,6 @@
-## Donations
+## Donazione
 
-**Donate to show your appreciation if you like my programs.**
+**Dona per mostrare il tuo apprezzamento se ti piace il mio programma.**
 
 **Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen meine Programme gefallen.**
 

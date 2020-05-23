@@ -1,158 +1,157 @@
-## Procedures {#procedures}
 
-### General {#procedures-general}
+## Procedure {#procedures}
 
-Departure and arrival procedures will be used when flying an airliner but also smaller aircraft have to use at least an approach procedure at their destination when flying IFR.
-Flight simulator stock data provides only approaches and transitions. SIDs and STARs are not available. These can be added by navdata updates.
+### Generale {# procedure-generale}
 
-An airline flight containing all variations can use the following procedures or segments:
+Durante il volo di un aereo di linea verranno utilizzate le procedure di partenza e di arrivo, ma anche i velivoli più piccoli devono utilizzare almeno una procedura di avvicinamento a destinazione durante il volo IFR.
+I dati forniti del simulatore di volo danno solo avvicinamenti e transizioni. SID e STAR non sono disponibili. Questi possono essere aggiunti dagli aggiornamenti dei dati di navigazione.
 
-1. Departure airport
+Un volo di linea aerea contenente tutte le varianti può utilizzare le seguenti procedure o segmenti:
+
+1. Aeroporto di partenza
 2. SID
-3. SID Transition
-4. En route airway system
-5. STAR transition
+3. Transizione SID
+4. Sistema di vie aeree in rotta
+5. Transizione STAR
 6. STAR
-7. Transition to approach
-8. Approach
-9. Destination
+7. Transizione all'avvicinamento
+8. Avvicinamento
+9. Destinazione
 
-A small aircraft IFR flight can use the following procedures or segments:
+Un volo IFR per piccoli aeromobili può utilizzare le seguenti procedure o segmenti:
 
-1. Departure airport
-2. En route airway system
-3. Transition to approach
-4. Approach
-5. Destination
+1. Aeroporto di partenza
+2. Sistema di vie aeree in rotta
+3. Transizione all'avvicinamento
+4. Avvicinamento
+5. Destinazione
 
-Note that transitions make only sense together with an approach, a SID or a STAR which will guide you to or from the runway. You can select a transition only together with the respective procedure \(although the SID may be empty and consist only of a transition\). If you delete a procedure from the flight plan its transition will be deleted too.
+Nota che le transizioni hanno senso solo insieme a un avvicinamento, una SID o una STAR che ti guideranno da o verso la pista. È possibile selezionare una transizione solo insieme alla rispettiva procedura \ (sebbene la SID possa essere vuota e costituita solo da una transizione \). Se elimini una procedura dal piano di volo, anche la sua transizione verrà eliminata.
 
-Procedure information is saved together with a flight plan as an annotation in the PLN file and will be restored by _Little Navmap_ when loading the flight plan.
-Procedure waypoints are not saved in the flight plan since the PLN format does not support all the different leg types and the flight simulator would not be able to display it correctly. Select the approach in your GPS or FMC if you need it there.
+Le informazioni sulla procedura vengono salvate insieme a un piano di volo come annotazione nel file PLN e verranno ripristinate da _Little Navmap_ durante il caricamento del piano di volo.
 
-### Inserting a Procedure into a Flight Plan {#procedures-insert}
+I waypoint della procedura non vengono salvati nel piano di volo poiché il formato PLN non supporta tutti i diversi tipi di tratta e il simulatore di volo non sarebbe in grado di visualizzarlo correttamente. Seleziona l'avvicinamento nel tuo GPS o FMC se ti serve là.
 
-Select `Show Procedures` when you right click on an airport in the map, the airport search table or the flight plan table. This will show the tab `Procedures` in the dock window `Search`.
+### Inserimento di una procedura in un piano di volo {# procedure-inserire}
 
-Inserting a procedure into a flight plan can be done by simply using the context menu in the procedure tree view.
+Seleziona "Mostra procedure" quando fai clic con il pulsante destro del mouse su un aeroporto nella mappa, nella tabella di ricerca dell'aeroporto o nella tabella del piano di volo. Questo mostrerà la scheda "Procedure" nella finestra ancorata "Cerca".
 
-See [Procedure Search](SEARCHPROCS.md) for more information.
+L'inserimento di una procedura in un piano di volo può essere effettuato semplicemente utilizzando il menu di scelta rapida nella vista ad albero della procedura.
 
-### Deleting a Procedure from a Flight Plan {#procedures-delete}
+Vedere [Ricerca procedure] (SEARCHPROCS.md) per ulteriori informazioni.
 
-Deleting a single leg that is part of a procedure will remove the whole procedure and its transition. Deleting a leg that is part of a transition will remove only the transition.
+### Eliminazione di una procedura da un piano di volo {# procedure-delete}
 
-![Delete Procedure](../images/deleteprocedure.jpg "Delete Procedure")
+L'eliminazione di una singola tratta che fa parte di una procedura rimuoverà l'intera procedura e la sua transizione. L'eliminazione di una tratta che fa parte di una transizione rimuoverà solo la transizione.
 
-_**Picture above:** About to remove the transition _`MUN`_ of the approach _`RNAV BEGEN`_ from the flight plan._
+! [Elimina procedura] (../ images / deleteprocedure.jpg "Elimina procedura")
 
-### Limitations when editing a flight plan with procedures {#procedures-limitations}
+_ ** Immagine sopra: ** In procinto di rimuovere la transizione _`MUN`_ dall'avvicinamento _`RNAV BEGEN`_ dal piano di volo._
 
-* Deleting a leg of a procedure will remove the whole procedure from the flight plan.
-* You cannot move a procedure leg up or down neither can you move or add a flight plan leg into a procedure.
-* You cannot add waypoints in between procedures \(e.g. a STAR and an approach\). Waypoints can only be added to the route between departure and arrival procedures.
-* You cannot add waypoints between arrival procedure and destination airport.
-* You cannot add waypoints between departure airport and a SID procedure.
-* If you delete or replace the destination airport all approach and arrival procedures are removed too.
-* If you delete or replace the departure airport all SID procedures are removed too.
+### Limitazioni durante la modifica di un piano di volo con procedure {# procedure-limitazioni}
 
-### Flying Procedures {#procedures-flying}
+* L'eliminazione di una parte di una procedura rimuoverà l'intera procedura dal piano di volo.
+* Non è possibile spostare una tratta della procedura su o giù, né è possibile spostare o aggiungere una tratta del piano di volo in una procedura.
+* Non è possibile aggiungere waypoint tra le procedure \ (ad es. Una STAR e un avvicinamento \). I waypoint possono essere aggiunti al percorso solo tra le procedure di partenza e di arrivo.
+* Non è possibile aggiungere waypoint tra la procedura di arrivo e l'aeroporto di destinazione.
+* Non è possibile aggiungere waypoint tra l'aeroporto di partenza e una procedura SID.
+* Se si elimina o si sostituisce l'aeroporto di destinazione, vengono rimosse anche tutte le procedure di avvicinamento e di arrivo.
+* Se elimini o sostituisci l'aeroporto di partenza vengono rimosse anche tutte le procedure SID.
 
-Procedure legs are pre-calculated except holds and procedure turns. This means you can fly them mostly as they are drawn on the map. If in doubt about how to fly a leg \(e.g. if too many lines overlap\) look at the procedure table in the flight plan window.
+### Procedure di volo {# procedure-volo}
 
-#### Holds {#procedures-holds}
+Le tratte della procedura sono pre-calcolate tranne i circuiti di attesa e le virate. Questo significa che puoi farli volare per lo più mentre sono disegnati sulla mappa. In caso di dubbi su come far volare una tratta \ (ad es. Se troppe linee si sovrappongono \), consultare la tabella delle procedure nella finestra del piano di volo.
 
-No entry or exit procedure is shown. You have to find a proper entry procedure yourself. Holds have a straight leg flying time in minutes or a distance.
+#### Circuiti di attesa {# procedure-hold}
 
-If time is given you fly the hold as usual:
+Non viene mostrata alcuna procedura di entrata o uscita. Devi trovare tu stesso una corretta procedura di entrata. I circuiti di attesa hanno un tempo di volo della tappa dritta in minuti o una distanza.
+Se ti viene concesso il tempo, voli il circuito di attesa come al  solito:
 
-1. Enter at the fix using a proper entry procedure
-2. Do a standard turn
-3. Fly the straight leg for the given time \(often one minute\)
-4. Do standard turn
-5. Fly to fix
-6. Exit hold when done or instructed by ATC
+1. Entra nel fix usando una procedura di entrata approppriata
+2. Fai una virata standard
+3. Fai volare la tratta dritta per il tempo specificato\ (spesso un minuto \)
+4. Eseguire la virata standard
+5. Vola verso il fix
+6. Esci dall'attesa quando hai fatto o richiesto da ATC
 
-Do not follow the lines exactly, they are just an indicator for what to fly. An exception are holds where a distance is given for the straight leg. The hold size will match the distance in this case.
+Non seguire esattamente le linee, sono solo un'indicazione  di come volare. Un'eccezione è valida quando viene data una distanza per la tratta dritta. La dimensione del circuito di attesa corrisponderà in questo caso alla distanza.
 
-![Hold](../images/hold.jpg "Hold")
+! [Circuito di attesa] (../ images / hold.jpg "Hold")
 
-_**Picture above:** A hold with 2 nautical miles straight segment length. Enter and exit at _`ZUNAD`_ and fly at or above 2600 feet. Course is 61° magnetic degrees._
+_ ** Immagine in alto: ** Un circuito di attesa con 2 miglia nautiche di lunghezza in linea retta. Entra ed esci a _`ZUNAD`_ e vola a 2600 piedi o oltre. Il course è di 61 ° gradi magnetici.
 
-#### Exiting a Hold {#procedures-flying-exit-holds}
+#### Uscita da un circuito d'attesa {# procedure-flying-exit-hold}
 
-_Little Navmap_ will detect when a hold is exited and advance the active leg to the next one if one of the two conditions is met:
+_Little Navmap_ rileverà quando si esce da un  circuito di attesa e farà avanzare la tratta in corso a quella successiva se si verifica una delle due condizioni:
 
-1. **If the next leg continues after or at the hold fix:** When approaching the hold fix after one circuit continue straight on. The next leg will be activated after half a nautical mile up to one nautical mile.
+1. ** Se la tratta successiva continua dopo o sul fix del circuito di attesa: ** Quando ci si avvicina al fi x del circuito di attesa dopo un tracciato, proseguire dritto. La tappa successiva verrà attivata dopo mezzo miglio nautico fino a un miglio nautico.
 
-2. **If the next leg starts before the hold fix:** Exit the hold at its fix. Exit right turn holds to the left and vice versa \(i.e. turn outside the hold\). Proceed to the fix of the next leg which will be activated.
+2. ** Se la tratta successiva inizia prima del fix del circuito di attesa: ** Esci dal circuito di attesa al suo fix. Esci svoltando a destra tenendo il circuito di attesa a sinistra e viceversa \ (ovvero vira fuori dal circuito di attesa \). Procedere al fix della tratta successiva che verrà attivato.
 
-You can activate the next leg manually if you do not exit the hold at its fix. Right click in the flight plan table on the next leg and select `Activate Flight Plan Leg`.
+È possibile attivare manualmente la tratta successiva se non si esce dal fix del circuito di attesa. Fare clic con il tasto destro nella tabella del piano di volo sulla tratta successiva e selezionare "Attiva tratta del piano di volo".
 
-#### Procedure turns {#procedures-turns}
+#### procedure di virata {# procedure-giri}
 
-The flight simulator data moves the turn point of a procedure turn 10 nautical miles out from the fix which is usually too far away.
+I dati del simulatore di volo spostano il punto di virata di una procedura di 10 miglia nautiche fuori dal fix che di solito è troppo lontano.
 
-Fly the procedure turn as usual: Minimum one minute from the fix. Use more if you need space to catch the next fix after the course reversal. Then turn using an teardrop or a standard 45/180 degree turn. Again: Follow the procedures and not the lines.
+Vola la procedura come al solito: minimo un minuto dal fix. Impiega di più se hai bisogno di spazio per catturare il prossimo fix dopo l'inversione di rotta. Quindi girare usando una goccia o una rotazione standard di 45/180 gradi. Nuovamente: segui le procedure e non le linee.
 
-![Procedure Turn](../images/procedureturn.jpg "Procedure Turn")
+! [Procedura di virata] (../ images / procedureturn.jpg "Procedura Turn")
 
-_**Picture above:** A procedure turn. Fly at least one minute outbound 61° from _`ABERN`_, turn left to 16°, fly one minute, turn 180° and fly to _`LAMMB`_, then 242° to _`ABERN`_._
+_ ** Immagine sopra: ** Una procedura di virata. Vola almeno un minuto 61° in uscita da _`ABERN`_, gira a sinistra a 16 °, vola un minuto, gira 180 ° e vola a _`LAMMB`_, quindi 242 ° a _`ABERN` _._
 
-#### Distances {#procedures-distances}
+#### Distanze {# procedure-distanze}
 
-Holds and procedure turns do not count in flying distance while all others legs do. This means the total flight plan distance as well as the top of descent point will change when selecting an approach or a transition.
+I circuiti di attesa e le procedure di virata non contano nella distanza di volo mentre tutte le altre tratte lo fanno. Ciò significa che la distanza totale del piano di volo e il top fo descend  cambieranno quando si seleziona un avvicinamento o una transizione.
 
-**The top of descent point calculation does not consider altitude restrictions in procedures.**
+** Il calcolo del top of descend non considera le restrizioni di altitudine nelle procedure. **
 
-### Special Leg Types {#procedures-leg-types}
+### Tipi di tratte speciali {# procedure-leg-types}
 
-All procedure leg types \(`Track to Fix`, `Initial Fix` and more\) that are shown in *Little Navmap* are based on the ARINC 424 path terminator concept. A deeper knowledge of these leg types is not important for the simulator pilot with the exception of two types that are added by *Little Navmap*.
+Tutti i tipi di tratte delle procedura \ (`Track to Fix`,` Initial Fix` e altro \) che sono mostrati in * Little Navmap * sono basati sul concetto di di percorso terminato  ARINC 424. Una conoscenza più approfondita di questi tipi di tratte non è importante per il simulpilota, ad eccezione di due tipi aggiunti da * Little Navmap *.
 
-* `Start of Procedure`: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track to a fix. It indicates the first position of the procedure and is not related to a fix.
-* `Proceed to Runway` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the airport center if the runway could not be found. The altitude restriction indicates the elevation of the runway.
-* `Proceed to Runway` in an approach: This leg is added to an approach procedure to show the course line from a missed approach point \(MAP\) to the runway end. It is added if an approach does not end with a runway fix and has an altitude restriction 50 feet above the threshold.
+* `Inizio della procedura`: questa sezione viene aggiunta se una procedura non inizia con un fix iniziale ma piuttosto con una rotta, con una prua  o traccia verso un fix. Indica la prima posizione della procedura e non è correlata a un fix.
+* `Procedi verso la pista` in un SID: la prima tratta di un SID indica la posizione iniziale sulla pista. Il programma potrebbe tornare al centro dell'aeroporto se non potesse essere trovata la pista. Il limite di altitudine indica l'elevazione della pista.
+* `Procedi verso la pista` in un avvicinamento: questa tratta viene aggiunta a una procedura di avvicinamento per mostrare la linea di rotta da un punto di mancato avvicinamento\ (MAP \) fino alla fine della pista. Viene aggiunto se un avvicinamento non termina con un fix della pista e ha un limite di altitudine di 50 piedi sopra la soglia.
 
-### Fix Types in a Procedure {#procedures-fix-types}
+### Tipi di fix in una procedura {# procedure-fix-types}
 
-* **Waypoints:** Terminal waypoints or radio navaids. Some are marked as `flyover` in the approach table.
-* **Radial and distance:** Example: `WIK/7nm/291°M`. A fix defined by a course or heading and distance to a navaid.
-* **Distance to DME:** Example: `WIK/9nm`. This fix is defined by a heading or track which is terminated by reaching a DME distance.
-* `Intercept Course to Fix`: Intercept a course to the next fix at an angle of about 45 degrees.
-* `Intercept Leg`: Intercept the next approach leg at a course of about 45 degrees.
-* `Altitude`: A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance depends on the aircraft 2 nautical miles length are used for this leg. You can ignore the line and proceed to the next leg once the altitude criteria is satisfied.
-* `Manual`: Fly a heading, track or a hold until manually terminated by ATC.
+* ** Waypoints: **i Waypoints finali o radio aiuti. Alcuni sono contrassegnati come "sorvolo" nella tabella di avvicinamento.
+* ** Radiale e distanza: ** Esempio: `WIK / 7nm / 291 ° M`. Un fix definito da una rotta o da una prua e da una distanza verso un radioaiuto.
+* ** Distanza da DME: ** Esempio: `WIK / 9nm`. Questa correzione è definita da un'intestazione o traccia che termina raggiungendo una distanza DME.
+* `Intercetta  una rotta verso un fix`: intercetta una rotta al fix successivo con un angolo di circa 45 gradi.
+* `tratta di intercettazione`: intercetta la prossima tratta di avvicinamento a una rotta di circa 45 gradi.
+* `Altitudine`: una tratta o circuito di attesa che termina raggiungendo una certa altitudine e viene utilizzata principalmente per i missed approach. Poiché la distanza dipende dall'aereo, per questa tratta vengono utilizzate 2 miglia nautiche. È possibile ignorare la linea e passare alla tratta successiva una volta soddisfatti i criteri di altitudine.
+* `Manuale`: vola una prua, una traccia o un circuito di attesa fino a quando non viene terminato manualmente dall' ATC.
 
-Runway fixes are prefixed with `RW`. They usually have an altitude restriction a few feet above the runway. Higher altitude restrictions \(i.e. > 500 ft\) indicate a circling approach.
+I fix della pista sono precedute da `RW`. Usualmente hanno un limite di altitudine a pochi metri sopra la pista. Restrizioni di altitudine più elevate \ (ovvero> 500 piedi \) indicano un avvicinamento in cerchio.
 
-### Altitude and Speed Restrictions {#procedures-restrictions}
+### Limitazioni di altitudine e velocità {# procedure-restrizioni}
 
-Restrictions are shown on the map and in the flight plan table.
+Le restrizioni sono mostrate sulla mappa e nella tabella del piano di volo.
 
-* **Number only:** Fly at altitude or speed. Map examples: `5400ft` or `210kts`.
-* **Prefix** `A`: Fly at or above altitude or speed. Map example: `A1800ft`  or `A200kts`.
-* **Prefix** `B`: Fly at or below altitude or speed. Map example: `B10000ft`  or `B240kts`.
-* **Range:** Fly at or above altitude one and at or below altitude two. Map example: `A8000B10000ft`. Same for speed.
+* ** Solo numero: ** Vola ad altitudine o velocità. Esempi di mappe: `5400ft` o` 210kts`.
+* ** Prefisso ** `A`: vola a un'altitudine o una velocità superiore. Esempio di mappa: `A1800ft` o` A200kts`.
+* ** Prefisso ** `B`: vola a un'altitudine o una velocità inferiore. Esempio di mappa: `B10000ft` o` B240kts`.
+* ** Intervallo: ** Vola a un'altitudine pari o superiore a uno e a un'altitudine pari o inferiore a due. Esempio di mappa: `A8000 B10000ft`. Lo stesso vale per la velocità.
 
-### Related Navaids {#procedures-related}
+### Radioaiuti correlati {# procedure-related}
 
-Many fixes have a related or recommended navaid. This can be a VOR, NDB, ILS or a waypoint. The related navaid comes with radial and distance values that can be used to locate waypoints when flying without GPS or simply for cross checking the position.
+Molte correzioni hanno un radioaiuto correlato o consigliato. Può essere un VOR, NDB, ILS o un waypoint. Il radioaiuto correlato viene fornito con valori radiale e di distanza che possono essere utilizzati per individuare i waypoint quando si vola senza GPS o semplicemente per il controllo incrociato della posizione.
 
-### Missed Approaches {#procedures-missed}
+### Avvicinamenti mancati {# procedure-mancati}
 
-Missed approach legs are activated once the simulator aircraft passes the last point of an approach. The display of remaining flight plan distance will switch to display of remaining distance to last missed approach leg.
+Le tratte di avvicinamento perse vengono attivate quando l'aereo del simulatore supera l'ultimo punto di un avvicinamento. La visualizzazione della distanza rimanente del piano di volo passerà alla visualizzazione della distanza rimanente all'ultima tratta mancante.
 
-**No missed approach legs are activated if missed approaches are not shown.**
+** Se non vengono mostrati gli avvicinamenti persi, non vengono attivate le tratte di mancato avvicinamento. **
 
-### Leg Highlights on the Map {#procedures-highlights}
+### Punti salienti della tratta sulla mappa {# procedure-highlights}
+Verranno evidenziati fino a tre punti quando si fa clic su una tratta della procedura nella struttura nella finestra di ricerca:
 
-Up to three points will be highlighted when clicking on a procedure leg in the tree in the search window:
+* Un piccolo cerchio blu mostra l'inizio della tratta.
+* L'inizio della tratta è mostrato da un grande cerchio blu.
+* Un cerchio sottile mostra la posizione del fix consigliato o correlato, se disponibile.
 
-* A small blue circle shows the beginning of the leg.
-* The beginning of the leg is shown by a large blue circle.
-* A thin circle shows the location of the recommended or related fix if available.
+### Dati non validi
 
-### Invalid Data
-
-A leg entry will drawn red if a navaid was not resolved during the scenery database loading process. This happens only when the source data is not valid or incomplete. The resulting procedure is not usable in this case and a warning dialog will be shown if essential navaids are missing.
-
+Una voce della tratta verrà disegnata in rosso se un radioaiuto non è stato determinato durante il processo di caricamento del database degli scenari. Ciò accade solo quando i dati di origine non sono validi o incompleti. La procedura che risulta non è utilizzabile in questo caso e verrà mostrata una finestra di avviso se mancano i radioaiuti essenziali.

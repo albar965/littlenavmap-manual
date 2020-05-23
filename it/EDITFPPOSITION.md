@@ -1,22 +1,21 @@
-## Edit Flight Plan Position {#edit-flightplan-position}
+## Modifica posizione piano di volo {# edit-flightplan-position}
 
-This dialog allows to edit a user-defined flight plan position that was added with ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") [Add Position to Flight Plan](MAPDISPLAY.md#add-position-to-flight-plan) or ![Append Position to Flight Plan](../images/icons/routeadd.png "Append Position to Flight Plan") [Append Position to Flight Plan](MAPDISPLAY.md#append-position-to-flight-plan).
+Questa finestra di dialogo consente di modificare una posizione del piano di volo definita dall'utente che è stata aggiunta con! [Aggiungi posizione al piano di volo] (../ images / icons / routeadd.png "Aggiungi posizione al piano di volo") [Aggiungi posizione al piano di volo] (MAPDISPLAY.md # aggiungi posizione al piano di volo) o! [Aggiungi posizione al piano di volo] (../ images / icons / routeadd.png "Aggiungi posizione al piano di volo") [Aggiungi posizione al piano di volo] (MAPDISPLAY.md # append-posizione-a-volo-plan).
 
-### Name
+### Nome
 
-You can enter any string but all invalid characters will be removed when saving as a FSX/P3D PLN file. Other file formats have more limitations.
+È possibile inserire qualsiasi stringa ma tutti i caratteri non validi verranno rimossi durante il salvataggio come file PLN FSX / P3D. Altri formati di file hanno più limitazioni.
 
-Allowed are upper and lower case letters, digits, underscore `_` and space. All other characters are removed when the flight plan is saved and long names are truncated to 10 characters.
+Sono consentite lettere maiuscole e minuscole, cifre, trattino basso `_` e spazio. Tutti gli altri caratteri vengono rimossi quando il piano di volo viene salvato e i nomi lunghi vengono troncati a 10 caratteri.
 
-### Coordinates
+### Coordinate
 
-You can also edit the coordinates directly in this dialog besides using the drag and drop [Map Flight Plan Editing](MAPFPEDIT.md). This can be useful if you'd like to add waypoints with well known coordinates like visual reporting points.
+Puoi anche modificare le coordinate direttamente in questa finestra di dialogo oltre a utilizzare trascina e rilascia [Modifica piano di volo mappa] (MAPFPEDIT.md). Questo può essere utile se desideri aggiungere waypoint con coordinate ben note come punti di segnalazione visiva.
 
-The tooltip of the coordinate input field shows the available formats.
+La descrizione comandi del campo di input delle coordinate mostra i formati disponibili.
 
-See [Coordinate Formats](COORDINATES.md) for more information.
+Vedi [formati delle Coordinate] (COORDINATES.md) per maggiori informazioni.
 
-![Edit Flight Plan Position](../images/edit_flightplan_waypoint.jpg "Edit Flight Plan Position")
+! [Modifica posizione piano di volo] (../ images / edit_flightplan_waypoint.jpg "Modifica posizione piano di volo")
 
-_**Picture above:** Editing a user-defined flight plan position._
-
+_ ** Immagine sopra: ** Modifica di una posizione del piano di volo definita dall'utente ._

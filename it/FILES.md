@@ -1,67 +1,68 @@
 ## Files {#files}
 
-### Logs
+### Registri
 
-Log files of _Little Navmap_ for are stored in the directories:
+I file di registro di _Little Navmap_ sono memorizzati nelle directory:
 
-* Windows: `C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`
-* Linux: `/tmp/abarthel-little_navmap.log`
-* macOS: `/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log`
+* Windows: `C: \ Users \ YOURUSERNAME \ AppData \ Local \ Temp \ abarthel-little_navmap.log`
+* Linux: `/ tmp / abarthel-little_navmap.log`
+* macOS: `/ var / cartelle / RANDOMIZED_DIRECTORY_NAME / abarthel-little_navmap.log`
 
-The program keeps three log files and rotates these on each startup. So you may find up to three logs:
+Il programma mantiene tre file di registro e li ruota ad ogni avvio. Quindi potresti trovare fino a tre registri:
 
-`abarthel-little_navmap.log`, `abarthel-little_navmap.log.1` and `abarthel-little_navmap.log.2`.
+`abarthel-little_navmap.log`,` abarthel-little_navmap.log.1` e `abarthel-little_navmap.log.2`.
 
-Make sure to send the correct log file after a crash. Do not restart the program if you like to report and since it will rotate the log files. If unsure send all copies in a Zip-file.
+Assicurarsi di inviare il file di registro corretto dopo un arresto anomalo.Se si desidera segnalare non riavviare il programma  poiché ruoterà il file di registro. In caso di dubbi, inviare tutte le copie in un file zip.
 
-### Configuration
+### Configurazione
 
-All configuration files for my programs are stored in the directories:
+Tutti i file di configurazione per i miei programmi sono archiviati nelle directory:
 
-* Windows: `C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`
-* Linux and macOS: `$HOME/.config/ABarthel`
+* Windows: `C: \ Users \ YOURUSERNAME \ AppData \ Roaming \ ABarthel`
+* Linux e macOS: `$ HOME / .config / ABarthel`
 
-* `little_navmap.ini`: INI style configuration file. Text file.
-* `little_navmap.history`: The map position history. Binary file.
-* `little_navmap.track`: The user aircraft track. Binary file.
 
-Three more configuration files are created for customization of colors and styles:
+* `little_navmap.ini`: file di configurazione modello INI. File di testo.
+* `little_navmap.history`: la cronologia delle posizioni della mappa. File binario.
+* `little_navmap.track`: la traccia dell'aereo dell'utente. File binario.
 
-* `little_navmap_fusionstyle.ini`: INI style configuration file for customizing the GUI colors of the style `Fusion`.
-* `little_navmap_nightstyle.ini`: INI style configuration file for customizing the GUI colors of the style `Night`.
-* `little_navmap_mapstyle.ini`: INI style configuration file. Text file. Used for customization of the map display.
+Vengono creati altri tre file di configurazione per la personalizzazione di colori e stili:
 
-See [Customization](CUSTOMIZE.md) for more information.
+* `little_navmap_fusionstyle.ini`: file di configurazione modello INI per personalizzare i colori della GUI dello stile` Fusion`.
+* `little_navmap_nightstyle.ini`: file di configurazione modello INI per personalizzare i colori della GUI dello stile` Night`.
+* `little_navmap_mapstyle.ini`: file di configurazione modello INI. File di testo. Utilizzato per la personalizzazione della visualizzazione della mappa.
 
-The disk cache that is used to store all the downloaded online map tile images can be found here:
+Vedere [Personalizzazione] (CUSTOMIZE.md) per ulteriori informazioni.
 
-* Windows `C:\Users\YOURUSERNAME\AppData\Local\.marble\data`
-* Linux and macOS: `$HOME/.local/share/marble`
+La cache del disco utilizzata per archiviare tutte le immagini scaricate del riquadro della mappa online è disponibile qui:
 
-The scenery library databases are stored in the directory:
+* Windows `C: \ Users \ YOURUSERNAME \ AppData \ Local \ .marble \ data`
+* Linux e macOS: `$ HOME / .local / share / marble`
 
-`...\ABarthel\little_navmap_db`
+I database delle librerie di scenari sono memorizzati nella directory:
 
-There can be up to six files depending which simulators you have installed and which scenery libraries you've loaded.
+`... \ ABarthel \ little_navmap_db`
 
-All these databases are [SQLite](http://sqlite.org) files which can be viewed with e.g. [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases) if you're interested in relational databases.
+Possono esserci fino a sei file a seconda dei simulatori installati e delle librerie di scenari caricate.
 
-The files are:
+Tutti questi database sono file [SQLite] (http://sqlite.org) che possono essere visualizzati ad es. [DB Browser per SQLite] (https://github.com/sqlitebrowser/sqlitebrowser/releases) se sei interessato ai database relazionali.
 
-* `little_navmap_.sqlite`: An empty dummy database.
+I file sono:
+
+* `little_navmap_.sqlite`: un database fittizio vuoto.
 * `little_navmap_fsx.sqlite`: Flight Simulator X
 * `little_navmap_fsxse.sqlite`: Flight Simulator - Steam Edition
 * `little_navmap_p3dv2.sqlite`: Prepar3D v2
 * `little_navmap_p3dv3.sqlite`: Prepar3D v3
 * `little_navmap_p3dv4.sqlite`: Prepar3D v4
 * `little_navmap_xp11.sqlite`: X-Plane 11
-* `little_navmap_navigraph.sqlite`: Navigraph navdatabase. Can be either the included database or an update installed by the Navigraph _FMS DATA MANAGER_.
+* `little_navmap_navigraph.sqlite`: Navigraph navdatabase. Può essere il database incluso o un aggiornamento installato da Navigraph _FMS DATA MANAGER_.
 
-Additional files like
+File aggiuntivi come
 
 * `little_navmap_compiling.sqlite`,
 * `little_navmap_compiling.sqlite-journal`,
-* `little_navmap_temp.sqlite` and
+* `little_navmap_temp.sqlite` e
 * `little_navmap_temp.sqlite-journal`
 
-are remains of temporary processes like the database compilation and can be ignored.
+sono resti di processi temporanei come la compilazione del database e possono essere ignorati.
