@@ -18,6 +18,3 @@ Copyright 2015-2017 Alexander Barthel
 ---
 
 Last updated {{ gitbook.time }}.
-
-
-
