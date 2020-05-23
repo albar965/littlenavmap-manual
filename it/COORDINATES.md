@@ -1,41 +1,40 @@
-## Formati delle coordinate {# coordinate-formati}
+## Coordinate Formats {#coordinates-formats}
 
-Questo capitolo descrive brevemente i formati delle coordinate riconosciuti nelle finestre di dialogo della posizione del piano di volo e nelle finestre di dialogo dei punti utente.
+This chapter briefly describes the recognized coordinate formats in flight plan position dialogs and userpoint dialogs. 
 
-Il campo di input mostra un messaggio in basso che indica se le coordinate sono state riconosciute e mostra le coordinate tradotte nel formato predefinito come scelto nella finestra di dialogo `Opzioni` nella scheda` Unità`. Viene visualizzato un messaggio rosso in caso di errore.
+The input field shows a message below which indicates if the coordinates were recognized and shows the translated coordinates in the preset format as chosen in dialog `Options` on tab `Units`. A red message is shown in case of error.
 
-Controllare le coordinate tradotte visualizzate per verificare che l'immissione sia stata analizzata correttamente.
+Check the displayed translated coordinates to verify that your input was parsed correctly.
 
-! [Modifica posizione piano di volo] (../ images / edit_flightplan_waypoint_tooltip.jpg "Modifica posizione piano di volo")
+![Edit Flight Plan Position](../images/edit_flightplan_waypoint_tooltip.jpg "Edit Flight Plan Position")
 
-_ ** Immagine sopra: ** Modifica di una posizione del piano di volo definita dall'utente. La descrizione comandi fornisce un rapido aiuto sui formati delle coordinate.
+_**Picture above:** Editing a user-defined flight plan position. Tooltip gives a quick help on coordinate formats._
 
+### General
 
-### Generale
+Latitude has to be first and longitude second.
 
-La latitudine deve essere la prima e la longitudine in secondo luogo.
+N/S and E/W designators are required. Case does not matter. 
 
-Sono richiesti i designatori N / S e E / W. Il caso non ha importanza.
+Degree, minute and second signs can be omitted if numbers are separated by spaces.
 
-I segni di grado, minuto e secondo possono essere omessi se i numeri sono separati da spazi.
+A space is only required to separate latitude and longitude or degrees/minutes/seconds if no unit signs are used.
 
-Uno spazio è richiesto solo per separare latitudine e longitudine o gradi / minuti / secondi se non vengono utilizzati segni di unità.
+Decimal separator can be period \(English\) or the locale dependent separator like e.g. comma \(German\).
 
-Il separatore decimale può essere punto \ (inglese \) o separatore dipendente dalla località come ad es. virgola \ (tedesco \).
+### Other Formats
 
-### Altri formati
+These have to be given exactly as shown in the examples.
 
-Questi devono essere forniti esattamente come mostrato negli esempi.
+* Degrees and minutes: `N44124W122451`, `N14544W017479` or `S31240E136502`
+* Degrees only `46N078W`
+* Degrees and minutes `4620N07805W`
+* Degrees, minutes and seconds `481200N0112842E` \(Skyvector\)
+* Degrees and minutes in pair `N6500 W08000` or `N6500/W08000`
+* NAT type `5020N`
 
-* Gradi e minuti: `N44124W122451`,` N14544W017479` o `S31240E136502`
-* Solo gradi `46N078W`
-* Gradi e minuti `4620N07805W`
-* Gradi, minuti e secondi `481200N0112842E` \ (Skyvector \)
-* Gradi e minuti in coppia `N6500 W08000` o` N6500 / W08000`
-* Tipo NAT `5020N`
+###  Examples
 
-### Esempi
-
-* Gradi, minuti e secondi: `N49 ° 26 '41.57" E9 ° 12' 5.49 "` o `49 ° 26 '41.57" N 9 ° 12' 5.49 "E`
-* Gradi e minuti decimali: `N54 * 16.82 'W008 * 35.95' ',` N 52 33.58 E 13 17.26` o `49 ° 26.69' N 9 ° 12.09 'E`
-* Solo gradi decimali: `49.4449 ° N 9.2015 ° E` o` N 49.4449 ° E 9: 2015 ° `
+* Degrees, minutes and seconds: `N49° 26' 41.57" E9° 12' 5.49"` or `49° 26' 41.57" N 9° 12' 5.49" E`
+* Degrees and decimal minutes: `N54* 16.82' W008* 35.95'`, `N 52 33.58 E 13 17.26` or `49° 26.69' N 9° 12.09' E`
+* Decimal degrees only: `49.4449° N 9.2015° E` or `N 49.4449° E 9:2015°`

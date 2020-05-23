@@ -1,145 +1,144 @@
-
-## Glossario
+## Glossary
 
 ### 3D
-Aeroporto di X-Plane che contiene almeno un oggetto 3D. Può essere un grande aeroporto completamente costruito.
+X-Plane airport which contains at least one 3D object. May be a fully constructed major airport.
 
-### Aeroporto aggiuntivo
-FSX / P3D: Tutti i dati di scenario che si trovano al di fuori della directory `Scenery` del simulatore di volo di base sono considerati un componente aggiuntivo.
+### Add-on airport
+FSX/P3D: All scenery data that is found outside of the base flight simulator `Scenery` directory is considered an add-on.
 
-X-Plane: tutti gli aeroporti nella cartella `Custom Scenery` sono considerati aeroporti aggiuntivi e verranno evidenziati di conseguenza.
+X-Plane: All airports in the `Custom Scenery` folder are considered add-on airports and will be highlighted accordingly.
 
-### Procedura di avvicinamento
-Una procedura di avvicinamento è una serie di manovre per il trasporto di un aeromobile in condizioni di volo strumentale dall'avvicinamento iniziale a un atterraggio o verso un punto dal quale un atterraggio può essere effettuato visivamente. Se un piano di volo include una procedura di arrivo standard \ (STAR ​​\), una procedura di avvicinamento seguirà normalmente la STAR.
+### Approach Procedure
+An approach procedure is a series of maneuvers for the transfer of an aircraft in instrument flight conditions from the initial approach to a landing or to a point from which a landing may be made visually. If a flight plan includes a standard arrival procedure \(STAR\), an approach procedure will normally follow the STAR.
 
-### Procedura di arrivo
-Avvicinamento, transizione o procedura STAR.
+### Arrival Procedure
+Approach, transition or STAR procedure.
 
 ### BGL
-Un file binario con l'estensione `BGL` che fa parte di uno scenario di simulatore di volo contenente informazioni su aeroporto, radioaiuto o vie aeree. Questi file possono contenere anche traffico, landclass, elevazione o altre informazioni che non sono rilevanti per _Little Navmap_.
+A binary file with the extension `BGL` which is part of a flight simulator scenery containing airport, navaid or airway information. These files can also contain traffic, landclass, elevation or other information which is not relevant for _Little Navmap_.
 
 ### CSV
-File di testo con valori separati da virgole.
+Comma-separated values text file.
 
 ### DAT
-Un formato di file di testo utilizzato da X-Plane per memorizzare informazioni su aeroporto, radioaiuto e procedure.
+A text file format used by X-Plane to store airport, navaid and procedure information.
 
-### Procedura di partenza
-Procedura SID \ (partenza strumento standard \).
+### Departure Procedure
+SID \(standard instrument departure\) procedure.
 
 ### DME
-Apparecchi di misurazione della distanza o una radio aiuto.
+Distance measuring equipment or a radio navaid.
 
-### Aeroporto vuoto
-Un aeroporto che non ha vie di rullaggio, posizioni di parcheggio o gates, aprons e non è un aeroporto aggiuntivo e non è un aeroporto anfibio.
+### Empty airport
+An airport that has no taxiways, no parking positions or gates, no aprons and is not an add-on airport and is not a water airport.
 
 ### FACF
-Correzione del corso di avvicinamento finale. Un punto allineato sul corso di avvicinamento finale di una procedura strumentale.
+Final approach course fix. A point aligned on the final approach course of an instrument procedure.
 
 ### FAF
-Fix avvicinamento alla rotta finale. Il punto in cui inizia il segmento di avvicinamento  finale sull'avvicinamento strumentale.
+Final approach fix. The point where the final approach segment begins on the instrument approach.
 
-### Correzione
-Questo termine si riferisce a un waypoint, radio aiuto o un punto calcolato su una procedura.
+### Fix
+This term refers to a waypoint, radio navaid or an calculated point on a procedure.
 
-### Posizione del piano di volo
-Un waypoint definito dall'utente che fa parte del piano di volo.
+### Flight Plan Position
+A user-defined waypoint which is part of the flight plan.
 
 ### FLP
-Formato del piano di volo utilizzato da X-Plane FMS, Aerosoft Airbus e altri aeromobili aggiuntivi.
+Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other add-on aircraft.
 
 ### FMS
-Formato del piano di volo X-Plane.
+X-Plane flight plan format.
 
 ### FS9
 Flight Simulator 2004.
 
 ### FSX
-Flight Simulator X o Flight Simulator - Steam Edition.
+Flight Simulator X or Flight Simulator - Steam Edition.
 
 ### GIS
-Un sistema di informazione geografica come Google Earth, ad esempio.
+A geographical information system like Google Earth for example.
 
 ### ILS
-Sistema di atterraggio strumentale.
+Instrument landing system.
 
-### Correzione iniziale
-Questa è la prima correzione di una procedura.
+### Initial Fix
+This is the first fix of a procedure.
 
-### CARTA GEOGRAFICA
-Punto di avvicinamento mancante. Il punto sull'avvicinamento finale che rappresenta la fine dell'avvicinamento finale e l'inizio dell'avvicinamento  mancato.
+### MAP
+Missed approach point. The point on the final approach which represents the termination of the final approach and the start of the missed approach.
 
-### Radioaiuti
-VOR, VORTAC, TACAN, NDB o waypoint / intersezione.
+### Navaid
+VOR, VORTAC, TACAN, NDB or waypoint/intersection.
 
 ### NDB
-radio faro non direzionale  - radio aiuto.
+Non directional beacon - radio navaid.
 
 ### P3D
 Prepar3D v2 to v4.
 
 ### Parking
-rampa GA, rampa cargo, Fuel box o gate su un aeroporto.
+GA ramp, cargo ramp, fuel box or gate at an airport.
 
 ### PLN
-Formato del piano di volo FSX e P3D. Può salvare tutte le informazioni nei piani di volo usando le annotazioni.
+FSX and P3D flight plan format. Can save all information in flight plans using annotations.
 
 ### POI
-Punto d'interesse. Una tipologia di punto utente.
+Point of interest. A userpoint type.
 
-### Procedura
-Una STAR, un SID o un avvicinamento e le rispettive transizioni.
+### Procedure
+A STAR, SID or approach and the respecitive transitions.
 
-### Radio radioaiuto
-VOR, VORTAC, TACAN o NDB.
+### Radio navaid
+VOR, VORTAC, TACAN or NDB.
 
-### Valutazione
-Aeroporto da zero a cinque stelle a seconda delle strutture.
+### Rating
+Airport zero to five star rating depending on facilities.
 
-### Linea Rombo
-Quando si utilizza una bussola magnetica o un indicatore di direzione, è più conveniente volare in una direzione di rotta costante. Ciò può essere ottenuto seguendo una traccia della linea rombo, piuttosto che una grande traccia circolare.
-Nota che la linea di rombo che collega due punti sulla terra è più lunga del grande percorso circolare. Inoltre, vicino ai poli e per distanze più lunghe la linea romboidale non è utilizzabile.
+### Rhumb Line
+When using a magnetic compass or direction indicator it is more convenient to fly a constant track direction. This can be achieved by following a rhumb line track, rather than a great circle track. 
+Note that the rhumb line connecting two points on earth is longer than the great circle path. Also, near the poles and for longer distances the rhumb line is not usable.
 
-### Database delle librerie di scenari
+### Scenery Library Database
 
-Questo è un database interno \ ([SQLite] (http://sqlite.org) \) che viene creato da _Little Navmap_ durante la lettura di tutti i file BGL o DAT del simulatore di volo. Consente ricerche rapide e complesse e la visualizzazione della mappa.
+This is an internal database \([SQLite](http://sqlite.org)\) that is created by _Little Navmap_ when reading all the flight simulator BGL or DAT files. It allows fast complex searches and map display.
 
 ### SID
-Una partenza standard strumentale  è una procedura di partenza per il controllo del traffico aereo che aiuta a semplificare le procedure di rilascio dell'autorizzazione. Un SID manterrà gli aerei lontani dal terreno ma è ottimizzato per la rotta di volo del controllo del traffico aereo e non fornisce necessariamente il miglior gradiente di salita. Fornisce un equilibrio tra il terreno e l'elusione  degli ostacoli, l'abbattimento del rumore e la gestione dello spazio aereo.
+A standard instrument departure is an air traffic control departure procedure that helps to simplify clearance delivery procedures. A SID will keep aircraft away from terrain but it is optimized for air traffic control route of flight and does not necessarily provide the best climb gradient. It provides a balance between terrain and obstacle avoidance, noise abatement and airspace management.
 
 ### SimConnect
-Un'interfaccia di programmazione che consente alle applicazioni di leggere e scrivere i parametri del simulatore di volo.
-
+A programming interface that allows applications to read and write flight simulator parameters.
 
 ### STAR
-Un arrivo finale standard è una rotta di volo che di solito copre la fase di un volo tra l'ultimo punto della rotta caricata nel piano di volo e il primo punto di avvicinamento all'aeroporto, normalmente la correzione dell'avvicinamento iniziale \ (IAF \). Una STAR collega la fase in rotta con la fase di avvicinamento del volo.
+A standard terminal arrival is a flight route that usually covers the phase of a flight between the last point of the route filled in the flight plan and the first point of the approach to the airport, normally the initial approach fix \(IAF\). A STAR connects the en-route phase with the approach phase of the flight.
 
-### Posizione di partenza
-Utilizzato per la partenza nei piani di volo. O pista, eliporto, rampa GA, rampa di carico, Fuel box o gate.
+### Start position
+Used for departure in flight plans. Either runway, helipad, GA ramp, cargo ramp, fuel box or gate.
 
 ### TACAN
-Sistema di navigazione aerea tattico - radio aiuto utilizzato dagli aerei militari.
+Tactical air navigation system - radio navaid used by military aircraft.
 
 ### TOC
-Cima della salita.
+Top of climb.
 
 ### TOD
-Inizio della discesa.
+Top of descent.
 
 ### VOR
-radio omnidirezionale portata VHF  - radio aiuto.
+VHF omni directional radio range - radio navaid.
 
 ### VORDME
-radio omnidirezionale portata VHF con strumenti di misurazione della distanza - radio aiuto.
+VHF omni directional radio range with distance measuring equipment- radio navaid.
 
 ### VORTAC
-Segnalatore omnidirezionale portata VHF (VOR) localizzato e segnalatore di sistema di navigazione aerea tattica (TACAN).
+Co-located VHF omnidirectional range (VOR) beacon and tactical air navigation system (TACAN) beacon.
 
 ### Userpoint
-Un waypoint definito dall'utente come un segnalibro, un punto di interesse o un punto di segnalazione visiva \ (VRP \).
+A user-defined waypoint like a bookmark, point of interest or visual reporting point \(VRP\).
 
 ### VRP
-Punto di segnalazione visiva per voli VFR. Un tipo di punto utente.
+Visual reporting point for VFR flights. A userpoint type.
 
 ### Waypoint
-Radio aiuto definito da coordinate.
+Navaid defined by coordinates.
+

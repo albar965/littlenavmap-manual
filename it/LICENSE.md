@@ -1,9 +1,10 @@
-## Licenza {#license}
+## License {#license}
 
-Questo programma è un software gratuito: puoi ridistribuirlo e / o modificarlo secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, sia la versione 3 della Licenza, sia \ (a tua scelta \) qualsiasi versione successiva .
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or \(at your option\) any later version.
 
-Questo programma è distribuito nella speranza che possa essere utile, ma SENZA ALCUNA GARANZIA; senza nemmeno la garanzia implicita di COMMERCIABILITÀ o IDONEITÀ A UN PARTICOLARE SCOPO. Vedi la GNU General Public License per maggiori dettagli.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-Dovresti aver ricevuto una copia della GNU General Public License insieme a questo programma. In caso contrario, consultare [http://www.gnu.org/licenses[(http://www.gnu.org/licenses/).
+You should have received a copy of the GNU General Public License along with this program. If not, see [http://www.gnu.org/licenses](http://www.gnu.org/licenses/).
 
-! [GPL V3] (../ images / gpl-v3-logo.jpg)
+![GPL V3](../images/gpl-v3-logo.jpg)
+

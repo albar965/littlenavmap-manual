@@ -1,37 +1,35 @@
-## Rosa dei venti{# compass-rose}
+## Compass Rose {#compass-rose}
 
-La rosa dei venti indica il nord vero, il nord magnetico, la rotta e la rotta dell'aereo.
+The compass rose indicates true north, magnetic north, aircraft heading and aircraft track.
 
-La prua, la traccia, gli anelli di distanza e gli indicatori dell'aereo dell'utente vengono visualizzati se _Little Navmap_ è collegato a un simulatore. La rosa è centrata attorno all'aereo dell'utente se collegato.
+User aircraft heading, track, distance rings and markers are shown if _Little Navmap_ is connected to a simulator. The rose is centered around the user aircraft if connected.
 
-La rosa dei venti viene mantenuta centrata nella vista corrente se non collegata a un simulatore. La declinazione magnetica si basa sulla declinazione al centro.
+The compass rose is kept centered in the current view if not connected to a simulator. Magnetic declination is based on the declination in the center.
 
-La dimensione è adattata alla dimensione della vista della mappa ma non superiore a 1000 nm e non inferiore a 4 nm.
+The size is adapted to the map view size but not larger than 1000 nm and not smaller than 4 nm.
 
+Line thickness and other display options can be changed in dialog `Options` on the tab `Map Display`.
 
-Lo spessore della linea e altre opzioni di visualizzazione possono essere modificate nella finestra di dialogo `Opzioni` nella scheda` Visualizzazione mappa`.
+The colors for flight plan leg course and crab angle indicator depend on settings for active flight plan leg which can be changed in the dialog `Options` on tab `Map Display`.
 
-I colori per la rotta della tratta del piano di volo e l'indicatore dell'angolo del granchio dipendono dalle impostazioni della tratta del piano di volo attiva che possono essere modificate nella finestra di dialogo `Opzioni` nella scheda` Visualizzazione mappa`.
+![Compass Rose Display Options](../images/compass_rose_opts.jpg "Compass Rose Display Options")
 
-! [Opzioni di visualizzazione della rosa dei venti] (../ images / compass_rose_opts.jpg "Opzioni di visualizzazione della rosa dei venti")
+_**Picture above:** Compass rose display settings in options dialog._
 
-_ ** Immagine sopra: ** Impostazioni di visualizzazione della rosa dei venti nella finestra di dialogo delle opzioni ._
-
-### Indicatori
-
+### Indicators
 
 | | |
 | --- | --- |
-| ! [Nord vero] (../ images / legend / compass_rose_true_north.png "Nord vero") | Vero nord. |
-| ! [Nord magnetico] (../ images / legend / compass_rose_mag_north.png "Nord magnetico") | Nord magnetico. |
-| ! [Cerchi di distanza] (../ images / legend / compass_rose_dist.png "Cerchi di distanza") | Cerchi e segni di distanza dall'aereo dell'utente se collegato. |
-| ! [Traccia Aereo] (../ images / legend / compass_rose_track.png "Traccia Aereo") | La linea continua mostra la rotta dell'aereo in gradi magnetici se collegato. |
-| ! [Prua Aereo] (../ images / legend / compass_rose_heading.png "Prua Aereo") | La linea tratteggiata mostra la rotta dell'aereo se collegato. |
-| ! [Percorso tratte del piano di volo] (../ images / legend / compass_rose_leg.png "Percorso tratte del piano di volo") | Il segmento di linea magenta mostra la rotta verso il waypoint successivo della tratta del piano di volo attivo. Nascosto se non è stato caricato alcun piano di volo. |
-| ! [Angolo di granchio] (../ images / legend / compass_rose_crab.png "Angolo di granchio") | Indicatore dell'angolo del granchio. Mostra la rotta che deve essere volata verso il prossimo waypoint della tratta del piano di volo attivo considerando il vento trasversale.E' nascosto se non è stato caricato alcun piano di volo. |
+| ![True North](../images/legend/compass_rose_true_north.png "True North") | True north. |
+| ![Magnetic North](../images/legend/compass_rose_mag_north.png "Magnetic North") | Magnetic north. |
+| ![Distance Circles](../images/legend/compass_rose_dist.png "Distance Circles") | Distance circles and marks from user aircraft if connected. |
+| ![Aircraft Track](../images/legend/compass_rose_track.png "Aircraft Track") | Solid line shows aircraft track in degrees magnetic if connected. |
+| ![Aircraft Heading](../images/legend/compass_rose_heading.png "Aircraft Heading") | Dashed line shows aircraft heading if connected. |
+| ![Flight Plan Leg Course](../images/legend/compass_rose_leg.png "Flight Plan Leg Course") | Magenta line segment shows the course to next waypoint of the active flight plan leg. Hidden if no flight plan loaded. |
+| ![Crab Angle](../images/legend/compass_rose_crab.png "Crab Angle") | Crab angle indicator. Shows the heading that has to be flown towards the next waypoint of the active flight plan leg considering cross wind. Hidden if no flight plan loaded. |
 
-### Esempi
+### Examples
 | | |
 | --- | --- |
-| ! [Rosa dei Venti] (../ images / compass_rose.jpg "Rosa dei Venti") | ! [Aereo rosa dei venti ] (../ images / compass_rose_aircraft.jpg "Rosa dei venti con aereo") |
-| _ ** Immagine sopra: ** Rosa dei venti senza connessione al simulatore. Anelli di distanza disabilitati._ | _ ** Immagine sopra: ** Rosa dei venti centrata attorno all'aereo dell'utente. Nessun piano di volo caricato. Pertanto, angolo del granchio e indicatori del waypoint successivo nascosti._
+| ![Compass Rose](../images/compass_rose.jpg "Compass Rose") | ![Compass Rose Aircraft](../images/compass_rose_aircraft.jpg "Compass Rose with Aircraft") |
+| _**Picture above:** Compass rose without simulator connection. Distance rings disabled._ | _**Picture above:** Compass rose centered around user aircraft. No flight plan loaded. Therefore, crab angle and next waypoint indicators hidden._ |

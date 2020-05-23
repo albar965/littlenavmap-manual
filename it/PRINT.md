@@ -1,46 +1,46 @@
+## Printing {#printing}
 
-## Stampa {#printing}
+### ![Print Map](../images/icons/printmap.png "Print Map") Print Map {#printing-the-map}
 
-###! [Stampa mappa] (../ images / icons / printmap.png "Stampa mappa") Stampa mappa {# printing-the-map}
+Opens the print preview dialog allowing the current map view to be printed.
 
-Apre la finestra di dialogo di anteprima di stampa che consente di stampare la vista della mappa corrente.
+Printing is currently limited to the screen resolution
+of the current map view. To get a less blurry printout enlarge the map window as much as possible. You
+can undock the map window to achieve this.
 
-La stampa è attualmente limitata alla risoluzione della mappa corrente sullo schermo.
-Per ottenere una stampa meno sfocata ingrandire la finestra della mappa il più possibile. 
-Potete sganciare la finestra della mappa per raggiungere questo obiettivo.
+![Print Map Preview Dialog](../images/printmap.jpg "Print Map Preview Dialog")
 
-! [Stampa finestra di dialogo Anteprima mappa] (../ images / printmap.jpg "Stampa finestra di dialogo Anteprima mappa")
+_**Picture above:** Print preview dialog for the current map._
 
-_ ** Immagine sopra: ** Stampa l'anteprima della finestra di dialogo per la mappa corrente._
+### ![Print Flight Pan](../images/icons/printflightplan.png "Print Flight Plan") Print Flight Plan {#printing-the-flight-plan}
 
-###! [Stampa piano di volo] (../ images / icons / printflightplan.png "Stampa piano di volo") Stampa piano di volo {# printing-the-flight-plan}
+Allows printing of the current flight plan together with departure and destination airport information.
 
-Consente la stampa del piano di volo corrente insieme alle informazioni sull'aeroporto di partenza e di destinazione.
+#### Options for customizing the Flight Plan Table
 
-#### Opzioni per personalizzare la tabella del piano di volo
+The printed flight plan table will have the same order of columns as the flight plan table in the dock window. Columns will be omitted from printing if their width is reduced to minimum size. See [Table View](SEARCH.md#table-view) for more information.
 
-La tabella del piano di volo stampata avrà lo stesso ordine di colonne della tabella del piano di volo nella finestra ancorata. Le colonne verranno omesse dalla stampa se la loro larghezza è ridotta alla dimensione minima. Vedi [Vista tabella] (SEARCH.md # table-view) per maggiori informazioni.
+![Collapsed Column in Flight Plan Table](../images/collapsedcolumn.png)
 
-! [Colonna compressa nella tabella del piano di volo] (../ images / collapsedcolumn.png)
+_**Picture above:** The column _`Name`_ is collapsed and will not be added to the printed flight plan table._
 
-_ ** Immagine sopra: ** La colonna _`Nome`_ è compressa e non verrà aggiunta alla tabella del piano di volo stampata._
+#### Options for Departure and Destination
 
-#### Opzioni per partenza e destinazione
+* `Overview`: Prints the airport overview as show in the `Information` dock window on tab `Airport`.
+* `Runways / Helipads`: Prints runway and helipad information.
+* `Include runways with soft surface`: Includes runways with soft surfaces like grass,
+  gravel and others.
+* `Detailed runway information`: Include detailed information for the runway ends like approach
+  lighting, VASI types, ILS information and more.
+* `COM frequencies`: Include communication frequencies like tower, ATIS, UNICOM and others.
+* `Weather`: Print the decoded weather for all enabled sources as shown on the tab `Weather` in the `Information` dock window.
 
-* `Panoramica`: stampa la panoramica dell'aeroporto come mostrato nella finestra` Informazioni` sulla scheda `Aeroporto`.
-* `Piste / eliporti`: stampa le informazioni sulla pista e sull'eliporto.
-* `Includi piste con superficie morbida`: include piste con superfici morbide come erba,
-  ghiaia e altri.
-* "Informazioni dettagliate sulla pista": include informazioni dettagliate per le estremità della pista come l'avvicinamento
-  illuminazione,  categorie VASI, informazioni ILS e altro ancora.
-* `Frequenze COM`: include frequenze di comunicazione come tower, ATIS, UNICOM e altre.
-* `Meteo`: stampa il tempo decodificato per tutte le fonti abilitate come mostrato nella scheda` Meteo` nella finestra ancorata `Informazioni`.
+#### General options
 
-#### Opzioni generali
+* `Print flight plan table`: Print the flight plan as seen in the flight plan table.
+* `Text size`: Make the text size smaller to avoid unnecessary line breaks or increase it for better reading.
 
-* "Stampa tabella piano di volo": stampa il piano di volo come indicato nella tabella del piano di volo.
-* "Dimensione testo": riduce le dimensioni del testo per evitare interruzioni di riga non necessarie o aumentate per una migliore lettura.
+![Print Flight Plan Dialog](../images/printfp.jpg "Print Flight Plan Dialog")
 
-! [Stampa la finestra di dialogo del piano di volo] (../ images / printfp.jpg "Stampa la finestra di dialogo del piano di volo")
+_**Picture above:** Print flight plan options dialog._
 
-_ ** Immagine sopra: ** Stampa le opzioni della finestra di dialogo del piano di volo._
