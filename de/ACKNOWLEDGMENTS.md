@@ -51,4 +51,4 @@ Und lasst uns nicht die ganzen Dienste vergessen, die und die Onlinekarten koste
 
 Ein Danke an die [GIScience / Geoinformatics Research Group](http://www.geog.uni-heidelberg.de/gis/index_en.html) der Heidelberger Universität für die Erlaubniss, ihre [OpenMapSurfer](http://korona.geog.uni-heidelberg.de) Karte nutzen zu dürfen.
 
-Und zu guter letzt: Wenn es kein [OpenStreetMap](http://www.openstreetmap.org) mit seinen teusenden Mitwirkenden gäbe, hätte heute niemand von uns irgendwelche Karten.
+Und zu guter letzt: Wenn es kein [OpenStreetMap](http://www.openstreetmap.org) mit seinen tausenden Mitwirkenden gäbe, hätte heute niemand von uns irgendwelche Karten.
