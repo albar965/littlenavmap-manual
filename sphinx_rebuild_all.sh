@@ -26,15 +26,27 @@ for LANGNAME in "$@" ; do
   rm -rfv deploy/${LANGNAME}/.doctrees deploy/${LANGNAME}/.buildinfo
 
   # Add cover to ePUB file and copy to deploy
+  echo
+  echo =====================================================================================
+  echo Running ebook-convert for ePub ======================================================
   ebook-convert build/epub/${LANGNAME}/LittleNavmap.epub deploy/littlenavmap_book_${LANGNAME}.epub --cover src/images/cover.png --preserve-cover-aspect-ratio
 
   # Create MOBI file
+  echo
+  echo =====================================================================================
+  echo Running ebook-convert for MOBI ======================================================
   ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}.mobi
 
   # Create A4 PDF
+  echo
+  echo =====================================================================================
+  echo Running ebook-convert for A4 PDF ====================================================
   ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}_a4.pdf --preserve-cover-aspect-ratio --paper-size a4 --base-font-size 9
 
   # Create US Letter PDF
+  echo
+  echo =====================================================================================
+  echo Running ebook-convert for US Letter PDF =============================================
   ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}_letter.pdf --preserve-cover-aspect-ratio --paper-size letter --base-font-size 9
 
 done
