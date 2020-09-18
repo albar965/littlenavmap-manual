@@ -1,4 +1,4 @@
 Flight Plan Multi-Export
 -------------------------
 
-Work in progress.
+**This chapter for *Little Navmap* |release| is work in progress.**

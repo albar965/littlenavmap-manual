@@ -1,4 +1,4 @@
 Edit Flight Plan Remarks
 -------------------------
 
-Work in progress.
+**This chapter for *Little Navmap* |release| is work in progress.**
