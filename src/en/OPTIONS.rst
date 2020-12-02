@@ -5,8 +5,13 @@ This dialog consists of several pages with configuration options which
 can be selected in the list on the left side. Each entry in the page
 list has a tooltip for easier navigation.
 
-**Most options are self-explaining and tooltips contain more detailed
-explanations if applicable.**
+Note that scroll bars can show up at the left or the bottom of a options page.
+Scroll to see hidden options.
+
+.. tip::
+
+   Most options are self-explaining and tooltips contain more information in most cases.
+   Hover the mouse over a button or input field for a more detailed description.
 
 The button ``Restore Defaults`` restores only the options of this dialog
 back to default. Other settings like map display, table views or dock
@@ -24,8 +29,8 @@ The following chapters give a brief description of each page.
 
 .. _startup:
 
-|Startup| Startup and Update
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|Startup Icon| Startup and Update
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Allows to customize what should be loaded and shown on startup of
 *Little Navmap*.
@@ -34,6 +39,11 @@ You can also configure the frequency of the automatic update check and
 channels. See :doc:`UPDATE` for more information.
 Change the settings here if you wish to get notifications about beta
 releases.
+
+.. note::
+
+    Always use the beta update channel if you use a beta or test version.
+    Otherwise you might miss important updates.
 
 .. _user-interface:
 
@@ -47,41 +57,127 @@ This page also contains options to force the program language and locale
 settings (number, date and time formats) to English if you do not want
 to use a translated user interface.
 
-.. figure:: ../images/optionsui.jpg
+Language
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    Page ``User Interface``.
+Allows to choose the language freely among the supported translations. Note that some translations
+are incomplete which might result in a mix of English and translated phrases in the user interface.
+
+You have to restart *Little Navmap* for this change to take effect.
+
+Raise related windows on actions. Show flight plan after opening file, for example.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This will open related windows and raise tabs on actions like
+opening files, modifying the flight plan and other operations.
+
+This can he helpful for new users.
+
+Raise and activate docking windows when moving the mouse over it
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Raises dock windows when hovering the mouse over it. This can be helpful if you have multiple floating
+dock windows opened.
+
+See also :doc:`DOCKWINDOWS`.
+
+Raise and activate the main program window when moving the mouse over it
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Raises the main window of *Little Navmap* when hovering the mouse over it.
+This will steal the focus of other programs and activate *Little Navmap* which might cause unwanted effects.
+Therefore, try this out before using it.
+
+See also :doc:`DOCKWINDOWS`.
+
+.. _display-and-text:
+
+|Display and Text Icon| Display and Text
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Various user interface related settings.
+
+User Interface Font
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can change the font for the whole user interface of *Little Navmap*.
+
+The setting is applied immediately. Press ``Cancel`` or ``Reset Font to Default`` to revert back to previous.
+
+The font for map display is not affected by this value and can be set separately on page :ref:`map-display`.
+
+.. warning::
+
+      Keep in mind that using a wrong or too large font can result in display issues.
+
+.. tip::
+
+        Try out the `B612 Font family <https://b612-font.com/>`__ which is an
+        open source font family designed and tested to be used on aircraft cockpit screens.
+
+Enable high DPI monitor support
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Toggle this is you see issues with scaled fonts on Windows,
+cannot shrink the main window or other issues.
+
+Disable tooltips for whole application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Disables tooltips for the whole application except for the map window which has separate settings on page :ref:`map`.
+
+Useful for experienced users.
+
+Text Size
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Change default text size for various information displays.
+
+.. tip::
+
+   You can temporarily resize the text in information windows by using ``Ctrl+Wheel``.
+   This change is not saved.
+
 
 .. _map:
 
-|Map| Map
-~~~~~~~~~
+|Map Icon| Map
+~~~~~~~~~~~~~~~~~
 
 Has map related customization options. Allows to set the tooltips,
 scroll performance and more.
 
+Hover the mouse above buttons and input fields to see more information.
+
+.. _map-undock:
+
+Allow to undock the map window
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Allows to undock and put the map window into a floating state.
+
+This can cause several unwanted effects when arranging dock windows.
+Uncheck this if you do experience problems when resizing dock windows.
+
+Restart the program after changing this option.
+
+You might also need to reset the window layout in case the map window is missing after a restart.
+
+Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout after the
+restart if needed.
+
+See :doc:`LAYOUT` for more information about window layouts which might be affected by this option.
+
 .. _map-navigation:
 
-|Map Navigation| Map Navigation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|Map Navigation Icon| Map Navigation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Contains all options for moving and zooming around in the map as well as
 click sensitivity and zoom distances.
 
 Three navigation modes are available. Tooltips give more information
 about these.
-
-.. _blurred-map:
-
-Avoid blurred map display by zooming out to next best step
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Checking this helps to get a sharp background image for online maps
-(e.g. from *OpenStreetMap*) when *Little Navmap* zooms to or centers map
-features like airports, the active flight plan leg and others. This
-works best with the map projection ``Mercator``.
-
-As a result the map might be zoomed out farther than expected in some
-cases.
 
 .. _map-display:
 
@@ -91,9 +187,12 @@ cases.
 This page contains options for symbol sizes, text sizes, flight plan,
 user aircraft trail colors and more.
 
-.. figure:: ../images/optionmapdisplay.jpg
+Use the scroll bar on the right to see more hidden options at the bottom.
 
-      Page ``Map Display``.
+Map and Elevation Profile Font
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can change the font for the map display. The font will also be used in the elevation profile.
 
 .. _map-display-2:
 
@@ -106,11 +205,10 @@ The right side of the page contains a tree view that allows to select
 the text labels that should be shown at airports, user aircraft,
 AI/multiplayer aircraft and other map features.
 
-Tooltips give explanations for the various settings in the tree.
+Click on the small right pointing arrow (or ``+`` depending on operating system and user interface style)
+to open a branch with options.
 
-.. figure:: ../images/optionmapdisplay2.jpg
-
-       Page ``Map Display 2``.
+Hover the mouse above the tree for tooltips giving more explanations.
 
 .. _map-display-online:
 
@@ -136,20 +234,13 @@ information.
 
 .. _units:
 
-|Units| Units
-~~~~~~~~~~~~~
+|Units Icon| Units
+~~~~~~~~~~~~~~~~~~
 
 You can change all units that are used by *Little Navmap* on this page
 between nautical, imperial and metric. Mixed settings like meter for
 altitude and nautical miles for distance are possible.
 
-.. warning::
-
-      Note that any numbers used in the program are not converted when
-      changing units. That means that you will get a minimum altitude buffer
-      of 1000 meter after changing the setting ``Altitude and Elevation`` from
-      feet to meter. This also applies to flight plan altitude. Therefore, do
-      not forget to adapt these numbers after changing units.
 
 -  ``Show other fuel units too``: Shows kilogram and liter as small text
    besides main units if lbs and gallon are selected and vice versa.
@@ -160,15 +251,18 @@ altitude and nautical miles for distance are possible.
    This applies to information, progress as well as map display (traffic
    patterns and holds).
 
-**Note about the coordinate formats** ``Latitude and Longitude with sign``
-**and** ``Longitude and Latitude with sign`` **:**
+.. note::
 
--  Latitude: Negative is south and positive is north.
--  Longitude: Negative is west and positive is east values.
+       See :ref:`signed-decimal-coordinates` for more information when using ``Latitude and Longitude with sign``
+       or ``Longitude and Latitude with sign``.
 
-Choosing these display formats will also enable input of signed decimal
-values. The reading order for coordinates will also change depending on
-the chosen format above when entering signed numbers.
+.. warning::
+
+      Note that any numbers used in the program are not converted when
+      changing units. That means that you will get a minimum altitude buffer
+      of 1,000 meter after changing the setting ``Altitude and Elevation`` from
+      feet to meter. This also applies to flight plan altitude. Therefore, do
+      not forget to adapt these numbers after changing units.
 
 .. _simulator-aircraft:
 
@@ -179,23 +273,41 @@ Allows to change various aspects around the display of the user aircraft
 while flying. All settings resulting in a more fluid aircraft display
 will use more CPU and can potentially induce stutters in the simulator.
 
+.. _aircraft-centering-options:
+
+Aircraft Centering Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This chapter explains the various options to modify the map updates while flying.
+The idea is to reduce manual scrolling or zooming as much as possible while piloting the aircraft.
+
+Read the chapters below if you find the behavior confusing (i.e. map jumping
+unexpectedly). Otherwise leave the default values.
+
 .. _simulator-aircraft-center-wp:
 
 Center map on aircraft and next flight plan waypoint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Enabled per default.
 
 The map is zoomed to show both the aircraft and the next active waypoint
 on the flight plan if this is enabled while flying. *Little Navmap* uses
 several criteria to minimize map updates in this mode.
 
 The map will fall back to the default mode of simply centering the
-aircraft if no flight plan is loaded, the aircraft is on ground or the
-flight plan is more than 50 nm away from the user aircraft.
+aircraft if one of the conditions below is true:
+
+-  No flight plan loaded.
+-  Aircraft is on ground (no active magenta leg).
+-  Aircraft distance to flight plan is more than 40 NM (active magenta leg disappears).
 
 .. _simulator-aircraft-move-constantly:
 
 Do not use box mode for following the aircraft. Move the map constantly.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Disabled per default.
 
 Map will follow the aircraft constantly when checked. This is also used
 for ``Center map on aircraft and next flight plan waypoint``.
@@ -206,92 +318,100 @@ while flying.
 .. _simulator-aircraft-scroll-box:
 
 Simulator aircraft scroll box size (percent of map window size)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Smaller values keep the aircraft centered and will move the map more
 often. Larger values will update the map only when aircraft reaches map
 boundary.
 
-This setting is ignored when
-``Center map on aircraft and next flight plan waypoint`` is checked and
-a flight plan is set.
+This setting is used only if simple aircraft centering is enabled. See above for details.
+
 
 .. _simulator-aircraft-keep-active:
 
-Keep active leg on top of flight plan table
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scroll flight plan table back to active leg after time below
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-The active (magenta) leg will be shown on top of the flight plan table
-when a new leg is activated.
+The active (magenta) leg will be moved to the top of the flight plan table
+when a new leg is activated or there is no interaction with the table for the given time period.
+
+.. _simulator-aircraft-clear-selection:
+
+Clear selection in flight plan table after time below
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+The selection in the flight plan table and highlights on the map will be cleared
+after there is no interaction with the table for the given time period.
 
 .. _simulator-aircraft-allow-scroll-zoom:
 
 Allow scrolling and zooming in the map
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Allow scrolling Active
-''''''''''''''''''''''''
+Enabled per default.
 
-The map will stop following the aircraft for the given time if the user
-does any interaction with the map like scrolling or zooming. You can
-quickly check out the destination or your overall progress, and after
-you stop moving around, *Little Navmap* will return to following your
-aircraft.
+This setting allows a user to move around in the map without the need to manually disable the
+aircraft centering.
 
-This option is also used in :doc:`PROFILE`.
+The two points below explain the behavior of the program depending if this option is enabled or not.
 
-**Note if you use the default aircraft centering mode or if *Little
-Navmap* falls back to this mode (see above):**
+#. **Allow scrolling Active:**
 
-#. Using the mouse wheel or the ``+`` and ``-`` key to zoom will change
-   and keep the zoom distance. The aircraft is still centered but the
-   new zoom distance is used.
-#. Starting to look around by moving the map with mouse drag or cursor
-   keys: This will remember the last position **and** the zoom distance.
-   You can do any map movements and *Little Navmap* will jump back to
-   the last position and zoom distance where you started the movement
-   when time is over.
+   The map will stop following the aircraft for the given time if the user
+   does any interaction with the map like scrolling or zooming. You can
+   quickly check out the destination or your overall progress, and after
+   you stop moving around, *Little Navmap* will return to following your
+   aircraft.
 
-The same from point two applies if you jump to airports, navaids or
-other features by double click, context menu (``Show on Map``) or map
-link.
+   This option is also used in :doc:`PROFILE`.
 
-Toggle |Center Aircraft| ``Center Aircraft`` on and off if you find that
-the map jumps back to the wrong position.
+   .. note::
 
-This option is also used in :doc:`PROFILE`.
+        Note that special gestures are recognized if you use the simple aircraft centering mode
+        (``Center map on aircraft and next flight plan waypoint`` disabled) or if *Little Navmap*
+        falls back to this mode (see above):
 
-.. _simulator-aircraft-jump-timeout:
+        #. Using the mouse wheel, the ``+`` and ``-`` key or any other method **first** to zoom will change
+           and keep the zoom distance. The aircraft is still centered but the
+           new zoom distance is used.
+        #. Starting to look around by **first** moving the map with mouse drag, cursor
+           keys or any other movement:
+           This will remember the last position **and** the zoom distance.
+           You can do any map movements and *Little Navmap* will jump back to
+           the last position and restore the zoom distance where you started the movement.
 
-Allow scrolling not active
-''''''''''''''''''''''''''''''''
+        The same from point two applies if you jump to airports, navaids or
+        other features by double click, context menu (``Show on Map``) or map
+        link.
 
-The aircraft centering will be switched off when using one of the
-following functions. Note that this default behavior can be modified in
-the options dialog.
+   Toggle |Center Aircraft| ``Center Aircraft`` on and off if you find that
+   the map jumps back to the wrong position.
 
--  Double-click into a table view or map display to zoom to an airport
-   or a navaid.
--  Context menu item ``Show on map``.
--  ``Goto Home`` or ``Goto Center for Distance Search``.
--  ``Map`` link in ``Information`` dock window.
--  ``Show Flight Plan``, when selected manually, or automatically after
-   loading a flight plan.
--  Centering a Google Earth KML/KMZ file after loading
+#. **Allow scrolling not active:**
 
-This allows a quick inspection of an airport or navaid during flight. To
-display the aircraft again use ``Map Position Back`` or enable
-``Show Aircraft`` again.
+   Map will constantly follow the aircraft and will not allow moving away from it.
+
+   The aircraft centering will be switched off only when using one of the
+   following functions:
+
+   -  Double-click into a table view or map display to zoom to an airport
+      or a navaid.
+   -  Context menu item ``Show on map``.
+   -  ``Goto Home`` or ``Goto Center for Distance Search``.
+   -  ``Map`` link in ``Information`` dock window.
+   -  ``Show Flight Plan``, when selected manually, or automatically after
+      loading a flight plan.
+   -  Centering a Google Earth KML/KMZ file after loading
+
+   This allows a quick inspection of an airport or navaid during flight. To
+   display the aircraft again use ``Map Position Back`` (:ref:`map-position-back-forward`) or enable
+   :ref:`center-aircraft` again.
 
 Jump back to aircraft and resume aircraft following after this time
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Time until aircraft following is activated again after any map
 interaction like scrolling or zooming.
-
-.. figure:: ../images/options_simac.jpg
-
-     Page ``Simulator Aircraft``.
 
 .. _flight-plan:
 
@@ -301,16 +421,91 @@ interaction like scrolling or zooming.
 Here you can set preferences for flight plan calculation or change the
 default filename for saving flight plans.
 
+Avoid overwriting Flight Plan with not matching departure and destination
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Check this option to avoid overwriting flight plans with a new departure or destination after changing one of these.
+The ``Save as`` dialog will show up instead of overwriting the current flight plan when you reverse the route, for example.
+
+Pattern for default flight plan names
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Allows to customize the default file name which is proposed on first save of LNMPLN and export of some formats.
+
+Error messages and an example is shown below the input field.
+
+This applies to new filenames when saving LNMPLN, FSX, Prepar3D, FlightGear or MSFS flight plans.
+The file suffixes like ``.lnmpln``, ``.pln`` or ``.fgfp`` are appended automatically.
+
+Export formats like X-Plane FMS which need a certain short name do not adhere to this setting.
+
+Note that PLN files for Microsoft Flight Simulator 2020 will have special characters removed since the simulator cannot load files having these as a part of the name.
+
+The default value is ``PLANTYPE DEPARTNAME (DEPARTIDENT) to DESTNAME (DESTIDENT)``.
+
+The input field falls back to the default if it is left empty or has errors.
+
+The following variables are recognized:
+
+-  ``PLANTYPE``: Text ``IFR`` or ``VFR`` depending on :ref:`flight-plan-type`.
+-  ``DEPARTIDENT``: Departure airport ICAO code
+-  ``DEPARTNAME``: Departure airport name
+-  ``DESTIDENT``: Destination airport ICAO code
+-  ``DESTNAME``: Destination airport name
+-  ``CRUISEALT``: Cruise altitude in selected unit (meter or feet).
+
+All variables have to be entered in upper case letters.
+
+Short
+'''''''''''''''
+
+This button sets the flight plan file pattern to the short name ``DEPARTIDENT DESTIDENT``.
+
+Example: ``EDDF LIRF.lnmpln``.
+
+Long
+'''''''''''''''''''
+
+This button sets the flight plan file pattern to the long name ``PLANTYPE DEPARTNAME (DEPARTIDENT) to DESTNAME (DESTIDENT)``.
+
+Example: ``IFR Frankfurt am Main (EDDF) to Fiumicino (LIRF).lnmpln``.
+
+Ignore declination of VOR and other radio navaids
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This affects the calculation of the magnetic course in flight plans.
+
+*Little Navmap* will calculate magnetic course based on environment and ignore the VOR declination value if checked.
+The station declination is normally used when calculating a course **to** and **from** a VOR.
+
+This can result in wrong course values if the calibration of a VOR is very old and differs to the declination in the environment.
+The latter one is derived from simulator files or calculated based on the the (`WMM <https://en.wikipedia.org/wiki/World_Magnetic_Model>`__).
+
+Check this if you rely on GPS when flying.
+
+See also :ref:`flightplan-magnetic-declination`.
+
 .. _weather:
 
 |Weather| Weather
 ~~~~~~~~~~~~~~~~~
 
-You can select the various weather sources to be shown in the
-``Information`` dock window or in the map tooltips.
+Choose which weather services should be used to fetch and show METAR for airports in information
+window and map tooltips.
 
 The weather type ``Flight Simulator`` will either display weather from
-the FSX or P3D connection or from X-Planes ``METAR.rwx`` weather file.
+the FSX or P3D connection or from X-Plane's ``METAR.rwx`` weather file.
+
+Note that this is not supported for Microsoft Flight Simulator 2020.
+
+Weather for a service will not be downloaded if you disable the service for tooltips and information panels.
+
+Online weather is downloaded and updated every ten minutes.
+
+.. _weather-files:
+
+|Weather Files| Weather Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Active Sky* can only be selected if either *Active Sky Next*, *AS16*,
 *Active Sky for Prepar3D v4* or *Active Sky XP* are installed or the
@@ -329,9 +524,21 @@ The test buttons for the online weather services can also be used to
 find out if *Little Navmap* can connect to Internet. Check your firewall
 settings if these fail.
 
-.. figure:: ../images/optionsweather.jpg
+Default values for web addresses:
 
-   Page ``Weather``.
+-  NOAA Weather Service URL: ``https://tgftp.nws.noaa.gov/data/observations/metar/cycles/%1Z.TXT``
+-  VATSIM Weather Service URL: ``https://metar.vatsim.net/metar.php?id=ALL``
+-  IVAO Weather Download URL: ``http://wx.ivao.aero/metar.php``
+-  NOAA Wind Service Base URL: ``https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_1p00.pl``
+
+.. note::
+
+     While this happens rarely some services might be interrupted for hours or even a day or two.
+     *Little Navmap* will show error messages if this is the case.
+
+     You might want to check you internet access but otherwise ignore these if
+     it does not happen for a longer time.
+
 
 .. _online-flying:
 
@@ -402,20 +609,20 @@ clients/aircraft and online centers/ATC.
 
 .. _online-service-settings:
 
-Settings
-^^^^^^^^
+Web Addresses
+^^^^^^^^^^^^^^
 
 .. _online-service-settings-status-url:
 
 Status File URL
 '''''''''''''''
 
-URL of the ``status.txt`` file. You can also use a local path like
+Web address of the ``status.txt`` file. You can also use a local path like
 ``C:\Users\YOURUSERNAME\Documents\status.txt``.
 
-This file is downloaded only on startup of the program.
+This file is downloaded only on startup of the *Little Navmap*.
 
-A push button ``Test`` allows to check if the URL is valid and shows the
+A button ``Test`` allows to check if the URL is valid and shows the
 first few lines from the downloaded text file. This does not work with
 local paths.
 
@@ -428,12 +635,12 @@ Format <https://doc.ivao.aero/apidocumentation:whazzup:statusfileformat>`__.
 Whazzup File URL
 ''''''''''''''''
 
-URL of the ``whazzup.txt`` file. You can also use a local path like
+Web address of the ``whazzup.txt`` file. You can also use a local path like
 ``C:\Users\YOURUSERNAME\Documents\whazzup.txt``.
 
 This file is downloaded according to the set update rate.
 
-A push button ``Test`` allows to check if the URL is valid. The test
+A button ``Test`` allows to check if the URL is valid. The test
 does not work with local paths.
 
 The whazzup file format is explained in the IVAO documentation library:
@@ -466,7 +673,7 @@ Update Every
 Sets the update rate that defines how often the ``whazzup.txt`` file is
 downloaded.
 
-Allowed values are 5 to 1800 seconds, 180s being the default.
+Allowed values are 5 to 1,800 seconds, 180 seconds being the default.
 
 You can use smaller update rates for private online networks to improve
 map display updates.
@@ -483,7 +690,7 @@ Format
 ''''''
 
 ``IVAO`` or ``VATSIM``. Depends on the format used by your private
-network. Try both options if unsure.
+network. Try both options if unsure or you see strange effects like all aircraft pointing to the north.
 
 .. _web-server:
 
@@ -546,17 +753,29 @@ The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 
 .. _cache-elevation:
 
-Flight Plan Elevation Profile
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Install GLOBE elevation data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The bottom part of this page allows to install the freely downloadable
-`GLOBE - Global Land One-km Base Elevation
-Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ elevation data.
+The online elevation data which is used per default contains several known errors.
+Therefore, it is recommended to use the freely downloadable GLOBE offline elevation data.
 
-Download the ZIP archive from the link in the dialog and extract it.
-Select the extracted directory using ``Select GLOBE Directory ...`` so,
-that it points to the files ``a10g`` to ``p10g``. The label in the
-dialog will show an error if the path is invalid.
+The bottom part of the page ``Cache and Files`` in the options dialog allows to install the elevation data from the
+`GLOBE - Global Land One-km Base Elevation Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ .
+
+Follow the instructions below to install the GLOBE elevation data:
+
+#.  Click the link in the dialog or click
+    `here <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ to open the page. Click ``Get data`` on the web page and
+    then ``Any or all 16 "tiles"``. Then click ``All Tiles in One .zip file`` to download the file.
+
+    The direct download link is `all10g.zip <https://ngdc.noaa.gov/mgg/topo/DATATILES/elev/all10g.zip>`__.
+#.  Extract the downloaded file ``all10g.zip`` to an arbitrary place like ``...\Documents\Little Navmap\GLOBE``.
+    You can also use the folder which is suggested by the :doc:`FOLDERS` dialog.
+    As a result you will get a folder ``all10`` containing files ``a10g`` to ``p10g``.
+#.  Select ``Use Offline GLOBE Elevation Data`` in the options dialog of *Little Navmap*.
+#.  Now select the extracted directory ``all10`` using the ``Select GLOBE Directory ...`` button on this options page.
+    The label in the options dialog will show an error if the path is not correct.
+#.  Click ``Ok`` if the path was recognized and the label below shows ``Directory and Files are valid``.
 
 .. _cache-user-airspaces:
 
@@ -579,7 +798,7 @@ See also :ref:`load-scenery-library-user-airspaces` and :ref:`load-user-airspace
 
 Allows to configure the loading of the scenery library database.
 
-Note that these paths apply to all Flight Simulators, FSX, P3D and
+Note that these paths apply to all Flight Simulators, FSX, P3D, MSFS and
 X-Plane.
 
 You have to reload the scenery database in order for the changes to take
@@ -590,19 +809,22 @@ effect.
 Select Paths to exclude from loading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-All directories including sub-directories in this list will be omitted
+All directories including sub-directories as well as files in this list will be omitted
 when loading the scenery library into the *Little Navmap* database. You
 can also use this list to speed up database loading if you exclude
 directories that do not contain airports or navaids (landclass,
 elevation data and others).
 
-You can also exclude ``BGL`` or ``DAT`` files if needed.
+You can also exclude FSX, P3D, MSFS BGL or X-Plane dat files if needed.
 
-Note that you can select more than one entry in the file or directory
-dialogs.
 
 Select one or more entries in the list and click on ``Remove`` to delete
 then from the list.
+
+.. tip::
+
+      Note that you can choose more than one entry in the file or directory
+      dialogs to add several entries at once.
 
 .. _scenery-library-database-exclude-add-on:
 
@@ -615,6 +837,9 @@ highlighted on the map as well as considered during search for add-ons.
 
 **X-Plane:** All airports in the ``Custom Scenery`` directory are
 considered add-on airports and will be highlighted accordingly.
+
+**Microsoft Flight Simulator 2020**: All airports located in the ``...\Community``
+directory and the ``...\Official\OneStore`` or ``...\Official\Steam`` are considered to be add-on airports.
 
 You can use this list to modify this behavior.
 
@@ -670,21 +895,25 @@ Exclude these directories from loading:
 -  ``C:\Games\FSX\ORBX\FTX_NA\FTX_NA_PNW07_MESH``
 -  ``C:\Games\FSX\ORBX\FTX_NA\FTX_NA_PFJ07_MESH``
 
-.. |Cache and Files| image:: ../images/icon_filesave.png
-.. |Center Aircraft| image:: ../images/icon_centeraircraft.png
-.. |Flight Plan| image:: ../images/icon_route.png
-.. |Map Display 2 Icon| image:: ../images/icon_mapdisplay2.png
-.. |Map Display Icon| image:: ../images/icon_mapdisplay.png
-.. |Map Display Online Icon| image:: ../images/icon_airspaceonline.png
-.. |Map Navigation| image:: ../images/icon_mapnavigation.png
-.. |Map| image:: ../images/icon_mapsettings.png
-.. |Online Flying| image:: ../images/icon_aircraft_online.png
-.. |Options| image:: ../images/icon_settings.png
-.. |Scenery Library Database Icon| image:: ../images/icon_database.png
-.. |Simulator Aircraft Icon| image:: ../images/icon_aircraft.png
-.. |Startup| image:: ../images/icon_littlenavmap.png
-.. |Units| image:: ../images/icon_units.png
+.. |Startup Icon| image:: ../images/icon_littlenavmap.png
 .. |User Interface Icon| image:: ../images/icon_statusbar.png
+.. |Display and Text Icon| image:: ../images/icon_copy.png
+.. |Map Icon| image:: ../images/icon_mapsettings.png
+.. |Map Navigation Icon| image:: ../images/icon_mapnavigation.png
+.. |Map Display Icon| image:: ../images/icon_mapdisplay.png
+.. |Map Display 2 Icon| image:: ../images/icon_mapdisplay2.png
+.. |Map Display Online Icon| image:: ../images/icon_airspaceonline.png
+.. |Units Icon| image:: ../images/icon_units.png
+.. |Simulator Aircraft Icon| image:: ../images/icon_aircraft.png
+.. |Flight Plan| image:: ../images/icon_route.png
 .. |Weather| image:: ../images/icon_weather.png
+.. |Weather Files| image:: ../images/icon_weatherurl.png
+.. |Online Flying| image:: ../images/icon_aircraft_online.png
 .. |Web Server| image:: ../images/icon_web.png
+.. |Cache and Files| image:: ../images/icon_filesave.png
+.. |Scenery Library Database Icon| image:: ../images/icon_database.png
+
+
+.. |Center Aircraft| image:: ../images/icon_centeraircraft.png
+.. |Options| image:: ../images/icon_settings.png
 

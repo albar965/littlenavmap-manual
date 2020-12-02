@@ -6,18 +6,44 @@ when detecting a takeoff or landing. A logbook entry containing only
 departure is created on takeoff and finalized with destination and more
 information on landing.
 
-Check :ref:`logbook-create-entries` to
-enable this functionality which is default.
+:ref:`logbook-create-entries` has to be checked to enable this functionality.
 
 Note that all times, fuel consumption and other values are measured
 between takeoff and landing since it is not reliably possible to detect
 the start and end of a flight.
 
-Use :ref:`reset-and-restart` to be sure
-that the logbook flight detection is set up for a new flight.
+You can speed up the flight or to warp to another position without breaking the logbook record.
 
 Editing functionality in the logbook is similar to the userpoints
 editing (:ref:`userpoints`).
+
+.. note::
+
+      Use :ref:`reset-for-new-flight` to be sure
+      that the logbook flight detection is set up for a new flight.
+
+
+Logbook Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Each logbook entry has a reference using the full path to the used flight plan and aircraft
+performance files. Keep in mind that these references naturally break if the files are moved or renamed.
+
+Additionally, the flight plan file, the aircraft performance file and the flown track are directly inserted into
+logbook entry. These attachments can be saved as LNMPLN, LNMPERF or GPX files. The GPX attachment is also used to show the trail and
+flight plan preview when selecting logbook entries in the search result table.
+
+See :ref:`flight-plan-formats-lnmpln` for information about the LNMPLN format.
+
+The GPX trail contains coordinates, flown altitude and time as well as the flight plan with airport and navaid idents, coordinates and calculated altitude.
+
+The flight plan file contains all plan information like procedures or remarks.
+
+You can access and modify the referenced and attached files in the context menu of the search result table and edit dialog.
+
+.. note::
+
+    Unfinished flights will not have trail information and show only the departure airport.
 
 .. _logbook-search:
 
@@ -28,8 +54,11 @@ The functionality of the search filters and the result table is equal to
 the airport and navaid search. See :doc:`SEARCH`
 for information about search filters and buttons.
 
+A search field ``Airport ICAO`` allows to search entries having either a matching destination or
+departure airport.
+
 Additional context menu items and buttons allow adding, editing, and
-deleting of logbook entries.
+deleting of logbook entries as well as saving or loading the attached flight plan or track.
 
 One or more logbook entries are highlighted on the map with blue lines
 connecting departure and destination as well as the two airports once
@@ -37,13 +66,24 @@ selected in the search result table.
 
 The label at the connecting great circle line shows departure airport
 ident, destination airport ident and great circle distance. A tooltip is
-shown if hovering the mouse over the blue line.
+shown if hovering the mouse over the blue direct connection or flight plan preview lines.
 
 .. figure:: ../images/logbook.jpg
 
        Map showing several logbook entries selected and
        highlighted. Departure and destination of each entry is connected by a
        great circle line. A tooltip shows more information.
+
+.. figure:: ../images/logbook_preview.jpg
+
+     A selected logbook entry and the flight plan preview showing the waypoints and flying direction.
+
+     The dashed line shows the flown track.
+
+.. tip::
+
+      Search for logbook entries with a max distance of zero if you like to remove invalid entries
+      from interrupted flights or pattern work.
 
 .. _logbook-top-buttons:
 
@@ -53,6 +93,30 @@ Top Buttons and additional Menu Items
 See :ref:`search-result-table-view-context-menu` for a
 description of common context menu items across all search dialogs. All
 buttons have an equivalent in the result table context menu.
+
+Airport
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Sub-menu for departure and destination airport.
+
+|Show Information| Show Information for Airport
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Show on Map| Show on Map
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Set as Flight Plan Departure| Set as Flight Plan Departure
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Set as Flight Plan Destination| Set as Flight Plan Destination
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Set as Flight Plan Alternate| Set as Flight Plan Alternate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+These menu items are only enabled for a right click on a departure or destination airport name or ICAO.
+
+Same functionality as in :ref:`map-context-menu` and in :ref:`flight-plan-table-view-context-menu`.
 
 .. _logbook-add:
 
@@ -84,6 +148,66 @@ not possible but database backups are created on each start. See
 :ref:`files-logbook` for information about database backup
 files.
 
+Files
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Sub-menu for referenced and attached files.
+
+|Open Flight Plan| Open Flight Plan
+"""""""""""""""""""""""""""""""""""""""""""""
+
+Opens the referenced flight plan file.
+This menu item is disabled if the referenced file cannot be found.
+This can be the case if the file was renamed or moved.
+
+Same as :ref:`open-flight-plan`.
+
+|Open Aircraft Performance| Open Aircraft Performance
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Opens the referenced aircraft performance file.
+This menu item is disabled if the referenced file cannot be found.
+This can be the case if the file was renamed or moved.
+
+Same as :ref:`aircraft-menu-load`.
+
+Open attached Flight Plan
+"""""""""""""""""""""""""""""""""
+
+Opens the attached flight plan file replacing the current plan.
+
+Save attached Flight Plan as
+"""""""""""""""""""""""""""""""""
+
+Saves the attached LNMPLN flight plan to a new file.
+
+Open attached Aircraft Performance
+""""""""""""""""""""""""""""""""""""
+
+Opens the attached performance file replacing the current aircraft performance.
+
+Save attached Aircraft Performance as
+""""""""""""""""""""""""""""""""""""""""""""
+
+Saves the attached LNMPERF flight plan to a file.
+
+Save attached GPX Trail as
+""""""""""""""""""""""""""""""""""""""""""""
+
+Saves the attached GPX to a file which contains the flown trail as well as the flight plan preview.
+
+View Options
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Show direct connection
+"""""""""""""""""""""""""""""""""
+
+Show flight plan preview
+"""""""""""""""""""""""""""""""""
+
+Show aircraft trail
+"""""""""""""""""""""""""""""""""
+
 .. _open-flight-plan-logbook:
 
 |Open Flight Plan| Open Flight Plan
@@ -98,7 +222,7 @@ file was moved or renamed.
 |Open Aircraft Performance| Open Aircraft Performance
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Loads a ``lnmperf`` aircraft performance profile and shows the fuel
+Loads a LNMPERF aircraft performance profile and shows the fuel
 report. This menu item is disabled if the aircraft performance field in
 the logbook entry is empty or if the file was moved or renamed.
 
@@ -176,24 +300,12 @@ Block fuel and trip fuel are extracted from :ref:`fuel-report`.
 
 Used fuel is the fuel consumption between liftoff and touchdown.
 
-Tab Description or Comments
+Tab Remarks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Links are recognized in the field ``Description or Comments`` and can be opened in
-the dock window ``Information`` on tab ``Logbook`` which is shown after
-clicking on a logbook entry or selecting ``Show Information`` in one of
-the context menus.
+Free text input field which is also shown in the tooltip and the information window on tab ``Logbook``.
 
-Normal web links like ``http://www.example.com`` or
-``https://www.example.com`` are recognized besides directory or file
-links like ``file:///C:/Users/me/Documents/Aircraft%20Notes.txt`` on
-Windows or ``file:///home/me/Aircraft%20Notes.txt`` on macOS or Linux.
-
-Note that you have to use the forward slash ``/`` instead of the
-backslash ``\`` on Windows as a path separator.
-
-Replace spaces in links with ``%20`` since *Little Navmap* recognizes
-links until the next space.
+See :doc:`REMARKS` for more information about using web links in this field.
 
 Edit a single Logbook Entry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -233,6 +345,14 @@ This dialog shows two tabs:
    in the table below. The content of the table can be copied as CSV to
    the clipboard.
 
+Some simulators report a wrong departure and arrival time in rare cases which can result in negative
+flying time for some flights.
+
+The logbook statistics ignore these invalid simulator time intervals.
+
+Correct the simulator departure or arrival time manually if you find such cases.
+
+
 .. figure:: ../images/logbook_stats.jpg
 
           Overview tab of logbook statistics dialog.
@@ -242,14 +362,9 @@ This dialog shows two tabs:
 Import and Export
 ~~~~~~~~~~~~~~~~~
 
-The full logbook can be imported and exported to a CSV (comma separated
-value) text file which can be loaded in *LibreOffice Calc* or *Microsoft
-Excel*. All data can be exported and imported which allows to use this
-function for backup purposes.
-
-Note that it is not possible to export a selection similar to the
-userpoints. Only the full logbook can be exported. Import appends the
-logbook entries from the CSV file to already present logbook entries.
+The full logbook or selected logbook entries can be imported and exported to a CSV (comma separated
+value) text file which can be loaded in *LibreOffice Calc* or *Microsoft Excel*. All data can be
+exported and imported which allows to use this function for backup purposes.
 
 Export and import can be done by using the menu items :ref:`logbook-import-csv` and
 :ref:`logbook-export-csv`.
@@ -267,7 +382,7 @@ Navmap* logbook database. Note that the X-Plane logbook format is
 limited and does not provide enough information to fill all *Little
 Navmap* logbook fields.
 
-The imported logbook entries get a description containing
+The imported logbook entries get remarks  containing
 ``Imported from X-Plane logbook X-Plane Pilot.txt`` which allows to
 search for the imported entries. Use a pattern like
 ``*Imported from X-Plane logbook X-Plane Pilot.txt*`` in the description
@@ -306,7 +421,7 @@ Automatically converts all legacy log entries that were collected as
 userpoints having type ``Logbook``. The conversion copies them to the
 new logbook after showing an information dialog.
 
-The conversion works best if field ``Description`` in the userpoints was
+The conversion works best if field ``Remarks`` in the userpoints was
 not modified and if no entries were inserted manually.
 
 The converted logbook entries are appended to the current logbook. The
@@ -368,83 +483,93 @@ Wikipedia for detailed information on the format.
 Altitudes are always feet and distances are always nautical miles in the
 exported CSV.
 
-The first line of the CSV contains the field names.
+The first line of the CSV contains the field names if chosen for export.
 
 +-----------------------------------+-----------------------------------+
 | Field name                        | Description                       |
 +===================================+===================================+
-| aircraft_name                     | Free name like ``Cessna 172``     |
+| Aircraft Name                     | Free name like ``Cessna 172``     |
 +-----------------------------------+-----------------------------------+
-| aircraft_type                     | ICAO type descriptor like         |
+| Aircraft Type                     | ICAO type descriptor like         |
 |                                   | ``B732``                          |
 +-----------------------------------+-----------------------------------+
-| aircraft_registration             | e.g. ``N12345``                   |
+| Aircraft Registration             | e.g. ``N12345``                   |
 +-----------------------------------+-----------------------------------+
-| flightplan_number                 | Flight number if available        |
+| Flightplan Number                 | Flight number if available        |
 +-----------------------------------+-----------------------------------+
-| flightplan_cruise_altitude        | Flight plan cruise altitude in    |
+| Flightplan Cruise Altitude        | Flight plan cruise altitude in    |
 |                                   | feet                              |
 +-----------------------------------+-----------------------------------+
-| flightplan_file                   | Full path to flight plan file     |
+| Flightplan File                   | Full path to flight plan file     |
 +-----------------------------------+-----------------------------------+
-| performance_file                  | Full path to performance file     |
+| Performance File                  | Full path to performance file     |
 +-----------------------------------+-----------------------------------+
-| block_fuel                        | From aircraft performance - lbs   |
+| Block Fuel                        | From aircraft performance - lbs   |
 +-----------------------------------+-----------------------------------+
-| trip_fuel                         | As above                          |
+| Trip Fuel                         | As above                          |
 +-----------------------------------+-----------------------------------+
-| used_fuel                         | As above                          |
+| Used Fuel                         | As above                          |
 +-----------------------------------+-----------------------------------+
-| is_jetfuel                        | Calculated from aircraft fuel,    |
+| Is Jetfuel                        | Calculated from aircraft fuel,    |
 |                                   | ``1`` is jet fuel                 |
 +-----------------------------------+-----------------------------------+
-| grossweight                       | Weight at takeoff, lbs            |
+| Grossweight                       | Weight at takeoff, lbs            |
 +-----------------------------------+-----------------------------------+
-| distance                          | Flight plan distance in NM        |
+| Distance                          | Flight plan distance in NM        |
 +-----------------------------------+-----------------------------------+
-| distance_flown                    | Actual flown distance in NM       |
+| Distance Flown                    | Actual flown distance in NM       |
 +-----------------------------------+-----------------------------------+
-| departure_ident                   | Airport ICAO code                 |
+| Departure Ident                   | Airport ICAO code                 |
 +-----------------------------------+-----------------------------------+
-| departure_name                    | Airport name                      |
+| Departure Name                    | Airport name                      |
 +-----------------------------------+-----------------------------------+
-| departure_runway                  | Runway if available               |
+| Departure Runway                  | Runway if available               |
 +-----------------------------------+-----------------------------------+
-| departure_lonx                    | Coordinates if available and      |
+| Departure Lonx                    | Coordinates if available and      |
 |                                   | airport resolves                  |
 +-----------------------------------+-----------------------------------+
-| departure_laty                    | As above                          |
+| Departure Laty                    | As above                          |
 +-----------------------------------+-----------------------------------+
-| departure_alt                     | Elevation in feet                 |
+| Departure Alt                     | Elevation in ft                   |
 +-----------------------------------+-----------------------------------+
-| departure_time                    | Real world departure time in      |
+| Departure Time                    | Real world departure time in      |
 |                                   | local time                        |
 +-----------------------------------+-----------------------------------+
-| departure_time_sim                | Simulator departure time in UTC   |
+| Departure Time Sim                | Simulator departure time in UTC   |
 +-----------------------------------+-----------------------------------+
-| destination_ident                 | Same as above for destination     |
+| Destination Ident                 | Same as above for destination     |
 +-----------------------------------+-----------------------------------+
-| destination_name                  | As departure                      |
+| Destination Name                  | As departure                      |
 +-----------------------------------+-----------------------------------+
-| destination_runway                | As departure                      |
+| Destination Runway                | As departure                      |
 +-----------------------------------+-----------------------------------+
-| destination_lonx                  | As departure                      |
+| Destination Lonx                  | As departure                      |
 +-----------------------------------+-----------------------------------+
-| destination_laty                  | As departure                      |
+| Destination Laty                  | As departure                      |
 +-----------------------------------+-----------------------------------+
-| destination_alt                   | As departure                      |
+| Destination Alt                   | As departure                      |
 +-----------------------------------+-----------------------------------+
-| destination_time                  | As departure                      |
+| Destination Time                  | As departure                      |
 +-----------------------------------+-----------------------------------+
-| destination_time_sim              | As departure                      |
+| Destination Time Sim              | As departure                      |
 +-----------------------------------+-----------------------------------+
-| route_string                      | ICAO route description            |
+| Route string                      | ICAO route description            |
 +-----------------------------------+-----------------------------------+
-| simulator                         | ``X-Plane 11``, ``Prepar3D v4``,  |
+| Simulator                         | ``X-Plane 11``, ``Prepar3D v4``,  |
 |                                   | etc.                              |
 +-----------------------------------+-----------------------------------+
-| description                       | Free text by user                 |
+| Description                       | Free text by user                 |
 +-----------------------------------+-----------------------------------+
+| Flightplan                        | The flight plan in LNMPLN         |
+|                                   | XML format                        |
++-----------------------------------+-----------------------------------+
+| Aircraft Perf                     | The aircraft performance in       |
+|                                   | LNMPERF XML format                |
++-----------------------------------+-----------------------------------+
+| Aircraft Trail                    | The flown trail and flight plan   |
+|                                   | preview in GPX format             |
++-----------------------------------+-----------------------------------+
+
 
 .. |Add Logbook Entry| image:: ../images/icon_logdata_add.png
 .. |Edit Logbook Entry| image:: ../images/icon_logdata_edit.png
@@ -455,4 +580,11 @@ The first line of the CSV contains the field names.
 .. |Clear Selection| image:: ../images/icon_clearselection.png
 .. |Help| image:: ../images/icon_help.png
 .. |Menu Button| image:: ../images/icon_menubutton.png
+
+.. |Show Information| image:: ../images/icon_globals.png
+.. |Show on Map| image:: ../images/icon_showonmap.png
+.. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
+.. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
+.. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
+
 

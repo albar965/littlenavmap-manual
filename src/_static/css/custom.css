@@ -10,23 +10,34 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
 
 h1 {
   border-bottom: 0.1em solid #707070;
+  font-size: 1.3em;
 }
 
 h2 {
   border-bottom: 0.07em solid #707070;
+  font-size: 1.2em;
 }
 
 h3 {
   border-bottom: 0.05em solid #707070;
+  font-size: 1.0em;
+}
+
+h4 {
+  font-size: 0.9em;
+}
+
+h5 {
+font-size: 0.9em;
 }
 
 .rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
-  font-size: 1.em;
+  font-size: 0.9em;
   color: black;
   background-color: #e8e8e8;
   border: solid;
   border-color: lightgray;
-  border-width: 0.2px;
+  border-width: 0.1px;
   border-radius: 3px;
 }
 
@@ -48,6 +59,10 @@ footer p {
   font-size: 0.8rem;
 }
 
+p {
+  margin-bottom: 0.7em;
+}
+
 .wy-side-nav-search > div.version {
   color: white;
 }
@@ -65,6 +80,9 @@ footer p {
     color: white;
 }
 
+.rst-content .code-block-caption {
+    text-align: left;
+}
 /*.caption {
     background:     #f4f4f4;
 }*/

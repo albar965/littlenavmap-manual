@@ -30,13 +30,13 @@ Below is an example that gets radial and distance from two VORs for
 ``ETUO``. Measurement lines can also start at NDBs or waypoints. Note
 the suffix ``°M`` which indicates magnetic course.
 
-See also :ref:`measure-gc-distance-from-here` and :ref:`measure-rhumb-distance-from-here`.
+See also :ref:`measure-gc-distance-from-here`.
 
 |VOR Radials|
 
 The same can be used when flying airways without GPS. In the example
 below fly 323 degrees magnetic to VOR ``SFD`` (radial 143). You are at
-``WAFFU`` when the DME shows 13.7 nautical miles. Then turn left to
+``WAFFU`` when the DME shows 13.7 NM. Then turn left to
 280°M until you intercept 302° to ``GWC``.
 
 |VOR Airways|
@@ -97,7 +97,6 @@ airport is visible or not.
 .. |Range Rings| image:: ../images/tutorial_tipsrangerings.jpg
 .. |VOR Radials| image:: ../images/tutorial_tipvor.jpg
 .. |VOR Airways| image:: ../images/tutorial_tipvorairway.jpg
-.. |Measure Rhumb Distance from here| image:: ../images/icon_distancemeasurerhumb.png
 .. |Approach Guidance| image:: ../images/tutorial_tipsapproach.jpg
 .. |Search Add-On| image:: ../images/tutorial_tipscenery.jpg
 .. |Reset Search| image:: ../images/icon_clear.png

@@ -99,16 +99,16 @@ airspaces by selecting ``Online`` as airspace source (:ref:`airspace-source`)
 Detailed information for online centers/airspaces is shown on :doc:`INFO`.
 
 The following types are available and can be enabled in the drop down
-menus on the airspace toolbar or sub menu
-:ref:`airspaces`:
+menus on the airspace toolbar or sub-menu
+:ref:`menu-airspaces`:
 
 -  **Observer:** Circle size is taken from the ``Visual Range`` value of
    the center.
 -  **Flight Information (Center):** Uses ``Visual Range``.
 -  **Delivery (Clearance):** Uses ``Visual Range``.
--  **Ground:** Shows a circle with a diameter of 10 nm.
--  **Tower:** 20 nm circle.
--  **Approach:** 40 nm circle.
+-  **Ground:** Shows a circle with a diameter of 10 NM.
+-  **Tower:** 20 NM circle.
+-  **Approach:** 40 NM circle.
 -  **ACC (Center):** Uses ``Visual Range``.
 -  **Departure:** Uses ``Visual Range``.
 

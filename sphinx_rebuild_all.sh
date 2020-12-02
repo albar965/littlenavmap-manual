@@ -41,13 +41,13 @@ for LANGNAME in "$@" ; do
   echo
   echo =====================================================================================
   echo Running ebook-convert for A4 PDF ====================================================
-  ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}_a4.pdf --preserve-cover-aspect-ratio --paper-size a4 --base-font-size 9
+  ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}_a4.pdf --preserve-cover-aspect-ratio --paper-size a4 --base-font-size 6
 
   # Create US Letter PDF
   echo
   echo =====================================================================================
   echo Running ebook-convert for US Letter PDF =============================================
-  ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}_letter.pdf --preserve-cover-aspect-ratio --paper-size letter --base-font-size 9
+  ebook-convert deploy/littlenavmap_book_${LANGNAME}.epub deploy/littlenavmap_book_${LANGNAME}_letter.pdf --preserve-cover-aspect-ratio --paper-size letter --base-font-size 6
 
 done
 

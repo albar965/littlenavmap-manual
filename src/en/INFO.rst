@@ -15,7 +15,7 @@ the context menu of the text fields or use ``Ctrl+A`` to select all and
 Note that the formatted
 clipboard content is removed when *Little Navmap* is closed.
 
-Bearing and distance (rhumb line constant course) to the user aircraft
+Bearing and distance to the user aircraft
 is shown for airports, navaids and userpoints if connected to a
 simulator and if the distance is below 500 NM.
 
@@ -49,6 +49,8 @@ the same position:
    logbook entries or userpoints have priority before airports, navaids
    and others.
 
+Use the map context menu for an easier selection of map objects through the sub-menus.
+
 Links
 ~~~~~
 
@@ -67,7 +69,7 @@ Scenery Information
 
 All information about airports and navaids includes one or more links at
 the bottom of the object information in section ``Scenery``. These links
-point to the matching ``BGL`` (FSX, P3D) or ``dat`` (X-Plane) files that
+point to the matching BGL (FSX, P3D and MSFS) or dat (X-Plane) files that
 contain information about the airport or navaid. Click the links to open
 the containing directory in your file manager (e.g. Windows Explorer).
 If possible, the matching file will be selected automatically.
@@ -75,31 +77,63 @@ If possible, the matching file will be selected automatically.
 Multiple links can appear for airports since these can be updated by
 several files from different add-on sceneries or navdata updates.
 
+.. note::
+
+    The links shown as plain text with an additional remark like ``File not found`` if the file or folder is missing.
+    This can happen if you copy databases between computers and has no further consequences.
+
 Tabs in Information Dock Window
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _airport:
 
-Tabs Airport, Runways, Com, Procedures, Nearest and Weather
+Airport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-These six tabs show information for one selected airport.
+A tab that has several sub-tabs for airport information.
+
+The six tabs ``Overview``, ``Runways``, ``Com``, ``Procedures``, ``Nearest`` and ``Weather`` below
+the airport tab show information for one selected airport.
+
+.. _airport-general:
+
+General
+''''''''''''''''''''''''''''''''''''
 
 Sunrise and sunset for the airport are calculated based on current real
 date if no simulator is connected. Otherwise the simulator date is used.
 This is indicated by the text ``(civil twilight, real date)`` or
 ``(civil twilight, simulator date)``.
 
-Airport Tab - Links
-'''''''''''''''''''
+Preferred runways depending on wind are shown after the METAR. More
+details about preferred runways are on the tab :ref:`airport-weather`.
+
+Additional links for helipads are available in the tab ``Runways``.
+
+The tab ``Nearest`` shows airports having procedures and closest navaids
+relative to the selected airport.
+
+.. _airport-links:
+
+Links
+''''''''''''''''''''''''''''''''''''
 
 Links to several online services like
 `SkyVector <https://skyvector.com/>`__ or the `The X-Plane Scenery
 Gateway <https://gateway.x-plane.com/>`__ open the browser with
 information for the airport using the respective online service.
 
-Airport Tab - Files
-'''''''''''''''''''
+The links are shown in the tab ``Overview``.
+
+.. figure:: ../images/infolinks.jpg
+
+         Airport information with linked web-sites in the
+         ``Links`` section and links to user files in the ``Files`` section.
+
+.. _airport-files:
+
+Files
+''''''''''''''''''''''''''''''''''''
 
 *Little Navmap* will show extra links to local files if you put these
 into a special directory with the name of the airport ICAO ident.
@@ -132,27 +166,7 @@ interface language to English.
 English path like: ``...\Little Navmap Files\Airports\LFEC`` and
 ``...\Little Navmap Dateien\Flugplätze\LFEC``.
 
-.. figure:: ../images/infolinks.jpg
-
-         Airport information with linked web-sites in the
-         ``Links`` section and links to user files in the ``Files`` section.
-
-Other Tabs
-''''''''''
-
-Preferred runways depending on wind are shown after the METAR. More
-details about preferred runways are on the tab ``Weather``.
-
-The tab ``Weather`` shows decoded weather information for a selected
-airport. The flight rules icon (:ref:`airport-weather-legend`) has a suffix ``- Map`` if the
-shown weather source is the source for airport weather icons on the map.
-Also shown is detailed information for best runways for takeoff and
-landing based on wind conditions.
-
-Additional links for helipads are available in the tab ``Runways``.
-
-The tab ``Nearest`` shows airports having procedures and closest navaids
-relative to the selected airport.
+The links are shown in the tab ``Overview``.
 
 .. figure:: ../images/infoairport.jpg
 
@@ -191,7 +205,7 @@ window to remove them from the map.
      Navaid information. Display of several airways with altitude restrictions and list of
      clickable waypoints. Clicking on the link ``Map`` highlights a whole airway.
 
-.. _airspaces:
+.. _airspaces-tab:
 
 Tab Airspaces
 ^^^^^^^^^^^^^
@@ -210,6 +224,17 @@ to remove the highlights from the map.
      Two airspaces that are shown in the information
      after clicking into the map. Two airspaces are highlighted on the map
      after clicking onto the ``Map`` link in the information text.
+
+.. _airport-weather-tab:
+
+Tab Weather
+^^^^^^^^^^^^^
+
+The tab ``Weather`` shows decoded weather information for a selected
+airport. The flight rules icon (:ref:`airport-weather-legend`) has a suffix ``- Map`` if the
+shown weather source is the source for airport weather icons on the map.
+Also shown is detailed information for best runways for takeoff and
+landing based on wind conditions.
 
 Other Tabs
 ^^^^^^^^^^
@@ -263,7 +288,7 @@ text in red or orange. These are:
 -  Fuel and time estimated since aircraft performance not valid.
 -  Insufficient fuel at destination (only if aircraft performance is
    valid).
--  Speed limit of 250 knots exceeded below 10000 feet.
+-  Speed limit of 250 knots exceeded below 10,000 ft.
 -  Icing.
 
 Fuel and time estimates are based on the aircraft
@@ -278,6 +303,10 @@ considered in this calculation.
 Time of arrival is similarly calculated by current time and aircraft
 performance prediction considering wind, climb cruise and descent
 phases.
+
+Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
+
+Some rows like ``Ice`` are hidden if the condition is not met.
 
 .. note::
 

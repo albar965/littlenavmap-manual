@@ -20,14 +20,14 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Little Navmap'
-copyright = u'2019, Alexander Barthel'
+copyright = u'2019-2020, Alexander Barthel'
 author = u'Alexander Barthel'
 
 # VERSION_NUMBER
 # The short X.Y version
 version = u'2.6'
 # The full version, including alpha/beta/rc tags
-release = u'2.6.0.beta'
+release = u'2.6.5.rc1'
 
 nitpicky = True
 
@@ -44,7 +44,7 @@ nitpicky = True
 extensions = [ ]
 
 # Add any paths that contain templates here, relative to this directory.
-#templates_path = ['_templates']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -106,7 +106,7 @@ html_show_sourcelink = False
 html_copy_source = False
 #html_add_permalinks=False
 html_show_copyright = True
-
+html_title='Little Navmap User Manual'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

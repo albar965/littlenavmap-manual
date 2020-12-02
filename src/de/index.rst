@@ -17,7 +17,7 @@ Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.or
 Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
 Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
 
-**Neue und komplett überarbeitete Version des Benutzerhandbuches für Little Navmap Version 2.4.**
+**Bitte beachten, dass diese Anleitung für** *Little Navmap* |release| **noch in Bearbeitung ist.**
 
 --------------
 

@@ -1,11 +1,10 @@
-Flight Plan Online Export
--------------------------
+Flight Plan Online Network Export
+-------------------------------------
 
 This dialog appears when exporting a flight plan for the online network
 clients using the export menu items
-:ref:`flight-plan-formats-ivap`,
-:ref:`flight-plan-formats-xivap` or
-:ref:`flight-plan-formats-vpilot`.
+:ref:`flight-plan-formats-ivap`, :ref:`flight-plan-formats-xivap`, :ref:`flight-plan-formats-vpilot` or
+:ref:`multiexport-flight-plan`.
 
 Some input fields might hidden depending on format.
 
@@ -26,7 +25,7 @@ sessions. These are:
 -  ``Destination``: Last waypoint in flight plan.
 -  ``Route``: Generated from the flight plan waypoints, airways, SID and
    STAR (:doc:`ROUTEDESCR`).
--  ``Cruise altitude``: Taken from flight plan. Cruise altitude in feet.
+-  ``Cruise altitude``: Taken from flight plan. Cruise altitude in ft.
 -  ``True Airspeed``: From the current aircraft performance cruise
    speed.
 -  ``Departure time``: Uses current UTC time as default. Adjust as

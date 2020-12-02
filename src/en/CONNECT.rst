@@ -2,14 +2,14 @@
 --------------------------------------------------------------
 
 The setup procedure is different for local connections and remote
-(networked) connections to a flight simulator.
+(networked) connections to a flight simulator (:ref:`remote-connection`).
 
-*Little Navmap* can connect directly if all programs are running on the
+*Little Navmap* can connect directly to a flight simulator running on the
 same computer. The *Little Navconnect* agent is needed if *Little
 Navmap* is used on a remote computer.
 
-The *Little Xpconnect* has to be installed in X-Plane to allow *Little Navmap*
-connecting to X-Plane.
+The *Little Xpconnect* plugin has to be installed in X-Plane to allow both *Little Navmap* and
+*Little Navconnect* to connect to X-Plane.
 
 Local Connection
 ~~~~~~~~~~~~~~~~
@@ -18,24 +18,26 @@ All Simulators
 ^^^^^^^^^^^^^^
 
 Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
-``Flight Simulator Connection`` in the main menu and choose the
+:ref:`flight-simulator-connection` in the main menu and choose the
 simulator to which the connection should be established.
 
 .. figure:: ../images/connectlocal.jpg
 
      *Little Navmap* connect dialog set up for a local
-     connection to FSX or P3D. The connection will be established manually.
+     connection to FSX, P3D or MSFS on the left and X-Plane on the right.
+     The connection will be established automatically.
 
-Select ``Connect directly to local Flight Simulator``.
+Click on the tab corresponding to the simulator you want to connect to.
 
-Now click ``Connect``. The dialog will close and *Little Navmap* will
-try to establish a connection in the background.
+Now click the ``Connect`` button. The dialog will close and *Little Navmap* will
+try to establish a connection in the background to the simulator
+noted in the tab header.
 
 Clicking ``Close`` keeps all changes and closes the dialog without
 establishing a connection.
 
 Enable ``Connect automatically`` if you do not want to connect manually.
-The start order of programs does not matter if this is checked and
+The start order of programs does not matter if this is checked.
 *Little Navmap* will find the simulator once it is started or when it is
 already running. This is the recommended setting.
 
@@ -51,19 +53,18 @@ X-Plane
 You have to install the included *Little Xpconnect* plugin to use
 *Little Navmap* as a moving map with X-Plane.
 
-The plugin is bundled with *Little Navmap* and can be downloaded
-separately too.
+The plugin is bundled with *Little Navmap* but can also be downloaded
+separately.
 
 Copy the whole plugin directory ``Little Xpconnect`` into the directory
 ``plugins`` in the directory ``Resources`` in the X-Plane installation.
 The complete path should look like
 ``.../X-Plane 11/Resources/plugins/Little Xpconnect``
 
-You can check the X-Plane plugin manager to see if it is loaded
-correctly.
+The plugin is installed and working correctly if you can see it in the X-Plane plugin manager.
+Note that the plugin does not add any items to the X-Plane menu.
 
-When connecting with *Little Navmap* select the option
-``Connect directly to a local X-Plane simulator``.
+Select the X-Plane tab to connect.
 
 .. _remote-connection:
 
@@ -72,27 +73,14 @@ Remote Connection
 
 User aircraft and weather information is transferred to *Little Navmap*
 on a remote computer by using the *Little Navconnect* agent on the
-flying computer which circumvents the error prone and tedious setup of a
-remote SimConnect connection.
+flying computer.
 
 .. note::
 
-     Weather information cannot be transferred across a remote
-     connection from X-Plane.
+     Airport weather information and winds aloft cannot be transferred across a remote
+     connection from X-Plane. You can only see the current weather around the user aircraft.
 
-You have to extract the ZIP archive that contains ``littlenavmap.exe``
-and ``littlenavconnect.exe`` on both computers. Then load the scenery
-database on the computer running the simulator and copy the database
-over to the remote computer. See :doc:`RUNNOSIM` for details.
-
-Make sure that the major versions of *Little Navmap* and *Little
-Navconnect* match, otherwise you might get an error message. Use the
-version of *Little Navconnect* which is included in the *Little Navmap*
-download archive if unsure.
-
-For X-Plane you also have to install the *Little Xpconnect* plugin. See
-the file ``README.txt`` in directory ``Little Xpconnect`` for
-installation instructions.
+See :doc:`NETWORK` on information how to set up a remote/networked connection.
 
 .. _connect-start-navconnect:
 
@@ -116,7 +104,7 @@ computers.
 
 .. figure:: ../images/littlenavconnect.jpg
 
-   `Little Navconnect <https://albar965.github.io/littlenavconnect.html>`__ is
+   *Little Navconnect* is
    running and waiting for a Flight Simulator. It is running on the
    computer ``win10.fritz.box`` with the IP address ``192.168.2.13``.
 
@@ -131,7 +119,7 @@ Start *Little Navmap* on the Client / Remote Computer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
-``Flight Simulator Connection`` in the main menu.s
+``Flight Simulator Connection`` in the main menu.
 
 .. figure:: ../images/connect.jpg
 
@@ -140,7 +128,7 @@ Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
 
 Now do the following after opening the dialog:
 
-#. Select ``Connect to a remote Flight Simulator``.
+#. Click the ``Remote / Network`` tab.
 #. Add the value for host name. This can be either the host name or the
    IP address printed by *Little Navconnect*.
 #. Check the value for the port. ``51968`` is the default value and
@@ -169,7 +157,7 @@ Navconnect* to disable the transfer of this information across the
 network. This can be useful for performance reasons if you use large
 amounts of AI but do not want to see it in *Little Navmap*.
 
-.. _options:
+.. _connect-options:
 
 Connect Dialog Options
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -196,8 +184,9 @@ Connect Dialog Options
    *Little Navmap*.
 -  ``Fetch AI or multiplayer aircraft`` and
    ``Fetch AI or multiplayer ships``: Disables fetching of AI vehicles.
-   These settings are applied immediately. Note that ship traffic is not
-   available for X-Plane.
+   These settings are applied immediately.
+-  ``AI Fetch Radius``: Limits the number of AI aircraft around the user aircraft.
+   Only for FSX, P3D and MSFS.
 
 .. |Flight Simulator Connection| image:: ../images/icon_network.png
 

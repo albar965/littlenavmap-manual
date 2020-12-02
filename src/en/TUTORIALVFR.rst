@@ -7,7 +7,7 @@ General
 This tutorial will show how to create a simple flight plan based on the
 map and its context menus.
 
-The flight plan included in the *Little Navmap* directory:
+The flight plan included in the *Little Navmap* installation directory:
 ``.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) to Challes-les-Eaux (LFLE).pln``.
 
 The airport names might differ depending on simulator.
@@ -27,7 +27,7 @@ Challes-les-Eaux (LFLE), 41 nm, 0 h 24 m, Direct*
 Prepare Flight
 ~~~~~~~~~~~~~~
 
-I'd recommend to get use ``Flight`` -> ``Reset all for a new Flight``
+I'd recommend to get use ``Flight`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
 fuel calculation and other functions. Uncheck
 ``Create a new and empty flight plan`` in the dialog if your plan is
@@ -43,7 +43,7 @@ if you like to do this.
 Therefore, we will simply use the default which gives a three degree
 climb and descent angle as well as 100 knots cruise speed.
 
-Select ``Aircraft`` -> ``New Aircraft Performance ...`` |New Aircraft
+Select ``Aircraft`` -> :ref:`aircraft-menu-new` |New Aircraft
 Performance ...|. Accept the default values by pressing ``OK`` in the
 dialog. You will see several warnings in the fuel report. Ignore these
 for now since the aircraft performance is sufficient to calculate the
@@ -58,7 +58,7 @@ Alps. You can use the following functions to navigate:
 -  The map overlay on the right.
 -  The mouse (click and drag) to move and the mouse wheel to zoom.
 -  The cursor keys to move and the keys ``+`` and ``-`` for zooming in
-   and out (click into the map window to activate it before using the
+   and out (click into the map window or press ``F2`` to activate it before using the
    keys).
 
 Use the back |Back| and forward |Forward| buttons to jump in the
@@ -77,9 +77,11 @@ Now:
 -  Right-click on the center of one of the green ramp parking spots (11
    is used here).
 -  Choose
-   ``Select Airport Meythet (LFLP) / Parking 11 as Flight Plan Departure``
-   |Select Airport / Parking as Flight Plan Departure| in the context
+   ``Select Airport Meythet (LFLP) / Parking 11 as Departure``
+   |Select Airport / Parking as Flight Plan Departure| (:ref:`set-as-flight-plan-departure`) in the context
    menu.
+
+The airport layout and parking spot will be different depending on used simulator.
 
 |Meythet (LFLP) Parking|
 
@@ -97,15 +99,15 @@ Add the waypoints now:
 
 -  Scroll along the valley to the south east across the lake Lac
    d'Annecy.
--  Click ``Append Position to Flight Plan`` |Append Position to Flight
+-  Click :ref:`append-position-to-flight-plan` |Append Position to Flight
    Plan|. The clicked position will be added as an user-defined waypoint
    to the end of your plan.
 
-Click undo |Undo| or redo |Redo| if you don't like what you just added.
+Click undo |Undo| or redo |Redo| in the toolbar if you don't like what you just added.
 
 |Append Waypoint|
 
-Another function is ``Add Position to Flight Plan`` |Add Position to
+Another function is :ref:`add-position-to-flight-plan` |Add Position to
 Flight Plan| which will insert the clicked position to the nearest
 flight plan leg. You can use this to add user-defined positions,
 airports or navaids in the middle of a flight plan. The nearest leg will
@@ -115,14 +117,13 @@ be chosen automatically by *Little Navmap* for inserting the new position.
 waypoints. You can leave these as they are or replace them with a more
 meaningful name.
 
-Right-click on the user waypoint and select
-``Edit Flight Plan Position WP1`` |Edit Flight Plan Position| to change
-a waypoint name or its coordinates. Use nearby villages, mountains,
-lakes or other points of interest. Do not change the coordinates now.
+Waypoints using the default format ``WP`` plus number (e.g. ``WP1`` or ``WP99``) are automatically
+renumbered to reflect the flying order in the flight plan.
 
-The flight simulator limits the name to a certain length and to certain
-characters. Nothing will be added to the name if it is too long or if
-you type the wrong characters.
+Right-click on the user waypoint and select
+``Edit Flight Plan Position WP1`` |Edit Flight Plan Position| (:ref:`edit-name-of-user-waypoint`) to change
+a waypoint ident, name, remarks or its coordinates. Use nearby villages, mountains,
+lakes or other points of interest. Do not change the coordinates now.
 
 |Edit Waypoint Name|
 
@@ -135,7 +136,7 @@ Destination Airport
 To add the destination:
 
 -  Right-click on ``Challes-les-Eaux (LFLE)``
--  Select ``Set Airport Challes-les-Eaux (LFLE) as Flight Plan Destination`` |Set Airport as Flight Plan Destination|.
+-  Select ``Set Airport Challes-les-Eaux (LFLE) as Destination`` |Set Airport as Flight Plan Destination| (:ref:`set-as-flight-plan-destination`).
 
 |Select Destination|
 
@@ -145,11 +146,9 @@ Now there is a flight plan. Yours might look a bit different.
 
 You can also use the drag and drop feature to move points or add new
 ones. Enable it by checking ``Flight Plan`` ->
-``Edit Flight Plan on Map`` |Edit Flight Plan on Map| and click on a
+``Edit Flight Plan on Map`` |Edit Flight Plan on Map| (see :doc:`MAPFPEDIT`) and click on a
 flight plan waypoint to move it. Click on a flight plan leg to add a new
 waypoint into this leg.
-
-See :doc:`MAPFPEDIT` for more information.
 
 Cruise Altitude
 ~~~~~~~~~~~~~~~
@@ -185,7 +184,7 @@ Now look if your flight plan touches any airspaces.
 Click into one of the airspaces nearby start and destination and have a
 look at the information dock window. There are several airspaces:
 
--  ``Geneva TMA Sector 8`` which starts at 9500 feet above mean sea
+-  ``Geneva TMA Sector 8`` which starts at 9,500 ft above mean sea
    level (MSL). This is higher than our cruise altitude and won't affect
    us.
 -  Two Class E airspaces. The information window notes for these:
@@ -199,9 +198,23 @@ latest navdata or stock airspace data.
 
 |Airspaces|
 
-Save the plan using ``File`` -> ``Save Flight Plan`` |Save Flight Plan|.
+Saving
+~~~~~~~~~~~~~~
+
+Save the plan in the *Little Navmap* format LNMPLN using ``File`` ->
+:ref:`save-flight-plan` |Save Flight Plan|.
 The program usually finds the right directory for the flight plans and
 gives a sensible name by default.
+
+The format LNMPLN is only understood by *Little Navmap*. You cannot load these files
+into another program. Therefore, we have to export the flight plan.
+
+Now open the multiexport options dialog by selecting ``File`` -> :ref:`multiexport-flight-plan-options`.
+
+Right click on the simulator format you'd like to export and select :ref:`multiexport-export-now` |Export Flight Plan now|.
+Save the file to the right place. The default path is based on best guess.
+
+See here :ref:`multiexport-quick-setup` for information how to quickly configure the multiexport.
 
 Flying
 ~~~~~~
@@ -210,19 +223,20 @@ Follow the steps below to get a moving map and see your aircraft in
 *Little Navmap*:
 
 -  Open the dialog ``Connect`` using ``Tools`` ->
-   ``Flight Simulator Connection`` |Flight Simulator Connection| and
+   :ref:`flight-simulator-connection` |Flight Simulator Connection| and
    check if ``Connect automatically`` is selected. Enable it if not.
    *Little Navmap* will find the simulator no matter if it is already
    started or will be started later.
+-  Click on the tab which corresponds to your simulator.
+   Image below shows the tab for FSX, P3D or MSFS on the left
+   and the tab for X-Plane on the right.
 
-|Connect Dialog|
-
-- Click ``Connect`` which will close the dialog.
-- Enable ``Map`` -> ``Center Aircraft`` |Center Aircraft|. The map will
-  jump to the simulator aircraft and keep it centered if an active flight
-  is loaded, i.e. the simulator is not in the opening screen.
-- Start the
-  simulator if not already done, load the flight plan and go flying.
+   |Connect Dialog|
+-  Click ``Connect`` which will close the dialog.
+-  Enable ``Map`` -> ``Center Aircraft`` |Center Aircraft|. The map will
+   jump to the simulator aircraft and keep it centered if an active flight
+   is loaded, i.e. the simulator is not in the opening screen.
+-  Start the simulator if not already done, load the flight plan and go flying.
 
 See also :doc:`CONNECT`.
 
@@ -230,9 +244,8 @@ Looking at Places while Flying
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* will keep your aircraft and the next flight plan
-waypoint centered on the screen as a default setting. You can choose
-between three modes for keeping the aircraft on screen in ``Tools`` ->
-``Options`` -> ``Simulator Aircraft`` (:ref:`simulator-aircraft`).
+waypoint centered on the screen as a default setting. You can configure
+this function in the options dialog on page :ref:`simulator-aircraft`.
 
 The program will stop following your aircraft for 10 seconds if you
 start any action that zooms in to an airport or navaid (double-click,
@@ -240,8 +253,8 @@ toolbar button or link in the information window) or just simply move or
 zoom around in the map.
 
 Double-click on the destination airport to zoom to the airport diagram,
-for example. When done click the back button |Back| until you are back
-at your aircraft.
+for example. Leave *Little Navmap* alone and the map will jump back to the aircraft
+and next flight plan waypoint after the timeout.
 
 .. |Reset all for a new Flight| image:: ../images/icon_reload.png
 .. |New Aircraft Performance ...| image:: ../images/icon_aircraftperfnew.png
@@ -249,7 +262,7 @@ at your aircraft.
 .. |Forward| image:: ../images/icon_next.png
 .. |Meythet (LFLP)| image:: ../images/tutorial_vfrmap.jpg
 .. |Meythet (LFLP) Tooltip| image:: ../images/tutorial_vfrmapclose.jpg
-.. |Select Airport / Parking as Flight Plan Departure| image:: ../images/icon_airportroutestart.png
+.. |Select Airport / Parking as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
 .. |Meythet (LFLP) Parking| image:: ../images/tutorial_vfrmapparking.jpg
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Undo| image:: ../images/icon_undo.png
@@ -258,7 +271,7 @@ at your aircraft.
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
 .. |Edit Waypoint Name| image:: ../images/tutorial_vfreditname.jpg
-.. |Set Airport as Flight Plan Destination| image:: ../images/icon_airportroutedest.png
+.. |Set Airport as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
 .. |Select Destination| image:: ../images/tutorial_vfrdest.jpg
 .. |VFR Flight Plan| image:: ../images/tutorial_vfrflightplan.jpg
 .. |Edit Flight Plan on Map| image:: ../images/icon_routeedit.png
@@ -268,6 +281,8 @@ at your aircraft.
 .. |Airspaces| image:: ../images/tutorial_vfrairspace.jpg
 .. |Save Flight Plan| image:: ../images/icon_filesave.png
 .. |Flight Simulator Connection| image:: ../images/icon_network.png
-.. |Connect Dialog| image:: ../images/tutorial_vfrconnect.jpg
+.. |Connect Dialog| image:: ../images/connectlocal.jpg
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
+
+.. |Export Flight Plan now| image:: ../images/icon_filesaveas.png
 

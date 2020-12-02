@@ -66,7 +66,7 @@ Options
 ~~~~~~~
 
 Update check settings can be changed in the options dialog on the page
-``Startup and Update``.
+:ref:`startup`.
 
 Check for Updates
 ^^^^^^^^^^^^^^^^^
@@ -84,21 +84,29 @@ program.
 Update Channels
 ^^^^^^^^^^^^^^^
 
-``Stable Versions only``: This will show only notifications for tested
-and stable versions with a complete manual.
+-   ``Stable Versions only``: This will show only notifications for tested
+    and stable versions with a complete English manual.
 
-``Stable and Beta Versions``: Will additionally check for beta/test
-versions. Beta versions are program releases that already contain all
-planned features for a stable release but are still not tested
-carefully. The manual might be incomplete.
+-   ``Stable and Beta Versions``: Will additionally check for beta/test
+    versions. Beta versions are program releases that already contain all
+    planned features for a stable release but are still not tested
+    carefully. The manual might be incomplete.
 
-``Stable, Beta and Development Versions``: *Little Navmap* will also
-show notifications for development releases. These are neither complete
-nor well tested. Features might change over time and the manual is not
-updated for new functionality.
+-   ``Stable, Beta and Development Versions``: *Little Navmap* will also
+    show notifications for development releases. These are neither complete
+    nor well tested. Features might change over time and the manual is not
+    updated for new functionality.
 
-A backup of all settings is recommended before running a development
-version.
+.. note::
+
+     Always use the beta update channel if you use a beta or test version.
+     Otherwise you might miss important updates.
+
+.. warning::
+
+     A backup of all settings is recommended before running a beta or development
+     version. See :doc:`FILES` for directories to save.
+
 
 Check for Updates now
 ^^^^^^^^^^^^^^^^^^^^^

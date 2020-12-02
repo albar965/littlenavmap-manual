@@ -50,7 +50,7 @@ Why Sphinx?
 Tools
 ----------
 
-The follwing tools are needed to compile the HTML and ePUB documentation:
+The following tools are needed to compile the HTML and ePUB documentation:
 
 * `Sphinx installation <https://www.sphinx-doc.org/en/master/usage/installation.html>`_
 * `Read the Docs Sphinx Theme <https://pypi.org/project/sphinx-rtd-theme/>`_ and

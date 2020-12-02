@@ -22,9 +22,20 @@ this case.
 Note that dock windows open automatically when selecting functions like
 ``Show Information`` or clicking on the user aircraft, for example.
 
-Hold ``Ctrl`` while clicking on the window title bar to prevent a window
-from going back into the docked state in the main window and keep it
-floating.
+You can save and load dock window layouts in the ``Window`` menu. See also :doc:`LAYOUT` for
+details.
+
+More dock window related settings like auto activation on mouse overr can be found in the options
+on page :ref:`user-interface`.
+
+.. tip::
+
+    Hold ``Ctrl`` while clicking on the window title bar to prevent a window
+    from going back into the docked state in the main window and keep it
+    floating.
+
+    You can also deselect ``Window`` -> :ref:`allow-window-docking` in the main menu to prevent the dock
+    windows from snapping back into the main window.
 
 Toolbars are also movable by clicking on the left handle and can also be
 closed or detached from the main window similar to the dock windows.
@@ -37,15 +48,12 @@ Toolbars can also be opened and closed in the main menu ``Window``.
 
 .. note::
 
-   Use the ``Window`` menu in the in the main menu to restore
+   Use the ``Window`` menu in the in the main menu to save, load or restore
    closed windows, toolbars and tabs.
-
-
-.. note::
 
    The ``Window`` -> ``Reset Window Layout`` menu item in the
    main menu can be used to reset the state and positions of all dock
-   windows and toolbars back to their default.
+   windows and toolbars back to their default. This also resets the tab visibility and order back to default.
 
 .. figure:: ../images/dock_titlebar.jpg
 
@@ -59,7 +67,7 @@ Toolbars can also be opened and closed in the main menu ``Window``.
 
 .. figure:: ../images/dock_floating.jpg
 
-        Dock window in floating state.
+        Dock window in floating state detached from main window.
 
 .. figure:: ../images/dock_drop_stack.jpg
 

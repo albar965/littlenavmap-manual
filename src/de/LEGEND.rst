@@ -279,7 +279,7 @@ Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 |                                   | wenn kein Flugplan                |
 |                                   | geladen ist.                      |
 +-----------------------------------+-----------------------------------+
-| |Crab Angle|                      | Schiebewinkel. Zeigt die Richtung |
+| |Heading|                         | Schiebewinkel. Zeigt die Richtung |
 |                                   | an, die unter Berücksichtigung    |
 |                                   | des Seitenwindes zum nächsten     |
 |                                   | Wegpunkt des aktiven              |
@@ -954,7 +954,7 @@ Symbol                 Beschreibung
 .. |Closed Airport with Tower| image:: ../images/legend_airport_tower_closed.png
 .. |Closed Airport| image:: ../images/legend_airport_closed.png
 .. |Closed Taxiway| image:: ../images/legend_closedtaxi.png
-.. |Crab Angle| image:: ../images/legend_compass_rose_crab.png
+.. |Heading| image:: ../images/legend_compass_rose_crab.png
 .. |DME| image:: ../images/legend_dme.png
 .. |Distance Circles| image:: ../images/legend_compass_rose_dist.png
 .. |Distance GC| image:: ../images/legend_distance_gc.png

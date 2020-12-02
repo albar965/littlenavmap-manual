@@ -138,7 +138,7 @@ Flying Procedures
 Procedure legs are pre-calculated, with the exception of holds and
 procedure turns. This means you can fly them mostly as they are drawn on
 the map. If in doubt about how to fly a leg (e.g. if too many lines are
-overlapping) look at the procedure table in the flight plan window.
+overlapping) look at the procedure table in the :ref:`flight-plan-table`.
 
 .. _procedures-holds:
 
@@ -170,8 +170,8 @@ display objects.
 
 .. figure:: ../images/hold.jpg
 
-     A hold with 2 nautical miles straight segment
-     length. Enter and exit at ``ZUNAD`` and fly at or above 2600 feet.
+     A hold with 2 NM straight segment
+     length. Enter and exit at ``ZUNAD`` and fly at or above 2,600 ft.
      Course is 61° magnetic degrees.
 
 .. _procedures-flying-exit-holds:
@@ -184,8 +184,7 @@ leg to the next one if one of the two conditions is met:
 
 #. **If the next leg continues after or at the hold fix:** When
    approaching the hold fix after one circuit continue straight on. The
-   next leg will be activated after half a nautical mile up to one
-   nautical mile.
+   next leg will be activated after half a NM up to one NM.
 
 #. **If the next leg starts before the hold fix:** Exit the hold at its
    fix. Exit right turn holds to the left and vice versa (i.e. turn
@@ -202,7 +201,7 @@ Procedure turns
 ^^^^^^^^^^^^^^^
 
 The flight simulator data moves the turn point of a procedure turn 10
-nautical miles out from the fix which is usually too far away.
+NM out from the fix which is usually too far away.
 
 Fly the procedure turn as usual: Minimum one minute from the fix. Use
 more if you need space to catch the next fix after the course reversal.
@@ -247,7 +246,7 @@ Four additional types are used by *Little Navmap*:
 -  ``Straight In``: Added to an approach procedure to show the course
    from the missed approach point (MAP) to the runway threshold. It is
    added when an approach ends with a runway fix. The leg has an
-   altitude restriction 50 feet above the threshold.
+   altitude restriction 50 ft above the threshold.
 -  ``Circle to Land``: Added to an approach procedure to show the course
    from the missed approach point to the airport. It is added if an
    approach does not end with a runway fix.
@@ -286,14 +285,14 @@ Fix Types in a Procedure
    about 45 degrees.
 -  ``Altitude``: A leg or hold that is terminated by reaching a certain
    altitude and is used mostly on missed approaches. Since the distance
-   depends on the aircraft, 2 nautical miles length are used for this
+   depends on the aircraft, 2 NM length are used for this
    leg. You can ignore the line and proceed to the next leg once the
    altitude criteria is satisfied.
 -  ``Manual``: Fly a heading, track or a hold until manually terminated
    by ATC.
 
 Runway fixes are prefixed with ``RW``. They usually have an altitude
-restriction a few feet above the runway. Higher altitude restrictions
+restriction a few ft above the runway. Higher altitude restrictions
 (i.e. > 500 ft) indicate a circling approach.
 
 .. _procedures-restrictions:
@@ -359,5 +358,7 @@ scenery database loading process. This happens only when the source data
 is not valid or incomplete. In this case, the resulting procedure is not
 usable and a warning dialog will be shown if essential navaids are
 missing.
+
+*Little Navmap* might refuse to use the procedure depending on error.
 
 

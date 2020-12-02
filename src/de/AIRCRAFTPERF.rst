@@ -93,7 +93,7 @@ angepasst werden kann. Das Zusammenführen kann jederzeit erfolgen. Siehe
 Dateien
 ~~~~~~~
 
-Leistungsprofildateien (Dateiendung ``lnmperf``) können wie
+Leistungsprofildateien (Dateiendung ``LNMPERF``) können wie
 Flugplandateien gespeichert und geladen werden. Die Leistungsdateien
 können aus einem Dateimanager wie dem Windows Explorer oder dem macOS
 Finder ausgewählt und in das Hauptfenster von *Little Navmap* gezogen

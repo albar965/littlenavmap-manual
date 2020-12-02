@@ -13,7 +13,7 @@ The drop down menu prefixes menu items with a change indicator ``*`` to
 show that the related filter row has modifications. You can use this to
 find out why a search does not give the expected results.
 
-.. note::
+.. tip::
 
       If you do not get the expected results or no results at all use the
       ``Reset Search`` menu item, button Reset Search or press ``Ctrl+R`` to
@@ -35,6 +35,16 @@ code.**
 
 A tooltip on the blue help button on the top right shows information
 about searching.
+
+.. tip::
+
+     You can use the cursor key ``Down`` to jump from the input fields into the result table.
+
+     Using keyboard shortcuts like ``Ctrl+I`` for ``Show Information`` or ``Ctrl+M`` for ``Show on map``
+     are usable directly from the input fields and will apply to the topmost airport in the result table.
+
+     The same applies to other tabs like navaid and logbook search as well.
+
 
 .. _text-filters:
 
@@ -82,7 +92,7 @@ simple spatial search.
 
 The checkbox ``Distance`` has to be selected to enable this search. The
 result will include only airports or navaids that are within the given
-minimum and maximum range of nautical miles from the search center. This
+minimum and maximum range of NM from the search center. This
 allows you to quickly search for a destination that is within the range
 of your aircraft and fulfills other criteria like having lighted runways
 and fuel.
@@ -101,7 +111,7 @@ result table or press ``Ctrl+R`` to clear all search criteria.
 .. figure:: ../images/complexsearch.jpg
 
         A complex distance search: Find all airports within
-        a distance between 200 and 400 nautical miles from Frankfurt (EDDF).
+        a distance between 200 and 400 NM from Frankfurt (EDDF).
         Airports should have a rating greater than 0 and should have at least
         one lighted runway. Military and closed airports are excluded. The
         resulting airports are highlighted on the map by selecting them in the
@@ -157,7 +167,7 @@ The program saves the sort order, column widths and positions until
 .. figure:: ../images/navaidsearchtable.jpg
 
          Navaid search limited to ICAO region ``LI`` (Italy)
-         and VOR, VORTAC and TACAN stations that have a range of 100 or more nautical miles.
+         and VOR, VORTAC and TACAN stations that have a range of 100 or more NM.
 
 .. _mouse-clicks-0:
 
@@ -172,7 +182,7 @@ object and highlights it on the map using a black/yellow circle.
 Top Buttons
 ~~~~~~~~~~~
 
-Available buttons and menu items depend on search tab.
+Available buttons and menu items depend on search tab. This chapter explains common buttons and menu items.
 
 .. _reset-search-button:
 
@@ -216,14 +226,14 @@ Context Menu Search
 
 Available menu items depend on search tab.
 
-.. _show-information-0:
+.. _show-information-search:
 
 |Show Information| Show Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`map-context-menu`.
 
-.. _show-procedures:
+.. _show-procedures-search:
 
 |Show Procedures| Show Procedures
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -231,9 +241,11 @@ Same as :ref:`map-context-menu`.
 Open the procedure search tab of the search dock window and display all
 procedures for the airport. Only available in the airport search tab.
 
+The exact text of the menu item depends if the airport is already used as destination or departure in the flight plan.
+
 See :doc:`SEARCHPROCS` for more information.
 
-.. _show-approach-custom:
+.. _show-approach-custom-search:
 
 |Create Approach| Create Approach
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -241,9 +253,11 @@ See :doc:`SEARCHPROCS` for more information.
 Opens a dialog which allows to create a simple user defined final
 approach. Only available in the airport search tab.
 
+The exact text of the menu item depends if the airport is already used as destination or departure in the flight plan.
+
 See :doc:`CUSTOMPROCEDURE` for more information.
 
-.. _show-on-map:
+.. _show-on-map-search:
 
 |Show on Map| Show on Map
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -291,22 +305,22 @@ to highlight all the objects on the map.
 
 .. _show-range-rings-0:
 
-|Show Range Rings| Show Range Rings
+|Add Range Rings| Add Range Rings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _show-navaid-range-0:
 
-|Show Navaid range| Show Navaid range
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Add Navaid Range Ring| Add Navaid Range Ring
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _show-traffic-pattern:
+.. _show-traffic-pattern-search:
 
-|Display Airport Traffic Pattern| Display Airport Traffic Pattern
+|Add Airport Traffic Pattern| Add Airport Traffic Pattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _show-holdings:
 
-|Display Holdings| Display Holdings
+|Add Holding| Add Holding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`map-context-menu`.
@@ -315,29 +329,29 @@ Note that the menu item is disabled if the respective user feature is
 hidden on the map (menu ``View`` -> ``User Features``). The menu item is
 suffixed with the text ``hidden on map`` if this is the case.
 
-.. _set-as-flight-plan-departure-0:
+.. _set-as-flight-plan-departure-search:
 
 |Set as Flight Plan Departure| Set as Flight Plan Departure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _set-as-flight-plan-destination-0:
+.. _set-as-flight-plan-destination-search:
 
 |Set as Flight Plan Destination| Set as Flight Plan Destination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _set-as-flight-plan-alt-0:
+.. _set-as-flight-plan-alt-search:
 
-|Set as Flight Plan Alternate| Set as Flight Plan Alternate
+|Add as Flight Plan Alternate| Add as Flight Plan Alternate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _add-position-to-flight-plan-0:
+.. _add-position-to-flight-plan-search:
 
-|Add Position to Flight Plan| Add Position to Flight Plan
+|Add to Flight Plan| Add to Flight Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _append-position-to-flight-plan-0:
+.. _append-position-to-flight-plan-search:
 
-|Append Position to Flight Plan| Append Position to Flight Plan
+|Append to Flight Plan| Append to Flight Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`map-context-menu`.
@@ -372,7 +386,7 @@ the map.
 
 Reset sort order, column order and column widths to default.
 
-.. _set-center-for-distance-search-0:
+.. _set-center-for-distance-search-search:
 
 |Set Center for Distance Search| Set Center for Distance Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -392,15 +406,15 @@ Same as :ref:`map-context-menu`.
 .. |Filter by Entries including| image:: ../images/icon_filter-add.png
 .. |Filter by Entries excluding| image:: ../images/icon_filter-remove.png
 .. |Show All| image:: ../images/icon_load-all.png
-.. |Show Range Rings| image:: ../images/icon_rangerings.png
-.. |Show Navaid range| image:: ../images/icon_navrange.png
-.. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
-.. |Display Holdings| image:: ../images/icon_hold.png
+.. |Add Range Rings| image:: ../images/icon_rangerings.png
+.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
+.. |Add Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
+.. |Add Holding| image:: ../images/icon_hold.png
 .. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
 .. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
-.. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
-.. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
-.. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Add as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
+.. |Add to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Append to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Copy| image:: ../images/icon_copy.png
 .. |Reset View| image:: ../images/icon_cleartable.png
 .. |Set Center for Distance Search| image:: ../images/icon_mark.png

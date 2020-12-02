@@ -1,4 +1,6 @@
-.. LNM documentation master file - English
+.. meta::
+   :description: Little Navmap User Manual
+   :keywords: Navigation, Flight Simulator, Map, Flightplan, FSX, MSFS, Prepar3D, X-Plane, Flightplanner
 
 Little Navmap User Manual
 ================================
@@ -10,13 +12,11 @@ X-Plane 11.
 
 **Do not use this program for real world navigation.**
 
-For versions |version|. Last update on |today|.
+For *Little Navmap* versions |version|. Last update on |today|.
 
 More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
 Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
 The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.
-
-**Note that the manual for** *Little Navmap* |release| **is work in progress.**
 
 --------------
 
@@ -37,6 +37,7 @@ Table of Contents
    DONATIONS
    INSTALLATION
    QUICKOVERVIEW
+   START
    INTRO
 
    DOCKWINDOWS
@@ -44,7 +45,6 @@ Table of Contents
    MENUS
    STATUSBAR
 
-   START
    FOLDERS
 
    MAPDISPLAY
@@ -69,13 +69,14 @@ Table of Contents
    MAPFPEDIT
    APPROACHES
    CUSTOMPROCEDURE
+   TRACKS
    EDITFPPOSITION
    EDITFPREMARKS
+   ROUTECALC
    ROUTEDESCR
    FLIGHTPLANFMT
-   ROUTEEXPORT
-   ROUTECALC
    ROUTEEXPORTALL
+   ROUTEEXPORT
 
    AIRCRAFTPERF
    AIRCRAFTPERFEDIT
@@ -87,6 +88,7 @@ Table of Contents
 
    CONNECT
    OPTIONS
+   LAYOUT
    WEATHER
    PRINT
    RESET
@@ -100,7 +102,9 @@ Table of Contents
    TUTORIALPERF
 
    COORDINATES
+   REMARKS
    SHORTCUTS
+   NETWORK
    CUSTOMIZE
    MAPTHEMES
    FILES

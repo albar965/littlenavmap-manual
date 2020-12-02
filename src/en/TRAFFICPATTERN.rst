@@ -5,7 +5,7 @@
 the map.
 
 Right click on an airport in the map, flight plan table or airport
-search result table and select :ref:`show-traffic-pattern`.
+search result table and select ``Add Airport Traffic Pattern``.
 
 This will show a dialog where you can select a runway and customize the
 pattern.
@@ -54,7 +54,7 @@ displayed numbers in the pattern.
 
 .. figure:: ../images/pattern_dialog.jpg
 
-     Traffic pattern dialog for ``EDFE`` runway 08 at 1000 ft above airport elevation.
+     Traffic pattern dialog for ``EDFE`` runway 08 at 1,000 ft above airport elevation.
 
 .. figure:: ../images/pattern.jpg
 

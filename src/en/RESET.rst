@@ -17,6 +17,8 @@ performance between flights.
    aircraft performance collection. Same function as :ref:`aircraft-menu-restart`.
 -  ``Reset flight detection in logbook``: Resets the logbook to detect
    takeoff and landing for new logbook entries.
+-  ``Remove all Ranges, Measurements, Patterns and Holdings``:
+   Removes all user features from the map. Same as :ref:`remove-marks`.
 
 .. figure:: ../images/resetflight.jpg
 

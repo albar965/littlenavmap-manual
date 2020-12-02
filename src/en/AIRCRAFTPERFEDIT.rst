@@ -99,7 +99,7 @@ Reserve Fuel
 ^^^^^^^^^^^^
 
 Final reserve fuel is the minimum fuel required to fly for 30 minutes at
-1500 feet above the alternate airport or at the destination airport at
+1,500 ft above the alternate airport or at the destination airport at
 holding speed if an alternate is not required. Some authorities require
 sufficient fuel for 45 minutes holding time.
 
@@ -133,7 +133,7 @@ The value is given in percent of trip fuel.
 
 .. tip::
 
-     ICAO recommends to use 5 percent contingency fuel for all flights.**
+     ICAO recommends to use 5 percent contingency fuel for all flights.
 
 Climb
 ^^^^^
@@ -143,7 +143,7 @@ Values for climb are detected automatically when collecting performance.
 -  ``Average climb speed``: Average true airspeed from takeoff to cruise
    altitude.
 -  ``Average vertical climb speed``: Vertical speed in climb phase.
-   Either feet per minute (``fpm``) or meter per second (``m/s``).
+   Either ft per minute (``fpm``) or meter per second (``m/s``).
 -  ``Average fuel flow in climb``: Fuel flow in climb phase. Either
    ``gal``, ``lbs``, ``l`` or ``kg``.
 
@@ -169,7 +169,7 @@ Descent values are detected automatically when collecting performance.
 -  ``Average fuel flow for descent``: Average fuel flow on descent.
 
 A label ``Descent Rule of Thumb`` shows the calculated rule of thumb for
-descent. The default is 3 NM per 1000 ft.
+descent. The default is 3 NM per 1,000 ft.
 
 Descent speed and vertical descent speed are used to calculate the top
 of descent which also varies with wind conditions.
@@ -191,21 +191,13 @@ values accordingly here.
 
      Aircraft performance edit dialog tab ``Performance``.
 
-Tab Description or Comments
+Tab Remarks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This tab contains a free plain text field for notes and links.
+This tab contains a free plain text field for notes and links which is also shown in the
+``Fuel Report`` tab of the window ``Flight Planning``.
 
-Normal web links like ``http://www.example.com`` or
-``https://www.example.com`` are recognized besides directory or file
-links like ``file:///C:/Users/me/Documents/Aircraft%20Notes.txt`` on
-Windows or ``file:///home/me/Aircraft%20Notes.txt`` on macOS or Linux.
-
-Note that you have to use the forward slash ``/`` instead of the
-backslash ``\`` on Windows as a path separator.
-
-Replace spaces in links with ``%20`` since *Little Navmap* recognizes
-links until the next space.
+See :doc:`REMARKS` for more information about using web links in this field.
 
 .. |Edit Aircraft Performance| image:: ../images/icon_aircraftperfedit.png
 

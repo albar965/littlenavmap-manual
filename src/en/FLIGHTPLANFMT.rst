@@ -2,103 +2,108 @@ Flight Plan Formats
 -------------------
 
 *Little Navmap* supports several flight plan formats, all of which have
-different limitations. Only some of these formats can be loaded and
-saved.
+different limitations. All of the formats listed below can be exported and some can be loaded.
 
-The program uses different ``Save as ...`` file dialogs instead of just
-one. This means the directory for each file format is retained
-separately, removing the need to navigate back and forth between the FSX
-flight plan directory, the P3D flight plan directory and the X-Plane FMS
-output directory.
+.. _flight-plan-formats-lnmpln:
 
-Note the difference between ``Save Flight Plan as ...`` and
-``Export Flight Plan as ...``: ``Export`` does not change the current
-file name while ``Save as ...`` does.
+*Little Navmap* LNMPLN Format
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* uses its own XML based format since only this allows to save all features provided
+by the program in a safe manner as well as proper file validation. This also eliminates many of
+the confusing warning dialogs when saving other formats and potential data loss.
+
+While you can still load, for example, FMS and other formats directly into the program, saving is
+limited to the LNMPLN format. You have to export the plan as FMS after changing it. You can do
+that either directly from the menu ``File`` -> :ref:`save-flight-plan-as-fms11` or using
+menu ``File`` -> :ref:`multiexport-flight-plan-options` and then ``File`` -> :ref:`multiexport-flight-plan`.
+
+See also :doc:`ROUTEEXPORTALL` for more information on multiexport.
+
+.. note::
+
+     The LNMPLN format is only understood by *Little Navmap*.
+     Do not try to load it into simulators or add-ons.
+
+See :ref:`lnmpln-file-format` for a detailed description of the format.
 
 .. warning::
 
-   Always save a copy in the default PLN format before saving to other
+   Always save a copy in the default LNMPLN format before exporting to other
    formats like FMS. This allows *Little Navmap* to restore all flight plan
-   properties like procedures and alternate airports.
+   properties like procedures, alternate airports and remarks.
 
-.. _flight-plan-formats-feature:
 
-Feature Table
-~~~~~~~~~~~~~
+Flight Plan Export Formats
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The table below shows the capabilities of *Little Navmap* and the
 supported flight plan formats (``X`` = supported, ``0`` = not supported,
-``-`` = not applicable):
+``-`` = not applicable) as listed in :doc:`ROUTEEXPORTALL`.
 
-=============================   ====   =====   =====   ============   =======================   ================   ===============   =================   ======
-Format                          Read   Write   Airw.   VFR/ IFR       User Wpt. Names           Dep. Parking       Cruise Alt.       Ground speed        Proc.
-=============================   ====   =====   =====   ============   =======================   ================   ===============   =================   ======
-FSX PLN annotated               X      X       X       X              X                         X                  X                 X                   X
-FSX PLN                         X      X       X       X              X                         X                  X                 0                   0
-FS9 PLN clean                   X      0       X       X              X                         X                  X                 0                   0
-FSC PLN                         X      0       X       0              X                         0                  0                 0                   0
-X-Plane FMS 11                  X      X       X       0              X                         0                  X                 0                   X
-X-Plane FMS 3                   X      X       0       0              X                         0                  X                 0                   0
-FlightGear FGFP                 X      X       0       0              0                         0                  0                 0                   X [2]_
-FLP                             X      X       X       0              0                         0                  0                 0                   X
-Reality XP GNS FPL              0      X       0       0              X                         0                  0                 0                   0
-Reality XP GTN GFP              0      X       X       0              X [1]_                    0                  0                 0                   X
-Flight1 GTN                     0      X       X       0              0                         0                  0                 0                   0
-PMDG RTE                        0      X       X       0              0                         0                  0                 0                   0
-TXT                             0      X       X       0              0                         0                  0                 0                   0
-Majestic Dash FPR               0      X       0       0              0                         0                  0                 0                   0
-IXEG 737 FPL                    0      X       X       0              0                         0                  0                 0                   0
-FLTPLAN for iFly                0      X       X       0              0                         0                  0                 0                   0
-ProSim `companyroutes.xml`      0      X       X       0              0                         0                  0                 0                   0
-PLN for BBS Airbus              0      X       X       0              0                         0                  0                 0                   0
-Flight Factor `corte.in`        0      X       X       0              0                         0                  X                 0                   X [2]_
-MDX for MaddogX                 0      X       X       0              0                         0                  0                 0                   0
-RTE for QualityWings            0      X       X       0              0                         0                  0                 0                   0
-EFBR for EFB                    0      X       X       0              0                         0                  0                 0                   0
-RTE for Level-D                 0      X       X       0              0                         0                  0                 0                   0
-FPL for Feelthere               0      X       X       0              0                         0                  0                 0                   0
-XML for TDFi Design             0      X       X       0              0                         0                  0                 0                   0
-FPL for IVAP/X-IVAP [3]_        0      X       X       0              0                         0                  0                 0                   0
-VFP for vPilot [3]_             0      X       X       0              0                         0                  0                 0                   0
-UFMC                            0      X       X       0              0                         0                  0                 0                   0
-FPL for XFMC                    0      X       X       0              0                         0                  0                 0                   0
-GPX                             0      X       \-      \-             \-                        \-                 \-                \-                  \-
-HTML                            0      X       \-      \-             \-                        \-                 \-                \-                  \-
-=============================   ====   =====   =====   ============   =======================   ================   ===============   =================   ======
+================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
+Format                             Ext.     Open Exp Airw VFR/IFR User Wpt. Names Remarks Dep. Parking Cruise Alt. Ground speed Proc.
+================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
+LNMPLN                             LNMPLN   X    X   X    X       X               X       X            X           X            X
+Microsoft Flight Simulator 2020    PLN      X    X   X    X       X               0       0 [6]_       X           0            X [5]_
+FSX and Prepar3D                   PLN      X    X   X    X       X               0       X            X           0            0
+FSX and Prepar3D annotated         PLN      X    X   X    X       X               0       X            X           X            X
+FS9 PLN                            PLN      X    0   X    X       X               0       X            X           0            0
+X-Plane FMS 11                     FMS      X    X   X    0       X               0       0            X           0            X
+X-Plane FMS 3                      FMS      X    X   0    0       X               0       0            X           0            0
+FlightGear                         FGFP     X    X   0    0       0               0       0            0           0            X [2]_
+FSC                                PLN      X    0   X    0       X               0       0            0           0            0
+Aerosoft Airbus and others         FLP      X    X   X    0       0               0       0            0           0            X
+Aerosoft CRJ                       FLP      X    X   X    0       0               0       0            0           0            X
+Garmin                             FPL      X    X   0    0       0               0       0            0           0            0
+Reality XP GNS 530W/430W V2        FPL      0    X   0    0       X               0       0            0           0            0
+Reality XP GTN 750/650 Touch       GFP      0    X   X    0       X [1]_          0       0            0           0            X
+Flight1 Garmin GTN 650/750         GFP      0    X   X    0       0               0       0            0           0            0
+PMDG Aircraft                      RTE      0    X   X    0       0               0       0            0           0            0
+Rotate MD-80, JARDesign and others TXT      0    X   X    0       0               0       0            0           0            0
+Majestic Dash MJC8 Q400            FPR      0    X   0    0       0               0       0            0           0            0
+IXEG Boeing 737                    FPL      0    X   X    0       0               0       0            0           0            0
+Flight Factor Airbus               corte.in 0    X   X    0       0               0       0            X           0            X [2]_
+iFly                               FLTPLAN  0    X   X    0       0               0       0            0           0            0
+ProSim                             XML [4]_ 0    X   X    0       0               0       0            0           0            0
+BlackBox Simulations Airbus        PLN      0    X   X    0       0               0       0            0           0            0
+Leonardo Maddog X                  MDX      0    X   X    0       0               0       0            0           0            0
+QualityWings                       RTE      0    X   X    0       0               0       0            0           0            0
+AivlaSoft EFB                      EFBR     0    X   X    0       0               0       0            0           0            0
+Level-D                            RTE      0    X   X    0       0               0       0            0           0            0
+FeelThere or Wilco                 FPL      0    X   X    0       0               0       0            0           0            0
+TFDi Design 717                    XML      0    X   X    0       0               0       0            0           0            0
+IvAp for IVAO [3]_                 FPL      0    X   X    0       0               0       0            0           0            0
+X-IVAP for IVAO [3]_               FPL      0    X   X    0       0               0       0            0           0            0
+VATSIM vPilot or SWIFT [3]_        VFP      0    X   X    0       0               0       0            0           0            0
+UFMC                               UFMC     0    X   X    0       0               0       0            0           0            0
+X-FMC                              FPL      0    X   X    0       0               0       0            0           0            0
+Garmin exchange format             GPX      \-   X   \-   \-      \-              \-      \-           \-          \-           \-
+HTML flight plan web page          HTML     \-   X   \-   \-      \-              \-      \-           \-          \-           \-
+================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
+
+For ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2`` and ``Reality XP
+GTN 750/650 Touch`` additional export formats exist which replace waypoints with user defined
+waypoints. This helps to avoid the locked waypoint issue.
 
 Procedure waypoints are excluded from most file formats by default,
-except for GPX. You have to use the GPS or FMS in the simulator to
-select procedures. Exceptions are X-Plane ``FMS`` and ``FLP``, for example.
+except for GPX.
+You have to use the GPS, FMS or MCDU in the simulator to
+select procedures. Exceptions are e.g. X-Plane FMS and FLP which allow to save and load procedures.
 
 You can enable saving of waypoints by checking the menu items
 :ref:`export-flight-plan-approach-waypoints` and/or
 :ref:`export-flight-plan-sid-star-waypoints`.
 
-A dialog is shown if any unsupported features are detected in the
-current flight plan when trying to save a plan. You can disable this
-dialog for future saves if you know what you are doing.
-
-The current file name and type will change if you save a plan to a
-format that is readable and writable. This does not happen when
+The current file name and type will change if you save a plan as LNMPLN. This does not occur when
 exporting.
-
-An example shows how the program deals with the limited formats:
-
-#. Create a flight plan including procedures.
-#. Save as PLN - current filename changes to new file name ``NAME.pln``.
-#. Save as FMS - a warning is shown and after saving the current
-   filename changes to new ``NAME.fms``. This is also reflected in the main window title bar.
-#. Restart program - ``NAME.fms`` will be reloaded and some properties are
-   lost.
-#. Now export as GFP - Current filename remains ``NAME.fms``.
 
 .. _flight-plan-formats-user-waypoints:
 
 User Waypoint Names
 ~~~~~~~~~~~~~~~~~~~
 
-User waypoint names will be adapted to format limitations when saving.
-That means that waypoint names can change when reloading a flight plan.
+User waypoint names will be adapted to format limitations when exporting.
 
 -  **PLN:** Maximum length for FSX or Prepar3D is 10 characters and no
    special characters are allowed. Unsupported characters will be
@@ -110,95 +115,112 @@ That means that waypoint names can change when reloading a flight plan.
 Formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _flight-plan-formats-fsx-pln:
-
-|FSX PLN| FSX PLN
+|PLN| Microsoft Flight Simulator 2020
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The format FSX PLN is used as a default format because it supports most
-features and allows to include additional information in form of
-annotations which will be ignored by flight simulators and most other
-tools.
+File format for MSFS.
+*Little Navmap* can read and export this format.
+
+You can export this format directly using :ref:`export-msfs-flight-plan`.
+
+While the format supports procedures there are often problems in MSFS loading these. Procedures might be omitted or new ones inserted.
+Furthermore MSFS does not support the selection of transitions and often inserts these automatically.
+
+MSFS cannot not load parking positions. Select a departure parking in the drop down list in MSFS since
+selecting a parking position on the map resets the route.
+
+.. _flight-plan-formats-fsx-pln:
+
+|PLN| FSX and Prepar3D
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+File format for FSX and P3D.
+*Little Navmap* can read and export this format. Procedures are not saved.
+
+You can export this format directly using :ref:`export-p3d-fsx-flight-plan`.
+
+FSX and Prepar3D annotated (obsolete)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Annotated PLN format used by *Little Navmap* versions up to and including 2.4.5.
+
+This is needed only if you like to save a flight plan for older *Little Navmap* versions.
+
+*Little Navmap* can read and export this format completely with procedures.
 
 .. _flight-plan-formats-fs9-pln:
 
-|FS9 PLN| FS9 PLN
+FS9 PLN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-File format of the Flight Simulator 2004. Uses the same PLN extension as
-the FSX PLN format. *Little Navmap* can only read this format. Therefore
-a warning dialog is shown before overwriting a file with the newer FSX
-PLN format.
-
-.. _flight-plan-formats-clean-pln:
-
-|Clean PLN| Clean PLN
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This is the same as the FSX PLN but without additional annotations which
-contain information about selected procedures or ground speed. Use this
-format if an application cannot deal with the annotated format.
+File format of the Flight Simulator 2004. Uses the same PLN file extension as
+the FSX PLN format. *Little Navmap* can only read this format.
 
 .. _flight-plan-formats-fms11:
 
 
-|FMS 11| FMS 11 (X-Plane)
+|FMS 11| X-Plane FMS 11
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 X-Plane FMS format which can be loaded into the stock GPS, the G1000 and
-the FMS of `X-Plane 11.10 <https://www.x-plane.com>`__ or later. This is
-the default save format for X-Plane FMS now. Use the export function to
-save old FMS version 3 files.
+the FMS of `X-Plane 11.10 <https://www.x-plane.com>`__ or later.
 
-**This format is supported as of X-Plane 11.10.**
+You can export this format directly using :ref:`save-flight-plan-as-fms11`.
 
-*Little Navmap* can read and write this format.
+*Little Navmap* can read and export this format.
 
 Store these files into the ``Output/FMS plans`` directory inside the
 X-Plane directory.
 
+Read the X-Plane manuals for the respective devices on how to load plans inside the cockpit:
+`User Manuals for X-Plane Products <https://www.x-plane.com/support/manuals/>`__.
+
 .. note::
 
-      Although *Little Navmap* can read and write this format, it
-      has limitations:
-
-      -  Airports are adapted to use real ICAO idents instead the X-Plane
-         idents in rare cases when saving. As a result *Little Navmap* might
-         not be able to read these.
-      -  *Little Navmap* cannot determine the cruise altitude of a flight plan
-         in some cases. You might see errors about violated altitude
-         restrictions after loading. Adjust the cruise altitude manually if
-         this is the case.
+      *Little Navmap* cannot determine the cruise altitude of a flight plan
+      after loading this format in some cases. You might see errors about violated altitude
+      restrictions after loading. Adjust the cruise altitude manually if
+      this is the case.
 
 .. _flight-plan-formats-fms3:
 
-|FMS 3| FMS 3 (X-Plane)
+FMS 3 (X-Plane)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 X-Plane FMS format which can be loaded into the stock GPS and FMS of
 X-Plane 10 and 11.05. The format is very limited and basically stores
 only a list of waypoints.
 
-*Little Navmap* can read and write this format.
+*Little Navmap* can read and export this format.
 
 Store these files into the ``Output/FMS plans`` directory inside the
 X-Plane directory.
 
 .. _flight-plan-formats-fgfp:
 
-|FGFP| FGFP (FlightGear)
+|FGFP| FlightGear
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 FlightPlan format which can be loaded into the RouteManager of the free
 flight simulator `FlightGear <http://www.flightgear.org>`__.
 
-*Little Navmap* can read and write this format.
+You can export this format directly using :ref:`save-flight-plan-as-fgfp`.
+
+*Little Navmap* can read and export this format.
 
 You can save the files into any directory and load it within FlightGear.
 
+FSC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+File format for FlightSim Commander. Uses the same PLN file extension as
+the FSX PLN format. *Little Navmap* can only read this format.
+
 .. _flight-plan-formats-flp:
 
-FLP
+Aerosoft Airbus and others
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aerosoft CRJ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A format that can be read by the X-Plane FMS (not the X-Plane GPS),
@@ -210,18 +232,19 @@ information. Procedures are saved in the FLP but cannot loaded yet by
 the FMS. You have to select these manually after loading the flight
 plan.
 
-Store these files into the ``Output/FMS plans`` directory inside the
-X-Plane directory if you want to use them in X-Plane.
+Garmin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Simple XML based flight plan format which stores only a list of waypoints.
+*Little Navmap* can read and export this format.
 
 .. _flight-plan-formats-rxpgns:
 
-FPL (Reality XP Garmin GNS)
+Reality XP GNS 530W/430W V2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format as FPL file usable by the *Reality XP GNS 530W/430W
 V2*.
-
-This file format can only be exported. Reading is not supported.
 
 See :ref:`garmin-notes` for information on known problems when
 exporting flight plan data for the GNS.
@@ -236,13 +259,11 @@ export if it does not exist.
 
 .. _flight-plan-formats-rxpgtn:
 
-GFP (Reality XP Garmin GTN)
+Reality XP GTN 750/650 Touch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Save flight plan as GFP file usable by the *Reality XP GTN 750/650
 Touch*.
-
-This file format can only be exported. Reading is not supported.
 
 See :ref:`garmin-notes` for information on known problems when
 exporting flight plan data for the GTN.
@@ -250,7 +271,7 @@ exporting flight plan data for the GTN.
 *Little Navmap* considers the ``GTNSIMDATA`` environment variable if
 set. See the GTN manual for more information.
 
-Garmin GTN Trainer later than 6.41
+Flight1 Garmin GTN 650/750
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The default directory to save the flight plans for the GTN units is
@@ -276,12 +297,10 @@ this directory manually.
 
 .. _flight-plan-formats-gfp:
 
-GFP (Flight1 Garmin GTN)
+Flight1 Garmin GTN 650/750
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is the flight plan format used by the *Flight1 GTN 650/750*.
-
-This file format can only be exported. Reading is not supported.
 
 See :ref:`garmin-notes` for information on problems when exporting
 flight plan data for the GTN.
@@ -305,13 +324,15 @@ dialogs but it does not show up in the GTN unit. Change the privileges
 of the export directory as mentioned above if that is the case.
 
 The file is a simple text format containing only one line of text.
-Example for the content of a flight plan file named ``KEAT-CYPU.gfp``:
 
-``FPN/RI:F:KEAT:F:EAT.V120.SEA.V495.CONDI.V338.YVR.V330.TRENA:F:N50805W124202:F:N51085W124178:F:CAG3:F:N51846W124150:F:CYPU``
+.. code-block:: none
+        :caption: Example for the content of a flight plan file named ``KEAT-CYPU.gfp``
+
+        FPN/RI:F:KEAT:F:EAT.V120.SEA.V495.CONDI.V338.YVR.V330.TRENA:F:N50805W124202:F:N51085W124178:F:CAG3:F:N51846W124150:F:CYPU
 
 .. _flight-plan-formats-rte:
 
-RTE (PMDG)
+PMDG Aircraft
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A PMDG RTE file. File location depends on the used aircraft but is
@@ -321,7 +342,7 @@ This format does not allow saving of procedures.
 
 .. _flight-plan-formats-txt:
 
-TXT (JARDesign and Rotate Simulations)
+Rotate MD-80, JARDesign and others
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A simple file format usable by JARDesign or Rotate Simulations aircraft.
@@ -329,13 +350,16 @@ The dexport directory depends on the used aircraft which is usually in the X-Pla
 directory ``Aircraft``.
 
 The file is a simple text format containing only one line of text.
-Example for the content of a ``TXT`` file named ``CBZ9CYDC.txt``:
 
-``CBZ9 SID AIRIE V324 YKA B8 DURAK STAR CYDC``
+
+.. code-block:: none
+        :caption: Example for the content of a TXT file named ``CBZ9CYDC.txt``
+
+        CBZ9 SID AIRIE V324 YKA B8 DURAK STAR CYDC
 
 .. _flight-plan-formats-fpr:
 
-FPR (Majestic Dash)
+Majestic Dash MJC8 Q400
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the Majestic Software MJC8 Q400. Note that the
@@ -350,7 +374,7 @@ autopilot are not affected otherwise.
 
 .. _flight-plan-formats-fpl:
 
-FPL (IXEG Boeing)
+IXEG Boeing 737
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Exports the current flight plan as a FPL file usable by the IXEG Boeing
@@ -362,7 +386,7 @@ create the directory manually if it does not exist.
 
 .. _flight-plan-formats-cortein:
 
-corte.in (Flight Factor Airbus)
+Flight Factor Airbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A format for the Flight Factor Airbus. The file is not truncated and
@@ -375,16 +399,15 @@ the file with a simple text editor if you want to remove flight plans.
 While this format allows saving of SID and STAR the option for
 approaches was removed since it is unreliable.
 
-**Example:**
-
 .. code-block:: none
+   :caption: Example
 
    RTE ETOPS002 EINN 06 UNBE2A UNBEG DCT 5420N DCT NICSO N236A ALLEX Q822 ENE DCT CORVT KJFK I22R JFKBOS01 CI30 FL360
    RTE EDDFEGLL EDDF 25C BIBT4G BIBTI UZ29 NIK UL610 LAM EGLL I27R LAM CI25 FL330
 
 .. _flight-plan-formats-ifly:
 
-FLTPLAN (iFly 737NG)
+iFly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the iFly 737NG for FSX or P3D. The file has to be
@@ -394,7 +417,7 @@ Procedures cannot be saved.
 
 .. _flight-plan-formats-prosim:
 
-companyroutes.xml (ProSim)
+ProSim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A flight plan format for `ProSim <https://prosim-ar.com>`__. The flight
@@ -407,9 +430,8 @@ plan: ``companyroutes.xml_lnm_backup`` and
 
 Procedures cannot be saved.
 
-**Example:**
-
 .. code-block:: xml
+   :caption: Example
 
    <?xml version="1.0" encoding="UTF-8"?>
    <companyroutes>
@@ -419,7 +441,7 @@ Procedures cannot be saved.
 
 .. _flight-plan-formats-bbs:
 
-PLN (BBS Airbus)
+BlackBox Simulations Airbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This format is for the Blackbox Simulations Airbus for FSX or P3D. Save
@@ -431,7 +453,7 @@ This format cannot save procedures.
 
 .. _flight-plan-formats-mdx:
 
-MDX (Leonardo MaddogX)
+Leonardo Maddog X
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan for the Leonardo MaddogX aircraft. This format cannot save
@@ -439,7 +461,7 @@ procedures.
 
 .. _flight-plan-formats-qw-rte:
 
-RTE (QualityWings Aircraft)
+QualityWings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan for QualityWings aircraft. This format cannot save
@@ -447,7 +469,7 @@ procedures. The location depends on the aircraft.
 
 .. _flight-plan-formats-efbr:
 
-EFBR (Electronic Flight Bag)
+AivlaSoft EFB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan for the `AivlaSoft Electronic Flight
@@ -455,7 +477,7 @@ Bag <https://aivlasoft.com>`__. Saving of procedures is not supported.
 
 .. _flight-plan-formats-leveld-rte:
 
-RTE (Level-D Aircraft)
+Level-D
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan for Level-D aircraft. This format cannot save procedures.
@@ -463,7 +485,7 @@ Save this to ``YOURSIMULATOR\Level-D Simulations\navdata\Flightplans``.
 
 .. _flight-plan-formats-feelthere:
 
-FPL (Feelthere/Wilco Aircraft)
+FeelThere or Wilco
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The format above cannot save procedures. The location depends on the
@@ -471,7 +493,7 @@ aircraft.
 
 .. _flight-plan-formats-tdfi:
 
-XML (TDFi Design Boeing 717)
+TFDi Design 717
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the TDFi Design Boeing 717. The format above
@@ -479,12 +501,12 @@ cannot save procedures.
 
 .. _flight-plan-formats-ivap:
 
-FPL (IvAp)
+IvAp for IVAO
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _flight-plan-formats-xivap:
 
-FPL (X-IvAp)
+X-IVAP for IVAO
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the IVAO online network clients `IvAp or
@@ -497,7 +519,7 @@ before where you can add all needed information.
 
 .. _flight-plan-formats-vpilot:
 
-VFP (vPilot)
+VATSIM vPilot or SWIFT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the VATSIM
@@ -509,7 +531,7 @@ before where you can add all needed information.
 
 .. _flight-plan-formats-ufmc:
 
-UFMC (Universal Flight Management Computer)
+UFMC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A flight plan format for the `UFMC <http://ufmc.eadt.eu>`__. The format
@@ -519,7 +541,7 @@ Save the flight plan to ``XPLANE\Custom Data\UFMC\FlightPlans``.
 
 .. _flight-plan-formats-xfmc:
 
-FPL for X-FMC (Universal FMC for X-Plane)
+X-FMC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Save flight plan as FPL file for the `X-FMC <https://www.x-fmc.com>`__.
@@ -530,7 +552,7 @@ The file should be saved to Path to
 
 .. _flight-plan-formats-gpx:
 
-GPX
+Garmin exchange format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 GPX is not a flight plan format.
@@ -546,9 +568,11 @@ set for all waypoints. Waypoints of all procedures are included in the
 exported file. Note that the waypoints will not allow to reproduce all
 parts of a procedure like holds or procedure turns.
 
+The track contains the aircraft trail with flown altitude and timestamps.
+
 .. _flight-plan-formats-html:
 
-HTML
+HTML flight plan web page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is not a flight plan format. This function saves the current flight
@@ -565,7 +589,7 @@ Garmin units. Most of these are a result of the Garmin navigation
 database which uses data of an older AIRAC cycle (mostly 1611 at the
 time of writing). Updated simulator or add-on databases (like the one in
 *Little Navmap*) can use the latest navdata or an old one from FSX or
-P3D stock data. X-Plane 11.10 stock navdata is currently based on 1611.
+P3D stock data.
 
 Any waypoints, airways or procedures that are removed, added or renamed
 over time can cause locked waypoints or other messages when reading a
@@ -602,10 +626,17 @@ dialog on tab ``Flight Plan``.
    Additional information for online flying can be added in a dialog
    before saving.
 
-.. |FSX PLN| image:: ../images/icon_filesave.png
-.. |FS9 PLN| image:: ../images/icon_filesave.png
-.. |Clean PLN| image:: ../images/icon_filesaveclean.png
+.. [4]
+     Full name is ``companyroutes.xml``
+
+.. [5]
+    The loading of procedures in MSFS is faulty and often does not load procedures or adds other procedures.
+
+.. [6]
+    MSFS does not load parking positions. Select a departure parking in the drop down list since selecting a position
+    on the map resets the route.
+
+.. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png
-.. |FMS 3| image:: ../images/icon_saveasfms.png
 .. |FGFP| image:: ../images/icon_saveasfg.png
 

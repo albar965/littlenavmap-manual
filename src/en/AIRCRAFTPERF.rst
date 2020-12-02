@@ -65,7 +65,7 @@ aircraft type does not match the type in the aircraft performance.
     Aircraft Performance tab showing an error about a
     missing value. The ``*`` in the tab label shows unsaved changes.
 
-A default profile with 3 nautical miles per 1000 feet for descent and
+A default profile with 3 NM per 1,000 ft for descent and
 climb rules and no fuel consumption is default. Red warning messages
 will be shown if used since the profile is not complete.
 
@@ -92,7 +92,7 @@ The merging can be done at any time. See :doc:`AIRCRAFTPERFCOLL`.
 Files
 ~~~~~
 
-Performance profile files (file extension ``lnmperf``) can be saved and
+Performance profile files (file extension LNMPERF) can be saved and
 loaded like flight plan files. The performance files can be dragged from
 a file manager like Windows Explorer or macOS Finder and dropped into
 the *Little Navmap* main window to load them.
@@ -104,6 +104,8 @@ the *Little Navmap* main window to load them.
    ``C:\Program Files`` or one of its sub-directories. Save the files
    into your ``Documents`` directory or a sub-directory in there like
    ``Documents\Little Navmap\Performance``.
+
+   You can use the folder which is suggested by the :doc:`FOLDERS` dialog.
 
 .. tip::
 
@@ -157,15 +159,15 @@ menu :ref:`aircraft-menu`.
    dialog.
 -  |New Aircraft Performance| ``New Aircraft Performance``: Creates a
    new performance profile with default values and opens the edit
-   dialog. A profile with 3 nautical miles per 1000 feet for descent and
+   dialog. A profile with 3 NM per 1,000 ft for descent and
    climb rules and no fuel consumption is default. Red warning messages
    will be shown since the profile is not complete.
 -  |Open Aircraft Performance| ``Open Aircraft Performance``: Load a
-   ``lnmperf`` file.
+   LNMPERF file.
 -  |Save Aircraft Performance| ``Save Aircraft Performance``: Save
-   current profile to a ``lnmperf`` file.
+   current profile to a LNMPERF file.
 -  |Save Aircraft Performance as| ``Save Aircraft Performance as``: Save
-   current profile to a new ``lnmperf`` file.
+   current profile to a new LNMPERF file.
 -  |Help| Help: Click to open this chapter of the manual in the default
    browser.
 
@@ -284,25 +286,16 @@ Only shown with a valid flight plan.
 
 .. _aircraft-performance-description:
 
-Performance File Description Section
+Performance File Remarks Section
 ''''''''''''''''''''''''''''''''''''
 
 This is a free plain text field for notes and links.
 
 Links are recognized and can be opened in the report.
 
-Normal web links like ``http://www.example.com`` or
-``https://www.example.com`` are recognized besides directory or file
-links like ``file:///C:/Users/me/Documents/Aircraft%20Notes.txt`` on
-Windows or ``file:///home/me/Aircraft%20Notes.txt`` on macOS or Linux.
+See :doc:`REMARKS` for more information about using web links in this field.
 
-Note that you have to use the forward slash ``/`` instead of the
-backslash ``\`` on Windows as a path separator.
-
-Replace spaces in links with ``%20`` since *Little Navmap* recognizes
-links until the next space.
-
-.. _aircraft-performance-file:
+.. _aircraft-performance-report-file:
 
 Performance File Section
 ''''''''''''''''''''''''

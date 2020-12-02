@@ -1,10 +1,9 @@
 Donations
 ---------
 
-**Donate to show your appreciation if you like my programs.**
+**Donate to show your appreciation if you like** *Little Navmap* **.**
 
-**Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen meine
-Programme gefallen.**
+**Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen** *Little Navmap* **gefällt.**
 
 |Donate|
 

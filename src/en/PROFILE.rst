@@ -3,7 +3,7 @@
 
 This dock window shows the ground elevation, flight plan with cruise,
 climb, descent legs and altitude restrictions together with all flight
-plan waypoints. It is only available when a flight plan is loaded. The
+plan waypoints. It is only available when a valid flight plan is loaded. The
 user aircraft will be shown if *Little Navmap* is connected to the
 simulator.
 
@@ -12,48 +12,57 @@ simulator.
      The elevation display covers only the flight plan and will not
      change the depiction if you get off the flight plan with your simulator
      aircraft. You need a valid flight plan (i.e. a departure and
-     destination) to see the elevation profile.
+     destination airport) and a valid aircraft performance file
+     to see the elevation profile.
 
 The elevation profile also does not cover missed approaches and legs to
 alternate airports. Create a new flight plan from the destination to the
 alternate airport if you wish to use the elevation profile.
 
-Movement of the aircraft in the elevation profile is tied to the active
+Movement of the aircraft and the trail in the elevation profile is tied to the active
 flight plan leg and will not be correct if flying away from the active
 leg.
 
 .. _top-label:
 
 Top Label
-~~~~~~~~~
-
-Additional information is shown in a label on top of the window if the
-mouse is hovered over the diagram. The corresponding position is
-highlighted on the map with a black/cyan circle.
+~~~~~~~~~~~~~~
 
 Following information is shown in the top label if connected to a flight
-simulator:
+simulator with a valid flight plan:
 
 -  Distance from user aircraft to flight plan destination
--  Distance to the top of descent
+-  Distance from user aircraft to the top of descent
 
-**Example:** ``To Destination: 118 nm, to Top of Descent: 95 nm.``
+**Example:** ``To Destination: 1,213 nm, to Top of Descent: 1,109 nm.``
 
-In addition, the information below is shown in the top label when
-hovering the mouse over the diagram:
+The label is hidden if not connected to a simulator.
 
--  From and to waypoint for the flight plan leg at the cursor position
--  Distance from departure and to destination from the position of the
-   mouse cursor.
--  Ground elevation at cursor position.
--  Flight plan altitude above ground considering cruise altitude as well
-   as climb and descent slopes.
--  Safe altitude for the flight plan leg at the cursor position
-   corresponding to the orange line.
--  Wind direction, speed and tail- (``►``) or headwind (``◄``).
+.. _tooltip-label:
 
-**Example:**
-``ANDOR ► SJA, 38 nm ► 112 nm, Ground Elevation 984 ft, Above Ground Altitude 8,016 ft, Leg Safe Altitude 3,000 ft, Wind 227°M, 14 kts, ► 9 kts``
+Tooltip Label
+~~~~~~~~~~~~~~
+
+Additional information is shown in a tooltip label at the right or left side in the window if the
+mouse is hovered over the diagram. The corresponding position is
+highlighted on the map with a black/cyan circle. The label changes the side depending on mouse position.
+
+The label shows the following information for the mouse position:
+
+-  Distance from departure and to destination plus calculated altitude and next waypoint.
+-  Course for the flight plan leg at the cursor position.
+-  Heading for this flight plan leg at the position. This is calculated based on wind conditions.
+-  Ground altitude and calculated altitude above ground.
+-  Safe altitude of the flight plan leg at the cursor position (orange line).
+-  Wind direction and speed as well as head- (``▼``) or tailwind (``▲``) component.
+
+.. figure:: ../images/profile_label.jpg
+
+    Information for position between waypoints ``GIGIR`` and ``OBITI``.
+    Indicating a headwind of 28 kts at this position.
+    User aircraft still climbing.
+    Note the image showing German number format with dot as thousands separator.
+
 
 Bottom Label
 ~~~~~~~~~~~~
@@ -63,6 +72,8 @@ the flight plan or aircraft performance.
 
 The error messages are the same as in :ref:`flight-plan-table-error` in the flight
 planning window.
+
+Hover the mouse over the label or click it for more information about the error.
 
 Zoom Sliders
 ~~~~~~~~~~~~
@@ -81,7 +92,7 @@ following controls are available:
    vertically. Maximum zoom results in 500 ft height for the whole
    profile window.
 -  |Zoom Horizontally| ``Zoom Horizontally``: Move the slider up to zoom
-   in horizontally. Maximum zoom results in about 4 nm distance for the
+   in horizontally. Maximum zoom results in about 4 NM distance for the
    whole profile window.
 
 .. _mouse:
@@ -159,7 +170,7 @@ profile only. It does not remove the trail from the map. Use this if the
 trail appears in the wrong place or shape after creating of modifying a
 flight plan.
 
-The trail in the elevation profile is of no relevance for the ``GPX``
+The trail in the elevation profile is of no relevance for the GPX
 file export.
 
 .. _show-vasi:
@@ -200,6 +211,16 @@ indicator if available
 
         Display of ILS at destination airport. Final approach fix is marked with a Maltese cross.
 
+.. _show-toc-and-tod-profile:
+
+|Show Top of Climb and Top of Descent| Show Top of Climb and Top of Descent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Hides the climb and descent slopes as well as the top of climb and top of descent indicators when disabled.
+This affects the map and elevation profile display but not the altitude calculation in the fuel report or elevation profile.
+
+This is the same function as :ref:`show-toc-and-tod` in the menu ``View``.
+
 Follow on Map
 ^^^^^^^^^^^^^
 
@@ -208,6 +229,11 @@ the cursor if hovering above the elevation profile when this option is
 selected.
 
 .. _show-zoom-slider:
+
+Show Tooltip
+^^^^^^^^^^^^^^^^^
+
+Hides the mouse hover tooltip :ref:`tooltip-label` if unchecked.
 
 Show Zoom Sliders
 ^^^^^^^^^^^^^^^^^
@@ -232,7 +258,7 @@ elevation profile. You can still use the mouse or keyboard to navigate.
 Profile Display
 ~~~~~~~~~~~~~~~
 
-The colors and symbols of the elevation profile follow the style of the
+The colors, symbols and font of the elevation profile follow the style of the
 main map as set in the options dialog. Colors,
 patterns and symbols for airports, navaids, procedures, active and
 passed flight plan legs are the same. The profile display also follows
@@ -245,9 +271,13 @@ flight plan leg is detected.
 For more information see the :ref:`elevation-profile-legend`.
 
 The elevation profile uses actual altitude for display of restrictions,
-slope and cruise. You have to expect differences between actual and
-indicated altitude when flying above transition altitude using the
-standard altimeter setting of 29.92 inches.
+slope and cruise.
+
+The aircraft icon is shown using indicated altitude to ensure matching to cruise altitude line
+at the higher flight levels.
+
+You might see vertical aircraft movement of the aircraft symbol and jumps in the trail when adjusting
+barometric pressure in the simulator altimeter.
 
 .. note::
 
@@ -255,8 +285,6 @@ standard altimeter setting of 29.92 inches.
     active flight plan leg (magenta line). The aircraft will be displayed in
     the wrong position and the aircraft trail will be erratic if the active
     leg is not correct or manually changed.
-
-.. note::
 
     The aircraft trail will be displayed incorrectly in the elevation
     profile if the flight plan is changed (i.e. the flight plan length or
@@ -272,7 +300,7 @@ standard altimeter setting of 29.92 inches.
       of climb and top of descent points shown including slope. Orange flight
       plan lines show procedure legs. Waypoint ``EV501`` has an overfly
       condition and there are several altitude restrictions shown for the
-      approach procedure.
+      approach procedure below the tooltip.
 
 .. _toc-and-tod-paths:
 
@@ -284,21 +312,23 @@ descent which are calculated based on the current :doc:`AIRCRAFTPERF` profile an
 
 Note that the TOC and TOD calculation is influenced by altitude
 restrictions in procedures. *Little Navmap* will calculate a climb or
-descent path always adhering to restrictions. The resulting path might
+descent path always adhering to these restrictions. The resulting path might
 use a higher or lower climb or descent speed than expected.
 
 The path is also forced to the lowest allowed altitude at the final
-approach fix and the final approach course fix to avoid arriving above
+approach fix (``FAF``) and the final approach course fix (``FACF``) to avoid arriving above
 the ILS glide slope or too high at the destination runway.
 
 You can safely follow the descent path as shown by *Little Navmap*,
 provided you can manage your aircraft speed at the same time. For large
 aircraft you might want to descent around 10 nm earlier to reduce speed
-to 250 knots below 10000 feet.
+to 250 knots below 10,000 ft.
+
+I recommend to make the descent path manually more shallow (i.e. use a lower sink rate) to take the deceleration phases into account.
 
 The climb and descent paths are affected by wind and are moved
 accordingly for strong head- or tailwinds. The climb path will be
-steeper in the elevation profile if you climb in a strong head wind, for
+steeper in the elevation profile if you climb in a strong headwind, for
 example.
 
 See chapter :ref:`wind` for more information.
@@ -306,11 +336,11 @@ See chapter :ref:`wind` for more information.
 The plan will switch to a flat display showing only a flight plan line
 at cruise altitude if the TOC and/or TOD cannot be calculated or if the
 plan violates altitude restrictions. A red warning message is displayed
-if this is the case.
+if this is the case. Click the message for more information.
 
 .. figure:: ../images/profile_descent.jpg
 
-      An approach procedure which requires the aircraft to descent early due to a restriction between 7000 and 10000 ft at ``ARTIP``.
+      An approach procedure which requires the aircraft to descent early due to a restriction between 7,000 and 10,000 ft at ``ARTIP``.
 
 Elevation Data
 ~~~~~~~~~~~~~~
@@ -331,12 +361,12 @@ window is closed.
 Online Elevation Data
 ^^^^^^^^^^^^^^^^^^^^^
 
-Note that the online elevation data does not cover all countries and
+Note that the third party online elevation data does not cover all countries and
 currently ends at 60 degrees north. The data contains several known
-errors.
+errors which cannot be fixed.
 
 The calculation of online elevation points is limited to flight plan
-segments not longer than 2000 nautical miles to avoid overloading. Add
+segments not longer than 2,000 NM to avoid overloading. Add
 more waypoints or calculate a flight plan to avoid this limitation.
 
 .. _flight-plan-elevation-profile-offline:
@@ -353,6 +383,8 @@ elevation data has several advantages:
 -  No known errors
 -  Display of altitude below the cursor in the status bar
 
+Resolution is a bit lower than the one for the online data, though.
+
 See :ref:`cache-elevation` in the
 options dialog for instructions how to download and install the GLOBE
 data.
@@ -367,4 +399,5 @@ data.
 .. |Splitter| image:: ../images/profile_splitter.jpg
 .. |Zoom Horizontally| image:: ../images/profile_zoomhoriz.jpg
 .. |Zoom Vertically| image:: ../images/profile_zoomvert.jpg
+.. |Show Top of Climb and Top of Descent| image:: ../images/icon_routetoctod.png
 

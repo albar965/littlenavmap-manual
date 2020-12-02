@@ -29,6 +29,15 @@ Procedure legs are highlighted in red if one or more navaids could not
 be resolved. A warning dialog will be displayed if you try to add this
 procedure to a flight plan.
 
+.. note::
+
+    It is up to the user to combine the correct procedures.
+
+    *Little Navmap* will not keep you from choosing north bound procedures for a route going south, for example.
+    Also check the resulting route to avoid accidental zig-zag routing which can happen if you combine the wrong
+    approach/transition with a STAR, for example.
+
+
 .. figure:: ../images/proceduresearch.jpg
 
        Showing a transition and a RNAV approach. Start and
@@ -41,13 +50,13 @@ Legs are shown in dark blue while missed approach legs are shown in dark
 red color.
 
 Bold red text indicates an error in the leg. The procedure is incomplete
-and should not be used in a flight plan.
+and should not be used in a flight plan. *Little Navmap* might refuse to use the procedure depending on the error since inconsistencies can result in crashes.
 
--  ``Description``: Either description of the procedure or flight
+-  ``Remarks``: Either description of the procedure or flight
    instruction for procedure legs.
 -  ``Course °M``: Magnetic course for a leg.
 -  ``Dist./Time``: Distance of flying time for a leg. Holds can have a
-   leg time in minutes or a leg distance in nautical miles.
+   leg time in minutes or a leg distance in NM.
 -  ``Ident``: Ident of the initial fix or name of the procedure. Fix
    name for legs.
 -  ``Restriction``: Either minimum altitude for en-route airway segment,
@@ -137,15 +146,15 @@ is enabled.
 
 .. _procedure-insert:
 
-|Insert into Flight Plan / Use as Destination / Use as Departure| Insert into Flight Plan / Use as Destination / Use as Departure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Insert into Flight Plan / Use as Destination / Use as Departure| Insert into Flight Plan, Use as Destination and Use as Departure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Text and functionality of this menu item depends on the selected
 procedure type and whether the procedure's airport is already the
 departure or destination airport of the current flight plan.
 
-Use the context menu of the flight plan table to remove procedures. See
-:ref:`delete-selected-legs`.
+Use the context menu of the flight plan table or the map to remove procedures. See
+:ref:`delete-selected-legs` and :ref:`delete-from-flight-plan`.
 
 If a transition is selected, the corresponding procedure (approach, SID
 or STAR) is added or replaced as well.
@@ -165,7 +174,16 @@ the selected procedure.
 If the flight plan is empty, the departure or destination airport is
 added to the flight plan as well.
 
-.. _show-information:
+A leg entry will drawn red if a navaid was not resolved during the
+scenery database loading process. This happens only when the source data
+is not valid or incomplete. In this case, the resulting procedure is not
+usable and a warning dialog will be shown if essential navaids are
+missing.
+
+*Little Navmap* might refuse to use the procedure depending on error.
+
+
+.. _show-information-procs:
 
 |Show Information for Airport| Show Information for Airport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,7 +202,7 @@ for details.
 Show the airport on the map. The zoom distance can be changed in the
 dialog ``Options`` on the tab ``Map``.
 
-.. _show-in-search:
+.. _show-in-search-procs:
 
 |Show Airport in Search| Show Airport in Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -5,9 +5,9 @@ Customizing General
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`` when started. These
 allow extended customization of the program.
 
-The files use the Windows-\ ``INI`` style that has groups in square
+The files use the Windows-INI style that has groups in square
 brackets and ``key=value`` lines. See
-`here <https://en.wikipedia.org/wiki/INI_file>`__ for more information
+`INI (Wikipedia) <https://en.wikipedia.org/wiki/INI_file>`__ for more information
 about this type of configuration files.
 
 .. note::
@@ -169,29 +169,42 @@ Navmap* to see the changes.
 User, AI and Multiplayer Aircraft Icons
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Default icons are included in file ``aircraft-icons.zip`` in installation folder ``customize``.
+
 All icons for user, AI/multiplayer aircraft, helicopters and ships are
 stored in the program but can be overloaded by the user.
 
 The icons are:
 
--  ``aircraft_boat_ground_user.svg``
--  ``aircraft_boat_ground.svg``
--  ``aircraft_boat_user.svg``
 -  ``aircraft_boat.svg``
--  ``aircraft_helicopter_ground_user.svg``
--  ``aircraft_helicopter_ground.svg``
--  ``aircraft_helicopter_user.svg``
+-  ``aircraft_boat_ground.svg``
+-  ``aircraft_boat_ground_user.svg``
+-  ``aircraft_boat_user.svg``
 -  ``aircraft_helicopter.svg``
--  ``aircraft_jet_ground_user.svg``
--  ``aircraft_jet_ground.svg``
--  ``aircraft_jet_user.svg``
+-  ``aircraft_helicopter_ground.svg``
+-  ``aircraft_helicopter_ground_user.svg``
+-  ``aircraft_helicopter_user.svg``
 -  ``aircraft_jet.svg``
--  ``aircraft_small_ground_user.svg``
--  ``aircraft_small_ground.svg``
--  ``aircraft_small_user.svg``
--  ``aircraft_small.svg``
+-  ``aircraft_jet_ground.svg``
+-  ``aircraft_jet_ground_user.svg``
+-  ``aircraft_jet_user.svg``
 -  ``aircraft_online.svg``
 -  ``aircraft_online_ground.svg``
+-  ``aircraft_small.svg``
+-  ``aircraft_small_ground.svg``
+-  ``aircraft_small_ground_user.svg``
+-  ``aircraft_small_user.svg``
+
+Only used in X-Plane:
+
+-  ``aircraft_carrier.svg``
+-  ``aircraft_carrier_ground.svg``
+-  ``aircraft_carrier_ground_user.svg``
+-  ``aircraft_carrier_user.svg``
+-  ``aircraft_frigate.svg``
+-  ``aircraft_frigate_ground.svg``
+-  ``aircraft_frigate_ground_user.svg``
+-  ``aircraft_frigate_user.svg``
 
 The suffixes are chosen by vehicle type, status (ground or airborne) and
 user or AI/multiplayer. The icon is for airborne vehicles if ``ground``
@@ -203,6 +216,8 @@ historical reasons all icons are prefixed with ``aircraft``.
 Userpoint Category Icons
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+Default icons are included in file ``userpoint-icons.zip`` in installation folder ``customize``.
+
 Icons for userpoint categories are stored in the program but can be
 overloaded by the user as well.
 
@@ -212,32 +227,32 @@ file with one of the default category names in the settings directory.
 New categories can be added by placing a new icon adhering to a certain
 name pattern in the default directory.
 
--  ``userpoint_Airport.png``
--  ``userpoint_Airstrip.png``
--  ``userpoint_Bookmark.png``
--  ``userpoint_Cabin.png``
--  ``userpoint_Closed.png``
--  ``userpoint_DME.png``
--  ``userpoint_Error.png``
--  ``userpoint_Flag.png``
--  ``userpoint_Helipad.png``
--  ``userpoint_Lighthouse.png``
--  ``userpoint_Location.png``
--  ``userpoint_Logbook.png``
--  ``userpoint_Marker.png``
--  ``userpoint_Mountain.png``
--  ``userpoint_NDB.png``
--  ``userpoint_Obstacle.png``
--  ``userpoint_POI.png``
--  ``userpoint_Pin.png``
--  ``userpoint_Seaport.png``
--  ``userpoint_TACAN.png``
--  ``userpoint_Unknown.png``
--  ``userpoint_VOR.png``
--  ``userpoint_VORDME.png``
--  ``userpoint_VORTAC.png``
--  ``userpoint_VRP.png``
--  ``userpoint_Waypoint.png``
+-  ``userpoint_Airport.svg``
+-  ``userpoint_Airstrip.svg``
+-  ``userpoint_Bookmark.svg``
+-  ``userpoint_Cabin.svg``
+-  ``userpoint_Closed.svg``
+-  ``userpoint_DME.svg``
+-  ``userpoint_Error.svg``
+-  ``userpoint_Flag.svg``
+-  ``userpoint_Helipad.svg``
+-  ``userpoint_Lighthouse.svg``
+-  ``userpoint_Location.svg``
+-  ``userpoint_Logbook.svg``
+-  ``userpoint_Marker.svg``
+-  ``userpoint_Mountain.svg``
+-  ``userpoint_NDB.svg``
+-  ``userpoint_Obstacle.svg``
+-  ``userpoint_Pin.svg``
+-  ``userpoint_POI.svg``
+-  ``userpoint_Seaport.svg``
+-  ``userpoint_TACAN.svg``
+-  ``userpoint_Unknown.svg``
+-  ``userpoint_VOR.svg``
+-  ``userpoint_VORDME.svg``
+-  ``userpoint_VORTAC.svg``
+-  ``userpoint_VRP.svg``
+-  ``userpoint_Waypoint.svg``
 
 The text between the first underscore ``_`` and the ``.png`` ending
 defines the category. For example ``userpoint_My Places.png`` creates a

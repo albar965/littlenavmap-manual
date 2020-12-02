@@ -17,10 +17,11 @@ Mouse Clicks
 
 The display of a map feature class will be enabled if you use on of
 these mouse clicks. A ``Shift+Click`` will enable display of range
-rings, for example.
+rings, for example. A second ``Shift+Click`` into the center (active point)
+will remove the range rings.
 
 You can enable or disable visibility in menu
-``View`` -> ``User Features`` or the toolbar.
+``View`` -> :ref:`user-features` or the toolbar.
 
 A click in the map on the active spot of a feature like a range ring
 removes it. The cursor changes to a hand symbol to indicate an active
@@ -40,9 +41,6 @@ context menu.
 | ``Shift+Click``                   | Add or remove range rings or      |
 |                                   | navaid range rings.               |
 +-----------------------------------+-----------------------------------+
-| ``Ctrl+Click``                    | Start rhumb-line measurement or   |
-|                                   | delete a measurement line.        |
-+-----------------------------------+-----------------------------------+
 | ``Alt+Click``                     | Start great circle line           |
 |                                   | measurement or delete measurement |
 |                                   | line.                             |
@@ -59,6 +57,8 @@ context menu.
 | ``Wheel``                         | Zoom in or out.                   |
 +-----------------------------------+-----------------------------------+
 | ``Shift+Wheel``                   | Zoom in or out in small steps.    |
++-----------------------------------+-----------------------------------+
+| ``Ctrl+Wheel``                    | Increase or decrease map details. |
 +-----------------------------------+-----------------------------------+
 
 Key Commands
@@ -110,11 +110,7 @@ Highlights and User Features
 |                                   | changed in dialog ``Options`` on  |
 |                                   | tab :ref:`map-display-2`. ``°M``  |
 |                                   | and ``°T`` indicate magnetic or   |
-|                                   | true course, respectively. ``R``  |
-|                                   | and ``GC`` indicate rhumb line or |
-|                                   | great circle line. Suffixes might |
-|                                   | be hidden if only one type is     |
-|                                   | selected (rhumb or great circle)  |
+|                                   | true course, respectively.        |
 +-----------------------------------+-----------------------------------+
 | |Flight Plan Procedure|           | Flight plan procedure leg with    |
 |                                   | the same information as above.    |
@@ -133,18 +129,26 @@ Highlights and User Features
 +-----------------------------------+-----------------------------------+
 | |Top of Climb|                    | Top of climb point with distance  |
 |                                   | from departure.                   |
+|                                   | Can be disabled in menu ``View``  |
+|                                   | -> :ref:`show-toc-and-tod`        |
 +-----------------------------------+-----------------------------------+
 | |Top of Descent|                  | Top of descent point with         |
 |                                   | distance to destination.          |
+|                                   | Can be disabled in menu ``View``  |
+|                                   | -> :ref:`show-toc-and-tod`        |
 +-----------------------------------+-----------------------------------+
 | |Range|                           | Range rings labeled with          |
 |                                   | distance.                         |
+|                                   | The number and distance of the    |
+|                                   | range rings can be changed in the |
+|                                   | ``Options`` dialog on page        |
+|                                   | :ref:`map`.                       |
 +-----------------------------------+-----------------------------------+
 | |Range VOR| |Range NDB|           | VOR or NDB range rings labeled    |
 |                                   | with ident and frequency. Color   |
 |                                   | indicates Navaid type.            |
 +-----------------------------------+-----------------------------------+
-| |Distance GC|                     | `Great                            |
+| |Distance|                        | `Great                            |
 |                                   | circle <https://en.wikipedia.org/ |
 |                                   | wiki/Great-circle_distance>`__    |
 |                                   | distance and course measurement   |
@@ -153,26 +157,21 @@ Highlights and User Features
 |                                   | The two heading values will be    |
 |                                   | equal for small distances. For    |
 |                                   | shorter distances length is also  |
-|                                   | shown in feet or meters.          |
-+-----------------------------------+-----------------------------------+
-| |Distance Rhumb|                  | `Rhumb                            |
-|                                   | line <https://en.wikipedia.org/wi |
-|                                   | ki/Rhumb_line>`__                 |
-|                                   | of equal bearing distance         |
-|                                   | measurement indicating distance   |
-|                                   | and true heading. Rhumb lines are |
-|                                   | used to approach a VOR or NDB or  |
-|                                   | travel along airways. For shorter |
-|                                   | distances length is also shown in |
-|                                   | feet.                             |
+|                                   | shown in feet or meter.           |
+|                                   | The width of distance measurement |
+|                                   | lines can be changed in the       |
+|                                   | dialog ``Options`` on page        |
+|                                   | :ref:`map-display`. The labels    |
+|                                   | can be changed in the tree view   |
+|                                   | on the right side of the          |
+|                                   | same page.                        |
 +-----------------------------------+-----------------------------------+
 | |Distance VOR|                    | Measurement lines starting from   |
 |                                   | an airport or navaid have the     |
 |                                   | same color and additional ident   |
-|                                   | and frequency labels. Course for  |
-|                                   | rhumb lines will be shown in      |
-|                                   | magnetic if the navaid has a      |
-|                                   | magnetic variation attribute.     |
+|                                   | and frequency labels.             |
+|                                   | Course will consider magnetic     |
+|                                   | variation of a navaid.            |
 +-----------------------------------+-----------------------------------+
 | |Search Highlight|                | A highlighted airport or navaid   |
 |                                   | selected in the search result     |
@@ -197,6 +196,15 @@ Highlights and User Features
 |                                   | the mouse above the elevation     |
 |                                   | profile.                          |
 +-----------------------------------+-----------------------------------+
+
+Logbook Preview
+~~~~~~~~~~~~~~~
+
+Direct connection between departure and destination as well as flight plan preview and flown
+trail is shown for selected logbook entries.
+Any of the above can be disabled in the logbook search context menu.
+
++-----------------------------------+-----------------------------------+
 | |Logbook Entry|                   | Airports and great circle path    |
 |                                   | between departure and destination |
 |                                   | for a logbook entry selected in   |
@@ -205,6 +213,16 @@ Highlights and User Features
 |                                   | great circle distance between     |
 |                                   | airports.                         |
 +-----------------------------------+-----------------------------------+
+| |Logbook Entry Flight Plan|       | Flight plan preview as stored     |
+|                                   | with the logbook entry.           |
+|                                   | Waypoint names and flying         |
+|                                   | direction indicated by arrows.    |
+|                                   | Note that complex procedures are  |
+|                                   | not visible.                      |
++-----------------------------------+-----------------------------------+
+| |Logbook Entry Trail|             | Flown user aircraft trail stored  |
+|                                   | with the logbook entry.           |
++-----------------------------------+-----------------------------------+
 
 Compass Rose
 ~~~~~~~~~~~~
@@ -212,7 +230,7 @@ Compass Rose
 Line thickness can be changed in dialog ``Options`` on the tab
 :ref:`map-display-2`.
 
-The colors for flight plan leg course and crab angle indicator depend on
+The colors for flight plan leg course and heading indicator depend on
 settings for active flight plan leg which can be changed in the dialog
 ``Options`` on tab :ref:`map`.
 
@@ -237,7 +255,7 @@ settings for active flight plan leg which can be changed in the dialog
 |                                   | active flight plan leg. Hidden if |
 |                                   | no flight plan loaded.            |
 +-----------------------------------+-----------------------------------+
-| |Crab Angle|                      | Crab angle indicator. Shows the   |
+| |Heading|                         | Heading indicator. Shows the      |
 |                                   | heading that has to be flown      |
 |                                   | towards the next waypoint of the  |
 |                                   | active flight plan leg            |
@@ -294,21 +312,22 @@ Airports
 ~~~~~~~~
 
 Airports having control towers are shown in dark blue others in magenta.
-Add-on airport names and idents are shown italic and underlined.
+Add-on airport names and idents are shown italic and underlined throughout the whole program.
 Airports that are part of the flight plan have a light yellow text
 background.
 
 The symbol is shown smaller if an airport has no runways. This is the
-case for some add-on airports that use another technique like photo
+case for some add-on airports that use another techniques like photo
 scenery to display runways.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Description                       |
 +===================================+===================================+
 | |Large Airport Tower|             | Airports with hard surface        |
-| |Large Airport|                   | runways longer than 8000 ft or    |
-|                                   | 2400 meters. All runways longer   |
-|                                   | than 4000 ft or about 1200 meters |
+| |Large Airport|                   | runways longer than 8,000 ft or   |
+|                                   | 2,400 m. All runways longer       |
+|                                   | than 4,000 ft or about 1,200      |
+|                                   | m                                 |
 |                                   | are shown. Only for lower zoom    |
 |                                   | distances.                        |
 +-----------------------------------+-----------------------------------+
@@ -338,6 +357,14 @@ scenery to display runways.
 +-----------------------------------+-----------------------------------+
 | |Airport with Fuel| |Airport with | Airports that have fuel           |
 | soft Runways and Fuel|            | available.                        |
++-----------------------------------+-----------------------------------+
+| |Add-on Airport|                  | Add-on airports are always        |
+|                                   | highlighted independent of        |
+|                                   | :ref:`force-show-addon-airports`  |
+|                                   | or not. You can disable this in   |
+|                                   | the options dialog on page        |
+|                                   | :ref:`map-display` by unchecking  |
+|                                   | ``Highlight add-on airports``.    |
 +-----------------------------------+-----------------------------------+
 | |Airport Weather|                 | Weather at airport. See chapter   |
 |                                   | :ref:`airport-weather-legend`     |
@@ -370,30 +397,44 @@ background.
 |                                   | frequency. Compass rose shows     |
 |                                   | magnetic variation on lower zoom  |
 |                                   | distances.                        |
+|                                   | Small blue rectangle at high      |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |VOR Small| |VOR Large|           | VOR including ident, type and     |
 |                                   | frequency.                        |
+|                                   | Tiny blue rectangle at high       |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |DME|                             | DME including ident, type and     |
 |                                   | frequency.                        |
+|                                   | Small blue rectangle at high      |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |TACAN Small| |TACAN Large|       | TACAN including ident, type       |
 |                                   | (High, Low or Terminal) and       |
 |                                   | channel. Compass rose shows       |
 |                                   | magnetic variation on lower zoom  |
 |                                   | distances.                        |
+|                                   | Small blue rectangle at high      |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |VORTAC Small| |VORTAC Large|     | VORTAC including ident, type      |
 |                                   | (High, Low or Terminal) and       |
 |                                   | frequency. Compass rose shows     |
 |                                   | magnetic variation on lower zoom  |
 |                                   | distances.                        |
+|                                   | Small blue rectangle at high      |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |NDB Small| |NDB Large|           | NDB including ident, type (HH, H, |
 |                                   | MH or CL - compass locator) and   |
 |                                   | frequency.                        |
+|                                   | Small dark red circle at high     |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |Waypoint|                        | Waypoint with name.               |
+|                                   | Small magenta triangle at high    |
+|                                   | zoom levels.                      |
 +-----------------------------------+-----------------------------------+
 | |User-defined Waypoint|           | User-defined waypoint with name.  |
 +-----------------------------------+-----------------------------------+
@@ -420,6 +461,16 @@ background.
 |                                   | preceding arrow will show the     |
 |                                   | allowed direction if the airway   |
 |                                   | is one-way.                       |
++-----------------------------------+-----------------------------------+
+| |Track East|                      | Eastbound PACOTS track with       |
+|                                   | flying direction, name ``2``      |
+|                                   | and type.                         |
+|                                   | Tracks having no east/west        |
+|                                   | direction are shown in gray color.|
++-----------------------------------+-----------------------------------+
+| |Track West|                      | Westbound PACOTS track with       |
+|                                   | flying direction, name ``H``      |
+|                                   | and type.                         |
 +-----------------------------------+-----------------------------------+
 | |ILS|                             | ILS with glideslope and markers.  |
 |                                   | Label shows ident, frequency,     |
@@ -612,9 +663,9 @@ aircraft trail.
 |                                   | a procedure.                      |
 +-----------------------------------+-----------------------------------+
 | |Profile Safe Alt|                | Minimum safe altitude for flight  |
-|                                   | plan. This is elevation plus 1000 |
-|                                   | feet rounded up to the next 500   |
-|                                   | ft. The 1000 feet buffer can be   |
+|                                   | plan. This is elevation plus 1,000|
+|                                   | ft rounded up to the next 500     |
+|                                   | ft. The 1,000 ft buffer can be    |
 |                                   | changed in the dialog ``Options`` |
 |                                   | on the tab :ref:`flight-plan`     |
 +-----------------------------------+-----------------------------------+
@@ -711,17 +762,17 @@ MORA Grid
 
 The minimum off-route altitude grid provides an obstacle clearance
 altitude within an one degree grid. The altitudes clear all terrain and
-obstructions by 1000 feet in areas where the highest elevations are 5000
-feet MSL or lower. Where the highest elevations are above 5000 feet MSL
-terrain is cleared by 2000 feet.
+obstructions by 1,000 ft in areas where the highest elevations are 5,000
+ft MSL or lower. Where the highest elevations are above 5,000 ft MSL
+terrain is cleared by 2,000 ft.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Description                       |
 +===================================+===================================+
-| |MORA Grid|                       | MORA grid. Large number is 1000   |
-|                                   | feet and small number 100 feet.   |
-|                                   | Example here: 3300, 4400, 6000,   |
-|                                   | 9900 and 10500 feet.              |
+| |MORA Grid|                       | MORA grid. Large number is 1,000  |
+|                                   | ft and small number 100 ft.       |
+|                                   | Example here: 3,300, 4,400, 6,000,|
+|                                   | 9,900 and 10,500 ft.              |
 +-----------------------------------+-----------------------------------+
 
 .. _airport-weather-legend:
@@ -741,12 +792,13 @@ Flight Rules
 +-----------------------------------+-----------------------------------+
 | |MVFR|                            | MVFR. Marginal VFR. Visibility    |
 |                                   | equal or below 5 statue miles or  |
-|                                   | lowest ceiling at or below 3000   |
+|                                   | lowest ceiling at or below 3,000  |
 |                                   | ft.                               |
 +-----------------------------------+-----------------------------------+
 | |IFR|                             | IFR. Instrument flight rules.     |
 |                                   | Visibility below 3 statue miles   |
-|                                   | or lowest ceiling below 1000 ft.  |
+|                                   | or lowest ceiling below 1,000     |
+|                                   | ft.                               |
 +-----------------------------------+-----------------------------------+
 | |LIFR|                            | LIFR. Limited IFR. Visibility     |
 |                                   | below 1 statue miles or lowest    |
@@ -855,11 +907,10 @@ Winds Aloft
 .. |Closed Airport with Tower| image:: ../images/legend_airport_tower_closed.png
 .. |Closed Airport| image:: ../images/legend_airport_closed.png
 .. |Closed Taxiway| image:: ../images/legend_closedtaxi.png
-.. |Crab Angle| image:: ../images/legend_compass_rose_crab.png
+.. |Heading| image:: ../images/legend_compass_rose_crab.png
 .. |DME| image:: ../images/legend_dme.png
 .. |Distance Circles| image:: ../images/legend_compass_rose_dist.png
-.. |Distance GC| image:: ../images/legend_distance_gc.png
-.. |Distance Rhumb| image:: ../images/legend_distance_rhumb.png
+.. |Distance| image:: ../images/legend_distance_gc.png
 .. |Distance VOR| image:: ../images/legend_distance_vor.png
 .. |Downwind| image:: ../images/legend_pattern_downwind.png
 .. |Elevation Profile Position| image:: ../images/legend_route_profile_mark.png
@@ -887,7 +938,6 @@ Winds Aloft
 .. |ILS| image:: ../images/legend_ils_gs.png
 .. |ILS Profile| image:: ../images/legend_profile_ils.png
 .. |Inbound to Fix| image:: ../images/legend_holdinbound.png
-.. |Jet Airway| image:: ../images/legend_airway_jet.png
 .. |Jet on Ground| image:: ../images/icon_aircraft_jet_ground_user.png
 .. |Jet| image:: ../images/icon_aircraft_jet.png
 .. |Jet Ground| image:: ../images/icon_aircraft_jet_ground.png
@@ -897,6 +947,8 @@ Winds Aloft
 .. |Large Airport Tower| image:: ../images/legend_airport_tower_8000.png
 .. |Localizer| image:: ../images/legend_ils_large.png
 .. |Logbook Entry| image:: ../images/legend_logbook_entry.png
+.. |Logbook Entry Flight Plan| image:: ../images/legend_logbook_route.png
+.. |Logbook Entry Trail| image:: ../images/legend_logbook_trail.png
 .. |MORA Grid| image:: ../images/legend_map_mora.png
 .. |MVFR| image:: ../images/legend_weather_mvfr.png
 .. |Magnetic North| image:: ../images/legend_compass_rose_mag_north.png
@@ -982,11 +1034,15 @@ Winds Aloft
 .. |VOR Large| image:: ../images/legend_vor_large.png
 .. |VOR Small| image:: ../images/legend_vor_small.png
 .. |Vectors| image:: ../images/legend_procvectors.png
-.. |Victor Airway| image:: ../images/legend_airway_victor.png
 .. |Waypoint| image:: ../images/legend_waypoint.png
 .. |Waypoint Invalid| image:: ../images/legend_waypoint_invalid.png
 .. |Wind Barb| image:: ../images/legend_route_wind.png
 .. |Wind below 5 Knots| image:: ../images/legend_wind_low.png
 .. |Wind| image:: ../images/legend_windpointer.png
 .. |outbound from Fix| image:: ../images/legend_holdoutbound.png
+.. |Add-on Airport| image:: ../images/legend_addon.png
 
+.. |Jet Airway| image:: ../images/legend_airway_jet.png
+.. |Victor Airway| image:: ../images/legend_airway_victor.png
+.. |Track East| image:: ../images/legend_track_east.png
+.. |Track West| image:: ../images/legend_track_west.png

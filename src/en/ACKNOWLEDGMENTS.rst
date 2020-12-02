@@ -8,10 +8,6 @@ donations and more.
 A huge Thank you! to Paul Watts for his support, for testing, tips,
 links to incredible tools and for all his work on the manual.
 
-Plenty of thanks to `Hervé Sors <http://www.aero.sors.fr>`__ for
-allowing me to include his updated ``magdecl.bgl`` file with *Little
-Navmap*.
-
 A very special thank-you to Roberto S. from Switzerland for his valuable
 input and also helping with his capability to find the most obscure
 bugs.
@@ -47,12 +43,14 @@ Thanks to Alfredo alias *fred*, Josemi alias *aquileo* and Emilio alias
 translation of the manual.
 
 Many thanks to Valerio Messina and Flavio Borgna for the Italian
-translation.
+program translation.
 
 Thank you! to Eddy Crequie for doing the Dutch translation.
 
 Ein herzliches Dankeschön and Jannik Prinz for setting up the Tavis CI
 builds.
+
+Ein großes Dankeschön to Günter Steiner for his image for the new splash screen.
 
 Thanks to all beta testers for their effort, patience and ideas: Barry,
 Jean-Pierre, Brian, Gérard, John, Remi, Paolo, Sam and many others.
@@ -70,6 +68,10 @@ Danke für Karl Wichelmann und Zoltan für die Arbeit an der deutschen
 Übersetzung der Anleitung.
 
 Thank you, Björn for the idea with the automatic performance collection.
+
+Plenty of thanks to `Hervé Sors <http://www.aero.sors.fr>`__ for
+allowing me to include his updated ``magdecl.bgl`` file with *Little
+Navmap*.
 
 Thanks to all in the forums who patiently supported me and gave
 invaluable feedback during the public beta:

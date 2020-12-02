@@ -12,13 +12,16 @@ The compass rose is kept centered in the current view if not connected
 to a simulator. Magnetic declination is based on the declination in the
 center.
 
-The size is adapted to the map view size but not larger than 1000 nm and
-not smaller than 4 nm.
+Once connected, the compass rose will be attached to the user aircraft and follow its position.
+This can be disabled in menu ``View`` -> :ref:`show-compass-rose-attach`.
+
+The size is adapted to the map view size but not larger than 1,000 NM and
+not smaller than 4 NM.
 
 Line thickness and other display options can be changed in dialog
 ``Options`` on page :ref:`map-display-2`.
 
-The colors for flight plan leg course and crab angle indicator depend on
+The colors for flight plan leg course and heading indicator depend on
 settings for active flight plan leg which can be changed in the dialog
 ``Options`` on page :ref:`map-display`.
 
@@ -44,7 +47,7 @@ Indicators
 |                                   | active flight plan leg. Hidden if |
 |                                   | no flight plan loaded.            |
 +-----------------------------------+-----------------------------------+
-| |Crab Angle|                      | Crab angle indicator. Shows the   |
+| |Heading|                         | Heading indicator. Shows the      |
 |                                   | heading that has to be flown      |
 |                                   | towards the next waypoint of the  |
 |                                   | active flight plan leg            |
@@ -62,7 +65,7 @@ Examples
 .. figure:: ../images/compass_rose_aircraft.jpg
 
     Compass rose centered around user aircraft. No flight plan loaded. Therefore,
-    crab angle and next waypoint indicators hidden.
+    heading and next waypoint indicators hidden.
 
 .. |Compass Rose Icon| image:: ../images/icon_compassrose.png
 .. |True North| image:: ../images/legend_compass_rose_true_north.png
@@ -71,5 +74,5 @@ Examples
 .. |Aircraft Track| image:: ../images/legend_compass_rose_track.png
 .. |Aircraft Heading| image:: ../images/legend_compass_rose_heading.png
 .. |Flight Plan Leg Course| image:: ../images/legend_compass_rose_leg.png
-.. |Crab Angle| image:: ../images/legend_compass_rose_crab.png
+.. |Heading| image:: ../images/legend_compass_rose_crab.png
 

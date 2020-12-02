@@ -13,15 +13,13 @@ The approach does not create an airport traffic pattern or a pattern
 like structure. Add user defined waypoints to the flight plan for
 lateral guidance around the destination.
 
-User defined approaches are part of a flight plan unlike airport traffic
-patterns (:doc:`TRAFFICPATTERN`) which are only map
-display features.
+User defined approaches are part of a flight plan similar to a procedure
+unlike :doc:`TRAFFICPATTERN` which is only a map display feature.
 
 This type of approach can be removed like other procedures by deleting
 one of the legs in the flight plan table.
 
-The approach is saved in the annotated PLN flight plan file (default
-format) like other approaches. User defined waypoints are used for the
+The approach is saved in the LNMPERF flight plan file like other approaches. User defined waypoints are used for the
 initial fix and runway threshold when exporting a custom approach to
 other flight plan formats than PLN.
 
@@ -51,15 +49,16 @@ flight plan.
 -  ``Runways``: List of available runways for the airport. Shows runway
    name, length, width, magnetic heading, surface and lighting status.
 -  ``Entry distance to runway threshold``: Distance from the initial fix
-   to the runway. Default is 3 nautical miles.
+   to the runway. Default is 3 NM.
 -  ``Entry altitude above runway``: Altitude of the initial fix above
-   runway elevation. Default is 1000 feet.
+   runway elevation. Default is 1,000 ft.
 -  ``Approach slope``: Shows the slope angle calculated from the given
    distance and altitude. The default values for distance and altitude
    give a 3.1 degree slope.
 
 A click on the ``OK`` button or a double click into the list ``Runways``
 closes the dialog and creates the approach.
+
 
 .. figure:: ../images/proc_custom.jpg
 

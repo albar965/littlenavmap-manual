@@ -21,7 +21,7 @@ General
 
 Latitude has to be first and longitude second.
 
-N/S and E/W designators are required. Case does not matter.
+N/S and E/W designators are required except for the signed formats. Case does not matter.
 
 Degree, minute and second signs can be omitted if numbers are separated
 by spaces.
@@ -31,6 +31,13 @@ degrees/minutes/seconds if no unit signs are used.
 
 Decimal separator can be period (English) or the locale dependent
 separator like e.g. comma (German).
+
+All dialogs show the read coordinates below the input field in the curretly configured coordinate format.
+
+See :ref:`units` for more information.
+
+
+.. _signed-decimal-coordinates:
 
 Signed Decimal Formats
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -42,8 +49,11 @@ For the coordinate formats ``Latitude and Longitude with sign`` and
 -  Longitude: Negative is west and positive is east values.
 
 Choosing these display formats will also enable input of signed decimal
-values. The reading order for coordinates will also change depending on
+values. The reading order for coordinates (``Latitude and Longitude`` versus ``Longitude and Latitude``)
+will also change depending on
 the chosen format if entering signed numbers.
+
+The reading order will not change if the input field uses ``N``, ``S``, ``E`` and ``W`` designators.
 
 Other Formats
 ~~~~~~~~~~~~~

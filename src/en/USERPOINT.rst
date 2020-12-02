@@ -1,4 +1,4 @@
-User-defined Waypoints
+Userpoints
 ----------------------
 
 User-defined waypoints (or userpoints) allow for adding, editing,
@@ -39,7 +39,7 @@ buttons have an equivalent in the result table context menu.
 |Add Userpoint| Add Userpoint
 ''''''''''''''''''''''''''''''''''''''''
 
-Add an user-defined waypoint to the userdata.
+Add an user-defined waypoint to the userpoints.
 
 Some fields of the new userpoint dialog are populated automatically
 depending on a selected userpoint or, if nothing is selected in the
@@ -126,31 +126,14 @@ context, the selection in the search result table or previous additions.
 
 ``Type`` can be selected from a drop down list or entered freely.
 
-The field ``Description`` allows multi line text and special characters.
-Formatting like italic or bold is not supported.
-
-Links are recognized in the field ``Description`` and can be opened in
-the dock window ``Information`` on tab ``Navaids`` which is shown after
-clicking on an userpoint or selecting ``Show Information`` in one of the
-context menus.
-
-Normal web links like ``http://www.example.com`` or
-``https://www.example.com`` are recognized besides directory or file
-links like ``file:///C:/Users/me/Documents/Aircraft%20Notes.txt`` on
-Windows or ``file:///home/me/Aircraft%20Notes.txt`` on macOS or Linux.
-
-Note that you have to use the forward slash ``/`` instead of the
-backslash ``\`` on Windows as a path separator.
-
-Replace spaces in links with ``%20`` since *Little Navmap* recognizes
-links until the next space.
+See :doc:`REMARKS` for more information about using web links in this field.
 
 The field ``Visible from`` allows to define visibility on the map
 depending on zoom distance. The zoom distance (viewpoint distance to
 earth surface) for the current map view is shown in the
-:doc:`STATUSBAR`. The user point will be visible for
+:doc:`STATUSBAR`. The userpoint will be visible for
 all zoom distances smaller than the value in ``Visible from``. Maximum
-value is 3000 nm and minimum value is 1 nm.
+value is 3,000 NM and minimum value is 1 NM.
 
 Valid coordinates are required to confirm the dialog. See :doc:`COORDINATES` for a detailed
 description of the recognized coordinate formats. A label below the
@@ -253,8 +236,7 @@ for now.**
 Airports
 ^^^^^^^^
 
--  |Airport| **Airport**: Default when creating an userpoint on top of
-   an airport.
+-  |Airport| **Airport**: Default when creating an userpoint on top of an airport.
 -  |Airstrip| **Airstrip**
 -  |Closed| **Closed airport**
 -  |Helipad| **Helipad**
@@ -308,7 +290,7 @@ The recommended minimum fields for import are ``Type``, ``Name``, ``Ident``,
 Only ``Latitude`` and ``Longitude`` are required, the rest can be empty.
 
 All twelve fields are saved when exporting userpoints as CSV. Also, the
-multi line field ``Description`` is enclosed in quotes if needed and
+multi line field ``Remarks`` is enclosed in quotes if needed and
 preserves line breaks.
 
 English number format (dot ``.`` as decimal separator) is used in import
@@ -340,7 +322,7 @@ Example for an absolute minimal userpoint consisting of coordinates only:
    ,,,49.0219993591,7.8840069771
 
 ``Visible from`` will be set to the
-default of 250 nm and the userpoint will be shown using the ``Unknown``
+default of 250 NM and the userpoint will be shown using the ``Unknown``
 |Unknown| icon after import.
 
 Example for a minimal userpoint record with type ``Mountain`` , ident and name for import:
@@ -349,7 +331,7 @@ Example for a minimal userpoint record with type ``Mountain`` , ident and name f
 
     Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771
 
-``Visible from`` will be set to the default of 250 nm after import.
+``Visible from`` will be set to the default of 250 NM after import.
 
 Example for an exported userpoint with type ``Mountain`` and all fields set:
 
@@ -370,6 +352,10 @@ each.
 CSV Fields
 ^^^^^^^^^^
 
+The full header if enabled on export is:
+
+``Type,Name,Ident,Latitude,Longitude,Elevation,Magnetic Declination,Tags,Description,Region,Visible From,Last Edit,Import Filename``
+
 ========   =====================   ========   =============   ================================================================================================================================================================================
 Position   Name                    Required   Empty Allowed   Comment
 ========   =====================   ========   =============   ================================================================================================================================================================================
@@ -378,13 +364,14 @@ Position   Name                    Required   Empty Allowed   Comment
 3          Ident                   Yes        Yes             Required only for Garmin and X-Plane export. Has to be an unique valid identifier with maximum of five characters for these exports.
 4          Latitude                Yes        No              Range from -90 to 90 degrees using dot `.` as decimal separator
 5          Longitude               Yes        No              Range from -180 to 180 degrees using dot `.` as decimal separator.
-6          Altitude                No         Yes             Must be a valid number if used. Unit is always feet.
+6          Elevation               No         Yes             Must be a valid number if used. Unit is always feet.
 7          Magnetic declination    No         Yes             Ignored on import and set to a valid calculated value on export.
 8          Tags                    No         Yes             Free to use field. GUI has no special tag search.
 9          Description             No         Yes             Free to use field which allows line breaks.
 10         Region                  No         Yes             Two letter ICAO region of an userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.
-11         Visible from            No         Yes             Defines from what zoom distance in nautical miles (shown on :doc:`STATUSBAR`) the userpoint is visible. Set to 250 nm if empty on import.
-12         Last update timestamp   No         Yes             ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in GUI.
+11         Visible From            No         Yes             Defines from what zoom distance in NM (shown on :doc:`STATUSBAR`) the userpoint is visible. Set to 250 NM if empty on import.
+12         Last Edit               No         Yes             ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in the user interface.
+13         Import Filename         No         Yes             Full path and file name the userpoint was imported from. Not editable in the user interface.
 ========   =====================   ========   =============   ================================================================================================================================================================================
 
 .. _userpoints-xplane:
@@ -417,10 +404,10 @@ There are five columns of data in the file:
 .. code-block:: none
 
    I
-   1101 Version - data cycle 1704, build 20170325, metadata FixXP1101. NoCopyright (c) 2017 achwodu
+   1101 Version - data cycle 1704, build 20170411, metadata FixXP1101. NoCopyright (c) 2017 useruser
 
-    50.88166700  12.58666700 PACEC ENRT ZZ
-   -36.29987335 174.71089172 N0008 NZNI ZZ
+    50.88166689  12.58666711 PACEC ENRT ZZ
+   -36.29987200 174.71089013 N0008 NZNI ZZ
    99
 
 
@@ -429,6 +416,12 @@ There are five columns of data in the file:
      Note that, while the user-defined waypoints are not displayed on the
      X-Plane map, they can be selected and used to build flight plans in the
      X-Plane stock GPS and FMS.
+
+     Keep in mind that waypoints are loaded from the Navigraph database if the
+     default mode :ref:`navigraph-navaid-proc` is enabled.
+
+     Therefore, user defined waypoints from the file ``user_fix.dat`` might not be
+     shown in *Little Navmap* after loading the scenery library from X-Plane.
 
 Import
 ^^^^^^

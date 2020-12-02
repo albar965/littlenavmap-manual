@@ -26,41 +26,6 @@ Save CPU Cycles
    it can use the downloaded image tiles as is and does not transform
    them to the spherical format.
 
-.. _save-memory:
-
-Reduce Memory Consumption
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Replace the complete section ``[Settings]`` in the ``little_navmap.ini``
-with the section below to reduce cache sizes.
-
-.. code-block:: ini
-
-   [Settings]
-   DatabaseCacheKb=5000
-   InfoQueryAirportCache=100
-   InfoQueryAirportSceneryCache=100
-   InfoQueryAirwayCache=100
-   InfoQueryApproachCache=100
-   InfoQueryComCache=100
-   InfoQueryHelipadCache=100
-   InfoQueryIlsCache=100
-   InfoQueryNdbCache=100
-   InfoQueryRunwayCache=100
-   InfoQueryRunwayEndCache=100
-   InfoQueryStartCache=100
-   InfoQueryTransitionCache=100
-   InfoQueryVorCache=100
-   InfoQueryWaypointCache=100
-   MapQueryAirspaceLineCache=100
-   MapQueryApronCache=100
-   MapQueryHelipadCache=100
-   MapQueryParkingCache=100
-   MapQueryRunwayCache=100
-   MapQueryRunwayOverwiewCache=100
-   MapQueryStartCache=100
-   MapQueryTaxipathCache=100
-
 
 Troubleshoot
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -97,12 +62,6 @@ Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
    like** ``airport_id`` **or others:** This can happen if the
    program is updated. Use ``Reset View`` in the context menu of the
    result table.
--  **Online maps like** *OpenStreetMap* **or** *OpenTopoMap*
-   **maps can end up blurred when using functionality like**
-   ``Center Flight Plan`` **or** ``Go to Home`` **.** Zoom once in and out using
-   the mouse wheel, overlay zoom buttons or keyboard to fix this. You
-   can also enable :ref:`blurred-map` in the options dialog on tab
-   ``Map``.
 -  **The flight plan elevation profile has errors or invalid elevation
    data:** The online elevation data contains several known errors. Use
    the recommended GLOBE offline elevation data. See
@@ -136,6 +95,9 @@ Known Problems
 See also `Little Navmap - Frequently asked
 Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
 
+General
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 -  Some airport add-ons do not modify the stock airports but only add
    new scenery and buildings. These add-ons will not be recognized as
    such and are therefore not highlighted on the map (italic and
@@ -157,28 +119,53 @@ Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
 -  There are errors in the online elevation source data (like in
    northern Italy, Po Valley or Lake Titicaca in Peru and Bolivia) which
    will show up in the flight plan elevation profile.
--  The Mercator projection shows occasional display problems depending
-   on zoom distance like horizontal lines near the anti meridian or
-   missing flight plan segments.
--  The Marble floating map overlays on the map can be configured but do
-   not save all settings except their visibility.
 -  Magnetic declination is partially not set (for example VORDME
    Cambridge Bay YCB) or inconsistent between airports an adjacent
    navaids. This is an error in the source data.
--  Airports are misplaced (for example Cabo San Lucas, MM15 in Mexico)
+-  Airports are misplaced (for example Cabo San Lucas, MM15 in Mexico for FSX)
    compared to the background maps. This is an error in the source data
    and cannot be fixed.
--  Very long route legs can disappear from the map when zooming in. The
-   label is still visible though.
--  Tooltips of large airspaces can appear at wrong places.
--  The wrong procedures are restored sometimes if the flight plan is
-   reloaded when an airport has more than one procedure with the same
-   name. This can happen if using P3D/FSX data only.
 -  Procedures are drawn incorrectly in some cases.
 -  The airport search attribute ``Procedures`` does not work correctly
    in the mixed database. It will show only simulator airports having
    procedures instead of using the Navigraph airport status.
--  The scalebar is not accurate. Use the measurement lines instead.
+-  Dock window layout in Little Navmap can change when resizing or maximizing window and back.
+-  Window is restored in normal state when changing from a maximized window to fullscreen and back.
+-  The window layout might not be restored precisely on startup in some cases.
+-  The flight plan calculation might pop up shortly when starting the program.
+-  The height of the elevation profile window cannot be reduced in some cases. Reset to default window
+   layout which fixes this. Rearrange or move the elevation profile window to another position which
+   usually solves this. Save the layout once you have a working one.
+-  Zooming with touchpad or magic mouse does not work properly on macOS. Use the navigation overlay
+   or one of the other options on page ``Map Navigation`` in ``Options`` if you think it is unusable.
+
+Microsoft Flight Simulator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  *Little Navmap* cannot read SID and STAR from MSFS. Documentation about MSFS format changes are
+   needed in SDK.
+-  MSFS multiplayer and real-time AI cannot be displayed yet. These do not appear in the SimConnect
+   interface.
+-  Simulator weather cannot be shown for MSFS since SimConnect weather functions are deprecated and
+   do not deliver data. Needs update or documentation in MSFS SDK. Use NOAA weather which gives you
+   the most up-to-date weather reports.
+-  MSFS seems to have no clear concept of scenery order (``Content.xml`` seems unreliable) and there is
+   no information in the SDK about this. Add-ons are loaded by alphabetical order by *Little Navmap*.
+   To put an add-on to the end of the loading list add a ``z_`` to the folder name, for example.
+-  Flight plan loading in MSFS is flawed and does not produce any error messages if it fails. Quite
+   often MSFS cannot load its own plans correctly.
+-  Country names are missing in MSFS translation tables and are not available in *Little Navmap*,
+   therefore.
+-  Add-ons using the ``.fsarchive`` encrypted format are not supported. *Little Navmap* will show
+   only the stock airport instead of the add-on if a package is locked down like this.
+-  Some aircraft mods do not report correct fuel flow to work around simulator limitations. This
+   cannot be fixed in *Little Navmap*.
+-  Some airports files like ``LEMG.bgl`` cannot be read due to unknown format. *Little Navmap*
+   reports ``Error: readInt for file "...OMITTED.../LEMG.bgl" failed. Reason 1``. Exclude the airport
+   file from reading in options on page ``Scenery Library Database`` or simply ignore the message. The
+   stock LEMG and all other airports are not affected by this.
+
+.. _report-bug:
 
 How to report a Bug
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -193,13 +180,14 @@ are shown in the about dialog of *Little Navmap* as well.
 -  Operating system:
 
    -  Windows: 7, 8 or 10
-   -  macOS: El Capitan, Sierra or High Sierra
+   -  macOS: High Sierra, Catalina or Big Sur
    -  Linux: which distribution and version
 
 -  Simulator:
 
-   -  X-Plane: 10, 11.05 or 11.10 beta version
-   -  FSX, FSX SE, P3D V4 or V4.1
+   -  X-Plane: 11.40 or 11.50 version
+   -  FSX, FSX SE, P3D or MSFS including version
+   -  Navdata updates if scenery is affected
 
 -  Add any flight plans or other files if involved in the error
 

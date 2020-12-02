@@ -9,6 +9,9 @@ Tooltips give more information about the function of a tab.
 
 Note that you cannot move a tab to another window.
 
+The ``Window`` -> :ref:`reset-layout-menu` menu item in the
+main menu also resets the tab visibility and order to default.
+
 Context Menu Tabbar
 ~~~~~~~~~~~~~~~~~~~~
 

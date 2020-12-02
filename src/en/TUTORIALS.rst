@@ -11,11 +11,13 @@ All functions will be referred by the names in the main menu by using
 find the buttons on one of the toolbars. Screenshots will provide more
 help.
 
-Note that flight plan distances, available procedures and airport names
-might differ between the simulators and used navdata cycles.
-
 Screenshots were made on Linux and Windows. Therefore, look and feel
 will be different.
+
+.. note::
+
+    Flight plan distances, available procedures and airport names
+    might differ between the simulators and used navdata cycles.
 
 Quick Start
 ~~~~~~~~~~~

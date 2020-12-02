@@ -4,25 +4,29 @@ Navigation Databases
 *Little Navmap* can use up to two databases in parallel:
 
 #. **Simulator database:** Created by reading the scenery library of
-   FSX, P3D or X-Plane.
+   FSX, Prepar3D, Microsoft Flight Simulator 2020 or X-Plane.
 #. **Navigation database:** Provided by Navigraph. Does not have to be
-   compiled and can be updated by the Navigraph *FMS Data Manager*.
+   compiled and can be updated by the Navigraph FMS Data Manager.
 
-*Little Navmap* is bundled with a navigation database from an older
-AIRAC cycle that is enabled per default.
+*Little Navmap* is bundled with a navigation database courtesy of `Navigraph <https://www.navigraph.com>`__ which is enabled per default.
 
-.. note::
+.. tip::
+
+   You can update the navdatabase of *Little Navmap* with the Navigraph FMS Data Manager.
 
    See `Install Navigraph
    Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ on
-   my home page for information how to update *Little Navmap's*
-   navigation data.
+   my home page for more information if the update fails.
+
+.. note::
+
+    It is recommended to keep all scenery libraries in sync. This means that your simulator, *Little
+    Navmap*, aircraft and tools should use the same AIRAC cycle. Having navdata synchronized
+    helps to avoid issues when loading flight plans.
 
 .. warning::
 
-   Do not let the Navigraph FMS Database Manager update databases
-   while *Little Navmap* is running. *Little Navmap* might crash,
-   the update might fail or remain incomplete.
+   Always close *Little Navmap* before updating its databases.
 
 Three display modes can be selected from the menu ``Scenery Library`` as
 shown below.
@@ -45,7 +49,7 @@ Runway layout might not match the runway layout in the simulator if you
 use stock or older airport scenery.
 
 An advantage of this mode is that approach procedures always match the
-airport runway layout.
+airport runway layout precisely.
 
 .. figure:: ../images/airport_simulator_scenery.jpg
 
@@ -59,20 +63,12 @@ airport runway layout.
     ``Use Navigraph for all Features`` is enabled. Note missing runway
     surface information, aprons, taxiways and parking positions.
 
-.. _navdata-navigraph-none:
-
-Do not use Navigraph Database
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Completely ignores the Navigraph database and shows only information
-read from the simulator scenery.
-
 .. _navdata-navigraph-navaid-proc:
 
 Use Navigraph for Navaids and Procedures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default mode after installation of *Little Navmap*.
+This is the default and strongly recommended mode.
 
 This mode blends navaids and other features from the Navigraph database
 with the simulator database. This affects the map display, all
@@ -115,7 +111,7 @@ Limitations in this mode
    ``Kulik Lake``: ident changed from ``LKK`` to ``PAKL``). If you
    suspect such a case use the mode ``Use Navigraph for all Features``
    to get the procedures for the airport.
--  The airport search ``Procedures`` only considers procedures available
+-  The airport search only considers procedures available
    in the simulator. Switch to ``Use Navigraph for all Features`` to
    look for airports that have procedures from the Navigraph database.
 -  ILS placement or presence might not match approach procedures if an
@@ -124,9 +120,17 @@ Limitations in this mode
    switch to ``Use Navigraph for all Features`` to overcome this
    limitation.
 
-Using the *fsAerodata* navdata update will remove many
-of the limitations above since it will synchronize the simulator scenery
-with the Navigraph database.
+.. tip::
+
+   Use the Navigraph navdata update for Microsoft Flight Simulator 2020
+   to update the scenery library to the latest and also to keep *Little Navmap*
+   and MSFS navdata synchronized. This will reduce issues when loading
+   flight plans into the simulator.
+
+   Using the *fsAerodata* navdata for FSX or P3D update will remove many
+   of the limitations above since it will synchronize the simulator scenery
+   with the Navigraph database.
+
 
 .. figure:: ../images/procedure_mismatch.jpg
 
@@ -137,3 +141,19 @@ with the Navigraph database.
         *OpenStreetMap* backgound shows the new airport.
 
 
+.. _navdata-navigraph-none:
+
+Do not use Navigraph Database
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Completely ignores the Navigraph database and shows only information
+read from the simulator scenery.
+
+.. note::
+
+    This mode will read all navdata from the simulator scenery files.
+    Depending on simulator there are limitations which result in limited features.
+
+    This is missing one-way airways, no airway maximum altitude restrictions, some radio navaid
+    types missing and more for FSX, P3D and MSFS simulators. You might also experience errors in the airway system
+    and broken procedures.

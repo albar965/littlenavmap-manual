@@ -158,7 +158,7 @@ or at flight plan waypoints. Tooltips at the wind barbs show wind
 details for several layers at the position.
 
 Hovering the mouse over the elevation profile shows the wind at the
-flight plan position. See :ref:`top-label`.
+flight plan position. See :ref:`tooltip-label`.
 
 Winds are used to calculate flight time, trip fuel, top of
 descent and top of climb.
@@ -171,12 +171,12 @@ explanation of the wind symbols and :ref:`weather` for more configuration option
 
 Select wind data source for display with :ref:`wind-source`.
 
-.. _wind-levels:
+.. _wind-levels-button:
 
 |Wind Levels Button| Wind Levels Button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as :ref:`wind-levels`.
+Same as :ref:`wind-levels-menu`.
 
 The menu button enables or disables wind aloft display by a wind barb
 grid at different layers as well as at flight plan waypoints.
@@ -184,13 +184,13 @@ grid at different layers as well as at flight plan waypoints.
 The drop down menu has the following items:
 
 -  ``At Flight Plan Waypoints``: Toggles wind barbs with a yellow border
-   at flight plan waypoints on and off. Wind barbs below 4000 feet above
+   at flight plan waypoints on and off. Wind barbs below 4000 ft above
    mean sea level are omitted. This function is independent of the
    selection below.
 -  ``None``: Do not show the wind barb grid. Wind data is still
    downloaded and processed until the source is set to ``Disabled``.
 -  ``Ground (only NOAA)``: Show the wind barb grid for winds near ground
-   (about 260 feet). Only available if the NOAA wind source is selected.
+   (about 260 ft). Only available if the NOAA wind source is selected.
 -  ``At Flight Plan Cruise Altitude``: Show the wind barb grid for winds
    at the current flight plan cruise altitude.
 -  ``At 5,000 ft`` - ``At 45,000 ft``: Show wind barb grid for the

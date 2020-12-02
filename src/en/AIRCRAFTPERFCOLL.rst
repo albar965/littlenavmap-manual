@@ -18,7 +18,7 @@ A report of current average fuel and speed numbers is shown on the tab
 intermediate results at any time into your currently loaded performance
 profile.
 
-*Little Navmap* will show 3 nautical miles per 1000 feet climb and
+*Little Navmap* will show 3 NM per 1,000 ft climb and
 descent slopes when collecting data based on an default or new elevation
 profile. You have to estimate the needed top of descent yourself.
 

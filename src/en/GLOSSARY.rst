@@ -25,7 +25,7 @@ Arrival Procedure
     Approach, transition or STAR procedure.
 
 BGL
-    A binary file with the extension ``BGL`` which is part of a flight
+    A binary file with the extension BGL which is part of a flight
     simulator scenery containing airport, navaid or airway information.
     These files can also contain traffic, landclass, elevation or other
     information which is not relevant for *Little Navmap*.
@@ -75,6 +75,9 @@ FS9
 FSX
     Flight Simulator X or Flight Simulator - Steam Edition.
 
+ft
+    Feet. 0.3048 meter.
+
 GIS
     A geographical information system like Google Earth for example.
 
@@ -89,14 +92,20 @@ MAP
     the termination of the final approach and the start of the missed
     approach.
 
+MSFS
+    Microsoft Flight Simulator 2020.
+
 Navaid
     VOR, VORTAC, TACAN, NDB or waypoint/intersection.
 
 NDB
     Non directional beacon - radio navaid.
 
+NM
+    Nautical miles. 1.852 km.
+
 P3D
-    Prepar3D v2 to v4.
+    Prepar3D v2 to v5.
 
 Parking
     GA ramp, cargo ramp, fuel box or gate at an airport.

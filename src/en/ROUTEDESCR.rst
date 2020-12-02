@@ -1,7 +1,7 @@
 Flight Plan Route Description
 -----------------------------
 
-This dialog allows you to create a flight plan from a route description
+This dialog allows you to create a flight plan from a route description string consisting of airport and navaid idents
 as generated or provided by various online services.
 
 The ``New Flight Plan from Route Description`` dialog opens with the
@@ -25,8 +25,8 @@ not unique, a wrong waypoint might be added to the flight plan. Correct
 or remove this waypoint manually.
 
 Many waypoints and airways will not be found if route descriptions from
-the latest AIRAC sources are used together with FSX/P3D stock data from
-2005. It is recommended to use a navigation data update for the stock
+the latest AIRAC sources are used together with the old FSX, P3D or MSFS stock data.
+It is recommended to use a navigation data update for the stock
 scenery or *Little Navmap* when reading route descriptions from online sources like
 `RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight
 Planner <http://onlineflightplanner.org/>`__,
@@ -42,7 +42,7 @@ converted back exactly in some cases. This happens due to navaid
 ambiguities like NDB and VOR stations having the same names or errors in
 the source data.
 
-The cruise altitude is used to create the flight plan if
+The cruise altitude is used to create the flight plan, if
 given. Otherwise the cruise altitude is automatically determined by the
 flight plan type (IFR or VFR) and the minimum altitude of the used
 airway segments.
@@ -73,6 +73,7 @@ Buttons
    the automatically determined cruise altitude.
 -  Menu Button |Menu Button|: ``Write`` denotes flight plan to
    description and ``Read`` denotes description to flight plan.
+   You can tear off the drop down menu from the button by clicking on the dashed line on top of it.
 
    -  ``Write departure and destination airport``: Note that disabling
       this option will result in an invalid route description which cannot be read
@@ -81,14 +82,15 @@ Buttons
       waypoint connections in the flight plan.
    -  ``Write cruise speed and altitude instruction``: Add cruise
       altitude from flight plan and speed as set in the aircraft performance.
-   -  ``Write SID and STAR``: Add SID and STAR names if any are used for
+   -  ``Write waypoints instead of Airways``: Does not include airway names in the string
+      but expands it and inserts the waypoints names only.
+   -  ``Write Alternates``: Appends all alternate airports to the end of
+      the description.
+   -  ``Write SID and STAR``: Add SID and STAR names, if any are used for
       departure or arrival.
    -  ``Write generic SID and STAR``: Add the generic ``SID`` and
       ``STAR`` keywords if no real SID and/or STAR were selected.
-   -  ``Write Waypoints instead of Airways``: Does not insert any airway
-      names but uses waypoints only.
-   -  ``Write Alternates``: Appends all alternate airports to the end of
-      the description.
+   -  ``Write no SID and STAR``: Do not include any SID and STAR information at all.
    -  ``Read trailing Airports as Alternates``:
 
       -  Enabled: A list of airports at the end of the description will
@@ -99,6 +101,11 @@ Buttons
       -  Disabled: Reading simply creates a flight plan with the
          airports as intermediate waypoints and the last one as
          destination. See example below.
+
+   -  ``Read first and last item as navaid``: Does not require airports as start and destination and will
+      resolve the first and last item to navaids. Useful for reading snippets.
+   -  ``Read: Match coordinates to waypoints``: Tries to matches coordinates to nearby waypoints.
+      ``EICK 5000N00760W EDDF`` will result in ``EICK GAPLI EDDF`` if this is enabled, for example.
 
 -  ``Create Flight Plan``: Closes the dialog and creates a new flight
    plan for the parsed route description and replaces the current plan.
@@ -214,7 +221,7 @@ Examples:
 
 ``M071F320`` Mach 0.71 at flight level 320.
 
-``K0790M0710`` 790 kilometers per hour at 7100 meters.
+``K0790M0710`` 790 kilometers per hour at 7,100 meters.
 
 Coordinates
 ^^^^^^^^^^^
