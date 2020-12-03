@@ -421,11 +421,18 @@ interaction like scrolling or zooming.
 Here you can set preferences for flight plan calculation or change the
 default filename for saving flight plans.
 
+.. _flight-plan-avoid-overwrite:
+
 Avoid overwriting Flight Plan with not matching departure and destination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Check this option to avoid overwriting flight plans with a new departure or destination after changing one of these.
-The ``Save as`` dialog will show up instead of overwriting the current flight plan when you reverse the route, for example.
+Check this option to avoid overwriting LNMPLN files with wrong flight plans after changing,
+departure, destination or any other parameter used in the flight plan file.
+
+The dialog :ref:`save-flight-plan-as` will show up instead of overwriting
+the current flight plan when you reverse the route, for example.
+
+.. _flight-plan-pattern:
 
 Pattern for default flight plan names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

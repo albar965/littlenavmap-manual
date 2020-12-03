@@ -22,8 +22,12 @@ See also :doc:`ROUTEEXPORTALL` for more information on multiexport.
 
 .. note::
 
-     The LNMPLN format is only understood by *Little Navmap*.
-     Do not try to load it into simulators or add-ons.
+    The LNMPLN format is only understood by *Little Navmap*.
+    Do not try to load it into simulators or add-ons.
+
+    Consider exported flight plan files as disposable since almost all the export formats have limitations
+    resulting in data loss. Remember that you can always restore them by loading the original LNMPLN
+    file and exporting again.
 
 See :ref:`lnmpln-file-format` for a detailed description of the format.
 

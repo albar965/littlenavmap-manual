@@ -104,6 +104,16 @@ the list by selecting ``Clear Menu``.
 |Save Flight Plan| Save Flight Plan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Saves the flight plan into the current LNMPLN file. This format allows to store all flight plan attributes of *Little
+Navmap*.
+
+*Little Navmap* opens the ``Save as`` dialog (see below :ref:`save-flight-plan-as`) if departure,
+destination or any other value used in the flight plan name has changed. This helps to avoid
+overwriting LNMPLN files with wrong plans after reversing direction, for example.
+
+You can disable this behavior in the options dialog on page :ref:`flight-plan` by unchecking
+``Avoid overwriting Flight Plan with not matching departure and destination``.
+
 .. _save-flight-plan-as:
 
 |Save Flight Plan as LNMPLN| Save Flight Plan as LNMPLN
@@ -116,7 +126,9 @@ See :ref:`flight-plan-formats-lnmpln` for information about this format.
 
 ``Save Flight Plan as PLN`` changes the current file name in
 *Little Navmap* which means that all further saves will go into the new
-PLN file.
+LNMPLN file.
+
+*Little Navmap* proposes a new file name based on the pattern set in options on page :ref:`flight-plan`.
 
 .. tip::
 
@@ -125,26 +137,12 @@ PLN file.
 
    You can also use the folder which is suggested by the :doc:`FOLDERS` dialog.
 
-.. note::
-
-   Name changes in the file dialog will also be applied to all exported files for formats which allow long file names.
-
-   This means: Renaming the file to ``My Flight Plan.lnmpln`` while saving will result in renamed PLN
-   (``My Flight Plan.pln``) and FGFP  (``My Flight Plan.fgfp``) files when exporting.
-   See :doc:`ROUTEEXPORTALL`.
-
-
 .. warning::
 
    Always save a copy of the flight plan in the default LNMPLN format to be
    able to reload all information. Writing to and reading from other
    formats like X-Plane FMS might result in information loss.
    See :doc:`FLIGHTPLANFMT` for more information.
-
-*Little Navmap* allows to create flight plans that may be useful
-as a flight plan snippet but are unusable by the flight simulator. This
-occurs if a flight plan does not have a departure or destination
-airport.
 
 .. _reset-for-new-flight:
 

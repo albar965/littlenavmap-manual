@@ -46,6 +46,10 @@ entered and the box is checked.
     Note that *Little Navmap* does not clean up the exported directories. All old flight plans remain
     and have to be removed manually from time to time.
 
+    Consider exported flight plan files as disposable since almost all the export formats have limitations
+    resulting in data loss. Remember that you can always restore them by loading the original LNMPLN
+    file and exporting again.
+
 See also :doc:`FLIGHTPLANFMT` for more information on the supported flight plan formats.
 
 .. _multiexport-file-names:
@@ -53,16 +57,10 @@ See also :doc:`FLIGHTPLANFMT` for more information on the supported flight plan 
 File Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Name changes in the file dialog from :ref:`save-flight-plan-as` and :ref:`save-flight-plan`
-will also be applied to all exported files for formats which allow long file names:
-LNMPLN, PLN (only FSX, P3D and MSFS), FGFP (FlightGear), HTML and GPX.
+*Little Navmap* always uses file names based on the pattern set in options on page :ref:`flight-plan`
+for the file formats LNMPLN, PLN (only FSX, P3D and MSFS), FGFP (FlightGear), HTML and GPX.
 
-Otherwise the default file name is used for export. See :ref:`flight-plan` for configuration of default file names.
-
-This means for example:
-
-Renaming the file to ``My Flight Plan.lnmpln`` while doing :ref:`save-flight-plan-as` will result in renamed files
-(``My Flight Plan.pln``) and FGFP  (``My Flight Plan.fgfp``) files when running multiexport.
+Other formats have restrictions which require short names. The pattern does not apply for these.
 
 .. _multiexport-export-lnmpln:
 
