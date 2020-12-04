@@ -103,6 +103,12 @@ Table Columns
    alternate airports at the end of the list or ``Departure`` or ``Destination``.
 -  ``Airway or Procedure``: Contains the airway name for en-route legs
    or procedure instructions. This field also shows track names if NAT, PACOTS or AUSOTS tracks are used.
+   Airways are suffixed with the airway type like ``N601 / V``:
+
+   -  ``V`` Victor or low altitude airway
+   -  ``J`` Jet or high altitude airway
+   -  ``B`` Both
+
 -  ``Restriction``:
 
    -  For airways:

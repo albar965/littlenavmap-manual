@@ -18,6 +18,8 @@ Other flight plan export formats will only save the ident truncated or a coordin
      Waypoints using the default format ``WP`` plus number (e.g. ``WP1`` or ``WP99``) are automatically
      renumbered by *Little Navmap* to reflect the flying order in the flight plan.
 
+     Changing the name will disable the renumbering for a waypoint.
+
 Ident
 ~~~~~
 
@@ -55,7 +57,7 @@ the drag and drop method :doc:`MAPFPEDIT`. This can
 be useful if you'd like to add waypoints with well known coordinates
 like visual reporting points.
 
-The tooltip of the coordinate input field shows the available formats. 
+The tooltip of the coordinate input field shows the available formats.
 Hover the mouse over the input field to see this.
 
 See :doc:`COORDINATES` for more information.

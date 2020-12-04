@@ -36,6 +36,9 @@ All dialogs show the read coordinates below the input field in the curretly conf
 
 See :ref:`units` for more information.
 
+.. tip::
+
+   You can directly paste coordinates from the Wikipedia like ``40°41′21″N 74°2′40″W`` into the fields.
 
 .. _signed-decimal-coordinates:
 

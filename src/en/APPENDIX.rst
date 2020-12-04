@@ -26,6 +26,7 @@ Save CPU Cycles
    it can use the downloaded image tiles as is and does not transform
    them to the spherical format.
 
+.. _troubleshoot:
 
 Troubleshoot
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -89,11 +90,15 @@ Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
    Now search for ``APX41080.bgl`` and exclude the file or its directory
    from loading in the ``Options`` dialog.
 
+.. _problems:
+
 Known Problems
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 See also `Little Navmap - Frequently asked
 Questions <https://albar965.github.io/littlenavmap-faq.html>`__.
+
+.. _problems-general:
 
 General
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -139,7 +144,9 @@ General
 -  Zooming with touchpad or magic mouse does not work properly on macOS. Use the navigation overlay
    or one of the other options on page ``Map Navigation`` in ``Options`` if you think it is unusable.
 
-Microsoft Flight Simulator
+.. _problems-msfs:
+
+Microsoft Flight Simulator 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  *Little Navmap* cannot read SID and STAR from MSFS. Documentation about MSFS format changes are

@@ -10,6 +10,9 @@ The Linux version was built on Ubuntu but should work on other distributions as 
 
 The macOS and Linux versions are both 64-bit.
 
+Each version of *Little Navmap* and the other programs come with a plain text file ``CHANGELOG.txt``
+which has important notes and describes the changes between versions.
+
 .. _installation-updating:
 
 Updating

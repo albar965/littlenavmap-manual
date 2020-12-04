@@ -47,6 +47,8 @@ information to the program. This can be useful for performance reasons
 if you use large amounts of AI but do not want to see it in *Little
 Navmap*.
 
+This option also affects the frigate and carrier in X-Plane.
+
 X-Plane
 ^^^^^^^
 
