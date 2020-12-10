@@ -461,6 +461,9 @@ alternate airports originate all from the destination.
 
 Disabled if airport is already departure, destination or alternate.
 
+Note that you have to activate an alternate leg manually if you would like to fly it
+(see :ref:`activate`).
+
 .. _add-position-to-flight-plan:
 
 |Add Position to Flight Plan| Add Position to Flight Plan

@@ -329,13 +329,9 @@ Missed Approaches
 ~~~~~~~~~~~~~~~~~
 
 Missed approach legs are activated once the simulator aircraft passes
-the last point of an approach. The display of remaining flight plan
-distance will switch to display of remaining distance to last missed
-approach leg.
-
-.. note::
-
-   Missed approach legs note are activated if missed approaches are hidden on the map.
+the last point of an approach and the missed approach is shown on the map.
+The display of remaining flight plan distance will switch to display of remaining distance to last
+missed approach leg.
 
 .. _procedures-highlights:
 

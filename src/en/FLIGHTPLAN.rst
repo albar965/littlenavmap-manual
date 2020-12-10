@@ -353,6 +353,10 @@ Makes the selected leg the active (magenta) flight plan leg. The active
 leg might change if *Little Navmap* is connected to the simulator and
 the user aircraft is moving.
 
+You have to activate the leg manually if you would like to fly to an alternate airport.
+
+Legs of a missed approach procedure are activated automatically if the procedure is shown on the map.
+
 Follow Selection
 ^^^^^^^^^^^^^^^^
 
