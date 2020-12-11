@@ -26,14 +26,14 @@ for future starts by pressing ``Do not show again`` but keep at least the messag
     Select your simulator and click ``Load``.
     Also have a look at :ref:`scenery-library-menu`, :doc:`SCENERY` and :doc:`NAVDATA` about the different
     scenery library modes which can be selected in the menu.
-#.  Build a flight plan. Right click into the map and select departure (:ref:`set-as-flight-plan-departure`),
+#.  Build a flight plan. Right click into the map on an airport and select departure (:ref:`set-as-flight-plan-departure`),
     destination (:ref:`set-as-flight-plan-destination`) and intermediate
-    waypoints (:ref:`add-position-to-flight-plan` and :ref:`append-position-to-flight-plan`).
+    waypoints (:ref:`add-position-to-flight-plan` and :ref:`append-position-to-flight-plan`) from the context menu.
 #.  Save the flight plan into *Little Navmap*'s own format LNMPLN by clicking :ref:`save-flight-plan`.
-    This file format is only for *Little Navmap* and allows to keep all flight plan features like remarks, 
-    user defined approaches and more.
+    This file format is only for *Little Navmap* and allows to keep all flight plan features like remarks,
+    user defined approaches and more. Do not try to load it into simulators or other tools.
 #.  Configure the flight plan export in menu ``File`` -> :ref:`multiexport-flight-plan-options`.
-    Select desired formats by clicking one or more checkboxes on the left and adapt the paths and filenames 
+    Select desired formats by clicking one or more checkboxes on the left and adapt the paths and filenames
     for export. See :doc:`ROUTEEXPORTALL`.
 #.  Select ``File`` -> :ref:`multiexport-flight-plan` to export your flight plan for simulator, tools or
     aircraft.
