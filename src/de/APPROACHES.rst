@@ -141,17 +141,17 @@ Flugprozeduren
 Die Prozedurteilabschnitte werden vorberechnet, mit Ausnahme der
 Haltepunkte und Wendepunkte. Das bedeutet, dass man sie meist so
 abfliegen kann, wie sie auf der Karte gezeichnet sind. Wenn Sie Zweifel
-haben, wie man einen Abschnitt abfliegen kann (z.B. wenn sich zu viele
+haben, wie man einen Abschnitt abfliegen soll (z.B. wenn sich zu viele
 Linien überlappen), schauen Sie sich die Prozedurentabelle im
-Flugplanfenster an.
+:ref:`flight-plan-table` an.
 
 .. _procedures-holds:
 
 Warteschleifen
 ^^^^^^^^^^^^^^
 
-Es wird kein Ein- oder Ausstiegsvorgang angezeigt. Sie müssen selbst ein
-geeignetes Einstiegsverfahren finden. Warteschleifen haben eine Flugzeit
+Es wird kein Ein- oder Ausflug angezeigt. Sie müssen selbst ein
+geeignetes Verfahren finden. Warteschleifen haben eine Flugzeit
 in Minuten oder eine Entfernungsangabe für die geraden Streckenabschnitte.
 
 Wenn eine Zeit vorgegeben ist, fliegen Sie die Warteschleife wie
@@ -176,7 +176,7 @@ gewohnt:
 .. figure:: ../images/hold.jpg
 
       Eine Warteschleife mit einer geraden Segmentlänge von 2
-      nautischen Meilen. Betreten und verlassen Sie über ``ZUNAD``  und
+      NM. Betreten und verlassen Sie über ``ZUNAD``  und
       fliegen Sie auf oder über 2600 Fuß. Der Kurs ist 61° magnetisch.
 
 .. _procedures-flying-exit-holds:
@@ -210,7 +210,7 @@ Wendemanöver (Procedure Turns)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Die Daten des Flugsimulators verschieben den Wendepunkt einer Prozedur
-um 10 nautischen Meilen vom Ursprungswegpunkt entfernt, der normalerweise zu weit liegt.
+um 10 NM vom Ursprungswegpunkt entfernt, der normalerweise zu weit liegt.
 Fliegen Sie die Prozedur wie gewohnt: Mindestens eine Minute vom Wegpunkt
 weg fliegen. Fliegen Sie mehr, wenn Sie Platz brauchen, um den nächsten Wegpunkt
 nach der Kursumkehr abzufangen. Wenden Sie dann
@@ -250,7 +250,7 @@ Fünf weitere Typen werden von *Little Navmap* verwendet:
 
 -  ``Start von Prozedur``: Dieser Streckenabschnitt wird hinzugefügt,
    wenn eine Prozedur nicht mit einem anfänglichen Wegpunkt beginnt, sondern
-   mit einem Kurs oder eine Spur zu einer Navigationshilfe ist. Sie
+   mit einem Kurs zu einer Navigationshilfe ist. Sie
    zeigt die Anfangsposition der Prozedur an und ist nicht mit einem Wegpunkt
    verbunden.
 -  ``Zu Runway fortfahren`` in einer SID: Der erste Abschnitt einer SID,
@@ -293,7 +293,7 @@ Wegpunktypen in einer Prozedur
    definiert durch einen Kurs oder Steuerkurs und durch die Entfernung
    zu einer Navigationshilfe.
 -  **Entfernung zu DME:** Beispiel: ``WIK/9nm``. Dieser Punkt wird durch
-   einen Steuerkurs oder einer Spur definiert, die beim Erreichen einer
+   einen Steuerkurs definiert, die beim Erreichen einer
    DME-Distanz beendet wird.
 -  ``Anschneiden Kurs zu Wegpunkt``: Fangen Sie einen Kurs zum nächsten Fix
    in einem Winkel von etwa 45 Grad ein.
@@ -305,10 +305,10 @@ Wegpunktypen in einer Prozedur
 -  ``Höhe``: Ein Abschnitt oder eine Warteschleife, die durch Erreichen einer
    bestimmten Flughöhe beendet wird und wird meist bei Fehlanflügen verwendet.
    Da die Entfernung vom Flugzeug abhängt, werden
-   für diese Strecke 2 nautische Meilen Länge verwendet. Sie können die Linie
+   für diese Strecke 2 NM Länge verwendet. Sie können die Linie
    ignorieren und zur nächsten Strecke übergehen, sobald das
    Flughöhenkriterium erfüllt ist.
--  ``Manuell``: Fliegen Sie einen Steuerkurs, eine Spur oder eine
+-  ``Manuell``: Fliegen Sie einen Steuerkurs oder eine
    Warteschleife, bis er manuell von ATC beendet wird.
 
 Runwaypunkte bekommen ein ``RW`` vorangestellt. Sie haben normalerweise
@@ -355,7 +355,7 @@ Fehlanflüge
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Fehlanflüge werden aktiviert, sobald das
-Simulatorflugzeug den letzten Punkt eines Landeanflugs passiert. Die
+Simulatorflugzeug am letzten Punkt eines Landeanflugs vorbei geflogen ist und die Anzeige von Fehlanflügen auf der Karte aktiviert ist. Die
 Anzeige der verbleibenden Flugplanentfernung wechselt zur Anzeige der
 verbleibenden Distanz zum Ende des Fehlanfluges.
 
@@ -385,4 +385,5 @@ geschieht nur dann, wenn die Quelldaten nicht gültig oder unvollständig
 sind. In diesem Fall ist die resultierende Prozedur nicht anwendbar und
 es wird ein Warndialog angezeigt, wenn wesentliche Navigationshilfen fehlen.
 
+*Little Navmap* verweigert je nach Fehler möglicherweise die Verwendung der Prozedur.
 

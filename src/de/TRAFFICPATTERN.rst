@@ -6,7 +6,7 @@ der Karte anzeigen.
 
 Klicken Sie mit der rechten Maustaste auf einen Flugplatz in der Karte,
 Flugplantabelle oder Suchergebnistabelle und wählen Sie
-:ref:`show-traffic-pattern`.
+:ref:`show-traffic-pattern-map`.
 
 Es wird ein Dialogfeld angezeigt, in dem Sie eine Start- und Landebahn auswählen
 sowie das Muster anpassen können.
@@ -59,7 +59,7 @@ zu den angezeigten Zahlen in der Vorlage.
 
 .. figure:: ../images/pattern_dialog.jpg
 
-      Platzrundendialog für ``EDFE``  Runway 08 in 1000
+      Platzrundendialog für ``EDFE``  Runway 08 in 1.000
       Fuß über der Flugplatzhöhe.
 
 .. figure:: ../images/pattern.jpg

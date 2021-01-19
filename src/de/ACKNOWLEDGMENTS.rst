@@ -9,10 +9,6 @@ Ein riesiges Dankeschön an Paul Watts für seine Hilfe, für's Testen,
 Tipps, Links zu unglaublichen Werkzeugen und seiner ganzen Arbeit an
 diesem Handbuch.
 
-Vielen Dank an `Hervé Sors <http://www.aero.sors.fr>`__, der mir erlaubt
-hat, seine aktualisierte ``magdecl.bgl`` Datei zu *Little Navmap*
-beizulegen.
-
 Ein ganz besonderes Dankeschön an Roberto S. aus der Schweiz für seine
 hilfreichen Tipps und seine Hilfe auch die am meisten versteckten Fehler
 zu finden.
@@ -38,6 +34,8 @@ Dank an Daniel "Wolf"
 (`wolfinformatica.com <http://wolfinformatica.com>`__) für die spanische
 Übersetzung.
 
+Danke and Andrea Deplano PVI, Italian virtual pilots für die italienische Übersetzung.
+
 Dank an Alfredo alias *fred*, Josemi alias *aquileo* und Emilio alias
 *zxplane* von `X-PLANE.es <http://www.x-plane.es/>`__ für die spanische
 Ünersetzung des Handuches.
@@ -50,11 +48,17 @@ Dank an Eddy Crequie für die niederländische Übersetzung.
 Ein herzliches Dankeschön und Jannik Prinz für die Einrichtung der Tavis
 CI-Builds.
 
+Ein großes Dankeschön to Günter Steiner für sein Startbild.
+
 Danke and die Beta-Tester für ihre Mühe, Geduld und Ideen: Barry,
 Jean-Pierre, Brian, Gérard, John, Remi, Paolo und Sam.
 
 Ein weiteres dickes Danke geht an Mark aus Deutschland für seine
 großartigen Ideen und seine endlosen Fehlerberichte.
+
+Vielen Dank an `Hervé Sors <http://www.aero.sors.fr>`__, der mir erlaubt
+hat, seine aktualisierte ``magdecl.bgl`` Datei zu *Little Navmap*
+beizulegen.
 
 Danke an alle, die mich in den Foren geduldig unterstützt haben und mir
 wertvolle Rückmeldung wärend der Öffentlichen Beta-Phase gaben:

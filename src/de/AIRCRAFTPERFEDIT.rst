@@ -17,7 +17,7 @@ Schaltflächen
    Dialog.
 -  ``Zurücksetzen``: Setzt alle Änderungen zurück, die seit dem Öffnen
    des Bearbeitungsdialogs vorgenommen wurden.
--  ``Voreinstellungen``: Stellt das Standardprofil mit 3 nm pro 1000 Fuß
+-  ``Voreinstellungen``: Stellt das Standardprofil mit 3 NM pro 1.000 Fuß
    für Ab- und Aufstiegsregeln ohne Kraftstoffverbrauch wieder her.
 -  ``Hilfe``: Öffnet diese Hilfe im Standard-Webbrowser.
 
@@ -165,7 +165,7 @@ Sinkflug
 -  ``Durchschn. Treibstofffluss im Sinkflug``:
    Durchschnittlicher Treibstofffluss im Sinkflug.
 
-Eine Beschriftung ``Faustregel für Sinkflug`` zeigt die berechnete Faustregel für den Abstieg. Der Standard ist 3 nm pro 1000 Fuß.
+Eine Beschriftung ``Faustregel für Sinkflug`` zeigt die berechnete Regel für den Abstieg. Der Standard ist 3 NM pro 1.000 Fuß.
 
 Die Sinkgeschwindigkeit und die vertikale Sinkgeschwindigkeit werden zur Berechnung des Sinkflugbeginns verwendet, der auch mit den Windverhältnissen variiert.
 
@@ -186,24 +186,12 @@ Daher sollten die Werte manuell angepasst werden.
 
      Bearbeiten-Dialog für Flugzeugleistung. Reiter ``Flugzeugleistung``.
 
-Reiter Beschreibung oder Anmerkungen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Anmerkungen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dies ist ein freies Textfeld für Notizen und Verweise.
+Dieser Reiter enthält ein Textfeld für Notizen und Weblinks, das auch im ``Treibstoffbericht`` des Fensters ``Flugplanung`` angezeigt wird.
 
-Verweise werden erkannt und können im Treibstoffbericht geöffnet werden.
-
-Normale Verweise wie ``http://www.example.com`` oder
-``https://www.example.com`` werden neben Verzeichnis- oder Dateiverweisen
-wie ``file:///C:/Benutzer/ICH/Dokumente/Notizen%20Flugzeuge.txt`` unter Windows
-oder ``file:///home/ICH/Notizen%20Flugzeuge.txt`` unter MacOS oder Linux erkannt.
-
-Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich ``/``
-anstelle des umgekehrten Schrägstriches ``\`` als Pfadtrennzeichen
-verwenden müssen.
-
-Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da
-*Little Navmap* Links bis zum nächsten Leerzeichen erkennt.
+Siehe :doc:`REMARKS` für weitere Informationen zur Verwendung von Weblinks in diesem Feld.
 
 .. |Edit Aircraft Performance| image:: ../images/icon_aircraftperfedit.png
 

@@ -22,8 +22,7 @@ Allgemeines
 
 Der Breitengrad muss der erste und der Längengrad der zweite Wert sein.
 
-N/S- und E/W-Kennungen sind erforderlich. Groß- und Kleinschreibung spielt
-keine Rolle.
+N/S- und E/W-Kennungen sind erforderlich, außer für die vorzeichenbehafteten Formate. Groß- und Kleinschreibung spielt keine Rolle.
 
 Grad-, Minuten- und Sekundenzeichen können weggelassen werden, wenn
 Zahlen durch Leerzeichen getrennt sind.
@@ -35,18 +34,29 @@ werden.
 Dezimaltrennzeichen kann der Punkt (Englisch) oder das ortsabhängige
 Trennzeichen wie z.B. Komma (Deutsch) sein.
 
+In allen Dialogen werden die gelesenen Koordinaten unterhalb des Eingabefeldes im aktuell konfigurierten Koordinatenformat angezeigt.
+
+Siehe auch :ref:`units` für mehr Informationen.
+
+.. tip::
+
+   Sie können Koordinaten direkt aus der Wikipedia wie ``40°41′21″N 74°2′40″W`` in die Felder einfügen.
+
+.. _signed-decimal-coordinates:
+
 Vorzeichenbehaftete Dezimalformate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Für die Koordinatenformate ``Breitengrad und Längengrad mit Vorzeichen``
-und ``Längengrad und Breitengrad mit Vorzeichen``:
+Für die Koordinatenformate ``Breiten- und Längengrad mit Vorzeichen``
+und ``Längen- und Breitengrad mit Vorzeichen`` gilt:
 
 -  Breitengrad: Negativ ist Süden und Positiv ist Norden.
 -  Längengrad: Negativ ist Westen und positiv ist Osten.
 
 Die Wahl dieser Anzeigeformate ermöglicht die Eingabe von
-vorzeichenbehafteten Dezimalwerten. Die Lesereihenfolge für Koordinaten
-ändert sich je nach gewähltem Format auch bei der Eingabe.
+vorzeichenbehafteten Dezimalwerten. Die Lesereihenfolge (Breiten- und Längengrad gegen Längen- und Breitengrad) für Koordinaten ändert sich je nach gewähltem Format auch bei der Eingabe.
+
+Die Lesereihenfolge ändert sich nicht, wenn das Eingabefeld die Bezeichner ``N``, ``S``, ``E`` und ``W`` verwendet.
 
 Andere Formate
 ~~~~~~~~~~~~~~

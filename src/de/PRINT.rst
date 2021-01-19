@@ -44,8 +44,8 @@ Flugplan
 -  ``Spalten aus der Flugplantabelle zum Drucken auswählen``: Klicken Sie auf die Namen,
    um Flugplanspalten ein- oder auszuschließen.
 
-Optionen für Abflug- und Zielort
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Start- und Zielflugplatz
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``Übersicht``: Druckt die Flugplatzübersicht aus, wie sie im
    Dockfenster ``Informationen`` auf dem Reiter ``Flugplatz``
@@ -67,7 +67,7 @@ Optionen für Abflug- und Zielort
 
 .. figure:: ../images/printfp.jpg
 
-          Flugplan-Optionen ausdrucken Dialog.
+          Dialog ``Flugplan drucken``.
 
 .. |Print Map| image:: ../images/icon_printmap.png
 .. |Print Flight Plan| image:: ../images/icon_printflightplan.png

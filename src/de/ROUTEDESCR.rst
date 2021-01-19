@@ -12,8 +12,8 @@ In der oberen Hälfte des Dialogs befindet sich das Eingabefeld für die
 Routenbeschreibung, während in der unteren Hälfte alle Meldungen,
 Warnungen und Fehler angezeigt werden, die beim Lesen auftreten können.
 
-Die Menütaste |Menu Button| bietet ein Dropdown-Menü, mit dem Sie die
-generierte Routenfolge anpassen können.
+Mit einer Menüschaltfläche |Menu Button|, können Sie die
+generierte Route anpassen.
 
 *Little Navmap* wird versuchen, so viel wie möglich von der
 Route zu nutzen, auch wenn Teile des Flugplans wie Wegpunkte oder
@@ -70,7 +70,7 @@ Schaltflächen
    umgewandelt und alle ungültigen Zeichen werden vorher entfernt.
 -  ``Aktualisiere vom Flugplan``: Erstellt die Routenbeschreibung aus dem
    aktuellen Flugplan erneut. Verwenden Sie dies, nachdem Sie die
-   Einstellungen mit der Dropdown-Menü-Schaltfläche geändert haben.
+   Einstellungen mit der Menüschaltfläche  geändert haben.
 -  ``Lese Routenbeschreibung``: Liest die Routenbeschreibung und zeigt
    in der unteren Hälfte des Dialogs alle Meldungen, Warnungen und
    Fehler an. Der aktuelle Flugplan ist von dieser Aktion nicht
@@ -79,6 +79,7 @@ Schaltflächen
    die automatisch ermittelte Reiseflughöhe.
 -  **Menüschaltfläche** |Menu Button|: *Schreiben* bezeichnet die Konvertierung aus dem Flugplan
    zur Routenbeschreibung und *Lesen* bezeichnet das Lesen der Beschreibung in den Flugplan.
+   Sie können das Menü von der Schaltfläche abtrennen, indem Sie auf die gestrichelte Linie über der Schaltfläche klicken.
 
    -  ``Abflug- und Zielflugplatz schreiben``: Beachten Sie, dass das
       Deaktivieren dieser Option zu einer ungültigen Routenbeschreibung führt, die nicht in
@@ -87,15 +88,17 @@ Schaltflächen
       direkten Wegpunktverbindungen im Flugplan hinzu.
    -  ``Fluggeschwindigkeits- und Höhenanweisungen für Reiseflug schreiben``: Fügt
       die Reiseflughöhe aus dem Flugplan und die Geschwindigkeit aus der Flugzeugleistung.
-   -  ``SID und STAR schreiben``: Fügt SID- und STAR-Namen hinzu, falls
-      diese für Abflug oder Ankunft verwendet werden.
-   -  ``Generische SID und STAR schreiben``: Fügt die allgemeinen
-      Schlüsselwörter ``SID`` und ``STAR`` hinzu, wenn keine echte SID
-      und STAR ausgewählt wurden.
-   -  ``Wegpunkte statt Luftstraßen schreiben``: Fügt keine Luftstraßennamen
-      ein, sondern verwendet nur die Wegpunkte.
+   - ``Wegpunkte statt Luftstraßen schreiben``: Nimmt keine Luftstraßennamen in die Zeichenkette
+      sondern erweitert sie und fügt nur die Namen der Wegpunkte ein.
    -  ``Ausweichflugplätze schreiben``: Fügt alle Ausweichflugplätze an das
       Ende der Beschreibung an.
+   - ``SID und STAR schreiben``: Fügt SID- und STAR-Namen ein, wenn diese für
+      Abflug oder Ankunft gewählt wurden.
+   -  ``Generische SID und STAR schreiben``: Fügt die allgemeinen
+      Schlüsselwörter ``SID`` und ``STAR`` hinzu.
+   - ``Schreibe keine SID und STAR``: Fügt keine SID- und STAR-Informationen ein.
+   -  ``Wegpunkte statt Luftstraßen schreiben``: Fügt keine Luftstraßennamen
+      ein, sondern verwendet nur die Wegpunkte.
    -  ``Lese Flugplätze am Ende als Ausweichflugplätze``:
 
       -  Aktiviert: Eine Liste der Flugplätze am Ende der Beschreibung wird
@@ -106,6 +109,10 @@ Schaltflächen
       -  Deaktiviert: Das Lesen erstellt einen Flugplan mit den
          Flugplätzen als Zwischenziele und dem letzten als Ziel. Siehe
          Beispiele unten.
+
+   - ``Lese ersten und letzten Eintrag als Navigationshilfe``: Benötigt keine Flughäfen als Start und Ziel und löst das erste und letzte Element als Navigationshilfen auf. Nützlich zum Lesen von Schnipseln.
+   - ``Lesen: Koordinaten an Wegpunkte anpassen``: Versucht, Koordinaten mit nahegelegenen Wegpunkten abzugleichen.
+      ``EICK 5000N00760W EDDF`` resultiert z.B. in ``EICK GAPLI EDDF``, wenn dies aktiviert ist.
 
 -  ``Erstelle Flugplan``: Schließt den Dialog und erstellt einen neuen
    Flugplan für die analysierte Routenbeschreibung und ersetzt den

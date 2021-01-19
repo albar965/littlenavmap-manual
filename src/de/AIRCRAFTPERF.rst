@@ -63,7 +63,7 @@ nicht mit dem Typ in der Flugzeugleistung übereinstimmt.
       über einen fehlenden Wert anzeigt. Das ``*`` im der Beschriftung des Reiters zeigt nicht
       gespeicherte Änderungen an.
 
-Ein Standardprofil mit 3 nautischen Meilen pro 1000 Fuß für Abstiegs- und
+Ein Standardprofil mit 3 NM pro 1.000 Fuß für Abstiegs- und
 Aufstiegsregeln und keinem Kraftstoffverbrauch ist Standard. Rote
 Warnmeldungen werden bei Verwendung angezeigt, da das Profil nicht
 vollständig ist.
@@ -93,7 +93,7 @@ angepasst werden kann. Das Zusammenführen kann jederzeit erfolgen. Siehe
 Dateien
 ~~~~~~~
 
-Leistungsprofildateien (Dateiendung ``LNMPERF``) können wie
+Leistungsprofildateien (Dateiendung LNMPERF) können wie
 Flugplandateien gespeichert und geladen werden. Die Leistungsdateien
 können aus einem Dateimanager wie dem Windows Explorer oder dem macOS
 Finder ausgewählt und in das Hauptfenster von *Little Navmap* gezogen
@@ -107,6 +107,8 @@ werden, um sie zu laden.
       seiner Unterverzeichnisse. Speichern Sie die Dateien in Ihrem
       ``Dokumente``-Verzeichnis oder einem Unterverzeichnis wie
       ``Dokumente\Little Navmap\Flugzeugleistung``.
+
+      Sie können auch das Verzeichnis verwenden, das im :doc:`FOLDERS` Dialog vorgeschlagen wurde.
 
 .. tip::
 
@@ -165,16 +167,16 @@ im Hauptmenü :ref:`aircraft-menu`.
    Beschreibung des Bearbeitungsdialogs finden Sie unter :doc:`AIRCRAFTPERFEDIT`.
 -  |New Aircraft Performance| ``Neue Flugzeugleistung erstellen``:
    Erstellt ein neues Leistungsprofil mit Standardwerten und öffnet den
-   Bearbeitungsdialog. Ein Profil mit 3 nautischen Meilen pro 1000 Fuß für
+   Bearbeitungsdialog. Ein Profil mit 3 NM pro 1.000 Fuß für
    Abstiegs- und Aufstiegsregeln und keinem Kraftstoffverbrauch ist
    Standard. Rote Warnmeldungen werden angezeigt, da das Profil nicht
    vollständig ist.
 -  |Open Aircraft Performance| ``Flugzeugleistung öffnen``: Lädt eine
-   ``lnmperf`` Datei.
+   LNMPERF Datei.
 -  |Save Aircraft Performance| ``Flugzeugleistung speichern``: Speichert
-   das aktuelle Profil in eine ``lnmperf`` Datei.
+   das aktuelle Profil in eine LNMPERF Datei.
 -  |Save Aircraft Performance as| ``Flugzeugleistung speichern als``:
-   Speichert das aktuelle Profil in eine neue ``lnmperf`` Datei.
+   Speichert das aktuelle Profil in eine neue LNMPERF Datei.
 -  |Help| Hilfe: Klicken Sie hier, um dieses Kapitel des Handbuchs im
    Standardbrowser zu öffnen.
 
@@ -242,7 +244,7 @@ Flugplan
    Fluggeschwindigkeit und der atmosphärischen Standardbedingungen der
    ISA.
 -  ``Durchschn. Wind (NOAA):`` Durchschnittlicher Wind über alle Flugphasen.
-   Die aktivierte Windquelle (``NOAA``, ``Simulator``, ``Manuell`` or ``Deaktiviert``)
+   Die aktivierte Windquelle (``NOAA``, ``Simulator``, ``Manuell`` oder ``Deaktiviert``)
    wird in Klammern angegeben. Wird nur bei hinreichender Windgeschwindigkeit angezeigt.
 
 .. _aircraft-performance-fuelplan:
@@ -301,26 +303,16 @@ Wird nur mit einem gültigen Flugplan angezeigt.
 
 .. _aircraft-performance-description:
 
-Dateibeschreibung
+Anmerkungen
 ''''''''''''''''''''''''''''''''''''
 
-Dies ist ein freies Textfeld für Notizen und Verweise.
+Textfeld für Notizen und Verweise.
 
-Verweise werden erkannt und können hier im Bericht geöffnet werden.
+Weblinks werden erkannt und können im Bericht geöffnet werden.
 
-Normale Verweise wie ``http://www.example.com`` oder
-``https://www.example.com`` werden neben Verzeichnis- oder Dateiverweisen
-wie ``file:///C:/Benutzer/ICH/Dokumente/Notizen%20Flugzeuge.txt`` unter Windows
-oder ``file:///home/ICH/Notizen%20Flugzeuge.txt`` unter MacOS oder Linux
-erkannt.
+Siehe :doc:`REMARKS` für weitere Informationen zur Verwendung von Weblinks in diesem Feld.
 
-Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich ``/``
-anstelle des umgekehrten Schrägstriches ``\`` als Pfadtrennzeichen verwenden müssen.
-
-Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da *Little Navmap*
-Links bis zum nächsten Leerzeichen erkennt.
-
-.. _aircraft-performance-file:
+.. _aircraft-performance-report-file:
 
 Datei für Flugzeugleistung
 ''''''''''''''''''''''''''''''''''''

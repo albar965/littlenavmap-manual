@@ -6,17 +6,17 @@ Das Dockfenster für die Suche enthält mehrere Reiter mit
 Kennung oder anderen Kriterien suchen können.
 
 Die Reitet Flugplatz, Navigationshilfen, Nutzerpunkte und Online-Suche
-enthalten mehrere Zeilen von Suchfiltern. Diese Zeilen können über das
-Dropdown-Menü auf der Menütaste |Menu Button| oben rechts in den
+enthalten mehrere Zeilen von Suchfiltern. Diese Zeilen können über die
+Menüschaltfläche |Menu Button| oben rechts in den
 Reitern Flugplatz, Navigationshilfe und Nutzerpunkt ein- und ausgeschaltet
 werden.
 
-Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige
+Die Menüschaltflächekennzeichnet Menüpunkte mit einer Änderungsanzeige
 ``*``, um anzuzeigen, dass die zugehörige Filterzeile Änderungen
 aufweist. Auf diese Weise können Sie herausfinden, warum eine Suche
 nicht die erwarteten Ergebnisse liefert.
 
-.. note::
+.. tip::
 
            Wenn Sie nicht oder gar nicht die erwarteten Ergebnisse erhalten,
            verwenden Sie den Menüpunkt ``Suche zurücksetzen``, Schaltfläche Reset
@@ -39,6 +39,15 @@ teilweisen oder vollständigen ICAO-Code übereinstimmen.**
 
 Ein Tooltip auf der blauen Hilfetaste oben rechts zeigt Informationen
 zur Suche.
+
+.. tip::
+
+     Sie können die Cursortaste ``Abwärts`` benutzen, um direkt von den Eingabefeldern in die Ergebnistabelle zu springen.
+
+     Tastaturkürzel wie ``Strg+I`` für ``Informationen anzeigen`` oder ``Strg+M`` für ``Auf der Karte anzeigen`` sind direkt aus den Eingabefeldern nutzbar und beziehen sich auf den obersten Flugplatz in der Ergebnistabelle.
+
+     Das gleiche gilt auch für die anderen Reiter wie Navigationshilfen- und Logbuchsuche.
+
 
 .. _text-filters:
 
@@ -90,7 +99,7 @@ einfachen räumlichen Suche kombinieren.
 Um diese Suche zu ermöglichen, muss das Kontrollkästchen ``Entfernung``
 aktiviert sein. Das Ergebnis wird nur Flugplätze oder Navigationshilfen beinhalten,
 die innerhalb der angegebenen minimalen und maximalen Reichweite an
-nautischen Meilen vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell
+NM vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell
 nach einem Ziel suchen, das sich in der Reichweite Ihres Flugzeugs
 befindet und andere Kriterien wie beleuchtete Start- und Landebahnen und
 Kraftstoff erfüllt.
@@ -101,7 +110,7 @@ Search Symbol| hervorgehoben.
 Um die Suche weiter einzuschränken, können Sie eine Richtung wählen
 (Nord, Ost, Süd und West).
 
-Überprüfen Sie das Dropdown-Menü für die Änderungsanzeige ``*`` und die
+Überprüfen Sie die Menüschaltfläche für die Änderungsanzeige ``*`` und die
 Suchfelder für den verbleibenden Text, wenn die Entfernungssuche keine
 oder unerwartete Ergebnisse liefert. Verwenden Sie
 ``Suche zurücksetzen`` im Kontextmenü der Ergebnistabelle oder drücken
@@ -110,7 +119,7 @@ Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 .. figure:: ../images/complexsearch.jpg
 
         Eine komplexe Distanzsuche: Findet alle Flugplätze in
-        einer Entfernung zwischen 200 und 400 nautischen Meilen von Frankfurt (EDDF).
+        einer Entfernung zwischen 200 und 400 NM von Frankfurt (EDDF).
         Flugplätze sollten eine Bewertung von mehr als 0 haben und mindestens
         eine beleuchtete Start- und Landebahn haben. Militärische und
         geschlossene Flugplätze sind ausgeschlossen. Die resultierenden Flugplätze
@@ -168,14 +177,14 @@ ausgewählt wird.
 .. figure:: ../images/airportsearchtable.jpg
 
       Ergebnisliste der Flugplatzsuche. Alle zusätzlichen
-      Suchoptionen werden über das Dropdown-Menü der Menütaste oben rechts
+      Suchoptionen werden über die Menüschaltfläche  oben rechts
       ausgeblendet.
 
 .. figure:: ../images/navaidsearchtable.jpg
 
         Die Navigationshilfensuche ist auf die ICAO-Region* ``LI``
         (Italien) und die Stationen VOR, VORTAC und TACAN beschränkt, die eine
-        Reichweite von 100 oder mehr nautischen Meilen haben.
+        Reichweite von 100 oder mehr NM haben.
 
 .. _mouse-clicks-0:
 
@@ -194,6 +203,8 @@ Obere Schaltflächen
 ~~~~~~~~~~~~~~~~~~~
 
 Die verfügbaren Schaltflächen und Menüpunkte hängen vom Reiter Suche ab.
+
+In diesem Kapitel werden für alle Suchreiter gemeinsame Schaltflächen und Menüpunkte erklärt.
 
 .. _reset-search-button:
 
@@ -221,13 +232,13 @@ Kapitel des Handbuchs im Standardbrowser zu öffnen.
 
 .. _menu:
 
-|Menu Button| Menütaste
-^^^^^^^^^^^^^^^^^^^^^^^
+|Menu Button| Menüschaltfläche
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dropdown-Menü-Taste, mit der Sie Suchoptionen ein- oder ausblenden
+Menüschaltfläche, mit der Sie Suchoptionen ein- oder ausblenden
 können.
 
-Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige
+Die Schaltfläche kennzeichnet Menüpunkte mit einer Änderungsanzeige
 ``*``, um anzuzeigen, dass die zugehörige Filterzeile Änderungen
 aufweist. Auf diese Weise können Sie herausfinden, warum eine Suche
 nicht die erwarteten Ergebnisse liefert.
@@ -239,14 +250,14 @@ Kontextmenü Suche
 
 Die verfügbaren Menüpunkte hängen von dem Reiter Suche ab.
 
-.. _show-information-0:
+.. _show-information-search:
 
 |Show Information| Zeige Informationen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das Gleiche, wie :ref:`map-context-menu`.
 
-.. _show-procedures:
+.. _show-procedures-search:
 
 |Show Procedures| Zeige Prozeduren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -257,7 +268,9 @@ Flugplatzsuchtabelle.
 
 Weitere Informationen finden Sie unter :doc:`SEARCHPROCS`.
 
-.. _show-approach-custom:
+Der genaue Text des Menüpunkts hängt davon ab, ob der Flugplatz bereits als Ziel oder Abflug im Flugplan verwendet wird.
+
+.. _show-approach-custom-search:
 
 |Create Approach| Anflug erstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -268,7 +281,9 @@ Flugplatzsuche verfügbar.
 
 Weitere Informationen finden Sie unter :doc:`CUSTOMPROCEDURE`.
 
-.. _show-on-map:
+Der genaue Text des Menüpunkts hängt davon ab, ob der Flugplatz bereits als Ziel oder Abflug im Flugplan verwendet wird.
+
+.. _show-on-map-search:
 
 |Show on Map| Zeige auf Karte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -321,22 +336,22 @@ der Karte zu markieren.
 
 .. _show-range-rings-0:
 
-|Show Range Rings| Reichweitenringe anzeigen
+|Add Range Rings| Distanzkreise hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _show-navaid-range-0:
 
-|Show Navaid range| Reichweite für Navigationshilfe anzeigen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Add Navaid Range Ring| Distanzkreis für Funkfeuer hinzufügen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _show-traffic-pattern:
+.. _show-traffic-pattern-search:
 
-|Display Airport Traffic Pattern| Platzrunde anzeigen
+|Add Airport Traffic Pattern| Platzrunde hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _show-holdings:
 
-|Display Holdings| Zeige Warteschleife
+|Add Holding| Warteschleife hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wie im Kontextmenü :ref:`map-context-menu`.
@@ -346,29 +361,29 @@ Benutzerfunktion auf der Karte ausgeblendet ist (Menü ``Ansicht`` ->
 ``Nutzerobjekte``). Der Menüpunkt wird in diesem Fall mit dem Text
 ``auf der Karte versteckt`` versehen.
 
-.. _set-as-flight-plan-departure-0:
+.. _set-as-flight-plan-departure-search:
 
 |Set as Flight Plan Departure| Als Startflugplatz setzen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _set-as-flight-plan-destination-0:
+.. _set-as-flight-plan-destination-search:
 
 |Set as Flight Plan Destination| Als Zielflugplatz setzen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _set-as-flight-plan-alt-0:
 
-|Set as Flight Plan Alternate| Als Ausweichflugplatz festlegen
+|Add as Flight Plan Alternate| Als Ausweichflugplatz hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _add-position-to-flight-plan-0:
 
-|Add Position to Flight Plan| Position zum Flugplan hinzufügen
+|Add to Flight Plan| Position zum Flugplan hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _append-position-to-flight-plan-0:
 
-|Append Position to Flight Plan| Position an den Flugplan anhängen
+|Append to Flight Plan| Position an den Flugplan anhängen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das Gleiche, wie :ref:`map-context-menu`.
@@ -408,7 +423,7 @@ Kreise aus der Karte.
 Setzt die Sortierreihenfolge, Spaltenreihenfolge und Spaltenbreiten auf
 den Standard zurück.
 
-.. _set-center-for-distance-search-0:
+.. _set-center-for-distance-search-search:
 
 |Set Center for Distance Search| Center für die Entfernungssuche einstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -428,16 +443,15 @@ Das Gleiche, wie :ref:`map-context-menu`.
 .. |Filter by Entries including| image:: ../images/icon_filter-add.png
 .. |Filter by Entries excluding| image:: ../images/icon_filter-remove.png
 .. |Show All| image:: ../images/icon_load-all.png
-.. |Show Range Rings| image:: ../images/icon_rangerings.png
-.. |Show Navaid range| image:: ../images/icon_navrange.png
-.. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
-.. |Display Holdings| image:: ../images/icon_hold.png
+.. |Add Range Rings| image:: ../images/icon_rangerings.png
+.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
+.. |Add Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
+.. |Add Holding| image:: ../images/icon_hold.png
 .. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
 .. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
-.. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
-.. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
-.. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Add as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
+.. |Add to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Append to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Copy| image:: ../images/icon_copy.png
 .. |Reset View| image:: ../images/icon_cleartable.png
 .. |Set Center for Distance Search| image:: ../images/icon_mark.png
-

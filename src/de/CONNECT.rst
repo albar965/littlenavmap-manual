@@ -2,11 +2,11 @@
 ---------------------------------------------------------------------------
 
 Das Setup-Verfahren unterscheidet sich für lokale Verbindungen und
-entfernte Verbindungen (Netzwerkverbindungen) zu einem Flugsimulator.
+entfernte Verbindungen (Netzwerkverbindungen) zu einem Flugsimulator (:ref:`remote-connection`).
 
 *Little Navmap* kann sich direkt verbinden, wenn alle Programme auf dem
 gleichen Computer laufen. Der *Little Navconnect-Agent* wird benötigt,
-wenn *Little Navmap* auf einem Remote-Computer verwendet wird.
+wenn *Little Navmap* auf einem entfernten Netzwerkcomputer verwendet wird.
 
 Für die Verbindung zu X-Plane muss zusätzlich das *Little Xpconnect*
 Plugin in X-Plane installert werden.
@@ -20,15 +20,15 @@ Alle Simulatoren
 ^^^^^^^^^^^^^^^^
 
 Öffnen Sie den Verbindungsdialog in *Little Navmap*, indem Sie
-``Werkzeuge`` -> ``Flugsimulatorverbindung ...`` im Hauptmenü wählen und
+``Werkzeuge`` -> :ref:`flight-simulator-connection` im Hauptmenü wählen und
 den Simulator auswählen, zu dem die Verbindung aufgebaut werden soll.
 
 .. figure:: ../images/connectlocal.jpg
 
       *Little Navmap* Verbindungsdialog für eine lokale
-      Verbindung zum FSX oder P3D. Die Verbindung wird manuell aufgebaut.
+      Verbindung zum FSX, P3D oder MSFS. Die Verbindung wird automatisch aufgebaut.
 
-Wählen Sie ``Direkt zu lokalen ... Flugsimulator verbinden``.
+Klicken Sie auf den Reiter, der dem Simulator entspricht, mit dem Sie eine Verbindung herstellen möchten.
 
 Klicken Sie nun auf ``Verbinden``. Der Dialog wird geschlossen und
 *Little Navmap* versucht im Hintergrund eine Verbindung aufzubauen.
@@ -48,6 +48,8 @@ Informationen an das Programm zu deaktivieren. Dies kann aus
 Performancegründen nützlich sein, wenn Sie große Mengen an KI verwenden,
 diese aber nicht in *Little Navmap* sehen wollen.
 
+Diese Einstellung wirkt sich auch auf die Fregatte und den Flugzeugträger in X-Plane aus.
+
 X-Plane
 ^^^^^^^
 
@@ -65,39 +67,25 @@ X-Plane-Installation. Der komplette Pfad sollte wie folgt aussehen:
 Sie können den X-Plane Plugin Manager überprüfen, um zu sehen, ob das Plugin
 korrekt geladen ist.
 
-Wenn Sie sich mit Little Navmap verbinden, wählen Sie die Option
-``Direkt mit einem lokalen X-Plane-Simulator verbinden``.
+Beachten Sie, dass das Plugin dem X-Plane-Menü keine Einträge hinzufügt.
+
+Wählen Sie zum Verbinden den Reiter von X-Plane.
 
 .. _remote-connection:
 
 Entfernte Verbindung
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Simulatorflugzeug- und Wetterinformationen werden mit dem *Little
-Navconnect*-Agenten auf dem Flugcomputer an *Little Navmap* übertragen,
-wodurch der fehleranfällige und langwierige Aufbau einer
-SimConnect-Netzverbindung umgangen wird.
+Die Flugzeug- und Wetterinformationen des Benutzers werden an *Little Navmap*
+auf einem entfernten Computer mit Hilfe von *Little Navconnect* auf dem
+Flugcomputer übertragen.
 
 .. note::
 
-      Beachten Sie, dass Wetterinformationen nicht über eine
-      Netzwerkverbindung von X-Plane übertragen werden können.
+     Flugplatzwetterinformationen und Höhenwinde können nicht über eine entfernte
+     Verbindung von X-Plane übertragen werden. Sie können nur das aktuelle Wetter um das Benutzerflugzeug herum sehen.
 
-Sie müssen das ZIP-Archiv entpacken, das ``littlenavmap.exe`` und
-``littlenavconnect.exe`` auf beiden Computern enthält. Laden Sie dann die
-Szeneriedatenbank auf den Computer, auf dem der Simulator läuft, und
-kopieren Sie die Datenbank auf den entfernten Computer.
-Siehe :doc:`RUNNOSIM` für Details.
-
-Stellen Sie sicher, dass die Versionen von *Little Navmap* und
-*Little Navconnect* übereinstimmen, sonst erhalten Sie eine
-Fehlermeldung. Verwenden Sie die Version von *Little Navconnect*, die im
-*Little Navmap* Download-Archiv enthalten ist, wenn Sie sich nicht
-sicher sind.
-
-Für X-Plane müssen Sie auch das *Little Xpconnect* Plugin installieren.
-Siehe die Datei ``README.txt`` im Verzeichnis ``Little Xpconnect`` für
-Installationsanweisungen.
+Siehe :doc:`NETWORK` für Informationen, wie man eine Entfernte- bzw. Netzwerkverbindung einrichtet.
 
 .. _connect-start-navconnect:
 
@@ -123,8 +111,7 @@ ermöglichen.
 
 .. figure:: ../images/littlenavconnect.jpg
 
-        `Little
-        Navconnect <https://albar965.github.io/littlenavconnect.html>`__
+        *Little Navconnect*
         läuft und wartet auf einen Flugsimulator. Es läuft auf dem Computer
         ``win10.fritz.box`` mit der IP-Adresse ``192.168.2.13``.
 
@@ -149,8 +136,7 @@ Little Navmap auf dem entfernten Computer starten
 
 Gehen Sie nun nach dem Öffnen des Dialogs wie folgt vor:
 
-#. Wählen Sie
-   ``Zu einem Flugsimulator im Netzwerk mit Little Navconnect verbinden``.
+#. Klicken Sie auf den Reiter ``Entfernte- bzw. Netzwerkverbindung``.
 #. Fügen Sie den Wert für den Computernamen hinzu. Dies kann entweder der
    Hostname oder die von *Little Navconnect* angezeigte IP-Adresse sein.
 #. Überprüfen Sie den Wert für den Port. ``51968`` ist der Standardwert
@@ -181,7 +167,7 @@ Netzwerk zu deaktivieren. Dies kann aus Performancegründen nützlich
 sein, wenn Sie große Mengen an KI verwenden, diese aber nicht in *Little
 Navmap* sehen wollen.
 
-.. _options:
+.. _connect-options:
 
 Verbindungsdialog-Optionen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -210,9 +196,10 @@ Verbindungsdialog-Optionen
    Simulator Stottern oder Verzögerungen auftreten. Ein niedrigerer Wert
    führt zu mehr flüssigen Kartenaktualisierungen in *Little Navmap*.
 -  ``KI- oder Mehrspielerflugzeuge übertragen`` und
-   ``KI- oder Mehrspielerschiffe übertragen``: Deaktiviert das Erfassen von
-   KI-Fahrzeugen. Diese Einstellungen werden sofort übernommen. Beachten
-   Sie, dass der Schiffsverkehr für X-Plane nicht verfügbar ist.
+   ``KI- oder Mehrspielerschiffe übertragen``: Übertragung von KI-Fahrzeugen.
+   Diese Einstellungen werden sofort angewendet.
+-  ``KI Abrufradius``: Begrenzt die Anzahl der KI-Flugzeuge um das Benutzerflugzeug.
+   Nur für FSX, P3D und MSFS. Diese Einstellung wird sofort angewendet.
 
 .. |Flight Simulator Connection| image:: ../images/icon_network.png
 

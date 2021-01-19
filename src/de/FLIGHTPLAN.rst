@@ -1,8 +1,8 @@
-|Flight Plan Tab| Flugplan
+|Flight Plan Tab| Flugplanung
 ---------------------------------
 
-Das Flugplanungsdockfenster enthält die drei Reiter: ``Flugplan`` (dieses Kapitel),
-:doc:`AIRCRAFTPERF` und :doc:`AIRCRAFTPERFCOLL`.
+Das Flugplanungs-Dockfenster enthält die vier Reiter: ``Flugplan``, ``Flugplananmerkungen``,
+``Treibstoffbericht`` (:doc:`AIRCRAFTPERF`) und ``Aktuelle Flugzeugleistung`` (:doc:`AIRCRAFTPERFCOLL`).
 
 Oberer Teil
 ~~~~~~~~~~~
@@ -27,17 +27,31 @@ ist in Klammern angegeben.
         Kopfzeile des Flugplans ``VORDME LITSY``  hat
         ``D34`` als ARINC Name.
 
-Neben dem Beschriftung gibt es zwei Eingabefelder oben in diesem Dockfenster:
+.. _flight-plan-altitude:
 
--  **Reiseflughöhe (Fuß):** Dieser Wert wird mit dem Flugplan gespeichert
-   und dient auch zur Berechnung eines Luftstraßen-Flugplans basierend auf
-   der gegebenen Höhe. Dieses Feld wird automatisch auf die minimale
-   Höhe für einen Flugplan gesetzt, wenn ein Plan entlang der Victor-
-   oder Jet-Luftstraßen berechnet wird und Höhenbeschränkungen gefunden
-   wurden. Siehe auch :ref:`calculate-based-on-given-altitude` und die folgenden
-   Kapitel.
--  **Flugplantyp (IFR or VFR):** Dieser wird mit dem Flugplan
-   gespeichertund ist nur für FSX oder Prepar3D relevant.
+Flugplanhöhe
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Dieser Wert wird mit dem Flugplan gespeichert und wird auch für die Berechnung eines Flugplans über Luftstraßen verwendet.
+
+Das Ändern der Reiseflughöhe eines Flugplans über Luftstraßen kann zu Fehlern führen (:ref:`flight-plan-table-error`).
+Dies kann passieren, wenn die geänderte Reiseflughöhe gegen die Höhenbeschränkungen für Luftstraßen verstößt.
+Berechnen Sie den Flugplan erneut, um die Fehler zu beseitigen.
+
+See :doc:`ROUTECALC`.
+
+.. note::
+
+       Beachten Sie, dass *Little Navmap* keine Step-Climbs oder unterschiedliche Höhen für jeden Wegpunkt unterstützt.
+
+.. _flight-plan-type:
+
+Flugplantyp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Entweder ``IFR`` oder ``VFR``.
+
+Dieser wird mit dem Flugplan gespeichert und ist nur für FSX, Prepar3D oder MSFS relevant.
 
 .. _flight-plan-table:
 
@@ -57,7 +71,7 @@ auszuwählen (Mehrfachauswahl).
 
 Der aktive Flugplanabschnitt wird in Magenta hervorgehoben, wenn *Little
 Navmap* mit einem Simulator verbunden ist, das Benutzerflugzeug in der
-Luft ist und näher als 50 nautischen Meilen am Flugplan liegt.
+Luft ist und näher als 40 NM am Flugplan liegt.
 
 Prozedurabschnitte haben eine dunkelblaue Farbe und Fehlanflugsabschnitte haben eine dunkelrote Farbe.
 
@@ -84,8 +98,15 @@ Tabellenspalten
 -  ``Name``: Name des Flugplatzs oder des Funkfeuers.
 -  ``Prozedur``: Entweder ``SID``, ``SID Übergang``, ``STAR``,
    ``STAR Übergang``, ``Übergang``, ``Anflug`` oder ``Fehlanflug``
-   plus Name der Prozedur.
--  ``Luftstraße oder Prozedur``: Enthält den Luftstraßennamen für Strecken unterwegs oder eine Prozeduranweisung.
+   plus Name der Prozedur. Auch ``Abflug``, ``Ziel`` und ``Ausweichflugplatz``.
+-  ``Luftstraße`` oder ``Prozedur``: Enthält den Luftstraßennamen für Streckenabschnitte
+   oder Prozeduranweisungen. Dieses Feld zeigt Track-Namen an, wenn NAT, PACOTS oder AUSOTS-Strecken verwendet werden.
+   Luftstraßen werden mit dem Suffix des Luftwegtyps versehen, wie ``N601 / V``:
+
+   - ``V`` Victor bzw. Luftstraße in geringer Höhe
+   - ``J`` Jet bzw. Luftstraße in großer Höhe
+   - ``B``: Beide
+
 -  ``Beschränkungen``:
 
    -  Für die Luftstraßen:
@@ -123,16 +144,7 @@ Tabellenspalten
    dem Abflug, wenn Sie lange Strecken ohne Navigationshilfe zurücklegen. Beachten
    Sie, dass Sie Ihren Kurs ständig ändern müssen, wenn Sie entlang
    einer großen Kreislinie fliegen.
--  ``Direkt °M:``  Dies ist der konstante Verlauf der Loxodrome,
-   die zwei Wegpunkte verbindet. Je nach Route und
-   Entfernung kann sie vom Verlauf der Großkreislinie abweichen.
-   Verwenden Sie diesen Kurs, wenn Sie entlang der Luftstraßen oder von und zu VOR-
-   oder NDB-Stationen fliegen. Im Gegensatz zum Kurs, der vom GPS-Gerät
-   des Flugsimulators angezeigt wird, erhalten Sie so die genaue
-   Position auf dem Radial des Funkfeuers,
-   wenn Sie sich einem VOR oder NDB in einem Flugplan nähern.
--  ``Kurs °T:`` und ``Direkt °T:``  Das gleiche wie die beiden
-   obigen Felder, aber mit echtem Kurs. Verwenden Sie dies in Bereichen
+-  ``Kurs °T:``  Das gleiche Feld, wie oben, aber mit echtem Kurs. Verwenden Sie dies in Bereichen
    mit hoher magnetischer Variation.
 -  ``Distanz``: Entfernung der Flugplanstrecke.
 -  ``Verbleibend``: Verbleibende Entfernung zum Zielflugplatz oder
@@ -152,8 +164,12 @@ Tabellenspalten
    Grundlage des ausgewählten Leistungsprofils des Flugzeugs. Leer, wenn
    das Leistungsprofil des Flugzeugs keine Kraftstoffverbrauchszahlen
    enthält.
--  ``Kommentare``: Wendeanweisungen, Überfluganweisungen oder zugehörige
-   Navigationshilfen für Prozedurabschnitte.
+-  ``Wind``: Magnetische Windrichtung und -geschwindigkeit am Wegpunkt.
+-  ``Gegen- oder Rückenwind``: Wind am Wegpunkt. Gegenwind wird durch einen Pfeil nach unten ``▼`` und Rückenwind durch einen Pfeil nach oben ``▲`` angezeigt.
+-  ``Höhe``: Berechnete Höhe am Wegpunkt. Verwendet die Flugzeugleistung, um die Höhe zu bestimmen.
+-  ``Anmerkungen``: Abbiegeanweisungen, Überflüge oder verwandte Navigationshilfen für Prozedurabschnitte.
+   Zeigt auch Benutzeranmerkungen, die mit :ref:`edit-name-of-user-waypoint` bearbeitet werden können.
+   Siehe :doc:`MAPFPEDIT` für weitere Informationen.
 
 .. figure:: ../images/flightplan.jpg
 
@@ -208,7 +224,7 @@ mit weiteren Informationen zum Fehler zu sehen.
         Tooltip zur Fehlermeldung bei Verletzungen von
         Höhenbeschränkungen.
 
-.. _magnetische-Deklination:
+.. _flightplan-magnetic-declination:
 
 Magnetische Deklination
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,7 +253,7 @@ Deklination der Umgebung verwendet.
 
 Sie können die Verwendung der VOR-Deklination im Einstellungsdialog auf der
 Seite ``Flugplan`` deaktivieren, indem Sie
-``Ignoriere Deklinationswerte von Radio-Navigationshilfen`` aktivieren.
+``Ignoriere Deklinationswerte von Funknavigationshilfen`` aktivieren.
 Dabei wird die Deklination der Umgebung für alle Berechnungen verwendet.
 Sie können dies verwenden, wenn Sie ausschließlich mit GPS fliegen und
 VOR-Stationen ignorieren.
@@ -256,7 +272,7 @@ Deklination sehen Sie unter dem Mauszeiger in der Statusleiste von
 Nachfolgend ein Flugplan mit drei Etappen, die alle einen wahren Kurs
 von 90° haben.
 
-**Beispiel mit** ``Ignoriere Deklinationswerte von Radio-Navigationshilfen``
+**Beispiel mit** ``Ignoriere Deklinationswerte von Funknavigationshilfen``
 **nicht ausgewählt:**
 
 .. figure:: ../images/magvarenabled.jpg
@@ -267,7 +283,7 @@ von 90° haben.
         Stationsdeklination 21° Ost berechnet, während der Kurs zu ``YIPYU`` auf
         15,2° Ost basiert.
 
-**Beispiel mit** ``Ignoriere Deklinationswerte von Radio-Navigationshilfen``
+**Beispiel mit** ``Ignoriere Deklinationswerte von Funknavigationshilfen``
 **ausgewählt:**
 
 .. figure:: ../images/magvardisabled.jpg
@@ -294,7 +310,7 @@ Objekt aus und markiert es auf der Karte mit einem schwarz/grünen Kreis.
 Obere Schaltflächen
 ~~~~~~~~~~~~~~~~~~~
 
-.. _clear-selection:
+.. _clear-selection-button-flightplan:
 
 |Clear Selection| Auswahl löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -302,39 +318,45 @@ Obere Schaltflächen
 Alle Markierungen in der Tabelle aufheben und alle hervorgehobenen
 Kreise aus der Karte entfernen.
 
+|Select visible Columns| Spaltenauswahl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Siehe Kapitel :ref:`flight-plan-table-columns-select` weiter unten.
+
 .. _flight-plan-table-view-context-menu:
 
 Kontextmenü Flugplan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _show-information-1:
+.. _show-information-flightplan:
 
 |Show Information| Informationen anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Gleich wie bei :ref:`map-context-menu`.
 
-.. _show-Procedures:
+.. _show-procedures-flightplan:
 
 |Show Procedures| Prozeduren anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wie :ref:`Show-Procedures`. Nur für Flugplätze mit Prozeduren aktviert.
+Wie :ref:`show-procedures-map`. Nur für Flugplätze mit Prozeduren aktviert.
 
-.. _show-approach-custom:
+.. _show-approach-custom-flight-plan:
 
 |Create Approach| Anflug erstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wie im Kontextmenü :ref:`show-approach-custom`. Nur für Flugplätze mit
-Prozeduren zugelassen.
+Wie im Kontextmenü :ref:`show-approach-custom-map`.
 
-.. _show-on-map:
+Siehe auch :doc:`CUSTOMPROCEDURE`.
 
-|Show on Map| Auf der Karte zeigen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _show-on-map-flightplan:
 
-Zeigt entweder das Flugplatzdiagramm oder zoomt auf die Navigationshilfe auf der
+|Show on Map| Auf der Karte anzeigen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Zeigt entweder das Flugplatzdiagramm oder zoomt zur Navigationshilfe auf der
 Karte. Der Zoomabstand kann im Dialogfeld ``Einstellungen`` auf der
 Reiter ``Kartennavigation`` geändert werden.
 
@@ -347,6 +369,10 @@ Macht die ausgewählte Strecke zum aktiven (magenta) Flugplanabschnitt.
 Das aktive Teilstück kann sich ändern, wenn *Little Navmap* mit dem
 Simulator verbunden ist und sich das Benutzerflugzeug bewegt.
 
+Sie müssen den Abschnitt manuell aktivieren, wenn Sie einen Ausweichflugplatz anfliegen möchten.
+
+Abschnitte eines Fehlanflugverfahrens werden automatisch aktiviert, wenn das Verfahren in der Karte angezeigt wird.
+
 .. _follow-selection:
 
 Folge Auswahl
@@ -357,7 +383,7 @@ Flugplatz oder Navigationshilfe zentriert aber nicht vergrößert, wenn diese Fu
 
 .. _move-selected-legs-up-down:
 
-|Move Selected Legs up| |Move Selected Legs down| Ausgewählte Flugplanabschnitte noch oben/unten bewegen
+|Move Selected Legs up| |Move Selected Legs down| Ausgewählte Abschnitte noch oben/unten bewegen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Alle ausgewählten Flugplanstrecken in der Liste nach oben oder unten
@@ -373,24 +399,24 @@ Wegpunkte können nicht in oder zwischen Prozeduren verschoben werden.
 
 .. _delete-selected-legs:
 
-|Delete Selected Legs or Procedure| Ausgewählten Abschnitt oder Prozedur löschen
+|Delete Selected Legs or Procedure| Ausgewählte Abschnitte oder Prozedur löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Alle ausgewählten Flugplanabschnitte löschen. ``Undo`` nutzen, wenn
+Alle ausgewählten Flugplanabschnitte löschen. ``Rückgängig`` nutzen, wenn
 Abschnitte versehentlich gelöscht wurden.
 
 Eine gesamte Prozedur wird gelöscht, wenn die ausgewählte Flugplanstrecke
 Teil einer Prozedur ist. Das Löschen einer Prozedur löscht auch deren
 Übergang.
 
-.. _edit-name-of-user-waypoint:
+.. _edit-name-of-user-waypoint-flightplan:
 
-|Edit Flight Plan Position| Bearbeite Flugplanposition
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Edit Flight Plan Position| Bearbeite Flugplanposition oder Bearbeite Anmerkungen für Flugplanposition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ermöglicht das Ändern des Namens oder der Koordinaten eines
-benutzerdefinierten Wegpunktes im Flugplane. Die Länge des Namens
-ist beim Speichern auf 10 Zeichen begrenzt. Siehe auch :doc:`EDITFPPOSITION`.
+Ermöglicht die Änderung des Namens oder der Koordinaten eines benutzerdefinierten Wegpunkts im Flugplan. Siehe :doc:`EDITFPPOSITION`.
+
+Erlaubt auch das Hinzufügen einer Bemerkung zu einem beliebigen Flugplanwegpunkt, der kein Ausweichpunkt und kein Teil einer Prozedur ist. Siehe :doc:`EDITFPREMARKS`.
 
 .. _insert-flight-plan:
 
@@ -417,7 +443,7 @@ geladenen Flugplan und löscht die aktuellen Abflugprozeduren.
 Die eingefügten Abschnitte werden nach dem Laden des Flugplans
 ausgewählt.
 
-.. _append-flight-plan:
+.. _append-plan-flightplan:
 
 |Append Flight Plan| Flugplan anhängen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -431,55 +457,30 @@ angehängten Flugplan werden zu dem aktuellen hinzugefügt, falls vorhanden.
 
 Die angehängten Strecken werden nach dem Laden des Flugplans ausgewählt.
 
-.. _calculate-for-selected-legs:
+|Save selected range as Flight Plan| Speichere Auswahl als Flugplan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Für ausgewählten Abschnitt berechnen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Extrahiert einen Teil des aktuellen Flugplans und speichert eine neue Flugplandatei,
+die alle Abschnitte zwischen der ersten und der letzten ausgewählten einschließlich enthält.
 
-Dies ist ein Untermenü mit Einträgen für Flugplanberechnungsmethoden,
-wie hier beschrieben:
+Der aktuell geladene Flugplan wird dabei nicht verändert.
 
-|Calculate Radionav| :ref:`calculate-radionav`,
-|Calculate high Altitude| :ref:`calculate-high-altitude`,
-|Calculate low Altitude| :ref:`calculate-low-altitude` und
-|Calculate based on given Altitude| :ref:`calculate-based-on-given-altitude`.
+Dieser Menüpunkt ist deaktiviert, wenn der ausgewählte Bereich Abschnitte enthält, die Ausweichflugplätze oder Teil einer Prozedur sind.
 
-Berechnet einen Flugplanteil zwischen dem ersten und letzten
-ausgewählten Wegpunkt. Alle dazwischen liegenden bestehenden Abschnitte
-werden gelöscht und durch das neu berechnete Flugplanteil ersetzt.
+|Calculate Flight Plan for selected Range| Berechne Flugplan für Auswahl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dieses Menü ist nur aktiv, wenn mehr als eine Flugplanetappe ausgewählt
-ist und weder die erste noch die letzte ausgewählte Zeile eine Prozedur
-ist. Sie können entweder den ersten oder den letzten Abschnitt mit
-(``Strg+Click``) auswählen und die Berechnung starten. Sie können auch
-einen ganzen Streckenbereich (``Umschalt+Click`` und ziehen) vor der
-Berechnung auswählen.
+Öffnet das Dockfenster für die Flugplanberechnung, das die automatische Generierung eines Flugplans
+nach verschiedenen Kriterien zwischen dem ersten und dem letzten ausgewählten Flugplanabschnitt ermöglicht.
 
-Diese Funktion kann nützlich sein, wenn Sie lange Etappen über Ozeane
-überqueren müssen, die nicht von Luftstraßen abgedeckt sind sind:
+Dieser Menüpunkt ist deaktiviert, wenn der ausgewählte Bereich Teilstrecken enthält, die Ausweichflugplätze oder Teil einer Prozedur sind.
 
-.. tip::
-
-   Wie man einen Flugplan über den Ozean erstellen kann:
-
-   #. Abflug und Ziel einstellen.
-   #. Finden Sie den letzten Wegpunkt auf einer Luftstraße, bevor Sie in den
-      Atlantik einfliegen. Wählen Sie denjenigen aus, der der direkten Flugplanlinie
-      am nächsten liegt. Fügen Sie den Wegpunkt dem Flugplan hinzu.
-   #. Wählen Sie Abflug und diesen Wegpunkt aus und berechnen Sie das
-      Flugplanfragment.
-   #. Wiederholen Sie den Vorgang für den ersten Wegpunkt auf einer Luftstraße
-      nahe der Küste Ihres Zielkontinents.
-   #. Wählen Sie diesen Wegpunkt und das Ziel aus und berechnen Sie das
-      Flugplanfragment.
-
-Obwohl nicht ganz realistisch, ist dies ein sinnvoller Lösungsweg, bis
-*Little Navmap* NAT- oder PACOT-Tracks unterstützt.
+Siehe Kapitel :doc:`ROUTECALC` für weitere Informationen.
 
 .. _show-range-rings-1:
 
-|Show Range Rings| Zeige Enfernungsringe
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Add Range Rings| Distanzkreise hinzufügen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das Gleiche wie :ref:`map-context-menu`.
 
@@ -490,8 +491,8 @@ auf der Karte ausgeblendet sind (Menü ``Ansicht`` ->
 
 .. _show-navaid-range-1:
 
-|Show Navaid range| Zeige Reichweite für Navigationshilfe
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Add Navaid Range Ring| Distanzkreise für Funkfeuer hinzufügen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt die Reichweitenkreise für alle ausgewählten Funkfeuer im
 Flugplan an. Wählen Sie einfach alle Teilstrecken des Flugplans aus und
@@ -500,12 +501,12 @@ Reichweitenkreis anzuzeigen.
 
 Sonst das Gleiche wie :ref:`map-context-menu`.
 
-.. _show-traffic-pattern:
+.. _show-traffic-pattern-flightplan:
 
-|Display Airport Traffic Pattern| Platzrunde anzeigen
+|Add Airport Traffic Pattern| Platzrunde hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleiche Funktion, wie :ref:`show-traffic-pattern`.
+Gleiche Funktion, wie :ref:`show-traffic-pattern-map`.
 
 Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flugplatz klicken.
 Zeigt einen Dialog an, der es ermöglicht, eine Platzrunde auf der Karte
@@ -518,9 +519,9 @@ auf der Karte ausgeblendet sind (Menü ``Ansicht`` ->
 ``Nutzerobjekte``). Der Menüpunkt wird in diesem Fall mit dem Text
 ``auf der Karte versteckt`` versehen.
 
-.. _holding:
+.. _show-holding:
 
-|Display Holding| Zeige Warteschleife
+|Add Holding| Warteschleife hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Gleich wie das Kontextmenü :ref:`holding`.
@@ -564,8 +565,8 @@ Hervorhebungen von der Karte.
 Setzt die Spaltenreihenfolge, -sichtbarkeit und die -breiten auf den Standardwert
 zurück.
 
-Sichtbare Spalten auswählen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Select visible Columns| Sichtbare Spalten auswählen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Siehe Kapitel :ref:`flight-plan-table-columns-select` oben.
 
@@ -575,6 +576,15 @@ Siehe Kapitel :ref:`flight-plan-table-columns-select` oben.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Das Gleiche wie :ref:`map-context-menu`.
+
+Flugplananmerkungen
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Erlaubt es Anmerkungen für den ganzen Flugplan hinzuzufügen.
+
+Beachten Sie, dass dieses Feld nur im *Little Navmap* LNMPLN-Format gespeichert wird (:ref:`flight-plan-formats-lnmpln`).
+
+See also :doc:`REMARKS`.
 
 .. |Flight Plan Tab| image:: ../images/icon_routedock.png
 .. |Clear Selection| image:: ../images/icon_clearselection.png
@@ -589,15 +599,13 @@ Das Gleiche wie :ref:`map-context-menu`.
 .. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
 .. |Insert Flight Plan before| image:: ../images/icon_fileinsert.png
 .. |Append Flight Plan| image:: ../images/icon_fileappend.png
-.. |Calculate Radionav| image:: ../images/icon_routeradio.png
-.. |Calculate high Altitude| image:: ../images/icon_routehigh.png
-.. |Calculate low Altitude| image:: ../images/icon_routelow.png
-.. |Calculate based on given Altitude| image:: ../images/icon_routealt.png
-.. |Show Range Rings| image:: ../images/icon_rangerings.png
-.. |Show Navaid range| image:: ../images/icon_navrange.png
-.. |Display Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
-.. |Display Holding| image:: ../images/icon_hold.png
+.. |Add Range Rings| image:: ../images/icon_rangerings.png
+.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
+.. |Add Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
+.. |Add Holding| image:: ../images/icon_hold.png
 .. |Copy| image:: ../images/icon_copy.png
 .. |Reset View| image:: ../images/icon_cleartable.png
 .. |Set Center for Distance Search| image:: ../images/icon_mark.png
-
+.. |Select visible Columns| image:: ../images/icon_settingsroute.png
+.. |Save selected range as Flight Plan| image:: ../images/icon_mapsaveasimage.png
+.. |Calculate Flight Plan for selected Range| image:: ../images/icon_routecalc.png

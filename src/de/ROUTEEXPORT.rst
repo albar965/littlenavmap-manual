@@ -2,9 +2,9 @@ Flugplan Online Export
 ----------------------
 
 Dieser Dialog erscheint beim Export eines Flugplans für die
-Online-Netzwerk-Clients über :ref:`flight-plan-formats-ivap`,
-:ref:`flight-plan-formats-xivap` oder
-:ref:`flight-plan-formats-vpilot`.
+Online-Netzwerk-Clients über :ref:`flight-plan-formats-ivap`, :ref:`flight-plan-formats-xivap`, :ref:`flight-plan-formats-vpilot` oder
+:ref:`multiexport-flight-plan`.
+.
 
 Einige Eingabefelder können je nach Format ausgeblendet sein.
 

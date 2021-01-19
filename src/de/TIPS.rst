@@ -13,7 +13,7 @@ wird ein Umkreisring um jede Funknavigation (VOR) im Flugplan gelegt.
 
 Siehe auch :ref:`show-navaid-range`.
 
-Zum Entfernen der Ringe auf das Zentrum rechtsklicken und im Kontextmenü
+Zum Entfernen der Reichweitenkreise auf das Zentrum rechtsklicken und im Kontextmenü
 ``Distanzkreise entfernen`` auswählen.
 
 |Range Rings|
@@ -33,14 +33,13 @@ Unten ist ein Beispiel, das Radial und die Entfernung von zwei VORs für
 beginnen. Beachten Sie den Suffix ``°M`` , der den magnetischen Kurs
 angibt.
 
-Siehe auch :ref:`measure-gc-distance-from-here` und
-:ref:`measure-rhumb-distance-from-here`.
+Siehe auch :ref:`measure-gc-distance-from-here`.
 
 |VOR Radials|
 
 Dieses kann auch beim Abfliegen von Luftstraßen ohne GPS verwendet werden.
 Im Beispiel unten fliegen Sie 323 Grad magnetisch zu VOR ``SFD`` (Radial
-143). Sie sind bei ``WAFFU``, wenn Ihr DME 13,7 nautische Meilen
+143). Sie sind bei ``WAFFU``, wenn Ihr DME 13,7 NM
 anzeigt. Dann drehen Sie links auf 280°M bis Sie 302° von ``GWC``
 einfangen.
 

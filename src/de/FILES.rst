@@ -1,6 +1,8 @@
 Dateien
 -------
 
+.. _files-log:
+
 Logdateien
 ~~~~~~~~~~~~~
 
@@ -65,6 +67,8 @@ Siehe :doc:`CUSTOMIZE` für mehr Informationen.
    Vor dem Zurücksetzen wird immer eine Sicherheitskopie erstellt.
    Dies wird üblicherweise in der Liste der Änderungen angekündigt.
 
+.. _disk-cache:
+
 Festplattenzwischenspeicher
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -74,6 +78,8 @@ Der Zwischenspeicher, der für alle Onlinekarten verwendet wird, ist hier zu fin
 -  Linux und macOS: ``$HOME/.local/share/marble``
 
 Sie können den Zwischenspeicher manuell löschen, um Platz zu sparen, wenn *Little Navmap* nicht läuft.
+
+.. _files-databases:
 
 Datenbanken
 ~~~~~~~~~~~~~~
@@ -113,6 +119,8 @@ Die Dateien sind:
 -  ``little_navmap_p3dv2.sqlite``: Prepar3D v2
 -  ``little_navmap_p3dv3.sqlite``: Prepar3D v3
 -  ``little_navmap_p3dv4.sqlite``: Prepar3D v4
+-  ``little_navmap_p3dv5.sqlite``: Prepar3D v5
+-  ``little_navmap_msfs.sqlite``: Microsoft Flight Simulator 2020
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
 -  ``little_navmap_navigraph.sqlite``: Navigraph Navigationsdatenbank.
    Kann entweder die mitgelieferte oder eine vom Navigraph
@@ -163,15 +171,211 @@ Weitere Dateien wie
 -  ``little_navmap_compiling.sqlite-journal``,
 -  ``little_navmap_temp.sqlite``,
 -  ``little_navmap_temp.sqlite-journal``,
--  ``little_navmap_onlinedata.sqlite`` or
+-  ``little_navmap_onlinedata.sqlite`` oder
 -  ``little_navmap_onlinedata.sqlite-journal``
 
 sind Ergebnisse von temporären Prozessen und können ignoriert werden.
 
-.. _annotated-pln:
+.. _lnmpln-file-format:
 
-Kommentiertes Flugplandateiformat
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Little Navmap* Dateiformat für Flugpläne
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LNMPLN-Dateien sind Flugplandateien, die das für *Little Navmap* spezifische Format verwenden. Sie sind im XML-Textformat und können nur von *Little Navmap* gelesen werden.
+
+Siehe `XML (Wikipedia) <https://en.wikipedia.org/wiki/XML>`__ für weitere Informationen
+über diese Art von Konfigurationsdateien.
+
+Das XML-Schema für die Validierung finden Sie hier: `lnmpln.xsd <https://www.littlenavmap.org/schema/lnmpln.xsd>`__.
+
+Die Reihenfolge der Elemente spielt keine Rolle. Fehlende Elemente werden als Warnung protokolliert, ausgenommen optionale Elemente.
+
+.. code-block:: xml
+         :caption: Flight Plan File Example
+         :name: flightplan-example
+
+         <?xml version="1.0" encoding="UTF-8"?>
+         <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
+           <Flightplan>
+             <Header>
+               <FlightplanType>IFR</FlightplanType>
+               <CruisingAlt>30000</CruisingAlt>
+               <CreationDate>2020-09-11T18:05:15</CreationDate>
+               <FileVersion>1.0</FileVersion>
+               <ProgramName>Little Navmap</ProgramName>
+               <ProgramVersion>2.6.0.beta</ProgramVersion>
+               <Documentation>https://www.littlenavmap.org/lnmpln.html</Documentation>
+               <Description>Flight plan remarks</Description>
+             </Header>
+             <SimData>MSFS</SimData>
+             <NavData Cycle="2008">NAVIGRAPH</NavData>
+             <AircraftPerformance>
+               <FilePath>Normal Climb and Descent all Equal.lnmperf</FilePath>
+               <Type>MODEL</Type>
+               <Name>Normal Climb and Descent</Name>
+             </AircraftPerformance>
+             <Departure>
+               <Pos Lon="-120.538055" Lat="46.569828" Alt="1069.00"/>
+               <Start>PARKING 1</Start>
+             </Departure>
+             <Procedures>
+               <SID>
+                 <Name>WENAS7</Name>
+                 <Runway>09</Runway>
+                 <Transition>PERTT</Transition>
+               </SID>
+               <STAR>
+                 <Name>PIGLU4</Name>
+                 <Runway>16</Runway>
+                 <Transition>YDC</Transition>
+               </STAR>
+               <Approach>
+                 <Name>TATVI</Name>
+                 <ARINC>I16-Z</ARINC>
+                 <Runway>16</Runway>
+                 <Type>ILS</Type>
+                 <Suffix>Z</Suffix>
+                 <Transition>HUMEK</Transition>
+                 <TransitionType>F</TransitionType>
+               </Approach>
+             </Procedures>
+             <Alternates>
+               <Alternate>
+                 <Name>Penticton</Name>
+                 <Ident>CYYF</Ident>
+                 <Type>AIRPORT</Type>
+                 <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/>
+               </Alternate>
+               <Alternate>
+                 <Name>Grand Forks</Name>
+                 <Ident>CZGF</Ident>
+                 <Type>AIRPORT</Type>
+                 <Pos Lon="-118.430496" Lat="49.015633" Alt="1393.00"/>
+               </Alternate>
+             </Alternates>
+             <Waypoints>
+               <Waypoint>
+                 <Name>Yakima Air Terminal/Mcallister</Name>
+                 <Ident>KYKM</Ident>
+                 <Type>AIRPORT</Type>
+                 <Pos Lon="-120.543999" Lat="46.568199" Alt="1069.00"/>
+               </Waypoint>
+               <Waypoint>
+                 <Name>User defined point</Name>
+                 <Ident>USERPT</Ident>
+                 <Region>K1</Region>
+                 <Type>USER</Type>
+                 <Pos Lon="-120.848000" Lat="47.676601" Alt="24960.89"/>
+                 <Description>User waypoint remarks</Description>
+               </Waypoint>
+               <Waypoint>
+                 <Ident>DIABO</Ident>
+                 <Region>K1</Region>
+                 <Type>WAYPOINT</Type>
+                 <Pos Lon="-120.937080" Lat="48.833759" Alt="30000.00"/>
+               </Waypoint>
+               <Waypoint>
+                 <Ident>IWACK</Ident>
+                 <Region>K1</Region>
+                 <Airway>J503</Airway>
+                 <Type>WAYPOINT</Type>
+                 <Pos Lon="-120.837067" Lat="48.932140" Alt="30000.00"/>
+                 <Description>Waypoint remarks</Description>
+               </Waypoint>
+               <Waypoint>
+                 <Ident>CFKNF</Ident>
+                 <Region>K1</Region>
+                 <Airway>J503</Airway>
+                 <Type>WAYPOINT</Type>
+                 <Pos Lon="-120.767761" Lat="49.000000" Alt="30000.00"/>
+               </Waypoint>
+               <Waypoint>
+                 <Name>Kelowna</Name>
+                 <Ident>CYLW</Ident>
+                 <Type>AIRPORT</Type>
+                 <Pos Lon="-119.377998" Lat="49.957199" Alt="1461.00"/>
+               </Waypoint>
+             </Waypoints>
+           </Flightplan>
+         </LittleNavmap>
+
+
+.. _aircraft-performance-file-format:
+
+Format für Flugzeugleistungsdateien
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LNMPERF-Dateien sind Dateien mit Flugzeugleistungsdaten im Format von *Little Navmap*. Sie sind im XML-Textformat und können nur von *Little Navmap* gelesen werden.
+
+Siehe `XML (Wikipedia) <https://en.wikipedia.org/wiki/XML>`__ für weitere Informationen
+über diese Art von Konfigurationsdateien.
+
+Das XML-Schema für die Validierung finden Sie hier: `lnmperf.xsd <https://www.littlenavmap.org/schema/lnmperf.xsd>`__.
+
+Die Reihenfolge der Elemente spielt keine Rolle. Fehlende Elemente werden als Warnung protokolliert, ausgenommen optionale Elemente.
+
+.. code-block:: xml
+        :caption: Aircraft Performance File Example
+        :name: performance-example
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmperf.xsd">
+          <AircraftPerf>
+            <Header>
+              <CreationDate>2020-11-16T22:43:35</CreationDate>
+              <FileVersion>1.0</FileVersion>
+              <ProgramName>Little Navmap</ProgramName>
+              <ProgramVersion>2.6.4.beta</ProgramVersion>
+              <Documentation>https://www.littlenavmap.org/lnmperf.html</Documentation>
+            </Header>
+            <Options>
+              <Name>Epic E1000 G1000 Edition</Name>
+              <AircraftType>EPIC</AircraftType>
+              <Description>Climb: 80% torque, 1600 RPM, 160 KIAS, max ITT 760°
+        Cruise: FL260-FL280, 1400 RPM, adjust torque to 55 GPH fuel flow, max ITT 760°
+        Descent: Idle, 250 KIAS
+
+        https://www.littlenavmap.org</Description>
+              <FuelAsVolume>0</FuelAsVolume>
+              <JetFuel>1</JetFuel>
+            </Options>
+            <Perf>
+              <ContingencyFuelPercent>5.0</ContingencyFuelPercent>
+              <ExtraFuelLbsGal>0.000</ExtraFuelLbsGal>
+              <MinRunwayLengthFt>1600.000</MinRunwayLengthFt>
+              <ReserveFuelLbsGal>500.000</ReserveFuelLbsGal>
+              <RunwayType>SOFT</RunwayType>
+              <TaxiFuelLbsGal>20.000</TaxiFuelLbsGal>
+              <UsableFuelLbsGal>1900.000</UsableFuelLbsGal>
+              <Alternate>
+                <FuelFlowLbsGalPerHour>361.000</FuelFlowLbsGalPerHour>
+                <SpeedKtsTAS>302.000</SpeedKtsTAS>
+              </Alternate>
+              <Climb>
+                <FuelFlowLbsGalPerHour>464.807</FuelFlowLbsGalPerHour>
+                <SpeedKtsTAS>185.220</SpeedKtsTAS>
+                <VertSpeedFtPerMin>2479.589</VertSpeedFtPerMin>
+              </Climb>
+              <Cruise>
+                <FuelFlowLbsGalPerHour>361.000</FuelFlowLbsGalPerHour>
+                <SpeedKtsTAS>302.000</SpeedKtsTAS>
+              </Cruise>
+              <Descent>
+                <FuelFlowLbsGalPerHour>222.000</FuelFlowLbsGalPerHour>
+                <SpeedKtsTAS>201.000</SpeedKtsTAS>
+                <VertSpeedFtPerMin>2000.000</VertSpeedFtPerMin>
+              </Descent>
+            </Perf>
+          </AircraftPerf>
+        </LittleNavmap>
+
+Veraltete Formate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Diese Formate werden von *Little Navmap* ab der Version 2.6 nicht mehr verwendet, können aber weiterhin geladen und exportiert werden.
+
+Kommentiertes Flugplandateiformat (veraltet)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Little Navmap* verwendet das Flugplanformat
 FSX/P3D `XML <https://en.wikipedia.org/wiki/XML>`__. Der XML-Standard
@@ -191,12 +395,9 @@ Prozedurinformationen, die es dem Programm ermöglichen, SIDs, STARs,
 Anflüge und Übergänge beim Laden von Flugplänen fehlertolerant
 wiederherzustellen.
 
-Verwenden Sie :ref:`export-clean-flight-plan` |Export as Clean PLN|, wenn
-ein Programm die kommentierten Dateien nicht lesen kann.
-
 .. code-block:: xml
    :caption: Flightplan Example snippet
-   :name: flightplan-example
+   :name: flightplan-example-obsolete
 
    <?xml version="1.0" encoding="UTF-8"?>
    <SimBase.Document Type="AceXML" version="1,0">
@@ -238,8 +439,8 @@ ein Programm die kommentierten Dateien nicht lesen kann.
 
 .. _aircraft-performance-file:
 
-Flugzeugleistungsdateiformat
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Format für Flugzeugleistungsdateien (veraltetes INI format)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Die ``lnmperf`` Dateien sind einfache Textdateien und verwenden den
 Windows- ``INI`` Stil, der Gruppen in eckigen Klammern und Schlüssel/Wert-Paare
@@ -262,7 +463,7 @@ Unbekannte Schlüssel werden beim Speichern nicht ersetzt.
 
 .. code-block:: ini
      :caption: Dateibeispiel für Flugzeugleistung
-     :name: performance-example
+     :name: performance-example-obsolete
 
      [Options]
      AircraftType=B732

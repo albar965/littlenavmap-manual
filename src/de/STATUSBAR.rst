@@ -4,11 +4,14 @@ Statusleiste
 Die Statusleiste am unteren Rand des Hauptfensters zeigt verschiedene
 Anzeigen (von links nach rechts) an:
 
--  Letzte Aktion oder Kurzhilfe zur Erläuterung eines Menüpunktes oder
-   einer Schaltfläche in der Symbolleiste.
--  Verbindungsstatus für eine lokale oder Remote-Verbindung. Der Tooltip
-   enthält weitere Details über den Status, wie z.B. den Hostnamen für
-   Remote-Verbindungen.
+
+-  Meldungen, letzte Aktion oder Schnellhilfe, die einen Menüpunkt oder eine Schaltfläche in der Symbolleiste erklärt.
+   Bei Inaktivität zeigt das Feld die Anzahl der Meldungen an, falls vorhanden. Meldungen betreffen Hintergrundaufgaben wie Wetteraktualisierungen oder den Verbindungsstatus des Simulators.
+   Die Meldungen werden im Tooltip angezeigt, wenn Sie in das Feld klicken oder mit der Maus darüber fahren.
+   Es werden maximal zehn Meldungen angezeigt.
+-  Verbindungsstatus für eine lokale oder Netzwerkverbindung. Der Tooltip
+   enthält weitere Details über den Status, wie z.B. den Computernamen für
+   Netzwerkverbindungen und den Verbindungsstatus von Onlineverbindungen.
 
    -  ``Connecting ...``: Das Programm versucht, eine Verbindung
       herzustellen, die entweder manuell oder automatisch hergestellt
@@ -25,34 +28,29 @@ Anzeigen (von links nach rechts) an:
       aufgrund eines zu hohen Detaillierungsgrades zu viele Objekte auf
       der Karte angezeigt werden. Die Kartendarstellung wird in diesem
       Fall unvollständig sein.
-   -  Eine rote ``Database empty`` Meldung wird angezeigt, wenn die
+   -  Eine rote ``Datenbank ist leer`` Meldung wird angezeigt, wenn die
       aktuell ausgewählte Datenbank keinen Inhalt hat und geladen werden
-      muss.
+      muss. Siehe :doc:`SCENERY` für weitere Informationen, wie man die Szeneriebibliothek für einen Simulator lädt.
 
--  Detaillierungsgrad der Karte. Der Bereich ist -5 für kleinste Details
+-  Detailgrad der Karte. Der Bereich ist -5 für kleinste Details
    bis +5 für größte Details.
--  Online-Karten-Download-Fortschrittsanzeige. Hier wird der Status des
+-  Fortschrittsanzeige für den Download von online Karten. Hier wird der Status des
    aktuellen Kartendownloads angezeigt. Dem Text ist eine rote
-   Markierung ``Offline.`` vorangestellt, wenn der Offline-Modus
+   Markierung ``Offline`` vorangestellt, wenn der Offline-Modus
    aktiviert ist.
 
-   -  ``Done.``: Alle Kartendaten wurden erfolgreich geladen.
-   -  ``Waiting for Data ...``: Kartendaten fehlen im Cache und wurden
+   -  ``Fertig``: Alle Kartendaten wurden erfolgreich geladen.
+   -  ``Warte``: Kartendaten fehlen im Cache und wurden
       angefordert. Auf die Antwort wird gewartet.
-   -  ``Waiting for Update ...``: Die Kartendaten sind bereits geladen,
-      aber nach zwei Wochen abgelaufen. Warten auf neue Daten nach
+   -  ``Aktualisiere``: Die Kartendaten sind bereits geladen,
+      aber nach zwei Wochen abgelaufen. Warte auf neue Daten nach
       Anforderung einer Aktualisierung.
-   -  ``Incomplete.``: Der Download ist fehlgeschlagen. Beachten Sie,
-      dass die Fortschrittsanzeige so aussehen kann, als wäre sie in der
-      Nachricht ``Waiting for Data ...`` stecken geblieben,wenn für eine
-      *OpenStreetMap* Region keine Bergschattierung verfügbar ist oder
-      wenn Sie bei Verwendung bestimmter Online-Karten zu nah
-      heranzoomen.
+   -  ``Unvollständig``: Der Download ist fehlgeschlagen.
 
--  Zoom-Distanz (Blickdistanz zur Erdoberfläche) in nautischen Meilen
+-  Zoom-Distanz (Blickdistanz zur Erdoberfläche) in NM
    oder Kilometern.
 -  Position des Mauszeigers auf der Karte als Breiten- und Längengrad in
-   Abhängigkeit von der gewählten Einheit im Dialog ``Options``.
+   Abhängigkeit von der gewählten Einheit im Dialog ``Einstellungen`` auf der Seite :ref:`units`.
 
    -  Bodenerhebung unter dem Mauszeiger nach einer kurzen Verzögerung, wenn
       die `GLOBE <https://ngdc.noaa.gov/mgg/topo/globe.html>`__
@@ -67,12 +65,8 @@ Anzeigen (von links nach rechts) an:
 
 .. figure:: ../images/statusbar.jpg
 
-          Meldung in der Statusleiste über die letzte Aktion auf
-          der linken Seite (``Optionen geändert.``), den Verbindungsstatus
-          ``Trennung`` und einen Tooltip, der anzeigt, was gerade auf der Karte
-          angezeigt wird. Die Kartendetailstufe ist unverändert und die
-          Kartenkoordinaten an der Mauszeigerposition werden unten rechts angezeigt.
-          Die Höhe am Mauszeiger wird ebenfalls angezeigt, da Offline-Höhendaten
-          installiert sind. Die Fortschrittsanzeige für den Online-Kartendownload
-          zeigt ``Done`` an, dass alle Kartenkacheln heruntergeladen wurden. Die
-          Zoom-Entfernung beträgt 14,7 nautische Meilen.
+         Statusleiste mit Meldungen im Tooltip über die letzten Wetteraktualisierungen, den Verbindungsstatus ``Connecting (FSX/P3D/MSFS)`` und einem Tooltip,
+         der anzeigt, was gerade auf der Karte angezeigt wird.
+         Die Detailstufe der Karte ist unverändert und die Kartenkoordinaten an der Mauszeigerposition werden unten rechts angezeigt.
+         Die Höhe am Mauszeiger wird nicht angezeigt, da die Offline-Höhendaten nicht installiert sind. Die Fortschrittsanzeige für den
+         Online-Kartendownload zeigt ``Fertig`` an, was bedeutet, dass alle Kartenkacheln heruntergeladen wurden. Die Zoom-Distanz beträgt 1,8 NM.

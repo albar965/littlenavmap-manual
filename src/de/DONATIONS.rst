@@ -1,8 +1,7 @@
 Spenden
 ---------
 
-**Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen meine
-Programme gefallen.**
+**Spenden Sie, um Ihre Wertschätzung zu zeigen, wenn Ihnen** *Little Navmap* **gefällt.**
 
 |Donate|
 

@@ -60,7 +60,7 @@ Obere Leiste:
 -  ``Reload Map``: Laden Sie die Karte manuell neu.
 -  ``User Aircraft``: Zentriert das Benutzerflugzeug auf der Karte.
 -  ``Flight Plan``: Zentriert den Flugplan auf der Karte.
--  ``Show Airport``: Springt zu dem Flugplatz, dessen ICAO-Ident im
+-  ``Show Airport``: Springt zu dem Flugplatz, dessen Kennung im
    Eingabefeld links von dieser Schaltfläche angegeben ist. Drücken Sie
    die Taste ``Return`` oder diese Schaltfläche, um zum Flugplatz zu gelangen.
 

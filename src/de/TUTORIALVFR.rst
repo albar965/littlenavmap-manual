@@ -7,7 +7,7 @@ Allgemeines
 In diesem Tutorial wird erklärt, wie Sie anhand der Karte und des
 Kontextmenüs einen einfachen Flugplan erstellen können.
 
-Der Flugplan ist im Verzeichnis *Little Navmap* enhalten:
+Der Flugplan ist im Installationsverzeichnis *Little Navmap* enhalten:
 ``.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) nach Challes-les-Eaux (LFLE).pln``.
 
 Die Flugplatznamen können je nach Simulator unterschiedlich sein.
@@ -28,7 +28,7 @@ Flug vorbereiten
 ~~~~~~~~~~~~~~~~
 
 Ich würde empfehlen, vor jedem Flug ``Flug`` ->
-``Alles für einen neuen Flug zurücksetzen`` |Reset all for a new
+:ref:`reset-for-new-flight` |Reset all for a new
 Flight| zu verwenden, um eine saubere Basis für Treibstoffberechnung und
 andere Funktionen zu erhalten. Deaktivieren Sie im Dialog die Option
 ``Neuen leeren Flugplan erstellen``, wenn der Plan bereits geladen
@@ -44,7 +44,7 @@ Daher werden wir einfach den Standard verwenden, der einen Steig- und
 Sinkwinkel von drei Grad sowie eine Reisegeschwindigkeit von 100
 Knoten angibt.
 
-Wählen Sie ``Flugzeug`` -> ``Neue Flugzeugleistung erstellen...`` |New Aircraft
+Wählen Sie ``Flugzeug`` -> :ref:`aircraft-menu-new` |New Aircraft
 Performance ...|. Übernehmen Sie die Standardwerte, indem Sie im
 Dialogfeld auf ``OK`` drücken. Im Treibstoffbericht werden mehrere
 Warnungen angezeigt. Ignorieren Sie diese vorerst, da die
@@ -60,7 +60,7 @@ die französischen Alpen. Sie können die folgenden Funktionen zum Navigieren ve
 -  Das Kartenoverlay auf der rechten Seite.
 -  Die Maus (klicken und ziehen) zum Bewegen und das Mausrad zum Zoomen.
 -  Die Pfeiltasten zum Bewegen und die Tasten ``+`` und ``-`` zum
-   Vergrößern und Verkleinern (klicken Sie in das Kartenfenster, um es
+   Vergrößern und Verkleinern (klicken Sie in das Kartenfenster oder drücken Sie ``F2``, um es
    vor der Verwendung der Tasten zu aktivieren).
 
 Verwenden Sie die Zurück- |Back| und Vortasten |Forward|, um in den
@@ -80,8 +80,10 @@ Dann:
 -  Klicken Sie mit der rechten Maustaste auf die Mitte eines der grünen
    Parkplätze (in diesem Fall 11).
 -  Wählen Sie im KontextMenü
-   ``Flugplatz Meythet (LFLP) / Parking 11 als Startflugplatz setzen``
-   |Select Airport / Parking as Flight Plan Departure|.
+   ``Setze Parkposition Parking 11 auf Flugplatz Meythet (LFLP) als Start``
+   |Select Airport / Parking as Flight Plan Departure| (:ref:`set-as-flight-plan-departure`) aus.
+
+Das Layout des Flugplatzes und des Parkplatzes wird je nach verwendetem Simulator unterschiedlich sein.
 
 |Meythet (LFLP) Parking|
 
@@ -98,16 +100,16 @@ Routen Wegpunkte
 Fügen Sie jetzt die Wegpunkte hinzu:
 
 -  Scrollen Sie entlang des Tales im Südosten über den See Lac d'Annecy
--  Klicken Sie auf ``Position an den Flugplan anhängen`` |Append Position to
+-  Klicken Sie auf :ref:`append-position-to-flight-plan` |Append Position to
    Flight Plan|. Die angeklickte Position wird am Ende Ihres Plans als
    benutzerdefinierter Wegpunkt hinzugefügt
 
-Klicken Sie auf Rückgängig |Undo| oder Wiederholen |Redo|, wenn Sie mit dem gerade
+Klicken Sie auf Rückgängig |Undo| oder Wiederholen |Redo| in der Werkzeugleiste, wenn Sie mit dem gerade
 Hinzugefügten nicht einverstanden sind.
 
 |Append Waypoint|
 
-Eine weitere Funktion ist ``Position zum Flugplan hinzufügen`` |Add
+Eine weitere Funktion ist :ref:`add-position-to-flight-plan` |Add
 Position to Flight Plan| welche die angeklickte Position in den nächsten
 Flugplanabschnitt einfügt. Damit kann man in der Mitte eines Flugplans
 benutzerdefinierte Positionen, Flugplätze oder Navigationshilfen
@@ -118,15 +120,10 @@ zum Einfügen ausgewählt.
 Namen zu. Sie können diese belassen oder mit einem aussagekräftigeren
 Namen ersetzen.
 
-Klicken Sie mit der rechten Maustaste auf den Benutzer-Wegpunkt und
-wählen Sie ``Flugplan Position bearbeiten WP1`` |Edit Flight Plan
-Position|, um einen Wegpunktnamen oder dessen Koordinaten zu ändern.
-Benutzen Sie nahegelegene Dörfer, Berge, Seen oder andere
-Sehenswürdigkeiten. Ändern Sie die Koordinaten jetzt nicht.
+Wegpunkte mit dem Standardformat ``WP`` plus Nummer (z.B. ``WP1`` oder ``WP99``) werden automatisch neu numeriert, um die Flugreihenfolge im Flugplan wiederzugeben.
 
-Der Flugsimulator begrenzt den Namen auf eine bestimmte Länge und auf
-bestimmte Zeichen. Eingaben werden verhindert, wenn der Name zu lang
-ist oder wenn falsche Zeichen eingeben werden.
+
+Klicken Sie mit der rechten Maustaste auf den Benutzerwegpunkt und wählen Sie ``Flugplanposition bearbeiten WP1`` |Edit Flight Plan Position| (:ref:`edit-name-of-user-waypoint`), um eine Wegpunktkennung, einen Namen, Bemerkungen oder seine Koordinaten zu ändern. Verwenden Sie Namen nahegelegener Orte, Berge, Seen oder anderer interessanter Orte. Ändern Sie jetzt nicht die Koordinaten.
 
 |Edit Waypoint Name|
 
@@ -139,7 +136,7 @@ Zielflugplatz
 So fügt man einen Zielflugplatz hinzu:
 
 -  Mit der rechten Maustaste auf ``Challes-les-Eaux (LFLE)`` klicken.
--  Wähle ``Challes-les-Eaux (LFLE) als Zielflugplatz setzen`` als Zielflugplatz |Set Airport as Flight Plan Destination|.
+-  Wählen Sie ``Set Airport Challes-les-Eaux (LFLE) as Destination`` |Set Airport as Flight Plan Destination| (:ref:`set-as-flight-plan-destination`).
 
 |Select Destination|
 
@@ -150,7 +147,7 @@ anders aussehen
 
 Sie können mit der Drag und Drop-Funktion auch Punkte verschieben oder
 neue hinzufügen. Aktivieren Sie es, indem Sie ``Flugplan`` ->
-``Flugplan auf der Karte bearbeiten`` |Edit Flight Plan on Map| wählen
+``Flugplan auf der Karte bearbeiten`` |Edit Flight Plan on Map|  (see :doc:`MAPFPEDIT`)  wählen
 und klicken Sie auf einen Flugplan-Wegpunkt, um ihn zu verschieben.
 Klicken Sie auf einen Flugplanabschnitt, um diesem Zweig einen neuen
 Wegpunkt hinzuzufügen
@@ -208,9 +205,20 @@ Luftraumdaten andere Lufträume finden können.
 
 |Airspaces|
 
-Speichern Sie den Plan mit ``Datei`` -> ``Flugplan speichern`` |Flugplan
-speichern|. Das Programm findet in der Regel das richtige Verzeichnis
-für die Flugpläne und gibt standardmäßig einen sinnvollen Namen an.
+Speichern
+~~~~~~~~~~~~~~
+
+Speichern Sie den Plan im *Little Navmap* Format LNMPLN mit ``Datei`` -> :ref:`save-flight-plan` |Save Flight Plan|.
+Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne und vergibt standardmäßig einen sinnvollen Namen.
+
+Das Format LNMPLN wird nur von *Little Navmap* verstanden. Sie können diese Dateien nicht in ein anderes Programm laden. Daher müssen wir den Flugplan exportieren.
+
+Öffnen Sie nun den Multiexport-Optionen-Dialog, indem Sie ``Datei`` -> :ref:`multiexport-flight-plan-options` wählen.
+
+Klicken Sie mit der rechten Maustaste auf das Simulatorformat, das Sie exportieren möchten und wählen Sie :ref:`multiexport-export-now` |Export Flight Plan now|.
+Speichern Sie die Datei an der richtigen Stelle. Der voreingestellte Pfad basiert auf der besten Schätzung.
+
+Siehe hier :ref:`multiexport-quick-setup` für Informationen, wie Sie den Multiexport schnell konfigurieren können.
 
 Fliegen
 ~~~~~~~
@@ -218,20 +226,21 @@ Fliegen
 Führen Sie die folgenden Schritte durch, um ihr Flugzeug in *Little Navmap* zu sehen:
 
 -  Öffnen Sie den Dialog ``Verbinden`` über ``Werkzeuge`` ->
-   ``Flugsimulatorverbindung`` |Flight Simulator Connection| und prüfen
+   :ref:`flight-simulator-connection` |Flight Simulator Connection| und prüfen
    Sie, ob ``Automatisch verbinden`` ausgewählt ist. Aktivieren Sie es,
    wenn nicht. *Little Navmap* findet den Simulator, unabhängig davon,
    ob er bereits gestartet ist oder später gestartet wird.
+-  Klicken Sie auf den Reiter, der Ihrem Simulator entspricht.
+   Das Bild unten zeigt den Reiter für FSX, P3D oder MSFS auf der linken Seite und den Reiter für X-Plane auf der rechten Seite.
 
-|Connect Dialog|
-
+   |Connect Dialog|
 -  Klicken Sie auf ``Verbinden``, um das Dialogfeld zu schließen.
 -  Aktivieren Sie ``Karte`` -> ``Flugzeug zentrieren`` |Center Aircraft|. Das Simulatorflugzeug wird auf der Karte zentriert und bleibt zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator befindet sich nicht im Eröffnungsbildschirm.
 -  Starten Sie den Simulator, falls noch nicht geschehen, laden Sie den Flugplan und fliegen Sie.
 
 Siehe auch :doc:`CONNECT`.
 
-Während des Fliegens Orte anschauen
+Während des Fliegens umschauen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* hält Ihr Flugzeug und den nächsten Flugplan-Wegpunkt als
@@ -245,8 +254,7 @@ Navigationshilfe zoomt (Doppelklick, Symbolleistenschalter oder Link im
 Informationsfenster) oder wenn Sie einfach nur in der Karte rollen oder zoomen.
 
 Doppelklicken Sie auf den Zielflugplatz, um z.B. zum Flugplatzdiagramm
-zu gelangen. Wenn Sie fertig sind, klicken Sie auf die Zurück-Taste
-|Back|, bis Sie wieder an Ihrem Flugzeug sind.
+zu gelangen. Beendende Sie die Interaktionen mit der Karte und das Programm springt nach der eingestellten Zeit zum Flugzeug und zum nächsten Flugplanwegpunkt zurück.
 
 .. |Reset all for a new Flight| image:: ../images/icon_reload.png
 .. |New Aircraft Performance ...| image:: ../images/icon_aircraftperfnew.png
@@ -254,7 +262,7 @@ zu gelangen. Wenn Sie fertig sind, klicken Sie auf die Zurück-Taste
 .. |Forward| image:: ../images/icon_next.png
 .. |Meythet (LFLP)| image:: ../images/tutorial_vfrmap.jpg
 .. |Meythet (LFLP) Tooltip| image:: ../images/tutorial_vfrmapclose.jpg
-.. |Select Airport / Parking as Flight Plan Departure| image:: ../images/icon_airportroutestart.png
+.. |Select Airport / Parking as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
 .. |Meythet (LFLP) Parking| image:: ../images/tutorial_vfrmapparking.jpg
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Undo| image:: ../images/icon_undo.png
@@ -263,7 +271,7 @@ zu gelangen. Wenn Sie fertig sind, klicken Sie auf die Zurück-Taste
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
 .. |Edit Waypoint Name| image:: ../images/tutorial_vfreditname.jpg
-.. |Set Airport as Flight Plan Destination| image:: ../images/icon_airportroutedest.png
+.. |Set Airport as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
 .. |Select Destination| image:: ../images/tutorial_vfrdest.jpg
 .. |VFR Flight Plan| image:: ../images/tutorial_vfrflightplan.jpg
 .. |Edit Flight Plan on Map| image:: ../images/icon_routeedit.png
@@ -271,8 +279,9 @@ zu gelangen. Wenn Sie fertig sind, klicken Sie auf die Zurück-Taste
 .. |Adjust Flight Plan Altitude| image:: ../images/icon_routeadjustalt.png
 .. |Elevation Profile| image:: ../images/tutorial_vfrprofile.jpg
 .. |Airspaces| image:: ../images/tutorial_vfrairspace.jpg
-.. |Flugplan speichern| image:: ../images/icon_filesave.png
+.. |Save Flight Plan| image:: ../images/icon_filesave.png
 .. |Flight Simulator Connection| image:: ../images/icon_network.png
-.. |Connect Dialog| image:: ../images/tutorial_vfrconnect.jpg
+.. |Connect Dialog| image:: ../images/connectlocal.jpg
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
 
+.. |Export Flight Plan now| image:: ../images/icon_filesaveas.png

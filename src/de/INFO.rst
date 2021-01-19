@@ -19,7 +19,7 @@ Beachten Sie, dass der
 formatierte Inhalt der Zwischenablage entfernt wird, wenn *Little
 Navmap* beendet wird.
 
-Kurs und Entfernung (konstanter Kursverlauf der Loxodrome) zum
+Kurs und Entfernung zum
 Benutzerflugzeug werden für Flugplätze, Navigationshilfen und Nutzerpunkte
 angezeigt, wenn Sie mit einem Simulator verbunden sind und die
 Entfernung unter 500 NM liegt.
@@ -39,7 +39,7 @@ Nutzerpunkt werden angezeigt, wenn Sie einen der Kontextmenüeinträge
 oder in der Suchergebnistabelle auswählen.
 
 Für einen Linksklick in der Karte werden
-alle Tabs für den Flughafen, alle Navigationshilfen, alle Benutzerpunkte oder alle Lufträume, die sich in der Nähe des Mauszeigers befinden gefüllt.
+alle Tabs für den Flugplatz, alle Navigationshilfen, alle Benutzerpunkte oder alle Lufträume, die sich in der Nähe des Mauszeigers befinden gefüllt.
 
 *Little Navmap* zeigt Reiter, die auf Prioritäten und
 ausgewählten Objekten basieren, und versucht, das Wechseln der Reiter zu
@@ -57,6 +57,8 @@ Nutzerpunkt an der gleichen Position klicken:
    wenn er nicht sichtbar ist. Nutzerpunkte werden aktiviert, da
    Benutzerfunktionen wie Kartenhervorhebungen, Logbucheinträge oder
    Nutzerpunkte Vorrang vor Flugplätzen, Navigationshilfen und anderen haben.
+
+Verwenden Sie das Kartenkontextmenü für eine einfachere Auswahl von Kartenobjekten über die Untermenüs.
 
 .. _links:
 
@@ -80,8 +82,7 @@ Szenerie-Informationen
 
 Alle Informationen über Flugplätze und Navigationshilfen beinhalten einen oder
 mehrere Verweise am Ende der Objektinformationen im Abschnitt ``Szenerie``.
-Diese Links verweisen auf die passenden ``BGL`` (FSX, P3D) oder ``dat``
-(X-Plane) Dateien, die Informationen über den Flugplatz oder die Navigationshilfe
+Diese Links verweisen auf die passenden BGL- (FSX, P3D und MSFS) oder dat-Dateien (X-Plane), die Informationen über den Flugplatz oder die Navigationshilfe
 enthalten. Klicken Sie auf die Links, um das enthaltene Verzeichnis in
 Ihrem Dateimanager (z.B. Windows Explorer oder Apple Finder) zu öffnen. Wenn möglich, wird
 die passende Datei automatisch ausgewählt.
@@ -90,16 +91,29 @@ Für Flugplätze können mehrere Links angezeigt werden, da diese durch
 mehrere Dateien aus verschiedenen Add-on-Szenerien oder
 Navigationsdaten aktualisiert werden können.
 
+.. note::
+
+    Die Verweise werden als reiner Text mit einer zusätzlichen Bemerkung wie ``Datei nicht gefunden`` angezeigt, wenn die Datei oder der Ordner fehlt.
+    Dies kann passieren, wenn Sie Datenbanken zwischen Computern kopieren und hat keine weiteren Folgen.
+
+
 |Tabs in Information Dock Window| Reiter im Dockfenster Informationen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _airport:
 
-Reiter Flugplatz, Runways, Com, Prozeduren, Nächste und Wetter
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Flugplatz
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Diese sechs Reiter zeigen Informationen zu einem ausgewählten
-Flugplatz an.
+Ein Reiter, die mehrere Unterreiter für Flugplatzinformationen hat.
+
+Die sechs Reiter ``Übersicht``, ``Runways``, ``Com``, ``Prozeduren``, ``Nächste`` und ``Wetter`` unterhalb
+der Reiter ``Flugplatz`` zeigen Informationen für einen ausgewählten Platz.
+
+.. _airport-general:
+
+Übersicht
+''''''''''''''''''''''''''''''''''''
 
 Sonnenauf- und -untergang für den Flugplatz werden, wenn kein Simulator
 angeschlossen ist, nach dem aktuellen wirklichen Datum berechnet. Andernfalls
@@ -107,7 +121,18 @@ wird das Datum des Simulators verwendet. Dies wird durch den Text
 ``(zivile Dämmerung, Reale Zeit)`` oder
 ``(zivile Dämmerung, Simulatorzeit)`` angezeigt.
 
-Reiter Flugplatz - Links
+Bevorzugte Landebahnen werden in Abhängigkeit vom Wind aufgrund des METAR angezeigt. Mehr
+Details zu bevorzugten Start- und Landebahnen finden Sie auf dem Reiter :ref:`airport-weather`.
+
+Zusätzliche Links für Helikopterlandeplätze sind im Reiter ``Runways`` verfügbar.
+
+Der Reiter ``Nächste`` zeigt Flugplätze mit Anflugprozeduren und nächstgelegene Navigationshilfen
+relativ zu dem ausgewählten Platz.
+
+
+.. _airport-links:
+
+Links
 '''''''''''''''''''''''''''''''
 
 Die Links zu verschiedenen Online-Diensten, wie
@@ -115,7 +140,9 @@ Die Links zu verschiedenen Online-Diensten, wie
 `The X-Plane Scenery Gateway <https://gateway.x-plane.com/>`__, öffnen den Browser mit
 Informationen für den Flugplatz.
 
-Flugplatz Reiter - Dateien
+.. _airport-files:
+
+Dateien
 '''''''''''''''''''''''''''''
 
 *Little Navmap* zeigt zusätzliche Links zu lokalen Dateien an, wenn Sie
@@ -152,30 +179,7 @@ wenn Sie die Sprache der Benutzeroberfläche auf Englisch einstellen.
 den englischen Pfad verwenden, wie z.B.: ``...\Little Navmap Files\Airports\LFEC``
 und ``...\Little Navmap Dateien\Flugplätze\LFEC``.
 
-.. figure:: ../images/infolinks.jpg
-
-        Flugplatzinformationen mit Verweisen zu Websites im
-        Abschnitt ``Links`` und Verweisen zu Benutzerdateien im Abschnitt
-        ``Dateien``.
-
-Flugplatz - Weitere Reiter
-''''''''''''''''''''''''''''''
-
-Bevorzugte Start- und Landebahnen in Abhängigkeit vom Wind werden nach
-dem METAR angezeigt. Weitere Details zu den bevorzugten Start- und
-Landebahnen finden Sie auf dem Reiter ``Wetter``.
-
-Der Reiter ``Wetter`` zeigt dekodierte Wetterinformationen für
-einen ausgewählten Flugplatz. Das Flugregelsymbol (:ref:`airport-weather-legend`)
-hat ein Suffix ``- Karte``, wenn
-die angezeigte Wetterquelle die Quelle für Flugplatzwettersymbole auf
-der Karte ist. Außerdem werden detaillierte Informationen zu den besten
-Runways je nach Windverhältnissen angezeigt.
-
-Zusätzliche Verweise für Hubschrauberlandeplätze finden Sie im Reiter ``Runways``.
-
-Der Reiter ``Nächste`` zeigt die nächsten Flugplätze mit Prozeduren und
-Navigationshilfen in Relation zum ausgewählten Flugplatz.
+Die Verweise werden im Reiter ``Übersicht`` angezeigt.
 
 .. figure:: ../images/infoairport.jpg
 
@@ -187,6 +191,19 @@ Navigationshilfen in Relation zum ausgewählten Flugplatz.
           Die Windrichtung bevorzugt die Runways 09 und 14.
 
 .. _navaids:
+
+.. _airport-weather-tab:
+
+Reiter Wetter
+'''''''''''''''''''
+
+Der Reiter ``Wetter`` zeigt dekodierte Wetterinformationen für
+einen ausgewählten Flugplatz. Das Flugregelsymbol (:ref:`airport-weather-legend`)
+hat ein Suffix ``- Karte``, wenn
+die angezeigte Wetterquelle die Quelle für Flugplatzwettersymbole auf
+der Karte ist. Außerdem werden detaillierte Informationen zu den besten
+Runways je nach Windverhältnissen angezeigt.
+
 
 Reiter Navigationshilfen
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -221,7 +238,8 @@ entfernen.
      und einer Liste von Wegpunkten. Ein Klick auf den Verweis ``Karte`` hebt die gesamte
      Luftstraße auf der Karte hervor.
 
-.. _airspaces:
+
+.. _airspaces-tab:
 
 Reiter Lufträume
 ^^^^^^^^^^^^^^^^^^
@@ -298,7 +316,7 @@ Das sind:
 -  Kraftstoff und Zeit werden geschätzt, da der Flugplan ungültig ist.
 -  Kraftstoff und Zeit werden geschätzt, da die Flugzeugleistung nicht gültig ist.
 -  Zu wenig Kraftstoff am Bestimmungsort (nur bei gültiger Flugzeugleistung).
--  Geschwindigkeitsbegrenzung von 250 Knoten unter 10000 Fuß überschritten.
+-  Geschwindigkeitsbegrenzung von 250 Knoten unter 10.000 Fuß überschritten.
 -  Vereisung.
 
 Treibstoff- und Zeitschätzungen basieren auf der Grundlage
@@ -313,6 +331,11 @@ und Sinkphasen werden in dieser Berechnung berücksichtigt.
 Die Ankunftszeit wird ebenfalls durch die aktuelle Zeit, die
 Vorhersage der Flugzeugleistung unter Berücksichtigung von Wind,
 Steigflug und Abstiegsphasen berechnet.
+
+Gegenwind wird durch einen Pfeil nach unten ``▼`` und Rückenwind durch einen Pfeil nach oben ``▲`` angezeigt.
+
+Einige Zeilen wie ``Eis`` werden ausgeblendet, wenn die Bedingung nicht erfüllt ist.
+
 
 .. note::
 
@@ -336,7 +359,7 @@ Informationen über KI- oder Mehrspielerflugzeuge bzw. -schiffe aus dem Simulato
 Reiter angezeigt, wenn ein Fahrzeug auf der Karte angeklickt
 wird.
 
-Dazu gehören auch die Abflug- und Zielflugplätze des Flugzeuges, die durch
+Dazu gehören auch die Start- und Zielflugplätze des Flugzeuges, die durch
 Anklicken der blauen Links auf der Karte angezeigt werden können (nur
 für FSX oder P3D und wenn ein Flugplan hinterlegt ist).
 

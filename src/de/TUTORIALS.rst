@@ -11,12 +11,15 @@ Alle Funktionen werden über den Namen im Hauptmenü mit ``Menüname`` ->
 dass Sie die Schaltflächen auf einer der Symbolleisten finden.
 Bildschirmfotos bieten weitere Hilfe.
 
-Beachten Sie, dass sich die Flugplanentfernungen, verfügbaren Prozeduren
-und Flugplatznamen zwischen den Simulatoren und den verwendeten
-Zyklen der Navigationsdaten unterscheiden können.
-
-Bildschirmfotos wurden unter Linux und Windows erstellt. Daher kann das
+Bildschirmfotos wurden unter den englischen Versionen Linux und Windows erstellt. Daher kann das
 Aussehen abweichen.
+
+.. note::
+
+      Beachten Sie, dass sich die Flugplanentfernungen, verfügbaren Prozeduren
+      und Flugplatznamen zwischen den Simulatoren und den verwendeten
+      Navigationsdaten unterscheiden können.
+
 
 Schnellstart
 ~~~~~~~~~~~~

@@ -19,7 +19,7 @@ Geschwindigkeitszahlen wird auf dem Reiter ``Aktuelle Flugzeugleistung``
 angezeigt. Zwischenergebnisse können Sie jederzeit in Ihr
 aktuell geladenes Leistungsprofil kopieren oder zusammenführen.
 
-*Little Navmap* zeigt 3 nautische Meilen pro 1000 Fuß Steigung und Gefälle,
+*Little Navmap* zeigt 3 NM pro 1.000 Fuß Steigung und Gefälle,
 wenn Sie Daten basierend auf einem Standard- oder neuen Höhenprofil
 sammeln. Sie müssen den benötigten Abstieg selbst einschätzen.
 

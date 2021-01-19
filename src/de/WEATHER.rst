@@ -169,7 +169,7 @@ Windschicht oder an Flugplan-Wegpunkten anzeigen. Tooltips an den
 Windsymbolen zeigen Details für mehrere Ebenen an der Position.
 
 Wenn Sie mit der Maus über das Höhenprofil fahren, wird der Wind an der
-Flugplanposition angezeigt. Siehe :ref:`top-label`.
+Flugplanposition angezeigt. Siehe :ref:`tooltip-label`.
 
 HöhenWinde werden zur Berechnung der Flugzeit, des Reisetreibstoffs,
 des Steigflugendes und des Sinkflugbeginns verwendet.
@@ -182,20 +182,20 @@ eine Erklärung der Windsymbole und unter :ref:`weather` weitere Konfigurationsm
 
 Die Winddatenquelle kann man für die Anzeige mit :ref:`wind-source` auswählen.
 
-.. _wind-level:
+.. _wind-levels-button:
 
 |Wind Levels Button| Schaltfläche Windebenen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wie das Menü :ref:`wind-levels`.
+Wie das Menü :ref:`wind-levels-menu`.
 
 Die Menüschaltfläche aktiviert oder deaktiviert die Anzeige der Windhöhe
 durch ein Windsymbolraster auf verschiedenen Ebenen sowie an Flugplan-Wegpunkten.
 
-Das Dropdown-Menü enthält die folgenden Elemente:
+Die Menüschaltfläche enthält die folgenden Elemente:
 
 -  ``An Flugplan-Wegpunkten``: Schaltet Windsymbole mit gelber Umrandung an
-   Flugplan-Wegpunkten ein und aus. Windsymbole unter 4000 Fuß über dem
+   Flugplan-Wegpunkten ein und aus. Windsymbole unter 4.000 Fuß über dem
    mittleren Meeresspiegel werden nicht dargestellt. Diese Funktion ist unabhängig von
    der Auswahl unten.
 -  ``Keine``: Zeigt das Windfahnengitter nicht an. Die Winddaten
@@ -226,7 +226,7 @@ wenn sie für die Anzeige ausgewählt wird.
 .. figure:: ../images/wind.jpg
 
       Mit Tooltip bei Windpunkten im Gitter und
-      Wind-Dropdownmenü.
+      Wind-Menüschaltfläche.
 
 .. figure:: ../images/wind_route.jpg
 

@@ -2,7 +2,7 @@ Kartenlegende
 -------------
 
 Standardmäßig werden alle Geschwindigkeiten in Knoten, Entfernungen in
-nautischen Meilen und Höhen in Fuß angegeben. Die Einheiten können im
+NM und Höhen in Fuß angegeben. Die Einheiten können im
 Dialog ``Einstellungen`` auf der Seite ``Einheiten`` auf
 imperial oder metrisch eingestellt werden.
 
@@ -43,10 +43,6 @@ entfernen.
 |                                   | Distanzkreisen oder               |
 |                                   | Reichweitenringen für Funkfeuer.  |
 +-----------------------------------+-----------------------------------+
-| ``Strg+Klick``                    | Startet eine Messung mit          |
-|                                   | Loxodrome oder löscht eine        |
-|                                   | Messung.                          |
-+-----------------------------------+-----------------------------------+
 | ``Alt+Klick``                     | Startet eine Messung mit          |
 |                                   | Großkreis oder löscht eine        |
 |                                   | Messung.                          |
@@ -70,6 +66,8 @@ entfernen.
 +-----------------------------------+-----------------------------------+
 | ``Umsch+Mausrad``                 | Karte in kleinen Schritten        |
 |                                   | vergrößern oder verkleinern.      |
++-----------------------------------+-----------------------------------+
+| ``Ctrl+Mausrad``                  | Kartendetails ändern.             |
 +-----------------------------------+-----------------------------------+
 
 .. _key-commands:
@@ -132,13 +130,7 @@ Hervorhebungen und Nutzerobjekte
 |                                   | werden. ``°M`` und                |
 |                                   | ``°T`` zeigen                     |
 |                                   | den magnetischen bzw. wahren Kurs |
-|                                   | an. ``R`` und ``GC``              |
-|                                   | bezeichnen Rhumb-Linie            |
-|                                   | (Loxodrome) oder                  |
-|                                   | Großkreislinie. Suffixe werden    |
-|                                   | ausgeblendet, wenn nur ein        |
-|                                   | Typ ausgewählt ist (Loxodrome     |
-|                                   | oder Großkreis)                   |
+|                                   | an. `                             |
 +-----------------------------------+-----------------------------------+
 | |Flight Plan Procedure|           | Flugplanprozedur mit den          |
 |                                   | gleichen Informationen wie oben.  |
@@ -158,21 +150,30 @@ Hervorhebungen und Nutzerobjekte
 +-----------------------------------+-----------------------------------+
 | |Top of Climb|                    | Steigflugende mit Abstand         |
 |                                   | vom Abflug.                       |
+|                                   | Kann im Menü ``Ansicht``          |
+|                                   | -> :ref:`show-toc-and-tod`        |
+|                                   | ausgeschaltet werden.             |
 +-----------------------------------+-----------------------------------+
 | |Top of Descent|                  | Sinkflugbeginn mit                |
 |                                   | Entfernung zum Ziel.              |
+|                                   | Kann im Menü ``Ansicht``          |
+|                                   | -> :ref:`show-toc-and-tod`        |
+|                                   | ausgeschaltet werden.             |
 +-----------------------------------+-----------------------------------+
 | |Range|                           | Distanzkreise, die mit dem        |
 |                                   | Abstand gekennzeichnet sind.      |
+|                                   | Die Anzahl und Distanz der Kreise |
+|                                   | kann in den Einstellungen auf der |
+|                                   | Seite :ref:`map` geändert werden. |
 +-----------------------------------+-----------------------------------+
 | |Range VOR| |Range NDB|           | VOR- oder NDB-Distanzkreise       |
 |                                   | mit Kennzeichnung der Kennung     |
 |                                   | und Frequenz. Die Farbe zeigt den |
 |                                   | Typ der Navigationshilfen an.     |
 +-----------------------------------+-----------------------------------+
-| |Distance GC|                     | `Great                            |
-|                                   | circle <https://en.wikipedia.org/ |
-|                                   | wiki/Great-circle_distance>`__    |
+| |Distance|                        | `Großkreis <https://              |
+|                                   | de.wikipedia.org/wiki/            |
+|                                   | Gro%C3%9Fkreis>`__                |
 |                                   | Entfernungs- und Kursmesslinie    |
 |                                   | mit Angabe der Länge und des      |
 |                                   | wahren Kurses am Start und Ziel.  |
@@ -181,17 +182,14 @@ Hervorhebungen und Nutzerobjekte
 |                                   | gleich. Für kürzere Strecken wird |
 |                                   | die Länge auch in Fuß oder Meter  |
 |                                   | angegeben.                        |
-+-----------------------------------+-----------------------------------+
-| |Distance Rhumb|                  | `Rhumb-Linie <https://en.wikipedi |
-|                                   | a.org/wiki/Rhumb_line>`__ bzw.    |
-|                                   | Loxodrome, die                    |
-|                                   | Distanz und wahren Kurs anzeigt.  |
-|                                   | Rhumb-Linien werden verwendet, um |
-|                                   | sich einem VOR oder NDB zu nähern |
-|                                   | oder entlang der Luftstraßen zu   |
-|                                   | fliegen. Für kürzere Strecken     |
-|                                   | wird die Länge auch in Fuß        |
-|                                   | angegeben.                        |
+|                                   | Die Breite der Messlinien kann im |
+|                                   | Dialog ``Einstellungen`` auf der  |
+|                                   | Seite :ref:`map-display-2`        |
+|                                   | geändert werden.                  |
+|                                   | Die Beschriftungen können in der  |
+|                                   | Baumansicht auf der rechten Seite |
+|                                   | der gleichen Seite geändert       |
+|                                   | werden.                           |
 +-----------------------------------+-----------------------------------+
 | |Distance VOR|                    | Entfernungsmessungen, die von     |
 |                                   | einen Flugplatz oder Funkfeuer    |
@@ -230,14 +228,32 @@ Hervorhebungen und Nutzerobjekte
 |                                   | der Maus über das Höhenprofil     |
 |                                   | fahren.                           |
 +-----------------------------------+-----------------------------------+
-| |Logbook Entry|                   | Flugplätze und Großkreislinie     |
-|                                   | zwischen Abflug und Ziel für      |
+
+Logbuch Vorschau
+~~~~~~~~~~~~~~~~~~~
+
+Für ausgewählte Logbucheinträge wird die direkte Verbindung zwischen Start und Ziel sowie Flugplanvorschau und geflogener Pfad angezeigt. Alle oben genannten Optionen können im Kontextmenü der Logbuchsuche deaktiviert werden.
+
++-----------------------------------+-----------------------------------+
+| |Logbook Entry|                   | Flughäfen und Großkreisweg        |
+|                                   | zwischen Start und Ziel für       |
 |                                   | einen in der Suchergebnistabelle  |
-|                                   | ausgewählten Logbucheintrag. Die  |
-|                                   | Beschriftung zeigt Abflug, Ziel   |
-|                                   | und                               |
-|                                   | Großkreisabstand zwischen den     |
-|                                   | Flugplätze.                       |
+|                                   | ausgewählten Logbucheintrag.      |
+|                                   | Die Beschriftung zeigt Start,     |
+|                                   | Ziel                              |
+|                                   | und Großkreisentfernung zwischen  |
+|                                   | Flughäfen.                        |
++-----------------------------------+-----------------------------------+
+| |Logbook Entry Flight Plan|       | Flugplanvorschau, wie im          |
+|                                   | Logbucheintrag gespeichert.       |
+|                                   | Wegpunktnamen und Flugrichtung    |
+|                                   | sind durch Pfeile angegeben.      |
+|                                   | Beachten Sie, dass komplexe       |
+|                                   | Prozeduren nicht sichtbar sind.   |
++-----------------------------------+-----------------------------------+
+| |Logbook Entry Trail|             | Geflogene Benutzerflugzeugpfad,   |
+|                                   | die mit dem Logbucheintrag        |
+|                                   | gespeichert ist.                  |
 +-----------------------------------+-----------------------------------+
 
 .. _compass-rose:
@@ -248,7 +264,7 @@ Kompassrose
 Die Linienstärke kann im Dialog ``Einstellungen`` auf der
 :ref:`map-display-2` geändert werden.
 
-Die Farben für den Flugplanverlauf und den Schiebewinkel hängen von den
+Die Farben für den Flugplanverlauf und die Richtung hängen von den
 Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 ``Einstellungen`` auf der :ref:`map` geändert werden können.
 
@@ -279,7 +295,7 @@ Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 |                                   | wenn kein Flugplan                |
 |                                   | geladen ist.                      |
 +-----------------------------------+-----------------------------------+
-| |Heading|                         | Schiebewinkel. Zeigt die Richtung |
+| |Heading|                         | Zeigt die Richtung                |
 |                                   | an, die unter Berücksichtigung    |
 |                                   | des Seitenwindes zum nächsten     |
 |                                   | Wegpunkt des aktiven              |
@@ -312,12 +328,12 @@ Flugzeuge und Schiffe
 | Ground| |Helicopter on Ground|    |                                   |
 | |Ship on Ground|                  |                                   |
 +-----------------------------------+-----------------------------------+
-| |Aircraft Track Needle|           | Nadel, die die aktuelle Bodenspur |
+| |Aircraft Track Needle|           | Nadel, die die aktuelle Bodenpfad |
 |                                   | des Flugzeugs anzeigt. Die        |
 |                                   | Flugzeugnase zeigt Kurs.          |
 +-----------------------------------+-----------------------------------+
-| |Trail|                           | Benutzerflugzeugpfad, wenn er mit |
-|                                   | dem Flugsimulator verbunden ist.  |
+| |Trail|                           | Benutzerflugzeugpfad, wenn mit    |
+|                                   | dem Flugsimulator verbunden.      |
 +-----------------------------------+-----------------------------------+
 | |Wind|                            | Wind in der Umgebung des          |
 |                                   | Benutzerflugzeugs mit Richtung in |
@@ -392,6 +408,18 @@ benutzen, um Landebahnen zu zeichnen.
 | |Airport with Fuel| |Airport with | Flugplätze die Treibstoff         |
 | soft Runways and Fuel|            | anbieten.                         |
 +-----------------------------------+-----------------------------------+
+| |Add-on Airport|                  |                                   |
+|                                   | Zusatzflughäfen werden immer      |
+|                                   | hervorgehoben, unabhängig davon,  |
+|                                   | ob ref:`force-show-addon-airports`|
+|                                   | eingeschaltet ist oder nicht.     |
+|                                   | Sie können dies im                |
+|                                   | Einstellungsdialog                |
+|                                   | auf Seite: ref: `map-display`     |
+|                                   | deaktivieren, indem Sie           |
+|                                   | ``Add-on Flugplätze hervorheben`` |
+|                                   | deaktivieren.                     |
++-----------------------------------+-----------------------------------+
 | |Airport Weather|                 | Wetter am Flugplatz. Siehe        |
 |                                   | Kapitel                           |
 |                                   | :ref:`airport-weather-legend`     |
@@ -422,6 +450,8 @@ Navigationshilfen
 Navigationshilfen, die Teil eines Flugplanes sind, werden hellgelb
 hervorgehoben.
 
+Auf höheren Zoomleveln werden Objekte nur als kleine Farbige Symbole dargestellt.
+
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
 +===================================+===================================+
@@ -450,7 +480,7 @@ hervorgehoben.
 |                                   | niedrigen Zoomstufen.             |
 +-----------------------------------+-----------------------------------+
 | |NDB Small| |NDB Large|           | NDB-Station mit Kennung, Typ (HH, |
-|                                   | H, MH or CL - Compass Locator)    |
+|                                   | H, MH oder CL - Compass Locator)  |
 |                                   | und Frequenz.                     |
 +-----------------------------------+-----------------------------------+
 | |Waypoint|                        | Wegpunkt mit Namen.               |
@@ -473,6 +503,17 @@ hervorgehoben.
 | |Victor Airway|                   | Victor-Luftstraße mit Namen, Typ  |
 |                                   | (Victor oder Both) und            |
 |                                   | Höhenrestriktion.                 |
++-----------------------------------+-----------------------------------+
+| |Track East|                      |                                   |
+|                                   | PACOTS Track in östlicher Richtung|
+|                                   | mit Flugrichtung, Name ``2`` und  |
+|                                   | Typ.                              |
+|                                   | Tracks ohne Ost / West-Richtung   |
+|                                   | werden in grauer Farbe angezeigt. |
++-----------------------------------+-----------------------------------+
+| |Track West|                      | PACOTS Track in westlicher        |
+|                                   | Richtung mit Flugrichtung,        |
+|                                   | Name ``H`` und Typ.               |
 +-----------------------------------+-----------------------------------+
 | |ILS|                             | ILS mit Gleitpfad und             |
 |                                   | Markierungen.                     |
@@ -551,7 +592,7 @@ Informationen über alle Abschnitte.
 |                                   | ILS-Gleitpfad. Kann ``auf`` oder  |
 |                                   | ``auf oder höher`` anzeigen.      |
 +-----------------------------------+-----------------------------------+
-| |Procedure Manual|                | Fliegen Sie einen Kurs, eine Spur |
+| |Procedure Manual|                | Fliegen Sie einen Kurs            |
 |                                   | oder eine Warteschleife, bis er   |
 |                                   | manuell von ATC beendet wird.     |
 +-----------------------------------+-----------------------------------+
@@ -688,8 +729,8 @@ wie der Sichtbarkeit von Flugplanlinie, Flugzeug und Flugzeugpfad.
 +-----------------------------------+-----------------------------------+
 | |Profile Safe Alt|                | Minimale sichere Höhe für den     |
 |                                   | Flugplan. Dies ist die Bodenhöhe  |
-|                                   | plus 1000 Fuß, aufgerundet auf    |
-|                                   | die nächsten 500 Fuß. Der 1000    |
+|                                   | plus 1.000 Fuß, aufgerundet auf   |
+|                                   | die nächsten 500 Fuß. Der 1.000   |
 |                                   | Fuß Puffer kann im Dialog         |
 |                                   | ``Einstellungen`` auf der         |
 |                                   | Seite :ref:`flight-plan`          |
@@ -811,21 +852,21 @@ MORA-Gitter
 
 Das minimale Off-Route-Höhenraster stellt eine Hindernisfreigabe
 innerhalb eines Ein-Grad-Rasters dar. Die Höhe übergeht jegliches
-Gelände und Hindernisse um 1000 Fuß in Gebieten, in denen die höchsten
-Lagen 5000 Fuß oder niedriger sind. Wo die Höhen über 5000 Fuß liegen,
-wird das Gelände um 2000 Fuß übergangen.
+Gelände und Hindernisse um 1.000 Fuß in Gebieten, in denen die höchsten
+Lagen 5.000 Fuß oder niedriger sind. Wo die Höhen über 5.000 Fuß liegen,
+wird das Gelände um 2.000 Fuß übergangen.
 
 Textgröße und Transparenz können im Einstellungsdialog auf der Seite
 :ref:`map-display-2` eingestellt werden.
 
-+-----------------------------------+-----------------------------------+
-| Symbol                            | Beschreibung                      |
-+===================================+===================================+
-| |MORA Grid|                       | MORA-Gitter. Die große Zahl ist   |
-|                                   | 1000 Fuß und kleine Zahl 100 Fuß. |
-|                                   | Beispiel hier: 3300, 4400, 6000,  |
-|                                   | 9900 und 10500 Fuß.               |
-+-----------------------------------+-----------------------------------+
++-----------------------------------+------------------------------------+
+| Symbol                            | Beschreibung                       |
++===================================+====================================+
+| |MORA Grid|                       | MORA-Gitter. Die große Zahl ist    |
+|                                   | 1.000 Fuß und kleine Zahl 100 Fuß. |
+|                                   | Beispiel hier: 3.300, 4.400, 6.000,|
+|                                   | 9.900 und 10.500 Fuß.              |
++-----------------------------------+------------------------------------+
 
 .. _airport-weather-legend:
 
@@ -845,11 +886,11 @@ Flugregeln
 | |MVFR|                            | MVFR. Marginale VFR. Sicht gleich |
 |                                   | oder kleiner als 5 Meilen oder    |
 |                                   | niedrigste Wolkendecke gleich     |
-|                                   | oder kleiner als 3000 Fuß.        |
+|                                   | oder kleiner als 3.000 Fuß.       |
 +-----------------------------------+-----------------------------------+
 | |IFR|                             | IFR. Instrumentenflugregeln.      |
 |                                   | Sichtweite unter 3 Meilen oder    |
-|                                   | niedrigste Wolkendecke unter 1000 |
+|                                   | niedrigste Wolkendecke unter 1.000|
 |                                   | Fuß.                              |
 +-----------------------------------+-----------------------------------+
 | |LIFR|                            | LIFR. Limitierte IFR. Sichtweite  |
@@ -957,8 +998,7 @@ Symbol                 Beschreibung
 .. |Heading| image:: ../images/legend_compass_rose_crab.png
 .. |DME| image:: ../images/legend_dme.png
 .. |Distance Circles| image:: ../images/legend_compass_rose_dist.png
-.. |Distance GC| image:: ../images/legend_distance_gc.png
-.. |Distance Rhumb| image:: ../images/legend_distance_rhumb.png
+.. |Distance| image:: ../images/legend_distance_gc.png
 .. |Distance VOR| image:: ../images/legend_distance_vor.png
 .. |Downwind| image:: ../images/legend_pattern_downwind.png
 .. |Elevation Profile Position| image:: ../images/legend_route_profile_mark.png
@@ -986,7 +1026,6 @@ Symbol                 Beschreibung
 .. |ILS| image:: ../images/legend_ils_gs.png
 .. |ILS Profile| image:: ../images/legend_profile_ils.png
 .. |Inbound to Fix| image:: ../images/legend_holdinbound.png
-.. |Jet Airway| image:: ../images/legend_airway_jet.png
 .. |Jet on Ground| image:: ../images/icon_aircraft_jet_ground_user.png
 .. |Jet| image:: ../images/icon_aircraft_jet.png
 .. |Jet Ground| image:: ../images/icon_aircraft_jet_ground.png
@@ -996,6 +1035,8 @@ Symbol                 Beschreibung
 .. |Large Airport Tower| image:: ../images/legend_airport_tower_8000.png
 .. |Localizer| image:: ../images/legend_ils_large.png
 .. |Logbook Entry| image:: ../images/legend_logbook_entry.png
+.. |Logbook Entry Flight Plan| image:: ../images/legend_logbook_route.png
+.. |Logbook Entry Trail| image:: ../images/legend_logbook_trail.png
 .. |MORA Grid| image:: ../images/legend_map_mora.png
 .. |MVFR| image:: ../images/legend_weather_mvfr.png
 .. |Magnetic North| image:: ../images/legend_compass_rose_mag_north.png
@@ -1081,11 +1122,15 @@ Symbol                 Beschreibung
 .. |VOR Large| image:: ../images/legend_vor_large.png
 .. |VOR Small| image:: ../images/legend_vor_small.png
 .. |Vectors| image:: ../images/legend_procvectors.png
-.. |Victor Airway| image:: ../images/legend_airway_victor.png
 .. |Waypoint| image:: ../images/legend_waypoint.png
 .. |Waypoint Invalid| image:: ../images/legend_waypoint_invalid.png
 .. |Wind Barb| image:: ../images/legend_route_wind.png
 .. |Wind below 5 Knots| image:: ../images/legend_wind_low.png
 .. |Wind| image:: ../images/legend_windpointer.png
 .. |outbound from Fix| image:: ../images/legend_holdoutbound.png
+.. |Add-on Airport| image:: ../images/legend_addon.png
 
+.. |Jet Airway| image:: ../images/legend_airway_jet.png
+.. |Victor Airway| image:: ../images/legend_airway_victor.png
+.. |Track East| image:: ../images/legend_track_east.png
+.. |Track West| image:: ../images/legend_track_west.png

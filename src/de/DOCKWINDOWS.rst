@@ -23,9 +23,19 @@ Beachten Sie, dass sich die Dockfenster automatisch öffnen, wenn Sie
 Funktionen wie ``Informationen anzeigen`` oder z.B. das Benutzerflugzeug
 in der Karte anklicken.
 
-Halten Sie beim Anklicken der Fenstertitelzeile ``Strg`` gedrückt, um zu
-verhindern, dass ein Fenster in den angedockten Zustand in das Hauptfenster
-zurückkehrt und im schwebenden Zustand bleibt.
+Sie können Dockfensteranordnungen im Menü ``Fenster`` speichern und laden. Siehe auch: doc:`LAYOUT`
+für Details.
+
+Weitere Einstellungen im Zusammenhang mit Dockfenstern, wie die automatische Aktivierung beim
+Überfahren mit der Maus finden Sie in den Einstellungen auf der Seite ref:`user-interface`.
+
+.. tip::
+
+    Halten Sie ``Strg`` gedrückt, während Sie auf die Titelleiste des Fensters klicken, um zu verhindern,
+    dass ein Fenster in das Hauptfensters einrastet.
+
+    Sie können auch ``Fenster`` -> :ref:`allow-window-docking` im Hauptmenü abwählen, um zu verhindern, daß die schwebenden
+    Fenster nicht mehr in das Hauptfenster einrasten.
 
 Symbolleisten sind auch durch Klicken auf den linken Griff verschiebbar
 und können ähnlich wie die Dockfenster geschlossen oder vom Hauptfenster
@@ -39,9 +49,7 @@ geöffnet und geschlossen werden.
 
 .. note::
 
-      Verwenden Sie das Menü ``Fenster``  im Hauptmenü, um
-      geschlossene Fenster, Symbolleisten und Reiter
-      wiederherzustellen.
+   Verwenden Sie das Menü ``Fenster`` im Hauptmenü, um Fensteranordnungen zu speichern, zu laden oder wiederherzustellen.
 
 .. note::
 

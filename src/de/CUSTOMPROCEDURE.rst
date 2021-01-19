@@ -20,11 +20,9 @@ Nutzerdefinierte Anflüge sind Teil eines Flugplans im Gegensatz zu
 Diese Art der Anflugmethode kann wie andere Prozeduren durch Löschen
 eines Abschnittes in der Flugplantabelle entfernt werden.
 
-Der Anflug wird wie andere Anflüge in der
-PLN-Flugplandatei (Standardformat) vermerkt und gespeichert. Benutzerdefinierte
-Wegpunkte werden für den anfänglichen initialen Anflugpunkt und Landebahnpunkt
-verwendet, wenn ein Nutzeranflug in andere Flugplanformate
-als PLN exportiert wird.
+Der Anflug wird wie andere Anflüge in der Flugplandatei LNMPLN gespeichert.
+Beim Exportieren eines benutzerdefinierten Anflugs in andere Flugplanformate als LNMPLN
+werden benutzerdefinierte Wegpunkte für den Startpunkt und die Landebahnschwelle verwendet.
 
 Wegpunkte
 ~~~~~~~~~
@@ -55,10 +53,10 @@ Flugplans ist.
    Magnetkopf, Oberfläche und Beleuchtungszustand an.
 -  ``Anflugdistanz zur Runwayschwelle``: Abstand
    vom initialen Anflugpunkt bis zur Landebahn. Der
-   Standardwert ist 3 nautische Meilen.
+   Standardwert ist 3 NM.
 -  ``Anflughöhe über der Runway``: Höhe des
    initialen Anflugpunktes über der Landebahn. Der Standard
-   ist 1000 Fuß.
+   ist 1.000 Fuß.
 -  ``Gleitpfadwinkel``: Zeigt den aus der gegebenen Entfernung und Höhe
    berechneten Neigungswinkel an. Die Standardwerte für Distanz und Höhe
    ergeben ein Gefälle von 3,1 Grad.

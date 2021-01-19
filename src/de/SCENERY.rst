@@ -3,7 +3,7 @@
 
 Dieser Dialog ermöglicht das Laden der Szeneriebibliothek von allen
 vier unterstützten Flugsimulatoren in die interne Datenbank *Little
-Navmap*. Die zu ladende Szenerienbibliothek kann im Dropdown-Menü
+Navmap*. Die zu ladende Szenerienbibliothek kann in der Schaltfläche
 ``Simulator:`` ausgewählt werden.
 
 Der Dialog zeigt Informationen über die aktuell ausgewählte Datenbank
@@ -16,6 +16,9 @@ angezeigt. Diese Felder werden automatisch ausgefüllt, können aber an
 jedem anderen gültigen Ort geändert werden. Alle Werte werden für jeden
 Flugsimulatortyp einzeln gespeichert.
 
+**Microsoft Flight Simulator 2020:** Der Basispfad der MSFS Installation and die Verzeichnisse
+``Community`` und ``Official`` werden automatisch erkannt und können bei Bedarf geändert werden.
+
 **Nur X-Plane:** Der Basispfad der ersten X-Plane Installation wird
 hinzugefügt. Wählen Sie den Basispfad manuell aus, wenn Sie die
 Szenerie-Bibliothek einer anderen X-Plane-Installation lesen möchten.
@@ -23,23 +26,35 @@ Unter Windows kann das ein Pfad wie ``C:\Simulators\X-Plane 11`` sein,
 die ausführbare Datei ist ``C:\Simulators\X-Plane 11\X-Plane.exe``.
 
 Das Laden einer Szenerienbibliothek kann je nach Einrichtung und Anzahl
-der Szenerien-Add-ons zwischen 2 und 15 Minuten dauern. Sie können dies
+der Szenerien-Add-ons zwischen 2 und 10 Minuten dauern. Sie können dies
 beschleunigen, indem Sie Verzeichnisse, die weder Flugplatz- noch
 Navigationsdaten enthalten, im Dialogfeld ``Einstellungen`` auf der
-Seite ``Szeneriebibliothek`` ausschließen.
+Seite :ref:`scenery-library-database` ausschließen.
 
-Für den FSX/P3D gelten alle Flugplätze, die sich nicht im
-Standardverzeichnis ``Scenery`` des FSX/P3D befinden, als zusätzliche
-Flugplätze. Für X-Plane gelten alle Flugplätze, die sich im Verzeichnis
+Für **FSX und P3D** gelten alle Flugplätze, die sich nicht im
+Standardverzeichnis ``Scenery`` des FSX/P3D befinden, als Add-on Flugplätze.
+
+Für **X-Plane** gelten alle Flugplätze, die sich im Verzeichnis
 ``Custom Scenery`` von X-Plane befinden, als Add-On-Flugplätze.
-Add-On-Flugplätze werden auf der Karte durch hervorgehobenen Text
+Add-On Flugplätze werden auf der Karte durch hervorgehobenen Text
 hervorgehoben.
+
+**Microsoft Flight Simulator 2020**: Alle Flugplätze, die sich im ``Community``
+Verzeichnis und dem ``Official\OneStore`` oder ``Official\Steam`` befinden, werden als Add-On Flugplätze betrachtet.
+Ausnahmen sind ``fs-base`` und ``fs-base-nav``.
+
+Add-on Flugplätze werden auf der Karte mit einem gelben Ring hervorgehoben, der in den Optionen auf der Seite :ref:`map-display` deaktiviert werden kann.
+
+Mit hervorgehobenem (fett und unterstrichen) Text werden Add-on Flugplätze in der Suchergebnistabelle hervorgehoben,
+Flugplantabelle, den Informationsfenstern und den Karten-Tooltips hervorgehoben.
+
+
 
 Wenn ein Add-on nur Flugplatzhöhen oder Navigationsdaten korrigiert,
 kann es unerwünscht sein, die aktualisierten Flugplätze als zusätzliche
 Flugplätze auf der Karte anzuzeigen. Sie können Verzeichnisse, die mit
 diesem Add-on belegt sind, von der Add-on-Erkennung im Dialogfeld
-``Einstellungen`` auf dem Reiter ``Szeneriebibliothek``
+``Einstellungen`` auf der Seite :ref:`scenery-library-database`
 ausschließen.
 
 Weitere Informationen zum Ausschließen von Szenerie finden Sie unter
@@ -54,12 +69,14 @@ Simulatorauswahl im Dialog synchronisiert. Nach erfolgreichem Laden
 einer Datenbank wechseln Anzeige, Flugplan und Suche sofort zu den neu
 geladenen Simulatordaten.
 
-Beachten Sie, dass die endgültige Anzahl der Flugplätze, Navigationshilfen und
-anderer Objekte, die im Dialogfeld ``Szeneriebibliothek laden``
-angezeigt werden, niedriger ist als die im Fortschrittsdialog
-angezeigten Werte, da nach dem Laden der Daten ein separater Prozess
-Duplikate entfernt und Flugplätze löscht, die durch Add-ons ersetzt
-wurden.
+.. note::
+
+      Beachten Sie, dass die endgültige Anzahl der Flugplätze, Navigationshilfen und
+      anderer Objekte, die im Dialogfeld ``Szeneriebibliothek laden``
+      angezeigt werden, niedriger ist als die im Fortschrittsdialog
+      angezeigten Werte, da nach dem Laden der Daten ein separater Prozess
+      Duplikate entfernt und Flugplätze löscht, die durch Add-ons ersetzt
+      wurden.
 
 **Nur FSX oder P3D:** Das Programm versucht, die Basispfade und
 ``Scenery.cfg`` Dateien automatisch zu finden. Die typischen
@@ -96,6 +113,25 @@ ein Neuladen empfohlen, aber nicht erforderlich ist.
       Schließen Sie *Little Navmap*, wenn Sie Ihre Datenbanken manuell oder
       mit anderen Programmen aktualisieren, kopieren oder ersetzen. Little
       Navmap könnte abstürzen oder falsche Daten anzeigen.
+
+.. _load-scenery-library-dialog-msfs-apt-navdata:
+
+Microsoft Flight Simulator 2020 Flughäfen und Navdata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* hat die folgenden Einschränkungen aufgrund von MSFS BGL-Beschränkungen:
+
+- *Little Navmap* kann keine SID und STAR aus MSFS lesen. Dies ist für zukünftige Versionen geplant.
+- MSFS scheint kein klares Konzept für die Reihenfolge der Szenerien zu haben (``Content.xml`` ist unzuverlässig).
+  Add-ons werden von *Little Navmap* in alphabetischer Reihenfolge geladen.
+  Um ein Add-on an das Ende der Ladeliste zu setzen, stellen Sie dem Ordnernamen ein ``z_`` voran,
+  zum Beispiel.
+- Ländernamen fehlen in den MSFS-Übersetzungstabellen und sind in *Little Navmap* nicht verfügbar.
+- Add-ons, die das verschlüsselte Format `.fsarchive` verwenden, werden nicht unterstützt. *Little Navmap* zeigt nur den Standardflugplatz anstelle des Add-ons.
+- Einige Flugplatzdateien wie ``LEMG.bgl`` können wegen des unbekannten Formats nicht gelesen werden. *Little Navmap* meldet
+  ``Fehler: readInt für Datei "...OMITTED.../LEMG.bgl" ist fehlgeschlagen. Grund 1``.
+  Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite :ref:`scenery-library-database` vom Lesen aus oder ignorieren Sie einfach
+  ignorieren Sie die Meldung. Der Standard LEMG und alle anderen Flughäfen sind hiervon nicht betroffen.
 
 .. _load-scenery-library-dialog-xp-apt-navdata:
 
@@ -134,7 +170,7 @@ X-Plane Verzeichnis ``Custom Data`` gelesen.
 
 .. _load-scenery-library-p3d-fsx-airspaces:
 
-3D und FSX Lufträume vorbereiten
+FSX, Prepar3D und MSFS Lufträume
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Little Navmap liest alle Lufträume aus der Szeneriebibliothek
@@ -334,8 +370,8 @@ gespeichert.
 Siehe Kapitel `Flugplan - Magnetische Missweisung <FLIGHTPLAN.html#magnetische%20Deklination>`__ für
 Informationen, wie sich dies auf die Flugpläne auswirkt.
 
-FSX und Prepar3D
-^^^^^^^^^^^^^^^^
+FSX, Prepar3D und Microsoft Flight Simulator 2020
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Die magnetische Missweisung (oder Variation), die zur Berechnung des
 magnetischen Kurses verwendet wird, wird aus der Datei ``magdec.bgl`` in

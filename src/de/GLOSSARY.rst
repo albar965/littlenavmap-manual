@@ -45,7 +45,7 @@ DAT
     Navigationshilfen- und Prozedurinformationen zu speichern.
 
 DME
-    Eine Radio-Navigationshilfe zur Entfernungsmessung.
+    Eine Funknavigationshilfe zur Entfernungsmessung.
 
 FACF
     Endanflugkurspunkt. Ein Punkt, der auf den Endanflugverlauf einer
@@ -56,7 +56,7 @@ FAF
     Instrumentenanflug beginnt.
 
 Fix
-    Dieser Begriff bezieht sich auf einen Wegpunkt, Radio-Navigationshilfe
+    Dieser Begriff bezieht sich auf einen Wegpunkt, Funknavigationshilfe
     oder einen berechneten Punkt auf einer Prozedur. Wird in dieser Anleitung Punkt genannt.
 
 Flugplanposition
@@ -74,6 +74,9 @@ FS9
 
 FSX
     Flugsimulator X oder Flugsimulator - Steam Edition.
+
+ft
+    Feet. 0.3048 Meter.
 
 Funkfeuer
     VOR, VORTAC, TACAN oder NDB.
@@ -106,14 +109,20 @@ MAP
     Fehlanflugpunkt. Der Punkt auf der Endanflugstrecke, der den
     Endpunkt der Endanflugstrecke und den Beginn des Fehlanfluges darstellt.
 
+MSFS
+    Microsoft Flight Simulator 2020.
+
 Navigationshilfe
     VOR, VORTAC, TACAN, NDB oder Wegpunkt bzw. Kreuzung.
 
 NDB
     Ungerichtetes Funkfeuer - Radio-Navigationshilfe.
 
+NM
+    Nautische Meile. 1.852 km.
+
 P3D
-    Prepar3D v2 bis v4.
+    Prepar3D v2 bis v5.
 
 Parkposition
     GA-Rampe, Laderampe, Treibstoffkasten oder Flugsteig.
@@ -159,18 +168,18 @@ Szeneriedatenbank
     Suche und Kartendarstellung.
 
 TACAN
-    Taktisches Flugsicherungssystem - Radio-Navigationshilfe, das von
+    Taktisches Flugsicherungssystem - Funknavigationshilfe, das von
     Militärflugzeugen verwendet wird.
 
 UTC
     Universal coordinated time. Auch: Greenwich-Zeit oder Zulu-Zeit.
 
 VOR
-    UKW Rundum-Richtfunkreichfeuer - Radio-Navigationshilfe.
+    UKW Rundum-Richtfunkreichfeuer - Funknavigationshilfe.
 
 VORDME
     UKW Rundum-Richtfunkfeuer mit Entfernungsmessgeräten -
-    Radio-Navigationshilfe.
+    Funknavigationshilfe.
 
 VORTAC
     Ko-positionierte UKW-Rundumfunkfeuer (VOR) und TACAN-Funkfeuer (TACAN).

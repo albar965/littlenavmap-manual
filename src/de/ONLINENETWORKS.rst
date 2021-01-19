@@ -25,7 +25,7 @@ Stellen:**
    ``Online Center`` und ``Online Server``.
 -  Dockfenster ``Informationen``, Reiter ``Online Clients`` und
    ``Online-Center``.
--  Optionen-Dialog, :ref:`online-flying`.
+-  Einstellungsdialog, :ref:`online-flying`.
 
 .. _online-networks-duplicates:
 
@@ -101,16 +101,16 @@ Luftraumquelle wählt (:ref:`airspace-source`)
 Detaillierte Informationen zu den Online-Zentren/Lufträumen finden Sie
 auf :doc:`INFO`.
 
-Die folgenden Varianten sind verfügbar und können in den Dropdown-Menüs
-in der Luftraum-Symbolleiste oder in :ref:`airspaces` aktiviert werden.:
+Die folgenden Varianten sind verfügbar und können in den Menüschaltfläche
+in der Luftraum-Symbolleiste oder in :ref:`menu-airspaces` aktiviert werden.:
 
 -  **Observer:** Die Kreisgröße wird aus dem Wert ``Visual Range`` der
    Center genommen.
 -  **Flight Information (Center):** Nutzt ``Visual Range``.
 -  **Delivery (Clearance):** Uses ``Visual Range``.
--  **Ground:** Zeigt einen Kreis mit einem Durchmesser von 10 nm..
--  **Tower:** 20 nm Kreis.
--  **Approach:** 40 nm Kreis.
+-  **Ground:** Zeigt einen Kreis mit einem Durchmesser von 10 NM.
+-  **Tower:** 20 NM Kreis.
+-  **Approach:** 40 NM Kreis.
 -  **ACC (Center):** Nutzt ``Visual Range``.
 -  **Departure:** Nutzt ``Visual Range``.
 

@@ -21,9 +21,9 @@ Online-Kartendienst beziehen oder auch Offline-Kartendaten enthalten.
 Normalerweise enthält ein Kartenthema viel mehr Dateien als nur die
 DGML.
 
-Das Menü ``Ansicht`` -> ``Kartenthema`` im Hauptmenü und das Dropdown-Menü in
+Das Menü ``Ansicht`` -> ``Kartenthema`` im Hauptmenü und die Schaltfläche in
 der Symbolleiste erhalten einen Eintrag für jedes weitere Kartenthema.
-Benutzerdefinierte Kartenthemen werden mit einem ```*``` in der Dropdown-Liste
+Benutzerdefinierte Kartenthemen werden mit einem ```*``` in der Schaltfläche
 und mit dem Wort ``Benutzerdefiniert`` im Menü versehen.
 
 Die Optionen ``Zeige Länder und Stadtnamen`` und

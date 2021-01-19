@@ -2,13 +2,16 @@ Reiter
 -----------
 
 Die Dockfenster ``Flugplanung``, ``Informationen``, ``Simulatorflugzeug``
-und ``Suche`` verfügen über Reiterleisten, die es erlauben Reiter
+und ``Suche`` verfügen über Leisten, die es erlauben Reiter
 (auch Tabs oder Registerkarten genannt) zu öffnen, zu schließen und zu verschieben.
 
 Tooltips geben weitere Informationen über die Funktion der Reiter.
 
 Beachten Sie, dass Sie einen Reiter nicht in ein anderes Fenster
 verschieben können.
+
+Der Menüpunkt ``Window`` -> :ref:`reset-layout-menu` im
+Hauptmenü setzt auch die Sichtbarkeit und Reihenfolge der Reiter auf die Standardwerte zurück.
 
 Kontextmenü Reiterleiste
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +32,7 @@ die Reiterschaltfläche |Tab Button| hat die folgenden Menüpunkte:
    vermeiden. Das Bewegen durch Klicken und Ziehen sowie das Schließen
    durch Doppelklick werden deaktiviert. Eine gesperrte Reiterleiste nimmt
    auch weniger Platz ein. Sie können die Reiter weiterhin über
-   das Kontextmenü oder die Menütaste schließen und öffnen.
+   das Kontextmenü oder die Kontextmenütaste schließen und öffnen.
 -  ``Reiter ... schließen``: Nur im Kontextmenü sichtbar. Schließt
    den angeklickten Reiter.
 -  Ein Menüpunkt für jeden Reiter: Schaltet die Sichtbarkeit der
@@ -60,7 +63,7 @@ Weitere Informationen über gestapelte Dockfenster finden Sie unter
 
 .. figure:: ../images/tabs.jpg
 
-        Dropdown-Menüs und Kontextmenüs auf den rot markierten
+        Menüschaltflächen und Kontextmenüs auf den rot markierten
         Reitern.
 
 .. |Tab Button| image:: ../images/tabbutton.jpg

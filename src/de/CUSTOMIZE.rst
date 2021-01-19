@@ -168,11 +168,11 @@ oder entpacken Sie die enthaltene Datei
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap*
 erkennt und verwendet das Symbol automatisch beim nächsten Start.
 
-Das Format ist auf SVG beschränkt. (`Scalable Vector Graphics (SVG) Tiny
+Das Format ist auf PNG, JPG, GIF und SVG beschränkt. (`Scalable Vector Graphics (SVG) Tiny
 1.2 Specification <https://www.w3.org/TR/SVGMobile12>`__), bei dem erweiterte
 Grafikeffekte wie Texturen nicht funktionieren.
 
-Sie können das kostenlose Vektorzeichnungsprogramm
+Sie können für SVG das kostenlose Vektorzeichenprogramm
 `Inkscape <https://inkscape.org>`__ verwenden,um Icons zu bearbeiten.
 Starten Sie *Little Navmap* neu, um die Änderungen zu sehen.
 
@@ -185,26 +185,39 @@ Alle Symbole für Benutzer, KI/Mehrspieler-Flugzeuge, Hubschrauber und
 Schiffe sind im Programm gespeichert, können aber vom Benutzer
 überschrieben werden.
 
+Die Standardsymbole sind in der Datei ``aircraft-icons.zip`` im Installationsordner ``customize`` enthalten.
+
 Die Symbole sind:
 
--  ``aircraft_boat_ground_user.svg``
--  ``aircraft_boat_ground.svg``
--  ``aircraft_boat_user.svg``
 -  ``aircraft_boat.svg``
--  ``aircraft_helicopter_ground_user.svg``
--  ``aircraft_helicopter_ground.svg``
--  ``aircraft_helicopter_user.svg``
+-  ``aircraft_boat_ground.svg``
+-  ``aircraft_boat_ground_user.svg``
+-  ``aircraft_boat_user.svg``
 -  ``aircraft_helicopter.svg``
--  ``aircraft_jet_ground_user.svg``
--  ``aircraft_jet_ground.svg``
--  ``aircraft_jet_user.svg``
+-  ``aircraft_helicopter_ground.svg``
+-  ``aircraft_helicopter_ground_user.svg``
+-  ``aircraft_helicopter_user.svg``
 -  ``aircraft_jet.svg``
--  ``aircraft_small_ground_user.svg``
--  ``aircraft_small_ground.svg``
--  ``aircraft_small_user.svg``
--  ``aircraft_small.svg``
+-  ``aircraft_jet_ground.svg``
+-  ``aircraft_jet_ground_user.svg``
+-  ``aircraft_jet_user.svg``
 -  ``aircraft_online.svg``
 -  ``aircraft_online_ground.svg``
+-  ``aircraft_small.svg``
+-  ``aircraft_small_ground.svg``
+-  ``aircraft_small_ground_user.svg``
+-  ``aircraft_small_user.svg``
+
+Nur für X-Plane:
+
+-  ``aircraft_carrier.svg``
+-  ``aircraft_carrier_ground.svg``
+-  ``aircraft_carrier_ground_user.svg``
+-  ``aircraft_carrier_user.svg``
+-  ``aircraft_frigate.svg``
+-  ``aircraft_frigate_ground.svg``
+-  ``aircraft_frigate_ground_user.svg``
+-  ``aircraft_frigate_user.svg``
 
 Die Suffixe werden nach Fahrzeugtyp, Status (Boden oder Luft) und
 Benutzer oder KI/Mehrspieler ausgewählt. Das Icon zeigt
@@ -216,6 +229,8 @@ alle Symbole mit einem Präfix ``aircraft`` versehen.
 
 Kategoriesymbole für Nutzerpunkte
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Die Standardsymbole sind in der Datei ``userpoint-icons.zip`` im Installationsordner ``customize`` enthalten.
 
 Symbole für Nutzerpunktkategorien werden im Programm gespeichert, können
 aber auch vom Benutzer überschrieben werden.
@@ -230,32 +245,32 @@ platziert wird.
 
 Die Standardsymbole sind:
 
--  ``userpoint_Airport.png``
--  ``userpoint_Airstrip.png``
--  ``userpoint_Bookmark.png``
--  ``userpoint_Cabin.png``
--  ``userpoint_Closed.png``
--  ``userpoint_DME.png``
--  ``userpoint_Error.png``
--  ``userpoint_Flag.png``
--  ``userpoint_Helipad.png``
--  ``userpoint_Lighthouse.png``
--  ``userpoint_Location.png``
--  ``userpoint_Logbook.png``
--  ``userpoint_Marker.png``
--  ``userpoint_Mountain.png``
--  ``userpoint_NDB.png``
--  ``userpoint_Obstacle.png``
--  ``userpoint_POI.png``
--  ``userpoint_Pin.png``
--  ``userpoint_Seaport.png``
--  ``userpoint_TACAN.png``
--  ``userpoint_Unknown.png``
--  ``userpoint_VOR.png``
--  ``userpoint_VORDME.png``
--  ``userpoint_VORTAC.png``
--  ``userpoint_VRP.png``
--  ``userpoint_Waypoint.png``
+-  ``userpoint_Airport.svg``
+-  ``userpoint_Airstrip.svg``
+-  ``userpoint_Bookmark.svg``
+-  ``userpoint_Cabin.svg``
+-  ``userpoint_Closed.svg``
+-  ``userpoint_DME.svg``
+-  ``userpoint_Error.svg``
+-  ``userpoint_Flag.svg``
+-  ``userpoint_Helipad.svg``
+-  ``userpoint_Lighthouse.svg``
+-  ``userpoint_Location.svg``
+-  ``userpoint_Logbook.svg``
+-  ``userpoint_Marker.svg``
+-  ``userpoint_Mountain.svg``
+-  ``userpoint_NDB.svg``
+-  ``userpoint_Obstacle.svg``
+-  ``userpoint_Pin.svg``
+-  ``userpoint_POI.svg``
+-  ``userpoint_Seaport.svg``
+-  ``userpoint_TACAN.svg``
+-  ``userpoint_Unknown.svg``
+-  ``userpoint_VOR.svg``
+-  ``userpoint_VORDME.svg``
+-  ``userpoint_VORTAC.svg``
+-  ``userpoint_VRP.svg``
+-  ``userpoint_Waypoint.svg``
 
 Der Text zwischen dem ersten Unterstrich ``_`` und dem ``.png`` Ende
 definiert die Kategorie. Zum Beispiel ``userpoint_My Places.png``
@@ -263,4 +278,4 @@ erstellt eine neue Kategorie ``My Places``.
 
 Verwenden Sie für Kategorien keine Sonderzeichen wie z.B. ``/``. Es sind
 nur Buchstaben, Ziffern, Leerzeichen, Unterstriche und Bindestriche
-erlaubt. Umlaute und Akzentzeichen sind kein Problem.
+erlaubt. Sonderzeichen, wie Umlaute und Akzentzeichen sind kein Problem.

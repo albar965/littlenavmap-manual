@@ -3,7 +3,7 @@
 
 Dieses Dockfenster zeigt die Geländehöhe und die Reiseflughöhe des
 Flugplans zusammen mit allen Wegpunkten des Flugplans an. Es steht nur
-zur Verfügung, wenn ein Flugplan geladen ist. Das Benutzerflugzeug wird
+zur Verfügung, wenn ein gültiger Flugplan geladen ist. Das Benutzerflugzeug wird
 ebenfalls angezeigt, wenn *Little Navmap* mit dem Simulator verbunden
 ist.
 
@@ -12,15 +12,15 @@ ist.
       Beachten Sie, dass die Höhenanzeige nur den Flugplan abdeckt und die
       Darstellung sich nicht verändert, wenn Sie mit Ihrem Simulatorflugzeug den
       Flugplan verlassen. Sie benötigen einen validen Flugplan (d.h. Abflug
-      und Ziel), um das Höhenprofil zu sehen.
+      und Ziel) und eine gültige Flugzeugleistung, um das Höhenprofil zu sehen.
 
 Das Höhenprofil umfasst keine Fehlanflüge und kein Strecken zu
 Ausweichflugplätzen. Erstellen Sie einen neuen Flugplan vom
 Zielflugplatz zum Ausweichflugplatz, wenn Sie das Höhenprofil
 verwenden möchten.
 
-Die Bewegung des Flugzeugs im Höhenprofil ist an die aktive
-Flugplanetappe gebunden und wird nicht korrekt dargestellt, wenn es von der
+Die Bewegung des Flugzeugs und der Pfad im Höhenprofil sind an den aktiven
+Flugplanabschnitt gebunden und wird nicht korrekt dargestellt, wenn es von der
 aktiven Strecke abweicht.
 
 .. _top-label:
@@ -28,33 +28,39 @@ aktiven Strecke abweicht.
 Oberes Textfeld
 ~~~~~~~~~~~~~~~~~~
 
-Die entsprechende Position wird auf der Karte mit einem hellen
-schwarz/türkisen Kreis markiert.
+Folgende Informationen werden in der oberen Beschriftung angezeigt, wenn eine Verbindung zu einem Flugsimulator mit einem gültigen Flugplan vorhanden ist:
 
-Folgende Informationen werden im oberen Textfeld angezeigt, wenn Sie
-an einen Flugsimulator angeschlossen sind:
+- Entfernung vom Benutzerflugzeug zum Flugplanziel
+- Entfernung vom Benutzerflugzeug zum oberen Ende des Sinkflugs
 
--  Entfernung vom Benutzerflugzeug zum Flugplanziel
--  Entfernung bis zum Sinkflugstart
+**Beispiel:** ``Zum Zielort: 1.213 nm, zum oberen Ende des Sinkflugs: 1.109 nm.``
 
-**Beispiel:** ``Zum Ziel: 118 nm, zum Anfang vom Sinkflug: 95 nm.``
+Die Beschriftung ist ausgeblendet, wenn keine Verbindung zu einem Simulator besteht.
 
-Darüber hinaus werden die folgenden Informationen im oberen Textfeld
-angezeigt, wenn Sie mit der Maus über das Diagramm fahren:
+.. _tooltip-label:
 
--  Letzter und nächster Wegpunkt für die Flugplanetappe an der Mauszeigerposition
--  Entfernung vom Start- und Zielort ab der Position des Mauszeigers.
--  Bodenhöhe an der Mauszeigerposition.
--  Flugplanhöhe über Grund unter Berücksichtigung der Reiseflughöhe
-   sowie der Steig- und Sinkflughöhe.
--  Sichere Höhe für die Flugplanetappe an der Mauszeigerposition
-   entsprechend der orangefarbenen Linie.
--  Windrichtung, Geschwindigkeit und Rücken- (``►``) oder Gegenwind
-   (``◄``).
+Tooltip-Beschriftung
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Beispiel:**
+Zusätzliche Informationen werden in einer Tooltip-Beschriftung rechts oder links im Fenster angezeigt, wenn die
+Maus über das Diagramm bewegt wird. Die entsprechende Position wird
+in der Karte mit einem schwarz/cyanfarbenen Kreis hervorgehoben. Die Beschriftung wechselt je nach Mausposition die Seite.
 
-``ANDOR ► SJA, 38 nm ► 112 nm, Bodenhöhe 984 ft, Höhe über Grund 8.016 ft, sichere Abschnitthöhe 3.000 ft, Wind 227°M, 14 kts, ► 9 kts``
+Die Beschriftung zeigt für die Mausposition die folgenden Informationen an:
+
+- Entfernung vom Abflug- und zum Zielort plus berechnete Höhe und nächster Wegpunkt.
+- Kurs für die Flugplanstrecke an der Mauszeigerposition.
+- Steuerkurs für diese Flugplanstrecke an der Position. Dieser wird anhand der Windverhältnisse berechnet.
+- Bodenhöhe und berechnete Höhe über Grund.
+- Sichere Höhe des Flugplanabschnittes an der Mauszeigerposition (orangefarbene Linie).
+- Windrichtung und -geschwindigkeit sowie Gegenwind- (``▼``) oder Rückenwind- (``▲``) Komponente.
+
+.. figure:: ../images/profile_label.jpg
+
+    Informationen zur Position zwischen den Wegpunkten ``GIGIR`` und ``OBITI``.
+    Zeigt einen Gegenwind von 28 kts an dieser Position an.
+    Das Benutzerflugzeug steigt.
+    Beachten Sie das Bild mit dem deutschen Zahlenformat mit Punkt als Tausendertrennzeichen.
 
 .. _bottom-label:
 
@@ -66,6 +72,8 @@ Flugplan oder in der Flugzeugleistung nicht erstellt werden konnte.
 
 Die Fehlermeldungen sind die gleichen wie in :ref:`flight-plan-table-error` im
 Flugplanungsfenster.
+
+Fahren Sie mit der Maus über die Beschriftung oder klicken Sie darauf, um weitere Informationen über den Fehler zu erhalten.
 
 .. _zoom-sliders:
 
@@ -87,7 +95,7 @@ Zoom-Schieberegler. Die folgenden Bedienelemente sind verfügbar:
    Höhe von 500 Fuß für das gesamte Profilfenster.
 -  |Zoom Horizontally| ``Horizontal zoomen``: Bewegen Sie den
    Schieberegler nach oben, um horizontal zu vergrößern. Der maximale
-   Zoom ergibt einen Abstand von ca. 4 nm für das gesamte Profilfenster.
+   Zoom ergibt einen Abstand von ca. 4 NM für das gesamte Profilfenster.
 
 .. _mouse:
 
@@ -211,12 +219,27 @@ Gleitpfads und DME, falls vorhanden.
       Anzeige des ILS am Zielflugplatz. Der Finale Anflugpunkt
       ist mit einem Malteserkreuz markiert.
 
+.. _show-toc-and-tod-profile:
+
+|Show Top of Climb and Top of Descent| Markierungen für Steig- und Sinkflug anzeigen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Blendet die Steig- und Sinkflugabschnitte sowie die Anzeigen für das Steigflugende und den Sinkflugbeginn aus, wenn sie deaktiviert sind.
+Dies wirkt sich auf die Karten- und Höhenprofilanzeige aus, nicht aber auf die Höhenberechnung im Treibstoffbericht oder im Höhenprofil.
+
+Dies ist die gleiche Funktion wie :ref:`show-toc-and-tod` im Menü ``Ansicht``.
+
 Folge Auswahl
 ^^^^^^^^^^^^^
 
 Die Kartenansicht wird auf die Position unter dem
 Mauszeiger zentriert (nicht vergrößert), wenn Sie mit der Maus über das Höhenprofil
 fahren und diese Option ausgewählt ist.
+
+Tooltip anzeigen
+^^^^^^^^^^^^^^^^^
+
+Blendet den Mauszeiger-Tooltip :ref:`tooltip-label` aus, wenn er nicht markiert ist.
 
 .. _show-zoom-slider:
 
@@ -248,7 +271,7 @@ aus. Sie können weiterhin mit der Maus oder der Tastatur navigieren.
 Profilanzeige
 ~~~~~~~~~~~~~
 
-Die Farben und Symbole des Höhenprofils entsprechen dem Stil der
+Die Farben und Symbole und Schriftart des Höhenprofils entsprechen dem Stil der
 Hauptkarte, wie er im Dialog ``Einstellungen`` vom Nutzer festgelegt ist.
 Farben, Formen und Symbole für
 Flugplätze, Navigationshilfen, Prozeduren, aktive und vergangene
@@ -261,11 +284,14 @@ Verhältnis zum aktiven Flugplanabschnitt erkannt wird.
 
 Weitere Informationen finden Sie in der Legende: :ref:`elevation-profile-legend`.
 
-Das Höhenprofil verwendet die tatsächliche Höhe für die Anzeige von
-Prozedurrestriktionen, Steigung und Reiseflug. Sie müssen mit Unterschieden
-zwischen tatsächlicher und angezeigter Höhe rechnen, wenn Sie über der
-Übergangshöhe mit der Standard-Höhenmessereinstellung von 29,92 Zoll bzw. 1013 hPa
-fliegen.
+Das Höhenprofil verwendet die tatsächliche Höhe für die Anzeige von Einschränkungen,
+Neigung und Reisegeschwindigkeit.
+
+Das Flugzeugsymbol wird mit der angezeigten Höhe dargestellt, um eine Übereinstimmung mit der Reiseflughöhenlinie
+in den höheren Flughöhen zu gewährleisten.
+
+Sie können vertikale Bewegungen des Flugzeugsymbols und Sprünge im Pfad sehen, wenn Sie den
+barometrischen Drucks im Höhenmesser des Simulators ändern.
 
 .. note::
 
@@ -291,7 +317,7 @@ fliegen.
         sichere Höhe an. Steigflugende und Sinkflugbeginn inklusive Steig- und Sinkpfade
         werden gezeigt. Orangefarbene Flugplanzeilen zeigen
         Prozedurabschnitte. Der Wegpunkt ``EV501`` hat eine Überflugbedingung
-        und es werden mehrere Höhenbeschränkungen für die Anflugprozedur
+        und es werden mehrere Höhenbeschränkungen für die Anflugprozedur unter dem Tooltip
         angezeigt.
 
 .. _toc-and-tod-paths:
@@ -317,7 +343,9 @@ Sie können den Abstiegspfad, wie in *Little Navmap* dargestellt, sicher
 verfolgen, vorausgesetzt, Sie können gleichzeitig Ihre
 Fluggeschwindigkeit steuern. Für große Flugzeuge sollten Sie
 ca. 10 NM früher absteigen, um die Geschwindigkeit auf 250 Knoten unter
-10000 Fuß reduzieren zu können.
+10.000 Fuß reduzieren zu können.
+
+Ich empfehle, den Sinkweg manuell flacher zu gestalten (d.h. eine geringere Sinkrate zu verwenden), um die Verzögerungsphasen zu berücksichtigen.
 
 Die Auf- und Abstiegswege sind vom Wind beeinflusst und werden bei
 starkem Gegen- oder Rückenwind entsprechend bewegt. Der Aufstiegspfad
@@ -329,12 +357,12 @@ Siehe Kapitel :ref:`wind` für weitere Informationen.
 Der Plan wechselt auf ein flache Anzeige, das nur eine Flugplanlinie in
 Reiseflughöhe anzeigt, wenn der TOC und/oder TOD nicht berechnet werden
 können oder wenn der Plan gegen Höhenbeschränkungen verstößt. In diesem
-Fall wird eine rote Warnmeldung angezeigt.
+Fall wird eine rote Warnmeldung angezeigt. Klicken Sie auf die Meldung, um weitere Informationen zu erhalten.
 
 .. figure:: ../images/profile_descent.jpg
 
         Eine Anflugprozedur, bei der das Flugzeug aufgrund
-        einer Beschränkung zwischen 7000 und 10000 Fuß bei ``ARTIP`` früh steigen
+        einer Beschränkung zwischen 7.000 und 10.000 Fuß bei ``ARTIP`` früh steigen
         muss.
 
 .. _elevation-data:
@@ -364,7 +392,7 @@ derzeit bei 60 Grad nördlich enden. Die Daten enthalten mehrere bekannte
 Fehler.
 
 Die Berechnung der Online-Höhenpunkte beschränkt sich auf
-Flugplansegmente, die nicht länger als 2000 nautische Meilen sind, um eine
+Flugplansegmente, die nicht länger als 2.000 NM sind, um eine
 Überlastung zu vermeiden. Fügen Sie weitere Wegpunkte hinzu oder
 berechnen Sie einen Flugplan, um diese Einschränkung zu umgehen.
 
@@ -383,6 +411,8 @@ mehrere Vorteile:
 -  Keine bekannten Fehler
 -  Höhenanzeige unter dem Mauszeiger in der Statusleiste
 
+Die Auflösung ist geringer als bei den Online-Daten.
+
 In :ref:`cache-elevation` im
 Einstellungsdialog finden Sie Anweisungen zum Herunterladen und Installieren
 der GLOBE-Daten.
@@ -397,4 +427,4 @@ der GLOBE-Daten.
 .. |Splitter| image:: ../images/profile_splitter.jpg
 .. |Zoom Horizontally| image:: ../images/profile_zoomhoriz.jpg
 .. |Zoom Vertically| image:: ../images/profile_zoomvert.jpg
-
+.. |Show Top of Climb and Top of Descent| image:: ../images/icon_routetoctod.png

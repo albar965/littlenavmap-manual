@@ -13,14 +13,17 @@ Die Kompassrose wird in der aktuellen Ansicht zentriert gehalten, wenn
 sie nicht mit einem Simulator verbunden ist. Die magnetische Missweisung
 basiert auf der Missweisung in der Mitte.
 
+Sobald die Verbindung zum Simulator hergestellt ist, wird die Kompassrose an das Benutzerflugzeug angehängt und folgt dessen Position.
+Dies kann im Menü ``Ansicht`` -> :ref:`show-compass-rose-attach` deaktiviert werden.
+
 Die Größe ist an die Größe der Kartenansicht angepasst, jedoch nicht
-größer als 1000 nm und nicht kleiner als 4 nm.
+größer als 1.000 NM und nicht kleiner als 4 NM.
 
 Linienstärke und andere Anzeigeoptionen können im Dialog
 ``Einstellungen`` auf der Seite :ref:`map-display-2` geändert
 werden.
 
-Die Farben für den Kurs des Flugplanabschnittes und die Schiebewinkelanzeige hängen von
+Die Farben für den Kurs des Flugplanabschnittes und der Richtung hängen von
 den Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 ``Einstellungen`` auf der Seite :ref:`map-display` geändert
 werden können.
@@ -52,7 +55,7 @@ Anzeige
 |                                   | Nicht gezeigt, wenn kein Flugplan |
 |                                   | geladen ist.                      |
 +-----------------------------------+-----------------------------------+
-| |Crab Angle|                      | Schiebewinkel. Zeigt die          |
+| |Heading|                         | Zeigt die                         |
 |                                   | Richtung an, die unter            |
 |                                   | Berücksichtigung des Seitenwindes |
 |                                   | zum nächsten Wegpunkt der aktiven |
@@ -70,7 +73,7 @@ Beispiele
 
 .. figure:: ../images/compass_rose_aircraft.jpg
 
-    Kompassrose um das Nutzerflugzeug. Kein Flugplan geladen. Daher wird der Schiebewinkel und
+    Kompassrose um das Nutzerflugzeug. Kein Flugplan geladen. Daher wird die Richtung und
     der nächsten Wegpunkt nicht angezeigt.
 
 .. |Compass Rose Icon| image:: ../images/icon_compassrose.png
@@ -80,5 +83,5 @@ Beispiele
 .. |Aircraft Track| image:: ../images/legend_compass_rose_track.png
 .. |Aircraft Heading| image:: ../images/legend_compass_rose_heading.png
 .. |Flight Plan Leg Course| image:: ../images/legend_compass_rose_leg.png
-.. |Crab Angle| image:: ../images/legend_compass_rose_crab.png
+.. |Heading| image:: ../images/legend_compass_rose_crab.png
 

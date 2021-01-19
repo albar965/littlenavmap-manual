@@ -33,6 +33,13 @@ Prozedurabschnitte sind rot markiert, wenn ein oder mehrere Navigationshilfen
 nicht aufgelöst werden konnten. Wenn Sie versuchen, dieses Prozeduren
 einem Flugplan hinzuzufügen, wird ein Warndialog angezeigt.
 
+.. note::
+
+    Es ist Sache des Nutzers, die richtigen Prozeduren zu kombinieren.
+
+    *Little Navmap* wird Sie nicht davon abhalten, z.B. nordwärts weisende Prozeduren für eine Route in Richtung Süden zu wählen.
+    Überprüfen Sie auch die resultierende Route, um versehentliches Zick-Zack-Routing zu vermeiden, das passieren kann, wenn Sie den falschen Anflug bzw. Übergang z.B. mit einer STAR Prozedure kombinieren.
+
 .. figure:: ../images/proceduresearch.jpg
 
         Zeigt einen Übergang und einen RNAV-Anflug. Start- und
@@ -46,15 +53,15 @@ dunkelroter Farbe dargestellt sind.
 
 Fettgedruckter roter Text zeigt einen Fehler im Abschnitt an. Die
 Prozedur ist unvollständig und sollte nicht in einem Flugplan verwendet
-werden.
+werden. *Little Navmap* verweigert je nach Fehler die Verwendung der Prozedur, da Inkonsistenzen zu Abstürzen führen können.
 
 -  ``Beschreibung``: Entweder Beschreibung der Prozedur oder
    Fluganweisung für Prozedurabschnitte.
 -  ``Kurs °M``: Magnetischer Kurs für ein Teilstück.
 -  ``Dist./Zeit``: Entfernung der Flugzeit für eine Etappe. Warteschleifen können
-   eine Etappenzeit in Minuten oder eine Etappenlänge in nautischen Meilen
+   eine Etappenzeit in Minuten oder eine Etappenlänge in NM
    haben.
--  ``Ident``: Kennung des anfänglichen Fixes oder Name der Prozedur.
+-  ``Kennung``: Kennung des anfänglichen Fixes oder Name der Prozedur.
    Name für Abschnitte festlegen.
 -  ``Beschränkung``: Entweder Mindesthöhe für das Luftstraßensegment, Prozedurhöhenbeschränkung oder
    Prozedurgeschwindigkeitsbegrenzung. Ein ``/`` trennt Höhe und
@@ -80,7 +87,7 @@ werden.
          bedeutet keine Höhe, sondern eine Geschwindigkeitsbeschränkung.
          Beispiel: ``/B250``.
 
--  ``Bemerkungen``: Zeigt die Überflug-, Drehrichtungsanzeige oder die
+-  ``Anmerkungen``: Zeigt die Überflug-, Drehrichtungsanzeige oder die
    zugehörige Navigation für einen Abschnitt an.
 
 Obere Schaltflächen
@@ -158,7 +165,9 @@ Prozedurart ab und ob der Flugplatz der Prozedur bereits der Start-
 oder Zielflugplatz des aktuellen Flugplans ist.
 
 Verwenden Sie das Kontextmenü der Flugplantabelle, um Prozeduren zu
-entfernen. Siehe :ref:`delete-selected-legs`.
+entfernen.
+
+Siehe auch :ref:`delete-selected-legs` and :ref:`delete-from-flight-plan`.
 
 Wenn ein Übergang ausgewählt wird, wird auch die entsprechende
 Prozedur (Approach, SID oder STAR) hinzugefügt oder ersetzt.
@@ -178,7 +187,13 @@ ausgewählte Prozedur hinzugefügt.
 Wenn der Flugplan leer ist, wird auch der Abflug- oder Zielflugplatz in
 den Flugplan aufgenommen.
 
-.. _show-information:
+
+Ein Streckenabschnitt wird rot gezeichnet, wenn eine Navigationshilfe während des
+Laden aus der Szeneriedatenbank nicht aufgelöst wurde. Dies geschieht nur, wenn die Quelldaten nicht gültig oder unvollständig sind. In diesem Fall ist die resultierende Prozedur nicht verwendbar und es wird ein Warndialog angezeigt, wenn wesentliche Navigationshilfen fehlen.
+
+*Little Navmap* kann je nach Fehler die Verwendung der Prozedur verweigern.
+
+.. _show-information-procs:
 
 |Show Information for Airport| Informationen zum Flugplatz anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -196,7 +211,7 @@ Weitere Informationen finden Sie im Fenster :doc:`INFO`.
 Zeigt den Flugplatz auf der Karte an. Der Zoomabstand kann im Dialog
 ``Einstellungen`` auf der Seite ``Karte`` geändert werden.
 
-.. _show-in-search:
+.. _show-in-search-procs:
 
 |Show Airport in Search| Flugplatz in der Suche anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

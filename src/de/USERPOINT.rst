@@ -1,4 +1,4 @@
-Nutzerdefinierte Wegpunkte
+Nutzerpunkte
 --------------------------
 
 Benutzerdefinierte Wegpunkte (oder Nutzerpunkte) ermöglichen das
@@ -10,8 +10,8 @@ wählen, welche Typen Sie als Symbole auf der Karte sehen möchten.
 
         Eine Übersicht über die Nutzerpunktfunktionalität:
         Informationen im linken Dockfenster, hervorgehobene Nutzerpunkte
-        auf der Karte, im Suchfenster rechts ausgewählte Nutzerpunkte und das
-        Dropdown-Menü.
+        auf der Karte, im Suchfenster rechts ausgewählte Nutzerpunkte und die
+        Menüschaltfläche.
 
 .. _userpoints-search:
 
@@ -110,10 +110,10 @@ des Handbuchs im Standardbrowser zu öffnen.
 |Menu Button| Menüschaltfläche
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Dropdown-Menü-Taste, mit der Sie Suchoptionen ein- oder ausblenden
+Schaltfläche , mit der Sie Suchoptionen ein- oder ausblenden
 können.
 
-Das Dropdown-Menü kennzeichnet Menüpunkte mit einer Änderungsanzeige
+Die Schaltfläche kennzeichnet Menüpunkte mit einer Änderungsanzeige
 ``*``, um anzuzeigen, dass die zugehörige Filterzeile Änderungen
 aufweist.
 
@@ -136,28 +136,15 @@ werden.
 
 Das Feld ``Beschreibung`` erlaubt mehrzeiligen Text und Sonderzeichen.
 Formatierungen wie kursiv oder fett werden nicht unterstützt.
-
-Verweise werden erkannt und können im Fenster ``Informationen`` geöffnet werden.
-
-Normale Verweise wie ``http://www.example.com`` oder
-``https://www.example.com`` werden neben Verzeichnis- oder Dateiverweisen
-wie ``file:///C:/Benutzer/ICH/Dokumente/Notizen%20Flugzeuge.txt`` unter Windows
-oder ``file:///home/ICH/Notizen%20Flugzeuge.txt`` unter MacOS oder Linux erkannt.
-
-Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich ``/``
-anstelle des umgekehrten Schrägstriches ``\`` als Pfadtrennzeichen
-verwenden müssen.
-
-Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da
-*Little Navmap* Verweise bis zum nächsten Leerzeichen erkennt.
+Siehe:doc:`REMARKS` für mehr Informationen, wie die Verwendung von Weblinks in diesem Feld.
 
 Das Feld ``Sichtbar von`` ermöglicht die Festlegung der Sichtbarkeit
 auf der Karte in Abhängigkeit von der Zoomdistanz. Die Zoomdistanz
 (Blickabstand zur Erdoberfläche) für die aktuelle Kartenansicht
 wird in der :doc:`STATUSBAR` angezeigt. Der
 Nutzerpunkt ist für alle Zoomabstände sichtbar, die kleiner sind als der
-Wert in ``Sichtbar von``. Der Maximalwert beträgt 3000 nm und der
-Minimalwert 1 nm.
+Wert in ``Sichtbar von``. Der Maximalwert beträgt 3.000 NM und der
+Minimalwert 1 NM.
 
 Zur Bestätigung des Dialogs sind gültige Koordinaten erforderlich. Eine
 detaillierte Beschreibung der erkannten Koordinatenformate finden Sie
@@ -326,7 +313,7 @@ Die empfohlenen Mindestfelder für den Import sind ``Typ``, ``Name``, ``Kennung`
 Nur ``Breitengrad`` und ``Längengrad`` sind zwingend notwendig, der Rest kann leer sein.
 
 Alle zwölf Felder werden beim Export von Nutzerpunkten als CSV
-gespeichert. Außerdem wird das mehrzeilige Feld ``Beschreibung`` bei
+gespeichert. Außerdem wird das mehrzeilige Feld ``Anmerkungen`` bei
 Bedarf in Anführungszeichen gesetzt und berücksichtigt Zeilenumbrüche.
 
 Das englische Zahlenformat (Punkt ``.`` als Dezimaltrennzeichen) wird beim
@@ -356,7 +343,7 @@ Koordinaten besteht:
    ,,,49.0219993591,7.8840069771
 
 ``Sichtbar von`` wird auf den Standard
-von 250 nm gesetzt und der Benutzerpunkt wird nach dem Import mit dem
+von 250 NM gesetzt und der Benutzerpunkt wird nach dem Import mit dem
 Symbol ``Unknown`` |Unknown| angezeigt.
 
 Beispiel für einen minimalen Nutzerpunkt-Datensatz mit
@@ -366,7 +353,7 @@ Typ ``Mountain`` , Kennung und Name für den Import:
 
     Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771
 
-``Sichtbar von`` wird nach dem Import auf den Standard von 250 nm gesetzt.
+``Sichtbar von`` wird nach dem Import auf den Standard von 250 NM gesetzt.
 
 Beispiel für einen exportierten Benutzerpunkt mit
 Typ ``Mountain``  und allen eingestellten Feldern:
@@ -389,6 +376,11 @@ ein weiteres doppeltes Anführungszeichen maskiert werden.
 CSV Felder
 ^^^^^^^^^^
 
+Die komplette Kopfzeile ist:
+
+``Type,Name,Ident,Latitude,Longitude,Elevation,Magnetic Declination,Tags,Description,Region,Visible From,Last Edit,Import Filename``
+
+
 ========   =====================   ============   ============   =========================================================================================================================================================================================================================================
 Position   Name                    Erforderlich   Leer erlaubt   Kommentar
 ========   =====================   ============   ============   =========================================================================================================================================================================================================================================
@@ -397,13 +389,14 @@ Position   Name                    Erforderlich   Leer erlaubt   Kommentar
 3          Ident                   Ja             Ja             Kennung. Nur für den Export von Garmin und X-Plane erforderlich. Muss ein eindeutiger gültiger Identifikator mit maximal fünf Zeichen für diese Exporte sein.
 4          Latitude                Ja             Nein           Breitengrad. Bereich von -90 bis 90 Grad mit Punkt ``.`` als Dezimaltrennzeichen.
 5          Longitude               Ja             Nein           Längengrad. Bereich von -180 bis 180 Grad mit Punkt ``.`` als Dezimaltrennzeichen.
-6          Altitude                Nein           Ja             Höhe. Muss eine gültige Zahl sein, wenn sie verwendet wird. Die Einheit ist immer Fuß.
+6          Elevation               Nein           Ja             Höhe. Muss eine gültige Zahl sein, wenn sie verwendet wird. Die Einheit ist immer Fuß.
 7          Magnetic declination    Nein           Ja             Magnetische Missweisung. Wird beim Import ignoriert und beim Export auf einen gültigen berechneten Wert gesetzt.
 8          Tags                    Nein           Ja             Ediketten. Freies Feld. Die Benutzeroberfläche hat keine spezielle Stichwortsuche.
 9          Description             Nein           Ja             Beschreibung. Frei verwendbares Feld, das Zeilenumbrüche erlaubt.
 10         Region                  Nein           Ja             ICAO-Region mit zwei Buchstaben für einen Nutzerpunkt oder Wegpunkt. Wird für den Export von X-Plane verwendet. Ersetzt durch den Standardwert ``ZZ`` beim X-Plane Export, wenn dieser leer ist.
-11         Visible from            Nein           Ja             Definiert, ab welcher Zoomdistanz in nautischen Meilen (angezeigt in :doc:`STATUSBAR`) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 nm eingestellt.
+11         Visible from            Nein           Ja             Definiert, ab welcher Zoomdistanz in NM (angezeigt in :doc:`STATUSBAR`) der Benutzerpunkt sichtbar ist. Wird bei leerem Import auf 250 NM eingestellt.
 12         Last update timestamp   Nein           Ja             ISO-Datum und Uhrzeit der letzten Änderung. Das Format ist unabhängig von den Einstellungen des Systemdatumsformats. Format: ``YYYY-MM-DDTHH:mm:ss``. Beispiel: ``2018-03-28T22:06:16.763``. Nicht in der Benutzeroberfläche bearbeitbar.
+13         Import Filename         No             Yes            Kompletter Dateipfad der Datei, aus welcher der Datensatz importiertert wurde. Nicht editierbar.
 ========   =====================   ============   ============   =========================================================================================================================================================================================================================================
 
 .. _userpoints-xplane:
@@ -437,7 +430,7 @@ Es gibt fünf Datenspalten in der Datei:
 .. code-block:: none
 
    I
-   1101 Version - data cycle 1704, build 20170325, metadata FixXP1101. NoCopyright (c) 2017 achwodu
+   1101 Version - data cycle 1704, build 20170325, metadata FixXP1101. NoCopyright (c) 2017 useruser
 
     50.88166700  12.58666700 PACEC ENRT ZZ
    -36.29987335 174.71089172 N0008 NZNI ZZ
@@ -446,9 +439,13 @@ Es gibt fünf Datenspalten in der Datei:
 
 .. note::
 
-      Beachten Sie, dass die nutzerdefinierten Wegpunkte zwar nicht auf der
-      X-Plane Karte dargestellt werden, aber im X-Plane GPS und FMS verwendet werden
-      können.
+     Beachten Sie, dass die nutzerdefinierten Wegpunkte zwar nicht auf der
+     X-Plane Karte dargestellt werden, aber im X-Plane GPS und FMS verwendet werden
+     können.
+
+     Die Wegpunkte werden aus der Navigraph-Datenbank geladen, wenn der Standardmodus :ref:`navigraph-navaid-proc` aktiviert ist.
+
+     Daher werden benutzerdefinierte Wegpunkte aus der Datei ``user_fix.dat`` nach dem Laden der Szenerie-Bibliothek von X-Plane möglicherweise nicht in *Little Navmap* angezeigt.
 
 Import
 ^^^^^^

@@ -1,331 +1,244 @@
-Einführung
-------------
+Einleitung
+-------------
 
-*Little Navmap* kopiert und bereitet die mitgelieferte
-Navigraph-Datenbank beim ersten Start vor.
+Dieses Kapitel gibt einen kurzen Überblick über die wichtigsten Themen mit Verweisen zu den ausführlicheren Kapiteln.
 
-:doc:`SCENERY` wird
-angezeigt, sobald die Vorbereitung abgeschlossen ist. Von dort aus
-können Sie alle erkannten Flugsimulatoren auswählen und deren
-Szenerienbibliotheken in die interne Datenbank von *Little Navmap*
-laden.
+*Little Navmap* zeigt beim ersten Start verschiedene Dialoge und eine Webseite an, um Hinweise zur Benutzung und andere nützliche Informationen zu geben. Einmal gelesen, können Sie diese Dialoge deaktivieren, indem Sie auf ``Diesen Dialog nicht mehr anzeigen`` klicken.
+
+Empfohlene Verzeichnisse für Dateien erstellen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Das Programm schlägt vor, beim Start eine empfohlene Verzeichnisstruktur zu erstellen. Sie können dies ignorieren und Ihre *Little Navmap*-Dateien an beliebigen Orten speichern. Das Programm benötigt keine feste Verzeichnisstruktur für seine Dateien.
+
+Siehe :doc:`FOLDERS` für weitere Informationen.
+
+Laden der Scenery-Datenbank
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* kopiert und bereitet beim ersten Start die mitgelieferte Navigraph-Datenbank vor.
+
+Sobald die Vorbereitung abgeschlossen ist, wird :doc:`SCENERY` angezeigt. Von dort aus können Sie alle erkannten Flugsimulatoren auswählen und deren Szeneriebibliotheken in die Datenbank von *Little Navmap* laden.
+
+Wenn Sie diesen Schritt überspringen, wird in der Statusleiste die Meldung ``Datenbank ist leer`` angezeigt.
+Sie sind dann nicht in der Lage, Flugpläne für Ihren Simulator zu erstellen.
+
+Beachten Sie, daß Sie die Datenbank neu laden müssen, um Änderungen beim Hinzufügen von Add-on-Flugplätze zu sehen.
 
 .. note::
 
-        Beachten Sie, dass X-Plane nicht immer automatisch erkannt werden kann. Sie
-        müssen den Pfad im Dialog ``Lade Szeneriebibliothek`` einstellen, bevor Sie
-        die Datenbank laden oder im Menü auswählen können.
+       X-Plane kann nicht immer automatisch erkannt werden. Sie müssen eventuell den Pfad im Dialog ``Lade Szeneriebibliothek`` einstellen, bevor Sie die Datenbank laden können.
 
-Eine Datenbank wird für jeden Simulator gespeichert und kann im Menü
-:ref:`scenery-library-menu` direkt ausgewählt werden.
+Eine Datenbank wird für jeden Simulator geführt und kann im :ref:`scenery-library-menu` geändert werden.
 
-Unter Windows wird beim ersten Start von *Little Navmap* auf einem
-System ohne FSX- oder P3D-Flugsimulator-Installation ein Warndialog
-angezeigt. Dieser kann für X-Plane ignoriert werden.
-Weitere Informationen hierzu finden Sie im Kapitel
-:doc:`RUNNOSIM`.
+Sie können die Szenerie-Bibliotheksdatenbank später laden, indem Sie den Menüpunkt :ref:`load-scenery-library` im Menü ``Szeneriebibliothek`` aufrufen.
 
-Wenn Sie X-Plane installiert haben, können Sie vom Warndialog auch direkt zu
-:doc:`SCENERY` gehen.
+Die Datenbanken der Szeneriebibliotheken müssen eventuell aktualisiert werden, wenn Sie eine neue Version von *Little Navmap* installieren. Es erscheint ein Fragedialog, der Sie auffordert, die jetzt inkompatible Datenbank zu löschen. Sie können die Szenerie in :doc:`SCENERY` neu laden, nachdem Sie die Datenbanken gelöscht haben.
 
-Eine oder mehrere Szeneriedatenbanken müssen möglicherweise
-aktualisiert werden, wenn Sie eine neue Version von *Little Navmap*
-installieren. Es erscheint ein Fragedialog, in dem Sie aufgefordert
-werden, die inkompatiblen Datenbanken zu löschen. Sie können die
-Szenerie in :doc:`SCENERY` nach dem Löschen der
-Datenbanken neu laden.
+.. note::
+
+    Die Auswahl der richtigen Szenerie-Bibliothek für den Simulator ist beim Fliegen entscheidend, da die Auswahl auch andere Funktionen von *Little Navmap* beeinflusst. Die gewählte Szenerie-Bibliothek bestimmt z.B., welche Wetterdateien gelesen werden.
+
+Verbinden mit einem Simulator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nach dem Schließen der :doc:`SCENERY` wird der Dialog :doc:`CONNECT` zum Verbinden mit einem laufenden Flugsimulator angezeigt.
+
+Siehe :doc:`CONNECT` für den nächsten Schritt, um *Little Navmap* als Karte zur Flugzeugverfolgung zu verwenden. Für X-Plane muss das mitgelieferte Plugin *Little Xpconnect* installiert sein.
+
 
 .. _things-to-do-after-installing:
 
-Empfohlene Aktionen nach der Installation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Empfohlene Dinge, die nach der Installation zu tun sind
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Die standardmäßig verwendeten Höhendaten sind begrenzt und haben
-   viele Probleme. Daher empfehle ich, die offline GLOBE Höhendaten
-   herunterzuladen und zu verwenden. Weitere Informationen finden Sie
-   unter :ref:`cache-elevation`.
--  Schauen Sie sich :doc:`TUTORIALS` an, wenn Sie das
-   Programm zum ersten Mal verwenden.
--  Siehe `Navigraph-Updates
-   installieren <https://albar965.github.io/littlenavmap_navigraph.html>`__
-   auf meiner Homepage für Informationen, wie man die Navigationsdaten
-   von *Little Navmap* aktualisiert.
--  Siehe :doc:`CONNECT` für den
-   nächsten Schritt, um *Little Navmap* als Karte zu verwenden. Das
-   mitgelieferte *Little Xpconnect* Plugin muss für X-Plane installiert
-   sein.
+- Die standardmäßig verwendeten Höhendaten sind begrenzt und haben eine Menge Probleme. Daher empfehle ich, die Offline-GLOBE-Höhendaten herunterzuladen und zu verwenden. Siehe :ref:`cache-elevation` für weitere Informationen.
+- Werfen Sie einen Blick auf :doc:`TUTORIALS`, wenn Sie das Programm zum ersten Mal benutzen.
+- Siehe `Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ auf meiner Homepage für Informationen, wie man die Navigationsdaten von *Little Navmap* aktualisiert.
 
 .. _network-setup:
 
-Ein Netzwerk-Setup installieren
+Wie man ein Netzwerk-Setup durchführt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Lesen Sie die beiden folgenden Kapitel, wenn Sie *Little Navmap* in
-einem vernetzten Setup mit einem Computer für den Flugsimulator und
-einem entfernten Computer für *Little Navmap* ausführen möchten.
+Der entfernte Computer benötigt keine Simulator-Installation und es ist nicht notwendig, die Szeneriebibliothek des Simulators als Netzwerklaufwerk freizugeben.
 
--  :doc:`CONNECT`
--  :doc:`RUNNOSIM`
-
-**Wie man eine Netzwerkeinrichtung vorbereitet:**
-
-#. Installieren bzw. Entpacken des gesamten *Little Navmap*-Archivs auf dem
-   aktiven **und** dem Netzwerkcomputer.
-#. Kopieren Sie *Little Xpconnect* in den Ordner X-Plane Plugins, wenn
-   Sie X-Plane verwenden.
-#. Verwenden Sie *Little Navmap*, um die Szenerie-Datenbank auf dem
-   Flugcomputer zu generieren. Hauptmenü -> ``Szeneriebibliothek`` ->
-   ``Szeneriebibliothek laden ...``
-#. Öffnen Sie das Verzeichnis mit den Datenbankdateien über
-   ``Szeneriebibliothek`` -> ``Zeige Datenbankdateien``.
-#. Kopieren Sie die Datenbankdateien auf den entfernten Netzwerkcomputer. Beenden
-   Sie *Little Navmap* vor dem Kopieren.
-
-**Fliegen in einer Netzwerkeinrichtung:**
-
-#. Starten Sie den Simulator
-#. Starten Sie *Little Navconnect* auf dem Flugsimulatorcomputer.
-#. Führen Sie *Little Navmap* auf dem Netzwerkcomputer aus.
-#. Verbinden Sie *Little Navmap* auf dem Netzwerkcomputer mit *Little
-   Navconnect* auf dem Flugsimulatorcomputer. Hauptmenü ->
-   ``Werkezeuge`` -> ``Flugsimulatorverbindung ...``
-
-Siehe auch die Verweise oben für detaillierte Anweisungen.
+Siehe :doc:`NETWORK` für Informationen, wie man eine Netzwerkverbindung einrichtet.
 
 Benutzeroberfläche
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dockfenster und Reiter
-^^^^^^^^^^^^^^^^^^^^^^^
+Andocken von Fenstern und Reitern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Weitere Informationen finden Sie in den Kapiteln :doc:`DOCKWINDOWS` und
-:doc:`TABS`.
+Siehe die Kapitel :doc:`DOCKWINDOWS` und :doc:`TABS` für weitere Informationen zu diesen Elementen.
 
-Kontextmenüs
-^^^^^^^^^^^^
+Kontext-Menüs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Verwenden Sie die Kontextmenüs, um einen Flugplan zu erstellen.**
+Kontextmenüs sind ein wichtiges Element zur Erstellung von Flugplänen oder zum Abrufen von Informationen und können an folgenden Stellen gefunden werden:
 
-Kontextmenüs finden Sie an den folgenden Stellen:
+- Kartenanzeigefenster: :ref:`map-context-menu`
+- Flugplantabelle: :ref:`flight-plan-table-view-context-menu`
+- Flugplatz-, Navigationshilfen- und andere Suchergebnistabellen: :ref:`search-result-table-view-context-menu`
+- Prozedursuche: :ref:`procedure-context-menu`
+- Höhenprofil: :ref:`context-menu`
+- Multiexport Flugplaneinstellungen: :doc:`ROUTEEXPORTALL`.
 
--  Kartenanzeigefenster - :ref:`map-context-menu`
--  Flugplantabelle - :ref:`flight-plan-table-view-context-menu`
--  Suchergebnistabellen zu Flugplätzen und Navigationshilfen: :ref:`search-result-table-view-context-menu`
--  Prozedursuchbaum - :ref:`procedure-context-menu`
--  Höhenprofil: :ref:`context-menu`
-
-Die Kontextmenüs bieten Funktionen, um mehr Informationen über ein
-Objekt an der angeklickten Position zu erhalten oder einen Flugplan zu
-erstellen oder zu bearbeiten.
+Die Kontextmenüs bieten Funktionen, um mehr Informationen über ein Objekt an der angeklickten Position zu erhalten oder um einen Flugplan zu erstellen oder zu bearbeiten.
 
 .. _help:
 
-Tooltip Hilfe, Hilfeschaltflächen und Hilfemenü
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Tooltip-Hilfe, Hilfe-Schaltflächen und Hilfe-Menü
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Das Hilfemenü von *Little Navmap* enthält Links zur Online-Hilfe, ein
-enthaltenes PDF-Dokument, Online-Tutorials und die
-Kartenlegende.
+Das Hilfe-Menü von *Little Navmap* enthält Links zur Online-Hilfe, einem mitgelieferten PDF-Dokument, Online-Tutorials und der Kartenlegende.
 
-Das Programm verwendet Tooltips (auch Schnellhilfe oder Quickinfo), um weitere Informationen zu
-Schaltflächen und anderen Bedienelementen anzuzeigen.
+Das Programm verwendet Tooltips, um Hilfe zu leisten oder um weitere Informationen zu Schaltflächen und anderen Steuerelementen anzuzeigen. Tooltips sind kleine Beschriftungen, die eingeblendet werden, wenn Sie mit der Maus über ein Steuerelement wie eine Schaltfläche oder ein Texteingabefeld fahren.
 
-Eine detailliertere Beschreibung wird auf der linken Seite der
-Statusleiste angezeigt, wenn Sie mit der Maus über einen Menüpunkt
-fahren.
+Eine ausführlichere Beschreibung wird auch auf der linken Seite der Statusleiste angezeigt, wenn Sie den Mauszeiger über einen Menüpunkt bewegen.
 
-Fast alle Dialoge und einige Dockfenster zeigen Hilfeschaltflächen |Help|, die die entsprechenden
-Abschnitte des Online-Handbuchs öffnen.
+Fast alle Dialoge und Andockfenster haben Schaltflächen, die mit ``Hilfe`` beschriftet sind oder das Symbol |Help| verwenden.
+Wenn Sie diese anklicken, werden die entsprechenden Abschnitte des Online-Handbuchs geöffnet.
 
-Fenster-Titel
-^^^^^^^^^^^^^
+Fenstertitel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der Titel des Hauptfensters zeigt den Namen und die Version der
-Anwendung an.
+Der Titel des Hauptfensters zeigt den Namen und die Version der Anwendung an.
 
-Weiterhin zeigt er die aktuell ausgewählte Simulator-Datenbank (``FSX``,
-``FSXSE``, ``P3DV2``, ``P3DV3``, ``P3DV4`` oder ``XP11``), den
-Flugplandateinamen, den Flugzeugleistungsdateinamen und einen Suffix
-``*`` für beide Dateinamen an, wenn sie sich geändert haben.
+Weiterhin zeigt er die aktuell gewählte Simulatordatenbank (``FSX``, ``FSXSE``, ``P3DV2``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS`` oder ``XP11``), den Namen der Flugplandatei und den Namen der Flugzeugleistungsdatei mit nachgestelltem ``*`` für beide, falls sich eine davon geändert hat.
 
-Bei Verwendung der Navigraph-Datenbank wird ein ``N`` angehängt.
-Beispiel unten für Prepar3D:
+Der AIRAC-Zyklus wird als vierstellige Zahl nach der Angabe des Simulators und der Navigraph-Datenbank angezeigt, falls vorhanden und wenn eine Datenbank ausgewählt ist.
 
--  ``P3DV4``: Alle Funktionen auf der Karte und alle Informationen in
-   Dialogen und Fenstern stammen aus der Datenbank des Flugsimulators Prepar3D v4.
--  ``P3DV4 / N``: Flugplätze und ILS werden aus der
-   Flugsimulatordatenbank angezeigt und genutzt. Navigationshilfen, Lufträume,
-   Luftstraßen und Prozeduren werden aus der Navigraph-Datenbank
-   verwendet.
--  ``(P3DV4) / N``: Alle Daten werden aus der Navigraph-Datenbank
-   verwendet. Für Flugplätze werden keine Vorfelder, keine Rollwege und
-   keine Parkplätze angezeigt.
+Der AIRAC-Zyklus wird nur für X-Plane und die Navigraph-Datenbank angezeigt. Andere Simulatoren stellen in ihren Szeneriebibliotheken keine Zyklusinformationen zur Verfügung.
 
-**Beispiel:**
-``Little Navmap 2.2.1 - XP11 / N LOAG_LOWW.fmc * - PA30 Twin Comanche.lnmperf``
+Ein ``N`` wird angehängt, wenn die Navigraph-Datenbank verwendet wird. Andernfalls wird ``(N)`` verwendet. Beispiel unten für Prepar3D:
 
-Version 2.2.1, X-Plane ausgewählt, Navigraph-Datenbank im Gebrauch,
-Flugplan ``LOAG_LOWW.fmc`` wurde geändert und Leistungsprofil
-``PA30 Twin Comanche.lnmperf`` ist unverändert.
+- ``P3DV5 / (N)``: Alle Kartenelemente und alle Informationen in Dialogen und Fenstern kommen aus der Flugsimulatordatenbank. Navigationshilfen können je nach Simulator eingeschränkt sein.
+- ``P3DV5 / N``: Flugplätze und ILS werden aus der Flugsimulatordatenbank angezeigt und verwendet. Navigationshilfen, Luftstraßen und Prozeduren werden aus der Navigraph-Datenbank verwendet.
+- ``(P3DV5) / N``: Alle Daten werden aus der Navigraph-Datenbank verwendet. Für Flugplätze sind keine Vorfelder, keine Rollwege und keine Parkpositionen verfügbar.
 
-Text zu Informationen und Simulator Flugzeuge
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Siehe :ref:`scenery-library-menu`, :doc:`SCENERY` und :doc:`NAVDATA` für weitere Informationen.
 
-Sie können die Textgröße im Einstellungsdialog für diese Fenster dauerhaft
-ändern.
+**Beispiele:**
+``Little Navmap 2.6.8 - XP11 2001 / N 2011 LOAG_LOWW.lnmpln * - PA30 Twin Comanche.lnmperf``
+
+Version 2.6.8, X-Plane ausgewählt mit AIRAC-Zyklus 2001, Navigraph-Datenbank in Verwendung mit AIRAC-Zyklus 2011, Flugplan ``LOAG_LOWW.lnmpln`` geändert und Leistungsprofil ``PA30 Twin Comanche.lnmperf`` unverändert.
+
+``Little Navmap 2.6.4.beta - (XP11) / N 2012 IFR Frankfurt Am Main (EDDF) nach Fiumicino (LIRF).lnmpln - PA30 Twin Comanche.lnmperf *``
+
+Version 2.6.4.beta (eine Testversion), X-Plane nicht ausgewählt - nur Navigraph verwendet, Navigraph-Datenbank im Einsatz mit AIRAC-Zyklus 2012, Flugplan unverändert und Leistungsprofil ``PA30 Twin Comanche.lnmperf`` geändert.
+
+``Little Navmap 2.6.5.rc1 - XP11 2012 / (N) - *``
+
+Version 2.6.5.rc1 (ein Release-Kandidat), X-Plane ausgewählt, kein Navigraph verwendet, kein Flugplan geladen und neues und leeres Standard-Flugzeugleistungsprofil geladen.
+
+Informationen und Simulator-Flugzeugtext
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sie können die Textgröße im Optionsdialog für diese Fenster dauerhaft ändern. Siehe Einstellungsdialog auf Seite :ref:`display-and-text`.
+
+Auf dieser Seite können Sie auch die Schriftart für die gesamte Programmoberfläche ändern.
 
 .. tip::
 
-   Eine schnelle Möglichkeit, die Textgröße zu ändern, ist die Verwendung
-   des Mausrads und der Taste ``Strg``. Diese Einstellung wird jedoch nicht
-   sitzungsübergreifend gespeichert.
+     Ein schneller Weg, um die Textgröße zu ändern, ist die Verwendung des Mausrades und der ``Strg``-Taste. Diese Einstellung wird allerdings nicht sitzungsübergreifend gespeichert.
+
 
 Fehlermeldungen
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* zeigt Fehlermeldungen mit weißem Text auf rotem
-Hintergrund an, wenn Probleme mit der Flugzeugleistung, der Berechnung
-des Höhenprofiles oder andere auftreten.
+*Little Navmap* zeigt Fehlermeldungen mit weißem Text auf rotem Hintergrund bei Problemen mit der Flugzeugleistung, der Sink-/Steigflugberechnung oder anderen Problemen.
 
-Tooltips zu diesen Fehlermeldungen bieten in einigen Fällen weitere
-Hilfe.
+Tooltips zu diesen Fehlermeldungen geben in den meisten Fällen weitere Hilfe.
+Klicken Sie auf diese Meldungen oder bewegen Sie den Mauszeiger darüber, um weitere Informationen zu erhalten.
 
-Aktivierung und Aufrufen von Windows und Reitern
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aktivieren und Heben von Fenstern und Reitern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Little Navmap öffnet und klappt Dockfenster und Reiter für
-bestimmte Aktionen auf, wie ``Datei`` -> ``Neuer Flugplan`` oder
-``Flugzeug`` -> ``Flugzeugleistung öffnen ...``, um Verwirrung für
-neue Benutzer zu vermeiden. Dieses Vorgehen kann im Einstellungsdialog auf
-der Seite ``Nutzerschnittstelle`` deaktiviert werden, indem Sie
-die Option ``Fenster bei bestimmten Operationen anzeigen und aktivieren.`` deaktivieren.
+*Little Navmap* öffnet und hebt Dockfenster und Reiter für bestimmte Aktionen wie ``Datei`` -> ``Neuer Flugplan`` oder ``Flugzeug`` -> ``Flugzeugleistung öffnen ...``, um Verwirrung für neue Benutzer zu vermeiden. Dieses Verhalten kann im Einsetllungsdialog auf dem Reiter ``Benutzeroberfläche`` abgeschaltet werden.
 
 Kopieren und Einfügen
-^^^^^^^^^^^^^^^^^^^^^
-
-Fast alle Dialoge, Textbeschriftungen und alle Informationsfenster in
-*Little Navmap* erlauben das Kopieren und Einfügen.
-
-Sie können den Text mit der Maus auswählen und dann entweder über
-``Strg+C`` oder das Kontextmenü in die Zwischenablage kopieren. Die
-Fenster ``Informationen``, ``Treibstoffbercht`` und ``Simulatorflugzeug``
-unterstützen sogar das
-Kopieren von formatiertem Text einschließlich der Symbole.
-
-Die Tabellenansichten für die Flugplan- oder
-Flugplatz-/Navigationshilfen-Suchergebnisse ermöglichen das Kopieren der Ergebnisse
-im CSV-Format in die Zwischenablage, die in ein
-Tabellenkalkulationsprogramm wie `LibreOffice
-Calc <https://www.libreoffice.org>`__ oder *Microsoft Excel* eingefügt
-werden können.
-
-.. _translation-and-locale:
-
-Übersetzung und Regionaleinstellungen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Little Navmap* ist derzeit in mehreren Sprachen verfügbar.
-Nicht alle Übersetzungen sind jedoch komplett.
-
-Ich unterstütze gerne jeden, der die Benutzeroberfläche oder das
-Handbuch in eine andere Sprache übersetzen möchte. Sprachpakete können
-einer *Little Navmap*-Installation später hinzugefügt werden, sobald sie
-verfügbar sind. Weitere Informationen finden Sie unter
-`Translating <https://github.com/albar965/littlenavmap/wiki/Translating>`__
-im Github *Little Navmap* Wiki.
-
-Trotz der Verwendung der englischen Sprache in der Benutzeroberfläche
-werden die lokalen Einstellungen des Betriebssystems verwendet. So sehen
-Sie z.B. bei einer deutschen Version von Windows das Komma als
-Dezimaltrennzeichen anstelle des englischen Punktes.
-
-Die Sprach- und Regionaleinstellungen können im Dialog
-``Einstellungen`` auf dem Reiter ``Nutzerschnittstelle`` auf
-Englisch festgelegt werden.
-
-Bitte beachten Sie, dass einige Bildschirmfotos in diesem Handbuch in
-deutscher Sprache erstellt wurden, daher wird ein Komma als
-Dezimaltrennzeichen und ein Punkt als Tausendertrennzeichen verwendet.
-
-Weiterhin werden Bildschirmfotos der englischen Benutzeroberfläche
-in dieser Anleitung verwendet.
-
-.. _map-legend:
-
-Kartenlegende
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Legende erklärt alle Kartensymbole und die Symbole für das Fenster
-``Höhenprofil Flugplan``. Sie ist im Dockfenster ``Legende`` oder in
-dieser Anleitung verfügbar: :doc:`LEGEND`.
+Fast alle Dialoge, Textbeschriftungen und alle Informationsfenster in *Little Navmap* erlauben das Kopieren und Einfügen des formatierten Textes in die Zwischenablage.
 
-Bewertungen
+Sie können den Text mit der Maus markieren und ihn dann entweder mit ``Strg+C`` oder über das Kontextmenü in die Zwischenablage kopieren.
+
+Die Tabellenansichten für die Flugplan- bzw. Flugplatz-/Navigationshilfen-Suchergebnisse erlauben das Kopieren der Ergebnisse im CSV-Format in die Zwischenablage, die dann in ein Tabellenkalkulationsprogramm wie `LibreOffice Calc <https://www.libreoffice.org>`__ oder *Microsoft Excel* eingefügt werden können.
+
+Übersetzung und Gebietsschema
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Flugplätze erhalten je nach Einrichtung eine Bewertung von null bis fünf
-Sternen. Flugplätze ohne Bewertung  werden mit
-einem grauen Symbol unter allen anderen Flugplätze auf der Karte
-(``Empty Airport``) angezeigt. Dieses Prozedur kann im Dialogfeld
-``Einstellungen`` auf dem Reiter ``Kartendarstellung``
-deaktiviert werden.
+*Little Navmap* ist derzeit in mehreren Sprachen verfügbar, wobei nicht alle Übersetzungen vollständig sind.
 
-Dies ist nützlich, um Flugplätze ohne Szenerieelemente zu vermeiden.
+Ihre Systemsprache wird verwendet, wenn sie unterstützt wird. Andernfalls fällt *Little Navmap* auf Englisch zurück.
+Die Sprache für die Benutzeroberfläche kann in ``Einstellungen`` auf der Seite :ref:`user-interface` geändert werden.
 
-Die folgenden Kriterien werden zur Berechnung des Ratings herangezogen.
-Jeder Gegenstand erhält einen Stern:
+Ich werde gerne jeden unterstützen, der die Benutzeroberfläche oder das Handbuch in eine andere Sprache übersetzen möchte. Sprachpakete können später zu einer *Little Navmap*-Installation hinzugefügt werden, sobald sie verfügbar sind.
+Siehe `Translating <https://github.com/albar965/littlenavmap/wiki/Translating>`__ im GitHub *Little Navmap* wiki für weitere Informationen.
 
-#. Add-on (oder 3D für X-Plane)
+Trotz der Verwendung der englischen Sprache in der Benutzeroberfläche werden die Gebietsschema-Einstellungen des Betriebssystems verwendet. So wird z.B. auf einer deutschen Version von Windows das Komma als Dezimaltrennzeichen anstelle des englischen Punktes angezeigt.
+
+Die Sprach- und Gebietsschemaeinstellungen können im Dialog ``Einstellungen`` auf der Seite :ref:`user-interface` auf Englisch gestellt werden.
+
+Karte Legende
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Die Legende erklärt alle Kartensymbole und die ``Höhenprofil Flugplan``-Symbole. Sie ist in :doc:`LEGEND` verfügbar.
+
+
+Bewertung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Flugplätze erhalten je nach Ausstattung eine Bewertung von null bis fünf Sternen.
+Flugplätze, die keine Bewertung haben, werden mit einem grauen Symbol unter allen anderen Flugplätze auf der Karte angezeigt (``Leerer Flugplatz``). Dieses Verhalten kann im Einstellungsdialog auf der Seite :ref:`map` abgeschaltet werden.
+
+Dies hilft, Flugplätze zu vermeiden, die keine Szenerieelemente enthalten.
+
+Die folgenden Kriterien werden zur Berechnung der Bewertung verwendet. Jeder Punkt gibt einen Stern:
+
+#. Add-on bzw. Zusatzflugplatz (oder 3D für X-Plane)
 #. Parkpositionen (Rampe oder Gate)
 #. Rollwege
 #. Vorfelder
-#. Tower Gebäude (nur wenn mindestens eine der anderen Bedingungen
-   erfüllt ist).
+#. Towergebäude (nur wenn mindestens eine der anderen Bedingungen erfüllt ist).
 
-Alle Flugplätze, die sich nicht im standardmäßigen
-``Scenery``-Verzeichnis des FSX/P3D oder im
-``Custom Scenery``-Verzeichnis von X-Plane befinden, gelten als
-Add-On-Flugplätze, die die Bewertung um einen Stern erhöhen.
+Alle Flugplätze, die sich nicht im Standardverzeichnis ``Scenery`` des FSX/P3D oder im ``Custom Scenery``-Verzeichnis von X-Plane befinden, gelten als Add-On-Flugplätze, was die Bewertung um einen Stern erhöht.
 
-Flugplätze, die das ``3D`` Attribut von X-Plane besitzen
-sind 3D-Flugplätze, was die Bewertung ebenfalls um einen Stern erhöht.
+Flugplätze, die in X-Plane die Bezeichnung ``3D`` tragen, sind 3D-Flugplätze, was die Bewertung ebenfalls um einen Stern erhöht.
 
-.. _navdata-updates:
+Flugplätze, die im Microsoft Flight Simulator 2020 mit einem Stern markiert sind, erhalten immer eine Fünf-Sterne-Bewertung.
 
-Navigationsdaten Aktualisieren
+Zusatzflugplätze werden auf der Karte mit einem gelben Ring hervorgehoben, der im Optionsdialog auf der Seite :ref:`Map-Display` deaktiviert werden kann.
+
+Mit hervorgehobenem (fett und unterstrichen) Text werden Zusatzflugplätze in der Suchergebnistabelle, der Flugplantabelle, den Informationsfenstern und den Karten-Tooltips hervorgehoben.
+
+Navdata-Aktualisierungen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* enthält eine gebrauchsfertige Datenbank von Navigraph
-mit Lufträumen, SIDs, STARs und mehr. Die Datenbank kann mit dem *FMS
-Data Manager* von Navigraph aktualisiert werden.
+*Little Navmap* wird mit einer fertigen Navigationsdatenbank von `Navigraph <https://www.navigraph.com>`__ geliefert, die Lufträume, SIDs, STARs und weitere Navigationshilfen enthält. Die Datenbank kann mit dem *FMS Data Manager* von Navigraph aktualisiert werden.
 
-Weitere Informationen finden Sie im Kapitel
-:doc:`NAVDATA`.
+Siehe das Kapitel :doc:`NAVDATA` für weitere Informationen.
 
 .. warning::
 
-     Schließen Sie auf jeden Fall *Little Navmap*, wenn Sie Ihre Datenbanken
-     aktualisieren, kopieren oder ersetzen. Little Navmap könnte abstürzen
-     oder falsche Daten anzeigen.
+      Schließen Sie auf jeden Fall *Little Navmap*, wenn Sie Szeneriedatenbanken aktualisieren, kopieren oder ersetzen. *Little Navmap* könnte abstürzen oder falsche Daten anzeigen.
 
-FSX und Prepar3D
-^^^^^^^^^^^^^^^^
+FSX, Prepar3D und Microsoft Flugsimulator 2020
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* ist kompatibel mit Navigationsdatenaktualisierungen von
-`fsAerodata <https://www.fsaerodata.com>`__ oder dem `FSX/P3D Navaids
-update <http://www.aero.sors.fr/navaids3.html>`__.
+*Little Navmap* ist kompatibel mit Navdata-Updates von `fsAerodata <https://www.fsaerodata.com>`__, dem `FSX/P3D Navaids update <http://www.aero.sors.fr/navaids3.html>`__ und dem Navigraph beta update für Microsoft Flight Simulator 2020 (Support-Forum: `Beta Testing for Microsoft Flight Simulator 2020 <https://forum.navigraph.com/viewforum.php?f=14>`__).
 
 X-Plane
-^^^^^^^
+^^^^^^^^^^^^^^^^
 
-*Little Navmap* verwendet alle Navigationsdatenaktualisierungen, die im Verzeichnis
-``Custom Data`` installiert sind. Alle älteren Updates, die in den
-GPS-Verzeichnissen installiert sind, werden ignoriert.
+*Little Navmap* verwendet Navdata Updates, die im Verzeichnis ``Custom Data`` installiert sind.
 
-Benutzerdefinierte Daten aus den Dateien ``user_fix.dat`` und
-``user_nav.dat`` werden gelesen und in die Datenbank
-übernommen.
+Ältere Updates, die in den GPS-Verzeichnissen installiert sind, werden nicht verwendet.
 
-Beachten Sie, dass weder ARINC noch die FAACIFP-Dateien unterstützt
-werden.
+Benutzerdefinierte Daten aus den Dateien ``user_fix.dat`` und ``user_nav.dat`` werden gelesen und in die Datenbank eingefügt, wenn sie gefunden werden.
+
+Beachten Sie, dass weder ARINC noch die FAACIFP-Dateien unterstützt werden.
 
 .. |Help| image:: ../images/icon_help.png
+

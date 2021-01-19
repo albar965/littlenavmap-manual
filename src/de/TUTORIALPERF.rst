@@ -15,7 +15,7 @@ Sie können den Flugplan aus dem IFR-Tutorial verwenden, der im
 Verzeichnis von *Little Navmap* enthalten ist:
 ``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).pln``.
 
-Verwenden Sie das Hauptmenü ``Datei`` -> ``Flugplan öffnen`` |Open
+Verwenden Sie das Hauptmenü ``Datei`` -> :ref:`open-flight-plan` |Open
 Flight Plan|, um den Flugplan zu laden.
 
 Der Plan sollte die typische Reiseflughöhe und Reiseentfernung für
@@ -31,7 +31,7 @@ Flugzeugleistung
 
 Beginnen Sie zunächst mit der Erstellung eines neuen und leeren
 Leistungsprofils, indem Sie im Hauptmenü ``Flugzeuge`` ->
-``Neue Flugzeugleistung`` |New Aircraft Performance| auswählen.
+:ref:`aircraft-menu-new` |New Aircraft Performance| auswählen.
 
 Lassen Sie im Dialog alles so, wie es ist und klicken Sie auf ``OK``.
 
@@ -41,14 +41,14 @@ Ignorieren Sie vorerst die verschiedenen Warnungen und Fehlermeldungen
 im Treibstoffbericht. Dieses Leistungsprofil ist gut genug, um bei einem
 drei Grad Flugbahnwinkel die Steig- und Sinkflugpfade zu berechnen.
 
-Ignorieren Sie auch die Nullwerte im Kraftstoffplan. Die
+Ignorieren Sie auch die Nullwerte im :ref:`aircraft-performance-fuelplan`. Die
 Kraftstoffdurchflussdaten müssen in das Leistungsprofil eingegeben
 werden, um eine valide Kraftstoffvorhersage zu erhalten.
 
 Starten und laden Sie einen Flug mit laufenden oder nicht laufenden
 Flugzeugtriebwerken. Verbinden Sie *Little Navmap* mit dem Simulator.
 
-Wählen Sie ``Datei`` -> ``Alles für für einen neuen Flug zurücksetzen`` |Reset
+Wählen Sie ``Datei`` ->  :ref:`reset-for-new-flight` |Reset
 all for a new Flight| im Menü. Entfernen Sie das Haken bei
 ``Einen neuen leeren Flugplan erstellen``, da bereits ein Plan
 geladen ist. Klicken Sie auf ``OK``, um eine saubere Basis für die
@@ -86,10 +86,8 @@ Sie haben eine komplette Sammlung der Leistungsdaten, sobald der
 Text ``Fertig`` angezeigt wird, der direkt nach der Landung am Zielort
 erscheint.
 
-Wählen Sie nun im Hauptmenü ``Flugzeug`` ->
-``Ermittelte Flugzeugleistung zusammenführen`` |Merge collected Aircraft
-Performance|, um das leere Leistungsprofil mit den gesammelten Werten zu
-füllen.
+Wählen Sie nun im Hauptmenü ``Flugzeug`` -> :ref:`aircraft-menu-merge` |Merge collected Aircraft Performance|,
+um das leere Leistungsprofil mit den gesammelten Werten zu füllen.
 
 Beachten Sie die Kopfzeile Header ``Neuer Wert`` (gesammelte Daten) und
 ``Aktueller Wert`` (aktuell geladene oder erstellte Profildatei)
@@ -107,6 +105,8 @@ und aktuellen Wertes verwendet. Sie können das Zusammenführen in
 jeder Flugphase durchführen. Zum Beispiel, wenn Sie die Werte während
 des Fluges feinabstimmen möchten. Siehe :doc:`AIRCRAFTPERFMERGE` für weitere Informationen.
 
+Passen Sie die Leistung mit ``Zusammenführen`` an, wenn Sie nach dem ersten Flug weitere Flüge durchführen.
+
 .. warning::
 
       Vergessen Sie nicht, genügend Reservekraftstoff hinzuzufügen.
@@ -114,12 +114,16 @@ des Fluges feinabstimmen möchten. Siehe :doc:`AIRCRAFTPERFMERGE` für weitere I
       diesen Plan verlassen.
 
 Sie sollten auch nach dem Zusammenführen den nutzbaren Kraftstoff und die Werte für den Ausweichflugplatz ändern. Wählen Sie dazu ``Flugzeug`` ->
-``Flugzeugleistung bearbeiten`` |Edit Aircraft Performance|. Beachten
+:ref:`aircraft-menu-edit` |Edit Aircraft Performance|. Beachten
 Sie, dass die erforderlichen Werte im Bearbeitungsdialog **fett**
 hervorgehoben sind.
 
 Es ist auch hilfreich, Hinweise zu Leistungseinstellungen in die
 Beschreibungsdatei eines Leistungsprofils aufzunehmen.
+
+Im Beispiel unten Anmerkungen zu einer King Air C90:
+
+|Aircraft Performance Remarks|
 
 Im Kapitel :doc:`AIRCRAFTPERFEDIT` werden
 Details zur Bearbeitung erläutert.
@@ -131,7 +135,7 @@ Details zur Bearbeitung erläutert.
       Flugzeuge zu erhalten. Zum Beispiel eine Datei für FL300-FL350 und eine
       für FL350-FL400.
 
-Verwenden Sie ``Flugzeug`` -> ``Flugzeugleistung sichern`` |Save
+Verwenden Sie ``Flugzeug`` -> :ref:`aircraft-menu-save`  |Save
 Aircraft Performance| und Speichern Sie die neue Leistungsdatei an einem
 beliebigen Ort wie ``Dokumente\Little Navmap\Flugzeugleistung``.
 
@@ -152,4 +156,5 @@ aufnehmen kann.
 .. |Current Performance Merge| image:: ../images/tutorial_perfmerge.jpg
 .. |Edit Aircraft Performance| image:: ../images/icon_aircraftperfedit.png
 .. |Save Aircraft Performance| image:: ../images/icon_aircraftperfsave.png
+.. |Aircraft Performance Remarks| image:: ../images/tutorial_perfremarks.jpg
 

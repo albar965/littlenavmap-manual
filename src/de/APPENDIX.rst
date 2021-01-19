@@ -29,49 +29,12 @@ CPU-Zyklen speichern
    weniger Ressourcen, da die heruntergeladenen Bildkacheln
    unverändert verwenden werden können und sie nicht in das sphärische Format konvertiert werden müssen.
 
-.. _save-memory:
-
-Reduzieren Sie den Speicherverbrauch
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Ersetzen Sie den kompletten Abschnitt ``[Settings]`` in der
-``little_navmap.ini`` durch den folgenden Abschnitt, um die Cache-Größe
-zu reduzieren.
-
-.. code-block:: ini
-
-   [Settings]
-   DatabaseCacheKb=5000
-   InfoQueryAirportCache=100
-   InfoQueryAirportSceneryCache=100
-   InfoQueryAirwayCache=100
-   InfoQueryApproachCache=100
-   InfoQueryComCache=100
-   InfoQueryHelipadCache=100
-   InfoQueryIlsCache=100
-   InfoQueryNdbCache=100
-   InfoQueryRunwayCache=100
-   InfoQueryRunwayEndCache=100
-   InfoQueryStartCache=100
-   InfoQueryTransitionCache=100
-   InfoQueryVorCache=100
-   InfoQueryWaypointCache=100
-   MapQueryAirspaceLineCache=100
-   MapQueryApronCache=100
-   MapQueryHelipadCache=100
-   MapQueryParkingCache=100
-   MapQueryRunwayCache=100
-   MapQueryRunwayOverwiewCache=100
-   MapQueryStartCache=100
-   MapQueryTaxipathCache=100
-
 .. _troubleshoot:
 
 Fehlerbehebung
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Siehe auch `Little Navmap - Frequently asked
-Questions <https://albar965.github.io/littlenavmap-faq.html>`__ (Englisch) für mehr
+Siehe auch Häufig gestellte Fragen (Englisch) <https://albar965.github.io/littlenavmap-faq.html>`__ für mehr
 Informationen.
 
 -  **Programm stürzt beim Start ab:** Benutzen Sie :ref:`reset-and-restart`
@@ -95,12 +58,12 @@ Informationen.
    blockiert. Überprüfen Sie auch, ob der Offline-Modus nicht
    versehentlich im Menü ``Datei`` aktiviert wurde. Überprüfen Sie weiterhin, ob
    sich *Little Navmap* mit dem Internet verbinden kann, indem Sie den
-   Optionen-Dialog auf dem Reiter ``Wetter`` aufrufen. Verwenden
+   Einstellungsdialog auf dem Reiter ``Wetter`` aufrufen. Verwenden
    Sie eine der Schaltflächen ``Test`` für NOAA oder VATSIM Wetter. *Little
    Navmap* kann sich mit dem Internet nicht verbinden, wenn diese nicht
    funktionieren.
 -  **Suche zeigt kein Ergebnis oder unerwartete Ergebnisse:** Überprüfen
-   Sie das Dropdown-Menü für den Änderungsindikator ``*`` und die
+   Sie die Menüschaltfläche für den Änderungsindikator ``*`` und die
    Suchfelder für jeden verbleibenden Text, wenn die Entfernungssuche
    keine oder unerwartete Ergebnisse liefert. Verwenden Sie
    ``Suche zurücksetzen`` im Kontextmenü der Ergebnistabelle
@@ -109,11 +72,6 @@ Informationen.
    wie** ``airport_id``  oder andere: Dies kann passieren, wenn
    das Programm aktualisiert wird. Verwenden Sie
    ``Ansicht zurücksetzen`` im Kontextmenü der Ergebnistabelle.
--  **Online-Karten wie**  **OpenStreetMap**  oder
-   **OpenTopoMap** können bei Verwendung von Funktionen wie
-   ``Flugplan zentrieren`` oder ``Gehe zur Heimposition`` unscharf werden. Zoomen
-   Sie einmal ein und aus mit dem Mausrad, den Zoomtasten oder der
-   Tastatur, das Problem zu beheben. Siehe auch :ref:`blurred-map`.
 -  **Das Höhenprofil des Flugplans enthält Fehler oder ungültige
    Höhendaten:** Die Online-Höhendaten enthalten mehrere bekannte
    Fehler. Verwenden Sie die empfohlenen GLOBE Offline-Höhendaten. Siehe
@@ -144,10 +102,17 @@ Informationen.
    Suchen Sie nun nach ``APX41080.bgl`` und schließen Sie dessen
    Verzeichnis vom Laden im Dialog ``Einstellungen`` aus.
 
-.. _known-problems:
+.. _problems:
 
 Bekannte Probleme
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+Siehe auch `Häufig gestellte Fragen (Englisch) <https://albar965.github.io/littlenavmap-faq.html>`__.
+
+.. _problems-general:
+
+Allgemein
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Einige Flugplatz-Add-Ons ändern nicht die Standard-Flugplätze, sondern
    fügen nur neue Szenerien oder Gebäude hinzu. Diese Add-ons werden
@@ -176,12 +141,6 @@ Bekannte Probleme
 -  Es gibt Fehler in den Online-Höhenquellendaten (wie in Norditalien,
    der Po-Ebene oder dem Titicacasee in Peru und Bolivien), die im
    Höhenprofil des Flugplans angezeigt werden.
--  Die Mercator-Projektion zeigt gelegentlich Darstellungsprobleme in
-   Abhängigkeit von der Zoomdistanz, wie z.B. horizontale Linien in der
-   Nähe des Anti-Meridians oder fehlende Flugplansegmente.
--  Die Karten-Overlays auf der Karte können
-   konfiguriert werden, speichern aber nicht alle Einstellungen mit
-   Ausnahme ihrer Sichtbarkeit.
 -  Magnetische Abweichung ist teilweise nicht eingestellt (z.B. VORDME
    Cambridge Bay YCB) oder inkonsistent zwischen Flugplätzen und
    benachbarten Navigationshilfen. Dies ist ein Fehler in der Quelle.
@@ -191,15 +150,34 @@ Bekannte Probleme
 -  Die Hintergrundkarte in Kartenausdrucken kann unscharf sein, da sie von der
    Bildschirmauflösung abhängt. Als Übergangslösung vergrößern Sie das
    sichtbare Kartenfenster.
--  Sehr lange Streckenabschnitte können beim Zoomen von der Karte
-   verschwinden. Die Beschriftung ist aber immer noch sichtbar.
 -  Prozeduren werden in manchen Fällen falsch gezeichnet.
 -  Das Flugplatz-Suchattribut ``Prozeduren`` funktioniert in der
    gemischten Datenbank nicht korrekt. Es werden nur Simulatorflugplätze
    mit Prozeduren angezeigt, anstatt den Navigraph-Flugplatzstatus zu
    verwenden.
+-  Das Layout des Dock-Fensters in *Little Navmap* kann sich beim Ändern der Größe oder Maximieren des Fensters ändern.
+-  Das Fenster wird im normalen Zustand wiederhergestellt, wenn Sie von einem maximierten Fenster in den Vollbildmodus und zurück wechseln.
+-  In manchen Fällen wird die Fensteranordnung beim Start nicht exakt wiederhergestellt.
+-  Die Flugplanberechnung kann sich beim Starten des Programms kurz öffnen.
+-  Die Höhe des Höhenprofilfensters kann in manchen Fällen nicht reduziert werden. Das Zurücksetzen auf die Standardfensteranordnung behebt dieses Problem. Ordnen Sie das Höhenprofilfenster neu  oder verschieben Sie es an eine andere Position, was das Problem in der Regel behebt. Speichern Sie die Anordnung, sobald Sie eine funktionierende haben.
+-  Das Zoomen mit Touchpad oder Magic Mouse funktioniert unter macOS nicht richtig. Verwenden Sie das Navigations-Overlay oder eine der anderen Optionen auf der Seite ``Kartennavigation`` in ``Einstellungen``, wenn Sie glauben, dass es unbrauchbar ist.
 
-.. _how-to-report-a-bug:
+
+Microsoft Flight Simulator 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- *Little Navmap* kann SID und STAR nicht aus MSFS lesen. Dies ist für zukünftige Versionen geplant.
+- MSFS Multiplayer und Echtzeit-KI können noch nicht angezeigt werden. Diese erscheinen nicht in der SimConnect-Programmierschnittstelle.
+- Das Simulatorwetter kann für MSFS nicht angezeigt werden, da die SimConnect-Wetterfunktionen keine Daten liefern. Verwenden Sie das NOAA-Wetter, das die aktuellsten Wetterberichte liefert.
+- MSFS scheint kein klares Konzept für die Reihenfolge der Szenerien zu haben (``Content.xml`` scheint unzuverlässig zu sein) und es gibt keine Informationen dazu im SDK. Add-ons werden in alphabetischer Reihenfolge in *Little Navmap* geladen. Um ein Add-on an das Ende der Ladeliste zu setzen, fügen Sie z.B. ein ``z_`` an den Ordnernamen an.
+- Das Laden von Flugplänen in MSFS ist fehlerhaft und erzeugt keine Fehlermeldungen, wenn es fehlschlägt. Oft kann MSFS seine eigenen Pläne nicht korrekt laden.
+- Ländernamen fehlen in den MSFS-Übersetzungstabellen und sind daher in *Little Navmap* nicht verfügbar.
+- Add-ons, die das verschlüsselte Format ``.fsarchive`` verwenden, werden nicht unterstützt. *Little Navmap* zeigt nur den Standardflugplatz anstelle des Add-ons an, wenn ein Paket auf diese Weise gesperrt ist.
+- Einige Flugzeugmodifikationen melden nicht den korrekten Treibstofffluss, um Einschränkungen des Simulators zu umgehen. Dies kann in *Little Navmap* nicht behoben werden.
+- Einige Flugplatzdateien wie ``LEMG.bgl`` können aufgrund eines unbekannten Formats nicht gelesen werden. *Little Navmap* meldet ``Fehler: readInt für Datei "...AUSGELASSEN.../LEMG.bgl" fehlgeschlagen. Grund 1``. Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite ``Szeneriedatenbank`` vom Lesen aus oder ignorieren Sie die Meldung. Der Standard-LEMG und alle anderen Flughäfen sind hiervon nicht betroffen.
+
+
+.. _report-bug:
 
 Wie meldet man einen Fehler?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -213,14 +191,15 @@ finden sind. Meine E-Mail-Adressen werden ebenfalls im diesem Dialog angezeigt.
 
 -  Betriebssystem:
 
-   -  Fenster 7, 8 oder 10
-   -  macOS: El Capitan, Sierra oder High Sierra
+   -  Windows 7, 8 oder 10
+   -  macOS: High Sierra, Catalina oder Big Sur
    -  Linux: Distribution und Version
 
 -  Simulator:
--  X-Plane: 10, 11.05 oder 11.10 Beta Version
--  FSX, FSX SE, P3D V4 oder V4.1
--  Fügen Sie Flugpläne oder andere von dem Fehler betroffene Dateien hinzu.
+
+   -  X-Plane: 11.40 oder 11.50 version
+   -  FSX, FSX SE, P3D oder MSFS einschließlich Version
+   -  Updates für Navigationsdaten, fallst installiert.
 
 Bitte geben Sie alle Schritte an, die notwendig sind, um den Fehler
 zu reproduzieren. Wenn möglich, schicken Sie mir die Log-Datei.

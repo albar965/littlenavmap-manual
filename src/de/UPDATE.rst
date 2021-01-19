@@ -68,7 +68,7 @@ Einstellungen
 ~~~~~~~~~~~~~~~~~
 
 Optionen für die Aktualisierungsprüfung können im Einstellungsdialog
-auf der Seite ``Start und Aktualisierung`` vorgenommen werden.
+auf der Seite :ref:`startup` vorgenommen werden.
 
 Auf Aktualisierungen prüfen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,23 +84,29 @@ durchgeführt.
 Aktualisierungskanäle:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-``Nur stabile Versionen``: Hier werden nur Benachrichtigungen für
-getestete und stabile Versionen angezeigt, die auch ein komplettes
-Handbuch enthalten.
+-   ``Nur stabile Versionen``: Hier werden nur Benachrichtigungen für
+    getestete und stabile Versionen angezeigt, die auch ein komplettes
+    Englisches Handbuch enthalten.
 
-``Stabile und Beta Versionen``: Wird zusätzlich nach Beta-/Testversionen
-suchen. Beta-Versionen sind Programmversionen, die bereits alle
-geplanten Funktionen für ein stabiles Release enthalten, aber noch nicht
-sorgfältig getestet wurden. Das Handbuch kann unvollständig sein.
+-   ``Stabile und Beta Versionen``: Wird zusätzlich nach Beta- bzw. Testversionen
+    suchen. Beta-Versionen sind Programmversionen, die bereits alle
+    geplanten Funktionen für ein stabiles Release enthalten, aber noch nicht
+    sorgfältig getestet wurden. Das Handbuch kann unvollständig sein.
 
-``Stabile-, Beta- und Entwicklungsversionen``: *Little Navmap* zeigt auch
-Benachrichtigungen für Entwicklungsversionen an. Diese sind weder
-vollständig noch getestet. Die Funktionen können sich im Laufe der
-Zeit ändern und das Handbuch wird nicht für neue Funktionen
-aktualisiert.
+-   ``Stabile-, Beta- und Entwicklungsversionen``: *Little Navmap* zeigt auch
+    Benachrichtigungen für Entwicklungsversionen an. Diese sind weder
+    vollständig noch getestet. Die Funktionen können sich im Laufe der
+    Zeit ändern und das Handbuch wird nicht für neue Funktionen
+    aktualisiert.
 
-Eine Sicherung aller Einstellungen wird empfohlen, bevor eine
-Entwicklungsversion ausgeführt wird.
+.. note::
+
+     Verwenden Sie immer den Beta-Update-Kanal, wenn Sie eine Beta- oder Testversion verwenden.
+     Andernfalls könnten Sie wichtige Updates verpassen.
+
+.. warning::
+
+     Es wird empfohlen, eine Sicherung aller Einstellungen zu erstellen, bevor Sie eine Beta- oder Entwicklungsversion verwenden. Siehe :doc:`FILES` für Verzeichnisse zum Sichern.
 
 Jetzt nach Aktualisierungen prüfen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

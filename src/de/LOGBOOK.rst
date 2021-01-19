@@ -13,11 +13,39 @@ Beachten Sie, dass Kraftstoffverbrauch
 und andere Werte immer zwischen Start und Landung gemessen werden,
 da Start und Ende eines Fluges nicht zuverlässig erkannt werden können.
 
-Verwenden Sie :ref:`reset-for-new-flight`, um sicherzustellen, dass die
-Flugerkennung für einen neuen Flug eingerichtet ist.
+Sie können den Flug beschleunigen oder in eine andere Position springen. Der Logbucheintrag wird trotzdem korrekt erfasst.
 
 Die Bearbeitungsfunktionalität im Logbuch ist vergleichbar mit der
 Bearbeitung von Nutzerpunkten (:ref:`userpoints`).
+
+.. note::
+
+      Verwenden Sie :ref:`reset-for-new-flight`, um sicherzustellen,
+      dass die Logbuch-Flugerkennung für einen neuen Flug eingerichtet ist.
+
+      Die Logerfassung funktioniert nicht mit unterschiedlichen Programmsitzungen.
+      Ändern Sie den Eintrag manuell, wenn Sie den Flug unterbrechen oder
+      *Little Navmap* neu starten müssen.
+
+
+Logbuchdateien
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Jeder Logbucheintrag enthält eine Referenz, die den vollständigen Pfad zu den verwendeten Flugplan- und Flugzeugleistungsdateien verwendet. Beachten Sie, dass diese Referenzen beschädigt werden, wenn die Dateien verschoben oder umbenannt werden.
+
+Zusätzlich werden die Flugplandatei, die Flugzeugleistungsdatei und die geflogene Strecke direkt in den Logbucheintrag eingefügt. Diese Anhänge können als LNMPLN-, LNMPERF- oder GPX-Dateien gespeichert werden. Der GPX-Anhang wird auch verwendet, um die Vorschau der Flugzeugpfad und des Flugplans anzuzeigen, wenn Logbucheinträge in der Suchergebnistabelle ausgewählt werden.
+
+Informationen zum LNMPLN-Format finden Sie unter: ref:`flight-plan-formats-lnmpln`.
+
+Die GPX-Spur enthält Koordinaten, Flughöhe und -zeit sowie den Flugplan mit den Kennungen für Flugplatz und Navigationshilfen, Koordinaten und der berechneten Höhe.
+
+Die Flugplandatei enthält alle Planinformationen wie Prozeduren oder Anmerkungen.
+
+Sie können auf die referenzierten und angehängten Dateien im Kontextmenü der Suchergebnistabelle und im Bearbeitungsdialog zugreifen und diese ändern.
+
+.. note::
+
+    Unfertige Flüge haben keinen Flugzeugpfad und zeigen nur den Startflugplatz an.
 
 .. _logbook-search:
 
@@ -28,6 +56,8 @@ Die Funktionalität der Suchfilter und der Ergebnistabelle entspricht der
 Flugplatz- und Navigationshilfensuche. Siehe :doc:`SEARCH` für
 Informationen über Suchfilter und Schaltflächen.
 
+Ein Suchfeld ``Flugplatz ICAO`` ermöglicht die Suche nach Einträgen mit einem passenden Ziel oder Start.
+
 Zusätzliche Kontextmenüpunkte und Schaltflächen ermöglichen das
 Hinzufügen, Bearbeiten und Löschen von Logbucheinträgen.
 
@@ -37,13 +67,27 @@ zwischen Abflug und Ziel sowie dem Start- und Zielflugplatz hervorgehoben.
 
 Die Beschriftung an der Großkreislinie zeigt die Startflugplatz-,
 Zielflugplatz- und die Distanz der Großkreislinie. Ein Tooltip wird angezeigt, wenn
-Sie mit der Maus über die blaue Linie fahren.
+Sie mit der Maus über die blaue Linie oder die Flugplanvorschau fahren.
 
 .. figure:: ../images/logbook.jpg
 
         Karte mit mehreren ausgewählten und markierten
         Logbucheinträgen. Abflug und Ziel jedes Eintrags sind durch eine Großkreislinie
         verbunden. Ein Tooltip zeigt weitere Informationen an.
+
+
+
+.. figure:: ../images/logbook_preview.jpg
+
+      Ein ausgewählter Logbucheintrag und die Flugplanvorschau mit Wegpunkten und Flugrichtung.
+
+      Die gestrichelte Linie zeigt den geflogenen Flugzeugpfad.
+
+
+.. tip::
+
+      Suchen Sie nach Logbucheinträgen mit einer maximalen Entfernung von Null,
+      wenn Sie ungültige Einträge von unterbrochenen Flügen entfernen möchten.
 
 .. _logbook-top-buttons:
 
@@ -54,6 +98,30 @@ Siehe :ref:`search-result-table-view-context-menu` für
 eine Beschreibung der gemeinsamen Kontextmenüelemente für alle
 Suchdialoge. Alle Schaltflächen haben ein entsprechendes Symbol
 im Kontextmenü der Ergebnistabelle.
+
+Flugplatz
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Untermenü für Start- und Zielflugplatz.
+
+|Show Information| Zeige Informationen für Flugplatz
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Show on Map| Auf der Karte anzeigen
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Set as Flight Plan Departure| Setze als Startflugplatz im Flugplan
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Set as Flight Plan Destination| Setze als Zielflugplatz im Flugplan
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+|Set as Flight Plan Alternate| Flugplatz als Ausweichflugplatz hinzufügen
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Diese Menüpunkte sind nur für einen Rechtsklick auf den Namen oder die Kennung von einen Start- oder Zielflugplatz aktiviert.
+
+Gleiche Funktionalität, wie :ref:`map-context-menu` und im :ref:`flight-plan-table-view-context-menu`.
 
 .. _logbook-add:
 
@@ -85,6 +153,70 @@ Entfernt die ausgewählten Logbucheinträge nach einem Bestätigungsdialog.
 Ein Rückgängigmachen ist nicht möglich, aber bei jedem Start werden
 Datenbanksicherungen erstellt. Siehe :ref:`files-logbook` für
 Informationen über Datenbank-Backup-Dateien.
+
+Dateien
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Untermenü für angehängte oder referenzierte Dateien.
+
+|Open Flight Plan| Flugplan öffnen
+"""""""""""""""""""""""""""""""""""""""""""""
+
+Öffnet die referenzierte Flugplandatei.
+Dieser Menüpunkt ist deaktiviert, wenn die Datei nicht gefunden wurde.
+Das kann der Fall sein, wenn die Datei umbenannt oder verschoben wurde.
+
+Gleiche Funktion, wie :ref:`open-flight-plan`.
+
+|Open Aircraft Performance| Flugzeugleistung öffnen
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Öffnet die referenzierte Flugzeugleistungsdatei.
+Dieser Menüpunkt ist deaktiviert, wenn die Datei nicht gefunden wurde.
+Das kann der Fall sein, wenn die Datei umbenannt oder verschoben wurde.
+
+Gleiche Funktion, wie :ref:`aircraft-menu-load`.
+
+Angehängten Flugplan öffnen
+"""""""""""""""""""""""""""""""""
+
+Öffnet den angehängten Flugplan und ersetzt den aktuellen.
+
+Angehängten Flugplan speichern als
+"""""""""""""""""""""""""""""""""""
+
+Speichert den angehängten Flugplan in eine LNMPLN-Datei.
+
+Angehängten Flugzeugleistung öffnen
+""""""""""""""""""""""""""""""""""""
+
+Öffnet die angehängte Flugzeugleistung und ersetzt die aktuelle.
+
+Angehängten Flugzeugleistung speichern als
+""""""""""""""""""""""""""""""""""""""""""""
+
+Speichert die angehängte Flugzeugleistung in eine LNMPERF-Datei.
+
+Angehängten GPX-Flugpfad speichern als
+""""""""""""""""""""""""""""""""""""""""""""
+
+Speichert den angehängten GPX-Flugpfad in eine Datei, die sowohl den geflogenen Flugzeugpfad als auch die Flugplanvorschau enthält.
+
+Ansichtseinstellungen
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Direkte Verbindung zeigen
+"""""""""""""""""""""""""""""""""
+
+Flugplanvorschau zeigen
+"""""""""""""""""""""""""""""""""
+
+Flugpfad zeigen
+"""""""""""""""""""""""""""""""""
+
+Diese drei Optionen aktivieren oder deaktivieren die jeweiligen Vorschaufunktionen für ausgewählte Logbucheinträge.
+
+Beachten Sie, dass die Flugplanvorschau und der Flugpfad nur für die ersten Einträge der Auswahl angezeigt werden.
 
 .. _open-flight-plan-logbook:
 
@@ -183,25 +315,12 @@ Treibstoff benötigt für Flug und zu ladender Treibstoff werden aus
 Verbrauchter Kraftstoff ist der verwendete Treibstoff zwischen Start und
 Landung.
 
-Reiter Dateibeschreibung
+Reiter Anmerkungen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dies ist ein freies Textfeld für Notizen und Verweise.
+Freies Texteingabefeld, das auch im Tooltip und im Informationsfenster auf dem Reiter ``Logbuch`` angezeigt wird.
 
-Verweise werden im Feld ``Dateibeschreibung`` erkannt und können im Dockfenster
-``Informationen`` auf dem Reiter ``Logbuch`` geöffnet werden.
-
-Normale Verweise wie ``http://www.example.com`` oder
-``https://www.example.com`` werden neben Verzeichnis- oder Dateiverweisen
-wie ``file:///C:/Benutzer/ICH/Dokumente/Notizen%20Flugzeuge.txt`` unter Windows
-oder ``file:///home/ICH/Notizen%20Flugzeuge.txt`` unter MacOS oder Linux erkannt.
-
-Beachten Sie, dass Sie unter Windows den Vorwärtsschrägstrich ``/``
-anstelle des umgekehrten Schrägstriches ``\`` als Pfadtrennzeichen
-verwenden müssen.
-
-Ersetzen Sie Leerzeichen in Verweisen durch ``%20``, da
-*Little Navmap* Links bis zum nächsten Leerzeichen erkennt.
+Siehe :doc:`REMARKS` für weitere Informationen über die Verwendung von Weblinks in diesem Feld.
 
 Einzelnen Logbucheintrag bearbeiten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -244,6 +363,12 @@ Dieser Dialog zeigt zwei Reiter:
    Berichte in der Tabelle anzeigt. Der Inhalt der Tabelle
    kann als CSV in die Zwischenablage kopiert werden.
 
+Einige Simulatoren melden in seltenen Fällen eine falsche Abflug- und Ankunftszeit, was bei einigen Flügen zu einer negativen Flugzeit führen kann.
+
+Die Logbuchstatistik ignoriert diese ungültigen Simulatorzeitintervalle.
+
+Korrigieren Sie die Abflug- oder Ankunftszeit des Simulators manuell, wenn Sie solche Fälle feststellen.
+
 .. figure:: ../images/logbook_stats.jpg
 
          Reiter Übersicht im Dialogfeld Logbuch Statistiken.
@@ -259,11 +384,6 @@ CSV kann z.B. in *LibreOffice Calc*
 oder *Microsoft Excel* geladen werden. Alle Datenfelder können exportiert
 und importiert werden, was es ermöglicht, diese Funktion für
 Sicherungszwecke zu nutzen.
-
-Beachten Sie, dass es nicht möglich ist, eine Auswahl ähnlich wie bei den
-Nutzerpunkten zu exportieren. Es kann nur das gesamte Logbuch
-exportiert werden. Import fügt die Logbucheinträge aus der CSV-Datei in
-die Liste bereits vorhandene Logbucheinträge ein.
 
 Der Export und Import kann über die Menüpunkte :ref:`logbook-import-csv`
 und :ref:`logbook-export-csv` erfolgen.
@@ -389,47 +509,98 @@ Detaillierte Informationen zum Format finden Sie unter `Kommagetrennte
 Werte <https://de.wikipedia.org/wiki/CSV_(Dateiformat)>`__ in der
 Wikipedia.
 
-Die Höhen im exportierten CSV sind immer Fuß und die Entfernungen sind immer nautische Meilen.
+Die Höhen im exportierten CSV sind immer Fuß und die Entfernungen sind immer NM.
 
-Die erste Zeile des CSV enthält die Feldnamen.
+Die erste Zeile des CSV enthält die Feldnamen, falls dies für den Export ausgewählt wurde.
 
-==========================   ==========================
-Feldname                     Beschreibung
-==========================   ==========================
-aircraft_name                Fee name like ``Cessna 172``
-aircraft_type                ICAO Typbeschreibung wie ``B732``
-aircraft_registration        Registrierung, wie z.B. ``N12345``
-flightplan_number            Flugnummer, wenn verfügbar
-flightplan_cruise_altitude   Flugplan Reiseflughöhe in Fuß
-flightplan_file              Vollständiger Pfad zur Flugplandatei
-performance_file             Vollständiger Pfad zur Flugzeugleistungsdatei
-block_fuel                   Von der Flugzeugleistung - lbs
-trip_fuel                    wie oben
-used_fuel                    wie oben
-is_jetfuel                   Berechnet aus Flugkraftstoff, ``1`` entspricht Kerosin
-grossweight                  Gewicht beim Start, lbs
-distance                     Flugplanentfernung in NM
-distance_flown               Tatsächliche Flugdistanz in NM
-departure_ident              Flugplatz ICAO-Kennung
-departure_name               Flugplatzname
-departure_runway             Start- und Landebahn, falls gefunden
-departure_lonx               Koordinaten, falls vorhanden und Flugplatz aufgelöst.
-departure_laty               wie oben
-departure_alt                Höhe in Fuß
-departure_time               Reale Abflugzeit als Ortszeit
-departure_time_sim           Simulator Abflugzeit in UTC
-destination_ident            Gleiches wie oben für das Ziel
-destination_name             wie Abflug
-destination_runway           wie Abflug
-destination_lonx             wie Abflug
-destination_laty             wie Abflug
-destination_alt              wie Abflug
-destination_time             wie Abflug
-destination_time_sim         wie Abflug
-route_string                 ICAO Routenbeschreibung
-simulator                    ``X-Plane 11``, ``Prepar3D v4``, etc.
-description                  Freier Text vom Benutzer
-==========================   ==========================
++-----------------------------------+------------------------------------+
+| Feldname                          | Beschreibung                       |
++===================================+====================================+
+| Aircraft Name                     | Flugzeugbeschreibung, wie          |
+|                                   | ``Cessna 172``                     |
++-----------------------------------+------------------------------------+
+| Aircraft Type                     | ICAO Typkennung, wie               |
+|                                   | ``B732``                           |
++-----------------------------------+------------------------------------+
+| Aircraft Registration             | Kennung, z.B. ``N12345``           |
++-----------------------------------+------------------------------------+
+| Flightplan Number                 | Flugnummer, falls verfügbar        |
++-----------------------------------+------------------------------------+
+| Flightplan Cruise Altitude        | Reiseflughöhe in Fuß               |
++-----------------------------------+------------------------------------+
+| Flightplan File                   | Pfad zur Flugplandatei             |
++-----------------------------------+------------------------------------+
+| Performance File                  | Pfad zur Flugzeugleistungsdatei    |
++-----------------------------------+------------------------------------+
+| Block Fuel                        | Zu ladender Treibstoff aus dem     |
+|                                   | Treibstoffbericht                  |
++-----------------------------------+------------------------------------+
+| Trip Fuel                         | Benötigter Treibstoff aus dem      |
+|                                   | Treibstoffbericht                  |
++-----------------------------------+------------------------------------+
+| Used Fuel                         | Tatsächlich verbrauchter           |
+|                                   | Treibstoff                         |
++-----------------------------------+------------------------------------+
+| Is Jetfuel                        | Treibstofftyp,                     |
+|                                   | ``1`` ist Kerosin                  |
++-----------------------------------+------------------------------------+
+| Grossweight                       | Gewicht beim Start, lbs            |
++-----------------------------------+------------------------------------+
+| Distance                          | Flugplandistanz in NM              |
++-----------------------------------+------------------------------------+
+| Distance Flown                    | Tatsächlich geflogene Distanz      |
+|                                   | in NM                              |
++-----------------------------------+------------------------------------+
+| Departure Ident                   | ICAO Flugplatzkennung              |
++-----------------------------------+------------------------------------+
+| Departure Name                    | Flugplatzname                      |
++-----------------------------------+------------------------------------+
+| Departure Runway                  | Runway, wenn gefunden              |
++-----------------------------------+------------------------------------+
+| Departure Lonx                    | Koordinaten, falls vorhanden und   |
+|                                   | Flugplatz gefunden.                |
++-----------------------------------+------------------------------------+
+| Departure Laty                    | Wie oben                           |
++-----------------------------------+------------------------------------+
+| Departure Alt                     | Flugplatzhöhe beim Abflug in Fuß   |
++-----------------------------------+------------------------------------+
+| Departure Time                    | Reale Abflugzeit als Ortszeit      |
++-----------------------------------+------------------------------------+
+| Departure Time Sim                | Simulator Abflugzeit in UTC        |
++-----------------------------------+------------------------------------+
+| Destination Ident                 | Gleiches wie oben für das Ziel     |
++-----------------------------------+------------------------------------+
+| Destination Name                  | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Destination Runway                | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Destination Lonx                  | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Destination Laty                  | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Destination Alt                   | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Destination Time                  | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Destination Time Sim              | wie Abflug                         |
++-----------------------------------+------------------------------------+
+| Route string                      | ICAO Routenbeschreibung            |
++-----------------------------------+------------------------------------+
+| Simulator                         | ``X-Plane 11``, ``Prepar3D v4``,   |
+|                                   | etc.                               |
++-----------------------------------+------------------------------------+
+| Description                       | Flugplananmerkungen                |
++-----------------------------------+------------------------------------+
+| Flightplan                        | Der Flugplan im LNMPLN             |
+|                                   | XML Format                         |
++-----------------------------------+------------------------------------+
+| Aircraft Perf                     | Die Flugzeugleistungsdatei im      |
+|                                   | LNMPERF XML Format                 |
++-----------------------------------+------------------------------------+
+| Aircraft Trail                    | Der geflogene Flugzeugpfad und die |
+|                                   | Flugplanvorschau im GPX Format     |
++-----------------------------------+------------------------------------+
+
 
 .. |Add Logbook Entry| image:: ../images/icon_logdata_add.png
 .. |Edit Logbook Entry| image:: ../images/icon_logdata_edit.png
@@ -441,3 +612,8 @@ description                  Freier Text vom Benutzer
 .. |Help| image:: ../images/icon_help.png
 .. |Menu Button| image:: ../images/icon_menubutton.png
 
+.. |Show Information| image:: ../images/icon_globals.png
+.. |Show on Map| image:: ../images/icon_showonmap.png
+.. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
+.. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
+.. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
