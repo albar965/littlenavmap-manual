@@ -280,9 +280,12 @@ Aircraft and Ships
 |                                          | aircraft (jet, piston/turboprop   |
 |                                          | or helicopter).                   |
 +------------------------------------------+-----------------------------------+
-| |Small GA on Ground| |Jet on             | User aircraft or ship on ground   |
+| |Small GA on Ground| |Jet on             | User aircraft on ground or ship.  |
 | Ground| |Helicopter on Ground|           |                                   |
 | |Ship on Ground|                         |                                   |
++------------------------------------------+-----------------------------------+
+| |Carrier| |Frigate|                      | Aircraft carrier and frigate      |
+|                                          | (X-Plane only)                    |
 +------------------------------------------+-----------------------------------+
 | |Aircraft Track Needle|                  | Needle showing the current ground |
 |                                          | track of the aircraft. Aircraft   |
@@ -702,7 +705,7 @@ aircraft trail.
 Airport Traffic Pattern
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Color and indicators depend on user choice in :doc:`HOLD`
+Color and indicators depend on user choice in :doc:`TRAFFICPATTERN`
 dialog.
 
 +-----------------------------------+-----------------------------------+
@@ -1046,3 +1049,5 @@ Winds Aloft
 .. |Victor Airway| image:: ../images/legend_airway_victor.png
 .. |Track East| image:: ../images/legend_track_east.png
 .. |Track West| image:: ../images/legend_track_west.png
+.. |Carrier| image:: ../images/icon_icon_aircraft_carrier.png
+.. |Frigate| image:: ../images/icon_icon_aircraft_frigate.png

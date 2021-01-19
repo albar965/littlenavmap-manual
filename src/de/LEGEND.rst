@@ -328,6 +328,9 @@ Flugzeuge und Schiffe
 | Ground| |Helicopter on Ground|    |                                   |
 | |Ship on Ground|                  |                                   |
 +-----------------------------------+-----------------------------------+
+| |Carrier| |Frigate|               | Flugzeugträger und Fregatte       |
+|                                   | (nur X-Plane)                     |
++-----------------------------------+-----------------------------------+
 | |Aircraft Track Needle|           | Nadel, die die aktuelle Bodenpfad |
 |                                   | des Flugzeugs anzeigt. Die        |
 |                                   | Flugzeugnase zeigt Kurs.          |
@@ -779,7 +782,7 @@ wie der Sichtbarkeit von Flugplanlinie, Flugzeug und Flugzeugpfad.
 Platzrunde
 ~~~~~~~~~~
 
-Farbe und Indikatoren hängen von der Wahl des Benutzers für :doc:`HOLD` ab.
+Farbe und Indikatoren hängen von der Wahl des Benutzers für :doc:`TRAFFICPATTERN` ab.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
@@ -1134,3 +1137,5 @@ Symbol                 Beschreibung
 .. |Victor Airway| image:: ../images/legend_airway_victor.png
 .. |Track East| image:: ../images/legend_track_east.png
 .. |Track West| image:: ../images/legend_track_west.png
+.. |Carrier| image:: ../images/icon_aircraft_carrier.png
+.. |Frigate| image:: ../images/icon_aircraft_frigate.png
