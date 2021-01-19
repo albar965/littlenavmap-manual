@@ -1049,5 +1049,5 @@ Winds Aloft
 .. |Victor Airway| image:: ../images/legend_airway_victor.png
 .. |Track East| image:: ../images/legend_track_east.png
 .. |Track West| image:: ../images/legend_track_west.png
-.. |Carrier| image:: ../images/icon_icon_aircraft_carrier.png
-.. |Frigate| image:: ../images/icon_icon_aircraft_frigate.png
+.. |Carrier| image:: ../images/icon_aircraft_carrier.png
+.. |Frigate| image:: ../images/icon_aircraft_frigate.png
