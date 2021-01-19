@@ -157,12 +157,12 @@ new flight. See :doc:`RESET` for more information.
 |Export as PLN| Export Flight Plan as MSFS 2020 PLN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Saves a flight plan without any annotations if
-programs have problems reading the PLN files saved by *Little Navmap*.
-This is rarely needed.
+Saves a flight plan for Microsoft Flight Simulator 2020.
+
+*Little Navmap* can read and write this format.
 
 This does not change the current file
-name and type. Further saves will still use the same file name and
+name and type. Further saves will still use the same LNMPLN file name and
 format as before.
 
 See also :doc:`FLIGHTPLANFMT`.
@@ -172,12 +172,12 @@ See also :doc:`FLIGHTPLANFMT`.
 |Export as PLN| Export Flight Plan as P3D or FSX PLN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Saves a flight plan without any annotations if
-programs have problems reading the PLN files saved by *Little Navmap*.
-This is rarely needed.
+Saves a flight plan for FSX or Prepar3D.
+
+*Little Navmap* can read and write this format.
 
 This does not change the current file
-name and type. Further saves will still use the same file name and
+name and type. Further saves will still use the same LNMPLN file name and
 format as before.
 
 See also :doc:`FLIGHTPLANFMT`.
@@ -189,7 +189,7 @@ See also :doc:`FLIGHTPLANFMT`.
 
 Saves the flight plan using the new X-Plane FMS 11 format.
 
-A warning describing the format restrictions will be shown.
+*Little Navmap* can read and write this format.
 
 See :doc:`FLIGHTPLANFMT` for more information on
 limitations.
@@ -299,15 +299,29 @@ X-IvAp <https://www.ivao.aero/softdev/ivap.asp>`__.
 :doc:`ROUTEEXPORT` will appear
 before where you can add all needed information.
 
+Export Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sub-menu with several actions that affect export to most flight plan formats. This does not affect the saving
+of fliight plans to LNMPLN.
+
+.. warning::
+
+      Note that saving flight plans with one or more of these methods has limitations:
+
+      -  Several approach leg types like holds, turns and procedure turns
+         cannot be displayed properly by using just waypoints or coordinates.
+      -  Speed and altitude limitations are not included in the exported legs.
+
 .. _export-flight-plan-approach-waypoints:
 
 Export Waypoints for Approaches
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''
 
 .. _export-flight-plan-sid-star-waypoints:
 
 Export Waypoints for SID and STAR
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''
 
 Save procedure waypoints instead of procedure information if checked.
 This affects all flight plan export formats except the native LNMPLN format.
@@ -318,18 +332,10 @@ display of approach procedures, SID or STAR.
 Procedure information is replaced with respective waypoints that allow
 to display procedures in limited GPS or FMS units.
 
-.. warning::
-
-      Note that saving flight plans with this method has limitations:
-
-      -  Several approach leg types like holds, turns and procedure turns
-         cannot be displayed properly by using just waypoints or coordinates.
-      -  Speed and altitude limitations are not included in the exported legs.
-
 .. _export-flight-plan-airway-waypoints:
 
 Export Waypoints for Airways
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''
 
 Enabling this function will omit all airway information in the exported flight plan formats.
 A chain of waypoints will be exported instead of waypoint/airway/waypoint triplets.
@@ -1876,7 +1882,7 @@ This mode blends navaids and more from the Navigraph database with the
 simulator database. This affects the map display, all information and
 all search windows.
 
-This is the default and recommended mode for all simulators.
+**This is the default and recommended mode for all simulators.**
 
 .. _navigraph-none:
 
@@ -1949,9 +1955,6 @@ See also :ref:`load-scenery-library-user-airspaces`.
 
 Open the ``Load Scenery Library`` dialog. See :doc:`SCENERY` for more information.
 
-This menu item is disabled if no flight simulator scenery databases are
-found.
-
 Tools Menu
 ~~~~~~~~~~
 
@@ -2020,6 +2023,8 @@ Save Options and State
 Saves all options, dialog settings, tab arrangements and the window
 layout. This is normally only done when exiting *Little Navmap*.
 
+.. _files_and_directories:
+
 Files and Directories
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2047,7 +2052,7 @@ See also :ref:`configuration` for details about the files used.
 .. warning::
 
    There is usually no need to edit this file directly.
-   Editing this file the wrong way might break *Little Navmap*.
+   Editing this file the wrong way might crash *Little Navmap*.
 
 Show Database Files
 '''''''''''''''''''''''''''''''''''''''
@@ -2064,9 +2069,7 @@ See also :ref:`files-databases` for details about the different databases.
 |Options| Options
 ^^^^^^^^^^^^^^^^^
 
-Opens the options dialog which allows to change the user interface, map display, weather and more.
-
-Open :doc:`OPTIONS`.
+Opens the dialog :doc:`OPTIONS` which allows to change the user interface, map display, weather and more.
 
 .. _window-menu:
 

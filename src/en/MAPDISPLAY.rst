@@ -61,7 +61,7 @@ edit mode can be disabled using the toolbar or ``Flight Plan`` ->
 :ref:`edit-flight-plan-on-map` in the main menu. See also :doc:`MAPFPEDIT`.
 
 The mouse click sensitivity can be adjusted in the ``Options`` dialog on
-the page :ref:`map`.
+the page :ref:`map-navigation`.
 
 .. note::
 
@@ -627,6 +627,8 @@ The coordinate format depends on the selection in ``Options`` on page :ref:`unit
 Set the center point for the distance search function. See :ref:`distance-search`. The center for the distance
 search is highlighted by a |Distance Search Symbol| symbol.
 
+The symbol cannot be hidden. Set it at a remote position if you like to get rid of it.
+
 .. _set-home:
 
 |Set Home| Set Home View
@@ -636,6 +638,8 @@ Set the currently visible map view as your home view. The center of the
 home area is highlighted by a |Home Symbol| symbol.
 
 You can jump to the home view by using main menu ``Map`` -> ``Goto Home``.
+
+The symbol cannot be hidden. Set it at a remote position if you like to get rid of it.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png

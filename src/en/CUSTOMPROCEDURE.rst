@@ -19,9 +19,9 @@ unlike :doc:`TRAFFICPATTERN` which is only a map display feature.
 This type of approach can be removed like other procedures by deleting
 one of the legs in the flight plan table.
 
-The approach is saved in the LNMPERF flight plan file like other approaches. User defined waypoints are used for the
+The approach is saved in the LNMPLN flight plan file like other approaches. User defined waypoints are used for the
 initial fix and runway threshold when exporting a custom approach to
-other flight plan formats than PLN.
+other flight plan formats than LNMPLN.
 
 Waypoints
 ~~~~~~~~~

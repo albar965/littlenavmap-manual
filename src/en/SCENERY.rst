@@ -101,15 +101,14 @@ compatible changes where a reload is recommended but not required.
     manually or using other programs. *Little Navmap* might crash or show
     wrong data otherwise.
 
-.. _load-scenery-library-dialog-mfsf-apt-navdata:
+.. _load-scenery-library-dialog-msfs-apt-navdata:
 
 Microsoft Flight Simulator 2020  Airports and Navdata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap*  has the following limitations due to MSFS BGL restrictions and lack of
-documentation at time of writing:
+*Little Navmap*  has the following limitations due to MSFS BGL restrictions:
 
--  *Little Navmap* cannot read SID and STAR from MSFS.
+-  *Little Navmap* cannot read SID and STAR from MSFS. This is planned for a future version.
 -  MSFS seems to have no clear concept of scenery order (``Content.xml`` is unreliable).
    Add-ons are loaded by alphabetical order by *Little Navmap*.
    To put an add-on to the end of the loading list prefix the folder name with a ``z_``,

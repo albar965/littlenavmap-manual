@@ -31,14 +31,12 @@ Click on the tooltip or hover the mouse cursor above to see more details.
 Calculate from departure to destination
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Calculate a flight plan fragment between the first and last selected
-waypoint if this button is checked. All existing legs in between are deleted and are replaced with the
-calculated flight plan fragment.
+Calculates a flight plan between start and destination.
 
 The dialog header will show a red error message if the flight plan is not valid for calculation. Hover the mouse cursor over the message or click it for details.
 
 Procedures are not affected by this calculation method. The route will be built from SID exit to
-STAR or approach entry if present.
+STAR or approach entry, if present.
 
 .. _routecalc-selection:
 
@@ -166,7 +164,7 @@ This is the fastest calculation method which gives instant results.
 **Putting the slider on the rightmost position** instructs the route calculation to use only direct
 waypoint connections. The calculation ensures that the selected waypoints are not too close
 together and have a distance of around 200 NM where possible.
-Cruise altitude is not relevant since no airways are
+Cruise altitude is not relevant for calculation since no airways are
 used.
 
 This calculation method is slower depending on the covered region. A progress dialog might pop

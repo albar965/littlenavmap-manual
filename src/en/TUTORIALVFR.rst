@@ -7,7 +7,7 @@ General
 This tutorial will show how to create a simple flight plan based on the
 map and its context menus.
 
-The flight plan included in the *Little Navmap* installation directory:
+The flight plan is included in the *Little Navmap* installation directory:
 ``.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) to Challes-les-Eaux (LFLE).pln``.
 
 The airport names might differ depending on simulator.
@@ -146,7 +146,7 @@ Now there is a flight plan. Yours might look a bit different.
 
 You can also use the drag and drop feature to move points or add new
 ones. Enable it by checking ``Flight Plan`` ->
-``Edit Flight Plan on Map`` |Edit Flight Plan on Map| (see :doc:`MAPFPEDIT`) and click on a
+``Edit Flight Plan on Map`` |Edit Flight Plan on Map|   and click on a
 flight plan waypoint to move it. Click on a flight plan leg to add a new
 waypoint into this leg.
 

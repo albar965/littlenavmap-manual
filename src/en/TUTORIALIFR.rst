@@ -152,7 +152,7 @@ Check the following in the airport search tab:
 #. Deselect ``Military`` and ``Closed`` (click the checkboxes twice):
    This will return only civilian airports and avoid airports that have
    all runways closed.
-#. In the button ``Any Surface`` select ``Any is Hard`` to avoid
+#. Select ``Any is Hard`` in the button ``Any Surface``  to avoid
    airports having only soft surfaced runways.
 #. Select a minimum runway length of 2,500 ft or whatever you chosen
    aircraft needs in the field ``Runways:`` ``Min:``.
@@ -203,7 +203,7 @@ We'll select an approach procedure now:
    for each approach.
 -  Choose ``Approach VORDME 13 FD13`` using ``Transition (Full) CHINN``
    since we expect to land on runway 13. You can also use any other approach for this runway
-   if VORDME 13 is not available
+   if VORDME 13 is not available.
 
 The top label in the procedure search shows
 ``Wick (EGPC) Approach VORDME 13 FD13 Transition (Full) CHINN`` for the

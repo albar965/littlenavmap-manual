@@ -57,7 +57,7 @@ This will load and apply the layout immediately.
 Fullscreen
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can toggle fullscreen from the menu ``Window`` -> :ref:`fullscreen-menu` or by pressing ``Ctrl+F11``.
+You can toggle fullscreen from the menu ``Window`` -> :ref:`fullscreen-menu` or by pressing ``Shift+F11``.
 
 Additionally, you can use the map context menu (:ref:`map-fullscreen`) or the button ``Exit
 fullscreen mode``  to exit fullscreen mode and return to normal mode.

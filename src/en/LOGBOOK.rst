@@ -22,6 +22,8 @@ editing (:ref:`userpoints`).
       Use :ref:`reset-for-new-flight` to be sure
       that the logbook flight detection is set up for a new flight.
 
+      The logbook entries will not be recorded between different sessions.
+      Update the logbook entry manually if you have to exit the flight simulator or *Little Navmap*.
 
 Logbook Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -207,6 +209,10 @@ Show flight plan preview
 
 Show aircraft trail
 """""""""""""""""""""""""""""""""
+
+These three options enable or disable the respective preview features for selected logbook entries.
+
+Note that the flight plan preview and flight path are only displayed for the first entries of the selection.
 
 .. _open-flight-plan-logbook:
 

@@ -126,7 +126,8 @@ context, the selection in the search result table or previous additions.
 
 ``Type`` can be selected from a drop down list or entered freely.
 
-See :doc:`REMARKS` for more information about using web links in this field.
+The field ``Description`` allows multi line text and special characters.
+Formatting like italic or bold is not supported. See :doc:`REMARKS` for more information about using web links in this field.
 
 The field ``Visible from`` allows to define visibility on the map
 depending on zoom distance. The zoom distance (viewpoint distance to

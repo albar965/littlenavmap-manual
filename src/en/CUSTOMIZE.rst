@@ -156,12 +156,12 @@ Modify the icon and save it into the settings directory
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap* will
 automatically detect and use the icon on next startup.
 
-The format is limited to SVG (`Scalable Vector Graphics (SVG) Tiny 1.2
+The formats are limited to PNG, JPG, GIF and SVG (`Scalable Vector Graphics (SVG) Tiny 1.2
 Specification <https://www.w3.org/TR/SVGMobile12>`__) where advanced
 graphics effects like textures will not work.
 
 You can use the free vector drawing program
-`Inkscape <https://inkscape.org>`__ to edit the icons. Restart *Little
+`Inkscape <https://inkscape.org>`__ to edit SVG icons. Restart *Little
 Navmap* to see the changes.
 
 .. _customize-aircraft-icons:
@@ -259,5 +259,5 @@ defines the category. For example ``userpoint_My Places.png`` creates a
 new category ``My Places``.
 
 Do not use special characters like ``/`` for categories. Only letters,
-digits, space, underscore and dashes are allowed. Umlauts and accented
+digits, space, underscore and dashes are allowed. Special characters like umlauts or accented
 characters are no problem.

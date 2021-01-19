@@ -195,7 +195,7 @@ Opens a file or directory selection dialog for each enabled export format once
 :ref:`multiexport-flight-plan` is used. The dialog allows to cancel an export or change the file
 name or path.
 
-Pressing cancel in this dialog does not stop the export process.
+Pressing cancel in this dialog does not stop the export process for further formats.
 
 Do not show file dialog. Backup existing files in case of conflict
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -213,7 +213,10 @@ Do not show file dialog. Overwrite files without warning
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Present files with the same name are overwritten. Be careful with this option, especially when
-using the :ref:`multiexport-export-lnmpln` option. **No backup will be created when saving.**
+using the :ref:`multiexport-export-lnmpln` option.
+
+**No backup will be created when saving.**
+
 This helps to reduce clutter in the output directories but may overwrite flight plan files.
 
 

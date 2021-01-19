@@ -161,7 +161,7 @@ Highlights and User Features
 |                                   | The width of distance measurement |
 |                                   | lines can be changed in the       |
 |                                   | dialog ``Options`` on page        |
-|                                   | :ref:`map-display`. The labels    |
+|                                   | :ref:`map-display-2`. The labels  |
 |                                   | can be changed in the tree view   |
 |                                   | on the right side of the          |
 |                                   | same page.                        |

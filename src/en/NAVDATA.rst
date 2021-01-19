@@ -68,7 +68,7 @@ airport runway layout precisely.
 Use Navigraph for Navaids and Procedures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is the default and strongly recommended mode.
+**This is the default and strongly recommended mode.**
 
 This mode blends navaids and other features from the Navigraph database
 with the simulator database. This affects the map display, all
