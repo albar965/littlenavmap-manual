@@ -69,6 +69,18 @@ SimConnect
 
 Die mitgelieferte SimConnect-Bibliothek ist kompatibel mit allen FSX- und P3D-Versionen sowie dem Microsoft Flugsimulator 2020.
 
+.. _unblock-application:
+
+Anwendung entsperren
+^^^^^^^^^^^^^^^^^^^^^
+
+Je nach System- und Antivirus-Einstellungen kann es erforderlich sein, die ausführbaren Dateien zu entsperren.
+Dies gilt für *Little Navmap* (``littlenavmap.exe``), *Little Navconnect* (``littleconnect.exe``) und das *Little Xpconnect* Plugin (``win.xpl``).
+
+Sie können dies im Windows-Explorer tun, indem Sie Eigenschaften auswählen und ``Datei entsperren`` ankreuzen.
+Eine detaillierte Anleitung finden Sie zum Beispiel hier:
+``How to Unblock a File in Windows 10 <https://mywindowshub.com/how-to-unblock-a-file-in-windows-10/>``.
+
 .. _improve-start-up-time:
 
 Verbesserte Startzeit

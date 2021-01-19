@@ -1,6 +1,6 @@
 .. meta::
    :description: Little Navmap Benutzerhandbuch
-   :keywords: Navigation, Flight Simulator, Map, Flightplan, FSX, MSFS, Prepar3D, X-Plane, Flightplanner
+   :keywords: Navigation, Flugsimulator, Karte, Flugplan, FSX, MSFS, Prepar3D, X-Plane, Flugplaner
 
 
 Little Navmap Benutzerhandbuch

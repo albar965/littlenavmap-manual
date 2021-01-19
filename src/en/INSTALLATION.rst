@@ -71,6 +71,18 @@ does not require a separate installation of SimConnect.
 The included SimConnect library is compatible with all FSX and P3D versions as well as Microsoft
 Flight Simulator 2020.
 
+.. _unblock-application:
+
+Unblock Application
+^^^^^^^^^^^^^^^^^^^^^
+
+Depending on system and anti-virus settings it might be needed to unblock the executable files.
+This applies to *Little Navmap* (``littlenavmap.exe``), *Little Navconnect* (``littleconnect.exe``) and the *Little Xpconnect* plugin (``win.xpl``).
+
+You can do this in the Windows explorer by selecting properties and checking ``Unblock file``.
+Detailed instruction can be found here, for example:
+`How to Unblock a File in Windows 10 <https://mywindowshub.com/how-to-unblock-a-file-in-windows-10/>`__.
+
 Improve Start-up Time
 ^^^^^^^^^^^^^^^^^^^^^
 
