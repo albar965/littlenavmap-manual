@@ -88,15 +88,15 @@ Schaltflächen
       direkten Wegpunktverbindungen im Flugplan hinzu.
    -  ``Fluggeschwindigkeits- und Höhenanweisungen für Reiseflug schreiben``: Fügt
       die Reiseflughöhe aus dem Flugplan und die Geschwindigkeit aus der Flugzeugleistung.
-   - ``Wegpunkte statt Luftstraßen schreiben``: Nimmt keine Luftstraßennamen in die Zeichenkette
+   -  ``Wegpunkte statt Luftstraßen schreiben``: Nimmt keine Luftstraßennamen in die Zeichenkette
       sondern erweitert sie und fügt nur die Namen der Wegpunkte ein.
    -  ``Ausweichflugplätze schreiben``: Fügt alle Ausweichflugplätze an das
       Ende der Beschreibung an.
-   - ``SID und STAR schreiben``: Fügt SID- und STAR-Namen ein, wenn diese für
+   -  ``SID und STAR schreiben``: Fügt SID- und STAR-Namen ein, wenn diese für
       Abflug oder Ankunft gewählt wurden.
    -  ``Generische SID und STAR schreiben``: Fügt die allgemeinen
       Schlüsselwörter ``SID`` und ``STAR`` hinzu.
-   - ``Schreibe keine SID und STAR``: Fügt keine SID- und STAR-Informationen ein.
+   -  ``Schreibe keine SID und STAR``: Fügt keine SID- und STAR-Informationen ein.
    -  ``Wegpunkte statt Luftstraßen schreiben``: Fügt keine Luftstraßennamen
       ein, sondern verwendet nur die Wegpunkte.
    -  ``Lese Flugplätze am Ende als Ausweichflugplätze``:
@@ -110,8 +110,8 @@ Schaltflächen
          Flugplätzen als Zwischenziele und dem letzten als Ziel. Siehe
          Beispiele unten.
 
-   - ``Lese ersten und letzten Eintrag als Navigationshilfe``: Benötigt keine Flughäfen als Start und Ziel und löst das erste und letzte Element als Navigationshilfen auf. Nützlich zum Lesen von Schnipseln.
-   - ``Lesen: Koordinaten an Wegpunkte anpassen``: Versucht, Koordinaten mit nahegelegenen Wegpunkten abzugleichen.
+   -  ``Lese ersten und letzten Eintrag als Navigationshilfe``: Benötigt keine Flughäfen als Start und Ziel und löst das erste und letzte Element als Navigationshilfen auf. Nützlich zum Lesen von Schnipseln.
+   -  ``Lesen: Koordinaten an Wegpunkte anpassen``: Versucht, Koordinaten mit nahegelegenen Wegpunkten abzugleichen.
       ``EICK 5000N00760W EDDF`` resultiert z.B. in ``EICK GAPLI EDDF``, wenn dies aktiviert ist.
 
 -  ``Erstelle Flugplan``: Schließt den Dialog und erstellt einen neuen

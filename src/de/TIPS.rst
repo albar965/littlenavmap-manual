@@ -83,7 +83,7 @@ Angenommen, Sie würden gerne nach Osten fliegen:
    ``Zentrum für Distanzsuche setzen`` |Set Center for Distance Search|.
    Dies ist der Mittelpunkt für die räumliche Suche.
 #. Fügen Sie bei der Suche zusätzliche Kriterien wie beleuchtete
-   Landebahnen, Prozeduren, Treibstoff, minimale Pistenlänge und mehr
+   Landebahnen, Prozeduren, Treibstoff, minimale Runway-Länge und mehr
    hinzu.
 #. Stellen Sie die minimale und maximale Entfernung ein, richten Sie die
    Richtung auf ``Ost`` und klicke vorher auf das Kontrollkästchen

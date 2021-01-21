@@ -74,18 +74,13 @@ werden. *Little Navmap* verweigert je nach Fehler die Verwendung der Prozedur, d
       Geschwindigkeit. Beispiel: ``A 1.800``.
    -  **Präfix** ``B``: Fliegen Sie in oder unter Höhe oder
       Geschwindigkeit. Beispiel: ``B 10.000`` oder ``B 220``.
-   -
-
-      -  **Reichweite:** Fliegen Sie auf oder über Höhe eins und auf
-         oder unter Höhe zwei. Beispiel: ``A 8.000, B 10.000``.
-
+   -  **Bereich:** Fliegen Sie auf oder über der ersten Höhe und auf
+      oder unter der zweiten Höhe. Beispiel: ``A 8.000, B 10.000``.
    -  Höhen- und Geschwindigkeitsbegrenzung: Werte getrennt durch
       ``/``. Beispiel: ``A 8.000, B 10.000/B220``.
-   -
-
-      -  **Nur Geschwindigkeitsbegrenzung:** Ein vorangestelltes ``/``
-         bedeutet keine Höhe, sondern eine Geschwindigkeitsbeschränkung.
-         Beispiel: ``/B250``.
+   -  **Nur Geschwindigkeitsbegrenzung:** Ein vorangestelltes ``/``
+      bedeutet keine Höhe, sondern eine Geschwindigkeitsbeschränkung.
+      Beispiel: ``/B250``.
 
 -  ``Anmerkungen``: Zeigt die Überflug-, Drehrichtungsanzeige oder die
    zugehörige Navigation für einen Abschnitt an.

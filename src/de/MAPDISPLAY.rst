@@ -245,7 +245,7 @@ Siehe :ref:`airport-diagram` für mehr Details über das Flugplatzdiagramm.
 
         Detailansicht des Flugplatzdiagramms. Zeigt rechts
         blaue Gate und links grüne Parkplätze für die allgemeine
-        Luftfahrt. Die langgestellte Schwelle der Piste 33 ist sichtbar.
+        Luftfahrt. Die langgestellte Schwelle des Runway 33 ist sichtbar.
         Gestrichelte gelbe Linien zeigen Rollbahnpfade an.
 
 .. _map-context-menu:

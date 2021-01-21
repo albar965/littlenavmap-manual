@@ -55,7 +55,7 @@ Die folgende Funktionalität ist verfügbar:
    nächstes klicken:
 
    -  **Auf einen Flugplatz:** Der Flugplatz ersetzt den Abflug- oder
-      Zielflugplatz. Eine Standardpiste wird als Startposition zugewiesen,
+      Zielflugplatz. Eine Standard-Runways wird als Startposition zugewiesen,
       wenn der neue Flugplatz ein Startflugplatz ist.
    -  **Auf eine Navigationshilfe:** Das Objekt ersetzt den Abflug- oder
       Zielflugplatz, was allerdings zu einem ungültigen Flugplan führt. Der

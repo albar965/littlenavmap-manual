@@ -33,9 +33,9 @@ Voraussetzungen für dieses Tutorial:
 -  Sie kennen die Anforderungen für Ihr Flugzeug:
 
    -  Mindestreichweite
-   -  Mindestpistenlänge
-   -  Feste Pisten
-   -  Benötigen einen Parkplatz am Ziel
+   -  Mindestlänge für Runway
+   -  Feste Runways
+   -  Benötigt einen Parkplatz am Ziel
    -  Kraftstoff für den Rückweg
 
 Flug vorbereiten
@@ -198,7 +198,7 @@ Anpassungen, obwohl wir noch nicht da sind:
    Ergebnistabelle.
 -  Wählen Sie :ref:`show-information-search` |Show Information|. Dies füllt
    die Reiter im Dockfenster ``Informationen``.
-   -  Wählen Sie den Reiter ``Flugplatz`` und darunter den Reiter ``Wetter`` und suchen Sie den Abschnitt
+-  Wählen Sie den Reiter ``Flugplatz`` und darunter den Reiter ``Wetter`` und suchen Sie den Abschnitt
    ``Beste Runways für Wind``, um sich ein Bild von der
    zu erwartenden Landebahn zu machen. Starten Sie Wetterprogramme von
    Drittanbietern, wenn Sie diese nutzen.

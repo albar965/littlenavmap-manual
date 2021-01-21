@@ -45,20 +45,20 @@ Format                             Ext.     Open Exp Airw VFR/IFR User Wpt. Name
 LNMPLN                             LNMPLN   X    X   X    X       X               X       X            X           X            X
 Microsoft Flight Simulator 2020    PLN      X    X   X    X       X               0       0 [6]_       X           0            X [5]_
 FSX and Prepar3D                   PLN      X    X   X    X       X               0       X            X           0            0
-FSX and Prepar3D annotated         PLN      X    X   X    X       X               0       X            X           X            X
+FSX and Prepar3D annotiert         PLN      X    X   X    X       X               0       X            X           X            X
 FS9 PLN                            PLN      X    0   X    X       X               0       X            X           0            0
 X-Plane FMS 11                     FMS      X    X   X    0       X               0       0            X           0            X
 X-Plane FMS 3                      FMS      X    X   0    0       X               0       0            X           0            0
 FlightGear                         FGFP     X    X   0    0       0               0       0            0           0            X [2]_
 FSC                                PLN      X    0   X    0       X               0       0            0           0            0
-Aerosoft Airbus and others         FLP      X    X   X    0       0               0       0            0           0            X
+Aerosoft Airbus und andere         FLP      X    X   X    0       0               0       0            0           0            X
 Aerosoft CRJ                       FLP      X    X   X    0       0               0       0            0           0            X
 Garmin                             FPL      X    X   0    0       0               0       0            0           0            0
 Reality XP GNS 530W/430W V2        FPL      0    X   0    0       X               0       0            0           0            0
 Reality XP GTN 750/650 Touch       GFP      0    X   X    0       X [1]_          0       0            0           0            X
 Flight1 Garmin GTN 650/750         GFP      0    X   X    0       0               0       0            0           0            0
-PMDG Aircraft                      RTE      0    X   X    0       0               0       0            0           0            0
-Rotate MD-80, JARDesign and others TXT      0    X   X    0       0               0       0            0           0            0
+PMDG Flugzeuge                     RTE      0    X   X    0       0               0       0            0           0            0
+Rotate MD-80, JARDesign und andere TXT      0    X   X    0       0               0       0            0           0            0
 Majestic Dash MJC8 Q400            FPR      0    X   0    0       0               0       0            0           0            0
 IXEG Boeing 737                    FPL      0    X   X    0       0               0       0            0           0            0
 Flight Factor Airbus               corte.in 0    X   X    0       0               0       0            X           0            X [2]_
@@ -77,7 +77,7 @@ VATSIM vPilot oder SWIFT [3]_      VFP      0    X   X    0       0             
 UFMC                               UFMC     0    X   X    0       0               0       0            0           0            0
 X-FMC                              FPL      0    X   X    0       0               0       0            0           0            0
 Garmin exchange format             GPX      \-   X   \-   \-      \-              \-      \-           \-          \-           \-
-HTML flight plan web page          HTML     \-   X   \-   \-      \-              \-      \-           \-          \-           \-
+HTML Flugplan-Webseite             HTML     \-   X   \-   \-      \-              \-      \-           \-          \-           \-
 ================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
 
 Für ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2`` und ``Reality XP

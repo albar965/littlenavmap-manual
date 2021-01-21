@@ -430,8 +430,8 @@ benutzen, um Landebahnen zu zeichnen.
 +-----------------------------------+-----------------------------------+
 | |Airport Text|                    | Flugplatz-Beschriftung mit Name,  |
 |                                   | Kennung, ATIS-Frequenz, Höhe,     |
-|                                   | beleuchteten Pisten (``L``) und   |
-|                                   | Länge der längsten Piste. Die     |
+|                                   | beleuchteten Runways (``L``) und  |
+|                                   | Länge des längsten Runway. Die     |
 |                                   | Textbeschriftungen für einen      |
 |                                   | Flugplatz können im Dialog        |
 |                                   | ``Einstellungen`` auf der         |

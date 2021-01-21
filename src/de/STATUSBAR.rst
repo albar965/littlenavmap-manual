@@ -58,7 +58,7 @@ Anzeigen (von links nach rechts) an:
    -  Magnetische Abweichung an der Mauszeigerposition in Grad West oder
       Ost.
 
--  Aktuelles Datum des Monats und Zulu/UTC-Zeit
+-  Aktuelles Datum des Monats und Zulu bzw. UTC-Zeit
    ``Stunden:Minuten:Sekunden``. Dies ist die reale Weltzeit und nicht
    die Simulatorzeit. Der Tooltip zeigt mehr Datums- und
    Zeitinformationen an.

@@ -49,7 +49,7 @@ erstellen
 Öffnet einen Flugplan mit einem der folgenden Formate:
 
 - LNMPLN. Dies ist das Standardformat von *Little Navmap*, das alle Flugplanfunktionen wie Anmerkungen unterstützt.
-   Siehe :ref:`flight-plan-formats-lnmpln` für Informationen über dieses Format.
+  Siehe :ref:`flight-plan-formats-lnmpln` für Informationen über dieses Format.
 - PLN: FSX, FS9, FSC oder MSFS.
 - FLP
 - FMS: X-Plane FMS 11 oder FMS 3
@@ -785,7 +785,7 @@ Sie können den gelben Ring im Einstellungsdialog auf der Seite :ref:`map-displa
 
 .. figure:: ../images/airportaddonforce.jpg
 
-       Ein: Alle großen Flugplätze und zusätzlich kleine Pisten werden in der Karte gelb markiert.
+       Ein: Alle großen Flugplätze und zusätzlich kleine Runways werden in der Karte gelb markiert.
 
 
 .. _show-airports-with-hard-runways:

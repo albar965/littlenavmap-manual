@@ -123,10 +123,10 @@ der Tastatur zu aktivieren.
    verkleinert horizontal.
 -  ``*`` und ``/``: Auch auf dem Nummernblock. Vergrößert und
    verkleinert vertikal.
--  ``0`` oder ``Ins`` : Setzt die Ansicht auf 100 Prozent zurück und
+-  ``0`` oder ``Einfg`` : Setzt die Ansicht auf 100 Prozent zurück und
    zeigt den gesamten Flugplan im Höhenprofil an.
--  ``Home`` und ``Ende``: Springen Sie zum Start- oder Zielort.
--  ``PageUp`` und ``PageDown``: Eine Seite vorwärts oder rückwärts
+-  ``Pos1`` und ``Ende``: Springen Sie zum Start- oder Zielort.
+-  ``BildAuf`` und ``BildAb``: Eine Seite vorwärts oder rückwärts
    blättern.
 
 .. _context-menu:
