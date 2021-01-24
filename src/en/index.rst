@@ -7,24 +7,22 @@ Little Navmap User Manual
 
 *Little Navmap* is a free open source flight planner, navigation tool,
 moving map, airport search and airport information system for Flight
-Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 to v4 and
+Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 to v5, Microsoft Flight Simulator 2020 and
 X-Plane 11.
+
+   More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
+   Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
+
+**You can get the latest version of this manual in different formats from here:**
+`User Manuals <https://albar965.github.io/manuals.html>`__
 
 **Do not use this program for real world navigation.**
 
-For *Little Navmap* versions |version|. Last update on |today|.
+For *Little Navmap* versions |version|. Last updated on |today|.
 
-More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
-Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
-The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.
-
---------------
-
-This manual was created using `Sphinx <https://www.sphinx-doc.org/>`__ and the
-`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__.
-PDF and MOBI formats converted using `Calibre <https://calibre-ebook.com/>`__
-
---------------
+=========== ===========
+|Sunshadow| |Spherical|
+=========== ===========
 
 Table of Contents
 ------------------------------
@@ -113,3 +111,13 @@ Table of Contents
    GLOSSARY
    LICENSE
 
+--------------------------
+
+This manual was created using `Sphinx <https://www.sphinx-doc.org/>`__ and the
+`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__.
+PDF and MOBI formats converted using `Calibre <https://calibre-ebook.com/>`__
+
+The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.
+
+.. |Spherical| image:: ../images/spherical_small.jpg
+.. |Sunshadow| image:: ../images/sunshadow_small.jpg

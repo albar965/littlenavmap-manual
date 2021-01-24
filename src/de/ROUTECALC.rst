@@ -62,7 +62,7 @@ Legt die Reiseflughöhe fest, die bei der Berechnung der Route für die Auswahl 
 
 Der Wert wird dem Flugplan (:ref:`flight-plan-altitude`) nach der Berechnung zugewiesen.
 
-Beachten Sie, daß eine Änderung im Fenster ``Flugplanung`` nicht automatisch in dieses Fenster übertragen wird.
+Beachten Sie, dass eine Änderung im Fenster ``Flugplanung`` nicht automatisch in dieses Fenster übertragen wird.
 
 Die Berechnung kann fehlschlagen, wenn hier zu niedrige oder zu hohe Werte verwendet werden.
 

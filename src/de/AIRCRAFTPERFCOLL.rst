@@ -37,7 +37,7 @@ Führen Sie die folgenden Schritte aus, um die Leistung für ein Flugzeug
 zu erfassen.
 
 #. Verbinden Sie *Little Navmap* mit dem Simulator.
-#. Schätzen Sie den notwendigen Treibstoff ab und tanken Sie Ihr Flugzeug bestmöglichst für die Reise.
+#. Schätzen Sie den notwendigen Treibstoff ab und tanken Sie Ihr Flugzeug bestmöglich für die Reise.
 #. Verwenden Sie eine typische Beladung für das Flugzeug.
 #. Erstellen und verwenden Sie einen Flugplan für die Reise. Verwenden
    Sie die typische Entfernung und Reiseflughöhe für dieses Flugzeug.
@@ -58,7 +58,7 @@ zu erfassen.
 .. warning::
 
     Vergessen Sie nicht, mindestens ausreichend Reservekraftstoff
-    hinzuzufügen. Andernfalls geht ihnen am Zielort der Treibstoff aus, wenn
+    hinzuzufügen. Andernfalls geht Ihnen am Zielort der Treibstoff aus, wenn
     Sie sich auf diesen Plan verlassen.
 
 Weitere empfohlene Eingabefelder sind ``Verwendbarer Treibstoff``,
@@ -95,7 +95,7 @@ Schaltflächen
 -  |Restart Aircraft Performance Collection|
    ``Erfassung der Flugzeugleistung neu starten``: Setzt alle gesammelten
    Kraftstoff- und Geschwindigkeitsparameter auf Null zurück.
-   Die Leistungserfassung auch während des Fluges weiter fortgesetzt.
+   Die Leistungserfassung wird auch während des Fluges fortgesetzt.
 -  |Merge collected Aircraft Performance|
    ``Ermittelte Flugzeugleistung zusammenführen``: Öffnet einen Dialog, in dem
    die gesammelten Leistungsparameter in die aktuell geladene
@@ -116,7 +116,7 @@ Flugzeug
 
 -  ``Aktueller Flugabschnitt``: Zeigt an, welche Flugphasen (``Steigflug``,
    ``Reiseflug`` und mehr) erkannt werden.
--  ``Flugzeugstatus``: Weitere Informationen zum Flugzeugstatus wie
+-  ``Flugzeugstatus``: Weitere Informationen zum Flugzeugstatus, wie
    Treibstofffluss.
 
 Treibstoff
@@ -128,7 +128,7 @@ Treibstoff
    Kraftstofftyp liefert.
 -  ``Verbraucht``: Der bisherige Kraftstoffverbrauch seit dem
    Neustart von *Little Navmap* oder dem letzten Zurücksetzen der
-   Eraffungsfunktion.
+   Erfassungsfunktion.
 -  ``Treibstoff Rollen``: Kraftstoff, der vom ersten erfassten
    Kraftstoffdurchfluss zum Abheben verwendet wird.
 

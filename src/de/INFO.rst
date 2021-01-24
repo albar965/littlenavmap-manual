@@ -93,7 +93,7 @@ Navigationsdaten aktualisiert werden können.
 
 .. note::
 
-    Die Verweise werden als reiner Text mit einer zusätzlichen Bemerkung wie ``Datei nicht gefunden`` angezeigt, wenn die Datei oder der Ordner fehlt.
+    Die Verweise werden als reiner Text mit einer zusätzlichen Bemerkung, wie ``Datei nicht gefunden``, angezeigt, wenn die Datei oder der Ordner fehlt.
     Dies kann passieren, wenn Sie Datenbanken zwischen Computern kopieren und hat keine weiteren Folgen.
 
 
@@ -153,7 +153,7 @@ Der Pfad zu den Flugplatz-Dateien wird im Abschnitt ``Dateien``
 angezeigt.
 
 Sie können jeden Dateityp verwenden. Eine Datei wird mit der
-Standardanwendung wie einen PDF-Reader geöffnet, wenn Sie auf den Link
+Standardanwendung, wie einen PDF-Reader, geöffnet, wenn Sie auf den Link
 klicken.
 
 Beispiele für den Flugplatz Ouessant (``LFEC``):

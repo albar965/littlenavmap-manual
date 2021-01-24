@@ -23,7 +23,7 @@ nicht die erwarteten Ergebnisse liefert.
            Search oder drücken Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 
 Filter werden durch verschiedene Kontrollen definiert, die meist
-selbsterklärend sind. Nur Textfilter und die Kontrollkästchen mit drei
+selbsterklärend sind. Nur Textfilter und die Ankreuzfelder mit drei
 Zuständen wie ``Beleuchtung``, ``Ansatz`` oder ``Geschlossen`` benötigen
 unten ein paar zusätzliche Bemerkungen.
 
@@ -69,7 +69,7 @@ wenn das erste Zeichen in einem Suchfeld ein ``-`` ist.
 Beachten Sie, dass all dies nicht für numerische Felder wie
 ``Runways: Min`` oder ``Altitude: Max`` gilt.
 
-Dreistufige Kontrollkästchen
+Dreistufige Ankreuzfelder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Diese werden verwendet, um Flugplätze nach dem Vorhandensein bestimmter
@@ -78,11 +78,11 @@ Einrichtungen oder Objekte zu filtern.
 Nachfolgend finden Sie die Zustände, wie sie in Windows 10 dargestellt
 sind:
 
--  **Schwarz ausgefülltes Kästchen:** Bedingung wird ignoriert.
--  **Haken im Kästchen:** Bedingung muss übereinstimmen.
--  **Leerers Kästchen:** Die Bedingung muss nicht übereinstimmen.
+-  **Schwarz ausgefülltes Ankreuzfeld:** Bedingung wird ignoriert.
+-  **Haken im Ankreuzfeld:** Bedingung muss übereinstimmen.
+-  **Leerers Ankreuzfeld:** Die Bedingung muss nicht übereinstimmen.
 
-Die Farben und das Aussehen dieser Kontrollkästchen variieren je nach
+Die Farben und das Aussehen dieser Ankreuzfelder variieren je nach
 Thema und Betriebssystem. Anstelle von Grau kann also eine andere Farbe
 verwendet werden (rote Füllung unter Linux oder ein ``-`` für macOS).
 
@@ -96,7 +96,7 @@ Diese Funktion ist nur in der Flugplatz- und Navigationssuche verfügbar.
 Mit dieser Funktion können Sie alle anderen Suchoptionen mit einer
 einfachen räumlichen Suche kombinieren.
 
-Um diese Suche zu ermöglichen, muss das Kontrollkästchen ``Entfernung``
+Um diese Suche zu ermöglichen, muss das Ankreuzfeld ``Entfernung``
 aktiviert sein. Das Ergebnis wird nur Flugplätze oder Navigationshilfen beinhalten,
 die innerhalb der angegebenen minimalen und maximalen Reichweite an
 NM vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell

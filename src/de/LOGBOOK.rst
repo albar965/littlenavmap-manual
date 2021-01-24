@@ -139,7 +139,7 @@ Weitere Informationen zum Hinzufügen- und Bearbeitendialog finden Sie unter
 Öffnet den Bearbeitungsdialog für einen oder mehrere Logbucheinträge.
 
 Der Bearbeitungsdialog zeigt auf der rechten Seite eine Reihe von
-Kontrollkästchen, wenn mehr als ein Logbucheintrag ausgewählt ist. Diese
+Ankreuzfeldern, wenn mehr als ein Logbucheintrag ausgewählt ist. Diese
 ermöglichen es, die zu ändernden Felder für alle ausgewählten Einträge
 zu bearbeiten.
 
@@ -299,7 +299,7 @@ Zusätzliche Hinweise zu einigen Feldern auf dieser Seite:
    Kennung gefunden wurde. Andernfalls wird eine Fehlermeldung angezeigt.
 -  **Datum und Zeit im Simulator UTC**: Im Simulator eingestellte Zeit
    beim Start oder bei der Landung. Immer UTC.
--  **Lokale wirliche Zeit**: Echtzeit beim Start oder bei der Landung.
+-  **Lokale wirkliche Zeit**: Echtzeit beim Start oder bei der Landung.
    Wird in Ihrer Ortszeit gespeichert.
 -  **Routenbeschreibung**: :doc:`ROUTEDESCR` aus dem Flugplan übernommen.
 -  **Flugplandatei** und **Datei für Flugzeugleistung**: Verwendete
@@ -333,11 +333,11 @@ Mehrere Logbucheinträge bearbeiten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wenn mehr als ein Logbucheintrag zur Bearbeitung ausgewählt wurde, zeigt
-der Bearbeitungsdialog eine Spalte mit Kontrollkästchen auf der rechten
+der Bearbeitungsdialog eine Spalte mit Ankreuzfeldern auf der rechten
 Seite der verfügbaren Felder an. Nicht alle Felder stehen für die
 Mehrfachbearbeitung zur Verfügung.
 
-Wenn dieses Kontrollkästchen aktiviert ist, wird das Feld auf der linken
+Wenn dieses Ankreuzfeld aktiviert ist, wird das Feld auf der linken
 Seite entsperrt und der eingegebene Text wird in allen ausgewählten
 Logbucheinträgen dem jeweiligen Feld zugeordnet. Nicht angekreuzte
 Felder werden für keinen der ausgewählten Einträge geändert.
@@ -473,7 +473,7 @@ Datenbank-Backup-Dateien
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* erstellt bei jedem Start eine vollständige
-Datenbanksicherung, da die Undo-Funktionalität für Logbucheinträge nicht
+Datenbanksicherung, da die Rückgängig-Funktionalität für Logbucheinträge nicht
 verfügbar ist.
 
 Sie können den CSV-Export auch verwenden, um Sicherungen manuell zu

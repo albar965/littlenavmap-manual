@@ -22,7 +22,7 @@ Sobald die Vorbereitung abgeschlossen ist, wird :doc:`SCENERY` angezeigt. Von do
 Wenn Sie diesen Schritt überspringen, wird in der Statusleiste die Meldung ``Datenbank ist leer`` angezeigt.
 Sie sind dann nicht in der Lage, Flugpläne für Ihren Simulator zu erstellen.
 
-Beachten Sie, daß Sie die Datenbank neu laden müssen, um Änderungen beim Hinzufügen von Add-on-Flugplätze zu sehen.
+Beachten Sie, dass Sie die Datenbank neu laden müssen, um Änderungen beim Hinzufügen von Add-on-Flugplätze zu sehen.
 
 .. note::
 

@@ -8,10 +8,9 @@ Die Flugzeugleistung und die Treibstoffberichte werden im Dockfenster
 von Leistungsprofilen für Flugzeuge. So können der Treibstoffbedarf,
 die Flugzeit sowie die Profile für den Steig- und Sinkflug ermittelt werden.
 
-Durchschnittliche Leistungsdaten wie Geschwindigkeit,
-Vertikalgeschwindigkeit und Kraftstoffdurchfluss werden für die
-Flugphasen Taxi/Abflug, Steigen, Fahren, Fahren und Sinken verwendet, um
-den Kraftstoffbedarf zu berechnen.
+Durchschnittliche Leistungsdaten, wie Geschwindigkeit,
+Vertikalgeschwindigkeit und Kraftstoffdurchfluss werden für alle
+Flugphasen verwendet, um den Kraftstoffbedarf zu berechnen.
 
 Das Programm kann entweder die NOAA-Windvorhersage aus der realen Welt
 oder die X-Plane-Winde in der Höhe berücksichtigen, um den
@@ -38,7 +37,7 @@ für die folgenden Funktionen verwendet:**
 -  Treibstoffplan im Reiter ``Treibstoffbericht`` des
    Dockfensters ``Flugplanung``.
 -  Verbleibender Treibstoff auf jedem Abschnitt der Flugplantabelle.
--  Verbleibender Treibstoff am Anfang des Abstieges und an Ziel im Reiter
+-  Verbleibender Treibstoff am Anfang des Abstieges und am Ziel im Reiter
    ``Fortschritt`` im Fenster ``Informationen`` sowie Reisezeiten.
 
 Der Kraftstoff wird sowohl als Gewicht (``lbs`` oder ``kg``) als auch
@@ -53,14 +52,14 @@ Siehe :ref:`toc-and-tod-paths` für Details zur Berechnung der Steig- und Sinkfl
 
 Rote Warnmeldungen werden angezeigt, wenn die Flugzeugleistung falsche
 Werte enthält, die *Little Navmap* davon abhalten, den
-Treibstoffverbrauch, den Steig-, oder den Sinkflug zu berechnen. Eine
+Treibstoffverbrauch, den Steig- oder den Sinkflug zu berechnen. Eine
 orangefarbene Warnmeldung wird angezeigt, wenn der geflogene Flugzeugtyp
 nicht mit dem Typ in der Flugzeugleistung übereinstimmt.
 
 .. figure:: ../images/perf_error.jpg
 
       Reiter ``Treibstoffbericht``, der eine Nachricht
-      über einen fehlenden Wert anzeigt. Das ``*`` im der Beschriftung des Reiters zeigt nicht
+      über einen fehlenden Wert anzeigt. Das ``*`` in der Beschriftung des Reiters zeigt nicht
       gespeicherte Änderungen an.
 
 Ein Standardprofil mit 3 NM pro 1.000 Fuß für Abstiegs- und
@@ -95,7 +94,7 @@ Dateien
 
 Leistungsprofildateien (Dateiendung LNMPERF) können wie
 Flugplandateien gespeichert und geladen werden. Die Leistungsdateien
-können aus einem Dateimanager wie dem Windows Explorer oder dem macOS
+können aus einem Dateimanager, wie dem Windows Explorer oder dem macOS
 Finder ausgewählt und in das Hauptfenster von *Little Navmap* gezogen
 werden, um sie zu laden.
 
@@ -135,7 +134,7 @@ die gleiche.
 
 Der Treibstoffbericht wird sofort aktualisiert, wenn sich die
 Windgeschwindigkeit, die Windrichtung, die Windquelle oder der Flugplan
-ändertn.
+ändern.
 
 Die Windgeschwindigkeit wird bei Verwendung von manuellem Wind
 vom Boden bis zur Reiseflughöhe für die
@@ -156,8 +155,8 @@ Schaltflächen
 Die Schaltflächen oben haben die gleiche Funktionalität wie die Einträge
 im Hauptmenü :ref:`aircraft-menu`.
 
--  ``Manueller Wind``: Dieses Kontrollkästchen deaktiviert die
-   Windquelle und ermöglicht es, die durchschnittliche Windrichtung und
+-  ``Manueller Wind``: Dieses Ankreuzfeld deaktiviert die
+   Quelle für Winddaten und ermöglicht es, die durchschnittliche Windrichtung und
    -geschwindigkeit manuell einzustellen. Wenn dies aktiviert ist,
    werden zwei Eingabefelder für Geschwindigkeit und Richtung angezeigt.
 -  |Edit Aircraft Performance| ``Flugzeugleistung bearbeiten``: Öffnet den
@@ -210,7 +209,7 @@ Die Textgröße des Berichts kann im Dialog ``Einstellungen`` auf der Seite
 Flugzeug
 ''''''''''''''''''''''''''''''''''''
 
--  ``Typ``: Treibstofftyp wie im Leistungsprofil festgelegt. Entweder
+-  ``Typ``: Treibstofftyp, wie im Leistungsprofil festgelegt. Entweder
    ``Flugbenzin`` oder ``Kerosin``. Dient zum Umberechnen von Werten beim
    Umschalten zwischen Volumen und Gewicht als Kraftstoffeinheit.
 -  ``Verwendbarer Treibstoff``: Wird wie im Leistungsprofil eingestellt
@@ -224,17 +223,17 @@ Flugzeug
    sind.
 -  ``Reserve``, ``Treibstoff Rollen`` und ``Streckenreserve``: Wird nur bei
    leerem Flugplan angezeigt.
--  ``Minimum runway``: Angezeigt, wenn im der Flugzeugleistung geändert.
+-  ``Minimum runway``: Angezeigt, wenn in der Flugzeugleistung geändert.
 
 .. _aircraft-performance-flightplan:
 
 Flugplan
 ''''''''''''''''''''''''''''''''''''
 
--  ``Distanz und Zeit``: Gesamte Flugplanentfernung und Reisezeit
+-  ``Distanz und Zeit``: Gesamte Flugplandistanz und Reisezeit
    einschließlich Prozeduren. Gleiche Werte wie im oberen Textfeld des Reiters ``Flugplan``.
 -  ``Durchschnn Grundgeschwindigkeit``: Grundgeschwindigkeit über
-   alle Flugphasen Steigflug, Reiseflug und Sinkflug. Errechnet auf
+   alle Flugphasen, Steigflug, Reiseflug und Sinkflug. Errechnet auf
    Basis der angegebenen Geschwindigkeiten und des Windes, der oben auf
    dem Reiter eingegeben wurde.
 -  ``Wahre Luftgeschwindigkeit im Reiseflug``: Reisefluggeschwindigkeit
@@ -260,7 +259,7 @@ Wird nur mit einem gültigen Flugplan angezeigt.
    Treibstoff für den Ausweichflugplatz.
 -  ``Zu ladender Treibstoff``: Englisch: Block Fuel. Zu ladender Kraftstoff. Dies ist der
    gesamte Kraftstoff, der für den Flug benötigt wird. Beinhaltet Reise,
-   Reserve, Extra, Taxi, den am meisten entfernte Ausweichflugplatz und
+   Reserve, Extra, Taxi, den am weitesten entfernten Ausweichflugplatz und
    Streckenreserve.
 -  ``Treibstoff am Ziel``: Erwarteter Kraftstoff am Bestimmungsort.
    Entspricht der Reserve, wenn keine Streckenreserve, kein
@@ -271,10 +270,10 @@ Wird nur mit einem gültigen Flugplan angezeigt.
 -  ``Reserve``: Reservetreibstoff wie im Bearbeitungsdialog eingestellt.
 -  ``Treibstoff Rollen``: Taxi-Treibstoff wie im Bearbeitungsdialog
    eingestellt.
--  ``Extratreibstoff``: Zusätzlicher Kraftstoff, wie im
+-  ``Extratreibstoff``: Zusätzlicher Kraftstoff wie im
    Bearbeitungsdialog eingestellt.
 -  ``Streckenreserve``: Notfallkraftstoff berechnet aus dem im
-   Bearbeitungsdialog angegebenen Prozentsatz und dem für den Flug benötgten.
+   Bearbeitungsdialog angegebenen Prozentsatz und dem für den Flug benötigten.
 
 .. _aircraft-performance-climb-descent:
 
@@ -283,8 +282,8 @@ Steig- und Sinkflug
 
 Wird nur mit einem gültigen Flugplan angezeigt.
 
--  ``Steigflug``: Geschwindigkeit und Vertikalgeschwindigkeit wie
-   angegeben plus der berechnete Flugbahnwinkel. Der Flugbahnwinkel wird
+-  ``Steigflug``: Geschwindigkeit und Vertikalgeschwindigkeit, wie
+   angegeben, plus der berechnete Flugbahnwinkel. Der Flugbahnwinkel wird
    durch die Windprognose beeinflusst.
 -  ``Zeit für Steigflug``: Berechnete Steigflugzeit für die angegebene
    Reiseflughöhe.

@@ -7,9 +7,10 @@ the map directory from a downloaded or self created map theme to the
 
 .. tip::
 
-   Check out the `Little Navmap Support Forum at
-   AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__\ for
-   more map themes.
+      Also check out the `Little Navmap Support Forum at
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
+      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
+      `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
 
 The full path to the DGML file (see links below for more details about
 DGML) describing the map must be

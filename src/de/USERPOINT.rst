@@ -65,7 +65,7 @@ Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog: :ref:`user
 Öffnet den Bearbeitungsdialog für einen oder mehrere Nutzerpunkte.
 
 Der Bearbeitungsdialog zeigt auf der rechten Seite eine Reihe von
-Kontrollkästchen, wenn mehr als ein Benutzerpunkt ausgewählt ist. Diese
+Ankreuzfeldern, wenn mehr als ein Benutzerpunkt ausgewählt ist. Diese
 ermöglichen es, die zu bearbeitenden Felder auszuwählen.
 
 Im Folgenden finden Sie weitere Informationen zum Hinzufügen-Dialog.
@@ -202,7 +202,7 @@ Mehrere Nutzerpunkte
 
 Wenn mehr als ein Nutzerpunkt zur Bearbeitung ausgewählt wurde, zeigt
 der Bearbeitungsdialog auf der rechten Seite eine Spalte mit
-Kontrollkästchen an.
+Ankreuzfeldern an.
 
 Wenn diese aktiviert werden, wird das jeweils linke Feld entsperrt und der
 eingegebene Text in allen ausgewählten Nutzerpunkten dem
@@ -222,9 +222,9 @@ Nutzerpunkte:
 #. Klicken Sie mit der rechten Maustaste auf einen der markierten
    Nutzerpunkte und wählen Sie im Kontextmenü
    ``Bearbeite Nutzerpunkte``.
-#. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld
+#. Klicken Sie auf das Ankreuzfeld rechts neben dem Eingabefeld
    ``Region:`` und ändern Sie die Region.
-#. Klicken Sie auf das Kontrollkästchen rechts neben dem Feld
+#. Klicken Sie auf das Ankreuzfeld rechts neben dem Eingabefeld
    ``Sichtbar von:`` und passen Sie den Wert an.
 #. Klicken Sie auf ``OK``.
 

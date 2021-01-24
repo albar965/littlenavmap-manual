@@ -31,7 +31,7 @@ den Simulator auswählen, zu dem die Verbindung aufgebaut werden soll.
 Klicken Sie auf den Reiter, der dem Simulator entspricht, mit dem Sie eine Verbindung herstellen möchten.
 
 Klicken Sie nun auf ``Verbinden``. Der Dialog wird geschlossen und
-*Little Navmap* versucht im Hintergrund eine Verbindung aufzubauen.
+*Little Navmap* versucht im Hintergrund, eine Verbindung aufzubauen.
 
 Wenn Sie auf ``Schließen`` klicken, bleiben alle Änderungen erhalten und
 der Dialog wird geschlossen, ohne eine Verbindung herzustellen.
@@ -56,7 +56,7 @@ X-Plane
 Sie müssen das mitgelieferte *Little Xpconnect* Plugin installieren, um
 *Little Navmap* als Karte mit X-Plane zu verwenden.
 
-Das Plugin ist Archiv von *Little Navmap* enthalten und kann
+Das Plugin ist im Archiv von *Little Navmap* enthalten und kann
 auch separat heruntergeladen werden.
 
 Kopieren Sie das gesamte Plugin-Verzeichnis ``Little Xpconnect`` in das
@@ -85,7 +85,7 @@ Flugcomputer übertragen.
      Flugplatzwetterinformationen und Höhenwinde können nicht über eine entfernte
      Verbindung von X-Plane übertragen werden. Sie können nur das aktuelle Wetter um das Benutzerflugzeug herum sehen.
 
-Siehe :doc:`NETWORK` für Informationen, wie man eine Entfernte- bzw. Netzwerkverbindung einrichtet.
+Siehe :doc:`NETWORK` für Informationen, wie man eine entfernte bzw. Netzwerkverbindung einrichtet.
 
 .. _connect-start-navconnect:
 
@@ -172,11 +172,11 @@ Navmap* sehen wollen.
 Verbindungsdialog-Optionen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  ``Verbindung Trennen``: Trennt Sie die aktuelle Sitzung und stoppt die
+-  ``Verbindung Trennen``: Trennt die aktuelle Sitzung und stoppt die
    automatische Wiederverbindung.
 -  ``Verbinden``: Versucht, eine Verbindung herzustellen. Ein
    Fehlerdialog wird angezeigt, wenn keine Verbindung aufgebaut werden
-   kann. *Little Navmap* wird wieder versuchen, wenn
+   kann. *Little Navmap* wird es wieder versuchen, wenn
    ``Automatisch verbinden`` aktiviert ist.
 -  ``Schließen``: Schließt den Dialog ohne Änderung des aktuellen
    Verbindungsstatus.

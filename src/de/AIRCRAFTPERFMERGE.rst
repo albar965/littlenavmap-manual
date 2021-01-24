@@ -5,7 +5,7 @@ Das aktuell geladene Leistungsprofil kann über diesen Dialog mit der
 gesammelten Leistung oder einer anderen Leistungsdatei zusammengeführt
 werden.
 
-Der Dialog wird geöffnet, wenn Sie auf die Zusammenführungstaste in der
+Der Dialog wird geöffnet, wenn Sie auf die Zusammenführungstaste in dem
 Reiter ``Aktuelle Flugzeugleistung`` klicken, wenn Sie ``Flugzeuge`` ->
 ``Ermittelte Flugleistungen zusammenführen...`` oder ``Flugzeugleistung zum Zusammenführen öffnen ...`` im Hauptmenü wählen.
 

@@ -1,7 +1,7 @@
 Flugplanposition bearbeiten
 ----------------------------------
 
-Dieser Dialog erlaubt die Bearbeitung einer benutzerdefinierten Flugplanposition, die mit
+Dieser Dialog erlaubt die Bearbeitung einer benutzerdefinierten Flugplanposition,
 die mit |Add Position to Flight Plan| :ref:`add-position-to-flight-plan` oder |Append Position
 to Flight Plan| :ref:`append-position-to-flight-plan` hinzugefügt wurde.
 
@@ -54,7 +54,7 @@ Breiten- und Längengrad
 
 Neben der Drag & Drop-Funktion (:doc:`MAPFPEDIT`) können sie die
 Koordinaten auch direkt in diesem Dialog bearbeiten. Dies kann nützlich sein, wenn
-Sie Wegpunkte mit bekannten Koordinaten wie Berichtspunkten
+Sie Wegpunkte mit bekannten Koordinaten, wie Berichtspunkten,
 hinzufügen möchten.
 
 Der Tooltip des Koordinateneingabefelds zeigt die verfügbaren Formate

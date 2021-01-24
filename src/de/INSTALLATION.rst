@@ -186,7 +186,7 @@ Kopieren Sie das gesamte Plugin-Verzeichnis *Little Xpconnect* in das Verzeichni
 
 Die Installation war erfolgreich, wenn *Little Xpconnect* im Plugin-Manager auftaucht.
 
-Beachten Sie, daß *Little Xpconnect* keine Menüpunkte im X-Plane ``Plugins`` Menü hinzufügt.
+Beachten Sie, dass *Little Xpconnect* keine Menüpunkte im X-Plane ``Plugins`` Menü hinzufügt.
 
 Wenn Sie sich mit *Little Navmap* verbinden, wählen Sie den Reiter ``X-Plane`` im Verbindungsdialog. Siehe auch :ref:`flight-simulator-connection`.
 

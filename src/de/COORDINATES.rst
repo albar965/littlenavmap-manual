@@ -32,7 +32,7 @@ Grad/Minuten/Sekunden zu trennen, wenn keine Einheitszeichen verwendet
 werden.
 
 Dezimaltrennzeichen kann der Punkt (Englisch) oder das ortsabhängige
-Trennzeichen wie z.B. Komma (Deutsch) sein.
+  Trennzeichen, wie z.B. Komma (Deutsch), sein.
 
 In allen Dialogen werden die gelesenen Koordinaten unterhalb des Eingabefeldes im aktuell konfigurierten Koordinatenformat angezeigt.
 
@@ -50,7 +50,7 @@ Vorzeichenbehaftete Dezimalformate
 Für die Koordinatenformate ``Breiten- und Längengrad mit Vorzeichen``
 und ``Längen- und Breitengrad mit Vorzeichen`` gilt:
 
--  Breitengrad: Negativ ist Süden und Positiv ist Norden.
+-  Breitengrad: Negativ ist Süden und positiv ist Norden.
 -  Längengrad: Negativ ist Westen und positiv ist Osten.
 
 Die Wahl dieser Anzeigeformate ermöglicht die Eingabe von

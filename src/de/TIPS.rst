@@ -86,7 +86,7 @@ Angenommen, Sie würden gerne nach Osten fliegen:
    Landebahnen, Prozeduren, Treibstoff, minimale Runway-Länge und mehr
    hinzu.
 #. Stellen Sie die minimale und maximale Entfernung ein, richten Sie die
-   Richtung auf ``Ost`` und klicke vorher auf das Kontrollkästchen
+   Richtung auf ``Ost`` und klicke vorher auf das Ankreuzfeld
    ``Distanz``.
 #. Wählen Sie alle in der Ergebnistabelle aus, um die Flugplätze auf der
    Karte anzuzeigen.
@@ -94,7 +94,7 @@ Angenommen, Sie würden gerne nach Osten fliegen:
 #. Wählen Sie als Ziel hinzufügen.
 #. Kalkulieren Sie den Plan.
 #. Fliegen Sie.
-#. Zurück zu 2., bis daß Sie die Welt umrundet haben.
+#. Zurück zu 2., bis Sie die Welt umrundet haben.
 
 Das Bild unten zeigt ein Abfrageergebnis für Flugplätze im Osten.
 Beachten Sie, dass die schwarz/gelben Hervorhebungskreise auch

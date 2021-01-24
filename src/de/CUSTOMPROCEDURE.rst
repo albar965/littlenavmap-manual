@@ -11,7 +11,7 @@ Führung im Höhenprofil und erlaubt die Darstellung von ILS- bzw.
 VASI-Gleitpfaden am Ziel.
 
 Der Anflug stellt keine Platzrunde oder eine
-Platzrundenähnliche Struktur dar. Fügen Sie dem Flugplan benutzerdefinierte
+platzrundenähnliche Struktur dar. Fügen Sie dem Flugplan benutzerdefinierte
 Wegpunkte zur seitlichen Führung um das Ziel hinzu, wenn dies gewünscht ist.
 
 Nutzerdefinierte Anflüge sind Teil eines Flugplans im Gegensatz zu

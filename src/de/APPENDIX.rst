@@ -42,12 +42,12 @@ Informationen.
    Falls dies nicht hilft: Löschen Sie die Einstellungen und
    die Datenbankdateien. In Windows 7, 8 oder 10 können diese in
    ``c:\Users\YOURUSERNAME\Appdata\Roaming\ABarthel`` gefunden werden.
-   Löschen Sie(oder besser: umbenennen oder verschieben Sie) die Dateien
+   Löschen Sie (oder besser: umbenennen oder verschieben Sie) die Dateien
    ``little_navmap.ini``, ``little_navmap.track``,
    ``little_navmap.history`` und das Verzeichnis ``little_navmap_db``.
    Versuchen Sie zuerst, die Datenbank zu löschen, wenn diese das
    Problem verursacht. Versuchen Sie dann, die Einstellungsdateien zu
-   löschen, wenn das Entfernen der Datenbanken nicht half.
+   löschen, wenn das Entfernen der Datenbanken nicht geholfen hat.
 -  **Das Programm startet langsam:** Dies kann passieren, wenn eine
    Entfernungssuche in einem der Suchtabellen aktiviert ist. Die Suche
    wird bei jedem Start ausgeführt. Deaktivieren Sie einfach die
@@ -60,7 +60,7 @@ Informationen.
    sich *Little Navmap* mit dem Internet verbinden kann, indem Sie den
    Einstellungsdialog auf dem Reiter ``Wetter`` aufrufen. Verwenden
    Sie eine der Schaltflächen ``Test`` für NOAA oder VATSIM Wetter. *Little
-   Navmap* kann sich mit dem Internet nicht verbinden, wenn diese nicht
+   Navmap* kann sich nur mit dem Internet verbinden, wenn diese
    funktionieren.
 -  **Suche zeigt kein Ergebnis oder unerwartete Ergebnisse:** Überprüfen
    Sie die Menüschaltfläche für den Änderungsindikator ``*`` und die
@@ -81,7 +81,7 @@ Informationen.
    einigen Stellen ohne Bergschattenabdeckung (z.B. Neuseeland).
    Verwenden Sie ein anderes Kartenlayout oder schalten Sie die
    Bergschattierung für die *OpenStreetMap* aus.
--  **Das Laden der Szeneriedatenbank dauert zu lange:** Schliessen
+-  **Das Laden der Szeneriedatenbank dauert zu lange:** Schließen
    Sie diejenige Verzeichnissen aus, die nur Landklassen, Höhendaten
    oder andere für *Little Navmap* irrelevante Daten enthalten. Sie
    können dies im Dialog ``Einstellungen`` auf der Seite
@@ -144,7 +144,7 @@ Allgemein
 -  Magnetische Abweichung ist teilweise nicht eingestellt (z.B. VORDME
    Cambridge Bay YCB) oder inkonsistent zwischen Flugplätzen und
    benachbarten Navigationshilfen. Dies ist ein Fehler in der Quelle.
--  Flugplätze sind falsch plaziert (zum Beispiel Cabo San Lucas, MM15 in
+-  Flugplätze sind falsch platziert (zum Beispiel Cabo San Lucas, MM15 in
    Mexiko) im Vergleich zu den Hintergrundkarten. Dies ist ein Fehler in
    den Quelldaten und kann nicht behoben werden.
 -  Die Hintergrundkarte in Kartenausdrucken kann unscharf sein, da sie von der
@@ -174,7 +174,7 @@ Microsoft Flight Simulator 2020
 - Ländernamen fehlen in den MSFS-Übersetzungstabellen und sind daher in *Little Navmap* nicht verfügbar.
 - Add-ons, die das verschlüsselte Format ``.fsarchive`` verwenden, werden nicht unterstützt. *Little Navmap* zeigt nur den Standardflugplatz anstelle des Add-ons an, wenn ein Paket auf diese Weise gesperrt ist.
 - Einige Flugzeugmodifikationen melden nicht den korrekten Treibstofffluss, um Einschränkungen des Simulators zu umgehen. Dies kann in *Little Navmap* nicht behoben werden.
-- Einige Flugplatzdateien wie ``LEMG.bgl`` können aufgrund eines unbekannten Formats nicht gelesen werden. *Little Navmap* meldet ``Fehler: readInt für Datei "...AUSGELASSEN.../LEMG.bgl" fehlgeschlagen. Grund 1``. Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite ``Szeneriedatenbank`` vom Lesen aus oder ignorieren Sie die Meldung. Der Standard-LEMG und alle anderen Flughäfen sind hiervon nicht betroffen.
+- Einige Flugplatzdateien, wie ``LEMG.bgl``, können aufgrund eines unbekannten Formats nicht gelesen werden. *Little Navmap* meldet ``Fehler: readInt für Datei "...AUSGELASSEN.../LEMG.bgl" fehlgeschlagen. Grund 1``. Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite ``Szeneriedatenbank`` vom Lesen aus oder ignorieren Sie die Meldung. Der Standard-LEMG und alle anderen Flughäfen sind hiervon nicht betroffen.
 
 
 .. _report-bug:
@@ -182,10 +182,10 @@ Microsoft Flight Simulator 2020
 Wie meldet man einen Fehler?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn etwas schief geht, schicken Sie mir bitte alle beteiligten Dateien
+Wenn etwas nicht funktionieren sollte, schicken Sie mir bitte alle beteiligten Dateien
 wie KML, PLN oder BGL (falls das Copyright es erlaubt), *Little Navmaps*
 Logdatei und die Konfigurationsdatei, die beide im Dialog ``Über Little Navmap`` zu
-finden sind. Meine E-Mail-Adressen werden ebenfalls im diesem Dialog angezeigt.
+finden sind. Meine E-Mail-Adressen werden ebenfalls in diesem Dialog angezeigt.
 
 **Fügen Sie alle notwendigen Informationen hinzu:**
 
@@ -199,7 +199,7 @@ finden sind. Meine E-Mail-Adressen werden ebenfalls im diesem Dialog angezeigt.
 
    -  X-Plane: 11.40 oder 11.50 version
    -  FSX, FSX SE, P3D oder MSFS einschließlich Version
-   -  Updates für Navigationsdaten, fallst installiert.
+   -  Updates für Navigationsdaten, falls installiert.
 
 Bitte geben Sie alle Schritte an, die notwendig sind, um den Fehler
 zu reproduzieren. Wenn möglich, schicken Sie mir die Log-Datei.
@@ -218,11 +218,10 @@ Datenschutzes haben: die Protokolldateien enthalten alle Systempfade
 Teil des Pfades enthalten. Sie können auch den Namen und die IP-Adresse
 Ihres Computers enthalten.
 
-Ich schlage vor, dass Sie diese Informationen entfernen, wenn Sie damit
+Ratsam ist es, diese Informationen zu entfernen, wenn Sie damit
 Probleme haben. In keinem Fall sind Dateinamen von etwas anderem
 als Flugsimulator-Daten oder dessen
 Konfigurationsdateien enthalten. Es werden keine Namen oder Inhalte von
 persönlichen Dateien in die Protokolldateien gespeichert. Ich empfehle
 dringend, die Logdateien per privater Forumsnachricht oder per E-Mail zu
-versenden und sie nicht an Forumsbeiträge anzuhängen, wo sie öffentlich
-sichtbar sind.
+versenden und sie nicht an öffentlich sichtbare Forumsbeiträge anzuhängen.

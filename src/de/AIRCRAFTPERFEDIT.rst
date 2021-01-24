@@ -3,7 +3,7 @@
 
 Der Dialog ermöglicht die Bearbeitung aller leistungsbezogenen Parameter des Flugzeugs auf drei Reitern. Die Etiketten für alle Werte, die für die Kraftstoffberechnung erforderlich sind, sind **fett**  hervorgehoben.
 
-Der Dialog wird geöffnet wenn die Bearbeiten-Schaltfläche im
+Der Dialog wird geöffnet, wenn die Bearbeiten-Schaltfläche im
 ``Treibstoffbericht``, ``Flugzeug`` ->
 ``Neue Flugzeugleistung erstellen ...`` oder ``Flugzeugleistung bearbeiten ...`` im Hauptmenü ausgewählt werden.
 
@@ -33,7 +33,7 @@ Reiter Flugzeug
 -  ``Benötigter Runway``: Nur zu Informationszwecken. Wird im
    Treibstoffbericht angezeigt, wenn größer als Null
 -  ``Benötigter Runwaytyp``: Nur zu Informationszwecken. Wird im
-   Treibstoffbericht angezeigt, wenn ungleich dem Standarwert
+   Treibstoffbericht angezeigt, wenn ungleich dem Standardwert
    ``Befestigte Oberfläche``.
 
 Flugzeugtyp
@@ -50,7 +50,7 @@ FSX, FSX-SE and Prepar3D
 ''''''''''''''''''''''''
 
 Der Flugzeugtyp kann in der Datei ``aircraft.cfg`` gefunden werden.
-Dazu die Datei mit einen Textedito öffnen. Der Typ steht unter dem Schlüssel ``ATC_model`` im Abschnitt ``[General]``.
+Dazu die Datei mit einen Texteditor öffnen. Der Typ steht unter dem Schlüssel ``ATC_model`` im Abschnitt ``[General]``.
 
 .. figure:: ../images/perf_edit_aircraft.jpg
 
@@ -63,7 +63,7 @@ Alle Geschwindigkeiten werden in der wahren Luftgeschwindigkeit
 eingegeben. Dadurch sind die Werte unabhängig von Windeinflüssen, wie
 sie bei der Grundgeschwindigkeit auftreten würden. Dies macht die Werte
 auch unabhängig von der Reiseflughöhe und der Abweichung von den
-ISA-Atmosphärenbedingungen, wie sie bei Verwendung der Mach-Zahl oder
+ISA-Atmosphärenbedingungen, wie es bei Verwendung der Mach-Zahl oder
 der angezeigten Fluggeschwindigkeit der Fall wäre.
 
 Treibstoff
@@ -178,7 +178,7 @@ Ausweichflugplatz
    Treibstofffluss zum Ausweichflugplatz.
 
 *Little Navmap* benutzt standardmäßig die Werte aus der
-Reiseflugphase. Der Flug zum Ausweichflugplatz findet of auf
+Reiseflugphase. Der Flug zum Ausweichflugplatz findet auf
 niedriger Höhe statt und ergibt daher einen höheren Treibstofffluss.
 Daher sollten die Werte manuell angepasst werden.
 

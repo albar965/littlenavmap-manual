@@ -7,30 +7,25 @@ Little Navmap Benutzerhandbuch
 ================================
 
 *Little Navmap* ist ein freier quelloffener Flugplaner,
-Navigationswerkzeug, Karte, Flugplatz-Suche- und Informationssystem für
-Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 bis v4
+Navigationswerkzeug, Karte, Flugplatzsuche- und Informationssystem für
+Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 bis v5, Microsoft Flight Simulator 2020
 und X-Plane 11.
 
-**Dieses Programm darf nicht für die Navigation in der realen Luftfahrt
-verwendet werden.**
+   Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.org>`__.
+   Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
+
+**Sie können die jeweils aktuelle Version dieses Benutzerhandbuches in verschiedenen Formaten hier herunterladen:**
+`User Manuals <https://albar965.github.io/manuals.html>`__
+
+**Dieses Programm darf nicht für die Navigation in der realen Luftfahrt verwendet werden.**
 
 Für *Little Navmap* Versionen |version|. Zuletzt aktualisiert am |today|.
 
-Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.org>`__.
-Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
-Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
+Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler, `Anja Fahrner <https://www.anja-fahrner.de>`__ und `Alexander Barthel <https://www.littlenavmap.org>`__.
 
---------------
-
-Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler und Alexander Barthel.
-
---------------
-
-Diese Anleitung wurde mit `Sphinx <https://www.sphinx-doc.org/>`__ unter Benutzung der
-`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__ erstellt.
-Die PDF und MOBI Formate wurden mit Hilfe von `Calibre <https://calibre-ebook.com/>`__ konvertiert.
-
---------------
+=========== ===========
+|Sunshadow| |Spherical|
+=========== ===========
 
 Inhaltsverzeichnis
 ------------------------------
@@ -119,3 +114,13 @@ Inhaltsverzeichnis
    GLOSSARY
    LICENSE
 
+--------------
+
+Diese Anleitung wurde mit `Sphinx <https://www.sphinx-doc.org/>`__ unter Benutzung der
+`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__ erstellt.
+Die PDF und MOBI Formate wurden mit Hilfe von `Calibre <https://calibre-ebook.com/>`__ konvertiert.
+
+Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
+
+.. |Spherical| image:: ../images/spherical_small.jpg
+.. |Sunshadow| image:: ../images/sunshadow_small.jpg

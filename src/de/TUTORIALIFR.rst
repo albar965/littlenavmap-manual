@@ -164,7 +164,7 @@ da wir nur geeignete Flugplätze für unser Fugzeug sehen möchten.
 #. ``Prozeduren``: Zeigen Sie nur Flugplätze an, die über Prozeduren
    verfügen, um einen interessanteren Anflug zu erhalten.
 #. Deaktivieren Sie die Optionen ``Militärisch`` und ``Geschlossen``
-   (klicken Sie zweimal auf die Kontrollkästchen). Dadurch werden nur
+   (klicken Sie zweimal auf die Ankreuzfelder). Dadurch werden nur
    zivile Flugplätze zurückgegeben und Flugplätze vermieden, die alle
    Start- und Landebahnen geschlossen haben.
 #. In der Auswahlliste ``Beliebige Oberfläche``

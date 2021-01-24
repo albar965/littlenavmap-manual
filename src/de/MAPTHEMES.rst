@@ -8,9 +8,12 @@ heruntergeladenen oder selbst erstellten Kartenthema in das Verzeichnis
 
 .. tip::
 
-        Schauen Sie im `Little Navmap Support Forum auf
-        AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ nach.
-        Dort werden weite Kartenthemen zur Verfügung gestellt.
+      Schauen Sie auch im `Little Navmap Support Forum auf
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
+      auf `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ und
+      bei `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__
+      nach.
+      Dort werden weitere Kartenthemen zur Verfügung gestellt.
 
 Der vollständige Pfad zur DGML-Datei (siehe Links unten für weitere
 Details über DGML), der die Karte beschreibt, muss

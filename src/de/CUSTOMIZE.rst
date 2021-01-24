@@ -44,7 +44,7 @@ Schlüssel ``Version`` wie unten gezeigt.
 .. warning::
 
       Löschen Sie die Version nicht, da *Little Navmap* beim Aktualisieren der Datei
-      auf diese Informationen angewiesen ist. Es wird die Datei gelegentlich
+      auf diese Informationen angewiesen ist. Die Datei wird gelegentlich
       zurückgesetzt, wenn sich die Standardeinstellungen ändern. Es wird ein
       Backup erstellt, um Ihre Benutzeranpassungen zu speichern.
 
@@ -102,8 +102,7 @@ Farbwerten finden Sie weiter unten.
 Farbformat
 ~~~~~~~~~~~
 
-Farben können in einem dieser Formate sein, die häufig im Webdesign
-verwendet werden:
+Farben werden in folgenden, häufig im Webdesign verwendeten Formaten dargestellt:
 
 -  ``#RRGGBB`` jedes von R, G, B und A ist eine einzelne
    Hexadezimalziffer. Jeder Farbwert reicht von 00 - FF (dezimal 0-255)
@@ -140,7 +139,7 @@ Ein Stift bzw. Pen enthält die folgenden Werte in einer kommagetrennten Liste:
 
 -  Farbe wie oben beschrieben
 -  Stiftbreite als Fließkommawert gemessen in Pixeln. Sie müssen den
-   ``.`` als Dezimaltrennzeichen nemen, unabhängig davon, was Ihr
+   ``.`` als Dezimaltrennzeichen nehmen, unabhängig davon, was Ihr
    Gebietsschema definiert.
 -  Stil. Einer der folgenden Werte: ``Solid``, ``Dash``, ``Dot``,
    ``DashDot`` und ``DashDotDot``.
@@ -170,10 +169,10 @@ erkennt und verwendet das Symbol automatisch beim nächsten Start.
 
 Das Format ist auf PNG, JPG, GIF und SVG beschränkt. (`Scalable Vector Graphics (SVG) Tiny
 1.2 Specification <https://www.w3.org/TR/SVGMobile12>`__), bei dem erweiterte
-Grafikeffekte wie Texturen nicht funktionieren.
+Grafikeffekte, wie Texturen, nicht funktionieren.
 
 Sie können für SVG das kostenlose Vektorzeichenprogramm
-`Inkscape <https://inkscape.org>`__ verwenden,um Icons zu bearbeiten.
+`Inkscape <https://inkscape.org>`__ verwenden, um Icons zu bearbeiten.
 Starten Sie *Little Navmap* neu, um die Änderungen zu sehen.
 
 .. _customize-aircraft-icons:
@@ -278,4 +277,4 @@ erstellt eine neue Kategorie ``My Places``.
 
 Verwenden Sie für Kategorien keine Sonderzeichen wie z.B. ``/``. Es sind
 nur Buchstaben, Ziffern, Leerzeichen, Unterstriche und Bindestriche
-erlaubt. Sonderzeichen, wie Umlaute und Akzentzeichen sind kein Problem.
+erlaubt. Sonderzeichen, wie Umlaute und Akzentzeichen, stellen kein Problem dar.

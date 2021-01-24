@@ -12,14 +12,14 @@ Start- und Landebahn oder Hubschrauberlandeplatz), Ziel,
 Flugplandistanz, Reisezeit, verwendete Prozeduren (SID, STAR, Anflug und
 Übergänge) sowie den Flugplantyp enthält.
 
-Das Beschriftung zeigt auch Fehlermeldungen an, wenn sich z.B. der Runway einer STAR
-vom Runway der folgenden Anflugprozedur unterscheiden.
+Die Beschriftung zeigt auch Fehlermeldungen an, wenn sich z.B. der Runway einer STAR
+vom Runway der folgenden Anflugprozedur unterscheidet.
 
 Die Reisezeit wird nur angezeigt, wenn ein gültiges Leistungsprofil des
 Flugzeugs geladen ist, für das mindestens die Steig-, Reise- und
 Sinkgeschwindigkeit eingestellt ist.
 
-Der ARINC-Name des Anflugprozedur, der von einigen FMCs benötigt wird,
+Der ARINC-Name der Anflugprozedur, der von einigen FMCs benötigt wird,
 ist in Klammern angegeben.
 
 .. figure:: ../images/flightplanheader.jpg
@@ -58,7 +58,7 @@ Dieser wird mit dem Flugplan gespeichert und ist nur für FSX, Prepar3D oder MSF
 Flugplantabelle
 ~~~~~~~~~~~~~~~~
 
-Die Tabellenansicht erlaubt die gleichen Aktionen, wie die
+Die Tabellenansicht erlaubt die gleichen Aktionen wie die
 Such-Tabellenansicht, mit Ausnahme der Sortierung. Siehe auch
 :ref:`table-view` für weitere Informationen.
 
@@ -87,15 +87,15 @@ Tabellenspalten
 
    -  ``+`` oder ``-`` und einen Distanz-Wert: Zeigt Wegpunkte in
       Prozeduren an, die sich auf einen Fix beziehen.
-   -  ``(IAF)``: Initialer Anflugpunkt einer Prozedure oder eines Überganges.
+   -  ``(IAF)``: Initialer Anflugpunkt einer Prozedur oder eines Überganges.
    -  ``(FAF)``: Finaler Anflugpunkt. Je nach Prozedur werden entweder
       der FAF oder der FACF mit einem Malteserkreuz auf der Karte
       und im Höhenprofil dargestellt.
    -  ``(FACF)``: Endanflugkursfixierung.
-   -  ``(MAP)``: Fehlanflugspunkt.
+   -  ``(MAP)``: Fehlanflugpunkt.
 
 -  ``Region``: Zweibuchstabiger Regionscode einer Navigationshilfe.
--  ``Name``: Name des Flugplatzs oder des Funkfeuers.
+-  ``Name``: Name des Flugplatzes oder des Funkfeuers.
 -  ``Prozedur``: Entweder ``SID``, ``SID Übergang``, ``STAR``,
    ``STAR Übergang``, ``Übergang``, ``Anflug`` oder ``Fehlanflug``
    plus Name der Prozedur. Auch ``Abflug``, ``Ziel`` und ``Ausweichflugplatz``.
@@ -124,7 +124,7 @@ Tabellenspalten
          Beispiel: ``5,400`` oder ``210``.
       -  **Präfix** ``A``: Fliegen Sie in oder über der Höhe oder der
          Geschwindigkeit. Beispiel: ``A 1.800``.
-      -  **Präfix** ``B``: Fliegen Sie in oder unter der Höhe oder det
+      -  **Präfix** ``B``: Fliegen Sie in oder unter der Höhe oder der
          Geschwindigkeit. Beispiel: ``B 10.000`` oder ``B 220``.
       -  **Zahlenbereich:** Fliegen Sie auf oder über der ersten Höhenangabe und auf
          oder unter der zweiten. Beispiel: ``A 8.000, B 10.000``.
@@ -136,7 +136,7 @@ Tabellenspalten
 -  ``Typ``: Typ eines Funkfeuers. Zeigt ``ILS`` oder ``LOC`` für ILS-
    oder Localizer-Anflüge auf dem letzten Runwayabschnitt.
 -  ``Freq.``: Frequenz oder Kanal eines Funkfeuers. Zeigt auch die
-   ILS- oder Localizer-Frequenz für entsprechende Anflüge auf der
+   ILS- oder Localizer-Frequenz für entsprechende Anflüge auf dem
    letzten Runway-Abschnitt
 -  ``Reichweite``: Reichweite eines Funkfeuers, falls vorhanden.
 -  ``Kurs °M:``  Dies ist der Startkurs der Großkreisroute, die die
@@ -144,7 +144,7 @@ Tabellenspalten
    dem Abflug, wenn Sie lange Strecken ohne Navigationshilfe zurücklegen. Beachten
    Sie, dass Sie Ihren Kurs ständig ändern müssen, wenn Sie entlang
    einer großen Kreislinie fliegen.
--  ``Kurs °T:``  Das gleiche Feld, wie oben, aber mit echtem Kurs. Verwenden Sie dies in Bereichen
+-  ``Kurs °T:`` Das gleiche Feld wie oben, aber mit echtem Kurs. Verwenden Sie dies in Bereichen
    mit hoher magnetischer Variation.
 -  ``Distanz``: Entfernung der Flugplanstrecke.
 -  ``Verbleibend``: Verbleibende Entfernung zum Zielflugplatz oder
@@ -197,7 +197,7 @@ Die Änderungen können mit dem Menüpunkt ``Ansicht zurücksetzen`` im Kontextm
 Fehleranzeige
 ^^^^^^^^^^^^^
 
-Wenn ein Wegpunkt eines Flugplans in der Datenbank nicht gefunden wird,
+Wenn der Wegpunkt eines Flugplans in der Datenbank nicht gefunden wird,
 wird er rot angezeigt. Dies kann passieren, wenn die verwendeten
 AIRAC-Zyklen nicht übereinstimmen. Gleiches gilt für die Luftstraßen. Die
 Position auf der Karte ist noch korrekt.
@@ -333,14 +333,14 @@ Kontextmenü Flugplan
 |Show Information| Informationen anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleich wie bei :ref:`map-context-menu`.
+Gleiche Funktion wie bei :ref:`map-context-menu`.
 
 .. _show-procedures-flightplan:
 
 |Show Procedures| Prozeduren anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wie :ref:`show-procedures-map`. Nur für Flugplätze mit Prozeduren aktviert.
+Wie :ref:`show-procedures-map`. Nur für Flugplätze mit Prozeduren aktiviert.
 
 .. _show-approach-custom-flight-plan:
 
@@ -379,7 +379,7 @@ Folge Auswahl
 ^^^^^^^^^^^^^
 
 Die Kartenansicht wird auf den ausgewählten
-Flugplatz oder Navigationshilfe zentriert aber nicht vergrößert, wenn diese Funktion aktiviert ist.
+Flugplatz oder Navigationshilfe zentriert, aber nicht vergrößert, wenn diese Funktion aktiviert ist.
 
 .. _move-selected-legs-up-down:
 
@@ -461,7 +461,7 @@ Die angehängten Strecken werden nach dem Laden des Flugplans ausgewählt.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Extrahiert einen Teil des aktuellen Flugplans und speichert eine neue Flugplandatei,
-die alle Abschnitte zwischen der ersten und der letzten ausgewählten einschließlich enthält.
+die alle Abschnitte zwischen der ersten und der letzten ausgewählten enthält.
 
 Der aktuell geladene Flugplan wird dabei nicht verändert.
 
@@ -499,14 +499,14 @@ Flugplan an. Wählen Sie einfach alle Teilstrecken des Flugplans aus und
 verwenden Sie diese Funktion, um für jedes Funkfeuer im Flugplan einen
 Reichweitenkreis anzuzeigen.
 
-Sonst das Gleiche wie :ref:`map-context-menu`.
+Sonst die gleich Funktion wie :ref:`map-context-menu`.
 
 .. _show-traffic-pattern-flightplan:
 
 |Add Airport Traffic Pattern| Platzrunde hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleiche Funktion, wie :ref:`show-traffic-pattern-map`.
+Gleiche Funktion wie :ref:`show-traffic-pattern-map`.
 
 Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flugplatz klicken.
 Zeigt einen Dialog an, der es ermöglicht, eine Platzrunde auf der Karte
@@ -524,7 +524,7 @@ auf der Karte ausgeblendet sind (Menü ``Ansicht`` ->
 |Add Holding| Warteschleife hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gleich wie das Kontextmenü :ref:`holding`.
+Gleiche Funktion wie das Kontextmenü :ref:`holding`.
 
 Siehe auch :doc:`HOLD`.
 

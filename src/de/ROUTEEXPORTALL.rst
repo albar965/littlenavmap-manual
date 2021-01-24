@@ -1,4 +1,4 @@
-Flugplan-Multiexport
+Multiexport Flugplan
 -------------------------
 
 Multiexport vereinfacht den Flugplan-Export und ermöglicht das Speichern in mehrere Formate auf einmal mit einem Klick in der Symbolleiste, einem Klick im Menü (``Datei`` -> |Multiexport Flight Plan| :ref:`multiexport-flight-plan`) oder mit dem Tastaturkürzel ``Strg+Umschalt+M``.
@@ -20,14 +20,14 @@ Exportpfade werden, soweit bekannt, mit sinnvollen Werten vorausgefüllt. Dies g
 
 Passen Sie die Standardpfade bei Bedarf an. Sie können einen Pfad bearbeiten, indem Sie auf ihn doppelklicken oder die Schaltfläche |Select Export Path| verwenden, die einen Dateidialog zur Auswahl öffnet.
 
-Aktivieren Sie das Kästchen links neben einer Zeile oder verwenden Sie das Kontextmenü, um ein Format für den Export zu aktivieren.
+Aktivieren Sie das Ankreuzfeld links neben einer Zeile oder verwenden Sie das Kontextmenü, um ein Format für den Export zu aktivieren.
 Der Zeilentext wird fett dargestellt, wenn ein Eintrag aktiviert ist.
 
 Passen Sie die Auswahl in der Auswahlliste ``Exporteinstellungen`` an und wählen Sie, ob Sie Dateien überschreiben möchten oder ob Sie für jedes gespeicherte Format einen Dateidialog sehen möchten.
 
 Klicken Sie ``Ok`` wenn Sie fertig sind.
 
-Der Flugplan wird exportiert, wenn Sie das Menü ``Datei`` -> :ref:`multiexport-flight-plan` verwenden, ein korrekter Pfad eingegeben wurde und das Kästchen für das Format markiert ist.
+Der Flugplan wird exportiert, wenn Sie das Menü ``Datei`` -> :ref:`multiexport-flight-plan` verwenden, ein korrekter Pfad eingegeben wurde und das Ankreuzfeld für das Format markiert ist.
 
 .. tip::
 
@@ -77,7 +77,7 @@ Siehe auch :ref:`flight-plan-formats-lnmpln`.
 
 .. _multiexport-errors:
 
-Pfad-Fehler
+Fehler im Exportpfad
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Der Pfad wird rot hervorgehoben, sobald ein Format für den Export mit einem nicht vorhandenen Verzeichnis oder einer nicht vorhandenen Datei aktiviert ist.
@@ -110,8 +110,8 @@ Diese drei Optionen betreffen alle Flugplan-Exportformate außer dem nativen LNM
 
 .. _multiexport-options:
 
-Dialogfeld Multiexport-Einstellungen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Multiexport Flugplan Einstellungen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Exportformat-Tabelle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -124,10 +124,10 @@ Die Tabellenanordnung wird gespeichert und kann durch Auswahl von :ref:`multiexp
 
 .. _multiexport-aktivieren:
 
-Kontrollkästchen / Auswählen
+Ankreuzfeld / Auswählen
 '''''''''''''''''''''''''''''''''''''''''''''
 
-Das Kontrollkästchen ganz links aktiviert das jeweilige Format für den Export und hebt die Zeile in Fettschrift hervor.
+Das Ankreuzfeld ganz links aktiviert das jeweilige Format für den Export und hebt die Zeile in Fettschrift hervor.
 Pfadfehler werden nur angezeigt, wenn das Format aktiviert ist.
 
 .. _multiexport-select-path:

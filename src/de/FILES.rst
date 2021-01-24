@@ -7,7 +7,7 @@ Logdateien
 ~~~~~~~~~~~~~
 
 Die Log-Dateien von *Little Navmap* werden abhängig vom Betriebssystem
-in folgenden Verzeichnisen gespeichert:
+in folgenden Verzeichnissen gespeichert:
 
 -  Windows:
    ``C:\Benutzer\BENUTZERNAME\AppData\Local\Temp\abarthel-little_navmap.log``
@@ -15,7 +15,7 @@ in folgenden Verzeichnisen gespeichert:
 -  macOS
    ``/var/folders/ZUFÄLLIGER_VERZEICHNIS_NAME/abarthel-little_navmap.log``
 
-Das Programm führt drei Logdateien und dreht wechselt diese, wenn
+Das Programm führt drei Logdateien und wechselt diese, wenn
 die Dateigröße von 10 MB überschritten wird. So können Sie bis zu drei Dateien finden:
 
 ``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` und
@@ -44,7 +44,7 @@ Verzeichnissen gespeichert:
 -  ``little_navmap.ini``: INI-Konfigurationsdatei. Textdatei.
 -  ``little_navmap.history``: Enthält die Kartenpositionshistorie.
    Binärdatei.
--  ``little_navmap.track``: Enthält die Flugzeugpfad. Binärdatei.
+-  ``little_navmap.track``: Enthält den Flugzeugpfad. Binärdatei.
 -  ``little_navmap_profile.track``: Benutzerflugzeugpfad für das
    Höhenprofil. Binärdatei.
 
@@ -84,7 +84,7 @@ Sie können den Zwischenspeicher manuell löschen, um Platz zu sparen, wenn *Lit
 Datenbanken
 ~~~~~~~~~~~~~~
 
-Die Datenbanken werden in diesem Verzeichnissen gespeichert:
+Die Datenbanken werden in diesen Verzeichnissen gespeichert:
 
 -  Windows:
    ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
@@ -103,7 +103,7 @@ geöffnet werden können.
    Der Navigraph *FMS Database Manager* darf nicht dazu verwendet werden,
    die Datenbanken zu aktualisieren, während *Little Navmap* läuft.
 
-   *Little Navmap* kann abstürzen oder die Aktualisierung kann fehlschlagen.
+   *Little Navmap* kann abstürzen oder die Aktualisierung fehlschlagen.
 
 Szeneriebibliothek
 ^^^^^^^^^^^^^^^^^^^
@@ -159,8 +159,8 @@ Die Datei ``little_navmap_logbook.sqlite`` wird zum Speichern von
 Logbucheinträgen verwendet.
 
 *Little Navmap* erstellt beim Start Sicherungskopien und speichert bis
-zu vier Sicherungsdateien wie bei den benutzerdefinierten Wegpunkten,
-wie oben beschrieben.
+zu vier Sicherungsdateien, wie oben bei den benutzerdefinierten Wegpunkten
+beschrieben.
 
 Andere Datenbankdateien
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -387,7 +387,7 @@ Der hinzugefügte Kommentar ist ein XML-Kommentar, der mit
 befindet sich eine einfache Schlüssel/Werteliste, die durch
 ``|`` Symbole getrennt ist.
 
-*Little Navmap* speichert Metadaten wie Version und Datum in der Datei,
+*Little Navmap* speichert Metadaten, wie Version und Datum, in der Datei,
 was bei Fehlermeldungen oder bei zukünftigen Erweiterungen hilft.
 
 Die wichtigsten Daten sind Ausweichflugplätze und

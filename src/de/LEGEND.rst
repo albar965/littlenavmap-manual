@@ -431,7 +431,7 @@ benutzen, um Landebahnen zu zeichnen.
 | |Airport Text|                    | Flugplatz-Beschriftung mit Name,  |
 |                                   | Kennung, ATIS-Frequenz, Höhe,     |
 |                                   | beleuchteten Runways (``L``) und  |
-|                                   | Länge des längsten Runway. Die     |
+|                                   | Länge des längsten Runway. Die    |
 |                                   | Textbeschriftungen für einen      |
 |                                   | Flugplatz können im Dialog        |
 |                                   | ``Einstellungen`` auf der         |
@@ -528,7 +528,7 @@ Auf höheren Zoomleveln werden Objekte nur als kleine Farbige Symbole dargestell
 +-----------------------------------+-----------------------------------+
 | |Localizer|                       | Localizer. Die Beschriftung       |
 |                                   | zeigt die Kennung,                |
-|                                   | Frequenz, Magnetischer Kurs und   |
+|                                   | Frequenz, Magnetischen Kurs und   |
 |                                   | DME-Anzeige, falls vorhanden.     |
 +-----------------------------------+-----------------------------------+
 

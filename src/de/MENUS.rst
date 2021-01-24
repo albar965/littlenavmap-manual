@@ -283,7 +283,7 @@ Untermenü mit mehreren Aktionen, die den Export in die meisten Flugplanformate 
 
 .. warning::
 
-       Beachten Sie, daß das Speichern von Flugplänen mit einer oder mehr dieser Methoden
+       Beachten Sie, dass das Speichern von Flugplänen mit einer oder mehr dieser Methoden
        mehrere Einschränkungen hat:
 
        -  Mehrere Anflugabschnitte wie Warteschleifen, Schleifen oder Wendemanöver können nicht
@@ -832,7 +832,7 @@ Definition ausgenommen, um unbeabsichtigtes nicht Anzeigen zu vermeiden.
 
 Die Funktion kann auf X-Plane-Flugplätze erweitert werden, die nicht als
 ``3D`` gekennzeichnet sind. Dies kann geschehen, indem Sie im Dialogfeld
-``Èinstellungen`` auf :ref:`map` das Kontrollkästchen
+``Èinstellungen`` auf :ref:`map` das Ankreuzfeld
 ``Alle X-Plane-Flugplätze, die nicht 3D sind,als leere Flugplätze behandeln`` aktivieren.
 Alle Flugplätze, die nicht als ``3D`` markiert
 sind, werden auf der Karte grau dargestellt und können
@@ -902,7 +902,7 @@ Dieses Untermenü und die Symbolleiste ermöglichen die Auswahl einzelner Luftra
 
 Luftraum-Datenquellen können im Menü ``Szeneriebibliothek`` -> :ref:`airspace-source` ausgewählt werden.
 
-Beachten Sie, daß Lufträume bei niedrigeren Zoomstufen ausgeblendet werden, um eine Überlagerung mit dem Flugplatzdiagramm zu vermeiden.
+Beachten Sie, dass Lufträume bei niedrigeren Zoomstufen ausgeblendet werden, um eine Überlagerung mit dem Flugplatzdiagramm zu vermeiden.
 
 Sie können die Menüs aus der Schaltfläche abtrennen, indem Sie auf die gestrichelte Linie über dem Menü klicken.
 
@@ -1336,8 +1336,12 @@ versehen.
 
 .. tip::
 
-      Schauen Sie im `Little Navmap Support Forum auf
-      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ nach. Dort werden weitere Kartenthemen zur Verfügung gestellt.
+      Schauen Sie auch im `Little Navmap Support Forum auf
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
+      auf `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ und
+      bei `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__
+      nach.
+      Dort werden weitere Kartenthemen zur Verfügung gestellt.
 
 .. note::
 
@@ -2224,7 +2228,7 @@ Alle Reiter und die Statusleiste werden ebenfalls auf die Standardeinstellungen 
 
 Diese Funktion kann hilfreich sein, wenn ein Andockfenster bei Multimonitor-Konfigurationen verloren geht.
 
-Beachten Sie, daß die Dockfenster ``Suche`` und ``Simulatorflugzeug`` in der Standardanordnung übereinander gelegt sind.
+Beachten Sie, dass die Dockfenster ``Suche`` und ``Simulatorflugzeug`` in der Standardanordnung übereinander gelegt sind.
 Sie können beide über die Reiter an der unteren rechten Position des Hauptfensters erreichen.
 
 Siehe :doc:`LAYOUT` für weitere Informationen über Fensteranordnungen.
@@ -2306,7 +2310,7 @@ nicht geschlossen werden. Der gesamte Dockfensterstapel wird
 geschlossen, wenn ein Dockfenster Teil eines Stapels ist. Weitere
 Informationen über stapelbare Dockfenster finden Sie unter :doc:`DOCKWINDOWS`.
 
-Beachten Sie, daß das Fenster ``Flugplanberechnung`` nicht angedockt werden kann und im schwebenden Zustand bleibt.
+Beachten Sie, dass das Fenster ``Flugplanberechnung`` nicht angedockt werden kann und im schwebenden Zustand bleibt.
 
 .. _main-toolbar-options:
 

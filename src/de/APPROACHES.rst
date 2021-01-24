@@ -6,7 +6,7 @@ Prozeduren
 Allgemeines
 ~~~~~~~~~~~
 
-Abflug- und Anflugsprozeduren werden typischerweise beim Fliegen eines
+Abflug- und Anflugprozeduren werden typischerweise beim Fliegen eines
 Linienflugzeuges verwendet, aber auch kleinere Flugzeuge müssen beim
 IFR-Flügen mindestens eine Prozedur am Zielort benutzen. FSX und Prepar3D liefern nur Anflugprozeduren in den Standarddaten.
 SIDs und STARs sind nicht verfügbar. Diese können durch eine Aktualisierung der Navigationsdaten
@@ -103,7 +103,7 @@ Siehe :doc:`SEARCHPROCS` für weitere Informationen.
 Eine Prozedur aus einem Flugplan löschen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Das Löschen einer einzelnen Flugplanabschnittes, der Teil einer Prozedur ist,
+Das Löschen eines einzelnen Flugplanabschnittes, der Teil einer Prozedur ist,
 entfernt die gesamte Prozedur sowie ihren Übergang, falls vorhanden. Das Löschen eines
 Abschnittes, der Teil eines Übergangs ist, entfernt nur den Übergang.
 
@@ -184,7 +184,7 @@ gewohnt:
 Verlassen einer Warteschleife
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* erkennt, wenn eine Warteschleife verlassen wird und
+*Little Navmap* erkennt, wenn eine Warteschleife verlassen wird, und
 aktiviert die nächste Teilstrecke, wenn eine der beiden Bedingungen
 erfüllt ist:
 
@@ -212,7 +212,7 @@ Wendemanöver (Procedure Turns)
 Die Daten des Flugsimulators verschieben den Wendepunkt einer Prozedur
 um 10 NM vom Ursprungswegpunkt entfernt, der normalerweise zu weit liegt.
 Fliegen Sie die Prozedur wie gewohnt: Mindestens eine Minute vom Wegpunkt
-weg fliegen. Fliegen Sie mehr, wenn Sie Platz brauchen, um den nächsten Wegpunkt
+wegfliegen. Fliegen Sie mehr, wenn Sie Platz brauchen, um den nächsten Wegpunkt
 nach der Kursumkehr abzufangen. Wenden Sie dann
 oder führen Sie eine Standard 45/180 Grad Drehung durch. Nochmal:
 befolgen Sie die Prozeduren, nicht die Linien.
@@ -293,7 +293,7 @@ Wegpunktypen in einer Prozedur
    definiert durch einen Kurs oder Steuerkurs und durch die Entfernung
    zu einer Navigationshilfe.
 -  **Entfernung zu DME:** Beispiel: ``WIK/9nm``. Dieser Punkt wird durch
-   einen Steuerkurs definiert, die beim Erreichen einer
+   einen Steuerkurs definiert, der beim Erreichen einer
    DME-Distanz beendet wird.
 -  ``Anschneiden Kurs zu Wegpunkt``: Fangen Sie einen Kurs zum nächsten Fix
    in einem Winkel von etwa 45 Grad ein.
@@ -303,7 +303,7 @@ Wegpunktypen in einer Prozedur
 -  ``Anschneiden Abschnitt``: Schneiden Sie die nächste Strecke bei
    einem Kurs von etwa 45 Grad an.
 -  ``Höhe``: Ein Abschnitt oder eine Warteschleife, die durch Erreichen einer
-   bestimmten Flughöhe beendet wird und wird meist bei Fehlanflügen verwendet.
+   bestimmten Flughöhe beendet und meist bei Fehlanflügen verwendet wird.
    Da die Entfernung vom Flugzeug abhängt, werden
    für diese Strecke 2 NM Länge verwendet. Sie können die Linie
    ignorieren und zur nächsten Strecke übergehen, sobald das

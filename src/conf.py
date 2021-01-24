@@ -20,14 +20,14 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Little Navmap'
-copyright = u'2019-2020, Alexander Barthel'
+copyright = u'2019-2021, Alexander Barthel'
 author = u'Alexander Barthel'
 
 # VERSION_NUMBER
 # The short X.Y version
 version = u'2.6'
 # The full version, including alpha/beta/rc tags
-release = u'2.6.6'
+release = u'2.6.7'
 
 nitpicky = True
 

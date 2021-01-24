@@ -27,7 +27,7 @@ für zukünftige Starts ausblenden, indem Sie ``Nicht wieder anzeigen`` drücken
 #.  Speichern Sie den Flugplan in das *Little Navmap*-eigene Format LNMPLN, indem Sie auf :ref:`save-flight-plan` klicken.
     Dieses Dateiformat ist nur für *Little Navmap* und erlaubt es, alle Flugplanmerkmale wie Anmerkungen, benutzerdefinierte Anflüge und mehr zu erhalten. Versuchen Sie nicht, es in Simulatoren oder andere Werkzeuge zu laden.
 #.  Konfigurieren Sie den Flugplanexport im Menü ``Datei`` -> :ref:`multiexport-flight-plan-options`.
-    Wählen Sie die gewünschten Formate durch Anklicken einer oder mehrerer Kontrollkästchen auf der linken Seite und passen Sie die Pfade bzw. Dateinamen für den Export an. Siehe :doc:`ROUTEEXPORTALL`.
+    Wählen Sie die gewünschten Formate durch Anklicken einer oder mehrerer Ankreuzfelder auf der linken Seite und passen Sie die Pfade bzw. Dateinamen für den Export an. Siehe :doc:`ROUTEEXPORTALL`.
 #.  Wählen Sie ``Datei`` -> :ref:`multiexport-flight-plan`, um Ihren Flugplan für Simulator, Add-ons oder Flugzeuge zu exportieren.
 #.  Verbinden Sie *Little Navmap* mit Ihrem Flugsimulator.
     Gehen Sie in das Hauptmenü ``Werkzeuge`` -> :ref:`flight-simulator-connection`, wählen Sie Ihren Simulator und klicken Sie auf ``Verbinden``. Siehe :doc:`CONNECT` für weitere Informationen.

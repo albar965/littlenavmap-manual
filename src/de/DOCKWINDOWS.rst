@@ -27,14 +27,14 @@ Sie können Dockfensteranordnungen im Menü ``Fenster`` speichern und laden. Sie
 für Details.
 
 Weitere Einstellungen im Zusammenhang mit Dockfenstern, wie die automatische Aktivierung beim
-Überfahren mit der Maus finden Sie in den Einstellungen auf der Seite ref:`user-interface`.
+Überfahren mit der Maus, finden Sie in den Einstellungen auf der Seite ref:`user-interface`.
 
 .. tip::
 
     Halten Sie ``Strg`` gedrückt, während Sie auf die Titelleiste des Fensters klicken, um zu verhindern,
-    dass ein Fenster in das Hauptfensters einrastet.
+    dass ein Fenster in das Hauptfenster einrastet.
 
-    Sie können auch ``Fenster`` -> :ref:`allow-window-docking` im Hauptmenü abwählen, um zu verhindern, daß die schwebenden
+    Sie können auch ``Fenster`` -> :ref:`allow-window-docking` im Hauptmenü abwählen, um zu verhindern, dass die schwebenden
     Fenster nicht mehr in das Hauptfenster einrasten.
 
 Symbolleisten sind auch durch Klicken auf den linken Griff verschiebbar
@@ -84,5 +84,5 @@ geöffnet und geschlossen werden.
 
 .. note::
 
-   Sie müssen auf die Titelzeile eines Fensters klicken, um es aus dem Stapel zu entfernen und nicht
+   Sie müssen auf die Titelzeile eines Fensters klicken, um es aus dem Stapel zu entfernen, und nicht
    auf die Reiterleiste.

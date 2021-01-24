@@ -34,7 +34,7 @@ Anzeige
 +-----------------------------------+-----------------------------------+
 | |True North|                      | Geografischer Norden.             |
 +-----------------------------------+-----------------------------------+
-| |Magnetic North|                  | Magnetisch Norden.                |
+| |Magnetic North|                  | Magnetischer Norden.              |
 +-----------------------------------+-----------------------------------+
 | |Distance Circles|                | Abstandskreise und Markierungen   |
 |                                   | vom Benutzerflugzeug, falls       |
