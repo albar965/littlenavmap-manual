@@ -23,7 +23,7 @@ nicht zwischen den Sitzungen gespeichert. Das sind:
 -  ``Flugzeugtyp``: Aus der aktuellen Flugzeugleistung (:doc:`AIRCRAFTPERF`).
 -  ``Abflug``: Erster Wegpunkt im Flugplan.
 -  ``Ziel``: Letzter Wegpunkt im Flugplan.
--  ``Route``: Erzeugt aus den Flugplan-Wegpunkten, Luftstraßen, SID und
+-  ``Route``: Erzeugt aus den Flugplanwegpunkten, Luftstraßen, SID und
    STAR (:doc:`ROUTEDESCR`).
 -  ``Reiseflughöhe``: Aus dem Flugplan übernommen. Reiseflughöhe in Fuß.
 -  ``Wahre Luftgeschw.``: Gefüllt ausgehend von der aktuellen

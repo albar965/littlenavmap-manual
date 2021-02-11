@@ -95,9 +95,6 @@ Without the open source `Marble <https://marble.kde.org>`__ widget that
 allows me to access and display all the maps I would still be busy doing
 that myself for years.
 
-No `Qt application framework <https://www.qt.io>`__ and I could not even
-draw a simple button.
-
 Let's not forget about all the services that provide us all the online
 maps for free:
 

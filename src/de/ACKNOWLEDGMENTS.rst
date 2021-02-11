@@ -80,9 +80,6 @@ Ohne das Open Source `Marble <https://marble.kde.org>`__ Widget das es
 mir erlaubt, auf all die Karten zuzugreifen und sie darzustellen, wäre
 ich immer noch für Jahre damit beschäftigt, es selbst zu tun.
 
-An `Qt application framework <https://www.qt.io>`__ ohne welches ich
-nicht einmal eine einfache Schaltfläche zeichnen könnte.
-
 Und lasst uns nicht die ganzen Dienste vergessen, die uns die
 Onlinekarten kostenlos zur Verfügung stellen:
 

@@ -22,8 +22,7 @@ Procedures can be filtered by runway and type.
 Right-click on a procedure to get more options in the context menu, like
 centering the map on the procedure or adding it to your flight plan.
 
-Use the context menu of the flight plan table to remove procedures like
-any other waypoint. See :ref:`delete-selected-legs`.
+Use the context menu of the flight plan table to remove procedures. See :ref:`delete-selected-legs`.
 
 Procedure legs are highlighted in red if one or more navaids could not
 be resolved. A warning dialog will be displayed if you try to add this
@@ -88,8 +87,7 @@ Top Buttons
 Type Filter (All Procedures)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The type filter is not available for an FSX or P3D stock database. A
-navdata update is needed to get SID and STAR procedures.
+The type filter is not available for an FSX or P3D stock database.
 
 This filter is always available for a X-Plane database which contains
 SIDs and STARs already in the stock data.

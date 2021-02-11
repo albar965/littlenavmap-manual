@@ -34,12 +34,12 @@ Warteschleifen erstellen
 -  ``Wenderichtung``: Wählen Sie diese Option, um zwischen Links- und
    Rechtskurve zu wählen.
 -  ``Kurs``: Magnetischer Kurs des einwärts gewandten (zum Ursprungspunkt hin)
-   Abschnittes des Warteschleife.
+   Abschnittes der Warteschleife.
 -  ``Geschwindigkeit``: Vorgesehene Geschwindigkeit. Wird
    zusammen mit der Zeit zur Berechnung der Warteschleifengröße verwendet.
 -  ``Zeit``: Zeit der geraden Strecken in der Warteschleife. Wird zusammen mit der
    Geschwindigkeit zur Berechnung der Warteschleifengröße verwendet.
--  Beschriftung ``Länge des geraden Abschnittes``: Berechnete länge der geraden Eingangs- und
+-  Beschriftung ``Länge des geraden Abschnittes``: Berechnete Länge der geraden Eingangs- und
    Ausgangsabschnitte.
 -  Beschriftung ``Gesamtzeit zur Durchführung``: Berechnete Gesamtzeit für die
    Durchführung einer Warteschleife.
@@ -48,7 +48,7 @@ Warteschleifen erstellen
 
 Warteschleifen können entfernt werden, indem Sie entweder ``Karte`` ->
 ``Alle Distanzkreise, Distanzmessungen, Platzrunden und Warteschleifen entfernen``
-auswählen oder indem Sie mit der rechten Maustaste auf den aktiven Punkt
+auswählen, oder indem Sie mit der rechten Maustaste auf den aktiven Punkt
 (Dreieck) am Warteschleifenursprung klicken.
 
 Siehe :ref:`holding-legend` für Details zu den

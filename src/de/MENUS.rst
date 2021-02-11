@@ -14,7 +14,7 @@ sind in den Menüpunkten zu sehen. Siehe :doc:`SHORTCUTS`.
 Abreißmenüs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Die Schaltflächen der Symbolleiste und die Menüschaltfläche :doc:`ROUTEDESCR` ermöglichen das Abtrennen des Menüs
+Die Schaltflächen der Symbolleiste und die Menüschaltfläche :doc:`ROUTEDESCR` ermöglichen das Abtrennen des Menüs,
 indem Sie auf die gestrichelte Linie darüber klicken.
 
 Dadurch wird das Menü in ein separates Fenster verschoben und erlaubt es, schnell mehrere Optionen auf einmal zu ändern.
@@ -48,7 +48,7 @@ erstellen
 
 Öffnet einen Flugplan mit einem der folgenden Formate:
 
-- LNMPLN. Dies ist das Standardformat von *Little Navmap*, das alle Flugplanfunktionen wie Anmerkungen unterstützt.
+- LNMPLN. Dies ist das Standardformat von *Little Navmap*, das alle Flugplanfunktionen, wie Anmerkungen, unterstützt.
   Siehe :ref:`flight-plan-formats-lnmpln` für Informationen über dieses Format.
 - PLN: FSX, FS9, FSC oder MSFS.
 - FLP
@@ -59,8 +59,8 @@ erstellen
 Der Dateityp wird durch den Inhalt und nicht durch die Dateierweiterung bestimmt. Siehe :doc:`FLIGHTPLANFMT` für weitere Informationen.
 
 Eine geöffnete Flugplandatei wird beim Start neu geladen (Nachladen und
-Zentrieren kann ausgeschaltet werden im ``Einstellungen`` Dialog auf der
-Seite ``Start`` und ``Nutzerschnittstelle``).
+Zentrieren kann  im ``Einstellungen`` Dialog auf der
+Seite ``Start`` und ``Nutzerschnittstelle``) ausgeschaltet werden.
 
 Man kann auch per Drag & Drop Dateien aus einem Dateimanager heraus,
 wie dem Windows Explorer oder macOS Finder, zum Laden in das *Little Navmap*
@@ -74,7 +74,7 @@ akzeptiert.
 
      Speichern Sie immer eine Kopie des Flugplans im PLN-Format, um alle
      Informationen neu laden zu können. Das Exportieren und Lesen in und von anderen
-     Formaten wie X-Plane FMS kann zu Informationsverlusten führen.
+     Formaten, wie X-Plane FMS, kann zu Informationsverlusten führen.
 
 .. _append-flight-plan:
 
@@ -87,11 +87,11 @@ Mit ``Flugplan anhängen`` können Sie komplette Flugpläne oder
 Flugplanauschnitte in den aktuellen Plan laden oder zusammenführen. Alle
 Wegpunkte werden am Ende des aktuellen Flugplans hinzugefügt. Sie können
 danach mit den Auswahlfeldern ``Ausgewählten Abschnitt löschen`` und
-``Ausgewählte Flugplanabschntte nach oben/unten verschieben`` die
+``Ausgewählte Flugplanabschnitte nach oben/unten verschieben`` die
 Wegpunkte und Flugplätze wunschgemäß anordnen.
 Siehe auch :ref:`flight-plan-table-view-context-menu`.
 
-Alle Ankunftsprozeduren werden entfernt, wenn eine Flugplans angehängt
+Alle Ankunftsprozeduren werden entfernt, wenn ein Flugplan angehängt
 wird. Der neue Flugplan wird Ankunfts- und Anflugprozedur aus dem
 geladenen Plan verwenden.
 
@@ -113,12 +113,12 @@ können die Liste löschen, indem Sie ``Menü zurücksetzen`` wählen.
 Speichert den Flugplan in die aktuelle LNMPLN-Datei. Dieses Format ermöglicht die Speicherung aller Flugplanattribute von *Little
 Navmap*.
 
-*Little Navmap* öffnet den Dialog ``Speichern unter`` (siehe unten :ref:`save-flight-plan-as`), wenn sich Abflug,
+*Little Navmap* öffnet den Dialog ``Speichern unter`` (siehe unten :ref:`save-flight-plan-as`), wenn Abflug,
 Zielort oder ein anderer im Flugplannamen verwendeter Wert geändert wurde. Dies hilft zu vermeiden, dass
-LNMPLN-Dateien mit falschen Plänen zu überschreiben werden, wie z.B. nach einer Richtungsumkehr.
+LNMPLN-Dateien mit falschen Plänen überschrieben werden, wie z.B. nach einer Richtungsumkehr.
 
 Sie können dieses Verhalten im Einstellungsdialog auf der Seite :ref:`flight-plan` abschalten, indem Sie das Häkchen bei
-``Das Überschreiben von Flugplänen mit veränderten Start oder Ziel vermeiden``.
+``Das Überschreiben von Flugplänen mit veränderten Start oder Ziel vermeiden`` entfernen.
 
 .. _save-flight-plan-as:
 
@@ -138,16 +138,15 @@ LNMPLN-Datei gehen.
 
 .. tip::
 
-   Sie können die Flugplandateien an einem beliebigen Ort speichern. Ich empfehle ein Verzeichnis in ``Dokumente`` wie
+   Sie können die Flugplandateien an einem beliebigen Ort speichern. Ich empfehle ein Verzeichnis in ``Dokumente``, wie
    ``Dokumente\Little Navmap\Flugpläne``.
 
    Sie können auch den Ordner verwenden, der vom Dialog :doc:`FOLDERS` vorgeschlagen wird.
 
 .. warning::
 
-   Speichern Sie immer eine Kopie des Flugplans im Standardformat LNMPLN, um
-   in der Lage zu sein, alle Informationen neu zu laden. Das Schreiben in und Lesen aus anderen
-   Formaten wie X-Plane FMS kann zu Informationsverlusten führen.
+   Speichern Sie immer eine Kopie des Flugplans im Standardformat LNMPLN, um alle Informationen neu laden zu können. Das Schreiben in und Lesen aus anderen
+   Formaten, wie X-Plane FMS, kann zu Informationsverlusten führen.
    Siehe :doc:`FLIGHTPLANFMT` für weitere Informationen.
 
 .. _reset-for-new-flight:
@@ -245,9 +244,9 @@ Flugplan als GPX exportieren
 
 Exportiert den aktuellen Flugplan in eine GPS-Exchange-Format-Datei, die von Google Earth und den meisten anderen GIS-Anwendungen gelesen werden kann.
 
-Der Flugplan wird als Route und die geflogene Flugzeugpfad mit Zeit und Höhe exportiert.
+Der Flugplan wird als Route und der geflogene Flugzeugpfad mit Zeit und Höhe exportiert.
 
-In der Route sind für alle Wegpunkte die Abflug- und Zielhöhe sowie die Reiseflughöhe festgelegt. Die Wegpunkte aller Prozeduren sind in der exportierten Datei enthalten. Beachten Sie, dass mit den Wegpunkten nicht alle Teile einer Prozedur wie Warteschleifen oder Wendemanöver reproduziert werden können.
+In der Route sind für alle Wegpunkte die Abflug- und Zielhöhe sowie die Reiseflughöhe festgelegt. Die Wegpunkte aller Prozeduren sind in der exportierten Datei enthalten. Beachten Sie, dass mit den Wegpunkten nicht alle Teile einer Prozedur, wie Warteschleifen oder Wendemanöver, reproduziert werden können.
 
 .. note::
 
@@ -283,10 +282,10 @@ Untermenü mit mehreren Aktionen, die den Export in die meisten Flugplanformate 
 
 .. warning::
 
-       Beachten Sie, dass das Speichern von Flugplänen mit einer oder mehr dieser Methoden
-       mehrere Einschränkungen hat:
+       Beachten Sie, dass das Speichern von Flugplänen mit einer oder mehrere dieser Methoden
+       Einschränkungen hat:
 
-       -  Mehrere Anflugabschnitte wie Warteschleifen, Schleifen oder Wendemanöver können nicht
+       -  Mehrere Anflugabschnitte, wie Warteschleifen, Schleifen oder Wendemanöver, können nicht
           korrekt angezeigt werden, wenn Sie nur Wegpunkte bzw. Koordinaten
           verwenden.
        -  Geschwindigkeits- und Höhenbeschränkungen sind in den exportierten
@@ -341,7 +340,7 @@ Siehe :doc:`ROUTEEXPORTALL` für Details.
 |Multiexport Flight Plan Options| Multiexport Flugplan Einstellungen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Öffnet einen Dialog, der es erlaubt, Pfade zu konfigurieren und Formate für Flugplan-Exporte mit der obigen Funktion :ref:`multiexport-flight-plan` auszuwählen.
+Öffnet einen Dialog, der es erlaubt, Pfade zu konfigurieren und Formate für Flugplanexporte mit der obigen Funktion :ref:`multiexport-flight-plan` auszuwählen.
 
 Siehe :doc:`ROUTEEXPORTALL` für Details.
 
@@ -353,7 +352,7 @@ Siehe :doc:`ROUTEEXPORTALL` für Details.
 Ermöglicht das Hinzufügen einer oder mehrerer Google Earth KML- oder
 KMZ-Dateien zur Kartendarstellung. Alle hinzugefügten KML- oder
 KMZ-Dateien werden beim Start neu geladen. Nachladen und Zentrieren kann
-im ``Einstellungen`` auf der Seite ``Start`` und ``Nutzerschnittstelle``
+in ``Einstellungen`` auf der Seite ``Start`` und ``Nutzerschnittstelle``
 ausgeschaltet werden.
 
 Aufgrund der Vielzahl der KML-Dateien kann nicht garantiert werden, dass
@@ -373,14 +372,14 @@ Löscht alle geladenen KML Dateien von der Karte.
 
 Beendet das Laden von Kartendaten aus dem Internet. Dies betrifft die
 *OpenStreetMap*, *OpenTopoMap* und alle anderen Online-Map-Themen sowie
-die Höhendaten. Eine rote ``Offline.`` Anzeige wird angezeigt, wenn
+die Höhendaten. Eine rote Anzeige ``Offline`` wird angezeigt, wenn
 dieser Modus aktiviert ist.
 
 Sie sollten die Anwendung neu starten, nachdem Sie wieder online
 gegangen sind.
 
 Beachten Sie, dass diese Funktion nicht das Herunterladen von Wetterinformationen
-betrifft. Diese können Sie in den ensprechenden Menüs separat abschalten.
+betrifft. Diese können Sie in den entsprechenden Menüs separat abschalten.
 
 .. warning::
 
@@ -431,7 +430,7 @@ Kartenbild in die Zwischenablage kopieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Kopiert das aktuelle Kartenbild in die Zwischenablage. Das Bild enthält
-keine die Karten-Overlays.
+keine Karten-Overlays.
 
 :doc:`IMAGEEXPORT` wird vor dem Kopieren angezeigt, damit Sie die Bildgröße
 auswählen können.
@@ -500,7 +499,7 @@ Flugplanänderungen.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Am Startflugplatz kann als Startposition ein Parkplatz (Gate, Rampe oder
-Tankplatz), Landebahn oder Hubschrauberlandeplatz ausgewählt werden.
+Tankplatz), Landebahn oder Helikopterlandeplatz ausgewählt werden.
 Eine Parkposition kann auch im Kartenkontextmenüelement :ref:`set-as-flight-plan-departure`
 ausgewählt werden, wenn Sie mit der rechten Maustaste auf eine Parkposition klicken.
 Wenn keine Position ausgewählt ist, wird das längste
@@ -515,7 +514,7 @@ primäre Start- und Landebahnende automatisch als Start ausgewählt.
 |Edit Flight Plan on Map| Flugplan auf der Karte bearbeiten
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Schaltet den Drag-and-Drop-Bearbeitungsmodus für den Flugplan auf der Karte and oder aus.
+Schaltet den Drag-and-Drop-Bearbeitungsmodus für den Flugplan auf der Karte an oder aus.
 Siehe auch :doc:`MAPFPEDIT`.
 
 .. _new-flight-plan-from-description:
@@ -549,8 +548,8 @@ Diese Funktion löscht keine Prozeduren aus dem aktuellen Flugplan, sondern verb
 .. tip::
 
     Sie können einen Flugplan zwischen jeder Art von Wegpunkten berechnen, auch
-    benutzerdefinierten Wegpunkten (klicken Sie mit der rechten Maustaste auf die Karte und wählen Sie
-    :ref:`add-position-to-flight-plan`, um einen zu erstellen). Dies erlaubt die Erstellung von
+    benutzerdefinierten Wegpunkten. Klicken Sie mit der rechten Maustaste auf die Karte und wählen Sie
+    :ref:`add-position-to-flight-plan`, um einen zu erstellen. Dies erlaubt die Erstellung von
     von Flugplanschnipseln, die zu Flugplänen zusammengefügt werden können.
 
 .. _reverse-flight-plan:
@@ -571,6 +570,8 @@ Einwegbeschränkungen nicht gültig wäre. Auch Prozeduren werden entfernt.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Öffnet das Andockfenster für die Flugplanberechnung, welches die automatische Generierung eines Flugplans nach verschiedenen Kriterien ermöglicht.
+
+Die Höhe aus dem aktuellen Flugplan wird in das Berechnungsfenster übertragen.
 
 Siehe Kapitel :doc:`ROUTECALC` für weitere Informationen.
 
@@ -603,7 +604,7 @@ Lädt ozeanische oder andere Tracks wie NAT, PACOTS und AUSOTS herunter.
 
 Die Tracks werden auf der Karte angezeigt und in der Statusleiste wird eine Meldung angezeigt, sobald der Download beendet ist.
 
-Tracks werden beim Beenden des Programms entfernt. Verwenden Sie die Funktion ``Tracks beim Start herunterladen``
+Tracks werden beim Beenden des Programms entfernt. Verwenden Sie die Funktion ``Tracks beim Start herunterladen``,
 um immer Tracks zur Verfügung zu haben.
 
 Siehe :doc:`TRACKS` für weitere Informationen.
@@ -657,7 +658,7 @@ Zeigt den den gesamten Flugplan auf der Karte an.
 
 Entfernt die Auswahl aller Einträge in der Flugplantabelle,
 aller Suchergebnistabellen und entfernt alle Hervorhebungen aus der
-Karte. Verwenden Sie dies, um während des Fluges eine saubere Ansicht
+Karte. Verwenden Sie dies, um während des Fluges eine klare Ansicht
 der Karte zu erhalten.
 
 .. _remove-marks:
@@ -666,7 +667,7 @@ der Karte zu erhalten.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Entfernt alle Nutzerobjekte, die Distanzkreise, Reichweitenringe von Navigationshilfen,
-Messlinien, Platzrunden und Warteschleifen, aus der Karte. Dies kann nicht rückgängig gemacht werden.
+Messlinien, Platzrunden und Warteschleifen aus der Karte. Dies kann nicht rückgängig gemacht werden.
 
 Vor dem Entfernen wird ein Warndialog angezeigt.
 
@@ -679,7 +680,7 @@ Zoomt auf das Benutzerflugzeug, wenn es direkt mit einem Flugsimulator oder übe
 
 Standardmäßig bleiben das Benutzerflugzeug und der nächste Flugplanwegpunkt auf der Karte sichtbar. Der Modus fällt auf die einfache Flugzeugzentrierung zurück, wenn kein Flugplan geladen ist oder keine aktive Teilstrecke vorhanden ist.
 
-Sie können die Karte zoomen und verschieben und nach einer kuzen Zeit werden das Flugzeug und der nächste Wegpunkt wieder zentriert.
+Sie können die Karte zoomen und verschieben. Nach einer kurzen Zeit werden das Flugzeug und der nächste Wegpunkt wieder zentriert.
 
 Sie können das Verhalten auf der Seite :ref:`simulator-aircraft` im Dialog ``Einstellungen`` ändern.
 
@@ -700,8 +701,8 @@ Der Flugzeugpfad wird auch an Logbucheinträge angehängt und kann dort gespeich
 
 .. note::
 
-      Setzen Sie Ihren Flugzeugpfad immer zurück, bevor Sie einen Flug durchführen, um die korrekten Pfad im Logbucheintrag zu haben.
-      Der beste Weg, dies zu tun, ist :ref:`reset-for-new-flight`.
+      Setzen Sie Ihren Flugzeugpfad immer zurück, bevor Sie einen Flug durchführen, um den korrekten Pfad im Logbucheintrag zu haben.
+      Dabei gehen Sie am besten folgendermaßen vor :ref:`reset-for-new-flight`.
 
 .. _map-position-back-forward:
 
@@ -755,7 +756,7 @@ Symbole.
       viele Details ausgewählt werden. In diesem Fall wird in der Statusleiste
       eine rote Warnmeldung ``Zu viele Kartenobjekte`` angezeigt.
 
-Die Detaillierungsstufe wird in der Statusleiste angezeigt. Der Bereich
+Die Detailstufe wird in der Statusleiste angezeigt. Der Bereich
 ist -5 für kleinste Details bis +5 für größte Details.
 
 .. tip::
@@ -803,7 +804,7 @@ befestigten Oberfläche haben.
 
 Zeigen Sie Flugplätze, die nur unbefestigte Start- und Landebahnen oder
 nur Wasserbahnen haben. Diese Art von Flugplatz kann je nach
-Zoom-Entfernung auf der Karte ausgeblendet sein.
+Zoomdistanz auf der Karte ausgeblendet sein.
 
 .. _show-empty-airports:
 
@@ -814,8 +815,8 @@ Leere Flugplätze anzeigen. Diese Schaltfläche oder dieser Menüpunkt ist
 je nach den ausgewählten Optionen im Dialog ``Einstellungen`` auf :ref:`map`
 möglicherweise nicht sichtbar. Der Status dieser
 Schaltfläche wird mit den anderen Flugplatzschaltflächen kombiniert. Das
-bedeutet zum Beispiel: Sie müssen Beliebige Oberfläche, unbefestigt und
-Leere Flugplätze aktivieren, um leere Flugplätze mit nur unbefestigten
+bedeutet zum Beispiel: Sie müssen ``Mindestens eine befestigte`` und
+``Leere Flugplätze`` aktivieren, um leere Flugplätze mit nur unbefestigten
 Runways zu sehen.
 
 Ein leerer Flugplatz ist definiert als ein Flugplatz, der weder
@@ -826,7 +827,7 @@ Leere Flugplätze sind grau und hinter allen anderen Flugplätze auf der Karte d
 Diese Funktion hilft, Flugplätze ohne Szenerieelemente zu vermeiden.
 
 Flugplätze, die nur über Wasserbahnen verfügen, sind von dieser
-Definition ausgenommen, um unbeabsichtigtes nicht Anzeigen zu vermeiden.
+Definition ausgenommen, um unbeabsichtigtes Verbergen zu vermeiden.
 
 **X-Plane und 3D Flugpätze**
 
@@ -835,16 +836,16 @@ Die Funktion kann auf X-Plane-Flugplätze erweitert werden, die nicht als
 ``Èinstellungen`` auf :ref:`map` das Ankreuzfeld
 ``Alle X-Plane-Flugplätze, die nicht 3D sind,als leere Flugplätze behandeln`` aktivieren.
 Alle Flugplätze, die nicht als ``3D`` markiert
-sind, werden auf der Karte grau dargestellt und können
-wie oben beschrieben ausgeblendet werden.
+sind, werden auf der Karte grau dargestellt und können,
+wie oben beschrieben, ausgeblendet werden.
 
 Ein Flugplatz gilt als 3D, wenn seine Quelldatei ``3D`` im ``gui_label``
 enthält.
 
 Die Definition von ``3D`` ist jedoch willkürlich. Ein ``3D`` Flugplatz
 kann nur ein einziges Objekt enthalten, wie beispielsweise einen
-Lichtmast oder einen Verkehrsleitkegel, oder er kann ein vollständig
-errichteter GroßFlugplatz sein.
+Lichtmast, einen Leitkegel oder auch einen vollständig
+errichteten Großflugplatz.
 
 Navigationshilfen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -880,7 +881,7 @@ Navigationshilfen
 ''''''''''''''''''''''''''''''''''''''''
 
 Zeigt oder verbirgt diese Einrichtungen oder Navigationshilfen auf der Karte.
-Je nach Zoom-Entfernung können Objekte auf der Karte ausgeblendet sein.
+Je nach Zoomdistanz können Objekte auf der Karte ausgeblendet sein.
 
 .. _show-tracks:
 
@@ -924,7 +925,7 @@ Die Symbolleiste der Lufträume enthält Schaltflächen mit jeweils einer
 Menüschaltfläche, mit dem Sie die Luftraumanzeige so konfigurieren können,
 dass bestimmte Luftraumtypen ein- oder ausgeblendet werden. Jede
 Menüschaltfläche hat auch ``Alle`` und ``Keine`` Funktionen, um alle Typen
-im Menü auszuwählen oder abzuwählen..
+im Menü auszuwählen oder abzuwählen.
 
 .. _icao-airspaces:
 
@@ -993,7 +994,7 @@ Schaltet die jeweiligen Nutzerobjekte aus oder ein.
 
 Beachten Sie, dass der Menüpunkt zum Hinzufügen eines Nutzerobjektes
 deaktiviert ist, wenn die jeweiligen Nutzerobjekte auf der Karte
-ausgeblendet ist. Der Menüpunkt wird in diesem Fall mit dem Text
+ausgeblendet sind. Der Menüpunkt wird in diesem Fall mit dem Text
 ``auf der Karte versteckt`` versehen.
 
 .. _map-userpoints:
@@ -1005,7 +1006,7 @@ Ermöglicht das Ein- und Ausblenden von benutzerdefinierten
 Wegpunkten je nach Typ.
 
 Der Menüpunkt ``Unbekannte Typen`` blendet alle Typen ein oder aus, die
-nicht zu einem bekanntenn gehören.
+nicht zu einem bekannten gehören.
 
 Der Type ``Unbekannt`` |Unknown| blendet alle Nutzerpunkte ein oder aus,
 die genau vom Typ ``Unbekannt`` sind.
@@ -1021,7 +1022,7 @@ Informationen über benutzerdefinierte Wegpunkte.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ein- und Ausblenden des Flugplans. Der Flugplan wird unabhängig von der
-Zoom-Entfernung angezeigt.
+Zoomdistanz angezeigt.
 
 Beachten Sie, dass der Flugplan auch im Höhenprofil ausgeblendet wird, wenn Sie ihn
 hier ausschalten.
@@ -1040,7 +1041,7 @@ Dies wirkt sich auf die Karten- und Höhenprofilanzeige aus, nicht aber auf die 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ein- oder Ausblenden der Fehlanflüge des aktuellen Flugplans. Dies hat
-keinen Einfluss auf die Vorschau auf des Reiters ``Prozeduren`` im
+keinen Einfluss auf die Vorschau des Reiters ``Prozeduren`` im
 Suchfenster.
 
 .. note::
@@ -1079,7 +1080,7 @@ finden Sie im Dialogfenster ``Einstellungen`` auf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt den Pfad des Benutzerflugzeugs an. Der Flugpfad wird immer
-unabhängig von der Zoom-Distanz angezeigt. Er wird gespeichert und beim
+unabhängig von der Zoomdistanz angezeigt. Er wird gespeichert und beim
 Programmstart neu geladen.
 
 Der Flugpfad kann manuell gelöscht werden, indem Sie im Hauptmenü ``Karte``
@@ -1106,8 +1107,6 @@ verbunden ist. Andernfalls wird sie in der Kartenansicht zentriert.
 
 Für weitere Informationen siehe :doc:`COMPASSROSE`.
 
-
-
 .. _show-compass-rose-attach:
 
 |Attach Compass Rose to Aircraft| Kompassrose an Nutzerflugzeug anhängen
@@ -1121,18 +1120,17 @@ Dies kann mit diesem Menüpunkt deaktiviert werden, wodurch sich die Rose vom Be
 
 .. _show-map-ai-aircraft:
 
-|Show AI and Multiplayer Aircraft| |Show AI and Multiplayer Ships| Zeige KI- und Mehrspielerflugzege
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Show AI and Multiplayer Aircraft| |Show AI and Multiplayer Ships| Zeige KI- und Mehrspielerflugzeuge
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt KI- und Mehrspielerflugzeuge oder Schiffe auf der Karte an.
-Mehrspieler-Fahrzeuge können z.B. aus FSCloud, VATSIM oder
+Mehrspielerfahrzeuge können z.B. aus FSCloud, VATSIM oder
 Steam-Sitzungen angezeigt werden.
 
 Die Farbe und Form des Symbols zeigt den Flugzeugtyp und ob sich das
 Flugzeug am Boden befindet (graue Umrandung am Boden).
 
-|AI or Multiplayer Aircraft| KI- oder Mehrspieler-Flugzeug aus dem
-Simulator.
+|AI or Multiplayer Aircraft| KI- oder Mehrspielerflugzeug aus dem Simulator.
 
 Dazu gehören auch Flugzeuge, die von den verschiedenen
 Online-Netzwerk-Clients eingespeist werden. Ein Klick auf das
@@ -1140,7 +1138,7 @@ KI-Flugzeug oder -Schiff zeigt weitere Informationen im
 ``Simulatorflugzeug`` Dockfenster auf dem Reiter
 ``AI / Mehrspieler``.
 
-|Online Multiplayer Aircraft| Mehrspieler-Flugzeug/Client aus einem
+|Online Multiplayer Aircraft| Mehrspielerflugzeug bzw. Client aus einem
 Online-Netzwerk. Siehe :doc:`ONLINENETWORKS`. Ein
 Klick auf das Online-Flugzeug zeigt Informationen im ``Informationen``
 Dockfenster im Reiter ``Online Clients``.
@@ -1148,9 +1146,9 @@ Dockfenster im Reiter ``Online Clients``.
 Beachten Sie, dass in X-Plane der Schiffsverkehr nicht verfügbar ist und
 die Informationen über KI-Flugzeuge begrenzt sind.
 
-Die angezeigten Fahrzeuge sind durch das verwendete Mehrspieler-System
-begrenzt, wenn *Little Navmap* nicht mit einem Online-Netzwerk wie
-VATSIM oder IVAO verbunden ist. Mehrspieler-Flugzeuge verschwinden je
+Die angezeigten Fahrzeuge sind durch das verwendete Mehrspielersystem
+begrenzt, wenn *Little Navmap* nicht mit einem Online-Netzwerk, wie
+VATSIM oder IVAO, verbunden ist. Mehrspielerflugzeuge verschwinden je
 nach Entfernung zum Nutzerflugzeug. Für die KI im FSX oder P3D sind das
 derzeit etwa 100 NM oder rund 200 Kilometer.
 
@@ -1212,7 +1210,7 @@ Gebieten, in denen die höchsten Höhenlagen 5.000 Fuß MSL oder niedriger
 sind. Wenn die höchsten Höhen über 5.000 Fuß liegen, wird MSL oder
 höheres Gelände um 2.000 Fuß geräumt.
 
-Die große Zahl ist 1.000 Fuß und die kleine Zahl 100 Fuß Mindesthöhe.
+Die große Zahl bedeutet 1.000 Fuß und die kleine Zahl 100 Fuß Mindesthöhe.
 
 .. figure:: ../images/legend_map_mora.png
 
@@ -1229,7 +1227,7 @@ verfügbar ist. Die Quelle für die Anzeige kann im Menü
 werden.
 
 Siehe :ref:`airport-weather-legend` zur Erläuterung der Symbole und
-:ref:`airport-weather` für weitere Infomationen.
+:ref:`airport-weather` für weitere Informationen.
 
 .. _wind-levels-menu:
 
@@ -1237,8 +1235,7 @@ Windebenen
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Aktiviert oder deaktiviert die Höhenwindanzeige für verschiedene
-Ebenen sowie an Flugplan-Wegpunkten. Wählen Sie die Winddatenquelle für
-die Anzeige mit :ref:`wind-source` unten.
+Ebenen sowie an Flugplanwegpunkten. Wählen Sie die Winddatenquelle für die Anzeige mit :ref:`wind-source` unten.
 
 Siehe :ref:`high-alt-wind` für eine Erklärung der Windsymbole und :ref:`wind`
 für weitere Informationen.
@@ -1308,7 +1305,7 @@ Karte liefert, wenn Sie Online-Kartenmotive wie *OpenStreetMap* oder
 Kugelförmig
 '''''''''''
 
-Zeigt die Erde als eine Kugel als natürlichste Projektion. Die
+Zeigt die Erde als eine Kugel, was die natürlichste Projektion darstellt. Die
 Bewegung kann leicht stottern, wenn Sie die auf Bildkacheln basierenden
 Online-Kartenmotive wie *OpenStreetMap* oder *OpenTopoMap* verwenden.
 Nutzen Sie die Kartenthemen ``Einfach``, ``Flach`` oder ``Atlas``, um dies zu
@@ -1328,10 +1325,10 @@ flachen Bildkacheln für die Darstellung.
 Kartenthema
 ^^^^^^^^^^^^
 
-Ermöglicht das Ändern des Kartenmotivs, das das Aussehen der Hintergrundkarte definiert.
+Ermöglicht das Ändern des Kartenmotivs, welches das Aussehen der Hintergrundkarte definiert.
 
 Benutzerdefinierte Kartenmotive werden mit einem ``*`` in der
-Schaltflächein der Symbolleiste und mit dem Wort ``Custom`` im Menü
+Schaltfläche der Symbolleiste und mit dem Wort ``Benutzerdefiniert`` im Menü
 versehen.
 
 .. tip::
@@ -1366,7 +1363,7 @@ Bergschattierungs-Option beinhaltet. Beachten Sie, dass die
 OpenTopoMap
 '''''''''''
 
-Eine topographischen Karten ähnliche Rasterkarte mit integrierter Bergschattierung und Höhenkonturen.
+Eine der topographischen Karte ähnliche Rasterkarte mit integrierter Bergschattierung und Höhenkonturen.
 
 Die Karte wird von `OpenTopoMap <https://www.opentopomap.org>`__ zur Verfügung gestellt.
 
@@ -1378,7 +1375,7 @@ Die Karte wird von `OpenTopoMap <https://www.opentopomap.org>`__ zur Verfügung 
 Stamen Terrain
 ''''''''''''''
 
-Eine Geländekarte mit integrierter Bergschattierungen und natürlichen
+Eine Geländekarte mit integrierten Bergschattierungen und natürlichen
 Vegetationsfarben. Die Bergschattierung ist weltweit verfügbar.
 
 Kartenkacheln von `Stamen Design <https://stamen.com>`__, mit `CC BY
@@ -1492,7 +1489,7 @@ Wind Quelle
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wählen Sie hier die Quelle für die Daten der Höhenwinde. Dies wirkt sich
-auf die Berechnung von des Steigflugendes, Sinkflugbeginns und der Kraftstoffplanung
+auf die Berechnung des Steigflugendes, Sinkflugbeginns und der Kraftstoffplanung
 aus. Siehe auch :ref:`wind` und :ref:`weather`.
 
 Eine manuelle Windeinstellung für die Reiseflughöhe kann ebenfalls
@@ -1524,7 +1521,7 @@ genaueste Option, da sie Daten für mehrere Windebenen herunterlädt.
 Manueller Wind
 '''''''''''''''''
 
-Dies ist die gleiche Funktion wie der Knopf ``Manueller Wind`` auf dem Reiter ``Treibstoffbericht``.
+Dies ist die gleiche Funktion wie die Schaltfläche ``Manueller Wind`` auf dem Reiter ``Treibstoffbericht``.
 
 Dieser Menüpunkt überlädt die Windquelle und erlaubt es, die durchschnittliche Windrichtung und -geschwindigkeit manuell einzustellen. Zwei Eingabefelder werden auf dem Reiter ``Treibstoffbericht`` angezeigt, wenn dies markiert ist.
 
@@ -1541,7 +1538,7 @@ Für weitere Informationen zu benutzerdefinierten Wegpunkten siehe
 Suche für Nutzerpunkte
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Öffnete das Fenster ``Suche`` und den Reiter ``Nutzerpunkte`` wo
+Öffnet das Fenster ``Suche`` und den Reiter ``Nutzerpunkte``, wo
 Sie benutzerdefinierte Wegpunkte bearbeiten, löschen und suchen können.
 
 .. _userdata-menu-import-csv:
@@ -1550,9 +1547,9 @@ Importiere CSV
 ^^^^^^^^^^^^^^
 
 Importiert eine CSV-Datei, die mit dem weit verbreiteten Format von
-Plan-G kompatibel ist und fügt den gesamten Inhalt der Datenbank hinzu.
+Plan-G kompatibel ist, und fügt den gesamten Inhalt der Datenbank hinzu.
 
-Beachten Sie, dass das CSV-Format das einzige Format ist, das das
+Beachten Sie, dass das CSV-Format das einzige Format ist, welches das
 Schreiben und Lesen aller unterstützten Datenfelder ermöglicht.
 
 Für weitere Informationen siehe :ref:`userpoints-csv`.
@@ -1568,9 +1565,9 @@ manuell oder durch den Export aus *Little Navmap* erstellt werden.
 
 Der Standardspeicherort ist ``XPLANE/Custom Data/user_fix.dat``.
 
-Die importierten Nutzerpunkte sind vom Typ ``Wegpunkt`` |Waypoint| die
+Die importierten Nutzerpunkte sind vom Typ ``Wegpunkt`` |Waypoint|, die
 nach dem Import mit Hilfe der Mehrfachbearbeitung geändert
-werden kann.
+werden können.
 
 Das Format wird von Laminar Research hier beschrieben.:
 `XP-FIX1101-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf>`__.
@@ -1586,7 +1583,7 @@ Liest benutzerdefinierte Wegpunkte aus der Garmin. ``user.wpt`` Datei.
 Weitere Informationen zu Format und Speicherort finden Sie im Handbuch
 des von Ihnen verwendeten Garmin-Geräts.
 
-Die importierten Nutzerpunkte sind vom Typ ``Wegpunkte`` |Waypoint|
+Die importierten Nutzerpunkte sind vom Typ ``Wegpunkte`` |Waypoint|,
 die nach dem Import mit Hilfe der Mehrfachbearbeitung
 geändert werden können.
 
@@ -1599,7 +1596,7 @@ Exportiere CSV
 
 Erstellen oder Anhängen von benutzerdefinierten Wegpunkten an eine
 CSV-Datei. Ein Dialog fragt, ob nur ausgewählte Nutzerpunkte
-exportiert werden sollen und ob die Nutzerpunkte an eine bereits
+exportiert werden sollen, und ob die Nutzerpunkte an eine bereits
 vorhandene Datei angehängt werden sollen.
 
 Beachten Sie, dass die exportierte Datei zusätzliche Spalten
@@ -1622,7 +1619,7 @@ Die exportierten Daten können optional an eine bereits vorhandene Datei
 angehängt werden.
 
 Nicht alle Datenfelder können in dieses Format exportiert werden. Das
-Feld Kennung wird für den Export benötigt.
+Feld ``Kennung`` wird für den Export benötigt.
 
 Außerdem müssen Sie sicherstellen, dass die Kennung
 eindeutig innerhalb der ``user_fix.dat`` ist.
@@ -1639,7 +1636,7 @@ Die exportierten Daten können optional an eine bereits vorhandene Datei
 angehängt werden.
 
 Nicht alle Datenfelder können in dieses Format exportiert werden. Das
-Feld Kennung wird für den Export benötigt. Einige Felder wie der Name
+Feld ``Kennung`` wird für den Export benötigt. Einige Felder, wie der Name,
 unterliegen Beschränkungen.
 
 Für weitere Informationen siehe :ref:`userpoints-xplane`.
@@ -1685,7 +1682,7 @@ Logbuchsuche
 Öffnet das Dockfenster ``Suche`` mit dem Reiter ``Logbuch``,
 wo Sie Logbucheinträge bearbeiten, löschen und suchen können.
 
-Siehe :doc:`LOGBOOK` für mehr informationen.
+Siehe :doc:`LOGBOOK` für mehr Informationen.
 
 .. _logbook-statistics:
 
@@ -1741,7 +1738,7 @@ Logbucheinträge erstellen
 
 *Little Navmap* erstellt automatisch Logbucheinträge für jeden Flug,
 wenn dieser Menüpunkt aktiviert ist. Beim Start des Flugzeuges wird ein Logbucheintrag erstellt,
-der nur den Abflug enthält. Bei der Landung am Ziel und werden weitere Information
+der nur den Abflug enthält. Bei der Landung am Ziel werden weitere Information
 hinzugefügt.
 
 .. note::
@@ -1839,8 +1836,8 @@ Siehe auch :doc:`AIRCRAFTPERFCOLL`.
 
 .. _aircraft-menu-restart:
 
-|Restart Aircraft Performance Collection| Erfassung derFlugzeugleistung neu starten
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Restart Aircraft Performance Collection| Erfassung der Flugzeugleistung neu starten
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Setzt alle gesammelten Werte für die Flugzeugleistung auf Null zurück
 und startet die Leistungserfassung neu.
@@ -1882,12 +1879,12 @@ Anzeige, Flugplan und Suche zu den neu geladenen Simulatordaten.
 .. warning::
 
          Beachten Sie, dass *Little Navmap* Sie nicht davon abhält, eine X-Plane
-         Szenerie-Datenbank zu verwenden, während Sie mit dem FSX/Prepar3D
-         verbunden sind oder umgekehrt. Sie erhalten unerwünschte Effekte wie
+         Szeneriedatenbank zu verwenden, während Sie mit dem FSX/Prepar3D
+         verbunden sind oder umgekehrt. Sie erhalten unerwünschte Effekte, wie
          falsche Wetterinformationen, wenn Sie ein solches Setup verwenden.
 
-         Parkpositionen in Flugplänen können sich beim Wechsel zwischen Szenerie-Bibliotheksdatenbanken ändern.
-         Dies kann passieren, wenn Flughäfen Parkpositionen mit unterschiedlichen Namen haben oder Parkpositionen fehlen.
+         Parkpositionen in Flugplänen können sich beim Wechsel zwischen Szeneriebibliotheksdatenbanken ändern.
+         Dies kann passieren, wenn Flugplätze Parkpositionen mit unterschiedlichen Namen haben oder Parkpositionen fehlen.
 
 Das Programm kann einen geladenen Flugplan ändern, wenn Sie zwischen
 verschiedenen Datenbanken wechseln. Dies kann passieren, wenn im Plan
@@ -1920,7 +1917,7 @@ Informationen aus der Navigraph-Datenbank.
       Die Flugplatzinformationen sind in diesem Modus eingeschränkt.
       Das bedeutet, dass Vorfelder, Rollwege, Parkpositionen, Landebahnoberflächen
       und andere Informationen nicht verfügbar sind.
-      Außerdem können kleinere Flughäfen fehlen.
+      Außerdem können kleinere Flugplätze fehlen.
       Die Anordnung von Start- und Landebahnen stimmt möglicherweise nicht mit der Anordnung im Simulator überein, wenn Sie eine Standard- oder ältere Flugplatzszenerie verwenden.
 
 .. _navigraph-navaid-proc:
@@ -1946,18 +1943,6 @@ aus der Simulatorszenerie gelesen wurden.
 
      Aus FSX, P3D oder MSFS gelesene Navigationshilfen haben Einschränkungen. Das Luftstraßennetz kann nicht korrekt sein
      und Prozeduren können Fehler aufweisen.
-
-.. _show-database-files:
-
-Datenbankdateien anzeigen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Öffnet das Datenbankverzeichnis von *Little Navmap* in einem
-Dateimanager. Weitere Informationen zum Kopieren von Datenbankdateien
-zwischen verschiedenen Computern finden Sie unter :doc:`RUNNOSIM`.
-Dadurch kann *Little Navmap* auf einem entfernten Computer (z.B.
-Windows, Mac oder Linux) mit der gleichen Datenbank ausgeführt werden,
-die auch auf dem Computer mit dem Flugsimulator erstellt wurde.
 
 .. _airspace-source:
 
@@ -2049,11 +2034,11 @@ Webserver-Seite im Browser öffnen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Nur aktiviert, wenn der Webserver läuft. Öffnet die Webserver-Seite in
-Ihrem Standardbrowser. Die Standardadresse ist wie
+Ihrem Standardbrowser. Die Standardadresse lautet
 ``http://COMPUTERNAME:8965`` oder ``http://localhost:8965``.
 
 Diese Funktion funktioniert abhängig von Ihrer Netzwerkumgebung möglicherweise nicht.
-Geben Sie in diesem Fall den Computernamen wie oben manuell in Ihrem Browser ein.
+Geben Sie in diesem Fall den Computernamen, wie oben dargestellt, manuell in Ihrem Browser ein.
 
 .. _reset-and-restart:
 
@@ -2065,8 +2050,8 @@ Flugzeugpfad, Kartenpositionshistorie und Dateihistorien nach Anzeige eines
 Warndialogs auf die
 Standardwerte zurückgesetzt und *Little Navmap* neu gestartet.
 
-Nutzerobjekte wie Distanzkreise, Platzrunden, Warteschleifen sowie
-Szenerie-, Logbuch- und Nutzerpunktdatenbanken sind davon nicht
+Nutzerobjekte, wie Distanzkreise, Platzrunden, Warteschleifen sowie
+Szenerie-, Logbuch- und Nutzerpunktdatenbanken, sind davon nicht
 betroffen.
 
 Eine Sicherungskopie der Einstellungsdatei ``little_navmap.ini`` wird im
@@ -2153,7 +2138,7 @@ Eine Liste von Menüpunkten, die das jeweilige Dockfenster und
 Reiter öffnen. Siehe :ref:`shortcuts-main-window` für eine vollständige
 Liste von Tastaturkombinationen.
 
-Einige Tastenkombinationen aktivieren auch Suchfelder oder Tabellen wie
+Einige Tastenkombinationen aktivieren auch Suchfelder oder Tabellen, wie
 die ICAO-Suche am Flugplatz, wenn Sie die ``Flugplatzsuche`` verwenden
 oder ``F4`` drücken. Dies ermöglicht eine schnelle Suche nach einem
 Flugplatz oder einem anderen Kartenobjekt durch einfaches Drücken der
@@ -2187,14 +2172,14 @@ Die Farben der Stile ``Fusion`` und ``Night`` können über Konfigurationsdateie
 Siehe :doc:`CUSTOMIZE`.
 
 Die verfügbaren Stile hängen vom verwendeten Betriebssystem ab.
-``Fusion`` und ``Night`` sind immer verfügbar sind,
+``Fusion`` und ``Night`` sind immer verfügbar.
 
 .. _window-layout-open:
 
 Fensteranordnung öffnen
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Öffnet eine LNMLAYOUT-Datei und wendet die Änderungen wie Sichtbarkeit, Position und Schwebestatus direkt auf die Andockfenster an. Größe und Position des Hauptfensters werden ebenfalls wiederhergestellt.
+Öffnet eine LNMLAYOUT-Datei und wendet die Änderungen, wie Sichtbarkeit, Position und Schwebestatus, direkt auf die Andockfenster an. Größe und Position des Hauptfensters werden ebenfalls wiederhergestellt.
 
 Vollbild- und normale Anordnungen werden beide aus dieser Datei geladen.
 
@@ -2265,8 +2250,8 @@ Weitere Informationen über Dockfenster finden Sie unter :doc:`DOCKWINDOWS`.
 Dockfenster einrasten
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dies ist standardmäßig aktiviert. Deaktivieren Sie dies, wenn Sie nicht möchten, dass schwebende (d.h. nicht angedockte) Fenster
-wieder in das Hauptfenster einrasten, wenn sie verschoben werden.
+Dies ist standardmäßig aktiviert. Deaktivieren Sie dies, wenn Sie nicht möchten, dass schwebende (d.h. nicht angedockte) Fenster beim Verschieben
+wieder in das Hauptfenster einrasten.
 
 Siehe auch :doc:`DOCKWINDOWS`.
 
@@ -2311,6 +2296,8 @@ geschlossen, wenn ein Dockfenster Teil eines Stapels ist. Weitere
 Informationen über stapelbare Dockfenster finden Sie unter :doc:`DOCKWINDOWS`.
 
 Beachten Sie, dass das Fenster ``Flugplanberechnung`` nicht angedockt werden kann und im schwebenden Zustand bleibt.
+
+Die Höhe aus dem aktuellen Flugplan wird nicht in das Fenster ``Flugplanberechnung`` übertragen, wenn diese Funktion benutzt wird.
 
 .. _main-toolbar-options:
 

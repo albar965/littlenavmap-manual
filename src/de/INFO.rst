@@ -39,7 +39,7 @@ Nutzerpunkt werden angezeigt, wenn Sie einen der Kontextmenüeinträge
 oder in der Suchergebnistabelle auswählen.
 
 Für einen Linksklick in der Karte werden
-alle Tabs für den Flugplatz, alle Navigationshilfen, alle Benutzerpunkte oder alle Lufträume, die sich in der Nähe des Mauszeigers befinden gefüllt.
+alle Tabs für den Flugplatz, alle Navigationshilfen, alle Benutzerpunkte oder alle Lufträume, die sich in der Nähe des Mauszeigers befinden, gefüllt.
 
 *Little Navmap* zeigt Reiter, die auf Prioritäten und
 ausgewählten Objekten basieren, und versucht, das Wechseln der Reiter zu
@@ -77,7 +77,7 @@ Dateien.
 
 .. _scenery:
 
-Szenerie-Informationen
+Szenerieinformationen
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Alle Informationen über Flugplätze und Navigationshilfen beinhalten einen oder
@@ -105,7 +105,7 @@ Navigationsdaten aktualisiert werden können.
 Flugplatz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ein Reiter, die mehrere Unterreiter für Flugplatzinformationen hat.
+Ein Reiter, der mehrere Unterreiter für Flugplatzinformationen hat.
 
 Die sechs Reiter ``Übersicht``, ``Runways``, ``Com``, ``Prozeduren``, ``Nächste`` und ``Wetter`` unterhalb
 der Reiter ``Flugplatz`` zeigen Informationen für einen ausgewählten Platz.
@@ -320,7 +320,7 @@ Das sind:
 -  Vereisung.
 
 Treibstoff- und Zeitschätzungen basieren auf der Grundlage
-der Flugzeugleistung basieren, sofern diese gültig ist (:doc:`AIRCRAFTPERF`).
+der Flugzeugleistung, sofern diese gültig ist (:doc:`AIRCRAFTPERF`).
 
 Der Kraftstoff am Zielort und am Sinkflugstart wird durch die
 aktuelle Kraftstoffmenge in den Tanks und den von der Flugzeugleistung
@@ -356,7 +356,7 @@ Reiter AI / Mehrspieler
 
 Informationen über KI- oder Mehrspielerflugzeuge bzw. -schiffe aus dem Simulator
 (nicht aus dem Online-Netzwerk) werden in diesem
-Reiter angezeigt, wenn ein Fahrzeug auf der Karte angeklickt
+Reiter angezeigt, wenn ein Flugzeug auf der Karte angeklickt
 wird.
 
 Dazu gehören auch die Start- und Zielflugplätze des Flugzeuges, die durch
@@ -378,8 +378,8 @@ werden.
 
 Enthält zwei Reiter: Einen Reiter ``Navigationskarte``, welche die
 verschiedenen Flugplatz- und Navigationssymbole erklärt, und einen Reiter
-``Karte``, die die allgemeine Legende für die Grundkarte
-wie z.B. die *OpenStreetMap*.
+``Karte``, die die allgemeine Legende für die Grundkarte,
+wie z.B. die *OpenStreetMap*, beinhaltet.
 
 Der Inhalt der Legende ``Navigationskarte`` ist auch im Online-Handbuch verfügbar:
 :doc:`LEGEND`.

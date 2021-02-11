@@ -16,8 +16,8 @@ Mit einer Menüschaltfläche |Menu Button|, können Sie die
 generierte Route anpassen.
 
 *Little Navmap* wird versuchen, so viel wie möglich von der
-Route zu nutzen, auch wenn Teile des Flugplans wie Wegpunkte oder
-Luftstraßen nicht gefunden werden können oder Namen mehrdeutig sind. In
+Route zu nutzen, auch wenn Teile des Flugplans, wie Wegpunkte oder
+Luftstraßen, nicht gefunden werden können oder Namen mehrdeutig sind. In
 diesem Fall werden in der unteren Hälfte Warnungen angezeigt.
 
 Wenn eine Route eine lange Strecke zurücklegt und einen Wegpunktnamen
@@ -32,7 +32,7 @@ Lesen von Routenbeschreibungen aus Online-Quellen wie
 `RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight
 Planner <http://onlineflightplanner.org/>`__,
 `SimBrief <https://www.simbrief.com>`__ oder
-`SkyVector <https://skyvector.com>`__ ein Navigationsdaten-Update für
+`SkyVector <https://skyvector.com>`__ eine Navigationsdatenaktualisierung für
 die Bestandsszenerie oder *Little Navmap* zu verwenden.
 
 Wenn eine Navigationsdatenaktualisierung nicht möglich ist, wählen Sie den AIRAC-Zyklus
@@ -44,7 +44,7 @@ einigen Fällen nicht exakt zurückgerechnet werden können. Dies geschieht
 aufgrund von Mehrdeutigkeiten bei Navigationshilfen, wie z.B. NDB- und VOR-Stationen
 mit gleichen Namen oder Fehlern in den Quelldaten.
 
-Die FLugplanhöhe werden verwendet, um den Flugplan zu erstellen, falls gegeben.
+Die Flugplanhöhe wird verwendet, um den Flugplan zu erstellen, falls gegeben.
 Andernfalls wird die Reiseflughöhe
 automatisch durch den Flugplantyp (IFR oder VFR) und die Mindesthöhe der
 verwendeten Luftstraßenabschnitte bestimmt.
@@ -87,8 +87,8 @@ Schaltflächen
    -  ``DCT (direkt) Instruktionen schreiben``: Füge ``DCT`` für alle
       direkten Wegpunktverbindungen im Flugplan hinzu.
    -  ``Fluggeschwindigkeits- und Höhenanweisungen für Reiseflug schreiben``: Fügt
-      die Reiseflughöhe aus dem Flugplan und die Geschwindigkeit aus der Flugzeugleistung.
-   -  ``Wegpunkte statt Luftstraßen schreiben``: Nimmt keine Luftstraßennamen in die Zeichenkette
+      die Reiseflughöhe aus dem Flugplan und die Geschwindigkeit aus der Flugzeugleistung hinzu.
+   -  ``Wegpunkte statt Luftstraßen schreiben``: Nimmt keine Luftstraßennamen in die Zeichenkette,
       sondern erweitert sie und fügt nur die Namen der Wegpunkte ein.
    -  ``Ausweichflugplätze schreiben``: Fügt alle Ausweichflugplätze an das
       Ende der Beschreibung an.
@@ -110,7 +110,7 @@ Schaltflächen
          Flugplätzen als Zwischenziele und dem letzten als Ziel. Siehe
          Beispiele unten.
 
-   -  ``Lese ersten und letzten Eintrag als Navigationshilfe``: Benötigt keine Flughäfen als Start und Ziel und löst das erste und letzte Element als Navigationshilfen auf. Nützlich zum Lesen von Schnipseln.
+   -  ``Lese ersten und letzten Eintrag als Navigationshilfe``: Benötigt keine Flugplätze als Start und Ziel und löst das erste und letzte Element als Navigationshilfen auf. Nützlich zum Lesen von Schnipseln.
    -  ``Lesen: Koordinaten an Wegpunkte anpassen``: Versucht, Koordinaten mit nahegelegenen Wegpunkten abzugleichen.
       ``EICK 5000N00760W EDDF`` resultiert z.B. in ``EICK GAPLI EDDF``, wenn dies aktiviert ist.
 
@@ -134,8 +134,8 @@ ICAO-Kennungen für Start- und Zielflugplätze.
 Beispiele: ``KEAT``, ``CYPU``, ``S16``.
 
 ``ALTERNATES``: Ausweichflugplätze sind optional und werden beim Lesen in Abhängigkeit von der
-Option ``Lese Flugplätze am Ende als Ausweichflugplätze`` wie oben
-beschrieben in den Flugplan aufgenommen.
+Option ``Lese Flugplätze am Ende als Ausweichflugplätze``, wie oben
+beschrieben, in den Flugplan aufgenommen.
 
 ``SPEEDALT``: Ein optionaler Eintrag, der die Reisegeschwindigkeit und
 die Höhe enthält. Siehe unten für Details. Die Geschwindigkeit wird beim
@@ -149,7 +149,7 @@ muss ein Flugplatz, Wegpunkt, VOR oder NDB sein.
 benutzerdefinierte Koordinaten. Siehe unten für Details zu den
 Koordinaten. Einem Wegpunkt kann ``DCT`` vorangestellt werden, um eine
 direkte Verbindung ohne Luftstraße anzuzeigen. Wegpunkte können mit
-einem optionalen ``/SPEEDALT``-Wert versehen werden welcher
+einem optionalen ``/SPEEDALT``-Wert versehen werden, welcher
 ignoriert wird.
 
 Beispiele: ``TAU``, ``BOMBI``, ``AST``, ``CL``, ``EDDF``.
@@ -162,7 +162,7 @@ Beispiele: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``.
 ``SID.TRANS`` und ``STAR.TRANS``: Entweder die Wörter ``SID`` oder
 ``STAR`` oder echte SID-, STAR- und Übergangsnamen, wobei der optionale
 Übergang durch ein ``.`` getrennt ist. Die generischen Schlüsselwörter
-``SID`` und ``STAR`` stellen eine direkte Verbindung zum En-Route- bzw. Reiseteil
+``SID`` und ``STAR`` stellen eine direkte Verbindung zum Reiseflugsegment
 her.
 
 Beispiele: ``RDHK2.HOLLE``, ``OHIO3.LFK``, ``RDHK2``, ``OHIO3``.

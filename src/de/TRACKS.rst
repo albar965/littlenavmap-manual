@@ -19,7 +19,7 @@ Herunterladen
 Tracks werden nicht periodisch heruntergeladen, da Änderungen im Tracksystem Flugpläne stören können.
 Sie können wählen, ob die Tracks beim Start heruntergeladen werden sollen oder ob sie manuell heruntergeladen werden sollen.
 
-Der Download beim Start und sofort kann im Menü ``Flugplan`` -> :ref:`download-tracks-startup` aktiviert werden.
+Der Download beim Start kann im Menü ``Flugplan`` -> :ref:`download-tracks-startup` aktiviert werden.
 Der manuelle Download kann im Menü ``Flugplan`` -> :ref:`download-tracks` gestartet werden.
 
 Die Trackdatenbank wird beim Start geleert, wenn :ref:`download-tracks-startup` nicht ausgewählt ist.
@@ -43,7 +43,7 @@ Dies gilt nicht für AUSOTS-Tracks.
 
        NAT-Tracks ``A`` und ``Z``. Die Informationen für Track ``A`` zeigen die Flugflächen 350, 370 und 390.
 
-Flugplanberechnung und Bearbeiten
+Flugplanberechnung und -bearbeitung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sie müssen :ref:`routecalc-use-tracks` im Flugplanberechnungsfenster ankreuzen, um Tracks zu verwenden.
@@ -67,7 +67,7 @@ Track-Informationen werden für Flugpläne im LNMPLN-Format von *Little Navmap* 
 Es kann vorkommen, dass *Little Navmap* Fehler anzeigt, wenn ein Plan später mit anderen oder fehlenden Tracks neu geladen wird.
 Berechnen Sie den Flugplan neu, um die geänderten Tracks zu verwenden.
 
-Alle anderen exportierten Flugplanformate für Simulatoren, Flugzeuge und Werkzeuge erhalten keine Track-Informationen, sondern nur eine aus dem Track extrahierte Liste von Wegpunkten. Dies sollte es ermöglichen, die Pläne in alle ohne Probleme zu laden.
+Alle anderen exportierten Flugplanformate für Simulatoren, Flugzeuge und Werkzeuge erhalten keine Track-Informationen, sondern nur eine aus dem Track extrahierte Liste von Wegpunkten. Dies sollte es ermöglichen, die Pläne ohne Probleme zu laden.
 
 .. |Tracks| image:: ../images/icon_airwaytrack.png
 .. |Show Tracks| image:: ../images/icon_airwaytrack.png

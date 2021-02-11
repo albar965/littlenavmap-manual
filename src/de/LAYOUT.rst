@@ -1,13 +1,13 @@
 Fensteranordnung
 ---------------------------
 
-Die Anordnung der Dockfenster und des Hauptfensters kann gespeichert und geladen werden. Dies ermöglicht eine schnelle Änderung oder Wiederherstellung des gesamten Aussehens der Anwendung.
+Die Anordnung der Dockfenster und des Hauptfensters kann gespeichert und geladen werden. Dies ermöglicht eine schnelle Änderung oder Wiederherstellung der Fensteranordnung.
 
 *Little Navmap* stellt die Fensteranordnung bei jedem Start auf die zuletzt verwendete zurück.
 
 Sie können *Little Navmap* auch anweisen, beim Start die zuletzt verwendete Datei über die :ref:`window-layout-recent` zu laden. Dies kann in den Einstellungen auf der Seite :ref:`startup` aktiviert werden, indem man ``Lade zuletzt genutzte Fensteranordnung`` ankreuzt.
 
-**Fensteranordnungen umfassen diese Aspekte:**
+**Fensteranordnungen umfassen folgende Aspekte:**
 
 - Position und Größe des Hauptfensters
 - Größe, Position, Sichtbarkeit (geöffnet oder nicht) und Zustand (schwebend oder an das Hauptfenster angedockt) aller Andockfenster
@@ -60,4 +60,4 @@ Das Hauptmenü kann nicht ausgeblendet werden und ist immer sichtbar.
 Sie können Dockfenster und Symbolleisten auch nach dem Umschalten in den Vollbildmodus wieder öffnen. Dies kann z.B. über das :ref:`window-menu` oder durch Auswahl von :ref:`show-information-map` im Karten-Kontextmenü geschehen.
 Diese Andockfenster werden beim Beenden oder beim Speichern einer Fensteranordnung gespeichert.
 Die Andockfenster werden an der gleichen Position wiederhergestellt, wenn Sie den Vollbildmodus wieder aktivieren.
-Auf diese Weise können Sie zwei verschiedene Ansichten haben. Eine zum Planen mit allen Docks und eine zum Fliegen mit Karte und Fortschritt, zum Beispiel.
+Auf diese Weise können Sie zwei verschiedene Ansichten haben, zum Beispiel eine zum Planen mit allen Docks und eine zum Fliegen mit Karte und Fortschritt.

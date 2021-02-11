@@ -1,8 +1,8 @@
 Tutorial - Erstellen eines IFR-Flugplans mit Anflugprozeduren
 -----------------------------------------------------------------
 
-Dieses Tutorial zeigt Ihnen, wie ein komplexerer IFR-Flugplan
-einschließlich Anflugprozeduren zu erstellen ist. Es erklärt die
+Dieses Tutorial zeigt Ihnen, wie ein komplexerer IFR-Flugplan,
+einschließlich Anflugprozeduren, zu erstellen ist. Es erklärt die
 erweiterte Flugplatzsuchfunktion und die automatische
 Flugplanberechnung.
 
@@ -19,23 +19,23 @@ Sie sollten zumindest :doc:`TUTORIALVFR` durchlesen,
 bevor Sie dieses Tutorial durcharbeiten.
 
 Der Flugplan wird mit einem IFR-fähigen Flugzeug durch Großbritannien gehen.
-Die maximale Reichweite sollte mehr als 600 NM
-einschließlich Reserven und einer Reiseflughöhe von 10.000 Fuß betragen.
+Die maximale Reichweite sollte mehr als 600 NM,
+einschließlich Reserven und einer Reiseflughöhe von 10.000 Fuß, betragen.
 
-Beachten Sie, dass Bembridge eine relativ kurze Landebahn von 2.729 Fuß hat. Sie benötigen wahrscheinlich eine kleine Turboprop oder eine leistungsstarke Twin. Versuchen Sie nicht, diese Strecke mit einem Verkehrsflugzeug zu fliegen.
+Beachten Sie, dass der Flugplatz Bembridge eine relativ kurze Landebahn von 2.729 Fuß besitzt. Sie benötigen wahrscheinlich eine kleine Turboprop oder eine leistungsstarke Twin. Versuchen Sie nicht, diese Strecke mit einem Verkehrsflugzeug zu fliegen.
 
-Voraussetzungen für dieses Tutorial:
+Ausgangspunkt für dieses Tutorial:
 
 -  Ende des letzten Fluges haben Sie ihr Flugzeug in
    ``Bembridge (EGHJ)`` verlassen oder Sie behandeln EGHJ als
    Heimatbasis.
--  Sie wissen nicht, wohin Sie heute fliegen wollen.
--  Sie kennen die Anforderungen für Ihr Flugzeug:
+-  Ich zeige Ihnen, wie sie passende Zielflughäfen finden.
+-  Dabei ist es jedoch notwendig, dass Sie die Anforderungen für Ihr Flugzeug kennen:
 
    -  Mindestreichweite
    -  Mindestlänge für Runway
    -  Feste Runways
-   -  Benötigt einen Parkplatz am Ziel
+   -  Wird ein Parkplatz am Ziel benötigt?
    -  Kraftstoff für den Rückweg
 
 Flug vorbereiten
@@ -43,7 +43,7 @@ Flug vorbereiten
 
 Ich empfehle, vor jedem Flug ``Flug`` ->
 :ref:`reset-for-new-flight` |Reset all for a new Flight|
-zu verwenden, um eine saubere Basis für Treibstoffberechnung und andere
+zu verwenden, um eine bereinigte Basis für Treibstoffberechnung und andere
 Funktionen zu erhalten. Deaktivieren Sie im Dialog die Option
 ``Neuen leeren Flugplan erstellen``, wenn Ihr Plan bereits geladen
 ist.
@@ -78,13 +78,13 @@ Steighöhe für das Höhenprofil zu berechnen.
 Suche zurücksetzen
 ~~~~~~~~~~~~~~~~~~
 
-Gehen Sie zum Dockfenster ``Suche`` und machen Sie die folgenden
-Schritte:
+Gehen Sie zum Dockfenster ``Suche`` und führen Sie die folgenden
+Schritte aus:
 
 -  Rechtsklick in die Ergebnistabelle und :ref:`reset-search`
-   wählen |Reset Search| um alle Suchkriterien zu löschen, welche die
+   wählen |Reset Search|, um alle Suchkriterien zu löschen, welche die
    Abfrage beeinflussen können.
--  Auf der Menüschaltfläche |Menu Button| klicken und stellen Sie sicher,
+-  Klicken Sie auf die Menüschaltfläche |Menu Button| und stellen Sie sicher,
    dass die Suchgruppen ``Einrichtungen``, ``Runway``, und
    ``Distanz von Markierung`` aktiviert sind. Deaktivieren Sie alle
    anderen, die Sie nicht benötigen.
@@ -98,26 +98,26 @@ Startflugplatz zuweisen
 
 Nun schauen wir uns den Startflugplatz an:
 
--  Geben Sie EGHJ in das ``ICAO Code`` Suchfeld oben links ein
+-  Geben Sie EGHJ in das ``ICAO-Kennung`` Suchfeld oben links ein
    (Groß- und Kleinschreibung spielt keine Rolle).
 -  Klicken Sie in der Ergebnistabelle mit der rechten Maustaste auf den
    Flugplatz.
 -  Wählen Sie mit der rechten Maustaste :ref:`set-as-flight-plan-departure-search`
-   |Set as Flight Plan Departure|. Damit wird eine Standard-Runway als
+   |Set as Flight Plan Departure|. Damit wird ein Standard-Runway als
    Startposition zugewiesen.
 
 |Assign Departure|
 
-Ihr Flugplan hat jetzt einen Eintrag. Dieses ist bereits ausreichend,
+Ihr Flugplan hat jetzt einen Eintrag. Dies ist bereits ausreichend,
 wenn Sie eine Platzrunde fliegen und die Entfernung, Geschwindigkeit und
 Zeitinformation zum Flugplatz sehen möchten.
 
 Der Start von einer Startbahn ist nicht ganz realistisch. Wir suchen
-eine Parkingposition:
+eine Parkposition:
 
 -  Gehen Sie zu ``Flugplan`` -> :ref:`select-a-start-position-for-departure`
    |Select a Start Position for Departure|.
--  Wählen Sie eine der Parkpositionen GA klein.
+-  Wählen Sie eine der Parkpositionen ``GA klein``.
 -  Klicken Sie auf ``OK``. Die Position wird nun auf der Karte hervorgehoben.
 
 |Assign Parking|
@@ -138,9 +138,9 @@ Nun suchen wir nach einem geeigneten Zielflugplatz:
 -  Wählen Sie :ref:`set-center-for-distance-search-search` |Set Center for
    Distance Search|. Sie können dies auch in der Karte tun. Dies ist der
    Mittelpunkt für die räumliche Suche.
--  Löschen Sie nun das Suchfeld ``ICAO Code``. Es ist ein häufiger
+-  Löschen Sie nun das Suchfeld ``ICAO-Kennung``. Es ist ein häufiger
    Fehler, die Textfelder bei der Entfernungssuche nicht zu leeren, was
-   dann zu einer unerwartet leeren Ergebnistabelle führt.
+   dann zu einer leeren Ergebnistabelle führt.
 
 Wir werden nun nach Flugplätze suchen, die sich in Reichweite des
 Flugzeugs befinden, aber nicht zu nah sind. Außerdem müssen bestimmte
@@ -153,12 +153,12 @@ rechten Maustaste auf den Startflugplatz klicken und die Distanzkreise mittels
 Diese Funktion erlaubt natürlich nicht die detaillierten Flugplatzfilter.
 
 Wir werden die räumliche Suche anstelle von Distanzkreisen verwenden,
-da wir nur geeignete Flugplätze für unser Fugzeug sehen möchten.
+da wir nur geeignete Flugplätze für unser Flugzeug sehen möchten.
 
 Überprüfen Sie Folgendes auf dem Reiter ``Flugplätze``:
 
 #. ``Bewertungen``: Wir möchten Flugplätze, die entweder Add-ons sind oder
-   grundlegende Szenerieeigenschaften haben, wie Rollwege, Parkplätze
+   grundlegende Szenerieeigenschaften besitzen, wie Rollwege, Parkplätze
    und mehr. Wählen Sie mindestens vier Sterne aus. Sie können auch ``3D``
    auswählen, wenn Sie X-Plane fliegen.
 #. ``Prozeduren``: Zeigen Sie nur Flugplätze an, die über Prozeduren
@@ -167,12 +167,12 @@ da wir nur geeignete Flugplätze für unser Fugzeug sehen möchten.
    (klicken Sie zweimal auf die Ankreuzfelder). Dadurch werden nur
    zivile Flugplätze zurückgegeben und Flugplätze vermieden, die alle
    Start- und Landebahnen geschlossen haben.
-#. In der Auswahlliste ``Beliebige Oberfläche``
-   ``Beliebige Oberfläche, befestigt`` auswählen, um Flugplätze
+#. In der Auswahlliste unter ``Beliebige Oberfläche``
+   ``Mindestens ein Befestigter`` auswählen, um Flugplätze
    zu vermeiden, die nur über unbefestigte Start- und Landebahnen
    verfügen.
 #. Wählen Sie für ihr Flugzeug eine minimale Startbahnlänge von 2.500
-   Fuß (oder was auch immer ihr gewähltes Flugzeug benötigt) in dem Feld
+   Fuß (oder das, was ihr gewähltes Flugzeug benötigt) in dem Feld
    ``Runways:`` ``Min:``.
 
 Siehe auch :doc:`SEARCH`.
@@ -180,10 +180,10 @@ Siehe auch :doc:`SEARCH`.
 Man kann auch die maximale Start- und Landebahnlänge begrenzen, wenn man
 eine Herausforderung mit kurzer Landung sucht.
 
-Das Suchergebnis ändert sich laufend während all dieser
-Anpassungen, obwohl wir noch nicht da sind:
+Das Suchergebnis ändert sich während all dieser
+Anpassungen automatisch:
 
--  Prüfen Sie ``Distanz:`` um die räumliche Suche zu aktivieren.
+-  Prüfen Sie ``Distanz:``, um die räumliche Suche zu aktivieren.
 -  Ändern Sie die maximale Entfernung auf 600 und das Minimum auf 400
    NM (um kurze Flüge zu vermeiden). Die Ergebnistabelle
    wird nun mit einer kleinen Verzögerung aktualisiert, da die
@@ -192,9 +192,9 @@ Anpassungen, obwohl wir noch nicht da sind:
    ``Norden`` in der Auswahlliste ``Beliebige Richtung``. Beachten Sie,
    dass das Suchergebnis nach Entfernung zum nächstgelegenen Flugplatz
    sortiert ist.
--  Wählen Sie einen Flugplatz für ihren Flug. Wir verwenden
+-  Wählen Sie einen Flugplatz für Ihren Flug. Wir verwenden
    ``Wick (EGPC)`` für dieses Tutorial. |Search for Destination|
--  Klicken Sie mit der rechten Maustaste auf Wick in der
+-  Klicken Sie mit der rechten Maustaste auf den Flugplatz Wick in der
    Ergebnistabelle.
 -  Wählen Sie :ref:`show-information-search` |Show Information|. Dies füllt
    die Reiter im Dockfenster ``Informationen``.
@@ -210,15 +210,15 @@ Siehe auch :doc:`WEATHER`.
 
 .. _tutorial-ifr-select-approach:
 
-Eine Anflugprozeduren wählen
+Eine Anflugprozedur wählen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Wir werden nun eine Anflugprozedur wählen:
 
 -  Zurück zum Suchergebnis.
 -  Klicken Sie erneut mit der rechten Maustaste auf den Flugplatz Wick. Wählen Sie
-   :ref:`show-procedures-search` |Show Procedures|. Dies öffnet den Reiter für Prozedursuche.
--  Wählen Sie ``Runway 13`` in ``Alle Prozeduren`` um nur Anflugprozeduren für
+   :ref:`show-procedures-search` |Show Procedures|. Dies öffnet den Reiter für die Prozedursuche.
+-  Wählen Sie ``Runway 13`` in ``Alle Prozeduren``, um nur Anflugprozeduren für
    den Runway 13 zu erhalten.
 -  Wählen Sie ``Alles ausklappen`` in dem Kontextmenu (rechte Maustaste),
    um die Übergänge für jeden Anflug zu erhalten.
@@ -244,26 +244,25 @@ Weitere Informationen zur Prozedursuche findet man in :doc:`SEARCHPROCS`. Siehe 
 :doc:`APPROACHES` für allgemeine Informationen zu
 Prozeduren.
 
-Wenn Ihnen das gefällt, was Sie sehen, klicken Sie mit der rechten
+Wenn die Einstellungen Ihnen zusagen, klicken Sie mit der rechten
 Maustaste erneut auf den Übergang und wählen Sie
 :ref:`procedure-insert`  |Use EGPC and Approach
 and Transition as Destination|.
 
-Dies wird zwei Dinge bewirken:
+Dies wird folgendes bewirken:
 
-#. Wick als Zielflugplatz zum Flugplan hinzugefügt. Jedes vorherige Ziel
+#. Wick wird als Zielflugplatz zum Flugplan hinzugefügt. Jedes vorherige Ziel
    im Flugplan wird ersetzt.
-#. Fügt den Anflug und seinen Übergang zum Flugplan hinzu. Die
-   Prozedurwegpunkte verwenden eine dunkelblaue Farbe und die Wegpunkte des Fehlanfluges
-   verwenden eine dunkelrote Farbe in der
-   Flugplantabelle. Wegpunkte auf der Flugplanroute sind schwarz. Auch
+#. Der Anflug und sein Übergang wird zum Flugplan hinzugefügt. Die
+   Prozedurwegpunkte verwenden eine dunkelblaue und die Wegpunkte des Fehlanfluges
+   eine dunkelrote Farbe in der
+   Flugplantabelle. Wegpunkte auf der Flugplanroute sind schwarz dargestellt. Auch
    hier wird jede vorherige Prozedur durch diese neue ersetzt.
 
 **Über Hinzufügen von Übergängen und Anflüge:** Anflüge und Übergänge
 sind eng verwandt, was bereits durch die Baumstruktur auf dem
-Reiter für die Prozedursuche angedeutet ist. Sie können einen
-Anflug alleine hinzufügen, aber ein Übergang gehört immer zu einem
-Anflug.
+Reiter für die Prozedursuche angedeutet ist. Sie können zwar einen
+Anflug alleine hinzufügen, aber er wird immer mit einem Übergang kombiniert.
 
 Sie müssen den Übergang auswählen, um sowohl Anflug als auch Übergang
 hinzuzufügen oder anzuzeigen.
@@ -273,7 +272,7 @@ hinzuzufügen oder anzuzeigen.
 Einen Flugplan berechnen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Jetzt haben wir den Startflugplatz, eine Anflugprozedur und das Ziel, alles verbunden durch eine gerade Linie. Als nächstes kommt der Reiseflugteil des Flugplans:
+Jetzt haben wir den Startflugplatz, eine Anflugprozedur und das Ziel, alles verbunden durch eine gerade Linie. Als nächstes werden wir uns mit dem Reiseflugteil des Flugplans beschäftigen:
 
 - Stellen Sie ``IFR`` als Flugplanart im Andockfenster ``Flugplanung`` auf dem Reiter ``Flugplan`` ein.
   Dies erlaubt der automatischen Flugplanberechnung, die Reiseflughöhe anzupassen.
@@ -285,13 +284,13 @@ Jetzt haben wir den Startflugplatz, eine Anflugprozedur und das Ziel, alles verb
   Die Mindesthöhe für jedes Luftstraßensegment können Sie in der Flugplantabelle in der Spalte ``Beschränkung`` sehen (siehe :ref:`flight-plan-table-columns`).
 
   Die Höhe kann entsprechend der hemisphärischen Regel geändert werden, indem Sie auf die Schaltfläche :ref:`routecalc-adjust` klicken.
-- Ändern Sie alle Einstellungen im schwebenden Fenster, wie im Screenshot oben gezeigt.
+- Ändern Sie alle Einstellungen im schwebenden Fenster, wie im Bildschirmfoto oben gezeigt.
 - Klicken Sie auf die Schaltfläche :ref:`routecalc-calculate`.
 
-Verwenden Sie diesen Flugplan jetzt.
+Jetzt können Sie den Flugplan verwenden.
 
 Speichern Sie den Plan mit ``Date`` -> :ref:`save-flight-plan-as` |Save Flight Plan|.
-Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne und vergibt standardmäßig einen sinnvollen Namen.
+Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne und vergibt standardmäßig einen passenden Namen.
 
 Die obere Beschriftung im Flugplan-Dockfenster lautet nun::
 
@@ -312,15 +311,15 @@ Jetzt können Sie prüfen, ob Sie Lufträume passieren:
    ``Lufträume anzeigen`` |Show Airspaces| auswählen, falls noch nicht
    geschehen.
 -  Prüfen Sie ``Ansicht`` -> ``Lufträume`` -> ``Auf Reiseflughöhe`` |At
-   flight plan cruise altitude| im Menü oder der Menü-Taste in der Symbolleiste.
+   flight plan cruise altitude| im Menü oder der Menütaste in der Symbolleiste.
 
 |Select Airspaces|
 
 Dies zeigt nur Lufträume auf der Karte an, die für Ihre Reiseflughöhe
 relevant sind. Sie können auch ``Nur unter 10.000 ft`` wählen, um alle
-relevanten Lufträume in der Steig- oder Sinkflug Phase zu sehen.
+relevanten Lufträume in der Steig- oder Sinkflugphase zu sehen.
 Verwenden Sie die Tooltips auf der Karte, um Informationen über
-Lufträume wie Typ, minimale und maximale Höhe zu erhalten.
+Lufträume, wie Typ, minimale und maximale Höhe, zu erhalten.
 
 |Airspaces|
 
@@ -332,12 +331,12 @@ Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne u
 
 Das Format LNMPLN wird nur von *Little Navmap* verstanden. Sie können diese Dateien nicht in ein anderes Programm laden. Daher müssen Sie den Flugplan exportieren.
 
-Öffnen Sie nun den Multiexport-Optionen-Dialog, indem Sie ``Datei`` -> :ref:`multiexport-flight-plan-options` wählen.
+Öffnen Sie nun im Einstellungsdialog den Multiexport, indem Sie ``Datei`` -> :ref:`multiexport-flight-plan-options` wählen.
 
 Klicken Sie mit der rechten Maustaste auf das Simulatorformat, das Sie exportieren möchten und wählen Sie :ref:`multiexport-export-now` |Export Flight Plan now|.
 Speichern Sie die Datei an der richtigen Stelle. Der voreingestellte Pfad basiert auf der besten Schätzung.
 
-Siehe hier :ref:`multiexport-quick-setup` für Informationen, wie Sie den Multiexport schnell konfigurieren können.
+Siehe hier :ref:`multiexport-quick-setup` für Informationen, wie Sie den Multiexport rasch konfigurieren können.
 
 .. _tutorial-ifr-flying:
 
@@ -353,7 +352,7 @@ Folgen Sie den Schritten unten, um eine Karte zu erhalten und Ihr Flugzeug in *L
 
   |Connect Dialog|
 - Klicken Sie auf ``Verbinden``, wodurch der Dialog geschlossen wird.
-- Aktivieren Sie ``Karte`` -> ``Flugzeug zentrieren`` |Center Aircraft|. Die Karte springt zum Simulatorflugzeug und hält es zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator nicht im Eröffnungsbildschirm ist.
+- Aktivieren Sie ``Karte`` -> ``Flugzeug zentrieren`` |Center Aircraft|. Die Karte springt zum Simulatorflugzeug und hält es zentriert, wenn ein aktiver Flug geladen ist, d.h. der Simulator sich nicht im Eröffnungsbildschirm befindet.
 - Starten Sie den Simulator, falls nicht schon geschehen, laden Sie den Flugplan und fliegen Sie los.
 
 See also :doc:`CONNECT`.
@@ -374,8 +373,7 @@ Höhenbeschränkungen in Prozeduren werden bei der Berechnung des Sinkflugpfades
 Der Reiter ``Fortschritt`` im Kontextmenü ``Simulatorflugzeug`` zeigt die
 Entfernung zum Start des Sinkfluges an.
 
-Der Abschnitt ``Höhe`` zeigt den vertikalen Pfad nach dem Top of
-Descent.
+Der Abschnitt ``Höhe`` zeigt den vertikalen Pfad nach dem Start des Sinkfluges an.
 
 .. _tutorial-ifr-changing-procedures:
 
@@ -400,13 +398,13 @@ Die Beschriftung oben im Fenster zeigt nun
    wodurch die aktuelle Prozedur in Ihrem Flugplan durch die neue
    ersetzt wird.
 
-Die Anezige oben im Flugplanungsfenster zeigt nun::
+Die Anzeige oben im Flugplanungsfenster zeigt nun::
 
          Bembridge (EGHJ) Parkposition 1, Parkplatz GA klein nach Wick (EGPC)
          Via CHINN und VORDME FD31 zum Runway 31
          526 nm, 5 h 15 m, Niedrige Höhe
 
-Um eine Prozedur komplett aus dem Flugplan machen Sie folgendes:
+Um eine Prozedur komplett aus dem Flugplan zu löschen, gehen sie folgendermaßen vor:
 
 -  Wählen Sie einen beliebigen Teil der Prozedur in der Flugplantabelle aus.
 -  Rechtsklick und wählen Sie
@@ -417,9 +415,9 @@ Wenn ATC ihnen die Freigabe zum initialen Anflugpunkt der Prozedur erteilt:
 
 #. Löschen Sie alle Zwischenwegpunkte zwischen Ihrer aktuellen
    Flugzeugposition und dem Anfangspunkt der Prozedur: Klicken Sie
-   mit rechten Maustaste in die Flugplantabelle und wählen Sie
+   mit der rechten Maustaste in die Flugplantabelle und wählen Sie
    :ref:`delete-selected-legs` |Delete selected Leg
-   or Procedure|, für alle Wegpunkte zwischen der aktuellen Position des
+   or Procedure| für alle Wegpunkte zwischen der aktuellen Position des
    Flugzeuges und dem Prozedurstart. Vermeiden Sie,
    ihren Anflug zu löschen (Sie können auch mit einem Rechtsklick auf
    einen Wegpunkt im Kartenfenster über das Kontextmenü löschen).
@@ -449,8 +447,8 @@ Kartenanzeige übersichtlicher zu gestalten.
 
 -  **Wenn Fehlanflüge nicht angezeigt werden:** Das
    Fortschrittsfenster zeigt die Distanz und Zeit zum Ziel. Das
-   Aktivieren des nächsten Wegpunktes (wird in Magenta angezeigt) wird
-   angehalten, wenn das Ziel erreicht wird,
+   Aktivieren des nächsten Wegpunktes (in Magenta angezeigt) wird
+   angehalten, wenn das Ziel erreicht,
    oder die Runwayschwelle überschritten wird.
 -  **Wenn Fehlanflug angezeigt wird und das Flugzeug über die Runwayschwelle
    hinaus geflogen ist:** Der erste Wegpunkt auf dem Fehlanflug ist aktiviert

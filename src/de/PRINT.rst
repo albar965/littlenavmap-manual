@@ -6,12 +6,12 @@ Drucken
 |Print Map| Karte drucken
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Öffnet den Druckvorschau-Dialog, in dem die aktuelle Kartenansicht
+Öffnet die Druckvorschau, in der die aktuelle Kartenansicht
 gedruckt werden kann.
 
 .. figure:: ../images/printmap.jpg
 
-     Druckvorschau-Dialog für die aktuelle Karte.
+     Druckvorschau für die aktuelle Karte.
 
 .. _printing-the-flight-plan:
 
@@ -50,10 +50,10 @@ Start- und Zielflugplatz
 -  ``Übersicht``: Druckt die Flugplatzübersicht aus, wie sie im
    Dockfenster ``Informationen`` auf dem Reiter ``Flugplatz``
    angezeigt wird.
--  ``Start- und Landebahnen / Hubschrauberlandeplätze``: Druckt
-   Informationen über Start- und Landebahn und Hubschrauberlandeplatz.
--  ``Start- und Landebahnen mit weichem Untergrund einschliesen``:
-   Einschließlich Start- und Landebahnen mit nicht befestigter Oberfläche wie
+-  ``Start- und Landebahnen / Helikopterlandeplätze``: Druckt
+   Informationen über Start- und Landebahn und Helikopterlandeplatz.
+-  ``Start- und Landebahnen mit weichem Untergrund einschließen``:
+   Einschließlich Start- und Landebahnen mit nicht befestigter Oberfläche, wie
    Gras, Kies und andere.
 -  ``Detaillierte Informationen über die Start- und Landebahn``:
    Detaillierte Informationen über die Enden der Start- und Landebahn,

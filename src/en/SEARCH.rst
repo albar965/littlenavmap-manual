@@ -6,8 +6,7 @@ that allows to search for objects by name, ident or other criteria.
 
 Airport, navaid, userpoint and online search tabs contain multiple rows
 of search filters. These rows can be switched on and off with the drop
-down menu on the menu button |Menu Button| on the top right in the
-airport, navaid and userpoint search tabs.
+down menu on the menu button |Menu Button| on the top right.
 
 The drop down menu prefixes menu items with a change indicator ``*`` to
 show that the related filter row has modifications. You can use this to
@@ -30,8 +29,7 @@ for each change.
 
 **Entering three or four characters in the** ``ICAO Code`` **field of the
 airport search tab will trigger a quick search which ignores all other
-filters and shows the airports matching that partial or full ICAO
-code.**
+filters.**
 
 A tooltip on the blue help button on the top right shows information
 about searching.
@@ -265,11 +263,13 @@ See :doc:`CUSTOMPROCEDURE` for more information.
 Show either the airport diagram or zooms to the navaid, userpoint or
 other features on the map.
 
+.. _follow-selection:
+
 Follow Selection
 ^^^^^^^^^^^^^^^^
 
-The map view will be centered - not zoomed in - on the selected feature
-when this function is enabled.
+The map view will be centered, but not zoomed in, on the selected feature
+if this function is enabled.
 
 .. _filter-by-entries-including-excluding:
 

@@ -30,9 +30,9 @@ Platzrunden erstellen
 -  ``Runways``: Liste der verfügbaren Start- und Landebahnen für den
    Flugplatz. Zeigt den Namen der Start- und Landebahn, Länge, Breite,
    Magnetkurs, Oberfläche und Beleuchtungszustand an.
--  ``Richtung``: Wählen Sie diese Option, um zwischen einer Links- oder
-   Rechtsgewandten Platzrunde zu wählen. Diese wird bei der Auswahl einer
-   Runway aus dem FSX oder P3D automatisch aktualisiert.
+-  ``Richtung``: Wählen Sie diese Option, um zwischen einer links- oder
+   rechtsgewandten Platzrunde zu wählen. Diese wird bei der Auswahl eines
+   Runways aus dem FSX oder P3D automatisch aktualisiert.
 -  ``Queranflug 45° zum Runway-Ende``: Berechnet bei Überprüfung
    automatisch die Streckenlänge des Endabschnittes.
 -  ``Endabschnitt``: Länge der letzten Etappe. Gemessen von der Wende

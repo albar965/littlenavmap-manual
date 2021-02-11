@@ -23,52 +23,52 @@ Anzeige von Distanzkreisen.
 Sie können die Anzeige im Menü ``Ansicht`` -> ``Nutzerobjekte``
 oder in der Symbolleiste aktivieren oder deaktivieren.
 
-Ein Klick in der Karte auf die aktive Stelle eines Objektes wie z.B.
-eines Entfernungsrings entfernt es. Der Mauszeiger verwandelt sich in ein
+Ein Klick in der Karte auf die aktive Stelle eines Objektes, wie z.B.
+eines Entfernungsrings, entfernt es. Der Mauszeiger verwandelt sich in ein
 Handsymbol, um einen aktiven Punkt anzuzeigen, der es ermöglicht, ein
 Objekt durch Anklicken oder Entfernen bzw. Bearbeiten im Kontextmenü zu
-entfernen.
+löschen.
 
-+-----------------------------------+-----------------------------------+
-| Maus                              | Beschreibung                      |
-+===================================+===================================+
-| ``Einfacher Klick``               | Zeigt Informationen über alle     |
-|                                   | Objekte rund um die Position      |
-|                                   | Mauszeigers an.                   |
-+-----------------------------------+-----------------------------------+
-| ``Doppelklick``                   | Zoomt auf das angeklickte Objekt  |
-|                                   | und zeigt Informationen an.       |
-+-----------------------------------+-----------------------------------+
-| ``Umsch+Klick``                   | Hinzufügen oder Entfernen von     |
-|                                   | Distanzkreisen oder               |
-|                                   | Reichweitenringen für Funkfeuer.  |
-+-----------------------------------+-----------------------------------+
-| ``Alt+Klick``                     | Startet eine Messung mit          |
-|                                   | Großkreis oder löscht eine        |
-|                                   | Messung.                          |
-+-----------------------------------+-----------------------------------+
-| ``Strg+Umsch+Klick``              | Nutzerpunkt hinzufügen oder       |
-|                                   | bearbeiten.                       |
-+-----------------------------------+-----------------------------------+
-| ``Strg+Alt+Klick``                | Fügt einen Flugplatz,             |
-|                                   | Navigationshilfe, Nutzerpunkt     |
-|                                   | oder Position in den              |
-|                                   | nächstgelegenen Flugplanabschnitt |
-|                                   | ein.                              |
-+-----------------------------------+-----------------------------------+
-| ``Umsch+Alt+Klick``               | Fügt einen Flugplatz,             |
-|                                   | Navigationshilfe, Nutzerpunkt     |
-|                                   | oder Position am Ende des         |
-|                                   | Flugplans an.                     |
-+-----------------------------------+-----------------------------------+
-| ``Mausrad``                       | Karte vergrößern oder             |
-|                                   | verkleinern.                      |
-+-----------------------------------+-----------------------------------+
-| ``Umsch+Mausrad``                 | Karte in kleinen Schritten        |
-|                                   | vergrößern oder verkleinern.      |
-+-----------------------------------+-----------------------------------+
-| ``Ctrl+Mausrad``                  | Kartendetails ändern.             |
-+-----------------------------------+-----------------------------------+
++-----------------------------------+----------------------------------+
+| Maus                              | Beschreibung                     |
++===================================+==================================+
+| ``Einfacher Klick``               | Zeigt Informationen über alle    |
+|                                   | Objekte rund um die Position des |
+|                                   | Mauszeigers an.                  |
++-----------------------------------+----------------------------------+
+| ``Doppelklick``                   | Zoomt auf das angeklickte Objekt |
+|                                   | und zeigt Informationen an.      |
++-----------------------------------+----------------------------------+
+| ``Umsch+Klick``                   | Hinzufügen oder Entfernen von    |
+|                                   | Distanzkreisen oder              |
+|                                   | Reichweitenringen für Funkfeuer. |
++-----------------------------------+----------------------------------+
+| ``Alt+Klick``                     | Startet eine Messung mit         |
+|                                   | Großkreis oder löscht eine       |
+|                                   | Messung.                         |
++-----------------------------------+----------------------------------+
+| ``Strg+Umsch+Klick``              | Nutzerpunkt hinzufügen oder      |
+|                                   | bearbeiten.                      |
++-----------------------------------+----------------------------------+
+| ``Strg+Alt+Klick``                | Fügt einen Flugplatz,            |
+|                                   | Navigationshilfe, Nutzerpunkt    |
+|                                   | oder Position in den             |
+|                                   | nächstgelegenen Flugplanabschnitt|
+|                                   | ein.                             |
++-----------------------------------+----------------------------------+
+| ``Umsch+Alt+Klick``               | Fügt einen Flugplatz,            |
+|                                   | Navigationshilfe, Nutzerpunkt    |
+|                                   | oder Position am Ende des        |
+|                                   | Flugplans an.                    |
++-----------------------------------+----------------------------------+
+| ``Mausrad``                       | Karte vergrößern oder            |
+|                                   | verkleinern.                     |
++-----------------------------------+----------------------------------+
+| ``Umsch+Mausrad``                 | Karte in kleinen Schritten       |
+|                                   | vergrößern oder verkleinern.     |
++-----------------------------------+----------------------------------+
+| ``Ctrl+Mausrad``                  | Kartendetails ändern.            |
++-----------------------------------+----------------------------------+
 
 .. _key-commands:
 
@@ -78,183 +78,178 @@ Tastenkombinationen
 Sie müssen das Kartenfenster aktivieren (d.h. anklicken oder ``F2`` drücken),
 bevor Sie die Tastenkombinationen verwenden können.
 
-+-----------------------------------+-----------------------------------+
-| Tasten                            | Beschreibung                      |
-+===================================+===================================+
-| Pfeiltasten                       | Karte rollen bzw. bewegen.        |
-+-----------------------------------+-----------------------------------+
-| ``+`` und ``-``                   | Karte vergrößern oder             |
-|                                   | verkleinern.                      |
-+-----------------------------------+-----------------------------------+
-| ``*`` und ``/``                   | Karte in kleinen Schritten        |
-|                                   | vergrößern oder verkleinern.      |
-+-----------------------------------+-----------------------------------+
-| ``Alt+Links`` and ``Alt+Rechts``  | In der Kartenpositionshistorie    |
-|                                   | vorwärts oder rückwärts springen. |
-+-----------------------------------+-----------------------------------+
-| ``Strg++`` and ``Strg+-``         | Mehr oder weniger Details         |
-|                                   | darstellen.                       |
-+-----------------------------------+-----------------------------------+
-| ``Strg+Pos 1``                    | Gehe zur Heimposition.            |
-+-----------------------------------+-----------------------------------+
-| ``Strg+Ende``                     | Gehe zum Zentrum der              |
-|                                   | Distanzsuche.                     |
-+-----------------------------------+-----------------------------------+
++---------------------------------+-----------------------------------+
+| Tasten                          | Beschreibung                      |
++=================================+===================================+
+| Pfeiltasten                     | Karte rollen bzw. bewegen.        |
++---------------------------------+-----------------------------------+
+| ``+`` und ``-``                 | Karte vergrößern oder             |
+|                                 | verkleinern.                      |
++---------------------------------+-----------------------------------+
+| ``*`` und ``/``                 | Karte in kleinen Schritten        |
+|                                 | vergrößern oder verkleinern.      |
++---------------------------------+-----------------------------------+
+| ``Alt+Links`` und ``Alt+Rechts``| In der Kartenpositionshistorie    |
+|                                 | vorwärts oder rückwärts springen. |
++---------------------------------+-----------------------------------+
+| ``Strg++`` und ``Strg+-``       | Mehr oder weniger Details         |
+|                                 | darstellen.                       |
++---------------------------------+-----------------------------------+
+| ``Strg+Pos 1``                  | Gehe zur Heimposition.            |
++---------------------------------+-----------------------------------+
+| ``Strg+Ende``                   | Gehe zum Zentrum der              |
+|                                 | Distanzsuche.                     |
++---------------------------------+-----------------------------------+
 
 .. _highlights:
 
 Hervorhebungen und Nutzerobjekte
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+-----------------------------------+-----------------------------------+
-| Symbol                            | Beschreibung                      |
-+===================================+===================================+
-| |Home|                            | Mittelpunkt der Heim-Position.    |
-+-----------------------------------+-----------------------------------+
-| |Mark|                            | Mittelpunkt für die Distanzsuche. |
-+-----------------------------------+-----------------------------------+
-| |Center|                          | Zeigt die Kartenmitte an.         |
-|                                   | Nützlich für den Navigationsmodus |
-|                                   | ``Klick und Zentrieren``. Zeigt   |
-|                                   | auch die Klick-/Touch-Bereiche    |
-|                                   | der Kartennavigation an, falls    |
-|                                   | aktiviert.                        |
-+-----------------------------------+-----------------------------------+
-| |Flight Plan|                     | Flugplan mit Entfernung, Richtung |
-|                                   | und magnetischem Kurs auf jeder   |
-|                                   | Strecke. Die angezeigten Werte    |
-|                                   | können im Dialog                  |
-|                                   | ``Einstellungen`` auf             |
-|                                   | der Seite                         |
-|                                   | :ref:`map-display-2` geändert     |
-|                                   | werden. ``°M`` und                |
-|                                   | ``°T`` zeigen                     |
-|                                   | den magnetischen bzw. wahren Kurs |
-|                                   | an. `                             |
-+-----------------------------------+-----------------------------------+
-| |Flight Plan Procedure|           | Flugplanprozedur mit den          |
-|                                   | gleichen Informationen wie oben.  |
-+-----------------------------------+-----------------------------------+
-| |Active Leg|                      | Aktive Flugplanstrecke            |
-+-----------------------------------+-----------------------------------+
-| |Wind Barb|                       | Windrichtung und Geschwindigkeit  |
-|                                   | am Flugplan-Wegpunkt. Siehe       |
-|                                   | Kapitel :ref:`high-alt-wind`      |
-|                                   | unten für Details über            |
-|                                   | Windsymbole.                      |
-+-----------------------------------+-----------------------------------+
-| |Flight Plan Departure Position|  | Flugplan Abflugposition am        |
-|                                   | Flugplatz. Entweder Parken,       |
-|                                   | Landeplatz,                       |
-|                                   | Wasser oder Runway.               |
-+-----------------------------------+-----------------------------------+
-| |Top of Climb|                    | Steigflugende mit Abstand         |
-|                                   | vom Abflug.                       |
-|                                   | Kann im Menü ``Ansicht``          |
-|                                   | -> :ref:`show-toc-and-tod`        |
-|                                   | ausgeschaltet werden.             |
-+-----------------------------------+-----------------------------------+
-| |Top of Descent|                  | Sinkflugbeginn mit                |
-|                                   | Entfernung zum Ziel.              |
-|                                   | Kann im Menü ``Ansicht``          |
-|                                   | -> :ref:`show-toc-and-tod`        |
-|                                   | ausgeschaltet werden.             |
-+-----------------------------------+-----------------------------------+
-| |Range|                           | Distanzkreise, die mit dem        |
-|                                   | Abstand gekennzeichnet sind.      |
-|                                   | Die Anzahl und Distanz der Kreise |
-|                                   | kann in den Einstellungen auf der |
-|                                   | Seite :ref:`map` geändert werden. |
-+-----------------------------------+-----------------------------------+
-| |Range VOR| |Range NDB|           | VOR- oder NDB-Distanzkreise       |
-|                                   | mit Kennzeichnung der Kennung     |
-|                                   | und Frequenz. Die Farbe zeigt den |
-|                                   | Typ der Navigationshilfen an.     |
-+-----------------------------------+-----------------------------------+
-| |Distance|                        | `Großkreis <https://              |
-|                                   | de.wikipedia.org/wiki/            |
-|                                   | Gro%C3%9Fkreis>`__                |
-|                                   | Entfernungs- und Kursmesslinie    |
-|                                   | mit Angabe der Länge und des      |
-|                                   | wahren Kurses am Start und Ziel.  |
-|                                   | Die beiden Werte                  |
-|                                   | sind bei kleinen Abständen        |
-|                                   | gleich. Für kürzere Strecken wird |
-|                                   | die Länge auch in Fuß oder Meter  |
-|                                   | angegeben.                        |
-|                                   | Die Breite der Messlinien kann im |
-|                                   | Dialog ``Einstellungen`` auf der  |
-|                                   | Seite :ref:`map-display-2`        |
-|                                   | geändert werden.                  |
-|                                   | Die Beschriftungen können in der  |
-|                                   | Baumansicht auf der rechten Seite |
-|                                   | der gleichen Seite geändert       |
-|                                   | werden.                           |
-+-----------------------------------+-----------------------------------+
-| |Distance VOR|                    | Entfernungsmessungen, die von     |
-|                                   | einen Flugplatz oder Funkfeuer    |
-|                                   | bzw. Wegpunkt starten, erhalten   |
-|                                   | die gleiche Farbe, wie das Symbol |
-|                                   | und zusätzlich noch die Kennung   |
-|                                   | und Frequenz. Rhumb-Linien        |
-|                                   | erhalten eine magenetische        |
-|                                   | Kursangabe, wenn Sie von einen    |
-|                                   | Kartenobjekt aus starten, das     |
-|                                   | eine magnetische Varianz          |
-|                                   | zugewiesen hat.                   |
-+-----------------------------------+-----------------------------------+
-| |Search Highlight|                | Ein Flugplatz oder                |
-|                                   | Navigationspunkt, der in den      |
-|                                   | Suchergebnissen ausgewählt ist.   |
-+-----------------------------------+-----------------------------------+
-| |Flight Plan Hightlight|          | Ein Flugplatz oder                |
-|                                   | Navigationspunkt, der in der      |
-|                                   | Flugplantabelle selektiert ist.   |
-+-----------------------------------+-----------------------------------+
-| |Procedure Highlight From|        | Hervorgehobene Position eines     |
-| |Procedure Highlight To|          | Prozedurabschnittes in der        |
-|                                   | Vorschau. Der kleine Kreis        |
-|                                   | zeigt die *von* und der           |
-|                                   | große Kreis die *nach*            |
-|                                   | Position.                         |
-+-----------------------------------+-----------------------------------+
-| |Procedure Highlight Related|     | Der dünne Kreis zeigt die         |
-|                                   | empfohlenen oder verwandte        |
-|                                   | Navigationshilfe eines            |
-|                                   | Prozedurabschnittes               |
-+-----------------------------------+-----------------------------------+
-| |Elevation Profile Position|      | Zeigt die entsprechende Position  |
-|                                   | auf dem Flugplan an, wenn Sie mit |
-|                                   | der Maus über das Höhenprofil     |
-|                                   | fahren.                           |
-+-----------------------------------+-----------------------------------+
++-----------------------------------+----------------------------------+
+| Symbol                            | Beschreibung                     |
++===================================+==================================+
+| |Home|                            | Mittelpunkt der Heimposition.    |
++-----------------------------------+----------------------------------+
+| |Mark|                            | Mittelpunkt für die Distanzsuche.|
++-----------------------------------+----------------------------------+
+| |Center|                          | Zeigt die Kartenmitte an.        |
+|                                   | Nützlich für den Navigationsmodus|
+|                                   | ``Klick und Zentrieren``. Zeigt  |
+|                                   | auch die Klick-/Touch-Bereiche   |
+|                                   | der Kartennavigation an, falls   |
+|                                   | aktiviert.                       |
++-----------------------------------+----------------------------------+
+| |Flight Plan|                     | Flugplan mit Entfernung, Richtung|
+|                                   | und magnetischem Kurs auf jeder  |
+|                                   | Strecke. Die angezeigten Werte   |
+|                                   | können im Dialog                 |
+|                                   | ``Einstellungen`` auf            |
+|                                   | der Seite                        |
+|                                   | :ref:`map-display-2` geändert    |
+|                                   | werden. ``°M`` und               |
+|                                   | ``°T`` zeigen                    |
+|                                   | den magnetischen bzw. wahren Kurs|
+|                                   | an. `                            |
++-----------------------------------+----------------------------------+
+| |Flight Plan Procedure|           | Flugplanprozedur mit den         |
+|                                   | gleichen Informationen wie oben. |
++-----------------------------------+----------------------------------+
+| |Active Leg|                      | Aktive Flugplanstrecke           |
++-----------------------------------+----------------------------------+
+| |Wind Barb|                       | Windrichtung und Geschwindigkeit |
+|                                   | am Flugplanwegpunkt. Siehe       |
+|                                   | Kapitel :ref:`high-alt-wind`     |
+|                                   | unten für Details über           |
+|                                   | Windsymbole.                     |
++-----------------------------------+----------------------------------+
+| |Flight Plan Departure Position|  | Flugplan Abflugposition am       |
+|                                   | Flugplatz. Entweder Parken,      |
+|                                   | Landeplatz,                      |
+|                                   | Wasser oder Runway.              |
++-----------------------------------+----------------------------------+
+| |Top of Climb|                    | Steigflugende mit Abstand        |
+|                                   | vom Abflug.                      |
+|                                   | Kann im Menü ``Ansicht``         |
+|                                   | -> :ref:`show-toc-and-tod`       |
+|                                   | ausgeschaltet werden.            |
++-----------------------------------+----------------------------------+
+| |Top of Descent|                  | Sinkflugbeginn mit               |
+|                                   | Entfernung zum Ziel.             |
+|                                   | Kann im Menü ``Ansicht``         |
+|                                   | -> :ref:`show-toc-and-tod`       |
+|                                   | ausgeschaltet werden.            |
++-----------------------------------+----------------------------------+
+| |Range|                           | Distanzkreise, die mit dem       |
+|                                   | Abstand gekennzeichnet sind.     |
+|                                   | Die Anzahl und Distanz der Kreise|
+|                                   | kann in den Einstellungen auf der|
+|                                   | Seite :ref:`map` geändert werden.|
++-----------------------------------+----------------------------------+
+| |Range VOR| |Range NDB|           | VOR- oder NDB-Distanzkreise      |
+|                                   | mit Kennzeichnung der Kennung    |
+|                                   | und Frequenz. Die Farbe zeigt den|
+|                                   | Typ der Navigationshilfen an.    |
++-----------------------------------+----------------------------------+
+| |Distance|                        | `Großkreis <https://             |
+|                                   | de.wikipedia.org/wiki/           |
+|                                   | Gro%C3%9Fkreis>`__               |
+|                                   | Entfernungs- und Kursmesslinie   |
+|                                   | mit Angabe der Länge und des     |
+|                                   | wahren Kurses am Start und Ziel. |
+|                                   | Die beiden Werte                 |
+|                                   | sind bei kleinen Abständen       |
+|                                   | gleich. Für kürzere Strecken wird|
+|                                   | die Länge auch in Fuß oder Meter |
+|                                   | angegeben.                       |
+|                                   | Die Breite der Messlinien kann im|
+|                                   | Dialog ``Einstellungen`` auf der |
+|                                   | Seite :ref:`map-display-2`       |
+|                                   | geändert werden.                 |
+|                                   | Die Beschriftungen können in der |
+|                                   | Baumansicht auf der rechten Seite|
+|                                   | der gleichen Seite geändert      |
+|                                   | werden.                          |
++-----------------------------------+----------------------------------+
+| |Distance VOR|                    | Entfernungsmessungen, die von    |
+|                                   | einen Flugplatz oder Funkfeuer   |
+|                                   | bzw. Wegpunkt starten, erhalten  |
+|                                   | die gleiche Farbe wie das Symbol |
+|                                   | und zusätzlich noch die Kennung  |
+|                                   | und Frequenz.                    |
++-----------------------------------+----------------------------------+
+| |Search Highlight|                | Ein Flugplatz oder               |
+|                                   | Navigationspunkt, der in den     |
+|                                   | Suchergebnissen ausgewählt ist.  |
++-----------------------------------+----------------------------------+
+| |Flight Plan Hightlight|          | Ein Flugplatz oder               |
+|                                   | Navigationspunkt, der in der     |
+|                                   | Flugplantabelle selektiert ist.  |
++-----------------------------------+----------------------------------+
+| |Procedure Highlight From|        | Hervorgehobene Position eines    |
+| |Procedure Highlight To|          | Prozedurabschnittes in der       |
+|                                   | Vorschau. Der kleine Kreis       |
+|                                   | zeigt die *von* und der          |
+|                                   | große Kreis die *nach*           |
+|                                   | Position.                        |
++-----------------------------------+----------------------------------+
+| |Procedure Highlight Related|     | Der dünne Kreis zeigt die        |
+|                                   | empfohlenen oder verwandte       |
+|                                   | Navigationshilfe eines           |
+|                                   | Prozedurabschnittes              |
++-----------------------------------+----------------------------------+
+| |Elevation Profile Position|      | Zeigt die entsprechende Position |
+|                                   | auf dem Flugplan an, wenn Sie mit|
+|                                   | der Maus über das Höhenprofil    |
+|                                   | fahren.                          |
++-----------------------------------+----------------------------------+
 
 Logbuch Vorschau
 ~~~~~~~~~~~~~~~~~~~
 
 Für ausgewählte Logbucheinträge wird die direkte Verbindung zwischen Start und Ziel sowie Flugplanvorschau und geflogener Pfad angezeigt. Alle oben genannten Optionen können im Kontextmenü der Logbuchsuche deaktiviert werden.
 
-+-----------------------------------+-----------------------------------+
-| |Logbook Entry|                   | Flughäfen und Großkreisweg        |
-|                                   | zwischen Start und Ziel für       |
-|                                   | einen in der Suchergebnistabelle  |
-|                                   | ausgewählten Logbucheintrag.      |
-|                                   | Die Beschriftung zeigt Start,     |
-|                                   | Ziel                              |
-|                                   | und Großkreisentfernung zwischen  |
-|                                   | Flughäfen.                        |
-+-----------------------------------+-----------------------------------+
-| |Logbook Entry Flight Plan|       | Flugplanvorschau, wie im          |
-|                                   | Logbucheintrag gespeichert.       |
-|                                   | Wegpunktnamen und Flugrichtung    |
-|                                   | sind durch Pfeile angegeben.      |
-|                                   | Beachten Sie, dass komplexe       |
-|                                   | Prozeduren nicht sichtbar sind.   |
-+-----------------------------------+-----------------------------------+
-| |Logbook Entry Trail|             | Geflogene Benutzerflugzeugpfad,   |
-|                                   | die mit dem Logbucheintrag        |
-|                                   | gespeichert ist.                  |
-+-----------------------------------+-----------------------------------+
++-----------------------------------+---------------------------------+
+| |Logbook Entry|                   | Flugplätze und Großkreisweg     |
+|                                   | zwischen Start und Ziel für     |
+|                                   | einen in der Suchergebnistabelle|
+|                                   | ausgewählten Logbucheintrag.    |
+|                                   | Die Beschriftung zeigt Start,   |
+|                                   | Ziel                            |
+|                                   | und Entfernung zwischen         |
+|                                   | Flugplätzen.                    |
++-----------------------------------+---------------------------------+
+| |Logbook Entry Flight Plan|       | Flugplanvorschau, wie im        |
+|                                   | Logbucheintrag gespeichert.     |
+|                                   | Wegpunktnamen und Flugrichtung  |
+|                                   | sind durch Pfeile angegeben.    |
+|                                   | Beachten Sie, dass komplexe     |
+|                                   | Prozeduren nicht sichtbar sind. |
++-----------------------------------+---------------------------------+
+| |Logbook Entry Trail|             | Geflogener Benutzerflugzeugpfad,|
+|                                   | der mit dem Logbucheintrag      |
+|                                   | gespeichert ist.                |
++-----------------------------------+---------------------------------+
 
 .. _compass-rose:
 
@@ -268,41 +263,41 @@ Die Farben für den Flugplanverlauf und die Richtung hängen von den
 Einstellungen für die aktive Flugplanstrecke ab, die im Dialog
 ``Einstellungen`` auf der :ref:`map` geändert werden können.
 
-+-----------------------------------+-----------------------------------+
-| Symbol                            | Beschreibung                      |
-+===================================+===================================+
-| |True North|                      | Geographischer Norden.            |
-+-----------------------------------+-----------------------------------+
-| |Magnetic North|                  | Magnetischer Norden.              |
-+-----------------------------------+-----------------------------------+
-| |Distance Circles|                | Entfernungskreise und             |
-|                                   | Markierungen vom                  |
-|                                   | Benutzerflugzeug, falls mit dem   |
-|                                   | Simulator verbunden.              |
-+-----------------------------------+-----------------------------------+
-| |Aircraft Track Rose|             | Die durchgezogene Linie zeigt die |
-|                                   | Flugbahn in Grad magnetisch an,   |
-|                                   | wenn falls verbunden.             |
-+-----------------------------------+-----------------------------------+
-| |Aircraft Heading|                | Die gestrichelte Linie zeigt den  |
-|                                   | Kurs des Flugzeugs an, falls      |
-|                                   | verbunden.                        |
-+-----------------------------------+-----------------------------------+
-| |Flight Plan Leg Course|          | Das Magenta-Liniensegment zeigt   |
-|                                   | den Kurs zum nächsten Wegpunkt    |
-|                                   | des aktiven Flugplanabschnitts    |
-|                                   | an. Nicht angezeigt,              |
-|                                   | wenn kein Flugplan                |
-|                                   | geladen ist.                      |
-+-----------------------------------+-----------------------------------+
-| |Heading|                         | Zeigt die Richtung                |
-|                                   | an, die unter Berücksichtigung    |
-|                                   | des Seitenwindes zum nächsten     |
-|                                   | Wegpunkt des aktiven              |
-|                                   | Flugplanabschnitts geflogen       |
-|                                   | werden muss. Nicht angezeigt,     |
-|                                   | wenn kein Flugplan geladen ist.   |
-+-----------------------------------+-----------------------------------+
++-----------------------------------+----------------------------------+
+| Symbol                            | Beschreibung                     |
++===================================+==================================+
+| |True North|                      | Geographischer Norden.           |
++-----------------------------------+----------------------------------+
+| |Magnetic North|                  | Magnetischer Norden.             |
++-----------------------------------+----------------------------------+
+| |Distance Circles|                | Entfernungskreise und            |
+|                                   | Markierungen vom                 |
+|                                   | Benutzerflugzeug, falls mit dem  |
+|                                   | Simulator verbunden.             |
++-----------------------------------+----------------------------------+
+| |Aircraft Track Rose|             | Die durchgezogene Linie zeigt die|
+|                                   | Flugbahn in Grad magnetisch an,  |
+|                                   | falls verbunden.                 |
++-----------------------------------+----------------------------------+
+| |Aircraft Heading|                | Die gestrichelte Linie zeigt den |
+|                                   | Kurs des Flugzeugs an, falls     |
+|                                   | verbunden.                       |
++-----------------------------------+----------------------------------+
+| |Flight Plan Leg Course|          | Das Magenta-Liniensegment zeigt  |
+|                                   | den Kurs zum nächsten Wegpunkt   |
+|                                   | des aktiven Flugplanabschnitts   |
+|                                   | an. Nicht angezeigt,             |
+|                                   | wenn kein Flugplan               |
+|                                   | geladen ist.                     |
++-----------------------------------+----------------------------------+
+| |Heading|                         | Zeigt die Richtung               |
+|                                   | an, die unter Berücksichtigung   |
+|                                   | des Seitenwindes zum nächsten    |
+|                                   | Wegpunkt des aktiven             |
+|                                   | Flugplanabschnitts geflogen      |
+|                                   | werden muss. Nicht angezeigt,    |
+|                                   | wenn kein Flugplan geladen ist.  |
++-----------------------------------+----------------------------------+
 
 .. _vehicles:
 
@@ -343,15 +338,15 @@ Flugzeuge und Schiffe
 |                                   | magnetischen Grad und             |
 |                                   | Geschwindigkeit.                  |
 +-----------------------------------+-----------------------------------+
-| |Small GA| |Jet| |Helicopter|     | KI- oder Mehrspieler-Flugzeug.    |
+| |Small GA| |Jet| |Helicopter|     | KI- oder Mehrspielerflugzeug.     |
 | |Small GA Ground| |Jet Ground|    | Die Beschriftungen variieren und  |
 | |Helicopter Ground| |Ship|        | können unter ``Einstellungen``    |
 |                                   | auf der Seite                     |
 |                                   | :ref:`map-display` angepasst      |
 |                                   | werden. Das Symbol hängt vom      |
 |                                   | Flugzeugtyp ab (Jet,              |
-|                                   | Kolben/Turboprop, Helikopter oder |
-|                                   | Schiff).                          |
+|                                   | Kolben/Turboprop, Helikopter      |
+|                                   | oder Schiff).                     |
 +-----------------------------------+-----------------------------------+
 | |Online on in Flight| |Online on  | Online-Netzwerk-Flugzeug bzw.     |
 | Ground|                           | Client. Die Beschriftung variiert |
@@ -379,7 +374,7 @@ benutzen, um Landebahnen zu zeichnen.
 | |Large Airport Tower|             | Flugplätze mit festen             |
 | |Large Airport|                   | Landebahnen, die länger als 8.000 |
 |                                   | Fuß sind. Alle Landebahnen, die   |
-|                                   | länger als 4.000 Fuß sind werden  |
+|                                   | länger als 4.000 Fuß sind, werden |
 |                                   | dargestellt. Nur für niedrige     |
 |                                   | Zoomstufen.                       |
 +-----------------------------------+-----------------------------------+
@@ -408,7 +403,7 @@ benutzen, um Landebahnen zu zeichnen.
 | |Closed Airport|                  | Flugplatz. Alle Landebahnen sind  |
 |                                   | geschlossen.                      |
 +-----------------------------------+-----------------------------------+
-| |Airport with Fuel| |Airport with | Flugplätze die Treibstoff         |
+| |Airport with Fuel| |Airport with | Flugplätze, die Treibstoff        |
 | soft Runways and Fuel|            | anbieten.                         |
 +-----------------------------------+-----------------------------------+
 | |Add-on Airport|                  |                                   |
@@ -453,7 +448,7 @@ Navigationshilfen
 Navigationshilfen, die Teil eines Flugplanes sind, werden hellgelb
 hervorgehoben.
 
-Auf höheren Zoomleveln werden Objekte nur als kleine Farbige Symbole dargestellt.
+Auf höheren Zoomleveln werden Objekte nur als kleine farbige Symbole dargestellt.
 
 +-----------------------------------+-----------------------------------+
 | Symbol                            | Beschreibung                      |
@@ -523,7 +518,7 @@ Auf höheren Zoomleveln werden Objekte nur als kleine Farbige Symbole dargestell
 |                                   | Die Beschriftung zeigt die Kennung|
 |                                   | und die Frequenz an, sowie        |
 |                                   | magnetischen Kurs, Gleitpfadwinkel|
-|                                   | und DME-Anzeige wenn              |
+|                                   | und DME-Anzeige, wenn             |
 |                                   | verfügbar.                        |
 +-----------------------------------+-----------------------------------+
 | |Localizer|                       | Localizer. Die Beschriftung       |
@@ -551,9 +546,9 @@ Informationen über alle Abschnitte.
 | |Missed Leg Flight Plan| |Missed  | Fehlanflug für                    |
 | Leg Preview|                      | Flugplan und Vorschau.            |
 +-----------------------------------+-----------------------------------+
-| |Circle to Land or Straight in|   | Gepunktete Linie zeigt            |
-|                                   | Kreisen um zu Landen oder den     |
-|                                   | geradlinigen                      |
+| |Circle to Land or Straight in|   | Gepunktete Linie zeigt das Manöver|
+|                                   | ``Kreisen um zu Landen``          |
+|                                   | oder den geradlinigen             |
 |                                   | Teil einer Prozedur an, der zu    |
 |                                   | einem Start- und Landebahnende    |
 |                                   | führt. Hier ein Teil des          |
@@ -580,7 +575,7 @@ Informationen über alle Abschnitte.
 |                                   | ist.                              |
 +-----------------------------------+-----------------------------------+
 | |Procedure Overfly|               | Ein schwarzer Kreis zeigt einen   |
-|                                   | Wegpunkt an der zwangsweise       |
+|                                   | Wegpunkt an, der zwangsweise      |
 |                                   | überflogen werden muss. Dies kann |
 |                                   | ein Prozedurpunkt oder eine       |
 |                                   | Navigationshilfe sein.            |
@@ -590,7 +585,7 @@ Informationen über alle Abschnitte.
 |                                   | finalen Endanflugkurs.            |
 +-----------------------------------+-----------------------------------+
 | |Procedure GS|                    | Das Präfix ``GS`` zeigt keine     |
-|                                   | Höhenrestriktion an sondern ist   |
+|                                   | Höhenrestriktion an, sondern ist  |
 |                                   | ein Indikator für den             |
 |                                   | ILS-Gleitpfad. Kann ``auf`` oder  |
 |                                   | ``auf oder höher`` anzeigen.      |
@@ -696,7 +691,7 @@ Die Farben und Symbole des Höhenprofils folgen dem Stil der Hauptkarte,
 wie er im Einstellungsdialog auf der Seite :ref:`map-display`
 eingestellt ist. Farben, Platzrunden und Symbole für Flugplätze,
 Navigationshilfen, Prozeduren, aktive und abgeflogene Flugplanabschnitte
-sind identisch. Die Profilanzeige folgt auch anderen Karteneinstellungen
+sind identisch. Die Profilanzeige folgt auch anderen Karteneinstellungen,
 wie der Sichtbarkeit von Flugplanlinie, Flugzeug und Flugzeugpfad.
 
 +-----------------------------------+-----------------------------------+
@@ -784,32 +779,32 @@ Platzrunde
 
 Farbe und Indikatoren hängen von der Wahl des Benutzers für :doc:`TRAFFICPATTERN` ab.
 
-+-----------------------------------+-----------------------------------+
-| Symbol                            | Beschreibung                      |
-+===================================+===================================+
-| |Downwind|                        | Gegenanflug der Platzrunde mit    |
-|                                   | Höhe und Magnetkurs.              |
-+-----------------------------------+-----------------------------------+
-| |Final|                           | Endabschnitt der Platzrunde mit   |
-|                                   | Start- und Landebahn sowie        |
-|                                   | magnetischen Kurs.                |
-+-----------------------------------+-----------------------------------+
-| |Entry Indicator|                 | Pfeil und gestrichelte Linien     |
-|                                   | zeigen den Pfad für den Eintritt  |
-|                                   | in die Platzrunde.                |
-+-----------------------------------+-----------------------------------+
-| |Exit Indicator|                  | Gestrichelte Linie und Pfeile     |
-|                                   | zeigen den Pfad für den Austritt  |
-|                                   | aus der Platzrunde.               |
-+-----------------------------------+-----------------------------------+
-| |Active Position Pattern|         | Weißer Kreis ist aktiver Punkt an |
-|                                   | der Startbahnschwelle des         |
-|                                   | Platzrunde.                       |
-|                                   | Der Mauszeiger ändert             |
-|                                   | sich und ermöglicht es,           |
-|                                   | die Platzrunde im Kontextmenü zu  |
-|                                   | entfernen.                        |
-+-----------------------------------+-----------------------------------+
++-----------------------------------+----------------------------------+
+| Symbol                            | Beschreibung                     |
++===================================+==================================+
+| |Downwind|                        | Gegenanflug der Platzrunde mit   |
+|                                   | Höhe und Magnetkurs.             |
++-----------------------------------+----------------------------------+
+| |Final|                           | Endabschnitt der Platzrunde mit  |
+|                                   | Start- und Landebahn sowie       |
+|                                   | magnetischen Kurs.               |
++-----------------------------------+----------------------------------+
+| |Entry Indicator|                 | Pfeil und gestrichelte Linien    |
+|                                   | zeigen den Pfad für den Eintritt |
+|                                   | in die Platzrunde.               |
++-----------------------------------+----------------------------------+
+| |Exit Indicator|                  | Gestrichelte Linie und Pfeile    |
+|                                   | zeigen den Pfad für den Austritt |
+|                                   | aus der Platzrunde.              |
++-----------------------------------+----------------------------------+
+| |Active Position Pattern|         | Weißer Kreis ist aktiver Punkt an|
+|                                   | der Startbahnschwelle der        |
+|                                   | Platzrunde.                      |
+|                                   | Der Mauszeiger ändert            |
+|                                   | sich und ermöglicht es,          |
+|                                   | die Platzrunde im Kontextmenü zu |
+|                                   | entfernen.                       |
++-----------------------------------+----------------------------------+
 
 .. _holding-legend:
 
@@ -829,7 +824,7 @@ Die Farbe hängt von der Wahl des Benutzers im Dialog :doc:`HOLD` ab.
 |                                   | (``LBU``). Die Kennung wird nur   |
 |                                   | angezeigt, wenn die Warteschleife |
 |                                   | an                                |
-|                                   | ein Navigationshilfe gekoppelt    |
+|                                   | eine Navigationshilfe gekoppelt   |
 |                                   | ist. Die                          |
 |                                   | echte Kursanzeige hängt von den   |
 |                                   | Einstellungen ab.                 |

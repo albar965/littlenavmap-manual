@@ -11,12 +11,12 @@ Rollen Sie durch die Seite, um versteckte Einstellungen zu sehen.
 
 .. tip::
 
-        Die meisten Optionen sind selbsterklärend und Tooltips enthalten gegebenfalls detailliertere Erklärungen.
+        Die meisten Optionen sind selbsterklärend und Tooltips enthalten gegebenenfalls detailliertere Erklärungen.
 
 Die Schaltfläche ``Standardeinstellungen wiederherstellen`` stellt nur
 die Optionen dieses Dialogs wieder auf den Standard zurück. Andere
-Einstellungen wie Kartendarstellung, Tabellenansichten oder
-Dockfensterpositionen bleiben davon unberührt. Sie können ``Abbrechen``
+Einstellungen, wie Kartendarstellung, Tabellenansichten oder
+Dockfensterpositionen, bleiben davon unberührt. Sie können ``Abbrechen``
 drücken, um den Dialog zu schließen und diese Aktion rückgängig zu
 machen.
 
@@ -32,7 +32,7 @@ eine kurze Beschreibung für jeder Seite.
 
 .. _startup:
 
-|Startup Icon| Startup und Aktualisierung
+|Startup Icon| Start und Aktualisierung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ermöglicht die Anpassung, was beim Start von *Little Navmap* geladen und
@@ -68,12 +68,12 @@ Sprache für die Benutzeroberfläche
 Ermöglicht die freie Auswahl der Sprache unter den unterstützten Übersetzungen.
 Beachten Sie, dass einige Übersetzungen unvollständig sind, was zu einer Mischung aus englischen und übersetzten Texten auf der Benutzeroberfläche führen kann.
 
-Sie müssen *Little Navmap* neu starten, damit diese Änderung wirksam wird.
+Sie müssen *Little Navmap* neu starten, damit diese Änderung wirksam werden.
 
 Fenster bei Aktionen in den Vordergrund bringen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dies öffnet verwandte Fenster und hebt Reiter bei Aktionen wie dem Öffnen von Dateien, dem Ändern des Flugplans und anderen Operationen an.
+Dies öffnet verwandte Fenster und hebt Reiter bei Aktionen, wie dem Öffnen von Dateien, dem Ändern des Flugplans und anderen Operationen an.
 
 Dies kann für neue Benutzer hilfreich sein.
 
@@ -88,7 +88,7 @@ Hebe und aktiviere das Hauptprogrammfenster, wenn die Maus darüber bewegt wird
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Hebt das Hauptfenster von *Little Navmap* an, wenn Sie mit der Maus darüber fahren.
-Dies wird den Fokus anderer Programme stehlen und *Little Navmap* aktivieren, was zu unerwünschten Effekten führen kann.
+Dies wird den Fokus von anderen Programmfenstern stehlen und *Little Navmap* aktivieren, was zu unerwünschten Effekten führen kann.
 Probieren Sie diese Funktion daher aus, bevor Sie sie verwenden.
 
 Siehe auch :doc:`DOCKWINDOWS`.
@@ -124,7 +124,7 @@ Aktiviere Unterstützung für Monitore mit hoher Auflösung
 
 Schalten Sie diese Einstellung um, wenn Sie Probleme mit skalierten Schriften unter Windows sehen oder das Hauptfenster nicht verkleinern können.
 
-Deaktiviere Tooltips für die ganze Anwendendung
+Deaktiviere Tooltips für die ganze Anwendung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Deaktiviert Tooltips für die gesamte Anwendung mit Ausnahme des Kartenfensters, für das es separate Einstellungen auf der Seite :ref:`map` gibt.
@@ -201,14 +201,14 @@ Sie können die Schriftart für die Kartendarstellung ändern. Die Schriftart wi
 |Map Display 2 Icon| Kartenanzeige 2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Mehr Anzeigeoptionen für Nutzerobjekte wie Distanzkreise und mehr.
+Mehr Anzeigeoptionen für Nutzerobjekte, wie Distanzkreise und mehr.
 
-Auf der rechten Seite der Seite befindet sich eine Baumansicht, in der
+Rechts auf der Seite befindet sich eine Baumansicht, in der
 Sie die Textbeschriftungen auswählen können, die an Flugplätze,
-Benutzerflugzeugen, KI/Mehrspieler-Flugzeugen und anderen
+Benutzerflugzeugen, KI- bzw. Mehrspielerflugzeugen und anderen
 Kartenfunktionen angezeigt werden sollen.
 
-Klicken Sie auf den kleinen nach rechts zeigenden Pfeil (oder ``+``, je nach Betriebssystem und Stil der Benutzeroberfläche), um einen Zweig mit Einstellungen zu öffnen.
+Klicken Sie auf den kleinen nach rechts zeigenden Pfeil (oder ``+``, je nach Betriebssystem und Stil der Benutzeroberfläche), um eine Zweigansicht mit Einstellungen zu öffnen.
 
 Bewegen Sie die Maus über den Baum, um Tooltips mit weiteren Erklärungen anzuzeigen.
 
@@ -324,7 +324,7 @@ Diese Einstellung wird nur verwendet, wenn die einfache Flugzeugzentrierung akti
 Zurück zum aktiven Abschnitt in der Flugplantabelle nach der Zeit unten
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Der aktive (magentafarbene) Flugplanabschnitt wird an den Anfang der Flugplantabelle verschoben, wenn eine neuer Abschnitt aktiviert wird und es für den angegebenen Zeitraum keine Interaktion mit der Tabelle gibt.
+Der aktive (magentafarbene) Flugplanabschnitt wird an den Anfang der Flugplantabelle verschoben, wenn ein neuer Abschnitt aktiviert wird und es für den angegebenen Zeitraum keine Interaktion mit der Tabelle gibt.
 
 .. _simulator-aircraft-clear-selection:
 
@@ -356,26 +356,25 @@ Die beiden folgenden Punkte erklären das Verhalten des Programms in Abhängigke
 
    .. note::
 
-        Beachten Sie, dass spezielle Gesten erkannt werden, wenn Sie den einfachen Flugzeug-Zentrierungs-Modus verwenden
+        Beachten Sie, dass spezielle Gesten erkannt werden, wenn Sie den einfachen Flugzeugzentrierungsmodus verwenden
         (``Karte auf Flugzeug und nächsten Flugplanwegpunkt zentrieren`` deaktiviert) oder wenn *Little Navmap*
         auf diesen Modus zurückgreift (siehe oben):
 
         #. Das Benutzen des Mausrades, der ``+`` und ``-`` Taste oder einer anderen Methode **zum Zoomen** behält den Zoomabstand bei. Das Flugzeug ist immer noch zentriert, aber der
-           neue Zoom-Abstand wird verwendet.
+           neue Abstand wird verwendet.
         #. Um sich umzusehen, indem man **zuerst** die Kartenansicht mit der Maus, den Cursor
            Tasten oder einer anderen Bewegung ändert:
-           Dadurch wird die letzte Position **und** der Zoom-Abstand gespeichert.
+           Dadurch wird die letzte Position **und** der Zoomabstand gespeichert.
            Sie können beliebige Kartenbewegungen durchführen und *Little Navmap* springt zurück zur
-           die letzte Position und stellt die Zoomdistanz wieder her, bei der Sie die Bewegung begonnen haben.
+           letzten Position und stellt die Zoomdistanz wieder her, bei der Sie die Bewegung begonnen haben.
 
-        Das Gleiche gilt ab Punkt zwei, wenn Sie zu Flugplätze, Navigationshilfen oder
-        andere Objekte per Doppelklick, Kontextmenü (``Auf der Karte zeigen``) oder Karten
-        Link anschauen.
+        Punkt zwei wird auch angewendet, wenn Sie zu Flugplätze, Navigationshilfen oder
+        andere Objekte per Doppelklick, Kontextmenü (``Auf der Karte zeigen``) oder Kartenverweis anschauen.
 
    Schalten Sie |Center Aircraft| ``Flugzeug zentrieren`` ein und aus, wenn Sie feststellen, dass
    die Karte an die falsche Position zurückspringt.
 
-#. **Scrolling nicht aktiv zulassen:**
+#. **Scrolling zulassen nicht aktiv:**
 
    Die Karte folgt ständig dem Flugzeug und erlaubt keine Bewegung von ihm weg.
 
@@ -387,7 +386,7 @@ Die beiden folgenden Punkte erklären das Verhalten des Programms in Abhängigke
    - Kontextmenüpunkt ``Auf der Karte anzeigen``.
    - ``Gehe zur Heimposition`` oder ``Gehe zum Zentrum der Distanzsuche``.
    - Link ``Karte`` im ``Informations``-Dockfenster.
-   - ``Flugplan anzeigen``, wenn manuell ausgewählt, oder automatisch nach
+   - ``Flugplan anzeigen``, wenn manuell ausgewählt oder automatisch nach
      Laden eines Flugplans.
    - Zentrieren einer Google Earth KML/KMZ-Datei nach dem Laden
 
@@ -398,7 +397,7 @@ Die beiden folgenden Punkte erklären das Verhalten des Programms in Abhängigke
 Springe nach dieser Zeit zum Flugzeug zurück und nehme Flugzeugverfolgung wieder auf
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Zeit, bis die Flugzeugverfolgung nach einer beliebigen Karteninteraktion wie Scrollen oder Zoomen wieder aktiviert wird.
+Zeit, bis die Flugzeugverfolgung nach einer beliebigen Karteninteraktion, wie Scrollen oder Zoomen, wieder aktiviert wird.
 
 
 .. _flight-plan:
@@ -419,21 +418,21 @@ Aktivieren Sie diese Option, um das Überschreiben von LNMPLN-Dateien mit falsch
 
 Der Dialog :ref:`save-flight-plan-as` wird angezeigt, anstatt den aktuellen Flugplan zu überschreiben, wenn Sie z.B. die Route umkehren.
 
-.. _Flugplan-Muster:
+.. _flight-plan-pattern:
 
 Muster für Standardflugplannamen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ermöglicht das Anpassen des Standard-Dateinamens, der beim ersten Speichern von LNMPLN und beim Export einiger Formate vorgeschlagen bzw. benutzt wird.
+Ermöglicht das Anpassen des Standarddateinamens, der beim ersten Speichern von LNMPLN und beim Export einiger Formate vorgeschlagen bzw. benutzt wird.
 
 Fehlermeldungen und ein Beispiel werden unterhalb des Eingabefeldes angezeigt.
 
 Dies gilt für neue Dateinamen beim Speichern von LNMPLN, FSX, Prepar3D, FlightGear oder MSFS Flugplänen.
 Die Dateisuffixe wie ``.lnmpln``, ``.pln`` oder ``.fgfp`` werden automatisch angehängt.
 
-Exportformate wie X-Plane FMS, die einen bestimmten Kurznamen benötigen, halten sich nicht an diese Einstellung.
+Exportformate, wie X-Plane FMS, die einen bestimmten Kurznamen benötigen, halten sich nicht an diese Einstellung.
 
-Beachten Sie, dass bei PLN-Dateien für den Microsoft Flight Simulator 2020 die Sonderzeichen wie Umlaute entfernt werden, da der Simulator Dateien mit diesen als Teil des Namens nicht laden kann.
+Beachten Sie, dass bei PLN-Dateien für den Microsoft Flight Simulator 2020 die Sonderzeichen, wie Umlaute, entfernt werden, da der Simulator Dateien mit diesen als Teil des Namens nicht laden kann.
 
 Der Standardwert ist ``PLANTYPE DEPARTNAME (DEPARTIDENT) bis DESTNAME (DESTIDENT)``.
 
@@ -514,12 +513,12 @@ Notwendigkeit, diese Werte zu ändern.
 Sie können den Pfad zur X-Plane-Wetterdatei ändern, wenn Sie diese über
 eine Netzwerkfreigabe auf einen entfernten Computer laden möchten.
 
-Mit den Test-Schalflächen für die Online-Wetterdienste kann auch
+Mit den Schaltflächen zum Test für die Online-Wetterdienste kann auch
 herausgefunden werden, ob *Little Navmap* eine Verbindung zum Internet
 herstellen kann. Überprüfen Sie Ihre Firewall-Einstellungen, wenn diese
 fehlschlagen.
 
-Standarwerte für die Web-Adressen:
+Standardwerte für die Web-Adressen:
 
 -  NOAA Wetter-Adresse: ``https://tgftp.nws.noaa.gov/data/observations/metar/cycles/%1Z.TXT``
 -  VATSIM Wetter-Adresse: ``https://metar.vatsim.net/metar.php?id=ALL``
@@ -531,7 +530,6 @@ Standarwerte für die Web-Adressen:
      Einige Dienste können in seltenen Fällen für Stunden oder sogar ein oder zwei Tage unterbrochen sein.
      *Little Navmap* zeigt Fehlermeldungen an, wenn dies der Fall ist.
 
-     Überprüfen Sie Ihren Internetzugang, aber ignorieren Sie diese Meldungen ansonsten, wenn das Problem längere Zeit nicht auftritt.
 
 .. _online-flying:
 
@@ -616,8 +614,8 @@ Web-Adressen
 URL Status-Datei
 ''''''''''''''''
 
-URL der Datei ``status.txt``. Sie können auch einen lokalen Pfad wie
-``C:\Users\YOURUSERNAME\Documents\status.txt`` verwenden.
+URL der Datei ``status.txt``. Sie können auch einen lokalen Pfad, wie
+``C:\Users\YOURUSERNAME\Documents\status.txt``, verwenden.
 
 Diese Datei wird erst beim Start des Programms heruntergeladen.
 
@@ -634,8 +632,8 @@ erläutert:
 URL Whazzup-Datei
 '''''''''''''''''
 
-URL der Datei ``whazzup.txt``. Sie können auch einen lokalen Pfad wie
-``C:\Users\YOURUSERNAME\Documents\whazzup.txt`` verwenden.
+URL der Datei ``whazzup.txt``. Sie können auch einen lokalen Pfad, wie
+``C:\Users\YOURUSERNAME\Documents\whazzup.txt``, verwenden.
 
 Diese Datei wird entsprechend der eingestellten Aktualisierungsrate
 heruntergeladen.
@@ -668,14 +666,14 @@ Dateiformat <https://doc.ivao.aero/apidocumentation:whazzup:fileformat>`__.
 
 .. _online-service-settings-update:
 
-Updateintervall
-'''''''''''''''
+Aktualisierungsintervall
+''''''''''''''''''''''''''
 
 Legt die Aktualisierungsrate fest, die definiert, wie oft die Datei
 ``whazzup.txt`` heruntergeladen wird.
 
-Die zulässigen Werte liegen zwischen 5 und 1800 Sekunden, wobei 180s die
-Voreinstellung sind.
+Die zulässigen Werte liegen zwischen 5 und 1.800 Sekunden, wobei 180 die
+Voreinstellung ist.
 
 Sie können kleinere Aktualisierungsraten für private Online-Netzwerke
 verwenden, um die Aktualisierung der Kartendarstellung zu verbessern.
@@ -684,7 +682,7 @@ verwenden, um die Aktualisierung der Kartendarstellung zu verbessern.
 
         Verwenden Sie für offizielle Online-Netzwerke keine Aktualisierungsraten, die
         kleiner als zwei Minuten sind. Diese können die Anwendung
-        Ihre Internetadresse blockieren, wenn die Downloads zu groß
+        Ihrer Internetadresse blockieren, wenn die Downloads zu groß
         sind.
 
 .. _online-service-settings-format:
@@ -712,8 +710,8 @@ Konfigurationsoptionen für den internen Webserver von *Little Navmap*.
 -  ``Portnummer``: Standard 8965. Das bedeutet, dass Sie in Ihrem
    Browser z.B. die Adresse ``http://localhost:8965/`` verwenden müssen, um
    auf die Webseite von *Little Navmap* zuzugreifen. Ändern Sie
-   diesen Wert, wenn Sie Fehler wie
-   ``Kann Server nicht starten. Die angegebene Adresse ist bereits in Gebrauch.``
+   diesen Wert, wenn Sie Fehler, wie
+   ``Kann Server nicht starten. Die angegebene Adresse ist bereits in Gebrauch.``,
    erhalten.
 -  ``Verschlüsselte Verbindung (HTTPS / SSL)``: Verschlüsselte
    Verbindungen verwenden ein vorberechnetes, selbstsigniertes
@@ -725,14 +723,13 @@ Konfigurationsoptionen für den internen Webserver von *Little Navmap*.
    sich die verschiedenen Webartikel an, indem Sie nach
    ``Selbstsigniertes Zertifikat selbst erstellen`` suchen.
 -  ``Webserver stoppen``: Starten oder stoppen Sie den Server, um die
-   oben genannten Änderungen zu testen. Der Serverstatus (läuft oder
-   läuft nicht) wird durch Drücken von ``Abbrechen`` im Optionsdialog
+   oben genannten Änderungen zu testen. Der Serverstatus wird durch Drücken von ``Abbrechen`` im Einstellungsdialog
    auf den vorherigen Zustand zurückgesetzt.
 -  Beschriftung
    ``Webserver läuft unter http://my-computer:8965 (IP-Adresse http://192.168.1.1:8965)``:
    Zeigt zwei Verweise zum Webserver an. Wenn Sie auf eine der beiden Verweise
    klicken, wird die Seite in Ihrem Standardbrowser geöffnet. Sie können
-   den Verweise zur IP-Adresse immer dann ausprobieren, wenn der erste Verweise mit
+   die Verweise zur IP-Adresse immer dann ausprobieren, wenn der erste Verweise mit
    dem Computernamen nicht funktioniert.
 
 Detaillierte Informationen finden Sie unter :doc:`WEBSERVER`.
@@ -747,9 +744,9 @@ Detaillierte Informationen finden Sie unter :doc:`WEBSERVER`.
 Kartenanzeige
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Hier können Sie die Zwischenspeicher-Größe im RAM und auf der Festplatte ändern.
+Hier können Sie die Zwischenspeichergröße im RAM und auf der Festplatte ändern.
 Die Zwischenspeicher werden verwendet, um die heruntergeladenen Bildkacheln von
-den Online-Karten wie der *OpenStreetMap* oder *OpenTopoMap* zu
+den Online-Karten, wie der *OpenStreetMap* oder *OpenTopoMap*, zu
 speichern.
 
 Alle Bildkacheln verfallen nach zwei Wochen und werden dann von den
@@ -776,15 +773,15 @@ Im unteren Teil der Seite ``Zwischenspeicher und Dateien`` im Einstellungsdialog
 
 Folgen Sie den folgenden Anweisungen, um die GLOBE-Höhendaten zu installieren:
 
-#.  Klicken Sie auf den Link im Dialog oder klicken Sie `hier <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ um die Seite zu öffnen. Klicken Sie auf der Webseite auf ``Get data`` und dann auf ``Any or all 16 tiles"``. Klicken Sie dann auf ``All Tiles in One .zip file``, um die Datei herunterzuladen.
+#.  Klicken Sie auf den Link im Dialog oder klicken Sie `hier <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ , um die Seite zu öffnen. Klicken Sie auf der Webseite auf ``Get data`` und dann auf ``Any or all 16 tiles"``. Klicken Sie dann auf ``All Tiles in One .zip file``, um die Datei herunterzuladen.
 
     Der direkte Download-Link ist `all10g.zip <https://ngdc.noaa.gov/mgg/topo/DATATILES/elev/all10g.zip>`__.
-#.  Entpacken Sie die heruntergeladene Datei ``all10g.zip`` an einen beliebigen Ort wie ``...\Dokumente\Little Navmap\GLOBE``.
+#.  Entpacken Sie die heruntergeladene Datei ``all10g.zip`` an einen beliebigen Ort, wie ``...\Dokumente\Little Navmap\GLOBE``.
     Sie können auch den Ordner verwenden, der vom Dialog :doc:`FOLDERS` vorgeschlagen wird.
     Als Ergebnis erhalten Sie einen Ordner ``all10``, der die Dateien ``a10g`` bis ``p10g`` enthält.
 #.  Wählen Sie ``Nutze Offline GLOBE Höhendaten`` im Einstellungsdialog von *Little Navmap*.
 #.  Wählen Sie nun das entpackte Verzeichnis ``all10`` über die Schaltfläche ``GLOBE Verzeichnis auswählen ...`` auf dieser Optionsseite aus.
-    Die Beschriftung im Optionsdialog zeigt einen Fehler an, wenn der Pfad nicht korrekt ist.
+    Die Beschriftung im Einstellungsdialog zeigt einen Fehler an, wenn der Pfad nicht korrekt ist.
 #.  Klicken Sie auf ``Ok``, wenn der Pfad erkannt wurde und die Beschriftung unten ``Verzeichnis und Dateien sind gültig.`` anzeigt.
 
 .. _cache-user-airspaces:
@@ -809,7 +806,7 @@ Siehe auch
 |Scenery Library Database Icon| Szeneriebibliothek
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ermöglicht das Laden der Datenbank der Szenerie-Bibliothek zu
+Ermöglicht das Laden der Datenbank der Szeneriebibliothek zu
 konfigurieren.
 
 Beachten Sie, dass diese Pfade für alle Flugsimulatoren, FSX, P3D, MSFS und
@@ -860,8 +857,8 @@ Add-On-Flugplätze und werden entsprechend markiert.
 
 Sie können diese Liste verwenden, um dieses Verhalten zu ändern.
 
-Add-ons, wie *Orbx FTX Vector* oder *fsAerodata* fügen Szenerdateien
-hinzu, die bestimmte Aspekte von Flugplätzen wie Höhe, magnetische
+Add-ons, wie *Orbx FTX Vector* oder *fsAerodata*, fügen Szeneriedateien
+hinzu, die bestimmte Aspekte von Flugplätzen, wie Höhe, magnetische
 Missweisung oder andere korrigieren. Alle diese Flugplätze werden als
 Add-On-Flugplätze erkannt, da alle ihre Dateien nicht im Verzeichnis des
 Basis-Flugsimulators ``Scenery`` gespeichert sind.
@@ -873,7 +870,7 @@ hervorgehoben werden.
 .. figure:: ../images/optionscenery.jpg
 
       Seite ``Szeneriebibliothek`` mit drei
-      Verzeichnissen und drei Dateien, die vom Laden ausgeschlossen sind, und
+      Verzeichnissen und drei Dateien, die vom Laden ausgeschlossen sind und
       zwei Verzeichnissen, die von der Add-On-Erkennung ausgeschlossen sind.
 
 Beispiele

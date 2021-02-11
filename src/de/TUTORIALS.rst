@@ -24,7 +24,7 @@ Aussehen abweichen.
 Schnellstart
 ~~~~~~~~~~~~
 
-Um eine saubere gemeinsame Basis zu haben, empfehle ich folgendes:
+Um eine einheitliche Basis zu haben, empfehle ich folgendes:
 
 -  Wählen Sie ``Fenster`` -> ``Fensteranordnung zurücksetzen``, um alle Dockfenster
    wieder an ihren ursprünglichen Platz zu bringen.

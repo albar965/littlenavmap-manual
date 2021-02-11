@@ -38,8 +38,7 @@ These instructions apply to Windows, macOS and Linux computers equally.
    USB sticks or whatever you like. Use the file manager windows opened
    by the procedures above.
 #. Start *Little Navmap* on the client computer. The menu
-   ``Scenery Library`` should contain an entry for each copied database
-   file or no entry at all if only one database file was copied. Airport
+   ``Scenery Library`` should contain an entry for each copied database. Airport
    icons should be visible on the map in either case. **There is no need
    to reload the scenery library database now since you just copied a
    fully populated database file.**

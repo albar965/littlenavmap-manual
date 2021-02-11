@@ -18,7 +18,7 @@ die Leistung des Flugzeugs zwischen den Flügen erfassen möchten.
    :ref:`aircraft-menu-restart`.
 -  ``Flugerkennung im Logbuch zurücksetzen``: Setzt das Logbuch zurück,
    um Start und Landung für neue Logbucheinträge zu erkennen.
-- ``Alle Distanzkreise, Distanzmessungen, Platzrunden und Warteschleifen entfernen``:
+-  ``Alle Distanzkreise, Distanzmessungen, Platzrunden und Warteschleifen entfernen``:
    Entfernt alle Benutzermerkmale aus der Karte. Dasselbe wie :ref:`remove-marks`.
 
 .. figure:: ../images/resetflight.jpg

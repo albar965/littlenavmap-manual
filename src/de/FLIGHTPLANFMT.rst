@@ -22,14 +22,14 @@ Siehe auch :doc:`ROUTEEXPORTALL` für weitere Informationen zum Multiexport.
     Das LNMPLN-Format wird nur von *Little Navmap* unterstützt.
     Versuchen Sie nicht, es in Simulatoren oder Add-ons zu laden.
 
-    Betrachten Sie exportierte Flugplandateien als Wegwerfprodukt, da fast alle Exportformate Einschränkungen haben, die zu Datenverlust führen können. Denken Sie daran, dass Sie sie jederzeit wiederherstellen können, indem Sie die ursprüngliche LNMPLN-Datei laden und erneut exportieren.
+    Betrachten Sie exportierte Flugplandateien als Wegwerfprodukt, da fast alle Exportformate Einschränkungen haben, die zu Datenverlust führen können. Denken Sie daran, dass Sie diese jederzeit wiederherstellen können, indem Sie die ursprüngliche LNMPLN-Datei laden und erneut exportieren.
 
 Siehe :ref:`lnmpln-file-format` für eine detaillierte Beschreibung des Formats.
 
 .. warning::
 
    Speichern Sie immer eine Kopie im Standard-LNMPLN-Format, bevor Sie in andere Formate wie FMS exportieren.
-   Dies erlaubt *Little Navmap*, alle Flugplaneigenschaften wie Prozeduren, Ausweichflugplätze und Anmerkungen wiederherzustellen.
+   Dies erlaubt *Little Navmap*, alle Flugplaneigenschaften, wie Prozeduren, Ausweichflugplätze und Anmerkungen, wiederherzustellen.
 
 
 Flugplan Exportformate
@@ -77,7 +77,7 @@ VATSIM vPilot oder SWIFT [3]_      VFP      0    X   X    0       0             
 UFMC                               UFMC     0    X   X    0       0               0       0            0           0            0
 X-FMC                              FPL      0    X   X    0       0               0       0            0           0            0
 Garmin exchange format             GPX      \-   X   \-   \-      \-              \-      \-           \-          \-           \-
-HTML Flugplan-Webseite             HTML     \-   X   \-   \-      \-              \-      \-           \-          \-           \-
+HTML Flugplanwebseite              HTML     \-   X   \-   \-      \-              \-      \-           \-          \-           \-
 ================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
 
 Für ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2`` und ``Reality XP
@@ -86,7 +86,7 @@ GTN 750/650 Touch`` gibt es zusätzliche Exportformate, welche die Wegpunkte dur
 Prozedur-Wegpunkte sind von den meisten Dateiformaten standardmäßig ausgeschlossen,
 außer bei GPX.
 Sie müssen das GPS, FMS oder die MCDU im Simulator verwenden, um
-Prozeduren auswählen. Ausnahmen sind z.B. X-Plane FMS und FLP, die das Speichern und Laden von Prozeduren erlauben.
+Prozeduren auszuwählen. Ausnahmen sind z.B. X-Plane FMS und FLP, die das Speichern und Laden von Prozeduren erlauben.
 
 Sie können das Speichern von Wegpunkten aktivieren, indem Sie die
 Menüpunkte :ref:`export-flight-plan-approach-waypoints`
@@ -171,7 +171,7 @@ Speichern Sie diese Dateien in das Verzeichnis ``Output/FMS plans`` innerhalb de
 X-Plane Verzeichnis.
 
 Lesen Sie in den X-Plane Handbüchern für die jeweiligen Geräte nach, wie Sie die Pläne im Cockpit laden:
-``Benutzerhandbücher für X-Plane Produkte <https://www.x-plane.com/support/manuals/>``.
+`Benutzerhandbücher für X-Plane Produkte <https://www.x-plane.com/support/manuals/>`__.
 
 .. note::
 
@@ -334,7 +334,7 @@ Ein typisches Symptom ist, dass Sie den Flugplan in *Little Navmap*
 speichern können und Sie den gespeicherten Plan auch in den
 offenen Dialogen von *Little Navmap* sehen können. Jedoch erscheint der
 Plan nicht im
-der GTN. Ändern Sie die Berechtigungen des Exportverzeichnisses
+GTN-Gerät. Ändern Sie die Berechtigungen des Exportverzeichnisses
 wie oben beschrieben, wenn dies der Fall ist.
 
 Die Datei ist ein einfaches Textformat, das nur eine Zeile Text enthält.
@@ -348,7 +348,7 @@ PMDG Aircraft
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Eine PMDG RTE-Datei. Der Speicherort der Datei hängt vom verwendeten
-Flugzeug ab, ist aber in der Regel ``PMDG\FLIGHTPLANS`` im
+Flugzeug ab, befindet sich aber in der Regel ``PMDG\FLIGHTPLANS`` im
 Stammverzeichnis des Simulators.
 
 Prozeduren können nicht gespeichert werden.
@@ -403,15 +403,15 @@ Flight Factor Airbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ein Format für den Flight Factor Airbus. Die Datei wird nicht
-abgeschnitten sondern die Flugpläne werden beim Speichern angehängt.
+abgeschnitten, sondern die Flugpläne werden beim Speichern angehängt.
 
 Die Flugpläne werden in einer erweiterten ATS-Routen-Notation
 gespeichert, die es auch ermöglicht, die Reiseflughöhe und die
 Anflugprozeduren zu speichern. Bearbeiten Sie die Datei mit einem
 Texteditor, wenn Sie Flugpläne entfernen möchten.
 
-Während dieses Format das Speichern von SID und STAR ermöglicht, wurde
-die Option für Anflüge entfernt, da sie unzuverlässig ist.
+Dieses Format ermöglicht das Speichern von SID und STAR, besitzt jedoch keine Option
+für Anflüge.
 
 **Beispiel:**
 
@@ -467,7 +467,7 @@ vom Fluzeugtyp.
 
 Prozeduren können nicht gespeichert werden.
 
-.. _Flugplan-Formate-mdx:
+.. _flight-plan-formats-mdx:
 
 Leonardo Maddog X
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -586,7 +586,7 @@ inklusive Simulatorzeit und -höhe in die Datei eingebettet.
 Die Route hat für alle Wegpunkte eine Start- und Zielhöhe sowie eine
 Reiseflughöhe. Wegpunkte aller Prozeduren sind in der
 exportierten Datei enthalten. Beachten Sie, dass die Wegpunkte es nicht
-erlauben, alle Teile einer Prozedur wie Holdig oder Wendemanöver zu
+erlauben, alle Teile einer Prozedur, wie Warteschleifen oder Wendemanöver, zu
 reproduzieren.
 
 .. _flight-plan-formats-html:
@@ -623,16 +623,16 @@ Dokumentation des Garmin-Geräts.
 
 *Little Navmap* ermöglicht es, den Garmin-Export so zu ändern, dass alle
 Wegpunkte durch benutzerdefinierte Wegpunkte ersetzt werden, um eine
-Sperrung zu vermeiden. Dies ist ein ausreichender Ansatz, um die
+Sperrung zu umgehen. Dies ist ein ausreichender Ansatz, um die
 gesperrten Wegpunkte zu vermeiden, hat aber einige Einschränkungen:
 
 -  Start- und Zielflugplatz werden nicht als benutzerdefinierte
    Wegpunkte gespeichert. Diese müssen in der
    Garmin-Navigationsdatenbank vorhanden sein.
--  Informationen zu Navigationshilfen, wie Frequenzen können nicht angezeigt werden, da
+-  Informationen zu Navigationshilfen, wie Frequenzen, können nicht angezeigt werden, da
    der Wegpunkt nicht mit dem jeweiligen Funkfeuer in Verbindung gebracht werden
    kann.
--  Prozeduren wie SID und STAR können nicht mit dem Flugplan gespeichert
+-  Prozeduren, wie SID und STAR, können nicht mit dem Flugplan gespeichert
    werden und müssen manuell ausgewählt werden.
 -  Das GTN-Gerät (nicht das GNS) ändert alle Namen in ein generisches
    ``USERWPT...`` Schema.

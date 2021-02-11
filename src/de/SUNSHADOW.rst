@@ -8,7 +8,7 @@ als auch ``Sphärisch``.
 Aktivieren Sie den Schatten im Menü ``Ansicht`` ->
 :ref:`show-sun-shading`.
 
-Sie können die Zeitbasis für den Sonneschatten unter ``Ansicht`` ->
+Sie können die Zeitbasis für den Sonnenschatten unter ``Ansicht`` ->
 :ref:`show-sun-shading-time` ändern.
 
 Die Dunkelheit des Schattens kann im Dialog ``Einstellungen`` auf der
@@ -17,7 +17,7 @@ unteren Rand des Dialogs geändert werden.
 
 .. figure:: ../images/sunshadow.jpg
 
-       Sonneschatten auf der Nordhalbkugel.
+       Sonnenschatten auf der Nordhalbkugel.
 
 .. _sun-shadow-time-sources:
 
@@ -62,7 +62,7 @@ Navmap* auf die aktuelle Echtzeit zurückgesetzt wird.
 
 .. figure:: ../images/sunshadowtime.jpg
 
-        Datum und Uhrzeit des Sonneschattens am 8. November um
+        Datum und Uhrzeit des Sonnenschattens am 8. November um
         22:42 Uhr Zulu Zeit.
 
 .. |Sun Shading Icon| image:: ../images/icon_mapshadow.png

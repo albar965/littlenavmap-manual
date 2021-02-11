@@ -1,7 +1,7 @@
 Start
 ---------------------------
 
-Diese Seite öffnet sich automatisch in Ihrem Web-Browser nach einem Update oder der Erstinstallation von *Little Navmap*.
+Diese Seite öffnet sich automatisch in Ihrem Webbrowser nach einem Update oder der Erstinstallation von *Little Navmap*.
 
 Dies ist ein Teil des *Little Navmap* Online-Handbuchs.
 
@@ -22,10 +22,10 @@ für zukünftige Starts ausblenden, indem Sie ``Nicht wieder anzeigen`` drücken
 #.  Sie müssen zuerst die Szeneriebibliothek laden, um die Flugplätze Ihres Simulators zu sehen.
     Gehen Sie in das Hauptmenü ``Szeneriebibliothek`` und wählen Sie :ref:`load-scenery-library`.
     Wählen Sie Ihren Simulator aus und klicken Sie auf ``Laden``.
-    Sehen Sie sich auch :ref:`scenery-library-menu`, :doc:`SCENERY` und :doc:`NAVDATA` über die verschiedenen Modi der Szeneriebibliotheks an, die im Menü ausgewählt werden können.
+    Sehen Sie sich auch :ref:`scenery-library-menu`, :doc:`SCENERY` und :doc:`NAVDATA` über die verschiedenen Modi der Szeneriebibliotheken an, die im Menü ausgewählt werden können.
 #.  Erstellen Sie einen Flugplan. Klicken Sie mit der rechten Maustaste in der Karte auf einen Flugplatz und wählen Sie Abflug (:ref:`set-as-flight-plan-departure`), Ziel (:ref:`set-as-flight-plan-destination`) und Zwischenwegpunkte (:ref:`add-position-to-flight-plan` und :ref:`append-position-to-flight-plan`) aus dem Kontextmenü.
 #.  Speichern Sie den Flugplan in das *Little Navmap*-eigene Format LNMPLN, indem Sie auf :ref:`save-flight-plan` klicken.
-    Dieses Dateiformat ist nur für *Little Navmap* und erlaubt es, alle Flugplanmerkmale wie Anmerkungen, benutzerdefinierte Anflüge und mehr zu erhalten. Versuchen Sie nicht, es in Simulatoren oder andere Werkzeuge zu laden.
+    Dieses Dateiformat ist nur für *Little Navmap* und erlaubt es, alle Flugplanmerkmale, wie Anmerkungen, benutzerdefinierte Anflüge und mehr, zu erhalten. Versuchen Sie nicht, es in Simulatoren oder andere Werkzeuge zu laden.
 #.  Konfigurieren Sie den Flugplanexport im Menü ``Datei`` -> :ref:`multiexport-flight-plan-options`.
     Wählen Sie die gewünschten Formate durch Anklicken einer oder mehrerer Ankreuzfelder auf der linken Seite und passen Sie die Pfade bzw. Dateinamen für den Export an. Siehe :doc:`ROUTEEXPORTALL`.
 #.  Wählen Sie ``Datei`` -> :ref:`multiexport-flight-plan`, um Ihren Flugplan für Simulator, Add-ons oder Flugzeuge zu exportieren.

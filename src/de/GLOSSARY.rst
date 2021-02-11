@@ -18,8 +18,8 @@ Ankunftsprozedur
     Eine Ankunftsprozedur ist eine Reihe von Manövern für den Übergang eines
     Flugzeugs unter Instrumentenflugbedingungen vom ersten Anflug auf eine
     Landung oder zu einem Punkt, von dem aus eine Landung visuell erfolgen
-    kann. Wenn ein Flugplan ein Standard-Ankunftsprozedur (STAR)
-    beinhaltet, folgt eine Anflugprozedur normalerweise der STAR.
+    kann. Wenn ein Flugplan eine Standard-Ankunftsprozedur (STAR)
+    beinhaltet, folgt oft eine Anflugprozedur.
 
 Abflugprozeduren
     SID-Prozeduren.
@@ -49,7 +49,7 @@ DME
 
 FACF
     Endanflugkurspunkt. Ein Punkt, der auf den Endanflugverlauf einer
-    Instrumentenprozedure ausgerichtet ist.
+    Instrumentenprozedur ausgerichtet ist.
 
 FAF
     Endanflugpunkt. Der Punkt, an dem das Endanflugsegment mit dem
@@ -89,18 +89,9 @@ ILS
 
 Leerer Flugplatz
     Ein Flugplatz, der keine Rollwege, keine Parkpositionen oder Gates,
-    keine Vorfelder hat und kein Add-On-Flugplatz und kein Wasserflugplatz
+    keine Vorfelder hat, und kein Add-On-Flugplatz und kein Wasserflugplatz
     ist.
 
-Loxodrome
-    Auch Rhumb-Linie genannt.
-    Bei Verwendung eines Magnetkompasses oder einer Richtungsanzeige ist es
-    bequemer, eine konstante Flugrichtung zu fliegen. Dies kann erreicht
-    werden, indem man einer Loxodrome folgt und nicht einer
-    Großkreisbahn. Zu beachten ist, dass die Loxodrome, die zwei Punkte
-    auf der Erde verbindet, länger ist als der Großkreisweg. Auch in der
-    Nähe der Pole und bei größeren Entfernungen ist die Loxodrome nicht
-    verwendbar.
 
 Initialer Fix
     Dies ist der erste Fix einer Prozedur auch intitialer Anflugpunkt.
@@ -141,7 +132,7 @@ SID
     Ein Standardinstrumentenabflug ist eine Abflugprozedur der
     Flugsicherung, die dazu beiträgt, die Abfertigungsverfahren zu
     vereinfachen. Eine SID hält Flugzeuge vom Gelände fern, ist aber für die
-    Flugroute der Flugsicherung optimiert und bietet nicht unbedingt das
+    Flugroute der Flugsicherung optimiert und bietet nicht unbedingt die
     beste Steigrate. Sie bietet ein Gleichgewicht zwischen Gelände- und
     Hindernisvermeidung, Lärmminderung und Luftraummanagement.
 
@@ -158,7 +149,7 @@ STAR
 
 Startposition
     Wird für den Abflug in Flugplänen verwendet. Entweder Start- und
-    Landebahn, Hubschrauberlandeplatz, GA-Rampe, Laderampe, Treibstoffkasten
+    Landebahn, Helikopterlandeplatz, GA-Rampe, Laderampe, Treibstoffkasten
     oder Flugsteig.
 
 Szeneriedatenbank

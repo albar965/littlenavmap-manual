@@ -4,7 +4,7 @@ Installation
 *Little Navmap* für Windows ist eine 32-Bit-Anwendung und wurde mit
 Windows 7, Windows 8, Windows 10 getestet. (32-bit and 64-bit).
 
-macOS wird ab macOS Sierra 10.12 einschließlich unterstützt.
+macOS wird einschließlich Sierra 10.12 unterstützt.
 
 Die Linux-Version wurde auf Ubuntu erstellt, sollte aber auch auf anderen Distributionen funktionieren.
 
@@ -42,7 +42,7 @@ unter Windows. Ein Installationsprogramm ist nicht erforderlich.
     Entpacken Sie das Archiv nicht in den Ordner ``c:\Programme\`` oder
     ``c:\Programme (x86)\``, da diese Administratorrechte erfordern.
     Windows behält die Kontrolle über diese Ordner, daher können
-    Probleme wie ersetzte oder gelöschte Dateien auftreten.
+    Probleme, wie ersetzte oder gelöschte Dateien, auftreten.
 
     Es ist in der Regel nicht erforderlich, *Little Navmap* als Administrator auszuführen.
     Passen Sie die Verzeichnisberechtigungen an, wenn Sie Flugpläne an geschützte Orte exportieren müssen.
@@ -77,7 +77,7 @@ Anwendung entsperren
 Je nach System- und Antivirus-Einstellungen kann es erforderlich sein, die ausführbaren Dateien zu entsperren.
 Dies gilt für *Little Navmap* (``littlenavmap.exe``), *Little Navconnect* (``littleconnect.exe``) und das *Little Xpconnect* Plugin (``win.xpl``).
 
-Sie können dies im Windows-Explorer tun, indem Sie Eigenschaften auswählen und ``Datei entsperren`` ankreuzen.
+Sie können dies im Windows-Explorer tun, indem Sie ``Eigenschaften`` auswählen und ``Datei entsperren`` ankreuzen.
 Eine detaillierte Anleitung finden Sie zum Beispiel hier:
 ``How to Unblock a File in Windows 10 <https://mywindowshub.com/how-to-unblock-a-file-in-windows-10/>``.
 
@@ -136,7 +136,7 @@ Dies gilt für die macOS-Versionen Catalina und höher, wenn X-Plane das Plugin 
 
 Lassen Sie das ``*`` nicht weg und vergewissern Sie sich, dass Sie sich im richtigen Ordner befinden, nachdem Sie den Befehl ``cd`` ausgeführt haben.
 
-``sudo`` ist ein Befehl, der es Ihnen erlaubt, andere Befehle als Administrator auszuführen. Daher fragt er nach Ihrem Passwort. Der Befehl ``xattr`` ändert Dateiattribute. Das Flag ``-r`` weist xattr an, auch alle Unterordner zu ändern und das Flag ``-d com.apple.quarantine`` weist es an, das Quarantäne-Flag zu löschen.
+``sudo`` ist ein Befehl, der es Ihnen erlaubt, andere Befehle als Administrator auszuführen. Daher fragt er nach Ihrem Passwort. Der Befehl ``xattr`` ändert Dateiattribute. Das Flag ``-r`` weist xattr an, auch alle Unterordner zu ändern, und das Flag ``-d com.apple.quarantine`` weist es an, das Quarantäne-Flag zu löschen.
 
 Die *Little Xpconnect* Installation war erfolgreich, wenn Sie es im X-Plane Plugin Manager sehen können.
 
@@ -146,8 +146,8 @@ Linux
 ~~~~~
 
 Entpacken Sie das tar-Archiv an einen beliebigen Ort und führen Sie die
-ausführbare ``littlenavmap``-Datei aus, um das Programm von einem Terminal aus
-zu starten.:
+ausführbare ``littlenavmap``-Datei aus, um das Programm von einem Terminal aus, um es zu
+zu starten. Geben Sie folgenden Befehl ein:
 
 ``./littlenavmap``
 
@@ -160,7 +160,7 @@ Wenn das Programm nicht startet, führen Sie folgenden Befehl aus:
 
 ``ldd littlenavmap``
 
-und schicken Sie mir die Ausgabe. Diese zeigt an, welche Shared Libraries eventuell fehlen.
+Schicken Sie mir die Ausgabe, da diese anzeigt, welche Shared Libraries eventuell fehlen.
 
 .. _xplane-plugin:
 
@@ -178,7 +178,7 @@ Installationsanweisungen.
 Das Plugin ist nur für 64-Bit und für Windows, MacOS und
 Linux verfügbar.
 
-Löschen Sie alle alten *Little Xpconnect*-Installationen im Plugins-Verzeichnis, bevor Sie die die neue Version installieren. Führen Sie neue und alte Installationen nicht zusammen.
+Löschen Sie alle alten *Little Xpconnect*-Installationen im Plugin-Verzeichnis, bevor Sie die neue Version installieren. Führen Sie das neue und das alte Installationsverzeichnis nicht zusammen.
 
 Kopieren Sie das gesamte Plugin-Verzeichnis *Little Xpconnect* in das Verzeichnis ``plugins`` im Verzeichnis ``Resources`` in der X-Plane Installation. Der komplette Pfad sollte wie folgt aussehen:
 

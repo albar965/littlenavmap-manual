@@ -1,4 +1,4 @@
-Flugplan-Routenberechnung
+Flugplanberechnung
 -----------------------------
 
 Die Routenberechnung wird in einem schwebenden Fenster durchgeführt, das über die Menüs -> ``Flugplan`` -> :ref:`calculate-flight-plan` oder ``Fenster`` -> :ref:`window-flight-plan` geöffnet wird.
@@ -9,7 +9,7 @@ Mit dem Fenster können Sie folgendes berechnen:
 - Gesamte Flugpläne vom Start bis zum Ziel.
 - Routen zwischen ausgewählten Wegpunkten in der Flugplantabelle.
 
-Sie müssen die Route neu erstellen, indem Sie den Knopf ``Berechnen`` drücken, nachdem Sie irgendwelche Parameter geändert haben.
+Sie müssen die Route neu erstellen, indem Sie die Schaltfläche ``Berechnen`` drücken, nachdem Sie Parameter geändert haben.
 
 .. figure:: ../images/routecalc.jpg
 
@@ -32,7 +32,7 @@ Berechne vom Start zum Ziel
 
 Berechnet einen Flugplan zwischen Start und Ziel.
 
-In der Kopfzeile des Dialogs wird eine rote Fehlermeldung angezeigt, wenn der Flugplan für die Berechnung nicht gültig ist. Bewegen Sie den Mauszeiger über die Meldung oder klicken Sie sie an, um Details zu erfahren.
+In der Kopfzeile des Dialogs wird eine rote Fehlermeldung angezeigt, wenn der Flugplan für die Berechnung nicht gültig ist. Bewegen Sie den Mauszeiger über die Meldung oder klicken Sie diese an, um Details zu erfahren.
 
 Prozeduren sind von dieser Berechnungsmethode nicht betroffen. Die Route wird vom SID-Ausgang bis zum Einstieg einer STAR aufgebaut, falls vorhanden.
 
@@ -80,12 +80,12 @@ Dasselbe wie :ref:`adjust-flight-plan-alt`.
 Luftstraßen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Wählt die Luftstraßen-Berechnungsmethode aus und aktiviert alle Felder rechts von dieser Schaltfläche.
+Wählt die Berechnungsmethode für Luftstraßen aus und aktiviert alle Felder rechts von dieser Schaltfläche.
 
 Diese Methode verwendet Luftstraßen bzw. direkte Wegpunktverbindungen, um eine Route zu erstellen.
 Welche Verbindungsart gewählt wird, hängt von den Einstellungen in :ref:`routecalc-prefer` ab.
 
-Kriterien für die Auswahl von Luftstraßen sind immer die Richtung für Einweg-Luftstraßen und Höhenbeschränkungen.
+Kriterien für die Auswahl von Luftstraßen sind immer die Richtung für Einwegluftstraßen und Höhenbeschränkungen.
 
 Alle Luftstraßen
 ^^^^^^^^^^^^^^^^
@@ -107,7 +107,7 @@ Beschränken Sie die Berechnung auf Victor bzw. Luftstraßen in niedriger Höhe.
 RNAV Luftstraßen vermeiden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Aktivieren Sie diese Option für nicht mit RNAV ausgestattete Flugzeuge. Dadurch werden nur Flugrouten ausgewählt, denen mit Hilfe von Funk-Navigationshilfen wie VOR oder NDB gefolgt werden kann.
+Aktivieren Sie diese Option für nicht mit RNAV ausgestattete Flugzeuge. Dadurch werden nur Flugrouten ausgewählt, denen mit Hilfe von Funk-Navigationshilfen, wie VOR oder NDB, gefolgt werden kann.
 
 Die Berechnung kann fehlschlagen oder unerwartete Ergebnisse liefern, wenn dies unbeabsichtigt ausgewählt wird.
 

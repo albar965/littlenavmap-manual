@@ -81,6 +81,8 @@ instantaneously to the newly loaded simulator data.
    ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
 -  **Prepar3D v4:**
    ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
+-  **Prepar3D v5:**
+   ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
 
 An error dialog is shown after loading, if any files could not be read or
 directories were not found. In this case you should check if the
@@ -106,21 +108,10 @@ compatible changes where a reload is recommended but not required.
 Microsoft Flight Simulator 2020  Airports and Navdata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap*  has the following limitations due to MSFS BGL restrictions:
+-  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to all procedures in *Little Navmap*.
+-  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids. Keep in mind that SID and STAR are not available yet in *Little Navmap*.
 
--  *Little Navmap* cannot read SID and STAR from MSFS. This is planned for a future version.
--  MSFS seems to have no clear concept of scenery order (``Content.xml`` is unreliable).
-   Add-ons are loaded by alphabetical order by *Little Navmap*.
-   To put an add-on to the end of the loading list prefix the folder name with a ``z_``,
-   for example.
--  Country names are missing in MSFS translation tables and are not available in *Little Navmap*,
-   therefore.
--  Add-ons using the `.fsarchive` encrypted format are not supported. *Little Navmap* will show only
-   the stock airport instead of the add-on.
--  Some airports files like ``LEMG.bgl`` cannot be read due to unknown format. *Little Navmap* reports
-   ``Error: readInt for file "...OMITTED.../LEMG.bgl" failed. Reason 1``.
-   Exclude the airport file from reading in options on page :ref:`scenery-library-database` or simply
-   ignore the message. The stock LEMG and all other airports are not affected by this.
+See appendix :ref:`problems-msfs` for information about MSFS limitations and issues.
 
 .. _load-scenery-library-dialog-xp-apt-navdata:
 
@@ -142,13 +133,11 @@ will look like:
 
 *Little Navmap* can read the following X-Plane scenery files:
 
--  **Airports (** ``apt.dat`` **):** Version 850 up to 1100. This
-   covers X-Plane 10 airports and older add-on scenery. Newer files than
-   1100 might work but are not tested.
+-  **Airports (** ``apt.dat`` **):** From version 850. This
+   covers X-Plane 10 airports and older add-on scenery.
 -  **Navdata (** ``earth_awy.dat`` **,** ``earth_fix.dat`` **and**
-   ``earth_nav.dat`` **):** Version 850 up to 1100. This excludes
-   X-Plane 10 navdata files. Newer files than 1100 might work but are
-   not tested.
+   ``earth_nav.dat`` **):** From version 1100. This excludes
+   X-Plane 10 navdata files.
 -  **Procedures (** ``ICAO.dat`` **in the**
    ``CIFP`` **directory):** All procedures from X-Plane 11.
 -  **Airspaces (** ``*.txt`` **):** The included ``usa.txt`` and all
@@ -296,8 +285,8 @@ Load Scenery Library Options
    add-on sceneries in *Little Navmap* without reloading. This applies
    to the FSX/P3D ``scenery.cfg`` as well as X-Plane's
    ``scenery_packs.ini`` which both allow to disable scenery entries.
--  ``Read Prepar3D add-on.xml packages`` (only P3D v3 and v4): If
-   enabled, reads P3D v4 or v3 ``add-on.xml`` packages. These are read
+-  ``Read Prepar3D add-on.xml packages`` (only P3D v3, v4 and v5): If
+   enabled, reads P3D ``add-on.xml`` packages. These are read
    from sub directories of
    ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons`` and
    ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons``.

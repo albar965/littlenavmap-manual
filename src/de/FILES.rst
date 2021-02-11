@@ -191,7 +191,7 @@ Das XML-Schema für die Validierung finden Sie hier: `lnmpln.xsd <https://www.li
 Die Reihenfolge der Elemente spielt keine Rolle. Fehlende Elemente werden als Warnung protokolliert, ausgenommen optionale Elemente.
 
 .. code-block:: xml
-         :caption: Flight Plan File Example
+         :caption: Beispiel für eine Flugplandatei
          :name: flightplan-example
 
          <?xml version="1.0" encoding="UTF-8"?>
@@ -315,7 +315,7 @@ Das XML-Schema für die Validierung finden Sie hier: `lnmperf.xsd <https://www.l
 Die Reihenfolge der Elemente spielt keine Rolle. Fehlende Elemente werden als Warnung protokolliert, ausgenommen optionale Elemente.
 
 .. code-block:: xml
-        :caption: Aircraft Performance File Example
+        :caption: Beispiel für eine Flugzeugleistungsdatei
         :name: performance-example
 
         <?xml version="1.0" encoding="UTF-8"?>

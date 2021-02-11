@@ -1,7 +1,7 @@
 Multiexport Flugplan
 -------------------------
 
-Multiexport vereinfacht den Flugplan-Export und ermöglicht das Speichern in mehrere Formate auf einmal mit einem Klick in der Symbolleiste, einem Klick im Menü (``Datei`` -> |Multiexport Flight Plan| :ref:`multiexport-flight-plan`) oder mit dem Tastaturkürzel ``Strg+Umschalt+M``.
+Multiexport vereinfacht den Flugplanexport und ermöglicht das Speichern in mehrere Formate auf einmal mit einem Klick in der Symbolleiste, einem Klick im Menü (``Datei`` -> |Multiexport Flight Plan| :ref:`multiexport-flight-plan`) oder mit dem Tastaturkürzel ``Strg+Umschalt+M``.
 
 Der Dialog macht von Tooltips Gebrauch. Bewegen Sie den Mauszeiger über die Zeilen und Schaltflächen, um weitere Informationen zu erhalten.
 
@@ -25,7 +25,7 @@ Der Zeilentext wird fett dargestellt, wenn ein Eintrag aktiviert ist.
 
 Passen Sie die Auswahl in der Auswahlliste ``Exporteinstellungen`` an und wählen Sie, ob Sie Dateien überschreiben möchten oder ob Sie für jedes gespeicherte Format einen Dateidialog sehen möchten.
 
-Klicken Sie ``Ok`` wenn Sie fertig sind.
+Klicken Sie ``Ok``, wenn Sie fertig sind.
 
 Der Flugplan wird exportiert, wenn Sie das Menü ``Datei`` -> :ref:`multiexport-flight-plan` verwenden, ein korrekter Pfad eingegeben wurde und das Ankreuzfeld für das Format markiert ist.
 
@@ -55,20 +55,20 @@ Andere Formate haben Einschränkungen, die kurze Namen erfordern. Für diese gil
 Exportieren des eigenen Flugplanformats Little Navmap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Der Export des ``Eigenes Flugplan-Format von Little Navmap`` mit der Dateiendung LNMPLN ist ein Sonderfall im Vergleich zu den anderen Formaten. Wenn Sie dies für den Export aktivieren, ersparen Sie sich ein paar zusätzliche Klicks zum Speichern der Datei.
+Der Export des ``Eigenes Flugplanformat von Little Navmap`` mit der Dateiendung LNMPLN ist ein Sonderfall im Vergleich zu den anderen Formaten. Wenn Sie dies für den Export aktivieren, ersparen Sie sich ein paar zusätzliche Klicks zum Speichern der Datei.
 
 Folgendes passiert, wenn LNMPLN mit Multiexport gespeichert wird:
 
 - Der Dateiname wird automatisch anhand des gewählten Musters im Einstellungsdialog auf der Seite :ref:`flight-plan` vergeben.
   Wenn die Datei bereits unter einem anderen Namen bei :ref:`save-flight-plan-as` oder :ref:`save-flight-plan` gespeichert wurde, wird dieser Name verwendet.
 - *Little Navmap* speichert die Datei in den im Multiexport-Einstellungen eingestellten Pfad.
-- Die aktuelle Datei wird als ungeändert markiert. Das bedeutet, dass das ``*`` aus dem Fenstertitel gelöscht wird und *Little Navmap* beim Beenden oder Erzeugen eines neuen Plans nicht mehr zum Speichern der Datei auffordert.
+- Die aktuelle Datei wird als unverändert markiert. Das bedeutet, dass das ``*`` aus dem Fenstertitel gelöscht wird und *Little Navmap* beim Beenden oder Erzeugen eines neuen Plans nicht mehr zum Speichern der Datei auffordert.
 - Weitere Speicherungen (Menü ``Datei`` -> :ref:`save-flight-plan`) werden den automatisch zugewiesenen Dateinamen und Pfad verwenden.
 
 .. note::
 
    Speichern Sie immer eine Kopie im Standardformat LNMPLN, bevor Sie in andere Formate exportieren.
-   Dadurch kann *Little Navmap* alle Flugplaneigenschaften wie Prozeduren, Ausweichflugplätze und Anmerkungen wiederherstellen.
+   Dadurch kann *Little Navmap* alle Flugplaneigenschaften, wie Prozeduren, Ausweichflugplätze und Anmerkungen, wiederherstellen.
 
    Beachten Sie, dass das LNMPLN-Format nur von *Little Navmap* verstanden wird.
    Versuchen Sie nicht, es in Simulatoren oder Add-ons zu laden.
@@ -88,7 +88,7 @@ Verzeichnisse (bei manchen Exportformaten auch Dateien) müssen vorhanden sein, 
 .. figure:: ../images/multiexporterr.jpg
 
       Fehlermeldung im Tooltip für den X-Plane FMS Export. Bewegen Sie den Mauszeiger über den roten Text, um dies zu sehen.
-      Ebenfalls ausgewählt ist der MSFS-Flugplan-Export ohne Pfadfehler.
+      Ebenfalls ausgewählt ist der MSFS-Flugplanexport ohne Pfadfehler.
 
 .. _multiexport-running:
 
@@ -100,13 +100,13 @@ Sie können diesen Dialog für zukünftige Speicherungen abschalten.
 
 Das Drücken von ``Abbrechen`` in diesem Dialog stoppt den Export. Es werden keine Dateien exportiert.
 
-Abhängig von der Einstellung in den ``Exporteinstellungen`` zeigt *Little Navmap* auch einen Datei-Dialog für jede exportierte Datei an.
+Abhängig von der Einstellung in den ``Exporteinstellungen`` zeigt *Little Navmap* auch einen Dateidialog für jede exportierte Datei an.
 
 Sie können das Speichern von Wegpunkten aktivieren, indem Sie die Menüpunkte
 :ref:`export-flight-plan-approach-waypoints`,
 :ref:`export-flight-plan-sid-star-waypoints` oder
 :ref:`export-flight-plan-airway-waypoints`.
-Diese drei Optionen betreffen alle Flugplan-Exportformate außer dem nativen LNMPLN-Format.
+Diese drei Optionen betreffen alle Flugplanexportformate, außer dem nativen LNMPLN-Format.
 
 .. _multiexport-options:
 
@@ -178,7 +178,7 @@ Der Dialog erlaubt es, einen Export abzubrechen oder den Dateinamen oder Pfad zu
 
 Wenn Sie in diesem Dialog auf ``Abbrechen`` drücken, wird der Exportvorgang weiterer Formate nicht gestoppt.
 
-Zeige keinen Dateidialog. Erstelle Sicherungskopien im Falle einges Konfliktes
+Zeige keinen Dateidialog. Erstelle Sicherungskopien im Falle eines Konfliktes
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Vorhandene Dateien werden bis zu einem Maximum von vier Dateien gesichert und die neue Datei wird an ihrer Stelle gespeichert.
@@ -198,7 +198,7 @@ Seien Sie vorsichtig mit dieser Einstellung, besonders wenn Sie die Option :ref:
 
 **Beim Speichern wird keine Sicherung erstellt.**
 
-Dies hilft, das Durcheinander in den Ausgabeverzeichnissen zu reduzieren, kann aber Flugplandateien überschreiben.
+Dies hilft, die die Ausgabeverzeichnissen übersichtlicher zu halten, kann aber Flugplandateien überschreiben.
 
 Hilfe
 ^^^^^^^^^^^
@@ -220,7 +220,7 @@ Verwirft alle Änderungen und schließt den Dialog.
 Kontextmenü
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Klicken Sie mit der rechten Maustaste in die Flugplanformat-Tabelle, um das Kontextmenü zu öffnen.
+Klicken Sie mit der rechten Maustaste in die Flugplanformattabelle, um das Kontextmenü zu öffnen.
 
 Für Export vorsehen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -270,7 +270,7 @@ Setzt die Spaltengröße und die Spaltenreihenfolge auf den Standard zurück.
 
 .. _multiexport-menu-text-size:
 
-Text Vergrößern, Verkleinern und Standard Textgröße
+Text vergrößern, verkleinern und Standardtextgröße
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ändert die Textgröße in der Tabelle. Die Größe wird gespeichert.

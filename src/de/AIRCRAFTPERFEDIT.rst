@@ -3,7 +3,7 @@
 
 Der Dialog ermöglicht die Bearbeitung aller leistungsbezogenen Parameter des Flugzeugs auf drei Reitern. Die Etiketten für alle Werte, die für die Kraftstoffberechnung erforderlich sind, sind **fett**  hervorgehoben.
 
-Der Dialog wird geöffnet, wenn die Bearbeiten-Schaltfläche im
+Der Dialog wird geöffnet, wenn die Schaltfläche ``Bearbeiten`` im
 ``Treibstoffbericht``, ``Flugzeug`` ->
 ``Neue Flugzeugleistung erstellen ...`` oder ``Flugzeugleistung bearbeiten ...`` im Hauptmenü ausgewählt werden.
 
@@ -54,7 +54,7 @@ Dazu die Datei mit einen Texteditor öffnen. Der Typ steht unter dem Schlüssel 
 
 .. figure:: ../images/perf_edit_aircraft.jpg
 
-    Reiter ``Flugzeugtyp`` im Bearbeiten-Dialog.
+    Reiter ``Flugzeugtyp`` im Bearbeitungsdialog.
 
 Reiter Flugzeugleistung
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +184,7 @@ Daher sollten die Werte manuell angepasst werden.
 
 .. figure:: ../images/perf_edit_perf.jpg
 
-     Bearbeiten-Dialog für Flugzeugleistung. Reiter ``Flugzeugleistung``.
+     Bearbeitungsdialog für Flugzeugleistung. Reiter ``Flugzeugleistung``.
 
 Anmerkungen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

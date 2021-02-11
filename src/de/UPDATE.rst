@@ -49,7 +49,7 @@ einzufügen.
 Diese Aktualisierung ignorieren
 ''''''''''''''''''''''''''''''''''
 
-Durch Drücken dieser Schaltfläche wird die angezeigte Version zukünftig übersprungenen.
+Durch Drücken dieser Schaltfläche wird die angezeigte Version zukünftig übersprungen.
 Es werden keine Erinnerungen mehr für diese
 Version angezeigt, sondern nur noch für neuere Versionen.
 
@@ -60,7 +60,7 @@ Beachten Sie, dass eine manuelle Prüfung auf Updates die
 
 .. figure:: ../images/updatedialog.jpg
 
-      Aktualisierungs-Benachrichtigungsdialog, der eine
+      Aktualisierungsbenachrichtigungsdialog, der eine
       verfügbare Beta-Version mit Änderungsprotokoll und Download-Link
       anzeigt.
 
@@ -86,17 +86,17 @@ Aktualisierungskanäle:
 
 -   ``Nur stabile Versionen``: Hier werden nur Benachrichtigungen für
     getestete und stabile Versionen angezeigt, die auch ein komplettes
-    Englisches Handbuch enthalten.
+    englisches Handbuch enthalten.
 
--   ``Stabile und Beta Versionen``: Wird zusätzlich nach Beta- bzw. Testversionen
-    suchen. Beta-Versionen sind Programmversionen, die bereits alle
+-   ``Stabile und Beta Versionen``: Sucht zusätzlich nach Beta- bzw. Testversionen.
+    Beta-Versionen sind Programmversionen, die bereits alle
     geplanten Funktionen für ein stabiles Release enthalten, aber noch nicht
     sorgfältig getestet wurden. Das Handbuch kann unvollständig sein.
 
 -   ``Stabile-, Beta- und Entwicklungsversionen``: *Little Navmap* zeigt auch
     Benachrichtigungen für Entwicklungsversionen an. Diese sind weder
     vollständig noch getestet. Die Funktionen können sich im Laufe der
-    Zeit ändern und das Handbuch wird nicht für neue Funktionen
+    Zeit ändern und das Handbuch wird erst später für neue Funktionen
     aktualisiert.
 
 .. note::

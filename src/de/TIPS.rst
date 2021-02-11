@@ -13,7 +13,7 @@ wird ein Umkreisring um jede Funknavigation (VOR) im Flugplan gelegt.
 
 Siehe auch :ref:`show-navaid-range`.
 
-Zum Entfernen der Reichweitenkreise auf das Zentrum rechtsklicken und im Kontextmenü
+Sie können die Reichweitenkreise entfernen, indem Sie mit der rechten Maustaste auf das Zentrum klicken und im Kontextmenü
 ``Distanzkreise entfernen`` auswählen.
 
 |Range Rings|
@@ -47,7 +47,7 @@ einfangen.
 
 .. _tips-and-tricks-addon-airports:
 
-Suche nach Add-On Flugplätze
+Suche nach Add-On Flugplätzen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sie können den Szeneriepfad verwenden, um nach Add-On-Flugplätze eines
@@ -55,8 +55,8 @@ bestimmten Entwicklers zu suchen. Klicken Sie auf einen der
 Add-On-Flugplätze und kopieren Sie den relevanten Teil des Pfades aus dem
 Informationsfenster. Fügen Sie dieses Pfadfragment in das Eingabefeld
 ``Szeneriepfad`` auf dem Reiter ``Flugplätze`` des
-Suchdockfensters ein. Fügen Sie einen Platzhalter ``*`` am Anfang und am Ende ein, da es nur Teil
-eines Pfades ist.
+Suchdockfensters ein. Fügen Sie einen Platzhalter ``*`` am Anfang und am Ende ein, da es sich nur um den Teil
+eines Pfades handelt.
 
 Siehe auch :ref:`text-filters`.
 
@@ -67,7 +67,7 @@ hervorzuheben.
 
 .. _tips-and-tricks-rtw:
 
-Verwenden Sie die Suchfunktion, um eine Rund um die Welt Reise zu planen
+Verwenden Sie die Suchfunktion, um eine Weltreise zu planen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die räumliche Suchfunktion ist nützlich, um eine Weltreise zu planen.
@@ -82,8 +82,8 @@ Angenommen, Sie würden gerne nach Osten fliegen:
    auf Ihren Startflugplatz und wählen Sie
    ``Zentrum für Distanzsuche setzen`` |Set Center for Distance Search|.
    Dies ist der Mittelpunkt für die räumliche Suche.
-#. Fügen Sie bei der Suche zusätzliche Kriterien wie beleuchtete
-   Landebahnen, Prozeduren, Treibstoff, minimale Runway-Länge und mehr
+#. Fügen Sie bei der Suche zusätzliche Kriterien, wie beleuchtete
+   Landebahnen, Prozeduren, Treibstoff, minimale Runway-Länge und mehr,
    hinzu.
 #. Stellen Sie die minimale und maximale Entfernung ein, richten Sie die
    Richtung auf ``Ost`` und klicke vorher auf das Ankreuzfeld
@@ -107,7 +107,6 @@ Tooltips enthalten, egal ob der Flugplatz sichtbar ist oder nicht.
 .. |Range Rings| image:: ../images/tutorial_tipsrangerings.jpg
 .. |VOR Radials| image:: ../images/tutorial_tipvor.jpg
 .. |VOR Airways| image:: ../images/tutorial_tipvorairway.jpg
-.. |Measure Rhumb Distance from here| image:: ../images/icon_distancemeasurerhumb.png
 .. |Approach Guidance| image:: ../images/tutorial_tipsapproach.jpg
 .. |Search Add-On| image:: ../images/tutorial_tipscenery.jpg
 .. |Reset Search| image:: ../images/icon_clear.png

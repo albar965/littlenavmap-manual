@@ -26,7 +26,8 @@ den Simulator auswählen, zu dem die Verbindung aufgebaut werden soll.
 .. figure:: ../images/connectlocal.jpg
 
       *Little Navmap* Verbindungsdialog für eine lokale
-      Verbindung zum FSX, P3D oder MSFS. Die Verbindung wird automatisch aufgebaut.
+      Verbindung zum FSX, P3D oder MSFS auf der linken und X-Plane auf der rechten Seite.
+      Die Verbindung wird automatisch aufgebaut.
 
 Klicken Sie auf den Reiter, der dem Simulator entspricht, mit dem Sie eine Verbindung herstellen möchten.
 
@@ -169,8 +170,8 @@ Navmap* sehen wollen.
 
 .. _connect-options:
 
-Verbindungsdialog-Optionen
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Einstellungen im Verbindungsdialog
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  ``Verbindung Trennen``: Trennt die aktuelle Sitzung und stoppt die
    automatische Wiederverbindung.

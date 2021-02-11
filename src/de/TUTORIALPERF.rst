@@ -3,7 +3,7 @@ Tutorial - Erstellen eines Leistungsprofils für Flugzeuge
 
 Dieses Tutorial zeigt, wie Sie die Flugzeugleistung während des Fluges
 automatisch erfassen und wie Sie das Ergebnis erstellen, zusammenführen
-und verbesserm können.
+und verbessern können.
 
 Sie sollten bereits mit den Flugplanungsfunktionen von *Little Navmap*
 vertraut sein.
@@ -49,15 +49,15 @@ Starten und laden Sie einen Flug mit laufenden oder nicht laufenden
 Flugzeugtriebwerken. Verbinden Sie *Little Navmap* mit dem Simulator.
 
 Wählen Sie ``Datei`` ->  :ref:`reset-for-new-flight` |Reset
-all for a new Flight| im Menü. Entfernen Sie das Haken bei
+all for a new Flight| im Menü. Entfernen Sie den Haken bei
 ``Einen neuen leeren Flugplan erstellen``, da bereits ein Plan
-geladen ist. Klicken Sie auf ``OK``, um eine saubere Basis für die
+geladen ist. Klicken Sie auf ``OK``, um eine bereinigte Basis für die
 Kraftstoffberechnung, das Logbuch und andere Funktionen zu erhalten.
 
 |Reset all for a new Flight|
 
 Fliegen und verwenden Sie typische Einstellungen für die Steig- und
-Reiseflugleistung im Flugzeug. Zeitkompression ist kein Problem,
+Reiseflugleistung im Flugzeug. Zeitkompression stellt kein Problem dar,
 wenn Sie einige Minuten auf dem Reiseflug bleiben, um *Little Navmap*
 das Ermitteln der Kraftstoffdaten zu ermöglichen.
 
@@ -103,7 +103,7 @@ Sie können die Operationen für jedes Feld auch einzeln ändern oder die
 Operation ``Zusammenführen`` verwenden, die den Durchschnitt des neuen
 und aktuellen Wertes verwendet. Sie können das Zusammenführen in
 jeder Flugphase durchführen. Zum Beispiel, wenn Sie die Werte während
-des Fluges feinabstimmen möchten. Siehe :doc:`AIRCRAFTPERFMERGE` für weitere Informationen.
+des Fluges fein abstimmen möchten. Siehe :doc:`AIRCRAFTPERFMERGE` für weitere Informationen.
 
 Passen Sie die Leistung mit ``Zusammenführen`` an, wenn Sie nach dem ersten Flug weitere Flüge durchführen.
 
@@ -137,7 +137,7 @@ Details zur Bearbeitung erläutert.
 
 Verwenden Sie ``Flugzeug`` -> :ref:`aircraft-menu-save`  |Save
 Aircraft Performance| und Speichern Sie die neue Leistungsdatei an einem
-beliebigen Ort wie ``Dokumente\Little Navmap\Flugzeugleistung``.
+beliebigen Ort, wie ``Dokumente\Little Navmap\Flugzeugleistung``.
 
 Sie können diese Datei an andere weitergeben oder mir zusenden, damit
 ich sie in den `Datei-Download-Bereich von

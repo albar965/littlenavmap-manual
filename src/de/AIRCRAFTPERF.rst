@@ -238,7 +238,7 @@ Flugplan
    dem Reiter eingegeben wurde.
 -  ``Wahre Luftgeschwindigkeit im Reiseflug``: Reisefluggeschwindigkeit
    wie im Bearbeitungsdialog angegeben.
--  ``Mach-Nummer im Reiseflug``: Mach-Zahl bei Flugplan-Reiseflughöhe,
+-  ``Mach-Nummer im Reiseflug``: Mach-Zahl in Reiseflughöhe,
    berechnet auf der Grundlage der gegebenen tatsächlichen
    Fluggeschwindigkeit und der atmosphärischen Standardbedingungen der
    ISA.

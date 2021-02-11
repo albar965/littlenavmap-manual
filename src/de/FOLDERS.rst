@@ -12,7 +12,7 @@ Es wird vorgeschlagen, die folgenden Verzeichnisse anzulegen:
 - ``Fensteranordnungen``: Für gespeicherte Fensteranordnungen LNMLAYOUT. Siehe :doc:`LAYOUT` oder :doc:`DOCKWINDOWS`.
 - ``Flugplätze``: Ein Ort zum Speichern von PDF-, Text-, Bild- oder anderen Dateien, die in den Flugplatzinformationen verlinkt sind. Das Kapitel :ref:`airport-files` gibt mehr Informationen über diese Funktion.
 - ``Nutzerlufträume``: Benutzerdefinierte Lufträume im OpenAir-Format. Siehe :doc:`SCENERY`.
-- ``GLOBE Höhendaten``: Ein Verzeichnis für die GLOBE-Daten, die vom Flugplan-Höhenprofil verwendet werden. Siehe Kapitel :ref:`cache-elevation` für Installationsanweisungen.
+- ``GLOBE Höhendaten``: Ein Verzeichnis für die GLOBE-Daten, die vom Flugplanhöhenprofil verwendet werden. Siehe Kapitel :ref:`cache-elevation` für Installationsanweisungen.
 
 .. note::
 

@@ -580,6 +580,8 @@ due to one-way restrictions.
 
 Opens the flight plan calculation dock window which allows to automatically generate a flight plan by various criteria.
 
+The altitude from the current flight plan is transferred to the calculation window.
+
 See chapter :doc:`ROUTECALC` for more information.
 
 .. _adjust-flight-plan-alt:
@@ -2244,6 +2246,7 @@ stack. See :doc:`DOCKWINDOWS` for more information about
 stacked dock windows.
 
 Note that the ``Flight Plan Calculation`` window cannot be docked and remains in floating state.
+The altitude from the current flight plan is not copied to the calculation window when using this function.
 
 .. _main-toolbar-options:
 

@@ -87,7 +87,7 @@ Informationen.
    können dies im Dialog ``Einstellungen`` auf der Seite
    ``Szeneriebibliothek`` tun. Siehe
    :ref:`scenery-library-database-exclude`.
--  **Absturz beim Laden der Szenerie-Bibliothek:** Sie können
+-  **Absturz beim Laden der Szeneriebibliothek:** Sie können
    Szenerieverzeichnisse im ``Einstellungen``-Dialog auf der Seite
    ``Szeneriebibliothek`` ausschließen, wenn das Laden eines
    Add-Ons BGL das Programm zum Absturz bringt. Starten Sie das Programm
@@ -162,11 +162,14 @@ Allgemein
 -  Die Höhe des Höhenprofilfensters kann in manchen Fällen nicht reduziert werden. Das Zurücksetzen auf die Standardfensteranordnung behebt dieses Problem. Ordnen Sie das Höhenprofilfenster neu  oder verschieben Sie es an eine andere Position, was das Problem in der Regel behebt. Speichern Sie die Anordnung, sobald Sie eine funktionierende haben.
 -  Das Zoomen mit Touchpad oder Magic Mouse funktioniert unter macOS nicht richtig. Verwenden Sie das Navigations-Overlay oder eine der anderen Optionen auf der Seite ``Kartennavigation`` in ``Einstellungen``, wenn Sie glauben, dass es unbrauchbar ist.
 
+.. _problems-msfs:
 
 Microsoft Flight Simulator 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - *Little Navmap* kann SID und STAR nicht aus MSFS lesen. Dies ist für zukünftige Versionen geplant.
+- Viele Anflugprozeduren haben ungültige Abschnitte und können nicht verwendet werden. Dies liegt an fehlenden Informationen für die Abschnittstypen `Bogen zu Wegpunkt` und `Konstanter Radiusbogen` in den Navigationsdaten von MSFS.
+- Aktualisierungen für Navigationsdaten werden nicht richtig aus der Szeneriebibliothek von MSFS gelesen. Dies ist im Allgemeinen kein Problem, da Sie die Navigationsdaten in *Little Navmap* auch mit dem Navigraph FMS Data Manager aktualisieren können, um das Programm mit MSFS synchron zu halten.
 - MSFS Multiplayer und Echtzeit-KI können noch nicht angezeigt werden. Diese erscheinen nicht in der SimConnect-Programmierschnittstelle.
 - Das Simulatorwetter kann für MSFS nicht angezeigt werden, da die SimConnect-Wetterfunktionen keine Daten liefern. Verwenden Sie das NOAA-Wetter, das die aktuellsten Wetterberichte liefert.
 - MSFS scheint kein klares Konzept für die Reihenfolge der Szenerien zu haben (``Content.xml`` scheint unzuverlässig zu sein) und es gibt keine Informationen dazu im SDK. Add-ons werden in alphabetischer Reihenfolge in *Little Navmap* geladen. Um ein Add-on an das Ende der Ladeliste zu setzen, fügen Sie z.B. ein ``z_`` an den Ordnernamen an.
@@ -174,8 +177,7 @@ Microsoft Flight Simulator 2020
 - Ländernamen fehlen in den MSFS-Übersetzungstabellen und sind daher in *Little Navmap* nicht verfügbar.
 - Add-ons, die das verschlüsselte Format ``.fsarchive`` verwenden, werden nicht unterstützt. *Little Navmap* zeigt nur den Standardflugplatz anstelle des Add-ons an, wenn ein Paket auf diese Weise gesperrt ist.
 - Einige Flugzeugmodifikationen melden nicht den korrekten Treibstofffluss, um Einschränkungen des Simulators zu umgehen. Dies kann in *Little Navmap* nicht behoben werden.
-- Einige Flugplatzdateien, wie ``LEMG.bgl``, können aufgrund eines unbekannten Formats nicht gelesen werden. *Little Navmap* meldet ``Fehler: readInt für Datei "...AUSGELASSEN.../LEMG.bgl" fehlgeschlagen. Grund 1``. Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite ``Szeneriedatenbank`` vom Lesen aus oder ignorieren Sie die Meldung. Der Standard-LEMG und alle anderen Flughäfen sind hiervon nicht betroffen.
-
+- Einige Flugplatzdateien, wie ``LEMG.bgl``, können aufgrund eines unbekannten Formats nicht gelesen werden. *Little Navmap* meldet ``Fehler: readInt für Datei "...AUSGELASSEN.../LEMG.bgl" fehlgeschlagen. Grund 1``. Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite ``Szeneriedatenbank`` vom Lesen aus oder ignorieren Sie die Meldung. Der Standard-LEMG und alle anderen Flugplätze sind hiervon nicht betroffen.
 
 .. _report-bug:
 

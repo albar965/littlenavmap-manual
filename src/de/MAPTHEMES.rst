@@ -35,7 +35,7 @@ aktiviert, funktionieren aber möglicherweise nicht, abhängig von den
 Eigenschaften, die in der DGML-Datei der Karte definiert sind.
 
 Weitere Karten und Informationen zur Kartenkonfiguration und
-DGML-Dateien auf den Marble und KDE-Seiten zu finden:
+DGML-Dateien sind auf den Marble und KDE-Seiten zu finden:
 
 -  Weitere Karten (nur Erdkarten werden in *Little Navmap*
    unterstützt) für das Marble-Widget stehen

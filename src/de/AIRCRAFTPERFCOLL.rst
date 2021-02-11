@@ -25,7 +25,7 @@ sammeln. Sie müssen den benötigten Abstieg selbst einschätzen.
 
 .. note::
 
-      Die Flugplan-Reiseflughöhe wird verwendet, um die Reisephase des
+      Die Reiseflughöhe wird verwendet, um die Reisephase des
       Flugzeugs zu erfassen. Stellen Sie die Reiseflughöhe im Reiter ``Flugplan``
       mindestens auf die gewünschte Reiseflughöhe ein,
       wenn Sie die Verwendung eines Flugplans nicht beabsichtigen.

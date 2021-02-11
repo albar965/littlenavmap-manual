@@ -14,14 +14,14 @@ ist.
       Flugplan verlassen. Sie benötigen einen validen Flugplan (d.h. Abflug
       und Ziel) und eine gültige Flugzeugleistung, um das Höhenprofil zu sehen.
 
-Das Höhenprofil umfasst keine Fehlanflüge und kein Strecken zu
+Das Höhenprofil umfasst keine Fehlanflüge und keine Strecken zu
 Ausweichflugplätzen. Erstellen Sie einen neuen Flugplan vom
 Zielflugplatz zum Ausweichflugplatz, wenn Sie das Höhenprofil
 verwenden möchten.
 
 Die Bewegung des Flugzeugs und der Pfad im Höhenprofil sind an den aktiven
-Flugplanabschnitt gebunden und wird nicht korrekt dargestellt, wenn es von der
-aktiven Strecke abweicht.
+Flugplanabschnitt gebunden und werden nicht korrekt dargestellt, wenn sie von der
+aktiven Strecke abweichen.
 
 .. _top-label:
 
@@ -44,7 +44,7 @@ Tooltip-Beschriftung
 
 Zusätzliche Informationen werden in einer Tooltip-Beschriftung rechts oder links im Fenster angezeigt, wenn die
 Maus über das Diagramm bewegt wird. Die entsprechende Position wird
-in der Karte mit einem schwarz/cyanfarbenen Kreis hervorgehoben. Die Beschriftung wechselt je nach Mausposition die Seite.
+in der Karte mit einem schwarz/cyanfarbenen Kreis hervorgehoben. Die Beschriftung wechselt, je nach Mausposition, die Seite.
 
 Die Beschriftung zeigt für die Mausposition die folgenden Informationen an:
 
@@ -58,7 +58,7 @@ Die Beschriftung zeigt für die Mausposition die folgenden Informationen an:
 .. figure:: ../images/profile_label.jpg
 
     Informationen zur Position zwischen den Wegpunkten ``GIGIR`` und ``OBITI``.
-    Zeigt einen Gegenwind von 28 kts an dieser Position an.
+    Zeigt einen Gegenwind von 28 Knoten an dieser Position an.
     Das Benutzerflugzeug steigt.
     Beachten Sie das Bild mit dem deutschen Zahlenformat mit Punkt als Tausendertrennzeichen.
 
@@ -84,7 +84,7 @@ Auf der rechten Seite des Höhenprofils befinden sich die
 Zoom-Schieberegler. Die folgenden Bedienelemente sind verfügbar:
 
 -  |Splitter| Teiler: Sie können die Größe des rechten Teils des
-   Höhenprofilfensters mit Hilfe dieser Teilerschaltfläche ändern.
+   Höhenprofilfensters mit Hilfe dieser Schaltfläche ändern.
    Der Bereich mit den Reglern wird zusammengeklappt, wenn Sie ihn nach
    ganz rechts ziehen. Sie können das zusammengeklappte Element wieder
    öffnen, indem Sie den Splitter nach links ziehen.
@@ -103,7 +103,7 @@ Mausaktionen
 ~~~~~~~~~~~~
 
 -  Bewegen ohne Klick: Die entsprechende Position innerhalb des Flugplans wird auf
-   der Karte mit einem schwarz/türkisen Kreis markiert.
+   der Karte mit einem schwarz/türkisfarbenen Kreis markiert.
 -  ``Mausrad``: Vergrößert und verkleinert horizontal.
 -  ``Umschalt+Mausrad``: Vergrößert und verkleinert vertikal.
 -  ``Linksklick und Ziehen``: Karte verschieben.
@@ -125,7 +125,7 @@ der Tastatur zu aktivieren.
    verkleinert vertikal.
 -  ``0`` oder ``Einfg`` : Setzt die Ansicht auf 100 Prozent zurück und
    zeigt den gesamten Flugplan im Höhenprofil an.
--  ``Pos1`` und ``Ende``: Springen Sie zum Start- oder Zielort.
+-  ``Pos1`` und ``Ende``: Springt zum Start- oder Zielort.
 -  ``BildAuf`` und ``BildAb``: Eine Seite vorwärts oder rückwärts
    blättern.
 
@@ -144,7 +144,7 @@ Doppelklick in das Höhenprofil.
 
 .. _expand-to-window:
 
-|Expand to Window| Ansicht an Fentstergröße anpassen
+|Expand to Window| Ansicht an Fenstergröße anpassen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Setzt die Ansicht auf 100 Prozent zurück und zeigt den gesamten Flugplan
@@ -158,11 +158,10 @@ im Höhenprofil an.
 Wenn diese Option ausgewählt ist, bleibt das Flugzeug während des Fluges
 auf der linken Seite des Höhenprofils zentriert.
 
-Das Flugzeug wird im oberen Teil des Fensters gehalten, wenn das
-Flugzeug sinkt, und im unteren Teil beim Steigen.
+Das Flugzeug wird im Sinkflug im oberen Teil des Fensters angezeigt und im unteren Teil beim Steigen.
 
-Für weitere Informationen zum Rücksprung siehe auch im Einstellungsdialog auf
-dem :ref:`simulator-aircraft`.
+Für weitere Informationen siehe auch im Einstellungsdialog auf der Seite
+:ref:`simulator-aircraft`.
 
 .. _delete-aircraft-trail-profile:
 
@@ -174,7 +173,7 @@ Der Flugzeugpfad wird gespeichert und beim Programmstart neu geladen.
 Dieser Menüpunkt entfernt nur den Benutzerflugzeugpfad aus dem
 Höhenprofil. Der Pfad wird nicht von der Karte entfernt. Verwenden
 Sie dies, wenn der Pfad nach dem Erstellen oder dem Ändern eines
-Flugplans an der falschen Stelle oder mit der falschen Form erscheint.
+Flugplans falsch angezeigt wird.
 
 Der Pfad im Höhenprofil ist für den Export von ``GPX`` Dateien nicht
 relevant.
@@ -188,7 +187,7 @@ Zeigt den VASI Gleitpfad an, wenn im Flugplan eine Anflugprozedur mit
 einer Start- und Landebahn (nicht Kreisen um zu Landen) ausgewählt ist und wenn
 die Start- und Landebahn ein VASI hat.
 
-Die Neigung wird im richtigen Winkel gezeichnet, und kann daher zur vertikalen Führung benutzt werden.
+Die Neigung wird im richtigen Winkel gezeichnet und kann daher zur vertikalen Führung benutzt werden.
 Der vertikale Öffnungswinkel ist nur zur Darstellung gedacht und hat keinen Bezug zur tatsächlichen
 VASI-Genauigkeit.
 
@@ -207,7 +206,7 @@ Zeigt ein ILS-glideslope an, wenn im Flugplan ein Anflug mit einer
 Landebahn ausgewählt ist und die Landebahn eine ILS hat.
 
 Die Neigung wird mit dem richtigen Winkel gezeichnet, um als
-Anflugrhilfe nutzbar zu sein. Der vertikale Öffnungswinkel ist nur zur
+Anflughilfe nutzbar zu sein. Der vertikale Öffnungswinkel ist nur zur
 Darstellung gedacht und hat keinen Bezug zur tatsächlichen
 ILS-Genauigkeit.
 
@@ -246,7 +245,7 @@ Blendet den Mauszeiger-Tooltip :ref:`tooltip-label` aus, wenn er nicht markiert 
 Schieberegler für Bildvergrößerung und -verkleinerung anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Zeigt oder verbirgt die Zoom-Schieberegler und Schaltflächen auf
+Zeigt oder verbirgt den Zoomregler und Schaltflächen auf
 der rechten Seite des Höhenprofils. Sie können weiterhin mit der Maus
 oder der Tastatur zoomen.
 
@@ -276,7 +275,7 @@ Hauptkarte, wie er im Dialog ``Einstellungen`` vom Nutzer festgelegt ist.
 Farben, Formen und Symbole für
 Flugplätze, Navigationshilfen, Prozeduren, aktive und vergangene
 Flugplanabschnitte sind identisch. Die Profilanzeige folgt auch anderen
-Karteneinstellungen wie der Sichtbarkeit von Flugplanlinie, Flugzeug und
+Karteneinstellungen, wie der Sichtbarkeit von Flugplanlinie, Flugzeug und
 Flugzeugpfad.
 
 Der Kurs des Flugzeugs dreht sich, wenn eine Rückwärtsbewegung im
@@ -291,7 +290,7 @@ Das Flugzeugsymbol wird mit der angezeigten Höhe dargestellt, um eine Übereins
 in den höheren Flughöhen zu gewährleisten.
 
 Sie können vertikale Bewegungen des Flugzeugsymbols und Sprünge im Pfad sehen, wenn Sie den
-barometrischen Drucks im Höhenmesser des Simulators ändern.
+barometrischen Druck im Höhenmesser des Simulators ändern.
 
 .. note::
 
@@ -311,7 +310,7 @@ barometrischen Drucks im Höhenmesser des Simulators ändern.
 
 .. figure:: ../images/profile.jpg
 
-        Flugplan-Höhenprofil mit einer Linie, die die Position
+        Flugplanhöhenprofil mit einer Linie, die die Position
         der Maus anzeigt. Orangefarbene Linien zeigen die minimale sichere Höhe
         für Flugplansegmente an. Die rote Linie zeigt die gesamte minimale
         sichere Höhe an. Steigflugende und Sinkflugbeginn inklusive Steig- und Sinkpfade
@@ -335,7 +334,7 @@ Steig- oder Abstiegspfad, der immer unter Einhaltung der Einschränkungen
 verläuft. Der resultierende Weg kann eine höhere oder niedrigere Steig-
 oder Sinkgeschwindigkeit als erwartet aufweisen.
 
-Der Weg wird beim Endanflug und beim Finalen Anflugpunkt auf die
+Der Weg wird beim Endanflug und beim finalen Anflugpunkt auf die
 niedrigste zulässige Höhe gesetzt, um zu vermeiden, dass der Pfad über den
 ILS-Gleitpfad oder zu hoch auf dem Ziel-Runway ankommt.
 
@@ -354,7 +353,7 @@ klettern.
 
 Siehe Kapitel :ref:`wind` für weitere Informationen.
 
-Der Plan wechselt auf ein flache Anzeige, das nur eine Flugplanlinie in
+Der Plan wechselt auf ein flache Anzeige, die nur eine Flugplanlinie in
 Reiseflughöhe anzeigt, wenn der TOC und/oder TOD nicht berechnet werden
 können oder wenn der Plan gegen Höhenbeschränkungen verstößt. In diesem
 Fall wird eine rote Warnmeldung angezeigt. Klicken Sie auf die Meldung, um weitere Informationen zu erhalten.

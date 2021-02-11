@@ -2,7 +2,7 @@ Anmerkungen
 -------------------------------------
 
 Die Eingabefelder ``Anmerkungen`` erlauben mehrzeiligen Text und Sonderzeichen für Flugpläne, Flugplanwegpunkte, Flugzeugleistungsdateien und Nutzerpunkte.
-Formatierter Text wie kursiv oder fett wird nicht unterstützt.
+Formatierter Text, wie kursiv oder fett, wird nicht unterstützt.
 
 Weblinks werden im Feld ``Anmerkungen`` erkannt und können im Andockfenster ``Information`` auf dem Reiter ``Navigationshilfen`` geöffnet werden.
 

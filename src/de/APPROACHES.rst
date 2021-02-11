@@ -380,7 +380,7 @@ Ungültige Daten
 ~~~~~~~~~~~~~~~
 
 Ein Abschnittseintrag wird rot gezeichnet, wenn eine Navigationshilfe während des
-Ladevorgangs der Szenerie-Datenbank nicht aufgelöst wurde. Dies
+Ladevorgangs der Szeneriedatenbank nicht aufgelöst wurde. Dies
 geschieht nur dann, wenn die Quelldaten nicht gültig oder unvollständig
 sind. In diesem Fall ist die resultierende Prozedur nicht anwendbar und
 es wird ein Warndialog angezeigt, wenn wesentliche Navigationshilfen fehlen.

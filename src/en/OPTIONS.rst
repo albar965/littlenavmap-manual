@@ -355,7 +355,7 @@ aircraft centering.
 
 The two points below explain the behavior of the program depending if this option is enabled or not.
 
-#. **Allow scrolling Active:**
+#. **Allow scrolling enabled:**
 
    The map will stop following the aircraft for the given time if the user
    does any interaction with the map like scrolling or zooming. You can
@@ -387,7 +387,7 @@ The two points below explain the behavior of the program depending if this optio
    Toggle |Center Aircraft| ``Center Aircraft`` on and off if you find that
    the map jumps back to the wrong position.
 
-#. **Allow scrolling not active:**
+#. **Allow scrolling disabled:**
 
    Map will constantly follow the aircraft and will not allow moving away from it.
 

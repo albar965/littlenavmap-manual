@@ -23,6 +23,8 @@ Für *Little Navmap* Versionen |version|. Zuletzt aktualisiert am |today|.
 
 Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler, `Anja Fahrner <https://www.anja-fahrner.de>`__ und `Alexander Barthel <https://www.littlenavmap.org>`__.
 
+Beachten Sie bitte, dass Bildschirmfotos von der Übersetzung ausgenommen wurden und nur in Englisch vorliegen.
+
 =========== ===========
 |Sunshadow| |Spherical|
 =========== ===========

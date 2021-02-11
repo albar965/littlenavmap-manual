@@ -3,7 +3,7 @@
 
 Dieser Dialog ermöglicht das Laden der Szeneriebibliothek von allen
 vier unterstützten Flugsimulatoren in die interne Datenbank *Little
-Navmap*. Die zu ladende Szenerienbibliothek kann in der Schaltfläche
+Navmap*. Die zu ladende Szeneriebibliothek kann in der Schaltfläche
 ``Simulator:`` ausgewählt werden.
 
 Der Dialog zeigt Informationen über die aktuell ausgewählte Datenbank
@@ -16,16 +16,16 @@ angezeigt. Diese Felder werden automatisch ausgefüllt, können aber an
 jedem anderen gültigen Ort geändert werden. Alle Werte werden für jeden
 Flugsimulatortyp einzeln gespeichert.
 
-**Microsoft Flight Simulator 2020:** Der Basispfad der MSFS Installation and die Verzeichnisse
+**Microsoft Flight Simulator 2020:** Der Basispfad der MSFS Installation und die Verzeichnisse
 ``Community`` und ``Official`` werden automatisch erkannt und können bei Bedarf geändert werden.
 
 **Nur X-Plane:** Der Basispfad der ersten X-Plane Installation wird
 hinzugefügt. Wählen Sie den Basispfad manuell aus, wenn Sie die
-Szenerie-Bibliothek einer anderen X-Plane-Installation lesen möchten.
+Szeneriebibliothek einer anderen X-Plane-Installation lesen möchten.
 Unter Windows kann das ein Pfad wie ``C:\Simulators\X-Plane 11`` sein,
 die ausführbare Datei ist ``C:\Simulators\X-Plane 11\X-Plane.exe``.
 
-Das Laden einer Szenerienbibliothek kann je nach Einrichtung und Anzahl
+Das Laden einer Szeneriebibliothek kann je nach Einrichtung und Anzahl
 der Szenerien-Add-ons zwischen 2 und 10 Minuten dauern. Sie können dies
 beschleunigen, indem Sie Verzeichnisse, die weder Flugplatz- noch
 Navigationsdaten enthalten, im Dialogfeld ``Einstellungen`` auf der
@@ -36,8 +36,6 @@ Standardverzeichnis ``Scenery`` des FSX/P3D befinden, als Add-on Flugplätze.
 
 Für **X-Plane** gelten alle Flugplätze, die sich im Verzeichnis
 ``Custom Scenery`` von X-Plane befinden, als Add-On-Flugplätze.
-Add-On Flugplätze werden auf der Karte durch hervorgehobenen Text
-hervorgehoben.
 
 **Microsoft Flight Simulator 2020**: Alle Flugplätze, die sich im ``Community``
 Verzeichnis und dem ``Official\OneStore`` oder ``Official\Steam`` befinden, werden als Add-On Flugplätze betrachtet.
@@ -45,7 +43,7 @@ Ausnahmen sind ``fs-base`` und ``fs-base-nav``.
 
 Add-on Flugplätze werden auf der Karte mit einem gelben Ring hervorgehoben, der in den Optionen auf der Seite :ref:`map-display` deaktiviert werden kann.
 
-Mit hervorgehobenem (fett und unterstrichen) Text werden Add-on Flugplätze in der Suchergebnistabelle hervorgehoben,
+Mit fett und unterstrichenem Text werden Add-on Flugplätze in der Suchergebnistabelle,
 Flugplantabelle, den Informationsfenstern und den Karten-Tooltips hervorgehoben.
 
 
@@ -61,7 +59,7 @@ Weitere Informationen zum Ausschließen von Szenerie finden Sie unter
 :ref:`scenery-library-database`.
 
 Wenn Sie den Ladevorgang abbrechen oder wenn der Ladevorgang
-fehlschlägt, wird die Datenbank der vorherigen Szenerie-Bibliothek
+fehlschlägt, wird die Datenbank der vorherigen Szeneriebibliothek
 sofort wiederhergestellt.
 
 Das Menü ``Szeneriebibliothek`` -> ``Flugsimulator`` wird mit der
@@ -91,6 +89,8 @@ Speicherorte der ``Scenery.cfg`` für Windows 7/8/10 sind:
    ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
 -  **Prepar3D v4:**
    ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
+-  **Prepar3D v5:**
+   ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
 
 Nach dem Laden wird ein Fehlerdialog angezeigt, wenn Dateien nicht
 gelesen werden konnten oder Verzeichnisse nicht gefunden wurden. In
@@ -104,7 +104,7 @@ Ladezeitpunkt (``Letzte Aktualisierung:``), das Programm und die
 Datenbankversion. Größere Unterschiede in der Datenbankversion deuten
 auf inkompatible Datenbanken hin. Das Programm fragt, ob die
 inkompatiblen Datenbanken beim Start gelöscht werden können, bevor die
-Szenerie-Datenbank neu geladen werden kann. Geringfügige
+Szeneriedatenbank neu geladen werden kann. Geringfügige
 Datenbankunterschiede deuten auf kompatible Änderungen hin, bei denen
 ein Neuladen empfohlen, aber nicht erforderlich ist.
 
@@ -116,26 +116,17 @@ ein Neuladen empfohlen, aber nicht erforderlich ist.
 
 .. _load-scenery-library-dialog-msfs-apt-navdata:
 
-Microsoft Flight Simulator 2020 Flughäfen und Navdata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Microsoft Flight Simulator 2020 Flugplätze und Navigationsdaten
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* hat die folgenden Einschränkungen aufgrund von MSFS BGL-Beschränkungen:
+-  **Wenn Sie das Navigraph-Update für MSFS verwenden:** Aktualisieren Sie auch die *Little Navmap*-Datenbank mit dem FMS Data Manager, um das Programm mit der Szeneriebibliothek von MSFS synchron zu halten. Verwenden Sie den Szeneriemodus ``Nutze Navigraph für Navigationshilfen und Prozeduren`` im Menü ``Szeneriebibliothek``, um Zugriff auf alle Prozeduren in *Little Navmap* zu erhalten.
+-  **Wenn Sie das Navigraph-Update für MSFS nicht verwenden:** Benutzen Sie den Szeneriemodus ``Die Navigraph-Datenbank nicht verwenden`` im Menü ``Szeneriebibliothek``, um Probleme mit fehlenden oder veränderten Navigationshilfen zu vermeiden. Beachten Sie, dass SID und STAR in *Little Navmap* noch nicht verfügbar sind.
 
-- *Little Navmap* kann keine SID und STAR aus MSFS lesen. Dies ist für zukünftige Versionen geplant.
-- MSFS scheint kein klares Konzept für die Reihenfolge der Szenerien zu haben (``Content.xml`` ist unzuverlässig).
-  Add-ons werden von *Little Navmap* in alphabetischer Reihenfolge geladen.
-  Um ein Add-on an das Ende der Ladeliste zu setzen, stellen Sie dem Ordnernamen ein ``z_`` voran,
-  zum Beispiel.
-- Ländernamen fehlen in den MSFS-Übersetzungstabellen und sind in *Little Navmap* nicht verfügbar.
-- Add-ons, die das verschlüsselte Format `.fsarchive` verwenden, werden nicht unterstützt. *Little Navmap* zeigt nur den Standardflugplatz anstelle des Add-ons.
-- Einige Flugplatzdateien wie ``LEMG.bgl`` können wegen des unbekannten Formats nicht gelesen werden. *Little Navmap* meldet
-  ``Fehler: readInt für Datei "...OMITTED.../LEMG.bgl" ist fehlgeschlagen. Grund 1``.
-  Schließen Sie die Flugplatzdatei in den Einstellungen auf der Seite :ref:`scenery-library-database` vom Lesen aus oder ignorieren Sie einfach
-  ignorieren Sie die Meldung. Der Standard LEMG und alle anderen Flughäfen sind hiervon nicht betroffen.
+Siehe :ref:`problems-msfs` für Informationen über MSFS Einschränkungen und Probleme.
 
 .. _load-scenery-library-dialog-xp-apt-navdata:
 
-X-Plane Flugplätze und NavdataNavigationsdaten
+X-Plane Flugplätze und Navigationsdaten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* liest Flugplatz- und Navigationsdaten aus den
@@ -152,18 +143,16 @@ großen Dateien umzugehen. Die ersten Zeilen der Datei sehen wie folgt aus:
     ...
 
 
-*Little Navmap* kann die folgenden X-Plane Szenerie-Dateien lesen:
+*Little Navmap* kann die folgenden X-Plane Szeneriedateien lesen:
 
--  **Airports (** ``apt.dat`` **):** Version 850 up to 1100. This
-   covers X-Plane 10 airports and older add-on scenery. Newer files than
-   1100 might work but are not tested.
--  **Navdata (** ``earth_awy.dat`` **,** ``earth_fix.dat``  **und**
-   ``earth_nav.dat``): Version 850 up to 1100. Dies schließt
-   X-Plane 10 Navigationsdaten aus. Neuere Dateien als 1100 können funktionieren, sind aber ungetestet.
+-  **Flugplätze (** ``apt.dat`` **):** Ab Version 850. Dies beinhaltet
+   X-Plane 10 Flugplätze und ältere Add-on-Szenerie.
+-  **Navigationsdaten (** ``earth_awy.dat`` **,** ``earth_fix.dat``  **und**
+   ``earth_nav.dat``): Ab Version 1100. Dies schließt
+   X-Plane 10 Navigationsdaten aus.
 -  **Procedures (** ``ICAO.dat``  in the
-   ``CIFP`` directory): All procedures from X-Plane 11.
--  **Airspaces (** ``*.txt`` **):** The included ``usa.txt`` and all
-   files in OpenAir format. See next chapter for more information.
+   ``CIFP`` directory): Alle Prozeduren von X-Plane 11.
+-  **Airspaces (** ``*.txt`` **):** Die Datei ``usa.txt`` und alle Dateien im OpenAir format.
 
 Zusätzlich werden die Dateien ``user_fix.dat`` und ``user_nav.dat`` im
 X-Plane Verzeichnis ``Custom Data`` gelesen.
@@ -206,12 +195,12 @@ Die Dateien können in jedem beliebigen
 werden, müssen aber eine
 `BOM <https://en.wikipedia.org/wiki/Byte_order_mark>`__ aufweisen, um
 richtig erkannt zu werden. Andernfalls wird Windows ANSI-Codierung
-(``Windows-1252``) verwendet. Sonderzeichen wie Umlaute oder Akzente
+(``Windows-1252``) verwendet. Sonderzeichen, wie Umlaute oder Akzente,
 werden in Namen nicht korrekt dargestellt, wenn die Kodierung nicht
 korrekt ist. Alle anderen Funktionen bleiben davon unberührt.
 
-Sie können die Dateien mit jedem erweiterten Editor wie z.B.
-`Notepad++ <https://notepad-plus-plus.org/>`__ konvertieren.
+Sie können die Dateien mit jedem erweiterten Editor, wie z.B.
+`Notepad++ <https://notepad-plus-plus.org/>`__ , konvertieren.
 
 Lufträume werden als Duplikate in der Karte angezeigt, wenn sich eine
 Luftraumdatei in mehr als einem dieser Verzeichnisse oder Quellen
@@ -255,7 +244,7 @@ Luftraumquelle ``Benutzer`` hinzugefügt und in einer von den Datenbanken
 des Flugsimulators unabhängigen Datenbank gespeichert.
 
 Sie können das zu lesende Verzeichnis und die Dateierweiterungen im
-Optionendialog ändern:
+Einstellungsdialog ändern:
 `Nutzerlufträume <OPTIONS.html#cache-Nutzerlufträume>`__.
 
 .. _load-scenery-library-online-airspaces:
@@ -279,26 +268,25 @@ Es gibt zwei Möglichkeiten:
 
 #. Erstellen Sie eine OpenAir-Luftraumdatei, die eine einzelne Grenze
    für ein Center enthält. Geben Sie der Datei den gleichen Namen wie
-   dem callsign für Center, d.h. benennen Sie die Datei ``EDDB_TWR.txt``
-   für Center mit dem callsign ``EDDB_TWR``.
+   dem Rufzeichen für Center, d.h. benennen Sie die Datei ``EDDB_TWR.txt``
+   für Center mit dem Rufzeichen ``EDDB_TWR``.
 #. Erstellen Sie einen OpenAir-Luftraum, der die Grenzen für alle Center
    enthält, die Sie benötigen. Geben Sie der Datei einen beliebigen
-   Namen, benennen Sie aber die Grenzen entsprechend dem Rufzeichen
-   derCenter enthält. Sie benötigen eine Zeile in der Datei mit
+   Namen, benennen Sie aber die Grenzen entsprechend dem Rufzeichen,
+   der Center enthält. Sie benötigen eine Zeile in der Datei mit
    ``AN EDDF_TWR`` (``AN`` = Luftraumname), um die Grenze für ein
    Zentrum mit dem Rufzeichen ``EDDB_TWR`` zu nutzen.
 
-Speichern Sie nun die Datei(en) in Ihr Nutzerluftraumverzeichnis und
-laden Sie anschließend die Benutzerlufträume neu. Siehe oben
-:ref:`load-scenery-library-user-airspaces`,
-wie man das macht.
+Speichern Sie nun die Datei oder Dateien in Ihr Nutzerluftraumverzeichnis und
+laden Sie anschließend die Benutzerlufträume neu. Siehe hier
+:ref:`load-scenery-library-user-airspaces`
 
 Danach sollte Center die richtige Grenze anzeigen.
 
 .. _load-scenery-library-dialog-options:
 
-Dialog Einstellungen Szeneriebibliothek laden
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dialogeinstellungen zum Laden der Szeneriebibliothek
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  ``Simulator``: Wählt den zu ladenden Simulator aus, zeigt die
    Datenbankstatistiken im oberen Textfeld an.
@@ -315,14 +303,14 @@ Dialog Einstellungen Szeneriebibliothek laden
    Szenerien entfernen oder hinzufügen und sie hier zum Laden
    auswählen..
 -  ``Inaktive Szenerieeinträge einlesen``: Dabei werden alle
-   Szenerie-Einträge gelesen, auch die inaktiven/deaktivierten. Dies ist
+   Szenerieeinträge gelesen, auch die inaktiven/deaktivierten. Dies ist
    hilfreich, wenn Sie ein Tool verwenden, um die Szenerie vor dem
    Fliegen zu deaktivieren, aber trotzdem alle Add-On-Szenarien in
    *Little Navmap* ohne Neuladen sehen möchten. Dies gilt sowohl für den
    FSX/P3D ``scenery.cfg`` als auch für die ``scenery_packs.ini`` von
    X-Plane, die es ermöglichen, Szenerieeinträge zu deaktivieren.
--  ``Add-on.sml Pakete für Prepar3D lesen`` (nur P3D v3 und v4): Wenn
-   aktiviert, werden P3D v4 oder v3 ``add-on.xml`` Pakete gelesen. Diese
+-  ``Add-on.sml Pakete für Prepar3D lesen`` (nur P3D v3, v4 und v5): Wenn
+   aktiviert, werden P3D ``add-on.xml`` Pakete gelesen. Diese
    werden aus Unterverzeichnissen von
    ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons`` und
    ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons`` gelesen.
@@ -363,8 +351,8 @@ verschiedenen Quellen oder berechnet sie mit dem Weltmagnetmodell
 (`WMM <https://en.wikipedia.org/wiki/World_Magnetic_Model>`__) je nach
 Simulator und Navigationshilfe.
 
-Die Daten werden beim Laden der Szenerie-Bibliothek aktualisiert und
-auch in der Szenerie-Bibliothek-Datenbank für jeden Simulator
+Die Daten werden beim Laden der Szeneriebibliothek aktualisiert und
+auch in der Szeneriebibliothekdatenbank für jeden Simulator
 gespeichert.
 
 Siehe Kapitel `Flugplan - Magnetische Missweisung <FLIGHTPLAN.html#magnetische%20Deklination>`__ für
@@ -375,7 +363,7 @@ FSX, Prepar3D und Microsoft Flight Simulator 2020
 
 Die magnetische Missweisung (oder Variation), die zur Berechnung des
 magnetischen Kurses verwendet wird, wird aus der Datei ``magdec.bgl`` in
-der Szenerie-Datenbank des FSX oder Prepar3D übernommen.
+der Szeneriedatenbank des FSX oder Prepar3D übernommen.
 
 Aktualisierungen für diese Datei finden Sie hier: `FSX/P3D Navaids Update <http://www.aero.sors.fr/navaids3.html>`__.
 

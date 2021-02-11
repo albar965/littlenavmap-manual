@@ -8,7 +8,7 @@ Oberer Teil
 ~~~~~~~~~~~
 
 Der obere Teil enthält ein Textfeld, das Abflug, Abflugposition (Parken,
-Start- und Landebahn oder Hubschrauberlandeplatz), Ziel,
+Start- und Landebahn oder Helikopterlandeplatz), Ziel,
 Flugplandistanz, Reisezeit, verwendete Prozeduren (SID, STAR, Anflug und
 Übergänge) sowie den Flugplantyp enthält.
 

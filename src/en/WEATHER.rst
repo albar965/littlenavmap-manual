@@ -4,7 +4,7 @@ Weather
 *Little Navmap* can display weather as METARs and decoded weather in the
 information window and tooltips as well as weather symbols on the map.
 
-Weather can be taken from the following sources:
+**Weather can be taken from the following sources:**
 
 -  FSX or P3D if connected. This also applies to network setups.
 -  X-Plane real time weather from the ``METAR.rwx`` file. Not available
@@ -20,9 +20,11 @@ Weather can be taken from the following sources:
    -  *Active Sky for Prepar3D v4* (ASP4)
    -  *ASX* for X-Plane
 
-You can define in the ``Options`` dialog on the page ``Weather`` which
-sources are used to display the METAR information in tooltips or the tab
-``Weather`` in the ``Information`` dock window.
+**Weather display and information can be selected in the following locations:**
+
+-  Options dialog on page :ref:`weather`: There you define what source is shown in the information window and in the map tooltip. This is based on the airport METAR reports and does not affect anything else besides information and tooltip.
+-  Main menu ``Weather`` -> :ref:`airport-weather-source`: This is for the airport weather icons on the map. Based on METAR of the airport and does not affect anything else except the weather symbols on the map.
+-  Main menu ``Weather`` -> :ref:`wind-source`: This source is used for all winds aloft functions: Map display wind grid symbols, map tooltip, flight plan table, elevation profile (hover tooltip), TOD and TOC calculation, fuel planning, ETA calculation and trip time calculation. Not that this download has nothing to do with the METAR functions above and is fetched from another source (NOAA/NOMAD).
 
 You have to set the base path for X-Plane in the
 ``Load Scenery Library`` dialog to enable reading of the weather file.

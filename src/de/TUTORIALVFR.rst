@@ -13,10 +13,10 @@ Der Flugplan ist im Installationsverzeichnis *Little Navmap* enhalten:
 Die Flugplatznamen können je nach Simulator unterschiedlich sein.
 
 Der Flug führt uns durch die Täler der französischen Alpen. Sie können
-diesen Flugplan für alle Kleinflugzeuge wie die kostenlose `Flight1
+diesen Flugplan für alle Kleinflugzeuge, wie die kostenlose `Flight1
 Cessna 162
 SkyCatcher <http://www.flight1.com/view.asp?page=skycatcher>`__ oder die
-Standard-Cessna 172 von X-Plane oder Prepar3D verwenden.
+Standard-Cessna 172 von X-Plane oder Prepar3D, verwenden.
 
 Der Flug wird nur in dem Luftraum der Klasse E durchgeführt. Es besteht
 keine Notwendigkeit, ATC zu kontaktieren.
@@ -29,7 +29,7 @@ Flug vorbereiten
 
 Ich würde empfehlen, vor jedem Flug ``Flug`` ->
 :ref:`reset-for-new-flight` |Reset all for a new
-Flight| zu verwenden, um eine saubere Basis für Treibstoffberechnung und
+Flight| zu verwenden, um eine bereinigte Basis für Treibstoffberechnung und
 andere Funktionen zu erhalten. Deaktivieren Sie im Dialog die Option
 ``Neuen leeren Flugplan erstellen``, wenn der Plan bereits geladen
 ist.
@@ -74,12 +74,12 @@ Tooltip: |Meythet (LFLP) Tooltip|
 
 Dann:
 
--  Vergrößern Sie das Flugplatz-Diagramm, bis Rollbahnen, Runwaydetails,
+-  Vergrößern Sie das Flugplatzdiagramm, bis Rollbahnen, Runwaydetails,
    Parkpositionen und vieles mehr angezeigt werden.
 -  Zoomen Sie weiter, bis Sie die weißen Parkplatznummern sehen.
 -  Klicken Sie mit der rechten Maustaste auf die Mitte eines der grünen
    Parkplätze (in diesem Fall 11).
--  Wählen Sie im KontextMenü
+-  Wählen Sie im Kontextmenü
    ``Setze Parkposition Parking 11 auf Flugplatz Meythet (LFLP) als Start``
    |Select Airport / Parking as Flight Plan Departure| (:ref:`set-as-flight-plan-departure`) aus.
 
@@ -87,7 +87,7 @@ Das Layout des Flugplatzes und des Parkplatzes wird je nach verwendetem Simulato
 
 |Meythet (LFLP) Parking|
 
-Damit wird ihre Ablugparkposition ausgewählt, die durch einen
+Damit wird ihre Abflugparkposition ausgewählt, die durch einen
 schwarz/gelben Kreis hervorgehoben wird. Der Flugplatz wird dem Flugplan
 ebenfalls als Startflugplatz hinzugefügt.
 
@@ -104,7 +104,7 @@ Fügen Sie jetzt die Wegpunkte hinzu:
    Flight Plan|. Die angeklickte Position wird am Ende Ihres Plans als
    benutzerdefinierter Wegpunkt hinzugefügt
 
-Klicken Sie auf Rückgängig |Undo| oder Wiederholen |Redo| in der Werkzeugleiste, wenn Sie mit dem gerade
+Klicken Sie auf ``Rückgängig`` |Undo| oder ``Wiederholen`` |Redo| in der Werkzeugleiste, wenn Sie mit dem gerade
 Hinzugefügten nicht einverstanden sind.
 
 |Append Waypoint|
@@ -120,7 +120,7 @@ zum Einfügen ausgewählt.
 Namen zu. Sie können diese belassen oder mit einem aussagekräftigeren
 Namen ersetzen.
 
-Wegpunkte mit dem Standardformat ``WP`` plus Nummer (z.B. ``WP1`` oder ``WP99``) werden automatisch neu numeriert, um die Flugreihenfolge im Flugplan wiederzugeben.
+Wegpunkte mit dem Standardformat ``WP`` plus Nummer (z.B. ``WP1`` oder ``WP99``) werden automatisch neu nummeriert, um die Flugreihenfolge im Flugplan wiederzugeben.
 
 
 Klicken Sie mit der rechten Maustaste auf den Benutzerwegpunkt und wählen Sie ``Flugplanposition bearbeiten WP1`` |Edit Flight Plan Position| (:ref:`edit-name-of-user-waypoint`), um eine Wegpunktkennung, einen Namen, Bemerkungen oder seine Koordinaten zu ändern. Verwenden Sie Namen nahegelegener Orte, Berge, Seen oder anderer interessanter Orte. Ändern Sie jetzt nicht die Koordinaten.
@@ -148,7 +148,7 @@ anders aussehen
 Sie können mit der Drag und Drop-Funktion auch Punkte verschieben oder
 neue hinzufügen. Aktivieren Sie es, indem Sie ``Flugplan`` ->
 ``Flugplan auf der Karte bearbeiten`` |Edit Flight Plan on Map|  (see :doc:`MAPFPEDIT`)  wählen
-und klicken Sie auf einen Flugplan-Wegpunkt, um ihn zu verschieben.
+und klicken Sie auf einen Flugplanwegpunkt, um ihn zu verschieben.
 Klicken Sie auf einen Flugplanabschnitt, um diesem Zweig einen neuen
 Wegpunkt hinzuzufügen
 
@@ -157,7 +157,7 @@ Siehe :doc:`MAPFPEDIT` für weitere Informationen.
 Reiseflughöhe
 ~~~~~~~~~~~~~
 
-Ändern Sie den Flugplan Typ auf ``VFR`` falls noch nicht geschehen.
+Ändern Sie den Flugplan Typ auf ``VFR``, falls noch nicht geschehen.
 
 |Flight Plan Type|
 
@@ -168,17 +168,16 @@ Reiseflughöhe
 -  Passen Sie die Flugreiseflughöhe an, bis Sie über der roten Linie
    sind.
 -  Wählen Sie ``Flugplan`` -> ``Reiseflughöhe anpassen`` |Adjust Flight
-   Plan Altitude| um die richtige Höhe nach der hemisphärischen Regel
+   Plan Altitude|, um die richtige Höhe nach der hemisphärischen Regel
    einzustellen.
 
 Beachten Sie, dass die standardmäßige hemisphärische Regel für
-Frankreich nicht korrekt ist, ausser Sie ändern sie im Einstellungsdialog;
+Frankreich nicht korrekt ist, außer Sie ändern sie im Einstellungsdialog;
 aber ich werde dies aus Gründen der Einfachheit jetzt nicht machen.
 
 |Elevation Profile|
 
-Sie haben wahrscheinlich bemerkt, dass Sie nahe dem Ziel zu nahe am
-Boden sind. Bereiten Sie sich darauf vor, dort einige Berge zu
+Sie haben wahrscheinlich bemerkt, dass Sie sich in der Nähe des Ziels zu dicht über dem Boden befinden. Bereiten Sie sich darauf vor, dort einige Berge zu
 umfliegen.
 
 Lufträume
@@ -213,9 +212,9 @@ Das Programm findet normalerweise das richtige Verzeichnis für die Flugpläne u
 
 Das Format LNMPLN wird nur von *Little Navmap* verstanden. Sie können diese Dateien nicht in ein anderes Programm laden. Daher müssen wir den Flugplan exportieren.
 
-Öffnen Sie nun den Multiexport-Optionen-Dialog, indem Sie ``Datei`` -> :ref:`multiexport-flight-plan-options` wählen.
+Öffnen Sie nun den Einstellungsdialog für den Multiexport, indem Sie ``Datei`` -> :ref:`multiexport-flight-plan-options` wählen.
 
-Klicken Sie mit der rechten Maustaste auf das Simulatorformat, das Sie exportieren möchten und wählen Sie :ref:`multiexport-export-now` |Export Flight Plan now|.
+Klicken Sie mit der rechten Maustaste auf das Simulatorformat, das Sie exportieren möchten, und wählen Sie :ref:`multiexport-export-now` |Export Flight Plan now|.
 Speichern Sie die Datei an der richtigen Stelle. Der voreingestellte Pfad basiert auf der besten Schätzung.
 
 Siehe hier :ref:`multiexport-quick-setup` für Informationen, wie Sie den Multiexport schnell konfigurieren können.
@@ -243,7 +242,7 @@ Siehe auch :doc:`CONNECT`.
 Während des Fliegens umschauen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* hält Ihr Flugzeug und den nächsten Flugplan-Wegpunkt als
+*Little Navmap* hält Ihr Flugzeug und den nächsten Flugplanwegpunkt als
 Standardeinstellung auf dem Bildschirm zentriert. Sie können unter
 :ref:`simulator-aircraft`) zwischen
 drei Modi wählen, um das Flugzeug auf dem Bildschirm zu sehen.

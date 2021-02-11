@@ -11,7 +11,7 @@ Beachten Sie, dass alle hier eingegebenen Informationen verloren gehen, wenn die
 neuer Flugplan berechnet wird (:doc:`ROUTECALC`).
 
 Alle Felder werden nur im *Little Navmap* LNMPLN-Format (:ref:`flight-plan-formats-lnmpln`) ohne Einschränkung gespeichert.
-Andere Flugplan-Exportformate speichern nur die abgekürzte Kennung oder die Koordinate.
+Andere Flugplanexportformate speichern nur die abgekürzte Kennung oder die Koordinate.
 
 .. note::
 

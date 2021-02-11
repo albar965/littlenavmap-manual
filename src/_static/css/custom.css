@@ -63,6 +63,16 @@ p {
   margin-bottom: 0.7em;
 }
 
+p.caption {
+  background-color: #f4f4f4;
+  font-size: 0.90em;
+  margin-top: 0.2em;
+  margin-bottom: 0.7em;
+  padding: 0.2em;
+  color:#505050;
+}
+
+
 .wy-side-nav-search > div.version {
   color: white;
 }

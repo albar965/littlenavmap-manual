@@ -3,13 +3,13 @@ Karte
 
 *Little Navmap* verwendet zwei Ebenen zur Darstellung der Karte:
 
-#.  Der Hintergrund, der durch Offline- oder Online-Karten wie die `OpenStreetMap <https://www.openstreetmap.org>`__ definiert ist.
+#.  Den Hintergrund, der durch Offline- oder Online-Karten, wie die `OpenStreetMap <https://www.openstreetmap.org>`__ definiert ist.
     Sie können den Hintergrund ändern, indem Sie ein anderes :ref:`theme` auswählen.
     Die Hintergrundkarten können nicht geändert oder konfiguriert werden, da sie von Online-Diensten Dritter geholt werden.
     *Little Navmap* lädt vorberechnete Bildkacheln von diesen Diensten herunter, um die Hintergrundkarte zu zeichnen.
 #.  Die Vordergrundebene, die von *Little Navmap* gezeichnet wird und im Einstellungsdialog auf den Kartenseiten angepasst werden kann.
     Sie besteht aus Flugplätzen, Navigationshilfen, Luftstraßen, Lufträumen, Messlinien, Entfernungsringen, Warteschleifen, Platzrunden
-    und allen beweglichen Objekten wie KI- und dem Benutzerflugzeug.
+    und allen beweglichen Objekten, wie KI- und dem Benutzerflugzeug.
 
 Siehe :doc:`LEGEND` für Details über die verschiedenen Symbole, die von der Karte angezeigt werden.
 
@@ -48,21 +48,21 @@ Mausklicks
 
 Ein einziger Klick zeigt Details über alle Kartenobjekte in der Nähe der
 angeklickten Position im Dockfenster ``Informationen``. Fenster und
-Reiter werden je nach angeklickten Objekten geöffnet.
+Reiter werden, je nach angeklickten Objekten, geöffnet.
 
 Das Prozedurensuchfenster kann optional beim Anklicken eines Flugplatz angehoben werden.
 Dies kann im Einstellungsdialog auf der Seite :ref:`map` aktiviert werden. Aktivieren Sie ``Beim Klick auf Flugplätze Prozeduren anzeigen``, um diese Funktion zu aktivieren.
 
 Ein einfacher Klick auf ein Benutzerflugzeug, KI-Flugzeug oder
-Mehrspieler-Flugzeug zeigt Details im Dockfenster
+Mehrspielerflugzeug zeigt Details im Dockfenster
 ``Simulatorflugzeug`` an.
 
 Ein Doppelklick vergrößert bis zur Darstellung das Flugplatzdiagramm oder
 der Navigationshilfe und zeigt Details im Dockfenster ``Informationen`` an. Dasselbe
-gilt für alle KI- oder Mehrspieler-Flugzeuge oder -Schiffe.
+gilt für alle KI- oder Mehrspielerflugzeuge oder -Schiffe.
 
 Die Doppelklick- und Einfachklick-Funktionalität funktioniert nicht für
-Flugplan-Wegpunkte oder Flugplätze, wenn der Flugplanbearbeitungsmodus
+Flugplanwegpunkte oder Flugplätze, wenn der Flugplanbearbeitungsmodus
 aktiviert ist. Dieser kann über die Symbolleiste oder im Hauptmenü
 unter ``Flugplan`` -> :ref:`edit-flight-plan-on-map`
 deaktiviert werden.
@@ -83,7 +83,7 @@ auf der Seite :ref:`map-navigation` eingestellt werden.
 Mausklick - Aktive Punkte
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Kartenmarkierungen wie Distanzkreise oder Messlinien haben aktive Punkte,
+Kartenmarkierungen, wie Distanzkreise oder Messlinien, haben aktive Punkte,
 die anzeigen, dass ein Klick mit ``Umschalt``, ``Strg`` bzw. ``Alt`` sie entfernen kann oder eine
 Aktion im Kontextmenü verfügbar ist. Gleiches gilt für den
 Drag und Drop-Bearbeitungsmodus des Flugplans.
@@ -95,7 +95,7 @@ Klickpunkte sind:
 
 -  Mitte der Distanzkreise (kleiner Kreis).
 -  Ende einer Messlinie (Kreuz).
--  Start- und Landebahn-Schwellenpunkt (kleiner Kreis).
+-  Start- und Landebahnschwelle (kleiner Kreis).
 -  Ursprungspunkt (Fix) von Warteschleifen (kleines Dreieck).
 
 .. _mouse-clicks-modifiers:
@@ -127,10 +127,10 @@ dem Flugzeug um einen Kolbenflugzeug, Turboprop, Jet, Helikopter oder ein Schiff
 handelt. Die Symbolumrandung wird grau, wenn sich ein Flugzeug am Boden
 befindet.
 
-*Little Navmap* begrenzt die Anzeige von KI-Fahrzeugen je nach Größe.
+*Little Navmap* begrenzt die Anzeige von KI-Fahrzeugen nach Größe.
 Zoomen Sie nah heran, um kleine Flugzeuge oder Boote zu sehen.
 
-KI- und Mehrspieler-Flugzeuge werden am Boden nur in kleinen
+KI- und Mehrspielerflugzeuge werden am Boden nur in kleinen
 Zoomabständen angezeigt, um überfüllte Flugplätze zu vermeiden. Das
 bedeutet, dass ein KI-Flugzeug bei der Landung auf einem Flugplatz von
 der Karte verschwinden kann.
@@ -191,11 +191,11 @@ einem blau/schwarzen Ring markiert.
 Diese Markierungskreise bieten alle Funktionen der sichtbaren
 Kartenobjekte, auch wenn die Objekte bei der aktuellen Zoomdistanz nicht
 angezeigt werden (Ring ist leer). Dies ermöglicht einen Doppelklick zum
-Vergrößern, einen einfachen Klick für das Informations-Dockfenster und
+Vergrößern, einen einfachen Klick für das Informationsfenster und
 alle Einträge im Kontextmenü.
 
 Sie können im Hauptmenü mit ``Karte`` -> :ref:`remove-highlights`
-alle Hervorhebungen zu entfernen.
+alle Hervorhebungen entfernen.
 
 Flugplan
 ~~~~~~~~~~~~~~~
@@ -208,7 +208,7 @@ angezeigt werden, auch wenn die Flugplatzanzeige deaktiviert ist. Das gleiche gi
 
 .. tip::
 
-    Blenden Sie alle Kartenfunktionen aus, um eine saubere Sicht nur auf flugplanbezogene Flugplätze und Navigationshilfen zu erhalten.
+    Blenden Sie alle Kartenfunktionen aus, um eine aufgeräumte Ansicht nur auf flugplanbezogene Flugplätze und Navigationshilfen zu erhalten.
 
 Flugplatzdiagramm
 ~~~~~~~~~~~~~~~~~~~
@@ -220,7 +220,7 @@ Das Diagramm zeigt alle Rollwege, Parkpositionen, Gates, Runways und mehr.
 Das Flugplatzdiagramm bietet weitere Informationen durch Tooltips für
 Park- und Towerpositionen. Ein Rechtsklick auf eine Parkposition öffnet
 das Kontextmenü und ermöglicht die Auswahl der Startposition für den
-Flugplans.
+Flugplan.
 
 Siehe :ref:`airport-diagram` für mehr Details über das Flugplatzdiagramm.
 
@@ -230,7 +230,7 @@ Siehe :ref:`airport-diagram` für mehr Details über das Flugplatzdiagramm.
 
 .. tip::
 
-      Sie können die Sichtbarkeit von Flugplatzelementen wie Start- und Landebahnen oder Vorfeldern für Diagramme im
+      Sie können die Sichtbarkeit von Flugplatzelementen, wie Start- und Landebahnen oder Vorfeldern für Diagramme, im
       Einstellungsdialog auf der Seite :ref:`map-display-2` in der Baumansicht auf der rechten Seite einstellen.
 
       Nutzen Sie dies, wenn Sie sich z.B. auf die Flugplatzdiagramme der OpenStreetMap-Hintergrundkarte verlassen möchten.
@@ -244,8 +244,8 @@ Siehe :ref:`airport-diagram` für mehr Details über das Flugplatzdiagramm.
 .. figure:: ../images/airportdiagram2.jpg
 
         Detailansicht des Flugplatzdiagramms. Zeigt rechts
-        blaue Gate und links grüne Parkplätze für die allgemeine
-        Luftfahrt. Die langgestellte Schwelle des Runway 33 ist sichtbar.
+        blaue Gates und links grüne Parkplätze für die allgemeine
+        Luftfahrt. Die versetzte Landeschwelle des Runway 33 ist sichtbar.
         Gestrichelte gelbe Linien zeigen Rollbahnpfade an.
 
 .. _map-context-menu:
@@ -263,7 +263,7 @@ Kontextmenüs angezeigt.
 
 *Little Navmap* fügt automatisch ein Untermenü ein, das den Menüpunkt ersetzt,
 wenn mehr als ein passendes Kartenobjekt unterhalb des Mauszeigers gefunden wurde. Dies hilft bei der Auswahl
-des richtigen Flugplatzes aus einer dichten Karte auszuwählen, die z.B. viele Symbole auf einem Fleck anzeigt.
+des richtigen Flugplatzes aus einer Karte, die z.B. viele Symbole auf einem Fleck anzeigt.
 
 Einige Menüs fügen einen zusätzlichen Punkt ``Position`` in das Untermenü ein, der eine einfache Position
 anstelle einer Navigationshilfe oder eines Flugplatzes benutzt.
@@ -297,7 +297,7 @@ Siehe :doc:`INFO` für weitere Details.
 Öffnet den Reiter ``Prozeduren`` des Suchfensters und zeigt
 alle Prozeduren für den Flugplatz an.
 
-Der Name des Menüpunktes variiert, je nach dem
+Der Name des Menüpunktes variiert, je nachdem
 ob der Flugplatz Teil des Flugplanes ist.
 
 Siehe :doc:`SEARCHPROCS` für weitere Informationen.
@@ -342,8 +342,8 @@ Erde an, verwendet aber keinen konstanten Kurs. Aus diesem Grund zeigt
 die Messlinie zwei Kurswerte an. Eine für die Start- und eine für die
 Endposition.
 
-Der Kurs wird immer in wahren Grad angegeben, was durch das Suffix ``°T``
-angezeigt wird. Zusätzliche Informationen wie Kennung oder Frequenz
+Der wahre Kurs wird immer in Grad angegeben, was durch das Suffix ``°T``
+angezeigt wird. Zusätzliche Informationen, wie Kennung oder Frequenz,
 werden der Zeile hinzugefügt, wenn die Messung an einer Navigationshilfen oder
 einem Flugplatz beginnt.
 
@@ -368,7 +368,7 @@ Kreuz) klicken.
 
 .. _show-range-rings:
 
-|Add Range Rings| Distanzkreise hinzfügen
+|Add Range Rings| Distanzkreise hinzufügen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zeigt mehrere rote Distanzkreise um die angeklickte Position herum an.
@@ -412,7 +412,7 @@ Entfernungsrings (kleiner Kreis) klicken.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dieser Menüpunkt ist aktiviert, wenn Sie auf einen Flugplatz klicken und
-zeigt einen Dialog an, der es ermöglicht, ein Platzrundediagramm
+zeigt einen Dialog an, der es ermöglicht, ein Platzrundendiagramm
 auf der Karte anzupassen und anzuzeigen.
 
 Siehe :doc:`TRAFFICPATTERN`.
@@ -497,7 +497,7 @@ aus.
 
 Deaktiviert, wenn der Flugplatz bereits Abflug-, Ziel- oder Ausweichflugplatz ist.
 
-Beachten Sie, dass Sie eine Ausweichstrecke manuell aktivieren müssen, wenn Sie sie fliegen möchten
+Beachten Sie, dass Sie eine Ausweichstrecke manuell aktivieren müssen, wenn Sie diese fliegen möchten
 (siehe :ref:`activate`).
 
 .. _add-position-to-flight-plan:
@@ -524,7 +524,7 @@ Sie können keine Flugplanabschnitte bearbeiten, die Teil einer Prozedur sind od
 
 .. tip::
 
-      Alle Informationen eines Nutzerpunkts wie Anmerkungen, Kennung, Region und Name werden in die
+      Alle Informationen eines Nutzerpunkts, wie Anmerkungen, Kennung, Region und Name, werden in die
       Flugplanposition kopiert, wenn Sie mit der rechten Maustaste auf einen Userpoint klicken und ``Position zum Flugplan hinzufügen``
       oder ``Position an Flugplan anhängen`` wählen.
 
@@ -557,7 +557,7 @@ Wenn Sie einen Wegpunkt einer Prozedur löschen, wird die gesamte Prozedur entfe
 
 Ändert die Kennung, den Namen, die Anmerkungen oder die Position eines benutzerdefinierten Flugplanwegpunktes. Siehe :doc:`EDITFPPOSITION`.
 
-Erlaubt auch das Hinzufügen einer Anmerkung zu einem beliebigen Flugplanwegpunkt, der kein Ausweichpunkt und nicht Teil einer
+Erlaubt auch das Hinzufügen einer Anmerkung zu einem beliebigen Flugplanwegpunkt, der kein Ausweichpunkt und nicht Teil 
 einer Prozedur ist. Siehe :doc:`EDITFPREMARKS`.
 
 Sie können die Koordinaten auch direkt bearbeiten, anstatt die Flugplanposition zu ziehen (:doc:`MAPFPEDIT`).
@@ -575,7 +575,7 @@ Siehe :doc:`COORDINATES` für eine Liste der Formate, die vom Bearbeitungsdialog
 ''''''''''''''''''''''''''''''''''''''''''''''
 
 Fügt einen benutzerdefinierten Wegpunkt zu den Nutzerdaten hinzu.
-Einige Felder des Benutzerpunkt-Dialogs werden abhängig vom ausgewählten
+Einige Felder des Dialogs werden abhängig vom ausgewählten
 Kartenobjekt automatisch ausgefüllt.
 
 Koordinaten werden immer ausgefüllt. Wenn es sich bei dem ausgewählten
@@ -667,7 +667,7 @@ Das Koordinatenformat hängt von der Auswahl in ``Einstellungen`` auf der Seite 
 
 Setzt das Zentrum der Distanzsuche für die Suchfunktion. Siehe
 :ref:`distance-search`. Das Zentrum der
-Distanzsuche ist hervorgehoben duch ein |Distance Search Symbol| Symbol.
+Distanzsuche ist hervorgehoben durch ein |Distance Search Symbol| Symbol.
 
 Das Symbol kann nicht ausgeblendet werden. Setzen Sie es an eine entfernte Position, um es aus dem Blickfeld zu bringen.
 

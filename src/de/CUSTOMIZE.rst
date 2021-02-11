@@ -180,7 +180,7 @@ Starten Sie *Little Navmap* neu, um die Änderungen zu sehen.
 Benutzer, KI Mehrspielerayer Flugzeugsymbole
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Alle Symbole für Benutzer, KI/Mehrspieler-Flugzeuge, Hubschrauber und
+Alle Symbole für Benutzer, KI- bzw. Mehrspielerflugzeuge, Helikopter und
 Schiffe sind im Programm gespeichert, können aber vom Benutzer
 überschrieben werden.
 
@@ -221,7 +221,7 @@ Nur für X-Plane:
 Die Suffixe werden nach Fahrzeugtyp, Status (Boden oder Luft) und
 Benutzer oder KI/Mehrspieler ausgewählt. Das Icon zeigt
 Flugzeuge in der Luft an, wenn ``ground`` fehlt und für
-KI/Mehrspieler-Fahrzeuge ``user`` fehlt. Aus historischen Gründen werden
+KI- bzw. Mehrspielerfahrzeuge ``user`` fehlt. Aus historischen Gründen werden
 alle Symbole mit einem Präfix ``aircraft`` versehen.
 
 .. _customize-userpoint-icons:

@@ -2,40 +2,38 @@
 --------------------------
 
 Das Dockfenster für die Suche enthält mehrere Reiter mit
-ähnlicher Funktionalität, mit denen Sie nach Objekten nach Namen,
+ähnlicher Funktionalität, mit denen Sie nach Objekten, nach Namen,
 Kennung oder anderen Kriterien suchen können.
 
-Die Reitet Flugplatz, Navigationshilfen, Nutzerpunkte und Online-Suche
+Die Reiter ``Flugplätze``, ``Navigationshilfen``, ``Nutzerpunkte``, ``Online Clients`` und ``Online Centers``
 enthalten mehrere Zeilen von Suchfiltern. Diese Zeilen können über die
-Menüschaltfläche |Menu Button| oben rechts in den
-Reitern Flugplatz, Navigationshilfe und Nutzerpunkt ein- und ausgeschaltet
+Menüschaltfläche |Menu Button| oben rechts ein- und ausgeschaltet
 werden.
 
-Die Menüschaltflächekennzeichnet Menüpunkte mit einer Änderungsanzeige
+Die Menüschaltfläche kennzeichnet Menüpunkte mit einer Änderungsanzeige
 ``*``, um anzuzeigen, dass die zugehörige Filterzeile Änderungen
 aufweist. Auf diese Weise können Sie herausfinden, warum eine Suche
 nicht die erwarteten Ergebnisse liefert.
 
 .. tip::
 
-           Wenn Sie nicht oder gar nicht die erwarteten Ergebnisse erhalten,
+           Wenn Sie die erwarteten Ergebnisse nicht erhalten,
            verwenden Sie den Menüpunkt ``Suche zurücksetzen``, Schaltfläche Reset
            Search oder drücken Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 
 Filter werden durch verschiedene Kontrollen definiert, die meist
 selbsterklärend sind. Nur Textfilter und die Ankreuzfelder mit drei
-Zuständen wie ``Beleuchtung``, ``Ansatz`` oder ``Geschlossen`` benötigen
+Zuständen wie, ``Beleuchtung``, ``Ansatz`` oder ``Geschlossen``, benötigen
 unten ein paar zusätzliche Bemerkungen.
 
-Alle Filter können zusammen verwendet werden, wenn alle Bedingungen
-erfüllt sein müssen (``und`` Operator). Alle Filter mit Ausnahme des
+Filter können kombiniert werden. Dabei müssen alle Bedingungen
+erfüllt sein (``und``-Verknüpfung). Alle Filter mit Ausnahme des
 Entfernungssuchfilters werden sofort angewendet. Die Entfernungssuche
 wird bei jeder Änderung mit einer kurzen Verzögerung durchgeführt.
 
-**Die Eingabe von drei oder vier Zeichen im Feld** ``ICAO Code`` **auf dem
-Reiter Flugplatzsuche löst eine Schnellsuche aus, die alle
-anderen Filter ignoriert und die Flugplätze anzeigt, die mit diesem
-teilweisen oder vollständigen ICAO-Code übereinstimmen.**
+**Die Eingabe von drei oder vier Zeichen im Feld** ``ICAO-Kennung`` **auf dem
+Reiter** ``Flugplatzsuche`` **löst eine Schnellsuche aus, die alle
+anderen Filter ignoriert.**
 
 Ein Tooltip auf der blauen Hilfetaste oben rechts zeigt Informationen
 zur Suche.
@@ -46,7 +44,7 @@ zur Suche.
 
      Tastaturkürzel wie ``Strg+I`` für ``Informationen anzeigen`` oder ``Strg+M`` für ``Auf der Karte anzeigen`` sind direkt aus den Eingabefeldern nutzbar und beziehen sich auf den obersten Flugplatz in der Ergebnistabelle.
 
-     Das gleiche gilt auch für die anderen Reiter wie Navigationshilfen- und Logbuchsuche.
+     Das gleiche gilt auch für die anderen Reiter, wie ``Navigationshilfen`` und ``Logbuch``.
 
 
 .. _text-filters:
@@ -66,8 +64,8 @@ zu erhalten.
 Die Suche wird negiert (findet alle Einträge, die nicht übereinstimmen),
 wenn das erste Zeichen in einem Suchfeld ein ``-`` ist.
 
-Beachten Sie, dass all dies nicht für numerische Felder wie
-``Runways: Min`` oder ``Altitude: Max`` gilt.
+Beachten Sie, dass all dies nicht für numerische Felder, wie
+``Runways: Min`` oder ``Altitude: Max``, gilt.
 
 Dreistufige Ankreuzfelder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,8 +99,8 @@ aktiviert sein. Das Ergebnis wird nur Flugplätze oder Navigationshilfen beinhal
 die innerhalb der angegebenen minimalen und maximalen Reichweite an
 NM vom Suchzentrum aus liegen. Auf diese Weise können Sie schnell
 nach einem Ziel suchen, das sich in der Reichweite Ihres Flugzeugs
-befindet und andere Kriterien wie beleuchtete Start- und Landebahnen und
-Kraftstoff erfüllt.
+befindet und andere Kriterien, wie beleuchtete Start- und Landebahnen und
+Kraftstoff, erfüllt.
 
 Die Mitte für die Entfernungssuche wird durch ein Symbol |Distance
 Search Symbol| hervorgehoben.
@@ -120,7 +118,7 @@ Sie ``Strg+R``, um alle Suchkriterien zu löschen.
 
         Eine komplexe Distanzsuche: Findet alle Flugplätze in
         einer Entfernung zwischen 200 und 400 NM von Frankfurt (EDDF).
-        Flugplätze sollten eine Bewertung von mehr als 0 haben und mindestens
+        Flugplätze sollen eine Bewertung von mehr als Null und mindestens
         eine beleuchtete Start- und Landebahn haben. Militärische und
         geschlossene Flugplätze sind ausgeschlossen. Die resultierenden Flugplätze
         werden auf der Karte durch Auswahl in der Suchergebnistabelle
@@ -202,7 +200,7 @@ der Karte mit einem schwarz/gelben Kreis.
 Obere Schaltflächen
 ~~~~~~~~~~~~~~~~~~~
 
-Die verfügbaren Schaltflächen und Menüpunkte hängen vom Reiter Suche ab.
+Die verfügbaren Schaltflächen und Menüpunkte hängen vom Reiter ``Suche`` ab.
 
 In diesem Kapitel werden für alle Suchreiter gemeinsame Schaltflächen und Menüpunkte erklärt.
 
@@ -211,7 +209,7 @@ In diesem Kapitel werden für alle Suchreiter gemeinsame Schaltflächen und Men�
 |Reset Search| Suche zurücksetzen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Löschen Sie die Suchfilter und zeigen Sie alle Einträge wieder in der
+Löscht die Suchfilter und zeigt alle Einträge wieder in der
 Ansicht der Suchergebnistabelle an.
 
 .. _clear-selection-button:
@@ -219,7 +217,7 @@ Ansicht der Suchergebnistabelle an.
 |Clear Selection| Auswahl löschen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entfernt alle Einträge in der Tabelle und entfernt alle hervorgehobenen
+Entfernt alle Einträge in der Tabelle und alle hervorgehobenen
 Kreise aus der Karte.
 
 .. _search-help:
@@ -248,7 +246,7 @@ nicht die erwarteten Ergebnisse liefert.
 Kontextmenü Suche
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Die verfügbaren Menüpunkte hängen von dem Reiter Suche ab.
+Die verfügbaren Menüpunkte hängen von dem ausgewählten Reiter ab.
 
 .. _show-information-search:
 
@@ -277,7 +275,7 @@ Der genaue Text des Menüpunkts hängt davon ab, ob der Flugplatz bereits als Zi
 
 Öffnet einen Dialog, der es ermöglicht, einen einfachen,
 benutzerdefinierten Endanflug zu erstellen. Nur in dem Reiter
-Flugplatzsuche verfügbar.
+``Flugplätze`` verfügbar.
 
 Weitere Informationen finden Sie unter :doc:`CUSTOMPROCEDURE`.
 
@@ -296,7 +294,7 @@ Benutzerpunkt oder andere Funktionen auf der Karte.
 Auswahl folgen
 ^^^^^^^^^^^^^^
 
-Die Kartenansicht wird - nicht vergrößert - auf die ausgewählte Funktion
+Die Kartenansicht wird nicht vergrößert, sondern auf das ausgewählte Element
 zentriert, wenn diese Funktion aktiviert ist.
 
 .. _filter-by-entries-including-excluding:
@@ -321,10 +319,10 @@ Tabellenansicht der Suchergebnisse zurück.
 |Show All| Alle anzeigen
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Die Tabellenansicht zeigt aus Performancegründen zunächst nicht alle
+Die Tabellenansicht zeigt zunächst nicht alle
 Einträge an. Mit diesem Menüpunkt kann das gesamte Suchergebnis geladen
 und angezeigt werden. Die Ansicht wechselt wieder auf die begrenzte
-Anzahl von Einträgen, nachdem ein Suchfilter geändert oder die
+Anzahl von Einträgen, nachdem ein Suchfilter oder die
 Sortierreihenfolge geändert wurde. Die Anzahl aller sichtbaren und
 ausgewählten Einträge wird am unteren Rand dem Reiter angezeigt.
 
@@ -394,8 +392,8 @@ Das Gleiche, wie :ref:`map-context-menu`.
 ^^^^^^^^^^^^^^^
 
 Kopiert die ausgewählten Einträge im CSV-Format in die Zwischenablage.
-Dadurch werden Änderungen in der Tabellenansicht wie Spaltenreihenfolge
-und Sortierreihenfolge berücksichtigt. Das CSV beinhaltet eine
+Dadurch werden Änderungen in der Tabellenansicht, wie Spaltenreihenfolge
+und Sortierreihenfolge, berücksichtigt. Das CSV beinhaltet eine
 Kopfzeile.
 
 .. _select-all:

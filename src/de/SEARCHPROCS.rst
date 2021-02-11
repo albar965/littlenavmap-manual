@@ -3,7 +3,7 @@
 
 Der Reiter ``Prozeduren`` ermöglicht die Vorschau und das
 Hinzufügen von An- und Abflugprozeduren zum Flugplan. Die Prozeduren eines
-ausgewählten Flugplatzs sind in einem Baum angeordnet, der die
+ausgewählten Flugplatzes sind in einem Baum angeordnet, der die
 Abhängigkeiten zwischen Anflügen und Übergängen anzeigt.
 
 Siehe :doc:`APPROACHES` für allgemeine Informationen über
@@ -26,8 +26,7 @@ Klicken Sie mit der rechten Maustaste auf eine Prozedur, um weitere
 Optionen im Kontextmenü zu erhalten, wie z.B. die Zentrierung der Karte
 auf die Prozedur oder das Hinzufügen zu Ihrem Flugplan.
 
-Verwenden Sie das Kontextmenü der Flugplantabelle, um Prozeduren wie
-jeden anderen Wegpunkt zu entfernen. Siehe :ref:`delete-selected-legs`.
+Verwenden Sie das Kontextmenü der Flugplantabelle, um Prozeduren zu entfernen. Siehe :ref:`delete-selected-legs`.
 
 Prozedurabschnitte sind rot markiert, wenn ein oder mehrere Navigationshilfen
 nicht aufgelöst werden konnten. Wenn Sie versuchen, dieses Prozeduren
@@ -35,10 +34,10 @@ einem Flugplan hinzuzufügen, wird ein Warndialog angezeigt.
 
 .. note::
 
-    Es ist Sache des Nutzers, die richtigen Prozeduren zu kombinieren.
+    Es ist Aufgabe des Nutzers, die richtigen Prozeduren zu kombinieren.
 
     *Little Navmap* wird Sie nicht davon abhalten, z.B. nordwärts weisende Prozeduren für eine Route in Richtung Süden zu wählen.
-    Überprüfen Sie auch die resultierende Route, um versehentliches Zick-Zack-Routing zu vermeiden, das passieren kann, wenn Sie den falschen Anflug bzw. Übergang z.B. mit einer STAR Prozedure kombinieren.
+    Überprüfen Sie auch die resultierende Route, um versehentliches Zick-Zack-Routing zu vermeiden. Dies kann z.B. passieren, wenn Sie den falschen Anflug bzw. Übergang mit einer unpassenden STAR Prozedur kombinieren.
 
 .. figure:: ../images/proceduresearch.jpg
 
@@ -53,7 +52,7 @@ dunkelroter Farbe dargestellt sind.
 
 Fettgedruckter roter Text zeigt einen Fehler im Abschnitt an. Die
 Prozedur ist unvollständig und sollte nicht in einem Flugplan verwendet
-werden. *Little Navmap* verweigert je nach Fehler die Verwendung der Prozedur, da Inkonsistenzen zu Abstürzen führen können.
+werden. *Little Navmap* verweigert bei manchen Fehlern die Verwendung der Prozedur, da Inkonsistenzen zu Abstürzen führen können.
 
 -  ``Beschreibung``: Entweder Beschreibung der Prozedur oder
    Fluganweisung für Prozedurabschnitte.
@@ -90,12 +89,11 @@ Obere Schaltflächen
 
 .. _procedure-filter-type:
 
-Typ Filter (All Procedures)
+Typfilter (Alle Prozeduren)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Der Typfilter ist für eine FSX- oder P3D-Bestandsdatenbank nicht
-verfügbar. Eine Navigationsdatenaktualisierung ist erforderlich, um die SID- und
-STAR-Prozeduren zu erhalten.
+verfügbar.
 
 Dieser Filter ist immer verfügbar für eine X-Plane Datenbank, die SIDs
 und STARs bereits in den Bestandsdaten enthält.
@@ -111,8 +109,8 @@ Die jeweiligen Übergänge werden immer angezeigt.
 
 .. _procedure-filter-runway:
 
-Runway Filter (All Runways)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Runway Filter (Alle Runways)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dieser Filter ist immer verfügbar und hilft, Prozeduren für eine
 bestimmte Start- oder Landebahn zu finden.
@@ -122,7 +120,7 @@ bestimmte Start- oder Landebahn zu finden.
 |Clear Selection| Auswahl zurücksetzen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entfernt alle Einträge in der Tabelle und entfernt alle hervorgehobenen
+Entfernt alle Einträge in der Tabelle und alle hervorgehobenen
 Kreise aus der Karte.
 
 .. _help-procs:
@@ -162,7 +160,7 @@ oder Zielflugplatz des aktuellen Flugplans ist.
 Verwenden Sie das Kontextmenü der Flugplantabelle, um Prozeduren zu
 entfernen.
 
-Siehe auch :ref:`delete-selected-legs` and :ref:`delete-from-flight-plan`.
+Siehe auch :ref:`delete-selected-legs` und :ref:`delete-from-flight-plan`.
 
 Wenn ein Übergang ausgewählt wird, wird auch die entsprechende
 Prozedur (Approach, SID oder STAR) hinzugefügt oder ersetzt.
@@ -184,7 +182,7 @@ den Flugplan aufgenommen.
 
 
 Ein Streckenabschnitt wird rot gezeichnet, wenn eine Navigationshilfe während des
-Laden aus der Szeneriedatenbank nicht aufgelöst wurde. Dies geschieht nur, wenn die Quelldaten nicht gültig oder unvollständig sind. In diesem Fall ist die resultierende Prozedur nicht verwendbar und es wird ein Warndialog angezeigt, wenn wesentliche Navigationshilfen fehlen.
+Ladens aus der Szeneriedatenbank nicht aufgelöst wurde. Dies geschieht nur, wenn die Quelldaten nicht gültig oder unvollständig sind. In diesem Fall ist die resultierende Prozedur nicht verwendbar und es wird ein Warndialog angezeigt, wenn wesentliche Navigationshilfen fehlen.
 
 *Little Navmap* kann je nach Fehler die Verwendung der Prozedur verweigern.
 

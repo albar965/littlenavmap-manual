@@ -33,13 +33,13 @@ Logbuchdateien
 
 Jeder Logbucheintrag enthält eine Referenz, die den vollständigen Pfad zu den verwendeten Flugplan- und Flugzeugleistungsdateien verwendet. Beachten Sie, dass diese Referenzen beschädigt werden, wenn die Dateien verschoben oder umbenannt werden.
 
-Zusätzlich werden die Flugplandatei, die Flugzeugleistungsdatei und die geflogene Strecke direkt in den Logbucheintrag eingefügt. Diese Anhänge können als LNMPLN-, LNMPERF- oder GPX-Dateien gespeichert werden. Der GPX-Anhang wird auch verwendet, um die Vorschau der Flugzeugpfad und des Flugplans anzuzeigen, wenn Logbucheinträge in der Suchergebnistabelle ausgewählt werden.
+Zusätzlich werden die Flugplandatei, die Flugzeugleistungsdatei und die geflogene Strecke direkt in den Logbucheintrag eingefügt. Diese Anhänge können als LNMPLN-, LNMPERF- oder GPX-Dateien gespeichert werden. Der GPX-Anhang wird auch verwendet, um die Vorschau des Flugzeugpfades und des Flugplans anzuzeigen, wenn Logbucheinträge in der Suchergebnistabelle ausgewählt werden.
 
 Informationen zum LNMPLN-Format finden Sie unter: ref:`flight-plan-formats-lnmpln`.
 
 Die GPX-Spur enthält Koordinaten, Flughöhe und -zeit sowie den Flugplan mit den Kennungen für Flugplatz und Navigationshilfen, Koordinaten und der berechneten Höhe.
 
-Die Flugplandatei enthält alle Planinformationen wie Prozeduren oder Anmerkungen.
+Die Flugplandatei enthält alle Planinformationen, wie Prozeduren oder Anmerkungen.
 
 Sie können auf die referenzierten und angehängten Dateien im Kontextmenü der Suchergebnistabelle und im Bearbeitungsdialog zugreifen und diese ändern.
 
@@ -49,7 +49,7 @@ Sie können auf die referenzierten und angehängten Dateien im Kontextmenü der 
 
 .. _logbook-search:
 
-Logbuch Suche
+Logbuchsuche
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die Funktionalität der Suchfilter und der Ergebnistabelle entspricht der
@@ -68,6 +68,8 @@ zwischen Abflug und Ziel sowie dem Start- und Zielflugplatz hervorgehoben.
 Die Beschriftung an der Großkreislinie zeigt die Startflugplatz-,
 Zielflugplatz- und die Distanz der Großkreislinie. Ein Tooltip wird angezeigt, wenn
 Sie mit der Maus über die blaue Linie oder die Flugplanvorschau fahren.
+
+Beachten Sie, dass zur schnelleren Darstellung nur die ersten 20 ausgewählten Logbucheinträge mit allen Details, wie Spur und Route, angezeigt werden. Die restlichen Einträge werden nur mit einer direkten Verbindung angezeigt.
 
 .. figure:: ../images/logbook.jpg
 
@@ -91,8 +93,8 @@ Sie mit der Maus über die blaue Linie oder die Flugplanvorschau fahren.
 
 .. _logbook-top-buttons:
 
-Obere Schaltflächen zusätzliche Menüpunkte
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Obere Schaltflächen und zusätzliche Menüpunkte
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Siehe :ref:`search-result-table-view-context-menu` für
 eine Beschreibung der gemeinsamen Kontextmenüelemente für alle
@@ -130,7 +132,7 @@ Gleiche Funktionalität, wie :ref:`map-context-menu` und im :ref:`flight-plan-ta
 
 Fügt einen Logbucheintrag manuell hinzu.
 
-Weitere Informationen zum Hinzufügen- und Bearbeitendialog finden Sie unter
+Weitere Informationen zum Hinzufügen- und Bearbeitungsdialog finden Sie unter
 :ref:`logbook-dialog-add` und :ref:`logbook-dialog-edit`.
 
 |Edit Logbook Entry| Logbucheintrag bearbeiten
@@ -143,7 +145,7 @@ Ankreuzfeldern, wenn mehr als ein Logbucheintrag ausgewählt ist. Diese
 ermöglichen es, die zu ändernden Felder für alle ausgewählten Einträge
 zu bearbeiten.
 
-Weitere Informationen zum Hinzufügen- und Bearbeiten-Dialog finden Sie unter
+Weitere Informationen zum Hinzufügen- und Bearbeitungsdialog finden Sie unter
 :ref:`logbook-dialog-edit`.
 
 |Delete Logbook Entry| Logbucheintrag löschen
@@ -187,12 +189,12 @@ Angehängten Flugplan speichern als
 
 Speichert den angehängten Flugplan in eine LNMPLN-Datei.
 
-Angehängten Flugzeugleistung öffnen
+Angehängte Flugzeugleistung öffnen
 """"""""""""""""""""""""""""""""""""
 
 Öffnet die angehängte Flugzeugleistung und ersetzt die aktuelle.
 
-Angehängten Flugzeugleistung speichern als
+Angehängte Flugzeugleistung speichern als
 """"""""""""""""""""""""""""""""""""""""""""
 
 Speichert die angehängte Flugzeugleistung in eine LNMPERF-Datei.
@@ -216,7 +218,7 @@ Flugpfad zeigen
 
 Diese drei Optionen aktivieren oder deaktivieren die jeweiligen Vorschaufunktionen für ausgewählte Logbucheinträge.
 
-Beachten Sie, dass die Flugplanvorschau und der Flugpfad nur für die ersten Einträge der Auswahl angezeigt werden.
+Beachten Sie, dass zur schnelleren Darstellung nur die ersten 20 ausgewählten Logbucheinträge mit allen Details, wie Spur und Route, angezeigt werden. Die restlichen Einträge werden nur mit einer direkten Verbindung angezeigt.
 
 .. _open-flight-plan-logbook:
 
@@ -281,7 +283,7 @@ Logbucheintrag bearbeiten
 Die Dialoge zum Bearbeiten und Hinzufügen sind gleich und enthalten drei
 Reiter.
 
-Die meisten Felder haben einen Tooltip, der die Bedeutung erklärt, sind
+Die meisten Felder haben einen Tooltip, der die Bedeutung erklärt. Viele der Felder sind
 optional und können frei bearbeitet werden.
 
 Die Schaltfläche ``Reset`` macht alle manuellen Änderungen rückgängig
@@ -292,7 +294,7 @@ Reiter Logbucheintrag
 
 Zusätzliche Hinweise zu einigen Feldern auf dieser Seite:
 
--  **Abflug** und **Ziel**: Diese werden automatisch auf einen Flugplatz
+-  **Abflug** und **Ziel**: Diese werden automatisch auf einem Flugplatz
    aufgelöst. Koordinaten (nicht angezeigt und nicht editierbar) werden
    dem Abflug- oder Zielflugplatz zugeordnet, wenn sie gefunden werden.
    Der Dialog zeigt den Namen und die Höhe des Flugplatzes an, wenn die
@@ -309,7 +311,7 @@ Zusätzliche Hinweise zu einigen Feldern auf dieser Seite:
 Reiter Treibstoff und Gewicht
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Treibstoff benötigt für Flug und zu ladender Treibstoff werden aus
+Für Flug benötigter und zu ladender Treibstoff werden aus
 :ref:`fuel-report` entnommen.
 
 Verbrauchter Kraftstoff ist der verwendete Treibstoff zwischen Start und
@@ -401,11 +403,11 @@ Importiert die X-Plane Logbuchdatei
 Navmap* Logbuchdatenbank. Beachten Sie, dass das X-Plane Logbuchformat
 limitiert ist und nicht genügend Informationen liefert, um alle Logbuchfelder zu füllen.
 
-Die importierten Logbucheinträge erhalten eine Beschreibung mit
+Die importierten Logbucheinträge erhalten eine Beschreibung mit dem Text
 ``Aus X-Plane Logbuch importiert``, die es ermöglicht,
 nach den importierten Einträgen zu suchen. Verwenden Sie ein Suchmuster wie
 ``*Aus X-Plane Logbuch importiert*`` im Suchfeld
-Beschreibung, um nach allen importierten Einträgen zu suchen.
+``Beschreibung``, um nach allen importierten Einträgen zu suchen.
 
 **Verfügbare Daten im X-Plane Logbuch:**
 
@@ -453,7 +455,7 @@ nicht gelöscht oder geändert.
 Die konvertierten Logbucheinträge erhalten eine Beschreibung mit der
 Aufschrift ``Aus Nutzerdaten konvertiert``, die es ermöglicht, nach
 den importierten Einträgen zu suchen. Verwenden Sie ein Suchmuster wie
-``*Aus Nutzerdaten konvertiert*`` im Suchfeld Beschreibung, um nach
+``*Aus Nutzerdaten konvertiert*`` im Suchfeld ``Beschreibung``, um nach
 allen Einträgen zu suchen.
 
 Es können nicht alle Werte wiederhergestellt werden, aber die
@@ -469,7 +471,7 @@ während der Konvertierung anzeigt.
 
 .. _logbook-data-format:
 
-Datenbank-Backup-Dateien
+Datenbanksicherungen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* erstellt bei jedem Start eine vollständige
@@ -484,7 +486,7 @@ Zu Informationen über Datenbanksicherungsdateien siehe
 
 .. _logbook-csv:
 
-CSV Datenformat
+CSV-Datenformat
 ~~~~~~~~~~~~~~~
 
 Das englische Zahlenformat (Punkt ``.`` als Dezimaltrennzeichen) wird
@@ -494,7 +496,7 @@ ermöglichen.
 
 *Little Navmap* verwendet die Kodierung
 `UTF-8 <https://de.wikipedia.org/wiki/UTF-8>`__ beim Lesen und Schreiben
-von Dateien. Dies ist nur relevant, wenn Sie Sonderzeichen wie Umlaute,
+von Dateien. Dies ist nur relevant, wenn Sie Sonderzeichen, wie Umlaute,
 Akzente oder andere verwenden. Andernfalls spielt die Kodierung keine
 Rolle.
 

@@ -5,19 +5,19 @@ In diesem Kapitel wird erklärt, wie Sie mit einem entfernten Computer über das
 
 .. note::
 
-    Es ist nicht notwendig, die Szenerie-Bibliothek oder Dateien eines Simulators im Netzwerk freizugeben.
+    Es ist nicht notwendig, die Szeneriebibliothek oder Dateien eines Simulators im Netzwerk freizugeben.
 
-    Sie müssen weder die Szeneriebibliothek des Simulators kopieren, noch müssen Sie einen zweiten Simulator auf dem Client-Computer installieren.
+    Sie müssen weder die Szeneriebibliothek des Simulators kopieren, noch müssen Sie einen zweiten Simulator auf dem entfernten Computer installieren.
 
 So bereiten Sie eine Netzwerkeinrichtung vor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Installieren bzw. extrahieren Sie das gesamte *Little Navmap*-Archiv auf dem Flug- **und** Netzwerk-Computer.
+#. Installieren bzw. extrahieren Sie das gesamte *Little Navmap*-Archiv auf dem Flug- **und** Netzwerkcomputer.
 #. Kopieren Sie *Little Xpconnect* in das X-Plane-Plugin-Verzeichnis, wenn Sie X-Plane verwenden. Siehe :ref:`xplane-plugin` für Details.
 #. Verwenden Sie *Little Navmap*, um die Szeneriedatenbank auf dem Flugcomputer zu generieren. Hauptmenü -> ``Szeneriebibliothek`` -> :ref:`load-scenery-library`
 #. Öffnen Sie das Datenbankverzeichnis auf dem Flugcomputer mit ``Werkzeuge`` -> ``Dateien und Verzeichnisse`` -> ``Zeige Datenbankdateien``.
 #. Kopieren Sie die Datenbankdateien auf den Netzwerkcomputer. Schließen Sie *Little Navmap* immer vor dem Kopieren. Siehe :ref:`files-databases` für Informationen darüber, was in welcher Datenbankdatei gespeichert ist.
-   Nach dem Kopieren müssen Sie auf dem Netzwerk-Computer nichts weiter tun. Die kopierte Datei ist sofort einsatzbereit und es ist nicht notwendig, die Szenerie-Bibliothek zu laden.
+   Nach dem Kopieren müssen Sie auf dem Netzwerkcomputer nichts weiter tun. Die kopierte Datei ist sofort einsatzbereit und es ist nicht notwendig, die Szeneriebibliothek zu laden.
 
 .. note::
 
@@ -29,8 +29,8 @@ Fliegen in einem Netzwerk-Setup
 
 #. Starten Sie den Simulator
 #. Starten Sie *Little Navconnect* auf dem Flugcomputer.
-#. Starten Sie *Little Navmap* auf dem Netzwerk-Computer.
-#. Verbinden Sie *Little Navmap* auf dem Netzwerk-Computer mit *Little Navconnect* auf dem Flugcomputer.
+#. Starten Sie *Little Navmap* auf dem Netzwerkcomputer.
+#. Verbinden Sie *Little Navmap* auf dem Netzwerkcomputer mit *Little Navconnect* auf dem Flugcomputer.
    Hauptmenü -> ``Werkzeuge`` -> :ref:`flight-simulator-connection`.
 
 Siehe die beiden folgenden Kapitel für weitere Details:

@@ -48,7 +48,7 @@ Verwendet nur Informationen aus der Navigraph-Datenbank.
         Kraftstoffinformationen nicht verfügbar sind. Außerdem könnten kleinere
         Flugplätze fehlen.
 
-Das Start- und Landebahnaufbau stimmt möglicherweise nicht mit dem
+Der Start- und Landebahnaufbau stimmt möglicherweise nicht mit dem
 Start- und Landebahnaufbau im Simulator überein, wenn Sie Standard- oder
 ältere Flugplatzszenerien verwenden.
 
@@ -92,7 +92,7 @@ wenn Sie diesen Modus verwenden:
 
 Die folgenden Funktionen werden aus der Navigraph-Datenbank übernommen:
 
--  Navigationshilfen (Wegpunkte, VOR, NDB, Marker) die sich auf folgende Funktionen beziehen:
+-  Navigationshilfen (Wegpunkte, VOR, NDB, Marker), die sich auf folgende Funktionen beziehen:
 
    -  ``Suche`` Dockfenster, Reiter ``Navigationshilfen``
    -  Flugplanberechnung
@@ -113,7 +113,7 @@ Einschränkungen in diesem Modus
    Warnung an. Aktualisieren Sie einen Flugplatz mit Add-On-Szenerien,
    wenn Sie feststellen, dass An- oder
    Abflugprozeduren nicht an einem Ende der Start- und Landebahn eines
-   Flugplatzs beginnen.
+   Flugplatzes beginnen.
 -  Prozeduren können bei der Auswahl mit dem Menüpunkt ``Zeige Prozeduren``
    nicht erkannt werden, wenn ein Flugplatz seine Kennung
    geändert hat. (z.B. ``Kulik Lake``: Kennung geändert von
@@ -133,12 +133,12 @@ Einschränkungen in diesem Modus
 
 .. tip::
 
-   Verwenden Sie das Navigraph navdata update für Microsoft Flight Simulator 2020
-   um die Szenerie-Bibliothek auf den neuesten Stand zu bringen und auch um die *Little Navmap*
+   Verwenden Sie das *Navigraph navdata update* für Microsoft Flight Simulator 2020,
+   um die Szeneriebibliothek auf den neuesten Stand zu bringen und auch, um die *Little Navmap*
    und MSFS-Navigationsdaten synchronisiert zu halten. Dies reduziert Probleme beim Laden von
    Flugplänen in den Simulator.
 
-   Die Verwendung der *fsAerodata* Navigationsdatenaktualisierungen für FSX und P3D beseitigtigen
+   Die Verwendung der *fsAerodata* Navigationsdatenaktualisierungen für FSX und P3D beseitigen
    viele der oben genannten Einschränkungen, da sie die Simulatorszenerie
    mit der Navigraph-Datenbank synchronisieren.
 

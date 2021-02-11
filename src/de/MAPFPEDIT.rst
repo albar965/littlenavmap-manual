@@ -16,7 +16,7 @@ um beim Bearbeiten der Route zu rollen und zu zoomen.
 
 Wählen Sie immer Abflug und Ziel zuerst, wenn Sie Ihren Flugplan manuell
 erstellen möchten. Dieses verbindet beide Punkte mit einer Großkreislinie.
-Basierend auf dieser Linie können dann Ihrem Flugplan
+Basierend auf dieser Linie können Sie dann Ihrem Flugplan
 Navigationshilfen hinzuzufügen.
 
 Beachten Sie, dass die Auswahl von Luftstraßen nicht möglich ist.
@@ -55,7 +55,7 @@ Die folgende Funktionalität ist verfügbar:
    nächstes klicken:
 
    -  **Auf einen Flugplatz:** Der Flugplatz ersetzt den Abflug- oder
-      Zielflugplatz. Eine Standard-Runways wird als Startposition zugewiesen,
+      Zielflugplatz. Eine der Standard-Runways wird als Startposition zugewiesen,
       wenn der neue Flugplatz ein Startflugplatz ist.
    -  **Auf eine Navigationshilfe:** Das Objekt ersetzt den Abflug- oder
       Zielflugplatz, was allerdings zu einem ungültigen Flugplan führt. Der
@@ -90,15 +90,15 @@ Wegpunkte vor oder nach dem Abflug- oder Zielflugplatz angefügt werden.
 
 .. figure:: ../images/fpedit.jpg
 
-      Einfügen einer Navigationshilfe in eine
-      Flugplanabschnitt durch klicken und bewegen der Abschnittlinie. Ein Tooltip
+      Einfügen einer Navigationshilfe in einen
+      Flugplanabschnitt durch Klicken und Bewegen der Abschnittlinie. Ein Tooltip
       für die Navigationshilfe wird angezeigt.
 
 .. figure:: ../images/fpedit2.jpg
 
-      Die VOR ``TRA`` durch eine andere im Flugplan ersetzen,
-      indem einfach der Wegpunkt ``TRA`` angeklickt wird und auf ``KLO`` gezogen wird.
-      Ein Auswahlmenü für weitere Erklärungegen erscheint.
+      Das VOR ``TRA`` durch ein anderes im Flugplan ersetzen,
+      indem einfach der Wegpunkt ``TRA`` angeklickt und auf ``KLO`` gezogen wird.
+      Ein Menü für genauere Auswahl erscheint.
 
 .. |Cursor Cross| image:: ../images/cursorcross.png
 .. |Cursor Move| image:: ../images/cursormove.png

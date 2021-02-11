@@ -4,7 +4,7 @@ Webserver
 *Little Navmap* enthält einen internen Webserver, der die Karte, den
 Flugzeugfortschritt und die Flugplatzinformationen anzeigt. Die Karte kann
 optional automatisch in einem Webbrowser aktualisiert werden. Auf
-die Website kann von jedem Computer, Tablett oder Smartphone im lokalen
+die Website kann von jedem Computer, Tablet oder Smartphone im lokalen
 Netzwerk zugegriffen werden.
 
 Beachten Sie, dass die Funktionalität eingeschränkt ist. Sie können z.B.
@@ -26,7 +26,7 @@ weiterzuleiten.
 
 .. warning::
 
-    Öffnen Sie die Firewall niemals vollständig, da dies Ihr Netzwerk und Ihre Computer gefährden kann.
+    Öffnen Sie den Firewall niemals vollständig, da dies Ihr Netzwerk und Ihre Computer gefährden kann.
 
 Webseite
 ~~~~~~~~~
@@ -70,7 +70,7 @@ Navigationskarte
 Die Karte ist in ein 3x3-Feldraster unterteilt. Jedes Feld hat ein
 Symbol in der Ecke, das seine Funktion anzeigt:
 
--  |Zoom| |Zoom out|: Hinein- und Herauszoomen
+-  |Zoom| |Zoom out|: hinein- und herauszoomen
 -  |Move left| |Move right| |Move up| |Move down|: Karte verschieben
 -  |Reload map|: Karte neu laden
 
@@ -117,7 +117,7 @@ Zeigt die gleichen Informationen wie :ref:`airport` auf einer Seite an.
 
 Schaltflächen und Eingabefelder:
 
--  ``ICAO``: ICAO-Kennung des Flugplatzs mit vier oder drei
+-  ``ICAO``: ICAO-Kennung des Flugplatzes mit vier oder drei
    Buchstaben. Drücken Sie die Taste ``Return`` oder die Schaltfläche
    ``Submit``, um Flugplatzinformationen anzuzeigen.
 -  ``Submit``: Lädt Flugplatzinformationen für die angegebene
