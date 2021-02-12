@@ -69,7 +69,9 @@ Die Beschriftung an der Großkreislinie zeigt die Startflugplatz-,
 Zielflugplatz- und die Distanz der Großkreislinie. Ein Tooltip wird angezeigt, wenn
 Sie mit der Maus über die blaue Linie oder die Flugplanvorschau fahren.
 
-Beachten Sie, dass zur schnelleren Darstellung nur die ersten 20 ausgewählten Logbucheinträge mit allen Details, wie Spur und Route, angezeigt werden. Die restlichen Einträge werden nur mit einer direkten Verbindung angezeigt.
+.. note::
+
+      Beachten Sie, dass zur schnelleren Darstellung nur der erste ausgewählte Logbucheintrag mit allen Details, wie Spur und Route, angezeigt wird. Die restlichen Einträge werden nur mit einer direkten Verbindung angezeigt.
 
 .. figure:: ../images/logbook.jpg
 

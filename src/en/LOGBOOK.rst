@@ -70,7 +70,9 @@ The label at the connecting great circle line shows departure airport
 ident, destination airport ident and great circle distance. A tooltip is
 shown if hovering the mouse over the blue direct connection or flight plan preview lines.
 
-Note that only the first 20 selected logbook entries will be shown will all details like trail and route due to performance reasons. The remaining entries are shown only with the direct connection line.
+.. note::
+
+       Only the first selected logbook entry will be shown will all details like trail and route due to performance reasons. The remaining entries are shown only with the direct connection line.
 
 .. figure:: ../images/logbook.jpg
 

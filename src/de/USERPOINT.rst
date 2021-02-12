@@ -141,7 +141,7 @@ Siehe :doc:`REMARKS` für mehr Informationen, wie die Verwendung von Weblinks in
 Das Feld ``Sichtbar von`` ermöglicht die Festlegung, ab wann der Nutzerpunkt
 auf der Karte sichtbar ist. Dies ist abhängig von der Zoomdistanz
 (Blickabstand zur Erdoberfläche), die für die aktuelle Kartenansicht
- in der :doc:`STATUSBAR` angezeigt wird. Der
+in der :doc:`STATUSBAR` angezeigt wird. Der
 Nutzerpunkt ist für alle Zoomabstände sichtbar, die kleiner sind als der
 Wert in ``Sichtbar von``. Der Maximalwert beträgt 3.000 NM und der
 Minimalwert 1 NM.
