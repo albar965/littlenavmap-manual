@@ -72,7 +72,9 @@ shown if hovering the mouse over the blue direct connection or flight plan previ
 
 .. note::
 
-       Only the first selected logbook entry will be shown will all details like trail and route due to performance reasons. The remaining entries are shown only with the direct connection line.
+     Logbook details (route preview and trail) on the map are only shown if one single entry is selected
+     in the logbook search result table. Selecting more than one entry shows only the direct connection lines
+     if enabled.
 
 .. figure:: ../images/logbook.jpg
 
@@ -205,18 +207,31 @@ Saves the attached GPX to a file which contains the flown trail as well as the f
 View Options
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+These three options activate or deactivate the respective preview functions for selected logbook entries.
+
+The start and destination airports are always highlighted. This is also the case when all three options are deactivated.
+
 Show direct connection
 """""""""""""""""""""""""""""""""
+
+Shows a direct connection line between start and destination.
+
+Displayed for one or more selected logbook entries.
 
 Show flight plan preview
 """""""""""""""""""""""""""""""""
 
+Shows a simplified preview of the flight plan in use.
+
+This is only shown when a single logbook entry is selected.
+
 Show aircraft trail
 """""""""""""""""""""""""""""""""
 
-These three options enable or disable the respective preview features for selected logbook entries.
+Shows the flight path.
 
-Note that only the first 20 selected logbook entries will be shown will all details like trail and route due to performance reasons. The remaining entries are shown only with the direct connection line.
+This is only shown if a single logbook entry is selected.
+
 
 .. _open-flight-plan-logbook:
 

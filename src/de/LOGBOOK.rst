@@ -71,7 +71,9 @@ Sie mit der Maus über die blaue Linie oder die Flugplanvorschau fahren.
 
 .. note::
 
-      Beachten Sie, dass zur schnelleren Darstellung nur der erste ausgewählte Logbucheintrag mit allen Details, wie Spur und Route, angezeigt wird. Die restlichen Einträge werden nur mit einer direkten Verbindung angezeigt.
+     Logbuchdetails wie die Flugplanvorschau und Flugpfad auf der Karte werden nur angezeigt,
+     wenn ein einziger Eintrag in der Ergebnistabelle der Logbuchsuche ausgewählt ist.
+     Die Auswahl von mehr als einem Eintrag zeigt nur die direkten Verbindungslinien an, wenn diese aktiviert sind.
 
 .. figure:: ../images/logbook.jpg
 
@@ -209,18 +211,31 @@ Speichert den angehängten GPX-Flugpfad in eine Datei, die sowohl den geflogenen
 Ansichtseinstellungen
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+Diese drei Optionen aktivieren oder deaktivieren die jeweiligen Vorschaufunktionen für ausgewählte Logbucheinträge.
+
+Die Start- und Zielflugplätze werden immer hervorgehoben. Dies ist auch der Fall, wenn alle drei Optionen deaktiviert sind.
+
 Direkte Verbindung zeigen
 """""""""""""""""""""""""""""""""
+
+Zeigt eine direkte Verbindungslinie zwischen Start und Ziel.
+
+Wird bei einem oder mehreren ausgewählten Logbucheinträgen angezeigt.
 
 Flugplanvorschau zeigen
 """""""""""""""""""""""""""""""""
 
+Zeigt eine vereinfachte Vorschau des verwendeten Flugplanes.
+
+Diese wird nur angezeigt, wenn ein einzelner Logbucheintrag ausgewählt ist.
+
 Flugpfad zeigen
 """""""""""""""""""""""""""""""""
 
-Diese drei Optionen aktivieren oder deaktivieren die jeweiligen Vorschaufunktionen für ausgewählte Logbucheinträge.
+Zeigt den Flugpfad.
 
-Beachten Sie, dass zur schnelleren Darstellung nur die ersten 20 ausgewählten Logbucheinträge mit allen Details, wie Spur und Route, angezeigt werden. Die restlichen Einträge werden nur mit einer direkten Verbindung angezeigt.
+Dieser wird nur angezeigt, wenn ein einzelner Logbucheintrag ausgewählt ist.
+
 
 .. _open-flight-plan-logbook:
 
