@@ -2074,6 +2074,12 @@ See also :ref:`files-databases` for details about the different databases.
 
 Opens the dialog :doc:`OPTIONS` which allows to change the user interface, map display, weather and more.
 
+.. note::
+
+     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual
+     for Windows and Linux
+     can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
+
 .. _window-menu:
 
 Window Menu

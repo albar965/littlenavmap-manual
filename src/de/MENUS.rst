@@ -2124,6 +2124,11 @@ Siehe auch :ref:`files-databases` für Details zu den verschiedenen Datenbanken.
 
 Öffnet den Dialog :doc:`OPTIONS`, mit dem Sie die Benutzeroberfläche, die Kartendarstellung, das Wetter und mehr ändern können.
 
+.. note::
+
+     Der Menüeintrag, der in diesem Handbuch für Windows und Linux als ``Werkzeuge`` -> ``Einstellungen`` referenziert wird,
+     findet sich unter macOS im Anwendungsmenü unter ``Little Navmap`` -> ``Einstellungen``.
+
 .. _window-menu:
 
 Menü Fenster

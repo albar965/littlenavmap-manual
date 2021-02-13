@@ -27,6 +27,12 @@ The following chapters give a brief description of each page.
    You can immediately check the effect of your changes on the map display
    by moving the dialog ``Options`` to the side and pressing ``Apply``.
 
+.. note::
+
+     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual
+     for Windows and Linux
+     can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
+
 .. _startup:
 
 |Startup Icon| Startup and Update

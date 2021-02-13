@@ -30,6 +30,11 @@ eine kurze Beschreibung für jeder Seite.
      sofort überprüfen, indem Sie den Dialog ``Einstellungen`` zur Seite bewegen
      und ``Anwenden`` drücken.
 
+.. note::
+
+     Der Menüeintrag, der in diesem Handbuch für Windows und Linux als ``Werkzeuge`` -> ``Einstellungen`` referenziert wird,
+     findet sich unter macOS im Anwendungsmenü unter ``Little Navmap`` -> ``Einstellungen``.
+
 .. _startup:
 
 |Startup Icon| Start und Aktualisierung
