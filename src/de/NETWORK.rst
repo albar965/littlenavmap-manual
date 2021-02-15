@@ -1,4 +1,4 @@
-Netzwerk-Einrichtung
+Netzwerkeinrichtung
 ------------------------------------
 
 In diesem Kapitel wird erklärt, wie Sie mit einem entfernten Computer über das Netzwerk eine Verbindung zu einem Simulator auf einem Flugcomputer herstellen.
@@ -9,7 +9,7 @@ In diesem Kapitel wird erklärt, wie Sie mit einem entfernten Computer über das
 
     Sie müssen weder die Szeneriebibliothek des Simulators kopieren, noch müssen Sie einen zweiten Simulator auf dem entfernten Computer installieren.
 
-So bereiten Sie eine Netzwerkeinrichtung vor
+Vorbereitung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Installieren bzw. extrahieren Sie das gesamte *Little Navmap*-Archiv auf dem Flug- **und** Netzwerkcomputer.
@@ -24,7 +24,7 @@ So bereiten Sie eine Netzwerkeinrichtung vor
     Stellen Sie sicher, dass die Hauptversionen von *Little Navmap* und *Little Navconnect* übereinstimmen, sonst erhalten Sie möglicherweise eine Fehlermeldung.
     Verwenden Sie im Zweifelsfall die Version von *Little Navconnect*, die im *Little Navmap* Download-Archiv enthalten ist.
 
-Fliegen in einem Netzwerk-Setup
+Fliegen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Starten Sie den Simulator
