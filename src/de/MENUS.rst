@@ -630,6 +630,8 @@ Springt zur Heimposition, die mit :ref:`set-home` festgelegt wurde und verwendet
 die gespeicherte Position und den Zoomabstand. Die Mitte der
 Heimposition wird durch ein |Home Symbol| Symbol hervorgehoben.
 
+Beachten Sie, dass das Symbol nur ein Indikator für den Mittelpunkt der Distanzsuche ist und nicht mit einem Kontextmenü oder einer Mausaktion verbunden ist.
+
 Das Symbol kann nicht ausgeblendet werden. Setzen Sie es an eine entfernte Position, wenn Sie es außer Sicht wünschen.
 
 .. _go-to-center-for-distance-search:

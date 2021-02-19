@@ -557,7 +557,7 @@ Wenn Sie einen Wegpunkt einer Prozedur löschen, wird die gesamte Prozedur entfe
 
 Ändert die Kennung, den Namen, die Anmerkungen oder die Position eines benutzerdefinierten Flugplanwegpunktes. Siehe :doc:`EDITFPPOSITION`.
 
-Erlaubt auch das Hinzufügen einer Anmerkung zu einem beliebigen Flugplanwegpunkt, der kein Ausweichpunkt und nicht Teil 
+Erlaubt auch das Hinzufügen einer Anmerkung zu einem beliebigen Flugplanwegpunkt, der kein Ausweichpunkt und nicht Teil
 einer Prozedur ist. Siehe :doc:`EDITFPREMARKS`.
 
 Sie können die Koordinaten auch direkt bearbeiten, anstatt die Flugplanposition zu ziehen (:doc:`MAPFPEDIT`).
@@ -671,19 +671,20 @@ Distanzsuche ist hervorgehoben durch ein |Distance Search Symbol| Symbol.
 
 Das Symbol kann nicht ausgeblendet werden. Setzen Sie es an eine entfernte Position, um es aus dem Blickfeld zu bringen.
 
+Beachten Sie, dass das Symbol nur ein Indikator für den Mittelpunkt der Distanzsuche ist und nicht mit einem Kontextmenü oder einer Mausaktion verbunden ist.
+
 .. _set-home:
 
 |Set Home| Setze Heimansicht
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Legt die aktuell sichtbare Kartenansicht als Heimansicht fest. Die Mitte
-des Home-Bereichs wird hervorgehoben durch ein |Home Symbol| Symbol.
+Legt die aktuell sichtbare Kartenansicht als Ihre Heimansicht fest. Die Mitte der Heimansicht wird durch ein |Home Symbol| Symbol hervorgehoben.
 
-Sie können mittels Hauptmenü mit ``Karte`` -> ``Gehe zur Heimposition``
-die Ansicht aktivieren.
+Sie können zur Heimansicht über das Hauptmenü ``Karte`` -> :ref:`goto-home` springen.
 
-Das Symbol kann nicht ausgeblendet werden. Setzen Sie es an eine entfernte Position, um es aus dem Blickfeld zu bringen.
+Das Symbol kann nicht ausgeblendet werden. Setzen Sie es an eine andere Position, wenn Sie es nicht sehen wollen.
 
+Beachten Sie, dass das Symbol nur ein Indikator für den Mittelpunkt der Heimansicht ist und nicht mit einem Kontextmenü oder einer Mausaktion verbunden ist.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png

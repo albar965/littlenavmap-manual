@@ -627,19 +627,22 @@ The coordinate format depends on the selection in ``Options`` on page :ref:`unit
 Set the center point for the distance search function. See :ref:`distance-search`. The center for the distance
 search is highlighted by a |Distance Search Symbol| symbol.
 
-The symbol cannot be hidden. Set it at a remote position if you like to get rid of it.
+The symbol cannot be hidden. Set it at a remote position if you like to hide it.
+
+Note that the symbol is only an indicator for the search center position and does not have a context menu or a mouse action attached.
 
 .. _set-home:
 
 |Set Home| Set Home View
 ''''''''''''''''''''''''''''''''''''
 
-Set the currently visible map view as your home view. The center of the
-home area is highlighted by a |Home Symbol| symbol.
+Set the currently visible map view as your home view. The center of the home area is highlighted by a |Home Symbol| symbol.
 
-You can jump to the home view by using main menu ``Map`` -> ``Goto Home``.
+You can jump to the home view by using main menu ``Map`` -> :ref:`goto-home`.
 
-The symbol cannot be hidden. Set it at a remote position if you like to get rid of it.
+The symbol cannot be hidden. Set it at a remote position if you like to hide it.
+
+Note that the symbol is only an indicator for the home view center position and does not have a context menu or a mouse action attached.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png

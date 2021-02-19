@@ -69,7 +69,7 @@ The spatial search function is useful to plan a round the world tour.
 Assume you'd like to go east:
 
 #. Go to the dock window ``Search``, right-click into the result table
-   and select ``Reset Search`` |Reset Search| to get rid of all search
+   and select ``Reset Search`` |Reset Search| to remove all search
    criteria that may affect the query.
 #. Set your departure airport.
 #. Right-click on your departure airport in the search or on the map and

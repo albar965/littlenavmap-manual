@@ -77,7 +77,7 @@ Cleanup Search
 Go to the dock window ``Search`` and follow the steps below:
 
 -  Right-click into the result table and select :ref:`reset-search` |Reset
-   Search| to get rid of all search criteria that may affect the query.
+   Search| to remove of all search criteria that may affect the query.
 -  Click the menu button |Menu Button| and make sure that the search
    groups ``Facilities``, ``Runway`` and ``Distance from Mark`` are
    checked. Deselect all others you do not need.
@@ -404,7 +404,7 @@ The top label in the flight planning dock window reads now::
      Via CHINN and VORDME FD31 to runway 31
      526 nm, 5 h 15 m, Low Altitude
 
-To completely get rid of a procedure:
+To completely delete a procedure:
 
 -  Select any leg of the procedure in the flight plan table.
 -  Right-click and choose :ref:`delete-selected-legs` |Delete

@@ -635,11 +635,12 @@ Map Menu
 |Goto Home| Goto Home
 ^^^^^^^^^^^^^^^^^^^^^
 
-Jumps to the home area that was set using :ref:`set-home` using the saved position and zoom
-distance. The center of the home area is highlighted by a |Home Symbol|
-symbol.
+Goes to the home area that was set using :ref:`set-home` in the sub-menu ``More`` in the map context menu.
+It will show the map using the saved position and zoom distance. The center of the home area is highlighted by a |Home Symbol| symbol.
 
-The symbol cannot be hidden. Set it at a remote position if you like to get rid of it.
+Note that the symbol is only an indicator for the home view center position and does not have any context menu or mouse actions attached.
+
+The symbol cannot be hidden. Set it at a remote position if you like to hide it.
 
 .. _go-to-center-for-distance-search:
 
@@ -650,7 +651,7 @@ Go to the center point used for distance searches. See :ref:`set-center-for-dist
 center for the distance search is highlighted by a |Distance Search
 Symbol| symbol.
 
-The center symbol cannot be hidden. Set it at a remote position if you like to get rid of it.
+The center symbol cannot be hidden. Set it at a remote position if you like to hide it.
 
 .. _center-flight-plan:
 

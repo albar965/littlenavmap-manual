@@ -150,21 +150,19 @@ Microsoft Flight Simulator 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  *Little Navmap* cannot read SID and STAR from MSFS. Planned for a future version.
--  Many approach procedures have invalid legs and cannot be used. This is due to missing recommended
-   fix information for `Arc to Fix` and `Constant Radius Arc` procedure legs in MSFS navdata.
+-  Some approach procedures have invalid legs and cannot be used. This is due to missing recommended
+   fix information for ``Arc to Fix`` and ``Constant Radius Arc`` procedure legs in MSFS navdata.
 -  Navdata updates are not read properly from the MSFS scenery library. This is in general no issue
    since you can also update the navdata in *Little Navmap* with the Navigraph FMS Data Manager to keep the
-   program in sync with MSFS.
+   program in sync with MSFS. Stock data is not affected by this.
 -  MSFS multiplayer and real-time AI cannot be displayed yet. These do not appear in the SimConnect
    interface.
 -  Simulator weather cannot be shown for MSFS since SimConnect weather functions are deprecated and
-   do not deliver data. Needs update or documentation in MSFS SDK. Use NOAA weather which gives you
-   the most up-to-date weather reports.
+   do not deliver data. Use NOAA weather which gives you the most up-to-date weather reports.
 -  MSFS seems to have no clear concept of scenery order (``Content.xml`` seems unreliable) and there is
    no information in the SDK about this. Add-ons are loaded by alphabetical order by *Little Navmap*.
    To put an add-on to the end of the loading list add a ``z_`` to the folder name, for example.
--  Flight plan loading in MSFS is flawed and does not produce any error messages if it fails. Quite
-   often MSFS cannot load its own plans correctly.
+-  Flight plan loading in MSFS has issues and does not produce any error messages if it fails.
 -  Country names are missing in MSFS translation tables and are not available in *Little Navmap*,
    therefore.
 -  Add-ons using the ``.fsarchive`` encrypted format are not supported. *Little Navmap* will show
