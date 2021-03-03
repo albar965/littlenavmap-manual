@@ -25,7 +25,7 @@ angezeigt, wenn Sie mit einem Simulator verbunden sind und die
 Entfernung unter 500 NM liegt.
 
 Die Anzeige von Zusatzeinheiten für Kraftstoff und Gewicht sowie dem
-wahren Kurs kann im Einstellungsdialog auf der Seite ``Einheiten``
+wahren Kurs kann im Einstellungsdialog auf der Seite :ref:`units`
 aktiviert werden.
 
 .. _windows-tabs:

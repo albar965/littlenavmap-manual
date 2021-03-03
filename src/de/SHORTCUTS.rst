@@ -296,7 +296,7 @@ Flugplantabelle
 +-----------------------------------------------+---------------------+
 | Zeige Prozeduren                              | ``Strg+Umschalt+R`` |
 +-----------------------------------------------+---------------------+
-| Anflug erstellen                              | ``Alt+Umschalt+C``  |
+| Anflug erstellen                              | ``Alt+Umschalt+R``  |
 +-----------------------------------------------+---------------------+
 | Flugplanabschnitt aktivieren                  | ``Strg+L``          |
 +-----------------------------------------------+---------------------+
@@ -327,7 +327,7 @@ Suchergebnistabellen und -eingabefelder
 +------------------------+---------------------+
 | Zeige Prozeduren       | ``Strg+Umschalt+R`` |
 +------------------------+---------------------+
-| Anflug erstellen       | ``Alt+Umschalt+C``  |
+| Anflug erstellen       | ``Alt+Umschalt+R``  |
 +------------------------+---------------------+
 | Auf der Karte anzeigen | ``Strg+M``          |
 +------------------------+---------------------+

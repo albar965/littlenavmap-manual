@@ -3,7 +3,7 @@ Kartenlegende
 
 Standardmäßig werden alle Geschwindigkeiten in Knoten, Entfernungen in
 NM und Höhen in Fuß angegeben. Die Einheiten können im
-Dialog ``Einstellungen`` auf der Seite ``Einheiten`` auf
+Dialog ``Einstellungen`` auf der Seite :ref:`units` auf
 imperial oder metrisch eingestellt werden.
 
 Farben, Größen und Textbeschriftungen einiger Kartenelemente können im

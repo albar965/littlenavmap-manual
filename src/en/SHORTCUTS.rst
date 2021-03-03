@@ -294,7 +294,7 @@ Flight Plan Table
 +-----------------------------------+------------------+
 | Show Procedures                   | ``Ctrl+Shift+R`` |
 +-----------------------------------+------------------+
-| Create Approach                   | ``Alt+Shift+C``  |
+| Create Approach                   | ``Alt+Shift+R``  |
 +-----------------------------------+------------------+
 | Activate Flight Plan Leg          | ``Ctrl+L``       |
 +-----------------------------------+------------------+
@@ -325,7 +325,7 @@ Search Result Tables and Search Input Fields
 +------------------+------------------+
 | Show Procedures  | ``Ctrl+Shift+R`` |
 +------------------+------------------+
-| Create Approach  | ``Alt+Shift+C``  |
+| Create Approach  | ``Alt+Shift+R``  |
 +------------------+------------------+
 | Show on Map      | ``Ctrl+M``       |
 +------------------+------------------+

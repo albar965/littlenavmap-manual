@@ -207,7 +207,7 @@ The wind barbs show an optional tooltip with wind direction, speed and
 wind source if you hover the mouse over them.
 
 Direction is magnetic per default but can be changed in the options
-dialog on page ``Units``. These tooltips show the wind for all layers
+dialog on page :ref:`units`. These tooltips show the wind for all layers
 where the currently shown layer is highlighted **bold**. The cruise
 altitude is added as an extra layer if selected for display.
 

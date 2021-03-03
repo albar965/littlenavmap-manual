@@ -20,7 +20,7 @@ is shown for airports, navaids and userpoints if connected to a
 simulator and if the distance is below 500 NM.
 
 The display of additional units for fuel and weight as well as true
-course can be enabled in the options dialog on tab ``Units``.
+course can be enabled in the options dialog on tab :ref:`units`.
 
 .. _windows-tabs:
 

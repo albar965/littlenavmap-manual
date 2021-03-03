@@ -6,7 +6,7 @@ Flugplanpositions- und Nutzerpunkt-Dialogen.
 
 Das Eingabefeld zeigt eine Meldung, ob die Koordinaten erkannt wurden
 und zeigt die übersetzten Koordinaten im voreingestellten Format, wie im
-Dialog ``Einstellungen`` auf der Reiter ``Einheiten`` gewählt an. Im
+Dialog ``Einstellungen`` auf der Reiter :ref:`units` gewählt an. Im
 Fehlerfall wird eine rote Meldung angezeigt.
 
 Überprüfen Sie die angezeigten übersetzten Koordinaten, um

@@ -46,7 +46,7 @@ den Programmeinstellungen in allen verfügbaren Einheiten eingegeben
 werden.
 
 Die zusätzliche Anzeige anderer Kraftstoffeinheiten kann im Dialog
-``Einstellungen`` auf der Seite ``Einheiten`` aktiviert werden.
+``Einstellungen`` auf der Seite :ref:`units` aktiviert werden.
 
 Siehe :ref:`toc-and-tod-paths` für Details zur Berechnung der Steig- und Sinkflugpunkte.
 

@@ -50,7 +50,7 @@ Fuel is shown both as weight (``lbs`` or ``kg``) or as volume
 independent of the program settings.
 
 Additional display of other fuel units can be enabled in the dialog
-``Options`` on the tab ``Units``.
+``Options`` on the tab :ref:`units`.
 
 See :ref:`toc-and-tod-paths` for details about the
 calculation of TOC and TOD.

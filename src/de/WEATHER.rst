@@ -219,7 +219,7 @@ Die Windpunkte zeigen einen optionalen Tooltip mit Windrichtung,
 Geschwindigkeit und Windquelle, wenn Sie mit der Maus darüber fahren.
 
 Die Richtung ist standardmäßig magnetisch, kann aber im Einstellungsdialog
-auf der Seite ``Einheiten`` geändert werden. Diese Tooltips zeigen den
+auf der Seite :ref:`units` geändert werden. Diese Tooltips zeigen den
 Wind für alle Ebenen an. Die aktuell angezeigte Ebene
 ist **fett** markiert. Die Reiseflughöhe wird als zusätzliche Ebene hinzugefügt,
 wenn sie für die Anzeige ausgewählt wird.
