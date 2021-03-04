@@ -627,6 +627,23 @@ Delete Tracks
 
 Remove downloaded Oceanic and other tracks from the track database.
 
+.. _track-sources:
+
+Track Sources
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NAT
+'''''''''''''''''''''''''''''''''''''''
+PACOTS
+'''''''''''''''''''''''''''''''''''''''
+AUSOTS
+'''''''''''''''''''''''''''''''''''''''
+
+Allows to select the track systems to download. You have to start the download again to see the changes.
+
+See :doc:`TRACKS` for more information.
+
+
 Map Menu
 ~~~~~~~~
 

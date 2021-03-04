@@ -616,6 +616,23 @@ Lösche Tracks
 
 Entfernen Sie heruntergeladene Tracks aus der Datenbank.
 
+
+.. _track-sources:
+
+Trackquellen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NAT
+'''''''''''''''''''''''''''''''''''''''
+PACOTS
+'''''''''''''''''''''''''''''''''''''''
+AUSOTS
+'''''''''''''''''''''''''''''''''''''''
+
+Ermöglicht die Auswahl der herunterzuladenden Track-Systeme. Sie müssen den Download erneut starten, um die Änderungen zu sehen.
+
+Siehe :doc:`TRACKS` für weitere Informationen.
+
 .. _map-menu:
 
 Menü Karte
@@ -1443,7 +1460,7 @@ Menü Wetter
 
 .. _airport-weather-source:
 
-Flugplatz-Wetterquelle
+Quelle für Flugplatzwetter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wählt die Quelle für die Anzeige des Wettersymbols auf der Karte aus.
@@ -1479,7 +1496,7 @@ VATSIM
 Wie NOAA, aber die Wetterinformationen können älter sein als NOAA.
 Verwenden Sie dies für Online-Flüge im VATSIM-Netzwerk.
 
-IVAOO
+IVAO
 '''''
 
 Wie NOAA-Wetter, aber die Informationen können älter sein. Verwenden Sie
@@ -1487,7 +1504,7 @@ dies für Online-Flüge im IVAO-Netzwerk.
 
 .. _wind-source:
 
-Wind Quelle
+Quelle für Winddaten
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Wählen Sie hier die Quelle für die Daten der Höhenwinde. Dies wirkt sich

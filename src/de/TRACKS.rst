@@ -22,6 +22,9 @@ Sie können wählen, ob die Tracks beim Start heruntergeladen werden sollen oder
 Der Download beim Start kann im Menü ``Flugplan`` -> :ref:`download-tracks-startup` aktiviert werden.
 Der manuelle Download kann im Menü ``Flugplan`` -> :ref:`download-tracks` gestartet werden.
 
+Sie können die herunterzuladenden Track-Systeme im Untermenü :ref:`track-sources` im Menü ``Flugplan`` auswählen.
+Sie müssen den Download erneut starten, um die Änderungen zu sehen.
+
 Die Trackdatenbank wird beim Start geleert, wenn :ref:`download-tracks-startup` nicht ausgewählt ist.
 
 Kartendarstellung und Informationen
