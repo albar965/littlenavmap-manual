@@ -19,8 +19,7 @@ How to Prepare a Network Setup
    X-Plane. See :ref:`xplane-plugin` for details.
 #. Use *Little Navmap* to generate the scenery database on the flying
    computer. Main menu -> ``Scenery Library`` -> :ref:`load-scenery-library`
-#. Open the database directory on the flying computer using ``Tools`` -> ``Files and Directories``
-   -> ``Show Database Files``.
+#. Open the database directory on the flying computer using ``Tools`` -> ``Files and Directories`` -> ``Show Database Files``.
 #. Copy the database files to the network computer. Always close *Little Navmap*
    before copying. See :ref:`files-databases` for information on what is stored in what database file.
    Nothing else to do on the remote computer after copying. The copied file is read-to-use and there is no

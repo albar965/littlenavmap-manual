@@ -23,7 +23,7 @@ These instructions apply to Windows, macOS and Linux computers equally.
 #. Start it on the flying computer and generate the scenery library
    databases. See :doc:`SCENERY` above for
    more information.
-#. Select ``Scenery Library`` -> ``Show Database Files`` in the main
+#. Select ``Tools`` -> ``Files and Directories`` -> ``Show Database Files`` in the main
    menu on the flying computer. This will open the directory containing
    the database files in a file manager like Windows Explorer or Apple
    Finder. You will find one or more database file like
@@ -31,7 +31,7 @@ These instructions apply to Windows, macOS and Linux computers equally.
    ``little_navmap_xp11.sqlite``.
 #. Exit *Little Navmap* on the flying computer.
 #. Start *Little Navmap* on the client/remote computer and select
-   ``Scenery Library`` -> ``Show Database Files``.
+   ``Tools`` -> ``Files and Directories`` -> ``Show Database Files``.
 #. Exit *Little Navmap* on the client computer so you can copy the
    datbase files.
 #. Copy the database files to your client computer using network shares,
