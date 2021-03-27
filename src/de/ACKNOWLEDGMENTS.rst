@@ -36,6 +36,8 @@ Dank an Daniel "Wolf"
 
 Danke an Andrea Deplano PVI, Italian virtual pilots für die italienische Übersetzung.
 
+Vielen Dank and John Liu und Tong Hui für die chinesische Übersetzung.
+
 Dank an Alfredo alias *fred*, Josemi alias *aquileo* und Emilio alias
 *zxplane* von `X-PLANE.es <http://www.x-plane.es/>`__ für die spanische
 Übersetzung des Handbuches.

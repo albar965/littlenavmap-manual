@@ -38,6 +38,8 @@ translation.
 A thank you! to Andrea Deplano PVI, Italian virtual pilots for the
 Italian translation.
 
+Big thanks for John Liu and Tong Hui for the Chinese user interface translation.
+
 Thanks to Alfredo alias *fred*, Josemi alias *aquileo* and Emilio alias
 *zxplane* from `X-PLANE.es <http://www.x-plane.es/>`__ for the Spanish
 translation of the manual.
