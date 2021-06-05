@@ -149,9 +149,6 @@ General
 Microsoft Flight Simulator 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  *Little Navmap* cannot read SID and STAR from MSFS. Planned for a future version.
--  Some approach procedures have invalid legs and cannot be used. This is due to missing recommended
-   fix information for ``Arc to Fix`` and ``Constant Radius Arc`` procedure legs in MSFS navdata.
 -  Navdata updates are not read properly from the MSFS scenery library. This is in general no issue
    since you can also update the navdata in *Little Navmap* with the Navigraph FMS Data Manager to keep the
    program in sync with MSFS. Stock data is not affected by this.

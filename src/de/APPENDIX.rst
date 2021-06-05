@@ -167,8 +167,6 @@ Allgemein
 Microsoft Flight Simulator 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- *Little Navmap* kann SID und STAR nicht aus MSFS lesen. Dies ist für zukünftige Versionen geplant.
-- Einige Anflugprozeduren haben ungültige Abschnitte und können nicht verwendet werden. Dies liegt an fehlenden Informationen für die Abschnittstypen ``Bogen zu Wegpunkt`` und ``Konstanter Radiusbogen`` in den Navigationsdaten von MSFS.
 - Aktualisierungen für Navigationsdaten werden nicht richtig aus der Szeneriebibliothek von MSFS gelesen. Dies ist im Allgemeinen kein Problem, da Sie die Navigationsdaten in *Little Navmap* auch mit dem Navigraph FMS Data Manager aktualisieren können, um das Programm mit MSFS synchron zu halten. Die Standardnavigationsdaten von MSFS sind nicht davon beeinflusst.
 - MSFS Multiplayer und Echtzeit-KI-Flugzeuge können noch nicht angezeigt werden. Diese erscheinen nicht in der SimConnect-Programmierschnittstelle.
 - Das Simulatorwetter kann für MSFS nicht angezeigt werden, da die SimConnect-Wetterfunktionen keine Daten liefern. Verwenden Sie das NOAA-Wetter, das die aktuellsten Wetterberichte liefert.

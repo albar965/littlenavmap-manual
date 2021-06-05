@@ -108,8 +108,12 @@ compatible changes where a reload is recommended but not required.
 Microsoft Flight Simulator 2020  Airports and Navdata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to all procedures in *Little Navmap*.
--  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids. Keep in mind that SID and STAR are not available yet in *Little Navmap*.
+-  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS
+   Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery
+   mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to
+   all procedures in *Little Navmap*.
+-  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph
+   Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids.
 
 See appendix :ref:`problems-msfs` for information about MSFS limitations and issues.
 

@@ -47,6 +47,18 @@ Vielen Dank an Valerio Messina und Flavio Borgna für die italienische
 
 Dank an Eddy Crequie für die niederländische Übersetzung.
 
+Vielen Dank an Sten Kristensen für die Compilierung für den Raspberry PI!
+
+Ein "Dankeschön!" an Piotr für die Hilfe im Avsim Forum.
+
+Danke and `icykoneko <https://github.com/icykoneko>`__ für die Implementierung der SID und STAR für MSFS.
+
+Ein herzliches Dankeschön an `u-an-i <https://github.com/u-an-i>`__ auf GitHub für die
+Implementierung der neuen Web-Nutzerschnittstelle.
+
+Danke and John Liu, `Tong Hui <https://github.com/tonghuix>`__ und
+`yudongx <https://github.com/yudongx>`__ für die chinesische Übersetzung.
+
 Ein herzliches Dankeschön an Jannik Prinz für die Einrichtung der Tavis
 CI-Builds.
 

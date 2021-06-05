@@ -27,7 +27,7 @@ author = u'Alexander Barthel'
 # The short X.Y version
 version = u'2.6'
 # The full version, including alpha/beta/rc tags
-release = u'2.6.11'
+release = u'2.6.12'
 
 nitpicky = True
 

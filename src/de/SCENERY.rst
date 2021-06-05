@@ -119,8 +119,14 @@ ein Neuladen empfohlen, aber nicht erforderlich ist.
 Microsoft Flight Simulator 2020 Flugplätze und Navigationsdaten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **Wenn Sie das Navigraph-Update für MSFS verwenden:** Aktualisieren Sie auch die *Little Navmap*-Datenbank mit dem FMS Data Manager, um das Programm mit der Szeneriebibliothek von MSFS synchron zu halten. Verwenden Sie den Szeneriemodus ``Nutze Navigraph für Navigationshilfen und Prozeduren`` im Menü ``Szeneriebibliothek``, um Zugriff auf alle Prozeduren in *Little Navmap* zu erhalten.
--  **Wenn Sie das Navigraph-Update für MSFS nicht verwenden:** Benutzen Sie den Szeneriemodus ``Die Navigraph-Datenbank nicht verwenden`` im Menü ``Szeneriebibliothek``, um Probleme mit fehlenden oder veränderten Navigationshilfen zu vermeiden. Beachten Sie, dass SID und STAR in *Little Navmap* noch nicht verfügbar sind.
+-  **Wenn Sie das Navigraph-Update für MSFS verwenden:** Aktualisieren Sie auch die *Little
+   Navmap*-Datenbank mit dem FMS Data Manager, um das Programm mit der Szeneriebibliothek von MSFS
+   synchron zu halten. Verwenden Sie den Szeneriemodus ``Nutze Navigraph für Navigationshilfen und
+   Prozeduren`` im Menü ``Szeneriebibliothek``, um Zugriff auf alle Prozeduren in *Little Navmap* zu
+   erhalten.
+-  **Wenn Sie das Navigraph-Update für MSFS nicht verwenden:** Benutzen Sie den Szeneriemodus
+   ``Die Navigraph-Datenbank nicht verwenden`` im Menü ``Szeneriebibliothek``, um Probleme mit
+   fehlenden oder veränderten Navigationshilfen zu vermeiden.
 
 Siehe :ref:`problems-msfs` für Informationen über MSFS Einschränkungen und Probleme.
 
