@@ -49,7 +49,7 @@ supported flight plan formats (``X`` = supported, ``0`` = not supported,
 Format                             Ext.     Open Exp Airw VFR/IFR User Wpt. Names Remarks Dep. Parking Cruise Alt. Ground speed Proc.
 ================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
 LNMPLN                             LNMPLN   X    X   X    X       X               X       X            X           X            X
-Microsoft Flight Simulator 2020    PLN      X    X   X    X       X               0       0 [6]_       X           0            X [5]_
+Microsoft Flight Simulator 2020    PLN      X    X   X    X       X               0       X            X           0            X [5]_
 FSX and Prepar3D                   PLN      X    X   X    X       X               0       X            X           0            0
 FSX and Prepar3D annotated         PLN      X    X   X    X       X               0       X            X           X            X
 FS9 PLN                            PLN      X    0   X    X       X               0       X            X           0            0
@@ -127,11 +127,8 @@ File format for MSFS.
 
 You can export this format directly using :ref:`export-msfs-flight-plan`.
 
-While the format supports procedures there are often problems in MSFS loading these. Procedures might be omitted or new ones inserted.
+While the format supports procedures there may appear problems in MSFS loading these. Procedures might be omitted or new ones inserted.
 Furthermore MSFS does not support the selection of transitions and often inserts these automatically.
-
-MSFS cannot not load parking positions. Select a departure parking in the drop down list in MSFS since
-selecting a parking position on the map resets the route.
 
 .. _flight-plan-formats-fsx-pln:
 
@@ -634,11 +631,7 @@ dialog on tab ``Flight Plan``.
      Full name is ``companyroutes.xml``
 
 .. [5]
-    The loading of procedures in MSFS is faulty and often does not load procedures or adds other procedures.
-
-.. [6]
-    MSFS does not load parking positions. Select a departure parking in the drop down list since selecting a position
-    on the map resets the route.
+    The loading of procedures in MSFS might not load procedures or might add other procedures.
 
 .. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png
