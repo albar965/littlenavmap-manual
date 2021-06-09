@@ -168,6 +168,7 @@ Microsoft Flight Simulator 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Aktualisierungen für Navigationsdaten werden nicht richtig aus der Szeneriebibliothek von MSFS gelesen. Dies ist im Allgemeinen kein Problem, da Sie die Navigationsdaten in *Little Navmap* auch mit dem Navigraph FMS Data Manager aktualisieren können, um das Programm mit MSFS synchron zu halten. Die Standardnavigationsdaten von MSFS sind nicht davon beeinflusst.
+- Sie können einen Parkplatz oder ein Tankfeld als Startposition festlegen, aber beachten Sie, dass Landebahnen und Hubschrauberlandeplätze als Startpositionen vom MSFS ignoriert werden.
 - MSFS Multiplayer und Echtzeit-KI-Flugzeuge können noch nicht angezeigt werden. Diese erscheinen nicht in der SimConnect-Programmierschnittstelle.
 - Das Simulatorwetter kann für MSFS nicht angezeigt werden, da die SimConnect-Wetterfunktionen keine Daten liefern. Verwenden Sie das NOAA-Wetter, das die aktuellsten Wetterberichte liefert.
 - MSFS scheint kein klares Konzept für die Reihenfolge der Szenerien zu haben (``Content.xml`` scheint unzuverlässig zu sein) und es gibt keine Informationen dazu im SDK. Add-ons werden in alphabetischer Reihenfolge in *Little Navmap* geladen. Um ein Add-on an das Ende der Ladeliste zu setzen, fügen Sie z.B. ein ``z_`` an den Ordnernamen an.

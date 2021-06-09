@@ -126,6 +126,8 @@ Sie können dieses Format direkt mit :ref:`export-msfs-flight-plan` exportieren.
 Obwohl das Format Prozeduren unterstützt, kann es Probleme beim Laden in MSFS geben. Es können Prozeduren weggelassen oder neue eingefügt werden.
 Außerdem unterstützt MSFS nicht die Auswahl von Übergängen und fügt diese oft automatisch ein.
 
+Sie können einen Parkplatz oder ein Tankfeld als Startposition festlegen, aber beachten Sie, dass Landebahnen und Hubschrauberlandeplätze als Startpositionen vom MSFS ignoriert werden.
+
 .. _flight-plan-formats-fsx-pln:
 
 |PLN| FSX und Prepar3D
@@ -653,7 +655,7 @@ der Seite ``Flugplan`` eingeschaltet werden.
      Der Dateiname ist ``companyroutes.xml``
 
 .. [5]
-    Das Laden von Prozeduren in MSFS ist fehlerhaft und lädt oft keine Prozeduren oder fügt andere Prozeduren hinzu.
+    Prozeduren werden möglicherweise nicht in MSFS geladen oder durch andere Prozeduren ersetzt.
 
 .. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png

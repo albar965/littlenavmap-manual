@@ -152,6 +152,8 @@ Microsoft Flight Simulator 2020
 -  Navdata updates are not read properly from the MSFS scenery library. This is in general no issue
    since you can also update the navdata in *Little Navmap* with the Navigraph FMS Data Manager to keep the
    program in sync with MSFS. Stock data is not affected by this.
+-  You can set a parking spot or fuel pad as starting position in a flight plan but note that runways and
+   helipads as starting positions will be ignored by MSFS.
 -  MSFS multiplayer and real-time AI cannot be displayed yet. These do not appear in the SimConnect
    interface.
 -  Simulator weather cannot be shown for MSFS since SimConnect weather functions are deprecated and

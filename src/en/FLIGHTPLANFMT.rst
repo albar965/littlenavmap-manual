@@ -130,6 +130,10 @@ You can export this format directly using :ref:`export-msfs-flight-plan`.
 While the format supports procedures there may appear problems in MSFS loading these. Procedures might be omitted or new ones inserted.
 Furthermore MSFS does not support the selection of transitions and often inserts these automatically.
 
+You can set a parking spot or fuel pad as starting position but note that runways and helipads as starting
+positions will be ignored by MSFS.
+
+
 .. _flight-plan-formats-fsx-pln:
 
 |PLN| FSX and Prepar3D
@@ -631,7 +635,7 @@ dialog on tab ``Flight Plan``.
      Full name is ``companyroutes.xml``
 
 .. [5]
-    The loading of procedures in MSFS might not load procedures or might add other procedures.
+    Procedures might not load in MSFS or might be replaced by other procedures.
 
 .. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png
