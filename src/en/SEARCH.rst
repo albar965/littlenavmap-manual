@@ -122,6 +122,55 @@ result table or press ``Ctrl+R`` to clear all search criteria.
         field. This shows all airports of the Orbx New Zealand South Island
         add-on scenery that have lighted runways.
 
+.. _airport-search-ident:
+
+Ident in Airport Search
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The input field ``Ident`` in the airport search tab searches for all available airport identifiers.
+These are:
+
+-  ``Ident``: Mostly equal to ICAO code but can be differnt especially for small airfields. X-Plane
+   uses partially an unofficial code in this field like ``XPA000B``. Available for all simulators and
+   Navigraph navdata.
+-  ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
+   available in X-Plane.
+-  ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
+   The FAA code is only available in X-Plane.
+-  ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
+   Available in X-Plane and Navigraph navdata.
+-  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
+   X-Plane.
+
+The airport codes are also shown in the information windows, tooltips and in the map
+labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal
+ident is avoided if possible.
+
+**Example:**
+
+``Akutan`` is shown as ``Akutan (PAUT)`` with its official ICAO code ``PAUT`` instead of the
+internal X-Plane code ``XPA000B``.
+
+**Search Example:**
+
+Searching for ident ``KOI`` gives the airports ``Oberlin Muni (KOIN)``, ``Lt Warren Eaton (KOIC)``
+and ``Kirkwall (EGPA)`` where ``EGPA`` has the IATA code ``KOI``.
+
+.. tip::
+
+    Hide the additonal airport codes if you do not use X-Plane or if you are not interested in
+    these columns. You can do this by moving the columns to the rightmost position or by shrinking them
+    to minimum size. See :ref:`table-view`.
+
+.. _airport-search-override:
+
+Override in Airport Search
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entering an airport ident using three letters or more ignores all other search options and shows only airports matching this ident.
+
+This is indicated by the message ``Ident overriding other search options.`` in the search window footer.
+
 Search Result Table View
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -1,8 +1,6 @@
 |Information| Informationen
 -------------------------------------
 
-.. _General:
-
 Allgemeines
 ~~~~~~~~~~~
 
@@ -109,6 +107,38 @@ Ein Reiter, der mehrere Unterreiter für Flugplatzinformationen hat.
 
 Die sechs Reiter ``Übersicht``, ``Runways``, ``Com``, ``Prozeduren``, ``Nächste`` und ``Wetter`` unterhalb
 der Reiter ``Flugplatz`` zeigen Informationen für einen ausgewählten Platz.
+
+.. _airport-ident-info:
+
+Flugplätze können je nach Simulator mehrere Kennungen haben. Inoffizielle interne Kennungen
+werden in der *Little Navmap*-Benutzeroberfläche vermieden, können aber dennoch in einigen
+Fällen angezeigt werden.
+
+Siehe auch :ref:`airport-search-ident` für Sucheinstellungen zu Flugplätzen
+
+-  **Kennung, die in Klammern nach dem Flugplatznamen angezeigt wird:** Entweder ICAO, FAA, IATA,
+   lokale Kennung oder interne Kennung, je nach Simulator und Verfügbarkeit.
+-  ``ICAO``: Vierbuchstabige `ICAO-Kennung <https://de.wikipedia.org/wiki/ICAO-Code>`__. Nur
+   in X-Plane verfügbar.
+-  ``FAA``: In den Vereinigten Staaten verwendete Kennung, die von der `Federal Aviation
+   Administration <https://www.faa.gov/>`__ vergeben wird. Die FAA-Kennung ist nur in X-Plane
+   verfügbar.
+-  ``IATA``: Dreistellige `IATA Flugplatzkennung  <https://de.wikipedia.org/wiki/IATA-Flughafencode>`__.
+   Verfügbar in X-Plane und Navigraph  Navigationsdaten.
+-  ``Lokale Kennung``: Offizielle lokale Flugplatzkennung, die meist für kleine Flugplätze
+   verwendet wird. Nur in X-Plane verfügbar.
+-  ``X-Plane Kennung:``: Interne Kennung für X-Plane Flugplätze.
+
+Die Flugplatzkennungen werden auch in den Informationsfenstern, Tooltips und optional in den
+Kartenbeschriftungen sowie in :doc:`ROUTEDESCR` angezeigt. Es werden ICAO-, FAA-, IATA- und lokale
+Kennungen angezeigt, wobei die internen wenn möglich vermieden werden.
+
+Die Anzeige von Kennungen wird weggelassen, wenn sie nicht verfügbar sind.
+
+**Beispiel:**
+
+``Akutan`` wird auf der Karte als ``Akutan (PAUT)`` mit seiner offiziellen ICAO-Kennung ``PAUT`` anstelle der
+internen X-Plane-Kennung ``XPA000B`` angezeigt.
 
 .. _airport-general:
 

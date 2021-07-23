@@ -227,7 +227,7 @@ and databases.
 
 Note that this does not override the full path and spaces are replaced with underscores.
 
-**Example**:
+**Example:**
 
 How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings folder on Windows:
 

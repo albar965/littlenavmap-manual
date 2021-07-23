@@ -95,6 +95,36 @@ A tab that has several sub-tabs for airport information.
 The six tabs ``Overview``, ``Runways``, ``Com``, ``Procedures``, ``Nearest`` and ``Weather`` below
 the airport tab show information for one selected airport.
 
+.. _airport-ident-info:
+
+Airports can have several idents/codes depending on simulator. Unofficial internal idents are
+avoided in the *Little Navmap* user interface but can still show up in some cases.
+
+See also :ref:`airport-search-ident` for airport search options.
+
+-  **Ident or code shown in brackets after airport name:** Either ICAO, FAA, IATA, local code or
+   internal code depending on simulator and availability.
+-  ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
+   available in X-Plane.
+-  ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
+   The FAA code is only available in X-Plane.
+-  ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
+   Available in X-Plane and Navigraph navdata.
+-  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
+   X-Plane.
+-  ``X-Plane Ident:``: Internal identfier for X-Plane airports.
+
+The airport codes are also shown in the information windows, tooltips and optionally in the map
+labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal
+ident is avoided if possible.
+
+Code display is omitted if a code is not available.
+
+**Example:**
+
+``Akutan`` is shown as ``Akutan (PAUT)`` with its official ICAO code ``PAUT`` on the map instead of the
+internal X-Plane code ``XPA000B``.
+
 .. _airport-general:
 
 General

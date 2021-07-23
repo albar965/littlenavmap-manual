@@ -65,6 +65,13 @@ Explorer or macOS Finder into the *Little Navmap* main window to load
 them. Single flight plans and all allowed formats for loading as well as aircraft performance files
 are accepted.
 
+.. note::
+
+    Keep in mind that most flight plan formats are limited and not all information is provided or can be
+    loaded from a file. For example, cruise altitude might not be loaded from X-Plane FMS in some
+    cases, airways and departure parking spots cannot restored for several formats, transitions cannot
+    be loaded from MSFS PLN and more.
+
 .. warning::
 
         Always save a copy of the flight plan in LNMPLN format to be able to
@@ -2224,8 +2231,22 @@ windows.
 Allow Window docking
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This enabled per default. Disable this if you do not want floating (i.e. undocked) dock windows to
+This is enabled per default. Disable this if you do not want floating (i.e. undocked) dock windows to
 snap back into the main window while moving them around.
+
+See also :doc:`DOCKWINDOWS`.
+
+.. _allow-window-moving:
+
+Allow Window moving
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Enabled per default. Disable this to avoid moving dock windows around when accidentally clicking
+and dragging the title bar. This usually messes up the window layout. Disabling this function still
+allows to move floating (i.e. undocked) windows around.
+
+You can still resize the docked windows at the border between them and you can still turn a docked
+window into a floating window by double clicking on the title bar.
 
 See also :doc:`DOCKWINDOWS`.
 

@@ -131,6 +131,58 @@ Sie ``Strg+R``, um alle Suchkriterien zu löschen.
         findet. Dies zeigt alle Flugplätze der Orbx New Zealand South Island
         Add-on-Szenerie, die beleuchtete Start- und Landebahnen haben.
 
+.. _airport-search-ident:
+
+Kennung in der Flugplatzsuche
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Das Eingabefeld ``Kennung`` in der Registerkarte Flugplatzsuche sucht nach allen verfügbaren
+Flugplatzkennungen. Diese sind:
+
+-  ``Kennung``: Meistens gleich der ICAO-Kennung, kann aber speziell bei kleinen Flugplätzen auch
+   anders lauten. X-Plane verwendet teilweise eine inoffizielle Kennung in diesem Feld wie
+   ``XPA000B``. Verfügbar für alle Simulatoren und Navigraph Navigationsdaten.
+-  ``ICAO``: Vierbuchstabige `ICAO-Kennung <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Nur
+   in X-Plane verfügbar.
+-  ``FAA``: In den Vereinigten Staaten verwendete Flugplatzkennung, die von der `Federal Aviation
+   Administration <https://www.faa.gov/>`__ vergeben wird. Die FAA-Kennung ist nur in X-Plane
+   verfügbar.
+-  ``IATA``: Dreistellige `IATA Flugplatzkennung <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
+   Verfügbar in X-Plane und Navigraph  Navigationsdaten.
+-  ``Lokale Kennung``: Offizielle lokaler Flugplatzkennung, die meist für kleine Flugplätze
+   verwendet wird. Nur in X-Plane verfügbar.
+
+Die Flugplatzkennungen werden auch in den Informationsfenstern, Tooltips und in den
+Kartenbeschriftungen sowie in :doc:`ROUTEDESCR` angezeigt. Es werden ICAO-, FAA-, IATA- und lokale
+Kennungen angezeigt. Die interne Kennung wird nach Möglichkeit vermieden.
+
+**Beispiel:**
+
+``Akutan`` wird als ``Akutan (PAUT)`` mit seiner offiziellen ICAO-Kennung ``PAUT`` anstelle der
+internen X-Plane-Kennung ``XPA000B`` angezeigt.
+
+**Beispiel zur Suche:**
+
+Die Suche nach der Kennung ``KOI`` ergibt die Flugplätze ``Oberlin Muni (KOIN)``, ``Lt Warren
+Eaton (KOIC)`` und ``Kirkwall (EGPA)``, wobei ``EGPA`` den IATA-Code ``KOI`` hat.
+
+.. tip::
+
+    Blenden Sie die zusätzlichen Flugplatzkennungen aus, wenn Sie X-Plane nicht verwenden oder
+    wenn Sie an diesen Spalten nicht interessiert sind. Sie können dies tun, indem Sie die Spalten
+    ganz nach rechts verschieben oder auf Minimalgröße verkleinern. Siehe :ref:`table-view`.
+
+.. _airport-search-override:
+
+Kennung überlädt Flugplatzoptionen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Wenn Sie eine Flugplatzkennung mit drei oder mehr Buchstaben eingeben, werden alle anderen
+Suchoptionen ignoriert und nur Flugplätze angezeigt, die zu dieser Kennung passen.
+
+Dies wird durch die Meldung ``Kennung überlädt alle anderen Suchoptionen.`` in der Fußzeile des
+Suchfensters angezeigt.
+
 .. _search-result-table-view:
 
 Anzeige der Suchergebnistabelle

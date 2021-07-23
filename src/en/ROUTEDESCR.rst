@@ -112,6 +112,19 @@ Buttons
    You have to click ``Read Route Description`` before you can create a
    flight plan.
 
+
+.. _routedescr-airport-ident:
+
+Airport idents
+~~~~~~~~~~~~~~~~~
+
+ICAO, FAA, IATA and local codes are shown and the internal ident is avoided for display if possible.
+Note that IATA codes are only read for departure and destination since they can be easily confused
+with navaids en-route.
+
+Note that X-Plane internal codes like ``XPA000B`` are still recognized despite being avoided for
+display.
+
 Format
 ~~~~~~
 

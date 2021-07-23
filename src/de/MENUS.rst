@@ -70,6 +70,14 @@ Es werden einzelne Flugpläne und alle zulässigen Formate zum Laden von
 (``FMS``, ``FLP``, ``PLN``) sowie Flugzeugleistungsdateien (``lnmperf``)
 akzeptiert.
 
+.. note::
+
+       Beachten Sie, dass die meisten Flugplanformate eingeschränkt sind und nicht alle Informationen
+       bereitgestellt werden oder aus einer Datei geladen werden können. Zum Beispiel kann die
+       Reiseflughöhe in einigen Fällen nicht aus X-Plane FMS geladen werden, Luftstraßen und
+       Parkpositionen können für viele Formate nicht wiederhergestellt werden, Prozedurübergänge
+       können nicht aus MSFS PLN geladen werden und mehr.
+
 .. warning::
 
      Speichern Sie immer eine Kopie des Flugplans im PLN-Format, um alle
@@ -2271,11 +2279,27 @@ Weitere Informationen über Dockfenster finden Sie unter :doc:`DOCKWINDOWS`.
 
 .. _allow-window-docking:
 
-Dockfenster einrasten
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Dockfenster einrasten erlauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dies ist standardmäßig aktiviert. Deaktivieren Sie dies, wenn Sie nicht möchten, dass schwebende (d.h. nicht angedockte) Fenster beim Verschieben
 wieder in das Hauptfenster einrasten.
+
+Siehe auch :doc:`DOCKWINDOWS`.
+
+.. _allow-window-moving:
+
+Dockfenster verschieben erlauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Standardmäßig aktiviert. Deaktivieren Sie diese Einstellung, um zu vermeiden, dass Dockfenster verschoben
+werden, wenn Sie versehentlich auf die Titelleiste klicken und ziehen. Dies bringt
+normalerweise das Fensterlayout durcheinander. Wenn Sie diese Funktion deaktivieren, können Sie
+schwebende (d. h. nicht angedockte) Fenster immer noch verschieben.
+
+Sie können die Größe der angedockten Fenster immer noch am Rahmen zwischen den Fenstern ändern.
+Sie können auch ein angedocktes Fenster immer noch in ein schwebendes Fenster verwandeln, indem Sie auf
+die Titelleiste doppelt klicken.
 
 Siehe auch :doc:`DOCKWINDOWS`.
 
