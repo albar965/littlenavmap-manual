@@ -1451,6 +1451,12 @@ See also :ref:`airport-weather` and :ref:`weather`.
 
 The following options are available:
 
+Disabled
+''''''''''''''''
+
+Disables the weather source which also disables all file accesses. The menu item
+:ref:`show-airport-weather` and the toolbar button will disabled if this is selected.
+
 Flight Simulator
 ''''''''''''''''
 

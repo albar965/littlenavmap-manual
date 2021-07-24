@@ -1476,6 +1476,13 @@ Siehe auch :ref:`airport-weather` und :ref:`weather`.
 
 Die folgenden Optionen stehen zur Verfügung:
 
+Deaktiviert
+''''''''''''''''
+
+Deaktiviert die Wetterquelle, wodurch auch alle Dateizugriffe unterdrückt werden. Der Menüpunkt
+:ref:`show-airport-weather` und die Schaltfläche in der Symbolleiste werden deaktiviert, wenn dies
+ausgewählt ist.
+
 Flugsimulator
 '''''''''''''
 
