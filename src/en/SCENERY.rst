@@ -111,9 +111,19 @@ Microsoft Flight Simulator 2020  Airports and Navdata
 -  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS
    Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery
    mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to
-   all procedures in *Little Navmap*.
+   all procedures in *Little Navmap*. This is the default.
+
+   Also check the selection in menu ``Scenery Library`` -> ``Airspace Libraries``. Select
+   ``Navigraph`` and uncheck ``Simulator`` there.
+
 -  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph
    Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids.
+
+   The selection in menu ``Scenery Library`` -> ``Airspace Libraries`` should have ``Simulator``
+   checked. Uncheck ``Navigraph`` there.
+
+See :doc:`NAVDATA` and :ref:`load-scenery-library-p3d-fsx-airspaces` for more background
+information on these settings.
 
 See appendix :ref:`problems-msfs` for information about MSFS limitations and issues.
 
@@ -155,9 +165,8 @@ X-Plane directory ``Custom Data`` are read.
 FSX, Prepar3D and MSFS Airspaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* reads all airspaces from the scenery library of FSX
-based simulators. These airspaces are added in the airspace source
-``Simulator``.
+*Little Navmap* reads all airspaces from the scenery library of FSX, P3D and MSFS. These airspaces
+are added in the airspace source ``Simulator``.
 
 .. _load-scenery-library-openair-airspaces:
 
