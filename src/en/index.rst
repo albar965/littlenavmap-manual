@@ -18,7 +18,7 @@ X-Plane 11.
 
 **Do not use this program for real world navigation.**
 
-For *Little Navmap* versions |version|. Last updated on |today|.
+This user manual is for *Little Navmap* versions |version|.
 
 =========== ===========
 |Sunshadow| |Spherical|
@@ -118,6 +118,10 @@ This manual was created using `Sphinx <https://www.sphinx-doc.org/>`__ and the
 PDF and MOBI formats converted using `Calibre <https://calibre-ebook.com/>`__
 
 The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.
+
+--------------------------
+
+Version |release|. Last updated on |today|.
 
 .. |Spherical| image:: ../images/spherical_small.jpg
 .. |Sunshadow| image:: ../images/sunshadow_small.jpg

@@ -19,7 +19,7 @@ und X-Plane 11.
 
 **Dieses Programm darf nicht für die Navigation in der realen Luftfahrt verwendet werden.**
 
-Für *Little Navmap* Versionen |version|. Zuletzt aktualisiert am |today|.
+Dieses Benutzerhandbuch ist für *Little Navmap* Versionen |version|.
 
 Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler, `Anja Fahrner <https://www.anja-fahrner.de>`__ und `Alexander Barthel <https://www.littlenavmap.org>`__.
 
@@ -123,6 +123,10 @@ Diese Anleitung wurde mit `Sphinx <https://www.sphinx-doc.org/>`__ unter Benutzu
 Die PDF und MOBI Formate wurden mit Hilfe von `Calibre <https://calibre-ebook.com/>`__ konvertiert.
 
 Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
+
+--------------------------
+
+Version |release|. Zuletzt aktualisiert am |today|.
 
 .. |Spherical| image:: ../images/spherical_small.jpg
 .. |Sunshadow| image:: ../images/sunshadow_small.jpg
