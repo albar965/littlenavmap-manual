@@ -39,9 +39,9 @@ Tab Aircraft
 Aircraft Type
 ^^^^^^^^^^^^^
 
-See `List of ICAO aircraft type
-designators <https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators>`__
-(Wikipedia).
+See
+`ICAO - Aircraft Type Designators <https://www.icao.int/publications/DOC8643/Pages/Search.aspx>`__ or
+`Wikipedia - List of ICAO aircraft type designators <https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators>`__.
 
 X-Plane
 ''''''''''

@@ -38,7 +38,8 @@ Reiter Flugzeug
 
 Flugzeugtyp
 ^^^^^^^^^^^^^
-Siehe `Liste der Flugzeugtypencodes <https://de.wikipedia.org/wiki/Liste_der_Flugzeugtypencodes>`__ (Wikipedia).
+Siehe `ICAO - Aircraft Type Designators <https://www.icao.int/publications/DOC8643/Pages/Search.aspx>`__ oder
+`Wikipedia - List of ICAO aircraft type designators <https://de.wikipedia.org/wiki/Liste_der_Flugzeugtypencodes>`__.
 
 X-Plane
 ''''''''''
