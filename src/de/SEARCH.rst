@@ -448,6 +448,8 @@ Dadurch werden Änderungen in der Tabellenansicht, wie Spaltenreihenfolge
 und Sortierreihenfolge, berücksichtigt. Das CSV beinhaltet eine
 Kopfzeile.
 
+Importieren Sie den CSV-Text in ein Tabellenkalkulationsprogramm mit UTF-8-Kodierung und einem Semikolon als Trennzeichen.
+
 .. _select-all:
 
 Alle auswählen

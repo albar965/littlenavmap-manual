@@ -414,6 +414,8 @@ Copy the selected entries in CSV format to the clipboard. This will
 observe changes to the table view like column order and sort order. The
 CSV includes a header line.
 
+Import the CSV-Text into spreadsheed programs using UTF-8 encoding and a semicolon as a separator.
+
 Select All
 ^^^^^^^^^^
 

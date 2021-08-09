@@ -542,6 +542,8 @@ Kopiert die ausgewählten Einträge im CSV-Format in die Zwischenablage.
 Der kopierte CSV-Text enthält eine Kopfzeile. Änderungen in der
 Tabellenansicht, wie z.B. die Spaltenreihenfolge, werden dabei beachtet.
 
+Importieren Sie den CSV-Text in ein Tabellenkalkulationsprogramm mit UTF-8-Kodierung und einem Semikolon als Trennzeichen.
+
 .. _select-all-0:
 
 Alle auswählen

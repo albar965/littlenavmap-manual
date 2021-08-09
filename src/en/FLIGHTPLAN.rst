@@ -520,6 +520,8 @@ Copy the selected entries in CSV format to the clipboard. The CSV will
 include a header. This will reflect changes of the table view like
 column order.
 
+Import the CSV text into spreadsheed programs using UTF-8 encoding and a semicolon as a separator.
+
 .. _select-all-0:
 
 Select All
