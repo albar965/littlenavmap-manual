@@ -43,6 +43,7 @@ Flugplan
    Flugplantabelle.
 -  ``Spalten aus der Flugplantabelle zum Drucken auswählen``: Klicken Sie auf die Namen,
    um Flugplanspalten ein- oder auszuschließen.
+   Beachten Sie, dass die Spalten in der gleichen Reihenfolge gedruckt werden, wie in der :ref:`flight-plan-table` gezeigt.
 
 Start- und Zielflugplatz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
