@@ -598,6 +598,9 @@ Dies ist kein Flugplanformat. Diese Funktion speichert den aktuellen
 Flugplan als eine einzige HTML-Webseite mit allen Bildern eingebettet.
 Sie können diese Seite in jedem Webbrowser öffnen.
 
+Die exportierte Datei spiegelt die Änderungen in der Flugplantabellenansicht wider, wie die
+Spaltenreihenfolge. Spalten, die ausgeblendet oder auf eine Mindestbreite verkleinert sind, werden nicht berücksichtigt.
+
 .. _garmin-notes:
 
 Hinweise zu den Garmin-Formaten GFP und FPL

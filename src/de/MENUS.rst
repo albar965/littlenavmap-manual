@@ -245,6 +245,9 @@ Exportiere Flugplan als  HTML-Seite
 
 Speichert die angezeigte Flugplantabelle als HTML-Datei, die in einem Webbrowser angezeigt werden kann. Symbole werden in die Seite eingebettet.
 
+Die exportierte Datei spiegelt die Änderungen in der Flugplantabellenansicht wider, wie die
+Spaltenreihenfolge. Spalten, die ausgeblendet oder auf eine Mindestbreite verkleinert sind, werden nicht berücksichtigt.
+
 .. _export-flight-plan-as-gpx:
 
 Flugplan als GPX exportieren

@@ -584,6 +584,9 @@ This is not a flight plan format. This function saves the current flight
 plan as a single HTML web page with all images embedded. You can open
 this page in any web browser.
 
+The exported file will reflect changes of the flight plan table view like
+column order. Columns which are hidden or shrinked to minimum width are excluded.
+
 .. _garmin-notes:
 
 Notes about the Garmin Formats GFP and FPL

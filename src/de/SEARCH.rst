@@ -446,7 +446,7 @@ Das Gleiche, wie :ref:`map-context-menu`.
 Kopiert die ausgewählten Einträge im CSV-Format in die Zwischenablage.
 Dadurch werden Änderungen in der Tabellenansicht, wie Spaltenreihenfolge
 und Sortierreihenfolge, berücksichtigt. Das CSV beinhaltet eine
-Kopfzeile.
+Kopfzeile. Spalten, die ausgeblendet oder auf eine Mindestbreite verkleinert sind, werden nicht berücksichtigt.
 
 Importieren Sie den CSV-Text in ein Tabellenkalkulationsprogramm mit UTF-8-Kodierung und einem Semikolon als Trennzeichen.
 

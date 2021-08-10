@@ -256,6 +256,9 @@ Export Flight Plan as HTML Page
 Saves the flight plan table as shown to HTML file which can be viewed in
 a web browser. Icons are embedded in the page.
 
+The exported file will reflect changes of the flight plan table view like
+column order. Columns which are hidden or shrinked to minimum width are excluded.
+
 .. _export-flight-plan-as-gpx:
 
 Export Flight Plan as GPX

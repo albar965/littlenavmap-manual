@@ -518,7 +518,7 @@ text ``hidden on map`` if this is the case.
 
 Copy the selected entries in CSV format to the clipboard. The CSV will
 include a header. This will reflect changes of the table view like
-column order.
+column order. Columns which are hidden or shrinked to minimum width are excluded.
 
 Import the CSV text into spreadsheed programs using UTF-8 encoding and a semicolon as a separator.
 
