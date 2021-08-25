@@ -188,34 +188,47 @@ The XML schema for validation can be found here: `lnmpln.xsd <https://www.little
 Order of elements does not matter. Missing elements will be logged as warning except optional ones.
 
 .. code-block:: xml
-         :caption: Flight Plan File Example
+         :caption: Flight Plan File Example. Documentation included as XML comments.
          :name: flightplan-example
 
          <?xml version="1.0" encoding="UTF-8"?>
          <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
            <Flightplan>
+
+             <!-- Coordinates are always latitude and longitude in decimal/signed notation -->
+
+             <!-- ====== Header with metadata ====== -->
              <Header>
-               <FlightplanType>IFR</FlightplanType>
-               <CruisingAlt>30000</CruisingAlt>
-               <CreationDate>2020-09-11T18:05:15</CreationDate>
-               <FileVersion>1.0</FileVersion>
+               <FlightplanType>IFR</FlightplanType>                 <!-- IFR or VFR as set in user interface -->
+               <CruisingAlt>30000</CruisingAlt>                     <!-- feet -->
+               <CreationDate>2020-09-11T18:05:15+02</CreationDate>  <!-- Local time with timezone offset -->
+               <FileVersion>1.0</FileVersion>                       <!-- File format version -->
                <ProgramName>Little Navmap</ProgramName>
-               <ProgramVersion>2.6.0.beta</ProgramVersion>
+               <ProgramVersion>2.6.0.beta</ProgramVersion>          <!-- Little Navmap version used for saving -->
                <Documentation>https://www.littlenavmap.org/lnmpln.html</Documentation>
-               <Description>Flight plan remarks</Description>
+               <Description>Flight plan remarks</Description>       <!-- Remarks as entered in user interface tab Remarks. -->
              </Header>
-             <SimData>MSFS</SimData>
-             <NavData Cycle="2008">NAVIGRAPH</NavData>
+             <SimData>MSFS</SimData>                    <!-- Use simulator and AIRAC if available -->
+             <NavData Cycle="2008">NAVIGRAPH</NavData>  <!-- Use navdata and AIRAC -->
+
+             <!-- ====== Used aircraft performance ====== -->
              <AircraftPerformance>
                <FilePath>Normal Climb and Descent all Equal.lnmperf</FilePath>
-               <Type>MODEL</Type>
+               <Type>BE51</Type>
                <Name>Normal Climb and Descent</Name>
              </AircraftPerformance>
+
+             <!-- ====== Departure parking position ====== -->
              <Departure>
                <Pos Lon="-120.538055" Lat="46.569828" Alt="1069.00"/>
-               <Start>PARKING 1</Start>
+               <Start>PARKING 1</Start>    <!-- Name of position -->
+               <Type>Parking</Type>        <!-- Type of position. None, Airport, Runway, Parking or Helipad. -->
+               <Heading>5.1</Heading>      <!-- True heading of the position -->
              </Departure>
+
+             <!-- ====== Departure and arrival procedures ====== -->
              <Procedures>
+               <!-- SID and STAR are resolved by name and runway when loading -->
                <SID>
                  <Name>WENAS7</Name>
                  <Runway>09</Runway>
@@ -226,22 +239,25 @@ Order of elements does not matter. Missing elements will be logged as warning ex
                  <Runway>16</Runway>
                  <Transition>YDC</Transition>
                </STAR>
+               <!-- Approaches are resolved by either ARINC or the combination of Name, Runway, Type and Suffix -->
                <Approach>
-                 <Name>TATVI</Name>
-                 <ARINC>I16-Z</ARINC>
-                 <Runway>16</Runway>
-                 <Type>ILS</Type>
-                 <Suffix>Z</Suffix>
-                 <Transition>HUMEK</Transition>
-                 <TransitionType>F</TransitionType>
+                 <Name>TATVI</Name>                   <!-- Optional approach name. Name of approach fix. Requires ARINC if not given. -->
+                 <ARINC>I16-Z</ARINC>                 <!-- ARINC name of the approach -->
+                 <Runway>16</Runway>                  <!-- Approach runway. Not given for circle-to-land approaches. -->
+                 <Type>ILS</Type>                     <!-- Optional approach type -->
+                 <Suffix>Z</Suffix>                   <!-- Optional approach suffix -->
+                 <Transition>HUMEK</Transition>       <!-- Transition name if used -->
+                 <TransitionType>F</TransitionType>   <!-- Optional Transition type -->
                </Approach>
              </Procedures>
+
+             <!-- ====== Alternate airports ====== -->
              <Alternates>
                <Alternate>
-                 <Name>Penticton</Name>
-                 <Ident>CYYF</Ident>
-                 <Type>AIRPORT</Type>
-                 <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/>
+                 <Name>Penticton</Name>                                 <!-- Optional name -->
+                 <Ident>CYYF</Ident>                                    <!-- Required ident -->
+                 <Type>AIRPORT</Type>                                   <!-- Optional type -->
+                 <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/> <!-- Optional position -->
                </Alternate>
                <Alternate>
                  <Name>Grand Forks</Name>
@@ -250,31 +266,44 @@ Order of elements does not matter. Missing elements will be logged as warning ex
                  <Pos Lon="-118.430496" Lat="49.015633" Alt="1393.00"/>
                </Alternate>
              </Alternates>
+
+             <!-- ====== En-route waypoints including departure and destination ====== -->
+             <!-- The elements Ident, Type and Pos are required to resolve the waypoint in the database.
+                  Region is optional and used for resolving if given.
+                  Procedure waypoints are never included. -->
              <Waypoints>
+
+               <!-- ====== Departure airport. Other waypoint types are allowed for flight plan snippets. ====== -->
                <Waypoint>
                  <Name>Yakima Air Terminal/Mcallister</Name>
                  <Ident>KYKM</Ident>
                  <Type>AIRPORT</Type>
                  <Pos Lon="-120.543999" Lat="46.568199" Alt="1069.00"/>
                </Waypoint>
+
+               <!-- ====== User defined waypoint ====== -->
                <Waypoint>
                  <Name>User defined point</Name>
                  <Ident>USERPT</Ident>
                  <Region>K1</Region>
                  <Type>USER</Type>
                  <Pos Lon="-120.848000" Lat="47.676601" Alt="24960.89"/>
-                 <Description>User waypoint remarks</Description>
+                 <Description>User waypoint remarks</Description>       <!-- Description as entered in user interface -->
                </Waypoint>
+
+               <!-- ====== Direct to waypoint ====== -->
                <Waypoint>
                  <Ident>DIABO</Ident>
                  <Region>K1</Region>
                  <Type>WAYPOINT</Type>
                  <Pos Lon="-120.937080" Lat="48.833759" Alt="30000.00"/>
                </Waypoint>
+
+               <!-- ====== Airway waypoints ====== -->
                <Waypoint>
                  <Ident>IWACK</Ident>
                  <Region>K1</Region>
-                 <Airway>J503</Airway>
+                 <Airway>J503</Airway>  <!-- Airway leading towards this waypoint -->
                  <Type>WAYPOINT</Type>
                  <Pos Lon="-120.837067" Lat="48.932140" Alt="30000.00"/>
                  <Description>Waypoint remarks</Description>
@@ -286,6 +315,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
                  <Type>WAYPOINT</Type>
                  <Pos Lon="-120.767761" Lat="49.000000" Alt="30000.00"/>
                </Waypoint>
+
+               <!-- ====== Destination airport. Other waypoint types are allowed for flight plan snippets. ====== -->
                <Waypoint>
                  <Name>Kelowna</Name>
                  <Ident>CYLW</Ident>
@@ -313,12 +344,14 @@ The XML schema for validation can be found here: `lnmperf.xsd <https://www.littl
 Order of elements does not matter. Missing elements will be logged as warning except optional ones.
 
 .. code-block:: xml
-        :caption: Aircraft Performance File Example
+        :caption: Aircraft Performance File Example. Documentation included as XML comments.
         :name: performance-example
 
         <?xml version="1.0" encoding="UTF-8"?>
         <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmperf.xsd">
           <AircraftPerf>
+
+             <!-- ====== Header with metadata ====== -->
             <Header>
               <CreationDate>2020-11-16T22:43:35</CreationDate>
               <FileVersion>1.0</FileVersion>
@@ -326,23 +359,30 @@ Order of elements does not matter. Missing elements will be logged as warning ex
               <ProgramVersion>2.6.4.beta</ProgramVersion>
               <Documentation>https://www.littlenavmap.org/lnmperf.html</Documentation>
             </Header>
+
+             <!-- ====== Options ====== -->
             <Options>
-              <Name>Epic E1000 G1000 Edition</Name>
-              <AircraftType>EPIC</AircraftType>
+              <Name>Epic E1000 G1000 Edition</Name>  <!-- Aircraft name - free text -->
+              <AircraftType>EPIC</AircraftType>      <!-- Aircraft ICAO type which is matched to simulator aircraft ICAO type -->
               <Description>Climb: 80% torque, 1600 RPM, 160 KIAS, max ITT 760°
         Cruise: FL260-FL280, 1400 RPM, adjust torque to 55 GPH fuel flow, max ITT 760°
         Descent: Idle, 250 KIAS
 
-        https://www.littlenavmap.org</Description>
-              <FuelAsVolume>0</FuelAsVolume>
-              <JetFuel>1</JetFuel>
+        https://www.littlenavmap.org</Description>  <!-- Remarks as entered in user interface tab Remarks. -->
+              <FuelAsVolume>0</FuelAsVolume>        <!-- 0: Used fuel unit is lbs. 1: Used fuel unit is gal. -->
+              <JetFuel>1</JetFuel>                  <!-- Indicator for fuel type needed when switching between units in user interface.
+                                                         Also checked for simulator aircraft. -->
             </Options>
+
+            <!-- ====== Performance data. All values are either lbs or gallons depending on FuelAsVolume.
+                        Speed is always TAS. Vertical speed is always ft/min. Fuel flow measure in unit per hour. ====== -->
             <Perf>
               <ContingencyFuelPercent>5.0</ContingencyFuelPercent>
               <ExtraFuelLbsGal>0.000</ExtraFuelLbsGal>
               <MinRunwayLengthFt>1600.000</MinRunwayLengthFt>
               <ReserveFuelLbsGal>500.000</ReserveFuelLbsGal>
-              <RunwayType>SOFT</RunwayType>
+              <RunwayType>SOFT</RunwayType>                    <!-- Either HARD (hard only), SOFT (hard and soft),
+                                                                    WATER (water only) or WATERLAND (equals to either WATER or SOFT) for amphib -->
               <TaxiFuelLbsGal>20.000</TaxiFuelLbsGal>
               <UsableFuelLbsGal>1900.000</UsableFuelLbsGal>
               <Alternate>
