@@ -392,28 +392,6 @@ show up properly on the map.
 
 Removes all loaded KML files from the map.
 
-.. _work-offline:
-
-|Offline| Work Offline
-^^^^^^^^^^^^^^^^^^^^^^
-
-Stops loading of map data from the Internet. This affects the
-*OpenStreetMap*, *OpenTopoMap* and all the other online map themes as
-well as the elevation data. A red ``Offline.`` indication is shown in
-the status bar if this mode is enabled.
-
-You should restart the application after going online again.
-
-Note that this function does not affect the download of weather information.
-You can disable this in the respective menus separately.
-
-.. warning::
-
-     Enabling this function unintentionally will result in a blocky or fuzzy map display
-     if online maps are used.
-
-     This is because the map download of new image tiles is blocked.
-
 .. _save-map-as-image:
 
 |Save Map as Image| Save Map as Image

@@ -376,29 +376,6 @@ alle Dateien ordnungsgemäß auf der Karte angezeigt werden.
 
 Löscht alle geladenen KML Dateien von der Karte.
 
-.. _work-offline:
-
-|Offline| Offline arbeiten
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Beendet das Laden von Kartendaten aus dem Internet. Dies betrifft die
-*OpenStreetMap*, *OpenTopoMap* und alle anderen Online-Map-Themen sowie
-die Höhendaten. Eine rote Anzeige ``Offline`` wird angezeigt, wenn
-dieser Modus aktiviert ist.
-
-Sie sollten die Anwendung neu starten, nachdem Sie wieder online
-gegangen sind.
-
-Beachten Sie, dass diese Funktion nicht das Herunterladen von Wetterinformationen
-betrifft. Diese können Sie in den entsprechenden Menüs separat abschalten.
-
-.. warning::
-
-     Das unbeabsichtigte Aktivieren dieser Funktion führt zu einer blockartigen oder unscharfen Kartendarstellung,
-     wenn Online-Karten verwendet werden.
-
-     Dies liegt daran, dass der Kartendownload von neuen Bildkacheln blockiert wird.
-
 .. _save-map-as-image:
 
 |Save Map as Image| Karte als Bild speichern
