@@ -115,32 +115,32 @@ Ordner.
 Erster Start unter macOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Beim Starten der Anwendung erhalten Sie die Meldung
-``Little Navmap stammt von einem nicht identifizierten Entwickler. Sind Sie sicher, dass Sie es öffnen wollen?``.
+Hinweis beim ersten Start unter macOS: Beim Starten der Anwendung erhalten Sie die Meldung ``Little Navmap stammt von einem nicht identifizierten Entwickler. Sind Sie sicher, dass Sie es öffnen wollen?``.
 
-Um dies zu umgehen, klicken Sie mit der rechten Maustaste oder ``Strg+Klick`` auf die Anwendung und wählen ``Öffnen``. Wahrscheinlich müssen Sie einmalig einen Administratornamen und Ihr Passwort eingeben. Nach dieser Prozedur kann das Programm normal gestartet werden.
+Je nachdem, ob Sie Big Sur oder Catalina verwenden, kann die Vorgehensweise etwas anders sein.
 
-Dies ist abhängig von der verwendeten macOS-Version.
+#. Klicken Sie im Finder mit der rechten Maustaste oder bei gedrückter Strg-Taste auf *Little Navmap* und wählen Sie ``Öffnen``. 3. Es erscheint ein Dialog ``Little Navmap kann nicht geöffnet werden, da es von einem unbekannten Entwickler stammt.`` Klicken Sie auf ``Ok``.
+#. Gehen Sie zu ``Systemeinstellungen`` -> ``Sicherheit und Datenschutz``. Sie werden eine Meldung sehen, die *Little Navmap* erwähnt. Klicken Sie auf ``Trotzdem öffnen``.
+#. Daraufhin erscheint ein Dialog ``Sind Sie sicher, dass Sie es öffnen wollen?``. Klicken Sie ``Öffnen``.
 
 Quarantäne-Flag für *Little Xpconnect* auf macOS entfernen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dies gilt für die macOS-Versionen Catalina und höher, wenn X-Plane das Plugin nicht lädt. Sie können das Quarantäne-Flag wie folgt löschen.
+Sie müssen das Quarantäne-Flag aus dem Plugin entfernen, nachdem Sie es heruntergeladen und entpackt haben. Andernfalls wird X-Plane das Plugin nicht automatisch laden.
 
-#. Öffnen Sie ein Terminal-Fenster, dann geben Sie ``cd`` ein, drücken Sie anschließend die Leertaste, aber nicht die Eingabetaste.
-#. Ziehen Sie den Ordner *Little Xpconnect*, der sich in Ihrem ``.../X-Plane 11/Resources/plugins``-Ordner befindet, vom Finder in das Terminal-Fenster.
-#. Dies fügt den vollständigen Pfad Ihres *Little Xpconnect*-Ordners zum Terminal hinzu.
-#. Drücken Sie die Return-Taste.
-#. Geben Sie den Befehl ``sudo xattr -r -d com.apple.quarantine *`` ein.
-#. Geben Sie Ihr Passwort ein und drücken Sie die Eingabetaste.
+Je nachdem, ob Sie Big Sur oder Catalina verwenden, kann das Verfahren etwas anders aussehen.
 
-Lassen Sie das ``*`` nicht weg und vergewissern Sie sich, dass Sie sich im richtigen Ordner befinden, nachdem Sie den Befehl ``cd`` ausgeführt haben.
+#. Kopieren Sie den gesamten Plugin-Ordner ``Little Xpconnect`` in den Ordner ``plugins`` in ``Resources`` in der X-Plane Installation. Der komplette Pfad sollte wie ``.../X-Plane 11/Resources/plugins/Little Xpconnect`` aussehen.
+#. Klicken Sie mit der rechten Maustaste oder bei gedrückter Strg-Taste im Finder auf das mitgelieferte Skript ``Prepare Little Xpconnect.command`` im Ordner ``.../plugins/Little Xpconnect`` und wählen Sie ``Öffen`` und ``Terminal``.
+#. Es erscheint ein Dialog ``Prepare Little Xpconnect.command kann nicht geöffnet werden, da es von einem nicht identifizierten Entwickler stammt.`` Klicken Sie auf ``Ok``.
+#. Gehen Sie zu ``Systemeinstellungen`` -> ``Sicherheit und Datenschutz``. Sie werden eine Meldung sehen, die das Skript ``Prepare Little Xpconnect.command`` erwähnt. Klicken Sie auf ``Trotzdem Öffnen``.
+#. Daraufhin erscheint ein Dialog ``Sind Sie sicher, dass Sie es öffnen wollen?``. Klicken Sie ``Öffnen``.
 
-``sudo`` ist ein Befehl, der es Ihnen erlaubt, andere Befehle als Administrator auszuführen. Daher fragt er nach Ihrem Passwort. Der Befehl ``xattr`` ändert Dateiattribute. Das Flag ``-r`` weist xattr an, auch alle Unterordner zu ändern, und das Flag ``-d com.apple.quarantine`` weist es an, das Quarantäne-Flag zu löschen.
+Das Skript zeigt ein paar Erklärungen an und fragt nach Ihrem Passwort, das es ihm erlaubt, einen Befehl als Administrator auszuführen. Sie können sich das Skript, das eine Textdatei ist, ansehen, um zu sehen, welche Befehle ausgeführt werden.
 
-Die *Little Xpconnect* Installation war erfolgreich, wenn Sie es im X-Plane Plugin Manager sehen können.
+Die Installation von *Little Xpconnect* war erfolgreich, wenn Sie es im X-Plane Plugin Manager sehen können.
 
-Sie müssen diesen Vorgang bei jedem Update von *Little Xpconnect* wiederholen.
+Sie müssen diesen Vorgang jedes Mal wiederholen, wenn Sie *Little Xpconnect* aktualisieren.
 
 Linux
 ~~~~~

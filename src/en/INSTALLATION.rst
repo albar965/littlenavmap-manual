@@ -118,32 +118,36 @@ First Start on macOS
 Note on first start on macOS: When starting the application you will
 get a message ``Little Navmap is from an unidentified developer. Are you sure you want to open it?``.
 
-To bypass this right click or ``Ctrl+Click`` on the application and
-select ``Open``. You probably have to enter an administrator name and
-password once. The program can be started normally after this procedure.
+The procedure may be slightly different depending on whether you're using Big Sur or Catalina.
 
-This depends on the used macOS version.
+#. Right or Ctrl-Click in the Finder on *Little Navmap* and select ``Open``.
+#. You will see a dialog ``Little Navmap cannot be opened because it is from an unidentified developer.`` Click ``Ok``.
+#. Go to ``System Preferences`` -> ``Security and Privacy``. You will see a message mentioning
+   *Little Navmap*. Click ``Open Anyway``.
+#. Next a dialog ``Are you sure you want to open it?`` pops up. Click ``Open``.
 
 Clearing the Quarantine Flag for *Little Xpconnect* on macOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This applies for macOS versions Catalina and above if X-Plane does not load the plugin.
-You can clear the quarantine flag as follows.
+You have to remove the quarantine flag from the plugin after downloading and extracting it.
+Otherwise X-Plane will silently not load the plugin.
 
-#. Open a Terminal window, then type ``cd``, next press the spacebar but don't press the Return key.
-#. Drag your *Little Xpconnect* folder located inside your ``.../X-Plane 11/Resources/plugins``
-   folder from the Finder into the terminal window.
-#. This will then add the full path of your *Little Xpconnect* folder to the terminal.
-#. Press the Return key.
-#. Enter the command ``sudo xattr -r -d com.apple.quarantine *``
-#. Input your password and press return.
+The procedure may be slightly different depending on whether you're using Big Sur or Catalina.
 
-Do not omit the ``*`` and make sure you are in the right folder after executing the ``cd`` command.
+#. Copy the whole plugin folder ``Little Xpconnect`` into the folder ``plugins``
+   in ``Resources`` in the X-Plane installation. The complete path
+   should look like ``.../X-Plane 11/Resources/plugins/Little Xpconnect``.
+#. Right or Ctrl-Click in the Finder on the included script ``Prepare Little Xpconnect.command``
+   in the folder ``.../plugins/Little Xpconnect`` and select ``Open With`` and ``Terminal``.
+#. You will see a dialog ``Prepare Little Xpconnect.command cannot be opened because it is from
+   an unidentified developer.`` Click ``Ok``.
+#. Go to ``System Preferences`` -> ``Security and Privacy``. You will see a message mentioning
+   the script ``Prepare Little Xpconnect.command``. Click ``Open Anyway``.
+#. Next a dialog ``Are you sure you want to open it?`` pops up. Click ``Open``.
 
-``sudo`` is a command that allows you to run other commands as
-administrator. Therefore, it asks for your password. The command ``xattr`` changes
-attributes. The flag ``-r`` instructs xattr to change all subfolders too and the flag
-``-d com.apple.quarantine`` tells it to delete the quarantine flag.
+The script shows a few explantions and asks for your password which allows it to run a
+command as an administrator. You can look at the script which is a text file to see what
+commands are executed.
 
 The *Little Xpconnect* installation was successful if you can see it in the X-Plane plugin manager.
 
