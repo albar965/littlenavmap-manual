@@ -1,10 +1,10 @@
 ## Formatos de Coordenadas {#coordinates-formats}
 
-Este capítulo describe brevemente los formatos de coordenadas reconocidos en los dialogos de posición del plan de vuelo, y puntos del usuario.
+Este capítulo describe brevemente los formatos de coordenadas reconocidos en los diálogos de posición del plan de vuelo, y puntos del usuario.
 
-Los campos de entrada muestran un mensaje debajo que indica si las coordenadas han sido reconocidas , asi como la traducción al formato escogido en el dialogo  `Opciones ` de la pestaña `Unidades`. Aparecerá un mensaje en rojo en caso de error.
+Los campos de entrada muestran un mensaje debajo que indica si las coordenadas han sido reconocidas, asi como la traducción al formato escogido en el dialogo  `Opciones ` de la pestaña `Unidades`. Aparecerá un mensaje en rojo en caso de error.
 
-Verifique la traslación de las coordenadas , para ver si la entrada ha sido correctamente analizada.
+Verifique la traslación de las coordenadas, para ver si la entrada ha sido correctamente analizada.
 
 ![Edit Flight Plan Position](../images/edit_flightplan_waypoint_tooltip.jpg "Edit Flight Plan Position")
 
@@ -17,21 +17,21 @@ Latitud primero y Longitud después.
 
 Se requieren designadores N/S y E/W. El campo no es importante.
 
-Las marcas de grados minutos y segundos pueden ser omitidas si los números se separan con espacios.
+Las marcas de grados, minutos y segundos pueden ser omitidas si los números se separan con espacios.
 
-Los espacios se requieren para separar longitud - latitud, y grados/minutos/segundos , unicamente si no se han utilizado las marcas.
+Los espacios se requieren para separar longitud - latitud, y grados/minutos/segundos, únicamente si no se han utilizado las marcas.
 
-El separador decimal puede ser el punto \(como en Inglés)\) ó la coma \(como en Alemán\).
+El separador decimal puede ser el punto \(como en Inglés)\) o la coma \(como en Alemán\).
 
 ### Otros Formatos
 
 Estos tienen que introducirse exactamente como se muestra en los ejemplos.
 
-* Grados y minutos: `N44124W122451` , `N14544W017479` ó `S31240E136502`
-* Solo grados `46N078W`
-* Grados y minutos `4620N07805W`
-* Grados minutos y segundos  `481200N0112842E` \(Skyvector\)
-* Grados y minutos en pareja `N6500 W08000` ó `N6500/W08000`
+* Grados y minutos: `N44124W122451`, `N14544W017479` ó `S31240E136502`
+* Solo grados: `46N078W`
+* Grados y minutos: `4620N07805W`
+* Grados minutos y segundos:  `481200N0112842E` \(Skyvector\)
+* Grados y minutos en pareja: `N6500 W08000` ó `N6500/W08000`
 * Tipo NAT `5020N`
 
 ### Ejemplos
