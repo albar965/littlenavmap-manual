@@ -42,7 +42,7 @@ MapQueryTaxipathCache=100
 
 ## Solución de problemas {#troubleshoot}
 
-* **El programa se cuelga o cierra durante el arranque:** Borrar el archivo de ajustes y los archivos de la base de datos. En Windows 7, 8 o 10 se pueden encontrar en `c:\Usuarios\SUNOMBRE\Appdata\Roaming\ABarthel`. Borrar \(o mejor: renombrar o mover\) los archivos `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` y el directorio `little_navmap_db`. Intentar borrar la base de datos primero si esta causa el problema. Después intentar borrar los archivos de ajustes si borrando la base de datos no soluciona el problema.
+* **El programa se cuelga o cierra durante el arranque:** Borrar el archivo de ajustes y los archivos de la base de datos. En Windows 7, 8 ó 10 se pueden encontrar en `c:\Usuarios\SUNOMBRE\Appdata\Roaming\ABarthel`. Borrar \(o mejor: renombrar o mover\) los archivos `little_navmap.ini`, `little_navmap.track`, `little_navmap.history` y el directorio `little_navmap_db`. Intentar borrar la base de datos primero si esta causa el problema. Después intentar borrar los archivos de ajustes si borrando la base de datos no soluciona el problema.
 * **El arranque del programa es lento:** Esto puede ocurrir si la búsqueda de distancia en una de las pestañas de búsqueda. La búsqueda es ejecutada en cada arranque. Simplemente desactive la búsqueda de distancia o resetee las opciones de búsqueda para evitar el arranque lento del programa.
 * **Los mapas online no cargan o no se actualizan:** Compruebe su ajuste del cortafuegos si Windows bloquea alguna conexión de salida. Además compruebe si el modo Trabajar sin conexión no se activó accidentalmente en el menú `Archivo`. Compruebe si _Little Navmap_ puede conectarse a internet accediendo a la pestaña `Clima` del cuadro de dialogo opciones. Utilice uno de los botones `Test` para meteorología NOAA o VATSIM. _Little Navmap_ no puede conectarse a internet si este test da un fallo.
 * **El Zoom puede ser demasiado rápido cuando se usa el touchpad** Con _OpenStreetMap_, _OpenTopoMap_ o uno de los otros mapas online. Utilice el mapa `Plano`, `Simple` o `Atlas` o utilice los botones sobreimpresos o el teclado \(`+` y `-`\).
@@ -63,12 +63,12 @@ MapQueryTaxipathCache=100
 ## Problemas conocidos {#known-problems}
 
 * Algunos add-ons de aeropuertos no modifican los aeropuertos por defecto sino solo añaden nuevos escenarios y edificios. Estos add-ons no serán reconocidos como tal y por lo tanto no se resaltarán en el mapa \(texto en itálica o subrayado\).
-* Los desarrolladores de Add-ons tienen que utilizar todo tipo de soluciones para evitar las limitaciones de FSX o P3D developers have to use all kind of workarounds to avoid FSX or P3D. lo que significa que la visualización y la información de los aeropuertos adicionales no siempre es correcta. La mayoría de estos cambios también se realizan para que la IA funcione correctamente. Los ejemplos típicos son: Aeropuertos sin pistas, aeropuertos con pistas de longitud o ancho de 0 pies, calles de rodadura de 0 pies de ancho, calles de rodaje aparentemente cerradas, aeropuertos duplicados, pistas duplicadas en el agua, calles de rodadura en el agua, puertas de embarque militares en aeropuertos civiles y alguno más.
+* Los desarrolladores de Add-ons tienen que utilizar todo tipo de soluciones para evitar las limitaciones de FSX o P3D lo que significa que la visualización y la información de los aeropuertos adicionales no siempre es correcta. La mayoría de estos cambios también se realizan para que la IA funcione correctamente. Los ejemplos típicos son: Aeropuertos sin pistas, aeropuertos con pistas de longitud o ancho de 0 pies, calles de rodadura de 0 pies de ancho, calles de rodaje aparentemente cerradas, aeropuertos duplicados, pistas duplicadas en el agua, calles de rodadura en el agua, puertas de embarque militares en aeropuertos civiles y alguno más.
 * El análisis de la descripción de la ruta puede omitir puntos de paso en casos excepcionales, incluso para planes de vuelo previamente calculados. Esto puede ocurrir a causa de aerovías fragmentadas, errores en la fuente de datos o ambiguedades entre radioayudas.
 * Algunos archivos KML/KMZ no se muestran en el mapa. Esto se puede solucionar añadiendo una chincheta de punto central en el archivo KML/KMZ.
 * La cobertura para la elevación online de los gatos de texturas para _OpenStreetMap_ es limitado y actualmente está a 60 grados al norte. Utilizar el mapa _OpenTopoMap_, _OpenMapSurfer_ o _Stamen Terrain_ los cuales tienen cobertura de texturas para todo el mundo.
-* Hay errores en los datos fuente de elevación online \(como en el norte de Italia, Valle del Po o el Lago Titicaca en Peru y Bolivia\) los cuales mostrarán en el plan de vuelo perfiles de elevación.
-* La proyección de Mercator muestra ocasionalmente problemas visuales dependiendo de la distancia de zoom, como lineas horizontales cerca del meridiano opuesto o segmentos del plan de vuelo que desaparecen.
+* Hay errores en los datos fuente de elevación online \(como en el norte de Italia, Valle del Po o el Lago Titicaca en Perú y Bolivia\) los cuales mostrarán en el plan de vuelo perfiles de elevación.
+* La proyección de Mercator muestra ocasionalmente problemas visuales dependiendo de la distancia de zoom, como líneas horizontales cerca del meridiano opuesto o segmentos del plan de vuelo que desaparecen.
 * Las superposiciones de mapa flotante de Marble en el mapa pueden configurarse pero no guardan todas las configuraciones excepto su visibilidad.
 * El plan de vuelo y las vías aéreas se dibujan utilizando grandes líneas circulares en lugar de líneas loxodrómicas. La distancia y el curso no se ven afectados por esto.
 * La variación magnética no se establece parcialmente \(por ejemplo el VORDME  de la bahía de Cambridge YCB\) o inconsistencias entre las radioayudas de aeropuertos adyacentes. Este es un error en la fuente.
@@ -88,9 +88,9 @@ Si algo no va bien, envíeme cualquier archivo involucrado como KML, PLN o BGL \
 **Añadir toda la información necesaria:**
 
 * Sistema operativo:
-  * Windows: 7, 8 o 10
+  * Windows: 7, 8 ó 10
   * macOS: El Capitan, Sierra o High Sierra
-  * Linux: La distribución y la version
+  * Linux: La distribución y la versión
 * Simulador:
   * X-Plane: 10, 11.05 o 11.10, versión de la beta
   * FSX, FSX SE, P3D V4 o V4.1
@@ -104,7 +104,7 @@ Si algo no va bien, envíeme cualquier archivo involucrado como KML, PLN o BGL \
 
 Cuando se produce un error durante la carga de la biblioteca de escenarios, envíeme el archivo problemático si el tamaño lo permite. El nombre completo y la ruta del archivo se muestran en la parte superior del cuadro de diálogo del error si es una causa específica.
 
-Si le preocupa la privacidad al enviar archivos log: Los archivos log contendrán todas las rutas del sistema \ (como su `Directorio de documentos ') que también incluirán su nombre de usuario como parte de la ruta. También pueden contener el nombre y la dirección IP de su computadora en su red.
+Si le preocupa la privacidad al enviar archivos log: Los archivos log contendrán todas las rutas del sistema \ (como su `Directorio de documentos`) que también incluirán su nombre de usuario como parte de la ruta. También pueden contener el nombre y la dirección IP de su computadora en su red.
 
 Le sugiero que elimine esta información si le preocupa este asunto.
 

@@ -5,7 +5,7 @@ _Little Navmap_ Proporciona funcionalidad para editar, crear y recopilar perfile
 Los datos promedio de prestaciones, como la velocidad, la velocidad vertical y el flujo de combustible necesarios en las fases de vuelo
 Taxi/despegue, ascenso, crucero y descenso se utilizan para calcular los requerimientos de combustible.
 
-Se puede utilizar una configuración simple con viento en altitud de crucero para ajustar el plan de vuelo según la meteología.
+Se puede utilizar una configuración simple con viento en altitud de crucero para ajustar el plan de vuelo según la metereología.
 
 **Las prestaciones de la aeronave se utilizan para las siguientes funciones:**
 
@@ -28,7 +28,7 @@ Por defecto se asigna un perfil con 3nm cada 1000 para las reglas de descenso, a
 
 _Little Navmap_ posee la capacidad de recopilar los datos de prestaciones de una aeronave durante un vuelo típico.
 Esta puede usarse para obtener un perfil de prestaciones básico que puede ajustarse manualmente.
-Consular abajo en el capítulo [Recopilar Performance para el vuelo](#aircraft-performance-collect) para más información.
+Consultar abajo en el capítulo [Recopilar Performance para el vuelo](#aircraft-performance-collect) para más información.
 
 **Tenga en cuenta que las estimaciones de combustible y tiempo en la ventana**`Aeronave del simulador`** en la pestaña **`Progreso`** están basadas en el consumo actual de combustible y velocidad y no quedan afectadas por el perfil de performance de la aeronave.**
 
@@ -86,7 +86,7 @@ El tamaño de fuente del reporte puede cambiarse en el diálogo `Opciones` dentr
 
 #### Plan de Vuelo {#aircraft-performance-flightplan}
 
-* `Distancia y Tiempo`: Distancia y tiempo total del vuelo incluyendo procedimientos. Los mismos valores valores que en la parte superior de la pestaña `Plan`.
+* `Distancia y Tiempo`: Distancia y tiempo total del vuelo incluyendo procedimientos. Los mismos valores que en la parte superior de la pestaña `Plan`.
 * `Velocidad Promedio sobre el Suelo`: Velocidad sobre el suelo de todas las fases del vuelo, ascenso, crucero y descenso.
 Calculado en función de las velocidades indicadas y el viento ingresado en la parte superior de la pestaña.
 * `Velocidad de Crucero Verdadera`: Velocidad de crucero como se indica en el diálogo de edición.
