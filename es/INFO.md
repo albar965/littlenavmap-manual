@@ -8,7 +8,7 @@ Toda la información se puede copiar en el portapapeles en formato texto. Utiliz
 
 La información de un aeropuerto, radioayuda o punto de usuario se muestra cuando se selecciona uno de los items en el mapa con la opción del menú contextual `Mostrar información para ...` , en el panel del plan de vuelo o en la tabla de resultados de la búsqueda.
 
-Todas las pestañas se rellenan para un aeropuerto, todas las radioayudas, todos los puntos de usuario o todos los espacios aéreos que se encuentran cerca del cursor al hacer click con el botón izquierdo en el mapa.
+Todas las pestañas se rellenan para un aeropuerto, todas las radioayudas, todos los puntos de usuario o todos los espacios aéreos que se encuentran cerca del cursor al hacer clic con el botón izquierdo en el mapa.
 
 _Little Navmap_ muestra pestañas según las prioridades y objetos seleccionados e intenta minimizar los cambios de pestaña. 
 
@@ -18,7 +18,7 @@ El rumbo y la distancia \(línea de rumbo \) al avión del usuario se muestran p
 
 ### Información de Escenario {#scenery}
 
-La información sobre aeropuertos y radioayudas incluye uno o más enlaces en la parte inferior del objeto en la sección `Escenario`. Estos puntos de enlaces coinciden con los archivos BGL (FSX, P3D) o DAT (X-Plane) que contienen información de radioayudas y aeropuertos. Hacer Click en los enlaces para abrir la carpeta en su explorador de archivos \(por ejemplo el Explorador de Windows\). Si es posible el archivo correspondiente se seleccionará automáticamente.
+La información sobre aeropuertos y radioayudas incluye uno o más enlaces en la parte inferior del objeto en la sección `Escenario`. Estos puntos de enlaces coinciden con los archivos BGL (FSX, P3D) o DAT (X-Plane) que contienen información de radioayudas y aeropuertos. Hacer clic en los enlaces para abrir la carpeta en su explorador de archivos \(por ejemplo el Explorador de Windows\). Si es posible el archivo correspondiente se seleccionará automáticamente.
 
 Pueden aparecer Enlaces Múltiples de aeropuertos ya que estos pueden modificarse en múltiples archivos BGL o DAT desde diferentes actualizaciones de add-ons de escenarios o datos de navegación.
 
@@ -30,7 +30,7 @@ El amanecer y el atardecer se calculan en base a datos reales si no está el sim
 
 La pestaña `Meteorología` también incluye información decodificada del aeropuerto seleccionado. El icono de las reglas de vuelo \([Leyenda - Meteorología de Aeropuerto](LEGEND.md#airport-weather)\) tiene el sufijo ` - Mapa` si la fuente de meteorología mostrada es la fuente de los iconos de meteorología en el mapa.
 
-En la pestaña `Pistas` están disponibles los links para los helipuertos.
+En la pestaña `Pistas` están disponibles los enlaces para los helipuertos.
 
 ![Airport Information](../images/infoairport.jpg "Airport Information")
 
@@ -46,7 +46,7 @@ Una vía aérea siempre se muestra con todos sus puntos de referencia. Haga clic
 | -- | -- |
 | ![Navaid Information](../images/infonavaid.jpg "Navaid Information") | ![Airway Information](../images/infoairway.jpg "Airway Information") |
 
-_**Imagen Superior:** Información de radioayudas. Dos radioayudas estaban cerca del cursor cuando se hizo Click. Visualización de varias vías aéreas con restricciones de altitud y lista de puntos de paso seleccionables._ |
+_**Imagen Superior:** Información de radioayudas. Dos radioayudas estaban cerca del cursor cuando se hizo clic. Visualización de varias vías aéreas con restricciones de altitud y lista de puntos de paso seleccionables._ |
 
 ### Pestaña de Espacios Aéreos {#airspaces}
 
@@ -84,7 +84,7 @@ La información de texto en la pestaña tiene un enlace "Más menos" en la parte
 | | |
 | -- | -- |
 | ![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information") | ![Aircraft Progress Information Less](../images/infoacprogressless.jpg "Aircraft Progress's Information Less") |
-| _**Imagen Superior:** Progreso e información de la meteo y situación del vuelo actual. Algunos campos o tablas como_`Próximo fijo`_ solo están disponibles cuando se ha cargado un plan de vuelo. | _**Imagen Superior:** Información del progreso plegado para mostrar los valores más importantes utilizados_ ,mediante el link `Más menos` |
+| _**Imagen Superior:** Progreso e información de la meteo y situación del vuelo actual. Algunos campos o tablas como_`Próximo fijo`_ solo están disponibles cuando se ha cargado un plan de vuelo. | _**Imagen Superior:** Información del progreso plegado para mostrar los valores más importantes utilizados_, mediante el enlace `Más menos` |
 
 ![Aircraft Progress Information](../images/infoacprogress.jpg "Aircraft Progress's Information")
 
