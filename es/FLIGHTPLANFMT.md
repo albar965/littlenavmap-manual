@@ -2,8 +2,8 @@
 
 _Little Navmap_ soporta varios tipos de formatos de plan de vuelo, los cuales tienen diferentes limitaciones. Solo algunos de estos formatos pueden ser cargados y guardados.
 
-El programa utiliza diferentes cuadros de diálogo `Guardar como ...` en vez de uno solo. Esto significa que el directorio para cada formato de archivo se conserva por separado, This means the directory for each file format is retained separately, eliminando la necesidad de navegar hacia adelante y hacia atrás entre el directorio del plan de vuelo FSX, el directorio del plan de vuelo P3D y el directorio de salida X-Plane FMS.
-Observe la diferencia entre `Grabar Plan de Vuelo como ...` y `Exportar Plan de Vuelo como ...`: `Exportar` no modifica el nombre del archivo actual mientras que `Grabar como ...` si lo hace.
+El programa utiliza diferentes cuadros de diálogo `Guardar como ...` en vez de uno solo. Esto significa que el directorio para cada formato de archivo se conserva por separado, eliminando la necesidad de navegar hacia adelante y hacia atrás entre el directorio del plan de vuelo FSX, el directorio del plan de vuelo P3D y el directorio de salida X-Plane FMS.
+Observe la diferencia entre `Grabar Plan de Vuelo como ...` y `Exportar Plan de Vuelo como ...`: `Exportar` no modifica el nombre del archivo actual mientras que `Grabar como ...` sí lo hace.
 
 ### Tabla de Características {#flight-plan-formats-feature}
 
@@ -59,7 +59,7 @@ Los nombres de waypoint de usuario se adaptarán con las limitaciones del format
 
 ### ![FSX PLN](../images/icons/filesave.png "FSX PLN") FSX PLN {#flight-plan-formats-fsx-pln}
 
-El formato FSX PLN se usa por defecto porque este permite más características y permite incluir información adicional se usa como formato predeterminado porque admite la mayoría de las funciones y permite incluir información adicional en forma de anotaciones que serán ignoradas por los simuladores de vuelo y la mayoría de las otras herramientas.
+El formato FSX PLN se usa por defecto porque éste permite más características y permite incluir información adicional se usa como formato predeterminado porque admite la mayoría de las funciones y permite incluir información adicional en forma de anotaciones que serán ignoradas por los simuladores de vuelo y la mayoría de las otras herramientas.
 
 **Tenga en cuenta que P3D v4.2 sobrescribe el plan de vuelo al cargar, lo que borra todas las anotaciones. Guarde una copia del plan en otra ubicación si desea mantener toda la información sobre los procedimientos o la velocidad.**
 
@@ -185,7 +185,7 @@ Un formato para el Airbus de Flight Factor. El archivo no se divide y los planes
 
 Los planes de vuelo se guardan en una notación ligeramente ampliada de ruta ATS, la cual permite guardar la altitud de crucero y los procedimientos de aproximación.
 
-Si bien este formato permite guardar SID y STAR, la opción para las aproximacione se eliminó ya que no es confiable.
+Si bien este formato permite guardar SID y STAR, la opción para las aproximaciones se eliminó ya que no es confiable.
 
 **Ejemplo:**
 
