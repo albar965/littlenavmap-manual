@@ -13,7 +13,7 @@ actual.
 
 |Print Map Preview Dialog|
 
-**Imagen superior:**\ *Diálogo previo de impresión del mapa en
+**Imagen superior:**\  *Diálogo previo de impresión del mapa en
 pantalla.*
 
 .. _printing-the-flight-plan:
@@ -36,7 +36,7 @@ Opciones
 -  ``Nueva página después de cada capítulo``: Provee un avance de página
    tras el encabezado, plan de vuelo, informe de combustible e
    información de aeropuerto
--  ``Tamaño de Texto``: permite aumentar o disminuir el tamaño de todos
+-  ``Tamaño de Texto``: Permite aumentar o disminuir el tamaño de todos
    los textos, excepto la tabla del plan de vuelo.
 
 Plan de Vuelo
@@ -59,10 +59,10 @@ Opciones para Aeropuerto de Salida y Destino
 -  ``Incluir pistas de superficie blanda``: Incluye pistas con
    superficies blandas como hierba, grava y otros.
 -  ``Información detallada de la pista``: Incluye información detallada
-   de los extremos de la pista , como luces de aproximación, tipos VASI
-   , información de ILS y más.
--  ``Frecuencias COM``: Incluye frecuencias de comunicación como Torre ,
-   ATIS , UNICOM y otras.
+   de los extremos de la pista, como luces de aproximación, tipos VASI, 
+   información de ILS y más.
+-  ``Frecuencias COM``: Incluye frecuencias de comunicación como Torre,
+   ATIS, UNICOM y otras.
 -  ``Procedimientos``: Imprime información de procedimientos tal como se
    muestran en la pestaña ``Procedimientos`` en la ventana
    ``Información``.
@@ -76,11 +76,11 @@ Opciones Generales
 -  ``Imprimir tabla del plan de vuelo``: Imprime el plan de vuelo tal
    como se ve en la tabla.
 -  ``Tamaño del Texto``: Reduce el tamaño del texto para evitar saltos
-   de linea innecesarios, o lo incrementa para mejorar la lectura.
+   de línea innecesarios, o lo incrementa para mejorar la lectura.
 
 |Print Flight Plan Dialog|
 
-**Imagen superior:**\ *Imprime el diálogo de opciones del plan de
+**Imagen superior:**\  *Imprime el diálogo de opciones del plan de
 vuelo.*
 
 .. |Print Map| image:: ../images/icon_printmap.png
