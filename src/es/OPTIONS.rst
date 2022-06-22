@@ -26,8 +26,8 @@ Navmap*.
 
 Puede también configurar la frecuencia de las actualizaciones
 automáticas y el tipo de canal de actualización. Consulte `Comprobar
-actualizaciones <UPDATE.html>`__ para obtener más información. Change the
-settings here if you wish to get notifications about beta releases.
+actualizaciones <UPDATE.html>`__ para obtener más información. Cambiar la
+configuración aquí si desea recibir notificaciones sobre versiones beta.
 
 .. _user-interface:
 
@@ -52,7 +52,7 @@ Mapa
 ~~~~
 
 Contiene opciones de personalización relacionado con el mapa. Permite
-ajustar la sensibilidad del click, distancias de zoom y más.
+ajustar la sensibilidad del clic, distancias de zoom y más.
 
 .. _blurred-map:
 
@@ -97,7 +97,7 @@ mixtas, como el medidor de altitud y millas náuticas de distancia.
 convierten al cambiar unidades. Esto significa que tendrá que tener un
 margen de altitud de 1000 metros después de cambiar el ajuste
 ``Altitud y elevación`` de pies a metros. Esto también se aplica para la
-altitud del plan de vuelo. Sin embargo np olvide adaptar estos números
+altitud del plan de vuelo. Sin embargo no olvide adaptar estos números
 después de cambiar las unidades.**
 
 .. _simulator-aircraft:
@@ -181,7 +181,7 @@ Esto mismo es válido, si salta a aeropuertos, radioayudas u otras
 prestaciones, haciendo doble clic en el menú de contexto
 (``Mostrar en el Mapa``) o en el vínculo del mapa.
 
-Alterne |Center Aircraft| encender-apagar ``Centrar Aeronave`` , si ve
+Alterne |Center Aircraft| encender-apagar ``Centrar Aeronave``, si ve
 que el mapa salta atrás a la posición equivocada.
 
 Esta opción también se usa en el `Perfil de Elevación del Plan de
@@ -213,7 +213,7 @@ Visualización del mapa
 Aquí puede cambiar el tamaño de la memoria caché en la memoria RAM y en
 el disco. Estas cachés se utilizan para almacenar los mosaicos de
 imágenes descargadas de los mapas en línea como *OpenStreetMap*,
-*OpenMapSurfer* o *OpenTopoMap*.
+*OpenMapSurfer* u *OpenTopoMap*.
 
 Todos los mosaicos de imagen caducan después de dos semanas y luego
 serán recargados de los servicios en línea.
@@ -279,7 +279,7 @@ otra fuente o si los servicios cambian las URL.
 
 Los botones de prueba para los servicios meteorológicos en línea también
 se pueden usar para averiguar si *Little Navmap* puede conectarse a
-Internet. Verifique la configuración de su firewall si estos fallan.
+Internet. Verifique la configuración de su cortafuegos si estos fallan.
 
 |Weather Options|
 
@@ -289,7 +289,7 @@ compartida.\_
 
 .. _online-flying:
 
-Volando en linea
+Volando en línea
 ~~~~~~~~~~~~~~~~
 
 Esta pestaña permite cambiar la configuración de las redes en línea.
@@ -309,7 +309,7 @@ VATSIM activa.\_
 
 .. _online-service:
 
-Servicios en linea
+Servicios en línea
 ^^^^^^^^^^^^^^^^^^
 
 .. _online-service-none:
@@ -371,7 +371,7 @@ Ajustes
 URL del archivo estado
 ''''''''''''''''''''''
 
-URL del archivo ``status.txt`` . Puede usar también una ruta local como
+URL del archivo ``status.txt``. Puede usar también una ruta local como
 ``C:\Users\SUNOMBREDEUSUARIO\Documents\status.txt``.
 
 Este fichero solo se descarga al iniciar el programa.
@@ -390,7 +390,7 @@ Estado <https://doc.ivao.aero/apidocumentation:whazzup:statusfileformat>`__.
 URL del archivo Whazzup
 '''''''''''''''''''''''
 
-URL del archivo ``whazzup.txt`` . Puede también utilizar una ruta local
+URL del archivo ``whazzup.txt``. Puede también utilizar una ruta local
 como ``C:\Users\SUNOMBREDEUSUARIO\Documents\whazzup.txt``.
 
 Este archivo se descarga de acuerdo a la frecuencia de actualización
@@ -463,7 +463,7 @@ omitirán al cargar la base de datos de la biblioteca de escenarios en
 *Little Navmap*. También puede usar esta lista para acelerar la carga de
 la base de datos si excluye directorios que no contienen aeropuertos o
 ayudas a la navegación (landclass, datos de elevación y otros). También
-puede excluir archivos ``BGL`` ó ``DAT`` si es necesario.
+puede excluir archivos ``BGL`` o ``DAT`` si es necesario.
 
 Recuerde que puede seleccionar más de una entrada en los diálogos de
 archivo o directorio.
