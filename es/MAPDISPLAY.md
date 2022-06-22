@@ -4,7 +4,7 @@ Consultar el [Leyenda del Mapa](LEGEND.md) para detalles sobre varios de los sí
 
 ### Movimientos {#moving}
 
-Hacer click y arrastrar para mover el mapa y la rueda del ratón para acercar o alejar. Utilice `Shift+Rueda del ratón` para hacer zoom en pequeños pasos. También puede usar los botones superpuestos en el lado derecho del mapa.
+Hacer clic y arrastrar para mover el mapa y la rueda del ratón para acercar o alejar. Utilice `Shift+Rueda del ratón` para hacer zoom en pequeños pasos. También puede usar los botones superpuestos en el lado derecho del mapa.
 
 También puede usar el teclado para moverse por el mapa:
 
@@ -19,7 +19,7 @@ No olvide activar la ventana del mapa haciendo clic en ella antes de usar las te
 
 ### Clics del ratón{#mouse-clicks}
 
-Un solo clic muestra los detalles de todos los objetos del mapa cercanos a la posición donde se hace click en el panel de `Información`. Las ventanas y pestañas se activarán dependiendo de los objetos pulsados.
+Un solo clic muestra los detalles de todos los objetos del mapa cercanos a la posición donde se hace clic en el panel de `Información`. Las ventanas y pestañas se activarán dependiendo de los objetos pulsados.
 
 Un solo clic en un avión de usuario, un avión AI o un avión multijugador muestra detalles en la ventana del panel `Avión del Simulador`.
 
@@ -27,18 +27,18 @@ Un doble clic se acerca para mostrar de cerca el diagrama del aeropuerto o la ra
 
 La funcionalidad de doble clic y de un solo clic no funciona para los waypoints o aeropuertos si el modo de edición del plan de vuelo está habilitado. El modo de edición se puede desactivar utilizando la barra de herramientas o el `Menú principal` -&gt; `Plan de vuelo` -&gt; `Editar plan de vuelo en el mapa`.
 
-La sensibilidad del click de ratón puede ajustarse en en diálogo `Opciones`en la pestaña del `Mapa`.
+La sensibilidad del clic de ratón puede ajustarse en diálogo `Opciones`en la pestaña del `Mapa`.
 
 ### Puntos de Acceso para Clics de Ratón {#mouse-click-hotspots}
 
-Marcas del mapa, como anillos de distancia o lineas de medida, tienen puntos de acceso para indicar que un cilc y modificador pueden eliminarlas, o que hay una acción disponible en el menú de contexto. Lo mismo es válido para el modo de edición arrastrar y soltar del plan de vuelo.   
+Marcas del mapa, como anillos de distancia o líneas de medida, tienen puntos de acceso para indicar que un clic y modificador pueden eliminarlas, o que hay una acción disponible en el menú de contexto. Lo mismo es válido para el modo de edición arrastrar y soltar del plan de vuelo.   
 
 El cursor del ratón cambia a una mano ![Hand Cursor](../images/cursorhand.jpg) para indicar el punto de clic.
 
 Los puntos de clic son: 
 
 * El centro del anillo de distancias \(círculo pequeño \).
-* El final de una linea de medida  \(cruz\).
+* El final de una línea de medida  \(cruz\).
 * El umbral de una pista \(circulo pequeño\) en patrones de tráfico de aeropuerto. 
 
 ### Clics de ratón y modificadores {#mouse-clicks-modifiers}
@@ -115,7 +115,7 @@ El menú contextual del mapa se puede activar usando el botón derecho o la tecl
 
 Muestra información detallada en el panel `Información` de los aeropuertos cercanos, aerovías, espacios aéreos cuyo nombre se muestra en el elemento del menú.
 
-Haga un click dentro del mapa con el botón izquierdo si desea ver la información de todos los objetos cercanos a la posición del ratón.
+Haga un clic dentro del mapa con el botón izquierdo si desea ver la información de todos los objetos cercanos a la posición del ratón.
 
 Consulte [Panel de información](INFO.md#information-dock-window) para más detalles.
 
@@ -191,13 +191,13 @@ Elimina del mapa todos los anillo de rango y las líneas de medidas de distancia
 
 #### ![Set as Flight Plan Departure](../images/icons/airportroutedest.png "Set as Flight Plan Departure") Establecer como Salida del Plan de Vuelo {#set-as-flight-plan-departure}
 
-Se activa si se hace click en un aeropuerto, en una posición de estacionamiento del o en una estación de combustible. Reemplazará o bien la salida actual del plan de vuelo o agregará una nueva salida si el plan de vuelo está vacío.
+Se activa si se hace clic en un aeropuerto, en una posición del estacionamiento o en una estación de combustible. Reemplazará o bien la salida actual del plan de vuelo o agregará una nueva salida si el plan de vuelo está vacío.
 
 Se utilizará la pista por defecto como posición de partida si el objeto seleccionado es un aeropuerto. El aeropuerto y la posición de estacionamiento reemplazarán tanto la posición actual de salida como la de inicio si se hace clic en una posición de estacionamiento dentro de un diagrama de aeropuerto.
  
 #### ![Set as Flight Plan Destination](../images/icons/airportroutestart.png "Set as Flight Plan Destination") Establecer como Destino del Plan de Vuelo {#set-as-flight-plan-destination}
 
-Esta opción de menú está disponible si se selecciona un aeropuerto. Esto Reemplazará o bien el destino del plan de vuelo o añadirá el aeropuerto si el plan de vuelo está vacío.
+Esta opción de menú está disponible si se selecciona un aeropuerto. Esto reemplazará o bien el destino del plan de vuelo o añadirá el aeropuerto si el plan de vuelo está vacío.
 
 #### ![Add Position to Flight Plan](../images/icons/routeadd.png "Add Position to Flight Plan") Añadir Posición al Plan de Vuelo {#add-position-to-flight-plan}
 
@@ -231,7 +231,7 @@ Consultar [Formato de Coordenadas](COORDINATES.md) para ver la lista de formatos
 
 Agrega un waypoint definido por el usuario a los datos del usuario. Algunos campos del diálogo de puntos de usuario se rellenan automáticamente dependiendo del objeto seleccionado en el mapa.
 
-Las coordenadas se rellenan siempre. Si el objeto seleccionado es un aeropuerto o radioayuda, se crea un punto de usuario de tipo `Aeropuerto` o `Waypoint`respectivamente y se rellenan los campos Identificador, Region, Nombre y Elevación o altitud.
+Las coordenadas se rellenan siempre. Si el objeto seleccionado es un aeropuerto o radioayuda, se crea un punto de usuario de tipo `Aeropuerto` o `Waypoint` respectivamente y se rellenan los campos Identificador, Región, Nombre y Elevación o altitud.
 
 Si la posición seleccionada es un espacio vacío en el mapa, se creará un punto de usuario en esta posición del tipo `Bookmark`. Se rellenará la altitud si los datos de elevación GLOBE offline están instalados. Consultar [Perfíl de Elevación del Plan de Vuelo](OPTIONS.md#cache-elevation).
 
@@ -245,7 +245,7 @@ Abre el cuadro de diálogo de punto de usuario. Solo disponible si el objeto sel
 
 Mueve el punto de usuario a una nueva posición del mapa. Solo está disponible si el objeto seleccionado es un punto de usuario.
 
-Haga click izquierdo para colocar el punto de usuario en una nueva posición. Haga click derecho o pulse la tecla escape para cancelar la operación y devolver el punto a su posición anterior.
+Haga clic izquierdo para colocar el punto de usuario en una nueva posición. Haga clic derecho o pulse la tecla escape para cancelar la operación y devolver el punto a su posición anterior.
 
 #### ![Delete Userpoint](../images/icons/userdata_delete.png "Delete Userpoint") Borrar Punto de Usuario {#delete-userpoint}
 
