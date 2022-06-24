@@ -29,20 +29,20 @@ al simulador de vuelo:
 -  Distancia de la aeronave al destino del plan de vuelo.
 -  Distancia al límite de descenso
 
-**Ejemplo:** ``Al Destino: 118 nm, al Limite de Descenso: 95 nm.``
+**Ejemplo:** ``Al Destino: 118 nm, al Límite de Descenso: 95 nm.``
 
 Además, se muestra la siguiente información, en la etiqueta superior,
 cuando se desliza el ratón sobre el diagrama:
 
 -  Distancia Desde y hasta un waypoint del tramo del plan de vuelo, en
    la posición del cursor.
--  Distancia desde la salida y hasta el destino , desde la posición del
+-  Distancia desde la salida y hasta el destino, desde la posición del
    cursor del ratón.
 -  Elevación del terreno en la posición del cursor.
 -  Altitud del plan de vuelo sobre el terreno considerando la altitud de
    crucero así como las pendientes de ascenso y descenso.
 -  Altitud segura para el tramo del plan de vuelo en la posición del
-   cursor correspondiente a la linea naranja.
+   cursor correspondiente a la línea naranja.
 
 **Ejemplo:**
 ``ANDOR ► SJA, 38 nm ► 112 nm, Elevación del Terreno 984 ft, Altitud sobre el terreno 8,016 ft, Altitud segura del tramo  3,000 ft``
@@ -60,7 +60,7 @@ deslizantes del zoom. Están disponibles los siguientes controles:
    contiene los deslizantes se puede colapsar si la arrastra demasiado a
    la derecha. Puede volver a abrir la parte colapsada arrastrando el
    deslizante a la izquierda.
--  |Expand to Window| ``Expandir Ventana``: Resetea la vista al 100% y
+-  |Expand to Window| ``Expandir Ventana``: Restablece la vista al 100% y
    muestra el plan de vuelo completo.
 -  |Zoom Vertically| ``Zoom Vertical``: Mueva el deslizante hacia arriba
    para aumentar el zoom verticalmente. El zoom máximo resulta en una
@@ -96,7 +96,7 @@ usar el teclado.
    horizontal.
 -  ``*`` y ``/``: También en teclado numérico. Más o menos zoom
    vertical.
--  ``0`` o ``Ins`` : Resetea la vista al 100% y muestra el plan de vuelo
+-  ``0`` o ``Ins`` : Restablece la vista al 100% y muestra el plan de vuelo
    completo.
 -  ``Home`` y ``End``: Salta a salida o destino.
 -  ``PageUp`` y ``PageDown``: Mueve adelante o atrás una página.
@@ -119,7 +119,7 @@ doble clic en el perfil de elevación.
 |Expand to Window| Expandir Ventana
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Resetea la vista al 100% ,mostrando el plan de vuelo completo.
+Restablece la vista al 100%, mostrando el plan de vuelo completo.
 
 .. _center-aircraft:
 
@@ -154,7 +154,7 @@ programa.
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 | Muestra la pendiente VASI si se selecciona un procedimiento de
-  aproximación con pista (no con circulación para aterrizar )en el plan
+  aproximación con pista (no con circulación para aterrizar) en el plan
   de vuelo, y la pista tiene VASI.
 | La pendiente se dibuja con el ángulo correcto para usarse como guía de
   aproximación. La apertura vertical del ángulo está destinada a
@@ -176,7 +176,7 @@ vuelo una aproximación con pista, y la pista tiene ILS.
 
 La pendiente está dibujada con el ángulo correcto para servir de guía de
 aproximación. La apertura vertical del ángulo está destinada a
-descripción , y no tiene relación con la precisión real del ILS.
+descripción, y no tiene relación con la precisión real del ILS.
 
 Una etiqueta en la parte superior muestra nombre, frecuencia, rumbo,
 ángulo de la pendiente de descenso, e indicador DME si existe.
@@ -229,16 +229,16 @@ Mostrar Perfíl
 Los colores y símbolos del perfíl de elevación siguen el estilo del mapa
 principal, tal como se ajustó en el diálogo de opciones de la pestaña
 ``Mostrar Mapa``. Los colores modelos y símbolos para aeropuertos,
-radioayudas procedimientos y tramos del plan de vuelo activo y aprobado,
+radioayudas, procedimientos y tramos del plan de vuelo activo y aprobado,
 son los mismos. La muestra del perfíl también mantiene otros ajustes del
-mapa como la visibilidad de la linea del plan de vuelo, la aeronave y la
+mapa como la visibilidad de la línea del plan de vuelo, la aeronave y la
 ruta de la aeronave.
 
 El rumbo de la aeronave girará si se detecta un retroceso en relación al
 tramo activo del plan de vuelo.
 
 Para más información vea la pestaña ``Navmap`` en la ventana
-``Leyenda``, ó la `Leyenda del Perfil de
+``Leyenda``, o la `Leyenda del Perfil de
 Elevación <LEGEND.html#elevation-profile-legend>`__ para más detalles.
 
 El perfíl de elevación usa la altitud real para mostrar restricciones ,
@@ -247,13 +247,13 @@ la indicada cuando vuele por debajo de la altitud de transición
 utilizando el ajuste de altímetro estándar de 29.92 pulgadas.
 
 **Tenga en cuenta que la visualización del perfíl depende de la
-secuencia correcta del tramo del plan de vuelo activo \\ (línea magenta
-). La aeronave se mostrará en posición incorrecta y la ruta de la
+secuencia correcta del tramo del plan de vuelo activo \\ (línea magenta). 
+La aeronave se mostrará en posición incorrecta y la ruta de la
 aeronave será errática si la etapa activa no es correcta o se cambia
 manualmente.**
 
 **La ruta de la aeronave se mostrará de forma incorrecta en el perfíl de
-elevación si se cambia el plan de vuelo ( es decir, si se cambia la
+elevación si se cambia el plan de vuelo (es decir, si se cambia la
 geometría o la extensión del plan del vuelo).**
 
 Puede borrar el perfíl de la ruta de la aeronave en el menú de contexto
@@ -276,7 +276,7 @@ restricciones de altitud para el procedimiento de aproximación.*
 Sendas de Ascenso y Descenso
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-El perfil de elevación también muestra el TOC y el TOD , que son
+El perfil de elevación también muestra el TOC y el TOD, que son
 calculados a partir del perfil actual. `Prestaciones de
 Aeronave <AIRCRAFTPERF.html>`__
 
@@ -295,7 +295,7 @@ Aeronave <AIRCRAFTPERF.html>`__
   antes, para reducir la velocidad a 250 nudos por debajo de 10.000
   pies.
 
-La sendas de ascenso y descenso no tienen en cuenta los ajustes de
+Las sendas de ascenso y descenso no tienen en cuenta los ajustes de
 viento. Espere diferencias cuando afronte ascensos o descensos con
 vientos fuertes de cara o de cola.
 
@@ -304,7 +304,7 @@ perfíl de elevación, si sube con fuerte viento de cara, por ejemplo.
 
 El plan cambiará a una representación plana que muestre únicamente una
 línea de plan de vuelo a la altitud de crucero, si no se puede calcular
-el TOC y / o el TOD, o si el plan viola las restricciones de altitud. Si
+el TOC y/o el TOD, o si el plan viola las restricciones de altitud. Si
 este es el caso, se mostrará un mensaje de advertencia en rojo.
 
 |Descent Path|
@@ -323,7 +323,7 @@ datos han de ser descargados y el cálculo es intensivo para la CPU. Por
 tanto, la actualización del perfíl puede tardar entre unos pocos
 segundos y medio minuto. Esta actualización en segundo plano se inicia
 tras crear o cambiar un plan de vuelo, o cuando se descargan nuevos
-datos de elevación. El perfíl se actualizará , por tanto , cada vez que
+datos de elevación. El perfíl se actualizará, por tanto, cada vez que
 estén disponibles nuevos datos.
 
 Cierre la ventana ``Perfíl de Elevación del Plan de Vuelo`` si sospecha
@@ -335,12 +335,12 @@ actualizaciones se detendrán al cerrar la ventana.
 Datos de Elevación Online
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Recuerde que los datos de elevación en linea no cubren todos los paises
+Recuerde que los datos de elevación en linea no cubren todos los países
 y actualmente terminan en los 60 grados Norte. Además, contienen
 numerosos errores conocidos.
 
-| Para evitar sobrecargas , el cálculo de los puntos de elevación en
-  linea está limitado a segmentos del plan de vuelo que no sobrepasen
+| Para evitar sobrecargas, el cálculo de los puntos de elevación en
+  línea está limitado a segmentos del plan de vuelo que no sobrepasen
   las 2.000 millas.
 | Añada más puntos intermedios, o calcule un plan de vuelo para salvar
   esta limitación.
@@ -361,7 +361,7 @@ ventajas:
 -  Muestra de la altitud bajo el cursor en la barra de estado.
 
 Vea el cuadro de diálogo `Caché y
-Archivos <OPTIONS.html#cache-elevation>`__ en opciones , para
+Archivos <OPTIONS.html#cache-elevation>`__ en opciones, para
 instrucciones sobre cómo descargar e instalar los datos de GLOBE.
 
 .. |Flight Plan Elevation Profile| image:: ../images/icon_profiledock.png
