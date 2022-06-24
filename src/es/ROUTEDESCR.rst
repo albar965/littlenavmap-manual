@@ -33,9 +33,9 @@ descripciones de ruta de las últimas fuentes de AIRAC se usan
 conjuntamente con los datos por defecto de FSX / P3D de 2005. Se
 recomienda utilizar una actualización de datos de navegación para el
 escenario por defecto al leer descripciones de rutas de fuentes en línea
-como\ `RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight
+como \ `RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight
 Planner <http://onlineflightplanner.org/>`__,
-`SimBrief <https://www.simbrief.com>`__ or
+`SimBrief <https://www.simbrief.com>`__ o
 `SkyVector <https://skyvector.com>`__.
 
 Si una actualización de Navdata no es una opción, elija el ciclo de
@@ -63,7 +63,7 @@ con algunas advertencias sobre elementos ignorados. El
 waypoint*\ ``LLL``\ \_ no se pudo encontrar. Velocidad, altitud, SID y
 STAR fueron reconocidos. La velocidad sobre el terreno de 433 nudos se
 calcula en función del número de Mach dado 0,74 y las condiciones
-atmosféricas estándar.\_
+atmosféricas estándar.\
 
 .. _buttons:
 
@@ -118,8 +118,8 @@ La descripción de la ruta debe seguir las siguientes reglas de formato:
 
 Todos los elementos entre corchetes son opcionales.
 
-``FROM`` y ``TO``: Estas son las 3 o 4 letras requeridas para
-identificar los aeropuertos de salida y llagada.
+``FROM`` y ``TO``: Estas son las 3 ó 4 letras requeridas para
+identificar los aeropuertos de salida y llegada.
 
 Ejemplos: ``KEAT``, ``CYPU``, ``S16``.
 
@@ -196,7 +196,7 @@ Ejemplos:
 
 ``M071F320`` Mach 0.71 a nivel de vuelo 320.
 
-``K0790M0710`` 790 kilómetros por hora a 7100 meters.
+``K0790M0710`` 790 kilómetros por hora a 7100 metros.
 
 .. _coordinates:
 
@@ -220,7 +220,7 @@ grados, dos dígitos para los minutos, dos dígitos para los segundos y el
 indicador norte / sur. Luego, tres dígitos para los grados, dos dígitos
 para los minutos, dos dígitos para los segundos e indicador este /
 oeste. Este formato es utilizado
-por\ `SkyVector <https://skyvector.com>`__ por ejemplo.
+por \ `SkyVector <https://skyvector.com>`__ por ejemplo.
 
 Ejemplo: ``481200N0112842E``.
 
