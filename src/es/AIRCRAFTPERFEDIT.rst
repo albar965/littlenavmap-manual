@@ -165,7 +165,7 @@ directorios o archivos como ``file:///C:/Projekte/atools`` en Windows o
 
 |Aircraft Performance Edit|
 
-**Imagen Superior:**\ *Cuadro de diálogo de edición de las prestaciones
+**Imagen Superior:**\  *Cuadro de diálogo de edición de las prestaciones
 de la aeronave.*
 
 .. |Edit Aircraft Performance| image:: ../images/icon_aircraftperfedit.png
