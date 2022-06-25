@@ -14,7 +14,7 @@ Taxi/despegue, ascenso, crucero y descenso se utilizan para calcular los
 requerimientos de combustible.
 
 Se puede utilizar una configuración simple con viento en altitud de
-crucero para ajustar el plan de vuelo según la meteología.
+crucero para ajustar el plan de vuelo según la metereología.
 
 **Las prestaciones de la aeronave se utilizan para las siguientes
 funciones:**
@@ -55,7 +55,7 @@ advertencia si se usa, ya que el perfíl no está completo.
 *Little Navmap* posee la capacidad de recopilar los datos de
 prestaciones de una aeronave durante un vuelo típico. Esta puede usarse
 para obtener un perfil de prestaciones básico que puede ajustarse
-manualmente. Consular abajo en el capítulo `Recopilar Performance para
+manualmente. Consultar abajo en el capítulo `Recopilar Performance para
 el vuelo <#aircraft-performance-collect>`__ para más información.
 
 **Tenga en cuenta que las estimaciones de combustible y tiempo en la
@@ -81,7 +81,7 @@ Los archivos de perfil de prestaciones (extensión de fichero
 ``lnmperf``) pueden guardarse y cargarse igual que los ficheros de
 planes de vuelo.
 
-Los archivos de prestaciones pueden arrastrase desde un administrador de
+Los archivos de prestaciones pueden arrastrarse desde un administrador de
 archivos como el explorador de Windows o el Finder de macOS y colocarse
 en la ventana principal de *Little Navmap*.
 
@@ -165,7 +165,7 @@ Plan de Vuelo
 ^^^^^^^^^^^^^
 
 -  ``Distancia y Tiempo``: Distancia y tiempo total del vuelo incluyendo
-   procedimientos. Los mismos valores valores que en la parte superior
+   procedimientos. Los mismos valores que en la parte superior
    de la pestaña ``Plan``.
 -  ``Velocidad Promedio sobre el Suelo``: Velocidad sobre el suelo de
    todas las fases del vuelo, ascenso, crucero y descenso. Calculado en
@@ -227,11 +227,11 @@ descenso.
 Descripción del Archivo de Prestaciones
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Este es un campo de texto plano para notas y links.
+Este es un campo de texto plano para notas y enlaces.
 
-Los links son reconocidos y pueden ser abiertos aquí en el reporte. Los
-links normales como ``http://www.ejemplo.com`` o
-``https://www.ejemplo.com`` . Además se reconocen también los links de
+Los enlaces son reconocidos y pueden ser abiertos aquí en el reporte. Los
+enlaces normales como ``http://www.ejemplo.com`` o
+``https://www.ejemplo.com``. Además se reconocen también los enlaces de
 directorios o archivos como ``archivo:///C:/Projekte/atools`` en Windows
 o ``archivo:///home/me/Aircraft_Notes.txt`` en macOS o Linux.
 
@@ -240,13 +240,13 @@ o ``archivo:///home/me/Aircraft_Notes.txt`` en macOS o Linux.
 Archivo
 ^^^^^^^
 
-Contiene un link al archivo de performance de la aeronave. Abre el
+Contiene un enlace al archivo de performance de la aeronave. Abre el
 archivo o directorio en el administrador de archivos por defecto como
 Windows Explorer o el Finder de macOS.
 
 .. _aircraft-performance-edit:
 
-Editar Prestacionesde de la Aeronave
+Editar Prestaciones de la Aeronave
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Puede utilizar el botón de edición |Edit Aircraft Performance| en la
