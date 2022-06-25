@@ -40,7 +40,7 @@ Solución de problemas
 
 -  **El programa se cuelga o cierra durante el arranque:** Borrar el
    archivo de ajustes y los archivos de la base de datos. En Windows 7,
-   8 o 10 se pueden encontrar en
+   8 ó 10 se pueden encontrar en
    ``c:\Usuarios\SUNOMBRE\Appdata\Roaming\ABarthel``. Borrar (o mejor:
    renombrar o mover) los archivos ``little_navmap.ini``,
    ``little_navmap.track``, ``little_navmap.history`` y el directorio
@@ -132,8 +132,7 @@ Problemas conocidos
    no serán reconocidos como tal y por lo tanto no se resaltarán en el
    mapa (texto en itálica o subrayado).
 -  Los desarrolladores de Add-ons tienen que utilizar todo tipo de
-   soluciones para evitar las limitaciones de FSX o P3D developers have
-   to use all kind of workarounds to avoid FSX or P3D. lo que significa
+   soluciones para evitar las limitaciones de FSX o P3D, lo que significa
    que la visualización y la información de los aeropuertos adicionales
    no siempre es correcta. La mayoría de estos cambios también se
    realizan para que la IA funcione correctamente. Los ejemplos típicos
@@ -154,10 +153,10 @@ Problemas conocidos
    Utilizar el mapa *OpenTopoMap*, *OpenMapSurfer* o *Stamen Terrain*
    los cuales tienen cobertura de texturas para todo el mundo.
 -  Hay errores en los datos fuente de elevación online (como en el norte
-   de Italia, Valle del Po o el Lago Titicaca en Peru y Bolivia) los
+   de Italia, Valle del Po o el Lago Titicaca en Perú y Bolivia) los
    cuales mostrarán en el plan de vuelo perfiles de elevación.
 -  La proyección de Mercator muestra ocasionalmente problemas visuales
-   dependiendo de la distancia de zoom, como lineas horizontales cerca
+   dependiendo de la distancia de zoom, como líneas horizontales cerca
    del meridiano opuesto o segmentos del plan de vuelo que desaparecen.
 -  Las superposiciones de mapa flotante de Marble en el mapa pueden
    configurarse pero no guardan todas las configuraciones excepto su
@@ -197,16 +196,16 @@ Como enviar un Bug
 Si algo no va bien, envíeme cualquier archivo involucrado como KML, PLN
 o BGL \\ (si el copyright lo permite), el archivo log de *Little Navmap*
 y el fichero de configuración, ambos pueden ser localizados en el cuadro
-de diálogo Acerca de Little NavMap. Mi dirección de e-mail se muestra en
+de diálogo Acerca de Little NavMap. Mi dirección de correo electrónico se muestra en
 este mismo cuadro de diálogo de *Little Navmap* también.
 
 **Añadir toda la información necesaria:**
 
 -  Sistema operativo:
 
-   -  Windows: 7, 8 o 10
+   -  Windows: 7, 8 ó 10
    -  macOS: El Capitan, Sierra o High Sierra
-   -  Linux: La distribución y la version
+   -  Linux: La distribución y la versión
 
 -  Simulador:
 
@@ -242,7 +241,7 @@ contenidos de archivos personales en los archivos de registro.
 
 Recomiendo enviar los archivos log por mensaje privado del foro o por
 correo electrónico y no adjuntarlos a las publicaciones del foro donde
-sean públicamente visibles.
+son públicamente visibles.
 
 .. |Show Airspaces| image:: ../images/icon_airspace.png
 
