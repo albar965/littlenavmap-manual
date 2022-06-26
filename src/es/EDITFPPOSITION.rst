@@ -6,7 +6,7 @@ Editar la posición del plan de vuelo
 Este cuadro de diálogo permite editar la posición del plan de vuelo que
 fue definida por el usuario con |Add Position to Flight Plan|
 `Intercalar posición en el plan de
-vuelo <MAPDISPLAY.html#add-position-to-flight-plan>`__ or |Append Position
+vuelo <MAPDISPLAY.html#add-position-to-flight-plan>`__ o |Append Position
 to Flight Plan| `Añadir Posición al plan de
 vuelo <MAPDISPLAY.html#append-position-to-flight-plan>`__.
 
@@ -38,7 +38,7 @@ información.
 
 |Edit Flight Plan Position|
 
-**Imagen superior:**\ *Editar posición de usuario en el plan de vuelo.*
+**Imagen superior:**\  *Editar posición de usuario en el plan de vuelo.*
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
