@@ -6,7 +6,7 @@ Archivos
 Logs
 ~~~~
 
-Los archivos Log de *Little Navmap* estan guardados en estos
+Los archivos Log de *Little Navmap* están guardados en estos
 directorios:
 
 -  Windows:
@@ -16,17 +16,17 @@ directorios:
    ``/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log``
 
 El programa mantiene tres archivos Log y los rota en cada arranque. Por
-tanto , puede encontrarse hasta tres:
+tanto, puede encontrarse hasta tres:
 
 ``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` y
 ``abarthel-little_navmap.log.2``.
 
-En caso de error del programa asegurese de enviar el archivo log
-correcto. Si no está seguro de cual es, envie copia de los tres ,
+En caso de error del programa asegúrese de enviar el archivo log
+correcto. Si no está seguro de cual es, envíe copia de los tres ,
 comprimidos en un único ZIP.
 
 Si quiere reportar algún problema al cargar la base de datos del
-escenario , cargue la base de datos y salga del programa. Entonces copie
+escenario, cargue la base de datos y salga del programa. Entonces copie
 el archivo log en otra carpeta antes de volver a arrancar *Little
 Navmap*.
 
@@ -48,7 +48,7 @@ directorios:
 -  ``little_navmap.track``: Pista de la aeronave del usuario. Archivo
    binario.
 
-Tres archivos más , para permitir la personalización de colores y
+Tres archivos más, para permitir la personalización de colores y
 estilos:
 
 -  ``little_navmap_fusionstyle.ini``: Archivo de configuración
@@ -57,7 +57,7 @@ estilos:
 -  ``little_navmap_mapstyle.ini``: Archivo de configuración estilo-INI
    para personalizar la vista del mapa. Archivo de texto.
 
-Vea `Personalización <CUSTOMIZE.html>`__ para más info.
+Vea `Personalización <CUSTOMIZE.html>`__ para más información.
 
 *Little Navmap* puede restablecer estos archivos al actualizarse, pero
 sólo después de haber hecho copia de ellos.
@@ -67,11 +67,11 @@ sólo después de haber hecho copia de ellos.
 Caché del Disco
 ~~~~~~~~~~~~~~~
 
-La caché de dico usada para guardar las imágenes descargadas de los
-mapas online , se puede encontrar en:
+La caché de disco usada para guardar las imágenes descargadas de los
+mapas online, se puede encontrar en:
 
 -  Windows ``C:\Users\NOMBREUSUARIO\AppData\Local\.marble\data``
--  Linux and macOS: ``$HOME/.local/share/marble``
+-  Linux y macOS: ``$HOME/.local/share/marble``
 
 Puede borrarla manualmente para ahorrar espacio si *Little Navmap* no
 está ejecutándose.
@@ -81,31 +81,31 @@ está ejecutándose.
 Bases de Datos
 ~~~~~~~~~~~~~~
 
-Las bases de datos estan guardadas en el directorio:
+Las bases de datos están guardadas en el directorio:
 
 -  Windows:
    ``C:\Users\NOMBREUSUARIO\AppData\Roaming\ABarthel\little_navmap_db``
 -  Linux and macOS: ``$HOME/.config/ABarthel/little_navmap_db``
 
 Todas son archivos `SQLite <http://sqlite.org>`__ que pueden
-visualizarse con , por ejemplo , `DB Browser for
+visualizarse con, por ejemplo, `DB Browser for
 SQLite <https://github.com/sqlitebrowser/sqlitebrowser/releases>`__ si
 está interesado en las bases de datos relacionales.
 
-**No modifique , mueva , renombre ó borre las bases de datos
+**No modifique, mueva, renombre o borre las bases de datos
 mientras**\ \_Little Navmap_*\* esté ejecutándose.*\*
 
 .. _scenery-library:
 
-Libreria de Escenarios
+Librería de Escenarios
 ^^^^^^^^^^^^^^^^^^^^^^
 
-El número de archivos depende de qué simulador tenga instalado , y de
-qué librerias de escenarios haya cargado.
+El número de archivos depende de qué simulador tenga instalado, y de
+qué librerías de escenarios haya cargado.
 
 Los archivos son:
 
--  ``little_navmap_.sqlite``: Base de datos ficticia y vacia.
+-  ``little_navmap_.sqlite``: Base de datos ficticia y vacía.
 -  ``little_navmap_fsx.sqlite``: Flight Simulator X
 -  ``little_navmap_fsxse.sqlite``: Flight Simulator - Steam Edition
 -  ``little_navmap_p3dv2.sqlite``: Prepar3D v2
@@ -113,7 +113,7 @@ Los archivos son:
 -  ``little_navmap_p3dv4.sqlite``: Prepar3D v4
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
 -  ``little_navmap_navigraph.sqlite``: Base de datos Navigraph. Puede
-   ser la incluida con el programa , o una actualización instalada con
+   ser la incluída con el programa , o una actualización instalada con
    el *FMS Data Manager* de Navigraph.
 
 .. _userdata:
@@ -133,7 +133,7 @@ cometido cualquier error.
 Otras bases de datos
 ^^^^^^^^^^^^^^^^^^^^
 
-Archivos adicionales como ,
+Archivos adicionales como,
 
 -  ``little_navmap_compiling.sqlite``,
 -  ``little_navmap_compiling.sqlite-journal``,
@@ -142,5 +142,5 @@ Archivos adicionales como ,
 -  ``little_navmap_onlinedata.sqlite`` or
 -  ``little_navmap_onlinedata.sqlite-journal``
 
-son usados para procesos temporales como la compilacion de la base de
-datos , ó los datos de red online. Estos archivos pueden ser ignorados.
+son usados para procesos temporales como la compilación de la base de
+datos, o los datos de red online. Estos archivos pueden ser ignorados.
