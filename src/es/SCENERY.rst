@@ -22,7 +22,7 @@ individualmente para cada tipo de simulador de vuelo.
 de X-Plane. Seleccione la ruta manualmente si quiere leer la librería de
 escenarios u otra instalación de X-Plane.
 
-En Windows puede seer una ruta como ``C:\Simuladores\X-Plane 11``, el
+En Windows puede ser una ruta como ``C:\Simuladores\X-Plane 11``, el
 ejecutable es ``C:\Simuladores\X-Plane 11\X-Plane.exe``.
 
 Cargar una biblioteca de escenarios puede tomar de 2 a 15 minutos
@@ -36,7 +36,7 @@ directorio ``Scenery`` predeterminado de FSX / P3D se consideran
 aeropuertos complementarios. Para X-Plane, todos los aeropuertos
 ubicados en el directorio ``Custom Scenery`` de X-Plane se consideran
 aeropuertos complementarios. Los aeropuertos complementarios se resaltan
-en el mapa usando el texto enfatizado \\ (negrita y cursiva ).
+en el mapa usando el texto enfatizado \\ (negrita y cursiva).
 
 Si un complemento solo corrige las elevaciones del aeropuerto o los
 datos de navegación, puede no ser conveniente mostrar los aeropuertos
@@ -204,7 +204,7 @@ Diálogo de Opciones de Carga de Biblioteca de Escenarios
    es la base para todas las rutas relativas que se encuentran en el
    archivo ``scenery.cfg``.
 -  ``Archivo de configuración de Escenario`` y ``Seleccionar ...`` \\
-   (solo FSX y P3D ): el archivo ``scenery.cfg`` del simulador. También
+   (solo FSX y P3D): el archivo ``scenery.cfg`` del simulador. También
    puede crear copias del archivo original, modificarlas eliminando o
    agregando escenarios y seleccionándolas aquí para cargarlas.
 -  ``Leer entradas de escenario inactivas``: Esto leerá todas las
@@ -214,7 +214,7 @@ Diálogo de Opciones de Carga de Biblioteca de Escenarios
    Navmap* sin volver a cargar. Esto es válido para ``scenery.cfg`` de
    FSX/ P3D, y para ``scenery_packs.ini`` de X-Plane que permiten
    deshabilitar la entrada de escenarios.
--  ``Leer paquetes Prepar3D add-on.xml`` (solo P3D v3 y v4 ): si está
+-  ``Leer paquetes Prepar3D add-on.xml`` (solo P3D v3 y v4): si está
    habilitado, lee los paquetes P3D v4 o v3\ ``add-on.xml``. Se leen
    desde subdirectorios de
    ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons`` y
