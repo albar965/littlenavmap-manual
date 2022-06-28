@@ -55,7 +55,7 @@ de coincidencia de texto ). En ese caso, es posible que deba agregar un
 ``*`` al final del término de búsqueda para obtener el resultado
 esperado.
 
-La búsqueda excluye \\ (encuentra todas las entradas que no coinciden )
+La búsqueda excluye \\ (encuentra todas las entradas que no coinciden)
 si el primer carácter en un cuadro de búsqueda es un ``-``.
 
 Tenga en cuenta que todo lo anterior no se aplica a campos numéricos
@@ -86,7 +86,7 @@ Distancia de Búsqueda
 ~~~~~~~~~~~~~~~~~~~~~
 
 Esta función solo está disponible en la búsqueda de aeropuerto y de
-radidoayuda.
+radioayuda.
 
 Esta función permite combinar todas las demás opciones de búsqueda con
 una simple búsqueda dentro de un espacio.
@@ -137,7 +137,7 @@ Todos los elementos seleccionados en la vista de tabla se resaltarán en
 el mapa con un círculo negro/amarillo. Consultar
 `Destacar <MAPDISPLAY.html#highlights>`__ para obtener más información.
 
-Utilice ``Shift+Click`` ó ``Ctrl+Click`` para selecciona dos ó más
+Utilice ``Shift+Clic`` o ``Ctrl+Clic`` para selecciona dos o más
 elementos (multi-selección).
 
 .. _table-view:
@@ -148,18 +148,18 @@ Cabecera
 La cabecera de todas las vistas de tablas permiten las siguientes
 manipulaciones:
 
--  **Click en la esquina superior izquierda del encabezado de la
+-  **Clic en la esquina superior izquierda del encabezado de la
    columna:** Selecciona todas las filas de resultados.
--  **Click en un encabezado de columna:** Ordena de forma ascendente o
+-  **Clic en un encabezado de columna:** Ordena de forma ascendente o
    descendente (solo para las tablas de resultados de búsqueda, no para
    la tabla de plan de vuelo).
--  **Click y arrastrar en el encabezado de la columna:** Cambia el orden
+-  **Clic y arrastrar en el encabezado de la columna:** Cambia el orden
    de la columna.
--  **Doble click en el borde de la columna:** Ajusta automáticamente el
+-  **Doble clic en el borde de la columna:** Ajusta automáticamente el
    tamaño de la columna al contenido.
--  **Click y arrastrar en el borde de la columna:** Cambia el ancho de
+-  **Clic y arrastrar en el borde de la columna:** Cambia el ancho de
    la columna.
--  **Click en el espacio vacío debajo de todas las filas:** Deselecciona
+-  **Clic en el espacio vacío debajo de todas las filas:** Deselecciona
    todas las entradas y elimine los puntos destacados en el mapa.
 
 Lo anterior se aplica a todas las vistas de tabla en el programa y
@@ -184,12 +184,12 @@ alcance de 100 o más millas náuticas.*
 
 .. _mouse-clicks-0:
 
-Clicks del Ratón
+Clics del Ratón
 ^^^^^^^^^^^^^^^^
 
-Un doble click en una entrada de la tabla muestra, o bien un diagrama de
+Un doble clic en una entrada de la tabla muestra, o bien un diagrama de
 aeropuerto, o amplía una radioyuda u otra característica. Adicionalmente
-se muestran detalles en el panel ``Información`` . Un solo click
+se muestran detalles en el panel ``Información`` . Un solo clic
 selecciona el objeto y la resalta en el mapa usando un círculo
 negro/amarillo.
 
