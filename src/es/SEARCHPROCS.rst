@@ -91,7 +91,7 @@ Botones Superiores
 
 .. _procedure-filter-type:
 
-Filtro de Tipo(Todos los procedimientos)
+Filtro de Tipo (Todos los procedimientos)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 El filtro de tipo no está disponible para la base de datos por defecto
