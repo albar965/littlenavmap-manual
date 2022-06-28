@@ -8,7 +8,7 @@ importar si SimConnect o un simulador de vuelo están instalados o no.
 
 Siga estos pasos si quiere instalar *Little Navmap* en un ordenador que
 no contiene ninguna instalación de simulador para una configuración en
-red, por ejemplo. La funcionalidad no resulta afecta excepto la
+red, por ejemplo. La funcionalidad no resulta afectada excepto la
 capacidad de conexión directa la cual no es necesaria en este caso.
 
 Esta situación es la típica cuando se conecta al simulador de vuelo para
