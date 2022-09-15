@@ -2,14 +2,16 @@
    :description: Little Navmap Benutzerhandbuch
    :keywords: Navigation, Flugsimulator, Karte, Flugplan, FSX, MSFS, Prepar3D, X-Plane, Flugplaner
 
+.. warning::
+
+    **Dieses Benutzerhandbuch ist noch in Arbeit, bis die stabile Version von Little Navmap 2.8 veröffentlicht wird.**
 
 Little Navmap Benutzerhandbuch
 ================================
 
 *Little Navmap* ist ein freier quelloffener Flugplaner,
 Navigationswerkzeug, Karte, Flugplatzsuche- und Informationssystem für
-Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 bis v5, Microsoft Flight Simulator 2020
-und X-Plane 11.
+Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v3 bis v5, Microsoft Flight Simulator 2020, X-Plane 11 und X-Plane 12.
 
    Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.org>`__.
    Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
@@ -24,6 +26,7 @@ Dieses Benutzerhandbuch ist für *Little Navmap* Versionen |version|.
 Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler, `Anja Fahrner <https://www.anja-fahrner.de>`__ und `Alexander Barthel <https://www.littlenavmap.org>`__.
 
 Beachten Sie bitte, dass Bildschirmfotos von der Übersetzung ausgenommen wurden und nur in Englisch vorliegen.
+
 
 =========== ===========
 |Sunshadow| |Spherical|

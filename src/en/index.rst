@@ -2,13 +2,16 @@
    :description: Little Navmap User Manual
    :keywords: Navigation, Flight Simulator, Map, Flightplan, FSX, MSFS, Prepar3D, X-Plane, Flightplanner
 
+.. warning::
+
+    **This user manual is work in progress until the stable release of Little Navmap 2.8 is released.**
+
 Little Navmap User Manual
 ================================
 
-*Little Navmap* is a free open source flight planner, navigation tool,
-moving map, airport search and airport information system for Flight
-Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 to v5, Microsoft Flight Simulator 2020 and
-X-Plane 11.
+*Little Navmap* is a free open source flight planner, navigation tool, moving map, airport search
+and airport information system for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D
+v2 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
 
    More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
    Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.

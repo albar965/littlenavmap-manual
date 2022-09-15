@@ -54,6 +54,9 @@ content code {
   white-space: normal;
 }
 
+.highlight {
+  background: #efefef;
+}
 footer p {
   color:#606060;
   font-size: 0.8rem;
@@ -78,21 +81,50 @@ p.caption {
 }
 
 .wy-side-nav-search, .wy-nav-top {
-  background: #006060;
+  background: #000080;
 }
 
 /* Sidebar */
 .wy-nav-side {
-  background: #008080;
+  background: #00408f;
 }
 
 .wy-menu-vertical header, .wy-menu-vertical p.caption {
     color: white;
 }
 
+
 .rst-content .code-block-caption {
     text-align: left;
 }
+
+/*
+a {
+color: #5a4b96;
+}
+
+a:visited {
+  color: #5a4b96;
+}
+
+a:hover {
+  color: #3091d1;
+}
+*/
+
+.wy-menu-vertical a:hover {
+  background-color: #808080;
+  cursor: pointer;
+}
+
+.wy-menu-vertical li.current a:hover {
+  background-color: #a8a8a8;
+}
+
+.wy-menu-vertical li.current a:visited {
+background-color: #a8a8a8;
+}
+
 /*.caption {
     background:     #f4f4f4;
 }*/
