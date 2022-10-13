@@ -23,7 +23,7 @@ for LANGNAME in "$@" ; do
   rm -rfv "${DEPLOY}/${LANGNAME}" "${DEPLOY}/littlenavmap_book_${LANGNAME}.mobi" "${DEPLOY}/littlenavmap_book_${LANGNAME}.epub" "${DEPLOY}/littlenavmap_book_${LANGNAME}.pdf"
 
   # Copy generated HTML documentation
-  mkdir -pv "${DEPLOY}/${LANGNAME}"
+  mkdir -pv "${DEPLOY}"
   cp -av "${BUILD}/html/${LANGNAME}" "${DEPLOY}/${LANGNAME}"
 
   # Strip unneeded files off
