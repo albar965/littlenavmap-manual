@@ -34,6 +34,7 @@ The following chapters give a brief description of each page.
      can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
 .. _startup:
+.. _page1:
 
 |Startup Icon| Startup and Update
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,6 +53,7 @@ releases.
     Otherwise you might miss important updates.
 
 .. _user-interface:
+.. _page2:
 
 |User Interface Icon| User Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,6 +99,8 @@ Therefore, try this out before using it.
 See also :doc:`DOCKWINDOWS`.
 
 .. _display-and-text:
+.. _page3:
+
 
 |Display and Text Icon| Display and Text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,100 +149,8 @@ Change default text size for various information displays.
    This change is not saved.
 
 
-.. _map:
-
-|Map Icon| Map
-~~~~~~~~~~~~~~~~~
-
-Has map related customization options. Allows to set the tooltips,
-scroll performance and more.
-
-Hover the mouse above buttons and input fields to see more information.
-
-.. _map-undock:
-
-Allow to undock the map window
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Allows to undock and put the map window into a floating state.
-
-This can cause several unwanted effects when arranging dock windows.
-Uncheck this if you do experience problems when resizing dock windows.
-
-Restart the program after changing this option.
-
-You might also need to reset the window layout in case the map window is missing after a restart.
-
-Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout after the
-restart if needed.
-
-See :doc:`LAYOUT` for more information about window layouts which might be affected by this option.
-
-.. _map-navigation:
-
-|Map Navigation Icon| Map Navigation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Contains all options for moving and zooming around in the map as well as
-click sensitivity and zoom distances.
-
-Three navigation modes are available. Tooltips give more information
-about these.
-
-.. _map-display:
-
-|Map Display Icon| Map Display
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This page contains options for symbol sizes, text sizes, flight plan,
-user aircraft trail colors and more.
-
-Use the scroll bar on the right to see more hidden options at the bottom.
-
-Map and Elevation Profile Font
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can change the font for the map display. The font will also be used in the elevation profile.
-
-.. _map-display-2:
-
-|Map Display 2 Icon| Map Display 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-More display options for user features like range rings and more.
-
-The right side of the page contains a tree view that allows to select
-the text labels that should be shown at airports, user aircraft,
-AI/multiplayer aircraft and other map features.
-
-Click on the small right pointing arrow (or ``+`` depending on operating system and user interface style)
-to open a branch with options.
-
-Hover the mouse above the tree for tooltips giving more explanations.
-
-.. _map-display-online:
-
-|Map Display Online Icon| Map Display Online
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This page allows to change the default center circle sizes for online
-centers.
-
-Two options below ``Online Center Boundary Lookup in User Airspaces``
-can be used to assign OpenAir airspaces from the user airspace database
-to centers by matching filename or airspace name with the callsign of
-the center.
-
--  ``By airspace name vs. callsign``: Use the airspace name within a
-   file to assign the geometry to a center by callsign.
--  ``By airspace &file name vs. callsign``: Use the airspace filename
-   minus the ``.txt`` extension to assign the geometry to a center by
-   callsign.
-
-See :ref:`load-scenery-library-online-airspaces` for more
-information.
-
 .. _units:
+.. _page4:
 
 |Units Icon| Units
 ~~~~~~~~~~~~~~~~~~
@@ -270,10 +182,141 @@ altitude and nautical miles for distance are possible.
       feet to meter. This also applies to flight plan altitude. Therefore, do
       not forget to adapt these numbers after changing units.
 
+
+
+.. _map:
+.. _page5:
+
+|Map Icon| Map
+~~~~~~~~~~~~~~~~~
+
+Has map related customization options. Allows to set the tooltips,
+scroll performance and more.
+
+Hover the mouse above buttons and input fields to see more information.
+
+.. _map-undock:
+
+Allow to undock the map window
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Allows to undock and put the map window into a floating state.
+
+This can cause several unwanted effects when arranging dock windows.
+Uncheck this if you do experience problems when resizing dock windows.
+
+Restart the program after changing this option.
+
+You might also need to reset the window layout in case the map window is missing after a restart.
+
+Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout after the
+restart if needed.
+
+See :doc:`LAYOUT` for more information about window layouts which might be affected by this option.
+
+.. _map-navigation:
+.. _page6:
+
+|Map Navigation Icon| Map Navigation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Contains all options for moving and zooming around in the map as well as
+click sensitivity and zoom distances.
+
+Three navigation modes are available. Tooltips give more information
+about these.
+
+
+.. _map-display:
+.. _page7:
+
+|Map Display Icon| Map Display
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This page contains options for symbol sizes, text sizes, flight plan,
+user aircraft trail colors and more.
+
+Use the scroll bar on the right to see more hidden options at the bottom.
+
+Map and Elevation Profile Font
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can change the font for the map display. The font will also be used in the elevation profile.
+
+.. _map-display-flight-plan:
+.. _page8:
+
+|Map Display Flight Plan Icon| Map Display Flight Plan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO
+
+More display options for user features like range rings and more.
+
+The right side of the page contains a tree view that allows to select
+the text labels that should be shown at airports, user aircraft,
+AI/multiplayer aircraft and other map features.
+
+Click on the small right pointing arrow (or ``+`` depending on operating system and user interface style)
+to open a branch with options.
+
+Hover the mouse above the tree for tooltips giving more explanations.
+
+.. _map-display-user:
+.. _page9:
+
+|Map Display User Icon| Map Display User
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO
+
+.. _map-display-labels:
+.. _page10:
+
+|Map Display Labels Icon| Map Display Labels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO
+
+.. _map-display-keys:
+.. _page11:
+
+|Map Display Keys Icon| Map Display Keys
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO
+
+.. _map-display-online:
+.. _page12:
+
+|Map Display Online Icon| Map Display Online
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This page allows to change the default center circle sizes for online
+centers.
+
+Two options below ``Online Center Boundary Lookup in User Airspaces``
+can be used to assign OpenAir airspaces from the user airspace database
+to centers by matching filename or airspace name with the callsign of
+the center.
+
+-  ``By airspace name vs. callsign``: Use the airspace name within a
+   file to assign the geometry to a center by callsign.
+-  ``By airspace &file name vs. callsign``: Use the airspace filename
+   minus the ``.txt`` extension to assign the geometry to a center by
+   callsign.
+
+See :ref:`load-scenery-library-online-airspaces` for more
+information.
+
+
 .. _simulator-aircraft:
+.. _page13:
 
 |Simulator Aircraft Icon| Simulator Aircraft
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO
 
 Allows to change various aspects around the display of the user aircraft
 while flying. All settings resulting in a more fluid aircraft display
@@ -420,6 +463,7 @@ Time until aircraft following is activated again after any map
 interaction like scrolling or zooming.
 
 .. _flight-plan:
+.. _page14:
 
 |Flight Plan| Flight Plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -499,6 +543,7 @@ Check this if you rely on GPS when flying.
 See also :ref:`flightplan-magnetic-declination`.
 
 .. _weather:
+.. _page15:
 
 |Weather| Weather
 ~~~~~~~~~~~~~~~~~
@@ -516,6 +561,7 @@ Weather for a service will not be downloaded if you disable the service for tool
 Online weather is downloaded and updated every ten minutes.
 
 .. _weather-files:
+.. _page16:
 
 |Weather Files| Weather Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -554,6 +600,7 @@ Default values for web addresses:
 
 
 .. _online-flying:
+.. _page17:
 
 |Online Flying| Online Flying
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -706,6 +753,7 @@ Format
 network. Try both options if unsure or you see strange effects like all aircraft pointing to the north.
 
 .. _web-server:
+.. _page18:
 
 |Web Server| Web Server
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -741,6 +789,7 @@ Configuration options for the internal web server of *Little Navmap*.
 See :doc:`WEBSERVER` for detailed information.
 
 .. _cache:
+.. _page19:
 
 |Cache and Files| Cache and Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -806,6 +855,7 @@ list.
 See also :ref:`load-scenery-library-user-airspaces` and :ref:`load-user-airspaces`.
 
 .. _scenery-library-database:
+.. _page20:
 
 |Scenery Library Database Icon| Scenery Library Database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -912,12 +962,15 @@ Exclude these directories from loading:
 .. |Startup Icon| image:: ../images/icon_littlenavmap.png
 .. |User Interface Icon| image:: ../images/icon_statusbar.png
 .. |Display and Text Icon| image:: ../images/icon_copy.png
+.. |Units Icon| image:: ../images/icon_units.png
 .. |Map Icon| image:: ../images/icon_mapsettings.png
 .. |Map Navigation Icon| image:: ../images/icon_mapnavigation.png
 .. |Map Display Icon| image:: ../images/icon_mapdisplay.png
-.. |Map Display 2 Icon| image:: ../images/icon_mapdisplay2.png
+.. |Map Display Flight Plan Icon| image:: ../images/icon_mapdisplayflightplan.png
+.. |Map Display User Icon| image:: ../images/icon_mapdisplay2.svg
+.. |Map Display Labels Icon| image:: ../images/icon_mapdisplaylabels.png
+.. |Map Display Keys Icon| image:: ../images/icon_mapdisplaykeys.png
 .. |Map Display Online Icon| image:: ../images/icon_airspaceonline.png
-.. |Units Icon| image:: ../images/icon_units.png
 .. |Simulator Aircraft Icon| image:: ../images/icon_aircraft.png
 .. |Flight Plan| image:: ../images/icon_route.png
 .. |Weather| image:: ../images/icon_weather.png
@@ -926,7 +979,6 @@ Exclude these directories from loading:
 .. |Web Server| image:: ../images/icon_web.png
 .. |Cache and Files| image:: ../images/icon_filesave.png
 .. |Scenery Library Database Icon| image:: ../images/icon_database.png
-
 
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
 .. |Options| image:: ../images/icon_settings.png
