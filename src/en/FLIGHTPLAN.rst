@@ -4,15 +4,19 @@
 The flight planning Dock Window contains the four tabs: ``Flight Plan``, ``Flight Plan Remarks``,
 ``Fuel Report`` (:doc:`AIRCRAFTPERF`) and ``Current Performance`` (:doc:`AIRCRAFTPERFCOLL`).
 
-Upper Part
+See chapter :doc:`ROUTECALC` for more information about calculation flight plans.
+
+Header
 ~~~~~~~~~~
+.. role:: error-style
+.. role:: warning-style
 
 The top shows a label that contains departure, departure position
 (parking, runway or helipad), destination, flight plan distance,
 traveling time, used procedures (SID, STAR, approach and transitions) as
-well as flight plan type.
+well as flight plan type and more.
 
-The label also displays error messages if, for example, the runway of a
+The label also displays :error-style:`red error messages` if, for example, the runway of a
 STAR differs from the runway of the following approach procedure.
 
 Traveling time is only shown if a valid aircraft performance profile is
@@ -21,37 +25,12 @@ loaded that has at least climb, cruise and descent speeds set.
 The ARINC name of the approach procedure which is needed by some FMCs is
 shown in parentheses.
 
+The header can be customized using :ref:`flight-plan-table-columns-select`.
+
 .. figure:: ../images/flightplanheader.jpg
 
-      Header of a flight plan. ``VORDME LITSY`` has ``D34`` as ARINC name.
+      Header of a flight plan with all labels enabled.
 
-Besides the label there are two input fields on top of this dock window:
-
-.. _flight-plan-altitude:
-
-Cruise altitude
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This value is saved with the flight plan and is also used to calculate an airway flight plan.
-
-Changing the cruise altitude of a flight plan using airways might result in errors (:ref:`flight-plan-table-error`).
-This can happen if the cruise altitude violates airway altitude restrictions.
-Calculate the flight plan again to remove the errors.
-
-See :doc:`ROUTECALC`.
-
-.. note::
-
-       Note that *Little Navmap* does not support step climb or different altitudes for each waypoint.
-
-.. _flight-plan-type:
-
-Flight Plan Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Either ``IFR`` or ``VFR``.
-
-This is saved with the flight plan and is only relevant for FSX, Prepar3D or MSFS.
 
 .. _flight-plan-table:
 
@@ -59,11 +38,11 @@ Flight Plan Table
 ~~~~~~~~~~~~~~~~~
 
 The table view allows the same operations as the search table view
-except sorting. See :ref:`table-view` for more information.
+except sorting. See :ref:`ui-tables` for more information.
 
 All selected elements in the flight plan table view will be highlighted
 on the map using a black/green circle. See
-:ref:`highlights` for more information. Use
+:ref:`highlights-legend` for more information. Use
 ``Shift+Click`` or ``Ctrl+Click`` to select two or more elements
 (multi-selection).
 
@@ -78,16 +57,36 @@ Alternate airports are shown at the end of the list using gray text.
 Note that more than one alternate can be added to the flight plan. Legs
 to the alternate airports originate all from the destination.
 
+.. _flight-plan-table-columns-select:
+
+|Settings| Flight Plan Table Display Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Choose ``Flight Plan Table Display Options`` from the flight plan table context
+menu to customize the table columns, header and footer line content.
+
+The changes to the table can be undone by selecting :ref:`reset-view-0` in the context menu.
+
+The dialog uses a tree. See here :ref:`ui-tree` for more information about this type of input element.
+
+Same as main menu ``Tools`` -> :ref:`flight-plan-table-display-options`.
+
+.. figure:: ../images/flightplan_columns.jpg
+
+     The flight plan display options dialog window.
+
 .. _flight-plan-table-columns:
 
 Table Columns
 ^^^^^^^^^^^^^
 
+Hovering the mouse over the table header shows more information about the columns in a tooltip.
+
 -  ``Ident``: ICAO ident of the navaid or airport. The ident can be
    suffixed as shown below:
 
-   -  ``+`` or ``-`` and a distance value: Shows waypoints in procedures
-      that are relative to a fix.
+   -  ``+`` or ``-`` and a distance value: Shows fixes in procedures
+      that are relative to a navaid or waypoint plus the distance in NM to the waypoint.
    -  ``(IAF)``: Initial fix of a procedure or transition.
    -  ``(FAF)``: Final approach fix. Depending on procedure either the
       FAF or FACF are shown with a Maltese cross on the map and in the
@@ -96,7 +95,7 @@ Table Columns
    -  ``(MAP)``: Missed approach point.
 
 -  ``Region``: Two letter region code of a navaid.
--  ``Name``: Name of airport or radio navaid.
+-  ``Name``: Name of airport or radio navaid if available.
 -  ``Procedure``: Either ``SID``, ``SID Transition``, ``STAR``,
    ``STAR Transition``, ``Transition``, ``Approach`` or ``Missed`` plus
    the name of the procedure. Contains the text ``Alternate`` for
@@ -114,26 +113,20 @@ Table Columns
    -  For airways:
 
       -  Example ``10,000``: Minimum altitude for airway segment.
-      -  Example ``0-20,000``: Maximum airway altitude. Minimum does not
-         apply.
+      -  Example ``0-20,000``: Maximum airway altitude. Minimum does not apply.
       -  Example ``10,000-20,000``: Minimum and maximum airway altitude.
 
    -  For procedures: Altitude restriction or speed limit. A ``/``
       separates altitude and speed restriction. The following altitude
       restrictions exist for procedures:
 
-      -  **Number only:** Fly at altitude or speed. Example: ``5,400``
-         or ``210``.
-      -  **Prefix** ``A``: Fly at or above altitude or speed. Example:
-         ``A 1,800``.
-      -  **Prefix** ``B``: Fly at or below altitude or speed. Example:
-         ``B 10,000`` or ``B 220``.
-      -  **Range:** Fly at or above altitude one and at or below
-         altitude two. Example: ``A 8,000, B 10,000``.
-      -  **Altitude and speed limit:** Values separated by ``/``.
-         Example: ``A 8,000, B 10,000/B220``.
-      -  **Speed limit only:** A prefixed ``/`` indicates no altitude
-         but a speed restriction. Example: ``/B250``.
+      -  **Number only:** Fly at altitude or speed. Example: ``5,400`` or ``210``.
+      -  **Prefix** ``A``: Fly at or above altitude or speed. Example: ``A 1,800``.
+      -  **Prefix** ``B``: Fly at or below altitude or speed. Example: ``B 10,000`` or ``B 220``.
+      -  **Range:** Fly at or above altitude one and at or below altitude two. Example: ``A 8,000, B 10,000``.
+      -  **Altitude and speed limit:** Values separated by ``/``. Example: ``A 8,000, B 10,000/B220``.
+      -  **Speed limit only:** Speed restriction. Example: ``B 250``.
+      -  **Required vertical path angle:** Example: ``-3.1°``.
 
 -  ``Type``: Type of a radio navaid. Shows ``ILS`` or ``LOC`` for ILS or
    localizer approaches on the last runway leg.
@@ -145,10 +138,10 @@ Table Columns
    route connecting the two waypoints of the leg. Use this course at
    departure if you travel long distances without navaids. Be aware that
    you have to change you course constantly when traveling along a great
-   circle line.
+   circle line. See also :doc:`MAGVAR` for more information.
 -  ``Course °T``: The same as the two fields
    above but using true course. Use this in areas with high magnetic
-   variation.
+   declination.
 -  ``Distance``: Distance of the flight plan leg.
 -  ``Remaining``: Remaining distance to destination airport or procedure
    end point (usually the runway).
@@ -165,38 +158,53 @@ Table Columns
 -  ``Wind``: Magnetic wind direction and speed at the waypoint.
 -  ``Head- or Tailwind``: Wind at waypoint. Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
 -  ``Altitude``: Calculated altitude at waypoint. Uses aircraft performance to determine altitude.
+-  ``Leg Safe Alt.``:
+-  ``Latitude``:
+-  ``Longitude``:
+-  ``Related\nIdent/Freq./Dist./Bearing``:
 -  ``Remarks``: Turn instructions, flyover or related navaid for procedure legs.
    Also shows user remarks that can be edited with :ref:`edit-name-of-user-waypoint`.
    See :doc:`MAPFPEDIT` for more information.
 
 .. figure:: ../images/flightplan.jpg
+        :scale: 50%
 
         The ``Flight Planning`` dock window. The flight
-        plan uses a SID for departure and a STAR, a transition and an approach for arrival.
+        plan uses a SID for departure and a STAR, a transition and an approach for arrival. *Click image to enlarge.*
 
-.. _flight-plan-table-columns-select:
 
-Column Selection
-^^^^^^^^^^^^^^^^
 
-Choose ``Select visible Columns`` from the flight plan table context
-menu to customize the table. You can still move and resize columns in
-the table. All changes are saved.
+.. note::
 
-The changes can be undone by selecting ``Reset View`` in the context menu.
+    The flight plan table is static and does not update except when changing wind or aircraft performance.
+    Look at the tab :ref:`progress-info` to see current information.
 
-.. figure:: ../images/flightplan_columns.jpg
 
-     The flight plan column selection dialog with tooltip.
+.. _flight-plan-table-sel-footer:
 
-.. _flight-plan-table-error:
+Selected Flight Plan Legs Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Error Display
-^^^^^^^^^^^^^
+This footer line shows information about the selected flight plan legs.
+
+#.  Number of selected legs.
+#.  From and to waypoint.
+#.  Distance between the two waypoints.
+#.  Flight time based on currect aircraft performance configuration file.
+#.  Fuel required in weight and volume units.
+
+.. figure:: ../images/route_footer_selected.jpg
+
+           Selected legs and information about the selected.
+
+.. _flight-plan-table-err-footer:
+
+Error Messages Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If a waypoint of a flight plan cannot be found in the database it will
-be displayed in red. This can happen if the used AIRAC cycles do no
-match. The same applies to airways. The position on the map is still
+be shown in red color. This can happen if the used AIRAC cycles do no
+match or old flight plan are loaded. The same applies to airways. The position on the map is still
 correct.
 
 Airways are also displayed in red if the minimum altitude, maximum
@@ -205,9 +213,13 @@ altitude or one-way restrictions are violated.
 Hover the mouse over a field in the table to see a tooltip giving more
 information about the error.
 
+You can also click on the :error-style:`red error message` to see all errors found in the flight plan.
+
+See also :ref:`ui-messages`.
+
 .. warning::
 
-       Note that flight plans are still usable in *Little Navmap* although
+       Note that flight plans with errors are still usable in *Little Navmap* although
        saving and exporting to other formats is limited and can lead to
        unexpected results.
 
@@ -219,79 +231,46 @@ information about the error.
 
        Tooltip on error message showing violations of altitude restrictions.
 
-.. _flightplan-magnetic-declination:
-
-Magnetic Declination
-~~~~~~~~~~~~~~~~~~~~
-
-*Little Navmap* uses the `magnetic
-declination <https://en.wikipedia.org/wiki/Magnetic_declination>`__ that
-is stored either with VOR stations or the actual environment declination. The
-latter one is calculated by the program using the world magnetic model.
-(`WMM <https://en.wikipedia.org/wiki/World_Magnetic_Model>`__) or loaded
-from the simulator scenery database.
-
-Note that the magnetic declination of a VOR (also: calibration for VOR,
-VORDME and VORTAC) may differ from the actual declination in a simulator
-region as it does in reality. The calibration of a VOR might be very old
-while the real declination in the environment changed in the meantime
-due to the wandering of the magnetic poles. Therefore, magnetic course
-values might differ. This can result in strange course readings in
-flight plans.
-
-*Little Navmap* uses the declination of a VOR to calculate the inbound
-and outbound magnetic course of a flight plan leg to and from this VOR.
-This allows the pilot to use the VOR radials for navigation. For all
-other legs the actual environment declination is used.
-
-You can disable the use of VOR declination in the options dialog on page
-``Flight Plan`` by checking
-``Ignore declination of VOR and other radio navaids``. This will use the
-environment declination for all calculations. You might want to use this
-if you fly entirely based on GPS and ignore VOR stations.
-
-Examples
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-A flight plan crossing the
-``VORTAC Battle Ground (BTG)`` last calibrated 1975
-(`source <http://www.pilotnav.com/navaid/faa-2529>`__) with a
-declination of 21° East while the environment has an actual declination
-of 15.2° East. You can see the actual declination below the mouse cursor
-in the status bar of *Little Navmap*.
-
-Below a flight plan with three legs all having a true course of 90°.
-
-**Example with** ``Ignore declination of VOR and other radio navaids`` **not checked:**
-
-.. figure:: ../images/magvarenabled.jpg
-
-        Note the course difference when flying to and from
-        ``BTG`` compared to the magnetic course when flying to ``YIPYU``.
-        Magnetic course in- and outbound to/from ``BTG`` is calculated based on
-        the station declination 21° East while course to ``YIPYU`` is based on 15.2° East.
-
-**Example with** ``Ignore declination of VOR and other radio navaids`` **checked:**
-
-.. figure:: ../images/magvardisabled.jpg
-
-         All magnetic course values are equal since the
-         environment declination of 15.2° East is used to calculate the magnetic
-         course for all legs.
-
-See also :ref:`magnetic-declination` for
-more information about declination values and scenery databases.
-
 Mouse Clicks
 ~~~~~~~~~~~~
 
-A double-click on an entry in the table view shows either an airport
+A double-click on an entry in the table view shows either the airport
 diagram or zooms to the navaid. Additionally, details are shown in the
-``Information`` dock window. A single click selects an object and
+``Information`` dock window as well. A single click selects an object and
 highlights it on the map using a black/green circle.
 
-Top Buttons
-~~~~~~~~~~~
+Top Buttons and Input Fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _flight-plan-altitude:
+
+Cruise altitude
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This value is saved with the flight plan.
+
+Changing the cruise altitude of a flight plan using airways might result in errors (:ref:`flight-plan-table-err-footer`).
+This can happen if the cruise altitude violates airway altitude restrictions.
+Calculate the flight plan again to remove the errors.
+
+Setting a too low cruise altitude might also violate procedure restrictions. See :ref:`procedures-restrictions`.
+
+.. note::
+
+       Note that *Little Navmap* does not support step climb or different altitudes for each waypoint.
+
+.. _flight-plan-type:
+
+Flight Plan Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Either ``IFR`` or ``VFR``.
+
+This is saved with the flight plan and is only relevant for FSX, Prepar3D or MSFS.
+
+.. note::
+
+         Note that the VFR/IFR selection affects flight plan loading in MSFS. You cannot load a VFR flight plan in MSFS which uses procedures, for example.
 
 .. _clear-selection-button-flightplan:
 
@@ -301,8 +280,8 @@ Top Buttons
 Deselect all entries in the table and remove any highlight circles from
 the map.
 
-|Select visible Columns| Select visible Columns
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Flight Plan Table Display Options| Flight Plan Table Display Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See chapter :ref:`flight-plan-table-columns-select` below.
 
@@ -316,24 +295,7 @@ Context Menu Flight Plan
 |Show Information| Show Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as :ref:`map-context-menu`.
-
-.. _show-procedures-flightplan:
-
-|Show Procedures| Show Procedures
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Same as :ref:`show-procedures-map`. Only
-enabled for airports having procedures.
-
-.. _show-approach-custom-flight-plan:
-
-|Create Approach| Create Approach to Airport
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Same as :ref:`show-approach-custom-map`.
-
-See :doc:`CUSTOMPROCEDURE` for more information.
+Same as :ref:`show-information-map` in the map context menu.
 
 .. _show-on-map-flightplan:
 
@@ -342,7 +304,29 @@ See :doc:`CUSTOMPROCEDURE` for more information.
 
 Show either the airport diagram or zooms to the navaid on the map. The
 zoom distance can be changed in the dialog ``Options`` on the tab
-``Map``.
+:ref:`map-navigation`.
+
+.. _set-departure-runway-flightplan:
+
+|Departure Runway| Set Departure Runway
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Same as :ref:`set-departure-runway-map` in the map context menu.
+
+.. _set-destination-runway-flightplan:
+
+|Destination Runway| Set Destination Runway
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Same as :ref:`set-destination-runway-map` in the map context menu.
+
+.. _show-procedures-flightplan:
+
+|Show Procedures| Show Procedures
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Same as :ref:`show-procedures-map` in the map context menu. Only
+enabled for airports having procedures.
 
 .. _activate:
 
@@ -357,11 +341,13 @@ You have to activate the leg manually if you would like to fly to an alternate a
 
 Legs of a missed approach procedure are activated automatically if the procedure is shown on the map.
 
-Follow Selection
-^^^^^^^^^^^^^^^^
 
-The map view will be centered - not zoomed in - on the selected airport
-or navaid when this function is enabled.
+|Undo| |Redo| Undo and Redo Flight Plan
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Allows undo and redo of all flight plan changes. The last action is shown in the menu item like ``Add Waypoint``, for example.
+
+Also in main menu ``Flight Plan`` -> :ref:`undo-redo`.
 
 .. _move-selected-legs-up-down:
 
@@ -394,7 +380,7 @@ of a procedure. Deleting a procedure deletes its transition too.
 |Edit Flight Plan Position| Edit Flight Plan Position or Edit Flight Plan Position Remarks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Allows to change the name or coordinates of an user-defined waypoint in
+Allows to change the name or coordinates of an user defined waypoint in
 the flight plan. See :doc:`EDITFPPOSITION`.
 
 Also allows to add a remark to any flight plan waypoint which is not an alternate and not a part of
@@ -463,10 +449,6 @@ See chapter :doc:`ROUTECALC` for more information.
 
 Same as :ref:`map-context-menu`.
 
-Note that the menu item is disabled if range rings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
-
 .. _show-navaid-range-1:
 
 |Add Navaid Range Ring| Add Navaid Range Ring
@@ -477,10 +459,6 @@ Simply select all legs of the flight plan and use this function to
 display a range circle for each radio navaid in the flight plan.
 
 Otherwise, the same as :ref:`map-context-menu`.
-
-Note that the menu item is disabled if range rings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
 
 .. _show-traffic-pattern-flightplan:
 
@@ -494,22 +472,29 @@ allows to customize and display an airport traffic pattern on the map.
 
 See :doc:`TRAFFICPATTERN`.
 
-Note that the menu item is disabled if traffic patterns are hidden on
-the map (menu ``View`` -> ``User Features``). The menu item is suffixed
-with the text ``hidden on map`` if this is the case.
-
 .. _show-holding:
 
 |Add Holding| Add Holding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Same as :ref:`holding`.
+Same as :ref:`add-holding-map`.
 
 See also :doc:`HOLD`.
 
-Note that the menu item is disabled if holdings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
+.. _show-msa-flightplan:
+
+|Add MSA Diagram| Add MSA Diagram
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Same as :ref:`add-msa-map`. Only enabled if the navaid or airport have MSA information.
+
+See also :doc:`MSA`.
+
+Follow Selection
+^^^^^^^^^^^^^^^^
+
+The map view will be centered - not zoomed in - on the selected airport
+or navaid when this function is enabled.
 
 .. _copy-0:
 
@@ -542,12 +527,7 @@ highlight circles from the map.
 |Reset View| Reset View
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Reset the column order, visibility and widths back to default.
-
-|Select visible Columns| Select visible Columns
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See chapter :ref:`flight-plan-table-columns-select` above.
+Reset the column order, visibility and widths if the table back to default.
 
 .. _set-center-for-distance-search-1:
 
@@ -556,12 +536,20 @@ See chapter :ref:`flight-plan-table-columns-select` above.
 
 Same as :ref:`map-context-menu`.
 
+|Flight Plan Table Display Options| Flight Plan Table Display Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See chapter :ref:`flight-plan-table-columns-select` above.
+
+
 Flight Plan Remarks
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a free text remark for the flight plan.
 
-Note that this field saved is saved only in the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
+Shows the loaded performance file and selected scenery data when saving the flight plan file.
+
+Note that this field saved is saved only when using the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
 
 See also :doc:`REMARKS`.
 
@@ -586,6 +574,12 @@ See also :doc:`REMARKS`.
 .. |Copy| image:: ../images/icon_copy.png
 .. |Reset View| image:: ../images/icon_cleartable.png
 .. |Set Center for Distance Search| image:: ../images/icon_mark.png
-.. |Select visible Columns| image:: ../images/icon_settingsroute.png
+.. |Flight Plan Table Display Options| image:: ../images/icon_settingsroute.png
 .. |Save selected range as Flight Plan| image:: ../images/icon_mapsaveasimage.png
 .. |Calculate Flight Plan for selected Range| image:: ../images/icon_routecalc.png
+.. |Settings| image:: ../images/icon_settings.png
+.. |Destination Runway| image:: ../images/icon_runwaydest.png
+.. |Departure Runway| image:: ../images/icon_runwaydepart.png
+.. |Undo| image:: ../images/icon_undo.png
+.. |Redo| image:: ../images/icon_redo.png
+.. |Add MSA Diagram| image:: ../images/icon_msa.png

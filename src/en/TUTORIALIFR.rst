@@ -1,6 +1,8 @@
 Tutorial - Building an IFR Flight Plan with Approach Procedures
 -------------------------------------------------------------------
 
+TODO
+
 This tutorial will show you how to create a more complex IFR flight plan
 including approach procedures. It introduces the advanced airport search
 functionality and the automatic flight plan calculation.
@@ -94,8 +96,8 @@ Now look for the departure airport:
 -  Enter ``EGHJ`` in the ``ICAO Code`` search field on the top left
    (case does not matter).
 -  Right-click on the airport in the result table.
--  Choose :ref:`set-as-flight-plan-departure-search` |Set as Flight Plan
-   Departure|. This will assign a default runway as a start position.
+-  Choose ``Set as Departure`` |Set as Flight Plan
+   Departure|. This will assign the airport as a start position.
 
 |Assign Departure|
 
@@ -124,7 +126,7 @@ Search for Destination
 Now look for a suitable destination airport:
 
 -  Right-click on ``EGHJ`` in the search result again.
--  Select :ref:`set-center-for-distance-search-search` |Set Center for Distance
+-  Select ``Set Center for Distance Search`` |Set Center for Distance
    Search|. You can also do this in the map. This is the center point
    for the spatial search.
 -  Clear the ``ICAO Code`` search field now. It is a common mistake to
@@ -177,7 +179,7 @@ though we are not there yet:
 
    |Search for Destination|
 -  Right-click on Wick in the result table and select
-   :ref:`show-information-search` |Show Information|. This will fill the
+   ``Show Information`` |Show Information|. This will fill the
    tabs in the dock window ``Information``.
 -  Select the tab ``Airport`` and below this one the tab ``Weather``. Look for the section
    ``Best runways for wind`` to get an idea of the expected landing
@@ -195,7 +197,7 @@ Select an Approach Procedure
 We'll select an approach procedure now:
 
 -  Go back to the search result.
--  Right-click on the airport Wick again. Select :ref:`show-procedures-search`
+-  Right-click on the airport Wick again. Select ``Show Procedures for``
    |Show Procedures|. This will pop up the procedure search tab.
 -  Choose ``Runway 13`` in the ``All Runways`` combo box to see only
    approaches for 13.
@@ -384,7 +386,7 @@ Now the weather has changed requiring an approach to runway 31:
 
 -  Right-click on the destination airport at the bottom of the flight
    plan table.
--  Choose :ref:`show-procedures-search` |Show Procedures|.
+-  Choose ``Show Procedures for`` |Show Procedures|.
 -  Then change the runway filter to ``Runway 31``.
 -  Expand the approach ``VORDME 31`` to see the transition.
 -  Select the transition.
@@ -428,7 +430,7 @@ This will give a direct connection from your current aircraft position
 to the start of the procedure which you can use to get course and
 distance to the initial fix.
 
-**Below:** After changing the approach procedure and adding an user-defined
+**Below:** After changing the approach procedure and adding an user defined
 waypoint at the aircraft position to the flight plan. Now we get course
 and altitude indications for a direct leg to the start of the transition
 (43 NM and 314 degrees magnetic course).

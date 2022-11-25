@@ -1,113 +1,154 @@
-Introduction
--------------
-
-This chapter gives a brief overview of the most important topics with links to the more detailed chapters.
-
-*Little Navmap* shows several dialogs and a web page on first startup to give
-hints about usage and other useful information. Once read you can disable these dialogs by clicking
-on ``Do not show this dialog again``.
-
-Creating Recommended Directories for Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The program suggests to create a recommended directory structure on startup. You can choose to ignore this
-and save your *Little Navmap* files in arbitrary places. The program does not require a fixed
-directory structure for its files.
-
-See :doc:`FOLDERS` for more information.
-
-Loading the Scenery Database
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*Little Navmap* will copy and prepare the included Navigraph database on
-the first startup.
-
-:doc:`SCENERY` will be shown once the preparation is finished. From there you
-can select all recognized Flight Simulators and load their scenery
-libraries into the database of *Little Navmap*.
-
-An ``Empty Database`` indication is shown in the statusbar if you skip this step.
-You will not be able to build flight plans for your simulator.
-
-Note that you have to reload the database to see changes when adding add-on airports.
-
-.. note::
-
-       X-Plane cannot be always recognized automatically. You might have to set
-       the path in the dialog ``Load Scenery Library`` before you can load the
-       database.
-
-One database is kept for each simulator and can be changed on the fly in
-:ref:`scenery-library-menu`.
-
-You can load the scenery library database later by going to the menu item
-:ref:`load-scenery-library` in the menu ``Scenery Library``.
-
-Scenery library databases may need to be updated when you
-install a new version of *Little Navmap*. A question dialog will pop up
-prompting you to erase the now incompatible database. You can reload the
-scenery in :doc:`SCENERY` after erasing the databases.
-
-.. note::
-
-    Selecting the right scenery library for the simulator while flying is crucial since the selection
-    also affects other functions of *Little Navmap*. The selected scenery library
-    defines which weather files are read, for example.
-
-Connecting to a Simulator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Once you close the :doc:`SCENERY` the dialog
-:doc:`CONNECT` will be shown to connect to a running flight simulator.
-
-See :doc:`CONNECT` for the next
-step to use *Little Navmap* as a moving map. The included *Little
-Xpconnect* plugin has to be installed for X-Plane.
-
-
-.. _things-to-do-after-installing:
-
-Recommended things to do after Installing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--  The elevation data which is used by default is limited and has a lot
-   of problems. Therefore, I recommend to download and use the offline
-   GLOBE elevation data. See :ref:`cache-elevation` for more information.
--  Have a look at :doc:`TUTORIALS` if you use the program the first time.
--  See `Install Navigraph
-   Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__
-   on my home page for information how to update *Little Navmap*'s
-   navigation data.
-
-.. _network-setup:
-
-How to run a Network Setup
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The remote computer does not need a simulator installation and there is no need to share the
-scenery library of the simulator.
-
-See :doc:`NETWORK` on information how to set up a remote/networked connection.
-
 User Interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Dock Windows and Tabs
+Terms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See the chapters :doc:`DOCKWINDOWS` and :doc:`TABS` for more information on these elements.
+``Menu`` -> ``Menu Item`` denotes paths through the main menu or the context menus.
+
+See :doc:`GLOSSARY` for terms.
+
+
+Dock Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See the chapter :doc:`DOCKWINDOWS` for more information about using dock and floating windows.
+
+Tabs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :doc:`TABS` for information about the context menu and how to configure and arrange tabs.
+
+.. _ui-toolbars:
+
+Toolbars
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Toolbars are also movable by clicking on the left handle and can also be
+closed or detached from the main window similar to the dock windows.
+Toolbars can also be opened and closed in the main menu ``Window``.
+
+All toolbars have a right click context menu where different toolbars can be shown or hidden.
+
+A toolbar gets an overflow button ``>>`` on the right side if it is too long to show in the main window. Click this button to see the remaining buttons.
+
+.. figure:: ../images/toolbar_move.jpg
+
+     Moving a toolbar into a new position.
+
+.. figure:: ../images/toolbar_move_vert.jpg
+
+    Moving a toolbar into a new vertical toolbar at the left side of the main window.
+
+.. figure:: ../images/toolbar_overflow.jpg
+
+    The main window it too small to show the whole toolbar. Clicking the overflow button ``>>``.
+
+.. note::
+
+   Use the ``Window`` menu in the in the main menu to save, load or restore
+   windows, toolbars and tabs layouts.
+
+   The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and position of all dock
+   windows and toolbars back to their default.
+
+
+.. _ui-disabled:
+
+Disabled Buttons and Menu Items
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Menu items, buttons, toolbar buttons and other controls are disabled (i.e. grayed out) if their function is not applicable. The
+aircraft center button on the toolbar is disabled when *Little Navmap* is not connected to a simulator or the
+``Remove all Range Rings`` menu item is grayed out if there are no range rings to delete, for
+example.
+
+.. _ui-messages:
+
+Warning and Error Messages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. role:: error-style
+.. role:: warning-style
+
+*Little Navmap* shows :error-style:`error messages with white text on red background`
+for problems with the aircraft performance, top of descent/climb
+calculation or other issues.
+
+Tooltips on these error messages give more help in most cases.
+Click these messages or hover the mouse cursor above to see more information.
+
+:warning-style:`Orange warning messages` show hints about less severe issues.
+
+These message are shown in the :doc:`STATUSBAR`, :ref:`flight-plan-table` fields,
+:ref:`flight-plan-table-err-footer`, :ref:`progress-info`, :ref:`connect-options` and other places.
+
+.. figure:: ../images/ui_warning_err.jpg
+
+    A red error message in the flight plan footer and a orange warning message in the flight plan fuel report.
+
+.. _ui-tables:
+
+Tables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The header of table views allows the following manipulation:
+
+-  **Click on the top left corner of the column header:** Select all
+   result rows.
+-  **Click on a column header:** Sort ascending or descending (only for
+   search result tables - not for flight plan table).
+-  **Click and drag on the column header:** Change column order.
+-  **Double-click on column border:** Automatically fit column size to
+   content.
+-  **Click and drag on column border:** Change column width.
+-  **Click into the empty space below all rows:** Deselect all entries
+   and remove highlights on the map.
+
+The above applies to most table views in the program and partially also
+to the tree view of the procedure search.
+
+The program saves the sort order, column widths and positions until
+``Reset View`` is selected in the related context menu.
+
+.. figure:: ../images/table_header.jpg
+
+    Table header of the flight plan table with tooltip.
+
+.. _ui-tree:
+
+Trees
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Some configuration dialogs uses a tree element. You have to click on the small right pointing arrow (``►`` or ``+``
+depending on operating system and user interface style) to open a branch with options.
+
+Select checkboxes on the left to enable or disable features. Explanations are given in the right column.
+
+You can also click on the small checkbox in the branch root to select or unselect all elements of the branch.
+
+.. figure:: ../images/tree.jpg
+
+   Tree for flight plan table display configuration. Shows tooltip for cut off explanation.
+   Branch checkbox for ``Flight Plan Table Header`` is selected and indicates all items in branch enabled.
+
+
+.. _ui-contextmenus:
 
 Context Menus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Context menus are an important element to build flight plans or get information and
+Context menus (or right-click menus) are an important element in *Little Navmap* to build flight plans or get information and
 can be found in the following places:
 
+-  Toolbars: :ref:`ui-toolbars`
+-  Tab Bars: :doc:`TABS`
 -  Map display window: :ref:`map-context-menu`
 -  Flight plan table: :ref:`flight-plan-table-view-context-menu`
 -  Airport, navaid and other search result tables: :ref:`search-result-table-view-context-menu`
 -  Procedure search tree: :ref:`procedure-context-menu`
--  Elevation Profile: :ref:`context-menu`
+-  Elevation Profile: :ref:`context-menu-profile`
+-  Aircraft Progress: :ref:`progress-info`
 -  Multiexport Flight Plan Options: :doc:`ROUTEEXPORTALL`.
 
 The context menus provide functionality to get more information about an
@@ -125,26 +166,32 @@ The program uses tooltips to provide help or to display more information on butt
 other controls. Tooltips are small labels which pop up if you hover the mouse above a control like
 a button or text edit field.
 
-A more detailed description is also shown on the left side of the statusbar
+A more detailed description is also shown on the left side of the :doc:`STATUSBAR`
 if you hover the mouse over a menu item.
 
 Almost all dialogs and dock windows have buttons which are labeled ``Help`` or use the icon |Help|.
 Clicking these will open the corresponding sections of the online manual.
 
+.. _window-title:
+
 Window Title
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The main window title shows the application name and version.
+The main window title shows the following information:
 
-Furthermore, it indicates the currently selected simulator database
-(``FSX``, ``FSXSE``, ``P3DV2``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS`` or ``XP11``), the
-flight plan file name, the aircraft performance file name with trailing
-``*`` for both if either has changed.
+#. Application name
+#. Version
+#. Build type (for Windows only): ``64-bit`` (use this with MSFS) or ``32-bit`` (use this with FSX and P3D).
+#. Selected simulator scenery library database (``FSX``, ``FSXSE``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS``, ``XP11`` or ``XP12``) and AIRAC cycle if available. In parentheses if not used.
+#. Selected navigation database (Navigraph: ``N``) and AIRAC cycle. In parentheses if not used.
+#. Loaded flight plan file name plus a ``*`` if changed.
+#. Loaded aircraft performance file a ``*`` if changed.
+#. Selected online network connection if used.
 
 The AIRAC cycle is shown as a four digit number after the simulator and Navigraph database
 indication if available and if a database is selected.
 
-The AIRAC cycle is only shown for X-Plane and the Navigraph database. Other simulators do not
+The AIRAC cycle is only shown for X-Plane and Navigraph databases. Other simulators do not
 provide cycle information in their scenery libraries.
 
 A ``N`` will be appended if the Navigraph database is used. Otherwise ``(N)`` is used. Example
@@ -162,19 +209,19 @@ below for Prepar3D:
 See :ref:`scenery-library-menu`, :doc:`SCENERY` and :doc:`NAVDATA` for more information.
 
 **Examples:**
-``Little Navmap 2.6.8 - XP11 2001 / N 2011 LOAG_LOWW.lnmpln * - PA30 Twin Comanche.lnmperf``
+``Little Navmap 2.6.8 64-bit - XP11 2001 / N 2011 LOAG_LOWW.lnmpln * - PA30 Twin Comanche.lnmperf - VATSIM``
 
-Version 2.6.8, X-Plane selected with AIRAC cycle 2001, Navigraph database in use with AIRAC cycle
-2011, flight plan ``LOAG_LOWW.lnmpln`` changed and performance profile ``PA30 Twin Comanche.lnmperf`` unchanged.
+Version 2.6.8, new 64-bit Windows build, X-Plane selected with AIRAC cycle 2001, Navigraph database in use with AIRAC cycle
+2011, flight plan ``LOAG_LOWW.lnmpln`` changed and performance profile ``PA30 Twin Comanche.lnmperf`` unchanged. Connected to VATSIM network.
 
 ``Little Navmap 2.6.4.beta - (XP11) / N 2012 IFR Frankfurt Am Main (EDDF) to Fiumicino (LIRF).lnmpln - PA30 Twin Comanche.lnmperf *``
 
 Version 2.6.4.beta (a test version), X-Plane not selected - using Navigraph only, Navigraph database in use with AIRAC cycle
 2012, flight plan unchanged and performance profile ``PA30 Twin Comanche.lnmperf`` changed.
 
-``Little Navmap 2.6.5.rc1 - XP11 2012 / (N) - *``
+``Little Navmap 2.6.5.rc1 32-bit - FSX 2012 / (N) - *``
 
-Version 2.6.5.rc1 (a release candidate), X-Plane selected, not using Navigraph,
+Version 2.6.5.rc1 (a release candidate), 32-bit version as required for FSX, FSX selected, not using Navigraph,
 no flight plan loaded and new and empty default performance profile loaded.
 
 Information and Simulator Aircraft Text
@@ -190,24 +237,32 @@ This page also allows to change the font for the whole program interface.
      A quick way to change the text size is to use the mouse wheel and
      ``Ctrl`` key. This setting won't be saved across sessions, though.
 
-Error Messages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Little Navmap* shows error messages with white text on red background
-for problems with the aircraft performance, top of descent/climb
-calculation or other issues.
-
-Tooltips on these error messages give more help in most cases.
-Click these messages or hover the mouse cursor above to see more information.
-
 Activating and raising Windows and Tabs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Little Navmap* opens and raises dock windows and tabs for certain
-actions like ``File`` -> ``New Flight Plan`` or ``Aircraft`` ->
-``Open Aircraft Performance ...`` to avoid confusion for new users. This
-behavior can be disabled in the options dialog on tab ``User Interface``
-by disabling the option ``Raise related windows on actions``.
+actions like ``File`` -> :ref:`new-flight-plan` or ``Aircraft`` ->
+:ref:`aircraft-menu-load` to avoid confusion for new users. This
+behavior can be disabled in the options dialog on tab :ref:`user-interface`
+by disabling the option :ref:`raise-on-related`.
+
+.. _tear-off-menu:
+
+Tear off Dropdown Menus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Toolbar buttons with a drop down menu and other buttons like :doc:`ROUTEDESCR` allow to tear off the menu
+by clicking on the dashed line on top of it.
+
+This will move the menu into a separate window and allows to quickly change several options at once.
+
+The state of the tear off menus is not saved.
+
+.. figure:: ../images/tearoff.jpg
+
+       The drop down menu button for the userpoint categories for map display and
+       how the menu can be teared off into its own window.
+
 
 Copy and Paste
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -251,9 +306,9 @@ Map Legend
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The legend explains all the map icons and the
-``Flight Plan Elevation Profile`` icons. It is available in :doc:`LEGEND`.
+:doc:`PROFILE` icons. It is available in :doc:`LEGEND`.
 
-Rating
+Airport Rating
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Airports get a zero to five star rating depending on facilities.
@@ -288,42 +343,4 @@ in the options dialog on page :ref:`map-display`.
 Using emphasized (bold and underlined) text highlights add-on airports in the search result table,
 flight plan table, information windows and map tooltips.
 
-Navdata Updates
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*Little Navmap* comes with a ready to use navigation database courtesy of `Navigraph <https://www.navigraph.com>`__ which
-includes airspaces, SIDs, STARs and more. The database can be updated
-by using Navigraph's *FMS Data Manager*.
-
-See the chapter :doc:`NAVDATA` for more information.
-
-.. warning::
-
-      In any case close *Little Navmap* when updating, copying or replacing
-      scenery databases. *Little Navmap* might crash or show wrong data otherwise.
-
-FSX, Prepar3D and Microsoft Flight Simulator 2020
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Little Navmap* is compatible with navdata updates from
-`fsAerodata <https://www.fsaerodata.com>`__, the `FSX/P3D Navaids
-update <http://www.aero.sors.fr/navaids3.html>`__ and
-the Navigraph beta update for Microsoft Flight Simulator 2020
-(support forum: `Beta Testing for Microsoft Flight Simulator 2020 <https://forum.navigraph.com/viewforum.php?f=14>`__).
-
-
-X-Plane
-^^^^^^^^^^^^^^^^
-
-*Little Navmap* will use navdata updates that are installed in the
-directory ``Custom Data``.
-
-Older updates installed in the GPS directories are not used.
-
-User-defined data from the files ``user_fix.dat`` and ``user_nav.dat``
-is read and merged into the database if found.
-
-Note that neither ARINC nor the FAACIFP files are supported.
-
 .. |Help| image:: ../images/icon_help.png
-

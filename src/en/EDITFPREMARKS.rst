@@ -17,9 +17,8 @@ The dialog header shows the navaid type, name and region.
 Remarks
 ~~~~~~~
 
-Free multi line text field. Shown in abbreviated form in
-the flight plan table ``Remarks`` column and the column's tooltip as well as
-in the map tooltip.
+Free multi line text field. Shown in abbreviated form in the :ref:`flight-plan-table` ``Remarks``
+column and the column's tooltip as well as in the map tooltip.
 
 See :doc:`REMARKS` for more information.
 

@@ -7,6 +7,9 @@ Glossary
     X-Plane airport which contains at least one 3D object. May be a fully
     constructed major airport.
 
+Airport
+    Means all airports, water airports, airstrips or heliports.
+
 Add-on airport
     FSX/P3D: All scenery data that is found outside of the base flight
     simulator ``Scenery`` directory is considered an add-on.
@@ -30,6 +33,10 @@ BGL
     These files can also contain traffic, landclass, elevation or other
     information which is not relevant for *Little Navmap*.
 
+Checkbox
+    A user interface element that allows to toggle a setting between two states (on and off)
+    or three states (on, off and not applicable).
+
 CSV
     Comma-separated values text file.
 
@@ -39,6 +46,9 @@ DAT
 
 Departure Procedure
     SID (standard instrument departure) procedure.
+
+Dialog
+    A dialog window requiring user input. Most dialogs block the whole applicaton until closed.
 
 DME
     Distance measuring equipment or a radio navaid.
@@ -60,7 +70,7 @@ Fix
     procedure.
 
 Flight Plan Position
-    An user-defined waypoint which is part of the flight plan.
+    An user defined waypoint which is part of the flight plan.
 
 FLP
     Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other
@@ -87,6 +97,9 @@ ILS
 Initial Fix
     This is the first fix of a procedure.
 
+Logbook Entry
+    Created by the user or automatically on finishing a flight containing takeoff and landing.
+
 MAP
     Missed approach point. The point on the final approach which represents
     the termination of the final approach and the start of the missed
@@ -96,16 +109,16 @@ MSFS
     Microsoft Flight Simulator 2020.
 
 Navaid
-    VOR, VORTAC, TACAN, NDB or waypoint/intersection.
+    VOR, VORTAC, TACAN, NDB or waypoint/intersection. Also ILS and Localizer.
 
 NDB
     Non directional beacon - radio navaid.
 
 NM
-    Nautical miles. 1.852 km.
+    Nautical miles. 1.852 km, 1' (one minute or 1/60°) latitude or 1' longitude at the Equator.
 
 P3D
-    Prepar3D v2 to v5.
+    Prepar3D v3 to v5.
 
 Parking
     GA ramp, cargo ramp, fuel box or gate at an airport.
@@ -141,7 +154,7 @@ SID
 
 SimConnect
     A programming interface that allows applications to read and write
-    flight simulator parameters.
+    flight simulator parameters from FSX, P3D and MSFS.
 
 STAR
     A standard terminal arrival is a flight route that usually covers the
@@ -175,8 +188,11 @@ VORTAC
     navigation system (TACAN) beacon.
 
 Userpoint
-    An user-defined waypoint like a bookmark, point of interest or visual
+    An user defined waypoint like a bookmark, point of interest or visual
     reporting point (VRP).
+
+User Feature
+    Any display object like traffic patterns or measurment lines which can be added or removed by the user.
 
 UTC
     Universal coordinated time. Also: Greenwich time or zulu time.

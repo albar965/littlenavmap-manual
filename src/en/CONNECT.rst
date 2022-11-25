@@ -49,11 +49,19 @@ Navmap*.
 
 This option also affects the frigate and carrier in X-Plane.
 
+FSX, P3D and MSFS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. role:: warning-style
+
+No plugin or separate SimConnect installaton is needed since *Little Navmap* comes with its own SimConnect library.
+
+You will see an :warning-style:`orange warning message` if you use a X-Plane scenery library when trying to connect to FSX, P3D or MSFS.
+
 X-Plane
 ^^^^^^^
 
 You have to install the included *Little Xpconnect* plugin to use
-*Little Navmap* as a moving map with X-Plane.
+*Little Navmap* as a moving map with X-Plane 11 and X-Plane 12.
 
 The plugin is bundled with *Little Navmap* but can also be downloaded
 separately.
@@ -68,6 +76,8 @@ Note that the plugin does not add any items to the X-Plane menu.
 
 Select the X-Plane tab to connect.
 
+You will see an :warning-style:`orange warning message` if you use a FSX, P3D or MSFS scenery library when connecting to X-Plane.
+
 .. _remote-connection:
 
 Remote Connection
@@ -81,6 +91,11 @@ flying computer.
 
      Airport weather information and winds aloft cannot be transferred across a remote
      connection from X-Plane. You can only see the current weather around the user aircraft.
+
+     Share files and directories for X-Plane across computers and adjust loading path in ``Options`` on page :ref:`cache` for remote setups.
+     *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib`` files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
+     applies updates immediately.
+
 
 See :doc:`NETWORK` on information how to set up a remote/networked connection.
 
@@ -161,7 +176,7 @@ amounts of AI but do not want to see it in *Little Navmap*.
 
 .. _connect-options:
 
-Connect Dialog Options
+Connect Dialog
 ~~~~~~~~~~~~~~~~~~~~~~
 
 -  ``Disconnect``: Disconnect the current session and stop automatic

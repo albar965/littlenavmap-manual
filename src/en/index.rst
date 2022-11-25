@@ -2,16 +2,12 @@
    :description: Little Navmap User Manual
    :keywords: Navigation, Flight Simulator, Map, Flightplan, FSX, MSFS, Prepar3D, X-Plane, Flightplanner
 
-.. warning::
-
-    **This user manual is work in progress until the stable release of Little Navmap 2.8 is released.**
-
 Little Navmap User Manual
 ================================
 
 *Little Navmap* is a free open source flight planner, navigation tool, moving map, airport search
 and airport information system for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D
-v2 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
+v3 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
 
    More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
    Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
@@ -23,9 +19,10 @@ v2 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
 
 This user manual is for *Little Navmap* versions |version|.
 
-=========== ===========
-|Sunshadow| |Spherical|
-=========== ===========
+.. image:: ../images/sunshadow_title.jpg
+    :width: 40 %
+.. image:: ../images/spherical_title.jpg
+    :width: 55 %
 
 Table of Contents
 ------------------------------
@@ -35,10 +32,11 @@ Table of Contents
    :numbered:
 
    ACKNOWLEDGMENTS
+
    DONATIONS
    INSTALLATION
-   QUICKOVERVIEW
    START
+   QUICKOVERVIEW
    INTRO
 
    DOCKWINDOWS
@@ -52,10 +50,12 @@ Table of Contents
    LEGEND
    TRAFFICPATTERN
    HOLD
+   MSA
    COMPASSROSE
    SUNSHADOW
    IMAGEEXPORT
    JUMPCOORDINATE
+   MEASURE
    RANGERINGS
 
    PROFILE
@@ -69,6 +69,7 @@ Table of Contents
    INFO
 
    FLIGHTPLAN
+   FLIGHTPLANCENTER
    MAPFPEDIT
    APPROACHES
    CUSTOMPROCEDURE
@@ -110,13 +111,16 @@ Table of Contents
    TUTORIALPERF
 
    COORDINATES
+   MAGVAR
    REMARKS
    SHORTCUTS
    NETWORK
+   XPCONNECT
    CUSTOMIZE
    MAPTHEMES
    FILES
    TIPS
+   COMMANDLINE
    APPENDIX
    GLOSSARY
    LICENSE
@@ -133,5 +137,4 @@ The sources of this manual are available on `Github <https://github.com/albar965
 
 Version |release|. Last updated on |today|.
 
-.. |Spherical| image:: ../images/spherical_small.jpg
-.. |Sunshadow| image:: ../images/sunshadow_small.jpg
+

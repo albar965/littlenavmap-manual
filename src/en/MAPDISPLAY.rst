@@ -1,41 +1,50 @@
 Map Display
 -----------
 
+.. _layers-map:
+
+Layers
+~~~~~~
+
 *Little Navmap* uses two layers to display the map:
 
 #.  Background which is defined by offline or online maps like the `OpenStreetMap <https://www.openstreetmap.org>`__.
-    You can change the background by selecting another :ref:`theme`.
+    You can change the background by selecting another :ref:`theme-menu`.
     The background maps cannot be modified or configured since they are fetched from third party online services.
     *Little Navmap* downloads pre-rendered image tiles from these services to draw the background map.
 #.  The foreground layer which is drawn by *Little Navmap* and can be customized in the options dialog on the map pages.
     It consists of airports, navaids, airways, airspaces, measurement lines, range rings, holds, traffic patterns
-    and all moving objects like AI and the user aircraft.
+    and all moving objects like AI and the user aircraft. This layer reflects airports as stored in
+    the scenery library of your simulator. This applies to stock and add-on airports.
 
-See :doc:`LEGEND` for details about the various symbols shown by the map.
+
+.. figure:: ../images/map_background.jpg
+
+       The OpenStreetMap background map showing aprons and taxiways of EDDF. These might not reflect what
+       you see in the simulator and are not taken from your scenery library including add-on airports. You can see the
+       same `here on the OpenStreetMap <https://www.openstreetmap.org/#map=16/50.0357/8.5300>`__
+       web page which delivers the background map tiles for *Little Navmap*.
+
+.. figure:: ../images/map_lnm.jpg
+
+       Aprons, taxiways and runways drawn by *Little Navmap*. These reflect your simulator stock or
+       add-on scenery. Tooltips are available.
+       Airport features can be disabled on options page :ref:`map-display-labels`.
+       See :doc:`LEGEND` for details about the various symbols shown by the map.
+
+.. _moving-map:
 
 Moving
 ~~~~~~
 
-Use click and drag to move the map and the mouse wheel to zoom in or out. Use ``Shift+Wheel`` to
-zoom in small steps and ``Ctrl+Wheel`` to increase or decrease map details.
-
-You can also use the overlay buttons on the right side of the map to move around.
-
-Alternatively use the keyboard to move around the map:
-
--  Cursor keys: Scroll the map
--  ``+`` and ``-``: Zoom in and out
--  ``*`` and ``/``: Zoom in and out in small steps
--  ``Alt+Left`` and ``Alt+Right``: Go forward or backward in the map
-   position history
--  ``Ctrl++`` and ``Ctrl+-``: Increase or decrease details
--  ``Ctrl+Home``: Go to home position
--  ``Ctrl+End``: Go to center for distance search
+See :ref:`mouse-clicks-legend` and :ref:`key-commands-legend` for information about how to move around the map using the mouse or keyboard.
 
 .. note::
 
          Do not forget to activate the map window by clicking into it or pressing
          ``F2`` before using keys for movement.
+
+.. _mouse-map:
 
 Mouse Clicks
 ~~~~~~~~~~~~
@@ -71,6 +80,7 @@ the page :ref:`map-navigation`.
    The same applies to all navaids as well as airport parking spots where the center is the hotspot
    for clicks.
 
+.. _mouse-click-hotspots:
 
 Mouse Click Hotspots
 ~~~~~~~~~~~~~~~~~~~~
@@ -82,32 +92,26 @@ to the flight plan drag and drop editing mode.
 The mouse cursor changes into a hand |Hand Cursor| to indicate a click
 spot.
 
-Click spots are:
+Click spots and hotspots for tooltips are:
 
 - Center of range rings (small circle).
+- Center of MSA diagrams (small circle).
 - End of a measurement line (cross).
 - Runway threshold point (small circle) for airport traffic patterns.
-- Holding fix (small triangle) of a holding.
+- Holding fix (small triangle) of a user holding.
 
 .. _mouse-clicks-modifiers:
 
 Mouse Clicks and Modifiers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use the keyboard and mouse click to get quick access to the
-following functions:
+You can use the keyboard and mouse click to get quick access to certain functions.
 
--  ``Shift+Click``: Adds or removes range rings or navaid range rings.
--  ``Ctrl+Click`` and ``Alt+Click``: Starts great circle line measurement or deletes a
-   measurement line.
--  ``Ctrl+Shift+Click``: Add or edit an userpoint.
--  ``Ctrl+Alt+Click``: Inserts an airport, a navaid, an userpoint or a position
-   into the nearest flight plan leg.
--  ``Shift+Alt+Click``: Appends an airport, a navaid, an userpoint or a position to the
-   flight plan.
+See :ref:`mouse-clicks-legend` for more information about this.
 
-Clicking again on the hotspot removes the marks, measurement lines or
-flight plan waypoints.
+Clicking again on a hotspot removes the marks, measurement lines or flight plan waypoints.
+
+.. _aircraft-map:
 
 Aircraft
 ~~~~~~~~
@@ -118,7 +122,10 @@ indicates user or AI or multiplayer vehicle and the symbol shape
 indicates if the aircraft is an piston/turboprop, jet, helicopter or a
 ship. The symbol outline changes to gray if an aircraft is on ground.
 
-Little Navmap limits the display of AI vehicles depending on size. Zoom
+Note that not all simulators and online networks provide enough information to show the correct
+aircraft shape.
+
+*Little Navmap* limits the display of AI vehicles depending on size. Zoom
 close to see small aircraft or boats
 
 AI and multiplayer aircraft on ground are shown only on small zoom
@@ -134,9 +141,13 @@ can disappear from the map when landing on an airport.
 A yellow wind arrow and labels for the situation around the user
 aircraft can be displayed on the top center of the map. The displayed
 labels for aircraft can be configured in the dialog ``Options`` on
-:ref:`map-display-2`. No labels are shown for ship traffic.
+:ref:`map-display-labels`. No labels are shown for ship traffic.
 
-See :ref:`vehicles` for details about the aircraft type.
+Labels are dropped depending on zoom distance. Flight number and registration are always shown.
+
+See :ref:`vehicles-legend` for details about the aircraft type.
+
+.. _tooltips-map:
 
 Tooltips
 ~~~~~~~~
@@ -145,11 +156,12 @@ Hovering the mouse over the map will show tooltips for all map objects
 including airports, VOR, NDB, airways, parking, fuel box, towers,
 aircraft and ships. The tooltip is truncated and shows a message
 ``More ...`` if it gets too long. In that case reduce details or zoom in
-closer.
+closer. Disable ``Verbose tooltips`` in options on page :ref:`map` if you do not like the large tips.
 
 The sensitivity for the tooltip display can be adjusted in the
 ``Options`` dialog on :ref:`map-navigation`.
 
+You can select tooltip options on page :ref:`map`.
 
 .. figure:: ../images/tooltip.jpg
 
@@ -159,16 +171,17 @@ The sensitivity for the tooltip display can be adjusted in the
 
     Tooltip with information about airspaces.
 
+.. _highlights-map:
 
 Highlights
 ~~~~~~~~~~
 
 Airports, navaids or other features that are selected in the flight plan
 table or in a search result table are highlighted on the map with a
-green/black or a yellow/black ring respectively.
+green/black or a yellow/black ring respectively (colors at default settings).
 
 Waypoints that are selected in the procedure preview are highlighted
-with a blue/black ring.
+with a blue/black ring using default colors.
 
 These highlight circles provide all functionality of visible map
 objects, even if the objects are not shown at the current zoom distance
@@ -177,6 +190,10 @@ information dock window and all context menu entries.
 
 You can use  ``Map`` -> :ref:`remove-highlights` to remove all
 highlights from the map.
+
+Colors and appearance can be customized in options on page :ref:`map-display-user`.
+
+.. _flightplan-map:
 
 Flight Plan
 ~~~~~~~~~~~~~~~
@@ -187,9 +204,15 @@ All features which are part of the flight plan are forced to be shown even if th
 the menu. This means that destination, departure and alternate airport symbols as well as diagrams
 are shown even if airport display is disabled. The same applies to all navaids and approach ILS.
 
+Colors and appearance of the flight plan can be customized in options on page :ref:`map-display-flight-plan`.
+Labels can be changed on options page :ref:`map-display-labels`.
+
 .. tip::
 
     Hide all map features to get a clean view on flight plan related airports and navaids only.
+    This will hide all unneeded features but keeps all navaids and related navaids for procedures like ILS on the map.
+
+.. _airport-diagram-map:
 
 Airport Diagram
 ~~~~~~~~~~~~~~~
@@ -198,34 +221,154 @@ The display will change from a single icon to an airport diagram if you
 zoom in deep enough to an airport. The diagram shows all taxiways,
 parking positions, gates, runways and more.
 
-The airport diagram provides more information through tooltips for
+The airport diagram provides more information through tooltips at the center of
 parking and tower positions. A right-click on a parking position opens
 the context menu and allows to select the start position for flight plan
 departure.
 
-See :ref:`airport-diagram` for details about the airport diagram.
+See :ref:`airport-diagram-legend` for details about the airport diagram.
 
-.. note::
-
-       Airspaces are hidden if the airport diagram is shown.
-
-.. tip::
-
-      You can adjust the visibility of airport elements like runways or aprons for diagram in the options dialog on page :ref:`map-display-2`
-      in the tree on the right side.
-
-      Use this is you'd like to rely on the airport diagrams of the OpenStreetMap background map, for example.
+Airport labels and diagram features can be changed on options page :ref:`map-display-labels`.
+Disable all airport features except runways if you'd like to rely on the airport diagrams of the OpenStreetMap background map, for example.
 
 .. figure:: ../images/airportdiagram1.jpg
 
          High level view of the airport diagram of EDDH.
 
 .. figure:: ../images/airportdiagram2.jpg
+      :scale: 50%
 
-         Detailed view of the airport diagram. Shows blue
-         gates on the right and green general aviation ramp parking spots
-         on the left. Long displaced threshold of runway 33 is visible. Dashed
-         yellow lines indicate taxi paths.
+      Detailed view of the airport diagram. Shows blue
+      gates on the right and green general aviation ramp parking spots
+      on the left. Long displaced threshold of runway 33 is visible. Dashed
+      yellow lines indicate taxi paths. *Click image to enlarge.*
+
+
+.. _map-projection:
+
+|Map Themes| Map Projection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The map projection can also be changed in the main menu ``View`` -> :ref:`projection-menu` or with the toolbar button |Map|.
+Note that the drop down menu of the toolbar button can be torn off by clicking on the dashed line in the menu.
+
+Two projections can be selected in *Little Navmap*:
+
+Mercator
+   A flat projection that gives the most fluid movement and the sharpest
+   map when using picture tile based online maps themes like
+   *OpenStreetMap* or *OpenTopoMap*.
+
+Spherical
+   Shows earth as a globe which is the most natural projection. Movement
+   can stutter slightly when using the picture tile based online maps
+   themes like *OpenStreetMap* or *OpenTopoMap*. Use the ``Simple``,
+   ``Plain`` or ``Atlas`` map themes to prevent this.
+
+   Online maps can appear slightly blurred when using this projection. This
+   is a result from converting the flat image tiles to the spherical
+   display.
+
+.. figure:: ../images/sphericalpolitical.jpg
+
+      Spherical map projection with ``Simple`` offline map theme selected.
+
+.. _map-themes:
+
+|Map Themes| Map Themes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+The map theme can be changed in main menu ``View`` -> :ref:`theme-menu` or with the toolbar button |Map| which can be torn off by
+clicking on the dashed line in the menu.
+
+Allows to change the map theme which defines the look and feel of the background map (:ref:`layers-map`).
+
+See :ref:`map-display-keys` for more information on themes requiring a login.
+:doc:`MAPTHEMES` explains the creating of own themes.
+
+.. tip::
+
+      Also check out the `Little Navmap Support Forum at
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
+      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
+      `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
+
+.. note::
+
+    Please note that all the online maps are delivered from free services
+    therefore fast download speeds and high availability cannot be
+    guaranteed.
+
+In any case it is easy to deliver and install a new online
+map source without creating a new *Little Navmap* release.
+See :doc:`MAPTHEMES` for more information.
+
+The following map themes are included per default:
+
+CARTO Dark Matter
+    A dark map.
+
+    Map tiles and style by `CARTO <https://carto.com/>`__. Data by
+    `OpenStreetMap <https://www.openstreetmap.org>`__, under
+    `ODbL <https://www.openstreetmap.org/copyright>`__.
+
+CARTO Positron
+    A very bright map called *Positron* which allows to concentrate on the
+    aviation features on the map display.
+
+    Map tiles and style by `CARTO <https://carto.com/>`__. Data by
+    `OpenStreetMap <https://www.openstreetmap.org>`__, under
+    `ODbL <https://www.openstreetmap.org/copyright>`__.
+
+OpenStreetMap
+    This is an online raster (i.e. based on images) map without hill shading.
+
+    The tiles for this map are provided by `OpenStreetMap <https://www.openstreetmap.org>`__.
+
+    Data by `OpenStreetMap <https://www.openstreetmap.org>`__, under `ODbL <https://www.openstreetmap.org/copyright>`__.
+
+OpenTopoMap
+    An online raster map that mimics a topographic map. Includes integrated hill
+    shading and elevation contour lines at lower zoom distances.
+
+    The tiles for this map are provided by `OpenTopoMap <https://www.opentopomap.org>`__.
+
+    .. figure:: ../images/otm.jpg
+
+          View at the eastern Alps using *OpenTopoMap* theme. A flight plan is shown north of the Alps.
+
+Stamen Terrain
+    A terrain map featuring integrated hill shading and natural vegetation colors. The
+    hill shading is available worldwide.
+
+    Map tiles by `Stamen Design <https://stamen.com>`__, under `CC BY
+    3.0 <https://creativecommons.org/licenses/by/3.0>`__. Data by
+    `OpenStreetMap <https://www.openstreetmap.org>`__, under
+    `ODbL <https://www.openstreetmap.org/copyright>`__.
+
+    .. figure:: ../images/stamenterrain.jpg
+
+          View showing Stamen Terrain theme.
+
+Political Map (Offline)
+    This is an offline political map using colored country polygons. Boundaries and
+    water bodies are depicted coarse. The map included in *Little Navmap*
+    has an option to display city and country names.
+
+Plain Map (Offline)
+    A very simple offline map. The map is included in *Little Navmap* and has an
+    option to display city and country names. Boundaries and water bodies
+    are depicted coarse.
+
+Atlas (Offline)
+    A very simple offline map including coarse hill shading and land colors. The map
+    is included in *Little Navmap* and has an option to display city and
+    country names. Boundaries and water bodies are depicted coarse.
+
+Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Thunderforest Atlas and Thunderforest Landscape (registration required)
+    These maps require a registration at the respective sites to get access to the map tiles.
+    You can enter the keys in ``Options`` on page :ref:`map-display-keys` which also contains direct links to the login pages.
 
 .. _map-context-menu:
 
@@ -245,14 +388,20 @@ if more than one appropriate map object was found below the cursor. This helps t
 the right airport from a dense map which displays many airports in one spot, for example.
 
 Some menus add an additional item ``Position`` to the sub-menu which inserts a plain position
-instead of a navaid or an airport.
+instead of the navaid or an airport at the clicked position.
 
 Menu items are disabled if their function does not apply to the clicked map object. Hints showing the reason are
 appended to the menu text like ``(has not procedure)`` for an airport.
 
 .. figure:: ../images/mapmenus.jpg
+    :scale: 70%
 
-    The various sub-menus of the map context menu.
+    The various sub-menus of the map context menu. Image based on *Little Navmap* 2.6.19. *Click image to enlarge.*
+
+
+.. tip::
+
+   Look at the left side of this online user manual to see all the menu items in a tree like structure.
 
 .. _show-information-map:
 
@@ -268,174 +417,16 @@ a single left click into the map.
 
 See :doc:`INFO` for details.
 
-.. _show-procedures-map:
-
-|Show Procedures| Show Procedures
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Open the procedure search tab of the search dock window and display all
-procedures for the airport.
-
-The menu item text varies depending if the airport is a part of the flight plan.
-
-See :doc:`SEARCHPROCS` for more information.
-
-.. _show-approach-custom-map:
-
-|Create Approach| Create Approach
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Opens a dialog which allows to create a simple user defined final
-approach.
-
-The text of this menu item varies depending if the airport is already the destination in the flight
-plan or not.
-
-See :doc:`CUSTOMPROCEDURE` for more information.
-
-.. _measure-gc-distance-from-here:
-
-|Measure Distance from here| Measure Distance from here
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Display distances from the selected origin as you move the mouse over
-the map. Left-click on the map to end measuring and keep the measurement
-line. All measurement lines are saved and will be restored on next start
-up.
-
-You can use the keyboard, mouse wheel or the map overlays to scroll and
-zoom while dragging a line.
-
-Right-click, press the escape key or click outside of the map window to
-cancel the measurement line editing.
-
-Measurement lines use nautical miles, kilometers or statue miles as
-unit. Feet or meter will be added as unit if the lines are short enough.
-This allows to measure e.g. takeoff distance for crossing takeoffs.
-
-A great circle gives the shortest distance from point to point on earth
-but does not use a constant course. For that reason the measurement line
-will show two course values. One for the start and one for the end
-position.
-
-Course is always indicated in degrees true which is indicated by the
-suffix ``°T``. Additional information like ident or frequency will be
-added to the line if the measurement starts at a navaid or an airport.
-
-The width of distance measurement lines can be changed in the dialog
-``Options`` on page :ref:`map-display`. The labels can be changed in the tree view on the right
-side of the page :ref:`map-display-2`.
-
-See :ref:`highlights` for details on
-measurement lines.
-
-Note that the menu item is disabled if measurement lines are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
-
-.. _remove-distance-measurement:
-
-|Remove Distance measurement| Remove Distance measurement
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Remove the selected line. This menu item is active if you right-click on
-the end point of a distance measurement line (small cross).
-
-.. _show-range-rings:
-
-|Add Range Rings| Add Range Rings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Show multiple red range rings around the clicked position. The number
-and distance of the range rings can be changed in the ``Options`` dialog
-on page :ref:`map`. A label indicates the radius of each ring.
-
-The width of all range ring lines can be changed in the dialog ``Options`` on
-:ref:`map-display-2`.
-
-Note that the menu item is disabled if range rings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
-
-.. _show-navaid-range:
-
-|Add Navaid Range Ring| Add Navaid Range Ring
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Show a ring around the clicked radio navaid (VOR or NDB) indicating the
-navaid's range. A label shows ident and frequency and the ring color
-indicates the navaid type.
-
-Note that the menu item is disabled if range rings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
-
-.. _remove-range-ring:
-
-|Remove Range Ring| Remove Range Ring
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Remove the selected rings from the map. This menu item is active if you
-right-click on the center point of a range ring (small circle).
-
-.. _show-traffic-pattern-map:
-
-|Add Traffic Pattern| Add Traffic Pattern
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This menu item is enabled if clicked on an airport. Shows a dialog that
-allows to customize and display an airport traffic pattern on the map.
-
-See :doc:`TRAFFICPATTERN`.
-
-Note that the menu item is disabled if traffic patterns are hidden on
-the map (menu ``View`` -> ``User Features``). The menu item is suffixed
-with the text ``hidden on map`` if this is the case.
-
-.. _remove-traffic-pattern:
-
-|Remove Traffic Pattern| Remove Traffic Pattern
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Enabled if clicked on the airport traffic pattern hotspot (white filled
-circle at runway threshold) which is indicated by a hand cursor. Removes
-the traffic pattern from the map.
-
-See :doc:`TRAFFICPATTERN`.
-
-.. _holding:
-
-|Add Holding| Add Holding
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Display a holding pattern at any position on the map. The hold
-may also be attached to navaids. Opens a dialog for customization if selected.
-
-See chapter :doc:`HOLD` for more information.
-
-Note that the menu item is disabled if holdings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
-
-|Remove Holding| Remove Holding
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Enabled if clicked on the hotspot (holding fix, white filled triangle)
-which is indicated by a hand cursor. Removes the holding from the map.
-
-See chapter :doc:`HOLD` for more information.
-
 .. _set-as-flight-plan-departure:
 
 |Set as Departure| Set as Departure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is active if the click is at an airport, an airport parking
-position or a fuel box. It will either replace the current flight plan
+This is active if the click is at an airport symbol center, an airport parking
+position center or a fuel box. It will either replace the current flight plan
 departure or add a new departure if the flight plan is empty.
 
-The default runway will be used as starting position if the clicked
-object is an airport. The airport and parking position will replace both
+The airport and parking position will replace both
 the current departure and start position if a parking position is
 clicked within an airport diagram.
 
@@ -444,8 +435,8 @@ clicked within an airport diagram.
 |Set as Destination| Set as Destination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This menu item is active if the click is at an airport. It will either
-replace the flight plan destination or add the airport if the flight
+This menu item is active if the click spot is at an airport. It will either
+replace the flight plan destination or add the airport to the plan if the flight
 plan is empty.
 
 .. _set-as-flight-plan-alternate:
@@ -459,10 +450,58 @@ the airport as an alternate to the current flight plan.
 More than one alternate can be added to the flight plan. Legs to the
 alternate airports originate all from the destination.
 
-Disabled if airport is already departure, destination or alternate.
+Disabled if airport is already departure, destination or an alternate.
+
+The distance to the farthest alternate is considered in the fuel calculation.
 
 Note that you have to activate an alternate leg manually if you would like to fly it
 (see :ref:`activate`).
+
+
+.. _set-departure-runway-map:
+
+|Departure Runway| Set Departure Runway
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Selecting a departure runway also adds a departure flight plan leg depicting the extended runway center line.
+See :doc:`CUSTOMPROCEDURE` for more information.
+
+The text of this menu item varies depending if the airport is already the departure in the flight
+plan or not.
+
+.. _set-destination-runway-map:
+
+|Destination Runway| Set Destination Runway
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Selecting a destination runway add a final approach leg and which can be
+customized by changing altitude and length. This allows *Little
+Navmap* to give vertical guidance and to show ILS and/or VASI slopes at
+the destination.
+See :doc:`CUSTOMPROCEDURE` for more information.
+
+The text of this menu item varies depending if the airport is already the destination in the flight
+plan or not.
+
+.. _show-procedures-map:
+
+|Show Procedures| Show Procedures
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open the procedure search tab of the search dock window and displays all
+procedures for the airport.
+
+The menu item text varies depending if the airport is a part of the flight plan.
+
+See :doc:`SEARCHPROCS` for more information.
+
+.. _insert-procedure-map:
+
+|Insert Procedure| Insert Procedure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Active if clicked on a waypoint of the procedure preview (see :ref:`button-preview-all-procs` and :doc:`SEARCHPROCS`).
+Allows to add a SID, STAR or approch procedure with their respective transitions to the flight plan.
 
 .. _add-position-to-flight-plan:
 
@@ -476,13 +515,14 @@ position is near the flight plan end points.
 The text ``Position`` in the menu is replaced with an object name if an airport,
 navaid or userpoint is at the clicked position.
 
-An user-defined flight plan position is added to the plan if no airport
+An user defined flight plan position is added to the plan if no airport
 or navaid is near the clicked point.
 
-An userpoint is converted to an user-defined flight plan position if
+An userpoint is converted to an user defined flight plan position if
 added to the plan.
 
-You cannot edit flight plan legs that are a part of a procedure or between procedures.
+You cannot edit flight plan legs that are a part of a procedure or between procedures. Procedures
+will not be deleted or modified by this function.
 
 .. tip::
 
@@ -507,24 +547,120 @@ This will remove STAR and approach procedures from the current flight plan, if a
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Delete the selected airport, navaid or user flight plan position from
-the plan. This can be departure, destination, alternate airport or an
-intermediate waypoint.
+the plan. This can be departure, destination, alternate airport, an
+intermediate waypoint or a procedure.
 
-Deleting a waypoint of a procedure removes the whole procedure.
+Deleting a waypoint of a procedure removes the whole procedure. Deleting a waypoint of a transition
+removes the transiton and the related procedure.
+
+This also applies to the guidance legs when selecting a departure or destination runway (
 
 .. _edit-name-of-user-waypoint:
 
 |Edit Flight Plan Position| Edit Flight Plan Position or Edit Flight Plan Position Remarks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Change the ident, name, remarks or position of an user-defined flight plan waypoint. See :doc:`EDITFPPOSITION`.
+Two options exist depending on the waypoint type:
 
-Also allows to add a remark to any flight plan waypoint which is not an alternate and not a part of
-a procedure. See :doc:`EDITFPREMARKS`.
+-    ``Edit Flight Plan Position Remarks``: Add remarks to a flight plan waypoint which is not an alternate airport and not a part of
+     a procedure. See :doc:`EDITFPREMARKS`.
+-    ``Edit Flight Plan Position``: Change the ident, name, remarks or position of an user defined
+     flight plan waypoint. See :doc:`EDITFPPOSITION`. You can edit the coordinates directly instead of
+     dragging the flight plan position (:doc:`MAPFPEDIT`). See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
 
-You can edit the coordinates directly instead of dragging the flight plan position (:doc:`MAPFPEDIT`).
 
-See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
+.. _measure-gc-distance-from-here:
+
+|Measure Distance from here| Measure Distance from here
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Starts to draw a measurment line which gets fixed on a second click.
+
+See :doc:`MEASURE` and :ref:`user-features-legend` for more information.
+
+.. _show-range-rings:
+
+|Add Range Rings| Add Range Rings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Opens a dialog which allows to set the parameters for one or more range rings.
+
+See :doc:`RANGERINGS` and :ref:`user-features-legend` for more information.
+
+The display of range rings is automatically enabled in menu ``View`` -> ``User Features`` ->
+:ref:`user-range-rings` once using this function.
+
+.. _show-navaid-range:
+
+|Add Navaid Range Ring| Add Navaid Range Ring
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Show a ring around the clicked radio navaid (VOR or NDB) indicating the
+navaid's range. A label shows ident and frequency and the ring color
+indicates the navaid type.
+
+The display of range rings is automatically enabled in menu ``View`` -> ``User Features`` ->
+:ref:`user-range-rings` once using this function.
+
+See :doc:`RANGERINGS` and :ref:`user-features-legend` for more information.
+
+Note that the accuracy of radio navaid range varies across different simulators.
+
+.. _show-traffic-pattern-map:
+
+|Add Traffic Pattern| Add Traffic Pattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This menu item is enabled if clicked on an airport. Shows a dialog that
+allows to customize and display an airport traffic pattern on the map.
+
+See :doc:`TRAFFICPATTERN` and :ref:`pattern-legend`.
+
+The display of traffic patterns is automatically enabled in menu ``View`` -> ``User Features`` ->
+:ref:`user-traffic-patterns` once using this function.
+
+.. _add-holding-map:
+
+|Add Holding| Add Holding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Display a holding pattern at any position on the map. The hold
+may also be attached to navaids. Opens a dialog for customization if selected.
+
+See chapter :doc:`HOLD` and :ref:`holding-legend` for more information.
+
+The display of user holdings is automatically enabled in menu ``View`` -> ``User Features`` ->
+:ref:`user-holdings` once using this function.
+
+.. _add-msa-map:
+
+|Add MSA Diagram| Add MSA Diagram
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Adds a to-scale MSA diagram when right clicking on the smaller MSA symbol at an airport, navaid or other feature.
+
+The display of user MSA diagrams is automatically enabled in menu ``View`` -> ``User Features`` ->
+:ref:`user-msa` once using this function.
+
+See :doc:`MSA` and :ref:`navaids-legend` for more information.
+
+.. _remove-user-map:
+
+|Remove User Feature| Remove User Feature
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Removes a map feature added by the user.
+
+-   Removes the selected **measurment line**. This menu item is active if you right-click on
+    the end point of a distance measurement line (small cross).
+-   Removes the selected **range rings** from the map. This menu item is active if you
+    right-click on the center point of a range ring (small circle).
+-   Enabled if clicked on the airport **traffic pattern** hotspot (white filled
+    circle at runway threshold) which is indicated by a hand cursor.
+-   Enabled if clicked on the **holding** hotspot (holding fix, white filled triangle)
+    which is indicated by a hand cursor.
+-   Removes the selected **MSA diagram** from the map. This menu item is active if you
+    right-click on the hotspot of a user added MSA diagram (small circle in center).
 
 .. _userpoints:
 
@@ -536,17 +672,17 @@ See :doc:`COORDINATES` for a list of formats that are recognized by the edit dia
 |Add Userpoint| Add Userpoint
 ''''''''''''''''''''''''''''''''''
 
-Add an user-defined waypoint to the userpoints. Some fields of the
-userpoint dialog are populated automatically depending on the selected
+Add an user defined point to the userpoints. A dialog shows up where more information can be entered. Some fields of the
+userpoint dialog are populated automatically depending on the clicked
 map object.
 
 Coordinates are always filled-in. If the selected object is an airport
 or navaid, an userpoint of type ``Airport`` or ``Waypoint`` respectively
 is created and the fields Ident, Region, Name and Altitude are
-filled-in.
+filled-in. The same applies to NDB, VOR and other navaids.
 
 If the selected position is empty map space, an userpoint of type
-``Bookmark`` is created at this position. Altitude is filled-in if GLOBE
+``Bookmark`` is created at this position. Altitude is only filled-in if GLOBE
 offline elevation data is installed. See :ref:`cache-elevation`.
 
 See :ref:`userpoints-dialog-add` for more information.
@@ -569,14 +705,14 @@ selected object is an userpoint.
 
 Left-click to place the userpoint at the new position. Right-click or
 press the escape key to cancel the operation and return the userpoint to
-its former position.
+its previous position.
 
 .. _delete-userpoint:
 
 |Delete Userpoint| Delete Userpoint
 ''''''''''''''''''''''''''''''''''''
 
-Remove the user-defined waypoint from the userdata after confirmation.
+Remove the user defined waypoint from the userdata. The action can be undone in the main menu ``Userpoint``.
 Only enabled if the selected object is an userpoint.
 
 .. _edit-log-entry:
@@ -600,6 +736,15 @@ Same as :ref:`fullscreen-menu`. Only visible in fullscreen mode.
 
 More
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _jump-to-coordinates-map:
+
+|Jump to Coordinates| Jump to Coordinates
+'''''''''''''''''''''''''''''''''''''''''''''''
+
+Same function as in main menu ``Map`` -> :ref:`jump-coordinates`.
+
+See :doc:`JUMPCOORDINATE` for more information.
 
 .. _show-in-search-map:
 
@@ -679,4 +824,13 @@ Note that the symbol is only an indicator for the home view center position and 
 .. |Show in Search| image:: ../images/icon_search.png
 .. |Copy to Clipboard| image:: ../images/icon_coordinate.png
 .. |Fullscreen Map| image:: ../images/icon_fullscreen.png
+.. |Map Themes| image:: ../images/icon_map.png
 
+.. |Destination Runway| image:: ../images/icon_runwaydest.png
+.. |Departure Runway| image:: ../images/icon_runwaydepart.png
+
+.. |Remove User Feature| image:: ../images/icon_marksoff.png
+.. |Add MSA Diagram| image:: ../images/icon_msa.png
+.. |Jump to Coordinates| image:: ../images/icon_zoomin.png
+.. |Insert Procedure| image:: ../images/icon_approachselect.png
+.. |Map| image:: ../images/icon_map.png

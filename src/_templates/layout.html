@@ -1,0 +1,25 @@
+{% extends "!layout.html" %}
+
+{%- block document %}
+
+
+{%- if lang_attr == 'en' and banner_message_en %}
+  {%- set message = banner_message_text_en %}
+{%- else %}
+  {%- if lang_attr == 'de' and banner_message_de %}
+    {%- set message = banner_message_text_de %}
+  {%- endif %}
+{%- endif %}
+
+{%- if message %}
+<p style="background-color: {{ banner_message_bgcolor }}; color: {{ banner_message_color }};
+          padding: 0.2em; text-align: center; border-color: black; border-style: dashed; border-radius: 10px; font-size: 1.1em;">
+  <big>
+    <b>{{ message }}</b>
+  </big>
+</p>
+{%- endif %}
+
+{{ super() }}
+
+{% endblock %}

@@ -93,9 +93,13 @@ Update Channels
     carefully. The manual might be incomplete.
 
 -   ``Stable, Beta and Development Versions``: *Little Navmap* will also
-    show notifications for development releases. These are neither complete
+    show notifications for development/alpha releases. These are neither complete
     nor well tested. Features might change over time and the manual is not
     updated for new functionality.
+
+.. tip::
+
+     Run beta or development version of *Little Navmap* in :ref:`portable-execution` mode to avoid overwriting your settings.
 
 .. note::
 

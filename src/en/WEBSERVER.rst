@@ -27,6 +27,8 @@ In general you have to change the firewall settings to forward the port
 Web Page
 ~~~~~~~~
 
+This chapter describes the legacy web interface of *Little Navmap*.
+
 Page Links on Top of each Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -35,8 +37,9 @@ The top links ``Map``, ``Flight Plan``, ``Aircraft``,
 respective pages. ``Help`` opens this page.
 
 .. figure:: ../images/web_navbar.jpg
+    :scale: 50%
 
-     Top navigation bar as shown in web browser.
+    Top navigation bar for the legacy web interface as shown in web browser. *Click image to enlarge.*
 
 Map Page
 ^^^^^^^^
@@ -68,8 +71,9 @@ corner denoting its function:
 -  |Reload map|: Reload map
 
 .. figure:: ../images/webmap.jpg
+    :scale: 50%
 
-      Web map display in browser with navigation icons.
+    Web map display in browser with navigation icons. *Click image to enlarge.*
 
 Flight Plan Page
 ^^^^^^^^^^^^^^^^
@@ -82,8 +86,9 @@ Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 the active flight plan leg.
 
 .. figure:: ../images/web_flightplan.jpg
+   :scale: 50%
 
-     Flight plan table in browser.
+   Flight plan table in browser. *Click image to enlarge.*
 
 Aircraft
 ^^^^^^^^
@@ -96,7 +101,7 @@ Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 Aircraft Progress Page
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Shows aircraft progress information as :ref:`progress`.
+Shows aircraft progress information as :ref:`progress-info`.
 
 Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 ``Reload Map``: Same as on map page above.

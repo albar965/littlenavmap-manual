@@ -20,7 +20,7 @@ rm -rfv ${BUILD}/epub
 # Run for all given language codes ==============
 for LANGNAME in "$@" ; do
   # Clean target folder for each given language
-  rm -rfv "${DEPLOY}/${LANGNAME}" "${DEPLOY}/littlenavmap_book_${LANGNAME}.mobi" "${DEPLOY}/littlenavmap_book_${LANGNAME}.epub" "${DEPLOY}/littlenavmap_book_${LANGNAME}.pdf"
+  rm -rfv "${DEPLOY}/${LANGNAME}" "${DEPLOY}/littlenavmap_book_${LANGNAME}.mobi" "${DEPLOY}/littlenavmap_book_${LANGNAME}.epub" "${DEPLOY}/littlenavmap_book_${LANGNAME}.pdf" "Little Navmap Manual ${LANGNAME}.zip"
 
   # Copy generated HTML documentation
   mkdir -pv "${DEPLOY}"
@@ -28,6 +28,17 @@ for LANGNAME in "$@" ; do
 
   # Strip unneeded files off
   rm -rfv "${DEPLOY}/${LANGNAME}/.doctrees" "${DEPLOY}/${LANGNAME}/.buildinfo"
+
+  cat << EOL > "${DEPLOY}/README.txt"
+   This is the Little Navmap Manual in HTML format.
+
+   Open the file ${LANGNAME}/index.html in your web browser to see the Little Navmap Manual.
+EOL
+
+  (
+    cd "${DEPLOY}"
+    zip -r -9 "Little Navmap Manual HTML ${LANGNAME}.zip" ${LANGNAME} README.txt
+  )
 
   # Add cover to ePUB file and copy to deploy
   echo

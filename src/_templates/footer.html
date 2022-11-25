@@ -1,1 +1,5 @@
-{% extends '!footer.html' %} {% block extrafooter %} <!-- --> {% endblock %}
+{% extends '!footer.html' %}
+{% block extrafooter %}
+<p>© Copyright {{ copyright }}. Licensed under the GNU Free Documentation License 1.3+ unless stated otherwise.<br/>
+Version {{ project }} {{ release }}. Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.</p>
+{% endblock %}

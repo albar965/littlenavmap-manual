@@ -1,6 +1,10 @@
 Files
 -----
 
+Note that file locations can be overridden on the command line. See :doc:`COMMANDLINE` for more information.
+
+File paths will also differ if using one of the portable scripts (:ref:`portable-execution`).
+
 .. _files-log:
 
 Logs
@@ -8,13 +12,18 @@ Logs
 
 Log files of *Little Navmap* are stored in the directories:
 
--  Windows:
-   ``C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log``
--  Linux: ``/tmp/abarthel-little_navmap.log``
--  macOS:
-   ``/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log``
+-  Windows: ``C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log``
+-  Linux:  ``/tmp/abarthel-little_navmap.log``
+-  macOS:  ``/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log``
+   Use the command below on the macOS terminal to find the log file and open it in Text Edit.
+   Save the file to another place from where you can attach it to an email.
 
-The program keeps three log files and rotates these if
+   .. code-block:: bash
+
+      open -a TextEdit $(find /private/var/folders/ -name abarthel-little_navmap.log 2>/dev/null).
+
+
+The *Little Navmap* keeps up to three log files and rotates these if
 the file size of 10 MB is exceeded. So you may find up to three logs:
 
 ``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` and
@@ -23,7 +32,9 @@ the file size of 10 MB is exceeded. So you may find up to three logs:
 Send the log file ``abarthel-little_navmap.log`` if you like to report
 an error. All three are needed in some cases but sending the first is often sufficient.
 
-**Please compress the log file using ZIP when sending per email.**
+.. note::
+
+        Please compress the log file using ZIP when sending per email.
 
 .. _configuration:
 
@@ -38,13 +49,14 @@ about this type of configuration files.
 All configuration files for my programs are stored in these directories:
 
 -  Windows: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
--  Linux and macOS: ``$HOME/.config/ABarthel``
+-  macOS: ``/Users/YOURUSERNAME/.config/ABarthel``
+-  Linux: ``$HOME/.config/ABarthel``
 
--  ``little_navmap.ini``: INI style configuration file. Text file.
+-  ``little_navmap.ini``: INI style configuration file. Text file. Can be opened with :ref:`files-and-directories-ini`.
 -  ``little_navmap.history``: The map position history. Binary file.
 -  ``little_navmap.track``: The user aircraft trail. Binary file.
--  ``little_navmap_profile.track``: User aircraft trail for the
-   elevation profile. Binary file.
+-  ``little_navmap.logbooktrack``: Separate track for logbook. Binary file.
+-  ``little_navmap_profile.track``: User aircraft trail for the elevation profile. Binary file.
 
 Three more configuration files are created for customization of colors
 and styles:
@@ -60,7 +72,7 @@ See :doc:`CUSTOMIZE` for more information.
 
 .. note::
 
-   Note that *Little Navmap* might reset these files when updated,
+   Note that *Little Navmap* might reset these files when being updated,
    but only after creating backup files. This is usually mentioned in the
    change log.
 
@@ -72,11 +84,15 @@ Disk Cache
 The disk cache that is used to store all the downloaded online map tile
 images can be found here:
 
--  Windows: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data``
--  Linux and macOS: ``$HOME/.local/share/marble``
+-  Windows: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth``
+-  macOS: ``/Users/YOURUSERNAME/.local/share/marble/maps/earth``
+-  Linux: ``$HOME/.local/share/marble/maps/earth``
 
-You can delete the cache manually to save space if *Little Navmap* is
-not running.
+The cache directory contains one folder for each installed map theme.
+
+You can delete the cache manually to save space if *Little Navmap* is not running.
+
+Cache size can be changed on page :ref:`cache-map-display` in options.
 
 .. _files-databases:
 
@@ -85,14 +101,16 @@ Databases
 
 Databases are stored in the directories:
 
--  Windows:
-   ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
--  Linux and macOS: ``$HOME/.config/ABarthel/little_navmap_db``
+-  Windows: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
+-  macOS: ``/Users/YOURUSERNAME/.config/ABarthel/little_navmap_db``
+-  Linux: ``$HOME/.config/ABarthel/little_navmap_db``
 
 All these databases are `SQLite <http://sqlite.org>`__ files which can
 be viewed with e.g. `DB Browser for
 SQLite <https://github.com/sqlitebrowser/sqlitebrowser/releases>`__ if
 you're interested in relational databases.
+
+The directory can be opened with :ref:`files-and-directories-db`.
 
 .. warning::
 
@@ -114,12 +132,12 @@ The files are:
 -  ``little_navmap_.sqlite``: An empty dummy database. Can be ignored.
 -  ``little_navmap_fsx.sqlite``: Flight Simulator X
 -  ``little_navmap_fsxse.sqlite``: Flight Simulator - Steam Edition
--  ``little_navmap_p3dv2.sqlite``: Prepar3D v2
 -  ``little_navmap_p3dv3.sqlite``: Prepar3D v3
 -  ``little_navmap_p3dv4.sqlite``: Prepar3D v4
 -  ``little_navmap_p3dv5.sqlite``: Prepar3D v5
 -  ``little_navmap_msfs.sqlite``: Microsoft Flight Simulator 2020
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
+-  ``little_navmap_xp12.sqlite``: X-Plane 12
 -  ``little_navmap_navigraph.sqlite``: Navigraph navdatabase. Can be
    either the included database or an update installed by the Navigraph
    *FMS Data Manager*.
@@ -129,7 +147,7 @@ The files are:
 Userpoints
 ^^^^^^^^^^
 
-The file ``little_navmap_userdata.sqlite`` contains the user-defined
+The file ``little_navmap_userdata.sqlite`` contains the user defined
 waypoints.
 
 *Little Navmap* creates a backup copy on startup and keeps up to four
@@ -141,7 +159,7 @@ did something wrong.
 User Airspaces
 ^^^^^^^^^^^^^^
 
-The file ``little_navmap_userairspace.sqlite`` contains the user-defined
+The file ``little_navmap_userairspace.sqlite`` contains the user defined
 airspaces read by using :ref:`load-user-airspaces`.
 
 It is backed up in the same way as the userpoints.
@@ -155,7 +173,7 @@ The file ``little_navmap_logbook.sqlite`` is used to store logbook
 entries.
 
 *Little Navmap* creates backup copies on startup and keeps up to four
-backup files as for the user-defined waypoints as described above.
+backup files as for the user defined waypoints as described above.
 
 Other Database Files
 ^^^^^^^^^^^^^^^^^^^^
@@ -188,144 +206,162 @@ The XML schema for validation can be found here: `lnmpln.xsd <https://www.little
 Order of elements does not matter. Missing elements will be logged as warning except optional ones.
 
 .. code-block:: xml
-         :caption: Flight Plan File Example. Documentation included as XML comments.
-         :name: flightplan-example
+   :caption: Flight Plan File Example. Documentation included as XML comments:
+   :name: flightplan-example
 
-         <?xml version="1.0" encoding="UTF-8"?>
-         <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
-           <Flightplan>
+   <?xml version="1.0" encoding="UTF-8"?>
+   <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
+     <Flightplan>
 
-             <!-- Coordinates are always latitude and longitude in decimal/signed notation -->
+       <!-- Coordinates are always latitude and longitude in decimal/signed notation -->
+       <!-- Altitude in feet. -->
 
-             <!-- ====== Header with metadata ====== -->
-             <Header>
-               <FlightplanType>IFR</FlightplanType>                 <!-- IFR or VFR as set in user interface -->
-               <CruisingAlt>30000</CruisingAlt>                     <!-- feet -->
-               <CreationDate>2020-09-11T18:05:15+02</CreationDate>  <!-- Local time with timezone offset -->
-               <FileVersion>1.0</FileVersion>                       <!-- File format version -->
-               <ProgramName>Little Navmap</ProgramName>
-               <ProgramVersion>2.6.0.beta</ProgramVersion>          <!-- Little Navmap version used for saving -->
-               <Documentation>https://www.littlenavmap.org/lnmpln.html</Documentation>
-               <Description>Flight plan remarks</Description>       <!-- Remarks as entered in user interface tab Remarks. -->
-             </Header>
-             <SimData>MSFS</SimData>                    <!-- Use simulator and AIRAC if available -->
-             <NavData Cycle="2008">NAVIGRAPH</NavData>  <!-- Use navdata and AIRAC -->
+       <!-- ====== Header with metadata ====== -->
+       <Header>
+         <FlightplanType>IFR</FlightplanType>                 <!-- IFR or VFR as set in user interface -->
+         <CruisingAlt>30000</CruisingAlt>                     <!-- feet -->
+         <CreationDate>2020-09-11T18:05:15+02</CreationDate>  <!-- Local time with timezone offset -->
+         <FileVersion>1.0</FileVersion>                       <!-- File format version -->
+         <ProgramName>Little Navmap</ProgramName>
+         <ProgramVersion>2.6.0.beta</ProgramVersion>          <!-- Little Navmap version used for saving -->
+         <Documentation>https://www.littlenavmap.org/lnmpln.html</Documentation>
+         <Description>Flight plan remarks</Description>       <!-- Remarks as entered in user interface tab Remarks. -->
+       </Header>
+       <SimData>MSFS</SimData>                    <!-- Use simulator and AIRAC if available -->
+       <NavData Cycle="2008">NAVIGRAPH</NavData>  <!-- Use navdata and AIRAC -->
 
-             <!-- ====== Used aircraft performance ====== -->
-             <AircraftPerformance>
-               <FilePath>Normal Climb and Descent all Equal.lnmperf</FilePath>
-               <Type>BE51</Type>
-               <Name>Normal Climb and Descent</Name>
-             </AircraftPerformance>
+       <!-- ====== Used aircraft performance ====== -->
+       <AircraftPerformance>
+         <FilePath>Normal Climb and Descent all Equal.lnmperf</FilePath>
+         <Type>BE51</Type>
+         <Name>Normal Climb and Descent</Name>
+       </AircraftPerformance>
 
-             <!-- ====== Departure parking position ====== -->
-             <Departure>
-               <Pos Lon="-120.538055" Lat="46.569828" Alt="1069.00"/>
-               <Start>PARKING 1</Start>    <!-- Name of position -->
-               <Type>Parking</Type>        <!-- Type of position. None, Airport, Runway, Parking or Helipad. -->
-               <Heading>5.1</Heading>      <!-- True heading of the position -->
-             </Departure>
+       <!-- ====== Departure parking position ====== -->
+       <Departure>
+         <Pos Lon="-120.538055" Lat="46.569828" Alt="1069.00"/>
+         <Start>PARKING 1</Start>    <!-- Name of position -->
+         <Type>Parking</Type>        <!-- Type of position. None, Airport, Runway, Parking or Helipad. -->
+         <Heading>5.1</Heading>      <!-- True heading of the position -->
+       </Departure>
 
-             <!-- ====== Departure and arrival procedures ====== -->
-             <Procedures>
-               <!-- SID and STAR are resolved by name and runway when loading -->
-               <SID>
-                 <Name>WENAS7</Name>
-                 <Runway>09</Runway>
-                 <Transition>PERTT</Transition>
-               </SID>
-               <STAR>
-                 <Name>PIGLU4</Name>
-                 <Runway>16</Runway>
-                 <Transition>YDC</Transition>
-               </STAR>
-               <!-- Approaches are resolved by either ARINC or the combination of Name, Runway, Type and Suffix -->
-               <Approach>
-                 <Name>TATVI</Name>                   <!-- Optional approach name. Name of approach fix. Requires ARINC if not given. -->
-                 <ARINC>I16-Z</ARINC>                 <!-- ARINC name of the approach -->
-                 <Runway>16</Runway>                  <!-- Approach runway. Not given for circle-to-land approaches. -->
-                 <Type>ILS</Type>                     <!-- Optional approach type -->
-                 <Suffix>Z</Suffix>                   <!-- Optional approach suffix -->
-                 <Transition>HUMEK</Transition>       <!-- Transition name if used -->
-                 <TransitionType>F</TransitionType>   <!-- Optional Transition type -->
-               </Approach>
-             </Procedures>
+       <!-- ====== Departure and arrival procedures ====== -->
+       <Procedures>
+         <!-- SID and STAR are resolved by name and runway when loading -->
+         <SID>
+           <Name>WENAS7</Name>             <!-- SID name. Only five character SIDs. -->
+           <Runway>09</Runway>             <!-- SID departure runway if applicable. -->
+           <Transition>PERTT</Transition>  <!-- Transition name if used -->
+         </SID>
+         <!-- Alternative to SID. Selected runway for departure plus length of runway extension line
+         <SID>
+         <Name>KYKM9</Name>
+           <Runway>9</Runway>
+           <Type>CUSTOMDEPART</Type>
+           <CustomDistance>3.00</CustomDistance>
+         </SID> -->
+         <STAR>
+           <Name>PIGLU4</Name>             <!-- STAR name. Only five character SIDs. -->
+           <Runway>16</Runway>             <!-- STAR arrival runway if applicable. -->
+           <Transition>YDC</Transition>    <!-- Transition name if used -->
+         </STAR>
+         <!-- Approaches are resolved by either ARINC or the combination of Name, Runway, Type and Suffix -->
+         <Approach>
+           <Name>TATVI</Name>                   <!-- Optional approach name. Name of approach fix. ARINC is required if this is not given. -->
+           <ARINC>I16-Z</ARINC>                 <!-- ARINC name of the approach. Type, runway and optional suffix. -->
+           <Runway>16</Runway>                  <!-- Optinal approach runway. Not given for circle-to-land approaches. -->
+           <Type>ILS</Type>                     <!-- Optional approach type -->
+           <Suffix>Z</Suffix>                   <!-- Optional approach suffix -->
+           <Transition>HUMEK</Transition>       <!-- Transition name if used -->
+           <TransitionType>F</TransitionType>   <!-- Optional Transition type if available. -->
+         </Approach>
+         <!-- Alternative to approach. Selected runway for approach plus length of runway extension line,
+              altitude at start of final and offset angle.
+         <Approach>
+           <Name>CYLW34</Name>
+           <Runway>34</Runway>
+           <Type>CUSTOM</Type>
+           <CustomDistance>3.00</CustomDistance>
+           <CustomAltitude>1000.00</CustomAltitude>
+           <CustomOffsetAngle>0.00</CustomOffsetAngle>
+         </Approach> -->
+         </Procedures>
 
-             <!-- ====== Alternate airports ====== -->
-             <Alternates>
-               <Alternate>
-                 <Name>Penticton</Name>                                 <!-- Optional name -->
-                 <Ident>CYYF</Ident>                                    <!-- Required ident -->
-                 <Type>AIRPORT</Type>                                   <!-- Optional type -->
-                 <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/> <!-- Optional position -->
-               </Alternate>
-               <Alternate>
-                 <Name>Grand Forks</Name>
-                 <Ident>CZGF</Ident>
-                 <Type>AIRPORT</Type>
-                 <Pos Lon="-118.430496" Lat="49.015633" Alt="1393.00"/>
-               </Alternate>
-             </Alternates>
+       <!-- ====== Alternate airports ====== -->
+       <Alternates>
+         <Alternate>
+           <Name>Penticton</Name>                                 <!-- Optional name -->
+           <Ident>CYYF</Ident>                                    <!-- Required ident -->
+           <Type>AIRPORT</Type>                                   <!-- Optional type -->
+           <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/> <!-- Optional position. Helps to resolve the correct airport. -->
+         </Alternate>
+         <Alternate>
+           <Name>Grand Forks</Name>
+           <Ident>CZGF</Ident>
+           <Type>AIRPORT</Type>
+           <Pos Lon="-118.430496" Lat="49.015633" Alt="1393.00"/>
+         </Alternate>
+       </Alternates>
 
-             <!-- ====== En-route waypoints including departure and destination ====== -->
-             <!-- The elements Ident, Type and Pos are required to resolve the waypoint in the database.
-                  Region is optional and used for resolving if given.
-                  Procedure waypoints are never included. -->
-             <Waypoints>
+       <!-- ====== En-route waypoints including departure and destination ====== -->
+       <!-- The elements Ident, Type and Pos are required to resolve the waypoint in the database.
+            Region is optional and used for resolving if given.
+            Procedure waypoints are never included. -->
+       <Waypoints>
 
-               <!-- ====== Departure airport. Other waypoint types are allowed for flight plan snippets. ====== -->
-               <Waypoint>
-                 <Name>Yakima Air Terminal/Mcallister</Name>
-                 <Ident>KYKM</Ident>
-                 <Type>AIRPORT</Type>
-                 <Pos Lon="-120.543999" Lat="46.568199" Alt="1069.00"/>
-               </Waypoint>
+         <!-- ====== Departure airport. Other waypoint types are allowed for flight plan snippets. ====== -->
+         <Waypoint>
+           <Name>Yakima Air Terminal/Mcallister</Name>
+           <Ident>KYKM</Ident>
+           <Type>AIRPORT</Type>
+           <Pos Lon="-120.543999" Lat="46.568199" Alt="1069.00"/>
+         </Waypoint>
 
-               <!-- ====== User defined waypoint ====== -->
-               <Waypoint>
-                 <Name>User defined point</Name>
-                 <Ident>USERPT</Ident>
-                 <Region>K1</Region>
-                 <Type>USER</Type>
-                 <Pos Lon="-120.848000" Lat="47.676601" Alt="24960.89"/>
-                 <Description>User waypoint remarks</Description>       <!-- Description as entered in user interface -->
-               </Waypoint>
+         <!-- ====== User defined waypoint ====== -->
+         <Waypoint>
+           <Name>User defined point</Name>
+           <Ident>USERPT</Ident>
+           <Region>K1</Region>
+           <Type>USER</Type>
+           <Pos Lon="-120.848000" Lat="47.676601" Alt="24960.89"/>
+           <Description>User waypoint remarks</Description>       <!-- Remarks as entered in user interface -->
+         </Waypoint>
 
-               <!-- ====== Direct to waypoint ====== -->
-               <Waypoint>
-                 <Ident>DIABO</Ident>
-                 <Region>K1</Region>
-                 <Type>WAYPOINT</Type>
-                 <Pos Lon="-120.937080" Lat="48.833759" Alt="30000.00"/>
-               </Waypoint>
+         <!-- ====== Direct to waypoint ====== -->
+         <Waypoint>
+           <Ident>DIABO</Ident>
+           <Region>K1</Region>
+           <Type>WAYPOINT</Type>
+           <Pos Lon="-120.937080" Lat="48.833759" Alt="30000.00"/>
+         </Waypoint>
 
-               <!-- ====== Airway waypoints ====== -->
-               <Waypoint>
-                 <Ident>IWACK</Ident>
-                 <Region>K1</Region>
-                 <Airway>J503</Airway>  <!-- Airway leading towards this waypoint -->
-                 <Type>WAYPOINT</Type>
-                 <Pos Lon="-120.837067" Lat="48.932140" Alt="30000.00"/>
-                 <Description>Waypoint remarks</Description>
-               </Waypoint>
-               <Waypoint>
-                 <Ident>CFKNF</Ident>
-                 <Region>K1</Region>
-                 <Airway>J503</Airway>
-                 <Type>WAYPOINT</Type>
-                 <Pos Lon="-120.767761" Lat="49.000000" Alt="30000.00"/>
-               </Waypoint>
+         <!-- ====== Airway waypoints ====== -->
+         <Waypoint>
+           <Ident>IWACK</Ident>
+           <Region>K1</Region>
+           <Airway>J503</Airway>  <!-- Airway leading towards this waypoint -->
+           <Type>WAYPOINT</Type>
+           <Pos Lon="-120.837067" Lat="48.932140" Alt="30000.00"/>
+           <Description>Waypoint remarks</Description>
+         </Waypoint>
+         <Waypoint>
+           <Ident>CFKNF</Ident>
+           <Region>K1</Region>
+           <Airway>J503</Airway>
+           <Type>WAYPOINT</Type>
+           <Pos Lon="-120.767761" Lat="49.000000" Alt="30000.00"/>
+         </Waypoint>
 
-               <!-- ====== Destination airport. Other waypoint types are allowed for flight plan snippets. ====== -->
-               <Waypoint>
-                 <Name>Kelowna</Name>
-                 <Ident>CYLW</Ident>
-                 <Type>AIRPORT</Type>
-                 <Pos Lon="-119.377998" Lat="49.957199" Alt="1461.00"/>
-               </Waypoint>
-             </Waypoints>
-           </Flightplan>
-         </LittleNavmap>
+         <!-- ====== Destination airport. Other waypoint types are allowed for flight plan snippets. ====== -->
+         <Waypoint>
+           <Name>Kelowna</Name>
+           <Ident>CYLW</Ident>
+           <Type>AIRPORT</Type>
+           <Pos Lon="-119.377998" Lat="49.957199" Alt="1461.00"/>
+         </Waypoint>
+       </Waypoints>
+     </Flightplan>
+   </LittleNavmap>
 
 
 .. _aircraft-performance-file-format:
@@ -344,7 +380,7 @@ The XML schema for validation can be found here: `lnmperf.xsd <https://www.littl
 Order of elements does not matter. Missing elements will be logged as warning except optional ones.
 
 .. code-block:: xml
-        :caption: Aircraft Performance File Example. Documentation included as XML comments.
+        :caption: Aircraft Performance File Example. Documentation included as XML comments:
         :name: performance-example
 
         <?xml version="1.0" encoding="UTF-8"?>
@@ -434,7 +470,7 @@ saving the file in *Little Navmap*. You can add a dummy key like
 replaced when saving.
 
 .. code-block:: ini
-     :caption: Aircraft Performance File Example
+     :caption: Aircraft Performance File Example:
 
      [Options]
      AircraftType=B732
@@ -483,7 +519,7 @@ which allows the program to restore SIDs, STARs, approaches and
 transitions in an error tolerant way when loading flight plans.
 
 .. code-block:: xml
-   :caption: Flightplan Example snippet
+   :caption: Flightplan Example snippet:
 
    <?xml version="1.0" encoding="UTF-8"?>
    <SimBase.Document Type="AceXML" version="1,0">

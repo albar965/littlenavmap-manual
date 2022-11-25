@@ -1,7 +1,7 @@
 Edit Flight Plan Position
 -------------------------
 
-This dialog allows to edit an user-defined flight plan position that was
+This dialog allows to edit an user defined flight plan position that was
 added with |Add Position to Flight Plan| :ref:`add-position-to-flight-plan` or |Append Position
 to Flight Plan| :ref:`append-position-to-flight-plan`.
 
@@ -10,7 +10,7 @@ The information entered here is saved with the flight plan.
 Keep in mind that all information entered here is lost if the flight plan position is removed or a
 new flight plan is calculated (:doc:`ROUTECALC`).
 
-Note that all fields are saved without limitations only in the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
+Note that all fields are saved without limitations only when using the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
 Other flight plan export formats will only save the ident truncated or a coordinate.
 
 .. note::
@@ -45,7 +45,8 @@ Shown in map tooltip and flight plan table tooltip.
 Remarks
 ~~~~~~~
 
-Free multi line text field. Shown in abbreviated form in the flight plan table ``Remarks`` column and the column's tooltip as well as in the map tooltip.
+Free multi line text field. Shown in abbreviated form in the :ref:`flight-plan-table` ``Remarks``
+column and the column's tooltip as well as in the map tooltip.
 
 See :doc:`REMARKS` for more information.
 
@@ -58,13 +59,13 @@ be useful if you'd like to add waypoints with well known coordinates
 like visual reporting points.
 
 The tooltip of the coordinate input field shows the available formats.
-Hover the mouse over the input field to see this.
+Hover the mouse over the input field to see the tooltip.
 
 See :doc:`COORDINATES` for more information.
 
 .. figure:: ../images/edit_flightplan_waypoint.jpg
 
-       Editing an user-defined flight plan position. Also showing abbreviated tooltip in flight plan table.
+       Editing an user defined flight plan position. Also showing abbreviated tooltip in flight plan table.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png

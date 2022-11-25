@@ -26,3 +26,8 @@ OTHER_FILES = \
   $$files(src/_templates/*, true) \
   $$files(src/en/*.rst, false) \
   $$files(src/de/*.rst, false)
+
+DISTFILES += \
+  src/en/FLIGHTPLANCENTER.rst \
+  src/en/XPCONNECT.rst
+

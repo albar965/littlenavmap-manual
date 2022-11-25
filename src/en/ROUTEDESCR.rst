@@ -4,20 +4,19 @@ Flight Plan Route Description
 This dialog allows you to create a flight plan from a route description string consisting of airport and navaid idents
 as generated or provided by various online services.
 
-The ``New Flight Plan from Route Description`` dialog opens with the
-route description for the current flight plan which also contains
-information about speed and cruise altitude if enabled.
+Click ``Load from Flight Plan`` to generate the route string from the currently loaded flight plan.
 
-The top half of the dialog holds the route description input field,
-while the bottom half shows any messages, warnings or errors that occur
-during reading.
+The top of the dialog holds the route description input field,
+while the center half shows any messages, warnings or errors that occur
+during reading. The string is read automatically while entering it into the input field.
+The lower part provides a quick help.
 
 The menu button |Menu Button| provides a dropdown menu than can be used
 to customize the generated route string.
 
 *Little Navmap* will try to use as much of the route as possible
 even if parts of the flight plan like waypoints or airways cannot be
-found or names are ambiguous. You will see warnings in the bottom half
+found or names are ambiguous. You will see warnings in the center output field
 if that is the case.
 
 If a route covers a long distance and contains a waypoint name which is
@@ -28,10 +27,8 @@ Many waypoints and airways will not be found if route descriptions from
 the latest AIRAC sources are used together with the old FSX, P3D or MSFS stock data.
 It is recommended to use a navigation data update for the stock
 scenery or *Little Navmap* when reading route descriptions from online sources like
-`RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight
-Planner <http://onlineflightplanner.org/>`__,
-`SimBrief <https://www.simbrief.com>`__ or
-`SkyVector <https://skyvector.com>`__.
+`RouteFinder <http://rfinder.asalink.net/>`__, `Online Flight Planner <http://onlineflightplanner.org/>`__,
+`SimBrief <https://www.simbrief.com>`__ or `SkyVector <https://skyvector.com>`__.
 
 If a navdata update is not an option, pick the online service's AIRAC
 cycle that is closest to the cycle the navigation data of your flight
@@ -47,30 +44,32 @@ given. Otherwise the cruise altitude is automatically determined by the
 flight plan type (IFR or VFR) and the minimum altitude of the used
 airway segments.
 
-The cruise speed is ignored and produces a warning if found.
+The cruise speed is ignored when reading and produces a warning if found.
+Generating a description from a present flight plan uses the cruise speed from the loaded aircraft
+performance file (:doc:`AIRCRAFTPERF`) and the cruise altitude as set in :ref:`flight-plan-altitude`.
+
+Note that you can modify the flight plan in parallel on the map or in the flight plan table. Move
+the ``Flight Plan Route Description`` aside to do so.
+You have to transfer the plan to the dialog by clicking ``Load from Flight Plan`` after doing changes in the background.
+Click ``Create Flight Plan`` before doing changes on the map or in the flight plan table.
+
 
 .. figure:: ../images/routedescr.jpg
 
           A route description that was read successfully with
-          a few warnings about ignored elements. The waypoint ``LLL`` could not be
+          a few warnings about ignored elements. The waypoint ``INVALID`` could not be
           found. Speed, altitude, SID and STAR were recognized.
 
 Buttons
 ~~~~~~~
 
--  ``To Clipboard``: Copy the current description as plain text to the
-   clipboard.
+-  ``To Clipboard``: Copy the current description as plain text to the clipboard.
 -  ``From Clipboard``: Insert text from clipboard into the input field.
    The inserted text is converted to upper case and all invalid
    characters are removed from the text before reading.
--  ``Update from Flight Plan``: Create the route string from the current
-   flight plan again. Use this after changing settings with drop down
-   menu button.
--  ``Read Route Description``: Reads the route description and displays
-   any messages, warnings and errors in the bottom half of the dialog.
-   The current flight plan is not affected by this action.
--  ``IFR`` / ``VFR``: Defines the type of the generated flight plan and
-   the automatically determined cruise altitude.
+-  ``Load from Flight Plan``: Create the route string from the current
+   flight plan. Use this after changing settings with drop down
+   menu button or after modifying the flight plan on the map or in the flight plan table.
 -  Menu Button |Menu Button|: ``Write`` denotes flight plan to
    description and ``Read`` denotes description to flight plan.
    You can tear off the drop down menu from the button by clicking on the dashed line on top of it.
@@ -91,6 +90,9 @@ Buttons
    -  ``Write generic SID and STAR``: Add the generic ``SID`` and
       ``STAR`` keywords if no real SID and/or STAR were selected.
    -  ``Write no SID and STAR``: Do not include any SID and STAR information at all.
+   -  ``Write STAR and transition reversed``: Write ``TRANS.STAR`` instead of ``STAR.TRANS`` if selected.
+   -  ``Write SID/STAR and transition space separated``: Write ``SID TRANS`` and
+      ``STAR TRANS`` instead of ``SID.TRANS`` and ``STAR.TRANS`` if selected.
    -  ``Read trailing Airports as Alternates``:
 
       -  Enabled: A list of airports at the end of the description will
@@ -112,6 +114,10 @@ Buttons
    You have to click ``Read Route Description`` before you can create a
    flight plan.
 
+.. tip::
+
+   In any case you can use Undo and Redo to change the input field (right click context menu in the input field)
+   as well as in the flight plan table (:ref:`undo-redo`).
 
 .. _routedescr-airport-ident:
 
@@ -130,12 +136,12 @@ Format
 
 The route description has to follow the format rules below:
 
-``FROM[ETD] [SPEEDALT] [SID][.TRANS] [ENROUTE] [STAR][.TRANS] TO[ETA] [ALTERNATES]``
+``FROM[ETD] [SPEEDALT] [SIDTRANS] [ENROUTE] [STARTRANS] TO[ETA] [ALTERNATES]``
 
 All elements in square brackets are optional.
 
 ``FROM`` and ``TO``: These are the required 3 or 4 letter idents for
-departure and destination airports.
+departure and destination airports. Departure time ``ETD`` or arrival time ``ETA`` is ignored.
 
 Examples: ``KEAT``, ``CYPU``, ``S16``.
 
@@ -151,7 +157,7 @@ aircraft performance profile.
 ``AIRWAYWAYPOINT`` forming the actual flight plan. The first entry has
 to be an airport, waypoint, VOR or NDB.
 
-``WAYPOINT``: A waypoint, VOR, NDB, airport or user-defined coordinates.
+``WAYPOINT``: A waypoint, VOR, NDB, airport or user defined coordinates.
 See below for a details about coordinates. A waypoint can be prefixed
 with ``DCT`` to indicate a direct connection not using an airway.
 Waypoints can be suffixed with an optional ``/SPEEDALT`` value although
@@ -164,12 +170,23 @@ space.
 
 Examples: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``.
 
-``SID.TRANS`` and ``STAR.TRANS``: Either the words ``SID`` or ``STAR``
-or real SID, STAR and transition names where the optional transition is
-separated by a ``.``. The generic keywords ``SID`` and ``STAR`` create a
+``SIDTRANS``: Either the word ``SID`` or real SID, STAR and transition names where the optional transition is
+separated by a dot ``.`` or a space `` ``. The generic keyword ``SID`` creates a
 direct connection to the en-route part.
 
-Examples: ``RDHK2.HOLLE``, ``OHIO3.LFK``, ``RDHK2``, ``OHIO3``.
+Examples: ``RDHK2.HOLLE``, ``OHIO3 LFK``, ``RDHK2``, ``OHIO3``.
+
+
+``SIDTRANS``: Either the word ``SID`` or real SID and transition names where the optional transition is
+separated by a dot ``.`` or a space `` ``. The generic keyword ``SID`` creates a
+direct connection to the en-route part.
+
+Examples: ``RDHK2.HOLLE``, ``OHIO3 LFK``, ``RDHK2``, ``OHIO3``.
+
+``STARTRANS`` is either the word ``STAR`` or a read STAR and an optional transition which can be
+given as ``STAR.TRANS``, ``STAR TRANS``, ``TRANS.STAR`` or ``TRANS STAR``.
+The generic keyword ``STAR`` creates a direct connection from the en-route part to the airport.
+
 
 Features not supported
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -179,6 +196,8 @@ the airport or waypoint ident are ignored.
 
 ``WAYPOINT.SPEEDALT``: For example ``BOMBI/N0090A060``. Altitude changes
 at waypoints are not supported and ignored when reading.
+
+Further extensions like runway and approaches are not supported.
 
 Alternates
 ^^^^^^^^^^
@@ -260,6 +279,10 @@ digits for seconds and east/west indicator. This format is used by
 
 Example: ``481200N0112842E``.
 
+**ARINC 424 Code Convention**: All full degree waypoints either a part of the navigation database or not.
+
+Examples: ``57N30`` (N57 W130) or ``5730S`` (S57 W030).
+
 **North Atlantic track points** (NAT). Two digits degrees north and two
 digits degrees west followed by character ``N``.
 
@@ -310,7 +333,7 @@ speed and altitude at** ``NATAG`` **which will be ignored:**
 
 ``EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF``
 
-**User-defined waypoints with degree/minute notation and an alternate
+**User defined waypoints with degree/minute notation and an alternate
 airport** ``LIRE`` **:**
 
 ``EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE``

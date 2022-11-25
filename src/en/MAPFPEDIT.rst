@@ -3,7 +3,7 @@ Map Flight Plan Editing
 
 The flight plan drag and drop editing mode is enabled by default. It can
 be toggled using the toolbar or ``Flight Plan`` ->
-``Edit Flight Plan on Map`` in the main menu.
+:ref:`edit-flight-plan-on-map` in the main menu.
 
 You can use the keyboard, the mouse wheel or the map overlays to scroll
 and zoom while editing the route.
@@ -35,7 +35,7 @@ The following functionality is available:
       flight plan segment.
    -  **On multiple airports or navaids:** A menu pops up that allows you
       to select the object to be inserted.
-   -  **No airport and no navaid:** An user-defined position is inserted
+   -  **No airport and no navaid:** An user defined position is inserted
       into the flight plan.
 
 -  **Click on waypoint:** Starts editing and replaces the selected
@@ -45,22 +45,21 @@ The following functionality is available:
       waypoint.
    -  **On multiple airports or navaids:** A menu pops up that allows to
       pick the object that should replace the selected waypoint.
-   -  **No airport and no navaid:** An user-defined position replaces the
+   -  **No airport and no navaid:** An user defined position replaces the
       waypoint.
 
 -  **Click on departure or destination:** Replaces the departure or
    destination with an object depending on where you click next:
 
    -  **On a single airport:** Airport replaces the departure or
-      destination. A default runway is assigned as start position if the
-      departure is replaced with a new airport.
+      destination.
    -  **On a navaid:** Object replaces departure or destination which
       results in an invalid flight plan. The flight plan can be saved and
       loaded (a warning will be shown) but is unusable by the flight
       simulator.
    -  **On multiple airports or navaids:** A menu pops up that allows to
       select the object that replaces departure or destination.
-   -  **No airport and no navaid:** An user-defined position replaces the
+   -  **No airport and no navaid:** An user defined position replaces the
       waypoint resulting in an invalid flight plan.
 
 -  **Right-clicking, pressing the escape key or any click outside of the

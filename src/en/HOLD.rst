@@ -4,23 +4,26 @@
 *Little Navmap* can display a holding pattern at any place or navaid on
 the map.
 
-Holdings can be placed at any map position. Attaching a holding to a
+User placed holdings can be added at any map position. Attaching a holding to a
 navaid will use the magnetic declination of the navaid and show its
 ident in the holding label.
 
 Right click in the map, flight plan table, airport, navaid or userpoint
-search result table and select :ref:`holding`.
+search result table and select :ref:`add-holding-map`.
 
 This will show a dialog where you can select a runway and customize the
 holding.
 
-Note that the menu item is disabled if holdings are hidden on the map
-(menu ``View`` -> ``User Features``). The menu item is suffixed with the
-text ``hidden on map`` if this is the case.
+The display of holdings is automatically enabled in menu ``View`` -> ``User Features`` ->
+:ref:`user-holdings` once using this function.
 
 *Little Navmap* shows a tooltip with information about the holding when
 hovering the mouse above the hotspot (white filled triangle) at the
 holding fix.
+
+Holdings can be removed by either selecting ``Map`` ->
+:ref:`remove-traffic-holdings`, ``File`` -> :ref:`reset-for-new-flight` or by right click on
+the hotspot (triangle) at the holding fix.
 
 Create Holding
 ~~~~~~~~~~~~~~
@@ -42,23 +45,20 @@ Create Holding
 -  ``Altitude label``: Altitude to display at the holding.
 -  ``Line Color``: Color of the holding lines and labels.
 
-Holdings can be removed by either selecting ``Map`` ->
-``Remove all Ranges, Measurements and Patterns`` or by right click on
-the hotspot (triangle) at the holding fix.
-
 See :ref:`holding-legend` for details about the
 displayed numbers in the pattern.
 
 .. figure:: ../images/holding_dialog.jpg
 
-       Holding dialog for VORDME ``RID``.
+      Holding dialog for VORDME ``RID``.
 
 .. figure:: ../images/holding.jpg
+       :scale: 50%
 
        Holding at VORDME ``RID``. Inbound label shows
        inbound magnetic course, holding time and navaid ident. Outbound track
        has outbound magnetic course, speed and altitude as label. While filled
-       triangle is the hotspot and holding fix.
+       triangle is the hotspot and holding fix. *Click image to enlarge.*
 
 .. |Holding Icon| image:: ../images/icon_hold.png
 

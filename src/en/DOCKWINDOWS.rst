@@ -25,7 +25,15 @@ Note that dock windows open automatically when selecting functions like
 You can save and load dock window layouts in the ``Window`` menu. See also :doc:`LAYOUT` for
 details.
 
-More dock window related settings like auto activation on mouse overr can be found in the options
+**Dock window related menu items in menu** ``Window`` **:**
+
+- :ref:`keep-foreground-menu`
+- :ref:`show-all-floating`
+- :ref:`allow-window-docking`
+- :ref:`allow-window-moving`
+- :ref:`show-dock-title-bars`
+
+More dock window settings like auto activation on mouse over can be found in the options
 on page :ref:`user-interface`.
 
 .. tip::
@@ -37,48 +45,53 @@ on page :ref:`user-interface`.
     You can also deselect ``Window`` -> :ref:`allow-window-docking` in the main menu to prevent the dock
     windows from snapping back into the main window.
 
-Toolbars are also movable by clicking on the left handle and can also be
-closed or detached from the main window similar to the dock windows.
-Toolbars can also be opened and closed in the main menu ``Window``.
-
-.. figure:: ../images/toolbar_move.jpg
-
-     Cursor above the toolbar handle that has to be
-     clicked to move or to undock the toolbar.
-
 .. note::
 
    Use the ``Window`` menu in the in the main menu to save, load or restore
    closed windows, toolbars and tabs.
 
-   The ``Window`` -> ``Reset Window Layout`` menu item in the
-   main menu can be used to reset the state and positions of all dock
-   windows and toolbars back to their default. This also resets the tab visibility and order back to default.
+   The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and positions of all dock
+   windows and toolbars back to their default.
+
+   Use :ref:`reset-tabs-menu` to reset the tab visibility and order back to default.
+
+Dock Windows
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Click images to enlarge.
 
 .. figure:: ../images/dock_titlebar.jpg
+      :scale: 50%
 
-         Title bar of a dock window marked red.
+      Title bar of a dock window marked red.
 
 .. figure:: ../images/dock_docking.jpg
+      :scale: 50%
 
-        Moving a dock window around. The blue background
-        opens to indicate a space in the main window where the dock can be
-        dropped in.
+      Moving a dock window around. The blue background
+      opens to indicate a space in the main window where the dock can be
+      dropped in.
 
 .. figure:: ../images/dock_floating.jpg
+      :scale: 50%
 
-        Dock window in floating state detached from main window.
+      Dock window in floating state detached from main window.
 
-.. figure:: ../images/dock_drop_stack.jpg
-
-           Dropping a dock window on another to create a stack.
-
-.. figure:: ../images/dock_stack.jpg
-
-        A stack of two dock windows. The tab bar is marked
-        red at the bottom of the stacked dock windows.
-
+Dock Window Stacks
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
    You must click on the title bar of a window to remove it from the stack, not on the tab bar.
+
+.. figure:: ../images/dock_drop_stack.jpg
+      :scale: 50%
+
+      Dropping a dock window on another to create a stack.
+
+.. figure:: ../images/dock_stack.jpg
+      :scale: 50%
+
+      A stack of two dock windows. The tab bar is marked
+      red at the bottom of the stacked dock windows.
+

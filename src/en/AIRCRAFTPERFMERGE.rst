@@ -6,8 +6,8 @@ collected performance or another performance file using this dialog.
 
 The dialog is opened when clicking on the merge button in the tab
 ``Current Performance``, when selecting ``Aircraft`` ->
-``Merge collected Aircraft Performance ...`` or
-``Open Aircraft Performance and Merge ...`` in the main menu.
+:ref:`aircraft-menu-merge` or
+:ref:`aircraft-menu-open-merge` in the main menu.
 
 A warning message is shown if the fuel type does not match.
 
@@ -16,7 +16,7 @@ Operations
 
 The left side of the dialog shows either collected performance values
 from a flight or the values of a profile loaded using the
-``Open Aircraft Performance and Merge ...`` function.
+:ref:`aircraft-menu-open-merge` function.
 
 The right side always shows the values of the current performance
 profile.
@@ -37,11 +37,12 @@ An operation can be selected for each value pair:
 Buttons
 ~~~~~~~
 
--  ``OK``: Applies the selected operations to the current profile.
--  ``Cancel``: Disregards all changes and closes the dialog.
--  ``Help``: Opens the online help in the default web browser.
 -  ``Set all operations to:``: ``Copy``, ``Ignore`` and ``Merge``:
    Changes the operations for all values.
+-  ``Merge``: Applies the selected operations to the current profile.
+-  ``Merge and Save``: As above but additionally saves the file.
+-  ``Cancel``: Disregards all changes and closes the dialog.
+-  ``Help``: Opens the online help in the default web browser.
 
 .. figure:: ../images/perf_merge.jpg
 

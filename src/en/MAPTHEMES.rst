@@ -20,20 +20,22 @@ example. The DGML file can refer to an online map service or included
 offline map data. Usually a map theme contains many more files than only
 the DGML.
 
-The menu ``View`` -> ``Theme`` in the main menu and the toolbar drop
-down box will receive an entry for each additional map theme. Custom map
-themes are prefixed with a ``*`` in the drop down box and with the word
-``Custom`` in the menu.
+The menu ``View`` -> :ref:`theme-menu` in the main menu and the toolbar drop
+down box will receive an entry for each additional map theme.
 
-The options ``Show Country and City Names`` and ``Show Hillshading`` are
+The option :ref:`show-country-and-city-names` is
 enabled for all additional map themes but might not work depending on
 properties defined in the map's DGML file.
+
+See the comments in the included file ``data\maps\earth\example\example.dgml`` or here online
+`example.dgml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/marble/data/maps/earth/example/example.dgml>`__ for more information.
+
 
 More maps and information about map configuration and DGML files can be
 found here on the Marble and KDE pages:
 
 -  Download more maps for the Marble widget (only Earth maps are
-   supported in ``Little Navmap``): `Additional
+   supported in *Little Navmap*): `Additional
    Maps <https://marble.kde.org/maps.php>`__
 -  A tutorial that shows how to create a map theme based on tiled
    images:

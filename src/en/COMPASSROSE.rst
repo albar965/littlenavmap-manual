@@ -12,18 +12,18 @@ The compass rose is kept centered in the current view if not connected
 to a simulator. Magnetic declination is based on the declination in the
 center.
 
-Once connected, the compass rose will be attached to the user aircraft and follow its position.
+Once connected to a simulator, the compass rose will be attached to the user aircraft and follow its position.
 This can be disabled in menu ``View`` -> :ref:`show-compass-rose-attach`.
 
-The size is adapted to the map view size but not larger than 1,000 NM and
-not smaller than 4 NM.
+The size is adapted to the map view size but not larger than 500 NM and
+not smaller than 0.2 NM.
 
 Line thickness and other display options can be changed in dialog
-``Options`` on page :ref:`map-display-2`.
+``Options`` on page :ref:`map-display-labels` and :ref:`map-display-user`.
 
 The colors for flight plan leg course and heading indicator depend on
 settings for active flight plan leg which can be changed in the dialog
-``Options`` on page :ref:`map-display`.
+``Options`` on page :ref:`map-display-flight-plan`.
 
 Indicators
 ~~~~~~~~~~

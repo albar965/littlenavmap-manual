@@ -23,7 +23,7 @@ Use the measurement lines to get a VOR Radial Intersection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Measurement lines can start at airports or navaids where they use the
-magnetic variation if available. You can use them to find an airport by
+magnetic declination if available. You can use them to find an airport by
 radial and distance if you like to navigate the old fashioned way.
 
 Below is an example that gets radial and distance from two VORs for

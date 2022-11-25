@@ -9,9 +9,12 @@ Tracks are a structured set of flight routes that stretch across the Atlantic, P
 -  `PACOTS <https://en.wikipedia.org/wiki/Pacific_Organized_Track_System>`__: Pacific Organized Track System
 -  `AUSOTS <https://www.airservicesaustralia.com/ausots/ausotstoday.asp>`__: Australian Organised Track Structure
 
-.. figure:: ../images/tracks.jpg
+Note that AUSOTS tracks are currently not available. It is unknown if they will reappear.
 
-    Image showing all track related functions in *Little Navmap*.
+.. figure:: ../images/tracks.jpg
+    :scale: 50%
+
+    Image showing all track related functions in *Little Navmap*. *Click image to enlarge.*
 
 Download
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,7 +26,7 @@ Download on startup and immediate can be enabled in the menu ``Flight Plan`` -> 
 Manual download can be started in the menu ``Flight Plan`` -> :ref:`download-tracks`.
 
 You can select the track systems to download in the sub-menu :ref:`track-sources` in the menu ``Flight Plan``.
-You have to start the download again to see the changes.
+The download will start again after changing sources.
 
 The track database is cleared on startup if :ref:`download-tracks-startup` is not selected.
 

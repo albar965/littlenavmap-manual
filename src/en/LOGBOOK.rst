@@ -17,29 +17,50 @@ You can speed up the flight or to warp to another position without breaking the 
 Editing functionality in the logbook is similar to the userpoints
 editing (:ref:`userpoints`).
 
+
 .. note::
 
       Use :ref:`reset-for-new-flight` to be sure
       that the logbook flight detection is set up for a new flight.
 
-      The logbook entries will not be recorded between different sessions.
-      Update the logbook entry manually if you have to exit the flight simulator or *Little Navmap*.
+      The takeoff and landing detection is reset if you restart *Little Navmap* while flying. In this case
+      you get two entries where one is for departure and one for arrival. Merge these manually if needed.
+
+.. _logbook-create:
+
+Create Logbook Entries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* creates logbook entries for each flight automatically if
+this menu item :ref:`logbook-create-entries` is checked. A logbook entry containing only departure is
+created on takeoff and finalized with destination, track and more information on landing.
+
+Note that the takeoff and landing detection is reset if restarting Little Navmap while flying. In this case
+you get two entries where one is for departure and one for arrival. Merge these manually if needed.
+
+Note that the content of the field ``Simulator`` in the logbook entries is determined by the
+selected scenery library and not by the connected simulator.
+
+.. note::
+
+      Always use :ref:`reset-for-new-flight` before doing a flight.
+
+.. _logbook-files:
 
 Logbook Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each logbook entry has a reference using the full path to the used flight plan and aircraft
-performance files. Keep in mind that these references naturally break if the files are moved or renamed.
+performance files. Keep in mind that these references break if the files are moved or renamed. Update them manually if needed.
 
 Additionally, the flight plan file, the aircraft performance file and the flown track are directly inserted into
-logbook entry. These attachments can be saved as LNMPLN, LNMPERF or GPX files. The GPX attachment is also used to show the trail and
-flight plan preview when selecting logbook entries in the search result table.
+logbook entry. These attachments can be saved as LNMPLN, LNMPERF or GPX files.
 
 See :ref:`flight-plan-formats-lnmpln` for information about the LNMPLN format.
 
-The GPX trail contains coordinates, flown altitude and time as well as the flight plan with airport and navaid idents, coordinates and calculated altitude.
+The GPX trail contains coordinates, flown altitude and time as well as the simplified flight plan with airport and navaid idents, coordinates and calculated altitude.
 
-The flight plan file contains all plan information like procedures or remarks.
+The flight plan file contains all plan information like procedures or remarks just as the loaded LNMPLN file.
 
 You can access and modify the referenced and attached files in the context menu of the search result table and edit dialog.
 
@@ -53,11 +74,10 @@ Logbook Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The functionality of the search filters and the result table is equal to
-the airport and navaid search. See :doc:`SEARCH`
-for information about search filters and buttons.
+the airport and navaid search. See :doc:`SEARCH` for information about search filters and buttons.
 
-A search field ``Airport ICAO`` allows to search entries having either a matching destination or
-departure airport.
+A search field ``Airport Ident`` allows to search entries having either a matching destination or
+departure airport. The fields ``Departure Airport Ident`` and ``Destination Airport Ident`` allow to search exactly for departure and destination airports or combinations.
 
 Additional context menu items and buttons allow adding, editing, and
 deleting of logbook entries as well as saving or loading the attached flight plan or track.
@@ -93,6 +113,22 @@ shown if hovering the mouse over the blue direct connection or flight plan previ
       Search for logbook entries with a max distance of zero if you like to remove invalid entries
       from interrupted flights or pattern work.
 
+.. _logbook-footer:
+
+Footer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The footer shows the number of selected, loaded and visible logbook entries considering search and filter criteria.
+
+Note that you to select :ref:`show-all` from the table context menu or have to scroll down to see all entries:
+
+Example : ``9 of 3667 Logbook Entries selected, 256 visible.``
+
+A second footer line shows up if one or more logbook entries are selected.
+This line shows the total real travel time, the total simulator travel time and the accumulated distance for the selected entries.
+
+Example: ``Travel Totals: Real time 2 h 13 m. Sim. time 6 h 48 m. Dist. 1.298 NM.``
+
 .. _logbook-top-buttons:
 
 Top Buttons and additional Menu Items
@@ -101,6 +137,66 @@ Top Buttons and additional Menu Items
 See :ref:`search-result-table-view-context-menu` for a
 description of common context menu items across all search dialogs. All
 buttons have an equivalent in the result table context menu.
+
+.. _undo-logbook-search:
+
+|Undo| |Redo| Undo and Redo Logbook Entry
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Allows undo and redo of all logbook changes. The last action is shown in the menu item like
+``Undo Adding of one Logbook Entry``, for example.
+The undo stack is kept when restarting *Little Navmap* and only deleted if a certain amount of
+undo steps is exceeded.
+
+Also in main menu ``Logbook`` -> :ref:`undo-logbook-entry`.
+
+.. _logbook-add:
+
+|Add Logbook Entry| Add Logbook Entry
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Add a logbook entry manually.
+
+See :ref:`logbook-dialog-add` and :ref:`logbook-dialog-edit`
+below for more information about the add/edit dialog.
+
+.. _logbook-edit:
+
+|Edit Logbook Entry| Edit Logbook Entry
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Open the edit dialog for one or more logbook entries.
+
+The edit dialog shows a column of checkboxes on the right side if more
+than one logbook entry is selected. These allow to choose the fields to
+change for all selected entries.
+
+See :ref:`logbook-dialog-edit` below for more information about the
+add/edit dialog.
+
+.. _logbook-delete:
+
+|Delete Logbook Entry| Delete Logbook Entry
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Removes the selected logbook entries. The action can be undone in the main menu ``Logbook``.
+
+.. _logbook-cleanup:
+
+Cleanup Logbook Entries
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Removes invalid logbook entries.
+
+-  ``Shorter than 5 NM``: Removes all entries where the distance flown is below 5 NM.
+-  ``Departure and destination ident equal``: Delete all entries where departure ident is the same as the destination ident (which can happen when doing pattern work). Airport names or other attributes are not compared.
+-  ``Either departure or destination ident empty``: Remove all entries where departure or destination is empty. This can happen when running simulator replay, redoing landings or interrupting flights.
+
+You can undo the change using :ref:`undo-logbook-search` in the logbook table context menu.
+
+.. figure:: ../images/logbook_cleanup.jpg
+
+    Logbook cleanup dialog.
 
 Airport
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -122,39 +218,9 @@ Sub-menu for departure and destination airport.
 |Set as Flight Plan Alternate| Set as Flight Plan Alternate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-These menu items are only enabled for a right click on a departure or destination airport name or ICAO.
-
+These menu items are only enabled for a right click on a departure or destination airport name or airport ident.
 Same functionality as in :ref:`map-context-menu` and in :ref:`flight-plan-table-view-context-menu`.
 
-.. _logbook-add:
-
-|Add Logbook Entry| Add Logbook Entry
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Add a logbook entry manually.
-
-See :ref:`logbook-dialog-add` and :ref:`logbook-dialog-edit`
-below for more information about the add/edit dialog.
-
-|Edit Logbook Entry| Edit Logbook Entry
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Open the edit dialog for one or more logbook entries.
-
-The edit dialog shows a column of checkboxes on the right side if more
-than one logbook entry is selected. These allow to choose the fields to
-change for all selected entries.
-
-See :ref:`logbook-dialog-edit` below for more information about the
-add/edit dialog.
-
-|Delete Logbook Entry| Delete Logbook Entry
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Remove the selected logbook entries after a confirmation dialog. Undo is
-not possible but database backups are created on each start. See
-:ref:`files-logbook` for information about database backup
-files.
 
 Files
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -182,7 +248,7 @@ Same as :ref:`aircraft-menu-load`.
 Open attached Flight Plan
 """""""""""""""""""""""""""""""""
 
-Opens the attached flight plan file replacing the current plan.
+Opens the attached flight plan file replacing the currently loaded flight plan.
 
 Save attached Flight Plan as
 """""""""""""""""""""""""""""""""
@@ -192,7 +258,7 @@ Saves the attached LNMPLN flight plan to a new file.
 Open attached Aircraft Performance
 """"""""""""""""""""""""""""""""""""
 
-Opens the attached performance file replacing the current aircraft performance.
+Opens the attached performance file replacing the currently loaded aircraft performance file.
 
 Save attached Aircraft Performance as
 """"""""""""""""""""""""""""""""""""""""""""
@@ -221,7 +287,7 @@ Displayed for one or more selected logbook entries.
 Show flight plan preview
 """""""""""""""""""""""""""""""""
 
-Shows a simplified preview of the flight plan in use.
+Shows a simplified preview of the flight plan used.
 
 This is only shown when a single logbook entry is selected.
 
@@ -233,56 +299,13 @@ Shows the flight path.
 This is only shown if a single logbook entry is selected.
 
 
-.. _open-flight-plan-logbook:
-
-|Open Flight Plan| Open Flight Plan
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Opens the referenced flight plan file. This menu item is disabled if the
-flight plan field in the logbook entry is empty or if the flight plan
-file was moved or renamed.
-
-.. _aircraft-menu-load-logbook:
-
-|Open Aircraft Performance| Open Aircraft Performance
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Loads a LNMPERF aircraft performance profile and shows the fuel
-report. This menu item is disabled if the aircraft performance field in
-the logbook entry is empty or if the file was moved or renamed.
-
-|Reset Search| Reset Search
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Clear search filters and reverts to showing all entries in the search
-result table view.
-
-|Clear Selection| Clear Selection
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Deselect all selected entries in the table and remove any highlighted
-logbook entries from the map.
-
-|Help| Help
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Display a quick help in the tooltip. Click to open this chapter of the
-manual in the default browser.
-
-|Menu Button| Menu Button
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Drop down menu button that allows to hide or show search options.
-
-The drop down menu prefixes menu items with a change indicator ``*`` to
-show that the related filter row has modifications.
 
 .. _logbook-dialog-add:
 
 Add Logbook Entry
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Allows to create a new log entry manually. The dialog layout and
+This dialog window is used to create a new log entry manually. The dialog layout and
 functionality is the same as for editing logbook entries. The button
 ``Reset`` clears all fields.
 
@@ -310,20 +333,20 @@ Additional notes about some fields on this page:
    show the airport name and elevation if the airport ident can be
    resolved. Otherwise an error message is shown.
 -  **Date and Time in Simulator UTC**: Time set in the simulator on
-   liftoff or touchdown. Always UTC.
--  **Real local Time**: Real world time on liftoff or touchdown. Stored
+   takeoff or touchdown. Always UTC.
+-  **Real local Time**: Real world time on takeoff or touchdown. Stored
    in your local time.
 -  **Route Description**: :doc:`ROUTEDESCR` extracted from the flight plan.
 -  **Flight plan file** and **Aircraft performance file**: Used flight
    plan and performance files. These are only references which will turn
-   invalid if the files are moved or renamed.
+   invalid if the files are moved or renamed. Update manually if needed.
 
 Tab Fuel and Weight
 ^^^^^^^^^^^^^^^^^^^^
 
 Block fuel and trip fuel are extracted from :ref:`fuel-report`.
 
-Used fuel is the fuel consumption between liftoff and touchdown.
+Used fuel is the fuel consumption between takeoff and touchdown.
 
 Tab Remarks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -351,7 +374,7 @@ be assigned to the respective field in all selected logbook entry.
 Unchecked fields will not be altered for any of the selected entries.
 
 In combination with the search function, this allows for bulk changes
-like fixing an invalid aircraft type.
+like fixing an invalid aircraft type for more than one entry.
 
 .. figure:: ../images/logbook_bulk_edit.jpg
 
@@ -544,7 +567,7 @@ The first line of the CSV contains the field names if chosen for export.
 +-----------------------------------+-----------------------------------+
 | Distance Flown                    | Actual flown distance in NM       |
 +-----------------------------------+-----------------------------------+
-| Departure Ident                   | Airport ICAO code                 |
+| Departure Ident                   | Airport ident                     |
 +-----------------------------------+-----------------------------------+
 | Departure Name                    | Airport name                      |
 +-----------------------------------+-----------------------------------+
@@ -611,5 +634,7 @@ The first line of the CSV contains the field names if chosen for export.
 .. |Set as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
 .. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
 .. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
+.. |Undo| image:: ../images/icon_undo.png
+.. |Redo| image:: ../images/icon_redo.png
 
 

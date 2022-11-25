@@ -9,7 +9,7 @@ Tooltips give more information about the function of a tab.
 
 Note that you cannot move a tab to another window.
 
-The ``Window`` -> :ref:`reset-layout-menu` menu item in the
+The ``Window`` -> :ref:`reset-tabs-menu` menu item in the
 main menu also resets the tab visibility and order to default.
 
 Context Menu Tabbar
@@ -53,8 +53,10 @@ See :doc:`DOCKWINDOWS` for more information about stacked
 dock windows.
 
 .. figure:: ../images/tabs.jpg
+      :scale: 50%
 
-      Drop down button menus and context menus on tab bars marked red.
+      Drop down button menus and context menus on tab bars marked red. *Click image to enlarge.*
+
 
 .. |Tab Button| image:: ../images/tabbutton.jpg
 

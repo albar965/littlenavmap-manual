@@ -1,6 +1,8 @@
 Tutorial - Building a VFR Flight Plan
 -------------------------------------
 
+TODO
+
 General
 ~~~~~~~
 
@@ -100,7 +102,7 @@ Add the waypoints now:
 -  Scroll along the valley to the south east across the lake Lac
    d'Annecy.
 -  Click :ref:`append-position-to-flight-plan` |Append Position to Flight
-   Plan|. The clicked position will be added as an user-defined waypoint
+   Plan|. The clicked position will be added as an user defined waypoint
    to the end of your plan.
 
 Click undo |Undo| or redo |Redo| in the toolbar if you don't like what you just added.
@@ -109,11 +111,11 @@ Click undo |Undo| or redo |Redo| in the toolbar if you don't like what you just 
 
 Another function is :ref:`add-position-to-flight-plan` |Add Position to
 Flight Plan| which will insert the clicked position to the nearest
-flight plan leg. You can use this to add user-defined positions,
+flight plan leg. You can use this to add user defined positions,
 airports or navaids in the middle of a flight plan. The nearest leg will
 be chosen automatically by *Little Navmap* for inserting the new position.
 
-*Little Navmap* will automatically assign names to the user-defined
+*Little Navmap* will automatically assign names to the user defined
 waypoints. You can leave these as they are or replace them with a more
 meaningful name.
 

@@ -6,7 +6,7 @@ flight plan position dialogs and userpoint dialogs.
 
 The input field shows a message below which indicates if the coordinates
 were recognized and shows the translated coordinates in the preset
-format as chosen in dialog ``Options`` on tab :ref:`units`. A red message
+format as chosen in dialog ``Options`` on page :ref:`units`. A red message
 is shown in case of error.
 
 Check the displayed translated coordinates to verify that your input was
@@ -14,7 +14,7 @@ parsed correctly.
 
 .. figure:: ../images/edit_flightplan_waypoint_tooltip.jpg
 
-      Editing an user-defined flight plan position. Tooltip gives a quick help on coordinate formats.
+      Editing an user defined flight plan position. Tooltip gives a quick help on coordinate formats.
 
 General
 ~~~~~~~
@@ -32,8 +32,14 @@ degrees/minutes/seconds if no unit signs are used.
 Decimal separator can be period (English) or the locale dependent
 separator like e.g. comma (German).
 
-All dialogs show the read coordinates below the input field in the curretly configured coordinate format.
+ARINC 424 Code Convention full degree waypoint formats like ``57N30``, ``5730E`` or ``57S30`` can be read.
 
+.. figure:: ../images/arinc_waypoint_coordinates.jpg
+
+    Full degree coordinate conventions, examples and respective quadrants.
+
+
+All dialogs show the read coordinates below the input field in the curretly configured coordinate format.
 See :ref:`units` for more information.
 
 .. tip::
@@ -63,8 +69,7 @@ Other Formats
 
 These have to be given exactly as shown in the examples.
 
--  Degrees and minutes: ``N44124W122451``, ``N14544W017479`` or
-   ``S31240E136502``
+-  Degrees and minutes: ``N44124W122451``, ``N14544W017479`` or ``S31240E136502``
 -  Degrees only ``46N078W``
 -  Degrees and minutes ``4620N07805W``
 -  Degrees, minutes and seconds ``481200N0112842E`` (SkyVector)
@@ -78,7 +83,7 @@ Examples
    ``49° 26' 41.57" N 9° 12' 5.49" E``
 -  Degrees and decimal minutes: ``N54* 16.82' W008* 35.95'``,
    ``N 52 33.58 E 13 17.26`` or ``49° 26.69' N 9° 12.09' E``
--  Decimal degrees only: ``49.4449° N 9.2015° E`` or
-   ``N 49.4449° E 9:2015°``
+-  Decimal degrees only: ``49.4449° N 9.2015° E`` or ``N 49.4449° E 9:2015°``
+-  ARINC 424 Code Convention full degree waypoint format: ``57N30``, ``5730E`` or ``57S30``
 
 

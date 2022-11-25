@@ -6,9 +6,11 @@ Navigation Databases
 #. **Simulator database:** Created by reading the scenery library of
    FSX, Prepar3D, Microsoft Flight Simulator 2020 or X-Plane.
 #. **Navigation database:** Provided by Navigraph. Does not have to be
-   compiled and can be updated by the Navigraph FMS Data Manager.
+   compiled and can be updated by the Navigraph FMS Data Manager to the latest AIRAC cycle.
 
 *Little Navmap* is bundled with a navigation database courtesy of `Navigraph <https://www.navigraph.com>`__ which is enabled per default.
+
+You can see the data source for each navaid or airport in the section ``Data Source`` in the information window (see :ref:`scenery`).
 
 .. tip::
 
@@ -68,7 +70,7 @@ airport runway layout precisely.
 Use Navigraph for Navaids and Procedures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**This is the default and strongly recommended mode.**
+**This is the default and strongly recommended mode for all simulators (see** :ref:`load-scenery-library-dialog-msfs-apt-navdata` **for MSFS considerations).**
 
 This mode blends navaids and other features from the Navigraph database
 with the simulator database. This affects the map display, all
@@ -82,7 +84,6 @@ this mode:
 -  Taxiways
 -  Parking positions
 -  COM frequencies
--  ILS
 
 The following features are taken from the Navigraph database:
 
@@ -91,9 +92,7 @@ The following features are taken from the Navigraph database:
    -  ``Search`` dock window, tab ``Navaid``
    -  Flight plan calculation
    -  Route Description
-   -  Procedures (approaches, SIDs and STARs). This affects:
-   -  ``Search`` dock window, tab ``Procedures``
-   -  Loading and display of procedures from flight plans.
+   -  Procedures (approaches, SIDs and STARs). This affects: ``Search`` dock window, tab ``Procedures`` and loading and display of procedures from flight plans.
 
 -  Airways
 -  Airspaces
@@ -114,18 +113,13 @@ Limitations in this mode
 -  The airport search only considers procedures available
    in the simulator. Switch to ``Use Navigraph for all Features`` to
    look for airports that have procedures from the Navigraph database.
--  ILS placement or presence might not match approach procedures if an
-   airport has a new ILS which is not present in stock scenery or an old
-   scenery add-on. If you encounter an ILS approach without ILS station,
-   switch to ``Use Navigraph for all Features`` to overcome this
-   limitation.
 
 .. tip::
 
    Use the Navigraph navdata update for Microsoft Flight Simulator 2020
    to update the scenery library to the latest and also to keep *Little Navmap*
    and MSFS navdata synchronized. This will reduce issues when loading
-   flight plans into the simulator.
+   flight plans into the simulator. See also :ref:`load-scenery-library-dialog-msfs-apt-navdata`.
 
    Using the *fsAerodata* navdata for FSX or P3D update will remove many
    of the limitations above since it will synchronize the simulator scenery
@@ -133,12 +127,13 @@ Limitations in this mode
 
 
 .. figure:: ../images/procedure_mismatch.jpg
+       :scale: 50%
 
-        An extreme example for runway/procedure mismatch.
-        The approach from the Navigraph database cycle 1707 ends at the not
-        visible runway 09 while the outdated scenery from FSX shows the airport
-        at the wrong position. EDVK was rebuild north of Calden in 2013. The
-        *OpenStreetMap* backgound shows the new airport.
+       An extreme example for runway/procedure mismatch.
+       The approach from the Navigraph database cycle 1707 ends at the not
+       visible runway 09 while the outdated scenery from FSX shows the airport
+       at the wrong position. EDVK was rebuild north of Calden in 2013. The
+       *OpenStreetMap* backgound shows the new airport. *Click image to enlarge.*
 
 
 .. _navdata-navigraph-none:

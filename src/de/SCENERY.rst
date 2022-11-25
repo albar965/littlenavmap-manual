@@ -81,16 +81,10 @@ geladenen Simulatordaten.
 Speicherorte der ``Scenery.cfg`` für Windows 7/8/10 sind:
 
 -  **Flight Simulator X:** ``C:\ProgramData\Microsoft\FSX\Scenery.cfg``
--  **Flight Simulator - Steam Edition:**
-   ``C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg``
--  **Prepar3D v2:**
-   ``C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg``
--  **Prepar3D v3:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
--  **Prepar3D v4:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
--  **Prepar3D v5:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
+-  **Flight Simulator - Steam Edition:** ``C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg``
+-  **Prepar3D v3:** ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
+-  **Prepar3D v4:** ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
+-  **Prepar3D v5:** ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
 
 Nach dem Laden wird ein Fehlerdialog angezeigt, wenn Dateien nicht
 gelesen werden konnten oder Verzeichnisse nicht gefunden wurden. In
