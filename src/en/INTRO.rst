@@ -184,7 +184,7 @@ The main window title shows the following information:
 #. Build type (for Windows only): ``64-bit`` (use this with MSFS) or ``32-bit`` (use this with FSX and P3D).
 #. Selected simulator scenery library database (``FSX``, ``FSXSE``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS``, ``XP11`` or ``XP12``) and AIRAC cycle if available. In parentheses if not used.
 #. Selected navigation database (Navigraph: ``N``) and AIRAC cycle. In parentheses if not used.
-#. Loaded flight plan file name plus a ``*`` if changed.
+#. Loaded flight plan file name plus a ``*`` if changed. Only ``*`` is shown if plan was not saved yet. Flight plan will be auto-restored on next startup.
 #. Loaded aircraft performance file a ``*`` if changed.
 #. Selected online network connection if used.
 

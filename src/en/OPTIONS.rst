@@ -44,6 +44,32 @@ Using the help button in the options dialog window jumps directly to the related
 Allows to customize what should be loaded and shown on startup of
 *Little Navmap*.
 
+.. _load-last-flight-plan:
+
+Load last used flight plan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This function allows to restore the last saved or edited flight plan on startup.
+
+Selected
+      The last saved flight plan file or the last edited flight plan will be reloaded on startup.
+
+      You can exit *Little Navmap* without saving a new plan. All changes will be restored on next startup.
+
+      *Little Navmap* will also not ask to save an already saved but changed plan on exit but instead saves the changes to a temporary file.
+      The changes and the last saved file will be restored on next startup.
+
+Not selected
+      The last saved flight plan will not be reloaded on startup.
+
+      *Little Navmap* will ask to save a plan on exit if it has been changed.
+
+
+.. _update-check:
+
+Update Check
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 You can also configure the frequency of the automatic update check and
 channels. See :doc:`UPDATE` for more information.
 Change the settings here if you wish to get notifications about beta

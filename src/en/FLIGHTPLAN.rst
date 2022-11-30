@@ -6,8 +6,20 @@ The flight planning Dock Window contains the four tabs: ``Flight Plan``, ``Fligh
 
 See chapter :doc:`ROUTECALC` for more information about calculation flight plans.
 
+Flight Plans
+~~~~~~~~~~~~~~
+
+*Little Navmap* allows to build flight plans or flight plan snippets using arbitrary start positions by using
+:ref:`append-position-to-flight-plan` or :ref:`add-position-to-flight-plan` in the map and other context menus.
+
+Note that not all simulators or add-ons support this kind of flight plans.
+
+You need to have the GLOBE elevation data installed to get the correct altitudes for arbitrary
+start or departure points. See :ref:`cache-elevation` for installation instructions.
+
 Header
 ~~~~~~~~~~
+
 .. role:: error-style
 .. role:: warning-style
 

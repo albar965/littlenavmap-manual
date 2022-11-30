@@ -1,12 +1,10 @@
 Tutorial - Building a VFR Flight Plan
 -------------------------------------
 
-TODO
-
 General
 ~~~~~~~
 
-This tutorial will show how to create a simple flight plan based on the
+This tutorial shows how to create a simple flight plan based on the
 map and its context menus.
 
 The flight plan is included in the *Little Navmap* installation directory:
@@ -14,17 +12,14 @@ The flight plan is included in the *Little Navmap* installation directory:
 
 The airport names might differ depending on simulator.
 
-The flight will take us through the valleys of the French alps. You can
-use this flight plan for any small aircraft like the free `Flight1
-Cessna 162
-SkyCatcher <http://www.flight1.com/view.asp?page=skycatcher>`__ or the
-default Cessna 172 of X-Plane or Prepar3D.
+Use the map theme ``Stamen Terrain`` in menu ``View`` -> :ref:`theme-menu` to see the mountains.
+The flight will only go through Class E airspace. There is no need to contact ATC.
+Disable airspace display in menu ``View`` -> :ref:`show-airspaces` for now.
 
-The flight will only go through Class E airspace. There is no need to
-contact ATC.
+The flight takes us through the valleys of the French alps. You can
+use this flight plan for any small aircraft like the default Cessna C172 which is available for all simulators.
 
-The flight plan is: *Meythet (LFLP) Parking 11, Ramp GA Small to
-Challes-les-Eaux (LFLE), 41 nm, 0 h 24 m, Direct*
+The flight plan is: *Meythet (LFLP) / Runway 04 to Challes-Les-Eaux (LFLE) Distance 41 NM, time 0 h 24 m.*
 
 Prepare Flight
 ~~~~~~~~~~~~~~
@@ -32,7 +27,7 @@ Prepare Flight
 I'd recommend to get use ``Flight`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
 fuel calculation and other functions. Uncheck
-``Create a new and empty flight plan`` in the dialog if your plan is
+``Create an empty flight plan`` in the dialog if your plan is
 already loaded.
 
 Default Aircraft Performance
@@ -42,14 +37,11 @@ This tutorial does not cover creating or collecting aircraft performance
 files. See :doc:`TUTORIALPERF`
 if you like to do this.
 
-Therefore, we will simply use the default which gives a three degree
-climb and descent angle as well as 100 knots cruise speed.
+Therefore, we will simply use the default example performance profile based on a Cessna C172.
 
 Select ``Aircraft`` -> :ref:`aircraft-menu-new` |New Aircraft
 Performance ...|. Accept the default values by pressing ``OK`` in the
-dialog. You will see several warnings in the fuel report. Ignore these
-for now since the aircraft performance is sufficient to calculate the
-top of descent and top of climb for the elevation profile.
+dialog.
 
 Departure Airport
 ~~~~~~~~~~~~~~~~~
@@ -60,16 +52,20 @@ Alps. You can use the following functions to navigate:
 -  The map overlay on the right.
 -  The mouse (click and drag) to move and the mouse wheel to zoom.
 -  The cursor keys to move and the keys ``+`` and ``-`` for zooming in
-   and out (click into the map window or press ``F2`` to activate it before using the
-   keys).
+   and out (click into the map window or press ``F2`` to activate it before using the keys).
 
 Use the back |Back| and forward |Forward| buttons to jump in the
 position history like in a web browser.
 
 See also :doc:`MAPDISPLAY`.
 
-Look for the departure airport ``Meythet (LFLP)`` around here: |Meythet
-(LFLP)| Closer with tooltip: |Meythet (LFLP) Tooltip|
+Look for the departure airport ``Meythet (LFLP)`` around here:
+
+|Meythet (LFLP)|
+
+Closer with tooltip:
+
+|Meythet (LFLP) Tooltip|
 
 Now:
 
@@ -79,7 +75,7 @@ Now:
 -  Right-click on the center of one of the green ramp parking spots (11
    is used here).
 -  Choose
-   ``Select Airport Meythet (LFLP) / Parking 11 as Departure``
+   ``Set Parking 11 at Meythet (LFLP) as Departure``
    |Select Airport / Parking as Flight Plan Departure| (:ref:`set-as-flight-plan-departure`) in the context
    menu.
 
@@ -91,8 +87,8 @@ This will select your departure parking position which will be
 highlighted by a black/yellow circle. The airport will be added to the
 flight plan as departure too.
 
-You can also click on the airport icon and select it for departure. A
-runway will be automatically assigned as departure position.
+You can also click on the airport icon and select it for departure.
+The airport center will be automatically assigned as departure position.
 
 En-Route Waypoints
 ~~~~~~~~~~~~~~~~~~
@@ -150,7 +146,7 @@ You can also use the drag and drop feature to move points or add new
 ones. Enable it by checking ``Flight Plan`` ->
 ``Edit Flight Plan on Map`` |Edit Flight Plan on Map|   and click on a
 flight plan waypoint to move it. Click on a flight plan leg to add a new
-waypoint into this leg.
+waypoint into this leg. See :doc:`MAPFPEDIT` for information on this function.
 
 Cruise Altitude
 ~~~~~~~~~~~~~~~
@@ -240,19 +236,25 @@ Follow the steps below to get a moving map and see your aircraft in
    is loaded, i.e. the simulator is not in the opening screen.
 -  Start the simulator if not already done, load the flight plan and go flying.
 
+.. important::
+
+    Make sure you use the right build of *Little Navmap*.
+    The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+
 See also :doc:`CONNECT`.
 
 Looking at Places while Flying
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* will keep your aircraft and the next flight plan
-waypoint centered on the screen as a default setting. You can configure
+*Little Navmap* will keep your aircraft centered on the screen as a default setting. You can configure
 this function in the options dialog on page :ref:`simulator-aircraft`.
 
 The program will stop following your aircraft for 10 seconds if you
 start any action that zooms in to an airport or navaid (double-click,
 toolbar button or link in the information window) or just simply move or
 zoom around in the map.
+
+See :doc:`FLIGHTPLANCENTER` for more information about aircraft centering while flying.
 
 Double-click on the destination airport to zoom to the airport diagram,
 for example. Leave *Little Navmap* alone and the map will jump back to the aircraft

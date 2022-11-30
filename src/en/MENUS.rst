@@ -37,6 +37,11 @@ You have to use :ref:`search-result-table-view-context-menu`,
 :ref:`map-context-menu` or
 :doc:`ROUTEDESCR` dialog to create a new flight plan.
 
+.. note::
+
+      You can exit *Little Navmap* without saving the current plan. All will be restored on next startup.
+      See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
+
 .. _open-flight-plan:
 
 |Open Flight Plan| Open Flight Plan
@@ -117,6 +122,12 @@ overwriting LNMPLN files with wrong plans after reversing direction, for example
 
 You can disable this behavior in the options dialog on page :ref:`flight-plan` by unchecking
 ``Avoid overwriting Flight Plan with not matching departure and destination``.
+
+.. note::
+
+      *Little Navmap* will not ask to save the file on exit but instead saves the changes to a temporary file.
+      The changes will be restored on next startup.
+      See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
 
 .. _save-flight-plan-as:
 

@@ -12,12 +12,16 @@ find the buttons on one of the toolbars. Screenshots will provide more
 help.
 
 Screenshots were made on Linux and Windows. Therefore, look and feel
-will be different.
+might be different.
+
+See :doc:`INTRO` for general information about the user interface.
 
 .. note::
 
     Flight plan distances, available procedures and airport names
     might differ between the simulators and used navdata cycles.
+
+    Select the closest procedures or runways if they differ in your setup.
 
 Quick Start
 ~~~~~~~~~~~
@@ -25,7 +29,7 @@ Quick Start
 To have a clean common base, I recommend the following:
 
 -  Select ``Window`` -> :ref:`reset-layout-menu` and :ref:`reset-tabs-menu` to get all the dock
-   windows back into their default place.
+   windows and tabs back into their default place.
 -  Use the map theme ``OpenStreetMap`` in menu ``View`` -> :ref:`theme-menu`.
 -  Reset the map display settings in ``View`` ->
    :ref:`reset-display-settings` to make sure that all needed features are shown on the map.

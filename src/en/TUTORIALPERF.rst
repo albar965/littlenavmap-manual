@@ -1,9 +1,6 @@
 Tutorial - Creating an Aircraft Performance Profile
 ------------------------------------------------------
 
-TODO
-
-
 This tutorial shows how to automatically collect aircraft performance
 while flying and how to create, merge and fine tune the result.
 
@@ -15,7 +12,7 @@ Flight Plan
 
 You can use the flight plan from the IFR tutorial is included in the
 *Little Navmap* directory:
-``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).pln``.
+``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).lnmpln``.
 
 Use main menu ``File`` -> :ref:`open-flight-plan` |Open Flight Plan| to
 load the flight plan.
@@ -24,9 +21,11 @@ The plan should cover the typical cruise altitude and travel distance
 for your aircraft. A short hop of a few miles at low altitude does not
 suffice.
 
-You can also fly and collect performance without a flight plan. Set the
-intended cruise altitude in the window :doc:`FLIGHTPLAN` to allow *Little
-Navmap* to detect the cruise phase.
+.. tip::
+
+       You can also fly and collect performance without a flight plan. Set the
+       intended cruise altitude in the window :doc:`FLIGHTPLAN` to allow *Little
+       Navmap* to detect the cruise phase.
 
 Aircraft Performance
 ~~~~~~~~~~~~~~~~~~~~
@@ -35,24 +34,27 @@ First start by creating a new and empty performance profile by selecting
 ``Aircraft`` -> :ref:`aircraft-menu-new` |New Aircraft Performance Icon|
 in the main menu.
 
+First page shows example aircraft name and type.
+
+|New Aircraft Performance 1|
+
+Second page shows default aircraft performance values.
+
+|New Aircraft Performance 2|
+
 Leave all as is in the dialog and click ``OK``.
 
-|New Aircraft Performance|
-
-Ignore the various warnings and error messages in the fuel report for
-now. This performance profile is good enough to calculate top of climb
-and top of descent with a three degree flight path angle.
+Ignore the warning and error messages in the fuel report for now.
 
 Also ignore the zero values in the :ref:`aircraft-performance-fuelplan`.
-Fuel flow data has to be
-entered in the performance profile to get a valid fuel prediction.
+Fuel flow data has to be entered in the performance profile to get a valid fuel prediction.
 
 Start and load a flight with aircraft engines running or not. Connect
 *Little Navmap* to the simulator.
 
 Select ``Flight`` -> :ref:`reset-for-new-flight` |Reset all for a new
 Flight Icon| in the menu. Remove the check mark from
-``Create a new and empty flight plan`` since a plan is already loaded.
+``Create an empty flight plan`` since a plan is already loaded.
 Click ``OK`` to get a clean base for fuel calculation, logbook and other
 functions.
 
@@ -144,7 +146,8 @@ littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/
 
 .. |Open Flight Plan| image:: ../images/icon_fileopen.png
 .. |New Aircraft Performance Icon| image:: ../images/icon_aircraftperfnew.png
-.. |New Aircraft Performance| image:: ../images/tutorial_perfnew.jpg
+.. |New Aircraft Performance 1| image:: ../images/tutorial_perfnew1.jpg
+.. |New Aircraft Performance 2| image:: ../images/tutorial_perfnew.jpg
 .. |Reset all for a new Flight Icon| image:: ../images/icon_reload.png
 .. |Reset all for a new Flight| image:: ../images/tutorial_perfreset.jpg
 .. |Current Performance Start| image:: ../images/tutorial_perfstart.jpg

@@ -1,8 +1,6 @@
 Tutorial - Building an IFR Flight Plan with Approach Procedures
 -------------------------------------------------------------------
 
-TODO
-
 This tutorial will show you how to create a more complex IFR flight plan
 including approach procedures. It introduces the advanced airport search
 functionality and the automatic flight plan calculation.
@@ -17,12 +15,16 @@ features of the program.
 
 You should at least read through :doc:`TUTORIALVFR` before doing this one.
 
-The flight plan will go across the UK using an IFR capable aircraft. Its
-maximum range should be more than 600 NM including reserves
-and a cruise altitude of 10,000 ft.
+.. note::
 
-Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
-a small turboprop or a powerful twin. Do not try to fly this trip with an airliner.
+     The flight plan will go across the UK using an IFR capable aircraft. Its
+     maximum range should be more than 600 NM including reserves
+     and a cruise altitude of 10,000 ft.
+
+     Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
+     a small turboprop or a powerful twin.
+
+     Do not try to fly this trip with an airliner.
 
 The tutorial assumes the following preconditions:
 
@@ -43,7 +45,7 @@ Prepare Flight
 Use ``Flight`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
 fuel calculation and other functions. Uncheck
-``Create a new and empty flight plan`` in the dialog if the flight plan is
+``Create an empty flight plan`` in the dialog if the flight plan is
 already loaded.
 
 Default Aircraft Performance
@@ -65,11 +67,16 @@ profile which gives a three degree climb and descent angle.
 -  Optional: Adjust descent and/or climb values as needed.
 -  Accept by pressing ``OK`` in the dialog.
 
-You will see several warnings in the fuel report. Ignore these for now
+You might see several warnings in the fuel report. Ignore these for now
 since the aircraft performance is sufficient to calculate the top of
 descent and top of climb for the elevation profile.
 
+Alternatively you can download a community made performance file from
+`Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
+
 |Aircraft Performance|
+
+
 
 .. _tutorial-ifr-cleanup:
 
@@ -122,6 +129,9 @@ See also :ref:`set-as-flight-plan-departure`.
 
 Search for Destination
 ~~~~~~~~~~~~~~~~~~~~~~
+
+Right-click into the result table and select :ref:`reset-search` |Reset
+Search| to remove of all search criteria from the recent search.
 
 Now look for a suitable destination airport:
 
@@ -280,11 +290,14 @@ Save the plan using ``File`` -> :ref:`save-flight-plan-as` |Save Flight Plan|.
 The program usually finds the right directory for the flight plans and
 gives a sensible name by default.
 
-The top label in the flight planning dock window reads now::
+The top label in the flight planning dock window reads now:
 
-      Bembridge (EGHJ) Runway 12 to Wick (EGPC)
-      Via CHINN and VORDME FD13 (D13) to runway 13 .
-      538 nm, 5 h 23 m, Low Altitude
+.. code-block:: none
+
+          Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
+          Arrive via CHINN and VORDME FD13 (D13).
+          Land at 13, 129°M, 5.215 ft, 126 ft elevation, PAPI4.
+          Distance 538 NM, time 4 h 35 m.
 
 The plan looks like shown below.
 
@@ -353,6 +366,11 @@ Follow the steps below to get a moving map and see your aircraft in
    is loaded, i.e. the simulator is not in the opening screen.
 -  Start the simulator if not already done, load the flight plan and go flying.
 
+.. important::
+
+         Make sure you use the right build of *Little Navmap*.
+         The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+
 See also :doc:`CONNECT`.
 
 .. _tutorial-ifr-top-of-descent:
@@ -400,18 +418,25 @@ The label on top of the window shows now
    menu which will replace the current procedure in your flight plan
    with the new one.
 
-The top label in the flight planning dock window reads now::
+The top label in the flight planning dock window reads now:
 
-     Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
-     Via CHINN and VORDME FD31 to runway 31
-     526 nm, 5 h 15 m, Low Altitude
+.. code-block:: none
 
-To completely delete a procedure:
+    Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
+    Arrive via CHINN and VORDME FD31 (D31).
+    Land at 31, 309°M, 5.031 ft, 126 ft elevation, PAPI4.
+    Distance 519 NM, time 4 h 26 m.
+
+
+To remove a procedure from the flight plan:
 
 -  Select any leg of the procedure in the flight plan table.
 -  Right-click and choose :ref:`delete-selected-legs` |Delete
    selected Leg or Procedure| or press the ``Del`` key to remove the
    whole procedure.
+
+Alternatively right click on any fix/waypoint of the procedure on the map
+and select :ref:`delete-from-flight-plan` |Delete from Flight Plan|.
 
 If ATC clears you to the initial fix of the procedure:
 
@@ -498,3 +523,4 @@ helps uncluttering the map display.
 .. |Export Flight Plan now| image:: ../images/icon_filesaveas.png
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
 .. |Connect Dialog| image:: ../images/connectlocal.jpg
+.. |Delete from Flight Plan| image:: ../images/icon_routedeleteleg.png

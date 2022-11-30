@@ -57,7 +57,7 @@ You can convert the files using any advanced editor like
 Airspaces will appear as duplicates in the map if an airspace file is
 found in more than one of these directories or sources.
 
-**Airspace types regognized in OpenAir format:**
+**Airspace types recognized in OpenAir format:**
 
 -  ``R``: restricted
 -  ``Q``: danger
@@ -75,7 +75,42 @@ found in more than one of these directories or sources.
 -  ``RMZ`` Radio Mandatory Zone / Class G
 -  ``TMZ``: Transponder Mandatory Zone / Mode C
 
+**Internal airspace types:**
 
+*Little Navmap* passes an airspace type through to the database if it is not one of the recognied types above.
+This means you can additionally use these types which are only recognized by *Little Navmap*:
+
+-  ``C``: Center
+-  ``CA``: Class A
+-  ``CB``: Class B
+-  ``CC``: Class C
+-  ``CD``: Class D
+-  ``CE``: Class E
+-  ``CF``: Class F
+-  ``CG``: Class G
+-  ``FIR``: FIR
+-  ``UIR``: UIR
+-  ``T``: Tower
+-  ``CL``: Clearance
+-  ``G``: Ground
+-  ``D``: Departure
+-  ``A``: Approach
+-  ``M``: MOA
+-  ``R``: Restricted
+-  ``P``: Prohibited
+-  ``CN``: Caution
+-  ``W``: Warning
+-  ``AL``: Alert
+-  ``DA``: Danger
+-  ``NP``: National park
+-  ``MD``: MODEC
+-  ``RD``: Radar
+-  ``GCA``: Control area
+-  ``MCTR``: MCTR
+-  ``TRSA``: TRSA
+-  ``TR``: Training
+-  ``GP``: Glider prohibited
+-  ``WW``: Wavewindow
 
 GEOJSON
 '''''''''''''''''''''''''''

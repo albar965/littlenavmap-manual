@@ -553,7 +553,7 @@ intermediate waypoint or a procedure.
 Deleting a waypoint of a procedure removes the whole procedure. Deleting a waypoint of a transition
 removes the transiton and the related procedure.
 
-This also applies to the guidance legs when selecting a departure or destination runway (
+This also applies to the guidance legs when selecting a departure or destination runway (:doc:`CUSTOMPROCEDURE`).
 
 .. _edit-name-of-user-waypoint:
 

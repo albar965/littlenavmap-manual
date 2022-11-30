@@ -8,7 +8,7 @@ performance between flights.
 
 **Dialog input and selection fields:**
 
--  ``Create a new and empty flight plan``: Clears the current flight
+-  ``Create an empty flight plan``: Clears the current flight
    plan. Same as :ref:`new-flight-plan`.
 -  ``Delete user aircraft trail``: Delete simulator aircraft trail from map and elevation profile.
    and elevation profile. The same as :ref:`delete-aircraft-trail`.

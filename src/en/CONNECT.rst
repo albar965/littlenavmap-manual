@@ -57,6 +57,13 @@ No plugin or separate SimConnect installaton is needed since *Little Navmap* com
 
 You will see an :warning-style:`orange warning message` if you use a X-Plane scenery library when trying to connect to FSX, P3D or MSFS.
 
+Note that there are two builds of Little Navmap and Little Navconnect for Windows available now:
+
+-  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
+-  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+
+Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+
 X-Plane
 ^^^^^^^
 
