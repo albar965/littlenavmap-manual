@@ -324,9 +324,7 @@ Shows information similar to a flight management computer about the user
 aircraft. This covers flight plan progress, altitude, speed, ambient and
 environment parameters.
 
-The text information in the tab has a link ``More Less`` on the top
-left. You can use this to toggle between more detailed and less
-information.
+A button |Settings| in the top right corner opens the :ref:`progress-configuration` window which allows to configure the visible fields.
 
 .. role:: error-style
 .. role:: warning-style
@@ -379,7 +377,7 @@ Some rows like ``Ice`` are hidden if the condition is not met.
 Choose ``Aircraft Progress Display Options`` from the context
 menu of the tab ``Progress`` in window ``Simulator Aircraft`` to customize the output table.
 
-The dialog uses a tree. See here :ref:`ui-tree` for more information about this type of input element.
+The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
 
 Note that not all fields are visible depending on aircraft status, flight plan and flight progress.
 

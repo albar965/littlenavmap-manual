@@ -70,9 +70,9 @@ You can enable saving of waypoints by checking :ref:`export-flight-plan-approach
 |Departure Runway| |Destination Runway| Set Departure Runway and Set Destination Runway
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Procedures are very often tied to a runway. Therefore, a departure and destination runway can be selected instead of an procedure.
+A departure and destination runway can be selected instead of an procedure.
 
-Selecting a destination runway add a final approach leg and which can be
+Selecting a destination runway adds a final approach leg (runway centerline extension) which can be
 customized by changing altitude, length and offset angle. This allows *Little
 Navmap* to give vertical guidance and to show ILS and/or VASI slopes at
 the destination.
@@ -154,8 +154,8 @@ Limitations when editing a flight plan with procedures
 Flying Procedures
 ~~~~~~~~~~~~~~~~~
 
-Procedure legs are pre-calculated, with the exception of holds and
-procedure turns. This means you can fly them mostly as they are drawn on
+Procedure legs are pre-calculated, with the exception of holds,
+turns and altitude dependent legs. This means you can fly them mostly as they are drawn on
 the map. If in doubt about how to fly a leg (e.g. if too many lines are
 overlapping) look at the procedure table in the :ref:`flight-plan-table`.
 

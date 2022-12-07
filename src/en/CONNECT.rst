@@ -57,12 +57,14 @@ No plugin or separate SimConnect installaton is needed since *Little Navmap* com
 
 You will see an :warning-style:`orange warning message` if you use a X-Plane scenery library when trying to connect to FSX, P3D or MSFS.
 
-Note that there are two builds of Little Navmap and Little Navconnect for Windows available now:
+.. important::
 
--  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
--  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+    Note that there are two builds of Little Navmap and Little Navconnect for Windows available now:
 
-Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+    -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
+    -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+
+    Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
 
 X-Plane
 ^^^^^^^
@@ -71,15 +73,7 @@ You have to install the included *Little Xpconnect* plugin to use
 *Little Navmap* as a moving map with X-Plane 11 and X-Plane 12.
 
 The plugin is bundled with *Little Navmap* but can also be downloaded
-separately.
-
-Copy the whole plugin directory ``Little Xpconnect`` into the directory
-``plugins`` in the directory ``Resources`` in the X-Plane installation.
-The complete path should look like
-``.../X-Plane 11/Resources/plugins/Little Xpconnect``
-
-The plugin is installed and working correctly if you can see it in the X-Plane plugin manager.
-Note that the plugin does not add any items to the X-Plane menu.
+separately. See :doc:`XPCONNECT` for more information and installation instructions.
 
 Select the X-Plane tab to connect.
 
@@ -97,12 +91,11 @@ flying computer.
 .. note::
 
      Airport weather information and winds aloft cannot be transferred across a remote
-     connection from X-Plane. You can only see the current weather around the user aircraft.
+     connection from X-Plane. You can only see the current weather around the user aircraft in the ``Simulator Aircraft`` window on the :ref:`progress-info`.
 
      Share files and directories for X-Plane across computers and adjust loading path in ``Options`` on page :ref:`cache` for remote setups.
      *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib`` files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
      applies updates immediately.
-
 
 See :doc:`NETWORK` on information how to set up a remote/networked connection.
 
@@ -136,6 +129,10 @@ Change the port in *Little Navconnect*'s ``Options`` dialog if you see
 an error message like shown below:
 
 ``[2016-07-27 16:45:35] Unable to start the server: The bound address is already in use.``
+
+.. note::
+
+    A common reason for failing connections are firewall settings which block the connection attempts.
 
 .. _connect-start-navmap:
 

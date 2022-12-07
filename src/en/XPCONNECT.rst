@@ -1,13 +1,13 @@
 Little Xpconnect
 ------------------------
 
-*Little Navmap* can only connect to X-Plane using the *Little Xpconnect*
-X-Plane plugin which has to be installed as well.
+*Little Navmap* connects to X-Plane using the *Little Xpconnect*
+X-Plane plugin which has to be installed in X-Plane.
 
 The *Little Xpconnect* plugin is included in the *Little Navmap* archive. You can always find the
-correct and matching version on your *Little Navmap* installtion directory.
+latest, correct and matching version on your *Little Navmap* installation directory.
 
-The plugin is 64-bit only and is available for Windows, macOS (ARM and Intel) and Linux.
+The plugin is 64-bit only and is available for Windows, macOS (ARM and Intel) and Linux and can be used in X-Plane 11 and X-Plane 12.
 
 Menu
 ~~~~~~~~~~~~~~~~~~~~
@@ -25,25 +25,26 @@ contains the following menu items:
 The changes are applied immediately and are saved on exit.
 
 Note that the fetch rate affects only the rate of which *Little Xpconnect* gets the data from X-Plane.
-This can affect X-Plane performance expecially when using large amounts of AI aircraft.
+This can affect X-Plane performance, expecially when using large amounts of AI aircraft.
 
-The option ``Update Time Interval`` in :ref:`connect-options` in the *Little Navmap* connect dialog window defines the rate *Little Navmap*
-fetches the data from the plugin.
-This affects *Little Navmap* performance and fluidity of the aircraft updates together with the setting ``Simulator aircraft updates`` in
-``Options`` page :ref:`simulator-aircraft`.
+The option ``Update Time Interval`` in :ref:`connect-options` in the *Little Navmap* connect dialog window defines the rate *Little Navmap* fetches the data from the plugin.
+This affects *Little Navmap* performance and fluidity of the aircraft updates together with the setting ``Simulator aircraft updates`` in ``Options`` page :ref:`simulator-aircraft`.
 
 It is recommended to keep both update rates equal and not lower than 100 ms.
 
 Compatibility Error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A pop up window says that versions are not compatible and and upgrade of *Little Xpconnect* is needed despite having the latest Little Xpconnect installed.
+If a pop up window says that versions are not compatible and and upgrade of *Little Xpconnect* is needed:
+   Remove the *Little Xpconnect* plugin from X-Plane and reinstall the new one.
 
-There is probably an old version of Little Xpconnect installed wrongly somewhere in your X-Plane plugins path. Maybe it was installed accidentally in the plugins base path without the *Little Xpconnect* folder structure.
 
-Check if there is another folder with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins folder on the top level.
+If the latest *Little Xpconnect* plugin is installed:
+   There is probably an old version of Little Xpconnect installed wrongly somewhere in your X-Plane plugins path. Maybe it was installed accidentally in the plugins base path without the *Little Xpconnect* folder structure.
 
-You can see the path of the (wrongly) loaded plugin in the X-Plane plugin manager.
+   Check if there is another folder with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins folder on the top level.
+
+   You can see the path of the (wrongly) loaded plugin in the X-Plane plugin manager or in the X-Plane ``Log.txt`` file.
 
 Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,11 +52,10 @@ Installation
 Delete any old *Little Xpconnect* installations in the plugins directory before copying
 the new version. Do not merge new and old installations.
 
-Copy the whole plugin directory *Little Xpconnect* into the directory ``plugins``
-in the directory ``Resources`` in the X-Plane installation. The complete path
-should look like:
+Copy the whole plugin directory *Little Xpconnect* into the directory ``Resources/plugins``
+in the X-Plane installation. The complete path should look like:
 
-``.../X-Plane 11/Resources/plugins/Little Xpconnect``
+``.../X-Plane/Resources/plugins/Little Xpconnect``
 
 The installation was successful if you can see the menu ``Little Xpconnect`` in the X-Plane plugins menu.
 
@@ -72,7 +72,7 @@ The X-Plane plugin comes in two separate folders for different architectures.
 
 #. ``Little Xpconnect arm64``: This is for Apple computers having an Apple Silicon or an Intel CPU.
    It supports only newer macOS releases from Mojave 10.14 and later.
-#. ``Little Xpconnect x86``: This is for Apple computers having an Intel CPU. This supports older
+#. ``Little Xpconnect x86``: This is only for Apple computers having an Intel CPU. This supports older
    macOS releases from Sierra 10.12.
 
 Install ``Little Xpconnect arm64`` if in doubt.
@@ -122,7 +122,7 @@ The Plugin creates a log file which can be found in
 -  ``/tmp/abarthel-little_xpconnect.log`` for Linux and
 -  ``/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_xpconnect.log`` for macOS.
 
-Additionally a small settings file is created which can be found in
+Additionally a settings file is created which can be found in
 
 -  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_xpconnect.ini`` for Windows,
 -  ``$HOME/.config/ABarthel/little_xpconnect.ini`` for Linux and macOS.

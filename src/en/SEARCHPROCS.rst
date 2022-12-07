@@ -1,23 +1,20 @@
 |Search| Search Procedures
 ----------------------------------------
 
-The tab ``Procedures`` allows previewing and adding approach and
-departure procedures to the flight plan. Procedures of a selected
-airport are arranged in a tree which indicates the dependencies between
-approaches and transitions.
+The tab ``Procedures`` allows previewing and adding approach, arrival (STAR) and
+departure procedures (SID) to the flight plan. Procedures of a selected
+airport are arranged in a tree which indicates the dependency between
+procedure and transition.
 
-The dialog uses a tree element. Click on the small right pointing arrow (``►`` or ``+``
-depending on operating system and user interface style) to open a branch with procedure legs or transitions.
-See here :ref:`ui-tree` for more information about this type of input element.
+The dialog uses a tree element. See :ref:`ui-tree` for more information about this type of input element.
 
 See :doc:`APPROACHES` for general information about SID,
 STAR, approaches and transitions.
 
 Procedure legs are shown when a procedure node is expanded in the tree.
-Procedures can be filtered by runway and type.
+Procedures can be filtered by runway, name and type.
 
-Right-click on a procedure to get more options in the context menu, like
-centering the map on the procedure or adding it to your flight plan.
+Right-click on a procedure or a procedure leg to show a context menu.
 
 Use the context menu item :ref:`delete-selected-legs` of the flight plan table or the map context menu
 item :ref:`delete-from-flight-plan` to remove procedures from a flight plan.
@@ -31,13 +28,16 @@ P3D due to a limitation in the BGL file format. Therefore procedure
 names are slightly modified. However, this does not apply to procedures
 from a Navigraph or X-Plane scenery database.
 
-Note that the shown runway numbers might differ compared to airport runways.
-This happens when an add-on airport and the navigation data have different runway numbers because the
-runways have been renumbered due to changes in magnetic declination (magnetic pole drift).
-*Little Navmap* resolves these mismatches internally and still allows to work with procedures.
-You might expect issues when loading flight plans containing such discrepancies into add-on aircraft or simulators.
-
 .. note::
+
+     Note that the shown runway numbers might differ compared to airport runways.
+     This happens when an add-on airport and the navigation data have different runway numbers which is a result of renumbered
+     runways due to changes in magnetic declination (magnetic pole drift).
+
+     *Little Navmap* resolves these mismatches internally and still allows to work with procedures.
+     You might expect issues when loading flight plans containing such discrepancies into add-on aircraft or simulators.
+
+.. important::
 
     It is up to the user to combine the correct procedures with the flight plan.
 
@@ -102,7 +102,7 @@ depending on the error since inconsistencies can result in crashes.
       ``B 10,000`` or ``B 220``.
    -  **Range:** Fly at or above altitude one and at or below altitude
       two. Example: ``A 8,000, B 10,000``.
-   -  **Altitude, optional speed limit and optinal path angle:** List of values. Example:
+   -  **Altitude, optional speed limit and optional path angle:** List of values. Example:
       ``A 8,000, B 10,000, B220, -3.5°``.
 
 -  ``Dist./Time``: Distance of flying time for a leg. Holds can have a
@@ -120,7 +120,7 @@ Type Filter (All Procedures)
 
 The type filter is not available for an FSX or P3D stock database.
 
-This filter is always available for a X-Plane database which contains
+This filter is always available for X-Plane or MSFS databases which contain
 SIDs and STARs already in the stock data.
 
 The type filter allows the selections below:

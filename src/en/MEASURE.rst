@@ -5,7 +5,7 @@ Draw a measurment line after selecting :ref:`measure-gc-distance-from-here` in t
 or doing a ``Ctrl+Click`` in the map.
 Click a second time to finish the measurment and fix the line.
 
-See :ref:`user-features-legend` for more information.
+See :ref:`user-features-legend` in the map legend for more information.
 
 All measurement lines are saved and will be restored on next start up.
 Remove the lines by ``Ctrl+Click`` on the hotspot (small cross at the end) or by right clicking on
@@ -19,7 +19,6 @@ cancel the measurement line editing.
 
 Measurement lines use nautical miles, kilometers or statue miles as
 unit. Feet or meter will be added as unit if the lines are short enough.
-This allows to measure e.g. takeoff distance for crossing takeoffs.
 
 A great circle gives the shortest distance from point to point on earth
 but does not use a constant course. For that reason the measurement line
@@ -34,7 +33,7 @@ the navaid to calculate the magnetic course.
 See also :doc:`MAGVAR` for more information about magnetic declination.
 
 The display of measurment lines is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-measurment-lines` when adding one.
+:ref:`user-measurment-lines` after adding a line.
 
 *Little Navmap* shows a tooltip with information about the measurement line when hovering the mouse
 above the hotspot (cross at line end).

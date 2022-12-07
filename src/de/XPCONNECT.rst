@@ -5,7 +5,7 @@ Little Xpconnect
 X-Plane plugin which has to be installed as well.
 
 The *Little Xpconnect* plugin is included in the *Little Navmap* archive. You can always find the
-correct and matching version on your *Little Navmap* installtion directory.
+correct and matching version on your *Little Navmap* installation directory.
 
 The plugin is 64-bit only and is available for Windows, macOS (ARM and Intel) and Linux.
 

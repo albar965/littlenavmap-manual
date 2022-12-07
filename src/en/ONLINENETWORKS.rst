@@ -4,7 +4,7 @@ Online Networks
 The online network functionality allows to connect to
 `VATSIM <https://www.vatsim.net>`__, `IVAO <https://ivao.aero>`__,
 `PilotEdge <https://www.pilotedge.net/>`__ or other online networks
-which publish ``whazzup.txt`` files. This covers display of information
+which publish information using ``whazzup.txt`` or JSON files. This covers display of information
 for centers, clients and servers on the map.
 
 Network specific information like user names, active centers/towers,
@@ -44,11 +44,8 @@ into the simulator by the various online clients so they are visible
 in the sim.
 
 Therefore, the user aircraft and other client aircraft can appear
-duplicated on the map.
-
-*Little Navmap* removes these duplicates by matching the position, speed and other parameters against each other.
-
-The de-duplication can be disable in dialog ``Options`` on page :ref:`online-flying`.
+duplicated on the map. *Little Navmap* removes these duplicates by matching the position, speed and other parameters against each other.
+The de-duplication can be disabled in dialog ``Options`` on page :ref:`online-flying`.
 
 .. _online-networks-mapdisplay:
 
@@ -66,7 +63,7 @@ were recognized as online network clients.
 
 The user aircraft is always displayed using the yellow |Small GA| or a
 similar symbol depending on aircraft type and simulator. Use the
-``Show in Search`` map context menu item to see your own aircraft in the
+:ref:`show-in-search-map` map context menu item to see your own aircraft in the
 list of online clients.
 
 Information for online aircraft is shown on the tab ``Online Clients``
@@ -101,21 +98,20 @@ airspaces by selecting ``Online`` as airspace source (:ref:`airspace-source`)
        other position. See below how to assign airspace boundaries to
        a center.
 
-Detailed information for online centers/airspaces is shown on :doc:`INFO`.
+Detailed information for online centers/airspaces is shown in the :doc:`INFO` window.
 
 The following types are available and can be enabled in the drop down
 menus on the airspace toolbar or sub-menu
 :ref:`menu-airspaces`:
 
--  **Observer:** Circle size is taken from the ``Visual Range`` value of
-   the center.
--  **Flight Information (Center):** Uses ``Visual Range``.
--  **Delivery (Clearance):** Uses ``Visual Range``.
--  **Ground:** Shows a circle with a diameter of 10 NM.
--  **Tower:** 20 NM circle.
--  **Approach:** 40 NM circle.
--  **ACC (Center):** Uses ``Visual Range``.
--  **Departure:** Uses ``Visual Range``.
+-  ``Observer:`` Circle size is taken from the visual range value of the center.
+-  ``Flight Information (Center):`` Uses the visual range.
+-  ``Delivery (Clearance):`` Uses the visual range.
+-  ``Ground:`` Shows a circle with a diameter of 10 NM.
+-  ``Tower:`` 20 NM circle.
+-  ``Approach:`` 40 NM circle.
+-  ``ACC (Center):`` Uses the visual range.
+-  ``Departure:`` Uses the visual range.
 
 The size of the circle shapes and the lookup type can be changed in the options dialog.
 See :ref:`map-display-online`.

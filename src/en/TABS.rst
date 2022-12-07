@@ -41,6 +41,12 @@ Mouse actions
 -  Right click a tab to open the context menu.
 -  Use the mouse wheel above a tab bar to cycle between tabs.
 
+
+.. figure:: ../images/tabs.jpg
+      :scale: 50%
+
+      Drop down button menus and context menus on tab bars marked red. *Click image to enlarge.*
+
 Stacked Dock Window Tabs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -51,12 +57,6 @@ around.
 
 See :doc:`DOCKWINDOWS` for more information about stacked
 dock windows.
-
-.. figure:: ../images/tabs.jpg
-      :scale: 50%
-
-      Drop down button menus and context menus on tab bars marked red. *Click image to enlarge.*
-
 
 .. |Tab Button| image:: ../images/tabbutton.jpg
 

@@ -35,7 +35,7 @@ Thanks to Daniel "Wolf"
 (`wolfinformatica.com <http://wolfinformatica.com>`__) for the Spanish
 translation.
 
-A thank you! to Andrea Deplano PVI, Italian virtual pilots for the
+A thank you! to Flavio Borgna and Andrea Deplano PVI, Italian virtual pilots for the
 Italian translation.
 
 Thanks to Alfredo alias *fred*, Josemi alias *aquileo* and Emilio alias

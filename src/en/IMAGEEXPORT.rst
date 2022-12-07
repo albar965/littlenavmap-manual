@@ -32,6 +32,10 @@ Resolution`` is selected. A progress dialog running for maximal 60 seconds will 
 updating the map in background. You can decide to cancel the download and proceed to export the image without
 updating all tiles.
 
+.. figure:: ../images/image_export.jpg
+
+       Dialog shown after choosing ``Save Map as Image ...``.
+
 .. note::
 
      All options except ``Current Map View`` will change visible
@@ -44,8 +48,5 @@ updating all tiles.
     can notice this by missing airports on half of the image, for example.
 
 
-.. figure:: ../images/image_export.jpg
-
-       Dialog shown after choosing ``Save Map as Image ...``.
 
 

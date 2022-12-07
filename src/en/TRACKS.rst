@@ -77,7 +77,7 @@ missing tracks. Calculate the flight plan again to use the changed tracks.
 
 All other exported flight plan formats for simulators, aircraft and tools will not receive track
 information but only a list of waypoints extracted from the track. This should allow to load the
-plans into all without issues.
+flight plans into all add-ons without issues.
 
 .. |Tracks| image:: ../images/icon_airwaytrack.png
 .. |Show Tracks| image:: ../images/icon_airwaytrack.png

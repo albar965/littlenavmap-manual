@@ -4,7 +4,7 @@
 The flight planning Dock Window contains the four tabs: ``Flight Plan``, ``Flight Plan Remarks``,
 ``Fuel Report`` (:doc:`AIRCRAFTPERF`) and ``Current Performance`` (:doc:`AIRCRAFTPERFCOLL`).
 
-See chapter :doc:`ROUTECALC` for more information about calculation flight plans.
+See chapter :doc:`ROUTECALC` for more information about automatic calculation of flight plans.
 
 Flight Plans
 ~~~~~~~~~~~~~~
@@ -79,7 +79,7 @@ menu to customize the table columns, header and footer line content.
 
 The changes to the table can be undone by selecting :ref:`reset-view-0` in the context menu.
 
-The dialog uses a tree. See here :ref:`ui-tree` for more information about this type of input element.
+The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
 
 Same as main menu ``Tools`` -> :ref:`flight-plan-table-display-options`.
 
@@ -151,7 +151,7 @@ Hovering the mouse over the table header shows more information about the column
    departure if you travel long distances without navaids. Be aware that
    you have to change you course constantly when traveling along a great
    circle line. See also :doc:`MAGVAR` for more information.
--  ``Course °T``: The same as the two fields
+-  ``Course °T``: The same as the field
    above but using true course. Use this in areas with high magnetic
    declination.
 -  ``Distance``: Distance of the flight plan leg.
@@ -170,10 +170,9 @@ Hovering the mouse over the table header shows more information about the column
 -  ``Wind``: Magnetic wind direction and speed at the waypoint.
 -  ``Head- or Tailwind``: Wind at waypoint. Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
 -  ``Altitude``: Calculated altitude at waypoint. Uses aircraft performance to determine altitude.
--  ``Leg Safe Alt.``:
--  ``Latitude``:
--  ``Longitude``:
--  ``Related\nIdent/Freq./Dist./Bearing``:
+-  ``Leg Safe Alt.``: Leg safe altitude. Same as in :doc:`PROFILE`.
+-  ``Latitude`` and ``Longitude``: Coordinates in selected format from options on page :ref:`units`.
+-  ``Related Ident/Freq./Dist./Bearing``: Related navaid needed for procedures. Shows ident, frequency, distance and bearing as radial.
 -  ``Remarks``: Turn instructions, flyover or related navaid for procedure legs.
    Also shows user remarks that can be edited with :ref:`edit-name-of-user-waypoint`.
    See :doc:`MAPFPEDIT` for more information.
@@ -358,7 +357,6 @@ Legs of a missed approach procedure are activated automatically if the procedure
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Allows undo and redo of all flight plan changes. The last action is shown in the menu item like ``Add Waypoint``, for example.
-
 Also in main menu ``Flight Plan`` -> :ref:`undo-redo`.
 
 .. _move-selected-legs-up-down:
@@ -381,7 +379,7 @@ moved into or across procedures.
 |Delete Selected Legs or Procedure| Delete Selected Legs or Procedure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Delete all selected flight plan legs. Use ``Undo`` if you delete legs
+Delete all selected flight plan legs. Use ``Undo`` if you deleted legs
 accidentally.
 
 The whole procedure is deleted if the selected flight plan leg is a part
@@ -451,7 +449,6 @@ Opens the flight plan calculation dock window which allows to automatically gene
 by various criteria between the first and last selected flight plan leg.
 
 This menu item is disabled if the selected range contains legs which are alternates or part of a procedure.
-
 See chapter :doc:`ROUTECALC` for more information.
 
 .. _show-range-rings-1:
@@ -478,10 +475,8 @@ Otherwise, the same as :ref:`map-context-menu`.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`show-traffic-pattern-map`.
-
 This menu item is enabled if clicked on an airport. Shows a dialog that
 allows to customize and display an airport traffic pattern on the map.
-
 See :doc:`TRAFFICPATTERN`.
 
 .. _show-holding:
@@ -490,7 +485,6 @@ See :doc:`TRAFFICPATTERN`.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`add-holding-map`.
-
 See also :doc:`HOLD`.
 
 .. _show-msa-flightplan:
@@ -499,7 +493,6 @@ See also :doc:`HOLD`.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`add-msa-map`. Only enabled if the navaid or airport have MSA information.
-
 See also :doc:`MSA`.
 
 Follow Selection

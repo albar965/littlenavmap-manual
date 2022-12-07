@@ -13,7 +13,7 @@ screen. You can configure the size of the center part in options. See :ref:`airc
 
 A countdown timer starts (default is 10 seconds) if a user does interactions with the map like
 zooming or scrolling which allows to move the map away from the user aircraft.
-The timer is restared for each manual map movement, zooming or other interactions.
+The timer is restarted for each manual map movement, zooming or other interactions.
 
 Aircraft centering restarts once a user leaves the map window alone and the countdown is finished.
 

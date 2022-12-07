@@ -43,7 +43,7 @@ buttons have an equivalent in the result table context menu.
 
 Allows undo and redo of all userpoint changes. The last action is shown in the menu item like
 ``Undo deleting of tow Userpoints``, for example.
-The undo stack is kept when restarting *Little Navmap* and only deleted if a certain amount of
+The undo information is kept when restarting *Little Navmap* and only deleted if a certain amount of
 undo steps is exceeded.
 
 Also in main menu ``Userpoint`` -> :ref:`undo-userpoint`.
@@ -217,8 +217,9 @@ Some types are used as defaults when adding new userpoints. This depends
 on the context, i.e. what was below the cursor when right-clicking on
 the map.
 
-**Note that the userpoint types cannot be translated to other languages
-for now.**
+Note that the userpoint types cannot be translated to other languages for now.
+
+Below a list of the most important userpoint types.
 
 Airports
 ^^^^^^^^
@@ -238,9 +239,8 @@ Navaids
 -  |VORDME| **VORDME**: VHF omnidirectional range and DME.
 -  |VORTAC| **VORTAC**: VOR and TACAN.
 -  |VOR| **VOR**: VHF omnidirectional range.
+-  |Waypoint| **Waypoint**: Default when creating an userpoint on top of a navaid.
 -  |VRP| **VRP**: Visual reporting point.
--  |Waypoint| **Waypoint**: Default when creating an userpoint on top of
-   a navaid.
 
 Points of Interest
 ^^^^^^^^^^^^^^^^^^
@@ -370,9 +370,7 @@ This allows to read and write the X-Plane ``user_fix.dat`` file for
 user defined waypoints. The file does not exist by default and has to be
 saved to ``XPLANE/Custom Data/user_fix.dat``.
 
-The format is described by *Laminar Research* in a PDF file which can be downloaded here:
--  X-Plane 11: `XP-FIX1101-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2019/01/XP-FIX1101-Spec.pdf>`__
--  X-Plane 12: `XP-FIX1200-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2021/09/XP-FIX1200-Spec.pdf>`__
+The format is described by *Laminar Research* in a PDF file which can be downloaded for X-Plane 11 `XP-FIX1101-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2019/01/XP-FIX1101-Spec.pdf>`__ and X-Plane 12 `XP-FIX1200-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2021/09/XP-FIX1200-Spec.pdf>`__.
 
 The file consists of a header and a number of rows for the user fixes.
 Each row has five columns which are separated by space or tab
@@ -418,11 +416,11 @@ Waypoints can be selected and used to build flight plans in the X-Plane stock GP
    99
 
 
-.. note::
+.. important::
 
      Keep in mind that waypoints are loaded from the Navigraph database if the
      default mode :ref:`navigraph-navaid-proc` is enabled in *Little Navmap*.
-     Therefore, user defined waypoints from the file ``user_fix.dat`` might not be
+     Therefore, user defined waypoints from the file ``user_fix.dat`` are not
      shown in *Little Navmap* after loading the scenery library from X-Plane.
 
 Import
@@ -567,7 +565,7 @@ functionality is not available for userpoints.
 You can also use the CSV export to create backups manually since CSV
 allows to export the full dataset.
 
-See :ref:`files-userdata` for information about database
+See Files - :ref:`files-userdata` for information about database
 backup files.
 
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png

@@ -1,12 +1,12 @@
 Installation
 ------------
 
-*Little Navmap* for Windows is a 64-bit or 32-bit application and was tested with
+*Little Navmap* for Windows is available as a 64-bit or 32-bit application and was tested with
 Windows 10 and Windows 11.
 
-macOS is supported up from macOS High Sierra 10.13 inclusive.
+macOS is supported up from macOS High Sierra 10.13 inclusive. You need Rosetta to run *Little Navmap* on Apple Silicon / M1 computers.
 
-Several Linux versions built on Ubuntu but should work on other distributions as well.
+Linux versions built on recent Ubuntu releases are available and should work on other distributions as well.
 
 The macOS and Linux versions are both 64-bit.
 
@@ -29,11 +29,11 @@ deleted since settings are stored in separate directories (except :doc:`MAPTHEME
 
 .. warning::
 
-    In any case do not merge the installation directories since old files can cause trouble.
+    In any case do not merge the installation directories since old files can cause problems.
 
 There is no need to delete the old settings directory. The program is
 written in a way that it can work with old setting files and adapts these if needed. In some cases
-settings are reset to default once an updated version is installed.
+settings are reset to default if an updated version is installed.
 
 See :doc:`FILES` for more information about settings, database and cache files.
 
@@ -42,8 +42,8 @@ Windows Builds
 
 There are two builds of Little Navmap and Little Navconnect for Windows available now:
 
--  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
--  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+-  **Windows 64-bit: For MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
+-  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
 
 Note that *Little Navmap* and all related programs are interoperable across the network (*Little Navmap* and *Little Navconnect*)
 as well as the X-Plane plugin (*Little Navmap*, *Little Navconnect* and *Little Xpconnect*).
@@ -75,19 +75,11 @@ extension ``.exe`` might be hidden in Windows Explorer depending on
 settings. In that case look for a file ``littlenavmap`` having a light
 blue globe icon |Little Navmap Icon|.
 
-You can install the `Visual C++ Runtime Installer (All-In-One)
-v56 <https://www.majorgeeks.com/files/details/visual_c_runtime_installer.html>`__
-package from MajorGeeks.Com but this is only needed if you get errors when starting
-*Little Navmap*.
-
 SimConnect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* comes with a SimConnect library version 10.0.61259.0 (FSX SP2 / no Acceleration) and
+*Little Navmap* comes with a SimConnect library and
 does not require a separate installation of SimConnect.
-
-The included SimConnect library is compatible with all FSX and P3D versions as well as Microsoft
-Flight Simulator 2020.
 
 .. _unblock-application:
 
@@ -105,7 +97,7 @@ Improve Start-up Time
 ^^^^^^^^^^^^^^^^^^^^^
 
 Anti-virus programs can significantly slow down the startup and execution
-of the program in Windows.
+of the program on Windows.
 
 Therefore, it is recommended to exclude the following directories from
 scanning:
@@ -157,11 +149,7 @@ Most file managers will start the program if double-clicked.
 A desktop file ``Little Navmap.desktop`` is included.
 You have to adjust the paths to use it. You must use absolute paths in the desktop file.
 
-If the program does not start run the command:
-
-``ldd littlenavmap``
-
-and send me the output. This shows which shared libraries might be missing.
+See the `Little Navmap - Frequently asked Questions <https://albar965.github.io/littlenavmap-faq.html>`__ for help if the program does not start.
 
 Additional Programs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +172,7 @@ X-Plane Plugin
 X-Plane plugin which has to be installed as well.
 
 The *Little Xpconnect* plugin is included in the *Little Navmap* archive. You can always find the
-correct and matching version on your *Little Navmap* installtion directory.
+correct and matching version in your *Little Navmap* installation directory.
 
 See :doc:`XPCONNECT` for installation and usage.
 
@@ -194,8 +182,8 @@ Portable Execution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Running *Little Navmap* in portable mode instructs the program to place all settings, databases and
-cached files into the installation directory (i.e. the directory containing the executable file). This
-way no folders or files are created on the computer running the program from a memory stick, for
+cached files into the installation directory (i.e. the directory containing the executable file).
+No folders or files are created on the computer running the program from a memory stick, for
 example.
 
 You can also use the portable mode to test new *Little Navmap* releases without affecting your

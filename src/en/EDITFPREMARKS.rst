@@ -6,8 +6,10 @@ part of a procedure.
 
 The information entered here is saved with the flight plan in the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
 
-Keep in mind that all information entered here is lost if the flight plan position is removed or a
-new flight plan is calculated (:doc:`ROUTECALC`).
+.. note::
+
+      Keep in mind that all information entered here is lost if the flight plan position is removed or a
+      new flight plan is calculated (:doc:`ROUTECALC`).
 
 Header
 ~~~~~~~

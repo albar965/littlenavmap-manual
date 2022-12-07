@@ -5,13 +5,13 @@
 the map.
 
 Right click at the center of an airport symbol in the map, flight plan table or airport
-search result table and select ``Add Airport Traffic Pattern``.
+search result table and select :ref:`show-traffic-pattern-map`.
 
 This will show a dialog where you can select a runway and customize the
 pattern.
 
 The display of traffic patterns is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-traffic-patterns` once using this function.
+:ref:`user-traffic-patterns` after using this function.
 
 *Little Navmap* shows a tooltip with information about the traffic
 pattern when hovering the mouse above the hotspot (white filled circle)
@@ -48,7 +48,7 @@ Create Traffic Pattern
 A click on ``OK`` or a double click into the list ``Runways`` closes the
 dialog and creates the traffic pattern.
 
-See :ref:`pattern-legend` for details about the
+See :ref:`pattern-legend` in the map legend for details about the
 displayed numbers in the pattern.
 
 .. figure:: ../images/pattern_dialog.jpg

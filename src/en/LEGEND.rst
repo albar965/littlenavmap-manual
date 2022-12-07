@@ -190,7 +190,7 @@ User Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 User features are all objects which can be added to the map by the user. This includes
-:ref:`holding-legend` and :ref:`pattern-legend`.
+:ref:`holding-legend`, :ref:`pattern-legend` and more.
 
 User features can be customized in ``Options`` on page :ref:`map-display-user`.
 
@@ -244,8 +244,7 @@ Display of user features can be enabled or disabled in menu ``View`` -> :ref:`us
 +---------------------------------+---------------------------------------------------------------+
 | |MSA Diagram|                   | MSA diagram to scale. Right click on a MSA                    |
 |                                 | symbol and select :ref:`add-msa-map` to show this.            |
-|                                 | This feature can be added from the map context menu           |
-|                                 | using :ref:`add-msa-map`.                                     |
+|                                 | See :doc:`MSA` for more information.                          |
 +---------------------------------+---------------------------------------------------------------+
 
 .. _compass-rose-legend:
@@ -346,7 +345,7 @@ Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 |                                          | piston/turboprop, helicopter or                                                          |
 |                                          | ship).                                                                                   |
 +------------------------------------------+------------------------------------------------------------------------------------------+
-| |Online on in Flight| |Online on         | Online network aircraft/client.                                                          |
+| |Online on in Flight| |Online on         | Dark red color indicates online network aircraft/client.                                 |
 | Ground|                                  | Labels vary and can be customized                                                        |
 |                                          | as above.                                                                                |
 |                                          |                                                                                          |
@@ -423,9 +422,9 @@ Display of airports can be enabled or disabled in menu ``View`` -> :ref:`airport
 |                                   | ident, ATIS frequency, elevation,    |
 |                                   | lighted runways (``L``) and          |
 |                                   | length of longest runway. The        |
-|                                   | text labels for an airport can be    |
+|                                   | text labels for airports can be      |
 |                                   | changed in the dialog ``Options``    |
-|                                   | on the tab :ref:`map-display`.       |
+|                                   | on the tab :ref:`map-display-labels`.|
 +-----------------------------------+--------------------------------------+
 | |Airport Overview|                | Airport runway overview shown        |
 |                                   | before the full airport diagram      |
@@ -553,7 +552,7 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 |                                   | Small magenta triangle at high                                |
 |                                   | zoom levels.                                                  |
 +-----------------------------------+---------------------------------------------------------------+
-| |User-defined Waypoint|           | User defined waypoint with name.                              |
+| |User-defined Waypoint|           | User defined flight plan waypoint with name.                  |
 +-----------------------------------+---------------------------------------------------------------+
 | |Waypoint Invalid|                | Invalid airport, waypoint, VOR or                             |
 |                                   | NDB that is part of the flight                                |

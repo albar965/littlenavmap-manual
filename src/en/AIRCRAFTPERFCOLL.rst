@@ -30,7 +30,7 @@ profile. You have to estimate the needed top of descent yourself.
 
 .. note::
 
-   Note that the aircraft performance does take aircraft load, cruise altitude and temperatures aloft into consideration.
+   Note that the aircraft performance does not take aircraft load, cruise altitude and temperatures aloft into consideration.
    You can use the block fuel as a starting point for complex aircraft, enter this into the FMS or MCDU and refine it there.
    You can also build more than one performance file to depict different load situations or cruise altitudes.
 

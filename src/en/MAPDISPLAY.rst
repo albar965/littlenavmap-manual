@@ -3,20 +3,18 @@ Map Display
 
 .. _layers-map:
 
-Layers
-~~~~~~
+Map Layers
+~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* uses two layers to display the map:
+*Little Navmap* uses two layers to display the map.
 
-#.  Background which is defined by offline or online maps like the `OpenStreetMap <https://www.openstreetmap.org>`__.
-    You can change the background by selecting another :ref:`theme-menu`.
-    The background maps cannot be modified or configured since they are fetched from third party online services.
-    *Little Navmap* downloads pre-rendered image tiles from these services to draw the background map.
-#.  The foreground layer which is drawn by *Little Navmap* and can be customized in the options dialog on the map pages.
-    It consists of airports, navaids, airways, airspaces, measurement lines, range rings, holds, traffic patterns
-    and all moving objects like AI and the user aircraft. This layer reflects airports as stored in
-    the scenery library of your simulator. This applies to stock and add-on airports.
+Background Map Layer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+This is defined by offline or online maps like the `OpenStreetMap <https://www.openstreetmap.org>`__.
+You can change the background by selecting another :ref:`theme-menu`.
+The background maps cannot be modified or configured since they are fetched from third party online services.
+*Little Navmap* downloads pre-rendered image tiles from these services to draw the background map.
 
 .. figure:: ../images/map_background.jpg
 
@@ -24,6 +22,16 @@ Layers
        you see in the simulator and are not taken from your scenery library including add-on airports. You can see the
        same `here on the OpenStreetMap <https://www.openstreetmap.org/#map=16/50.0357/8.5300>`__
        web page which delivers the background map tiles for *Little Navmap*.
+
+Foreground Map Layer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The foreground layer which is drawn by *Little Navmap* and can be customized in the options dialog on the map pages.
+It consists of airports, navaids, airways, airspaces, userpoints, measurement lines, range rings, holds, traffic patterns, MSA diagrams
+and all moving objects like AI and the user aircraft. This layer reflects airports as stored in
+the scenery library of your simulator. This applies to stock and add-on airports.
+
+Only this layer provides the objects which enable tooltips and the functionality of the context menus to build a flight plan.
 
 .. figure:: ../images/map_lnm.jpg
 
@@ -37,7 +45,7 @@ Layers
 Moving
 ~~~~~~
 
-See :ref:`mouse-clicks-legend` and :ref:`key-commands-legend` for information about how to move around the map using the mouse or keyboard.
+See :ref:`mouse-clicks-legend` and :ref:`key-commands-legend` in the map legend for information about how to move around the map using the mouse or keyboard.
 
 .. note::
 
@@ -49,7 +57,7 @@ See :ref:`mouse-clicks-legend` and :ref:`key-commands-legend` for information ab
 Mouse Clicks
 ~~~~~~~~~~~~
 
-A single click shows details about all map objects nearby the clicked
+A single click shows details about all map objects at the clicked
 position in the ``Information`` dock window. Windows and tabs are raised
 depending on clicked objects.
 
@@ -94,6 +102,8 @@ spot.
 
 Click spots and hotspots for tooltips are:
 
+- Center of all airport, airport parking and navaid symbols.
+- Navaids for the procedure preview (:ref:`procedure-preview`).
 - Center of range rings (small circle).
 - Center of MSA diagrams (small circle).
 - End of a measurement line (cross).
@@ -105,11 +115,11 @@ Click spots and hotspots for tooltips are:
 Mouse Clicks and Modifiers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use the keyboard and mouse click to get quick access to certain functions.
+You can use the keyboard and mouse clicks to get quick access to some functions.
 
-See :ref:`mouse-clicks-legend` for more information about this.
+See :ref:`mouse-clicks-legend` in the map legend for more information about this.
 
-Clicking again on a hotspot removes the marks, measurement lines or flight plan waypoints.
+Clicking again on a hotspot removes the mark, measurement line or flight plan waypoint, for example.
 
 .. _aircraft-map:
 
@@ -132,20 +142,23 @@ AI and multiplayer aircraft on ground are shown only on small zoom
 distances to avoid cluttered airports. This means that an AI aircraft
 can disappear from the map when landing on an airport.
 
-.. tip::
-
-    On the lowest zoom distance all aircraft are drawn to scale as are the
-    parking spots which means you can easily check if your aircraft fits on
-    an apron, parking spot or taxiway.
+Labels are shown depending on zoom level and distance to user aircraft as well.
+Zooming out drops the less important aircraft labels, for example. Flight number and registration are always shown.
 
 A yellow wind arrow and labels for the situation around the user
 aircraft can be displayed on the top center of the map. The displayed
 labels for aircraft can be configured in the dialog ``Options`` on
 :ref:`map-display-labels`. No labels are shown for ship traffic.
 
-Labels are dropped depending on zoom distance. Flight number and registration are always shown.
 
 See :ref:`vehicles-legend` for details about the aircraft type.
+
+.. tip::
+
+    On the lowest zoom distance all aircraft are drawn to scale as are the
+    parking spots which means you can easily check if your aircraft fits on
+    an apron, parking spot or taxiway.
+
 
 .. _tooltips-map:
 
@@ -161,15 +174,17 @@ closer. Disable ``Verbose tooltips`` in options on page :ref:`map` if you do not
 The sensitivity for the tooltip display can be adjusted in the
 ``Options`` dialog on :ref:`map-navigation`.
 
-You can select tooltip options on page :ref:`map`.
+You can select which tooltips to show in options on page :ref:`map`.
 
 .. figure:: ../images/tooltip.jpg
+       :scale: 50%
 
-    Tooltip with information for an airport and a VOR.
+       Tooltip with information for an airport and a VOR. *Click image to enlarge.*
 
 .. figure:: ../images/tooltipairspace.jpg
+       :scale: 50%
 
-    Tooltip with information about airspaces.
+       Tooltip with information about airspaces. *Click image to enlarge.*
 
 .. _highlights-map:
 
@@ -210,7 +225,7 @@ Labels can be changed on options page :ref:`map-display-labels`.
 .. tip::
 
     Hide all map features to get a clean view on flight plan related airports and navaids only.
-    This will hide all unneeded features but keeps all navaids and related navaids for procedures like ILS on the map.
+    This will hide all unneeded map objects but keeps all navaids and related navaids for procedures like ILS for the approach on the map.
 
 .. _airport-diagram-map:
 
@@ -232,8 +247,9 @@ Airport labels and diagram features can be changed on options page :ref:`map-dis
 Disable all airport features except runways if you'd like to rely on the airport diagrams of the OpenStreetMap background map, for example.
 
 .. figure:: ../images/airportdiagram1.jpg
+         :scale: 50%
 
-         High level view of the airport diagram of EDDH.
+         High level view of the airport diagram of EDDH. *Click image to enlarge.*
 
 .. figure:: ../images/airportdiagram2.jpg
       :scale: 50%
@@ -250,7 +266,7 @@ Disable all airport features except runways if you'd like to rely on the airport
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The map projection can also be changed in the main menu ``View`` -> :ref:`projection-menu` or with the toolbar button |Map|.
-Note that the drop down menu of the toolbar button can be torn off by clicking on the dashed line in the menu.
+Note that the drop down menu of the toolbar button can be torn off by clicking on the dashed line in the menu (:ref:`tear-off-menu`).
 
 Two projections can be selected in *Little Navmap*:
 
@@ -258,6 +274,8 @@ Mercator
    A flat projection that gives the most fluid movement and the sharpest
    map when using picture tile based online maps themes like
    *OpenStreetMap* or *OpenTopoMap*.
+
+   Note that this projection cannot be used near the poles. Use the spherical projection if you fly in Antarctica, for example.
 
 Spherical
    Shows earth as a globe which is the most natural projection. Movement
@@ -280,12 +298,12 @@ Spherical
 
 
 The map theme can be changed in main menu ``View`` -> :ref:`theme-menu` or with the toolbar button |Map| which can be torn off by
-clicking on the dashed line in the menu.
+clicking on the dashed line in the menu (:ref:`tear-off-menu`).
 
-Allows to change the map theme which defines the look and feel of the background map (:ref:`layers-map`).
+This allows to change the map theme which defines the look and feel of the background map (:ref:`layers-map`).
 
-See :ref:`map-display-keys` for more information on themes requiring a login.
-:doc:`MAPTHEMES` explains the creating of own themes.
+See :ref:`map-display-keys` for more information on themes requiring a login or an account.
+:doc:`MAPTHEMES` explains how to create your own themes.
 
 .. tip::
 
@@ -308,7 +326,6 @@ The following map themes are included per default:
 
 CARTO Dark Matter
     A dark map.
-
     Map tiles and style by `CARTO <https://carto.com/>`__. Data by
     `OpenStreetMap <https://www.openstreetmap.org>`__, under
     `ODbL <https://www.openstreetmap.org/copyright>`__.
@@ -316,22 +333,18 @@ CARTO Dark Matter
 CARTO Positron
     A very bright map called *Positron* which allows to concentrate on the
     aviation features on the map display.
-
     Map tiles and style by `CARTO <https://carto.com/>`__. Data by
     `OpenStreetMap <https://www.openstreetmap.org>`__, under
     `ODbL <https://www.openstreetmap.org/copyright>`__.
 
 OpenStreetMap
     This is an online raster (i.e. based on images) map without hill shading.
-
     The tiles for this map are provided by `OpenStreetMap <https://www.openstreetmap.org>`__.
-
     Data by `OpenStreetMap <https://www.openstreetmap.org>`__, under `ODbL <https://www.openstreetmap.org/copyright>`__.
 
 OpenTopoMap
     An online raster map that mimics a topographic map. Includes integrated hill
     shading and elevation contour lines at lower zoom distances.
-
     The tiles for this map are provided by `OpenTopoMap <https://www.opentopomap.org>`__.
 
     .. figure:: ../images/otm.jpg
@@ -341,7 +354,6 @@ OpenTopoMap
 Stamen Terrain
     A terrain map featuring integrated hill shading and natural vegetation colors. The
     hill shading is available worldwide.
-
     Map tiles by `Stamen Design <https://stamen.com>`__, under `CC BY
     3.0 <https://creativecommons.org/licenses/by/3.0>`__. Data by
     `OpenStreetMap <https://www.openstreetmap.org>`__, under
@@ -366,7 +378,7 @@ Atlas (Offline)
     is included in *Little Navmap* and has an option to display city and
     country names. Boundaries and water bodies are depicted coarse.
 
-Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Thunderforest Atlas and Thunderforest Landscape (registration required)
+Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Thunderforest Atlas and Thunderforest Landscape
     These maps require a registration at the respective sites to get access to the map tiles.
     You can enter the keys in ``Options`` on page :ref:`map-display-keys` which also contains direct links to the login pages.
 
@@ -450,7 +462,7 @@ the airport as an alternate to the current flight plan.
 More than one alternate can be added to the flight plan. Legs to the
 alternate airports originate all from the destination.
 
-Disabled if airport is already departure, destination or an alternate.
+This menu item is disabled if airport is selected as destination or already an alternate.
 
 The distance to the farthest alternate is considered in the fuel calculation.
 
@@ -463,7 +475,7 @@ Note that you have to activate an alternate leg manually if you would like to fl
 |Departure Runway| Set Departure Runway
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Selecting a departure runway also adds a departure flight plan leg depicting the extended runway center line.
+Selecting a departure runway also adds a departure flight plan leg depicting the extended runway center line. The length of the extended center line can be adjusted in the dialog window.
 See :doc:`CUSTOMPROCEDURE` for more information.
 
 The text of this menu item varies depending if the airport is already the departure in the flight
@@ -475,7 +487,7 @@ plan or not.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Selecting a destination runway add a final approach leg and which can be
-customized by changing altitude and length. This allows *Little
+customized by changing altitude at final, length and offset angle. This allows *Little
 Navmap* to give vertical guidance and to show ILS and/or VASI slopes at
 the destination.
 See :doc:`CUSTOMPROCEDURE` for more information.
@@ -515,14 +527,16 @@ position is near the flight plan end points.
 The text ``Position`` in the menu is replaced with an object name if an airport,
 navaid or userpoint is at the clicked position.
 
-An user defined flight plan position is added to the plan if no airport
+An user defined flight plan position (green square) is added to the plan if no airport
 or navaid is near the clicked point.
 
 An userpoint is converted to an user defined flight plan position if
 added to the plan.
 
-You cannot edit flight plan legs that are a part of a procedure or between procedures. Procedures
-will not be deleted or modified by this function.
+.. note::
+
+      You cannot edit flight plan legs that are a part of a procedure or between procedures. Procedures
+      will not be deleted or modified by this function.
 
 .. tip::
 
@@ -537,7 +551,7 @@ will not be deleted or modified by this function.
 
 Same as ``Add Position to Flight Plan`` but will always append the
 selected object or position after the destination or last waypoint of
-the flight plan.
+the flight plan. Otherwise the same as :ref:`add-position-to-flight-plan`.
 
 This will remove STAR and approach procedures from the current flight plan, if any.
 
@@ -550,10 +564,10 @@ Delete the selected airport, navaid or user flight plan position from
 the plan. This can be departure, destination, alternate airport, an
 intermediate waypoint or a procedure.
 
-Deleting a waypoint of a procedure removes the whole procedure. Deleting a waypoint of a transition
-removes the transiton and the related procedure.
+Deleting a waypoint of a procedure removes the procedure and its transition. Deleting a waypoint of a transition
+removes only the transiton but not the related procedure.
 
-This also applies to the guidance legs when selecting a departure or destination runway (:doc:`CUSTOMPROCEDURE`).
+This also applies to the runway extension legs when selecting a departure or destination runway (:doc:`CUSTOMPROCEDURE`).
 
 .. _edit-name-of-user-waypoint:
 
@@ -588,7 +602,7 @@ Opens a dialog which allows to set the parameters for one or more range rings.
 See :doc:`RANGERINGS` and :ref:`user-features-legend` for more information.
 
 The display of range rings is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-range-rings` once using this function.
+:ref:`user-range-rings` after using this function.
 
 .. _show-navaid-range:
 
@@ -600,7 +614,7 @@ navaid's range. A label shows ident and frequency and the ring color
 indicates the navaid type.
 
 The display of range rings is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-range-rings` once using this function.
+:ref:`user-range-rings` after using this function.
 
 See :doc:`RANGERINGS` and :ref:`user-features-legend` for more information.
 
@@ -614,10 +628,10 @@ Note that the accuracy of radio navaid range varies across different simulators.
 This menu item is enabled if clicked on an airport. Shows a dialog that
 allows to customize and display an airport traffic pattern on the map.
 
-See :doc:`TRAFFICPATTERN` and :ref:`pattern-legend`.
+See :doc:`TRAFFICPATTERN` and :ref:`pattern-legend` in the map legend.
 
 The display of traffic patterns is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-traffic-patterns` once using this function.
+:ref:`user-traffic-patterns` after using this function.
 
 .. _add-holding-map:
 
@@ -627,10 +641,10 @@ The display of traffic patterns is automatically enabled in menu ``View`` -> ``U
 Display a holding pattern at any position on the map. The hold
 may also be attached to navaids. Opens a dialog for customization if selected.
 
-See chapter :doc:`HOLD` and :ref:`holding-legend` for more information.
+See chapter :doc:`HOLD` and :ref:`holding-legend` in the map legend for more information.
 
 The display of user holdings is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-holdings` once using this function.
+:ref:`user-holdings` after using this function.
 
 .. _add-msa-map:
 
@@ -640,9 +654,9 @@ The display of user holdings is automatically enabled in menu ``View`` -> ``User
 Adds a to-scale MSA diagram when right clicking on the smaller MSA symbol at an airport, navaid or other feature.
 
 The display of user MSA diagrams is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-msa` once using this function.
+:ref:`user-msa` after using this function.
 
-See :doc:`MSA` and :ref:`navaids-legend` for more information.
+See :doc:`MSA` and :ref:`navaids-legend` in the map legend for more information.
 
 .. _remove-user-map:
 
@@ -674,15 +688,15 @@ Removes a map feature added by the user.
 
 Add an user defined point to the userpoints. A dialog shows up where more information can be entered. Some fields of the
 userpoint dialog are populated automatically depending on the clicked
-map object.
+map object and previously added userpoints.
 
 Coordinates are always filled-in. If the selected object is an airport
-or navaid, an userpoint of type ``Airport`` or ``Waypoint`` respectively
+or navaid, an userpoint of type ``Airport`` |Airport| or ``Waypoint`` |Waypoint| respectively
 is created and the fields Ident, Region, Name and Altitude are
-filled-in. The same applies to NDB, VOR and other navaids.
+filled-in. The same applies to NDB |NDB|, VOR |VOR| and other navaids.
 
 If the selected position is empty map space, an userpoint of type
-``Bookmark`` is created at this position. Altitude is only filled-in if GLOBE
+``Bookmark`` |Bookmark| is created at this position. Altitude is only filled-in if GLOBE
 offline elevation data is installed. See :ref:`cache-elevation`.
 
 See :ref:`userpoints-dialog-add` for more information.
@@ -834,3 +848,19 @@ Note that the symbol is only an indicator for the home view center position and 
 .. |Jump to Coordinates| image:: ../images/icon_zoomin.png
 .. |Insert Procedure| image:: ../images/icon_approachselect.png
 .. |Map| image:: ../images/icon_map.png
+
+
+.. |Airport| image:: ../images/icon_userpoint_Airport.png
+     :scale: 60%
+
+.. |NDB| image:: ../images/icon_userpoint_NDB.png
+     :scale: 60%
+
+.. |VOR| image:: ../images/icon_userpoint_VOR.png
+     :scale: 60%
+
+.. |Waypoint| image:: ../images/icon_userpoint_Waypoint.png
+     :scale: 60%
+
+.. |Bookmark| image:: ../images/icon_userpoint_Bookmark.png
+     :scale: 60%

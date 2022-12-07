@@ -2,20 +2,19 @@ Web Server
 ----------
 
 *Little Navmap* includes an internal web server showing the map,
-aircraft progress and airport information with optional automatic
+aircraft progress and airport information with an optional automatic
 refresh in a web browser. The page can be accessed from any computer,
 tablet or smartphone in the local network.
 
 Note that the functionality is limited. You cannot change map display
 settings or calculate a flight plan, for example.
 
-The web server is not running per default. You can start it in the
-:ref:`run-webserver` and then open
-its page by selecting :ref:`open-webserver`.
+The web server is not started per default. You can start it in the menu ``Tools`` ->
+:ref:`run-webserver` and then open its page by selecting :ref:`open-webserver`.
 
-Port and other settings can be changed in :ref:`web-server`.
+Port and other settings can be changed in options on page :ref:`web-server`.
 
-You need to adjust you router settings to access it from the internet
+You need to adjust your router settings to access the *Little Navmap* webserver from the internet
 outside your local network. Check out your router manual how to do this.
 In general you have to change the firewall settings to forward the port
 8965 from the router to the computer running *Little Navmap*.

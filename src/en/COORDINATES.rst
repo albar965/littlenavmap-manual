@@ -6,7 +6,7 @@ flight plan position dialogs and userpoint dialogs.
 
 The input field shows a message below which indicates if the coordinates
 were recognized and shows the translated coordinates in the preset
-format as chosen in dialog ``Options`` on page :ref:`units`. A red message
+format as selected in dialog ``Options`` on page :ref:`units`. A red message
 is shown in case of error.
 
 Check the displayed translated coordinates to verify that your input was
@@ -19,20 +19,12 @@ parsed correctly.
 General
 ~~~~~~~
 
-Latitude has to be first and longitude second.
-
-N/S and E/W designators are required except for the signed formats. Case does not matter.
-
-Degree, minute and second signs can be omitted if numbers are separated
-by spaces.
-
-A space is only required to separate latitude and longitude or
-degrees/minutes/seconds if no unit signs are used.
-
-Decimal separator can be period (English) or the locale dependent
-separator like e.g. comma (German).
-
-ARINC 424 Code Convention full degree waypoint formats like ``57N30``, ``5730E`` or ``57S30`` can be read.
+-  Latitude has to be first and longitude second.
+-  N/S and E/W designators are required except for the signed formats. Case does not matter.
+-  Degree, minute and second signs can be omitted if numbers are separated by spaces.
+-  A space is only required to separate latitude and longitude or degrees/minutes/seconds if no unit signs are used.
+-  Decimal separator can be period (English) or the locale dependent separator like e.g. comma (German).
+-  ARINC 424 Code Convention full degree waypoint formats like ``57N30``, ``5730E`` or ``57S30`` can be read.
 
 .. figure:: ../images/arinc_waypoint_coordinates.jpg
 
@@ -57,12 +49,15 @@ For the coordinate formats ``Latitude and Longitude with sign`` and
 -  Latitude: Negative is south and positive is north.
 -  Longitude: Negative is west and positive is east values.
 
-Choosing these display formats will also enable input of signed decimal
-values. The reading order for coordinates (``Latitude and Longitude`` versus ``Longitude and Latitude``)
-will also change depending on
-the chosen format if entering signed numbers.
+Selecting these display formats will also enable input of signed decimal
+values.
 
-The reading order will not change if the input field uses ``N``, ``S``, ``E`` and ``W`` designators.
+.. note::
+
+   The reading order for coordinates (``Latitude and Longitude`` versus ``Longitude and Latitude``)
+   will also change depending on the selected format if entering signed numbers.
+
+   The reading order will not change if the input field uses ``N``, ``S``, ``E`` and ``W`` designators.
 
 Other Formats
 ~~~~~~~~~~~~~

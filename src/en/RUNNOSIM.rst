@@ -4,13 +4,13 @@ Running without Flight Simulator Installation
 You can use *Little Navmap* on all computers no matter if
 SimConnect or a flight simulator are installed or not.
 
-Follow these steps if you' want'd like to install *Little Navmap* on a computer
-not containing any flight simulator installation for a networked setup,
+Follow these steps if want to install *Little Navmap* on a computer
+not containing a flight simulator installation. This is useful for a networked setup,
 for example. No functionality is affected except direct connect
-capability which are not needed in this case.
+capability which is not needed in this case.
 
-This scenario is typically used when connecting to the flight simulator
-to watch the progress of a flight remotely.
+This scenario is typically used when connecting to a flight simulator
+to watch the progress of a flight remotely from another computer across a local network.
 
 Flight plans can be created, loaded and saved on the client computer.
 You only have to make sure that these are transferred to the flight
@@ -33,20 +33,21 @@ These instructions apply to Windows, macOS and Linux computers equally.
 #. Start *Little Navmap* on the client/remote computer and select
    ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-db`.
 #. Exit *Little Navmap* on the client computer so you can copy the
-   datbase files.
+   database files.
 #. Copy the database files to your client computer using network shares,
-   USB sticks or whatever you like. Use the file manager windows opened
-   by the procedures above.
+   USB sticks or whatever you like. Use the file manager windows that were opened
+   by the steps above.
 #. Start *Little Navmap* on the client computer. The :ref:`scenery-library-menu`
    should contain an entry for each copied database. Airport
    icons should be visible on the map in either case. **There is no need
    to reload the scenery library database now since you just copied a
    fully populated ready-to-user database file.**
 
+X-Plane
+   Share flight plan and weather directories for X-Plane across computers and adjust the loading path in ``Options`` on page :ref:`cache` for remote setups.
 
-Share files and directories for X-Plane across computers and adjust loading path in ``Options`` on page :ref:`cache` for remote setups.
-*Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib`` files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
-applies updates immediately.
+   *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib`` files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
+   applies updates immediately.
 
 
 See :ref:`remote-connection` for information about

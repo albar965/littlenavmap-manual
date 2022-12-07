@@ -4,12 +4,15 @@ Statusbar
 The statusbar at the bottom of the main window shows various indications
 (from left to right):
 
--  **Messages, last action or quick help** explaining a menu item or toolbar button.
+Messages, last action or quick help
+   explaining a menu item or toolbar button.
    When inactive the field shows the number of messages, if any. Messages cover background tasks
    like weather updates or the simulator connection state.
    Messages are shown in the tooltip when clicking into the field or hovering the mouse above.
    A maximum of ten messages is shown.
--  **Connection status** for a local or remote connection. The tooltip
+
+Connection status
+   for a local or remote connection. The tooltip
    provides more detail about the status, like the host name for remote
    connections as well as the connection status for online networks.
 
@@ -18,7 +21,8 @@ The statusbar at the bottom of the main window shows various indications
    -  ``Connected``: A connection was established.
    -  ``Disconnected``: The simulator or *Little Navconnect* exited.
 
--  **Map content indicator** that shows airport types, airspaces, navaids or AI vehicles
+Map content indicator
+   that shows airport types, airspaces, navaids or AI vehicles
    currently visible on the map. The tooltip gives more details.
 
    -  A red warning message ``Too many objects`` is be shown if too
@@ -28,9 +32,12 @@ The statusbar at the bottom of the main window shows various indications
       selected database has no content and needs to be loaded. See :doc:`SCENERY` for more
       information how to load the scenery library for a simulator.
 
--  **Map detail level.** Range is -2 for least detail to +5 for most detail.
-   See :ref:`map-details`.
--  **Online map download progress indicator.** This shows the state of the
+Map detail level.
+   Range is -2 for least detail to +5 for most detail.
+   See :ref:`more-details`, :ref:`less-details` and :ref:`default-details` in menu ``View``.
+
+Online map download progress indicator.
+   This shows the state of the
    current map download. The text is prefixed with a red ``Offline.``
    indication if offline mode is enabled.
 
@@ -41,18 +48,22 @@ The statusbar at the bottom of the main window shows various indications
       after two weeks. Waiting for new data after requesting an update.
    -  ``Incomplete``: Download failed.
 
--  **Zoom distance** (viewpoint distance to earth surface) in NM
+Zoom distance
+   viewpoint distance to earth surface in NM
    or kilometers.
--  **Coordinates** at cursor position on map as latitude and longitude depending on
+
+Coordinates
+   at cursor position on map as latitude and longitude depending on
    selected unit in the dialog ``Options`` on page :ref:`units`.
 
    -  Ground elevation below the cursor after a short delay if the
       `GLOBE <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ offline
-      elevation data is selected.
+      elevation data is selected. See :ref:`cache-elevation`.
    -  Magnetic declination at the cursor position in degrees West or
       East. See also :doc:`MAGVAR` for more information.
 
--  **Current date of month and UTC time** ``hours:minutes:seconds``.
+Current date of month and UTC time
+   ``hours:minutes:seconds``.
    This is the real world time and not the simulator time. The tooltip
    gives more date and time information.
 

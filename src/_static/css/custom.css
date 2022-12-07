@@ -65,7 +65,7 @@ footer p {
 }
 
 p {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.8em;
 }
 
 p.caption {
@@ -168,6 +168,14 @@ font-weight: bold;
 color:     blue;
 }
 
+.rst-content dl dt {
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+
+.rst-content dl ol {
+  margin-bottom: 0.1em;
+}
 
 /*.caption {
 background:     #f4f4f4;

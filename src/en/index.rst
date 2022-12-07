@@ -69,7 +69,7 @@ Table of Contents
    INFO
 
    FLIGHTPLAN
-   FLIGHTPLANCENTER
+   AIRCRAFTCENTER
    MAPFPEDIT
    APPROACHES
    CUSTOMPROCEDURE
@@ -128,13 +128,5 @@ Table of Contents
 --------------------------
 
 This manual was created using `Sphinx <https://www.sphinx-doc.org/>`__ and the
-`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__.
-PDF and MOBI formats converted using `Calibre <https://calibre-ebook.com/>`__
-
-The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.
-
---------------------------
-
-Version |release|. Last updated on |today|.
-
-
+`Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/index.html>`__ on Kubuntu Linux.
+PDF and MOBI formats converted using `Calibre <https://calibre-ebook.com/>`__. The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.

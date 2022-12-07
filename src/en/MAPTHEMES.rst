@@ -5,6 +5,8 @@ To add an arbitrary online or offline map to *Little Navmap* simply add
 the map directory from a downloaded or self created map theme to the
 ``data\maps\earth`` directory.
 
+Note that you need to restart *Little Navmap* to see the new map themes in the menu.
+
 .. tip::
 
       Also check out the `Little Navmap Support Forum at
@@ -12,8 +14,7 @@ the map directory from a downloaded or self created map theme to the
       `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
       `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
 
-The full path to the DGML file (see links below for more details about
-DGML) describing the map must be
+The full path to the DGML file (see links below for more details about DGML) describing the map must be
 ``...\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml`` if
 you like to add the `OpenCycleMap <https://www.opencyclemap.org>`__ for
 example. The DGML file can refer to an online map service or included
@@ -29,7 +30,6 @@ properties defined in the map's DGML file.
 
 See the comments in the included file ``data\maps\earth\example\example.dgml`` or here online
 `example.dgml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/marble/data/maps/earth/example/example.dgml>`__ for more information.
-
 
 More maps and information about map configuration and DGML files can be
 found here on the Marble and KDE pages:

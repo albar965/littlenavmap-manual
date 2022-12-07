@@ -15,15 +15,23 @@ You can see the data source for each navaid or airport in the section ``Data Sou
 .. tip::
 
    You can update the navdatabase of *Little Navmap* with the Navigraph FMS Data Manager.
-
    See `Install Navigraph
    Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ on
    my home page for more information if the update fails.
 
 .. note::
 
-    It is recommended to keep all scenery libraries in sync. This means that your simulator, *Little
-    Navmap*, aircraft and tools should use the same AIRAC cycle. Having navdata synchronized
+     Note that runway numbers shown in the procedure search or context menus might differ compared to the airport runways.
+     This happens when an add-on airport and the navigation data have different runway numbers which is a result of renumbered
+     runways due to changes in magnetic declination (magnetic pole drift).
+
+     *Little Navmap* resolves these mismatches internally and still allows to work with procedures.
+     You might expect issues when loading flight plans containing such discrepancies into add-on aircraft or simulators.
+
+.. important::
+
+    It is recommended to keep all scenery libraries in sync. This means that your simulator, *Little Navmap*,
+    aircraft and tools should use the same AIRAC cycle. Having navdata synchronized
     helps to avoid issues when loading flight plans.
 
 .. warning::
@@ -83,11 +91,11 @@ this mode:
 -  Aprons
 -  Taxiways
 -  Parking positions
--  COM frequencies
+-  Airport COM frequencies
 
 The following features are taken from the Navigraph database:
 
--  Navaids (waypoints/intersections, VOR, NDB, marker) which affects:
+-  Navaids (waypoints/intersections, VOR, NDB, marker, ILS and more) which affects:
 
    -  ``Search`` dock window, tab ``Navaid``
    -  Flight plan calculation
@@ -95,7 +103,6 @@ The following features are taken from the Navigraph database:
    -  Procedures (approaches, SIDs and STARs). This affects: ``Search`` dock window, tab ``Procedures`` and loading and display of procedures from flight plans.
 
 -  Airways
--  Airspaces
 
 Limitations in this mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -147,8 +154,8 @@ read from the simulator scenery.
 .. note::
 
     This mode will read all navdata from the simulator scenery files.
-    Depending on simulator there are limitations which result in limited features.
+    Depending on simulator there are limitations.
 
-    This is missing one-way airways, no airway maximum altitude restrictions, some radio navaid
+    This means missing one-way airways, no airway maximum altitude restrictions, some radio navaid
     types missing and more for FSX, P3D and MSFS simulators. You might also experience errors in the airway system
     and broken procedures.

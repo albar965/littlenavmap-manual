@@ -19,7 +19,7 @@ needed. You can also drop docked windows on each other to create a
 tabbed view. The tabs will appear at the bottom of the dock stack in
 this case.
 
-Note that dock windows open automatically when selecting functions like
+Note that related dock windows open automatically when selecting functions like
 ``Show Information`` or clicking on the user aircraft, for example.
 
 You can save and load dock window layouts in the ``Window`` menu. See also :doc:`LAYOUT` for
@@ -80,9 +80,6 @@ Click images to enlarge.
 Dock Window Stacks
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
-
-   You must click on the title bar of a window to remove it from the stack, not on the tab bar.
 
 .. figure:: ../images/dock_drop_stack.jpg
       :scale: 50%
@@ -95,3 +92,6 @@ Dock Window Stacks
       A stack of two dock windows. The tab bar is marked
       red at the bottom of the stacked dock windows.
 
+.. note::
+
+   You must click on the title bar of a dock window to remove it from the stack, not on the tab bar.

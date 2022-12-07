@@ -76,8 +76,10 @@ The value will be assigned to the flight plan (:ref:`flight-plan-altitude`) afte
 
 Note that a change in the ``Flight Planning`` window will not be automatically transferred to this window.
 
-The calculation might fail if using too low or too high values here. Make sure that you use a
-sufficiently high altitude which matches the selected airway type (Jet or Victor).
+.. important::
+
+    The calculation might fail if using too low or too high values for the cruise altitude. Make sure that you use a
+    sufficiently high altitude which matches the selected airway type (Jet or Victor).
 
 .. _routecalc-adjust:
 
@@ -136,7 +138,7 @@ disabled if no tracks were downloaded.
 
 See :doc:`TRACKS` for more information.
 
-.. note::
+.. important::
 
         You have to use the correct cruise flight altitude in your flight plan.
         This has to match the track levels shown in the information window. Otherwise, tracks will not be used.
@@ -246,7 +248,7 @@ You might also have to change the slider ``Prefer`` to adjust for airway and dir
 if not satisfied with the result.
 
 In any case check your flight plan before using it.
-Remove any wrongly selected waypoints near departure and destination manually.
+Remove wrongly selected waypoints near departure and destination manually.
 
 .. _routecalc-close:
 

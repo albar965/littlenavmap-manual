@@ -8,9 +8,7 @@ information on landing.
 
 :ref:`logbook-create-entries` has to be checked to enable this functionality.
 
-Note that all times, fuel consumption and other values are measured
-between takeoff and landing since it is not reliably possible to detect
-the start and end of a flight.
+Note that fuel consumption and other values are measured between takeoff and landing, as it is not possible to reliably determine the beginning and end of a flight.
 
 You can speed up the flight or to warp to another position without breaking the logbook record.
 
@@ -105,13 +103,7 @@ shown if hovering the mouse over the blue direct connection or flight plan previ
 .. figure:: ../images/logbook_preview.jpg
 
      A selected logbook entry and the flight plan preview showing the waypoints and flying direction.
-
      The dashed line shows the flown track.
-
-.. tip::
-
-      Search for logbook entries with a max distance of zero if you like to remove invalid entries
-      from interrupted flights or pattern work.
 
 .. _logbook-footer:
 
@@ -145,7 +137,7 @@ buttons have an equivalent in the result table context menu.
 
 Allows undo and redo of all logbook changes. The last action is shown in the menu item like
 ``Undo Adding of one Logbook Entry``, for example.
-The undo stack is kept when restarting *Little Navmap* and only deleted if a certain amount of
+The undo information is kept when restarting *Little Navmap* and only deleted if a certain amount of
 undo steps is exceeded.
 
 Also in main menu ``Logbook`` -> :ref:`undo-logbook-entry`.
@@ -327,17 +319,17 @@ Tab Logbook Entry
 
 Additional notes about some fields on this page:
 
--  **Departure** and **Destination**: These are automatically resolved
+-  ``Departure`` and ``Destination``: These are automatically resolved
    to an airport. Coordinates (not shown and not editable) are assigned
    to the departure or destination airport if found. The dialog will
    show the airport name and elevation if the airport ident can be
    resolved. Otherwise an error message is shown.
--  **Date and Time in Simulator UTC**: Time set in the simulator on
+-  ``Date and Time in Simulator UTC``: Time set in the simulator on
    takeoff or touchdown. Always UTC.
--  **Real local Time**: Real world time on takeoff or touchdown. Stored
+-  ``Real local Time``: Real world time on takeoff or touchdown. Stored
    in your local time.
--  **Route Description**: :doc:`ROUTEDESCR` extracted from the flight plan.
--  **Flight plan file** and **Aircraft performance file**: Used flight
+-  ``Route Description``: :doc:`ROUTEDESCR` extracted from the flight plan.
+-  ``Flight plan file`` and ``Aircraft performance file``: Used flight
    plan and performance files. These are only references which will turn
    invalid if the files are moved or renamed. Update manually if needed.
 
@@ -359,8 +351,9 @@ Edit a single Logbook Entry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../images/logbook_edit.jpg
+         :scale: 50%
 
-         Editing a logbook entry.
+         Editing a logbook entry. *Click image to enlarge.*
 
 Edit multiple Logbook Entries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -377,8 +370,9 @@ In combination with the search function, this allows for bulk changes
 like fixing an invalid aircraft type for more than one entry.
 
 .. figure:: ../images/logbook_bulk_edit.jpg
+       :scale: 50%
 
-       Editing more than on logbook entry. Three fields are to be changed for the selected entries.
+       Editing more than one logbook entry. Three fields are to be changed for the selected entries. *Click image to enlarge.*
 
 .. _statistics:
 
@@ -402,8 +396,9 @@ Correct the simulator departure or arrival time manually if you find such cases.
 
 
 .. figure:: ../images/logbook_stats.jpg
+         :scale: 50%
 
-          Overview tab of logbook statistics dialog.
+         Overview tab of logbook statistics dialog. *Click image to enlarge.*
 
 .. _import-export:
 
@@ -458,38 +453,6 @@ search field to look for all imported entries.
       2 190917    ESNZ    ESNZ   0   0.1   0.0   0.0   0.0  C-STUB  727-100
       2 190920    LSZR    LSZR   0   0.2   0.0   0.0   0.0    SF34
 
-.. _convert-errors:
-
-.. _convert:
-
-Conversion
-~~~~~~~~~~
-
-Automatically converts all legacy log entries that were collected as
-userpoints having type ``Logbook``. The conversion copies them to the
-new logbook after showing an information dialog.
-
-The conversion works best if field ``Remarks`` in the userpoints was
-not modified and if no entries were inserted manually.
-
-The converted logbook entries are appended to the current logbook. The
-original userpoint of type ``Logbook`` are not deleted or modified.
-
-The converted logbook entries get a description containing
-``Converted from userdata`` which allows to search for the imported
-entries. Use a pattern like ``*Converted from userdata*`` in the
-description search field to search for all entries.
-
-Not all values can be recovered but the original description from the
-userpoint is stored in the description of the new logbook entry.
-
-A warning dialog is displayed after the conversion which shows any
-issues during conversion.
-
-.. figure:: ../images/logbook_conversion.jpg
-
-       Warnings shown after converting userpoints to logbook entries.
-
 .. _logbook-data-format:
 
 Database Backup Files
@@ -501,7 +464,7 @@ functionality is not available for logbook entries.
 You can also use the CSV export to create backups manually since CSV
 allows to export the full dataset.
 
-See :ref:`files-logbook` for information about database backup
+See Files - :ref:`files-logbook` for information about database backup
 files.
 
 .. _logbook-csv:

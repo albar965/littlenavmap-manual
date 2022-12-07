@@ -370,27 +370,34 @@ Flight Plan Table
 Search Result Tables and Search Input Fields
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------------+------------------+
-| Menu             | Shortcut         |
-+==================+==================+
-| Show Information | ``Ctrl+I``       |
-+------------------+------------------+
-| Show Procedures  | ``Ctrl+Shift+R`` |
-+------------------+------------------+
-| Create Approach  | ``Alt+Shift+R``  |
-+------------------+------------------+
-| Show on Map      | ``Ctrl+M``       |
-+------------------+------------------+
-| Reset Search     | ``Ctrl+R``       |
-+------------------+------------------+
-| Show All         | ``Ctrl+Shift+O`` |
-+------------------+------------------+
-| Copy             | ``Ctrl+C``       |
-+------------------+------------------+
-| Select all       | ``Ctrl+A``       |
-+------------------+------------------+
-| Clear Selection  | ``Ctrl+Shift+A`` |
-+------------------+------------------+
+Using keyboard shortcuts like ``Ctrl+I`` for ``Show Information`` or ``Ctrl+M`` for ``Show on map``
+are usable directly from the input fields and will apply to the topmost airport in the result table.
+
+The same applies to other tabs like navaid and logbook search as well.
+
++-------------------------------------+------------------+
+| Menu                                | Shortcut         |
++=====================================+==================+
+| Jump from any input field to table  | ``Down``         |
++-------------------------------------+------------------+
+| Show Information                    | ``Ctrl+I``       |
++-------------------------------------+------------------+
+| Show Procedures                     | ``Ctrl+Shift+R`` |
++-------------------------------------+------------------+
+| Create Approach                     | ``Alt+Shift+R``  |
++-------------------------------------+------------------+
+| Show on Map                         | ``Ctrl+M``       |
++-------------------------------------+------------------+
+| Reset Search                        | ``Ctrl+R``       |
++-------------------------------------+------------------+
+| Show All                            | ``Ctrl+Shift+O`` |
++-------------------------------------+------------------+
+| Copy                                | ``Ctrl+C``       |
++-------------------------------------+------------------+
+| Select all                          | ``Ctrl+A``       |
++-------------------------------------+------------------+
+| Clear Selection                     | ``Ctrl+Shift+A`` |
++-------------------------------------+------------------+
 
 .. _shortcuts-context-procedure:
 

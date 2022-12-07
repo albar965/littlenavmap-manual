@@ -7,11 +7,13 @@ to Flight Plan| :ref:`append-position-to-flight-plan`.
 
 The information entered here is saved with the flight plan.
 
-Keep in mind that all information entered here is lost if the flight plan position is removed or a
-new flight plan is calculated (:doc:`ROUTECALC`).
-
 Note that all fields are saved without limitations only when using the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
 Other flight plan export formats will only save the ident truncated or a coordinate.
+
+.. note::
+
+      Keep in mind that all information entered here is lost if the flight plan position is removed or a
+      new flight plan is calculated (:doc:`ROUTECALC`).
 
 .. note::
 

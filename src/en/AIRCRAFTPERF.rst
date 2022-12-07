@@ -119,8 +119,8 @@ the *Little Navmap* main window to load them.
 
 .. warning::
 
-   Do not save the files into the *Little Navmap* directory since
-   it might be deleted when doing an update. Neither save them in
+   Do not save the files into the *Little Navmap* installation directory since
+   they might be deleted when doing an update. Neither save them in
    ``C:\Program Files`` or one of its sub-directories. Save the files
    into your ``Documents`` directory or a sub-directory in there like
    ``Documents\Little Navmap\Performance``.
@@ -133,7 +133,7 @@ the *Little Navmap* main window to load them.
     available in the `download section of
     littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
 
-    Note that these files are created by users and might vary in quality and accuracy.
+    Note that these files are community work and might vary in quality and accuracy.
 
 .. _aircraft-performance-wind:
 
@@ -170,7 +170,7 @@ Buttons
 The buttons on top have the same functionality as the items in the main
 menu :ref:`aircraft-menu`.
 
--  |Wind| ``Wind Source``: Same as menu item :ref:`wind-source` in main menu ``Weather``.
+-  |Wind| ``Wind Source``: Same options as menu :ref:`wind-source` in main menu ``Weather``.
 -  |Edit Aircraft Performance| ``Edit Aircraft Performance``: Opens the
    edit dialog for the currently loaded profile. You can also use the
    menu item ``Aircraft`` -> :ref:`aircraft-menu-edit` to change

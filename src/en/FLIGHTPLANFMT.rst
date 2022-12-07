@@ -9,7 +9,7 @@ different limitations. All of the formats listed below can be exported and some 
 *Little Navmap* LNMPLN Format
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* uses its own XML based format since only this allows to save all features provided
+*Little Navmap* uses its own XML based text format since only this allows to save all features provided
 by the program in a safe manner as well as proper file validation. This also eliminates many of
 the confusing warning dialogs when saving other formats and potential data loss.
 
@@ -99,7 +99,8 @@ Format Name                                              Ext.     Open Exp. Airw
 :highlight-style:`FSX and Prepar3D`                      PLN      X    X    X    X       X               0       X            X           0
 :highlight-style:`FSX and Prepar3D annotated (obsolete)` PLN      X    X    X    X       X               0       X            X           X
 :highlight-style:`FS9 PLN`                               PLN      X    0    X    X       X               0       X            X           0
-:highlight-style:`X-Plane FMS 11 (also X-Plane 12)`      FMS      X    X    X    0       X               0       0            X           X
+:highlight-style:`X-Plane FMS 11`                        FMS      X    X    X    0       X               0       0            X           X
+:highlight-style:`X-Plane FMS 12`                        FMS      X    X    X    0       X               0       0            X           X
 :highlight-style:`X-Plane FMS 3`                         FMS      X    X    0    0       X               0       0            X           0
 :highlight-style:`FlightGear`                            FGFP     X    X    0    0       0               0       0            0           X [2]_
 :highlight-style:`FSC`                                   PLN      X    0    X    0       X               0       0            0           0
@@ -202,11 +203,11 @@ the FSX PLN format. *Little Navmap* can only read this format.
 
 .. _flight-plan-formats-fms11:
 
-|FMS 11| X-Plane FMS 11 also for X-Plane 12
+|FMS 11| X-Plane FMS 11 and X-Plane 12
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 X-Plane FMS format which can be loaded into the stock GPS, the G1000 and
-the FMS of `X-Plane 11.10 <https://www.x-plane.com>`__ or later.
+the FMS of X-Plane 11 and 12.
 
 You can export this format directly using :ref:`save-flight-plan-as-fms11`.
 
@@ -471,6 +472,19 @@ Flight plan format for the iFly 737NG for FSX or P3D. The file has to be
 saved to ``YOURSIMULATOR/iFly/737NG/navdata/FLTPLAN``.
 
 Procedures cannot be saved.
+
+.. _flight-plan-formats-inbuilds-msfs:
+
+MSFS IniBuilds Airbus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Flight plan locations differ by MSFS installation type:
+
+MS Store
+  ``C:\Users\YOURUSERNAME\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState\packages\microsoft-aircraft-a310-300\work\flightplans``
+
+Steam
+   ``C:\Users\YOURUSERNAME\AppData\Roaming\Microsoft Flight Simulator\Packages\microsoft-aircraft-a310-300\work\flightplans``
 
 .. _flight-plan-formats-prosim:
 

@@ -21,10 +21,10 @@ Alternatively you can click ``Copy web address to clipboard`` and open this late
 The information dialog will be skipped if you click ``Do not show this dialog again and open address in the browser instead``.
 You can reset this using :ref:`reset-messages` in menu ``Tools``.
 
-.. note::
-
-    You have to use the same or at least a close AIRAC cycle in SimBrief and *Little Navmap* to avoid issues when exchanging flight plans.
-
 .. figure:: ../images/simbrief_export.jpg
 
       SimBrief export dialog.
+
+.. note::
+
+    You have to use the same or at least a close AIRAC cycle in SimBrief and *Little Navmap* to avoid issues when exchanging flight plans.

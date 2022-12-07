@@ -12,8 +12,7 @@ Other chapters helpful for beginners:
 - :doc:`INTRO`
 - :doc:`TUTORIALS`
 
-See also :doc:`FLIGHTPLANCENTER` for general information about aircraft centering while flying since
-this function might look confusing for new users.
+See also :doc:`AIRCRAFTCENTER` for general information about centering the aircraft during flight, as this feature can be confusing to new users.
 
 .. tip::
 
@@ -22,9 +21,8 @@ this function might look confusing for new users.
 First Steps
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* shows a several dialogs on first start to give hints for better usage. You can dismiss these dialogs
-for future starts by pressing ``Do not show again`` but keep at least the message in mind. On the other hand you can
-make all the dismissed dialog windows reappear by selecting :ref:`reset-messages` in the menu ``Tools``.
+*Little Navmap* shows a several dialog windows on first start to give hints for better usage. You can dismiss these dialogs
+for future starts by pressing ``Do not show again`` but keep at least the message in mind. Make all the dismissed dialog windows reappear by selecting :ref:`reset-messages` in the menu ``Tools`` if you need them.
 
 Preparing
 ^^^^^^^^^^^^^^^^^^^^
@@ -98,8 +96,15 @@ performance files or download one here:
 How to run a Network Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can connect *Little Navmap* running on another (or remote, networked) computer to *Little
+Navconnect* running on the flying computer. This setup is helpful if you do not have a separate
+screen available on your flying computer but a spare old notebook or computer.
+
 The remote computer does not need a simulator installation and there is no need to share the
 scenery library of the simulator.
+
+The programs are interoperable which means that you can connect *Little Navmap* from a Linux or
+macOS computer to *Little Navconnect* on a Windows computer.
 
 See :doc:`NETWORK` on information how to set up a remote/networked connection.
 
@@ -108,8 +113,8 @@ See :doc:`NETWORK` on information how to set up a remote/networked connection.
 Recommended things to do after Installing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  The elevation data which is used by default is limited and has a lot
-   of problems. Therefore, I recommend to download and use the offline
+-  The elevation data which is used by default is limited and inaccuracies.
+   Therefore, I recommend to download and use the offline
    GLOBE elevation data. See :ref:`cache-elevation` for more information.
 -  Have a look at :doc:`TUTORIALS` if you use the program the first time.
 -  See `Install Navigraph
@@ -124,7 +129,7 @@ Useful Links
 
 `Little Navmap Downloads - Aircraft Performance and more <https://www.littlenavmap.org/downloads/>`__.
 
-`New Maps for Little Navmap at Avsim <https://www.avsim.com/forums/topic/548994-new-maps-for-lnm/>`__.
+`New Maps for Little Navmap at Avsim <https://www.avsim.com/forums/topic/627225-new-maps-for-lnm-updated/>`__.
 
 *Little Navmap* related projects and more at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
 

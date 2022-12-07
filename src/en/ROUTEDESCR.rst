@@ -14,7 +14,7 @@ The lower part provides a quick help.
 The menu button |Menu Button| provides a dropdown menu than can be used
 to customize the generated route string.
 
-*Little Navmap* will try to use as much of the route as possible
+*Little Navmap* tries to use as much of the route as possible
 even if parts of the flight plan like waypoints or airways cannot be
 found or names are ambiguous. You will see warnings in the center output field
 if that is the case.
@@ -44,7 +44,7 @@ given. Otherwise the cruise altitude is automatically determined by the
 flight plan type (IFR or VFR) and the minimum altitude of the used
 airway segments.
 
-The cruise speed is ignored when reading and produces a warning if found.
+The cruise speed is ignored when reading and produces a warning if found since it is taken from the aircraft performance.
 Generating a description from a present flight plan uses the cruise speed from the loaded aircraft
 performance file (:doc:`AIRCRAFTPERF`) and the cruise altitude as set in :ref:`flight-plan-altitude`.
 
@@ -58,7 +58,7 @@ Click ``Create Flight Plan`` before doing changes on the map or in the flight pl
 
           A route description that was read successfully with
           a few warnings about ignored elements. The waypoint ``INVALID`` could not be
-          found. Speed, altitude, SID and STAR were recognized.
+          found. Altitude, SID and STAR were recognized.
 
 Buttons
 ~~~~~~~
@@ -128,8 +128,7 @@ ICAO, FAA, IATA and local codes are shown and the internal ident is avoided for 
 Note that IATA codes are only read for departure and destination since they can be easily confused
 with navaids en-route.
 
-Note that X-Plane internal codes like ``XPA000B`` are still recognized despite being avoided for
-display.
+X-Plane internal codes like ``XPA000B`` are recognized despite being avoided for display.
 
 Format
 ~~~~~~
@@ -140,52 +139,15 @@ The route description has to follow the format rules below:
 
 All elements in square brackets are optional.
 
-``FROM`` and ``TO``: These are the required 3 or 4 letter idents for
-departure and destination airports. Departure time ``ETD`` or arrival time ``ETA`` is ignored.
-
-Examples: ``KEAT``, ``CYPU``, ``S16``.
-
-``ALTERNATES``: Alternate airports are optional and are added to the
-flight plan when reading depending on the option
-``Read trailing Airports as Alternates`` as described above.
-
-``SPEEDALT``: An optional entry that contains the cruise speed and
-altitude. See below for a details. Speed is ignored when reading since it is part of the
-aircraft performance profile.
-
-``ENROUTE``: This is a list of either ``WAYPOINT`` or an
-``AIRWAYWAYPOINT`` forming the actual flight plan. The first entry has
-to be an airport, waypoint, VOR or NDB.
-
-``WAYPOINT``: A waypoint, VOR, NDB, airport or user defined coordinates.
-See below for a details about coordinates. A waypoint can be prefixed
-with ``DCT`` to indicate a direct connection not using an airway.
-Waypoints can be suffixed with an optional ``/SPEEDALT`` value although
-this is ignored.
-
-Examples: ``TAU``, ``BOMBI``, ``AST``, ``CL``, ``EDDF``.
-
-``AIRWAYWAYPOINT``: Airway and end waypoint on the airway separated by a
-space.
-
-Examples: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``.
-
-``SIDTRANS``: Either the word ``SID`` or real SID, STAR and transition names where the optional transition is
-separated by a dot ``.`` or a space `` ``. The generic keyword ``SID`` creates a
-direct connection to the en-route part.
-
-Examples: ``RDHK2.HOLLE``, ``OHIO3 LFK``, ``RDHK2``, ``OHIO3``.
-
-
-``SIDTRANS``: Either the word ``SID`` or real SID and transition names where the optional transition is
-separated by a dot ``.`` or a space `` ``. The generic keyword ``SID`` creates a
-direct connection to the en-route part.
-
-Examples: ``RDHK2.HOLLE``, ``OHIO3 LFK``, ``RDHK2``, ``OHIO3``.
-
-``STARTRANS`` is either the word ``STAR`` or a read STAR and an optional transition which can be
-given as ``STAR.TRANS``, ``STAR TRANS``, ``TRANS.STAR`` or ``TRANS STAR``.
-The generic keyword ``STAR`` creates a direct connection from the en-route part to the airport.
+-  ``FROM`` and ``TO``: These are the required 3 or 4 letter idents for departure and destination airports. Departure time ``ETD`` or arrival time ``ETA`` is ignored.  Examples: ``KEAT``, ``CYPU``, ``S16``.
+-  ``ALTERNATES``: Alternate airports are optional and are added to the flight plan when reading depending on the option ``Read trailing Airports as Alternates`` as described above.
+-  ``SPEEDALT``: An optional entry that contains the cruise speed and altitude. See below for a details. Speed is ignored when reading since it is part of the aircraft performance profile.
+-  ``ENROUTE``: This is a list of either ``WAYPOINT`` or an ``AIRWAYWAYPOINT`` forming the actual flight plan. The first entry has to be an airport, waypoint, VOR or NDB.
+-  ``WAYPOINT``: A waypoint, VOR, NDB, airport or user defined coordinates. See below for a details about coordinates. A waypoint can be prefixed with ``DCT`` to indicate a direct connection not using an airway. Waypoints can be suffixed with an optional ``/SPEEDALT`` value although this is ignored. Examples: ``TAU``, ``BOMBI``, ``AST``, ``CL``, ``EDDF``.
+-  ``AIRWAYWAYPOINT``: Airway and end waypoint on the airway separated by a space.  Examples: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``.
+-  ``SIDTRANS``: Either the word ``SID`` or real SID, STAR and transition names where the optional transition is separated by a dot ``.`` or a space `` ``. The generic keyword ``SID`` creates a direct connection to the en-route part.  Examples: ``RDHK2.HOLLE``, ``OHIO3 LFK``, ``RDHK2``, ``OHIO3``.
+-  ``SIDTRANS``: Either the word ``SID`` or real SID and transition names where the optional transition is separated by a dot ``.`` or a space `` ``. The generic keyword ``SID`` creates a direct connection to the en-route part.  Examples: ``RDHK2.HOLLE``, ``OHIO3 LFK``, ``RDHK2``, ``OHIO3``.
+-  ``STARTRANS`` is either the word ``STAR`` or a read STAR and an optional transition which can be given as ``STAR.TRANS``, ``STAR TRANS``, ``TRANS.STAR`` or ``TRANS STAR``. The generic keyword ``STAR`` creates a direct connection from the en-route part to the airport.
 
 
 Features not supported
@@ -229,23 +191,16 @@ Cruising ground speed and cruising level not separated by a space.
 
 Speed is prefixed with:
 
-``K``: Kilometers per hour followed by a four digit value.
-
-``N``: Knots followed by a four digit value.
-
-``M``: Mach followed by a three digit value. The mach value is converted
-to knots ground speed assuming standard atmosphere conditions at the
-given flight altitude.
+-  ``K``: Kilometers per hour followed by a four digit value.
+-  ``N``: Knots followed by a four digit value.
+-  ``M``: Mach followed by a three digit value. The mach value is converted to knots ground speed assuming standard atmosphere conditions at the given flight altitude.
 
 Altitude is prefixed with:
 
-``F`` :Flight level in three digits.
-
-``S``: Metric flight level in three digits of tens of meters.
-
-``A``: Altitude in hundreds of feet in three digits.
-
-``M``: Altitude in tens of meter in four digits.
+-  ``F`` :Flight level in three digits.
+-  ``S``: Metric flight level in three digits of tens of meters.
+-  ``A``: Altitude in hundreds of feet in three digits.
+-  ``M``: Altitude in tens of meter in four digits.
 
 Examples:
 

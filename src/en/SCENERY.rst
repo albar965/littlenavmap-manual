@@ -30,31 +30,26 @@ scenery in :doc:`SCENERY` after erasing the databases.
 
 See :doc:`AIRSPACELOAD` for information about loading airspaces into the *Little Navmap* database.
 
-.. note::
+.. important::
 
     Selecting the right scenery library for the simulator while flying is crucial since the selection
     also affects other functions of *Little Navmap*. The selected scenery library
     defines which weather files are read, for example.
 
+    Some functions like access to weather source files depend on the selected scenery library database.
+    X-Plane 11 weather files are read if the X-Plane 11 scenery library is selected, for example.
+
 See :ref:`scenery-library-menu` for information on the scenery library menu and the following chapters for more details.
 
 .. note::
 
-       X-Plane cannot be always recognized automatically. You might have to set
-       the path in the dialog ``Load Scenery Library`` manually before you can load the
-       database.
-
-.. note::
-
-      Some functions like access to weather source files depend on the selected scenery library database.
-      X-Plane 11 weather files are read if enabled and the X-Plane 11 scenery library is selected, for example.
-
       *Little Navmap* does not keep you from using a X-Plane scenery
       database while being connected to FSX/Prepar3D/MSFS or vice versa, for example. You will
-      get unwanted effects like wrong weather information if using such a
-      setup.
+      get unwanted effects like wrong weather information if using such a setup.
 
       An orange warning message is shown in the connect dialog (:doc:`CONNECT`) if a mismatch is detected.
+
+.. note::
 
       Parking positions in flight plans might change when switching between scenery library databases.
       This can happen if airports have parking positions with different names or missing parking positions.
@@ -92,16 +87,15 @@ X-Plane
 *Little Navmap* will use navdata updates that are installed in the
 directory ``Custom Data``.
 
-Updates installed in the GPS directories are not used.
-
 User defined data from the files ``user_fix.dat`` and ``user_nav.dat``
-is read and merged into the simulator database if found.
+is read and merged into the simulator database if found. Note that you have to disable the Navigraph database to see the user navaids from the X-Plane files.
 
 Note that neither ARINC nor the FAACIFP files are supported.
+Updates installed in the GPS directories are not used.
 
 .. _load-scenery-library:
 
-Dialog Window Options
+Dialog Load Scenery Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dialog window ``Load Scenery Library`` has the following controls:
@@ -144,10 +138,16 @@ is detected automatically. You can change the path manually if needed.
 added. Select the base path manually if you like to read the scenery
 library of another X-Plane installation.
 
+.. important::
+
+   Always reset the paths if your simulator installation location has changed.
+
 Loading a scenery library can take from 2 to 10 minutes depending on
 your setup and amount of scenery add-ons. You can speed this up by
 excluding directories containing neither airport nor navigation data in
 the ``Options`` dialog on the page :ref:`scenery-library-database`.
+
+You can put the progress dialog window into the background and continue flight planning while loading.
 
 If you cancel the loading process or if the loading process fails, the
 previous scenery library database is restored immediately.
@@ -181,7 +181,7 @@ compatible changes where a reload is recommended but not required.
 .. warning::
 
     Close *Little Navmap* when updating, copying or replacing its databases
-    manually or using other programs. *Little Navmap* might crash or show
+    manually or using other programs to replace the databases. *Little Navmap* might crash or show
     wrong data otherwise.
 
 .. figure:: ../images/loadscenery.jpg
@@ -223,7 +223,7 @@ X-Plane are considered to be add-on airports. An exception is ``...\X-Plane 11\C
 
 **Microsoft Flight Simulator 2020**: All airports located in the ``Community``
 directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to be add-on airports.
-Exceptions are ``fs-base`` and ``fs-base-nav``.
+Exceptions are ``fs-base``, ``fs-base-genericairports`` and ``fs-base-nav``.
 
 Add-on airports are highlighted on the map with a yellow ring which can be disabled
 in the options dialog on page :ref:`map-display`.
@@ -316,14 +316,13 @@ FSX, Prepar3D and Microsoft Flight Simulator 2020
 
 The magnetic declination used to calculate the magnetic
 course is taken from the ``magdec.bgl`` file in the scenery database of
-FSX or Prepar3D.
-
-Updates for this file are available here: `FSX/P3D Navaids
-update <http://www.aero.sors.fr/navaids3.html>`__.
+FSX, Prepar3D or MSFS.
 
 *Little Navmap* falls back to the world magnetic model if the file
 ``magdec.bgl`` is not available for some reason.
 
+Updates for this file in FSX and P3D are available here: `FSX/P3D Navaids
+update <http://www.aero.sors.fr/navaids3.html>`__.
 
 X-Plane
 ^^^^^^^
@@ -333,7 +332,7 @@ except VORs) are calculated using the world magnetic model based on the
 real current year and month. This is calculated while loading the
 scenery library and saved in X-Plane scenery library database.
 
-VOR stations come with their own declination values which might differ
+VOR stations come with their own calibrated declination values which might differ
 from the calculated declination values in their environment as mentioned
 above.
 

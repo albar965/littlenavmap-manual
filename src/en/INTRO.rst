@@ -30,7 +30,7 @@ Toolbars can also be opened and closed in the main menu ``Window``.
 
 All toolbars have a right click context menu where different toolbars can be shown or hidden.
 
-A toolbar gets an overflow button ``>>`` on the right side if it is too long to show in the main window. Click this button to see the remaining buttons.
+A toolbar gets an overflow button ``>>`` on the right side if it is too long to show in the main window. Click ``>>`` to see the remaining buttons.
 
 .. figure:: ../images/toolbar_move.jpg
 
@@ -94,16 +94,12 @@ Tables
 
 The header of table views allows the following manipulation:
 
--  **Click on the top left corner of the column header:** Select all
-   result rows.
--  **Click on a column header:** Sort ascending or descending (only for
-   search result tables - not for flight plan table).
+-  **Click on the top left corner of the column header:**  Select all result rows.
+-  **Click on a column header:** Sort ascending or descending (only for search result tables - not for flight plan table).
 -  **Click and drag on the column header:** Change column order.
--  **Double-click on column border:** Automatically fit column size to
-   content.
+-  **Double-click on column border:** Automatically fit column size to content.
 -  **Click and drag on column border:** Change column width.
--  **Click into the empty space below all rows:** Deselect all entries
-   and remove highlights on the map.
+-  **Click into the empty space below all rows:** Deselect all entries and remove highlights on the map.
 
 The above applies to most table views in the program and partially also
 to the tree view of the procedure search.
@@ -154,6 +150,13 @@ can be found in the following places:
 The context menus provide functionality to get more information about an
 object at the clicked position or to build or edit a flight plan.
 
+.. _ui-menubuttons:
+
+Menu Buttons
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Menu buttons |Menu Button| provide dropdown menus on click. These are used in the :doc:`SEARCH` and :doc:`ROUTEDESCR` windows, for example.
+
 .. _help:
 
 Tooltip Help, Help Buttons and Help Menu
@@ -181,7 +184,7 @@ The main window title shows the following information:
 
 #. Application name
 #. Version
-#. Build type (for Windows only): ``64-bit`` (use this with MSFS) or ``32-bit`` (use this with FSX and P3D).
+#. Build type (for Windows only): ``64-bit`` (use this with MSFS and all X-Plane versions) or ``32-bit`` (use this with FSX and P3D).
 #. Selected simulator scenery library database (``FSX``, ``FSXSE``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS``, ``XP11`` or ``XP12``) and AIRAC cycle if available. In parentheses if not used.
 #. Selected navigation database (Navigraph: ``N``) and AIRAC cycle. In parentheses if not used.
 #. Loaded flight plan file name plus a ``*`` if changed. Only ``*`` is shown if plan was not saved yet. Flight plan will be auto-restored on next startup.
@@ -305,13 +308,14 @@ The language and locale settings can be forced to English in the dialog
 Map Legend
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The legend explains all the map icons and the
-:doc:`PROFILE` icons. It is available in :doc:`LEGEND`.
+The legend explains the :doc:`MAPDISPLAY` and the
+:doc:`PROFILE` symbols. It is available in :doc:`LEGEND`.
 
 Airport Rating
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Airports get a zero to five star rating depending on facilities.
+Airports get a zero to five star rating depending on facilities which is shown in airport search, map tooltips and the information window.
+
 Airports that have no rating will be displayed
 using a gray symbol below all other airports on the map
 (``Empty Airport``). This behavior can be switched off in the
@@ -332,9 +336,11 @@ All airports that are not located in the default ``Scenery`` directory
 of FSX/P3D or are located in the ``Custom Scenery`` directory of X-Plane
 are considered add-on airports which raises the rating by one star.
 
+
 Airports having the ``3D`` label in
 X-Plane are 3D airports which raises the rating by one star too.
 
+All additional airports in MSFS ``Community`` and ``Official`` directories are considered add-on.
 Star airports in Microsoft Flight Simulator 2020 will always get a five star rating.
 
 Add-on airports are highlighted on the map with a yellow ring which can be disabled
@@ -344,3 +350,4 @@ Using emphasized (bold and underlined) text highlights add-on airports in the se
 flight plan table, information windows and map tooltips.
 
 .. |Help| image:: ../images/icon_help.png
+.. |Menu Button| image:: ../images/icon_menubutton.png

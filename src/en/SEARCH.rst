@@ -96,7 +96,7 @@ find out why a search does not give the expected results.
 .. tip::
 
       If you do not get the expected results or no results at all use the
-      ``Reset Search`` menu item, button Reset Search or press ``Ctrl+R`` to
+      :ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
       clear all search criteria.
 
 .. _distance-search:
@@ -124,8 +124,9 @@ South and West).
 
 Check the drop down menu for the change indicator ``*`` and the search
 fields for any remaining text if the distance search does not give any
-or unexpected results. Use ``Reset Search`` in the context menu of the
-result table or press ``Ctrl+R`` to clear all search criteria.
+or unexpected results. Use the
+:ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
+clear all search criteria.
 
 .. figure:: ../images/complexsearch.jpg
     :scale: 50%
@@ -161,7 +162,7 @@ selecting procedures (:doc:`SEARCHPROCS`) and :doc:`PARKINGPOSITION`.
 .. figure:: ../images/randomflight.jpg
     :scale: 50%
 
-    Generating a random flight from a search result showing all airports in Germany, having 5.000
+    Generating a random flight from a search result showing all airports in Germany, having 5,000
     feet minimum runway length and are neither closed nor military. *Click image to enlarge.*
 
 .. _airport-search-ident:
@@ -231,7 +232,7 @@ Search Result Table View
 
 All selected elements in the table view will be highlighted on the map
 using a black/yellow circle. See
-:ref:`highlights-legend` for more information.
+:ref:`highlights-legend` in the map legend for more information.
 
 Use ``Shift+Click`` or ``Ctrl+Click`` to select two or more elements
 (multi-selection).
@@ -375,6 +376,8 @@ observe changes to the table view like column order and sort order. The
 CSV includes a header line. Columns which are hidden or shrinked to minimum width are excluded.
 
 Import the CSV-Text into spreadsheed programs using UTF-8 encoding and a semicolon as a separator.
+
+See :ref:`ui-tables` for more information how to rearrange or hide columns in tables.
 
 Select All
 ^^^^^^^^^^

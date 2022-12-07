@@ -77,7 +77,7 @@ found in more than one of these directories or sources.
 
 **Internal airspace types:**
 
-*Little Navmap* passes an airspace type through to the database if it is not one of the recognied types above.
+*Little Navmap* passes an airspace type through to its scenery library database if it is not one of the recognied types above.
 This means you can additionally use these types which are only recognized by *Little Navmap*:
 
 -  ``C``: Center

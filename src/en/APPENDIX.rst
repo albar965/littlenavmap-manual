@@ -3,13 +3,8 @@ Appendix
 
 .. _tips-for-old-and-slow:
 
-Tips for old and slow Computers
+Tips for slow Computers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _save-cycles:
-
-Save CPU Cycles
-~~~~~~~~~~~~~~~
 
 -  Dialog ``Options`` -> ``Map`` -> ``Details while scrolling ...``: Use
    ``Normal ...``
@@ -81,7 +76,9 @@ When an error occurs during loading of the scenery library send me the
 offending file if size permits. The full name and path of the file is
 shown on top of the error dialog if a specific is the cause.
 
-.. admonition:: If you're concerned about privacy when sending log files:
+.. note::
+
+   If you're concerned about privacy when sending log files:
 
    The log files contain system paths (like your ``Documents`` directory) which
    will also include your username as a part of the path. They might also
@@ -99,7 +96,7 @@ visible.
 
 .. admonition:: Please ...
 
-    ... compress all files using ZIP when sending by email.
+    **Compress all files using ZIP when sending by email.**
 
 .. |Show Airspaces| image:: ../images/icon_airspace.png
 

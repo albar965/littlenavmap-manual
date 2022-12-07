@@ -1,9 +1,13 @@
 Files
 -----
 
-Note that file locations can be overridden on the command line. See :doc:`COMMANDLINE` for more information.
+Note that file locations can be overridden using command line options. See :doc:`COMMANDLINE` for more information.
 
-File paths will also differ if using one of the portable scripts (:ref:`portable-execution`).
+File paths will differ if using one of the portable scripts (:ref:`portable-execution`).
+
+.. tip::
+
+   You can open all file locations from the main menu ``Tools`` -> :ref:`files-and-directories`.
 
 .. _files-log:
 
@@ -20,21 +24,18 @@ Log files of *Little Navmap* are stored in the directories:
 
    .. code-block:: bash
 
-      open -a TextEdit $(find /private/var/folders/ -name abarthel-little_navmap.log 2>/dev/null).
+      open -a TextEdit $(find /private/var/folders/ -name abarthel-little_navmap.log 2>/dev/null)
 
 
-The *Little Navmap* keeps up to three log files and rotates these if
-the file size of 10 MB is exceeded. So you may find up to three logs:
-
-``abarthel-little_navmap.log``, ``abarthel-little_navmap.log.1`` and
-``abarthel-little_navmap.log.2``.
+The *Little Navmap* keeps up to two log files and rotates these if
+the file size of 10 MB is exceeded. So you may find up to two log files ``abarthel-little_navmap.log`` and ``abarthel-little_navmap.log.1``.
 
 Send the log file ``abarthel-little_navmap.log`` if you like to report
-an error. All three are needed in some cases but sending the first is often sufficient.
+an error. All two are needed in some cases but sending the first is often sufficient.
 
 .. note::
 
-        Please compress the log file using ZIP when sending per email.
+        **Please compress log and other files before sending them by email.**
 
 .. _configuration:
 
@@ -53,10 +54,11 @@ All configuration files for my programs are stored in these directories:
 -  Linux: ``$HOME/.config/ABarthel``
 
 -  ``little_navmap.ini``: INI style configuration file. Text file. Can be opened with :ref:`files-and-directories-ini`.
--  ``little_navmap.history``: The map position history. Binary file.
+-  ``little_navmap.history``: The map position history. This is a binary file which cannot be opened in text editors.
 -  ``little_navmap.track``: The user aircraft trail. Binary file.
 -  ``little_navmap.logbooktrack``: Separate track for logbook. Binary file.
 -  ``little_navmap_profile.track``: User aircraft trail for the elevation profile. Binary file.
+-  ``little_navmap.lnmpln``: Temporary flight plan file in LNMPLN format. This is used to reload changed flight plans without manual save.
 
 Three more configuration files are created for customization of colors
 and styles:
@@ -88,7 +90,7 @@ images can be found here:
 -  macOS: ``/Users/YOURUSERNAME/.local/share/marble/maps/earth``
 -  Linux: ``$HOME/.local/share/marble/maps/earth``
 
-The cache directory contains one folder for each installed map theme.
+The cache directory ``earth`` contains one folder for each installed map theme.
 
 You can delete the cache manually to save space if *Little Navmap* is not running.
 
@@ -156,6 +158,14 @@ backup files: ``little_navmap_userdata_backup.sqlite`` to
 back to the original database ``little_navmap_userdata.sqlite`` if you
 did something wrong.
 
+.. tip::
+
+   Open this folder in your file manager using :ref:`files-and-directories-db` select the userpoint database and hit ``Ctrl+C`` (copy file) and ``Ctrl+V`` (paste file). This will add a copy of the database which will be named ``little_navmap_userdata (1).sqlite`` or similar.
+
+   This is the fastest way to create a backup.
+
+   You can apply the same to the :ref:`files-logbook` files.
+
 User Airspaces
 ^^^^^^^^^^^^^^
 
@@ -196,10 +206,10 @@ network data. These can be ignored.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 LNMPLN files are flight plan files using the format specific to *Little Navmap*. They are in XML
-text format and can only be interpreted by *Little Navmap*.
+text format and can only be interpreted by *Little Navmap*. You can use any text editor to modify or look at the files.
 
 See `XML (Wikipedia) <https://en.wikipedia.org/wiki/XML>`__ for more information
-about this type of configuration files.
+about this file type.
 
 The XML schema for validation can be found here: `lnmpln.xsd <https://www.littlenavmap.org/schema/lnmpln.xsd>`__.
 
@@ -269,7 +279,7 @@ Order of elements does not matter. Missing elements will be logged as warning ex
          <Approach>
            <Name>TATVI</Name>                   <!-- Optional approach name. Name of approach fix. ARINC is required if this is not given. -->
            <ARINC>I16-Z</ARINC>                 <!-- ARINC name of the approach. Type, runway and optional suffix. -->
-           <Runway>16</Runway>                  <!-- Optinal approach runway. Not given for circle-to-land approaches. -->
+           <Runway>16</Runway>                  <!-- Optional approach runway. Not given for circle-to-land approaches. -->
            <Type>ILS</Type>                     <!-- Optional approach type -->
            <Suffix>Z</Suffix>                   <!-- Optional approach suffix -->
            <Transition>HUMEK</Transition>       <!-- Transition name if used -->
@@ -443,108 +453,6 @@ Order of elements does not matter. Missing elements will be logged as warning ex
           </AircraftPerf>
         </LittleNavmap>
 
-Obsolete Formats
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-These formats are not used anymore by *Little Navmap* as of versions 2.6 although, they can still be loaded.
-
-Aircraft Performance File Format (obsolete INI format)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The LNMPERF files are simple text files and use the
-Windows-INI style that has groups in square brackets and
-``key=value`` lines. See
-`INI (Wikipedia) <https://en.wikipedia.org/wiki/INI_file>`__ for more information
-about this type of configuration files.
-
-Speed units are always knots and feet per minute. Fuel units are gallons
-or lbs depending on the value of ``FuelAsVolume``.
-``ContingencyFuelPercent`` is percent which will be added to trip fuel.
-
-``Description`` has to be enclosed in double quotes. ``\n`` are
-interpreted as line feeds.
-
-Note that comments starting with ``#`` or ``;`` will be replaced when
-saving the file in *Little Navmap*. You can add a dummy key like
-``Comment1=my remarks`` to circumvent this. Unknown keys are not
-replaced when saving.
-
-.. code-block:: ini
-     :caption: Aircraft Performance File Example:
-
-     [Options]
-     AircraftType=B732
-     Description="Engine type JT8D-15A\n\nClimb: 92% N1, 280/0.7\nCruise: 0.74\nDescent:
-     0.74,300\n\nhttps://example.com/dokuwiki/doku.php?id=boeing_737-200_reference"
-     FormatVersion=1.0.0
-     FuelAsVolume=false
-     JetFuel=true
-     Metadata=Created by Little Navmap Version 2.2.0.beta (revision 16944ce) on 2018 11 02T20:23:52
-     Name=Boeing 737-200
-     ProgramVersion=2.2.0.beta
-
-     [Perf]
-     ClimbFuelFlowLbsGalPerHour=10000
-     ClimbSpeedKtsTAS=350
-     ClimbVertSpeedFtPerMin=1500
-     ContingencyFuelPercent=0
-     CruiseFuelFlowLbsGalPerHour=4800
-     CruiseSpeedKtsTAS=430
-     DescentFuelFlowLbsGalPerHour=400
-     DescentSpeedKtsTAS=420
-     DescentVertSpeedFtPerMin=2500
-     ExtraFuelLbsGal=0
-     ReserveFuelLbsGal=6000
-     TaxiFuelLbsGal=500
-
-.. _annotated-pln:
-
-Annotated Flight Plan File Format (obsolete)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Little Navmap* uses the FSX/P3D
-`XML (Wikipedia) <https://en.wikipedia.org/wiki/XML>`__ flight plan format. The XML
-standard allows to add comments in a file which are ignored by the
-simulators and by most add-on programs.
-
-The added comment is an XML comment starting with ``<!-- LNMDATA`` and
-ending with ``-->``. Inside the comment is a simple key/value list
-separated by ``|`` symbols.
-
-*Little Navmap* stores metadata like version and date in the file which
-helps when reporting errors or for future extensions.
-
-The most important data is alternate airports and procedure information
-which allows the program to restore SIDs, STARs, approaches and
-transitions in an error tolerant way when loading flight plans.
-
-.. code-block:: xml
-   :caption: Flightplan Example snippet:
-
-   <?xml version="1.0" encoding="UTF-8"?>
-   <SimBase.Document Type="AceXML" version="1,0">
-       <Descr>AceXML Document</Descr>
-       <!-- LNMDATA
-            _lnm=Erstellt mit Little Navmap Version 2.2.1.beta (Revision 257538e) am 2018 11 05T20:20:11|
-            aircraftperffile=C:\Users\alex\Documents\Little Navmap\Boeing 737-200 JT8D-15A.lnmperf|
-            aircraftperfname=Boeing 737-200|
-            aircraftperftype=B732|
-            approach=LITSI|
-            approacharinc=D34|
-            approachdistance=11.9|
-            approachrw=34|
-            approachsize=9|
-            approachsuffix=|
-            approachtype=VORDME|
-            cycle=1811|
-            navdata=NAVIGRAPH
-   -->
-       <FlightPlan.FlightPlan>
-
-   ...
-
-       </FlightPlan.FlightPlan>
-   </SimBase.Document>
 
 .. |Export as Clean PLN| image:: ../images/icon_filesaveclean.png
 

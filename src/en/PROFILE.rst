@@ -7,13 +7,6 @@ plan waypoints. It is only available when a valid flight plan is loaded. The
 user aircraft will be shown if *Little Navmap* is connected to the
 simulator.
 
-.. note::
-
-     The elevation display covers only the flight plan and will not
-     change the depiction if you get off the flight plan with your simulator
-     aircraft. You need a valid flight plan (i.e. a departure and
-     destination airport) and a valid aircraft performance file
-     to see the elevation profile.
 
 The elevation profile does not cover missed approaches and legs to
 alternate airports. Create a new flight plan from the destination to the
@@ -22,6 +15,14 @@ alternate airport if you wish to use the elevation profile.
 Movement of the aircraft and the trail in the elevation profile is tied to the active
 flight plan leg and will not be correct if flying away from the active
 leg.
+
+.. note::
+
+     The elevation display covers only the flight plan and will not
+     change the depiction if you get off the flight plan with your simulator
+     aircraft. You need a valid flight plan (i.e. a departure and
+     destination airport) and a valid aircraft performance file
+     to see the elevation profile.
 
 .. _top-label:
 
@@ -79,7 +80,7 @@ following controls are available:
    elevation profile window using this splitter button. The part
    containing the sliders will be collapsed if you drag it to the far
    right. You can open the collapsed part again by dragging the splitter
-   to the left.
+   to the left. The look of the splitter might be different on another operating system.
 -  |Expand to Window| ``Expand to Window``: Resets the view back to 100
    percent showing the whole flight plan.
 -  |Settings| ``Display Options``: See :ref:`display-options-profile`.
@@ -129,7 +130,7 @@ keyboard.
 Choose ``Elevation Profile Display Options`` from the elevation profile context
 menu to customize labels and other display features.
 
-The dialog uses a tree. See here :ref:`ui-tree` for more information about this type of input element.
+The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
 
 Same as main menu ``Tools`` -> :ref:`elevation-profile-display-options`.
 
@@ -315,7 +316,7 @@ Not all of the flight plan options affect the elevation profile which is noted i
 Aircraft heading will turn if a backward movement relative to the active
 flight plan leg is detected.
 
-For more information see the :ref:`elevation-profile-legend`.
+For more information see the :ref:`elevation-profile-legend` in the map legend.
 
 The elevation profile uses actual altitude for display of restrictions,
 slope and cruise.
@@ -354,8 +355,8 @@ barometric pressure in the simulator altimeter.
 Top of Climb and Top of Descent Paths
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The elevation profile will also display the top of climb and top of
-descent which are calculated based on the current :doc:`AIRCRAFTPERF` profile and wind situation.
+The elevation profile also displays the top of climb and top of
+descent which are calculated based on the current :doc:`AIRCRAFTPERF` profile and :ref:`wind` situation.
 
 Note that the TOC and TOD calculation is influenced by altitude
 restrictions in procedures. *Little Navmap* will calculate a climb or
@@ -425,6 +426,7 @@ elevation data has several advantages:
 -  World wide coverage
 -  No known errors
 -  Display of altitude below the cursor in the status bar
+-  Correct altitude if using non-airport departure and destination points
 
 Resolution is a bit lower than the one for the online data, though.
 

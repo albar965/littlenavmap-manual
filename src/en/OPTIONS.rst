@@ -75,13 +75,18 @@ channels. See :doc:`UPDATE` for more information.
 Change the settings here if you wish to get notifications about beta
 releases.
 
-Note that using a beta or a release candidate release automatically changes the channel to betaand
-using a development or alpha release automatically changes the channel to development.
-
 .. note::
+
+    Note that using a beta or a release candidate release automatically changes the channel to beta and
+    using a development or alpha release automatically changes the channel to development.
 
     Always use the beta update channel if you use a beta or test version.
     Otherwise you might miss important updates.
+
+.. important::
+
+    Always update *Little Navmap* to the latest version which usually contains many improvements and bug fixes.
+    Old versions are not supported.
 
 .. _user-interface:
 .. _page2:
@@ -243,12 +248,10 @@ You have to restart the program after changing this option.
 
 See :doc:`LAYOUT` for more information about window layouts which might be affected by this option.
 
-.. note::
+.. important::
 
-      You might also need to reset the window layout in case the map window is missing after a restart.
-
-      Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout after the
-      restart if needed.
+      You need to reset the window layout in case the map window is missing after a restart.
+      Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout.
 
 
 .. _map-navigation:
@@ -295,7 +298,7 @@ You can change the font for the map display. The font will also be used in the e
 Change display options affecting map and partly elevation profile display.
 In the tooltips you will find information about whether the corresponding setting affects the altitude profile or not.
 
-Input fields as the same types as on page :ref:`map-display`.
+Input fields are the same types as on page :ref:`map-display`.
 
 .. _map-display-user:
 .. _page9:
@@ -305,7 +308,7 @@ Input fields as the same types as on page :ref:`map-display`.
 
 More display options for user features like range rings, measurment lines, highlights, userpoints and more.
 
-Input fields as the same types as on page :ref:`map-display`.
+Input fields are the same types as on page :ref:`map-display`.
 
 .. _map-display-labels:
 .. _page10:
@@ -319,7 +322,7 @@ AI/multiplayer aircraft and other map features.
 
 Furthermore airport details like aprons or taxiways can be enabled or disabled in the branch ``Airport Details``.
 
-The dialog uses a tree. See here :ref:`ui-tree` for more information about this type of input element.
+The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
 
 .. _map-display-keys:
 .. _page11:
@@ -334,7 +337,7 @@ The required keys shown are extracted from the installed map themes. See :doc:`M
 The following map themes requiring an account come with *Little Navmap*:
 
 -  `Mapbox <https://account.mapbox.com>`__ also allows user customized maps in Mapbox Studio. See the Mapbox page for help.
-    Click ``Add Mapbox User Map`` to add an user styled map to *Little Navmap*.
+   Click ``Add Mapbox User Map`` to add an user styled map to *Little Navmap*.
 -  `Thunderforest <https://www.thunderforest.com/>`__
 -  `Maptiler <https://www.maptiler.com/>`__
 
@@ -351,6 +354,9 @@ Map Web Service Configuration
 
 Click the images to enlarge.
 
+Mapbox
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 .. figure:: ../images/mapbox_token.jpg
     :scale: 50%
 
@@ -361,13 +367,19 @@ Click the images to enlarge.
     :scale: 50%
 
     Location of the Mapbox Studio URL on the `Mapbox Studio page <https://studio.mapbox.com/>`__
-    Insert this URL into the ``Add Mapbox User Map`` dialog window to add an user styled map to *Little Navmap*..
+    Insert this URL into the ``Add Mapbox User Map`` dialog window to add an user styled map to *Little Navmap*.
+
+Thunderforest
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. figure:: ../images/thunderforest_key.jpg
     :scale: 50%
 
     `Thunderforest Console <https://manage.thunderforest.com/dashboard>`__ with API key.
     Use this as ``Value`` for ``Thunderforest API Key``.
+
+Maptiler
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. figure:: ../images/maptiler_key.jpg
     :scale: 50%
@@ -392,7 +404,7 @@ the center.
 
 -  ``By airspace name vs. callsign``: Use the airspace name within a
    file to assign the geometry to a center by callsign.
--  ``By airspace &file name vs. callsign``: Use the airspace filename
+-  ``By airspace file name vs. callsign``: Use the airspace filename
    minus the ``.txt`` extension to assign the geometry to a center by
    callsign.
 
@@ -425,7 +437,7 @@ The idea is to reduce manual scrolling or zooming as much as possible while pilo
 Read the chapters below if you find the behavior confusing (i.e. map jumping
 unexpectedly). Otherwise leave the default values.
 
-See :doc:`FLIGHTPLANCENTER` for general information about aircraft centering while flying.
+See :doc:`AIRCRAFTCENTER` for general information about aircraft centering while flying.
 
 .. _simulator-aircraft-center-wp:
 
@@ -540,7 +552,7 @@ Highlight active flight plan legs
 Shows active flight plan legs in magenta color (default) on the map and in the flight plan table.
 
 
-Maximum number of aircraft &trail points:
+Maximum number of aircraft trail points:
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Limits the number or aircraft trail to avoid performance issues when showing a too large number of
@@ -663,7 +675,7 @@ Use ``Reset`` to set a value back to default if you change something accidentall
 
 .. note::
 
-     While this happens rarely, some services might be interrupted for hours or even a day or two.
+     While this happens rarely, some public services like NOAA might be interrupted for hours.
      *Little Navmap* will show error messages if this is the case.
 
      You might want to check you internet access but otherwise ignore these if
@@ -964,7 +976,7 @@ then from the list.
 
 .. tip::
 
-      Note that you can choose more than one entry in the file
+      Note that you can select more than one entry in the file
       dialog to add several entries at once.
 
 .. _scenery-library-database-exclude-add-on:
@@ -979,8 +991,9 @@ highlighted on the map as well as considered during search for add-ons.
 **X-Plane:** All airports in the ``Custom Scenery`` directory are
 considered add-on airports and will be highlighted accordingly.
 
-**Microsoft Flight Simulator 2020**: All airports located in the ``...\Community``
-directory and the ``...\Official\OneStore`` or ``...\Official\Steam`` are considered to be add-on airports.
+**Microsoft Flight Simulator 2020**: All airports located in the ``Community``
+directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to be add-on airports.
+Exceptions are ``fs-base``, ``fs-base-genericairports`` and ``fs-base-nav``.
 
 You can use this list to modify this behavior.
 

@@ -15,15 +15,17 @@ This will show a dialog where you can select a runway and customize the
 holding.
 
 The display of holdings is automatically enabled in menu ``View`` -> ``User Features`` ->
-:ref:`user-holdings` once using this function.
+:ref:`user-holdings` after using this function.
 
 *Little Navmap* shows a tooltip with information about the holding when
 hovering the mouse above the hotspot (white filled triangle) at the
 holding fix.
 
-Holdings can be removed by either selecting ``Map`` ->
-:ref:`remove-traffic-holdings`, ``File`` -> :ref:`reset-for-new-flight` or by right click on
-the hotspot (triangle) at the holding fix.
+Holdings can be removed by right click on
+the hotspot (triangle) at the holding fix and selecting ``Map`` ->
+:ref:`remove-user-map`, selecting
+:ref:`remove-traffic-holdings` in the menu ``View`` or
+or by using ``File`` -> :ref:`reset-for-new-flight`
 
 Create Holding
 ~~~~~~~~~~~~~~

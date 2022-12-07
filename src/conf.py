@@ -27,7 +27,7 @@ author = u'Alexander Barthel'
 # The short X.Y version
 version = u'2.8'
 # The full version, including alpha/beta/rc tags
-release = u'2.8.4.beta'
+release = u'2.8.5.rc1'
 
 html_last_updated_fmt = ''
 
@@ -39,7 +39,7 @@ html_context = {
   'banner_message_color': 'yellow',
   'banner_message_bgcolor': 'red',
 
-  'banner_message_en': True,
+  'banner_message_en': False,
   'banner_message_text_en': 'This user manual for the ' + project + ' ' + version + ' releases has already been updated for new features, but is still considered a draft until the stable version is released.',
 
   'banner_message_de': True,

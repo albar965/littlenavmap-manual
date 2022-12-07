@@ -13,12 +13,9 @@ This chapter explains how to connect with a remote computer across the network t
 How to Prepare a Network Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Install/extract the whole *Little Navmap* archive on the flying
-   **and** network computer.
-#. Copy *Little Xpconnect* to the X-Plane plugins directory if you use
-   X-Plane. See :ref:`xplane-plugin` for details.
-#. Use *Little Navmap* to generate the scenery database on the flying
-   computer. Main menu -> ``Scenery Library`` -> :ref:`load-scenery-library-menu`
+#. Install/extract the whole *Little Navmap* archive on the flying **and** the network computer.
+#. Install *Little Xpconnect* into the X-Plane plugins directory if you use X-Plane. See :doc:`XPCONNECT` for details.
+#. Use *Little Navmap* to generate the scenery database on the flying computer. Main menu -> ``Scenery Library`` -> :ref:`load-scenery-library-menu`
 #. Open the database directory on the flying computer using ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-db`.
 #. Copy the database files to the network computer. Always close *Little Navmap*
    before copying. See :ref:`files-databases` for information on what is stored in what database file.
@@ -35,13 +32,15 @@ How to Prepare a Network Setup
 Flying in a network setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Start the simulator
-#. Start *Little Navconnect* on the flying computer.
-#. Run *Little Navmap* on the network/remote computer.
-#. Connect *Little Navmap* on the network/remote computer to *Little
+Startup order does not matter.
+
+-  Start the simulator
+-  Start *Little Navconnect* on the flying computer.
+-  Run *Little Navmap* on the network/remote computer.
+-  Connect *Little Navmap* on the network/remote computer to *Little
    Navconnect* on the flying computer. Main menu -> ``Tools`` -> :ref:`flight-simulator-connection`.
 
 See the two chapters below for more details:
 
--  :doc:`RUNNOSIM` Detailed explanation how to copy scenery library databases to a remote computer without a simulator installation.
+-  :doc:`RUNNOSIM`: Detailed explanation how to copy scenery library databases to a remote computer without a simulator installation.
 -  :doc:`CONNECT` and chapter :ref:`remote-connection` explains how to connect from a remote computer in detail.
