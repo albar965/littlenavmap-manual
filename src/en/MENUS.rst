@@ -255,7 +255,7 @@ Export Flight Plan to SimBrief
 
 Opens a dialog that allows to export a flight plan to `SimBrief <https://www.simbrief.com/>`__. Disabled if no flight plan has been loaded or created.
 
-See :doc:`LOADSIMBRIEF` for more information.
+See :doc:`SENDSIMBRIEF` for more information.
 
 .. _export-flight-plan-as-skyvector:
 
@@ -2452,11 +2452,10 @@ Style
 Allows to switch the style of the graphical user interface on the fly. A
 restart is not needed.
 
-The user interface styles contain a ``Night`` mode that can be used for
+The user interface styles contain a mode ``Night`` which can be used for
 flights in a dark environment. You can also dim the map and elevation
 profile display for this style in the dialog ``Options`` on
-:ref:`map-display-user` (``Map Dimming in Night Style`` at the bottom of the
-dialog).
+:ref:`map-display-user` (``Map Dimming in Night Style`` at the bottom of the dialog).
 
 The colors for the styles ``Fusion`` and ``Night`` can be changed by
 editing configuration files. See :doc:`CUSTOMIZE` for more

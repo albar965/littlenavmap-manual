@@ -24,6 +24,12 @@ First Steps
 *Little Navmap* shows a several dialog windows on first start to give hints for better usage. You can dismiss these dialogs
 for future starts by pressing ``Do not show again`` but keep at least the message in mind. Make all the dismissed dialog windows reappear by selecting :ref:`reset-messages` in the menu ``Tools`` if you need them.
 
+.. tip::
+
+   If you'd like to use a **dark mode** when flying: Enable this in menu ``Window`` -> ``Styles`` -> ``Night``
+   The darkness of the map window can be adjusted in options on page ``Map Display User`` -> ``Map dimming in night style``.
+   See :ref:`window-styles`.
+
 Preparing
 ^^^^^^^^^^^^^^^^^^^^
 

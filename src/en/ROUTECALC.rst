@@ -159,44 +159,49 @@ Prefer
 
 This slider allows to adjust the preference of the calculation method between airways and direct waypoint connections.
 
-**Putting the slider on the leftmost position** instructs the route calculation to use only airways. The
-calculation might fail or give not optimal routes if the region between departure and destination has
-no airways or no appropriate airways for the given cruise altitude.
+Putting the slider on the leftmost position
+    instructs the route calculation to use only airways. The
+    calculation might fail or give not optimal routes if the region between departure and destination has
+    no airways or no appropriate airways for the given cruise altitude.
 
-This is the fastest calculation method which gives instant results.
+    This is the fastest calculation method which gives instant results.
 
-.. figure:: ../images/routecalcairways.jpg
+    .. figure:: ../images/routecalcairways.jpg
 
-    A flight plan calculated using airways only.
-    The flight plan is longer since the region above Austria is void of airways
-    due to European airway restructuring.
+        A flight plan calculated using airways only.
+        The flight plan is longer since the region above Austria is void of airways
+        due to European airway restructuring.
 
-**Putting the slider on the rightmost position** instructs the route calculation to use only direct
-waypoint connections. The calculation ensures that the selected waypoints are not too close
-together and have a distance of around 200 NM where possible.
-Cruise altitude is not relevant for calculation since no airways are
-used.
+Putting the slider on the rightmost position
+    instructs the route calculation to use only direct
+    waypoint connections. The calculation ensures that the selected waypoints are not too close
+    together and have a distance of around 200 NM where possible.
+    Cruise altitude is not relevant for calculation since no airways are
+    used.
 
-This calculation method is slower depending on the covered region. A progress dialog might pop
-up which allows to cancel the process.
+    This calculation method is slower depending on the covered region. A progress dialog might pop
+    up which allows to cancel the process.
 
-.. figure:: ../images/routecalcdirect.jpg
+    Note that waypoints are added to the flight plan using certain selection criteria.
+    Waypoints being part of a SID or STAR and terminal waypoints will be excluded, for example.
 
-    Same plan as above but calculated with the slider on the far right.
-    The plan is shorter and uses direct waypoint connections only.
+    .. figure:: ../images/routecalcdirect.jpg
 
-**Putting the slider on an intermediate position** uses more or fewer airways or direct waypoint connections
-depending on position.
-Move the slider step by step and calculate again if you're not satisfied with the result.
-Note that not every slider movement will result in a changed route.
+        Same plan as above but calculated with the slider on the far right.
+        The plan is shorter and uses direct waypoint connections only.
 
-This calculation method is slower depending on the covered region. A progress dialog might pop
-up which allows to cancel the process.
+Putting the slider on an intermediate position
+    uses more or fewer airways or direct waypoint connections depending on position.
+    Move the slider step by step and calculate again if you're not satisfied with the result.
+    Note that not every slider movement will result in a changed route.
 
-.. figure:: ../images/routecalcairwaysdirect.jpg
+    This calculation method is slower depending on the covered region. A progress dialog might pop
+    up which allows to cancel the process.
 
-    A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
-    skips the airway void above Austria with direct waypoint connections.
+    .. figure:: ../images/routecalcairwaysdirect.jpg
+
+        A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
+        skips the airway void above Austria with direct waypoint connections.
 
 Radio Navaids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

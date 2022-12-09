@@ -675,6 +675,9 @@ Procedures
 See chapter :doc:`APPROACHES` and :doc:`SEARCHPROCS` for more detailed information
 on all the legs.
 
+The ellipsis ``…`` indicates that additional information, such as altitude restrictions
+is available, which is not visible due to the zoom factor. Zoom in closer to see the details.
+
 +-----------------------------------+------------------------------------+
 | Symbol                            | Description                        |
 +===================================+====================================+
