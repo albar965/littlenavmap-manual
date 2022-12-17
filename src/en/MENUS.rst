@@ -1282,8 +1282,7 @@ This affects the map and elevation profile display but not the altitude calculat
 |Show Missed Approaches| Show Missed Approaches
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Show or hide the missed approaches of the current flight plan. This does
-not affect the preview in the search tab ``Procedures``.
+Show or hide the missed approaches of the current flight plan or the procedure preview (:ref:`procedure-preview`).
 
 .. note::
 

@@ -65,6 +65,8 @@ Preview and Highlights
 
 Tooltips give information about navaids in the preview.
 
+The preview of missed approaches can be changed by toggling :ref:`show-missed-approaches` in the menu ``View``.
+
 Procedures can be added to the flight plan by either using :ref:`insert-procedure-map` on the
 preview from the map context menu (right click on a navaid) or the :ref:`procedure-context-menu`.
 
@@ -260,6 +262,8 @@ This highlights all procedures and their transitions currently shown in the proc
 Note that the map display is updated automatically when changing filters.
 
 Tooltips give information about navaids in the preview.
+
+Note that missed approaches are not shown when previewing all procedures.
 
 Procedures can be added to the flight plan by either using :ref:`insert-procedure-map` on the
 preview from the map context menu (right click on a navaid) or the :ref:`procedure-context-menu`.

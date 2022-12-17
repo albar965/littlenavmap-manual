@@ -1,15 +1,20 @@
-|Checking for Updates| Checking for Updates
+|Checking for Updates| Updates
 -------------------------------------------
 
 *Little Navmap* will automatically check its `home
-page <https://albar965.github.io/>`__ for available updates on startup.
+page <https://albar965.github.io/>`__ for available updates on startup and in regular time intervals.
 Frequency and update channels are configurable. See below for
 configuration options.
 
-You can always check manually for updates by selecting ``Help`` ->
-:ref:`check-updates` in the main menu.
+You can always check manually for updates by selecting ``Help`` -> :ref:`check-updates` in the main menu.
 
-Note that the installation still has to be done manually.
+Note that the installation still has to be done manually. The update notifications are suppressed
+if a dialog window is open or if *Little Navmap* is connected to a simulator.
+
+.. important::
+
+    Always update *Little Navmap* to the latest version which usually contains many improvements and bug fixes.
+    Old versions are not supported.
 
 Notification Dialog
 ~~~~~~~~~~~~~~~~~~~~~
@@ -26,7 +31,6 @@ Buttons
 .. figure:: ../images/updatedialog.jpg
 
      Update notification dialog showing an available release candidate version ``rc1`` with the link to the announcement.
-
 
 Options
 ~~~~~~~
@@ -62,16 +66,19 @@ Update Channels
     nor well tested. Features might change over time and the manual is not
     updated for new functionality.
 
+.. important::
+
+    Note that using a beta or a release candidate release automatically changes the channel to beta and
+    using a development or alpha release automatically changes the channel to development.
+
+    Always use the beta update channel if you use a beta or test version.
+    Otherwise you might miss important updates.
+
 .. tip::
 
      Run beta or development version of *Little Navmap* in :ref:`portable-execution`
      mode to avoid overwriting your settings. This allows you to run the new version
-     with separate settings and databases.
-
-.. note::
-
-     Always use the beta update channel if you use a beta or test version.
-     Otherwise you might miss important updates.
+     with separate settings and databases without affecting your current settings.
 
 Check for Updates now
 ^^^^^^^^^^^^^^^^^^^^^

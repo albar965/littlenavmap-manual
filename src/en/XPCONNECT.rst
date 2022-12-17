@@ -9,6 +9,8 @@ latest, correct and matching version on your *Little Navmap* installation direct
 
 The plugin is 64-bit only and is available for Windows, macOS (ARM and Intel) and Linux and can be used in X-Plane 11 and X-Plane 12.
 
+See :ref:`xpconnect-installation` below for installation instructions.
+
 Menu
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -18,17 +20,25 @@ contains the following menu items:
 - ``Fetch AI``: Enable or disable the fetching of AI aircraft and
   ships (carrier and frigate). Disable AI fetching if you see
   stutters or performance degradation within X-Plane when using the plugin.
+- ``Load AI Aircraft Information``: Xpconnect tries to load additional information
+  from related ``.acf`` files. This is done in background and does not cause stutters
+  or hesitations. You can disable this function if you see problems. Only limited
+  information is available for AI and multiplayer if disabled.
 - ``Fetch Rate 50 ms`` to ``Fetch Rate 500 ms``: Xpconnect will get all aircraft
   parameters at this rate. Lower values result in smoother aircraft movement (see more below) but
   may induce stutters or decrease performance in X-Plane.
 
 The changes are applied immediately and are saved on exit.
 
+Note that the settings are shared between all plugin installations on the same computer.
+
 Note that the fetch rate affects only the rate of which *Little Xpconnect* gets the data from X-Plane.
 This can affect X-Plane performance, expecially when using large amounts of AI aircraft.
 
-The option ``Update Time Interval`` in :ref:`connect-options` in the *Little Navmap* connect dialog window defines the rate *Little Navmap* fetches the data from the plugin.
-This affects *Little Navmap* performance and fluidity of the aircraft updates together with the setting ``Simulator aircraft updates`` in ``Options`` page :ref:`simulator-aircraft`.
+The option ``Update Time Interval`` in :ref:`connect-options` in the *Little Navmap* connect dialog
+window defines the rate *Little Navmap* fetches the data from the plugin.
+This affects *Little Navmap* performance and fluidity of the aircraft updates together with the
+setting ``Simulator aircraft updates`` in ``Options`` page :ref:`simulator-aircraft`.
 
 It is recommended to keep both update rates equal and not lower than 100 ms.
 
@@ -45,6 +55,8 @@ If the latest *Little Xpconnect* plugin is installed:
    Check if there is another folder with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins folder on the top level.
 
    You can see the path of the (wrongly) loaded plugin in the X-Plane plugin manager or in the X-Plane ``Log.txt`` file.
+
+.. _xpconnect-installation:
 
 Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,16 +145,10 @@ The settings can also be changed using the configuration file ``little_xpconnect
      :caption: Little Xpconnect configuration file
 
      [Options]
-
-     FetchAiAircraft=true  # Also get AI aircraft. You can disable this if
-                           # you think the plugin causes performance problems.
-
-     FetchRateMs=200       # Data will be fetched from X-Plane every 200
-                           # milliseconds.
-                           # Lower this value to get a more fluid movement of the
-                           # aircraft symbol on the map. Increase this value if you
-                           # think the plugin causes performance problems.
-
-     FetchRate=200         # Old obsolete value. Will be deleted on start.
+     FetchAiAircraft=true     # Same as "Fetch AI" in plugin menu.
+     FetchAiAircraftInfo=true # Same as "Load AI Aircraft Information" in plugin menu.
+     FetchRateMs=200          # Data will be fetched from X-Plane every 200
+                                milliseconds. Same as "Fetch Rate" in plugin menu.
+     FetchRate=200            # Old obsolete value. Will be deleted on start.
 
 

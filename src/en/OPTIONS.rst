@@ -71,17 +71,7 @@ Update Check
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can also configure the frequency of the automatic update check and
-channels. See :doc:`UPDATE` for more information.
-Change the settings here if you wish to get notifications about beta
-releases.
-
-.. note::
-
-    Note that using a beta or a release candidate release automatically changes the channel to beta and
-    using a development or alpha release automatically changes the channel to development.
-
-    Always use the beta update channel if you use a beta or test version.
-    Otherwise you might miss important updates.
+channels. See chapter :doc:`UPDATE` for more information.
 
 .. important::
 
