@@ -824,17 +824,17 @@ The options are disabled if the respective features are not present the map.
 .. _more-details:
 
 |More Details| More Details
-'''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _default-details:
 
 |Default Details| Default Details
-'''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _less-details:
 
 |Less Details| Less Details
-'''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Increases or decreases the detail level for the map. More details means
 more airports, more navaids, more text information and bigger icons.

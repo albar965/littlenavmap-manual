@@ -14,6 +14,16 @@ Other chapters helpful for beginners:
 
 See also :doc:`AIRCRAFTCENTER` for general information about centering the aircraft during flight, as this feature can be confusing to new users.
 
+Context menus are an important elemend in *Little Navmap*.
+All context menus and items are explained in the following chapters:
+
+- :doc:`MENUS`
+- :ref:`context-menu-map`
+- :ref:`context-menu-flight-plan`
+- :ref:`context-menu-search`
+- :ref:`context-menu-procedures`
+
+
 .. tip::
 
      Explore the chapters on the left side of this page or use the search function on the top left.

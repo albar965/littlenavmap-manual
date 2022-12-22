@@ -8,7 +8,10 @@ Start *Little Navmap* with the help option ``littlenavmap.exe -h`` (Windows),
 information on the terminal or command line.
 
 Note that paths or files containing spaces or other special charaters have to be quoted.
-Example: ``littlenavmap.exe --flight-plan "IFR Ireland West Knock (EIKN) to Benbecula (EGPL).lnmpln"``.
+
+Examples:
+   ``littlenavmap.exe --flight-plan "IFR Ireland West Knock (EIKN) to Benbecula (EGPL).lnmpln"``.
+   ``littlenavmap.exe -d "KYKM WENAS7 PERTT 4741N12051W DIABO J503 FOLDY YDC PIGLU4 CYLW CYYF CZGF"``
 
 Options
 ~~~~~~~~~~~~~~~
