@@ -14,6 +14,14 @@ The window can be used to calculate the following:
 
 You have to build the route again by pressing the button :ref:`routecalc-calculate` after changing any parameters.
 
+.. important::
+
+      Although this happens rarely: Always check the flight plan for reversals or zig-zag guidance,
+      especially when using procedures.
+      Delete waypoints manually if you find such cases.
+
+
+
 .. figure:: ../images/routecalc.jpg
 
     Flight Plan calculation floating window. Flight plan is valid for calculation.
@@ -71,6 +79,7 @@ Cruise altitude for calculation
 
 Sets the cruise altitude which will be used to select airways based on their lower and
 upper altitude limits when calculating the route.
+Changing cruise altitude for calulation can result in shorter or better airway routes.
 
 The value will be assigned to the flight plan (:ref:`flight-plan-altitude`) after calculation.
 
@@ -102,6 +111,15 @@ This method uses airways and/or direct waypoint connections to build a route.
 Which connection type is selected depends on settings in :ref:`routecalc-prefer`.
 
 Criteria for airway selection are always direction for one-way airways and altitude restrictions.
+
+.. note::
+
+   Changing cruise altitude for calulation can result in shorter or better airway routes. Try to adjust this
+   if the result of the calculation is not satisfying.
+
+   You can also put the slider :ref:`routecalc-prefer` more to the right to ignore airways or use direct routing between
+   waypoints for regions void of suitable airways.
+
 
 All Airways
 ^^^^^^^^^^^^^^^^
@@ -172,24 +190,6 @@ Putting the slider on the leftmost position
         The flight plan is longer since the region above Austria is void of airways
         due to European airway restructuring.
 
-Putting the slider on the rightmost position
-    instructs the route calculation to use only direct
-    waypoint connections. The calculation ensures that the selected waypoints are not too close
-    together and have a distance of around 200 NM where possible.
-    Cruise altitude is not relevant for calculation since no airways are
-    used.
-
-    This calculation method is slower depending on the covered region. A progress dialog might pop
-    up which allows to cancel the process.
-
-    Note that waypoints are added to the flight plan using certain selection criteria.
-    Waypoints being part of a SID or STAR and terminal waypoints will be excluded, for example.
-
-    .. figure:: ../images/routecalcdirect.jpg
-
-        Same plan as above but calculated with the slider on the far right.
-        The plan is shorter and uses direct waypoint connections only.
-
 Putting the slider on an intermediate position
     uses more or fewer airways or direct waypoint connections depending on position.
     Move the slider step by step and calculate again if you're not satisfied with the result.
@@ -202,6 +202,24 @@ Putting the slider on an intermediate position
 
         A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
         skips the airway void above Austria with direct waypoint connections.
+
+Putting the slider on the rightmost position
+    instructs the route calculation to use only direct
+    waypoint connections. The calculation ensures that the selected waypoints are not too close
+    together and have a distance of around 200 NM where possible.
+    Cruise altitude is not relevant for calculation since no airways are used.
+
+    This calculation method is slower depending on the covered region. A progress dialog might pop
+    up which allows to cancel the process.
+
+    Note that waypoints are added to the flight plan using certain selection criteria.
+    Waypoints being part of a SID or STAR and terminal waypoints will be excluded, for example.
+
+    .. figure:: ../images/routecalcdirect.jpg
+
+        Same plan as above but calculated with the slider on the far right.
+        The plan is shorter and uses direct waypoint connections only.
+
 
 Radio Navaids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -102,11 +102,11 @@ You can also add a procedure from the map if using :ref:`procedures-highlights` 
 Right click on any waypoint of a procedure (not the leg line) and select ``Use airport and procedure as Departure``,
 ``Use airport and procedure as Destiation`` or ``Insert Procedure into Flight Plan``.
 
-.. note::
+.. important::
 
       *Little Navmap* removes waypoints from the flight plan which overlap with the procedure.
 
-      In any case check the routing for reversals or zig-zag guidance.
+      In any case check the flight plan for reversals or zig-zag guidance.
       Delete waypoints manually if you find such cases.
 
 

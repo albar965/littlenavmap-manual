@@ -102,6 +102,7 @@ Format Name                                              Ext.     Open Exp. Airw
 :highlight-style:`X-Plane FMS 11`                        FMS      X    X    X    0       X               0       0            X           X
 :highlight-style:`X-Plane FMS 12`                        FMS      X    X    X    0       X               0       0            X           X
 :highlight-style:`X-Plane FMS 3`                         FMS      X    X    0    0       X               0       0            X           0
+:highlight-style:`X-Plane CIVA`                          FMS      X    X    0    0       0               0       0            0           0
 :highlight-style:`FlightGear`                            FGFP     X    X    0    0       0               0       0            0           X [2]_
 :highlight-style:`FSC`                                   PLN      X    0    X    0       X               0       0            0           0
 :highlight-style:`Aerosoft Airbus and others`            FLP      X    X    X    0       0               0       0            0           X
@@ -239,6 +240,28 @@ only a list of waypoints.
 
 Store these files into the ``Output/FMS plans`` directory inside the
 X-Plane directory.
+
+.. _flight-plan-formats-fms-civa:
+
+X-Plane CIVA Navigation System
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a flight plan format which exports files for the X-Plane CIVA Navigation System.
+
+The flight plan is divided into files with a maximum of eight waypoints each.
+A flight plan with more waypoints will result in more files.
+
+.. code-block:: none
+         :caption: Example for flight plan files for a plan from EGAE to LGIO containing not more than 24 waypoints:
+
+         EGAELGIO.fms
+         EGAELGIO1.fms
+         EGAELGIO2.fms
+
+
+*Little Navmap* can read and export this format.
+
+Store these files into the ``Output/FMS plans`` directory inside the X-Plane directory.
 
 .. _flight-plan-formats-fgfp:
 

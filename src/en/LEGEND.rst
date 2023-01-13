@@ -508,13 +508,17 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 +-----------------------------------+---------------------------------------------------------------+
 | Symbol                            | Description                                                   |
 +===================================+===============================================================+
-| |VORDME Small| |VORDME Large|     | VOR DME including ident, type                                 |
-|                                   | (High, Low or Terminal) and                                   |
+| |VORDME Small| |VORDME Large|     | VOR DME including ident, type and                             |
 |                                   | frequency. Compass rose shows                                 |
 |                                   | magnetic declination on lower zoom                            |
 |                                   | distances.                                                    |
 |                                   | Small blue rectangle at high                                  |
 |                                   | zoom levels.                                                  |
+|                                   |                                                               |
+|                                   | The type defines the reception range:                         |
+|                                   | ``H`` is high, about 200 NM,                                  |
+|                                   | ``L`` is low, 40 NM to 60 NM and                              |
+|                                   | ``T`` is terminal, about 25 NM.                               |
 +-----------------------------------+---------------------------------------------------------------+
 | |VOR Small| |VOR Large|           | VOR including ident, type and                                 |
 |                                   | frequency.                                                    |
@@ -542,11 +546,14 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 |                                   | Small blue rectangle at high                                  |
 |                                   | zoom levels.                                                  |
 +-----------------------------------+---------------------------------------------------------------+
-| |NDB Small| |NDB Large|           | NDB including ident, type (HH, H,                             |
-|                                   | MH or CL - compass locator) and                               |
-|                                   | frequency.                                                    |
+| |NDB Small| |NDB Large|           | NDB including ident, type and frequency.                      |
 |                                   | Small dark red circle at high                                 |
 |                                   | zoom levels.                                                  |
+|                                   | The type defines the reception range:                         |
+|                                   | ``HH`` is very high, about 75 NM,                             |
+|                                   | ``H`` is high, about 50 NM,                                   |
+|                                   | ``MH`` is middle, about 25 NM and                             |
+|                                   | ``CL`` is compass locator, about 12 NM.                       |
 +-----------------------------------+---------------------------------------------------------------+
 | |Waypoint|                        | Waypoint with name.                                           |
 |                                   | Small magenta triangle at high                                |

@@ -17,6 +17,11 @@ which has important notes and describes the changes between versions.
 
     Do not install *Little Navmap* in the MSFS folder ``Community`` or in the X-Plane ``plugins`` folder.
 
+.. important::
+
+    **Apple macOS users:** Keep in mind that you have to clear the quarantine flag for *Little Xpconnect* on update. See
+    :ref:`clear-macos-quarantine`.
+
 .. _installation-updating:
 
 Updating
@@ -45,10 +50,12 @@ There are two builds of Little Navmap and Little Navconnect for Windows availabl
 -  **Windows 64-bit: For MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
 -  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
 
+You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
+
 Note that *Little Navmap* and all related programs are interoperable across the network (*Little Navmap* and *Little Navconnect*)
 as well as the X-Plane plugin (*Little Navmap*, *Little Navconnect* and *Little Xpconnect*).
 
-You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
+Also both versions share the same settings and databases. You can switch from one version to another without problems.
 
 Windows
 ~~~~~~~
