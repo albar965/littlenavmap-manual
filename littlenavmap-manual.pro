@@ -20,12 +20,11 @@ TEMPLATE = aux
 OTHER_FILES = \
   *.rst \
   *.txt \
-  sphinx_*.sh \
+  *.sh \
   src/conf.py \
   $$files(src/_static/*, true) \
   $$files(src/_templates/*, true) \
-  $$files(src/en/*.rst, false)
-
-#  $$files(src/de/*.rst, false)
+  $$files(src/en/*.rst, false) \
+  $$files(src/de/*.rst, false)
 
 

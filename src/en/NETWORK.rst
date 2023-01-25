@@ -29,6 +29,30 @@ How to Prepare a Network Setup
     version of *Little Navconnect* which is included in the *Little Navmap*
     download archive if unsure.
 
+Weather
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+FSX, P3D and MSFS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The weather information from P3D and FSX is transferred through the connection via *Little Navconnect*.
+MSFS does not provide weather information at all.
+
+X-Plane
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Weather information like winds aloft and airport METARs are read from files in the X-Plane installation folder.
+
+Do the following to get access to X-Plane weather files:
+
+#.  Share the weather folders on the flying computer.
+    This is either the X-Plane 11 base folder containing the files ``global_winds.grib`` and ``METAR.rwx`` or
+    the folder ``Output/real weather`` in the X-Plane 12 installation.
+#.  Open the *Little Navmap* options dialog and go to page :ref:`weather-files`.
+    Change the path to the network share containing the two X-Plane 11 files or the folder for the X-Plane 12 weather files.
+
+Weather should update automatically in *Little Navmap* once done.
+
 Flying in a network setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

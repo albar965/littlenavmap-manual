@@ -53,22 +53,21 @@ If something goes wrong send me all available information like flight plans, lin
 **Provide as much information as possible if you'd like to report a problem:**
 
 1. A screenshot of the full *Little Navmap* window including title or a flight plan depending on issue might be helpful at first.
-2. Used simulator including version.
-3. The version of *Little Navmap*.
-4. Information about used add-on airports if applicable.
-5. Operating system:
+2. The version of *Little Navmap*.
+3. Information about used add-on airports if applicable.
+4. Operating system:
 
    -  Windows: 10 or 11.
    -  macOS: Catalina or Big Sur
    -  Linux: which distribution and version
 
-6. Simulator:
+5. Simulator:
 
    -  X-Plane: 11.55 or 12 version
    -  FSX, FSX SE, P3D or MSFS including version
    -  Navdata updates if scenery is affected
 
-7. Add any flight plans or other files if involved in the error.
+6. Add flight plans or other files if involved in the error.
 
 **Please add all steps that are necessary to reproduce the error.**
 
