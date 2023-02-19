@@ -105,13 +105,19 @@ design:
 
 SVG color name is one of the colors defined in the list of
 `CSS Colors <https://www.w3schools.com/cssref/css_colors.asp>`__;
-for example, ``steelblue`` or
-``gainsboro``. Note that you cannot enter an alpha channel value if you
+for example, ``steelblue`` or ``gainsboro``. Note that you cannot enter an alpha channel value if you
 use a color name.
 
-You can use the `w3schools color
-picker <https://www.w3schools.com/colors/colors_picker.asp>`__ to get
+You can use the `w3schools color picker <https://www.w3schools.com/colors/colors_picker.asp>`__
+or the
+`fffuel Simple HEX, RGB & HSL color picker tool for web designers <https://fffuel.co/cccolor/>`__ to get
 the hex values for a color.
+
+.. important::
+
+    Most web color tools give you the color value in format ``#RRGGBBAA`` with the transparency at the end of the string.
+    Convert this to the required value by putting the last two characters ``AA`` to the front to get the needed ``#AARRGGBB``.
+
 
 **Examples:**
 

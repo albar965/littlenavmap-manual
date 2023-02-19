@@ -2377,6 +2377,15 @@ images.
 
 See also :ref:`disk-cache` for details.
 
+.. _files-and-directories-mapthemes:
+
+Show Map Installation Directory
+'''''''''''''''''''''''''''''''''''''''
+
+Opens the file manager with the installation directory for additional map themss.
+
+See also :ref:`installing-map-themes` for more information about additional map themes.
+
 .. _flight-plan-table-display-options:
 
 |Flight Plan Table Display Options| Flight Plan Table Display Options

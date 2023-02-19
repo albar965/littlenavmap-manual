@@ -20,14 +20,14 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Little Navmap'
-copyright = u'2019-2022, Alexander Barthel'
+copyright = u'2019-2023, Alexander Barthel'
 author = u'Alexander Barthel'
 
 # VERSION_NUMBER
 # The short X.Y version
 version = u'2.8'
 # The full version, including alpha/beta/rc tags
-release = u'2.8.8'
+release = u'2.8.9'
 
 html_last_updated_fmt = ''
 
