@@ -216,8 +216,8 @@ Store FMS files into the ``Output/FMS plans`` directory inside the
 X-Plane directory if you would like to use the flight plan in the
 X-Plane GPS, the G1000 or the FMS.
 
-The proposed file name can be defined in the :ref:`multiexport-options` for formats ``X-Plane 11``
-and ``X-Plane 12``. Note that the two entries use the same file format but a different folder.
+The proposed file name can be defined in the :ref:`multiexport-options` for formats ``X-Plane 11``.
+Note that the two export format entries for X-Plane 11 and 12 use the same file format but a different folder.
 
 .. _save-flight-plan-as-fgfp:
 
