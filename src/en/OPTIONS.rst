@@ -581,12 +581,12 @@ Pattern for default LNMPLN flight plan names
 
 Allows to customize the default file name which is proposed on first save of LNMPLN files (:ref:`save-flight-plan` and :ref:`save-flight-plan-as`).
 
-See :doc:`ROUTEEXPORTALL` for more information about how to customize the default file names for other exported plan formats.
+See :doc:`ROUTEEXPORTALL` for more information about how to customize the default file names for other flight plan formats which can be exported.
 
 Error messages and an example is shown below the input field.
 
-This applies to new filenames when saving LNMPLN, FSX, Prepar3D, FlightGear or MSFS flight plans.
-The file suffixe ``.lnmpln`` is appended automatically.
+This applies to new filenames when saving LNMPLN flight plans.
+The file suffix ``.lnmpln`` is added automatically.
 
 The default value is ``PLANTYPE DEPARTNAME (DEPARTIDENT) to DESTNAME (DESTIDENT)``.
 
