@@ -327,18 +327,7 @@ at the higher flight levels.
 You might see vertical aircraft movement of the aircraft symbol and jumps in the trail when adjusting
 barometric pressure in the simulator altimeter.
 
-.. note::
-
-    Note that the profile display depends on the correct sequencing of the
-    active flight plan leg (magenta line). The aircraft will be displayed in
-    the wrong position and the aircraft trail will be erratic if the active
-    leg is not correct or manually changed.
-
-    The aircraft trail will be displayed incorrectly in the elevation
-    profile if the flight plan is changed (i.e. the flight plan length or
-    geometry changes). You can delete the profile aircraft trail in
-    context menu :ref:`delete-aircraft-trail` while keeping the trail on
-    the map.
+.. include:: include/ALTCORRECTION.rst
 
 .. figure:: ../images/profile.jpg
 

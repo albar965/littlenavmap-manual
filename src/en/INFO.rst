@@ -361,6 +361,8 @@ Some rows like ``Ice`` are hidden if the condition is not met.
      destination in the early flight phases. This is normal since fuel flow
      is higher for takeoff and early climb.
 
+.. include:: include/ALTCORRECTION.rst
+
 .. figure:: ../images/infoacprogress.jpg
     :scale: 70%
 

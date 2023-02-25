@@ -31,11 +31,7 @@ See also :doc:`ROUTEEXPORTALL` for more information on multiexport.
 
 See :ref:`lnmpln-file-format` for a detailed description of the format.
 
-.. warning::
-
-   Always save a copy in the default LNMPLN format before exporting to other
-   formats like FMS. This allows *Little Navmap* to restore all flight plan
-   properties like procedures, alternate airports and remarks.
+.. include:: include/LNMPLNWARN.rst
 
 .. _flight-plan-formats-user-waypoints:
 

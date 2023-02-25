@@ -25,6 +25,6 @@ OTHER_FILES = \
   $$files(src/_static/*, true) \
   $$files(src/_templates/*, true) \
   $$files(src/en/*.rst, false) \
-  $$files(src/de/*.rst, false)
+  $$files(src/en/include/*.rst, false)
 
 

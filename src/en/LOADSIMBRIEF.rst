@@ -12,10 +12,10 @@ Download a Flight Plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Open a web browser by clicking the blue `SimBrief <https://www.simbrief.com>`__ link in the dialog header and login.
-#. Start with either ``CREATE NEW FLIGHT``, ``LOAD SAVED FLIGHT``, ``EDIT LAST FLIGHT`` or ``VIEW LAST FLIGHT``.
-#. Once the flight plan is done click ``GENERATE FLIGHT`` in SimBrief.
+#. Start with either ``New Flight``, ``Edit Flight`` or ``Saved Flights`` or ``Load``.
+#. Once the flight plan is done click ``Generate Flight`` in SimBrief.
 #. Go back into *Little Navmap* and select menu ``File`` -> :ref:`open-from-simbrief`.
-#. Enter your SimBrief Pilot ID or username. *Little Navmap* remembers this value.
+#. Enter your SimBrief ``Pilot ID`` or ``Alias (Username)``. Select the type of login in the drop down box at the left of the input field. *Little Navmap* remembers this value.
 #. Click ``Download Flight Plan``.
 #. Click ``Create Flight Plan`` if if the generated flight plan was successfully downloaded.
 
@@ -35,9 +35,8 @@ Note that the flight plan is kept for a while on SimBrief. You do not have to lo
 How to get the Login Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Go to ``MY ACCOUNT`` in SimBrief. You'll see the page ``Your Navigraph Account``.
-#. Now click ``SIMBRIEF DATA`` to get to the page ``Your SimBrief Data``.
-#. There your can see your ``Username`` and your ``Pilot ID``.
+#. Go to ``Account Settings`` in SimBrief.
+#. There your can see ``Alias (Username)`` and your ``Pilot ID``.
 
 .. figure:: ../images/simbrief_user.jpg
    :scale: 70 %
