@@ -12,5 +12,5 @@
     -  DH/DA or MDH/MDA and step-down fixes inside the final approach fix (FAF).
     -  All low altitude approach procedure altitudes in mountainous regions (terrain of 3000 ft AMSL or higher)
 
-    See `Skybary - Altimeter Temperature Error Correction <https://skybrary.aero/articles/altimeter-temperature-error-correction>`__
+    See `SKYbrary - Altimeter Temperature Error Correction <https://skybrary.aero/articles/altimeter-temperature-error-correction>`__
     for more information.
