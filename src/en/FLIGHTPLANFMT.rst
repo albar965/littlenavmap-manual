@@ -223,6 +223,47 @@ Read the X-Plane manuals for the respective devices on how to load plans inside 
       restrictions after loading. Adjust the cruise altitude manually if
       this is the case.
 
+.. _fms-export-issues:
+
+FMS Export Issues
+''''''''''''''''''''''''''''''''''''''''''''''''
+
+While *Little Navmap* resolves references from simulator airports to procedures in the navdata by
+various ways, X-Plane might not be able to find the procedures for a given aiport. This is the
+case if an airport has been renamed or has inconsistent idents like ICAO or FAA. You will see a warning message
+in X-Plane where it complains about not being able to load the procedures. You can try to load the flight plan
+and select the procedures manually in the GPS or FMS units but this also does not work in all cases.
+
+Another issue is where X-Plane refuses to read flight plans due to unknown departure or destination airports.
+This can happen if the airports are only present in an add-on and not in stock or have been renamed.
+You can open the FMS file in a text editor and fix this manually by replacing the keywords ``ADEP`` and ``ADES`` with
+``DEP`` and ``DES`` respectively. Note that this does not work if procedures are used with an airport.
+
+.. code-block:: none
+   :caption: FMS file which cannot be loaded by X-Plane with keywords ``ADEP`` and ``ADES``:
+
+   I
+   1100 Version
+   CYCLE 2209
+   ADEP 44T
+   ADES KSHN
+   NUMENR 2
+   1 44T ADEP 211.000000 46.992359 -122.827721
+   1 KSHN ADES 271.000000 47.233555 -123.147552
+
+
+.. code-block:: none
+   :caption: Corrected FMS file for both airports where the first occurences of ``ADEP`` and ``ADES`` were replaced with ``DEP`` and ``DES`` keywords for both airports:
+
+   I
+   1100 Version
+   CYCLE 2209
+   DEP 44T
+   DES KSHN
+   NUMENR 2
+   1 44T ADEP 211.000000 46.992359 -122.827721
+   1 KSHN ADES 271.000000 47.233555 -123.147552
+
 .. _flight-plan-formats-fms3:
 
 FMS 3 (X-Plane)
