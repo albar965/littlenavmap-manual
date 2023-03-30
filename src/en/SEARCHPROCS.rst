@@ -302,6 +302,8 @@ Clear search filters and revert to showing all procedures in the tree.
 Deselect the currently selected procedure and remove the preview from
 the map.
 
+Also clears the procedure preview enabled with :ref:`preview-all-procs`.
+
 .. _reset-view-procs:
 
 |Reset View| Reset View

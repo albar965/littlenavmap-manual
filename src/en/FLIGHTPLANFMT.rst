@@ -106,7 +106,7 @@ Format Name                                              Ext.     Open Exp. Airw
 :highlight-style:`Reality XP GNS 530W/430W V2`           FPL      X    X    0    0       X               0       0            0           0
 :highlight-style:`Reality XP GTN 750/650 Touch`          GFP      X    X    X    0       X [1]_          0       0            0           X
 :highlight-style:`Flight1 Garmin GTN 650/750`            GFP      X    X    X    0       0               0       0            0           0
-:highlight-style:`TDS GTNXi`                             GFP      X    X    X    0       0               0       0            0           0
+:highlight-style:`TDS GTNXi`                             GFP      X    X    X    0       0               0       0            0           X
 PMDG Aircraft                                            RTE      0    X    X    0       0               0       0            0           0
 Rotate MD-80, JARDesign and others                       TXT      0    X    X    0       0               0       0            0           0
 Majestic Dash MJC8 Q400                                  FPR      0    X    0    0       0               0       0            0           0
@@ -131,9 +131,9 @@ Garmin exchange format                                   GPX      \-   X    \-  
 HTML flight plan web page                                HTML     \-   X    \-   \-      \-              \-      \-           \-          \-
 ======================================================== ======== ==== ==== ==== ======= =============== ======= ============ =========== ======
 
-For ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2`` and ``Reality XP
-GTN 750/650 Touch`` additional export formats exist which replace waypoints with user defined
-waypoints. This helps to avoid the locked waypoint issue.
+For ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2``, ``Reality XP GTN 750/650 Touch`` and
+``TDS GTNXi`` additional export formats exist which replace waypoints with user defined
+waypoints. This helps to avoid the locked waypoint issue but drops all procedure and waypoint information.
 
 Procedure waypoints are excluded from most file formats by default, except for GPX.
 You have to use the GPS, FMS or MCDU in the simulator to
@@ -384,6 +384,11 @@ TDS GTNXi
 
 The default directory to save the flight plans for the GTN units is
 ``C:\ProgramData\TDS\GTNXi\FPS`` for all simulators.
+
+*Little Navmap* can also load this format using :ref:`open-flight-plan`.
+
+See :ref:`garmin-notes` for information on known problems when
+exporting flight plan data for the GTN.
 
 You may have to create the directory manually if it does not exist.
 

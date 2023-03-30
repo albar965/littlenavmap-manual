@@ -605,7 +605,7 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 |                                   | frequency, magnetic heading and                               |
 |                                   | DME indication if available.                                  |
 +-----------------------------------+---------------------------------------------------------------+
-| |GLS RNP|                         | GLS/RNP approach path indicating a precision approach.        |
+| |GLS RNP|                         | GLS/RNP approach glidepath indicating a precision approach.   |
 |                                   | Can be disabled in menu ``View`` -> ``Navaids`` ->            |
 |                                   | :ref:`view-show-gls-approach-paths`.                          |
 |                                   | The label shows type, performance, runway/approach,           |

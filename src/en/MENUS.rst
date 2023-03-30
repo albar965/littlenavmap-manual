@@ -780,9 +780,10 @@ The complete history is saved and restored when starting *Little Navmap*.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Deselect all entries in the flight plan table, all search result tables
-and remove all highlight marks from the map. Use this to get a clean
-view of the map while flying.
+and removes all highlight marks from the map. Also clears the procedure preview enabled with :ref:`preview-all-procs`
+in the window :doc:`SEARCHPROCS`.
 
+Use this to get a clean view of the map while flying.
 
 .. _remove-range-rings:
 
@@ -1018,6 +1019,11 @@ Navaids
 
 Show or hide these navaids on the map. Navaids might be hidden on the map depending on zoom distance.
 
+.. note::
+
+   Navaids related or being part of a flight plan and its procedures are always shown together with the flight plan.
+   You can disable the display of all VOR, NDB, waypoints and ILS to get a more clean display when flying.
+
 .. _show-vor-stations:
 
 |Show VOR Stations| Show VOR Stations
@@ -1046,12 +1052,18 @@ Show or hide intersections or waypoints.
 
 Toggles the display of ILS, localizer, IGS, LDA and SDF feathers.
 
+Note that this setting also affects the ILS glideslope display in the elevation profile and can be used to force the display of the ILS slope for all approach types.
+See :ref:`show-ils` for more information.
+
 .. _view-show-gls-approach-paths:
 
 |Show GLS Approach Paths| Show GLS/RNP Approach Paths
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Toggles the display feathers for GLS, RNP and other approach types.
+
+Note that this setting also affects the GLS/RNP glidepath display in the elevation profile and can be used to force the display of a glidepath for all approach types.
+See :ref:`show-ils` for more information.
 
 .. _view-show-holdings:
 
@@ -1614,7 +1626,8 @@ Note that some weather sources depend on the selected scenery library. For examp
 - **X-Plane 11 scenery selected:** X-Plane 11 ``METAR.rwx`` weather file and ``global_winds.grib`` wind file in the X-Plane 11 base path are loaded.
 - **X-Plane 12 scenery selected:** The folder ``Output/real weather`` in the X-Plane 12 base bath is checked for METAR and wind files.
 
-The same applies to ActiveSky weather files but not to FSX, P3D and MSFS where the weather is loaded using the simulator connection.
+The same applies to ActiveSky weather files for X-Plane where the files are selected automatically.
+This does not apply to FSX, P3D and MSFS where the weather is loaded using the simulator connection.
 
 See also on options page :ref:`weather-files` for configuration of download addresses and file paths.
 
@@ -2058,6 +2071,10 @@ fly.
 
 The menu shows the simulator name as a disabled menu item as an indicator if only one flight simulator was found.
 
+.. note::
+
+        The selection in the scenery library menus also affects the selection of weather files for ActiveSky and X-Plane.
+
 The loaded AIRAC cycle is only shown for X-Plane and Navigraph data
 since the information is not available for FSX, P3D and MSFS.
 
@@ -2109,12 +2126,18 @@ database is found in the database directory. Use this indication to verify if an
 The recommended selection depends in the simulator setup. *Little Navmap* will show dialog windows
 describing the recommended modes after loading a scenery library database or after selecting :ref:`validate-scenery-library`.
 
+.. note::
+
+       Note that the Navigraph selection in this menu is remembered separately for each simulator selection. This means that
+       the Navigraph selection is automatically changed when switching between simulators.
+
+       Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
+
 See the chapter :doc:`NAVDATA` for more
 information about scenery databases and the three different display modes
 below.
 
 Note that airspaces are not affected by this selection. See :ref:`airspace-source` below.
-
 
 .. _navigraph-all:
 

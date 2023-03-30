@@ -512,8 +512,8 @@ See :doc:`SEARCHPROCS` for more information.
 |Insert Procedure| Insert Procedure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Active if clicked on a waypoint of the procedure preview (see :ref:`button-preview-all-procs` and :doc:`SEARCHPROCS`).
-Allows to add a SID, STAR or approch procedure with their respective transitions to the flight plan.
+Active if clicked on a waypoint of the procedure preview (see :ref:`preview-all-procs` and :doc:`SEARCHPROCS`).
+Allows to add a SID, STAR or approach procedure with their respective transitions to the flight plan.
 
 .. _add-position-to-flight-plan:
 

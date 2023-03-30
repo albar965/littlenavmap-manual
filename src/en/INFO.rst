@@ -59,6 +59,9 @@ highlighting the shown object on the map. A link
 ``Remove Airway Highlights`` or ``Remove Airspace Highlights`` can be
 used to remove the corresponding highlights on the map.
 
+The links ``Procedures``, ``Departure Procedures`` or ``Arrival Procedures`` (text depends on airport position in flight plan)
+allow to jump directly to the :doc:`SEARCHPROCS` window.
+
 Other links open web pages with airport information in the web browser
 or a file manager like Windows Explorer with directories or files.
 

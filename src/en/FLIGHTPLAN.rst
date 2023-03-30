@@ -260,6 +260,8 @@ Cruise altitude
 
 This value is saved with the flight plan.
 
+Changing this field updates the cruise altitude in the window :doc:`ROUTECALC`.
+
 Changing the cruise altitude of a flight plan using airways might result in errors (:ref:`flight-plan-table-err-footer`).
 This can happen if the cruise altitude violates airway altitude restrictions.
 Calculate the flight plan again to remove the errors.

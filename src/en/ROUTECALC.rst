@@ -83,7 +83,8 @@ Changing cruise altitude for calulation can result in shorter or better airway r
 
 The value will be assigned to the flight plan (:ref:`flight-plan-altitude`) after calculation.
 
-Note that a change in the ``Flight Planning`` window will not be automatically transferred to this window.
+This field is updated from the current flight plan when opening the window or changing the cruise altitude in the field
+:ref:`flight-plan-altitude` in the flight plan window.
 
 .. important::
 

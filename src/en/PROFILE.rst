@@ -233,8 +233,8 @@ relation to the real VASI accuracy.
 Shows an ILS glideslope or GLS/RNP approach paths if an approach with a runway is selected in the
 flight plan and if the runway has the related navaid or approach type.
 
-Drawing of approach guidance depends on selected approch procedure type. An ILS approach will show the ILS
-feathers while a localizer approch without vertical guidance will not.
+Drawing of approach guidance depends on selected approach procedure type. An ILS approach will show the ILS
+feathers while a localizer approach without vertical guidance will not.
 Note that no vertical navaid guidance is shown for circle-to-land approaches.
 
 The slope is drawn with the correct angle to be usable as an approach
@@ -243,6 +243,16 @@ relation to the real ILS accuracy.
 
 A label on top shows name, frequency, heading, glideslope angle and DME
 indicator if available
+
+.. note::
+
+      The ILS glideslope and GLS/RNP glidepaths can be forced to display for all approach types:
+
+      -  Disable ILS or GLS/RNP on the toolbar or in the menu ``View`` -> :ref:`navaids-menu` to see only flight
+         plan related navaids on the map and approach related navaids in the elevation profile. This means
+         you won't see an ILS glideslope for a VOR approach in the elevation profile, for example.
+      -  Enable ILS or GLS/RNP to see slopes in the elevation profile independent of the approach type. A
+         destination runway (:ref:`select-destination-runway`) or an approach (:doc:`SEARCHPROCS`) has to be selected to see the slope.
 
 .. figure:: ../images/profile_ils.jpg
 

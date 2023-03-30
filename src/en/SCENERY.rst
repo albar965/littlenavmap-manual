@@ -262,6 +262,8 @@ information on these settings.
 
 See appendix :ref:`problems-msfs` for information about MSFS limitations and issues.
 
+Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
+
 .. _load-scenery-library-dialog-xp-apt-navdata:
 
 X-Plane Airports and Navdata
