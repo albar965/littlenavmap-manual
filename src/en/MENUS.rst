@@ -1065,6 +1065,11 @@ Toggles the display feathers for GLS, RNP and other approach types.
 Note that this setting also affects the GLS/RNP glidepath display in the elevation profile and can be used to force the display of a glidepath for all approach types.
 See :ref:`show-ils` for more information.
 
+.. note::
+
+    GLS/RNP approach paths are not available when using the setting :ref:`navigraph-none` in the
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+
 .. _view-show-holdings:
 
 |Show Holdings| Show Holdings
@@ -1072,6 +1077,11 @@ See :ref:`show-ils` for more information.
 
 Show or hide en-route holdings. Note that these are a part of the navdata and do not cover
 user placed holdings which can be added from the map display context menu using :ref:`add-holding-map`.
+
+.. note::
+
+    En-route holdings are not available when using the setting :ref:`navigraph-none` in the
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
 
 .. _view-show-msa-sectors:
 
@@ -1081,6 +1091,11 @@ user placed holdings which can be added from the map display context menu using 
 Toggle display of MSA (minimum sector altitude) icons. This does not cover the user placed MSA sector diagrams.
 
 See :doc:`MSA` for more information.
+
+.. note::
+
+    MSA sectors are not available when using the setting :ref:`navigraph-none` in the
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
 
 .. _show-victor-airways:
 
@@ -1520,6 +1535,13 @@ or higher terrain is cleared by 2,000 ft.
 
 The large number is 1,000 ft and small number 100 ft minimum
 altitude.
+
+.. note::
+
+    The MORA grid is not available when using the setting :ref:`navigraph-none` in the
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS.
+
+    See also :doc:`SCENERY` and :doc:`NAVDATA`.
 
 .. figure:: ../images/legend_map_mora.png
 

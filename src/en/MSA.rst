@@ -18,6 +18,12 @@ Remove MSA diagrams by clicking on the center and selecting :ref:`remove-user-ma
 
 See also :ref:`navaids-legend` in the map legend.
 
+.. note::
+
+    MSA sectors are not available when using the setting :ref:`navigraph-none` in the
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+
+
 .. figure:: ../images/msa_symbol.jpg
 
     An 25 NM MSA symbol at NDB LHR having three sectors. Sectors denoted by magnetic bearing to navaid and altitudes in feet.

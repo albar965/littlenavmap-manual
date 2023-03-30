@@ -100,6 +100,10 @@ The following features are taken from the Navigraph database:
    -  ``Search`` dock window, tab ``Navaid``
    -  Flight plan calculation
    -  Route Description
+   -  MORA grid (:ref:`show-mora-grid`)
+   -  Airport MSA sectors (:ref:`view-show-msa-sectors`)
+   -  En-route holdings (:ref:`view-show-holdings`)
+   -  GLS/RNV glidepaths (:ref:`view-show-gls-approach-paths`)
    -  Procedures (approaches, SIDs and STARs). This affects: ``Search`` dock window, tab ``Procedures`` and loading and display of procedures from flight plans.
 
 -  Airways
@@ -148,8 +152,7 @@ Limitations in this mode
 Do not use Navigraph Database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Completely ignores the Navigraph database and shows only information
-read from the simulator scenery.
+Ignores the Navigraph database and shows only information read from the simulator scenery.
 
 .. note::
 
@@ -159,3 +162,8 @@ read from the simulator scenery.
     This means missing one-way airways, no airway maximum altitude restrictions, some radio navaid
     types missing and more for FSX, P3D and MSFS simulators. You might also experience errors in the airway system
     and broken procedures.
+
+    MORA grid (:ref:`show-mora-grid`), airport MSA sectors (:ref:`view-show-msa-sectors`), en-route holdings (:ref:`view-show-holdings`) and
+    GLS/RNV glidepaths (:ref:`view-show-gls-approach-paths`) are not available when using this mode with with FSX, P3D or MSFS.
+
+    See also :doc:`SCENERY`.
