@@ -52,6 +52,14 @@ A toolbar gets an overflow button ``>>`` on the right side if it is too long to 
    The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and position of all dock
    windows and toolbars back to their default.
 
+.. _ui-statusbar:
+
+Statusbar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The statusbar at the bottom of the window displays various information.
+Shown or hide it in the menu ``Window`` -> :ref:`main-statusbar-options`.
+See chapter :doc:`STATUSBAR` for more on the shown information.
 
 .. _ui-disabled:
 

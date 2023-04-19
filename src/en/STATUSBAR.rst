@@ -1,8 +1,10 @@
 Statusbar
 ---------------------------------
 
-The statusbar at the bottom of the main window shows various indications
-(from left to right):
+The statusbar at the bottom of the window shows various information.
+Shown or hide it in the menu ``Window`` -> :ref:`main-statusbar-options`.
+
+**The statusbar at the bottom of the main window shows various indications (from left to right):**
 
 Messages, last action or quick help
    explaining a menu item or toolbar button.

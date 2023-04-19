@@ -2686,12 +2686,16 @@ Dock Window Toolbar
 Tools Toolbar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Show or hide these :ref:`ui-toolbars`.
+
+You can also hide toolbars in the context menu that appears when right clicking on them.
+
+.. _main-statusbar-options:
+
 Statusbar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Show or hide these :ref:`ui-toolbars` and/or the :doc:`STATUSBAR`.
-
-You can also hide toolbars in the context menu that appears when right clicking on them.
+Show or hide the statusbar. See :doc:`STATUSBAR` for more on the shown information.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
