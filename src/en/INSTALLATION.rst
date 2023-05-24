@@ -29,8 +29,7 @@ Updating
 
 Delete all installed files of a previous *Little Navmap* version before
 installing a new version or install into a new folder.
-All files from the previous ZIP archive can be
-deleted since settings are stored in separate directories (except :doc:`MAPTHEMES`).
+All files from the previous ZIP archive can be deleted since settings are stored in separate directories.
 
 .. warning::
 

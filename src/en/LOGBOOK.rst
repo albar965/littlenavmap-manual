@@ -394,6 +394,9 @@ The logbook statistics ignore these invalid simulator time intervals.
 
 Correct the simulator departure or arrival time manually if you find such cases.
 
+You can click on the top table header to sort the related column in ascending or descending order.
+
+Scroll down to load more values into the table.
 
 .. figure:: ../images/logbook_stats.jpg
          :scale: 50%

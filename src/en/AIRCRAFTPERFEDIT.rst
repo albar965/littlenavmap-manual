@@ -66,7 +66,7 @@ The aircraft type is not exposed in the SimConnect interface and will result in 
 Disable the warnings or adjust the ``Aircraft type`` in the aircraft performance tile to match your aircraft.
 
 The model can be found with any text editor, opening the related
-``aircraft.cfg`` file, key ``atc_model`` under the section ``[General]``.
+``aircraft.cfg`` file, key ``icao_type_designator`` int the section ``[General]``.
 
 X-Plane
 ''''''''''

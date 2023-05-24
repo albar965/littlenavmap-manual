@@ -88,6 +88,33 @@ See below for more information about the add dialog.
 
 Remove the selected userpoints. The action can be undone in the main menu ``Userpoint``.
 
+.. _userpoint-cleanup:
+
+Cleanup Userpoints
+''''''''''''''''''''''''''''''''''''''''
+
+Opens a dialog window where the userpoint database can be cleaned up.
+The dialog contains the following options:
+
+Delete userpoints having no information except coordinates and type
+  Removes empty userpoints without any information.
+
+Remove duplicates using additional fields as criteria.
+  A userpoint will considered a duplicate to another if all selected fields are equal. The following fields can be checked:
+
+  -  Ident, Name, and Type
+  -  Region
+  -  Remarks
+  -  Tags
+  -  Coordinates
+
+
+.. figure:: ../images/userpoint_cleanup.jpg
+
+    Cleanup up userpoints dialog. Empty userpoints will not be deleted.
+    Duplicates are removed if ident, region, name, type and coordinates are the same.
+
+
 .. _userpoints-menu:
 
 |Menu Button| Menu Button
@@ -224,6 +251,7 @@ Below a list of the most important userpoint types.
 Airports
 ^^^^^^^^
 
+-  |Addon| **Addon**: Can be used to mark airports manually as addon. Does not show labels to avoid overlap with marked airport.
 -  |Airport| **Airport**: Default when creating an userpoint on top of an airport.
 -  |Airstrip| **Airstrip**
 -  |Closed| **Closed airport**
@@ -233,14 +261,15 @@ Airports
 Navaids
 ^^^^^^^
 
--  |DME| **DME**: Distance measuring equipment.
--  |NDB| **NDB**: Non-directional beacon.
--  |TACAN| **TACAN**: Tactical air navigation system.
--  |VORDME| **VORDME**: VHF omnidirectional range and DME.
--  |VORTAC| **VORTAC**: VOR and TACAN.
--  |VOR| **VOR**: VHF omnidirectional range.
--  |Waypoint| **Waypoint**: Default when creating an userpoint on top of a navaid.
+-  |DME| **DME**: Distance measuring equipment. Default when creating an userpoint on top of a DME.
+-  |NDB| **NDB**: Non-directional beacon. Default when creating an userpoint on top of a NDB.
+-  |Radio Range| **Radio Range**: Old radio range navigation aid.
+-  |TACAN| **TACAN**: Tactical air navigation system. Default when creating an userpoint on top of a DME.
+-  |VORDME| **VORDME**: VHF omnidirectional range and DME. Default when creating an userpoint on top of a VORDME.
+-  |VORTAC| **VORTAC**: VOR and TACAN. Default when creating an userpoint on top of a VORTAC.
+-  |VOR| **VOR**: VHF omnidirectional range. Default when creating an userpoint on top of a VOR.
 -  |VRP| **VRP**: Visual reporting point.
+-  |Waypoint| **Waypoint**: Default when creating an userpoint on top of a navaid. Default when creating an userpoint on top of a waypoint.
 
 Points of Interest
 ^^^^^^^^^^^^^^^^^^
@@ -255,6 +284,7 @@ Points of Interest
 -  |Marker| **Marker**
 -  |Mountain| **Mountain**
 -  |Obstacle| **Obstacle**
+-  |Oil Platform| **Oil Platform**
 -  |POI| **POI**
 -  |Pin| **Pin**
 
@@ -569,38 +599,41 @@ See Files - :ref:`files-userdata` for information about database
 backup files.
 
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png
-.. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
-.. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
-.. |Reset Search| image:: ../images/icon_clear.png
-.. |Clear Selection| image:: ../images/icon_clearselection.png
-.. |Help| image:: ../images/icon_help.png
-.. |Menu Button| image:: ../images/icon_menubutton.png
-.. |Unknown| image:: ../images/icon_userpoint_Unknown.png
+.. |Addon| image:: ../images/icon_userpoint_Addon.png
 .. |Airport| image:: ../images/icon_userpoint_Airport.png
 .. |Airstrip| image:: ../images/icon_userpoint_Airstrip.png
+.. |Bookmark| image:: ../images/icon_userpoint_Bookmark.png
+.. |Cabin| image:: ../images/icon_userpoint_Cabin.png
+.. |Clear Selection| image:: ../images/icon_clearselection.png
 .. |Closed| image:: ../images/icon_userpoint_Closed.png
-.. |Helipad| image:: ../images/icon_userpoint_Helipad.png
-.. |Seaport| image:: ../images/icon_userpoint_Seaport.png
 .. |DME| image:: ../images/icon_userpoint_DME.png
+.. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
+.. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
+.. |Error| image:: ../images/icon_userpoint_Error.png
+.. |Flag| image:: ../images/icon_userpoint_Flag.png
+.. |Helipad| image:: ../images/icon_userpoint_Helipad.png
+.. |Help| image:: ../images/icon_help.png
+.. |Lighthouse| image:: ../images/icon_userpoint_Lighthouse.png
+.. |Location| image:: ../images/icon_userpoint_Location.png
+.. |Logbook| image:: ../images/icon_userpoint_Logbook.png
+.. |Marker| image:: ../images/icon_userpoint_Marker.png
+.. |Menu Button| image:: ../images/icon_menubutton.png
+.. |Mountain| image:: ../images/icon_userpoint_Mountain.png
 .. |NDB| image:: ../images/icon_userpoint_NDB.png
+.. |Obstacle| image:: ../images/icon_userpoint_Obstacle.png
+.. |Oil Platform| image:: ../images/icon_userpoint_Oil\ Platform.png
+.. |POI| image:: ../images/icon_userpoint_POI.png
+.. |Pin| image:: ../images/icon_userpoint_Pin.png
+.. |Radio Range| image:: ../images/icon_userpoint_Radio\ Range.png
+.. |Redo| image:: ../images/icon_redo.png
+.. |Reset Search| image:: ../images/icon_clear.png
+.. |Seaport| image:: ../images/icon_userpoint_Seaport.png
 .. |TACAN| image:: ../images/icon_userpoint_TACAN.png
+.. |Undo| image:: ../images/icon_undo.png
+.. |Unknown| image:: ../images/icon_userpoint_Unknown.png
 .. |VORDME| image:: ../images/icon_userpoint_VORDME.png
 .. |VORTAC| image:: ../images/icon_userpoint_VORTAC.png
 .. |VOR| image:: ../images/icon_userpoint_VOR.png
 .. |VRP| image:: ../images/icon_userpoint_VRP.png
 .. |Waypoint| image:: ../images/icon_userpoint_Waypoint.png
-.. |Bookmark| image:: ../images/icon_userpoint_Bookmark.png
-.. |Cabin| image:: ../images/icon_userpoint_Cabin.png
-.. |Error| image:: ../images/icon_userpoint_Error.png
-.. |Flag| image:: ../images/icon_userpoint_Flag.png
-.. |Lighthouse| image:: ../images/icon_userpoint_Lighthouse.png
-.. |Location| image:: ../images/icon_userpoint_Location.png
-.. |Logbook| image:: ../images/icon_userpoint_Logbook.png
-.. |Marker| image:: ../images/icon_userpoint_Marker.png
-.. |Mountain| image:: ../images/icon_userpoint_Mountain.png
-.. |Obstacle| image:: ../images/icon_userpoint_Obstacle.png
-.. |POI| image:: ../images/icon_userpoint_POI.png
-.. |Pin| image:: ../images/icon_userpoint_Pin.png
-.. |Undo| image:: ../images/icon_undo.png
-.. |Redo| image:: ../images/icon_redo.png
 

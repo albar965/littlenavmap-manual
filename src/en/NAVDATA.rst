@@ -47,6 +47,7 @@ Use Navigraph for all Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Uses only information from the Navigraph database.
+This mode is automatically selected if the simulator navdatabase is empty.
 
 .. note::
 

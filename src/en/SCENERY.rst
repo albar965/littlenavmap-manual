@@ -15,8 +15,7 @@ and continue to plan a flight while loading.
 From this dialog window you can select all detected  Flight Simulators and load their scenery
 libraries into the database of *Little Navmap*.
 
-An ``Empty Database`` indication is shown in the statusbar and a ``(empty)`` suffix is added in the related menu item if you skip this step.
-You will not be able to build flight plans for your simulator.
+An ``Empty Database`` indication is shown in the statusbar and a ``(empty)`` suffix is added in the related menu item if you skip this step and *Little Navmap* automatically selects :ref:`navigraph-all` in the scenery library menu.
 
 One database is kept for each simulator and can be changed on the fly in :ref:`scenery-library-menu`.
 One disabled menu item is kept as an indicator in the ``Scenery Library`` menu if only one simulator is available.
@@ -124,6 +123,9 @@ The dialog window ``Load Scenery Library`` has the following controls:
    Note that the loading runs in background which means you can continue to plan a flight while loading.
 -  ``Close``: Keep all settings and changes in the dialog and close it
    without loading anything.
+
+This dialog will also show a hint if folders are excluded or included in loading.
+This helps to avoid issues by unintended directory exclusions.
 
 **FSX and Prepar3D:** The base path and the ``scenery.cfg`` path will be
 shown in two text edit fields for the currently selected simulator.

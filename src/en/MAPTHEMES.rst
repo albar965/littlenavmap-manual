@@ -6,39 +6,30 @@ Map Themes
 Installing Map Themes
 -------------------------------------------
 
-Additional map themes can be installed in the directory ``data\maps\earth`` based on the installation directory.
+Additional map themes can be installed in the directory set in options on page :ref:`cache`,
+section :ref:`options-mapthemes`. You have to enter a valid path there before using map themes.
 
-Open the *Little Navmap* map installation folder using the menu ``Tools`` -> :ref:`files-and-directories-mapthemes`.
-This will open Windows Explorer, Apple Finder or any other default file manager showing the installation place.
+New maps come as downloads with different directory structures. Some contain the base folder ``data\maps\earth`` in the downloaded archive some do not.
+Each map installed theme has to consist of a directory containing the related ``.dgml`` and other files.
+The name of the map directory and the ``.dgml`` file have to match. For example ``.../norway-topo/norway-topo.dgml``.
 
-New maps come as downloads with different directory structures. Some contain the base folder ``data\maps\earth`` and some do not.
-In any case copy the maps into the installation folder so that the ``.dgml`` files are on the same level as the included maps.
-
-.. code-block:: none
-   :caption: The example below shows a installation of a map theme ``NEWMAP`` including parts of the "neighbouring" maps:
-
-   ... \ Little Navmap \ data \ maps \ earth \ ...
-   ... \ Little Navmap \ data \ maps \ earth \ maptilertopo  \ ...
-   ... \ Little Navmap \ data \ maps \ earth \ maptilertopo  \ maptilertopo.dgml
-
-   ... \ Little Navmap \ data \ maps \ earth \ NEWMAP        \ 0\0\0.png
-   ... \ Little Navmap \ data \ maps \ earth \ NEWMAP        \ NEWMAP-preview.png
-   ... \ Little Navmap \ data \ maps \ earth \ NEWMAP        \ NEWMAP.dgml
-
-   ... \ Little Navmap \ data \ maps \ earth \ openstreetmap \ ...
-   ... \ Little Navmap \ data \ maps \ earth \ openstreetmap \ openstreetmap.dgml
-   ... \ Little Navmap \ data \ maps \ earth \ ...
+Note that you have to restart *Little Navmap* to see the new map themes.
 
 
-.. figure:: ../images/maptheme_installation.png
-     :scale: 50%
+.. figure:: ../images/map_theme_options.jpg
+        :scale: 70%
 
-     Resulting folder structure of the installation of the map  ``us-vfr-sectionals`` in Windows Explorer.
-     *Click image to enlarge.*
+        Select map theme folder ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
+        shows a valid directoy and one map theme found. *Click image to enlarge.*
 
-.. note::
+.. figure:: ../images/map_theme.jpg
+       :scale: 70%
 
-    Keep in mind that you have to save and re-install the additional maps after the installation of each *Little Navmap* update.
+       Installing a map theme from a ZIP file ``OpenStreetMap French.zip``. The compressed file contains the subdirectory ``data\maps\earth``.
+       You have to copy the directory ``osm-fr`` containing the file ``osm-fr.dgml``
+       into your selected map theme directory ``Documents\Little Navmap Files\Map Themes``.
+
+       **You have to restart** *Little Navmap* **to see the new map themes.** *Click image to enlarge.*
 
 .. tip::
 

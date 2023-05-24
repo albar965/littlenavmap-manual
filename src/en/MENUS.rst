@@ -904,6 +904,7 @@ Reset airport display to default settings, i.e. display all airports.
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Show airports that have at least one runway with a paved surface.
+Note that this affects the other map display airport filters as well.
 
 .. _soft-surface:
 
@@ -911,6 +912,7 @@ Show airports that have at least one runway with a paved surface.
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Show airports that have only unpaved runways.
+Note that this affects the other map display airport filters as well.
 
 .. _seaplane-bases:
 
@@ -986,6 +988,13 @@ Show airports which have no approach or other procedures.
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Show airports which are marked closed or have only closed runways.
+
+.. _military:
+
+|Military| Military
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Show military airports. Note that military airports are detected by name patterns like ``AB`` and therefore not all military airports can be detected. This also applies to airports with both military and civil use.
 
 .. _add-on:
 
@@ -1519,7 +1528,6 @@ A 30, 5 or 1 degree grid is shown depending on zoom distance.
 Show country, city and other points of interest. Availability of these
 options depends on the selected map theme. See :ref:`map-themes` and :ref:`layers-map` for details.
 
-
 .. _show-mora-grid:
 
 |Show Minimum Altitude| Show Minimum off-route Altitude Grid
@@ -1774,6 +1782,13 @@ can edit, add delete and search user-defined waypoints.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`undo-userpoint-search` in the context menu of the userpoint table.
+
+.. _userpoint-cleanup-menu:
+
+Cleanup Userpoints
+''''''''''''''''''''''''''''''''''''''''
+
+Same as :ref:`userpoint-cleanup` in the context menu of the userpoint table.
 
 .. _userdata-menu-import-csv:
 
@@ -2137,29 +2152,51 @@ will switch over to the newly loaded simulator data.
       the plan which does not exist in the other database. Select
       :ref:`new-flight-plan` in the menu ``File`` before switching to avoid this.
 
-
-
 Navigraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This sub-menu also shows the AIRAC cycle if a Navigraph
 database is found in the database directory. Use this indication to verify if an database update was successfull.
+See `Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ for installation options if you run into issues..
 
-The recommended selection depends in the simulator setup. *Little Navmap* will show dialog windows
-describing the recommended modes after loading a scenery library database or after selecting :ref:`validate-scenery-library`.
+The right navdata mode is selected automatically per default. See below for more information.
+
+The recommended selection depends on the simulator setup. *Little Navmap* will show dialog windows
+describing the recommended modes after loading a scenery library database or after selecting :ref:`validate-scenery-library`
+if ``Select automatically`` is not enabled.
 
 .. note::
 
        Note that the Navigraph selection in this menu is remembered separately for each simulator selection. This means that
-       the Navigraph selection is automatically changed when switching between simulators.
+       the Navigraph selection is automatically changed when switching between simulators if ``Select automatically`` is not enabled.
 
        Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
 
-See the chapter :doc:`NAVDATA` for more
-information about scenery databases and the three different display modes
-below.
+See the chapter :doc:`NAVDATA` for more information about scenery databases and the three different display modes below.
 
 Note that airspaces are not affected by this selection. See :ref:`airspace-source` below.
+
+.. _navigraph-auto:
+
+Select automatically
+''''''''''''''''''''''''''''''
+
+Selects the right mode of the Navigraph navdata library database automatically, if checked.
+This function is enabled per default and it is recommended to keep it enabled.
+The selection of the right mode depends on the following criteria:
+
+#.  Selected simulator (X-Plane, MSFS, etc.)
+#.  Simulator database status (empty or not)
+#.  Navdata AIRAC cycle
+#.  Navdata update installed in MSFS or not
+#.  Simulator data AIRAC cycle (if available)
+
+The navdata mode is applied when switching between simulators or after compiling a database.
+
+The automatically selected mode can be seen in the disabled menu items in menu ``Navigraph`` or in the :ref:`window-title`.
+
+The mode ``Use Navigraph for all Features`` is enabled if the simulator database is empty to have airports available for planning.
+This mode is selected after a fresh installation, for example. It is independent of the AIRAC cycle.
 
 .. _navigraph-all:
 
@@ -2168,6 +2205,8 @@ Use Navigraph for all Features
 
 Completely ignores the simulator database and takes all information from
 the Navigraph database.
+
+This mode is automatically selected if the simulator navdatabase is empty.
 
 .. note::
 
@@ -2754,7 +2793,6 @@ web browser where you can get
 aircraft performance files, airspace boundaries,
 flight plans, map themes or userpoints provided by the community.
 
-
 .. _help-changelog:
 
 |Contents (Online)| Changelog
@@ -2884,6 +2922,7 @@ See :doc:`UPDATE` for more information.
 
 .. |Add-on| image:: ../images/icon_airportaddon.png
 .. |Closed| image:: ../images/icon_airportclosed.png
+.. |Military| image:: ../images/icon_airportmil.png
 .. |No procedure| image:: ../images/icon_airportproc.png
 .. |Not lighted| image:: ../images/icon_airportlight.png
 .. |Empty| image:: ../images/icon_airportempty.png

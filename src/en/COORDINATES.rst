@@ -52,6 +52,8 @@ For the coordinate formats ``Latitude and Longitude with sign`` and
 Selecting these display formats will also enable input of signed decimal
 values.
 
+Comma separated values like ``50,07477,8,54053`` (comma as German decimal separator) or ``50.07477,8.54053`` are valid. Spaces before and after the comma are allowed.
+
 .. note::
 
    The reading order for coordinates (``Latitude and Longitude`` versus ``Longitude and Latitude``)

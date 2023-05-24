@@ -497,6 +497,14 @@ See also :doc:`HOLD`.
 Same as :ref:`add-msa-map`. Only enabled if the navaid or airport have MSA information.
 See also :doc:`MSA`.
 
+.. _mark-airport-addon-flightplan:
+
+|Mark Airport as addon| Mark Airport as Add-on
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks an airport with a yellow circle as add-on.
+Same as :ref:`mark-airport-addon-map`. Enabled for all airports at the clicked position.
+
 Follow Selection
 ^^^^^^^^^^^^^^^^
 
@@ -561,32 +569,33 @@ Note that this field saved is saved only when using the *Little Navmap* LNMPLN f
 See also :doc:`REMARKS`.
 
 
-.. |Flight Plan Tab| image:: ../images/icon_routedock.png
-.. |Clear Selection| image:: ../images/icon_clearselection.png
-.. |Show Information| image:: ../images/icon_globals.png
-.. |Show Procedures| image:: ../images/icon_approach.png
-.. |Create Approach| image:: ../images/icon_approachcustom.png
-.. |Show on Map| image:: ../images/icon_showonmap.png
 .. |Activate Flight Plan Leg| image:: ../images/icon_routeactiveleg.png
-.. |Move Selected Legs up| image:: ../images/icon_routelegup.png
-.. |Move Selected Legs down| image:: ../images/icon_routelegdown.png
-.. |Delete Selected Legs or Procedure| image:: ../images/icon_routedeleteleg.png
-.. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
-.. |Insert Flight Plan before| image:: ../images/icon_fileinsert.png
-.. |Append Flight Plan| image:: ../images/icon_fileappend.png
-.. |Add Range Rings| image:: ../images/icon_rangerings.png
-.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
 .. |Add Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
 .. |Add Holding| image:: ../images/icon_hold.png
-.. |Copy| image:: ../images/icon_copy.png
-.. |Reset View| image:: ../images/icon_cleartable.png
-.. |Set Center for Distance Search| image:: ../images/icon_mark.png
-.. |Flight Plan Table Display Options| image:: ../images/icon_settingsroute.png
-.. |Save selected range as Flight Plan| image:: ../images/icon_mapsaveasimage.png
-.. |Calculate Flight Plan for selected Range| image:: ../images/icon_routecalc.png
-.. |Settings| image:: ../images/icon_settings.png
-.. |Destination Runway| image:: ../images/icon_runwaydest.png
-.. |Departure Runway| image:: ../images/icon_runwaydepart.png
-.. |Undo| image:: ../images/icon_undo.png
-.. |Redo| image:: ../images/icon_redo.png
 .. |Add MSA Diagram| image:: ../images/icon_msa.png
+.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
+.. |Add Range Rings| image:: ../images/icon_rangerings.png
+.. |Append Flight Plan| image:: ../images/icon_fileappend.png
+.. |Calculate Flight Plan for selected Range| image:: ../images/icon_routecalc.png
+.. |Clear Selection| image:: ../images/icon_clearselection.png
+.. |Copy| image:: ../images/icon_copy.png
+.. |Create Approach| image:: ../images/icon_approachcustom.png
+.. |Delete Selected Legs or Procedure| image:: ../images/icon_routedeleteleg.png
+.. |Departure Runway| image:: ../images/icon_runwaydepart.png
+.. |Destination Runway| image:: ../images/icon_runwaydest.png
+.. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
+.. |Flight Plan Table Display Options| image:: ../images/icon_settingsroute.png
+.. |Flight Plan Tab| image:: ../images/icon_routedock.png
+.. |Insert Flight Plan before| image:: ../images/icon_fileinsert.png
+.. |Mark Airport as addon| image:: ../images/icon_airportaddon.png
+.. |Move Selected Legs down| image:: ../images/icon_routelegdown.png
+.. |Move Selected Legs up| image:: ../images/icon_routelegup.png
+.. |Redo| image:: ../images/icon_redo.png
+.. |Reset View| image:: ../images/icon_cleartable.png
+.. |Save selected range as Flight Plan| image:: ../images/icon_mapsaveasimage.png
+.. |Set Center for Distance Search| image:: ../images/icon_mark.png
+.. |Settings| image:: ../images/icon_settings.png
+.. |Show Information| image:: ../images/icon_globals.png
+.. |Show Procedures| image:: ../images/icon_approach.png
+.. |Show on Map| image:: ../images/icon_showonmap.png
+.. |Undo| image:: ../images/icon_undo.png

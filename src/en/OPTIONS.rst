@@ -274,6 +274,9 @@ selected and ``Line Width`` adjusts flight plan and other line thickness.
 
 Change colors by clicking on the colored buttons.
 
+The option ``Hide aircraft on ground`` can be used to avoid hiding aircraft on ground at higher zoom levels. Disabling this can help
+to avoid hidden AI if traffic tools do not update the on-ground status of aircraft properly.
+
 Map and Elevation Profile Font
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -891,9 +894,9 @@ used to store the downloaded images tiles from the online maps like the
 All image tiles expire after two weeks by default and will be reloaded from the
 online services then.
 
-Note that a reduction of size or erasing the disk cache is done in
-background and can take a while. You can delete the files manually using your file manager.
-You can also open the cache directory from menu ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`.
+You can delete the files manually using your file manager.
+You can also open the cache directory from menu ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache` or by
+clicking on the button ``Show Disk Cache in File Manager``.
 
 The RAM cache has a minimum size of 100 MB and a maximum size of 2 GB.
 
@@ -901,6 +904,25 @@ The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 
 See chapter :ref:`disk-cache` for information on cache locations.
 
+
+.. figure:: ../images/mapcache.jpg
+       :scale: 60%
+
+       The map cache directory on Windows showing caches for four map themes. Delete all or any of these to save space.
+       *Click image to enlarge.*
+
+
+
+.. _options-mapthemes:
+
+Map Display Themes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can select a directory to lookup additional map themes for the background map layer.
+Each map theme has to consist of a directory containing the related ``.dgml`` and other files.
+See :doc:`MAPTHEMES` for installation instructions.
+
+External map themes are ignored if this field is empty.
 
 .. _cache-elevation:
 
@@ -948,10 +970,21 @@ effect.
 Windows shortcuts, Windows junctions and  macOS aliases. Note that this functionality is limited to
 the MSFS ``Community`` and X-Plane ``Custom Scenery`` directories. Other combinations are not tested.
 
+.. _scenery-library-database-include:
+
+Scenery library directories to include when loading
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This list shows extra directories which are loaded additionally when reading the simulator scenery library.
+Add-on airports in the extra directories extending MSFS ``Community``, X-Plane ``Custom Scenery`` or FSX/P3D ``Addon Scenery`` are
+read when loading the simulator scenery library database.
+
+Note that airport files in this list are always read last which can affect the display in MSFS, FSX or P3D.
+
 .. _scenery-library-database-exclude:
 
-Select Paths to exclude from loading
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenery library directories or files to exclude from loading
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 All directories including sub-directories as well as files in this list will be omitted
 when loading the scenery library into the *Little Navmap* database. You
@@ -971,8 +1004,8 @@ then from the list.
 
 .. _scenery-library-database-exclude-add-on:
 
-Select Paths to exclude add-on recognition
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Scenery library directories to exclude from add-on recognition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **FSX/P3D:** All scenery data that is found outside of the base flight
 simulator ``Scenery`` directory is considered an add-on and will be

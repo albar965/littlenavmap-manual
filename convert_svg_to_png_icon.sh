@@ -5,4 +5,4 @@
 
 cd $APROJECTS/littlenavmap/resources/icons
 
-for i in *.svg ; do inkscape "${i}" -o $APROJECTS/littlenavmap-manual/images/icons/$(basename $i .svg).png -w 32 -h 32 ;done
+for i in *.svg ; do inkscape "${i}" -o "${APROJECTS}/littlenavmap-manual/src/images/icon_$(basename "${i}" .svg).png" -w 32 -h 32 ;done

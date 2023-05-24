@@ -11,10 +11,12 @@ Map Layers
 Background Map Layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is defined by offline or online maps like the `OpenStreetMap <https://www.openstreetmap.org>`__.
+This is defined by offline or online map themes like the `OpenStreetMap <https://www.openstreetmap.org>`__.
 You can change the background by selecting another :ref:`theme-menu`.
 The background maps cannot be modified or configured since they are fetched from third party online services.
 *Little Navmap* downloads pre-rendered image tiles from these services to draw the background map.
+
+See :doc:`MAPTHEMES` for more information about how to install additional map themes.
 
 .. figure:: ../images/map_background.jpg
 
@@ -106,7 +108,7 @@ Click spots and hotspots for tooltips are:
 - Navaids for the procedure preview (:ref:`procedure-preview`).
 - Center of range rings (small circle).
 - Center of MSA diagrams (small circle).
-- End of a measurement line (cross).
+- Start and end of a measurement line (circle and cross).
 - Runway threshold point (small circle) for airport traffic patterns.
 - Holding fix (small triangle) of a user holding.
 
@@ -296,14 +298,13 @@ Spherical
 |Map Themes| Map Themes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 The map theme can be changed in main menu ``View`` -> :ref:`theme-menu` or with the toolbar button |Map| which can be torn off by
 clicking on the dashed line in the menu (:ref:`tear-off-menu`).
 
 This allows to change the map theme which defines the look and feel of the background map (:ref:`layers-map`).
 
 See :ref:`map-display-keys` for more information on themes requiring a login or an account.
-:doc:`MAPTHEMES` explains how to create your own themes.
+:doc:`MAPTHEMES` explains how to create your own themes and how to install additional themes.
 
 .. tip::
 
@@ -676,6 +677,18 @@ Removes a map feature added by the user.
 -   Removes the selected **MSA diagram** from the map. This menu item is active if you
     right-click on the hotspot of a user added MSA diagram (small circle in center).
 
+.. _mark-airport-addon-map:
+
+|Mark Airport as addon| Mark Airport as Add-on
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks an airport with a yellow circle as add-on.
+
+This function will add a userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
+Note that the userpoint is not attached to the airport and will not be hidden with airports and is not affected by airport filters.
+
+See chapter :doc:`USERPOINT` for more information how to edit or remove the highlight.
+
 .. _userpoints:
 
 |Userpoints| Userpoint
@@ -803,28 +816,40 @@ The symbol cannot be hidden. Set it at a remote position if you like to hide it.
 
 Note that the symbol is only an indicator for the home view center position and does not have a context menu or a mouse action attached.
 
+.. |Add Holding| image:: ../images/icon_hold.png
+.. |Add MSA Diagram| image:: ../images/icon_msa.png
+.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Add Range Rings| image:: ../images/icon_rangerings.png
+.. |Add Traffic Pattern| image:: ../images/icon_trafficpattern.png
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png
-.. |Userpoints| image:: ../images/icon_userdata.png
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Clear Selection| image:: ../images/icon_clearselection.png
+.. |Copy to Clipboard| image:: ../images/icon_coordinate.png
 .. |Create Approach| image:: ../images/icon_approachcustom.png
 .. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
 .. |Delete from Flight Plan| image:: ../images/icon_routedeleteleg.png
-.. |Add Traffic Pattern| image:: ../images/icon_trafficpattern.png
-.. |Add Holding| image:: ../images/icon_hold.png
-.. |Remove Holding| image:: ../images/icon_holdoff.png
+.. |Departure Runway| image:: ../images/icon_runwaydepart.png
+.. |Destination Runway| image:: ../images/icon_runwaydest.png
 .. |Distance Search Symbol| image:: ../images/icon_distancemark.png
 .. |Edit Flight Plan Position| image:: ../images/icon_routestring.png
 .. |Edit Log Entry| image:: ../images/icon_logdata_edit.png
 .. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
+.. |Fullscreen Map| image:: ../images/icon_fullscreen.png
 .. |Hand Cursor| image:: ../images/cursorhand.jpg
 .. |Home Symbol| image:: ../images/icon_homesymbol.png
+.. |Insert Procedure| image:: ../images/icon_approachselect.png
+.. |Jump to Coordinates| image:: ../images/icon_zoomin.png
+.. |Map Themes| image:: ../images/icon_map.png
+.. |Map| image:: ../images/icon_map.png
+.. |Mark Airport as addon| image:: ../images/icon_airportaddon.png
 .. |Measure Distance from here| image:: ../images/icon_distancemeasure.png
 .. |Move Userpoint| image:: ../images/icon_userdata_move.png
-.. |Remove Traffic Pattern| image:: ../images/icon_trafficpatternoff.png
 .. |Remove Distance measurement| image:: ../images/icon_distancemeasureoff.png
+.. |Remove Holding| image:: ../images/icon_holdoff.png
 .. |Remove Range Ring| image:: ../images/icon_rangeringoff.png
+.. |Remove Traffic Pattern| image:: ../images/icon_trafficpatternoff.png
+.. |Remove User Feature| image:: ../images/icon_marksoff.png
 .. |Remove all Range Rings and Distance measurements| image:: ../images/icon_rangeringsoff.png
 .. |Set Center for Distance Search| image:: ../images/icon_mark.png
 .. |Set Home| image:: ../images/icon_home.png
@@ -832,22 +857,10 @@ Note that the symbol is only an indicator for the home view center position and 
 .. |Set as Departure| image:: ../images/icon_airportroutedest.png
 .. |Set as Destination| image:: ../images/icon_airportroutestart.png
 .. |Show Information| image:: ../images/icon_globals.png
-.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
 .. |Show Procedures| image:: ../images/icon_approach.png
-.. |Add Range Rings| image:: ../images/icon_rangerings.png
 .. |Show in Search| image:: ../images/icon_search.png
-.. |Copy to Clipboard| image:: ../images/icon_coordinate.png
-.. |Fullscreen Map| image:: ../images/icon_fullscreen.png
-.. |Map Themes| image:: ../images/icon_map.png
-
-.. |Destination Runway| image:: ../images/icon_runwaydest.png
-.. |Departure Runway| image:: ../images/icon_runwaydepart.png
-
-.. |Remove User Feature| image:: ../images/icon_marksoff.png
-.. |Add MSA Diagram| image:: ../images/icon_msa.png
-.. |Jump to Coordinates| image:: ../images/icon_zoomin.png
-.. |Insert Procedure| image:: ../images/icon_approachselect.png
-.. |Map| image:: ../images/icon_map.png
+.. |Userpoints| image:: ../images/icon_userdata.png
+.. |Addon| image:: ../images/icon_userpoint_Addon.png
 
 
 .. |Airport| image:: ../images/icon_userpoint_Airport.png

@@ -157,7 +157,7 @@ Export Formats
 File format for MSFS.
 *Little Navmap* can read and export this format.
 
-You can export this format directly using :ref:`export-msfs-flight-plan`.
+You can export this format directly using :ref:`export-msfs-flight-plan` and load the flight plans using menu ``File`` -> :ref:`open-flight-plan`.
 
 While the format supports procedures there appear problems in MSFS loading these. Procedures might be omitted or new ones inserted.
 Furthermore MSFS does not support the selection of transitions and often inserts these automatically.
@@ -181,6 +181,8 @@ File format for FSX and P3D.
 
 You can export this format directly using :ref:`export-p3d-fsx-flight-plan`.
 
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
+
 FSX and Prepar3D annotated (obsolete)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -190,6 +192,8 @@ This is needed only if you like to save a flight plan for older *Little Navmap* 
 
 *Little Navmap* can read and export this format completely with procedures.
 
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
+
 .. _flight-plan-formats-fs9-pln:
 
 FS9 PLN
@@ -197,6 +201,8 @@ FS9 PLN
 
 File format of the Flight Simulator 2004. Uses the same PLN file extension as
 the FSX PLN format. *Little Navmap* can only read this format.
+
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 .. _flight-plan-formats-fms11:
 
@@ -215,6 +221,8 @@ X-Plane directory.
 
 Read the X-Plane manuals for the respective devices on how to load plans inside the cockpit:
 `User Manuals for X-Plane Products <https://www.x-plane.com/support/manuals/>`__.
+
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 .. note::
 
@@ -273,7 +281,7 @@ X-Plane FMS format which can be loaded into the stock GPS and FMS of
 X-Plane 10 and 11.05. The format is very limited and basically stores
 only a list of waypoints.
 
-*Little Navmap* can read and export this format.
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 Store these files into the ``Output/FMS plans`` directory inside the
 X-Plane directory.
@@ -310,7 +318,7 @@ flight simulator `FlightGear <http://www.flightgear.org>`__.
 
 You can export this format directly using :ref:`save-flight-plan-as-fgfp`.
 
-*Little Navmap* can read and export this format.
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 You can save the files into any directory and load it within FlightGear.
 
@@ -361,6 +369,8 @@ The default directory to save the flight plans for the GNS units is
 
 You may have to create the directory manually if it does not exist.
 
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
+
 .. _flight-plan-formats-rxpgtn:
 
 Reality XP GTN 750/650 Touch
@@ -369,13 +379,14 @@ Reality XP GTN 750/650 Touch
 Save flight plan as GFP file usable by the *Reality XP GTN 750/650
 Touch*.
 
-*Little Navmap* can also load this format using :ref:`open-flight-plan`.
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 See :ref:`garmin-notes` for information on known problems when
 exporting flight plan data for the GTN.
 
 *Little Navmap* considers the ``GTNSIMDATA`` environment variable if
 set. See the GTN manual for more information.
+
 
 .. _flight-plan-formats-tds-gtnxi:
 
@@ -385,7 +396,7 @@ TDS GTNXi
 The default directory to save the flight plans for the GTN units is
 ``C:\ProgramData\TDS\GTNXi\FPS`` for all simulators.
 
-*Little Navmap* can also load this format using :ref:`open-flight-plan`.
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 See :ref:`garmin-notes` for information on known problems when
 exporting flight plan data for the GTN.
@@ -423,7 +434,7 @@ Flight1 Garmin GTN 650/750
 
 This is the flight plan format used by the *Flight1 GTN 650/750*.
 
-*Little Navmap* can also load this format using :ref:`open-flight-plan`.
+Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
 See :ref:`garmin-notes` for information on problems when exporting
 flight plan data for the GTN.

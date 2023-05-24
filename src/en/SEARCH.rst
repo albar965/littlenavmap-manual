@@ -326,6 +326,14 @@ other features on the map. The
 zoom distance can be changed in the dialog ``Options`` on the tab
 :ref:`map-navigation`.
 
+.. _mark-airport-addon-search:
+
+|Mark Airport as addon| Mark Airport as Add-on
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks an airport with a yellow circle as add-on.
+Same as :ref:`mark-airport-addon-map`. Enabled for all airports at the clicked position.
+
 .. _filter-by-entries-including-excluding:
 
 |Filter by Entries including| |Filter by Entries excluding| Filter by Entries including/excluding
@@ -401,29 +409,30 @@ the map.
 Reset sort order, column order and column widths to default.
 
 
-.. |Search| image:: ../images/icon_searchdock.png
-.. |Menu Button| image:: ../images/icon_menubutton.png
-.. |Distance Search Symbol| image:: ../images/icon_distancemark.png
-.. |Reset Search| image:: ../images/icon_clear.png
-.. |Clear Selection| image:: ../images/icon_clearselection.png
-.. |Help| image:: ../images/icon_help.png
-.. |Show Information| image:: ../images/icon_globals.png
-.. |Show Procedures| image:: ../images/icon_approach.png
-.. |Create Approach| image:: ../images/icon_approachcustom.png
-.. |Show on Map| image:: ../images/icon_showonmap.png
-.. |Filter by Entries including| image:: ../images/icon_filter-add.png
-.. |Filter by Entries excluding| image:: ../images/icon_filter-remove.png
-.. |Show All| image:: ../images/icon_load-all.png
-.. |Add Range Rings| image:: ../images/icon_rangerings.png
-.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
 .. |Add Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png
 .. |Add Holding| image:: ../images/icon_hold.png
-.. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
-.. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
+.. |Add Navaid Range Ring| image:: ../images/icon_navrange.png
+.. |Add Range Rings| image:: ../images/icon_rangerings.png
 .. |Add as Flight Plan Alternate| image:: ../images/icon_airportroutealt.png
 .. |Add to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Append to Flight Plan| image:: ../images/icon_routeadd.png
+.. |Clear Selection| image:: ../images/icon_clearselection.png
 .. |Copy| image:: ../images/icon_copy.png
+.. |Create Approach| image:: ../images/icon_approachcustom.png
+.. |Distance Search Symbol| image:: ../images/icon_distancemark.png
+.. |Filter by Entries excluding| image:: ../images/icon_filter-remove.png
+.. |Filter by Entries including| image:: ../images/icon_filter-add.png
+.. |Help| image:: ../images/icon_help.png
+.. |Mark Airport as addon| image:: ../images/icon_airportaddon.png
+.. |Menu Button| image:: ../images/icon_menubutton.png
+.. |Reset Search| image:: ../images/icon_clear.png
 .. |Reset View| image:: ../images/icon_cleartable.png
+.. |Search| image:: ../images/icon_searchdock.png
 .. |Set Center for Distance Search| image:: ../images/icon_mark.png
+.. |Set as Flight Plan Departure| image:: ../images/icon_airportroutedest.png
+.. |Set as Flight Plan Destination| image:: ../images/icon_airportroutestart.png
+.. |Show All| image:: ../images/icon_load-all.png
+.. |Show Information| image:: ../images/icon_globals.png
+.. |Show Procedures| image:: ../images/icon_approach.png
+.. |Show on Map| image:: ../images/icon_showonmap.png
 

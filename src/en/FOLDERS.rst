@@ -4,7 +4,8 @@ Directories
 *Little Navmap* suggests to create a recommended directory structure on startup. This is purely optional. You can choose to ignore this
 and save your *Little Navmap* files in arbitrary places. The program does not require a fixed directory structure for its files.
 
-Menu ``Tools`` -> :ref:`create-dir-structure` allows to create the directory structure later.
+Menu ``Tools`` -> :ref:`create-dir-structure` allows to create the directory structure later or manually.
+The dialog can also be used to create missing folders in the directory structure. No data is deleted while doing so.
 
 All default directories are adjusted if you create the directory
 structure. This means that file dialogs will initially point to the right place when saving files.
@@ -22,6 +23,9 @@ The following folders are suggested to be created:
 -  ``User Airspaces``: User defined airspaces in OpenAir format. See :doc:`SCENERY`.
 -  ``GLOBE Elevation Data``: A place for the GLOBE data used by the flight plan elevation profile.
    Look at chapter See :ref:`cache-elevation` for installation instructions.
+-  ``Map Themes``: This directory is used to lookup additional map themes for the background map layer.
+   See :doc:`MAPTHEMES` for installation instructions. The path can also be set manually in options on page
+   :ref:`cache`, section :ref:`options-mapthemes`.
 
 .. note::
 
