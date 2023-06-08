@@ -5,11 +5,20 @@ This dialog allows you to create a flight plan from a route description string c
 as generated or provided by various online services.
 
 Click ``Load from Flight Plan`` to generate the route string from the currently loaded flight plan.
+This will append and read the string on the top of the list.
 
 The top of the dialog holds the route description input field,
 while the center half shows any messages, warnings or errors that occur
 during reading. The string is read automatically while entering it into the input field.
 The lower part provides a quick help.
+
+.. role:: dim-style
+
+The input field is split into two sections. The top most can cover several lines and is is shown
+using **bold text**. This is the active section which is read and the results are shown in the output.
+The lower text can be seen as a kind of a notepad, is displayed in :dim-style:`gray color` and is ignored for reading.
+The two sections are separated by an empty line.
+All texts are saved on exit.
 
 The menu button |Menu Button| provides a dropdown menu than can be used
 to customize the generated route string.
@@ -21,7 +30,7 @@ if that is the case.
 
 If a route covers a long distance and contains a waypoint name which is
 not unique, a wrong waypoint might be added to the flight plan. Correct
-or remove this waypoint manually.
+or remove this waypoint manually in the :ref:`flight-plan-table` using the :ref:`flight-plan-table-view-context-menu`.
 
 Many waypoints and airways will not be found if route descriptions from
 the latest AIRAC sources are used together with the old FSX, P3D or MSFS stock data.
@@ -56,23 +65,27 @@ Click ``Create Flight Plan`` before doing changes on the map or in the flight pl
 
 .. figure:: ../images/routedescr.jpg
 
-          A route description that was read successfully with
+          A route description (1) (bold top section) that was read successfully with
           a few warnings about ignored elements. The waypoint ``INVALID`` could not be
           found. Altitude, SID and STAR were recognized.
+          More inactive route descriptions are stored below (2).
 
 Buttons
 ~~~~~~~
 
--  ``To Clipboard``: Copy the current description as plain text to the clipboard.
--  ``From Clipboard``: Insert text from clipboard into the input field.
-   The inserted text is converted to upper case and all invalid
-   characters are removed from the text before reading.
+Note that some buttons are now shown when opening this dialog from :doc:`LOADSIMBRIEF`.
+
+-  ``To Clipboard``: Copy the current active description from the input field as plain text to the clipboard.
+-  ``From Clipboard``: Insert text from clipboard into the top of the input field making it the active route description.
+   The inserted text is converted to upper case and all invalid characters are removed from the text before reading.
 -  ``Load from Flight Plan``: Create the route string from the current
-   flight plan. Use this after changing settings with drop down
+   flight plan and inserts it into the top of the input field making it the active route description.
+   Use this after changing settings with drop down
    menu button or after modifying the flight plan on the map or in the flight plan table.
 -  Menu Button |Menu Button|: ``Write`` denotes flight plan to
    description and ``Read`` denotes description to flight plan.
    You can tear off the drop down menu from the button by clicking on the dashed line on top of it.
+   Note that the menus starting with ``Write`` are now shown when opening this dialog from :doc:`LOADSIMBRIEF`.
 
    -  ``Write departure and destination airport``: Note that disabling
       this option will result in an invalid route description which cannot be read

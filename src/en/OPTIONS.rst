@@ -202,6 +202,8 @@ altitude and nautical miles for distance are possible.
        See :ref:`signed-decimal-coordinates` for more information when using ``Latitude and Longitude with sign``
        or ``Longitude and Latitude with sign`` since these modes also affect coordinate input.
 
+       The format ``Degree, Decimal Minutes for Google`` is useful for input into Google Maps or Google Earth.
+
 .. warning::
 
       Note that any numbers used in the program are not converted when

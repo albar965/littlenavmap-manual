@@ -396,7 +396,7 @@ Correct the simulator departure or arrival time manually if you find such cases.
 
 You can click on the top table header to sort the related column in ascending or descending order.
 
-Scroll down to load more values into the table.
+Scroll down in the table to load more values.
 
 .. figure:: ../images/logbook_stats.jpg
          :scale: 50%
