@@ -220,7 +220,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
    :name: flightplan-example
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
+   <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
      <Flightplan>
 
        <!-- Coordinates are always latitude and longitude in decimal/signed notation -->
@@ -230,6 +231,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
        <Header>
          <FlightplanType>IFR</FlightplanType>                 <!-- IFR or VFR as set in user interface -->
          <CruisingAlt>30000</CruisingAlt>                     <!-- feet -->
+         <CruisingAltF>30000.0000</CruisingAltF>              <!-- Feet. Optional floating point altitude avoid
+                                                                   rounding issues when using metric values -->
          <CreationDate>2020-09-11T18:05:15+02</CreationDate>  <!-- Local time with timezone offset -->
          <FileVersion>1.0</FileVersion>                       <!-- File format version -->
          <ProgramName>Little Navmap</ProgramName>
@@ -251,7 +254,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
        <Departure>
          <Pos Lon="-120.538055" Lat="46.569828" Alt="1069.00"/>
          <Start>PARKING 1</Start>    <!-- Name of position -->
-         <Type>Parking</Type>        <!-- Type of position. None, Airport, Runway, Parking or Helipad. -->
+         <Type>Parking</Type>        <!-- Type of position.
+                                          None, Airport, Runway, Parking or Helipad. -->
          <Heading>5.1</Heading>      <!-- True heading of the position -->
        </Departure>
 
@@ -263,7 +267,7 @@ Order of elements does not matter. Missing elements will be logged as warning ex
            <Runway>09</Runway>             <!-- SID departure runway if applicable. -->
            <Transition>PERTT</Transition>  <!-- Transition name if used -->
          </SID>
-         <!-- Alternative to SID. Selected runway for departure plus length of runway extension line
+         <!-- Alternative to SID. Selected runway for departure plus length of runway extension line. -->
          <SID>
          <Name>KYKM9</Name>
            <Runway>9</Runway>
@@ -277,9 +281,12 @@ Order of elements does not matter. Missing elements will be logged as warning ex
          </STAR>
          <!-- Approaches are resolved by either ARINC or the combination of Name, Runway, Type and Suffix -->
          <Approach>
-           <Name>TATVI</Name>                   <!-- Optional approach name. Name of approach fix. ARINC is required if this is not given. -->
-           <ARINC>I16-Z</ARINC>                 <!-- ARINC name of the approach. Type, runway and optional suffix. -->
-           <Runway>16</Runway>                  <!-- Optional approach runway. Not given for circle-to-land approaches. -->
+           <Name>TATVI</Name>                   <!-- Optional approach name. Name of approach fix.
+                                                     ARINC is required if this is not given. -->
+           <ARINC>I16-Z</ARINC>                 <!-- ARINC name of the approach.
+                                                     Type, runway and optional suffix. -->
+           <Runway>16</Runway>                  <!-- Optional approach runway.
+                                                     Not given for circle-to-land approaches. -->
            <Type>ILS</Type>                     <!-- Optional approach type -->
            <Suffix>Z</Suffix>                   <!-- Optional approach suffix -->
            <Transition>HUMEK</Transition>       <!-- Transition name if used -->
@@ -303,7 +310,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
            <Name>Penticton</Name>                                 <!-- Optional name -->
            <Ident>CYYF</Ident>                                    <!-- Required ident -->
            <Type>AIRPORT</Type>                                   <!-- Optional type -->
-           <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/> <!-- Optional position. Helps to resolve the correct airport. -->
+           <Pos Lon="-119.602287" Lat="49.462452" Alt="1122.00"/> <!-- Optional position.
+                                                                       Helps to resolve the correct airport. -->
          </Alternate>
          <Alternate>
            <Name>Grand Forks</Name>
@@ -362,7 +370,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
            <Pos Lon="-120.767761" Lat="49.000000" Alt="30000.00"/>
          </Waypoint>
 
-         <!-- ====== Destination airport. Other waypoint types are allowed for flight plan snippets. ====== -->
+         <!-- ====== Destination airport.
+                     Other waypoint types are allowed for flight plan snippets. ====== -->
          <Waypoint>
            <Name>Kelowna</Name>
            <Ident>CYLW</Ident>
@@ -394,7 +403,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
         :name: performance-example
 
         <?xml version="1.0" encoding="UTF-8"?>
-        <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmperf.xsd">
+        <LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmperf.xsd">
           <AircraftPerf>
 
              <!-- ====== Header with metadata ====== -->
@@ -416,7 +426,8 @@ Order of elements does not matter. Missing elements will be logged as warning ex
 
         https://www.littlenavmap.org</Description>  <!-- Remarks as entered in user interface tab Remarks. -->
               <FuelAsVolume>0</FuelAsVolume>        <!-- 0: Used fuel unit is lbs. 1: Used fuel unit is gal. -->
-              <JetFuel>1</JetFuel>                  <!-- Indicator for fuel type needed when switching between units in user interface.
+              <JetFuel>1</JetFuel>                  <!-- Indicator for fuel type needed when switching between
+                                                         units in user interface.
                                                          Also checked for simulator aircraft. -->
             </Options>
 

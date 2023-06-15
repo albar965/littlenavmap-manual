@@ -687,6 +687,8 @@ Marks an airport with a yellow circle as add-on.
 This function will add a userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
 Note that the userpoint is not attached to the airport and will not be hidden with airports and is not affected by airport filters.
 
+You can add you own userpoint type names starting with ``Addon`` to create more add-on categories. See :ref:`customize-icons` for more information.
+
 See chapter :doc:`USERPOINT` for more information how to edit or remove the highlight.
 
 .. _userpoints:

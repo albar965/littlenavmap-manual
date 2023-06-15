@@ -248,6 +248,13 @@ Note that the userpoint types cannot be translated to other languages for now.
 
 Below a list of the most important userpoint types.
 
+Addon
+^^^^^^^^
+
+The userpoint type ``Addon`` and all other user defined type names starting with ``Addon`` are used to highlight add-on airports.
+The built-in type ``Addon`` can be added using :ref:`mark-airport-addon-map` from the map and other context menus.
+You can add you own userpoint type names starting with ``Addon`` to create more add-on categories. See :ref:`customize-icons` for more information.
+
 Airports
 ^^^^^^^^
 
