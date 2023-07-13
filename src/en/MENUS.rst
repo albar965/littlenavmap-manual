@@ -1439,11 +1439,13 @@ Once connected, the compass rose will be attached to the user aircraft and follo
 
 This can be disabled with this menu item which detaches the rose from the user aircraft and keeps it centered on the screen.
 
+AI and Online Aircraft
+^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. _show-ai-and-multiplayer-aircraft:
 
 |Show AI and Multiplayer Aircraft| Show AI and Multiplayer Aircraft
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Shows AI and multiplayer aircraft on the map. Multiplayer
 vehicles can be displayed from e.g. FSCloud, VATSIM or Steam sessions.
 
@@ -1488,7 +1490,7 @@ All aircraft icons can be customized: :ref:`customize-aircraft-icons`.
 .. _show-online-aircraft:
 
 |Show Online Aircraft| Show Online Aircraft
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 As :ref:`show-ai-and-multiplayer-aircraft` but shows online network aircraft on the map if enabled. This setting affects all traffic from online
 networks like IVAO, VATSIM or custom networks which can be enabled in ``Options`` on page
@@ -1499,7 +1501,7 @@ See :doc:`ONLINENETWORKS` for an overview and :ref:`vehicles-legend` for informa
 .. _show-ai-and-multiplayer-ships:
 
 |Show AI and Multiplayer Ships| Show AI and Multiplayer Ships
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 As :ref:`show-ai-and-multiplayer-aircraft` but enables or disabless AI or multiplayer ships on the
 map. ``Fetch AI or multiplayer ships`` has to be enabled in the :ref:`connect-options` to see AI ships.
@@ -1519,6 +1521,13 @@ Show a latitude/longitude grid as well as the
 the date line) on the map.
 
 A 30, 5 or 1 degree grid is shown depending on zoom distance.
+
+.. _show-map-grid-options:
+
+|Show Map Grid Options| Show Map Grid Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Shows a dialog window which allows to configure the map grid colors and labels.
 
 .. _show-country-and-city-names:
 
@@ -2970,6 +2979,7 @@ See :doc:`UPDATE` for more information.
 .. |AI or Multiplayer Aircraft| image:: ../images/icon_aircraft_small.png
 .. |Online Multiplayer Aircraft| image:: ../images/icon_aircraft_online.png
 .. |Show Map Grid| image:: ../images/icon_mapgrid.png
+.. |Show Map Grid Options| image:: ../images/icon_mapgridconfig.png
 .. |Map| image:: ../images/icon_map.png
 .. |Show Country and City Names| image:: ../images/icon_cities.png
 .. |Show Hillshading| image:: ../images/icon_hillshading.png

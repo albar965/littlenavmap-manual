@@ -338,6 +338,10 @@ CARTO Positron
     `OpenStreetMap <https://www.openstreetmap.org>`__, under
     `ODbL <https://www.openstreetmap.org/copyright>`__.
 
+open flightmaps
+    A high quality VFR map provided by `open flightmaps <https://www.openflightmaps.org/>`__.
+    Note that details are visible at lower zoom distances smaller than 50 NM or 100 km.
+
 OpenStreetMap
     This is an online raster (i.e. based on images) map without hill shading.
     The tiles for this map are provided by `OpenStreetMap <https://www.openstreetmap.org>`__.

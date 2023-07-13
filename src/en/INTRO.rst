@@ -4,15 +4,36 @@ User Interface
 Terms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``Menu`` -> ``Menu Item`` denotes paths through the main menu or the context menus.
+``Button`` is used for buttons or other texts from the *Little Navmap* user interface.
+
+``Menu`` -> ``Sub-menu`` -> ``Menu Item`` denotes paths through the main menu or a context menu.
 
 See :doc:`GLOSSARY` for terms.
 
+.. _ui-file-assoc:
+
+File Associations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Windows :ref:`installation-windows-installer` optionally creates file associations for *Little Navmap*'s own file types as well as
+often used flight plan types.
+
+This means you can double click a LNMPLN, PLN or FMS file in Windows Explorer and *Little Navmap* is either started or an already running
+instance is used to load a flight plan or another file.
+
+This works on all supported operating systems. All you have to do is assign *Little Navmap* to a file extension or a file type.
+The actual process can differ across operating system and Linux desktop.
+
+See :doc:`COMMANDLINE` for more information.
+
+.. _ui-dock:
 
 Dock Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See the chapter :doc:`DOCKWINDOWS` for more information about using dock and floating windows.
+
+.. _ui-tabs:
 
 Tabs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

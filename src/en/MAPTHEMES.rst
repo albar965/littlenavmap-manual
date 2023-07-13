@@ -4,7 +4,7 @@ Map Themes
 .. _installing-map-themes:
 
 Installing Map Themes
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Additional map themes can be installed in the directory set in options on page :ref:`cache`,
 section :ref:`options-mapthemes`. You have to enter a valid path there before using map themes.
@@ -43,7 +43,7 @@ Note that you have to restart *Little Navmap* to see the new map themes.
 .. _creating-map-themes:
 
 Creating Map Themes
--------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To add an arbitrary online or offline map to *Little Navmap* simply add
 the map directory from a downloaded or self created map theme to the

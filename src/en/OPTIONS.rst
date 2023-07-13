@@ -983,6 +983,10 @@ read when loading the simulator scenery library database.
 
 Note that airport files in this list are always read last which can affect the display in MSFS, FSX or P3D.
 
+.. note::
+
+   The add-ons must be at the top level for the selected directory and will not be read recursively.
+
 .. _scenery-library-database-exclude:
 
 Scenery library directories or files to exclude from loading

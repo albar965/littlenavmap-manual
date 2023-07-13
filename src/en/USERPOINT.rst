@@ -386,9 +386,9 @@ Position   Name                    Required   Empty Allowed   Comment
 1          Type                    Yes        Yes             One of the predefined or user defined types. The icon for `Unknown` is used if the type does not match one of the known types.
 2          Name                    Yes        Yes             Free to use field. Used for Garmin export.
 3          Ident                   Yes        Yes             Required only for Garmin and X-Plane export. Has to be an unique valid identifier with maximum of five characters for these exports.
-4          Latitude                Yes        No              Range from -90 to 90 degrees using dot `.` as decimal separator
-5          Longitude               Yes        No              Range from -180 to 180 degrees using dot `.` as decimal separator.
-6          Elevation               No         Yes             Must be a valid number if used. Unit is always feet.
+4          Latitude                Yes        No              Range from -90 to 90 degrees using dot ``.`` as decimal separator
+5          Longitude               Yes        No              Range from -180 to 180 degrees using dot ``.`` as decimal separator.
+6          Elevation               No         Yes             Must be a valid number when used. A suffix ``f`` indicates an elevation unit feet and ``m`` indicates meter. The default unit with no suffix given is feet.
 7          Magnetic declination    No         Yes             Ignored on import and set to a valid calculated value on export.
 8          Tags                    No         Yes             Free to use field. GUI has no special tag search.
 9          Description             No         Yes             Free to use field which allows line breaks.

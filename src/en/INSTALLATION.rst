@@ -1,14 +1,14 @@
 Installation
 ------------
 
-*Little Navmap* for Windows is available as a 64-bit or 32-bit application and was tested with
-Windows 10 and Windows 11.
+*Little Navmap* for **Windows** is available as a 64-bit or 32-bit application and was tested with
+Windows 10 and Windows 11. You can download either an installer package or a Zip-archive.
 
-macOS is supported up from macOS High Sierra 10.13 inclusive. You need Rosetta to run *Little Navmap* on Apple Silicon / M1 computers.
+Apple **macOS** is supported from macOS High Sierra 10.13 or later.
+You need Rosetta to run *Little Navmap* on Apple Silicon / M1 computers with the
+exception of :doc:`XPCONNECT` which is available as a native X-Plane plugin.
 
-Linux versions built on recent Ubuntu releases are available and should work on other distributions as well.
-
-The macOS and Linux versions are both 64-bit.
+**Linux** versions built on recent Ubuntu releases are available and should work on other distributions as well.
 
 Each version of *Little Navmap* and the other programs come with a plain text file ``CHANGELOG.txt``
 which has important notes and describes the changes between versions.
@@ -41,29 +41,85 @@ settings are reset to default if an updated version is installed.
 
 See :doc:`FILES` for more information about settings, database and cache files.
 
-Windows Builds
-~~~~~~~~~~~~~~~~~~~
+.. _installation-windows:
 
-There are two builds of Little Navmap and Little Navconnect for Windows available now:
+Windows
+~~~~~~~
+
+.. _installation-windows-builds:
+
+Builds
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are two builds of Little Navmap and Little Navconnect for Windows available:
 
 -  **Windows 64-bit: For MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
 -  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
 
 You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
 
-Note that *Little Navmap* and all related programs are interoperable across the network (*Little Navmap* and *Little Navconnect*)
+Note that *Little Navmap* and all related programs are inter-operable across the network (*Little Navmap* and *Little Navconnect*)
 as well as the X-Plane plugin (*Little Navmap*, *Little Navconnect* and *Little Xpconnect*).
 
 Also both versions share the same settings and databases. You can switch from one version to another without problems.
 
-Windows
-~~~~~~~
+.. _installation-windows-installer:
 
-The installation of *Little Navmap* does not change or create any registry entries
-in Windows and involves a simple copy of files therefore an installer
-or setup program is not required.
+Installer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use the self-installing package based on `Inno Setup <https://jrsoftware.org/isinfo.php>`__ to install *Little Navmap* on your computer.
+The installer packages are named ``LittleNavmap-...-Install.exe`` and contain the same programs and files as the Zip archives.
+
+The installation process always installs the program for all users in a protected directory like ``C:\Programs``.
+You can manually select another directory but I recommend to leave the default location.
+Both the 32-bit and the 64-bit versions can be installed in parallel.
+
+There is no need to uninstall the program when updating.
+The installation process automatically detects the last selected directory and overwrites the current installation.
+
+File types can optionally be associated with *Little Navmap* which allows to load a flight plan by double
+clicking on a LNMPLN file in Windows Explorer, for example. *Little Navmap* is either started or an already running
+instance is used to load the flight plan.
+
+Start menu entries for all included programs as well as the most important files and links are created.
+
+.. note::
+
+     There is no need to install or modify any files in the installation folder for the
+     webserver or map themes.
+
+     See :ref:`web-server` for information how to change the root folder and
+     :doc:`MAPTHEMES` for information how to set the map theme folder and how to install additional map
+     themes.
+
+Uninstall
+'''''''''''''''''''''''''''''''''''''''
+
+You can uninstall *Little Navmap* by right clicking on the icon in the Windows start menu and selecting ``Uninstall``.
+Alternatively uninstall *Little Navmap* from Windows settings or control panel.
+
+The uninstaller asks to optionally delete all settings and databases created by *Little Navmap* after removing the main program.
+Files in directories like ``Documents\Little Navmap`` are not deleted.
 
 .. warning::
+
+   Note that this step also removes the userpoint database as well as the logbook and cannot be undone.
+
+The two folders which can be deleted are:
+
+-  Settings and databases: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
+-  Online map cache: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth``
+
+.. _installation-windows-manual:
+
+Manual Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The manual installation of *Little Navmap* does not change or create any registry entries
+in Windows and involves a simple Zip extraction of files.
+
+.. important::
 
     Do not extract the archive into the directory ``c:\Program Files\`` or
     ``c:\Program Files (x86)\`` since this requires administrative
@@ -73,13 +129,18 @@ or setup program is not required.
     There is no need to run *Little Navmap* as administrator.
     Adapt folder permissions if you have to export flight plans to protected places.
 
-Extract the Zip archive into a directory like
-``c:\Users\YOURNAME\Documents\Little Navmap`` or
-``c:\Users\YOURNAME\Programs\Little Navmap``.
+Extract the Zip archive into a directory like ``C:\Users\YOURNAME\Documents\Little Navmap`` or
+``C:\Users\YOURNAME\Programs\Little Navmap``.
 Then start the program by double-clicking ``littlenavmap.exe``. The
 extension ``.exe`` might be hidden in Windows Explorer depending on
 settings. In that case look for a file ``littlenavmap`` having a light
 blue globe icon |Little Navmap Icon|.
+
+Uninstall
+'''''''''''''''''''''''''''''''''''''''
+
+Simply remove the program folder.
+See :doc:`FILES` for more settings, cache and database folders if you'd like to completely remove *Little Navmap*.
 
 SimConnect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

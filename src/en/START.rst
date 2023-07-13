@@ -1,10 +1,10 @@
 Start
 ---------------------------
 
-This page opens automatically in your browser after updating or first installation of *Little Navmap*
-and is a part of the *Little Navmap* online manual.
+**This page opens automatically in your browser after updating or first installation of** *Little Navmap*
+**and is a part of the** *Little Navmap* **online manual.**
 
-It gives valuable links and information for first time users and provides a list of first steps.
+**It gives valuable links and information for first time users and provides a list of first steps.**
 
 Other chapters helpful for beginners:
 
@@ -14,7 +14,9 @@ Other chapters helpful for beginners:
 
 See also :doc:`AIRCRAFTCENTER` for general information about centering the aircraft during flight, as this feature can be confusing to new users.
 
-The chapter :doc:`MENUS` explains all **main menu items**. Note that most toolbar items have an equivalent in the main menu.
+The chapter :doc:`MENUS` explains all **main menu items**. You can navigate through the menu structure in the user manual contents
+on the left.
+Note that most toolbar items have an equivalent in the main menu.
 
 **Context menus** are an important element in *Little Navmap*.
 All context menus and items are explained in the following chapters:
@@ -120,10 +122,10 @@ screen available on your flying computer but a spare old notebook or computer.
 The remote computer does not need a simulator installation and there is no need to share the
 scenery library of the simulator.
 
-The programs are interoperable which means that you can connect *Little Navmap* from a Linux or
-macOS computer to *Little Navconnect* on a Windows computer.
+The programs are inter-operable which means that you can connect *Little Navmap* from a Linux or
+macOS computer to *Little Navconnect* on a Windows computer. The same applies to 32-bit and 64-bit versions.
 
-See :doc:`NETWORK` on information how to set up a remote/networked connection.
+**See** :doc:`NETWORK` **on information how to set up a remote/networked connection.**
 
 .. _things-to-do-after-installing:
 
@@ -152,7 +154,7 @@ Useful Links
 
 Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
 
-The sources of this manual are available on `Github <https://github.com/albar965/littlenavmap-manual>`__.
+The sources of this manual are available on `GitHub <https://github.com/albar965/littlenavmap-manual>`__.
 
 .. |Load Scenery Library| image:: ../images/icon_database.png
 .. |Flight Simulator Connection| image:: ../images/icon_network.png

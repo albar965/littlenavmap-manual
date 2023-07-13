@@ -14,14 +14,21 @@ The lower part provides a quick help.
 
 .. role:: dim-style
 
-The input field is split into two sections. The top most can cover several lines and is is shown
+.. _routedescr-input:
+
+Input Field
+~~~~~~~~~~~~~~~~
+
+The upper input field is split into two sections. The top most can cover several lines and is is shown
 using **bold text**. This is the active section which is read and the results are shown in the output.
+
 The lower text can be seen as a kind of a notepad, is displayed in :dim-style:`gray color` and is ignored for reading.
-The two sections are separated by an empty line.
+The two sections are separated by an empty line. You can copy and paste lines between the two sections using the context menu
+or the keyboard shortcuts copy ``Ctrl+C``, cut ``Ctrl+X`` and paste ``Ctrl+V``.
 All texts are saved on exit.
 
-The menu button |Menu Button| provides a dropdown menu than can be used
-to customize the generated route string.
+Reading
+~~~~~~~~~~~~~~~~
 
 *Little Navmap* tries to use as much of the route as possible
 even if parts of the flight plan like waypoints or airways cannot be
@@ -70,18 +77,23 @@ Click ``Create Flight Plan`` before doing changes on the map or in the flight pl
           found. Altitude, SID and STAR were recognized.
           More inactive route descriptions are stored below (2).
 
+.. _routedescr-buttons:
+
 Buttons
 ~~~~~~~
 
 Note that some buttons are now shown when opening this dialog from :doc:`LOADSIMBRIEF`.
 
+-  ``Undo`` |Undo| and ``Redo`` |Redo|: Undo changes in the text input field. This does not affect the flight plan table.
 -  ``To Clipboard``: Copy the current active description from the input field as plain text to the clipboard.
 -  ``From Clipboard``: Insert text from clipboard into the top of the input field making it the active route description.
    The inserted text is converted to upper case and all invalid characters are removed from the text before reading.
 -  ``Load from Flight Plan``: Create the route string from the current
    flight plan and inserts it into the top of the input field making it the active route description.
    Use this after changing settings with drop down
-   menu button or after modifying the flight plan on the map or in the flight plan table.
+   menu buttons or after modifying the flight plan on the map or in the flight plan table.
+-  ``IFR`` or ``VFR``: The flight plan type used when creating a plan. This setting will be taken over
+   into the field :ref:`flight-plan-type` in the tab ``Flight Plan`` when clicking one of the ``Create Flight Plan ...`` buttons.
 -  Menu Button |Menu Button|: ``Write`` denotes flight plan to
    description and ``Read`` denotes description to flight plan.
    You can tear off the drop down menu from the button by clicking on the dashed line on top of it.
@@ -122,15 +134,15 @@ Note that some buttons are now shown when opening this dialog from :doc:`LOADSIM
    -  ``Read: Match coordinates to waypoints``: Tries to matches coordinates to nearby waypoints.
       ``EICK 5000N00760W EDDF`` will result in ``EICK GAPLI EDDF`` if this is enabled, for example.
 
--  ``Create Flight Plan``: Closes the dialog and creates a new flight
-   plan for the parsed route description and replaces the current plan.
-   You have to click ``Read Route Description`` before you can create a
-   flight plan.
+-  ``Create Flight Plan and Close``: Closes the dialog and creates a new flight
+   plan for the read route description. Replaces the current flight plan. You can undo this change in the
+   :ref:`flight-plan-table`.
+-  ``Create Flight Plan``: As above but keeps the dialog window open.
 
 .. tip::
 
    In any case you can use Undo and Redo to change the input field (right click context menu in the input field)
-   as well as in the flight plan table (:ref:`undo-redo`).
+   as well as the flight plan table (:ref:`undo-redo`).
 
 .. _routedescr-airport-ident:
 
@@ -142,6 +154,8 @@ Note that IATA codes are only read for departure and destination since they can 
 with navaids en-route.
 
 X-Plane internal codes like ``XPA000B`` are recognized despite being avoided for display.
+
+.. _routedescr-format:
 
 Format
 ~~~~~~
@@ -320,4 +334,5 @@ alternate airports:**
 ``KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT``
 
 .. |Menu Button| image:: ../images/icon_menubutton.png
-
+.. |Redo| image:: ../images/icon_redo.png
+.. |Undo| image:: ../images/icon_undo.png

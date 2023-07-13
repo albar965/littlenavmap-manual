@@ -9,6 +9,20 @@ File paths will differ if using one of the portable scripts (:ref:`portable-exec
 
    You can open all file locations from the main menu ``Tools`` -> :ref:`files-and-directories`.
 
+.. _files-backup:
+
+Backups
+~~~~~~~~
+
+*Little Navmap* creates a copy of the most important files on startup and keeps up to three additional
+backup files: ``..._backup.sqlite`` to ``..._backup.sqlite.2``, for example. You can copy these files
+back to the original if you did something wrong.
+
+This applies to the files for :ref:`files-userdata`,  :ref:`files-logbook` and :ref:`files-trails`.
+
+Furthermore, *Little Navmap* creates backups of important files when starting an updated version to avoid accidental data loss.
+These files end with ``..._update-backup.1`` to ``..._update-backup.3``.
+
 .. _files-log:
 
 Logs
@@ -37,6 +51,17 @@ an error. All two are needed in some cases but sending the first is often suffic
 
         **Please compress log and other files before sending them by email.**
 
+.. _files-trails:
+
+Trails
+~~~~~~~~~~~~~
+
+Aircraft trails are stored in separate files:
+
+-  ``little_navmap.track``: The main user aircraft trail shown on the map. Binary file. This trail can be exported
+    as a GPX using :ref:`export-flight-plan-as-gpx` in the menu ``File``.
+-  ``little_navmap.logbooktrack`` and ``little_navmap_profile.track`` are temporary files for saving trails.
+
 .. _configuration:
 
 Configuration
@@ -55,9 +80,6 @@ All configuration files for my programs are stored in these directories:
 
 -  ``little_navmap.ini``: INI style configuration file. Text file. Can be opened with :ref:`files-and-directories-ini`.
 -  ``little_navmap.history``: The map position history. This is a binary file which cannot be opened in text editors.
--  ``little_navmap.track``: The user aircraft trail. Binary file.
--  ``little_navmap.logbooktrack``: Separate track for logbook. Binary file.
--  ``little_navmap_profile.track``: User aircraft trail for the elevation profile. Binary file.
 -  ``little_navmap.lnmpln``: Temporary flight plan file in LNMPLN format. This is used to reload changed flight plans without manual save.
 
 Three more configuration files are created for customization of colors
@@ -127,16 +149,16 @@ Scenery Library
 ^^^^^^^^^^^^^^^
 
 The number of files depends on which simulators you have installed and
-which scenery libraries you've loaded.
+which scenery libraries you have loaded.
 
 The files are:
 
 -  ``little_navmap_.sqlite``: An empty dummy database. Can be ignored.
 -  ``little_navmap_fsx.sqlite``: Flight Simulator X
 -  ``little_navmap_fsxse.sqlite``: Flight Simulator - Steam Edition
--  ``little_navmap_p3dv3.sqlite``: Prepar3D v3
 -  ``little_navmap_p3dv4.sqlite``: Prepar3D v4
 -  ``little_navmap_p3dv5.sqlite``: Prepar3D v5
+-  ``little_navmap_p3dv6.sqlite``: Prepar3D v6
 -  ``little_navmap_msfs.sqlite``: Microsoft Flight Simulator 2020
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
 -  ``little_navmap_xp12.sqlite``: X-Plane 12
@@ -152,15 +174,17 @@ Userpoints
 The file ``little_navmap_userdata.sqlite`` contains the user defined
 waypoints.
 
-*Little Navmap* creates a backup copy on startup and keeps up to four
+*Little Navmap* creates a copy on startup and keeps up to three additional
 backup files: ``little_navmap_userdata_backup.sqlite`` to
-``little_navmap_userdata_backup.sqlite.3``. You can copy these files
+``little_navmap_userdata_backup.sqlite.2``. You can copy these files
 back to the original database ``little_navmap_userdata.sqlite`` if you
 did something wrong.
 
 .. tip::
 
-   Open this folder in your file manager using :ref:`files-and-directories-db` select the userpoint database and hit ``Ctrl+C`` (copy file) and ``Ctrl+V`` (paste file). This will add a copy of the database which will be named ``little_navmap_userdata (1).sqlite`` or similar.
+   Open this folder in your file manager using :ref:`files-and-directories-db` select the
+   userpoint database and hit ``Ctrl+C`` (copy file) and ``Ctrl+V`` (paste file).
+   This will add a copy of the database which will be named ``little_navmap_userdata (1).sqlite`` or similar.
 
    This is the fastest way to create a backup.
 
@@ -182,8 +206,8 @@ Logbook
 The file ``little_navmap_logbook.sqlite`` is used to store logbook
 entries.
 
-*Little Navmap* creates backup copies on startup and keeps up to four
-backup files as for the user defined waypoints as described above.
+*Little Navmap* creates copies on startup and keeps up to two additional
+backup files for the user defined waypoints as described above.
 
 Other Database Files
 ^^^^^^^^^^^^^^^^^^^^

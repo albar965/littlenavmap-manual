@@ -59,7 +59,7 @@ You will see an :warning-style:`orange warning message` if you use a X-Plane sce
 
 .. important::
 
-    Note that there are two builds of Little Navmap and Little Navconnect for Windows available now:
+    Note that there are two builds of Little Navmap and Little Navconnect for Windows available:
 
     -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
     -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
