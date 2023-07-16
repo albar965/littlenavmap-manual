@@ -82,6 +82,9 @@ File types can optionally be associated with *Little Navmap* which allows to loa
 clicking on a LNMPLN file in Windows Explorer, for example. *Little Navmap* is either started or an already running
 instance is used to load the flight plan.
 
+If both the 32-bit and the 64-bit versions are installed, the last installed version is associated to the file types.
+Change the association manually in Windows Explorer if needed.
+
 Start menu entries for all included programs as well as the most important files and links are created.
 
 .. note::
@@ -135,6 +138,9 @@ Then start the program by double-clicking ``littlenavmap.exe``. The
 extension ``.exe`` might be hidden in Windows Explorer depending on
 settings. In that case look for a file ``littlenavmap`` having a light
 blue globe icon |Little Navmap Icon|.
+
+File types have to be manually associated to *Little Navmap* when using this installation method. Use Windows Explorer or
+another file manager used on your operating system to do this.
 
 Uninstall
 '''''''''''''''''''''''''''''''''''''''
