@@ -70,6 +70,14 @@ Es werden einzelne Flugpläne und alle zulässigen Formate zum Laden von
 (``FMS``, ``FLP``, ``PLN``) sowie Flugzeugleistungsdateien (``lnmperf``)
 akzeptiert.
 
+.. note::
+
+       Beachten Sie, dass die meisten Flugplanformate eingeschränkt sind und nicht alle Informationen
+       bereitgestellt werden oder aus einer Datei geladen werden können. Zum Beispiel kann die
+       Reiseflughöhe in einigen Fällen nicht aus X-Plane FMS geladen werden, Luftstraßen und
+       Parkpositionen können für viele Formate nicht wiederhergestellt werden, Prozedurübergänge
+       können nicht aus MSFS PLN geladen werden und mehr.
+
 .. warning::
 
      Speichern Sie immer eine Kopie des Flugplans im PLN-Format, um alle
@@ -237,6 +245,9 @@ Exportiere Flugplan als  HTML-Seite
 
 Speichert die angezeigte Flugplantabelle als HTML-Datei, die in einem Webbrowser angezeigt werden kann. Symbole werden in die Seite eingebettet.
 
+Die exportierte Datei spiegelt die Änderungen in der Flugplantabellenansicht wider, wie die
+Spaltenreihenfolge. Spalten, die ausgeblendet oder auf eine Mindestbreite verkleinert sind, werden nicht berücksichtigt.
+
 .. _export-flight-plan-as-gpx:
 
 Flugplan als GPX exportieren
@@ -364,29 +375,6 @@ alle Dateien ordnungsgemäß auf der Karte angezeigt werden.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Löscht alle geladenen KML Dateien von der Karte.
-
-.. _work-offline:
-
-|Offline| Offline arbeiten
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Beendet das Laden von Kartendaten aus dem Internet. Dies betrifft die
-*OpenStreetMap*, *OpenTopoMap* und alle anderen Online-Map-Themen sowie
-die Höhendaten. Eine rote Anzeige ``Offline`` wird angezeigt, wenn
-dieser Modus aktiviert ist.
-
-Sie sollten die Anwendung neu starten, nachdem Sie wieder online
-gegangen sind.
-
-Beachten Sie, dass diese Funktion nicht das Herunterladen von Wetterinformationen
-betrifft. Diese können Sie in den entsprechenden Menüs separat abschalten.
-
-.. warning::
-
-     Das unbeabsichtigte Aktivieren dieser Funktion führt zu einer blockartigen oder unscharfen Kartendarstellung,
-     wenn Online-Karten verwendet werden.
-
-     Dies liegt daran, dass der Kartendownload von neuen Bildkacheln blockiert wird.
 
 .. _save-map-as-image:
 
@@ -1468,6 +1456,13 @@ Siehe auch :ref:`airport-weather` und :ref:`weather`.
 
 Die folgenden Optionen stehen zur Verfügung:
 
+Deaktiviert
+''''''''''''''''
+
+Deaktiviert die Wetterquelle, wodurch auch alle Dateizugriffe unterdrückt werden. Der Menüpunkt
+:ref:`show-airport-weather` und die Schaltfläche in der Symbolleiste werden deaktiviert, wenn dies
+ausgewählt ist.
+
 Flugsimulator
 '''''''''''''
 
@@ -2271,11 +2266,27 @@ Weitere Informationen über Dockfenster finden Sie unter :doc:`DOCKWINDOWS`.
 
 .. _allow-window-docking:
 
-Dockfenster einrasten
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Dockfenster einrasten erlauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dies ist standardmäßig aktiviert. Deaktivieren Sie dies, wenn Sie nicht möchten, dass schwebende (d.h. nicht angedockte) Fenster beim Verschieben
 wieder in das Hauptfenster einrasten.
+
+Siehe auch :doc:`DOCKWINDOWS`.
+
+.. _allow-window-moving:
+
+Dockfenster verschieben erlauben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Standardmäßig aktiviert. Deaktivieren Sie diese Einstellung, um zu vermeiden, dass Dockfenster verschoben
+werden, wenn Sie versehentlich auf die Titelleiste klicken und ziehen. Dies bringt
+normalerweise das Fensterlayout durcheinander. Wenn Sie diese Funktion deaktivieren, können Sie
+schwebende (d. h. nicht angedockte) Fenster immer noch verschieben.
+
+Sie können die Größe der angedockten Fenster immer noch am Rahmen zwischen den Fenstern ändern.
+Sie können auch ein angedocktes Fenster immer noch in ein schwebendes Fenster verwandeln, indem Sie auf
+die Titelleiste doppelt klicken.
 
 Siehe auch :doc:`DOCKWINDOWS`.
 

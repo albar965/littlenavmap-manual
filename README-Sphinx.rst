@@ -18,6 +18,8 @@ The new documentation style will rollout with *Little Navmap* 2.6.
 
 BTW: This is a reStructuredText document.
 
+Issues can be submitted at https://github.com/albar965/littlenavmap/issues .
+
 Examples
 ----------
 

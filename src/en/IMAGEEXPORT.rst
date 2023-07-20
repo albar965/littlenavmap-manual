@@ -6,7 +6,7 @@ AviTab or copying it to the clipboard.
 
 **Dialog input and selection fields:**
 
--  ``Resolution``: Select the desired resolution here. The following
+-  ``Resolution``: Select the desired resolution in pixels here. The following
    options are available:
 
    -  ``Current Map View``: Export the map view as shown. The current
@@ -27,14 +27,26 @@ AviTab or copying it to the clipboard.
    This works best with the map projection ``Mercator``. As a result the
    map might be zoomed out farther than expected in some cases.
 
+*Little Navmap* will update the map image tiles for online maps if another option than ``Custom
+Resolution`` is selected. A progress dialog running for maximal 60 seconds will appear while
+updating the map in background. You can decide to cancel the download and proceed to export the image without
+updating all tiles.
+
+.. figure:: ../images/image_export.jpg
+
+       Dialog shown after choosing ``Save Map as Image ...``.
+
 .. note::
 
      All options except ``Current Map View`` will change visible
      details. Navaids might appear which are not shown in the map on screen,
      for example.
 
-.. figure:: ../images/image_export.jpg
+.. warning::
 
-       Dialog shown after choosing ``Save Map as Image ...``.
+    Choosing a too high resolution might result in missing map features due to cache overflow. You
+    can notice this by missing airports on half of the image, for example.
+
+
 
 

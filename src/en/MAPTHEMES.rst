@@ -1,9 +1,35 @@
-Creating Map Themes
--------------------
+Map Themes
+-------------------------------------------
 
-To add an arbitrary online or offline map to *Little Navmap* simply add
-the map directory from a downloaded or self created map theme to the
-``data\maps\earth`` directory.
+.. _installing-map-themes:
+
+Installing Map Themes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Additional map themes can be installed in the directory set in options on page :ref:`cache`,
+section :ref:`options-mapthemes`. You have to enter a valid path there before using map themes.
+
+New maps come as downloads with different directory structures. Some contain the base folder ``data\maps\earth`` in the downloaded archive some do not.
+Each map installed theme has to consist of a directory containing the related ``.dgml`` and other files.
+The name of the map directory and the ``.dgml`` file have to match. For example ``.../norway-topo/norway-topo.dgml``.
+
+Note that you have to restart *Little Navmap* to see the new map themes.
+
+
+.. figure:: ../images/map_theme_options.jpg
+        :scale: 70%
+
+        Select map theme folder ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
+        shows a valid directoy and one map theme found. *Click image to enlarge.*
+
+.. figure:: ../images/map_theme.jpg
+       :scale: 70%
+
+       Installing a map theme from a ZIP file ``OpenStreetMap French.zip``. The compressed file contains the subdirectory ``data\maps\earth``.
+       You have to copy the directory ``osm-fr`` containing the file ``osm-fr.dgml``
+       into your selected map theme directory ``Documents\Little Navmap Files\Map Themes``.
+
+       **You have to restart** *Little Navmap* **to see the new map themes.** *Click image to enlarge.*
 
 .. tip::
 
@@ -12,28 +38,48 @@ the map directory from a downloaded or self created map theme to the
       `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
       `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
 
-The full path to the DGML file (see links below for more details about
-DGML) describing the map must be
+
+
+.. _creating-map-themes:
+
+Creating Map Themes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add an arbitrary online or offline map to *Little Navmap* simply add
+the map directory from a downloaded or self created map theme to the
+``data\maps\earth`` directory.
+
+Note that you need to restart *Little Navmap* to see the new map themes in the menu.
+
+.. tip::
+
+      Also check out the `Little Navmap Support Forum at
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
+      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
+      `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
+
+The full path to the DGML file (see links below for more details about DGML) describing the map must be
 ``...\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml`` if
 you like to add the `OpenCycleMap <https://www.opencyclemap.org>`__ for
 example. The DGML file can refer to an online map service or included
 offline map data. Usually a map theme contains many more files than only
 the DGML.
 
-The menu ``View`` -> ``Theme`` in the main menu and the toolbar drop
-down box will receive an entry for each additional map theme. Custom map
-themes are prefixed with a ``*`` in the drop down box and with the word
-``Custom`` in the menu.
+The menu ``View`` -> :ref:`theme-menu` in the main menu and the toolbar drop
+down box will receive an entry for each additional map theme.
 
-The options ``Show Country and City Names`` and ``Show Hillshading`` are
+The option :ref:`show-country-and-city-names` is
 enabled for all additional map themes but might not work depending on
 properties defined in the map's DGML file.
+
+See the comments in the included file ``data\maps\earth\example\example.dgml`` or here online
+`example.dgml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/marble/data/maps/earth/example/example.dgml>`__ for more information.
 
 More maps and information about map configuration and DGML files can be
 found here on the Marble and KDE pages:
 
 -  Download more maps for the Marble widget (only Earth maps are
-   supported in ``Little Navmap``): `Additional
+   supported in *Little Navmap*): `Additional
    Maps <https://marble.kde.org/maps.php>`__
 -  A tutorial that shows how to create a map theme based on tiled
    images:
@@ -44,3 +90,4 @@ found here on the Marble and KDE pages:
    maps <https://techbase.kde.org/Marble/OSMSlippyMaps>`__
 -  How to create a historical map for Marble: `Historical Maps for
    Marble <https://techbase.kde.org/Marble/HistoricalMaps>`__
+

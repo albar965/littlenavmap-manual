@@ -38,7 +38,7 @@ functions below:**
    map and in the elevation profile. Note that wind and altitude
    restrictions in procedures might affect the top of descent or top or
    climb distances.
--  Fuel planning report in tab ``Fuel Report`` of the dock window
+-  Fuel planning report in :ref:`fuel-report` of the dock window
    ``Flight Planning``.
 -  Remaining fuel at each leg in flight plan table.
 -  Remaining fuel at top of descent and destination in the tab
@@ -55,37 +55,57 @@ Additional display of other fuel units can be enabled in the dialog
 See :ref:`toc-and-tod-paths` for details about the
 calculation of TOC and TOD.
 
-Red warning messages are shown if aircraft performance contains wrong
+.. role:: error-style
+.. role:: warning-style
+
+:error-style:`Red warning messages` are shown in the tab ``Fuel Report`` and in the flight plan table footer
+(:ref:`flight-plan-table-err-footer`) if aircraft performance contains wrong
 values that keep *Little Navmap* from calculating fuel consumption,
-climb or descent. An orange warning message is shown if the flown
-aircraft type does not match the type in the aircraft performance.
+climb or descent.
+
+:warning-style:`An orange warning message` is shown if the flown
+aircraft type does not match the type in the aircraft performance. This can be disabled in the menu
+``Aircraft`` -> :ref:`aircraft-menu-warning`.
 
 .. figure:: ../images/perf_error.jpg
 
     Aircraft Performance tab showing an error about a
     missing value. The ``*`` in the tab label shows unsaved changes.
 
-A default profile with 3 NM per 1,000 ft for descent and
-climb rules and no fuel consumption is default. Red warning messages
-will be shown if used since the profile is not complete.
+A simple default profile for a Cessna C172 is default.
 
 .. note::
 
-      The default performance profile is sufficient to calculate top of
+   Note that the aircraft performance does take aircraft load, cruise altitude and temperatures aloft into consideration.
+   You can use the block fuel as a starting point for complex aircraft, enter this into the FMS or MCDU and refine it there.
+   You can also build more than one performance file to depict different load situations or cruise altitudes.
+
+.. note::
+
+      The default performance profile for a Cessna C172 is sufficient to calculate top of
       climb and top of descent and can be used if you wish to ignore the fuel
       and travel time reports.
+
+      Adjust the default profile to you aircraft if needed.
 
 *Little Navmap* collects performance data for an aircraft permanently
 while flying. The collected data can be merged or copied into the
 currently used profile or a new one which can be fine tuned manually.
 The merging can be done at any time. See :doc:`AIRCRAFTPERFCOLL`.
 
-.. figure:: ../images/perf_report.jpg
+.. tip::
 
-     Fuel report tab. Average headwind of 10 knots is
-     based on NOAA winds aloft prediction and is also considered in fuel
-     calculation. Fuel needed for an alternate airport is shown too. The
-     performance file description contains a web link.
+    See the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__
+    to get numbers for a start.
+
+
+.. figure:: ../images/perf_report.jpg
+    :scale: 50%
+
+    Fuel report tab. Average headwind of 10 knots is
+    based on NOAA winds aloft prediction and is also considered in fuel
+    calculation. Fuel needed for an alternate airport is shown too. The
+    performance file description contains a web link. *Click image to enlarge.*
 
 .. _aircraft-performance-files:
 
@@ -99,8 +119,8 @@ the *Little Navmap* main window to load them.
 
 .. warning::
 
-   Do not save the files into the *Little Navmap* directory since
-   it might be deleted when doing an update. Neither save them in
+   Do not save the files into the *Little Navmap* installation directory since
+   they might be deleted when doing an update. Neither save them in
    ``C:\Program Files`` or one of its sub-directories. Save the files
    into your ``Documents`` directory or a sub-directory in there like
    ``Documents\Little Navmap\Performance``.
@@ -113,13 +133,15 @@ the *Little Navmap* main window to load them.
     available in the `download section of
     littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
 
+    Note that these files are community work and might vary in quality and accuracy.
+
 .. _aircraft-performance-wind:
 
 Wind
 ~~~~
 
 You can enter the estimated average wind speed and wind direction at
-cruise altitude or download NOAA wind predictions or use the X-Plane
+a given altitude, download NOAA wind predictions or use the X-Plane
 wind file. This will be considered when calculating flight time and fuel
 consumption for each leg and the whole flight plan.
 
@@ -133,8 +155,7 @@ direction, wind source or when editing the flight plan.
 The wind speed is interpolated from ground to cruise altitude for the
 climb and descent phases when using manual wind.
 
-See the chapter :ref:`wind` for more
-information on winds aloft.
+See the chapter :ref:`wind` for more information on winds aloft.
 
 .. _fuel-report:
 
@@ -149,19 +170,15 @@ Buttons
 The buttons on top have the same functionality as the items in the main
 menu :ref:`aircraft-menu`.
 
--  ``Manual Wind``: This checkbox overrides the wind source and allows
-   to set the average wind direction and speed manually. Two input
-   fields for speed and direction are shown if this is checked.
+-  |Wind| ``Wind Source``: Same options as menu :ref:`wind-source` in main menu ``Weather``.
 -  |Edit Aircraft Performance| ``Edit Aircraft Performance``: Opens the
    edit dialog for the currently loaded profile. You can also use the
-   menu item ``Aircraft`` -> ``Edit Aircraft Performance ...`` to change
+   menu item ``Aircraft`` -> :ref:`aircraft-menu-edit` to change
    the currently loaded performance data. See :doc:`AIRCRAFTPERFEDIT` for a description of the edit
    dialog.
 -  |New Aircraft Performance| ``New Aircraft Performance``: Creates a
    new performance profile with default values and opens the edit
-   dialog. A profile with 3 NM per 1,000 ft for descent and
-   climb rules and no fuel consumption is default. Red warning messages
-   will be shown since the profile is not complete.
+   dialog. A simple default profile for a Cessna C172 is default.
 -  |Open Aircraft Performance| ``Open Aircraft Performance``: Load a
    LNMPERF file.
 -  |Save Aircraft Performance| ``Save Aircraft Performance``: Save
@@ -173,15 +190,10 @@ menu :ref:`aircraft-menu`.
 
 .. _aircraft-performance-report:
 
-Report
-^^^^^^
+Fuel Report
+^^^^^^^^^^^^^^^^^
 
-.. note::
-
-    The tab ``Fuel Report`` in the dock window ``Flight Planning``
-    is meant for fuel planning and does not change during flight.
-
-Although, the fuel planning report updates automatically if the flight
+The fuel planning report updates automatically if the flight
 plan, cruise altitude or wind situation change.
 
 A flight plan has to be loaded to see the full fuel planning report.
@@ -192,32 +204,37 @@ See :doc:`AIRCRAFTPERFEDIT` for a
 detailed description of all fuel numbers.
 
 The text size of the report can be changed in dialog ``Options`` on
-``User Interface``.
+page :ref:`display-and-text`.
+
+Some sections and fields are only shown with a valid flight plan.
+Fields not set in the performance file are omitted.
+
+The section ``Fuel Plan`` is replaced with a section ``Fuel`` showing information about the
+aircraft fuel status if no flight plan is loaded.
+
+.. note::
+
+    The :ref:`fuel-report` in the dock window ``Flight Planning``
+    is meant for fuel planning and does not change during flight.
+
 
 .. _aircraft-performance-aircraft:
 
 Aircraft Section
 ''''''''''''''''
 
--  ``Fuel Type``: As set in the performance profile. Either ``Avgas`` or
-   ``Jetfuel``. Used to change values when switching between volume and
-   weight as fuel unit and to convert between units in the report.
--  ``Usable Fuel``: Shown as set in the performance profile. Only
-   displayed if bigger than zero. A red warning message is shown if
-   block fuel exceeds this value.
+.. role:: error-style
+.. role:: warning-style
+
 -  ``Estimated range with reserve``: Calculated based on usable fuel,
    speed and fuel flow for the cruise phase and reserve fuel. Shows an
-   orange warning if fuel flow values are not set.
--  ``Reserve Fuel`` and ``Taxi Fuel``: Only shown with empty flight
-   plan.
+   :warning-style:`orange warning` if fuel flow values are not set.
 -  ``Minimum runway``: Shown if set in the performance profile.
 
 .. _aircraft-performance-flightplan:
 
 Flight Plan Section
 '''''''''''''''''''
-
-Only shown with a valid flight plan.
 
 -  ``Distance and Time``: Total flight plan distance and traveling time
    including procedures. Same values as on top of the tab
@@ -230,19 +247,26 @@ Only shown with a valid flight plan.
 -  ``Mach at cruise``: Mach number at flight plan cruise altitude
    calculated based on given true airspeed and ISA atmospheric standard
    conditions. Only mach numbers above 0.4 are shown.
--  ``Average wind``: Shows the average wind speed and direction for all
+-  ``Average wind total``: Shows the average wind speed and direction for all
    three flight phases climb, cruise and descent. Only shown if
    sufficient wind is present. Also shows average head- or tailwind if
    present. The wind source (``NOAA``, ``Simulator``, ``Manual`` or
-   ``Disabled``) is shown in brackets.
+   ``Disabled``) is shown in parentheses.
+-  ``Average wind at cruise``: As above but shows the average wind speed and direction for the cruise phase.
 
 .. _aircraft-performance-fuelplan:
 
 Fuel Plan Section
 '''''''''''''''''
 
-Only shown with a valid flight plan.
+Only shown with a valid flight plan. Otherwise replaced by a secition ``Fuel``.
 
+-  ``Fuel Type``: As set in the performance profile. Either ``Avgas`` or
+   ``Jetfuel``. Used to change values when switching between volume and
+   weight as fuel unit and to convert between units in the report.
+-  ``Usable Fuel``: Shown as set in the performance profile. Only
+   displayed if bigger than zero. A :error-style`red error message` is shown if
+   block fuel exceeds this value.
 -  ``Trip Fuel``: Fuel that is consumed while flying and covers all
    phases from takeoff at departure to touchdown at the destination.
    Does not include contingency, extra, reserve or alternate fuel.
@@ -286,23 +310,16 @@ Only shown with a valid flight plan.
 
 .. _aircraft-performance-description:
 
-Performance File Remarks Section
+Remarks Section
 ''''''''''''''''''''''''''''''''''''
 
-This is a free plain text field for notes and links.
+This is a free plain text field for notes and links which are saved with the aircraft performance file.
 
-Links are recognized and can be opened in the report.
+Links are recognized and can be opened on tab ``Fuel Report``.
 
 See :doc:`REMARKS` for more information about using web links in this field.
 
 .. _aircraft-performance-report-file:
-
-Performance File Section
-''''''''''''''''''''''''
-
-Contains a link to the aircraft performance file. Opens the file or
-directory in the default file manager like Windows Explorer or macOS
-Finder.
 
 .. |Aircraft Performance| image:: ../images/icon_aircraftperf.png
 .. |Edit Aircraft Performance| image:: ../images/icon_aircraftperfedit.png
@@ -311,4 +328,5 @@ Finder.
 .. |Save Aircraft Performance| image:: ../images/icon_aircraftperfsave.png
 .. |Save Aircraft Performance as| image:: ../images/icon_aircraftperfsaveas.png
 .. |Help| image:: ../images/icon_help.png
+.. |Wind| image:: ../images/icon_wind.png
 

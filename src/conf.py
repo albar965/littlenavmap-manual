@@ -20,17 +20,31 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Little Navmap'
-copyright = u'2019-2021, Alexander Barthel'
+copyright = u'2019-2023, Alexander Barthel'
 author = u'Alexander Barthel'
 
 # VERSION_NUMBER
 # The short X.Y version
-version = u'2.6'
+version = u'2.8'
 # The full version, including alpha/beta/rc tags
-release = u'2.6.10'
+release = u'2.8.12'
+
+html_last_updated_fmt = ''
 
 nitpicky = True
 
+# Variables used in layout.html ----------------------------------------------
+html_context = {
+  # Show a banner message on all pages
+  'banner_message_color': 'yellow',
+  'banner_message_bgcolor': 'red',
+
+  'banner_message_en': False,
+  'banner_message_text_en': 'This user manual for the ' + project + ' ' + version + ' releases has already been updated for new features, but is still considered a draft until the stable version is released.',
+
+  'banner_message_de': True,
+  'banner_message_text_de': 'Dieses Benutzerhandbuch für die ' + project + ' Versionen ' + version + ' ist noch nicht fertiggestellt.',
+}
 
 # -- General configuration ---------------------------------------------------
 
@@ -86,7 +100,7 @@ html_theme_options = {
 #    'canonical_url': '',
     'logo_only': False,
     'display_version': True,
-    'prev_next_buttons_location': 'none',
+    'prev_next_buttons_location': 'bottom',
     'style_external_links': True,
 
     # Toc options
@@ -105,7 +119,7 @@ html_show_sphinx = False
 html_show_sourcelink = False
 html_copy_source = False
 #html_add_permalinks=False
-html_show_copyright = True
+html_show_copyright = False
 html_title='Little Navmap User Manual'
 
 # Add any paths that contain custom static files (such as style sheets) here,

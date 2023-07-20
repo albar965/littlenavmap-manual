@@ -7,12 +7,19 @@ Glossary
     X-Plane airport which contains at least one 3D object. May be a fully
     constructed major airport.
 
+Airport
+    Means all airports, water airports, airstrips or heliports.
+
 Add-on airport
     FSX/P3D: All scenery data that is found outside of the base flight
     simulator ``Scenery`` directory is considered an add-on.
 
     X-Plane: All airports in the ``Custom Scenery`` directory are considered
     add-on airports and will be highlighted accordingly.
+
+    Microsoft Flight Simulator 2020: All airports located in the ``Community``
+    directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to be add-on airports.
+    Exceptions are ``fs-base``, ``fs-base-genericairports`` and ``fs-base-nav``.
 
 Approach Procedure
     An approach procedure is a series of maneuvers for the transfer of an
@@ -30,6 +37,10 @@ BGL
     These files can also contain traffic, landclass, elevation or other
     information which is not relevant for *Little Navmap*.
 
+Checkbox
+    A user interface element that allows to toggle a setting between two states (on and off)
+    or three states (on, off and not applicable).
+
 CSV
     Comma-separated values text file.
 
@@ -39,6 +50,9 @@ DAT
 
 Departure Procedure
     SID (standard instrument departure) procedure.
+
+Dialog
+    A dialog window requiring user input. Most dialogs block the whole applicaton until closed.
 
 DME
     Distance measuring equipment or a radio navaid.
@@ -57,17 +71,17 @@ FAF
 
 Fix
     This term refers to a waypoint, radio navaid or an calculated point on a
-    procedure.
+    procedure. A fix might be defined by VOR radial and distance, for example.
 
 Flight Plan Position
-    An user-defined waypoint which is part of the flight plan.
+    An user defined waypoint which is part of the flight plan.
 
 FLP
     Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other
     add-on aircraft.
 
 FMS
-    X-Plane flight plan format.
+    Flight plan format used by X-Plane 11 and 12. Can be loaded into the stock GPS, FMS or add-ons.
 
 FS9
     Flight Simulator 2004.
@@ -81,11 +95,27 @@ ft
 GIS
     A geographical information system like Google Earth for example.
 
+LDA
+   Localizer type directional aid. A type of localizer-based instrument approach to an airport.
+
+IGS
+   Instrument guidance system – a modified ILS to accommodate a non-straight approach.
+
 ILS
     Instrument landing system.
 
 Initial Fix
     This is the first fix of a procedure.
+
+Intersection
+    In aviation, an intersection is a virtual navigational fix that helps aircraft maintain their flight plan.
+    This manual also uses the synonym waypoint.
+
+Logbook Entry
+    Created by the user or automatically on finishing a flight containing takeoff and landing.
+
+LNMPLN
+    Own flight plan format of *Little Navmap*.
 
 MAP
     Missed approach point. The point on the final approach which represents
@@ -96,23 +126,22 @@ MSFS
     Microsoft Flight Simulator 2020.
 
 Navaid
-    VOR, VORTAC, TACAN, NDB or waypoint/intersection.
+    VOR, VORTAC, TACAN, NDB or waypoint/intersection. Also ILS and Localizer.
 
 NDB
     Non directional beacon - radio navaid.
 
 NM
-    Nautical miles. 1.852 km.
+    Nautical miles. 1.852 km, 1' (one minute or 1/60°) latitude or 1' longitude at the Equator.
 
 P3D
-    Prepar3D v2 to v5.
+    Prepar3D v3 to v5.
 
 Parking
     GA ramp, cargo ramp, fuel box or gate at an airport.
 
 PLN
-    FSX and P3D flight plan format. Can save all information in flight plans
-    using annotations.
+    FSX and P3D flight plan format.
 
 POI
     Point of interest. An userpoint type.
@@ -131,6 +160,11 @@ Scenery Library Database
     created by *Little Navmap* when reading all the flight simulator BGL or
     DAT files. It allows fast complex searches and map display.
 
+SDF
+   Simplified directional facility is a localizer-based instrument non-precision approach to an
+   airport, which provides a final approach course similar to ILS and LDA approaches, but not as
+   precise.
+
 SID
     A standard instrument departure is an air traffic control departure
     procedure that helps to simplify clearance delivery procedures. A SID
@@ -141,7 +175,7 @@ SID
 
 SimConnect
     A programming interface that allows applications to read and write
-    flight simulator parameters.
+    flight simulator parameters from FSX, P3D and MSFS.
 
 STAR
     A standard terminal arrival is a flight route that usually covers the
@@ -167,22 +201,24 @@ VOR
     VHF omni directional radio range - radio navaid.
 
 VORDME
-    VHF omni directional radio range with distance measuring equipment-
-    radio navaid.
+    VHF omni directional radio range with distance measuring equipment - radio navaid.
 
 VORTAC
     Co-located VHF omnidirectional range (VOR) beacon and tactical air
     navigation system (TACAN) beacon.
 
 Userpoint
-    An user-defined waypoint like a bookmark, point of interest or visual
-    reporting point (VRP).
+    An user defined waypoint like a bookmark, point of interest or visual reporting point (VRP).
+
+User Feature
+    Any display object like traffic patterns or measurment lines which can be added or removed by the user.
 
 UTC
-    Universal coordinated time. Also: Greenwich time or zulu time.
+    Universal coordinated time. Also Zulu time.
 
 VRP
     Visual reporting point for VFR flights. An userpoint type.
 
 Waypoint
-    Navaid defined by coordinates.
+
+    It is a navaid defined by coordinates. Synonym for intersection in this manual.

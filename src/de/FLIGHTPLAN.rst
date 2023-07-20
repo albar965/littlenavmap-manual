@@ -540,7 +540,9 @@ Der Menüpunkt wird in diesem Fall mit dem Text
 
 Kopiert die ausgewählten Einträge im CSV-Format in die Zwischenablage.
 Der kopierte CSV-Text enthält eine Kopfzeile. Änderungen in der
-Tabellenansicht, wie z.B. die Spaltenreihenfolge, werden dabei beachtet.
+Tabellenansicht, wie z.B. die Spaltenreihenfolge, werden dabei beachtet. Spalten, die ausgeblendet oder auf eine Mindestbreite verkleinert sind, werden nicht berücksichtigt.
+
+Importieren Sie den CSV-Text in ein Tabellenkalkulationsprogramm mit UTF-8-Kodierung und einem Semikolon als Trennzeichen.
 
 .. _select-all-0:
 

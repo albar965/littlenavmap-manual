@@ -7,7 +7,7 @@ erweiterte Flugplatzsuchfunktion und die automatische
 Flugplanberechnung.
 
 Der Flugplan befindet sich im Installationsverzeichnis *Little Navmap*:
-``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).pln``.
+``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).lnmpln``.
 
 Während dieses Tutorial recht umfangreich aussieht, ist es normalerweise
 eine Frage von einer halben Minute, um einen Flugplan zu erhalten, wenn

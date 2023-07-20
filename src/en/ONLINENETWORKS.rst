@@ -4,7 +4,7 @@ Online Networks
 The online network functionality allows to connect to
 `VATSIM <https://www.vatsim.net>`__, `IVAO <https://ivao.aero>`__,
 `PilotEdge <https://www.pilotedge.net/>`__ or other online networks
-which publish ``whazzup.txt`` files. This covers display of information
+which publish information using ``whazzup.txt`` or JSON files. This covers display of information
 for centers, clients and servers on the map.
 
 Network specific information like user names, active centers/towers,
@@ -16,6 +16,9 @@ Access to online networks can be enabled and configured on
 Predefined options for the well known networks are available as well as
 freely configurable ones.
 
+The custom connection options can be used for internal networks or tools like the `Transmitter <https://virtualflight.online/transmitter/>`__
+which can be used for small flying groups and MSFS which does not provide multiplayer traffic on its interface.
+
 **Online network related functionality can be found in the following
 places:**
 
@@ -25,27 +28,24 @@ places:**
    ``Online Centers``.
 -  Options dialog, page :ref:`online-flying`.
 
+See :doc:`SEARCH` for general information on the search tabs.
+
 .. _online-networks-duplicates:
 
 Simulator and Online Aircraft Duplicates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* fetches data from online networks using an interval of
+*Little Navmap* fetches data from online networks using an interval of 15 seconds up
 three minutes depending on settings and network.
 
 The program also fetches AI or multiplayer aircraft from the simulator
 which are updated about several times a second. These aircraft are injected
 into the simulator by the various online clients so they are visible
-there.
+in the sim.
 
 Therefore, the user aircraft and other client aircraft can appear
-duplicated on the map.
-
-*Little Navmap* tries to remove these duplicates by matching the
-aircraft registration (simulator) and the client callsign (online
-network). Aircraft can appear duplicated if this information is not
-available which is the case for X-Plane. Refer to the configuration of
-your online network tool how to add this information.
+duplicated on the map. *Little Navmap* removes these duplicates by matching the position, speed and other parameters against each other.
+The de-duplication can be disabled in dialog ``Options`` on page :ref:`online-flying`.
 
 .. _online-networks-mapdisplay:
 
@@ -63,7 +63,7 @@ were recognized as online network clients.
 
 The user aircraft is always displayed using the yellow |Small GA| or a
 similar symbol depending on aircraft type and simulator. Use the
-``Show in Search`` map context menu item to see your own aircraft in the
+:ref:`show-in-search-map` map context menu item to see your own aircraft in the
 list of online clients.
 
 Information for online aircraft is shown on the tab ``Online Clients``
@@ -72,12 +72,14 @@ in :doc:`INFO`.
 All other functionality like context menu, double-click, tooltips, map
 highlights and other are the same as for the other aircraft.
 
-See :ref:`vehicles` in the legend for all
+See :ref:`vehicles-legend` in the legend for all
 symbols.
 
 .. figure:: ../images/online_aircraft.jpg
+       :scale: 50%
 
-        Online network clients/aircraft in search tab, map, tooltip and information window.
+       Online network clients/aircraft in search tab, map, tooltip and information window. Image based on *Little Navmap* 2.4. *Click image to enlarge.*
+
 
 .. _online-networks-centers:
 
@@ -96,28 +98,28 @@ airspaces by selecting ``Online`` as airspace source (:ref:`airspace-source`)
        other position. See below how to assign airspace boundaries to
        a center.
 
-Detailed information for online centers/airspaces is shown on :doc:`INFO`.
+Detailed information for online centers/airspaces is shown in the :doc:`INFO` window.
 
 The following types are available and can be enabled in the drop down
 menus on the airspace toolbar or sub-menu
 :ref:`menu-airspaces`:
 
--  **Observer:** Circle size is taken from the ``Visual Range`` value of
-   the center.
--  **Flight Information (Center):** Uses ``Visual Range``.
--  **Delivery (Clearance):** Uses ``Visual Range``.
--  **Ground:** Shows a circle with a diameter of 10 NM.
--  **Tower:** 20 NM circle.
--  **Approach:** 40 NM circle.
--  **ACC (Center):** Uses ``Visual Range``.
--  **Departure:** Uses ``Visual Range``.
+-  ``Observer:`` Circle size is taken from the visual range value of the center.
+-  ``Flight Information (Center):`` Uses the visual range.
+-  ``Delivery (Clearance):`` Uses the visual range.
+-  ``Ground:`` Shows a circle with a diameter of 10 NM.
+-  ``Tower:`` 20 NM circle.
+-  ``Approach:`` 40 NM circle.
+-  ``ACC (Center):`` Uses the visual range.
+-  ``Departure:`` Uses the visual range.
 
-The size of the circle shapes can be changed in the options dialog.
+The size of the circle shapes and the lookup type can be changed in the options dialog.
 See :ref:`map-display-online`.
 
-You can also assign centers to a boundary shape using imported OpenAir
+You can also assign centers to a boundary shape using imported OpenAir, JSON or GEOJSON
 airspaces from the user airspace database. See :ref:`load-scenery-library-online-airspaces` for more
-information about this.
+information about this. The airspace geomentry is assigned to the centers by ident and type.
+
 
 .. figure:: ../images/online_center.jpg
 

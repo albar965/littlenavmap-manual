@@ -9,11 +9,12 @@ Enable the shadow in the menu ``View`` -> :ref:`show-sun-shading`.
 You can change the time source for the sun shading in ``View`` -> :ref:`show-sun-shading-time`.
 
 The shadow darkness can be changed in the dialog ``Options`` on page
-:ref:`map-display-2`, ``Sun shading Darkness`` at the bottom of the dialog.
+:ref:`map-display-user`, ``Sun shading Darkness`` at the bottom of the dialog.
 
 .. figure:: ../images/sunshadow.jpg
+      :scale: 50%
 
-       Sun shading on the northern hemisphere.
+      Sun shading on the northern hemisphere. *Click image to enlarge.*
 
 .. _sun-shadow-time-sources:
 
@@ -55,7 +56,7 @@ restarting *Little Navmap*.
 
 .. figure:: ../images/sunshadowtime.jpg
 
-        Date and time for sun shading on November 8 at 10:42 pm Zulu Time.
+        Date and time for sun shading on November 8 at 10:42 pm UTC Time.
 
 .. |Sun Shading Icon| image:: ../images/icon_mapshadow.png
 

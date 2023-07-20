@@ -113,7 +113,7 @@ NM
     Nautische Meile. 1.852 km.
 
 P3D
-    Prepar3D v2 bis v5.
+    Prepar3D v3 bis v5.
 
 Parkposition
     GA-Rampe, Laderampe, Treibstoffkasten oder Flugsteig.

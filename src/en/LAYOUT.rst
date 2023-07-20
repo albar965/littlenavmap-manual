@@ -14,8 +14,8 @@ You can also instruct *Little Navmap* to load the recently used layout file on t
 
 -  Main window position and size
 -  Size, position, visibility (open or not) and state (floating or docked into main window) of all dock windows
--  Toolbar size, position and visibility (open or not)
--  Status bar visibility
+-  Size, position and visibility (open or not) or :ref:`ui-toolbars`.
+-  :doc:`STATUSBAR` visibility
 
 The main menu cannot be hidden to avoid user lock out.
 

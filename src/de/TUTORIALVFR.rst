@@ -8,7 +8,7 @@ In diesem Tutorial wird erklärt, wie Sie anhand der Karte und des
 Kontextmenüs einen einfachen Flugplan erstellen können.
 
 Der Flugplan ist im Installationsverzeichnis *Little Navmap* enhalten:
-``.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) nach Challes-les-Eaux (LFLE).pln``.
+``.../Little Navmap/etc/Tutorial VFR Meythet (LFLP) nach Challes-les-Eaux (LFLE).lnmpln``.
 
 Die Flugplatznamen können je nach Simulator unterschiedlich sein.
 

@@ -20,9 +20,23 @@ TEMPLATE = aux
 OTHER_FILES = \
   *.rst \
   *.txt \
-  sphinx_*.sh \
+  *.sh \
   src/conf.py \
   $$files(src/_static/*, true) \
   $$files(src/_templates/*, true) \
   $$files(src/en/*.rst, false) \
-  $$files(src/de/*.rst, false)
+  $$files(src/en/include/*.rst, false)
+
+
+# =====================================================================
+# Additional targets
+
+buildmanual.commands += cd $$PWD && $$PWD/sphinx_build.sh html en
+cleanmanual.commands += cd $$PWD && $$PWD/sphinx_clean.sh
+#deploymanual.commands += cd $$PWD && $$PWD/sphinx_rebuild_all.sh en
+
+QMAKE_EXTRA_TARGETS += buildmanual cleanmanual #deploymanual
+
+
+
+

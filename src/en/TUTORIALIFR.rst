@@ -5,22 +5,26 @@ This tutorial will show you how to create a more complex IFR flight plan
 including approach procedures. It introduces the advanced airport search
 functionality and the automatic flight plan calculation.
 
-The flight plan included in the *Little Navmap* installation directory:
-``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).pln``.
+The flight plan is included in the *Little Navmap* installation directory:
+``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).lnmpln``.
 
 While this tutorial looks quite lengthy it is normally a matter of half
 a minute to get a flight plan if you know where to go. The planning
 effort shown here is bigger to highlight some of the more advanced
-features of the program.
+features of *Little Navmap*.
 
 You should at least read through :doc:`TUTORIALVFR` before doing this one.
 
-The flight plan will go across the UK using an IFR capable aircraft. Its
-maximum range should be more than 600 NM including reserves
-and a cruise altitude of 10,000 ft.
+.. note::
 
-Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
-a small turboprop or a powerful twin. Do not try to fly this trip with an airliner.
+     The flight plan will go across the UK using an IFR capable aircraft. Its
+     maximum range should be more than 600 NM including reserves
+     and a cruise altitude of 10,000 ft.
+
+     Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
+     a small turboprop or a powerful twin.
+
+     Do not try to fly this trip with an airliner.
 
 The tutorial assumes the following preconditions:
 
@@ -41,7 +45,7 @@ Prepare Flight
 Use ``Flight`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
 fuel calculation and other functions. Uncheck
-``Create a new and empty flight plan`` in the dialog if the flight plan is
+``Create an empty flight plan`` in the dialog if the flight plan is
 already loaded.
 
 Default Aircraft Performance
@@ -51,23 +55,27 @@ This tutorial does not cover creating or collecting aircraft performance
 files. See :doc:`TUTORIALPERF` if you like to do this.
 
 Therefore, we will simply use a slightly modified aircraft performance
-profile which gives a three degree climb and descent angle.
+profile which allows to calculate the top of climb and top of descent.
 
 -  Select ``Aircraft`` -> :ref:`aircraft-menu-new` |New Aircraft
    Performance ...|.
 -  Optional: Select :ref:`aircraft-menu-edit` from the same menu as above and
-   change the value for
-   ``Cruise speed at typical cruise altitude`` to roughly match your
-   chosen aircraft. This helps to get an accurate estimate for the
-   traveling time. Fill the other fields too if you know the performance values.
--  Optional: Adjust descent and/or climb values as needed.
+   change the values fuel flow and speed at climb cruise and descent to roughly match your aircraft.
+   Add reserve fuel for about one hour or cruise fuel consumption for now.
+   This helps to get an estimate for the traveling time. Fill the other fields too if you know the performance values.
 -  Accept by pressing ``OK`` in the dialog.
 
-You will see several warnings in the fuel report. Ignore these for now
+You might see warnings in the fuel report. Ignore these for now
 since the aircraft performance is sufficient to calculate the top of
 descent and top of climb for the elevation profile.
 
+.. tip::
+
+   Lookup numbers at the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__ or download a community made performance file from `Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
+
 |Aircraft Performance|
+
+
 
 .. _tutorial-ifr-cleanup:
 
@@ -94,12 +102,12 @@ Now look for the departure airport:
 -  Enter ``EGHJ`` in the ``ICAO Code`` search field on the top left
    (case does not matter).
 -  Right-click on the airport in the result table.
--  Choose :ref:`set-as-flight-plan-departure-search` |Set as Flight Plan
-   Departure|. This will assign a default runway as a start position.
+-  Choose ``Set as Departure`` |Set as Flight Plan
+   Departure|. This will assign the airport center point as a start position.
 
 |Assign Departure|
 
-Your flight plan has one entry now. This is already sufficient if you
+The flight plan has one entry now. This is already sufficient if you
 want to fly a pattern and like to see distance, speed and time
 information to the airport.
 
@@ -113,7 +121,7 @@ Now select a parking position:
 |Assign Parking|
 
 You can also select the start position directly on the
-map's context menu as described in :doc:`TUTORIALVFR`.
+map context menu as described in :doc:`TUTORIALVFR`.
 See also :ref:`set-as-flight-plan-departure`.
 
 .. _tutorial-ifr-search-dest:
@@ -121,13 +129,16 @@ See also :ref:`set-as-flight-plan-departure`.
 Search for Destination
 ~~~~~~~~~~~~~~~~~~~~~~
 
+Right-click into the result table and select :ref:`reset-search` |Reset
+Search| to remove of all search criteria from the recent search.
+
 Now look for a suitable destination airport:
 
 -  Right-click on ``EGHJ`` in the search result again.
--  Select :ref:`set-center-for-distance-search-search` |Set Center for Distance
+-  Select ``Set Center for Distance Search`` |Set Center for Distance
    Search|. You can also do this in the map. This is the center point
    for the spatial search.
--  Clear the ``ICAO Code`` search field now. It is a common mistake to
+-  Clear the ``Ident`` search field on the top left of the search window now. It is a common mistake to
    leave the text fields filled when doing distance searches which will
    give you an empty result table.
 
@@ -148,7 +159,7 @@ Check the following in the airport search tab:
    basic scenery requirements as taxiways, parking spots and more.
    Select the one with at least four stars.
    You can also select ``3D`` if you fly X-Plane.
-#. ``Procedures``: Show only airports that have procedures.
+#. ``Procedures``: Show only airports that have procedures like SID, STAR or approaches.
 #. Deselect ``Military`` and ``Closed`` (click the checkboxes twice):
    This will return only civilian airports and avoid airports that have
    all runways closed.
@@ -157,7 +168,7 @@ Check the following in the airport search tab:
 #. Select a minimum runway length of 2,500 ft or whatever you chosen
    aircraft needs in the field ``Runways:`` ``Min:``.
 
-See also :doc:`SEARCH`.
+See also :doc:`SEARCH` for general information about searching for airports, navaids and other features.
 
 You can also limit the maximum runway length if you are looking for a
 short landing challenge.
@@ -165,19 +176,19 @@ short landing challenge.
 The search result changes on the fly while doing all these adjustments,
 though we are not there yet:
 
--  Check ``Distance:`` to activate the spatial search.
+-  Check ``Dist:`` to activate the spatial search.
 -  Change the maximum distance to 600 NM and the minimum to 400 NM
    (to avoid short hops). The result table will now update with a
    small delay since the distance search is more complex.
 -  To find only airports north of your position select ``North`` in the
-   button ``Any Direction``. Note that the search result is sorted by
+   button ``Any Dir.``. Note that the search result is sorted by
    distance with the closest airport first per default.
 -  Choose an airport for your trip. Use ``Wick (EGPC)`` for this
    tutorial.
 
    |Search for Destination|
 -  Right-click on Wick in the result table and select
-   :ref:`show-information-search` |Show Information|. This will fill the
+   ``Show Information`` |Show Information|. This will fill the
    tabs in the dock window ``Information``.
 -  Select the tab ``Airport`` and below this one the tab ``Weather``. Look for the section
    ``Best runways for wind`` to get an idea of the expected landing
@@ -185,7 +196,7 @@ though we are not there yet:
 
 For this tutorial we assume that the winds favor runway 13.
 
-See also :doc:`WEATHER`.
+See also :doc:`WEATHER` for general information about weather display in *Little Navmap*.
 
 .. _tutorial-ifr-select-approach:
 
@@ -195,9 +206,9 @@ Select an Approach Procedure
 We'll select an approach procedure now:
 
 -  Go back to the search result.
--  Right-click on the airport Wick again. Select :ref:`show-procedures-search`
+-  Right-click on the airport Wick again. Select ``Show Procedures for``
    |Show Procedures|. This will pop up the procedure search tab.
--  Choose ``Runway 13`` in the ``All Runways`` combo box to see only
+-  Choose ``Runway 13`` in the ``All Runways`` box to see only
    approaches for 13.
 -  Select ``Expand All`` in the context menu to see also the transitions
    for each approach.
@@ -207,15 +218,14 @@ We'll select an approach procedure now:
 
 The top label in the procedure search shows
 ``Wick (EGPC) Approach VORDME 13 FD13 Transition (Full) CHINN`` for the
-selected approach and/or transition. You can also see a preview on the
-map.
+selected approach and/or transition. You can also see a preview on the map.
 
 |Procedure Search Tree|
 
 Right-click on the transition and select
 :ref:`procedure-show-on-map` (text might be different depending on selection)
 |Show Approach and Transition on Map|. This will center the procedure on the map. You can click on the
-legs in the procedure tree to see the start and end points of a leg.
+legs in the procedure tree to see the start and end points of a leg highlighted on the map.
 
 |Procedure Preview|
 
@@ -232,15 +242,12 @@ This will do two things:
 #. Add the approach and its transition to the flight plan. The procedure
    legs use a dark blue color and the missed approach legs use a dark
    red color in the flight plan table. Flight plan en-route legs are
-   black. Again, any previous procedure is replaced with this new one.
+   black. Any previous procedure is replaced with this new one.
 
 **About adding transition and approaches:** Approaches and transitions
 are closely related which is already indicated by the tree structure in
-the procedure search tab. You can add an approach alone but a transition
+the procedure search tab. You can add an approach without transition but a transition
 always belongs to an approach.
-
-You have to select the transition to add or show both, approach and
-transition.
 
 .. _tutorial-ifr-calculate-flight-plan:
 
@@ -251,10 +258,8 @@ Now we have the departure airport, an approach procedure and the
 destination all connected by a straight line. Next is the en-route part
 of the flight plan:
 
--  Set ``IFR`` as the flight plan type in the dock window
-   ``Flight Planning`` on tab ``Flight Plan``.
-   This allows the automatic flight plan
-   calculation to adjust the cruise altitude.
+-  Set ``IFR`` as the flight plan type in the dock window ``Flight Planning`` on tab ``Flight Plan``.
+   This allows the automatic flight plan calculation to adjust the cruise altitude.
 -  Click ``Flight Plan`` -> :ref:`calculate-flight-plan` |Calculate Flight Plan|
    to open the flight plan calculation floating window.
 
@@ -266,9 +271,7 @@ of the flight plan:
    restrictions of the airways and the flight plan type (``VFR`` or
    ``IFR``). You can see the minimum altitude for each airway segment in
    the flight plan table in the column ``Restriction`` (see :ref:`flight-plan-table-columns`).
-
-   The altitude can be changed according to the hemispherical rule by
-   clicking the :ref:`routecalc-adjust` button.
+   The altitude can be changed according to the hemispherical rule by clicking the :ref:`routecalc-adjust` button.
 -  Change all settings in the floating window as shown in the screenshot above.
 -  Click the button :ref:`routecalc-calculate`.
 
@@ -276,13 +279,24 @@ Use this flight plan for now.
 
 Save the plan using ``File`` -> :ref:`save-flight-plan-as` |Save Flight Plan|.
 The program usually finds the right directory for the flight plans and
-gives a sensible name by default.
+gives a meaningful name by default.
 
-The top label in the flight planning dock window reads now::
+The top label in the flight planning dock window reads now:
 
-      Bembridge (EGHJ) Runway 12 to Wick (EGPC)
-      Via CHINN and VORDME FD13 (D13) to runway 13 .
-      538 nm, 5 h 23 m, Low Altitude
+.. code-block:: none
+
+          Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
+          Arrive via CHINN and VORDME FD13 (D13).
+          Land at 13, 129°M, 5.215 ft, 126 ft elevation, PAPI4.
+          Distance 538 NM, time 4 h 35 m.
+
+
+Note that no departure runway information is given. Click :ref:`select-departure-runway` |Select Departure Runway| on the toolbar to select one and save the plan.
+
+Below the runway selection dialog and the result in the flight plan table after selecting runway 12 for departure.
+You can see the runway start point ``RW12`` and the end of the extended runway center line ``RW12+3``.
+
+|Select Departure Runway 12|
 
 The plan looks like shown below.
 
@@ -294,8 +308,8 @@ Airspaces
 Now you can check if you pass through any airspaces:
 
 -  Enable airspaces by selecting ``View`` -> ``Airspaces`` ->
-   ``Show Airspaces`` |Show Airspaces| if not already done.
--  Check ``View`` -> ``Airspaces`` -> ``At flight plan cruise altitude``
+   :ref:`show-airspaces` |Show Airspaces| if not already done.
+-  Check ``View`` -> ``Airspaces`` -> :ref:`at-flight-plan-cruise-altitude`
    |At flight plan cruise altitude| in the menu or the toolbar menu
    button.
 
@@ -351,6 +365,11 @@ Follow the steps below to get a moving map and see your aircraft in
    is loaded, i.e. the simulator is not in the opening screen.
 -  Start the simulator if not already done, load the flight plan and go flying.
 
+.. important::
+
+         Make sure you use the right build of *Little Navmap*.
+         The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+
 See also :doc:`CONNECT`.
 
 .. _tutorial-ifr-top-of-descent:
@@ -384,7 +403,7 @@ Now the weather has changed requiring an approach to runway 31:
 
 -  Right-click on the destination airport at the bottom of the flight
    plan table.
--  Choose :ref:`show-procedures-search` |Show Procedures|.
+-  Select ``Show Procedures for`` |Show Procedures|.
 -  Then change the runway filter to ``Runway 31``.
 -  Expand the approach ``VORDME 31`` to see the transition.
 -  Select the transition.
@@ -393,23 +412,31 @@ The label on top of the window shows now
 ``Approach VORDME 31 FD31 Transition (Full) CHINN``.
 
 -  Right-click on the selected transition.
--  Choose ``Use EGPC and Approach and Transition as Destination`` |Use
+-  Select ``Use EGPC and Approach and Transition as Destination`` |Use
    EGPC and Approach and Transition as Destination| from the context
    menu which will replace the current procedure in your flight plan
    with the new one.
 
-The top label in the flight planning dock window reads now::
+The top label in the flight planning dock window reads now:
 
-     Bembridge (EGHJ) Parking 1, Ramp GA Small to Wick (EGPC)
-     Via CHINN and VORDME FD31 to runway 31
-     526 nm, 5 h 15 m, Low Altitude
+.. code-block:: none
 
-To completely delete a procedure:
+    Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
+    Takeoff from 12, 118°M, 2.729 ft.
+    Arrive via CHINN and VORDME FD13 (D13).
+    Land at 31, 309°M, 5.031 ft, 126 ft elevation, PAPI4.
+    Distance 519 NM, time 4 h 26 m.
+
+
+To remove a procedure from the flight plan:
 
 -  Select any leg of the procedure in the flight plan table.
--  Right-click and choose :ref:`delete-selected-legs` |Delete
+-  Right-click and select :ref:`delete-selected-legs` |Delete
    selected Leg or Procedure| or press the ``Del`` key to remove the
    whole procedure.
+
+Alternatively right click on any fix/waypoint of the procedure on the map
+and select :ref:`delete-from-flight-plan` |Delete from Flight Plan|.
 
 If ATC clears you to the initial fix of the procedure:
 
@@ -428,7 +455,7 @@ This will give a direct connection from your current aircraft position
 to the start of the procedure which you can use to get course and
 distance to the initial fix.
 
-**Below:** After changing the approach procedure and adding an user-defined
+**Below:** After changing the approach procedure and adding an user defined
 waypoint at the aircraft position to the flight plan. Now we get course
 and altitude indications for a direct leg to the start of the transition
 (43 NM and 314 degrees magnetic course).
@@ -492,7 +519,10 @@ helps uncluttering the map display.
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Changed Approach| image:: ../images/tutorial_ifrapproach.jpg
 .. |Show Missed Approaches| image:: ../images/icon_missed.png
+.. |Select Departure Runway 12| image:: ../images/tutorial_ifr_depart_runway.jpg
 
 .. |Export Flight Plan now| image:: ../images/icon_filesaveas.png
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
 .. |Connect Dialog| image:: ../images/connectlocal.jpg
+.. |Delete from Flight Plan| image:: ../images/icon_routedeleteleg.png
+.. |Select Departure Runway| image:: ../images/icon_runwaydepart.png

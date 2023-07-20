@@ -457,7 +457,7 @@ Import
 -  Die Koordinaten werden in die *Little Navmap* Nutzerpunktkoordinaten
    eingelesen.
 -  ``PACEC`` wird in das Feld **Kennung** in *Little Navmap* eingelesen.
--  Der festgelegte Flugplatz ``ENRT`` (En-route: kein Flugplatz)
+-  Der festgelegte Flugplatz ``ENRT`` (Enroute: kein Flugplatz)
    wird in das Feld **Tags** in *Little Navmap* eingelesen.
 -  Die Region ``ZZ`` (ungültig oder keine Region) wird in das Feld
    **Region** in *Little Navmap* eingelesen.

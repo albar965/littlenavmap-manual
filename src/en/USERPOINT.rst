@@ -1,21 +1,23 @@
 Userpoints
 ----------------------
 
-User-defined waypoints (or userpoints) allow for adding, editing,
+User defined waypoints (or userpoints) allow for adding, editing,
 searching, exporting, and importing bookmarks, points of interest,
 waypoints and more. You can pick freely which types you want to see as
 icons on the map.
 
 .. figure:: ../images/userpoint_overview.jpg
+       :scale: 50%
 
-        An overview of userpoint functionality showing
-        information on the left dock window, highlighted userpoints on the map,
-        userpoints selected in the search window on the right, and the drop down
-        menu opened by clicking the userpoint icon in the dock window.
+       An overview of userpoint functionality showing
+       information on the left dock window, highlighted userpoints on the map,
+       userpoints selected in the search window on the right, and the drop down
+       menu opened by clicking the userpoint icon in the dock window.
+       Screenshot based on *Little Navmap* 2.4.  *Click image to enlarge.*
 
 .. _userpoints-search:
 
-User-defined Waypoint Search
+Userpoint Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The functionality of the search filters and the result table is similar
@@ -34,12 +36,24 @@ See :ref:`search-result-table-view-context-menu` for a
 description of common context menu items across all search dialogs. All
 buttons have an equivalent in the result table context menu.
 
+.. _undo-userpoint-search:
+
+|Undo| |Redo| Undo and Redo Userpoint
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Allows undo and redo of all userpoint changes. The last action is shown in the menu item like
+``Undo deleting of tow Userpoints``, for example.
+The undo information is kept when restarting *Little Navmap* and only deleted if a certain amount of
+undo steps is exceeded.
+
+Also in main menu ``Userpoint`` -> :ref:`undo-userpoint`.
+
 .. _userpoints-add:
 
 |Add Userpoint| Add Userpoint
 ''''''''''''''''''''''''''''''''''''''''
 
-Add an user-defined waypoint to the userpoints.
+Add an user-defined waypoint to the userpoint database.
 
 Some fields of the new userpoint dialog are populated automatically
 depending on a selected userpoint or, if nothing is selected in the
@@ -63,7 +77,7 @@ Open the edit dialog for one or more userpoints.
 
 The edit dialog shows a column of checkboxes on the right side if more
 than one userpoint is selected. These allow to choose the fields to
-edit.
+change for a bulk edit.
 
 See below for more information about the add dialog.
 
@@ -72,44 +86,41 @@ See below for more information about the add dialog.
 |Delete Userpoint| Delete Userpoint
 ''''''''''''''''''''''''''''''''''''''''
 
-Remove the selected userpoints after a confirmation dialog. Undo is not
-possible but database backups are created on each start. See
-:ref:`files-userdata` for information about database backup
-files.
+Remove the selected userpoints. The action can be undone in the main menu ``Userpoint``.
 
-.. _userpoints-reset-search:
+.. _userpoint-cleanup:
 
-|Reset Search| Reset Search
+Cleanup Userpoints
 ''''''''''''''''''''''''''''''''''''''''
 
-Clear search filters and revert to showing all entries in the search
-result table view.
+Opens a dialog window where the userpoint database can be cleaned up.
+The dialog contains the following options:
 
-.. _userpoints-clear-selection:
+Delete userpoints having no information except coordinates and type
+  Removes empty userpoints without any information.
 
-|Clear Selection| Clear Selection
-''''''''''''''''''''''''''''''''''''''''
+Remove duplicates using additional fields as criteria.
+  A userpoint will considered a duplicate to another if all selected fields are equal. The following fields can be checked:
 
-Deselect all selected entries in the table and remove any highlight
-circles from the map.
+  -  Ident, Name, and Type
+  -  Region
+  -  Remarks
+  -  Tags
+  -  Coordinates
 
-.. _userpoints-help:
 
-|Help| Help
-''''''''''''''''''''''''''''''''''''''''
+.. figure:: ../images/userpoint_cleanup.jpg
 
-Display a quick help in the tooltip. Click to open this chapter of the
-manual in the default browser.
+    Cleanup up userpoints dialog. Empty userpoints will not be deleted.
+    Duplicates are removed if ident, region, name, type and coordinates are the same.
+
 
 .. _userpoints-menu:
 
 |Menu Button| Menu Button
 ''''''''''''''''''''''''''''''''''''''''
 
-Drop down menu button that allows to hide or show search options.
-
-The drop down menu prefixes menu items with a change indicator ``*`` to
-show that the related filter row has modifications.
+See :ref:`menu-button-search`.
 
 .. _userpoints-dialog-add:
 
@@ -126,6 +137,8 @@ context, the selection in the search result table or previous additions.
 
 ``Type`` can be selected from a drop down list or entered freely.
 
+``Name`` and ``Tags`` can be selected freely. Note that some of these fields have a special meaning for X-Plane import and export. See below for more information.
+
 The field ``Description`` allows multi line text and special characters.
 Formatting like italic or bold is not supported. See :doc:`REMARKS` for more information about using web links in this field.
 
@@ -141,13 +154,13 @@ description of the recognized coordinate formats. A label below the
 coordinates displays the parsed coordinates or an error message in case
 the coordinates are invalid.
 
-All other text fields are optional and can be left blank.
-
 The userpoint is removed on next startup of *Little Navmap* when
 ``Temporary userpoint. Delete on next startup.`` is checked.
 
 The button ``Reset`` clears all fields with exception of the coordinates
 and sets the type of the userpoint to ``Bookmark``.
+
+Note that all fields are optional. Only coordinates are required.
 
 .. figure:: ../images/userpoint_add.jpg
 
@@ -231,12 +244,21 @@ Some types are used as defaults when adding new userpoints. This depends
 on the context, i.e. what was below the cursor when right-clicking on
 the map.
 
-**Note that the userpoint types cannot be translated to other languages
-for now.**
+Note that the userpoint types cannot be translated to other languages for now.
+
+Below a list of the most important userpoint types.
+
+Addon
+^^^^^^^^
+
+The userpoint type ``Addon`` and all other user defined type names starting with ``Addon`` are used to highlight add-on airports.
+The built-in type ``Addon`` can be added using :ref:`mark-airport-addon-map` from the map and other context menus.
+You can add you own userpoint type names starting with ``Addon`` to create more add-on categories. See :ref:`customize-icons` for more information.
 
 Airports
 ^^^^^^^^
 
+-  |Addon| **Addon**: Can be used to mark airports manually as addon. Does not show labels to avoid overlap with marked airport.
 -  |Airport| **Airport**: Default when creating an userpoint on top of an airport.
 -  |Airstrip| **Airstrip**
 -  |Closed| **Closed airport**
@@ -246,15 +268,15 @@ Airports
 Navaids
 ^^^^^^^
 
--  |DME| **DME**: Distance measuring equipment.
--  |NDB| **NDB**: Non-directional beacon.
--  |TACAN| **TACAN**: Tactical air navigation system.
--  |VORDME| **VORDME**: VHF omnidirectional range and DME.
--  |VORTAC| **VORTAC**: VOR and TACAN.
--  |VOR| **VOR**: VHF omnidirectional range.
+-  |DME| **DME**: Distance measuring equipment. Default when creating an userpoint on top of a DME.
+-  |NDB| **NDB**: Non-directional beacon. Default when creating an userpoint on top of a NDB.
+-  |Radio Range| **Radio Range**: Old radio range navigation aid.
+-  |TACAN| **TACAN**: Tactical air navigation system. Default when creating an userpoint on top of a DME.
+-  |VORDME| **VORDME**: VHF omnidirectional range and DME. Default when creating an userpoint on top of a VORDME.
+-  |VORTAC| **VORTAC**: VOR and TACAN. Default when creating an userpoint on top of a VORTAC.
+-  |VOR| **VOR**: VHF omnidirectional range. Default when creating an userpoint on top of a VOR.
 -  |VRP| **VRP**: Visual reporting point.
--  |Waypoint| **Waypoint**: Default when creating an userpoint on top of
-   a navaid.
+-  |Waypoint| **Waypoint**: Default when creating an userpoint on top of a navaid. Default when creating an userpoint on top of a waypoint.
 
 Points of Interest
 ^^^^^^^^^^^^^^^^^^
@@ -269,6 +291,7 @@ Points of Interest
 -  |Marker| **Marker**
 -  |Mountain| **Mountain**
 -  |Obstacle| **Obstacle**
+-  |Oil Platform| **Oil Platform**
 -  |POI| **POI**
 -  |Pin| **Pin**
 
@@ -283,12 +306,12 @@ CSV Data Format
 The CSV data format is aligned to the format already used around the
 flight simulator community and other applications.
 
-Each row in the file represents an user-defined waypoint.
+Each row in the file represents an user defined waypoint.
 
 The recommended minimum fields for import are ``Type``, ``Name``, ``Ident``,
 ``Latitude`` and ``Longitude``.
 
-Only ``Latitude`` and ``Longitude`` are required, the rest can be empty.
+Only ``Latitude`` and ``Longitude`` are required.
 
 All twelve fields are saved when exporting userpoints as CSV. Also, the
 multi line field ``Remarks`` is enclosed in quotes if needed and
@@ -360,12 +383,12 @@ The full header if enabled on export is:
 ========   =====================   ========   =============   ================================================================================================================================================================================
 Position   Name                    Required   Empty Allowed   Comment
 ========   =====================   ========   =============   ================================================================================================================================================================================
-1          Type                    Yes        Yes             One of the predefined or user-defined types. The icon for `Unknown` is used if the type does not match one of the known types.
+1          Type                    Yes        Yes             One of the predefined or user defined types. The icon for `Unknown` is used if the type does not match one of the known types.
 2          Name                    Yes        Yes             Free to use field. Used for Garmin export.
 3          Ident                   Yes        Yes             Required only for Garmin and X-Plane export. Has to be an unique valid identifier with maximum of five characters for these exports.
-4          Latitude                Yes        No              Range from -90 to 90 degrees using dot `.` as decimal separator
-5          Longitude               Yes        No              Range from -180 to 180 degrees using dot `.` as decimal separator.
-6          Elevation               No         Yes             Must be a valid number if used. Unit is always feet.
+4          Latitude                Yes        No              Range from -90 to 90 degrees using dot ``.`` as decimal separator
+5          Longitude               Yes        No              Range from -180 to 180 degrees using dot ``.`` as decimal separator.
+6          Elevation               No         Yes             Must be a valid number when used. A suffix ``f`` indicates an elevation unit feet and ``m`` indicates meter. The default unit with no suffix given is feet.
 7          Magnetic declination    No         Yes             Ignored on import and set to a valid calculated value on export.
 8          Tags                    No         Yes             Free to use field. GUI has no special tag search.
 9          Description             No         Yes             Free to use field which allows line breaks.
@@ -381,24 +404,38 @@ X-Plane user_fix.dat Data Format
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This allows to read and write the X-Plane ``user_fix.dat`` file for
-user-defined waypoints. The file does not exist by default and has to be
+user defined waypoints. The file does not exist by default and has to be
 saved to ``XPLANE/Custom Data/user_fix.dat``.
 
-The format is described by *Laminar Research* in a PDF file which can be
-downloaded here:
-`XP-FIX1101-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2016/10/XP-FIX1101-Spec.pdf>`__.
+The format is described by *Laminar Research* in a PDF file which can be downloaded for X-Plane 11 `XP-FIX1101-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2019/01/XP-FIX1101-Spec.pdf>`__ and X-Plane 12 `XP-FIX1200-Spec.pdf <https://developer.x-plane.com/wp-content/uploads/2021/09/XP-FIX1200-Spec.pdf>`__.
 
 The file consists of a header and a number of rows for the user fixes.
 Each row has five columns which are separated by space or tab
 characters.
 
-There are five columns of data in the file:
+There are five columns of data in the file which are mapped to the userpoint data as shown below:
+    #. Latitude: From and to userpoint field ``Latitude``.
+    #. Longitude: From and to userpoint field ``Longitude``.
+    #. Ident: From and to userpoint field ``Ident``.
+    #. Airport ident: From and to first space separated entry of userpoint field ``Tags``. Optional.
+    #. Region: From and to userpoint field ``Region``.
+    #. Waypoint type as defined by the 3 columns of ARINC 424.18 field definition.
+       From and to second space separated entry of userpoint field ``Tags``. See remarks below. Optional.
+    #. Name (only X-Plane 12): From and to userpoint field ``Name``.
 
-#. Latitude
-#. Longitude
-#. Ident
-#. Airport ident
-#. Region
+Field decoding for X-Plane 11 and 12:
+   The *Little Navmap* userpoint tags field is used to load and save the ID of the airport terminal area as well as the waypoint type.
+
+   The waypoint type is based on ARINC 424 field type definition 5.42.
+   Spaces from this field are replaced by underscores ``_`` for userpoint tags. Alternatively double quotes and
+   spaces can be used. *Little Navmap* decodes and encodes the field when exporting and importing ``user_fix.dat``.
+
+   Example tags in *Little Navmap*: ``EDDF V__`` is a VFR Waypoint at airport EDDF, ``ENRT "I  "`` is an en-route unnamed
+   charted intersection and ``ENRT R__`` is an en-route named intersection. These tags are encoded to the numeric values on export.
+
+The user defined waypoints are shown on the
+X-Plane map if the correct type (VFR or other) matches the X-Plane map type.
+Waypoints can be selected and used to build flight plans in the X-Plane stock GPS and FMS.
 
 **Example for** ``user_fix.dat`` **:**
 
@@ -407,21 +444,20 @@ There are five columns of data in the file:
    I
    1101 Version - data cycle 1704, build 20170411, metadata FixXP1101. NoCopyright (c) 2017 useruser
 
-    50.88166689  12.58666711 PACEC ENRT ZZ
-   -36.29987200 174.71089013 N0008 NZNI ZZ
+    50.88166689    12.58666711   PACEC ENRT ZZ
+   -36.29987200   174.71089013   N0008 NZNI ZZ
+     6.000000000  159.000000000  06E59 ENRT ZZ 2115159
+     6.000000000  160.000000000  06E60 ENRT ZZ 2115159
+    51.801667      -8.573889     VP001 ENRT EI 2105430 HALFWAY ROUTE
+    51.816389      -8.390833     VP002 ENRT EI 2105430 CARRIGALINE
    99
 
 
-.. note::
-
-     Note that, while the user-defined waypoints are not displayed on the
-     X-Plane map, they can be selected and used to build flight plans in the
-     X-Plane stock GPS and FMS.
+.. important::
 
      Keep in mind that waypoints are loaded from the Navigraph database if the
-     default mode :ref:`navigraph-navaid-proc` is enabled.
-
-     Therefore, user defined waypoints from the file ``user_fix.dat`` might not be
+     default mode :ref:`navigraph-navaid-proc` is enabled in *Little Navmap*.
+     Therefore, user defined waypoints from the file ``user_fix.dat`` are not
      shown in *Little Navmap* after loading the scenery library from X-Plane.
 
 Import
@@ -447,9 +483,7 @@ Export
 
 The mapping is the same as for the import.
 
--  Ident to fix ident.
--  Tags to fix airport.
--  Region to fix region.
+See :ref:`userpoints-xplane` above for waypoint type mapping.
 
 All other fields are ignored.
 
@@ -568,40 +602,45 @@ functionality is not available for userpoints.
 You can also use the CSV export to create backups manually since CSV
 allows to export the full dataset.
 
-See :ref:`files-userdata` for information about database
+See Files - :ref:`files-userdata` for information about database
 backup files.
 
 .. |Add Userpoint| image:: ../images/icon_userdata_add.png
-.. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
-.. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
-.. |Reset Search| image:: ../images/icon_clear.png
-.. |Clear Selection| image:: ../images/icon_clearselection.png
-.. |Help| image:: ../images/icon_help.png
-.. |Menu Button| image:: ../images/icon_menubutton.png
-.. |Unknown| image:: ../images/icon_userpoint_Unknown.png
+.. |Addon| image:: ../images/icon_userpoint_Addon.png
 .. |Airport| image:: ../images/icon_userpoint_Airport.png
 .. |Airstrip| image:: ../images/icon_userpoint_Airstrip.png
+.. |Bookmark| image:: ../images/icon_userpoint_Bookmark.png
+.. |Cabin| image:: ../images/icon_userpoint_Cabin.png
+.. |Clear Selection| image:: ../images/icon_clearselection.png
 .. |Closed| image:: ../images/icon_userpoint_Closed.png
-.. |Helipad| image:: ../images/icon_userpoint_Helipad.png
-.. |Seaport| image:: ../images/icon_userpoint_Seaport.png
 .. |DME| image:: ../images/icon_userpoint_DME.png
+.. |Delete Userpoint| image:: ../images/icon_userdata_delete.png
+.. |Edit Userpoint| image:: ../images/icon_userdata_edit.png
+.. |Error| image:: ../images/icon_userpoint_Error.png
+.. |Flag| image:: ../images/icon_userpoint_Flag.png
+.. |Helipad| image:: ../images/icon_userpoint_Helipad.png
+.. |Help| image:: ../images/icon_help.png
+.. |Lighthouse| image:: ../images/icon_userpoint_Lighthouse.png
+.. |Location| image:: ../images/icon_userpoint_Location.png
+.. |Logbook| image:: ../images/icon_userpoint_Logbook.png
+.. |Marker| image:: ../images/icon_userpoint_Marker.png
+.. |Menu Button| image:: ../images/icon_menubutton.png
+.. |Mountain| image:: ../images/icon_userpoint_Mountain.png
 .. |NDB| image:: ../images/icon_userpoint_NDB.png
+.. |Obstacle| image:: ../images/icon_userpoint_Obstacle.png
+.. |Oil Platform| image:: ../images/icon_userpoint_Oil\ Platform.png
+.. |POI| image:: ../images/icon_userpoint_POI.png
+.. |Pin| image:: ../images/icon_userpoint_Pin.png
+.. |Radio Range| image:: ../images/icon_userpoint_Radio\ Range.png
+.. |Redo| image:: ../images/icon_redo.png
+.. |Reset Search| image:: ../images/icon_clear.png
+.. |Seaport| image:: ../images/icon_userpoint_Seaport.png
 .. |TACAN| image:: ../images/icon_userpoint_TACAN.png
+.. |Undo| image:: ../images/icon_undo.png
+.. |Unknown| image:: ../images/icon_userpoint_Unknown.png
 .. |VORDME| image:: ../images/icon_userpoint_VORDME.png
 .. |VORTAC| image:: ../images/icon_userpoint_VORTAC.png
 .. |VOR| image:: ../images/icon_userpoint_VOR.png
 .. |VRP| image:: ../images/icon_userpoint_VRP.png
 .. |Waypoint| image:: ../images/icon_userpoint_Waypoint.png
-.. |Bookmark| image:: ../images/icon_userpoint_Bookmark.png
-.. |Cabin| image:: ../images/icon_userpoint_Cabin.png
-.. |Error| image:: ../images/icon_userpoint_Error.png
-.. |Flag| image:: ../images/icon_userpoint_Flag.png
-.. |Lighthouse| image:: ../images/icon_userpoint_Lighthouse.png
-.. |Location| image:: ../images/icon_userpoint_Location.png
-.. |Logbook| image:: ../images/icon_userpoint_Logbook.png
-.. |Marker| image:: ../images/icon_userpoint_Marker.png
-.. |Mountain| image:: ../images/icon_userpoint_Mountain.png
-.. |Obstacle| image:: ../images/icon_userpoint_Obstacle.png
-.. |POI| image:: ../images/icon_userpoint_POI.png
-.. |Pin| image:: ../images/icon_userpoint_Pin.png
 

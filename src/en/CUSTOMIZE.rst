@@ -2,11 +2,11 @@ Customizing General
 -------------------
 
 *Little Navmap* creates multiple configuration files in the directory
-``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`` when started. These
-allow extended customization of the program.
+``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`` when started. These allow extended customization of the program.
 
-The files use the Windows-INI style that has groups in square
-brackets and ``key=value`` lines. See
+This chapter shows the Windows file locations. See :doc:`FILES` for locations on Linux and macOS.
+
+The files use the Windows-INI style that has groups in square brackets and ``key=value`` lines. See
 `INI (Wikipedia) <https://en.wikipedia.org/wiki/INI_file>`__ for more information
 about this type of configuration files.
 
@@ -46,8 +46,7 @@ Some of the INI files contain a section ``[Options]`` with a key
    settings change. A backup will be created to save your user
    customizations
 
-   Add this version section to all new files. Otherwise, *Little
-   Navmap* might reset the content.
+   Keep this version section in all files. Otherwise, *Little Navmap* might reset the content.
 
 Examples for backup files: ``little_navmap_mapstyle_backup_2.0.0.ini``
 or ``little_navmap_mapstyle_backup.ini``.
@@ -60,32 +59,32 @@ version.
 GUI
 ^^^^^^^^
 
-Only two user interface styles can be customized. These are ``Fusion``
-and ``Night`` and can be found in :ref:`user-interface` in the options dialog.
+Two user interface styles can be customized. These are ``Fusion`` and ``Night``.
 These two styles are available on all operating systems.
 
 Two files are generated that allow the customization for all window,
 button and dialog colors. These are:
 
--  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
+Fusion
+   ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
 
--  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini``
+Night
+    ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini``
 
-The key names in these files are derived from the *Qt* palette options.
+The key names in these files are derived from the palette options of the Qt library.
 Each key consists of the group and role name separated by an underscore.
 See below for more information on the color formats used.
 
 See here for more information about
-`groups <http://doc.qt.io/qt-5.6/qpalette.html#ColorGroup-enum>`__ and
-`roles <http://doc.qt.io/qt-5.6/qpalette.html#ColorRole-enum>`__.
+`groups <https://doc.qt.io/qt-5/qpalette.html#ColorGroup-enum>`__ and
+`roles <https://doc.qt.io/qt-5/qpalette.html#ColorRole-enum>`__.
 
 .. _customize-map-display:
 
 Map Display
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The file
-``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini``
+The file ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini``
 allows to customize various aspects of the map display and is currently
 limited to colors and pens. Most key names are self explaining. See
 below for more information about color values.
@@ -106,13 +105,19 @@ design:
 
 SVG color name is one of the colors defined in the list of
 `CSS Colors <https://www.w3schools.com/cssref/css_colors.asp>`__;
-for example, ``steelblue`` or
-``gainsboro``. Note that you cannot enter an alpha channel value if you
+for example, ``steelblue`` or ``gainsboro``. Note that you cannot enter an alpha channel value if you
 use a color name.
 
-You can use the `w3schools color
-picker <https://www.w3schools.com/colors/colors_picker.asp>`__ to get
+You can use the `w3schools color picker <https://www.w3schools.com/colors/colors_picker.asp>`__
+or the
+`fffuel Simple HEX, RGB & HSL color picker tool for web designers <https://fffuel.co/cccolor/>`__ to get
 the hex values for a color.
+
+.. important::
+
+    Most web color tools give you the color value in format ``#RRGGBBAA`` with the transparency at the end of the string.
+    Convert this to the required value by putting the last two characters ``AA`` to the front to get the needed ``#AARRGGBB``.
+
 
 **Examples:**
 
@@ -143,14 +148,33 @@ A pen contains the following values in a comma separated list:
 
 ``NationalParkPen=#509090, 2.1, Solid``
 
+.. _customize-formats-level:
+
+Level Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Labels, symbols and zoom layer settings can be changed in the file ``maplayers.xml``.
+
+You can download the file here: `maplayers.xml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/resources/config/maplayers.xml>`__.
+
+Put a copy of this file into the *Little Navmap* settings folder
+(``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\`` on Windows) to override the stock settings.
+*Little Navmap* will watch the file, reload it and redraw the map when it is changed.
+
+See the comments inside the file for more explanations.
+
+.. warning::
+
+  Using wrong settings in this file can crash or freeze the program.
+
 .. _customize-icons:
 
 Icons
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To change an icon download it from the GitHub source repository `Icon
-Resources <https://github.com/albar965/littlenavmap/tree/release/2.4/resources/icons>`__
-or extract the included file ``Little Navmap/customize/icons.zip``.
+To change an icon download them from the GitHub source repository `Icon
+Resources <https://github.com/albar965/littlenavmap/tree/release/2.8/resources/icons>`__
+or extract the included file ``customize/icons.zip`` in the installation folder.
 
 Modify the icon and save it into the settings directory
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap* will
@@ -182,18 +206,25 @@ The icons are:
 -  ``aircraft_boat_user.svg``
 -  ``aircraft_helicopter.svg``
 -  ``aircraft_helicopter_ground.svg``
+-  ``aircraft_helicopter_ground_online.svg``
 -  ``aircraft_helicopter_ground_user.svg``
+-  ``aircraft_helicopter_online.svg``
 -  ``aircraft_helicopter_user.svg``
 -  ``aircraft_jet.svg``
 -  ``aircraft_jet_ground.svg``
+-  ``aircraft_jet_ground_online.svg``
 -  ``aircraft_jet_ground_user.svg``
+-  ``aircraft_jet_online.svg``
 -  ``aircraft_jet_user.svg``
 -  ``aircraft_online.svg``
 -  ``aircraft_online_ground.svg``
 -  ``aircraft_small.svg``
 -  ``aircraft_small_ground.svg``
+-  ``aircraft_small_ground_online.svg``
 -  ``aircraft_small_ground_user.svg``
+-  ``aircraft_small_online.svg``
 -  ``aircraft_small_user.svg``
+
 
 Only used in X-Plane:
 
@@ -230,12 +261,15 @@ name pattern in the default directory.
 -  ``userpoint_Airport.svg``
 -  ``userpoint_Airstrip.svg``
 -  ``userpoint_Bookmark.svg``
+-  ``userpoint_Building.svg``
 -  ``userpoint_Cabin.svg``
 -  ``userpoint_Closed.svg``
 -  ``userpoint_DME.svg``
 -  ``userpoint_Error.svg``
 -  ``userpoint_Flag.svg``
 -  ``userpoint_Helipad.svg``
+-  ``userpoint_History.svg``
+-  ``userpoint_Landform.svg``
 -  ``userpoint_Lighthouse.svg``
 -  ``userpoint_Location.svg``
 -  ``userpoint_Logbook.svg``
@@ -243,16 +277,22 @@ name pattern in the default directory.
 -  ``userpoint_Mountain.svg``
 -  ``userpoint_NDB.svg``
 -  ``userpoint_Obstacle.svg``
--  ``userpoint_Pin.svg``
+-  ``userpoint_Other.svg``
 -  ``userpoint_POI.svg``
+-  ``userpoint_Park.svg``
+-  ``userpoint_Pin.svg``
+-  ``userpoint_Radio Range.svg``
 -  ``userpoint_Seaport.svg``
+-  ``userpoint_Settlement.svg``
 -  ``userpoint_TACAN.svg``
 -  ``userpoint_Unknown.svg``
 -  ``userpoint_VOR.svg``
 -  ``userpoint_VORDME.svg``
 -  ``userpoint_VORTAC.svg``
 -  ``userpoint_VRP.svg``
+-  ``userpoint_Water.svg``
 -  ``userpoint_Waypoint.svg``
+
 
 The text between the first underscore ``_`` and the ``.png`` ending
 defines the category. For example ``userpoint_My Places.png`` creates a

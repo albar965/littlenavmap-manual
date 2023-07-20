@@ -7,6 +7,15 @@ plan waypoints. It is only available when a valid flight plan is loaded. The
 user aircraft will be shown if *Little Navmap* is connected to the
 simulator.
 
+
+The elevation profile does not cover missed approaches and legs to
+alternate airports. Create a new flight plan from the destination to the
+alternate airport if you wish to use the elevation profile.
+
+Movement of the aircraft and the trail in the elevation profile is tied to the active
+flight plan leg and will not be correct if flying away from the active
+leg.
+
 .. note::
 
      The elevation display covers only the flight plan and will not
@@ -14,14 +23,6 @@ simulator.
      aircraft. You need a valid flight plan (i.e. a departure and
      destination airport) and a valid aircraft performance file
      to see the elevation profile.
-
-The elevation profile also does not cover missed approaches and legs to
-alternate airports. Create a new flight plan from the destination to the
-alternate airport if you wish to use the elevation profile.
-
-Movement of the aircraft and the trail in the elevation profile is tied to the active
-flight plan leg and will not be correct if flying away from the active
-leg.
 
 .. _top-label:
 
@@ -32,9 +33,11 @@ Following information is shown in the top label if connected to a flight
 simulator with a valid flight plan:
 
 -  Distance from user aircraft to flight plan destination
+-  Estimated time en-route in hours and minutes
 -  Distance from user aircraft to the top of descent
+-  Estimated time to top of descent in hours and minutes
 
-**Example:** ``To Destination: 1,213 nm, to Top of Descent: 1,109 nm.``
+**Example:** ``Destination: 47 NM (0 h 28 m). Top of Descent: 26 NM (0 h 15 m).``
 
 The label is hidden if not connected to a simulator.
 
@@ -50,11 +53,13 @@ highlighted on the map with a black/cyan circle. The label changes the side depe
 The label shows the following information for the mouse position:
 
 -  Distance from departure and to destination plus calculated altitude and next waypoint.
--  Course for the flight plan leg at the cursor position.
--  Heading for this flight plan leg at the position. This is calculated based on wind conditions.
--  Ground altitude and calculated altitude above ground.
--  Safe altitude of the flight plan leg at the cursor position (orange line).
--  Wind direction and speed as well as head- (``▼``) or tailwind (``▲``) component.
+-  ``Course`` for the flight plan leg at the cursor position.
+-  ``Heading`` for this flight plan leg at the position. This is calculated based on wind conditions and omitted if it is the same as course.
+-  The ``Flight path angle`` is only shown in the descent phase and shows the vertical angle.
+   The label changes to ``Required flight path angle`` if a descent path is reqired by a procedure.
+-  ``Ground`` altitude and calculated altitude above ground.
+-  ``Leg safe altitude`` of the flight plan leg at the cursor position (orange line).
+-  ``Wind`` direction and speed as well as head- (``▼``) or tailwind (``▲``) component.
 
 .. figure:: ../images/profile_label.jpg
 
@@ -63,17 +68,7 @@ The label shows the following information for the mouse position:
     User aircraft still climbing.
     Note the image showing German number format with dot as thousands separator.
 
-
-Bottom Label
-~~~~~~~~~~~~
-
-This is only shown if the profile could not be built due to errors in
-the flight plan or aircraft performance.
-
-The error messages are the same as in :ref:`flight-plan-table-error` in the flight
-planning window.
-
-Hover the mouse over the label or click it for more information about the error.
+.. _profile-options:
 
 Zoom Sliders
 ~~~~~~~~~~~~
@@ -85,9 +80,11 @@ following controls are available:
    elevation profile window using this splitter button. The part
    containing the sliders will be collapsed if you drag it to the far
    right. You can open the collapsed part again by dragging the splitter
-   to the left.
+   to the left. The look of the splitter might be different on another operating system.
 -  |Expand to Window| ``Expand to Window``: Resets the view back to 100
    percent showing the whole flight plan.
+-  |Settings| ``Display Options``: See :ref:`display-options-profile`.
+-  |Help| ``Help``: Opens this online help page.
 -  |Zoom Vertically| ``Zoom Vertically``: Move the slider up to zoom in
    vertically. Maximum zoom results in 500 ft height for the whole
    profile window.
@@ -124,7 +121,20 @@ keyboard.
 -  ``Home`` and ``End``: Jump to departure or destination.
 -  ``PageUp`` and ``PageDown``: Move forward or backward one page.
 
-.. _context-menu:
+
+.. _display-options-profile:
+
+|Settings| Elevation Profile Display Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Choose ``Elevation Profile Display Options`` from the elevation profile context
+menu to customize labels and other display features.
+
+The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
+
+Same as main menu ``Tools`` -> :ref:`elevation-profile-display-options`.
+
+.. _context-menu-profile:
 
 Context Menu Elevation Profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,17 +156,40 @@ Resets the view back to 100 percent showing the whole flight plan.
 
 .. _center-aircraft-profile:
 
-|Center Aircraft| Center Aircraft
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Center Aircraft| Keep User Aircraft Centered
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If this option is selected, the aircraft remains centered on the left of
 the altitude profile during flight.
 
 The aircraft will be kept on the upper part of the window if the
 aircraft is descending and on the lower part if climbing.
+You can move around the profile manually.
+After a time without manual movements it will jump back to the aircraft.
 
-See also for more information on jump back in the options dialog on
-:ref:`simulator-aircraft`.
+The vertical and horizontal zoom distances set by the user are not changed while *Little Navmap* keeps the aircraft visible.
+
+See also for more information on jump back in the options dialog on :ref:`simulator-aircraft` which partially affects this function.
+See the related tooltips for more information.
+
+This function is independent of the related :ref:`center-aircraft`.
+
+.. _zoom-aircraft-profile:
+
+|Zoom Aircraft| Center on Aircraft and Destination
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Same as :ref:`center-aircraft-profile` above but additionally
+zooms the elevation profile to keep aircraft and destination visible when checked. This hides the
+unneeded passed flight plan legs.
+
+The vertical and horizontal zoom distances set by the user are not changed while *Little Navmap* keeps the aircraft visible
+until the destination is visible on the right side of the map.
+The elevation profile starts to zoom in horizontally and vertically as much as possible to keep the destination and the user aircraft visible then.
+
+The function :ref:`center-aircraft-profile` has to be enabled to use this function.
+
+Note that the elevation profile starts zooming fairly late after at least half of the flown flight distance.
 
 .. _delete-aircraft-trail-profile:
 
@@ -194,11 +227,15 @@ relation to the real VASI accuracy.
 
 .. _show-ils:
 
-|Show ILS| Show ILS
-^^^^^^^^^^^^^^^^^^^
+|Show ILS| Show ILS or GLS/RNP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Shows an ILS glideslope if an approach with a runway is selected in the
-flight plan and if the runway has an ILS.
+Shows an ILS glideslope or GLS/RNP approach paths if an approach with a runway is selected in the
+flight plan and if the runway has the related navaid or approach type.
+
+Drawing of approach guidance depends on selected approach procedure type. An ILS approach will show the ILS
+feathers while a localizer approach without vertical guidance will not.
+Note that no vertical navaid guidance is shown for circle-to-land approaches.
 
 The slope is drawn with the correct angle to be usable as an approach
 guide. The vertical opening angle is only meant for depiction and has no
@@ -206,6 +243,16 @@ relation to the real ILS accuracy.
 
 A label on top shows name, frequency, heading, glideslope angle and DME
 indicator if available
+
+.. note::
+
+      The ILS glideslope and GLS/RNP glidepaths can be forced to display for all approach types:
+
+      -  Disable ILS or GLS/RNP on the toolbar or in the menu ``View`` -> :ref:`navaids-menu` to see only flight
+         plan related navaids on the map and approach related navaids in the elevation profile. This means
+         you won't see an ILS glideslope for a VOR approach in the elevation profile, for example.
+      -  Enable ILS or GLS/RNP to see slopes in the elevation profile independent of the approach type. A
+         destination runway (:ref:`select-destination-runway`) or an approach (:doc:`SEARCHPROCS`) has to be selected to see the slope.
 
 .. figure:: ../images/profile_ils.jpg
 
@@ -221,6 +268,22 @@ This affects the map and elevation profile display but not the altitude calculat
 
 This is the same function as :ref:`show-toc-and-tod` in the menu ``View``.
 
+.. _show-vertical-track-profile:
+
+|Show Vertical Track| Show Vertical Track
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Shows a vertical track line indicating the flight path based on current descent or climb rate as
+well as ground speed.
+
+Use this to aim at the right altitude at the next flight plan waypoint. This is especially useful at descent.
+
+Related function for the map is :ref:`show-aircraft-altitude-range-map` in the map context menu.
+
+.. figure:: ../images/legend_profile_path.png
+
+    Vertical track line in elevation profile window indicating climb rate.
+
 Follow on Map
 ^^^^^^^^^^^^^
 
@@ -228,24 +291,11 @@ The map view will be centered - not zoomed in - on the position below
 the cursor if hovering above the elevation profile when this option is
 selected.
 
-.. _show-zoom-slider:
-
-Show Tooltip
-^^^^^^^^^^^^^^^^^
-
-Hides the mouse hover tooltip :ref:`tooltip-label` if unchecked.
-
 Show Zoom Sliders
 ^^^^^^^^^^^^^^^^^
 
 Show or hide the zoom sliders and buttons at the right side of the
 elevation profile. You can still zoom using the mouse or the keyboard.
-
-Show Labels
-^^^^^^^^^^^
-
-Show or hide the altitude labels at the right side of the elevation
-profile.
 
 Show Scrollbars
 ^^^^^^^^^^^^^^^
@@ -253,7 +303,12 @@ Show Scrollbars
 Show or hide the scroll bars at the bottom and the right side of the
 elevation profile. You can still use the mouse or keyboard to navigate.
 
-.. _display:
+.. _profile-display-options:
+
+|Settings| Elevation Profile Display Options
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+See :ref:`display-options-profile` above.
 
 Profile Display
 ~~~~~~~~~~~~~~~
@@ -265,10 +320,13 @@ passed flight plan legs are the same. The profile display also follows
 other map settings like visibility of flight plan line, aircraft and
 aircraft trail.
 
+Display options for the flight plan can be changed in :ref:`map-display-flight-plan`.
+Not all of the flight plan options affect the elevation profile which is noted in the related tooltips.
+
 Aircraft heading will turn if a backward movement relative to the active
 flight plan leg is detected.
 
-For more information see the :ref:`elevation-profile-legend`.
+For more information see the :ref:`elevation-profile-legend` in the map legend.
 
 The elevation profile uses actual altitude for display of restrictions,
 slope and cruise.
@@ -279,18 +337,7 @@ at the higher flight levels.
 You might see vertical aircraft movement of the aircraft symbol and jumps in the trail when adjusting
 barometric pressure in the simulator altimeter.
 
-.. note::
-
-    Note that the profile display depends on the correct sequencing of the
-    active flight plan leg (magenta line). The aircraft will be displayed in
-    the wrong position and the aircraft trail will be erratic if the active
-    leg is not correct or manually changed.
-
-    The aircraft trail will be displayed incorrectly in the elevation
-    profile if the flight plan is changed (i.e. the flight plan length or
-    geometry changes). You can delete the profile aircraft trail in
-    context menu :ref:`delete-aircraft-trail` while keeping the trail on
-    the map.
+.. include:: include/ALTCORRECTION.rst
 
 .. figure:: ../images/profile.jpg
 
@@ -307,8 +354,8 @@ barometric pressure in the simulator altimeter.
 Top of Climb and Top of Descent Paths
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The elevation profile will also display the top of climb and top of
-descent which are calculated based on the current :doc:`AIRCRAFTPERF` profile and wind situation.
+The elevation profile also displays the top of climb and top of
+descent which are calculated based on the current :doc:`AIRCRAFTPERF` profile and :ref:`wind` situation.
 
 Note that the TOC and TOD calculation is influenced by altitude
 restrictions in procedures. *Little Navmap* will calculate a climb or
@@ -335,7 +382,7 @@ See chapter :ref:`wind` for more information.
 
 The plan will switch to a flat display showing only a flight plan line
 at cruise altitude if the TOC and/or TOD cannot be calculated or if the
-plan violates altitude restrictions. A red warning message is displayed
+plan violates altitude restrictions. A red warning message is shown in the :ref:`flight-plan-table-err-footer` on the flight plan tab
 if this is the case. Click the message for more information.
 
 .. figure:: ../images/profile_descent.jpg
@@ -345,16 +392,12 @@ if this is the case. Click the message for more information.
 Elevation Data
 ~~~~~~~~~~~~~~
 
-Elevation processing is done in the background since data has to be
+Elevation processing is done in the background since online data has to be
 downloaded and computation is CPU intensive. Therefore, the update of
 the elevation display can take from a few seconds up to half a minute.
 This background update is started after creating or changing the flight
 plan or when new elevation data was downloaded. The display will be
 updated accordingly whenever new data is available.
-
-Close the ``Flight Plan Elevation Profile`` window if you think that it
-causes performance problems or stutters. All updates will stop once the
-window is closed.
 
 .. _flight-plan-elevation-profile-online:
 
@@ -382,11 +425,12 @@ elevation data has several advantages:
 -  World wide coverage
 -  No known errors
 -  Display of altitude below the cursor in the status bar
+-  Correct altitude if using non-airport departure and destination points
 
 Resolution is a bit lower than the one for the online data, though.
 
 See :ref:`cache-elevation` in the
-options dialog for instructions how to download and install the GLOBE
+options dialog for instructions how to download and install the GLOBE elevation
 data.
 
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
@@ -400,4 +444,9 @@ data.
 .. |Zoom Horizontally| image:: ../images/profile_zoomhoriz.jpg
 .. |Zoom Vertically| image:: ../images/profile_zoomvert.jpg
 .. |Show Top of Climb and Top of Descent| image:: ../images/icon_routetoctod.png
+
+.. |Zoom Aircraft| image:: ../images/icon_centeraircraftdest.png
+.. |Help| image:: ../images/icon_help.png
+.. |Settings| image:: ../images/icon_settings.png
+.. |Show Vertical Track| image:: ../images/icon_verticaltrack.png
 

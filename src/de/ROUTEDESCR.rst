@@ -119,6 +119,18 @@ Schaltflächen
    aktuellen Plan. Sie müssen auf ``Lese Routenbeschreibung`` klicken,
    bevor Sie einen Flugplan erstellen können.
 
+.. _routedescr-airport-ident:
+
+Flugplatzkennungen
+~~~~~~~~~~~~~~~~~~~
+
+ICAO-, FAA-, IATA- und lokale Kennungen werden standardmäßig angezeigt. Die interne Kennung wird bei
+der Anzeige nach Möglichkeit vermieden. Beachten Sie, dass IATA-Codes nur für Start und Ziel gelesen
+werden, da sie leicht mit Navigationshilfen verwechselt werden können.
+
+Beachten Sie auch, dass X-Plane-interne Codes wie ``XPA000B`` weiterhin erkannt werden, obwohl sie für
+die Anzeige vermieden werden.
+
 Format
 ~~~~~~
 

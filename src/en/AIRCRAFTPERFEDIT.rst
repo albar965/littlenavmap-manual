@@ -5,8 +5,7 @@ The dialog allows editing of all aircraft performance related parameters
 on three tabs. The labels for all values required for fuel calculation
 are highlighted **bold**.
 
-The dialog is opened when clicking on the edit button in the tab
-``Fuel Report``, when selecting ``Aircraft`` ->
+The dialog is opened when clicking on the edit button in the :ref:`fuel-report`, when selecting ``Aircraft`` ->
 ``New Aircraft Performance ...`` or ``Edit Aircraft Performance ...`` in
 the main menu.
 
@@ -17,31 +16,57 @@ Buttons
    profile. The fuel report, top of climb and top of descent in the
    :doc:`PROFILE` are
    adjusted immediately.
+-  ``OK and Save``: Takes all changes made in the dialog and saves the
+   profile. Opens a file dialog if the file is new.
 -  ``Cancel``: Disregards all changes and closes the dialog.
 -  ``Reset``: Resets all changes made since opening the edit dialog.
 -  ``Restore Defaults``: Resets back to the default profile.
 -  ``Help``: Opens the online help in the default web browser.
 
+.. _tab-aircraft-edit:
+
 Tab Aircraft
 ~~~~~~~~~~~~
 
+.. role:: error-style
+.. role:: warning-style
+
+-  ``Simulator``: This is populated based on the used simulator scenery library database when
+   creating the file. Adjust manually if needed.
 -  ``Aircraft model``: Can be used freely. Determined from aircraft name
    when *Little Navmap* collects data for a performance profile.
 -  ``Aircraft type``: The ICAO aircraft type designator. *Little Navmap*
-   will show a warning in the tab ``Fuel Report`` if the flown aircraft
-   does not match the type. Detected automatically when collecting
-   performance.
--  ``Required runway``: Only for information. Shown in the fuel report
-   if bigger than zero.
+   will show an :warning-style:`orange warning message` in the :ref:`fuel-report` if the flown aircraft
+   does not match the type in the aircraft performance file. Detected automatically when collecting
+   performance. The warning can be disabled in the menu ``Aircraft`` -> :ref:`aircraft-menu-warning`.
+-  ``Required runway``: Only for information. Shown in the fuel report if bigger than zero.
 -  ``Required runway type``: Only for information. Shown in the fuel
    report if it differs from default ``Hard``.
+
+.. _aircraft-type-edit:
 
 Aircraft Type
 ^^^^^^^^^^^^^
 
-See `List of ICAO aircraft type
-designators <https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators>`__
-(Wikipedia).
+See
+`ICAO - Aircraft Type Designators <https://www.icao.int/publications/DOC8643/Pages/Search.aspx>`__ or
+`Wikipedia - List of ICAO aircraft type designators <https://en.wikipedia.org/wiki/List_of_ICAO_aircraft_type_designators>`__.
+
+A warning message in the fuel report and the flight plan table footer will be shown if :ref:`aircraft-menu-warning` is enabled in the menu ``Aircraft`` and
+the simulator aircraft type does not match the loaded performance file. This helps to avoid
+accidental usage of the wrong performance file.
+
+The mismatch is identified by comparing the field ``Aircraft type``  with the simulator aircraft
+type which can be seen in field ``Type:`` in :ref:`aircraft`.
+
+MSFS
+''''''''''
+
+The aircraft type is not exposed in the SimConnect interface and will result in wrong warnings.
+Disable the warnings or adjust the ``Aircraft type`` in the aircraft performance tile to match your aircraft.
+
+The model can be found with any text editor, opening the related
+``aircraft.cfg`` file, key ``icao_type_designator`` int the section ``[General]``.
 
 X-Plane
 ''''''''''
@@ -188,14 +213,15 @@ cruise altitude and therefore results in a higher fuel flow. Adjust the
 values accordingly here.
 
 .. figure:: ../images/perf_edit_perf.jpg
+    :scale: 50%
 
-     Aircraft performance edit dialog tab ``Performance``.
+    Aircraft performance edit dialog tab ``Performance``. *Click image to enlarge.*
 
 Tab Remarks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This tab contains a free plain text field for notes and links which is also shown in the
-``Fuel Report`` tab of the window ``Flight Planning``.
+:ref:`fuel-report` of the window ``Flight Planning``.
 
 See :doc:`REMARKS` for more information about using web links in this field.
 

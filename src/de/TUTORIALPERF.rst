@@ -13,7 +13,7 @@ Flugplan
 
 Sie können den Flugplan aus dem IFR-Tutorial verwenden, der im
 Verzeichnis von *Little Navmap* enthalten ist:
-``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).pln``.
+``.../Little Navmap/etc/Tutorial IFR Bembridge (EGHJ) to Wick (EGPC).lnmpln``.
 
 Verwenden Sie das Hauptmenü ``Datei`` -> :ref:`open-flight-plan` |Open
 Flight Plan|, um den Flugplan zu laden.

@@ -7,11 +7,11 @@ permanently collects fuel flow and speed data and calculates average
 values for all flight phases.
 
 Wind does not affect the calculation since all speeds are based on true
-airspeed.
+airspeed and not ground speed.
 
 The collection begins automatically once *Little Navmap* is started and
 connected to a simulator. You can reset the collection manually to get a
-clean base.
+clean base or use the function :ref:`reset-for-new-flight` in menu ``File``.
 
 A report of current average fuel and speed numbers is shown on the tab
 ``Current Performance`` in the window. You can copy or merge
@@ -27,6 +27,12 @@ profile. You have to estimate the needed top of descent yourself.
     The flight plan cruise altitude is used to detect the cruise phase of
     the aircraft. Set the cruise altitude in the flight plan tab at least to
     the intended cruise altitude if you do not plan use a flight plan.
+
+.. note::
+
+   Note that the aircraft performance does not take aircraft load, cruise altitude and temperatures aloft into consideration.
+   You can use the block fuel as a starting point for complex aircraft, enter this into the FMS or MCDU and refine it there.
+   You can also build more than one performance file to depict different load situations or cruise altitudes.
 
 Quick How To
 ~~~~~~~~~~~~
@@ -44,7 +50,7 @@ Follow the steps below to collect performance for an aircraft.
    settings of the aircraft.
 #. The collection is completed once the field
    ``Current flight segment:`` in the report shows ``Finished.``.
-#. Select ``Aircraft`` -> ``Merge collected Aircraft Performance`` in
+#. Select ``Aircraft`` -> :ref:`aircraft-menu-merge` in
    the main menu and copy all values in the dialog. See :doc:`AIRCRAFTPERFMERGE` for more information on
    merging.
 #. Edit the aircraft performance data (:doc:`AIRCRAFTPERFEDIT`) and adjust the numbers to your
@@ -54,6 +60,8 @@ Follow the steps below to collect performance for an aircraft.
 
      Do not forget to add at least sufficient reserve fuel. Otherwise you
      will run out of fuel at destination if you rely on this plan.
+
+     Five percent contingency fuel are recommended.
 
 Other recommended fields to edit are ``Usable Fuel``,
 ``Required Runway`` and ``Required Runway Type``.

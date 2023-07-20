@@ -35,7 +35,7 @@ All tabs are filled for airport, all navaids, all userpoints or all
 airspaces which are close to the cursor for a left click in the map.
 
 *Little Navmap* shows tabs based on priorities and selected objects and
-tries minimize tab changes.
+tries to minimize tab changes.
 
 Example: If you click on an airport, a VOR, a NDB and an userpoint at
 the same position:
@@ -59,6 +59,9 @@ highlighting the shown object on the map. A link
 ``Remove Airway Highlights`` or ``Remove Airspace Highlights`` can be
 used to remove the corresponding highlights on the map.
 
+The links ``Procedures``, ``Departure Procedures`` or ``Arrival Procedures`` (text depends on airport position in flight plan)
+allow to jump directly to the :doc:`SEARCHPROCS` window.
+
 Other links open web pages with airport information in the web browser
 or a file manager like Windows Explorer with directories or files.
 
@@ -68,11 +71,13 @@ Scenery Information
 ~~~~~~~~~~~~~~~~~~~
 
 All information about airports and navaids includes one or more links at
-the bottom of the object information in section ``Scenery``. These links
-point to the matching BGL (FSX, P3D and MSFS) or dat (X-Plane) files that
+the bottom of the object information in section ``Data Source``. These links
+point to the matching BGL (FSX, P3D and MSFS) or ``apt.dat`` (X-Plane) files that
 contain information about the airport or navaid. Click the links to open
 the containing directory in your file manager (e.g. Windows Explorer).
 If possible, the matching file will be selected automatically.
+
+The data source ``Navigraph`` is shown if a navaid or airport originates from the Navigraph database.
 
 Multiple links can appear for airports since these can be updated by
 several files from different add-on sceneries or navdata updates.
@@ -80,7 +85,7 @@ several files from different add-on sceneries or navdata updates.
 .. note::
 
     The links shown as plain text with an additional remark like ``File not found`` if the file or folder is missing.
-    This can happen if you copy databases between computers and has no further consequences.
+    This can happen if you copy databases between computers. This is only a remark has no further consequences.
 
 Tabs in Information Dock Window
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,17 +100,45 @@ A tab that has several sub-tabs for airport information.
 The six tabs ``Overview``, ``Runways``, ``Com``, ``Procedures``, ``Nearest`` and ``Weather`` below
 the airport tab show information for one selected airport.
 
+.. _airport-ident-info:
+
+Airports can have several idents/codes depending on simulator. Unofficial internal idents are
+avoided in the *Little Navmap* user interface but can still show up in some cases.
+
+See also :ref:`airport-search-ident` for airport search options.
+
+-  **Ident or code shown in parentheses after airport name:** Either ICAO, FAA, IATA, local code or
+   internal code depending on simulator and availability.
+-  ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
+   available in X-Plane.
+-  ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
+   The FAA code is only available in X-Plane.
+-  ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
+   Available in X-Plane and Navigraph navdata.
+-  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
+   X-Plane.
+-  ``X-Plane Ident:``: Internal identfier for X-Plane airports.
+
+The airport codes are also shown in the information windows, tooltips and optionally in the map
+labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal
+ident is avoided if possible.
+
+**Example:**
+
+``Akutan`` is shown as ``Akutan (PAUT)`` with its official ICAO code ``PAUT`` on the map instead of the
+internal X-Plane code ``XPA000B``.
+
 .. _airport-general:
 
 General
 ''''''''''''''''''''''''''''''''''''
 
-Sunrise and sunset for the airport are calculated based on current real
+**Sunrise and sunset** for the airport are calculated based on current real
 date if no simulator is connected. Otherwise the simulator date is used.
 This is indicated by the text ``(civil twilight, real date)`` or
 ``(civil twilight, simulator date)``.
 
-Preferred runways depending on wind are shown after the METAR. More
+**Preferred runways** depending on wind are shown after the METAR. More
 details about preferred runways are on the tab :ref:`airport-weather`.
 
 Additional links for helipads are available in the tab ``Runways``.
@@ -120,15 +153,17 @@ Links
 
 Links to several online services like
 `SkyVector <https://skyvector.com/>`__ or the `The X-Plane Scenery
-Gateway <https://gateway.x-plane.com/>`__ open the browser with
+Gateway <https://gateway.x-plane.com/>`__ open a web browser with
 information for the airport using the respective online service.
 
 The links are shown in the tab ``Overview``.
 
 .. figure:: ../images/infolinks.jpg
+    :scale: 70%
 
-         Airport information with linked web-sites in the
-         ``Links`` section and links to user files in the ``Files`` section.
+    Airport information with linked web-sites in the
+    ``Links`` section and links to user files in the ``Files`` section. *Click image to enlarge.*
+
 
 .. _airport-files:
 
@@ -145,12 +180,12 @@ application like a PDF reader if you click on the link.
 
 Examples for airport Ouessant (``LFEC``):
 
--  ``/home/USERNAME/Documents/Little Navmap Files/Airports/LFEC``: Linux
--  ``/home/USERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC``:
+-  ``/home/YOURUSERNAME/Documents/Little Navmap Files/Airports/LFEC``: Linux
+-  ``/home/YOURUSERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC``:
    Linux with German translation
--  ``/Users/USERNAME/Documents/Little Navmap Files/Airports/LFEC``:
+-  ``/Users/YOURUSERNAME/Documents/Little Navmap Files/Airports/LFEC``:
    macOS
--  ``/Users/USERNAME/Documents/Little Navmap Dateien/Flugplätze/LFEC``:
+-  ``/Users/YOURUSERNAME/Documents/Little Navmap Dateien/Flugplätze/LFEC``:
    macOS with German translation
 -  ``C:\Users\YOURUSERNAME\Documents\Little Navmap Files/Airports/LFEC``:
    Windows
@@ -169,12 +204,29 @@ English path like: ``...\Little Navmap Files\Airports\LFEC`` and
 The links are shown in the tab ``Overview``.
 
 .. figure:: ../images/infoairport.jpg
+       :scale: 70%
 
        Airport information overview. Additional tabs show
        information for runways, COM frequencies, approaches and weather.
        Weather symbols user NOAA weather as source. Sunset and sunrise is based
        on real date since not connected to a simulator. Wind direction prefers
-       runways 09 and 14.
+       runways 09 and 14. *Click image to enlarge.*
+
+.. _airport-weather-tab:
+
+Weather
+''''''''''''''''''''''''''''''''''''
+
+The tab ``Weather`` shows decoded weather information for a selected
+airport. The flight rules icon (:ref:`airport-weather-legend`) has a suffix ``- Map`` if the
+shown weather source is the source for airport weather icons on the map.
+Detailed information for best runways for takeoff and
+landing based on wind conditions is shown as well.
+
+.. role:: error-style
+.. role:: warning-style
+
+The time is :warning-style:`shown in warning orange color` if older than three hours and :error-style:`in red error color` if older than six hours.
 
 .. _navaids:
 
@@ -184,26 +236,30 @@ Tab Navaids
 More than one navaid or airway can loaded into this tab on left click.
 VOR, NDB, waypoint, airway and ILS information is shown in this tab.
 
-An airway is always displayed with all its waypoints. Click any blue
+An airway or oceanic track is always shown with all its waypoints. Click any blue
 waypoint link to center the map around the waypoint.
 
-Whole airways are highlighted and shown on the map when clicking the
+Airways and tracks are highlighted and shown on the map when clicking the
 ``Map`` link in the information window.
 
-Highlighted airways have their own tooltip which is also shown if all
+Highlighted airways as well as tracks have their own tooltip which is also shown if all
 other airways are hidden.
 
-Click the link ``Remove Airway Highlights from Map`` in the information
+Click the link ``Remove Airway and Track Highlights`` in the information
 window to remove them from the map.
 
 .. figure:: ../images/infonavaid.jpg
+    :scale: 70%
 
-      Navaid information. Two navaids were close to the cursor when clicked.
+    Navaid information. Two navaids were close to the cursor when clicked. *Click image to enlarge.*
+
 
 .. figure:: ../images/infoairway.jpg
+    :scale: 70%
 
-     Navaid information. Display of several airways with altitude restrictions and list of
-     clickable waypoints. Clicking on the link ``Map`` highlights a whole airway.
+    Navaid information. Display of several airways with altitude restrictions and list of
+    clickable waypoints. Clicking on the link ``Map`` highlights a whole airway. *Click image to enlarge.*
+
 
 .. _airspaces-tab:
 
@@ -216,25 +272,15 @@ label when clicking the ``Map`` link in the information window.
 Highlighted airspaces have their own tooltip which is also shown if all
 other airspaces are hidden.
 
-Click the link ``Remove Highlights from Map`` in the information window
+Click the link ``Remove Airspace Highlights`` in the information window
 to remove the highlights from the map.
 
 .. figure:: ../images/infoairspace.jpg
+    :scale: 70%
 
-     Two airspaces that are shown in the information
-     after clicking into the map. Two airspaces are highlighted on the map
-     after clicking onto the ``Map`` link in the information text.
-
-.. _airport-weather-tab:
-
-Tab Weather
-^^^^^^^^^^^^^
-
-The tab ``Weather`` shows decoded weather information for a selected
-airport. The flight rules icon (:ref:`airport-weather-legend`) has a suffix ``- Map`` if the
-shown weather source is the source for airport weather icons on the map.
-Also shown is detailed information for best runways for takeoff and
-landing based on wind conditions.
+    Two airspaces that are shown in the information
+    after clicking into the map. Two airspaces are highlighted on the map
+    after clicking onto the ``Map`` link in the information text. *Click image to enlarge.*
 
 Other Tabs
 ^^^^^^^^^^
@@ -242,7 +288,7 @@ Other Tabs
 -  ``Userpoints``: Shows information about user defined waypoints or
    points of interest.
 -  ``Logbook``: Details about logbook entries.
--  ``Online Clients``: Online network clients/aircraft.
+-  ``Online Clients``: Online network clients/aircraft but not AI aircraft.
 -  ``Online Centers``: Online network centers/airspaces.
 
 .. _simulator-aircraft-dock-window:
@@ -251,9 +297,11 @@ Other Tabs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This dock window shows information about the user aircraft and about AI
-or multiplayer aircraft in several tabs. *Little Navmap* has to be
+or multiplayer aircraft in several tabs. This does not cover online aircraft. *Little Navmap* has to be
 connected to the simulator to enable this feature. See :doc:`CONNECT` for
 more information on this topic.
+
+Some fields need a valid flight plan to show. Warning and error messages are shown if needed.
 
 .. _aircraft:
 
@@ -264,11 +312,13 @@ Gives an overview about the user aircraft and shows type, weight and
 fuel information.
 
 .. figure:: ../images/infoac.jpg
+    :scale: 70%
 
-       Aircraft information when connected to a flight
-       simulator. Alternate units (liter and kg) are enabled.
+    Aircraft information when connected to a flight
+    simulator. Alternate units (liter and kg) are enabled. Screenshot based on *Little Navmap* 2.6. *Click image to enlarge.*
 
-.. _progress:
+
+.. _progress-info:
 
 Tab Progress
 ^^^^^^^^^^^^
@@ -277,17 +327,17 @@ Shows information similar to a flight management computer about the user
 aircraft. This covers flight plan progress, altitude, speed, ambient and
 environment parameters.
 
-The text information in the tab has a link ``More Less`` on the top
-left. You can use this to toggle between more detailed and less
-information.
+A button |Settings| in the top right corner opens the :ref:`progress-configuration` window which allows to configure the visible fields.
 
-The aircraft and progress tabs show warnings and errors by highlighting
+.. role:: error-style
+.. role:: warning-style
+
+The aircraft and progress tabs show :warning-style:`warnings` and :error-style:`errors` by highlighting
 text in red or orange. These are:
 
 -  Fuel and time estimated since flight plan not valid.
 -  Fuel and time estimated since aircraft performance not valid.
--  Insufficient fuel at destination (only if aircraft performance is
-   valid).
+-  Insufficient fuel at destination (only if aircraft performance is valid).
 -  Speed limit of 250 knots exceeded below 10,000 ft.
 -  Icing.
 
@@ -314,11 +364,31 @@ Some rows like ``Ice`` are hidden if the condition is not met.
      destination in the early flight phases. This is normal since fuel flow
      is higher for takeoff and early climb.
 
-.. figure:: ../images/infoacprogress.jpg
+.. include:: include/ALTCORRECTION.rst
 
-         Aircraft progress information when connected to a
-         flight simulator and user aircraft airborne. Alternate weight and fuel
-         units (kg and liter) are enabled as well as true course display.
+.. figure:: ../images/infoacprogress.jpg
+    :scale: 70%
+
+    Aircraft progress information when connected to a
+    flight simulator and user aircraft airborne. Alternate weight and fuel
+    units (kg and liter) are enabled as well as true course display. *Click image to enlarge.*
+
+
+.. _progress-configuration:
+
+|Settings| Aircraft Progress Display Options
+'''''''''''''''''''''''''''''''''''''''''''''
+
+Choose ``Aircraft Progress Display Options`` from the context
+menu of the tab ``Progress`` in window ``Simulator Aircraft`` to customize the output table.
+
+The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
+
+Note that not all fields are visible depending on aircraft status, flight plan and flight progress.
+
+Same as main menu ``Tools`` -> :ref:`aircraft-progress-display-options`.
+
+.. _ai-info:
 
 Tab AI / Multiplayer
 ^^^^^^^^^^^^^^^^^^^^
@@ -331,28 +401,15 @@ This also includes the aircraft's departure and destination airports
 that can be shown on the map by clicking on the blue links (only for FSX
 or P3D and if a flight plan is filed).
 
-Note that information on AI aircraft is limited on X-Plane. Only
-position, altitude and heading can be displayed.
+Note that information on AI aircraft is limited on X-Plane.
 
 .. figure:: ../images/infoacai.jpg
+    :scale: 70%
 
-      Information about an AI aircraft.
+    Information about an AI aircraft. *Click image to enlarge.*
 
-.. _legend-dock-window:
-
-|Legend Dock Window| Legend Dock Window
----------------------------------------
-
-Contains two tabs: One tab ``Navmap`` explaining the various airport and
-navaid symbols and a tab ``Map`` which shows the general legend for the
-base map like the *OpenStreetMap* for example.
-
-The contents of the ``Navmap`` legend are also available in the online
-manual: :doc:`LEGEND`.
-
-Note that the general map legend is not available for all map themes.
 
 .. |Information| image:: ../images/icon_infodock.png
 .. |Tabs in Simulator Aircraft Dock Window| image:: ../images/icon_aircraftdock.png
-.. |Legend Dock Window| image:: ../images/icon_legenddock.png
+.. |Settings| image:: ../images/icon_settings.png
 

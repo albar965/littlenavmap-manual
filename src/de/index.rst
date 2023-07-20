@@ -2,14 +2,16 @@
    :description: Little Navmap Benutzerhandbuch
    :keywords: Navigation, Flugsimulator, Karte, Flugplan, FSX, MSFS, Prepar3D, X-Plane, Flugplaner
 
+.. warning::
+
+    **Dieses Benutzerhandbuch ist noch in Arbeit, bis die stabile Version von Little Navmap 2.8 veröffentlicht wird.**
 
 Little Navmap Benutzerhandbuch
 ================================
 
 *Little Navmap* ist ein freier quelloffener Flugplaner,
 Navigationswerkzeug, Karte, Flugplatzsuche- und Informationssystem für
-Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v2 bis v5, Microsoft Flight Simulator 2020
-und X-Plane 11.
+Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D v3 bis v5, Microsoft Flight Simulator 2020, X-Plane 11 und X-Plane 12.
 
    Mehr über meine Projekte auf `www.littlenavmap.org <https://www.littlenavmap.org>`__.
    Supportforum auf `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ (Englisch).
@@ -19,11 +21,12 @@ und X-Plane 11.
 
 **Dieses Programm darf nicht für die Navigation in der realen Luftfahrt verwendet werden.**
 
-Für *Little Navmap* Versionen |version|. Zuletzt aktualisiert am |today|.
+Dieses Benutzerhandbuch ist für *Little Navmap* Versionen |version|.
 
 Deutsche Übersetzung von Karl Wichelmann, Stephan Leukert, merspieler, `Anja Fahrner <https://www.anja-fahrner.de>`__ und `Alexander Barthel <https://www.littlenavmap.org>`__.
 
 Beachten Sie bitte, dass Bildschirmfotos von der Übersetzung ausgenommen wurden und nur in Englisch vorliegen.
+
 
 =========== ===========
 |Sunshadow| |Spherical|
@@ -123,6 +126,10 @@ Diese Anleitung wurde mit `Sphinx <https://www.sphinx-doc.org/>`__ unter Benutzu
 Die PDF und MOBI Formate wurden mit Hilfe von `Calibre <https://calibre-ebook.com/>`__ konvertiert.
 
 Die Quellen dieser Anleitung sind auf `Github <https://github.com/albar965/littlenavmap-manual>`__ verfügbar.
+
+--------------------------
+
+Version |release|. Zuletzt aktualisiert am |today|.
 
 .. |Spherical| image:: ../images/spherical_small.jpg
 .. |Sunshadow| image:: ../images/sunshadow_small.jpg

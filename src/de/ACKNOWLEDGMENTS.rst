@@ -36,6 +36,8 @@ Dank an Daniel "Wolf"
 
 Danke an Andrea Deplano PVI, Italian virtual pilots für die italienische Übersetzung.
 
+Vielen Dank and John Liu und Tong Hui für die chinesische Übersetzung.
+
 Dank an Alfredo alias *fred*, Josemi alias *aquileo* und Emilio alias
 *zxplane* von `X-PLANE.es <http://www.x-plane.es/>`__ für die spanische
 Übersetzung des Handbuches.
@@ -44,6 +46,18 @@ Vielen Dank an Valerio Messina und Flavio Borgna für die italienische
 Übersetzung.
 
 Dank an Eddy Crequie für die niederländische Übersetzung.
+
+Vielen Dank an Sten Kristensen für die Compilierung für den Raspberry PI!
+
+Ein "Dankeschön!" an Piotr für die Hilfe im Avsim Forum.
+
+Danke and `icykoneko <https://github.com/icykoneko>`__ für die Implementierung der SID und STAR für MSFS.
+
+Ein herzliches Dankeschön an `u-an-i <https://github.com/u-an-i>`__ auf GitHub für die
+Implementierung der neuen Web-Nutzerschnittstelle.
+
+Danke and John Liu, `Tong Hui <https://github.com/tonghuix>`__ und
+`yudongx <https://github.com/yudongx>`__ für die chinesische Übersetzung.
 
 Ein herzliches Dankeschön an Jannik Prinz für die Einrichtung der Tavis
 CI-Builds.

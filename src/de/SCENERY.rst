@@ -81,16 +81,10 @@ geladenen Simulatordaten.
 Speicherorte der ``Scenery.cfg`` für Windows 7/8/10 sind:
 
 -  **Flight Simulator X:** ``C:\ProgramData\Microsoft\FSX\Scenery.cfg``
--  **Flight Simulator - Steam Edition:**
-   ``C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg``
--  **Prepar3D v2:**
-   ``C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg``
--  **Prepar3D v3:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
--  **Prepar3D v4:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
--  **Prepar3D v5:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
+-  **Flight Simulator - Steam Edition:** ``C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg``
+-  **Prepar3D v3:** ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
+-  **Prepar3D v4:** ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
+-  **Prepar3D v5:** ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
 
 Nach dem Laden wird ein Fehlerdialog angezeigt, wenn Dateien nicht
 gelesen werden konnten oder Verzeichnisse nicht gefunden wurden. In
@@ -119,8 +113,24 @@ ein Neuladen empfohlen, aber nicht erforderlich ist.
 Microsoft Flight Simulator 2020 Flugplätze und Navigationsdaten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **Wenn Sie das Navigraph-Update für MSFS verwenden:** Aktualisieren Sie auch die *Little Navmap*-Datenbank mit dem FMS Data Manager, um das Programm mit der Szeneriebibliothek von MSFS synchron zu halten. Verwenden Sie den Szeneriemodus ``Nutze Navigraph für Navigationshilfen und Prozeduren`` im Menü ``Szeneriebibliothek``, um Zugriff auf alle Prozeduren in *Little Navmap* zu erhalten.
--  **Wenn Sie das Navigraph-Update für MSFS nicht verwenden:** Benutzen Sie den Szeneriemodus ``Die Navigraph-Datenbank nicht verwenden`` im Menü ``Szeneriebibliothek``, um Probleme mit fehlenden oder veränderten Navigationshilfen zu vermeiden. Beachten Sie, dass SID und STAR in *Little Navmap* noch nicht verfügbar sind.
+-  **Wenn Sie das Navigraph-Update für MSFS verwenden:** Aktualisieren Sie auch die *Little
+   Navmap*-Datenbank mit dem FMS Data Manager, um das Programm mit der Szeneriebibliothek von MSFS
+   synchron zu halten. Verwenden Sie den Szeneriemodus ``Nutze Navigraph für Navigationshilfen und
+   Prozeduren`` im Menü ``Szeneriebibliothek``, um Zugriff auf alle Prozeduren in *Little Navmap* zu
+   erhalten. Dies ist die Standardeinstellung.
+
+   Überprüfen Sie auch die Auswahl im Menü ``Szeneriebibliothek`` -> ``Luftraumbibliothek``.
+   Wählen Sie ``Navigraph`` und entfernen Sie das Häkchen bei ``Simulator``.
+
+-  **Wenn Sie das Navigraph-Update für MSFS nicht verwenden:** Benutzen Sie den Szeneriemodus
+   ``Die Navigraph-Datenbank nicht verwenden`` im Menü ``Szeneriebibliothek``, um Probleme mit
+   fehlenden oder veränderten Navigationshilfen zu vermeiden.
+
+   Im Menü ``Szeneriebibliothek`` -> ``Luftraumbibliothek`` sollte ``Simulator`` ausgewählt sein.
+   Entfernen Sie außerdem den Haken bei ``Navigraph``.
+
+Siehe auch :doc:`NAVDATA` und :ref:`load-scenery-library-p3d-fsx-airspaces` für mehr Informationen
+über diese Einstellungen.
 
 Siehe :ref:`problems-msfs` für Informationen über MSFS Einschränkungen und Probleme.
 
@@ -162,9 +172,8 @@ X-Plane Verzeichnis ``Custom Data`` gelesen.
 FSX, Prepar3D und MSFS Lufträume
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Little Navmap liest alle Lufträume aus der Szeneriebibliothek
-der FSX-basierten Simulatoren. Diese Lufträume werden in der
-Luftraumquelle ``Simulator`` hinzugefügt.
+Little Navmap liest alle Lufträume aus der Szeneriebibliothek von FSX, P3D und MSFS. Diese
+Lufträume werden in der Luftraumquelle ``Simulator`` hinzugefügt.
 
 .. _load-scenery-library-openair-airspaces:
 

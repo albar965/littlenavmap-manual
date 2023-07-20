@@ -116,7 +116,6 @@ Die Dateien sind:
 -  ``little_navmap_.sqlite``: Leere Platzhalterdatenbank.
 -  ``little_navmap_fsx.sqlite``: Flight Simulator X
 -  ``little_navmap_fsxse.sqlite``: Flight Simulator - Steam Edition
--  ``little_navmap_p3dv2.sqlite``: Prepar3D v2
 -  ``little_navmap_p3dv3.sqlite``: Prepar3D v3
 -  ``little_navmap_p3dv4.sqlite``: Prepar3D v4
 -  ``little_navmap_p3dv5.sqlite``: Prepar3D v5

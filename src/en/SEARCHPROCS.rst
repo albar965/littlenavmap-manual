@@ -1,36 +1,45 @@
 |Search| Search Procedures
 ----------------------------------------
 
-The tab ``Procedures`` allows previewing and adding approach and
-departure procedures to the flight plan. Procedures of a selected
-airport are arranged in a tree which indicates the dependencies between
-approaches and transitions.
+The tab ``Procedures`` allows previewing and adding approach, arrival (STAR) and
+departure procedures (SID) to the flight plan. Procedures of a selected
+airport are arranged in a tree which indicates the dependency between
+procedure and transition.
+
+The dialog uses a tree element. See :ref:`ui-tree` for more information about this type of input element.
 
 See :doc:`APPROACHES` for general information about SID,
 STAR, approaches and transitions.
+
+Procedure legs are shown when a procedure node is expanded in the tree.
+Procedures can be filtered by runway, name and type.
+
+Right-click on a procedure or a procedure leg to show a context menu.
+
+Use the context menu item :ref:`delete-selected-legs` of the flight plan table or the map context menu
+item :ref:`delete-from-flight-plan` to remove procedures from a flight plan.
+
+Procedure legs are highlighted in red if one or more navaids could not
+be resolved. A warning dialog will be shown if you try to add this
+procedure to a flight plan.
 
 Note that the SID and STAR names are limited to 5 characters in FSX and
 P3D due to a limitation in the BGL file format. Therefore procedure
 names are slightly modified. However, this does not apply to procedures
 from a Navigraph or X-Plane scenery database.
 
-**See the** :ref:`delete-selected-legs` **chapter of this manual for more details.**
-
-Procedure legs are shown when a procedure node is expanded in the tree.
-Procedures can be filtered by runway and type.
-
-Right-click on a procedure to get more options in the context menu, like
-centering the map on the procedure or adding it to your flight plan.
-
-Use the context menu of the flight plan table to remove procedures. See :ref:`delete-selected-legs`.
-
-Procedure legs are highlighted in red if one or more navaids could not
-be resolved. A warning dialog will be displayed if you try to add this
-procedure to a flight plan.
-
 .. note::
 
-    It is up to the user to combine the correct procedures.
+     Note that the shown runway numbers might differ compared to airport runways.
+     This happens when an add-on airport and the navigation data have different runway numbers which is a result of renumbered
+     runways due to changes in magnetic declination (magnetic pole drift).
+
+     *Little Navmap* resolves these mismatches internally and still allows to work with procedures.
+     You might expect issues when loading flight plans containing such discrepancies into add-on aircraft or simulators.
+
+.. important::
+
+    It is up to the user to combine the correct procedures with the flight plan.
 
     *Little Navmap* will not keep you from choosing north bound procedures for a route going south, for example.
     Also check the resulting route to avoid accidental zig-zag routing which can happen if you combine the wrong
@@ -38,9 +47,36 @@ procedure to a flight plan.
 
 
 .. figure:: ../images/proceduresearch.jpg
+       :scale: 80%
 
        Showing a transition and a RNAV approach. Start and
-       endpoint of a transition leg are highlighted on the map.
+       endpoint of a transition leg are highlighted on the map. Screenshot based on *Little Navmap* 2.6.
+
+.. _procedure-preview:
+
+Preview and Highlights
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* displays a preview of the selected procedure or transition.
+
+-  Click on a procedure in the procedure tree to see the preview of the procedure.
+-  Click on a transition in the procedure tree to see the preview of the transition and its related procedure.
+-  Click on a procedure or transition leg to see additonal highlighted navaids.
+
+Tooltips give information about navaids in the preview.
+
+The preview of missed approaches can be changed by toggling :ref:`show-missed-approaches` in the menu ``View``.
+
+Procedures can be added to the flight plan by either using :ref:`insert-procedure-map` on the
+preview from the map context menu (right click on a navaid) or the :ref:`procedure-context-menu`.
+
+.. figure:: ../images/proc_preview_selected.jpg
+    :scale: 80%
+
+    Previewing a SID at LIPO with tooltip information on procedure and related waypoint.
+    The preview also uses the ``Transparent line`` setting for flight plans in ``Options`` on page :ref:`flight-plan`.
+
+.. _procedure-tree:
 
 Procedure Tree
 ~~~~~~~~~~~~~~
@@ -49,19 +85,16 @@ Legs are shown in dark blue while missed approach legs are shown in dark
 red color.
 
 Bold red text indicates an error in the leg. The procedure is incomplete
-and should not be used in a flight plan. *Little Navmap* might refuse to use the procedure depending on the error since inconsistencies can result in crashes.
+and should not be used in a flight plan. *Little Navmap* might refuse to use the procedure
+depending on the error since inconsistencies can result in crashes.
 
--  ``Remarks``: Either description of the procedure or flight
-   instruction for procedure legs.
--  ``Course °M``: Magnetic course for a leg.
--  ``Dist./Time``: Distance of flying time for a leg. Holds can have a
-   leg time in minutes or a leg distance in NM.
--  ``Ident``: Ident of the initial fix or name of the procedure. Fix
-   name for legs.
--  ``Restriction``: Either minimum altitude for en-route airway segment,
-   procedure altitude restriction or procedure speed limit. A ``/``
-   separates altitude and speed restriction. The following altitude
-   restrictions exist for procedures:
+-  ``Description``: Description and type. A suffix ``(T)`` indicates present transitions.
+   Parallel runways are indicated by a list of runways like ``STAR 07L, 07R, 07C``.
+   The suffix ``All`` is added if a procedure applies to all runways of an airport.
+-  ``Ident``: Ident of the initial fix or name of SID or STAR. Ident name of a procedure leg if expanded.
+-  ``Course °M``: Magnetic course for a leg if expanded.
+-  ``Restriction``: Either procedure altitude restriction, procedure speed limit or a required vertical path angle.
+   The following altitude restrictions exist for procedures:
 
    -  **Number only:** Fly at altitude or speed. Example: ``5,400`` or
       ``210``.
@@ -71,13 +104,13 @@ and should not be used in a flight plan. *Little Navmap* might refuse to use the
       ``B 10,000`` or ``B 220``.
    -  **Range:** Fly at or above altitude one and at or below altitude
       two. Example: ``A 8,000, B 10,000``.
-   -  **Altitude and speed limit:** Values separated by ``/``. Example:
-      ``A 8,000, B 10,000/B220``.
-   -  **Speed limit only:** A prefixed ``/`` indicates no altitude but a
-      speed restriction. Example: ``/B250``.
+   -  **Altitude, optional speed limit and optional path angle:** List of values. Example:
+      ``A 8,000, B 10,000, B220, -3.5°``.
 
--  ``Remarks``: Shows fly-over, turn direction or related navaid for a
-   procedure leg.
+-  ``Dist./Time``: Distance of flying time for a leg. Holds can have a
+   leg time in minutes or a leg distance in NM.
+-  ``Remarks``: Shows number of transtions, fly-over, turn direction, related navaid, RNP indicator and allowed aircraft categories for a
+   procedure.
 
 Top Buttons
 ~~~~~~~~~~~
@@ -89,15 +122,16 @@ Type Filter (All Procedures)
 
 The type filter is not available for an FSX or P3D stock database.
 
-This filter is always available for a X-Plane database which contains
+This filter is always available for X-Plane or MSFS databases which contain
 SIDs and STARs already in the stock data.
 
 The type filter allows the selections below:
 
 -  ``All Procedures``: SID, STAR and approaches
--  ``Departure Procedures``: Only SID
--  ``Arrival Procedures``: STAR and approaches
--  ``Only Approaches and Transitions``: No SID and no STAR
+-  ``Departure (SID)``: Only SID
+-  ``Arrival (STAR)``: Only STAR
+-  ``Arrival and Approaches``: STAR and approaches
+-  ``Approaches``: Approaches prefixed with type like ``RNAV Approaches``.
 
 The respective transitions are always shown.
 
@@ -109,20 +143,35 @@ Runway Filter (All Runways)
 This filter is always available and helps to find procedures for a
 certain departure or arrival runway.
 
+The selection ``No Runway`` allows to find circle-to-land approaches which have no runway assigned.
+
+.. _filter-ident-procs:
+
+Ident Filter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Filter result by approach, SID or STAR name beginning with the entered text.
+
+.. _button-preview-all-procs:
+
+|Preview all Procedures| Preview all Procedures
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Same as :ref:`preview-all-procs` in context menu.
+
 .. _clear-selection-button-procs:
 
 |Clear Selection| Clear Selection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Deselect all entries in the table and remove any highlight circles from
-the map.
+Same as :ref:`clear-selection-procs` in context menu.
 
 .. _help-procs:
 
 |Help| Help
 ^^^^^^^^^^^
 
-Open this chapter of the manual in the default browser.
+Opens this chapter of the manual in the default browser.
 
 .. _procedure-context-menu:
 
@@ -136,11 +185,6 @@ Context Menu Procedures
 
 Center the map on the selected procedure.
 
-Follow Selection
-^^^^^^^^^^^^^^^^
-
-The map view will be zoomed on the selected procedure when this function
-is enabled.
 
 .. _procedure-insert:
 
@@ -150,6 +194,8 @@ is enabled.
 Text and functionality of this menu item depends on the selected
 procedure type and whether the procedure's airport is already the
 departure or destination airport of the current flight plan.
+
+A :doc:`RUNWAYSELECTION` dialog might pop up for SID or STAR procedures which are applicable for more than one runway.
 
 Use the context menu of the flight plan table or the map to remove procedures. See
 :ref:`delete-selected-legs` and :ref:`delete-from-flight-plan`.
@@ -180,7 +226,6 @@ missing.
 
 *Little Navmap* might refuse to use the procedure depending on error.
 
-
 .. _show-information-procs:
 
 |Show Information for Airport| Show Information for Airport
@@ -189,8 +234,9 @@ missing.
 Show detailed information in the ``Information`` dock window for the
 airport.
 
-See the :doc:`INFO`
-for details.
+See the :doc:`INFO` for details.
+
+Same as :ref:`show-information-map` in map context menu.
 
 .. _show-on-map-procs:
 
@@ -198,14 +244,42 @@ for details.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show the airport on the map. The zoom distance can be changed in the
-dialog ``Options`` on the tab ``Map``.
+dialog ``Options`` on the tab :ref:`map-navigation`.
 
 .. _show-in-search-procs:
 
 |Show Airport in Search| Show Airport in Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Shows the airport in the search dialog.
+Shows the airport in the airport search tab. Same as :ref:`show-in-search-map` in map context menu.
+
+.. _preview-all-procs:
+
+|Preview all Procedures| Preview all Procedures
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This highlights all procedures and their transitions currently shown in the procedure tree on the map.
+Note that the map display is updated automatically when changing filters.
+
+Tooltips give information about navaids in the preview.
+
+Note that missed approaches are not shown when previewing all procedures.
+
+Procedures can be added to the flight plan by either using :ref:`insert-procedure-map` on the
+preview from the map context menu (right click on a navaid) or the :ref:`procedure-context-menu`.
+
+.. figure:: ../images/proc_preview.jpg
+    :scale: 80%
+
+    Previewing all SID at LIPO from runway 14. Context menu open to add SID and airport as departures.
+    The preview also uses the ``Transparent line`` setting for flight plans in ``Options`` on page :ref:`flight-plan`.
+
+
+Follow Selection
+^^^^^^^^^^^^^^^^
+
+The map view will be zoomed on the selected procedure or procedure leg if this function
+is enabled.
 
 Expand All / Collapse All
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -228,6 +302,8 @@ Clear search filters and revert to showing all procedures in the tree.
 Deselect the currently selected procedure and remove the preview from
 the map.
 
+Also clears the procedure preview enabled with :ref:`preview-all-procs`.
+
 .. _reset-view-procs:
 
 |Reset View| Reset View
@@ -245,4 +321,5 @@ Reset column order and column widths to default.
 .. |Show Airport in Search| image:: ../images/icon_search.png
 .. |Reset Search| image:: ../images/icon_clear.png
 .. |Reset View| image:: ../images/icon_cleartable.png
+.. |Preview all Procedures| image:: ../images/icon_approachall.png
 

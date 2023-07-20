@@ -1,17 +1,26 @@
 Installation
 ------------
 
-*Little Navmap* for Windows is a 32-bit application and was tested with
-Windows 7, Windows 8, Windows 10 (32-bit and 64-bit).
+*Little Navmap* for **Windows** is available as a 64-bit or 32-bit application and was tested with
+Windows 10 and Windows 11. You can download either an installer package or a Zip-archive.
 
-macOS is supported up from macOS Sierra 10.12 inclusive.
+Apple **macOS** is supported from macOS High Sierra 10.13 or later.
+You need Rosetta to run *Little Navmap* on Apple Silicon / M1 computers with the
+exception of :doc:`XPCONNECT` which is available as a native X-Plane plugin.
 
-The Linux version was built on Ubuntu but should work on other distributions as well.
-
-The macOS and Linux versions are both 64-bit.
+**Linux** versions built on recent Ubuntu releases are available and should work on other distributions as well.
 
 Each version of *Little Navmap* and the other programs come with a plain text file ``CHANGELOG.txt``
 which has important notes and describes the changes between versions.
+
+.. warning::
+
+    Do not install *Little Navmap* in the MSFS folder ``Community`` or in the X-Plane ``plugins`` folder.
+
+.. important::
+
+    **Apple macOS users:** Keep in mind that you have to clear the quarantine flag for *Little Xpconnect* on update. See
+    :ref:`clear-macos-quarantine`.
 
 .. _installation-updating:
 
@@ -20,56 +29,130 @@ Updating
 
 Delete all installed files of a previous *Little Navmap* version before
 installing a new version or install into a new folder.
-All files from the previous ZIP archive can be
-deleted since settings are stored in separate directories (except
-:doc:`MAPTHEMES`).
+All files from the previous ZIP archive can be deleted since settings are stored in separate directories.
 
 .. warning::
 
-    In any case do not merge the installation directories since old files can cause trouble.
+    In any case do not merge the installation directories since old files can cause problems.
 
 There is no need to delete the old settings directory. The program is
 written in a way that it can work with old setting files and adapts these if needed. In some cases
-settings are reset to default once an updated version is installed.
+settings are reset to default if an updated version is installed.
+
+See :doc:`FILES` for more information about settings, database and cache files.
+
+.. _installation-windows:
 
 Windows
 ~~~~~~~
 
-The installation of *Little Navmap* does not change or create any registry entries
-in Windows and involves a simple copy of files therefore an installer
-or setup program is not required.
+.. _installation-windows-builds:
+
+Builds
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are two builds of Little Navmap and Little Navconnect for Windows available:
+
+-  **Windows 64-bit: For MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
+-  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+
+You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
+
+Note that *Little Navmap* and all related programs are inter-operable across the network (*Little Navmap* and *Little Navconnect*)
+as well as the X-Plane plugin (*Little Navmap*, *Little Navconnect* and *Little Xpconnect*).
+
+Also both versions share the same settings and databases. You can switch from one version to another without problems.
+
+.. _installation-windows-installer:
+
+Installer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use the self-installing package based on `Inno Setup <https://jrsoftware.org/isinfo.php>`__ to install *Little Navmap* on your computer.
+The installer packages are named ``LittleNavmap-...-Install.exe`` and contain the same programs and files as the Zip archives.
+
+The installation process always installs the program for all users in a protected directory like ``C:\Programs``.
+You can manually select another directory but I recommend to leave the default location.
+Both the 32-bit and the 64-bit versions can be installed in parallel.
+
+There is no need to uninstall the program when updating.
+The installation process automatically detects the last selected directory and overwrites the current installation.
+
+File types can optionally be associated with *Little Navmap* which allows to load a flight plan by double
+clicking on a LNMPLN file in Windows Explorer, for example. *Little Navmap* is either started or an already running
+instance is used to load the flight plan.
+
+If both the 32-bit and the 64-bit versions are installed, the last installed version is associated to the file types.
+Change the association manually in Windows Explorer if needed.
+
+Start menu entries for all included programs as well as the most important files and links are created.
+
+.. note::
+
+     There is no need to install or modify any files in the installation folder for the
+     webserver or map themes.
+
+     See :ref:`web-server` for information how to change the root folder and
+     :doc:`MAPTHEMES` for information how to set the map theme folder and how to install additional map
+     themes.
+
+Uninstall
+'''''''''''''''''''''''''''''''''''''''
+
+You can uninstall *Little Navmap* by right clicking on the icon in the Windows start menu and selecting ``Uninstall``.
+Alternatively uninstall *Little Navmap* from Windows settings or control panel.
+
+The uninstaller asks to optionally delete all settings and databases created by *Little Navmap* after removing the main program.
+Files in directories like ``Documents\Little Navmap`` are not deleted.
 
 .. warning::
+
+   Note that this step also removes the userpoint database as well as the logbook and cannot be undone.
+
+The two folders which can be deleted are:
+
+-  Settings and databases: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
+-  Online map cache: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth``
+
+.. _installation-windows-manual:
+
+Manual Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The manual installation of *Little Navmap* does not change or create any registry entries
+in Windows and involves a simple Zip extraction of files.
+
+.. important::
 
     Do not extract the archive into the directory ``c:\Program Files\`` or
     ``c:\Program Files (x86)\`` since this requires administrative
     privileges. Windows keeps control of these directories, therefore other
     problems might occur like replaced or deleted files.
 
-    There is usually no need to run *Little Navmap* as administrator.
+    There is no need to run *Little Navmap* as administrator.
     Adapt folder permissions if you have to export flight plans to protected places.
 
-Extract the Zip archive into a directory like
-``c:\Users\YOURNAME\Documents\Little Navmap`` or
-``c:\Users\YOURNAME\Programs\Little Navmap``.
+Extract the Zip archive into a directory like ``C:\Users\YOURNAME\Documents\Little Navmap`` or
+``C:\Users\YOURNAME\Programs\Little Navmap``.
 Then start the program by double-clicking ``littlenavmap.exe``. The
 extension ``.exe`` might be hidden in Windows Explorer depending on
 settings. In that case look for a file ``littlenavmap`` having a light
-blue globe icon.
+blue globe icon |Little Navmap Icon|.
 
-You can install the `Visual C++ Runtime Installer (All-In-One)
-v56 <https://www.majorgeeks.com/files/details/visual_c_runtime_installer.html>`__
-package from MajorGeeks.Com but this is only needed if you get errors when starting
-*Little Navmap*.
+File types have to be manually associated to *Little Navmap* when using this installation method. Use Windows Explorer or
+another file manager used on your operating system to do this.
+
+Uninstall
+'''''''''''''''''''''''''''''''''''''''
+
+Simply remove the program folder.
+See :doc:`FILES` for more settings, cache and database folders if you'd like to completely remove *Little Navmap*.
 
 SimConnect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* comes with a SimConnect library version 10.0.61259.0 (FSX SP2 / no Acceleration) and
+*Little Navmap* comes with a SimConnect library and
 does not require a separate installation of SimConnect.
-
-The included SimConnect library is compatible with all FSX and P3D versions as well as Microsoft
-Flight Simulator 2020.
 
 .. _unblock-application:
 
@@ -87,7 +170,7 @@ Improve Start-up Time
 ^^^^^^^^^^^^^^^^^^^^^
 
 Anti-virus programs can significantly slow down the startup and execution
-of the program in Windows.
+of the program on Windows.
 
 Therefore, it is recommended to exclude the following directories from
 scanning:
@@ -118,36 +201,13 @@ First Start on macOS
 Note on first start on macOS: When starting the application you will
 get a message ``Little Navmap is from an unidentified developer. Are you sure you want to open it?``.
 
-To bypass this right click or ``Ctrl+Click`` on the application and
-select ``Open``. You probably have to enter an administrator name and
-password once. The program can be started normally after this procedure.
+The procedure may be slightly different depending on whether you're using Big Sur or Catalina.
 
-This depends on the used macOS version.
-
-Clearing the Quarantine Flag for *Little Xpconnect* on macOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This applies for macOS versions Catalina and above if X-Plane does not load the plugin.
-You can clear the quarantine flag as follows.
-
-#. Open a Terminal window, then type ``cd``, next press the spacebar but don't press the Return key.
-#. Drag your *Little Xpconnect* folder located inside your ``.../X-Plane 11/Resources/plugins``
-   folder from the Finder into the terminal window.
-#. This will then add the full path of your *Little Xpconnect* folder to the terminal.
-#. Press the Return key.
-#. Enter the command ``sudo xattr -r -d com.apple.quarantine *``
-#. Input your password and press return.
-
-Do not omit the ``*`` and make sure you are in the right folder after executing the ``cd`` command.
-
-``sudo`` is a command that allows you to run other commands as
-administrator. Therefore, it asks for your password. The command ``xattr`` changes
-attributes. The flag ``-r`` instructs xattr to change all subfolders too and the flag
-``-d com.apple.quarantine`` tells it to delete the quarantine flag.
-
-The *Little Xpconnect* installation was successful if you can see it in the X-Plane plugin manager.
-
-You have to repeat this procedure each time you update *Little Xpconnect*.
+#. Right or Ctrl-Click in the Finder on *Little Navmap* and select ``Open``.
+#. You will see a dialog ``Little Navmap cannot be opened because it is from an unidentified developer.`` Click ``Ok``.
+#. Go to ``System Preferences`` -> ``Security and Privacy``. You will see a message mentioning
+   *Little Navmap*. Click ``Open Anyway``.
+#. Next a dialog ``Are you sure you want to open it?`` pops up. Click ``Open``.
 
 Linux
 ~~~~~
@@ -162,11 +222,19 @@ Most file managers will start the program if double-clicked.
 A desktop file ``Little Navmap.desktop`` is included.
 You have to adjust the paths to use it. You must use absolute paths in the desktop file.
 
-If the program does not start run the command:
+See the `Little Navmap - Frequently asked Questions <https://albar965.github.io/littlenavmap-faq.html>`__ for help if the program does not start.
 
-``ldd littlenavmap``
+Additional Programs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-and send me the output. This shows which shared libraries might be missing.
+The *Little Navmap* Zip archive contains two additional
+folders:
+
+``Little Navconnect``: A complete copy of the program allowing remote
+flight simulator connections for FSX, P3D, MSFS and X-Plane.
+
+``Little Xpconnect``: This is the 64-bit plugin that is needed for
+*Little Navmap* or *Little Navconnect* to connect to X-Plane. See :doc:`XPCONNECT` for installation and usage.
 
 .. _xplane-plugin:
 
@@ -176,40 +244,34 @@ X-Plane Plugin
 *Little Navmap* can only connect to X-Plane using the *Little Xpconnect*
 X-Plane plugin which has to be installed as well.
 
-The *Little Xpconnect* plugin is included in the *Little Navmap* archive
-but can also be downloaded separately.
+The *Little Xpconnect* plugin is included in the *Little Navmap* archive. You can always find the
+correct and matching version in your *Little Navmap* installation directory.
 
-The plugin is 64-bit only and is available for Windows, macOS and Linux.
+See :doc:`XPCONNECT` for installation and usage.
 
-Delete any old *Little Xpconnect* installations in the plugins directory before copying
-the new version. Do not merge new and old installations.
+.. _portable-execution:
 
-Copy the whole plugin directory *Little Xpconnect* into the directory ``plugins``
-in the directory ``Resources`` in the X-Plane installation. The complete path
-should look like:
+Portable Execution
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-``.../X-Plane 11/Resources/plugins/Little Xpconnect``
+Running *Little Navmap* in portable mode instructs the program to place all settings, databases and
+cached files into the installation directory (i.e. the directory containing the executable file).
+No folders or files are created on the computer running the program from a memory stick, for
+example.
 
-The installation was successful if *Little Xpconnect* shows up in the plugin manager.
+You can also use the portable mode to test new *Little Navmap* releases without affecting your
+current settings.
 
-Note that *Little Xpconnect* does not add menu items in the X-Plane ``Plugins`` menu.
+Scripts allow to run *Little Navmap* in portable mode by passing certain command line options to the program:
 
-When connecting with *Little Navmap* select the tab ``X-Plane`` in the connection dialog.
-See also :ref:`flight-simulator-connection`.
+- Windows: ``Little Navmap Portable.cmd``
+- macOS: ``Little Navmap Portable.command``
+- Linux: ``Little Navmap Portable.sh``
 
+Three folders are created when running these scripts: ``Little Navmap Cache`` for the online map image tiles,
+``Little Navmap Logs`` for log files and ``Little Navmap Settings`` used to store settings and databases.
 
-Additional Programs
-~~~~~~~~~~~~~~~~~~~
-
-The *Little Navmap* Zip archive contains two additional
-folders:
-
-``Little Navconnect``: A complete copy of the program allowing remote
-flight simulator connections for FSX, P3D, MSFS and X-Plane.
-
-``Little Xpconnect``: This is the 64-bit plugin that is needed for
-*Little Navmap* or *Little Navconnect* to connect to X-Plane.
-
+See :doc:`COMMANDLINE` for more information.
 
 Multiple Installations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -227,7 +289,7 @@ and databases.
 
 Note that this does not override the full path and spaces are replaced with underscores.
 
-**Example**:
+**Example:**
 
 How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings folder on Windows:
 
@@ -239,3 +301,6 @@ How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings f
 .. figure:: ../images/winshortcut.jpg
 
           Contents of the link properties dialog for the example above. Extended target folder input field to have the whole path visible.
+
+
+.. |Little Navmap Icon| image:: ../images/littlenavmap.svg

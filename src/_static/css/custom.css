@@ -19,15 +19,17 @@ h2 {
 }
 
 h3 {
-  border-bottom: 0.05em solid #707070;
+  border-bottom: 0.05em solid #a0a0a0;
   font-size: 1.0em;
 }
 
 h4 {
+  border-bottom: 0.05em solid #c0c0c0;
   font-size: 0.9em;
 }
 
 h5 {
+border-bottom: 0.05em solid #e0e0e0;
 font-size: 0.9em;
 }
 
@@ -54,13 +56,16 @@ content code {
   white-space: normal;
 }
 
+.highlight {
+  background: #efefef;
+}
 footer p {
   color:#606060;
   font-size: 0.8rem;
 }
 
 p {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.8em;
 }
 
 p.caption {
@@ -78,23 +83,102 @@ p.caption {
 }
 
 .wy-side-nav-search, .wy-nav-top {
-  background: #006060;
+  background: #004c75;
 }
-
 /* Sidebar */
 .wy-nav-side {
-  background: #008080;
+  background: #005787;
 }
 
 .wy-menu-vertical header, .wy-menu-vertical p.caption {
     color: white;
 }
 
+
 .rst-content .code-block-caption {
     text-align: left;
 }
+
+.rst-content div.figure .caption-text, .rst-content figure .caption-text {
+  font-style: normal;
+    color: #505050;
+}
+/*
+a {
+color: #5a4b96;
+}
+
+a:visited {
+  color: #5a4b96;
+}
+
+a:hover {
+  color: #3091d1;
+}
+*/
+
+.wy-menu-vertical a:hover {
+  background-color: #808080;
+  cursor: pointer;
+}
+
+.wy-menu-vertical li.current a:hover {
+  background-color: #a8a8a8;
+}
+
+.wy-menu-vertical li.current a:visited {
+background-color: #a8a8a8;
+}
+
+figcaption {
+  font-size: 90%;
+  background:     #f0f0f0;
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 5px;
+}
+
+.caption-text {
+font-size: 0.9em;
+padding: 0.1em;
+}
+
+.error-style {
+  font-weight: bold;
+  color: white;
+  background:     #ff0000;
+}
+
+.warning-style {
+  font-weight: bold;
+  color:     #ff2435;
+}
+
+.dim-style {
+color:     darkgray;
+}
+
+.highlight-style {
+  color:     blue;
+}
+
+.highlight-bold-style {
+font-weight: bold;
+color:     blue;
+}
+
+.rst-content dl dt {
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+
+.rst-content dl ol {
+  margin-bottom: 0.1em;
+}
+
 /*.caption {
-    background:     #f4f4f4;
+background:     #f4f4f4;
 }*/
 
 /*table, td, th {

@@ -42,6 +42,7 @@ Flight Plan
    text.
 -  ``Select Flight Plan Columns to Print``: Click on the names to
    include or exclude flight plan columns.
+   Note that the columns are printed in the same order as shown in the :ref:`flight-plan-table`.
 
 Options for Departure and Destination Airport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

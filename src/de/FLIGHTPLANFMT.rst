@@ -39,46 +39,46 @@ Die folgende Tabelle zeigt die Möglichkeiten von *Little Navmap* und die
 unterstützten Flugplanformate (``X`` = unterstützt, ``0`` = nicht unterstützt,
 ``-`` = nicht anwendbar), wie in :doc:`ROUTEEXPORTALL` aufgeführt:
 
-================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
-Format                             Ext.     Open Exp Airw VFR/IFR User Wpt. Names Remarks Dep. Parking Cruise Alt. Ground speed Proc.
-================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
-LNMPLN                             LNMPLN   X    X   X    X       X               X       X            X           X            X
-Microsoft Flight Simulator 2020    PLN      X    X   X    X       X               0       0 [6]_       X           0            X [5]_
-FSX and Prepar3D                   PLN      X    X   X    X       X               0       X            X           0            0
-FSX and Prepar3D annotiert         PLN      X    X   X    X       X               0       X            X           X            X
-FS9 PLN                            PLN      X    0   X    X       X               0       X            X           0            0
-X-Plane FMS 11                     FMS      X    X   X    0       X               0       0            X           0            X
-X-Plane FMS 3                      FMS      X    X   0    0       X               0       0            X           0            0
-FlightGear                         FGFP     X    X   0    0       0               0       0            0           0            X [2]_
-FSC                                PLN      X    0   X    0       X               0       0            0           0            0
-Aerosoft Airbus und andere         FLP      X    X   X    0       0               0       0            0           0            X
-Aerosoft CRJ                       FLP      X    X   X    0       0               0       0            0           0            X
-Garmin                             FPL      X    X   0    0       0               0       0            0           0            0
-Reality XP GNS 530W/430W V2        FPL      0    X   0    0       X               0       0            0           0            0
-Reality XP GTN 750/650 Touch       GFP      0    X   X    0       X [1]_          0       0            0           0            X
-Flight1 Garmin GTN 650/750         GFP      0    X   X    0       0               0       0            0           0            0
-PMDG Flugzeuge                     RTE      0    X   X    0       0               0       0            0           0            0
-Rotate MD-80, JARDesign und andere TXT      0    X   X    0       0               0       0            0           0            0
-Majestic Dash MJC8 Q400            FPR      0    X   0    0       0               0       0            0           0            0
-IXEG Boeing 737                    FPL      0    X   X    0       0               0       0            0           0            0
-Flight Factor Airbus               corte.in 0    X   X    0       0               0       0            X           0            X [2]_
-iFly                               FLTPLAN  0    X   X    0       0               0       0            0           0            0
-ProSim                             XML [4]_ 0    X   X    0       0               0       0            0           0            0
-BlackBox Simulations Airbus        PLN      0    X   X    0       0               0       0            0           0            0
-Leonardo Maddog X                  MDX      0    X   X    0       0               0       0            0           0            0
-QualityWings                       RTE      0    X   X    0       0               0       0            0           0            0
-AivlaSoft EFB                      EFBR     0    X   X    0       0               0       0            0           0            0
-Level-D                            RTE      0    X   X    0       0               0       0            0           0            0
-FeelThere oder Wilco               FPL      0    X   X    0       0               0       0            0           0            0
-TFDi Design 717                    XML      0    X   X    0       0               0       0            0           0            0
-IvAp for IVAO [3]_                 FPL      0    X   X    0       0               0       0            0           0            0
-X-IVAP for IVAO [3]_               FPL      0    X   X    0       0               0       0            0           0            0
-VATSIM vPilot oder SWIFT [3]_      VFP      0    X   X    0       0               0       0            0           0            0
-UFMC                               UFMC     0    X   X    0       0               0       0            0           0            0
-X-FMC                              FPL      0    X   X    0       0               0       0            0           0            0
-Garmin exchange format             GPX      \-   X   \-   \-      \-              \-      \-           \-          \-           \-
-HTML Flugplanwebseite              HTML     \-   X   \-   \-      \-              \-      \-           \-          \-           \-
-================================== ======== ==== === ==== ======= =============== ======= ============ =========== ============ ======
+================================== ======== ==== === ===== ======= ================ ======= ============ =========== ============ ======
+Format                             Erw.     Öff. Exp Lfstr VFR/IFR Nutzer Wp. Namen Anm.    Parkpos.     Flughöhe    Bodengeschw. Proz.
+================================== ======== ==== === ===== ======= ================ ======= ============ =========== ============ ======
+LNMPLN                             LNMPLN   X    X   X     X       X                X       X            X           X            X
+Microsoft Flight Simulator 2020    PLN      X    X   X     X       X                0       X            X           0            X [5]_
+FSX and Prepar3D                   PLN      X    X   X     X       X                0       X            X           0            0
+FSX and Prepar3D annotiert         PLN      X    X   X     X       X                0       X            X           X            X
+FS9 PLN                            PLN      X    0   X     X       X                0       X            X           0            0
+X-Plane FMS 11                     FMS      X    X   X     0       X                0       0            X           0            X
+X-Plane FMS 3                      FMS      X    X   0     0       X                0       0            X           0            0
+FlightGear                         FGFP     X    X   0     0       0                0       0            0           0            X [2]_
+FSC                                PLN      X    0   X     0       X                0       0            0           0            0
+Aerosoft Airbus und andere         FLP      X    X   X     0       0                0       0            0           0            X
+Aerosoft CRJ                       FLP      X    X   X     0       0                0       0            0           0            X
+Garmin                             FPL      X    X   0     0       0                0       0            0           0            0
+Reality XP GNS 530W/430W V2        FPL      0    X   0     0       X                0       0            0           0            0
+Reality XP GTN 750/650 Touch       GFP      0    X   X     0       X [1]_           0       0            0           0            X
+Flight1 Garmin GTN 650/750         GFP      0    X   X     0       0                0       0            0           0            0
+PMDG Flugzeuge                     RTE      0    X   X     0       0                0       0            0           0            0
+Rotate MD-80, JARDesign und andere TXT      0    X   X     0       0                0       0            0           0            0
+Majestic Dash MJC8 Q400            FPR      0    X   0     0       0                0       0            0           0            0
+IXEG Boeing 737                    FPL      0    X   X     0       0                0       0            0           0            0
+Flight Factor Airbus               corte.in 0    X   X     0       0                0       0            X           0            X [2]_
+iFly                               FLTPLAN  0    X   X     0       0                0       0            0           0            0
+ProSim                             XML [4]_ 0    X   X     0       0                0       0            0           0            0
+BlackBox Simulations Airbus        PLN      0    X   X     0       0                0       0            0           0            0
+Leonardo Maddog X                  MDX      0    X   X     0       0                0       0            0           0            0
+QualityWings                       RTE      0    X   X     0       0                0       0            0           0            0
+AivlaSoft EFB                      EFBR     0    X   X     0       0                0       0            0           0            0
+Level-D                            RTE      0    X   X     0       0                0       0            0           0            0
+FeelThere oder Wilco               FPL      0    X   X     0       0                0       0            0           0            0
+TFDi Design 717                    XML      0    X   X     0       0                0       0            0           0            0
+IvAp for IVAO [3]_                 FPL      0    X   X     0       0                0       0            0           0            0
+X-IVAP for IVAO [3]_               FPL      0    X   X     0       0                0       0            0           0            0
+VATSIM vPilot oder SWIFT [3]_      VFP      0    X   X     0       0                0       0            0           0            0
+UFMC                               UFMC     0    X   X     0       0                0       0            0           0            0
+X-FMC                              FPL      0    X   X     0       0                0       0            0           0            0
+Garmin exchange format             GPX      \-   X   \-    \-      \-               \-      \-           \-          \-           \-
+HTML Flugplanwebseite              HTML     \-   X   \-    \-      \-               \-      \-           \-          \-           \-
+================================== ======== ==== === ===== ======= ================ ======= ============ =========== ============ ======
 
 Für ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2`` und ``Reality XP
 GTN 750/650 Touch`` gibt es zusätzliche Exportformate, welche die Wegpunkte durch benutzerdefinierte ersetzen. Dies hilft, das Problem der gesperrten Wegpunkte zu vermeiden.
@@ -123,10 +123,10 @@ Dateiformat für MSFS.
 
 Sie können dieses Format direkt mit :ref:`export-msfs-flight-plan` exportieren.
 
-Obwohl das Format Prozeduren unterstützt, gibt es oft Probleme beim Laden in MSFS. Es können Prozeduren weggelassen oder neue eingefügt werden.
+Obwohl das Format Prozeduren unterstützt, kann es Probleme beim Laden in MSFS geben. Es können Prozeduren weggelassen oder neue eingefügt werden.
 Außerdem unterstützt MSFS nicht die Auswahl von Übergängen und fügt diese oft automatisch ein.
 
-MSFS kann keine Parkpositionen laden. Wählen Sie eine Position in der Dropdown-Liste in MSFS aus, da die Auswahl einer Parkposition in der Karte die Route zurücksetzt.
+Sie können einen Parkplatz oder ein Tankfeld als Startposition festlegen, aber beachten Sie, dass Landebahnen und Hubschrauberlandeplätze als Startpositionen vom MSFS ignoriert werden.
 
 .. _flight-plan-formats-fsx-pln:
 
@@ -598,6 +598,9 @@ Dies ist kein Flugplanformat. Diese Funktion speichert den aktuellen
 Flugplan als eine einzige HTML-Webseite mit allen Bildern eingebettet.
 Sie können diese Seite in jedem Webbrowser öffnen.
 
+Die exportierte Datei spiegelt die Änderungen in der Flugplantabellenansicht wider, wie die
+Spaltenreihenfolge. Spalten, die ausgeblendet oder auf eine Mindestbreite verkleinert sind, werden nicht berücksichtigt.
+
 .. _garmin-notes:
 
 Hinweise zu den Garmin-Formaten GFP und FPL
@@ -655,11 +658,7 @@ der Seite ``Flugplan`` eingeschaltet werden.
      Der Dateiname ist ``companyroutes.xml``
 
 .. [5]
-    Das Laden von Prozeduren in MSFS ist fehlerhaft und lädt oft keine Prozeduren oder fügt andere Prozeduren hinzu.
-
-.. [6]
-    MSFS lädt keine Parkpositionen. Wählen Sie einen Abfahrtsparkplatz in der Dropdown-Liste aus, da die Auswahl einer Position
-    auf der Karte die Route zurücksetzt.
+    Prozeduren werden möglicherweise nicht in MSFS geladen oder durch andere Prozeduren ersetzt.
 
 .. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png

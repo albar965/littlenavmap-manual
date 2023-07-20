@@ -1,19 +1,136 @@
 |Load Scenery Library| Load Scenery Library
 --------------------------------------------------
 
-This dialog allows loading of the scenery library data from all
-supported flight simulators into the *Little Navmap* internal database.
-The scenery library to load can be selected in the ``Simulator:`` drop
-down box.
+.. _load-scenery-library-quick-start:
 
-The dialog shows information about the currently selected database
-including the number of loaded airports, database version and more.
+Quick Start
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can load the scenery library database by going to the menu item
+:ref:`load-scenery-library-menu` in the menu ``Scenery Library``.
+
+Note that the loading runs in background which means you can put the loading progress window aside
+and continue to plan a flight while loading.
+
+From this dialog window you can select all detected  Flight Simulators and load their scenery
+libraries into the database of *Little Navmap*.
+
+An ``Empty Database`` indication is shown in the statusbar and a ``(empty)`` suffix is added in the related menu item if you skip this step and *Little Navmap* automatically selects :ref:`navigraph-all` in the scenery library menu.
+
+One database is kept for each simulator and can be changed on the fly in :ref:`scenery-library-menu`.
+One disabled menu item is kept as an indicator in the ``Scenery Library`` menu if only one simulator is available.
+
+Scenery library databases may need to be updated when you
+install a new version of *Little Navmap*. A question dialog will pop up
+prompting you to erase the now incompatible database. You can reload the
+scenery in :doc:`SCENERY` after erasing the databases.
+
+*Little Navmap* uses two database sources and data is merged if needed. See :doc:`NAVDATA` for more information.
+
+See :doc:`AIRSPACELOAD` for information about loading airspaces into the *Little Navmap* database.
+
+.. important::
+
+    Selecting the right scenery library for the simulator while flying is crucial since the selection
+    also affects other functions of *Little Navmap*. The selected scenery library
+    defines which weather files are read, for example.
+
+    Some functions like access to weather source files depend on the selected scenery library database.
+    X-Plane 11 weather files are read if the X-Plane 11 scenery library is selected, for example.
+
+See :ref:`scenery-library-menu` for information on the scenery library menu and the following chapters for more details.
+
+.. note::
+
+      *Little Navmap* does not keep you from using a X-Plane scenery
+      database while being connected to FSX/Prepar3D/MSFS or vice versa, for example. You will
+      get unwanted effects like wrong weather information if using such a setup.
+
+      An orange warning message is shown in the connect dialog (:doc:`CONNECT`) if a mismatch is detected.
+
+.. note::
+
+      Parking positions in flight plans might change when switching between scenery library databases.
+      This can happen if airports have parking positions with different names or missing parking positions.
+
+.. _load-scenery-library-navdata:
+
+Navdata Updates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* comes with a ready to use navigation database courtesy of `Navigraph <https://www.navigraph.com>`__ which
+includes airspaces, SIDs, STARs and more. The database can be updated to the latest AIRAC cycle by using Navigraph's *FMS Data Manager*.
+
+See the chapter :doc:`NAVDATA` for more information.
+
+.. warning::
+
+      In any case close *Little Navmap* when updating, copying or replacing scenery databases.
+      *Little Navmap* might crash or show wrong data otherwise.
+
+FSX, Prepar3D and Microsoft Flight Simulator 2020
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+*Little Navmap* is compatible with navdata updates from
+`fsAerodata <https://www.fsaerodata.com>`__, the `FSX/P3D Navaids
+update <http://www.aero.sors.fr/navaids3.html>`__ and
+the Navigraph update for Microsoft Flight Simulator 2020.
+
+See :ref:`load-scenery-library-dialog-msfs-apt-navdata` for more information on MSFS and navdata
+updates.
+
+
+X-Plane
+^^^^^^^^^^^^^^^^
+
+*Little Navmap* will use navdata updates that are installed in the
+directory ``Custom Data``.
+
+User defined data from the files ``user_fix.dat`` and ``user_nav.dat``
+is read and merged into the simulator database if found. Note that you have to disable the Navigraph database to see the user navaids from the X-Plane files.
+
+Note that neither ARINC nor the FAACIFP files are supported.
+Updates installed in the GPS directories are not used.
+
+.. _load-scenery-library:
+
+Dialog Load Scenery Library
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The dialog window ``Load Scenery Library`` has the following controls:
+
+-  ``Simulator``: Select the simulator to load, show database statistics
+   in the label above.
+-  ``Reset Paths``: Reset all paths back to default values.
+-  ``Flight Simulator Base Path`` and ``Select ...``: The path to the
+   base directory of the selected flight simulator. This usually the
+   directory containing the ``FSX.exe``, ``Prepar3D.exe`` or ``x-plane.exe``. For MSFS this is the
+   folder ``Packages`` containing the folder ``Community``.
+-  ``Scenery Configuration File`` and ``Select ...`` (only FSX and P3D):
+   The file ``scenery.cfg`` of the simulator. You can also create copies
+   of the original file, modify them by removing or adding sceneries and
+   select them here for loading.
+-  ``Read inactive Scenery Entries``: This will read all scenery
+   entries, also the inactive/disabled ones. This applies
+   to the FSX/P3D ``scenery.cfg`` as well as X-Plane's
+   ``scenery_packs.ini`` which both allow to disable scenery entries.
+-  ``Read Prepar3D add-on.xml packages`` (only P3D v3, v4 and v5): If
+   enabled, reads P3D ``add-on.xml`` packages.
+-  ``Load``: Starts the database loading process. You can stop the
+   loading process at any time and the previous database is restored.
+   The dialog is closed and the program will switch to show the loaded
+   database once it is successfully loaded.
+   Note that the loading runs in background which means you can continue to plan a flight while loading.
+-  ``Close``: Keep all settings and changes in the dialog and close it
+   without loading anything.
+
+This dialog will also show a hint if folders are excluded or included in loading.
+This helps to avoid issues by unintended directory exclusions.
 
 **FSX and Prepar3D:** The base path and the ``scenery.cfg`` path will be
 shown in two text edit fields for the currently selected simulator.
 These fields are populated automatically, but can be changed to any
-other valid location. All values are saved individually for each flight
-simulator type.
+other valid location.
 
 **Microsoft Flight Simulator 2020:** The base path of the MSFS installation and its
 directories ``Community`` and ``Official``
@@ -21,36 +138,18 @@ is detected automatically. You can change the path manually if needed.
 
 **X-Plane:** The base path of the first X-Plane installation is
 added. Select the base path manually if you like to read the scenery
-library of another X-Plane installation. On Windows that can be a path
-like ``C:\Simulators\X-Plane 11``, the executable being
-``C:\Simulators\X-Plane 11\X-Plane.exe``.
+library of another X-Plane installation.
+
+.. important::
+
+   Always reset the paths if your simulator installation location has changed.
 
 Loading a scenery library can take from 2 to 10 minutes depending on
 your setup and amount of scenery add-ons. You can speed this up by
 excluding directories containing neither airport nor navigation data in
-the ``Options`` dialog on the :ref:`scenery-library-database` tab.
+the ``Options`` dialog on the page :ref:`scenery-library-database`.
 
-For **FSX and Prepar3D**, all airports that are not located in the default
-``Scenery`` directory of FSX/P3D are considered to be add-on airports.
-
-For **X-Plane**, all airports located in the ``Custom Scenery`` directory of
-X-Plane are considered to be add-on airports. An exception is ``...\X-Plane 11\Custom Scenery\Global Airports\Earth nav data\apt.dat``
-
-**Microsoft Flight Simulator 2020**: All airports located in the ``Community``
-directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to be add-on airports.
-Exceptions are ``fs-base`` and ``fs-base-nav``.
-
-Add-on airports are highlighted on the map with a yellow ring which can be disabled
-in the options dialog on page :ref:`map-display`.
-
-Using emphasized (bold and underlined) text highlights add-on airports in the search result table,
-flight plan table, information windows and map tooltips.
-
-If an add-on only corrects airport elevations or navigation data, it
-might be undesirable to display the updated airports as add-on airports
-on the map. You can exclude directories populated by this add-on from
-the add-on recognition in the ``Options`` dialog on the
-page :ref:`scenery-library-database`.
+You can put the progress dialog window into the background and continue flight planning while loading.
 
 If you cancel the loading process or if the loading process fails, the
 previous scenery library database is restored immediately.
@@ -68,22 +167,6 @@ instantaneously to the newly loaded simulator data.
      separate process removes duplicates and deletes stock airports that were
      replaced by add-ons.
 
-**FSX or P3D only:** The program tries to find the base paths and
-``Scenery.cfg`` files automatically. The typical locations of the
-``Scenery.cfg`` for Windows 7/8/10 are:
-
--  **Flight Simulator X:** ``C:\ProgramData\Microsoft\FSX\Scenery.cfg``
--  **Flight Simulator - Steam Edition:**
-   ``C:\ProgramData\Microsoft\FSX-SE\Scenery.cfg``
--  **Prepar3D v2:**
-   ``C:\Users\YOUR_ACCOUNT_NAME\AppData\Roaming\Lockheed Martin\Prepar3D v2\Scenery.cfg``
--  **Prepar3D v3:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v3\Scenery.cfg``
--  **Prepar3D v4:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v4\Scenery.cfg``
--  **Prepar3D v5:**
-   ``C:\ProgramData\Lockheed Martin\Prepar3D v5\Scenery.cfg``
-
 An error dialog is shown after loading, if any files could not be read or
 directories were not found. In this case you should check if the
 airports of the affected sceneries display correctly and show the
@@ -100,18 +183,88 @@ compatible changes where a reload is recommended but not required.
 .. warning::
 
     Close *Little Navmap* when updating, copying or replacing its databases
-    manually or using other programs. *Little Navmap* might crash or show
+    manually or using other programs to replace the databases. *Little Navmap* might crash or show
     wrong data otherwise.
+
+.. figure:: ../images/loadscenery.jpg
+
+        Load Scenery Dialog. Scenery data is already loaded for FSX.
+
+.. figure:: ../images/loadsceneryprogress.jpg
+
+        Progress dialog shown while loading the scenery library into *Little Navmap*'s internal database.
+
+
+.. _load-scenery-library-links:
+
+Linking Scenery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* follows all linked scenery which is linked by:
+
+-  Symbolic links (all operating systems)
+-  Windows shortcuts
+-  Windows junctions
+-  macOS aliases
+
+Note that this functionality is limited to
+the MSFS ``Community`` and X-Plane ``Custom Scenery`` directories.
+
+Any directories added in the ``Options`` dialog on the page :ref:`scenery-library-database` also support linking
+
+.. _load-scenery-library-addons:
+
+Add-On Airports
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For **FSX and Prepar3D**, all airports that are not located in the default
+``Scenery`` directory of FSX/P3D are considered to be add-on airports.
+
+For **X-Plane**, all airports located in the ``Custom Scenery`` directory of
+X-Plane are considered to be add-on airports. An exception is ``...\X-Plane 11\Custom Scenery\Global Airports\Earth nav data\apt.dat``
+
+**Microsoft Flight Simulator 2020**: All airports located in the ``Community``
+directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to be add-on airports.
+Exceptions are ``fs-base``, ``fs-base-genericairports`` and ``fs-base-nav``.
+
+Add-on airports are highlighted on the map with a yellow ring which can be disabled
+in the options dialog on page :ref:`map-display`.
+
+Using emphasized (bold and underlined) text highlights add-on airports in the search result table,
+flight plan table, information windows and map tooltips.
+
+If an add-on only corrects airport elevations or navigation data, it
+might be undesirable to display the updated airports as add-on airports
+on the map. You can exclude directories populated by this add-on from
+the add-on recognition in the ``Options`` dialog on the
+page :ref:`scenery-library-database`.
+
 
 .. _load-scenery-library-dialog-msfs-apt-navdata:
 
 Microsoft Flight Simulator 2020  Airports and Navdata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to all procedures in *Little Navmap*.
--  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids. Keep in mind that SID and STAR are not available yet in *Little Navmap*.
+-  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS
+   Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery
+   mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to
+   all procedures in *Little Navmap*. This is the default.
+
+   Also check the selection in menu ``Scenery Library`` -> ``Airspace Libraries``. Select
+   ``Navigraph`` and uncheck ``Simulator`` there.
+
+-  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph
+   Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids.
+
+   The selection in menu ``Scenery Library`` -> ``Airspace Libraries`` should have ``Simulator``
+   checked. Uncheck ``Navigraph`` there.
+
+See :doc:`NAVDATA` and :ref:`load-scenery-library-p3d-fsx-airspaces` for more background
+information on these settings.
 
 See appendix :ref:`problems-msfs` for information about MSFS limitations and issues.
+
+Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
 
 .. _load-scenery-library-dialog-xp-apt-navdata:
 
@@ -139,179 +292,12 @@ will look like:
    ``earth_nav.dat`` **):** From version 1100. This excludes
    X-Plane 10 navdata files.
 -  **Procedures (** ``ICAO.dat`` **in the**
-   ``CIFP`` **directory):** All procedures from X-Plane 11.
+   ``CIFP`` **directory):** All procedures from X-Plane 11 and 12.
 -  **Airspaces (** ``*.txt`` **):** The included ``usa.txt`` and all
    files in OpenAir format. See next chapter for more information.
 
 Additionally the files ``user_fix.dat`` and ``user_nav.dat`` in the
 X-Plane directory ``Custom Data`` are read.
-
-.. _load-scenery-library-p3d-fsx-airspaces:
-
-FSX, Prepar3D and MSFS Airspaces
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Little Navmap* reads all airspaces from the scenery library of FSX
-based simulators. These airspaces are added in the airspace source
-``Simulator``.
-
-.. _load-scenery-library-openair-airspaces:
-
-OpenAir Airspaces
-^^^^^^^^^^^^^^^^^
-
-*Little Navmap* can read OpenAir airspaces (`OpenAir airspace
-format <http://www.winpilot.com/UsersGuide/UserAirspace.asp>`__) from
-X-Plane or an user defined directory.
-
-Note that the publicly available airspace files can contain errors which
-may prevent the loading of an airspace file. These hard errors are
-reported after loading the scenery library. Other errors only affecting
-single airspaces or the geometry are reported in the log file only.
-
-Additional airspace files can be downloaded from the `OpenAirspace
-Directory <http://www.winpilot.com/openair/index.asp>`__, `Soaring
-Services <http://soaringweb.org/>`__,
-`openAIP <https://www.openaip.net/>`__ or `Luftraumdaten
-Deutschland <https://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten>`__,
-for example.
-
-Airspace files must have a ``.txt`` extension and are loaded from the
-following directories by *Little Navmap*:
-
-The files can be encoded in any
-`UTF <https://en.wikipedia.org/wiki/Unicode#UTF>`__ format but must have
-a `BOM <https://en.wikipedia.org/wiki/Byte_order_mark>`__ to be
-recognized properly. Otherwise Windows ANSI coding (``Windows-1252``) is
-used. Special characters like umlauts or accents are not displayed
-correctly in names if the encoding is not correct. All other
-functionality is unaffected.
-
-You can convert the files using any advanced editor like
-`Notepad++ <https://notepad-plus-plus.org/>`__ for example.
-
-Airspaces will appear as duplicates in the map if an airspace file is
-found in more than one of these directories or sources.
-
-See :ref:`airspace-source` for more information
-on airspace sources.
-
-.. _load-scenery-library-xplane-airspaces:
-
-X-Plane Airspaces
-'''''''''''''''''
-
-X-Plane 11 comes with a single airspace file that can be found in
-``YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces/usa.txt``.
-
-*Little Navmap* reads X-Plane airspaces from the following locations:
-
--  ``YOUR_XPLANE_DIRECTORY/Resources/default data/airspaces``
--  ``YOUR_XPLANE_DIRECTORY/Custom Data/Airspaces``
-
-These airspaces are added to airspace source ``Simulator``.
-
-.. _load-scenery-library-user-airspaces:
-
-User Airspaces
-''''''''''''''
-
-These airspaces are added in the airspace source ``User``. You can load
-them by selecting ``Scenery Library`` -> ``Load User Airspaces`` (:ref:`load-user-airspaces`).
-
-A directory selection dialog will show up when running this function the
-first time. Select a directory containing OpenAir airspace files with
-file ending ``.txt``. All files in the directory will be read
-recursively.
-
-Airspaces read with this function will be added to the airspace source
-``User`` and are stored in a database independent of flight simulator
-databases.
-
-You can change the directory and file extensions to read in the options
-dialog: :ref:`cache-user-airspaces`.
-
-.. _load-scenery-library-online-airspaces:
-
-Online Airspaces
-''''''''''''''''
-
-Online centers are displayed as circular airspaces in *Little Navmap*
-per default and provide the same functionality as the other airspaces
-(tooltips, information and more). They are loaded with the online data
-when connected and are only stored in a temporary database which is
-deleted on exit.
-
-*Little Navmap* can use real center boundaries instead of the circular
-airspaces. First you have to enable one or both options in :ref:`map-display-online` under
-``Online Center Boundary Lookup in User Airspaces``. These are enabled
-per default.
-
-There are two options:
-
-#. Create an OpenAir airspace file which contains a single boundary for
-   a center. Give the file the same name as the callsign for the center,
-   i.e. name the file ``EDDB_TWR.txt`` for the center with the callsign
-   ``EDDB_TWR``.
-#. Create an OpenAir airspace containing the boundaries for all the
-   centers you need. Give the file any name but name the boundaries
-   according to the callsign of the centers. You need a line in the file
-   containing ``AN EDDF_TWR`` (``AN`` = airspace name) to use the
-   boundary for a center with the callsign ``EDDB_TWR``.
-
-Now place the file or files into you user airspace directory and reload
-the user airspaces. See above :ref:`load-scenery-library-user-airspaces` how to do
-this.
-
-Once done the center should show the correct boundary.
-
-Load Scenery Library Options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--  ``Simulator``: Select the simulator to load, show database statistics
-   in the label above.
--  ``Reset Paths``: Reset all paths back to default values.
--  ``Flight Simulator Base Path`` and ``Select ...``: The path to the
-   base directory of the selected flight simulator. This usually the
-   directory containing the ``FSX.exe`` or ``Prepar3D.exe``. This is the
-   base for all relative paths found in the ``scenery.cfg`` file.
--  ``Scenery Configuration File`` and ``Select ...`` (only FSX and P3D):
-   The file ``scenery.cfg`` of the simulator. You can also create copies
-   of the original file, modify them by removing or adding sceneries and
-   select them here for loading.
--  ``Read inactive Scenery Entries``: This will read all scenery
-   entries, also the inactive/disabled ones. This is helpful if you use
-   a tool to disable scenery before flying but still want to see all
-   add-on sceneries in *Little Navmap* without reloading. This applies
-   to the FSX/P3D ``scenery.cfg`` as well as X-Plane's
-   ``scenery_packs.ini`` which both allow to disable scenery entries.
--  ``Read Prepar3D add-on.xml packages`` (only P3D v3, v4 and v5): If
-   enabled, reads P3D ``add-on.xml`` packages. These are read
-   from sub directories of
-   ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Files\Add-ons`` and
-   ``C:\Users\YOURUSERNAME\Documents\Prepar3D v4 Add-ons``.
--  ``Load``: Starts the database loading process. You can stop the
-   loading process at any time and the previous database is restored.
-   The dialog is closed and the program will switch to show the loaded
-   database once it is successfully loaded.
--  ``Close``: Keep all settings and changes in the dialog and close it
-   without loading anything.
-
-.. note::
-
-  Note regarding  ``Read inactive Scenery Entries`` and X-Plane:
-  You either have to enable this option or start X-Plane after adding an
-  airport. X-Plane will update the ``scenery_packs.ini`` when
-  starting. Otherwise your new scenery will not appear in *Little
-  Navmap*.
-
-.. figure:: ../images/loadscenery.jpg
-
-        Load Scenery Dialog. Scenery data is already loaded for FSX.
-
-.. figure:: ../images/loadsceneryprogress.jpg
-
-        Progress dialog shown while loading the scenery library into *Little Navmap*'s internal database.
 
 .. _magnetic-declination:
 
@@ -327,22 +313,20 @@ on simulator and navaid.
 The data is updated when loading the scenery library and is also stored
 in the scenery library database for each simulator.
 
-See chapter :ref:`flightplan-magnetic-declination` for information how
-this impacts flight plans.
+See also :doc:`MAGVAR` for more information.
 
 FSX, Prepar3D and Microsoft Flight Simulator 2020
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The magnetic declination (or variation) used to calculate the magnetic
+The magnetic declination used to calculate the magnetic
 course is taken from the ``magdec.bgl`` file in the scenery database of
-FSX or Prepar3D.
-
-Updates for this file are available here: `FSX/P3D Navaids
-update <http://www.aero.sors.fr/navaids3.html>`__.
+FSX, Prepar3D or MSFS.
 
 *Little Navmap* falls back to the world magnetic model if the file
 ``magdec.bgl`` is not available for some reason.
 
+Updates for this file in FSX and P3D are available here: `FSX/P3D Navaids
+update <http://www.aero.sors.fr/navaids3.html>`__.
 
 X-Plane
 ^^^^^^^
@@ -352,9 +336,10 @@ except VORs) are calculated using the world magnetic model based on the
 real current year and month. This is calculated while loading the
 scenery library and saved in X-Plane scenery library database.
 
-VOR stations come with their own declination values which might differ
+VOR stations come with their own calibrated declination values which might differ
 from the calculated declination values in their environment as mentioned
 above.
+
 
 .. |Load Scenery Library| image:: ../images/icon_database.png
 

@@ -1,16 +1,26 @@
-Flight Plan Route Calculation
------------------------------
+|Calculate  Flight Plan| Flight Plan Calculation
+----------------------------------------------------
 
-The route calculation is done in a floating window which is opened from
-menus -> ``Flight Plan`` -> :ref:`calculate-flight-plan` or ``Window`` -> :ref:`window-flight-plan`.
-The floating window does not dock into the main window when moving around except when double clicking on its title bar.
+The route calculation is done in a window which is opened from
+menus -> ``Flight Plan`` -> :ref:`calculate-flight-plan`.
+
+The window can be put behind the *Little Navmap* main window. Click the toolbar button
+|Calculate  Flight Plan| again to bring it into front.
 
 The window can be used to calculate the following:
 
 -  Whole flight plans from start to destination.
 -  Routes between selected waypoints in the flight plan table.
 
-You have to build the route again by pressing the button ``Calculate`` after changing any parameters.
+You have to build the route again by pressing the button :ref:`routecalc-calculate` after changing any parameters.
+
+.. important::
+
+      Although this happens rarely: Always check the flight plan for reversals or zig-zag guidance,
+      especially when using procedures.
+      Delete waypoints manually if you find such cases.
+
+
 
 .. figure:: ../images/routecalc.jpg
 
@@ -19,7 +29,9 @@ You have to build the route again by pressing the button ``Calculate`` after cha
 Window Header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Shows start and end of calculation or an error message.
+Shows departure and destination as well as the direct Great Circle distance and the flight plan distance.
+
+An error message is shown if the plan cannot be calculated.
 Click on the tooltip or hover the mouse cursor above to see more details.
 
 .. figure:: ../images/routecalc_error.jpg
@@ -31,12 +43,15 @@ Click on the tooltip or hover the mouse cursor above to see more details.
 Calculate from departure to destination
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Calculates a flight plan between start and destination.
+Calculates a flight plan between departure and destination.
 
-The dialog header will show a red error message if the flight plan is not valid for calculation. Hover the mouse cursor over the message or click it for details.
+The dialog header will show a red error message if the flight plan is not valid for calculation.
+Hover the mouse cursor over the message or click it for details.
 
 Procedures are not affected by this calculation method. The route will be built from SID exit to
 STAR or approach entry, if present.
+
+The selected cruise altitude will be used to find airways with suitable restrictions.
 
 .. _routecalc-selection:
 
@@ -46,30 +61,35 @@ Calculate for selection in flight plan table
 This button is only valid when more than one flight plan leg is selected
 and neither the first nor the last selected leg is part of a procedure.
 
-The dialog header will show an error message if the selected range is not valid for calculation.
-
 A selection is also valid for the last leg of a departure procedure or for the first leg of an arrival procedure.
+
+The dialog header will show an error message if the selected range is not valid for calculation.
 
 You can either select the first and the last leg (``Ctrl+Click``) in the :ref:`flight-plan-table`
 or you can select a whole range of legs (``Shift+Click`` and drag) for route calculation.
 
-The route will be calculated in a way that the first and last navaids are not modified.
+The route will be calculated in a way that the first and last selected navaids are not modified.
 
 The new calculated range will be selected in the table once calculation is done.
 
 .. _routecalc-cruise-alt:
 
-Cruise Altitude
+Cruise altitude for calculation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the cruise altitude which will be used to select airways based on their lower and
 upper altitude limits when calculating the route.
+Changing cruise altitude for calulation can result in shorter or better airway routes.
 
 The value will be assigned to the flight plan (:ref:`flight-plan-altitude`) after calculation.
 
-Note that a change in the ``Flight Planning`` window will not be automatically transferred to this window.
+This field is updated from the current flight plan when opening the window or changing the cruise altitude in the field
+:ref:`flight-plan-altitude` in the flight plan window.
 
-The calculation might fail if using too low or too high values here.
+.. important::
+
+    The calculation might fail if using too low or too high values for the cruise altitude. Make sure that you use a
+    sufficiently high altitude which matches the selected airway type (Jet or Victor).
 
 .. _routecalc-adjust:
 
@@ -93,10 +113,19 @@ Which connection type is selected depends on settings in :ref:`routecalc-prefer`
 
 Criteria for airway selection are always direction for one-way airways and altitude restrictions.
 
+.. note::
+
+   Changing cruise altitude for calulation can result in shorter or better airway routes. Try to adjust this
+   if the result of the calculation is not satisfying.
+
+   You can also put the slider :ref:`routecalc-prefer` more to the right to ignore airways or use direct routing between
+   waypoints for regions void of suitable airways.
+
+
 All Airways
 ^^^^^^^^^^^^^^^^
 
-Calculation will select any appropriate Jet or Victor airway for the route.
+Calculation will select any appropriate Jet or Victor airways for the route.
 
 Jet airways (high altitude)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -128,7 +157,7 @@ disabled if no tracks were downloaded.
 
 See :doc:`TRACKS` for more information.
 
-.. note::
+.. important::
 
         You have to use the correct cruise flight altitude in your flight plan.
         This has to match the track levels shown in the information window. Otherwise, tracks will not be used.
@@ -149,44 +178,49 @@ Prefer
 
 This slider allows to adjust the preference of the calculation method between airways and direct waypoint connections.
 
-**Putting the slider on the leftmost position** instructs the route calculation to use only airways. The
-calculation might fail or give not optimal routes if the region between departure and destination has
-no airways or no appropriate airways for the given cruise altitude.
+Putting the slider on the leftmost position
+    instructs the route calculation to use only airways. The
+    calculation might fail or give not optimal routes if the region between departure and destination has
+    no airways or no appropriate airways for the given cruise altitude.
 
-This is the fastest calculation method which gives instant results.
+    This is the fastest calculation method which gives instant results.
 
-.. figure:: ../images/routecalcairways.jpg
+    .. figure:: ../images/routecalcairways.jpg
 
-    A flight plan calculated using airways only.
-    The flight plan is longer since the region above Austria is void of airways
-    due to European airway restructuring.
+        A flight plan calculated using airways only.
+        The flight plan is longer since the region above Austria is void of airways
+        due to European airway restructuring.
 
-**Putting the slider on the rightmost position** instructs the route calculation to use only direct
-waypoint connections. The calculation ensures that the selected waypoints are not too close
-together and have a distance of around 200 NM where possible.
-Cruise altitude is not relevant for calculation since no airways are
-used.
+Putting the slider on an intermediate position
+    uses more or fewer airways or direct waypoint connections depending on position.
+    Move the slider step by step and calculate again if you're not satisfied with the result.
+    Note that not every slider movement will result in a changed route.
 
-This calculation method is slower depending on the covered region. A progress dialog might pop
-up which allows to cancel the process.
+    This calculation method is slower depending on the covered region. A progress dialog might pop
+    up which allows to cancel the process.
 
-.. figure:: ../images/routecalcdirect.jpg
+    .. figure:: ../images/routecalcairwaysdirect.jpg
 
-    Same plan as above but calculated with the slider on the far right.
-    The plan is shorter and uses direct waypoint connections only.
+        A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
+        skips the airway void above Austria with direct waypoint connections.
 
-**Putting the slider on an intermediate position** uses more or fewer airways or direct waypoint connections
-depending on position.
-Move the slider step by step and calculate again if you're not satisfied with the result.
-Note that not every slider movement will result in a changed route.
+Putting the slider on the rightmost position
+    instructs the route calculation to use only direct
+    waypoint connections. The calculation ensures that the selected waypoints are not too close
+    together and have a distance of around 200 NM where possible.
+    Cruise altitude is not relevant for calculation since no airways are used.
 
-This calculation method is slower depending on the covered region. A progress dialog might pop
-up which allows to cancel the process.
+    This calculation method is slower depending on the covered region. A progress dialog might pop
+    up which allows to cancel the process.
 
-.. figure:: ../images/routecalcairwaysdirect.jpg
+    Note that waypoints are added to the flight plan using certain selection criteria.
+    Waypoints being part of a SID or STAR and terminal waypoints will be excluded, for example.
 
-    A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
-    skips the airway void above Austria with direct waypoint connections.
+    .. figure:: ../images/routecalcdirect.jpg
+
+        Same plan as above but calculated with the slider on the far right.
+        The plan is shorter and uses direct waypoint connections only.
+
 
 Radio Navaids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -238,7 +272,22 @@ You might also have to change the slider ``Prefer`` to adjust for airway and dir
 if not satisfied with the result.
 
 In any case check your flight plan before using it.
-Remove any wrongly selected waypoints near departure and destination manually.
+Remove wrongly selected waypoints near departure and destination manually.
+
+.. _routecalc-close:
+
+Close
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Closes the window.
+
+
+|Help| Help
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Opens this chapter in the browsers.
 
 .. |Download Tracks| image:: ../images/icon_airwaytrackdown.png
 .. |Adjust Flight Plan Altitude| image:: ../images/icon_routeadjustalt.png
+.. |Calculate Flight Plan| image:: ../images/icon_routecalc.png
+.. |Help| image:: ../images/icon_help.png

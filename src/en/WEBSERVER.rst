@@ -2,20 +2,19 @@ Web Server
 ----------
 
 *Little Navmap* includes an internal web server showing the map,
-aircraft progress and airport information with optional automatic
+aircraft progress and airport information with an optional automatic
 refresh in a web browser. The page can be accessed from any computer,
 tablet or smartphone in the local network.
 
 Note that the functionality is limited. You cannot change map display
 settings or calculate a flight plan, for example.
 
-The web server is not running per default. You can start it in the
-:ref:`run-webserver` and then open
-its page by selecting :ref:`open-webserver`.
+The web server is not started per default. You can start it in the menu ``Tools`` ->
+:ref:`run-webserver` and then open its page by selecting :ref:`open-webserver`.
 
-Port and other settings can be changed in :ref:`web-server`.
+Port and other settings can be changed in options on page :ref:`web-server`.
 
-You need to adjust you router settings to access it from the internet
+You need to adjust your router settings to access the *Little Navmap* webserver from the internet
 outside your local network. Check out your router manual how to do this.
 In general you have to change the firewall settings to forward the port
 8965 from the router to the computer running *Little Navmap*.
@@ -27,6 +26,8 @@ In general you have to change the firewall settings to forward the port
 Web Page
 ~~~~~~~~
 
+This chapter describes the legacy web interface of *Little Navmap*.
+
 Page Links on Top of each Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -35,8 +36,9 @@ The top links ``Map``, ``Flight Plan``, ``Aircraft``,
 respective pages. ``Help`` opens this page.
 
 .. figure:: ../images/web_navbar.jpg
+    :scale: 50%
 
-     Top navigation bar as shown in web browser.
+    Top navigation bar for the legacy web interface as shown in web browser. *Click image to enlarge.*
 
 Map Page
 ^^^^^^^^
@@ -68,8 +70,9 @@ corner denoting its function:
 -  |Reload map|: Reload map
 
 .. figure:: ../images/webmap.jpg
+    :scale: 50%
 
-      Web map display in browser with navigation icons.
+    Web map display in browser with navigation icons. *Click image to enlarge.*
 
 Flight Plan Page
 ^^^^^^^^^^^^^^^^
@@ -82,8 +85,9 @@ Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 the active flight plan leg.
 
 .. figure:: ../images/web_flightplan.jpg
+   :scale: 50%
 
-     Flight plan table in browser.
+   Flight plan table in browser. *Click image to enlarge.*
 
 Aircraft
 ^^^^^^^^
@@ -96,7 +100,7 @@ Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 Aircraft Progress Page
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Shows aircraft progress information as :ref:`progress`.
+Shows aircraft progress information as :ref:`progress-info`.
 
 Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 ``Reload Map``: Same as on map page above.

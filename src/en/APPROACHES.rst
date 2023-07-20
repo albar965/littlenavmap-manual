@@ -8,9 +8,7 @@ General
 
 Departure and arrival procedures will typically be used when flying an
 airliner, but smaller aircraft, too, have to use at least an approach
-procedure at their destination when flying IFR. FSX and Prepar3D stock
-data provides only approaches and transitions. SIDs and STARs are not
-available. These can be added by navdata updates.
+procedure at their destination when flying IFR.
 
 An airline flight containing all variations can use the following
 procedures or segments:
@@ -41,22 +39,19 @@ may be empty and consist only of a transition). If you delete a
 procedure from the flight plan, its transition will be deleted too.
 
 Procedure information is saved together with a flight plan as an
-annotation in the PLN file and will be restored by *Little Navmap* when
-loading the flight plan.
+annotation in a LNMPLN file and will be restored by *Little Navmap* when
+loading the flight plan. Note that some export flight plan formats do not support saving of procedures.
 
 Procedure waypoints are excluded from all flight plan formats by
 default. You have to use the GPS or FMS in the simulator to select
 procedures.
 
-Procedure waypoints are not saved in the flight plan since the PLN
-format does not support all the different leg types and the flight
-simulator would not be able to display them correctly. Select the
-procedures manually in your GPS or FMC as needed.
-
-Some flightplan formats like X-Plane FMS allow saving and loading of procedures.
+Some flightplan formats like X-Plane FMS allow saving and loading of procedures. See :ref:`flight-plan-formats-fms11`. for more information.
+Transitions cannot be saved with the MSFS PLN format (see :ref:`flight-plan-formats-msfs-pln`).
 
 You can enable saving of waypoints by checking :ref:`export-flight-plan-approach-waypoints` and/or
-:ref:`export-flight-plan-sid-star-waypoints`.
+:ref:`export-flight-plan-sid-star-waypoints`. Procedure information will be omitted if this is enabled.
+**Note that these functions are normally not needed and can have side effects.**
 
 .. note::
 
@@ -64,20 +59,27 @@ You can enable saving of waypoints by checking :ref:`export-flight-plan-approach
       airport. Create a new flight plan for the alternate trip if you wish to
       do so.
 
-.. _procedures-custom:
+.. note::
 
-Create Approach
-~~~~~~~~~~~~~~~
+        FSX and Prepar3D stock
+        data provides only approaches and transitions. SIDs and STARs are not
+        available. These can be added by navdata updates.
 
-An user defined approach can be created and applied to all airports,
-even small airstrips which do not provide approach procedures.
+.. _procedures-departure-runway:
 
-This user defined approach consists of a final approach leg and can be
-customized by changing altitude and length. This approach allows *Little
+|Departure Runway| |Destination Runway| Set Departure Runway and Set Destination Runway
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A departure and destination runway can be selected instead of an procedure.
+
+Selecting a destination runway adds a final approach leg (runway centerline extension) which can be
+customized by changing altitude, length and offset angle. This allows *Little
 Navmap* to give vertical guidance and to show ILS and/or VASI slopes at
 the destination.
 
-See more about this type of approach in chapter :doc:`CUSTOMPROCEDURE`.
+Selecting a departure runway adds a departure flight plan leg depicting the extended runway center line.
+
+See more about this in chapter :doc:`CUSTOMPROCEDURE`.
 
 .. _procedures-insert:
 
@@ -86,28 +88,45 @@ Inserting a Procedure into a Flight Plan
 
 Right-click on an airport in the map, the airport search table, or the
 flight plan table, and select ``Show Procedures`` (or
-``Show Departure Procedures``, ``Show Arrival Procedures``) from the
-context menu. This will show the tab ``Procedures`` in the dock window
+``Show Departure Procedures`` or ``Show Arrival Procedures`` depending on airport) from the
+respective context menu. This will show the tab :doc:`SEARCHPROCS` in the dock window
 ``Search``.
 
 Insert a procedure into the flight plan using the context menu in the
 procedure tree view.
+Right click on a procedure, a procedure leg or a transition and select
+``Use airport and procedure as Departure``, ``Use airport and procedure as Destiation`` or
+``Insert Procedure into Flight Plan`` (substitute ``procedure`` and ``airport`` with the actual names).
 
-See :doc:`SEARCHPROCS` for more information.
+You can also add a procedure from the map if using :ref:`procedures-highlights` or :ref:`button-preview-all-procs`.
+Right click on any waypoint of a procedure (not the leg line) and select ``Use airport and procedure as Departure``,
+``Use airport and procedure as Destiation`` or ``Insert Procedure into Flight Plan``.
+
+.. important::
+
+      *Little Navmap* removes waypoints from the flight plan which overlap with the procedure.
+
+      In any case check the flight plan for reversals or zig-zag guidance.
+      Delete waypoints manually if you find such cases.
+
 
 .. _procedures-delete:
 
 Deleting a Procedure from a Flight Plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Deleting a single leg that is part of a procedure will remove the whole
-procedure and its transition. Deleting a leg that is part of a
+Deleting a single leg from the flight plan table which is part of a procedure will remove the whole
+procedure and its transition. Deleting a leg being part of a
 transition will remove only the transition.
 
+You can also delete procedures from the flight plan by right clicking onto a procedure waypoint on the map.
+Select ``Delete procedure from flight plan``. Substitute ``procedure`` the actual name.
+
 .. figure:: ../images/deleteprocedure.jpg
+     :scale: 50%
 
      About to remove the transition ``MUN`` of the
-     approach ``RNAV BEGEN`` from the flight plan.
+     approach ``RNAV BEGEN`` from the flight plan. *Click image to enlarge.*
 
 .. _procedures-limitations:
 
@@ -135,8 +154,8 @@ Limitations when editing a flight plan with procedures
 Flying Procedures
 ~~~~~~~~~~~~~~~~~
 
-Procedure legs are pre-calculated, with the exception of holds and
-procedure turns. This means you can fly them mostly as they are drawn on
+Procedure legs are pre-calculated, with the exception of holds,
+turns and altitude dependent legs. This means you can fly them mostly as they are drawn on
 the map. If in doubt about how to fly a leg (e.g. if too many lines are
 overlapping) look at the procedure table in the :ref:`flight-plan-table`.
 
@@ -312,6 +331,8 @@ Restrictions are shown on the map and in the flight plan table.
    second altitude. Map example: ``A8000B10000ft``. Same for speed.
 -  **Prefix** ``GS``: Not an altitude restriction but an indicator for
    the ILS glideslope altitude. Can mean ``at`` or ``at or above``.
+-  **Vertical path** ``-3.2°``: A vertial path angle which has to be followed. Calculated paths
+   are shown with a white text background and required paths with a yellow backgroud.
 
 .. _procedures-related:
 
@@ -322,6 +343,10 @@ Many fixes have a related or recommended navaid. This can be a VOR, NDB,
 ILS or a waypoint. The related navaid comes with radial and distance
 values that can be used to locate waypoints when flying without GPS or
 simply for cross checking the position.
+
+Related navaids for procedures are forced with the flight plan display. All navaids needed for
+procedures are still shown if you disable the display of VOR, NDB and waypoints. This helps to keep
+an uncluttered map display.
 
 .. _procedures-missed:
 
@@ -358,3 +383,5 @@ missing.
 *Little Navmap* might refuse to use the procedure depending on error.
 
 
+.. |Destination Runway| image:: ../images/icon_runwaydest.png
+.. |Departure Runway| image:: ../images/icon_runwaydepart.png
