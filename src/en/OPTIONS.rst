@@ -777,12 +777,6 @@ Use ``Custom`` if you'd like to load a ``whazzup.txt`` file directly.
 
 See :doc:`ONLINENETWORKS` for an overview.
 
-.. tip::
-
-    The custom options can be used for internal networks or tools like the `Transmitter <https://virtualflight.online/transmitter/>`__
-    which can be used for small flying groups and MSFS which does not provide multiplayer traffic on its interface.
-
-
 Online Service
 ^^^^^^^^^^^^^^
 

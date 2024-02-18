@@ -16,9 +16,6 @@ options page :ref:`options-online-flying`.
 Predefined options for the well known networks are available as well as
 freely configurable ones.
 
-The custom connection options can be used for internal networks or tools like the `Transmitter <https://virtualflight.online/transmitter/>`__
-which can be used for small flying groups and MSFS which does not provide multiplayer traffic on its interface.
-
 **Online network related functionality can be found in the following
 places:**
 

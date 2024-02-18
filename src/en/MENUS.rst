@@ -1605,8 +1605,7 @@ All aircraft icons can be customized: :ref:`customize-aircraft-icons`.
 
 .. note::
 
-    Currently MSFS multiplayer traffic cannot be shown.
-    Have a look at the `VirtualFlight.Online Transmitter <https://virtualflight.online/transmitter/>`__ to address this issue.
+    Currently MSFS multiplayer traffic cannot be shown since MSFS is lacking the required programming interfaces.
 
 .. _show-online-aircraft:
 
