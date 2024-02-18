@@ -396,7 +396,7 @@ of flight plans into the LNMPLN format.
 
       **Normally you should not use these export options.**
 
-See :ref:`convert-to_waypoints` for information about converting procedures to a list of waypoints in the flight plan.
+See :ref:`convert-to-waypoints` for information about converting procedures to a list of waypoints in the flight plan.
 
 .. _export-flight-plan-approach-waypoints:
 

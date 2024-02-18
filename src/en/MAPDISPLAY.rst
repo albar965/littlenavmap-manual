@@ -608,7 +608,7 @@ Two options exist depending on the waypoint type:
      dragging the flight plan position (:doc:`MAPFPEDIT`). See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
 
 
-.. _convert-to_waypoints:
+.. _convert-to-waypoints:
 
 |Convert Procedure to Waypoints| Convert Procedure to Waypoints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -646,7 +646,7 @@ direct line to the clicked position.
 .. note::
 
     You cannot select a direct to a waypoint in a procedure.
-    Use the function :ref:`convert-to_waypoints` above before.
+    Use the function :ref:`convert-to-waypoints` above before.
 
     Also, you cannot select a passed waypoint of the flight plan as direct to.
 
