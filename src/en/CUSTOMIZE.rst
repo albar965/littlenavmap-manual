@@ -59,7 +59,7 @@ version.
 GUI
 ^^^^^^^^
 
-Two user interface styles can be customized. These are ``Fusion`` and ``Night``.
+Two user interface styles can be customized. These are ``Fusion`` and ``Dark``.
 These two styles are available on all operating systems.
 
 Two files are generated that allow the customization for all window,
@@ -68,7 +68,7 @@ button and dialog colors. These are:
 Fusion
    ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
 
-Night
+Dark
     ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini``
 
 The key names in these files are derived from the palette options of the Qt library.
@@ -84,10 +84,24 @@ See here for more information about
 Map Display
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The file ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini``
-allows to customize various aspects of the map display and is currently
+Map colors and styles are loaded from a resource embedded in the program. You can add a
+file ``little_navmap_mapstyle.ini`` (e.g. ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_mapstyle.ini`` on Windows)
+to the settings directory to override the default styles.
+
+See chapter :doc:`FILES` for settings locations on different operating systems.
+
+Note that your current `little_navmap_mapstyle.ini` is automatically backed up after updating
+*Little Navmap*.
+
+.. VERSION_NUMBER_TODO update branch in link
+
+You can download a copy from
+`GitHub - little_navmap_mapstyle.ini <https://raw.githubusercontent.com/albar965/littlenavmap/release/3.0/resources/config/little_navmap_mapstyle.ini>`__
+and copy this to the settings directory.
+
+The file allows to customize various aspects of the map display and is currently
 limited to colors and pens. Most key names are self explaining. See
-below for more information about color values.
+below for more information about color and pen values.
 
 .. _customize-formats-color:
 
@@ -157,7 +171,7 @@ Labels, symbols and zoom layer settings can be changed in the file ``maplayers.x
 
 You can download the file here: `maplayers.xml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/resources/config/maplayers.xml>`__.
 
-Put a copy of this file into the *Little Navmap* settings folder
+Put a copy of this file into the *Little Navmap* settings directory
 (``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\`` on Windows) to override the stock settings.
 *Little Navmap* will watch the file, reload it and redraw the map when it is changed.
 
@@ -174,7 +188,7 @@ Icons
 
 To change an icon download them from the GitHub source repository `Icon
 Resources <https://github.com/albar965/littlenavmap/tree/release/2.8/resources/icons>`__
-or extract the included file ``customize/icons.zip`` in the installation folder.
+or extract the included file ``customize/icons.zip`` in the installation directory.
 
 Modify the icon and save it into the settings directory
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap* will
@@ -193,7 +207,7 @@ Navmap* to see the changes.
 User, AI and Multiplayer Aircraft Icons
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default icons are included in file ``aircraft-icons.zip`` in installation folder ``customize``.
+Default icons are included in file ``aircraft-icons.zip`` in installation directory ``customize``.
 
 All icons for user, AI/multiplayer aircraft, helicopters and ships are
 stored in the program but can be overloaded by the user.
@@ -247,7 +261,7 @@ historical reasons all icons are prefixed with ``aircraft``.
 Userpoint Category Icons
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default icons are included in file ``userpoint-icons.zip`` in installation folder ``customize``.
+Default icons are included in file ``userpoint-icons.zip`` in installation directory ``customize``.
 
 Icons for userpoint categories are stored in the program but can be
 overloaded by the user as well.

@@ -5,12 +5,12 @@ Directories
 and save your *Little Navmap* files in arbitrary places. The program does not require a fixed directory structure for its files.
 
 Menu ``Tools`` -> :ref:`create-dir-structure` allows to create the directory structure later or manually.
-The dialog can also be used to create missing folders in the directory structure. No data is deleted while doing so.
+The dialog can also be used to create missing directories in the structure. No data is deleted while doing so.
 
 All default directories are adjusted if you create the directory
 structure. This means that file dialogs will initially point to the right place when saving files.
 
-The following folders are suggested to be created:
+The following directories are suggested to be created:
 
 -  ``Flight Plans``: For flight plans in *Little Navmap*'s own format LNMPLN. See :doc:`ROUTEEXPORTALL` for
    exporting flight plans to other formats usable by simulators, aircraft or tools. See also
@@ -25,7 +25,7 @@ The following folders are suggested to be created:
    Look at chapter See :ref:`cache-elevation` for installation instructions.
 -  ``Map Themes``: This directory is used to lookup additional map themes for the background map layer.
    See :doc:`MAPTHEMES` for installation instructions. The path can also be set manually in options on page
-   :ref:`cache`, section :ref:`options-mapthemes`.
+   :ref:`options-cache-and-files`, section :ref:`options-mapthemes`.
 
 .. note::
 

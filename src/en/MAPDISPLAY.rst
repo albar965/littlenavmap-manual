@@ -39,7 +39,7 @@ Only this layer provides the objects which enable tooltips and the functionality
 
        Aprons, taxiways and runways drawn by *Little Navmap*. These reflect your simulator stock or
        add-on scenery. Tooltips are available.
-       Airport features can be disabled on options page :ref:`map-display-labels`.
+       Airport features can be disabled on options page :ref:`options-map-labels`.
        See :doc:`LEGEND` for details about the various symbols shown by the map.
 
 .. _moving-map:
@@ -64,8 +64,8 @@ position in the ``Information`` dock window. Windows and tabs are raised
 depending on clicked objects.
 
 The procedure search window can be raised optionally if clicking an airport.
-This can be enabled in the options dialog on page :ref:`map`. Check ``Show procedures on airport
-click`` to enable this function.
+This can be enabled in the options dialog on page :ref:`options-map-tooltips-and-clicks`.
+Check ``Show procedures on airport click`` to enable this function.
 
 A single click on an user aircraft, AI aircraft or multiplayer aircraft
 shows details in the ``Simulator Aircraft`` dock window.
@@ -79,8 +79,8 @@ plan waypoints or airports if the flight plan edit mode is enabled. The
 edit mode can be disabled using the toolbar or ``Flight Plan`` ->
 :ref:`edit-flight-plan-on-map` in the main menu. See also :doc:`MAPFPEDIT`.
 
-The mouse click sensitivity can be adjusted in the ``Options`` dialog on
-the page :ref:`map-navigation`.
+The mouse click sensitivity can be adjusted in the options dialog on
+the page :ref:`options-map-tooltips-and-clicks`.
 
 .. note::
 
@@ -97,7 +97,7 @@ Mouse Click Hotspots
 
 Map marks like range rings or measurement lines have hotspots to indicate that a modifier-click
 like ``Ctrl+Click`` can remove them or an action is available in the context menu. The same applies
-to the flight plan drag and drop editing mode.
+to the flight plan click-and-drag editing mode.
 
 The mouse cursor changes into a hand |Hand Cursor| to indicate a click
 spot.
@@ -149,8 +149,8 @@ Zooming out drops the less important aircraft labels, for example. Flight number
 
 A yellow wind arrow and labels for the situation around the user
 aircraft can be displayed on the top center of the map. The displayed
-labels for aircraft can be configured in the dialog ``Options`` on
-:ref:`map-display-labels`. No labels are shown for ship traffic.
+labels for aircraft can be configured in the options dialog on page
+:ref:`options-map-labels`. No labels are shown for ship traffic.
 
 
 See :ref:`vehicles-legend` for details about the aircraft type.
@@ -162,6 +162,28 @@ See :ref:`vehicles-legend` for details about the aircraft type.
     an apron, parking spot or taxiway.
 
 
+.. _overlays-map:
+
+Overlays
+~~~~~~~~
+
+Map overlays provide additional functionality to move around the map and more.
+You can show or hide them by right clicking on them and selecting ``Hide``.
+Overlays can also be shown in menu ``Tools`` -> :ref:`map-overlays`.
+
+Deselect ``Lock`` from the overlay context menu to allow moving the overlays around the map.
+
+.. figure:: ../images/overlays.jpg
+    :scale: 70%
+
+    Map window with all overlays shown. Right-click context menu on overlay ``Overview`` is opened. *Click image to enlarge.*
+    The overlays are:
+
+       #.  Overview
+       #.  Compass
+       #.  Scalebar
+       #.  Navigation
+
 .. _tooltips-map:
 
 Tooltips
@@ -171,12 +193,12 @@ Hovering the mouse over the map will show tooltips for all map objects
 including airports, VOR, NDB, airways, parking, fuel box, towers,
 aircraft and ships. The tooltip is truncated and shows a message
 ``More ...`` if it gets too long. In that case reduce details or zoom in
-closer. Disable ``Verbose tooltips`` in options on page :ref:`map` if you do not like the large tips.
+closer. Disable ``Verbose tooltips`` in options on page :ref:`options-map-tooltips-and-clicks` if you do not like the large tips.
 
 The sensitivity for the tooltip display can be adjusted in the
-``Options`` dialog on :ref:`map-navigation`.
+options dialog on page :ref:`options-map-tooltips-and-clicks`.
 
-You can select which tooltips to show in options on page :ref:`map`.
+You can select which tooltips to show in options on page :ref:`options-map-tooltips-and-clicks`.
 
 .. figure:: ../images/tooltip.jpg
        :scale: 50%
@@ -208,7 +230,7 @@ information dock window and all context menu entries.
 You can use  ``Map`` -> :ref:`remove-highlights` to remove all
 highlights from the map.
 
-Colors and appearance can be customized in options on page :ref:`map-display-user`.
+Colors and appearance can be customized in options on page :ref:`options-map-user`.
 
 .. _flightplan-map:
 
@@ -221,8 +243,8 @@ All features which are part of the flight plan are forced to be shown even if th
 the menu. This means that destination, departure and alternate airport symbols as well as diagrams
 are shown even if airport display is disabled. The same applies to all navaids and approach ILS.
 
-Colors and appearance of the flight plan can be customized in options on page :ref:`map-display-flight-plan`.
-Labels can be changed on options page :ref:`map-display-labels`.
+Colors and appearance of the flight plan can be customized in options on page :ref:`options-map-flight-plan`.
+Labels can be changed on options page :ref:`options-map-labels`.
 
 .. tip::
 
@@ -245,7 +267,7 @@ departure.
 
 See :ref:`airport-diagram-legend` for details about the airport diagram.
 
-Airport labels and diagram features can be changed on options page :ref:`map-display-labels`.
+Airport labels and diagram features can be changed on options page :ref:`options-map-labels`.
 Disable all airport features except runways if you'd like to rely on the airport diagrams of the OpenStreetMap background map, for example.
 
 .. figure:: ../images/airportdiagram1.jpg
@@ -303,15 +325,14 @@ clicking on the dashed line in the menu (:ref:`tear-off-menu`).
 
 This allows to change the map theme which defines the look and feel of the background map (:ref:`layers-map`).
 
-See :ref:`map-display-keys` for more information on themes requiring a login or an account.
+See options page :ref:`options-map-keys` for more information on themes requiring a login or an account.
 :doc:`MAPTHEMES` explains how to create your own themes and how to install additional themes.
 
 .. tip::
 
       Also check out the `Little Navmap Support Forum at
-      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
-      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
-      `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ and
+      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__  for more map themes.
 
 .. note::
 
@@ -323,7 +344,8 @@ In any case it is easy to deliver and install a new online
 map source without creating a new *Little Navmap* release.
 See :doc:`MAPTHEMES` for more information.
 
-The following map themes are included per default:
+Free map themes that are included per default and don't need an acccout at the respective map provider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 CARTO Dark Matter
     A dark map.
@@ -356,18 +378,6 @@ OpenTopoMap
 
           View at the eastern Alps using *OpenTopoMap* theme. A flight plan is shown north of the Alps.
 
-Stamen Terrain
-    A terrain map featuring integrated hill shading and natural vegetation colors. The
-    hill shading is available worldwide.
-    Map tiles by `Stamen Design <https://stamen.com>`__, under `CC BY
-    3.0 <https://creativecommons.org/licenses/by/3.0>`__. Data by
-    `OpenStreetMap <https://www.openstreetmap.org>`__, under
-    `ODbL <https://www.openstreetmap.org/copyright>`__.
-
-    .. figure:: ../images/stamenterrain.jpg
-
-          View showing Stamen Terrain theme.
-
 Political Map (Offline)
     This is an offline political map using colored country polygons. Boundaries and
     water bodies are depicted coarse. The map included in *Little Navmap*
@@ -383,9 +393,19 @@ Atlas (Offline)
     is included in *Little Navmap* and has an option to display city and
     country names. Boundaries and water bodies are depicted coarse.
 
-Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Thunderforest Atlas and Thunderforest Landscape
+Map themes are included per default but need a free acccout at the respective map provider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Mapbox Dark, Mapbox Light, Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Stadia StamenTerrain, Thunderforest Atlas and Thunderforest Landscape
     These maps require a registration at the respective sites to get access to the map tiles.
-    You can enter the keys in ``Options`` on page :ref:`map-display-keys` which also contains direct links to the login pages.
+    You can enter the keys in the options dialog on page :ref:`options-map-keys` which also contains direct links to the login pages.
+
+.. note::
+
+    All accounts above are free but try to guide you to a paid subscription when subscribing. Simply ignore this.
+    Do enter payment information anywhere.
+
+    You can preview the maps at the respective sites.
 
 .. _map-context-menu:
 
@@ -588,6 +608,48 @@ Two options exist depending on the waypoint type:
      dragging the flight plan position (:doc:`MAPFPEDIT`). See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
 
 
+.. _convert-to_waypoints:
+
+|Convert Procedure to Waypoints| Convert Procedure to Waypoints
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This function converts a procedures into a list of waypoints. Right click on a procedure leg in
+the flight plan table or the map display and select ``Convert to Waypoints``. A warning will be shown
+to indicate limitations of the conversion. After converting, you can edit the procedure waypoints
+like any other flight plan waypoint list.
+
+You can undo this conversion.
+
+.. note::
+
+      Converting a procedure to waypoints loses information:
+
+      - Several approach procedure leg types like holds and turns cannot be converted and will appear as straight lines.
+      - Speed and altitude restrictions are included as remarks and are not followed in the elevation profile.
+
+.. _direct-to-here:
+
+|Direct to Here| Direct to Here
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The direct to function is availabe in all related context menus in flight plan table, map and search result
+table.
+
+This function is only enabled if you are connected to a simulator. You can select a direct
+to any waypoint ahead of the active leg, the destination airport or an alternate airport.
+Furthermore you can direct to any position, navaid or airport which are not a part of the flight
+plan.
+
+Using ``Direct to`` adds a waypoint ``PPOS`` (present position) at the aircraft location and a
+direct line to the clicked position.
+
+.. note::
+
+    You cannot select a direct to a waypoint in a procedure.
+    Use the function :ref:`convert-to_waypoints` above before.
+
+    Also, you cannot select a passed waypoint of the flight plan as direct to.
+
 .. _measure-gc-distance-from-here:
 
 |Measure Distance from here| Measure Distance from here
@@ -689,11 +751,15 @@ Removes a map feature added by the user.
 Marks an airport with a yellow circle as add-on.
 
 This function will add a userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
-Note that the userpoint is not attached to the airport and will not be hidden with airports and is not affected by airport filters.
 
 You can add you own userpoint type names starting with ``Addon`` to create more add-on categories. See :ref:`customize-icons` for more information.
 
 See chapter :doc:`USERPOINT` for more information how to edit or remove the highlight.
+
+.. note::
+
+        The userpoint is not attached to the airport, is independent of the simulator selection and will
+        not be hidden with airports and is not affected by airport filters.
 
 .. _userpoints:
 
@@ -715,8 +781,7 @@ is created and the fields Ident, Region, Name and Altitude are
 filled-in. The same applies to NDB |NDB|, VOR |VOR| and other navaids.
 
 If the selected position is empty map space, an userpoint of type
-``Bookmark`` |Bookmark| is created at this position. Altitude is only filled-in if GLOBE
-offline elevation data is installed. See :ref:`cache-elevation`.
+``Bookmark`` |Bookmark| is created at this position. Altitude is only filled-in if the :doc:`GLOBE` is installed.
 
 See :ref:`userpoints-dialog-add` for more information.
 
@@ -788,6 +853,17 @@ Show the nearest airport, navaid, userpoint, online client or online
 center in the search dialog. The current search parameters are reset
 in the respective tab.
 
+.. _show-in-flight-plan:
+
+|Select Leg in Flight Plan| Select Leg in Flight Plan
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+This will select and show a flight plan leg in the flight plan table if you right-click on a plan waypoint in the map
+and select ``More`` -> ``Select Leg in Flight Plan`` in the context menu.
+
+You can enable selection of a flight plan leg for a single click onto a flight plan waypoint in the map in options on page
+:ref:`options-map-tooltips-and-clicks`.
+
 .. _copy-coordinates:
 
 |Copy to Clipboard| Copy to Clipboard
@@ -795,7 +871,7 @@ in the respective tab.
 
 Copies the coordinates at the clicked position into the clipboard.
 
-The coordinate format depends on the selection in ``Options`` on page :ref:`units`.
+The coordinate format depends on the selection in the options dialog on page :ref:`options-units`.
 
 .. _set-center-for-distance-search:
 
@@ -867,7 +943,9 @@ Note that the symbol is only an indicator for the home view center position and 
 .. |Show in Search| image:: ../images/icon_search.png
 .. |Userpoints| image:: ../images/icon_userdata.png
 .. |Addon| image:: ../images/icon_userpoint_Addon.png
-
+.. |Convert Procedure to Waypoints| image:: ../images/icon_approachconvert.png
+.. |Direct to Here| image:: ../images/icon_directto.png
+.. |Select Leg in Flight Plan| image:: ../images/icon_routeselect.png
 
 .. |Airport| image:: ../images/icon_userpoint_Airport.png
      :scale: 60%

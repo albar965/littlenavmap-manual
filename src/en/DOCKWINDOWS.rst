@@ -25,6 +25,10 @@ Note that related dock windows open automatically when selecting functions like
 You can save and load dock window layouts in the ``Window`` menu. See also :doc:`LAYOUT` for
 details.
 
+Note that the windows ``Flight Plan Calculation`` (:doc:`FLIGHTPLAN`),
+``Flight Plan Route Description`` (:doc:`ROUTEDESCR`) and ``Logbook Statistics`` (:ref:`statistics`)
+cannot be docked into the mai window and are independent and do not block the main application.
+
 **Dock window related menu items in menu** ``Window`` **:**
 
 - :ref:`keep-foreground-menu`
@@ -64,18 +68,19 @@ Click images to enlarge.
       :scale: 50%
 
       Title bar of a dock window marked red.
+      *Click image to enlarge.*
 
 .. figure:: ../images/dock_docking.jpg
       :scale: 50%
 
       Moving a dock window around. The blue background
       opens to indicate a space in the main window where the dock can be
-      dropped in.
+      dropped in. *Click image to enlarge.*
 
 .. figure:: ../images/dock_floating.jpg
       :scale: 50%
 
-      Dock window in floating state detached from main window.
+      Dock window in floating state detached from main window. *Click image to enlarge.*
 
 Dock Window Stacks
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,13 +89,13 @@ Dock Window Stacks
 .. figure:: ../images/dock_drop_stack.jpg
       :scale: 50%
 
-      Dropping a dock window on another to create a stack.
+      Dropping a dock window on another to create a stack. *Click image to enlarge.*
 
 .. figure:: ../images/dock_stack.jpg
       :scale: 50%
 
       A stack of two dock windows. The tab bar is marked
-      red at the bottom of the stacked dock windows.
+      red at the bottom of the stacked dock windows. *Click image to enlarge.*
 
 .. note::
 

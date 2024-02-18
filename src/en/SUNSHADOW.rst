@@ -8,8 +8,8 @@ Enable the shadow in the menu ``View`` -> :ref:`show-sun-shading`.
 
 You can change the time source for the sun shading in ``View`` -> :ref:`show-sun-shading-time`.
 
-The shadow darkness can be changed in the dialog ``Options`` on page
-:ref:`map-display-user`, ``Sun shading Darkness`` at the bottom of the dialog.
+The shadow darkness can be changed in the options dialog on page
+:ref:`options-map`, ``Sun shading Darkness`` at the bottom of the dialog.
 
 .. figure:: ../images/sunshadow.jpg
       :scale: 50%

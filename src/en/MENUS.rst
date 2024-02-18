@@ -17,7 +17,7 @@ Drop down menus in the toolbar can be torn off by clicking on the dashed line on
 
 .. tip::
 
-   Look at the left side of this online user manual to see all the menus and menu items in a tree like structure.
+   Look at the left side of this online user manual to see all the menus and menu items in a tree structure.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -60,12 +60,22 @@ Opens a flight plan with one of the following formats:
 The file type is determined by content and not file extension. See :doc:`FLIGHTPLANFMT` for more information.
 
 An opened flight plan file will be reloaded on start up (reload and centering can be switched off
-in the ``Options`` dialog on :ref:`startup` and :ref:`user-interface`).
+in the options dialog on page :ref:`options-startup-and-updates` and :ref:`user-interface`).
 
 You can also drag and drop files from a file manager like Windows
 Explorer or macOS Finder into the *Little Navmap* main window to load
 them. Single flight plan files of all allowed formats as well as aircraft performance files
 are accepted.
+
+*Little Navmap* has to guess or correct the cruise altitude if it is invalid or cannot be read from the flight plan.
+This is needed to avoid restriction violations and resulting error messages in the :ref:`flight-plan-table-err-footer`.
+
+You will see a notification dialog if this is the case. Adjust the cruise altitude manually if needed (:ref:`flight-plan-altitude`).
+
+This correction applies to all plans
+which are loaded manually by a user. The change is stored in the undo/redo stack and can be
+undone to revert to the previously invalid cruise altitude.
+The corrected altitude depends on plan type (IFR or VFR), used procedures and used airways.
 
 .. note::
 
@@ -122,7 +132,7 @@ Navmap*. Disabled if no flight plan has been loaded or created.
 destination or any other value used in the flight plan name has changed. This helps to avoid
 overwriting LNMPLN files with wrong plans after reversing direction, for example.
 
-You can disable this behavior in the options dialog on page :ref:`flight-plan` by unchecking
+You can disable this behavior in the options dialog on page :ref:`options-files` by unchecking
 ``Avoid overwriting Flight Plan with not matching departure and destination``.
 
 .. note::
@@ -145,14 +155,14 @@ See :ref:`flight-plan-formats-lnmpln` for information about this format.
 *Little Navmap* which means that all further saves will go into the new
 LNMPLN file.
 
-*Little Navmap* proposes a new file name based on the pattern set in options on page :ref:`flight-plan`.
+*Little Navmap* proposes a new file name based on the pattern set in options on page :ref:`options-files`.
 
 .. tip::
 
    You can save the flight plan files in any place. I recommend a directory in ``Documents`` like
    ``Documents\Little Navmap\Flight Plans``.
 
-   You can also use the folder which is suggested by the dialog window :doc:`FOLDERS`.
+   You can also use the directory which is suggested by the dialog window :doc:`FOLDERS`.
 
 .. important::
 
@@ -217,7 +227,7 @@ X-Plane directory if you would like to use the flight plan in the
 X-Plane GPS, the G1000 or the FMS.
 
 The proposed file name can be defined in the :ref:`multiexport-options` for formats ``X-Plane 11``.
-Note that the two export format entries for X-Plane 11 and 12 use the same file format but a different folder.
+Note that the two export format entries for X-Plane 11 and 12 use the same file format but a different directory.
 
 .. _save-flight-plan-as-fgfp:
 
@@ -253,43 +263,43 @@ See :doc:`LOADSIMBRIEF` for more information.
 Export Flight Plan to SimBrief
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens a dialog that allows to export a flight plan to `SimBrief <https://www.simbrief.com/>`__. Disabled if no flight plan has been loaded or created.
+Opens a dialog that allows to export a flight plan to
+`SimBrief <https://www.simbrief.com/>`__. Disabled if no flight plan has been loaded or created.
 
 See :doc:`SENDSIMBRIEF` for more information.
 
-.. _export-flight-plan-as-skyvector:
 
-Show Flight Plan in SkyVector
+.. _menu-gpx:
+
+GPX Exchange Format (GPX)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens the default web browser and shows the current flight plan in
-`SkyVector <https://skyvector.com>`__. Procedures are not shown. Disabled if no flight plan has been loaded or created.
+This sub-menu allows to load and save the flow trail of the user aircraft.
+See :doc:`AIRCRAFTTRAIL` for more information.
 
-Note that the flight plan will not be shown if a small airport is
-unknown to SkyVector.
+.. _load-gpx:
 
-Example: `ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C
-ENBO <https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO>`__.
-Note missing SID and STAR in SkyVector.
-
-Export Flight Plan to Other Formats
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _export-flight-plan-as-html:
-
-Export Flight Plan as HTML Page
+Load Aircraft Trail from GPX
 '''''''''''''''''''''''''''''''
 
-Saves the flight plan table as shown to HTML file which can be viewed in
-a web browser. Icons are embedded in the page. Disabled if no flight plan has been loaded or created.
+Loads and replaces the current aircraft trail after asking the user. Routes in the GPX file are ignored.
+GPX track is centered after loading if enabled in options on page :ref:`options-files`.
+See :doc:`AIRCRAFTTRAIL` for more information.
 
-The exported file will reflect changes of the flight plan table view like
-column order. Columns which are hidden or shrinked to minimum width are excluded.
+.. _append-gpx:
 
+Append Aircraft Trail from GPX
+'''''''''''''''''''''''''''''''
+
+Loads and appends to the current aircraft trail. Routes in the GPX file are ignored.
+GPX track is centered after loading if enabled in options on page :ref:`options-files`.
+See :doc:`AIRCRAFTTRAIL` for more information.
+
+.. _export-gpx:
 .. _export-flight-plan-as-gpx:
 
-Export Flight Plan as GPX
-'''''''''''''''''''''''''
+Export Flight Plan and Trail as GPX
+''''''''''''''''''''''''''''''''''''
 
 Exports the current flight plan into a GPS Exchange Format file which
 can be read by Google Earth and most other GIS applications. Disabled if no flight plan has been loaded or created.
@@ -302,12 +312,46 @@ set for all waypoints. Waypoints of all procedures are included in the
 exported file. Note that the waypoints will not allow to reproduce all
 parts of a procedure like holds or procedure turns.
 
+See :doc:`AIRCRAFTTRAIL` for more information.
+
 .. note::
 
    Do not forget to clear the aircraft trail (:ref:`delete-aircraft-trail` or :ref:`reset-for-new-flight`)
    before a flight to avoid
    old trail segments in the exported GPX file. Or, disable the reloading
-   of the trail in the options dialog on :ref:`startup`.
+   of the trail in the options dialog on page :ref:`options-startup-and-updates`.
+
+
+Export Flight Plan to Other Formats
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _export-flight-plan-as-skyvector:
+
+Show Flight Plan in SkyVector
+'''''''''''''''''''''''''''''''
+
+Opens the default web browser and shows the current flight plan in
+`SkyVector <https://skyvector.com>`__. Procedures are not shown. Disabled if no flight plan has been loaded or created.
+
+Note that the flight plan will not be shown if a small airport is
+unknown to SkyVector.
+
+Example: `ESMS NEXI2B NILEN L617 ULMUG M609 TUTBI Z101 GUBAV STM7C
+ENBO <https://skyvector.com/?fpl=ESMS%20NILEN%20L617%20ULMUG%20M609%20TUTBI%20Z101%20GUBAV%20ENBO>`__.
+Note missing SID and STAR in SkyVector.
+
+.. _export-flight-plan-as-html:
+
+Export Flight Plan as HTML Page
+'''''''''''''''''''''''''''''''
+
+Saves the flight plan table as shown to HTML file which can be viewed in
+a web browser. Icons are embedded in the page. Disabled if no flight plan has been loaded or created.
+
+The exported file will reflect changes of the flight plan table view like
+column order. Columns which are hidden or shrinked to minimum width are excluded.
+
+
 
 .. _flight-plan-export-vpilot:
 
@@ -351,6 +395,8 @@ of flight plans into the LNMPLN format.
       -  Speed and altitude limitations are not included in the exported legs.
 
       **Normally you should not use these export options.**
+
+See :ref:`convert-to_waypoints` for information about converting procedures to a list of waypoints in the flight plan.
 
 .. _export-flight-plan-approach-waypoints:
 
@@ -416,11 +462,14 @@ See :doc:`ROUTEEXPORTALL` for details.
 
 Allows addition of one or more Google Earth KML or KMZ files to the map
 display. All added KML or KMZ files will be reloaded on start up. Reload
-and centering can be switched off in the ``Options`` dialog on
-:ref:`startup` and :ref:`user-interface`.
+and centering can be switched off in the options dialog on
+pages :ref:`options-startup-and-updates` and :ref:`options-files`.
 
 Due to the variety of KML files it is not guaranteed that all files will
 show up properly on the map.
+
+Use GPX instead of KML to import a trail into *Little Navmap*. You can convert the KML to
+GPX using one of the numerous online tools or Google Earth.
 
 .. _clear-google-earth-kml-from-map:
 
@@ -455,7 +504,8 @@ The saved file is accompanied by a calibration file in
 has the same name as the image with an additional ``.json`` extension.
 
 The files have to be saved to
-``.../X-Plane 11/Resources/plugins/AviTab/MapTiles/Mercator``.
+``.../X-Plane 11/Resources/plugins/AviTab/MapTiles/Mercator`` or
+``.../X-Plane 12/Resources/plugins/AviTab/MapTiles/Mercator``.
 
 See here in the AviTab documentation for more information how to load
 the map image: `Map App -
@@ -520,6 +570,20 @@ Same as ``Window`` -> ``Shortcuts`` -> ``Fuel Report`` or pressing
 See :ref:`shortcuts-main-window` for
 a full list or shortcuts.
 
+
+.. _undo-redo:
+
+|Undo| |Redo| Undo and Redo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Allows undo and redo of flight plan changes. The last action is shown in the menu item like ``Add Waypoint``, for example.
+The undo information is cleared when restarting *Little Navmap*.
+
+
+
+
+
+
 .. _select-a-start-position-for-departure:
 
 |Select a Start Position for Departure| Select a Start Position
@@ -534,34 +598,33 @@ See :doc:`PARKINGPOSITION` for more information.
 
 .. _select-departure-runway:
 
-|Select Departure Runway| Select Departure Runway
+|Select Departure Runway| Select Departure Runway or Procedure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`set-departure-runway-map` in the map context menu. Only active if the current flight plan has a departure airport.
 See more about this in chapter :doc:`CUSTOMPROCEDURE`.
 
+The button ``Show Departure Procedures`` jumps directly to :doc:`SEARCHPROCS`
+where you can view and select a SID.
+
 .. _select-destination-runway:
 
-|Select Destination Runway| Select Destination Runway
+|Select Destination Runway| Select Destination Runway or Procedures
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Same as :ref:`set-destination-runway-map` in the map context menu. Only active if the current flight plan has a departure airport.
 See more about this in chapter :doc:`CUSTOMPROCEDURE`.
 
-.. _undo-redo:
+The button ``Show Arrival Procedures`` jumps directly to :doc:`SEARCHPROCS`
+where you can view and select a STAR or an approache.
 
-|Undo| |Redo| Undo and Redo
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Allows undo and redo of flight plan changes. The last action is shown in the menu item like ``Add Waypoint``, for example.
-The undo information is cleared when restarting *Little Navmap*.
 
 .. _edit-flight-plan-on-map:
 
 |Edit Flight Plan on Map| Edit Flight Plan on Map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Toggles the flight plan drag and drop edit mode on the map. See :doc:`MAPFPEDIT`.
+Toggles the flight plan click-and-drag edit mode on the map. See :doc:`MAPFPEDIT`.
 
 .. _calculate-flight-plan:
 
@@ -617,7 +680,7 @@ the nearest even 1,000 ft (or meter) for westerly flight plans or odd
 1,000 ft (or meter) for easterly flight plans. Adds 500 ft for VFR
 flight plans.
 
-The rule can be changed in the options on page :ref:`flight-plan`.
+The rule can be changed in the options on page :ref:`options-flight-plan`.
 
 .. _new-flight-plan-from-description:
 
@@ -639,7 +702,7 @@ using the current settings from :doc:`ROUTEDESCR`.
 
 .. _download-tracks-startup:
 
-Download Tracks on Startup
+Download Oceanic Tracks on Startup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Downloads tracks immediately and instructs *Little Navmap* download tracks on startup.
@@ -648,7 +711,7 @@ See :doc:`TRACKS` for more information.
 
 .. _download-tracks:
 
-|Download Tracks| Download Tracks
+|Download Tracks| Download Oceanic Tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Downloads Oceanic or other tracks which are NAT, PACOTS and AUSOTS.
@@ -662,7 +725,7 @@ See :doc:`TRACKS` for more information.
 
 .. _delete-tracks:
 
-Delete Tracks
+Delete Oceanic Tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Remove downloaded Oceanic and other tracks from the track database.
@@ -682,6 +745,34 @@ AUSOTS
 Allows to select the track systems to download. The download is triggered automatically after changing one of these options.
 
 See :doc:`TRACKS` for more information.
+
+.. =======================================================================================================================
+.. =======================================================================================================================
+.. =======================================================================================================================
+
+.. _search-menu:
+
+Search Menu
+~~~~~~~~~~~~~~~~
+
+This provides a shortcut to jump to the respective search window and tabs.
+See :doc:`SEARCH` for more general information about airport, navaid and other search functions.
+
+Airport Search
+^^^^^^^^^^^^^^^^^^^^^
+
+Navaid Search
+^^^^^^^^^^^^^^^^^^^^^
+
+Userpoint Search
+^^^^^^^^^^^^^^^^^^^^^
+
+See :doc:`USERPOINT` for more information about userpoints.
+
+Logbook Search
+^^^^^^^^^^^^^^^^^^^^^
+
+See :doc:`LOGBOOK` for more information about the logbook.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -739,7 +830,7 @@ See :doc:`JUMPCOORDINATE` about the dialog and :doc:`COORDINATES` about the acce
 
 .. _center-aircraft:
 
-|Center Aircraft| Keep User Aircraft Centered
+|Center Aircraft| Map follows User Aircraft
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Zooms to the user aircraft if connected to a flight simulator or *Little Navconnect* and keeps the aircraft centered on the map.
@@ -756,13 +847,7 @@ The global aircraft trail is saved and will be reloaded on program startup.
 This menu item and toolbar button removes the user aircraft trail from both the map and the
 elevation profile.
 
-The trail can be exported together with the flight plan into a GPX
-file by using :ref:`export-flight-plan-as-gpx`.
-
-While the global trail is independent of flights, an aircraft trail is also attached to logbook entries as a flown trail and can be stored there.
-
-The logbook trail only covers the flight from takeoff to touchdown. See :doc:`LOGBOOK`.
-
+See :doc:`AIRCRAFTTRAIL` for more information.
 
 .. _map-position-back-forward:
 
@@ -790,26 +875,6 @@ Use this to get a clean view of the map while flying.
 |Remove all Range Rings| Remove all Range Rings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _remove-measurement-lines:
-
-|Remove all Measurement Lines| Remove all Measurement Lines
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _remove-traffic-patterns:
-
-|Remove all Traffic Patterns| Remove all Traffic Patterns
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _remove-traffic-holdings:
-
-|Remove all Holdings| Remove all Holdings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _remove-traffic-msa-diagrams:
-
-|Remove all MSA Diagrams| Remove all MSA Diagrams
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Removes the respective user features which are range rings, navaid range rings,
 measurement lines, airport traffic patterns, user placed MSA diagrams and user holdings from the map.
 
@@ -819,7 +884,35 @@ A warning dialog is shown before removing the user features.
 
 The options are disabled if the respective features are not present the map.
 
+See also :doc:`RANGERINGS`.
 
+.. _remove-measurement-lines:
+
+|Remove all Measurement Lines| Remove all Measurement Lines
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See also :doc:`MEASURE`.
+
+.. _remove-traffic-patterns:
+
+|Remove all Traffic Patterns| Remove all Traffic Patterns
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See also :doc:`TRAFFICPATTERN`.
+
+.. _remove-traffic-holdings:
+
+|Remove all Holdings| Remove all Holdings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See also :doc:`HOLD`.
+
+.. _remove-traffic-msa-diagrams:
+
+|Remove all MSA Diagrams| Remove all MSA Diagrams
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See also :doc:`MSA`.
 
 .. _map-details:
 .. _more-details:
@@ -884,6 +977,12 @@ The drop down menu of the toolbar button can be torn off by clicking on the dash
 
 Note that airports might be hidden on the map depending on zoom distance and airport type.
 
+ILS and GLS/RNP feathers are hidden with the related airports too.
+
+Display, labels and airport diagram features can be
+changed in options on the pages :ref:`options-map-display` and :ref:`options-map-labels`.
+
+
 .. _show-airports:
 
 |Show Airports| Show Airports
@@ -929,14 +1028,13 @@ Show airports that have only water runways.
 
 Show airports that have no runways but only helipads or are marked as a heliport.
 
-
 .. _empty:
 
 |Empty| Empty
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Show empty airports. This button or menu item might be disabled
-depending on settings in the ``Options`` dialog on :ref:`map`.
+depending on settings in the options dialog on page :ref:`options-map`.
 The status of this button is combined with the other airport
 buttons. This means, for example: You have to enable soft surfaced
 airport display and empty airports to see empty airports having only
@@ -956,8 +1054,8 @@ avoid unintentional hiding.
 
 The function can be extended to X-Plane airports which are not marked as
 ``3D``. This can be done by checking
-``Consider all X-Plane airports not being 3D empty`` in the ``Options``
-dialog on page :ref:`map`. All airports not being marked as
+``X-Plane 2D airports are shown as empty`` in the options
+dialog on page :ref:`options-map`. All airports not being marked as
 ``3D`` will be shown in gray on the map and can be hidden like described
 above if enabled.
 
@@ -1001,15 +1099,18 @@ Show military airports. Note that military airports are detected by name pattern
 |Add-on| Add-on
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Add-on airports are always shown independently of the other airport map
-settings and zoom level if this option is selected.
+Add-on airports are always shown independently of the zoom level if this option is selected.
 
-This means that the display of add-on airports will ignore all filters set in this menu, also the runway length.
+You can still use the type filters and runway length filter to limit the display of add-on airports.
+This means you can hide all add-on airports having a `Soft Surface`, for example.
 
-Enabling this function allows to see even small add-on airstrips in continental zoom levels, for example.
+Enabling this function allows to see even small add-on airstrips in large continental zoom levels.
 
 Add-on airports are highlighted with a yellow ring which is independent of this function.
-You can disable the yellow ring in the options dialog on page :ref:`map-display` by unchecking ``Highlight add-on airports``.
+You can disable the yellow ring in the options dialog on page :ref:`options-map-display` by unchecking ``Highlight add-on airports``.
+
+You can also mark airports as add-on using the map context menu :ref:`mark-airport-addon-map` which will overlay an
+userpoint over the airport. This userpoint will not adhere to the filters mentioned here.
 
 **Example:** ``Add-on`` on a higher zoom level:
 
@@ -1027,6 +1128,8 @@ Navaids
 ^^^^^^^^^^^^^^^^^^
 
 Show or hide these navaids on the map. Navaids might be hidden on the map depending on zoom distance.
+
+Display and labels can be changed in options on the pages :ref:`options-map-display` and :ref:`options-map-labels`.
 
 .. note::
 
@@ -1061,7 +1164,7 @@ Show or hide intersections or waypoints.
 
 Toggles the display of ILS, localizer, IGS, LDA and SDF feathers.
 
-Note that this setting also affects the ILS glideslope display in the elevation profile and can be used to force the display of the ILS slope for all approach types.
+Note that this setting also affects the ILS glideslope display in the elevation profile and can be used to force the display of the ILS slope for all approach types. The feathers are hidden if the related airport is not shown.
 See :ref:`show-ils` for more information.
 
 .. _view-show-gls-approach-paths:
@@ -1071,13 +1174,14 @@ See :ref:`show-ils` for more information.
 
 Toggles the display feathers for GLS, RNP and other approach types.
 
-Note that this setting also affects the GLS/RNP glidepath display in the elevation profile and can be used to force the display of a glidepath for all approach types.
+Note that this setting also affects the GLS/RNP glidepath display in the elevation profile and can be used to force the display of a glidepath for all approach types. The feathers are hidden if the related airport is not shown.
 See :ref:`show-ils` for more information.
 
 .. note::
 
     GLS/RNP approach paths are not available when using the setting :ref:`navigraph-none` in the
-    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
+    and :ref:`scenery-library-menu`.
 
 .. _view-show-holdings:
 
@@ -1090,7 +1194,8 @@ user placed holdings which can be added from the map display context menu using 
 .. note::
 
     En-route holdings are not available when using the setting :ref:`navigraph-none` in the
-    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
+    and :ref:`scenery-library-menu`.
 
 .. _view-show-msa-sectors:
 
@@ -1120,7 +1225,7 @@ Toggle display of airways and the attached waypoints.
 
 .. _show-tracks:
 
-|Show Tracks| Show Tracks
+|Show Tracks| Show Oceanic Tracks
 '''''''''''''''''''''''''''''''''''
 
 Show or hide Oceanic or other tracks which are NAT, PACOTS and AUSOTS.
@@ -1140,10 +1245,12 @@ Airspace data sources can be selected in menu ``Scenery Library`` -> :ref:`airsp
 
 The dropdown menu of the toolbar buttons can be torn off (:ref:`tear-off-menu`).
 
+Airspace display and labels can be changed in options on the pages :ref:`options-map-display` and :ref:`options-map-labels`.
+
 .. figure:: ../images/airspacestoolbar.jpg
       :scale: 30%
 
-      Airspace selection toolbar with all drop down menus. Click image to enlarge.
+      Airspace selection toolbar with all drop down menus. *Click image to enlarge.*
 
 .. _show-airspaces:
 
@@ -1164,6 +1271,28 @@ the toolbar button dropdown menu.
 
 Additionally a minimum and maximum altitude can be selected in the toolbar button |Airspace Altitude|. Only airspaces
 overlapping with these limits are shown.
+
+.. _all-altitudes:
+
+All altitudes
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Show airspaces for all altitudes.
+
+.. _at-flight-plan-cruise-altitude:
+
+At flight plan cruise altitude
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Show only airspaces touching the flight plan cruise altitude (set in :ref:`flight-plan-altitude`).
+
+
+.. _for-minimum-and-maximum-altitude:
+
+For minimum and maximum altitude
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Show only airspaces touching the altitude range set in the toolbar button |Airspace Altitude|.
 
 .. _icao-airspaces:
 
@@ -1202,28 +1331,6 @@ Show or hide warning, alert and training airspaces.
 
 Show or hide center, tower, mode C and other airspaces.
 
-.. _all-altitudes:
-
-All altitudes
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Show airspaces for all altitudes.
-
-.. _at-flight-plan-cruise-altitude:
-
-At flight plan cruise altitude
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Show only airspaces touching the flight plan cruise altitude (set in :ref:`flight-plan-altitude`).
-
-
-.. _for-minimum-and-maximum-altitude:
-
-For minimum and maximum altitude
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Show only airspaces touching the altitude range set in the toolbar button |Airspace Altitude|.
-
 .. _user-features:
 
 User Features
@@ -1240,25 +1347,35 @@ the toolbar button dropdown menu.
 |Range Rings| Range Rings
 ''''''''''''''''''''''''''''''''''''
 
+See also :doc:`RANGERINGS`.
+
 .. _user-measurment-lines:
 
 |Measurement Lines| Measurement Lines
 ''''''''''''''''''''''''''''''''''''''
+
+See also :doc:`MEASURE`.
 
 .. _user-traffic-patterns:
 
 |Traffic Patterns| Traffic Patterns
 ''''''''''''''''''''''''''''''''''''''
 
+See also :doc:`TRAFFICPATTERN`.
+
 .. _user-holdings:
 
 |Holdings| Holdings
 ''''''''''''''''''''''''''''''''''''''
 
+See also :doc:`HOLD`.
+
 .. _user-msa:
 
 |Show MSA Sectors| MSA Diagrams
 ''''''''''''''''''''''''''''''''''''''
+
+See also :doc:`MSA`.
 
 Hides or shows the respective user features.
 
@@ -1266,7 +1383,7 @@ The respective option is automatically enabled after a user feature is added to 
 
 User features can also be toggled with the toolbar button |User Features|.
 
-The previous selection state is restored by clicking the ``All`` or ``None`` items a second time in
+The previous selection state is restored by clicking the ``All Userpoints`` or ``No Userpoints`` items a second time in
 the toolbar button dropdown menu.
 
 .. _map-userpoints:
@@ -1289,6 +1406,8 @@ the toolbar button dropdown menu.
 
 The respective type is automatically enabled after a userpoint is added to the map.
 
+Custom userpoint categories show up in this menu too.
+
 See :doc:`USERPOINT` for more information on user defined waypoints.
 
 .. _show-flight-plan:
@@ -1304,6 +1423,15 @@ Note that the flight plan is also hidden in the elevation profile if you switch 
 Related navaids for procedures are forced with the flight plan display. All navaids needed for
 procedures are still shown if you disable the display of VOR, NDB and waypoints. This helps to keep
 an uncluttered map display.
+
+.. _show-alternate-airports:
+
+|Show Alternate Airports| Show Alternate Airports
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Alternate airports and the related flight plan legs can be hidden on the map using this option.
+
+The alternate airport symbols might disappear depending on airport filter settings.
 
 .. _show-toc-and-tod:
 
@@ -1345,24 +1473,17 @@ aircraft is on ground (gray border on ground).
 A click on the user aircraft shows more information in the
 ``Simulator Aircraft`` dock window.
 
-More options to change the map behavior while flying can be found here :ref:`simulator-aircraft` in options.
+More settings to change the map behavior while flying can be found on page :ref:`options-simulator-aircraft` in options.
 
 .. _show-aircraft-trail:
 
 |Show Aircraft Trail| Show User Aircraft Trail
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Show the user aircraft trail. The trais is always displayed regardless of the zoom distance. It is saved and will be reloaded on program startup.
+Show the user aircraft trail. The trail is always displayed regardless of the zoom distance. It is saved and will be reloaded on program startup.
+You can clear the trail using :ref:`delete-aircraft-trail`.
 
-The trail can be deleted manually by selecting ``Map`` -> :ref:`delete-aircraft-trail` in the main menu.
-
-The length of the trail is limited for performance reasons. If it
-exceeds the maximum length, the trail is truncated and the oldest
-segments are lost. The maximum number of points can be changed in options on page :ref:`simulator-aircraft`.
-
-The trail can be exported together with the flight plan into a GPX file by using :ref:`export-flight-plan-as-gpx`.
-
-Note that an additional trail is saved with logbook entries. See :doc:`LOGBOOK` for more information.
+See :doc:`AIRCRAFTTRAIL` for more information.
 
 .. _show-aircraft-altitude-range-map:
 
@@ -1404,7 +1525,7 @@ The label turns orange if the endurance is below 45 minutes and to red if endura
 The endurance can be seen in :ref:`progress-info` when enabling ``Endurance`` in :ref:`progress-configuration`.
 
 The endurance is based on fuel on board, current fuel flow and groundspeed considering reserves and contingency as set in the :doc:`AIRCRAFTPERF` file.
-It is inly shown if the user aircraft is airborne. You will see limited endurance if climbing to cruise altitude since the range depends on the current fuel flow and speed.
+It is only shown if the user aircraft is airborne. You will see limited endurance if climbing to cruise altitude since the range depends on the current fuel flow and speed.
 
 Running below fuel reserves might also result in zero endurance shown even with fuel on board.
 
@@ -1493,8 +1614,8 @@ All aircraft icons can be customized: :ref:`customize-aircraft-icons`.
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 As :ref:`show-ai-and-multiplayer-aircraft` but shows online network aircraft on the map if enabled. This setting affects all traffic from online
-networks like IVAO, VATSIM or custom networks which can be enabled in ``Options`` on page
-:ref:`online-flying`.
+networks like IVAO, VATSIM or custom networks which can be enabled in the options dialog on page
+:ref:`options-online-flying`.
 
 See :doc:`ONLINENETWORKS` for an overview and :ref:`vehicles-legend` for information on aircraft colors and symbols.
 
@@ -1595,8 +1716,8 @@ Enables the display of sun shading on the globe. This works in both
 projections ``Mercator`` and ``Spherical``.
 
 You can change the time source with the ``Sun Shading Time`` menu below.
-The shadow darkness can be changed in the dialog ``Options`` on page
-:ref:`map-display-user`.
+The shadow darkness can be changed in the options dialog on page
+:ref:`options-map`.
 
 Note that offline maps cannot display a sun shadow.
 
@@ -1609,8 +1730,8 @@ Sun Shading Time
 
 You can choose between three time sources for the sun shadow.
 
-Simulator
-'''''''''
+Simulator Time
+'''''''''''''''''''''''
 
 Uses the time of the connected flight simulator and falls back to real
 time if not connected. Updates the shadow if the simulator time changes.
@@ -1646,8 +1767,7 @@ See :ref:`map-projection` for details.
 Theme
 ^^^^^
 
-See :ref:`map-themes` and :ref:`layers-map` for details.
-
+Selects the map background theme. See :ref:`map-themes` and :ref:`layers-map` for details.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -1663,12 +1783,12 @@ This sub-menu allows to change or enable weather source.
 Note that some weather sources depend on the selected scenery library. For example:
 
 - **X-Plane 11 scenery selected:** X-Plane 11 ``METAR.rwx`` weather file and ``global_winds.grib`` wind file in the X-Plane 11 base path are loaded.
-- **X-Plane 12 scenery selected:** The folder ``Output/real weather`` in the X-Plane 12 base bath is checked for METAR and wind files.
+- **X-Plane 12 scenery selected:** The directory ``Output/real weather`` in the X-Plane 12 base bath is checked for METAR and wind files.
 
 The same applies to ActiveSky weather files for X-Plane where the files are selected automatically.
 This does not apply to FSX, P3D and MSFS where the weather is loaded using the simulator connection.
 
-See also on options page :ref:`weather-files` for configuration of download addresses and file paths.
+See also on options page :ref:`options-weather-files` for configuration of download addresses and file paths.
 
 .. _airport-weather-source:
 
@@ -1676,7 +1796,10 @@ Airport Weather Source
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Selects the source for the airport weather symbol display on the map.
-See also :ref:`airport-weather` and :ref:`weather`.
+See also :ref:`airport-weather` and options page :ref:`options-weather`.
+
+The selection in this menu also determines the source for runway and procedure
+wind display in :doc:`CUSTOMPROCEDURE` and :doc:`SEARCHPROCS`.
 
 See :ref:`airport-weather-legend` for an explanation of the symbols
 
@@ -1695,7 +1818,7 @@ FSX, Prepar3D or X-Plane. Display for FSX/Prepar3D and on remote
 connections is slower and might cause stutters when scrolling.
 
 Display for X-Plane remote connections is not supported except by
-sharing the X-Plane 11 ``METAR.rwx`` weather file or the X-Plane 12 folder ``Output/real weather`` on the network.
+sharing the X-Plane 11 ``METAR.rwx`` weather file or the X-Plane 12 directory ``Output/real weather`` on the network.
 
 Active Sky
 ''''''''''
@@ -1725,7 +1848,7 @@ Wind source
 
 Choose the source for winds aloft forecast data here. This affects the
 calculation of top of descent, top of climb and fuel planning as well as display of wind barbs on the map.
-See also :ref:`wind` and :ref:`weather`.
+See also :ref:`wind` and options on page :ref:`options-weather`.
 
 A manual wind setting on :ref:`fuel-report` for cruise altitude can also be used. See
 :ref:`aircraft-performance-buttons` on tab ``Fuel Report``.
@@ -1755,11 +1878,11 @@ Flight Simulator (X-Plane only)
 '''''''''''''''''''''''''''''''
 
 Uses the ``global_winds.grib`` file which is downloaded and used by
-X-Plane 11 or checks the X-Plane 12 folder ``Output/real weather`` for changes. The files use less
+X-Plane 11 or checks the X-Plane 12 directory ``Output/real weather`` for changes. The files use less
 wind layers and are therefore not as accurate and not as recent as the NOAA option.
 
 Display for X-Plane remote connections is not supported except by
-sharing the X-Plane 11 ``global_winds.grib`` weather file or the X-Plane 12 folder ``Output/real weather`` on the network.
+sharing the X-Plane 11 ``global_winds.grib`` weather file or the X-Plane 12 directory ``Output/real weather`` on the network.
 
 NOAA
 ''''
@@ -1822,7 +1945,7 @@ Import user defined waypoints from the file ``user_fix.dat``. The file
 does not exist by default in X-Plane and has to be created either
 manually or by exporting from *Little Navmap*.
 
-The default location is ``Custom Data/user_fix.dat`` in the X-Plane base folder.
+The default location is ``Custom Data/user_fix.dat`` in the X-Plane base directory.
 
 The imported userpoints are of type ``Waypoint`` |Waypoint| which can be
 changed after import using the bulk edit functionality.
@@ -2037,7 +2160,7 @@ Allows to save the current profile using a new filename.
 
 .. _aircraft-menu-recent:
 
-Recent Performance Files
+Recent Aircraft Performance Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Shows all recently loaded aircraft performance files for quick access.
@@ -2324,7 +2447,7 @@ Tools Menu
 
 .. _flight-simulator-connection:
 
-|Flight Simulator Connection| Flight Simulator Connection
+|Flight Simulator Connection| Connect to Flight Simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Opens the ``Connect`` dialog allowing *Little Navmap* to connect directly
@@ -2340,6 +2463,30 @@ Toggle Flight Simulator Connection
 
 Switches the simulator connection on and off without opening the connection dialog.
 
+.. _create-dir-structure:
+
+Create Directory Structure for saving Files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+*Little Navmap* creates a recommended directory structure when selecting this menu item.
+
+See chapter :doc:`FOLDERS` for more information.
+
+Note that *Little Navmap* does not require a fixed directory structure for its files.
+You can always save and load all files to and from arbitrary places.
+
+.. _install-xpconnect:
+
+Install Little Xpconnect in X-Plane Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This function installs or updates the X-Plane plugin *Little Xpconnect* which is needed
+for *Little Navmap* to connect to the simulator.
+
+You can use this to avoid the manually copying. Additionally the function checks for wrongly installed plugins.
+
+See chapter :doc:`XPCONNECT` for more information.
+
 .. _run-webserver:
 
 Run Webserver
@@ -2348,7 +2495,7 @@ Run Webserver
 Starts the internal web server of *Little Navmap*. Access the web page
 using the menu item ``Open Webserver Page in Browser`` below.
 
-See :doc:`WEBSERVER` for detailed information and :ref:`web-server` for configuration options.
+See chapter :doc:`WEBSERVER` for detailed information and options page :ref:`options-web-server` for configuration options.
 
 .. _open-webserver:
 
@@ -2391,7 +2538,6 @@ the configuration directory. See :ref:`configuration`.
 Use this function instead of deleting the settings directory if you see
 crashes or other issues with the program.
 
-
 .. _save-state:
 
 Save Options and Application State
@@ -2400,17 +2546,14 @@ Save Options and Application State
 Saves all options, dialog settings, tab arrangements and the window
 layout. This is normally only done when exiting *Little Navmap*.
 
-.. _create-dir-structure:
+.. _create-issue-report:
 
-Create Directory Structure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create an Issue Report
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* creates a recommended directory structure when selecting this menu item.
+Manually creates an issue report Zip archive containing all needed files to reproduce a problem.
 
-See :doc:`FOLDERS` for more information.
-
-Note that *Little Navmap* does not require a fixed directory structure for its files.
-You can always save and load all files to and from arbitrary places.
+See chapters :doc:`ISSUEREPORT` and :doc:`CRASHREPORT` for more information.
 
 .. _files-and-directories:
 
@@ -2450,15 +2593,6 @@ See also :ref:`configuration` for details about the used files.
    There is usually no need to edit this file directly.
    Editing this file the wrong way might crash *Little Navmap*.
 
-.. _files-and-directories-db:
-
-Show Database Files
-'''''''''''''''''''''''''''''''''''''''
-
-Open *Little Navmap*'s database directory in a file manager. See :doc:`RUNNOSIM`
-for more information on copying database files between different computers.
-
-See also :ref:`files-databases` for details about the different database files.
 
 .. _files-and-directories-cache:
 
@@ -2470,14 +2604,34 @@ images.
 
 See also :ref:`disk-cache` for details.
 
-.. _files-and-directories-mapthemes:
 
-Show Map Installation Directory
+.. _files-and-directories-theme:
+
+Show Map Theme Installation
 '''''''''''''''''''''''''''''''''''''''
 
-Opens the file manager with the installation directory for additional map themss.
+Opens the file manager with the installation directory for additional map themes.
 
 See also :ref:`installing-map-themes` for more information about additional map themes.
+
+.. _files-and-directories-db:
+
+Show Database Files
+'''''''''''''''''''''''''''''''''''''''
+
+Open *Little Navmap*'s database directory in a file manager. See :doc:`RUNNOSIM`
+for more information on copying database files between different computers.
+
+See also :ref:`files-databases` for details about the different database files.
+
+
+.. _files-and-directories-globe:
+
+Show GLOBE offline elevation Data Installation
+'''''''''''''''''''''''''''''''''''''''''''''''''
+
+Opens the installation directory of the offline elevation data.
+See :doc:`GLOBE` for installation instructions.
 
 .. _flight-plan-table-display-options:
 
@@ -2545,6 +2699,8 @@ the compass on the top right corner of the map window.
 
 You can also right click on a map overlay to hide it from the context menu.
 
+See also :ref:`overlays-map` for more information about map overlays.
+
 .. _window-styles:
 
 Style
@@ -2553,17 +2709,17 @@ Style
 Allows to switch the style of the graphical user interface on the fly. A
 restart is not needed.
 
-The user interface styles contain a mode ``Night`` which can be used for
+The user interface styles contain a mode ``Dark`` which can be used for
 flights in a dark environment. You can also dim the map and elevation
-profile display for this style in the dialog ``Options`` on
-:ref:`map-display-user` (``Map Dimming in Night Style`` at the bottom of the dialog).
+profile display for this style in the options dialog on page
+:ref:`options-map` (scroll down to ``Map dimming in dark style`` at the bottom of the dialog).
 
-The colors for the styles ``Fusion`` and ``Night`` can be changed by
+The colors for the styles ``Fusion`` and ``Dark`` can be changed by
 editing configuration files. See :doc:`CUSTOMIZE` for more
 information.
 
 The available styles depend on the operating system except for
-``Fusion`` and ``Night`` which are always available.
+``Fusion`` and ``Dark`` which are always available.
 
 .. _window-layout-open:
 
@@ -2602,7 +2758,10 @@ Reset Window Layout
 ^^^^^^^^^^^^^^^^^^^
 
 Reset the main window layout back to default. This involves visibility,
-position and state of all dock windows as well as the :ref:`ui-toolbars` and the :doc:`STATUSBAR`. Tabs are not affected by this.
+position and state of all dock windows as well as the :ref:`ui-toolbars` and the :doc:`STATUSBAR`.
+
+Tabs are not affected by this.
+Use :ref:`reset-tabs-menu` below to reset all tabs.
 
 This function can be helpful if a dock window gets lost on multi monitor setups or other issues.
 
@@ -2640,8 +2799,8 @@ Forces the main window of *Little Navmap* to remain in foreground of all other a
 
 .. _show-all-floating:
 
-Show all floating Windows
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Show all floating Dock Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Raises all undocked (i.e. floating) windows before the main window. This
 can be helpful if a window got lost. See :doc:`DOCKWINDOWS` for more information about floating dock
@@ -2678,72 +2837,62 @@ windows can still be opened from the toolbar or using keyboard shortcuts.
 
 Enable this if you'd like to undock windows or drag them around. See :doc:`DOCKWINDOWS` for more information.
 
-.. _window-search:
-
-|Search| Search
-^^^^^^^^^^^^^^^
-
-.. _window-flight-plan:
-
-|Flight Plan| Flight Planning
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _window-information:
-
-|Information| Information
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _window-flight-plan-elevation-profile:
-
-|Flight Plan Elevation Profile| Flight Plan Elevation Profile
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _window-simulator-aircraft:
-
-|Simulator Aircraft| Simulator Aircraft
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Open or close these dock windows. The map dock window cannot be closed.
-The whole dock window stack is closed if a dock window is part of a
-stack. See :doc:`DOCKWINDOWS` for more information about
-stacked dock windows.
-
-Note that the ``Flight Plan Calculation`` window cannot be docked and remains in floating state.
-The altitude from the current flight plan is not copied to the calculation window when using this function.
-
-.. _main-toolbar-options:
-
-File Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Map Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Map Options Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Flight Plan Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Map Airspaces Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Dock Window Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Tools Toolbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Show or hide these :ref:`ui-toolbars`.
-
-You can also hide toolbars in the context menu that appears when right clicking on them.
-
 .. _main-statusbar-options:
 
 Statusbar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show or hide the statusbar. See :doc:`STATUSBAR` for more on the shown information.
+
+.. _main-toolbar-options:
+
+Toolbars
+^^^^^^^^^^^^^^^
+
+File, Map, Map Options, Map Options Other, Flight Plan, Map Options Flight Plan and Aircraft, Map Airspaces, Dock Windows and Tools and Options
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Show or hide these :ref:`ui-toolbars`.
+
+You can also hide toolbars in the context menu that appears when right clicking on them.
+
+
+Dock Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open or close these dock windows. The map dock window cannot be closed.
+The whole dock window stack is closed if a dock window is part of a
+stack. See :doc:`DOCKWINDOWS` for more information about
+stacked dock windows.
+
+Note that the windows ``Flight Plan Calculation`` (:doc:`FLIGHTPLAN`),
+``Flight Plan Route Description`` (:doc:`ROUTEDESCR`) and ``Logbook Statistics`` (:ref:`statistics`)
+cannot be docked into the mai window and are independent and do not block the main application.
+
+.. _window-flight-plan:
+
+|Flight Plan| Flight Planning
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. _window-search:
+
+|Search| Search
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. _window-simulator-aircraft:
+
+|Simulator Aircraft| Simulator Aircraft
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. _window-flight-plan-elevation-profile:
+
+|Flight Plan Elevation Profile| Flight Plan Elevation Profile
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. _window-information:
+
+|Information| Information
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -2754,7 +2903,7 @@ Help Menu
 
 .. _help-contents:
 
-|Contents (Online)| User Manual (Online)
+|Help Icon| User Manual (Online)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show the online user manual in the default web browser. The English user manual is shown if it is
@@ -2762,39 +2911,104 @@ not available in your language.
 
 You can install additional language packs for *Little Navmap* which can include a translated manual.
 
-.. _help-tutorials:
+.. _help-chapters:
 
-|Tutorials (Online)| User Manual - Tutorials (Online)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Helpful Chapters (Online)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _start-and-first-steps:
+
+|Help Icon| Start and first Steps
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Shows the page :doc:`START`
+which opens automatically in your browser after updating or first installation of *Little Navmap*
+and is a part of the *Little Navmap* online manual.
+
+It gives valuable links and information for first time users and provides a list of first steps.
+
+.. _tutorials:
+
+|Help Icon| Tutorials
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Shows the online tutorials in the default web browser.
+
+.. _user-interface:
+
+|Help Icon| User Interface
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Opens chapter :doc:`INTRO`
+which provides information about the user interface of *Little Navmap* in general.
+
+.. _main-menu-and-toolbar-items:
+
+|Help Icon| Main Menu and Toolbar Items
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Opens this chapter :doc:`MENUS` which describes all the menu items of *Little Navmap*.
+
+.. tip::
+
+   Look at the left side of this online user manual to see all the menus and menu items in a tree structure.
+
+
+.. _flight-planning:
+
+|Help Icon| Flight Planning
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Opens chapter :doc:`FLIGHTPLAN` describing the flight plan table and context menu.
+
+.. _aircraft-performance:
+
+|Help Icon| Aircraft Performance
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Opens chapter :doc:`AIRCRAFTPERF` which gives information about aircraft performance management in *Little Navmap*.
+
+.. _map-display-and-context-menu:
+
+|Help Icon| Map Display and Context Menu
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Opens chapter :doc:`MAPDISPLAY` which provides information about the map display and the context menu.
 
 .. _navmap-legend-map-legend:
 
 |NavMap Legend| User Manual - NavMap Legend (Online)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Show the navigation related map legend in the defaul web browser.
+Show the navigation related map legend in the default web browser.
 
 .. _help-contents-offline:
 
-|Contents (Offline, PDF)| User Manual (Offline, PDF)
+|Help Icon| User Manual (Offline, PDF)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show the included PDF user manual in the default PDF viewer.
 
 You can install additional language packs for *Little Navmap* which can include a translated PDF manual.
 
+This menu item is only shown if the PDF user manual is present in the directory ``help`` in the installation directory.
+
+You can download the user manual for offline user here: `Little Navmap - User Manuals <https://albar965.github.io/manuals.html>`__
+
 .. _help-faq:
 
-|Frequently asked Questions (Online)| Frequently asked Questions (Online)
+|Help Icon| Frequently asked Questions (Online)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Shows the page `Little Navmap - Frequently asked Questions <https://albar965.github.io/littlenavmap-faq.html>`__ in the web browser. Look at these first if you have a question or problem.
+Shows the page `Little Navmap - Frequently asked Questions <https://albar965.github.io/littlenavmap-faq.html>`__ in the web browser.
+
+.. tip::
+
+   Look at the frequently asked questions first if you have a question or problem.
 
 .. _help-downloads:
 
-|Contents (Online)| Downloads (Online)
+|Help Icon| Downloads (Online)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Opens the page `Little Navmap Downloads <https://www.littlenavmap.org/downloads/>`__ in the default
@@ -2802,12 +3016,22 @@ web browser where you can get
 aircraft performance files, airspace boundaries,
 flight plans, map themes or userpoints provided by the community.
 
-.. _help-changelog:
+.. _help-download-manual:
 
-|Contents (Online)| Changelog
+|Help Download Manual| Download User Manuals
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Opens the included file ``CHANGELOG.txt`` in a text editor. This file lists all changes made for each release. Refer to this file if you think that a function is missing or has been moved.
+Opens the page `Little Navmap - User Manuals <https://albar965.github.io/manuals.html>`__ in the default
+web browser. You can download the user manual in formats usable for printing and offline reading
+like PDF, ePUB, MOBI and a Zip archive of the HTML user manual.
+
+.. _help-changelog:
+
+|Help Icon| Changelog (Offline, Text)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Opens the included file ``CHANGELOG.txt`` in a text editor.
+This file lists all changes made for each release. Refer to this file if you think that a function is missing or has been moved.
 
 .. _about-little-navmap:
 
@@ -3006,10 +3230,8 @@ See :doc:`UPDATE` for more information.
 .. |Information| image:: ../images/icon_infodock.png
 .. |Flight Plan Elevation Profile| image:: ../images/icon_profiledock.png
 .. |Simulator Aircraft| image:: ../images/icon_aircraftdock.png
-.. |Contents (Online)| image:: ../images/icon_help.png
-.. |Tutorials (Online)| image:: ../images/icon_help.png
-.. |Frequently asked Questions (Online)| image:: ../images/icon_help.png
-.. |Contents (Offline, PDF)| image:: ../images/icon_help.png
+.. |Help Icon| image:: ../images/icon_help.png
+.. |Help Download Manual| image:: ../images/icon_helpdownload.png
 .. |NavMap Legend| image:: ../images/icon_help.png
 .. |Map Legend for current Map Theme| image:: ../images/icon_help.png
 .. |About Little Navmap| image:: ../images/icon_littlenavmap.png
@@ -3032,3 +3254,4 @@ See :doc:`UPDATE` for more information.
 .. |Aircraft Progress Display Options| image:: ../images/icon_settingsroute.png
 .. |Flight Plan Table Display Options| image:: ../images/icon_settingsroute.png
 .. |Elevation Profile Display Options| image:: ../images/icon_settingsroute.png
+.. |Show Alternate Airports| image:: ../images/icon_alternate.png

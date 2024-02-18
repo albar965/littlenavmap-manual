@@ -7,7 +7,9 @@ information window and tooltips as well as weather symbols on the map.
 **Weather can be taken from the following sources:**
 
 -  FSX or P3D if connected. This also applies to network setups.
--  X-Plane 11 and 12 real time weather from weather files. You have to share files and directories across computers and adjust loading path in ``Options`` on page :ref:`cache` for remote setups.
+-  X-Plane 11 and 12 real time weather from weather files.
+   You have to share files and directories across computers and adjust loading path in the options
+   dialog on page :ref:`options-cache-and-files` for remote setups.
 -  `NOAA <https://www.weather.gov>`__ online weather service
 -  `VATSIM <https://www.vatsim.net>`__ network online weather service
 -  `IVAO <https://www.ivao.aero>`__ network online weather service
@@ -33,7 +35,7 @@ Weather files are accessed or downloaded on demand when an option in menu :ref:`
 
 **Weather display and information can be selected in the following locations:**
 
--  Options dialog on page :ref:`weather`: There you define what source is shown in the information
+-  Options dialog on page :ref:`options-weather`: There you define what source is shown in the information
    window and in the map tooltip. This is based on the airport METAR reports and does not affect
    anything else besides the information window and the map tooltip.
 -  Main menu ``Weather`` -> :ref:`airport-weather-source`: This is for the airport weather icons on
@@ -184,7 +186,7 @@ A manual wind setting for cruise altitude can also be used. See
 :ref:`aircraft-performance-buttons`.
 
 See :ref:`high-alt-wind` for an
-explanation of the wind symbols and :ref:`weather` for more configuration options.
+explanation of the wind symbols and options page :ref:`options-weather` for more configuration options.
 
 Select wind data source for display with :ref:`wind-source`.
 
@@ -222,7 +224,7 @@ wind source if you hover the mouse over them. The same applies to wind barbs at 
 option ``At Flight Plan Waypoints`` enabled.
 
 Direction is magnetic per default but can be changed in the options
-dialog on page :ref:`units`.
+dialog on page :ref:`options-units`.
 These tooltips show the wind for all layers with flight plan cruise altitude, selected wind barb altitude and manual layer altitude highlighted.
 
 .. figure:: ../images/wind.jpg

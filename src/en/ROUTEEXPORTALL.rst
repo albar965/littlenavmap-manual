@@ -77,7 +77,8 @@ case compared to the other formats. Enabling this for export saves you a few ext
 
 The following happens if LNMPLN is saved with multiexport:
 
--  The file name is automatically assigned by using the selected pattern in the options dialog on page :ref:`flight-plan` (:ref:`flight-plan-pattern`).
+-  The file name is automatically assigned by using the selected pattern in the options
+   dialog on page :ref:`options-files` (:ref:`flight-plan-pattern`).
    If the file was already saved with another name when doing :ref:`save-flight-plan-as` or :ref:`save-flight-plan` then this name is used.
 -  *Little Navmap* saves the file into the path set in the multiexport options dialog.
 -  The current file is marked as clean. This means that the ``*`` is cleared from the window title

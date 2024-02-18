@@ -142,7 +142,7 @@ Now there is a flight plan. Yours might look a bit different.
 
 |VFR Flight Plan|
 
-You can also use the drag and drop feature to move points or add new
+You can also use the click-and-drag feature to move points or add new
 ones. Enable it by checking ``Flight Plan`` ->
 :ref:`edit-flight-plan-on-map` |Edit Flight Plan on Map|   and click on a
 flight plan waypoint to move it. Click on a flight plan leg to add a new
@@ -247,7 +247,7 @@ Looking at Places while Flying
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* will keep your aircraft centered on the screen as a default setting. You can configure
-this function in the options dialog on page :ref:`simulator-aircraft`.
+this function in the options dialog on page :ref:`options-simulator-aircraft`.
 
 The program will stop following your aircraft for 10 seconds if you
 start any action that zooms in to an airport or navaid (double-click,

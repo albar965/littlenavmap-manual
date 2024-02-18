@@ -1,12 +1,12 @@
-Legend
-------
+Map Legend
+----------
 
 By default, all speeds are given in knots (kts), distances in nautical miles (NM),
 altitudes and elevations in feet (ft). The units can be set to imperial or
-metric in the dialog ``Options`` on :ref:`units`.
+metric in the options dialog on page :ref:`options-units`.
 
-Colors, size and text labels of map elements can be changed in the
-dialog ``Options`` on :ref:`map-display`, :ref:`map-display-flight-plan`, :ref:`map-display-user` and :ref:`map-display-labels`.
+Colors, size and text labels of map elements can be changed in the options
+dialog on pages :ref:`options-map-display`, :ref:`options-map-flight-plan`, :ref:`options-map-user` and :ref:`options-map-labels`.
 This legend shows the default values.
 
 Heading and course are suffixed with ``°T`` for true course or ``°M`` for magnetic course. ``°T/M`` is shown if both courses are equal.
@@ -108,7 +108,7 @@ Highlights
 Selecting a row in the flight plan table or a search result table causes the related feature to be highlighted on the map.
 Hovering the mouse over the elevation profile will hightlight the related flight plan position on the map.
 
-Highlights can be customized in ``Options`` on page :ref:`map-display-user`.
+Highlights can be customized in the options dialog on page :ref:`options-map-user`.
 See also :ref:`highlights-map`.
 
 +---------------------------------+-----------------------------------------------------------------------------------+
@@ -124,7 +124,7 @@ See also :ref:`highlights-map`.
 |                                 | ``Click and Center`` navigation                                                   |
 |                                 | mode. Also shows map navigation                                                   |
 |                                 | click/touch areas if enabled.                                                     |
-|                                 | Can be enabled in ``Options`` on page :ref:`map-display-labels`.                  |
+|                                 | Can be enabled in the options dialog on page :ref:`options-map-labels`.           |
 +---------------------------------+-----------------------------------------------------------------------------------+
 | |Search Highlight|              | A highlighted airport or navaid                                                   |
 |                                 | selected in the search result                                                     |
@@ -192,17 +192,13 @@ User Features
 User features are all objects which can be added to the map by the user. This includes
 :ref:`holding-legend`, :ref:`pattern-legend` and more.
 
-User features can be customized in ``Options`` on page :ref:`map-display-user`.
+User features can be customized in the options dialog on page :ref:`options-map-user`.
 
 Display of user features can be enabled or disabled in menu ``View`` -> :ref:`user-features`.
 
 +---------------------------------+---------------------------------------------------------------+
 | |Range|                         | Range rings labeled with                                      |
 |                                 | distance.                                                     |
-|                                 | The number and distance of the                                |
-|                                 | range rings can be changed in the                             |
-|                                 | ``Options`` dialog on page                                    |
-|                                 | :ref:`map`.                                                   |
 |                                 | This feature can be added from the map context menu           |
 |                                 | using :ref:`show-range-rings`.                                |
 +---------------------------------+---------------------------------------------------------------+
@@ -224,8 +220,8 @@ Display of user features can be enabled or disabled in menu ``View`` -> :ref:`us
 |                                 | shown in feet or meter.                                       |
 |                                 | The width of distance measurement                             |
 |                                 | lines can be changed in the                                   |
-|                                 | dialog ``Options`` on page                                    |
-|                                 | :ref:`map-display-labels`.                                    |
+|                                 | options dialog on page                                        |
+|                                 | :ref:`options-map-labels`.                                    |
 |                                 | The labels                                                    |
 |                                 | can be changed in the tree view                               |
 |                                 | on the right side of the                                      |
@@ -252,12 +248,12 @@ Display of user features can be enabled or disabled in menu ``View`` -> :ref:`us
 Compass Rose
 ~~~~~~~~~~~~
 
-Line thickness can be changed in dialog ``Options`` on the tabs
-:ref:`map-display-user` and :ref:`map-display-labels`.
+Line thickness can be changed in options dialog on the pages
+:ref:`options-map-user` and :ref:`options-map-labels`.
 
 The colors for flight plan leg course and heading indicator depend on
-settings for active flight plan leg which can be changed in the dialog
-``Options`` on tab :ref:`map`.
+settings for active flight plan leg which can be changed in the options dialog
+on pages :ref:`options-map-flight-plan`.
 
 +-----------------------------------+-------------------------------------+
 | Symbol                            | Description                         |
@@ -293,7 +289,7 @@ settings for active flight plan leg which can be changed in the dialog
 Aircraft and Ships
 ~~~~~~~~~~~~~~~~~~
 
-Labels for the user and AI aircraft can be configured ``Options`` on the tab :ref:`map-display-labels`.
+Labels for the user and AI aircraft can be configured in options on the page :ref:`options-map-labels`.
 
 Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 
@@ -315,7 +311,7 @@ Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 +------------------------------------------+------------------------------------------------------------------------------------------+
 | |Aircraft Track Needle|                  | Needle showing the current ground                                                        |
 |                                          | track of the aircraft. Aircraft                                                          |
-|                                          | nose shows heading. Can be disabled in ``Options`` on page :ref:`map-display-labels`.    |
+|                                          | nose shows heading. Can be disabled in the options on page :ref:`options-map-labels`.    |
 +------------------------------------------+------------------------------------------------------------------------------------------+
 | |Aircraft Altitude|                      | Selected altitude range arc.                                                             |
 |                                          | Position where the selected autopilot altitude will be reached.                          |
@@ -331,7 +327,7 @@ Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 +------------------------------------------+------------------------------------------------------------------------------------------+
 | |Trail|                                  | User aircraft trail.                                                                     |
 |                                          | Display can be toggled in menu ``View`` -> :ref:`show-aircraft-trail`                    |
-|                                          |                                                                                          |
+|                                          | See chapter :doc:`AIRCRAFTTRAIL`.                                                        |
 +------------------------------------------+------------------------------------------------------------------------------------------+
 | |Wind|                                   | Wind around the user aircraft                                                            |
 |                                          | with direction in degrees                                                                |
@@ -339,8 +335,8 @@ Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 +------------------------------------------+------------------------------------------------------------------------------------------+
 | |Small GA| |Jet| |Helicopter|            | AI or multiplayer aircraft.                                                              |
 | |Small GA Ground| |Jet Ground|           | Labels vary and can be customized                                                        |
-| |Helicopter Ground| |Ship|               | in ``Options`` on the tab                                                                |
-|                                          | :ref:`map-display`. The symbol                                                           |
+| |Helicopter Ground| |Ship|               | in the options dialog on the page                                                        |
+|                                          | :ref:`options-map-display`. The symbol                                                   |
 |                                          | depends on aircraft type (jet,                                                           |
 |                                          | piston/turboprop, helicopter or                                                          |
 |                                          | ship).                                                                                   |
@@ -365,7 +361,7 @@ The symbol is shown smaller if an airport has no runways. This is the
 case for some add-on airports that use another techniques like photo
 scenery to display runways.
 
-Labels and diagram elements for airports can be configured ``Options`` on the tab :ref:`map-display-labels`.
+Labels and diagram elements for airports can be configured in options on the page :ref:`options-map-labels`.
 
 Display of airports can be enabled or disabled in menu ``View`` -> :ref:`airports-menu`.
 
@@ -411,7 +407,8 @@ Display of airports can be enabled or disabled in menu ``View`` -> :ref:`airport
 |                                   | highlighted.                         |
 |                                   | You can disable this in              |
 |                                   | the options dialog on page           |
-|                                   | :ref:`map-display` by unchecking     |
+|                                   | :ref:`options-map-display` by        |
+|                                   | unchecking                           |
 |                                   | ``Highlight add-on airports``.       |
 +-----------------------------------+--------------------------------------+
 | |Airport Weather|                 | Weather at airport. See chapter      |
@@ -423,8 +420,9 @@ Display of airports can be enabled or disabled in menu ``View`` -> :ref:`airport
 |                                   | lighted runways (``L``) and          |
 |                                   | length of longest runway. The        |
 |                                   | text labels for airports can be      |
-|                                   | changed in the dialog ``Options``    |
-|                                   | on the tab :ref:`map-display-labels`.|
+|                                   | changed in the options dialog        |
+|                                   | on the page                          |
+|                                   | :ref:`options-map-labels`.           |
 +-----------------------------------+--------------------------------------+
 | |Airport Overview|                | Airport runway overview shown        |
 |                                   | before the full airport diagram      |
@@ -440,7 +438,7 @@ Runway, taxiway, helipad and apron colors indicate surface type. White
 is used for an unknown or invalid surface type given by an add-on
 developer.
 
-Diagram elements for can be enabled or disabled in ``Options`` on the tab :ref:`map-display-labels`.
+Diagram elements for can be enabled or disabled in the options dialog on the page :ref:`options-map-labels`.
 
 +-----------------------------------------------+---------------------------------------------------+
 | Symbol                                        | Description                                       |
@@ -487,8 +485,9 @@ Diagram elements for can be enabled or disabled in ``Options`` on the tab :ref:`
 +-----------------------------------------------+---------------------------------------------------+
 | |Parking Cargo|                               | Cargo ramp                                        |
 +-----------------------------------------------+---------------------------------------------------+
-| |Parking Mil|                                 | Military combat parking or cargo                  |
-|                                               | ramp.                                             |
+| |Parking Mil Combat|                          | Military combat parking.                          |
++-----------------------------------------------+---------------------------------------------------+
+| |Parking Mil Cargo|                           | Military cargo parking.                           |
 +-----------------------------------------------+---------------------------------------------------+
 | |Helipad| |Helipad Medical| |Helipad Square|  | Helipads. Red text indicates                      |
 |                                               | medical helipad. Color indicates                  |
@@ -631,8 +630,8 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 Flight Plan
 ~~~~~~~~~~~~~
 
-Flight plan display labels can be changed in dialog ``Options`` on
-tab :ref:`map-display-labels`. Look can be changed on ``Options`` page :ref:`map-display-flight-plan`.
+Flight plan display labels can be changed in the options dialog on
+page :ref:`options-map-labels`. Look can be changed on page :ref:`options-map-flight-plan`.
 
 See also :doc:`FLIGHTPLAN`.
 
@@ -763,7 +762,7 @@ Elevation Profile
 ~~~~~~~~~~~~~~~~~
 
 The colors and symbols of the elevation profile follow the style of the
-main map as set in the options dialog on tab :ref:`map-display`. Colors,
+main map as set in the options dialog on page :ref:`options-map-flight-plan`. Colors,
 patterns and symbols for airports, navaids, procedures, active and
 passed flight plan legs are the same. The profile display also follows
 other map settings like visibility of flight plan line, aircraft and
@@ -806,8 +805,9 @@ See :doc:`PROFILE` for more information.
 |                                   | plan. This is elevation plus 1,000  |
 |                                   | ft rounded up to the next 500       |
 |                                   | ft. The 1,000 ft buffer can be      |
-|                                   | changed in the dialog ``Options``   |
-|                                   | on the tab :ref:`flight-plan`       |
+|                                   | changed in the options dialog       |
+|                                   | on the page                         |
+|                                   | :ref:`options-flight-plan`.         |
 +-----------------------------------+-------------------------------------+
 | |Profile Segment Safe Alt|        | Minimum safe altitude for a         |
 |                                   | flight plan segment. The same       |
@@ -1153,7 +1153,8 @@ Winds Aloft
 .. |Parking GA| image:: ../images/legend_parking_ga_ramp.png
 .. |Parking Gate| image:: ../images/legend_parking_gate.png
 .. |Parking Gate no Jetway| image:: ../images/legend_parking_gate_no_jetway.png
-.. |Parking Mil| image:: ../images/legend_parking_mil.png
+.. |Parking Mil Combat| image:: ../images/legend_parking_mil_combat.png
+.. |Parking Mil Cargo| image:: ../images/legend_parking_mil_cargo.png
 .. |Parking Cargo| image:: ../images/legend_parking_ramp_cargo.png
 .. |Procedure Altitude| image:: ../images/legend_procinterceptalt.png
 .. |Procedure FAF| image:: ../images/legend_proc_faf.png

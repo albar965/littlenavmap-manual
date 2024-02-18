@@ -165,6 +165,11 @@ Furthermore MSFS does not support the selection of transitions and often inserts
 You can set a parking spot or fuel pad as starting position but note that runways and helipads as starting
 positions will be ignored by MSFS.
 
+.. note::
+
+    MSFS does not allow procedures and/or airways in VFR plans. You have to switch to IFR using :ref:`flight-plan-type`
+    before exporting such a plan. *Little Navmap* shows a warning if you try to export such a flight plan.
+
 See `FAQ - The flight plan does not show up correctly in MSFS <https://albar965.github.io/littlenavmap-faq.html#flightplan-msfs>`__
 for more information on problems.
 
@@ -261,7 +266,7 @@ You can open the FMS file in a text editor and fix this manually by replacing th
 
 
 .. code-block:: none
-   :caption: Corrected FMS file for both airports where the first occurences of ``ADEP`` and ``ADES`` were replaced with ``DEP`` and ``DES`` keywords for both airports:
+   :caption: Corrected FMS file for both airports where the first occurrences of ``ADEP`` and ``ADES`` were replaced with ``DEP`` and ``DES`` keywords for both airports:
 
    I
    1100 Version
@@ -702,20 +707,10 @@ The file should be saved to Path to
 Garmin exchange format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-GPX is not a flight plan format.
+GPX is not a flight plan format but can be used to export the trail of the flown aircraft trail and
+a simple waypoint list of the flight plan. It can be loaded my many GIS applications like Google Earth.
 
-The GPS Exchange Format can be read by Google Earth and most other GIS
-applications.
-
-The flight plan is embedded as a route and the flown aircraft trail as a
-track including simulator time and altitude.
-
-The route has departure and destination elevation and cruise altitude
-set for all waypoints. Waypoints of all procedures are included in the
-exported file. Note that the waypoints will not allow to reproduce all
-parts of a procedure like holds or procedure turns.
-
-The track contains the aircraft trail with flown altitude and timestamps.
+See chapter :doc:`AIRCRAFTTRAIL` and ref:`menu-gpx` for more information.
 
 .. _flight-plan-formats-html:
 

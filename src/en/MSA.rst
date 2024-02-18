@@ -31,7 +31,7 @@ See also :ref:`navaids-legend` in the map legend.
 .. figure:: ../images/msa_diagram.jpg
     :scale: 75%
 
-    To scale MSA diagram after selecting :ref:`add-msa-map`.
+    To scale MSA diagram after selecting :ref:`add-msa-map`. *Click image to enlarge.*
 
 
 .. |MSA Icon| image:: ../images/icon_msa.png

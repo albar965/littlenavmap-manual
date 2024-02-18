@@ -6,10 +6,10 @@ Map Themes
 Installing Map Themes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Additional map themes can be installed in the directory set in options on page :ref:`cache`,
+Additional map themes can be installed in the directory set in options on page :ref:`options-cache-and-files`,
 section :ref:`options-mapthemes`. You have to enter a valid path there before using map themes.
 
-New maps come as downloads with different directory structures. Some contain the base folder ``data\maps\earth`` in the downloaded archive some do not.
+New maps come as downloads with different directory structures. Some contain the base directory ``data\maps\earth`` in the downloaded archive some do not.
 Each map installed theme has to consist of a directory containing the related ``.dgml`` and other files.
 The name of the map directory and the ``.dgml`` file have to match. For example ``.../norway-topo/norway-topo.dgml``.
 
@@ -19,7 +19,7 @@ Note that you have to restart *Little Navmap* to see the new map themes.
 .. figure:: ../images/map_theme_options.jpg
         :scale: 70%
 
-        Select map theme folder ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
+        Select map theme directory ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
         shows a valid directoy and one map theme found. *Click image to enlarge.*
 
 .. figure:: ../images/map_theme.jpg
@@ -34,11 +34,21 @@ Note that you have to restart *Little Navmap* to see the new map themes.
 .. tip::
 
       Also check out the `Little Navmap Support Forum at
-      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
-      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
-      `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
+      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ and
+      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ for more map themes.
 
 
+.. note::
+
+   *Little Navmap* shows an error message on startup if map themes are broken or not installed properly.
+   A message will also be shown if a known discontinued map theme service is detected.
+
+   Fix the issues by removing the broken or duplicate map themes and restart *Little Navmap*.
+
+.. important::
+
+    Do not use the path ``.../data/maps/earth`` in the installation directory do install maps.
+    This location is deprecated.
 
 .. _creating-map-themes:
 

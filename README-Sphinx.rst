@@ -80,14 +80,14 @@ Build and conversion Scripts
   parameter. **Do not run this for the English and German branches which are already finished.**
 * ``sphinx_build.sh``: Compiles only the changed ``.rst``-files.
   Takes the target format (``html`` or ``epub``) as the first and a list of language codes as
-  following parameters. The results are stored in the folder ``build``.
+  following parameters. The results are stored in the directory ``build``.
   Run ``sphinx_build.sh html en de`` to generate  the English and German HTML documents, for example.
 * ``sphinx_rebuild.sh``: Same as ``sphinx_build.sh`` but also compiles unchanged files.
 * ``sphinx_rebuild_all.sh``: Compiles the HTML and ePUB documentation and converts
   ePUB to PDF and MOBI. Takes a list of language codes as a parameter. All results are stored in
-  the folder ``deploy``. Needs Calibre command line tools.
+  the directory ``deploy``. Needs Calibre command line tools.
 
-Folders
+Directories
 ---------------------------------
 
 All except the listed folders here belong to the old Gitbook Markown documentation and will be

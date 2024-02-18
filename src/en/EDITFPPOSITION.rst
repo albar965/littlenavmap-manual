@@ -56,7 +56,7 @@ Latitude and Longitude
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 You can also edit the coordinates directly in this dialog besides using
-the drag and drop method :doc:`MAPFPEDIT`. This can
+the click-and-drag method :doc:`MAPFPEDIT`. This can
 be useful if you'd like to add waypoints with well known coordinates
 like visual reporting points.
 

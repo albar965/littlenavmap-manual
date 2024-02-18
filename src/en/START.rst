@@ -39,8 +39,10 @@ for future starts by pressing ``Do not show again`` but keep at least the messag
 
 .. tip::
 
-   If you'd like to use a **dark mode** when flying: Enable this in menu ``Window`` -> ``Styles`` -> ``Night``
-   The darkness of the map window can be adjusted in options on page ``Map Display User`` -> ``Map dimming in night style``.
+   If you'd like to use a **dark mode** when flying:
+   Enable this in menu ``Window`` -> ``Style`` -> ``Dark`` (:ref:`window-styles`).
+   The darkness of the map window can be adjusted in options on page :ref:`options-map`.
+   Look for section ``Map dimming in dark style``.
    See :ref:`window-styles`.
 
 Preparing
@@ -148,7 +150,7 @@ Useful Links
 
 `Little Navmap Downloads - Aircraft Performance and more <https://www.littlenavmap.org/downloads/>`__.
 
-`New Maps for Little Navmap at Avsim <https://www.avsim.com/forums/topic/627225-new-maps-for-lnm-updated/>`__.
+`New Maps for Little Navmap at Avsim <https://www.avsim.com/forums/topic/627225-new-maps-for-lnm-update-4/>`__.
 
 *Little Navmap* related projects and more at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
 

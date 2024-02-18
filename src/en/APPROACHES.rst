@@ -95,12 +95,12 @@ respective context menu. This will show the tab :doc:`SEARCHPROCS` in the dock w
 Insert a procedure into the flight plan using the context menu in the
 procedure tree view.
 Right click on a procedure, a procedure leg or a transition and select
-``Use airport and procedure as Departure``, ``Use airport and procedure as Destiation`` or
+``Use airport and procedure as Departure``, ``Use airport and procedure as Destination`` or
 ``Insert Procedure into Flight Plan`` (substitute ``procedure`` and ``airport`` with the actual names).
 
 You can also add a procedure from the map if using :ref:`procedures-highlights` or :ref:`button-preview-all-procs`.
 Right click on any waypoint of a procedure (not the leg line) and select ``Use airport and procedure as Departure``,
-``Use airport and procedure as Destiation`` or ``Insert Procedure into Flight Plan``.
+``Use airport and procedure as Destination`` or ``Insert Procedure into Flight Plan``.
 
 .. important::
 

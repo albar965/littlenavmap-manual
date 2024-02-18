@@ -119,12 +119,27 @@ Further formats for online airspaces are GEOJSON which can be downloaded for VAT
 
 The extension is ``.geojson``.
 
+.. _load-scenery-library-ivao-json:
+
 IVAO JSON
 '''''''''''''''''''''''''''
 
 IVAO boundaries in JSON format can be downloaded at `Little Navmap Downloads - Airspace Boundaries <https://www.littlenavmap.org/downloads/Airspace%20Boundaries/>`__.
 
 The extension is ``.json``.
+
+Note that these files do not match all airspace types. You will still see circular airspaces for towers, for example.
+
+.. _load-scenery-library-vatsim-json:
+
+VATSIM JSON
+'''''''''''''''''''''''''''
+
+You can load the files
+`firboundaries.json <https://map.vatsim.net/livedata/firboundaries.json>`__ and
+`traconboundaries.json <https://map.vatsim.net/livedata/traconboundaries.json>`__ into the
+user airspace library of *Little Navmap* to get more real boundaries for VATSIM online centers
+instead of the generic circles.
 
 .. _load-scenery-library-xplane-airspaces:
 
@@ -165,7 +180,8 @@ when connected and are only stored in a temporary database which is
 deleted on exit.
 
 *Little Navmap* can use real center boundaries instead of the circular
-airspaces. First you have to enable one or both options in :ref:`map-display-online` under
+airspaces. First you have to enable one or both options in the options dialog on
+page :ref:`options-map-online` under
 ``Online Center Boundary Lookup in User Airspaces``. These are enabled
 per default.
 

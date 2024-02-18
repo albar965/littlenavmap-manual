@@ -4,6 +4,8 @@ Statusbar
 The statusbar at the bottom of the window shows various information.
 Shown or hide it in the menu ``Window`` -> :ref:`main-statusbar-options`.
 
+Status bar fields are compacted after a timeout if the mouse cursor is not inside the map, i.e. the coordinate display is empty.
+
 **The statusbar at the bottom of the main window shows various indications (from left to right):**
 
 Messages, last action or quick help
@@ -56,11 +58,12 @@ Zoom distance
 
 Coordinates
    at cursor position on map as latitude and longitude depending on
-   selected unit in the dialog ``Options`` on page :ref:`units`.
+   selected unit in the options dialog on page :ref:`options-units`.
+   The status bar is compacted after a timeout if this field is empty since the mouse cursor is not inside the map.
 
    -  Ground elevation below the cursor after a short delay if the
       `GLOBE <https://ngdc.noaa.gov/mgg/topo/globe.html>`__ offline
-      elevation data is selected. See :ref:`cache-elevation`.
+      elevation data is selected. See :doc:`GLOBE`.
    -  Magnetic declination at the cursor position in degrees West or
       East. See also :doc:`MAGVAR` for more information.
 

@@ -72,12 +72,14 @@ X-Plane
 You have to install the included *Little Xpconnect* plugin to use
 *Little Navmap* as a moving map with X-Plane 11 and X-Plane 12.
 
-The plugin is bundled with *Little Navmap* but can also be downloaded
-separately. See :doc:`XPCONNECT` for more information and installation instructions.
+The plugin is bundled with *Little Navmap*. Do not try to download it from other places.
+See :doc:`XPCONNECT` for more information and installation instructions.
 
 Select the X-Plane tab to connect.
 
 You will see an :warning-style:`orange warning message` if you use a FSX, P3D or MSFS scenery library when connecting to X-Plane.
+
+You will also see a warning message if you use an outdated version.
 
 .. _remote-connection:
 
@@ -91,10 +93,13 @@ flying computer.
 .. note::
 
      Airport weather information and winds aloft cannot be transferred across a remote
-     connection from X-Plane. You can only see the current weather around the user aircraft in the ``Simulator Aircraft`` window on the :ref:`progress-info`.
+     connection from X-Plane. You can only see the current weather around the user aircraft in
+     the ``Simulator Aircraft`` window on the :ref:`progress-info`.
 
-     Share files and directories for X-Plane across computers and adjust loading path in ``Options`` on page :ref:`cache` for remote setups.
-     *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib`` files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
+     Share files and directories for X-Plane across computers and adjust loading
+     path in options on page :ref:`options-weather-files` for remote setups.
+     *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib``
+     files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
      applies updates immediately.
 
 See :doc:`NETWORK` on information how to set up a remote/networked connection.
@@ -105,7 +110,7 @@ Start *Little Navconnect* on the Flying Computer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Little Navconnect* is bundled together with the *Little Navmap*
-download archive. Start *Little Navconnect* (``littlenavconnect.exe`` in Windows)
+download archive. Do not try to download it separately. Start *Little Navconnect* (``littlenavconnect.exe`` in Windows)
 on the computer running the simulator and take note of the message that
 is printed in the logging window. You only need the colored values which
 tell you the name and address of the computer running the simulator. You
@@ -125,7 +130,7 @@ computers.
    running and waiting for a Flight Simulator. It is running on the
    computer ``win10.fritz.box`` with the IP address ``192.168.2.13``.
 
-Change the port in *Little Navconnect*'s ``Options`` dialog if you see
+Change the port in *Little Navconnect*'s options dialog if you see
 an error message like shown below:
 
 ``[2016-07-27 16:45:35] Unable to start the server: The bound address is already in use.``

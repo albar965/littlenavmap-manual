@@ -44,7 +44,8 @@ These instructions apply to Windows, macOS and Linux computers equally.
    fully populated ready-to-user database file.**
 
 X-Plane
-   Share flight plan and weather directories for X-Plane across computers and adjust the loading path in ``Options`` on page :ref:`cache` for remote setups.
+   Share flight plan and weather directories for X-Plane across computers and adjust the loading path
+   in the options dialog on page :ref:`options-cache-and-files` for remote setups.
 
    *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib`` files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
    applies updates immediately.

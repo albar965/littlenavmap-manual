@@ -35,7 +35,7 @@ Buttons
 Options
 ~~~~~~~
 
-Update check settings can be changed in the options dialog on the page :ref:`startup`.
+Update check settings can be changed in the options dialog on the page :ref:`options-startup-and-updates`.
 
 Check for Updates
 ^^^^^^^^^^^^^^^^^
@@ -90,7 +90,7 @@ dialog.
 
 .. figure:: ../images/updateoptions.jpg
 
-        Update notification settings in dialog ``Options``.
+        Update notification settings in the options dialog.
 
 .. |Checking for Updates| image:: ../images/icon_revert.png
 

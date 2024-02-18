@@ -41,15 +41,15 @@ MSFS does not provide weather information at all.
 X-Plane
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Weather information like winds aloft and airport METARs are read from files in the X-Plane installation folder.
+Weather information like winds aloft and airport METARs are read from files in the X-Plane installation directory.
 
 Do the following to get access to X-Plane weather files:
 
-#.  Share the weather folders on the flying computer.
-    This is either the X-Plane 11 base folder containing the files ``global_winds.grib`` and ``METAR.rwx`` or
-    the folder ``Output/real weather`` in the X-Plane 12 installation.
-#.  Open the *Little Navmap* options dialog and go to page :ref:`weather-files`.
-    Change the path to the network share containing the two X-Plane 11 files or the folder for the X-Plane 12 weather files.
+#.  Share the weather directories on the flying computer.
+    This is either the X-Plane 11 base directory containing the files ``global_winds.grib`` and ``METAR.rwx`` or
+    the directory ``Output/real weather`` in the X-Plane 12 installation.
+#.  Open the *Little Navmap* options dialog and go to page :ref:`options-weather-files`.
+    Change the path to the network share containing the two X-Plane 11 files or the directory for the X-Plane 12 weather files.
 
 Weather should update automatically in *Little Navmap* once done.
 

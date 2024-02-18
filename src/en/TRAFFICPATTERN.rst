@@ -35,8 +35,10 @@ Create Traffic Pattern
    FSX or P3D.
 -  ``Base 45° after threshold``: Calculates the final leg length
    automatically when checked.
--  ``Base leg to runway threshold``: Length of the final leg. Measured
+-  ``Base leg to runway threshold``: Enabled if ``Base 45° after threshold`` is checked. Length of the final leg. Measured
    from turn to final to the runway threshold.
+-  ``Departure from threshold``: Enabled if ``Base 45° after threshold`` is checked. Distance from runway threshold to turn to crosswind.
+   Measured from the start of the runway, i.e. the end of the final leg.
 -  ``Downwind to runway``: Parallel distance from downwind leg to
    runway.
 -  ``Pattern altitude``: Pattern altitude above airport elevation. This

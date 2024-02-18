@@ -105,7 +105,7 @@ The dialog window ``Load Scenery Library`` has the following controls:
 -  ``Flight Simulator Base Path`` and ``Select ...``: The path to the
    base directory of the selected flight simulator. This usually the
    directory containing the ``FSX.exe``, ``Prepar3D.exe`` or ``x-plane.exe``. For MSFS this is the
-   folder ``Packages`` containing the folder ``Community``.
+   directory ``Packages`` containing ``Community``.
 -  ``Scenery Configuration File`` and ``Select ...`` (only FSX and P3D):
    The file ``scenery.cfg`` of the simulator. You can also create copies
    of the original file, modify them by removing or adding sceneries and
@@ -124,7 +124,7 @@ The dialog window ``Load Scenery Library`` has the following controls:
 -  ``Close``: Keep all settings and changes in the dialog and close it
    without loading anything.
 
-This dialog will also show a hint if folders are excluded or included in loading.
+This dialog will also show a hint if directories are excluded or included in loading.
 This helps to avoid issues by unintended directory exclusions.
 
 **FSX and Prepar3D:** The base path and the ``scenery.cfg`` path will be
@@ -147,7 +147,7 @@ library of another X-Plane installation.
 Loading a scenery library can take from 2 to 10 minutes depending on
 your setup and amount of scenery add-ons. You can speed this up by
 excluding directories containing neither airport nor navigation data in
-the ``Options`` dialog on the page :ref:`scenery-library-database`.
+the options dialog on the page :ref:`options-scenery-library-database`.
 
 You can put the progress dialog window into the background and continue flight planning while loading.
 
@@ -210,7 +210,7 @@ Linking Scenery
 Note that this functionality is limited to
 the MSFS ``Community`` and X-Plane ``Custom Scenery`` directories.
 
-Any directories added in the ``Options`` dialog on the page :ref:`scenery-library-database` also support linking
+Any directories added in the options dialog on the page :ref:`options-scenery-library-database` also support linking
 
 .. _load-scenery-library-addons:
 
@@ -228,7 +228,7 @@ directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to 
 Exceptions are ``fs-base``, ``fs-base-genericairports`` and ``fs-base-nav``.
 
 Add-on airports are highlighted on the map with a yellow ring which can be disabled
-in the options dialog on page :ref:`map-display`.
+in the options dialog on page :ref:`options-map-display`.
 
 Using emphasized (bold and underlined) text highlights add-on airports in the search result table,
 flight plan table, information windows and map tooltips.
@@ -236,8 +236,8 @@ flight plan table, information windows and map tooltips.
 If an add-on only corrects airport elevations or navigation data, it
 might be undesirable to display the updated airports as add-on airports
 on the map. You can exclude directories populated by this add-on from
-the add-on recognition in the ``Options`` dialog on the
-page :ref:`scenery-library-database`.
+the add-on recognition in the options dialog on the
+page :ref:`options-scenery-library-database`.
 
 
 .. _load-scenery-library-dialog-msfs-apt-navdata:

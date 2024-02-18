@@ -17,6 +17,8 @@ Note that not all simulators or add-ons support this kind of flight plans.
 You need to have the GLOBE elevation data installed to get the correct altitudes for arbitrary
 start or departure points. See :ref:`cache-elevation` for installation instructions.
 
+.. _flight-plan-header:
+
 Header
 ~~~~~~~~~~
 
@@ -37,12 +39,14 @@ loaded that has at least climb, cruise and descent speeds set.
 The ARINC name of the approach procedure which is needed by some FMCs is
 shown in parentheses.
 
-The header can be customized using :ref:`flight-plan-table-columns-select`.
+Further error messages are shown in the :ref:`flight-plan-table-err-footer`.
+
+The header can be customized using :ref:`flight-plan-table-columns-select` and the font
+size can be adjusted in options on page :ref:`options-display-and-text`.
 
 .. figure:: ../images/flightplanheader.jpg
 
       Header of a flight plan with all labels enabled.
-
 
 .. _flight-plan-table:
 
@@ -93,6 +97,8 @@ Table Columns
 ^^^^^^^^^^^^^
 
 Hovering the mouse over the table header shows more information about the columns in a tooltip.
+Note that the shown units will differ if changed in options on page :ref:`options-units`.
+You can show or hide the columns from main menu ``Tools`` -> :ref:`flight-plan-table-display-options`.
 
 -  ``Ident``: ICAO ident of the navaid or airport. The ident can be
    suffixed as shown below:
@@ -120,7 +126,7 @@ Hovering the mouse over the table header shows more information about the column
    -  ``J`` Jet or high altitude airway
    -  ``B`` Both
 
--  ``Restriction``:
+-  ``Restriction ft/kts/angle``:
 
    -  For airways:
 
@@ -142,10 +148,10 @@ Hovering the mouse over the table header shows more information about the column
 
 -  ``Type``: Type of a radio navaid. Shows ``ILS`` or ``LOC`` for ILS or
    localizer approaches on the last runway leg.
--  ``Freq.``: Frequency or channel of a radio navaid. Also shows ILS or
+-  ``Freq. MHz/kHz/Cha.``: Frequency or channel of a radio navaid. Also shows ILS or
    localizer frequency for corresponding approaches on the last runway
    leg.
--  ``Range``: Range of a radio navaid if available.
+-  ``Range NM``: Range of a radio navaid if available.
 -  ``Course °M``: This is the start course of the great circle
    route connecting the two waypoints of the leg. Use this course at
    departure if you travel long distances without navaids. Be aware that
@@ -154,24 +160,25 @@ Hovering the mouse over the table header shows more information about the column
 -  ``Course °T``: The same as the field
    above but using true course. Use this in areas with high magnetic
    declination.
--  ``Distance``: Distance of the flight plan leg.
--  ``Remaining``: Remaining distance to destination airport or procedure
+-  ``Distance NM``: Distance of the flight plan leg.
+-  ``Remaining NM``: Remaining distance to destination airport or procedure
    end point (usually the runway).
--  ``Leg Time``: Flying time for this leg. Calculated based on the
+-  ``Leg Time hh:mm``: Flying time for this leg. Calculated based on the
    selected aircraft performance profile (see :doc:`AIRCRAFTPERF`). This is a static value and not
    updated while flying. Empty if performance calculation failed.
--  ``ETA``: Estimated time of arrival. This is a static value and not
+-  ``ETA hh:mm``: Estimated time of arrival. This is a static value and not
    updated while flying. Calculated based on the selected aircraft
    performance profile. Empty if performance calculation failed.
--  ``Fuel Rem.``: Fuel remaining at waypoint, once for volume and once
+-  ``Fuel Rem. lbs`` and ``Fuel Rem. gal``: Fuel remaining at waypoint, once for volume and once
    for weight. This is a static value and not updated while flying.
    Calculated based on the selected aircraft performance profile. Empty
    if aircraft performance profile has no fuel consumption numbers set.
--  ``Wind``: Magnetic wind direction and speed at the waypoint.
--  ``Head- or Tailwind``: Wind at waypoint. Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
--  ``Altitude``: Calculated altitude at waypoint. Uses aircraft performance to determine altitude.
--  ``Leg Safe Alt.``: Leg safe altitude. Same as in :doc:`PROFILE`.
--  ``Latitude`` and ``Longitude``: Coordinates in selected format from options on page :ref:`units`.
+-  ``Wind °M/kts``: Magnetic wind direction and speed at the waypoint.
+-  ``Head- or Tailwind kts``: Wind at waypoint. Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
+-  ``Altitude ft``: Calculated altitude at waypoint. Uses aircraft performance to determine altitude.
+-  ``Leg Safe Alt. ft``: Leg safe altitude. Same as in :doc:`PROFILE`.
+-  ``Latitude`` and ``Longitude``: Coordinates in selected format from options on page :ref:`options-units`.
+-  ``Mag. Decl.°``: Calibrated magnetic declination at a VOR or real magnetic declination at a waypoint. See :doc:`MAGVAR` for more information.
 -  ``Related Ident/Freq./Dist./Bearing``: Related navaid needed for procedures. Shows ident, frequency, distance and bearing as radial.
 -  ``Remarks``: Turn instructions, flyover or related navaid for procedure legs.
    Also shows user remarks that can be edited with :ref:`edit-name-of-user-waypoint`.
@@ -182,8 +189,6 @@ Hovering the mouse over the table header shows more information about the column
 
         The ``Flight Planning`` dock window. The flight
         plan uses a SID for departure and a STAR, a transition and an approach for arrival. *Click image to enlarge.*
-
-
 
 .. note::
 
@@ -316,8 +321,8 @@ Same as :ref:`show-information-map` in the map context menu.
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Show either the airport diagram or zooms to the navaid on the map. The
-zoom distance can be changed in the dialog ``Options`` on the tab
-:ref:`map-navigation`.
+zoom distance can be changed in the options dialog on the page
+:ref:`options-map-navigation`.
 
 .. _set-departure-runway-flightplan:
 
@@ -560,14 +565,15 @@ See chapter :ref:`flight-plan-table-columns-select` above.
 Flight Plan Remarks
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a free text remark for the flight plan.
+Adds a free text remarks field for the flight plan.
 
-Shows the loaded performance file and selected scenery data when saving the flight plan file.
+Shows the loaded performance file and selected scenery data that was used when saving the flight plan file.
 
 Note that this field saved is saved only when using the *Little Navmap* LNMPLN format (:ref:`flight-plan-formats-lnmpln`).
 
-See also :doc:`REMARKS`.
+The text size can be changed in options on page :ref:`options-display-and-text`.
 
+See also chapter :doc:`REMARKS` for more information.
 
 .. |Activate Flight Plan Leg| image:: ../images/icon_routeactiveleg.png
 .. |Add Airport Traffic Pattern| image:: ../images/icon_trafficpattern.png

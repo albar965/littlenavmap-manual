@@ -12,7 +12,7 @@ frequencies, flight plans and much more are displayed world wide without
 limits like distance to the user aircraft.
 
 Access to online networks can be enabled and configured on
-:ref:`online-flying`.
+options page :ref:`options-online-flying`.
 Predefined options for the well known networks are available as well as
 freely configurable ones.
 
@@ -26,7 +26,7 @@ places:**
    ``Online Server``.
 -  Information dock window, tabs ``Online Clients`` and
    ``Online Centers``.
--  Options dialog, page :ref:`online-flying`.
+-  Options dialog, page :ref:`options-online-flying`.
 
 See :doc:`SEARCH` for general information on the search tabs.
 
@@ -44,8 +44,9 @@ into the simulator by the various online clients so they are visible
 in the sim.
 
 Therefore, the user aircraft and other client aircraft can appear
-duplicated on the map. *Little Navmap* removes these duplicates by matching the position, speed and other parameters against each other.
-The de-duplication can be disabled in dialog ``Options`` on page :ref:`online-flying`.
+duplicated on the map. *Little Navmap* removes these duplicates by matching the position,
+speed and other parameters against each other.
+The de-duplication can be disabled in the options dialog on page :ref:`options-online-flying`.
 
 .. _online-networks-mapdisplay:
 
@@ -114,7 +115,7 @@ menus on the airspace toolbar or sub-menu
 -  ``Departure:`` Uses the visual range.
 
 The size of the circle shapes and the lookup type can be changed in the options dialog.
-See :ref:`map-display-online`.
+See options on page :ref:`options-map-online`.
 
 You can also assign centers to a boundary shape using imported OpenAir, JSON or GEOJSON
 airspaces from the user airspace database. See :ref:`load-scenery-library-online-airspaces` for more

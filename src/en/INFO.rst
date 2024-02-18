@@ -20,7 +20,7 @@ is shown for airports, navaids and userpoints if connected to a
 simulator and if the distance is below 500 NM.
 
 The display of additional units for fuel and weight as well as true
-course can be enabled in the options dialog on tab :ref:`units`.
+course can be enabled in the options dialog on page :ref:`options-units`.
 
 .. _windows-tabs:
 
@@ -84,7 +84,7 @@ several files from different add-on sceneries or navdata updates.
 
 .. note::
 
-    The links shown as plain text with an additional remark like ``File not found`` if the file or folder is missing.
+    The links shown as plain text with an additional remark like ``File not found`` if the file or directory is missing.
     This can happen if you copy databases between computers. This is only a remark has no further consequences.
 
 Tabs in Information Dock Window

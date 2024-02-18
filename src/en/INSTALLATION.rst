@@ -4,6 +4,8 @@ Installation
 *Little Navmap* for **Windows** is available as a 64-bit or 32-bit application and was tested with
 Windows 10 and Windows 11. You can download either an installer package or a Zip-archive.
 
+Using the installation package ist strongly recommended on Windows since it takes care of obsolte files and others.
+
 Apple **macOS** is supported from macOS High Sierra 10.13 or later.
 You need Rosetta to run *Little Navmap* on Apple Silicon / M1 computers with the
 exception of :doc:`XPCONNECT` which is available as a native X-Plane plugin.
@@ -15,7 +17,7 @@ which has important notes and describes the changes between versions.
 
 .. warning::
 
-    Do not install *Little Navmap* in the MSFS folder ``Community`` or in the X-Plane ``plugins`` folder.
+    Do not install *Little Navmap* in the MSFS directory ``Community`` or in the X-Plane ``plugins`` directory.
 
 .. important::
 
@@ -24,11 +26,13 @@ which has important notes and describes the changes between versions.
 
 .. _installation-updating:
 
-Updating
-~~~~~~~~
+Updating manually
+~~~~~~~~~~~~~~~~~~~~~~~
+
+This chapter does not apply if you use the Windows installer.
 
 Delete all installed files of a previous *Little Navmap* version before
-installing a new version or install into a new folder.
+installing a new version or install into a new directory.
 All files from the previous ZIP archive can be deleted since settings are stored in separate directories.
 
 .. warning::
@@ -71,11 +75,11 @@ Installer
 You can use the self-installing package based on `Inno Setup <https://jrsoftware.org/isinfo.php>`__ to install *Little Navmap* on your computer.
 The installer packages are named ``LittleNavmap-...-Install.exe`` and contain the same programs and files as the Zip archives.
 
-The installation process always installs the program for all users in a protected directory like ``C:\Programs``.
+The installation process always installs the program for all users in a protected directory like ``C:\Program Files`` (64-bit) or ``C:\Program Files (x86)`` (32-bit).
 You can manually select another directory but I recommend to leave the default location.
 Both the 32-bit and the 64-bit versions can be installed in parallel.
 
-There is no need to uninstall the program when updating.
+There is no need to uninstall the program before when updating.
 The installation process automatically detects the last selected directory and overwrites the current installation.
 
 File types can optionally be associated with *Little Navmap* which allows to load a flight plan by double
@@ -89,11 +93,11 @@ Start menu entries for all included programs as well as the most important files
 
 .. note::
 
-     There is no need to install or modify any files in the installation folder for the
+     There is no need to install or modify any files in the installation directory for the
      webserver or map themes.
 
-     See :ref:`web-server` for information how to change the root folder and
-     :doc:`MAPTHEMES` for information how to set the map theme folder and how to install additional map
+     See options page :ref:`options-web-server` for information how to change the root directory and
+     :doc:`MAPTHEMES` for information how to set the map theme directory and how to install additional map
      themes.
 
 Uninstall
@@ -109,7 +113,7 @@ Files in directories like ``Documents\Little Navmap`` are not deleted.
 
    Note that this step also removes the userpoint database as well as the logbook and cannot be undone.
 
-The two folders which can be deleted are:
+The two directories which can be deleted are:
 
 -  Settings and databases: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
 -  Online map cache: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth``
@@ -130,7 +134,7 @@ in Windows and involves a simple Zip extraction of files.
     problems might occur like replaced or deleted files.
 
     There is no need to run *Little Navmap* as administrator.
-    Adapt folder permissions if you have to export flight plans to protected places.
+    Adapt directory permissions if you have to export flight plans to protected places.
 
 Extract the Zip archive into a directory like ``C:\Users\YOURNAME\Documents\Little Navmap`` or
 ``C:\Users\YOURNAME\Programs\Little Navmap``.
@@ -145,8 +149,8 @@ another file manager used on your operating system to do this.
 Uninstall
 '''''''''''''''''''''''''''''''''''''''
 
-Simply remove the program folder.
-See :doc:`FILES` for more settings, cache and database folders if you'd like to completely remove *Little Navmap*.
+Simply remove the program directory.
+See :doc:`FILES` for more settings, cache and database directories if you'd like to completely remove *Little Navmap*.
 
 SimConnect
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -227,8 +231,7 @@ See the `Little Navmap - Frequently asked Questions <https://albar965.github.io/
 Additional Programs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *Little Navmap* Zip archive contains two additional
-folders:
+The *Little Navmap* Zip archive contains two additional directories:
 
 ``Little Navconnect``: A complete copy of the program allowing remote
 flight simulator connections for FSX, P3D, MSFS and X-Plane.
@@ -256,7 +259,7 @@ Portable Execution
 
 Running *Little Navmap* in portable mode instructs the program to place all settings, databases and
 cached files into the installation directory (i.e. the directory containing the executable file).
-No folders or files are created on the computer running the program from a memory stick, for
+No directories or files are created on the computer running the program from a memory stick, for
 example.
 
 You can also use the portable mode to test new *Little Navmap* releases without affecting your
@@ -268,19 +271,31 @@ Scripts allow to run *Little Navmap* in portable mode by passing certain command
 - macOS: ``Little Navmap Portable.command``
 - Linux: ``Little Navmap Portable.sh``
 
-Three folders are created when running these scripts: ``Little Navmap Cache`` for the online map image tiles,
+Three directories are created when running these scripts: ``Little Navmap Cache`` for the online map image tiles,
 ``Little Navmap Logs`` for log files and ``Little Navmap Settings`` used to store settings and databases.
 
 See :doc:`COMMANDLINE` for more information.
 
+.. note::
+
+   You have to install updates to the navigation database manually if you run in portable mode.
+   Replace and/or update the file
+   ``YOURINSTALLATIONFOLDER/Little Navmap Settings/little_navmap_db/little_navmap_navigraph.sqlite``
+   to update you navigation database.
+
+.. important::
+
+  You have to download and extract one of the Zip archives of *Little Navmap* to use this functionality on Windows.
+  It will not work if you use one of the Windows installers.
+
 Multiple Installations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Do not run more than one *Little Navmap* instances using the same settings folder in parallel. This
+Do not run more than one *Little Navmap* instances using the same settings directory in parallel. This
 can result in crashes when accessing the databases.
 Running several instances is prevented by the program on Windows but not on Linux and macOS.
 
-You can instruct *Little Navmap* to create and use a different settings folder by passing the
+You can instruct *Little Navmap* to create and use a different settings directory by passing the
 parameter ``--settings-directory`` to the executable when starting up. This is supported for all operating systems.
 
 This parameter instructs the program to use the given directory instead of ``ABarthel``
@@ -291,7 +306,7 @@ Note that this does not override the full path and spaces are replaced with unde
 
 **Example:**
 
-How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings folder on Windows:
+How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings directory on Windows:
 
 #.  Right click on the ``littlenavmap.exe`` file (extension might be hidden in Windows explorer) and select ``Create Shortcut``.
 #.  Right click on the newly created shortcut and edit the shortcut properties.
@@ -300,7 +315,7 @@ How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings f
 
 .. figure:: ../images/winshortcut.jpg
 
-          Contents of the link properties dialog for the example above. Extended target folder input field to have the whole path visible.
+          Contents of the link properties dialog for the example above. Extended target directory input field to have the whole path visible.
 
 
 .. |Little Navmap Icon| image:: ../images/littlenavmap.svg

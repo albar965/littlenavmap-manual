@@ -267,7 +267,7 @@ of the flight plan:
 
    The flight plan cruise altitude is automatically adjusted according to
    the hemispherical rule (the rule can be changed in ``Tools`` ->
-   ``Options`` |Options| on the page :ref:`flight-plan`), the altitude
+   ``Options`` |Options| on the page :ref:`options-flight-plan`), the altitude
    restrictions of the airways and the flight plan type (``VFR`` or
    ``IFR``). You can see the minimum altitude for each airway segment in
    the flight plan table in the column ``Restriction`` (see :ref:`flight-plan-table-columns`).

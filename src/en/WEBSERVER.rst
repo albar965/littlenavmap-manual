@@ -12,7 +12,7 @@ settings or calculate a flight plan, for example.
 The web server is not started per default. You can start it in the menu ``Tools`` ->
 :ref:`run-webserver` and then open its page by selecting :ref:`open-webserver`.
 
-Port and other settings can be changed in options on page :ref:`web-server`.
+Port and other settings can be changed in options on page :ref:`options-web-server`.
 
 You need to adjust your router settings to access the *Little Navmap* webserver from the internet
 outside your local network. Check out your router manual how to do this.
@@ -131,6 +131,32 @@ HTTP requests.
 See directory ``.../Little Navmap/web/test.html`` or
 ``http://localhost:8965/test.html`` when running the webserver for
 examples.
+
+
+WebAPI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A REST interface is available to get feature information and map images in JSON format.
+See the documentation here
+`GitHub - littlenavmap/web/webapi.yaml <https://github.com/albar965/littlenavmap/blob/release/3.0/web/webapi.yaml>`__
+for more information.
+
+**Examples:**
+
+You have to run the *Little Navmap* webserver for these examples to work. See :ref:`run-webserver`.
+
+-  Get airport information about EDDM: `http://localhost:8965/api/airport/info?ident=eddm <http://localhost:8965/api/airport/info?ident=eddm>`__.
+-  Get all map features in the given rectangle: `http://localhost:8965/api/map/features?toplat=50&bottomlat=49&leftlon=8&rightlon=9 <http://localhost:8965/api/map/features?toplat=50&bottomlat=49&leftlon=8&rightlon=9>`__.
+
+
+OpenLayers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See
+`GitHub - KOKAProduktion - littlenavmap-openlayers <https://github.com/KOKAProduktion/littlenavmap-openlayers>`__ for information about using *Little Navmap*
+as a map tile server.
+
+See `http://localhost:8965/ol/index.html <http://localhost:8965/ol/index.html>`__ for an example application.
 
 .. |Zoom| image:: ../images/icon_zoomin.png
 .. |Zoom out| image:: ../images/icon_zoomout.png

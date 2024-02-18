@@ -50,7 +50,30 @@ from a Navigraph or X-Plane scenery database.
        :scale: 80%
 
        Showing a transition and a RNAV approach. Start and
-       endpoint of a transition leg are highlighted on the map. Screenshot based on *Little Navmap* 2.6.
+       endpoint of a transition leg are highlighted on the map. Screenshot based on *Little Navmap* 2.6. *Click image to enlarge.*
+
+.. _procedure-runways:
+
+Runways
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Runways are assgined automatically for STAR and approaches if possible to avoid error messages about runway
+mismatches. This means that a selected STAR runway changes automatically to the one used by a
+newly selected approach if the STAR allows multiple runways.
+
+The runway of a multi-runway STAR will also be automatically selected for an approach runway
+already inserted avoiding the runway selection dialog.
+
+.. _procedure-preferred-runways:
+
+Preferred Runways
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A preferred runway indication is shown in the header label if available.
+
+The indication is based on the selection in menu ``Weather`` -> :ref:`airport-weather-source` and shows the best
+runways for wind and weather source. Head and crosswind for each runway in
+the selection table.
 
 .. _procedure-preview:
 
@@ -74,7 +97,8 @@ preview from the map context menu (right click on a navaid) or the :ref:`procedu
     :scale: 80%
 
     Previewing a SID at LIPO with tooltip information on procedure and related waypoint.
-    The preview also uses the ``Transparent line`` setting for flight plans in ``Options`` on page :ref:`flight-plan`.
+    The preview also uses the ``Transparent line`` setting for flight plans in the options dialog
+    on page :ref:`options-map-flight-plan`. *Click image to enlarge.*
 
 .. _procedure-tree:
 
@@ -88,7 +112,7 @@ Bold red text indicates an error in the leg. The procedure is incomplete
 and should not be used in a flight plan. *Little Navmap* might refuse to use the procedure
 depending on the error since inconsistencies can result in crashes.
 
--  ``Description``: Description and type. A suffix ``(T)`` indicates present transitions.
+-  ``Description``: Description, type and number of available transitions.
    Parallel runways are indicated by a list of runways like ``STAR 07L, 07R, 07C``.
    The suffix ``All`` is added if a procedure applies to all runways of an airport.
 -  ``Ident``: Ident of the initial fix or name of SID or STAR. Ident name of a procedure leg if expanded.
@@ -96,21 +120,15 @@ depending on the error since inconsistencies can result in crashes.
 -  ``Restriction``: Either procedure altitude restriction, procedure speed limit or a required vertical path angle.
    The following altitude restrictions exist for procedures:
 
-   -  **Number only:** Fly at altitude or speed. Example: ``5,400`` or
-      ``210``.
-   -  **Prefix** ``A``: Fly at or above altitude or speed. Example:
-      ``A 1,800``.
-   -  **Prefix** ``B``: Fly at or below altitude or speed. Example:
-      ``B 10,000`` or ``B 220``.
-   -  **Range:** Fly at or above altitude one and at or below altitude
-      two. Example: ``A 8,000, B 10,000``.
-   -  **Altitude, optional speed limit and optional path angle:** List of values. Example:
-      ``A 8,000, B 10,000, B220, -3.5°``.
+   -  **Number only:** Fly at altitude or speed. Example: ``5,400`` or ``210``.
+   -  **Prefix** ``A``: Fly at or above altitude or speed. Example: ``A 1,800``.
+   -  **Prefix** ``B``: Fly at or below altitude or speed. Example: ``B 10,000`` or ``B 220``.
+   -  **Range:** Fly at or above altitude one and at or below altitude two. Example: ``A 8,000, B 10,000``.
+   -  **Altitude, optional speed limit and optional path angle:** List of values. Example: ``A 8,000, B 10,000, B220, -3.5°``.
 
--  ``Dist./Time``: Distance of flying time for a leg. Holds can have a
-   leg time in minutes or a leg distance in NM.
--  ``Remarks``: Shows number of transtions, fly-over, turn direction, related navaid, RNP indicator and allowed aircraft categories for a
-   procedure.
+-  ``Dist./Time``: Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in NM.
+-  ``Remarks``: Shows number of transitions, fly-over, turn direction, related navaid,
+   RNP indicator and allowed aircraft categories for a procedure.
 
 Top Buttons
 ~~~~~~~~~~~
@@ -150,7 +168,9 @@ The selection ``No Runway`` allows to find circle-to-land approaches which have 
 Ident Filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Filter result by approach, SID or STAR name beginning with the entered text.
+Filter result by approach, SID or STAR name or approach ARINC name beginning with the entered text.
+
+The approach `DACNA (R06)` will be found when entering `DAC` or `R06`, for example.
 
 .. _button-preview-all-procs:
 
@@ -243,8 +263,8 @@ Same as :ref:`show-information-map` in map context menu.
 |Show Airport on Map| Show Airport on Map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Show the airport on the map. The zoom distance can be changed in the
-dialog ``Options`` on the tab :ref:`map-navigation`.
+Show the airport on the map. The zoom distance can be changed in the options
+dialog on the page :ref:`options-map-navigation`.
 
 .. _show-in-search-procs:
 
@@ -272,7 +292,8 @@ preview from the map context menu (right click on a navaid) or the :ref:`procedu
     :scale: 80%
 
     Previewing all SID at LIPO from runway 14. Context menu open to add SID and airport as departures.
-    The preview also uses the ``Transparent line`` setting for flight plans in ``Options`` on page :ref:`flight-plan`.
+    The preview also uses the ``Transparent line`` setting for flight plans in
+    the options dialog on page :ref:`options-map-flight-plan`. *Click image to enlarge.*
 
 
 Follow Selection

@@ -108,6 +108,8 @@ Remove duplicates using additional fields as criteria.
   -  Tags
   -  Coordinates
 
+Show a preview before deleting userpoints
+    Shows a table with the userpoints to remove before deleting. You can cancel the operation in the preview.
 
 .. figure:: ../images/userpoint_cleanup.jpg
 

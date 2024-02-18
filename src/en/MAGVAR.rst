@@ -16,7 +16,7 @@ due to the movement of the magnetic poles. Therefore, magnetic course
 values might differ when flying inbound or outbound a VOR.
 
 *Little Navmap* offers several options to display course labels along the flight plan line using
-VOR calibrated declination or not. This can be changed in ``Options`` on page :ref:`map-display-labels`.
+VOR calibrated declination or not. This can be changed in the options dialog on page :ref:`options-map-labels`.
 
 See :ref:`flightplan-legend` for more information on the labels and
 :ref:`magnetic-declination` for more information about declination and scenery databases.
@@ -24,7 +24,7 @@ See :ref:`flightplan-legend` for more information on the labels and
 .. figure:: ../images/magvar_options.jpg
    :scale: 75 %
 
-   Flight plan leg course label related option on page :ref:`map-display-labels`.
+   Flight plan leg course label related option on page :ref:`options-map-labels`. *Click image to enlarge.*
 
 
 .. figure:: ../images/magvar.jpg

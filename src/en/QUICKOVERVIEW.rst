@@ -9,12 +9,12 @@ Functions
 .. figure:: ../images/overview.jpg
       :scale: 50%
 
-      A quick overview of *Little Navmap* showing the most important functions.
+      A quick overview of *Little Navmap* showing the most important functions. *Click image to enlarge.*
 
 .. figure:: ../images/overview2.jpg
       :scale: 50%
 
-      A quick overview of *Little Navmap* showing configuration options and aircraft progress.
+      A quick overview of *Little Navmap* showing configuration options and aircraft progress. *Click image to enlarge.*
 
 Context Menus
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,7 +27,7 @@ See also :ref:`ui-contextmenus`.
       :scale: 50%
 
       The most important context menus which are can be used to build a flight plan, navigate the map or show information.
-      Image based on *Little Navmap* 2.4.5.
+      Image based on *Little Navmap* 2.4.5. *Click image to enlarge.*
 
 Help
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,6 +43,6 @@ See also :ref:`help`.
       :scale: 50%
 
       Where to get help and more information. Tooltips, status bar and help buttons marked red.
-      Image based on *Little Navmap* 2.4.5.
+      Image based on *Little Navmap* 2.4.5. *Click image to enlarge.*
 
 

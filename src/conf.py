@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Little Navmap'
-copyright = u'2019-2023, Alexander Barthel'
+copyright = u'2019-2024, Alexander Barthel'
 author = u'Alexander Barthel'
 
 # VERSION_NUMBER
@@ -39,7 +39,7 @@ html_context = {
   'banner_message_color': 'yellow',
   'banner_message_bgcolor': 'red',
 
-  'banner_message_en': True,
+  'banner_message_en': False,
   'banner_message_text_en': 'This user manual for ' + project + ' version ' + version + ' is a draft.',
 
   'banner_message_de': False,

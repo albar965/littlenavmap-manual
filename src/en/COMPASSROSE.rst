@@ -18,12 +18,12 @@ This can be disabled in menu ``View`` -> :ref:`show-compass-rose-attach`.
 The size is adapted to the map view size but not larger than 500 NM and
 not smaller than 0.2 NM.
 
-Line thickness and other display options can be changed in dialog
-``Options`` on page :ref:`map-display-labels` and :ref:`map-display-user`.
+Line thickness and other display options can be changed in the options dialog
+on pages :ref:`options-map-labels` and :ref:`options-map-user`.
 
 The colors for flight plan leg course and heading indicator depend on
-settings for active flight plan leg which can be changed in the dialog
-``Options`` on page :ref:`map-display-flight-plan`.
+settings for active flight plan leg which can be changed in the options dialog
+on page :ref:`options-map-flight-plan`.
 
 Indicators
 ~~~~~~~~~~

@@ -88,7 +88,7 @@ and styles:
 -  ``little_navmap_fusionstyle.ini``: INI style configuration file for
    customizing the GUI colors of the style ``Fusion``.
 -  ``little_navmap_nightstyle.ini``: As above but for the style
-   ``Night``.
+   ``Dark``.
 -  ``little_navmap_mapstyle.ini``: INI style configuration file. Text
    file. Used for customization of the map display.
 
@@ -112,7 +112,7 @@ images can be found here:
 -  macOS: ``/Users/YOURUSERNAME/.local/share/marble/maps/earth``
 -  Linux: ``$HOME/.local/share/marble/maps/earth``
 
-The cache directory ``earth`` contains one folder for each installed map theme.
+The cache directory ``earth`` contains one directory for each installed map theme.
 
 You can delete the cache manually to save space if *Little Navmap* is not running.
 
@@ -182,7 +182,7 @@ did something wrong.
 
 .. tip::
 
-   Open this folder in your file manager using :ref:`files-and-directories-db` select the
+   Open this directory in your file manager using :ref:`files-and-directories-db` select the
    userpoint database and hit ``Ctrl+C`` (copy file) and ``Ctrl+V`` (paste file).
    This will add a copy of the database which will be named ``little_navmap_userdata (1).sqlite`` or similar.
 

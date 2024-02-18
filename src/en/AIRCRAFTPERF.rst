@@ -49,8 +49,8 @@ Fuel is shown both as weight (``lbs`` or ``kg``) or as volume
 (``gallons``, ``liter``) and can be entered in all available units
 independent of the program settings.
 
-Additional display of other fuel units can be enabled in the dialog
-``Options`` on the tab :ref:`units`.
+Additional display of other fuel units can be enabled in the options dialog
+on the page :ref:`options-units`.
 
 See :ref:`toc-and-tod-paths` for details about the
 calculation of TOC and TOD.
@@ -125,7 +125,7 @@ the *Little Navmap* main window to load them.
    into your ``Documents`` directory or a sub-directory in there like
    ``Documents\Little Navmap\Performance``.
 
-   You can use the folder which is suggested by the :doc:`FOLDERS` dialog.
+   You can use the directory which is suggested by the :doc:`FOLDERS` dialog.
 
 .. tip::
 
@@ -203,8 +203,8 @@ other information about the aircraft.
 See :doc:`AIRCRAFTPERFEDIT` for a
 detailed description of all fuel numbers.
 
-The text size of the report can be changed in dialog ``Options`` on
-page :ref:`display-and-text`.
+The text size of the report can be changed in the options dialog on
+page :ref:`options-display-and-text`.
 
 Some sections and fields are only shown with a valid flight plan.
 Fields not set in the performance file are omitted.

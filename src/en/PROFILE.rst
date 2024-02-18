@@ -7,14 +7,9 @@ plan waypoints. It is only available when a valid flight plan is loaded. The
 user aircraft will be shown if *Little Navmap* is connected to the
 simulator.
 
-
 The elevation profile does not cover missed approaches and legs to
 alternate airports. Create a new flight plan from the destination to the
 alternate airport if you wish to use the elevation profile.
-
-Movement of the aircraft and the trail in the elevation profile is tied to the active
-flight plan leg and will not be correct if flying away from the active
-leg.
 
 .. note::
 
@@ -64,7 +59,7 @@ The label shows the following information for the mouse position:
 .. figure:: ../images/profile_label.jpg
 
     Information for position between waypoints ``GIGIR`` and ``OBITI``.
-    Indicating a headwind of 28 kts at this position.
+    Indicating a headwind of 28 knots at this position.
     User aircraft still climbing.
     Note the image showing German number format with dot as thousands separator.
 
@@ -169,7 +164,7 @@ After a time without manual movements it will jump back to the aircraft.
 
 The vertical and horizontal zoom distances set by the user are not changed while *Little Navmap* keeps the aircraft visible.
 
-See also for more information on jump back in the options dialog on :ref:`simulator-aircraft` which partially affects this function.
+See also for more information on jump back in the options dialog on page :ref:`options-simulator-aircraft` which partially affects this function.
 See the related tooltips for more information.
 
 This function is independent of the related :ref:`center-aircraft`.
@@ -196,15 +191,12 @@ Note that the elevation profile starts zooming fairly late after at least half o
 |Delete Aircraft Trail| Delete Aircraft Trail
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The aircraft trail is saved and will be reloaded on program startup.
-
 This menu item removes the user aircraft trail from the elevation
 profile only. It does not remove the trail from the map. Use this if the
-trail appears in the wrong place or shape after creating of modifying a
+trail appears in the wrong place or wrong shape in the elevation profile after creating of modifying a
 flight plan.
 
-The trail in the elevation profile is of no relevance for the GPX
-file export.
+See :doc:`AIRCRAFTTRAIL`, ref:`menu-gpx` and :ref:`profile-trail` for more information.
 
 .. _show-vasi:
 
@@ -320,7 +312,7 @@ passed flight plan legs are the same. The profile display also follows
 other map settings like visibility of flight plan line, aircraft and
 aircraft trail.
 
-Display options for the flight plan can be changed in :ref:`map-display-flight-plan`.
+Display options for the flight plan can be changed in options page :ref:`options-map-flight-plan`.
 Not all of the flight plan options affect the elevation profile which is noted in the related tooltips.
 
 Aircraft heading will turn if a backward movement relative to the active
@@ -348,6 +340,28 @@ barometric pressure in the simulator altimeter.
       plan lines show procedure legs. Waypoint ``EV501`` has an overfly
       condition and there are several altitude restrictions shown for the
       approach procedure below the tooltip.
+
+.. figure:: ../images/profileclimb.jpg
+
+     A depiction of the climb phase which shows the typical climb or a large aircraft where vertical speed is lower when
+     getting close to cruise altitude when flying constant speed/Mach.
+     In contrast to this the flight plan line shows the average climb across the whole profile.
+
+
+.. _profile-trail:
+
+Aircraft Trail
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The trail is shown using the same settings as on the main map. You can change the display in options on page :ref:`options-map-aircraft-trail`.
+
+Note that the aircraft trail in the elevation profile is deleted on takeoff to avoid a cluttered profile display.
+This does not affect the trail on the map display which can be saved and loaded and is is independently stored.
+
+Movement of the aircraft and the trail in the elevation profile is tied to the active
+flight plan leg and will not be correct if flying away from the active.
+
+See :doc:`AIRCRAFTTRAIL`, ref:`menu-gpx` and :ref:`profile-trail` below for more information.
 
 .. _toc-and-tod-paths:
 
@@ -417,21 +431,11 @@ more waypoints or calculate a flight plan to avoid this limitation.
 Offline Elevation Data
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Using the recommended freely downloadable `GLOBE - Global Land One-km
+Using the freely downloadable `GLOBE - Global Land One-km
 Base Elevation Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__
-elevation data has several advantages:
+elevation data is recommended.
 
--  Faster updates
--  World wide coverage
--  No known errors
--  Display of altitude below the cursor in the status bar
--  Correct altitude if using non-airport departure and destination points
-
-Resolution is a bit lower than the one for the online data, though.
-
-See :ref:`cache-elevation` in the
-options dialog for instructions how to download and install the GLOBE elevation
-data.
+See :doc:`GLOBE` for details and installation instructions.
 
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png
 .. |Delete Aircraft Trail| image:: ../images/icon_aircrafttraildelete.png

@@ -25,8 +25,8 @@ but does not use a constant course. For that reason the measurement line
 will show two course values. One for the start and one for the end
 position if they are different. Short lines have mostly equal start and end course.
 
-The width of distance measurement lines can be changed in the dialog
-``Options`` on page :ref:`map-display-user`. The labels on the options page :ref:`map-display-labels`.
+The width of distance measurement lines can be changed in the options dialog
+on page :ref:`options-map-user`. The labels on the options page :ref:`options-map-labels`.
 
 A measurment line starting at a VOR, VORDME, VORTAC or TACAN takes the calibrated declination of
 the navaid to calculate the magnetic course.

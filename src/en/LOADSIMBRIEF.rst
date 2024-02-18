@@ -42,4 +42,4 @@ How to get the Login Information
 .. figure:: ../images/simbrief_user.jpg
    :scale: 70 %
 
-   Path to user and login information.
+   Path to user and login information. *Click image to enlarge.*

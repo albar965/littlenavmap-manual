@@ -18,9 +18,26 @@ custom waypoints (or coordinates) in some flight plan formats like MSFS PLN, X-P
 
     The custom waypoints are omitted for all formats related to complex aircraft having an FMS or MCDU to avoid issues on import.
     You have to select the departure and approach manually in the aircraft, therefore.
+    Depending on add-on you probably have to remove the additional waypoints in the FMC or MCDU before seleting the runway in the aircraft.
 
     If you see problems, delete the departure or/and approach, export the flight plan and undo your change in the flight plan again.
 
+
+Show Departure Procedures and Show Arrival Procedures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The buttons ``Show Departure Procedures`` or ``Show Arrival Procedures`` jump directly to :doc:`SEARCHPROCS`
+where you can view and select IFR procedures like SID, STAR and approaches.
+
+Wind Indication
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The preferred runway is shown in the departure and destination runway selection dialog window.
+
+This is based on the selection in menu `Weather` -> :ref:`airport-weather-source` and shows the best
+runways for wind and the used weather source.
+
+The head and crosswind is shown for each runway in the selection table.
 
 Departure Runway
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +73,8 @@ closes the dialog and creates the approach.
 .. figure:: ../images/runway_depart_selection.jpg
 
     Dialog shown after right clicking the departure airport of a flight plan and
-    selecting ``Select Departure Runway`` on airport ``01``.
+    selecting ``Select Departure Runway`` on airport ``EGNH``. Best takeoff runway is 10 with a headwind of 16 knots
+    and 4 knots crosswind.
 
 .. figure:: ../images/runway_depart.jpg
 

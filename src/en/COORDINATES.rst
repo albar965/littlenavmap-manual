@@ -6,7 +6,7 @@ flight plan position dialogs and userpoint dialogs.
 
 The input field shows a message below which indicates if the coordinates
 were recognized and shows the translated coordinates in the preset
-format as selected in dialog ``Options`` on page :ref:`units`. A red message
+format as selected in the options dialog on page :ref:`options-units`. A red message
 is shown in case of error.
 
 Check the displayed translated coordinates to verify that your input was
@@ -32,7 +32,7 @@ General
 
 
 All dialogs show the read coordinates below the input field in the curretly configured coordinate format.
-See :ref:`units` for more information.
+See options page :ref:`options-units` for more information.
 
 .. tip::
 

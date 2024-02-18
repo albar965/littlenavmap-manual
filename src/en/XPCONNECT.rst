@@ -9,7 +9,24 @@ latest, correct and matching version on your *Little Navmap* installation direct
 
 The plugin is 64-bit only and is available for Windows, macOS (ARM and Intel) and Linux and can be used in X-Plane 11 and X-Plane 12.
 
-See :ref:`xpconnect-installation` below for installation instructions.
+**See** :ref:`xpconnect-installation` **below for installation instructions.**
+
+**Network scenario for X-Plane using the Little Xpconnect plugin and the Little Navconnect agent:**
+
++--------------------------------+-------------------+-------------------+
+| Windows, Linux or              |                   | Windows, Linux or |
+| macOS Machine                  |                   | macOS Machine     |
++--------------------------------+-------------------+-------------------+
+| X-Plane ◄ ► Little Xpconnect ◄ | ► Local Network ◄ | ► Little Navmap   |
++--------------------------------+-------------------+-------------------+
+
+**Local connection scenario:**
+
++----------------------------------------------------+
+| Windows, Linux or macOS Machine                    |
++----------------------------------------------------+
+| X-Plane ◄ ► Little Xpconnect ◄ ► Little Navmap     |
++----------------------------------------------------+
 
 Menu
 ~~~~~~~~~~~~~~~~~~~~
@@ -38,7 +55,7 @@ This can affect X-Plane performance, expecially when using large amounts of AI a
 The option ``Update Time Interval`` in :ref:`connect-options` in the *Little Navmap* connect dialog
 window defines the rate *Little Navmap* fetches the data from the plugin.
 This affects *Little Navmap* performance and fluidity of the aircraft updates together with the
-setting ``Simulator aircraft updates`` in ``Options`` page :ref:`simulator-aircraft`.
+setting ``Simulator aircraft updates`` in the options dialog on page :ref:`options-simulator-aircraft`.
 
 It is recommended to keep both update rates equal and not lower than 100 ms.
 
@@ -48,17 +65,54 @@ Compatibility Error
 If a pop up window says that versions are not compatible and and upgrade of *Little Xpconnect* is needed:
    Remove the *Little Xpconnect* plugin from X-Plane and reinstall the new one.
 
-
 If the latest *Little Xpconnect* plugin is installed:
-   There is probably an old version of Little Xpconnect installed wrongly somewhere in your X-Plane plugins path. Maybe it was installed accidentally in the plugins base path without the *Little Xpconnect* folder structure.
+   There is probably an old version of Little Xpconnect installed wrongly somewhere in your X-Plane plugins path. Maybe it was installed accidentally in the plugins base path without the *Little Xpconnect* directory structure.
 
-   Check if there is another folder with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins folder on the top level.
+   Check if there is another directory with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins directory on the top level.
 
    You can see the path of the (wrongly) loaded plugin in the X-Plane plugin manager or in the X-Plane ``Log.txt`` file.
 
 .. _xpconnect-installation:
 
 Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can install the plugin automatically from the *Little Navmap* menu ``Tools``
+using the menu item :ref:`install-xpconnect` or manually by copying it from the *Little Navmap* installation directory.
+
+Automatic installation is strongly recommended since it scans the installation directory for duplicates and broken installations.
+
+.. note::
+
+      Do not download the plugin manually. It is included in the download archive of *Little Navmap*.
+
+.. _xpconnect-auto-installation:
+
+Automatic Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Start the automatic installation from the main menu ``Tools`` -> :ref:`install-xpconnect`.
+
+Note that the plugin will be installed in the currently selected X-Plane instance as selected in
+:ref:`scenery-library-menu`.
+
+*Little Navmap* scans the destination directory for duplicates of *Little Xpconnect* and stray pluin files from a broken installation.
+
+**macOS users:** Read below for :ref:`clear-macos-quarantine`.
+
+.. important::
+
+   You can choose to let *Little Navmap* delete these directories or files but in any case check if these are really installations of
+   *Little Xpconnect*.
+
+.. important::
+
+   Quit X-Plane before installing the plugin.
+
+
+.. _xpconnect-manual-installation:
+
+Manual Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Delete any old *Little Xpconnect* installations in the plugins directory before copying
@@ -80,7 +134,7 @@ See also :ref:`flight-simulator-connection`.
 macOS Architectures
 ~~~~~~~~~~~~~~~~~~~~
 
-The X-Plane plugin comes in two separate folders for different architectures.
+The X-Plane plugin comes in two separate directories for different architectures.
 
 #. ``Little Xpconnect arm64``: This is for Apple computers having an Apple Silicon or an Intel CPU.
    It supports only newer macOS releases from Mojave 10.14 and later.
@@ -99,11 +153,11 @@ Otherwise X-Plane will silently not load the plugin.
 
 The procedure may be slightly different depending on whether you're using Big Sur or Catalina.
 
-#. Copy the whole plugin folder ``Little Xpconnect`` into the folder ``plugins``
+#. Copy the whole plugin directory ``Little Xpconnect`` into ``plugins``
    in ``Resources`` in the X-Plane installation. The complete path
    should look like ``.../X-Plane 11/Resources/plugins/Little Xpconnect``.
 #. Right or Ctrl-Click in the Finder on the included script ``Prepare Little Xpconnect.command``
-   in the folder ``.../plugins/Little Xpconnect`` and select ``Open With`` and ``Terminal``.
+   in the directory ``.../plugins/Little Xpconnect`` and select ``Open With`` and ``Terminal``.
 #. You will see a dialog ``Prepare Little Xpconnect.command cannot be opened because it is from
    an unidentified developer.`` Click ``Ok``.
 #. Go to ``System Preferences`` -> ``Security and Privacy``. You will see a message mentioning
@@ -123,7 +177,7 @@ You have to repeat this procedure each time you update *Little Xpconnect*.
    Use the tool `Mac OS - CleanUp Quarantine Flags
    <https://forums.x-plane.org/index.php?/files/file/79828-mac-os-cleanup-quarantine-flags/>`__ to
    clean the flags for all X-Plane plugins. Place the downloaded and extracted application in your
-   X-Plane base folder and double click it. A dialog window showing the number of cleaned flags pops up after running.
+   X-Plane base directory and double click it. A dialog window showing the number of cleaned flags pops up after running.
 
 Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -7,7 +7,7 @@ change or restore the whole look of the application.
 *Little Navmap* restores the window layout on each startup to the last one used.
 
 You can also instruct *Little Navmap* to load the recently used layout file on top of the
-:ref:`window-layout-recent` on startup. This can be enabled in options on page :ref:`startup` by checking
+:ref:`window-layout-recent` on startup. This can be enabled in options on page :ref:`options-startup-and-updates` by checking
 ``Load window layout from last used file``.
 
 **Window layouts cover these aspects:**
@@ -25,10 +25,10 @@ See also :doc:`DOCKWINDOWS`.
 
 .. note::
 
-    Layouts cannot be exchanged with different settings for :ref:`map-undock` in the options dialog.
+    Layouts cannot be exchanged with different settings for :ref:`options-map-undock` in the options dialog.
 
-    *Little Navmap* will show a warning when loading a layout that was saved with :ref:`map-undock` enabled
-    and :ref:`map-undock` is currently disabled, for example.
+    *Little Navmap* will show a warning when loading a layout that was saved with :ref:`options-map-undock` enabled
+    and :ref:`options-map-undock` is currently disabled, for example.
 
 .. _save-load-layouts:
 
@@ -41,7 +41,7 @@ Instead of using the menu item :ref:`window-layout-open`
 you can also drag and drop a LNMLAYOUT file from a file manager into the *Little Navmap* main
 window. This will load and apply the layout immediately.
 
-You can save a layout file using :ref:`window-layout-save-as` to an arbitrary place. Using the documents folder
+You can save a layout file using :ref:`window-layout-save-as` to an arbitrary place. Using the documents directory
 is recommended. You can use the folder which is suggested by the :doc:`FOLDERS` dialog.
 
 :ref:`window-layout-recent` allows to quickly access the last save window layout files.

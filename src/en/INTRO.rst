@@ -1,8 +1,11 @@
 User Interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
+
+This chapter provides information about the user interface of *Little Navmap* in general.
+
 
 Terms
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``Button`` is used for buttons or other texts from the *Little Navmap* user interface.
 
@@ -13,7 +16,7 @@ See :doc:`GLOSSARY` for terms.
 .. _ui-file-assoc:
 
 File Associations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Windows :ref:`installation-windows-installer` optionally creates file associations for *Little Navmap*'s own file types as well as
 often used flight plan types.
@@ -26,24 +29,41 @@ The actual process can differ across operating system and Linux desktop.
 
 See :doc:`COMMANDLINE` for more information.
 
+.. _ui-drag-and-drop:
+
+Drag and Drop Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can drag and drop files from your operating system's file manager like Windows Explorer or Apple Finder into the main window
+of *Little Navmap* to load the files.
+
+The following file types are recognized:
+
+-  LNMPLN, PLN, FMS and all other supported flight plan types. See also :ref:`open-flight-plan`.
+-  LNMPERF aircraft performance files. See :ref:`aircraft-menu-load`, :doc:`AIRCRAFTPERF` and :doc:`AIRCRAFTPERFEDIT` for more information.
+-  LNMLAYOUT window layout files. See :ref:`window-layout-open` and :doc:`LAYOUT`.
+-  Garmin GPX files where the track is loaded as aircraft trail (:ref:`load-gpx` and :doc:`AIRCRAFTTRAIL`).
+
+Note that the file type is not detected by file extension but by file content.
+
 .. _ui-dock:
 
 Dock Windows
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See the chapter :doc:`DOCKWINDOWS` for more information about using dock and floating windows.
 
 .. _ui-tabs:
 
 Tabs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See :doc:`TABS` for information about the context menu and how to configure and arrange tabs.
 
 .. _ui-toolbars:
 
 Toolbars
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Toolbars are also movable by clicking on the left handle and can also be
 closed or detached from the main window similar to the dock windows.
@@ -76,7 +96,7 @@ A toolbar gets an overflow button ``>>`` on the right side if it is too long to 
 .. _ui-statusbar:
 
 Statusbar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The statusbar at the bottom of the window displays various information.
 Shown or hide it in the menu ``Window`` -> :ref:`main-statusbar-options`.
@@ -85,7 +105,7 @@ See chapter :doc:`STATUSBAR` for more on the shown information.
 .. _ui-disabled:
 
 Disabled Buttons and Menu Items
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Menu items, buttons, toolbar buttons and other controls are disabled (i.e. grayed out) if their function is not applicable. The
 aircraft center button on the toolbar is disabled when *Little Navmap* is not connected to a simulator or the
@@ -95,7 +115,7 @@ example.
 .. _ui-messages:
 
 Warning and Error Messages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. role:: error-style
 .. role:: warning-style
@@ -119,7 +139,7 @@ These message are shown in the :doc:`STATUSBAR`, :ref:`flight-plan-table` fields
 .. _ui-tables:
 
 Tables
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The header of table views allows the following manipulation:
 
@@ -143,7 +163,7 @@ The program saves the sort order, column widths and positions until
 .. _ui-tree:
 
 Trees
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some configuration dialogs uses a tree element. You have to click on the small right pointing arrow (``►`` or ``+``
 depending on operating system and user interface style) to open a branch with options.
@@ -161,7 +181,7 @@ You can also click on the small checkbox in the branch root to select or unselec
 .. _ui-contextmenus:
 
 Context Menus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Context menus (or right-click menus) are an important element in *Little Navmap* to build flight plans or get information and
 can be found in the following places:
@@ -182,14 +202,14 @@ object at the clicked position or to build or edit a flight plan.
 .. _ui-menubuttons:
 
 Menu Buttons
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Menu buttons |Menu Button| provide dropdown menus on click. These are used in the :doc:`SEARCH` and :doc:`ROUTEDESCR` windows, for example.
 
 .. _help:
 
 Tooltip Help, Help Buttons and Help Menu
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The help menu of *Little Navmap* contains links to the online help, an
 included offline help PDF document, online tutorials and the map legend.
@@ -207,7 +227,7 @@ Clicking these will open the corresponding sections of the online manual.
 .. _window-title:
 
 Window Title
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The main window title shows the following information:
 
@@ -257,10 +277,10 @@ Version 2.6.5.rc1 (a release candidate), 32-bit version as required for FSX, FSX
 no flight plan loaded and new and empty default performance profile loaded.
 
 Information and Simulator Aircraft Text
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can change the text size permanently in the options dialog for these
-windows. See options dialog on page :ref:`display-and-text`.
+windows. See options dialog on page :ref:`options-display-and-text`.
 
 This page also allows to change the font for the whole program interface.
 
@@ -270,7 +290,7 @@ This page also allows to change the font for the whole program interface.
      ``Ctrl`` key. This setting won't be saved across sessions, though.
 
 Activating and raising Windows and Tabs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* opens and raises dock windows and tabs for certain
 actions like ``File`` -> :ref:`new-flight-plan` or ``Aircraft`` ->
@@ -281,7 +301,7 @@ by disabling the option :ref:`raise-on-related`.
 .. _tear-off-menu:
 
 Tear off Dropdown Menus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Toolbar buttons with a drop down menu and other buttons like :doc:`ROUTEDESCR` allow to tear off the menu
 by clicking on the dashed line on top of it.
@@ -295,9 +315,43 @@ The state of the tear off menus is not saved.
        The drop down menu button for the userpoint categories for map display and
        how the menu can be teared off into its own window.
 
+.. _links:
+
+Links
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Blue link texts in all windows of *Little Navmap* are clickable.
+
+The general links can have these functions:
+
+-  Open a web address in your browser.
+-  Open a file like the log file in your default text editor.
+-  Show a file or directory in you default file manager like Windows Explorer, Apple Finder or KDE Dolphin.
+
+.. figure:: ../images/linkdialog.jpg
+    :scale: 70%
+
+    The options dialog window with blue web links. Klick on the links to open them in your web browser. *Click image to enlarge.*
+
+The windows and tabs :doc:`FLIGHTPLAN`, :doc:`INFO` and :doc:`SEARCHPROCS` provide links to:
+
+-  Show information about a navaid or airport or show these on the map (link ``Map`` or airport name).
+-  Show procedures of an airport (link ``Procedures``).
+-  Hightlight a full airway (link ``Map``).
+-  Show waypoints of an airway, e.g. waypoint/region ``ASMUS/EK``.
+-  Highlight airspaces (link ``Map``).
+-  Show airport files in the default file manager (BGL or ``apt.dat`` files).
+-  Remove hightlighted features from the map like ``Remove Airspace Highlights`` or ``Remove Airway and Track Highlights``.
+
+.. figure:: ../images/linkinfo.jpg
+    :scale: 70%
+
+    The airport information has links to center the airport on the map or to show procedures. *Click image to enlarge.*
+
+.. _copy-and-paste:
 
 Copy and Paste
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Almost all dialogs, text labels and all information windows in *Little
 Navmap* allow to copy and paste the formatted text to the clipboard.
@@ -307,17 +361,24 @@ or the context menu to copy it to the clipboard.
 
 The table views for the flight plan or airport/navaid search results
 allow copying of the results in CSV format to the clipboard which can be
-pasted into a spreadsheet program like `LibreOffice
-Calc <https://www.libreoffice.org>`__ or *Microsoft Excel*.
+pasted into a spreadsheet program like `LibreOffice Calc <https://www.libreoffice.org>`__ or *Microsoft Excel*.
+
+This copied text can be used in forums or emails instead of screenshots.
+
+.. figure:: ../images/copydialog.jpg
+
+    Text selected with the mouse. Right-click context menu or ``Ctrl+C`` can be used to copy the
+    formatted text to the clipboard.
+
 
 Translation and Locale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Little Navmap* is currently available in several languages,
 although not all translations are complete.
 
 Your system language is used if supported. Otherwise *Little Navmap* falls back to English.
-The language for the user interface can be change in ``Options`` on page :ref:`user-interface`.
+The language for the user interface can be changed in options on page :ref:`user-interface`.
 
 I will happily support anybody who would like to translate the user
 interface or manual into another language. Language packages can be
@@ -331,24 +392,24 @@ settings of the operating system will be used. So, e.g. on a German
 version of Windows you will see comma as a decimal separator instead of
 the English dot.
 
-The language and locale settings can be forced to English in the dialog
-``Options`` on the page :ref:`user-interface`.
+The language and locale settings can be forced to English in the options dialog
+on the page :ref:`user-interface`.
 
 Map Legend
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The legend explains the :doc:`MAPDISPLAY` and the
 :doc:`PROFILE` symbols. It is available in :doc:`LEGEND`.
 
 Airport Rating
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Airports get a zero to five star rating depending on facilities which is shown in airport search, map tooltips and the information window.
 
 Airports that have no rating will be displayed
 using a gray symbol below all other airports on the map
 (``Empty Airport``). This behavior can be switched off in the
-``Options`` dialog on the page :ref:`map`.
+options dialog on the page :ref:`options-map`.
 
 This helps to avoid airports with no scenery elements.
 
@@ -373,7 +434,7 @@ All additional airports in MSFS ``Community`` and ``Official`` directories are c
 Star airports in Microsoft Flight Simulator 2020 will always get a five star rating.
 
 Add-on airports are highlighted on the map with a yellow ring which can be disabled
-in the options dialog on page :ref:`map-display`.
+in the options dialog on page :ref:`options-map-display`.
 
 Using emphasized (bold and underlined) text highlights add-on airports in the search result table,
 flight plan table, information windows and map tooltips.

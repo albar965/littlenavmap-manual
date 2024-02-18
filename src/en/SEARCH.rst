@@ -13,10 +13,6 @@ All filters can be used together where all conditions have to be met
 applied immediately. The distance search is applied after a short delay
 for each change.
 
-**Entering three or four characters in the** ``ICAO Code`` **field of the
-airport search tab will trigger a quick search which ignores all other
-filters.**
-
 A tooltip on the blue help button on the top right shows information
 about searching.
 
@@ -37,16 +33,17 @@ See :ref:`ui-tables` for more information how to rearrange columns in tables.
 Text filters
 ~~~~~~~~~~~~
 
-The standard is to search for entries that start with the entered text.
+The standard is to look for partial text matches. This means that a search
+term of ``Chicago`` will find the airports Gary Chicago as well as O'Hare (due to city Chicago).
 
-The placeholder ``*`` stands for any text. Once a ``*`` is included in
-the term, the standard search (match start of text) is no longer used.
-In that case you might have to add a ``*`` at the end of the search term
-as well to get the expected result.
+``EDDE`` will find the airports Erfurt-Weimar (EDDE) as well as Wedderburn.
+
+Use stars ``*`` as wildcards matching any text and double quotes ``"`` for exact word match.
+Using ``"EDDE"`` will find the the airport Erfurt-Weimar (EDDE) only.
+
 
 The search is negated (i.e. find all entries that do **not** match) if the first
-character in a search box is a ``-``.
-
+character of a search term is a ``-``.
 
 Note that all of the above does not apply to numeric fields like
 ``Runways: Min`` or ``Altitude: Max``.
@@ -56,12 +53,24 @@ Note that all of the above does not apply to numeric fields like
 Airport and Navaid Ident Text filters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The fields ``Ident`` for the airport and navaid search allow more functionality besides the
+The airport search has a special search field for all airport idents and names
+(ICAO, FAA, IATA, local, name, city, state/province and country) using
+partial match for quick search.
+
+Separate search fields are available in the drop down menu under ``Names``. The same rules as
+mentioned in :ref:`text-filters` above appyly.
+
+Entering three or four characters in the ``ICAO Code`` field of the
+airport search tab will trigger a quick search which ignores all other
+filters.
+
+The fields ``Ident, name, city, state, province, country or area code`` for the airport and
+navaid ``Ident`` search allow more functionality besides the
 one described above:
 
--  Put an ident in double quotes ``"`` to force an exact search (i.e. avoid partial matches).
+-  Put an search term in double quotes ``"`` to force an exact search, i.e. avoid partial matches.
    Example: ``SEA`` finds two airports one being ``SEAM`` while ``"SEA"`` finds only ``KSEA`` because
-   of the matchin IATA code.
+   of the matching IATA code SEA.
 -  Separate several idents by space to do a search for each ident. ``EDDF EDDM`` find the two airports Frankfurt and Munich, for example.
 
 Tri state checkboxes
@@ -89,9 +98,11 @@ Airport, navaid, userpoint and online search tabs contain multiple rows
 of search filters. These rows can be switched on and off with the drop
 down menu on the menu button |Menu Button| on the top right.
 
-The drop down menu prefixes menu items with a change indicator ``*`` to
-show that the related filter row has modifications. You can use this to
-find out why a search does not give the expected results.
+The drop down menu prefixes menu items with a change indicator to
+show that the related filter row has modifications.
+The menu item suffix ``(changed)`` shows an option is modified and
+visible to the user. ``(changed, not used)`` indicates a modified option which is not used since the
+related fields are hidden from the dropdown menu button.
 
 .. tip::
 
@@ -167,11 +178,10 @@ selecting procedures (:doc:`SEARCHPROCS`) and :doc:`PARKINGPOSITION`.
 
 .. _airport-search-ident:
 
-Ident in Airport Search
+Ident and Names in Airport Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The input field ``Ident`` in the airport search tab searches for all available airport identifiers.
-These are:
+The input field ``Ident, name, city, state, province, country or area code`` in the airport search tab searches for all available airport identifiers and names.
 
 -  ``Ident``: Mostly equal to ICAO code but can be differnt especially for small airfields. X-Plane
    uses partially an unofficial code in this field like ``XPA000B``. Available for all simulators and
@@ -184,8 +194,10 @@ These are:
    Available in X-Plane and Navigraph navdata.
 -  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
    X-Plane.
+-  ``Name``, ``City``, ``State/Province``, ``Country/Area Code``: Airport names and administrative names.
+   Note that not all names are available depending on simulator.
 
-The airport codes are also shown in the information windows, tooltips and in the map
+The airport codes and names are also shown in the information windows, tooltips and in the map
 labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal
 ident is avoided if possible.
 
@@ -193,11 +205,6 @@ ident is avoided if possible.
 
 ``Akutan`` is shown as ``Akutan (PAUT)`` with its official ICAO code ``PAUT`` instead of the
 internal X-Plane code ``XPA000B``.
-
-**Search Example:**
-
-Searching for ident ``KOI`` gives the airports ``Oberlin Muni (KOIN)``, ``Lt Warren Eaton (KOIC)``
-and ``Kirkwall (EGPA)`` where ``EGPA`` has the IATA code ``KOI``.
 
 .. tip::
 
@@ -212,7 +219,7 @@ Country, State/Province and City in Airport Search
 
 Note that quality and availability for administrative data depends on the selected simulator.
 
-MSFS provides names in the local language as selected in ``Options`` on page :ref:`user-interface` but country names are not available.
+MSFS provides names in the local language as selected in the options dialog on page :ref:`user-interface` but country names are not available.
 
 X-Plane airports are community work and therefore administrative names have varying quality if set at all. Country names are often used in several variants like ``USA``, ``U.S.A.``, ``United States`` and more.
 
@@ -323,8 +330,8 @@ These are omitted here.
 
 Show either the airport diagram or zooms to the navaid, userpoint or
 other features on the map. The
-zoom distance can be changed in the dialog ``Options`` on the tab
-:ref:`map-navigation`.
+zoom distance can be changed in the dialog the options dialog on the page
+:ref:`options-map-navigation`.
 
 .. _mark-airport-addon-search:
 

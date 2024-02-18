@@ -114,8 +114,7 @@ Buttons
 Report
 ^^^^^^
 
-The text size of the report can be changed in dialog ``Options`` on
-``User Interface``.
+The text size of the report can be changed in the options dialog on page ``User Interface``.
 
 Aircraft Section
 ''''''''''''''''

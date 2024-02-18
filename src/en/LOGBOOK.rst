@@ -75,7 +75,7 @@ The functionality of the search filters and the result table is equal to
 the airport and navaid search. See :doc:`SEARCH` for information about search filters and buttons.
 
 A search field ``Airport Ident`` allows to search entries having either a matching destination or
-departure airport. The fields ``Departure Airport Ident`` and ``Destination Airport Ident`` allow to search exactly for departure and destination airports or combinations.
+departure airport. The fields ``Departure Airport Ident`` and ``Destination Airport Ident`` allow to search exactly for departure and destination airports or combinations of these.
 
 Additional context menu items and buttons allow adding, editing, and
 deleting of logbook entries as well as saving or loading the attached flight plan or track.
@@ -87,6 +87,8 @@ selected in the search result table.
 The label at the connecting great circle line shows departure airport
 ident, destination airport ident and great circle distance. A tooltip is
 shown if hovering the mouse over the blue direct connection or flight plan preview lines.
+
+The trail preview shows tooltips with time, distance and flown altitude when hovering the mouse cursor above, if enabled.
 
 .. note::
 
@@ -178,11 +180,22 @@ Removes the selected logbook entries. The action can be undone in the main menu 
 Cleanup Logbook Entries
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Removes invalid logbook entries.
+Removes invalid logbook entries. The dialog contains the following fields:
 
--  ``Shorter than 5 NM``: Removes all entries where the distance flown is below 5 NM.
--  ``Departure and destination ident equal``: Delete all entries where departure ident is the same as the destination ident (which can happen when doing pattern work). Airport names or other attributes are not compared.
--  ``Either departure or destination ident empty``: Remove all entries where departure or destination is empty. This can happen when running simulator replay, redoing landings or interrupting flights.
+
+Shorter than 5 NM
+    Removes all entries where the distance flown is below 5 NM.
+
+Departure and destination ident equal
+    Delete all entries where departure ident is the same as the destination ident (which can happen when doing pattern work).
+    Airport names or other attributes are not compared.
+
+Either departure or destination ident empty
+    Remove all entries where departure or destination is empty.
+    This can happen when running simulator replay, redoing landings or interrupting flights.
+
+Show a preview before deleting logbook entries
+    Shows a table with the logbook entries to remove before deleting. You can cancel the operation in the preview.
 
 You can undo the change using :ref:`undo-logbook-search` in the logbook table context menu.
 
@@ -256,6 +269,8 @@ Save attached Aircraft Performance as
 """"""""""""""""""""""""""""""""""""""""""""
 
 Saves the attached LNMPERF flight plan to a file.
+
+.. _logbook-menu-save-gpx:
 
 Save attached GPX Trail as
 """"""""""""""""""""""""""""""""""""""""""""
