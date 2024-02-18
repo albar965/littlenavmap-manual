@@ -198,6 +198,8 @@ The font for map display is not affected by this value and can be set separately
         Try out the `B612 Font family <https://b612-font.com/>`__ which is an
         open source font family designed and tested to be used on aircraft cockpit screens.
 
+.. _options-high-dpi:
+
 Enable high DPI monitor support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -205,6 +207,25 @@ Toggle this is you have problems with scaled fonts or symbols on Windows,
 cannot shrink the main window or other issues.
 
 You have to restart *Little Navmap* after changing.
+
+.. _options-freetype:
+
+Use FreeType font engine on Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This option is only available on Windows.
+
+Disable this if you think the overall appearance of text in *Little Navmap* on Windows is blurry.
+Enabling this option results in better and faster text display on the map, especially for rotated labels.
+
+But as a result, the text will appear slightly blurred throughout the whole application.
+Deselect this to avoid the slightly blurred text in menus and application windows.
+
+.. note::
+
+     A restart is required after changing the font engine.
+
+.. _options-tooltips:
 
 Show tooltips in whole application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
