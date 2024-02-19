@@ -41,6 +41,13 @@ parts of a procedure like holds or procedure turns.
 
 The track contains the simulator time, altitude and coordinates.
 
+.. tip::
+
+    Enable the export option ``Garmin GPX exchange format for Google Earth and others`` in the :ref:`multiexport-options` and adapt the export path.
+    Then select ``Files`` -> :ref:`multiexport-flight-plan` after each flight to save your aircraft trail and all other selected
+    export formats with one click.
+    See :doc:`ROUTEEXPORTALL` for more information.
+
 Aircraft Trail Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

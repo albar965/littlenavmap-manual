@@ -135,6 +135,12 @@ overwriting LNMPLN files with wrong plans after reversing direction, for example
 You can disable this behavior in the options dialog on page :ref:`options-files` by unchecking
 ``Avoid overwriting Flight Plan with not matching departure and destination``.
 
+.. tip::
+
+    Enable the export option ``Little Navmap native flight plan format`` in the :ref:`multiexport-options` and adapt the export path.
+    Then use ``Files`` -> :ref:`multiexport-flight-plan` to save your flight plan and all selected export formats with one click.
+    See :ref:`multiexport-export-lnmpln` for more information.
+
 .. note::
 
       *Little Navmap* will not ask to save the file on exit but will instead save the changes to a temporary file.
