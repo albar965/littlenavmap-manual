@@ -170,7 +170,7 @@ Ident Filter
 
 Filter result by approach, SID or STAR name or approach ARINC name beginning with the entered text.
 
-The approach `DACNA (R06)` will be found when entering `DAC` or `R06`, for example.
+The approach ``DACNA (R06)`` will be found when entering ``DAC`` or ``R06``, for example.
 
 .. _button-preview-all-procs:
 

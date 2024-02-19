@@ -76,7 +76,7 @@ Update Channels
 
 .. tip::
 
-     Run beta or development version of *Little Navmap* in :ref:`portable-execution`
+     Run beta or development version of *Little Navmap* in :doc:`PORTABLE`
      mode to avoid overwriting your settings. This allows you to run the new version
      with separate settings and databases without affecting your current settings.
 

@@ -125,6 +125,7 @@ Table of Contents
    MAPTHEMES
    FILES
    TIPS
+   PORTABLE
    COMMANDLINE
    APPENDIX
    GLOSSARY

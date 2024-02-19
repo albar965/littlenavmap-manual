@@ -3,7 +3,7 @@ Files
 
 Note that file locations can be overridden using command line options. See :doc:`COMMANDLINE` for more information.
 
-File paths will differ if using one of the portable scripts (:ref:`portable-execution`).
+File paths will differ if using one of the portable scripts (:doc:`PORTABLE`).
 
 .. tip::
 

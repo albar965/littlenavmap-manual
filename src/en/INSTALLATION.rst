@@ -257,36 +257,10 @@ See :doc:`XPCONNECT` for installation and usage.
 Portable Execution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Running *Little Navmap* in portable mode instructs the program to place all settings, databases and
-cached files into the installation directory (i.e. the directory containing the executable file).
-No directories or files are created on the computer running the program from a memory stick, for
-example.
+See chapter :doc:`PORTABLE` for more information about running *Little Navmap* in portable mode which allows
+to run more than one installation in parallel for testing, for example.
 
-You can also use the portable mode to test new *Little Navmap* releases without affecting your
-current settings.
-
-Scripts allow to run *Little Navmap* in portable mode by passing certain command line options to the program:
-
-- Windows: ``Little Navmap Portable.cmd``
-- macOS: ``Little Navmap Portable.command``
-- Linux: ``Little Navmap Portable.sh``
-
-Three directories are created when running these scripts: ``Little Navmap Cache`` for the online map image tiles,
-``Little Navmap Logs`` for log files and ``Little Navmap Settings`` used to store settings and databases.
-
-See :doc:`COMMANDLINE` for more information.
-
-.. note::
-
-   You have to install updates to the navigation database manually if you run in portable mode.
-   Replace and/or update the file
-   ``YOURINSTALLATIONFOLDER/Little Navmap Settings/little_navmap_db/little_navmap_navigraph.sqlite``
-   to update you navigation database.
-
-.. important::
-
-  You have to download and extract one of the Zip archives of *Little Navmap* to use this functionality on Windows.
-  It will not work if you use one of the Windows installers.
+.. _mult-installations:
 
 Multiple Installations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
