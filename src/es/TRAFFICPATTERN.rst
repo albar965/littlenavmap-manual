@@ -33,9 +33,9 @@ aeropuerto y elevación.
 -  ``Altitud del Patrón``: Altitud del patrón por encima de la elevación
    del aeropuerto. Se actualiza automáticamente cuando se selecciona una
    pista desde FSX o P3D
--  ``Indicadores de Entrada y Salida``: Muestra lineas punteadas y
+-  ``Indicadores de Entrada y Salida``: Muestra líneas punteadas y
    flechas que indican los puntos de entrada y salida.
--  ``Color de la Linea``: Color de las lineas del patrón y etiquetas.
+-  ``Color de la Linea``: Color de las líneas del patrón y etiquetas.
 
 Los patrones de tráfico pueden ser eliminados, bien seleccionando
 ``Mapa`` -> ``Eliminar todos los rangos medidas y patrones`` o bien,
@@ -48,8 +48,8 @@ los números mostrados en el patrón.
 
 |Traffic Pattern Dialog|
 
-**Imagen Superior:**\ *Diálogo para patrón de tráfico en*\ ``EDFE``\ \_
-, pista 08 a 1000 ft sobre la elevación del aeropuerto.\_
+**Imagen Superior:**\ *Diálogo para patrón de tráfico en*\ ``EDFE``\ \_, 
+pista 08 a 1000 ft sobre la elevación del aeropuerto.\_
 
 |Traffic Pattern|
 
