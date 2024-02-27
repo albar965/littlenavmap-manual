@@ -3,6 +3,7 @@ User Interface
 
 This chapter provides information about the user interface of *Little Navmap* in general.
 
+.. include:: include/WINDOWTIP.rst
 
 Terms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

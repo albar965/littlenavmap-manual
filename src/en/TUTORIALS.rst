@@ -11,8 +11,9 @@ All functions will be referred by the names in the main menu by using
 find the buttons on one of the toolbars. Screenshots will provide more
 help.
 
-Screenshots were made on Linux and Windows. Therefore, look and feel
-might be different.
+Screenshots were made on Linux and Windows and may also show older versions of *Little Navmap*
+if functionality did not change.
+Therefore, look and feel might be different.
 
 See :doc:`INTRO` for general information about the user interface.
 

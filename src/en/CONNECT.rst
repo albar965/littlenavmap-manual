@@ -61,8 +61,8 @@ You will see an :warning-style:`orange warning message` if you use a X-Plane sce
 
     Note that there are two builds of Little Navmap and Little Navconnect for Windows available:
 
-    -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
-    -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+    -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.4-Install.exe`` for example.
+    -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.4-Install.exe`` for example.
 
     Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
 
@@ -145,7 +145,7 @@ Start *Little Navmap* on the Client / Remote Computer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
-``Flight Simulator Connection`` in the main menu.
+:ref:`flight-simulator-connection` in the main menu.
 
 .. figure:: ../images/connect.jpg
 

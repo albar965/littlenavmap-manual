@@ -24,7 +24,7 @@ You should at least read through :doc:`TUTORIALVFR` before doing this one.
      Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
      a small turboprop or a powerful twin.
 
-     Do not try to fly this trip with an airliner.
+     **Do not attempt to fly this trip on an airliner or other unsuitable aircraft.**
 
 The tutorial assumes the following preconditions:
 
@@ -267,7 +267,7 @@ of the flight plan:
 
    The flight plan cruise altitude is automatically adjusted according to
    the hemispherical rule (the rule can be changed in ``Tools`` ->
-   ``Options`` |Options| on the page :ref:`options-flight-plan`), the altitude
+   :doc:`OPTIONS` |Options| on the page :ref:`options-flight-plan`), the altitude
    restrictions of the airways and the flight plan type (``VFR`` or
    ``IFR``). You can see the minimum altitude for each airway segment in
    the flight plan table in the column ``Restriction`` (see :ref:`flight-plan-table-columns`).
@@ -290,6 +290,7 @@ The top label in the flight planning dock window reads now:
           Land at 13, 129°M, 5.215 ft, 126 ft elevation, PAPI4.
           Distance 538 NM, time 4 h 35 m.
 
+The text can be slightly different depending on the used version of *Little Navmap*.
 
 Note that no departure runway information is given. Click :ref:`select-departure-runway` |Select Departure Runway| on the toolbar to select one and save the plan.
 
@@ -439,21 +440,11 @@ Alternatively right click on any fix/waypoint of the procedure on the map
 and select :ref:`delete-from-flight-plan` |Delete from Flight Plan|.
 
 If ATC clears you to the initial fix of the procedure:
+Right-click on the starting waypoint of the procedure (initial fix) and select :ref:`direct-to-here` |Direct to Here|.
+This will create a waypoint ``PPOS`` (present position) at your aircraft and
+a direct flight plan leg to the start of the procedure.
 
-#. Delete any intermediate waypoints between your current aircraft
-   position and the initial fix of the procedure: Right-click in the
-   flight plan table and select :ref:`delete-selected-legs`
-   |Delete selected Leg or Procedure| for all waypoints between your
-   current aircraft position and the initial fix or start of the
-   procedure. Avoid deleting your approach (you can also right-click on
-   a flight plan waypoint on the map and delete it from the context
-   menu).
-#. Then right-click on your aircraft on the map and select
-   :ref:`add-position-to-flight-plan` |Add Position to Flight Plan|.
-
-This will give a direct connection from your current aircraft position
-to the start of the procedure which you can use to get course and
-distance to the initial fix.
+You can now to get the course and distance to the initial fix.
 
 **Below:** After changing the approach procedure and adding an user defined
 waypoint at the aircraft position to the flight plan. Now we get course
@@ -526,3 +517,4 @@ helps uncluttering the map display.
 .. |Connect Dialog| image:: ../images/connectlocal.jpg
 .. |Delete from Flight Plan| image:: ../images/icon_routedeleteleg.png
 .. |Select Departure Runway| image:: ../images/icon_runwaydepart.png
+.. |Direct to Here| image:: ../images/icon_directto.png

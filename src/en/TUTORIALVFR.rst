@@ -12,7 +12,7 @@ The flight plan is included in the *Little Navmap* installation directory:
 
 The airport names might differ depending on simulator.
 
-Use the map theme ``Stamen Terrain`` in menu ``View`` -> :ref:`theme-menu` to see the mountains.
+Use the map theme ``OpenTopoMap`` or any other map theme in menu ``View`` -> :ref:`theme-menu` to see the mountains.
 The flight will only go through Class E airspace. There is no need to contact ATC.
 Disable airspace display in menu ``View`` -> :ref:`show-airspaces` for now.
 
@@ -49,10 +49,11 @@ Departure Airport
 Find the departure airport: Click into the map and zoom to the French
 Alps. You can use the following functions to navigate:
 
--  The map overlay on the right.
--  The mouse (click and drag) to move and the mouse wheel to zoom.
+-  The map overlay on the right (:ref:`overlays-map`).
+-  The mouse (click and drag) to move and the mouse wheel to zoom (:ref:`mouse-clicks-legend`).
 -  The cursor keys to move and the keys ``+`` and ``-`` for zooming in
    and out (click into the map window or press ``F2`` to activate it before using the keys).
+   See :ref:`key-commands-legend` about keyboard navigation.
 
 Use the back |Back| and forward |Forward| buttons to jump in the
 position history like in a web browser.
@@ -227,7 +228,11 @@ Follow the steps below to get a moving map and see your aircraft in
    started or will be started later.
 -  Click on the tab which corresponds to your simulator.
    Image below shows the tab for FSX, P3D or MSFS on the left
-   and the tab for X-Plane on the right.
+   and the tab for X-Plane on the right. Tab titles will look different
+   depending on whether you are using the 32-bit (FSX and P3D) or the 64-bit (MSFS and X-Plane)
+   build of *Little Navmap*. Tab titles will look different
+   depending on whether you are using the 32-bit (FSX and P3D) or the 64-bit (MSFS and X-Plane)
+   build of *Little Navmap*.
 
    |Connect Dialog|
 -  Click ``Connect`` which will close the dialog.

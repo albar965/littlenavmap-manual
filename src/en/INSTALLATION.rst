@@ -57,8 +57,8 @@ Builds
 
 There are two builds of Little Navmap and Little Navconnect for Windows available:
 
--  **Windows 64-bit: For MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-2.8.2.zip`` for example.
--  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-2.8.2.zip`` for example.
+-  **Windows 64-bit: For MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-3.0.4-Install.exe`` for example.
+-  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-3.0.4-Install.exe`` for example.
 
 You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
 
@@ -72,15 +72,22 @@ Also both versions share the same settings and databases. You can switch from on
 Installer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can use the self-installing package based on `Inno Setup <https://jrsoftware.org/isinfo.php>`__ to install *Little Navmap* on your computer.
+Using the self-installing package based on `Inno Setup <https://jrsoftware.org/isinfo.php>`__ to install *Little Navmap* on
+your computer is strongly recommended for first time installations as well as updating *Little Navmap*.
 The installer packages are named ``LittleNavmap-...-Install.exe`` and contain the same programs and files as the Zip archives.
 
-The installation process always installs the program for all users in a protected directory like ``C:\Program Files`` (64-bit) or ``C:\Program Files (x86)`` (32-bit).
+The installation process always installs the program for all users in a protected directory
+like ``C:\Program Files`` (64-bit) or ``C:\Program Files (x86)`` (32-bit).
 You can manually select another directory but I recommend to leave the default location.
 Both the 32-bit and the 64-bit versions can be installed in parallel.
 
 There is no need to uninstall the program before when updating.
 The installation process automatically detects the last selected directory and overwrites the current installation.
+Obsolete files are automatically removed before updating the installation.
+
+.. note::
+
+    Note that there is no need to uninstall *Little Navmap* before updating to a new version.
 
 File types can optionally be associated with *Little Navmap* which allows to load a flight plan by double
 clicking on a LNMPLN file in Windows Explorer, for example. *Little Navmap* is either started or an already running
@@ -113,7 +120,7 @@ Files in directories like ``Documents\Little Navmap`` are not deleted.
 
    Note that this step also removes the userpoint database as well as the logbook and cannot be undone.
 
-The two directories which can be deleted are:
+The two directories which are optionally deleted are:
 
 -  Settings and databases: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
 -  Online map cache: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth``
@@ -124,7 +131,8 @@ Manual Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The manual installation of *Little Navmap* does not change or create any registry entries
-in Windows and involves a simple Zip extraction of files.
+in Windows and involves a simple Zip extraction of files. Use the Zip archives and the manual installation if you'd like
+to run *Little Navmap* in portable mode (see :doc:`PORTABLE` for more information).
 
 .. important::
 
@@ -195,7 +203,7 @@ directory ``Applications`` or any other directory.
 
 .. note::
 
-     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual
+     The menu entry which is referenced as ``Tools`` -> :doc:`OPTIONS` in this manual
      for Windows and Linux
      can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
@@ -221,7 +229,7 @@ Extract the archive to any place and run the executable file
 
 ``./littlenavmap``
 
-Most file managers will start the program if double-clicked.
+Most file managers will also start the program if double-clicked.
 
 A desktop file ``Little Navmap.desktop`` is included.
 You have to adjust the paths to use it. You must use absolute paths in the desktop file.

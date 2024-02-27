@@ -40,6 +40,8 @@ cannot be docked into the mai window and are independent and do not block the ma
 More dock window settings like auto activation on mouse over can be found in the options
 on page :ref:`user-interface`.
 
+.. include:: include/WINDOWTIP.rst
+
 .. tip::
 
     Hold ``Ctrl`` while clicking on the window title bar to prevent a window

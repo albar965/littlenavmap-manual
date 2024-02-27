@@ -33,7 +33,7 @@ Using the help button in the options dialog window jumps directly to the related
 
      If you use Apple macOS:
 
-     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual for Windows and Linux
+     The menu entry which is referenced as ``Tools`` -> :doc:`OPTIONS` in this manual for Windows and Linux
      can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
 .. _options-pages:

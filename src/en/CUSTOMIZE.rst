@@ -1,4 +1,4 @@
-Customizing General
+Customize
 -------------------
 
 *Little Navmap* creates multiple configuration files in the directory
@@ -95,7 +95,7 @@ Note that your current `little_navmap_mapstyle.ini` is automatically backed up a
 
 .. VERSION_NUMBER_TODO update branch in link
 
-You can download a copy from
+Download the file from
 `GitHub - little_navmap_mapstyle.ini <https://raw.githubusercontent.com/albar965/littlenavmap/release/3.0/resources/config/little_navmap_mapstyle.ini>`__
 and copy this to the settings directory.
 
@@ -169,7 +169,10 @@ Level Configuration
 
 Labels, symbols and zoom layer settings can be changed in the file ``maplayers.xml``.
 
-You can download the file here: `maplayers.xml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/resources/config/maplayers.xml>`__.
+.. VERSION_NUMBER_TODO update branch in link
+
+You can download the map layer configuration here:
+`GitHub - maplayers.xml <https://raw.githubusercontent.com/albar965/littlenavmap/release/3.0/resources/config/maplayers.xml>`__ .
 
 Put a copy of this file into the *Little Navmap* settings directory
 (``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\`` on Windows) to override the stock settings.
@@ -186,9 +189,14 @@ See the comments inside the file for more explanations.
 Icons
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To change an icon download them from the GitHub source repository `Icon
-Resources <https://github.com/albar965/littlenavmap/tree/release/2.8/resources/icons>`__
-or extract the included file ``customize/icons.zip`` in the installation directory.
+.. VERSION_NUMBER_TODO update branch in link
+
+To change an icon download it from the GitHub source repository
+`GitHub - Icon Resources <https://github.com/albar965/littlenavmap/tree/release/3.0/resources/icons>`__
+or download a Zip archive containing all the stock icons here
+`Little Navmap - Downloads - Customization <https://www.littlenavmap.org/downloads/Customization/>`__.
+
+See below for information and file prefixes to identify the icons.
 
 Modify the icon and save it into the settings directory
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap* will
@@ -207,7 +215,8 @@ Navmap* to see the changes.
 User, AI and Multiplayer Aircraft Icons
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default icons are included in file ``aircraft-icons.zip`` in installation directory ``customize``.
+See above :ref:`customize-icons` for download instructions.
+User, AI and multiplayer aircraft icons are prefixed with ``aircraft_``.
 
 All icons for user, AI/multiplayer aircraft, helicopters and ships are
 stored in the program but can be overloaded by the user.
@@ -261,7 +270,8 @@ historical reasons all icons are prefixed with ``aircraft``.
 Userpoint Category Icons
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default icons are included in file ``userpoint-icons.zip`` in installation directory ``customize``.
+See above :ref:`customize-icons` for download instructions.
+Userpoint icons are prefixed with ``userpoint_``.
 
 Icons for userpoint categories are stored in the program but can be
 overloaded by the user as well.

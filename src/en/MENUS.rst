@@ -2668,8 +2668,7 @@ Opens the dialog window :doc:`OPTIONS` which allows to change the user interface
 
 .. note::
 
-     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual
-     for Windows and Linux
+     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual for Windows and Linux
      can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
 .. =======================================================================================================================
@@ -2759,8 +2758,8 @@ List of recently saved or loaded window layout files. Select one to load and app
 
 .. _reset-layout-menu:
 
-Reset Window Layout
-^^^^^^^^^^^^^^^^^^^
+Reset Window Layout to Default
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Reset the main window layout back to default. This involves visibility,
 position and state of all dock windows as well as the :ref:`ui-toolbars` and the :doc:`STATUSBAR`.
@@ -2774,6 +2773,8 @@ Note that the dock windows ``Search`` and ``Simulator Aircraft`` are stacked in 
 You can access both using the tabs at the lower right position of the main window.
 
 See :doc:`LAYOUT` for more information on window layouts.
+
+.. include:: include/WINDOWTIP.rst
 
 .. _reset-tabs-menu:
 

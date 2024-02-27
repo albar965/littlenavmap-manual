@@ -9,12 +9,19 @@ Installing Map Themes
 Additional map themes can be installed in the directory set in options on page :ref:`options-cache-and-files`,
 section :ref:`options-mapthemes`. You have to enter a valid path there before using map themes.
 
-New maps come as downloads with different directory structures. Some contain the base directory ``data\maps\earth`` in the downloaded archive some do not.
+New maps come as downloads with different directory structures. Some contain the base directory ``data\maps\earth``
+in the downloaded archive and some do not.
 Each map installed theme has to consist of a directory containing the related ``.dgml`` and other files.
 The name of the map directory and the ``.dgml`` file have to match. For example ``.../norway-topo/norway-topo.dgml``.
 
 Note that you have to restart *Little Navmap* to see the new map themes.
 
+The menu ``View`` -> :ref:`theme-menu` in the main menu and the toolbar drop
+down box will receive an entry for each additional map theme.
+
+The option :ref:`show-country-and-city-names` is
+enabled for all additional map themes but might not work depending on
+properties defined in the map's DGML file.
 
 .. figure:: ../images/map_theme_options.jpg
         :scale: 70%
@@ -45,59 +52,28 @@ Note that you have to restart *Little Navmap* to see the new map themes.
 
    Fix the issues by removing the broken or duplicate map themes and restart *Little Navmap*.
 
-.. important::
-
-    Do not use the path ``.../data/maps/earth`` in the installation directory do install maps.
-    This location is deprecated.
+.. include:: include/THEMEWARN.rst
 
 .. _creating-map-themes:
 
 Creating Map Themes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To add an arbitrary online or offline map to *Little Navmap* simply add
-the map directory from a downloaded or self created map theme to the
-``data\maps\earth`` directory.
+.. VERSION_NUMBER_TODO update branch in link
 
-Note that you need to restart *Little Navmap* to see the new map themes in the menu.
-
-.. tip::
-
-      Also check out the `Little Navmap Support Forum at
-      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__,
-      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ and
-      `LittleNavmapOFMTheme <https://github.com/AmbitiousPilots/LittleNavmapOFMTheme>`__ for more map themes.
-
-The full path to the DGML file (see links below for more details about DGML) describing the map must be
-``...\Little Navmap\data\maps\earth\opencyclemap\opencyclemap.dgml`` if
-you like to add the `OpenCycleMap <https://www.opencyclemap.org>`__ for
-example. The DGML file can refer to an online map service or included
-offline map data. Usually a map theme contains many more files than only
-the DGML.
-
-The menu ``View`` -> :ref:`theme-menu` in the main menu and the toolbar drop
-down box will receive an entry for each additional map theme.
-
-The option :ref:`show-country-and-city-names` is
-enabled for all additional map themes but might not work depending on
-properties defined in the map's DGML file.
-
-See the comments in the included file ``data\maps\earth\example\example.dgml`` or here online
-`example.dgml <https://raw.githubusercontent.com/albar965/littlenavmap/release/2.8/marble/data/maps/earth/example/example.dgml>`__ for more information.
+See the comments in the included file ``...\Little Navmap\data\maps\earth\example\example.dgml``
+or here online `example.dgml <https://raw.githubusercontent.com/albar965/littlenavmap/release/3.0/marble/data/maps/earth/example/example.dgml>`__
+for more information.
 
 More maps and information about map configuration and DGML files can be
 found here on the Marble and KDE pages:
 
--  Download more maps for the Marble widget (only Earth maps are
-   supported in *Little Navmap*): `Additional
-   Maps <https://marble.kde.org/maps.php>`__
--  A tutorial that shows how to create a map theme based on tiled
-   images:
+-  Download more maps for the Marble widget (only Earth maps are supported in *Little Navmap*):
+   `Additional Maps <https://marble.kde.org/maps.php>`__
+-  A tutorial that shows how to create a map theme based on tiled images:
    `Marble/CustomMaps <https://techbase.kde.org/Marble/CustomMaps>`__
--  A tutorial showing how to create a map theme based on `OSM Slippy
-   Maps <https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames>`__:
-   `How to create map themes based on OSM slippy
-   maps <https://techbase.kde.org/Marble/OSMSlippyMaps>`__
--  How to create a historical map for Marble: `Historical Maps for
-   Marble <https://techbase.kde.org/Marble/HistoricalMaps>`__
+-  A tutorial showing how to create a map theme based on
+   `OSM Slippy Maps <https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames>`__:
+   `How to create map themes based on OSM slippy maps <https://techbase.kde.org/Marble/OSMSlippyMaps>`__
+-  How to create a historical map for Marble: `Historical Maps for Marble <https://techbase.kde.org/Marble/HistoricalMaps>`__
 
