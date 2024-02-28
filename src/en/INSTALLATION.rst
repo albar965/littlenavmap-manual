@@ -101,7 +101,7 @@ Start menu entries for all included programs as well as the most important files
 .. note::
 
      There is no need to install or modify any files in the installation directory for the
-     webserver or map themes.
+     web server or map themes.
 
      See options page :ref:`options-web-server` for information how to change the root directory and
      :doc:`MAPTHEMES` for information how to set the map theme directory and how to install additional map

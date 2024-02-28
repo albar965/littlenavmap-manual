@@ -19,7 +19,7 @@ Loading of files and settings optionally skipped in clean mode:
 -  Window layout
 -  KML files.
 
-No files are modified or removed.
+No user files are modified or removed.
 
 A Zip file with all important settings and other files is created and can be shown by
 clicking the blue link in the notification dialog.

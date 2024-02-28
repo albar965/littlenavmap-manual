@@ -14,7 +14,7 @@ The web server is not started per default. You can start it in the menu ``Tools`
 
 Port and other settings can be changed in options on page :ref:`options-web-server`.
 
-You need to adjust your router settings to access the *Little Navmap* webserver from the internet
+You need to adjust your router settings to access the *Little Navmap* web server from the internet
 outside your local network. Check out your router manual how to do this.
 In general you have to change the firewall settings to forward the port
 8965 from the router to the computer running *Little Navmap*.
@@ -129,7 +129,7 @@ Web Developers
 HTTP requests.
 
 See directory ``.../Little Navmap/web/test.html`` or
-``http://localhost:8965/test.html`` when running the webserver for
+``http://localhost:8965/test.html`` when running the web server for
 examples.
 
 
@@ -143,7 +143,7 @@ for more information.
 
 **Examples:**
 
-You have to run the *Little Navmap* webserver for these examples to work. See :ref:`run-webserver`.
+You have to run the *Little Navmap* web server for these examples to work. See :ref:`run-webserver`.
 
 -  Get airport information about EDDM: `http://localhost:8965/api/airport/info?ident=eddm <http://localhost:8965/api/airport/info?ident=eddm>`__.
 -  Get all map features in the given rectangle: `http://localhost:8965/api/map/features?toplat=50&bottomlat=49&leftlon=8&rightlon=9 <http://localhost:8965/api/map/features?toplat=50&bottomlat=49&leftlon=8&rightlon=9>`__.

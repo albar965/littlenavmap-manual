@@ -83,7 +83,13 @@ Choose your simulator and click ``Connect``.
 
 Go to main menu ``Tools`` -> :ref:`flight-simulator-connection` or click |Flight Simulator Connection| on the toolbar to do this manually.
 See :doc:`CONNECT` for more information.
-The included *Little Xpconnect* plugin has to be installed for X-Plane.
+
+.. important::
+
+   The included *Little Xpconnect* plugin has to be installed for X-Plane.
+   You can do this from the main menu ``Tools`` -> :ref:`install-xpconnect`
+
+   See :doc:`XPCONNECT` for more information.
 
 .. _building-flightplan:
 

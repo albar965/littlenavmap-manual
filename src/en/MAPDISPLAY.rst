@@ -171,7 +171,10 @@ Map overlays provide additional functionality to move around the map and more.
 You can show or hide them by right clicking on them and selecting ``Hide``.
 Overlays can also be shown in menu ``Window`` -> :ref:`map-overlays`.
 
-Deselect ``Lock`` from the overlay context menu to allow moving the overlays around the map.
+Deselect ``Lock`` from the overlay context menu to allow moving the overlay around the map.
+
+The context menu also has menu items which allow to customize the appearance and function of
+an overlay.
 
 .. figure:: ../images/overlays.jpg
     :scale: 70%

@@ -71,7 +71,7 @@ Up to three words can be searched for. Partial matches are hightlighted.
 Options Hints
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Added hints prefixed with a lightbulb in the options dialog pointing to other related settings.
+Added hints prefixed with a light bulb in the options dialog pointing to other related settings.
 Some hints contain a link which directly opens the related page. Bold text is still an important
 note like `Restart required`.
 
