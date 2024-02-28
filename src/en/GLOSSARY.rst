@@ -104,6 +104,14 @@ IGS
 ILS
     Instrument landing system.
 
+IPv4
+    Internet Protocol version 4. Slowly replaced by IPv6. Often used in parallel with IPv6.
+    IP addresses look like ``192.168.1.1``.
+
+IPv6
+    Internet Protocol version 6 replacing IPv4.
+    IP addresses look like ``fe80::c0b9:1832:abc5:d5a1``.
+
 Initial Fix
     This is the first fix of a procedure.
 

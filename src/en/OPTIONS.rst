@@ -960,7 +960,7 @@ Configuration options for the internal web server of *Little Navmap*.
    show a warning if no ``index.html`` file is found in the root
    directory.
 -  ``Port number``: Default 8965. That means you have to use the address
-   ``http://localhost:8965/`` in your browser to access the web page of
+   ``http://localhost:8965/`` or similar in your browser to access the web page of
    *Little Navmap*, for example. Change this value if you get errors
    like ``Unable to start the server. Error: The bound address is already in use.``.
 -  ``Use encrypted connection (HTTPS / SSL)``: Encrypted connections use
@@ -974,11 +974,20 @@ Configuration options for the internal web server of *Little Navmap*.
    The server status (running or not running) is reverted to the
    previous state when pressing ``Cancel`` in the options dialog.
 -  Label ``Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)``:
-   Shows a list of links to the web server. Clicking on either one opens the page in
-   your default browser. You can always try the IP addresses if the
-   computer names does not work.
-   The list contains all computer addresses for IPv4 (like ``my-computer:8965 (192.168.1.1:8965)``) and
-   IPv6 (like ``my-computer:8965 (fe80::c0b9:1832:abc5:d5a1:8965)``).
+   Shows a list of valid links using the IP address and the hostname (your computer name) of the web server.
+   Clicking on either one opens the page in your default browser. You can always try the IP addresses if the
+   computer names does not work. Some addresses might not work depending on network configuration.
+
+   Note that the IP address of a computer can change for every reboot depending on network or router configuration.
+   Try to use the host name which is stable.
+
+   The list contains all computer addresses for `IPv4 <https://en.wikipedia.org/wiki/Internet_Protocol_version_4>`__
+   (like ``my-computer:8965 (192.168.1.1:8965)``) and
+   `IPv6 <https://en.wikipedia.org/wiki/IPv6>`__ (like ``my-computer:8965 (fe80::c0b9:1832:abc5:d5a1:8965)``).
+
+   You might see more than one IPv4 address (e.g. one for WIFI and one for Ethernet) and several addresses for IPv6 if enabled.
+
+
 
 See :doc:`WEBSERVER` for detailed information.
 

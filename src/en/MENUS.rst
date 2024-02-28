@@ -2497,7 +2497,7 @@ See chapter :doc:`XPCONNECT` for more information.
 Run Web Server
 ^^^^^^^^^^^^^^^
 
-Starts the internal web server of *Little Navmap*. Access the web page
+Starts the internal web server of *Little Navmap* using the first valid IPv4 address. Access the web page
 using the menu item ``Open Web server Page in Browser`` below.
 
 See chapter :doc:`WEBSERVER` for detailed information and options page :ref:`options-web-server` for configuration options.
@@ -2505,7 +2505,7 @@ See chapter :doc:`WEBSERVER` for detailed information and options page :ref:`opt
 .. _open-webserver:
 
 Open Web Server Page in Browser
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Only enabled if the web server is running. Opens the webserver page in
 your default browser. The default address is like
