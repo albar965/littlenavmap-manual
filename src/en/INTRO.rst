@@ -135,7 +135,7 @@ These message are shown in the :doc:`STATUSBAR`, :ref:`flight-plan-table` fields
 
 .. figure:: ../images/ui_warning_err.jpg
 
-    A red error message in the flight plan footer and a orange warning message in the flight plan fuel report.
+    A red error message in the flight plan footer and an orange warning message in the flight plan fuel report.
 
 .. _ui-tables:
 

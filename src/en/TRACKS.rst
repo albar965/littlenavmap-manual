@@ -16,6 +16,15 @@ Note that AUSOTS tracks are currently not available. It is unknown if they will 
 
     Image showing all track related functions in *Little Navmap*. *Click image to enlarge.*
 
+.. important::
+
+    You need updated and complete navdata to read the tracks correctly.
+
+    This is either the MSFS or the updated Navigraph or X-Plane scenery libraries.
+
+    Install the latest Navigraph navdata update and use the options :ref:`navigraph-auto`, :ref:`navigraph-all` or
+    :ref:`navigraph-navaid-proc` in the menu ``Scenery Library`` -> ``Navigraph``.
+
 Download
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

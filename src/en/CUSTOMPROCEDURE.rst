@@ -44,7 +44,7 @@ Departure Runway
 
 Set this by using :ref:`select-departure-runway`. :ref:`set-departure-runway-map` or from the context menu of the airport search tab.
 
-Selecting a departure runway adds a extended runway center line. The
+Selecting a departure runway adds an extended runway center line. The
 length of the runway extension can be changed when adding the departure runway.
 
 The departure guidance is a part of the flight plan similar to a procedure.

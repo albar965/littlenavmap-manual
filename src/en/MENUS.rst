@@ -73,7 +73,7 @@ This is needed to avoid restriction violations and resulting error messages in t
 You will see a notification dialog if this is the case. Adjust the cruise altitude manually if needed (:ref:`flight-plan-altitude`).
 
 This correction applies to all plans
-which are loaded manually by a user. The change is stored in the undo/redo stack and can be
+which are loaded manually by an user. The change is stored in the undo/redo stack and can be
 undone to revert to the previously invalid cruise altitude.
 The corrected altitude depends on plan type (IFR or VFR), used procedures and used airways.
 
@@ -228,12 +228,10 @@ See :doc:`FLIGHTPLANFMT` for more information on limitations.
 
 This does not change the current file name and type. Further saves will still use the same file name and format as before.
 
-Store FMS files into the ``Output/FMS plans`` directory inside the
-X-Plane directory if you would like to use the flight plan in the
-X-Plane GPS, the G1000 or the FMS.
-
 The proposed file name can be defined in the :ref:`multiexport-options` for formats ``X-Plane 11``.
 Note that the two export format entries for X-Plane 11 and 12 use the same file format but a different directory.
+
+.. include:: include/LOADFMSTIP.rst
 
 .. _save-flight-plan-as-fgfp:
 
@@ -584,11 +582,6 @@ a full list or shortcuts.
 
 Allows undo and redo of flight plan changes. The last action is shown in the menu item like ``Add Waypoint``, for example.
 The undo information is cleared when restarting *Little Navmap*.
-
-
-
-
-
 
 .. _select-a-start-position-for-departure:
 
@@ -1385,7 +1378,7 @@ See also :doc:`MSA`.
 
 Hides or shows the respective user features.
 
-The respective option is automatically enabled after a user feature is added to the map.
+The respective option is automatically enabled after an user feature is added to the map.
 
 User features can also be toggled with the toolbar button |User Features|.
 
@@ -1410,7 +1403,7 @@ You can tear off the drop down menu from the toolbar by clicking on the dashed l
 The previous selection state is restored by clicking the ``All Userpoints`` or ``No Userpoints`` items a second time in
 the toolbar button dropdown menu.
 
-The respective type is automatically enabled after a userpoint is added to the map.
+The respective type is automatically enabled after an userpoint is added to the map.
 
 Custom userpoint categories show up in this menu too.
 
@@ -1503,7 +1496,7 @@ The option :ref:`show-vertical-track-profile` in the elevation profile provides 
 
 The selected autopilot altitude value can be seen in :ref:`progress-info` when enabling ``Autopilot Selected`` in :ref:`progress-configuration`.
 
-Note that some add-on aircraft do not provide a useful autopilot altitude and use the value for their own purposes.
+Note that some add-on aircraft do not provide an useful autopilot altitude and use the value for their own purposes.
 
 .. figure:: ../images/altitude_range.jpg
 
@@ -2558,7 +2551,7 @@ Create an Issue Report
 
 Manually creates an issue report Zip archive containing all needed files to reproduce a problem.
 
-See chapters :doc:`ISSUEREPORT` and :doc:`CRASHREPORT` for more information.
+See chapter :doc:`ISSUEREPORT` for more information.
 
 .. _files-and-directories:
 

@@ -505,6 +505,12 @@ A restart might be needed after changing keys.
 
 Click one of the following links to go directly to the account pages of the respective map services. You need to sign in.
 
+.. note::
+
+    All services are free to use at the time of writing these instructions. You do not have to enter
+    you credit card, account or other payment informaion to use these. Simply ignore these sections when signing in.
+
+
 .. warning::
 
    Do not show these keys publicly in forums on screenshots.
@@ -641,7 +647,7 @@ This setting is only applicable if :ref:`simulator-aircraft-center-wp` above is 
 Allow scrolling and zooming in the map and jump back to aircraft after
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-This setting allows a user to move around in the map without the need to manually disable the
+This setting allows an user to move around in the map without the need to manually disable the
 aircraft centering.
 
 Time until aircraft following is activated again after any manual map
@@ -1037,7 +1043,7 @@ See :doc:`MAPTHEMES` for installation instructions.
 
 External map themes are ignored if this field is empty.
 
-.. important::
+.. warning::
 
     Do not use the path ``.../data/maps/earth`` in the installation directory do install maps.
     This location is deprecated.

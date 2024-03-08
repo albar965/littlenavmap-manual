@@ -38,7 +38,7 @@ BGL
     information which is not relevant for *Little Navmap*.
 
 Checkbox
-    A user interface element that allows to toggle a setting between two states (on and off)
+    An user interface element that allows to toggle a setting between two states (on and off)
     or three states (on, off and not applicable).
 
 CSV

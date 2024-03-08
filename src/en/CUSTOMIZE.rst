@@ -322,6 +322,10 @@ The text between the first underscore ``_`` and the ``.png`` ending
 defines the category. For example ``userpoint_My Places.png`` creates a
 new category ``My Places``.
 
-Do not use special characters like ``/`` for categories. Only letters,
+Do not use special characters like ``/``, ``:``, ``;`` or ``\`` for categories. Only letters,
 digits, space, underscore and dashes are allowed. Special characters like umlauts or accented
 characters are no problem.
+
+.. warning::
+
+    Adding a large amount of userpoint icons can slow down the program startup significantly.

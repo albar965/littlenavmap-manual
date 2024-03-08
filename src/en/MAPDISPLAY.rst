@@ -110,7 +110,7 @@ Click spots and hotspots for tooltips are:
 - Center of MSA diagrams (small circle).
 - Start and end of a measurement line (circle and cross).
 - Runway threshold point (small circle) for airport traffic patterns.
-- Holding fix (small triangle) of a user holding.
+- Holding fix (small triangle) of an user holding.
 
 .. _mouse-clicks-modifiers:
 
@@ -251,8 +251,9 @@ Labels can be changed on options page :ref:`options-map-labels`.
 
 .. tip::
 
-    Hide all map features to get a clean view on flight plan related airports and navaids only.
-    This will hide all unneeded map objects but keeps all navaids and related navaids for procedures like ILS for the approach on the map.
+    Hide all map features from the toolbar to get a clean view on flight plan related airports and navaids only.
+    This will get rid of all unneeded map objects but keeps all navaids and related navaids for procedures
+    like ILS for the approach on the map.
 
 .. _airport-diagram-map:
 
@@ -286,6 +287,30 @@ Disable all airport features except runways if you'd like to rely on the airport
       on the left. Long displaced threshold of runway 33 is visible. Dashed
       yellow lines indicate taxi paths. *Click image to enlarge.*
 
+.. _map-clutter:
+
+Declutter
+~~~~~~~~~~~~~~~~~~~~
+
+Having to much content on the map display makes it confusing, unclear and slows down the program.
+There are different needs for flight planning and flying a map.
+
+For planning keep these visible:
+
+- Airports filtered according to your aircraft (:ref:`airports-menu`).
+  This means that you hide unpaved airports, helipads and more when flying an airliner, for example.
+- VOR, NDB, waypoints, airways (if used) and probably airspaces.
+- ILS and RNP/GLS slopes if needed to find a suitable airport.
+
+When flying after building a flight plan disable all unneeded features. All related navaids are
+always shown with the flight plan.
+
+- Limit airport display to the ones which can be used as alternates. Adjust filter as needed or keep them off.
+- Maybe enable VOR and NDB to cross check your position while flying if desired.
+  Related navaids like VOR are forced to be shown when using procedures anyway.
+- Disable airways and waypoints. These are already a part of the plan and are not needed for flying.
+- Disable ILS and RNP/GLS slopes. These are already forced to display with the flight plan if used.
+- Limit the airspace display to the relevant airspaces (:ref:`menu-airspaces`) also limiting by flight plan altitude.
 
 .. _map-projection:
 
@@ -568,8 +593,8 @@ added to the plan.
 
 .. tip::
 
-      All information from a userpoint like remarks, ident, region and name are copied to the
-      flight plan position if you right click on a userpoint and select ``Add Position to Flight Plan``
+      All information from an userpoint like remarks, ident, region and name are copied to the
+      flight plan position if you right click on an userpoint and select ``Add Position to Flight Plan``
       or ``Append Position to Flight Plan``.
 
 .. _append-position-to-flight-plan:
@@ -744,7 +769,7 @@ Removes a map feature added by the user.
 -   Enabled if clicked on the **holding** hotspot (holding fix, white filled triangle)
     which is indicated by a hand cursor.
 -   Removes the selected **MSA diagram** from the map. This menu item is active if you
-    right-click on the hotspot of a user added MSA diagram (small circle in center).
+    right-click on the hotspot of an user added MSA diagram (small circle in center).
 
 .. _mark-airport-addon-map:
 
@@ -753,7 +778,7 @@ Removes a map feature added by the user.
 
 Marks an airport with a yellow circle as add-on.
 
-This function will add a userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
+This function will add an userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
 
 You can add you own userpoint type names starting with ``Addon`` to create more add-on categories. See :ref:`customize-icons` for more information.
 

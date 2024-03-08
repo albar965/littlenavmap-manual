@@ -20,7 +20,13 @@ You have to build the route again by pressing the button :ref:`routecalc-calcula
       especially when using procedures.
       Delete waypoints manually if you find such cases.
 
+.. tip::
 
+     Select departure and arrival procedures like SID and STAR before calculating a flight plan.
+     This allows *Little Navmap* to calculate the shortest plan between SID exit and STAR entry points.
+
+     Enable airspace display (:ref:`show-victor-airways` and :ref:`show-jet-airways`) to see which SID and STAR
+     end or start at airways.
 
 .. figure:: ../images/routecalc.jpg
 

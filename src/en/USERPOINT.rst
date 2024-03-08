@@ -100,7 +100,7 @@ Delete userpoints having no information except coordinates and type
   Removes empty userpoints without any information.
 
 Remove duplicates using additional fields as criteria.
-  A userpoint will considered a duplicate to another if all selected fields are equal. The following fields can be checked:
+  An userpoint will considered a duplicate to another if all selected fields are equal. The following fields can be checked:
 
   -  Ident, Name, and Type
   -  Region

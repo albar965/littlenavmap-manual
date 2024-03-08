@@ -229,6 +229,8 @@ Read the X-Plane manuals for the respective devices on how to load plans inside 
 
 Flight plans of this format can be loaded into *Little Navmap* using menu ``File`` -> :ref:`open-flight-plan`.
 
+.. include:: include/LOADFMSTIP.rst
+
 .. note::
 
       *Little Navmap* cannot determine the cruise altitude of a flight plan

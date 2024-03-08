@@ -113,6 +113,8 @@ Uninstall
 You can uninstall *Little Navmap* by right clicking on the icon in the Windows start menu and selecting ``Uninstall``.
 Alternatively uninstall *Little Navmap* from Windows settings or control panel.
 
+The installer removes only known installed files. All other user created files or directories in the installation directory are not touched.
+
 The uninstaller asks to optionally delete all settings and databases created by *Little Navmap* after removing the main program.
 Files in directories like ``Documents\Little Navmap`` are not deleted.
 

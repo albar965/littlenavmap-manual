@@ -67,11 +67,11 @@ or a file manager like Windows Explorer with directories or files.
 
 .. _scenery:
 
-Scenery Information
+Data Sources
 ~~~~~~~~~~~~~~~~~~~
 
 All information about airports and navaids includes one or more links at
-the bottom of the object information in section ``Data Source``. These links
+the bottom of the object information in section ``Data Sources``. These links
 point to the matching BGL (FSX, P3D and MSFS) or ``apt.dat`` (X-Plane) files that
 contain information about the airport or navaid. Click the links to open
 the containing directory in your file manager (e.g. Windows Explorer).

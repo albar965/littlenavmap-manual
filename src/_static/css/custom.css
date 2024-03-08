@@ -177,6 +177,12 @@ color:     blue;
   margin-bottom: 0.1em;
 }
 
+/*.rst-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+}*/
+
 /*.caption {
 background:     #f4f4f4;
 }*/

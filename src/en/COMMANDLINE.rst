@@ -48,11 +48,6 @@ Both short and long options are available.
   --help-all                                     Displays help including Qt
                                                  specific options.
   -v, --version                                  Displays version information.
-  -s, --settings-directory <settings-directory>  Use <settings-directory>
-                                                 instead of ``ABarthel``. This
-                                                 does *not* override the full
-                                                 path. Spaces are replaced with
-                                                 underscores.
   -p, --settings-path <settings-path>            Use <settings-path> to store
                                                  options and databases into the
                                                  given directory.

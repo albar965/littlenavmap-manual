@@ -75,6 +75,34 @@ The indication is based on the selection in menu ``Weather`` -> :ref:`airport-we
 runways for wind and weather source. Head and crosswind for each runway in
 the selection table.
 
+.. _procedure-warning:
+
+Runway Mismatches between Simulator and Navigation Data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A warning message is shown if procedure runways from the navdata cannot be not found for simulator airport. This means
+that runways from navigation data do not match runways of the simulator airport data.
+
+You can update the navigation data or update or install an add-on airport to fix this.
+
+Procedures can still
+be used for such airports since Little Navmap uses a best guess to cross reference simulator
+runways. As a result you will see slightly differring runway numbers in portions of the program.
+
+Issues with add-ons or simulators using exported flight plans might show up, though.
+
+See chapter :doc:`NAVDATA` for more information on simulator and navigation databases.
+
+.. figure:: ../images/runwaymismatch.jpg
+    :scale: 60%
+
+    This image shows place where runway mismatches show up in *Little Navmap*.
+    In December 2022 the runways of El Dorado Intl (SKBO) were renamed due to
+    magnetic heading drift. This can occiasinally happen at airports.
+    The airport SKBO has the runways 13L, 13R, 31R and 31L in the simulator
+    while the latest navigation data refers to 14L, 14R, 32L and 32R.
+    *Click image to enlarge.*
+
 .. _procedure-preview:
 
 Preview and Highlights

@@ -1,7 +1,7 @@
 Loading Airspaces
 ---------------------------------------------
 
-Airspaces are loaded from the Navigraph database, simulator database, a user defined directory or online flying services.
+Airspaces are loaded from the Navigraph database, simulator database, an user defined directory or online flying services.
 You can select airspaces to show in the main menu ``Scenery Library`` -> :ref:`airspace-source`.
 
 .. _load-scenery-library-p3d-fsx-airspaces:
@@ -17,7 +17,7 @@ are added in the airspace source ``Simulator``.
 Airspace Formats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* can read three airspace formats from a user defined directory.
+*Little Navmap* can read three airspace formats from an user defined directory.
 
 See :ref:`airspace-source` for more information on airspace sources.
 

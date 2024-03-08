@@ -23,6 +23,12 @@ The option :ref:`show-country-and-city-names` is
 enabled for all additional map themes but might not work depending on
 properties defined in the map's DGML file.
 
+.. note::
+
+     Some map themes require an user account and an API key or token to use them.
+     See options page :ref:`options-map-keys` for more information.
+
+
 .. figure:: ../images/map_theme_options.jpg
         :scale: 70%
 
