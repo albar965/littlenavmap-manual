@@ -57,8 +57,7 @@ You can use the scenery path to look for add-on airports of a certain
 developer. Click on one of the add-on airports and copy the relevant
 part of the path from the information window. Insert this path fragment
 into the ``Scenery Path`` input field in the airports tab of the search
-dock window. Add ``*`` at the beginning and at the end since it is only
-part of a path.
+dock window.
 
 See also :ref:`text-filters`.
 

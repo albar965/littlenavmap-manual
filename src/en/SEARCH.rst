@@ -41,7 +41,6 @@ term of ``Chicago`` will find the airports Gary Chicago as well as O'Hare (due t
 Use stars ``*`` as wildcards matching any text and double quotes ``"`` for exact word match.
 Using ``"EDDE"`` will find the the airport Erfurt-Weimar (EDDE) only.
 
-
 The search is negated (i.e. find all entries that do **not** match) if the first
 character of a search term is a ``-``.
 
@@ -94,21 +93,30 @@ Linux or a ``-`` for macOS).
 |Menu Button| Menu Button
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Airport, navaid, userpoint and online search tabs contain multiple rows
-of search filters. These rows can be switched on and off with the drop
+Airport, navaid, userpoint and online search tabs contain multiple sections
+of search filters. These sections can be switched on and off with the drop
 down menu on the menu button |Menu Button| on the top right.
 
 The drop down menu prefixes menu items with a change indicator to
-show that the related filter row has modifications.
+show that the related filter section has modifications.
 The menu item suffix ``(changed)`` shows an option is modified and
 visible to the user. ``(changed, not used)`` indicates a modified option which is not used since the
 related fields are hidden from the dropdown menu button.
 
 .. tip::
 
-      If you do not get the expected results or no results at all use the
-      :ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
-      clear all search criteria.
+    If you do not get the expected results or no results at all use the
+    :ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
+    clear all search criteria.
+
+
+.. figure:: ../images/searchmenu.jpg
+
+    Click the dropdown menu. This will indicate if there are changes in the related section.
+    Facilities are all the airport properties like add-on, tower and so on in this example.
+    *Little Navmap* ignores sections in the search which are not visible (unchecked in the drop down menu).
+    (1) has changes in a visible section (``Lighted``) and (2) has changes in a hidden section (``Runway``)
+    which are ignored.
 
 .. _distance-search:
 
@@ -133,7 +141,7 @@ Symbol| symbol.
 To restrict the search further you can select a direction (North, East,
 South and West).
 
-Check the drop down menu for the change indicator ``*`` and the search
+Check the drop down menu for the suffix ``(changed)`` and the search
 fields for any remaining text if the distance search does not give any
 or unexpected results. Use the
 :ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
@@ -308,8 +316,10 @@ manual in the default browser.
 
 Drop down menu button that allows to hide or show search options.
 
-The drop down menu prefixes menu items with a change indicator ``*`` to
-show that the related filter row has modifications. You can use this to
+See :ref:`menu-button-search` for details.
+
+The drop down menu suffixes menu items with an indicator ``(changed)`` to
+show that the related filter section has modifications. You can use this to
 find out why a search does not give the expected results.
 
 .. _search-result-table-view-context-menu:
