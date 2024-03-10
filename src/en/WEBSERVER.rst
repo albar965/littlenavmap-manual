@@ -27,6 +27,15 @@ Web Page
 ~~~~~~~~
 
 This chapter describes the legacy web interface of *Little Navmap*.
+The new interface is mostly self explaning and allows to zoom using the mouse wheel.
+
+.. note::
+
+     The web page uses the same map display settings as the main program. All changes in menu ``View``
+     are reflected on the web page.
+
+     Only map position and zoom distance can be changed in the web page which allows flight following
+     or using it as an additional map display but no flight planning.
 
 Page Links on Top of each Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
