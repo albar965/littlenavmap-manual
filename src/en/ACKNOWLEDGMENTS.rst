@@ -20,8 +20,7 @@ Current AIRAC cycles can be purchased from
 A big Thank you! to Jean Luc from `Reality
 XP <http://www.reality-xp.com>`__ for his great support.
 
-Thanks to Jose from `fsAerodata <https://www.fsaerodata.com/>`__ for his
-kind support.
+Thanks to Jose from fsAerodata for his kind support.
 
 The French translation of the program was done by Patrick JUNG alias
 Patbest. Thank you!

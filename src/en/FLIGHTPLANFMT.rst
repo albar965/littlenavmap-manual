@@ -677,8 +677,7 @@ VATSIM vPilot or SWIFT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Flight plan format for the VATSIM
-`vPilot <https://www.vatsim.net/pilots/download-required-software>`__ online network
-client.
+vPilot online network client.
 
 :doc:`ROUTEEXPORT` will appear
 before where you can add all needed information.

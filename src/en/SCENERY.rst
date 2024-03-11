@@ -72,7 +72,7 @@ FSX, Prepar3D and Microsoft Flight Simulator 2020
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Little Navmap* is compatible with navdata updates from
-`fsAerodata <https://www.fsaerodata.com>`__, the `FSX/P3D Navaids
+the `FSX/P3D Navaids
 update <http://www.aero.sors.fr/navaids3.html>`__ and
 the Navigraph update for Microsoft Flight Simulator 2020.
 

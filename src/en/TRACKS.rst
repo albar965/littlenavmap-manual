@@ -7,7 +7,7 @@ Tracks are a structured set of flight routes that stretch across the Atlantic, P
 
 -  `NAT <https://en.wikipedia.org/wiki/North_Atlantic_Tracks>`__: North Atlantic Tracks
 -  `PACOTS <https://en.wikipedia.org/wiki/Pacific_Organized_Track_System>`__: Pacific Organized Track System
--  `AUSOTS <https://www.airservicesaustralia.com/ausots/ausotstoday.asp>`__: Australian Organised Track Structure
+-  AUSOTS: Australian Organised Track Structure
 
 Note that AUSOTS tracks are currently not available. It is unknown if they will reappear.
 

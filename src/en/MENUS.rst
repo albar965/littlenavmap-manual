@@ -362,8 +362,7 @@ column order. Columns which are hidden or shrinked to minimum width are excluded
 Export Flight Plan for vPilot, xPilot or SWIFT
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Export the flight plan for the VATSIM
-`vPilot <https://www.vatsim.net/pilots/download-required-software>`__ online network
+Export the flight plan for the VATSIM vPilot online network
 client. Disabled if no flight plan has been loaded or created.
 
 :doc:`ROUTEEXPORT` will appear before where you can add all needed information.
