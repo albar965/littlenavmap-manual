@@ -16,9 +16,9 @@ helpful if you wish to record logbook entries or aircraft performance between fl
 -  ``Reset flight detection in logbook``: Resets the logbook to detect
    takeoff and landing for new logbook entries.
 -  ``Range rings``, ``Measurement lines``, ``Holdings``, ``Traffic patterns`` and ``MSA diagrams``:
-   Removes the respecive user features from the map. Same as :ref:`remove-range-rings` and following.
+   Removes the respective user features from the map. Same as :ref:`remove-range-rings` and following.
 
-The dialog shows a scrollbar on the right side if it is too small.
+The dialog shows a scroll bar on the right side if it is too small.
 
 .. figure:: ../images/resetflight.jpg
 

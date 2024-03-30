@@ -77,7 +77,7 @@ allowed:
 
 All departure or destination procedures are removed if the departure or
 destination airport is moved or replaced. The same applies if waypoints
-are prepended before or appended after departure or destination.
+are inserted before or appended after departure or destination.
 
 .. figure:: ../images/fpedit.jpg
 

@@ -330,7 +330,7 @@ Store these files into the ``Output/FMS plans`` directory inside the X-Plane dir
 |FGFP| FlightGear
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-FlightPlan format which can be loaded into the RouteManager of the free
+A flight plan format which can be loaded into the RouteManager of the free
 flight simulator `FlightGear <http://www.flightgear.org>`__.
 
 You can export this format directly using :ref:`save-flight-plan-as-fgfp`.
@@ -744,7 +744,7 @@ plan as a single HTML web page with all images embedded. You can open
 this page in any web browser.
 
 The exported file will reflect changes of the flight plan table view like
-column order. Columns which are hidden or shrinked to minimum width are excluded.
+column order. Columns which are hidden or shrunk to minimum width are excluded.
 
 .. _garmin-notes:
 

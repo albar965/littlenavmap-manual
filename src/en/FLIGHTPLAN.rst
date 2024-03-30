@@ -206,7 +206,7 @@ This footer line shows information about the selected flight plan legs.
 #.  Number of selected legs.
 #.  From and to waypoint.
 #.  Distance between the two waypoints.
-#.  Flight time based on currect aircraft performance configuration file.
+#.  Flight time based on current aircraft performance configuration file.
 #.  Fuel required in weight and volume units.
 
 .. figure:: ../images/route_footer_selected.jpg
@@ -523,9 +523,9 @@ or navaid when this function is enabled.
 
 Copy the selected entries in CSV format to the clipboard. The CSV will
 include a header. This will reflect changes of the table view like
-column order. Columns which are hidden or shrinked to minimum width are excluded.
+column order. Columns which are hidden or shrunk to minimum width are excluded.
 
-Import the CSV text into spreadsheed programs using UTF-8 encoding and a semicolon as a separator.
+Import the CSV text into spreadsheet programs using UTF-8 encoding and a semicolon as a separator.
 
 .. _select-all-0:
 

@@ -114,7 +114,7 @@ This quick introduction shows only one of many ways to build a flight plan and s
 
 See also in the menu ``Help`` -> :doc:`TUTORIALS` if you're new to *Little Navmap*.
 
-See here :doc:`TUTORIALPERF` for an tutorial which shows how to create your own aircarft
+See here :doc:`TUTORIALPERF` for an tutorial which shows how to create your own aircraft
 performance files or download one here:
 `Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
 

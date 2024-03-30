@@ -85,7 +85,7 @@ Cruise altitude for calculation
 
 Sets the cruise altitude which will be used to select airways based on their lower and
 upper altitude limits when calculating the route.
-Changing cruise altitude for calulation can result in shorter or better airway routes.
+Changing cruise altitude for calculation can result in shorter or better airway routes.
 
 The value will be assigned to the flight plan (:ref:`flight-plan-altitude`) after calculation.
 
@@ -121,7 +121,7 @@ Criteria for airway selection are always direction for one-way airways and altit
 
 .. note::
 
-   Changing cruise altitude for calulation can result in shorter or better airway routes. Try to adjust this
+   Changing cruise altitude for calculation can result in shorter or better airway routes. Try to adjust this
    if the result of the calculation is not satisfying.
 
    You can also put the slider :ref:`routecalc-prefer` more to the right to ignore airways or use direct routing between

@@ -106,7 +106,7 @@ Highlights
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Selecting a row in the flight plan table or a search result table causes the related feature to be highlighted on the map.
-Hovering the mouse over the elevation profile will hightlight the related flight plan position on the map.
+Hovering the mouse over the elevation profile will highlight the related flight plan position on the map.
 
 Highlights can be customized in the options dialog on page :ref:`options-map-user`.
 See also :ref:`highlights-map`.
@@ -408,7 +408,7 @@ Display of airports can be enabled or disabled in menu ``View`` -> :ref:`airport
 |                                   | You can disable this in              |
 |                                   | the options dialog on page           |
 |                                   | :ref:`options-map-display` by        |
-|                                   | unchecking                           |
+|                                   | deselecting                          |
 |                                   | ``Highlight add-on airports``.       |
 +-----------------------------------+--------------------------------------+
 | |Airport Weather|                 | Weather at airport. See chapter      |

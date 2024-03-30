@@ -10,7 +10,7 @@ The dialog window contains the following input fields:
 -  ``Aircraft range``: Displays one range ring for the aircraft endurance based on the current aircraft performance profile.
    The endurance is static and does not change with current user aircraft parameters.
    It is calculated from usable fuel, cruise fuel flow, true airspeed at cruise, reserve fuel and contingency fuel as set in the :doc:`AIRCRAFTPERF` file.
-   See also :ref:`show-aircraft-endurance-map` for another way to display a dynamic range based on actual user aircraft parmeters like fuel on board.
+   See also :ref:`show-aircraft-endurance-map` for another way to display a dynamic range based on actual user aircraft parameters like fuel on board.
 -  ``Label``: An additional label which is attached to the rings.
 -  ``Line Color``: Color for range rings and labels.
 -  ``Latitude and Longitude``: Pre-filled with the coordinates at the click spot but can be changed freely.

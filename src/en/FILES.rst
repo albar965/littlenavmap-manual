@@ -162,7 +162,7 @@ The files are:
 -  ``little_navmap_msfs.sqlite``: Microsoft Flight Simulator 2020
 -  ``little_navmap_xp11.sqlite``: X-Plane 11
 -  ``little_navmap_xp12.sqlite``: X-Plane 12
--  ``little_navmap_navigraph.sqlite``: Navigraph navdatabase. Can be
+-  ``little_navmap_navigraph.sqlite``: Navigraph navigation database. Can be
    either the included database or an update installed by the Navigraph
    *FMS Data Manager*.
 

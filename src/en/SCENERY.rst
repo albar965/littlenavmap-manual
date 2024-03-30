@@ -251,13 +251,13 @@ Microsoft Flight Simulator 2020  Airports and Navdata
    all procedures in *Little Navmap*. This is the default.
 
    Also check the selection in menu ``Scenery Library`` -> ``Airspace Libraries``. Select
-   ``Navigraph`` and uncheck ``Simulator`` there.
+   ``Navigraph`` and deselect ``Simulator`` there.
 
 -  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph
    Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids.
 
    The selection in menu ``Scenery Library`` -> ``Airspace Libraries`` should have ``Simulator``
-   checked. Uncheck ``Navigraph`` there.
+   checked. Deselect ``Navigraph`` there.
 
 See :doc:`NAVDATA` and :ref:`load-scenery-library-p3d-fsx-airspaces` for more background
 information on these settings.

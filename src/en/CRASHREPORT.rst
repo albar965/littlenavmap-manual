@@ -7,7 +7,7 @@ a notification dialog if it detects an improper shutdown of the last session, i.
 Note that there is no need to collect the log and other files for a bug report.
 
 You can then choose to start *Little Navmap* in clean mode which will skip loading last used files such as the
-flightplan or window layout that may have caused the crash.
+flight plan or window layout that may have caused the crash.
 
 Loading of files and settings optionally skipped in clean mode:
 

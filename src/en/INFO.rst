@@ -117,7 +117,7 @@ See also :ref:`airport-search-ident` for airport search options.
    Available in X-Plane and Navigraph navdata.
 -  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
    X-Plane.
--  ``X-Plane Ident:``: Internal identfier for X-Plane airports.
+-  ``X-Plane Ident:``: Internal identifier for X-Plane airports.
 
 The airport codes are also shown in the information windows, tooltips and optionally in the map
 labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal

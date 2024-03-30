@@ -205,7 +205,7 @@ shows a column of checkboxes on the right side.
 
 If checked, the field to the left is unlocked and any text entered will
 be assigned to the respective field in all selected userpoints.
-Unchecked fields will not be altered for any of the userpoints.
+Deselected fields will not be altered for any of the userpoints.
 
 In combination with the search function, this allows for bulk
 changes like fixing an invalid region and simultaneously changing the
@@ -260,7 +260,7 @@ You can add you own userpoint type names starting with ``Addon`` to create more 
 Airports
 ^^^^^^^^
 
--  |Addon| **Addon**: Can be used to mark airports manually as addon. Does not show labels to avoid overlap with marked airport.
+-  |Addon| **Addon**: Can be used to mark airports manually as add-on. Does not show labels to avoid overlap with marked airport.
 -  |Airport| **Airport**: Default when creating an userpoint on top of an airport.
 -  |Airstrip| **Airstrip**
 -  |Closed| **Closed airport**

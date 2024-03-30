@@ -31,7 +31,7 @@ Follow the instructions below to install the GLOBE elevation data:
     The direct download link is `all10g.zip <https://ngdc.noaa.gov/mgg/topo/DATATILES/elev/all10g.zip>`__.
 #.  Extract the downloaded file ``all10g.zip`` to an arbitrary place like ``...\Documents\Little Navmap\GLOBE``.
     You can also use the directory which is suggested by the :doc:`FOLDERS` dialog.
-    As a result you will get a directory ``all10`` containing files ``a10g`` to ``p10g``.
+    As a result, you will get a directory ``all10`` containing files ``a10g`` to ``p10g``.
 #.  Open the options dialog in *Little Navmap* and click on |Cache and Files| ``Cache and Files`` on the left side.
 #.  Select ``Use Offline GLOBE Elevation Data`` on the ``Cache and Files`` page in the options dialog.
 #.  Now select the extracted directory ``all10`` using the ``Select GLOBE Directory ...`` button on this options page.

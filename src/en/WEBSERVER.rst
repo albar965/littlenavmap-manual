@@ -27,7 +27,7 @@ Web Page
 ~~~~~~~~
 
 This chapter describes the legacy web interface of *Little Navmap*.
-The new interface is mostly self explaning and allows to zoom using the mouse wheel.
+The new interface is mostly self explaining and allows to zoom using the mouse wheel.
 
 .. note::
 

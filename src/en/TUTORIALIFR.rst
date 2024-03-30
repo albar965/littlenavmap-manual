@@ -44,7 +44,7 @@ Prepare Flight
 
 Use ``Flight`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
-fuel calculation and other functions. Uncheck
+fuel calculation and other functions. Deselect
 ``Create an empty flight plan`` in the dialog if the flight plan is
 already loaded.
 
@@ -458,7 +458,7 @@ and altitude indications for a direct leg to the start of the transition
 Going Missed
 ~~~~~~~~~~~~
 
-I recommend hiding the missed approaches on the map by unchecking
+I recommend hiding the missed approaches on the map by deselecting
 ``View`` -> :ref:`show-missed-approaches` |Show Missed Approaches|. This
 helps uncluttering the map display.
 

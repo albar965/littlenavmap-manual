@@ -36,7 +36,7 @@ See :ref:`flightplan-legend` for more information on the labels and
    the two dark blue fixed labels show the magnetic inbound and outbound course for the VOR based on the calibrated declination for ``LTJ``.
    Use the dark blue and fixed labels when flying VOR to VOR and use the black moving labels when using a GPS.
 
-Futhermore consider the different departure and destination true courses for `Great Circle
+Furthermore consider the different departure and destination true courses for `Great Circle
 <https://en.wikipedia.org/wiki/Great-circle_distance>`__ routes. These appear at long flight plan legs.
 
 .. figure:: ../images/gc_course.jpg

@@ -171,7 +171,7 @@ depending on operating system and user interface style) to open a branch with op
 
 Select checkboxes on the left to enable or disable features. Explanations are given in the right column.
 
-You can also click on the small checkbox in the branch root to select or unselect all elements of the branch.
+You can also click on the small checkbox in the branch root to select or deselect all elements of the branch.
 
 .. figure:: ../images/tree.jpg
 
@@ -363,11 +363,11 @@ The windows and tabs :doc:`FLIGHTPLAN`, :doc:`INFO` and :doc:`SEARCHPROCS` provi
 
 -  Show information about a navaid or airport or show these on the map (link ``Map`` or airport name).
 -  Show procedures of an airport (link ``Procedures``).
--  Hightlight a full airway (link ``Map``).
+-  Highlight a full airway (link ``Map``).
 -  Show waypoints of an airway, e.g. waypoint/region ``ASMUS/EK``.
 -  Highlight airspaces (link ``Map``).
 -  Show airport files in the default file manager (BGL or ``apt.dat`` files).
--  Remove hightlighted features from the map like ``Remove Airspace Highlights`` or ``Remove Airway and Track Highlights``.
+-  Remove highlighted features from the map like ``Remove Airspace Highlights`` or ``Remove Airway and Track Highlights``.
 
 .. figure:: ../images/linkinfo.jpg
     :scale: 70%

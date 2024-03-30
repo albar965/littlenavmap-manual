@@ -46,7 +46,7 @@ Procedure waypoints are excluded from all flight plan formats by
 default. You have to use the GPS or FMS in the simulator to select
 procedures.
 
-Some flightplan formats like X-Plane FMS allow saving and loading of procedures. See :ref:`flight-plan-formats-fms11`. for more information.
+Some flight plan formats like X-Plane FMS allow saving and loading of procedures. See :ref:`flight-plan-formats-fms11`. for more information.
 Transitions cannot be saved with the MSFS PLN format (see :ref:`flight-plan-formats-msfs-pln`).
 
 You can enable saving of waypoints by checking :ref:`export-flight-plan-approach-waypoints` and/or
@@ -72,7 +72,7 @@ You can enable saving of waypoints by checking :ref:`export-flight-plan-approach
 
 A departure and destination runway can be selected instead of an procedure.
 
-Selecting a destination runway adds a final approach leg (runway centerline extension) which can be
+Selecting a destination runway adds a final approach leg (runway center line extension) which can be
 customized by changing altitude, length and offset angle. This allows *Little
 Navmap* to give vertical guidance and to show ILS and/or VASI slopes at
 the destination.
@@ -331,8 +331,8 @@ Restrictions are shown on the map and in the flight plan table.
    second altitude. Map example: ``A8000B10000ft``. Same for speed.
 -  **Prefix** ``GS``: Not an altitude restriction but an indicator for
    the ILS glideslope altitude. Can mean ``at`` or ``at or above``.
--  **Vertical path** ``-3.2°``: A vertial path angle which has to be followed. Calculated paths
-   are shown with a white text background and required paths with a yellow backgroud.
+-  **Vertical path** ``-3.2°``: A vertical path angle which has to be followed. Calculated paths
+   are shown with a white text background and required paths with a yellow background.
 
 .. _procedures-related:
 

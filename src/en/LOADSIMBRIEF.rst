@@ -2,7 +2,7 @@ Open Flight Plan from SimBrief
 ---------------------------------------------
 
 This function opens a dialog window where SimBrief flight plans can be imported directly into *Little Navmap*.
-SID, STAR, the respective transitions, runway assigments as well as the cruise altitude are downloaded.
+SID, STAR, the respective transitions, runway assignments as well as the cruise altitude are downloaded.
 
 Note that approach procedures, cruise speed and fuel parameters are ignored by *Little Navmap* which relies on aircraft
 performance files for fuel and speed. See :doc:`AIRCRAFTPERF` for more information.

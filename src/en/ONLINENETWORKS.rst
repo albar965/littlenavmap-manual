@@ -116,7 +116,7 @@ See options on page :ref:`options-map-online`.
 
 You can also assign centers to a boundary shape using imported OpenAir, JSON or GEOJSON
 airspaces from the user airspace database. See :ref:`load-scenery-library-online-airspaces` for more
-information about this. The airspace geomentry is assigned to the centers by ident and type.
+information about this. The airspace geometry is assigned to the centers by ident and type.
 
 
 .. figure:: ../images/online_center.jpg

@@ -24,7 +24,7 @@ AviTab or copying it to the clipboard.
    image if ``Custom Resolution`` is selected.
 -  ``Zoom out to avoid blurred map``: Checking this option helps to get
    a sharp background image for online maps (e.g. from *OpenStreetMap*).
-   This works best with the map projection ``Mercator``. As a result the
+   This works best with the map projection ``Mercator``. As a result, the
    map might be zoomed out farther than expected in some cases.
 
 *Little Navmap* will update the map image tiles for online maps if another option than ``Custom

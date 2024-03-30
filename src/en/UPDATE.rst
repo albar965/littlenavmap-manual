@@ -56,7 +56,7 @@ Update Channels
 -   ``Stable Versions only``: This will show only notifications for tested
     and stable versions with a complete English manual.
 
--   ``Stable and Beta Versions``: Will additionally check for beta/test or relase candidate
+-   ``Stable and Beta Versions``: Will additionally check for beta/test or release candidate
     versions. Beta versions are program releases that already contain all
     planned features for a stable release but are still not tested
     carefully. The manual might be incomplete.

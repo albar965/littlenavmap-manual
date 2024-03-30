@@ -14,7 +14,7 @@ You can see the data source for each navaid or airport in the section ``Data Sou
 
 .. tip::
 
-   You can update the navdatabase of *Little Navmap* with the Navigraph FMS Data Manager.
+   You can update the navigation database of *Little Navmap* with the Navigraph FMS Data Manager.
    See `Install Navigraph
    Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ on
    my home page for more information if the update fails.
@@ -47,7 +47,7 @@ Use Navigraph for all Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Uses only information from the Navigraph database.
-This mode is automatically selected if the simulator navdatabase is empty.
+This mode is automatically selected if the simulator navigation database is empty.
 
 .. note::
 
@@ -145,7 +145,7 @@ Limitations in this mode
        The approach from the Navigraph database cycle 1707 ends at the not
        visible runway 09 while the outdated scenery from FSX shows the airport
        at the wrong position. EDVK was rebuild north of Calden in 2013. The
-       *OpenStreetMap* backgound shows the new airport. *Click image to enlarge.*
+       *OpenStreetMap* background shows the new airport. *Click image to enlarge.*
 
 
 .. _navdata-navigraph-none:

@@ -372,7 +372,7 @@ In any case it is easy to deliver and install a new online
 map source without creating a new *Little Navmap* release.
 See :doc:`MAPTHEMES` for more information.
 
-Free map themes that are included per default and don't need an acccout at the respective map provider
+Free map themes that are included per default and don't need an account at the respective map provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 CARTO Dark Matter
@@ -618,7 +618,7 @@ the plan. This can be departure, destination, alternate airport, an
 intermediate waypoint or a procedure.
 
 Deleting a waypoint of a procedure removes the procedure and its transition. Deleting a waypoint of a transition
-removes only the transiton but not the related procedure.
+removes only the transition but not the related procedure.
 
 This also applies to the runway extension legs when selecting a departure or destination runway (:doc:`CUSTOMPROCEDURE`).
 
@@ -683,7 +683,7 @@ direct line to the clicked position.
 |Measure Distance from here| Measure Distance from here
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Starts to draw a measurment line which gets fixed on a second click.
+Starts to draw a measurement line which gets fixed on a second click.
 
 See :doc:`MEASURE` and :ref:`user-features-legend` for more information.
 
@@ -704,8 +704,8 @@ The display of range rings is automatically enabled in menu ``View`` -> ``User F
 |Add Navaid Range Ring| Add Navaid Range Ring
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Show a ring around the clicked radio navaid (VOR or NDB) indicating the
-navaid's range. A label shows ident and frequency and the ring color
+Show a ring around the clicked radio navaid (VOR or NDB) indicating the range
+of the navaid. A label shows ident and frequency and the ring color
 indicates the navaid type.
 
 The display of range rings is automatically enabled in menu ``View`` -> ``User Features`` ->
@@ -760,7 +760,7 @@ See :doc:`MSA` and :ref:`navaids-legend` in the map legend for more information.
 
 Removes a map feature added by the user.
 
--   Removes the selected **measurment line**. This menu item is active if you right-click on
+-   Removes the selected **measurement line**. This menu item is active if you right-click on
     the end point of a distance measurement line (small cross).
 -   Removes the selected **range rings** from the map. This menu item is active if you
     right-click on the center point of a range ring (small circle).

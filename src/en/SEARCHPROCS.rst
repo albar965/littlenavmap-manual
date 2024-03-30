@@ -57,7 +57,7 @@ from a Navigraph or X-Plane scenery database.
 Runways
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Runways are assgined automatically for STAR and approaches if possible to avoid error messages about runway
+Runways are assigned automatically for STAR and approaches if possible to avoid error messages about runway
 mismatches. This means that a selected STAR runway changes automatically to the one used by a
 newly selected approach if the STAR allows multiple runways.
 
@@ -87,7 +87,7 @@ You can update the navigation data or update or install an add-on airport to fix
 
 Procedures can still
 be used for such airports since Little Navmap uses a best guess to cross reference simulator
-runways. As a result you will see slightly differring runway numbers in portions of the program.
+runways. As a result, you will see slightly differing runway numbers in portions of the program.
 
 Issues with add-ons or simulators using exported flight plans might show up, though.
 
@@ -98,7 +98,7 @@ See chapter :doc:`NAVDATA` for more information on simulator and navigation data
 
     This image shows place where runway mismatches show up in *Little Navmap*.
     In December 2022 the runways of El Dorado Intl (SKBO) were renamed due to
-    magnetic heading drift. This can occiasinally happen at airports.
+    magnetic heading drift. This can occasionally happen at airports.
     The airport SKBO has the runways 13L, 13R, 31R and 31L in the simulator
     while the latest navigation data refers to 14L, 14R, 32L and 32R.
     *Click image to enlarge.*
@@ -112,7 +112,7 @@ Preview and Highlights
 
 -  Click on a procedure in the procedure tree to see the preview of the procedure.
 -  Click on a transition in the procedure tree to see the preview of the transition and its related procedure.
--  Click on a procedure or transition leg to see additonal highlighted navaids.
+-  Click on a procedure or transition leg to see additional highlighted navaids.
 
 Tooltips give information about navaids in the preview.
 

@@ -132,7 +132,7 @@ Navmap*. Disabled if no flight plan has been loaded or created.
 destination or any other value used in the flight plan name has changed. This helps to avoid
 overwriting LNMPLN files with wrong plans after reversing direction, for example.
 
-You can disable this behavior in the options dialog on page :ref:`options-files` by unchecking
+You can disable this behavior in the options dialog on page :ref:`options-files` by deselecting
 ``Avoid overwriting Flight Plan with not matching departure and destination``.
 
 .. tip::
@@ -243,7 +243,7 @@ Note that the two export format entries for X-Plane 11 and 12 use the same file 
 |Save Flight Plan as FlightGear FGFP| Export Flight Plan as FlightGear FGFP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Flightplan format which can be loaded into the RouteManager of the free
+A flight plan format which can be loaded into the RouteManager of the free
 flight simulator `FlightGear <http://www.flightgear.org>`__. Disabled if no flight plan has been loaded or created.
 
 *Little Navmap* can read and write this format.
@@ -358,7 +358,7 @@ Saves the flight plan table as shown to HTML file which can be viewed in
 a web browser. Icons are embedded in the page. Disabled if no flight plan has been loaded or created.
 
 The exported file will reflect changes of the flight plan table view like
-column order. Columns which are hidden or shrinked to minimum width are excluded.
+column order. Columns which are hidden or shrunk to minimum width are excluded.
 
 
 
@@ -619,7 +619,7 @@ Same as :ref:`set-destination-runway-map` in the map context menu. Only active i
 See more about this in chapter :doc:`CUSTOMPROCEDURE`.
 
 The button ``Show Arrival Procedures`` jumps directly to :doc:`SEARCHPROCS`
-where you can view and select a STAR or an approache.
+where you can view and select a STAR or an approach.
 
 
 .. _edit-flight-plan-on-map:
@@ -995,7 +995,7 @@ See :ref:`add-on-no-override`, :ref:`add-on-override-zoom`, :ref:`add-on-overrid
 :ref:`show-only-add-on-airports` for information and examples of the related functions.
 
 Add-on airports are highlighted with a yellow ring which is independent of these filter functions.
-You can disable the yellow ring in the options dialog on page :ref:`options-map-display` by unchecking ``Highlight add-on airports``.
+You can disable the yellow ring in the options dialog on page :ref:`options-map-display` by deselecting ``Highlight add-on airports``.
 
 You can also mark airports as add-on using the map context menu :ref:`mark-airport-addon-map` which will overlay an
 userpoint over the airport. Note that this userpoint will not adhere to the filters mentioned here.
@@ -1418,7 +1418,7 @@ the toolbar button dropdown menu.
 
 See also :doc:`RANGERINGS`.
 
-.. _user-measurment-lines:
+.. _user-measurement-lines:
 
 |Measurement Lines| Measurement Lines
 ''''''''''''''''''''''''''''''''''''''
@@ -1582,7 +1582,7 @@ The arc is limited to 5 NM length and a turn maximum of 180°. Tick marks show d
 
 .. figure:: ../images/turn_path.jpg
 
-    An aircraft turning in a procedure about to intecept the ILS after waypoint ``CI26B``
+    An aircraft turning in a procedure about to intercept the ILS after waypoint ``CI26B``
 
 .. _show-aircraft-endurance-map:
 
@@ -1692,7 +1692,7 @@ See :doc:`ONLINENETWORKS` for an overview and :ref:`vehicles-legend` for informa
 |Show AI and Multiplayer Ships| Show AI and Multiplayer Ships
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-As :ref:`show-ai-and-multiplayer-aircraft` but enables or disabless AI or multiplayer ships on the
+As :ref:`show-ai-and-multiplayer-aircraft` but enables or disables AI or multiplayer ships on the
 map. ``Fetch AI or multiplayer ships`` has to be enabled in the :ref:`connect-options` to see AI ships.
 
 This option also affects the frigate and carrier ships from X-Plane.
@@ -1706,7 +1706,7 @@ See also :ref:`vehicles-legend` for information on ship colors and symbols.
 
 Show a latitude/longitude grid as well as the
 `Meridian <https://en.wikipedia.org/wiki/Prime_meridian>`__ and
-`180th Meridian or Antimeridian <https://en.wikipedia.org/wiki/180th_meridian>`__ (near
+`180th Meridian or Anti-meridian <https://en.wikipedia.org/wiki/180th_meridian>`__ (near
 the date line) on the map.
 
 A 30, 5 or 1 degree grid is shown depending on zoom distance.
@@ -2356,7 +2356,7 @@ Navigraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This sub-menu also shows the AIRAC cycle if a Navigraph
-database is found in the database directory. Use this indication to verify if an database update was successfull.
+database is found in the database directory. Use this indication to verify if an database update was successful.
 See `Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ for installation options if you run into issues..
 
 The right navdata mode is selected automatically per default. See below for more information.
@@ -2406,7 +2406,7 @@ Use Navigraph for all Features
 Completely ignores the simulator database and takes all information from
 the Navigraph database.
 
-This mode is automatically selected if the simulator navdatabase is empty.
+This mode is automatically selected if the simulator navigation database is empty.
 
 .. note::
 
@@ -2570,7 +2570,7 @@ See chapter :doc:`WEBSERVER` for detailed information and options page :ref:`opt
 Open Web Server Page in Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Only enabled if the web server is running. Opens the webserver page in
+Only enabled if the web server is running. Opens the web server page in
 your default browser. The default address is like
 ``http://YOUR_COMPUTER_NAME:8965`` or ``http://localhost:8965``.
 
@@ -2796,7 +2796,7 @@ Open Window Layout
 Opens a LNMLAYOUT file and applies the changes like visibility, position and floating status directly to the
 dock windows. Size and position of the main window is also restored.
 
-Full screen and normal layouts are both loaded from this file.
+Fullscreen and normal layouts are both loaded from this file.
 
 See :doc:`LAYOUT` for more information.
 
@@ -2936,7 +2936,7 @@ stacked dock windows.
 
 Note that the windows ``Flight Plan Calculation`` (:doc:`FLIGHTPLAN`),
 ``Flight Plan Route Description`` (:doc:`ROUTEDESCR`) and ``Logbook Statistics`` (:ref:`statistics`)
-cannot be docked into the mai window and are independent and do not block the main application.
+cannot be docked into the main window and are independent and do not block the main application.
 
 .. _window-flight-plan:
 

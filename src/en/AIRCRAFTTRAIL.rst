@@ -56,7 +56,7 @@ options on page :ref:`options-map-aircraft-trail`. The gradient is also used in 
 
 The gradient maximum altitude is either the maximum stored in the trail or the flight plan cruise altitude if present.
 
-Tooltips are shown for aircraft trail and logbook trail preview if enablled. This is off per default. You can enable the trail tooltips
+Tooltips are shown for aircraft trail and logbook trail preview if enabled. This is off per default. You can enable the trail tooltips
 in options on page :ref:`options-map-tooltips-and-clicks`.
 
 .. figure:: ../images/trail.jpg

@@ -12,7 +12,7 @@ Note that you cannot move a tab to another window.
 The ``Window`` -> :ref:`reset-tabs-menu` menu item in the
 main menu also resets the tab visibility and order to default.
 
-Context Menu Tabbar
+Context Menu Tab Bar
 ~~~~~~~~~~~~~~~~~~~~
 
 The context menu above the tab bar (right click on one of the tabs) and

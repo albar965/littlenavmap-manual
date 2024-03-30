@@ -375,7 +375,7 @@ all fields are available for bulk edit.
 
 If checked, the field to the left is unlocked and any text entered will
 be assigned to the respective field in all selected logbook entry.
-Unchecked fields will not be altered for any of the selected entries.
+Deselected fields will not be altered for any of the selected entries.
 
 In combination with the search function, this allows for bulk changes
 like fixing an invalid aircraft type for more than one entry.

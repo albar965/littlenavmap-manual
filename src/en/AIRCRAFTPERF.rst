@@ -259,7 +259,7 @@ Flight Plan Section
 Fuel Plan Section
 '''''''''''''''''
 
-Only shown with a valid flight plan. Otherwise replaced by a secition ``Fuel``.
+Only shown with a valid flight plan. Otherwise replaced by a section ``Fuel``.
 
 -  ``Fuel Type``: As set in the performance profile. Either ``Avgas`` or
    ``Jetfuel``. Used to change values when switching between volume and

@@ -59,7 +59,7 @@ You can search through all options pages using the input field on the top left.
 Searching reduces the visible pages to the
 ones containing the search text. Matching labels and buttons are highlighted on each page.
 
-Up to three words can be searched for. Partial matches are hightlighted.
+Up to three words can be searched for. Partial matches are highlighted.
 
 .. figure:: ../images/optionssearch.jpg
     :scale: 70%
@@ -230,7 +230,7 @@ Deselect this to avoid the slightly blurred text in menus and application window
 Show tooltips in whole application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Disables tooltips for the whole application if unchecked except for the map window which
+Disables tooltips for the whole application if deselected except for the map window which
 has separate settings on page :ref:`options-map-tooltips-and-clicks`.
 
 Text Size
@@ -372,7 +372,7 @@ Allows to undock and put the map window into a floating state which also results
 flexibility when positioning other dock windows.
 
 This can cause several unwanted effects when arranging dock windows.
-Uncheck this if you do experience problems when resizing dock windows.
+Deselect this if you do experience problems when resizing dock windows.
 
 You have to restart the program after changing this option.
 
@@ -508,7 +508,7 @@ Click one of the following links to go directly to the account pages of the resp
 .. note::
 
     All services are free to use at the time of writing these instructions. You do not have to enter
-    you credit card, account or other payment informaion to use these. Simply ignore these sections when signing in.
+    you credit card, account or other payment information to use these. Simply ignore these sections when signing in.
 
 
 .. warning::
@@ -729,7 +729,7 @@ trail points.
 |Flight Plan| Flight Plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here you can set preferences for flight plan cruise altitude assignement.
+Here you can set preferences for flight plan cruise altitude assignment.
 
 .. _options-weather:
 .. _page18:
@@ -980,7 +980,7 @@ Configuration options for the internal web server of *Little Navmap*.
    The server status (running or not running) is reverted to the
    previous state when pressing ``Cancel`` in the options dialog.
 -  Label ``Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)``:
-   Shows a list of valid links using the IP address and the hostname (your computer name) of the web server.
+   Shows a list of valid links using the IP address and the host name (your computer name) of the web server.
    Clicking on either one opens the page in your default browser. You can always try the IP addresses if the
    computer names does not work. Some addresses might not work depending on network configuration.
 

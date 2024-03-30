@@ -164,7 +164,7 @@ The procedure may be slightly different depending on whether you're using Big Su
    the script ``Prepare Little Xpconnect.command``. Click ``Open Anyway``.
 #. Next a dialog ``Are you sure you want to open it?`` pops up. Click ``Open``.
 
-The script shows a few explantions and asks for your password which allows it to run a
+The script shows a few explanations and asks for your password which allows it to run a
 command as an administrator. You can look at the script which is a text file to see what
 commands are executed.
 

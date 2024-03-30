@@ -57,7 +57,7 @@ The airport search has a special search field for all airport idents and names
 partial match for quick search.
 
 Separate search fields are available in the drop down menu under ``Names``. The same rules as
-mentioned in :ref:`text-filters` above appyly.
+mentioned in :ref:`text-filters` above apply.
 
 Entering three or four characters in the ``ICAO Code`` field of the
 airport search tab will trigger a quick search which ignores all other
@@ -114,7 +114,7 @@ related fields are hidden from the dropdown menu button.
 
     Click the dropdown menu. This will indicate if there are changes in the related section.
     Facilities are all the airport properties like add-on, tower and so on in this example.
-    *Little Navmap* ignores sections in the search which are not visible (unchecked in the drop down menu).
+    *Little Navmap* ignores sections in the search which are not visible (deselected in the drop down menu).
     (1) has changes in a visible section (``Lighted``) and (2) has changes in a hidden section (``Runway``)
     which are ignored.
 
@@ -191,7 +191,7 @@ Ident and Names in Airport Search
 
 The input field ``Ident, name, city, state, province, country or area code`` in the airport search tab searches for all available airport identifiers and names.
 
--  ``Ident``: Mostly equal to ICAO code but can be differnt especially for small airfields. X-Plane
+-  ``Ident``: Mostly equal to ICAO code but can be different especially for small airfields. X-Plane
    uses partially an unofficial code in this field like ``XPA000B``. Available for all simulators and
    Navigraph navdata.
 -  ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
@@ -398,9 +398,9 @@ if this function is enabled.
 
 Copy the selected entries in CSV format to the clipboard. This will
 observe changes to the table view like column order and sort order. The
-CSV includes a header line. Columns which are hidden or shrinked to minimum width are excluded.
+CSV includes a header line. Columns which are hidden or shrunk to minimum width are excluded.
 
-Import the CSV-Text into spreadsheed programs using UTF-8 encoding and a semicolon as a separator.
+Import the CSV-Text into spreadsheet programs using UTF-8 encoding and a semicolon as a separator.
 
 See :ref:`ui-tables` for more information how to rearrange or hide columns in tables.
 

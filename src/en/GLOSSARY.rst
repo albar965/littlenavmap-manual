@@ -219,7 +219,7 @@ Userpoint
     An user defined waypoint like a bookmark, point of interest or visual reporting point (VRP).
 
 User Feature
-    Any display object like traffic patterns or measurment lines which can be added or removed by the user.
+    Any display object like traffic patterns or measurement lines which can be added or removed by the user.
 
 UTC
     Universal coordinated time. Also Zulu time.
