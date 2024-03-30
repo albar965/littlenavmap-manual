@@ -12,17 +12,16 @@ Note that fuel consumption and other values are measured between takeoff and lan
 
 You can speed up the flight or to warp to another position without breaking the logbook record.
 
-Editing functionality in the logbook is similar to the userpoints
-editing (:ref:`userpoints`).
+*Little Navmap* remembers a takeoff across restarts and completes the logbook entry accordingly
+when landing.
 
+An incomplete takeoff only entry with the same aircraft is required for this to work.
 
-.. note::
+A coordinate in degrees/minutes format like ``N44124W122451`` is used if the flight is recorded by an off-airport takeoff or landing .
 
-      Use :ref:`reset-for-new-flight` to be sure
-      that the logbook flight detection is set up for a new flight.
+Use :ref:`reset-for-new-flight` to be sure that the logbook flight detection is set up for a new flight.
 
-      The takeoff and landing detection is reset if you restart *Little Navmap* while flying. In this case
-      you get two entries where one is for departure and one for arrival. Merge these manually if needed.
+Editing functionality in the logbook is similar to the userpoints editing (:ref:`userpoints`).
 
 .. _logbook-create:
 
@@ -33,10 +32,7 @@ Create Logbook Entries
 this menu item :ref:`logbook-create-entries` is checked. A logbook entry containing only departure is
 created on takeoff and finalized with destination, track and more information on landing.
 
-Note that the takeoff and landing detection is reset if restarting Little Navmap while flying. In this case
-you get two entries where one is for departure and one for arrival. Merge these manually if needed.
-
-Note that the content of the field ``Simulator`` in the logbook entries is determined by the
+The content of the field ``Simulator`` in the logbook entries is determined by the
 selected scenery library and not by the connected simulator.
 
 .. note::

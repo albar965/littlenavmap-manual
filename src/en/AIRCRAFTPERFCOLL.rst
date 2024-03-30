@@ -22,6 +22,13 @@ profile.
 descent slopes when collecting data based on an default or new elevation
 profile. You have to estimate the needed top of descent yourself.
 
+.. important::
+
+      Note that all values in this report are kept between restarts until
+      they are reset using the :ref:`aircraft-performance-coll-buttons` in the dock window ``Flight Planning``,
+      the menu item :ref:`reset-for-new-flight` in the main menu ``File`` or
+      the menu item :ref:`aircraft-menu-restart` in the main menu ``Aircraft``.
+
 .. note::
 
     The flight plan cruise altitude is used to detect the cruise phase of

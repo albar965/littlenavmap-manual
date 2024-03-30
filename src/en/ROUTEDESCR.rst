@@ -29,6 +29,9 @@ The lower text can be seen as a kind of a notepad, is displayed in :dim-style:`g
 The two sections are separated by an empty line. You can copy and paste lines between the two sections using the context menu
 or the keyboard shortcuts copy ``Ctrl+C``, cut ``Ctrl+X`` and paste ``Ctrl+V``.
 
+You can use ``Ctrl+Return`` to create a flight plan from the top **bold** description string. This is the same as clicking the button
+``Create Flight Plan`` (:ref:`routedescr-buttons`).
+
 All texts are saved on exit.
 
 Reading
@@ -296,6 +299,13 @@ Coordinates can be supplied in different formats:
 **Garmin GFP format** (13 characters) north/south indicator, two digits degrees, three digits for minutes by 10. Then east/west indicator, three digits degrees, three digits minutes by 10. This format is used by the *Flight1 GTN 650/750*.
 
       ``N48194W123096``
+
+.. note::
+
+      Coordinates in the generated description use the degrees and minutes format, e.g. ``4010N03822W``.
+      This is done to keep compatibility with other applications.
+      Note that this format is limited to one minute accuracy which is up to 1 NM depending on position.
+      You might see inaccurate positioning when re-reading coordinates.
 
 .. _examples:
 

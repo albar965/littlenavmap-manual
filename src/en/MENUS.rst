@@ -198,7 +198,12 @@ This does not change the current file name and type. Further saves will still us
 
 The proposed file name can be defined in the :ref:`multiexport-options` for format ``Microsoft Flight Simulator 2020``.
 
-See also :doc:`FLIGHTPLANFMT`.
+MSFS flight plans can be saved to and loaded from any location but the default directories are:
+
+- Microsoft Store installation: ``C:\Users\YOURLOGINNAME\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState``
+- Steam installation: ``C:\Users\YOURLOGINNAME\AppData\Roaming\Microsoft Flight Simulator\LocalState``
+
+See also :doc:`FLIGHTPLANFMT` and :ref:`flight-plan-formats-msfs-pln`.
 
 .. _export-p3d-fsx-flight-plan:
 
@@ -980,6 +985,23 @@ ILS and GLS/RNP feathers are hidden with the related airports too.
 Display, labels and airport diagram features can be
 changed in options on the pages :ref:`options-map-display` and :ref:`options-map-labels`.
 
+.. _add-on:
+
+Add-on Airports
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+*Little Navmap* has several filter modes to keep add-on airports visible.
+See :ref:`add-on-no-override`, :ref:`add-on-override-zoom`, :ref:`add-on-override-zoom-and-filter` and
+:ref:`show-only-add-on-airports` for information and examples of the related functions.
+
+Add-on airports are highlighted with a yellow ring which is independent of these filter functions.
+You can disable the yellow ring in the options dialog on page :ref:`options-map-display` by unchecking ``Highlight add-on airports``.
+
+You can also mark airports as add-on using the map context menu :ref:`mark-airport-addon-map` which will overlay an
+userpoint over the airport. Note that this userpoint will not adhere to the filters mentioned here.
+
+Further add-on related scenery library functions to exclude add-ons from recognition can be found in options on page
+:ref:`options-scenery-library-database`.
 
 .. _show-airports:
 
@@ -994,6 +1016,22 @@ Disable or enable the display of all airports. This also covers add-on airports.
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Reset airport display to default settings, i.e. display all airports.
+
+.. _show-only-add-on-airports:
+
+|Show only add-on airports| Show only add-on airports
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Disables all filters and enables :ref:`add-on-override-zoom-and-filter`
+to show only add-on airports on the map. All other airports are hidden with this preset.
+
+.. figure:: ../images/airportaddononly.jpg
+       :scale: 60%
+
+       ``Show only add-on airports`` preset clicked. Add-on airports are shown on all zoom levels
+       and are not affected by filters.
+       *Click image to enlarge.*
+
 
 .. _hard-surface:
 
@@ -1092,33 +1130,64 @@ Show airports which are marked closed or have only closed runways.
 
 Show military airports. Note that military airports are detected by name patterns like ``AB`` and therefore not all military airports can be detected. This also applies to airports with both military and civil use.
 
-.. _add-on:
+.. _add-on-no-override:
 
-|Add-on| Add-on
+|Add-on no override| Add-on no override
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Add-on airports are highlighted on the map but show up like all other airports.
+This means that they are affected by all airport filters above and disappear on higher zoom levels
+like normal airports.
+
+.. figure:: ../images/airportaddonnone.jpg
+       :scale: 60%
+
+       Only large add-on airports are shown on the map with a yellow highlight if
+       ``Add-on no override`` is selected. Filters and zoom distance affect add-ons like normal stock airports.
+
+.. _add-on-override-zoom:
+
+|Add-on override zoom| Add-on override zoom
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Add-on airports are always shown independently of the zoom level if this option is selected.
 
 You can still use the type filters and runway length filter to limit the display of add-on airports.
-This means you can hide all add-on airports having a `Soft Surface`, for example.
+This means you can hide all add-on airports having grass runways by deselecting :ref:`soft-surface`, for example.
+You can also limit the display by selecting the minimum runway length.
 
 Enabling this function allows to see even small add-on airstrips in large continental zoom levels.
 
-Add-on airports are highlighted with a yellow ring which is independent of this function.
-You can disable the yellow ring in the options dialog on page :ref:`options-map-display` by unchecking ``Highlight add-on airports``.
+.. figure:: ../images/airportaddonzoom.jpg
+       :scale: 60%
 
-You can also mark airports as add-on using the map context menu :ref:`mark-airport-addon-map` which will overlay an
-userpoint over the airport. This userpoint will not adhere to the filters mentioned here.
+       ``Add-on override zoom`` selected: All large add-on airports and additionally
+       small add-on airstrips are shown on the map with a yellow highlight.
+       Airports with soft surfaces, seaplane bases and heliports are hidden which affects
+       add-ons too.
+       *Click image to enlarge.*
 
-**Example:** ``Add-on`` on a higher zoom level:
 
-.. figure:: ../images/airportaddonnoforce.jpg
+.. _add-on-override-zoom-and-filter:
 
-        Off: Only large add-on airports are shown on the map with a yellow highlight.
+|Add-on override zoom and filter| Add-on override zoom and filter
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-.. figure:: ../images/airportaddonforce.jpg
+Add-on airports are shown independently of the zoom level if this option is selected. This function
+also overrides the filters like :ref:`soft-surface` above and does not allow to hide add-on airports on the map.
 
-       On: All large add-on airports and additionally small add-on airstrips are shown on the map with a yellow highlight.
+The runway length limitation filter can still be used to limit the display add-on airports.
+
+Click :ref:`show-only-add-on-airports` to select a preset which shows add-on airports only.
+
+.. figure:: ../images/airportaddonzoomfilter.jpg
+       :scale: 60%
+
+       ``Add-on override zoom and filter`` selected: All large add-on airports and additionally
+       small add-on airstrips are shown on the map with a yellow highlight.
+       Airports with soft surfaces, seaplane bases and heliports are shown since the filters
+       ``Soft surface``, ``Seaplane bases`` and ``Heliports`` affect only stock airports.
+       *Click image to enlarge.*
 
 .. _navaids-menu:
 
@@ -1211,15 +1280,17 @@ See :doc:`MSA` for more information.
 
 .. _show-victor-airways:
 
-|Show Victor Airways| Show Victor Airways
+|Show Victor Airways| Show Low Airways
 '''''''''''''''''''''''''''''''''''''''''
+
+Toggles display of low airways (also Victor) and the attached waypoints.
 
 .. _show-jet-airways:
 
-|Show Jet Airways| Show Jet Airways
-'''''''''''''''''''''''''''''''''''
+|Show Jet Airways| Show High Airways
+'''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Toggle display of airways and the attached waypoints.
+Toggles display of high airways (also Jet) and the attached waypoints.
 
 .. _show-tracks:
 
@@ -3151,7 +3222,9 @@ See :doc:`UPDATE` for more information.
 .. |Show Turn Flight Path| image:: ../images/icon_turnpath.png
 .. |Show Aircraft Endurance| image:: ../images/icon_endurance.png
 
-.. |Add-on| image:: ../images/icon_airportaddon.png
+.. |Reset airport display options| image:: ../images/icon_clear.png
+.. |Show only add-on airports| image:: ../images/icon_airportaddon.png
+
 .. |Closed| image:: ../images/icon_airportclosed.png
 .. |Military| image:: ../images/icon_airportmil.png
 .. |No procedure| image:: ../images/icon_airportproc.png
@@ -3161,8 +3234,12 @@ See :doc:`UPDATE` for more information.
 .. |Seaplane Bases| image:: ../images/icon_airportwater.png
 .. |Soft surface| image:: ../images/icon_airportsoft.png
 .. |Hard surface| image:: ../images/icon_airport.png
-.. |Reset airport display options| image:: ../images/icon_clear.png
 .. |Show Airports| image:: ../images/icon_airport.png
+
+.. |Add-on| image:: ../images/icon_airportaddon.png
+.. |Add-on no override| image:: ../images/icon_airportaddonnone.png
+.. |Add-on override zoom| image:: ../images/icon_airportaddonzoom.png
+.. |Add-on override zoom and filter| image:: ../images/icon_airportaddonall.png
 
 .. |Show empty Airports| image:: ../images/icon_airportempty.png
 .. |Show VOR Stations| image:: ../images/icon_vor.png

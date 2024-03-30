@@ -1,6 +1,9 @@
 Keyboard Shortcuts
 ------------------
 
+Keyboard shortcuts are available for many functions and are shown in the main menu (see also :doc:`MENUS`)
+as well as in all context menus. See :ref:`ui-contextmenus-shortcuts` for details.
+
 .. _shortcuts-main:
 
 Main Menu
@@ -135,7 +138,11 @@ View
 +--------------------------------------------------------------------------------+-------------------------+
 | View -> Airports -> Empty                                                      | ``Ctrl+Alt+E``          |
 +--------------------------------------------------------------------------------+-------------------------+
-| View -> Airports -> Add-on                                                     | ``Ctrl+Alt+O``          |
+| View -> Airports -> Add-on no override                                         | ``Ctrl+Alt+O``          |
++--------------------------------------------------------------------------------+-------------------------+
+| View -> Airports -> Add-on override zoom                                       | ``Ctrl+Alt+Z``          |
++--------------------------------------------------------------------------------+-------------------------+
+| View -> Airports -> Add-on override zoom and filter                            | ``Ctrl+Alt+Y``          |
 +--------------------------------------------------------------------------------+-------------------------+
 | View -> Navaids -> Show VOR Stations                                           | ``Ctrl+Alt+V``          |
 +--------------------------------------------------------------------------------+-------------------------+
@@ -145,9 +152,9 @@ View
 +--------------------------------------------------------------------------------+-------------------------+
 | View -> Navaids -> Show ILS Feathers                                           | ``Ctrl+Alt+I``          |
 +--------------------------------------------------------------------------------+-------------------------+
-| View -> Navaids -> Show Victor Airways                                         | ``Ctrl+V``              |
+| View -> Navaids -> Show Low Airways                                            | ``Ctrl+V``              |
 +--------------------------------------------------------------------------------+-------------------------+
-| View -> Navaids -> Show Jet Airways                                            | ``Ctrl+J``              |
+| View -> Navaids -> Show High Airways                                           | ``Ctrl+J``              |
 +--------------------------------------------------------------------------------+-------------------------+
 | View -> Navaids -> Show Tracks                                                 | ``Ctrl+T``              |
 +--------------------------------------------------------------------------------+-------------------------+
@@ -436,3 +443,14 @@ Userpoint and Logbook Search - Additional Shortcuts
 +--------+------------+
 | Delete | ``Del``    |
 +--------+------------+
+
+.. _shortcuts-context-routedescr:
+
+Flight Plan Route Description - Additional Shortcuts
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
++--------------------+-----------------+
+| Button             | Shortcut        |
++====================+=================+
+| Create Flight Plan | ``Ctrl+Return`` |
++--------------------+-----------------+

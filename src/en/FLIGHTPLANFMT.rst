@@ -107,28 +107,29 @@ Format Name                                              Ext.     Open Exp. Airw
 :highlight-style:`Reality XP GTN 750/650 Touch`          GFP      X    X    X    0       X [1]_          0       0            0           X
 :highlight-style:`Flight1 Garmin GTN 650/750`            GFP      X    X    X    0       0               0       0            0           0
 :highlight-style:`TDS GTNXi`                             GFP      X    X    X    0       0               0       0            0           X
-PMDG Aircraft                                            RTE      0    X    X    0       0               0       0            0           0
-Rotate MD-80, JARDesign and others                       TXT      0    X    X    0       0               0       0            0           0
-Majestic Dash MJC8 Q400                                  FPR      0    X    0    0       0               0       0            0           0
-IXEG Boeing 737                                          FPL      0    X    X    0       0               0       0            0           0
-Flight Factor Airbus                                     corte.in 0    X    X    0       0               0       0            X           X [2]_
-iFly                                                     FLTPLAN  0    X    X    0       0               0       0            0           0
-MSFS IniBuilds Airbus                                    FPL      0    X    0    0       0               0       0            0           0
-ProSim                                                   XML [4]_ 0    X    X    0       0               0       0            0           0
-BlackBox Simulations Airbus                              PLN      0    X    X    0       0               0       0            0           0
-Leonardo Maddog X                                        MDX      0    X    X    0       0               0       0            0           0
-QualityWings                                             RTE      0    X    X    0       0               0       0            0           0
 AivlaSoft EFB                                            EFBR     0    X    X    0       0               0       0            0           0
-Level-D                                                  RTE      0    X    X    0       0               0       0            0           0
+BlackBox Simulations Airbus                              PLN      0    X    X    0       0               0       0            0           0
 FeelThere or Wilco                                       FPL      0    X    X    0       0               0       0            0           0
-TFDi Design 717                                          XML      0    X    X    0       0               0       0            0           0
-IvAp for IVAO [3]_                                       FPL      0    X    X    0       0               0       0            0           0
-X-IVAP for IVAO [3]_                                     FPL      0    X    X    0       0               0       0            0           0
-VATSIM vPilot or SWIFT [3]_                              VFP      0    X    X    0       0               0       0            0           0
-UFMC                                                     UFMC     0    X    X    0       0               0       0            0           0
-X-FMC                                                    FPL      0    X    X    0       0               0       0            0           0
+Flight Factor Airbus                                     corte.in 0    X    X    0       0               0       0            X           X [2]_
 Garmin exchange format                                   GPX      \-   X    \-   \-      \-              \-      \-           \-          \-
 HTML flight plan web page                                HTML     \-   X    \-   \-      \-              \-      \-           \-          \-
+IXEG Boeing 737                                          FPL      0    X    X    0       0               0       0            0           0
+IvAp for IVAO [3]_                                       FPL      0    X    X    0       0               0       0            0           0
+Leonardo Maddog X                                        MDX      0    X    X    0       0               0       0            0           0
+Level-D                                                  RTE      0    X    X    0       0               0       0            0           0
+MSFS IniBuilds Airbus                                    FPL      0    X    0    0       0               0       0            0           0
+Microsoft Flight Simulator 2020 format using ``*``       PLN      X    X    X    X       X               0       X            X           X [5]_
+Majestic Dash MJC8 Q400                                  FPR      0    X    0    0       0               0       0            0           0
+PMDG Aircraft                                            RTE      0    X    X    0       0               0       0            0           0
+ProSim                                                   XML [4]_ 0    X    X    0       0               0       0            0           0
+QualityWings                                             RTE      0    X    X    0       0               0       0            0           0
+Rotate MD-80, JARDesign and others                       TXT      0    X    X    0       0               0       0            0           0
+TFDi Design 717                                          XML      0    X    X    0       0               0       0            0           0
+UFMC                                                     UFMC     0    X    X    0       0               0       0            0           0
+VATSIM vPilot or SWIFT [3]_                              VFP      0    X    X    0       0               0       0            0           0
+X-FMC                                                    FPL      0    X    X    0       0               0       0            0           0
+X-IVAP for IVAO [3]_                                     FPL      0    X    X    0       0               0       0            0           0
+iFly                                                     FLTPLAN  0    X    X    0       0               0       0            0           0
 ======================================================== ======== ==== ==== ==== ======= =============== ======= ============ =========== ======
 
 For ``Flight1 Garmin GTN 650/750``, ``Reality XP GNS 530W/430W V2``, ``Reality XP GTN 750/650 Touch`` and
@@ -160,10 +161,14 @@ File format for MSFS.
 You can export this format directly using :ref:`export-msfs-flight-plan` and load the flight plans using menu ``File`` -> :ref:`open-flight-plan`.
 
 While the format supports procedures there appear problems in MSFS loading these. Procedures might be omitted or new ones inserted.
-Furthermore MSFS does not support the selection of transitions and often inserts these automatically.
 
 You can set a parking spot or fuel pad as starting position but note that runways and helipads as starting
 positions will be ignored by MSFS.
+
+MSFS flight plans can be saved to and loaded from any location in MSFS but the default directories are:
+
+- Microsoft Store installation: ``C:\Users\YOURLOGINNAME\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState``
+- Steam installation: ``C:\Users\YOURLOGINNAME\AppData\Roaming\Microsoft Flight Simulator\LocalState``
 
 .. note::
 
@@ -174,6 +179,11 @@ See `FAQ - The flight plan does not show up correctly in MSFS <https://albar965.
 for more information on problems.
 
 PLN files for Microsoft Flight Simulator 2020 will have special characters removed since the simulator cannot load files having these as a part of the name.
+
+.. note::
+
+     Use the format :ref:`flight-plan-formats-msfs-pln-star` for export if you run into issues when importing flight plans in add-ons or when
+     your operating system is set to Asian locale.
 
 
 .. _flight-plan-formats-fsx-pln:
@@ -568,6 +578,17 @@ MS Store
 
 Steam
    ``C:\Users\YOURUSERNAME\AppData\Roaming\Microsoft Flight Simulator\Packages\microsoft-aircraft-a310-300\work\flightplans``
+
+.. _flight-plan-formats-msfs-pln-star:
+
+Microsoft Flight Simulator 2020 format using ``*`` as degree sign
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is the same as :ref:`flight-plan-formats-msfs-pln` except that it uses ``*`` as a degree sign.
+
+Use this format if you run into issues when importing flight plans in add-ons or when
+your operating system is set to Asian locale.
+
 
 .. _flight-plan-formats-prosim:
 

@@ -568,16 +568,16 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 | |Marker Outer| |Marker Middle|    | Marker with type and heading                                  |
 | |Marker Inner|                    | indicated by lens shape.                                      |
 +-----------------------------------+---------------------------------------------------------------+
-| |Jet Airway|                      | Jet airway with label showing                                 |
-|                                   | name, type (Jet or Both), minimum                             |
+| |Jet Airway|                      | High airway (also Jet) with label showing                     |
+|                                   | name, type (High or Both), minimum                            |
 |                                   | and maximum altitude. Text                                    |
 |                                   | depends on zoom distance. A                                   |
 |                                   | preceding arrow will show the                                 |
 |                                   | allowed direction if the airway                               |
 |                                   | is one-way.                                                   |
 +-----------------------------------+---------------------------------------------------------------+
-| |Victor Airway|                   | Victor airway with label showing                              |
-|                                   | name, type (Victor or Both),                                  |
+| |Victor Airway|                   | Low airway (also Victor) with label showing                   |
+|                                   | name, type (Low or Both),                                     |
 |                                   | minimum and maximum altitude.                                 |
 |                                   | Text depends on zoom distance. A                              |
 |                                   | preceding arrow will show the                                 |

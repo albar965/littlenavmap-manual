@@ -200,6 +200,31 @@ can be found in the following places:
 The context menus provide functionality to get more information about an
 object at the clicked position or to build or edit a flight plan.
 
+.. _ui-contextmenus-shortcuts:
+
+Shortcuts in Menus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Keyboard shortcuts or modifiers such as Shift, Alt, or Ctrl are displayed in the
+right column next to the corresponding function in all shortcut menus as well as in the main menu.
+
+Note that some shortcuts are available in the whole program while some are only available
+in search windows, for example. You have to activate the related window before using such local shortcuts.
+
+.. figure:: ../images/shortcutsmapcontext.jpg
+    :scale: 60%
+
+    Keyboard modifiers shown in the right side of the map context menu.
+    Use Shift, Alt and/or Ctrl and left mouse click to start functions without opening the context menu.
+    *Click image to enlarge.*
+
+.. figure:: ../images/shortcutsroutecontext.jpg
+    :scale: 60%
+
+    Keyboard shortcuts shown in the right column of the flight plan table context menu.
+    Shortcuts are also shown in the main menu.
+    *Click image to enlarge.*
+
 .. _ui-menubuttons:
 
 Menu Buttons

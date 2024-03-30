@@ -120,11 +120,11 @@ You can show or hide the columns from main menu ``Tools`` -> :ref:`flight-plan-t
    alternate airports at the end of the list or ``Departure`` or ``Destination``.
 -  ``Airway or Procedure``: Contains the airway name for en-route legs
    or procedure instructions. This field also shows track names if NAT, PACOTS or AUSOTS tracks are used.
-   Airways are suffixed with the airway type like ``N601 / V``:
+   Airways are suffixed with the airway type like ``N601 / L``:
 
-   -  ``V`` Victor or low altitude airway
-   -  ``J`` Jet or high altitude airway
-   -  ``B`` Both
+   -  ``L`` Low altitude airway or Victor
+   -  ``H`` High altitude airway or Jet
+   -  ``B`` Both high and low
 
 -  ``Restriction ft/kts/angle``:
 

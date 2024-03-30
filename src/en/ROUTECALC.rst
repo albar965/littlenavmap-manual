@@ -95,7 +95,7 @@ This field is updated from the current flight plan when opening the window or ch
 .. important::
 
     The calculation might fail if using too low or too high values for the cruise altitude. Make sure that you use a
-    sufficiently high altitude which matches the selected airway type (Jet or Victor).
+    sufficiently high altitude which matches the selected airway type (High or Low).
 
 .. _routecalc-adjust:
 
@@ -131,14 +131,14 @@ Criteria for airway selection are always direction for one-way airways and altit
 All Airways
 ^^^^^^^^^^^^^^^^
 
-Calculation will select any appropriate Jet or Victor airways for the route.
+Calculation will select any appropriate high or low airways for the route.
 
-Jet airways (high altitude)
+High airways (Jet)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Limit calculation to Jet or high altitude airways. Calculation might fail if using a too low cruise altitude.
 
-Victor airways (low altitude)
+Low airways (Victor)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Limit calculation to Victor or low altitude airways. Calculation might fail if using a too high cruise altitude.
