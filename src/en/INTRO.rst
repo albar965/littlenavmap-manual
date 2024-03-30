@@ -310,6 +310,11 @@ windows. See options dialog on page :ref:`options-display-and-text`.
 
 This page also allows to change the font for the whole program interface.
 
+.. note::
+
+   *Little Navmap* remembers the size of dialog windows. In some cases you have to resize dialog windows
+   after changing to a larger font to see all content.
+
 .. tip::
 
      A quick way to change the text size is to use the mouse wheel and

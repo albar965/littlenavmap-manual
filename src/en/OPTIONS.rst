@@ -189,6 +189,11 @@ The setting is applied immediately. Press ``Cancel`` or ``Reset Font to Default`
 
 The font for map display is not affected by this value and can be set separately on page :ref:`options-map-display`.
 
+.. note::
+
+   *Little Navmap* remembers the size of dialog windows. In some cases you have to resize dialog windows
+   after changing to a larger font to see all content.
+
 .. warning::
 
       Keep in mind that using a wrong or too large font can result in display issues.
