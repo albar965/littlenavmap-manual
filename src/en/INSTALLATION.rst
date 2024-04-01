@@ -280,26 +280,39 @@ can result in crashes when accessing the databases.
 Running several instances is prevented by the program on Windows but not on Linux and macOS.
 
 You can instruct *Little Navmap* to create and use a different settings directory by passing the
-parameter ``--settings-directory`` to the executable when starting up. This is supported for all operating systems.
+parameter ``--settings-path`` to the executable when starting up. This is supported for all operating systems.
 
-This parameter instructs the program to use the given directory instead of ``ABarthel``
-and allows to have two instances of *Little Navmap* running with their own settings
+This parameter instructs the program to use the given full absolute or relative path instead of
+``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`` on Windows, for example.
+This allows to have two instances of *Little Navmap* running with their own settings
 and databases.
 
-Note that this does not override the full path and spaces are replaced with underscores.
+All configuration files and databases are stored per default in these directories:
+
+-  Windows: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
+-  macOS: ``/Users/YOURUSERNAME/.config/ABarthel``
+-  Linux: ``$HOME/.config/ABarthel``
 
 **Example:**
 
 How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings directory on Windows:
 
-#.  Right click on the ``littlenavmap.exe`` file (extension might be hidden in Windows explorer) and select ``Create Shortcut``.
+#.  Right click on the ``littlenavmap.exe`` file (extension might be hidden in Windows explorer depending on settings) and select ``Create Shortcut``.
+    You can also duplicate the shortcut in the Start menu or on the desktop if you used the installer.
 #.  Right click on the newly created shortcut and edit the shortcut properties.
-#.  Append ``--settings-directory ABarthel-XP`` to the path in the settings field separated by a space before ``--settings-directory``.
+#.  Append ``--settings-path "C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP"`` to the path in the settings field separated by a
+    space before ``--settings-path``. Also keep the space before the path. Replace ``YOURUSERNAME`` with your login name.
 #.  Click ``Ok``.
+
+
+Note that you have to enclose all paths in double quotes ``"`` if they contain spaces.
 
 .. figure:: ../images/winshortcut.jpg
 
-          Contents of the link properties dialog for the example above. Extended target directory input field to have the whole path visible.
+          Contents of the link properties dialog for the example above.
+          Extended target directory input field to have the whole path visible.
+          ``YOURUSERNAME`` replaced for user ``alex``. Note that the path to the
+          executable has to be put into double quotes too since it contains spaces.
 
 
 .. |Little Navmap Icon| image:: ../images/littlenavmap.svg
