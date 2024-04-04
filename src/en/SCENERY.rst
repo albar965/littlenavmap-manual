@@ -245,19 +245,28 @@ page :ref:`options-scenery-library-database`.
 Microsoft Flight Simulator 2020  Airports and Navdata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The recommended scenery library settings are :ref:`navigraph-auto` in the menu
+``Scenery Library`` -> ``Navigraph``. This ensures you use the right navigation database and keeps
+you simulator data in sync with *Little Navmap*.
+
+The mode ``Select automatically`` follows the recommendations below:
+
 -  **If you use the Navigraph update for MSFS:** Update the *Little Navmap* database with the FMS
-   Data Manager as well to keep the program in sync with the MSFS scenery library. Use the scenery
-   mode ``Use Navigraph for Navaids and Procedures`` in the menu ``Scenery Library`` to get access to
-   all procedures in *Little Navmap*. This is the default.
+   Data Manager as well to keep the program in sync with the MSFS scenery library.
+
+   The scenery mode :ref:`navdata-navigraph-navaid-proc` in the menu ``Scenery Library`` -> ``Navigraph``
+   is enabled to get access to all procedures in *Little Navmap*.
 
    Also check the selection in menu ``Scenery Library`` -> ``Airspace Libraries``. Select
    ``Navigraph`` and deselect ``Simulator`` there.
 
--  **If you do not use the Navigraph update for MSFS:** Use the scenery mode ``Do not use Navigraph
-   Database`` in the menu ``Scenery Library`` to avoid issues with missing or changed navaids.
+-  **If you do not use the Navigraph update for MSFS:** The scenery mode :ref:`navdata-navigraph-none`
+   is enabled to keep the navigation database in sync and to avoid issues with missing or changed navaids.
 
    The selection in menu ``Scenery Library`` -> ``Airspace Libraries`` should have ``Simulator``
    checked. Deselect ``Navigraph`` there.
+
+Enable the recommended modes manually if you do not use ``Select automatically``.
 
 See :doc:`NAVDATA` and :ref:`load-scenery-library-p3d-fsx-airspaces` for more background
 information on these settings.
