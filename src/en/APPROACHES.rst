@@ -340,7 +340,7 @@ Related Navaids
 ~~~~~~~~~~~~~~~
 
 Many fixes have a related or recommended navaid. This can be a VOR, NDB,
-ILS or a waypoint. The related navaid comes with radial and distance
+ILS or a waypoint plus distance and/or bearing. The related navaid comes with radial and distance
 values that can be used to locate waypoints when flying without GPS or
 simply for cross checking the position.
 

@@ -37,7 +37,7 @@ Traveling time is only shown if a valid aircraft performance profile is
 loaded that has at least climb, cruise and descent speeds set.
 
 The ARINC name of the approach procedure which is needed by some FMCs is
-shown in parentheses.
+shown in parentheses. See :ref:`procedure-tree-arinc` for details.
 
 Further error messages are shown in the :ref:`flight-plan-table-err-footer`.
 

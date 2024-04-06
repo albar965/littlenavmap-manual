@@ -143,7 +143,9 @@ depending on the error since inconsistencies can result in crashes.
 -  ``Description``: Description, type and number of available transitions.
    Parallel runways are indicated by a list of runways like ``STAR 07L, 07R, 07C``.
    The suffix ``All`` is added if a procedure applies to all runways of an airport.
--  ``Ident``: Ident of the initial fix or name of SID or STAR. Ident name of a procedure leg if expanded.
+-  ``Ident``: Ident of the initial fix and ARINC code in brackets or name of SID or STAR.
+   See :ref:`procedure-tree-arinc` for an explanation of the ARINC type codes.
+   Otherwise ident name of a procedure leg, if expanded.
 -  ``Course °M``: Magnetic course for a leg if expanded.
 -  ``Restriction``: Either procedure altitude restriction, procedure speed limit or a required vertical path angle.
    The following altitude restrictions exist for procedures:
@@ -157,6 +159,49 @@ depending on the error since inconsistencies can result in crashes.
 -  ``Dist./Time``: Distance of flying time for a leg. Holds can have a leg time in minutes or a leg distance in NM.
 -  ``Remarks``: Shows number of transitions, fly-over, turn direction, related navaid,
    RNP indicator and allowed aircraft categories for a procedure.
+
+.. _procedure-tree-arinc:
+
+ARINC Approach Types
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ARINC procedure type is shown in *Little Navmap* in brackets after the approach name/fix.
+
+The first letter of the ARINC approach type defines the type and the following two digits define the runway
+plus the optional runway designators ``L``, ``C`` or ``R``.
+
+An opional suffix like ``X``, ``Y`` or ``Z`` separated by a dash
+can be used to have approaches of the same type unique for airport and runway.
+
+**Types:**
+
+- ``B``: Localizer backcourse
+- ``D``: VORDME
+- ``F``: Flight management system (FMS)
+- ``G``: Instrument guidance system (IGS). Similar to ILS, but not aligned with the runway. Requires a visual turn at the end.
+- ``H``: RNP approach. Based on GPS.
+- ``I``: Instrument landing system (ILS). Precision approach.
+- ``J``: GNSS landing system (GLS). GBAS landing system, combining GPS with a ground station enhancing precision.
+- ``L``: Localizer only (LOC)
+- ``M``: Microwave landing system (MLS). Obsolete.
+- ``N``: Nondirectional beacon (NDB)
+- ``P``: Global positioning system (GPS)
+- ``Q``: Nondirectional beacon and DME (NDBDME)
+- ``R``: Area navigation (RNAV)
+- ``S``: VOR using a VORDME or VORTAC
+- ``T``: TACAN. Military only.
+- ``U``: Simplified directional facility (SDF). Less precise than a localizer
+- ``V``: VOR
+- ``W``: Microwave landing system (MLS), type A. Obsolete.
+- ``X``: Localizer directional aid (LDA). Like a localizer but not aligned with the runway. Requires a visual turn.
+- ``Y``: Microwave landing system (MLS), type B and C. Obsolete.
+
+**Examples:**
+
+- ``I20-Z``: ILS approach Z to runway 20.
+- ``D18C``: VORDME approach to runway 18C.
+- ``R02`` RNAV approach to runway 02.
+- ``L03-Y`` Localizer approach Y to into runway 03.
 
 Top Buttons
 ~~~~~~~~~~~
