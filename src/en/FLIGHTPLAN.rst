@@ -27,8 +27,13 @@ Header
 
 The top shows a label that contains departure, departure position
 (parking, runway or helipad), destination, flight plan distance,
-traveling time, used procedures (SID, STAR, approach and transitions) as
-well as flight plan type and more.
+traveling time, used procedures (SID, STAR, approach and transitions), flight plan type, wind
+on takeoff and landing and more.
+
+The wind indications for takeoff and landing runway (if selected in the flight plan) are taken
+from station or interpolated weather depending on availability.
+The weather source is defined by the selection in the menu ``Weather`` -> :ref:`airport-weather-source`
+and uses airport METAR information. See :doc:`WEATHER` for more information about weather reports.
 
 The label also displays :error-style:`red error messages` if, for example, the runway of a
 STAR differs from the runway of the following approach procedure.
@@ -44,9 +49,10 @@ Further error messages are shown in the :ref:`flight-plan-table-err-footer`.
 The header can be customized using :ref:`flight-plan-table-columns-select` and the font
 size can be adjusted in options on page :ref:`options-display-and-text`.
 
+
 .. figure:: ../images/flightplanheader.jpg
 
-      Header of a flight plan with all labels enabled.
+      Header of a flight plan with all labels except wind information enabled.
 
 .. _flight-plan-table:
 

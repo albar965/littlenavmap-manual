@@ -171,18 +171,9 @@ clear all search criteria.
 Random Flight in Airport Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Selects a random departure and destination based on the current airport search result.
-A progress dialog allowing to cancel the selection is shown if the process takes longer.
-Once done the user can accept the departure/destination pair or start a new calculation.
+Selects a flight using a random departure and a random destination based on the current airport search result.
 
-You might want to refine the flight plan further by running the :doc:`ROUTECALC` to get airways or intermediate navaids,
-selecting procedures (:doc:`SEARCHPROCS`) and :doc:`PARKINGPOSITION`.
-
-.. figure:: ../images/randomflight.jpg
-    :scale: 50%
-
-    Generating a random flight from a search result showing all airports in Germany, having 5,000
-    feet minimum runway length and are neither closed nor military. *Click image to enlarge.*
+See :doc:`RANDOM` for more information about this function.
 
 .. _airport-search-ident:
 

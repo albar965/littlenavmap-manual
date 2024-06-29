@@ -20,7 +20,7 @@ Quick Setup
 The export function is disabled initially until at least one format is enabled for export in ``File`` ->
 |Multiexport Flight Plan Options| :ref:`multiexport-flight-plan-options`.
 
-Export paths are pre-filled where known. This is done when first opening the dialog
+Export paths are prefilled where known. This is done when first opening the dialog
 and considers the current simulator selection (:ref:`scenery-library-menu`). A best guess is used if not applicable.
 
 Adapt the default paths if needed. You can edit a path by double clicking on it or using the

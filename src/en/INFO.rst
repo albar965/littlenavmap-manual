@@ -22,6 +22,16 @@ simulator and if the distance is below 500 NM.
 The display of additional units for fuel and weight as well as true
 course can be enabled in the options dialog on page :ref:`options-units`.
 
+.. _info-reload:
+
+Reloading
+~~~~~~~~~~~~~~~~~~~~
+
+All information in the information window is reloaded on startup if the setting ``Restore information window content``
+is enabled on the page :ref:`options-startup-and-updates` in options.
+
+Airport, VOR, NDB, waypoint, userpoint and logbook information is kept if possible when switching between simulators in the :ref:`scenery-library-menu`. Other information is dropped.
+
 .. _windows-tabs:
 
 Dock Window and Tabs
@@ -59,7 +69,7 @@ highlighting the shown object on the map. A link
 ``Remove Airway Highlights`` or ``Remove Airspace Highlights`` can be
 used to remove the corresponding highlights on the map.
 
-The links ``Procedures``, ``Departure Procedures`` or ``Arrival Procedures`` (text depends on airport position in flight plan)
+The links ``Procedures``, ``Departure Proc.`` or ``Arrival Proc.`` (text depends on airport position in flight plan)
 allow to jump directly to the :doc:`SEARCHPROCS` window.
 
 Other links open web pages with airport information in the web browser
@@ -95,7 +105,7 @@ Tabs in Information Dock Window
 Airport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A tab that has several sub-tabs for airport information.
+A tab that has several sub-tabs (see chapters below) for airport information.
 
 The six tabs ``Overview``, ``Runways``, ``Com``, ``Procedures``, ``Nearest`` and ``Weather`` below
 the airport tab show information for one selected airport.
@@ -130,7 +140,7 @@ internal X-Plane code ``XPA000B``.
 
 .. _airport-general:
 
-General
+Overview
 ''''''''''''''''''''''''''''''''''''
 
 **Sunrise and sunset** for the airport are calculated based on current real
@@ -141,15 +151,13 @@ This is indicated by the text ``(civil twilight, real date)`` or
 **Preferred runways** depending on wind are shown after the METAR. More
 details about preferred runways are on the tab :ref:`airport-weather`.
 
-Additional links for helipads are available in the tab ``Runways``.
-
-The tab ``Nearest`` shows airports having procedures and closest navaids
-relative to the selected airport.
+**METAR reports**: This tab shows also undecoded station, nearest and/or interpolated METAR reports for the selected airport.
+See :doc:`WEATHER` for more information about weather reports.
 
 .. _airport-links:
 
 Links
-''''''''''''''''''''''''''''''''''''
+===========================================
 
 Links to several online services like
 `SkyVector <https://skyvector.com/>`__ or the `The X-Plane Scenery
@@ -168,7 +176,7 @@ The links are shown in the tab ``Overview``.
 .. _airport-files:
 
 Files
-''''''''''''''''''''''''''''''''''''
+===========================================
 
 *Little Navmap* will show extra links to local files if you put these
 into a special directory with the name of the airport ICAO ident.
@@ -212,21 +220,57 @@ The links are shown in the tab ``Overview``.
        on real date since not connected to a simulator. Wind direction prefers
        runways 09 and 14. *Click image to enlarge.*
 
+.. _airport-runways-tab:
+
+Runways
+''''''''''''''''''''''''''''''''''''
+
+Shows all available runways and helipads with detailed information for the selected airport.
+Related ILS information for runways is shown too.
+
+.. _airport-com-tab:
+
+COM
+''''''''''''''''''''''''''''''''''''
+
+All COM frequencies from the airport.
+
+.. _airport-procedures-tab:
+
+Procedures
+''''''''''''''''''''''''''''''''''''
+
+A detailed list of all procedures. You can select and look at procedures by clicking on the link ``Procedures`` which
+will show the :doc:`SEARCHPROCS` tab.
+
+.. _airport-nearest-tab:
+
+Nearest
+''''''''''''''''''''''''''''''''''''
+
+This tab shows airports having approach procedures nearby as well as the closest navaids
+relative to the selected airport. Click on the blue links to jump to airports or navaids.
+
 .. _airport-weather-tab:
 
 Weather
 ''''''''''''''''''''''''''''''''''''
 
-The tab ``Weather`` shows decoded weather information for a selected
+The tab ``Weather`` shows decoded station, nearest and/or interpolated weather information for the selected
 airport. The flight rules icon (:ref:`airport-weather-legend`) has a suffix ``- Map`` if the
 shown weather source is the source for airport weather icons on the map.
 Detailed information for best runways for takeoff and
 landing based on wind conditions is shown as well.
 
+This tab shows decoded METAR reports for the selected airport.
+
 .. role:: error-style
 .. role:: warning-style
 
-The time is :warning-style:`shown in warning orange color` if older than three hours and :error-style:`in red error color` if older than six hours.
+The time is :warning-style:`shown in warning orange color` if older than three hours and
+:error-style:`in red error color` if older than six hours.
+
+See :doc:`WEATHER` for more information about weather reports.
 
 .. _navaids:
 

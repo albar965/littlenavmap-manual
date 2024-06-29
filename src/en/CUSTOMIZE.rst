@@ -4,17 +4,13 @@ Customize
 *Little Navmap* creates multiple configuration files in the directory
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`` when started. These allow extended customization of the program.
 
-This chapter shows the Windows file locations. See :doc:`FILES` for locations on Linux and macOS.
+.. _note:
+
+    This chapter shows the Windows file locations. See :doc:`FILES` for locations on Linux and macOS.
 
 The files use the Windows-INI style that has groups in square brackets and ``key=value`` lines. See
 `INI (Wikipedia) <https://en.wikipedia.org/wiki/INI_file>`__ for more information
 about this type of configuration files.
-
-.. note::
-
-   You have to restart *Little Navmap* to see any changes. Also,
-   do not edit the files while *Little Navmap* is running since it might
-   overwrite your changes.
 
 To undo all changes simply delete a file. It will be created again
 containing the default values when *Little Navmap* is started.
@@ -25,6 +21,12 @@ value when *Little Navmap* is started.
 Keys and values are case sensitive. Order in the files is not important
 if the keys remain in their respective sections. The program might
 reorder the keys when saving or updating the files.
+
+.. important::
+
+   You have to restart *Little Navmap* to see any changes. Also,
+   do not edit the files while *Little Navmap* is running since it might
+   overwrite your changes.
 
 .. _customize-version:
 
@@ -90,7 +92,7 @@ to the settings directory to override the default styles.
 
 See chapter :doc:`FILES` for settings locations on different operating systems.
 
-Note that your current `little_navmap_mapstyle.ini` is automatically backed up after updating
+Note that your current ``little_navmap_mapstyle.ini`` is automatically backed up after updating
 *Little Navmap*.
 
 .. VERSION_NUMBER_TODO update branch in link
@@ -202,9 +204,8 @@ Modify the icon and save it into the settings directory
 ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``. *Little Navmap* will
 automatically detect and use the icon on next startup.
 
-The formats are limited to PNG, JPG, GIF and SVG (`Scalable Vector Graphics (SVG) Tiny 1.2
-Specification <https://www.w3.org/TR/SVGMobile12>`__) where advanced
-graphics effects like textures will not work.
+The formats are limited to PNG, JPG, GIF and SVG (`Scalable Vector Graphics (SVG) Tiny 1.2 Specification <https://www.w3.org/TR/SVGMobile12>`__)
+where advanced graphics effects like textures will not work.
 
 You can use the free vector drawing program
 `Inkscape <https://inkscape.org>`__ to edit SVG icons. Restart *Little

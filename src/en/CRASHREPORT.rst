@@ -22,3 +22,12 @@ Loading of files and settings optionally skipped in clean mode:
 No user files are modified or removed. User features like measurement lines or traffic patters are not affected.
 
 **See** :doc:`ISSUEREPORT` **for more information about the report and contact information.**
+
+
+.. note::
+
+        A crash report will also be triggered if you terminate *Little Navmap* from the Windows Task Manager, you have a power outage
+        or if your computer crashes due to a Windows bluescreen, for example.
+
+        Ignore the crash report for these cases.
+

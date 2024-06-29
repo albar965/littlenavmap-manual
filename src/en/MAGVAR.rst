@@ -1,8 +1,7 @@
 Magnetic Declination
 ~~~~~~~~~~~~~~~~~~~~
 
-*Little Navmap* uses the `magnetic
-declination <https://en.wikipedia.org/wiki/Magnetic_declination>`__ which
+*Little Navmap* uses the `magnetic declination <https://en.wikipedia.org/wiki/Magnetic_declination>`__ which
 is stored either with VOR stations (calibrated declination) or the actual environment declination. The
 latter one is calculated by the program using the world magnetic model.
 (`WMM <https://en.wikipedia.org/wiki/World_Magnetic_Model>`__) or loaded

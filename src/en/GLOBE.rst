@@ -1,8 +1,7 @@
 GLOBE Offline Elevation Data
 -------------------------------------
 
-Using the recommended freely downloadable `GLOBE - Global Land One-km
-Base Elevation Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__
+Using the recommended freely downloadable `GLOBE - Global Land One-km Base Elevation Project <https://ngdc.noaa.gov/mgg/topo/globe.html>`__
 elevation data has several advantages:
 
 -  Faster updates

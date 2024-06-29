@@ -34,7 +34,7 @@ Wind Indication
 
 The preferred runway is shown in the departure and destination runway selection dialog window.
 
-This is based on the selection in menu `Weather` -> :ref:`airport-weather-source` and shows the best
+This is based on the selection in menu ``Weather`` -> :ref:`airport-weather-source` and shows the best
 runways for wind and the used weather source.
 
 The head and crosswind is shown for each runway in the selection table.

@@ -17,7 +17,7 @@ AviTab or copying it to the clipboard.
    -  ``1080p, 1920 x 1080, 16:9``,
    -  ``1440p, 2560 x 1440, 16:9``,
    -  ``2160p, 3840 x 2160, 16:9`` and
-   -  ``4320p, 7680 x 4320, 16:9``: Pre-defined typical image and
+   -  ``4320p, 7680 x 4320, 16:9``: Predefined typical image and
       monitor resolutions.
 
 -  ``Width`` and ``Height``: Use this to define the pixel size for the

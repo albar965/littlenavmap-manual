@@ -122,7 +122,9 @@ Microsoft Flight Simulator 2020 format using ``*``       PLN      X    X    X   
 Majestic Dash MJC8 Q400                                  FPR      0    X    0    0       0               0       0            0           0
 PMDG Aircraft                                            RTE      0    X    X    0       0               0       0            0           0
 ProSim                                                   XML [4]_ 0    X    X    0       0               0       0            0           0
+KLN 90B                                                  PLN      X    X    X    X       X               0       0            0           0
 QualityWings                                             RTE      0    X    X    0       0               0       0            0           0
+JustFlight BAE-14 for MSFS                               RTE      0    X    X    0       0               0       0            0           0
 Rotate MD-80, JARDesign and others                       TXT      0    X    X    0       0               0       0            0           0
 TFDi Design 717                                          XML      0    X    X    0       0               0       0            0           0
 UFMC                                                     UFMC     0    X    X    0       0               0       0            0           0
@@ -254,7 +256,7 @@ FMS Export Issues
 ''''''''''''''''''''''''''''''''''''''''''''''''
 
 While *Little Navmap* resolves references from simulator airports to procedures in the navdata by
-various ways, X-Plane might not be able to find the procedures for a given aiport. This is the
+various ways, X-Plane might not be able to find the procedures for a given airport. This is the
 case if an airport has been renamed or has inconsistent idents like ICAO or FAA. You will see a warning message
 in X-Plane where it complains about not being able to load the procedures. You can try to load the flight plan
 and select the procedures manually in the GPS or FMS units but this also does not work in all cases.
@@ -614,6 +616,15 @@ Procedures cannot be saved.
      <route name="LGIRLEDA">LGIR SUD UJ65 TRL UM601 RUTOM M601 QUENN Q123 LULIX P167 GINOX UM601 BCN UN975 SELVA LEDA</route>
    </companyroutes>
 
+.. _flight-plan-formats-kln90b:
+
+KLN 90B
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A flight plan format for the `KLN 90B <https://github.com/falcon71/kln90b>`__ for MSFS.
+
+The flight plan is saved to the file ``...\Community\falcon71-kln90b\flightplan\kln\kln.pln``.
+
 .. _flight-plan-formats-bbs:
 
 BlackBox Simulations Airbus
@@ -642,13 +653,21 @@ QualityWings
 Flight plan for QualityWings aircraft. This format cannot save
 procedures. The location depends on the aircraft.
 
+.. _flight-plan-formats-jf-bae:
+
+JustFlight BAE-146
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Flight plan for the JustFlight BAE-146 aircraft for MSFS.
+
+The location to save is ``...\Community\JustFlight BAE-146\justflight-aircraft-146\Work\JustFlight\FlightPlans``.
+
 .. _flight-plan-formats-efbr:
 
 AivlaSoft EFB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Flight plan for the `AivlaSoft Electronic Flight
-Bag <https://aivlasoft.com>`__. Saving of procedures is not supported.
+Flight plan for the `AivlaSoft Electronic Flight Bag <https://aivlasoft.com>`__. Saving of procedures is not supported.
 
 .. _flight-plan-formats-leveld-rte:
 

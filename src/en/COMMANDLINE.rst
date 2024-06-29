@@ -29,6 +29,11 @@ operating systems. A question dialog might appear asking to discard changes, if 
 
 .. note::
 
+      Make sure your flight plan is free of errors like a too low cruise altitude or procedure altitude violations
+      to avoid warning dialogs or a modified flight plan blocking the loading of subsequent flight plans.
+
+.. note::
+
       ``--flight-plan-descr`` reads the route string using the current options set in the drop down menu button
       in the :doc:`ROUTEDESCR` dialog window.
 
@@ -48,6 +53,9 @@ Both short and long options are available.
   --help-all                                     Displays help including Qt
                                                  specific options.
   -v, --version                                  Displays version information.
+  -q, --quit                                     Quit an already running instance.
+                                                 The running instance might still
+                                                 ask about exiting or saving files.
   -p, --settings-path <settings-path>            Use <settings-path> to store
                                                  options and databases into the
                                                  given directory.

@@ -73,7 +73,7 @@ Options Hints
 
 Added hints prefixed with a light bulb in the options dialog pointing to other related settings.
 Some hints contain a link which directly opens the related page. Bold text is still an important
-note like `Restart required`.
+note like ``Restart required``.
 
 .. figure:: ../images/optionshint.jpg
 
@@ -462,6 +462,11 @@ The gradient is also used in the elevation profile.
 
 You can also enable a tooltip for the aircraft trail on page :ref:`options-map-tooltips-and-clicks`.
 
+Maximum number of aircraft trail points
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Limits the number or aircraft trail to avoid performance issues when showing a too large number of
+trail points.
 
 See :doc:`AIRCRAFTTRAIL` for more information.
 
@@ -489,6 +494,9 @@ Besides text labels airport details like aprons or taxiways can be enabled or di
 
 The dialog uses a tree. See :ref:`ui-tree` for more information about this type of input element.
 
+Note that some labels have a ``…`` appended if label texts are suppressed due to higher
+zoom distances or lower detail levels.
+
 .. _options-map-keys:
 .. _page14:
 
@@ -505,16 +513,26 @@ The following map themes requiring an account come with *Little Navmap*:
    Click ``Add Mapbox User Map`` to add an user styled map to *Little Navmap*.
 -  `Thunderforest <https://www.thunderforest.com/>`__
 -  `Maptiler <https://www.maptiler.com/>`__
+-  `Stadia StamenTerrain <https://stadiamaps.com/stamen/onboarding/create-account/>`__
 
 A restart might be needed after changing keys.
 
 Click one of the following links to go directly to the account pages of the respective map services. You need to sign in.
 
+
 .. note::
 
     All services are free to use at the time of writing these instructions. You do not have to enter
-    you credit card, account or other payment information to use these. Simply ignore these sections when signing in.
+    you credit card, account or other payment information to use these.
+    Simply ignore these sections when signing in or creating an account.
 
+.. note::
+
+   Clear the map cache when changing configurable maps like ``MapBox User`` to see the changes. Map tiles are
+   images which are stored in the local disk cache and are kept for two weeks in most maps.
+
+   You can open the cache using the menu item ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`.
+   See also :ref:`disk-cache` for details.
 
 .. warning::
 
@@ -682,7 +700,7 @@ Allow scrolling disabled:
 
    -  Double-click into a table view or map display to zoom to an airport or a navaid.
    -  Context menu item ``Show on map``.
-   -  ``Goto Home`` or ``Goto Center for Distance Search``.
+   -  ``Go to Home`` or ``Go to Center for Distance Search``.
    -  ``Map`` link in ``Information`` dock window.
    -  ``Show Flight Plan``, when selected manually, or automatically after loading a flight plan.
    -  Centering a Google Earth KML/KMZ file after loading
@@ -720,13 +738,6 @@ Highlight active flight plan legs
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Shows active flight plan legs in magenta color (default) on the map and in the flight plan table.
-
-
-Maximum number of aircraft trail points:
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Limits the number or aircraft trail to avoid performance issues when showing a too large number of
-trail points.
 
 .. _options-flight-plan:
 .. _page17:
@@ -802,7 +813,7 @@ Use ``Reset`` to set a value back to default if you change something accidentall
 
 This page allows to change settings for online networks.
 
-VATSIM, IVAO and PilotEdge provide pre-configured options to connect to the services.
+VATSIM, IVAO and PilotEdge provide preconfigured options to connect to the services.
 
 Use ``Custom with status file`` if you have a status file pointing to ``whazzup.txt`` files.
 Use ``Custom`` if you'd like to load a ``whazzup.txt`` file directly.
@@ -975,7 +986,7 @@ Configuration options for the internal web server of *Little Navmap*.
    *Little Navmap*, for example. Change this value if you get errors
    like ``Unable to start the server. Error: The bound address is already in use.``.
 -  ``Use encrypted connection (HTTPS / SSL)``: Encrypted connections use
-   a pre-computed self-signed certificate which comes with *Little
+   a precomputed self-signed certificate which comes with *Little
    Navmap*. A browser will show an error message if using this
    certificate and requires to add a security exception. The encrypted
    address is ``https://localhost:8965/``, for example. Creating a self
@@ -1148,7 +1159,7 @@ unwanted highlighting of these airports as add-ons.
 Examples
 ^^^^^^^^
 
-Provided your simulator is installed in ``C:\Games\FSX``.
+The examples are based on a simulator installed in ``C:\Games\FSX``.
 
 ORBX Vector
 '''''''''''

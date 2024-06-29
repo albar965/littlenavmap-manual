@@ -578,7 +578,6 @@ Same as ``Window`` -> ``Shortcuts`` -> ``Fuel Report`` or pressing
 See :ref:`shortcuts-main-window` for
 a full list or shortcuts.
 
-
 .. _undo-redo:
 
 |Undo| |Redo| Undo and Redo
@@ -640,6 +639,15 @@ The window is pulled into foreground if already open.
 The altitude from the current flight plan is transferred to the calculation window but not vice versa.
 
 See chapter :doc:`ROUTECALC` for more information.
+
+.. _generate-random-flight:
+
+|Generate Random Flight| Generate Random Flight
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Shows the airport search tab and enables the controls for the random flight generation from the airport search result.
+
+See :doc:`RANDOM` for more information.
 
 .. _calculate-direct:
 
@@ -761,11 +769,16 @@ Search Menu
 This provides a shortcut to jump to the respective search window and tabs.
 See :doc:`SEARCH` for more general information about airport, navaid and other search functions.
 
-Airport Search
+Airport Search and Navaid Search
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :doc:`SEARCH` for general information about these two search tabs.
+
+Procedure Search
 ^^^^^^^^^^^^^^^^^^^^^
 
-Navaid Search
-^^^^^^^^^^^^^^^^^^^^^
+See :doc:`SEARCHPROCS` for more information about procedure search and display as well as
+:doc:`APPROACHES` for general information about SID, STAR and approaches.
 
 Userpoint Search
 ^^^^^^^^^^^^^^^^^^^^^
@@ -786,8 +799,8 @@ Map Menu
 
 .. _goto-home:
 
-|Goto Home| Goto Home
-^^^^^^^^^^^^^^^^^^^^^
+|Goto Home| Go to Home
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Shows the home area that was set using :ref:`set-home` in the sub-menu ``More`` in the map context menu.
 It will show the map using the saved position and zoom distance. The center of the home area is highlighted by a |Home Symbol| symbol.
@@ -798,8 +811,8 @@ The symbol cannot be hidden. Set it at a remote position if you like to hide it.
 
 .. _goto-user-aircraft:
 
-|Goto User Aircraft| Goto User Aircraft
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Goto User Aircraft| Go to User Aircraft
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Moves and zooms the map to the user aircraft. Disabled if not connected to a simulator.
 
@@ -2297,6 +2310,7 @@ Scenery Library Menu
 
 See :doc:`NAVDATA` for general information about navigation and simulator data.
 
+
 .. _flight-simulators-menu:
 
 Flight Simulators
@@ -2311,6 +2325,13 @@ The menu shows the simulator name as a disabled menu item as an indicator if onl
 .. note::
 
         The selection in the scenery library menus also affects the selection of weather files for ActiveSky and X-Plane.
+
+.. note::
+
+      While *Little Navmap* tries to keep all information and search results when switching simulators,
+      some information in the information window :doc:`INFO` and the :doc:`SEARCHPROCS` windows may be lost when
+      switching.
+
 
 The loaded AIRAC cycle is only shown for X-Plane and Navigraph data
 since the information is not available for FSX, P3D and MSFS.
@@ -2616,7 +2637,7 @@ layout. This is normally only done when exiting *Little Navmap*.
 
 .. _create-issue-report:
 
-Create an Issue Report
+Create Issue Report
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Manually creates an issue report Zip archive containing all needed files to reproduce a problem.
@@ -3302,6 +3323,7 @@ See :doc:`UPDATE` for more information.
 .. |Search| image:: ../images/icon_searchdock.png
 .. |Flight Plan| image:: ../images/icon_routedock.png
 .. |Flight Plan Calculation| image:: ../images/icon_routecalcdock.png
+.. |Generate Random Flight| image:: ../images/icon_routerandom.png
 .. |Information| image:: ../images/icon_infodock.png
 .. |Flight Plan Elevation Profile| image:: ../images/icon_profiledock.png
 .. |Simulator Aircraft| image:: ../images/icon_aircraftdock.png

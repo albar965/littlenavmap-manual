@@ -10,6 +10,9 @@ The dialog header shows airport name and its ICAO ident as well as field elevati
 The list ``Runways`` shows available runways for the SID or the STAR. Columns are runway
 name, length, width, magnetic heading, surface, lighting status and other attributes.
 
+The dialog window shows the currently selected runway preselected. This might be a runway assigned by a STAR, approach or a runway
+selected as departure or destination.
+
 .. note::
 
    Note that the shown runway numbers might differ compared to procedure runways.

@@ -208,8 +208,7 @@ Display of user features can be enabled or disabled in menu ``View`` -> :ref:`us
 |                                 | This feature can be added from the map context menu           |
 |                                 | using :ref:`show-navaid-range`.                               |
 +---------------------------------+---------------------------------------------------------------+
-| |Distance|                      | `Great                                                        |
-|                                 | circle <https://en.wikipedia.org/                             |
+| |Distance|                      | `Great circle <https://en.wikipedia.org/                      |
 |                                 | wiki/Great-circle_distance>`__                                |
 |                                 | distance and course measurement                               |
 |                                 | line indicating length and true                               |
@@ -290,6 +289,9 @@ Aircraft and Ships
 ~~~~~~~~~~~~~~~~~~
 
 Labels for the user and AI aircraft can be configured in options on the page :ref:`options-map-labels`.
+
+Note that AI/multiplayer aircraft labels have a ``…`` appended if label texts are suppressed due to higher
+zoom distances or lower detail levels.
 
 Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 
@@ -633,45 +635,51 @@ Flight Plan
 Flight plan display labels can be changed in the options dialog on
 page :ref:`options-map-labels`. Look can be changed on page :ref:`options-map-flight-plan`.
 
+Note that labels of procedure waypoints have a ``…`` appended if additional labels texts like restrictions
+are suppressed due to higher zoom distances or lower detail levels.
+
 See also :doc:`FLIGHTPLAN`.
 
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Flight Plan|                   | Flight plan with distance,                                                                                      |
-|                                 | direction and magnetic course at                                                                                |
-|                                 | each leg.                                                                                                       |
-|                                 | ``°M`` and ``°T`` indicate                                                                                      |
-|                                 | magnetic or true course,                                                                                        |
-|                                 | respectively.                                                                                                   |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Flight Plan VOR|               | Blue fixed course labels show inbound and outbound course for VOR also depending on the calibrated declination. |
-|                                 | Blue indicates VOR inbound and outbound course with VOR calibrated declination. Otherwise black.                |
-|                                 | See :doc:`MAGVAR` for more information on flight plan course and magnetic declination.                          |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Flight Plan Procedure|         | Flight plan procedure leg with                                                                                  |
-|                                 | the same information as above.                                                                                  |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Active Leg|                    | Active flight plan leg.                                                                                         |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Wind Barb|                     | Wind direction and speed at                                                                                     |
-|                                 | flight plan waypoint. See chapter                                                                               |
-|                                 | :ref:`high-alt-wind`                                                                                            |
-|                                 | below for details                                                                                               |
-|                                 | about wind barbs.                                                                                               |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Flight Plan Departure Position|| Flight plan departure position on                                                                               |
-|                                 | airport. Either parking, fuel                                                                                   |
-|                                 | box, helipad, water or runway.                                                                                  |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Top of Climb|                  | Top of climb point with distance                                                                                |
-|                                 | from departure.                                                                                                 |
-|                                 | Can be disabled in menu ``View``                                                                                |
-|                                 | -> :ref:`show-toc-and-tod`                                                                                      |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| |Top of Descent|                | Top of descent point with                                                                                       |
-|                                 | distance to destination.                                                                                        |
-|                                 | Can be disabled in menu ``View``                                                                                |
-|                                 | -> :ref:`show-toc-and-tod`                                                                                      |
-+---------------------------------+-----------------------------------------------------------------------------------------------------------------+
++---------------------------------+--------------------------------------------------------------+
+| |Flight Plan|                   | Flight plan with distance,                                   |
+|                                 | direction and magnetic course at                             |
+|                                 | each leg.                                                    |
+|                                 | ``°M`` and ``°T`` indicate                                   |
+|                                 | magnetic or true course,                                     |
+|                                 | respectively.                                                |
++---------------------------------+--------------------------------------------------------------+
+| |Flight Plan VOR|               | Blue fixed course labels show inbound and outbound           |
+|                                 | course for VOR also depending on the calibrated declination. |
+|                                 | Blue indicates VOR inbound and outbound course with VOR      |
+|                                 | calibrated declination. Otherwise black.                     |
+|                                 | See :doc:`MAGVAR` for more information on flight plan        |
+|                                 | course and magnetic declination.                             |
++---------------------------------+--------------------------------------------------------------+
+| |Flight Plan Procedure|         | Flight plan procedure leg with                               |
+|                                 | the same information as above.                               |
++---------------------------------+--------------------------------------------------------------+
+| |Active Leg|                    | Active flight plan leg.                                      |
++---------------------------------+--------------------------------------------------------------+
+| |Wind Barb|                     | Wind direction and speed at                                  |
+|                                 | flight plan waypoint. See chapter                            |
+|                                 | :ref:`high-alt-wind`                                         |
+|                                 | below for details                                            |
+|                                 | about wind barbs.                                            |
++---------------------------------+--------------------------------------------------------------+
+| |Flight Plan Departure Position|| Flight plan departure position on                            |
+|                                 | airport. Either parking, fuel                                |
+|                                 | box, helipad, water or runway.                               |
++---------------------------------+--------------------------------------------------------------+
+| |Top of Climb|                  | Top of climb point with distance                             |
+|                                 | from departure.                                              |
+|                                 | Can be disabled in menu ``View``                             |
+|                                 | -> :ref:`show-toc-and-tod`                                   |
++---------------------------------+--------------------------------------------------------------+
+| |Top of Descent|                | Top of descent point with                                    |
+|                                 | distance to destination.                                     |
+|                                 | Can be disabled in menu ``View``                             |
+|                                 | -> :ref:`show-toc-and-tod`                                   |
++---------------------------------+--------------------------------------------------------------+
 
 .. _procedures-legend:
 
@@ -997,6 +1005,8 @@ Cloud Cover
 +-------------------+------------------------+
 | |Overcast|        | Overcast               |
 +-------------------+------------------------+
+
+Weather stations with invalid reports are shown crossed out on the map.
 
 .. _airport-weather-wind:
 

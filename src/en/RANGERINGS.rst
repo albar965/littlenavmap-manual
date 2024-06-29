@@ -13,7 +13,7 @@ The dialog window contains the following input fields:
    See also :ref:`show-aircraft-endurance-map` for another way to display a dynamic range based on actual user aircraft parameters like fuel on board.
 -  ``Label``: An additional label which is attached to the rings.
 -  ``Line Color``: Color for range rings and labels.
--  ``Latitude and Longitude``: Pre-filled with the coordinates at the click spot but can be changed freely.
+-  ``Latitude and Longitude``: Prefilled with the coordinates at the click spot but can be changed freely.
    See :doc:`COORDINATES` for supported formats. The label below shows the translated coordinates as selected in the
    options dialog on page :ref:`options-units` or an error message.
 -  ``Do not show this dialog when using "Shift+Click" in the map and use range ring radii as above.``: Places a range ring with the given

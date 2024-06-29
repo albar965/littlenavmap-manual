@@ -187,7 +187,8 @@ Departure and destination ident equal
     Airport names or other attributes are not compared.
 
 Either departure or destination ident empty
-    Remove all entries where departure or destination is empty.
+    Remove all entries where departure or destination is empty or
+    off-airport. Off-airport departures or landings show coordinates like ``2956N10702E`` or ``4831N12255W`` instead of an airport ident.
     This can happen when running simulator replay, redoing landings or interrupting flights.
 
 Show a preview before deleting logbook entries
@@ -501,8 +502,7 @@ Excel* or any other spreadsheet software capable of reading and writing
 CSV files to adapt the exported file to the format expected by that
 application.
 
-See `Comma-separated
-values <https://en.wikipedia.org/wiki/Comma-separated_values>`__ in the
+See `Comma-separated values <https://en.wikipedia.org/wiki/Comma-separated_values>`__ in the
 Wikipedia for detailed information on the format.
 
 Altitudes are always feet and distances are always nautical miles in the

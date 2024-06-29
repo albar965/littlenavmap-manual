@@ -19,31 +19,31 @@ plan for weather.
 
 **Related chapters:**
 
--  :ref:`wind`: Information on winds
-   aloft.
--  :doc:`AIRCRAFTPERFCOLL`: Automatic
-   and permanent aircraft performance collection running in the
-   background.
--  :doc:`AIRCRAFTPERFEDIT`: Change
-   performance manually.
--  :doc:`AIRCRAFTPERFMERGE`: Merge
-   performance data collected from a flight or another file into the
-   currently loaded.
+- :ref:`wind`: Information on winds
+  aloft.
+- :doc:`AIRCRAFTPERFCOLL`: Automatic
+  and permanent aircraft performance collection running in the
+  background.
+- :doc:`AIRCRAFTPERFEDIT`: Change
+  performance manually.
+- :doc:`AIRCRAFTPERFMERGE`: Merge
+  performance data collected from a flight or another file into the
+  currently loaded.
 
 **Aircraft performance and the winds aloft situation is used for the
 functions below:**
 
--  Calculation of the flight time which is shown in flight plan header.
--  Calculation of top of climb and top of descent which are shown on the
-   map and in the elevation profile. Note that wind and altitude
-   restrictions in procedures might affect the top of descent or top or
-   climb distances.
--  Fuel planning report in :ref:`fuel-report` of the dock window
-   ``Flight Planning``.
--  Remaining fuel at each leg in flight plan table.
--  Remaining fuel at top of descent and destination in the tab
-   ``Progress`` in the ``Information`` window as well as traveling
-   times.
+- Calculation of the flight time which is shown in flight plan header.
+- Calculation of top of climb and top of descent which are shown on the
+  map and in the elevation profile. Note that wind and altitude
+  restrictions in procedures might affect the top of descent or top or
+  climb distances.
+- Fuel planning report in :ref:`fuel-report` of the dock window
+  ``Flight Planning``.
+- Remaining fuel at each leg in flight plan table.
+- Remaining fuel at top of descent and destination in the tab
+  ``Progress`` in the ``Information`` window as well as traveling
+  times.
 
 Fuel is shown both as weight (``lbs`` or ``kg``) or as volume
 (``gallons``, ``liter``) and can be entered in all available units
@@ -130,8 +130,7 @@ the *Little Navmap* main window to load them.
 .. tip::
 
     Aircraft performance files from contributors and my own flights are
-    available in the `download section of
-    littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
+    available in the `download section of littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
 
     Note that these files are community work and might vary in quality and accuracy.
 
@@ -170,23 +169,23 @@ Buttons
 The buttons on top have the same functionality as the items in the main
 menu :ref:`aircraft-menu`.
 
--  |Wind| ``Wind Source``: Same options as menu :ref:`wind-source` in main menu ``Weather``.
--  |Edit Aircraft Performance| ``Edit Aircraft Performance``: Opens the
-   edit dialog for the currently loaded profile. You can also use the
-   menu item ``Aircraft`` -> :ref:`aircraft-menu-edit` to change
-   the currently loaded performance data. See :doc:`AIRCRAFTPERFEDIT` for a description of the edit
-   dialog.
--  |New Aircraft Performance| ``New Aircraft Performance``: Creates a
-   new performance profile with default values and opens the edit
-   dialog. A simple default profile for a Cessna C172 is default.
--  |Open Aircraft Performance| ``Open Aircraft Performance``: Load a
-   LNMPERF file.
--  |Save Aircraft Performance| ``Save Aircraft Performance``: Save
-   current profile to a LNMPERF file.
--  |Save Aircraft Performance as| ``Save Aircraft Performance as``: Save
-   current profile to a new LNMPERF file.
--  |Help| Help: Click to open this chapter of the manual in the default
-   browser.
+- |Wind| ``Wind Source``: Same options as menu :ref:`wind-source` in main menu ``Weather``.
+- |Edit Aircraft Performance| ``Edit Aircraft Performance``: Opens the
+  edit dialog for the currently loaded profile. You can also use the
+  menu item ``Aircraft`` -> :ref:`aircraft-menu-edit` to change
+  the currently loaded performance data. See :doc:`AIRCRAFTPERFEDIT` for a description of the edit
+  dialog.
+- |New Aircraft Performance| ``New Aircraft Performance``: Creates a
+  new performance profile with default values and opens the edit
+  dialog. A simple default profile for a Cessna C172 is default.
+- |Open Aircraft Performance| ``Open Aircraft Performance``: Load a
+  LNMPERF file.
+- |Save Aircraft Performance| ``Save Aircraft Performance``: Save
+  current profile to a LNMPERF file.
+- |Save Aircraft Performance as| ``Save Aircraft Performance as``: Save
+  current profile to a new LNMPERF file.
+- |Help| Help: Click to open this chapter of the manual in the default
+  browser.
 
 .. _aircraft-performance-report:
 
@@ -226,33 +225,33 @@ Aircraft Section
 .. role:: error-style
 .. role:: warning-style
 
--  ``Estimated range with reserve``: Calculated based on usable fuel,
-   speed and fuel flow for the cruise phase and reserve fuel. Shows an
-   :warning-style:`orange warning` if fuel flow values are not set.
--  ``Minimum runway``: Shown if set in the performance profile.
+- ``Estimated range with reserve``: Calculated based on usable fuel,
+  speed and fuel flow for the cruise phase and reserve fuel. Shows an
+  :warning-style:`orange warning` if fuel flow values are not set.
+- ``Minimum runway``: Shown if set in the performance profile.
 
 .. _aircraft-performance-flightplan:
 
 Flight Plan Section
 '''''''''''''''''''
 
--  ``Distance and Time``: Total flight plan distance and traveling time
-   including procedures. Same values as on top of the tab
-   ``Flight Plan``. Affected by the wind situation.
--  ``Average Ground Speed``: Ground speed across all the flight phases
-   climb, cruise and descent. Calculated based on speeds as given and
-   wind as entered on top the tab or selected wind source.
--  ``True Airspeed at Cruise``: Cruise speed as given in the edit
-   dialog.
--  ``Mach at cruise``: Mach number at flight plan cruise altitude
-   calculated based on given true airspeed and ISA atmospheric standard
-   conditions. Only mach numbers above 0.4 are shown.
--  ``Average wind total``: Shows the average wind speed and direction for all
-   three flight phases climb, cruise and descent. Only shown if
-   sufficient wind is present. Also shows average head- or tailwind if
-   present. The wind source (``NOAA``, ``Simulator``, ``Manual`` or
-   ``Disabled``) is shown in parentheses.
--  ``Average wind at cruise``: As above but shows the average wind speed and direction for the cruise phase.
+- ``Distance and Time``: Total flight plan distance and traveling time
+  including procedures. Same values as on top of the tab
+  ``Flight Plan``. Affected by the wind situation.
+- ``Average Ground Speed``: Ground speed across all the flight phases
+  climb, cruise and descent. Calculated based on speeds as given and
+  wind as entered on top the tab or selected wind source.
+- ``True Airspeed at Cruise``: Cruise speed as given in the edit
+  dialog.
+- ``Mach at cruise``: Mach number at flight plan cruise altitude
+  calculated based on given true airspeed and ISA atmospheric standard
+  conditions. Only mach numbers above 0.4 are shown.
+- ``Average wind total``: Shows the average wind speed and direction for all
+  three flight phases climb, cruise and descent. Only shown if
+  sufficient wind is present. Also shows average head- or tailwind if
+  present. The wind source (``NOAA``, ``Simulator``, ``Manual`` or
+  ``Disabled``) is shown in parentheses.
+- ``Average wind at cruise``: As above but shows the average wind speed and direction for the cruise phase.
 
 .. _aircraft-performance-fuelplan:
 
@@ -261,28 +260,28 @@ Fuel Plan Section
 
 Only shown with a valid flight plan. Otherwise replaced by a section ``Fuel``.
 
--  ``Fuel Type``: As set in the performance profile. Either ``Avgas`` or
-   ``Jetfuel``. Used to change values when switching between volume and
-   weight as fuel unit and to convert between units in the report.
--  ``Usable Fuel``: Shown as set in the performance profile. Only
-   displayed if bigger than zero. A :error-style`red error message` is shown if
-   block fuel exceeds this value.
--  ``Trip Fuel``: Fuel that is consumed while flying and covers all
-   phases from takeoff at departure to touchdown at the destination.
-   Does not include contingency, extra, reserve or alternate fuel.
--  ``Block Fuel``: Fuel to be loaded. Block fuel is the total fuel
-   required for the flight. Includes trip, reserve, extra, taxi,
-   farthest alternate airport and contingency fuel.
--  ``Fuel at Destination``: Expected fuel at destination. Will be equal
-   to reserve if no contingency fuel, no extra fuel and no alternate
-   airports are set.
--  ``Alternate Fuel``: Fuel needed to travel from the destination to the
-   farthest alternate airport.
--  ``Reserve Fuel``: Reserve fuel as set in the edit dialog.
--  ``Taxi Fuel``: Taxi fuel as set in the edit dialog.
--  ``Extra Fuel``: Extra fuel as set in the edit dialog.
--  ``Contingency Fuel``: Contingency fuel calculated from the percentage
-   given in the edit dialog and trip fuel.
+- ``Fuel Type``: As set in the performance profile. Either ``Avgas`` or
+  ``Jetfuel``. Used to change values when switching between volume and
+  weight as fuel unit and to convert between units in the report.
+- ``Usable Fuel``: Shown as set in the performance profile. Only
+  displayed if bigger than zero. A :error-style`red error message` is shown if
+  block fuel exceeds this value.
+- ``Trip Fuel``: Fuel that is consumed while flying and covers all
+  phases from takeoff at departure to touchdown at the destination.
+  Does not include contingency, extra, reserve or alternate fuel.
+- ``Block Fuel``: Fuel to be loaded. Block fuel is the total fuel
+  required for the flight. Includes trip, reserve, extra, taxi,
+  farthest alternate airport and contingency fuel.
+- ``Fuel at Destination``: Expected fuel at destination. Will be equal
+  to reserve if no contingency fuel, no extra fuel and no alternate
+  airports are set.
+- ``Alternate Fuel``: Fuel needed to travel from the destination to the
+  farthest alternate airport.
+- ``Reserve Fuel``: Reserve fuel as set in the edit dialog.
+- ``Taxi Fuel``: Taxi fuel as set in the edit dialog.
+- ``Extra Fuel``: Extra fuel as set in the edit dialog.
+- ``Contingency Fuel``: Contingency fuel calculated from the percentage
+  given in the edit dialog and trip fuel.
 
 .. _aircraft-performance-climb-descent:
 
@@ -291,15 +290,15 @@ Climb and Descent Section
 
 Only shown with a valid flight plan.
 
--  ``Climb``: Speed and vertical speed as given plus the calculated
-   flight path angle. The flight path angle is affected by the wind
-   forecast.
--  ``Time to Climb``: Calculated time to climb for the given cruise
-   altitude.
--  ``Descent``: Speed and vertical speed in descent phase as given plus
-   the calculated flight path angle. The flight path angle is affected
-   by wind.
--  ``Descent Rule of Thumb``: Calculated rule of thumb for descent.
+- ``Climb``: Speed and vertical speed as given plus the calculated
+  flight path angle. The flight path angle is affected by the wind
+  forecast.
+- ``Time to Climb``: Calculated time to climb for the given cruise
+  altitude.
+- ``Descent``: Speed and vertical speed in descent phase as given plus
+  the calculated flight path angle. The flight path angle is affected
+  by wind.
+- ``Descent Rule of Thumb``: Calculated rule of thumb for descent.
 
 .. note::
 

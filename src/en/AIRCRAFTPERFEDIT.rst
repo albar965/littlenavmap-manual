@@ -107,8 +107,7 @@ Fuel
    fuel numbers between weight and volume. This is detected
    automatically when collecting aircraft performance.
 
-See `Fuel - Flight Planning
-Definitions <https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions>`__
+See `Fuel - Flight Planning Definitions <https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions>`__
 (SKYbrary) for more information on the various fuel types.
 
 Usable Fuel

@@ -26,8 +26,7 @@ Tips for slow Computers
 Troubleshoot
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-See also `Little Navmap - Frequently asked
-Questions <https://albar965.github.io/littlenavmap-faq.html>`__ which is updated regularly.
+See also `Little Navmap - Frequently asked Questions <https://albar965.github.io/littlenavmap-faq.html>`__ which is updated regularly.
 
 .. _problems:
 .. _problems-general:

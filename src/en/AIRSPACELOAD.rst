@@ -24,9 +24,8 @@ See :ref:`airspace-source` for more information on airspace sources.
 OpenAir
 '''''''''''''''''''''''''''
 
-*Little Navmap* can read OpenAir airspaces (`OpenAir airspace
-format <http://www.winpilot.com/UsersGuide/UserAirspace.asp>`__) from
-X-Plane or an user defined directory.
+*Little Navmap* can read OpenAir airspaces (`OpenAir airspace format <http://www.winpilot.com/UsersGuide/UserAirspace.asp>`__)
+from X-Plane or an user defined directory.
 
 Note that the publicly available airspace files can contain errors which
 may prevent the loading of an airspace file. These hard errors are

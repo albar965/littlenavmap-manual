@@ -33,7 +33,7 @@ properties defined in the map's DGML file.
         :scale: 70%
 
         Select map theme directory ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
-        shows a valid directoy and one map theme found. *Click image to enlarge.*
+        shows a valid directory and one map theme found. *Click image to enlarge.*
 
 .. figure:: ../images/map_theme.jpg
        :scale: 70%

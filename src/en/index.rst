@@ -63,6 +63,7 @@ Table of Contents
    PROFILE
 
    SEARCH
+   RANDOM
    SEARCHPROCS
    USERPOINT
    LOGBOOK

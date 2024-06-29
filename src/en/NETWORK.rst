@@ -29,6 +29,27 @@ How to Prepare a Network Setup
     version of *Little Navconnect* which is included in the *Little Navmap*
     download archive if unsure.
 
+.. tip::
+
+  The best way to copy a scenery library database from the flying computer to the remote is a batch file or command script.
+
+  Share the folder ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
+  on the flying computer and then simply run a batch or command file like ``copy_lnm_db.cmd`` on the remote to copy it over.
+
+  Create a command file ``copy_lnm_db.cmd`` on your remote computer and add the content below. Adapt ``MYLFYINGCOMPUTER`` to the
+  name or the IP-address of your flying computer.
+
+  .. code-block:: bat
+    :name: copy_lnm_db.cmd
+
+    xcopy /F /Y "\\sol\public\little_navmap_db\little_navmap_msfs.sqlite" "%APPDATA%\ABarthel\little_navmap_db"
+
+  Adapt the database filename ``little_navmap_msfs.sqlite`` to your simulator. See :ref:`files-databases-scenery-library` for database filenames
+  for all simulators.
+
+  Then you can reload the scenery library database using LNM on the flying computer, quit *Little Navmap* on both computers and
+  simply double click the ``copy_lnm_db.cmd`` script to copy the database over to the remote.
+
 Weather
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

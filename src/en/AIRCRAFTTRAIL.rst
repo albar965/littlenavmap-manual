@@ -41,12 +41,20 @@ parts of a procedure like holds or procedure turns.
 
 The track contains the simulator time, altitude and coordinates.
 
+.. note::
+
+   *Little Navmap* shows a warning dialog when loading large GPX files having too many points. You will also see
+   a warning if the result is truncated due to a lower setting in the option ``Maximum number of aircraft trail points``
+   on page :ref:`options-map-aircraft-trail` in options.
+
 .. tip::
 
-    Enable the export option ``Garmin GPX exchange format for Google Earth and others`` in the :ref:`multiexport-options` and adapt the export path.
+    Enable the export option ``Garmin GPX exchange format for Google Earth and others`` in the
+    :ref:`multiexport-options` and adapt the export path.
     Then select ``Files`` -> :ref:`multiexport-flight-plan` after each flight to save your aircraft trail and all other selected
     export formats with one click.
     See :doc:`ROUTEEXPORTALL` for more information.
+
 
 Aircraft Trail Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,5 +71,12 @@ in options on page :ref:`options-map-tooltips-and-clicks`.
     :scale: 70%
 
     Flown trail with tooltip and color gradient ``Yellow, Green, Cyan to Blue``. *Click image to enlarge.*
+
+.. note::
+
+   Long aircraft trails having too many points can reduce the performance of map display significantly even more
+   when using the gradient color option.
+
+   Clear trails after flying and use the trails stored in the :doc:`LOGBOOK` if you like to see the trails of previous flights.
 
 .. |Aircraft Trail| image:: ../images/icon_aircrafttrail.png

@@ -14,7 +14,7 @@ Background Map Layer
 This is defined by offline or online map themes like the `OpenStreetMap <https://www.openstreetmap.org>`__.
 You can change the background by selecting another :ref:`theme-menu`.
 The background maps cannot be modified or configured since they are fetched from third party online services.
-*Little Navmap* downloads pre-rendered image tiles from these services to draw the background map.
+*Little Navmap* downloads prerendered image tiles from these services to draw the background map.
 
 See :doc:`MAPTHEMES` for more information about how to install additional map themes.
 
@@ -553,10 +553,13 @@ plan or not.
 |Show Procedures| Show Procedures
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open the procedure search tab of the search dock window and displays all
+Opens the procedure search tab of the search dock window and displays all
 procedures for the airport.
 
-The menu item text varies depending if the airport is a part of the flight plan.
+The menu item text varies depending if the airport is a part of the flight plan and if the airport is departure or destination.
+Depending on this you will see ``Show Departure procedures ...`` or ``Show Arrival/Approach procedures ...``
+
+The procedure search tab expands procedure branches already added to the flight plan. Procedures and/or respective transitions are expanded when showing procedures for departure or destination airport.
 
 See :doc:`SEARCHPROCS` for more information.
 

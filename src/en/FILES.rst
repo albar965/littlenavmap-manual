@@ -114,9 +114,17 @@ images can be found here:
 
 The cache directory ``earth`` contains one directory for each installed map theme.
 
+You can open the cache directory from menu item ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`
+
 You can delete the cache manually to save space if *Little Navmap* is not running.
 
 Cache size can be changed on page :ref:`cache-map-display` in options.
+
+Each map theme has a folder in this directory where its tile images are stored.
+A short name is used which corresponds to the related map theme.
+This is ``mapboxuser`` for the theme ``MapBox User`` or ``openstreetmap`` for the theme ``OpenStreetMap``, for example.
+
+Delete the related directory to clear the cache.
 
 .. _files-databases:
 
@@ -130,8 +138,7 @@ Databases are stored in the directories:
 -  Linux: ``$HOME/.config/ABarthel/little_navmap_db``
 
 All these databases are `SQLite <http://sqlite.org>`__ files which can
-be viewed with e.g. `DB Browser for
-SQLite <https://github.com/sqlitebrowser/sqlitebrowser/releases>`__ if
+be viewed with e.g. `DB Browser for SQLite <https://github.com/sqlitebrowser/sqlitebrowser/releases>`__ if
 you're interested in relational databases.
 
 The directory can be opened with :ref:`files-and-directories-db`.
@@ -144,6 +151,8 @@ The directory can be opened with :ref:`files-and-directories-db`.
    Do not let the Navigraph *FMS Database Manager* update databases
    while *Little Navmap* is running. *Little Navmap* might crash,
    the update might fail or remain incomplete.
+
+.. _files-databases-scenery-library:
 
 Scenery Library
 ^^^^^^^^^^^^^^^
