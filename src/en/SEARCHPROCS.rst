@@ -64,6 +64,8 @@ The procedure search tab expands procedure branches that are already present in 
   Also check the resulting route to avoid accidental zig-zag routing which can happen if you combine the wrong
   approach/transition with a STAR, for example.
 
+  Check the flight plan for reversals, zig-zag guidance, too close waypoints or other issues.
+  Delete waypoints manually if you find such cases.
 
 
 .. figure:: ../images/proceduresearch.jpg

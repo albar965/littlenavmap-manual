@@ -2603,11 +2603,12 @@ Enter the computer name as above manually in your browser if this is the case.
 Reset all Messages
 ^^^^^^^^^^^^^^^^^^
 
-Re-enable all dialogs that were disabled by selecting
-``Do not show this dialog again`` or similar messages.
+Re-enable all dialog windows that were disabled by selecting ``Do not show this dialog again`` or similar messages.
 
-All warning and note dialogs will show up again after selecting this. Hide them again manually by
-selecting the ``Do not show this dialog again`` buttons.
+All warning and notification dialogs will show up again after selecting this menu item. Hide the dialog windows
+manually again by selecting the ``Do not show this dialog again`` buttons.
+
+Note that a few important messages are enabled again when updating *Little Navmap*.
 
 .. _reset-and-restart:
 
