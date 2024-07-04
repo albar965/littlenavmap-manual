@@ -22,12 +22,12 @@ See also :doc:`ROUTEEXPORTALL` for more information on multiexport.
 
 .. note::
 
-    The LNMPLN format is only understood by *Little Navmap*.
-    Do not try to load it into simulators or add-ons.
+  The LNMPLN format is only understood by *Little Navmap*.
+  Do not try to load it into simulators or add-ons.
 
-    Consider exported flight plan files as disposable since almost all export formats have limitations
-    resulting in data loss. Remember that you can always restore them by loading the original LNMPLN
-    file and exporting again.
+  Consider exported flight plan files as disposable since almost all export formats have limitations
+  resulting in data loss. Remember that you can always restore them by loading the original LNMPLN
+  file and exporting again.
 
 See :ref:`lnmpln-file-format` for a detailed description of the format.
 
@@ -40,12 +40,12 @@ User Waypoint Names
 
 User waypoint names will be adapted to format limitations when exporting.
 
--  **PLN:** Maximum length for FSX or Prepar3D is 10 characters and no
-   special characters are allowed. Unsupported characters will be
-   removed and the length will be truncated.
--  **FMS:** No spaces allowed. These will be replaced with underscores
-   (``_``).
--  **FLP:** All user waypoint names will be replaced by coordinates.
+- **PLN:** Maximum length for FSX or Prepar3D is 10 characters and no
+  special characters are allowed. Unsupported characters will be
+  removed and the length will be truncated.
+- **FMS:** No spaces allowed. These will be replaced with underscores
+  (``_``).
+- **FLP:** All user waypoint names will be replaced by coordinates.
 
 
 .. _flight-plan-formats-garmin-issues:
@@ -75,17 +75,17 @@ The table below shows the capabilities of *Little Navmap* and the
 supported flight plan formats (``X`` = supported, ``0`` = not supported,
 ``-`` = not applicable) as listed in :doc:`ROUTEEXPORTALL`.
 
--  ``Ext.``: File extension or name.
--  ``Open``: Can load format using :ref:`open-flight-plan` in menu ``File``.
--  ``Exp.``: Format can be exported.
--  ``Airw``: Can export airways. Otherwise only a list of waypoints.
--  ``Proc.`` can export procedures.
+- ``Ext.``: File extension or name.
+- ``Open``: Can load format using :ref:`open-flight-plan` in menu ``File``.
+- ``Exp.``: Format can be exported.
+- ``Airw``: Can export airways. Otherwise only a list of waypoints.
+- ``Proc.`` can export procedures.
 
 .. role:: highlight-style
 
--  **Bold**: Main format supporting all features like remarks but not usable for other tools or simulators`.
--  :highlight-style:`Highlighted  format name`: The format can be loaded by
-   *Little Navmap* using :ref:`open-flight-plan` in menu ``File``.
+- **Bold**: Main format supporting all features like remarks but not usable for other tools or simulators`.
+- :highlight-style:`Highlighted  format name`: The format can be loaded by
+  *Little Navmap* using :ref:`open-flight-plan` in menu ``File``.
 
 ======================================================== ======== ==== ==== ==== ======= =============== ======= ============ =========== ======
 Format Name                                              Ext.     Open Exp. Airw VFR/IFR User Wpt. Names Remarks Dep. Parking Cruise Alt. Proc.
@@ -174,8 +174,8 @@ MSFS flight plans can be saved to and loaded from any location in MSFS but the d
 
 .. note::
 
-    MSFS does not allow procedures and/or airways in VFR plans. You have to switch to IFR using :ref:`flight-plan-type`
-    before exporting such a plan. *Little Navmap* shows a warning if you try to export such a flight plan.
+  MSFS does not allow procedures and/or airways in VFR plans. You have to switch to IFR using :ref:`flight-plan-type`
+  before exporting such a plan. *Little Navmap* shows a warning if you try to export such a flight plan.
 
 See `FAQ - The flight plan does not show up correctly in MSFS <https://albar965.github.io/littlenavmap-faq.html#flightplan-msfs>`__
 for more information on problems.
@@ -184,8 +184,8 @@ PLN files for Microsoft Flight Simulator 2020 will have special characters remov
 
 .. note::
 
-     Use the format :ref:`flight-plan-formats-msfs-pln-star` for export if you run into issues when importing flight plans in add-ons or when
-     your operating system is set to Asian locale.
+  Use the format :ref:`flight-plan-formats-msfs-pln-star` for export if you run into issues when importing flight plans in add-ons or when
+  your operating system is set to Asian locale.
 
 
 .. _flight-plan-formats-fsx-pln:
@@ -245,10 +245,10 @@ Flight plans of this format can be loaded into *Little Navmap* using menu ``File
 
 .. note::
 
-      *Little Navmap* cannot determine the cruise altitude of a flight plan
-      after loading this format in some cases. You might see errors about violated altitude
-      restrictions after loading. Adjust the cruise altitude manually if
-      this is the case.
+  *Little Navmap* cannot determine the cruise altitude of a flight plan
+  after loading this format in some cases. You might see errors about violated altitude
+  restrictions after loading. Adjust the cruise altitude manually if
+  this is the case.
 
 .. _fms-export-issues:
 
@@ -267,29 +267,29 @@ You can open the FMS file in a text editor and fix this manually by replacing th
 ``DEP`` and ``DES`` respectively. Note that this does not work if procedures are used with an airport.
 
 .. code-block:: none
-   :caption: FMS file which cannot be loaded by X-Plane with keywords ``ADEP`` and ``ADES``:
+  :caption: FMS file which cannot be loaded by X-Plane with keywords ``ADEP`` and ``ADES``:
 
-   I
-   1100 Version
-   CYCLE 2209
-   ADEP 44T
-   ADES KSHN
-   NUMENR 2
-   1 44T ADEP 211.000000 46.992359 -122.827721
-   1 KSHN ADES 271.000000 47.233555 -123.147552
+  I
+  1100 Version
+  CYCLE 2209
+  ADEP 44T
+  ADES KSHN
+  NUMENR 2
+  1 44T ADEP 211.000000 46.992359 -122.827721
+  1 KSHN ADES 271.000000 47.233555 -123.147552
 
 
 .. code-block:: none
-   :caption: Corrected FMS file for both airports where the first occurrences of ``ADEP`` and ``ADES`` were replaced with ``DEP`` and ``DES`` keywords for both airports:
+  :caption: Corrected FMS file for both airports where the first occurrences of ``ADEP`` and ``ADES`` were replaced with ``DEP`` and ``DES`` keywords for both airports:
 
-   I
-   1100 Version
-   CYCLE 2209
-   DEP 44T
-   DES KSHN
-   NUMENR 2
-   1 44T ADEP 211.000000 46.992359 -122.827721
-   1 KSHN ADES 271.000000 47.233555 -123.147552
+  I
+  1100 Version
+  CYCLE 2209
+  DEP 44T
+  DES KSHN
+  NUMENR 2
+  1 44T ADEP 211.000000 46.992359 -122.827721
+  1 KSHN ADES 271.000000 47.233555 -123.147552
 
 .. _flight-plan-formats-fms3:
 
@@ -316,11 +316,11 @@ The flight plan is divided into files with a maximum of eight waypoints each.
 A flight plan with more waypoints will result in more files.
 
 .. code-block:: none
-         :caption: Example for flight plan files for a plan from EGAE to LGIO containing not more than 24 waypoints:
+  :caption: Example for flight plan files for a plan from EGAE to LGIO containing not more than 24 waypoints:
 
-         EGAELGIO.fms
-         EGAELGIO1.fms
-         EGAELGIO2.fms
+  EGAELGIO.fms
+  EGAELGIO1.fms
+  EGAELGIO2.fms
 
 
 *Little Navmap* can read and export this format.
@@ -460,12 +460,9 @@ flight plan data for the GTN.
 
 The default directories to save the flight plans for the GTN units are:
 
--  **Prepar3D v3:**
-   ``C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL``.
--  **Prepar3D v4:**
-   ``C:\Program Files\Lockheed Martin\Prepar3D v4\F1TGTN\FPL``.
--  **Flight Simulator X:**
-   ``C:\ProgramFiles(x86)\Microsoft Games\Flight Simulator X\F1GTN\FPL``
+- **Prepar3D v3:** ``C:\Program Files (x86)\Lockheed Martin\Prepar3D v3\F1TGTN\FPL``.
+- **Prepar3D v4:** ``C:\Program Files\Lockheed Martin\Prepar3D v4\F1TGTN\FPL``.
+- **Flight Simulator X:** ``C:\ProgramFiles(x86)\Microsoft Games\Flight Simulator X\F1GTN\FPL``
 
 You might need to change the user privileges on this directory if your
 saved flight plans do not show up in the GTN. Give yourself full control
@@ -479,9 +476,9 @@ of the export directory as mentioned above if that is the case.
 The file is a simple text format containing only one line of text.
 
 .. code-block:: none
-        :caption: Example for the content of a flight plan file named ``KEAT-CYPU.gfp``:
+  :caption: Example for the content of a flight plan file named ``KEAT-CYPU.gfp``:
 
-        FPN/RI:F:KEAT:F:EAT.V120.SEA.V495.CONDI.V338.YVR.V330.TRENA:F:N50805W124202:F:N51085W124178:F:CAG3:F:N51846W124150:F:CYPU
+  FPN/RI:F:KEAT:F:EAT.V120.SEA.V495.CONDI.V338.YVR.V330.TRENA:F:N50805W124202:F:N51085W124178:F:CAG3:F:N51846W124150:F:CYPU
 
 .. _flight-plan-formats-rte:
 
@@ -506,9 +503,9 @@ The file is a simple text format containing only one line of text.
 
 
 .. code-block:: none
-        :caption: Example for the content of a TXT file named ``CBZ9CYDC.txt``:
+  :caption: Example for the content of a TXT file named ``CBZ9CYDC.txt``:
 
-        CBZ9 SID AIRIE V324 YKA B8 DURAK STAR CYDC
+  CBZ9 SID AIRIE V324 YKA B8 DURAK STAR CYDC
 
 .. _flight-plan-formats-fpr:
 
@@ -553,10 +550,10 @@ While this format allows saving of SID and STAR the option for
 approaches was removed since it is unreliable.
 
 .. code-block:: none
-   :caption: Example:
+  :caption: Example:
 
-   RTE ETOPS002 EINN 06 UNBE2A UNBEG DCT 5420N DCT NICSO N236A ALLEX Q822 ENE DCT CORVT KJFK I22R JFKBOS01 CI30 FL360
-   RTE EDDFEGLL EDDF 25C BIBT4G BIBTI UZ29 NIK UL610 LAM EGLL I27R LAM CI25 FL330
+  RTE ETOPS002 EINN 06 UNBE2A UNBEG DCT 5420N DCT NICSO N236A ALLEX Q822 ENE DCT CORVT KJFK I22R JFKBOS01 CI30 FL360
+  RTE EDDFEGLL EDDF 25C BIBT4G BIBTI UZ29 NIK UL610 LAM EGLL I27R LAM CI25 FL330
 
 .. _flight-plan-formats-ifly:
 
@@ -579,7 +576,7 @@ MS Store
   ``C:\Users\YOURUSERNAME\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState\packages\microsoft-aircraft-a310-300\work\flightplans``
 
 Steam
-   ``C:\Users\YOURUSERNAME\AppData\Roaming\Microsoft Flight Simulator\Packages\microsoft-aircraft-a310-300\work\flightplans``
+  ``C:\Users\YOURUSERNAME\AppData\Roaming\Microsoft Flight Simulator\Packages\microsoft-aircraft-a310-300\work\flightplans``
 
 .. _flight-plan-formats-msfs-pln-star:
 
@@ -608,13 +605,13 @@ plan: ``companyroutes.xml_lnm_backup`` and
 Procedures cannot be saved.
 
 .. code-block:: xml
-   :caption: Example:
+  :caption: Example:
 
-   <?xml version="1.0" encoding="UTF-8"?>
-   <companyroutes>
-     <route name="EFMAESGT">EFMA RUNGA N872 TEB N623 BEDLA N866 NEGIL ESGT</route>
-     <route name="LGIRLEDA">LGIR SUD UJ65 TRL UM601 RUTOM M601 QUENN Q123 LULIX P167 GINOX UM601 BCN UN975 SELVA LEDA</route>
-   </companyroutes>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <companyroutes>
+    <route name="EFMAESGT">EFMA RUNGA N872 TEB N623 BEDLA N866 NEGIL ESGT</route>
+    <route name="LGIRLEDA">LGIR SUD UJ65 TRL UM601 RUTOM M601 QUENN Q123 LULIX P167 GINOX UM601 BCN UN975 SELVA LEDA</route>
+  </companyroutes>
 
 .. _flight-plan-formats-kln90b:
 
@@ -790,33 +787,28 @@ waypoints with user defined waypoints to avoid locking. While this is a
 sufficient approach to avoid the locked waypoints it comes with a few
 limitations:
 
--  Departure and destination airport are not saved as user defined
-   waypoints. These have to exist in the Garmin navigation database.
--  Navaid information like frequencies cannot be displayed since the
-   waypoint cannot be related to the radio navaid.
--  Procedures like SID and STAR cannot be saved with the flight plan and
-   have to be selected manually.
--  The GTN (not the GNS) changes all names to a generic ``USERWPT...``
-   scheme.
+- Departure and destination airport are not saved as user defined waypoints. These have to exist in the Garmin navigation database.
+- Navaid information like frequencies cannot be displayed since the waypoint cannot be related to the radio navaid.
+- Procedures like SID and STAR cannot be saved with the flight plan and have to be selected manually.
+- The GTN (not the GNS) changes all names to a generic ``USERWPT...`` scheme.
 
 The export of user defined waypoints can be enabled in the options
 dialog on tab ``Flight Plan``.
 
 .. [1]
-   Only SID and STAR. Saving or approaches is not supported.
+  Only SID and STAR. Saving or approaches is not supported.
 
 .. [2]
-   User defined waypoints will be renamed when loading into the GTN.
+  User defined waypoints will be renamed when loading into the GTN.
 
 .. [3]
-   Additional information for online flying can be added in a dialog
-   before saving.
+  Additional information for online flying can be added in a dialog before saving.
 
 .. [4]
-     Full name is ``companyroutes.xml``
+  Full name is ``companyroutes.xml``
 
 .. [5]
-    Procedures might not load in MSFS or might be replaced by other procedures.
+  Procedures might not load in MSFS or might be replaced by other procedures.
 
 .. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png

@@ -13,8 +13,8 @@ if a dialog window is open or if *Little Navmap* is connected to a simulator.
 
 .. important::
 
-    Always update *Little Navmap* to the latest version which usually contains many improvements and bug fixes.
-    Old versions are not supported.
+  Always update *Little Navmap* to the latest version which usually contains many improvements and bug fixes.
+  Old versions are not supported.
 
 Notification Dialog
 ~~~~~~~~~~~~~~~~~~~~~
@@ -30,7 +30,7 @@ Buttons
 
 .. figure:: ../images/updatedialog.jpg
 
-     Update notification dialog showing an available release candidate version ``rc1`` with the link to the announcement.
+  Update notification dialog showing an available release candidate version ``rc1`` with the link to the announcement.
 
 Options
 ~~~~~~~
@@ -53,32 +53,30 @@ program.
 Update Channels
 ^^^^^^^^^^^^^^^
 
--   ``Stable Versions only``: This will show only notifications for tested
-    and stable versions with a complete English manual.
-
--   ``Stable and Beta Versions``: Will additionally check for beta/test or release candidate
-    versions. Beta versions are program releases that already contain all
-    planned features for a stable release but are still not tested
-    carefully. The manual might be incomplete.
-
--   ``Stable, Beta and Development Versions``: *Little Navmap* will also
-    show notifications for development/alpha releases. These are neither complete
-    nor well tested. Features might change over time and the manual is not
-    updated for new functionality.
+- ``Stable Versions only``: This will show only notifications for tested
+  and stable versions with a complete English manual.
+- ``Stable and Beta Versions``: Will additionally check for beta/test or release candidate
+  versions. Beta versions are program releases that already contain all
+  planned features for a stable release but are still not tested
+  carefully. The manual might be incomplete.
+- ``Stable, Beta and Development Versions``: *Little Navmap* will also
+  show notifications for development/alpha releases. These are neither complete
+  nor well tested. Features might change over time and the manual is not
+  updated for new functionality.
 
 .. important::
 
-    Note that using a beta or a release candidate release automatically changes the channel to beta and
-    using a development or alpha release automatically changes the channel to development.
+  Note that using a beta or a release candidate release automatically changes the channel to beta and
+  using a development or alpha release automatically changes the channel to development.
 
-    Always use the beta update channel if you use a beta or test version.
-    Otherwise you might miss important updates.
+  Always use the beta update channel if you use a beta or test version.
+  Otherwise you might miss important updates.
 
 .. tip::
 
-     Run beta or development version of *Little Navmap* in :doc:`PORTABLE`
-     mode to avoid overwriting your settings. This allows you to run the new version
-     with separate settings and databases without affecting your current settings.
+  Run beta or development version of *Little Navmap* in :doc:`PORTABLE`
+  mode to avoid overwriting your settings. This allows you to run the new version
+  with separate settings and databases without affecting your current settings.
 
 Check for Updates now
 ^^^^^^^^^^^^^^^^^^^^^
@@ -90,7 +88,7 @@ dialog.
 
 .. figure:: ../images/updateoptions.jpg
 
-        Update notification settings in the options dialog.
+  Update notification settings in the options dialog.
 
 .. |Checking for Updates| image:: ../images/icon_revert.png
 

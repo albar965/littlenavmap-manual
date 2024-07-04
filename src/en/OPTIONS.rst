@@ -21,20 +21,20 @@ Using the help button in the options dialog window jumps directly to the related
 
 .. tip::
 
-   Most options are self-explaining and tooltips contain more information in most cases.
-   Hover the mouse over a button or input field for a more detailed description.
+  Most options are self-explaining and tooltips contain more information in most cases.
+  Hover the mouse over a button or input field for a more detailed description.
 
 .. tip::
 
-   You can immediately check the effect of your changes on the map display
-   by moving the options dialog to the side and pressing ``Apply``.
+  You can immediately check the effect of your changes on the map display
+  by moving the options dialog to the side and pressing ``Apply``.
 
 .. note::
 
-     If you use Apple macOS:
+  If you use Apple macOS:
 
-     The menu entry which is referenced as ``Tools`` -> :doc:`OPTIONS` in this manual for Windows and Linux
-     can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
+  The menu entry which is referenced as ``Tools`` -> :doc:`OPTIONS` in this manual for Windows and Linux
+  can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
 .. _options-pages:
 
@@ -47,8 +47,8 @@ list has a tooltip for easier navigation.
 
 .. note::
 
-     Note that scroll bars can show up at the right or the bottom of an options page.
-     Scroll down or resize the dialog window to see hidden options.
+  Note that scroll bars can show up at the right or the bottom of an options page.
+  Scroll down or resize the dialog window to see hidden options.
 
 .. _options-search:
 
@@ -62,9 +62,9 @@ ones containing the search text. Matching labels and buttons are highlighted on 
 Up to three words can be searched for. Partial matches are highlighted.
 
 .. figure:: ../images/optionssearch.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Searching for term ``user aircr`` finding all fields containing ``user aircraft``. *Click image to enlarge.*
+  Searching for term ``user aircr`` finding all fields containing ``user aircraft``. *Click image to enlarge.*
 
 .. _options-hints:
 
@@ -77,7 +77,7 @@ note like ``Restart required``.
 
 .. figure:: ../images/optionshint.jpg
 
-    An important message in **bold text** plus a hint.
+  An important message in **bold text** plus a hint.
 
 .. _options-startup-and-updates:
 .. _page1:
@@ -99,18 +99,18 @@ Load last used flight plan
 This function allows to restore the last saved or edited flight plan on startup.
 
 Selected
-      The last saved flight plan file or the last edited flight plan will be reloaded on startup.
+  The last saved flight plan file or the last edited flight plan will be reloaded on startup.
 
-      You can exit *Little Navmap* without saving a new plan. All changes will be saved to a
-      temporary file and are restored on next startup.
+  You can exit *Little Navmap* without saving a new plan. All changes will be saved to a
+  temporary file and are restored on next startup.
 
-      *Little Navmap* will not ask to save an already saved but changed plan on exit.
-      The changes and the last saved file will be restored on next startup.
+  *Little Navmap* will not ask to save an already saved but changed plan on exit.
+  The changes and the last saved file will be restored on next startup.
 
 Not selected
-      The last saved flight plan will not be reloaded on startup.
+  The last saved flight plan will not be reloaded on startup.
 
-      *Little Navmap* will ask to save a plan on exit if it has been changed.
+  *Little Navmap* will ask to save a plan on exit if it has been changed.
 
 
 .. _update-check:
@@ -123,8 +123,8 @@ channels. See chapter :doc:`UPDATE` for more information.
 
 .. important::
 
-    Always update *Little Navmap* to the latest version which usually contains many improvements and bug fixes.
-    Older versions are not supported.
+  Always update *Little Navmap* to the latest version which usually contains many improvements and bug fixes.
+  Older versions are not supported.
 
 .. _options-ui:
 .. _page2:
@@ -191,17 +191,17 @@ The font for map display is not affected by this value and can be set separately
 
 .. note::
 
-   *Little Navmap* remembers the size of dialog windows. In some cases you have to resize dialog windows
-   after changing to a larger font to see all content.
+  *Little Navmap* remembers the size of dialog windows. In some cases you have to resize dialog windows
+  after changing to a larger font to see all content.
 
 .. warning::
 
-      Keep in mind that using a wrong or too large font can result in display issues.
+  Keep in mind that using a wrong or too large font can result in display issues.
 
 .. tip::
 
-        Try out the `B612 Font family <https://b612-font.com/>`__ which is an
-        open source font family designed and tested to be used on aircraft cockpit screens.
+  Try out the `B612 Font family <https://b612-font.com/>`__ which is an
+  open source font family designed and tested to be used on aircraft cockpit screens.
 
 .. _options-high-dpi:
 
@@ -228,7 +228,7 @@ Deselect this to avoid the slightly blurred text in menus and application window
 
 .. note::
 
-     A restart is required after changing the font engine.
+  A restart is required after changing the font engine.
 
 .. _options-tooltips:
 
@@ -245,8 +245,8 @@ Change default text size for various information displays and tables.
 
 .. tip::
 
-   You can temporarily resize the text in information windows by using ``Ctrl+Wheel``.
-   This change is temporary and not saved.
+  You can temporarily resize the text in information windows by using ``Ctrl+Wheel``.
+  This change is temporary and not saved.
 
 
 .. _options-units:
@@ -260,31 +260,31 @@ between nautical, imperial and metric. Mixed settings like Meter for
 altitude and Nautical Miles for distance are possible.
 
 
--  ``Show other fuel units too``: Shows kilogram and liter as small text
-   besides main units if lbs and gallon are selected and vice versa.
-   This is applied only to the most important fuel values like block and
-   trip fuel, for example.
--  ``Show true course and heading besides magnetic course in information displays``:
-   Add true heading as small text besides magnetic heading displays.
-   This applies to information, progress as well as map display (traffic
-   patterns and holds).
+- ``Show other fuel units too``: Shows kilogram and liter as small text
+  besides main units if lbs and gallon are selected and vice versa.
+  This is applied only to the most important fuel values like block and
+  trip fuel, for example.
+- ``Show true course and heading besides magnetic course in information displays``:
+  Add true heading as small text besides magnetic heading displays.
+  This applies to information, progress as well as map display (traffic
+  patterns and holds).
 
 .. note::
 
-       See :ref:`signed-decimal-coordinates` for more information when using ``Latitude and Longitude with sign``
-       or ``Longitude and Latitude with sign`` since these modes also affect coordinate input.
+  See :ref:`signed-decimal-coordinates` for more information when using ``Latitude and Longitude with sign``
+  or ``Longitude and Latitude with sign`` since these modes also affect coordinate input.
 
-       The format ``Degree, Decimal Minutes for Google`` is useful for input into Google Maps or Google Earth.
+  The format ``Degree, Decimal Minutes for Google`` is useful for input into Google Maps or Google Earth.
 
 .. warning::
 
-      Note that any numbers used in the program are not converted when
-      changing units.
+  Note that any numbers used in the program are not converted when
+  changing units.
 
-      That means that you will get a minimum altitude buffer
-      of 1,000 meter after changing the setting ``Altitude and Elevation`` from
-      feet to meter. This also applies to flight plan altitude. Therefore, do
-      not forget to adapt these numbers after changing units.
+  That means that you will get a minimum altitude buffer
+  of 1,000 meter after changing the setting ``Altitude and Elevation`` from
+  feet to meter. This also applies to flight plan altitude. Therefore, do
+  not forget to adapt these numbers after changing units.
 
 
 
@@ -385,8 +385,8 @@ See :doc:`LAYOUT` for more information about window layouts which might be affec
 
 .. important::
 
-      You need to reset the window layout in case the map window is missing after a restart.
-      Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout.
+  You need to reset the window layout in case the map window is missing after a restart.
+  Use menu ``Window`` -> :ref:`reset-layout-menu` in the main menu to clean up the layout.
 
 .. _options-map-tooltips-and-clicks:
 .. _page7:
@@ -509,11 +509,11 @@ The required keys shown are extracted from the installed map themes. See :doc:`M
 
 The following map themes requiring an account come with *Little Navmap*:
 
--  `Mapbox <https://account.mapbox.com>`__ also allows user customized maps in Mapbox Studio. See the Mapbox page for help.
-   Click ``Add Mapbox User Map`` to add an user styled map to *Little Navmap*.
--  `Thunderforest <https://www.thunderforest.com/>`__
--  `Maptiler <https://www.maptiler.com/>`__
--  `Stadia StamenTerrain <https://stadiamaps.com/stamen/onboarding/create-account/>`__
+- `Mapbox <https://account.mapbox.com>`__ also allows user customized maps in Mapbox Studio. See the Mapbox page for help.
+  Click ``Add Mapbox User Map`` to add an user styled map to *Little Navmap*.
+- `Thunderforest <https://www.thunderforest.com/>`__
+- `Maptiler <https://www.maptiler.com/>`__
+- `Stadia StamenTerrain <https://stadiamaps.com/stamen/onboarding/create-account/>`__
 
 A restart might be needed after changing keys.
 
@@ -522,21 +522,21 @@ Click one of the following links to go directly to the account pages of the resp
 
 .. note::
 
-    All services are free to use at the time of writing these instructions. You do not have to enter
-    you credit card, account or other payment information to use these.
-    Simply ignore these sections when signing in or creating an account.
+  All services are free to use at the time of writing these instructions. You do not have to enter
+  you credit card, account or other payment information to use these.
+  Simply ignore these sections when signing in or creating an account.
 
 .. note::
 
-   Clear the map cache when changing configurable maps like ``MapBox User`` to see the changes. Map tiles are
-   images which are stored in the local disk cache and are kept for two weeks in most maps.
+  Clear the map cache when changing configurable maps like ``MapBox User`` to see the changes. Map tiles are
+  images which are stored in the local disk cache and are kept for two weeks in most maps.
 
-   You can open the cache using the menu item ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`.
-   See also :ref:`disk-cache` for details.
+  You can open the cache using the menu item ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`.
+  See also :ref:`disk-cache` for details.
 
 .. warning::
 
-   Do not show these keys publicly in forums on screenshots.
+  Do not show these keys publicly in forums on screenshots.
 
 Map Web Service Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -547,34 +547,34 @@ Mapbox
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. figure:: ../images/mapbox_token.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Location of the Mapbox access token on the `Mapbox Account page <https://account.mapbox.com/>`__.
-    Use this as ``Value`` for ``Mapbox Token``. *Click image to enlarge.*
+  Location of the Mapbox access token on the `Mapbox Account page <https://account.mapbox.com/>`__.
+  Use this as ``Value`` for ``Mapbox Token``. *Click image to enlarge.*
 
 .. figure:: ../images/mapbox_studio.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Location of the Mapbox Studio URL on the `Mapbox Studio page <https://studio.mapbox.com/>`__
-    Insert this URL into the ``Add Mapbox User Map`` dialog window to add an user styled map to *Little Navmap*. *Click image to enlarge.*
+  Location of the Mapbox Studio URL on the `Mapbox Studio page <https://studio.mapbox.com/>`__
+  Insert this URL into the ``Add Mapbox User Map`` dialog window to add an user styled map to *Little Navmap*. *Click image to enlarge.*
 
 Thunderforest
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. figure:: ../images/thunderforest_key.jpg
-    :scale: 50%
+  :scale: 50%
 
-    `Thunderforest Console <https://manage.thunderforest.com/dashboard>`__ with API key.
-    Use this as ``Value`` for ``Thunderforest API Key``. *Click image to enlarge.*
+  `Thunderforest Console <https://manage.thunderforest.com/dashboard>`__ with API key.
+  Use this as ``Value`` for ``Thunderforest API Key``. *Click image to enlarge.*
 
 Maptiler
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. figure:: ../images/maptiler_key.jpg
-    :scale: 50%
+  :scale: 50%
 
-    `Maptiler Cloud Account API key page <https://cloud.maptiler.com/account/keys/>`__.
-    Use this as ``Value`` for ``MapTiler API Key``. *Click image to enlarge.*
+  `Maptiler Cloud Account API key page <https://cloud.maptiler.com/account/keys/>`__.
+  Use this as ``Value`` for ``MapTiler API Key``. *Click image to enlarge.*
 
 
 .. _options-map-online:
@@ -591,11 +591,9 @@ can be used to assign OpenAir airspaces from the user airspace database
 to centers by matching filename or airspace name with the callsign of
 the center.
 
--  ``By airspace name vs. callsign``: Use the airspace name within a
-   file to assign the geometry to a center by callsign.
--  ``By airspace file name vs. callsign``: Use the airspace filename
-   minus the ``.txt`` extension to assign the geometry to a center by
-   callsign.
+- ``By airspace name vs. callsign``: Use the airspace name within a file to assign the geometry to a center by callsign.
+- ``By airspace file name vs. callsign``: Use the airspace filename minus the ``.txt`` extension to assign the geometry to a center by
+  callsign.
 
 See chapter :doc:`AIRSPACELOAD` for more information.
 
@@ -681,33 +679,33 @@ You cannot move the user aircraft out of view if this option is disabled. The ma
 This option is also used in the :doc:`PROFILE`.
 
 Allow scrolling enabled:
-   The map will stop following the aircraft for the given time if the user
-   does any interaction with the map like scrolling or zooming. You can
-   quickly check out the destination or your overall progress, and after
-   you stop moving around, *Little Navmap* will return to following your
-   aircraft.
+  The map will stop following the aircraft for the given time if the user
+  does any interaction with the map like scrolling or zooming. You can
+  quickly check out the destination or your overall progress, and after
+  you stop moving around, *Little Navmap* will return to following your
+  aircraft.
 
-   This option is also used in :doc:`PROFILE`.
+  This option is also used in :doc:`PROFILE`.
 
-   Toggle |Center Aircraft| ``Center Aircraft`` on and off if you find that
-   the map jumps back to the wrong position.
+  Toggle |Center Aircraft| ``Center Aircraft`` on and off if you find that
+  the map jumps back to the wrong position.
 
 Allow scrolling disabled:
-   Map will constantly follow the aircraft and will not allow moving away from it.
+  Map will constantly follow the aircraft and will not allow moving away from it.
 
-   The aircraft centering will be switched off only when using one of the
-   following functions:
+  The aircraft centering will be switched off only when using one of the
+  following functions:
 
-   -  Double-click into a table view or map display to zoom to an airport or a navaid.
-   -  Context menu item ``Show on map``.
-   -  ``Go to Home`` or ``Go to Center for Distance Search``.
-   -  ``Map`` link in ``Information`` dock window.
-   -  ``Show Flight Plan``, when selected manually, or automatically after loading a flight plan.
-   -  Centering a Google Earth KML/KMZ file after loading
+  - Double-click into a table view or map display to zoom to an airport or a navaid.
+  - Context menu item ``Show on map``.
+  - ``Go to Home`` or ``Go to Center for Distance Search``.
+  - ``Map`` link in ``Information`` dock window.
+  - ``Show Flight Plan``, when selected manually, or automatically after loading a flight plan.
+  - Centering a Google Earth KML/KMZ file after loading
 
-   This allows a quick inspection of an airport or navaid during flight. To
-   display the aircraft again use ``Map Position Back`` (:ref:`map-position-back-forward`) or enable
-   :ref:`center-aircraft` again.
+  This allows a quick inspection of an airport or navaid during flight. To
+  display the aircraft again use ``Map Position Back`` (:ref:`map-position-back-forward`) or enable
+  :ref:`center-aircraft` again.
 
 Zoom out on takeoff
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -766,8 +764,8 @@ Online weather is downloaded and updated every ten minutes.
 
 .. note::
 
-       Simulator weather is not supported for Microsoft Flight Simulator 2020 since this simulator
-       lacks the needed programming interfaces.
+  Simulator weather is not supported for Microsoft Flight Simulator 2020 since this simulator
+  lacks the needed programming interfaces.
 
 .. _options-weather-files:
 .. _page19:
@@ -798,11 +796,11 @@ Use ``Reset`` to set a value back to default if you change something accidentall
 
 .. note::
 
-     While this happens rarely, some public services like NOAA might be interrupted for hours.
-     *Little Navmap* will show error messages if this is the case.
+  While this happens rarely, some public services like NOAA might be interrupted for hours.
+  *Little Navmap* will show error messages if this is the case.
 
-     You might want to check you internet access but otherwise ignore these if
-     it does not happen for a longer time.
+  You might want to check you internet access but otherwise ignore these if
+  it does not happen for a longer time.
 
 
 .. _options-online-flying:
@@ -924,21 +922,21 @@ Note that leading and trailing spaces are removed from the web address.
 
 
 .. code-block:: none
-   :caption: ``whazzup.txt`` example:
-   :name: whazzup-example
+  :caption: ``whazzup.txt`` example:
+  :name: whazzup-example
 
-    !GENERAL
-    VERSION = 1
-    RELOAD = 1
-    UPDATE = 20181126131051
-    CONNECTED CLIENTS = 1
-    CONNECTED SERVERS = 41
+  !GENERAL
+  VERSION = 1
+  RELOAD = 1
+  UPDATE = 20181126131051
+  CONNECTED CLIENTS = 1
+  CONNECTED SERVERS = 41
 
-    !CLIENTS
-    :N51968:N51968:PILOT::48.2324:-123.1231:119:0:Aircraft::::::::1200::::VFR:::::::::::::::JoinFS:::::::177:::
+  !CLIENTS
+  :N51968:N51968:PILOT::48.2324:-123.1231:119:0:Aircraft::::::::1200::::VFR:::::::::::::::JoinFS:::::::177:::
 
-    !SERVERS
-    ...
+  !SERVERS
+  ...
 
 .. _online-service-settings-update:
 
@@ -955,9 +953,9 @@ map display updates.
 
 .. warning::
 
-        Do not use update rates smaller than two minutes for official online
-        networks. They might decide to block the application or block you based
-        on your internet address if downloads are excessive.
+  Do not use update rates smaller than two minutes for official online
+  networks. They might decide to block the application or block you based
+  on your internet address if downloads are excessive.
 
 .. _online-service-settings-format:
 
@@ -975,39 +973,39 @@ network. Try both options if unsure or you see strange effects like all aircraft
 
 Configuration options for the internal web server of *Little Navmap*.
 
--  ``Document root directory``: The root directory of the web server
-   pages. Change this only if you would like to run a customized web
-   server using your own style sheets and you own HTML templates.
--  ``Select Directory ...``: Select root directory. *Little Navmap* will
-   show a warning if no ``index.html`` file is found in the root
-   directory.
--  ``Port number``: Default 8965. That means you have to use the address
-   ``http://localhost:8965/`` or similar in your browser to access the web page of
-   *Little Navmap*, for example. Change this value if you get errors
-   like ``Unable to start the server. Error: The bound address is already in use.``.
--  ``Use encrypted connection (HTTPS / SSL)``: Encrypted connections use
-   a precomputed self-signed certificate which comes with *Little
-   Navmap*. A browser will show an error message if using this
-   certificate and requires to add a security exception. The encrypted
-   address is ``https://localhost:8965/``, for example. Creating a self
-   signed certificate is quite complex. Look at the various web articles
-   by searching for ``How to create a self signed certificate``.
--  ``Start Server``: Start or stop the server to test the changes above.
-   The server status (running or not running) is reverted to the
-   previous state when pressing ``Cancel`` in the options dialog.
--  Label ``Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)``:
-   Shows a list of valid links using the IP address and the host name (your computer name) of the web server.
-   Clicking on either one opens the page in your default browser. You can always try the IP addresses if the
-   computer names does not work. Some addresses might not work depending on network configuration.
+- ``Document root directory``: The root directory of the web server
+  pages. Change this only if you would like to run a customized web
+  server using your own style sheets and you own HTML templates.
+- ``Select Directory ...``: Select root directory. *Little Navmap* will
+  show a warning if no ``index.html`` file is found in the root
+  directory.
+- ``Port number``: Default 8965. That means you have to use the address
+  ``http://localhost:8965/`` or similar in your browser to access the web page of
+  *Little Navmap*, for example. Change this value if you get errors
+  like ``Unable to start the server. Error: The bound address is already in use.``.
+- ``Use encrypted connection (HTTPS / SSL)``: Encrypted connections use
+  a precomputed self-signed certificate which comes with *Little
+  Navmap*. A browser will show an error message if using this
+  certificate and requires to add a security exception. The encrypted
+  address is ``https://localhost:8965/``, for example. Creating a self
+  signed certificate is quite complex. Look at the various web articles
+  by searching for ``How to create a self signed certificate``.
+- ``Start Server``: Start or stop the server to test the changes above.
+  The server status (running or not running) is reverted to the
+  previous state when pressing ``Cancel`` in the options dialog.
+- Label ``Web Server is running at http://my-computer:8965 (IP address http://192.168.1.1:8965)``:
+  Shows a list of valid links using the IP address and the host name (your computer name) of the web server.
+  Clicking on either one opens the page in your default browser. You can always try the IP addresses if the
+  computer names does not work. Some addresses might not work depending on network configuration.
 
-   Note that the IP address of a computer can change for every reboot depending on network or router configuration.
-   Try to use the host name which is stable.
+  Note that the IP address of a computer can change for every reboot depending on network or router configuration.
+  Try to use the host name which is stable.
 
-   The list contains all computer addresses for `IPv4 <https://en.wikipedia.org/wiki/Internet_Protocol_version_4>`__
-   (like ``my-computer:8965 (192.168.1.1:8965)``) and
-   `IPv6 <https://en.wikipedia.org/wiki/IPv6>`__ (like ``my-computer:8965 (fe80::c0b9:1832:abc5:d5a1:8965)``).
+  The list contains all computer addresses for `IPv4 <https://en.wikipedia.org/wiki/Internet_Protocol_version_4>`__
+  (like ``my-computer:8965 (192.168.1.1:8965)``) and
+  `IPv6 <https://en.wikipedia.org/wiki/IPv6>`__ (like ``my-computer:8965 (fe80::c0b9:1832:abc5:d5a1:8965)``).
 
-   You might see more than one IPv4 address (e.g. one for WIFI and one for Ethernet) and several addresses for IPv6 if enabled.
+  You might see more than one IPv4 address (e.g. one for WIFI and one for Ethernet) and several addresses for IPv6 if enabled.
 
 
 
@@ -1042,10 +1040,10 @@ The disk cache has a minimum size of 500 MB and a maximum size of 8 GB.
 See chapter :ref:`disk-cache` for information on cache locations.
 
 .. figure:: ../images/mapcache.jpg
-       :scale: 60%
+  :scale: 60%
 
-       The map cache directory on Windows showing caches for four map themes. Delete all or any of these to save space.
-       *Click image to enlarge.*
+  The map cache directory on Windows showing caches for four map themes. Delete all or any of these to save space.
+  *Click image to enlarge.*
 
 
 .. _options-mapthemes:
@@ -1061,8 +1059,8 @@ External map themes are ignored if this field is empty.
 
 .. warning::
 
-    Do not use the path ``.../data/maps/earth`` in the installation directory do install maps.
-    This location is deprecated.
+  Do not use the path ``.../data/maps/earth`` in the installation directory do install maps.
+  This location is deprecated.
 
 .. _cache-elevation:
 
@@ -1100,7 +1098,7 @@ Note that airport files in this list are always read last which can affect the d
 
 .. tip::
 
-        The add-ons in the selected directory and will be read recursively which means you can use sub-directories to organize your add-ons.
+  The add-ons in the selected directory and will be read recursively which means you can use sub-directories to organize your add-ons.
 
 .. _scenery-library-database-exclude:
 
@@ -1120,8 +1118,8 @@ then from the list.
 
 .. tip::
 
-      Note that you can select more than one entry in the file
-      dialog to add several entries at once.
+  Note that you can select more than one entry in the file
+  dialog to add several entries at once.
 
 .. _scenery-library-database-exclude-add-on:
 
@@ -1152,9 +1150,9 @@ unwanted highlighting of these airports as add-ons.
 
 .. figure:: ../images/optionscenery.jpg
 
-       Page ``Scenery Library Database`` with three
-       directories and three files excluded from loading and two directories
-       excluded from add-on recognition.
+  Page ``Scenery Library Database`` with three
+  directories and three files excluded from loading and two directories
+  excluded from add-on recognition.
 
 Examples
 ^^^^^^^^

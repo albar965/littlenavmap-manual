@@ -32,35 +32,30 @@ Create Holding
 
 **Dialog input and selection fields:**
 
--  Dialog header: Shows navaid name and ICAO ident or coordinates if
-   holding is not attached to a navaid.
--  ``Turn direction``: Select to choose between left or right turn.
--  ``Course``: Course of the inbound (towards fix) leg of holding
-   in magnetic degree.
--  ``Speed``: Intended holding speed. Used together with time to
-   calculate holding size.
--  ``Time``: Time of the straight legs in the holding. Used together
-   with speed to calculate holding size.
--  Label ``Straight section length``: Calculated length of the straight inbound and
-   outbound sections.
--  Label ``Total time to complete``: Total time to complete one holding.
--  ``Altitude label``: Altitude to display at the holding.
--  ``Line Color``: Color of the holding lines and labels.
+- Dialog header: Shows navaid name and ICAO ident or coordinates if holding is not attached to a navaid.
+- ``Turn direction``: Select to choose between left or right turn.
+- ``Course``: Course of the inbound (towards fix) leg of holding in magnetic degree.
+- ``Speed``: Intended holding speed. Used together with time to calculate holding size.
+- ``Time``: Time of the straight legs in the holding. Used together with speed to calculate holding size.
+- Label ``Straight section length``: Calculated length of the straight inbound and outbound sections.
+- Label ``Total time to complete``: Total time to complete one holding.
+- ``Altitude label``: Altitude to display at the holding.
+- ``Line Color``: Color of the holding lines and labels.
 
 See :ref:`holding-legend` for details about the
 displayed numbers in the pattern.
 
 .. figure:: ../images/holding_dialog.jpg
 
-      Holding dialog for VORDME ``RID``.
+  Holding dialog for VORDME ``RID``.
 
 .. figure:: ../images/holding.jpg
-       :scale: 50%
+  :scale: 50%
 
-       Holding at VORDME ``RID``. Inbound label shows
-       inbound magnetic course, holding time and navaid ident. Outbound track
-       has outbound magnetic course, speed and altitude as label. While filled
-       triangle is the hotspot and holding fix. *Click image to enlarge.*
+  Holding at VORDME ``RID``. Inbound label shows
+  inbound magnetic course, holding time and navaid ident. Outbound track
+  has outbound magnetic course, speed and altitude as label. While filled
+  triangle is the hotspot and holding fix. *Click image to enlarge.*
 
 .. |Holding Icon| image:: ../images/icon_hold.png
 

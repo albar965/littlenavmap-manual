@@ -6,11 +6,11 @@ Time, actual flown altitude and coordinates are stored in the trail.
 
 Three types of trails are stored:
 
--  The most important aircraft trail on the map which can be exported to GPX and loaded in menu :ref:`menu-gpx`. It can be cleared using the menu item :ref:`delete-aircraft-trail`.
--  A trail recording all movements between takeoff and landing is attached to each logbook entry and can be saved there using the context menu item
-   :ref:`logbook-menu-save-gpx`.
--  The elevation profile stores a temporary trail which is deleted on takeoff and landing to avoid cluttering up the display.
-   This cannot be saved. You can clear it manually using the context menu item :ref:`delete-aircraft-trail-profile`.
+- The most important aircraft trail on the map which can be exported to GPX and loaded in menu :ref:`menu-gpx`. It can be cleared using the menu item :ref:`delete-aircraft-trail`.
+- A trail recording all movements between takeoff and landing is attached to each logbook entry and can be saved there using the context menu item
+  :ref:`logbook-menu-save-gpx`.
+- The elevation profile stores a temporary trail which is deleted on takeoff and landing to avoid cluttering up the display.
+  This cannot be saved. You can clear it manually using the context menu item :ref:`delete-aircraft-trail-profile`.
 
 The GPS exchange format can be read by Google Earth and most other GIS
 applications.
@@ -26,8 +26,8 @@ segments are lost. The maximum number of points can be changed in options on pag
 
 .. tip::
 
-    Use GPX instead of KML to import a track into *Little Navmap*.
-    You can convert the KML to GPX using one of the numerous online tools ot Google Earth.
+  Use GPX instead of KML to import a track into *Little Navmap*.
+  You can convert the KML to GPX using one of the numerous online tools ot Google Earth.
 
 Saving and loading the Aircraft Trail to and from GPX
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,17 +43,17 @@ The track contains the simulator time, altitude and coordinates.
 
 .. note::
 
-   *Little Navmap* shows a warning dialog when loading large GPX files having too many points. You will also see
-   a warning if the result is truncated due to a lower setting in the option ``Maximum number of aircraft trail points``
-   on page :ref:`options-map-aircraft-trail` in options.
+  *Little Navmap* shows a warning dialog when loading large GPX files having too many points. You will also see
+  a warning if the result is truncated due to a lower setting in the option ``Maximum number of aircraft trail points``
+  on page :ref:`options-map-aircraft-trail` in options.
 
 .. tip::
 
-    Enable the export option ``Garmin GPX exchange format for Google Earth and others`` in the
-    :ref:`multiexport-options` and adapt the export path.
-    Then select ``Files`` -> :ref:`multiexport-flight-plan` after each flight to save your aircraft trail and all other selected
-    export formats with one click.
-    See :doc:`ROUTEEXPORTALL` for more information.
+  Enable the export option ``Garmin GPX exchange format for Google Earth and others`` in the
+  :ref:`multiexport-options` and adapt the export path.
+  Then select ``Files`` -> :ref:`multiexport-flight-plan` after each flight to save your aircraft trail and all other selected
+  export formats with one click.
+  See :doc:`ROUTEEXPORTALL` for more information.
 
 
 Aircraft Trail Display
@@ -68,15 +68,15 @@ Tooltips are shown for aircraft trail and logbook trail preview if enabled. This
 in options on page :ref:`options-map-tooltips-and-clicks`.
 
 .. figure:: ../images/trail.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Flown trail with tooltip and color gradient ``Yellow, Green, Cyan to Blue``. *Click image to enlarge.*
+  Flown trail with tooltip and color gradient ``Yellow, Green, Cyan to Blue``. *Click image to enlarge.*
 
 .. note::
 
-   Long aircraft trails having too many points can reduce the performance of map display significantly even more
-   when using the gradient color option.
+  Long aircraft trails having too many points can reduce the performance of map display significantly even more
+  when using the gradient color option.
 
-   Clear trails after flying and use the trails stored in the :doc:`LOGBOOK` if you like to see the trails of previous flights.
+  Clear trails after flying and use the trails stored in the :doc:`LOGBOOK` if you like to see the trails of previous flights.
 
 .. |Aircraft Trail| image:: ../images/icon_aircrafttrail.png

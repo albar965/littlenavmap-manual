@@ -17,27 +17,26 @@ You should at least read through :doc:`TUTORIALVFR` before doing this one.
 
 .. note::
 
-     The flight plan will go across the UK using an IFR capable aircraft. Its
-     maximum range should be more than 600 NM including reserves
-     and a cruise altitude of 10,000 ft.
+  The flight plan will go across the UK using an IFR capable aircraft. Its
+  maximum range should be more than 600 NM including reserves
+  and a cruise altitude of 10,000 ft.
 
-     Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
-     a small turboprop or a powerful twin.
+  Note that Bembridge has a relatively short runway of 2,729 ft. You probably need
+  a small turboprop or a powerful twin.
 
-     **Do not attempt to fly this trip on an airliner or other unsuitable aircraft.**
+  **Do not attempt to fly this trip on an airliner or other unsuitable aircraft.**
 
 The tutorial assumes the following preconditions:
 
--  You left your aircraft at ``Bembridge (EGHJ)`` at the end of the last
-   flight or think of it as you home base.
--  You don't know where you want to fly today.
--  You know the requirements for your aircraft:
+- You left your aircraft at ``Bembridge (EGHJ)`` at the end of the last flight or think of it as you home base.
+- You don't know where you want to fly today.
+- You know the requirements for your aircraft:
 
-   -  Maximum range
-   -  Minimum runway length
-   -  Hard runways
-   -  Needs a parking spot at the destination
-   -  Fuel for return trip
+  - Maximum range
+  - Minimum runway length
+  - Hard runways
+  - Needs a parking spot at the destination
+  - Fuel for return trip
 
 Prepare Flight
 ~~~~~~~~~~~~~~
@@ -57,13 +56,12 @@ files. See :doc:`TUTORIALPERF` if you like to do this.
 Therefore, we will simply use a slightly modified aircraft performance
 profile which allows to calculate the top of climb and top of descent.
 
--  Select ``Aircraft`` -> :ref:`aircraft-menu-new` |New Aircraft
-   Performance ...|.
--  Optional: Select :ref:`aircraft-menu-edit` from the same menu as above and
-   change the values fuel flow and speed at climb cruise and descent to roughly match your aircraft.
-   Add reserve fuel for about one hour or cruise fuel consumption for now.
-   This helps to get an estimate for the traveling time. Fill the other fields too if you know the performance values.
--  Accept by pressing ``OK`` in the dialog.
+- Select ``Aircraft`` -> :ref:`aircraft-menu-new` |New Aircraft Performance ...|.
+- Optional: Select :ref:`aircraft-menu-edit` from the same menu as above and
+  change the values fuel flow and speed at climb cruise and descent to roughly match your aircraft.
+  Add reserve fuel for about one hour or cruise fuel consumption for now.
+  This helps to get an estimate for the traveling time. Fill the other fields too if you know the performance values.
+- Accept by pressing ``OK`` in the dialog.
 
 You might see warnings in the fuel report. Ignore these for now
 since the aircraft performance is sufficient to calculate the top of
@@ -71,7 +69,9 @@ descent and top of climb for the elevation profile.
 
 .. tip::
 
-   Lookup numbers at the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__ or download a community made performance file from `Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
+  Lookup numbers at the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__
+  or download a community made performance file from
+  `Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
 
 |Aircraft Performance|
 
@@ -84,11 +84,11 @@ Cleanup Search
 
 Go to the dock window ``Search`` and follow the steps below:
 
--  Right-click into the result table and select :ref:`reset-search` |Reset
-   Search| to remove of all search criteria that may affect the query.
--  Click the menu button |Menu Button| and make sure that the search
-   groups ``Facilities``, ``Runway`` and ``Distance from Mark`` are
-   checked. Deselect all others you do not need.
+- Right-click into the result table and select :ref:`reset-search` |Reset
+  Search| to remove of all search criteria that may affect the query.
+- Click the menu button |Menu Button| and make sure that the search
+  groups ``Facilities``, ``Runway`` and ``Distance from Mark`` are
+  checked. Deselect all others you do not need.
 
 |Prepare Search|
 
@@ -99,11 +99,11 @@ Assign Departure
 
 Now look for the departure airport:
 
--  Enter ``EGHJ`` in the ``ICAO Code`` search field on the top left
-   (case does not matter).
--  Right-click on the airport in the result table.
--  Choose ``Set as Departure`` |Set as Flight Plan
-   Departure|. This will assign the airport center point as a start position.
+- Enter ``EGHJ`` in the ``ICAO Code`` search field on the top left
+  (case does not matter).
+- Right-click on the airport in the result table.
+- Choose ``Set as Departure`` |Set as Flight Plan
+  Departure|. This will assign the airport center point as a start position.
 
 |Assign Departure|
 
@@ -113,10 +113,10 @@ information to the airport.
 
 Now select a parking position:
 
--  Go to ``Flight Plan`` -> :ref:`select-a-start-position-for-departure`
-   |Select a Start Position for Departure|.
--  Choose one of the GA small ramp positions.
--  Click ``OK`` and the position will be highlighted on the map.
+- Go to ``Flight Plan`` -> :ref:`select-a-start-position-for-departure`
+  |Select a Start Position for Departure|.
+- Choose one of the GA small ramp positions.
+- Click ``OK`` and the position will be highlighted on the map.
 
 |Assign Parking|
 
@@ -134,13 +134,13 @@ Search| to remove of all search criteria from the recent search.
 
 Now look for a suitable destination airport:
 
--  Right-click on ``EGHJ`` in the search result again.
--  Select ``Set Center for Distance Search`` |Set Center for Distance
-   Search|. You can also do this in the map. This is the center point
-   for the spatial search.
--  Clear the ``Ident`` search field on the top left of the search window now. It is a common mistake to
-   leave the text fields filled when doing distance searches which will
-   give you an empty result table.
+- Right-click on ``EGHJ`` in the search result again.
+- Select ``Set Center for Distance Search`` |Set Center for Distance
+  Search|. You can also do this in the map. This is the center point
+  for the spatial search.
+- Clear the ``Ident`` search field on the top left of the search window now. It is a common mistake to
+  leave the text fields filled when doing distance searches which will
+  give you an empty result table.
 
 We will now look for airports that are in range of the aircraft but not
 too close. Also, certain criteria have to be fulfilled, like a runway
@@ -176,23 +176,23 @@ short landing challenge.
 The search result changes on the fly while doing all these adjustments,
 though we are not there yet:
 
--  Check ``Dist:`` to activate the spatial search.
--  Change the maximum distance to 600 NM and the minimum to 400 NM
-   (to avoid short hops). The result table will now update with a
-   small delay since the distance search is more complex.
--  To find only airports north of your position select ``North`` in the
-   button ``Any Dir.``. Note that the search result is sorted by
-   distance with the closest airport first per default.
--  Choose an airport for your trip. Use ``Wick (EGPC)`` for this
-   tutorial.
+- Check ``Dist:`` to activate the spatial search.
+- Change the maximum distance to 600 NM and the minimum to 400 NM
+  (to avoid short hops). The result table will now update with a
+  small delay since the distance search is more complex.
+- To find only airports north of your position select ``North`` in the
+  button ``Any Dir.``. Note that the search result is sorted by
+  distance with the closest airport first per default.
+- Choose an airport for your trip. Use ``Wick (EGPC)`` for this
+  tutorial.
 
-   |Search for Destination|
--  Right-click on Wick in the result table and select
-   ``Show Information`` |Show Information|. This will fill the
-   tabs in the dock window ``Information``.
--  Select the tab ``Airport`` and below this one the tab ``Weather``. Look for the section
-   ``Best runways for wind`` to get an idea of the expected landing
-   runway. Start any third party weather programs before if you use these.
+  |Search for Destination|
+- Right-click on Wick in the result table and select
+  ``Show Information`` |Show Information|. This will fill the
+  tabs in the dock window ``Information``.
+- Select the tab ``Airport`` and below this one the tab ``Weather``. Look for the section
+  ``Best runways for wind`` to get an idea of the expected landing
+  runway. Start any third party weather programs before if you use these.
 
 For this tutorial we assume that the winds favor runway 13.
 
@@ -205,16 +205,16 @@ Select an Approach Procedure
 
 We'll select an approach procedure now:
 
--  Go back to the search result.
--  Right-click on the airport Wick again. Select ``Show Procedures for``
-   |Show Procedures|. This will pop up the procedure search tab.
--  Choose ``Runway 13`` in the ``All Runways`` box to see only
-   approaches for 13.
--  Select ``Expand All`` in the context menu to see also the transitions
-   for each approach.
--  Choose ``Approach VORDME 13 FD13`` using ``Transition (Full) CHINN``
-   since we expect to land on runway 13. You can also use any other approach for this runway
-   if VORDME 13 is not available.
+- Go back to the search result.
+- Right-click on the airport Wick again. Select ``Show Procedures for``
+  |Show Procedures|. This will pop up the procedure search tab.
+- Choose ``Runway 13`` in the ``All Runways`` box to see only
+  approaches for 13.
+- Select ``Expand All`` in the context menu to see also the transitions
+  for each approach.
+- Choose ``Approach VORDME 13 FD13`` using ``Transition (Full) CHINN``
+  since we expect to land on runway 13. You can also use any other approach for this runway
+  if VORDME 13 is not available.
 
 The top label in the procedure search shows
 ``Wick (EGPC) Approach VORDME 13 FD13 Transition (Full) CHINN`` for the
@@ -258,22 +258,22 @@ Now we have the departure airport, an approach procedure and the
 destination all connected by a straight line. Next is the en-route part
 of the flight plan:
 
--  Set ``IFR`` as the flight plan type in the dock window ``Flight Planning`` on tab ``Flight Plan``.
-   This allows the automatic flight plan calculation to adjust the cruise altitude.
--  Click ``Flight Plan`` -> :ref:`calculate-flight-plan` |Calculate Flight Plan|
-   to open the flight plan calculation floating window.
+- Set ``IFR`` as the flight plan type in the dock window ``Flight Planning`` on tab ``Flight Plan``.
+  This allows the automatic flight plan calculation to adjust the cruise altitude.
+- Click ``Flight Plan`` -> :ref:`calculate-flight-plan` |Calculate Flight Plan|
+  to open the flight plan calculation floating window.
 
-   |Calculate Flight Plan Window|
+  |Calculate Flight Plan Window|
 
-   The flight plan cruise altitude is automatically adjusted according to
-   the hemispherical rule (the rule can be changed in ``Tools`` ->
-   :doc:`OPTIONS` |Options| on the page :ref:`options-flight-plan`), the altitude
-   restrictions of the airways and the flight plan type (``VFR`` or
-   ``IFR``). You can see the minimum altitude for each airway segment in
-   the flight plan table in the column ``Restriction`` (see :ref:`flight-plan-table-columns`).
-   The altitude can be changed according to the hemispherical rule by clicking the :ref:`routecalc-adjust` button.
--  Change all settings in the floating window as shown in the screenshot above.
--  Click the button :ref:`routecalc-calculate`.
+  The flight plan cruise altitude is automatically adjusted according to
+  the hemispherical rule (the rule can be changed in ``Tools`` ->
+  :doc:`OPTIONS` |Options| on the page :ref:`options-flight-plan`), the altitude
+  restrictions of the airways and the flight plan type (``VFR`` or
+  ``IFR``). You can see the minimum altitude for each airway segment in
+  the flight plan table in the column ``Restriction`` (see :ref:`flight-plan-table-columns`).
+  The altitude can be changed according to the hemispherical rule by clicking the :ref:`routecalc-adjust` button.
+- Change all settings in the floating window as shown in the screenshot above.
+- Click the button :ref:`routecalc-calculate`.
 
 Use this flight plan for now.
 
@@ -285,10 +285,10 @@ The top label in the flight planning dock window reads now:
 
 .. code-block:: none
 
-          Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
-          Arrive via CHINN and VORDME FD13 (D13).
-          Land at 13, 129°M, 5.215 ft, 126 ft elevation, PAPI4.
-          Distance 538 NM, time 4 h 35 m.
+  Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
+  Arrive via CHINN and VORDME FD13 (D13).
+  Land at 13, 129°M, 5.215 ft, 126 ft elevation, PAPI4.
+  Distance 538 NM, time 4 h 35 m.
 
 The text can be slightly different depending on the used version of *Little Navmap*.
 
@@ -422,11 +422,11 @@ The top label in the flight planning dock window reads now:
 
 .. code-block:: none
 
-    Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
-    Takeoff from 12, 118°M, 2.729 ft.
-    Arrive via CHINN and VORDME FD13 (D13).
-    Land at 31, 309°M, 5.031 ft, 126 ft elevation, PAPI4.
-    Distance 519 NM, time 4 h 26 m.
+  Bembridge (EGHJ) / Parking 7 to Wick (EGPC)
+  Takeoff from 12, 118°M, 2.729 ft.
+  Arrive via CHINN and VORDME FD13 (D13).
+  Land at 31, 309°M, 5.031 ft, 126 ft elevation, PAPI4.
+  Distance 519 NM, time 4 h 26 m.
 
 
 To remove a procedure from the flight plan:
@@ -462,14 +462,14 @@ I recommend hiding the missed approaches on the map by deselecting
 ``View`` -> :ref:`show-missed-approaches` |Show Missed Approaches|. This
 helps uncluttering the map display.
 
--  **If the missed approach is not shown:** The progress window shows
-   distance and time to destination. Activating the next leg (shown in
-   magenta color) will stop if the destination (i.e. the runway
-   threshold) is reached, even when passing the threshold.
--  **If the missed is shown and the aircraft passes the runway
-   threshold:** The first leg of the missed approach is activated and
-   simulator aircraft progress will display the remaining distance to
-   the end of the missed procedure.
+- **If the missed approach is not shown:** The progress window shows
+  distance and time to destination. Activating the next leg (shown in
+  magenta color) will stop if the destination (i.e. the runway
+  threshold) is reached, even when passing the threshold.
+- **If the missed is shown and the aircraft passes the runway
+  threshold:** The first leg of the missed approach is activated and
+  simulator aircraft progress will display the remaining distance to
+  the end of the missed procedure.
 
 .. |Reset all for a new Flight| image:: ../images/icon_reload.png
 .. |New Aircraft Performance ...| image:: ../images/icon_aircraftperfnew.png

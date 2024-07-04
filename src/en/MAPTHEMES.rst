@@ -25,38 +25,38 @@ properties defined in the map's DGML file.
 
 .. note::
 
-     Some map themes require an user account and an API key or token to use them.
-     See options page :ref:`options-map-keys` for more information.
+  Some map themes require an user account and an API key or token to use them.
+  See options page :ref:`options-map-keys` for more information.
 
 
 .. figure:: ../images/map_theme_options.jpg
-        :scale: 70%
+  :scale: 70%
 
-        Select map theme directory ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
-        shows a valid directory and one map theme found. *Click image to enlarge.*
+  Select map theme directory ``Documents\Little Navmap Files\Map Themes`` in options. The status line below the path
+  shows a valid directory and one map theme found. *Click image to enlarge.*
 
 .. figure:: ../images/map_theme.jpg
-       :scale: 70%
+  :scale: 70%
 
-       Installing a map theme from a ZIP file ``OpenStreetMap French.zip``. The compressed file contains the subdirectory ``data\maps\earth``.
-       You have to copy the directory ``osm-fr`` containing the file ``osm-fr.dgml``
-       into your selected map theme directory ``Documents\Little Navmap Files\Map Themes``.
+  Installing a map theme from a ZIP file ``OpenStreetMap French.zip``. The compressed file contains the subdirectory ``data\maps\earth``.
+  You have to copy the directory ``osm-fr`` containing the file ``osm-fr.dgml``
+  into your selected map theme directory ``Documents\Little Navmap Files\Map Themes``.
 
-       **You have to restart** *Little Navmap* **to see the new map themes.** *Click image to enlarge.*
+  **You have to restart** *Little Navmap* **to see the new map themes.** *Click image to enlarge.*
 
 .. tip::
 
-      Also check out the `Little Navmap Support Forum at
-      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ and
-      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ for more map themes.
+  Also check out the `Little Navmap Support Forum at
+  AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ and
+  `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__ for more map themes.
 
 
 .. note::
 
-   *Little Navmap* shows an error message on startup if map themes are broken or not installed properly.
-   A message will also be shown if a known discontinued map theme service is detected.
+  *Little Navmap* shows an error message on startup if map themes are broken or not installed properly.
+  A message will also be shown if a known discontinued map theme service is detected.
 
-   Fix the issues by removing the broken or duplicate map themes and restart *Little Navmap*.
+  Fix the issues by removing the broken or duplicate map themes and restart *Little Navmap*.
 
 .. include:: include/THEMEWARN.rst
 
@@ -74,12 +74,12 @@ for more information.
 More maps and information about map configuration and DGML files can be
 found here on the Marble and KDE pages:
 
--  Download more maps for the Marble widget (only Earth maps are supported in *Little Navmap*):
-   `Additional Maps <https://marble.kde.org/maps.php>`__
--  A tutorial that shows how to create a map theme based on tiled images:
-   `Marble/CustomMaps <https://techbase.kde.org/Marble/CustomMaps>`__
--  A tutorial showing how to create a map theme based on
-   `OSM Slippy Maps <https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames>`__:
-   `How to create map themes based on OSM slippy maps <https://techbase.kde.org/Marble/OSMSlippyMaps>`__
--  How to create a historical map for Marble: `Historical Maps for Marble <https://techbase.kde.org/Marble/HistoricalMaps>`__
+- Download more maps for the Marble widget (only Earth maps are supported in *Little Navmap*):
+  `Additional Maps <https://marble.kde.org/maps.php>`__
+- A tutorial that shows how to create a map theme based on tiled images:
+  `Marble/CustomMaps <https://techbase.kde.org/Marble/CustomMaps>`__
+- A tutorial showing how to create a map theme based on
+  `OSM Slippy Maps <https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames>`__:
+  `How to create map themes based on OSM slippy maps <https://techbase.kde.org/Marble/OSMSlippyMaps>`__
+- How to create a historical map for Marble: `Historical Maps for Marble <https://techbase.kde.org/Marble/HistoricalMaps>`__
 

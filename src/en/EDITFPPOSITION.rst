@@ -12,15 +12,15 @@ Other flight plan export formats will only save the ident truncated or a coordin
 
 .. note::
 
-      Keep in mind that all information entered here is lost if the flight plan position is removed or a
-      new flight plan is calculated (:doc:`ROUTECALC`).
+  Keep in mind that all information entered here is lost if the flight plan position is removed or a
+  new flight plan is calculated (:doc:`ROUTECALC`).
 
 .. note::
 
-     Waypoints using the default format ``WP`` plus number (e.g. ``WP1`` or ``WP99``) are automatically
-     renumbered by *Little Navmap* to reflect the flying order in the flight plan.
+  Waypoints using the default format ``WP`` plus number (e.g. ``WP1`` or ``WP99``) are automatically
+  renumbered by *Little Navmap* to reflect the flying order in the flight plan.
 
-     Changing the name will disable the renumbering for a waypoint.
+  Changing the name will disable the renumbering for a waypoint.
 
 Ident
 ~~~~~
@@ -67,7 +67,7 @@ See :doc:`COORDINATES` for more information.
 
 .. figure:: ../images/edit_flightplan_waypoint.jpg
 
-       Editing an user defined flight plan position. Also showing abbreviated tooltip in flight plan table.
+  Editing an user defined flight plan position. Also showing abbreviated tooltip in flight plan table.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png

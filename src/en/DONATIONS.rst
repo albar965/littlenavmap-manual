@@ -8,4 +8,4 @@ Donations
 |Donate|
 
 .. |Donate| image:: ../images/donate.jpg
-   :target: https://albar965.github.io/donate.html
+  :target: https://albar965.github.io/donate.html

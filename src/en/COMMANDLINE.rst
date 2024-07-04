@@ -10,10 +10,10 @@ information on the terminal or the command line.
 Note that paths or files containing spaces or special characters have to be put in double quotes ``"``.
 
 Example: Load a flight plan file:
-   ``littlenavmap.exe --flight-plan "IFR Ireland West Knock (EIKN) to Benbecula (EGPL).lnmpln"``
+  ``littlenavmap.exe --flight-plan "IFR Ireland West Knock (EIKN) to Benbecula (EGPL).lnmpln"``
 
 Example: Create a flight plan from the given route description:
-   ``littlenavmap.exe -d "KYKM WENAS7 PERTT 4741N12051W DIABO J503 FOLDY YDC PIGLU4 CYLW CYYF CZGF"``
+  ``littlenavmap.exe -d "KYKM WENAS7 PERTT 4741N12051W DIABO J503 FOLDY YDC PIGLU4 CYLW CYYF CZGF"``
 
 All files passed to *Little Navmap* without one of the ``-`` or ``--`` options below are checked for file type
 and loaded into the program.
@@ -29,19 +29,19 @@ operating systems. A question dialog might appear asking to discard changes, if 
 
 .. note::
 
-      Make sure your flight plan is free of errors like a too low cruise altitude or procedure altitude violations
-      to avoid warning dialogs or a modified flight plan blocking the loading of subsequent flight plans.
+  Make sure your flight plan is free of errors like a too low cruise altitude or procedure altitude violations
+  to avoid warning dialogs or a modified flight plan blocking the loading of subsequent flight plans.
 
 .. note::
 
-      ``--flight-plan-descr`` reads the route string using the current options set in the drop down menu button
-      in the :doc:`ROUTEDESCR` dialog window.
+  ``--flight-plan-descr`` reads the route string using the current options set in the drop down menu button
+  in the :doc:`ROUTEDESCR` dialog window.
 
 .. warning::
 
-      Any unsaved flight plan in progress (visible ``*`` in main window title bar but no filename)
-      will be overwritten without further notice if using
-      one of the options to load a flight plan or route description.
+  Any unsaved flight plan in progress (visible ``*`` in main window title bar but no filename)
+  will be overwritten without further notice if using
+  one of the options to load a flight plan or route description.
 
 Options
 ~~~~~~~~~~~~~~~

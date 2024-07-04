@@ -13,11 +13,11 @@ Drop down menus in the toolbar can be torn off by clicking on the dashed line on
 
 .. figure:: ../images/menutoolbar.jpg
 
-       Menu and toolbars docked in default positions. Screenshot based on *Little Navmap* 2.6.
+  Menu and toolbars docked in default positions. Screenshot based on *Little Navmap* 2.6.
 
 .. tip::
 
-   Look at the left side of this online user manual to see all the menus and menu items in a tree structure.
+  Look at the left side of this online user manual to see all the menus and menu items in a tree structure.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -39,8 +39,8 @@ You have to use :ref:`search-result-table-view-context-menu`,
 
 .. note::
 
-      You can exit *Little Navmap* without saving the current plan. All will be restored on next startup.
-      See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
+  You can exit *Little Navmap* without saving the current plan. All will be restored on next startup.
+  See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
 
 .. _open-flight-plan:
 
@@ -49,13 +49,13 @@ You have to use :ref:`search-result-table-view-context-menu`,
 
 Opens a flight plan with one of the following formats:
 
--  LNMPLN. This is the default format of *Little Navmap* which supports all flight plan features like remarks.
-   See :ref:`flight-plan-formats-lnmpln` for information about this format.
--  PLN: FSX, FS9, FSC or MSFS.
--  FLP
--  FMS: X-Plane FMS 11 (used by X-Plane 11 and X-Plane 12) or FMS 3
--  FlightGear FGFP
--  Garmin FPL and GFP
+- LNMPLN. This is the default format of *Little Navmap* which supports all flight plan features like remarks.
+  See :ref:`flight-plan-formats-lnmpln` for information about this format.
+- PLN: FSX, FS9, FSC or MSFS.
+- FLP
+- FMS: X-Plane FMS 11 (used by X-Plane 11 and X-Plane 12) or FMS 3
+- FlightGear FGFP
+- Garmin FPL and GFP
 
 The file type is determined by content and not file extension. See :doc:`FLIGHTPLANFMT` for more information.
 
@@ -79,16 +79,16 @@ The corrected altitude depends on plan type (IFR or VFR), used procedures and us
 
 .. note::
 
-    Keep in mind that most flight plan formats are limited and not all information is provided or can be
-    loaded from a file. For example, cruise altitude might not be loaded from X-Plane FMS in some
-    cases, airways and departure parking spots cannot restored for several formats, transitions cannot
-    be loaded from MSFS PLN and more.
+  Keep in mind that most flight plan formats are limited and not all information is provided or can be
+  loaded from a file. For example, cruise altitude might not be loaded from X-Plane FMS in some
+  cases, airways and departure parking spots cannot restored for several formats, transitions cannot
+  be loaded from MSFS PLN and more.
 
 .. important::
 
-    Always save a copy of the flight plan in LNMPLN format to be able to
-    reload all information. Exporting to and reading from other formats like
-    X-Plane FMS might result in information loss.
+  Always save a copy of the flight plan in LNMPLN format to be able to
+  reload all information. Exporting to and reading from other formats like
+  X-Plane FMS might result in information loss.
 
 .. _append-flight-plan:
 
@@ -137,15 +137,15 @@ You can disable this behavior in the options dialog on page :ref:`options-files`
 
 .. tip::
 
-    Enable the export option ``Little Navmap native flight plan format`` in the :ref:`multiexport-options` and adapt the export path.
-    Then use ``Files`` -> :ref:`multiexport-flight-plan` to save your flight plan and all selected export formats with one click.
-    See :ref:`multiexport-export-lnmpln` for more information.
+  Enable the export option ``Little Navmap native flight plan format`` in the :ref:`multiexport-options` and adapt the export path.
+  Then use ``Files`` -> :ref:`multiexport-flight-plan` to save your flight plan and all selected export formats with one click.
+  See :ref:`multiexport-export-lnmpln` for more information.
 
 .. note::
 
-      *Little Navmap* will not ask to save the file on exit but will instead save the changes to a temporary file.
-      The changes will be restored on next startup.
-      See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
+  *Little Navmap* will not ask to save the file on exit but will instead save the changes to a temporary file.
+  The changes will be restored on next startup.
+  See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
 
 .. _save-flight-plan-as:
 
@@ -165,17 +165,17 @@ LNMPLN file.
 
 .. tip::
 
-   You can save the flight plan files in any place. I recommend a directory in ``Documents`` like
-   ``Documents\Little Navmap\Flight Plans``.
+  You can save the flight plan files in any place. I recommend a directory in ``Documents`` like
+  ``Documents\Little Navmap\Flight Plans``.
 
-   You can also use the directory which is suggested by the dialog window :doc:`FOLDERS`.
+  You can also use the directory which is suggested by the dialog window :doc:`FOLDERS`.
 
 .. important::
 
-   Always save a copy of the flight plan in the default LNMPLN format to be
-   able to reload all information. Writing to and reading from other
-   formats like X-Plane FMS might result in information loss.
-   See :doc:`FLIGHTPLANFMT` for more information.
+  Always save a copy of the flight plan in the default LNMPLN format to be
+  able to reload all information. Writing to and reading from other
+  formats like X-Plane FMS might result in information loss.
+  See :doc:`FLIGHTPLANFMT` for more information.
 
 .. _reset-for-new-flight:
 
@@ -325,10 +325,10 @@ See :doc:`AIRCRAFTTRAIL` for more information.
 
 .. note::
 
-   Do not forget to clear the aircraft trail (:ref:`delete-aircraft-trail` or :ref:`reset-for-new-flight`)
-   before a flight to avoid
-   old trail segments in the exported GPX file. Or, disable the reloading
-   of the trail in the options dialog on page :ref:`options-startup-and-updates`.
+  Do not forget to clear the aircraft trail (:ref:`delete-aircraft-trail` or :ref:`reset-for-new-flight`)
+  before a flight to avoid
+  old trail segments in the exported GPX file. Or, disable the reloading
+  of the trail in the options dialog on page :ref:`options-startup-and-updates`.
 
 
 Export Flight Plan to Other Formats
@@ -396,13 +396,12 @@ of flight plans into the LNMPLN format.
 
 .. warning::
 
-      Note that saving flight plans with one or more of these methods has limitations:
+  Note that saving flight plans with one or more of these methods has limitations:
 
-      -  Several approach leg types like holds, turns and procedure turns
-         cannot be displayed properly by using just waypoints or coordinates.
-      -  Speed and altitude limitations are not included in the exported legs.
+  - Several approach leg types like holds, turns and procedure turns cannot be displayed properly by using just waypoints or coordinates.
+  - Speed and altitude limitations are not included in the exported legs.
 
-      **Normally you should not use these export options.**
+  **Normally you should not use these export options.**
 
 See :ref:`convert-to-waypoints` for information about converting procedures to a list of waypoints in the flight plan.
 
@@ -459,8 +458,8 @@ See :doc:`ROUTEEXPORTALL` for details.
 
 .. note::
 
-    Note that the multiexport dialog window is also used to define default file names for the export options
-    :ref:`export-msfs-flight-plan`,  :ref:`export-p3d-fsx-flight-plan`,  :ref:`save-flight-plan-as-fms11` and :ref:`save-flight-plan-as-fgfp`.
+  Note that the multiexport dialog window is also used to define default file names for the export options
+  :ref:`export-msfs-flight-plan`,  :ref:`export-p3d-fsx-flight-plan`,  :ref:`save-flight-plan-as-fms11` and :ref:`save-flight-plan-as-fgfp`.
 
 
 .. _add-google-earth-kml:
@@ -661,10 +660,10 @@ This function does not delete procedures from the current flight plan but will c
 
 .. tip::
 
-    You can calculate a flight plan between any kind of waypoints, even
-    user defined waypoints (right-click on the map and select
-    :ref:`add-position-to-flight-plan` to create one). This allows the creation
-    of snippets that can be merged into flight plans.
+  You can calculate a flight plan between any kind of waypoints, even
+  user defined waypoints (right-click on the map and select
+  :ref:`add-position-to-flight-plan` to create one). This allows the creation
+  of snippets that can be merged into flight plans.
 
 .. _reverse-flight-plan:
 
@@ -957,14 +956,14 @@ The detail level is shown in the :doc:`STATUSBAR`. Range is -2 for least detail 
 
 .. warning::
 
-      Map information will be truncated if too much detail is
-      chosen. A red warning message ``Too many objects`` will be shown in the :doc:`STATUSBAR` if this is
-      the case.
+  Map information will be truncated if too much detail is
+  chosen. A red warning message ``Too many objects`` will be shown in the :doc:`STATUSBAR` if this is
+  the case.
 
 .. tip::
 
-     You can also quickly change the detail level with the mouse wheel using ``Ctrl+Wheel``
-     or with the keyboard shortcuts ``Ctrl++``, ``Ctrl+-`` or ``Ctrl+0`` (default details).
+  You can also quickly change the detail level with the mouse wheel using ``Ctrl+Wheel``
+  or with the keyboard shortcuts ``Ctrl++``, ``Ctrl+-`` or ``Ctrl+0`` (default details).
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -1039,11 +1038,11 @@ Disables all filters and enables :ref:`add-on-override-zoom-and-filter`
 to show only add-on airports on the map. All other airports are hidden with this preset.
 
 .. figure:: ../images/airportaddononly.jpg
-       :scale: 60%
+  :scale: 60%
 
-       ``Show only add-on airports`` preset clicked. Add-on airports are shown on all zoom levels
-       and are not affected by filters.
-       *Click image to enlarge.*
+  ``Show only add-on airports`` preset clicked. Add-on airports are shown on all zoom levels
+  and are not affected by filters.
+  *Click image to enlarge.*
 
 
 .. _hard-surface:
@@ -1153,10 +1152,10 @@ This means that they are affected by all airport filters above and disappear on 
 like normal airports.
 
 .. figure:: ../images/airportaddonnone.jpg
-       :scale: 60%
+  :scale: 60%
 
-       Only large add-on airports are shown on the map with a yellow highlight if
-       ``Add-on no override`` is selected. Filters and zoom distance affect add-ons like normal stock airports.
+  Only large add-on airports are shown on the map with a yellow highlight if
+  ``Add-on no override`` is selected. Filters and zoom distance affect add-ons like normal stock airports.
 
 .. _add-on-override-zoom:
 
@@ -1172,13 +1171,13 @@ You can also limit the display by selecting the minimum runway length.
 Enabling this function allows to see even small add-on airstrips in large continental zoom levels.
 
 .. figure:: ../images/airportaddonzoom.jpg
-       :scale: 60%
+  :scale: 60%
 
-       ``Add-on override zoom`` selected: All large add-on airports and additionally
-       small add-on airstrips are shown on the map with a yellow highlight.
-       Airports with soft surfaces, seaplane bases and heliports are hidden which affects
-       add-ons too.
-       *Click image to enlarge.*
+  ``Add-on override zoom`` selected: All large add-on airports and additionally
+  small add-on airstrips are shown on the map with a yellow highlight.
+  Airports with soft surfaces, seaplane bases and heliports are hidden which affects
+  add-ons too.
+  *Click image to enlarge.*
 
 
 .. _add-on-override-zoom-and-filter:
@@ -1194,13 +1193,13 @@ The runway length limitation filter can still be used to limit the display add-o
 Click :ref:`show-only-add-on-airports` to select a preset which shows add-on airports only.
 
 .. figure:: ../images/airportaddonzoomfilter.jpg
-       :scale: 60%
+  :scale: 60%
 
-       ``Add-on override zoom and filter`` selected: All large add-on airports and additionally
-       small add-on airstrips are shown on the map with a yellow highlight.
-       Airports with soft surfaces, seaplane bases and heliports are shown since the filters
-       ``Soft surface``, ``Seaplane bases`` and ``Heliports`` affect only stock airports.
-       *Click image to enlarge.*
+  ``Add-on override zoom and filter`` selected: All large add-on airports and additionally
+  small add-on airstrips are shown on the map with a yellow highlight.
+  Airports with soft surfaces, seaplane bases and heliports are shown since the filters
+  ``Soft surface``, ``Seaplane bases`` and ``Heliports`` affect only stock airports.
+  *Click image to enlarge.*
 
 .. _navaids-menu:
 
@@ -1213,8 +1212,8 @@ Display and labels can be changed in options on the pages :ref:`options-map-disp
 
 .. note::
 
-   Navaids related or being part of a flight plan and its procedures are always shown together with the flight plan.
-   You can disable the display of all VOR, NDB, waypoints and ILS to get a more clean display when flying.
+  Navaids related or being part of a flight plan and its procedures are always shown together with the flight plan.
+  You can disable the display of all VOR, NDB, waypoints and ILS to get a more clean display when flying.
 
 .. _show-vor-stations:
 
@@ -1259,9 +1258,9 @@ See :ref:`show-ils` for more information.
 
 .. note::
 
-    GLS/RNP approach paths are not available when using the setting :ref:`navigraph-none` in the
-    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
-    and :ref:`scenery-library-menu`.
+  GLS/RNP approach paths are not available when using the setting :ref:`navigraph-none` in the
+  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  and :ref:`scenery-library-menu`.
 
 .. _view-show-holdings:
 
@@ -1273,9 +1272,9 @@ user placed holdings which can be added from the map display context menu using 
 
 .. note::
 
-    En-route holdings are not available when using the setting :ref:`navigraph-none` in the
-    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
-    and :ref:`scenery-library-menu`.
+  En-route holdings are not available when using the setting :ref:`navigraph-none` in the
+  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  and :ref:`scenery-library-menu`.
 
 .. _view-show-msa-sectors:
 
@@ -1288,8 +1287,8 @@ See :doc:`MSA` for more information.
 
 .. note::
 
-    MSA sectors are not available when using the setting :ref:`navigraph-none` in the
-    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+  MSA sectors are not available when using the setting :ref:`navigraph-none` in the
+  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
 
 .. _show-victor-airways:
 
@@ -1330,9 +1329,9 @@ The dropdown menu of the toolbar buttons can be torn off (:ref:`tear-off-menu`).
 Airspace display and labels can be changed in options on the pages :ref:`options-map-display` and :ref:`options-map-labels`.
 
 .. figure:: ../images/airspacestoolbar.jpg
-      :scale: 30%
+  :scale: 30%
 
-      Airspace selection toolbar with all drop down menus. *Click image to enlarge.*
+  Airspace selection toolbar with all drop down menus. *Click image to enlarge.*
 
 .. _show-airspaces:
 
@@ -1532,12 +1531,12 @@ Show or hide the missed approaches of the current flight plan or the procedure p
 
 .. note::
 
-       This function changes the active flight plan leg
-       sequencing: Sequencing the active leg will stop if the destination is
-       reached and missed approaches are not displayed. Otherwise sequencing
-       will continue with the missed approach and the simulator aircraft
-       progress will show the remaining distance to the end of the missed
-       approach instead.
+  This function changes the active flight plan leg
+  sequencing: Sequencing the active leg will stop if the destination is
+  reached and missed approaches are not displayed. Otherwise sequencing
+  will continue with the missed approach and the simulator aircraft
+  progress will show the remaining distance to the end of the missed
+  approach instead.
 
 .. _show-aircraft:
 
@@ -1583,7 +1582,7 @@ Note that some add-on aircraft do not provide an useful autopilot altitude and u
 
 .. figure:: ../images/altitude_range.jpg
 
-   A jet aircraft climbing and about to reach the top of climb before waypoint ``ASKJA``.
+  A jet aircraft climbing and about to reach the top of climb before waypoint ``ASKJA``.
 
 .. _show-aircraft-turn-path-map:
 
@@ -1595,7 +1594,7 @@ The arc is limited to 5 NM length and a turn maximum of 180°. Tick marks show d
 
 .. figure:: ../images/turn_path.jpg
 
-    An aircraft turning in a procedure about to intercept the ILS after waypoint ``CI26B``
+  An aircraft turning in a procedure about to intercept the ILS after waypoint ``CI26B``
 
 .. _show-aircraft-endurance-map:
 
@@ -1615,7 +1614,7 @@ Note that you will see red or orange endurance warnings if the wrong aircraft pe
 
 .. figure:: ../images/endurance.jpg
 
-    Aircraft endurance shown with label. 384 NM and 3 hours and 18 minutes to go.
+  Aircraft endurance shown with label. 384 NM and 3 hours and 18 minutes to go.
 
 .. _show-compass-rose:
 
@@ -1658,15 +1657,15 @@ aircraft is on ground (gray border).
 Two types of traffic are shown:
 
 AI or multiplayer aircraft from the simulator:
-    |AI or Multiplayer Aircraft| This includes aircraft traffic that is injected by
-    online network clients. A click on the AI aircraft or ship shows more
-    information in the ``Simulator Aircraft`` dock window in the tab
-    :ref:`ai-info`.
+  |AI or Multiplayer Aircraft| This includes aircraft traffic that is injected by
+  online network clients. A click on the AI aircraft or ship shows more
+  information in the ``Simulator Aircraft`` dock window in the tab
+  :ref:`ai-info`.
 
 Multiplayer aircraft/client from an online network:
-    |Online Multiplayer Aircraft|  A click on the
-    online aircraft shows information in the ``Information`` dock window in
-    the separate tab ``Online Clients``. See also :doc:`ONLINENETWORKS`.
+  |Online Multiplayer Aircraft|  A click on the
+  online aircraft shows information in the ``Information`` dock window in
+  the separate tab ``Online Clients``. See also :doc:`ONLINENETWORKS`.
 
 The displayed vehicles are limited by the used multiplayer system if
 *Little Navmap* is not connected to an online network like VATSIM or
@@ -1687,7 +1686,7 @@ All aircraft icons can be customized: :ref:`customize-aircraft-icons`.
 
 .. note::
 
-    Currently MSFS multiplayer traffic cannot be shown since MSFS is lacking the required programming interfaces.
+  Currently MSFS multiplayer traffic cannot be shown since MSFS is lacking the required programming interfaces.
 
 .. _show-online-aircraft:
 
@@ -1757,14 +1756,14 @@ altitude.
 
 .. note::
 
-    The MORA grid is not available when using the setting :ref:`navigraph-none` in the
-    menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS.
+  The MORA grid is not available when using the setting :ref:`navigraph-none` in the
+  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS.
 
-    See also :doc:`SCENERY` and :doc:`NAVDATA`.
+  See also :doc:`SCENERY` and :doc:`NAVDATA`.
 
 .. figure:: ../images/legend_map_mora.png
 
-       MORA grid: 3,300, 4,400, 6,000, 9,900 and 10,500 ft.
+  MORA grid: 3,300, 4,400, 6,000, 9,900 and 10,500 ft.
 
 .. _show-airport-weather:
 
@@ -2065,7 +2064,7 @@ able to import this file. If needed, adapt the file in *Microsoft Excel* or *Lib
 
 .. figure:: ../images/userpoint_export.jpg
 
-       Userpoint export dialog with tooltip help on first option.
+  Userpoint export dialog with tooltip help on first option.
 
 .. _userdata-menu-export-user-fix:
 
@@ -2297,7 +2296,7 @@ See :ref:`aircraft-type-edit` for more information on changing the type in the a
 
 .. note::
 
-     Note that MSFS delivers wrong values for the ICAO designator through the SimConnect interface. Keep this warning disabled if you use MSFS.
+  Note that MSFS delivers wrong values for the ICAO designator through the SimConnect interface. Keep this warning disabled if you use MSFS.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -2324,13 +2323,13 @@ The menu shows the simulator name as a disabled menu item as an indicator if onl
 
 .. note::
 
-        The selection in the scenery library menus also affects the selection of weather files for ActiveSky and X-Plane.
+  The selection in the scenery library menus also affects the selection of weather files for ActiveSky and X-Plane.
 
 .. note::
 
-      While *Little Navmap* tries to keep all information and search results when switching simulators,
-      some information in the information window :doc:`INFO` and the :doc:`SEARCHPROCS` windows may be lost when
-      switching.
+  While *Little Navmap* tries to keep all information and search results when switching simulators,
+  some information in the information window :doc:`INFO` and the :doc:`SEARCHPROCS` windows may be lost when
+  switching.
 
 
 The loaded AIRAC cycle is only shown for X-Plane and Navigraph data
@@ -2338,14 +2337,14 @@ since the information is not available for FSX, P3D and MSFS.
 
 **The menu items are suffixed with the following depending on status:**
 
--   ``prev. version - reload advised``: The found database was created with a previous version of
-    *Little Navmap* and should be reloaded to benefit from bug fixes or improvements.
--   ``99 days old - reload advised``: The scenery library database was loaded 99 days ago. Scenery changes in the simulator are very likely
-    (installed add-on airports, simulator updates and more) and might not be reflected in the database.
--   ``no simulator``: A scenery library database was found but no related simulator
-    installation. This database cannot be loaded but can be updated by manual copying from another computer, for example. This will be shown
-    for a :doc:`NETWORK` where the simulator is not available on the remote computer.
-    See :ref:`files-databases` for file locations if you wish to remove a database.
+- ``prev. version - reload advised``: The found database was created with a previous version of
+  *Little Navmap* and should be reloaded to benefit from bug fixes or improvements.
+- ``99 days old - reload advised``: The scenery library database was loaded 99 days ago. Scenery changes in the simulator are very likely
+  (installed add-on airports, simulator updates and more) and might not be reflected in the database.
+- ``no simulator``: A scenery library database was found but no related simulator
+  installation. This database cannot be loaded but can be updated by manual copying from another computer, for example. This will be shown
+  for a :doc:`NETWORK` where the simulator is not available on the remote computer.
+  See :ref:`files-databases` for file locations if you wish to remove a database.
 
 This menu is synchronized with simulator selection in :doc:`SCENERY`. Once a
 database is successfully loaded, the display, flight plan and search
@@ -2356,22 +2355,22 @@ will switch over to the newly loaded simulator data.
 
 .. important::
 
-      *Little Navmap* does not keep you from using a X-Plane scenery
-      database while being connected to FSX/Prepar3D/MSFS or vice versa, for example. You will
-      get unwanted effects like wrong weather information if using such a
-      setup.
+  *Little Navmap* does not keep you from using a X-Plane scenery
+  database while being connected to FSX/Prepar3D/MSFS or vice versa, for example. You will
+  get unwanted effects like wrong weather information if using such a
+  setup.
 
-      An :warning-style:`orange warning message` is shown in the connect dialog (:doc:`CONNECT`) if a mismatch is detected.
+  An :warning-style:`orange warning message` is shown in the connect dialog (:doc:`CONNECT`) if a mismatch is detected.
 
-      Some functions like access to weather source files depend on the selected scenery library database.
-      X-Plane 11 weather files are read if enabled and the X-Plane 11 scenery library is selected, for example.
+  Some functions like access to weather source files depend on the selected scenery library database.
+  X-Plane 11 weather files are read if enabled and the X-Plane 11 scenery library is selected, for example.
 
 .. note::
 
-      The program might change a loaded flight plan if you switch between
-      different databases. This can happen if a departure position is set in
-      the plan which does not exist in the other database. Select
-      :ref:`new-flight-plan` in the menu ``File`` before switching to avoid this.
+  The program might change a loaded flight plan if you switch between
+  different databases. This can happen if a departure position is set in
+  the plan which does not exist in the other database. Select
+  :ref:`new-flight-plan` in the menu ``File`` before switching to avoid this.
 
 Navigraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2388,10 +2387,10 @@ if ``Select automatically`` is not enabled.
 
 .. note::
 
-       Note that the Navigraph selection in this menu is remembered separately for each simulator selection. This means that
-       the Navigraph selection is automatically changed when switching between simulators if ``Select automatically`` is not enabled.
+  Note that the Navigraph selection in this menu is remembered separately for each simulator selection. This means that
+  the Navigraph selection is automatically changed when switching between simulators if ``Select automatically`` is not enabled.
 
-       Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
+  Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
 
 See the chapter :doc:`NAVDATA` for more information about scenery databases and the three different display modes below.
 
@@ -2431,13 +2430,13 @@ This mode is automatically selected if the simulator navigation database is empt
 
 .. note::
 
-      Airport information is limited in this mode.
-      This means that aprons, taxiways, parking positions, runway surface
-      information and other information is not available.
-      Also, smaller airports will be missing.
-      Runway layout might not match the runway layout in the simulator if you use stock or older airport scenery.
+  Airport information is limited in this mode.
+  This means that aprons, taxiways, parking positions, runway surface
+  information and other information is not available.
+  Also, smaller airports will be missing.
+  Runway layout might not match the runway layout in the simulator if you use stock or older airport scenery.
 
-      The *Little Navmap* window shows a ``(N)`` in the title bar and white runway surfaces if this is selected.
+  The *Little Navmap* window shows a ``(N)`` in the title bar and white runway surfaces if this is selected.
 
 .. _navigraph-navaid-proc:
 
@@ -2458,8 +2457,8 @@ simulator scenery.
 
 .. note::
 
-     Navdata read from FSX, P3D or MSFS has limitations. The airway network might not be correct
-     and procedures can have errors.
+  Navdata read from FSX, P3D or MSFS has limitations. The airway network might not be correct
+  and procedures can have errors.
 
 .. _airspace-source:
 
@@ -2663,11 +2662,11 @@ See also :ref:`files-log` for details.
 
 .. note::
 
-   **This file combined with** :ref:`files-and-directories-ini` **below is the best way to report an issue.**
+  **This file combined with** :ref:`files-and-directories-ini` **below is the best way to report an issue.**
 
-   Immediately save this log to another file if you'd like to report problems with *Little Navmap*.
-   The log file might be overwritten if you continue your flight.
-   See :ref:`report-bug` for more information about reporting bugs.
+  Immediately save this log to another file if you'd like to report problems with *Little Navmap*.
+  The log file might be overwritten if you continue your flight.
+  See :ref:`report-bug` for more information about reporting bugs.
 
 .. _files-and-directories-ini:
 
@@ -2680,8 +2679,8 @@ See also :ref:`configuration` for details about the used files.
 
 .. warning::
 
-   There is usually no need to edit this file directly.
-   Editing this file the wrong way might crash *Little Navmap*.
+  There is usually no need to edit this file directly.
+  Editing this file the wrong way might crash *Little Navmap*.
 
 
 .. _files-and-directories-cache:
@@ -2753,8 +2752,8 @@ Opens the dialog window :doc:`OPTIONS` which allows to change the user interface
 
 .. note::
 
-     The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual for Windows and Linux
-     can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
+  The menu entry which is referenced as ``Tools`` -> ``Options`` in this manual for Windows and Linux
+  can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -3042,7 +3041,7 @@ Opens this chapter :doc:`MENUS` which describes all the menu items of *Little Na
 
 .. tip::
 
-   Look at the left side of this online user manual to see all the menus and menu items in a tree structure.
+  Look at the left side of this online user manual to see all the menus and menu items in a tree structure.
 
 
 .. _flight-planning:
@@ -3095,7 +3094,7 @@ Shows the page `Little Navmap - Frequently asked Questions <https://albar965.git
 
 .. tip::
 
-   Look at the frequently asked questions first if you have a question or problem.
+  Look at the frequently asked questions first if you have a question or problem.
 
 .. _help-downloads:
 
@@ -3163,7 +3162,7 @@ Donations are purely optional but greatly appreciated.
 |Donate|
 
 .. |Donate| image:: ../images/donate.jpg
-   :target: https://albar965.github.io/donate.html
+  :target: https://albar965.github.io/donate.html
 
 .. _check-updates:
 

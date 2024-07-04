@@ -27,9 +27,9 @@ Other related functions in the elevation profile context menu: :ref:`center-airc
 :ref:`zoom-aircraft-profile`.
 
 .. figure:: ../images/aircraft_scroll_centered.jpg
-     :scale: 80%
+  :scale: 80%
 
-     Aircraft centered inside the active brighter box. The aircraft is centered again once it leaves the box. This is the default behavior.
-     *Click image to enlarge.*
+  Aircraft centered inside the active brighter box. The aircraft is centered again once it leaves the box. This is the default behavior.
+  *Click image to enlarge.*
 
 .. |Center Aircraft| image:: ../images/icon_centeraircraft.png

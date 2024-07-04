@@ -44,22 +44,22 @@ on page :ref:`user-interface`.
 
 .. tip::
 
-    Hold ``Ctrl`` while clicking on the window title bar to prevent a window
-    from going back into the docked state in the main window and keep it
-    floating.
+  Hold ``Ctrl`` while clicking on the window title bar to prevent a window
+  from going back into the docked state in the main window and keep it
+  floating.
 
-    You can also deselect ``Window`` -> :ref:`allow-window-docking` in the main menu to prevent the dock
-    windows from snapping back into the main window.
+  You can also deselect ``Window`` -> :ref:`allow-window-docking` in the main menu to prevent the dock
+  windows from snapping back into the main window.
 
 .. note::
 
-   Use the ``Window`` menu in the in the main menu to save, load or restore
-   closed windows, toolbars and tabs.
+  Use the ``Window`` menu in the in the main menu to save, load or restore
+  closed windows, toolbars and tabs.
 
-   The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and positions of all dock
-   windows and toolbars back to their default.
+  The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and positions of all dock
+  windows and toolbars back to their default.
 
-   Use :ref:`reset-tabs-menu` to reset the tab visibility and order back to default.
+  Use :ref:`reset-tabs-menu` to reset the tab visibility and order back to default.
 
 Dock Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,38 +67,38 @@ Dock Windows
 Click images to enlarge.
 
 .. figure:: ../images/dock_titlebar.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Title bar of a dock window marked red.
-      *Click image to enlarge.*
+  Title bar of a dock window marked red.
+  *Click image to enlarge.*
 
 .. figure:: ../images/dock_docking.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Moving a dock window around. The blue background
-      opens to indicate a space in the main window where the dock can be
-      dropped in. *Click image to enlarge.*
+  Moving a dock window around. The blue background
+  opens to indicate a space in the main window where the dock can be
+  dropped in. *Click image to enlarge.*
 
 .. figure:: ../images/dock_floating.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Dock window in floating state detached from main window. *Click image to enlarge.*
+  Dock window in floating state detached from main window. *Click image to enlarge.*
 
 Dock Window Stacks
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. figure:: ../images/dock_drop_stack.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Dropping a dock window on another to create a stack. *Click image to enlarge.*
+  Dropping a dock window on another to create a stack. *Click image to enlarge.*
 
 .. figure:: ../images/dock_stack.jpg
-      :scale: 50%
+  :scale: 50%
 
-      A stack of two dock windows. The tab bar is marked
-      red at the bottom of the stacked dock windows. *Click image to enlarge.*
+  A stack of two dock windows. The tab bar is marked
+  red at the bottom of the stacked dock windows. *Click image to enlarge.*
 
 .. note::
 
-   You must click on the title bar of a dock window to remove it from the stack, not on the tab bar.
+  You must click on the title bar of a dock window to remove it from the stack, not on the tab bar.

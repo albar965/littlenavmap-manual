@@ -13,11 +13,11 @@ alternate airport if you wish to use the elevation profile.
 
 .. note::
 
-     The elevation display covers only the flight plan and will not
-     change the depiction if you get off the flight plan with your simulator
-     aircraft. You need a valid flight plan (i.e. a departure and
-     destination airport) and a valid aircraft performance file
-     to see the elevation profile.
+  The elevation display covers only the flight plan and will not
+  change the depiction if you get off the flight plan with your simulator
+  aircraft. You need a valid flight plan (i.e. a departure and
+  destination airport) and a valid aircraft performance file
+  to see the elevation profile.
 
 .. _top-label:
 
@@ -47,21 +47,21 @@ highlighted on the map with a black/cyan circle. The label changes the side depe
 
 The label shows the following information for the mouse position:
 
--  Distance from departure and to destination plus calculated altitude and next waypoint.
--  ``Course`` for the flight plan leg at the cursor position.
--  ``Heading`` for this flight plan leg at the position. This is calculated based on wind conditions and omitted if it is the same as course.
--  The ``Flight path angle`` is only shown in the descent phase and shows the vertical angle.
-   The label changes to ``Required flight path angle`` if a descent path is reqired by a procedure.
--  ``Ground`` altitude and calculated altitude above ground.
--  ``Leg safe altitude`` of the flight plan leg at the cursor position (orange line).
--  ``Wind`` direction and speed as well as head- (``▼``) or tailwind (``▲``) component.
+- Distance from departure and to destination plus calculated altitude and next waypoint.
+- ``Course`` for the flight plan leg at the cursor position.
+- ``Heading`` for this flight plan leg at the position. This is calculated based on wind conditions and omitted if it is the same as course.
+- The ``Flight path angle`` is only shown in the descent phase and shows the vertical angle.
+  The label changes to ``Required flight path angle`` if a descent path is reqired by a procedure.
+- ``Ground`` altitude and calculated altitude above ground.
+- ``Leg safe altitude`` of the flight plan leg at the cursor position (orange line).
+- ``Wind`` direction and speed as well as head- (``▼``) or tailwind (``▲``) component.
 
 .. figure:: ../images/profile_label.jpg
 
-    Information for position between waypoints ``GIGIR`` and ``OBITI``.
-    Indicating a headwind of 28 knots at this position.
-    User aircraft still climbing.
-    Note the image showing German number format with dot as thousands separator.
+  Information for position between waypoints ``GIGIR`` and ``OBITI``.
+  Indicating a headwind of 28 knots at this position.
+  User aircraft still climbing.
+  Note the image showing German number format with dot as thousands separator.
 
 .. _profile-options:
 
@@ -71,34 +71,34 @@ Zoom Sliders
 The right side of the elevation profile contains the zoom sliders. The
 following controls are available:
 
--  |Splitter| ``Splitter``: You can resize the right part of the
-   elevation profile window using this splitter button. The part
-   containing the sliders will be collapsed if you drag it to the far
-   right. You can open the collapsed part again by dragging the splitter
-   to the left. The look of the splitter might be different on another operating system.
--  |Expand to Window| ``Expand to Window``: Resets the view back to 100
-   percent showing the whole flight plan.
--  |Settings| ``Display Options``: See :ref:`display-options-profile`.
--  |Help| ``Help``: Opens this online help page.
--  |Zoom Vertically| ``Zoom Vertically``: Move the slider up to zoom in
-   vertically. Maximum zoom results in 500 ft height for the whole
-   profile window.
--  |Zoom Horizontally| ``Zoom Horizontally``: Move the slider up to zoom
-   in horizontally. Maximum zoom results in about 4 NM distance for the
-   whole profile window.
+- |Splitter| ``Splitter``: You can resize the right part of the
+  elevation profile window using this splitter button. The part
+  containing the sliders will be collapsed if you drag it to the far
+  right. You can open the collapsed part again by dragging the splitter
+  to the left. The look of the splitter might be different on another operating system.
+- |Expand to Window| ``Expand to Window``: Resets the view back to 100
+  percent showing the whole flight plan.
+- |Settings| ``Display Options``: See :ref:`display-options-profile`.
+- |Help| ``Help``: Opens this online help page.
+- |Zoom Vertically| ``Zoom Vertically``: Move the slider up to zoom in
+  vertically. Maximum zoom results in 500 ft height for the whole
+  profile window.
+- |Zoom Horizontally| ``Zoom Horizontally``: Move the slider up to zoom
+  in horizontally. Maximum zoom results in about 4 NM distance for the
+  whole profile window.
 
 .. _mouse:
 
 Mouse Movement
 ~~~~~~~~~~~~~~
 
--  Hover: The corresponding position within the flight plan is
-   highlighted on the map with a black/cyan circle.
--  ``Wheel``: Zoom in and out horizontally.
--  ``Shift+Wheel``: Zoom in and out vertically.
--  ``Left Click and drag``: Move map up, down, left or right.
--  ``Left Double Click``: Zoom to position on main map.
--  ``Right Click``: Show context menu.
+- Hover: The corresponding position within the flight plan is
+  highlighted on the map with a black/cyan circle.
+- ``Wheel``: Zoom in and out horizontally.
+- ``Shift+Wheel``: Zoom in and out vertically.
+- ``Left Click and drag``: Move map up, down, left or right.
+- ``Left Double Click``: Zoom to position on main map.
+- ``Right Click``: Show context menu.
 
 .. _keyboard:
 
@@ -108,13 +108,12 @@ Keyboard Movement
 Click on the elevation profile window to activate it before using the
 keyboard.
 
--  Cursor keys: Move map up, down, left or right.
--  ``+`` and ``-``: Also on numpad. Zoom in and out horizontally.
--  ``*`` and ``/``: Also on numpad. Zoom in and out vertically.
--  ``0`` or ``Ins`` : Reset view to 100 percent and show the whole
-   flight plan.
--  ``Home`` and ``End``: Jump to departure or destination.
--  ``PageUp`` and ``PageDown``: Move forward or backward one page.
+- Cursor keys: Move map up, down, left or right.
+- ``+`` and ``-``: Also on numpad. Zoom in and out horizontally.
+- ``*`` and ``/``: Also on numpad. Zoom in and out vertically.
+- ``0`` or ``Ins`` : Reset view to 100 percent and show the whole flight plan.
+- ``Home`` and ``End``: Jump to departure or destination.
+- ``PageUp`` and ``PageDown``: Move forward or backward one page.
 
 
 .. _display-options-profile:
@@ -213,9 +212,9 @@ relation to the real VASI accuracy.
 
 .. figure:: ../images/profile_vasi.jpg
 
-      Display of VASI slope at destination airport. Slope
-      is 3 degrees and VASI type is PAPI4. Final approach fix is marked with a
-      Maltese cross.
+  Display of VASI slope at destination airport. Slope
+  is 3 degrees and VASI type is PAPI4. Final approach fix is marked with a
+  Maltese cross.
 
 .. _show-ils:
 
@@ -238,17 +237,17 @@ indicator if available
 
 .. note::
 
-      The ILS glideslope and GLS/RNP glidepaths can be forced to display for all approach types:
+  The ILS glideslope and GLS/RNP glidepaths can be forced to display for all approach types:
 
-      -  Disable ILS or GLS/RNP on the toolbar or in the menu ``View`` -> :ref:`navaids-menu` to see only flight
-         plan related navaids on the map and approach related navaids in the elevation profile. This means
-         you won't see an ILS glideslope for a VOR approach in the elevation profile, for example.
-      -  Enable ILS or GLS/RNP to see slopes in the elevation profile independent of the approach type. A
-         destination runway (:ref:`select-destination-runway`) or an approach (:doc:`SEARCHPROCS`) has to be selected to see the slope.
+  - Disable ILS or GLS/RNP on the toolbar or in the menu ``View`` -> :ref:`navaids-menu` to see only flight
+    plan related navaids on the map and approach related navaids in the elevation profile. This means
+    you won't see an ILS glideslope for a VOR approach in the elevation profile, for example.
+  - Enable ILS or GLS/RNP to see slopes in the elevation profile independent of the approach type. A
+    destination runway (:ref:`select-destination-runway`) or an approach (:doc:`SEARCHPROCS`) has to be selected to see the slope.
 
 .. figure:: ../images/profile_ils.jpg
 
-        Display of ILS at destination airport. Final approach fix is marked with a Maltese cross.
+  Display of ILS at destination airport. Final approach fix is marked with a Maltese cross.
 
 .. _show-toc-and-tod-profile:
 
@@ -274,7 +273,7 @@ Related function for the map is :ref:`show-aircraft-altitude-range-map` in the m
 
 .. figure:: ../images/legend_profile_path.png
 
-    Vertical track line in elevation profile window indicating climb rate.
+  Vertical track line in elevation profile window indicating climb rate.
 
 Follow on Map
 ^^^^^^^^^^^^^
@@ -333,19 +332,19 @@ barometric pressure in the simulator altimeter.
 
 .. figure:: ../images/profile.jpg
 
-      Flight plan elevation profile with line indicating
-      the mouse hovering position. Orange lines show minimum safe altitude for
-      flight plan segments. Red line shows overall minimum safe altitude. Top
-      of climb and top of descent points shown including slope. Orange flight
-      plan lines show procedure legs. Waypoint ``EV501`` has an overfly
-      condition and there are several altitude restrictions shown for the
-      approach procedure below the tooltip.
+  Flight plan elevation profile with line indicating
+  the mouse hovering position. Orange lines show minimum safe altitude for
+  flight plan segments. Red line shows overall minimum safe altitude. Top
+  of climb and top of descent points shown including slope. Orange flight
+  plan lines show procedure legs. Waypoint ``EV501`` has an overfly
+  condition and there are several altitude restrictions shown for the
+  approach procedure below the tooltip.
 
 .. figure:: ../images/profileclimb.jpg
 
-     A depiction of the climb phase which shows the typical climb or a large aircraft where vertical speed is lower when
-     getting close to cruise altitude when flying constant speed/Mach.
-     In contrast to this the flight plan line shows the average climb across the whole profile.
+  A depiction of the climb phase which shows the typical climb or a large aircraft where vertical speed is lower when
+  getting close to cruise altitude when flying constant speed/Mach.
+  In contrast to this the flight plan line shows the average climb across the whole profile.
 
 
 .. _profile-trail:
@@ -401,7 +400,7 @@ if this is the case. Click the message for more information.
 
 .. figure:: ../images/profile_descent.jpg
 
-      An approach procedure which requires the aircraft to descent early due to a restriction between 7,000 and 10,000 ft at ``ARTIP``.
+  An approach procedure which requires the aircraft to descent early due to a restriction between 7,000 and 10,000 ft at ``ARTIP``.
 
 Elevation Data
 ~~~~~~~~~~~~~~

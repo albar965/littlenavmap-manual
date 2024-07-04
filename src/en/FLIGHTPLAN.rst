@@ -52,7 +52,7 @@ size can be adjusted in options on page :ref:`options-display-and-text`.
 
 .. figure:: ../images/flightplanheader.jpg
 
-      Header of a flight plan with all labels except wind information enabled.
+  Header of a flight plan with all labels except wind information enabled.
 
 .. _flight-plan-table:
 
@@ -95,7 +95,7 @@ Same as main menu ``Tools`` -> :ref:`flight-plan-table-display-options`.
 
 .. figure:: ../images/flightplan_columns.jpg
 
-     The flight plan display options dialog window.
+  The flight plan display options dialog window.
 
 .. _flight-plan-table-columns:
 
@@ -106,100 +106,98 @@ Hovering the mouse over the table header shows more information about the column
 Note that the shown units will differ if changed in options on page :ref:`options-units`.
 You can show or hide the columns from main menu ``Tools`` -> :ref:`flight-plan-table-display-options`.
 
--  ``Ident``: ICAO ident of the navaid or airport. The ident can be
-   suffixed as shown below:
+- ``Ident``: ICAO ident of the navaid or airport. The ident can be suffixed as shown below:
 
-   -  ``+`` or ``-`` and a distance value: Shows fixes in procedures
-      that are relative to a navaid or waypoint plus the distance in NM to the waypoint.
-   -  ``(IAF)``: Initial fix of a procedure or transition.
-   -  ``(FAF)``: Final approach fix. Depending on procedure either the
-      FAF or FACF are shown with a Maltese cross on the map and in the
-      elevation profile.
-   -  ``(FACF)``: Final approach course fix.
-   -  ``(MAP)``: Missed approach point.
+  - ``+`` or ``-`` and a distance value: Shows fixes in procedures that are relative to a navaid
+    or waypoint plus the distance in NM to the waypoint.
+  - ``(IAF)``: Initial fix of a procedure or transition.
+  - ``(FAF)``: Final approach fix. Depending on procedure either the FAF or FACF are shown with a Maltese cross on the map and in the
+    elevation profile.
+  - ``(FACF)``: Final approach course fix.
+  - ``(MAP)``: Missed approach point.
 
--  ``Region``: Two letter region code of a navaid.
--  ``Name``: Name of airport or radio navaid if available.
--  ``Procedure``: Either ``SID``, ``SID Transition``, ``STAR``,
-   ``STAR Transition``, ``Transition``, ``Approach`` or ``Missed`` plus
-   the name of the procedure. Contains the text ``Alternate`` for
-   alternate airports at the end of the list or ``Departure`` or ``Destination``.
--  ``Airway or Procedure``: Contains the airway name for en-route legs
-   or procedure instructions. This field also shows track names if NAT, PACOTS or AUSOTS tracks are used.
-   Airways are suffixed with the airway type like ``N601 / L``:
+- ``Region``: Two letter region code of a navaid.
+- ``Name``: Name of airport or radio navaid if available.
+- ``Procedure``: Either ``SID``, ``SID Transition``, ``STAR``,
+  ``STAR Transition``, ``Transition``, ``Approach`` or ``Missed`` plus
+  the name of the procedure. Contains the text ``Alternate`` for
+  alternate airports at the end of the list or ``Departure`` or ``Destination``.
+- ``Airway or Procedure``: Contains the airway name for en-route legs
+  or procedure instructions. This field also shows track names if NAT, PACOTS or AUSOTS tracks are used.
+  Airways are suffixed with the airway type like ``N601 / L``:
 
-   -  ``L`` Low altitude airway or Victor
-   -  ``H`` High altitude airway or Jet
-   -  ``B`` Both high and low
+  - ``L`` Low altitude airway or Victor
+  - ``H`` High altitude airway or Jet
+  - ``B`` Both high and low
 
--  ``Restriction ft/kts/angle``:
+- ``Restriction ft/kts/angle``:
 
-   -  For airways:
+  - For airways:
 
-      -  Example ``10,000``: Minimum altitude for airway segment.
-      -  Example ``0-20,000``: Maximum airway altitude. Minimum does not apply.
-      -  Example ``10,000-20,000``: Minimum and maximum airway altitude.
+     - Example ``10,000``: Minimum altitude for airway segment.
+     - Example ``0-20,000``: Maximum airway altitude. Minimum does not apply.
+     - Example ``10,000-20,000``: Minimum and maximum airway altitude.
 
-   -  For procedures: Altitude restriction or speed limit. A ``/``
-      separates altitude and speed restriction. The following altitude
-      restrictions exist for procedures:
+  - For procedures: Altitude restriction or speed limit. A ``/``
+    separates altitude and speed restriction. The following altitude
+    restrictions exist for procedures:
 
-      -  **Number only:** Fly at altitude or speed. Example: ``5,400`` or ``210``.
-      -  **Prefix** ``A``: Fly at or above altitude or speed. Example: ``A 1,800``.
-      -  **Prefix** ``B``: Fly at or below altitude or speed. Example: ``B 10,000`` or ``B 220``.
-      -  **Range:** Fly at or above altitude one and at or below altitude two. Example: ``A 8,000, B 10,000``.
-      -  **Altitude and speed limit:** Values separated by ``/``. Example: ``A 8,000, B 10,000/B220``.
-      -  **Speed limit only:** Speed restriction. Example: ``B 250``.
-      -  **Required vertical path angle:** Example: ``-3.1°``.
+     - **Number only:** Fly at altitude or speed. Example: ``5,400`` or ``210``.
+     - **Prefix** ``A``: Fly at or above altitude or speed. Example: ``A 1,800``.
+     - **Prefix** ``B``: Fly at or below altitude or speed. Example: ``B 10,000`` or ``B 220``.
+     - **Range:** Fly at or above altitude one and at or below altitude two. Example: ``A 8,000, B 10,000``.
+     - **Altitude and speed limit:** Values separated by ``/``. Example: ``A 8,000, B 10,000/B220``.
+     - **Speed limit only:** Speed restriction. Example: ``B 250``.
+     - **Required vertical path angle:** Example: ``-3.1°``.
 
--  ``Type``: Type of a radio navaid. Shows ``ILS`` or ``LOC`` for ILS or
-   localizer approaches on the last runway leg.
--  ``Freq. MHz/kHz/Cha.``: Frequency or channel of a radio navaid. Also shows ILS or
-   localizer frequency for corresponding approaches on the last runway
-   leg.
--  ``Range NM``: Range of a radio navaid if available.
--  ``Course °M``: This is the start course of the great circle
-   route connecting the two waypoints of the leg. Use this course at
-   departure if you travel long distances without navaids. Be aware that
-   you have to change you course constantly when traveling along a great
-   circle line. See also :doc:`MAGVAR` for more information.
--  ``Course °T``: The same as the field
-   above but using true course. Use this in areas with high magnetic
-   declination.
--  ``Distance NM``: Distance of the flight plan leg.
--  ``Remaining NM``: Remaining distance to destination airport or procedure
-   end point (usually the runway).
--  ``Leg Time hh:mm``: Flying time for this leg. Calculated based on the
-   selected aircraft performance profile (see :doc:`AIRCRAFTPERF`). This is a static value and not
-   updated while flying. Empty if performance calculation failed.
--  ``ETA hh:mm``: Estimated time of arrival. This is a static value and not
-   updated while flying. Calculated based on the selected aircraft
-   performance profile. Empty if performance calculation failed.
--  ``Fuel Rem. lbs`` and ``Fuel Rem. gal``: Fuel remaining at waypoint, once for volume and once
-   for weight. This is a static value and not updated while flying.
-   Calculated based on the selected aircraft performance profile. Empty
-   if aircraft performance profile has no fuel consumption numbers set.
--  ``Wind °M/kts``: Magnetic wind direction and speed at the waypoint.
--  ``Head- or Tailwind kts``: Wind at waypoint. Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
--  ``Altitude ft``: Calculated altitude at waypoint. Uses aircraft performance to determine altitude.
--  ``Leg Safe Alt. ft``: Leg safe altitude. Same as in :doc:`PROFILE`.
--  ``Latitude`` and ``Longitude``: Coordinates in selected format from options on page :ref:`options-units`.
--  ``Mag. Decl.°``: Calibrated magnetic declination at a VOR or real magnetic declination at a waypoint. See :doc:`MAGVAR` for more information.
--  ``Related Ident/Freq./Dist./Bearing``: Related navaid needed for procedures. Shows ident, frequency, distance and bearing as radial.
--  ``Remarks``: Turn instructions, flyover or related navaid for procedure legs.
-   Also shows user remarks that can be edited with :ref:`edit-name-of-user-waypoint`.
-   See :doc:`MAPFPEDIT` for more information.
+- ``Type``: Type of a radio navaid. Shows ``ILS`` or ``LOC`` for ILS or
+  localizer approaches on the last runway leg.
+- ``Freq. MHz/kHz/Cha.``: Frequency or channel of a radio navaid. Also shows ILS or
+  localizer frequency for corresponding approaches on the last runway
+  leg.
+- ``Range NM``: Range of a radio navaid if available.
+- ``Course °M``: This is the start course of the great circle
+  route connecting the two waypoints of the leg. Use this course at
+  departure if you travel long distances without navaids. Be aware that
+  you have to change you course constantly when traveling along a great
+  circle line. See also :doc:`MAGVAR` for more information.
+- ``Course °T``: The same as the field
+  above but using true course. Use this in areas with high magnetic
+  declination.
+- ``Distance NM``: Distance of the flight plan leg.
+- ``Remaining NM``: Remaining distance to destination airport or procedure
+  end point (usually the runway).
+- ``Leg Time hh:mm``: Flying time for this leg. Calculated based on the
+  selected aircraft performance profile (see :doc:`AIRCRAFTPERF`). This is a static value and not
+  updated while flying. Empty if performance calculation failed.
+- ``ETA hh:mm``: Estimated time of arrival. This is a static value and not
+  updated while flying. Calculated based on the selected aircraft
+  performance profile. Empty if performance calculation failed.
+- ``Fuel Rem. lbs`` and ``Fuel Rem. gal``: Fuel remaining at waypoint, once for volume and once
+  for weight. This is a static value and not updated while flying.
+  Calculated based on the selected aircraft performance profile. Empty
+  if aircraft performance profile has no fuel consumption numbers set.
+- ``Wind °M/kts``: Magnetic wind direction and speed at the waypoint.
+- ``Head- or Tailwind kts``: Wind at waypoint. Headwind is indicated by arrow down ``▼`` and tailwind by an up arrow ``▲``.
+- ``Altitude ft``: Calculated altitude at waypoint. Uses aircraft performance to determine altitude.
+- ``Leg Safe Alt. ft``: Leg safe altitude. Same as in :doc:`PROFILE`.
+- ``Latitude`` and ``Longitude``: Coordinates in selected format from options on page :ref:`options-units`.
+- ``Mag. Decl.°``: Calibrated magnetic declination at a VOR or real magnetic declination at a waypoint. See :doc:`MAGVAR` for more information.
+- ``Related Ident/Freq./Dist./Bearing``: Related navaid needed for procedures. Shows ident, frequency, distance and bearing as radial.
+- ``Remarks``: Turn instructions, flyover or related navaid for procedure legs.
+  Also shows user remarks that can be edited with :ref:`edit-name-of-user-waypoint`.
+  See :doc:`MAPFPEDIT` for more information.
 
 .. figure:: ../images/flightplan.jpg
-        :scale: 50%
+  :scale: 50%
 
-        The ``Flight Planning`` dock window. The flight
-        plan uses a SID for departure and a STAR, a transition and an approach for arrival. *Click image to enlarge.*
+  The ``Flight Planning`` dock window. The flight
+  plan uses a SID for departure and a STAR, a transition and an approach for arrival. *Click image to enlarge.*
 
 .. note::
 
-    The flight plan table is static and does not update except when changing wind or aircraft performance.
-    Look at the tab :ref:`progress-info` to see current information.
+  The flight plan table is static and does not update except when changing wind or aircraft performance.
+  Look at the tab :ref:`progress-info` to see current information.
 
 
 .. _flight-plan-table-sel-footer:
@@ -217,7 +215,7 @@ This footer line shows information about the selected flight plan legs.
 
 .. figure:: ../images/route_footer_selected.jpg
 
-           Selected legs and information about the selected.
+  Selected legs and information about the selected.
 
 .. _flight-plan-table-err-footer:
 
@@ -241,17 +239,17 @@ See also :ref:`ui-messages`.
 
 .. warning::
 
-       Note that flight plans with errors are still usable in *Little Navmap* although
-       saving and exporting to other formats is limited and can lead to
-       unexpected results.
+  Note that flight plans with errors are still usable in *Little Navmap* although
+  saving and exporting to other formats is limited and can lead to
+  unexpected results.
 
 .. figure:: ../images/flightplan_errors.jpg
 
-       The ``Flight Planning`` with three different tooltips showing errors.
+  The ``Flight Planning`` with three different tooltips showing errors.
 
 .. figure:: ../images/flightplan_errors2.jpg
 
-       Tooltip on error message showing violations of altitude restrictions.
+  Tooltip on error message showing violations of altitude restrictions.
 
 Mouse Clicks
 ~~~~~~~~~~~~
@@ -281,7 +279,7 @@ Setting a too low cruise altitude might also violate procedure restrictions. See
 
 .. note::
 
-       Note that *Little Navmap* does not support step climb or different altitudes for each waypoint.
+  Note that *Little Navmap* does not support step climb or different altitudes for each waypoint.
 
 .. _flight-plan-type:
 
@@ -294,7 +292,7 @@ This is saved with the flight plan and is only relevant for FSX, Prepar3D or MSF
 
 .. note::
 
-         Note that the VFR/IFR selection affects flight plan loading in MSFS. You cannot load a VFR flight plan in MSFS which uses procedures, for example.
+  Note that the VFR/IFR selection affects flight plan loading in MSFS. You cannot load a VFR flight plan in MSFS which uses procedures, for example.
 
 .. _clear-selection-button-flightplan:
 

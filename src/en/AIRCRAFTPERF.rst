@@ -69,24 +69,24 @@ aircraft type does not match the type in the aircraft performance. This can be d
 
 .. figure:: ../images/perf_error.jpg
 
-    Aircraft Performance tab showing an error about a
-    missing value. The ``*`` in the tab label shows unsaved changes.
+  Aircraft Performance tab showing an error about a
+  missing value. The ``*`` in the tab label shows unsaved changes.
 
 A simple default profile for a Cessna C172 is default.
 
 .. note::
 
-   Note that the aircraft performance does take aircraft load, cruise altitude and temperatures aloft into consideration.
-   You can use the block fuel as a starting point for complex aircraft, enter this into the FMS or MCDU and refine it there.
-   You can also build more than one performance file to depict different load situations or cruise altitudes.
+  Note that the aircraft performance does take aircraft load, cruise altitude and temperatures aloft into consideration.
+  You can use the block fuel as a starting point for complex aircraft, enter this into the FMS or MCDU and refine it there.
+  You can also build more than one performance file to depict different load situations or cruise altitudes.
 
 .. note::
 
-      The default performance profile for a Cessna C172 is sufficient to calculate top of
-      climb and top of descent and can be used if you wish to ignore the fuel
-      and travel time reports.
+  The default performance profile for a Cessna C172 is sufficient to calculate top of
+  climb and top of descent and can be used if you wish to ignore the fuel
+  and travel time reports.
 
-      Adjust the default profile to you aircraft if needed.
+  Adjust the default profile to you aircraft if needed.
 
 *Little Navmap* collects performance data for an aircraft permanently
 while flying. The collected data can be merged or copied into the
@@ -95,17 +95,17 @@ The merging can be done at any time. See :doc:`AIRCRAFTPERFCOLL`.
 
 .. tip::
 
-    See the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__
-    to get numbers for a start.
+  See the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__
+  to get numbers for a start.
 
 
 .. figure:: ../images/perf_report.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Fuel report tab. Average headwind of 10 knots is
-    based on NOAA winds aloft prediction and is also considered in fuel
-    calculation. Fuel needed for an alternate airport is shown too. The
-    performance file description contains a web link. *Click image to enlarge.*
+  Fuel report tab. Average headwind of 10 knots is
+  based on NOAA winds aloft prediction and is also considered in fuel
+  calculation. Fuel needed for an alternate airport is shown too. The
+  performance file description contains a web link. *Click image to enlarge.*
 
 .. _aircraft-performance-files:
 
@@ -119,20 +119,20 @@ the *Little Navmap* main window to load them.
 
 .. warning::
 
-   Do not save the files into the *Little Navmap* installation directory since
-   they might be deleted when doing an update. Neither save them in
-   ``C:\Program Files`` or one of its sub-directories. Save the files
-   into your ``Documents`` directory or a sub-directory in there like
-   ``Documents\Little Navmap\Performance``.
+  Do not save the files into the *Little Navmap* installation directory since
+  they might be deleted when doing an update. Neither save them in
+  ``C:\Program Files`` or one of its sub-directories. Save the files
+  into your ``Documents`` directory or a sub-directory in there like
+  ``Documents\Little Navmap\Performance``.
 
-   You can use the directory which is suggested by the :doc:`FOLDERS` dialog.
+  You can use the directory which is suggested by the :doc:`FOLDERS` dialog.
 
 .. tip::
 
-    Aircraft performance files from contributors and my own flights are
-    available in the `download section of littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
+  Aircraft performance files from contributors and my own flights are
+  available in the `download section of littlenavmap.org <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__.
 
-    Note that these files are community work and might vary in quality and accuracy.
+  Note that these files are community work and might vary in quality and accuracy.
 
 .. _aircraft-performance-wind:
 
@@ -213,8 +213,8 @@ aircraft fuel status if no flight plan is loaded.
 
 .. note::
 
-    The :ref:`fuel-report` in the dock window ``Flight Planning``
-    is meant for fuel planning and does not change during flight.
+  The :ref:`fuel-report` in the dock window ``Flight Planning``
+  is meant for fuel planning and does not change during flight.
 
 
 .. _aircraft-performance-aircraft:
@@ -302,10 +302,10 @@ Only shown with a valid flight plan.
 
 .. note::
 
-       Altitude restrictions in procedures might affect the top of
-       descent or top or climb distances. The flight path angle is only valid
-       where the aircraft can freely climb or descent unaffected by altitude
-       limits.
+  Altitude restrictions in procedures might affect the top of
+  descent or top or climb distances. The flight path angle is only valid
+  where the aircraft can freely climb or descent unaffected by altitude
+  limits.
 
 .. _aircraft-performance-description:
 

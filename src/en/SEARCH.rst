@@ -20,12 +20,12 @@ See :ref:`ui-tables` for more information how to rearrange columns in tables.
 
 .. tip::
 
-     You can use the cursor key ``Down`` to jump from the input fields into the result table.
+  You can use the cursor key ``Down`` to jump from the input fields into the result table.
 
-     Using keyboard shortcuts like ``Ctrl+I`` for ``Show Information`` or ``Ctrl+M`` for ``Show on map``
-     are usable directly from the input fields and will apply to the topmost airport in the result table.
+  Using keyboard shortcuts like ``Ctrl+I`` for ``Show Information`` or ``Ctrl+M`` for ``Show on map``
+  are usable directly from the input fields and will apply to the topmost airport in the result table.
 
-     The same applies to other tabs like navaid and logbook search as well.
+  The same applies to other tabs like navaid and logbook search as well.
 
 
 .. _text-filters:
@@ -67,10 +67,10 @@ The fields ``Ident, name, city, state, province, country or area code`` for the 
 navaid ``Ident`` search allow more functionality besides the
 one described above:
 
--  Put an search term in double quotes ``"`` to force an exact search, i.e. avoid partial matches.
-   Example: ``SEA`` finds two airports one being ``SEAM`` while ``"SEA"`` finds only ``KSEA`` because
-   of the matching IATA code SEA.
--  Separate several idents by space to do a search for each ident. ``EDDF EDDM`` find the two airports Frankfurt and Munich, for example.
+- Put an search term in double quotes ``"`` to force an exact search, i.e. avoid partial matches.
+  Example: ``SEA`` finds two airports one being ``SEAM`` while ``"SEA"`` finds only ``KSEA`` because
+  of the matching IATA code SEA.
+- Separate several idents by space to do a search for each ident. ``EDDF EDDM`` find the two airports Frankfurt and Munich, for example.
 
 Tri state checkboxes
 ~~~~~~~~~~~~~~~~~~~~
@@ -105,18 +105,18 @@ related fields are hidden from the dropdown menu button.
 
 .. tip::
 
-    If you do not get the expected results or no results at all use the
-    :ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
-    clear all search criteria.
+  If you do not get the expected results or no results at all use the
+  :ref:`reset-search` menu item, the button ``Reset Search`` |Reset Search| or press ``Ctrl+R`` to
+  clear all search criteria.
 
 
 .. figure:: ../images/searchmenu.jpg
 
-    Click the dropdown menu. This will indicate if there are changes in the related section.
-    Facilities are all the airport properties like add-on, tower and so on in this example.
-    *Little Navmap* ignores sections in the search which are not visible (deselected in the drop down menu).
-    (1) has changes in a visible section (``Lighted``) and (2) has changes in a hidden section (``Runway``)
-    which are ignored.
+  Click the dropdown menu. This will indicate if there are changes in the related section.
+  Facilities are all the airport properties like add-on, tower and so on in this example.
+  *Little Navmap* ignores sections in the search which are not visible (deselected in the drop down menu).
+  (1) has changes in a visible section (``Lighted``) and (2) has changes in a hidden section (``Runway``)
+  which are ignored.
 
 .. _distance-search:
 
@@ -148,23 +148,23 @@ or unexpected results. Use the
 clear all search criteria.
 
 .. figure:: ../images/complexsearch.jpg
-    :scale: 50%
+  :scale: 50%
 
-    A complex distance search: Find all airports within
-    a distance between 200 and 400 NM from Frankfurt (EDDF).
-    Airports should have a rating greater than 0 and should have at least
-    one lighted runway. Military and closed airports are excluded. The
-    resulting airports are highlighted on the map by selecting them in the
-    search result table. *Click image to enlarge.*
+  A complex distance search: Find all airports within
+  a distance between 200 and 400 NM from Frankfurt (EDDF).
+  Airports should have a rating greater than 0 and should have at least
+  one lighted runway. Military and closed airports are excluded. The
+  resulting airports are highlighted on the map by selecting them in the
+  search result table. *Click image to enlarge.*
 
 
 .. figure:: ../images/complexsearch2.jpg
-    :scale: 50%
+  :scale: 50%
 
-    A complex search for scenery: This example shows how
-    to find specific add-on scenery by using the ``Scenery Path`` search
-    field. This shows all airports of the Orbx New Zealand South Island
-    add-on scenery that have lighted runways. *Click image to enlarge.*
+  A complex search for scenery: This example shows how
+  to find specific add-on scenery by using the ``Scenery Path`` search
+  field. This shows all airports of the Orbx New Zealand South Island
+  add-on scenery that have lighted runways. *Click image to enlarge.*
 
 .. _random-flight:
 
@@ -182,19 +182,19 @@ Ident and Names in Airport Search
 
 The input field ``Ident, name, city, state, province, country or area code`` in the airport search tab searches for all available airport identifiers and names.
 
--  ``Ident``: Mostly equal to ICAO code but can be different especially for small airfields. X-Plane
-   uses partially an unofficial code in this field like ``XPA000B``. Available for all simulators and
-   Navigraph navdata.
--  ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
-   available in X-Plane.
--  ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
-   The FAA code is only available in X-Plane.
--  ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
-   Available in X-Plane and Navigraph navdata.
--  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
-   X-Plane.
--  ``Name``, ``City``, ``State/Province``, ``Country/Area Code``: Airport names and administrative names.
-   Note that not all names are available depending on simulator.
+- ``Ident``: Mostly equal to ICAO code but can be different especially for small airfields. X-Plane
+  uses partially an unofficial code in this field like ``XPA000B``. Available for all simulators and
+  Navigraph navdata.
+- ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
+  available in X-Plane.
+- ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
+  The FAA code is only available in X-Plane.
+- ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
+  Available in X-Plane and Navigraph navdata.
+- ``Local Code``: Official local airport code mostly used for small airfields. Only available in
+  X-Plane.
+- ``Name``, ``City``, ``State/Province``, ``Country/Area Code``: Airport names and administrative names.
+  Note that not all names are available depending on simulator.
 
 The airport codes and names are also shown in the information windows, tooltips and in the map
 labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal
@@ -207,9 +207,9 @@ internal X-Plane code ``XPA000B``.
 
 .. tip::
 
-    Hide the additonal airport codes if you do not use X-Plane or if you are not interested in
-    these columns. You can do this by moving the columns to the rightmost position or by shrinking them
-    to minimum size. See :ref:`table-view`.
+  Hide the additonal airport codes if you do not use X-Plane or if you are not interested in
+  these columns. You can do this by moving the columns to the rightmost position or by shrinking them
+  to minimum size. See :ref:`table-view`.
 
 .. _airport-search-admin:
 
@@ -247,14 +247,14 @@ See :ref:`ui-tables` for more information how to rearrange columns in tables.
 
 .. figure:: ../images/airportsearchtable.jpg
 
-          Airport search result table. All additional search
-          options are hidden by using the drop down menu of the menu button on the
-          top right.
+  Airport search result table. All additional search
+  options are hidden by using the drop down menu of the menu button on the
+  top right.
 
 .. figure:: ../images/navaidsearchtable.jpg
 
-         Navaid search limited to ICAO region ``LI`` (Italy)
-         and VOR, VORTAC and TACAN stations that have a range of 100 or more NM.
+  Navaid search limited to ICAO region ``LI`` (Italy)
+  and VOR, VORTAC and TACAN stations that have a range of 100 or more NM.
 
 Footer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

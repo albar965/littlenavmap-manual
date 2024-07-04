@@ -55,15 +55,15 @@ You can enable saving of waypoints by checking :ref:`export-flight-plan-approach
 
 .. note::
 
-      It is not possible to assign an approach or STAR to an alternate
-      airport. Create a new flight plan for the alternate trip if you wish to
-      do so.
+  It is not possible to assign an approach or STAR to an alternate
+  airport. Create a new flight plan for the alternate trip if you wish to
+  do so.
 
 .. note::
 
-        FSX and Prepar3D stock
-        data provides only approaches and transitions. SIDs and STARs are not
-        available. These can be added by navdata updates.
+  FSX and Prepar3D stock
+  data provides only approaches and transitions. SIDs and STARs are not
+  available. These can be added by navdata updates.
 
 .. _procedures-departure-runway:
 
@@ -104,10 +104,10 @@ Right click on any waypoint of a procedure (not the leg line) and select ``Use a
 
 .. important::
 
-      *Little Navmap* removes waypoints from the flight plan which overlap with the procedure.
+  *Little Navmap* removes waypoints from the flight plan which overlap with the procedure.
 
-      In any case check the flight plan for reversals or zig-zag guidance.
-      Delete waypoints manually if you find such cases.
+  In any case check the flight plan for reversals or zig-zag guidance.
+  Delete waypoints manually if you find such cases.
 
 
 .. _procedures-delete:
@@ -123,31 +123,24 @@ You can also delete procedures from the flight plan by right clicking onto a pro
 Select ``Delete procedure from flight plan``. Substitute ``procedure`` the actual name.
 
 .. figure:: ../images/deleteprocedure.jpg
-     :scale: 50%
+  :scale: 50%
 
-     About to remove the transition ``MUN`` of the
-     approach ``RNAV BEGEN`` from the flight plan. *Click image to enlarge.*
+  About to remove the transition ``MUN`` of the
+  approach ``RNAV BEGEN`` from the flight plan. *Click image to enlarge.*
 
 .. _procedures-limitations:
 
 Limitations when editing a flight plan with procedures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Deleting a leg of a procedure will remove the whole procedure from
-   the flight plan.
--  You cannot move a procedure leg up or down neither can you move or
-   add a flight plan leg into a procedure.
--  You cannot add waypoints in between procedures (e.g. between a STAR
-   and an approach). Waypoints can only be added to the route between
-   departure and arrival procedures.
--  You cannot add waypoints between departure airport and a SID
-   procedure.
--  You cannot add waypoints between arrival procedure and destination
-   airport.
--  If you delete or replace the departure airport all SID procedures are
-   removed too.
--  If you delete or replace the destination airport all approach and
-   arrival procedures are removed too.
+- Deleting a leg of a procedure will remove the whole procedure from the flight plan.
+- You cannot move a procedure leg up or down neither can you move or add a flight plan leg into a procedure.
+- You cannot add waypoints in between procedures (e.g. between a STAR and an approach). Waypoints can only be added to the route between
+  departure and arrival procedures.
+- You cannot add waypoints between departure airport and a SID procedure.
+- You cannot add waypoints between arrival procedure and destination airport.
+- If you delete or replace the departure airport all SID procedures are removed too.
+- If you delete or replace the destination airport all approach and arrival procedures are removed too.
 
 .. _procedures-flying:
 
@@ -179,9 +172,9 @@ If a time is given, fly the hold as usual:
 
 .. note::
 
-    Do not follow the lines exactly, they are just an indicator for what to
-    fly. An exception are holds where a distance is given for the straight
-    leg. The hold size will match the distance in this case.
+  Do not follow the lines exactly, they are just an indicator for what to
+  fly. An exception are holds where a distance is given for the straight
+  leg. The hold size will match the distance in this case.
 
 Note that procedure holds are part of the flight plan and differ from
 the user defined holdings (:doc:`HOLD`) which are simply map
@@ -189,9 +182,9 @@ display objects.
 
 .. figure:: ../images/hold.jpg
 
-     A hold with 2 NM straight segment
-     length. Enter and exit at ``ZUNAD`` and fly at or above 2,600 ft.
-     Course is 61° magnetic degrees.
+  A hold with 2 NM straight segment
+  length. Enter and exit at ``ZUNAD`` and fly at or above 2,600 ft.
+  Course is 61° magnetic degrees.
 
 .. _procedures-flying-exit-holds:
 
@@ -229,9 +222,9 @@ Follow the procedures, not the lines.
 
 .. figure:: ../images/procedureturn.jpg
 
-    A procedure turn. Fly at least one minute outbound
-    61° from ``ABERN``, turn left to 16°, fly one minute, turn 180° and fly
-    to ``LAMMB``, then 242° to ``ABERN``.
+  A procedure turn. Fly at least one minute outbound
+  61° from ``ABERN``, turn left to 16°, fly one minute, turn 180° and fly
+  to ``LAMMB``, then 242° to ``ABERN``.
 
 .. _procedures-distances:
 
@@ -255,34 +248,27 @@ important for the simulator pilot.
 
 Four additional types are used by *Little Navmap*:
 
--  ``Start of Procedure``: This leg is added if a procedure does not
-   start with an initial fix but rather with a course, heading or track
-   to a fix. It indicates the first position of the procedure.
--  ``Proceed to Runway`` in a SID: The first leg of a SID to indicate
-   the start position on the runway. The program might fall back to the
-   airport center if the runway is not available. The altitude
-   restriction indicates the elevation of the runway.
--  ``Straight In``: Added to an approach procedure to show the course
-   from the missed approach point (MAP) to the runway threshold. It is
-   added when an approach ends with a runway fix. The leg has an
-   altitude restriction 50 ft above the threshold.
--  ``Circle to Land``: Added to an approach procedure to show the course
-   from the missed approach point to the airport. It is added if an
-   approach does not end with a runway fix.
--  ``Vectors``: Vectors connect legs that are manually terminated by ATC
-   with their successors which is often an initial fix.
+- ``Start of Procedure``: This leg is added if a procedure does not start with an initial fix but rather with a course, heading or track
+  to a fix. It indicates the first position of the procedure.
+- ``Proceed to Runway`` in a SID: The first leg of a SID to indicate the start position on the runway. The program might fall back to the
+  airport center if the runway is not available. The altitude restriction indicates the elevation of the runway.
+- ``Straight In``: Added to an approach procedure to show the course from the missed approach point (MAP) to the runway threshold. It is
+  added when an approach ends with a runway fix. The leg has an altitude restriction 50 ft above the threshold.
+- ``Circle to Land``: Added to an approach procedure to show the course from the missed approach point to the airport. It is added if an
+  approach does not end with a runway fix.
+- ``Vectors``: Vectors connect legs that are manually terminated by ATC with their successors which is often an initial fix.
 
 .. figure:: ../images/proc_straightin.jpg
 
-       ``Straight In`` example: ``ENSH`` approach ``LOC FL01 (L01)`` to runway 01.
-       White/orange dotted line is the straight-in leg. ``ML01`` is the MAP. If runway is not visible at
-       ``ML01`` turn left to missed.
+  ``Straight In`` example: ``ENSH`` approach ``LOC FL01 (L01)`` to runway 01.
+  White/orange dotted line is the straight-in leg. ``ML01`` is the MAP. If runway is not visible at
+  ``ML01`` turn left to missed.
 
 .. figure:: ../images/proc_ctl.jpg
 
-      ``Circle to Land`` in example: ``LSZC RNAV-A KUSIX (RNVA)``. White/orange dotted line is the
-      circle-to-land leg. ``ZC701`` is the MAP. No guidance is given for this leg. You have to navigate
-      around the mountain to get to runways 06 or 24.
+  ``Circle to Land`` in example: ``LSZC RNAV-A KUSIX (RNVA)``. White/orange dotted line is the
+  circle-to-land leg. ``ZC701`` is the MAP. No guidance is given for this leg. You have to navigate
+  around the mountain to get to runways 06 or 24.
 
 
 .. _procedures-fix-types:
@@ -290,25 +276,16 @@ Four additional types are used by *Little Navmap*:
 Fix Types in a Procedure
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **Waypoints:** Terminal waypoints or radio navaids. Some are marked
-   as ``flyover`` in the approach table.
--  **Radial and distance:** Example: ``WIK/7nm/291°M``. A fix defined by
-   a course or heading and distance to a navaid.
--  **Distance to DME:** Example: ``WIK/9nm``. This fix is defined by a
-   heading or track which is terminated by reaching a DME distance.
--  ``Intercept Course to Fix``: Intercept a course to the next fix at an
-   angle of about 45 degrees.
--  ``Course/Heading to radial termination``: Example: ``LPD/135°M``.
-   Turn left or right to intercept a radio navaid radial.
--  ``Intercept Leg``: Intercept the next approach leg at a course of
-   about 45 degrees.
--  ``Altitude``: A leg or hold that is terminated by reaching a certain
-   altitude and is used mostly on missed approaches. Since the distance
-   depends on the aircraft, 2 NM length are used for this
-   leg. You can ignore the line and proceed to the next leg once the
-   altitude criteria is satisfied.
--  ``Manual``: Fly a heading, track or a hold until manually terminated
-   by ATC.
+- **Waypoints:** Terminal waypoints or radio navaids. Some are marked as ``flyover`` in the approach table.
+- **Radial and distance:** Example: ``WIK/7nm/291°M``. A fix defined by a course or heading and distance to a navaid.
+- **Distance to DME:** Example: ``WIK/9nm``. This fix is defined by a heading or track which is terminated by reaching a DME distance.
+- ``Intercept Course to Fix``: Intercept a course to the next fix at an angle of about 45 degrees.
+- ``Course/Heading to radial termination``: Example: ``LPD/135°M``. Turn left or right to intercept a radio navaid radial.
+- ``Intercept Leg``: Intercept the next approach leg at a course of about 45 degrees.
+- ``Altitude``: A leg or hold that is terminated by reaching a certain altitude and is used mostly on missed approaches. Since the distance
+  depends on the aircraft, 2 NM length are used for this leg. You can ignore the line and proceed to the next leg once the
+  altitude criteria is satisfied.
+- ``Manual``: Fly a heading, track or a hold until manually terminated by ATC.
 
 Runway fixes are prefixed with ``RW``. They usually have an altitude
 restriction a few ft above the runway. Higher altitude restrictions
@@ -321,18 +298,13 @@ Altitude and Speed Restrictions
 
 Restrictions are shown on the map and in the flight plan table.
 
--  **Number only:** Fly at altitude or speed. Map examples: ``5400ft``
-   or ``210kts``.
--  **Prefix** ``A``: Fly at or above altitude or speed. Map example:
-   ``A1800ft`` or ``A200kts``.
--  **Prefix** ``B``: Fly at or below altitude or speed. Map example:
-   ``B10000ft`` or ``B240kts``.
--  **Range:** Fly at or above the first altitude and at or below the
-   second altitude. Map example: ``A8000B10000ft``. Same for speed.
--  **Prefix** ``GS``: Not an altitude restriction but an indicator for
-   the ILS glideslope altitude. Can mean ``at`` or ``at or above``.
--  **Vertical path** ``-3.2°``: A vertical path angle which has to be followed. Calculated paths
-   are shown with a white text background and required paths with a yellow background.
+- **Number only:** Fly at altitude or speed. Map examples: ``5400ft`` or ``210kts``.
+- **Prefix** ``A``: Fly at or above altitude or speed. Map example: ``A1800ft`` or ``A200kts``.
+- **Prefix** ``B``: Fly at or below altitude or speed. Map example: ``B10000ft`` or ``B240kts``.
+- **Range:** Fly at or above the first altitude and at or below the second altitude. Map example: ``A8000B10000ft``. Same for speed.
+- **Prefix** ``GS``: Not an altitude restriction but an indicator for the ILS glideslope altitude. Can mean ``at`` or ``at or above``.
+- **Vertical path** ``-3.2°``: A vertical path angle which has to be followed.
+  Calculated paths are shown with a white text background and required paths with a yellow background.
 
 .. _procedures-related:
 
@@ -366,10 +338,9 @@ Leg Highlights on the Map
 Up to three points will be highlighted when clicking on a procedure leg
 in the tree in the search window:
 
--  A small blue circle shows the beginning of the leg.
--  The end of the leg is shown by a large blue circle.
--  A thin circle shows the location of the recommended or related fix if
-   available.
+- A small blue circle shows the beginning of the leg.
+- The end of the leg is shown by a large blue circle.
+- A thin circle shows the location of the recommended or related fix if available.
 
 Invalid Data
 ~~~~~~~~~~~~

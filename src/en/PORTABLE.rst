@@ -32,8 +32,8 @@ See :doc:`COMMANDLINE` for more information.
 
 .. note::
 
-   You have to install updates to the navigation database manually if you run in portable mode.
-   Replace and/or update the file
-   ``YOURINSTALLATIONFOLDER/Little Navmap Settings/little_navmap_db/little_navmap_navigraph.sqlite``
-   to update you navigation database.
+  You have to install updates to the navigation database manually if you run in portable mode.
+  Replace and/or update the file
+  ``YOURINSTALLATIONFOLDER/Little Navmap Settings/little_navmap_db/little_navmap_navigraph.sqlite``
+  to update you navigation database.
 

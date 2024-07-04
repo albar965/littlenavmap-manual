@@ -1,6 +1,6 @@
 .. meta::
-   :description: Little Navmap User Manual
-   :keywords: Navigation, Flight Simulator, Map, Flightplan, FSX, MSFS, Prepar3D, X-Plane, Flightplanner
+  :description: Little Navmap User Manual
+  :keywords: Navigation, Flight Simulator, Map, Flightplan, FSX, MSFS, Prepar3D, X-Plane, Flightplanner
 
 Little Navmap User Manual
 ================================
@@ -9,8 +9,8 @@ Little Navmap User Manual
 and airport information system for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D
 v3 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
 
-   More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
-   Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
+  More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
+  Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.
 
 **You can get the latest version of this manual in different formats from here:**
 `User Manuals <https://albar965.github.io/manuals.html>`__
@@ -20,117 +20,117 @@ v3 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
 This user manual is for *Little Navmap* versions |version|.
 
 .. image:: ../images/sunshadow_title.jpg
-    :width: 40 %
+  :width: 40 %
 .. image:: ../images/spherical_title.jpg
-    :width: 55 %
+  :width: 55 %
 
 Table of Contents
 ------------------------------
 
 .. toctree::
-   :maxdepth: 2
-   :numbered:
+  :maxdepth: 2
+  :numbered:
 
-   ACKNOWLEDGMENTS
+  ACKNOWLEDGMENTS
 
-   DONATIONS
-   INSTALLATION
-   START
-   QUICKOVERVIEW
-   INTRO
+  DONATIONS
+  INSTALLATION
+  START
+  QUICKOVERVIEW
+  INTRO
 
-   DOCKWINDOWS
-   TABS
-   MENUS
-   STATUSBAR
+  DOCKWINDOWS
+  TABS
+  MENUS
+  STATUSBAR
 
-   FOLDERS
-   GLOBE
+  FOLDERS
+  GLOBE
 
-   MAPDISPLAY
-   LEGEND
-   AIRCRAFTTRAIL
-   TRAFFICPATTERN
-   HOLD
-   MSA
-   COMPASSROSE
-   SUNSHADOW
-   IMAGEEXPORT
-   JUMPCOORDINATE
-   MEASURE
-   RANGERINGS
+  MAPDISPLAY
+  LEGEND
+  AIRCRAFTTRAIL
+  TRAFFICPATTERN
+  HOLD
+  MSA
+  COMPASSROSE
+  SUNSHADOW
+  IMAGEEXPORT
+  JUMPCOORDINATE
+  MEASURE
+  RANGERINGS
 
-   PROFILE
+  PROFILE
 
-   SEARCH
-   RANDOM
-   SEARCHPROCS
-   USERPOINT
-   LOGBOOK
-   ONLINENETWORKS
+  SEARCH
+  RANDOM
+  SEARCHPROCS
+  USERPOINT
+  LOGBOOK
+  ONLINENETWORKS
 
-   INFO
+  INFO
 
-   FLIGHTPLAN
-   AIRCRAFTCENTER
-   MAPFPEDIT
-   APPROACHES
-   CUSTOMPROCEDURE
-   PARKINGPOSITION
-   RUNWAYSELECTION
-   TRACKS
-   EDITFPPOSITION
-   EDITFPREMARKS
-   ROUTECALC
-   ROUTEDESCR
-   FLIGHTPLANFMT
-   ROUTEEXPORTALL
-   ROUTEEXPORT
-   LOADSIMBRIEF
-   SENDSIMBRIEF
+  FLIGHTPLAN
+  AIRCRAFTCENTER
+  MAPFPEDIT
+  APPROACHES
+  CUSTOMPROCEDURE
+  PARKINGPOSITION
+  RUNWAYSELECTION
+  TRACKS
+  EDITFPPOSITION
+  EDITFPREMARKS
+  ROUTECALC
+  ROUTEDESCR
+  FLIGHTPLANFMT
+  ROUTEEXPORTALL
+  ROUTEEXPORT
+  LOADSIMBRIEF
+  SENDSIMBRIEF
 
-   AIRCRAFTPERF
-   AIRCRAFTPERFEDIT
-   AIRCRAFTPERFCOLL
-   AIRCRAFTPERFMERGE
+  AIRCRAFTPERF
+  AIRCRAFTPERFEDIT
+  AIRCRAFTPERFCOLL
+  AIRCRAFTPERFMERGE
 
-   SCENERY
-   AIRSPACELOAD
-   NAVDATA
+  SCENERY
+  AIRSPACELOAD
+  NAVDATA
 
-   CONNECT
-   OPTIONS
-   LAYOUT
-   WEATHER
-   PRINT
-   RESET
-   UPDATE
-   RUNNOSIM
-   WEBSERVER
+  CONNECT
+  OPTIONS
+  LAYOUT
+  WEATHER
+  PRINT
+  RESET
+  UPDATE
+  RUNNOSIM
+  WEBSERVER
 
-   TUTORIALS
-   TUTORIALVFR
-   TUTORIALIFR
-   TUTORIALPERF
+  TUTORIALS
+  TUTORIALVFR
+  TUTORIALIFR
+  TUTORIALPERF
 
-   ISSUEREPORT
-   CRASHREPORT
+  ISSUEREPORT
+  CRASHREPORT
 
-   COORDINATES
-   MAGVAR
-   REMARKS
-   SHORTCUTS
-   NETWORK
-   XPCONNECT
-   CUSTOMIZE
-   MAPTHEMES
-   FILES
-   TIPS
-   PORTABLE
-   COMMANDLINE
-   APPENDIX
-   GLOSSARY
-   LICENSE
+  COORDINATES
+  MAGVAR
+  REMARKS
+  SHORTCUTS
+  NETWORK
+  XPCONNECT
+  CUSTOMIZE
+  MAPTHEMES
+  FILES
+  TIPS
+  PORTABLE
+  COMMANDLINE
+  APPENDIX
+  GLOSSARY
+  LICENSE
 
 --------------------------
 

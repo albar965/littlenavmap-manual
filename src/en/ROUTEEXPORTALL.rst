@@ -8,9 +8,9 @@ single click into the toolbar, a click into the menu (``File`` -> |Multiexport F
 The dialog makes use of tooltips. Hover the mouse cursor above rows and buttons for more information.
 
 .. figure:: ../images/multiexport.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Overview of the multiexport features with the related menu items highlighted. Screenshot based on *Little Navmap* 2.6. *Click image to enlarge.*
+  Overview of the multiexport features with the related menu items highlighted. Screenshot based on *Little Navmap* 2.6. *Click image to enlarge.*
 
 .. _multiexport-quick-setup:
 
@@ -41,17 +41,17 @@ entered and the box is checked.
 
 .. tip::
 
-    You can also export flight plans manually from the multiexport options dialog by clicking on the button |Export
-    Flight Plan now| :ref:`multiexport-menu-export`.
+  You can also export flight plans manually from the multiexport options dialog by clicking on the button |Export
+  Flight Plan now| :ref:`multiexport-menu-export`.
 
 .. note::
 
-    Note that *Little Navmap* does not clean up the exported directories. All old flight plans remain
-    and have to be removed manually from time to time.
+  Note that *Little Navmap* does not clean up the exported directories. All old flight plans remain
+  and have to be removed manually from time to time.
 
-    Consider exported flight plan files as disposable since almost all the export formats have limitations
-    resulting in data loss. Remember that you can always restore them by loading the original LNMPLN
-    file and exporting again.
+  Consider exported flight plan files as disposable since almost all the export formats have limitations
+  resulting in data loss. Remember that you can always restore them by loading the original LNMPLN
+  file and exporting again.
 
 See also :doc:`FLIGHTPLANFMT` for more information on the supported flight plan formats.
 
@@ -61,10 +61,10 @@ File Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Saving LNMPLN
-    The default file name used when saving LNMPLN files using the functions :ref:`save-flight-plan` or :ref:`save-flight-plan-as` can be set in the options dialog on page ``Flight Plan``. See :ref:`flight-plan-pattern`.
+  The default file name used when saving LNMPLN files using the functions :ref:`save-flight-plan` or :ref:`save-flight-plan-as` can be set in the options dialog on page ``Flight Plan``. See :ref:`flight-plan-pattern`.
 
 Export other Formats
-     *Little Navmap* always uses file names based on the pattern set in the column ``File Name Pattern and Extension`` when running an multiexport or starting an export from the menu ``File``.
+  *Little Navmap* always uses file names based on the pattern set in the column ``File Name Pattern and Extension`` when running an multiexport or starting an export from the menu ``File``.
 
 
 .. _multiexport-export-lnmpln:
@@ -77,13 +77,13 @@ case compared to the other formats. Enabling this for export saves you a few ext
 
 The following happens if LNMPLN is saved with multiexport:
 
--  The file name is automatically assigned by using the selected pattern in the options
-   dialog on page :ref:`options-files` (:ref:`flight-plan-pattern`).
-   If the file was already saved with another name when doing :ref:`save-flight-plan-as` or :ref:`save-flight-plan` then this name is used.
--  *Little Navmap* saves the file into the path set in the multiexport options dialog.
--  The current file is marked as clean. This means that the ``*`` is cleared from the window title
-   and *Little Navmap* will not ask to save the file once exiting or creating a new plan.
--  Further saves (menu ``File`` -> :ref:`save-flight-plan`) will use the automatically assigned file name and path.
+- The file name is automatically assigned by using the selected pattern in the options
+  dialog on page :ref:`options-files` (:ref:`flight-plan-pattern`).
+  If the file was already saved with another name when doing :ref:`save-flight-plan-as` or :ref:`save-flight-plan` then this name is used.
+- *Little Navmap* saves the file into the path set in the multiexport options dialog.
+- The current file is marked as clean. This means that the ``*`` is cleared from the window title
+  and *Little Navmap* will not ask to save the file once exiting or creating a new plan.
+- Further saves (menu ``File`` -> :ref:`save-flight-plan`) will use the automatically assigned file name and path.
 
 See also :ref:`flight-plan-formats-lnmpln`.
 
@@ -101,8 +101,8 @@ Directories (files for some export formats) have to exist for the export to work
 
 .. figure:: ../images/multiexporterr.jpg
 
-      Error message in tooltip for X-Plane FMS export. Hover mouse cursor above red text to see this.
-      Also selected is the MSFS flight plan export without path errors.
+  Error message in tooltip for X-Plane FMS export. Hover mouse cursor above red text to see this.
+  Also selected is the MSFS flight plan export without path errors.
 
 .. _multiexport-running:
 
@@ -266,7 +266,7 @@ This helps to reduce clutter in the output directories but may overwrite flight 
 
 .. warning::
 
-         No backup will be created when saving with this option enabled.
+  No backup will be created when saving with this option enabled.
 
 Help
 ^^^^^^^^^^^

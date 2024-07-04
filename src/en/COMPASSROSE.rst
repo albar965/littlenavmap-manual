@@ -60,12 +60,12 @@ Examples
 
 .. figure:: ../images/compass_rose.jpg
 
-     Compass rose without simulator connection. Distance rings disabled.
+  Compass rose without simulator connection. Distance rings disabled.
 
 .. figure:: ../images/compass_rose_aircraft.jpg
 
-    Compass rose centered around user aircraft. No flight plan loaded. Therefore,
-    heading and next waypoint indicators hidden.
+  Compass rose centered around user aircraft. No flight plan loaded. Therefore,
+  heading and next waypoint indicators hidden.
 
 .. |Compass Rose Icon| image:: ../images/icon_compassrose.png
 .. |True North| image:: ../images/legend_compass_rose_true_north.png

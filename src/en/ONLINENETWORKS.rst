@@ -19,11 +19,9 @@ freely configurable ones.
 **Online network related functionality can be found in the following
 places:**
 
--  Search dock window, tabs ``Online Clients``, ``Online Centers`` and
-   ``Online Server``.
--  Information dock window, tabs ``Online Clients`` and
-   ``Online Centers``.
--  Options dialog, page :ref:`options-online-flying`.
+- Search dock window, tabs ``Online Clients``, ``Online Centers`` and ``Online Server``.
+- Information dock window, tabs ``Online Clients`` and ``Online Centers``.
+- Options dialog, page :ref:`options-online-flying`.
 
 See :doc:`SEARCH` for general information on the search tabs.
 
@@ -74,9 +72,9 @@ See :ref:`vehicles-legend` in the legend for all
 symbols.
 
 .. figure:: ../images/online_aircraft.jpg
-       :scale: 50%
+  :scale: 50%
 
-       Online network clients/aircraft in search tab, map, tooltip and information window. Image based on *Little Navmap* 2.4. *Click image to enlarge.*
+  Online network clients/aircraft in search tab, map, tooltip and information window. Image based on *Little Navmap* 2.4. *Click image to enlarge.*
 
 
 .. _online-networks-centers:
@@ -91,10 +89,10 @@ airspaces by selecting ``Online`` as airspace source (:ref:`airspace-source`)
 
 .. note::
 
-       The circles do not represent the real airspaces and are only
-       used to indicate the presence of an active center, tower, ground or
-       other position. See below how to assign airspace boundaries to
-       a center.
+  The circles do not represent the real airspaces and are only
+  used to indicate the presence of an active center, tower, ground or
+  other position. See below how to assign airspace boundaries to
+  a center.
 
 Detailed information for online centers/airspaces is shown in the :doc:`INFO` window.
 
@@ -121,7 +119,7 @@ information about this. The airspace geometry is assigned to the centers by iden
 
 .. figure:: ../images/online_center.jpg
 
-       Online network center/ATC in search tab, map, tooltip and information window.
+  Online network center/ATC in search tab, map, tooltip and information window.
 
 Online Search
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

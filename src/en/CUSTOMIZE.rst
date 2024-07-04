@@ -6,7 +6,7 @@ Customize
 
 .. _note:
 
-    This chapter shows the Windows file locations. See :doc:`FILES` for locations on Linux and macOS.
+  This chapter shows the Windows file locations. See :doc:`FILES` for locations on Linux and macOS.
 
 The files use the Windows-INI style that has groups in square brackets and ``key=value`` lines. See
 `INI (Wikipedia) <https://en.wikipedia.org/wiki/INI_file>`__ for more information
@@ -24,9 +24,9 @@ reorder the keys when saving or updating the files.
 
 .. important::
 
-   You have to restart *Little Navmap* to see any changes. Also,
-   do not edit the files while *Little Navmap* is running since it might
-   overwrite your changes.
+  You have to restart *Little Navmap* to see any changes. Also,
+  do not edit the files while *Little Navmap* is running since it might
+  overwrite your changes.
 
 .. _customize-version:
 
@@ -38,17 +38,17 @@ Some of the INI files contain a section ``[Options]`` with a key
 
 .. code-block:: ini
 
-   [Options]
-   Version=2.0.1
+  [Options]
+  Version=2.0.1
 
 .. warning::
 
-   Do not delete the version since *Little Navmap* relies on this information when updating
-   the file. It will reset the file occasionally whenever the default
-   settings change. A backup will be created to save your user
-   customizations
+  Do not delete the version since *Little Navmap* relies on this information when updating
+  the file. It will reset the file occasionally whenever the default
+  settings change. A backup will be created to save your user
+  customizations
 
-   Keep this version section in all files. Otherwise, *Little Navmap* might reset the content.
+  Keep this version section in all files. Otherwise, *Little Navmap* might reset the content.
 
 Examples for backup files: ``little_navmap_mapstyle_backup_2.0.0.ini``
 or ``little_navmap_mapstyle_backup.ini``.
@@ -68,10 +68,10 @@ Two files are generated that allow the customization for all window,
 button and dialog colors. These are:
 
 Fusion
-   ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
+  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_fusionstyle.ini``
 
 Dark
-    ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini``
+  ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_nightstyle.ini``
 
 The key names in these files are derived from the palette options of the Qt library.
 Each key consists of the group and role name separated by an underscore.
@@ -113,11 +113,9 @@ Color Format
 Color can be in one of these formats which are commonly used in web
 design:
 
--  ``#RRGGBB`` each of R, G, B and A is a single hex digit. Each color
-   value ranges from 00 - FF (decimal 0-255)
--  ``#AARRGGBB`` first two digits contain the alpha/transparency value.
-   ``00`` equals to fully tranparent and ``FF`` (decimal 255) to opaque.
--  SVG color name
+- ``#RRGGBB`` each of R, G, B and A is a single hex digit. Each color value ranges from 00 - FF (decimal 0-255)
+- ``#AARRGGBB`` first two digits contain the alpha/transparency value. ``00`` equals to fully tranparent and ``FF`` (decimal 255) to opaque.
+- SVG color name
 
 SVG color name is one of the colors defined in the list of
 `CSS Colors <https://www.w3schools.com/cssref/css_colors.asp>`__;
@@ -131,8 +129,8 @@ the hex values for a color.
 
 .. important::
 
-    Most web color tools give you the color value in format ``#RRGGBBAA`` with the transparency at the end of the string.
-    Convert this to the required value by putting the last two characters ``AA`` to the front to get the needed ``#AARRGGBB``.
+  Most web color tools give you the color value in format ``#RRGGBBAA`` with the transparency at the end of the string.
+  Convert this to the required value by putting the last two characters ``AA`` to the front to get the needed ``#AARRGGBB``.
 
 
 **Examples:**
@@ -150,11 +148,9 @@ Pen Format
 
 A pen contains the following values in a comma separated list:
 
--  Color as described above
--  Pen width as a floating point value measured in pixels. You have to
-   use ``.`` as decimal separator no matter what your locale defines.
--  Pen style. One of the following values: ``Solid``, ``Dash``, ``Dot``,
-   ``DashDot`` and ``DashDotDot``.
+- Color as described above
+- Pen width as a floating point value measured in pixels. You have to use ``.`` as decimal separator no matter what your locale defines.
+- Pen style. One of the following values: ``Solid``, ``Dash``, ``Dot``, ``DashDot`` and ``DashDotDot``.
 
 **Examples:**
 
@@ -329,4 +325,4 @@ characters are no problem.
 
 .. warning::
 
-    Adding a large amount of userpoint icons can slow down the program startup significantly.
+  Adding a large amount of userpoint icons can slow down the program startup significantly.

@@ -37,7 +37,7 @@ selected scenery library and not by the connected simulator.
 
 .. note::
 
-      Always use :ref:`reset-for-new-flight` before doing a flight.
+  Always use :ref:`reset-for-new-flight` before doing a flight.
 
 .. _logbook-files:
 
@@ -60,7 +60,7 @@ You can access and modify the referenced and attached files in the context menu 
 
 .. note::
 
-    Unfinished flights will not have trail information and show only the departure airport.
+  Unfinished flights will not have trail information and show only the departure airport.
 
 .. _logbook-search:
 
@@ -88,20 +88,20 @@ The trail preview shows tooltips with time, distance and flown altitude when hov
 
 .. note::
 
-     Logbook details (route preview and trail) on the map are only shown if one single entry is selected
-     in the logbook search result table. Selecting more than one entry shows only the direct connection lines
-     if enabled.
+  Logbook details (route preview and trail) on the map are only shown if one single entry is selected
+  in the logbook search result table. Selecting more than one entry shows only the direct connection lines
+  if enabled.
 
 .. figure:: ../images/logbook.jpg
 
-       Map showing several logbook entries selected and
-       highlighted. Departure and destination of each entry is connected by a
-       great circle line. A tooltip shows more information.
+  Map showing several logbook entries selected and
+  highlighted. Departure and destination of each entry is connected by a
+  great circle line. A tooltip shows more information.
 
 .. figure:: ../images/logbook_preview.jpg
 
-     A selected logbook entry and the flight plan preview showing the waypoints and flying direction.
-     The dashed line shows the flown track.
+  A selected logbook entry and the flight plan preview showing the waypoints and flying direction.
+  The dashed line shows the flown track.
 
 .. _logbook-footer:
 
@@ -180,25 +180,25 @@ Removes invalid logbook entries. The dialog contains the following fields:
 
 
 Shorter than 5 NM
-    Removes all entries where the distance flown is below 5 NM.
+  Removes all entries where the distance flown is below 5 NM.
 
 Departure and destination ident equal
-    Delete all entries where departure ident is the same as the destination ident (which can happen when doing pattern work).
-    Airport names or other attributes are not compared.
+  Delete all entries where departure ident is the same as the destination ident (which can happen when doing pattern work).
+  Airport names or other attributes are not compared.
 
 Either departure or destination ident empty
-    Remove all entries where departure or destination is empty or
-    off-airport. Off-airport departures or landings show coordinates like ``2956N10702E`` or ``4831N12255W`` instead of an airport ident.
-    This can happen when running simulator replay, redoing landings or interrupting flights.
+  Remove all entries where departure or destination is empty or
+  off-airport. Off-airport departures or landings show coordinates like ``2956N10702E`` or ``4831N12255W`` instead of an airport ident.
+  This can happen when running simulator replay, redoing landings or interrupting flights.
 
 Show a preview before deleting logbook entries
-    Shows a table with the logbook entries to remove before deleting. You can cancel the operation in the preview.
+  Shows a table with the logbook entries to remove before deleting. You can cancel the operation in the preview.
 
 You can undo the change using :ref:`undo-logbook-search` in the logbook table context menu.
 
 .. figure:: ../images/logbook_cleanup.jpg
 
-    Logbook cleanup dialog.
+  Logbook cleanup dialog.
 
 Airport
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -331,19 +331,14 @@ Tab Logbook Entry
 
 Additional notes about some fields on this page:
 
--  ``Departure`` and ``Destination``: These are automatically resolved
-   to an airport. Coordinates (not shown and not editable) are assigned
-   to the departure or destination airport if found. The dialog will
-   show the airport name and elevation if the airport ident can be
-   resolved. Otherwise an error message is shown.
--  ``Date and Time in Simulator UTC``: Time set in the simulator on
-   takeoff or touchdown. Always UTC.
--  ``Real local Time``: Real world time on takeoff or touchdown. Stored
-   in your local time.
--  ``Route Description``: :doc:`ROUTEDESCR` extracted from the flight plan.
--  ``Flight plan file`` and ``Aircraft performance file``: Used flight
-   plan and performance files. These are only references which will turn
-   invalid if the files are moved or renamed. Update manually if needed.
+- ``Departure`` and ``Destination``: These are automatically resolved to an airport. Coordinates (not shown and not editable) are assigned
+  to the departure or destination airport if found. The dialog will show the airport name and elevation if the airport ident can be
+  resolved. Otherwise an error message is shown.
+- ``Date and Time in Simulator UTC``: Time set in the simulator on takeoff or touchdown. Always UTC.
+- ``Real local Time``: Real world time on takeoff or touchdown. Stored in your local time.
+- ``Route Description``: :doc:`ROUTEDESCR` extracted from the flight plan.
+- ``Flight plan file`` and ``Aircraft performance file``: Used flight plan and performance files. These are only references which will turn
+  invalid if the files are moved or renamed. Update manually if needed.
 
 Tab Fuel and Weight
 ^^^^^^^^^^^^^^^^^^^^
@@ -363,9 +358,9 @@ Edit a single Logbook Entry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../images/logbook_edit.jpg
-         :scale: 50%
+  :scale: 50%
 
-         Editing a logbook entry. *Click image to enlarge.*
+  Editing a logbook entry. *Click image to enlarge.*
 
 Edit multiple Logbook Entries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -382,9 +377,9 @@ In combination with the search function, this allows for bulk changes
 like fixing an invalid aircraft type for more than one entry.
 
 .. figure:: ../images/logbook_bulk_edit.jpg
-       :scale: 50%
+  :scale: 50%
 
-       Editing more than one logbook entry. Three fields are to be changed for the selected entries. *Click image to enlarge.*
+  Editing more than one logbook entry. Three fields are to be changed for the selected entries. *Click image to enlarge.*
 
 .. _statistics:
 
@@ -393,11 +388,9 @@ Logbook Statistics
 
 This dialog shows two tabs:
 
-#. ``Overview`` contains a general report which can be copied as
-   formatted text to the clipboard.
+#. ``Overview`` contains a general report which can be copied as formatted text to the clipboard.
 #. ``Grouped Queries`` has a button on top which shows different reports
-   in the table below. The content of the table can be copied as CSV to
-   the clipboard.
+   in the table below. The content of the table can be copied as CSV to the clipboard.
 
 Some simulators report a wrong departure and arrival time in rare cases which can result in negative
 flying time for some flights.
@@ -411,9 +404,9 @@ You can click on the top table header to sort the related column in ascending or
 Scroll down in the table to load more values.
 
 .. figure:: ../images/logbook_stats.jpg
-         :scale: 50%
+  :scale: 50%
 
-         Overview tab of logbook statistics dialog. *Click image to enlarge.*
+  Overview tab of logbook statistics dialog. *Click image to enlarge.*
 
 .. _import-export:
 
@@ -453,8 +446,7 @@ search field to look for all imported entries.
 #. Destination airport
 #. Number of landings - added to description.
 #. Duration of flight
-#. Time spent flying cross-country, in IFR conditions and at night -
-   added to description.
+#. Time spent flying cross-country, in IFR conditions and at night - added to description.
 #. Aircraft tail number
 #. Aircraft type
 
@@ -462,11 +454,11 @@ search field to look for all imported entries.
 
 .. code-block:: none
 
-      I
-      1 Version
-      2 190917    EDDN    ESNZ   4   0.8   0.0   0.0   0.0  C-STUB  727-100
-      2 190917    ESNZ    ESNZ   0   0.1   0.0   0.0   0.0  C-STUB  727-100
-      2 190920    LSZR    LSZR   0   0.2   0.0   0.0   0.0    SF34
+  I
+  1 Version
+  2 190917    EDDN    ESNZ   4   0.8   0.0   0.0   0.0  C-STUB  727-100
+  2 190917    ESNZ    ESNZ   0   0.1   0.0   0.0   0.0  C-STUB  727-100
+  2 190920    LSZR    LSZR   0   0.2   0.0   0.0   0.0    SF34
 
 .. _logbook-data-format:
 

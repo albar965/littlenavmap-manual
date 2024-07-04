@@ -16,11 +16,11 @@ custom waypoints (or coordinates) in some flight plan formats like MSFS PLN, X-P
 
 .. note::
 
-    The custom waypoints are omitted for all formats related to complex aircraft having an FMS or MCDU to avoid issues on import.
-    You have to select the departure and approach manually in the aircraft, therefore.
-    Depending on add-on you probably have to remove the additional waypoints in the FMC or MCDU before seleting the runway in the aircraft.
+  The custom waypoints are omitted for all formats related to complex aircraft having an FMS or MCDU to avoid issues on import.
+  You have to select the departure and approach manually in the aircraft, therefore.
+  Depending on add-on you probably have to remove the additional waypoints in the FMC or MCDU before seleting the runway in the aircraft.
 
-    If you see problems, delete the departure or/and approach, export the flight plan and undo your change in the flight plan again.
+  If you see problems, delete the departure or/and approach, export the flight plan and undo your change in the flight plan again.
 
 
 Show Departure Procedures and Show Arrival Procedures
@@ -61,10 +61,10 @@ indicate the runway name:
 
 **Runway selection dialog:**
 
--  Dialog header: Shows the airport name and its ICAO ident as well as field elevation.
--  ``Runways``: List of available runways for the airport. Shows runway
-   name, length, width, magnetic heading, surface, lighting status and other attributes.
--  ``Length of the extended runway center line``: Distance from the runway threshold to the end of the departure leg. Default is 3 NM.
+- Dialog header: Shows the airport name and its ICAO ident as well as field elevation.
+- ``Runways``: List of available runways for the airport. Shows runway
+  name, length, width, magnetic heading, surface, lighting status and other attributes.
+- ``Length of the extended runway center line``: Distance from the runway threshold to the end of the departure leg. Default is 3 NM.
 
 A click on the ``OK`` button or a double click into the list ``Runways``
 closes the dialog and creates the approach.
@@ -72,13 +72,13 @@ closes the dialog and creates the approach.
 
 .. figure:: ../images/runway_depart_selection.jpg
 
-    Dialog shown after right clicking the departure airport of a flight plan and
-    selecting ``Select Departure Runway`` on airport ``EGNH``. Best takeoff runway is 10 with a headwind of 16 knots
-    and 4 knots crosswind.
+  Dialog shown after right clicking the departure airport of a flight plan and
+  selecting ``Select Departure Runway`` on airport ``EGNH``. Best takeoff runway is 10 with a headwind of 16 knots
+  and 4 knots crosswind.
 
 .. figure:: ../images/runway_depart.jpg
 
-    Vertical guidance from runway threshold extended center line.
+  Vertical guidance from runway threshold extended center line.
 
 Destination Runway
 ~~~~~~~~~~~~~~~~~~
@@ -107,25 +107,24 @@ indicate the runway name:
 
 **Runway selection dialog:**
 
--  Dialog header: Shows airport name and its ICAO ident as well as field elevation.
--  ``Runways``: List of available runways for the airport. Shows runway
-   name, length, width, magnetic heading, surface, lighting status and other attributes.
--  ``Start of final to runway threshold``: Distance from the initial fix
-   to the runway. Default is 3 NM.
--  ``Offset angle relative to the runway heading``: Defines an offset angle to approach the runway.
-   This rotates the final leg clockwise for positive values and counter-clockwise for negative angles.
--  ``Final course to runway``: Shows the magnetic course of the final leg based on the offset angle.
--  ``Altitude above runway at start of final``: Altitude at the start of the final leg above
-   runway elevation. Default is 1,000 ft.
--  ``Approach slope``: Shows the slope angle calculated from the given
-   distance and altitude. The default values for distance and altitude
-   give a 3.1 degree slope.
+- Dialog header: Shows airport name and its ICAO ident as well as field elevation.
+- ``Runways``: List of available runways for the airport. Shows runway
+  name, length, width, magnetic heading, surface, lighting status and other attributes.
+- ``Start of final to runway threshold``: Distance from the initial fix
+  to the runway. Default is 3 NM.
+- ``Offset angle relative to the runway heading``: Defines an offset angle to approach the runway.
+  This rotates the final leg clockwise for positive values and counter-clockwise for negative angles.
+- ``Final course to runway``: Shows the magnetic course of the final leg based on the offset angle.
+- ``Altitude above runway at start of final``: Altitude at the start of the final leg above
+  runway elevation. Default is 1,000 ft.
+- ``Approach slope``: Shows the slope angle calculated from the given distance and altitude. The default values for distance and altitude
+  give a 3.1 degree slope.
 
 .. figure:: ../images/runway_approach.jpg
-   :scale: 60%
+  :scale: 60%
 
-   Destination runway dialog window and depiction on map and in elevation profile.
-   Using 4.5° slope to match VASI and offset approach to avoid mountains.
-   Vertical guidance to runway threshold. Note that ILS and other approach aids are not shown for the VFR approach.
-   *Click image to enlarge.*
+  Destination runway dialog window and depiction on map and in elevation profile.
+  Using 4.5° slope to match VASI and offset approach to avoid mountains.
+  Vertical guidance to runway threshold. Note that ILS and other approach aids are not shown for the VFR approach.
+  *Click image to enlarge.*
 

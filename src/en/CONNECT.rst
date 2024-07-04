@@ -23,9 +23,9 @@ simulator to which the connection should be established.
 
 .. figure:: ../images/connectlocal.jpg
 
-     *Little Navmap* connect dialog set up for a local
-     connection to FSX, P3D or MSFS on the left and X-Plane on the right.
-     The connection will be established automatically.
+  *Little Navmap* connect dialog set up for a local
+  connection to FSX, P3D or MSFS on the left and X-Plane on the right.
+  The connection will be established automatically.
 
 Click on the tab corresponding to the simulator you want to connect to.
 
@@ -59,12 +59,12 @@ You will see an :warning-style:`orange warning message` if you use a X-Plane sce
 
 .. important::
 
-    Note that there are two builds of Little Navmap and Little Navconnect for Windows available:
+  Note that there are two builds of Little Navmap and Little Navconnect for Windows available:
 
-    -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.4-Install.exe`` for example.
-    -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.4-Install.exe`` for example.
+  -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.4-Install.exe`` for example.
+  -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.4-Install.exe`` for example.
 
-    Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+  Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
 
 X-Plane
 ^^^^^^^
@@ -92,15 +92,15 @@ flying computer.
 
 .. note::
 
-     Airport weather information and winds aloft cannot be transferred across a remote
-     connection from X-Plane. You can only see the current weather around the user aircraft in
-     the ``Simulator Aircraft`` window on the :ref:`progress-info`.
+  Airport weather information and winds aloft cannot be transferred across a remote
+  connection from X-Plane. You can only see the current weather around the user aircraft in
+  the ``Simulator Aircraft`` window on the :ref:`progress-info`.
 
-     Share files and directories for X-Plane across computers and adjust loading
-     path in options on page :ref:`options-weather-files` for remote setups.
-     *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib``
-     files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
-     applies updates immediately.
+  Share files and directories for X-Plane across computers and adjust loading
+  path in options on page :ref:`options-weather-files` for remote setups.
+  *Little Navmap* watches the X-Plane 11 ``METAR.rwx`` and ``global_winds.grib``
+  files as well as the X-Plane 12 ``Output/real weather`` directory for changes and
+  applies updates immediately.
 
 See :doc:`NETWORK` on information how to set up a remote/networked connection.
 
@@ -126,9 +126,9 @@ computers.
 
 .. figure:: ../images/littlenavconnect.jpg
 
-   *Little Navconnect* is
-   running and waiting for a Flight Simulator. It is running on the
-   computer ``win10.fritz.box`` with the IP address ``192.168.2.13``.
+  *Little Navconnect* is
+  running and waiting for a Flight Simulator. It is running on the
+  computer ``win10.fritz.box`` with the IP address ``192.168.2.13``.
 
 Change the port in *Little Navconnect*'s options dialog if you see
 an error message like shown below:
@@ -137,7 +137,7 @@ an error message like shown below:
 
 .. note::
 
-    A common reason for failing connections are firewall settings which block the connection attempts.
+  A common reason for failing connections are firewall settings which block the connection attempts.
 
 .. _connect-start-navmap:
 
@@ -149,18 +149,15 @@ Open the connection dialog in *Little Navmap* by selecting ``Tools`` ->
 
 .. figure:: ../images/connect.jpg
 
-    Connect dialog with correct values to access the
-    computer running the simulator and *Little Navconnect* as shown above.
+  Connect dialog with correct values to access the
+  computer running the simulator and *Little Navconnect* as shown above.
 
 Now do the following after opening the dialog:
 
 #. Click the ``Remote / Network`` tab.
-#. Add the value for host name. This can be either the host name or the
-   IP address printed by *Little Navconnect*.
-#. Check the value for the port. ``51968`` is the default value and
-   usually does not need to be changed.
-#. Click connect. The dialog will close and *Little Navmap* will try to
-   establish a connection in the background.
+#. Add the value for host name. This can be either the host name or the IP address printed by *Little Navconnect*.
+#. Check the value for the port. ``51968`` is the default value and usually does not need to be changed.
+#. Click connect. The dialog will close and *Little Navmap* will try to establish a connection in the background.
 
 Establishing a connection can take some time, depending on your network.
 The aircraft will show up on the map and on the ``Simulator Aircraft``
@@ -188,31 +185,21 @@ amounts of AI but do not want to see it in *Little Navmap*.
 Connect Dialog
 ~~~~~~~~~~~~~~~~~~~~~~
 
--  ``Disconnect``: Disconnect the current session and stop automatic
-   reconnect.
--  ``Connect``: Try to connect. An error dialog will be shown if no
-   connection can be established. *Little Navmap* will constantly try
-   again if ``Connect automatically`` is enabled.
--  ``Close``: Close the dialog without any changes to the current
-   connection status.
--  ``Connect automatically``: *Little Navmap* will try to connect
-   constantly if this is enabled. This is the recommended setting.
+- ``Disconnect``: Disconnect the current session and stop automatic reconnect.
+- ``Connect``: Try to connect. An error dialog will be shown if no connection can be established. *Little Navmap* will constantly try
+  again if ``Connect automatically`` is enabled.
+- ``Close``: Close the dialog without any changes to the current connection status.
+- ``Connect automatically``: *Little Navmap* will try to connect constantly if this is enabled. This is the recommended setting.
 
-   -  All connection attempts will stop immediately if you deselect this
-      button.
-   -  You have to click ``Connect`` once to start the automatic
-      connection attempts after checking this button.
+  - All connection attempts will stop immediately if you deselect this button.
+  - You have to click ``Connect`` once to start the automatic connection attempts after checking this button.
 
--  ``Update Time Interval``: Allowed range is 50 milliseconds up to 1
-   second. *Little Navmap* fetches data from a simulator using this time
-   interval. Increase this value if you experience stutters or lag in
-   the simulator. A lower value will result in more fluid map updates in
-   *Little Navmap*.
--  ``Fetch AI or multiplayer aircraft`` and
-   ``Fetch AI or multiplayer ships``: Disables fetching of AI vehicles.
-   These settings are applied immediately.
--  ``AI Fetch Radius``: Limits the number of AI aircraft around the user aircraft.
-   Only for FSX, P3D and MSFS.
+- ``Update Time Interval``: Allowed range is 50 milliseconds up to 1 second. *Little Navmap* fetches data from a simulator using this time
+  interval. Increase this value if you experience stutters or lag in the simulator. A lower value will result in more fluid map updates in
+  *Little Navmap*.
+- ``Fetch AI or multiplayer aircraft`` and ``Fetch AI or multiplayer ships``: Disables fetching of AI vehicles.
+  These settings are applied immediately.
+- ``AI Fetch Radius``: Limits the number of AI aircraft around the user aircraft. Only for FSX, P3D and MSFS.
 
 .. |Flight Simulator Connection| image:: ../images/icon_network.png
 

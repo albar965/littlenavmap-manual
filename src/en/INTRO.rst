@@ -76,23 +76,23 @@ A toolbar gets an overflow button ``>>`` on the right side if it is too long to 
 
 .. figure:: ../images/toolbar_move.jpg
 
-     Moving a toolbar into a new position.
+  Moving a toolbar into a new position.
 
 .. figure:: ../images/toolbar_move_vert.jpg
 
-    Moving a toolbar into a new vertical toolbar at the left side of the main window.
+  Moving a toolbar into a new vertical toolbar at the left side of the main window.
 
 .. figure:: ../images/toolbar_overflow.jpg
 
-    The main window it too small to show the whole toolbar. Clicking the overflow button ``>>``.
+  The main window it too small to show the whole toolbar. Clicking the overflow button ``>>``.
 
 .. note::
 
-   Use the ``Window`` menu in the in the main menu to save, load or restore
-   windows, toolbars and tabs layouts.
+  Use the ``Window`` menu in the in the main menu to save, load or restore
+  windows, toolbars and tabs layouts.
 
-   The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and position of all dock
-   windows and toolbars back to their default.
+  The  menu item :ref:`reset-layout-menu` in the menu ``Window`` can be used to reset the state and position of all dock
+  windows and toolbars back to their default.
 
 .. _ui-statusbar:
 
@@ -135,7 +135,7 @@ These message are shown in the :doc:`STATUSBAR`, :ref:`flight-plan-table` fields
 
 .. figure:: ../images/ui_warning_err.jpg
 
-    A red error message in the flight plan footer and an orange warning message in the flight plan fuel report.
+  A red error message in the flight plan footer and an orange warning message in the flight plan fuel report.
 
 .. _ui-tables:
 
@@ -159,7 +159,7 @@ The program saves the sort order, column widths and positions until
 
 .. figure:: ../images/table_header.jpg
 
-    Table header of the flight plan table with tooltip.
+  Table header of the flight plan table with tooltip.
 
 .. _ui-tree:
 
@@ -175,8 +175,8 @@ You can also click on the small checkbox in the branch root to select or deselec
 
 .. figure:: ../images/tree.jpg
 
-   Tree for flight plan table display configuration. Shows tooltip for cut off explanation.
-   Branch checkbox for ``Flight Plan Table Header`` is selected and indicates all items in branch enabled.
+  Tree for flight plan table display configuration. Shows tooltip for cut off explanation.
+  Branch checkbox for ``Flight Plan Table Header`` is selected and indicates all items in branch enabled.
 
 
 .. _ui-contextmenus:
@@ -212,18 +212,18 @@ Note that some shortcuts are available in the whole program while some are only 
 in search windows, for example. You have to activate the related window before using such local shortcuts.
 
 .. figure:: ../images/shortcutsmapcontext.jpg
-    :scale: 60%
+  :scale: 60%
 
-    Keyboard modifiers shown in the right side of the map context menu.
-    Use Shift, Alt and/or Ctrl and left mouse click to start functions without opening the context menu.
-    *Click image to enlarge.*
+  Keyboard modifiers shown in the right side of the map context menu.
+  Use Shift, Alt and/or Ctrl and left mouse click to start functions without opening the context menu.
+  *Click image to enlarge.*
 
 .. figure:: ../images/shortcutsroutecontext.jpg
-    :scale: 60%
+  :scale: 60%
 
-    Keyboard shortcuts shown in the right column of the flight plan table context menu.
-    Shortcuts are also shown in the main menu.
-    *Click image to enlarge.*
+  Keyboard shortcuts shown in the right column of the flight plan table context menu.
+  Shortcuts are also shown in the main menu.
+  *Click image to enlarge.*
 
 .. _ui-menubuttons:
 
@@ -275,14 +275,11 @@ provide cycle information in their scenery libraries.
 A ``N`` will be appended if the Navigraph database is used. Otherwise ``(N)`` is used. Example
 below for Prepar3D:
 
--  ``P3DV5 / (N)``: All features on the map and all information in dialogs and
-   windows come from the flight simulator database. Navdata might be limited depending on simulator.
--  ``P3DV5 / N``: Airports and ILS are shown and used from the flight
-   simulator database. Navaids, airways and procedures are
-   used from the Navigraph database.
--  ``(P3DV5) / N``: All data is used from the Navigraph database. No
-   aprons, no taxiways and no parking positions are available for
-   airports.
+- ``P3DV5 / (N)``: All features on the map and all information in dialogs and
+  windows come from the flight simulator database. Navdata might be limited depending on simulator.
+- ``P3DV5 / N``: Airports and ILS are shown and used from the flight simulator database. Navaids, airways and procedures are
+  used from the Navigraph database.
+- ``(P3DV5) / N``: All data is used from the Navigraph database. No aprons, no taxiways and no parking positions are available for airports.
 
 See :ref:`scenery-library-menu`, :doc:`SCENERY` and :doc:`NAVDATA` for more information.
 
@@ -312,13 +309,13 @@ This page also allows to change the font for the whole program interface.
 
 .. note::
 
-   *Little Navmap* remembers the size of dialog windows. In some cases you have to resize dialog windows
-   after changing to a larger font to see all content.
+  *Little Navmap* remembers the size of dialog windows. In some cases you have to resize dialog windows
+  after changing to a larger font to see all content.
 
 .. tip::
 
-     A quick way to change the text size is to use the mouse wheel and
-     ``Ctrl`` key. This setting won't be saved across sessions, though.
+  A quick way to change the text size is to use the mouse wheel and
+  ``Ctrl`` key. This setting won't be saved across sessions, though.
 
 Activating and raising Windows and Tabs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -343,8 +340,8 @@ The state of the tear off menus is not saved.
 
 .. figure:: ../images/tearoff.jpg
 
-       The drop down menu button for the userpoint categories for map display and
-       how the menu can be teared off into its own window.
+  The drop down menu button for the userpoint categories for map display and
+  how the menu can be teared off into its own window.
 
 .. _links:
 
@@ -360,9 +357,9 @@ The general links can have these functions:
 -  Show a file or directory in you default file manager like Windows Explorer, Apple Finder or KDE Dolphin.
 
 .. figure:: ../images/linkdialog.jpg
-    :scale: 70%
+  :scale: 70%
 
-    The options dialog window with blue web links. Klick on the links to open them in your web browser. *Click image to enlarge.*
+  The options dialog window with blue web links. Klick on the links to open them in your web browser. *Click image to enlarge.*
 
 The windows and tabs :doc:`FLIGHTPLAN`, :doc:`INFO` and :doc:`SEARCHPROCS` provide links to:
 
@@ -375,9 +372,9 @@ The windows and tabs :doc:`FLIGHTPLAN`, :doc:`INFO` and :doc:`SEARCHPROCS` provi
 -  Remove highlighted features from the map like ``Remove Airspace Highlights`` or ``Remove Airway and Track Highlights``.
 
 .. figure:: ../images/linkinfo.jpg
-    :scale: 70%
+  :scale: 70%
 
-    The airport information has links to center the airport on the map or to show procedures. *Click image to enlarge.*
+  The airport information has links to center the airport on the map or to show procedures. *Click image to enlarge.*
 
 .. _copy-and-paste:
 
@@ -398,8 +395,8 @@ This copied text can be used in forums or emails instead of screenshots.
 
 .. figure:: ../images/copydialog.jpg
 
-    Text selected with the mouse. Right-click context menu or ``Ctrl+C`` can be used to copy the
-    formatted text to the clipboard.
+  Text selected with the mouse. Right-click context menu or ``Ctrl+C`` can be used to copy the
+  formatted text to the clipboard.
 
 
 Translation and Locale

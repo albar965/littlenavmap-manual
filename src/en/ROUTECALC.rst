@@ -192,9 +192,9 @@ Putting the slider on the leftmost position
 
   .. figure:: ../images/routecalcairways.jpg
 
-    A flight plan calculated using airways only.
-    The flight plan is longer since the region above Austria is void of airways
-    due to European airway restructuring.
+  A flight plan calculated using airways only.
+  The flight plan is longer since the region above Austria is void of airways
+  due to European airway restructuring.
 
 Putting the slider on an intermediate position
   uses more or fewer airways or direct waypoint connections depending on position.
@@ -206,8 +206,8 @@ Putting the slider on an intermediate position
 
   .. figure:: ../images/routecalcairwaysdirect.jpg
 
-    A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
-    skips the airway void above Austria with direct waypoint connections.
+  A flight plan calculated using airways and direct waypoints. The plan uses mostly airways and
+  skips the airway void above Austria with direct waypoint connections.
 
 Putting the slider on the rightmost position
   instructs the route calculation to use only direct
@@ -223,8 +223,8 @@ Putting the slider on the rightmost position
 
   .. figure:: ../images/routecalcdirect.jpg
 
-    Same plan as above but calculated with the slider on the far right.
-    The plan is shorter and uses direct waypoint connections only.
+  Same plan as above but calculated with the slider on the far right.
+  The plan is shorter and uses direct waypoint connections only.
 
 
 Radio Navaids

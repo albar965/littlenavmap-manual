@@ -29,7 +29,7 @@ All context menus and items are explained in the following chapters:
 
 .. tip::
 
-     Explore the chapters on the left side of this page or use the search function on the top left.
+  Explore the chapters on the left side of this page or use the search function on the top left.
 
 First Steps
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,11 +39,11 @@ for future starts by pressing ``Do not show again`` but keep at least the messag
 
 .. tip::
 
-   If you'd like to use a **dark mode** when flying:
-   Enable this in menu ``Window`` -> ``Style`` -> ``Dark`` (:ref:`window-styles`).
-   The darkness of the map window can be adjusted in options on page :ref:`options-map`.
-   Look for section ``Map dimming in dark style``.
-   See :ref:`window-styles`.
+  If you'd like to use a **dark mode** when flying:
+  Enable this in menu ``Window`` -> ``Style`` -> ``Dark`` (:ref:`window-styles`).
+  The darkness of the map window can be adjusted in options on page :ref:`options-map`.
+  Look for section ``Map dimming in dark style``.
+  See :ref:`window-styles`.
 
 Preparing
 ^^^^^^^^^^^^^^^^^^^^
@@ -86,10 +86,10 @@ See :doc:`CONNECT` for more information.
 
 .. important::
 
-   The included *Little Xpconnect* plugin has to be installed for X-Plane.
-   You can do this from the main menu ``Tools`` -> :ref:`install-xpconnect`
+  The included *Little Xpconnect* plugin has to be installed for X-Plane.
+  You can do this from the main menu ``Tools`` -> :ref:`install-xpconnect`
 
-   See :doc:`XPCONNECT` for more information.
+  See :doc:`XPCONNECT` for more information.
 
 .. _building-flightplan:
 
@@ -98,19 +98,19 @@ Building a Flight Plan
 
 This quick introduction shows only one of many ways to build a flight plan and select departure and destination airports.
 
-#.  Right click into the map on an airport and select departure (:ref:`set-as-flight-plan-departure`),
-    destination (:ref:`set-as-flight-plan-destination`) and intermediate
-    waypoints (:ref:`add-position-to-flight-plan` and :ref:`append-position-to-flight-plan`) from the context menu.
-#.  Save the flight plan into *Little Navmap*'s own format LNMPLN by clicking :ref:`save-flight-plan`.
-    This file format is only for *Little Navmap* and allows to keep all flight plan features like remarks,
-    departure as well as arrival runways and more. **Do not try to load it into simulators or other tools.**
-#.  Configure the flight plan export in menu ``File`` -> :ref:`multiexport-flight-plan-options`.
-    Select desired formats by clicking one or more checkboxes on the left and adapt the paths and filenames
-    for export. See :doc:`ROUTEEXPORTALL`.
-#.  Select ``File`` -> :ref:`multiexport-flight-plan` to export the flight plan for your simulator, tools or
-    aircraft.
-#.  You probably see a few warning messages in *Little Navmap* about missing aircraft performance
-    information. Ignore these for now.
+#. Right click into the map on an airport and select departure (:ref:`set-as-flight-plan-departure`),
+   destination (:ref:`set-as-flight-plan-destination`) and intermediate
+   waypoints (:ref:`add-position-to-flight-plan` and :ref:`append-position-to-flight-plan`) from the context menu.
+#. Save the flight plan into *Little Navmap*'s own format LNMPLN by clicking :ref:`save-flight-plan`.
+   This file format is only for *Little Navmap* and allows to keep all flight plan features like remarks,
+   departure as well as arrival runways and more. **Do not try to load it into simulators or other tools.**
+#. Configure the flight plan export in menu ``File`` -> :ref:`multiexport-flight-plan-options`.
+   Select desired formats by clicking one or more checkboxes on the left and adapt the paths and filenames
+   for export. See :doc:`ROUTEEXPORTALL`.
+#. Select ``File`` -> :ref:`multiexport-flight-plan` to export the flight plan for your simulator, tools or
+   aircraft.
+#. You probably see a few warning messages in *Little Navmap* about missing aircraft performance
+   information. Ignore these for now.
 
 See also in the menu ``Help`` -> :doc:`TUTORIALS` if you're new to *Little Navmap*.
 
@@ -140,14 +140,14 @@ macOS computer to *Little Navconnect* on a Windows computer. The same applies to
 Recommended things to do after Installing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  The elevation data which is used by default is limited and inaccuracies.
-   Therefore, I recommend to download and use the offline
-   GLOBE elevation data. See :ref:`cache-elevation` for more information.
--  Have a look at :doc:`TUTORIALS` if you use the program the first time.
--  See `Install Navigraph
-   Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__
-   on my home page for information how to update *Little Navmap*'s
-   navigation data.
+- The elevation data which is used by default is limited and inaccuracies.
+  Therefore, I recommend to download and use the offline
+  GLOBE elevation data. See :ref:`cache-elevation` for more information.
+- Have a look at :doc:`TUTORIALS` if you use the program the first time.
+- See `Install Navigraph
+  Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__
+  on my home page for information how to update *Little Navmap*'s
+  navigation data.
 
 Useful Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

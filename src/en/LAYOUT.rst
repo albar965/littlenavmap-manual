@@ -25,10 +25,10 @@ See also :doc:`DOCKWINDOWS`.
 
 .. note::
 
-    Layouts cannot be exchanged with different settings for :ref:`options-map-undock` in the options dialog.
+  Layouts cannot be exchanged with different settings for :ref:`options-map-undock` in the options dialog.
 
-    *Little Navmap* will show a warning when loading a layout that was saved with :ref:`options-map-undock` enabled
-    and :ref:`options-map-undock` is currently disabled, for example.
+  *Little Navmap* will show a warning when loading a layout that was saved with :ref:`options-map-undock` enabled
+  and :ref:`options-map-undock` is currently disabled, for example.
 
 .. _save-load-layouts:
 

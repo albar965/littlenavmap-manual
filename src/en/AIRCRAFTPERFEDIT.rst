@@ -12,16 +12,14 @@ the main menu.
 Buttons
 ~~~~~~~
 
--  ``OK``: Takes all changes made in the dialog but does not save the
-   profile. The fuel report, top of climb and top of descent in the
-   :doc:`PROFILE` are
-   adjusted immediately.
--  ``OK and Save``: Takes all changes made in the dialog and saves the
-   profile. Opens a file dialog if the file is new.
--  ``Cancel``: Disregards all changes and closes the dialog.
--  ``Reset``: Resets all changes made since opening the edit dialog.
--  ``Restore Defaults``: Resets back to the default profile.
--  ``Help``: Opens the online help in the default web browser.
+- ``OK``: Takes all changes made in the dialog but does not save the profile. The fuel report, top of climb and top of descent in the
+  :doc:`PROFILE` are adjusted immediately.
+- ``OK and Save``: Takes all changes made in the dialog and saves the
+  profile. Opens a file dialog if the file is new.
+- ``Cancel``: Disregards all changes and closes the dialog.
+- ``Reset``: Resets all changes made since opening the edit dialog.
+- ``Restore Defaults``: Resets back to the default profile.
+- ``Help``: Opens the online help in the default web browser.
 
 .. _tab-aircraft-edit:
 
@@ -31,17 +29,14 @@ Tab Aircraft
 .. role:: error-style
 .. role:: warning-style
 
--  ``Simulator``: This is populated based on the used simulator scenery library database when
-   creating the file. Adjust manually if needed.
--  ``Aircraft model``: Can be used freely. Determined from aircraft name
-   when *Little Navmap* collects data for a performance profile.
--  ``Aircraft type``: The ICAO aircraft type designator. *Little Navmap*
-   will show an :warning-style:`orange warning message` in the :ref:`fuel-report` if the flown aircraft
-   does not match the type in the aircraft performance file. Detected automatically when collecting
-   performance. The warning can be disabled in the menu ``Aircraft`` -> :ref:`aircraft-menu-warning`.
--  ``Required runway``: Only for information. Shown in the fuel report if bigger than zero.
--  ``Required runway type``: Only for information. Shown in the fuel
-   report if it differs from default ``Hard``.
+- ``Simulator``: This is populated based on the used simulator scenery library database when creating the file. Adjust manually if needed.
+- ``Aircraft model``: Can be used freely. Determined from aircraft name when *Little Navmap* collects data for a performance profile.
+- ``Aircraft type``: The ICAO aircraft type designator. *Little Navmap*
+  will show an :warning-style:`orange warning message` in the :ref:`fuel-report` if the flown aircraft
+  does not match the type in the aircraft performance file. Detected automatically when collecting
+  performance. The warning can be disabled in the menu ``Aircraft`` -> :ref:`aircraft-menu-warning`.
+- ``Required runway``: Only for information. Shown in the fuel report if bigger than zero.
+- ``Required runway type``: Only for information. Shown in the fuel report if it differs from default ``Hard``.
 
 .. _aircraft-type-edit:
 
@@ -84,7 +79,7 @@ The model can be found with any text editor, opening the related
 
 .. figure:: ../images/perf_edit_aircraft.jpg
 
-    First tab in aircraft performance edit dialog.
+  First tab in aircraft performance edit dialog.
 
 Tab Performance
 ~~~~~~~~~~~~~~~
@@ -98,14 +93,11 @@ Mach number or indicated airspeed.
 Fuel
 ^^^^
 
--  ``Fuel Units``: Either ``Volume`` (gallons or liters) or ``Weight``
-   (lbs or kilograms). The numbers in the dialog will be converted using
-   the weight of the selected ``Fuel Type`` when changing the unit.
-   Rounding errors might occur when switching forth and back noticeable
-   a small changes.
--  ``Fuel Type``: ``Avgas`` (default) or ``Jetfuel``. Needed to convert
-   fuel numbers between weight and volume. This is detected
-   automatically when collecting aircraft performance.
+- ``Fuel Units``: Either ``Volume`` (gallons or liters) or ``Weight`` (lbs or kilograms). The numbers in the dialog will be converted using
+  the weight of the selected ``Fuel Type`` when changing the unit. Rounding errors might occur when switching forth and back noticeable
+  a small changes.
+- ``Fuel Type``: ``Avgas`` (default) or ``Jetfuel``. Needed to convert fuel numbers between weight and volume. This is detected
+  automatically when collecting aircraft performance.
 
 See `Fuel - Flight Planning Definitions <https://www.skybrary.aero/index.php/Fuel_-_Flight_Planning_Definitions>`__
 (SKYbrary) for more information on the various fuel types.
@@ -157,19 +149,16 @@ The value is given in percent of trip fuel.
 
 .. tip::
 
-     ICAO recommends to use 5 percent contingency fuel for all flights.
+  ICAO recommends to use 5 percent contingency fuel for all flights.
 
 Climb
 ^^^^^
 
 Values for climb are detected automatically when collecting performance.
 
--  ``Average climb speed``: Average true airspeed from takeoff to cruise
-   altitude.
--  ``Average vertical climb speed``: Vertical speed in climb phase.
-   Either ft per minute (``fpm``) or meter per second (``m/s``).
--  ``Average fuel flow in climb``: Fuel flow in climb phase. Either
-   ``gal``, ``lbs``, ``l`` or ``kg``.
+- ``Average climb speed``: Average true airspeed from takeoff to cruise altitude.
+- ``Average vertical climb speed``: Vertical speed in climb phase. Either ft per minute (``fpm``) or meter per second (``m/s``).
+- ``Average fuel flow in climb``: Fuel flow in climb phase. Either ``gal``, ``lbs``, ``l`` or ``kg``.
 
 Climb speed and vertical climb speed are used to calculate the top of
 climb which also varies with wind conditions.
@@ -180,17 +169,17 @@ Cruise
 Values for the cruise phase are detected automatically when collecting
 performance.
 
--  ``Cruise speed at typical cruise altitude``: True airspeed at cruise.
--  ``Fuel flow in cruise``: Fuel flow in cruise phase.
+- ``Cruise speed at typical cruise altitude``: True airspeed at cruise.
+- ``Fuel flow in cruise``: Fuel flow in cruise phase.
 
 Descent
 ^^^^^^^
 
 Descent values are detected automatically when collecting performance.
 
--  ``Average descent speed``: True airspeed in descent phase.
--  ``Average vertical descent speed``: Average vertical speed.
--  ``Average fuel flow for descent``: Average fuel flow on descent.
+- ``Average descent speed``: True airspeed in descent phase.
+- ``Average vertical descent speed``: Average vertical speed.
+- ``Average fuel flow for descent``: Average fuel flow on descent.
 
 A label ``Descent Rule of Thumb`` shows the calculated rule of thumb for
 descent. The default is 3 NM per 1,000 ft.
@@ -201,10 +190,10 @@ of descent which also varies with wind conditions.
 Alternate
 ^^^^^^^^^
 
--  ``Average speed for alternate``: True airspeed when flying to
-   alternate.
--  ``Average fuel flow for alternate``: Average fuel flow when flying to
-   alternate.
+- ``Average speed for alternate``: True airspeed when flying to
+  alternate.
+- ``Average fuel flow for alternate``: Average fuel flow when flying to
+  alternate.
 
 *Little Navmap* uses the values from the cruise phase as a default. The
 flight to the alternate airport usually happens at a lower altitude than
@@ -212,9 +201,9 @@ cruise altitude and therefore results in a higher fuel flow. Adjust the
 values accordingly here.
 
 .. figure:: ../images/perf_edit_perf.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Aircraft performance edit dialog tab ``Performance``. *Click image to enlarge.*
+  Aircraft performance edit dialog tab ``Performance``. *Click image to enlarge.*
 
 Tab Remarks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -21,7 +21,7 @@ In general you have to change the firewall settings to forward the port
 
 .. warning::
 
-     Never open the firewall completely. This is a security risk.
+  Never open the firewall completely. This is a security risk.
 
 Web Page
 ~~~~~~~~
@@ -31,11 +31,11 @@ The new interface is mostly self explaining and allows to zoom using the mouse w
 
 .. note::
 
-     The web page uses the same map display settings as the main program. All changes in menu ``View``
-     are reflected on the web page.
+  The web page uses the same map display settings as the main program. All changes in menu ``View``
+  are reflected on the web page.
 
-     Only map position and zoom distance can be changed in the web page which allows flight following
-     or using it as an additional map display but no flight planning.
+  Only map position and zoom distance can be changed in the web page which allows flight following
+  or using it as an additional map display but no flight planning.
 
 Page Links on Top of each Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,9 +45,9 @@ The top links ``Map``, ``Flight Plan``, ``Aircraft``,
 respective pages. ``Help`` opens this page.
 
 .. figure:: ../images/web_navbar.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Top navigation bar for the legacy web interface as shown in web browser. *Click image to enlarge.*
+  Top navigation bar for the legacy web interface as shown in web browser. *Click image to enlarge.*
 
 Map Page
 ^^^^^^^^
@@ -58,15 +58,13 @@ more features are shown as in the running application.
 Top bar:
 ''''''''
 
--  ``Manual Reload`` or ``1 Second`` to ``120 Seconds``: Triggers a
-   reload of the map image for the given time. Note that this might
-   drain the battery on smartphones or tablets.
--  ``Reload Map``: Reload the map manually.
--  ``User Aircraft``: Centers the user aircraft on the map.
--  ``Flight Plan``: Centers the flight plan on the map.
--  ``Show Airport``: Jumps the airport which ICAO ident is given in the
-   input field to the left of this button. Press the ``Return`` key or
-   this button to jump to the airport.
+- ``Manual Reload`` or ``1 Second`` to ``120 Seconds``: Triggers a reload of the map image for the given time. Note that this might
+  drain the battery on smartphones or tablets.
+- ``Reload Map``: Reload the map manually.
+- ``User Aircraft``: Centers the user aircraft on the map.
+- ``Flight Plan``: Centers the flight plan on the map.
+- ``Show Airport``: Jumps the airport which ICAO ident is given in the input field to the left of this button. Press the ``Return`` key or
+  this button to jump to the airport.
 
 Map Navigation
 ''''''''''''''
@@ -74,14 +72,14 @@ Map Navigation
 The map is divided into a 3x3 field grid. Each field has an icon in the
 corner denoting its function:
 
--  |Zoom| |Zoom out|: Zoom in and out
--  |Move left| |Move right| |Move up| |Move down|: Move map
--  |Reload map|: Reload map
+- |Zoom| |Zoom out|: Zoom in and out
+- |Move left| |Move right| |Move up| |Move down|: Move map
+- |Reload map|: Reload map
 
 .. figure:: ../images/webmap.jpg
-    :scale: 50%
+  :scale: 50%
 
-    Web map display in browser with navigation icons. *Click image to enlarge.*
+  Web map display in browser with navigation icons. *Click image to enlarge.*
 
 Flight Plan Page
 ^^^^^^^^^^^^^^^^
@@ -94,9 +92,9 @@ Buttons ``Manual Reload`` or ``1 Second`` to ``120 Seconds`` and
 the active flight plan leg.
 
 .. figure:: ../images/web_flightplan.jpg
-   :scale: 50%
+  :scale: 50%
 
-   Flight plan table in browser. *Click image to enlarge.*
+  Flight plan table in browser. *Click image to enlarge.*
 
 Aircraft
 ^^^^^^^^
@@ -121,11 +119,9 @@ Displays the same information as the :ref:`airport` on one page.
 
 Buttons and input fields:
 
--  ``ICAO``: Four or three letter airport ICAO ident. Press ``Return``
-   key or button ``Submit`` to show airport information.
--  ``Submit``: Loads airport information for given ICAO ident.
--  ``Reload``: Reload page manually to catch weather changes, for
-   example.
+- ``ICAO``: Four or three letter airport ICAO ident. Press ``Return`` key or button ``Submit`` to show airport information.
+- ``Submit``: Loads airport information for given ICAO ident.
+- ``Reload``: Reload page manually to catch weather changes, for example.
 
 The links ``Runways``, ``Com Frequencies``, ``Procedures`` and
 ``Weather`` jump to the respective sections below. Click the link

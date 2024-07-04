@@ -78,13 +78,13 @@ Click ``Create Flight Plan`` before doing changes on the map or in the flight pl
 
 
 .. figure:: ../images/routedescr.jpg
-    :scale: 50%
+  :scale: 50%
 
-    A route description (1) (bold top section) that was read successfully with
-    a few warnings about ignored elements. The waypoint ``INVALID`` could not be
-    found. Altitude, SID and STAR were recognized.
-    More inactive route descriptions are stored below (2).
-    *Click image to enlarge.*
+  A route description (1) (bold top section) that was read successfully with
+  a few warnings about ignored elements. The waypoint ``INVALID`` could not be
+  found. Altitude, SID and STAR were recognized.
+  More inactive route descriptions are stored below (2).
+  *Click image to enlarge.*
 
 .. _routedescr-buttons:
 
@@ -93,69 +93,69 @@ Buttons
 
 Note that some buttons are now shown when opening this dialog from :doc:`LOADSIMBRIEF`.
 
--  ``Undo`` |Undo| and ``Redo`` |Redo|: Undo changes in the text input field. This does not affect the flight plan table.
--  ``To Clipboard``: Copy the current active description from the input field as plain text to the clipboard.
--  ``From Clipboard``: Insert text from clipboard into the top of the input field making it the active route description.
-   The inserted text is converted to upper case and all invalid characters are removed from the text before reading.
--  ``Load from Flight Plan``: Create the route string from the current
-   flight plan and inserts it into the top of the input field making it the active route description.
-   Use this after changing settings with drop down
-   menu buttons or after modifying the flight plan on the map or in the flight plan table.
--  ``IFR`` or ``VFR``: The flight plan type used when creating a plan. This setting will be taken over
-   into the field :ref:`flight-plan-type` in the tab ``Flight Plan`` when clicking one of the ``Create Flight Plan ...`` buttons.
--  Menu Button |Menu Button|: ``Write`` denotes flight plan to
-   description and ``Read`` denotes description to flight plan.
-   You can tear off the drop down menu from the button by clicking on the dashed line on top of it.
-   Note that the menus starting with ``Write`` are now shown when opening this dialog from :doc:`LOADSIMBRIEF`.
+- ``Undo`` |Undo| and ``Redo`` |Redo|: Undo changes in the text input field. This does not affect the flight plan table.
+- ``To Clipboard``: Copy the current active description from the input field as plain text to the clipboard.
+- ``From Clipboard``: Insert text from clipboard into the top of the input field making it the active route description.
+  The inserted text is converted to upper case and all invalid characters are removed from the text before reading.
+- ``Load from Flight Plan``: Create the route string from the current
+  flight plan and inserts it into the top of the input field making it the active route description.
+  Use this after changing settings with drop down
+  menu buttons or after modifying the flight plan on the map or in the flight plan table.
+- ``IFR`` or ``VFR``: The flight plan type used when creating a plan. This setting will be taken over
+  into the field :ref:`flight-plan-type` in the tab ``Flight Plan`` when clicking one of the ``Create Flight Plan ...`` buttons.
+- Menu Button |Menu Button|: ``Write`` denotes flight plan to
+  description and ``Read`` denotes description to flight plan.
+  You can tear off the drop down menu from the button by clicking on the dashed line on top of it.
+  Note that the menus starting with ``Write`` are now shown when opening this dialog from :doc:`LOADSIMBRIEF`.
 
-   -  ``Write runway and approach instructions``: This adds departure and arrival runways separated by a ``/``
-      to the start and destination airports if given. An approach procedure including transition is added instead if given.
-   -  ``Write cruise speed and altitude instruction``: Add cruise
-      altitude from flight plan and speed as set in the aircraft performance.
-   -  ``Write DCT (direct) instructions``: Add ``DCT`` for any direct
-      waypoint connections in the flight plan.
-   -  ``Write Alternates``: Appends all alternate airports to the end of
-      the description.
-   -  ``Write SID and STAR``: Add SID and STAR names, if any are used for
-      departure or arrival.
-   -  ``Write generic SID and STAR``: Add the generic ``SID`` and
-      ``STAR`` keywords if no real SID and/or STAR were selected.
-   -  ``Write no SID and STAR``: Do not include any SID and STAR information at all.
-   -  ``Write STAR and transition reversed``: Write ``TRANS.STAR`` instead of ``STAR.TRANS`` if selected.
-   -  ``Write SID/STAR and transition space separated``: Write ``SID TRANS`` and
-      ``STAR TRANS`` instead of ``SID.TRANS`` and ``STAR.TRANS`` if selected.
-   -  ``Read trailing Airports as Alternates``:
+  - ``Write runway and approach instructions``: This adds departure and arrival runways separated by a ``/``
+    to the start and destination airports if given. An approach procedure including transition is added instead if given.
+  - ``Write cruise speed and altitude instruction``: Add cruise
+    altitude from flight plan and speed as set in the aircraft performance.
+  - ``Write DCT (direct) instructions``: Add ``DCT`` for any direct
+    waypoint connections in the flight plan.
+  - ``Write Alternates``: Appends all alternate airports to the end of
+    the description.
+  - ``Write SID and STAR``: Add SID and STAR names, if any are used for
+    departure or arrival.
+  - ``Write generic SID and STAR``: Add the generic ``SID`` and
+    ``STAR`` keywords if no real SID and/or STAR were selected.
+  - ``Write no SID and STAR``: Do not include any SID and STAR information at all.
+  - ``Write STAR and transition reversed``: Write ``TRANS.STAR`` instead of ``STAR.TRANS`` if selected.
+  - ``Write SID/STAR and transition space separated``: Write ``SID TRANS`` and
+    ``STAR TRANS`` instead of ``SID.TRANS`` and ``STAR.TRANS`` if selected.
+  - ``Read trailing Airports as Alternates``:
 
-       -  Enabled: A list of airports at the end of the description will
-          be read as alternate airports except the first in the chain of
-          consecutive airports which will be used as destination. Any
-          airport with a valid STAR in the chain will be treated as
-          destination too.
-       -  Disabled: Reading simply creates a flight plan with the
-          airports as intermediate waypoints and the last one as
-          destination. See example below.
+    - Enabled: A list of airports at the end of the description will
+      be read as alternate airports except the first in the chain of
+      consecutive airports which will be used as destination. Any
+      airport with a valid STAR in the chain will be treated as
+      destination too.
+    - Disabled: Reading simply creates a flight plan with the
+      airports as intermediate waypoints and the last one as
+      destination. See example below.
 
-   - ``Advanced``: Sub-menu with less often use options.
+  - ``Advanced``: Sub-menu with less often use options.
 
-       -  ``Write waypoints instead of Airways``: Does not include airway names in the string
-          but expands it and inserts the waypoints names only.
-       -  ``Write departure and destination airport``: Note that disabling
-          this option will result in an invalid route description which cannot be read
-          back into a flight plan.
-       -  ``Read: Match coordinates to waypoints``: Tries to matches coordinates to nearby waypoints.
-          ``EICK 5000N00760W EDDF`` will result in ``EICK GAPLI EDDF`` if this is enabled, for example.
-       -  ``Read first and last item as navaid``: Does not require airports as start and destination and will
-          resolve the first and last item to navaids. Useful for reading snippets.
+    - ``Write waypoints instead of Airways``: Does not include airway names in the string
+      but expands it and inserts the waypoints names only.
+    - ``Write departure and destination airport``: Note that disabling
+      this option will result in an invalid route description which cannot be read
+      back into a flight plan.
+    - ``Read: Match coordinates to waypoints``: Tries to matches coordinates to nearby waypoints.
+      ``EICK 5000N00760W EDDF`` will result in ``EICK GAPLI EDDF`` if this is enabled, for example.
+    - ``Read first and last item as navaid``: Does not require airports as start and destination and will
+      resolve the first and last item to navaids. Useful for reading snippets.
 
--  ``Create Flight Plan and Close``: Closes the dialog and creates a new flight
-   plan for the read route description. Replaces the current flight plan. You can undo this change in the
-   :ref:`flight-plan-table`.
--  ``Create Flight Plan``: As above but keeps the dialog window open.
+- ``Create Flight Plan and Close``: Closes the dialog and creates a new flight
+  plan for the read route description. Replaces the current flight plan. You can undo this change in the
+  :ref:`flight-plan-table`.
+- ``Create Flight Plan``: As above but keeps the dialog window open.
 
 .. tip::
 
-   In any case you can use Undo and Redo to change the input field (right click context menu in the input field)
-   as well as the flight plan table (:ref:`undo-redo`).
+  In any case you can use Undo and Redo to change the input field (right click context menu in the input field)
+  as well as the flight plan table (:ref:`undo-redo`).
 
 .. _routedescr-airport-ident:
 
@@ -248,16 +248,16 @@ Cruising ground speed and cruising level not separated by a space.
 
 Speed is prefixed with:
 
--  ``K``: Kilometers per hour followed by a four digit value.
--  ``N``: Knots followed by a four digit value.
--  ``M``: Mach followed by a three digit value. The mach value is converted to knots ground speed assuming standard atmosphere conditions at the given flight altitude.
+- ``K``: Kilometers per hour followed by a four digit value.
+- ``N``: Knots followed by a four digit value.
+- ``M``: Mach followed by a three digit value. The mach value is converted to knots ground speed assuming standard atmosphere conditions at the given flight altitude.
 
 Altitude is prefixed with:
 
--  ``F`` :Flight level in three digits.
--  ``S``: Metric flight level in three digits of tens of meters.
--  ``A``: Altitude in hundreds of feet in three digits.
--  ``M``: Altitude in tens of meter in four digits.
+- ``F`` :Flight level in three digits.
+- ``S``: Metric flight level in three digits of tens of meters.
+- ``A``: Altitude in hundreds of feet in three digits.
+- ``M``: Altitude in tens of meter in four digits.
 
 Examples:
 
@@ -274,38 +274,38 @@ Coordinates can be supplied in different formats:
 
 **Degrees** only (7 characters): Two digits and north/south indicator plus three digits and east/west indicator.
 
-      ``51N010E``
+  ``51N010E``
 
 **Degrees and minutes** (11 characters): Two digits degrees, two digits for minutes and north/south indicator. Then three digits for degrees, two digits for minutes and east/west indicator.
 
-      ``4010N03822W``.
+  ``4010N03822W``.
 
 **Degrees, minutes and seconds** (15 characters): Two digits degrees, two digits for minutes, two digits for seconds and north/south indicator. Then three digits for degrees, two digits for minutes, two digits for seconds and east/west indicator. This format is used by `SkyVector <https://skyvector.com>`__ for example.
 
-      ``481200N0112842E``.
+  ``481200N0112842E``.
 
 **ARINC 424 Code Convention**: All full degree waypoints either a part of the navigation database or not.
 
-      ``57N30`` (N57 W130) or ``5730S`` (S57 W030).
+  ``57N30`` (N57 W130) or ``5730S`` (S57 W030).
 
 **North Atlantic track points** (NAT). Two digits degrees north and two digits degrees west followed by character ``N``.
 
-      ``5010N``.
+  ``5010N``.
 
 **Coordinate waypoint pairs** with degrees and minutes as above and prefixed with north/south and east/west indicator.
 
-      ``N4200 W02000`` or ``N4200/W02000``.
+  ``N4200 W02000`` or ``N4200/W02000``.
 
 **Garmin GFP format** (13 characters) north/south indicator, two digits degrees, three digits for minutes by 10. Then east/west indicator, three digits degrees, three digits minutes by 10. This format is used by the *Flight1 GTN 650/750*.
 
-      ``N48194W123096``
+  ``N48194W123096``
 
 .. note::
 
-      Coordinates in the generated description use the degrees and minutes format, e.g. ``4010N03822W``.
-      This is done to keep compatibility with other applications.
-      Note that this format is limited to one minute accuracy which is up to 1 NM depending on position.
-      You might see inaccurate positioning when re-reading coordinates.
+  Coordinates in the generated description use the degrees and minutes format, e.g. ``4010N03822W``.
+  This is done to keep compatibility with other applications.
+  Note that this format is limited to one minute accuracy which is up to 1 NM depending on position.
+  You might see inaccurate positioning when re-reading coordinates.
 
 .. _examples:
 
@@ -313,43 +313,43 @@ Flight Plan Description Examples
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Direct connection Frankfurt Main (EDDF) to Fiumicino (LIRF):
-      ``EDDF LIRF`` or ``EDDF DCT LIRF``
+  ``EDDF LIRF`` or ``EDDF DCT LIRF``
 
 VOR to VOR:
-      ``EDDF FRD KPT BOA CMP LIRF``
+  ``EDDF FRD KPT BOA CMP LIRF``
 
 Same as above with departure time ( ``ETD`` ) and arrival time ( ``ETA`` ) which both will be ignored:
-      ``EDDF1200 FRD KPT BOA CMP LIRF1300``.
+  ``EDDF1200 FRD KPT BOA CMP LIRF1300``.
 
 Same as above on flight level 310 at 410 knots:
-      ``EDDF N0410F310 DCT FRD DCT KPT DCT BOA DCT CMP DCT LIRF``
+  ``EDDF N0410F310 DCT FRD DCT KPT DCT BOA DCT CMP DCT LIRF``
 
 Using Jet airways:
-      ``EDDF ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG Y740 LORLO M738 AMTEL M727 TAQ LIRF``
+  ``EDDF ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG Y740 LORLO M738 AMTEL M727 TAQ LIRF``
 
 Same as above on flight level 310 at mach 0.71 with an additional speed and altitude at ``NATAG`` which will be ignored:
-      ``EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF``
+  ``EDDF M071F310 SID ASKIK T844 KOVAN UL608 TEDGO UL607 UTABA UM738 NATAG/M069F350 Y740 LORLO M738 AMTEL M727 TAQ STAR LIRF``
 
 User defined waypoints with degree/minute notation and an alternate airport ``LIRE`` :
-      ``EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE``
+  ``EDDF N0174F255 4732N00950E 4627N01019E 4450N01103E LIRF LIRE``
 
 Flight plan using SID and STAR procedures with transitions:
-      ``KPWA RDHK2.HOLLE ATOKA J25 FUZ J33 CRIED J50 LFK OHIO3.LFK KHOU``
+  ``KPWA RDHK2.HOLLE ATOKA J25 FUZ J33 CRIED J50 LFK OHIO3.LFK KHOU``
 
 Flight plan using the generic SID and STAR keywords:
-      ``KPWA SID ATOKA J25 FUZ J33 CRIED J50 LFK STAR KHOU``
+  ``KPWA SID ATOKA J25 FUZ J33 CRIED J50 LFK STAR KHOU``
 
 Flight plan using SID and STAR procedures with transitions and two alternate airports:
-      ``KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT``
+  ``KPWA N0169F190 MUDDE3 ATOKA J25 FUZ J33 CRIED J50 LFK BAYYY3.SJI KHOU KCLL KVCT``
 
 Approach ILS 05R via LMA
-    ``EDDK/06 NVO1K NVO Q760 INLAR T853 LMA EDDL/LMA.I05R``
+  ``EDDK/06 NVO1K NVO Q760 INLAR T853 LMA EDDL/LMA.I05R``
 
 Depart from runway 36 using SID TFS3T:
-      ``GCLA/36 TFS3T TFS GCTS/TES2.I07-Y``
+  ``GCLA/36 TFS3T TFS GCTS/TES2.I07-Y``
 
 Approach RNAV 04L via BOOKE:
-      ``KSFO/01R DCT BAART R464 BITTA KAENA2 PHNL/BOOKE.R04L``
+  ``KSFO/01R DCT BAART R464 BITTA KAENA2 PHNL/BOOKE.R04L``
 
 
 .. |Menu Button| image:: ../images/icon_menubutton.png

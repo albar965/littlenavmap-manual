@@ -8,8 +8,8 @@ The information entered here is saved with the flight plan in the *Little Navmap
 
 .. note::
 
-      Keep in mind that all information entered here is lost if the flight plan position is removed or a
-      new flight plan is calculated (:doc:`ROUTECALC`).
+  Keep in mind that all information entered here is lost if the flight plan position is removed or a
+  new flight plan is calculated (:doc:`ROUTECALC`).
 
 Header
 ~~~~~~~
@@ -26,7 +26,7 @@ See :doc:`REMARKS` for more information.
 
 .. figure:: ../images/edit_flightplan_remarks.jpg
 
-       Editing remarks for a flight plan waypoint. Also showing abbreviated tooltip in flight plan table.
+  Editing remarks for a flight plan waypoint. Also showing abbreviated tooltip in flight plan table.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png

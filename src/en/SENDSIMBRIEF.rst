@@ -23,8 +23,8 @@ You can reset this using :ref:`reset-messages` in menu ``Tools``.
 
 .. figure:: ../images/simbrief_export.jpg
 
-      SimBrief export dialog.
+  SimBrief export dialog.
 
 .. note::
 
-    You have to use the same or at least a close AIRAC cycle in SimBrief and *Little Navmap* to avoid issues when exchanging flight plans.
+  You have to use the same or at least a close AIRAC cycle in SimBrief and *Little Navmap* to avoid issues when exchanging flight plans.

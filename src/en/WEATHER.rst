@@ -15,13 +15,13 @@ information window and tooltips as well as weather symbols on the map.
 - `IVAO <https://www.ivao.aero>`__ network online weather service
 - `HiFi Simulation Technologies <https://www.hifisimtech.com>`__. The short name as shown in *Little Navmap* added in brackets.
 
-    - *Active Sky Next* (``ASN``)
-    - *AS16*
-    - *Active Sky for Prepar3D v4* (``ASP4``)
-    - *Active Sky for Prepar3D v6* (``ASP6``)
-    - *Active Sky for X-Plane 11* (``ASXP11``)
-    - *Active Sky for X-Plane 12* (``ASXP12``)
-    - *Active Sky FS* for MSFS (``ASFS``)
+  - *Active Sky Next* (``ASN``)
+  - *AS16*
+  - *Active Sky for Prepar3D v4* (``ASP4``)
+  - *Active Sky for Prepar3D v6* (``ASP6``)
+  - *Active Sky for X-Plane 11* (``ASXP11``)
+  - *Active Sky for X-Plane 12* (``ASXP12``)
+  - *Active Sky FS* for MSFS (``ASFS``)
 
 Weather files are accessed or downloaded on demand when an option in menu :ref:`show-airport-weather` or :ref:`weather-menu` is selected.
 
@@ -95,16 +95,16 @@ falls in one of three categories, depending on the selected airport:
   weather station is not necessarily an airport.
 - ``Interpolated``:
 
-    - **X-Plane, NOAA, VATSIM and IVAO**: The weather is interpolated by *Little Navmap*
-      using the eight nearest stations of the selected
-      airport. The used stations are listed in the airport weather information (:ref:`airport-weather-tab`).
-      Note that this does not cover cloud layers. Use the nearest airport as reference for clouds.
-    - **FSX and P3D**: The weather is interpolated by
-      the flight simulator using three stations closest to the selected
-      airport. FSX and P3D only provide non-interpolated weather for
-      airports close to the user aircraft. The weather for other airports
-      is always interpolated. The ident of the selected airport is used in
-      the METAR report for this kind of weather report.
+  - **X-Plane, NOAA, VATSIM and IVAO**: The weather is interpolated by *Little Navmap*
+    using the eight nearest stations of the selected
+    airport. The used stations are listed in the airport weather information (:ref:`airport-weather-tab`).
+    Note that this does not cover cloud layers. Use the nearest airport as reference for clouds.
+  - **FSX and P3D**: The weather is interpolated by
+    the flight simulator using three stations closest to the selected
+    airport. FSX and P3D only provide non-interpolated weather for
+    airports close to the user aircraft. The weather for other airports
+    is always interpolated. The ident of the selected airport is used in
+    the METAR report for this kind of weather report.
 
 The flight simulator weather is updated every 15 seconds to catch manual
 changes or changes in the weather theme.

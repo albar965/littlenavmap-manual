@@ -6,20 +6,13 @@ Appendix
 Tips for slow Computers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--  Dialog ``Options`` -> ``Map`` -> ``Details while scrolling ...``: Use
-   ``Normal ...``
--  Dialog ``Options`` -> ``Simulator Aircraft`` ->
-   ``Simulator Aircraft scroll box size ...``: Use a higher value to
-   reduce map updates.
--  Close the window ``Flight Plan Elevation Profile``. It will stop all
-   background processing when closed.
--  Avoid airspaces. Switch them off using the |Show Airspaces| button on
-   the airspaces toolbar.
--  Switch off all AI traffic in the dialog ``Connect``. See
-   :ref:`options`.
--  Use the map projection ``Mercator``. It consumes less resources since
-   it can use the downloaded image tiles as is and does not transform
-   them to the spherical format.
+- Dialog ``Options`` -> ``Map`` -> ``Details while scrolling ...``: Use ``Normal ...``
+- Dialog ``Options`` -> ``Simulator Aircraft`` -> ``Simulator Aircraft scroll box size ...``: Use a higher value to reduce map updates.
+- Close the window ``Flight Plan Elevation Profile``. It will stop all background processing when closed.
+- Avoid airspaces. Switch them off using the |Show Airspaces| button on the airspaces toolbar.
+- Switch off all AI traffic in the dialog ``Connect``. See :ref:`options`.
+- Use the map projection ``Mercator``. It consumes less resources since it can use the downloaded image tiles as is and does not transform
+  them to the spherical format.
 
 .. _troubleshoot:
 

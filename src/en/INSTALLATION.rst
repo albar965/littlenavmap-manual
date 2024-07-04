@@ -17,12 +17,12 @@ which has important notes and describes the changes between versions.
 
 .. warning::
 
-    Do not install *Little Navmap* in the MSFS directory ``Community`` or in the X-Plane ``plugins`` directory.
+  Do not install *Little Navmap* in the MSFS directory ``Community`` or in the X-Plane ``plugins`` directory.
 
 .. important::
 
-    **Apple macOS users:** Keep in mind that you have to clear the quarantine flag for *Little Xpconnect* on update. See
-    :ref:`clear-macos-quarantine`.
+  **Apple macOS users:** Keep in mind that you have to clear the quarantine flag for *Little Xpconnect* on update. See
+  :ref:`clear-macos-quarantine`.
 
 .. _installation-updating:
 
@@ -37,7 +37,7 @@ All files from the previous ZIP archive can be deleted since settings are stored
 
 .. warning::
 
-    In any case do not merge the installation directories since old files can cause problems.
+  In any case do not merge the installation directories since old files can cause problems.
 
 There is no need to delete the old settings directory. The program is
 written in a way that it can work with old setting files and adapts these if needed. In some cases
@@ -87,7 +87,7 @@ Obsolete files are automatically removed before updating the installation.
 
 .. note::
 
-    Note that there is no need to uninstall *Little Navmap* before updating to a new version.
+  Note that there is no need to uninstall *Little Navmap* before updating to a new version.
 
 File types can optionally be associated with *Little Navmap* which allows to load a flight plan by double
 clicking on a LNMPLN file in Windows Explorer, for example. *Little Navmap* is either started or an already running
@@ -100,12 +100,12 @@ Start menu entries for all included programs as well as the most important files
 
 .. note::
 
-     There is no need to install or modify any files in the installation directory for the
-     web server or map themes.
+  There is no need to install or modify any files in the installation directory for the
+  web server or map themes.
 
-     See options page :ref:`options-web-server` for information how to change the root directory and
-     :doc:`MAPTHEMES` for information how to set the map theme directory and how to install additional map
-     themes.
+  See options page :ref:`options-web-server` for information how to change the root directory and
+  :doc:`MAPTHEMES` for information how to set the map theme directory and how to install additional map
+  themes.
 
 Uninstall
 '''''''''''''''''''''''''''''''''''''''
@@ -120,7 +120,7 @@ Files in directories like ``Documents\Little Navmap`` are not deleted.
 
 .. warning::
 
-   Note that this step also removes the userpoint database as well as the logbook and cannot be undone.
+  Note that this step also removes the userpoint database as well as the logbook and cannot be undone.
 
 The two directories which are optionally deleted are:
 
@@ -138,13 +138,13 @@ to run *Little Navmap* in portable mode (see :doc:`PORTABLE` for more informatio
 
 .. important::
 
-    Do not extract the archive into the directory ``c:\Program Files\`` or
-    ``c:\Program Files (x86)\`` since this requires administrative
-    privileges. Windows keeps control of these directories, therefore other
-    problems might occur like replaced or deleted files.
+  Do not extract the archive into the directory ``c:\Program Files\`` or
+  ``c:\Program Files (x86)\`` since this requires administrative
+  privileges. Windows keeps control of these directories, therefore other
+  problems might occur like replaced or deleted files.
 
-    There is no need to run *Little Navmap* as administrator.
-    Adapt directory permissions if you have to export flight plans to protected places.
+  There is no need to run *Little Navmap* as administrator.
+  Adapt directory permissions if you have to export flight plans to protected places.
 
 Extract the Zip archive into a directory like ``C:\Users\YOURNAME\Documents\Little Navmap`` or
 ``C:\Users\YOURNAME\Programs\Little Navmap``.
@@ -189,10 +189,8 @@ of the program on Windows.
 Therefore, it is recommended to exclude the following directories from
 scanning:
 
--  Disk cache for map tiles:
-   ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data``
--  Scenery library and userpoint
-   databases\ ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
+- Disk cache for map tiles: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data``
+- Scenery library and userpoint databases\ ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
 
 These directories do not contain executable files and are accessed
 frequently by *Little Navmap*.
@@ -205,9 +203,9 @@ directory ``Applications`` or any other directory.
 
 .. note::
 
-     The menu entry which is referenced as ``Tools`` -> :doc:`OPTIONS` in this manual
-     for Windows and Linux
-     can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
+  The menu entry which is referenced as ``Tools`` -> :doc:`OPTIONS` in this manual
+  for Windows and Linux
+  can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
 First Start on macOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -297,22 +295,22 @@ All configuration files and databases are stored per default in these directorie
 
 How to use ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP`` as a settings directory on Windows:
 
-#.  Right click on the ``littlenavmap.exe`` file (extension might be hidden in Windows explorer depending on settings) and select ``Create Shortcut``.
-    You can also duplicate the shortcut in the Start menu or on the desktop if you used the installer.
-#.  Right click on the newly created shortcut and edit the shortcut properties.
-#.  Append ``--settings-path "C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP"`` to the path in the settings field separated by a
-    space before ``--settings-path``. Also keep the space before the path. Replace ``YOURUSERNAME`` with your login name.
-#.  Click ``Ok``.
+#. Right click on the ``littlenavmap.exe`` file (extension might be hidden in Windows explorer depending on settings) and select ``Create Shortcut``.
+   You can also duplicate the shortcut in the Start menu or on the desktop if you used the installer.
+#. Right click on the newly created shortcut and edit the shortcut properties.
+#. Append ``--settings-path "C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel-XP"`` to the path in the settings field separated by a
+   space before ``--settings-path``. Also keep the space before the path. Replace ``YOURUSERNAME`` with your login name.
+#. Click ``Ok``.
 
 
 Note that you have to enclose all paths in double quotes ``"`` if they contain spaces.
 
 .. figure:: ../images/winshortcut.jpg
 
-          Contents of the link properties dialog for the example above.
-          Extended target directory input field to have the whole path visible.
-          ``YOURUSERNAME`` replaced for user ``alex``. Note that the path to the
-          executable has to be put into double quotes too since it contains spaces.
+  Contents of the link properties dialog for the example above.
+  Extended target directory input field to have the whole path visible.
+  ``YOURUSERNAME`` replaced for user ``alex``. Note that the path to the
+  executable has to be put into double quotes too since it contains spaces.
 
 
 .. |Little Navmap Icon| image:: ../images/littlenavmap.svg

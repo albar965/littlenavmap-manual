@@ -49,11 +49,11 @@ Departure Airport
 Find the departure airport: Click into the map and zoom to the French
 Alps. You can use the following functions to navigate:
 
--  The map overlay on the right (:ref:`overlays-map`).
--  The mouse (click and drag) to move and the mouse wheel to zoom (:ref:`mouse-clicks-legend`).
--  The cursor keys to move and the keys ``+`` and ``-`` for zooming in
-   and out (click into the map window or press ``F2`` to activate it before using the keys).
-   See :ref:`key-commands-legend` about keyboard navigation.
+- The map overlay on the right (:ref:`overlays-map`).
+- The mouse (click and drag) to move and the mouse wheel to zoom (:ref:`mouse-clicks-legend`).
+- The cursor keys to move and the keys ``+`` and ``-`` for zooming in
+  and out (click into the map window or press ``F2`` to activate it before using the keys).
+  See :ref:`key-commands-legend` about keyboard navigation.
 
 Use the back |Back| and forward |Forward| buttons to jump in the
 position history like in a web browser.
@@ -70,15 +70,11 @@ Closer with tooltip:
 
 Now:
 
--  Zoom in until you see the airport diagram showing taxiways, runway
-   details, parking positions and more.
--  Zoom in further until you see the white parking numbers.
--  Right-click on the center of one of the green ramp parking spots (11
-   is used here).
--  Choose
-   ``Set Parking 11 at Meythet (LFLP) as Departure``
-   |Select Airport / Parking as Flight Plan Departure| (:ref:`set-as-flight-plan-departure`) in the context
-   menu.
+- Zoom in until you see the airport diagram showing taxiways, runway details, parking positions and more.
+- Zoom in further until you see the white parking numbers.
+- Right-click on the center of one of the green ramp parking spots (11 is used here).
+- Choose ``Set Parking 11 at Meythet (LFLP) as Departure``
+  |Select Airport / Parking as Flight Plan Departure| (:ref:`set-as-flight-plan-departure`) in the context menu.
 
 The airport layout and parking spot will be different depending on used simulator.
 
@@ -96,11 +92,9 @@ En-Route Waypoints
 
 Add the waypoints now:
 
--  Scroll along the valley to the south east across the lake Lac
-   d'Annecy.
--  Click :ref:`append-position-to-flight-plan` |Append Position to Flight
-   Plan|. The clicked position will be added as an user defined waypoint (green rectangle)
-   to the end of your plan.
+- Scroll along the valley to the south east across the lake Lac d'Annecy.
+- Click :ref:`append-position-to-flight-plan` |Append Position to Flight Plan|.
+  The clicked position will be added as an user defined waypoint (green rectangle) to the end of your plan.
 
 Click undo |Undo| or redo |Redo| in the toolbar if you don't like what you just added.
 
@@ -158,13 +152,10 @@ Change the flight plan type to ``VFR`` if not already done.
 
 Now check the cruise altitude:
 
--  Look at the flight plan elevation profile. There is a red line
-   indicating the minimum safe altitude.
--  Adjust the flight plan cruise altitude until you're above the red
-   line.
--  Select ``Flight Plan`` -> :ref:`adjust-flight-plan-alt` |Adjust
-   Flight Plan Altitude| to get the correct altitude adjusted by the
-   hemispherical rule.
+- Look at the flight plan elevation profile. There is a red line indicating the minimum safe altitude.
+- Adjust the flight plan cruise altitude until you're above the red line.
+- Select ``Flight Plan`` -> :ref:`adjust-flight-plan-alt` |Adjust Flight Plan Altitude| to get the correct altitude adjusted by the
+  hemispherical rule.
 
 Note that the default hemispherical rule is not correct for France until
 you change it in the options dialog, but avoid this for the sake of
@@ -183,12 +174,9 @@ Now look if your flight plan touches any airspaces.
 Click into one of the airspaces nearby start and destination and have a
 look at the information dock window. There are several airspaces:
 
--  ``Geneva TMA Sector 8`` which starts at 9,500 ft above mean sea
-   level (MSL). This is higher than our cruise altitude and won't affect
-   us.
--  Two Class E airspaces. The information window notes for these:
-   ``Controlled, IFR and VFR, ATC clearance required for IFR only``. No
-   problem because we will fly using VFR.
+- ``Geneva TMA Sector 8`` which starts at 9,500 ft above mean sea level (MSL). This is higher than our cruise altitude and won't affect us.
+- Two Class E airspaces. The information window notes for these: ``Controlled, IFR and VFR, ATC clearance required for IFR only``. No
+  problem because we will fly using VFR.
 
 The situation is similar at the destination.
 
@@ -221,30 +209,30 @@ Flying
 Follow the steps below to get a moving map and see your aircraft in
 *Little Navmap*:
 
--  Open the dialog ``Connect`` using ``Tools`` ->
-   :ref:`flight-simulator-connection` |Flight Simulator Connection| and
-   check if ``Connect automatically`` is selected. Enable it if not.
-   *Little Navmap* will find the simulator no matter if it is already
-   started or will be started later.
--  Click on the tab which corresponds to your simulator.
-   Image below shows the tab for FSX, P3D or MSFS on the left
-   and the tab for X-Plane on the right. Tab titles will look different
-   depending on whether you are using the 32-bit (FSX and P3D) or the 64-bit (MSFS and X-Plane)
-   build of *Little Navmap*. Tab titles will look different
-   depending on whether you are using the 32-bit (FSX and P3D) or the 64-bit (MSFS and X-Plane)
-   build of *Little Navmap*.
+- Open the dialog ``Connect`` using ``Tools`` ->
+  :ref:`flight-simulator-connection` |Flight Simulator Connection| and
+  check if ``Connect automatically`` is selected. Enable it if not.
+  *Little Navmap* will find the simulator no matter if it is already
+  started or will be started later.
+- Click on the tab which corresponds to your simulator.
+  Image below shows the tab for FSX, P3D or MSFS on the left
+  and the tab for X-Plane on the right. Tab titles will look different
+  depending on whether you are using the 32-bit (FSX and P3D) or the 64-bit (MSFS and X-Plane)
+  build of *Little Navmap*. Tab titles will look different
+  depending on whether you are using the 32-bit (FSX and P3D) or the 64-bit (MSFS and X-Plane)
+  build of *Little Navmap*.
 
-   |Connect Dialog|
--  Click ``Connect`` which will close the dialog.
--  Enable ``Map`` -> :ref:`center-aircraft` |Center Aircraft|. The map will
-   jump to the simulator aircraft and keep it centered if an active flight
-   is loaded, i.e. the simulator is not in the opening screen.
--  Start the simulator if not already done, load the flight plan and go flying.
+  |Connect Dialog|
+- Click ``Connect`` which will close the dialog.
+- Enable ``Map`` -> :ref:`center-aircraft` |Center Aircraft|. The map will
+  jump to the simulator aircraft and keep it centered if an active flight
+  is loaded, i.e. the simulator is not in the opening screen.
+- Start the simulator if not already done, load the flight plan and go flying.
 
 .. important::
 
-    Make sure you use the right build of *Little Navmap*.
-    The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+  Make sure you use the right build of *Little Navmap*.
+  The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
 
 See also :doc:`CONNECT`.
 

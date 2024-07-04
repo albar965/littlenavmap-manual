@@ -12,9 +12,9 @@ The shadow darkness can be changed in the options dialog on page
 :ref:`options-map`, ``Sun shading Darkness`` at the bottom of the dialog.
 
 .. figure:: ../images/sunshadow.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Sun shading on the northern hemisphere. *Click image to enlarge.*
+  Sun shading on the northern hemisphere. *Click image to enlarge.*
 
 .. _sun-shadow-time-sources:
 
@@ -25,12 +25,12 @@ You can choose between three time source for the sun shading. Time is
 not fixed and will advance for all sources or updated from simulator
 time.
 
--  ``Simulator``: Uses the time of the connected flight simulator. Falls
-   back to real time if not connected to a simulator. Automatically
-   updates the shadow if the simulator time changes.
--  ``Real UTC Time``: Always use real time.
--  ``User defined Time``: Allows to use the user defined time as changed
-   by ``Set User defined Time`` below.
+- ``Simulator``: Uses the time of the connected flight simulator. Falls
+  back to real time if not connected to a simulator. Automatically
+  updates the shadow if the simulator time changes.
+- ``Real UTC Time``: Always use real time.
+- ``User defined Time``: Allows to use the user defined time as changed
+  by ``Set User defined Time`` below.
 
 .. _sun-shadow-user-defined:
 
@@ -43,20 +43,20 @@ sun shading.
 
 .. tip::
 
-     You can move the dialog away from the map window and see the results
-     immediately by clicking the button ``Apply``.
+  You can move the dialog away from the map window and see the results
+  immediately by clicking the button ``Apply``.
 
 .. note::
 
-     Do not forget to click on a date when changing months or years.
-     Otherwise the old date will be used.
+  Do not forget to click on a date when changing months or years.
+  Otherwise the old date will be used.
 
 Note that the user defined time is reset to current real time when
 restarting *Little Navmap*.
 
 .. figure:: ../images/sunshadowtime.jpg
 
-        Date and time for sun shading on November 8 at 10:42 pm UTC Time.
+  Date and time for sun shading on November 8 at 10:42 pm UTC Time.
 
 .. |Sun Shading Icon| image:: ../images/icon_mapshadow.png
 

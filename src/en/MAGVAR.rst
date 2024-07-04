@@ -21,27 +21,27 @@ See :ref:`flightplan-legend` for more information on the labels and
 :ref:`magnetic-declination` for more information about declination and scenery databases.
 
 .. figure:: ../images/magvar_options.jpg
-   :scale: 75 %
+  :scale: 75 %
 
-   Flight plan leg course label related option on page :ref:`options-map-labels`. *Click image to enlarge.*
+  Flight plan leg course label related option on page :ref:`options-map-labels`. *Click image to enlarge.*
 
 
 .. figure:: ../images/magvar.jpg
 
-   Two flight plan legs showing the additional labels which are needed when using VOR navigation.
-   The VOR has a different calibrated declination (21° East) compared to the actual declination (14.8° East) in this area.
-   Therefore the approach to and departure from ``LTJ`` has to use the calibrated declination of the VOR station.
-   The two black and moving labels show the magnetic departure course for the respective legs based on actual declination while
-   the two dark blue fixed labels show the magnetic inbound and outbound course for the VOR based on the calibrated declination for ``LTJ``.
-   Use the dark blue and fixed labels when flying VOR to VOR and use the black moving labels when using a GPS.
+  Two flight plan legs showing the additional labels which are needed when using VOR navigation.
+  The VOR has a different calibrated declination (21° East) compared to the actual declination (14.8° East) in this area.
+  Therefore the approach to and departure from ``LTJ`` has to use the calibrated declination of the VOR station.
+  The two black and moving labels show the magnetic departure course for the respective legs based on actual declination while
+  the two dark blue fixed labels show the magnetic inbound and outbound course for the VOR based on the calibrated declination for ``LTJ``.
+  Use the dark blue and fixed labels when flying VOR to VOR and use the black moving labels when using a GPS.
 
 Furthermore consider the different departure and destination true courses for `Great Circle
 <https://en.wikipedia.org/wiki/Great-circle_distance>`__ routes. These appear at long flight plan legs.
 
 .. figure:: ../images/gc_course.jpg
 
-   A long great circle course leg shown in Mercator projection to show the exaggerated course
-   difference in long flight plan legs.
-   Note the different departure and arrival true courses which are a result of the
-   `Great Circle <https://en.wikipedia.org/wiki/Great-circle_distance>`__ route.
-   Although it looks like a detour in the Mercator projection, the great circle route is the shortest route between two points.
+  A long great circle course leg shown in Mercator projection to show the exaggerated course
+  difference in long flight plan legs.
+  Note the different departure and arrival true courses which are a result of the
+  `Great Circle <https://en.wikipedia.org/wiki/Great-circle_distance>`__ route.
+  Although it looks like a detour in the Mercator projection, the great circle route is the shortest route between two points.

@@ -50,14 +50,11 @@ tries to minimize tab changes.
 Example: If you click on an airport, a VOR, a NDB and an userpoint at
 the same position:
 
-#. *Little Navmap* fills all airport (several tabs), navaid and
-   userpoint tabs with information. The tab ``Navaids`` gets information
+#. *Little Navmap* fills all airport (several tabs), navaid and userpoint tabs with information. The tab ``Navaids`` gets information
    for the NDB and the VOR.
 #. The dock window ``Information`` is opened and raised if not visible.
-#. The tab ``Userpoints`` is opened and raised if not visible.
-   Userpoints are activated since user features like map highlights,
-   logbook entries or userpoints have priority before airports, navaids
-   and others.
+#. The tab ``Userpoints`` is opened and raised if not visible. Userpoints are activated since user features like map highlights,
+   logbook entries or userpoints have priority before airports, navaids and others.
 
 Use the map context menu for an easier selection of map objects through the sub-menus.
 
@@ -94,8 +91,8 @@ several files from different add-on sceneries or navdata updates.
 
 .. note::
 
-    The links shown as plain text with an additional remark like ``File not found`` if the file or directory is missing.
-    This can happen if you copy databases between computers. This is only a remark has no further consequences.
+  The links shown as plain text with an additional remark like ``File not found`` if the file or directory is missing.
+  This can happen if you copy databases between computers. This is only a remark has no further consequences.
 
 Tabs in Information Dock Window
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,17 +114,14 @@ avoided in the *Little Navmap* user interface but can still show up in some case
 
 See also :ref:`airport-search-ident` for airport search options.
 
--  **Ident or code shown in parentheses after airport name:** Either ICAO, FAA, IATA, local code or
-   internal code depending on simulator and availability.
--  ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only
-   available in X-Plane.
--  ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
-   The FAA code is only available in X-Plane.
--  ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__.
-   Available in X-Plane and Navigraph navdata.
--  ``Local Code``: Official local airport code mostly used for small airfields. Only available in
-   X-Plane.
--  ``X-Plane Ident:``: Internal identifier for X-Plane airports.
+- **Ident or code shown in parentheses after airport name:** Either ICAO, FAA, IATA, local code or
+  internal code depending on simulator and availability.
+- ``ICAO``: Four letter `ICAO code <https://en.wikipedia.org/wiki/ICAO_airport_code>`__. Only available in X-Plane.
+- ``FAA``: Airport code used in the United States given by the `Federal Aviation Administration <https://www.faa.gov/>`__.
+  The FAA code is only available in X-Plane.
+- ``IATA``: Three letter `IATA airport code <https://en.wikipedia.org/wiki/IATA_airport_code>`__. Available in X-Plane and Navigraph navdata.
+- ``Local Code``: Official local airport code mostly used for small airfields. Only available in X-Plane.
+- ``X-Plane Ident:``: Internal identifier for X-Plane airports.
 
 The airport codes are also shown in the information windows, tooltips and optionally in the map
 labels as well as in :doc:`ROUTEDESCR`. ICAO, FAA, IATA, and local codes are shown and the internal
@@ -167,10 +161,10 @@ information for the airport using the respective online service.
 The links are shown in the tab ``Overview``.
 
 .. figure:: ../images/infolinks.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Airport information with linked web-sites in the
-    ``Links`` section and links to user files in the ``Files`` section. *Click image to enlarge.*
+  Airport information with linked web-sites in the
+  ``Links`` section and links to user files in the ``Files`` section. *Click image to enlarge.*
 
 
 .. _airport-files:
@@ -188,17 +182,12 @@ application like a PDF reader if you click on the link.
 
 Examples for airport Ouessant (``LFEC``):
 
--  ``/home/YOURUSERNAME/Documents/Little Navmap Files/Airports/LFEC``: Linux
--  ``/home/YOURUSERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC``:
-   Linux with German translation
--  ``/Users/YOURUSERNAME/Documents/Little Navmap Files/Airports/LFEC``:
-   macOS
--  ``/Users/YOURUSERNAME/Documents/Little Navmap Dateien/Flugplätze/LFEC``:
-   macOS with German translation
--  ``C:\Users\YOURUSERNAME\Documents\Little Navmap Files/Airports/LFEC``:
-   Windows
--  ``C:\Users\YOURUSERNAME\Dokumente\Little Navmap Dateien/Flugplätze/LFEC``:
-   Windows with German translation
+- ``/home/YOURUSERNAME/Documents/Little Navmap Files/Airports/LFEC``: Linux
+- ``/home/YOURUSERNAME/Dokumente/Little Navmap Dateien/Flugplätze/LFEC``: Linux with German translation
+- ``/Users/YOURUSERNAME/Documents/Little Navmap Files/Airports/LFEC``: macOS
+- ``/Users/YOURUSERNAME/Documents/Little Navmap Dateien/Flugplätze/LFEC``: macOS with German translation
+- ``C:\Users\YOURUSERNAME\Documents\Little Navmap Files/Airports/LFEC``: Windows
+- ``C:\Users\YOURUSERNAME\Dokumente\Little Navmap Dateien/Flugplätze/LFEC``: Windows with German translation
 
 You can use the translated directory names or the English variant.
 Translated directory names depend on the program and system language.
@@ -212,13 +201,13 @@ English path like: ``...\Little Navmap Files\Airports\LFEC`` and
 The links are shown in the tab ``Overview``.
 
 .. figure:: ../images/infoairport.jpg
-       :scale: 70%
+  :scale: 70%
 
-       Airport information overview. Additional tabs show
-       information for runways, COM frequencies, approaches and weather.
-       Weather symbols user NOAA weather as source. Sunset and sunrise is based
-       on real date since not connected to a simulator. Wind direction prefers
-       runways 09 and 14. *Click image to enlarge.*
+  Airport information overview. Additional tabs show
+  information for runways, COM frequencies, approaches and weather.
+  Weather symbols user NOAA weather as source. Sunset and sunrise is based
+  on real date since not connected to a simulator. Wind direction prefers
+  runways 09 and 14. *Click image to enlarge.*
 
 .. _airport-runways-tab:
 
@@ -293,16 +282,16 @@ Click the link ``Remove Airway and Track Highlights`` in the information
 window to remove them from the map.
 
 .. figure:: ../images/infonavaid.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Navaid information. Two navaids were close to the cursor when clicked. *Click image to enlarge.*
+  Navaid information. Two navaids were close to the cursor when clicked. *Click image to enlarge.*
 
 
 .. figure:: ../images/infoairway.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Navaid information. Display of several airways with altitude restrictions and list of
-    clickable waypoints. Clicking on the link ``Map`` highlights a whole airway. *Click image to enlarge.*
+  Navaid information. Display of several airways with altitude restrictions and list of
+  clickable waypoints. Clicking on the link ``Map`` highlights a whole airway. *Click image to enlarge.*
 
 
 .. _airspaces-tab:
@@ -320,20 +309,19 @@ Click the link ``Remove Airspace Highlights`` in the information window
 to remove the highlights from the map.
 
 .. figure:: ../images/infoairspace.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Two airspaces that are shown in the information
-    after clicking into the map. Two airspaces are highlighted on the map
-    after clicking onto the ``Map`` link in the information text. *Click image to enlarge.*
+  Two airspaces that are shown in the information
+  after clicking into the map. Two airspaces are highlighted on the map
+  after clicking onto the ``Map`` link in the information text. *Click image to enlarge.*
 
 Other Tabs
 ^^^^^^^^^^
 
--  ``Userpoints``: Shows information about user defined waypoints or
-   points of interest.
--  ``Logbook``: Details about logbook entries.
--  ``Online Clients``: Online network clients/aircraft but not AI aircraft.
--  ``Online Centers``: Online network centers/airspaces.
+- ``Userpoints``: Shows information about user defined waypoints or points of interest.
+- ``Logbook``: Details about logbook entries.
+- ``Online Clients``: Online network clients/aircraft but not AI aircraft.
+- ``Online Centers``: Online network centers/airspaces.
 
 .. _simulator-aircraft-dock-window:
 
@@ -356,10 +344,10 @@ Gives an overview about the user aircraft and shows type, weight and
 fuel information.
 
 .. figure:: ../images/infoac.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Aircraft information when connected to a flight
-    simulator. Alternate units (liter and kg) are enabled. Screenshot based on *Little Navmap* 2.6. *Click image to enlarge.*
+  Aircraft information when connected to a flight
+  simulator. Alternate units (liter and kg) are enabled. Screenshot based on *Little Navmap* 2.6. *Click image to enlarge.*
 
 
 .. _progress-info:
@@ -404,18 +392,18 @@ Some rows like ``Ice`` are hidden if the condition is not met.
 
 .. note::
 
-     *Little Navmap* might show an orange warning about insufficient fuel at
-     destination in the early flight phases. This is normal since fuel flow
-     is higher for takeoff and early climb.
+  *Little Navmap* might show an orange warning about insufficient fuel at
+  destination in the early flight phases. This is normal since fuel flow
+  is higher for takeoff and early climb.
 
 .. include:: include/ALTCORRECTION.rst
 
 .. figure:: ../images/infoacprogress.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Aircraft progress information when connected to a
-    flight simulator and user aircraft airborne. Alternate weight and fuel
-    units (kg and liter) are enabled as well as true course display. *Click image to enlarge.*
+  Aircraft progress information when connected to a
+  flight simulator and user aircraft airborne. Alternate weight and fuel
+  units (kg and liter) are enabled as well as true course display. *Click image to enlarge.*
 
 
 .. _progress-configuration:
@@ -448,9 +436,9 @@ or P3D and if a flight plan is filed).
 Note that information on AI aircraft is limited on X-Plane.
 
 .. figure:: ../images/infoacai.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Information about an AI aircraft. *Click image to enlarge.*
+  Information about an AI aircraft. *Click image to enlarge.*
 
 
 .. |Information| image:: ../images/icon_infodock.png

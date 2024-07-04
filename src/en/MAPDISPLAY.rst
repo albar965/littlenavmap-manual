@@ -20,10 +20,10 @@ See :doc:`MAPTHEMES` for more information about how to install additional map th
 
 .. figure:: ../images/map_background.jpg
 
-       The OpenStreetMap background map showing aprons and taxiways of EDDF. These might not reflect what
-       you see in the simulator and are not taken from your scenery library including add-on airports. You can see the
-       same `here on the OpenStreetMap <https://www.openstreetmap.org/#map=16/50.0357/8.5300>`__
-       web page which delivers the background map tiles for *Little Navmap*.
+  The OpenStreetMap background map showing aprons and taxiways of EDDF. These might not reflect what
+  you see in the simulator and are not taken from your scenery library including add-on airports. You can see the
+  same `here on the OpenStreetMap <https://www.openstreetmap.org/#map=16/50.0357/8.5300>`__
+  web page which delivers the background map tiles for *Little Navmap*.
 
 Foreground Map Layer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,10 +37,10 @@ Only this layer provides the objects which enable tooltips and the functionality
 
 .. figure:: ../images/map_lnm.jpg
 
-       Aprons, taxiways and runways drawn by *Little Navmap*. These reflect your simulator stock or
-       add-on scenery. Tooltips are available.
-       Airport features can be disabled on options page :ref:`options-map-labels`.
-       See :doc:`LEGEND` for details about the various symbols shown by the map.
+  Aprons, taxiways and runways drawn by *Little Navmap*. These reflect your simulator stock or
+  add-on scenery. Tooltips are available.
+  Airport features can be disabled on options page :ref:`options-map-labels`.
+  See :doc:`LEGEND` for details about the various symbols shown by the map.
 
 .. _moving-map:
 
@@ -51,8 +51,8 @@ See :ref:`mouse-clicks-legend` and :ref:`key-commands-legend` in the map legend 
 
 .. note::
 
-         Do not forget to activate the map window by clicking into it or pressing
-         ``F2`` before using keys for movement.
+  Do not forget to activate the map window by clicking into it or pressing
+  ``F2`` before using keys for movement.
 
 .. _mouse-map:
 
@@ -84,11 +84,11 @@ the page :ref:`options-map-tooltips-and-clicks`.
 
 .. note::
 
-   The center of the airport symbol is the hotspot for right or left click actions as well as for
-   tooltip display. This is also the case if the whole airport diagram is visible.
+  The center of the airport symbol is the hotspot for right or left click actions as well as for
+  tooltip display. This is also the case if the whole airport diagram is visible.
 
-   The same applies to all navaids as well as airport parking spots where the center is the hotspot
-   for clicks.
+  The same applies to all navaids as well as airport parking spots where the center is the hotspot
+  for clicks.
 
 .. _mouse-click-hotspots:
 
@@ -157,9 +157,9 @@ See :ref:`vehicles-legend` for details about the aircraft type.
 
 .. tip::
 
-    On the lowest zoom distance all aircraft are drawn to scale as are the
-    parking spots which means you can easily check if your aircraft fits on
-    an apron, parking spot or taxiway.
+  On the lowest zoom distance all aircraft are drawn to scale as are the
+  parking spots which means you can easily check if your aircraft fits on
+  an apron, parking spot or taxiway.
 
 
 .. _overlays-map:
@@ -177,15 +177,15 @@ The context menu also has menu items which allow to customize the appearance and
 an overlay.
 
 .. figure:: ../images/overlays.jpg
-    :scale: 70%
+  :scale: 70%
 
-    Map window with all overlays shown. Right-click context menu on overlay ``Overview`` is opened. *Click image to enlarge.*
-    The overlays are:
+  Map window with all overlays shown. Right-click context menu on overlay ``Overview`` is opened. *Click image to enlarge.*
+  The overlays are:
 
-       #.  Overview
-       #.  Compass
-       #.  Scalebar
-       #.  Navigation
+    #. Overview
+    #. Compass
+    #. Scalebar
+    #. Navigation
 
 .. _tooltips-map:
 
@@ -204,14 +204,14 @@ options dialog on page :ref:`options-map-tooltips-and-clicks`.
 You can select which tooltips to show in options on page :ref:`options-map-tooltips-and-clicks`.
 
 .. figure:: ../images/tooltip.jpg
-       :scale: 50%
+  :scale: 50%
 
-       Tooltip with information for an airport and a VOR. *Click image to enlarge.*
+  Tooltip with information for an airport and a VOR. *Click image to enlarge.*
 
 .. figure:: ../images/tooltipairspace.jpg
-       :scale: 50%
+  :scale: 50%
 
-       Tooltip with information about airspaces. *Click image to enlarge.*
+  Tooltip with information about airspaces. *Click image to enlarge.*
 
 .. _highlights-map:
 
@@ -251,9 +251,9 @@ Labels can be changed on options page :ref:`options-map-labels`.
 
 .. tip::
 
-    Hide all map features from the toolbar to get a clean view on flight plan related airports and navaids only.
-    This will get rid of all unneeded map objects but keeps all navaids and related navaids for procedures
-    like ILS for the approach on the map.
+  Hide all map features from the toolbar to get a clean view on flight plan related airports and navaids only.
+  This will get rid of all unneeded map objects but keeps all navaids and related navaids for procedures
+  like ILS for the approach on the map.
 
 .. _airport-diagram-map:
 
@@ -275,17 +275,17 @@ Airport labels and diagram features can be changed on options page :ref:`options
 Disable all airport features except runways if you'd like to rely on the airport diagrams of the OpenStreetMap background map, for example.
 
 .. figure:: ../images/airportdiagram1.jpg
-         :scale: 50%
+  :scale: 50%
 
-         High level view of the airport diagram of EDDH. *Click image to enlarge.*
+  High level view of the airport diagram of EDDH. *Click image to enlarge.*
 
 .. figure:: ../images/airportdiagram2.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Detailed view of the airport diagram. Shows blue
-      gates on the right and green general aviation ramp parking spots
-      on the left. Long displaced threshold of runway 33 is visible. Dashed
-      yellow lines indicate taxi paths. *Click image to enlarge.*
+  Detailed view of the airport diagram. Shows blue
+  gates on the right and green general aviation ramp parking spots
+  on the left. Long displaced threshold of runway 33 is visible. Dashed
+  yellow lines indicate taxi paths. *Click image to enlarge.*
 
 .. _map-clutter:
 
@@ -323,25 +323,25 @@ Note that the drop down menu of the toolbar button can be torn off by clicking o
 Two projections can be selected in *Little Navmap*:
 
 Mercator
-   A flat projection that gives the most fluid movement and the sharpest
-   map when using picture tile based online maps themes like
-   *OpenStreetMap* or *OpenTopoMap*.
+  A flat projection that gives the most fluid movement and the sharpest
+  map when using picture tile based online maps themes like
+  *OpenStreetMap* or *OpenTopoMap*.
 
-   Note that this projection cannot be used near the poles. Use the spherical projection if you fly in Antarctica, for example.
+  Note that this projection cannot be used near the poles. Use the spherical projection if you fly in Antarctica, for example.
 
 Spherical
-   Shows earth as a globe which is the most natural projection. Movement
-   can stutter slightly when using the picture tile based online maps
-   themes like *OpenStreetMap* or *OpenTopoMap*. Use the ``Simple``,
-   ``Plain`` or ``Atlas`` map themes to prevent this.
+  Shows earth as a globe which is the most natural projection. Movement
+  can stutter slightly when using the picture tile based online maps
+  themes like *OpenStreetMap* or *OpenTopoMap*. Use the ``Simple``,
+  ``Plain`` or ``Atlas`` map themes to prevent this.
 
-   Online maps can appear slightly blurred when using this projection. This
-   is a result from converting the flat image tiles to the spherical
-   display.
+  Online maps can appear slightly blurred when using this projection. This
+  is a result from converting the flat image tiles to the spherical
+  display.
 
 .. figure:: ../images/sphericalpolitical.jpg
 
-      Spherical map projection with ``Simple`` offline map theme selected.
+  Spherical map projection with ``Simple`` offline map theme selected.
 
 .. _map-themes:
 
@@ -358,15 +358,15 @@ See options page :ref:`options-map-keys` for more information on themes requirin
 
 .. tip::
 
-      Also check out the `Little Navmap Support Forum at
-      AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ and
-      `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__  for more map themes.
+  Also check out the `Little Navmap Support Forum at
+  AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__ and
+  `Little Navmap Downloads - Map Themes <https://www.littlenavmap.org/downloads/Map%20Themes/>`__  for more map themes.
 
 .. note::
 
-    Please note that all the online maps are delivered from free services
-    therefore fast download speeds and high availability cannot be
-    guaranteed.
+  Please note that all the online maps are delivered from free services
+  therefore fast download speeds and high availability cannot be
+  guaranteed.
 
 In any case it is easy to deliver and install a new online
 map source without creating a new *Little Navmap* release.
@@ -376,64 +376,64 @@ Free map themes that are included per default and don't need an account at the r
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 CARTO Dark Matter
-    A dark map.
-    Map tiles and style by `CARTO <https://carto.com/>`__. Data by
-    `OpenStreetMap <https://www.openstreetmap.org>`__, under
-    `ODbL <https://www.openstreetmap.org/copyright>`__.
+  A dark map.
+  Map tiles and style by `CARTO <https://carto.com/>`__. Data by
+  `OpenStreetMap <https://www.openstreetmap.org>`__, under
+  `ODbL <https://www.openstreetmap.org/copyright>`__.
 
 CARTO Positron
-    A very bright map called *Positron* which allows to concentrate on the
-    aviation features on the map display.
-    Map tiles and style by `CARTO <https://carto.com/>`__. Data by
-    `OpenStreetMap <https://www.openstreetmap.org>`__, under
-    `ODbL <https://www.openstreetmap.org/copyright>`__.
+  A very bright map called *Positron* which allows to concentrate on the
+  aviation features on the map display.
+  Map tiles and style by `CARTO <https://carto.com/>`__. Data by
+  `OpenStreetMap <https://www.openstreetmap.org>`__, under
+  `ODbL <https://www.openstreetmap.org/copyright>`__.
 
 open flightmaps
-    A high quality VFR map provided by `open flightmaps <https://www.openflightmaps.org/>`__.
-    Note that details are visible at lower zoom distances smaller than 50 NM or 100 km.
+  A high quality VFR map provided by `open flightmaps <https://www.openflightmaps.org/>`__.
+  Note that details are visible at lower zoom distances smaller than 50 NM or 100 km.
 
 OpenStreetMap
-    This is an online raster (i.e. based on images) map without hill shading.
-    The tiles for this map are provided by `OpenStreetMap <https://www.openstreetmap.org>`__.
-    Data by `OpenStreetMap <https://www.openstreetmap.org>`__, under `ODbL <https://www.openstreetmap.org/copyright>`__.
+  This is an online raster (i.e. based on images) map without hill shading.
+  The tiles for this map are provided by `OpenStreetMap <https://www.openstreetmap.org>`__.
+  Data by `OpenStreetMap <https://www.openstreetmap.org>`__, under `ODbL <https://www.openstreetmap.org/copyright>`__.
 
 OpenTopoMap
-    An online raster map that mimics a topographic map. Includes integrated hill
-    shading and elevation contour lines at lower zoom distances.
-    The tiles for this map are provided by `OpenTopoMap <https://www.opentopomap.org>`__.
+  An online raster map that mimics a topographic map. Includes integrated hill
+  shading and elevation contour lines at lower zoom distances.
+  The tiles for this map are provided by `OpenTopoMap <https://www.opentopomap.org>`__.
 
     .. figure:: ../images/otm.jpg
 
-          View at the eastern Alps using *OpenTopoMap* theme. A flight plan is shown north of the Alps.
+      View at the eastern Alps using *OpenTopoMap* theme. A flight plan is shown north of the Alps.
 
 Political Map (Offline)
-    This is an offline political map using colored country polygons. Boundaries and
-    water bodies are depicted coarse. The map included in *Little Navmap*
-    has an option to display city and country names.
+  This is an offline political map using colored country polygons. Boundaries and
+  water bodies are depicted coarse. The map included in *Little Navmap*
+  has an option to display city and country names.
 
 Plain Map (Offline)
-    A very simple offline map. The map is included in *Little Navmap* and has an
-    option to display city and country names. Boundaries and water bodies
-    are depicted coarse.
+  A very simple offline map. The map is included in *Little Navmap* and has an
+  option to display city and country names. Boundaries and water bodies
+  are depicted coarse.
 
 Atlas (Offline)
-    A very simple offline map including coarse hill shading and land colors. The map
-    is included in *Little Navmap* and has an option to display city and
-    country names. Boundaries and water bodies are depicted coarse.
+  A very simple offline map including coarse hill shading and land colors. The map
+  is included in *Little Navmap* and has an option to display city and
+  country names. Boundaries and water bodies are depicted coarse.
 
 Map themes are included per default but need a free acccout at the respective map provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mapbox Dark, Mapbox Light, Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Stadia StamenTerrain, Thunderforest Atlas and Thunderforest Landscape
-    These maps require a registration at the respective sites to get access to the map tiles.
-    You can enter the keys in the options dialog on page :ref:`options-map-keys` which also contains direct links to the login pages.
+  These maps require a registration at the respective sites to get access to the map tiles.
+  You can enter the keys in the options dialog on page :ref:`options-map-keys` which also contains direct links to the login pages.
 
 .. note::
 
-    All accounts above are free but try to guide you to a paid subscription when subscribing. Simply ignore this.
-    Do enter payment information anywhere.
+  All accounts above are free but try to guide you to a paid subscription when subscribing. Simply ignore this.
+  Do enter payment information anywhere.
 
-    You can preview the maps at the respective sites.
+  You can preview the maps at the respective sites.
 
 .. _map-context-menu:
 
@@ -459,14 +459,14 @@ Menu items are disabled if their function does not apply to the clicked map obje
 appended to the menu text like ``(has not procedure)`` for an airport.
 
 .. figure:: ../images/mapmenus.jpg
-    :scale: 70%
+  :scale: 70%
 
-    The various sub-menus of the map context menu. Image based on *Little Navmap* 2.6.19. *Click image to enlarge.*
+  The various sub-menus of the map context menu. Image based on *Little Navmap* 2.6.19. *Click image to enlarge.*
 
 
 .. tip::
 
-   Look at the left side of this online user manual to see all the menu items in a tree like structure.
+  Look at the left side of this online user manual to see all the menu items in a tree like structure.
 
 .. _show-information-map:
 
@@ -591,14 +591,14 @@ added to the plan.
 
 .. note::
 
-      You cannot edit flight plan legs that are a part of a procedure or between procedures. Procedures
-      will not be deleted or modified by this function.
+  You cannot edit flight plan legs that are a part of a procedure or between procedures. Procedures
+  will not be deleted or modified by this function.
 
 .. tip::
 
-      All information from an userpoint like remarks, ident, region and name are copied to the
-      flight plan position if you right click on an userpoint and select ``Add Position to Flight Plan``
-      or ``Append Position to Flight Plan``.
+  All information from an userpoint like remarks, ident, region and name are copied to the
+  flight plan position if you right click on an userpoint and select ``Add Position to Flight Plan``
+  or ``Append Position to Flight Plan``.
 
 .. _append-position-to-flight-plan:
 
@@ -632,11 +632,11 @@ This also applies to the runway extension legs when selecting a departure or des
 
 Two options exist depending on the waypoint type:
 
--    ``Edit Flight Plan Position Remarks``: Add remarks to a flight plan waypoint which is not an alternate airport and not a part of
-     a procedure. See :doc:`EDITFPREMARKS`.
--    ``Edit Flight Plan Position``: Change the ident, name, remarks or position of an user defined
-     flight plan waypoint. See :doc:`EDITFPPOSITION`. You can edit the coordinates directly instead of
-     dragging the flight plan position (:doc:`MAPFPEDIT`). See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
+- ``Edit Flight Plan Position Remarks``: Add remarks to a flight plan waypoint which is not an alternate airport and not a part of
+  a procedure. See :doc:`EDITFPREMARKS`.
+- ``Edit Flight Plan Position``: Change the ident, name, remarks or position of an user defined
+  flight plan waypoint. See :doc:`EDITFPPOSITION`. You can edit the coordinates directly instead of
+  dragging the flight plan position (:doc:`MAPFPEDIT`). See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
 
 
 .. _convert-to-waypoints:
@@ -653,10 +653,10 @@ You can undo this conversion.
 
 .. note::
 
-      Converting a procedure to waypoints loses information:
+  Converting a procedure to waypoints loses information:
 
-      - Several approach procedure leg types like holds and turns cannot be converted and will appear as straight lines.
-      - Speed and altitude restrictions are included as remarks and are not followed in the elevation profile.
+  - Several approach procedure leg types like holds and turns cannot be converted and will appear as straight lines.
+  - Speed and altitude restrictions are included as remarks and are not followed in the elevation profile.
 
 .. _direct-to-here:
 
@@ -676,10 +676,10 @@ direct line to the clicked position.
 
 .. note::
 
-    You cannot select a direct to a waypoint in a procedure.
-    Use the function :ref:`convert-to-waypoints` above before.
+  You cannot select a direct to a waypoint in a procedure.
+  Use the function :ref:`convert-to-waypoints` above before.
 
-    Also, you cannot select a passed waypoint of the flight plan as direct to.
+  Also, you cannot select a passed waypoint of the flight plan as direct to.
 
 .. _measure-gc-distance-from-here:
 
@@ -763,16 +763,16 @@ See :doc:`MSA` and :ref:`navaids-legend` in the map legend for more information.
 
 Removes a map feature added by the user.
 
--   Removes the selected **measurement line**. This menu item is active if you right-click on
-    the end point of a distance measurement line (small cross).
--   Removes the selected **range rings** from the map. This menu item is active if you
-    right-click on the center point of a range ring (small circle).
--   Enabled if clicked on the airport **traffic pattern** hotspot (white filled
-    circle at runway threshold) which is indicated by a hand cursor.
--   Enabled if clicked on the **holding** hotspot (holding fix, white filled triangle)
-    which is indicated by a hand cursor.
--   Removes the selected **MSA diagram** from the map. This menu item is active if you
-    right-click on the hotspot of an user added MSA diagram (small circle in center).
+- Removes the selected **measurement line**. This menu item is active if you right-click on
+  the end point of a distance measurement line (small cross).
+- Removes the selected **range rings** from the map. This menu item is active if you
+  right-click on the center point of a range ring (small circle).
+- Enabled if clicked on the airport **traffic pattern** hotspot (white filled
+  circle at runway threshold) which is indicated by a hand cursor.
+- Enabled if clicked on the **holding** hotspot (holding fix, white filled triangle)
+  which is indicated by a hand cursor.
+- Removes the selected **MSA diagram** from the map. This menu item is active if you
+  right-click on the hotspot of an user added MSA diagram (small circle in center).
 
 .. _mark-airport-addon-map:
 
@@ -789,8 +789,8 @@ See chapter :doc:`USERPOINT` for more information how to edit or remove the high
 
 .. note::
 
-        The userpoint is not attached to the airport, is independent of the simulator selection and will
-        not be hidden with airports and is not affected by airport filters.
+  The userpoint is not attached to the airport, is independent of the simulator selection and will
+  not be hidden with airports and is not affected by airport filters.
 
 .. _userpoints:
 
@@ -979,16 +979,16 @@ Note that the symbol is only an indicator for the home view center position and 
 .. |Select Leg in Flight Plan| image:: ../images/icon_routeselect.png
 
 .. |Airport| image:: ../images/icon_userpoint_Airport.png
-     :scale: 60%
+  :scale: 60%
 
 .. |NDB| image:: ../images/icon_userpoint_NDB.png
-     :scale: 60%
+  :scale: 60%
 
 .. |VOR| image:: ../images/icon_userpoint_VOR.png
-     :scale: 60%
+  :scale: 60%
 
 .. |Waypoint| image:: ../images/icon_userpoint_Waypoint.png
-     :scale: 60%
+  :scale: 60%
 
 .. |Bookmark| image:: ../images/icon_userpoint_Bookmark.png
-     :scale: 60%
+  :scale: 60%

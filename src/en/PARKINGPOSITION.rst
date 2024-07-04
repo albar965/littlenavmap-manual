@@ -19,6 +19,6 @@ type, airline codes or facilities.
 
 .. figure:: ../images/selectstartposition.jpg
 
-     The start position selection dialog for EDDN.
+  The start position selection dialog for EDDN.
 
 .. |Select a Start Position for Departure| image:: ../images/icon_parkingstartset.png

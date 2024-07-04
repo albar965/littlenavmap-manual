@@ -40,8 +40,8 @@ above the hotspot (cross at line end).
 
 .. figure:: ../images/measurement.jpg
 
-   A measurement line with all labels enabled starting at VOR ``HMM`` (not shown on the right).
-   Labels shown are navaid ident and frequency, magnetic start and end course, true start and end course, distance and VOR radial.
-   Tooltip with cross mouse cursor at the hotspot.
+  A measurement line with all labels enabled starting at VOR ``HMM`` (not shown on the right).
+  Labels shown are navaid ident and frequency, magnetic start and end course, true start and end course, distance and VOR radial.
+  Tooltip with cross mouse cursor at the hotspot.
 
 .. |Measure Distance from here| image:: ../images/icon_distancemeasure.png

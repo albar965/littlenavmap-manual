@@ -23,9 +23,9 @@ suffice.
 
 .. tip::
 
-       You can also fly and collect performance without a flight plan. Set the
-       intended cruise altitude in the window :doc:`FLIGHTPLAN` to allow *Little
-       Navmap* to detect the cruise phase.
+  You can also fly and collect performance without a flight plan. Set the
+  intended cruise altitude in the window :doc:`FLIGHTPLAN` to allow *Little
+  Navmap* to detect the cruise phase.
 
 Aircraft Performance
 ~~~~~~~~~~~~~~~~~~~~
@@ -51,7 +51,7 @@ Fuel flow data has to be entered in the performance profile to get a valid fuel 
 
 .. tip::
 
-   Lookup numbers at the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__ or download a community made performance file from `Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__ which can be used as a starting point.
+  Lookup numbers at the `Aircraft Performance Database <https://contentzone.eurocontrol.int/aircraftperformance/default.aspx?>`__ or download a community made performance file from `Little Navmap Downloads - Aircraft Performance <https://www.littlenavmap.org/downloads/Aircraft%20Performance/>`__ which can be used as a starting point.
 
 Start and load a flight with aircraft engines running or not. Connect
 *Little Navmap* to the simulator.
@@ -116,8 +116,8 @@ Adjust the performance using ``Merge`` when doing more flights after the first o
 
 .. warning::
 
-       Do not forget to add at least sufficient reserve fuel. Otherwise you
-       will run out of fuel at destination if you rely on this plan.
+  Do not forget to add at least sufficient reserve fuel. Otherwise you
+  will run out of fuel at destination if you rely on this plan.
 
 You should change the usable fuel and values for alternate after
 merging. Do this by selecting ``Aircraft`` ->
@@ -136,9 +136,9 @@ details about editing.
 
 .. tip::
 
-      Use performance files for different cruise altitude ranges to get more
-      precise results for large or complex aircraft. For example, one file for
-      FL300-FL350 and one for FL350-FL400.
+  Use performance files for different cruise altitude ranges to get more
+  precise results for large or complex aircraft. For example, one file for
+  FL300-FL350 and one for FL350-FL400.
 
 Use ``Aircraft`` -> :ref:`aircraft-menu-save` |Save Aircraft
 Performance| and save the new performance file to any place like
@@ -151,7 +151,7 @@ it to the** `community download section of littlenavmap.org <https://www.littlen
 .. |New Aircraft Performance Icon| image:: ../images/icon_aircraftperfnew.png
 .. |New Aircraft Performance 1| image:: ../images/tutorial_perfnew1.jpg
 .. |New Aircraft Performance 2| image:: ../images/tutorial_perfnew.jpg
-    :scale: 60%
+  :scale: 60%
 
 .. |Reset all for a new Flight Icon| image:: ../images/icon_reload.png
 .. |Reset all for a new Flight| image:: ../images/tutorial_perfreset.jpg

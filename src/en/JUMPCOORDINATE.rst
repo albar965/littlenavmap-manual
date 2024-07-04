@@ -16,6 +16,6 @@ See :doc:`COORDINATES` about recognized coordinate formats.
 
 .. figure:: ../images/jump_coords.jpg
 
-     Jump to coordinates dialog open with valid coordinates.
+  Jump to coordinates dialog open with valid coordinates.
 
 .. |Jump to Coordinates| image:: ../images/icon_zoomin.png

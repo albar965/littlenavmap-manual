@@ -186,14 +186,10 @@ per default.
 
 There are two options:
 
-#. Create an OpenAir airspace file which contains a single boundary for
-   a center. Give the file the same name as the callsign for the center,
-   i.e. name the file ``EDDB_TWR.txt`` for the center with the callsign
-   ``EDDB_TWR``.
-#. Create an OpenAir airspace containing the boundaries for all the
-   centers you need. Give the file any name but name the boundaries
-   according to the callsign of the centers. You need a line in the file
-   containing ``AN EDDF_TWR`` (``AN`` = airspace name) to use the
+#. Create an OpenAir airspace file which contains a single boundary for a center. Give the file the same name as the callsign for the center,
+   i.e. name the file ``EDDB_TWR.txt`` for the center with the callsign ``EDDB_TWR``.
+#. Create an OpenAir airspace containing the boundaries for all the centers you need. Give the file any name but name the boundaries
+   according to the callsign of the centers. You need a line in the file containing ``AN EDDF_TWR`` (``AN`` = airspace name) to use the
    boundary for a center with the callsign ``EDDB_TWR``.
 
 Now place the file or files into you user airspace directory and reload

@@ -26,26 +26,26 @@ Create Traffic Pattern
 
 **Dialog input and selection fields:**
 
--  Dialog header: Shows airport name and its ICAO ident as well as field
-   elevation.
--  ``Runways``: List of available runways for the airport. Shows runway
-   name, length, width, magnetic heading, surface and attributes like lighting status or approach types.
--  ``Turn direction``: Select to choose between left or right turn
-   pattern. This is automatically updated when selecting a runway from
-   FSX or P3D.
--  ``Base 45° after threshold``: Calculates the final leg length
-   automatically when checked.
--  ``Base leg to runway threshold``: Enabled if ``Base 45° after threshold`` is checked. Length of the final leg. Measured
-   from turn to final to the runway threshold.
--  ``Departure from threshold``: Enabled if ``Base 45° after threshold`` is checked. Distance from runway threshold to turn to crosswind.
-   Measured from the start of the runway, i.e. the end of the final leg.
--  ``Downwind to runway``: Parallel distance from downwind leg to
-   runway.
--  ``Pattern altitude``: Pattern altitude above airport elevation. This
-   is automatically updated when selecting a runway from FSX or P3D.
--  ``Entry and exit indicators``: Shows dashed lines and arrows giving
-   hints for entry and exit points.
--  ``Line Color``: Color of the pattern lines and labels. Can be different for each traffic pattern.
+- Dialog header: Shows airport name and its ICAO ident as well as field
+  elevation.
+- ``Runways``: List of available runways for the airport. Shows runway
+  name, length, width, magnetic heading, surface and attributes like lighting status or approach types.
+- ``Turn direction``: Select to choose between left or right turn
+  pattern. This is automatically updated when selecting a runway from
+  FSX or P3D.
+- ``Base 45° after threshold``: Calculates the final leg length
+  automatically when checked.
+- ``Base leg to runway threshold``: Enabled if ``Base 45° after threshold`` is checked. Length of the final leg. Measured
+  from turn to final to the runway threshold.
+- ``Departure from threshold``: Enabled if ``Base 45° after threshold`` is checked. Distance from runway threshold to turn to crosswind.
+  Measured from the start of the runway, i.e. the end of the final leg.
+- ``Downwind to runway``: Parallel distance from downwind leg to
+  runway.
+- ``Pattern altitude``: Pattern altitude above airport elevation. This
+  is automatically updated when selecting a runway from FSX or P3D.
+- ``Entry and exit indicators``: Shows dashed lines and arrows giving
+  hints for entry and exit points.
+- ``Line Color``: Color of the pattern lines and labels. Can be different for each traffic pattern.
 
 A click on ``OK`` or a double click into the list ``Runways`` closes the
 dialog and creates the traffic pattern.
@@ -54,18 +54,18 @@ See :ref:`pattern-legend` in the map legend for details about the
 displayed numbers in the pattern.
 
 .. figure:: ../images/pattern_dialog.jpg
-     :scale: 50%
+  :scale: 50%
 
-     Traffic pattern dialog for ``EDFE`` runway 08 at 1,000 ft above airport elevation. *Click image to enlarge.*
+  Traffic pattern dialog for ``EDFE`` runway 08 at 1,000 ft above airport elevation. *Click image to enlarge.*
 
 .. figure:: ../images/pattern.jpg
-     :scale: 50%
+  :scale: 50%
 
-     Traffic Pattern for the settings in the dialog
-     above. Downwind leg shows pattern altitude above MSL and course and
-     final leg shows runway name and course. White filled circle is the
-     hotspot that can be right clicked to remove the pattern in the context
-     menu. *Click image to enlarge.*
+  Traffic Pattern for the settings in the dialog
+  above. Downwind leg shows pattern altitude above MSL and course and
+  final leg shows runway name and course. White filled circle is the
+  hotspot that can be right clicked to remove the pattern in the context
+  menu. *Click image to enlarge.*
 
 .. |Traffic Pattern Icon| image:: ../images/icon_trafficpattern.png
 

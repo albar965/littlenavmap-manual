@@ -18,20 +18,20 @@ Context Menu Tab Bar
 The context menu above the tab bar (right click on one of the tabs) and
 the tab button |Tab Button| have the following menu items:
 
--  ``Open All``: Opens all tabs. All closed tabs are opened again and
-   added to the right side of the tab bar.
--  ``Close all Except Current``: All tabs are closed except the
-   currently active.
--  ``Reset Tab Layout``: Opens all closed tabs again and restores the
-   default order.
--  ``Lock Tab Layout``: Hides the close buttons to avoid accidental
-   closing. Moving by click and drag as well as closing by double click
-   are disabled. A locked tab bar also occupies less space. You can
-   still close and open tabs using the context menu or menu button.
--  ``Close Tab``: Only visible in the context menu. Closes the tab below
-   the click spot.
--  One menu item for each tab: Toggles tab visibility. A tab is always
-   opened to the right of the current one.
+- ``Open All``: Opens all tabs. All closed tabs are opened again and
+  added to the right side of the tab bar.
+- ``Close all Except Current``: All tabs are closed except the
+  currently active.
+- ``Reset Tab Layout``: Opens all closed tabs again and restores the
+  default order.
+- ``Lock Tab Layout``: Hides the close buttons to avoid accidental
+  closing. Moving by click and drag as well as closing by double click
+  are disabled. A locked tab bar also occupies less space. You can
+  still close and open tabs using the context menu or menu button.
+- ``Close Tab``: Only visible in the context menu. Closes the tab below
+  the click spot.
+- One menu item for each tab: Toggles tab visibility. A tab is always
+  opened to the right of the current one.
 
 Mouse actions
 ~~~~~~~~~~~~~
@@ -43,9 +43,9 @@ Mouse actions
 
 
 .. figure:: ../images/tabs.jpg
-      :scale: 50%
+  :scale: 50%
 
-      Drop down button menus and context menus on tab bars marked red. *Click image to enlarge.*
+  Drop down button menus and context menus on tab bars marked red. *Click image to enlarge.*
 
 Stacked Dock Window Tabs
 ~~~~~~~~~~~~~~~~~~~~~~~~

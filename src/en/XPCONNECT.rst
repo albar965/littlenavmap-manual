@@ -63,14 +63,14 @@ Compatibility Error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If a pop up window says that versions are not compatible and and upgrade of *Little Xpconnect* is needed:
-   Remove the *Little Xpconnect* plugin from X-Plane and reinstall the new one.
+  Remove the *Little Xpconnect* plugin from X-Plane and reinstall the new one.
 
 If the latest *Little Xpconnect* plugin is installed:
-   There is probably an old version of Little Xpconnect installed wrongly somewhere in your X-Plane plugins path. Maybe it was installed accidentally in the plugins base path without the *Little Xpconnect* directory structure.
+  There is probably an old version of Little Xpconnect installed wrongly somewhere in your X-Plane plugins path. Maybe it was installed accidentally in the plugins base path without the *Little Xpconnect* directory structure.
 
-   Check if there is another directory with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins directory on the top level.
+  Check if there is another directory with the *Little Xpconnect executable* (``win.xpl``, ``mac.xpl`` or ``lin.xpl`` depending on operating system) around or if the file is stored in the plugins directory on the top level.
 
-   You can see the path of the (wrongly) loaded plugin in the X-Plane plugin manager or in the X-Plane ``Log.txt`` file.
+  You can see the path of the (wrongly) loaded plugin in the X-Plane plugin manager or in the X-Plane ``Log.txt`` file.
 
 .. _xpconnect-installation:
 
@@ -84,7 +84,7 @@ Automatic installation is strongly recommended since it scans the installation d
 
 .. note::
 
-      Do not download the plugin manually. It is included in the download archive of *Little Navmap*.
+  Do not download the plugin manually. It is included in the download archive of *Little Navmap*.
 
 .. _xpconnect-auto-installation:
 
@@ -102,12 +102,12 @@ Note that the plugin will be installed in the currently selected X-Plane instanc
 
 .. important::
 
-   You can choose to let *Little Navmap* delete these directories or files but in any case check if these are really installations of
-   *Little Xpconnect*.
+  You can choose to let *Little Navmap* delete these directories or files but in any case check if these are really installations of
+  *Little Xpconnect*.
 
 .. important::
 
-   Quit X-Plane before installing the plugin.
+  Quit X-Plane before installing the plugin.
 
 
 .. _xpconnect-manual-installation:
@@ -174,10 +174,10 @@ You have to repeat this procedure each time you update *Little Xpconnect*.
 
 .. tip::
 
-   Use the tool `Mac OS - CleanUp Quarantine Flags
-   <https://forums.x-plane.org/index.php?/files/file/79828-mac-os-cleanup-quarantine-flags/>`__ to
-   clean the flags for all X-Plane plugins. Place the downloaded and extracted application in your
-   X-Plane base directory and double click it. A dialog window showing the number of cleaned flags pops up after running.
+  Use the tool `Mac OS - CleanUp Quarantine Flags
+  <https://forums.x-plane.org/index.php?/files/file/79828-mac-os-cleanup-quarantine-flags/>`__ to
+  clean the flags for all X-Plane plugins. Place the downloaded and extracted application in your
+  X-Plane base directory and double click it. A dialog window showing the number of cleaned flags pops up after running.
 
 Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,13 +196,12 @@ Additionally a settings file is created which can be found in
 The settings can also be changed using the configuration file ``little_xpconnect.ini``.
 
 .. code-block:: ini
-     :caption: Little Xpconnect configuration file
+  :caption: Little Xpconnect configuration file
 
-     [Options]
-     FetchAiAircraft=true     # Same as "Fetch AI" in plugin menu.
-     FetchAiAircraftInfo=true # Same as "Load AI Aircraft Information" in plugin menu.
-     FetchRateMs=200          # Data will be fetched from X-Plane every 200
-                                milliseconds. Same as "Fetch Rate" in plugin menu.
-     FetchRate=200            # Old obsolete value. Will be deleted on start.
+  [Options]
+  FetchAiAircraft=true     # Same as "Fetch AI" in plugin menu.
+  FetchAiAircraftInfo=true # Same as "Load AI Aircraft Information" in plugin menu.
+  FetchRateMs=200          # Data will be fetched from X-Plane every 200 milliseconds. Same as "Fetch Rate" in plugin menu.
+  FetchRate=200            # Old obsolete value. Will be deleted on start.
 
 

@@ -7,13 +7,13 @@ waypoints and more. You can pick freely which types you want to see as
 icons on the map.
 
 .. figure:: ../images/userpoint_overview.jpg
-       :scale: 50%
+  :scale: 50%
 
-       An overview of userpoint functionality showing
-       information on the left dock window, highlighted userpoints on the map,
-       userpoints selected in the search window on the right, and the drop down
-       menu opened by clicking the userpoint icon in the dock window.
-       Screenshot based on *Little Navmap* 2.4.  *Click image to enlarge.*
+  An overview of userpoint functionality showing
+  information on the left dock window, highlighted userpoints on the map,
+  userpoints selected in the search window on the right, and the drop down
+  menu opened by clicking the userpoint icon in the dock window.
+  Screenshot based on *Little Navmap* 2.4.  *Click image to enlarge.*
 
 .. _userpoints-search:
 
@@ -109,12 +109,12 @@ Remove duplicates using additional fields as criteria.
   -  Coordinates
 
 Show a preview before deleting userpoints
-    Shows a table with the userpoints to remove before deleting. You can cancel the operation in the preview.
+  Shows a table with the userpoints to remove before deleting. You can cancel the operation in the preview.
 
 .. figure:: ../images/userpoint_cleanup.jpg
 
-    Cleanup up userpoints dialog. Empty userpoints will not be deleted.
-    Duplicates are removed if ident, region, name, type and coordinates are the same.
+  Cleanup up userpoints dialog. Empty userpoints will not be deleted.
+  Duplicates are removed if ident, region, name, type and coordinates are the same.
 
 
 .. _userpoints-menu:
@@ -166,9 +166,9 @@ Note that all fields are optional. Only coordinates are required.
 
 .. figure:: ../images/userpoint_add.jpg
 
-       Add dialog that has been populated automatically by
-       context. The user right-clicked on an airport and selected
-       ``Add Userpoint Airport Frankfurt am Main (EDDF)``.
+  Add dialog that has been populated automatically by
+  context. The user right-clicked on an airport and selected
+  ``Add Userpoint Airport Frankfurt am Main (EDDF)``.
 
 .. _userpoints-dialog-edit:
 
@@ -183,19 +183,16 @@ userpoints above.
 
 Additional metadata shown at the bottom:
 
--  **Last Change:** Date and time of import, creation or change.
--  **Imported from file:** File and path of source file from CSV,
-   X-Plane or Garmin import. You can filter the userpoint search for
-   this name.
--  **Temporary userpoint - will be deleted on next startup.** This
-   indicates a temporary userpoint.
+- **Last Change:** Date and time of import, creation or change.
+- **Imported from file:** File and path of source file from CSV, X-Plane or Garmin import. You can filter the userpoint search for this name.
+- **Temporary userpoint - will be deleted on next startup.** This indicates a temporary userpoint.
 
 The button ``Reset`` undoes all manual changes and reverts all fields to
 their original state.
 
 .. figure:: ../images/userpoint_edit.jpg
 
-    Edit dialog for a single userpoint.
+  Edit dialog for a single userpoint.
 
 Multiple Userpoints
 ^^^^^^^^^^^^^^^^^^^
@@ -225,9 +222,9 @@ visibility range for the affected userpoints:
 
 .. figure:: ../images/userpoint_edit_bulk.jpg
 
-     Edit dialog for more than one userpoint. The fields
-     ``Region`` and ``Visible from`` will be changed for all selected points.
-     All other fields remain unchanged.
+  Edit dialog for more than one userpoint. The fields
+  ``Region`` and ``Visible from`` will be changed for all selected points.
+  All other fields remain unchanged.
 
 .. _userpoints-types:
 
@@ -345,7 +342,7 @@ Example for an absolute minimal userpoint consisting of coordinates only:
 
 .. code-block:: none
 
-   ,,,49.0219993591,7.8840069771
+  ,,,49.0219993591,7.8840069771
 
 ``Visible from`` will be set to the
 default of 250 NM and the userpoint will be shown using the ``Unknown``
@@ -355,7 +352,7 @@ Example for a minimal userpoint record with type ``Mountain`` , ident and name f
 
 .. code-block:: none
 
-    Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771
+  Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771
 
 ``Visible from`` will be set to the default of 250 NM after import.
 
@@ -363,7 +360,7 @@ Example for an exported userpoint with type ``Mountain`` and all fields set:
 
 .. code-block:: none
 
-   Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771,1200,2.0085027218,"View,Interesting,Point","Interesting point ""Eselsberg"" - nice view",ED,250,2018-05-17T17:44:26.864
+  Mountain,My Point of Interest,MYPOI,49.0219993591,7.8840069771,1200,2.0085027218,"View,Interesting,Point","Interesting point ""Eselsberg"" - nice view",ED,250,2018-05-17T17:44:26.864
 
 Note of the following when parsing the CSV files:
 
@@ -416,24 +413,24 @@ Each row has five columns which are separated by space or tab
 characters.
 
 There are five columns of data in the file which are mapped to the userpoint data as shown below:
-    #. Latitude: From and to userpoint field ``Latitude``.
-    #. Longitude: From and to userpoint field ``Longitude``.
-    #. Ident: From and to userpoint field ``Ident``.
-    #. Airport ident: From and to first space separated entry of userpoint field ``Tags``. Optional.
-    #. Region: From and to userpoint field ``Region``.
-    #. Waypoint type as defined by the 3 columns of ARINC 424.18 field definition.
-       From and to second space separated entry of userpoint field ``Tags``. See remarks below. Optional.
-    #. Name (only X-Plane 12): From and to userpoint field ``Name``.
+  #. Latitude: From and to userpoint field ``Latitude``.
+  #. Longitude: From and to userpoint field ``Longitude``.
+  #. Ident: From and to userpoint field ``Ident``.
+  #. Airport ident: From and to first space separated entry of userpoint field ``Tags``. Optional.
+  #. Region: From and to userpoint field ``Region``.
+  #. Waypoint type as defined by the 3 columns of ARINC 424.18 field definition.
+     From and to second space separated entry of userpoint field ``Tags``. See remarks below. Optional.
+  #. Name (only X-Plane 12): From and to userpoint field ``Name``.
 
 Field decoding for X-Plane 11 and 12:
-   The *Little Navmap* userpoint tags field is used to load and save the ID of the airport terminal area as well as the waypoint type.
+  The *Little Navmap* userpoint tags field is used to load and save the ID of the airport terminal area as well as the waypoint type.
 
-   The waypoint type is based on ARINC 424 field type definition 5.42.
-   Spaces from this field are replaced by underscores ``_`` for userpoint tags. Alternatively double quotes and
-   spaces can be used. *Little Navmap* decodes and encodes the field when exporting and importing ``user_fix.dat``.
+  The waypoint type is based on ARINC 424 field type definition 5.42.
+  Spaces from this field are replaced by underscores ``_`` for userpoint tags. Alternatively double quotes and
+  spaces can be used. *Little Navmap* decodes and encodes the field when exporting and importing ``user_fix.dat``.
 
-   Example tags in *Little Navmap*: ``EDDF V__`` is a VFR Waypoint at airport EDDF, ``ENRT "I  "`` is an en-route unnamed
-   charted intersection and ``ENRT R__`` is an en-route named intersection. These tags are encoded to the numeric values on export.
+  Example tags in *Little Navmap*: ``EDDF V__`` is a VFR Waypoint at airport EDDF, ``ENRT "I  "`` is an en-route unnamed
+  charted intersection and ``ENRT R__`` is an en-route named intersection. These tags are encoded to the numeric values on export.
 
 The user defined waypoints are shown on the
 X-Plane map if the correct type (VFR or other) matches the X-Plane map type.
@@ -443,24 +440,24 @@ Waypoints can be selected and used to build flight plans in the X-Plane stock GP
 
 .. code-block:: none
 
-   I
-   1101 Version - data cycle 1704, build 20170411, metadata FixXP1101. NoCopyright (c) 2017 useruser
+  I
+  1101 Version - data cycle 1704, build 20170411, metadata FixXP1101. NoCopyright (c) 2017 useruser
 
-    50.88166689    12.58666711   PACEC ENRT ZZ
-   -36.29987200   174.71089013   N0008 NZNI ZZ
-     6.000000000  159.000000000  06E59 ENRT ZZ 2115159
-     6.000000000  160.000000000  06E60 ENRT ZZ 2115159
-    51.801667      -8.573889     VP001 ENRT EI 2105430 HALFWAY ROUTE
-    51.816389      -8.390833     VP002 ENRT EI 2105430 CARRIGALINE
-   99
+   50.88166689    12.58666711   PACEC ENRT ZZ
+  -36.29987200   174.71089013   N0008 NZNI ZZ
+    6.000000000  159.000000000  06E59 ENRT ZZ 2115159
+    6.000000000  160.000000000  06E60 ENRT ZZ 2115159
+   51.801667      -8.573889     VP001 ENRT EI 2105430 HALFWAY ROUTE
+   51.816389      -8.390833     VP002 ENRT EI 2105430 CARRIGALINE
+  99
 
 
 .. important::
 
-     Keep in mind that waypoints are loaded from the Navigraph database if the
-     default mode :ref:`navigraph-navaid-proc` is enabled in *Little Navmap*.
-     Therefore, user defined waypoints from the file ``user_fix.dat`` are not
-     shown in *Little Navmap* after loading the scenery library from X-Plane.
+  Keep in mind that waypoints are loaded from the Navigraph database if the
+  default mode :ref:`navigraph-navaid-proc` is enabled in *Little Navmap*.
+  Therefore, user defined waypoints from the file ``user_fix.dat`` are not
+  shown in *Little Navmap* after loading the scenery library from X-Plane.
 
 Import
 ^^^^^^
@@ -469,16 +466,11 @@ Import
 
 ``50.88166700  12.58666700 PACEC ENRT ZZ``
 
--  The coordinates are read into the *Little Navmap* userpoint
-   coordinates.
--  The fix ident ``PACEC`` is read into the **Ident** field in *Little
-   Navmap*.
--  The fix airport ``ENRT`` (en-route: no airport here) is read into the
-   **Tags** field in *Little Navmap*.
--  The region ``ZZ`` (invalid or no region) is read into the **Region**
-   field in *Little Navmap*.
--  **Type** will be set to ``Waypoint`` |Waypoint| for all imported
-   fixes.
+- The coordinates are read into the *Little Navmap* userpoint coordinates.
+- The fix ident ``PACEC`` is read into the **Ident** field in *Little Navmap*.
+- The fix airport ``ENRT`` (en-route: no airport here) is read into the **Tags** field in *Little Navmap*.
+- The region ``ZZ`` (invalid or no region) is read into the **Region** field in *Little Navmap*.
+- **Type** will be set to ``Waypoint`` |Waypoint| for all imported fixes.
 
 Export
 ^^^^^^
@@ -500,10 +492,10 @@ The region is adjusted for a two letter digit and letter combination.
 
 .. note::
 
-   The ident has to be unique in the ``user_fix.dat``. Therefore
-   it is recommended to set an unique ident for each waypoint manually or
-   leave the field empty so *Little Navmap* can generate an ident
-   during export.
+  The ident has to be unique in the ``user_fix.dat``. Therefore
+  it is recommended to set an unique ident for each waypoint manually or
+  leave the field empty so *Little Navmap* can generate an ident
+  during export.
 
 .. _userpoints-garmin:
 
@@ -524,10 +516,10 @@ There must be four columns of data in the file:
 
 .. code-block:: none
 
-    MTHOOD,MT HOOD PEAK,45.3723,-121.69783
-    CRTRLK,CRATER LAKE,42.94683,-122.11083
-    2WTER,2NM WEST TERRACINA,41.28140000,13.20110000
-    1NSAL,1NM NORTH SALERNO TOWN,40.69640000,14.78500000
+  MTHOOD,MT HOOD PEAK,45.3723,-121.69783
+  CRTRLK,CRATER LAKE,42.94683,-122.11083
+  2WTER,2NM WEST TERRACINA,41.28140000,13.20110000
+  1NSAL,1NM NORTH SALERNO TOWN,40.69640000,14.78500000
 
 The waypoint ident can be up to 10 numbers or capital letters but the
 GTN will shorten the name to the first 6 characters. No special
@@ -546,14 +538,10 @@ Import
 
 ``MTHOOD,MT HOOD PEAK,45.3723,-121.69783``
 
--  The ident ``MTHOOD`` is read into the **Ident** field in *Little
-   Navmap*.
--  The name ``MT HOOD PEAK`` is read into the **Name** field in *Little
-   Navmap*.
--  The coordinates are read into the *Little Navmap* userpoint
-   coordinates.
--  **Type** will be set to ``Waypoint`` |Waypoint| for all imported
-   waypoints.
+- The ident ``MTHOOD`` is read into the **Ident** field in *Little Navmap*.
+- The name ``MT HOOD PEAK`` is read into the **Name** field in *Little Navmap*.
+- The coordinates are read into the *Little Navmap* userpoint coordinates.
+- **Type** will be set to ``Waypoint`` |Waypoint| for all imported waypoints.
 
 Export
 ^^^^^^
@@ -563,9 +551,9 @@ limitations.
 
 .. note::
 
-       If an imported waypoint ends up being within 0.001° latitude and
-       longitude of an existing user waypoint in the GTN, the existing waypoint
-       and name will be reused.
+  If an imported waypoint ends up being within 0.001° latitude and
+  longitude of an existing user waypoint in the GTN, the existing waypoint
+  and name will be reused.
 
 .. _userpoints-bgl:
 
@@ -586,12 +574,12 @@ the BGL to the simulator.
 
 .. code-block:: xml
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <FSData version="9.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bglcomp.xsd">
-        <!--Created by Little Navmap Version 2.0.1.beta (revision 2b14e14) on 2018 05 17T12:24:36-->
-       <Waypoint lat="47.40833282" lon="15.21500015" waypointType="NAMED" waypointRegion="ZZ" magvar="4.02111530" waypointIdent="WHISK"/>
-       <Waypoint lat="47.39666748" lon="15.29833317" waypointType="NAMED" waypointRegion="ZZ" magvar="4.01835251" waypointIdent="SIERR"/>
-    </FSData>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <FSData version="9.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bglcomp.xsd">
+      <!--Created by Little Navmap Version 2.0.1.beta (revision 2b14e14) on 2018 05 17T12:24:36-->
+     <Waypoint lat="47.40833282" lon="15.21500015" waypointType="NAMED" waypointRegion="ZZ" magvar="4.02111530" waypointIdent="WHISK"/>
+     <Waypoint lat="47.39666748" lon="15.29833317" waypointType="NAMED" waypointRegion="ZZ" magvar="4.01835251" waypointIdent="SIERR"/>
+  </FSData>
 
 .. _userpoints-data-format:
 

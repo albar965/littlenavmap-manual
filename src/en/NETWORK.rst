@@ -5,10 +5,10 @@ This chapter explains how to connect with a remote computer across the network t
 
 .. note::
 
-    There is no need to share the scenery library or files of any simulator on the network.
+  There is no need to share the scenery library or files of any simulator on the network.
 
-    You do not have to copy the simulator scenery library neither
-    do you have to install a second simulator on the client computer.
+  You do not have to copy the simulator scenery library neither
+  do you have to install a second simulator on the client computer.
 
 How to Prepare a Network Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,10 +24,10 @@ How to Prepare a Network Setup
 
 .. note::
 
-    Make sure that the major versions of *Little Navmap* and *Little
-    Navconnect* match, otherwise you might get an error message. Use the
-    version of *Little Navconnect* which is included in the *Little Navmap*
-    download archive if unsure.
+  Make sure that the major versions of *Little Navmap* and *Little
+  Navconnect* match, otherwise you might get an error message. Use the
+  version of *Little Navconnect* which is included in the *Little Navmap*
+  download archive if unsure.
 
 .. tip::
 
@@ -66,11 +66,11 @@ Weather information like winds aloft and airport METARs are read from files in t
 
 Do the following to get access to X-Plane weather files:
 
-#.  Share the weather directories on the flying computer.
-    This is either the X-Plane 11 base directory containing the files ``global_winds.grib`` and ``METAR.rwx`` or
-    the directory ``Output/real weather`` in the X-Plane 12 installation.
-#.  Open the *Little Navmap* options dialog and go to page :ref:`options-weather-files`.
-    Change the path to the network share containing the two X-Plane 11 files or the directory for the X-Plane 12 weather files.
+#. Share the weather directories on the flying computer.
+   This is either the X-Plane 11 base directory containing the files ``global_winds.grib`` and ``METAR.rwx`` or
+   the directory ``Output/real weather`` in the X-Plane 12 installation.
+#. Open the *Little Navmap* options dialog and go to page :ref:`options-weather-files`.
+   Change the path to the network share containing the two X-Plane 11 files or the directory for the X-Plane 12 weather files.
 
 Weather should update automatically in *Little Navmap* once done.
 
@@ -79,11 +79,11 @@ Flying in a network setup
 
 Startup order does not matter.
 
--  Start the simulator
--  Start *Little Navconnect* on the flying computer.
--  Run *Little Navmap* on the network/remote computer.
--  Connect *Little Navmap* on the network/remote computer to *Little
-   Navconnect* on the flying computer. Main menu -> ``Tools`` -> :ref:`flight-simulator-connection`.
+- Start the simulator
+- Start *Little Navconnect* on the flying computer.
+- Run *Little Navmap* on the network/remote computer.
+- Connect *Little Navmap* on the network/remote computer to *Little
+  Navconnect* on the flying computer. Main menu -> ``Tools`` -> :ref:`flight-simulator-connection`.
 
 See the two chapters below for more details:
 
