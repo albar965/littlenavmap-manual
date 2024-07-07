@@ -26,6 +26,17 @@ Note that the maximum distance for random flight plan is 10.800 NM.
 You can refine the flight plan further by running the :doc:`ROUTECALC` to get airways or intermediate navaids,
 selecting procedures (:doc:`SEARCHPROCS`) or :doc:`PARKINGPOSITION`.
 
+.. note::
+
+  The random flight generation does not work with a distance filtered airport list (:ref:`distance-search`).
+
+  The distance filter is not needed for random flight generation from an airport.
+  Add the airport in the center of the distance search point to the flight plan
+  so that the plan consists of only of this airport.
+  Then adjust the maximum distance of the random search. Select
+  ``Use current flight plan`s departure airport as fixed departure airport ...`` in the next dialog window.
+  This will give you a random destination from your current airport in the flight plan.
+
 .. figure:: ../images/randomselect.jpg
   :scale: 50%
 
@@ -39,3 +50,4 @@ selecting procedures (:doc:`SEARCHPROCS`) or :doc:`PARKINGPOSITION`.
 
   Generating a random flight from a search result showing all airports in Germany, having 5,000
   feet minimum runway length and are neither closed nor military. *Click image to enlarge.*
+
