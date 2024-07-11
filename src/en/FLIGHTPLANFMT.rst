@@ -55,7 +55,8 @@ Garmin Export Issues
 
 Many Garmin add-on use the Garmin trainer in the background.
 
-A problem when importing a flight plan containing procedures like SIDs, STARs, and approaches is that procedure names change over time.
+A problem when exchanging flight plans across applications is that waypoints, airways and procedures like SIDs, STARs, and
+approaches change over time.
 
 A SID ``WENAS7`` becomes ``WENAS8``, waypoints/intersections are removed, the airway structure changes or runways are renamed, for example.
 

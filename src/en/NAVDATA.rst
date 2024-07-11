@@ -30,9 +30,17 @@ You can see the data source for each navaid or airport in the section ``Data Sou
 
 .. important::
 
-  It is recommended to keep all scenery libraries in sync. This means that your simulator, *Little Navmap*,
-  aircraft and tools should use the same AIRAC cycle. Having navdata synchronized
+  **It is recommended to keep all scenery libraries in sync.** This means that your simulator, *Little Navmap*,
+  aircraft, tools and websites should use the same AIRAC cycle. Having navdata synchronized
   helps to avoid issues when loading flight plans.
+
+  The problem when exchanging flight plans across applications is that waypoints, airways and procedures like SIDs, STARs, and
+  approaches change over time.
+
+  A SID WENAS7 becomes WENAS8, waypoints/intersections are removed, the airway structure changes or runways are renamed, for example.
+
+  The AIRAC cycles that contain the Navdata are updated every 28 days. If some applications are updated and others are not,
+  this may result in inconsistencies between *Little Navmap*, flight planning websites, or other programs.
 
 .. warning::
 
@@ -40,6 +48,18 @@ You can see the data source for each navaid or airport in the section ``Data Sou
 
 Three display modes can be selected from the menu ``Scenery Library`` as
 shown below.
+
+.. _navdata-navigraph-auto:
+
+Select Automatically
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the default recommended mode which selects the navdata sources
+from the three modes below based on the used simulator and AIRAC cycles.
+
+.. important::
+
+  Read below if you'd like  select the navdata mode manually.
 
 .. _navdata-navigraph-all:
 
