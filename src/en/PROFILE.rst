@@ -261,10 +261,10 @@ This is the same function as :ref:`show-toc-and-tod` in the menu ``View``.
 
 .. _show-vertical-track-profile:
 
-|Show Vertical Track| Show Vertical Track
+|Show Vertical Track| Show Vertical Trail
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Shows a vertical track line indicating the flight path based on current descent or climb rate as
+Shows a vertical aircraft trail line indicating the flight path based on current descent or climb rate as
 well as ground speed.
 
 Use this to aim at the right altitude at the next flight plan waypoint. This is especially useful at descent.
@@ -273,7 +273,7 @@ Related function for the map is :ref:`show-aircraft-altitude-range-map` in the m
 
 .. figure:: ../images/legend_profile_path.png
 
-  Vertical track line in elevation profile window indicating climb rate.
+  Vertical aircraft trail line in elevation profile window indicating climb rate.
 
 Follow on Map
 ^^^^^^^^^^^^^

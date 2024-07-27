@@ -9,10 +9,25 @@ File paths will differ if using one of the portable scripts (:doc:`PORTABLE`).
 
   You can open all file locations from the main menu ``Tools`` -> :ref:`files-and-directories`.
 
+.. _files-backup-important:
+
+Important Files to Backup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can simply create a copy of the :ref:`settings-directory` ``ABarthel`` to have a full backup of all configuration options,
+databases, the logbook, userpoints, aircraft trail and more.
+
+Most important files are: :ref:`configuration` (``little_navmap.ini``), :ref:`files-trails` (``little_navmap.track``),
+:ref:`files-userdata` (``little_navmap_userdata.sqlite`` in ``little_navmap_db``)
+and the :ref:`files-logbook` (``little_navmap_logbook.sqlite`` in ``little_navmap_db``).
+
+All other files can be re-generated from the simulator scenery library or are only temporary storage.
+
+
 .. _files-backup:
 
-Backups
-~~~~~~~~
+File Backups
+~~~~~~~~~~~~~~~~
 
 *Little Navmap* creates a copy of the most important files on startup and keeps up to three additional
 backup files: ``..._backup.sqlite`` to ``..._backup.sqlite.2``, for example. You can copy these files
@@ -30,7 +45,7 @@ Logs
 
 Log files of *Little Navmap* are stored in the directories:
 
-- Windows: ``C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log``
+- Windows: ``C:\Users\YOURUSERNAME\AppData\Local\Temp\abarthel-little_navmap.log`` or ``%temp%\abarthel-little_navmap.log``.
 - Linux:  ``/tmp/abarthel-little_navmap.log``
 - macOS:  ``/var/folders/RANDOMIZED_DIRECTORY_NAME/abarthel-little_navmap.log``
   Use the command below on the macOS terminal to find the log file and open it in Text Edit.
@@ -51,36 +66,31 @@ an error. All two are needed in some cases but sending the first is often suffic
 
   **Please compress log and other files before sending them by email.**
 
-.. _files-trails:
+.. _settings-directory:
 
-Trails
-~~~~~~~~~~~~~
+Settings Directory
+~~~~~~~~~~~~~~~~~~
 
-Aircraft trails are stored in separate files:
+This is the main directory where all settings, trails, databases and more are stored.
 
-- ``little_navmap.track``: The main user aircraft trail shown on the map. Binary file. This trail can be exported
-   as a GPX using :ref:`export-flight-plan-as-gpx` in the menu ``File``.
-- ``little_navmap.logbooktrack`` and ``little_navmap_profile.track`` are temporary files for saving trails.
+These are:
+
+-  Windows: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel`` or ``%appdata%\ABarthel``
+-  macOS: ``/Users/YOURUSERNAME/.config/ABarthel`` or ``$HOME/.config/ABarthel``
+-  Linux: ``/home/YOURUSERNAME/.config/ABarthel`` or ``$HOME/.config/ABarthel``
 
 .. _configuration:
 
 Configuration
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
-The files use the Windows-INI style that has groups in square
-brackets and ``key=value`` lines. See
-`here <https://en.wikipedia.org/wiki/INI_file>`__ for more information
+Configuration files ending with ``.ini`` use the Windows-INI style that has groups in square
+brackets and ``key=value`` lines. See `here <https://en.wikipedia.org/wiki/INI_file>`__ for more information
 about this type of configuration files.
-
-All configuration files for my programs are stored in these directories:
-
--  Windows: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel``
--  macOS: ``/Users/YOURUSERNAME/.config/ABarthel``
--  Linux: ``$HOME/.config/ABarthel``
 
 -  ``little_navmap.ini``: INI style configuration file. Text file. Can be opened with :ref:`files-and-directories-ini`.
 -  ``little_navmap.history``: The map position history. This is a binary file which cannot be opened in text editors.
--  ``little_navmap.lnmpln``: Temporary flight plan file in LNMPLN format. This is used to reload changed flight plans without manual save.
+-  ``little_navmap.lnmpln``: Temporary flight plan file in LNMPLN format (XML/text). This is used to reload changed flight plans without manual save.
 
 Three more configuration files are created for customization of colors
 and styles:
@@ -97,44 +107,39 @@ See :doc:`CUSTOMIZE` for more information.
   but only after creating backup files. This is usually mentioned in the
   change log.
 
-.. _disk-cache:
+.. _files-trails:
 
-Disk Cache
-~~~~~~~~~~
+Aircraft Trails
+^^^^^^^^^^^^^^^^^^^^^^
 
-The disk cache that is used to store all the downloaded online map tile
-images can be found here:
+Aircraft trails are stored in separate files in the :ref:`settings-directory` directory:
 
--  Windows: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth``
--  macOS: ``/Users/YOURUSERNAME/.local/share/marble/maps/earth``
--  Linux: ``$HOME/.local/share/marble/maps/earth``
+- ``little_navmap.track``: The main user aircraft trail shown on the map. Binary file. This trail can be exported
+  as a GPX using :ref:`export-flight-plan-as-gpx` in the menu ``File``.
+- ``little_navmap.logbooktrack`` and ``little_navmap_profile.track`` are temporary files for saving trails.
 
-The cache directory ``earth`` contains one directory for each installed map theme.
+.. _files-crashreports:
 
-You can open the cache directory from menu item ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`
+Crash Reports
+^^^^^^^^^^^^^^^^^^^^^^
 
-You can delete the cache manually to save space if *Little Navmap* is not running.
+Crash or issue reports are stored in the :ref:`settings-directory` directory in the sub-directory ``crashreports``.
+These are normal Zip files containing the most important configuration, flight plan and other files needed to reproduce a crash.
+An issue report can be created manually by an user by clicking :ref:`create-issue-report` in the menu ``Tools``. Crash reports are automatically collected after *Little Navmap* detects an unclean shutdown. See also :doc:`CRASHREPORT` and :doc:`ISSUEREPORT`.
 
-Cache size can be changed on page :ref:`cache-map-display` in options.
+- ``little_navmap_crashreport.zip``: Automatically generated crash report after detecting an unclean shutdown from the last session. Follow the instructions in the dialog window if you wish to send the report. Click on the blue links to open files or web pages.
+- ``little_navmap_issuereport.zip``: Manually created issue report by using :ref:`create-issue-report` in the menu ``Tools``.
+- ``little_navmap_stacktrace.txt``: More detailed information about crash location in the source code. Not available on all platforms.
 
-Each map theme has a folder in this directory where its tile images are stored.
-A short name is used which corresponds to the related map theme.
-This is ``mapboxuser`` for the theme ``MapBox User`` or ``openstreetmap`` for the theme ``OpenStreetMap``, for example.
-
-Delete the related directory to clear the cache.
 
 .. _files-databases:
 
 Databases
-~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
-Databases are stored in the directories:
+Aircraft trails are stored in the sub-directory ``little_navmap_db`` below the :ref:`settings-directory` directory.
 
--  Windows: ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
--  macOS: ``/Users/YOURUSERNAME/.config/ABarthel/little_navmap_db``
--  Linux: ``$HOME/.config/ABarthel/little_navmap_db``
-
-All these databases are `SQLite <http://sqlite.org>`__ files which can
+All the databases are `SQLite <http://sqlite.org>`__ files which can
 be viewed with e.g. `DB Browser for SQLite <https://github.com/sqlitebrowser/sqlitebrowser/releases>`__ if
 you're interested in relational databases.
 
@@ -151,8 +156,8 @@ The directory can be opened with :ref:`files-and-directories-db`.
 
 .. _files-databases-scenery-library:
 
-Scenery Library
-^^^^^^^^^^^^^^^
+Scenery Library Databases
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 The number of files depends on which simulators you have installed and
 which scenery libraries you have loaded.
@@ -173,8 +178,8 @@ The files are:
 
 .. _files-userdata:
 
-Userpoints
-^^^^^^^^^^
+Userpoints Database
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 The file ``little_navmap_userdata.sqlite`` contains the user defined
 waypoints.
@@ -195,8 +200,8 @@ did something wrong.
 
   You can apply the same to the :ref:`files-logbook` files.
 
-User Airspaces
-^^^^^^^^^^^^^^
+User Airspaces Database
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 The file ``little_navmap_userairspace.sqlite`` contains the user defined
 airspaces read by using :ref:`load-user-airspaces`.
@@ -205,8 +210,8 @@ It is backed up in the same way as the userpoints.
 
 .. _files-logbook:
 
-Logbook
-^^^^^^^
+Logbook Database
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 The file ``little_navmap_logbook.sqlite`` is used to store logbook
 entries.
@@ -215,7 +220,7 @@ entries.
 backup files for the user defined waypoints as described above.
 
 Other Database Files
-^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Additional files like
 
@@ -228,6 +233,32 @@ Additional files like
 
 are used by temporary processes like the database compilation or online
 network data. These can be ignored.
+
+.. _disk-cache:
+
+Disk Cache
+~~~~~~~~~~
+
+The disk cache that is used to store all the downloaded online map tile
+images can be found here:
+
+-  Windows: ``C:\Users\YOURUSERNAME\AppData\Local\.marble\data\maps\earth`` or ``%localappdata%\.marble``
+-  macOS: ``/Users/YOURUSERNAME/.local/share/marble/maps/earth`` or ``$HOME/.local/share/marble/maps/earth``
+-  Linux: ``/home/YOURUSERNAME/.local/share/marble/maps/earth`` or ``$HOME/.local/share/marble/maps/earth``
+
+The cache directory ``earth`` contains one directory for each installed map theme.
+
+You can open the cache directory from menu item ``Tools`` -> ``Files and Directories`` -> :ref:`files-and-directories-cache`
+
+You can delete the cache manually to save space if *Little Navmap* is not running.
+
+Cache size can be changed on page :ref:`cache-map-display` in options.
+
+Each map theme has a folder in this directory where its tile images are stored.
+A short name is used which corresponds to the related map theme.
+This is ``mapboxuser`` for the theme ``MapBox User`` or ``openstreetmap`` for the theme ``OpenStreetMap``, for example.
+
+Delete the related directory to clear the cache.
 
 .. _lnmpln-file-format:
 

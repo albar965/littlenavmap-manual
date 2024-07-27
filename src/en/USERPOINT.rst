@@ -15,6 +15,10 @@ icons on the map.
   menu opened by clicking the userpoint icon in the dock window.
   Screenshot based on *Little Navmap* 2.4.  *Click image to enlarge.*
 
+.. tip::
+
+  See :ref:`files-backup-important` for more information about backing up userpoints and other information of *Little Navmap*.
+
 .. _userpoints-search:
 
 Userpoint Search
@@ -100,7 +104,7 @@ Delete userpoints having no information except coordinates and type
   Removes empty userpoints without any information.
 
 Remove duplicates using additional fields as criteria.
-  An userpoint will considered a duplicate to another if all selected fields are equal. The following fields can be checked:
+  A userpoint will considered a duplicate to another if all selected fields are equal. The following fields can be checked:
 
   -  Ident, Name, and Type
   -  Region
@@ -258,7 +262,7 @@ Airports
 ^^^^^^^^
 
 -  |Addon| **Addon**: Can be used to mark airports manually as add-on. Does not show labels to avoid overlap with marked airport.
--  |Airport| **Airport**: Default when creating an userpoint on top of an airport.
+-  |Airport| **Airport**: Default when creating a userpoint on top of an airport.
 -  |Airstrip| **Airstrip**
 -  |Closed| **Closed airport**
 -  |Helipad| **Helipad**
@@ -267,15 +271,15 @@ Airports
 Navaids
 ^^^^^^^
 
--  |DME| **DME**: Distance measuring equipment. Default when creating an userpoint on top of a DME.
--  |NDB| **NDB**: Non-directional beacon. Default when creating an userpoint on top of a NDB.
+-  |DME| **DME**: Distance measuring equipment. Default when creating a userpoint on top of a DME.
+-  |NDB| **NDB**: Non-directional beacon. Default when creating a userpoint on top of a NDB.
 -  |Radio Range| **Radio Range**: Old radio range navigation aid.
--  |TACAN| **TACAN**: Tactical air navigation system. Default when creating an userpoint on top of a DME.
--  |VORDME| **VORDME**: VHF omnidirectional range and DME. Default when creating an userpoint on top of a VORDME.
--  |VORTAC| **VORTAC**: VOR and TACAN. Default when creating an userpoint on top of a VORTAC.
--  |VOR| **VOR**: VHF omnidirectional range. Default when creating an userpoint on top of a VOR.
+-  |TACAN| **TACAN**: Tactical air navigation system. Default when creating a userpoint on top of a DME.
+-  |VORDME| **VORDME**: VHF omnidirectional range and DME. Default when creating a userpoint on top of a VORDME.
+-  |VORTAC| **VORTAC**: VOR and TACAN. Default when creating a userpoint on top of a VORTAC.
+-  |VOR| **VOR**: VHF omnidirectional range. Default when creating a userpoint on top of a VOR.
 -  |VRP| **VRP**: Visual reporting point.
--  |Waypoint| **Waypoint**: Default when creating an userpoint on top of a navaid. Default when creating an userpoint on top of a waypoint.
+-  |Waypoint| **Waypoint**: Default when creating a userpoint on top of a navaid. Default when creating a userpoint on top of a waypoint.
 
 Points of Interest
 ^^^^^^^^^^^^^^^^^^
@@ -391,7 +395,7 @@ Position   Name                    Required   Empty Allowed   Comment
 7          Magnetic declination    No         Yes             Ignored on import and set to a valid calculated value on export.
 8          Tags                    No         Yes             Free to use field. GUI has no special tag search.
 9          Description             No         Yes             Free to use field which allows line breaks.
-10         Region                  No         Yes             Two letter ICAO region of an userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.
+10         Region                  No         Yes             Two letter ICAO region of a userpoint or waypoint. Used for X-Plane export. Replaced with default value `ZZ` on X-Plane export if empty.
 11         Visible From            No         Yes             Defines from what zoom distance in NM (shown on :doc:`STATUSBAR`) the userpoint is visible. Set to 250 NM if empty on import.
 12         Last Edit               No         Yes             ISO date and time of last change. Format is independent of system date format settings. Format: `YYYY-MM-DDTHH:mm:ss`. Example: `2018-03-28T22:06:16.763`. Not editable in the user interface.
 13         Import Filename         No         Yes             Full path and file name the userpoint was imported from. Not editable in the user interface.

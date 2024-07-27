@@ -49,7 +49,7 @@ context menu.
 |                                   | measurement or delete measurement     |
 |                                   | line.                                 |
 +-----------------------------------+---------------------------------------+
-| ``Ctrl+Shift+Click``              | Add or edit an userpoint.             |
+| ``Ctrl+Shift+Click``              | Add or edit a userpoint.              |
 +-----------------------------------+---------------------------------------+
 | ``Ctrl+Alt+Click``                | Insert airport, navaid, userpoint     |
 |                                   | or position into the nearest          |

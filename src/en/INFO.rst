@@ -47,7 +47,7 @@ airspaces which are close to the cursor for a left click in the map.
 *Little Navmap* shows tabs based on priorities and selected objects and
 tries to minimize tab changes.
 
-Example: If you click on an airport, a VOR, a NDB and an userpoint at
+Example: If you click on an airport, a VOR, a NDB and a userpoint at
 the same position:
 
 #. *Little Navmap* fills all airport (several tabs), navaid and userpoint tabs with information. The tab ``Navaids`` gets information

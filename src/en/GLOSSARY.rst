@@ -152,7 +152,7 @@ PLN
   FSX and P3D flight plan format.
 
 POI
-  Point of interest. An userpoint type.
+  Point of interest. A userpoint type.
 
 Procedure
   A STAR, SID or approach and the respective transitions.
@@ -225,7 +225,7 @@ UTC
   Universal coordinated time. Also Zulu time.
 
 VRP
-  Visual reporting point for VFR flights. An userpoint type.
+  Visual reporting point for VFR flights. A userpoint type.
 
 Waypoint
   It is a navaid defined by coordinates. Synonym for intersection in this manual.

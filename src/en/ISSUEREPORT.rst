@@ -38,6 +38,8 @@ See also :ref:`scenery`.
 
 **Please use either the forum or email to avoid confusion and additional effort. Please do not use both.**
 
+Files and file locations are described in chapter :ref:`files-crashreports`.
+
 `Contact and Support  <https://albar965.github.io/contact.html>`__
 
 .. note::

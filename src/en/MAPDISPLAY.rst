@@ -586,7 +586,7 @@ navaid or userpoint is at the clicked position.
 An user defined flight plan position (green square) is added to the plan if no airport
 or navaid is near the clicked point.
 
-An userpoint is converted to an user defined flight plan position if
+A userpoint is converted to an user defined flight plan position if
 added to the plan.
 
 .. note::
@@ -596,8 +596,8 @@ added to the plan.
 
 .. tip::
 
-  All information from an userpoint like remarks, ident, region and name are copied to the
-  flight plan position if you right click on an userpoint and select ``Add Position to Flight Plan``
+  All information from a userpoint like remarks, ident, region and name are copied to the
+  flight plan position if you right click on a userpoint and select ``Add Position to Flight Plan``
   or ``Append Position to Flight Plan``.
 
 .. _append-position-to-flight-plan:
@@ -781,7 +781,7 @@ Removes a map feature added by the user.
 
 Marks an airport with a yellow circle as add-on.
 
-This function will add an userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
+This function will add a userpoint of type ``Addon`` |Addon| filled with the airport information at the clicked airport position.
 
 You can add you own userpoint type names starting with ``Addon`` to create more add-on categories. See :ref:`customize-icons` for more information.
 
@@ -807,11 +807,11 @@ userpoint dialog are populated automatically depending on the clicked
 map object and previously added userpoints.
 
 Coordinates are always filled-in. If the selected object is an airport
-or navaid, an userpoint of type ``Airport`` |Airport| or ``Waypoint`` |Waypoint| respectively
+or navaid, a userpoint of type ``Airport`` |Airport| or ``Waypoint`` |Waypoint| respectively
 is created and the fields Ident, Region, Name and Altitude are
 filled-in. The same applies to NDB |NDB|, VOR |VOR| and other navaids.
 
-If the selected position is empty map space, an userpoint of type
+If the selected position is empty map space, a userpoint of type
 ``Bookmark`` |Bookmark| is created at this position. Altitude is only filled-in if the :doc:`GLOBE` is installed.
 
 See :ref:`userpoints-dialog-add` for more information.
@@ -821,8 +821,8 @@ See :ref:`userpoints-dialog-add` for more information.
 |Edit Userpoint| Edit Userpoint
 ''''''''''''''''''''''''''''''''''
 
-Open the edit dialog for an userpoint. Only enabled if the selected
-object is an userpoint. See :ref:`userpoints-dialog-edit`.
+Open the edit dialog for a userpoint. Only enabled if the selected
+object is a userpoint. See :ref:`userpoints-dialog-edit`.
 
 .. _move-userpoint:
 
@@ -830,7 +830,7 @@ object is an userpoint. See :ref:`userpoints-dialog-edit`.
 ''''''''''''''''''''''''''''''''''
 
 Move the userpoint to a new position on the map. Only enabled if the
-selected object is an userpoint.
+selected object is a userpoint.
 
 Left-click to place the userpoint at the new position. Right-click or
 press the escape key to cancel the operation and return the userpoint to
@@ -842,7 +842,7 @@ its previous position.
 ''''''''''''''''''''''''''''''''''''
 
 Remove the user defined waypoint from the userdata. The action can be undone in the main menu ``Userpoint``.
-Only enabled if the selected object is an userpoint.
+Only enabled if the selected object is a userpoint.
 
 .. _edit-log-entry:
 

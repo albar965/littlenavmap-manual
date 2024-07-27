@@ -7,7 +7,7 @@ Formatted text like bold or markdown is not supported.
 
 Links are recognized in the field ``Remarks`` and can be opened in
 the dock window ``Information`` on tab ``Navaids`` which is shown after
-clicking on an userpoint or selecting ``Show Information`` in one of the
+clicking on a userpoint or selecting ``Show Information`` in one of the
 context menus, for example.
 
 The same applies to userpoints and aircraft performance remarks in the respective information

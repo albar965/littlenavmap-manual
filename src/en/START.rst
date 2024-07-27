@@ -148,6 +148,7 @@ Recommended things to do after Installing
   Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__
   on my home page for information how to update *Little Navmap*'s
   navigation data.
+- Think about backing up your valuable data of *Little Navmap*. See :ref:`files-backup-important` for more information.
 
 Useful Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

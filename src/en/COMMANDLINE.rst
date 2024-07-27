@@ -37,12 +37,6 @@ operating systems. A question dialog might appear asking to discard changes, if 
   ``--flight-plan-descr`` reads the route string using the current options set in the drop down menu button
   in the :doc:`ROUTEDESCR` dialog window.
 
-.. warning::
-
-  Any unsaved flight plan in progress (visible ``*`` in main window title bar but no filename)
-  will be overwritten without further notice if using
-  one of the options to load a flight plan or route description.
-
 Options
 ~~~~~~~~~~~~~~~
 

@@ -1485,7 +1485,7 @@ You can tear off the drop down menu from the toolbar by clicking on the dashed l
 The previous selection state is restored by clicking the ``All Userpoints`` or ``No Userpoints`` items a second time in
 the toolbar button dropdown menu.
 
-The respective type is automatically enabled after an userpoint is added to the map.
+The respective type is automatically enabled after a userpoint is added to the map.
 
 Custom userpoint categories show up in this menu too.
 

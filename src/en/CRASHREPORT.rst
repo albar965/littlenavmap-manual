@@ -21,8 +21,11 @@ Loading of files and settings optionally skipped in clean mode:
 
 No user files are modified or removed. User features like measurement lines or traffic patters are not affected.
 
+
+
 **See** :doc:`ISSUEREPORT` **for more information about the report and contact information.**
 
+Files and file locations are described in chapter :ref:`files-crashreports`.
 
 .. note::
 

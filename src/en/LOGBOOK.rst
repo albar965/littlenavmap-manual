@@ -23,6 +23,10 @@ Use :ref:`reset-for-new-flight` to be sure that the logbook flight detection is 
 
 Editing functionality in the logbook is similar to the userpoints editing (:ref:`userpoints`).
 
+.. tip::
+
+  See :ref:`files-backup-important` for more information about backing up the logbook and other information of *Little Navmap*.
+
 .. _logbook-create:
 
 Create Logbook Entries
