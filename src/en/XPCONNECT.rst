@@ -82,9 +82,12 @@ using the menu item :ref:`install-xpconnect` or manually by copying it from the 
 
 Automatic installation is strongly recommended since it scans the installation directory for duplicates and broken installations.
 
-.. note::
+.. important::
 
   Do not download the plugin manually. It is included in the download archive of *Little Navmap*.
+
+  You have to keep the directory structure intact when installing/extracting *Little Navmap* from a Zip archive.
+  Otherwise this menu item will be disabled if *Little Navmap* cannot find *Little Xpconnect* in its installation folder.
 
 .. _xpconnect-auto-installation:
 

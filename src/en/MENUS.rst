@@ -2541,8 +2541,9 @@ Tools Menu
 Opens the ``Connect`` dialog allowing *Little Navmap* to connect directly
 to a flight simulator, the *Little Xpconnect* X-Plane plugin, or
 remotely using the *Little Navconnect* agent.
+
 See :doc:`CONNECT` for more
-information.
+information and :ref:`install-xpconnect` and :doc:`XPCONNECT` below for more information about X-Plane.
 
 .. _toggle-flight-simulator-connection:
 
@@ -2574,6 +2575,12 @@ for *Little Navmap* to connect to the simulator.
 You can use this to avoid the manually copying. Additionally the function checks for wrongly installed plugins.
 
 See chapter :doc:`XPCONNECT` for more information.
+
+.. important::
+
+  You have to keep the directory structure intact when installing/extracting *Little Navmap* from a Zip archive.
+  Otherwise this menu item will be disabled if *Little Navmap* cannot find *Little Xpconnect* in its installation folder.
+
 
 .. _run-webserver:
 
