@@ -986,12 +986,12 @@ The detail level is shown in the :doc:`STATUSBAR`. Range is -2 for least detail 
 
 .. _more-label-details:
 
-|More Label Details| More Details
+|More Label Details| More Map Labels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _less-label-details:
 
-|Less Label Details| Less Details
+|Less Label Details| Less Map Labels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These change the number and size of map labels. More means
