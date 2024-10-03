@@ -286,8 +286,6 @@ altitude and Nautical Miles for distance are possible.
   feet to meter. This also applies to flight plan altitude. Therefore, do
   not forget to adapt these numbers after changing units.
 
-
-
 .. _options-files:
 .. _page5:
 
@@ -312,6 +310,10 @@ departure, destination or any other parameter used in the flight plan file.
 
 The dialog :ref:`save-flight-plan-as` will show up instead of overwriting
 the current flight plan when you reverse the route, for example.
+
+This will trigger ``Save as`` on every change that might affect the filename. ``Save as``
+will pop up if you change the cruise altitude and it is a part of the filename, for example.
+A change in the airport name (switching simulators) might also trigger it.
 
 .. _flight-plan-pattern:
 
@@ -503,14 +505,14 @@ zoom distances or lower detail levels.
 |Map Display Keys Icon| Map Keys
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On this page you can enter login information, tokens or API keys for map services which need an user account.
+On this page you can enter login information, tokens or API keys for map services which need a user account.
 
 The required keys shown are extracted from the installed map themes. See :doc:`MAPTHEMES` for more information about map themes.
 
 The following map themes requiring an account come with *Little Navmap*:
 
 - `Mapbox <https://account.mapbox.com>`__ also allows user customized maps in Mapbox Studio. See the Mapbox page for help.
-  Click ``Add Mapbox User Map`` to add an user styled map to *Little Navmap*.
+  Click ``Add Mapbox User Map`` to add a user styled map to *Little Navmap*.
 - `Thunderforest <https://www.thunderforest.com/>`__
 - `Maptiler <https://www.maptiler.com/>`__
 - `Stadia StamenTerrain <https://stadiamaps.com/stamen/onboarding/create-account/>`__
@@ -556,7 +558,7 @@ Mapbox
   :scale: 50%
 
   Location of the Mapbox Studio URL on the `Mapbox Studio page <https://studio.mapbox.com/>`__
-  Insert this URL into the ``Add Mapbox User Map`` dialog window to add an user styled map to *Little Navmap*. *Click image to enlarge.*
+  Insert this URL into the ``Add Mapbox User Map`` dialog window to add a user styled map to *Little Navmap*. *Click image to enlarge.*
 
 Thunderforest
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -668,7 +670,7 @@ This setting is only applicable if :ref:`simulator-aircraft-center-wp` above is 
 Allow scrolling and zooming in the map and jump back to aircraft after
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-This setting allows an user to move around in the map without the need to manually disable the
+This setting allows a user to move around in the map without the need to manually disable the
 aircraft centering.
 
 Time until aircraft following is activated again after any manual map
@@ -744,6 +746,8 @@ Shows active flight plan legs in magenta color (default) on the map and in the f
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here you can set preferences for flight plan cruise altitude assignment.
+This is used when calculating a flight plan (:doc:`ROUTECALC`) or when adapting the cruise altitude automatically
+using :ref:`adjust-flight-plan-alt` in menu ``Flight Plan``.
 
 .. _options-weather:
 .. _page18:

@@ -160,12 +160,8 @@ color:     darkgray;
 }
 
 .highlight-style {
-  color:     blue;
-}
-
-.highlight-bold-style {
-font-weight: bold;
-color:     blue;
+  font-weight: bold;
+  color:     #cc6600;
 }
 
 .rst-content dl dt {

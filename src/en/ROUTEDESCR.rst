@@ -195,7 +195,10 @@ All elements in square brackets ``[]`` are optional.
        See below for a details about coordinates. A waypoint can be prefixed with ``DCT`` to indicate
        a direct connection not using an airway. Waypoints can be suffixed with an optional ``/SPEEDALT``
        value although this is ignored. Examples: ``TAU``, ``BOMBI``, ``AST``, ``CL``, ``EDDF``.
-    -  ``AIRWAYWAYPOINT``: Airway and end waypoint on the airway separated by a space.  Examples: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``.
+    -  ``AIRWAYWAYPOINT``: Airway or oceanic track plus end waypoint of the airway/track separated by a space.
+       Examples: ``V495 CONDI``, ``V338 YVR``, ``V330 TRENA``, ``NATF ELSIR`` or ``F ELSIR``.
+       Note that the North Atlantic Track notation can be used to identify tracks. Example: ``NATA`` is interpreted as NAT track ``A``.
+       Other oceanic tracks are simply identified by their letter or number. See :doc:`TRACKS` for more information.
 
 -  ``STARTRANS`` is either the word ``STAR`` or a read STAR and an optional transition which can be given
    as ``STAR.TRANS``, ``STAR TRANS``, ``TRANS.STAR`` or ``TRANS STAR``.
@@ -350,6 +353,9 @@ Depart from runway 36 using SID TFS3T:
 
 Approach RNAV 04L via BOOKE:
   ``KSFO/01R DCT BAART R464 BITTA KAENA2 PHNL/BOOKE.R04L``
+
+Flight plan using NAT track ``F``:
+  ``EGLL DOGAL NATF ELSIR KBOS`` or ``EGLL DOGAL F ELSIR KBOS``
 
 
 .. |Menu Button| image:: ../images/icon_menubutton.png

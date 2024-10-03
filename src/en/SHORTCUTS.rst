@@ -454,3 +454,19 @@ Flight Plan Route Description - Additional Shortcuts
 +====================+=================+
 | Create Flight Plan | ``Ctrl+Return`` |
 +--------------------+-----------------+
+
+.. _shortcuts-context-map:
+
+Map - Additional Shortcuts
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Note that you have to activate the map window by pressing ``F2`` or clicking into it before using any shortcuts there.
+
++-----------------------------------------+---------------------+
+| Button                                  | Shortcut            |
++=========================================+=====================+
+| Copy coordinates at cursor to clipboard | ``Ctrl+C``          |
++-----------------------------------------+---------------------+
+| Jump to coordinates                     | ``Ctrl+Shift+Home`` |
++-----------------------------------------+---------------------+
+

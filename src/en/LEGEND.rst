@@ -32,38 +32,42 @@ removes it. The cursor changes to a hand symbol to indicate an active
 spot which allows to remove a feature by click or remove/edit it in the
 context menu.
 
-+-----------------------------------+---------------------------------------+
-| Mouse                             | Description                           |
-+===================================+=======================================+
-| ``Single Click``                  | Show information about all            |
-|                                   | features near the cursor              |
-|                                   | position.                             |
-+-----------------------------------+---------------------------------------+
-| ``Double Click``                  | Zooms to the clicked feature and      |
-|                                   | shows information.                    |
-+-----------------------------------+---------------------------------------+
-| ``Shift+Click``                   | Add or remove range rings or          |
-|                                   | navaid range rings.                   |
-+-----------------------------------+---------------------------------------+
-| ``Ctrl+Click``                    | Start great circle line               |
-|                                   | measurement or delete measurement     |
-|                                   | line.                                 |
-+-----------------------------------+---------------------------------------+
-| ``Ctrl+Shift+Click``              | Add or edit a userpoint.              |
-+-----------------------------------+---------------------------------------+
-| ``Ctrl+Alt+Click``                | Insert airport, navaid, userpoint     |
-|                                   | or position into the nearest          |
-|                                   | flight plan leg.                      |
-+-----------------------------------+---------------------------------------+
-| ``Shift+Alt+Click``               | Append airport, navaid, userpoint     |
-|                                   | or position to flight plan.           |
-+-----------------------------------+---------------------------------------+
-| ``Wheel``                         | Zoom in or out.                       |
-+-----------------------------------+---------------------------------------+
-| ``Shift+Wheel``                   | Zoom in or out in small steps.        |
-+-----------------------------------+---------------------------------------+
-| ``Ctrl+Wheel``                    | Increase or decrease map details.     |
-+-----------------------------------+---------------------------------------+
++----------------------+------------------------------------------------+
+| Mouse                | Description                                    |
++======================+================================================+
+| ``Single Click``     | Show information about all                     |
+|                      | features near the cursor                       |
+|                      | position.                                      |
++----------------------+------------------------------------------------+
+| ``Double Click``     | Zooms to the clicked feature and               |
+|                      | shows information.                             |
++----------------------+------------------------------------------------+
+| ``Shift+Click``      | Add or remove range rings or                   |
+|                      | navaid range rings.                            |
++----------------------+------------------------------------------------+
+| ``Ctrl+Click``       | Start great circle line                        |
+|                      | measurement or delete measurement              |
+|                      | line.                                          |
++----------------------+------------------------------------------------+
+| ``Ctrl+Shift+Click`` | Add or edit a userpoint.                       |
++----------------------+------------------------------------------------+
+| ``Ctrl+Alt+Click``   | Insert airport, navaid, userpoint              |
+|                      | or position into the nearest                   |
+|                      | flight plan leg.                               |
++----------------------+------------------------------------------------+
+| ``Shift+Alt+Click``  | Append airport, navaid, userpoint              |
+|                      | or position to flight plan.                    |
++----------------------+------------------------------------------------+
+| ``Wheel``            | Zoom in or out.                                |
++----------------------+------------------------------------------------+
+| ``Shift+Wheel``      | Zoom in or out in small steps.                 |
++----------------------+------------------------------------------------+
+| ``Ctrl+Wheel``       | Increase or decrease map details.              |
+|                      | See :ref:`map-details` in menu ``Map``.        |
++----------------------+------------------------------------------------+
+| ``Ctrl+Shift+Wheel`` | Increase or decrease label density.            |
+|                      | See :ref:`map-label-details` in menu ``Map``.  |
++----------------------+------------------------------------------------+
 
 .. _key-commands-legend:
 
@@ -673,12 +677,16 @@ See also :doc:`FLIGHTPLAN`.
 | |Top of Climb|                  | Top of climb point with distance                             |
 |                                 | from departure.                                              |
 |                                 | Can be disabled in menu ``View``                             |
-|                                 | -> :ref:`show-toc-and-tod`                                   |
+|                                 | -> :ref:`show-toc-and-tod`.                                  |
 +---------------------------------+--------------------------------------------------------------+
 | |Top of Descent|                | Top of descent point with                                    |
 |                                 | distance to destination.                                     |
 |                                 | Can be disabled in menu ``View``                             |
-|                                 | -> :ref:`show-toc-and-tod`                                   |
+|                                 | -> :ref:`show-toc-and-tod`.                                  |
++---------------------------------+--------------------------------------------------------------+
+| |To Departure|                  | Line pointing directly to the departure position runway.     |
+|                                 | Can be disabled in menu ``View``                             |
+|                                 | -> :ref:`show-direct-to-departure`.                          |
 +---------------------------------+--------------------------------------------------------------+
 
 .. _procedures-legend:
@@ -1212,6 +1220,7 @@ Winds Aloft
 .. |Top of Climb| image:: ../images/legend_routetoc.png
 .. |Top of Descent Profile| image:: ../images/legend_profiletod.png
 .. |Top of Descent| image:: ../images/legend_routetod.png
+.. |To Departure| image:: ../images/legend_todeparture.png
 .. |Tower Active| image:: ../images/legend_tower_active.png
 .. |Tower| image:: ../images/legend_tower_inactive.png
 .. |Trail| image:: ../images/legend_aircraft_track.png

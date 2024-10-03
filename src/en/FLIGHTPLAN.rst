@@ -17,6 +17,20 @@ Note that not all simulators or add-ons support this kind of flight plans.
 You need to have the GLOBE elevation data installed to get the correct altitudes for arbitrary
 start or departure points. See :ref:`cache-elevation` for installation instructions.
 
+.. _flight-plan-connect-add-to-plan:
+
+Automatic Initialization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* automatically adds your current position to the flight plan if your plan is empty
+after connecting to the simulator. The flight plan is initialized with the nearest airport,
+a parking position or a runway close to your aircraft position.
+
+This is the same as selecting a departure airport and then using the function
+:ref:`select-a-start-position-for-departure` in menu ``Flight Plan``.
+
+This function can be disabled in options on page :ref:`options-files`.
+
 .. _flight-plan-header:
 
 Header
@@ -48,7 +62,6 @@ Further error messages are shown in the :ref:`flight-plan-table-err-footer`.
 
 The header can be customized using :ref:`flight-plan-table-columns-select` and the font
 size can be adjusted in options on page :ref:`options-display-and-text`.
-
 
 .. figure:: ../images/flightplanheader.jpg
 
@@ -401,7 +414,7 @@ of a procedure. Deleting a procedure deletes its transition too.
 |Edit Flight Plan Position| Edit Flight Plan Position or Edit Flight Plan Position Remarks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Allows to change the name or coordinates of an user defined waypoint in
+Allows to change the name or coordinates of a user defined waypoint in
 the flight plan. See :doc:`EDITFPPOSITION`.
 
 Also allows to add a remark to any flight plan waypoint which is not an alternate and not a part of

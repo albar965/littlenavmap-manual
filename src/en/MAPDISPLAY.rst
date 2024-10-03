@@ -67,7 +67,7 @@ The procedure search window can be raised optionally if clicking an airport.
 This can be enabled in the options dialog on page :ref:`options-map-tooltips-and-clicks`.
 Check ``Show procedures on airport click`` to enable this function.
 
-A single click on an user aircraft, AI aircraft or multiplayer aircraft
+A single click on a user aircraft, AI aircraft or multiplayer aircraft
 shows details in the ``Simulator Aircraft`` dock window.
 
 A double-click zooms in showing either the airport diagram or the navaid
@@ -110,18 +110,30 @@ Click spots and hotspots for tooltips are:
 - Center of MSA diagrams (small circle).
 - Start and end of a measurement line (circle and cross).
 - Runway threshold point (small circle) for airport traffic patterns.
-- Holding fix (small triangle) of an user holding.
+- Holding fix (small triangle) of a user holding.
 
 .. _mouse-clicks-modifiers:
 
-Mouse Clicks and Modifiers
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mouse Clicks and Modifier Keys
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can use the keyboard and mouse clicks to get quick access to some functions.
 
 See :ref:`mouse-clicks-legend` in the map legend for more information about this.
 
 Clicking again on a hotspot removes the mark, measurement line or flight plan waypoint, for example.
+
+.. _mouse-map-wheel:
+
+Mouse Wheel and Modifier Keys
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The mouse wheel can be used to control different map functions depending on pressed modifier keys:
+
+- ``Wheel``: Zoom in or out.
+- ``Shift+Wheel``: Zoom in or out in small steps. Might result in a blurry map display.
+- ``Ctrl+Wheel``: Increase or decrease map details. This is the same as :ref:`map-details` in menu ``Map``.
+- ``Ctrl+Shift+Wheel``: Increase or decrease label density. This is the same function as :ref:`map-label-details` in menu ``Map``.
 
 .. _aircraft-map:
 
@@ -421,12 +433,18 @@ Atlas (Offline)
   is included in *Little Navmap* and has an option to display city and
   country names. Boundaries and water bodies are depicted coarse.
 
+US IFR Area High Charts, US IFR Area Low Charts, US VFR Sectional Charts and US VFR Terminal Charts
+  Official chart maps provided by the FAA. Note that these cover the US only. You have to zoom in close
+  for some of these maps to see the content.
+
+
 Map themes are included per default but need a free acccout at the respective map provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mapbox Dark, Mapbox Light, Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Stadia StamenTerrain, Thunderforest Atlas and Thunderforest Landscape
   These maps require a registration at the respective sites to get access to the map tiles.
-  You can enter the keys in the options dialog on page :ref:`options-map-keys` which also contains direct links to the login pages.
+  You can enter the keys in the options dialog on page :ref:`options-map-keys`
+  which also contains direct links to the login pages.
 
 .. note::
 
@@ -583,10 +601,10 @@ position is near the flight plan end points.
 The text ``Position`` in the menu is replaced with an object name if an airport,
 navaid or userpoint is at the clicked position.
 
-An user defined flight plan position (green square) is added to the plan if no airport
+A user defined flight plan position (green square) is added to the plan if no airport
 or navaid is near the clicked point.
 
-A userpoint is converted to an user defined flight plan position if
+A userpoint is converted to a user defined flight plan position if
 added to the plan.
 
 .. note::
@@ -634,7 +652,7 @@ Two options exist depending on the waypoint type:
 
 - ``Edit Flight Plan Position Remarks``: Add remarks to a flight plan waypoint which is not an alternate airport and not a part of
   a procedure. See :doc:`EDITFPREMARKS`.
-- ``Edit Flight Plan Position``: Change the ident, name, remarks or position of an user defined
+- ``Edit Flight Plan Position``: Change the ident, name, remarks or position of a user defined
   flight plan waypoint. See :doc:`EDITFPPOSITION`. You can edit the coordinates directly instead of
   dragging the flight plan position (:doc:`MAPFPEDIT`). See :doc:`COORDINATES` for a list of formats that are recognized by the edit dialog.
 
@@ -772,7 +790,7 @@ Removes a map feature added by the user.
 - Enabled if clicked on the **holding** hotspot (holding fix, white filled triangle)
   which is indicated by a hand cursor.
 - Removes the selected **MSA diagram** from the map. This menu item is active if you
-  right-click on the hotspot of an user added MSA diagram (small circle in center).
+  right-click on the hotspot of a user added MSA diagram (small circle in center).
 
 .. _mark-airport-addon-map:
 
@@ -802,7 +820,7 @@ See chapter :doc:`USERPOINT` for more information how to edit or remove the high
 |Add Userpoint| Add Userpoint
 ''''''''''''''''''''''''''''''''''
 
-Add an user defined point to the userpoints. A dialog shows up where more information can be entered. Some fields of the
+Add a user defined point to the userpoints. A dialog shows up where more information can be entered. Some fields of the
 userpoint dialog are populated automatically depending on the clicked
 map object and previously added userpoints.
 
@@ -903,6 +921,8 @@ You can enable selection of a flight plan leg for a single click onto a flight p
 Copies the coordinates at the clicked position into the clipboard.
 
 The coordinate format depends on the selection in the options dialog on page :ref:`options-units`.
+
+You can also use the keyboard shortcut ``Ctrl+C`` to copy coordinates at the cursor position in the map window to the clipboard. Note that you have to activate the map window by pressing ``F2`` or clicking into it before using any shortcuts there.
 
 .. _set-center-for-distance-search:
 

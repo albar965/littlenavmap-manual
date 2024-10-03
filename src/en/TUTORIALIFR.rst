@@ -446,7 +446,7 @@ a direct flight plan leg to the start of the procedure.
 
 You can now to get the course and distance to the initial fix.
 
-**Below:** After changing the approach procedure and adding an user defined
+**Below:** After changing the approach procedure and adding a user defined
 waypoint at the aircraft position to the flight plan. Now we get course
 and altitude indications for a direct leg to the start of the transition
 (43 NM and 314 degrees magnetic course).

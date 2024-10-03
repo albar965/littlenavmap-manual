@@ -11,6 +11,20 @@ Navmap* is used on a remote computer.
 The *Little Xpconnect* plugin has to be installed in X-Plane to allow both *Little Navmap* and
 *Little Navconnect* to connect to X-Plane.
 
+.. _connect-add-to-plan:
+
+Automatic Flight Plan Initialization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* automatically adds your current position to the flight plan if your plan is empty
+after connecting to the simulator. The flight plan is initialized with the nearest airport,
+a parking position or a runway close to your aircraft position.
+
+This is the same as selecting a departure airport and then using the function
+:ref:`select-a-start-position-for-departure` in menu ``Flight Plan``.
+
+This function can be disabled in options on page :ref:`options-files`.
+
 Local Connection
 ~~~~~~~~~~~~~~~~
 

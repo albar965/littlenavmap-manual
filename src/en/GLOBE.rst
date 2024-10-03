@@ -12,6 +12,10 @@ elevation data has several advantages:
 
 Resolution is slightly lower than the online data.
 
+**Direct download link:** `all10g.zip <https://ngdc.noaa.gov/mgg/topo/DATATILES/elev/all10g.zip>`__.
+
+**Alternative download link:** `Little Navmap Downloads - GLOBE Elevation Data <https://www.littlenavmap.org/downloads/GLOBE%20Elevation%20Data/>`__.
+
 Installation
 ~~~~~~~~~~~~~~~~~~~~~
 

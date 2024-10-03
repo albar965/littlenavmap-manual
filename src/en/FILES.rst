@@ -125,7 +125,7 @@ Crash Reports
 
 Crash or issue reports are stored in the :ref:`settings-directory` directory in the sub-directory ``crashreports``.
 These are normal Zip files containing the most important configuration, flight plan and other files needed to reproduce a crash.
-An issue report can be created manually by an user by clicking :ref:`create-issue-report` in the menu ``Tools``. Crash reports are automatically collected after *Little Navmap* detects an unclean shutdown. See also :doc:`CRASHREPORT` and :doc:`ISSUEREPORT`.
+An issue report can be created manually by a user by clicking :ref:`create-issue-report` in the menu ``Tools``. Crash reports are automatically collected after *Little Navmap* detects an unclean shutdown. See also :doc:`CRASHREPORT` and :doc:`ISSUEREPORT`.
 
 - ``little_navmap_crashreport.zip``: Automatically generated crash report after detecting an unclean shutdown from the last session. Follow the instructions in the dialog window if you wish to send the report. Click on the blue links to open files or web pages.
 - ``little_navmap_issuereport.zip``: Manually created issue report by using :ref:`create-issue-report` in the menu ``Tools``.

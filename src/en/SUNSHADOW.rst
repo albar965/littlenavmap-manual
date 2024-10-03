@@ -38,7 +38,7 @@ Set User defined Time
 ~~~~~~~~~~~~~~~~~~~~~
 
 The menu ``View`` -> ``Sun Shading Time`` -> ``Set User defined Time``
-opens a dialog to set an user defined time in UTC as a source for the
+opens a dialog to set a user defined time in UTC as a source for the
 sun shading.
 
 .. tip::

@@ -1,8 +1,11 @@
-Loading Airspaces
+﻿Loading Airspaces
 ---------------------------------------------
 
-Airspaces are loaded from the Navigraph database, simulator database, an user defined directory or online flying services.
-You can select airspaces to show in the main menu ``Scenery Library`` -> :ref:`airspace-source`.
+Airspaces are shown from the Navigraph database, simulator database or online flying services and can also be loaded from a user defined directory.
+
+You can select one or more airspace sources to show in the main menu ``Scenery Library`` -> :ref:`airspace-source`.
+Note that the selection of airspace sources is independent of the settings in the sub-menu :ref:`navigraph-sub-menu`
+of the menu ``Scenery Library``.
 
 .. _load-scenery-library-p3d-fsx-airspaces:
 
@@ -14,10 +17,56 @@ are added in the airspace source ``Simulator``.
 
 .. _load-scenery-library-openair-airspaces:
 
+Airspace Boundaries for Online Flying
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+*Little Navmap* normally shows online centers (like towers, departure, ground and more) from IVAO,
+VATSIM or other online services as circles since the boundary geometry is not available for these at first.
+The size of the circles and other settings can be changed in options on page
+:ref:`options-map-online`.
+
+User airspaces can be used to depict centers using real boundaries. This is done by matching the
+center callsign to a boundary id. See the chapters below for boundary sources.
+
+Enable the airspace source ``Online`` in the menu ``Scenery Library`` in sub-menu
+:ref:`airspace-source`. Disable other airspace sources to avoid confusion.
+
+Save all airspace files into a separate directory like ``VATSIM`` or ``IVAO`` from where your can
+load them into *Little Navmap*.
+
+.. note::
+
+  You have to reload the user airspace for the respective online service when switching between
+  VATSIM and IVAO.
+
+  These files do not match all airspace types. You will still see circular airspaces for towers, for example.
+
+VATSIM
+'''''''''''''''''''''''''''
+
+VATSIM boundaries can be downloaded from the `VATSpy Data Project <https://github.com/vatsimnetwork/vatspy-data-project>`__.
+
+You have to click on the file ``Boundaries.geojson`` file on the Github page and then click on the download icon (down arrow) in the top right corner to get the file.
+
+The direct download link is `Boundaries.geojson <https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/refs/heads/master/Boundaries.geojson>`__.
+Use the web browser ``Save as``, ``Save page`` or a similar function to save the file to your computer.
+
+Additional files are
+`firboundaries.json <https://map.vatsim.net/livedata/firboundaries.json>`__ and
+`traconboundaries.json <https://map.vatsim.net/livedata/traconboundaries.json>`__.
+
+IVAO
+'''''''''''''''''''''''''''
+
+IVAO boundaries in JSON format can be downloaded at `Little Navmap Downloads - Airspace Boundaries <https://www.littlenavmap.org/downloads/Airspace%20Boundaries/>`__.
+These files are updated twice a month.
+
+Extract the boundaries into a directory and load them from there into *Little Navmap*.
+
 Airspace Formats
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* can read three airspace formats from an user defined directory.
+*Little Navmap* can read three airspace formats from a user defined directory.
 
 See :ref:`airspace-source` for more information on airspace sources.
 
@@ -25,7 +74,7 @@ OpenAir
 '''''''''''''''''''''''''''
 
 *Little Navmap* can read OpenAir airspaces (`OpenAir airspace format <http://www.winpilot.com/UsersGuide/UserAirspace.asp>`__)
-from X-Plane or an user defined directory.
+from X-Plane or a user defined directory.
 
 Note that the publicly available airspace files can contain errors which
 may prevent the loading of an airspace file. These hard errors are
@@ -114,7 +163,8 @@ This means you can additionally use these types which are only recognized by *Li
 GEOJSON
 '''''''''''''''''''''''''''
 
-Further formats for online airspaces are GEOJSON which can be downloaded for VATSIM boundaries at the `VATSpy Data Project <https://github.com/vatsimnetwork/vatspy-data-project>`__.
+This is a general format which can contain all kind of geometry types. *Little Navmap* reads only polygons and ignores all other geometry features when reading a GEOJSON file.
+*Little Navmap* can load this format for online airspaces which can be downloaded for VATSIM boundaries at the `VATSpy Data Project <https://github.com/vatsimnetwork/vatspy-data-project>`__.
 
 The extension is ``.geojson``.
 
@@ -123,22 +173,20 @@ The extension is ``.geojson``.
 IVAO JSON
 '''''''''''''''''''''''''''
 
-IVAO boundaries in JSON format can be downloaded at `Little Navmap Downloads - Airspace Boundaries <https://www.littlenavmap.org/downloads/Airspace%20Boundaries/>`__.
+A special format specific to IVAO boundaries. It can be downloaded at `Little Navmap Downloads - Airspace Boundaries <https://www.littlenavmap.org/downloads/Airspace%20Boundaries/>`__, for example.
 
 The extension is ``.json``.
-
-Note that these files do not match all airspace types. You will still see circular airspaces for towers, for example.
 
 .. _load-scenery-library-vatsim-json:
 
 VATSIM JSON
 '''''''''''''''''''''''''''
 
-You can load the files
+A special format specific to VATSIM boundaries. It is used by the files
 `firboundaries.json <https://map.vatsim.net/livedata/firboundaries.json>`__ and
-`traconboundaries.json <https://map.vatsim.net/livedata/traconboundaries.json>`__ into the
-user airspace library of *Little Navmap* to get more real boundaries for VATSIM online centers
-instead of the generic circles.
+`traconboundaries.json <https://map.vatsim.net/livedata/traconboundaries.json>`__.
+
+The extension is ``.json``.
 
 .. _load-scenery-library-xplane-airspaces:
 

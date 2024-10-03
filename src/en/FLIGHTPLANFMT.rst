@@ -91,7 +91,7 @@ supported flight plan formats (``X`` = supported, ``0`` = not supported,
 ======================================================== ======== ==== ==== ==== ======= =============== ======= ============ =========== ======
 Format Name                                              Ext.     Open Exp. Airw VFR/IFR User Wpt. Names Remarks Dep. Parking Cruise Alt. Proc.
 ======================================================== ======== ==== ==== ==== ======= =============== ======= ============ =========== ======
-**LNMPLN**                                               LNMPLN   X    X    X    X       X               X       X            X           X
+**Little Navmap LNMPLN**                                 LNMPLN   X    X    X    X       X               X       X            X           X
 :highlight-style:`Microsoft Flight Simulator 2020`       PLN      X    X    X    X       X               0       X            X           X [5]_
 :highlight-style:`FSX and Prepar3D`                      PLN      X    X    X    X       X               0       X            X           0
 :highlight-style:`FSX and Prepar3D annotated (obsolete)` PLN      X    X    X    X       X               0       X            X           X
@@ -104,6 +104,7 @@ Format Name                                              Ext.     Open Exp. Airw
 :highlight-style:`FSC`                                   PLN      X    0    X    0       X               0       0            0           0
 :highlight-style:`Aerosoft Airbus and others`            FLP      X    X    X    0       0               0       0            0           X
 :highlight-style:`Aerosoft CRJ`                          FLP      X    X    X    0       0               0       0            0           X
+:highlight-style:`FlightFactor Boeing 777 V2`            FMS      X    X    X    0       0               0       0            0           0
 :highlight-style:`Reality XP GNS 530W/430W V2`           FPL      X    X    0    0       X               0       0            0           0
 :highlight-style:`Reality XP GTN 750/650 Touch`          GFP      X    X    X    0       X [1]_          0       0            0           X
 :highlight-style:`Flight1 Garmin GTN 650/750`            GFP      X    X    X    0       0               0       0            0           0
@@ -111,21 +112,21 @@ Format Name                                              Ext.     Open Exp. Airw
 AivlaSoft EFB                                            EFBR     0    X    X    0       0               0       0            0           0
 BlackBox Simulations Airbus                              PLN      0    X    X    0       0               0       0            0           0
 FeelThere or Wilco                                       FPL      0    X    X    0       0               0       0            0           0
-Flight Factor Airbus                                     corte.in 0    X    X    0       0               0       0            X           X [2]_
+FlightFactor Airbus                                      corte.in 0    X    X    0       0               0       0            X           X [2]_
 Garmin exchange format                                   GPX      \-   X    \-   \-      \-              \-      \-           \-          \-
 HTML flight plan web page                                HTML     \-   X    \-   \-      \-              \-      \-           \-          \-
 IXEG Boeing 737                                          FPL      0    X    X    0       0               0       0            0           0
 IvAp for IVAO [3]_                                       FPL      0    X    X    0       0               0       0            0           0
+JustFlight BAE-14 for MSFS                               RTE      0    X    X    0       0               0       0            0           0
+KLN 90B                                                  PLN      X    X    X    X       X               0       0            0           0
 Leonardo Maddog X                                        MDX      0    X    X    0       0               0       0            0           0
 Level-D                                                  RTE      0    X    X    0       0               0       0            0           0
 MSFS IniBuilds Airbus                                    FPL      0    X    0    0       0               0       0            0           0
-Microsoft Flight Simulator 2020 format using ``*``       PLN      X    X    X    X       X               0       X            X           X [5]_
 Majestic Dash MJC8 Q400                                  FPR      0    X    0    0       0               0       0            0           0
+Microsoft Flight Simulator 2020 format using ``*``       PLN      X    X    X    X       X               0       X            X           X [5]_
 PMDG Aircraft                                            RTE      0    X    X    0       0               0       0            0           0
 ProSim                                                   XML [4]_ 0    X    X    0       0               0       0            0           0
-KLN 90B                                                  PLN      X    X    X    X       X               0       0            0           0
 QualityWings                                             RTE      0    X    X    0       0               0       0            0           0
-JustFlight BAE-14 for MSFS                               RTE      0    X    X    0       0               0       0            0           0
 Rotate MD-80, JARDesign and others                       TXT      0    X    X    0       0               0       0            0           0
 TFDi Design 717                                          XML      0    X    X    0       0               0       0            0           0
 UFMC                                                     UFMC     0    X    X    0       0               0       0            0           0
@@ -348,6 +349,13 @@ FSC
 File format for FlightSim Commander. Uses the same PLN file extension as
 the FSX PLN format. *Little Navmap* can only read this format.
 
+.. _flight-plan-formats-ff777v2:
+
+FlightFactor Boeing 777 V2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+It is the same format as X-Plane FMS 11, with procedures removed to allow loading from the 777 FMS.
+
 .. _flight-plan-formats-flp:
 
 Aerosoft Airbus and others
@@ -537,10 +545,10 @@ create the directory manually if it does not exist.
 
 .. _flight-plan-formats-cortein:
 
-Flight Factor Airbus
+FlightFactor Airbus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A format for the Flight Factor Airbus. The file is not truncated and
+A format for the FlightFactor Airbus. The file is not truncated and
 flight plans are appended when saving.
 
 Flight plans are saved in a slightly extended ATS route notation which

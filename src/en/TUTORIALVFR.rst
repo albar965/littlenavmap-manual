@@ -94,7 +94,7 @@ Add the waypoints now:
 
 - Scroll along the valley to the south east across the lake Lac d'Annecy.
 - Click :ref:`append-position-to-flight-plan` |Append Position to Flight Plan|.
-  The clicked position will be added as an user defined waypoint (green rectangle) to the end of your plan.
+  The clicked position will be added as a user defined waypoint (green rectangle) to the end of your plan.
 
 Click undo |Undo| or redo |Redo| in the toolbar if you don't like what you just added.
 

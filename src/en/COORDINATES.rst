@@ -14,7 +14,7 @@ parsed correctly.
 
 .. figure:: ../images/edit_flightplan_waypoint_tooltip.jpg
 
-  Editing an user defined flight plan position. Tooltip gives a quick help on coordinate formats.
+  Editing a user defined flight plan position. The tooltip gives a quick help on coordinate formats.
 
 General
 ~~~~~~~

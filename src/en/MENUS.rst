@@ -42,6 +42,16 @@ You have to use :ref:`search-result-table-view-context-menu`,
   You can exit *Little Navmap* without saving the current plan. All will be restored on next startup.
   See :ref:`load-last-flight-plan` for more information and how to disable this behavior.
 
+.. note::
+
+  *Little Navmap* automatically adds your current position to the flight plan if your plan is empty after connecting to a simulator.
+  This can be the nearest airport, a parking position or a runway close to your aircraft position.
+
+  This is the same as selecting a departure airport and then using the function :ref:`select-a-start-position-for-departure`
+  in menu ``Flight Plan``.
+
+  This function can be disabled in options on page :ref:`options-files`.
+
 .. _open-flight-plan:
 
 |Open Flight Plan| Open Flight Plan
@@ -73,7 +83,7 @@ This is needed to avoid restriction violations and resulting error messages in t
 You will see a notification dialog if this is the case. Adjust the cruise altitude manually if needed (:ref:`flight-plan-altitude`).
 
 This correction applies to all plans
-which are loaded manually by an user. The change is stored in the undo/redo stack and can be
+which are loaded manually by a user. The change is stored in the undo/redo stack and can be
 undone to revert to the previously invalid cruise altitude.
 The corrected altitude depends on plan type (IFR or VFR), used procedures and used airways.
 
@@ -133,7 +143,7 @@ destination or any other value used in the flight plan name has changed. This he
 overwriting LNMPLN files with wrong plans after reversing direction, for example.
 
 You can disable this behavior in the options dialog on page :ref:`options-files` by deselecting
-``Avoid overwriting Flight Plan with not matching departure and destination``.
+:ref:`flight-plan-avoid-overwrite`.
 
 .. tip::
 
@@ -940,17 +950,18 @@ See also :doc:`MSA`.
 |Default Details| Default Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+This resets the map detail as well as the label detail level back to default.
+
 .. _less-details:
 
 |Less Details| Less Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Increases or decreases the detail level for the map. More details means
-more airports, more navaids, more text information and bigger icons.
+more airports, more navaids and increased symbol sizes.
 
 Map details have an equivalent button |Detail Menu| on the toolbar which allows to change the
-detail level with a slider. The drop down menu of the toolbar button can be torn off by clicking on the dashed line in the menu (:ref:`tear-off-menu`).
-
+detail levels with a slider. The drop down menu of the toolbar button can be torn off by clicking on the dashed line in the menu (:ref:`tear-off-menu`).
 
 The detail level is shown in the :doc:`STATUSBAR`. Range is -2 for least detail to +5 for most detail.
 
@@ -964,6 +975,40 @@ The detail level is shown in the :doc:`STATUSBAR`. Range is -2 for least detail 
 
   You can also quickly change the detail level with the mouse wheel using ``Ctrl+Wheel``
   or with the keyboard shortcuts ``Ctrl++``, ``Ctrl+-`` or ``Ctrl+0`` (default details).
+
+  You can use the numeric keypad to access the keys ``+`` and ``-`` since these might not work
+  depending on your language specific keyboard layout.
+
+  Note that you have to activate the map window by clicking into it or pressing the key ``F2``
+  before using keyboard shortcuts.
+
+.. _map-label-details:
+
+.. _more-label-details:
+
+|More Label Details| More Details
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _less-label-details:
+
+|Less Label Details| Less Details
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These change the number and size of map labels. More means
+more labels, increased label sizes and more information in the labels.
+
+The label level has a range is -5 for least and smallest labels to +5 for biggest labels and most label information.
+
+.. tip::
+
+  You can also quickly change the label detail level with the mouse wheel using ``Ctrl+Shift+Wheel``
+  or with the keyboard shortcuts ``Ctrl+Shift+`` or ``Ctrl+Shift-``.
+
+  You can use the numeric keypad to access the keys ``+`` and ``-`` since these might not work
+  depending on your language specific keyboard layout.
+
+  Note that you have to activate the map window by clicking into it or pressing the key ``F2``
+  before using keyboard shortcuts.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -979,7 +1024,11 @@ View Menu
 |Reset Display Settings| Reset Display Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Resets all map display settings which can be changed in the menu ``View`` back to default.
+Resets all map display settings which can be changed in the menu ``View`` back to default. This covers the map theme,
+the map projection and all detail levels.
+
+Disabling the setting ``Load the map display saved settings`` on the options page :ref:`options-startup-and-updates`
+will reset all view settings back to default after each restart.
 
 .. _airports-menu:
 
@@ -1098,11 +1147,12 @@ This function helps the user to avoid airports that have no scenery elements.
 Airports having only water runways are excluded from this definition to
 avoid unintentional hiding.
 
-**X-Plane and 3D airports**
+X-Plane 11 and 3D airports
+==================================
 
-The function can be extended to X-Plane airports which are not marked as
+The function can be extended to X-Plane 11 airports which are not marked as
 ``3D``. This can be done by checking
-``X-Plane 2D airports are shown as empty`` in the options
+``X-Plane 11 2D airports are shown as empty`` in the options
 dialog on page :ref:`options-map`. All airports not being marked as
 ``3D`` will be shown in gray on the map and can be hidden like described
 above if enabled.
@@ -1113,6 +1163,11 @@ An airport is considered 3D if its source file contains ``3D`` in the
 The definition of ``3D`` is arbitrary, though. A ``3D`` airport may
 contain just a single object, such as a light pole or a traffic cone or
 it may be a fully constructed major airport.
+
+.. note::
+
+  This function is disabled for X-Plane 12 since the 3D airport flag is broken there.
+  Major airports like KSEA, KORD or EDDF do not have this flag set.
 
 .. _not-lighted:
 
@@ -1460,7 +1515,7 @@ See also :doc:`MSA`.
 
 Hides or shows the respective user features.
 
-The respective option is automatically enabled after an user feature is added to the map.
+The respective option is automatically enabled after a user feature is added to the map.
 
 User features can also be toggled with the toolbar button |User Features|.
 
@@ -1538,6 +1593,24 @@ Show or hide the missed approaches of the current flight plan or the procedure p
   progress will show the remaining distance to the end of the missed
   approach instead.
 
+
+.. _show-direct-to-departure:
+
+|Show Direct to Departure| Show Direction to Departure Runway
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Shows the heading to the departure runway position using a dashed line with arrows.
+
+This line is drawn from the departure parking or runway or the user aircraft position (if connected).
+The line disappears when arriving near the departure position or when taking off.
+
+.. important::
+
+  Note that you need to have a departure runway set using :ref:`select-departure-runway` in menu ``Flight Plan`` or
+  a SID selected from :doc:`SEARCHPROCS` to see this indication.
+
+  See also :doc:`CUSTOMPROCEDURE` and :doc:`APPROACHES`.
+
 .. _show-aircraft:
 
 |Show Aircraft| Show User Aircraft
@@ -1578,7 +1651,7 @@ The option :ref:`show-vertical-track-profile` in the elevation profile provides 
 
 The selected autopilot altitude value can be seen in :ref:`progress-info` when enabling ``Autopilot Selected`` in :ref:`progress-configuration`.
 
-Note that some add-on aircraft do not provide an useful autopilot altitude and use the value for their own purposes.
+Note that some add-on aircraft do not provide a useful autopilot altitude and use the value for their own purposes.
 
 .. figure:: ../images/altitude_range.jpg
 
@@ -1830,7 +1903,7 @@ Allows to use the user defined time as set by using
 Set User defined Time
 '''''''''''''''''''''
 
-Opens a dialog to set an user defined time in UTC as a source for the
+Opens a dialog to set a user defined time in UTC as a source for the
 sun shading.
 
 See :ref:`sun-shadow-user-defined` for more information.
@@ -2372,6 +2445,8 @@ will switch over to the newly loaded simulator data.
   the plan which does not exist in the other database. Select
   :ref:`new-flight-plan` in the menu ``File`` before switching to avoid this.
 
+.. _navigraph-sub-menu:
+
 Navigraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2476,7 +2551,7 @@ the simulator database in the ``Scenery Library`` menu.
 See also :ref:`load-scenery-library-xplane-airspaces` and
 :ref:`load-scenery-library-p3d-fsx-airspaces`.
 
-.. _navigraph:
+.. _navigraph-airspaces:
 
 Navigraph
 '''''''''
@@ -3239,6 +3314,8 @@ See :doc:`UPDATE` for more information.
 .. |More Details| image:: ../images/icon_detailmore.png
 .. |Default Details| image:: ../images/icon_detaildefault.png
 .. |Less Details| image:: ../images/icon_detailless.png
+.. |More Label Details| image:: ../images/icon_detailmorelabel.png
+.. |Less Label Details| image:: ../images/icon_detaillesslabel.png
 .. |Airport Menu| image:: ../images/icon_airportmenu.png
 .. |Detail Menu| image:: ../images/icon_detailmap.png
 
@@ -3293,6 +3370,7 @@ See :doc:`UPDATE` for more information.
 .. |Show Top of Climb and Top of Descent| image:: ../images/icon_routetoctod.png
 .. |Attach Compass Rose to Aircraft| image:: ../images/icon_compassroseattach.png
 .. |Show Missed Approaches| image:: ../images/icon_missed.png
+.. |Show Direct to Departure| image:: ../images/icon_directrunway.png
 .. |Show Aircraft| image:: ../images/icon_aircraft.png
 .. |User Aircraft| image:: ../images/icon_aircraft_small_user.png
 .. |Show Aircraft Trail| image:: ../images/icon_aircrafttrail.png

@@ -57,7 +57,7 @@ Also in main menu ``Userpoint`` -> :ref:`undo-userpoint`.
 |Add Userpoint| Add Userpoint
 ''''''''''''''''''''''''''''''''''''''''
 
-Add an user-defined waypoint to the userpoint database.
+Add a user-defined waypoint to the userpoint database.
 
 Some fields of the new userpoint dialog are populated automatically
 depending on a selected userpoint or, if nothing is selected in the
@@ -309,7 +309,7 @@ CSV Data Format
 The CSV data format is aligned to the format already used around the
 flight simulator community and other applications.
 
-Each row in the file represents an user defined waypoint.
+Each row in the file represents a user defined waypoint.
 
 The recommended minimum fields for import are ``Type``, ``Name``, ``Ident``,
 ``Latitude`` and ``Longitude``.
@@ -388,7 +388,7 @@ Position   Name                    Required   Empty Allowed   Comment
 ========   =====================   ========   =============   ================================================================================================================================================================================
 1          Type                    Yes        Yes             One of the predefined or user defined types. The icon for `Unknown` is used if the type does not match one of the known types.
 2          Name                    Yes        Yes             Free to use field. Used for Garmin export.
-3          Ident                   Yes        Yes             Required only for Garmin and X-Plane export. Has to be an unique valid identifier with maximum of five characters for these exports.
+3          Ident                   Yes        Yes             Required only for Garmin and X-Plane export. Has to be a unique valid identifier with maximum of five characters for these exports.
 4          Latitude                Yes        No              Range from -90 to 90 degrees using dot ``.`` as decimal separator
 5          Longitude               Yes        No              Range from -180 to 180 degrees using dot ``.`` as decimal separator.
 6          Elevation               No         Yes             Must be a valid number when used. A suffix ``f`` indicates an elevation unit feet and ``m`` indicates meter. The default unit with no suffix given is feet.
@@ -497,7 +497,7 @@ The region is adjusted for a two letter digit and letter combination.
 .. note::
 
   The ident has to be unique in the ``user_fix.dat``. Therefore
-  it is recommended to set an unique ident for each waypoint manually or
+  it is recommended to set a unique ident for each waypoint manually or
   leave the field empty so *Little Navmap* can generate an ident
   during export.
 
@@ -507,7 +507,7 @@ Garmin user.wpt Data Format
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Garmin user waypoint file is a CSV file. Each row in the file
-represents an unique user waypoint.
+represents a unique user waypoint.
 
 There must be four columns of data in the file:
 

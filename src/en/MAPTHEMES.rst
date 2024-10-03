@@ -25,7 +25,7 @@ properties defined in the map's DGML file.
 
 .. note::
 
-  Some map themes require an user account and an API key or token to use them.
+  Some map themes require a user account and an API key or token to use them.
   See options page :ref:`options-map-keys` for more information.
 
 

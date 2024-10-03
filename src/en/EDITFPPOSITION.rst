@@ -1,7 +1,7 @@
 Edit Flight Plan Position
 -------------------------
 
-This dialog allows to edit an user defined flight plan position that was
+This dialog allows to edit a user defined flight plan position that was
 added with |Add Position to Flight Plan| :ref:`add-position-to-flight-plan` or |Append Position
 to Flight Plan| :ref:`append-position-to-flight-plan`.
 
@@ -67,7 +67,7 @@ See :doc:`COORDINATES` for more information.
 
 .. figure:: ../images/edit_flightplan_waypoint.jpg
 
-  Editing an user defined flight plan position. Also showing abbreviated tooltip in flight plan table.
+  Editing a user defined flight plan position. Also showing abbreviated tooltip in flight plan table.
 
 .. |Add Position to Flight Plan| image:: ../images/icon_routeadd.png
 .. |Append Position to Flight Plan| image:: ../images/icon_routeadd.png

@@ -38,7 +38,7 @@ BGL
   information which is not relevant for *Little Navmap*.
 
 Checkbox
-  An user interface element that allows to toggle a setting between two states (on and off)
+  A user interface element that allows to toggle a setting between two states (on and off)
   or three states (on, off and not applicable).
 
 CSV
@@ -74,7 +74,7 @@ Fix
   procedure. A fix might be defined by VOR radial and distance, for example.
 
 Flight Plan Position
-  An user defined waypoint which is part of the flight plan.
+  A user defined waypoint which is part of the flight plan.
 
 FLP
   Flight plan format used by the X-Plane FMS, Aerosoft Airbus and other
@@ -216,13 +216,13 @@ VORTAC
   navigation system (TACAN) beacon.
 
 Userpoint
-  An user defined waypoint like a bookmark, point of interest or visual reporting point (VRP).
+  A user defined waypoint like a bookmark, point of interest or visual reporting point (VRP).
 
 User Feature
   Any display object like traffic patterns or measurement lines which can be added or removed by the user.
 
 UTC
-  Universal coordinated time. Also Zulu time.
+  Universal time coordinated. Also Zulu time.
 
 VRP
   Visual reporting point for VFR flights. A userpoint type.

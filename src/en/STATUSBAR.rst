@@ -34,9 +34,13 @@ Map content indicator
     selected database has no content and needs to be loaded. See :doc:`SCENERY` for more
     information how to load the scenery library for a simulator.
 
-Map detail level.
-  Range is -2 for least detail to +5 for most detail.
-  See :ref:`more-details`, :ref:`less-details` and :ref:`default-details` in menu ``View``.
+Map detail level and map label level.
+  The first number is detail level where the range is -2 for least detail to +5 for most detail.
+  The second number is the label level where the range is -5 for least and smallest labels to +5 for
+  the biggest labels and most label information.
+
+  See :ref:`more-details`, :ref:`less-details`, :ref:`default-details`,
+  :ref:`more-label-details` and :ref:`less-label-details` in menu ``View``.
 
 Online map download progress indicator.
   This shows the state of the
