@@ -29,6 +29,11 @@ operating systems. A question dialog might appear asking to discard changes, if 
 
 .. note::
 
+  The program will not start if the command line option ``--quit`` / ``-q`` was set,
+  even if no other instance was found.
+
+.. note::
+
   Make sure your flight plan is free of errors like a too low cruise altitude or procedure altitude violations
   to avoid warning dialogs or a modified flight plan blocking the loading of subsequent flight plans.
 
