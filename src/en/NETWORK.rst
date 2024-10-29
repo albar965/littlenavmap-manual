@@ -10,6 +10,13 @@ This chapter explains how to connect with a remote computer across the network t
   You do not have to copy the simulator scenery library neither
   do you have to install a second simulator on the client computer.
 
+.. important::
+
+  You need basic computer skills to create network shares and to copy files from one computer to another
+  for such a setup.
+
+  Contact a friend or a family member or get professional help in a shop if you cannot do this.
+
 How to Prepare a Network Setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
