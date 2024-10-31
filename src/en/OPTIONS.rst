@@ -599,6 +599,14 @@ the center.
 
 See chapter :doc:`AIRSPACELOAD` for more information.
 
+The table below ``Display Size for Online Airspaces / Centers`` allows to override the circle sizes
+for the respective center types. Circles are used if geometry is not available in the user airspace
+database.
+
+*Little Navmap* tries to use the visual range given by the online network if ``Use Size`` is
+checked for the center type. If the visual range is not given the user entered size is used.
+
+The user entered size is always used if ``Use Size`` is not checked.
 
 .. _options-simulator-aircraft:
 .. _page16:
