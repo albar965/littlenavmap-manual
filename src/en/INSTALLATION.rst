@@ -207,6 +207,14 @@ directory ``Applications`` or any other directory.
   for Windows and Linux
   can be found in the application menu at ``Little Navmap`` -> ``Preferences`` on macOS.
 
+.. important::
+
+  *Little Navmap* (but **not** *Little Xpconnect*) is not compiled to run natively on Apple Silicon machines. You need to install Rosetta.
+  The impact on performance of the program is negligible and it won't affect the simulator performance.
+  See `How to install Rosetta <https://support.apple.com/HT211861>`__.
+
+  There is no need to run X-Plane using Rosetta when using the *Little Xpconnect* plugin.
+
 First Start on macOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
