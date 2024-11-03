@@ -13,6 +13,8 @@ Tips for slow Computers
 - Switch off all AI traffic in the dialog ``Connect``. See :ref:`options`.
 - Use the map projection ``Mercator``. It consumes less resources since it can use the downloaded image tiles as is and does not transform
   them to the spherical format.
+- Disable unneded weather options in the :ref:`weather-menu` and in options on page :ref:`options-weather`.
+- Do no run the :doc:`WEBSERVER` if not needed. Disable it in menu ``Tools`` -> :ref:`run-webserver`.
 
 .. _troubleshoot:
 

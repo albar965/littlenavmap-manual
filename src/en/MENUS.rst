@@ -2662,7 +2662,7 @@ See chapter :doc:`XPCONNECT` for more information.
 Run Web Server
 ^^^^^^^^^^^^^^^
 
-Starts the internal web server of *Little Navmap* using the first valid IPv4 address. Access the web page
+Starts or stops the internal web server of *Little Navmap*. Access the web page
 using the menu item ``Open Web server Page in Browser`` below.
 
 See chapter :doc:`WEBSERVER` for detailed information and options page :ref:`options-web-server` for configuration options.
