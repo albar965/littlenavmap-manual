@@ -198,7 +198,7 @@ frequently by *Little Navmap*.
 macOS
 ~~~~~
 
-Extract the ZIP file and copy the ``Little Navmap`` application to the
+Move the downloaded ZIP file out of the folder ``Downloads``, extract it and copy the ``Little Navmap`` application to the
 directory ``Applications`` or any other directory.
 
 .. note::
@@ -209,7 +209,11 @@ directory ``Applications`` or any other directory.
 
 .. important::
 
-  *Little Navmap* (but **not** *Little Xpconnect*) is not compiled to run natively on Apple Silicon machines. You need to install Rosetta.
+  It is important to **move the downloaded Zip file out of the** ``Downloads`` **folder and extract it somewhere else** to avoid Apple AppTranslocation.
+  *Little Navmap* will be placed in a locked sandbox where it will not be able to access all of your simulator's files
+  if you start it from the location where it was downloaded.
+
+  *Little Navmap* (but **not** *Little Xpconnect*) is not compiled to run natively on Apple Silicon machines. **You need to install Rosetta.**
   The impact on performance of the program is negligible and it won't affect the simulator performance.
   See `How to install Rosetta <https://support.apple.com/HT211861>`__.
 
