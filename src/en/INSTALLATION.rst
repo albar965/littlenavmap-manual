@@ -235,6 +235,11 @@ The procedure may be slightly different depending on whether you're using Big Su
    *Little Navmap*. Click ``Open Anyway``.
 #. Next a dialog ``Are you sure you want to open it?`` pops up. Click ``Open``.
 
+.. tip::
+
+  You can also use the tool `Sentinel <https://github.com/alienator88/Sentinel>`__ to clear the quarantine flag of
+  the plugin by drag and dropping *Little Navmap* on the tool's window.
+
 Linux
 ~~~~~
 

@@ -177,10 +177,13 @@ You have to repeat this procedure each time you update *Little Xpconnect*.
 
 .. tip::
 
-  Use the tool `Mac OS - CleanUp Quarantine Flags
-  <https://forums.x-plane.org/index.php?/files/file/79828-mac-os-cleanup-quarantine-flags/>`__ to
-  clean the flags for all X-Plane plugins. Place the downloaded and extracted application in your
-  X-Plane base directory and double click it. A dialog window showing the number of cleaned flags pops up after running.
+  #. Use the tool `Mac OS - CleanUp Quarantine Flags
+     <https://forums.x-plane.org/index.php?/files/file/79828-mac-os-cleanup-quarantine-flags/>`__ to
+     clean the flags for all X-Plane plugins. Place the downloaded and extracted application in your
+     X-Plane base directory and double click it. A dialog window showing the number of cleaned flags pops up after running.
+
+  #. You can also use the tool `Sentinel <https://github.com/alienator88/Sentinel>`__ to clear the quarantine flag of
+     the plugin by drag and dropping on the tool's window.
 
 Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
