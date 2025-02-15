@@ -171,6 +171,7 @@ The files are:
 - ``little_navmap_p3dv5.sqlite``: Prepar3D v5
 - ``little_navmap_p3dv6.sqlite``: Prepar3D v6
 - ``little_navmap_msfs.sqlite``: Microsoft Flight Simulator 2020
+- ``little_navmap_msfs24.sqlite``: Microsoft Flight Simulator 2024
 - ``little_navmap_xp11.sqlite``: X-Plane 11
 - ``little_navmap_xp12.sqlite``: X-Plane 12
 - ``little_navmap_navigraph.sqlite``: Navigraph navigation database. Can be either the included database or an update

@@ -7,9 +7,6 @@ Tracks are a structured set of flight routes that stretch across the Atlantic, P
 
 -  `NAT <https://en.wikipedia.org/wiki/North_Atlantic_Tracks>`__: North Atlantic Tracks
 -  `PACOTS <https://en.wikipedia.org/wiki/Pacific_Organized_Track_System>`__: Pacific Organized Track System
--  AUSOTS: Australian Organized Track Structure. These are not available at the time of this writing, but may appear again in the future.
-
-Note that AUSOTS tracks are currently not available. It is unknown if they will reappear.
 
 .. figure:: ../images/tracks.jpg
     :scale: 50%
@@ -48,7 +45,6 @@ from the information window on tab ``Navaids``.
 Tracks can be enabled for map display in the toolbar or menu ``View`` using |Show Tracks| :ref:`show-tracks`.
 
 PACOTS and NAT tracks are shown in dark red color if eastbound and in dark blue color if westbound.
-This does not apply to AUSOTS tracks.
 
 .. figure:: ../images/trackinfo.jpg
 

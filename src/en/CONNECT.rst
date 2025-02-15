@@ -38,8 +38,11 @@ simulator to which the connection should be established.
 .. figure:: ../images/connectlocal.jpg
 
   *Little Navmap* connect dialog set up for a local
-  connection to FSX, P3D or MSFS on the left and X-Plane on the right.
+  connection to FSX, P3D, MSFS 2020 or MSFS 2024 on the left and X-Plane on the right.
   The connection will be established automatically.
+
+  Note that the tab heading differs in the 32-bit (``FSX or Prepar3D``) and 64-bit (``MSFS``) build versions to indicate the
+  supported simulators.
 
 Click on the tab corresponding to the simulator you want to connect to.
 
@@ -63,22 +66,25 @@ Navmap*.
 
 This option also affects the frigate and carrier in X-Plane.
 
-FSX, P3D and MSFS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FSX, P3D, MSFS 2020 and MSFS 2024
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. role:: warning-style
 
-No plugin or separate SimConnect installaton is needed since *Little Navmap* comes with its own SimConnect library.
+No plugin or separate SimConnect installaton is needed since *Little Navmap* comes with its own copy of the SimConnect library.
 
 You will see an :warning-style:`orange warning message` if you use a X-Plane scenery library when trying to connect to FSX, P3D or MSFS.
+
+.. VERSION_NUMBER_TODO
 
 .. important::
 
   Note that there are two builds of Little Navmap and Little Navconnect for Windows available:
 
-  -  **Windows 64-bit:** For MSFS and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.4-Install.exe`` for example.
-  -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.4-Install.exe`` for example.
+  -  **Windows 64-bit:** For MSFS 2020, MSFS 2024 and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.14-Install.exe``, for example.
+  -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.14-Install.exe``, for example.
 
-  Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+  Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``. You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
+
 
 X-Plane
 ^^^^^^^
@@ -213,7 +219,7 @@ Connect Dialog
   *Little Navmap*.
 - ``Fetch AI or multiplayer aircraft`` and ``Fetch AI or multiplayer ships``: Disables fetching of AI vehicles.
   These settings are applied immediately.
-- ``AI Fetch Radius``: Limits the number of AI aircraft around the user aircraft. Only for FSX, P3D and MSFS.
+- ``AI Fetch Radius``: Limits the number of AI aircraft around the user aircraft. Only for FSX, P3D and MSFS simulators.
 
 .. |Flight Simulator Connection| image:: ../images/icon_network.png
 

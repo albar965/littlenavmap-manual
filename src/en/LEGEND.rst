@@ -575,15 +575,15 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 | |Marker Inner|                    | indicated by lens shape.                                      |
 +-----------------------------------+---------------------------------------------------------------+
 | |Jet Airway|                      | High airway (also Jet) with label showing                     |
-|                                   | name, type (High or Both), minimum                            |
-|                                   | and maximum altitude. Text                                    |
+|                                   | name, type (``H`` for high or ``B`` for both high and low),   |
+|                                   | minimum and maximum altitude. Text                            |
 |                                   | depends on zoom distance. A                                   |
 |                                   | preceding arrow will show the                                 |
 |                                   | allowed direction if the airway                               |
 |                                   | is one-way.                                                   |
 +-----------------------------------+---------------------------------------------------------------+
 | |Victor Airway|                   | Low airway (also Victor) with label showing                   |
-|                                   | name, type (Low or Both),                                     |
+|                                   | name, type (``L`` for low or ``B`` for both high and low),    |
 |                                   | minimum and maximum altitude.                                 |
 |                                   | Text depends on zoom distance. A                              |
 |                                   | preceding arrow will show the                                 |

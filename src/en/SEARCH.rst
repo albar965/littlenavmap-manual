@@ -218,9 +218,13 @@ Country, State/Province and City in Airport Search
 
 Note that quality and availability for administrative data depends on the selected simulator.
 
-MSFS provides names in the local language as selected in the options dialog on page :ref:`user-interface` but country names are not available.
+X-Plane airports are community work and therefore administrative names have varying quality, if set at all. Country names are often used in several not official variants like ``USA``, ``U.S.A.``, ``United States`` and more.
 
-X-Plane airports are community work and therefore administrative names have varying quality if set at all. Country names are often used in several variants like ``USA``, ``U.S.A.``, ``United States`` and more.
+.. note::
+  MSFS 2020 provides names in the local language as selected in the options dialog on page :ref:`user-interface`
+  but country names are not available.
+
+  MSFS 2024 does not provide administrative names except the airport name.
 
 .. _airport-search-override:
 

@@ -79,7 +79,7 @@ Data Sources
 
 All information about airports and navaids includes one or more links at
 the bottom of the object information in section ``Data Sources``. These links
-point to the matching BGL (FSX, P3D and MSFS) or ``apt.dat`` (X-Plane) files that
+point to the matching BGL (FSX, P3D or MSFS 2020) or ``apt.dat`` (X-Plane) files that
 contain information about the airport or navaid. Click the links to open
 the containing directory in your file manager (e.g. Windows Explorer).
 If possible, the matching file will be selected automatically.

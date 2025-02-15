@@ -259,8 +259,8 @@ The main window title shows the following information:
 
 #. Application name
 #. Version
-#. Build type (for Windows only): ``64-bit`` (use this with MSFS and all X-Plane versions) or ``32-bit`` (use this with FSX and P3D).
-#. Selected simulator scenery library database (``FSX``, ``FSXSE``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS``, ``XP11`` or ``XP12``) and AIRAC cycle if available. In parentheses if not used.
+#. Build type (for Windows only): ``64-bit`` (use this with all MSFS and all X-Plane versions) or ``32-bit`` (use this with FSX and P3D).
+#. Selected simulator scenery library database (``FSX``, ``FSXSE``, ``P3DV3``, ``P3DV4``, ``P3DV5``, ``MSFS 2020``, ``MSFS 2024``, ``XP11`` or ``XP12``) and AIRAC cycle if available. In parentheses if not used.
 #. Selected navigation database (Navigraph: ``N``) and AIRAC cycle. In parentheses if not used.
 #. Loaded flight plan file name plus a ``*`` if changed. Only ``*`` is shown if plan was not saved yet. Flight plan will be auto-restored on next startup.
 #. Loaded aircraft performance file a ``*`` if changed.
@@ -389,7 +389,7 @@ or the context menu to copy it to the clipboard.
 
 The table views for the flight plan or airport/navaid search results
 allow copying of the results in CSV format to the clipboard which can be
-pasted into a spreadsheet program like `LibreOffice Calc <https://www.libreoffice.org>`__ or *Microsoft Excel*.
+pasted into a spreadsheet program like `LibreOffice Calc <https://www.libreoffice.org>`__ or Microsoft Excel.
 
 This copied text can be used in forums or emails instead of screenshots.
 
@@ -458,8 +458,10 @@ are considered add-on airports which raises the rating by one star.
 Airports having the ``3D`` label in
 X-Plane are 3D airports which raises the rating by one star too.
 
-All additional airports in MSFS ``Community`` and ``Official`` directories are considered add-on.
+All additional airports in MSFS 2020 ``Community`` and ``Official`` directories are considered add-on.
 Star airports in Microsoft Flight Simulator 2020 will always get a five star rating.
+
+Note that MSFS 2024 does not provide the star or add-on rating.
 
 Add-on airports are highlighted on the map with a yellow ring which can be disabled
 in the options dialog on page :ref:`options-map-display`.

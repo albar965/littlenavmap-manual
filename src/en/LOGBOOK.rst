@@ -418,7 +418,7 @@ Import and Export
 ~~~~~~~~~~~~~~~~~
 
 The full logbook or selected logbook entries can be imported and exported to a CSV (comma separated
-value) text file which can be loaded in *LibreOffice Calc* or *Microsoft Excel*. All data can be
+value) text file which can be loaded in `LibreOffice Calc <https://www.libreoffice.org>`__ or Microsoft Excel. All data can be
 exported and imported which allows to use this function for backup purposes.
 
 Export and import can be done by using the menu items :ref:`logbook-import-csv` and
@@ -493,8 +493,8 @@ use special characters like umlauts, accents or others. Otherwise
 encoding does not matter.
 
 If an application fails to load a CSV file exported by *Little Navmap*,
-use `LibreOffice Calc <https://www.libreoffice.org>`__, *Microsoft
-Excel* or any other spreadsheet software capable of reading and writing
+use `LibreOffice Calc <https://www.libreoffice.org>`__, Microsoft
+Excel or any other spreadsheet software capable of reading and writing
 CSV files to adapt the exported file to the format expected by that
 application.
 

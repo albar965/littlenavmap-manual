@@ -25,7 +25,7 @@ Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 -  ``Remind me Later``: Dismiss the dialog. You will be notified again on next startup depending on selected frequency. You can also press the escape key to trigger this action.  This button is not visible when checking manually.
--  ``Copy to Clipboard``: Copy the contents of the window as formatted text into the clipboard for later reading. This allows to paste the message and the link into *LibreOffice Writer* or *MS Word*.
+-  ``Copy to Clipboard``: Copy the contents of the window as formatted text into the clipboard for later reading. This allows to paste the message and the link into `LibreOffice Writer <https://www.libreoffice.org>`__ or Microsoft Word.
 -  ``Ignore this Update``:  Pressing this button will close the dialog and ignore the shown version in the future. You will not see any reminders for this version again but only for newer versions.  This button is not visible when checking manually. Note that a manual check for updates supersedes the ignored versions.
 
 .. figure:: ../images/updatedialog.jpg

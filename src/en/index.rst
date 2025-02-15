@@ -9,7 +9,7 @@ Little Navmap User Manual
 
 *Little Navmap* is a free open source flight planner, navigation tool, moving map, airport search
 and airport information system for Flight Simulator X, Flight Simulator - Steam Edition, Prepar3D
-v3 to v5, Microsoft Flight Simulator 2020, X-Plane 11 and X-Plane 12.
+v3 to v5, Microsoft Flight Simulator 2020, Microsoft Flight Simulator 2024, X-Plane 11 and X-Plane 12.
 
   More about my projects at `www.littlenavmap.org <https://www.littlenavmap.org>`__.
   Support forum at `AVSIM <https://www.avsim.com/forums/forum/780-little-navmap-little-navconnect-little-logbook-support-forum/>`__.

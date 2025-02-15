@@ -330,8 +330,8 @@ use special characters like umlauts, accents or others. Otherwise
 encoding does not matter.
 
 If an application fails to load a CSV file exported by *Little Navmap*,
-use `LibreOffice Calc <https://www.libreoffice.org>`__, *Microsoft
-Excel* or any other spreadsheet software capable of reading and writing
+use `LibreOffice Calc <https://www.libreoffice.org>`__, Microsoft
+Excel or any other spreadsheet software capable of reading and writing
 CSV files to adapt the exported file to the format expected by that
 application.
 

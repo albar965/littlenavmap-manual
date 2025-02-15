@@ -20,8 +20,11 @@ See also :ref:`navaids-legend` in the map legend.
 
 .. note::
 
-  MSA sectors are not available when using the setting :ref:`navigraph-none` in the
-  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+  MSA sectors  are not available for all scenery library settings.
+  You need the Navigraph navdata update
+  (`Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__)
+  or X-Plane to see these. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  and :ref:`scenery-library-menu`.
 
 
 .. figure:: ../images/msa_symbol.jpg

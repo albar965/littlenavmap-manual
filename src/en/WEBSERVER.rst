@@ -45,9 +45,9 @@ The following buttons are in the top row:
   - ``Autozoom``: Zooms dynamically to the user aircraft while flying. This plugin provides a more advanced
     functionality compared to the functionality on the page ``Map``.
     Having this enabled will disable all map interaction functions like scrolling and zooming.
-  - ``Dynamic Touch and Drag Map``: This is a more dynamically usable map that allows to move smoothly by
+  - ``Dynamic Touch and Drag Map``: This is an experimental and more dynamically usable map that allows to move smoothly by
     dragging the mouse and zooming using the mouse wheel. Note that this map has limitations and
-    cannot show the user aircraft trail or AI/multiplayer aircraft.
+    cannot show the user aircraft trail or AI/multiplayer aircraft and show oversized icons in some cases.
 
 Pages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

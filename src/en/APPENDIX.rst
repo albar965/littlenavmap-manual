@@ -26,6 +26,7 @@ See also `Little Navmap - Frequently asked Questions <https://albar965.github.io
 .. _problems:
 .. _problems-general:
 .. _problems-msfs:
+.. _problems-msfs-2024:
 
 Known Problems and Frequently asked Questions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

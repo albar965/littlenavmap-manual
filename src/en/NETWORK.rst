@@ -40,22 +40,25 @@ How to Prepare a Network Setup
 
   The best way to copy a scenery library database from the flying computer to the remote is a batch file or command script.
 
-  Share the folder ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db``
-  on the flying computer and then simply run a batch or command file like ``copy_lnm_db.cmd`` on the remote to copy it over.
+  Share the folder ``C:\Users\YOURUSERNAME\AppData\Roaming\ABarthel\little_navmap_db`` as ``little_navmap_db``
+  on the flying computer using Windows Explorer.
 
-  Create a command file ``copy_lnm_db.cmd`` on your remote computer and add the content below. Adapt ``MYLFYINGCOMPUTER`` to the
-  name or the IP-address of your flying computer.
+  Next create a command file ``copy_little_navmap_db.cmd`` on your remote computer and add the content below.
+  Adapt ``MYLFYINGCOMPUTER`` to the name or the IP-address of your flying computer which is running the simulator.
 
   .. code-block:: bat
-    :name: copy_lnm_db.cmd
+    :name: copy_little_navmap_db.cmd
 
-    xcopy /F /Y "\\sol\public\little_navmap_db\little_navmap_msfs.sqlite" "%APPDATA%\ABarthel\little_navmap_db"
+    xcopy /F /Y "\\MYLFYINGCOMPUTER\little_navmap_db\little_navmap_msfs.sqlite" "%APPDATA%\ABarthel\little_navmap_db"
 
-  Adapt the database filename ``little_navmap_msfs.sqlite`` to your simulator. See :ref:`files-databases-scenery-library` for database filenames
-  for all simulators.
+  Adapt the database filename ``little_navmap_msfs.sqlite`` to your simulator.
+  See :ref:`files-databases-scenery-library` for database filenames for all simulators.
 
   Then you can reload the scenery library database using LNM on the flying computer, quit *Little Navmap* on both computers and
-  simply double click the ``copy_lnm_db.cmd`` script to copy the database over to the remote.
+  simply double click the ``copy_little_navmap_db.cmd`` script to copy the database over to the remote after reading the
+  scenery library on the flying computer.
+
+  **Do not forget to close** *Little Navmap* **before copying.**
 
 Weather
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -64,7 +67,8 @@ FSX, P3D and MSFS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The weather information from P3D and FSX is transferred through the connection via *Little Navconnect*.
-MSFS does not provide weather information at all.
+
+Note that neither MSFS 2020 nor MSFS 2024 provide any weather information.
 
 X-Plane
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

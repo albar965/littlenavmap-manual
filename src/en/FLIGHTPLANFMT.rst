@@ -92,7 +92,8 @@ supported flight plan formats (``X`` = supported, ``0`` = not supported,
 Format Name                                              Ext.     Open Exp. Airw VFR/IFR User Wpt. Names Remarks Dep. Parking Cruise Alt. Proc.
 ======================================================== ======== ==== ==== ==== ======= =============== ======= ============ =========== ======
 **Little Navmap LNMPLN**                                 LNMPLN   X    X    X    X       X               X       X            X           X
-:highlight-style:`Microsoft Flight Simulator 2020`       PLN      X    X    X    X       X               0       X            X           X [5]_
+:highlight-style:`Microsoft Flight Simulator 2020`       PLN      X    X    X    X       X               0       X            X           X
+:highlight-style:`Microsoft Flight Simulator 2024`       PLN      X    X    X    X       X               0       0            X           X
 :highlight-style:`FSX and Prepar3D`                      PLN      X    X    X    X       X               0       X            X           0
 :highlight-style:`FSX and Prepar3D annotated (obsolete)` PLN      X    X    X    X       X               0       X            X           X
 :highlight-style:`FS9 PLN`                               PLN      X    0    X    X       X               0       X            X           0
@@ -123,7 +124,7 @@ Leonardo Maddog X                                        MDX      0    X    X   
 Level-D                                                  RTE      0    X    X    0       0               0       0            0           0
 MSFS IniBuilds Airbus                                    FPL      0    X    0    0       0               0       0            0           0
 Majestic Dash MJC8 Q400                                  FPR      0    X    0    0       0               0       0            0           0
-Microsoft Flight Simulator 2020 format using ``*``       PLN      X    X    X    X       X               0       X            X           X [5]_
+Microsoft Flight Simulator 2020 format using ``*``       PLN      X    X    X    X       X               0       X            X           X
 PMDG Aircraft                                            RTE      0    X    X    0       0               0       0            0           0
 ProSim                                                   XML [4]_ 0    X    X    0       0               0       0            0           0
 QualityWings                                             RTE      0    X    X    0       0               0       0            0           0
@@ -156,38 +157,42 @@ Export Formats
 
 .. _flight-plan-formats-msfs-pln:
 
-|PLN| Microsoft Flight Simulator 2020
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|PLN| Microsoft Flight Simulator 2020 and Microsoft Flight Simulator 2024
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 File format for MSFS.
 *Little Navmap* can read and export this format.
 
-You can export this format directly using :ref:`export-msfs-flight-plan` and load the flight plans using menu ``File`` -> :ref:`open-flight-plan`.
-
-While the format supports procedures there appear problems in MSFS loading these. Procedures might be omitted or new ones inserted.
+You can export these format directly using :ref:`export-msfs-flight-plan` or :ref:`export-msfs24-flight-plan` and load the flight plans using menu ``File`` -> :ref:`open-flight-plan`.
 
 You can set a parking spot or fuel pad as starting position but note that runways and helipads as starting
-positions will be ignored by MSFS.
+positions will be ignored by MSFS. Note that the parking position is not available for MSFS 2024.
 
-MSFS flight plans can be saved to and loaded from any location in MSFS but the default directories are:
+**MSFS 2020** flight plans can be saved to and loaded from any location in MSFS but the default directories are:
 
 - Microsoft Store installation: ``C:\Users\YOURLOGINNAME\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState``
 - Steam installation: ``C:\Users\YOURLOGINNAME\AppData\Roaming\Microsoft Flight Simulator\LocalState``
 
+**MSFS 2024** flight plans can be saved to and loaded from any location in MSFS but the default directories are:
+
+- Microsoft Store installation: ``C:\Users\alex\AppData\Local\Packages\Microsoft.Limitless_8wekyb3d8bbwe\LocalState\``
+- Steam installation: ``C:\Users\USER\AppData\Roaming\Microsoft Flight Simulator 2024\LocalState``
+
 .. note::
 
-  MSFS does not allow procedures and/or airways in VFR plans. You have to switch to IFR using :ref:`flight-plan-type`
+  MSFS 2020 and MSFS 2024 does not allow procedures and/or airways in VFR plans. You have to switch to IFR using :ref:`flight-plan-type`
   before exporting such a plan. *Little Navmap* shows a warning if you try to export such a flight plan.
 
 See `FAQ - The flight plan does not show up correctly in MSFS <https://albar965.github.io/littlenavmap-faq.html#flightplan-msfs>`__
 for more information on problems.
 
-PLN files for Microsoft Flight Simulator 2020 will have special characters removed since the simulator cannot load files having these as a part of the name.
+PLN files for Microsoft Flight Simulator 2020 and 2024 will have special characters removed since the simulator cannot
+load files having these as a part of the name.
 
 .. note::
 
-  Use the format :ref:`flight-plan-formats-msfs-pln-star` for export if you run into issues when importing flight plans in add-ons or when
-  your operating system is set to Asian locale.
+  Use the format :ref:`flight-plan-formats-msfs-pln-star` for export to MSFS 2020 if you run into issues when
+  importing flight plans in add-ons or when your operating system is set to Asian locale.
 
 
 .. _flight-plan-formats-fsx-pln:
@@ -815,9 +820,6 @@ dialog on tab ``Flight Plan``.
 
 .. [4]
   Full name is ``companyroutes.xml``
-
-.. [5]
-  Procedures might not load in MSFS or might be replaced by other procedures.
 
 .. |PLN| image:: ../images/icon_filesaveas.png
 .. |FMS 11| image:: ../images/icon_saveasfms.png

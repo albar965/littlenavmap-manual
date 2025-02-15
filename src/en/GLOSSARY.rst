@@ -21,6 +21,8 @@ Add-on airport
   directory and the ``Official\OneStore`` or ``Official\Steam`` are considered to be add-on airports.
   Exceptions are ``fs-base``, ``fs-base-genericairports`` and ``fs-base-nav``.
 
+  Microsoft Flight Simulator 2024: This information is not provided by MSFS 2024.
+
 Approach Procedure
   An approach procedure is a series of maneuvers for the transfer of an
   aircraft in instrument flight conditions from the initial approach to a
@@ -131,7 +133,7 @@ MAP
   approach.
 
 MSFS
-  Microsoft Flight Simulator 2020.
+  Microsoft Flight Simulator 2020 or 2024.
 
 Navaid
   VOR, VORTAC, TACAN, NDB or waypoint/intersection. Also ILS and Localizer.
@@ -183,7 +185,8 @@ SID
 
 SimConnect
   A programming interface that allows applications to read and write
-  flight simulator parameters from FSX, P3D and MSFS.
+  flight simulator parameters from FSX, P3D and MSFS simulators.
+  It is also used to read airports and navaids from MSFS 2024.
 
 STAR
   A standard terminal arrival is a flight route that usually covers the

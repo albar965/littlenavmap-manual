@@ -9,11 +9,22 @@ of the menu ``Scenery Library``.
 
 .. _load-scenery-library-p3d-fsx-airspaces:
 
-FSX, Prepar3D and MSFS Airspaces
+FSX, Prepar3D and MSFS 2020 Airspaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-*Little Navmap* reads all airspaces from the scenery library of FSX, P3D and MSFS. These airspaces
+*Little Navmap* reads all airspaces from the scenery library of FSX, P3D and MSFS 2020. These airspaces
 are added in the airspace source ``Simulator``.
+
+.. _load-scenery-library-msfs24-airspaces:
+
+MSFS 2024 Airspaces
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The SimConnect interface used by *Little Navmap* to read airports and navaids does not provide airspaces.
+The files were dropped due to the streaming approach of MSFS 2024.
+
+You can use other sources for airspaces.
+See chapter :doc:`AIRSPACELOAD` for more information and links to public airspace sources.
 
 .. _load-scenery-library-openair-airspaces:
 

@@ -154,10 +154,10 @@ Calculation might fail or give unexpected results if this is selected unintentio
 
 .. _routecalc-use-tracks:
 
-Use NAT, PACOTS or AUSOTS tracks
+Use NAT or PACOTS tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The calculation will also consider tracks like NAT, PACOTS or AUSOTS, if selected. This button is
+The calculation will also consider tracks like NAT or PACOTS, if selected. This button is
 disabled if no tracks were downloaded.
 
 See :doc:`TRACKS` for more information.
@@ -171,7 +171,7 @@ See :doc:`TRACKS` for more information.
 |Download Tracks| Download Tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Downloads Oceanic or other tracks which are NAT, PACOTS and AUSOTS. Download tracks first before
+Downloads Oceanic or other tracks which are NAT or PACOTS. Download tracks first before
 using the option above.
 
 Same as :ref:`download-tracks`.

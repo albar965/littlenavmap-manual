@@ -43,7 +43,7 @@ See :ref:`scenery-library-menu` for information on the scenery library menu and 
 .. note::
 
   *Little Navmap* does not keep you from using a X-Plane scenery
-  database while being connected to FSX/Prepar3D/MSFS or vice versa, for example. You will
+  database while being connected to FSX, Prepar3D, MSFS or vice versa, for example. You will
   get unwanted effects like wrong weather information if using such a setup.
 
   An orange warning message is shown in the connect dialog (:doc:`CONNECT`) if a mismatch is detected.
@@ -52,6 +52,27 @@ See :ref:`scenery-library-menu` for information on the scenery library menu and 
 
   Parking positions in flight plans might change when switching between scenery library databases.
   This can happen if airports have parking positions with different names or missing parking positions.
+
+
+.. _load-scenery-library-when:
+
+When to reload the Scenery Library
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Little Navmap* does not automatically detect changes in the scenery library files.
+
+Reloading is always optional and depends on your needs:
+
+- **After installing an add-on airport which replaces a present airport:**
+  Reload the scenery library if you'd like to see the new airport layout in *Little Navmap*.
+  Otherwise you will see the layout of the stock airport.
+  Note that reloading is not required when using this airport for flight planning or when flying from or to other airports.
+- **After installing an add-on airport which adds a new airport:**
+  You have to reload the scenery library to see the airport and if you'd like to use it for flight planning.
+  Reloading is not needed when flying from or to other airports. This is not affected.
+- **After a major simulator update:**
+  MSFS 2020 and MSFS 2024 update their navigation data when installing large updates. Reload the scenery library to avoid
+  issues when exporting and loading flight plans due to changed airways, navaids or procedures.
 
 .. _load-scenery-library-navdata:
 
@@ -68,13 +89,13 @@ See the chapter :doc:`NAVDATA` for more information.
   In any case close *Little Navmap* when updating, copying or replacing scenery databases.
   *Little Navmap* might crash or show wrong data otherwise.
 
-FSX, Prepar3D and Microsoft Flight Simulator 2020
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FSX, Prepar3D, Microsoft Flight Simulator 2020 and Microsoft Flight Simulator 2024
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Little Navmap* is compatible with navdata updates from
 the `FSX/P3D Navaids
 update <http://www.aero.sors.fr/navaids3.html>`__ and
-the Navigraph update for Microsoft Flight Simulator 2020.
+the Navigraph update for Microsoft Flight Simulator 2020 and 2024.
 
 See :ref:`load-scenery-library-dialog-msfs-apt-navdata` for more information on MSFS and navdata
 updates.
@@ -132,9 +153,13 @@ shown in two text edit fields for the currently selected simulator.
 These fields are populated automatically, but can be changed to any
 other valid location.
 
-**Microsoft Flight Simulator 2020:** The base path of the MSFS installation and its
+**Microsoft Flight Simulator 2020:** The base path of the MSFS 2020 installation and its
 directories ``Community`` and ``Official``
 is detected automatically. You can change the path manually if needed.
+
+**Microsoft Flight Simulator 2024:** The installation path of MSFS 2024 is detected automatically to recognize the simulator.
+The path cannot be changed and is not required since airports and navaids are loaded using the SimConnect
+interface while the simulator is running.
 
 **X-Plane:** The base path of the first X-Plane installation is
 added. Select the base path manually if you like to read the scenery
@@ -208,7 +233,7 @@ Linking Scenery
 -  macOS aliases
 
 Note that this functionality is limited to
-the MSFS ``Community`` and X-Plane ``Custom Scenery`` directories.
+the MSFS 2020 ``Community`` and X-Plane ``Custom Scenery`` directories.
 
 Any directories added in the options dialog on the page :ref:`options-scenery-library-database` also support linking
 
@@ -239,15 +264,15 @@ on the map. You can exclude directories populated by this add-on from
 the add-on recognition in the options dialog on the
 page :ref:`options-scenery-library-database`.
 
+**Microsoft Flight Simulator 2024**: Add-on airports cannot be detected.
 
 .. _load-scenery-library-dialog-msfs-apt-navdata:
 
-Microsoft Flight Simulator 2020  Airports and Navdata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Microsoft Flight Simulator 2020, 2024  Airports and Navdata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The recommended scenery library settings are :ref:`navigraph-auto` in the menu
-``Scenery Library`` -> ``Navigraph``. This ensures you use the right navigation database and keeps
-you simulator data in sync with *Little Navmap*.
+**The recommended scenery library setting is** :ref:`navigraph-auto` **in the menu**
+``Scenery Library`` -> ``Navigraph``. **This ensures you use the right navigation database and keeps you simulator data in sync with** *Little Navmap*.
 
 The mode ``Select automatically`` follows the recommendations below:
 
@@ -266,12 +291,11 @@ The mode ``Select automatically`` follows the recommendations below:
   The selection in menu ``Scenery Library`` -> ``Airspace Libraries`` should have ``Simulator``
   checked. Deselect ``Navigraph`` there.
 
-Enable the recommended modes manually if you do not use ``Select automatically``.
-
 See :doc:`NAVDATA` and :ref:`load-scenery-library-p3d-fsx-airspaces` for more background
 information on these settings.
 
-See appendix :ref:`problems-msfs` for information about MSFS limitations and issues.
+See `Little Navmap - Frequently asked Questions <https://albar965.github.io/littlenavmap-faq.html>`__ which is updated regularly
+for information about MSFS 2020 and MSFS 2024 limitations and issues.
 
 Use the menu item `Scenery Library` -> :ref:`validate-scenery-library` to check your settings.
 
@@ -333,13 +357,13 @@ FSX, Prepar3D or MSFS.
 Updates for this file in FSX and P3D are available here: `FSX/P3D Navaids
 update <http://www.aero.sors.fr/navaids3.html>`__.
 
-X-Plane
-^^^^^^^
+X-Plane and Flight Simulator 2024
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The magnetic declination values for X-Plane (airports and all navaids
+The magnetic declination values for X-Plane and MSFS 2024 (airports and all navaids
 except VORs) are calculated using the world magnetic model based on the
 real current year and month. This is calculated while loading the
-scenery library and saved in X-Plane scenery library database.
+scenery library and saved in the scenery library database.
 
 VOR stations come with their own calibrated declination values which might differ
 from the calculated declination values in their environment as mentioned

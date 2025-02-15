@@ -47,7 +47,6 @@ default. You have to use the GPS or FMS in the simulator to select
 procedures.
 
 Some flight plan formats like X-Plane FMS allow saving and loading of procedures. See :ref:`flight-plan-formats-fms11`. for more information.
-Transitions cannot be saved with the MSFS PLN format (see :ref:`flight-plan-formats-msfs-pln`).
 
 You can enable saving of waypoints by checking :ref:`export-flight-plan-approach-waypoints` and/or
 :ref:`export-flight-plan-sid-star-waypoints`. Procedure information will be omitted if this is enabled.

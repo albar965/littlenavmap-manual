@@ -4,7 +4,7 @@ Navigation Databases
 *Little Navmap* can use up to two databases in parallel:
 
 #. **Simulator database:** Created by reading the scenery library of
-   FSX, Prepar3D, Microsoft Flight Simulator 2020 or X-Plane.
+   FSX, Prepar3D, Microsoft Flight Simulator 2020, Microsoft Flight Simulator 2024 or X-Plane.
 #. **Navigation database:** Provided by Navigraph. Does not have to be
    compiled and can be updated by the Navigraph FMS Data Manager to the latest AIRAC cycle.
 
@@ -44,7 +44,7 @@ You can see the data source for each navaid or airport in the section ``Data Sou
 
 .. warning::
 
-  Always close *Little Navmap* before updating its databases.
+  Always close *Little Navmap* before updating or copying its databases.
 
 Three display modes can be selected from the menu ``Scenery Library`` as
 shown below.
@@ -54,8 +54,8 @@ shown below.
 Select Automatically
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is the default recommended mode which selects the navdata sources
-from the three modes below based on the used simulator and AIRAC cycles.
+**This is the default recommended mode which selects the navdata sources
+from the three modes below based on the used simulator and AIRAC cycles.**
 
 .. important::
 
@@ -98,8 +98,6 @@ airport runway layout precisely.
 
 Use Navigraph for Navaids and Procedures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**This is the default and strongly recommended mode for all simulators (see** :ref:`load-scenery-library-dialog-msfs-apt-navdata` **for MSFS considerations).**
 
 This mode blends navaids and other features from the Navigraph database
 with the simulator database. This affects the map display, all
@@ -148,7 +146,7 @@ Limitations in this mode
 
 .. tip::
 
-  Use the Navigraph navdata update for Microsoft Flight Simulator 2020
+  Use the Navigraph navdata update for Microsoft Flight Simulator 2020 or 2024
   to update the scenery library to the latest and also to keep *Little Navmap*
   and MSFS navdata synchronized. This will reduce issues when loading
   flight plans into the simulator. See also :ref:`load-scenery-library-dialog-msfs-apt-navdata`.

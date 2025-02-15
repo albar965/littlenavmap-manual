@@ -208,10 +208,13 @@ The font for map display is not affected by this value and can be set separately
 Enable high DPI monitor support
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Toggle this is you have problems with scaled fonts or symbols on Windows,
-cannot shrink the main window or other issues.
+Toggle this is you use user interface scaling on your system
+(125 %, 150 %, etc.) or if you have problems with scaled fonts or
+symbols on Windows, cannot shrink the main window or other issues.
 
-You have to restart *Little Navmap* after changing.
+Switching this on while using a scaled user interface will result in smoother icon and text display.
+
+You have to restart *Little Navmap* after changing this option.
 
 .. _options-freetype:
 
@@ -774,10 +777,10 @@ for tooltips or information panels.
 
 Online weather is downloaded and updated every ten minutes.
 
-.. note::
+.. important::
 
-  Simulator weather is not supported for Microsoft Flight Simulator 2020 since this simulator
-  lacks the needed programming interfaces.
+  Simulator weather is not supported for Microsoft Flight Simulator 2020 or 2024 since these simulators
+  lack the needed programming interfaces.
 
 .. _options-weather-files:
 .. _page19:
@@ -1097,16 +1100,22 @@ You have to reload the scenery database in order for the changes to take effect.
 Windows shortcuts, Windows junctions and  macOS aliases. Note that this functionality is limited to
 the MSFS ``Community`` and X-Plane ``Custom Scenery`` directories. Other combinations are not tested.
 
+.. note::
+
+  These settings do not apply to MSFS 2024 since all airports and navaids are read through the
+  SimConnect interface instead of files.
+
+
 .. _scenery-library-database-include:
 
 Scenery library directories to include when loading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This list shows extra directories which are loaded additionally when reading the simulator scenery library.
-Add-on airports in the extra directories extending MSFS ``Community``, X-Plane ``Custom Scenery`` or FSX/P3D ``Addon Scenery`` are
+Add-on airports in the extra directories extending MSFS 2020 ``Community``, X-Plane ``Custom Scenery`` or FSX/P3D ``Addon Scenery`` are
 read when loading the simulator scenery library database.
 
-Note that airport files in this list are always read last which can affect the display in MSFS, FSX or P3D.
+Note that airport files in this list are always read last which can affect the display in MSFS 2020, FSX or P3D.
 
 .. tip::
 
@@ -1123,7 +1132,7 @@ can also use this list to speed up database loading if you exclude
 directories that do not contain airports or navaids (landclass,
 elevation data and others).
 
-You can also exclude FSX, P3D, MSFS BGL or X-Plane apt.dat files if needed.
+You can also exclude FSX, P3D, MSFS 2020 BGL files or X-Plane apt.dat files if needed.
 
 Select one or more entries in the list and click on ``Remove`` to delete
 then from the list.

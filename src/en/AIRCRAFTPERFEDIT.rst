@@ -54,14 +54,16 @@ accidental usage of the wrong performance file.
 The mismatch is identified by comparing the field ``Aircraft type``  with the simulator aircraft
 type which can be seen in field ``Type:`` in :ref:`aircraft`.
 
-MSFS
-''''''''''
+MSFS 2020 and MSFS 2024
+''''''''''''''''''''''''''''''
 
-The aircraft type is not exposed in the SimConnect interface and will result in wrong warnings.
+The aircraft type exposed in the SimConnect interface is not always correct and will result in wrong warnings.
 Disable the warnings or adjust the ``Aircraft type`` in the aircraft performance tile to match your aircraft.
 
-The model can be found with any text editor, opening the related
+The model of an For MSFS 2020 aircraft can be found with any text editor, opening the related
 ``aircraft.cfg`` file, key ``icao_type_designator`` int the section ``[General]``.
+
+Note that you cannot change this in MSFS 2024 due to the streaming approach.
 
 X-Plane
 ''''''''''

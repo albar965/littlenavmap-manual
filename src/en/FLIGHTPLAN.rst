@@ -136,7 +136,7 @@ You can show or hide the columns from main menu ``Tools`` -> :ref:`flight-plan-t
   the name of the procedure. Contains the text ``Alternate`` for
   alternate airports at the end of the list or ``Departure`` or ``Destination``.
 - ``Airway or Procedure``: Contains the airway name for en-route legs
-  or procedure instructions. This field also shows track names if NAT, PACOTS or AUSOTS tracks are used.
+  or procedure instructions. This field also shows track names if NAT or PACOTS tracks are used.
   Airways are suffixed with the airway type like ``N601 / L``:
 
   - ``L`` Low altitude airway or Victor
@@ -301,11 +301,11 @@ Flight Plan Type
 
 Either ``IFR`` or ``VFR``.
 
-This is saved with the flight plan and is only relevant for FSX, Prepar3D or MSFS.
+This is saved with the flight plan and is only relevant for FSX, Prepar3D, MSFS 2020 or MSFS 2024.
 
 .. note::
 
-  Note that the VFR/IFR selection affects flight plan loading in MSFS. You cannot load a VFR flight plan in MSFS which uses procedures, for example.
+  Note that the VFR/IFR selection affects flight plan loading in MSFS simulators. You cannot load a VFR flight plan in MSFS which uses procedures, for example.
 
 .. _clear-selection-button-flightplan:
 

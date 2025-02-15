@@ -61,7 +61,7 @@ Opens a flight plan with one of the following formats:
 
 - LNMPLN. This is the default format of *Little Navmap* which supports all flight plan features like remarks.
   See :ref:`flight-plan-formats-lnmpln` for information about this format.
-- PLN: FSX, FS9, FSC or MSFS.
+- PLN: FSX, FS9, FSC, MSFS 2020 or MSFS 2024.
 - FLP
 - FMS: X-Plane FMS 11 (used by X-Plane 11 and X-Plane 12) or FMS 3
 - FlightGear FGFP
@@ -91,8 +91,7 @@ The corrected altitude depends on plan type (IFR or VFR), used procedures and us
 
   Keep in mind that most flight plan formats are limited and not all information is provided or can be
   loaded from a file. For example, cruise altitude might not be loaded from X-Plane FMS in some
-  cases, airways and departure parking spots cannot restored for several formats, transitions cannot
-  be loaded from MSFS PLN and more.
+  cases, airways or departure parking spots cannot restored from several formats, for example.
 
 .. important::
 
@@ -136,7 +135,7 @@ the list by selecting ``Clear Menu``.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Saves the flight plan into the current LNMPLN file. This format allows to store all flight plan attributes of *Little
-Navmap*. Disabled if no flight plan has been loaded or created.
+Navmap*. Disabled if flight plan is empty.
 
 *Little Navmap* opens the ``Save as`` dialog (see below :ref:`save-flight-plan-as`) if departure,
 destination or any other value used in the flight plan name has changed. This helps to avoid
@@ -163,7 +162,7 @@ You can disable this behavior in the options dialog on page :ref:`options-files`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Saves the flight plan to a LNMPLN file. This format allows to save all flight plan attributes of *Little
-Navmap*. Disabled if no flight plan has been loaded or created.
+Navmap*. Disabled if flight plan is empty.
 
 See :ref:`flight-plan-formats-lnmpln` for information about this format.
 
@@ -195,12 +194,32 @@ LNMPLN file.
 Opens a dialog which allows to reset functions in *Little Navmap* for a
 new flight. See :doc:`RESET` for more information.
 
+.. _export-msfs24-flight-plan:
+
+|Export as PLN| Export Flight Plan as MSFS 2024 PLN
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Saves a flight plan for Microsoft Flight Simulator 2024. Disabled if flight plan is empty.
+
+*Little Navmap* can read and write this format.
+
+This does not change the current file name and type. Further saves will still use the same LNMPLN file name and format as before.
+
+The proposed file name can be defined in the :ref:`multiexport-options` for format ``Microsoft Flight Simulator 2024``.
+
+MSFS flight plans can be saved to and loaded from any location but the default directories are:
+
+- Microsoft Store installation: ``C:\Users\alex\AppData\Local\Packages\Microsoft.Limitless_8wekyb3d8bbwe\LocalState\``
+- Steam installation: ``C:\Users\USER\AppData\Roaming\Microsoft Flight Simulator 2024\LocalState``
+
+See also :doc:`FLIGHTPLANFMT` and :ref:`flight-plan-formats-msfs-pln`.
+
 .. _export-msfs-flight-plan:
 
 |Export as PLN| Export Flight Plan as MSFS 2020 PLN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Saves a flight plan for Microsoft Flight Simulator 2020. Disabled if no flight plan has been loaded or created.
+Saves a flight plan for Microsoft Flight Simulator 2020. Disabled if flight plan is empty.
 
 *Little Navmap* can read and write this format.
 
@@ -208,7 +227,7 @@ This does not change the current file name and type. Further saves will still us
 
 The proposed file name can be defined in the :ref:`multiexport-options` for format ``Microsoft Flight Simulator 2020``.
 
-MSFS flight plans can be saved to and loaded from any location but the default directories are:
+MSFS 2020 flight plans can be saved to and loaded from any location but the default directories are:
 
 - Microsoft Store installation: ``C:\Users\YOURLOGINNAME\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState``
 - Steam installation: ``C:\Users\YOURLOGINNAME\AppData\Roaming\Microsoft Flight Simulator\LocalState``
@@ -220,7 +239,7 @@ See also :doc:`FLIGHTPLANFMT` and :ref:`flight-plan-formats-msfs-pln`.
 |Export as PLN| Export Flight Plan as P3D or FSX PLN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Saves a flight plan for FSX or Prepar3D. Disabled if no flight plan has been loaded or created.
+Saves a flight plan for FSX or Prepar3D. Disabled if flight plan is empty.
 
 *Little Navmap* can read and write this format.
 
@@ -235,7 +254,7 @@ See also :doc:`FLIGHTPLANFMT`.
 |Export Flight Plan as X-Plane FMS 11| Export Flight Plan as FMS for X-Plane 11 and 12
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Saves the flight plan using the new X-Plane FMS 11 format which is usable in X-Plane 11 and X-Plane 12. Disabled if no flight plan has been loaded or created.
+Saves the flight plan using the new X-Plane FMS 11 format which is usable in X-Plane 11 and X-Plane 12. Disabled if flight plan is empty.
 
 *Little Navmap* can read and write this format.
 
@@ -254,7 +273,7 @@ Note that the two export format entries for X-Plane 11 and 12 use the same file 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A flight plan format which can be loaded into the RouteManager of the free
-flight simulator `FlightGear <http://www.flightgear.org>`__. Disabled if no flight plan has been loaded or created.
+flight simulator `FlightGear <http://www.flightgear.org>`__. Disabled if flight plan is empty.
 
 *Little Navmap* can read and write this format.
 
@@ -283,7 +302,7 @@ Export Flight Plan to SimBrief
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Opens a dialog that allows to export a flight plan to
-`SimBrief <https://www.simbrief.com/>`__. Disabled if no flight plan has been loaded or created.
+`SimBrief <https://www.simbrief.com/>`__. Disabled if flight plan is empty.
 
 See :doc:`SENDSIMBRIEF` for more information.
 
@@ -321,7 +340,7 @@ Export Flight Plan and Trail as GPX
 ''''''''''''''''''''''''''''''''''''
 
 Exports the current flight plan into a GPS Exchange Format file which
-can be read by Google Earth and most other GIS applications. Disabled if no flight plan has been loaded or created.
+can be read by Google Earth and most other GIS applications. Disabled if flight plan is empty.
 
 The flight plan is exported as a route and the flown aircraft trail as a
 track including simulator time and altitude.
@@ -350,7 +369,7 @@ Show Flight Plan in SkyVector
 '''''''''''''''''''''''''''''''
 
 Opens the default web browser and shows the current flight plan in
-`SkyVector <https://skyvector.com>`__. Procedures are not shown. Disabled if no flight plan has been loaded or created.
+`SkyVector <https://skyvector.com>`__. Procedures are not shown. Disabled if flight plan is empty.
 
 Note that the flight plan will not be shown if a small airport is
 unknown to SkyVector.
@@ -365,7 +384,7 @@ Export Flight Plan as HTML Page
 '''''''''''''''''''''''''''''''
 
 Saves the flight plan table as shown to HTML file which can be viewed in
-a web browser. Icons are embedded in the page. Disabled if no flight plan has been loaded or created.
+a web browser. Icons are embedded in the page. Disabled if flight plan is empty.
 
 The exported file will reflect changes of the flight plan table view like
 column order. Columns which are hidden or shrunk to minimum width are excluded.
@@ -378,7 +397,7 @@ Export Flight Plan for vPilot, xPilot or SWIFT
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Export the flight plan for the VATSIM vPilot online network
-client. Disabled if no flight plan has been loaded or created.
+client. Disabled if flight plan is empty.
 
 :doc:`ROUTEEXPORT` will appear before where you can add all needed information.
 
@@ -393,7 +412,7 @@ Export Flight Plan as X-IvAp FPL
 ''''''''''''''''''''''''''''''''
 
 Export flight plan format for IVAO online network clients `IvAp or
-X-IvAp <https://www.ivao.aero/softdev/ivap.asp>`__. Disabled if no flight plan has been loaded or created.
+X-IvAp <https://www.ivao.aero/softdev/ivap.asp>`__. Disabled if flight plan is empty.
 
 :doc:`ROUTEEXPORT` will appear
 before where you can add all needed information.
@@ -450,7 +469,7 @@ A chain of waypoints will be exported instead of waypoint/airway/waypoint triple
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Exports all selected flight plan formats at once. You have to configure paths and select formats
-for exporting before by selecting :ref:`multiexport-flight-plan-options` below. Also disabled if no flight plan has been loaded or created.
+for exporting before by selecting :ref:`multiexport-flight-plan-options` below. Also Disabled if flight plan is empty.
 
 Disabled if no flight plan format is selected for export.
 
@@ -734,7 +753,7 @@ See :doc:`TRACKS` for more information.
 |Download Tracks| Download Oceanic Tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Downloads Oceanic or other tracks which are NAT, PACOTS and AUSOTS.
+Downloads Oceanic or other tracks which are NAT or PACOTS.
 
 Tracks are shown on the map and a message is shown in the :doc:`STATUSBAR` once the download is finished.
 
@@ -758,8 +777,6 @@ Track Sources
 NAT
 '''''''''''''''''''''''''''''''''''''''
 PACOTS
-'''''''''''''''''''''''''''''''''''''''
-AUSOTS
 '''''''''''''''''''''''''''''''''''''''
 
 Allows to select the track systems to download. The download is triggered automatically after changing one of these options.
@@ -1313,8 +1330,10 @@ See :ref:`show-ils` for more information.
 
 .. note::
 
-  GLS/RNP approach paths are not available when using the setting :ref:`navigraph-none` in the
-  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  GLS/RNP approach paths are not available for all scenery library settings.
+  You need the Navigraph navdata update
+  (`Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__)
+  or X-Plane to see these. See also :doc:`SCENERY`, :doc:`NAVDATA`
   and :ref:`scenery-library-menu`.
 
 .. _view-show-holdings:
@@ -1327,8 +1346,10 @@ user placed holdings which can be added from the map display context menu using 
 
 .. note::
 
-  En-route holdings are not available when using the setting :ref:`navigraph-none` in the
-  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  En-route holdings are not available for all scenery library settings.
+  You need the Navigraph navdata update
+  (`Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__)
+  or X-Plane to see these. See also :doc:`SCENERY`, :doc:`NAVDATA`
   and :ref:`scenery-library-menu`.
 
 .. _view-show-msa-sectors:
@@ -1342,8 +1363,11 @@ See :doc:`MSA` for more information.
 
 .. note::
 
-  MSA sectors are not available when using the setting :ref:`navigraph-none` in the
-  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS. See also :doc:`SCENERY` and :doc:`NAVDATA`.
+  MSA sectors  are not available for all scenery library settings.
+  You need the Navigraph navdata update
+  (`Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__)
+  or X-Plane to see these. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  and :ref:`scenery-library-menu`.
 
 .. _show-victor-airways:
 
@@ -1364,7 +1388,7 @@ Toggles display of high airways (also Jet) and the attached waypoints.
 |Show Tracks| Show Oceanic Tracks
 '''''''''''''''''''''''''''''''''''
 
-Show or hide Oceanic or other tracks which are NAT, PACOTS and AUSOTS.
+Show or hide Oceanic or other tracks which are NAT or PACOTS.
 
 This function is disabled if no tracks are downloaded.
 
@@ -1759,7 +1783,7 @@ All aircraft icons can be customized: :ref:`customize-aircraft-icons`.
 
 .. note::
 
-  Currently MSFS multiplayer traffic cannot be shown since MSFS is lacking the required programming interfaces.
+  Currently multiplayer traffic cannot be shown for MSFS simulators since these are lacking the required programming interfaces.
 
 .. _show-online-aircraft:
 
@@ -1829,10 +1853,11 @@ altitude.
 
 .. note::
 
-  The MORA grid is not available when using the setting :ref:`navigraph-none` in the
-  menu ``Scenery Library`` -> ``Navigraph`` with FSX, P3D or MSFS.
-
-  See also :doc:`SCENERY` and :doc:`NAVDATA`.
+  The MORA grid is not available for all scenery library settings.
+  You need the Navigraph navdata update
+  (`Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__)
+  or X-Plane to see these. See also :doc:`SCENERY`, :doc:`NAVDATA`
+  and :ref:`scenery-library-menu`.
 
 .. figure:: ../images/legend_map_mora.png
 
@@ -1939,9 +1964,14 @@ Note that some weather sources depend on the selected scenery library. For examp
 - **X-Plane 12 scenery selected:** The directory ``Output/real weather`` in the X-Plane 12 base bath is checked for METAR and wind files.
 
 The same applies to ActiveSky weather files for X-Plane where the files are selected automatically.
-This does not apply to FSX, P3D and MSFS where the weather is loaded using the simulator connection.
+This does not apply to FSX and P3D simulators where the weather is loaded using the simulator connection.
 
 See also on options page :ref:`options-weather-files` for configuration of download addresses and file paths.
+
+.. important::
+
+   Only FSX, P3D and X-Plane simulators allow to show the weather source ``Simulator``.
+   Use NOAA for MSFS simulators which gives the most recent METAR weather reports and winds aloft forecasts.
 
 .. _airport-weather-source:
 
@@ -2132,7 +2162,7 @@ be appended to an already present file or if a header should be added.
 Note that the exported file contains extra columns compared
 to the Plan-G format. The description field supports more than one line
 of text and special characters. Therefore, not all programs might be
-able to import this file. If needed, adapt the file in *Microsoft Excel* or *LibreOffice Calc*.
+able to import this file. If needed, adapt the file in `LibreOffice Calc <https://www.libreoffice.org>`__ or Microsoft Excel.
 
 
 .. figure:: ../images/userpoint_export.jpg
@@ -2233,8 +2263,8 @@ Export CSV
 ^^^^^^^^^^
 
 Allows to export the full logbook or the selected entries to a CSV (comma separated
-value) text file which can be loaded in *LibreOffice Calc* or *Microsoft
-Excel*. See :ref:`import-export`.
+value) text file which can be loaded in `LibreOffice Calc <https://www.libreoffice.org>`__ or Microsoft
+Excel. See :ref:`import-export`.
 
 .. _logbook-import-xplane:
 
@@ -2369,7 +2399,9 @@ See :ref:`aircraft-type-edit` for more information on changing the type in the a
 
 .. note::
 
-  Note that MSFS delivers wrong values for the ICAO designator through the SimConnect interface. Keep this warning disabled if you use MSFS.
+  Note that MSFS delivers wrong values for the ICAO designator
+  through the SimConnect interface in some cases.
+  Keep this warning disabled if you see issues.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -2406,7 +2438,7 @@ The menu shows the simulator name as a disabled menu item as an indicator if onl
 
 
 The loaded AIRAC cycle is only shown for X-Plane and Navigraph data
-since the information is not available for FSX, P3D and MSFS.
+since the information is not available for FSX, P3D and MSFS simulators.
 
 **The menu items are suffixed with the following depending on status:**
 
@@ -2428,9 +2460,9 @@ will switch over to the newly loaded simulator data.
 
 .. important::
 
-  *Little Navmap* does not keep you from using a X-Plane scenery
-  database while being connected to FSX/Prepar3D/MSFS or vice versa, for example. You will
-  get unwanted effects like wrong weather information if using such a
+  *Little Navmap* does not keep you from using a X-Plane scenery library
+  database when connecting to a FSX, P3D or MSFS simulator or vice versa, for example. You will
+  get unwanted effects like wrong weather information or not matching airport layouts if using such a
   setup.
 
   An :warning-style:`orange warning message` is shown in the connect dialog (:doc:`CONNECT`) if a mismatch is detected.
@@ -2480,7 +2512,7 @@ Selects the right mode of the Navigraph navdata library database automatically, 
 This function is enabled per default and it is recommended to keep it enabled.
 The selection of the right mode depends on the following criteria:
 
-#.  Selected simulator (X-Plane, MSFS, etc.)
+#.  Selected simulator (X-Plane, FSX, MSFS, etc.)
 #.  Simulator database status (empty or not)
 #.  Navdata AIRAC cycle
 #.  Navdata update installed in MSFS or not
@@ -2533,7 +2565,7 @@ simulator scenery.
 .. note::
 
   Navdata read from FSX, P3D or MSFS has limitations. The airway network might not be correct
-  and procedures can have errors.
+  and procedures can have errors in rare cases.
 
 .. _airspace-source:
 

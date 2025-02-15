@@ -368,8 +368,8 @@ Follow the steps below to get a moving map and see your aircraft in
 
 .. important::
 
-         Make sure you use the right build of *Little Navmap*.
-         The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
+  Make sure you use the right build of *Little Navmap*.
+  The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``.
 
 See also :doc:`CONNECT`.
 
