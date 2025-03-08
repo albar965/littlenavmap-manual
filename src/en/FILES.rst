@@ -235,6 +235,40 @@ Additional files like
 are used by temporary processes like the database compilation or online
 network data. These can be ignored.
 
+.. _files-databases-scenery-library-msfs24:
+
+Additional Navaids for MSFS 2024
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MSFS 2024 does not provide a full world-wide list of navaids which requires workarounds to fetch navaids. In some cases navaids cannot be found. This is the case with add-ons adding ILS and other navaids.
+
+To get around this limitation add a CSV file ``navaids_msfs2024_extra.csv`` to the :ref:`settings-directory`.
+
+The file should have three columns separated by a comma ``,``:
+
+#. ``Ident``: Ident of the navaid like ``TAU`` or ``AMTEL``.
+#. ``Region``: Region like ``ED`` or ``LI``.
+#. ``Type``: Type of ``W`` for waypoint, ``N`` for NDB or ``V`` for ILS or VOR.
+
+Incomplete or invalid rows are ignored.
+
+Add the data for your missing navaid to the file and reload the scenery library. If the navaid exist in MSFS 2024 it will be included in *Little Navmap*.
+
+The example below instructs *Little Navmap* to extract three navaids from the simulator. One waypoint ``BOMBI``, a VOR ``TAU`` and an ILS ``IABC``.
+
+.. code-block:: none
+  :caption: Example for file navaids_msfs2024_extra.csv.
+  :name: navaids-msfs2024-extra-example
+
+  BOMBI,ED,W
+  TAU,ED,V
+  IABC,LI,V
+
+
+.. note::
+
+  You can only add navaids which already exist in the MSFS 2024 scenery library from stock data or an add-on.
+
 .. _disk-cache:
 
 Disk Cache

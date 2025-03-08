@@ -1738,6 +1738,8 @@ Once connected, the compass rose will be attached to the user aircraft and follo
 
 This can be disabled with this menu item which detaches the rose from the user aircraft and keeps it centered on the screen.
 
+.. _show-ai-and-online-aircraft-menu:
+
 AI and Online Aircraft
 ^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -34,14 +34,30 @@ Simulator and Online Aircraft Duplicates
 three minutes depending on settings and network.
 
 The program also fetches AI or multiplayer aircraft from the simulator
-which are updated about several times a second. These aircraft are injected
-into the simulator by the various online clients so they are visible
-in the sim.
+which are updated several times a second. These multiplayer aircraft are injected
+into the simulator by the various online clients so they are also visible
+in the simulator.
 
 Therefore, the user aircraft and other client aircraft can appear
-duplicated on the map. *Little Navmap* removes these duplicates by matching the position,
+duplicated on the map since there is no information to match the duplicates.
+*Little Navmap* removes these by matching the position,
 speed and other parameters against each other.
-The de-duplication can be disabled in the options dialog on page :ref:`options-online-flying`.
+The de-duplication can be disabled in the options dialog on page :ref:`options-online-flying` by deselecting
+`Remove duplicate aircraft from online service and simulator`.
+
+.. note::
+
+  Note that the de-duplication does not work in all cases. Reasons might be mismatches or slow updates from the
+  server, for example.
+
+.. tip::
+
+  If removing the duplicates does not work:
+
+  Deselect `Remove duplicate aircraft from online service and simulator` on options page :ref:`options-online-flying`.
+  Then hide the online aircraft in menu `View` -> :ref:`show-ai-and-online-aircraft-menu` by disabling :ref:`show-online-aircraft`.
+  This will hide the slowly updated online aircraft but keep the quickly updated aircraft from the simulator. Note that the simulator aircraft
+  appear only in a radius of around 100 NM around the user aircraft.
 
 .. _online-networks-mapdisplay:
 

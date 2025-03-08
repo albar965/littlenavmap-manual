@@ -159,11 +159,12 @@ can disappear from the map when landing on an airport.
 Labels are shown depending on zoom level and distance to user aircraft as well.
 Zooming out drops the less important aircraft labels, for example. Flight number and registration are always shown.
 
-A yellow wind arrow and labels for the situation around the user
+A yellow wind arrow and a label for the situation around the user
 aircraft can be displayed on the top center of the map. The displayed
 labels for aircraft can be configured in the options dialog on page
 :ref:`options-map-labels`. No labels are shown for ship traffic.
 
+Note that you have to be connected to the simulator to see the actual wind at the aircraft.
 
 See :ref:`vehicles-legend` for details about the aircraft type.
 

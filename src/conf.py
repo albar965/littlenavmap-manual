@@ -27,7 +27,7 @@ author = u'Alexander Barthel'
 # The short X.Y version
 version = u'3.0'
 # The full version, including alpha/beta/rc tags
-release = u'3.0.14'
+release = u'3.0.16'
 
 html_last_updated_fmt = ''
 

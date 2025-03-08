@@ -100,6 +100,7 @@ the Navigraph update for Microsoft Flight Simulator 2020 and 2024.
 See :ref:`load-scenery-library-dialog-msfs-apt-navdata` for more information on MSFS and navdata
 updates.
 
+See also :ref:`files-databases-scenery-library-msfs24` if you're missing navaids from add-ons in the *Little Navmap* scenery library.
 
 X-Plane
 ^^^^^^^^^^^^^^^^

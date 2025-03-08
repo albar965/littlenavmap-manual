@@ -64,8 +64,8 @@ The procedure search tab expands procedure branches that are already present in 
   Also check the resulting route to avoid accidental zig-zag routing which can happen if you combine the wrong
   approach/transition with a STAR, for example.
 
-  Check the flight plan for reversals, zig-zag guidance, too close waypoints or other issues.
-  Delete waypoints manually if you find such cases.
+  Always check the flight plan for reversals, zig-zag guidance, too close waypoints or other issues.
+  Delete waypoints manually or change procedures if you find such cases.
 
 
 .. figure:: ../images/proceduresearch.jpg
@@ -174,6 +174,10 @@ preview from the map context menu (right click on a navaid) or the :ref:`procedu
 
 Note that labels of procedure waypoints have a ``…`` appended if additional labels texts like restrictions
 are suppressed due to higher zoom distances or lower detail levels.
+
+Click into the empty space in the procedure tree to clear all highlights and previews.
+You can also click the button :ref:`clear-selection-button-procs` |Clear Selection|, the related context menu item or
+:ref:`remove-highlights` in the main menu ``Map``. This also clears the :ref:`button-preview-all-procs` highlights.
 
 .. figure:: ../images/proc_preview_selected.jpg
   :scale: 80%

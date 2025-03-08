@@ -17,6 +17,8 @@ The used port and other settings can be changed in options on page :ref:`options
 
 Normally you can access the *Little Navmap* web interface using `http://localhost:8965 <http://localhost:8965>`__.
 
+All maps use the :ref:`webserver-api` and :ref:`webserver-openlayers` interfaces which are open for all developers.
+
 .. note::
 
   You browser may give you a warning that the address is not secure or not encrypted.
@@ -32,6 +34,8 @@ Normally you can access the *Little Navmap* web interface using `http://localhos
 
   If this does no help delete all cookies related to the *Little Navmap* web interface.
 
+.. _webserver-buttons:
+
 Buttons
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -45,9 +49,17 @@ The following buttons are in the top row:
   - ``Autozoom``: Zooms dynamically to the user aircraft while flying. This plugin provides a more advanced
     functionality compared to the functionality on the page ``Map``.
     Having this enabled will disable all map interaction functions like scrolling and zooming.
-  - ``Dynamic Touch and Drag Map``: This is an experimental and more dynamically usable map that allows to move smoothly by
+  - ``Dynamic Touch and Drag Map``: This a more dynamically usable map that allows to move smoothly by
     dragging the mouse and zooming using the mouse wheel. Note that this map has limitations and
-    cannot show the user aircraft trail or AI/multiplayer aircraft and show oversized icons in some cases.
+    cannot show the user aircraft trail or AI/multiplayer aircraft.
+
+    Additional buttons are a yellow aircraft to center the user aircraft and a white reload button on the
+    right which can be used to refresh the map.
+
+    This map uses the :ref:`webserver-openlayers`
+    interface which can also be used to develop plugins.
+
+.. _webserver-pages:
 
 Pages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,6 +162,8 @@ The links ``Runways``, ``Com Frequencies``, ``Procedures`` and
 
   Airport information in the *Little Navmap* web interface. *Click image to enlarge.*
 
+.. _webserver-dev:
+
 Web Developers
 ~~~~~~~~~~~~~~
 
@@ -160,6 +174,7 @@ See directory ``.../Little Navmap/web/test.html`` or
 ``http://localhost:8965/test.html`` while running the web server for
 examples.
 
+.. _webserver-api:
 
 WebAPI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,6 +191,7 @@ You have to run the *Little Navmap* web server for these examples to work. See :
 -  Get airport information about EDDM: `http://localhost:8965/api/airport/info?ident=eddm <http://localhost:8965/api/airport/info?ident=eddm>`__.
 -  Get all map features in the given rectangle: `http://localhost:8965/api/map/features?toplat=50&bottomlat=49&leftlon=8&rightlon=9 <http://localhost:8965/api/map/features?toplat=50&bottomlat=49&leftlon=8&rightlon=9>`__.
 
+.. _webserver-openlayers:
 
 OpenLayers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -187,6 +203,7 @@ as a map tile server.
 See `http://localhost:8965/ol/index.html <http://localhost:8965/ol/index.html>`__
 (``Dynamic Touch and Drag Map``) for an example application while running the web server.
 
+.. _webserver-internet:
 
 Access from the Internet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

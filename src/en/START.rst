@@ -48,6 +48,12 @@ for future starts by pressing ``Do not show again`` but keep at least the messag
 Preparing
 ^^^^^^^^^^^^^^^^^^^^
 
+.. tip::
+
+  *Little Navmap* supports several simulators. You do not have to install the program more than once since
+  you can switch between simulator connections in menu ``Tools`` and scenery library databases in menu
+  ``Scenery Library`` on the fly.
+
 Files and Directories
 '''''''''''''''''''''''
 
