@@ -2486,7 +2486,7 @@ Navigraph
 
 This sub-menu also shows the AIRAC cycle if a Navigraph
 database is found in the database directory. Use this indication to verify if an database update was successful.
-See `Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ for installation options if you run into issues..
+See `Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ for installation options if you run into issues.
 
 The right navdata mode is selected automatically per default. See below for more information.
 

@@ -135,7 +135,7 @@ An issue report can be created manually by a user by clicking :ref:`create-issue
 .. _files-databases:
 
 Databases
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 Aircraft trails are stored in the sub-directory ``little_navmap_db`` below the :ref:`settings-directory` directory.
 
@@ -157,10 +157,11 @@ The directory can be opened with :ref:`files-and-directories-db`.
 .. _files-databases-scenery-library:
 
 Scenery Library Databases
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The number of files depends on which simulators you have installed and
-which scenery libraries you have loaded.
+which scenery libraries you have loaded. *Little Navmap* creates an empty scenery library database for each simulator installation found.
+You have to use :ref:`load-scenery-library-menu` in the menu ``Scenery Library`` to fill the respective database.
 
 The files are:
 
@@ -174,13 +175,23 @@ The files are:
 - ``little_navmap_msfs24.sqlite``: Microsoft Flight Simulator 2024
 - ``little_navmap_xp11.sqlite``: X-Plane 11
 - ``little_navmap_xp12.sqlite``: X-Plane 12
-- ``little_navmap_navigraph.sqlite``: Navigraph navigation database. Can be either the included database or an update
-  installed by the Navigraph *FMS Data Manager*.
+- ``little_navmap_navigraph.sqlite``: Navigraph navigation database.
+  This can be either the included database or an update installed by the Navigraph *FMS Data Manager*.
+  See `Little Navmap - Install Navigraph Updates <https://albar965.github.io/littlenavmap_navigraph.html>`__ for installation options.
+
+
+Some documentation about the database schema can be found in the files below.
+
+.. VERSION_NUMBER_TODO update branch in link
+
+- `create_ap_schema.sql <https://github.com/albar965/atools/blob/release/4.0/resources/sql/fs/db/create_ap_schema.sql>`__: This file creates the airport and related tables like runway, parking, procedures and more.
+- `create_nav_schema.sql <https://github.com/albar965/atools/blob/release/4.0/resources/sql/fs/db/create_nav_schema.sql>`__: Table creation script for all navaids, waypoints, VOR, NDB, MORA grid, airport MSA and more.
+- `create_boundary_schema.sql <https://github.com/albar965/atools/blob/release/4.0/resources/sql/fs/db/create_boundary_schema.sql>`__: Creates the table for airspace boundaries.
 
 .. _files-userdata:
 
 Userpoints Database
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 The file ``little_navmap_userdata.sqlite`` contains the user defined
 waypoints.
@@ -202,7 +213,7 @@ did something wrong.
   You can apply the same to the :ref:`files-logbook` files.
 
 User Airspaces Database
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The file ``little_navmap_userairspace.sqlite`` contains the user defined
 airspaces read by using :ref:`load-user-airspaces`.
@@ -212,7 +223,7 @@ It is backed up in the same way as the userpoints.
 .. _files-logbook:
 
 Logbook Database
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 The file ``little_navmap_logbook.sqlite`` is used to store logbook
 entries.
@@ -221,7 +232,7 @@ entries.
 backup files for the user defined waypoints as described above.
 
 Other Database Files
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 Additional files like
 
@@ -238,7 +249,7 @@ network data. These can be ignored.
 .. _files-databases-scenery-library-msfs24:
 
 Additional Navaids for MSFS 2024
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 MSFS 2024 does not provide a full world-wide list of navaids which requires workarounds to fetch navaids. In some cases navaids cannot be found. This is the case with add-ons adding ILS and other navaids.
 
