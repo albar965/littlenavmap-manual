@@ -1,8 +1,10 @@
-# English
+# Little Navmap - User Manual
 
-* [Little Navmap User Manual](en/README.md)
+**This repository contains the sources for the**  _Little Navmap_ **user manual.**
 
-# Deutsch
+**The online version of the latest release can be found at
+[Little Navmap - User Manual](https://www.littlenavmap.org/manuals/littlenavmap/release/latest/en/)**.
 
-* [Little Navmap Benutzerhandbuch](de/README.md)
+**Download other formats like PDF, EPUB or MOBI from [Alex’ Projects - User Manuals](https://albar965.github.io/manuals.html)**.
 
+**Issues can be submitted at [littlenavmap/issues](https://github.com/albar965/littlenavmap/issues)**.
