@@ -59,8 +59,8 @@ Builds
 
 There are two builds of Little Navmap and Little Navconnect for Windows available:
 
--  **Windows 64-bit: For all MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-3.0.16-Install.exe`` for example.
--  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-3.0.16-Install.exe`` for example.
+-  **Windows 64-bit: For all MSFS and all X-Plane versions.** Download file is ``LittleNavmap-win64-3.0.17-Install.exe`` for example.
+-  **Windows 32-bit: For FSX and Prepar3D.** Download file is ``LittleNavmap-win32-3.0.17-Install.exe`` for example.
 
 You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
 

@@ -1698,20 +1698,31 @@ The arc is limited to 5 NM length and a turn maximum of 180°. Tick marks show d
 |Show Aircraft Endurance| Show Aircraft Endurance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A dotted circle showing the maximum endurance is shown around the user aircraft if enabled. A label display endurance in NM and hours/minutes.
-The label turns orange if the endurance is below 45 minutes and to red if endurance is below 30 minutes.
-The endurance can be seen in :ref:`progress-info` when enabling ``Endurance`` in :ref:`progress-configuration`.
+Enabling this function will display two circles around the user aircraft which are shown if the user aircraft is airborne.
 
-The endurance is based on fuel on board, current fuel flow and groundspeed considering reserves and contingency as set in the :doc:`AIRCRAFTPERF` file.
-It is only shown if the user aircraft is airborne. You will see limited endurance if climbing to cruise altitude since the range depends on the current fuel flow and speed.
+Note that you will see limited endurance if climbing to cruise altitude since the range depends on the current fuel flow and speed.
 
-Running below fuel reserves might also result in zero endurance shown even with fuel on board.
+The endurance can also be seen in :ref:`progress-info` when enabling ``Endurance`` in :ref:`progress-configuration`.
 
-Note that you will see red or orange endurance warnings if the wrong aircraft performance file is used.
+Two circles are shown:
+
+#. A a black dotted circle shows the maximum endurance considering reserves around the user aircraft, if enabled.
+   A label suffixed with ``(RSV)`` (reserves) displays endurance in NM and hours/minutes until the fuel level is down to reserves.
+   The label turns orange if the endurance is below 45 minutes and to red if endurance is below 30 minutes.
+   The endurance is based on fuel on board, current fuel flow and groundspeed considering reserves and contingency as set in the
+   :doc:`AIRCRAFTPERF` file.
+   Note that even if you have fuel on board, running below the fuel reserve may result in zero endurance being displayed.
+#. A red dotted circle shows the aircraft endurance with distance and hours and minutes to go. This is based on fuel on
+   board and ground speed to calculate the endurance util the fuel level is zero.
 
 .. figure:: ../images/endurance.jpg
 
-  Aircraft endurance shown with label. 384 NM and 3 hours and 18 minutes to go.
+  Aircraft endurance rings shown with labels. 384 NM and 3 hours and 18 minutes to go until on reserves as defined in aircraft performance.
+  587 NM and 4 hours and 52 minutes to go until fuel level is zero.
+
+.. important::
+
+  You will see red or orange endurance warnings if the wrong aircraft performance file is used.
 
 .. _show-compass-rose:
 

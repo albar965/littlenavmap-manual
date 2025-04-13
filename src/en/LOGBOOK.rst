@@ -119,9 +119,9 @@ Note that you to select :ref:`show-all` from the table context menu or have to s
 Example : ``9 of 3667 Logbook Entries selected, 256 visible.``
 
 A second footer line shows up if one or more logbook entries are selected.
-This line shows the total real travel time, the total simulator travel time and the accumulated distance for the selected entries.
+This line shows the total real travel time, the total simulator travel time and the cumulative distance according to flight plan and route flown for the selected entries.
 
-Example: ``Travel Totals: Real time 2 h 13 m. Sim. time 6 h 48 m. Dist. 1.298 NM.``
+Example: ``Totals: real 2 h 13 m, sim. 6 h 48 m, 1.298 NM plan, 1.321 NM flown.``
 
 .. _logbook-top-buttons:
 

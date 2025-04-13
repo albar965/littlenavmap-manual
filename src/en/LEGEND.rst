@@ -326,9 +326,17 @@ Display of traffic can be enabled or disabled in menu :ref:`view-menu`.
 | |Aircraft Turn|                          | Aircraft turn flight path line. This predicts the flight path.                           |
 |                                          | This display can be disabled in menu ``View`` -> :ref:`show-aircraft-turn-path-map`.     |
 +------------------------------------------+------------------------------------------------------------------------------------------+
-| |Aircraft Endurance|                     | Aircraft endurance with distance and hours:minutes to go. This uses reserve fuel,        |
+| |Aircraft Endurance|                     | A black dotted circle showing aircraft endurance considering reserves with distance      |
+|                                          | and hours:minutes to go.                                                                 |
+|                                          | This uses reserve fuel,                                                                  |
 |                                          | contingency fuel, current fuel flow, fuel on                                             |
-|                                          | board and ground speed to calculate the endurance                                        |
+|                                          | board and ground speed to calculate the endurance until the fuel level is down to        |
+|                                          | reserves.                                                                                |
+|                                          | This display can be disabled in menu ``View`` -> :ref:`show-aircraft-endurance-map`.     |
++------------------------------------------+------------------------------------------------------------------------------------------+
+| |Aircraft Endurance Critical|            | Red dotted circle showing aircraft endurance with distance and hours:minutes to go.      |
+|                                          | This uses fuel on                                                                        |
+|                                          | board and ground speed to calculate the endurance util the fuel level is zero.           |
 |                                          | This display can be disabled in menu ``View`` -> :ref:`show-aircraft-endurance-map`.     |
 +------------------------------------------+------------------------------------------------------------------------------------------+
 | |Trail|                                  | User aircraft trail.                                                                     |
@@ -1081,6 +1089,7 @@ Winds Aloft
 .. |Aircraft Altitude| image:: ../images/legend_aircraft_altitude.png
 .. |Aircraft Turn| image:: ../images/legend_aircraft_turn.png
 .. |Aircraft Endurance| image:: ../images/legend_aircraft_endurance.png
+.. |Aircraft Endurance Critical| image:: ../images/legend_aircraft_endurance_critical.png
 .. |Aircraft Track Rose| image:: ../images/legend_compass_rose_track.png
 .. |Aircraft| image:: ../images/legend_profile_aircraft.png
 .. |Airport Empty Soft| image:: ../images/legend_airport_empty_soft.png

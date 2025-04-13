@@ -80,8 +80,8 @@ You will see an :warning-style:`orange warning message` if you use a X-Plane sce
 
   Note that there are two builds of Little Navmap and Little Navconnect for Windows available:
 
-  -  **Windows 64-bit:** For MSFS 2020, MSFS 2024 and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.16-Install.exe``, for example.
-  -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.16-Install.exe``, for example.
+  -  **Windows 64-bit:** For MSFS 2020, MSFS 2024 and all X-Plane versions. Download file is ``LittleNavmap-win64-3.0.17-Install.exe``, for example.
+  -  **Windows 32-bit:** For FSX and Prepar3D. Download file is ``LittleNavmap-win32-3.0.17-Install.exe``, for example.
 
   Make sure you use the right build. The 64-bit version shows only ``MSFS`` in the connection tab while the 32-bit version shows ``FSX and P3D``. You can see the Windows build type in :ref:`about-little-navmap` and in the :ref:`window-title` (``64-bit`` or ``32-bit``).
 
