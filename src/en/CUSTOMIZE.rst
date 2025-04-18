@@ -279,6 +279,7 @@ file with one of the default category names in the settings directory.
 New categories can be added by placing a new icon adhering to a certain
 name pattern in the default directory.
 
+-  ``userpoint_Addon.svg``
 -  ``userpoint_Airport.svg``
 -  ``userpoint_Airstrip.svg``
 -  ``userpoint_Bookmark.svg``
@@ -298,6 +299,7 @@ name pattern in the default directory.
 -  ``userpoint_Mountain.svg``
 -  ``userpoint_NDB.svg``
 -  ``userpoint_Obstacle.svg``
+-  ``userpoint_Oil Platform.svg``
 -  ``userpoint_Other.svg``
 -  ``userpoint_POI.svg``
 -  ``userpoint_Park.svg``
@@ -313,7 +315,6 @@ name pattern in the default directory.
 -  ``userpoint_VRP.svg``
 -  ``userpoint_Water.svg``
 -  ``userpoint_Waypoint.svg``
-
 
 The text between the first underscore ``_`` and the ``.png`` ending
 defines the category. For example ``userpoint_My Places.png`` creates a
