@@ -37,6 +37,8 @@ Copy Databases
 
   Contact a friend or a family member or get professional help in a shop if you cannot do this.
 
+.. include:: include/HIDDENFILE.rst
+
 Copy Databases Manually
 ''''''''''''''''''''''''''''''''''
 

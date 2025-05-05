@@ -9,6 +9,8 @@ File paths will differ if using one of the portable scripts (:doc:`PORTABLE`).
 
   You can open all file locations from the main menu ``Tools`` -> :ref:`files-and-directories`.
 
+.. include:: include/HIDDENFILE.rst
+
 .. _files-backup-important:
 
 Important Files to Backup

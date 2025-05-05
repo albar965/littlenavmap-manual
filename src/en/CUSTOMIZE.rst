@@ -28,6 +28,8 @@ reorder the keys when saving or updating the files.
   do not edit the files while *Little Navmap* is running since it might
   overwrite your changes.
 
+.. include:: include/HIDDENFILE.rst
+
 .. _customize-version:
 
 Version
