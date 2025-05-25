@@ -160,6 +160,15 @@ No entry or exit procedure is shown. You have to find a proper entry
 procedure yourself. Holds have a straight leg flying time in minutes or
 a distance.
 
+There are three types of holdings:
+
+#. ``Hold to manual termination``: Fly the holding until terminated by ATC or on your own discretion if not using ATC.
+#. ``Hold to altitude``: Climb or descent and fly the holding until altitude is reached. Leave the holding at given altitude.
+   No hold is needed if you are already at the given altitude.
+   This type is used to gain altitude in protected airspace, sometimes used for departures and missed approaches at mountainous airports.
+#. ``Hold to fix``: This is used to fly course reversals. If the plane is already pointing in the right direction, no
+   reversal is needed and no hold has to be flown.
+
 If a time is given, fly the hold as usual:
 
 #. Enter at the fix using a proper entry procedure
