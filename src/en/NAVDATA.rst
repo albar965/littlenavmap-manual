@@ -32,7 +32,7 @@ You can see the data source for each navaid or airport in the section ``Data Sou
 
   **It is recommended to keep all scenery libraries in sync.** This means that your simulator, *Little Navmap*,
   aircraft, tools and websites should use the same AIRAC cycle. Having navdata synchronized
-  helps to avoid issues when loading flight plans.
+  helps to avoid potential issues when loading flight plans.
 
   The problem when exchanging flight plans across applications is that waypoints, airways and procedures like SIDs, STARs, and
   approaches change over time.
@@ -57,9 +57,7 @@ Select Automatically
 **This is the default recommended mode which selects the navdata sources
 from the three modes below based on the used simulator and AIRAC cycles.**
 
-.. important::
-
-  Read below if you'd like  select the navdata mode manually.
+Read below if you'd like  select the navdata mode manually.
 
 .. _navdata-navigraph-all:
 
@@ -67,7 +65,7 @@ Use Navigraph for all Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Uses only information from the Navigraph database.
-This mode is automatically selected if the simulator navigation database is empty.
+This mode is selected automatically if the navigation database in the simulator is empty, i.e. if you have not loaded the scenery library for the simulator.
 
 .. note::
 
@@ -112,6 +110,8 @@ this mode:
 -  Parking positions
 -  Airport COM frequencies
 
+The purpose of using the simulator airport is to provide more detailed information, such as the layout of the apron and taxiways. Furthermore, the airport layout shown in Little Navmap should match what you see in the simulator, even if you use an outdated airport add-on or an outdated stock airport. It would not make sense to show a real-world airport layout that does not match what you see in the simulator.
+
 The following features are taken from the Navigraph database:
 
 - Navaids (waypoints/intersections, VOR, NDB, marker, ILS and more) which affects:
@@ -130,8 +130,9 @@ The following features are taken from the Navigraph database:
 Limitations in this mode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- *Little Navmap* ignores any mismatches between procedures and runways
-  due to airport updates and will not display a warning. Update an
+- *Little Navmap* will try to resolve mismatches between procedures and runways
+  due to airport updates and will display a warning in the :doc:`SEARCHPROCS` (:ref:`procedure-warning`).
+  Update an
   airport using payware or freeware scenery if you find that an
   approach or departure procedure does not start at a runway end of an
   airport.
