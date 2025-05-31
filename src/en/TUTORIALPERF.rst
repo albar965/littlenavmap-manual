@@ -27,6 +27,8 @@ suffice.
   intended cruise altitude in the window :doc:`FLIGHTPLAN` to allow *Little
   Navmap* to detect the cruise phase.
 
+.. include:: include/AIRCRAFTPERFWP.rst
+
 Aircraft Performance
 ~~~~~~~~~~~~~~~~~~~~
 
