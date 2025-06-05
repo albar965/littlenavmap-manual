@@ -2439,9 +2439,10 @@ fly.
 
 The menu shows the simulator name as a disabled menu item as an indicator if only one flight simulator was found.
 
-.. note::
+.. important::
 
-  The selection in the scenery library menus also affects the selection of weather files for ActiveSky and X-Plane.
+  The selection of the scenery library also affects the selection of weather files for ActiveSky, X-Plane and other functions.
+  *Little Navmap* shows a warning if the used scenery library database and the simulator do not match.
 
 .. note::
 

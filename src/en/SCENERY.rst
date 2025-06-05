@@ -40,6 +40,13 @@ See :doc:`AIRSPACELOAD` for information about loading airspaces into the *Little
 
 See :ref:`scenery-library-menu` for information on the scenery library menu and the following chapters for more details.
 
+.. important::
+
+  **MSFS 2024**: You have to start the simulator and wait until the buttons ``Accessibility`` and ``Start`` show up before you
+  can load the scenery library.
+
+  Click ``Start`` to access the main menu of the simulator to avoid performance degradation caused by the movies.
+
 .. note::
 
   *Little Navmap* does not keep you from using a X-Plane scenery
@@ -160,7 +167,7 @@ is detected automatically. You can change the path manually if needed.
 
 **Microsoft Flight Simulator 2024:** The installation path of MSFS 2024 is detected automatically to recognize the simulator.
 The path cannot be changed and is not required since airports and navaids are loaded using the SimConnect
-interface while the simulator is running.
+interface while the simulator is running. You have to start the simulator before loading the scenery library.
 
 **X-Plane:** The base path of the first X-Plane installation is
 added. Select the base path manually if you like to read the scenery

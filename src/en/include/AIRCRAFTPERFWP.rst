@@ -1,6 +1,5 @@
-.. important::
+.. note::
 
-  Due to a limitation in the elevation profile calculation of *Little Navmap* you have to use a flight plan
-  with at least one en-route waypoint to get results for the climb, cruise and descent flight phases.
-
-  Do not use a flight plan connecting the departure directly with the destination.
+  You can also use the performance collection without a flight plan. In this case, ensure that you set the cruise altitude
+  in the flight plan window (:ref:`flight-plan-altitude`) to the intended cruise altitude. This allows *Little Navmap* to detect
+  the cruise portion of the flight once the altitude is reached by the aircraft.
