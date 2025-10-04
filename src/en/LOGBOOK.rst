@@ -19,7 +19,7 @@ An incomplete takeoff only entry with the same aircraft is required for this to 
 
 A coordinate in degrees/minutes format like ``N44124W122451`` is used if the flight is recorded by an off-airport takeoff or landing .
 
-Use :ref:`reset-for-new-flight` to be sure that the logbook flight detection is set up for a new flight.
+Use ``File`` -> :ref:`reset-for-new-flight` to be sure that the logbook flight detection is set up for a new flight.
 
 Editing functionality in the logbook is similar to the userpoints editing (:ref:`userpoints`).
 
@@ -41,7 +41,7 @@ selected scenery library and not by the connected simulator.
 
 .. note::
 
-  Always use :ref:`reset-for-new-flight` before doing a flight.
+  Always use ``File`` -> :ref:`reset-for-new-flight` before doing a flight.
 
 .. _logbook-files:
 

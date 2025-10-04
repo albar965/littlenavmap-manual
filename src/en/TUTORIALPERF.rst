@@ -58,7 +58,7 @@ Fuel flow data has to be entered in the performance profile to get a valid fuel 
 Start and load a flight with aircraft engines running or not. Connect
 *Little Navmap* to the simulator.
 
-Select ``Flight`` -> :ref:`reset-for-new-flight` |Reset all for a new
+Select ``File`` -> :ref:`reset-for-new-flight` |Reset all for a new
 Flight Icon| in the menu. Remove the check mark from
 ``Create an empty flight plan`` since a plan is already loaded.
 Click ``OK`` to get a clean base for fuel calculation, logbook and other

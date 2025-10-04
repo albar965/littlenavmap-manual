@@ -354,7 +354,7 @@ See :doc:`AIRCRAFTTRAIL` for more information.
 
 .. note::
 
-  Do not forget to clear the aircraft trail (:ref:`delete-aircraft-trail` or :ref:`reset-for-new-flight`)
+  Do not forget to clear the aircraft trail (``Map`` -> :ref:`delete-aircraft-trail` or ``File`` -> :ref:`reset-for-new-flight`)
   before a flight to avoid
   old trail segments in the exported GPX file. Or, disable the reloading
   of the trail in the options dialog on page :ref:`options-startup-and-updates`.

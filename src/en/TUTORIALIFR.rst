@@ -41,7 +41,7 @@ The tutorial assumes the following preconditions:
 Prepare Flight
 ~~~~~~~~~~~~~~
 
-Use ``Flight`` -> :ref:`reset-for-new-flight`
+Use ``File`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
 fuel calculation and other functions. Deselect
 ``Create an empty flight plan`` in the dialog if the flight plan is
