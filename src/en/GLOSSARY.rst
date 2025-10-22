@@ -54,7 +54,7 @@ Departure Procedure
   SID (standard instrument departure) procedure.
 
 Dialog
-  A dialog window requiring user input. Most dialogs block the whole applicaton until closed.
+  A dialog window requiring user input. Most dialogs block the whole application until closed.
 
 DME
   Distance measuring equipment or a radio navaid.

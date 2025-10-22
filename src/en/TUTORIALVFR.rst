@@ -24,7 +24,7 @@ The flight plan is: *Meythet (LFLP) / Runway 04 to Challes-Les-Eaux (LFLE) Dista
 Prepare Flight
 ~~~~~~~~~~~~~~
 
-I'd recommend to get use ``File`` -> :ref:`reset-for-new-flight`
+I'd recommend to use ``File`` -> :ref:`reset-for-new-flight`
 |Reset all for a new Flight| before each flight to get a clean base for
 fuel calculation and other functions. Deselect
 ``Create an empty flight plan`` in the dialog if your plan is

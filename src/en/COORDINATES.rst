@@ -31,7 +31,7 @@ General
   Full degree coordinate conventions, examples and respective quadrants.
 
 
-All dialogs show the read coordinates below the input field in the curretly configured coordinate format.
+All dialogs show the read coordinates below the input field in the currently configured coordinate format.
 See options page :ref:`options-units` for more information.
 
 .. tip::

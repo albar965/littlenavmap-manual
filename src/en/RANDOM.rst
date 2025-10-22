@@ -42,7 +42,7 @@ selecting procedures (:doc:`SEARCHPROCS`) or :doc:`PARKINGPOSITION`.
 
   Generating a random flight from a search result showing all airports in Germany, having 8,000
   feet minimum runway length. The selection will generate a random flight from the current departure
-  airport Florø (ENFL) with a maximum lenght of 1,000 NM.
+  airport Florø (ENFL) with a maximum length of 1,000 NM.
   *Click image to enlarge.*
 
 .. figure:: ../images/randomflight.jpg

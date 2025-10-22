@@ -4,7 +4,7 @@ Installation
 *Little Navmap* for **Windows** is available as a 64-bit or 32-bit application and was tested with
 Windows 10 and Windows 11. You can download either an installer package or a Zip-archive.
 
-Using the installation package ist strongly recommended on Windows since it takes care of obsolte files and others.
+Using the installation package ist strongly recommended on Windows since it takes care of obsolete files and others.
 
 Apple **macOS** is supported from macOS High Sierra 10.13 or later.
 You need Rosetta to run *Little Navmap* on Apple Silicon / M1 computers with the

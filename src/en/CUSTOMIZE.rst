@@ -116,7 +116,7 @@ Color can be in one of these formats which are commonly used in web
 design:
 
 - ``#RRGGBB`` each of R, G, B and A is a single hex digit. Each color value ranges from 00 - FF (decimal 0-255)
-- ``#AARRGGBB`` first two digits contain the alpha/transparency value. ``00`` equals to fully tranparent and ``FF`` (decimal 255) to opaque.
+- ``#AARRGGBB`` first two digits contain the alpha/transparency value. ``00`` equals to fully transparent and ``FF`` (decimal 255) to opaque.
 - SVG color name
 
 SVG color name is one of the colors defined in the list of

@@ -18,7 +18,7 @@ custom waypoints (or coordinates) in some flight plan formats like MSFS PLN, X-P
 
   The custom waypoints are omitted for all formats related to complex aircraft having an FMS or MCDU to avoid issues on import.
   You have to select the departure and approach manually in the aircraft, therefore.
-  Depending on add-on you probably have to remove the additional waypoints in the FMC or MCDU before seleting the runway in the aircraft.
+  Depending on add-on you probably have to remove the additional waypoints in the FMC or MCDU before selecting the runway in the aircraft.
 
   If you see problems, delete the departure or/and approach, export the flight plan and undo your change in the flight plan again.
 

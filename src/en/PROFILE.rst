@@ -51,7 +51,7 @@ The label shows the following information for the mouse position:
 - ``Course`` for the flight plan leg at the cursor position.
 - ``Heading`` for this flight plan leg at the position. This is calculated based on wind conditions and omitted if it is the same as course.
 - The ``Flight path angle`` is only shown in the descent phase and shows the vertical angle.
-  The label changes to ``Required flight path angle`` if a descent path is reqired by a procedure.
+  The label changes to ``Required flight path angle`` if a descent path is required by a procedure.
 - ``Ground`` altitude and calculated altitude above ground.
 - ``Leg safe altitude`` of the flight plan leg at the cursor position (orange line).
 - ``Wind`` direction and speed as well as head- (``▼``) or tailwind (``▲``) component.

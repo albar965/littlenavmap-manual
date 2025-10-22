@@ -70,7 +70,7 @@ FSX, P3D, MSFS 2020 and MSFS 2024
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. role:: warning-style
 
-No plugin or separate SimConnect installaton is needed since *Little Navmap* comes with its own copy of the SimConnect library.
+No plugin or separate SimConnect installation is needed since *Little Navmap* comes with its own copy of the SimConnect library.
 
 You will see an :warning-style:`orange warning message` if you use a X-Plane scenery library when trying to connect to FSX, P3D or MSFS.
 
