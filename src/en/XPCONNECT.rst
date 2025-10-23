@@ -50,7 +50,7 @@ The changes are applied immediately and are saved on exit.
 Note that the settings are shared between all plugin installations on the same computer.
 
 Note that the fetch rate affects only the rate of which *Little Xpconnect* gets the data from X-Plane.
-This can affect X-Plane performance, expecially when using large amounts of AI aircraft.
+This can affect X-Plane performance, especially when using large amounts of AI aircraft.
 
 The option ``Update Time Interval`` in :ref:`connect-options` in the *Little Navmap* connect dialog
 window defines the rate *Little Navmap* fetches the data from the plugin.

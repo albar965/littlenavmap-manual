@@ -439,7 +439,7 @@ US IFR Area High Charts, US IFR Area Low Charts, US VFR Sectional Charts and US 
   for some of these maps to see the content.
 
 
-Map themes are included per default but need a free acccout at the respective map provider
+Map themes are included per default but need a free account at the respective map provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Mapbox Dark, Mapbox Light, Mapbox Outdoors, Mapbox Satellite, Mapbox Satellite Streets, Mapbox User, MapTiler Topo, Stadia StamenTerrain, Thunderforest Atlas and Thunderforest Landscape
@@ -682,7 +682,7 @@ You can undo this conversion.
 |Direct to Here| Direct to Here
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The direct to function is availabe in all related context menus in flight plan table, map and search result
+The direct to function is available in all related context menus in flight plan table, map and search result
 table.
 
 This function is only enabled if you are connected to a simulator. You can select a direct

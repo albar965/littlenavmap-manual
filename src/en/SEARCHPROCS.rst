@@ -45,7 +45,7 @@ The procedure search tab expands procedure branches that are already present in 
 .. tip::
 
   You can use the cursor key ``Down`` to jump from the input fields into the result tree and navigate there using
-  the keyboard shorcuts shown in the :ref:`procedure-context-menu`.
+  the keyboard shortcuts shown in the :ref:`procedure-context-menu`.
 
 .. note::
 
@@ -115,7 +115,7 @@ First and last Waypoint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The header shows the entry and exit waypoints for a procedure and its transition, if selected.
-This helps to find matching procedures for an airway waypoint or to find an approch matching a STAR and vice versa.
+This helps to find matching procedures for an airway waypoint or to find an approach matching a STAR and vice versa.
 
 **Examples:**
 

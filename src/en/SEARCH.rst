@@ -207,7 +207,7 @@ internal X-Plane code ``XPA000B``.
 
 .. tip::
 
-  Hide the additonal airport codes if you do not use X-Plane or if you are not interested in
+  Hide the additional airport codes if you do not use X-Plane or if you are not interested in
   these columns. You can do this by moving the columns to the rightmost position or by shrinking them
   to minimum size. See :ref:`table-view`.
 
