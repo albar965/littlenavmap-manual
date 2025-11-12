@@ -5,6 +5,7 @@ deploy/
 node_modules/
 book_*.pdf
 .directory
+.qtcreator/
 /*.log
 /*.pro.user
 *~

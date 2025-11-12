@@ -22,6 +22,7 @@ OTHER_FILES = \
   *.txt \
   *.sh \
   src/conf.py \
+  .gitignore \
   $$files(src/_static/*, true) \
   $$files(src/_templates/*, true) \
   $$files(src/en/*.rst, false) \
