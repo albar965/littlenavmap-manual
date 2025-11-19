@@ -19,15 +19,15 @@ Trail points are created dynamically depending on aircraft flight path to result
 having less points on straight legs but more points in turns or when doing altitude changes. This
 helps to improve map display performance. As a result, the trail points are not evenly spaced.
 
-
-The length of the trail is limited for performance reasons. If it
-exceeds the maximum length, the trail is truncated and the oldest
-segments are lost. The maximum number of points can be changed in options on page :ref:`options-map-aircraft-trail`.
+The length of the visible trail is limited for performance reasons. If it
+exceeds the maximum length, the shown trail is truncated but the stored trail is left intact.
+The maximum number of shown points can be changed in options on page :ref:`options-map-aircraft-trail`.
 
 .. tip::
 
   Use GPX instead of KML to import a track into *Little Navmap*.
   You can convert the KML to GPX using one of the numerous online tools ot Google Earth.
+
 
 Saving and loading the Aircraft Trail to and from GPX
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,9 +43,12 @@ The track contains the simulator time, altitude and coordinates.
 
 .. note::
 
-  *Little Navmap* shows a warning dialog when loading large GPX files having too many points. You will also see
-  a warning if the result is truncated due to a lower setting in the option ``Maximum number of aircraft trail points``
-  on page :ref:`options-map-aircraft-trail` in options.
+  *Little Navmap* shows a warning dialog when loading large GPX files having too many points.
+
+.. note::
+
+  Saving a trail stores the current trail which can be longer than the trail visible on the map window.
+  The maximum length of the visible trail can be changed
 
 .. tip::
 

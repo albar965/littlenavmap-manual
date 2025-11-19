@@ -598,16 +598,6 @@ Display of navaids can be enabled or disabled in menu ``View`` -> :ref:`navaids-
 |                                   | allowed direction if the airway                               |
 |                                   | is one-way.                                                   |
 +-----------------------------------+---------------------------------------------------------------+
-| |Track East|                      | Eastbound PACOTS track with                                   |
-|                                   | flying direction, name ``2``                                  |
-|                                   | and type.                                                     |
-|                                   | Tracks having no east/west                                    |
-|                                   | direction are shown in gray color.                            |
-+-----------------------------------+---------------------------------------------------------------+
-| |Track West|                      | Westbound PACOTS track with                                   |
-|                                   | flying direction, name ``H``                                  |
-|                                   | and type.                                                     |
-+-----------------------------------+---------------------------------------------------------------+
 | |ILS|                             | ILS with glideslope and markers.                              |
 |                                   | Label shows ident, frequency,                                 |
 |                                   | magnetic heading, glideslope                                  |

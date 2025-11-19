@@ -54,20 +54,26 @@ You have to use :ref:`search-result-table-view-context-menu`,
 
 .. _open-flight-plan:
 
-|Open Flight Plan| Open Flight Plan
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|Open Flight Plan| Open Flight Plan or File
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Opens a flight plan with one of the following formats:
 
-- LNMPLN. This is the default format of *Little Navmap* which supports all flight plan features like remarks.
+- LNMPLN: This is the default format of *Little Navmap* which supports all flight plan features like remarks.
   See :ref:`flight-plan-formats-lnmpln` for information about this format.
 - PLN: FSX, FS9, FSC, MSFS 2020 or MSFS 2024.
 - FLP
 - FMS: X-Plane FMS 11 (used by X-Plane 11 and X-Plane 12) or FMS 3
-- FlightGear FGFP
-- Garmin FPL and GFP
+- FGFP: FlightGear flight plan format.
+- FPL and GFP: Garmin flight plan formats.
 
 The file type is determined by content and not file extension. See :doc:`FLIGHTPLANFMT` for more information.
+
+Additionally other supported file formats can be loaded:
+
+- LNMPERF: Aircraft performance files. See :doc:`AIRCRAFTPERF` for more information.
+- LNMLAYOUT: Saved window layouts LNMLAYOUT. See :doc:`LAYOUT` or :doc:`DOCKWINDOWS`.
+- GPX: Saved user aircraft trails. See :doc:`AIRCRAFTTRAIL`.
 
 An opened flight plan file will be reloaded on start up (reload and centering can be switched off
 in the options dialog on page :ref:`options-startup-and-updates` and :ref:`user-interface`).
@@ -323,6 +329,11 @@ Load Aircraft Trail from GPX
 Loads and replaces the current aircraft trail after asking the user. Routes in the GPX file are ignored.
 GPX track is centered after loading if enabled in options on page :ref:`options-files`.
 See :doc:`AIRCRAFTTRAIL` for more information.
+
+.. note::
+
+  This saves the currently stored trail which can be longer than the trail visible on the map window.
+  The maximum length of the visible trail can be changed in options on page :ref:`options-map-aircraft-trail`.
 
 .. _append-gpx:
 
@@ -753,7 +764,7 @@ See :doc:`TRACKS` for more information.
 |Download Tracks| Download Oceanic Tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Downloads Oceanic or other tracks which are NAT or PACOTS.
+Downloads NAT tracks.
 
 Tracks are shown on the map and a message is shown in the :doc:`STATUSBAR` once the download is finished.
 
@@ -768,20 +779,6 @@ Delete Oceanic Tracks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Remove downloaded Oceanic and other tracks from the track database.
-
-.. _track-sources:
-
-Track Sources
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-NAT
-'''''''''''''''''''''''''''''''''''''''
-PACOTS
-'''''''''''''''''''''''''''''''''''''''
-
-Allows to select the track systems to download. The download is triggered automatically after changing one of these options.
-
-See :doc:`TRACKS` for more information.
 
 .. =======================================================================================================================
 .. =======================================================================================================================
@@ -1388,7 +1385,7 @@ Toggles display of high airways (also Jet) and the attached waypoints.
 |Show Tracks| Show Oceanic Tracks
 '''''''''''''''''''''''''''''''''''
 
-Show or hide Oceanic or other tracks which are NAT or PACOTS.
+Show or hide NAT tracks.
 
 This function is disabled if no tracks are downloaded.
 

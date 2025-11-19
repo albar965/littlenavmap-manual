@@ -6,7 +6,8 @@ Tracks are a structured set of flight routes that stretch across the Atlantic, P
 *Little Navmap* can download, display and use the following tracks:
 
 -  `NAT <https://en.wikipedia.org/wiki/North_Atlantic_Tracks>`__: North Atlantic Tracks
--  `PACOTS <https://en.wikipedia.org/wiki/Pacific_Organized_Track_System>`__: Pacific Organized Track System
+-  PACOTS: Removed as of 3.0.18 since the DINS Query page is no longer publicly available.
+-  AUSOTS: Removed as of 3.0.18 since discontinued.
 
 .. figure:: ../images/tracks.jpg
     :scale: 50%
@@ -44,12 +45,7 @@ from the information window on tab ``Navaids``.
 
 Tracks can be enabled for map display in the toolbar or menu ``View`` using |Show Tracks| :ref:`show-tracks`.
 
-PACOTS and NAT tracks are shown in dark red color if eastbound and in dark blue color if westbound.
-
-.. figure:: ../images/trackinfo.jpg
-
-       Westbound PACOTS tracks are shown red and eastbound tracks in blue on the map.
-       Track ``8`` is highlighted and shown in information window. This track is valid for the current time.
+NAT tracks are shown in dark red color if eastbound and in dark blue color if westbound.
 
 .. figure:: ../images/trackinfo2.jpg
 

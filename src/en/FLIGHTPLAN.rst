@@ -136,7 +136,7 @@ You can show or hide the columns from main menu ``Tools`` -> :ref:`flight-plan-t
   the name of the procedure. Contains the text ``Alternate`` for
   alternate airports at the end of the list or ``Departure`` or ``Destination``.
 - ``Airway or Procedure``: Contains the airway name for en-route legs
-  or procedure instructions. This field also shows track names if NAT or PACOTS tracks are used.
+  or procedure instructions. This field also shows names if NAT tracks are used.
   Airways are suffixed with the airway type like ``N601 / L``:
 
   - ``L`` Low altitude airway or Victor

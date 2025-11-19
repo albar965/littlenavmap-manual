@@ -470,8 +470,13 @@ You can also enable a tooltip for the aircraft trail on page :ref:`options-map-t
 Maximum number of aircraft trail points
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Limits the number or aircraft trail to avoid performance issues when showing a too large number of
+Limits the number or shown aircraft trail points to avoid performance issues when using a too large number of
 trail points.
+
+.. note::
+
+  The number of stored trail points is not affected by this setting.
+  This means the stored trails are not deleted when reducing the number of visible trails.
 
 See :doc:`AIRCRAFTTRAIL` for more information.
 
