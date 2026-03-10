@@ -32,9 +32,6 @@ You can choose to download tracks on startup or download them manually.
 Download on startup and immediate can be enabled in the menu ``Flight Plan`` -> :ref:`download-tracks-startup`.
 Manual download can be started in the menu ``Flight Plan`` -> :ref:`download-tracks`.
 
-You can select the track systems to download in the sub-menu :ref:`track-sources` in the menu ``Flight Plan``.
-The download will start again after changing sources.
-
 The track database is cleared on startup if :ref:`download-tracks-startup` is not selected.
 
 Map Display and Information
